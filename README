@@ -1,1 +1,20 @@
-cmais+
+Hello Git
+
+Configuração
+
+1) Eclipse ou Aptana com e-git instalado (O Aptana já tem)
+
+2) File -> Import -> Git Repository as a new project
+
+3) Entre com a url do repositório: git@github.com:edse/cmais-frontend.git
+
+
+Alterações 
+
+1) Altere os arquivos necessários
+
+2) Team -> Commit
+
+3) Entre com um comentário descrevendo a alteração (Obrigatório)
+
+4) Team -> Push to remote -> Origin
