@@ -1,0 +1,16 @@
+/*
+.rodape{
+  *background-color: red;
+}
+*/
+.janelaWrapper {
+    *margin-top:100px;
+}
+
+.voceSabiaBox{
+  *margin-top:-32px !important;
+}
+
+.palhacos{
+  *background: url(../images/palhacos_txt.jpg) no-repeat 21px 1px ;
+}

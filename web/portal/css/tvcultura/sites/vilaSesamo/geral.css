@@ -1,0 +1,87 @@
+@import url("../../geral.css");
+
+/** VILA SESAMO **/
+#direita { margin-top:-20px;}
+#barra-site .topo-programa {margin-bottom:10px;}
+.box-relacionados {margin-top:0;}
+.box-interna {margin-top:20px;}
+.menu-interna li {background:#1fb25a;}
+.menu-interna li:hover,
+.menu-interna li.ativo {background:#f79c01;}
+.menu-interna li a {color:#fff;}
+#horario {margin-top:20px;}
+/*.questionario { {background:#; color:#fff; font:bold 12px arial; text-transform:uppercase; padding:3px 5px; margin:0 auto; display:block;}
+*/
+.questionario {margin:0 0 20px 232px;}
+.questionario a {background:#f79c01; font:bold 12px arial; text-transform:uppercase; padding:3px 5px; color:#fff;}
+.media { margin-bottom:10px;}
+
+/* BG PERGUNTAS */
+.pergunta1 {background:url(../../../../images/capaPrograma/bg-pergunta1.png) no-repeat right 150px;}
+.pergunta1 {_background-image:url(../../../../images/capaPrograma/bg-pergunta1.gif);}
+.pergunta2 {background:url(../../../../images/capaPrograma/bg-pergunta2.png) no-repeat right 150px;}
+.pergunta2 {_background-image:url(../../../../images/capaPrograma/bg-pergunta2.gif);}
+.tipoA {background:url(../../../../images/capaPrograma/bg-pergunta3A.png) no-repeat;}
+.tipoA {_background-image:url(../../../../images/capaPrograma/bg-pergunta3A.gif);}
+.tipoB {background:url(../../../../images/capaPrograma/bg-pergunta3B.png) no-repeat;}
+.tipoB {_background-image:url(../../../../images/capaPrograma/bg-pergunta3B.gif);}
+.tipoC {background:url(../../../../images/capaPrograma/bg-pergunta3C.png) no-repeat; float:right;}
+.tipoC {_background-image:url(../../../../images/capaPrograma/bg-pergunta3C.gif);}
+.pergunta4 .bg {background:url(../../../../images/capaPrograma/bg-pergunta4.png) no-repeat;}
+.pergunta4 .bg {_background-image:url(../../../../images/capaPrograma/bg-pergunta4.gif);}
+.pergunta5 .bg {background:url(../../../../images/capaPrograma/bg-pergunta5.png) no-repeat;}
+.pergunta5 .bg {_background-image:url(../../../../images/capaPrograma/bg-pergunta5.gif); margin:20px auto; }
+/* /BG PERGUNTAS */
+
+/* geral */
+.opiniao select,
+.opiniao .text {height:26px; width:245px;}
+.opiniao p {margin-bottom:20px;}
+.opiniao p,
+.opiniao label,
+.opiniao li { text-transform:uppercase; font-weight:bold; font-size:12px; }
+.opiniao {text-align:left;}
+.opiniao .box { margin-bottom:20px; width:auto; float:left;}
+.opiniao .box select,
+.opiniao .box input,
+.opiniao .box textarea {border:1px solid #bfbfbf;}
+.opiniao .estado select {width:161px; }
+.opiniao .municipio { margin:0 5px;}
+.opiniao .municipio input {width:423px;}
+.opiniao .idade input {width:41px;}
+.opiniao .pergunta {width:638px;}
+.opiniao .radio { position:relative; top:3px;}
+.opiniao .marg {margin-right:95px;}
+.opiniao .normal {font-weight:normal;}
+.opiniao .btn-proxima { width:auto; float:left; background:#333; color:#fff; border:none; float:right; text-transform:uppercase; padding:2px 5px; font-size:12px; font-weight:bold;}
+.marg-top { margin-top:10px;}
+/* /geral */
+
+/* pergunta 2 */
+.pergunta2 { height:400px; background-position:left bottom;}
+/* /pergunta 2 */
+
+/* pergunta 3 */
+.opiniao ul { float:right;}
+.opiniao li {float:left; width:90px; text-align:center;}
+.opiniao p span {text-decoration:underline;}
+.opcao span {width:90px; height:20px; float:left;}
+.opcao1 span { background:#c70909;}
+.opcao2 span { background:#eedc15;}
+.opcao3 span { background:#3175ba;}
+.opcao2 {margin:0 20px;}
+.pergunta3 .pergunta {width:595px; margin:20px 0 0 0; background:#fff; padding:5px 35px 5px 10px;}
+.pergunta3 .radio {float:right;}
+.pergunta3 .center {margin:0 100px;}
+.pergunta3 .btn-proxima { margin-top:20px;}
+.bg { width:310px; height:400px; clear:both; margin-top:20px;}
+/* /pergunta 3 */
+
+/* pergunta 4 */
+textarea { height:150px; width:634px; padding:2px; font-size:12px;}
+.opiniao .caracteres {font-size:10px; font-weight:normal; float:right;}
+/* /pergunta 4 */
+
+
+
+/** /VILA SESAMO   **/

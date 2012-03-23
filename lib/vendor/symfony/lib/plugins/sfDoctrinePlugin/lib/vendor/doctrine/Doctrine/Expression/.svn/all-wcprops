@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression
+END
+Mock.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Mock.php
+END
+Driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Driver.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Exception.php
+END
+Mssql.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Mssql.php
+END
+Sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Sqlite.php
+END
+Oracle.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Oracle.php
+END
+Mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Mysql.php
+END
+Pgsql.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Expression/Pgsql.php
+END

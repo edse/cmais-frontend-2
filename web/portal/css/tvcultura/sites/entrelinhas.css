@@ -1,0 +1,12 @@
+@import url("../geral.css");
+
+/** ENTRELINHAS **/
+#barra-site { background:url(../../../images/capaPrograma/bg-entrelinhas.png) no-repeat right 0; margin-top:0; min-height:120px;  }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-entrelinhas.gif);}
+.submenu-interna {width:116px;}
+#barra-site #horario { text-align: right;  }
+#barra-site #horario p { background:#fff; width:auto; display:inline; line-height: 19px; padding: 0 5px; }
+#barra-site h2 {margin-top:20px;}
+#barra-site {margin-top:0;}
+#chamada {margin-bottom:0;}
+/** /ENTRELINHAS **/

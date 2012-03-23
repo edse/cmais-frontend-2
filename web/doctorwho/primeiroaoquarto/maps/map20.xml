@@ -1,0 +1,33 @@
+<!--MAP DATA 20-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map20>
+
+
+
+<shape>0,0,4</shape>
+
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,1,1,2,1,140,1,1,1,1,1,0</zrow2>
+<zrow3>0,1,1,2,1,1,1,1,1,406,1,0</zrow3>
+<zrow4>0,1,1,2,1,1,1,1,1,1,1,0</zrow4>
+<zrow5>0,1,1,2,2,2,2,2,2,1,1,0</zrow5>
+<zrow6>0,1,1,200,1,1,1,1,201,1,1,0</zrow6>
+<zrow7>0,1,1,200,1,1,1,1,201,1,1,0</zrow7>
+<zrow8>0,1,1,2,2,2,2,2,2,1,1,0</zrow8>
+<zrow9>0,1,1,1,1,1,1,1,2,1,1,0</zrow9>
+<zrow10>0,1,406,1,1,1,1,1,2,1,1,0</zrow10>
+<zrow11>0,1,1,1,1,1,139,1,2,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<decal>5,1,14</decal>
+
+<decal>1,8,5</decal>
+<decal>1,6,5</decal>
+<decal>1,4,5</decal>
+<decal>2,1,3</decal>
+
+<introtext>COMM: "Metaltron heading for access corridor to Military Zone - Guards are on their way."</introtext>
+
+</map20>

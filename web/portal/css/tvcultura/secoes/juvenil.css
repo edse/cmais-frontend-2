@@ -1,0 +1,34 @@
+@import url("../geral.css");
+
+/** JUVENIL **/
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-126px 0; }
+
+.menu-interna a { color:#ed1089; }
+.menu-interna li.ativo,
+.menu-interna li:hover { color:#fff; background:#ed1089; }
+.menu-interna li span {background-position:0 -120px;}
+
+.submenu-interna {background:#ed1089;}
+.submenu-interna a {color:#fff;}
+.submenu-interna li,
+.submenu-interna li.ativo,
+.submenu-interna li:hover {background:none; }
+
+
+#menu-rodape .exibir-programas a {color:#ee2125; }
+#menu-rodape .exibir-programas a:hover { background:#ed1089; color:#fff }
+#menu-rodape #logos .carrossel .jcarousel-item a:hover,
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo {border-color:#ed1089;}
+
+.box-playlist a:hover img { border-color:#ed1089; }
+
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover, 
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, 
+#datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#ed1089;}
+
+/** /JUVENIL **/

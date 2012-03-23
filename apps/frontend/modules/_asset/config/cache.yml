@@ -1,0 +1,12 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/09-Cache
+
+default:
+  enabled:     true
+  with_layout: true
+  lifetime:    360
+
+all:
+  enabled:     true
+  with_layout: true
+  lifetime:    360

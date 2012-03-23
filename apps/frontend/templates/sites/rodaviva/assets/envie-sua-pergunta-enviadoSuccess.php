@@ -1,0 +1,103 @@
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $asset->Site->getSlug() ?>.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+
+    <?php use_helper('I18N', 'Date') ?>
+    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+    
+    <!-- CAPA SITE -->
+	<div class="bg-rodaviva">
+    <div id="capa-site">
+    	
+      <!-- BREAKING NEWS -->
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+      <!-- /BREAKING NEWS -->
+
+      <!-- BARRA SITE -->
+      <div id="barra-site">
+	  	<div class="topo-programa">
+	  	  <?php if(isset($program) && $program->id > 0): ?>
+		  <h2>
+		    <a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>">
+		      <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/uploads/programs/<?php echo $program->getImageThumb() ?>">
+		    </a>
+		  </h2>
+		  <?php endif; ?>
+		  
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <!-- horario -->
+          <div id="horario">
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          </div>
+          <!-- /horario -->
+          <?php endif; ?>
+		</div>
+		<!-- box-topo -->
+		<div class="box-topo grid3">
+          <?php if(count($siteSections) > 0): ?>
+          <ul class="menu">
+            <?php foreach($siteSections as $s): ?>
+				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><span><?php echo $s->getTitle() ?></span></a></li>
+			<?php endforeach; ?>
+          </ul>
+          <?php endif; ?>
+		</div>
+		<!-- /box-topo -->
+	</div>
+      <!-- /BARRA SITE -->
+      <!-- MIOLO -->
+      <div id="miolo">
+      	
+        <!-- BOX LATERAL -->
+        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <!-- BOX LATERAL -->
+              	
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina exceptionn">
+          <!-- CAPA -->
+          <div class="capa grid3 exceptionn">
+          	<div class="tudo-Rodaviva">
+          		<span class="bordaTopRV"></span>
+          		<div class="centroRV">
+          			<div class="faleConosco">
+          				<h2><?php echo $asset->getTitle() ?></h2>
+          				<!-- p><?php echo $asset->getDescription()?></p-->
+          				<?php //echo "mailSent: " . $sf_user->getAttribute('mailSent') ?>
+                        	
+                        <div class="msgAcerto">
+                          <span class="alerta"></span>
+                          <div class="boxMsg">
+                            <p class="aviso"><?php echo $asset->getDescription() ?></p>
+                            <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+                          </div>
+                          <hr />                                   
+                        </div>
+          			    <ul>
+          					<li class="voltarJa"><a href="javascript:back()"><span>Voltar</span></a></li>
+          				</ul>
+                        
+                        
+          			</div>
+          			<div class="publicidade fl">
+                      <script type='text/javascript'>
+                        GA_googleFillSlot("programas-assets-300x250");
+                      </script>
+      				</div>
+          		</div>
+          		<span class="bordaBottomRV"></span>
+          	</div>
+          </div>
+        
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+
+      </div>
+      <!-- /MIOLO -->
+
+    </div>
+    </div>
+    <!-- / CAPA SITE -->
+    

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/controller
+END
+sfWebControllerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/controller/sfWebControllerTest.php
+END
+sfControllerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/controller/sfControllerTest.php
+END

@@ -1,0 +1,165 @@
+/*--BACKGROUND--*/
+body
+{
+	background:url(../../../images/capaPrograma/carnaval2012/bkg.gif);
+}
+
+/*--TOPO PAGINA--*/
+.topo-programa h2
+{
+	margin-top: -20px;
+}
+#box-videos .carrossel 
+{
+	 min-height: 80px !important;
+}
+#barra-site .redes
+ {
+    margin: 35px 0 0 0 !important;
+}
+
+.enfeite,.enfeite2
+{
+  position:absolute;
+  width:100%;
+  min-height:149px;
+  z-index:-999;
+}
+.enfeite
+{
+  background:url(../../../images/capaPrograma/carnaval2012/serpentinaa.png);
+}
+.enfeite2
+{
+  background:url(../../../images/capaPrograma/carnaval2012/serpentinav.png);
+  height:180px !important;
+}
+
+
+/*--BOX LATERAL DIREIREITA--*/
+#box-videos .carrossel 
+{
+	margin-left:10px;
+}
+.box-padrao .claro .capa-titulo{
+  background:none !important;
+}
+.box-padrao .capa-titulo {
+    background: none !important;
+    float: none !important;
+    margin-top:0px !important;
+}
+.box-padrao .topo span {
+  background: none !important;
+}
+.box-padrao
+{
+	background:white;
+}
+
+#box-videos .conteudo-lista 
+{
+	height:260px !important;
+
+}
+
+#box-videos .conteudo-lista ul
+{
+	font-size: 15px;
+    margin-top: 7px;	
+}
+.conteudo-lista h4
+{
+	color:#b11000;
+	margin-top: 5px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#box-videos .carrossel .jcarousel-prev, #box-videos .carrossel .jcarousel-next
+{
+	margin-right:10px;
+}
+
+#box-videos .carrossel .jcarousel-item 
+{
+	height: 258px;
+}
+
+/*--BOX FORM PARTICIPE--*/
+
+.form-lateral .box-padrao .titulos p
+{
+	color:#ff6633 !important;
+}
+
+.form-lateral .contato form .t1 label, .form-lateral .contato form .t1 input {
+    width: 294px !important;
+}
+.form-lateral .contato form .t3 {
+    width: 190px; 
+}
+
+.contato form .t4 {
+    width: 94px !important;
+    margin-left:10px;
+}
+
+.form-lateral .contato form .t3 label, .form-lateral .contato form .t3 input {
+    width: 186px;
+}
+
+.contato form .t4 label, .contato form .t4 input {
+    width: 90px !important;
+}
+
+.contato form .t5 {
+    width: 298px !important;
+}
+
+.contato form .t5 label, .contato form .t5 input {
+    width: 295px !important;
+}
+
+#enviar{
+	width:160px !important;
+}
+
+.form-lateral label
+{
+	color:#ff6633;
+}
+
+.form-lateral .msgErro, .form-lateral .msgAcerto {
+  min-height: 100px !important;
+}
+
+.duas-colunas {
+  background-color: white;
+}
+/*--ASSETS--*/
+
+.box-interna {
+	background: white;
+	padding: 7px 7px 7px 7px;
+}
+
+
+.box-padrao h4
+{
+	color:#b11000;
+	margin-top: 5px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.box-padrao .conteudo
+{
+	padding: 10px 10px 10px 10px;
+	margin-top:-22px;
+}
+
+.box-padrao li {
+	width:286px;	
+}
+

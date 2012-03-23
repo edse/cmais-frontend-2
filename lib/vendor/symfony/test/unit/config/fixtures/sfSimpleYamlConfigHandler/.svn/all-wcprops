@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfSimpleYamlConfigHandler
+END
+config_bis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfSimpleYamlConfigHandler/config_bis.yml
+END
+config.yml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfSimpleYamlConfigHandler/config.yml
+END

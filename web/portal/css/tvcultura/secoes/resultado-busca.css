@@ -1,0 +1,24 @@
+@import url("../geral.css");
+
+/********* RESULTADO DA BUSCA ********/
+/** filtro **/
+#filtro { margin:10px 0 20px 0; float:left; }
+#filtro .box-busca { float:left; margin-right:40px; }
+#filtro .box-busca input,
+#filtro .box-busca select { border:2px solid #b2b2b2; }
+#filtro .box-busca select { height:23px; }
+#filtro .box-busca input { height:20px; }
+#filtro .box-busca .oque,
+#filtro .box-busca .ordenar,
+#filtro .box-busca .onde { width:130px; }
+#filtro .last input { width:75px; }
+#filtro .last .ok { background:#333; color:#fff; width:37px; height:23px; line-height:23px; border:none; margin-left:5px; }
+/** /filtro **/
+
+/** menu-resultado **/
+#estilo-menu .abas li a { width:194px; display:block; font-size:14px; font-weight:bold; text-transform:uppercase; line-height:25px; color:#fff; }
+#estilo-menu .abas li { margin:0; width:194px; }
+#estilo-menu .abas li a.ativo,
+#estilo-menu .abas li a:hover { background:url(../../images/bg-menu-topo.png) no-repeat 0 -272px; }
+/** /menu-resultado **/
+/********* RESULTADO DA BUSCA ********/

@@ -1,0 +1,26 @@
+<!--MAP DATA 6-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map6>
+
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,200,200,200,200,200,200,200,200,200,200,0</zrow2>
+<zrow3>0,200,200,200,200,200,200,200,200,200,200,0</zrow3>
+<zrow4>0,1,1,1,1,1,1,1,1,1,1,0</zrow4>
+<zrow5>0,1,1,1,406,1,1,1,1,1,1,0</zrow5>
+<zrow6>0,110,1,1,1,1,1,1,1,1,109,0</zrow6>
+<zrow7>0,1,1,1,1,1,1,1,1,1,1,0</zrow7>
+<zrow8>0,1,1,1,406,1,1,1,1,1,1,0</zrow8>
+<zrow9>0,1,1,1,1,1,1,1,1,1,1,0</zrow9>
+<zrow10>0,200,200,200,200,200,200,200,200,200,200,0</zrow10>
+<zrow11>0,200,200,200,200,200,200,200,200,200,200,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<decal>1,5,13</decal>
+
+<introtext>COMM: "It's found a way past our encryption and is heading toward the Weapons Research Laboratory!""</introtext>
+
+</map6>

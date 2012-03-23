@@ -1,0 +1,39 @@
+@import url("../geral.css");
+ 
+/******** ARTE E CULTURA ********/
+/***** DESTAQUE *****/
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-98px 0; }
+/***** DESTAQUE *****/
+
+.menu-interna a { color:#9d44d5; }
+.menu-interna li:hover { color:#fff; background:#9D44D5; }
+.menu-interna a span { background-position:0 -40px;}
+
+#menu-rodape .logos li a  { background-position:0 -420px }
+#menu-rodape .logos li a:hover,
+#menu-rodape .logos li a.ativo { background-position:0 0; }
+.submenu-interna a:hover,
+#menu-rodape .exibir-programas a {color:#9d44d5; }
+#menu-rodape .exibir-programas a:hover { background:#9d44d5; color:#fff }
+.abas li a.ativo,
+.abas li a:hover { background-position:0 -272px;  }
+.submenu-interna { border-color:#9d44d5; }
+
+#menu-rodape #logos .carrossel .jcarousel-item a:hover,
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo { border-color:#9d44d5;}  
+
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover, 
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, 
+#datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#9d44d5;}
+
+.box-compartilhar {background:none;}
+.box-compartilhar a,
+.box-compartilhar .comentar {color:#333;}
+.box-compartilhar .compartilhar { border-right:1px dotted #ff6633; padding-right:5px; height:22px; line-height:22px; margin-top:5px;}
+.box-compartilhar .compartilhar span { margin-top:3px;} 
+/******** /ARTE E CULTURA ********/

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache
+END
+Xcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Xcache.php
+END
+Driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Driver.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Exception.php
+END
+Array.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Array.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Interface.php
+END
+Memcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Memcache.php
+END
+Apc.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Apc.php
+END
+Db.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cache/Db.php
+END

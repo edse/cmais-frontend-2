@@ -1,0 +1,21 @@
+@import url("../geral.css");
+
+/** CMAIS **/
+.peq { background:#333;  }
+.peq a { color:#fff; }
+.duas-colunas { margin-top:20px; }
+.duas-colunas h5 { margin:10px 10px 0 10px; }
+.duas-colunas .txt { margin:0 10px 10px; }
+.lista-blogs { margin-top:20px; }
+.lista-blogs li { margin-right:56px; width:200px; }
+.lista-blogs li .foto img { border:none; }
+
+#menu-portal .menu-aberto { top:97px; }
+.barra-menu .tv { margin-left:-89px; }
+.barra-menu .radio { margin-left:-147px; }
+.barra-menu .ar { margin-left:-233px; }
+/** CMAIS **/
+
+
+
+

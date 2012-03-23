@@ -1,0 +1,30 @@
+<!--MAP DATA 47-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map47>
+
+<decal>2,2,21</decal>
+<decal>1,10,34</decal>
+<decal>1,5,36</decal>
+<decal>10,1,33</decal>
+
+<info>10,6,there is no need to return to the military defense research base,0</info>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,5,2,453,214,1,212,453,214,1,1,0</zrow2>
+<zrow3>0,1,2,1,214,1,212,1,214,1,1,0</zrow3>
+<zrow4>0,1,212,1,214,1,214,1,214,1,1,0</zrow4>
+<zrow5>0,1,214,1,1,1,214,1,1,1,1,0</zrow5>
+<zrow6>0,1,214,1,4,1,214,1,4,1,1,0</zrow6>
+<zrow7>0,602,4,1,214,1,1,1,214,1,601,0</zrow7>
+<zrow8>0,1,1,1,214,1,1,1,214,1,1,0</zrow8>
+<zrow9>0,1,214,1,214,1,214,1,214,1,1,0</zrow9>
+<zrow10>0,1,212,1,212,1,214,1,212,1,1,0</zrow10>
+<zrow11>0,5,213,1,212,454,214,1,214,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "The Dalek has entered our optical research laboratories. Lets see if we can surprise it!"</introtext>
+
+</map47>

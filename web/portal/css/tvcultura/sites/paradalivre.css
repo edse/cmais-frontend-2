@@ -1,0 +1,87 @@
+@import url("../geral.css");
+
+/* PARADA LIVRE */
+html>body,
+body {background:#ffffff;}
+#conteudo-pagina {overflow:visible;}
+#google {background:#f5f5f5; border-bottom:1px solid #e5e5e5; min-height:66px; position:relative; top:50px; overflow:hidden; }
+.busca-google { width: 970px; margin:0 auto; text-align:left; }
+.busca-google h2 {width:172px; margin:13px 0 0 40px; float:left;}
+.barra {width:494px; height:32px; margin:17px 0 0 30px; float:left; background:url(../../../images/capaPrograma/paradalivre/busca.jpg);}
+.botao  {width:73px; height:30px; margin:17px 0 0 18px; float:left; background:url(../../../images/capaPrograma/paradalivre/btn.jpg);}
+.esq {width:380px; float:left; text-align:left;}
+#capa-site {margin-top:0 !important; background:#fff; position:relative; top:50px;}
+.topo-busca {margin-left:40px;}
+.topo-busca a {cursor:pointer;}
+.topo-busca a { background:#f4f4f4; border:1px solid #dcdcdc; -moz-border-radius:2px; border-radius:2px; font-size:11px; font-weight:bold; color:#666; padding:0 15px; height:27px; line-height:27px; display: block; width:auto; float: left; margin:15px 10px 25px 0;}
+.topo-busca a:hover {text-decoration:none;}
+#chamada { margin:20px 0 10px 20px; text-align:center; }
+h3 {clear:both; font-size:20px; color:#000;}
+.esq li {padding:10px; position:relative;}
+.esq li .balao {  background:url(../../../images/capaPrograma/paradalivre/iconsA-J.png) no-repeat; width: 24px; height:40px; float:left; }
+.content {margin-left:30px;}
+.content .hashtag,
+.content a {color:#1155cc;}
+.content a {width:100%;}
+.content p {font-size:12px; color:#000;}
+.balao span {background:url(../../../images/capaPrograma/paradalivre/iconGoogle.png) no-repeat 0 -11px; width:13px; height:13px; position:relative; left:5px; top:45px; display: block; }
+.esq ul li.ativo,
+.esq ul li:hover { background:#ebf2fc }
+.estrelas {background:url(../../../images/capaPrograma/paradalivre/red-stars.png) no-repeat; width: 49px; height:13px;}
+#faces { border:1px solid #999; padding:1px; width:58px; height:44px; position:absolute; bottom:13px; right:13px; }
+#faces img {width:58px;}
+#box-deupaulanatv .balao { background-position:0 -38px; }
+#box-inglescommusica .balao { background-position:0 -76px; }
+#box-penarua .balao { background-position:0 -114px; }
+#box-woohoonews .balao { background-position:0 -152px; }
+
+.dir {width:590px; float:left; position:relative; }
+.dir img {_width:588px;}
+.dir img { border:1px solid #ccc;   }
+.tpw { width:352px; height:226px; background:url(../../../images/capaPrograma/paradalivre/tooltip.png) no-repeat; text-align:left; padding:20px; position:absolute; display:none; }
+.tpw .titulos {width:auto;}
+.tpw span { background:url(../../../images/capaPrograma/paradalivre/iconGoogle.png) no-repeat 0 -11px; width:13px; height:13px; float:left; margin:2px 5px;}
+.tpw .content {margin-left:0; width:225px; float:left;}
+.tpw p {clear:both; margin:5px 0 8px 0; float:left; width:223px; }
+.tpw .estrelas {float:left;}
+.tpw .fechar { width:14px; height:14px; text-indent:-9999px; display:block; position:absolute; top:18px; right:18px; cursor: pointer;}
+.tpw img {width:100px; float:right; margin-top:25px;}
+.tpw .acao { float:right; width: 100%; margin-top:34px; }
+.tpw .acao p {margin:0; width: 160px;}
+.tpw .acao p,
+.tpw .acao a { font-size:13px; color:#1155cc; }
+.tpw .acao a {float:right;}
+#tpw-culturalivre { bottom: 186px; left: 205px;  }
+#tpw-deupaulanatv { right: -7px; top: 25px;  }
+#tpw-inglescommusica { bottom: 57px; left: 3px; }
+#tpw-penarua { left: 42px; top: 2px; }
+#tpw-woohoonews { left: 6px; top: 137px; }
+.balao,
+map .tp {cursor:pointer;}
+
+#bg-modal {position:absolute; width: 100%; height:1326px; background:#000; opacity:0.6; -moz-opacity: 0.6; filter: alpha(opacity=60); z-index: 3000; top:0; left:0; display:none;}
+.box-modal { width:314px; border:1px solid #ababab; text-align:left; padding:0; border-width:0; }
+.box-modal h3 {width:200px; float:left; margin:10px 0 10px 18px;}
+.box-modal .fechar { background:url(../../../images/capaPrograma/paradalivre/fechar.png) no-repeat right center; display:block; float:right; width:50px; font-size:11px; font-weight:bold; color:#7f7f7f; margin:15px; cursor: pointer; }
+.box-modal .fechar:hover {text-decoration:none;}
+.box-modal ul { width:314px; float:left;} 
+.box-modal ul li {overflow:hidden;}
+.box-modal ul li a {padding-left:20px; width: 210px; float: left;}
+.box-modal ul li a:hover {text-decoration:none;}
+.box-modal ul span,
+.box-modal ul a { color:#1155cc; font-size:16px; font-weight:bold; }
+.box-modal ul span {width:74px; float:right;}
+.box-modal ul li {height:34px; line-height:34px; padding:0; margin-bottom:10px;}
+.box-modal ul li:hover {background:#ebf2fc}
+.box-modal .l-seguir a { width:150px; }
+.box-modal ul .seguir {width:140px; float:right; margin-top:5px;}
+.box-modal ul .seguir li {width:24px; float:left; padding:0; margin: 0 10px 0 0;}
+.box-modal ul .seguir li:last-child {margin-right:0;}
+.box-modal ul .seguir a {width:24px; height:24px; display: block; background:url(../../../images/capaPrograma/paradalivre/bt-redes.png) no-repeat; }
+.box-modal ul .seguir .twt {background-position:0 -48px;}
+.box-modal ul .seguir .ytb {background-position:0 -72px;}
+.box-modal ul .seguir .fsq {background-position:0 -24px;}
+#fancybox-content {border-width:0 !important;}
+#fancybox-outer {width:314px !important;}
+
+/* /PARADA LIVRE */

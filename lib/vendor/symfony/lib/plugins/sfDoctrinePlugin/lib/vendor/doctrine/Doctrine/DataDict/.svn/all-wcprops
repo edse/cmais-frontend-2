@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Exception.php
+END
+Mssql.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Mssql.php
+END
+Sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Sqlite.php
+END
+Oracle.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Oracle.php
+END
+Mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Mysql.php
+END
+Pgsql.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/DataDict/Pgsql.php
+END

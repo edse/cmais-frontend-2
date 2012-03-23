@@ -1,0 +1,17 @@
+@import url("/portal/css/tvcultura/geral.css");
+
+/** MULTICULTURA **/
+#barra-site h2 {margin-bottom:10px;}
+#agenda .abas-conteudo li.ativo .titulos,
+#agenda .abas-conteudo li:hover .titulos,
+#agenda .hora .noar,
+.box-padrao .chapeu {color:#ff9412;}
+#direita { margin-top:-20px;}
+#agenda .abas-conteudo li.ativo .hora a,
+#agenda .abas-conteudo li:hover .hora a,
+.abas li.ativo a,
+.abas li:hover a {background-color:#ff9412;}
+.abas li.ativo .decoracao,
+.abas li:hover .decoracao {background-position:0 -55px;}
+
+/** /MULTICULTURA  **/

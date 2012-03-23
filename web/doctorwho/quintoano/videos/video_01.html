@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Doctor Who - cmais+ O portal de conteúdo da Cultura</title>
+<meta name="description" content="Site oficial Doctor Who Brasil é só na TV Cultura." />
+<meta name="keywords" content="Doctor Who Brasil, Doctor Who na TV Cultura, TV Cultura, site oficial, jogos, fundos de tela, guia de episódios." />
+<link href="../css/default.css" rel="stylesheet" type="text/css" />
+<link type="image/x-icon" href="/portal/images/icon/favicon.png" rel="shortcut icon">
+<link href="../gallery_assets/galleryview.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="/doctorwho/quintoano/js/functions.js"></script>
+<script type="text/javascript" src="../js/swfobject.js"></script>
+<script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+</script>
+
+</head>
+
+<body>
+<div id="drwho">
+  <div id="header">
+    <div id="nav">
+  		<ul>
+	      <li><a href="/doctorwho/quintoano">Home</a></li>
+	      <li><a href="../the_show">A Série</a></li>
+	      <li><a href="../characters_kit/the_doctor">Personagens e Aparelhos</a></li>
+	      <li><a href="../cast_crew/matt_smith">Quem Faz</a></li>
+	      <li><a href="../monster_villains/the_daleks">Monstros e Vilões</a></li>
+	      <li><a href="../episodes/episode_01">Episódios</a></li>
+	      <li class="selected"><a href="../videos/video_01">Vídeos</a></li>
+	      <li><a href="../extras">Extras</a></li>
+	      <li><a class="facebook" href="http://www.facebook.com.br/DoctorWhoTVCultura" target="_blank">&nbsp;</a></li>
+	      <!--<li><a href="http://www.doctorwhofan.com" target="_blank">doctorwhofan.com</a></li>-->
+	    </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="col3Panel">
+            <h2>Videos</h2>
+            <hr />
+            <ul>
+            	<li class="selected"><a href="video_01">01 – Panorama da série</a></li>
+            	<li><a href="video_02">02 – Trailer do episódio 2</a></li>
+            	<li><a href="video_03">03 – Trailer do episódio 3</a></li>
+            	<li><a href="video_04">04 – Trailer do episódio 4</a></li>
+            	
+          </ul>
+        </div>
+      <div class="col2Panel margPanel">
+      <div id="video-player">Please download Flash Player to view the video:<br />
+  <br />
+  <a href="http://get.adobe.com/flashplayer/">http://get.adobe.com/flashplayer/</a></div>
+<script type="text/javascript">
+// <![CDATA[
+
+var swfPath = "player.swf"; 			// video player swf path
+var id      = "video-player";          // html flash object embed id
+var width   = "590"; 					// video player width
+var height  = "400"; 					// video player height
+var bgColor = "#000000"; 				// videoplayer html background color
+		
+var so      = new SWFObject(swfPath, id, width, height, "9", bgColor); // create new swf object
+
+so.addParam("allowfullscreen", "true"); // if set to true the video can go into fullscreen mode
+
+so.addVariable("movie",     "Series_Overview.flv");          // path to the movie file (FLV / H.264 / RTMP supported)
+so.addVariable("title",     "Doctor Who - Series 1 Overview"); // title string
+so.addVariable("videosize", "4");                       // 0 - fit, 1 - crop, 2 - original size, 3 - half size, 4 - stretch ( default: 0 )
+so.addVariable("buffer",    "1");                        // buffer time in seconds  ( default: 3)
+so.addVariable("volume",    "100");                      // sound volume: value between 0 - 100 ( default: 75 )  
+so.addVariable("autoplay",  "true");                    // auto start playback : true / false ( default: false )  
+so.addVariable("repeat",    "false");                   // repeat playback after playback completed : true / false ( default: false )  
+so.addVariable("smoothing", "true");                    // set video smoothing : true / false ( default: false )  
+
+so.write("video-player"); // write the swf into html
+
+// ]]>
+</script></div>
+       <br clear="all" />
+    </div>
+    <div id="footer">
+        <div id="footerContent">
+            <div class="left"><p>&copy; 2010 BBC WORLDWIDE</p></div>
+            <div class="right"><img src="../images/img_bbc.gif" width="55" height="41" alt="BBC Worldwide" /></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

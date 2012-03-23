@@ -1,0 +1,9 @@
+@import url("../geral.css");
+
+/** CAMPUS **/
+#capa-site { background:url(../../../images/capaPrograma/bg-campus.png) no-repeat right 2px; }
+#capa-site {_background-image:url(../../../images/capaPrograma/bg-campus.gif);}
+.submenu-interna {width:126px;}
+#horario { margin:10px 70px 0 0; }
+#barra-site .redes {margin-left:30px;}
+/** /CAMPUS **/

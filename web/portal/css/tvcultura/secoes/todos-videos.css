@@ -1,0 +1,54 @@
+@import url("../geral.css");
+.box-padrao {margin:0 0 20px 0;}
+#menu-rodape {max-height:960px; height:auto; margin-top:0;}
+#menu-rodape .neutro a {color:#333; height:24px;}
+#menu-rodape .abas {padding-left:0; width:970px;}
+#menu-rodape .abas .neutro { margin-left:0; padding:0; background:none; }
+#menu-rodape .abas .neutro a {float:left; padding:0 10px; background:#fff;}
+#menu-rodape .abas .neutro:hover span, 
+#menu-rodape .abas .neutro span { background: url("../../../images/detalhe-menu.png") no-repeat scroll transparent -13px 0; float: left;  height: 24px; width: 13px;}
+#menu-rodape .abas-conteudo {height:auto; margin-top:-8px; padding-top:0;}
+#galeria-videos .blocos {height:auto; max-height:900px; overflow:hidden;}
+#galeria-videos .blocos ul {margin:10px 0; height:auto; max-height:880px;}
+#galeria-videos .blocos li {_margin:0 5px;}
+#galeria-videos .capa ul {*margin-left:0;}
+#galeria-videos .capa ul li {height:200px;}
+#barra-site .redes { /*float:right; margin-top:5px;*/ }
+#galeria-videos .blocos { width:692px; float:left !important; margin:0; clear:none; margin-top:10px; }
+
+.paginacao .btn {float:left; background:none; color:#fff; margin:0; padding:0; width:auto; font-size:12px; font-weight:bold;}					
+.paginacao .anterior { margin:0 20px 0 10px;}
+.paginacao .proxima {margin:0 10px 0 20px;}
+.paginacao ul {display:block; float:left; width:auto; margin:0;} 
+.paginacao ul li {float:left; width:17px; text-align:center;}
+.paginacao ul li a {background:none; color:#fff; font-size:12px; font-weight:bold; margin:0;}
+.paginacao ul li a.ativo,
+.paginacao ul li a:hover {color:#ff6633;}
+.paginacao .btn-prox { background-position: 0 -72px; float:left;}
+.paginacao .btn-ante {float:left;}
+.paginacao .centraliza {width:365px; margin:0 auto;}
+
+.busca {margin-left:14px; width:254px; overflow:hidden; text-align:left; float:left; margin-top:30px;}
+.busca h3 {margin:0 0 10px 0; width: 254px;}
+.busca li {margin-bottom:10px; clear:both;}
+.busca li a {font-size:16px;}
+.busca li a:hover,
+.busca li a.ativo {color:#ff6633; text-decoration:none; font-weight:bold;}
+
+.busca form {max-width:665px; float:left;}
+.busca form .busque span {font-weight:bold; color:#ff6633;}
+.busca form label,
+.busca form input,
+.busca form a,
+.busca form select{float:left; width:auto;}
+.busca form select,
+.busca form input {height:20px; border:1px solid #abadb3;}
+.busca form select {height:22px; line-height:22px; color:#333}
+.busca form .buscar { background:#ff6633; color:#fff;  text-transform:uppercase; font-weight:bold; margin-left:0; border:none; height:22px; width:71px;}
+.busca form label {margin-top:15px; clear:both;}
+.busca form select {clear:both; margin-bottom:5px;}
+.busca form .tema { width:170px;}
+.busca form .busque {color:#ff6633; margin:5px 0 0 0;  } 
+.busca form .campo-busca {padding-left:5px; border-right: none;}
+
+.abas li { margin-right:20px;}

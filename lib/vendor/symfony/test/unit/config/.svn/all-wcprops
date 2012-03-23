@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config
+END
+sfSimpleYamlConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfSimpleYamlConfigHandlerTest.php
+END
+sfConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfConfigHandlerTest.php
+END
+sfDefineEnvironmentConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfDefineEnvironmentConfigHandlerTest.php
+END
+sfConfigTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfConfigTest.php
+END
+sfYamlConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfYamlConfigHandlerTest.php
+END
+sfPluginConfigurationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfPluginConfigurationTest.php
+END
+sfFilterConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfFilterConfigHandlerTest.php
+END
+sfGeneratorConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfGeneratorConfigHandlerTest.php
+END
+sfProjectConfigurationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfProjectConfigurationTest.php
+END
+sfViewConfigHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/sfViewConfigHandlerTest.php
+END

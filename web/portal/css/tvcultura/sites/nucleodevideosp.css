@@ -1,0 +1,24 @@
+@import url("../geral.css");
+
+/** NUCLEO DE VIDEOS **/
+.submenu-interna,
+.submenu-interna ul {width:150px;}
+
+#apoio {margin-top:90px;}
+#apoio li { width:auto; float:left; margin-right:33px; height:55px;}
+#apoio li:last-child {margin-right:0;}
+#apoio a {display:block;}
+#barra-site .redes {width:460px;}
+#barra-site .redes ul {width:140px;}
+#orkut_share {width:125px; float:left; margin-left:5px;}
+.assinatura .box-compartilhar .face {width:auto;}
+.box-compartilhar .face {display:block; width:467px;}
+.box-compartilhar .btn-compartilhar {float:left; margin-left:10px;}
+.assinatura .box-compartilhar .face {width:auto;}
+#barra-site .topo-programa { background:url(../../../images/capaPrograma/nucleodevideosp/topo_educacao.png) no-repeat; height:123px;}
+#chamada {margin-bottom:0;}
+#barra-site h2 {margin-top:20px;}
+.menu-interna {margin-top:0; width: 830px;}
+#barra-site { margin-top:0; }
+
+/** /NUCLEO DE VIDEOS **/

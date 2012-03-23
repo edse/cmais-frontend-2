@@ -1,0 +1,279 @@
+#barra-site .redes { margin-top:15px; }
+.box-padrao .topo span {display:none;}
+.box-padrao .capa-titulo { background:#005dab; width:310px; }
+.msgAcerto,
+.msgErro,
+.contato form .linha .enviar { background:#005dab; }
+
+.p-puplicidade {
+    color: #333333;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    text-align: justify;
+}
+.capa h1 {
+    color: #333333;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#direita-captacao {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 0;
+    min-height: 300px;
+}
+#direita-captacao h3 {
+    font-size: 16px;
+    text-align: left;
+}
+#direita-captacao p {
+    font-size: 14px;
+    text-align: left;
+}
+#destaques-home-captacao {
+    margin-top: 20px;
+}
+#destaques-home-captacao #destaque-publicidade {
+    float: left;
+    width: 310px;
+}
+.m-right {
+    margin-right: 20px;
+}
+.capa .linguas {
+    float: right;
+    width: 200px;
+}
+.capa .linguas a {
+    display: block;
+    float: left;
+    height: 20px;
+    width: auto;
+    padding-left: 35px;
+    background-repeat:no-repeat;
+    margin-left:10px;
+    font-size:12px;
+    line-height:20px;
+    
+}
+.capa .linguas a:hover {text-decoration:none;}
+.capa .linguas .pt { background-image:url(/portal/images/capaPrograma/captacao/portugues.png); }
+.capa .linguas .en { background-image:url(/portal/images/capaPrograma/captacao/english.png); }
+
+#revista .destaque-revista
+{
+  width:970px !important;
+
+}
+#menu-revista {
+  position: absolute;
+    width: 308px !important;
+    min-height: 398px;
+    background: url(/portal/images/capaPrograma/captacao/barra-menu.png) no-repeat scroll 0 50% transparent !important;
+    z-index: 2;
+}
+#conteudo-revista {
+  width:682px !important;
+  border:1px solid #e5e5e5;
+  margin-top: 4px;
+  left: 330px;
+    position: absolute; 
+}
+
+#menu-revista li a {
+  width:273px;
+}
+#menu-revista .item0.ativo,
+#menu-revista .item0:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-1.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item1.ativo,
+#menu-revista .item1:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-2.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item2.ativo,
+#menu-revista .item2:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-3.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item3:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-4.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item4:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-5.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item5:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-6.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item6:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-7.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item7:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-1.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item8:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-2.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item9:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-3.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item10:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-4.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item11:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-5.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item12:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-6.png) no-repeat scroll 0 0 transparent !important;}
+
+#menu-revista .item13:hover{background: url(/portal/images/capaPrograma/captacao/bg-hover-7.png) no-repeat scroll 0 0 transparent !important;}
+
+#conteudo-item0 {background: #7e38aa !important}
+
+#conteudo-item1 {background: #2a87cb !important}
+
+#conteudo-item2 {background: #d90d11 !important}
+
+#conteudo-item3 {background: #ff6633 !important}
+
+#conteudo-item4 {background: #1fa299 !important}
+
+#conteudo-item5 {background: #cb1579 !important}
+
+#conteudo-item6 {background: #808f43 !important}
+
+#conteudo-item7 {background: #7e38aa !important}
+
+#conteudo-item8 {background: #2a87cb !important}
+
+#conteudo-item9 {background: #d90d11 !important}
+
+#conteudo-item10 {background: #ff6633 !important}
+
+#conteudo-item11 {background: #1fa299 !important}
+
+#conteudo-item12 {background: #cb1579 !important}
+
+#conteudo-item13 {background: #808f43 !important}
+
+#conteudo-revista .capa-conteudo{
+  width:684px;
+
+}
+.mini-destaque{
+  width:310px;
+  height:165px;
+  position:relative;
+  float:left;
+  margin-right:5px;
+  margin-top:20px;
+  margin-left:19px;
+
+}
+.mini-destaque img{
+  width:310px !important;
+  height:165px !important;
+
+}
+
+.mini-destaque .bg{
+  width:310px !important;
+  height:75px !important;
+  display:none;
+
+}
+#conteudo-revista .descricao h3{
+   margin-left: 20px !important;
+   margin-top: 0px !important;
+   margin-bottom: 0px !important;
+   margin-right: 0px !important;
+   line-height: 20px !important;
+}
+#conteudo-revista .descricao p {
+    margin-top: 0;
+    max-height: 45px !important;
+    font-size:11px;
+    line-height: 14px;
+    margin-left: 20px;
+}
+
+.mini-destaque .descricao
+{
+  height: 75px !important;
+  width:310px !important;
+  display:none;
+
+}
+.mini-destaque .descricao .titulo a{
+  font-size:14px;
+}
+
+#esquerda .menu-publicidade li {
+    display: block;
+    width: 642px;
+}
+.menu-publicidade { margin-bottom:20px; }
+.menu-publicidade li .btn-toggle {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #005DAB;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: white;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 632px;
+}
+.menu-publicidade li .btn-toggle:hover {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #7AC043;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+#destaque-publicidade {
+    margin-bottom: 24px;
+}
+#destaque-publicidade h2 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #005DAB;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+}
+#destaque-publicidade h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+#destaque-publicidade p {
+    font-size: 14px !important;
+    text-align: left !important;
+}
+.box-interna .cp-sembg {
+    top: 25px !important;
+}
+.assinatura .sup {
+    margin-top: 10px;
+}
+
+.box-padrao .topo { margin-bottom:0; }

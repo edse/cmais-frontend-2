@@ -1,0 +1,35 @@
+@import url("../geral.css");
+
+
+/** CONTADOR **/
+body {min-height:700px;}
+#direita {margin-top:-20px;}
+#topo-contador {width:570px; margin:0 auto;}
+.media {width:640px; margin:50px auto 20px;}
+#countdown_dashboard {width:500px; margin:0 auto;}
+#topo-contador {height:46px;}
+#topo-contador .cmais {width:120px; height:30px; float:left; margin-top:8px;}
+.links {width:430px; height:34px; float:left; margin-left:20px; }
+.links li {width:34px; float:left; margin-right:10px; }
+.links li:last-child { margin-right:0;}
+.links li a {display:block; width:34px; height:34px; margin-top:6px; }
+.links .barra { background:url(../../../images/barra-lateral.png) no-repeat; }
+.links .tvratimbum {background-position: 0 -34px}
+.links .multicultura {background-position: 0 -68px}
+.links .tvunivesp {background-position: 0 -102px}
+.links .culturabrasil {background-position: 0 -136px}
+.links .culturafm {background-position: 0 -170px} 
+.links .curtir {background:url(../../../images/ico-compartilhar.png) no-repeat; width:32px; height:33px; margin-top:7px;}
+.links .twitter {background-position: 0 -33px}
+.links .youtube {background-position: 0 -66px}
+.links .flickr {background-position: 0 -99px}
+
+.days_dash {margin-left:0; position:relative; }
+.dash_title {width:100px; text-align:center; float:left; font-size:11px; margin-top:5px;}
+#topo-contador {*width:580px;}
+.links {*width:440px;}
+.capa-contador { width:500px; height:130px; overflow:hidden; margin:0 auto;}
+.capa-contador .digit {font-family:arial; height:94px; overflow:hidden;}
+
+#topo-contador {_width:590px; margin:0 auto;}
+/** /CONTADOR **/

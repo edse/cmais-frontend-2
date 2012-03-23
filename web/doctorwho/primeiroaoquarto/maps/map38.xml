@@ -1,0 +1,33 @@
+<!--MAP DATA 38-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map38>
+
+
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,211,211,1,1,418,1,1,1,214,213,0</zrow2>
+<zrow3>0,211,213,1,1,1,1,1,1,214,214,0</zrow3>
+<zrow4>0,1,1,1,418,1,1,1,1,1,1,0</zrow4>
+<zrow5>0,182,1,1,1,1,1,1,1,1,1,0</zrow5>
+<zrow6>0,1,1,1,214,212,212,214,1,1,1,0</zrow6>
+<zrow7>0,1,1,1,214,212,212,214,1,1,1,0</zrow7>
+<zrow8>0,1,1,1,1,1,1,1,1,1,1,0</zrow8>
+<zrow9>0,1,1,1,418,1,1,1,1,1,181,0</zrow9>
+<zrow10>0,211,1,1,1,1,1,1,1,1,214,0</zrow10>
+<zrow11>0,211,211,211,1,1,1,1,1,211,211,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "The Dalek has broken through the Military Zone. Better Equipped troops are on their way."</introtext>
+
+<decal>1,4,13</decal>
+<decal>1,6,26</decal>
+<decal>1,7,26</decal>
+<decal>4,1,31</decal>
+<decal>5,1,31</decal>
+<decal>6,1,31</decal>
+<decal>7,1,31</decal>
+
+</map38>

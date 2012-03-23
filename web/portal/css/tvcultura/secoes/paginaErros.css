@@ -1,0 +1,18 @@
+@import url("../geral.css");
+
+/* PAGINA ERROS */ 
+/**/
+#capa-site { padding-top: 20px; }
+#pagErro {margin:60px auto; width:530px; height:320px; position:relative;}
+#pagErro .julio {width:229px; height:320px; background:url(../../../images/imgJulio.png) no-repeat; float:left;}
+#pagErro .julio {_background-image:url(../../../images/imgJulio.gif);}
+#pagErro .msgErro {width:300px; float:left;}
+#pagErro .msgErro h3 {font-size:30px;}
+#pagErro p {font-weight:bold; font-size:16px; text-align:left;}
+#pagErro .url {margin-bottom:30px; font-weight:normal; font-size:14px;}
+#pagErro .url span {color:#ff6633;}
+#pagErro form {width:530px; position:absolute; bottom:0; left:0;}
+#pagErro form {border:1px solid #dedede;}
+#pagErro form .texto {width:459px; height:30px; border:none; float:left;}
+#pagErro form .buscar {width:71px; height:30px; background:#ff6633; border:none; color:#fff; text-transform:uppercase; font-weight:bold;}
+/* /PAGINA ERROS */ 

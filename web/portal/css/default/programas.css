@@ -1,0 +1,41 @@
+@import url("../geral.css");
+
+#miolo {margin-top:20px;}
+#miolo {*margin-top:0;}
+.tit-pagina {margin-bottom:10px;}
+.rede {margin-top:0;}
+.paginacao {_width:630px;}
+#menu-rodape .neutro {margin-right:0;}
+.conteudo-lista.ativo,
+.conteudo-lista:hover {background:#333;}
+.blocos li a.bg.ativo,
+.blocos li a.bg:hover {border-color:#333;}
+
+#menu-rodape #galeria-videos .blocos, 
+#menu-rodape #galeria-videos .blocos ul {height:700px;}
+#menu-rodape .carrossel {width:912px; margin-left:26px;}
+#menu-rodape .blocos a {color:#333; margin:7px 10px 0 7px;}
+#menu-rodape .blocos .titulos {margin-bottom:10px;}
+#menu-rodape .conteudo-lista {width:220px;}
+#menu-rodape .blocos .conteudo-lista.ativo a,
+#menu-rodape .blocos .conteudo-lista:hover a {color:#fff;}
+#menu-rodape .carrossel .jcarousel-next {right:-26px;}
+#menu-rodape .carrossel .jcarousel-prev {right:-5px;}
+
+#menu-rodape .carrossel .jcarousel-next {right:-10px;}
+#menu-rodape .carrossel .jcarousel-prev {right:10px;}
+
+.duas-colunas .txt {*width:640px; *margin-bottom:10px;}
+
+#miolo {*margin-top:0px;}
+#barra-site {*margin-left:10px;}
+
+.lista-calendario .grade .txt {margin:22px 10px 10px 10px;}
+.menu-calendario .topo,
+.menu-calendario {margin-bottom:0px;}
+
+/**** VIDEOS ****/
+.box-galeria li .bg {position:relative;}
+.box-galeria li .bg span {position:absolute; bottom:10px; right:10px; background:url(../../../images/btn-play.png) no-repeat 0 -16px; width:16px; height:16px; }
+.box-galeria li .bg:hover span {background-position:0 -32px;}
+/**** /VIDEOS ****/

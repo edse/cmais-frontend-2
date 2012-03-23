@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache
+END
+sfNoCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfNoCacheTest.php
+END
+sfFileCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfFileCacheTest.php
+END
+sfCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfCacheTest.php
+END
+sfSQLiteCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfSQLiteCacheTest.php
+END
+sfMemcacheCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfMemcacheCacheTest.php
+END
+sfCacheDriverTests.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfCacheDriverTests.class.php
+END
+sfAPCCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfAPCCacheTest.php
+END
+sfFunctionCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfFunctionCacheTest.php
+END
+sfEAcceleratorCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfEAcceleratorCacheTest.php
+END
+sfXCacheCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/cache/sfXCacheCacheTest.php
+END

@@ -1,0 +1,18 @@
+@import url("../geral.css");
+
+.contato form {margin-top: 10px;}
+.contato form label {color:#ff6633;}
+.contato form .titulo { margin-bottom: 0; }
+.contato form .titulo label {color:#333; width: 750px; clear: both;}
+.contato form .t3 textarea { height: 83px; }
+.contato form .t4 {width:319px;}
+.contato form .adicionar { background: #f2f2f2; color:#ff6633; font-weight: bold; font-size:12px; text-transform:uppercase; text-decoration:none; border-bottom:none; padding: 3px 5px; }
+.contato form .linha select,
+.contato form .linha textarea, 
+.contato form .linha input {border:1px solid #ff6633;}
+#form-inscricao label.error { background-color: #F5D6CC; color: #863F27; display: none; font-size: 12px; font-weight: normal; margin-top: 4px; padding-left: 6px; text-transform: none; }
+.msgAcerto {background:#ff6633;}
+.msgErro .alerta { background: url(../../../images/ico-erro.png) no-repeat scroll 0 0 transparent;}
+.contato p.titulos {*width:630px;}
+#barra-site h2 {margin-top:10px;}
+#barra-site #horario {width:280px;}

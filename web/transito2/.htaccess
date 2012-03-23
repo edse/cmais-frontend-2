@@ -1,0 +1,115 @@
+DefaultType text/html
+
+RewriteEngine Off
+
+#RewriteRule ^transito/mobile$ http://cmais.com.br/transito2/mobile/index.php [R]
+#RewriteRule ^transito$ http://tvcultura.cmais.com.br/transito [QSA,L]
+
+RewriteRule ^criancasdobrasil$ http://cmais.com.br/criancasdobrasil/index.html [QSA,L]
+RewriteRule ^criancasdobrasil/$ http://cmais.com.br/criancasdobrasil/index.html [QSA,L]
+RewriteRule ^criancasdobrasil/suaopiniao$ http://cmais.com.br/criancasdobrasil/suaopiniao.html [QSA,L]
+RewriteRule ^criancasdobrasil/dadosunicef$ http://cmais.com.br/criancasdobrasil/dadosunicef.html [QSA,L]
+RewriteRule ^criancasdobrasil/realizadores$ http://cmais.com.br/criancasdobrasil/realizadores.html [QSA,L]
+RewriteRule ^criancasdobrasil/workshop$ http://cmais.com.br/criancasdobrasil/workshop.html [QSA,L]
+
+#RewriteRule ^quintaldacultura$ http://200.136.27.251/quintaldacultura [R,L]
+#RewriteRule ^quintaldacultura/(.*)$ http://200.136.27.251/quintaldacultura/$1 [R,L]
+
+RewriteRule ^carnaval$ http://cmais.com.br/carnaval2012 [R,L]
+RewriteRule ^carnaval/(.*)$ http://cmais.com.br/carnaval2012/$1 [R,L]
+
+#RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$
+#RewriteCond %{request_uri} ^/homepage$
+#RewriteRule ^$ http://cmais.com.br/2012 [R,L]
+
+##RewriteRule ^rodaviva$ http://cmais.com.br/rodaviva/index.html [QSA,L]
+##RewriteRule ^rodaviva/bastidores$ http://cmais.com.br/rodaviva/bastidores.html [QSA,L]
+##RewriteRule ^rodaviva/transmissao$ http://cmais.com.br/rodaviva/transmissao.html [QSA,L]
+
+# cmais nocache
+#RewriteCond %{HTTP_HOST} ^cmais.com.br$
+#RewriteRule ^$ http://cmais.com.br [QSA,L]
+
+#RewriteRule ^quintaldacultura$ http://cmais.com.br/quintaldacultura/cache/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/jogos$ http://cmais.com.br/quintaldacultura/cache/jogos/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/videos$ http://cmais.com.br/quintaldacultura/cache/videos/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/atividades$ http://cmais.com.br/quintaldacultura/cache/atividades/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/imagens$ http://cmais.com.br/quintaldacultura/cache/imagens/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/baixar$ http://cmais.com.br/quintaldacultura/cache/baixar/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/participe$ http://cmais.com.br/quintaldacultura/cache/participe/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/album-de-natal$ http://cmais.com.br/quintaldacultura/cache/album-de-natal/index.html [QSA,L]
+#RewriteRule ^quintaldacultura/obrigado http://cmais.com.br/quintaldacultura/cache/obrigado/index.html [QSA,L]
+
+RewriteRule ^atividades/experiencia$ http://tvratimbum.cmais.com.br/atividades?section_id=21 [QSA,L]
+RewriteRule ^atividades/receitinhas$ http://tvratimbum.cmais.com.br/atividades?section_id=22 [QSA,L]
+RewriteRule ^atividades/receitas$ http://tvratimbum.cmais.com.br/atividades?section_id=22 [QSA,L]
+RewriteRule ^atividades/artes$ http://tvratimbum.cmais.com.br/atividades?section_id=23 [QSA,L]
+RewriteRule ^atividades/paracolorir$ http://tvratimbum.cmais.com.br/atividades?section_id=24 [QSA,L]
+RewriteRule ^atividades/para-colorir$ http://tvratimbum.cmais.com.br/atividades?section_id=24 [QSA,L]
+
+RewriteRule ^baixar/brincadeiras$ http://tvratimbum.cmais.com.br/baixar?section_id=1057 [QSA,L]
+RewriteRule ^baixar/carinhas$ http://tvratimbum.cmais.com.br/baixar?section_id=1058 [QSA,L]
+RewriteRule ^baixar/cartoes$ http://tvratimbum.cmais.com.br/baixar?section_id=1059 [QSA,L]
+RewriteRule ^baixar/papeis-de-parede$ http://tvratimbum.cmais.com.br/baixar?section_id=1060 [QSA,L]
+
+RewriteRule ^doctv$ http://www.tvcultura.com.br/doctv [R,L]
+RewriteRule ^cocorico$ http://www3.tvcultura.com.br/cocorico [R,L]
+
+RewriteRule ^deupaulanatv/deu-paula-na-web$ http://tvcultura.cmais.com.br/deupaulanatv/deupaulanaweb [R,L]
+
+RewriteRule ^roteiro$ http://www2.tvcultura.com.br/roteiro [R,L]
+RewriteRule ^roteiro/(.*)$ http://www2.tvcultura.com.br/roteiro/$1 [R,L]
+
+#RewriteRule ^quintaldacultura/3d$ http://cmais.com.br/quintaldacultura/oculos-3d [R,L]
+#RewriteRule ^quintaldacultura/descubra-como-fazer-um-oculos-3d$ http://cmais.com.br/quintaldacultura/oculos-3d [R,L]
+#RewriteRule ^descubra-como-fazer-um-oculos-3d(.*)$ http://cmais.com.br/quintaldacultura/oculos-3d [R,L]
+#RewriteRule ^quintaldacultura/tarsila$ http://cmais.com.br/maiscrianca/quem-foi-tarsila-do-amaral [R,L]
+#RewriteRule ^quintaldacultura/tarsiladoamaral$ http://cmais.com.br/maiscrianca/quem-foi-tarsila-do-amaral [R,L]
+#RewriteRule ^quintaldacultura/tarsila-do-amaral$ http://cmais.com.br/maiscrianca/quem-foi-tarsila-do-amaral [R,L]
+
+# Remove www from domain
+RewriteCond %{HTTP_HOST} ^www.quintaldacultura.com.br$ [NC]
+RewriteRule ^(.*)$ http://cmais.com.br/quintaldacultura/$1 [R=301,L]
+
+#RewriteRule ^rodaviva(.*)?$ http://tvcultura.com.br/rodaviva$1 [R,L]
+#RewriteRule ^jornaldacultura(.*)?$ http://tvcultura.com.br/jornaldacultura$1 [R,L]
+#RewriteRule ^provocacoes(.*)?$ http://tvcultura.com.br/provocacoes$1 [R,L]
+#RewriteRule ^cartaoverde(.*)?$ http://tvcultura.com.br/cartaoverde$1 [R,L]
+#RewriteRule ^cartao(.*)?$ http://tvcultura.com.br/cartaoverde$1 [R,L]
+
+#RewriteRule ^uploads\/(.*)$ http://200.136.27.181/uploads/$1 [R]
+#RewriteRule ^uploads\/(.*)$ /uploads.php?a=$1 [QSA,L]
+
+# Remove www from domain
+RewriteCond %{HTTP_HOST} ^www.cmais.com.br$ [NC]
+RewriteRule ^(.*)$ http://cmais.com.br/$1 [R=301,L]
+RewriteRule ^(.+)/$ http://cmais.com.br/$1 [R=301,L]
+
+## all files with .something are skipped
+#RewriteCond %{REQUEST_URI} \..+$
+##RewriteCond %{REQUEST_URI} !\.html$
+#RewriteRule .* - [L]
+## the others are redirected to the front web controller
+#RewriteRule ^(.*)$ index.php [QSA,L]
+
+####################
+
+## we check if the .html version is here (caching)
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}index.html -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1index.html [L]
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}.html -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1.html [L]
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI} -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# no, so we redirect to our front web controller
+RewriteRule ^(.*)$ index.php [QSA,L]
+

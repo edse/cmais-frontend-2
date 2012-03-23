@@ -1,0 +1,12 @@
+@import url("../geral.css");
+
+/** WOOHOO **/
+#barra-site { background:url(../../../images/capaPrograma/woohoonews/bg-woohoo.png) no-repeat right -25px;  margin-top:0; min-height:132px;  }
+.submenu-interna {width:116px;}
+.col-esq .topo span {background-position:-15px 0;}
+.col-esq .topo .capa-titulo { background:#ff6633; }
+.col-esq .azul span {background-position: -105px 0;}
+.col-esq .azul .capa-titulo {background:#41527B;}
+#chamada {margin-bottom:0;}
+#barra-site h2 {margin-top:10px;}
+/** /WOOHOO **/

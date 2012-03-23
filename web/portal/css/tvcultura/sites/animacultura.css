@@ -1,0 +1,132 @@
+@import url("../geral.css");
+
+#bg-anima{
+	background: url(../../../images/bkg-textura.png) repeat;
+	z-index: 0;
+}
+#capa-site {
+	background: url(../../../images/bg-topoAnima.png) no-repeat 340px 0;
+}
+#mask{
+	background-color:#000;
+	display:none;
+	*margin-left: -670px;
+	position:absolute;
+	z-index:9000;
+}
+.animaBox{
+	float: left;
+	margin: 100px 0 140px 0;
+	*padding-bottom: 140px;
+}
+.animaBox .oqueeh,
+.animaBox .projetos,
+.animaBox .participe{
+	float: left;
+	width: 280px;
+}
+.animaBox .oqueeh,
+.animaBox .projetos{
+	margin-right: 65px;
+}
+.animaBox a{
+	float: left;
+	text-decoration: none;
+}
+.animaBox h3{
+	font-family: 'Amaranth', arial;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.animaBox p{
+	float: left;
+}
+.animaBox .oqueeh a span,
+.animaBox .projetos a span,
+.animaBox .participe a span{
+	float: left;
+	display: block;
+	margin-top: 25px;
+	width: 267px;
+	height: 285px;
+}
+.animaBox .oqueeh a span{
+	background: url(../../../images/bg-oqueeh.png) no-repeat;
+}
+.animaBox .projetos a span{
+	background: url(../../../images/bg-projeto.png) no-repeat;
+}
+.animaBox .participe a span{
+	background: url(../../../images/bg-participe.png) no-repeat;
+}
+.animaBox .oqueeh a:hover h3,
+.animaBox .projetos a:hover h3,
+.animaBox .participe a:hover h3{
+	color: #8001b9;
+}
+.animaBox .oqueeh a:hover span{
+	background: url(../../../images/bg-oqueehOver.png) no-repeat;
+}
+.animaBox .projetos a:hover span{
+	background: url(../../../images/bg-projetoOver.png) no-repeat;
+}
+.animaBox .participe a:hover span{
+	background: url(../../../images/bg-participeOver.png) no-repeat;
+}
+.rodapePatrocinadores{
+	background: url(../../../images/bkg-rodape.png) no-repeat top center;
+	height: 546px;
+}
+.rodapePatrocinadores .patrocinadores{
+	margin-top: 200px;
+}
+#rodape-portal{
+    margin-top: -26px;
+}
+#rodape-portal .capa-rodape{
+	border: none;
+}
+#boxes .window{
+	border-radius: 6px 6px 6px 6px;
+	display: none;
+	padding: 20px;
+	position: absolute;
+	left: 324px!important;
+	top: 150px!important;
+	width: 620px;
+	z-index: 9999;
+}
+#boxes .window .linha{
+	background: url(../../../images/bordaAnima.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 10px;
+	width: 598px;
+	height: 2px;
+}
+#boxes #dialog{
+	background-color: #eee;
+	width: 620px;
+}
+#boxes .window .close{
+	background: url(../../../images/btn-fecharAnima.png) no-repeat;
+	float: right;
+	display: block;
+	margin-top: 18px;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 51px;
+	height: 10px;
+}
+#boxes .window h3{
+	font-family: 'Amaranth', arial;
+	font-size: 30px;
+	float: left;
+}
+#boxes .window p{
+	color: #033333;
+	float: left;
+	margin: 20px 0 0 10px;
+	text-align: left;
+	width: 595px;
+}

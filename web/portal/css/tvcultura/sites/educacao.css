@@ -1,0 +1,47 @@
+@import url("../geral.css");
+
+/** EDUCACAO **/
+#esquerda { min-height:500px;}
+.pag-bola a {margin:0;}
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-70px 0; }
+.submenu-interna ul {width:180px;}
+.m-educacao-em-dia .submenu-interna ul {width:120px;}
+.menu-interna a span { background-position:0 -56px;}
+#menu-rodape .logos li a  { background-position:0 -280px }
+#menu-rodape .logos li a:hover,
+#menu-rodape .logos li a.ativo { background-position:0 0; }
+#menu-rodape #logos .carrossel .jcarousel-item a:hover,
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo { border-color:#96a84c;} 
+.abas li a.ativo,
+.abas li a:hover { background-position:0 -306px;  }
+.menu-interna li.ativo, 
+.menu-interna li:hover {color:#fff; background:#96a84c;}
+.menu-interna a,
+#menu-rodape .blocos a,
+.tit-pagina a,
+.chapeu,
+.submenu-interna a:hover,
+#menu-rodape .exibir-programas a {color:#96a84c; }
+#menu-rodape .exibir-programas a:hover { background:#96a84c; color:#fff }
+.topo span {background-position:-45px;}
+.claro .capa-titulo { background:#96a84c;}
+.abas li.ativo .decoracao,
+.abas li:hover .decoracao  {background-position:0 -12px;}
+.abas li.ativo a,
+.abas li:hover a,
+.submenu-interna,
+.capa-titulo,
+.box-borda .newsletter .assinar,
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover, 
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, 
+#datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#96a84c;}
+
+#barra-site .topo-programa { min-height: 0px !important; }
+
+#barra-site .topo-programa h3 { color: #96A84C !important; }
+/** /EDUCACAO **/

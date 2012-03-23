@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/test/unit
+END
+testTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/test/unit/testTest.php
+END
+result.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/test/unit/result.txt
+END
+result-harness.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/test/unit/result-harness.txt
+END

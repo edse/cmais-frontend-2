@@ -1,0 +1,361 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.happyworm.com/jquery/jplayer
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 3.0 (jPlayer 2.0.0)
+ * Date: 20th December 2010
+ */
+
+div.jp-audio,
+div.jp-video {
+
+	/* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em
+	 */
+
+}
+div.jp-audio {
+	
+}
+div.jp-interface {
+	
+}
+div.jp-audio div.jp-type-single div.jp-interface {
+
+}
+div.jp-audio div.jp-type-playlist div.jp-interface {
+
+}
+div.jp-video div.jp-type-single div.jp-interface {
+	height:60px;
+	border-bottom:none;
+}
+div.jp-video div.jp-type-playlist div.jp-interface {
+	height:60px;
+}
+div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	padding:0;
+	margin: 0;
+}
+div.jp-interface ul.jp-controls li {
+	/* position: absolute; */
+	display:inline;
+}
+div.jp-interface ul.jp-controls a {
+	position: absolute;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+a.jp-play,
+a.jp-pause {
+	
+}
+div.jp-audio div.jp-type-single a.jp-play,
+div.jp-audio div.jp-type-single a.jp-pause {
+	
+}
+div.jp-audio div.jp-type-playlist a.jp-play,
+div.jp-audio div.jp-type-playlist a.jp-pause {
+	
+}
+div.jp-video a.jp-play,
+div.jp-video a.jp-pause {
+	top:15px;
+}
+div.jp-video-270p div.jp-type-single a.jp-play,
+div.jp-video-270p div.jp-type-single a.jp-pause {
+	left:195px;
+}
+div.jp-video-270p div.jp-type-playlist a.jp-play,
+div.jp-video-270p div.jp-type-playlist a.jp-pause {
+	left:220px;
+}
+div.jp-video-360p div.jp-type-single a.jp-play,
+div.jp-video-360p div.jp-type-single a.jp-pause {
+	left:275px;
+}
+div.jp-video-360p div.jp-type-playlist a.jp-play,
+div.jp-video-360p div.jp-type-playlist a.jp-pause {
+	left:300px;
+}
+a.jp-play {
+	
+}
+a.jp-play:hover {
+
+}
+a.jp-pause {
+
+	display: none;
+}
+a.jp-pause:hover {
+
+}
+div.jp-audio div.jp-type-single a.jp-stop {
+	top:26px;
+	left:90px;
+}
+div.jp-audio div.jp-type-playlist a.jp-stop {
+}
+div.jp-video a.jp-stop {
+}
+div.jp-video-270p div.jp-type-single a.jp-stop {
+}
+div.jp-video-270p div.jp-type-playlist a.jp-stop {
+}
+div.jp-video-360p div.jp-type-single a.jp-stop {
+}
+div.jp-video-360p div.jp-type-playlist a.jp-stop {
+}
+a.jp-stop {
+	
+}
+a.jp-stop:hover {
+	
+}
+div.jp-audio div.jp-type-playlist a.jp-previous {
+}
+div.jp-video div.jp-type-playlist a.jp-previous {
+	top:21px;
+}
+div.jp-video-270p div.jp-type-playlist a.jp-previous {
+	left:192px;
+}
+div.jp-video-360p div.jp-type-playlist a.jp-previous {
+	left:272px;
+}
+a.jp-previous {
+
+}
+a.jp-previous:hover {
+
+}
+div.jp-audio div.jp-type-playlist a.jp-next {
+}
+div.jp-video div.jp-type-playlist a.jp-next {
+}
+div.jp-video-270p div.jp-type-playlist a.jp-next {
+}
+div.jp-video-360p div.jp-type-playlist a.jp-next {
+}
+a.jp-next {
+}
+a.jp-next:hover {
+
+}
+div.jp-progress {
+}
+div.jp-audio div.jp-type-single div.jp-progress {
+	top:32px;
+	left:130px;
+	width:122px;
+	height:15px;
+}
+div.jp-audio div.jp-type-playlist div.jp-progress {
+}
+div.jp-video div.jp-progress {
+	top:0px;
+	left:0px;
+	width:100%;
+	height:10px;
+}
+div.jp-seek-bar {
+}
+div.jp-play-bar {
+	
+}
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {
+	background: url("pbar-ani.gif");
+}
+
+a.jp-mute,
+a.jp-unmute {
+	width:18px;
+	height:15px;
+}
+div.jp-audio div.jp-type-single a.jp-mute,
+div.jp-audio div.jp-type-single a.jp-unmute {
+	top:32px;
+	left:274px;
+}
+div.jp-audio div.jp-type-playlist a.jp-mute,
+div.jp-audio div.jp-type-playlist a.jp-unmute {
+	top:32px;
+	left:296px;
+}
+div.jp-video a.jp-mute,
+div.jp-video a.jp-unmute {
+	top:27px;
+}
+div.jp-video-270p div.jp-type-single a.jp-mute,
+div.jp-video-270p div.jp-type-single a.jp-unmute {
+	left:304px;
+}
+div.jp-video-270p div.jp-type-playlist a.jp-unmute,
+div.jp-video-270p div.jp-type-playlist a.jp-mute {
+	left:363px;
+}
+div.jp-video-360p div.jp-type-single a.jp-mute,
+div.jp-video-360p div.jp-type-single a.jp-unmute {
+	left:384px;
+}
+div.jp-video-360p div.jp-type-playlist a.jp-mute,
+div.jp-video-360p div.jp-type-playlist a.jp-unmute {
+	left:443px;
+}
+a.jp-mute {
+	background: url("jplayer.blue.monday.jpg") 0 -186px no-repeat;
+}
+a.jp-mute:hover {
+	background: url("jplayer.blue.monday.jpg") -19px -170px no-repeat;
+}
+a.jp-unmute {
+	background: url("jplayer.blue.monday.jpg") 0 -170px no-repeat;
+	display: none;
+}
+a.jp-unmute:hover {
+	background: url("jplayer.blue.monday.jpg") -19px -186px no-repeat;
+}
+div.jp-volume-bar {
+}
+div.jp-audio div.jp-type-single div.jp-volume-bar {
+	top:37px;
+	left:302px;
+}
+div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+}
+div.jp-video div.jp-volume-bar {
+	top:32px;
+}
+div.jp-video-270p div.jp-type-single div.jp-volume-bar {
+	left:332px;
+}
+div.jp-video-270p div.jp-type-playlist div.jp-volume-bar {
+	left:391px;
+}
+div.jp-video-360p div.jp-type-single div.jp-volume-bar {
+	left:412px;
+}
+div.jp-video-360p div.jp-type-playlist div.jp-volume-bar {
+	left:471px;
+}
+div.jp-volume-bar-value {
+}
+div.jp-current-time,
+div.jp-duration {
+}
+div.jp-duration {
+	text-align: right;
+}
+div.jp-audio div.jp-type-single div.jp-current-time,
+div.jp-audio div.jp-type-single div.jp-duration {
+	
+}
+div.jp-audio div.jp-type-playlist div.jp-current-time,
+div.jp-audio div.jp-type-playlist div.jp-duration {
+}
+div.jp-video div.jp-current-time,
+div.jp-video div.jp-duration {
+	top:10px;
+	left:0px;
+	width:98%;
+	padding:0 1%;
+}
+div.jp-playlist {
+}
+div.jp-playlist ul {
+}
+
+
+div.jp-type-single div.jp-playlist li {
+
+}
+div.jp-type-playlist div.jp-playlist li {
+	
+}
+/*
+div.jp-video div.jp-playlist li {
+	padding:5px 0 5px 20px;
+	font-weight:bold;
+}
+*/
+div.jp-type-playlist div.jp-playlist li.jp-playlist-last {
+	width: 284px;
+	border-bottom:none;
+}
+
+div.jp-type-playlist div.jp-playlist a {
+	color: #323232;
+	text-decoration: none;
+	margin-bottom: 5px; 
+	padding: 2px 5px;
+	width: 284px;
+}
+div.jp-type-playlist div.jp-playlist a:hover {
+	border: 1px solid #f8ec33;
+	padding: 1px 4px;
+	width: 284px;
+}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+	background-color: #f8ec33;
+	border: none;
+	color: #323232;
+	padding: 2px 5px;
+	width: 284px;
+}
+div.jp-type-playlist div.jp-playlist div.jp-free-media {
+	display:none;	
+}
+
+div.jp-video div.jp-video-play {
+	background: transparent url("jplayer.blue.monday.video.play.png") no-repeat center;
+	/* position: relative; */
+	position: absolute;
+	cursor:pointer;
+	z-index:2;
+}
+div.jp-video div.jp-video-play:hover {
+	background: transparent url("jplayer.blue.monday.video.play.hover.png") no-repeat center;
+}
+div.jp-video-270p div.jp-video-play {
+	top:-270px;
+	width:480px;
+	height:270px;
+}
+div.jp-video-360p div.jp-video-play {
+	top:-360px;
+	width:640px;
+	height:360px;
+}
+
+div.jp-jplayer {
+	width:0px;
+	height:0px;
+}
+div.jp-video div.jp-jplayer {
+	border:1px solid #009be3;
+	border-bottom:none;
+	z-index:1;
+}
+div.jp-video-270p div.jp-jplayer {
+	width:480px;
+	height:270px;
+}
+div.jp-video-360p div.jp-jplayer {
+	width:640px;
+	height:360px;
+}
+div.jp-jplayer {
+	background-color: #000000;
+}

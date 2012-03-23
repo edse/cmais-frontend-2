@@ -1,0 +1,353 @@
+/*	
+	Doc: default
+	Revision: 1.0
+
+--------------------------------------------------------------------------------------------
+	Global 
+--------------------------------------------------------------------------------------------*/
+#rodape-portal {
+    margin-top: 66px !important;
+}
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#000000;
+}
+
+body #drwho {
+	font-family:'Lucida sans', 'Lucida Grande', Arial, sans-serif;
+	font-size:0.75em;
+	color:#FFFFFF;
+	background:#000000 url(../images/Dr-Who.jpg) no-repeat center 55px;
+	width:100%;
+	height:975px;
+	position:relative;
+}
+
+
+/* Generic Links */
+
+#drwho a:link, #drwho a:visited, #drwho a:active {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#drwho a:hover {
+	color:#00B2D7;
+	text-decoration:none;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+	Structural 
+  --------------------------------------------------------------------------------------------*/
+.facebook {
+	padding-right:36px;
+	background: url(../images/face.png) no-repeat center center !important;
+	display: block !important;
+	height: 5px !important;
+	width:0px;
+	margin-left: 13px;
+    margin-top: 13px; 
+	}
+	
+#drwho #wrapper {
+	width:920px;
+	/*padding:270px 40px 70px 40px;*/
+	padding:270px 40px 0px 40px;
+	margin:0 auto;
+
+}
+
+#drwho #header {
+	width:100%;
+	height:50px;
+	margin:48px 0 2px 0;
+	background:url(../images/img_top_grad.gif) repeat-x;
+}
+
+#drwho .col3Panel {
+	width:280px;
+	min-height:225px;
+	height:auto !important;
+	height:225px;
+	padding:10px 10px 40px 10px;
+	margin:0 0 10px 0;
+	float:left;
+	display:inline;
+	position:relative;
+	background:url(../images/blueBg.png) repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/blueBg.png", sizingMethod="scale");
+	_background-image: none;
+}
+#drwho .col2Panel {
+	width:590px;
+	min-height:230px;
+	height:auto !important;
+	height:230px;
+	padding:10px;
+	margin:0 0 10px 0;
+	float:left;
+	display:inline;
+	position:relative;
+	background:url(../images/blueBg.png) repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/blueBg.png", sizingMethod="scale");
+	_background-image: none;
+}
+#drwho .fullPanel {
+	width:900px;
+	padding:10px;
+	margin:0 0 10px 0;
+	position:relative;
+	background:url(../images/blueBg.png) repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/blueBg.png", sizingMethod="scale");
+	_background-image: none;
+}
+
+
+#drwho .col3Panel img, #drwho .col2Panel img, #drwho .fullPanel img {
+	border:1px solid #F6DA07;
+}
+#drwho img.incopy {
+	margin:0 0 20px 20px;
+}
+
+
+#drwho .boxColour {
+	background:#00007a;
+}
+
+#drwho .margPanel {
+	margin:0 0 10px 10px;
+}
+
+#drwho .episodeGallery img {
+	float:left;
+	margin:10px 14px 10px 0;
+}
+
+#drwho #galleryWrapper {
+	width:800px;
+	text-align:center;
+}
+#drwho #galleryWrapper #gallery {
+	margin:0 0 10px 0px;
+}
+#drwho #galleryContent {
+	width:500px;
+}
+
+/* Footer */
+
+#drwho #footer {
+	width:100%;
+	height:60px;
+	border:solid #000000;
+	border-width:5px 0 0 0;
+	background:url(../images/img_footer_grad.gif) repeat-x;
+	position:absolute;
+	/*bottom:0;*/
+}
+#drwho #footerContent {
+	width:1000px;
+	margin:auto;
+}
+#drwho #footerContent .left{
+	float:left;
+}
+#drwho #footerContent .left p{
+	padding:20px 0 0 0;
+	margin:0;
+}
+#drwho #footerContent .right{
+	float:right;
+}
+#drwho #footerContent .right img{
+	padding:0;
+	margin:10px 0 0 0;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------
+	Navigation 
+  --------------------------------------------------------------------------------------------*/  
+/* Main nav */
+
+#drwho #nav {
+	width:1005px;
+	height:50px;
+	margin:auto;
+}
+
+#drwho #nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#drwho #nav li {
+	height:50px;
+	list-style:none;
+	float:left;
+	border:solid #000;
+	border-width:0 0 0 2px;
+	font-size:0.97em;
+}
+
+#drwho #nav li a:link, #drwho #nav li a:active, #drwho #nav li a:visited {
+	color:#FFFFFF;
+	height:30px;
+	padding:20px 15px 0 15px;
+	background:none;
+	float:left;
+	display:block;
+	text-transform:uppercase;
+	
+}
+
+#drwho #nav li.selected a, #drwho #nav li a:hover{
+	background:url(../images/img_over_grad.gif) repeat-x;
+}
+
+
+/* Subnav  */
+#drwho .col3Panel ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#drwho .col3Panel li {
+}
+
+#drwho .col3Panel li a:link, #drwho .col3Panel li a:active, #drwho .col3Panel li a:visited {
+	width:280px;
+	height:15px;
+	display:block;
+	text-transform:uppercase;
+	margin:0 0 5px 0;
+}
+
+#drwho .col3Panel li.selected a {
+	color:#00B2D7;
+}
+
+/*--------------------------------------------------------------------------------------------
+	Typography
+  --------------------------------------------------------------------------------------------*/
+/* Headings */
+#drwho h1 {
+	font-size:1.17em;
+	margin:10px 0;
+	padding:0;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+#drwho .col2Panel h1 {
+	font-size:1.17em;
+	margin:0;
+	padding:0;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+#drwho .col3Panel h2 {
+	font-size:1em;
+	margin:0 0 10px 0;
+	padding:0;
+	font-weight:normal;
+	color:#F6DA07;
+	text-transform:uppercase;
+}
+
+#drwho .col2Panel h2, #drwho .fullPanel h2 {
+	font-size:1em;
+	margin:0 0 10px 0;
+	padding:0;
+	font-weight:normal;
+	color:#00B2D7;
+	text-transform:uppercase;
+}
+
+#drwho .col2Panel h3 {
+	font-size:1.17em;
+	margin:0 0 10px 0;
+	padding:0;
+	color:#FFFFFF;
+}
+
+
+
+/* Type */
+#drwho p {
+	color:#FFFFFF;
+}
+
+#drwho p.sml {
+	color:#FFFFFF;
+	font-size:0.92em;
+	margin:0 0 12px 0;
+	padding:0;
+}
+
+
+#drwho hr {
+	background:#FFFFFF;
+	color:#FFFFFF;
+	height:1px;
+	border:none;
+	padding:0;
+	margin:0 0 10px 0;
+}
+
+
+/* Buttons */
+#drwho a.btn_full:link, #drwho a.btn_full:active, #drwho a.btn_full:visited {
+	color:#FFFFFF;
+	width:260px;
+	height:19px;
+	padding:5px 0 0 20px;
+	background:url(../images/img_btn.gif) no-repeat;
+	display:block;
+	text-transform:uppercase;
+	position:absolute;
+	bottom:10px;
+}
+#drwho a.btn_full:hover{
+	color:#F6DA07;
+}
+
+#drwho a.btn_download:link, #drwho a.btn_download:active, #drwho a.btn_download:visited {
+	color:#FFFFFF;
+	width:90px;
+	height:19px;
+	padding:5px 10px 0 35px;
+	background:url(../images/img_download.gif) no-repeat;
+	display:inline;
+	margin:10px 0 0 0;
+	float:left;
+	text-transform:uppercase;
+	text-decoration:underline;
+}
+#drwho a.btn_download:hover{
+	color:#F6DA07;
+}
+
+/*--------------------------------------------------------------------------------------------
+	Video Player
+  --------------------------------------------------------------------------------------------*/
+  
+  #video-player { display: block; margin: 0 auto; }
+  
+  #drwho .panel .panel-overlay, #drwho .panel .overlay-background {
+    height: 132px;
+  }
+  #drwho .panel .panel-overlay h3{
+    color:#FFFFFF;
+  }
+  
+ #drwho {
+    background: url("../images/Dr-Who.jpg") no-repeat scroll center 55px #000000;
+  }

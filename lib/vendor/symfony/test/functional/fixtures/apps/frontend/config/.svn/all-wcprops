@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config
+END
+factories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/factories.yml
+END
+settings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/settings.yml
+END
+app.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/app.yml
+END
+frontendConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/frontendConfiguration.class.php
+END
+cache.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/cache.yml
+END
+security.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/security.yml
+END
+routing.yml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/routing.yml
+END
+filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/filters.yml
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/config/view.yml
+END

@@ -1,0 +1,9 @@
+@import url("../geral.css");
+
+/******** EXPEDIENTE ********/
+.box-publicidade {margin-top:0;}  
+.expediente { text-align:left;}  
+.expediente p { clear:both;}  
+.expediente li { margin-bottom:20px; }
+
+/******** /EXPEDIENTE ********/

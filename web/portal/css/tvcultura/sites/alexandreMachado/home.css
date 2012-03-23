@@ -1,0 +1,10 @@
+@import url("geral.css");
+
+/** ALEXANDRE MACHADO **/
+#barra-site .topo-programa {margin-bottom:10px;}
+#barra-site .redes {margin-left:30px;}
+.topo-programa .tit-pagina,
+.box-topo {margin-bottom:0;}
+#esquerda {margin-top:-20px;}
+
+/** /ALEXANDRE MACHADO  **/

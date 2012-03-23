@@ -1,0 +1,64 @@
+@import url("../../geral.css");
+body {background:#ffffff;}
+#capa-site {background:none;}
+#esquerda { /*margin-top:-20px;*/}
+.submenu-interna {width:120px;}
+#barra-site h2 {margin-top:10px;}
+.topo-programa .controle { background:url(../../../../images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
+.menu-interna .m-controle { padding:0 5px 0 22px !important;}
+.menu-interna .m-controle span  { background:url(../../../../images/btn-play.png) no-repeat -2px -48px; width:12px; height:12px; top:5px; left:5px;}
+.menu-interna .m-controle span { _background-image:url(../../../../images/btn-play.gif) no-repeat;}
+.menu-interna .m-controle:hover span,
+.menu-interna .m-controle.ativo span {background-position:-2px -60px;}
+
+.menu-interna li { background:#e8e8e8; }
+
+.box-padrao .topo span,
+.box-padrao .claro span {background-position: -120px 0;}
+
+#agenda .abas-conteudo li.ativo .hora a,
+#agenda .abas-conteudo li:hover .hora a,
+#agenda .abas li.ativo a,
+.box-padrao .claro .capa-titulo,
+.box-padrao .capa-titulo,
+#agenda .abas li:hover a,
+.contato form .linha .enviar,
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover,
+#datepicker .ui-widget-content .ui-state-hover,
+#datepicker .ui-widget-header .ui-state-hover,
+#datepicker .ui-state-focus,
+#datepicker .ui-widget-content .ui-state-focus,
+#datepicker .ui-widget-header .ui-state-focus {background:#005dab;}
+
+#agenda .abas li.ativo .decoracao,
+#agenda .abas li:hover .decoracao {background-position:0 -42px;}
+
+#agenda .abas-conteudo li.ativo .titulos,
+#agenda .abas-conteudo li:hover .titulos,
+.box-interna .leia,
+.uma-coluna .chapeu,
+.box-padrao .chapeu,
+#agenda .hora .noar {color:#005dab;}
+.ouvinte p {margin-bottom:0;}
+.box-radio img {width:310px; height:412px;}
+.pag-bola li:hover a, 
+.pag-bola li.ativo a {background-position:-140px 0;}
+
+#agenda .abas-conteudo ul { background: none repeat scroll 0 0 #FFFFFF; margin-top: -20px; padding-left: 10px; padding-top: 20px; }
+.menu-calendario { margin-top:20px;} 
+.menu-calendario .carrossel-menu li {width:187px;}
+.menu-calendario .carrossel-menu  {width:232px;}
+.menu-calendario .btn {background-position: 0 -126px;}
+.menu-calendario .proximo {background-position: 0 -108px;}
+
+.excel1 td { border-bottom:1px solid #fff; border-right:1px solid #fff; margin-bottom:40px !important; }
+
+
+div.jp-type-playlist div.jp-playlist a:hover {
+	color:#0d88c1;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+	color:#0d88c1;
+}
+
+/** /RADIO FM  **/

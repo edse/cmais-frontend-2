@@ -1,0 +1,24 @@
+@import url("../geral.css");
+
+/** SR BRASIL **/
+#capa-site { background:url(../../../images/capaPrograma/bg-srbrasil.png) no-repeat 600px 2px; }
+#capa-site {_background-image:url(../../../images/capaPrograma/bg-srbrasil.gif);}
+.submenu-interna {width:126px;}
+#barra-site #horario p {background:#d4bc85; padding:3px 3px 0 3px; float:right;}
+#barra-site #horario .grd {width:218px;}
+#barra-site #horario .peq {width:187px; padding-bottom:3px;}
+/** contato Sr. Brasil **/
+.contatoSrBrasil form .t1,
+.contatoSrBrasil form .t1 input,
+.contatoSrBrasil #form-contato label.error{
+	width: 470px!important;
+}
+.contatoSrBrasil form .t2,
+.contatoSrBrasil form .t2 input{
+	width: 150px!important;
+}
+
+/** /contato Sr. Brasil **/	
+/** /SR BRASIL **/
+
+/** /SR BRASIL **/

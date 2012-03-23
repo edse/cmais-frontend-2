@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/lib
+END
+I18nForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/lib/I18nForm.class.php
+END
+I18nCustomCatalogueForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/lib/I18nCustomCatalogueForm.class.php
+END

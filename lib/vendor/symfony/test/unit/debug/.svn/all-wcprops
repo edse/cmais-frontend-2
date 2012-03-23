@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/debug
+END
+sfTimerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/debug/sfTimerTest.php
+END
+sfWebDebugTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/debug/sfWebDebugTest.php
+END
+sfDebugTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/debug/sfDebugTest.php
+END

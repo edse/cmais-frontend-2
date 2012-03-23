@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Trânsito - Ayrton Senna</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="../../css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+  
+    <!--GOOGLE ANALYTICS-->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!--/GOOGLE ANALYTICS-->
+</head> 
+
+<body> 
+
+<!--PAGINA ZONA-->
+<div id="rodovia" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="../../images/logo_cmais.png"/>
+  
+      </h1>
+      
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="corpo" data-role="content">
+    
+    <a href="../../index.php" class="btn-voltar ico-left" data-direction="reverse"> Home</a>
+    <a href="../../estradas.html" class="btn-voltar tipo ico-left" data-direction="reverse">Local</a>
+    <a href="../interior.html" class="btn-voltar estradas ico-left" data-direction="reverse">Estrada</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p>&nbsp</p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+      <!--Container-->
+      <div id="container"> 
+        <!--Script Anchieta-->
+        <script>
+            $(function(){
+                $("#opcoes-estrada").change(function () {
+                  $("#estrada option:selected").each(function () {
+                    var src = $(this).val();
+                    $("#img-estrada").fadeOut('fast',function() {
+                      $("#img-estrada").attr('src', src);
+                      $('.pageload').show();
+                      var t=setTimeout(function(){
+                        $("#img-estrada").ready(function(){
+                          $('.pageload').hide();
+                          $("#img-estrada").fadeIn();
+                        });
+                      },1000);                      
+                    });
+                                                            
+                  });
+                });
+                
+
+                
+                $("#img-estrada").hide();
+                var ayrtonsenna = 0;
+                $.ajax({
+                  url: "../../../../portal/cams.php?s=ecopistas",
+                  dataType: "json",
+                  success: function(data){
+                    $.each(data, function(i,data){
+                      var a = data.title.substring(5,data.title.length);
+                      //Ayrton Senna
+                      if(a.indexOf("Ayrton Senna")>=0){
+                        if(ayrtonsenna==0){
+                          $("#estrada").append('<option value="'+data.src+'" selected="selected">'+a+'</option>');
+                          $("#img-estrada").attr('src', data.src).fadeIn('fast');
+                        }
+                        else{
+                          $('#estrada').append('<option value="'+data.src+'">'+a+'</option>');
+                          ayrtonsenna++;
+                        }
+                      }
+                    });
+                  },
+                  complete: function(){
+                    $('.pageload').hide();
+                  }
+                });
+              });
+                 
+                
+            </script>
+        <!--Script Anchieta--> 
+        <span class="rodovia">Ayrton Senna</span> 
+        <!--Selecione a Avenida-->
+        <div id="selecione" data-role="fieldcontain" align="center">
+                      
+          
+          <form id="opcoes-estrada" action="" method="post">
+            <select id="estrada" class="required" data-role="none">
+                
+            </select>
+          </form> 
+          
+          <div class="pageload" style="margin: 0px auto;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+          <img id="img-estrada" src="" alt="" style="width: 95%; display: none;" /> 
+        </div>
+        <!--/Selecione a Avenida--> 
+          
+        <!--PARTICIPE / MAPAS-->
+        <div id="btn-nav" align="center">
+          <a href="../../participe.html" id="btn-participe" class="flLeft" data-ajax="false">Participe</a>
+          <a href="../../cmaisgoogle.html" id="btn-mapa" class="flRight"  data-ajax="false">
+            <div class="w100">
+              <div class="cont-btn-mapa">
+                 Mapas
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--PARTICIPE / MAPAS-->
+                  
+     </div> 
+     <!--/Container-->  
+                
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA ZONA-->
+
+
+  
+
+
+</body>
+</html>

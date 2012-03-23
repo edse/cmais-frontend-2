@@ -1,0 +1,31 @@
+@import url("../geral.css");
+
+/** REIS DA RUA **/
+#barra-site { background:url(../../../images/capaPrograma/bg-reisdarua.png) no-repeat 720px 0; margin-top:0; padding-top:20px;}
+#barra-site {*background-image:url(../../../images/capaPrograma/bg-reisdarua.gif);}
+#barra-site h2 {margin-top:30px;}
+.col-esq .rede {margin-top:20px;}
+.box-padrao .chapeu {color:#ff6633;}
+#direita {margin-top:0;}
+.formulario {background:#fff;}
+.formulario .box-padrao {margin:5px;}
+.box-topo,
+.box-topo .navegacao {margin-bottom:0;}
+.box-topo .navegacao {*margin-bottom:20px;}
+#lista .acessibilidade {position:absolute; right:130px; top:24px;}
+#lista {text-align:left;}
+#lista .assinatura {margin-bottom:0;}
+#lista .assinatura .btn-compartilhar {position: absolute; right: 0; top: 16px; }
+#lista li { margin-bottom:20px; }
+#lista li p {clear:both; }
+#lista li .titulos {width:640px;}
+#lista li .link {color:#ff6633;}
+
+.col-esq .topo span { background-position:-15px 0; }
+.col-esq .topo .capa-titulo {background-color:#FF6633;}
+
+strong { font-weight: bold !important; }
+
+#chamada { margin-bottom:0; }
+
+/** /REIS DA RUA **/

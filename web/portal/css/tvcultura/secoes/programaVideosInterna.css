@@ -1,0 +1,14 @@
+@import url("../geral.css");
+@import url("programas.css");
+
+/* PROGRAMA VIDEOS INTERNA */
+.ad-gallery .ad-nav .ad-thumbs {float:left;}
+#container {margin-bottom:20px; float:left}
+.box-relacionados { margin-top:0;}
+.ad-gallery .ad-back {background-position:0 -90px;}
+.ad-gallery .ad-forward {background-position:0 -72px;}
+.ad-thumb-list {min-width:640px;}
+
+
+
+/* /PROGRAMA VIDEOS INTERNA */

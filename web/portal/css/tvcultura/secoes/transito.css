@@ -1,0 +1,20 @@
+@import url("../geral.css");
+
+/******** TRANSITO ********/
+.box-compartilhar { background:transparent;}
+.box-compartilhar .btn-compartilhar {float:left;}
+.btn-compartilhar p {color:#333;}	
+.btn-compartilhar .face,
+.btn-compartilhar .print {display:none;} 	
+
+.box-transito { margin-top:10px; text-align:left; }
+.box-transito p { text-transform:uppercase; color:#ff6633; font-size:10px; }
+.box-transito .outras { margin:0 20px; }
+.box-transito select { width:100%; margin-bottom:10px; border:1px solid #ccc; color:#333; }
+.box-transito .mapa-transito { margin-top:20px; }
+.box-transito .desc {width:310px; height:19px; background:#fff; margin-bottom:10px; color:#333; padding-left:5px; font-size:14px; text-transform:none; border:1px solid #ccc;}
+
+/* RACKS IE */
+.box-compartilhar {*width:200px;}
+/* /RACKS IE */
+/******** /TRANSITO *****

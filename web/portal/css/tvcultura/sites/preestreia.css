@@ -1,0 +1,43 @@
+@import url("../geral.css");
+
+/** PRE ESTREIA **/
+.submenu-interna,
+.submenu-interna ul {width:135px;}
+#barra-site h2 {margin-top:30px;}
+#barra-site #horario {width:200px;}
+/* form */
+.form { background:#fff; }
+.form .box-padrao {margin:5px;}
+.form .box-padrao .titulos {margin-bottom:0;}
+.form .box-padrao p {clear:both; margin-bottom:10px;}
+.contato {margin:5px;}
+.contato form .t1 { width:228px; }
+.contato form .regulamento { border: 1px solid #BFBFBF;  height: 307px;  overflow-y: scroll; width:284px; padding:5px; margin-right:0;}
+.contato form .regulamento p, 
+.contato form .regulamento li, 
+.contato form .regulamento a {color: #333333;font-size: 12px;}
+.contato form .regulamento li {margin-bottom:10px;}
+.contato form .regulamento p {margin-bottom:5px;}
+.contato .codigo .caracteres,
+.contato .codigo .msg { width: 294px;}
+.contato form .t1 label, 
+.contato form .t1 input { width:224px; }
+.contato form .t3 { width:298px;}
+.contato form textarea {width: 292px;}
+.contato form .t3 label, 
+.contato form .t3 input {width:294px;}
+.contato form .linha select {width:60px;}
+.contato form .t2 label, 
+.contato form .t2 input {width:56px;}
+.contato form .concordo .check { width:15px; float:left; border:none; }
+.contato form .concordo label { text-transform:none; font-size:12px; font-weight:normal; width:270px; margin:2px 0 0 5px; float:left; }
+.contato form .concordo a {font-size:12px; text-decoration:underline;}
+.contato form .linha .tipo {width:294px;}
+.contato form label span {font-size:10px; font-weight: normal; text-transform:none;}
+.msgAcerto { background-color:#ff6633; margin: 0 0 0 5px ; width: 290px;}
+.msgAcerto { *margin-left:3px;}
+.boxMsg { width: 228px;}
+/* /form */
+
+/** /PRE ESTREIA **/
+	

@@ -1,0 +1,31 @@
+<!--MAP DATA 74-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map74>
+
+<decal>4,1,42</decal>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,0,0,0,1,1,1,216,1,0,0,0</zrow2>
+<zrow3>0,0,0,0,1,1,1,1,1,0,0,0</zrow3>
+<zrow4>0,0,0,0,215,1,1,1,1,0,0,0</zrow4>
+<zrow5>0,0,0,0,1,1,1,1,1,0,0,0</zrow5>
+<zrow6>0,0,0,0,215,1,1,1,1,0,0,0</zrow6>
+<zrow7>0,0,0,0,1,1,1,1,1,0,0,0</zrow7>
+<zrow8>0,0,0,0,215,1,1,1,1,0,0,0</zrow8>
+<zrow9>0,0,0,0,1,1,1,1,1,0,0,0</zrow9>
+<zrow10>0,0,0,0,215,1,1,1,1,0,0,0</zrow10>
+<zrow11>0,0,0,0,1,1,141,1,1,0,0,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>DALEK: "Mission target identified - destroy tardis!!"</introtext>
+<info>6,10,DALEK: "Mission target identified - destroy tardis!!",0</info>
+
+<info>5,3,Extraterrestrial metal - unusual preperties - Recovered from Tunguska Siberia - 1908.,0</info>
+<info>5,5,I-Beam - markings similar to hieroglyphics - Recovered from Roswell USA - 1947.,0</info>
+<info>5,7,Spaceship component - unknown purpose - Recovered from Roswell USA - 1947.,0</info>
+<info>5,9,Extraterrestrial severed arm - unknown origin - discovered mongolia - 1952.,0</info>
+
+</map74>

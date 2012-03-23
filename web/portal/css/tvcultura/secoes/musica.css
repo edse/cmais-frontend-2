@@ -1,0 +1,64 @@
+@import url("../geral.css");
+
+
+/** MUSICA **/
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-56px 0; }
+
+.menu-interna a { color:#369ae3; }
+.menu-interna li.ativo,
+.menu-interna li:hover { color:#fff; background:#369ae3; }
+.menu-interna li span {background-position:0 -40px;}
+
+.submenu-interna {background:#369ae3;}
+
+.submenu-interna a {color:#fff;}
+.submenu-interna li,
+.submenu-interna li.ativo,
+.submenu-interna li:hover {background:none; }
+
+.submenu-interna ul {width:120px;}
+
+
+#menu-rodape .exibir-programas a {color:#ee2125; }
+#menu-rodape .exibir-programas a:hover { background:#369ae3; color:#fff }
+#menu-rodape #logos .carrossel .jcarousel-item a:hover,
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo {border-color:#369ae3;}
+
+.box-playlist a:hover img { border-color:#369ae3; }
+
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover, 
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, 
+#datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#369ae3;}
+
+/* SubEditoria */
+.filtrar {margin-top:0;}
+.box-relacionados {margin-top:0;}
+.box-listao {margin-top:0;}
+.box-listao a,
+.box-listao p {clear:both;}
+
+/* SubEditoria */
+
+.jcarousel-clip,
+.jcarousel-clip .musica {height:175px !important;}
+
+/*.controle {float:right;}*/
+/*.controle #controle-remoto  {background: red url(../../../images/controle.png) !important;}*/
+
+#boxControle { width:256px; overflow:hidden; position:absolute; right:0; }
+#boxControle { *height:70px; }
+#boxControle img { float:left; height:51px; margin:10px  10px 10px 15px; width:35px; }
+#boxControle .content { float:left; width:186px;  }
+#boxControle .content h2 { background: url(../../../images/tit-controle.png) no-repeat; height:22px; text-indent:-9999px; width:124px; margin-top:10px; }
+#boxControle .content .btn { display:block; float:left; height:20px; line-height:20px; margin:5px 5px 0 0; text-align:center;}
+#boxControle .content .brasil { background:url(../../../images/btn-radioam.png) no-repeat; width:94px;  }
+#boxControle .content .brasil:hover {background-image: url(../../../images/btn-radioam-hover.png);}
+#boxControle .content .fm { background:#fff url(../../../images/btn-radiofm.png) no-repeat; width:81px; }
+#boxControle .content .fm:hover {background-image: url(../../../images/btn-radiofm-hover.png);}
+.paginacao {_width:620px;}
+/** /MUSICA **/

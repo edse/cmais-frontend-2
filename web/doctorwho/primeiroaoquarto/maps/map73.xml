@@ -1,0 +1,30 @@
+<!--MAP DATA 73-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map73>
+
+<decal>4,1,42</decal>
+
+<lock>6,1</lock>
+
+
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,0,0,0,1,1,656,1,1,0,0,0</zrow2>
+<zrow3>0,0,0,0,1,1,1,1,1,0,0,0</zrow3>
+<zrow4>0,0,0,0,1,1,1,1,1,0,0,0</zrow4>
+<zrow5>0,0,0,0,1,1,1,1,1,0,0,0</zrow5>
+<zrow6>0,0,0,0,1,1,1,1,1,0,0,0</zrow6>
+<zrow7>0,0,0,0,1,1,1,1,1,0,0,0</zrow7>
+<zrow8>0,0,0,0,1,1,1,1,1,0,0,0</zrow8>
+<zrow9>0,0,0,0,1,1,1,1,1,0,0,0</zrow9>
+<zrow10>0,0,0,0,1,1,1,1,1,0,0,0</zrow10>
+<zrow11>0,0,0,0,1,1,141,1,1,0,0,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<doctor>7,3,Doctor: Thought you'd got rid of me? I'm not going to leave the TARDIS unprotected!</doctor>
+<info>6,10,DALEK: "EXTERMINATE THE DOCTOR!!",0</info>
+
+</map73>

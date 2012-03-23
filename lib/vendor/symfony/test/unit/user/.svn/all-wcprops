@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/user
+END
+sfBasicSecurityUserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/user/sfBasicSecurityUserTest.php
+END
+sfUserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/user/sfUserTest.php
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator
+END
+RecordHierarchyDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/RecordHierarchyDriver.php
+END
+ArrayHierarchyDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/ArrayHierarchyDriver.php
+END
+RecordDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/RecordDriver.php
+END
+ArrayDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/ArrayDriver.php
+END
+NoneDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/NoneDriver.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/Exception.php
+END
+Graph.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/Graph.php
+END
+ScalarDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/ScalarDriver.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/Abstract.php
+END
+SingleScalarDriver.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Hydrator/SingleScalarDriver.php
+END

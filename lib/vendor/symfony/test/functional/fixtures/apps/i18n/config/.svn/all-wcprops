@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config
+END
+factories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/factories.yml
+END
+settings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/settings.yml
+END
+app.yml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/app.yml
+END
+i18nConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/i18nConfiguration.class.php
+END
+cache.yml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/cache.yml
+END
+security.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/security.yml
+END
+routing.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/routing.yml
+END
+filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/filters.yml
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/config/view.yml
+END

@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Cmais Trânsito - Mapa</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+</head> 
+
+<body onload="initialize()"> 
+<!--API GOOGLE MAPS -->
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&language=pt"></script>
+
+  <script>
+
+    // Note that using Google Gears requires loading the Javascript
+    // at http://code.google.com/apis/gears/gears_init.js
+    
+    var initialLocation;
+    //var siberia = new google.maps.LatLng(60, 105);
+    //var newyork = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
+    var browserSupportFlag =  new Boolean();
+        
+    function initialize() {
+
+
+         var myOptions = {
+         zoom: 16,
+         center: initialLocation,
+         mapTypeId: google.maps.MapTypeId.ROADMAP,
+         streetViewControl:false
+         }
+      
+      
+        var image = 'images/ico-transito-final-ipod.png';
+        var myLatLng = new google.maps.LatLng(23.333,34.534);
+        var beachMarker = new google.maps.Marker({
+          position: initialLocation,
+          map: map,
+          icon: image
+         });
+   
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          // Try W3C Geolocation (Preferred)
+          if(navigator.geolocation) {
+            browserSupportFlag = true;
+            navigator.geolocation.getCurrentPosition(function(position) {
+              initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+              map.setCenter(initialLocation);
+            }, function() {
+              handleNoGeolocation(browserSupportFlag);
+            });
+          // Try Google Gears Geolocation
+          } else if (google.gears) {
+            browserSupportFlag = true;
+            var geo = google.gears.factory.create('beta.geolocation');
+            geo.getCurrentPosition(function(position) {
+              initialLocation = new google.maps.LatLng(position.latitude,position.longitude);
+              map.setCenter(initialLocation);
+            }, function() {
+              handleNoGeoLocation(browserSupportFlag);
+            });
+          // Browser doesn't support Geolocation
+          } else {
+            browserSupportFlag = false;
+            handleNoGeolocation(browserSupportFlag);
+          }
+          
+          function handleNoGeolocation(errorFlag) {
+            if (errorFlag == true) {
+              alert("Falha no Geolocation.");
+              window.location.href="index.html";
+            } else {
+              alert("Seu navegador não suporta o geolocation");
+              window.location.href="index.html";
+            }
+            map.setCenter(initialLocation);
+          }
+        }
+    </script>
+    <!--API GOOGLE MAPS -->
+
+<!--PAGINA ZONA-->
+<div id="mapa" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="images/logo_cmais.png"/>
+  
+      </h1>
+      
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="corpo" data-role="content">
+    
+    <a href="index.php" class="btn-voltar ico-left" data-direction="reverse"> Voltar</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p class="texto-zona w50 flRight texAligRight">Mapa</p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+      <!--Container-->
+      <div id="container">  
+         
+        <!--MAP-->
+        <div id="map_canvas" style="width: 100%; height:250px"></div>
+        <!--/MAP--> 
+              
+        <!--PARTICIPE / MAPAS-->
+        <div id="btn-nav" align="center">
+          <a href="participe.html" id="btn-participe" class="flLeft" data-ajax="false">Participe</a>
+        </div>
+        <!--PARTICIPE / MAPAS-->
+                  
+     </div> 
+     <!--/Container-->  
+                
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA ZONA-->
+
+
+  
+
+
+</body>
+</html>

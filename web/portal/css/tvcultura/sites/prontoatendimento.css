@@ -1,0 +1,7 @@
+@import url("../geral.css");
+
+/** PRONTO ATENDIMENTO **/
+#barra-site .topo-programa {
+	min-height: 0px !important;
+}	
+/** /PRONTO ATENDIMENTO **/

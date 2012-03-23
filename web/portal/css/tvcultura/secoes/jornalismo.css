@@ -1,0 +1,16 @@
+@import url("../geral.css");
+
+/** JORNALISMO **/
+
+.col-dir {margin-top:-20px;}
+.col-esq .noticia2 { margin-top:0;} 
+
+.submenu-interna ul {width:100px;}
+
+#menu-rodape .blocos a {color:#333 !important;}
+
+/* racks IE */
+.abas li {_width:80px;}
+/* racks IE */
+
+/** /JORNALISMO **/

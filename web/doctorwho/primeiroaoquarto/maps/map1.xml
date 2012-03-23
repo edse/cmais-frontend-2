@@ -1,0 +1,45 @@
+<!--MAP DATA 1-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map1>
+
+<shape>0,0,4</shape>
+
+<lock>7,1</lock>
+
+
+<info>1,6,Lock Encrypted  - enhanced processing power required,0</info>
+<info>1,5,Use security panel to open door lock,0</info>
+<info>7,1,Must exterminate all lifeforms in area,0</info>
+
+<info>4,2,DATA: analysis of Metaltron artefact,scanimages/dalek-xrays.jpg</info>
+<info>5,2,DATA: analysis of Metaltron artefact,scanimages/dalek-xrays.jpg</info>
+
+<info>9,2,DATA: Staff Briefing,scanimages/staff-briefing.jpg</info>
+<info>10,2,DATA: Staff Briefing,scanimages/staff-briefing.jpg</info>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,2,1,1,207,0,1,100,1,207,0,0</zrow2>
+<zrow3>0,1,1,406,1,1,1,1,1,1,1,0</zrow3>
+<zrow4>0,1,1,1,1,1,1,1,1,1,1,0</zrow4>
+<zrow5>0,1,1,1,1,1,1,1,1,1,1,0</zrow5>
+<zrow6>0,101,1,1,1,1,1,1,1,1,1,0</zrow6>
+<zrow7>0,1,1,1,1,1,205,406,206,1,1,0</zrow7>
+<zrow8>0,1,1,1,1,1,1,1,1,1,1,0</zrow8>
+<zrow9>0,1,1,1,1,1,205,1,206,1,1,0</zrow9>
+<zrow10>0,200,1,1,1,1,1,1,1,1,1,0</zrow10>
+<zrow11>0,200,200,1,1,1,1,1,1,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<decal>1,8,5</decal>
+<decal>2,1,3</decal>
+<decal>2,3,15</decal>
+<decal>4,2,34</decal>
+<decal>9,2,34</decal>
+
+<decal>6,1,41</decal>
+<decal>8,1,41</decal>
+
+<introtext>COMM: "It seems to have woken up at last ... Perhaps now we'll see what it can do"</introtext>
+
+</map1>

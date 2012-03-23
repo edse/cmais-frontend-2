@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfDefineEnvironmentConfigHandler
+END
+prefix_default.yml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfDefineEnvironmentConfigHandler/prefix_default.yml
+END
+prefix_result.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfDefineEnvironmentConfigHandler/prefix_result.php
+END
+prefix_all.yml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/config/fixtures/sfDefineEnvironmentConfigHandler/prefix_all.yml
+END

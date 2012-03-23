@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Exception.php
+END
+Mssql.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Mssql.php
+END
+Schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Schema.php
+END
+Sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Sqlite.php
+END
+Reporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Reporter.php
+END
+Oracle.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Oracle.php
+END
+Mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Mysql.php
+END
+Pgsql.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Export/Pgsql.php
+END

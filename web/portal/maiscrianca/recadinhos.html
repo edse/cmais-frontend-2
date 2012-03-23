@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Recadinhos</title>
+		<link href="css/geralCrianca.css" type="text/css" rel="stylesheet">
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+		<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    </head>
+	<script type="text/javascript">
+		//carrocel
+		$(function(){
+			$('.carrossel').jcarousel({
+			wrap: "both"			
+			});
+		})
+		// Datepicker
+		$(function(){ //onready
+			$('#datepicker').datepicker({
+				inline: true
+			});		
+			//hover states on the static widgets
+			$('#dialog_link, ul#icons li').hover(
+				function() { $(this).addClass('ui-state-hover'); }, 
+				function() { $(this).removeClass('ui-state-hover'); }
+			);
+		});
+		//menu drop down
+		$(function(){
+    		$("ul.dropdown li").hover(function(){
+        		$(this).addClass("hover");
+        		$('ul:first', this).css('visibility','visible');
+    		},
+    		function(){
+        		$(this).removeClass("hover");
+        		$('ul:first',this).css('visibility', 'hidden');
+    		});
+    		$("ul.dropdown li ul li:has(ul)").find("a:first").append(" » ");
+		});
+	</script>
+    <body>
+        <div class="allWrapper">
+        	<div class="topoTvCultura">
+        		<div id="topo-portal" class="topo-geral capa-topo" style="background:#000; color:#fff; font-weight:bold; height:48px; line-height:50px;">
+					<p>TOPO PORTAL</p>
+				</div>
+        	</div>
+			<div class="contentWrapper" align="center">
+				<div class="content">
+					<div class="cabecalho">
+						<div class="menu">
+							<ul>
+								<li><a class="web ativo" href=""><span>Na Web</span></a></li>
+								<li><a class="tv" href=""><span>Na TV</span></a></li>
+								<li><a class="voceSabia" href=""><span>Voc&ecirc; Sabia?</span></a></li>
+								<li><a class="pais" href=""><span>Para os Pais</span></a></li>
+							</ul>
+						</div>
+						<div class="carrossel">
+							<ul>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+								<li><a href=""><img src="images/img-ex1.jpg" alt="" /></a></li>
+							</ul>
+						</div>	
+					</div>
+					<hr />
+					<div class="conteudo">
+						<div class="voce-sabia">
+							<div class="topo">
+								<a href=""><span></span>Home</a><hr />
+								<p class="breadcrumb">Mais Crian&ccedil;a &gt;&gt; <span>Recadinhos</span></p>
+							</div>
+							<div class="conteudo-wrapper">
+								<div class="conteudoRecadinhos">
+									<div class="conteudoRecadinhosWrapper">
+										<div class="pagTit">
+											<h1>Recadinhos</h1>
+										</div>
+										<hr />
+										<div class="listaRecadinhos">
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+											<div class="recado">
+												<div class="wrapperP">
+													<p class="data">10/11/2010 - 09h30</p>
+													<p class="nomeAutor"><span>De</span>: Nome do Fulaninho Que mandou o Recadinho</p>
+													<p class="cidade">Cidade do Fulaninho - UF 100 anos</p>
+													<p class="recadotxt"><span class="aspas1"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum ante quis elit cursus imperdiet. Curabitur ornare pretium metus.<span class="aspas2"></span></p>
+												</div>
+												<div class="wrapperMoldura">
+													<p>Para:</p>
+													<div class="moldura">
+														<img src="images/img-ex8.png" alt="" />
+													</div>	
+												</div>
+											</div>
+										</div>
+										<hr />
+										<div class="paginacao">
+											<p>P&aacute;gina 5 de 10</p>
+											<a href="" class="pagRight">ir</a>
+											<a href="" class="pagLeft">vir</a>
+										</div>
+									</div>
+								</div>
+								<div class="rightWrapper recadinho">
+									<div class="mandeRecadinho">
+										<h2>Mande o seu recadinho</h2><hr />
+										<div class="wrapperReacadinho">
+											<div class="avatar">
+												<p>Para:</p>
+												<div class="moldura">
+													<ul class="dropdown">
+														<li><img class="fotoMoldura" src="images/img-ex8.png" alt="" />
+															<ul class="carinha">
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<li><a href=""><img src="images/img-ex8.png" alt="" /></a></li>
+																<hr />
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<p class="tip">Clique sobre o selinho e escolha seu programa favorito para enviar um recadinho.</p>
+											</div>
+											<span class="dots">...</span>
+											<hr />
+											<form id="formaFale" class="formaFale" name="sendMail" method="post" action="#">
+												<p class="nome"><label>Nome:</label><input name="nome" type="text" /></p>
+												<p class="cidade"><label>Cidade:</label><input name="cidade" type="text" /></p>
+												<p class="estado"><label>Estado:</label><input name="cidade" type="text" /></p>
+												<p class="idade erro"><label>Idade:</label><input type="text" /></p>
+												<p class="mensagem erro"><label>Escreva seu recadinho:<span class="limite">140</span></label><textarea></textarea></p>
+												<input id="signupsubmit" class="enviar" name="signup" type="submit" value="Enviar" />
+											</form>
+											<p class="atencao"><span>Aten&ccedil;&atilde;o!</span> Os campos destacados apresentam erro.</p>
+										</div>
+										<div class="respostaSucesso" style="display:none;">
+											<h3>Recadinho enviado com sucesso!</h3>
+											<p>Seu recadinho ser&aacute; verificado e em breve aparecer&aacute; aqui no <span>+ Crian&ccedil;a</span>.</p>
+											<span class="dots">...</span>
+											<a class="enviarOutro" href="">Enviar outro recadinho</a>
+											<img src="images/img-smile.png" alt="=]" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+					<hr />
+					<div class="rodape">
+						<div class="menu-rodape">
+							<ul class="dropdown">
+								<li><a class="prog" href="">Programas<span></span></a>
+									<ul>
+										<li><a href="">Quintal da Cultura</a></li>
+										<li><a href="">TV R&aacute; Tim Bum</a></li>
+										<li><a href="">Cocoric&oacute;</a></li>
+										<li><a href="">X-Tudo</a></li>
+									</ul>
+								</li>
+								<li><a class="sit" href="">Sites<span></span></a>
+									<ul class="sitBox">
+										<li><a href="">Vitrine</a></li>
+										<li><a href="">Zoom</a></li>
+										<li><a href="">Manos e Minas</a></li>
+										<li><a href="">X-Tudo</a></li>
+									</ul>
+								</li>
+								<li></li>
+								<a class="right" href=""><span></span>Voltar</a>
+							</ul>
+						</div>	
+						<hr />
+						<div class="rodapeBox">
+							<div class="rodape-topo">
+								<h1>Para os Pais</h1>
+								<ul>
+									<li><a class="rss" href="">rss</a></li>
+									<li><a class="facebook" href="">facebook</a></li>
+									<li><a class="twitter" href="">twitter</a></li>
+									<li><a class="youtube" href="">youtube</a></li>
+									<li><a class="flicker" href="">flicker</a></li>
+								</ul>
+							</div>
+							<div class="conteudo-rodape">
+								<div class="colunaUm">
+									<div class="wrapperColunaUma">
+										<a href="">
+											<img src="images/img-ex3.jpg" alt="" />
+											<img class="banner-crianca" src="images/banner-crianca.png" alt="" />
+											<img class="ioio" src="images/img-ioio.png" alt="" />
+										</a>
+										<hr />
+										<div class="info">
+											<span class="dot"></span>
+											<h2>Bambal&atilde;o</h2>
+											<p>Com vídeos, fotos e curiosidades, relembre os programas transmitidos pela TV Cultura que marcaram a sua infância e de muita gente!</p>
+											<span class="dot2"></span>
+										</div>
+									</div>
+								</div>
+								<div class="colunaDois">
+									<h1>&Uacute;ltimas Not&iacute;cias</h1>
+									<a href="">Todas</a>
+									<div class="boxNoticias">
+										<span class="borderTop"></span>
+										<hr />
+										<div class="noticiaImg">
+											<h3>Primeiro passos</h3>
+											<img src="images/img-ex4.jpg" alt="" />
+											<p>Especialistas indicam as melhores formas de estimular seu pequeno a andar.</p>
+										</div>
+										<hr />
+										<div class="noticia">
+											<h3>Primeiro passos</h3>
+											<p>Especialistas indicam as melhores formas de estimular seu pequeno a andar.</p>
+										</div>
+										<hr />
+										<div class="noticia">
+											<h3>Primeiro passos</h3>
+											<p>Especialistas indicam as melhores formas de estimular seu pequeno a andar.</p>
+										</div>
+										<hr />
+										<span class="borderBottom"></span>
+									</div>
+									<div class="faleConosco">
+										<a href="">fale conosco</a>
+									</div>
+								</div>
+								<div class="colunaTres">
+									<div class="merchan1">
+										<img src="images/img-ex5.png" alt="" />
+										<p class="tit">Como adquirir?</p>
+										<p>Para adquirir produtos licenciados, acesse o site <a href="">Cultura Marcas</a>.</p>
+									</div>
+									<hr />
+									<div class="merchan2">
+										<a href=""><img src="images/img-ex6.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+				<div class="cerca"></div>
+			</div>
+			<div class="rodapeTvCultura">
+				<div id="rodape-portal" style="background:#000; color:#fff; font-weight:bold; height:48px; line-height:50px;">
+					<p>RODAPE PORTAL</p>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

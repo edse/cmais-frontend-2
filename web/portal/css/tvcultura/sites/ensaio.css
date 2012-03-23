@@ -1,0 +1,11 @@
+@import url("../geral.css");
+
+/** ENSAIO **/
+#barra-site { background:url(../../../images/capaPrograma/bg-ensaio.png) no-repeat right 0; min-height:123px; margin-top:0; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-ensaio.gif);}
+.submenu-interna {width:116px;}
+#barra-site #horario p {color:#fff; margin-right:10px; background-color: #3550C2; display:inline; float: right; padding:0 5px;}
+#barra-site h2 {margin-top:10px;}
+#chamada {margin-bottom:0;}
+
+/** /ENSAIO **/

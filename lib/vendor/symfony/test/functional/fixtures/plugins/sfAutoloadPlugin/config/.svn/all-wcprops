@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/config
+END
+sfAutoloadPluginConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/config/sfAutoloadPluginConfiguration.class.php
+END
+NotInLib.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/config/NotInLib.class.php
+END
+autoload.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/config/autoload.yml
+END

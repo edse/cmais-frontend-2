@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/mailer/fixtures
+END
+TestMailerTransport.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/mailer/fixtures/TestMailerTransport.class.php
+END
+TestMailMessage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/mailer/fixtures/TestMailMessage.class.php
+END
+TestSpool.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/mailer/fixtures/TestSpool.class.php
+END

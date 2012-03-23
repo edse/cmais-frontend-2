@@ -1,0 +1,12 @@
+@import url("../geral.css");
+@import url("../secoes/contato.css");
+
+/** ALEXANDRE MACHADO **/
+.galeria .destaques {background:none;}
+.box-relacionados {margin-top:0;}
+#direita {margin-top:-20px;}
+#barra-site .topo-programa {margin-bottom:10px;}
+#barra-site .redes {margin-left:30px;}
+.topo-programa .tit-pagina,
+.box-topo {margin-bottom:0;}
+/** /ALEXANDRE MACHADO  **/

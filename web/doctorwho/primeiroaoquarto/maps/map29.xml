@@ -1,0 +1,32 @@
+<!--MAP DATA 29-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map29>
+
+<decal>5,1,7</decal>
+<decal>5,2,28</decal>
+<decal>5,3,28</decal>
+<decal>5,4,28</decal>
+<decal>5,5,28</decal>
+<decal>5,6,28</decal>
+<decal>5,7,28</decal>
+<decal>5,8,28</decal>
+<decal>5,9,28</decal>
+<decal>5,10,28</decal>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,0,0,0,0,160,1,0,0,0,0,0</zrow2>
+<zrow3>0,0,0,0,0,1,1,457,0,0,0,0</zrow3>
+<zrow4>0,0,0,0,0,1,1,0,0,0,0,0</zrow4>
+<zrow5>0,0,0,0,0,1,1,457,0,0,0,0</zrow5>
+<zrow6>0,0,0,0,0,1,1,0,0,0,0,0</zrow6>
+<zrow7>0,0,0,0,0,1,1,457,0,0,0,0</zrow7>
+<zrow8>0,0,0,0,0,1,1,0,0,0,0,0</zrow8>
+<zrow9>0,0,0,0,0,1,1,457,0,0,0,0</zrow9>
+<zrow10>0,0,0,0,0,1,1,0,0,0,0,0</zrow10>
+<zrow11>0,0,0,0,0,159,1,0,0,0,0,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "The Dalek won't get past the access corridor sentry units without using shield technology."</introtext>
+
+</map29>

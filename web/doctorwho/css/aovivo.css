@@ -1,0 +1,18 @@
+#miolo .abas .neutro p { color:#fff; font-weight: bold; background:#4068ab; text-transform:uppercase; margin-top:2px; height: 24px; line-height:24px; padding:0 10px; float: left; }
+#miolo .abas .neutro span { width:13px; height:22px; background:url(../images/aba-neutro.png) no-repeat; display: block; margin-top:3px; float:left;  }
+#miolo .abas li.ativo a, 
+#miolo .abas li:hover a { background:#4068ab; }
+#miolo .abas li.ativo .decoracao, 
+#miolo .abas li:hover .decoracao { background-image:url(../images/bg-menu.png); }
+#miolo .box-interna p,
+#miolo .box-interna .titulos { color:#fff }
+#miolo .abas { margin-bottom:10px; background-image: url(../images/bg-abas.png);  }
+.twitter-share-button,
+.fb_edge_widget_with_comment { float:left; }
+#miolo .abas .dublado .decoracao { left:68px; }
+#miolo .abas .original .decoracao { left:62px; }
+#liveholder p {margin: 200px 0 200px 0; font-weight: bold}
+
+
+
+

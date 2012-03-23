@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Cmais Trânsito - Participe!</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="../../portal/css/tvcultura/secoes/contato.css" type="text/css" />
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+</head> 
+
+<body> 
+
+<!--PAGINA Participe-->
+<div id="participe" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="images/logo_cmais.png"/>
+  
+      </h1>
+      
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="form" data-role="content">
+    
+    <a href="index.php" class="btn-voltar ico-left" data-direction="reverse"> Voltar</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p class="texto-zona flRight texAligRight">Participe!</p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+      <!--Container-->
+      <div id="container" align="center">  
+        
+        <p class="textoForm">
+           Envie sua mensagem, ela aparecerá no programa às 20h.
+        </p>  
+        
+        <!--MENSAGENS ERRO/ACERTO-->
+          <a name="msgStatus"></a>
+          <div class="msgErro" style="display:none;" align="left">
+            <span class="alerta"></span>
+              <div class="boxMsg">
+                <p class="aviso">Sua mensagem não pode ser enviada.<br/><br/>
+                Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+              </div>
+
+          </div>
+          <div class="msgAcerto" style="display:none;" align="left">
+            <span class="alerta"></span>
+              <div class="boxMsg">
+                <p class="aviso">Mensagem enviada com sucesso!<br/><br/>
+                Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+              </div>
+
+          </div>
+          <!--/MENSAGENS ERRO/ACERTO-->
+        
+        <form id="form-contato" method="POST" action="">  
+        <!--label for="basic">Text Input:</label-->
+        <input type="text" name="nome" id="nome" placeholder="Nome"  />
+        <label for="nome" generated="true" class="error checked" style="display: inline;">&nbsp;</label>
+        
+        <!--label for="textarea-a">Textarea:</label-->
+        <textarea name="mensagem" id="mensagem" placeholder="Mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
+        <label for="mensagem" generated="true" class="error checked" style="display: inline;">&nbsp;</label>
+        <p class="caracter"><span id="textCounter">1000</span> caracteres restantes</p>
+        
+        
+        <div id="btn-nav" align="center">
+          <img src="images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader" />
+          <input type="submit" name="enviar" id="enviar" class="btn-enviar" value="Enviar Mensagem"/>
+        </div>
+        </form>  
+        
+                  
+     </div> 
+     <!--/Container-->  
+                
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA participe-->
+
+<!--VALIDACAO JQUERY -->
+  <script type="text/javascript" src="../../portal/js/validate/jquery.validate.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              url: "sendmail.php",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#msgStatus";
+                if(data == "1"){
+                  $("#nome,#mensagem").val('');
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide(); 
+                }
+              }
+            });         
+          },
+          rules:{
+            nome:{
+              required: true,
+              minlength: 2
+            },
+            mensagem:{
+              required: true,
+              minlength: 5
+            }
+          },
+          messages:{
+            nome: "Este campo &eacute; Obrigat&oacute;rio.",
+            mensagem: "Este campo &eacute; Obrigat&oacute;rio."
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+
+          }
+        });
+        
+    
+      });
+          
+      // Contador de Caracters
+      function limitText (limitField, limitNum, textCounter)
+      {
+        if (limitField.value.length > limitNum)
+          limitField.value = limitField.value.substring(0, limitNum);
+        else
+          $(textCounter).html(limitNum - limitField.value.length);
+      }
+      
+      
+  </script> 
+
+
+
+  
+
+
+</body>
+</html>

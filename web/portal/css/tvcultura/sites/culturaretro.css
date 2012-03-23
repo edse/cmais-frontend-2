@@ -1,0 +1,8 @@
+@import url("../geral.css");
+
+/** CULTURA RETRO **/
+.submenu-interna {width:116px;}
+#barra-site { background:url(../../../images/capaPrograma/culturaretro/bg-culturaretro.png) no-repeat 740px 10px; }
+#barra-site h2 {margin-top:10px;}
+#barra-site #horario {width:200px;}
+/** /CULTURA RETRO **/

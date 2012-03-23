@@ -1,0 +1,20 @@
+@import url("../geral.css");
+
+#direita {margin-top:10px}
+.tit-pagina {margin-bottom:10px;}
+.rede {margin-top:0;}
+.paginacao {_width:630px;}
+#menu-rodape .neutro {margin-right:0;}
+.duas-colunas .txt {*width:640px; *margin-bottom:10px;}
+#barra-site {*margin-left:10px;}
+.lista-calendario .grade .txt {margin:22px 10px 10px 10px;}
+.menu-calendario .topo,
+.menu-calendario {margin-bottom:0px;}
+.lista-calendario .grade .capa-foto img { width:310px; }
+.lista-calendario .capa-foto { width:310px; height:auto;}
+
+/**** VIDEOS ****/
+.box-galeria li .bg  { display: block; height: 186px; overflow: hidden; position: relative; width: 310px; }
+.box-galeria li .bg span {position:absolute; bottom:10px; right:10px; background:url(../../../images/btn-play.png) no-repeat 0 -16px; width:16px; height:16px; }
+.box-galeria li .bg:hover span {background-position:0 -32px;}
+/**** /VIDEOS ****/

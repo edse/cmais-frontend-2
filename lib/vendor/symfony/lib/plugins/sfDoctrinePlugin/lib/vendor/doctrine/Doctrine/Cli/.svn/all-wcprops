@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cli
+END
+AnsiColorFormatter.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cli/AnsiColorFormatter.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cli/Exception.php
+END
+Formatter.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/14/trunk/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Cli/Formatter.php
+END

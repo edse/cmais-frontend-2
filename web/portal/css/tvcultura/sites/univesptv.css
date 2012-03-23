@@ -1,0 +1,101 @@
+/** UNIVESP TV **/
+.submenu-interna {width:116px;}
+#direita { margin-top: 10px;}
+#esquerda .stream {float: left; margin-top: 5px;}
+#esquerda .stream a {background: none repeat scroll 0 0 #FF6633; clear: none;color: #FFFFFF; float: left;margin-right: 5px; padding: 0 3px; width: auto; }
+#esquerda .stream a.ativo, #esquerda .stream a:hover { background: none repeat scroll 0 0 #333333;text-decoration: none;}
+/** /UNIVESP TV **/
+
+/** Pág. Cursos **/
+.carrosselCursos{
+	float: left;
+	margin-bottom: 40px;
+	width: 968px;
+}
+#coverflow a{}
+#coverflow img{
+	width: 420px;
+	height: 252px;
+}
+.carrosselCursos .wrapper{
+	overflow: hidden;
+	position: relative;
+	margin: -240px 0 -50px 0;
+}
+.carrosselCursos .pageWrapper{
+	height: 600px;
+}
+/*
+.carrosselCursos .demo{
+	margin-left: 0px;
+}
+.carrosselCursos .pageWrapper{
+	height: 355px;
+	top: 0px;
+}
+.carrosselCursos .wrapper{
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0 -50px 0;
+}
+.carrosselCursos .imageflow{
+	position: absolute!important;
+	top: -168px;
+	left: -140px;
+	width: 1100px!important;
+	
+}
+.carrosselCursos .imageflow img{
+	width: 420px!important;
+	height: 253px!important;
+}
+#instanz_1_navigation{
+	display: none;
+}
+*/
+.titCursos{
+	color: #333;
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+}
+.todosCursos{
+	background: url(../../../images/capaPrograma/univesptv/bg-todosCursos.png) repeat;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+	width: 310px;
+	z-index: 1000;
+	position:relative;
+}
+.todosCursos .topo{
+	background: url(../../../images/capaPrograma/univesptv/bg-topoCursos.jpg) no-repeat;
+	float: left;
+	width: 310px;
+	height: 24px;
+}
+.todosCursos p{
+	float: left;
+	font-weight: bold;
+	margin: 2px 0 0 10px;
+	text-transform: uppercase;
+}
+.todosCursos ul{
+	float: left;
+	margin: 20px 0 0 10px;
+}
+.todosCursos li{
+	float: left;
+	margin-bottom: 10px;
+	clear:both;
+}
+.todosCursos li a{
+	color: #000;
+}
+.todosCursos li a:hover{
+	color: #af111d;
+	text-decoration: underline;
+	
+}
+.noticia .img-video { width: 310px; margin:0; }
+.redes { clear:none; }

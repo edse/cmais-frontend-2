@@ -1,0 +1,33 @@
+<!--MAP DATA 62-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map62>
+
+<info>10,5,Access to previous level unnecessary ,0</info>
+
+<decal>1,4,40</decal>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,212,212,212,214,213,207,0,214,214,211,0</zrow2>
+<zrow3>0,212,212,212,214,1,1,1,1,1,1,0</zrow3>
+<zrow4>0,214,214,214,214,1,214,1,1,1,1,0</zrow4>
+<zrow5>0,1,1,1,214,1,214,1,1,1,1,0</zrow5>
+<zrow6>0,632,1,1,214,1,214,1,1,1,631,0</zrow6>
+<zrow7>0,1,1,1,214,1,214,1,1,1,1,0</zrow7>
+<zrow8>0,208,1,214,214,1,214,214,214,214,214,0</zrow8>
+<zrow9>0,0,1,1,1,1,214,212,212,212,212,0</zrow9>
+<zrow10>0,213,1,1,1,1,214,212,214,212,212,0</zrow10>
+<zrow11>0,211,214,214,214,214,214,212,212,212,214,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<info>2,7,DATA: Analysis results of alien weapon,scanimages/megagun.jpg</info>
+<info>2,8,DATA: Analysis results of alien weapon,scanimages/megagun.jpg</info>
+
+<info>6,2,DATA: Bulkhead Specification,scanimages/bulkhead.jpg</info>
+<info>7,2,DATA: Bulkhead Specification,scanimages/bulkhead.jpg</info>
+
+<introtext>COMM: "The Doctors preparations are complete - lead the Dalek to him."</introtext>
+
+</map62>

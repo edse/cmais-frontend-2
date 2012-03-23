@@ -1,0 +1,27 @@
+<!--MAP DATA 32-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map32>
+
+<info>10,3,It will not be necessary to return through the access corridor.,0</info>
+
+<decal>2,3,19</decal>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,1,1,1,166,1,214,1,211,1,1,0</zrow2>
+<zrow3>0,1,1,1,1,1,4,1,211,1,1,0</zrow3>
+<zrow4>0,214,212,212,1,1,212,1,200,1,165,0</zrow4>
+<zrow5>0,1,1,212,1,1,212,1,200,1,1,0</zrow5>
+<zrow6>0,1,1,212,212,211,1,1,212,1,1,0</zrow6>
+<zrow7>0,1,1,200,1,1,1,214,212,211,1,0</zrow7>
+<zrow8>0,167,1,200,1,214,1,1,200,1,1,0</zrow8>
+<zrow9>0,1,1,212,212,214,1,1,200,1,1,0</zrow9>
+<zrow10>0,1,1,1,1,212,1,1,212,1,1,0</zrow10>
+<zrow11>0,212,212,214,1,212,1,1,212,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "The Dalek has entered the Military Zone - The trap is set."</introtext>
+
+</map32>

@@ -1,0 +1,2114 @@
+@import url("../geral.css");
+
+
+/** RODA VIVA **/
+/*	
+#capa-site { background:url("../../../../../images/capaPrograma/rodaviva/capaPrograma/bg-rodaViva.png") no-repeat 755px -45px; }
+#capa-site {_background-image:url("../../../../../images/capaPrograma/rodaviva/capaPrograma/bg-rodaViva.gif);}
+#barra-site {  margin-top:0;}
+.submenu-interna ul {width:126px !important;}
+#miolo {*margin-top:-20px;}
+.box-publicidade {margin-top:0;}
+.uma-coluna {margin-bottom:20px;}
+.box-interna .chapeu,
+.box-interna .texto {clear:both;}
+.box-interna .chapeu {margin:0 0 20px 0;}
+.box { text-align:left; margin:0 auto; width:635px; }
+.btn { background:url("../../../../../images/capaPrograma/rodaviva/capaPrograma/btn-fb.jpg") no-repeat; height:29px; width:99px; display: block; text-indent:-9999px; float:left; clear: both; }
+h2,
+.texto { font-size:20px; font-weight:bold; margin-left:10px; line-height:30px; }
+h2 {margin:10px 0 0 0}
+*/ 
+
+body{
+	background-color: #F0F0E8 !important;
+}
+.bg-rodaviva{
+	background-color: #f0f0e8;
+}
+.bg-rodaviva #chamada{
+	margin-left: 61px!important;
+}
+.bg-rodaviva #barra-site{
+	*margin-top: 0px;
+	margin-left: 47px!important;
+	width: 990px;
+}
+.bg-rodaviva #barra-site .topo-programa{
+	min-height: 80px!important;
+	width: 990px;
+}
+.bg-rodaviva .box-topo{
+	width: 990px;
+}
+#barra-site #horario {margin-top:25px;}
+/*
+.bg-rodaviva #barra-site #horario p{
+	margin-top: -10px!important;
+}
+*/
+.bg-rodaviva .menu{
+	float: right;
+}
+.bg-rodaviva .menu li{
+	float: left;
+	margin-left: 10px;
+}
+.bg-rodaviva .menu li a{
+	background: url("../../../images/capaPrograma/rodaviva/bg-menuRV.png") repeat-x;
+	border-radius: 6px 6px 6px 6px;
+	float: left;
+	height: 24px;
+	text-decoration: none;
+}
+.bg-rodaviva .menu li a span{
+	color: #5b5a50;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+.bg-rodaviva .menu li a:hover span{
+	color: #fff;
+}
+.bg-rodaviva .menu li a:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-menuRVOver.png") repeat-x;
+}
+.bg-rodaviva .exceptionn{
+	width: 996px!important;
+}
+.bg-rodaviva .tudo-Rodaviva{
+	float: left;
+	margin-left: 45px;
+	width: 996px;
+}
+.tudo-Rodaviva .bordaTopRV{
+	background: url("../../../images/capaPrograma/rodaviva/bordaTopRV.png") no-repeat;
+	display: block;
+	float: left;
+	width: 996px;
+	height: 5px;
+}
+.tudo-Rodaviva .bordaBottomRV{
+	background: url("../../../images/capaPrograma/rodaviva/bordaBottomRV.png") no-repeat;
+	display: block;
+	float: left;
+	width: 996px;
+	height: 5px;
+}
+.tudo-Rodaviva .centroRV{
+	background: url("../../../images/capaPrograma/rodaviva/centroRV.png") repeat-y;
+	display: block;
+	float: left;
+	padding-bottom: 30px;
+	width: 996px;
+}
+.centroRV .destaque{
+	float: left;
+	width: 970px;
+	height: 380px;
+	display: none;
+}
+.centroRV .destaque #wrapper{
+	margin: 8px 0 0 13px;
+}
+.destaque .slider-wrapper #slider{
+	float: left;
+	width: 970px;
+	height: 365px;
+}
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	background: url("../../../images/capaPrograma/rodaviva/bg-captionRV.png") repeat;
+	position:absolute;
+	right:0px;
+	bottom: 15px;
+	opacity: 0;
+	width: 330px;
+	height: 350px;
+	z-index:8;
+}
+.nivo-caption p {
+	padding: 0px 25px;
+	margin: 0px 0 0 0;
+	text-align: left;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption{
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav{
+	display: block!important;
+}
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-nextNav{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaBigLeft.png") no-repeat;
+	right: -20px;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 35px;
+	height: 50px;
+}
+.nivo-prevNav {
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaBigRight.png") no-repeat;
+	left: -20px;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 35px;
+	height: 50px;
+}
+.nivo-nextNav:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaBigLeftOver.png") no-repeat;
+}
+.nivo-prevNav:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaBigRightOver.png") no-repeat;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav{
+	background: url("../../../images/capaPrograma/rodaviva/bg-pagRV.jpg") repeat-x;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 970px;
+	height: 15px;
+}
+.nivo-controlNav a{
+	background: url("../../../images/capaPrograma/rodaviva/pagRV.png") no-repeat;
+	cursor:pointer;
+    border: 0 none;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    left: 455px;
+    text-indent: -9999px;
+    width: 9px;
+	height: 9px;
+	z-index: 9;
+}
+.nivo-controlNav a.active{
+	background-position: 0 -9px;
+}
+.centroRV .esq{
+	float: left;
+	margin: 20px 0 0 25px;
+	width: 640px;
+}
+.esq .acervoDestaque{
+	float: left;
+	width: 640px;
+	display:none; 
+}
+.esq .acervoDestaque h3{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.acervoDestaque .carrocel .jcarousel-container{
+	margin-top: 0px;
+	width: 630px;
+	height: 175px;
+}
+.acervoDestaque .jcarousel-container{
+	float: left;
+	*float: none;
+	margin-left: 0px;
+	width: 630px;
+}
+.acervoDestaque .carrossel .jcarousel-clip{
+	left: 0px;
+	*left: -12px;
+	margin-top: 0px;
+	width: 605px;
+	height: 175px;
+}
+.acervoDestaque .carrossel ul{
+	margin-top: 7px;
+}
+.acervoDestaque .carrossel .jcarousel-item{
+	width: 150px;
+	height: 175px;
+}
+.acervoDestaque .carrossel .jcarousel-item a img{
+	width: 150px;
+	height: 92px;
+}
+.acervoDestaque .carrossel .jcarousel-item-horizontal{
+	margin: 0 2px 0 0;
+	text-align: left;
+}
+.acervoDestaque .carrossel .jcarousel-item a,
+.acervoDestaque .carrossel .jcarousel-item a img{
+	overflow: hidden;
+	float: left;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aImg .ico{
+	background: url("../../../images/capaPrograma/rodaviva/bg-overSquare.png") no-repeat;
+	display: none;
+	position: absolute;
+	width: 150px;
+	height: 92px;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aImg:hover .ico{
+	display: block;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado,
+.acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeItem{
+	float: left;
+	width: 150px;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado{
+	color: #5b5a50:
+	font-size: 15px;
+	margin-top: 8px;
+}
+.acervoDestaque .carrossel .jcarousel-item a:hover{
+	text-decoration: none!important;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aTxt:hover .nomeRlacionado{
+	color: #a6a592;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aTxt:hover .nomeTxt{
+	color: #a6a592;
+	text-decoration: none!important;
+}
+.acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeTxt{
+	color: #737373;
+	font-size: 12px;
+	margin-top: 3px;
+}
+.acervoDestaque .carrossel .jcarousel-next{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallLeft.png") no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 29px;
+	left: 593px;
+	width: 29px;
+	height: 44px;
+}
+.acervoDestaque .carrossel .jcarousel-prev{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallRight.png") no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 29px;
+	left: -17px;
+	width: 29px;
+	height: 44px;
+}
+.acervoDestaque .carrossel .jcarousel-prev:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallRightOver.png") no-repeat;
+}
+.acervoDestaque .carrossel .jcarousel-next:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallLeftOver.png") no-repeat;
+}
+.acervoDestaque a.acervoCompleto{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	float: right;
+	height: 20px;
+	margin: 7px 17px 0 0; 
+	text-decoration: none;
+}
+.acervoDestaque .acervoCompleto span{
+	color: #2b2f34;
+	float: left;
+	font-size: 11px;
+	padding: 3px 8px 0px 8px;
+}
+.acervoDestaque .acervoCompleto:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.acervoDestaque .acervoCompleto:hover span{
+	color: #fff;
+}
+.esq .transmissao{
+	float: left;
+	margin-top: 18px;
+	width: 310px;
+}
+.transmissao h3{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.transmissao .box-transmissao{
+	background-color: #e7e2b1;
+	float: left;
+	width: 310px;
+}
+.box-transmissao .ao-vivo{
+	float: left;
+	margin: 10px 0 0 10px;
+	width: 290px;
+}
+.box-transmissao .ao-vivo-info{
+	float: left;
+	margin: 10px 0 5px 10px;
+	*padding-bottom: 5px;
+	width: 230px;
+}
+.ao-vivo-info h4,
+.ao-vivo-info p{
+	color: #000;
+	font-size: 12px;
+	text-align: left;
+}
+.ao-vivo-info h4{
+	font-weight: bold;
+}
+.ao-vivo-info p{
+	line-height: normal;
+}
+.charges{
+	float: left;
+	margin: 18px 0 0 20px;
+	width: 310px;
+}
+.charges h3{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.charges .box-charges{
+	float: left;
+	width: 310px;
+}
+.box-charges #gallery{
+	width: 310px;
+}
+.box-charges #gallery li{
+	border: 1px solid #a6a374;
+	float: left;
+	margin: 0 3px 5px 0;
+}
+.box-charges #gallery li a img{
+	padding: 4px 4px 1px 4px;
+	width: 90px;
+	height: 75px;
+}
+.centroRV .dir{
+	float: left;
+	margin: 20px 0 0 8px;
+	width: 310px;
+}
+.dir .publicidade{
+	border: 5px solid #cccccc;
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+.dir .boxRedes{
+	float: left;
+	margin-top: 20px;
+	width: 310px;
+	text-align: left;
+}
+.boxRedes ul{
+	width: 310px;
+}
+.boxRedes li{
+	background: url("../../../images/capaPrograma/rodaviva/bg-redes.jpg") repeat-x;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	width: 310px;
+	height: 40px;
+}
+.boxRedes li a{
+	float: left;
+	padding-left: 0;
+	width:310px;
+}
+.boxRedes li a:hover{
+	text-decoration: none;
+}
+.boxRedes li a .ico{
+	background: url("../../../images/capaPrograma/rodaviva/ico-redesRV.png") no-repeat;
+	margin-left: 20px; 
+	float: left;
+	width: 32px;
+}
+.boxRedes li a.twitter .ico{
+	background-position: 0 0;
+	margin-top: 10px;
+	height: 22px;
+}
+.boxRedes li a.facebook .ico{
+	background-position: 0 -45px;
+	margin-top: 4px;
+	height: 32px;
+}
+.boxRedes li a.youtube .ico{
+	background-position: 0 -96px;
+	margin-top: 5px;
+	height: 30px;
+}
+.boxRedes li a.news .ico{
+	background-position: 0 -151px;
+	margin-top: 10px;
+	height: 21px;
+}
+.boxRedes li a.rss .ico{
+	background-position: 0 -199px;
+	margin-top: 8px;
+	height: 24px;
+}
+.boxRedes li a.twitter:hover .ico{
+	background-position: -36px 0;
+	height: 22px;
+}
+.boxRedes li a.facebook:hover .ico{
+	background-position: -36px -45px;
+	height: 32px;
+}
+.boxRedes li a.youtube:hover .ico{
+	background-position: -36px -96px;
+	height: 30px;
+}
+.boxRedes li a.news:hover .ico{
+	background-position: -36px -151px;
+	height: 21px;
+}
+.boxRedes li a.rss:hover .ico{
+	background-position: -36px -199px;
+	height: 24px;
+}
+.boxRedes li a .borda{
+	background: url("../../../images/capaPrograma/rodaviva/ico-bordaRV.png") no-repeat;
+	float: left;
+	margin-left: 20px;
+	width: 2px;
+	height: 40px;
+}
+.boxRedes li a .nome{
+	color: #5b5a50;
+	float: left;
+	margin: 10px 0 0 10px;
+	font-size: 17px;
+}
+.boxRedes li a.twitter:hover .nome{
+	color: #3399ff;
+}
+.boxRedes li a.facebook:hover .nome{
+	color: #264585;
+}
+.boxRedes li a.youtube:hover .nome{
+	color: #cc0000;
+}
+.boxRedes li a.news:hover .nome{
+	color: #90538f;
+}
+.boxRedes li a.rss:hover .nome{
+	color: #ff7506;
+}
+.boxRedes #assine-news{
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	border-radius: 0 0 10px 10px;
+	float: left;
+	margin-top: -28px;
+	width: 308px;
+}
+#assine-news .wrapperAssine-news{
+	float: left;
+	margin: 25px 0 0 10px;
+}
+.wrapperAssine-news label{
+	color: #5b5a50;
+	float: left;
+	text-transform: uppercase;
+}
+.wrapperAssine-news label[for=captcha] {
+	margin-top:10px;
+}
+
+.wrapperAssine-news label input{
+	background: none;
+	border: 1px solid #dfdfdf;
+	float: left;
+	width: 288px;
+	height: 24px;
+}
+.wrapperAssine-news label.email{
+	margin-top: 10px;
+}
+.wrapperAssine-news  form label.error{
+    background-color: #F5D6CC;
+    color: #863F27;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+    padding-left: 3px;
+    text-transform: none;
+    width: 287px;
+}
+.wrapperAssine-news input.assinar{
+    background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #E0DFD9;
+    border-radius: 10px 10px 10px 10px;
+    color: #2B2F34;
+    float: right;
+    font-size: 12px;
+    height: 20px;
+    margin: 15px 8px 15px;
+    text-decoration: none;
+    width: 70px;
+    cursor: pointer;
+}
+.wrapperAssine-news input.assinar:hover{
+    background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #9E9B89;
+    text-decoration: none;
+}
+/*Sobre - apresentador - transmiss�o - video-interna*/
+.centroRV .sobre,
+.centroRV .apresentador,
+.centroRV .transmissaoH,
+.centroRV .video-interna,
+.centroRV .faleConosco,
+.centroRV .preShow,
+.centroRV .noticia,
+.centroRV .noticia-interna{
+	float: left;
+	margin: 15px 0 0 15px;
+	text-align: left;
+	width: 640px;
+}
+.sobre h2,
+.apresentador h2,
+.faleConosco h2,
+.noticia h2,
+.noticia-interna h2{
+	color: #5b5a50;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+.sobre p,
+.apresentador p,
+.faleConosco p{
+	margin-bottom: 20px;
+}
+.centroRV .equipe,
+.centroRV .apresentadoresPassado{
+	float: left;
+	margin: 15px 0 0 15px;
+	text-align: left;
+	width: 310px;
+}
+.equipe h2,
+.apresentadoresPassado h2{
+	color: #5b5a50;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.equipe .boxEquipe,
+.apresentadoresPassado .boxApresentadoresPassado{
+	background: url("../../../images/capaPrograma/rodaviva/bg-equipeRV.png") repeat;
+	float: left;
+	width: 310px;
+}
+.boxEquipe ul,
+.boxApresentadoresPassado ul{
+	margin: 10px 0 0 10px;
+	width: 290px;
+}
+.boxEquipe ul li,
+.boxApresentadoresPassado ul li{
+	float: left;
+	margin-bottom: 20px;
+	*margin-bottom: 0px;
+	*padding-bottom: 20px;
+}
+.boxEquipe li img,
+.boxApresentadoresPassado li img{
+	float: left;
+	margin: 5px 5px 0 0;
+	width: 90px;
+	height: 54px;
+}
+.boxEquipe li span,
+.boxApresentadoresPassado li span{
+	float: left;
+	font-size: 12px;
+	width: 195px;
+}
+.boxEquipe li span.tit,
+.boxApresentadoresPassado li span.tit{
+	color: #5b5a50;
+	margin-bottom: 3px;
+}
+.boxEquipe li span.text,
+.boxApresentadoresPassado li span.text{
+	color: #737373;
+}
+/*apresentador*/
+.apresentador img.fotoApresentador{
+	margin-bottom: 10px;
+}
+/*transmiss�o*/
+.transmissaoH ul,
+.video-interna ul,
+.faleConosco ul{
+	float: left;
+}
+.transmissaoH ul li,
+.video-interna ul li,
+.faleConosco ul li{
+	float: left;
+	margin-right: 4px;
+}
+.transmissaoH li a,
+.video-interna li.voltarJa a,
+.faleConosco li.voltarJa a{
+	background: url("../../../images/capaPrograma/rodaviva/bg-cameraRV.png") repeat-x;
+	border-radius: 4px;
+	float: left;
+	font-size: 15px;
+	text-transform: uppercase;
+	height: 30px;
+}
+.transmissaoH li a span,
+.video-interna li.voltarJa a span,
+.faleConosco li.voltarJa a span{
+	color: #5b5a50;
+	float: left;
+	padding: 7px 10px 0 10px;
+}
+.transmissaoH li a:hover,
+.video-interna li.voltarJa a:hover,
+.faleConosco li.voltarJa a:hover,
+.transmissaoH li a.ativo {
+	background: url("../../../images/capaPrograma/rodaviva/bg-cameraRVOver.png") repeat-x;
+	text-decoration: none;
+}
+.transmissaoH li a#stream_youtube span {
+	background: url("../../../images/capaPrograma/rodaviva/bt-youtube.png") no-repeat 50% 50% transparent;
+	width:82px;
+	height:20px;
+}
+.transmissaoH li a#stream_ustream span {
+	background: url("../../../images/capaPrograma/rodaviva/bt-ustream.png") no-repeat 50% 50% transparent;
+	width:82px;
+	height:20px;
+}
+.transmissaoH li a#stream_livestream span {
+	background: url("../../../images/capaPrograma/rodaviva/bt-livestream.png") no-repeat 50% 50% transparent;
+	width:82px;
+	height:20px;
+}
+.transmissaoH li a:hover span,
+.video-interna li.voltarJa a:hover span,
+.transmissaoH li a.ativo span {
+	color: #fff;
+}
+.transmissaoH .boxVideo,
+.video-interna .boxVideo{
+	float: left;
+	margin-top: 10px;
+}
+.boxVideo .boxVideoWrapper{
+	float: left;
+}
+.boxVideo span.faixa{
+	background: url("../../../images/capaPrograma/rodaviva/bg-pagRV.jpg") repeat-x;
+	display: block;
+	float: left;
+	margin-top: -3px;
+	width: 640px;
+    height: 15px;
+}
+.boxVideo h3,
+.boxVideo p.post{
+	color: #5b5a50;
+	float: left;
+	width: 640px;
+}
+.boxVideo h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px 0 5px 0;
+	text-transform: inherit;
+}
+.boxVideo p.post{
+	margin-bottom: 5px;
+}
+.boxVideo p.dataPost{
+	font-size: 11px;
+	margin-bottom: 0px;
+}
+.boxVideo .comentarios{
+	float: left;
+	margin-top: 30px;
+	width: 640px;
+}
+.comentarios p.btn-comentarios{
+	 background: url("../../../images/capaPrograma/rodaviva/bg-balaoRV.png") no-repeat;
+	 float: left;
+	 width: 147px;
+	 height: 35px;
+}
+.comentarios p.btn-comentarios span{
+	color: #fff;
+	float: left;
+	font-size: 15px;
+	margin: 5px 0 0 19px;
+	text-transform: uppercase;
+}
+.comentarios .comentario-fb{
+	float: left;
+	margin-top: 10px;
+}
+.centroRV .chat{
+	float: left;
+	margin: 15px 0 0 20px;
+	text-align: left;
+	width: 310px;
+}
+.chat p.btn-chat{
+	 background: url("../../../images/capaPrograma/rodaviva/bg-balaoRVSmall.png") no-repeat;
+	 float: left;
+	 width: 72px;
+	 height: 35px;
+}
+.chat p.btn-chat span{
+	color: #fff;
+	float: left;
+	font-size: 15px;
+	margin: 5px 0 0 17px;
+	text-transform: uppercase;
+}
+.chat .covert{
+	float: left;
+	margin-top: 5px;
+	width: 310px;
+	height: 500px;
+}
+.chat .repercussao{
+	float: left;
+	margin-top: 20px;
+	width: 310px;
+}
+.repercussao h2{
+    background: url("../../../images/capaPrograma/rodaviva/bg-repercussaoRV.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 148px;
+    height: 35px; 
+}
+.repercussao h2 span{
+    color: #78755c;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 6px 0 0 17px;
+    text-transform: uppercase;
+}
+/*video-interna*/
+.veja{
+	float: left;
+	margin: 15px 0 0 20px;
+	text-align: left;
+	width: 310px;
+}
+.veja p.btn-veja{
+	 background: url("../../../images/capaPrograma/rodaviva/bg-vejaRV.png") no-repeat;
+	 float: left;
+	 width: 142px;
+	 height: 35px;
+}
+.veja p.btn-veja span{
+	color: #78755c;
+	float: left;
+	font-size: 15px;
+	margin: 5px 0 0 20px;
+	text-transform: uppercase;
+}
+.veja .vejaTambem{
+	float: left;
+	margin-top: 10px;
+	width: 310px;
+	height: 223px;
+	overflow-x: hidden;
+}
+.vejaTambem ul{
+	float: left;
+	width: 310px;
+}
+.vejaTambem li{
+	float: left;
+	margin-bottom: 20px;
+	*margin-bottom: 0px;
+	*padding-bottom: 20px;
+}
+.vejaTambem li a{
+	text-decoration: none;
+}
+.vejaTambem li a.aImg img{
+	float: left;
+	margin-right: 5px;
+	width: 150px;
+	height: 92px;
+}
+.vejaTambem li a.aImg .ico{
+    background: url("../../../images/capaPrograma/rodaviva/bg-overSquare.png") no-repeat;
+    display: none;
+    height: 92px;
+    position: absolute;
+    width: 150px;
+}
+.vejaTambem li a.aTxt{
+	float: left;
+	width: 150px;
+}
+.vejaTambem li a.aTxt .nomeRlacionado,
+.vejaTambem li a.aTxt .nomeTxt{
+	float: left;
+	width: 136px;
+}
+.vejaTambem li a.aTxt .nomeRlacionado{
+	color: #5b5a50;
+	font-size: 15px;
+}
+.vejaTambem li a.aTxt .nomeTxt{
+	color: #737373;
+	font-size: 12px;
+}
+.vejaTambem li a:hover{
+	text-decoration: none;
+}
+.vejaTambem li a.aTxt:hover .nomeRlacionado{
+	color: #a6a592;
+}
+.vejaTambem li a.aImg:hover .ico{
+	display: block;
+}
+.vejaTambem a.sugestoes{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	float: right;
+	height: 20px;
+	margin: 7px 17px 0 0; 
+	text-decoration: none;
+}
+.vejaTambem a.sugestoes span{
+	color: #2b2f34;
+	float: left;
+	font-size: 11px;
+	padding: 3px 8px 0px 8px;
+}
+.vejaTambem a.sugestoes:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.vejaTambem a.sugestoes:hover span{
+	color: #fff;
+}
+.vejaTambem .publicidade{
+    float: left;
+    margin-top: 15px;
+    width: 310px;
+}
+.veja .charges{
+	margin: 20px 0 0 0;
+}
+.veja .publicidade{
+	float: left;
+	margin-top: 20px;
+}
+.interna{
+	margin: 20px 0 0 0!important;
+}
+.not{
+	background: url("../../../images/capaPrograma/rodaviva/bg-notRelacionadas.png") no-repeat!important;
+	margin-top: 10px;
+	width: 230px!important;
+}
+.not span{
+	color: #fff!important;
+}
+.noticiasRelacionadas{
+	background-color: #edede9;
+	border-radius: 5px;
+	float: left;
+	margin-top: 10px;
+	width: 310px;
+}
+.noticiasRelacionadas .first{
+	margin-top: 10px!important;
+}
+.noticiasRelacionadas .last{
+	background: none!important;
+}
+.noticiasRelacionadas .box-noticiasRelacionadas{
+	background: url(../images/bottom-line.jpg) no-repeat bottom;
+	float: left;
+	margin: 5px 0 5px 10px;
+	padding-bottom: 10px;
+	width: 290px;
+}
+.box-noticiasRelacionadas h4 a{
+	color: #5b5a50;
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: none;
+}
+.box-noticiasRelacionadas p{
+	color: #737373;
+	float: left;
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 5px;
+}
+/*videos*/
+.excp{
+	padding-bottom: 15px!important;
+}
+.centroRV .video{
+	float: left;
+	margin: -2px 0 0 3px;
+	text-align: left;
+	width: 990px;
+}
+.video .cabecalho{
+	background: url("../../../images/capaPrograma/rodaviva/bg-videosCabecalhoRV.png") repeat;
+	width: 990px;
+	height: 30px;
+}
+.cabecalho h2{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 7px 0 0 15px;
+	text-transform: uppercase;
+}
+.video .busca{
+	float: left;
+	margin: 20px 0 0 17px;
+	width: 950px;
+}
+.busca span.divisoria{
+	background: url("../../../images/capaPrograma/rodaviva/ico-bordaBigRV.jpg") no-repeat;
+	display: block;
+	float: left;
+	width: 2px;
+	height: 90px;
+}
+.busca p{
+	color: #5b5a50;
+	font-size: 15px;
+	float: left;
+}
+.busca .palavra-chave,
+.busca .filtro,
+.busca .organizacao{
+	float: left;
+}
+.busca .palavra-chave{
+	margin-right: 10px;
+	 width: 260px;
+}
+.busca form .palavra-chave input.campo{
+	background: none;
+	border: 1px solid #dededd;
+	float: left;
+	margin-top: 15px;
+	width: 170px;
+	height: 24px;
+}
+.busca form .palavra-chave a.confirmar{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	float: left;
+	height: 20px;
+	margin: 17px 0 0 10px; 
+	text-decoration: none;
+}
+.busca form .palavra-chave a.confirmar span{
+	color: #2b2f34;
+	float: left;
+	font-size: 12px;
+	padding: 3px 8px 0px 8px;
+}
+.busca form .palavra-chave a.confirmar:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.busca .palavra-chave form a.confirmar:hover span{
+	color: #fff;
+}
+.filtro{
+	margin: 0 15px 0 15px;
+	width: 490px;
+}
+.filtro form.entrevistas,
+.filtro form.tema,
+.filtro form.periodo{
+	float: left;
+}
+.filtro form.entrevistas{
+	width: 114px;
+}
+form.entrevistas label{
+	color: #777563;
+	float: left;
+	font-size: 12px;
+}
+form.entrevistas label input{
+	background: none;
+	border: 1px solid #dededd;
+	*border: none;
+	float: left;
+	margin: 3px 3px 0 0;
+	*margin: 0px 3px 0 0;
+}
+.filtro form.tema{
+	margin-left: 0px;
+}
+.busca form .filtro .formWrapper{
+	float: left;
+	margin-bottom: 6px;
+}
+.busca form .filtro .formWrapper label,
+.busca form .filtro .formWrapper label{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+}
+.busca form .filtro .formWrapper label input,
+.busca form .filtro .formWrapper label input{
+	float: left;
+	margin: 5px 2px 0 0;
+	*margin: 2px 0px 0 0; 
+}
+.busca form .filtro .formWrapper select{
+	background: transparent;
+	border: 1px solid #dededd;
+	float: left;
+	margin-left: 15px;
+	width: 170px;
+}
+.filtro form.periodo{
+	margin-left: 25px;
+	width: 140px;
+}
+.filtro form.periodo p{
+	color: #777563;
+	font-size: 12px;
+	margin: 3px 4px 0 15px;
+}
+.busca form .filtro .formWrapper p.ate{
+	margin-left: 5px
+}
+.busca form .filtro .formWrapper p.de{
+	margin-left: 5px;
+}
+.busca form .filtro .formWrapper p.de,
+.busca form .filtro .formWrapper p.ate{
+	font-size: 13px;
+}
+.busca form .filtro .formWrapper #de,
+.busca form .filtro .formWrapper #ate{
+	border: 1px solid #DEDEDD;
+	float: left;
+	margin-left: 5px;
+	width: 105px;
+}
+.busca form .filtro .formWrapper a.confirmar{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	float: right;
+	height: 20px;
+	margin: -2px 0 0 20px; 
+	text-decoration: none;
+}
+.busca form .filtro .formWrapper a.confirmar span{
+	color: #2b2f34;
+	float: left;
+	font-size: 12px;
+	padding: 3px 8px 0px 8px;
+}
+.busca form .filtro .formWrapper a.confirmar:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.busca form .filtro .formWrapper a.confirmar:hover span{
+	color: #fff;
+}
+.filtro form.periodo select{
+	background: transparent;
+	border: 1px solid #dededd;
+	float: left;
+	margin: 3px 0 3px 0px;
+	width: 105px;
+}
+.busca form .organizacao{
+	margin-left: 20px;
+	width: 125px;
+}
+.organizacao button{
+	background: url("../../../images/capaPrograma/rodaviva/bg-menuRV.png") repeat-x;
+	border-radius: 6px 6px 6px 6px;
+	border-style: hidden;
+	cursor: pointer;
+	float: left;
+	height: 24px;
+	margin-top: 5px;
+	text-decoration: none;
+	width: 123px;
+}
+.organizacao button span{
+	color: #5b5a50;
+	font-size: 12px;
+	font-weight: bold;
+}
+.organizacao button.cronologica span{
+	text-align: center;
+}
+.organizacao button.alfabetica span{
+	padding: 5px 10px;
+}
+.organizacao button:hover span{
+	color: #fff;
+}
+.organizacao button:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-menuRVOver.png") repeat-x;
+}
+.organizacao button.ativo span{
+	color: #fff;
+}
+.organizacao button.ativo{
+	background: url("../../../images/capaPrograma/rodaviva/bg-menuRVOver.png") repeat-x;
+}
+.listaVideos{
+	float: left;
+	margin: 25px 0 0 12px;
+	width: 970px;
+}
+.listaVideos .boxLista-video{
+	float: left;
+	margin: 0 0 12px 5px;
+	width: 316px;
+}
+.boxLista-video span.topo{
+	background: url("../../../images/capaPrograma/rodaviva/bordaTopoSmallRV.jpg") no-repeat;
+	display: block;
+	float: left;
+	width: 316px;
+	height: 3px;
+	margin-bottom:0 !important;
+}
+.boxLista-video span.bottom{
+	background: url("../../../images/capaPrograma/rodaviva/bordaBottomSmallRV.jpg") no-repeat;
+	display: block;
+	float: left;
+	width: 316px;
+	height: 3px;
+}
+.boxLista-video .centro{
+	background: url("../../../images/capaPrograma/rodaviva/centroSmallRV.jpg") repeat-y;
+	display: block;
+	float: left;
+	width: 316px;
+	height: 376px;
+}
+.centro .centrowrapper{
+	float: left;
+	margin-left: 3px;
+	text-align: left;
+	width: 310px;
+}
+.centrowrapper a{
+	display: block;
+	overflow: hidden;
+	width: 310px;
+}
+.centrowrapper a.imgTumb{
+	height: 186px;
+}
+.centro span.faixa{
+	background: url("../../../images/capaPrograma/rodaviva/bg-pagRV.jpg") repeat-x;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-top: 0px;
+    width: 310px;
+}
+.centro img{
+	float: left;
+	width: 350px;
+	margin: -33px 0 0 -1px;
+}
+.centro h4,
+.centro p{
+	float: left;
+	margin-left: 10px;
+	text-transform: inherit;
+	width: 280px;
+}
+.centro h4{
+	font-weight: normal;
+	font-size: 15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.centro h4 a{
+	color: #5b5a50;
+}
+.centro p a{
+	color: #737373;
+	width: 280px;
+}
+.centro p{
+	line-height: 16px;
+	margin-bottom: 16px;
+	height: 95px;
+}
+.centro span.exibido{
+	color: #b6b6b6;
+	float: left;
+	font-size: 10px;
+	margin: 0 0 0 10px;
+}
+.centro a.mais{
+	background-color: #e7e2b1;
+	float: right;
+	width: 19px;
+	height: 19px;
+}
+.centro a.mais span{
+	color: #5b5a50;
+	float: left;
+	margin-left: 5px;
+}
+.centro a.mais:hover{
+	background-color: #5b5a50;
+}
+.centro a.mais:hover span{
+	color: #fff;
+}
+/*vr2*/
+.vr2{
+	margin-top: 10px;
+}
+.boxVideo .acervoDestaque{
+	float: left;
+	width: 640px;
+}
+.boxVideo .acervoDestaque h3,
+.boxVideo .transcricao h3{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	text-align: left;
+	text-transform: uppercase;
+}
+.boxVideo .acervoDestaque .carrocel .jcarousel-container{
+	margin-top: 0px;
+	width: 630px;
+	height: 175px;
+}
+.boxVideo .acervoDestaque .jcarousel-container{
+	float: left;
+	*float: none;
+	margin-left: 13px;
+	width: 630px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-clip{
+	left: 0px;
+	*left: -12px;
+	margin-top: 0px;
+	width: 605px;
+	height: 175px;
+}
+.boxVideo .acervoDestaque .carrossel ul{
+	margin-top: 7px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item{
+	width: 150px;
+	height: 175px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a img{
+	width: 150px;
+	height: 92px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item-horizontal{
+	margin: 0 2px 0 0;
+	text-align: left;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a,
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a img{
+	overflow: hidden;
+	float: left;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aImg .ico{
+	background: url("../../../images/capaPrograma/rodaviva/bg-overSquare.png") no-repeat;
+	display: none;
+	position: absolute;
+	width: 150px;
+	height: 92px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aImg:hover .ico{
+	display: block;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.ativo .ico{
+	display: block;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado,
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeItem{
+	float: left;
+	width: 150px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado{
+	color: #5b5a50:
+	font-size: 15px;
+	margin-top: 8px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a:hover{
+	text-decoration: none!important;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt:hover .nomeRlacionado{
+	color: #a6a592;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt:hover .nomeTxt{
+	color: #a6a592;
+	text-decoration: none!important;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeTxt{
+	color: #737373;
+	font-size: 12px;
+	margin-top: 3px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-next{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallLeft.png") no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 29px;
+	left: 593px;
+	width: 29px;
+	height: 44px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-prev{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallRight.png") no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 29px;
+	left: -17px;
+	width: 29px;
+	height: 44px;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-prev:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallRightOver.png") no-repeat;
+}
+.boxVideo .acervoDestaque .carrossel .jcarousel-next:hover{
+	background: url("../../../images/capaPrograma/rodaviva/btn-galeriaSmallLeftOver.png") no-repeat;
+}
+.boxVideo .acervoDestaque a.acervoCompleto{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	float: right;
+	height: 20px;
+	margin: 7px 17px 0 0; 
+	text-decoration: none;
+}
+.boxVideo .acervoDestaque .acervoCompleto span{
+	color: #2b2f34;
+	float: left;
+	font-size: 11px;
+	padding: 3px 8px 0px 8px;
+}
+.boxVideo .acervoDestaque .acervoCompleto:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.boxVideo .acervoDestaque .acervoCompleto:hover span{
+	color: #fff;
+}
+.boxVideo .transcricao{
+	float: left;
+	margin-bottom: 20px;
+	width: 640px;
+}
+.boxVideo .transcricao h3{
+	margin: 10px 0 0 0;
+}
+.boxVideo .transcricao .transcricaoWrapper{
+	border: 1px solid #d1d1d1;
+	float: left;
+	margin-top: 5px;
+	overflow-x: hidden;
+	width: 638px;
+	height: 178px;
+}
+.boxVideo .transcricao p{
+	color: #5b5a50;
+	font-size: 12px;
+	margin-top: 15px;
+	padding: 0 10px;
+}
+.boxVideo .transcricao p strong{
+	font-weight: bold;
+}
+.boxVideo .transcricao p span.locutor{
+	font-weight: bold;
+}
+/*fale conosco*/
+.faleConosco form{
+	float: left;
+	margin-top: 15px;
+	width: 640px;
+}
+.faleConosco form label{
+	color: #5b5a50;
+	float: left;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.faleConosco label.error {
+    background-color: #F5D6CC;
+    color: #863F27;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+    padding-left: 3px;
+    text-transform: none;
+}
+.faleConosco form label input{
+	background: none;
+	border: 1px solid #dfdfdf;
+	float: left;
+	height: 19px;
+}
+.faleConosco form label.nome,
+.faleConosco form label.cidade{
+	margin-right: 10px;
+	width: 530px;
+}
+.faleConosco form label.nome input,
+.faleConosco form label.cidade input{
+	width: 528px;
+}
+.faleConosco form label.idade{
+	width: 100px;
+}
+.faleConosco form label.idade input{
+	width: 98px;
+}
+.faleConosco form label.email{
+	width: 640px;
+}
+.faleConosco form label.email input{
+	width: 638px;
+}
+.faleConosco form label.estado{
+	width: 100px;
+}
+.faleConosco form label.assunto{
+	float: left;
+	width: 100px;
+}
+.faleConosco form label.assunto select{
+	background: none;
+	border: 1px solid #dfdfdf;
+	width: 96px;
+}
+.faleConosco form select{
+	background: none;
+	border: 1px solid #dfdfdf;
+	width: 96px;
+}
+.faleConosco form select{
+	background: none;
+	border: 1px solid #dfdfdf;
+	width: 96px;
+}
+.faleConosco form .box-mensagem{
+	float: left;
+}
+.box-mensagem textarea{
+	float: left;
+	border: 1px solid #dfdfdf;
+	width: 638px;
+	height: 293px;
+}
+.box-mensagem p.txt-10{
+	float: right;
+}
+.faleConosco form .t3{
+    width: 636px;
+}
+.faleConosco form .t3 label{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+.faleConosco form .codigo .img{
+    border: 2px solid #D2D2D2;
+    clear: both;
+    display: block;
+    float: left;
+    height: 46px;
+    margin: 3px 10px 0 0;
+    width: 132px;
+}
+.faleConosco form .codigo .msg{
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    width: 350px;
+}
+.faleConosco form .codigo .caracteres{
+    float: left;
+    width: 340px;
+}
+.faleConosco form .codigo .caracteres{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #BFBFBF;
+    color: #333333;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 2px;
+}
+.faleConosco form input.confirmar{
+    background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #E0DFD9;
+    border-radius: 10px 10px 10px 10px;
+    color: #2B2F34;
+    float: right;
+    font-size: 12px;
+    height: 20px;
+    text-decoration: none;
+    width: 70px;
+}
+.faleConosco form input.confirmar:hover{
+    background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #9E9B89;
+    text-decoration: none;
+}
+.centroRV .fl{
+	border: 5px solid #CCCCCC;
+    float: left;
+    margin: 61px 0 0 20px;
+    width: 300px;
+}
+/*360*/
+.trezentosesessenta{
+	float: left;
+	margin: 15px 0 0 15px;
+	text-align: left;
+	width: 950px;
+}
+.trezentosesessenta h2{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.trezentosesessenta p,
+.trezentosesessenta a{
+	float: left;
+}
+.trezentosesessenta #page .panorama-viewport{
+	border: 10px solid #a6a592;
+}
+.trezentosesessenta #page .panorama-control{
+	height: 45px;
+}
+.trezentosesessenta .box-publicidade a{
+	border: 5px solid #CCCCCC;
+	margin-left: 116px;
+}
+/*.pré-show*/
+.preShow{
+	padding-bottom: 35px;
+}
+.preShow .convidado,
+.preShow .bastidores,
+.preShow .aoVivo{
+	float: left;
+	width: 310px;
+}
+.preShow .convidado h2{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.preShow .convidado img{
+	float: left;
+}
+.preShow .convidado .redes{
+	float: left;
+	margin: 10px 0;
+}
+.preShow .convidado h4{
+	color: #5b5a50;
+	float: left;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.preShow .convidado p{
+	clear: both;
+	color: #5b5a50;
+	float: left;
+	overflow: hidden;
+	width: 310px;
+}
+.preShow .convidado a.pergunta{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervo.png") repeat-x;
+	border: 1px solid #e0dfd9;
+	border-radius: 10px;
+	clear: both;
+	float: left;
+	height: 20px;
+	margin: 15px 17px 0 0;
+	text-decoration: none;
+	display: block;
+}
+.preShow .convidado .pergunta span{
+	color: #2b2f34;
+	float: left;
+	font-size: 11px;
+	padding: 3px 8px 0px 8px;
+}
+.preShow .convidado .pergunta:hover{
+	background: url("../../../images/capaPrograma/rodaviva/bg-btn-acervoOver.png") repeat-x;
+	border: 1px solid #9e9b89;
+	text-decoration: none;
+}
+.preShow .convidado .pergunta:hover span{
+	color: #fff;
+}
+.preShow .wrapperDir{
+	float: left;
+	margin-left: 15px;
+	width: 310px;
+}
+.bastidores h2{
+	color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.aoVivo{
+	margin-top: 15px;
+}
+.aoVivo h2{
+	background: url("../../../images/capaPrograma/rodaviva/bg-balaoRVSmall.png") no-repeat scroll 0 0 transparent;
+    color: #5b5a50;
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	width: 72px;
+	height: 35px;
+}
+.aoVivo h2 span{
+    color: #FFFFFF;
+    float: left;
+    font-size: 15px;
+    margin: 5px 0 0 7px;
+    text-transform: uppercase;
+}
+.aoVivo span.faixa {
+    background: url("../../../images/capaPrograma/rodaviva/bg-pagRV.jpg") repeat-x scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-top: -3px;
+    width: 310px;
+}
+a.memRoda{
+	float: left;
+	margin-top: 10px;
+	width: 310px;
+}
+a.memRoda img{
+	width: 310px;
+}
+/*noticia*/
+.noticia .boxNoticia p.dia{
+	color: #3b3b3b;
+	font-size: 18px;
+}
+.noticia .boxNoticia ul{
+	float: left;
+	margin-top: 15px;
+}
+.noticia .boxNoticia li{
+	margin-bottom: 30px;
+}
+.noticia .boxNoticia li a,
+.noticia .boxNoticia li p{
+	color: #5b5a50;
+}
+.noticia .boxNoticia li a,
+.noticia .boxNoticia li p.horaPost{
+	font-size: 16px;
+	font-weight: bold;
+}
+.noticia span.faixa{
+	background: url(../../../images/capaPrograma/rodaviva/bg-pagRV.jpg) repeat-x;
+	display: block;
+	float: left;
+	margin: 0px 0 15px 0;
+	width: 640px;
+    height: 15px;
+}
+.listaVideos .pag3,
+.listaVideos .pag2{
+	background: #fff;
+}
+.pag3 p,
+.pag2 p{
+    color: #333333;
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.paginacao a{
+    background: url("../../../images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
+    display: block;
+    float: right;
+    height: 18px;
+    margin: 4px 4px 0 0;
+    width: 16px;
+}
+.pag3 .proximo{
+    background-position: 0 -36px;
+}
+.pag3 .anterior{
+    background-position: 0 -54px;
+}
+.btn-calendario{
+    background: url("../images/btn-calendario.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin-top: 10px;
+    width: 131px;
+    height: 35px;
+}
+.btn-calendario span{
+    color: #FFFFFF;
+    float: left;
+    font-size: 15px;
+    margin: 5px 0 0 19px;
+    text-transform: uppercase;
+}
+/*noticia-interna*/
+.noticia-interna span.faixa{
+	background: url(../../../images/capaPrograma/rodaviva/bg-pagRV.jpg) repeat-x;
+	display: block;
+	float: left;
+	margin: 0px 0 15px 0;
+	width: 640px;
+    height: 15px;
+}
+.boxNoticia-interna h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-transform: inherit;
+}
+.boxNoticia-interna  p.subtit{
+	float: left;
+	font-size: 16px;
+}
+.boxNoticia-interna .assinatura{
+    margin: 10px 0 20px;
+    position: relative;
+}
+.boxNoticia-interna .assinatura .sup{
+    border-bottom: 1px dotted #666666;
+    height: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 10px;
+    line-height: normal;
+    margin-bottom: 5px
+}
+.boxNoticia-interna .assinatura .sup span{
+    float: right;
+}
+.boxNoticia-interna .assinatura .inf{
+    float: left;
+    font-size: 10px;
+    overflow: hidden;
+}
+.boxNoticia-interna .assinatura .box-compartilhar{
+	width: auto!important;
+	float: right;
+}
+.boxNoticia-interna .assinatura .btn-compartilhar{
+	width: auto;
+}
+.boxNoticia-interna .assinatura .box-compartilhar .face{
+    /*width: auto!important;*/
+    min-width:320px;
+}
+.boxNoticia-interna .noticiaTxt{
+	float: left;
+	width: 640px;
+}
+.noticiaTxt .noticiaTxtVideo{
+	float: left;
+	margin-right: 10px;
+}
+.boxNoticia-interna .noticiaTxt iframe{
+	margin: 10px 0;
+}
+.noticiaTxt p{
+	margin-bottom: 20px;
+}
+.not{
+	margin-top: 10px;
+}
+.noticiasRelacionadas{
+	background-color: #edede9;
+	border-radius: 5px;
+	float: left;
+	margin-top: 10px;
+	width: 310px;
+}
+.noticiasRelacionadas .first{
+	margin-top: 10px!important;
+}
+.noticiasRelacionadas .last{
+	background: none!important;
+}
+.noticiasRelacionadas .box-noticiasRelacionadas{
+	background: url(../../../images/capaPrograma/rodaviva/bottom-line.jpg) no-repeat bottom;
+	float: left;
+	margin: 5px 0 5px 10px;
+	padding-bottom: 10px;
+	width: 290px;
+}
+.box-noticiasRelacionadas h4 a{
+	color: #5b5a50;
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: none;
+}
+.box-noticiasRelacionadas p{
+	color: #737373;
+	float: left;
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 5px;
+}
+/*.calendario busca*/
+/*.box-compartilhar .face*/
+/*.box-compartilhar .face{
+	width: 350px!important;
+}
+*/
+.box-compartilhar p{
+	color: #fff;
+	margin-top: 4px;
+}
+.convidado .cp-sembg{
+	width: 310px!important;
+}
+.convidado .cp-sembg .btn-compartilhar{
+	width: 310px!important;	
+}
+.convidado .cp-sembg .btn-compartilhar .face{
+	margin: 5px 0 0 0px!important;	
+}
+.convidado .cp-sembg .print{
+	display: none;
+}
+/*twitter*/
+#twitter{
+	border:1px solid #e7e2b1;
+	margin-top: 20px;
+}
+#twitter .topo-fb{
+	background-color: #e7e2b1;
+	overflow: hidden;
+	padding: 10px;
+}
+#twitter .avatar { margin-right:10px; float:left; }
+#twitter .topo-fb img { width:31px; }
+#twitter .topo-fb h3{
+	color: #78755c;
+	font-size: 20px;
+	font-weight: normal;
+} 
+#twitter .topo-fb p{
+	color:#78755c;
+	font-size: 9px;
+	font-weight: bold;
+}
+#twitter ul {background:#fff; height:360px; overflow-x:hidden;}
+#twitter ul img {width:30px;}
+#twitter ul li {border-bottom:1px dotted #ddd; padding-top:5px;}
+#twitter ul .avatar {margin: 10px;}
+#twitter ul li a { color:#a09639;}
+#twitter ul li a,
+#twitter ul li p {font-size:12px; line-height:16px; margin-bottom:5px;}
+#twitter ul li p {/*margin-left:50px; padding-right:10px;*/}
+#twitter ul li:last-child {border:none; margin-bottom:10px;}
+#twitter .respiro {background:#ffffff; height:20px;}
+
+#rodape-portal{
+	background-color: #F0F0E8 !important;
+}
+.paginacao{
+	width: 100% !important;
+}
+#menuFloat{
+	*left: 180px;
+}
+/*paginação c+*/
+.paginacao .centraliza{
+    margin: 0 auto;
+    width: 365px;
+}
+.paginacao a{
+    background: url("../../../images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
+    display: block;
+    float: right;
+    height: 18px;
+    margin: 4px 4px 0 0;
+    width: 16px;
+}
+.paginacao .btn-ante{
+    float: left;
+}
+.paginacao .btn-prox {
+    background-position: 0 -72px;
+    float: left;
+}
+.paginacao .anterior{
+    margin: 0 20px 0 10px;
+}
+.paginacao .proxima {
+    margin: 0 10px 0 20px;
+}
+.paginacao .btn{
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    width: auto;
+}
+.paginacao ul{
+    display: block;
+    float: left;
+    margin: 0;
+    width: auto;
+}
+.paginacao ul li{
+    float: left;
+    text-align: center;
+    width: 17px;
+}
+.paginacao ul li a{
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+.paginacao ul li a.ativo,
+.paginacao ul li a:hover {
+    color: #FF6633;
+}
+/* compensação da alteração que fizeram no geral.css pra não cagar o roda viva */
+#capa-site {
+    width: 1048px !important;
+}
+
+.msgAcerto {
+	margin: 105px 0 105px 105px !important;
+}
+
+/** /RODA VIVA **/

@@ -1,0 +1,42 @@
+body { background:url(/portal/images/capaPrograma/doctorwho/home/pattern.jpg) repeat; }
+#capa-site { background:url(/portal/images/capaPrograma/doctorwho/home/bg-capa.png) repeat; padding: 0 10px; }
+.banner h2 { margin-top:15px; }
+.banner h2 a { background-image:url(/portal/images/capaPrograma/doctorwho/home/logo-tv-branco.png); }
+.banner { background:url(/portal/images/capaPrograma/doctorwho/home/bg-topo.png) no-repeat right; height:143px; margin:0 0 0 43px; overflow:hidden; width:968px; display: block; position:relative; }
+.box-borda .detalhe-borda,
+.banner .pub-grd {display:none;}
+#miolo {margin-top:0;}
+.box-contador { width:250px; clear:both; position:absolute; bottom:0; left:415px;}
+.box-contador .dash .digit,
+.box-contador p { color:#fff; font-weight:bold; text-transform:uppercase; float:left; font-size: 14px;  }
+.box-contador .dash .digit { font-family: arial; width:10px; }
+.box-contador .dash { background:none; width:30px; height:20px; margin:0 5px; }
+.box-contador #countdown_dashboard { width:40px; float:left; height:20px; line-height:20px; }
+#v2,
+.novoNoAr .enunciado h2,
+.proximasAtracoes .enunciado,
+.novoDestaque .enunciado h2 { background:#0d2854; }
+#v2 li { border-color:#0d2854; }
+.novoNoAr .enunciado span,
+.novoDestaque .enunciado span { background-image: url(/portal/images/capaPrograma/doctorwho/home/ponta-destaque-new.png); }
+.novoDestaque .enunciado,
+.novoDestaque { width:969px; }
+.novoNoAr { margin-bottom:0; }
+.box-padrao .capa-titulo,
+.box-padrao .claro .capa-titulo { background:#205da5; }
+.box-padrao .topo span,
+.box-padrao .claro span { background:url(/portal/images/capaPrograma/doctorwho/home/aba-titulo.png) no-repeat; }
+.noticia p,
+.box-padrao .conteudo li p,
+.conteudo a,
+.box-padrao .titulos { color:#fff; }
+.novoNoAr .noAr-box a.titulos, 
+.novoNoAr .noAr-box p { color:#333; }
+.proximasAtracoes .proximasAtracoes-box p a, 
+.proximasAtracoes .proximasAtracoes-box .gradeCompleta { color:#0d2854;}
+.box-borda .conteudo { background-image: none; }
+.box-borda .bg-branco, 
+.box-borda .conteudo ul, 
+.box-borda .conteudo ol, 
+.box-borda .conteudo .txt-padrao { background:none; }
+.para-ouvir a { background-image: url(/portal/images/capaPrograma/doctorwho/home/bg-player.png); }

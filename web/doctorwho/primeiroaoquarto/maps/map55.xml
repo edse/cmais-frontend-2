@@ -1,0 +1,28 @@
+<!--MAP DATA 55-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map55>
+
+<info>5,10,return to optical research labs unnessecary - the doctor lies ahead - EXTERMINATE!!!,0</info>
+
+<decal>2,2,22</decal>
+<decal>3,6,37</decal>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,213,1,1,1,1,618,1,1,1,1,0</zrow2>
+<zrow3>0,1,1,1,1,1,1,1,1,1,214,0</zrow3>
+<zrow4>0,1,1,1,1,1,1,1,1,1,212,0</zrow4>
+<zrow5>0,214,214,212,214,6,6,214,212,214,212,0</zrow5>
+<zrow6>0,1,1,1,1,1,1,1,1,213,212,0</zrow6>
+<zrow7>0,619,1,1,1,1,1,1,1,1,214,0</zrow7>
+<zrow8>0,1,1,1,1,1,1,1,1,1,1,0</zrow8>
+<zrow9>0,1,1,1,1,1,1,1,1,1,1,0</zrow9>
+<zrow10>0,211,211,1,1,1,1,1,1,1,1,0</zrow10>
+<zrow11>0,211,211,213,1,617,1,1,1,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "This Dalek will have to be fast to get through that access corridor"</introtext>
+
+</map55>

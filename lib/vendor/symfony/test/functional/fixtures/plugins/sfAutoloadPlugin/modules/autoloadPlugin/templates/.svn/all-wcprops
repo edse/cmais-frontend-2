@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/modules/autoloadPlugin/templates
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfAutoloadPlugin/modules/autoloadPlugin/templates/indexSuccess.php
+END

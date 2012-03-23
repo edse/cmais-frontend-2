@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Trânsito - Zona Oeste</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+  
+  <!--GOOGLE ANALYTICS-->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+   <!--/GOOGLE ANALYTICS-->  
+  
+</head> 
+
+<body> 
+
+<!--PAGINA ZONA-->
+<div id="zonaoeste" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="images/logo_cmais.png"/>
+  
+      </h1>
+      
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="corpo" data-role="content">
+    
+    <a href="index.php" class="btn-voltar ico-left" data-direction="reverse"> Voltar</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p class="texto-zona w60 flRight texAligRight">Você escolheu: <span class="laranja">Zona Oeste</span></p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+      <!--Container-->
+      <div id="container"> 
+        <!--Script Anchieta-->
+        <script>
+            $(function(){
+                var t=setTimeout(function(){
+                  $("#img-estrada").ready(function(){
+                    $('.pageload').hide();
+                    $("#img-estrada").fadeIn();
+                  });
+                },1000);
+                      
+                $("#opcoes-estrada").change(function () {
+                  $("#estrada option:selected").each(function () {
+                    var src = $(this).val();
+                    $("#img-estrada").fadeOut('fast',function() {
+                      $("#img-estrada").attr('src', src);
+                      $('.pageload').show();
+                      var t=setTimeout(function(){
+                        $("#img-estrada").ready(function(){
+                          $('.pageload').hide();
+                          $("#img-estrada").fadeIn();
+                        });
+                      },1000);                      
+                    });
+                                                            
+                  });
+                });
+                
+                var anchieta = 0;
+                
+                $("#img-estrada").hide();
+                
+                    
+              });
+            </script>
+        <!--Script Anchieta--> 
+
+        <!--Selecione a Avenida-->
+        <div id="selecione" data-role="fieldcontain" align="center">
+                      
+          
+          <form id="opcoes-estrada" action="" method="post">
+            <select id="estrada" class="required" data-role="none">
+              <option value="http://200.136.27.15/cameras/img_somar.php">Marginal Pinheiros - Estação Pinheiros</option>
+              <option value="http://200.136.27.15/cameras/img_pinheironeto.php">Marginal Pinheiros - Jockey Club</option>                 
+            </select>
+          </form> 
+          
+          <div class="pageload" style="margin: 0px auto;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+            <img id="img-estrada" src="http://200.136.27.15/cameras/img_pompeia.php" alt=""  style="width: 95%; display: none;"> 
+        </div>
+        <!--/Selecione a Avenida--> 
+          
+        <!--PARTICIPE / MAPAS-->
+        <div id="btn-nav" align="center">
+          <a href="participe.html" id="btn-participe" class="flLeft" data-ajax="false">Participe</a>
+          <a href="cmaisgoogle.html" id="btn-mapa" class="flRight"  data-ajax="false">
+            <div class="w100">
+              <div class="cont-btn-mapa">
+                 Mapas
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--PARTICIPE / MAPAS-->
+                  
+     </div> 
+     <!--/Container-->  
+                
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA ZONA-->
+
+
+  
+
+
+</body>
+</html>

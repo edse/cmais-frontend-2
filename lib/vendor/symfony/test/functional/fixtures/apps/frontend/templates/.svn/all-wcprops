@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/templates
+END
+layout.xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/templates/layout.xml.php
+END
+layout.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/templates/layout.php
+END
+layout.iphone.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/templates/layout.iphone.php
+END

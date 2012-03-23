@@ -1,0 +1,30 @@
+<!--MAP DATA 49-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map49>
+
+<decal>3,6,37</decal>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,200,3,3,3,3,3,212,1,1,1,0</zrow2>
+<zrow3>0,1,214,214,214,212,3,3,1,1,1,0</zrow3>
+<zrow4>0,1,1,1,1,212,211,211,1,1,606,0</zrow4>
+<zrow5>0,208,1,1,1,213,200,211,1,1,1,0</zrow5>
+<zrow6>0,0,1,1,1,3,200,211,1,1,1,0</zrow6>
+<zrow7>0,506,200,1,1,3,200,211,200,212,455,0</zrow7>
+<zrow8>0,208,1,1,1,212,200,211,3,3,3,0</zrow8>
+<zrow9>0,0,1,1,1,214,200,211,214,214,1,0</zrow9>
+<zrow10>0,6,1,1,1,214,200,211,1,1,1,0</zrow10>
+<zrow11>0,6,1,1,1,214,200,1,1,214,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<info>2,7,DATA: Inter-spectral vision research report,scanimages/vision.jpg</info>
+<info>2,8,DATA: Inter-spectral vision research report,scanimages/vision.jpg</info>
+<info>2,4,DATA: Inter-spectral vision research report,scanimages/vision.jpg</info>
+<info>2,5,DATA: Inter-spectral vision research report,scanimages/vision.jpg</info>
+
+<introtext>COMM: "The Dalek has entered optics laboratory - Scientists assure me the artefact is well hidden."</introtext>
+
+</map49>

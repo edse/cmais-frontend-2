@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/presentation/templates
+END
+fooSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/presentation/templates/fooSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/presentation/templates/indexSuccess.php
+END

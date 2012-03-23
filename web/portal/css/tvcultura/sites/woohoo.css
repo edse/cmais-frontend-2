@@ -1,0 +1,7 @@
+@import url("../geral.css");
+
+/** WOOHOO **/
+#barra-site { background:url(../../../images/capaPrograma/bg-woohoo.png) no-repeat right -4px; margin-top:0; padding-top:20px; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-woohoo.gif);}
+.submenu-interna {width:116px;}
+/** /WOOHOO **/

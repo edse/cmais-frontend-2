@@ -1,0 +1,13 @@
+@import url("../geral.css");
+
+/** NOSSA LINGUA **/
+#barra-site { background:url(../../../images/capaPrograma/bg-nossaLingua.png) no-repeat 700px 0; margin-top:0; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-nossaLingua.gif);}
+.submenu-interna {width:116px;}
+#miolo { margin-top:20px;}
+#barra-site #horario {margin-top:20px;  width:265px; text-align:right;} 
+#barra-site .topo-programa {margin-bottom:10px;}
+#barra-site #horario p { background:#ebebeb; display: inline; padding:0 2px;   }
+#barra-site h2 { margin-top:25px; }
+#chamada { margin-bottom:0; }
+/** /NOSSA LINGUA **/

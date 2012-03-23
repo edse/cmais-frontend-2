@@ -1,0 +1,522 @@
+@import url("jquery-ui-1.7.2.custom.css");
+body{
+  background-color: #f0f0e8;
+}
+#mask{
+    background-color: #000000;
+    display: none;
+    position: absolute;
+    z-index: 9000;
+}
+.bg-album{
+  background: url(../images/bg-album.gif);
+}
+.bg-album #barra-site .topo-programa{
+  position: relative;
+}
+.bg-album #barra-site .topo-programa img.imgTitulo{
+  float: left;
+  margin-top: -2px;
+  width: 640px;
+  height: 196px;
+}
+.bg-album #barra-site .topo-programa span.luz{
+  background: url(../images/pisca-piscaHor.gif) no-repeat;
+  position: absolute;
+  top: 24px;
+  left: 217px;
+  width: 622px;
+  height: 162px;
+}
+.bg-album #barra-site .topo-programa span.balao{
+  background: url(../images/balao.gif) no-repeat;
+  position: absolute;
+  top: -19px;
+  right: 140px;
+  width: 126px;
+  height: 189px;
+}
+.bg-album #barra-site .topo-programa .icoEnvie{
+  background: url(../images/btn_envie-foto.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 77px;
+  right: 34px;
+  text-indent: -9999px;
+  width: 98px;
+  height: 117px;
+}
+.bg-album #barra-site .topo-programa .icoEnvie:hover{
+  background: url(../images/btn_envie-foto_over.png) no-repeat;
+}
+.bg-album #barra-site .topo-programa .icoVeja{
+  background: url(../images/btn_veja-fotos.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+  right: 34px;
+  text-indent: -9999px;
+  width: 98px;
+  height: 117px;
+}
+.bg-album #barra-site .topo-programa .icoVeja:hover{
+  background: url(../images/btn_veja-fotos_over.png) no-repeat;
+}
+.albumWrapper{
+  float: left;
+  margin: -14px 0 0 36px;
+  *padding-bottom: 50px;
+  width: 900px;
+}
+.albumWrapper a.topo{
+  background: url(../images/ico-topo.png) no-repeat;
+  text-decoration: none;
+  text-indent: -9999px;
+  position: fixed;
+  top: 290px;
+  width: 77px;
+  height: 66px;
+}
+.albumWrapper .albumBox{
+  background: url(../images/bg-albumBox.png) no-repeat -5px 0;
+  float: left;
+  position: relative;
+  width: 900px;
+  height: 400px;
+}
+.albumWrapper .albumBox span.luzVer{
+  background: url(../images/pisca-piscaVer.gif) no-repeat;
+  position: absolute;
+  top: 27px;
+  right: -9px;
+  width: 62px;
+  height: 365px;
+}
+.albumWrapper .albumBox .albumFoto{
+  float: left;
+  margin: 60px 0 0 108px;
+  width: 700px; 
+}
+.albumFoto .foto{
+  float: left;
+  margin-top: -39px;
+  position: relative;
+  width: 237px;
+  height: 347px;
+}
+.albumFoto .amarelo{
+  background: url(../images/bg-fotoAmarelo.png) no-repeat;
+}
+.albumFoto .verde{
+  background: url(../images/bg-fotoVerde.png) no-repeat;
+  margin-left: -8px;
+}
+.albumFoto .vermelho{
+  background: url(../images/bg-fotoVermelho.png) no-repeat;
+  margin-left: -4px;
+}
+.albumFoto .foto a{
+  text-decoration: none;
+}
+.albumFoto .foto a .legenda{
+  background: url(../images/bg-legenda.png) repeat-y;
+  display: none;
+  position: absolute;
+  top: 164px;
+  width: 200px;
+  height: 108px;
+}
+.albumFoto .amarelo a .legenda{
+  left: 21px;
+}
+.albumFoto .verde a .legenda,
+.albumFoto .vermelho a .legenda{
+  left: 18px;
+}
+.albumFoto .foto a:hover .legenda{
+  display: inline;
+}
+.albumFoto .foto a .legenda p{
+  color: #fff;
+  line-height: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+.albumFoto .foto img{
+  float: left;
+  margin-top: 71px;
+  width: 200px;
+  height: 200px;
+}
+.albumFoto .amarelo img{
+  margin-left: 21px;
+}
+.albumFoto .verde img,
+.albumFoto .vermelho img{
+  margin-left: 18px;
+}
+.albumFoto .foto .box-info{
+  float: left;
+  margin: 10px 0 0 20px;
+  width: 200px;
+}
+.foto .box-info h3.nome,
+.albumFoto .foto p{
+  color: #104e0b;
+  font-size: 12px;
+  text-align: left;
+  width: auto;
+}
+.foto .box-info h3.nome{
+  font-weight: bold;
+}
+.albumWrapper .bg-bottom{
+  background: url(../images/bg-bottom.png) no-repeat;
+  float: left;
+  margin-left: -33px;
+  width: 985px;
+  height: 276px;
+}
+.bg-bottom a.maisFotos{
+  background: url(../images/btn-maisFotos.png) no-repeat;
+  display: block;
+  float: left;
+  margin: 45px 0 0 405px;
+  text-decoration: none;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 184px;
+  height: 75px;
+}
+.bg-bottom a.maisFotos:hover{
+  opacity: 0.7;
+}
+/* formulário */
+.formulario{
+  background: url(../images/bg-formulario.png) no-repeat;
+  float: left;
+  margin: 15px 0 0 110px;
+  width: 687px;
+  height: 457px;
+}
+.formulario .formularioWrapper{
+  float: left;
+  margin: 70px 0 0 30px;
+  width: 645px;
+  height: 370px;
+}
+.formularioWrapper h3{
+  color: #104e0b;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.formularioWrapper .upImage{
+  background: url(../images/bg-selectFoto1.png) repeat;
+  float: left;
+  margin-top: 10px;
+  width: 630px;
+}
+.upImage .selecionar,
+.upImage .link{
+  float: left;
+  padding: 4px;
+}
+.inputFile input#new_photo{
+	
+}
+.upImage .selecionar input#new_photo{
+  border: 1px solid #b8b8b8;
+  float: left;
+  width: 205px;
+  height: 20px;
+}
+.selecionar .seleArq{
+  background: url(../images/bg-btn-selecionar.jpg) repeat-x;
+  border: 1px solid #b8b8b8;
+  border-radius: 0 10px 10px 0;
+  float: left;
+  height: 20px;
+}
+.selecionar .seleArq:hover,
+.selecionar .trocalink:hover,
+.link .trocaarquivo:hover{
+  opacity: 0.7;
+}
+.seleArq span{
+  color: #333;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px 10px 0 10px;
+  text-transform: uppercase;
+}
+.selecionar .trocalink,
+.link .trocaarquivo{
+  color: #333;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 3px 0 0 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.link input{
+  border: 1px solid #b8b8b8;
+  float: left;
+  width: 285px;
+  height: 20px;
+}
+.link p{
+  color: #333;
+  font-size: 15px;
+  float: left;
+  font-weight: bold;
+  margin: 3px 5px 0 0;
+  text-transform: uppercase;
+}
+.formularioWrapper .aviso{
+  float: left;
+  font-size: 11px;
+  margin-top: 2px;
+}
+.formularioWrapper .aviso2{
+  float: left;
+  font-size: 11px!important;
+  font-weight: normal!important;
+  margin-top: 2px!important;
+}
+#form-contato{
+  float: left;
+  width: 630px;
+}
+#form-contato p{
+  color: #333;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  /*margin-top: 13px;*/
+  text-transform: uppercase;
+}
+#form-contato p.nome,
+#form-contato p.cidade,
+#form-contato p.estado,
+#form-contato p.legenda{
+	margin-top: 13px;
+}
+#form-contato p.nome label{
+  margin-right: 20px;
+}
+#form-contato p.cidade label{
+  margin-right: 11px;
+}
+#form-contato p.estado{
+  margin-left: 31px;
+  *margin-left: 28px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    #form-contato p.estado{
+    margin-left: 28px;
+  }
+}
+#form-contato p.estado label{
+  margin-right: 8px;
+}
+#form-contato p input{
+  border: 1px solid #b8b8b8;
+  height: 20px;
+}
+#form-contato p.nome input{
+  width: 565px;
+}
+#form-contato p.cidade input{
+  width: 335px;
+}
+#form-contato p.estado input{
+  width: 135px;
+}
+#form-contato p.legenda label{
+  float: left;
+}
+#form-contato textarea{
+  border: 1px solid #b8b8b8;
+  float: left;
+  width: 628px;
+  height: 80px;
+}
+#form-contato .termos{
+  float: left;  
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: 5px;
+  text-transform: none;
+}
+.termos input{
+  float: left;
+  margin: 2px 3px 0 0;
+}
+.termos a{
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.formularioWrapper .maxCaracteres{
+  font-size: 12px!important;
+  font-weight: normal!important;
+  position: absolute;
+  bottom: 88px;
+  *bottom: 85px;
+  right: 132px;
+}
+.enviarFotos{
+  background: url(../images/btn-enviarFoto.png) no-repeat;
+  border: none;
+  float: right;
+  margin: 10px 13px 0 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  width: 90px;
+  height: 57px;
+}
+.enviarFotos:hover{
+  opacity: 0.7;
+}
+form label.error{
+  display: none!important;
+}
+.formularioWrapper .erroCSS{
+  color: #c90f0f;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  /* margin-top: -25px; */
+  text-transform: uppercase;
+}
+form input.error,
+form textarea.error{
+  border: 1px solid #e71200!important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .formularioWrapper .erroCSS{
+    margin-top: -25px;
+  }
+}
+#boxes .window{
+	background: url(../images/bg_termos.png) no-repeat;
+	display: none;
+	padding: 20px;
+	position: absolute;
+	left: 324px!important;
+	top: 150px!important;
+	width: 688px;
+	height: 416px;
+	z-index: 9999;
+}
+#boxes #dialog{
+	width: 688px;
+}
+.dialogWrapper{
+	float: left;
+	margin-top: 20px;
+	overflow-y: auto;
+	width: 640px;
+	height: 270px;
+}
+#boxes .window .close{
+	background: url(../images/btn-voltar.png) no-repeat;
+	float: left;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 129px;
+	height: 70px;
+}
+#boxes .window h4{
+	color: #333;
+	font-size: 12px;
+	float: left;
+	font-weight: bold;
+	margin: 10px 0;
+}
+#boxes .window h3{
+	color: #333;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 30px 0 0 100px;
+	text-transform: uppercase;
+}
+#boxes .window p{
+	color: #333;
+	float: left;
+	font-size: 12px;
+	margin: 15px 0 0 0;
+	text-align: left;
+	width: 595px;
+}
+#boxes .window p a{
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#boxes .window .linha{
+	background: url(../images/linha-form.jpg) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 10px;
+	width: 640px;
+	height: 2px;
+}
+/*tela obrigado*/
+.formularioWrapper .boxWrapper{
+	float: left;
+	margin: 25px 0 0 140px;
+	width: 335px;
+}
+.boxWrapper h3.obrigado,
+.boxWrapper p{
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: none;
+	width: 335px;
+}
+.boxWrapper h3.obrigado{
+	color: #104e0b;
+	margin-bottom: 25px;
+}
+.boxWrapper p{
+	background: url(../images/linha-form.jpg) repeat-x bottom;
+	color: #333;
+	padding-bottom: 20px;
+}
+.boxWrapper p.enquanto{
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.boxWrapper a{
+	background: url(../images/btn_brinque-no-quintal.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	width: 316px;
+	height: 98px;
+	margin: 30px 0 0 10px;
+}
+/* c+ */
+#rodape-portal{
+  margin-top: 0px!important;
+}
+#rodape-portal .capa-voltar-topo{
+  margin-top: -25px!important;
+  
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/util/fixtures/finder
+END
+file2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/util/fixtures/finder/file2.txt
+END
+file1
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/util/fixtures/finder/file1
+END
+FILE5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/util/fixtures/finder/FILE5.txt
+END

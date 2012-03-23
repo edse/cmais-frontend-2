@@ -1,0 +1,99 @@
+@import url("../geral.css");
+
+/** DEU PAULA **/
+#miolo {margin:20px 0; padding-bottom:30px;}
+#direita { margin-top:0; }
+.box-padrao {margin-top:20px;}
+#bg-paula {background:url(../../../images/capaPrograma/deupaulanatv/bg-deupaula.jpg) repeat; z-index: 0; margin-top:-223px;}
+#bg-paula {*margin-top:-282px; }
+#bg-topo { background:url(../../../images/capaPrograma/deupaulanatv/topo-deupaula.png) repeat-x ; height:223px; z-index: 10; position:relative; }
+#bg-topo { _background:url(../../../images/capaPrograma/deupaulanatv/topo-deupaula.gif);}
+#capa-site { margin-top:0 !important; position:relative; z-index: 20; min-height:700px;}
+#barra-site {background:url(../../../images/capaPrograma/deupaulanatv/bg-topo-paula.png) no-repeat 200px 0; height:162px; margin-top:0;}
+#barra-site #horario {width:170px; text-align:right; margin-top:0;}
+#barra-site h2 {margin-top:30px;}
+.assinatura .inf {width:250px;}
+.curtir {float:left; width:110px;}
+.menu-interna { width:850px; float:left; }
+.tags span,
+.menu-interna li {background:#b31290;}
+.tags span,
+.menu-interna a {color:#fff;}
+.menu-interna li.ativo, 
+.menu-interna li:hover {background: #ff5e75;}
+.box-interna .data {background:url(../../../images/capaPrograma/deupaulanatv/bg-data.png) no-repeat ; width:52px; height:52px; float:left; margin-right:10px;}
+.box-interna .data p {color:#fff; font-size:25px; font-weight:bold; text-align:center; padding-top:5px; }
+.box-interna .data span {font-size:14px; color:#fff; text-transform:uppercase; width:52px; display:block;}
+.box-interna .cp-sembg {top:14px;}
+.tags {font-size:10px; text-transform:uppercase;}
+.tags span {padding:2px 3px; margin-left:3px;}
+.texto .btn { text-indent:-9999px; height:24px; display: block; background:#b31290 url(../../../images/capaPrograma/deupaulanatv/btnPaula-anterior.png) no-repeat 10px 5px; float:left; margin:20px 0; }
+.texto .anterior {width:134px;}
+.texto .proxima {width:124px; background-image:url(../../../images/capaPrograma/deupaulanatv/btnPaula-proxima.png); float: right;}
+#rodape-portal { margin-top:-26px;}
+.pub-125x125 { border:2px solid #666; width:125px; height:125px; float:left; margin:0;}
+#form-tema { background:#b31290; width:170px; height:127px; float:right; text-align:center; }
+#form-tema p { background:url(../../../images/capaPrograma/deupaulanatv/mande-seu-tema.png) no-repeat; text-indent:-9999px; margin:10px 0 10px 15px; width:139px; height:36px; }
+#form-tema input {border:none; }
+#form-tema .seutema { width:144px; padding:0 0 0 5px; color:#333; height:24px; }
+#form-contato .enviar,
+#form-tema .enviar {margin:10px 0; background:#c93be4 url(../../../images/capaPrograma/deupaulanatv/btnPaula-enviar.png) no-repeat 10px; width: 78px; height:24px; text-indent:-9999px;}
+.grid1 {text-align:left;}
+.tit-paula { background:#b31290 no-repeat 10px 5px; text-indent:-9999px; height:24px; width: auto; margin-bottom:10px;}
+.bio {  background-image:url(../../../images/capaPrograma/deupaulanatv/bio-paula.png); width: 65px;  }
+.perfil {  background-image:url(../../../images/capaPrograma/deupaulanatv/perfil-paula.png); width: 105px;  }
+.playlist { background-image:url(../../../images/capaPrograma/deupaulanatv/playlist-paula.png); width: 138px;  }
+.fotos {  background-image:url(../../../images/capaPrograma/deupaulanatv/fotos-paula.png); width:99px;  }
+.mesegue {  background-image:url(../../../images/capaPrograma/deupaulanatv/mesegue-paula.png); width:139px;  }
+.meadd {  background-image:url(../../../images/capaPrograma/deupaulanatv/meadd-paula.png); width:113px;  }
+.mecurte {  background-image:url(../../../images/capaPrograma/deupaulanatv/mecurte-paula.png); width:135px;  }
+.box-padrao .img-150x90 { width:150px; height:90px; float:left; margin:0 5px 5px 0;}
+.box-padrao .img-310x186 img {width:310px;}
+.box-padrao .titulos {float:none;}
+.redes-sociais { width:108px; clear:both; margin-top:10px; float:left}
+.redes-sociais li {width:31px; margin:0 5px 0 0; float: left; padding:0; border:none; }
+.redes-sociais li a { text-indent:-9999px;  background: url(../../../images/capaPrograma/deupaulanatv/redes-paula.png) no-repeat; width:31px; height:32px; display: block; }
+.redes-sociais .twt  { background-position: 0 -32px; }
+.redes-sociais .ytb { background-position:0 -64px; }
+.itens { width:310px; max-height:300px; overflow-x:hidden; }
+.itens li { width:140px; float: left; border:none; margin-right:10px; padding-bottom:0; }
+.itens li:nth-child(even){ margin-right:0; }
+.itens li { *margin-right:5px; }
+.itens li a {width:140px; height:90px; display:block;}
+.itens li a img { width: 140px; }
+.contato form .linha select,
+.contato form textarea,
+.contato .codigo .img,
+.contato form .linha input {border:1px solid #d35278;}
+#form-contato label.error { background:#c02b8a; color:#fff; }
+.tit-pagina {border-bottom:1px dotted #666;}
+#form-contato .enviar {background-color:#b0187b}
+.contato .titulos {width:630px;}
+.orbit-bullets li.active.has-thumb,
+.orbit-bullets li.has-thumb {border-color:#b0187b; height:54px;}
+.texto .redes-sociais {width:640px; margin:0 0 10px 0;}
+.box-interna .texto .tit { margin:0 0 5px 0; font-weight:bold; color:#b0187b;}
+.box-interna .posts li {margin-bottom:5px;}
+#canal table.gadget {background:#fff; border:none; padding:0; margin:0;}
+#canal iframe html #vs { background:#fff !important; border:none;}
+.container {*height:470px; *overflow:hidden;}
+.orbit-bullets {*height:70px; *overflow: hidden;}
+.sucesso { width:170px; height:127px; background:#b31290 url(../../../images/capaPrograma/deupaulanatv/sucesso.png) no-repeat 38px 45px; float:right;  }
+.box-compartilhar {clear:both;} 
+.assinatura .btn-compartilhar p {border-right:1px dotted #666;}
+.box-interna .texto {clear:both}
+
+#chamada {float:none; margin:48px auto -48px auto; position:relative; z-index:30; text-align:left; padding-top:20px; background: transparent; width:1010px;}
+#chamada span {text-align:center; margin-left:40px;}
+#barra-site {background-position:200px -30px;}
+#bg-topo {margin-top:48px;}
+#bg-chamada {background:#86feff !important; width:100%; padding-top:0; margin-bottom:48px;}
+#bg-chamada {*background:#86feff;}
+#barra-site #horario p {margin-top:20px;}
+
+.box-playlist a .img-150x90 {padding:0;}
+.box-playlist li {width:156px;}
+.box-playlist li:last-child {margin-right:0;}
+#direita .facebook {padding:10px 0 10px 10px !important; margin:20px 0 0 0; width: 300px;}
+
+/** /DEU PAULA **/ 

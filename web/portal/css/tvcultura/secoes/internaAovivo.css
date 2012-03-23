@@ -1,0 +1,11 @@
+@import url("../geral.css");
+
+/******* INTERNA AO VIVO *******/
+.box-padrao {margin-top:0;}
+.box-padrao .abas { _background:#333;}  
+.tema { background:#fff; padding:20px 10px 10px; margin-top:-20px; clear:both; } 
+.tema h3 { color:#ff6633; font-size:16px; margin-bottom:0;}      
+.tema p { font-weight:bold;}
+#menu-rodape .blocos,
+#menu-rodape .blocos ul { height:230px; margin-left:0;}
+/******* INTERNA AO VIVO *******/

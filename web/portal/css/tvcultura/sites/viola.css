@@ -1,0 +1,10 @@
+@import url("../geral.css");
+
+/** VIOLA **/
+#barra-site { background:url(../../../images/capaPrograma/bg-viola.png) no-repeat right 0; margin-top:0; min-height:150px;}
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-viola.gif);}
+#barra-site h2 {margin-top:15px;}
+#chamada {margin-bottom:0;}
+
+
+/** /VIOLA **/

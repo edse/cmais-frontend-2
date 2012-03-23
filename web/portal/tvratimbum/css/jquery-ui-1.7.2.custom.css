@@ -1,0 +1,136 @@
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=
+*/
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget-content {}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default {background: url(../image/bg-calendarioDia.jpg) no-repeat; line-height: 40px; font-weight: bold; color: #6b6b6b; margin-top: 2px;}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #ed1700; text-decoration: none; outline: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { background: #ed1700; color: #fff; outline: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; outline: none; }
+.ui-state-active, .ui-widget-content .ui-state-active { background: #ed1700; color: #fff; outline: none; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { background: #000; color: #fff; outline: none; }
+/*agenda*/
+#box-programas-calendarioAgenda .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #125c7e; text-decoration: none; outline: none; }
+#box-programas-calendarioAgenda .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { background: #125c7e; color: #fff; outline: none; }
+#box-programas-calendarioAgenda .ui-state-active, .ui-widget-content .ui-state-active { background: #125c7e; color: #fff; outline: none; }
+/*especial*/
+#box-programas-calendarioEspecial .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #19ae9a; text-decoration: none; outline: none; }
+#box-programas-calendarioEspecial .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { background: #19ae9a; color: #fff; outline: none; }
+#box-programas-calendarioEspecial .ui-state-active, .ui-widget-content .ui-state-active { background: #19ae9a; color: #fff; outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {background: #ed1700; color: #fff; outline: none; }
+.ui-state-error, .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text { color: #cd0a0a; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled {  }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/*agenda*/
+#box-programas-calendarioAgenda .ui-state-highlight, .ui-widget-content .ui-state-highlight {background: #125c7e; color: #fff; outline: none; }
+/*especial*/
+#box-programas-calendarioEspecial .ui-state-highlight, .ui-widget-content .ui-state-highlight {background: #19ae9a; color: #fff; outline: none; }
+#box-programas-calendario .ui-state-highlight, .ui-widget-content .ui-state-highlight {background: #ED1700; color: #fff; outline: none; }
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius
+.ui-corner-all { -moz-border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius-topleft: 0; }
+*/
+
+/* Datepicker
+----------------------------------*/
+.ui-datepicker { width: 290px; padding-top: 35px; *padding-top: 8px;}
+.ui-datepicker .ui-datepicker-header { background: url(../image/bg-calendarioMes.png) no-repeat; width: 274px; height:28px; line-height:30px; font-size:14px; font-weight:normal; color:#6b6b6b; margin: 0 0 10px 7px;}
+.ui-datepicker .ui-datepicker-prev{ position:absolute; top: 40px; left: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat 0 -36px; }
+.ui-datepicker .ui-datepicker-next { position:absolute; top: 40px; right: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat -54px -36px; }
+/*
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 10px; width:12px; height:12px; background:url(../images/prev-next-calendar.gif) no-repeat; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { background:url(../images/prev-next-calendar_over.gif) no-repeat; }
+.ui-datepicker .ui-datepicker-prev { left:40px; background-position:left; }
+.ui-datepicker .ui-datepicker-next { right:40px; background-position:right; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+*/
+.ui-datepicker .ui-datepicker-title { text-align: center; text-transform: uppercase; }
+
+.ui-datepicker table { width: 290px; border-collapse: collapse; }
+.ui-datepicker th { background-color: #dddfe0; text-align: center; font-weight: bold; border: 1px solid #fff; color:#6b6b6b; text-transform: uppercase; width: 39px; height: 29px;  }
+.ui-datepicker .ui-datepicker-week-end{ color: #505050; font-style: italic; }
+.ui-datepicker td { border: 0; vertical-align:bottom; height:30px;}
+.ui-datepicker td span, .ui-datepicker td a { display: block; text-align: center; text-decoration: none;}
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+/*agenda*/
+#box-programas-calendarioAgenda .ui-datepicker .ui-datepicker-prev{ cursor: pointer; position:absolute; top: 40px; left: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat 0 -212px; }
+#box-programas-calendarioAgenda .ui-datepicker .ui-datepicker-next { cursor: pointer; position:absolute; top: 40px; right: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat -54px -212px; }
+/*especial*/
+#box-programas-calendarioEspecial .ui-datepicker .ui-datepicker-prev{ cursor: pointer; position:absolute; top: 40px; left: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat 0 -230px; }
+#box-programas-calendarioEspecial .ui-datepicker .ui-datepicker-next { cursor: pointer; position:absolute; top: 40px; right: 17px; width:12px; height:18px; background: url(../image/ico-spriteSeta.png) repeat -54px -230px; }
+
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}/* Progressbar
+----------------------------------*/
+.ui-progressbar { height:2em; text-align: left; }
+.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }

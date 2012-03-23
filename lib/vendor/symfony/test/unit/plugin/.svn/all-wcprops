@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin
+END
+sfPluginTestHelper.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPluginTestHelper.class.php
+END
+sfPearRestPluginTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPearRestPluginTest.php
+END
+sfPearRestTest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPearRestTest.class.php
+END
+sfPluginManagerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPluginManagerTest.php
+END
+sfPearDownloaderTest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPearDownloaderTest.class.php
+END
+sfPearEnvironmentTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/unit/plugin/sfPearEnvironmentTest.php
+END

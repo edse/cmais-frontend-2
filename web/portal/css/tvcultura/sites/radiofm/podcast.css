@@ -1,0 +1,14 @@
+@import url("geral.css");
+
+/** RADIO FM - PODCAST **/
+.tit-pagina {margin:20px 0;}
+.col-dir {margin-top:-20px;}
+.box-compartilhar {margin-top:20px;}
+.box-interna .titulos,
+.box-interna p {float:left; width:640px;}
+.box-interna li { margin-bottom:20px; float:left;}
+.box-interna .texto {margin-top:20px;}
+.bold {line-height:20px;}
+
+
+/** /RADIO FM - PODCAST  **/

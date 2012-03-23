@@ -1,0 +1,453 @@
+/* ESTRUTURAS */
+
+/*GOOGLE MAP*/
+#map_canvas { height: 100% }
+/*GOOGLE MAP*/
+#ajax-loader{
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    z-index: 10;
+}
+.flLeft{float: left !important;}
+.flRight{float: right !important;}
+
+.texAligRight {text-align: right !important;}
+
+.relative{position:relative !important;}
+.absolute{position:absolute !important}
+
+.w10{width:10%}
+.w20{width:20%}
+.w25{width:25%}
+.w30{width:30%}
+.w40{width:40%}
+.w50{width:50%}
+.w55{width:55%}
+.w60{width:60%}
+.w70{width:70%}
+.w80{width:80%}
+.w90{width:90%}
+.w100{width:100%}
+
+.laranja{color:#ff6633;}
+.azul{color:#00a9e8;}
+
+.Blaranja{background-color:#ff6633 !important;}
+.Bazul{background-color:#00a9e8 !important;}
+.estavel{background-color:#f0ab04 !important;}
+.alta{background-color:#e12121 !important;}
+.baixa{background-color:#03cc7e  !important;}
+
+/* ESTRUTURAS */
+
+.texto-zona {
+  font-size:.8em !important;
+  font-weight:normal;
+  color:#FFF !important;
+  text-shadow: none !important;
+  padding-top:3px !important;
+  padding-bottom:3px !important;
+  margin:0px 12px 0px 12px !important;
+}
+.barra p{
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+.btn-voltar{
+  width: 42px;
+  height:auto;
+  border-radius: 5px 5px 5px 5px !important;
+  color:#fff !important;
+  font-size:1em;
+  text-decoration:none;
+  text-shadow: none;
+  padding:5px 12px 5px 20px;
+  font-family: Helvetica,Arial, sans-serif;
+  letter-spacing: 0.5px;  
+  font-weight: lighter; 
+  position:absolute;
+  margin: -4px 10px!important;
+  z-index: 50;
+}
+
+.tipo{
+  left:84px;
+  width:42px;
+}
+
+.estradas{
+  left:166px;
+  width:66px;
+}
+
+.ico-up{
+  background: url(../images/ico-voltar-up.png) 8px 17px no-repeat #ff7648;
+}
+.ico-up:active{
+  background: url(../images/ico-voltar-up.png) 8px 17px no-repeat #ffa789;
+}
+
+.ico-left{
+  background: url(../images/ico-voltar-left.png) 8px 10px no-repeat #ff7648;	
+}
+.ico-left:active{
+  background: url(../images/ico-voltar-left.png) 8px 10px no-repeat #ffa789;	
+}
+
+.ui-btn{
+ padding:0px !important;
+ border-radius: 6px !important;  
+}
+#selecione{
+  margin:0px 12px 20px 12px !important;
+  border:none !important;
+  overflow: hidden;
+}
+#avenida{
+    text-align: left;
+}
+.rodovia{
+  font-weight: bold;
+  margin-left:20px;
+}
+select{
+    background: -moz-linear-gradient(#FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;
+    border: 2px solid #4C4C4C;
+    border-radius: 7px 7px 7px 7px !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 29px;
+    left: 0;
+    margin: 10px 0 20px !important;
+    max-height: 100%;
+    min-height: 100%;
+    padding-top: 5px;
+    text-align: center;
+    top: 0;
+    width: 98% !important;
+    z-index: 2;
+}
+
+.ui-select{
+  width:98% !important;
+  box-shadow: none !important;
+  border-radius: 7px !important;
+  margin: 0px 0px 20px 0px !important;
+  border:2px solid #4c4c4c;
+  height: 39px;
+}
+.ui-select .ui-btn-icon-right .ui-btn-inner {
+   padding:0px 45px 0px 0px !important; 
+}
+.ui-select .ui-btn-text{
+  padding:10px!important;
+}
+.ui-field-contain{
+  padding: 0px !important;
+}
+
+/* HEADER */
+.header{
+  background-color: #f0f0f0 !important;
+  border-top: 3px solid #ff7648;
+}
+
+.header h1 img{
+  width:50%;
+}
+.ui-bar-a{
+  background: none !important;
+  border-bottom:none !important;
+}
+
+.tituloHeader{
+  margin-top:15px !important;
+  margin-left:15px !important;
+  margin-right:15px !important;
+  margin-bottom:15px !important;
+}
+
+.barra{
+  background-color:#484848;
+  overflow: hidden;
+}
+
+
+/* /HEADER */
+
+/* CORPO */
+
+.menuZonas{
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom:0px !important;
+  width: 100%;
+}
+.menuZonas{
+  width: 100%;
+}
+
+.menuZonas li{
+  list-style: none;
+  overflow: hidden;
+  background:#FFF url(../images/seta-pg-index.jpg) no-repeat right 1px;
+  margin-top:-1px;
+}
+
+.volta{
+  background:url(../images/seta-pg-index-volta.jpg) no-repeat left 1px important;
+}
+.menuZonas li a{
+  color:#333 !important;
+  text-decoration:none !important;
+  border-bottom:1px dotted #ff6a38;
+  display:block;
+  text-align: left !important;
+  text-shadow: none;
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-left:1.5em;
+  margin-right:10px;
+  font-size:1em;
+  float:left;
+  width: 100%;
+}
+
+.menuZonas li a:active{
+  color:#fff !important;
+  background-color:#ff6a38;
+}
+
+
+.menuZonas .km{
+  float:left;
+  padding:6px 5px 6px 8px;
+  margin-right:5px;
+  color: #FFF;
+  font-size:.8em;
+}
+
+.menuZonas .quadrado{
+  float:left  ;
+  border-radius:5px;
+}
+
+.menuZonas .local{
+  float:left;
+  margin-top:7px;
+  margin-right:10px;
+}
+.menuZonas .status{
+    float:right;
+    height: 15px;
+    margin-top: 5px;
+    width: 25px;
+    border-left:1px solid #FFF;
+}
+.menuZonas img{
+    width:70%;
+    margin-left:4px;
+    margin-top:-1px;
+}
+.ui-content {
+    padding:0px !important;
+    overflow: visible !important;
+    width: 100%;
+}
+
+#btn-nav {
+  margin: 0px 0px 0px 0px !important;
+  background-color: #f0f0f0;
+  padding: 20px 10px 0px 10px;
+  display:block;
+  height:47px;
+  border-top:1px dotted #ff6a38;
+  position:relative;
+}
+#btn-nav a{
+  width:48%;
+  text-shadow: none !important;
+  text-decoration:none;
+  color:#FFF;
+  font-size:.85em;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+#btn-nav #btn-participe{
+  padding-top: 15px;
+  padding-bottom:15px;
+  background-color:#ff6633;
+}
+
+#mapa #btn-nav #btn-participe{
+  width:100% !important;
+  padding-top: 15px;
+  padding-bottom:15px;
+  background-color:#ff6633;
+}
+
+#btn-nav #btn-participe:active{
+  background-color:#ffa789; 
+}
+
+#btn-mapa{
+  background-color:#00a9e8;
+}
+#btn-mapa:active{
+  background-color:#347e99;
+}
+.cont-btn-mapa{
+  width:45px;
+  background: url(../images/ico-map.png) no-repeat 0 8px;
+  height:32px;
+  padding-top: 15px;
+  padding-left: 36px;
+}
+
+#btn-nav .btn-estrada{
+  padding-top: 15px;
+  padding-bottom:15px;
+  border-radius: 10px;
+  background-color: #4c4c4c !important;
+  font-weight: normal;
+  margin-bottom: 8px; 
+}
+
+#btn-nav .btn-estrada:active{
+  background-color: #33baed !important;
+}
+
+#btn-nav .btn-estrada{
+  padding-top: 15px;
+  padding-bottom:15px;
+  background-color: #4c4c4c !important;
+  font-weight: normal;
+  margin-bottom: 5px; 
+}
+
+#fotoKm #container{
+    padding: 0px 0px 0px 0px !important;
+}
+
+#fotoKm img{
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+#fotoKm p{
+  margin-top:10px;
+  margin-bottom:0px;
+  font-weight: bold;
+}
+#container{
+  background: #fff;
+  padding: 20px 0px 0px 0px;
+  overflow: hidden;
+  width:100%;
+}
+
+#mapa #container{
+  padding: 0px 0px 0px 0px !important;
+}
+
+#imagem{
+  clear: both;
+}
+
+
+
+.boxMsg p {
+    color: #FFFFFF;
+    font-size: .8em;
+    font-weight: lighter !important;
+    line-height: 15px;
+    text-shadow: 0 1px 0 #333 !important;
+}
+
+.msgErro{
+  width: 80% !important;
+  overflow: hidden;
+}
+
+.msgAcerto{
+  width:80% !important;
+  overflow: hidden;
+}
+
+.boxMsg{
+  width: 70% !important;
+}
+/* /CORPO */
+
+/* FORMULARIO*/
+
+.textoForm{
+	font-size:.8em;
+	text-align: left;
+	margin:0px 20px 0px 20px !important;
+	padding:0px 20px 0 20px;
+}
+
+textarea, input{
+	border-radius: 5px 5px 5px 5px !important;
+	font-size:.8em !important;
+	color:#666 !important;
+	margin:10px 20px 10px 20px !important;
+	width: 80% !important;
+}
+
+textarea{
+  height: 130px !important;
+}
+
+.caracter{
+  font-size:.6em;
+  color:red;
+  text-align:left;
+  width:94%;
+}
+
+#btn-nav span.ui-btn-inner{
+  border-radius: 0px !important;
+  margin-bottom:0px !important;
+  color: #FFF !important;
+  text-shadow: none !important;
+  background-color:#4c4c4c !important;
+}
+
+#btn-nav span.ui-btn-inner{
+  border-radius: 0px !important;
+  margin-bottom:0px !important;
+  color: #FFF !important;
+  text-shadow: none !important;
+  background-color:#ff6633 !important;
+}
+
+.ui-btn{
+  margin: 0px !important;
+  margin-bottom:20px !important;
+}
+
+
+.ui-btn-hidden{
+  top:-10px;
+  border-radius: 0px !important;
+} 
+.ui-btn-corner-all{
+  border-radius: 5px !important;
+  background-clip: border-box !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#form-contato label.error{
+  padding: 5px 5px 5px 5px !important;
+  width:100%;
+  margin:0px auto !important;
+}
+
+/* /FORMULARIO*/

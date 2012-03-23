@@ -1,0 +1,11 @@
+@import url("../geral.css");
+
+/**  TROMBA TREM **/
+#barra-site { background:url(../../../images/capaPrograma/bg-trombaTrem.png) no-repeat right -20px; margin-top:0; padding-top:20px; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-trombaTrem.gif);}
+.submenu-interna {width:106px;}
+.submenu-interna li a { margin-left:10px;}
+.box-padrao {margin-top:0;}
+.box-publicidade {margin:20px 0;}
+
+/** / TROMBA TREM **/

@@ -1,0 +1,5 @@
+@import url("../geral.css");
+@import url("programas.css");
+#menu-rodape .carrossel {margin-left:5px; width:950px;}
+.carrossel .jcarousel-item  { width:220px; height:671px;}
+#menu-rodape .blocos .titulos {margin-left:10px;}

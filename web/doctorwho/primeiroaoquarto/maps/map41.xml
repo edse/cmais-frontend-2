@@ -1,0 +1,26 @@
+<!--MAP DATA 41-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map41>
+
+<info>6,5,Comm : warning to all personnel! Armoured shields must be worn at all times for mine testing area.,0</info>
+<info>7,5,Comm : warning to all personnel! Armoured shields must be worn at all times for mine testing area.,0</info>
+<info>10,5,Comm : warning to all personnel! Armoured shields must be worn at all times for mine testing area.,0</info>
+
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,212,212,212,212,1,190,1,1,1,213,0</zrow2>
+<zrow3>0,3,3,3,3,3,1,1,1,1,1,0</zrow3>
+<zrow4>0,200,214,214,214,1,1,1,1,1,1,0</zrow4>
+<zrow5>0,1,1,1,1,214,1,1,1,1,1,0</zrow5>
+<zrow6>0,189,1,1,1,214,1,1,2,2,1,0</zrow6>
+<zrow7>0,1,1,1,1,212,1,1,1,213,1,0</zrow7>
+<zrow8>0,1,1,1,1,212,1,1,1,1,1,0</zrow8>
+<zrow9>0,211,212,211,212,211,1,1,1,1,1,0</zrow9>
+<zrow10>0,1,1,1,1,1,1,1,1,1,1,0</zrow10>
+<zrow11>0,1,1,188,1,1,1,1,1,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+</map41>

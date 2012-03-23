@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Trânsito - Interior</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="../css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  
+  <!--BUBBLE BOOKMARK-->
+  <link rel="stylesheet" href="css/add2home.css">
+  <link rel="apple-touch-icon" href="images/ico-transito-final.png">
+  <script type="text/javascript">
+  var addToHomeConfig = {
+    autostart:true,
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:20000,
+    expire:0,
+    touchIcon:true,
+    arrow:true,
+    message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+  };
+  </script>
+  <script type="application/javascript" src="js/add2home.js"></script>
+  <!--BUBBLE BOOKMARK-->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+  
+    <!--GOOGLE ANALYTICS-->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!--/GOOGLE ANALYTICS-->
+</head>
+
+<body> 
+
+<!--PAGINA INDEX-->
+<div id="index" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="../images/logo_cmais.png"/>
+  
+      </h1>
+      
+        
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="container" data-role="content"> 
+    
+    <a href="../index.php" class="btn-voltar ico-left" data-direction="reverse"> Home</a>
+    <a href="../estradas.html" class="btn-voltar tipo ico-left" data-direction="reverse">Local</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p class="texto-zona w50 flRight texAligRight"><span class="laranja">Estradas</span></p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+    <!--MENU REGIÕES-->
+    <ul class="menuZonas">
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovia/anhanguera.html" class="" data-ajax="false">
+            <span class="local">Anhanguera</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovia/senna.html" class="" data-ajax="false">
+            <span class="local">Ayrton Senna</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovia/bandeirantes.html" class="" data-ajax="false">
+            <span class="local">Bandeirantes</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovia/carvalho.html" class="" data-ajax="false">
+            <span class="local">Carvalho Pinto</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovia/raposo.html" class="" data-ajax="false"  style="border-bottom:none;>
+            <span class="local">Raposo Tavares</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      
+      
+    </ul>
+    
+    <!--MENU REGIÕES-->
+    <!--PARTICIPE / MAPAS-->
+      <div id="btn-nav" align="center">
+        <a href="participe.html" id="btn-participe" class="flLeft" data-transition="slideup">Participe</a>
+        <a href="cmaisgoogle.html" id="btn-mapa" class="flRight"  data-transition="slideup">
+          <div class="w100">
+            <div class="cont-btn-mapa">
+               Mapas
+            </div>
+          </div>
+        </a>
+      </div>
+      <!--PARTICIPE / MAPAS-->
+ 
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA INDEX--> 
+
+
+</body>
+</html>

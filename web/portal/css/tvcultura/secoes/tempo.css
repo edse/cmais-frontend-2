@@ -1,0 +1,22 @@
+@import url("../geral.css");
+
+/**** PREVISAO TEMPO ****/
+.box-compartilhar {width:128px; background:transparent;}
+.btn-compartilhar p {color:#333;}
+.btn-compartilhar .face,
+.btn-compartilhar .print {display:none;}
+
+.box-previsao .topo { margin-bottom:10px; }
+.box-previsao img { width:122px; height:114px; float:left;  }
+.box-previsao .dado-tempo { width:178px; margin-left:10px; float:left;  }
+.box-previsao .dado-tempo p { font-weight:bold; }
+.box-previsao .dado-tempo .txt-12 { text-transform:uppercase; }
+.box-previsao .dado-tempo .max,
+.box-previsao .dado-tempo .min { width:60px; float:left; }
+.box-previsao .dado-tempo .max { margin-right:20px; }
+.box-previsao .dado-tempo a { width:100%; margin-top:20px; float:left; text-align:left; text-decoration:underline; }
+
+/* RACKS IE */
+.box-compartilhar {*width:200px;}
+/* /RACKS IE */
+/**** /PREVISAO TEMPO ****/

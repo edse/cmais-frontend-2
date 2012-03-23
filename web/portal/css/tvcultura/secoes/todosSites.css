@@ -1,0 +1,157 @@
+@import url("../geral.css");
+
+/******** TODOS OS SITES ********/
+/** busca site **/
+/*
+.busca-sites { margin-top:10px; }
+.busca-sites p { margin-right:10px; }
+.busca-sites input, 
+.busca-sites label, 
+.busca-sites form,
+.busca-sites p { float:left; margin-right:10px; }
+.busca-sites input { margin:5px 2px 0 0; }
+.busca-sites label { margin-bottom:0 }
+/** /busca site **/
+/*
+.todos-sites .letra { /*background:#fff; width:36px; height:29px; line-height:29px; border-bottom:2px solid #f5f5f5; border-right:2px solid #f5f5f5; text-align:center;*/ font-size:25px; font-weight:bold;  color:#333; margin-top:20px;  }
+/*
+.todos-sites .box-letra {margin:0; text-align:left; /*width:310px; float:left;*/}
+/*
+.todos-sites li { text-align:left; margin-top:10px; float:left; }
+.todos-sites a { font-size:14px; }
+.todos-sites a:hover,
+.todos-sites a.ativo { color:#ff6633; text-decoration:none; }
+.central {margin:0 20px;}
+/*
+.alfabeto { float: left; /*background:#f2f2f2;*/} 
+/*
+.alfabeto li:first-child { margin-left:8px; }
+.alfabeto li { float: left;    margin:5px 6px 5px 5px;    text-align: center; width: 26px; height:20px; }
+.alfabeto li a {    color: #FF6633; font-weight: bold; line-height:20px;}
+.alfabeto li.ativo,
+.alfabeto li:hover {background:#d1d1d1;}
+.alfabeto li.ativo a,
+.alfabeto li:hover a {color:#666;}
+*/
+/******** /TODOS OS SITES ********/
+/*NOVA VERSAO*/
+.todos-sites{
+	float: left;
+	position: relative;
+}
+.todos-sites .indice{
+	float: left;
+	width: 970px;
+}
+.todos-sites .indice ul{
+}
+.todos-sites .indice ul li{
+	float: left;
+	margin-left: 1px;
+}
+.todos-sites .indice ul li a{
+	float: left;
+	text-decoration: none;
+	width: 34px;
+	height: 34px;
+}
+.todos-sites .indice ul li a span{
+	color: #ff6633;
+	float: left;
+	font-weight: bold;
+	padding: 6px 0 0 12px;
+	text-transform: uppercase;
+}
+.todos-sites .indice ul li .semPrograma{
+	color: #666;
+}
+.todos-sites .indice ul li a:hover span{
+	color: #fff;
+}
+.todos-sites .indice ul li a:hover{
+	background: url(../../../images/bg-indiceOver.png) no-repeat;
+}
+.todos-sites .listaGeral{
+	float: left;
+	margin-top: 20px; 
+}
+.todos-sites .listaGeral .box-listaGeral{
+	float: left;
+	margin-bottom: 25px;
+	text-align: left;
+	width: 965px;
+}
+.todos-sites .listaGeral .box-listaGeral h3{
+	border-bottom: 1px solid #ff6633;
+	color: #333;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+}
+.todos-sites .listaGeral .box-listaGeral a.voltarTopo{
+	background: url(../../../images/ico-seta-voltar.png) bottom no-repeat;
+	float: right;
+	margin: 12px 5px 0 0;
+	overflow: visible;
+	text-indent: -9999px;
+	width: 16px;
+	height: 16px;
+}
+.todos-sites .listaGeral .box-listaGeral h3 a{
+	text-decoration: none;
+}
+.todos-sites .listaGeral .box-listaGeral ul{
+	float: left;
+	margin: 20px 0 0 5px;
+	width: 100%; 
+}
+.todos-sites .listaGeral .box-listaGeral ul li{
+	line-height: 22px;
+	z-index: -9999;
+	width:33%;
+	float:left;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a{
+	position: relative;
+	text-decoration: none;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a span{
+	background-color: #fff;
+	border: 1px solid #ff6633;
+	display: none;
+	position: absolute;
+	left: 123px;
+	top: -4px;
+	width: 200px;
+	z-index: 1;
+	height: auto;
+	padding: 5px 0
+}
+
+
+.todos-sites .listaGeral .box-listaGeral ul li a span img.logo{
+	float: left;
+	margin-left: 5px;
+	width: 193px;
+	height: 80px;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a span img.seta{
+	margin-left: 5px;
+	position: absolute;
+	left: -12px;
+	top: 4px;
+	width: 7px;
+	height: 14px;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a span p{
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a:hover{
+	color: #ff6633;
+}
+.todos-sites .listaGeral .box-listaGeral ul li a:hover span{
+	display: block;
+}

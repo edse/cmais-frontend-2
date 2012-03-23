@@ -1,0 +1,95 @@
+#menu-portal {
+    width: 700px !important;
+}
+#menu-portal .menu-aberto .abas li p, #menu-portal .menu-aberto .abas li a {
+    *width:150px;
+    *text-align:center;
+    
+}
+#menu-portal .menu-aberto .botoes a {
+    *float: left !important;
+    *margin-right: 40px;
+    *width: 300px;
+}
+#menu-portal .m-radio a {
+    *width: 65px;
+    *padding-bottom:13px;
+    *font-size: 12px;
+}
+.neutro{
+  *font-size: 12px;
+}
+#menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {
+    *background: url("/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;
+}
+
+#barra-portal {
+    *height: 30px;
+    *width: 1012px;
+}
+#menu-portal .m-tv a {
+    *width: 45px;
+    *padding-bottom:12px;
+}
+#menu-portal .m-aovivo a {
+    *width: 70px !important;
+}
+
+#menu-portal li a span {
+    *right: 5px;
+ }
+ 
+#menu-portal .m-noar a {
+    *width: 125px;
+    *padding-bottom:13px;
+    *font-size:12px
+}
+
+#menu-portal .m-noar li a {
+    *width: 280px;
+}
+
+#menu-portal .m-editorias a {
+    *width: 110px;
+    *padding-bottom:13px;
+}
+
+#menu-portal .editorias {
+    *height: 70px;
+    *font-size: 12px;
+}
+#menu-portal .editorias .abas li a {
+    *width: 90px;
+}
+
+#menu-portal .compartilhe a {
+    *height: 20px !important;
+}
+
+#menu-portal .m-compartilhe .filho{*width:153px !important;}
+
+#rodape-portal {
+    margin-top: -24px;
+}
+
+#menu-portal .menu-aberto .abas .neutro p {font-size: 14px !important; font-family: Arial, Helvetica, sans-serif !important;}
+
+#menu-portal .box-vjtambem p {font-family:Arial, Helvetica, sans-serif; margin:10px 10px 10px 10px;}
+
+#menu-portal .menu-aberto .abas {
+    padding-left: 0;
+}
+#menu-portal .padrao .lista li {
+    margin: 0 10px 0 10px;
+
+}
+#menu-portal .padrao .lista li {
+    *margin: 0 10px 0 10px;
+}
+body, p, td, li, ol{
+  /*color:#333333;*/
+}
+#menu-portal .box-agora {
+   font-family:arial
+}
+

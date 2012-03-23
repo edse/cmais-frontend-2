@@ -1,0 +1,31 @@
+@import url("../geral.css");
+
+/******** CONTATO ********/
+.tit-pagina {margin-bottom:10px;}
+.box-topo {margin-bottom:10px;}
+.contato {text-align:left;}
+.contato .titulos { margin-bottom:10px; }
+.contato p {clear:both;}
+.contato form { margin-top:10px; }
+.contato form .linha { float:left; margin-top:10px }
+.contato form  .linha label { text-transform:uppercase; font-size:12px; font-weight:bold; text-align:left; float:left;   }
+.contato form  .linha input { height:26px; line-height:26px; background:#fff; border:1px solid #bfbfbf; padding:0 2px; font-size:12px; color:#333;  }
+.contato form .t1,
+.contato form .t1 label,
+.contato form .t1 input { width:467px; margin-right:10px; }
+.contato form .t1,
+.contato form .t1 label,
+.contato form .t1 input { _width:447px; }
+.contato form .t2 label,
+.contato form .t2 input,
+.contato form .t2 { width:150px; }
+.contato form textarea,
+.contato form .t3 label,
+.contato form .t3 input,
+.contato form .t3 { width:634px; }
+.contato form textarea { height:209px; border:1px solid #bfbfbf; padding:2px; font-size:12px; color:#333; /*overflow-y:scroll;*/ }
+.contato form .txt-10 { float:right; }
+.contato form .t3 .enviar { background:#ff6633; color:#fff; text-transform:uppercase; height:22px; line-height:22px; border:none; float:right; font-weight:bold; width:137px; padding-bottom:2px; }
+/******** /CONTATO ********/
+
+

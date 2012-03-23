@@ -1,0 +1,39 @@
+@import url("../geral.css");
+
+body{
+	background:url(../../../images/capaPrograma/tvdigital/topo-tvdigital.png) repeat-x 0 39px;
+}
+#miolo {margin:20px 0; padding-bottom:30px;}
+#direita { margin-top:0; }
+.box-padrao {margin-top:20px;}
+#barra-site .redes{
+	float: right;
+	margin: 33px 0 0 0!important;
+}
+#horario{
+	float: left!important;
+	width: auto!important;
+	margin-left: -64px;
+}
+#horario p{
+	color: #333!important;
+	font-size: 14px!important;
+	font-weight: normal!important;
+	text-align: left!important;
+}
+/*
+#bg-tvDigital {z-index: 0; margin-top:-262px;}
+#bg-tvDigital {*margin-top:-282px; }
+#bg-topo { background:url(../../../images/capaPrograma/tvdigital/topo-tvdigital.png) repeat-x ; height:223px; z-index: 10; position:relative; margin-top: 47px; }
+#bg-topo { _background:url(../../../images/capaPrograma/tvdigital/topo-tvdigital.png);}
+.logo-subtitulo{
+	clear: both;
+	float: left;
+	margin-top: 15px;
+}
+#bg-tvDigital .redes{
+	margin: -18px 0 0 -110px;
+}
+*/
+
+.facebook { display:none; }

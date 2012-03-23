@@ -1,0 +1,32 @@
+@import url("../geral.css");
+
+/******* AO VIVO *******/
+.tit-pagina {margin-bottom:10px;}
+#direita {margin-top:20px;}
+.box-padrao .abas { _background:#333;}  
+.tema { background:#fff; padding:20px 10px 10px; margin-top:-20px; clear:both; } 
+.tema h3 { color:#ff6633; font-size:16px; margin-bottom:0;}      
+.tema p { font-weight:bold;}
+#menu-rodape .abas {height:34px;}
+#menu-rodape .abas li {height:32px;}
+#menu-rodape .abas .neutro {height:24px; margin-right:0;}
+#menu-rodape .carrossel {width:630px; margin:10px 0 0 7px;} 
+#menu-rodape .carrossel .jcarousel-item,
+#menu-rodape .blocos li { margin:10px 4px 0 0;}
+#menu-rodape .blocos,
+#menu-rodape .blocos ul { height:200px; margin-left:0;}
+#menu-rodape .carrossel .jcarousel-prev {right:26px;}
+#menu-rodape .carrossel .jcarousel-next {right:5px;}
+
+/* recentes */
+#menu-rodape .abas .recentes.ativo span,
+#menu-rodape .abas .recentes:hover span { left:42px; }
+/* /recentes */
+
+/* vistos*/
+#menu-rodape .abas .vistos.ativo span,
+#menu-rodape .abas .vistos:hover span { left:29px; }
+/* /vistos*/
+
+.contador span {font-size:11px !important;}
+/******* AO VIVO *******/

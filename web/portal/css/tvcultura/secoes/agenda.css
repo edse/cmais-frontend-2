@@ -1,0 +1,14 @@
+@import url("../geral.css");
+
+/** AGENDA **/
+.tit-pagina {margin-bottom:10px;}
+#direita {margin-top:-20px;}
+.grade .google-agenda { margin-left:10px; }
+.carrossel-menu li { width:280px; font-size:16px; font-weight:bold; height:20px; line-height:20px; margin:0 10px; text-align:center;}
+.titulos {text-transform:uppercase; text-align:left;}
+.carrossel-menu {height:20px;}
+.lista-calendario .box-compartilhar .addthis_button_compact span {margin-top:7px;}
+.lista-calendario .box-compartilhar .addthis_button_compact {margin-top:0;}
+
+#miolo {*margin-top:-30px;}
+/** /AGENDA **/

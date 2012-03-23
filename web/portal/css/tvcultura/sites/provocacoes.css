@@ -1,0 +1,31 @@
+@import url("../geral.css");
+
+/** PROVOCACOES **/
+#direita {margin-top:0}
+#barra-site { background:url(../../../images/capaPrograma/bg-provocacoes.png) no-repeat right 0; margin-top:0; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-provocacoes.gif);}
+.submenu-interna {width:126px;}
+#horario {margin-top:30px;}
+.box-padrao .chapeu {color:#ff6633;}
+#barra-site {margin-top:0; min-height:150px;}
+#barra-site h2 {margin-top:20px;}
+#barra-site .redes {margin-top:45px;}
+
+/* enforque */
+.box-topo,
+.box-topo .navegacao {margin-bottom:0;}
+.box-topo .navegacao {*margin-bottom:20px;}
+#lista-enforque .acessibilidade {position:absolute; right:130px; top:24px;}
+#lista-enforque {text-align:left;}
+#lista-enforque .assinatura {margin-bottom:0;}
+#lista-enforque .assinatura .btn-compartilhar {position: absolute; right: 0; top: 16px; }
+#lista-enforque li { margin-bottom:20px; }
+#lista-enforque li p {clear:both; }
+#lista-enforque li .titulos {width:640px;}
+#lista-enforque li .link {color:#ff6633;}
+/* enforque */
+
+#chamada {margin-bottom:0;}
+#barra-site #horario { margin-top:50px; }
+
+/** /PROVOCACOES **/

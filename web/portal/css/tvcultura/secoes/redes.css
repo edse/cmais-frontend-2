@@ -1,0 +1,28 @@
+@import url("../geral.css");
+
+/******** TODOS OS SITES ********/
+.carrossel {margin:0 0 20px 0; width:310px;}
+.carrossel .jcarousel-clip {width:270px !important; height:55px; margin-left:20px;}
+.carrossel ul li {border-bottom:none !important;}
+.carrossel .jcarousel-item { float:left; }
+.carrossel .jcarousel-item {width:55px; height:55px; margin:0 16px 0 0; padding:0;} 
+.carrossel .jcarousel-item a,
+.carrossel .jcarousel-item a img {width:55px; height:55px;}
+.carrossel .jcarousel-item a img {margin:0;}
+
+.carrossel .jcarousel-container .jcarousel-next,
+.carrossel .jcarousel-container .jcarousel-prev {background:red; width:20px; height:20px;}
+.carrossel .jcarousel-prev { background-position:0 -48px; left:0; top:18px;}
+.carrossel .jcarousel-next { background-position:0 -32px; right:0; top:18px;}
+
+.lista-calendario {margin-top:20px; padding-top:0;}
+.lista-calendario li {width:310px; margin:0 0 20px 0;}
+.lista-calendario .barra-grade p {margin-left:10px;}
+.lista-calendario .grade a {font-weight:normal; background:none; padding-left:0;}
+
+.conteudo .seguir {background:#ff6633; color:#fff; font-size:12px; font-weight:bold; width:67px; height:21px; line-height:21px; text-transform:uppercase; float:right; text-align:center; display:block; margin-bottom:10px;}
+
+.lista-redes {width:310px;}
+.lista-redes li {border-bottom:none; float:left; width:32px; margin-right:10px; margin-bottom:0; padding-bottom:0;}
+
+/******** /TODOS OS SITES ********/

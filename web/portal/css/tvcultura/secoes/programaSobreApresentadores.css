@@ -1,0 +1,14 @@
+@import url("../geral.css");
+
+/* PROGRAMA SOBRE APRESENTADORES */
+#miolo { float:left; margin-top:10px;}
+#miolo {*margin-top:-20px;}
+.box-interna .chapeu,
+.box-interna .texto {clear:both;}
+.box-interna .chapeu {height:12px; line-height:12px;}
+.box-interna .texto {margin-top:20px; float:left; }
+.box-interna .tit-pagina  { margin-top:10px;}
+
+.carrossel li {width:200px; float:left; margin-right:10px; border-bottom:none;}
+#direita { margin-top:-20px;}
+/* /PROGRAMA SOBRE APRESENTADORES */

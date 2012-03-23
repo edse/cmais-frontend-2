@@ -1,0 +1,16 @@
+@import url("../geral.css");
+
+
+/** PAG NOTICIA **/
+.menu-interna a { color:#ff6633; }
+.menu-interna li:hover { color:#fff; background:#ff6633; }
+.menu-interna li span { background-position:0 -24px;}
+
+.box-listao,
+.filtrar  {margin-top:0;}
+.paginacao {margin-top:20px;}
+.paginacao {_width:636px;}
+
+.box-listao a,
+.box-listao p {clear:both;}
+/** /PAG NOTICIA **/

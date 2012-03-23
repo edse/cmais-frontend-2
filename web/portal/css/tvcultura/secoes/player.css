@@ -1,0 +1,73 @@
+/** PLAYER **/
+li,
+div {font-family:arial !important;}
+div.jp-playlist,
+div.jp-interface {background:#fff;}
+div.jp-audio, 
+div.jp-video { color:#333;}
+div.jp-playlist,
+div.jp-interface {border-color:#ccc;}
+a.jp-play,
+a.jp-play:hover,
+a.jp-pause,
+a.jp-pause:hover,
+a.jp-stop,
+a.jp-stop:hover,
+a.jp-previous,
+a.jp-previous:hover,
+a.jp-next,
+a.jp-next:hover,
+div.jp-seek-bar,
+div.jp-play-bar,
+a.jp-mute,
+a.jp-mute:hover,
+a.jp-unmute,
+a.jp-unmute:hover,
+div.jp-volume-bar,
+div.jp-volume-bar-value,
+div.jp-video div.jp-video-play,
+div.jp-video div.jp-video-play:hover {background-image:url(../../../images/jplayer.png);}
+div.jp-seeking-bg {	background-image:url(../../../images/pbar-ani.gif);}
+div.jp-audio {width:310px;}
+div.jp-audio div.jp-type-single a.jp-play,
+div.jp-audio div.jp-type-single a.jp-pause {top:10px; left:10px;}
+div.jp-audio div.jp-type-single a.jp-stop {left:58px; top:16px;}
+div.jp-audio div.jp-type-single div.jp-progress {left:96px; top:22px;}
+div.jp-audio div.jp-type-single a.jp-mute, 
+div.jp-audio div.jp-type-single a.jp-unmute {left:225px; top:22px;}
+div.jp-audio div.jp-type-single div.jp-volume-bar {left:254px; top:27px;}
+div.jp-audio div.jp-type-single div.jp-progress {width:120px;}
+div.jp-audio div.jp-type-single div.jp-current-time, 
+div.jp-audio div.jp-type-single div.jp-duration {left:96px; top:38px; width:118px;}
+div.jp-audio div.jp-type-single div.jp-interface {height:55px;}
+div.jp-playlist ul {padding-left:13px;}	
+div.jp-type-single div.jp-playlist li {padding-left:0;}
+/** /PLAYER **/
+
+/** PLAYLIST **/
+.playlist div.jp-audio div.jp-type-playlist a.jp-play, 
+.playlist div.jp-audio div.jp-type-playlist a.jp-pause { top:10px; left:44px;}
+.playlist div.jp-audio div.jp-type-playlist a.jp-previous {left:17px; top:16px;}
+.playlist div.jp-audio div.jp-type-playlist a.jp-next {left:84px; top:16px;}
+.playlist div.jp-audio div.jp-type-playlist a.jp-stop {left:121px; top:16px;}
+.playlist div.jp-audio div.jp-type-playlist a.jp-mute, 
+.playlist div.jp-audio div.jp-type-playlist a.jp-unmute {left:166px; top:22px;}
+.playlist div.jp-audio div.jp-type-playlist div.jp-volume-bar {left:193px; top:27px;}
+.playlist div.jp-volume-bar {width:93px;}
+.playlist div.jp-audio div.jp-type-playlist div.jp-progress {top:56px; left:20px; width:270px;}
+.playlist div.jp-audio div.jp-type-playlist div.jp-interface {height:94px;}
+.playlist div.jp-audio div.jp-type-playlist div.jp-current-time, 
+.playlist div.jp-audio div.jp-type-playlist div.jp-duration {top:72px; left:20px; width:270px;}
+.playlist div.jp-type-playlist div.jp-playlist li.jp-playlist-current {list-style:none; padding-left:0;}
+.playlist div.jp-type-playlist div.jp-playlist a:hover,
+.playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#ff6633;}
+.playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current {font-weight:bold;}
+.playlist div.jp-playlist ul {background:#f5f5f5; padding:10px 20px 20px; text-align:left;}
+.playlist div.jp-type-playlist div.jp-playlist li,
+.playlist div.jp-type-playlist div.jp-playlist li.jp-playlist-last {padding-left:0;}
+.playlist .jp-current-time { text-align:left;}
+/** /PLAYLIST **/
+	
+
+
+

@@ -1,0 +1,83 @@
+10
+
+dir
+3982
+http://astolfo-frontend.googlecode.com/svn/trunk/lib/vendor/symfony/test/functional/fixtures
+http://astolfo-frontend.googlecode.com/svn
+
+
+
+2011-05-08T17:28:32.575798Z
+9
+emerson.estrella@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b1060bd5-94b8-ef81-2c3c-0207244ee27e
+
+log
+dir
+
+plugins
+dir
+
+apps
+dir
+
+cache
+dir
+
+symfony
+file
+
+
+
+
+2011-05-09T19:58:08.000000Z
+36073c1914105fb3bbb4f1ce4965b4d2
+2011-05-08T17:28:32.575798Z
+9
+emerson.estrella@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+482
+
+config
+dir
+
+lib
+dir
+
+data
+dir
+

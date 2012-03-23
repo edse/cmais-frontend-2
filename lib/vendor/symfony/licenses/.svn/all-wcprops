@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10/trunk/lib/vendor/symfony/licenses
+END
+LICENSE.ICU
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/10/trunk/lib/vendor/symfony/licenses/LICENSE.ICU
+END
+LICENSE.prado
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/10/trunk/lib/vendor/symfony/licenses/LICENSE.prado
+END
+LICENSE.swiftmailer
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/10/trunk/lib/vendor/symfony/licenses/LICENSE.swiftmailer
+END
+LICENSE.lime
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/10/trunk/lib/vendor/symfony/licenses/LICENSE.lime
+END

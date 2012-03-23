@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfConfigPlugin/modules/sfConfigPlugin/config/dirmyconfig
+END
+myconfig.yml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/plugins/sfConfigPlugin/modules/sfConfigPlugin/config/dirmyconfig/myconfig.yml
+END

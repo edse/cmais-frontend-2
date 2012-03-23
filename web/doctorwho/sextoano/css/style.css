@@ -1,0 +1,198 @@
+/* ##########################################################
+RESET
+Eric Meyers reset reloaded
+http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+########################################################## */
+#rodape-portal {
+    margin-top: 0 !important;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+body { line-height: 1; color: black; background: white; }
+ol, ul { list-style: none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+
+/* ##########################################################
+BASE STYLES
+########################################################## */
+
+body { background:#fff; color: #fff; font-family: Arial, Helvetica sans-serif; font-size: 1em; line-height: 1.25em; }
+
+/* Links */
+a { text-decoration: none; color: #fff; font-weight: normal; }
+a:visited {	color: #fff; }
+a:hover { color: #F7D306; }
+a:active { color: #fff; }
+
+
+/* Font Sizes */
+h1 { color: #F7D306; font-size:0.875em; line-height:1em; font-weight:bold; text-transform: uppercase; }
+h2 { color: #F7D306; font-size: 0.75em; text-transform: uppercase; }
+h3 { color: #F7D306; font-size: 0.75em; font-weight: normal; }
+
+#content p,
+#content ul,
+#content ol,
+#content dl,
+#content cite  { font-size:0.825em; }
+
+/* Font Styles */
+h1, h2, h3, h4, h5, h6 { margin: 0 0 8px 0; line-height: 1.25em; }
+#content p,
+#content ul,
+#content ol,
+#content dl,
+#content blockquote { margin:10px 0; line-height: 1.25em; }
+
+#content ul { list-style:disc; padding: 0 0 0 18px; }
+#content ul li { margin:8px 0; }
+
+
+/* ##########################################################
+NON SEMANTIC HELPER CLASSES
+########################################################## */
+
+/* Clearing */
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+/* Image Replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide only visually, but have it available for screenreaders 
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden { position: absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* ##########################################################
+TEXT HIGHLIGHTING
+########################################################## */
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 
+   Also: hot pink. */
+::-moz-selection{ background: #F7D306; color:#fff; text-shadow: none; }
+::selection { background:#F7D306; color:#fff; text-shadow: none; } 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #F7D306; } 
+
+
+
+/* ##########################################################
+LAYOUT
+########################################################## */
+
+body { background: #000 url(../img/bg.jpg) no-repeat top center; }
+
+.doc { width:1002px; margin:auto; }
+
+/* Header */
+#header h1 { padding: 0; margin:0; }
+#header a { width: 1002px; height: 324px; background: url(../img/header/header.jpg) no-repeat left top; }
+
+
+/* Nav */
+#nav { position: relative; }
+#nav ul { width: 938px; position: absolute; top: -38px; padding: 1px 24px 1px 41px; border: 1px solid #F7D306; border-width: 1px 0;}
+#nav li { float: left; padding: 0 10px; background: url(../img/nav/divider.gif) no-repeat left center; }
+#nav a { display: block; padding: 8px 0 6px 0; font-size: 0.75em; text-transform: uppercase; }
+#nav li.highlight a { color:#F7D306; } 
+#nav li.facebook a { padding-right:36px; background: url(../img/face.png) no-repeat left center; white-space: nowrap;display: block;height: 21px; }
+
+
+
+/* Main */
+#main {  }
+
+
+/* Content */
+#content { min-height: 626px; padding: 12px; }
+.ie6 #content { height:626px; }
+
+#contentFull { width:930px; margin:12px 0 0 24px; } /*907/35*/
+.ie6 #contentFull,
+.ie7 #contentFull { margin-top:24px; }
+#contentLeft { float: left; width: 290px; margin:12px 0 0 24px; } /*274/35*/
+.ie6 #contentLeft { margin-left:12px; }
+#contentRight { float: right; width: 622px; margin:12px 24px 0 0; } /*622/27*/
+.ie6 #contentRight { margin-right:12px; }
+
+/* Content Box */
+#content .box { padding: 10px 8px; background: url(../img/main/content/box_bg.png) repeat left top; }
+#content .box img { display: block; border:2px solid #F7D306; }
+#content .box p { font-size: 0.725em; line-height: 1.37em; color: #fff; }
+
+#content.grid .box { float: left; width:286px; margin: 12px 12px; }
+.ie6 #content.grid .box { width:276px;  margin: 6px 6px; }
+
+/* Inset image */
+#content .inset { float:right; margin: 0 0 20px 20px; }
+#contentRight .inset { margin-bottom:10px; }
+
+/* Content Titles*/
+#contentRight h1 { width: 250px; padding: 0 0 4px 0; border-bottom:1px solid #F7D306; }
+#contentRight h1 span { text-transform: capitalize; color:#F7D306; }
+#contentLeft h2 { padding: 0 0 4px 0; border-bottom:1px solid #F7D306; font-size:0.875em; line-height:1.25em; font-weight:bold; }
+#contentLeft h3 { padding: 0 0 4px 0; margin-top: 14px; border-bottom:1px solid #F7D306; }
+
+/* Content Btn */
+#content .box .btn { position: relative; left:-4px; height:33px; margin: 0; font-size: 0.75em; }
+#content .box .btn a { display: block; float: left; height: 33px; width: 100%; margin-right: 6px; padding-right: 8px; padding-right: 8px; background: transparent url(../img/main/content/btn/right.png) no-repeat scroll top right; color: #fff; text-decoration: none; text-transform: uppercase; }
+#content .box .btn a:hover { color: #F7D306; }
+#content .box .btn a span { display: block; padding: 5px 10px 5px 24px; background: transparent url(../img/main/content/btn/left.png) no-repeat; line-height:2em; color: #fff; }
+
+/* Content list */
+#content ul.list { list-style:none; padding: 0; margin: 0; font-size: 0.75em; line-height: 1.37em; text-transform: uppercase; }
+#content ul.list li { width: 274px; margin: 0; }
+#content ul.list li a { display: block; color: #fff; }
+#content ul.list li a span { display: block; color: #fff; }
+#content ul.list li.highlight a { color: #F7D306 !important; }
+#content ul.list li.highlight a span { color: #F7D306 !important; }
+#content ul.list li a span.name { float: left; width: 137px; }
+#content ul.list li a span.role { float: right; width: 137px; text-transform:capitalize; }
+#content ul.list li span.comingsoon { color: #00ACEE; }
+
+/* Content Image Nav*/
+#content .imgNav { clear: both; border-top:1px solid #F7D306; }
+#content .imgNav ul { list-style: none; margin: 0; padding: 16px 0 0 0; }
+#content .imgNav ul li { float:left; margin: 0 27px 0 0; }
+#content .imgNav ul li.last { margin: 0; }
+
+/* Photo Gallery*/
+#content.photoGallery { padding:17px 43px; }
+#content.photoGallery h1 { padding: 8px; background: url(../img/main/content/box_bg.png) repeat left top; border-bottom:1px solid #F7D306; }
+
+/* Wallpapers list */
+#content .box ul.wallpaper_sizes { list-style: none; width: 150px; padding: 0; margin: 10px auto 0 auto; }
+#content .box ul.wallpaper_sizes li { float: left; width: 75px; font-size: 0.75em; text-align: center; margin: 4px 0; }
+
+/* Footer */
+#footer { border-top: 1px solid #F7D306; }
+#footerContent { padding: 8px 24px; color: #fff; }
+#footerContent .legal { float: left; padding: 14px 0 0 0; font-size: 0.675em; line-height: 1em; }
+#footerContent ul { float: left; padding: 14px 0 0 0; margin: 0 0 0 10px; font-size: 0.675em; line-height: 1em; } 
+#footerContent ul li { float: left; border-left: 1px solid #fff; } 
+#footerContent ul li a { float: left; display: block; padding: 0 10px; } 
+#footerContent .logo { float: right; width: 48px; height: 36px; background: url(../img/footer/logo.jpg) no-repeat left center; }

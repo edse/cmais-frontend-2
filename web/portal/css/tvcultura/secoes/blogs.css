@@ -1,0 +1,10 @@
+@import url("../geral.css");
+
+/******* BLOGS *******/
+#esquerda .blocos { height:966px; }
+#esquerda .blocos .paginacao { width:638px; } 
+#esquerda .blocos .lista-blogs { margin-top:0; width:640px; }
+
+#direita { margin-top:-20px; }
+#direita { _margin-left:0; }
+/******* BLOGS *******/

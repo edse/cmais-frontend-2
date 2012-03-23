@@ -1,0 +1,30 @@
+<!--MAP DATA 72-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map72>
+
+<info>6,10,there is no need to return to the museum security area,0</info>
+
+<decal>4,1,42</decal>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,0,0,0,1,1,654,1,1,0,0,0</zrow2>
+<zrow3>0,0,0,0,1,1,1,1,1,0,0,0</zrow3>
+<zrow4>0,0,0,0,215,1,1,1,1,0,0,0</zrow4>
+<zrow5>0,0,0,0,1,1,1,1,1,0,0,0</zrow5>
+<zrow6>0,0,0,0,215,1,1,1,1,0,0,0</zrow6>
+<zrow7>0,0,0,0,1,1,1,1,1,0,0,0</zrow7>
+<zrow8>0,0,0,0,215,1,1,1,1,0,0,0</zrow8>
+<zrow9>0,0,0,0,1,1,1,1,1,0,0,0</zrow9>
+<zrow10>0,0,0,0,215,1,1,1,1,0,0,0</zrow10>
+<zrow11>0,0,0,0,1,1,653,1,1,0,0,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "Security reports that a police box has appeared in the museum?"</introtext>
+
+<info>5,3,Extraterrestrial metal - Milled by unknown machinery - Found in Italy - 2001.,0</info>
+<info>5,5,Fragment of extraterrestrial robot - super durable metal - found nevada usa - 1997.,0</info>
+<info>5,7,Cyborg specimen - Incomplete. Recovered from underground sewer - 1978.,0</info>
+<info>5,9,Fragment of interstellar craft - origin unknown - discovered gloustershire uk - 1964.,0</info>
+
+</map72>

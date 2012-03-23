@@ -1,0 +1,13 @@
+@import url("../geral.css");
+
+/** GRADE **/
+.menu-calendario {margin:10px 0 20px 0;}
+.lista-calendario .grade p  {margin:0 10px 10px 10px;}
+#estilo-menu .abas .decoracao { left:115px;}  
+#estilo-menu .abas li { width:242px; margin-right:0;}  
+#estilo-menu .abas li.last { float:right;}  
+.abas a { text-transform:none; }
+.carrossel-menu {height:20px;}
+.carrossel-menu li { width:280px; font-size:16px; font-weight:bold; height:20px; line-height:20px; margin:0 10px; text-align:center;}
+.conteudo-data { width:300px; float:left; text-align:left;}
+/** /GRADE **/

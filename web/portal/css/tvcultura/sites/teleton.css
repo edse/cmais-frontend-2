@@ -1,0 +1,56 @@
+@import url("../geral.css");
+
+/* TELE TON*/
+body { background:#000 url(../../../images/capaPrograma/teleton/bkg.jpg) no-repeat center 0;}
+#conteudo-pagina {
+	width:970px; 
+	margin-left:33px;
+	margin-top:37px;
+	padding:10px 10px 100px 10px;
+	overflow:hidden;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius: 20px 107px 0 0;
+	max-height:1547px;
+	
+}
+.comentario-fb { max-height:864px; overflow-x:hidden;} 
+
+#rodape-portal {margin-top:-25px;}
+h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
+#barra-site {margin-top:0; height:186px;}
+#barra-site .redes,
+.box-publicidade,
+.facebook,
+#chamada,
+#menuFloat {display:none !important; }
+.box-interna h3 {color:#02909a;}
+.assinatura {margin-top:0;}
+.assinatura .sup {height:1px; padding-bottom:0; border-color: #02909a;}
+.box-interna .cp-sembg {top:0; }
+.cp-sembg .compartilhar {border-color:#02909a;}
+.assinatura .print {/*display:none*/}
+
+.box-interna .texto {margin-top:20px; float:left;}
+#direita h3 { color:#02909a; margin-bottom: 20px; margin-top: 45px; text-align: left;}
+.carrossel-videos {margin-bottom:20px;}
+.carrossel-videos .conteudo {height:206px; overflow:hidden; margin-bottom:0;}
+
+#live {margin-top:20px; float:left;}
+
+#canal {margin-bottom:20px;}
+#canal table.gadget {background:#fff; border:none; padding:0; margin:0;}
+#canal iframe html #vs { background:#fff !important; border:none;}
+.container {*height:470px; *overflow:hidden;}
+.orbit-bullets {*height:70px; *overflow: hidden;}
+
+.box-topo {display:none;}
+
+#barra-site h2 a {color:#000;}
+
+#twitter ul li {text-align:left;}
+#twitter ul { overflow-y: scroll; !important;}
+#twitter .topo-fb h3 {margin:0;}
+#twitter .respiro { display: none; }
+#twitter .topo-fb {text-align:left;}
+/* /TELE TON */

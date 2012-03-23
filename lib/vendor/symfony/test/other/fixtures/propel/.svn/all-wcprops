@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/propel
+END
+propel.ini
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/propel/propel.ini
+END
+schema.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/propel/schema.yml
+END
+Category.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/propel/Category.php
+END
+databases.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/other/fixtures/propel/databases.yml
+END

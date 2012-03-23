@@ -1,0 +1,12 @@
+@import "../geral.css";
+#miolo {
+    float: left;
+    margin-top: 10px;
+}
+.box-publicidade {
+    margin-top: 0;
+}
+.media {
+    margin-bottom: 20px;
+    width: 640px;
+}

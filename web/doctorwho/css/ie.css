@@ -1,0 +1,69 @@
+#topo-portal{*position: fixed;}
+#menu-portal .m-radio a {*width: 65px;*padding-bottom:13px;*font-size: 12px;}
+#menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {*background: url("/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;}
+
+#barra-portal {*height: 30px;*width: 1012px;}
+
+#menu-portal .m-tv a {*width: 45px;*padding-bottom:13px;}
+#menu-portal .m-aovivo a {*width: 70px !important;}
+
+#menu-portal .m-noar li a {*width: 280px;}
+#menu-portal .m-noar a {*width: 125px;*padding-bottom:13px;*font-size:12px}
+
+#menu-portal .m-editorias a {*width: 110px;*padding-bottom:13px;}
+
+#menu-portal .m-compartilhe .filho{*width:153px !important;}
+
+#menu-portal .editorias {*height: 70px;*font-size: 12px;}
+#menu-portal .editorias .abas li a {*width: 90px;}
+
+#menu-portal .compartilhe a {*height: 20px !important;}
+
+#menu-portal .menu-aberto .abas .neutro p {font-size: 14px !important; font-family: Arial, Helvetica, sans-serif !important; *width:200px;}
+
+#menu-portal .box-vjtambem p {font-family:Arial, Helvetica, sans-serif;}
+#menu-portal .padrao .lista a {*height: 5px;margin: 8px 0px 0px 15px;padding:0px;}
+#menu-portal .menu-aberto .abas {padding-left: 0;}
+  
+#menu-portal .m-tv .padrao {*margin-left: -139px;}
+#menu-portal .m-radio .padrao {*margin-left: -188px;}
+
+
+
+
+
+#menu-portal .menu-aberto .abas li a {*text-align:center;}
+#menu-portal .menu-aberto .abas .tvcultura,
+#menu-portal .menu-aberto .abas .univesptv, 
+#menu-portal .menu-aberto .abas .multicultura {*width:100px;*float: left !important;}
+#menu-portal .menu-aberto .abas .tvrtb {*width:127px;*float: left !important;}
+#menu-portal .menu-aberto .abas-conteudo .botoes{*float:left; *width:980px}
+#menu-portal .menu-aberto .abas-conteudo .botoes a{*float:left; *width:210px}
+#menu-portal .menu-aberto {*width: 1000px;}
+
+#menu-portal .menu-aberto .abas .m_radio_am, 
+#menu-portal .menu-aberto .abas .radio-fm,
+#menu-portal .menu-aberto .abas .radio-rtb{*width:150px;*float: left !important;*margin-left: 20px;}
+#menu-portal .menu-aberto .abas .radio-cocorico{*width:150px;*float: left !important;*margin-left: 20px;}
+#menu-portal .menu-aberto .abas .tvcultura.ativo span, #menu-portal .menu-aberto .abas .tvcultura:hover span {*left: 45%;}
+#menu-portal li a span {*right: 5px;}
+
+#menu-portal .box-vjtambem p {color:#333;}
+#menu-portal .box-nperca .hora{color:#333;}
+
+#rodape-portal {margin-top: -24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

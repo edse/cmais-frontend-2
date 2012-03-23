@@ -1,0 +1,15 @@
+/** SOCRATES **/
+.submenu-interna {width:106px;}
+.submenu-interna li a { margin-left:10px;}
+.chapeu {color:#ff6633;}
+.bg-site {height:100px; background:url(../../../images/capaPrograma/socrates/bg-socrates.gif) repeat-x; position:relative; top:48px; z-index: 0; overflow:hidden; clear:both;}
+#capa-site {margin-top:-62px !important;}
+#capa-site {*margin-top:-110px !important;}
+#miolo {margin-top:28px;}
+#barra-site {height:90px;}
+#barra-site h2 {margin-top:25px;  font-size:25px; color:#fff; text-transform:uppercase; }
+.bg-site  {_margin-top:-49px !important;}
+.facebook {padding:0 !important;}
+.bg-chamada {width:100%; background:#00609d; position:relative; top:48px; overflow:hidden;}
+#chamada { width:970px; margin:0 auto; float:none; margin-top:20px; margin-bottom:20px;}
+/** /SOCRATES **/

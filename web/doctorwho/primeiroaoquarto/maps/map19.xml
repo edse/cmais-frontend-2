@@ -1,0 +1,36 @@
+<!--MAP DATA 1-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map19>
+
+
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,2,2,2,1,1,1,1,1,200,200,0</zrow2>
+<zrow3>0,2,1,1,1,1,1,1,1,1,200,0</zrow3>
+<zrow4>0,2,1,1,1,1,1,1,406,1,200,0</zrow4>
+<zrow5>0,208,1,1,1,2,2,1,1,1,1,0</zrow5>
+<zrow6>0,0,1,1,1,2,2,1,1,1,137,0</zrow6>
+<zrow7>0,208,406,1,1,2,2,1,1,1,1,0</zrow7>
+<zrow8>0,0,1,1,1,2,2,1,1,1,1,0</zrow8>
+<zrow9>0,1,1,1,1,2,2,2,2,2,2,0</zrow9>
+<zrow10>0,1,1,1,1,1,200,200,2,2,2,0</zrow10>
+<zrow11>0,1,138,1,1,1,200,200,2,2,2,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<decal>4,1,4</decal>
+<decal>5,1,4</decal>
+<decal>6,1,4</decal>
+<decal>7,1,4</decal>
+<decal>8,1,4</decal>
+
+<info>2,4,DATA: Anti-gravity device report,scanimages/anti-grav.jpg</info>
+<info>2,5,DATA: Anti-gravity device report,scanimages/anti-grav.jpg</info>
+<info>2,6,LOG: Research assitants have been ordered to stop 'project hoverboard'. This artefact is not a toy!,0</info>
+<info>2,7,LOG: Research assitants have been ordered to stop 'project hoverboard'. This artefact is not a toy!,0</info>
+
+<introtext>SCIENTIST: "Someone's coming - quick - put the hoverboard away!"</introtext>
+
+</map19>

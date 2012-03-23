@@ -1,0 +1,12 @@
+@import url("geral.css");
+
+/** RADIO FM **/
+#esquerda { margin-top:0;}
+#direita {margin-top:-20px;}
+#datepicker .ui-widget-content .ui-state-active, 
+#datepicker .ui-state-hover,
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, #datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#005dab;}
+/** /RADIO FM  **/

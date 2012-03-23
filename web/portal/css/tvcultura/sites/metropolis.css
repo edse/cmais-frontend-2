@@ -1,0 +1,10 @@
+@import url("../geral.css");
+
+/** METROPOLIS **/
+#barra-site { background:url(../../../images/capaPrograma/bg-metropolis.png) no-repeat 620px 1px; margin-top:0; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-metropolis.gif);}
+.submenu-interna {width:116px;}
+#barra-site h2 { margin-top:20px; }
+#barra-site {margin-top:0;} 
+#chamada {margin-bottom:0;}
+/** /METROPOLIS **/

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+  <channel>
+    <title>78RPM - Cultura Brasil</title> 
+    <link>http://www.culturabrasil.com.br/programas/78rpm.pod</link>
+    <description>78RPM</description>
+    <generator>Cultura Brasil</generator>
+    <language>pt-br</language>
+
+    <copyright>Cultura Brasil</copyright>
+    <lastBuildDate>Wed, 30 Nov 2011 15:45:22 -0300</lastBuildDate>
+    <pubDate>Wed, 30 Nov 2011 15:45:22 -0300</pubDate>
+    <ttl>60</ttl>
+
+    <image>
+      <url>http://www.culturabrasil.com.br/images/logo.jpg</url>
+      <title>Cultura Brasil</title>
+      <link>http://www.culturabrasil.com.br</link>
+      <width>144</width>
+      <height>144</height>
+      <description></description>
+    </image>
+
+    <itunes:author>Cultura Brasil</itunes:author>
+    <itunes:image href="http://www.culturabrasil.com.br/images/logo.jpg" />
+    <itunes:subtitle>78RPM</itunes:subtitle>
+    <itunes:summary>78RPM</itunes:summary>
+    <itunes:keywords>78RPM cultura brasil radio</itunes:keywords>
+    <itunes:block>No</itunes:block>
+
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://www.culturabrasil.com.br/programas/78rpm.pod" />
+    <media:copyright>Cultura Brasil</media:copyright>
+    <media:thumbnail url="http://www.culturabrasil.com.br/images/logo.jpg" />
+    <media:keywords>cultura brasil</media:keywords>
+    <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">International/Brazilian</media:category>
+
+    <itunes:owner>
+      <itunes:name>Cultura Brasil</itunes:name>
+    </itunes:owner>
+
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="International">
+      <itunes:category text="Brazilian" />
+    </itunes:category>
+    
+    <feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly>
+    
+    <item>
+      <title><![CDATA[Blah blah blah blah]]></title>
+      <description><![CDATA[Poeta, militante, compositor e ator, teve suas principais cria&ccedil;&otilde;es gravadas por Orlando Silva, Ataulfo Alves e Carmen Miranda. Edi&ccedil;&atilde;o inclui 'Atire a primeira pedra'e 'Que saudades da Am&eacute;lia'.]]></description>
+      <link>http://www.culturabrasil.com.br/programas/78rpm/arquivo/mario-lago-100-anos-2</link>
+      <enclosure url="http://www.culturabrasil.com.br/midia/audio/default/78RPM166_1_1321645335.mp3" length="56610380" type="audio/mpeg" />
+      <author>Eduardo Weber</author>
+      <guid isPermaLink="false">http://www.culturabrasil.com.br/programas/78rpm/arquivo/mario-lago-100-anos-2</guid>
+      <pubDate>Mon, 21 Nov 2011 01:00:00 -0300</pubDate>
+      <category>International</category>
+      <itunes:author></itunes:author>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary></itunes:summary>
+      
+      <media:content url="http://www.culturabrasil.com.br/midia/audio/default/78RPM166_2_1321645342.mp3" fileSize="53677978" type="audio/mpeg" />
+      
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>cultura brasil</itunes:keywords>
+      <media:credit role="author">Cultura Brasil</media:credit>
+      <media:rating>nonadult</media:rating>
+      <media:description type="plain">Cultura Brasil</media:description>
+    </item>
+
+    <item>
+      <title><![CDATA[Blah blah blah blah (2)]]></title>
+      <description><![CDATA[Samba, choro, valsa e marcha engrandecem o Brasil, suas cidades e sua cultura. De 'Aquarela do Brasil' a 'Adeus Am&eacute;rica' e 'Brasil pandeiro'.]]></description>
+      <link>http://www.culturabrasil.com.br/programas/78rpm/arquivo/exaltacao-3</link>
+      <enclosure url="http://www.culturabrasil.com.br/midia/audio/default/78RPM164_1_1320675404.mp3" length="55163405" type="audio/mpeg" />
+      <author>Eduardo Weber</author>
+      <guid isPermaLink="false">http://www.culturabrasil.com.br/programas/78rpm/arquivo/exaltacao-3</guid>
+      <pubDate>Mon,  7 Nov 2011 12:20:00 -0300</pubDate>
+      <category>International</category>
+      <itunes:author></itunes:author>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary></itunes:summary>
+      
+      <media:content url="http://www.culturabrasil.com.br/midia/audio/default/Onde_o_ceu_azul_e_mais_az_1319230986.mp3" fileSize="5508701" type="audio/mpeg" />
+      
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>cultura brasil</itunes:keywords>
+      <media:credit role="author">Cultura Brasil</media:credit>
+      <media:rating>nonadult</media:rating>
+      <media:description type="plain">Cultura Brasil</media:description>
+    </item>
+
+  </channel>
+</rss>

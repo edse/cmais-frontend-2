@@ -1,0 +1,7 @@
+@import url("../geral.css");
+
+/** JORNAL DA CULTURA **/
+#capa-site { background:url(../../../images/capaPrograma/bg-jornalCultura.png) no-repeat 345px -4px; margin-top:0; padding-top:20px; }
+#capa-site {_background-image:url(../../../images/capaPrograma/bg-jornalCultura.gif);}
+.submenu-interna {width:116px;}
+/** /JORNAL DA CULTURA **/

@@ -1,0 +1,439 @@
+body {background:#ffffff;}
+#capa-site {background:none;}
+#capa-site { *margin-top:-48px; }
+#esquerda { /*margin-top:-20px;*/}
+.submenu-interna {width:120px;}
+#barra-site h2 {margin-top:10px;}
+.topo-programa .controle { background:url(/portal/images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
+.menu-interna .m-controle { padding:0 5px 0 22px !important;}
+.menu-interna .m-controle span  { background:url(/portal/images/btn-play.png) no-repeat -2px -48px; width:12px; height:12px; top:5px; left:5px;}
+.menu-interna .m-controle span { _background-image:url(/portal/images/btn-play.gif) no-repeat;}
+.menu-interna .m-controle:hover span,
+.menu-interna .m-controle.ativo span {background-position:-2px -60px;}
+
+.menu-interna li { background:#e8e8e8; }
+
+.box-padrao .topo span,
+.box-padrao .claro span {background-position: -120px 0;}
+
+#agenda .abas-conteudo li.ativo .hora a,
+#agenda .abas-conteudo li:hover .hora a,
+#agenda .abas li.ativo a,
+.box-padrao .claro .capa-titulo,
+.box-padrao .capa-titulo,
+#agenda .abas li:hover a,
+.contato form .linha .enviar,
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover,
+#datepicker .ui-widget-content .ui-state-hover,
+#datepicker .ui-widget-header .ui-state-hover,
+#datepicker .ui-state-focus,
+#datepicker .ui-widget-content .ui-state-focus,
+#datepicker .ui-widget-header .ui-state-focus {background:#005dab;}
+
+#agenda .abas li.ativo .decoracao,
+#agenda .abas li:hover .decoracao {background-position:0 -42px;}
+.box-interna.encontro{
+  background-color:#f8f6f7;
+  padding:20px; 
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom:10px;
+}
+
+.col-esq.encontro{
+  width: 260px;
+  margin-top: 0px !important; 
+}
+.edicoes{
+  background-color: #fff;
+  overflow: auto;
+  padding:10px 0px 0px 0px;
+  margin:15px 0px 0px 0px;
+  height:337px;
+  overflow: auto;
+}
+
+.audio .playlist div.jp-playlist.encontro ul{
+    background-color: #FFFFFF !important;
+    height: 216px;
+    padding-top: 15px !important;
+    width: 278px;
+    padding-left: 16px !important;
+}
+
+.edicoes li{
+  padding:5px 0px 5px 0px;
+  margin: 0px 18px 0px 18px;
+  font-size: 14px;
+  font-weight:bold;
+  color:#393939;
+  border-bottom:1px solid #eeeeee;
+}
+#agenda .abas-conteudo li.ativo .titulos,
+#agenda .abas-conteudo li:hover .titulos,
+.box-interna .leia,
+.uma-coluna .chapeu,
+.box-padrao .chapeu,
+#agenda .hora .noar {color:#005dab;}
+.ouvinte p {margin-bottom:0;}
+.box-radio img {width:310px; height:412px;}
+.pag-bola li:hover a, 
+.pag-bola li.ativo a {background-position:-140px 0;}
+
+#agenda .abas-conteudo ul { background: none repeat scroll 0 0 #FFFFFF; margin-top: -20px; padding-left: 10px; padding-top: 20px; }
+.menu-calendario { margin-top:20px;} 
+.menu-calendario .carrossel-menu li {width:187px;}
+.menu-calendario .carrossel-menu  {width:232px;}
+.menu-calendario .btn {background-position: 0 -126px;}
+.menu-calendario .proximo {background-position: 0 -108px;}
+
+div.jp-type-playlist div.jp-playlist a:hover {
+	color:#0d88c1;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+	color:#0d88c1;
+}
+
+/* NOVO */
+.menu-interna li.span { display:none; }
+.menu-interna li { border-radius:0; background:#136c9b; }
+.menu-interna a {color:#fff;}
+@font-face {font-family: "GothamMediumRegular"; src: url("/portal/css/fontes/gotham/gotham-medium-webfont.eot");src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), url("/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'), url("/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), url("/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");}
+.topo-programa .aovivo,
+.box-padrao .topo h4,
+.tit-pagina,
+.contato form .linha .enviar,
+form.selecao .item,
+.menu-interna a { font-family:'GothamMediumRegular';font-weight: normal; font-style: normal;  }
+
+
+#barra-site .redes {float:right; margin-top:0;}
+#barra-site #horario { float:right; clear:both; margin-top:-60px; width:111px;}
+#barra-site #horario { *margin-top:20px;}
+#barra-site #horario { *width: 90px }
+.topo-programa .aovivo { display:block; width:111px; height:44px; background:url(/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
+#home { background: no-repeat 0 127px; height:350px; }
+.violino { background-image:url(/portal/images/capaPrograma/culturafm/violino.jpg) !important; }
+.clarinete { background-image:url(/portal/images/capaPrograma/culturafm/clarinete.jpg) !important; }
+.trombone { background-image:url(/portal/images/capaPrograma/culturafm/trombone.jpg) !important; }
+.bombardino { background-image:url(/portal/images/capaPrograma/culturafm/bombardino.jpg) !important; }
+.carrilhao { background-image:url(/portal/images/capaPrograma/culturafm/carrilhao.jpg) !important; }
+.timpanos { background-image:url(/portal/images/capaPrograma/culturafm/timpanos.jpg) !important; }
+.trompete { background-image:url(/portal/images/capaPrograma/culturafm/trompete.jpg) !important; }
+#barra-site h2 {margin-bottom:20px;}
+.menu-interna { margin-top:0; background:#666; }
+.menu-interna li {margin-right:0; padding:5px 23px; background:#666; }
+.menu-interna .m-contato {float:right;}
+.menu-interna li a {text-transform:uppercase; }
+.box-padrao .topo span {display:none;}
+.box-padrao .claro .capa-titulo,
+.box-padrao .capa-titulo,
+.box-padrao .topo {background:#f7f6f6; height:50px;}
+
+.box-padrao .topo h4 {color:#333; font-weight:normal; font-size: 24px; text-transform:none; }
+.setas { background: url(/portal/images/capaPrograma/culturafm/setas.jpg) no-repeat; width:17px; height:17px; display: block; float:right; margin:11px 5px 0 0; }
+
+.paraouvir { background: #f7f6f6; float: left; padding-bottom: 20px; padding-bottom:20px; width: 310px; height:388px; margin-top:-20px; }
+.paraouvir .chapeu,
+.paraouvir .titulos,
+.paraouvir .box-padrao p { display:none; }
+.paraouvir .box-padrao {margin-top:-20px;}
+.col-esq .paraouvir { margin-top:-20px; }
+a.jp-play, 
+a.jp-play:hover, 
+a.jp-pause, 
+a.jp-pause:hover, 
+a.jp-stop, 
+a.jp-stop:hover, 
+a.jp-previous, 
+a.jp-previous:hover, 
+a.jp-next, 
+a.jp-next:hover, 
+div.jp-seek-bar, 
+div.jp-play-bar,
+a.jp-mute, 
+a.jp-mute:hover, 
+a.jp-unmute, 
+a.jp-unmute:hover, 
+div.jp-volume-bar, 
+div.jp-volume-bar-value, 
+div.jp-video div.jp-video-play, 
+div.jp-video div.jp-video-play:hover { background-image:url("/portal/images/capaPrograma/culturafm/jplayer.jpg") !important;}
+.playlist div.jp-type-playlist div.jp-playlist a:hover, 
+.playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color:#333 !important; }
+.playlist div.jp-playlist ul,
+div.jp-playlist {border:none !important;}
+.playlist div.jp-playlist ul { max-height:279px; overflow-x:hidden; }
+
+.vermais,
+.bg-cinza { background: #f7f6f6; padding:10px; overflow:hidden; }
+.altura {max-height:348px; overflow-x:hidden;}
+.vermais { text-align:right; width:290px; color:#999; float:left; padding:10px 20px 10px 0;}
+.bg-cinza li { border-bottom:none; padding-bottom:0; margin-top:5px; }
+.bg-cinza .box-padrao {margin-bottom:30px;}
+.bg-cinza a span {margin-right:15px;}
+
+.contato form .linha .enviar {background:#666; width: 72px;}
+
+.box-padrao .nav-menu2 { background:#fff; }
+.menu-calendario .btn { background: url(/portal/images/capaPrograma/culturafm/setas.jpg) no-repeat 0 -17px; width:17px; height:17px; }
+.menu-calendario .proximo {background-position:0 -34px;}
+.menu-calendario .carrossel-menu li {width:295px; text-align:center;}
+.menu-calendario .carrossel-menu {width:350px;}
+
+/* ---------------- Scrollbar ---------------- */ 
+/*::-webkit-scrollbar {width:5px;height:25px;} 
+::-webkit-scrollbar-track-piece {background:#666;} 
+::-webkit-scrollbar-thumb:vertical {width:5px; height: 24px;background-color:#cbcbcb;} 
+*/
+.lista-calendario,
+.lista-calendario .grade,
+.lista-calendario .barra-grade,
+.uma-coluna .conteudo li,
+.pag-bola,
+.uma-coluna,
+.selecao,
+form.selecao .divisa .linha,
+.box-padrao #datepicker .ui-widget-header { background:#f7f6f6; }
+.box-padrao #datepicker .ui-widget-header { padding:10px 20px; width: 270px; margin-left:0; }
+.box-padrao #datepicker .ui-datepicker-title {width:206px;}
+.box-padrao #datepicker .ui-widget-header .ui-icon { margin-top:4px; }
+.box-padrao #datepicker .ui-widget-content .ui-state-active,
+.box-padrao #datepicker .ui-state-hover,
+.box-padrao #datepicker .ui-widget-content .ui-state-hover,
+.box-padrao #datepicker .ui-widget-header .ui-state-hover, 
+.box-padrao #datepicker .ui-state-focus, 
+.box-padrao #datepicker .ui-widget-content .ui-state-focus, 
+.box-padrao #datepicker .ui-widget-header .ui-state-focus {  background:#136c9b;}
+.lista-calendario .barra-grade {border:none;}
+.lista-calendario .capa-foto,
+.lista-calendario .barra-grade .botao {display:none;}
+.lista-calendario .grade p {margin:0;}
+.lista-calendario .barra-grade .hora,
+.lista-calendario .barra-grade .tit {font-size:14px;}
+.lista-calendario .barra-grade .hora {margin-right:5px;}
+.lista-calendario li { margin:10px 10px 20px 0; }
+.lista-calendario .grade {padding-bottom:0 !important; display: block; width:auto;}
+.menu-calendario { margin-top:0; height:40px; float: left; }
+
+p strong {font-weight:bold;}
+.audio .col-dir {width:270px; float:left; margin-top:35px;} 
+.audio .col-dir p {color:#666; font-size:12px;}
+.audio .playlist div.jp-playlist ul { padding-left:10px !important; }
+.audio .paraouvir {height:346px;}
+.maisprogramas { float:right; color:#fff; text-decoration: none; margin-top:0px; background: #666; padding:3px 5px; }
+.maisprogramas:hover {}
+.selecao { overflow:hidden; padding:10px 0 0 10px; }
+form.selecao textarea, 
+form.selecao .t3 label, 
+form.selecao .t3 input {width:615px;}
+form.selecao .t6 { width:248px; }
+form.selecao .t6 input { width: 235px; }
+form.selecao .t4 {width:315px;}
+form.selecao .t4 label, 
+form.selecao .t4 input {width:300px;}
+form.selecao .divisa {background:#fff; float:left; width: 640px; margin-left:-10px;}
+form.selecao .divisa .linha { padding:10px 0 0 10px; margin-bottom:0; }
+form.selecao .add {width:102px;}
+form.selecao .add .enviar  {font-size:12px; font-weight:normal; background:#999; line-height:22px; height:20px; color: #fff; padding-left:10px; float:left;}
+form.selecao .item {font-size:12px; font-weight:normal; background:#666; line-height:30px; height:30px; color: #fff; padding-left:10px; margin:20px 0 0 0; font-size:16px; }
+form.selecao .divisa .enviar {margin-right:17px; width: 80px; margin-bottom:20px; text-align:center; height:24px; line-height:24px; cursor:pointer; font-size:12px;}
+form.selecao .btn-enviar { margin-left:-10px; background:#fff; margin-bottom:0; }
+form.selecao .btn-enviar .enviar {margin-right:-5px; cursor:pointer;}
+.uma-coluna .conteudo li {height:auto;}
+.programacao { height:378px; overflow-x:hidden; background: #f7f6f6; padding:10px 10px 20px 10px;  }
+.programacao li { border-bottom:none; padding-bottom:0; margin-top:5px; width:300px; }
+.programacao li span { margin-right:10px; }
+form.selecao .item span { color: #FFFFFF; float: right; line-height: 30px; text-transform: uppercase; }
+form.selecao .divisa .compositor {padding-bottom:10px;}
+/* /NOVO */
+
+/*GRADE DE PROGRAMACAO */
+
+.excel1 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+
+}
+.excel3 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#136B9D;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+
+background:#E6E6E5;
+}
+.excel4 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#136B9D;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid #F2F2F2;
+
+background:#E6E6E5;
+}
+.excel7,
+.excel5 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#136B9D;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid #F2F2F2;
+
+background:#E6E6E5;
+}
+.excel8 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+
+background:#B8D4E2;
+}
+.excel11 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+
+background:#A1C4D7;
+}
+.excel6 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#136B9D;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+
+background:#E6E6E5;
+}
+.excel10 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+white-space:normal;
+background:#A1C4D7;
+}
+.excel12 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+white-space:normal;
+background:#89B6CD;
+}
+.excel9 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+white-space:normal;
+background:#B8D4E2;
+}
+.excel13 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:#333333;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid #F2F2F2;
+
+background:#89B6CD;
+}
+.excel1 tr td {border:1px solid #fff;}
+/* /GRADE DE PROGRAMACAO */
+#barra-site h2,
+.box-topo { *margin-left:20px; }
+#barra-site h2 { *margin-top:-20px; }
+#destaque p { margin-bottom:20px; }
+#barra-site .topo-programa {min-height:140px;}
+.bg-cinza2 .col-esq { margin-top:30px; }
+
+
+/** /RADIO FM  **/

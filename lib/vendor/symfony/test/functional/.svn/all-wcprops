@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional
+END
+escapingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/escapingTest.php
+END
+genericTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/genericTest.php
+END
+sfTestBrowserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/sfTestBrowserTest.php
+END
+i18nTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/i18nTest.php
+END
+authTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/authTest.php
+END
+httpcacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/httpcacheTest.php
+END
+cacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/cacheTest.php
+END
+i18nFormTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/i18nFormTest.php
+END
+prodTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/prodTest.php
+END
+filterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/filterTest.php
+END
+formatTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/formatTest.php
+END
+autoloadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/autoloadTest.php
+END

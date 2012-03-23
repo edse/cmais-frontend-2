@@ -1,0 +1,9 @@
+@import url("padrao.css");
+
+/** SOMOS 1 SO **/
+#barra-site {margin-top:0; }
+#barra-site .redes {margin-top:25px;}
+#horario {margin-top:20px;}
+.banner-site {width:310px; height:74px; display:block; float:left; margin-top:20px;}
+#barra-site .topo-programa {margin-bottom:0;}
+/** /SOMOS 1 SO **/

@@ -1,0 +1,37 @@
+@import url("../geral.css");
+
+/** ESPECIAIS **/
+#esquerda { margin-top:-20px;}  
+
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-112px 0; }
+
+.menu-interna a { color:#ee2125; }
+.menu-interna a:hover { color:#fff; background:#ee2125; }
+.menu-interna a span { background-position:0 -48px;}
+
+#menu-rodape .logos li a  { background-position:0 -140px }
+#menu-rodape .logos li a:hover,
+#menu-rodape .logos li a.ativo { background-position:0 0; }
+.submenu-interna a:hover,
+#menu-rodape .exibir-programas a {color:#ee2125; }
+#menu-rodape .exibir-programas a:hover { background:#ee2125; color:#fff }
+
+#menu-rodape #logos .carrossel .jcarousel-item a:hover,
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo { border-color:#ee2125;} 
+
+.abas li,
+.abas li a { width:132px; text-transform:none; }
+.abas li a.ativo,
+.abas li a:hover { background-position:0 -306px;  }
+
+.submenu-interna { border-color:#ee2125; }
+
+#datepicker .ui-widget-content .ui-state-active,
+#datepicker .ui-state-hover, 
+#datepicker .ui-widget-content .ui-state-hover, 
+#datepicker .ui-widget-header .ui-state-hover, 
+#datepicker .ui-state-focus, 
+#datepicker .ui-widget-content .ui-state-focus, 
+#datepicker .ui-widget-header .ui-state-focus { background:#ee2125;}
+/** /ESPECIAIS **/

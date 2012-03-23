@@ -1,0 +1,138 @@
+= sfSuperCache plugin (for symfony 1.1) =
+
+The `sfSuperCachePlugin` writes your page cache somewhere under your root
+directory to allow your web server to serve them as fast as possible.
+
+It supports caching by domain name.
+
+Please read the limitations at the end.
+
+== Installation ==
+
+  * Install the plugin
+  
+  {{{
+    symfony plugin:install sfSuperCachePlugin
+  }}}
+
+  * Choose a directory to store the cache under your web root
+
+    {{{
+      mkdir web/cache
+      chown apache.apache web/cache
+    }}}
+
+  * Add `sfSuperCacheFilter` to your filters
+  
+  {{{
+    supercache:
+      class: sfSuperCacheFilter
+      param:
+        cache_dir: cache
+  }}}
+
+  * If your content doesn't change based on the hostname,
+    you can switch the `cache_host` parameter to false:
+
+  {{{
+    supercache:
+      class: sfSuperCacheFilter
+      param:
+        cache_dir: cache
+        with_host: false
+  }}}
+
+  * If you don't want to deal with super cache lifetime
+    you can switch the `check_lifetime` parameter to false:
+
+  {{{
+    supercache:
+      class: sfSuperCacheFilter
+      param:
+        cache_dir:      cache
+        check_lifetime: false
+  }}}
+
+  * Replace the 2 following lines in `.htaccess`
+
+  {{{
+    RewriteRule ^$ index.html [QSA]
+    RewriteRule ^([^.]+)$ $1.html [QSA]
+  }}}
+  
+  by
+
+  {{{
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}index.html.php -f
+    RewriteRule ^(.*) cache/%{HTTP_HOST}/$1index.html.php [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}.html.php -f
+    RewriteRule ^(.*) cache/%{HTTP_HOST}/$1.html.php [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}.php -f
+    RewriteRule ^(.*) cache/%{HTTP_HOST}/$1.php [L]
+  }}}
+
+  Don't forget to change the "cache" dir name with the one you chose in `filters.yml`.
+
+  If you set `with_host` to `false`, also remove `%{HTTP_HOST}/` from the rules:
+
+  {{{
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}index.html.php -f
+    RewriteRule ^(.*) cache/$1index.html.php [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}.html.php -f
+    RewriteRule ^(.*) cache/$1.html.php [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}.php -f
+    RewriteRule ^(.*) cache/$1.php [L]
+  }}}
+
+  If you set `check_lifetime` to `false`, also remove the trailing `.php` from the rules:
+
+  {{{
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}index.html -f
+    RewriteRule ^(.*) cache/$1index.html [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}.html -f
+    RewriteRule ^(.*) cache/$1.html [L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI} -f
+    RewriteRule ^(.*) cache/$1 [L]
+  }}}
+
+  * Clear you cache
+
+  {{{
+    symfony cc
+  }}}
+
+  * You're done.
+
+== Known limitations ==
+
+ * your page must ends with the right extension: .html, .xml, ... Because Apache will server these pages, it must be able to guess the content type
+ * no vary support
+
+== Changelog ==
+
+=== 2008-04-14 | Trunk ===
+
+ * hartym: Fixed a fatal error in clear-cache handler: was using $this in static context to call an unexistent method
+ * francois: Added an option to ignore cache lifetime and deal with pure html pages (no PHP)
+ * francois: Added a cache control header to avoid proxy caching on redirections
+
+=== 2008-03-07 | 1.0.6 ===
+
+ * fabien:   Added symfony cc hook
+ * francois: Added support for cache lifetime (based on `cache.yml` settings)
+   '''BC break''': the signature of cache files has changed. They now end with `.php`

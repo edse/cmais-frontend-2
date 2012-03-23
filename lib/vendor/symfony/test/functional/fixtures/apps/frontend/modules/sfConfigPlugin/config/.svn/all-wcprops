@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/sfConfigPlugin/config
+END
+filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/sfConfigPlugin/config/filters.yml
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/frontend/modules/sfConfigPlugin/config/view.yml
+END

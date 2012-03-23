@@ -1,0 +1,56 @@
+@import url("../geral.css");
+
+body {background:url(../../../images/capaPrograma/mensagemdeanonovo/bg-tudo.jpg) repeat; background-clip:padding-box;}
+#rodape-portal {margin-top:-97px; position: relative; z-index: 2000;}
+#bg-topo { background:url(../../../images/capaPrograma/mensagemdeanonovo/bg-topo.png) repeat-x; height:283px; z-index: 10; position:relative; margin-top:48px; min-width:1012px;  }
+#chamada {float:none; margin:20px auto 0 auto; position:relative; z-index:30; text-align:left; background: transparent;}
+#chamada span {text-align:center;}
+#bg-chamada {background:#03b0c7 !important; width:100%; padding-top:0; margin-bottom:48px; overflow:hidden; position:relative; top:48px;}
+#bg-chamada {*background:#03b0c7;}
+#capa-site { margin-top:0 !important; position:relative; z-index: 20; min-height:700px; top:-71px; padding-top:50px; z-index: 0;}
+.capa {background:#ffffff; padding:50px 0;}
+#esquerda {margin-left:20px;}
+
+.contato form .t4 {width:320px;}
+.contato form .linha .enviar {background:#03b0c7; float:left; width: 70px;}
+.contato p {margin-bottom:10px; width:640px;}
+.contato p span {font-weight:bold;}
+.contato ul {margin:0 0 10px 15px;}
+.contato ul li { list-style:disc ; font-size:14px; color:#333; line-height:20px; }
+.contato form .concordo input { float: left; width:10px; border:none; }
+.contato form .concordo label {width:610px; margin:2px;}
+
+.mensagem {text-align:left; margin:0 auto; width:1012px; position:relative; top:40px;}
+.mensagem h3 { text-indent:-9999px; background:url(../../../images/capaPrograma/mensagemdeanonovo/titulo.png) no-repeat; width:569px; height:71px; margin-left:50px; float:left;}
+.mensagem img {width:310px; float: left; margin:0 10px 10px 0;}
+.tit-pagina {text-indent:-9999px; background:url(../../../images/capaPrograma/mensagemdeanonovo/inscreva.png) no-repeat; height:28px; border-bottom:1px solid #03b0c7;}
+#barra-site {display:none;}
+
+.regulamento {background:#fff; height:200px; overflow-y:scroll; border:1px solid #BFBFBF; margin-top:10px; padding:10px; width:615px;}
+.regulamento p {font-size:12px; width:584px;}
+.regulamento a {font-size:12px; color:#ff6633;}
+.regulamento .titulos { font-size:14px; margin:5px 0; }
+.regulamento ul li {list-style:none;}
+.txt-10 {line-height:12px; margin-top: 5px;}
+.cor {color:#ff6633;}
+
+strong {font-weight:bold !important;}
+
+.contato .titulos {
+    text-transform: uppercase !important;
+}
+
+.redes { width:320px; float:right; margin-top:30px;  }
+.redes .curtir { width:210px; float:left; margin-left:0; text-align: left; }
+.redes ul { width:112px; float:left; }
+.redes ul li { width:24px; float:left; margin-right:4px; }
+.redes ul li a { background:url(../images/ico-compartilhar.png) no-repeat 0 -208px; width:24px; height:24px; text-indent:-99999px; display:block; }
+.redes ul li .ytb { background-position:0 -232px; }
+.redes ul li .fb { background-position:0 -256px; }
+.redes ul li .rss { background-position:0 -280px; }
+.fb_iframe_widget iframe {width:150px;}
+.twitter-share-button {padding-bottom:2px; float:left;}
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Guia do trânsito - Estradas</title> 
+  
+  <!--HEADER PADRAO JQUERY MOBILE-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <!--CSS PAGINA TRANSITO-->
+  <link rel="stylesheet" href="css/transito.css" />
+  <!--/CSS PAGINA TRANSITO-->
+  
+  <!--BUBBLE BOOKMARK-->
+  <link rel="stylesheet" href="css/add2home.css">
+  <link rel="apple-touch-icon" href="images/ico-transito-final.png">
+  <script type="text/javascript">
+  var addToHomeConfig = {
+    autostart:true,
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:20000,
+    expire:0,
+    touchIcon:true,
+    arrow:true,
+    message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+  };
+  </script>
+  <script type="application/javascript" src="js/add2home.js"></script>
+  <!--BUBBLE BOOKMARK-->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!--/HEADER PADRAO JQUERY MOBILE-->
+</head>
+
+<body> 
+
+<!--PAGINA INDEX-->
+<div id="index" data-role="page" data-fullscreen="true" >
+  
+  <!--TOPO-->
+  <div data-role="header" class="header">
+    
+      <h1 class="tituloHeader">
+  
+        <img src="images/logo_cmais.png"/>
+  
+      </h1>
+      
+        
+  </div>
+  <!--/TOPO-->
+  
+  <!--CORPO-->
+  <div id="container" data-role="content"> 
+    
+    <a href="index.php" class="btn-voltar ico-left" data-direction="reverse"> Voltar</a>
+      <!--Regiao escolhida-->
+      <div class="barra">
+        <p class="texto-zona w50 flRight texAligRight"><span class="laranja">Estradas</span></p>
+      </div>
+      <!--/Regiao escolhida-->
+      
+    <!--MENU REGIÕES-->
+    <ul class="menuZonas">
+  
+      <li>
+        <!--Botao estradas -->
+        <a href="rodovias/litoral.html" class="" data-transition="slide">
+            <span class="local">Litoral</span>
+            
+        </a>
+        <!--/Botao Estradas -->
+      </li>
+      <li>
+        <!--Botao Balsas-->
+        <a href="rodovias/interior.html" class="" style="border-bottom: none;" data-transition="slide">
+            <span class="local">Interior</span>
+        </a>
+        <!--/Botao Balsas-->
+      </li>
+    </ul>
+    
+    <!--MENU REGIÕES-->
+    <!--PARTICIPE / MAPAS-->
+        <div id="btn-nav" align="center">
+          <a href="participe.html" id="btn-participe" class="flLeft" data-ajax="false">Participe</a>
+          <a href="cmaisgoogle.html" id="btn-mapa" class="flRight"  data-ajax="false">
+            <div class="w100">
+              <div class="cont-btn-mapa">
+                 Mapas
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--PARTICIPE / MAPAS-->
+ 
+  </div>
+  <!--CORPO-->
+  
+</div>
+<!--PAGINA INDEX--> 
+
+
+</body>
+</html>

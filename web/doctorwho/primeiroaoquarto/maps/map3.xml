@@ -1,0 +1,34 @@
+<!--MAP DATA 3-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map3>
+
+<shape>0,0,4</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,200,1,200,200,1,1,1,1,1,1,0</zrow2>
+<zrow3>0,208,1,1,1,1,205,1,1,1,206,0</zrow3>
+<zrow4>0,0,1,406,1,1,205,1,503,1,206,0</zrow4>
+<zrow5>0,208,1,1,1,1,205,1,1,1,206,0</zrow5>
+<zrow6>0,0,1,1,1,1,1,1,406,1,1,0</zrow6>
+<zrow7>0,1,1,1,2,1,1,1,1,1,1,0</zrow7>
+<zrow8>0,1,1,1,2,2,2,2,2,2,2,0</zrow8>
+<zrow9>0,1,1,1,1,1,1,1,1,1,1,0</zrow9>
+<zrow10>0,1,1,1,1,1,1,1,1,1,1,0</zrow10>
+<zrow11>0,1,1,1,1,1,1,106,1,1,1,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>COMM: "Metaltron reported to have entered bio processor research lab."</introtext>
+<info>2,2,LOG: Analysis concludes that the artefact in this room is a highly advanced bio processor,0</info>
+<info>2,3,LOG: This processor is theoretically capable of quantum level computing,0</info>
+<info>2,4,DATA: analysis results from Bio Processor,scanimages/bio-processor.jpg</info>
+<info>2,5,DATA: analysis results from Bio Processor,scanimages/bio-processor.jpg</info>
+
+<decal>7,1,4</decal>
+<decal>8,1,4</decal>
+<decal>9,1,4</decal>
+<decal>1,6,5</decal>
+<decal>1,10,5</decal>
+<decal>2,8,15</decal>
+
+</map3>

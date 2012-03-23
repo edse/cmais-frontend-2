@@ -1,0 +1,9 @@
+@import url("../geral.css");
+
+/** VITRINE **/
+#barra-site { background:url(../../../images/capaPrograma/bg-vitrine.png) no-repeat right -4px; margin-top:0; padding-top:20px; }
+#barra-site {_background-image:url(../../../images/capaPrograma/bg-vitrine.gif);}
+.submenu-interna {width:116px;}
+#barra-site h2 {margin-top:10px;}
+#chamada {margin-bottom:0;}
+/** /VITRINE **/

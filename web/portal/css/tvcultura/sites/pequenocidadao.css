@@ -1,0 +1,17 @@
+/* PEQUENO CIDADAO */
+body { background:#faef3f url(../../../images/capaPrograma/pequenocidadao/bg-topo.jpg) center 0 repeat-x;}
+.topo-programa h2 a {text-indent:-9999px; background: url(../../../images/capaPrograma/pequenocidadao/logo.png) no-repeat; width:511px; height:210px; display: block;}
+#barra-site {margin-top:0;}
+#barra-site .redes ul {display:none;}
+#barra-site .redes {width:420px; margin-top:150px;}
+.tit-pagina { background: url(../../../images/capaPrograma/pequenocidadao/participe.png) no-repeat; text-indent:-9999px; }
+.contato h3 { border-bottom:1px solid #2567b5; }
+.capa { background: url(../../../images/capaPrograma/pequenocidadao/dog.jpg) no-repeat bottom right;  }
+.contato form .t4 { width:320px !important; }
+.contato form .linha .enviar {float:left; background:#2567b5; width:70px; margin-bottom:100px; }
+.contato {background:#fff; padding:30px; width:755px; float: left; }
+#rodape-portal { margin-top:-25px; }
+#rodape-portal { *margin-top:100px; }
+#form-contato { margin-top:10px; }
+#barra-portal h1 { _margin-left:0px; }
+/* /PEQUENO CIDADAO*/

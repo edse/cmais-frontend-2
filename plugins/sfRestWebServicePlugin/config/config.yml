@@ -1,0 +1,21 @@
+all:
+  protected: true
+  allowed: [127.0.0.1]
+  protectedRoute: secure
+  services:
+    user:
+      model:  user
+      methodForQuery: ~
+      states: ~
+    userInReverseOrder:
+      model:  user
+      methodForQuery: getDesc
+      states: ~
+    user405:
+      model:  user
+      methodForQuery: ~
+      states: [post]
+    nonActiveModel:
+      model:  non_active_model
+      methodForQuery: ~
+      states: ~

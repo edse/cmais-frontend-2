@@ -1,0 +1,34 @@
+.noturno { background:#9f313f url(../../../images/capaPrograma/2012/bg-not.png) no-repeat center  48px  ;; }
+.vespertino { background:#80c8dd url(../../../images/capaPrograma/2012/bg-ves.png) no-repeat center  48px  ;; }
+.matutino { background:#f7e857 url(../../../images/capaPrograma/2012/bg-mat.png) no-repeat center  48px; }
+.pageWrapper { position:relative; top:230px;  }
+#fundo { width: 100%; min-height:1000px; background:#000; opacity:0.20;	-moz-opacity: 0.20;	filter: alpha(opacity=20); overflow:hidden; z-index: 100000; position:absolute; }
+.video { position:absolute; top:50%; left:50%; margin:-240px 0 0 -320px; }
+#fundo,
+.video {display:none;}
+div.demo {background:none;}
+.ui-slider .ui-slider-handle { width:34px; height:34px; top:-14px; background-position:0 0; margin-left:-14px; }
+.matutino .ui-slider-horizontal { background:url(../../../images/capaPrograma/2012/barra-mat.png) repeat-x; }
+.matutino .ui-slider .ui-slider-handle {  background-image:url(../../../images/capaPrograma/2012/btn-mat.png); }
+
+.vespertino .ui-slider-horizontal { background:url(../../../images/capaPrograma/2012/barra-ves.png) repeat-x; }
+.vespertino .ui-slider .ui-slider-handle {  background-image:url(../../../images/capaPrograma/2012/btn-ves.png); }
+
+.noturno .ui-slider-horizontal { background:url(../../../images/capaPrograma/2012/barra-not.png) repeat-x; }
+.noturno .ui-slider .ui-slider-handle {  background-image:url(../../../images/capaPrograma/2012/btn-not.png); }]
+
+#coverflow {width:10000px;}
+#coverflow img {width:420px; height: 252px;}
+.pageWrapper {width: 1012px; height:730px; }
+div.demo {width:969px;  margin-left:43px; padding:0;} 
+div.wrapper {padding:0; width:959px; height:380px; margin-bottom:20px;}
+.redes { float:right; clear: both;}
+.curtir {float:left;}
+#slider {margin-top:60px;}
+.pageWrapper .link { width: 969px; display: block;  font:bold 16px arial; margin-bottom:20px; }
+
+.matutino .pageWrapper .link { color:#c33d6b; }
+.vespertino .pageWrapper .link { color:#3280a8; }
+.noturno .pageWrapper .link { color:#fe5961; }
+#slider { height:40px; position:relative; }
+

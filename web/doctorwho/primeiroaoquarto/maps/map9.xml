@@ -1,0 +1,43 @@
+<!--MAP DATA 9-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map9>
+
+<shape>0,0,4</shape>
+<shape>1,0,2</shape>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,200,200,200,200,200,200,200,200,200,200,0</zrow2>
+<zrow3>0,200,200,200,200,200,200,200,200,200,200,0</zrow3>
+<zrow4>0,200,200,200,200,200,200,200,200,200,200,0</zrow4>
+<zrow5>0,2,1,1,1,1,1,1,1,1,1,0</zrow5>
+<zrow6>0,208,1,406,1,1,1,205,1,206,1,0</zrow6>
+<zrow7>0,0,1,1,1,1,1,1,501,1,1,0</zrow7>
+<zrow8>0,208,1,1,1,1,1,205,1,206,1,0</zrow8>
+<zrow9>0,0,1,1,1,1,1,1,1,1,1,0</zrow9>
+<zrow10>0,208,1,406,1,1,1,1,1,1,1,0</zrow10>
+<zrow11>0,0,1,1,1,1,1,1,1,1,2,0</zrow11>
+<zrow12>0,1,1,1,1,1,2,2,2,2,2,0</zrow12>
+<zrow13>0,1,1,1,1,1,1,1,1,1,200,0</zrow13>
+<zrow14>0,1,1,1,1,1,1,1,1,200,200,0</zrow14>
+<zrow15>0,200,200,2,1,1,1,1,200,200,200,0</zrow15>
+<zrow16>0,2,200,200,1,1,1,200,200,200,200,0</zrow16>
+<zrow17>0,1,1,200,1,1,2,2,2,2,2,0</zrow17>
+<zrow18>0,117,1,200,1,1,1,1,1,1,2,0</zrow18>
+<zrow19>0,1,1,200,1,1,1,1,1,1,1,0</zrow19>
+<zrow20>0,2,200,200,1,1,2,1,1,1,1,0</zrow20>
+<zrow21>0,200,200,2,2,2,2,1,116,1,1,0</zrow21>
+<zrow22>0,0,0,0,0,0,0,0,0,0,0,0</zrow22>
+
+<introtext>COMM: "Metaltron has accessed weapons research lab. There is no live weaponry - remain calm."</introtext>
+
+<info>2,10,DATA: Artefact Y-216PZ4,scanimages/gun-lvl1.jpg</info>
+<info>2,9,DATA: Artefact Y-216PZ4,scanimages/gun-lvl1.jpg</info>
+<info>2,8,LOG: Initial research suggests that this weapon is damaged and innactive - presumed safe.,0</info>
+<info>2,7,LOG: Initial research suggests that this weapon is damaged and innactive - presumed safe.,0</info>
+<info>2,6,LOG: Further research concludes that we can learn from this artefact and improve our own weapons.,0</info>
+<info>2,5,LOG: Further research concludes that we can learn from this artefact and improve our own weapons.,0</info>
+
+<decal>1,11,5</decal>
+
+</map9>

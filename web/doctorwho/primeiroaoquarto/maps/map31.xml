@@ -1,0 +1,25 @@
+<!--MAP DATA 31-->
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<map31>
+
+<decal>5,1,6</decal>
+
+<zrow1>0,0,0,0,0,0,0,0,0,0,0,0</zrow1>
+<zrow2>0,0,0,0,0,1,1,1,1,0,0,0</zrow2>
+<zrow3>0,0,0,0,0,413,1,1,1,0,0,0</zrow3>
+<zrow4>0,0,0,0,0,164,1,1,1,0,0,0</zrow4>
+<zrow5>0,0,0,0,0,413,1,1,1,0,0,0</zrow5>
+<zrow6>0,0,0,0,0,1,500,1,1,1,1,0</zrow6>
+<zrow7>0,0,0,0,0,1,1,1,1,1,163,0</zrow7>
+<zrow8>0,0,0,0,0,1,1,1,1,0,0,0</zrow8>
+<zrow9>0,0,0,0,0,0,0,0,0,0,0,0</zrow9>
+<zrow10>0,0,0,0,0,0,0,0,0,0,0,0</zrow10>
+<zrow11>0,0,0,0,0,0,0,0,0,0,0,0</zrow11>
+<zrow12>0,0,0,0,0,0,0,0,0,0,0,0</zrow12>
+
+<introtext>GUARD: "Protect the Military Zone - Stop the Dalek!!"</introtext>
+
+<decal>5,3,13</decal>
+
+</map31>

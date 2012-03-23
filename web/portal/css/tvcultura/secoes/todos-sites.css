@@ -1,0 +1,22 @@
+@import url("../geral.css");
+
+/******** TODOS OS SITES ********/
+/** busca site **/
+.busca-sites { margin-top:10px; }
+.busca-sites p { margin-right:10px; }
+.busca-sites input, 
+.busca-sites label, 
+.busca-sites form,
+.busca-sites p { float:left; margin-right:10px; }
+.busca-sites input { margin:5px 2px 0 0; }
+.busca-sites label { margin-bottom:0 }
+/** /busca site **/
+
+.todos-sites .box-letra { margin:0 13px 20px 0; }
+.todos-sites .letra { background:#fff; width:36px; height:29px; line-height:29px; font-size:25px; font-weight:bold; text-align:center; }
+.todos-sites li { text-align:left; margin-top:10px; }
+.todos-sites a { font-size:14px; }
+.todos-sites a:hover,
+.todos-sites a.ativo { color:#ff6633; text-decoration:none; }
+
+/******** /TODOS OS SITES ********/

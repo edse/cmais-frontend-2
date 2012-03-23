@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/i18n
+END
+custom.fr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/i18n/custom.fr.xml
+END
+other.fr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/i18n/other.fr.xml
+END
+messages.fr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/i18n/messages.fr.xml
+END

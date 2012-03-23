@@ -1,0 +1,88 @@
+@import url("../geral.css");
+
+/******** CONTATO ********/
+.box-topo {margin-bottom:10px;}
+.contato {text-align:left;}
+.contato .titulos { margin-bottom:10px; }
+.contato p {clear:both;}
+.contato form { margin-top:10px; }
+.contato form .linha { float:left; margin-top:10px }
+.contato form  .linha label { text-transform:uppercase; font-size:12px; font-weight:bold; text-align:left; float:left;   }
+.contato form  .linha input { height:26px; line-height:26px; background:#fff; border:1px solid #bfbfbf; padding:0 2px; font-size:12px; color:#333;  }
+.contato form .t1,
+.contato form .t1 label,
+.contato form .t1 input { width:467px; margin-right:10px; }
+.contato form .t1,
+.contato form .t1 label,
+.contato form .t1 input { _width:447px; }
+.contato form .t2 label,
+.contato form .t2 input,
+.contato form .t2 { width:150px; }
+.contato form textarea,
+.contato form .t3 label,
+.contato form .t3 input,
+.contato form .t3 { width:634px; }
+.contato form textarea { height:209px; border:1px solid #bfbfbf; padding:2px; font-size:12px; color:#333; /*overflow-y:scroll;*/ }
+.contato form .txt-10 { float:right; }
+.contato form .t3 .enviar { background:#ff6633; color:#fff; text-transform:uppercase; height:22px; line-height:22px; border:none; float:right; font-weight:bold; width:137px; padding-bottom:2px; }
+/******** /CONTATO ********/
+#form-contato label.error{
+  background-color: #f5d6cc;
+  color: #863f27;
+  display: none;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 4px;
+  padding-left: 6px;
+  text-transform: none;
+}
+#form-contato .erro{
+  border: 1px solid #f5d6cc;
+}
+#form-contato label.checked{
+  background: none;
+  height: 0px; 
+}
+.msgErro{
+  background-color: #ff6633;
+  margin: 20px 0 0 105px;
+  width: 420px;
+}
+.msgErro .alerta{
+  background: url(../../../images/ico-erro.png) no-repeat;
+  display: block;
+  float: left;
+  margin: 20px 0 0 10px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 32px;
+  height: 32px;
+}
+.msgAcerto{
+  background-color: #33a1ff;
+  margin: 20px 0 0 105px;
+  width: 410px;
+}
+.msgAcerto .alerta{
+  background: url(../../../images/ico-acerto.png) no-repeat;
+  display: block;
+  float: left;
+  margin: 13px 0 0 10px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 32px;
+  height: 32px;
+}
+.boxMsg{
+  float: left;
+  margin: 5px 0 5px 10px;
+  width: 355px;
+}
+.boxMsg p{
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+}
+.boxMsg p.aviso{
+  font-weight: bold;
+}

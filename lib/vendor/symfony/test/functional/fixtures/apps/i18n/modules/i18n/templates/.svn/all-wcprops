@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/templates
+END
+i18nFormSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/templates/i18nFormSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/9/trunk/lib/vendor/symfony/test/functional/fixtures/apps/i18n/modules/i18n/templates/indexSuccess.php
+END
