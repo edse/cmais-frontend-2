@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" />
+<!--link rel="stylesheet" href="/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" /-->
 <!-- teste -->
 <script type="text/javascript">
   $(function(){
@@ -41,27 +41,11 @@
 	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery-1.4.1.js"></script>
 	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
 	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/misc.js"></script>  
-	    <script language="javascript" type="text/javascript">
-	      // Initiate Countdown
-	        /*
-	        jQuery(document).ready(function() {
-	          $('#countdown_dashboard').countDown({
-	            targetOffset: {
-	              'day':    19,
-	              'month':  03,
-	              'year':   2012,
-	              'hour':   0,
-	              'min':    0,
-	              'sec':    0
-	            },
-	            omitWeeks: true
-	          });
-	        });
-	        */
-	    </script>	          
+	     
+	    <!--       
       	<div class="box-contador" style="width: 275px; left:404px;">
         	<p>DE SEGUNDA A SEXTA, ÀS 20:20H</p>
-        	<!-- 
+      
         	<div id="countdown_dashboard">
         		<div class="dash days_dash">
          	 		<div class="digit">0</div>
@@ -70,8 +54,9 @@
         	 	</div>
        		</div>
        		<p>para a estreia</p>
-       		-->
+       	
 	    </div>
+	    -->
 	    <!-- contador-->
       </div>
       <!-- /banner -->
