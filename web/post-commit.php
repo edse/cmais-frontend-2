@@ -18,6 +18,6 @@ if(isset($_REQUEST["payload"])){
   $a = exec('cd /var/frontend');
   $msg2 .= "\n\n".exec('git pull');
   
-  mail('emersonestrella@gmail.com', 'Git Pulled', $msg.$msg2);
+  mail('emerson.estrella@gmail.com', 'Git Pulled', $msg.$msg2);
 
 }
