@@ -69,7 +69,7 @@
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           
-          <?php
+          <?php 
           if((isset($displays["destaque-principal"]))&&(count($displays["destaque-principal"]) > 0))
             include_partial_from_folder('blocks','global/display3c', array('displays' => $displays["destaque-principal"]));
           else
