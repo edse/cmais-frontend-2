@@ -256,7 +256,7 @@
           </div>
           <hr />
           
-          <?php include_partial_from_folder('sites/maiscrianca', 'global/footer') ?>
+          <?php //include_partial_from_folder('sites/maiscrianca', 'global/footer') ?>
           
         </div>
         <div class="cerca"></div>
