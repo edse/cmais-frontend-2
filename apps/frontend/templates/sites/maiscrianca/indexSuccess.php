@@ -1,3 +1,18 @@
+<?php
+  $voce_sabia = Doctrine_Query::create()
+    ->select('a.*')
+    ->from('Asset a, SectionAsset s, Section s2')
+    ->where('s.asset_id = a.id')
+    ->andWhere('s.section_id = s2.id')
+    ->andWhere('a.site_id = ?', (int)$site->id)
+    ->andWhere('a.asset_type_id = 1')
+    ->andWhere('s2.id = 692')
+    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+    ->orderBy('a.id desc')
+    ->limit(1)
+    ->fetchOne();
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -159,6 +174,7 @@
                 
               </div>
 
+              <?php /*
               <div class="voceSabiaBox">
                 <a href="<?php echo $displays["destaque-texto"][0]->retriveUrl() ?>"><h2>você sabia?</h2></a>
                 <?php if($displays["destaque-texto"][0]->retriveImageUrlByImageUsage("image-2") != ""): ?>
@@ -168,6 +184,19 @@
                   <a href="<?php echo $displays["destaque-texto"][0]->retriveUrl() ?>">
                     <h3><?php echo $displays["destaque-texto"][0]->getTitle() ?></h3>
                     <p><?php echo $displays["destaque-texto"][0]->getDescription() ?></p>
+                  </a>
+                </div>
+              </div>
+              */ ?>
+              <div class="voceSabiaBox">
+                <a href="<?php echo $voce_sabia->retriveUrl() ?>"><h2>você sabia?</h2></a>
+                <?php if($voce_sabia->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                  <img src="<?php echo $voce_sabia->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $voce_sabia->getTitle() ?>" />
+                <?php endif; ?>
+                <div class="voceSabiaBoxWrapper">
+                  <a href="<?php echo $voce_sabia->retriveUrl() ?>">
+                    <h3><?php echo $voce_sabia->getTitle() ?></h3>
+                    <p><?php echo $voce_sabia->getDescription() ?></p>
                   </a>
                 </div>
               </div>
