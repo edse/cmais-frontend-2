@@ -53,7 +53,7 @@ $(function(){
       <h2>
       <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
       <?php if($program->getImageThumb() != ""): ?>
-      <img src="/portal/images/capaPrograma/elis/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+      <img src="/portal/images/capaPrograma/chicoanysio/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
       <?php	else:?>
      
       <?php echo $program->getTitle() ?>
