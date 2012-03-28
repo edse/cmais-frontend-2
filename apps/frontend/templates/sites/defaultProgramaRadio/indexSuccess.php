@@ -82,7 +82,7 @@
       
             
             <!-- NOTICIA INTERNA -->
-          <?php if($assets): ?>
+          <?php if(count($assets)>=1): ?>
             <div class="box-interna encontro grid2">
                <p class="titulos ed">EDIÇÕES</p>
               <!-- Post para links com programas com áudio -->
