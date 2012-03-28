@@ -87,11 +87,10 @@
 						<?php if($site->Program->getSchedule()!=""):?>
 						<p style="text-align: left;" class="schedule"><?php echo html_entity_decode(nl2br($site->Program->getSchedule()))?></p>
 						<?php endif;?>
-
-						<!-- NOTICIA INTERNA -->
-						<div class="box-interna encontro grid2">
-
-						<?php if($assets): ?>
+						
+						<?php if($assets): ?>	
+						<!-- NOTICIA INTERNA -->						
+						<div class="box-interna encontro grid2">						
 							<!-- Post para links com programas com áudio -->
 							<div class="bg-cinza2 audio">
 								<!-- col-esq -->
@@ -327,11 +326,9 @@
 								<!-- col-dir -->
               <?php endif; ?>
               </div>
-
-              <?php endif; ?>
-
-						</div>
-						<!--NOTICIA-->
+			</div>
+			<!--NOTICIA-->
+			<?php endif; ?>
 						
 						<a href="/programas" class="maisprogramas">mais programas</a>
 					</div>
