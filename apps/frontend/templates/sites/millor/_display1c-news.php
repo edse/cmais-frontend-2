@@ -16,5 +16,5 @@
                   <p><?php echo $displays[0]->getDescription() ?></p>
 
                 </div>
-                <?php endif; ?>
+                <?php endif; ?> 
                 <!-- BOX PADRAO Noticia -->
