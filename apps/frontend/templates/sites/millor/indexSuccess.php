@@ -58,19 +58,17 @@
             <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
             <!-- /BOX NOTICIA -->
             <!-- BOX NOTICIA -->
-            <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-2"])) ?>
+            <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
             <!-- /BOX NOTICIA -->
           </div>
           <div class="col-dir grid1">
             <!-- BOX NOTICIA -->
-            <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
+            <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-2"])) ?>
             <!-- /BOX NOTICIA -->
             <!-- BOX NOTICIA -->
             <?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
             <!-- /BOX NOTICIA -->
-            <!-- BOX NOTICIA -->
-            <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"])) ?>
-            <!-- /BOX NOTICIA -->
+            
           </div>
         </div>
         <!-- /ESQUERDA -->
