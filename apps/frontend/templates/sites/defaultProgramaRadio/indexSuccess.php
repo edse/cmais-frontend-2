@@ -6,7 +6,7 @@
     ->andWhere('a.asset_type_id = ?', 5)
     ->orderBy('a.id')
     ->execute();
-  if($assets)
+  if(count($assets) >= 1)
     $asset = $assets[0];
   
   
