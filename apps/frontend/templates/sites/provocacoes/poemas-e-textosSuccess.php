@@ -224,13 +224,13 @@
 	                    	
 	                    </li>
 	                    <li><p class="titulos">2. Critérios de Seleção:</p>
-	                    	<p>2.1 A seleção dos vídeos será feita pela equipe de Produção do Programa e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação ao tema.</p>
-	                    	<p>2.2 Serão desconsiderados os vídeos com dados incorretos; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis de direitos autorais ou que tenham conteúdo inadequado.</p>
+	                    	<p>2.1 A seleção dos vídeos será feita pela equipe de Produção do Programa e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação ao tema.</p> 
+	                    	<p>2.2 Serão desconsiderados os vídeos com dados incorretos; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis de direitos autorais ou que tenham conteúdo inadequado.</p> 
 	                    	<p>2.3 Cada pessoa poderá participar enviando quantos vídeos desejar.</p>	                    	                  
 	                    </li>
 	                     <li><p class="titulos">3. Considerações Gerais:</p>
 	                     	<p>3.1 Os participantes representados por seus pais ou responsáveis legais quando menores, declaram, desde já, serem de sua autoria os vídeos encaminhados ao site do programa e que os mesmos não constituem plágio de espécie alguma, ao mesmo tempo em que cedem e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p>
-	                     	<p>3.2 A FPA não aceitará qualquer vídeo que contenha imagens que exponham as pessoas a situações vexatórias, incitem ao preconceito, violência, contenham apelo sexual ou ao consumismo exacerbado.</p>
+	                     	<p>3.2 A FPA não aceitará qualquer vídeo que contenha imagens que exponham as pessoas a situações vexatórias, incitem ao preconceito, violência, contenham apelo sexual ou ao consumismo exacerbado.</p> 
 	                     	<p>3.3 Os vídeos que apresentarem partes de shows ou eventos públicos de entretenimento serão exibidos em pequenos trechos, de modo que não represente uma retransmissão ao vivo do evento, enfatizando o caráter de divulgação do evento cultural.</p>
 	                     	<p>3.4 Eventuais críticas e/ou sátiras enviadas a eventos públicos de entretenimento não terão conteúdo ofensivo ou depreciativo e serão admitidas nos estritos limites do exercício de tais direitos, respeitados a honra, a imagem e os direitos de personalidade de terceiros envolvidos.</p>
 	                     	<p>3.5 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção do Programa referida no item 2.1 deste Regulamento.</p>
