@@ -225,7 +225,7 @@
 	                    </li>
 	                    <li><p class="titulos">2. Critérios de Seleção:</p>
 	                    	<p>2.1 A seleção dos vídeos será feita pela equipe de Produção do Programa e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação ao tema.</p>
-	                    	<p>2.2 Serão desconsiderados os vídeos com dados incorretos; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis de direitos autorais ou que não tenham nenhum conteúdo inadequado.</p>
+	                    	<p>2.2 Serão desconsiderados os vídeos com dados incorretos; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis de direitos autorais ou que tenham conteúdo inadequado.</p>
 	                    	<p>2.3 Cada pessoa poderá participar enviando quantos vídeos desejar.</p>	                    	                  
 	                    </li>
 	                     <li><p class="titulos">3. Considerações Gerais:</p>
