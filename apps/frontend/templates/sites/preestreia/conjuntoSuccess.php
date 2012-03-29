@@ -98,7 +98,7 @@
               <!--/mensagem Acerto-->
             
             <!--form-->  
-            <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php">
+            <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               <input type="hidden" name="tipo" value="Conjunto" />
@@ -1116,7 +1116,7 @@
           <div class="linha t7">
             
             <label>Anexar foto</label>
-            <input type="file" name="anexofoto" id="anexofoto" />
+            <input type="file" name="new_photo" id="anexofoto" />
             
           </div>
           <!--/Anexar Foto-->
