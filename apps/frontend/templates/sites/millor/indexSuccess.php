@@ -55,7 +55,7 @@
           <!-- /barra compartilhar -->
           <div class="col-esq grid1">
             <!-- BOX NOTICIA -->
-            <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('sites/millor','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
+            <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
             <!-- /BOX NOTICIA -->
             <!-- BOX NOTICIA -->
             <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
