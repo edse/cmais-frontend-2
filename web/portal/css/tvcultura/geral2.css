@@ -340,7 +340,7 @@
 .noticia a { width:310px; height:186px; overflow:hidden; display:block; margin-bottom:10px;}
 .noticia .titulos {margin-bottom:0;}
 .noticia img {width:310px; float:left;}
-/*.noticia .img-video {width:350px; float:left; margin:-44px 0 0 -14px;}*/
+.noticia .img-video {width:350px; float:left; margin:-44px 0 0 -14px;}
 .noticia2 .titulos { margin-top:10px;}
 .noticia2 h3,
 .noticia2 h3 a {font-size:20px; line-height:24px;}
