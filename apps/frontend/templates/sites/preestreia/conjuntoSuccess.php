@@ -100,6 +100,7 @@
             <!--form-->  
             <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php">
               
+              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/obrigado" />
               <input type="hidden" name="tipo" value="Conjunto" />
               
               <!--Nome Conjunto-->
@@ -1288,6 +1289,7 @@
     });
     
     var validator = $('#form-contato-conjunto').validate({
+      /*
       submitHandler: function(form){
         $.ajax({
           type: "POST",
@@ -1314,6 +1316,7 @@
           }
         });         
       },
+      */
       rules:{
         conjuntonome:{
           required: true,
@@ -1335,7 +1338,7 @@
           required: true,
           minlength: 2
         },
-        conjuntorepertório:{
+        conjuntorepertorio:{
           required: true,
           minlength: 2
         },

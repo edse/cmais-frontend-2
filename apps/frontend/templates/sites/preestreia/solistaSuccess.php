@@ -93,6 +93,7 @@
             <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php">
               
               <input type="hidden" name="tipo" value="Solista" />
+              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/obrigado" />
               
               <!--Campo Nome-->
               <div class="linha t7">
@@ -692,6 +693,7 @@ $(document).ready(function(){
   
   //validacao solista
   var validator = $('#form-contato-solista').validate({
+      /*
       submitHandler: function(form){
           $.ajax({
             type: "POST",
@@ -717,6 +719,7 @@ $(document).ready(function(){
               }
             });
           },
+          */
           rules:{
             nome:{
              required: true,
@@ -863,6 +866,7 @@ $(document).ready(function(){
             regulamento:{
               required: true,
             },
+            /*
             rgresp:{
               required: true,
             },
@@ -873,15 +877,16 @@ $(document).ready(function(){
               required: true,
               minlength: 2
             },
+            naturalidaderesp:{
+              required: true,
+              minlength: 2
+            },
+            */
             rg:{
               required: true,
               minlength: 2
             },
             cpf:{
-              required: true,
-              minlength: 2
-            },
-            naturalidaderesp:{
               required: true,
               minlength: 2
             },
