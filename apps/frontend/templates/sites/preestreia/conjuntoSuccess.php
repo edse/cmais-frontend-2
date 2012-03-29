@@ -100,7 +100,7 @@
             <!--form-->  
             <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php">
               
-              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/obrigado" />
+              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               <input type="hidden" name="tipo" value="Conjunto" />
               
               <!--Nome Conjunto-->

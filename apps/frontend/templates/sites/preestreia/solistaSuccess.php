@@ -93,7 +93,7 @@
             <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php">
               
               <input type="hidden" name="tipo" value="Solista" />
-              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/obrigado" />
+              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               
               <!--Campo Nome-->
               <div class="linha t7">
