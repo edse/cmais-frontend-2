@@ -819,14 +819,14 @@
                     new_field += '<!--idade-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Nascimento</label>';
-                    new_field += '  <input type="text" maxlength="idade_'+i+'" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+'"  />';
+                    new_field += '  <input type="text" maxlength="idade_'+i+'" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+' required" />';
                     new_field += '</div>';
                     new_field += '<!--/idade-'+i+'-->';
                       
                     new_field += '  <!--instrumento-'+i+'-->';
                     new_field += '  <div class="linha t9 m10">';
                     new_field += '    <label>Instrumento:</label>';
-                    new_field += '    <input type="text" name="instrumento_'+i+'" id="instrumento_'+i+'" />';
+                    new_field += '    <input type="text" name="instrumento_'+i+'" id="instrumento_'+i+'" class="required" />';
                     new_field += '  </div>';
                     new_field += '<!--/instrumento-'+i+'-->';
                     
@@ -834,21 +834,21 @@
                     new_field += '  <!--RG-'+i+'-->';
                     new_field += '  <div class="linha t8 w204">';
                     new_field += '    <label>RG</label><br/>';
-                    new_field += '    <input type="text" name="rg_'+i+'" id="rg_'+i+'" class="rg'+i+'"/><br/>';
+                    new_field += '    <input type="text" name="rg_'+i+'" id="rg_'+i+'" class="rg'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/RG-'+i+'-->';
                       
                     new_field += '  <!--tel Resi-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
                     new_field += '    <label>Telefone Residencial</label><br/>';
-                    new_field += '    <input type="text" name="telresi_'+i+'" id="telresi_'+i+'" class="tel'+i+'" /><br/>';
+                    new_field += '    <input type="text" name="telresi_'+i+'" id="telresi_'+i+'" class="tel'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/tel Resi-'+i+'-->';
                       
                     new_field += '  <!--tel Com-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
                     new_field += '    <label>Telefone Comercial</label><br/>';
-                    new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="tel'+i+'"/><br/>';
+                    new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="tel'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/tel Com-'+i+'-->';
                     new_field += '</div>';
@@ -856,7 +856,7 @@
                     new_field += '  <!-- End-'+i+'-->';
                     new_field += '  <div class="linha t5">';
                     new_field += '    <label>Endereço</label>';
-                    new_field += '    <input type="text" name="end_'+i+'" id="end_'+i+'" />';
+                    new_field += '    <input type="text" name="end_'+i+'" id="end_'+i+'" class="required" />';
                     new_field += '  </div>';
                     new_field += '  <!--/ End-'+i+'-->';
                       
@@ -900,70 +900,70 @@
                     new_field += '<!--bairro-'+i+'-->';
                     new_field += '<div class="linha t8 w204">';
                     new_field += '  <label>Bairro</label><br/>';
-                    new_field += '  <input type="text" name="bairro_'+i+'" id="bairro_'+i+'" /><br/>';
+                    new_field += '  <input type="text" name="bairro_'+i+'" id="bairro_'+i+'" class="required" /><br/>';
                     new_field += '</div>';
                     new_field += '<!--/bairro-'+i+'-->';
                       
                     new_field += '<!--cep-'+i+'-->';
                     new_field += '<div class="linha t8 m10 w204">';
                     new_field += '  <label>CEP</label><br/>';
-                    new_field += '  <input type="text" name="cep_'+i+'" id="cep_'+i+'"  class="cep'+i+'"/><br/>';
+                    new_field += '  <input type="text" name="cep_'+i+'" id="cep_'+i+'" class="cep'+i+' required" /><br/>';
                     new_field += '</div>';
                     new_field += '<!--/cep-'+i+'-->';
                       
                     new_field += '<!--cidade-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
                     new_field += '  <label>Cidade</label><br/>';
-                    new_field += '  <input type="text" name="cidade_'+i+'" id="cidade_'+i+'" /><br/>';
+                    new_field += '  <input type="text" name="cidade_'+i+'" id="cidade_'+i+'" class="required" /><br/>';
                     new_field += '</div>';
                     new_field += '<!--/cidade-'+i+'-->';
                       
                     new_field += '<!--Email-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Email</label>';
-                    new_field += '  <input type="text" name="email_'+i+'" id="email_'+i+'" />';
+                    new_field += '  <input type="text" name="email_'+i+'" id="email_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Email-'+i+'-->';
                       
                     new_field += '<!--Nome Respon-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Nome do Responsável</label>';
-                    new_field += '  <input type="text" name="nomeresponsavel_'+i+'" id="nomeresponsavel_'+i+'" />';
+                    new_field += '  <input type="text" name="nomeresponsavel_'+i+'" id="nomeresponsavel_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome Respon-'+i+'-->';
                       
                     new_field += '<!--tempo-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Há quanto tempo estuda música?</label>';
-                    new_field += '  <input type="text" name="tempo_'+i+'" id="tempo_'+i+'" />';
+                    new_field += '  <input type="text" name="tempo_'+i+'" id="tempo_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/tempo-'+i+'-->';
                       
                     new_field += '<!--escola-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Qual sua escola de música?</label>';
-                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'" />';
+                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'" class="required" />';
                     new_field += '</div>';                  
                     new_field += '<!--/escola-'+i+'-->';
                       
                     new_field += '<!--professor-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Qual o nome do seu professor atual?</label>';
-                    new_field += '  <input type="text" name="professor_'+i+'" id="professor_'+i+'" />';
+                    new_field += '  <input type="text" name="professor_'+i+'" id="professor_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/professor-'+i+'-->';
                       
                     new_field += '<!--ano-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Em que ano você está?</label>';
-                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'" />';
+                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/ano-'+i+'-->';
                       
                     new_field += '<!--cursa-'+i+'-->';
                     new_field += '<div class="linha t7">';
                     new_field += '  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>';
-                    new_field += '  <input type="text" name="regular_'+i+'" id="regular_'+i+'" />';
+                    new_field += '  <input type="text" name="regular_'+i+'" id="regular_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/cursa-'+i+'-->';
     
@@ -1009,7 +1009,7 @@
                   $('.rg'+i).mask("99.999.999-99");
                   $('.cpf'+i).mask("999.999.999-99");
                   $('.cep'+i).mask("99999-999");
-                  $('.tel'+i).mask("(99)9999-9999");
+                  $('.tel'+i).mask("(99) 9999-9999");
                   $('.nasc'+i).mask("99/99/9999");
                                 
                 });
@@ -1279,7 +1279,7 @@
     $('.rg').mask("99.999.999-99");
     $('.cpf').mask("999.999.999-99");
     $('.cep').mask("99999-999");
-    $('.tel').mask("(99)9999-9999");
+    $('.tel').mask("(99) 9999-9999");
     $('.nasc').mask("99/99/9999");
     
     
