@@ -98,7 +98,9 @@
               <!--/mensagem Acerto-->
             
             <!--form-->  
-            <form id="form-contato-conjunto" method="post" action="">
+            <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php">
+              
+              <input type="hidden" name="tipo" value="Conjunto" />
               
               <!--Nome Conjunto-->
               <div class="linha t9">

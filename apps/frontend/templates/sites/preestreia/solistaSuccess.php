@@ -90,7 +90,9 @@
             <!--/Mensagem Acerto-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="" >
+            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php">
+              
+              <input type="hidden" name="tipo" value="Solista" />
               
               <!--Campo Nome-->
               <div class="linha t7">
