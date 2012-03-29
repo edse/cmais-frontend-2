@@ -70,7 +70,7 @@
             <div id="esquerda" class="grid2">
               
               <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php //include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
               
               	<style type="text/css">
             		#esquerda .box-compartilhar .comentar { text-indent:-9999px; }
