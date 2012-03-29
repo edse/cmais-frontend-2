@@ -1511,7 +1511,6 @@
           required: true,
           minlength: 2
         },
-        */
         responsavelmenor_2:{
           required: true,
           minlength: 2
@@ -1524,6 +1523,7 @@
           required: true,
           minlength: 2
         },
+        */
         
         sexo_3:{
           required: true,
@@ -1588,6 +1588,7 @@
           required: true,
           minlength: 8
         },
+        /*
         responsavelmenor_3:{
           required: true,
           minlength: 2
@@ -1600,7 +1601,7 @@
           required: true,
           minlength: 2
         },
-
+        */
         sugestao1:{
           required: true,
           minlength: 2
