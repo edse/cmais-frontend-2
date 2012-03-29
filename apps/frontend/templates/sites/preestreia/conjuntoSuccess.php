@@ -162,7 +162,7 @@
                 <!--Nome-1-->
                 <div class="linha t5">
                   <label>Nome integrante</label>
-                  <input type="text" name="nome_1" id="nome_1" />
+                  <input type="text" name="nome_1" id="nome_1" class="required" />
                 </div>
                 <!--/Nome-1-->
                 
@@ -365,7 +365,7 @@
                 <!--Nome-2-->
                 <div class="linha t5">
                   <label>Nome integrante</label>
-                  <input type="text" name="nome_2" id="nome_2" />
+                  <input type="text" name="nome_2" id="nome_2" class="required" />
                 </div>
                 <!--/Nome-2-->
                 
@@ -568,7 +568,7 @@
                 <!--Nome-3-->
                 <div class="linha t5">
                   <label>Nome integrante</label>
-                  <input type="text" name="nome_3" id="nome_3" />
+                  <input type="text" name="nome_3" id="nome_3" class="required" />
                 </div>
                 <!--/Nome-3-->
                 
@@ -799,7 +799,7 @@
                     new_field += '<!--Nome-'+i+'-->';
                     new_field += '<div class="linha t5">';
                     new_field += '  <label>Nome integrante:</label>';
-                    new_field += '  <input type="text" name="nome_'+i+'" id="nome_'+i+'" />';
+                    new_field += '  <input type="text" name="nome_'+i+'" id="nome_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome-'+i+'-->';
                       
@@ -1354,10 +1354,13 @@
           required: true,
           remote: "/portal/js/validate/demo/captcha/process.php"
         },
+        /*
         nome_1:{
           required: true,
           minlength: 2
         },
+        */
+        /*
         responsavelmenor_1:{
           required: true,
           minlength: 2
@@ -1370,6 +1373,7 @@
           required: true,
           minlength: 2
         },
+        */
         sexo_1:{
           required: true,
           minlength: 1
@@ -1433,12 +1437,12 @@
           required: true,
           minlength: 8
         },
-
+        /*
         nome_2:{
           required: true,
           minlength: 2
         },
-        
+        */
         sexo_2:{
           required: true,
           minlength: 1
@@ -1502,11 +1506,12 @@
           required: true,
           minlength: 8
         },
-
+        /*
         nome_3:{
           required: true,
           minlength: 2
         },
+        */
         responsavelmenor_2:{
           required: true,
           minlength: 2
