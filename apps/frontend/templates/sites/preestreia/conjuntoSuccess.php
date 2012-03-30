@@ -288,7 +288,7 @@
                 </div> 
                 <!--/Email-1-->
                 
-                <!--Nome Respon-1-->
+                <!--Nome Respon-1
                 <div class="linha t9 m10">
                   <label>Nome do Responsável</label>
                   <input type="text" name="nomeresponsavel_1" id="nomeresponsavel_1" />
@@ -490,7 +490,7 @@
                 </div> 
                 <!--/Email-2-->
                 
-                <!--Nome Respon-2-->
+                <!--Nome Respon-2
                 <div class="linha t9 m10">
                   <label>Nome do Responsável</label>
                   <input type="text" name="nomeresponsavel_2" id="nomeresponsavel_2" />
@@ -694,7 +694,7 @@
                 </div> 
                 <!--/Email-3-->
                 
-                <!--Nome Respon-3-->
+                <!--Nome Respon-3
                 <div class="linha t9 m10">
                   <label>Nome do Responsável</label>
                   <input type="text" name="nomeresponsavel_3" id="nomeresponsavel_3" />
@@ -925,7 +925,7 @@
                     new_field += '</div>';
                     new_field += '<!--/Email-'+i+'-->';
                       
-                    new_field += '<!--Nome Respon-'+i+'-->';
+                    new_field += '<!--Nome Respon-'+i+'';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Nome do Responsável</label>';
                     new_field += '  <input type="text" name="nomeresponsavel_'+i+'" id="nomeresponsavel_'+i+'" class="required" />';
