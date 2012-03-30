@@ -262,6 +262,8 @@ a{
 .conteudoWrapper .topo{
   width: 970px;
 }
+
+
 .topo h2 a{
   background: url(../image/logo-tvRatimbum.png) no-repeat;
   float:left;
@@ -271,6 +273,7 @@ a{
   width: 156px;
   height: 151px;
 }
+
 .topo .btn-exclusivo{
   float: right;
   height: 20px;
@@ -344,8 +347,12 @@ a{
     margin: 0 10px 10px 0;
     position: relative;
 }
+.menu-programas .carrossel .jcarousel-item .boxPersonagens-tip img{
+  display: none;
+}
 .menu-programas .carrossel .jcarousel-item .boxPersonagens-tip a span{
   display: none;
+  
 }
 .menu-programas .carrossel .jcarousel-item .boxPersonagens-tip a:hover span{
     background-color: #F25D4D;
@@ -453,11 +460,11 @@ a{
 
 #menu-topo .menu-secoes li a.mt-agenda{background-position: -565px 0;width: 79px;color: #246e90;}
 #menu-topo .menu-secoes li a.mt-agenda:hover{background-position: -565px -30px;color: #FFF;width: 79px;}
-#menu-topo .menu-secoes li a.sel-agenda{background-position: -565px -30px;color: #FFF;width: 79px;}
+#menu-topo .menu-secoes li a.sel-agenda{background-position: -565px bottom !important;color: #FFF;width: 79px;}
 
 #menu-topo .menu-secoes li a.mt-especial{background-position: -644px 0;width: 83px;color: #22b7a3;}
 #menu-topo .menu-secoes li a.mt-especial:hover{background-position: -644px -30px;color: #FFF !important;width: 83px;}
-#menu-topo .menu-secoes li a.sel-especial{background-position: -644px -30px;color: #FFF;width: 83px;}
+#menu-topo .menu-secoes li a.sel-especial{background-position: -663px bottom !important;color: #FFF;width: 83px;}
 
 
 
@@ -6569,41 +6576,17 @@ form .nome{
   text-align: center;
   text-transform: uppercase;
 }
-#box-institucional-home .box-especial-info .menu-especial-info li a{
-  color: #6b6b6b;
-}
-#box-institucional-home .box-especial-info .menu-especial-info li .ponta{
-  background: url(../image/ico-pontaGreen.png) no-repeat;
-  display: none;
-  position: absolute;
-  top: 27px;
-  right: 0px;
-  width: 23px;
-  height: 13px;
-}
-#box-institucional-home .box-especial-info .menu-especial-info li:hover .ponta{
-  display: block;
-}
-#box-institucional-home .box-especial-info .menu-especial-info li span{
-  padding: 7px 28px;
-  float: left;
-  width: auto;
-}
-#box-institucional-home .box-especial-info .menu-especial-info li:hover span{
-  padding: 4px 25px;
-}
+/*
+
+
+
 #box-institucional-home .box-especial-info .menu-especial-info li:hover{
   background: url("../image/bg-sprite.png") repeat-x scroll 0 -297px;
   border: 3px solid #eaeaea;
   color: #6b6b6b;
   height: 27px;
-}
-span.ativo{
-  background: url("../image/bg-sprite.png") repeat-x scroll 0 -297px;
-  height: 14px;
-  border: 2px solid #eaeaea;
-  padding: 4px 25px;
-}
+}*/
+
 #box-institucional-home .box-especial-info .box-instrucoes{
   border-bottom: 2px solid #e1e1e1;
   border-left: 2px solid #e1e1e1;
@@ -7095,3 +7078,5 @@ span.bold{
 #rodape-portal .capa-voltar-topo{
   *margin: 0px auto -40px!important;
 }
+.barra-menu .busca-portal .ipt-submit,
+.barra-menu .busca-portal .ipt-txt { border-radius:0 }

@@ -52,6 +52,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
 <script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
@@ -153,7 +154,7 @@
         <span class="picote"></span>
       </div>
       <hr />
-      <?php if(isset($vocesabia)) include_partial_from_folder('tvratimbum','global/display-1c-vocesabia', array('displays' => $vocesabia)) ?>
+      <?php //if(isset($vocesabia)) include_partial_from_folder('tvratimbum','global/display-1c-vocesabia', array('displays' => $vocesabia)) ?>
     </div>
   </div>
   
