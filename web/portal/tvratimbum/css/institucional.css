@@ -1,0 +1,52 @@
+#voceSabia { background: url("/portal/tvratimbum/image/bg-voceSabia.png") no-repeat scroll 0 0 transparent; float: left; height: 294px; position: relative;width: 290px;display:none;}
+
+/*#rodape-portal {margin: -140px 0 -60px 0;}
+menu-rodape{margin: 205px 15%; width:100%;}
+.rodape {background:none !important;}*/
+
+
+.propaganda img{width: 290px; height: 235px;}
+
+.coluna .nCanal p.numCanal {margin: 17px 0 0 10px;}
+
+#voceSabia p.exclamacao {margin-top: -15px;}
+/*body{background: url(/portal/tvratimbum/image/topo_tarde.jpg) no-repeat scroll center top rgb(134, 215, 232);}*/
+
+.bold{font-weight:bold;}
+
+#cont-educacao dl dt{margin:3px 3px 3px 30px;}
+#cont-educacao dl dd{margin:5px 30px 10px 30px; background-color:#e5e5e5; padding:5px 5px 5px 5px;}
+#cont-educacao dl dd img{margin:15px !important;}
+
+#box-institucional-home .box-especial-info .box-instrucoes p {margin: 10px 0 5px 0;padding: 0 15px 0px 10px;}
+#box-institucional-home .box-especial-info .menu-especial-info li {padding:10px 0px 10px 0px;}
+a.historia, a.publico, a.identidade, a.educacao{color: #333 !important;padding:10px 10px 10px 10px; padding: 10px 29px 5px 29px;}
+a.historia:hover, a.publico:hover, a.identidade:hover, a.educacao:hover{text-decoration:none;background: url("../image/bg-sprite.png") repeat-x scroll 0 -297px;   border: 3px solid #eaeaea;padding: 7px 26px 2px 26px; }
+
+
+
+li a.ativo {text-decoration:none;background: url("../image/bg-sprite.png") repeat-x scroll 0 -297px;   border: 3px solid #eaeaea;padding: 7px 26px 2px 26px;}
+
+li a.historia .ponta{background: url(../image/ico-pontaGreen.png) no-repeat;position: absolute;width: 23px;height: 13px;top:30px; left:49px;}
+li a.historia .ponta.ativo{display:block;}
+li a.historia .ponta.desativado{display:none;}
+
+li a.publico .ponta{background: url(../image/ico-pontaGreen.png) no-repeat;position: absolute;width: 23px;height: 13px;top:30px; left:61px;}
+li a.publico .ponta.ativo{display:block;}
+li a.publico .ponta.desativado{display:none;}
+
+li a.identidade .ponta{background: url(../image/ico-pontaGreen.png) no-repeat;position: absolute;width: 23px;height: 13px;top:30px; left:59px;}
+li a.identidade .ponta.ativo{display:block;}
+li a.identidade .ponta.desativado{display:none;}
+
+li a.educacao .ponta{background: url(../image/ico-pontaGreen.png) no-repeat;position: absolute;width: 23px;height: 13px;top:30px; left:87px;}
+li a.educacao .ponta.ativo{display:block;}
+li a.educacao .ponta.desativado{display:none;}
+
+
+/*span.ativo{
+  background: url("../image/bg-sprite.png") repeat-x scroll 0 -297px;
+  height: 14px;
+  border: 2px solid #eaeaea;
+  padding: 4px 25px;
+}*/
