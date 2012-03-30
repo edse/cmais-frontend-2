@@ -376,8 +376,8 @@
                   <br />
                   <select name="sexo-2" id="sexo-2" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-2-->
@@ -579,8 +579,8 @@
                   <br />
                   <select name="sexo-3" id="sexo-3" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-3-->
@@ -810,8 +810,8 @@
                     new_field += '  <br />';
                     new_field += '  <select name="sexo-'+i+'" id="sexo-'+i+'" class="required">';
                     new_field += '    <option value="" selected="selected">--</option>';
-                    new_field += '    <option value="Acre">Fenino</option>';
-                    new_field += '    <option value="Alagoas">Masculino</option>';
+                    new_field += '    <option value="Feminino">Feminino</option>';
+                    new_field += '    <option value="Masculino">Masculino</option>';
                     new_field += '  </select>';
                     new_field += '</div>';
                     new_field += '<!--/sexo-'+i+'-->';
