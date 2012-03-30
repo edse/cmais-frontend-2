@@ -1425,8 +1425,7 @@
           minlength: 8
         },
         tempo_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_1:{
           required: true
