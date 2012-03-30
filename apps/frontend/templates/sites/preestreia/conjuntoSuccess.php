@@ -413,7 +413,7 @@
                   
                   <!--tel Com-2-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_2" id="telcom_2" class="tel" /><br/>
                   </div>
                   <!--/tel Com-2-->
@@ -616,7 +616,7 @@
                   
                   <!--tel Com-3-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_3" id="telcom_3" class="tel"/><br/>
                   </div>
                   <!--/tel Com-3-->
@@ -847,7 +847,7 @@
                       
                     new_field += '  <!--tel Com-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
-                    new_field += '    <label>Telefone Comercial</label><br/>';
+                    new_field += '    <label>Telefone Celular</label><br/>';
                     new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="tel'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/tel Com-'+i+'-->';
