@@ -10,7 +10,7 @@
         <script type="text/javascript">
         $(document).ready(function(){
   
-          $('.carrossel img, .carrossel span').hide().delay(2000).fadeIn(400);
+          $('.carrossel img, .carrossel span').hide().delay(4000).fadeIn(400);
           
           
           
