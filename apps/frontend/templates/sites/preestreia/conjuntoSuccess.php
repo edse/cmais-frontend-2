@@ -1413,8 +1413,7 @@
           minlength: 8
         },
         cidade_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_1:{
           required: true,
@@ -1429,8 +1428,7 @@
           minlength: 8
         },
         escolamusica_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_1:{
@@ -1482,29 +1480,24 @@
           minlength: 8
         },
         cidade_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_2:{
           required: true,
           email: true
         },
         nomeresponsavel_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         tempo_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         /*
         nome_3:{
@@ -1564,29 +1557,24 @@
           minlength: 8
         },
         cidade_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_3:{
           required: true,
           email: true
         },
         nomeresponsavel_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         tempo_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         /*
         responsavelmenor_3:{
