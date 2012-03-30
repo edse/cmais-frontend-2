@@ -173,8 +173,8 @@
                   <br />
                   <select name="sexo-1" id="sexo-1" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-1-->
@@ -210,7 +210,7 @@
                   
                   <!--tel Com-1-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_1" id="telcom_1" class="tel" /><br/>
                   </div>
                   <!--/tel Com-1-->
