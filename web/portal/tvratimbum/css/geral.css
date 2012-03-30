@@ -7078,5 +7078,11 @@ span.bold{
 #rodape-portal .capa-voltar-topo{
   *margin: 0px auto -40px!important;
 }
+<<<<<<< HEAD
 .barra-menu .busca-portal .ipt-submit,
 .barra-menu .busca-portal .ipt-txt { border-radius:0 }
+=======
+
+.barra-menu .busca-portal .ipt-submit,
+.barra-menu .busca-portal .ipt-txt { border-radius:0 }
+>>>>>>> 13a94e52600f173a716e1f506f08bbb97c10f82e

@@ -90,10 +90,10 @@
             <!--/Mensagem Acerto-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php">
+            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
-              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/obrigado" />
+              <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               
               <!--Campo Nome-->
               <div class="linha t7">
@@ -270,7 +270,7 @@
               <!--/Campo Menor de Idade-->
               
               <!--Campo menor Form-->
-              <div class="menorForm" style="display:none;">
+              <div class="menorForm" style="display:block;">
               
                 <!--Campo Nome Responsável-->
                 <div class="linha t7">
@@ -318,7 +318,7 @@
               </a>
               
               <!--Outras-->
-              <div class="outrasinfo" style="display:none;">
+              <div class="outrasinfo" style="display:block;">
               <!--Instrumento-->
               <div class="linha t7">
                 
@@ -482,7 +482,7 @@
               <div class="linha t7">
                 
                 <label>Anexar foto(max 5mb)</label>
-                <input type="file" name="anexofoto" id="anexofoto" />
+                <input type="file" name="new_photo" id="anexofoto" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -662,7 +662,7 @@
   $(document).ready(function(){
       
   //mascaras
-  $('.rg').mask("99.999.999-99");
+  $('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
   $('.tel').mask("(99)9999-9999");
