@@ -291,7 +291,7 @@
                 <!--Nome Respon-1-->
                 <div class="linha t9 m10">
                   <label>CPF</label>
-                  <input type="text" name="cpf_1" id="cpf_1" class="cpf" />
+                  <input type="text" name="cpf_1" id="cpf_1" class="cpf required" />
                 </div>
                 <!--/Nome Respon-1-->
                 
@@ -493,7 +493,7 @@
                 <!--Nome Respon-2-->
                 <div class="linha t9 m10">
                   <label>CPF</label>
-                  <input type="text" name="cpf_2" id="cpf_2" class="cpf" />
+                  <input type="text" name="cpf_2" id="cpf_2" class="cpf required" />
                 </div>
                 <!--/Nome Respon-2-->
                 
