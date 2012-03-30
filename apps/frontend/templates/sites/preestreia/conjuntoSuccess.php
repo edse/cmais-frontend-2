@@ -288,10 +288,10 @@
                 </div> 
                 <!--/Email-1-->
                 
-                <!--Nome Respon-1
+                <!--Nome Respon-1-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_1" id="nomeresponsavel_1" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_1" id="cpf_1" class="cpf" />
                 </div>
                 <!--/Nome Respon-1-->
                 
@@ -490,10 +490,10 @@
                 </div> 
                 <!--/Email-2-->
                 
-                <!--Nome Respon-2
+                <!--Nome Respon-2-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_2" id="nomeresponsavel_2" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_2" id="cpf_2" class="cpf" />
                 </div>
                 <!--/Nome Respon-2-->
                 
@@ -694,10 +694,10 @@
                 </div> 
                 <!--/Email-3-->
                 
-                <!--Nome Respon-3
+                <!--Nome Respon-3-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_3" id="nomeresponsavel_3" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_3" id="cpf_3" class="cpf required" />
                 </div>
                 <!--/Nome Respon-3-->
                 
@@ -925,10 +925,10 @@
                     new_field += '</div>';
                     new_field += '<!--/Email-'+i+'-->';
                       
-                    new_field += '<!--Nome Respon-'+i+'';
+                    new_field += '<!--Nome Respon-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
-                    new_field += '  <label>Nome do Responsável</label>';
-                    new_field += '  <input type="text" name="nomeresponsavel_'+i+'" id="nomeresponsavel_'+i+'" class="required" />';
+                    new_field += '  <label>CPF</label>';
+                    new_field += '  <input type="text" name="cpf_'+i+'" id="cpf_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome Respon-'+i+'-->';
                       
@@ -1006,7 +1006,7 @@
                   $('#btnIntegrante_'+i).click(function(){
                     $(this).next().toggle();
                   });
-                  $('.rg'+i).mask("99.999.999-99");
+                  $('.rg'+i).mask("99.999.999-9");
                   $('.cpf'+i).mask("999.999.999-99");
                   $('.cep'+i).mask("99999-999");
                   $('.tel'+i).mask("(99) 9999-9999");
@@ -1276,6 +1276,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     //mascaras
+    
     $('.rg').mask("99.999.999-99");
     $('.cpf').mask("999.999.999-99");
     $('.cep').mask("99999-999");
