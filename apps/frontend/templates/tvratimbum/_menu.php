@@ -92,4 +92,4 @@
             </ul>
           </div>
         </div>
-        <!--img class="destaqueTopo" src="/portal/tvratimbum/image/banner-novidade.png" alt="Em Março tem novidade!" /-->
+        <img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="A TV que cresce como você!" />
