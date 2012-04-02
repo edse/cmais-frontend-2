@@ -219,7 +219,7 @@ $(window).load(function() {
           <!-- / BOX PUBLICIDADE 2 -->
           
           <!-- rodape preestreia-->
-            <div class="grid3">
+            <div class="grid3 apoio">
               <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
              </div>
              <!-- /rodape preestreia-->
