@@ -81,13 +81,7 @@
               <!-- /NOTICIA INTERNA -->
 
               <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-              
-              <img src="/portal/images/logos_preestreia.png" alt="patrocínio e apoio" title="patrocínio e apoio" style="margin-top: 20px" usemap="#mapa" />
-              <map name="mapa" id="mapa">
-                <area shape="rect" coords="89,25,187,77" href="http://www.conservatoriodetatui.org.br/" target="_blank" alt="Conservat&oacute;rio Dram&aacute;tico e Musical de Tatu&iacute;" title="Conservat&oacute;rio Dram&aacute;tico e Musical de Tatu&iacute;" />
-                <area shape="rect" coords="222,28,292,76" href="http://www.fasm.edu.br/" target="_blank" alt="Faculdade Santa Marcelina" title="Faculdade Santa Marcelina" />
-              </map>
-
+             
             </div>
             
             <div id="direita" class="grid1">
@@ -121,6 +115,11 @@
               <?php endif; ?>
 
             </div>
+            <!-- rodape preestreia-->
+	        <div class="grid3">
+	          <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
+	         </div>
+	         <!-- /rodape preestreia-->
 
           </div>
           <!-- /CAPA -->

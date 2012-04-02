@@ -168,9 +168,11 @@
                                         
            </div>
            <!-- /DIREITA -->
-           
-           
-           <!-- /DIREITA -->
+           <!-- rodape preestreia-->
+            <div class="grid3">
+              <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
+             </div>
+             <!-- /rodape preestreia-->
           </div>
           <!-- /CAPA -->   
           
