@@ -30,7 +30,7 @@ header('Cache-control: no-cache');
 $image = imagecreatefrompng('button.png');
 
 // Set the font colour
-$colour = imagecolorallocate($image, 183, 178, 152);
+$colour = imagecolorallocate($image, 0, 0, 0);
 
 // Set the font
 $font = '../fonts/Anorexia.ttf';

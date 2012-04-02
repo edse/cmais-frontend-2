@@ -270,7 +270,7 @@
               <!--/Campo Menor de Idade-->
               
               <!--Campo menor Form-->
-              <div class="menorForm" style="display:none;">
+              <div class="menorForm" style="display:block;">
               
                 <!--Campo Nome Responsável-->
                 <div class="linha t7">
@@ -318,7 +318,7 @@
               </a>
               
               <!--Outras-->
-              <div class="outrasinfo" style="display:none;">
+              <div class="outrasinfo" style="display:block;">
               <!--Instrumento-->
               <div class="linha t7">
                 
@@ -662,7 +662,7 @@
   $(document).ready(function(){
       
   //mascaras
-  $('.rg').mask("99.999.999-99");
+  $('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
   $('.tel').mask("(99)9999-9999");

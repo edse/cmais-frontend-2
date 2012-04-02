@@ -173,8 +173,8 @@
                   <br />
                   <select name="sexo-1" id="sexo-1" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-1-->
@@ -210,7 +210,7 @@
                   
                   <!--tel Com-1-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_1" id="telcom_1" class="tel" /><br/>
                   </div>
                   <!--/tel Com-1-->
@@ -290,8 +290,8 @@
                 
                 <!--Nome Respon-1-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_1" id="nomeresponsavel_1" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_1" id="cpf_1" class="cpf required" />
                 </div>
                 <!--/Nome Respon-1-->
                 
@@ -376,8 +376,8 @@
                   <br />
                   <select name="sexo-2" id="sexo-2" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-2-->
@@ -413,7 +413,7 @@
                   
                   <!--tel Com-2-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_2" id="telcom_2" class="tel" /><br/>
                   </div>
                   <!--/tel Com-2-->
@@ -492,8 +492,8 @@
                 
                 <!--Nome Respon-2-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_2" id="nomeresponsavel_2" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_2" id="cpf_2" class="cpf required" />
                 </div>
                 <!--/Nome Respon-2-->
                 
@@ -579,8 +579,8 @@
                   <br />
                   <select name="sexo-3" id="sexo-3" class="required">
                     <option value="" selected="selected">--</option>
-                    <option value="Acre">Fenino</option>
-                    <option value="Alagoas">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
                   </select>
                 </div>
                 <!--/sexo-3-->
@@ -616,7 +616,7 @@
                   
                   <!--tel Com-3-->
                   <div class="linha t8 m10 w204">
-                    <label>Telefone Comercial</label><br/>
+                    <label>Telefone Celular</label><br/>
                     <input type="text" name="telcom_3" id="telcom_3" class="tel"/><br/>
                   </div>
                   <!--/tel Com-3-->
@@ -696,8 +696,8 @@
                 
                 <!--Nome Respon-3-->
                 <div class="linha t9 m10">
-                  <label>Nome do Responsável</label>
-                  <input type="text" name="nomeresponsavel_3" id="nomeresponsavel_3" />
+                  <label>CPF</label>
+                  <input type="text" name="cpf_3" id="cpf_3" class="cpf required" />
                 </div>
                 <!--/Nome Respon-3-->
                 
@@ -810,8 +810,8 @@
                     new_field += '  <br />';
                     new_field += '  <select name="sexo-'+i+'" id="sexo-'+i+'" class="required">';
                     new_field += '    <option value="" selected="selected">--</option>';
-                    new_field += '    <option value="Acre">Fenino</option>';
-                    new_field += '    <option value="Alagoas">Masculino</option>';
+                    new_field += '    <option value="Feminino">Feminino</option>';
+                    new_field += '    <option value="Masculino">Masculino</option>';
                     new_field += '  </select>';
                     new_field += '</div>';
                     new_field += '<!--/sexo-'+i+'-->';
@@ -847,7 +847,7 @@
                       
                     new_field += '  <!--tel Com-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
-                    new_field += '    <label>Telefone Comercial</label><br/>';
+                    new_field += '    <label>Telefone Celular</label><br/>';
                     new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="tel'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/tel Com-'+i+'-->';
@@ -927,8 +927,8 @@
                       
                     new_field += '<!--Nome Respon-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
-                    new_field += '  <label>Nome do Responsável</label>';
-                    new_field += '  <input type="text" name="nomeresponsavel_'+i+'" id="nomeresponsavel_'+i+'" class="required" />';
+                    new_field += '  <label>CPF</label>';
+                    new_field += '  <input type="text" name="cpf_'+i+'" id="cpf_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome Respon-'+i+'-->';
                       
@@ -1006,7 +1006,7 @@
                   $('#btnIntegrante_'+i).click(function(){
                     $(this).next().toggle();
                   });
-                  $('.rg'+i).mask("99.999.999-99");
+                  $('.rg'+i).mask("99.999.999-9");
                   $('.cpf'+i).mask("999.999.999-99");
                   $('.cep'+i).mask("99999-999");
                   $('.tel'+i).mask("(99) 9999-9999");
@@ -1276,7 +1276,8 @@
 <script type="text/javascript">
   $(document).ready(function(){
     //mascaras
-    $('.rg').mask("99.999.999-99");
+    
+    $('.rg').mask("99.999.999-9");
     $('.cpf').mask("999.999.999-99");
     $('.cep').mask("99999-999");
     $('.tel').mask("(99) 9999-9999");
@@ -1413,8 +1414,7 @@
           minlength: 8
         },
         cidade_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_1:{
           required: true,
@@ -1425,12 +1425,10 @@
           minlength: 8
         },
         tempo_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_1:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_1:{
@@ -1482,29 +1480,24 @@
           minlength: 8
         },
         cidade_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_2:{
           required: true,
           email: true
         },
         nomeresponsavel_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         tempo_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_2:{
-          required: true,
-          minlength: 8
+          required: true
         },
         /*
         nome_3:{
@@ -1564,29 +1557,24 @@
           minlength: 8
         },
         cidade_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         email_3:{
           required: true,
           email: true
         },
         nomeresponsavel_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         tempo_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         escolamusica_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         
         professor_3:{
-          required: true,
-          minlength: 8
+          required: true
         },
         /*
         responsavelmenor_3:{
