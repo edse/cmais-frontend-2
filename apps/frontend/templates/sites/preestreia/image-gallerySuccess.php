@@ -200,11 +200,7 @@ $(window).load(function() {
               <?php endif; ?>
 
             </div>
-             <!-- rodape preestreia-->
-            <div class="grid3">
-              <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
-             </div>
-             <!-- /rodape preestreia-->
+             
 
           </div>
           <!-- CAPA -->
@@ -221,6 +217,12 @@ $(window).load(function() {
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
+          
+          <!-- rodape preestreia-->
+            <div class="grid3">
+              <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
+             </div>
+             <!-- /rodape preestreia-->
           
           </div>
           <!-- /CONTEUDO PAGINA -->
