@@ -63,9 +63,9 @@
               <div class="chamada-especial">
                 <p><?php echo $asset->getTitle() ?></p>
               </div>
-              <div class="banner-especial">
+              <!--div class="banner-especial">
                 <img alt="<?php echo $asset->getTitle()?>" src="<?php echo $asset->retriveImageUrlByImageUsage("image-6") ?>" />
-              </div>
+              </div-->
               <div class="box-especial-infoTxt">
                 <h3><?php echo $asset->getDescription() ?></h3>
                 <p><?php echo html_entity_decode($asset->AssetContent->getContent()) ?></p>

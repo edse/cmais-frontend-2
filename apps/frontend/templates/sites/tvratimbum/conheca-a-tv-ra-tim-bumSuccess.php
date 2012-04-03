@@ -96,7 +96,7 @@
                 
                 <!--explicacao-->
                 <div class="explicacao">
-                  <img src="/portal/tvratimbum/image/ex-23.jpg" alt="" />
+                  <img src="/portal/tvratimbum/image/institucional.jpg" alt="" />
                   <p>Caro visitante,</p>
                   <p>Esta &aacute;rea traz informa&ccedil;&otilde;es institucionais da <span class="bold">Funda&ccedil;&atilde;o Padre Anchieta</span>, mantenedora do canal <span class="bold">TV R&aacute; Tim Bum</span>. Nossos objetivos, valores e hist&oacute;ria est&atilde;o dispon&iacute;veis para que voc&ecirc; conhe&ccedil;a um pouco mais do nosso canal, que &eacute; um marco na hist&oacute;ria da TV brasileira.</p>
                 </div>
@@ -269,8 +269,8 @@
                         </dd>
                       </dl>
                       
-                      <p>Além das faixas fixas, o "Cine Rá Tim Bum!" (sábados, às 14h) entra como uma atração especial na programação.</p>
-                      <p class="bold">Estreias do ano</p> 
+                      <p>Além das faixas fixas, o "Cine Rá Tim Bum!" (sábados, às 14h) entra com atrações especiais na programação.</p>
+                      <!--p class="bold">Estreias do ano</p> 
                       <p>Para 2012 novas temporadas de séries de animação já estão em produção:</p>
                       
                       <dl>
@@ -306,7 +306,7 @@
                           <p>Quem nunca se perguntou da onde vem o suor, ou a lágrima, ou o chulé?<br/>
                           Na segunda temporada de Dr. Raio X cada episódio vai trazer de uma forma muito divertida histórias sobre as coisas que saem do nosso corpo.</p>           
                         </dd>
-                      </dl>                        
+                      </dl-->                        
                     
                       <p class="bold">Conteúdo transmedia</p>
                       <p>Cada vez mais o conteúdo produzido para a televisão se expande em outras plataformas de comunicação e tecnologia. Não só para satisfazer o desejo de interação do público com o próprio conteúdo, mas para satisfazer a própria necessidade de interatividade que alguns conteúdos oferecem.<br/>
