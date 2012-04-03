@@ -59,4 +59,4 @@ a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:h
 background-image: url("../image/jplayer.png") !important;}
 .menu-programas .carrossel .jcarousel-item .boxPersonagens-tip img [alt]{color:red !important; background: red;}
 #box-imagens .btn-barra a {padding: 0 10px !important;}
-#box-jogos .btn-barra a {padding: 0 9px!important;}
+#box-jogos .btn-barra a {padding: 0 9px!important;} 
