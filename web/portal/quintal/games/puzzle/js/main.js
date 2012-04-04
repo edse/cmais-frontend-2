@@ -1,7 +1,7 @@
 var context = document.getElementById('puzzle').getContext('2d');
 
 var img = new Image();
-img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa.jpg';
+img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
 img.addEventListener('load', drawTiles, false);
 
 var boardSize = document.getElementById('puzzle').width;
@@ -22,7 +22,69 @@ var solved = false;
 var boardParts = new Object;
 setBoard();
 
+/*
 document.getElementById('scale').onchange = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+*/
+
+bgplay()
+
+function clickplay(){
+  if(this.click.currentTime)
+    this.click.currentTime = 0;
+  this.click.play();
+}
+function bgplay(){
+  if(this.bg.currentTime)
+    this.bg.currentTime = 0;
+  this.bg.play();
+}
+function bgstop(){
+  this.bg.pause();
+  if(this.bg.currentTime)
+    this.bg.currentTime = 0;
+}
+
+document.getElementById('musica').onclick = function() {
+  if(this.value == "Sem música"){
+    this.value = "Com música";
+    bgstop();
+  }
+  else{
+    this.value = "Sem música";
+    bgplay();
+  }
+};
+
+document.getElementById('scale2').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale3').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale4').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale5').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale6').onclick = function() {
   tileCount = this.value;
   tileSize = boardSize / tileCount;
   setBoard();
@@ -35,11 +97,12 @@ document.getElementById('puzzle').onmousemove = function(e) {
 };
 
 document.getElementById('puzzle').onclick = function() {
-  if (distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
+  if(distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
+    clickplay();
     slideTile(emptyLoc, clickLoc);
     drawTiles();
   }
-  if (solved) {
+  if(solved) {
     setTimeout(function() {alert("Huhu! Você resolveu! Tente um nível mais difícil.");}, 500);
   }
 };
