@@ -31,8 +31,6 @@ document.getElementById('scale').onchange = function() {
 };
 */
 
-bgplay()
-
 function clickplay(){
   if(this.click.currentTime)
     this.click.currentTime = 0;
@@ -47,6 +45,10 @@ function bgstop(){
   this.bg.pause();
   if(this.bg.currentTime)
     this.bg.currentTime = 0;
+}
+
+window.onload = function () {
+  document.getElementById('bg').play();
 }
 
 document.getElementById('musica').onclick = function() {
