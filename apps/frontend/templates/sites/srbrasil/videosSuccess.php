@@ -161,19 +161,24 @@ $(function(){
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
-
+          
+           
           <!-- MENU-RODAPE -->
           <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
           <!-- /MENU-RODAPE -->
 
           <!-- BOX PUBLICIDADE 2 -->
-          <div class="box-publicidade pub-grd grid3">
+          <!--div class="box-publicidade pub-grd grid3">
             <!-- srbrasil-assets-728x90 -->
-            <script type='text/javascript'>
+            <!--script type='text/javascript'>
             GA_googleFillSlot("srbrasil-assets-728x90");
             </script>
-          </div>
+          </div-->
           <!-- / BOX PUBLICIDADE 2 -->
+          
+          <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
 
         </div>
         <!-- /CONTEUDO PAGINA -->
