@@ -1,3 +1,18 @@
+    <?php
+      $displays = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset s, Section s2')
+        ->where('s.asset_id = a.id')
+        ->andWhere('s.section_id = s2.id')
+        ->andWhere('a.site_id = 1')
+        ->andWhere('a.asset_type_id = 1')
+        ->andWhere('s2.id = 119')
+        ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+        ->orderBy('a.id desc')
+        ->limit(4)
+        ->execute();
+    ?>
+
     <?php if(isset($displays)): ?>
       <?php if(count($displays) > 0): ?>
         <div id="box-pais">

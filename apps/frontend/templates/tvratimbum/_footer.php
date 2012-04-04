@@ -1,4 +1,4 @@
-    <div class="rodape">
+    <div class="rodapeNovo">
       <div id="menu-rodape">
         <span class="pontaBarra"></span>
         <ul>
@@ -8,7 +8,7 @@
           <li><a href="/atividades">Atividades</a></li>
           <li><a href="/baixar">Baixar</a></li>
           <li><a href="/radio">R&aacute;dio</a></li>
-          <li><a href="/agenda">Agenda</a></li>
+          <li><a href="/vocesabia">Voce Sabia</a></li>
           <li><a href="/especial">Especial</a></li>
           <li><a href="http://cmais.com.br/paraospais"><span>Exclusivo para os pais</span></a></li>
           <li><a href="http://tvcultura.com.br"><span class="logotv"></span>TV Cultura</a></li>

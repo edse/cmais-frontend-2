@@ -50,7 +50,7 @@ a.menor:hover{text-decoration:none; background-color:#6d6969;}
 a.outras:hover{text-decoration:none; background-color:#6d6969;}
 .mb30{margin-bottom: 30px !important;}
 .outras{margin-top:-15px;}
-.apoio {float:left;}
+.apoio {margin:20px 0;}
 .contato form textarea {height: 150px;width: 100%;}
 #captcha .error{width: 292px}
 #captchaimage label{width: 135px !important; margin-top:20px;}

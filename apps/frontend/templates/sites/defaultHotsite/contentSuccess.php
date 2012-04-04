@@ -28,6 +28,12 @@ $(function(){
               <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
             </a>
           </h2>
+          <?php else: ?>
+          <h2>
+            <a href="<?php echo $site->retriveUrl() ?>">
+              <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
+            </a>
+          </h2>
           <?php endif; ?>
           
           <?php if(isset($program) && $program->id > 0): ?>
@@ -231,27 +237,4 @@ $(function(){
     </div>
     <!-- / CAPA SITE -->
     
-<script type='text/javascript'>
-var _sf_async_config={};
-/** CONFIGURATION START **/
-_sf_async_config.uid = 30538;
-_sf_async_config.domain = 'cmais.com.br';
-_sf_async_config.sections = '<?php echo $site->getTitle()?> - <?php $asset->getTitle()?>';  //CHANGE THIS
-_sf_async_config.authors = 'cmais+';    //CHANGE THIS
-/** CONFIGURATION END **/
-(function(){
-  function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime();
-    var e = document.createElement('script');
-    e.setAttribute('language', 'javascript');
-    e.setAttribute('type', 'text/javascript');
-    e.setAttribute('src',
-       (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
-       'js/chartbeat.js');
-    document.body.appendChild(e);
-  }
-  var oldonload = window.onload;
-  window.onload = (typeof window.onload != 'function') ?
-     loadChartbeat : function() { oldonload(); loadChartbeat(); };
-})();
-</script>
+

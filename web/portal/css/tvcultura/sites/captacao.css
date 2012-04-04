@@ -5,6 +5,8 @@
 .msgErro,
 .contato form .linha .enviar { background:#005dab; }
 
+.img-310x186 img{width:310px !important;}
+ 
 .p-puplicidade {
     color: #333333;
     margin-bottom: 18px;

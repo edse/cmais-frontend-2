@@ -52,8 +52,8 @@
         <?php if(isset($displays["baixar"])) include_partial_from_folder('tvratimbum','global/display-1c-baixar', array('displays' => $displays["baixar"])) ?>
         <hr />
         <?php if(isset($displays["imagens"])) include_partial_from_folder('tvratimbum','global/display-1c-imagens', array('displays' => $displays["imagens"])) ?>
-        <hr />
-        <?php if(isset($displays["ta-sabendo"])) include_partial_from_folder('tvratimbum','global/display-1c-tasabendo', array('displays' => $displays["ta-sabendo"])) ?>
+        <!--hr /-->
+        <?php //if(isset($displays["ta-sabendo"])) include_partial_from_folder('tvratimbum','global/display-1c-tasabendo', array('displays' => $displays["ta-sabendo"])) ?>
       </div>
 
       <div class="coluna">
@@ -62,8 +62,8 @@
         <?php if(isset($displays["atividades"])) include_partial_from_folder('tvratimbum','global/display-1c-atividades', array('displays' => $displays["atividades"])) ?>
         <hr />
         <?php if(isset($displays["especial"])) include_partial_from_folder('tvratimbum','global/display-1c-especial', array('displays' => $displays["especial"])) ?>
-        <hr />
-        <?php if(isset($displays["agenda"])) include_partial_from_folder('tvratimbum','global/display-1c-agenda', array('displays' => $displays["agenda"])) ?>
+        <!--hr /-->
+        <?php //if(isset($displays["agenda"])) include_partial_from_folder('tvratimbum','global/display-1c-agenda', array('displays' => $displays["agenda"])) ?>
       </div>
 
       <div class="coluna">
