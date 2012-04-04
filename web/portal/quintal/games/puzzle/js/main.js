@@ -41,11 +41,14 @@ function bgplay(){
     this.bg.currentTime = 0;
   this.bg.play();
 }
-this.bg.play();
 function bgstop(){
   this.bg.pause();
   if(this.bg.currentTime)
     this.bg.currentTime = 0;
+}
+
+window.onload = function () {
+  document.getElementById('bg').play();
 }
 
 document.getElementById('musica').onclick = function() {
