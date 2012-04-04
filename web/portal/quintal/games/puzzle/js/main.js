@@ -31,6 +31,34 @@ document.getElementById('scale').onchange = function() {
 };
 */
 
+
+function clickplay(){
+  if(this.click.currentTime)
+    this.click.currentTime = 0;
+  this.click.play();
+}
+function bgplay(){
+  if(this.bg.currentTime)
+    this.bg.currentTime = 0;
+  this.bg.play();
+}
+function bgstop(){
+  this.bg.pause();
+  if(this.bg.currentTime)
+    this.bg.currentTime = 0;
+}
+
+document.getElementById('musica').onclick = function() {
+  if(this.value == "Sem música"){
+    this.value = "Com música";
+    bgstop();
+  }
+  else{
+    this.value = "Sem música";
+    bgplay();
+  }
+};
+
 document.getElementById('scale2').onclick = function() {
   tileCount = this.value;
   tileSize = boardSize / tileCount;
@@ -68,11 +96,12 @@ document.getElementById('puzzle').onmousemove = function(e) {
 };
 
 document.getElementById('puzzle').onclick = function() {
-  if (distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
+  if(distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
+    clickplay();
     slideTile(emptyLoc, clickLoc);
     drawTiles();
   }
-  if (solved) {
+  if(solved) {
     setTimeout(function() {alert("Huhu! Você resolveu! Tente um nível mais difícil.");}, 500);
   }
 };

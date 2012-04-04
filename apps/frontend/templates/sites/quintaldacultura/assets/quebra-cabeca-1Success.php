@@ -234,13 +234,24 @@
                             <div class="jogosBox interna2">
                               <div class="game" style="border:none; height: 650px;">
                               <div id="slider">
-  <form>
-    <label>F&aacute;cil</label> <input type="button" id="scale" value="2" /> <input type="button" id="scale" value="3" /> <input type="button" id="scale" value="4" /> <input type="button" id="scale" value="5" /> <input type="button" id="scale" value="6" /> 
-    <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label></form>
+  <form style="margin:10px;">
+    <label>F&aacute;cil</label> <input type="hidden" id="scale" value="3" /> <input type="button" id="scale2" value="2" /> <input type="button" id="scale3" value="3" /> <input type="button" id="scale4" value="4" /> <input type="button" id="scale5" value="5" /> <input type="button" id="scale6" value="6" /> 
+    <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label>
+    <input type="button" id="musica" value="Sem música" style="margin-left: 25px;" />
+    <audio id="bg">
+      <source src="/portal/quintal/games/puzzle/audio/bg1.mp3" />
+      <source src="/portal/quintal/games/puzzle/audio/bg1.ogg" />
+    </audio>
+    <audio id="click">
+      <source src="/portal/quintal/games/puzzle/audio/click.mp3" />
+      <source src="/portal/quintal/games/puzzle/audio/click.ogg" />
+    </audio>
+
+  </form>
 </div>
 <div class="main" id="main">
   <canvas height="600px" id="puzzle" width="600px"></canvas></div>
-<script src="http://cmais.com.br/portal/quintal/games/puzzle/js/main.js"></script>                              </div>
+<script src="http://cmais.com.br/test.js"></script>                              </div>
                                 <span class="palhaco"></span> 
                             </div>
                       </div>
