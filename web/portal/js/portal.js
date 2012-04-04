@@ -437,11 +437,12 @@ function ovo(){
 }
 window.onload = function () {
   var ok = false;
-  if(window.location.indexOf("maiscrianca")>=0)
+  var s = String(window.location);
+  if(s.indexOf("maiscrianca")>=0)
     ok = true;
-  if(window.location.indexOf("tvratimbum")>=0)
+  if(s.indexOf("tvratimbum")>=0)
     ok = true;
-  if(window.location.indexOf("quintaldacultura")>=0)
+  if(s.indexOf("quintaldacultura")>=0)
     ok = true;
   if(ok){
     var x = Math.random();
