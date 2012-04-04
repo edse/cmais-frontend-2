@@ -7,7 +7,7 @@
 	 <div id="bg-site"></div>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
+    <div id="capa-site" class="audio">
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
@@ -62,7 +62,7 @@
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo nl2br($asset->getDescription()) ?> </p>  
+                
                 <div class="assinatura grid2">
                   <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
                   <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
@@ -77,7 +77,8 @@
 
                 </div>
                 
-                <div class="texto">
+                <div class="texto bg-cinza">
+                  <div class="grid1">
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
                     <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
                   <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
@@ -85,6 +86,8 @@
                   <?php else: ?>
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
+                  </div>
+                  <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
                 
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
