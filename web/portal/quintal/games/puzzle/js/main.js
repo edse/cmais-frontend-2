@@ -22,7 +22,40 @@ var solved = false;
 var boardParts = new Object;
 setBoard();
 
+/*
 document.getElementById('scale').onchange = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+*/
+
+document.getElementById('scale2').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale3').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale4').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale5').onclick = function() {
+  tileCount = this.value;
+  tileSize = boardSize / tileCount;
+  setBoard();
+  drawTiles();
+};
+document.getElementById('scale6').onclick = function() {
   tileCount = this.value;
   tileSize = boardSize / tileCount;
   setBoard();

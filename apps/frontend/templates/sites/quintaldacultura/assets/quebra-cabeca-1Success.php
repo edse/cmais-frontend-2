@@ -235,7 +235,8 @@
                               <div class="game" style="border:none; height: 650px;">
                               <div id="slider">
   <form>
-    <label>F&aacute;cil</label> <input id="scale" max="6" min="2" step="1" type="range" value="4" /> <label>Dif&iacute;cil</label></form>
+    <label>F&aacute;cil</label> <input type="button" id="scale" value="2" /> <input type="button" id="scale" value="3" /> <input type="button" id="scale" value="4" /> <input type="button" id="scale" value="5" /> <input type="button" id="scale" value="6" /> 
+    <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label></form>
 </div>
 <div class="main" id="main">
   <canvas height="600px" id="puzzle" width="600px"></canvas></div>
