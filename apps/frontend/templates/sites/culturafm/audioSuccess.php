@@ -95,7 +95,7 @@ $(function(){
               <div class="box-interna grid2">
 
                 <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo $asset->getDescription() ?></p>
+                
 
                 <div class="assinatura grid2">
                   <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
@@ -111,14 +111,17 @@ $(function(){
 
                 </div>
                 
-                <div class="texto">
-                  <?php if($asset->AssetType->getSlug() == "person"): ?>
-                    <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
-                  <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
-                    <?php echo html_entity_decode($asset->AssetAudio->render()) ?>
-                  <?php else: ?>
-                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-                  <?php endif; ?>
+                <div class="texto bg-cinza">
+                  <div class="grid1">
+	                  <?php if($asset->AssetType->getSlug() == "person"): ?>
+	                    <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
+	                  <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
+	                    <?php echo html_entity_decode($asset->AssetAudio->render()) ?>
+	                  <?php else: ?>
+	                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+	                  <?php endif; ?>
+                  </div>
+                  <p><?php echo $asset->getDescription() ?></p>
                 </div>
 
 		<a href="javascript: history.go(-1);" class="maisprogramas" style="margin-bottom: 15px;">Voltar</a>

@@ -1,5 +1,3 @@
-@import url("../geral.css");
-
 /** SR BRASIL **/
 #capa-site { background:url(../../../images/capaPrograma/bg-srbrasil.png) no-repeat 600px 2px; }
 #capa-site {_background-image:url(../../../images/capaPrograma/bg-srbrasil.gif);}
@@ -10,15 +8,19 @@
 /** contato Sr. Brasil **/
 .contatoSrBrasil form .t1,
 .contatoSrBrasil form .t1 input,
-.contatoSrBrasil #form-contato label.error{
-	width: 470px!important;
-}
+.contatoSrBrasil #form-contato label.error{width: 470px!important;}
 .contatoSrBrasil form .t2,
-.contatoSrBrasil form .t2 input{
-	width: 150px!important;
-}
+.contatoSrBrasil form .t2 input{width: 150px!important;}
 
 /** /contato Sr. Brasil **/	
+  
+/** /rodape apoio Sr. Brasil **/
+
+.apoio{text-align:left; margin-top:10px}
+.apoio p{padding: 52px 10px; float:left; height:auto;}
+/** /rodape apoio Sr. Brasil **/
+  
+  
 /** /SR BRASIL **/
 
 /** /SR BRASIL **/

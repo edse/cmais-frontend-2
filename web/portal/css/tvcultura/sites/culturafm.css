@@ -140,7 +140,7 @@ form.selecao .item,
 .trompete { background-image:url(/portal/images/capaPrograma/culturafm/trompete.jpg) !important; }
 #barra-site h2 {margin-bottom:20px;}
 .menu-interna { margin-top:0; background:#666; }
-.menu-interna li {margin-right:0; padding:5px 21px 5px 20px; background:#666; }
+.menu-interna li {margin-right:0; padding:5px 20px 5px 20px; background:#666; }
 .menu-interna .m-contato {float:right;}
 .menu-interna li a {text-transform:uppercase; }
 .box-padrao .topo span {display:none;}
@@ -236,12 +236,12 @@ form.selecao .divisa .linha,
 .menu-calendario { margin-top:0; height:40px; float: left; }
 
 p strong {font-weight:bold;}
-.audio .col-dir {width:270px; float:left;} 
+.audio .col-dir {width:312px; float:left;} 
 .audio .col-dir p {color:#666; font-size:12px;}
 .audio .playlist div.jp-playlist ul { padding-left:10px !important; }
 .audio .paraouvir {height:346px;}
 .maisprogramas { float:right; color:#fff; text-decoration: none; margin-top:0px; background: #666; padding:3px 5px; text-transform:uppercase ; font-size:12px; }
-.maisprogramas:hover { background:#333; text-decoration:none; }
+.maisprogramas:hover { background:#333; text-decoration:none; margin-top:10px; }
 .selecao { overflow:hidden; padding:10px 0 0 10px; }
 form.selecao textarea, 
 form.selecao .t3 label, 
@@ -462,9 +462,13 @@ background:#89B6CD;
 
 
 .texto div.jp-playlist ul { border:1px solid #ccc; width:277px; }
-.audio .box-interna .texto { min-height:500px; }
-.audio .box-interna .texto div.jp-audio { margin:100px 150px; float:left; }
-.audio .box-interna h3 { margin-bottom:20px; }
-.audio #barra-site #horario { margin-top:-35px; }
+.audio .box-interna .texto { padding-top:20px; padding-bottom:20px; }
+.audio .box-interna .texto div.jp-audio { float:left; }
+.audio #barra-site #horario { margin-top:-60px; }
+h3 { margin-bottom:20px}
+.audio .texto p { margin:0 20px; float:left; }
+.audio .maisprogramas,
+.audio .assinatura { margin-bottom:50px; }
+.audio h3 { margin-bottom:0; }
 
 /** /RADIO FM  **/
