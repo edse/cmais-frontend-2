@@ -107,8 +107,8 @@
                 <?php if(count($relacionados) > 0): ?>
                   <!-- SAIBA MAIS -->
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                  	<div id="saibamais">                                                            
-                  	<h4>saiba +</h4>                                                            
+                    <div id="saibamais">                                                            
+                    <h4>saiba +</h4>                                                            
                     <ul class="conteudo">
                       <?php foreach($relacionados as $k=>$d): ?>
                         <li style="width: auto;">
@@ -130,7 +130,10 @@
                 <?php endif; ?>
                 
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-
+                
+                <!-- rodape srbrasil-->
+                <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+                <!-- /rodape srbrasil-->
               </div>
               <!-- /NOTICIA INTERNA -->
               
@@ -217,14 +220,21 @@
               <?php endif; ?>
 
               <?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) ?>
-
+              
+              
             </div>
             <!-- /DIREITA -->
 
             </div>
             <!-- /DIREITA -->
+            
+            
+          
           </div>
           <!-- /CAPA -->
+          
+          
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
 

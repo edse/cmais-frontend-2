@@ -156,6 +156,10 @@ $(function(){
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
+          
+          <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
 
           <!-- MENU-RODAPE -->
           <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
