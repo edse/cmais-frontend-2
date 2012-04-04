@@ -237,18 +237,18 @@ $(function(){
                 <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
               </div>
               <form id="page_form" action="" method="post">
-              	<input type="hidden" name="return_url" value="<?php echo $url?>" />
-              	<input type="hidden" name="page" id="page" value="" />
+                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                <input type="hidden" name="page" id="page" value="" />
               </form>
               <script>
-              	function goToPage(i){
-                	$("#page").val(i);
-                	$("#page_form").submit();
-              	}
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
               </script>
               <?php endif; ?>
             <?php endif; ?>
-
+            
             </div>
             <!-- /ESQUERDA -->
             
@@ -279,8 +279,13 @@ $(function(){
             </div>
             <!-- /DIREITA -->
             
+            
           </div>
           <!-- /CAPA -->
+          
+         <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
           
         </div>
         <!-- /CONTEUDO PAGINA -->
