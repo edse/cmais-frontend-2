@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>Puzzle</title>
+  <style>
+  *{ margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <div id="slider">
+    <form>
+      <label>Easy</label>
+      <input type="range" id="scale" value="4" min="2" max="6" step="1">
+      <label>Hard</label>
+    </form>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div>
+      pieces: <input type="text" name="p" id="p" />
+      lines: <input type="text" name="l" id="l" />
+      Pieces width: <input type="text" name="pw" id="pw" />
+      Pieces height: <input type="text" name="ph" id="ph" />
+    </div>
+    <div>
+      moving: <input type="text" name="moving" id="moving" />
+      over: <input type="text" name="over" id="over" />
+      selected: <input type="text" name="selected" id="selected" />
+    </div>
+    <div>
+      x: <input type="text" name="mx" id="mx" />
+      y: <input type="text" name="my" id="my" />
+    </div>
+    <div>
+      p1 x: <input type="text" name="px" id="px" />
+      p1 y: <input type="text" name="py" id="py" />
+    </div>
+    <div>
+      h1 x: <input type="text" name="hx" id="hx" />
+      h1 y: <input type="text" name="hy" id="hy" />
+    </div>
+    <div>
+      h2 x: <input type="text" name="hx2" id="hx2" />
+      h2 y: <input type="text" name="hy2" id="hy2" />
+    </div>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/mouse.js"></script>
+
+    <script src="./js/point2D.js"></script>
+
+    <script src="./js/piece.js"></script>
+    <script src="./js/game.js"></script>
+
+    <script src="./js/main.js"></script>
+    
+  </body>
+</html>

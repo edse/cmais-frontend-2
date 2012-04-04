@@ -182,6 +182,10 @@
           </div>
           <!-- /CAPA -->
           
+          <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
@@ -194,37 +198,37 @@
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-      	$('input#enviar').click(function(){
-      	  $(".msgAcerto, .msgErro").hide();
-      	});
-      	
-      	var validator = $('#form-contato').validate({
-      	  submitHandler: function(form){
-      	  	$.ajax({
-      	  	  type: "POST",
-      	  	  dataType: "text",
-      	  	  data: $("#form-contato").serialize(),
-      	  	  beforeSend: function(){
-      	  	    $('input#enviar').attr('disabled','disabled');
-      	  	    $(".msgAcerto").hide();
-      	  	    $(".msgErro").hide();
-      	  	    $('img#ajax-loader').show();
-      	  	  },
-      	  	  success: function(data){
-     	  	    $('input#enviar').removeAttr('disabled');
-      	  	    window.location.href="#";
-      	  	    if(data == "1"){
-      	  	      $("#form-contato").clearForm();
-      	  	      $(".msgAcerto").show();
-      	  	      $('img#ajax-loader').hide();
-      	  	    }
-      	  	    else {
-      	  	      $(".msgErro").show();
-      	  	      $('img#ajax-loader').hide();
-      	  	    }
-      	  	  }
-      	  	});					
-      	  },
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
           rules:{
             nome:{
               required: true,

@@ -1,10 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $asset->Site->getSlug() ?>.css" type="text/css" />
 
-<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
-<link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/js/audioplayer/jplayer_min.js"></script>
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
@@ -17,9 +13,29 @@
       <div id="barra-site">
 
         <div class="topo-programa">
+          <?php if(isset($program) && $program->id > 0): ?>
           <h2>
-                <h3 class="tit-pagina grid1" style="width: auto">Processo Seletivo - Tutor de Inglês a distância</h3>
+            <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($program->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
+              <?php endif; ?>
+            </a>
           </h2>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+
+          <?php if(isset($program) && $program->id > 0): ?>
+            <!-- horario -->
+            <div id="horario">
+              <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+            </div>
+            <!-- /horario -->
+          <?php endif; ?>
         </div>
 
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
@@ -89,8 +105,6 @@
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
-                	
-                	
                   <!-- SAIBA MAIS -->
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
                   	<div id="saibamais">                                                            
@@ -115,7 +129,7 @@
                   <!-- SAIBA MAIS -->
                 <?php endif; ?>
                 
-                <?php // include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
@@ -129,8 +143,18 @@
               <!-- BOX PADRAO -->
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
+              
+              <!-- BOX PUBLICIDADE -->
+              <div class="box-publicidade grid1">
+                <!-- srbrasil-assets-300x250 -->
+                <script type='text/javascript'>
+                GA_googleFillSlot("srbrasil-assets-300x250");
+                </script>
+              </div>
+              <!-- / BOX PUBLICIDADE -->
 
-              <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
+              <?php //$relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
+              <?php $relacionados = $relatedAssets; ?>
               <?php if(count($relacionados) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
@@ -208,3 +232,6 @@
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
+
+
+

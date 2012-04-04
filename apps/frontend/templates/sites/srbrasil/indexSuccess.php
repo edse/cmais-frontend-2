@@ -76,10 +76,10 @@
               <?php include_partial_from_folder('blocks','global/display-2c-playlist', array('displays' => $displays["destaque-playlist"])) ?>
               
               <style type="text/css">
-            		#esquerda .box-compartilhar .comentar { text-indent:-9999px; }
-            		#esquerda .box-compartilhar .comentar span {display:none;}  
-            		#esquerda .btn-compartilhar {float:left;}
-            	</style>
+                #esquerda .box-compartilhar .comentar { text-indent:-9999px; }
+                #esquerda .box-compartilhar .comentar span {display:none;}  
+                #esquerda .btn-compartilhar {float:left;}
+              </style>
 
               <!-- col-esq -->
               <div class="col-esq grid1">
@@ -175,6 +175,10 @@
             
           </div>
           <!-- /CAPA -->
+          
+          <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
           
         </div>
         <!-- /CONTEUDO PAGINA -->

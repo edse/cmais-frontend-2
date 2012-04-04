@@ -94,6 +94,10 @@
           </div>
           <!-- /CAPA -->
           
+          <!-- rodape srbrasil-->
+          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
+          <!-- /rodape srbrasil-->
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
