@@ -111,7 +111,7 @@ $(function(){
 
                 </div>
                 
-                <div class="texto">
+                <div class="texto bg-cinza">
                   <div class="grid1">
 	                  <?php if($asset->AssetType->getSlug() == "person"): ?>
 	                    <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
