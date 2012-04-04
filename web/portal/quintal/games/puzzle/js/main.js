@@ -53,7 +53,7 @@ window.onload = function () {
 
 document.getElementById('musica').onclick = function() {
   if(this.value == "Sem música"){
-    this.value = "Com música";
+    this.value = "Com música";$("#ovo").animate({ top: 200, height: 450 });
     bgstop();
   }
   else{
