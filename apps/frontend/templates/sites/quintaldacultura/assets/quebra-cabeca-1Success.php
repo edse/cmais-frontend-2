@@ -232,7 +232,7 @@
             <hr />
 
                             <div class="jogosBox interna2">
-                              <div class="game" style="border:none; height: 485px;">
+                              <div class="game" style="border:none; height: 650px;">
                               <div id="slider">
   <form>
     <label>F&aacute;cil</label> <input id="scale" max="6" min="2" step="1" type="range" value="4" /> <label>Dif&iacute;cil</label></form>
