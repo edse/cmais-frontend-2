@@ -478,9 +478,9 @@
 .lista-calendario .grade .mg { margin-left:10px; }
 .lista-calendario .grade .info { font-size:16px; margin:10px; float:left; clear:both; font-weight:bold; }
 .lista-calendario .grade .mais { float:right; font-weight:bold; width:85px; margin-right:10px; background:none; margin-bottom:10px; }
-.lista-calendario .grade .capa-foto img { margin:0; width:200px; float:left; }
+.lista-calendario .grade .capa-foto img { margin:0; width:310px; float:left; }
 .lista-calendario .grade .reprise { color:#ff6633; margin:0 0 10px 0; font-size:12px; font-weight:bold; line-height:14px; }
-.lista-calendario .capa-foto { width:200px; height:120px; overflow:hidden; margin:0 10px 0 0; float:left; }
+.lista-calendario .capa-foto { width:310px; height:186px; overflow:hidden; margin:0 10px 0 0; float:left; }
 .lista-calendario .capa-foto .legenda {  background:#efefef; font-size:10px; color:#666; padding:5px 0 0 5px; width:305px; margin:0; float:left; }
 .lista-calendario .informacoes { margin-left:10px; width:500px; font-weight:bold; font-size:16px; }
 .lista-calendario .informacoes li  { font-size:14px; width:620px; line-height:21px; margin-top:0; margin-bottom:10px; }
