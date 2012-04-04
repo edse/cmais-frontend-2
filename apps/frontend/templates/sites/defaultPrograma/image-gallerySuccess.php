@@ -209,12 +209,12 @@ $(window).load(function() {
           <!-- /MENU-RODAPE -->
 
           <!-- BOX PUBLICIDADE 2 -->
-          <div class="box-publicidade pub-grd grid3">
+          <!--div class="box-publicidade pub-grd grid3">
             <!-- programas-assets-728x90 -->
-            <script type='text/javascript'>
+            <!--script type='text/javascript'>
             GA_googleFillSlot("programas-assets-728x90");
             </script>
-          </div>
+          </div-->
           <!-- / BOX PUBLICIDADE 2 -->
           
           </div>
