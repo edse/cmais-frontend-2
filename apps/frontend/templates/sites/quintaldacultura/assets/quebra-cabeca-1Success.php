@@ -251,7 +251,7 @@
 </div>
 <div class="main" id="main">
   <canvas height="600px" id="puzzle" width="600px"></canvas></div>
-<script src="http://cmais.com.br/test.js"></script>                              </div>
+<script src="/portal/quintal/games/puzzle/main.js"></script>                              </div>
                                 <span class="palhaco"></span> 
                             </div>
                       </div>
