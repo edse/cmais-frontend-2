@@ -364,9 +364,9 @@ class _assetActions extends sfActions
       if(($slug != "content")&&($slug != "person"))
         $this->setLayout(false);
 
-      if($this->asset->getId() == 47459){
-        if($debug) print "<br>5-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/album-de-natal';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/album-de-natal');
+      if($this->asset->getId() == 59156){
+        if($debug) print "<br>5-5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/quebra-cabeca-1Success.php';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/quebra-cabeca-1');
       }
       elseif($this->asset->getSlug() == 'album-de-ferias'){
         if($debug) print "<br>5-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/album-de-ferias';
