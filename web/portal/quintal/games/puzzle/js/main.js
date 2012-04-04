@@ -1,7 +1,7 @@
 var context = document.getElementById('puzzle').getContext('2d');
 
 var img = new Image();
-img.src = '/portal/quintal/games/puzzle/img/quintal.jpg';
+img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa.jpg';
 img.addEventListener('load', drawTiles, false);
 
 var boardSize = document.getElementById('puzzle').width;
