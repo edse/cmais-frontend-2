@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-
     <title>Quebra-cabeça 1 - Quintal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
     <meta name="title" content="Quebra-cabeça 1 - Quintal da Cultura - cmais+ O portal de conteúdo da Cultura" />
 <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
