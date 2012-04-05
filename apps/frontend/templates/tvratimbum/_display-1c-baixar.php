@@ -15,7 +15,7 @@
             <span class="picote"></span>
             <div class="box-btn">
               <div class="btn-cinza"> <!-- exemplo com duas linhas -->
-                <a class="cellular" href="/baixar/toques"><span>Toques para celular</span></a>
+                <a class="cellular btn-inativo" href="#"<!--"/baixar/toques"--><span>Toques para celular</span></a>
               </div>
               <div class="btn-cinza"> <!-- exemplo com uma linha -->
                 <a class="papeis" href="/baixar/papeis-de-parede"><span>Pap&eacute;is de parede</span></a>
