@@ -116,8 +116,12 @@
       <div id="barra-site">
 
         <div class="topo-programa">
-          
+          <?php /*
           <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
+		   */
+		  ?>
+          <h2><img title="Univesp Online - Conhecimento como Bem Público" alt="Univesp Online - Conhecimento como Bem Público" src="/portal/univesptv/images/univesptvcursos_logo.png" /></h2>
+		  <?php /*
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
@@ -130,9 +134,11 @@
           </div>
           <!-- /horario -->
           <?php endif; ?>
-
+		  */ ?>
+		  <h3 style="float:right; padding-top:30px"><img title="Cursos Livres para Todos" alt="Cursos Livres para Todos" src="/portal/univesptv/images/univespcursos_livres.png" /></h3>
         </div>
-
+        
+        <?php /*
         <?php if(isset($siteSections)): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
@@ -152,6 +158,7 @@
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
+		 */ ?>
 
       </div>
       <!-- /BARRA SITE -->
