@@ -23,8 +23,8 @@
 <script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 <script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <style>
-#menu-topo .menu-secoes li a {
-  padding-top: 7px;
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important; 
 }
 </style>
 <script type="text/javascript">
