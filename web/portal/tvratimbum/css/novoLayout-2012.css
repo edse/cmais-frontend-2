@@ -59,4 +59,14 @@ a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:h
 background-image: url("../image/jplayer.png") !important;}
 .menu-programas .carrossel .jcarousel-item .boxPersonagens-tip img [alt]{color:red !important; background: red;}
 #box-imagens .btn-barra a {padding: 0 10px !important;}
-#box-jogos .btn-barra a {padding: 0 9px!important;} 
+#box-jogos .btn-barra a {padding: 0 9px!important;}
+
+#box-baixar a span{height:30px;}
+#box-baixar a.btn-inativo{background:url("../image/botao_inativo.png") no-repeat !important;}
+#box-baixar a.btn-inativo span{color:#c9c9c9 !important; padding-top: 5px !important}
+#box-baixar .btn-cinza a span {width: 146px;display: block;margin-top: -7px;height: 24px;padding-top: 11px;}
+
+#box-atividades a span{height:30px;}
+#box-atividades a.padding span{padding-top: 5px !important}
+#box-atividades .btn-cinza a span {width: 146px;display: block;margin-top: -7px;height: 24px;padding-top: 11px;}
+#box-atividades a.artes:hover{background: url("../image/box-atividades_artes.jpg") no-repeat; text-indent: -9999px; overflow: hidden;}

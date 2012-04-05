@@ -15,7 +15,7 @@
             <span class="picote"></span>
             <div class="box-btn">
               <div class="btn-cinza"> <!-- exemplo com duas linhas -->
-                <a class="experiencias" href="/atividades/experiencias"><span>Experi&ecirc;ncias para todos</span></a>
+                <a class="experiencias padding" href="/atividades/experiencias"><span>Experi&ecirc;ncias para todos</span></a>
               </div>
               <div class="btn-cinza"> <!-- exemplo com uma linha -->
                 <a class="receitas" href="/atividades/receitas"><span>Receitinhas</span></a>
