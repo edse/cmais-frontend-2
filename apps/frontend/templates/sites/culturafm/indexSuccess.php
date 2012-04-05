@@ -6,7 +6,7 @@
 <script>
   number2 = 429;
   $(function(){ 
-	  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tinetti");
+	  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti");
 	 	//var instruments=new Array("trombone");
   	var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
 	  $('div#home').addClass(currentInstrument);
