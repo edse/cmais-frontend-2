@@ -452,8 +452,8 @@ div.jp-jplayer {
 
 /* ESTILO TV */
 /** PLAYER **/
-li,
-div {font-family:arial !important;}
+/*li,
+div {font-family:arial !important;}*/
 div.jp-playlist,
 div.jp-interface {background:#fff;}
 div.jp-audio, 
