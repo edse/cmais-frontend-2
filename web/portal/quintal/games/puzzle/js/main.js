@@ -1,3 +1,5 @@
+window.onload = function () {
+
 //puzzle
 var ca = document.getElementById('puzzle');
 var context = ca.getContext('2d');
@@ -166,4 +168,6 @@ function checkSolved() {
     }
   }
   solved = flag;
+}
+
 }
