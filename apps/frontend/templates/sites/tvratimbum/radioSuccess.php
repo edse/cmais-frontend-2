@@ -22,6 +22,11 @@
 <script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
 <script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 <script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<style>
+#menu-topo .menu-secoes li a {
+  padding-top: 7px;
+}
+</style>
 <script type="text/javascript">
   //carrocel
   $(function(){
