@@ -1,17 +1,17 @@
-window.onload = function () {
-
-//puzzle
-var ca = document.getElementById('puzzle');
-var context = ca.getContext('2d');
-
-var img = new Image();
-img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
-img.addEventListener('load', drawTiles, false);
+init = function () {
+	
+    var canvas = document.getElementById("puzzle");
+    var context = canvas.getContext("2d");
 
 var boardSize = document.getElementById('puzzle').width;
-var tileCount = document.getElementById('scale').value;
+var tileCount = 2;
 
 var tileSize = boardSize / tileCount;
+
+
+var img = new Image();
+img.src = 'cocorico-pascoa-quadrado.jpg';
+img.addEventListener('load', drawTiles, false);
 
 var clickLoc = new Object;
 clickLoc.x = 0;
@@ -25,15 +25,6 @@ var solved = false;
 
 var boardParts = new Object;
 setBoard();
-
-/*
-document.getElementById('scale').onchange = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-*/
 
 function clickplay(){
   if(this.click.currentTime)
@@ -51,9 +42,9 @@ function bgstop(){
     this.bg.currentTime = 0;
 }
 
-window.onload = function () {
-  document.getElementById('bg').play();
-}
+bgplay();
+
+/*
 
 document.getElementById('musica').onclick = function() {
   if(this.value == "Sem música"){
@@ -96,6 +87,8 @@ document.getElementById('scale6').onclick = function() {
   setBoard();
   drawTiles();
 };
+
+*/
 
 document.getElementById('puzzle').onmousemove = function(e) {
   clickLoc.x = Math.floor((e.pageX - this.offsetLeft) / tileSize);
@@ -170,4 +163,8 @@ function checkSolved() {
   solved = flag;
 }
 
+}
+
+window.onload = function () {
+	init();
 }
