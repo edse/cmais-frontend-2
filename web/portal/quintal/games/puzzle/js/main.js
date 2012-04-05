@@ -1,4 +1,6 @@
-var context = document.getElementById('puzzle').getContext('2d');
+//puzzle
+var ca = document.getElementById('puzzle');
+var context = ca.getContext('2d');
 
 var img = new Image();
 img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
