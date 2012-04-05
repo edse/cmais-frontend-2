@@ -73,16 +73,17 @@
 #menu-revista {
   position: absolute;
     width: 308px !important;
-    min-height: 398px;
-    background: url(/portal/images/capaPrograma/captacao/barra-menu.png) no-repeat scroll 0 50% transparent !important;
+    min-height: 434px;
+    background: url(/portal/images/capaPrograma/captacao/barra-menu.png) no-repeat scroll 0 1px transparent !important;
     z-index: 2;
 }
 #conteudo-revista {
-  width:682px !important;
+  width:672px !important;
+  height:480px !important;
   border:1px solid #e5e5e5;
   margin-top: 4px;
   left: 330px;
-    position: absolute; 
+  position: absolute; 
 }
 
 #menu-revista li a {
@@ -148,23 +149,22 @@
 #conteudo-item13 {background: #808f43 !important}
 
 #conteudo-revista .capa-conteudo{
-  width:684px;
+  width:673px;
 
 }
 .mini-destaque{
   width:310px;
-  height:165px;
+  height:188px;
   position:relative;
   float:left;
-  margin-right:5px;
-  margin-top:20px;
+  margin-right:-2px;
+  margin-top:12px;
   margin-left:19px;
 
 }
 .mini-destaque img{
   width:310px !important;
-  height:165px !important;
-
+  height:186px !important;
 }
 
 .mini-destaque .bg{
@@ -183,7 +183,7 @@
 #conteudo-revista .descricao p {
     margin-top: 0;
     max-height: 45px !important;
-    font-size:11px;
+    font-size:12px;
     line-height: 14px;
     margin-left: 20px;
 }
@@ -279,3 +279,5 @@
 }
 
 .box-padrao .topo { margin-bottom:0; }
+
+#conteudo-revista .capa-conteudo {height: 480px !important;}
