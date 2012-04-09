@@ -804,7 +804,7 @@ hr{ clear: both; display: block; height: 0px; visibility: hidden; }
 
 /******** VIDEOS ********/
 #box-videos .chapeu {width:150px; display:none;}
-#box-videos .txt { font-weight:bold; width:149px; font-size:14px; display:block; height:86px; }
+#box-videos .txt { font-weight:bold; width:149px; font-size:14px; display:block; height:84px; }
 #box-videos .carrossel {margin:0; width:310px;}
 #box-videos .carrossel .jcarousel-item {height:330px;}
 #box-videos .carrossel .jcarousel-item .img-150x90 {border:3px solid transparent; display:block; float:left; margin-right:10px; width:144px; height:84px;}
