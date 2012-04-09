@@ -1,0 +1,11 @@
+/* topo site */
+.bg-site {height:100px; position:relative; top:48px; z-index: 0; overflow:hidden; clear:both;}
+#capa-site {margin-top:-52px !important;}
+#capa-site {*margin-top:-100px !important;}
+#barra-site {height:100px; margin:0; width:1012px; }
+.bg-site  {_margin-top:-49px !important;}
+.bg-chamada {width:100%; position:relative; top:48px; overflow:hidden;}
+#chamada { width:970px; margin:0 auto; float:none; margin-top:20px; margin-bottom:20px; padding-left:42px; background: none;}
+.box-topo { margin-left:42px; }
+#barra-site .topo-programa { margin-left:42px; }
+/* /topo site */

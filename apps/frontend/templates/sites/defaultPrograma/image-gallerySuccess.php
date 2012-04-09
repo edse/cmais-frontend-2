@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
 <script type="text/javascript" src="/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
 
@@ -29,11 +30,14 @@ $(window).load(function() {
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- CAPA SITE -->
     <div id="capa-site">
       
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
       <!-- BARRA SITE -->
       <div id="barra-site">
         
@@ -209,12 +213,12 @@ $(window).load(function() {
           <!-- /MENU-RODAPE -->
 
           <!-- BOX PUBLICIDADE 2 -->
-          <!--div class="box-publicidade pub-grd grid3">
+          <div class="box-publicidade pub-grd grid3">
             <!-- programas-assets-728x90 -->
-            <!--script type='text/javascript'>
+            <script type='text/javascript'>
             GA_googleFillSlot("programas-assets-728x90");
             </script>
-          </div-->
+          </div>
           <!-- / BOX PUBLICIDADE 2 -->
           
           </div>

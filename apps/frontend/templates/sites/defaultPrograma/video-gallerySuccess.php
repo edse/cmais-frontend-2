@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <script type="text/javascript">
@@ -38,10 +39,13 @@ $(function(){
     ->execute();
 ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- / CAPA SITE -->
     <div id="capa-site">
-
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
       <div id="barra-site">
