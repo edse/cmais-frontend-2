@@ -431,26 +431,3 @@ $.fn.clearForm = function() {
   	  this.selectedIndex = -1;
   });
 };
-
-function ovo(){
-  $("#ovo").fadeOut();
-}
-window.onload = function () {
-  var ok = false;
-  var s = String(window.location);
-  if(s.indexOf("quebra-cabeca-1")<0){
-	  if(s.indexOf("maiscrianca")>=0)
-	    ok = true;
-	  if(s.indexOf("tvratimbum")>=0)
-	    ok = true;
-	  if(s.indexOf("quintaldacultura")>=0)
-	    ok = true;
-	  if(ok){
-	    var x = Math.random();
-	    if(x <= 0.3){
-	      $("body").append("<div id='ovo' style='position: absolute; top: -300px; left: 550px; z-index:99999;'><a href='http://cmais.com.br/quintaldacultura/quebra-cabeca-1'><img src='/portal/quintal/games/puzzle/img/IMG_pascoa-txt.png' /></a></div>");
-	      $("#ovo").animate({ top: 200, height: 450 });
-	    }
-	  }
-  }
-}
