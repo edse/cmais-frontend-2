@@ -6,7 +6,8 @@
 <script>
   number2 = 429;
   $(function(){ 
-	  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
+	  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete");
+	  //var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
 	  // o codigo acima é uma gambi para aumentar a probabilidade de 'homenagem-tineti' ser sorteado mais vezes
 	 	//var instruments=new Array("trombone");
   	var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
