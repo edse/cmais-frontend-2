@@ -70,3 +70,5 @@ background-image: url("../image/jplayer.png") !important;}
 #box-atividades a.padding span{padding-top: 5px !important}
 #box-atividades .btn-cinza a span {width: 146px;display: block;margin-top: -7px;height: 24px;padding-top: 11px;}
 #box-atividades a.artes:hover{background: url("../image/box-atividades_artes.jpg") no-repeat; text-indent: -9999px; overflow: hidden;}
+
+.box-especial-infoTxt {margin:10px 0 0 0;}
