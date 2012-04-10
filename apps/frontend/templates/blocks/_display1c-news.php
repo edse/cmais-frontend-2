@@ -8,7 +8,7 @@
                   
                   <?php if($displays[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
                   <a href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
-                    <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $displays[0]->getTitle() ?>" name="<?php echo $displays[0]->getTitle() ?>" class="<?php if($displays[0]->Asset->AssetType->getSlug() == "video"):?>img-video<?php endif;?>" />
+                    <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $displays[0]->getTitle() ?>" name="<?php echo $displays[0]->getTitle() ?>"<?php if($displays[0]->Asset->AssetType->getSlug() == "video"):?> class="img-video"<?php endif;?> />
                   </a>
                   <?php endif; ?>
 
