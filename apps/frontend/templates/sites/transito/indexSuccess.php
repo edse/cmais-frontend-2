@@ -861,7 +861,7 @@ function isDevice(OSName)
                         </div>  
                         <table width="674" class"mtop20" cellpadding="1" cellspacing="1">
                           <tr class="table-head">
-                            <td class="sbtopo sbesquerda" width="208">CORREDOR</td>
+                            <td class="sbtopo sbesquerda" width="120">CORREDOR</td>
                             <td class="sbtopo" width="98">SENTIDO</td>
                             <td class="sbtopo" width="117">VIA</td>
                             <td class="sbtopo sbdireita" width="113">LENTIDÃO (km)</td>
