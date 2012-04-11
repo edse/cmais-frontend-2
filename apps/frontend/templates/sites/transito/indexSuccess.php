@@ -899,9 +899,7 @@ function isDevice(OSName)
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:none">
-      <!--
-                        <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=d&amp;source=s_d&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=d&amp;source=embed&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
-      -->
+                        <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cmais.com.br/transito2/maplink.html"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
                      

@@ -1,0 +1,1064 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>TvCultura - Trânsito Online - MapLink</title>
+    <link href="http://static.maplink.com.br/assets/image/favicon_16x16.ico" rel="shortcut icon" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="TvCultura - Trânsito Online - MapLink"/>
+    <meta property="og:image" content="http://static.maplink.com.br/assets/image/logo_maplink.png"/>
+    <meta property="og:site_name" content="MapLink"/>
+    <script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3696422-2']);_gaq.push(['_setDomainName', '.maplink.com.br']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+    <script type="text/javascript" src="http://static.maplink.com.br/assets/cache/0000000000a0c1f15a954de877613d63a4a01ff8d0.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://static.maplink.com.br/assets/cache/13317494184d0792756e91c53dac11eff6f9660f59.js" charset="UTF-8"></script>
+<link type="text/css" rel="stylesheet" href="http://static.maplink.com.br/assets/cache/1331749418e3202aea761d3d587dfcfc43c6982565.css" media="screen" />
+  <style type="text/css">
+  body {margin:0; padding:0;}
+  
+  .infowindow{
+    z-index:99999;
+  }
+  .controle_mapa{
+    font-size:11px;
+    margin:10px 0 0 15px; 
+    border:solid 2px #AAAAAA;
+    position:absolute;
+    top:36px;
+    left:48px;
+    z-index:100;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 0px 4px  #999999; 
+    -moz-border-radius: 5px;
+    -moz-box-shadow:0 0 4px #999999; 
+    border-radius:5px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#EDEDED'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#EDEDED)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #ffffff,  #EDEDED); /* for firefox 3.6+ */
+    box-shadow: 0 0px 4px #999999;
+    opacity:0.90;
+    -moz-opacity: 0.90;
+  }
+  .resumo_transito{display:none;}
+  .tempos_trajeto{display:block;}
+  
+  .resumo_transito .info { border-top:solid 1px #ffffff; border-bottom:solid 1px #DDDDDD; padding:10px;}
+  .tempos_trajeto .info { padding:10px; font-size:11px; color:#666666;}
+  
+  .resumo_transito .legenda { border-top:solid 1px #ffffff; padding:10px; font-size:11px; color:#666666;}
+  .tempos_trajeto .legenda { border-top:solid 1px #DDDDDD; padding:10px; font-size:11px; color:#666666;}
+  
+  .tablewrapper{max-height:200px;overflow:auto;}
+  .tempos_trajeto .info{padding: 10px 10px 0;}
+  
+  h1{
+    font-size:16px;
+    line-height:30px;
+    font-weight:bold;
+    color: #4D4D4D;
+    border-bottom: solid 1px #DDD;
+    padding-left: 7px;
+    display: block;
+    overflow: hidden;
+    margin-bottom:0;
+  }
+  
+  
+  
+  .style1 {background-color:#ffffff;font-weight:bold;border:2px #006699 solid;}
+  .selecao{border-bottom:solid 1px #DDDDDD;padding:10px;}
+  .clear {clear:both;}
+  table.corredores{
+    display:block;
+    margin-bottom:0;
+  }
+  table.corredores tr td{
+    padding:7px 7px 6px;
+    font-size:11px;
+  }
+  table.corredores tr:nth-child(odd){background:#fff;}
+  table.corredores thead td{
+    font-weight:bold;
+    color:#333;
+  }
+  #trechos{display:none;}
+  .marker_special_route{
+    background:transparent url(http://static.maplink.com.br/assets/image/transitoonline/clockbg.png) 50% 50% no-repeat;
+    display:block;
+    font-size:18px;
+    line-height:36px;
+    height:32px;
+    width:32px;
+    font-weight:bold;
+    color:#222;
+    text-shadow: #fff 0 1px 0;
+    text-align:center;
+    letter-spacing:-1px;
+    margin-left: -14px;
+      margin-top: -15px;
+      opacity:0.80;
+    -moz-opacity: 0.80;
+      
+  }
+  table tr td.alignright{
+    text-align:right;
+  }
+  
+  table tr td.aligncenter{
+    text-align:center;
+  }
+  h1,div.selecao{
+    cursor:pointer;
+  }
+  .expandir{
+    text-align:right;
+    margin-left:10px;
+  }
+  
+  a:hover{
+    text-decoration:none;
+  }
+  .legendacores{padding:5px 10px;}
+  .legendapontos{padding:5px;font-size:12px;}
+  .legendapontos img{margin:0 5px;vertical-align:-4px;}
+  #share{
+  padding:10px 0 0;
+  margin:0;
+  float:right;
+  }
+  .topbar {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: visible;
+  }
+  </style>
+  
+</head>
+
+<body onload="init()">  
+  
+  
+  <div id="map_canvas" style="width:100%;margin-top:0px;"></div>
+  
+    
+    <div class="controle_mapa">
+      <div class="selecao">Ver: 
+        <select name="" id="selecao_controle" >
+        <option value="resumo"  >Resumo da cidade</option>
+        <option value="rotas" selected="selected" >Tempos de trajeto</option>
+      </select>
+      <span class="expandir" id="toggle_button">esconder</span>
+    </div>
+    <div class="infowrapper">
+      <!-- Div do resumo de trânsito -->
+        <div id="resumo_transito" class="resumo_transito">
+          <h1><span id="name_city"></span></h1> 
+            <div class="info"> 
+              <p><span class="label verde">&nbsp;&nbsp;&nbsp;</span>&nbsp;<strong>Livre:</strong> <span id="trans_livre"></span> Km</p> 
+              <p><span class="label amarelo">&nbsp;&nbsp;&nbsp;</span>&nbsp;<strong>Fluindo:</strong> <span id="trans_fluindo"></span> Km</p> 
+              <p><span class="label laranja">&nbsp;&nbsp;&nbsp;</span>&nbsp;<strong>Fluxo Intenso:</strong> <span id="trans_intenso"></span> Km</p> 
+              <p><span class="label vermelho">&nbsp;&nbsp;&nbsp;</span>&nbsp;<strong>Lento:</strong> <span id="trans_lento"></span> Km</p> 
+              <p><span class="total"><strong>Lento+Intenso:</strong> <span id="trans_total"></span> km</span></p>
+              <p><span class="totalmonitorado">Total Monitorado: <span id="total_monitorado"></span> km</span></p>
+          </div>
+          <div class="legenda">*Atualizado em: <span id="trans_datetime"></span></div> 
+        </div>
+      <!-- Div do resumo de trânsito -->
+      <!-- Div do tempos de trajeto -->
+      <div id="tempos_trajeto" class="tempos_trajeto">
+        <h1>TvCultura</h1> 
+            <div class="info">
+          <p>Escolha:
+            <select name="" id="selecao_trajeto" style="width:315px;">
+              <option value="default" selected="selected">Selecione</option>
+                            <option value="249" id="50">Aeroporto Congonhas sentido Cumbica</option>
+                            <option value="250" id="51">Aeroporto Cumbica sentido Congonhas </option>
+                            <option value="293" id="123">Av. Aricanduva sentido Pq. do Carmo</option>
+                            <option value="291" id="121">Av. Aricanduva sentido Radial Leste</option>
+                            <option value="292" id="122">Av. Aricanduva sentido Radial Leste (alternativa)</option>
+                            <option value="302" id="132">Av. Brasil sentido Av. Brig. Luís Antônio (Av. Rebouças > Av. Brig. Luís Antônio)</option>
+                            <option value="303" id="133">Av. Brasil sentido Av. Brig. Luís Antônio (Av. Rebouças > Av. Brig. Luís Antônio) (alternativa)</option>
+                            <option value="304" id="134">Av. Brasil sentido Av. Rebouças (Av. Brig. Luís Antônio > Av. Rebouças)</option>
+                            <option value="305" id="135">Av. Brasil sentido Av. Rebouças (Av. Brig. Luís Antônio > Av. Rebouças) (alternativa)</option>
+                            <option value="325" id="155">Av. D. Pedro I sentido Av. do Estado</option>
+                            <option value="326" id="156">Av. D. Pedro I sentido Av. do Estado (alternativa)</option>
+                            <option value="328" id="158">Av. D. Pedro I sentido Av. Dr. Ricardo Jafet</option>
+                            <option value="327" id="157">Av. D. Pedro I sentido Av. Dr. Ricardo Jafet (alternativa)</option>
+                            <option value="281" id="111">Av. dos Bandeirantes sentido Imigrantes (Marginal Pinheiros > Washington Luis)</option>
+                            <option value="280" id="110">Av. dos Bandeirantes sentido Imigrantes (Marginal Pinheiros > Washington Luis) (alternativa)</option>
+                            <option value="313" id="143">Av. dos Bandeirantes sentido Marginal (Vd. Ministro Aliomar Baleeiro > Av. Moreira Guimarães)</option>
+                            <option value="314" id="144">Av. dos Bandeirantes sentido Marginal (Vd. Ministro Aliomar Baleeiro > Av. Moreira Guimarães) (alternativa)</option>
+                            <option value="283" id="113">Av. dos Bandeirantes sentido Marginal (Washington Luis > Marginal Pinheiros)</option>
+                            <option value="282" id="112">Av. dos Bandeirantes sentido Marginal (Washington Luis > Marginal Pinheiros) (alternativa)</option>
+                            <option value="336" id="166">Av. Dr. Arnaldo sentido Av. Rebouças (Av. Sumaré > Av. Rebouças)</option>
+                            <option value="337" id="167">Av. Dr. Arnaldo sentido Av. Rebouças (Av. Sumaré > Av. Rebouças) (alternativa)</option>
+                            <option value="286" id="116">Av. Ibirapuera sentido Bairro (Av. Indianápolis > Av. dos Bandeirantes)</option>
+                            <option value="287" id="117">Av. Ibirapuera sentido Bairro (Av. Indianápolis > Av. dos Bandeirantes) (alternativa)</option>
+                            <option value="284" id="114">Av. Ibirapuera sentido Centro (Av. dos Bandeirantes > Av. Indianápolis)</option>
+                            <option value="285" id="115">Av. Ibirapuera sentido Centro (Av. dos Bandeirantes > Av. Indianápolis) (alternativa)</option>
+                            <option value="404" id="257">Av. Inajar de Souza sentido Bairro (Marginal do Tietê > Pç. Benedito Durval Pestana Barbosa)</option>
+                            <option value="406" id="259">Av. Inajar de Souza sentido Bairro (Marginal do Tietê > Pç. Benedito Durval Pestana Barbosa) (alternativa)</option>
+                            <option value="403" id="256">Av. Inajar de Souza sentido Marginal do Tietê (Pç. Benedito Durval Pestana Barbosa > Marginal do Tietê)</option>
+                            <option value="405" id="258">Av. Inajar de Souza sentido Marginal do Tietê (Pç. Benedito Durval Pestana Barbosa > Marginal do Tietê) (alternativa)</option>
+                            <option value="300" id="130">Av. Paulista sentido Consolação</option>
+                            <option value="301" id="131">Av. Paulista sentido Consolação (alternativa)</option>
+                            <option value="298" id="128">Av. Paulista sentido Paraiso</option>
+                            <option value="299" id="129">Av. Paulista sentido Paraiso (alternativa)</option>
+                            <option value="390" id="243">Av. Prof. Francisco Morato sentido Marginal do Pinheiros (Av. Dr. Ghilherme Dumont Vilares > R. Sapetuba)</option>
+                            <option value="391" id="244">Av. Prof. Francisco Morato sentido Marginal do Pinheiros (Av. Dr. Ghilherme Dumont Vilares > R. Sapetuba) (alternativa)</option>
+                            <option value="399" id="252">Av. Prof. Francisco Morato sentido Rodoanel (R. Sapetuba > Av. Dr. Ghilherme Dumont Vilares)</option>
+                            <option value="400" id="253">Av. Prof. Francisco Morato sentido Rodoanel (R. Sapetuba > Av. Dr. Ghilherme Dumont Vilares) (alternativa)</option>
+                            <option value="310" id="140">Av. Rebouças sentido Av. Dr. Arnaldo (Av. Brig. Faria Lima > R. Estados Unidos)</option>
+                            <option value="311" id="141">Av. Rebouças sentido Av. Dr. Arnaldo (Av. Brig. Faria Lima > R. Estados Unidos) (alternativa)</option>
+                            <option value="276" id="106">Av. Rebouças sentido Av. Dr. Arnaldo (Marginal do Pinheiros > Av. Dr. Arnaldo)</option>
+                            <option value="277" id="107">Av. Rebouças sentido Av. Dr. Arnaldo (Marginal do Pinheiros > Av. Dr. Arnaldo) (alternativa)</option>
+                            <option value="329" id="159">Av. Rebouças sentido Marginal Pinheiros (Av. Dr. Arnaldo > Av. Brig. Faria Lima)</option>
+                            <option value="312" id="142">Av. Rebouças sentido Marginal Pinheiros (Av. Dr. Arnaldo > Av. Brig. Faria Lima) (alternativa)</option>
+                            <option value="279" id="109">Av. Rebouças sentido Marginal Pinheiros (Av. Dr. Arnaldo > Marginal do Pinheiros)</option>
+                            <option value="278" id="108">Av. Rebouças sentido Marginal Pinheiros (Av. Dr. Arnaldo > Marginal do Pinheiros) (alternativa)</option>
+                            <option value="322" id="152">Av. Salim Farah Maluf sentido Av. Prof. Luís Ignácio de Anhaia Melo (Radial Leste > Av. Prof. Luís Ignácio de Anhaia Melo)</option>
+                            <option value="323" id="153">Av. Salim Farah Maluf sentido Av. Prof. Luís Ignácio de Anhaia Melo (Radial Leste > Av. Prof. Luís Ignácio de Anhaia Melo) (alternativa)</option>
+                            <option value="330" id="160">Av. Salim Farah Maluf sentido Radial Leste (Av. Prof. Luís Ignácio de Anhaia Melo > Radial Leste)</option>
+                            <option value="324" id="154">Av. Salim Farah Maluf sentido Radial Leste (Av. Prof. Luís Ignácio de Anhaia Melo > Radial Leste) (alternativa)</option>
+                            <option value="319" id="149">Av. Santo Amaro sentido Av. dos Bandeirantes (R. Alexandre Dumas > Av. dos Bandeirantes)</option>
+                            <option value="320" id="150">Av. Santo Amaro sentido Av. dos Bandeirantes (R. Alexandre Dumas > Av. dos Bandeirantes) (alternativa)</option>
+                            <option value="331" id="161">Av. Santo Amaro sentido R. Alexandre Dumas (Av. dos Bandeirantes > R. Alexandre Dumas)</option>
+                            <option value="321" id="151">Av. Santo Amaro sentido R. Alexandre Dumas (Av. dos Bandeirantes > R. Alexandre Dumas) (alternativa)</option>
+                            <option value="338" id="168">Av. Tiradentes sentido Centro</option>
+                            <option value="339" id="169">Av. Tiradentes sentido Centro (alternativa)</option>
+                            <option value="296" id="126">Corredor Norte-Sul sentido Norte (Av. dos Bandeirantes > Vd. Santa Generosa)</option>
+                            <option value="334" id="164">Corredor Norte-Sul sentido Norte (Av. dos Bandeirantes > Vd. Santa Generosa) (alternativa)</option>
+                            <option value="297" id="127">Corredor Norte-Sul sentido Norte (Vd. Santa Generosa > Pça. da Sé)</option>
+                            <option value="335" id="165">Corredor Norte-Sul sentido Norte (Vd. Santa Generosa > Pça. da Sé) (alternativa)</option>
+                            <option value="294" id="124">Corredor Norte-Sul sentido Sul (Pça. da Sé > Vd. Santa Generosa)</option>
+                            <option value="332" id="162">Corredor Norte-Sul sentido Sul (Pça. da Sé > Vd. Santa Generosa) (alternativa)</option>
+                            <option value="295" id="125">Corredor Norte-Sul sentido Sul (Vd. Santa Generosa > Av. dos Bandeirantes)</option>
+                            <option value="333" id="163">Corredor Norte-Sul sentido Sul (Vd. Santa Generosa > Av. dos Bandeirantes) (alternativa)</option>
+                            <option value="275" id="105">Marginal do Pinheiros sentido Interlagos (Pte. Cidade Jardim > Pte. João Dias)</option>
+                            <option value="274" id="104">Marginal do Pinheiros sentido Interlagos (Pte. Cidade Jardim > Pte. João Dias) (alternativa)</option>
+                            <option value="273" id="103">Marginal do Pinheiros sentido Rod. Pres. Castelo Branco (Pte. João Dias > Pte. Cidade Jardim)</option>
+                            <option value="272" id="102">Marginal do Pinheiros sentido Rod. Pres. Castelo Branco (Pte. João Dias > Pte. Cidade Jardim) (alternativa)</option>
+                            <option value="379" id="232">Marginal do Tietê sentido Marginal Pinheiros (Pte. do Piqueri > Pte. Cidade Universitária)</option>
+                            <option value="380" id="233">Marginal do Tietê sentido Marginal Pinheiros (Pte. do Piqueri > Pte. Cidade Universitária) (alternativa)</option>
+                            <option value="308" id="138">Marginal do Tietê sentido Rod. Ayrton Senna (Pte. Casa Verde > Pte. Tatuapé)</option>
+                            <option value="309" id="139">Marginal do Tietê sentido Rod. Ayrton Senna (Pte. Casa Verde > Pte. Tatuapé) (alternativa)</option>
+                            <option value="306" id="136">Marginal do Tietê sentido Rod. Ayrton Senna (Pte. do Piqueri > Pte. Gov. Orestes Quércia)</option>
+                            <option value="307" id="137">Marginal do Tietê sentido Rod. Ayrton Senna (Pte. do Piqueri > Pte. Gov. Orestes Quércia) (alternativa)</option>
+                            <option value="381" id="234">Marginal do Tietê sentido Rod. Ayrton Senna (Pte. dos Remédios > Vd. Imig. Nordestino)</option>
+                            <option value="382" id="235">Marginal do Tietê sentido Rod. Castelo Branco (Vd. Imig. Nordestino > Pte. dos Remédios)</option>
+                            <option value="341" id="170">Marginal do Tietê sentido Rod. Pres. Castelo Branco (Pte. Casa Verde > Pte. Piqueri)</option>
+                            <option value="342" id="171">Marginal do Tietê sentido Rod. Pres. Castelo Branco (Pte. Casa Verde > Pte. Piqueri) (alternativa)</option>
+                            <option value="271" id="101">Marginal do Tietê sentido Rod. Pres. Castelo Branco (Pte. Jânio Quadros > Pte. Casa Verde)</option>
+                            <option value="270" id="100">Marginal do Tietê sentido Rod. Pres. Castelo Branco (Pte. Jânio Quadros > Pte. Casa Verde) (alternativa)</option>
+                            <option value="205" id="1">Marginal Pinheiros sentido Interlagos (Rod. Castelo Branco > Pte. Transamérica)</option>
+                            <option value="200" id="2">Marginal Pinheiros sentido Rod. Castelo Branco (Pte. Ary Torres > Pte. João Dias)</option>
+                            <option value="290" id="120">Radial Leste sentido Bairro (Av. do Estado > Av. Salim Farah Maluf)</option>
+                            <option value="315" id="145">Radial Leste sentido Bairro (R. da Figueira > Av. Aricanduva)</option>
+                            <option value="316" id="146">Radial Leste sentido Bairro (R. da Figueira > Av. Aricanduva) (alternativa)</option>
+                            <option value="289" id="119">Radial Leste sentido Centro (Av. Salim Farah Maluf > Av. do Estado)</option>
+                            <option value="288" id="118">Radial Leste sentido Centro (Av. Salim Farah Maluf > Av. do Estado) (alternativa)</option>
+                            <option value="317" id="147">Radial Leste sentido Centro (Vd. Cons. Carrão > Vd. Bresser)</option>
+                            <option value="318" id="148">Radial Leste sentido Centro (Vd. Cons. Carrão > Vd. Bresser) (alternativa)</option>
+                            <option value="396" id="249">Rod. Anchieta (SP 150) sentido Rodoanel (Av. Juntas Provisórias > Rodoanel)</option>
+                            <option value="389" id="242">Rod. Anchieta (SP 150) sentido São Paulo (Rodoanel > Av. Juntas Provisórias)</option>
+                            <option value="393" id="246">Rod. Anhanguera (SP 330) sentido Rodoanel (Marginal Tietê > Rodoanel)</option>
+                            <option value="384" id="237">Rod. Anhanguera (SP 330) sentido São Paulo (Rodoanel > Marginal Pinheiros)</option>
+                            <option value="392" id="245">Rod. dos Bandeirantes (SP 348) sentido Rodoanel (Marginal Tietê > Rodoanel)</option>
+                            <option value="383" id="236">Rod. dos Bandeirantes (SP 348) sentido São Paulo (Rodoanel > Marginal Pinheiros)</option>
+                            <option value="397" id="250">Rod. dos Imigrantes (SP 160) sentido Rodoanel (Av. Eliomar Baleeiro > Rodoanel)</option>
+                            <option value="388" id="241">Rod. dos Imigrantes (SP 160) sentido São Paulo (Rodoanel > Av. Eliomar Baleeiro)</option>
+                            <option value="402" id="255">Rod. Pres. Castelo Branco (SP 280) sentido Rodoanel (Marginal Pinheiros > Rodoanel) (Pista central)</option>
+                            <option value="394" id="247">Rod. Pres. Castelo Branco (SP 280) sentido Rodoanel (Marginal Pinheiros > Rodoanel) (Pista Expressa)</option>
+                            <option value="401" id="254">Rod. Pres. Castelo Branco (SP 280) sentido São Paulo (Rodoanel > Marginal Pinheiros) (Pista central)</option>
+                            <option value="385" id="238">Rod. Pres. Castelo Branco (SP 280) sentido São Paulo (Rodoanel > Marginal Pinheiros) (Pista Expressa)</option>
+                            <option value="395" id="248">Rod. Raposo Tavares (SP 270) sentido Rodoanel (Marginal Pinheiros > Rodoanel)</option>
+                            <option value="387" id="240">Rod. Raposo Tavares (SP 270) sentido São Paulo (Rodoanel > Marginal Pinheiros)</option>
+                            <option value="398" id="251">Rod. Régis Bittencourt (BR 116) sentido Rodoanel (Av. Prof. Francisco Morato > Rodoanel)</option>
+                            <option value="386" id="239">Rod. Régis Bittencourt (BR 116) sentido São Paulo (Rodoanel > Av. Prof. Francisco Morato)</option>
+                            <option value="204" id="6">Rodoanel sentido Mauá</option>
+                            <option value="203" id="5">Rodoanel sentido Perus</option>
+                            <option value="343" id="172">Vd. Antártica sentido Av. Dr. Arnaldo (Av. Francisco Matarazzo > Av. Dr. Arnaldo)</option>
+                            <option value="345" id="174">Vd. Antártica sentido Av. Dr. Arnaldo (Av. Francisco Matarazzo > Av. Dr. Arnaldo) (alternativa)</option>
+                            <option value="346" id="175">Vd. Antártica sentido Av. Mq. de São Vicente (Av. Dr. Arnaldo > Av. Mq. de São Vicente)</option>
+                            <option value="344" id="173">Vd. Antártica sentido Av. Mq. de São Vicente (Av. Dr. Arnaldo > Av. Mq. de São Vicente) (alternativa)</option>
+                            
+            </select>
+          </p>
+        </div>
+        <div id="trechos" class="info"></div>
+        <div class="legendacores" style="display:none;">
+          <strong>LEGENDA:</strong>&nbsp;
+          <span class="label verde">Livre</span>
+              <span class="label amarelo">Fluindo</span>
+              <span class="label laranja">Fluxo Intenso</span>
+              <span class="label vermelho">Lento</span>
+        </div>
+        <div class="legendapontos" style="display:none;">
+          <img src="http://static.maplink.com.br/assets/image/transitoonline/marker_special_route_a.png" alt="" />Origem
+          <img src="http://static.maplink.com.br/assets/image/transitoonline/marker_special_route_b.png" alt="" />Destino
+          <img src="http://static.maplink.com.br/assets/image/transitoonline/marker_special_route.png" alt="" />Parada
+        </div>
+          <div class="legenda"></div>
+      </div>
+      <!-- Div do tempos de trajeto -->
+    </div>
+  </div>
+     
+<script src="http://services.maplink.com.br/maplinkapi2/api.ashx?v=4&key=exHwaw3huAH6NXLsNJVWT0NjaDVIGxOAymUFb0RjwnOMNY32ymVrc03OzAHJNvNEyndaaM2jG0HHRBpqzZLvaAF4GJA=" type="text/javascript"></script>
+<script type="text/javascript" src="http://corp.maplink.com.br/maplinkplugin/plugin.ashx?client=25"></script>
+<script type="text/javascript">
+    var Map;
+    var AjaxRequest;
+    var AjaxRequestIncidentes;
+  var LayerIncidentes = null;
+  var arrayLayerSpecialRoutes = [];
+  var listenerRouteTime;
+  var ajaxObjGetSpecialRoutes = null;
+  var ajaxObjGetLastUpdate = null;
+  var lastUpdate = null;
+  var loopSpecialRoutes = null;
+  var loopIncidentes = null;
+  var arrayExcerpt = [];
+  
+    function atualiza_infos() {
+        var center = Map.getCenter();
+        if (AjaxRequest != null)
+            AjaxRequest.abort();
+
+        var currentTime = new Date();
+        var month = currentTime.getMonth() + 1;
+        var day = currentTime.getDate();
+        var year = currentTime.getFullYear();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+
+        var time = ("" + year + month + day + hours + minutes);
+
+        AjaxRequest = $.ajax({
+            url: '/get_location_status_by_latlng',
+            data: ({
+                x: center.x,
+                y: center.y,
+                t: time
+            }),
+
+            success: function (data) {
+                //alert(data);
+                try
+                {
+                  var result = eval(data);
+                  var status = result.statusLength.split(",");
+                  var livre = status[4].substring(0, status[4].indexOf('.'));
+                  var fluindo = status[3].substring(0, status[3].indexOf('.'));
+                  var intenso = status[2].substring(0, status[2].indexOf('.'));
+                  var lento = status[1].substring(0, status[1].indexOf('.'));
+                  var parado = status[0].substring(0, status[0].indexOf('.'));
+                  var total = parseInt(intenso) + parseInt(lento);
+                  var totalMonitorado = parseInt(livre) + parseInt(fluindo) + parseInt(intenso) + parseInt(lento) + parseInt(parado);
+                  var updTime = result.lastUpdate;
+  
+                  var date = updTime.replace("/Date(","");
+                  date = date.replace(")/","");
+  
+                  var d = new Date();
+                  d.setTime(parseInt(date));
+  
+                  var month = d.getMonth() + 1;
+                  var day = d.getDate();
+                  var year = d.getFullYear();
+                  var hours = d.getHours();
+                  if(hours < 10) hours = "0"+hours;
+                  var minutes = d.getMinutes();
+                  if(minutes < 10) minutes = "0"+minutes;
+                  var seconds = d.getSeconds();
+                  if(seconds < 10) seconds = "0"+seconds;
+  
+                  var dateString = day + "/" + month + "/" + year + " - " + hours+":"+minutes+":"+seconds;
+  
+  
+                  $("#name_city").text(result.cityName + ", " + result.stateName);
+                  $("#trans_livre").text(livre);
+                  $("#trans_fluindo").text(fluindo);
+                  $("#trans_intenso").text(intenso);
+                  $("#trans_lento").text(lento);
+                  $("#trans_total").text(total);
+                  $("#trans_datetime").text(dateString);
+                  $("#total_monitorado").text(totalMonitorado);
+                  AjaxRequest = null;
+                }
+                catch(ex){}
+            }
+        });
+    }
+
+    function updateIncidentes()
+    {
+      var bounds = Map.getBounds();
+
+      if (AjaxRequestIncidentes != null)
+        AjaxRequestIncidentes.abort();
+        
+      AjaxRequestIncidentes = $.ajax({
+        url : '/incidentes/get',
+        data : ( {
+          minx : bounds.getSouthWest().x,
+          miny : bounds.getSouthWest().y,
+          maxx : bounds.getNorthEast().x,
+          maxy : bounds.getNorthEast().y,
+          z : ___LBSAPI.CurrentMap.getZoom()
+        }),
+
+        success : function(data) {
+        try{
+            data = eval(data);
+  
+            if (LayerIncidentes != null) {
+              ___LBSAPI.CurrentMap.removeOverlay(LayerIncidentes);
+              LayerIncidentes = null;
+            }
+  
+            LayerIncidentes = new LBS.Layer.Markers();
+            ___LBSAPI.CurrentMap.addOverlay(LayerIncidentes);
+  
+            for ( var i in data) {
+              if((data[i].type == 'cluster') || (data[i].type != 'cluster' && typeof(data[i].title) != 'undefined'))
+              {
+                addMarkerIncidentes(data[i]);
+              }
+            }
+            AjaxRequestIncidentes = null;
+        }
+        catch(ex)
+        {
+        }
+        }
+      });
+    }
+    function addMarkerIncidentes(data)
+    {
+      var latlng = new GLatLng(data.latitude, data.longitude);
+  
+    var icon = new GIcon();
+    icon.iconSize = new GSize(29, 33);
+    icon.iconAnchor = new GPoint(5, 31);
+    icon.infoWindowAnchor = new GPoint(33 / 2, 0);
+  
+    var mmarker = null;
+  
+    if (data.type == 'cluster') {
+      icon.iconSize = new GSize(48, 43);
+      icon.iconAnchor = new GPoint(5, 41);
+      icon.infoWindowAnchor = new GPoint(43 / 2, 0);
+      data.count = parseInt(data.count);
+  
+      if (data.count >= 2 && data.count < 10) {
+        icon.image = "http://static.maplink.com.br/assets/image/pois/incidentes_feiras_" + data.count
+            + ".png";
+      } else {
+        icon.image = "http://static.maplink.com.br/assets/image/pois/incidentes_feiras_10mais.png";
+      }
+      mmarker = new GMarker(latlng, {
+        draggable : false,
+        icon : icon
+      });
+  
+      GEvent.addListener(mmarker, "click", function(latlng) {
+        Map.setCenter(new GLatLng(latlng.object.latlng.y,
+                      latlng.object.latlng.x), 
+                Map.getZoom() + 1);
+      });
+    } else {
+      if (data.category == '13') {
+        icon.image = "http://static.maplink.com.br/assets/image/pois/incidentes_feiras.png";
+      } else {
+        icon.image = "http://static.maplink.com.br/assets/image/pois/incidentes_eventos_acidentes_transito.png";
+      }
+      mmarker = new GMarker(latlng, {
+        draggable : false,
+        icon : icon
+      });
+  
+      var codigoHTML = null;
+      var url = getNameURL() + 'cameras-e-radares/'
+          + data.id + '/' + data.key_name;
+  
+      // tratarDiaDaSemana
+      var weekDay = "";
+      var weekDay1 = "";
+      var weekDay2 = "";
+      var days = [];
+      if(data.week)
+      {
+        days = data.week.split("|");
+        if(days[1])
+        {
+          
+          var day1 = parseInt(days[0]);
+          var day2 = parseInt(days[days.length-1]);
+          if(day1 <= 6 && day1 >= 2  ) {
+            weekDay1 = day1 + "ª feira";
+          }else if (day1 == 1) {
+            weekDay1 = "Domingo";
+          }else if (day1 == 7) {
+            weekDay1 = "Sábado";
+          }
+          
+          if(day2 <= 6 && day2 >= 2  ) {
+            weekDay2 = day2 + "ª feira";
+          }else if (day2 == 1) {
+            weekDay2 = "Domingo";
+          }else if (day2 == 7) {
+            weekDay2 = "Sábado";
+          }
+        }
+        else
+        {
+          
+          var numero = parseInt(data.week);
+          if (numero <= 6 && numero >= 2  ) {
+            weekDay = numero + "ª feira";
+          } else if (numero == 1) {
+            weekDay = "Domingo";
+          } else if (numero == 7) {
+            weekDay = "Sábado";
+          }
+        }
+      }
+      else
+      {
+        weekDay = null;
+      }
+  
+      // tratar horario
+  
+      codigoHTML = "<div class='infowindow'><div style='background-color:#F0F3F6; padding:5px'>";
+      codigoHTML += "<span style='font-weight:bold;font-size:1.0em'>";
+      codigoHTML += data.title;
+      codigoHTML += "</span>";
+      codigoHTML += "</div>";
+      codigoHTML += "<div style='width: 100%; height: 1px; background-color: rgb(204, 204, 204); margin: 0px 0px 3px;'></div>";
+      codigoHTML += "<div style='line-height: 15px;'>";
+      codigoHTML += "<span style='font-weight:bold;font-size:1em;'>Local: </span>"
+          + data.city;
+      if((!weekDay || !weekDay1) && data.category == '13')
+      {
+        codigoHTML += "<br/><span style='font-weight:bold;font-size:1em;'>Dias da semana: </span>";
+        codigoHTML += (weekDay2 != "") ? "de " + weekDay1 + " à " + weekDay2 : weekDay;
+      } 
+      if(data.dateBegin)
+      {
+        codigoHTML += "<br/><span style='font-weight:bold;font-size:1em;'>Horário: </span>"
+          + data.dateBegin;
+        if(data.category == '13')
+          codigoHTML += " - " + data.dateEnd;
+      }
+      //alert(data.category);
+      
+      // codigoHTML += "<br/><span
+      // style='font-weight:bold;font-size:1em;'>Endereço: </span>" +
+      // data.address;
+      codigoHTML += "</div>";
+    
+  
+       GEvent.addListener(mmarker, "click", function(latlng) {
+        mmarker.openInfoWindow(codigoHTML, {
+          maxSize : new GSize(245, 350),
+          minSize : new GSize(245, 150)
+        });
+      });
+    }
+      
+    LayerIncidentes.addMarker(mmarker);
+    }
+
+    function getNameURL() 
+    {
+      var urlTemp;
+      urlTemp = location.href.substring(location.href.indexOf('?') + 1);
+      return urlTemp;
+    }
+    
+    function init() {
+      
+        Map = new MMap2(document.getElementById('map_canvas'));
+
+        Map.paddingForInfoWindow = new LBS.Bounds(50,10,10,10);
+        
+        Map.setCenter(new MPoint(-46.638818,-23.548943),13);
+
+        Map.addLayer(LBS_TRAFFIC_LAYER_2, { 'timeUpdate': 15, 'tileConfigId': '1' });
+
+        //Map.addControl(new GMapTypeControl(), new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(5, 5)));
+        Map.addControl(new GLargeMapControl());
+        
+        //document.getElementById('map_canvas').style.height = (document.body.offsetHeight - 68) + "px";
+        $('#map_canvas').height($(window).height() - $('.topbar').height());
+        Map.checkResize();
+        // alert(document.getElementById('map_canvas').style.height);
+    GEvent.addListener(Map, "moveend", function(r){
+      Atualizadados();
+    });
+        Atualizadados();
+    }
+
+    $(window).resize(function () {
+        $('#map_canvas').height($(window).height() - $('.topbar').height());
+        Map.checkResize();
+    });
+
+    function Atualizadados() {
+        atualiza_infos();
+//        updateIncidentes();
+        loopIncidentes = setTimeout("Atualizadados();", 60000);
+    }
+
+    function cancel_update_incidentes()
+    {
+      if(loopIncidentes != null)
+    {
+      clearTimeout(loopIncidentes);
+    }
+    }
+    
+    $('#selecao_controle').change(function(){
+      cancel_update_special_routes();
+      Map.removeLayer(LBS_TRAFFIC_LAYER_2);
+        remove_layers();
+        if($(this).val() == 'resumo')
+        {
+          $('#resumo_transito').show();
+      $('#tempos_trajeto').hide();
+      Map.addLayer(LBS_TRAFFIC_LAYER_2, { 'timeUpdate': 15, 'tileConfigId': '1' });
+        }
+        else if($(this).val() == 'rotas')
+        {
+//          cancel_update_incidentes();
+          $('#resumo_transito').hide();
+      $('#tempos_trajeto').show();  
+        }
+  });
+    
+    $('#selecao_trajeto').change(function(){
+        
+      if($(this).val() != 'default')
+        {
+        cancel_update_special_routes();
+      update_trechos();
+        }
+        else
+        {       
+          cancel_update_special_routes();
+          remove_layers();  
+          Map.removeLayer(LBS_TRAFFIC_LAYER_2);
+      $('.legendacores, .legendapontos').hide();
+          $('#trechos').hide();
+        }
+  });
+
+    function update_trechos()
+  {
+      checkLastUpdate(get_trechos);
+      loopSpecialRoutes = setTimeout('update_trechos();',60000);
+  }
+
+  function cancel_update_special_routes()
+  {
+    if(loopSpecialRoutes != null)
+    {
+      clearTimeout(loopSpecialRoutes);
+      lastUpdate = null;
+    }
+  } 
+
+  function checkLastUpdate(callback)
+  {
+    if(ajaxObjGetLastUpdate != null)
+    {
+      ajaxObjGetLastUpdate.abort();
+      ajaxObjGetLastUpdate = null;
+    }
+    ajaxObjGetLastUpdate = $.ajax({
+        url : '/special_routes/get_last_update/',
+        success : function(data) {
+        try
+        {
+          data = eval(data);
+          
+          var updTime = data;
+                  
+          if(lastUpdate != updTime)
+          {
+                    lastUpdate = updTime;
+                    
+                    /* parser date */
+            var date = updTime.replace("/Date(","");
+                    date = date.replace(")/","");
+    
+                    var d = new Date();
+                    d.setTime(parseInt(date));
+    
+                    var month = d.getMonth() + 1;
+                    var day = d.getDate();
+                    var year = d.getFullYear();
+                    var hours = d.getHours();
+                    if(hours < 10) hours = "0"+hours;
+                    var minutes = d.getMinutes();
+                    if(minutes < 10) minutes = "0"+minutes;
+                    var seconds = d.getSeconds();
+                    if(seconds < 10) seconds = "0"+seconds;
+    
+                    var dateString = day + "/" + month + "/" + year + " - " + hours+":"+minutes+":"+seconds;
+            
+            $('.tempos_trajeto .legenda').html('*Atualizado em: ' + dateString);
+
+            /* get trechos */
+                    callback();
+          }
+          else
+          {
+            return false;
+          }
+          
+          ajaxObjGetLastUpdate = null;
+        }
+        catch(ex)
+        {
+          return false;
+        }
+      }
+    });
+  }
+
+    function get_trechos()
+    {
+      /* apaga outros layers e carrega novo layer */
+      remove_layers();
+    arrayLayerSpecialRoutes[$('#selecao_trajeto').children("option:selected").attr("id")] = new LBS.Layer.Markers();
+    Map.addOverlay(arrayLayerSpecialRoutes[$('#selecao_trajeto').children("option:selected").attr("id")]);
+    
+    
+    if(ajaxObjGetSpecialRoutes != null)
+    {
+      ajaxObjGetSpecialRoutes.abort();
+      ajaxObjGetSpecialRoutes = null;
+    }
+    ajaxObjGetSpecialRoutes = $.ajax({
+        url : '/special_routes/get_special_excerpt/',
+        data : ( {
+          id : $('#selecao_trajeto').children("option:selected").attr("id")         
+        }),
+        success : function(data) {
+        try
+        {
+            data = eval(data);
+
+            /* cria Array que vai armazenar MPoint para ajustar o zoom */
+          var arrayPoints = [];
+          arrayExcerpt = [];
+                      
+            /* formata lista de trechos na tabela*/
+            var html = '';
+            html += '<div class="tablewrapper">';
+          html += '<table class="corredores">';
+          html += '<thead>';
+          html += ' <td width="250px" colspan="2">Trecho</td>';
+          html += ' <td>Km/h</td>';
+          html += ' <td>Tempo</td>';
+          html += '</thead>';
+          for(var i = 0 ; i < data.length ; i++)
+          {
+            var points = formata_pontos(data[i].points);
+            /* continua formatando lista de trechos na tabela*/
+            html += '<tr>';
+            html += ' <td>' + data[i].situation + '</td>';
+            html += ' <td><a href="javascript:void();" class="link_foco_mapa" id="'+i+'" onclick="set_center_excerpt(' + points[0].x + ',' + points[0].y + ',' + points[1].x + ',' + points[1].y + ');">' + data[i].name.replace('-','<br />')+'</td>';
+            html += ' <td class="aligncenter">'+data[i].speed+'</td>';
+            html += ' <td class="aligncenter">'+data[i].time+'\'</td>';
+            html += '</tr>';
+
+            /* carrega markers de inicio, fim e paradas */
+            arrayPoints.push(new MPoint(points[0].x, points[0].y));
+            arrayPoints.push(new MPoint(points[points.length-1].x, points[points.length-1].y));
+              
+            /* carrega objetos e trechos */
+            arrayExcerpt[i] = {
+                time: data[i].time,
+                points: points,
+                lat: data[i].lat,
+                lng: data[i].lng,
+                flag_origem:data[i].marker_origem,
+                flag_destino:data[i].marker_destino,
+                marker_origem:null,
+                marker_destino:null,
+                marker_tempo:null
+            };
+          }
+          html += '</table>';
+          html += '</div>';
+
+          
+          
+          $('#trechos').html(html);
+
+                        
+              Map.setCenter(new GLatLng(-23.539601,-46.739122),12);
+                            /* carrega markers com os tempos, origem, destino e paradas*/
+              load_route_markers(arrayExcerpt);
+              load_time_markers(arrayExcerpt);
+              listenerRouteTime = GEvent.addListener(Map, "moveend", function(){
+                load_time_markers(arrayExcerpt);
+          });
+              Map.removeLayer(LBS_TRAFFIC_LAYER_2);
+          Map.addLayer(LBS_TRAFFIC_LAYER_2, { 'timeUpdate': 15, 'tileConfigId': $('#selecao_trajeto').val() });
+
+          
+              $('#trechos').show(); 
+          $('.legendacores, .legendapontos').show();
+              ajaxObjGetSpecialRoutes = null;       
+        }
+        catch(ex)
+        {
+          $('#trechos').show();
+          $('.legendacores, .legendapontos').show();
+        }
+        }
+      });
+    }
+
+    function load_time_markers(excerpts)
+    {
+      for (var index in excerpts)
+      {
+        /* carrega tempos */
+        var ponto_medio = new GLatLng(excerpts[index].lat,excerpts[index].lng);
+
+        if(excerpts[index].marker_tempo == null)
+        {
+          excerpts[index].marker_tempo = document.createElement('div');
+        }
+        excerpts[index].marker_tempo.style.visibility='hidden';
+        excerpts[index].marker_tempo.style.position = 'absolute';
+        
+          Map.getPane(G_MAP_FLOAT_PANE).appendChild(excerpts[index].marker_tempo);
+          excerpts[index].marker_tempo.innerHTML = "<div class='marker_special_route' align='left' nowrap >"+excerpts[index].time+"'</div>";
+        
+        var p = Map.getLayerPxFromLatLng(ponto_medio);
+          
+        excerpts[index].marker_tempo.style.left = (p.x) + 'px';
+        excerpts[index].marker_tempo.style.top = (p.y) + 'px';
+  
+        excerpts[index].marker_tempo.style.cursor = 'pointer';
+        excerpts[index].marker_tempo.style.visibility = 'visible';
+      }
+    }
+
+    function set_center_excerpt(x1,y1,x2,y2)
+    {
+        var arrayPoints = Array();
+        arrayPoints.push(new MPoint(x1,y1));
+        arrayPoints.push(new MPoint(x2,y2));
+        
+      // obtem o zoom para mostrar todos os pontos adicionados no mapa
+        var z = Map.getZoomForPoints(arrayPoints);
+        // obtem o extent dos pontos
+        var b = LBS.Bounds.fromArray(arrayPoints);
+        // seta o novo centro do mapa
+        Map.setCenter(b.getCenter(),z-1);
+    }
+
+    function load_route_markers(excerpts)
+    {
+      if($(".marker_special_route").length != 0)
+        {
+        $(".marker_special_route").remove();
+        }
+        for (var index in excerpts)
+        {
+      /* carrega markers */
+      var latlng = new GLatLng(excerpts[index].points[0].y, excerpts[index].points[0].x);
+      
+      var icon = new GIcon();
+      icon.iconSize = new GSize(18, 18);
+      icon.iconAnchor = new GPoint(9, 9);
+      icon.infoWindowAnchor = new GPoint(9, 9);
+      if(excerpts[index].flag_origem == '1')
+      {
+        icon.image = "http://static.maplink.com.br/assets/image/transitoonline/marker_special_route_a.png";
+      }
+      else
+      {
+        icon.image = "http://static.maplink.com.br/assets/image/transitoonline/marker_special_route.png";
+      }
+      excerpts[index].marker_origem = new GMarker(latlng, {draggable : false,icon : icon});
+
+      arrayLayerSpecialRoutes[$('#selecao_trajeto').children("option:selected").attr("id")].addMarker(excerpts[index].marker_origem);
+      if(excerpts[index].flag_origem == '0')
+      {
+        excerpts[index].marker_origem.hide();
+      }
+    
+      var latlng = new GLatLng(excerpts[index].points[excerpts[index].points.length-1].y, excerpts[index].points[excerpts[index].points.length-1].x);
+      
+      var icon = new GIcon();
+      icon.iconSize = new GSize(18, 18);
+      icon.iconAnchor = new GPoint(9, 9);
+      icon.infoWindowAnchor = new GPoint(9, 9);
+      if(excerpts[index].flag_destino == '1')
+      {
+        icon.image = "http://static.maplink.com.br/assets/image/transitoonline/marker_special_route_b.png";
+      }
+      else
+      {
+        icon.image = "http://static.maplink.com.br/assets/image/transitoonline/marker_special_route.png";
+      }
+      
+    
+      excerpts[index].marker_destino = new GMarker(latlng, {draggable : false,icon : icon});
+            
+      arrayLayerSpecialRoutes[$('#selecao_trajeto').children("option:selected").attr("id")].addMarker(excerpts[index].marker_destino);
+
+      if(excerpts[index].flag_destino == '0')
+      {
+        excerpts[index].marker_destino.hide();
+      }
+    
+           
+        }
+    }
+
+    function formata_pontos(points)
+    {
+        var new_points = Array();
+      var aux_points = points.split(';');
+      for(var i=0; i<aux_points.length; i++)
+      {
+          if(i==0 || i==aux_points.length-1)
+          {
+          var aux_point = aux_points[i].split(',');
+          new_points.push({
+              x: aux_point[0],
+              y: aux_point[1]
+          });
+          }
+      }
+      return new_points;
+    }
+
+    function remove_layers()
+    {
+        if($(".marker_special_route").length != 0)
+        {
+        $(".marker_special_route").remove();
+        }
+        if(listenerRouteTime)
+        {
+        GEvent.removeListener(listenerRouteTime);
+        }
+      for(var index in arrayLayerSpecialRoutes)
+        {
+          if (arrayLayerSpecialRoutes[index]) {
+          Map.removeOverlay(arrayLayerSpecialRoutes[index]);
+          arrayLayerSpecialRoutes[index] = null;
+        }
+        }
+    }
+
+    $(function() {
+      /* arraste da DIV de controle_mapa */
+      $(".controle_mapa").draggable({ 
+          containment: 'parent',
+          cursor: 'move',
+          handle: 'h1,div.selecao'
+    });
+      /* acao de esconder/expandir do controle_mapa */
+    $("#toggle_button").click(function(){
+      $(".infowrapper").slideToggle('fast',function(){
+        var text = $("#toggle_button").text();
+        if(text == 'expandir')
+        {
+          $("#toggle_button").text('esconder');
+        }
+        else
+        {
+          $("#toggle_button").text('expandir');
+        }
+      });
+      
+    });
+    /* efeito menu superior */
+    $('.topbar').dropdown();
+    /* efeito de destaque para o trecho com hover */
+    $("a.link_foco_mapa").live('mouseover',function(){
+          var index = $(this).attr('id');
+          for(var i in arrayExcerpt)
+          {
+            if (i != index)
+            {
+              arrayExcerpt[i].marker_tempo.style.opacity = 0.5;
+              if(arrayExcerpt[i].flag_origem != '0')
+              {
+                arrayExcerpt[i].marker_origem.setOpacity(0.35);
+              }
+              if(arrayExcerpt[i].flag_destino != '0')
+              {
+                arrayExcerpt[i].marker_destino.setOpacity(0.35);
+              }
+            }
+            else
+            {
+              if(arrayExcerpt[i].flag_origem == '0')
+              {
+                arrayExcerpt[i].marker_origem.show();
+              }
+              if(arrayExcerpt[i].flag_destino == '0')
+              {
+                arrayExcerpt[i].marker_destino.show();
+              }
+            }
+          }
+    });
+    /* remove efeito de destaque para o trecho com hover */
+    $("a.link_foco_mapa").live('mouseout',function(){
+      var index = $(this).attr('id');
+          for(var i in arrayExcerpt)
+          {
+            if (i == index)
+            {
+              if(arrayExcerpt[i].flag_origem == '0')
+              {
+                arrayExcerpt[i].marker_origem.hide();
+              }
+              if(arrayExcerpt[i].flag_destino == '0')
+              {
+                arrayExcerpt[i].marker_destino.hide();
+              }
+            }
+            else
+            {
+              arrayExcerpt[i].marker_tempo.style.opacity = 1;
+              if(arrayExcerpt[i].flag_origem != '0')
+              {
+                arrayExcerpt[i].marker_origem.setOpacity(1);
+              }
+              if(arrayExcerpt[i].flag_destino != '0')
+              {
+                arrayExcerpt[i].marker_destino.setOpacity(1);
+              }
+            }
+          }
+    });
+    });
+        $(window).load(function(){
+    var array = $('#selecao_trajeto option');
+      $(array[1]).attr('selected',true);
+      $('#selecao_trajeto').trigger('change');
+    });
+    
+            
+</script>
+</body> 
+</html>
