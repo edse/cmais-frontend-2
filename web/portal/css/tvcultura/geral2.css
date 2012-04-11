@@ -66,7 +66,7 @@
 .box-listao .box-texto .txt-12,
 .box-listao .box-texto .txt-16 { font-weight:bold; }
 .box-listao .box-texto a { margin-top:0; }
-.box-listao .fonte {font-size:10px; font-weight:bold;}
+.box-listao .fonte {font-size:10px; font-weight:bold; display: none;}
 .box-listao .fonte a {font-size:10px;}
 .abas-conteudo #todos { display:block;}
 .abas-conteudo #noticias,
