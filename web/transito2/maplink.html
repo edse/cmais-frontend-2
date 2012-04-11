@@ -434,6 +434,7 @@
 
         AjaxRequest = $.ajax({
             url: 'http://maplink.com.br/get_location_status_by_latlng',
+            dataType: "jsonp"
             data: ({
                 x: center.x,
                 y: center.y,
