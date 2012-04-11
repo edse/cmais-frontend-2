@@ -139,10 +139,104 @@
   
 </head>
 
-<body onload="init()">  
-  
-  
-  <div id="map_canvas" style="width:100%;margin-top:0px;"></div>
+<body onload="init()">
+  <!-- topo --> 
+  <div class="topbar" data-dropdown="dropdown">
+    <div class="topbar-inner fill">
+      <div class="container">
+        <h3><a class="minilogo" href="/">MapLink</a></h3>
+        <ul class="nav">
+            <li><a href="/">Mapas e Rotas</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="javascript:void(0);">Trânsito</a>
+              <ul class="dropdown-menu">
+                <li><a href="/transito">Ver página principal</a></li>
+                <li><a href="/corredores">Ver trânsito na sua cidade</a></li>
+                <li><a href="/rodovias">Trânsito nas rodovias</a></li>
+                <li><a href="/cameras">Câmeras de trânsito</a></li>
+                <li><a href="/radares">Radares</a></li>
+                <li><a href="/noticias">Notícias de trânsito</a></li>
+                <li><a href="/transitorodizio">Rodízio em São Paulo</a></li>
+                <li><a href="/monitor" target="_blank">Monitor de trânsito MapLink</a></li>
+              </ul>
+            </li>
+            <li><a href="/webservices">Soluções para sua empresa</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#">Outros produtos</a>
+              <ul class="dropdown-menu">
+                <li>
+                <a href="/webservices" target="_blank">
+                  <strong>WebServices</strong>
+                  <br />
+                  <span class="productdescription">Soluções para sua empresa</span>
+                </a>
+              </li>
+                <li class="divider"></li>
+                <li>
+                <a href="http://www.guia4rodasrodoviariopro.com.br/?or=nossos_produtos" target="_blank">
+                  <strong>Guia Quatro Rodas Rodoviário Pro</strong>
+                  <br />
+                  <span class="productdescription">Calcule gastos e planeje as viagens da sua frota</span>
+                </a>
+              </li>
+                <li>
+                <a href="http://www.maplinkearthpro.com.br/" target="_blank">
+                  <strong>Google Earth Pro</strong>
+                  <br />
+                  <span class="productdescription">Use os serviços Google de forma profissional e legal em seus negócios</span>
+                </a>
+              </li>
+                <li>
+                <a href="http://rum.maplink.com.br" target="_blank">
+                  <strong>RUM</strong>
+                  <br />
+                  <span class="productdescription">Roteirizador Urbano Multiponto</span>
+                </a>
+              </li>
+                <li>
+                <a href="http://rmt.maplink.com.br" target="_blank">
+                  <strong>RMT</strong>
+                  <br />
+                  <span class="productdescription">Roteirizador Multiponto Transportes</span>
+                </a>
+              </li>
+                <li>
+                <a href="/widgets" target="_blank">
+                  <strong>Widgets</strong>
+                  <br />
+                  <span class="productdescription">Coloque o MapLink no seu site</span>
+                </a>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          <div id="share" class="clearfix" style="z-index:100;">
+  <div class="left">
+    <div class="fb-like"
+       
+      data-send="false" 
+      data-layout="button_count" 
+      data-width="50" 
+      data-show-faces="false">
+        </div>
+  </div>
+  <div class="left">
+    <a href="http://twitter.com/share"
+            class="twitter-share-button"
+                  data-count="horizontal"
+      data-via="maplink" 
+      data-related="maplink:MapLink no Twitter,transito_sp:Informações de trânsito em São Paulo,transito_rio:Informações de trânsito no Rio de Janeiro"
+      data-lang="pt">Tweet</a>
+  </div>
+  <div class="left">
+    <g:plusone
+                        size="medium">
+        </g:plusone>
+  </div>
+</div>            </div>
+    </div><!-- /topbar-inner -->
+  </div>
+  <div id="map_canvas" style="width:100%;margin-top:40px;"></div>
   
     
     <div class="controle_mapa">
@@ -339,7 +433,7 @@
         var time = ("" + year + month + day + hours + minutes);
 
         AjaxRequest = $.ajax({
-            url: '/get_location_status_by_latlng',
+            url: 'http://maplink.com.br/get_location_status_by_latlng',
             data: ({
                 x: center.x,
                 y: center.y,
@@ -682,7 +776,7 @@
       ajaxObjGetLastUpdate = null;
     }
     ajaxObjGetLastUpdate = $.ajax({
-        url : '/special_routes/get_last_update/',
+        url : 'http://maplink.com.br/special_routes/get_last_update/',
         success : function(data) {
         try
         {
