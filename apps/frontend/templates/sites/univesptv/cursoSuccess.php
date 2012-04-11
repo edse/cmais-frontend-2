@@ -75,7 +75,7 @@ $asset = $pager->getCurrent();
                 <!-- ESQUERDA -->
                 <div id="esquerda" class="grid2">
                   <h3><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a></h3>
-                  <p class="bold" style="margin-bottom: 10px;"><?php echo html_entity_decode($program->getSchedule()) ?></p>
+                  <p class="bold" style="margin-bottom: 10px;"><?php echo html_entity_decode($site->getDescription()) ?></p>
                     
                   <?php if(count($pager) > 0): ?>
                     <?php $asset = null; foreach($pager->getResults() as $asset): ?>
@@ -88,11 +88,11 @@ $asset = $pager->getCurrent();
                         <?php if($pager->haveToPaginate()): ?>
                         <div class="paginacao pag3 grid2">
                           <?php if($page != $pager->getNextPage()): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>
+                          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"> Próxima aula</a>
                           <?php endif; ?>
-                          <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a>
+                          <!-- <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a> -->
                           <?php if(($page!="")&&($page != $pager->getPreviousPage())): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
+                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"> Aula anterior</a>
                           <?php endif; ?>
                         </div>
 				        <form id="page_form" action="" method="post">
