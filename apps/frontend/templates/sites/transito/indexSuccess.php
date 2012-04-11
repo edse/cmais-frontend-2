@@ -114,18 +114,18 @@ function isDevice(OSName)
                 <p>CÂMERAS DE SÃO PAULO</p>
                 <form id="opcoes-livestream" action="" method="post">
                   <select id="opcao-livestream-1" class="required">
-                    <option value="8" selected="selected">Av. Pompéia</option>
+                    <option value="6" selected="selected">Av. Dummont Villares</option>
+                    <option value="8">Av. Pompéia</option>
                     <option value="3">Av. Tiradentes</option> 
                     <option value="5">Marginal Pinheiros - Estação Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
                     <option value="1">Marginal Tietê</option>
                     <option value="2">Radial Leste X Salim Farah Maluf</option>
                     <option value="7">Radial Leste - Metrô Tatuapé</option>
-                    <option value="6">Santana</option>
                   </select> 
                 </form>
 
-                <div id="livestream"><img src="http://200.136.27.15/cameras/img_pompeia.php"  style="width: 310px; height: 240px;" alt="Av. Pompéia"></div>
+                <div id="livestream"><img src="http://200.136.27.15/cameras/img_santana.php"  style="width: 310px; height: 240px;" alt="SESC Santana"></div>
                 
                 <script>
                     $(document).ready(function() {
@@ -614,7 +614,7 @@ function isDevice(OSName)
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
                       <img src="http://200.136.27.15/cameras/img_santana.php"  alt="SESC Santana">
-                      <h4>Santana</h4>  
+                      <h4>Avenida Dummont Villares</h4>  
                       <p></p>
                     </div>
                   </div>
@@ -899,9 +899,9 @@ function isDevice(OSName)
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:none">
-			<!--
+      <!--
                         <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=d&amp;source=s_d&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=d&amp;source=embed&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
-			-->
+      -->
                      </li>
                      <!--MAPA SAO PAULO--> 
                      
@@ -952,14 +952,14 @@ function isDevice(OSName)
                       }
                       </script>
                       <div class="youtube">
-                      	<a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
-                      	<div id="ytdContainer-1001"></div>
-                      	
+                        <a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
+                        <div id="ytdContainer-1001"></div>
+                        
                       </div>
                       <div class="participe">
-                      	<div class="img-enviar"></div>
-                      	<a href="#" class="titulos">Participe! Envie seu vídeo.</a>
-                      	<!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
+                        <div class="img-enviar"></div>
+                        <a href="#" class="titulos">Participe! Envie seu vídeo.</a>
+                        <!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
                       </div>
                      </li>
                      <!--PORTAL DE VIDEOS-->      
