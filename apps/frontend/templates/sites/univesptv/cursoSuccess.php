@@ -88,11 +88,11 @@ $asset = $pager->getCurrent();
                         <?php if($pager->haveToPaginate()): ?>
                         <div class="paginacao pag3 grid2">
                           <?php if($page != $pager->getNextPage()): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"> Próxima aula</a>
+                          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo" style="width: 110px; background-position: 91px -34px;"> Próxima aula</a>
                           <?php endif; ?>
                           <!-- <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a> -->
                           <?php if(($page!="")&&($page != $pager->getPreviousPage())): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"> Aula anterior</a>
+                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior" style="width: 110px; padding-left: 20px;"> Aula anterior</a>
                           <?php endif; ?>
                         </div>
 				        <form id="page_form" action="" method="post">
