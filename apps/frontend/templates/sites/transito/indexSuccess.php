@@ -326,6 +326,7 @@ function isDevice(OSName)
                   $('.conteudo-mapa-sao-paulo').fadeIn('slow');
                   $('.btn-cameras-ao-vivo, .btn-portal-de-videos').removeClass('ativo');
                   $(this).addClass('ativo');
+                  self.open("http://maplink.com.br/transitoonline/tvcultura_2");
                 });  
                 
                 $('.btn-portal-de-videos').click(function(){
@@ -899,8 +900,7 @@ function isDevice(OSName)
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:none">
-                       
-                        <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cmais.com.br/transito2/maplink.html"></iframe>
+                        <!-- <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cmais.com.br/transito2/maplink.html"></iframe> -->
                      </li>
                      <!--MAPA SAO PAULO--> 
                      
