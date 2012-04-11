@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -434,7 +433,7 @@
 
         AjaxRequest = $.ajax({
             url: 'http://maplink.com.br/get_location_status_by_latlng',
-            dataType: "jsonp"
+            dataType: "jsonp text xml",
             data: ({
                 x: center.x,
                 y: center.y,
@@ -442,7 +441,7 @@
             }),
 
             success: function (data) {
-                //alert(data);
+                alert(data);
                 try
                 {
                   var result = eval(data);
@@ -777,53 +776,13 @@
       ajaxObjGetLastUpdate = null;
     }
     ajaxObjGetLastUpdate = $.ajax({
-        url : 'http://maplink.com.br/special_routes/get_last_update/',
+        url: 'http://maplink.com.br/special_routes/get_last_update/',
+        dataType: "jsonp text xml",
         success : function(data) {
-        try
-        {
-          data = eval(data);
           
-          var updTime = data;
-                  
-          if(lastUpdate != updTime)
-          {
-                    lastUpdate = updTime;
-                    
-                    /* parser date */
-            var date = updTime.replace("/Date(","");
-                    date = date.replace(")/","");
-    
-                    var d = new Date();
-                    d.setTime(parseInt(date));
-    
-                    var month = d.getMonth() + 1;
-                    var day = d.getDate();
-                    var year = d.getFullYear();
-                    var hours = d.getHours();
-                    if(hours < 10) hours = "0"+hours;
-                    var minutes = d.getMinutes();
-                    if(minutes < 10) minutes = "0"+minutes;
-                    var seconds = d.getSeconds();
-                    if(seconds < 10) seconds = "0"+seconds;
-    
-                    var dateString = day + "/" + month + "/" + year + " - " + hours+":"+minutes+":"+seconds;
-            
-            $('.tempos_trajeto .legenda').html('*Atualizado em: ' + dateString);
+          alert(data.substring(data.indexOf('/'), data.indexOf('\\')));
 
-            /* get trechos */
-                    callback();
-          }
-          else
-          {
-            return false;
-          }
-          
-          ajaxObjGetLastUpdate = null;
-        }
-        catch(ex)
-        {
-          return false;
-        }
+
       }
     });
   }
