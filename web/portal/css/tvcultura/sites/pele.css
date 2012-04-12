@@ -2,3 +2,4 @@
 .bg-chamada { background:#ecc752; }
 .bg-site { background :url(/portal/images/capaPrograma/pele/bg.jpg) repeat-x; }
 #barra-site .topo-programa { background:url(/portal/images/capaPrograma/pele/bolaPele.jpg) no-repeat right; }
+.noticia .img-video { width:310px; margin:0; }
