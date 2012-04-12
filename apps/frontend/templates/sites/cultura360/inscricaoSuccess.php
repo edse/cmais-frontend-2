@@ -68,7 +68,7 @@
                 <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>
                 <!-- <p class="titulos">Pellentesque volutpat rutrum metus nec vulputate</p>-->
                 <!-- <p><?php echo $section->getDescription()?></p> -->
-                <p>O programa Cultura 360 é uma parceria entre a Fundação Padre Anchieta e a Associação Brasileira de Televisão Universitária. Na Tv Cultura serão exibidos, por programa, três vídeos de 6 minutos cada. Na página do Cultura 360, além dos vídeos de 6 minutos, poderão participar vídeos de 1 minuto e 30 segundos (podendo ser exibidos em programa especial). Leia o <a href="http://cmais.com.br/regulamento-cultura-360" target="_blank" style="font-weight:bold">Regulamento</a>.</p>
+                <p>O programa Cultura 360 é uma parceria entre a Fundação Padre Anchieta e a Associação Brasileira de Televisão Universitária. Na Tv Cultura serão exibidos, por programa, três vídeos de 6 minutos cada. Na página do Cultura 360, além dos vídeos de 6 minutos, poderão participar vídeos de 1 minuto e 30 segundos (podendo ser exibidos em programa especial). Leia o <a href="http://tvcultura.cmais.com.br/cultura360/regulamento-cultura-360" target="_blank" style="font-weight:bold">Regulamento</a>.</p>
                 <div class="msgErro" style="display:none">
                                       <span class="alerta"></span>
                                         <div class="boxMsg">
