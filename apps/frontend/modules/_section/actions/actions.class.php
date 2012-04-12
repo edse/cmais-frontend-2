@@ -412,7 +412,7 @@ class _sectionActions extends sfActions
             ->execute();
         }
         else{
-          if($this->site->Program->Channel->getSlug() == "univesptv"){
+          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
