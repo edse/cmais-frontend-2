@@ -787,11 +787,12 @@ class _sectionActions extends sfActions
     		if($request->getParameter('debug') != "")
     			echo ">>>>>>não disciplina";
     		$this->assetsQuery = Doctrine_Query::create()
-	    		->select('a.*')
-	    		->from('Asset a')
-	    		->where('a.site_id = ?', (int)$this->site->getId())
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $this->section->id)
+          ->andWhere('sa.asset_id = a.id')
           ->orderBy('sa.display_order')
-	    		->limit(60);
+          ->limit(60);
     	}
       $pagelimit = 1;
     }
