@@ -217,13 +217,23 @@ $asset = $pager->getCurrent();
 	                  	->limit(60)
 	                  	->execute();
                   }else{
-                  	$assets = Doctrine_Query::create()
-	                  	->select('a.*')
-                      ->from('Asset a, SectionAsset sa')
-	                  	->where('a.site_id = ?', (int)$site->getId())
-	                  	->orderBy('sa.display_order')
-	                  	->limit(60)
-	                  	->execute();
+                    
+                    if(count($this->section->getAssets()) > 0){
+                      $assets = Doctrine_Query::create()
+                        ->select('a.*')
+                        ->from('Asset a, SectionAsset sa')
+                        ->where('sa.section_id = ?', (int)$section->getId())
+                        ->andWhere('sa.asset_id = a.id')
+                        ->orderBy('sa.display_order')
+                        ->limit(60);
+                    }else{
+                      $assets = Doctrine_Query::create()
+                        ->select('a.*')
+                        ->from('Asset a')
+                        ->where('a.site_id = ?', (int)$site->getId())
+                        ->orderBy('a.created_at desc')
+                        ->limit(60);
+                    }
                   }
                   if($assets): 
                   ?>
