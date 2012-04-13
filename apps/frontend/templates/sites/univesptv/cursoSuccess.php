@@ -222,7 +222,7 @@ $asset = $pager->getCurrent();
                       ->select('a.*')
                       ->from('Asset a')
                       ->where('a.site_id = ?', (int)$site->getId())
-                      ->orderBy('a.created_at desc')
+                      ->orderBy('a.created_at asc')
                       ->limit(60);
                   }
                   if(($assets)&&(count($assets)>0)): 
