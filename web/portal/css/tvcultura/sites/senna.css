@@ -1,4 +1,4 @@
 .bg-chamada,
 .bg-site { background: url(/portal/images/capaPrograma/senna/bkg_senna.jpg) repeat; }
 #barra-site .redes { float:right; }
-#barra-site .topo-programa { background: url(/portal/images/capaPrograma/senna/capacete.png) no-repeat 400px 0; }
+#barra-site .topo-programa { background: url(/portal/images/capaPrograma/senna/capacete.png) no-repeat 400px 5px; }
