@@ -102,7 +102,7 @@
 .box-padrao .topo { margin-bottom:0; }
 
 .grade p strong{font-size:16px !important; font-weight: bolder;}
-.grade p{ margin: 5px 0 0 5px !important;}
+.grade p{ margin: 5px 0 0 5px !important; text-align: justify;}
 #esquerda .menu-publicidade li {display:list-item !important; font-family:Arial,Verdana, Geneva,Helvetica, sans-serif; font-size: 14px; font-weight: normal;}
 .grade ul li{list-style: disc !important; margin-left: 31px !important;}
 
