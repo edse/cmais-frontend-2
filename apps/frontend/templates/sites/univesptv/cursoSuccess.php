@@ -219,9 +219,9 @@ $asset = $pager->getCurrent();
                   }else{
                   	$assets = Doctrine_Query::create()
 	                  	->select('a.*')
-	                  	->from('Asset a')
+                      ->from('Asset a')
 	                  	->where('a.site_id = ?', (int)$site->getId())
-	                  	->orderBy('sa.display_order')
+	                  	->orderBy('a.created_at asc')
 	                  	->limit(60)
 	                  	->execute();
                   }
@@ -231,7 +231,7 @@ $asset = $pager->getCurrent();
                     <div class="topo">
                       <span></span>
                       <div class="capa-titulo">
-                        <h4>lista de epis&oacute;dios</h4>
+                        <h4>lista de aulas</h4>
                       </div>
                       </div>
                     <div class="">
