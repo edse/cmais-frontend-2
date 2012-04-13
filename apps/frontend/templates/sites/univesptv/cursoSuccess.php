@@ -219,7 +219,7 @@ $asset = $pager->getCurrent();
                   }else{
                   	$assets = Doctrine_Query::create()
 	                  	->select('a.*')
-	                  	->from('Asset a')
+                      ->from('Asset a, SectionAsset sa')
 	                  	->where('a.site_id = ?', (int)$site->getId())
 	                  	->orderBy('sa.display_order')
 	                  	->limit(60)
