@@ -231,7 +231,7 @@ $asset = $pager->getCurrent();
                     <div class="topo">
                       <span></span>
                       <div class="capa-titulo">
-                        <h4>lista de epis&oacute;dios</h4>
+                        <h4>lista de aulas</h4>
                       </div>
                       </div>
                     <div class="">
