@@ -780,7 +780,7 @@ class _sectionActions extends sfActions
 	    		->from('Asset a, SectionAsset sa')
 	    		->where('sa.section_id = ?', $this->section->id)
 	    		->andWhere('sa.asset_id = a.id')
-	    		->orderBy('a.created_at desc')
+          ->orderBy('sa.display_order')
 	    		->limit(60);
     	}
     	else{
