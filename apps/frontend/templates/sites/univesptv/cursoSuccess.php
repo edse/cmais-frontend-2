@@ -217,15 +217,15 @@ $asset = $pager->getCurrent();
 	                  	->limit(60)
 	                  	->execute();
                   }else{
-                    
-                    $assets = Doctrine_Query::create()
-                      ->select('a.*')
+                  	$assets = Doctrine_Query::create()
+	                  	->select('a.*')
                       ->from('Asset a')
-                      ->where('a.site_id = ?', (int)$site->getId())
-                      ->orderBy('a.created_at asc')
-                      ->limit(60);
+	                  	->where('a.site_id = ?', (int)$site->getId())
+	                  	->orderBy('a.created_at asc')
+	                  	->limit(60)
+	                  	->execute();
                   }
-                  if(($assets)&&(count($assets)>0)): 
+                  if($assets): 
                   ?>
                   <div id="box-videos" class="box-padrao grid1">
                     <div class="topo">
