@@ -790,7 +790,7 @@ class _sectionActions extends sfActions
 	    		->select('a.*')
 	    		->from('Asset a')
 	    		->where('a.site_id = ?', (int)$this->site->getId())
-	    		->orderBy('a.created_at desc')
+          ->orderBy('sa.display_order')
 	    		->limit(60);
     	}
       $pagelimit = 1;
