@@ -218,7 +218,7 @@ $asset = $pager->getCurrent();
 	                  	->execute();
                   }else{
                     
-                    if(count($this->section->getAssets()) > 0){
+                    if(count($section->getAssets()) > 0){
                       $assets = Doctrine_Query::create()
                         ->select('a.*')
                         ->from('Asset a, SectionAsset sa')
