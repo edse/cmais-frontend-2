@@ -12,11 +12,15 @@
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-
         <div class="topo-programa">
-          
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
-          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <h2>
+            <a href="<?php echo $program->retriveUrl() ?>">
+              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+            </a>
+          </h2>
+          <?php endif; ?>
+
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
@@ -24,25 +28,26 @@
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
-            <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
           </div>
           <!-- /horario -->
           <?php endif; ?>
-
         </div>
 
         <?php if(isset($siteSections)): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
           
-          <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
-          <?php if(isset($section)): ?>
+          <?php if(isset($section->slug)): ?>
             <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
             <div class="navegacao txt-10">
               <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
               <span>&gt;</span>
-              <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
+              <a href="<?php echo $site->retriveUrl() ?>/videos" title="Vídeos">Vídeos</a>
+              <span>&gt;</span>
+              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
             </div>
             <?php endif; ?>
           <?php endif; ?>
@@ -50,7 +55,7 @@
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
-
+        
       </div>
       <!-- /BARRA SITE -->
       
@@ -164,7 +169,8 @@
       
     </div>
     <!-- /MENU-RODAPE -->
-    
+
+    <?php /*
     <!-- APOIO -->
       <ul id="apoio" class="grid3">
           <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
@@ -176,7 +182,7 @@
           <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
       </ul>
       <!-- APOIO -->
-
+	*/ ?>
           
         </div>
         <!-- /CONTEUDO PAGINA -->
