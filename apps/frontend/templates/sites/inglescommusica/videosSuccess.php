@@ -82,6 +82,7 @@
                     <label class="busque" for="campo-busca">Busque por <span>palavra-chave</span></label>
                     <input type="text" class="campo-busca" name="busca" id="busca" value="<?php echo $busca ?>" />
                     <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+                    <?php /*
                     <?php
                       $programs = Doctrine_Query::create()
                         ->select('p.*')
@@ -98,6 +99,8 @@
                       <option value="<?php echo $d->Site->getId() ?>"<?php if($d->Site->getId() == $site_id) echo " selected='selected'"; ?>><?php echo $d->getTitle() ?></option>
                       <?php endforeach; ?>
                     </select>
+					*/ ?>
+					 
                     <?php /*
                     <label for="ano">Ano</label>
                     <select id="ano" name="ano">
