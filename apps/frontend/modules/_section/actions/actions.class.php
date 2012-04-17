@@ -775,20 +775,20 @@ class _sectionActions extends sfActions
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
     elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")){
-    	if($this->section->getSlug() != "home"){
-    		if($request->getParameter('debug') != "")
-    			echo ">>>>>>disciplina";
-    		$this->assetsQuery = Doctrine_Query::create()
-	    		->select('a.*')
-	    		->from('Asset a, SectionAsset sa')
-	    		->where('sa.section_id = ?', $this->section->id)
-	    		->andWhere('sa.asset_id = a.id')
+      if($this->section->getSlug() != "home"){
+        if($request->getParameter('debug') != "")
+          echo ">>>>>>disciplina";
+        $this->assetsQuery = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $this->section->id)
+          ->andWhere('sa.asset_id = a.id')
           ->orderBy('sa.display_order')
-	    		->limit(60);
-    	}
-    	else{
-    		if($request->getParameter('debug') != "")
-    			echo ">>>>>>não disciplina";
+          ->limit(60);
+      }
+      else{
+        if($request->getParameter('debug') != "")
+          echo ">>>>>>não disciplina";
         if(count($this->section->getAssets()) > 0){
           $this->assetsQuery = Doctrine_Query::create()
             ->select('a.*')
@@ -805,8 +805,10 @@ class _sectionActions extends sfActions
             ->orderBy('a.created_at asc')
             ->limit(60);
         }
-    	}
-      $pagelimit = 2;
+      }
+      $pagelimit = 1;
+	  if ($this->site->getSlug() == 'inglescommusica')
+	    $pagelimit = 9;
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
