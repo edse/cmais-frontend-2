@@ -30,7 +30,7 @@
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
-            <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
           </div>
           <!-- /horario -->
           <?php endif; ?>
