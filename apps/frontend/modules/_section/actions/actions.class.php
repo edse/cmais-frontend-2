@@ -806,7 +806,7 @@ class _sectionActions extends sfActions
             ->limit(60);
         }
     	}
-      $pagelimit = 1;
+      $pagelimit = 2;
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
