@@ -54,7 +54,7 @@
 						<div class="posicao">
 							<ul>
 								<li><a href="http://univesp.tv.br/" class="tit">Univesp TV</a></li>
-								<li><a href="http://tvcultura.cmais.com.br/ingles-com-musica" title="Ingl&ecirc;s Com M&uacute;sica">Ingl&ecirc;s Com M&uacute;sica</a></li>
+								<li><a href="http://univesptv.cmais.com.br/inglescommusica" title="Ingl&ecirc;s Com M&uacute;sica">Ingl&ecirc;s Com M&uacute;sica</a></li>
 								<li><a href="http://univesptv.cmais.com.br/pedagogia-unesp" title="Pedagogia Unesp">Pedagogia Unesp</a></li>
                 <li><a href="http://univesptv.cmais.com.br/cursos-livres" title="Cursos Livres">Cursos Livres</a></li>
                 <li><a href="http://univesptv.cmais.com.br/cursos-usp" title="Cursos USP">Cursos USP</a></li>
