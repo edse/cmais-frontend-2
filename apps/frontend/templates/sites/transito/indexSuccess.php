@@ -356,11 +356,13 @@ function isDevice(OSName)
                         <span></span>
                       </li>
                       
+                      <?php /*
                       <!--CAMERAS AO VIVO -->
                       <li class="btn-cameras-ao-vivo btn-li ativo">
                         <a href="#telas" title="Câmeras ao vivo" class="m_cameras_ao_vivo btn-menu">Câmeras ao vivo</a>
                         <span class="decoracao"></span>
                       </li>
+                      */ ?>
                       <!--CAMERAS AO VIVO -->
                       <li class="btn-mapa-sao-paulo  btn-li ">
                         <a href="#telas" title="Mapa de São Paulo" class="m_mapa_sao_paulo btn-menu">Mapa de São Paulo</a>
@@ -375,6 +377,7 @@ function isDevice(OSName)
                   <!--CONTEUDOS -->
                   <ul class="conteudos" style="height: 730px;">
                     
+                     <?php /*
                      <!--CAMERA AO VIVO-->
                      <li class="conteudo-camera-ao-vivo" >
                        
@@ -843,7 +846,6 @@ function isDevice(OSName)
                  
                  </div>
                            <!--/MODAl CAMERA Eixo-->
-                  */ ?>                         
                 
                 <!--MODAl CAMERA corre-->
                 <div id="corre">
@@ -895,11 +897,12 @@ function isDevice(OSName)
                        
                        
                      </li>
-                     <!--CAMERA AO VIVO--> 
+                     <!--CAMERA AO VIVO-->
+                     */ ?>
                      
                      <!--MAPA SAO PAULO-->
-                     <li class="conteudo-mapa-sao-paulo" style="display:none">
-                       <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2"></iframe>
+                     <li class="conteudo-mapa-sao-paulo" style="display:block">
+                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
                      
