@@ -814,10 +814,8 @@ class _sectionActions extends sfActions
             ->limit(60);
         }
       }
-      $pagelimit = 1;
-		  if ($this->site->getSlug() == "inglescommusica")
-        $pagelimit = 9;
-		  			
+		  if ($this->site->getSlug() != 'inglescommusica')
+        $pagelimit = 1;
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
