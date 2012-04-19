@@ -88,16 +88,6 @@
                           <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
                           <?php endif; ?>
                         </div>
-				        <form id="page_form" action="" method="post">
-				          <input type="hidden" name="return_url" value="<?php echo $url?>" />
-				          <input type="hidden" name="page" id="page" value="" />
-				        </form>
-				        <script>
-				          function goToPage(i){
-				          	$("#page").val(i);
-				          	$("#page_form").submit();
-				          }
-				        </script>
                         <?php endif; ?>
                       <?php endif; ?>
                       <!-- PAGINACAO -->
@@ -121,6 +111,16 @@
 
                     <?php endforeach; ?>
                   <?php endif; ?>
+					        <form id="page_form" action="" method="post">
+					          <input type="hidden" name="return_url" value="<?php echo $url?>" />
+					          <input type="hidden" name="page" id="page" value="" />
+					        </form>
+					        <script>
+					          function goToPage(i){
+					          	$("#page").val(i);
+					          	$("#page_form").submit();
+					          }
+					        </script>
 
                   <!-- comentario facebook -->
                   <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
@@ -156,7 +156,7 @@
                     <div class="">
                       <ul class="sem-borda">
                         <?php $k=0; foreach($assets as $d): $k++; ?>
-                          <li class="conteudo-lista" style="height:auto;"><!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> --><a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
+                          <li class="conteudo-lista" style="height:auto;"><!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> --><a href="javascript: goToPage(<?php echo $k ?>);" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
                         <?php endforeach; ?>
                       </ul>
                     </div>
