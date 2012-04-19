@@ -817,6 +817,7 @@ class _sectionActions extends sfActions
       $pagelimit = 1;
 		  if ($this->site->getSlug() == "inglescommusica")
         $pagelimit = 9;
+		  			
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
@@ -1025,4 +1026,5 @@ $this->page = 1;
     } 
 
   }
+  
 }
