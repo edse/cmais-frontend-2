@@ -62,36 +62,51 @@
 
           <!-- CAPA -->
           <div class="capa grid3">
-  
-            <a name="ytd" />
-            <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
-            <script type="text/javascript">
-            var ytdInitFunction = function() {
-              var ytd = new Ytd();
-              ytd.setAssignmentId("1001");
-              ytd.setCallToAction("callToActionId-1001");
-              var containerWidth = 350;
-              var containerHeight = 550;
-              ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
-              ytd.ready();
-            };
-            if (window.addEventListener) {
-              window.addEventListener("load", ytdInitFunction, false);
-            } else if (window.attachEvent) {
-              window.attachEvent("onload", ytdInitFunction);
-            }
-            </script>
-            <div class="youtube">
-              <a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
-              <div id="ytdContainer-1001"></div>
-              
-            </div>
-            <div class="participe">
-              <div class="img-enviar"></div>
-              <a href="#" class="titulos">Participe! Envie seu vídeo.</a>
-              <!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
-            </div>
+            
+            <div class="mapa-sao-paulo grid3">
+                  
+              <!--CONTEUDOS -->
+              <ul class="conteudos" style="height: 730px;">
+                     
+               <!--PORTAL DE VIDEOS-->
+               <li class="conteudo-portal-de-videos" style=""> 
 
+                  <a name="ytd">
+                  <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
+                  <script type="text/javascript">
+                  var ytdInitFunction = function() {
+                    var ytd = new Ytd();
+                    ytd.setAssignmentId("1001");
+                    ytd.setCallToAction("callToActionId-1001");
+                    var containerWidth = 350;
+                    var containerHeight = 550;
+                    ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+                    ytd.ready();
+                  };
+                  if (window.addEventListener) {
+                    window.addEventListener("load", ytdInitFunction, false);
+                  } else if (window.attachEvent) {
+                    window.attachEvent("onload", ytdInitFunction);
+                  }
+                  </script>
+                  </a><div class="youtube"><a name="ytd">
+                    </a><a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
+                    <div id="ytdContainer-1001"></div>
+                    
+                  </div>
+                  <div class="participe">
+                    <div class="img-enviar"></div>
+                    <a href="#" class="titulos">Participe! Envie seu vídeo.</a>
+                    <!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
+                  </div>
+                  
+                  
+                   </li>
+                   <!--PORTAL DE VIDEOS-->      
+                </ul>
+                <!--CONTEUDOS -->         
+            </div>
+ 
           </div>
           <!-- /CAPA -->
           
