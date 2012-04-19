@@ -957,7 +957,10 @@ class _sectionActions extends sfActions
           }
           else{
             if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa';
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
+						if($this->site->getSlug() == 'inglescommusica')
+						  $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/subsection');
+						else
+            	$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
           }
         }        
         elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
