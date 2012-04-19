@@ -49,10 +49,10 @@ class _sectionActions extends sfActions
     }elseif($this->site->getSlug() == "prontoatendimento"){
       if($this->section->getSlug() != "ao-vivo") {
         if(date('w') == 6 && date('H:i') >= "12:30") {
-      	  header("Location: http://tvcultura.cmais.com.br/prontoatendimento/ao-vivo");
-		  die(); 
+          header("Location: http://tvcultura.cmais.com.br/prontoatendimento/ao-vivo");
+      die(); 
         }
-	   }
+     }
     }
 
     
@@ -82,7 +82,7 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.channel_id = ?', $this->site->Program->getChannelId())
                   ->andWhere('s.program_id = ?', $this->site->Program->id)
-                	->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
                   ->orderBy('s.date_start asc')
                   ->limit(80)
                   ->execute();
@@ -262,54 +262,54 @@ class _sectionActions extends sfActions
             $this->sChannel = Doctrine::getTable('Channel')->findOneBySlug($s);
             // schedules
             if($this->section->slug == "guia-do-ouvinte"){
-            	$this->schedules = Doctrine_Query::create()
-            	->select('s.*')
-            	->from('Schedule s')
-            	->where('s.channel_id = ?', $this->sChannel->id)
-            	->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $start.' 23:59:59'))
-            	->orderBy('s.date_start asc')
-            	->limit(80)
-            	->execute();
+              $this->schedules = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Schedule s')
+              ->where('s.channel_id = ?', $this->sChannel->id)
+              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $start.' 23:59:59'))
+              ->orderBy('s.date_start asc')
+              ->limit(80)
+              ->execute();
             }
             else{
-            	$this->schedules = Doctrine_Query::create()
-            	->select('s.*')
-            	->from('Schedule s')
-            	->where('s.channel_id = ?', $this->sChannel->id)
-            	->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
-            	->orderBy('s.date_start asc')
-            	->limit(80)
-            	->execute();
+              $this->schedules = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Schedule s')
+              ->where('s.channel_id = ?', $this->sChannel->id)
+              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+              ->orderBy('s.date_start asc')
+              ->limit(80)
+              ->execute();
             }
           }
           else if(($this->section->slug == "videos")){
             if(($request->getParameter('site_id') <= 0)&&($request->getParameter('busca') == '')){
-            	if($this->site->getSlug() == "penarua"){
-            		$this->assetsQuery = Doctrine_Query::create()
-            		->select('a.*')
-            		->from('Asset a, SectionAsset sa')
-            		->where('sa.section_id = ?', $this->section->id)
-            		->andWhere('sa.asset_id = a.id')
-            		->andWhere('a.is_active = ?', 1)
-            		->orderBy('sa.display_order')
-	              ->limit(20);
-            	}else{
-	            	$this->assetsQuery = Doctrine_Query::create()
-	                ->select('a.*')
-	                ->from('Asset a, AssetVideo av');
-	              if($this->site->getId() == 3)
-	                $this->assetsQuery->where('a.site_id = ?', $this->site->getId())->andWhere('av.asset_id = a.id');
-	              else
-	                $this->assetsQuery->where('av.asset_id = a.id');
-	              $this->assetsQuery->andWhere("av.youtube_id != ''")
-	                ->andWhere('a.is_active = 1')
-	                ->andWhereIn('a.asset_type_id', array(6, 7))
-	                ->groupBy('a.id')
-	                ->orderBy('a.created_at desc')
-	                ->limit(20);
-            	}
+              if($this->site->getSlug() == "penarua"){
+                $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhere('a.is_active = ?', 1)
+                ->orderBy('sa.display_order')
+                ->limit(20);
+              }else{
+                $this->assetsQuery = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a, AssetVideo av');
+                if($this->site->getId() == 3)
+                  $this->assetsQuery->where('a.site_id = ?', $this->site->getId())->andWhere('av.asset_id = a.id');
+                else
+                  $this->assetsQuery->where('av.asset_id = a.id');
+                $this->assetsQuery->andWhere("av.youtube_id != ''")
+                  ->andWhere('a.is_active = 1')
+                  ->andWhereIn('a.asset_type_id', array(6, 7))
+                  ->groupBy('a.id')
+                  ->orderBy('a.created_at desc')
+                  ->limit(20);
+              }
             }
-		    		else if(($request->getParameter('site_id') > 0)&&($request->getParameter('busca') != '')){
+            else if(($request->getParameter('site_id') > 0)&&($request->getParameter('busca') != '')){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av')
@@ -322,20 +322,20 @@ class _sectionActions extends sfActions
                 ->orderBy('a.created_at desc')
                 ->limit(20);
             }
-		    		else if($request->getParameter('site_id') > 0){
-			    		$this->assetsQuery = Doctrine_Query::create()
-			    			->select('a.*')
-				    		->from('Asset a, AssetVideo av')
-	    					->where('av.asset_id = a.id')
-				    		->andWhere("av.youtube_id != ''")
-	    					->andWhere('a.site_id = ?', $request->getParameter('site_id'))
-				    		->andWhere('a.is_active = 1')
-	    					->andWhereIn('a.asset_type_id', array(6, 7))
-				    		->groupBy('a.id')
-	    					->orderBy('a.created_at desc')
-				    		->limit(20);
-      		  }
-		    else if($request->getParameter('busca') != ''){
+            else if($request->getParameter('site_id') > 0){
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, AssetVideo av')
+                ->where('av.asset_id = a.id')
+                ->andWhere("av.youtube_id != ''")
+                ->andWhere('a.site_id = ?', $request->getParameter('site_id'))
+                ->andWhere('a.is_active = 1')
+                ->andWhereIn('a.asset_type_id', array(6, 7))
+                ->groupBy('a.id')
+                ->orderBy('a.created_at desc')
+                ->limit(20);
+            }
+        else if($request->getParameter('busca') != ''){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av')
@@ -348,7 +348,7 @@ class _sectionActions extends sfActions
                 ->orderBy('a.created_at desc')
                 ->limit(20);
             }
-		  }
+      }
           else{
             if($request->getParameter('d')){
               if($request->getParameter('d'))
@@ -368,7 +368,7 @@ class _sectionActions extends sfActions
             else{
               if($request->getParameter('debug') != "")
                 print "<br>>>s>".$this->site_id." >>>>t>".$this->busca;
-			  
+        
               if(($this->site_id > 0)&&($this->busca)){
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
@@ -437,18 +437,6 @@ class _sectionActions extends sfActions
               ->orderBy('s.display_order')
               ->limit(10)
               ->execute();
-							
-						if ($this->site->getSlug() == "inglescommusica") {
-	            $this->assetsQuery = Doctrine_Query::create()
-	              ->select('a.*')
-	              ->from('Asset a, SectionAsset sa')
-	              ->where('sa.section_id = ?', $this->section->id)
-	              ->andWhere('sa.asset_id = a.id')
-	              ->andWhere('a.is_active = ?', 1);
-	            if($request->getParameter('busca') != '')
-	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-	            $this->assetsQuery->orderBy('a.created_at desc');
-	          }
           }
         }
           
@@ -468,28 +456,42 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-        	
-			    if($this->site->getSlug() == "penarua"){
-         		$this->assetsQuery = Doctrine_Query::create()
-			    		->select('a.*')
-				    	->from('Asset a, SectionAsset sa')
-			    		->where('sa.section_id = ?', $this->section->id)
-				    	->andWhere('sa.asset_id = a.id')
-				    	->andWhere('a.is_active = ?', 1);
+          
+          if($this->site->getSlug() == "penarua"){
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1);
             if($request->getParameter('busca') != '')
-              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");							  
-         		$this->assetsQuery->orderBy('sa.display_order');
-			    	/*
-         		$this->assetsQuery = Doctrine_Query::create()
-           		->select('a.*')
-           		->from('Asset a, SectionAsset sa')
-           		->where('sa.section_id = ?', $this->section->id)
-           		->andWhere('sa.asset_id = a.id')
-           		->andWhere('a.is_active = ?', 1)
-          		->orderBy('sa.display_order')
-          	*/
-			    }
-			    else if($this->site->getSlug() == 'rodaviva'){
+              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+            $this->assetsQuery->orderBy('sa.display_order');
+            /*
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('sa.display_order')
+            */
+          }else if($this->site->getId() != 110){
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1);
+            if($request->getParameter('busca') != '')
+              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+            if(($this->site->getId() == 295)&&($this->section->id == 893))
+              $this->assetsQuery->orderBy('sa.display_order');
+            else if(($this->site->getId() == 282)&&($this->section->id == 778))
+              $this->assetsQuery->orderBy('sa.display_order');
+            else
+              $this->assetsQuery->orderBy('a.created_at desc');
+          }else{
             if($this->section->getSlug()=="programas"){
               if($request->getParameter('ordem') == 'alfabetica') {
                 $request->setParameter('ordem','a.title');
@@ -517,22 +519,15 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->groupBy('a.id')
                 ->orderBy($request->getParameter('ordem') . " " . $request->getParameter('sequencia'));   
-            }
-            else{
-	            $this->assetsQuery = Doctrine_Query::create()
-	              ->select('a.*')
-	              ->from('Asset a, SectionAsset sa')
-	              ->where('sa.section_id = ?', $this->section->id)
-	              ->andWhere('sa.asset_id = a.id')
-	              ->andWhere('a.is_active = ?', 1);
-	            if($request->getParameter('busca') != '')
-	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-	            if(($this->site->getId() == 295)&&($this->section->id == 893))
-	              $this->assetsQuery->orderBy('sa.display_order');
-	            else if(($this->site->getId() == 282)&&($this->section->id == 778))
-	              $this->assetsQuery->orderBy('sa.display_order');
-	            else
-	              $this->assetsQuery->orderBy('a.created_at desc');
+            }else{
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                //->andWhere('a.date_start <= ? AND a.date_end >= ?', array(date("Y/m/d H:i:s"), date("Y/m/d H:i:s")))
+                ->andWhere('a.is_active = ?', 1)
+                ->orderBy('a.id desc');
             }
           }
         }
@@ -655,9 +650,9 @@ class _sectionActions extends sfActions
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
       if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')){
-      	
+        
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
-			
+      
           $email_site = $this->section->getContactEmail();
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
@@ -677,7 +672,7 @@ class _sectionActions extends sfActions
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-			  die("1");
+        die("1");
             }
             else
               die("0");
@@ -756,7 +751,7 @@ class _sectionActions extends sfActions
       $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
 
     if($this->site->getSlug() == "socrates")
-    	$this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
+      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
     
     // pagination
     if($sectionSlug == 'recadinhos'){
@@ -779,7 +774,7 @@ class _sectionActions extends sfActions
       $pagelimit = 12;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
-    elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")&&($this->site->getSlug() != "inglescommusica")){
+    elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")){
       if($this->section->getSlug() != "home"){
         if($request->getParameter('debug') != "")
           echo ">>>>>>disciplina";
@@ -812,8 +807,6 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-	    if ($this->site->getSlug() == 'inglescommusica')
-	      $pagelimit = 9;
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
