@@ -437,6 +437,18 @@ class _sectionActions extends sfActions
               ->orderBy('s.display_order')
               ->limit(10)
               ->execute();
+							
+						if ($this->site->getSlug() == "inglescommusica") {
+	            $this->assetsQuery = Doctrine_Query::create()
+	              ->select('a.*')
+	              ->from('Asset a, SectionAsset sa')
+	              ->where('sa.section_id = ?', $this->section->id)
+	              ->andWhere('sa.asset_id = a.id')
+	              ->andWhere('a.is_active = ?', 1);
+	            if($request->getParameter('busca') != '')
+	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+	            $this->assetsQuery->orderBy('a.created_at desc');
+	          }
           }
         }
           
@@ -476,22 +488,8 @@ class _sectionActions extends sfActions
            		->andWhere('a.is_active = ?', 1)
           		->orderBy('sa.display_order')
           	*/
-			    }else if($this->site->getId() != 110){
-            $this->assetsQuery = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, SectionAsset sa')
-              ->where('sa.section_id = ?', $this->section->id)
-              ->andWhere('sa.asset_id = a.id')
-              ->andWhere('a.is_active = ?', 1);
-            if($request->getParameter('busca') != '')
-              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");							  
-            if(($this->site->getId() == 295)&&($this->section->id == 893))
-              $this->assetsQuery->orderBy('sa.display_order');
-            else if(($this->site->getId() == 282)&&($this->section->id == 778))
-              $this->assetsQuery->orderBy('sa.display_order');
-            else
-              $this->assetsQuery->orderBy('a.created_at desc');
-          }else{
+			    }
+			    else if($this->site->getSlug() == 'rodaviva'){
             if($this->section->getSlug()=="programas"){
               if($request->getParameter('ordem') == 'alfabetica') {
                 $request->setParameter('ordem','a.title');
@@ -519,15 +517,22 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->groupBy('a.id')
                 ->orderBy($request->getParameter('ordem') . " " . $request->getParameter('sequencia'));   
-            }else{
-              $this->assetsQuery = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, SectionAsset sa')
-                ->where('sa.section_id = ?', $this->section->id)
-                ->andWhere('sa.asset_id = a.id')
-                //->andWhere('a.date_start <= ? AND a.date_end >= ?', array(date("Y/m/d H:i:s"), date("Y/m/d H:i:s")))
-                ->andWhere('a.is_active = ?', 1)
-                ->orderBy('a.id desc');
+            }
+            else{
+	            $this->assetsQuery = Doctrine_Query::create()
+	              ->select('a.*')
+	              ->from('Asset a, SectionAsset sa')
+	              ->where('sa.section_id = ?', $this->section->id)
+	              ->andWhere('sa.asset_id = a.id')
+	              ->andWhere('a.is_active = ?', 1);
+	            if($request->getParameter('busca') != '')
+	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+	            if(($this->site->getId() == 295)&&($this->section->id == 893))
+	              $this->assetsQuery->orderBy('sa.display_order');
+	            else if(($this->site->getId() == 282)&&($this->section->id == 778))
+	              $this->assetsQuery->orderBy('sa.display_order');
+	            else
+	              $this->assetsQuery->orderBy('a.created_at desc');
             }
           }
         }
@@ -774,7 +779,7 @@ class _sectionActions extends sfActions
       $pagelimit = 12;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
-    elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")){
+    elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")&&($this->site->getSlug() != "inglescommusica")){
       if($this->section->getSlug() != "home"){
         if($request->getParameter('debug') != "")
           echo ">>>>>>disciplina";
@@ -807,8 +812,8 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-	  if ($this->site->getSlug() == 'inglescommusica')
-	    $pagelimit = 9;
+	    if ($this->site->getSlug() == 'inglescommusica')
+	      $pagelimit = 9;
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
