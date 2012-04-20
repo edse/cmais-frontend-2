@@ -110,7 +110,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 /* embreve*/
 .embreve { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo2.png) no-repeat center 70px; width:1208px; min-height:1000px; margin:0 auto; }
-.embreve .box { background:url(/portal/images/capaPrograma/cartaozinho/logo-embreve.png) no-repeat left bottom; width:534px; height:505px; margin:180px auto;  }
+.embreve .box { background:url(/portal/images/capaPrograma/cartaozinho/logo-embreve.png) no-repeat 70px bottom; width:534px; height:505px; margin:180px auto;  }
 .embreve .box img { width:251px; height:48px; float:right; }
 .embreve .btn-curtir { width:340px; float:right; clear:both; margin-top:20px; }
 
