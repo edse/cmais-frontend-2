@@ -22,6 +22,7 @@ echo "<br />#1 destaque YTID: " . $video -> Asset -> AssetVideo -> getYoutubeId(
     </div>
     <!--VIDEO-->
   </div>
+  
   <!-- /CONTEUDO PAGINA -->
 </div>
 <!-- /CAPA SITE -->
