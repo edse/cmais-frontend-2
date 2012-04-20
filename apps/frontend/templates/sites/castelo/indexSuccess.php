@@ -3,11 +3,9 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- CAPA SITE -->
-<div id="capa-site" >      
+<div id="capa-site" align="center">      
 
-	<!-- MIOLO -->
-	<div id="miolo">
-	        
+        
 		<!-- CONTEUDO PAGINA -->
 		<div id="conteudo-pagina" class="castelo">
 		          
@@ -21,8 +19,6 @@
 		</div>
 		<!-- /CONTEUDO PAGINA -->
 	        
-	</div>
-	<!-- /MIOLO -->
       
 </div>
 <!-- /CAPA SITE -->
