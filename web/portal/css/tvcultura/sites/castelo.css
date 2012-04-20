@@ -1,0 +1,11 @@
+
+body{background:url(/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat !important;}
+
+#capa-site {overflow: visible;}
+	
+.castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position:relative;}
+.castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
+
+#rodape-portal .voltar-topo {*margin-left:-340px;}
+#rodape-portal{margin-top:220px;}
+
