@@ -97,7 +97,7 @@
 				          	$("#page").val(i);
 				          	$("#page_form").submit();
 				          }
-				        </script>
+				        </script> 
                         <?php endif; ?>
                       <?php endif; ?>
                       <!-- PAGINACAO -->
