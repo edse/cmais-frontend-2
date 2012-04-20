@@ -90,7 +90,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos .duas-colunas a,
 .videos .duas-colunas p { padding:0 20px; }
 #barra-site .topo-programa { background:url(/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
-#menu-rodape .abas-conteudo { background:#8f95db; }
+#menu-rodape .abas-conteudo { background:#86d5f3; }
 #menu-rodape .blocos a { color:#ffff00 }
 .videos .busca form .busque span,
 .videos .busca form .busque { color:#fff; }
@@ -101,7 +101,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos .paginacao ul li a:hover { color:#ffff05; }
 .videos .abas { background-image:url(/portal/images/capaPrograma/cartaozinho/bg-abas.png); }
 .videos #menu-rodape .abas .neutro a { background:#ffff05; }
-.videos .paginacao { background:#5659a1; }
+.videos .paginacao { background:#2b8db2; }
 .videos #menu-rodape .abas .neutro:hover span,
 .videos #menu-rodape .abas .neutro span { background:url(/portal/images/capaPrograma/cartaozinho/detalhe-menu.png) no-repeat;  }
 .videos .blocos li a.bg:hover { border-color:#ffff05;  }
