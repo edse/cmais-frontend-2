@@ -185,11 +185,11 @@
             				<p>Lance inesquecível: <span>Santos x Flamento 2011 Lance de Neymar ½ lua no jogador Ronaldo Angeli</span></p>
             				<p>Comida preferida: <span>Churrasco</span></p>
             				<p>Pra quem você daria cartão vermelho: <span>Jorge Henrique/Corinthians</span></p>
-            				<p>Matéria preferida na escola: <span>Matemática</span></p>
+            				<p style="margin-top: -20px">Matéria preferida na escola: <span>Matemática</span></p>
             				<p>O que mais gosta de fazer nas horas livres: <span>Jogar futebol</span></p>
-            				<p>O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
+            				<p style="margin-top: -20px">O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
             				<p>Game preferido: <span>X-box</span></p>
-            				<p>Programa / Desenho preferido: <span>Cocoricó / Nick I Carly</span></p>
+            				<p style="margin-top: -20px">Programa / Desenho preferido: <span>Cocoricó / Nick I Carly</span></p>
             				<p>Banda preferida: <span>AC/DC – Black in Black</span></p>
             			</div>
             			
