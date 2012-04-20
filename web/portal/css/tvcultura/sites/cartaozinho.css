@@ -43,8 +43,9 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .personagens .b-eric:hover { background:url(/portal/images/capaPrograma/cartaozinho/eric_on.png) no-repeat;  }
 .personagens .b-pedro:hover { background:url(/portal/images/capaPrograma/cartaozinho/pedro_on.png) no-repeat;  }
 .personagens .b-matheus:hover { background:url(/portal/images/capaPrograma/cartaozinho/matheus_on.png) no-repeat;  }
+.personagens li a { display:block; width:100%; height:100%;  }
 
-.box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px;  }
+.box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
 .bio .seta { display:block; position:absolute; }
 .bio .bio-joao .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:250px;  }
 .bio .bio-eric .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta2.png) no-repeat; width: 70px; height:96px; left:388px;  }
@@ -53,7 +54,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .box { display: none; }
 .bio .brasao { width:109px; height:140px; position:relative; top:126px; left:25px; }
 .bio .texto { clear: both; height: 279px; left: 0; overflow: hidden; position: relative; text-align: left; top: 90px; width:900px; z-index: 100;}
-.bio .texto p { width:370px; margin:0 0 10px 60px; font-size:16px; font-style: italic; color:#003300; float:left;  }
+.bio .texto p {    color: #003300;    float: left;    font-size: 16px;    font-style: italic;    margin: 0 0 5px 40px;    width: 410px;}
 .bio .texto span { color:#3c3787; }
 .bio .texto .titulo { margin-bottom:10px; width: 800px; }
 .bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
@@ -106,6 +107,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos #menu-rodape .abas .neutro span { background:url(/portal/images/capaPrograma/cartaozinho/detalhe-menu.png) no-repeat;  }
 .videos .blocos li a.bg:hover { border-color:#ffff05;  }
 #menu-rodape .neutro a { line-height:24px; }
+.videos #menu-rodape .abas-conteudo { min-height: 500px; }
 /* /videos */
 
 /* embreve*/
@@ -127,6 +129,13 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .contato form .t3 { width: 620px; }
 .contato form textarea,
 .contato form .t3 label, .contato form .t3 input { width:616px; }
+.contato form .linha .enviar { background:#ffff05; color:#666; border-color:#b2b214; }
+.msgAcerto,
+.msgErro { background-color: #ffff05;  }
+.boxMsg p { color:#0a5876; }
+.msgErro .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-erro.png) no-repeat; }
+.msgAcerto .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-acerto.png) no-repeat; }
+
 /* /contato */
 
 /* interna */

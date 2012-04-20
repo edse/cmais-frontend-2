@@ -82,7 +82,7 @@
                   <?php if($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
                     <iframe title="<?php echo $displays[0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                   <?php endif; ?>
-				<a href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
+				<a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
 			  </div>
             <?php endif; ?>
 			<!-- /DESTAQUE 2 COLUNAS -->
@@ -110,10 +110,10 @@
           
              <div class="personagens">
             	<ul>
-            		<li class="b-joao" name="joao"></li>
-            		<li class="b-eric" name="eric"></li>
-            		<li class="b-pedro" name="pedro"></li>
-            		<li class="b-matheus" name="matheus"></li>
+            		<li class="b-joao" name="joao"><a href="#ancora"></a></li>
+            		<li class="b-eric" name="eric"><a href="#ancora"></a></li>
+            		<li class="b-pedro" name="pedro"><a href="#ancora"></a></li>
+            		<li class="b-matheus" name="matheus"><a href="#ancora"></a></li>
             	</ul>
             	
             	<div class="bio">
@@ -122,28 +122,24 @@
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
             				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao" /></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
-            				<p>Idade: <span>9 anos</span></p>
+            				<p>Nome: <span>João Braga</span></p>
+            				<p>Idade: <span>8 anos</span></p>
+            				<p>Que time torce: <span>Corinthians</span></p>
+            				<p>Time estrangeiro preferido? <span>Barcelona</span></p>
+            				<p>Quem é seu ídolo no futebol: <span>Messi</span></p>
+            				<p>Se fosse um jogador, que número seria: <span>4</span></p>
+            				<p>Autógrafo preferido: <span>Ronaldo Fenômeno</span></p>
+            				<p>Tem coleção: <span>Figurinhas da Copa e do Brasileiro</span></p>
+            				<p>Lance inesquecível: <span>Ronaldo X Fabio Costa na Vila</span></p>
+            				<p>Comida preferida: <span>Sushi</span></p>
+            				<p>Pra quem você daria cartão vermelho: <span>Jorge Canavaro</span></p>
+            				<p>Matéria preferida na escola: <span>Matemática</span></p>
+            				<p>O que mais gosta de fazer nas horas livres: <span>Jogar futebol</span></p>
+            				<p>O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
+            				<p>Game preferido: <span>Pró Evolution Soccer</span></p>
+            				<p>Programa / Desenho preferido: <span>Cocoricó</span></p>
+            				<p>Banda preferida: <span>AC/DC</span></p>
+            				
             			</div>
             			
             		</div>
@@ -152,25 +148,23 @@
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
             				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric" /></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
-            				<p>Idade: <span>10 anos</span></p>
+            				<p>Nome: <span>Eric Lanfredi</span></p>
+            				<p>Idade: <span>11 anos</span></p>
+            				<p>Que time torce: <span>Palmeiras</span></p>
+            				<p>Time estrangeiro preferido? <span>Barcelona</span></p>
+            				<p>Quem é seu ídolo no futebol: <span>Marcos</span></p>
+            				<p>Se fosse um jogador, que número seria: <span>7</span></p>
+            				<p>Autógrafo preferido: <span>Marcos</span></p>
+            				<p>Tem coleção: <span>Figurinhas</span></p>
+            				<p>Lance inesquecível: <span>Gol Valdivia 2008 Campeão Paulista</span></p>
+            				<p>Comida preferida: <span>Feijoada</span></p>
+            				<p>Pra quem você daria cartão vermelho: <span>Jorge Henrique/Corinthians</span></p>
+            				<p>Matéria preferida na escola: <span>Gramática</span></p>
+            				<p>O que mais gosta de fazer nas horas livres: <span>Jogar futebol</span></p>
+            				<p>O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
+            				<p>Game preferido: <span>Call of Duty MW3</span></p>
+            				<p>Programa / Desenho preferido: <span>Cocoricó / Cartão Verde</span></p>
+            				<p>Banda preferida: <span>Nx Zero</span></p>
             				
             			</div>
             			
@@ -180,29 +174,23 @@
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
             				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro" /></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
-            				<p>Idade: <span>11 anos</span></p>
+            				<p>Nome: <span>Pedro Crema</span></p>
+            				<p>Idade: <span>8 anos</span></p>
+            				<p>Que time torce: <span>São Paulo</span></p>
+            				<p>Time estrangeiro preferido? <span>Barcelona</span></p>
+            				<p>Quem é seu ídolo no futebol: <span>Messi</span></p>
+            				<p>Se fosse um jogador, que número seria: <span>10</span></p>
+            				<p>Autógrafo preferido: <span>Neymar e Messi</span></p>
+            				<p>Tem coleção: <span>Álbum de figurinhas dos campeonatos</span></p>
+            				<p>Lance inesquecível: <span>Santos x Flamento 2011 Lance de Neymar ½ lua no jogador Ronaldo Angeli</span></p>
+            				<p>Comida preferida: <span>Churrasco</span></p>
+            				<p>Pra quem você daria cartão vermelho: <span>Jorge Henrique/Corinthians</span></p>
+            				<p>Matéria preferida na escola: <span>Matemática</span></p>
+            				<p>O que mais gosta de fazer nas horas livres: <span>Jogar futebol</span></p>
+            				<p>O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
+            				<p>Game preferido: <span>X-box</span></p>
+            				<p>Programa / Desenho preferido: <span>Cocoricó / Nick I Carly</span></p>
+            				<p>Banda preferida: <span>AC/DC – Black in Black</span></p>
             			</div>
             			
             		</div>
@@ -211,25 +199,23 @@
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
             				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-matheus.png" /></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
-            				<p>Idade: <span>12 anos</span></p>
+            				<p>Nome: <span>Matheus Ribeiro </span></p>
+            				<p>Idade: <span>9 anos</span></p>
+            				<p>Que time torce: <span>Santos</span></p>
+            				<p>Time estrangeiro preferido? <span>Manchester United</span></p>
+            				<p>Quem é seu ídolo no futebol: <span>Neymar</span></p>
+            				<p>Se fosse um jogador, que número seria: <span>11</span></p>
+            				<p>Autógrafo preferido: <span>Neymar</span></p>
+            				<p>Tem coleção: <span>Bola de Futebol</span></p>
+            				<p>Lance inesquecível: <span>Gol Neymar sobre o Flamengo</span></p>
+            				<p>Comida preferida: <span>Batata-frita</span></p>
+            				<p>Pra quem você daria cartão vermelho: <span>Jorge Henrique</span></p>
+            				<p>Matéria preferida na escola: <span>História</span></p>
+            				<p>O que mais gosta de fazer nas horas livres: <span>Vídeo Game</span></p>
+            				<p>O que quer ser quando crescer: <span>Jogador de Futebol</span></p>
+            				<p>Game preferido: <span>Futebol ( Pró Evolution)</span></p>
+            				<p>Programa / Desenho preferido: <span>Cartão Verde</span></p>
+            				<p>Banda preferida: <span>Deep Purple</span></p>
             			</div>
             			
             		</div>
