@@ -5,8 +5,8 @@
   		<p>
     		<?php echo $d->getDescription() ?>
   		</p>
-  		  <img src="http://midia.cmais.com.br/programs/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>">
-  	<?php endforeach; ?>    
+  		  <img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>">
+  	<?php endforeach; ?>
 		</div>
   <?php endif; ?>
 <?php endif; ?>
