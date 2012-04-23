@@ -192,6 +192,10 @@
           </div>
           <!-- /CAPA -->
           
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
