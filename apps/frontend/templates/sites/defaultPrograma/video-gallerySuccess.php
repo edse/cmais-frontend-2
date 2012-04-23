@@ -184,6 +184,8 @@ $(function(){
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
+          
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
 
         </div>
         <!-- /CONTEUDO PAGINA -->
