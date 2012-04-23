@@ -11,7 +11,7 @@
 			<?php if ($d->getImage()): ?>
   		<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>">
   		<?php elseif ($d->Asset->AssetImage->getOriginalFile()): ?>
-  		<img src="http://midia.cmais.com.br/originais/<?php echo $d->Asset->AssetImage->getOriginalFile() ?>" alt="<?php echo $d->getTitle() ?>">
+  		<img src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->getOriginalFile() ?>" alt="<?php echo $d->getTitle() ?>">
   		<?php endif;?>
   	<?php endforeach; ?>    
 		</div>
