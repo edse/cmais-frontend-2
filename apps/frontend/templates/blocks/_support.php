@@ -10,7 +10,7 @@
 			<?php if ($d->getImage()): ?>
   		<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>">
   		<?php elseif ($d->Asset->AssetImage->getImage()): ?>
-  		<img src="<?php echo $d->Asset->AssetImage->getImage() ?>" alt="<?php $d->getTitle() ?>">
+  			<?php echo html_entity_decode($d->Asset->AssetImage->getImage()) ?>
   		<?php endif;?>
   	<?php endforeach; ?>    
 		</div>
