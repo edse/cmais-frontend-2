@@ -77,17 +77,17 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 /* videos */
 .videos { height:auto; background-image:none; }
 .videos { background-image:none; }
-.videos #box-videos { background:#8f95da; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; }
+.videos #box-videos { background:#86D5F3; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; }
 .videos #box-videos .claro span { display:none; }
 .videos .pag3,
 .videos #box-videos .claro .capa-titulo { background:none; }
-.videos .pag3 { border-color:#8f95da; }
+.videos .pag3 { border-color:#2B8DB2; }
 #box-videos .carrossel { padding:0 5px; }
 #box-videos .carrossel .jcarousel-prev { background-position:0 -90px; right:35px; }
 #box-videos .carrossel .jcarousel-next { background-position: 0 -72px; right:14px; }
 #box-videos .carrossel .jcarousel-item .img-150x90 { margin-right:5px; border:none; }
 #box-videos .txt { color:#fff; }
-.videos .duas-colunas { background:#8f95da; }
+.videos .duas-colunas { background:#86D5F3; }
 .videos .duas-colunas a,
 .videos .duas-colunas p { padding:0 20px; }
 #barra-site .topo-programa { background:url(/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
