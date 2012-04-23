@@ -48,13 +48,7 @@
 
           <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
-          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-          <div class="navegacao txt-10">
-            <a href="../" title="Home">Home</a>
-            <span>&gt;</span>
-            <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-          </div>
-          <?php endif; ?>
+         
 
         </div>
         <!-- /box-topo -->
