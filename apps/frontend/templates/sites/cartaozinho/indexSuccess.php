@@ -48,7 +48,7 @@
 
           <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
-         
+          
 
         </div>
         <!-- /box-topo -->

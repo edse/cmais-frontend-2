@@ -155,3 +155,5 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 /*secao*/
 .secao { background:#86d5f3; padding:10px; width:600px; }
 /* /secao*/
+
+.bg-site { height:auto; padding-bottom:20px; }
