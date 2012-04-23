@@ -149,8 +149,6 @@
           </div>
           <!-- /CAPA -->
           
-          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
-          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
