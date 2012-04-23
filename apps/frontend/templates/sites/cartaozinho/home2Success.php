@@ -121,7 +121,7 @@
             			<div class="seta"></div>
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
-            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao" /></p>
+            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
             				<p>Nome: <span>João Braga</span></p>
             				<p>Idade: <span>8 anos</span></p>
             				<p>Que time torce: <span>Corinthians</span></p>
@@ -147,7 +147,7 @@
             			<div class="seta"></div>
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
-            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric" /></p>
+            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric.png" /></p>
             				<p>Nome: <span>Eric Lanfredi</span></p>
             				<p>Idade: <span>11 anos</span></p>
             				<p>Que time torce: <span>Palmeiras</span></p>
@@ -173,7 +173,7 @@
             			<div class="seta"></div>
             			<div class="texto">
             				<div class="fechar" name="Fechar" title="Fechar">Fechar</div>
-            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro" /></p>
+            				<p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro.png" /></p>
             				<p>Nome: <span>Pedro Crema</span></p>
             				<p>Idade: <span>8 anos</span></p>
             				<p>Que time torce: <span>São Paulo</span></p>
