@@ -374,6 +374,13 @@ $(document).ready(function(){
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
 
