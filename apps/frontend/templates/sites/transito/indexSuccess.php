@@ -114,12 +114,12 @@ function isDevice(OSName)
                 <p>CÂMERAS DE SÃO PAULO</p>
                 <form id="opcoes-livestream" action="" method="post">
                   <select id="opcao-livestream-1" class="required">
-                    <option value="6">Av. Dummont Villares</option>
+                    <option value="6" selected="selected">Av. Dummont Villares</option>
                     <option value="8">Av. Pompéia</option>
                     <option value="3">Av. Tiradentes</option> 
                     <option value="5">Marginal Pinheiros - Estação Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
-                    <option value="1" selected="selected">Marginal Tietê</option>
+                    <option value="1">Marginal Tietê</option>
                     <option value="2">Radial Leste X Salim Farah Maluf</option>
                     <option value="7">Radial Leste - Metrô Tatuapé</option>
                   </select> 
@@ -368,10 +368,10 @@ function isDevice(OSName)
                         <a href="#telas" title="Mapa de São Paulo" class="m_mapa_sao_paulo btn-menu">Mapa de São Paulo</a>
                         <span class="decoracao"></span>
                       </li>
-                      <li class="btn-portal-de-videos  btn-li ">
+                      <!--li class="btn-portal-de-videos  btn-li ">
                         <a href="#telas" title="Portal de vídeo" class="m_portal_de_video btn-menu">Portal de vídeo</a>
                         <span class="decoracao"></span>
-                      </li>
+                      </li-->
                   </ul>
                   
                   <!--CONTEUDOS -->
