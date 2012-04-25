@@ -22,7 +22,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 /* home */
 .home { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
 .home #barra-site .topo-programa { background:none; }
-.home .destaque-video { min-height:490px; width:900px; overflow:hidden; }
+.home .destaque-video { min-height:460px; width:900px; overflow:hidden; }
 .home .duas-colunas a,
 .home .duas-colunas p { display:none; }
 .home .duas-colunas { float:none; margin:0 auto; width:528px; height:427px; background:url(/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
@@ -32,17 +32,13 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .home .box-topo { height:26px; }
 
 .personagens { width:970px; }
-.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:130px;  }
-.personagens li { height:317px; float: left; margin-right:60px; cursor:pointer; }
-.personagens .b-joao { background:url(/portal/images/capaPrograma/cartaozinho/joao_off.png) no-repeat; width: 134px;  }
-.personagens .b-eric { background:url(/portal/images/capaPrograma/cartaozinho/eric_off.png) no-repeat; width: 120px;  }
-.personagens .b-pedro { background:url(/portal/images/capaPrograma/cartaozinho/pedro_off.png) no-repeat; width: 115px;  }
-.personagens .b-matheus { background:url(/portal/images/capaPrograma/cartaozinho/matheus_off.png) no-repeat; width: 109px; }
-
-.personagens .b-joao:hover { background:url(/portal/images/capaPrograma/cartaozinho/joao_on.png) no-repeat;  }
-.personagens .b-eric:hover { background:url(/portal/images/capaPrograma/cartaozinho/eric_on.png) no-repeat;  }
-.personagens .b-pedro:hover { background:url(/portal/images/capaPrograma/cartaozinho/pedro_on.png) no-repeat;  }
-.personagens .b-matheus:hover { background:url(/portal/images/capaPrograma/cartaozinho/matheus_on.png) no-repeat;  }
+.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px;  }
+.personagens li { height:317px; float: left; margin-right:60px; cursor:pointer; width:142px; }
+.personagens .b-joao { background:url(/portal/images/capaPrograma/cartaozinho/joao.png) no-repeat; }
+.personagens .b-eric { background:url(/portal/images/capaPrograma/cartaozinho/eric.png) no-repeat;   }
+.personagens .b-pedro { background:url(/portal/images/capaPrograma/cartaozinho/pedro.png) no-repeat;  }
+.personagens .b-matheus { background:url(/portal/images/capaPrograma/cartaozinho/matheus.png) no-repeat;  }
+.personagens li:hover { background-position:-142px 0;  }
 .personagens li a { display:block; width:100%; height:100%;  }
 
 .box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
@@ -59,8 +55,8 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .texto .titulo { margin-bottom:10px; width: 800px; }
 .bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
 
-.juiza { position:absolute; top:110px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:190px; height:321px; }
-.juiza:hover { background-image:url(/portal/images/capaPrograma/cartaozinho/juiza-hover.png); }
+.juiza { position:absolute; top:110px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:199px; height:330px; }
+.juiza:hover { background-position:-199px 0; }
 
 .redes-sociais { width: 244px; height:340px; position:absolute; top:0; right:0; }
 .redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
