@@ -43,10 +43,10 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 .box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
 .bio .seta { display:block; position:absolute; }
-.bio .bio-joao .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:250px;  }
+.bio .bio-joao .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:215px;  }
 .bio .bio-eric .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta2.png) no-repeat; width: 70px; height:96px; left:388px;  }
-.bio .bio-pedro .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta3.png) no-repeat; width: 69px; height:69px; left:570px;  }
-.bio .bio-matheus .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta4.png) no-repeat; width: 66px; height:100px; right:235px; }
+.bio .bio-pedro .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta3.png) no-repeat; width: 69px; height:69px; right:352px;  }
+.bio .bio-matheus .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta4.png) no-repeat; width: 66px; height:100px; right:183px; }
 .bio .box { display: none; }
 .bio .brasao { width:109px; height:140px; position:relative; top:126px; left:25px; }
 .bio .texto { clear: both; height: 279px; left: 0; overflow: hidden; position: relative; text-align: left; top: 90px; width:900px; z-index: 100;}
