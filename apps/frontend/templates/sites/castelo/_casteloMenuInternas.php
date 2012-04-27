@@ -6,13 +6,13 @@
   
   <!--FANCYBOX-->
   <script type="text/javascript">
-  var $b = jQuery.noConflict();
-  $b(document).ready(function() {
-    $b('#fancybox-content a').live('hover', function(){
-      $b(this).fancybox()
+
+  $(document).ready(function() {
+    $('#fancybox-content a').live('hover', function(){
+      $(this).fancybox()
     });
     
-    $b("a[class*=botao]").not('.botao-porteiro-over').fancybox({
+    $("a[class*=botao]").not('.botao-porteiro-over').fancybox({
       'transitionIn'  : 'fadein',
       'transitionOut' : 'fadeout',
       'speedIn'   : 600, 
