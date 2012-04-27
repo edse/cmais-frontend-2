@@ -1,5 +1,6 @@
+<script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
+<link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
