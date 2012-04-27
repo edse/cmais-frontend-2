@@ -1,0 +1,16 @@
+body { background:#ffc561; min-height: 970px; }
+#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-hall-entrada.jpg") no-repeat scroll center; min-width:1000px !important; }
+#capa-site { height:963px; }
+#capa-site { *height:993px; }
+.tudo { height:680px; }
+
+.botao-relogio {z-index: 0;cursor: pointer;width: 153px;height: 337px;position: absolute;top: 20px;left: 121px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-relogio.gif) no-repeat 54px 168px;}
+.botao-relogio-over {z-index:1;width:200px; height:346px;position:absolute;top: 16px; left: 116px;background: url(/portal/images/capaPrograma/castelo/img-personagem-relogio-over.png) no-repeat;}
+.botao-relogio-over { *top:30px; }
+
+.botao-ratinho {z-index: 0;cursor: pointer;width: 172px;height: 105px;position: absolute;top: 331px;left: 321px;  background: url(/portal/images/capaPrograma/castelo/gif-personagem-ratinho.gif) no-repeat right top;}
+.botao-ratinho-over {z-index:1;width:137px; height:246px;position:absolute;bottom: 144px;left: 321px;background: url(/portal/images/capaPrograma/castelo/img-personagem-ratinho-over.png) no-repeat;}
+
+.botao-godofredo {z-index: 0;cursor: pointer;width: 99px;height: 80px;position: absolute;bottom: 275px;right: 238px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-maugodofredo.gif) no-repeat -14px -12px;}
+.botao-godofredo-over {z-index:1;width:276px; height:231px;position:absolute;top: 196px; right:179px; background: url(/portal/images/capaPrograma/castelo/img-personagem-maugodofredo-over.gif) no-repeat;}
+

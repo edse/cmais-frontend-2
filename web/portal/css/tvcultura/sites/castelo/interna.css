@@ -1,0 +1,56 @@
+body { background:url(/portal/images/capaPrograma/castelo/pattern-videos-bg.jpg) repeat; }
+#busca-galeria { display:none; }
+#menu-rodape { margin:50px 0 70px 0; }
+.abas li.ativo a, 
+.abas li:hover a,
+#menu-rodape .neutro:hover,
+#menu-rodape .neutro { background:#f7e55e; }
+#menu-rodape .neutro a { color:#e11e25;}
+.abas {  background:url(/portal/images/capaPrograma/castelo/bg-abas.png) repeat-x; }
+#menu-rodape .blocos a, 
+.cor-padrao, 
+#menu-rodape .blocos .jornalismo a, 
+.jornalismo { color:#333; }
+#menu-rodape .abas-conteudo { background:#f58220; }
+.busca { display:none; }
+.blocos li a.bg:hover { border-color:#f7e55e; }
+.paginacao { background:#f69524; }
+.paginacao .centraliza { float: right; width: auto; margin:0; }
+.paginacao a {  background:url(/portal/images/capaPrograma/castelo/btn-paginacao.png) no-repeat; }
+.paginacao .btn-prox {    background-position: -16px 0;}
+.paginacao ul li a.ativo,
+.paginacao ul li a:hover { color:#f7e55e; }
+#galeria-videos .blocos { width:970px; }
+#conteudo-pagina { min-height:600px; margin-bottom:100px; overflow:hidden; }
+.bg-video { width:1042px; height:650px; position:absolute; top:0; background:url("/portal/images/capaPrograma/castelo/bg-video.png") no-repeat 44px 80px; }
+.bg-video { *background-image:url("/portal/images/capaPrograma/castelo/bg-video.gif"); }
+.embed-video {  width:640px; float:right; height: 506px; text-align:left; overflow:hidden; }
+.embed-video p,
+.embed-video a { clear:both;  }
+.embed-video a { margin-top:10px; }
+#miolo { margin-top:-185px; }
+#menu-rodape .abas .neutro a { background: #F7E55E; }
+#menu-rodape .abas .neutro:hover span,
+#menu-rodape .abas .neutro span { display:none; }
+
+
+/* chat */
+#chat iframe,
+#chat .destaque img { display:none; }
+#chat #esquerda { width:749px; height:101px; padding-top:265px; float:right; background:url("/portal/images/capaPrograma/castelo/bg-chat.png") no-repeat; min-height:0; }
+#chat #esquerda { *background:url("/portal/images/capaPrograma/castelo/bg-chat.gif"); }
+#chat .destaque { margin-left:20px; width:710px; height:93px; overflow:hidden; }
+#chat .destaque a,
+#chat .destaque p {  color:#fff8ad;}
+/* chat */
+
+/* chat2*/
+#chat2 .bg-video { background:url("/portal/images/capaPrograma/castelo/bg-chat2.png") no-repeat right 92px; width:1086px; height:660px }
+#chat2 .bg-video { *background-image:url("/portal/images/capaPrograma/castelo/bg-chat2.gif"); }
+#chat2 #esquerda { float:right; margin: 0 0 0 10px; }
+#chat2 #direita { margin:200px 10px 0 0; }
+#chat2 .duas-colunas { height:487px; overflow: hidden; }
+#chat2 .box-compartilhar { background:#f69524; }
+#chat2 .duas-colunas a,
+#chat2 .duas-colunas p { margin:10px; }
+/* /chat2*/
