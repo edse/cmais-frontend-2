@@ -83,11 +83,15 @@
             <a href="javascript:" class="botao-porteiro-over"  name="over-porteiro"style="display:none"></a>
             <!--/PORTEIRO-->
             
+            <?php if(isset($displays["dr-abobrinha"])): ?>
+            	<?php if(count($displays["dr-abobrinha"]) > 0): ?>
             <!--DR.ABROBINHA-->
             <div class="botao-dr-abobrinha"></div>
             <div class="gif-dr-abobrinha"></div>
-            <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
-            <!--/DR.ABROBINHA--> 
+            <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
+            <!--/DR.ABROBINHA-->
+            	<?php endif; ?>
+            <?php endif; ?>  
             
             
             <!-- MENU NAVEGAÇÃO-->

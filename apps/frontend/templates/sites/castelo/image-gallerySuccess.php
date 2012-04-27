@@ -2,14 +2,13 @@
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 
-
 <script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
 <link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
 
 <script type="text/javascript">
 //a linha abaixo cria um novo pseudonimo $a
 //que será utilizado no lugar de $ ou de jQuery()
-var $a = jQuery.noConflict();
+/*var $a = jQuery.noConflict();
 //gallery
 $a(window).load(function() {
    $a('#featured').orbit({

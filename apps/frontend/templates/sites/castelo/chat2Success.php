@@ -38,9 +38,7 @@ $(function(){ //onready
           
           <h2>
             <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
-          
-                <img src="/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
-              
+							<img src="/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
             </a>
           </h2>
           
@@ -84,36 +82,34 @@ $(function(){ //onready
             
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
-            	
               
-              <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
+              <?php include_partial_from_folder('sites/castelo','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
 
               <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-
-            
-            	
-              
               
             </div>
             <!-- /ESQUERDA -->
             
             <!-- DIREITA -->
             <div id="direita" class="grid1">
+             
+            	<?php if(isset($displays['chat'])): ?>
+	            <!-- COVERIT LIVE --> 
+	            <div class="box-padrao">
+	              <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
+	            </div>	
+	            <!--/ COVERIT LIVE -->
+            	<?php endif; ?>
               
-             <div class="box-padrao">
-               <iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=e3ee0488bf/height=490/width=310" scrolling="no" height="490px" width="310px" frameBorder ="0" ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=e3ee0488bf" >Castelo</a></iframe>
-			 </div>	
-              
-
-             <!-- BOX TWITTER -->
-          <div class="grid1 box-padrao">
-                           
-                <a href="http://twitter.com/tvcultura" class="twitter-follow-button" target="_blank">Siga @tvcultura</a>
-                 
-                  <div id="twitter"></div>
-                  <hr />
-            </div>
-            <!-- /BOX TWITTER -->
+	            <?php if(isset($displays['twitter'])): ?>
+	            <!-- BOX TWITTER -->
+	          	<div class="grid1 box-padrao">
+								<a href="http://twitter.com/tvcultura" class="twitter-follow-button" target="_blank">Siga @tvcultura</a>
+								<div id="twitter"></div>
+								<hr />
+							</div>
+	            <!-- /BOX TWITTER -->
+	            <?php endif; ?>
               
             </div>
             <!-- /DIREITA -->
@@ -122,7 +118,7 @@ $(function(){ //onready
           <!-- /CAPA -->
           
           <!--APOIO-->
-          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <?php if(isset($displays["rodape-interno"])) include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
           <!--/APOIO-->
           
         </div>

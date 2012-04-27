@@ -76,21 +76,36 @@
             <!--/NAVEGAÇÃO PG A PG-->
             
            <div class="tudo">
-            
+           	
+            <?php if(isset($displays["relogio"])): ?>
+            	<?php if(count($displays["relogio"]) > 0): ?>
             <!--relogio-->
               <div class="botao-relogio"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-relogio-over" name="over-relogio" style="display:none"></a>  
+              <a href="<?php echo $displays["relogio"][0]->retriveUrl()?>" title="<?php echo $displays["relogio"][0]->getTitle()?>" class="botao-relogio-over" name="over-relogio" style="display:none"></a>  
             <!--/relogio-->
+            	<?php endif; ?>
+            <?php endif; ?>
             
+            <?php if(isset($displays["ratinho"])): ?>
+            	<?php if(count($displays["ratinho"]) > 0): ?>
             <!--ratinho-->
-              <div class="botao-ratinho"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-ratinho-over" name="over-ratinho" style="display:none"></a>  
-            <!--/ratinho-->  
+              <img src="/portal/images/capaPrograma/castelo/gif-personagem-ratinho.gif" class="antena">
+              <div class="botao-ratinho">
+                <img src="/portal/images/capaPrograma/castelo/gif-personagem-ratinho.png">
+              </div>
+              <a href="<?php echo $displays["ratinho"][0]->retriveUrl()?>" title="<?php echo $displays["ratinho"][0]->getTitle()?>" class="botao-ratinho-over" name="over-ratinho" style="display:none"></a>  
+            <!--/ratinho-->
+            	<?php endif; ?>  
+            <?php endif; ?>
             
+            <?php if(isset($displays["godofredo"])): ?>
+            	<?php if(count($displays["godofredo"]) > 0): ?>
             <!--godofredo-->
               <div class="botao-godofredo"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-godofredo-over" name="over-godofredo" style="display:none"></a>  
-            <!--/godofredo-->  
+              <a href="<?php echo $displays["godofredo"][0]->retriveUrl()?>" title="<?php echo $displays["godofredo"][0]->getTitle()?>" class="botao-godofredo-over" name="over-godofredo" style="display:none"></a>  
+            <!--/godofredo-->
+            	<?php endif; ?> 
+            <?php endif; ?>
             
             
             

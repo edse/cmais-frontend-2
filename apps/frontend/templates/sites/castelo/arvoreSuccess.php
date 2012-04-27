@@ -77,26 +77,41 @@
             
            <div class="tudo">
             
+            <?php if(isset($displays["celeste"])): ?>
+            	<?php if(count($displays["celeste"]) > 0): ?>
             <!--celeste-->
               <div class="botao-celeste"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-celeste-over" name="over-celeste" style="display:none"></a>  
+              <a href="<?php echo $displays["celeste"][0]->retriveUrl()?>" title="<?php echo $displays["celeste"][0]->getTitle()?>" class="botao-celeste-over" name="over-celeste" style="display:none"></a>  
             <!--/celeste-->
+            	<?php endif; ?>
+            <?php endif; ?>
             
+            <?php if(isset($displays["lanaelara"])): ?>
+            	<?php if(count($displays["lanaelara"]) > 0): ?>
             <!--lanaelara-->
               <div class="botao-lanaelara"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-lanaelara-over" name="over-lanaelara" style="display:none"></a>  
+              <a href="<?php echo $displays["lanaelara"][0]->retriveUrl()?>" title="<?php echo $displays["lanaelara"][0]->getTitle()?>" class="botao-lanaelara-over" name="over-lanaelara" style="display:none"></a>  
             <!--/lanaelara-->  
+            	<?php endif; ?>
+            <?php endif; ?>
             
+            <?php if(isset($displays["joaodebarro"])): ?>
+            	<?php if(count($displays["joaodebarro"]) > 0): ?>
             <!--joaodebarro-->
               <div class="botao-joaodebarro"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-joaodebarro-over" name="over-joaodebarro" style="display:none"></a>  
+              <a href="<?php echo $displays["joaodebarro"][0]->retriveUrl()?>" title="<?php echo $displays["joaodebarro"][0]->getTitle()?>" class="botao-joaodebarro-over" name="over-joaodebarro" style="display:none"></a>  
             <!--/joaodebarro-->
+            	<?php endif; ?>
+            <?php endif; ?>
             
+            <?php if(isset($displays["etevaldo"])): ?>
+            	<?php if(count($displays["etevaldo"]) > 0): ?>
              <!--etevaldo-->
               <div class="botao-etevaldo"></div>
-              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-etevaldo-over" name="over-etevaldo" style="display:none"></a>  
+              <a href="<?php echo $displays["etevaldo"][0]->retriveUrl()?>" title="<?php echo $displays["etevaldo"][0]->getTitle()?>" class="botao-etevaldo-over" name="over-etevaldo" style="display:none"></a>  
             <!--/etevaldo-->    
-            
+            	<?php endif; ?>
+            <?php endif; ?>            
             
             
             </div> 
