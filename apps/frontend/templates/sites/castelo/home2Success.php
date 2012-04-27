@@ -79,13 +79,15 @@
             </div>
             
             <div class="botao-porteiro"></div>
+            <div class="gif-porteiro"></div>
             <a href="javascript:" class="botao-porteiro-over"  name="over-porteiro"style="display:none"></a>
             <!--/PORTEIRO-->
             
             <!--DR.ABROBINHA-->
             <div class="botao-dr-abobrinha"></div>
+            <div class="gif-dr-abobrinha"></div>
             <a href="http://172.20.18.133/index.php/castelo/dr-abobrinha<?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
-            <!--/DR.ABROBINHA-->  
+            <!--/DR.ABROBINHA--> 
             
             
             <!-- MENU NAVEGAÇÃO-->
