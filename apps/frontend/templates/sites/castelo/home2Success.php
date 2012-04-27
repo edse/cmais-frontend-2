@@ -86,12 +86,12 @@
             <!--DR.ABROBINHA-->
             <div class="botao-dr-abobrinha"></div>
             <div class="gif-dr-abobrinha"></div>
-            <a href="http://172.20.18.133/index.php/castelo/dr-abobrinha<?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
+            <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
             <!--/DR.ABROBINHA--> 
             
             
             <!-- MENU NAVEGAÇÃO-->
-            <?php include_partial_from_folder('blocks','global/casteloMenuInternas') ?> 
+            <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>
