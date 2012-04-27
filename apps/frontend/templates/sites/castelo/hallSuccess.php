@@ -98,7 +98,7 @@
             
             
             <!-- MENU NAVEGAÇÃO-->
-            <?php include_partial_from_folder('blocks','global/casteloMenuInternas') ?> 
+            <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>
