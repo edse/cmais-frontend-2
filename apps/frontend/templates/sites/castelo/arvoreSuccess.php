@@ -79,22 +79,22 @@
             
             <!--celeste-->
               <div class="botao-celeste"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-celeste-over" name="over-celeste" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-celeste-over" name="over-celeste" style="display:none"></a>  
             <!--/celeste-->
             
             <!--lanaelara-->
               <div class="botao-lanaelara"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-lanaelara-over" name="over-lanaelara" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-lanaelara-over" name="over-lanaelara" style="display:none"></a>  
             <!--/lanaelara-->  
             
             <!--joaodebarro-->
               <div class="botao-joaodebarro"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-joaodebarro-over" name="over-joaodebarro" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-joaodebarro-over" name="over-joaodebarro" style="display:none"></a>  
             <!--/joaodebarro-->
             
              <!--etevaldo-->
               <div class="botao-etevaldo"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-etevaldo-over" name="over-etevaldo" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-etevaldo-over" name="over-etevaldo" style="display:none"></a>  
             <!--/etevaldo-->    
             
             

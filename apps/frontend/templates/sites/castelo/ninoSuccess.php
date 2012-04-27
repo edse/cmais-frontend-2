@@ -79,22 +79,22 @@
             
             <!--nino-->
               <div class="botao-nino"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-nino-over" name="over-nino" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-nino-over" name="over-nino" style="display:none"></a>  
             <!--/nino-->
             
             <!--zeca-->
               <div class="botao-zeca"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-zeca-over" name="over-zeca" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-zeca-over" name="over-zeca" style="display:none"></a>  
             <!--/zeca-->  
             
             <!--biba-->
               <div class="botao-biba"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-biba-over" name="over-biba" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-biba-over" name="over-biba" style="display:none"></a>  
             <!--/biba-->
             
              <!--telekid-->
               <div class="botao-telekid"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-telekid-over" name="over-telekid" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-telekid-over" name="over-telekid" style="display:none"></a>  
             <!--/telekid-->    
             
             

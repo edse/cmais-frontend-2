@@ -79,17 +79,17 @@
             
             <!--relogio-->
               <div class="botao-relogio"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-relogio-over" name="over-relogio" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-relogio-over" name="over-relogio" style="display:none"></a>  
             <!--/relogio-->
             
             <!--ratinho-->
               <div class="botao-ratinho"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-ratinho-over" name="over-ratinho" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-ratinho-over" name="over-ratinho" style="display:none"></a>  
             <!--/ratinho-->  
             
             <!--godofredo-->
               <div class="botao-godofredo"></div>
-              <a href="http://172.20.18.133/index.php/castelo/teste-de-conteudo <?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-godofredo-over" name="over-godofredo" style="display:none"></a>  
+              <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" class="botao-godofredo-over" name="over-godofredo" style="display:none"></a>  
             <!--/godofredo-->  
             
             
