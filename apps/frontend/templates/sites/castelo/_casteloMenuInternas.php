@@ -1,6 +1,4 @@
 <!--MODAL-->
-    
-
 
   <!--TRAVA MOUSE FUNDO-->
   <div class="modal" style="display: none;">modal</div>
@@ -8,7 +6,6 @@
   
   <!--FANCYBOX-->
   <script type="text/javascript">
-
   $(document).ready(function() {
     $('#fancybox-content a').live('hover', function(){
       $(this).fancybox()
@@ -37,7 +34,7 @@
       
       $('a[name*="over"]').mouseleave(function(){
          $('.'+$(this).attr('class')).fadeOut('fast');
-          $('div[class*="botao"]').fadeIn('fast');
+         $('div[class*="botao"]').fadeIn('fast');
       });
       
       $('a[class*=nav]').hover(function(){
@@ -47,7 +44,15 @@
       $('a[class*=nav]').mouseleave(function(){
         $('.'+$(this).attr('class')+' img').fadeOut('fast');
       });
-    
+      
+      //ratinho hall
+      $('.botao-ratinho').hover(function(){
+        $('.antena').fadeOut('fast');
+      });
+      
+      $('.botao-ratinho-over').mouseleave(function(){
+        $('.antena').fadeIn('fast');
+      });
       
     });
   </script>
