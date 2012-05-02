@@ -897,7 +897,7 @@ function isDevice(OSName)
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:block">
-                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 3px solid gray; width: 964px;"></iframe>
+                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 0px solid gray; width: 964px;"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
 
