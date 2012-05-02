@@ -59,6 +59,8 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
+          
+          <div><?php echo $section->getDescription(); ?></div>
 
           <!-- CAPA -->
           <div class="capa grid3">
