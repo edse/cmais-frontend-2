@@ -4,6 +4,7 @@
     ->from('Program p, ChannelProgram cp')
     ->where('p.id = cp.program_id')
     ->andWhere('cp.channel_id = ?', 2)
+    ->andWhere('p.is_active = ?', 1)
     ->orderBy('p.title')
     ->execute();
     
