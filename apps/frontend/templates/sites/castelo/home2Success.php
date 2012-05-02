@@ -98,7 +98,7 @@
                     $('.balao, .botao-porteiro-over, .gif-porteiro').fadeOut('fast',function(){
                       $('.gif-abre').fadeIn(2000, function(){
                         $('.gif-abre').fadeOut('slow',function(){
-                          window.location.href = "http://172.20.18.133/index.php/castelo/hall";
+                          window.location.href = "http://tvratimbum.cmais.com.br/castelo/hall";
                         });
                       });
                     });
