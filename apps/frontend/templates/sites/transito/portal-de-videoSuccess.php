@@ -59,6 +59,11 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
+          
+          <div style="text-align: left;">
+            <h5>Está parado no trânsito? Flagrou algum problema nas vias da cidade? Faça uma gravação do seu celular e envie para nós.</h5>
+            <h6 style="text-decoration: underline;">Importante: não use o celular enquanto estiver ao volante.</h6>
+          </div>
 
           <!-- CAPA -->
           <div class="capa grid3">
