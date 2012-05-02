@@ -356,13 +356,11 @@ function isDevice(OSName)
                         <span></span>
                       </li>
                       
-                      <?php /*
                       <!--CAMERAS AO VIVO -->
                       <li class="btn-cameras-ao-vivo btn-li ativo">
                         <a href="#telas" title="Câmeras ao vivo" class="m_cameras_ao_vivo btn-menu">Câmeras ao vivo</a>
                         <span class="decoracao"></span>
                       </li>
-                      */ ?>
                       <!--CAMERAS AO VIVO -->
                       <li class="btn-mapa-sao-paulo  btn-li ">
                         <a href="#telas" title="Mapa de São Paulo" class="m_mapa_sao_paulo btn-menu">Mapa de São Paulo</a>
@@ -376,8 +374,7 @@ function isDevice(OSName)
                   
                   <!--CONTEUDOS -->
                   <ul class="conteudos" style="height: 730px;">
-                    
-                     <?php /*
+
                      <!--CAMERA AO VIVO-->
                      <li class="conteudo-camera-ao-vivo" >
                        
@@ -386,7 +383,7 @@ function isDevice(OSName)
                          
                           <div id="legendas-ruas"></div>
                           
-                          <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div>
+                          <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
                           
                           <!--topo mapa-->
                           <div class="topo-mapa">
@@ -749,7 +746,6 @@ function isDevice(OSName)
                 </div> 
                 <!--/MODAl CAMERA azul-->
 
-                <?php /*
                 <!--MODAl CAMERA Eixo-->
                 <div id="eixo">
                   <div id="dialogEixo" class="window">
@@ -898,72 +894,13 @@ function isDevice(OSName)
                        
                      </li>
                      <!--CAMERA AO VIVO-->
-                     */ ?>
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:block">
-                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2"></iframe>
+                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 3px solid gray; width: 964px;"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
-                     
-                     <!--PORTAL DE VIDEOS-->
-                     <li class="conteudo-portal-de-videos" style="display:none">
-                     <!--
-                      <a name="ytd" />
-                      -->
-                      <!-- Youtube Direct embed - start --> 
-                      <!--
-                      <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
-                      <script type="text/javascript">
-                      var ytdInitFunction = function() {
-                        var ytd = new Ytd();
-                        ytd.setAssignmentId("1001");
-                        ytd.setCallToAction("callToActionId-1001");
-                        var containerWidth = 350;
-                        var containerHeight = 550;
-                        ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
-                        ytd.ready();
-                      };
-                      if (window.addEventListener) {
-                        window.addEventListener("load", ytdInitFunction, false);
-                      } else if (window.attachEvent) {
-                        window.attachEvent("onload", ytdInitFunction);
-                      }
-                      </script>
-                      <a id="callToActionId-1001" href="javascript:void(0);"><img src="https://cmais-tvcultura.appspot.com/images/calltoaction.png"></a>
-                      <div id="ytdContainer-1001"></div>
-                      -->
-                      <!-- Youtube Direct embed - end --> 
-                      <a name="ytd" />
-                      <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
-                      <script type="text/javascript">
-                      var ytdInitFunction = function() {
-                        var ytd = new Ytd();
-                        ytd.setAssignmentId("1001");
-                        ytd.setCallToAction("callToActionId-1001");
-                        var containerWidth = 350;
-                        var containerHeight = 550;
-                        ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
-                        ytd.ready();
-                      };
-                      if (window.addEventListener) {
-                        window.addEventListener("load", ytdInitFunction, false);
-                      } else if (window.attachEvent) {
-                        window.attachEvent("onload", ytdInitFunction);
-                      }
-                      </script>
-                      <div class="youtube">
-                        <a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
-                        <div id="ytdContainer-1001"></div>
-                        
-                      </div>
-                      <div class="participe">
-                        <div class="img-enviar"></div>
-                        <a href="#" class="titulos">Participe! Envie seu vídeo.</a>
-                        <!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
-                      </div>
-                     </li>
-                     <!--PORTAL DE VIDEOS-->      
+
                   </ul>
                   <!--CONTEUDOS -->         
               </div>
