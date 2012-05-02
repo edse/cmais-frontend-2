@@ -17,6 +17,11 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         
+      <!--FANCYBOX-->
+      <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+      <link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+      <!--/FANCYBOX-->
+        
         
         <div class="topo-programa">
           
