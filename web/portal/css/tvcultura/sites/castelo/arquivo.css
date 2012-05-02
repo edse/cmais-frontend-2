@@ -4,6 +4,7 @@ body { background:#911630; min-height: 970px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
 
+.bg-site{margin-top:-100px;}
 .botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px; position:absolute; bottom: 109px; right: 227px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
 .botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 70px;right: 179px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
 
