@@ -148,7 +148,9 @@
             <?php if(isset($displays["gato"])): ?>
             	<?php if(count($displays["gato"]) > 0): ?>
             <!--gato-->
-              <div class="botao-gato"></div>
+              <div class="botao-gato">
+                <div class="gif-olho"></div>
+              </div>
               <a href="<?php echo $displays["gato"][0]->retriveUrl()?>" title="<?php echo $displays["gato"][0]->getTitle()?>" class="botao-gato-over" name="over-gato" style="display:none"></a>  
             <!--/gato-->  
             	<?php endif; ?>
