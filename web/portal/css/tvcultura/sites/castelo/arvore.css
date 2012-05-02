@@ -13,5 +13,5 @@ body { background:#fece7b; min-height: 970px; }
 .botao-joaodebarro {z-index:0;cursor:pointer ;width:76px; height:59px;position:absolute;top: 45px;right: 364px;background: url(/portal/images/capaPrograma/castelo/gif-joaodebarro-patativas-passarinho.gif) no-repeat right top ;}
 .botao-joaodebarro-over {z-index:1;width:279px; height:117px;position:absolute;top:45px; right:241px; background: url(/portal/images/capaPrograma/castelo/img-joaodebarro-patativas-over.gif) no-repeat;}
 
-.botao-etevaldo {z-index:0;cursor:pointer ;width:222px; height:143px;position:absolute;top: 215px; left: 0;background: url(/portal/images/capaPrograma/castelo/gif-personagem-etevaldo.gif) no-repeat 72px 0;}
+.botao-etevaldo {z-index:0;cursor:pointer ;width:222px; height:143px;position:absolute;top: 215px; left: 0;background: url(/portal/images/capaPrograma/castelo/gif-personagem-etevaldo.gif) no-repeat 24px 6px;}
 .botao-etevaldo-over {z-index:1;width:434px; height:558px;position:absolute;top: 89px; left:0; background: url(/portal/images/capaPrograma/castelo/img-personagem-etevaldo-over.png) no-repeat;}
