@@ -81,14 +81,14 @@
                         <?php if($pager->haveToPaginate()): ?>
                         <div class="paginacao pag3 grid2">
                           <?php if($page != $pager->getNextPage()): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>
+                          <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $pager->getNextPage() ?>" class="btn proximo"></a>
                           <?php endif; ?>
                           <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a>
                           <?php if(($page!="")&&($page != $pager->getPreviousPage())): ?>
-                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
+                          <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $pager->getPreviousPage() ?>" class="btn anterior"></a>
                           <?php endif; ?>
                         </div>
-				        <form id="page_form" action="" method="post">
+				        <!--form id="page_form" action="" method="post">
 				          <input type="hidden" name="return_url" value="<?php echo $url?>" />
 				          <input type="hidden" name="page" id="page" value="" />
 				        </form>
@@ -97,7 +97,7 @@
 				          	$("#page").val(i);
 				          	$("#page_form").submit();
 				          }
-				        </script> 
+				        </script--> 
                         <?php endif; ?>
                       <?php endif; ?>
                       <!-- PAGINACAO -->
