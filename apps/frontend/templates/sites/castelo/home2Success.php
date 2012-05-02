@@ -1,12 +1,10 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <div class="bg-site">
 </div>
-
 
 <!--CASTELO--> 
 <div id="castelo" >
@@ -72,32 +70,73 @@
           <!-- CAPA -->
           <div class="capa grid3">
             
+            <script>
+              var questions = new Array("Quantos anos tem o nino?",
+                                        "Quem é o melhor amigo do Godofredo?",
+                                        "O que o Dr. Abobrinha quer construir no lugar do Castelo?",
+                                        "Qual é o nome do irmão do Perônio?", 
+                                        "Como faz pra chamar a caipora?",
+                                        "Quem toma conta da biblioteca do Castelo?",
+                                        "Que comida gostosa o Bongô sempre trazia pro pessoal?");
+              var answers = new Array("300",
+                                      "Mau",
+                                      "Prédio",
+                                      "Tíbio",
+                                      "Assobio",
+                                      "Gato",
+                                      "Pizza");
+              var k = Math.floor(Math.random() * questions.length);
+              var currentQuestion = questions[k];
+              var currentAnswer = answers[k].toLowerCase();
+              
+              $(function(){
+                $('#questao').html(currentQuestion);
+                
+                $('#resposta').keyup(function(){
+                  answered = $('#resposta').val().toLowerCase()
+                  if (answered == currentAnswer) {
+                    $('.balao, .botao-porteiro-over, .gif-porteiro').fadeOut('fast',function(){
+                      $('.gif-abre').fadeIn(2000, function(){
+                        $('.gif-abre').fadeOut('slow',function(){
+                          window.location.href = "http://172.20.18.133/index.php/castelo/hall";
+                        });
+                      });
+                    });
+                    
+                    /*
+                    $('.balao2').fadeIn('normal',function(){
+                      window.location("");
+                    });
+                    */
+                  }
+                });
+                
+              });
+            </script>
             
             <!--PORTEIRO-->
             <div class="balao" style="display: none;">
-              
               <div class="senha"></div>
               <div class="pergunta" style="display: none;">
-                <p class="questao">pergunta</p>
+                <p class="questao" id="questao"></p>
                 <form action="">
-                    <input type="text" class="resposta"/>
+                    <input type="text" class="resposta" name="resposta" id="resposta" />
                 </form>
-                
-                
               </div>
-              
             </div>
+
             
-            <div class="botao-porteiro"></div>
+            <div class="porteiro"></div>
             <div class="gif-porteiro"></div>
+            <div class="gif-abre" style="display: none;"></div>
             <a href="javascript:" class="botao-porteiro-over" style="display:none"></a>
             <!--/PORTEIRO-->
             
             <!--PERGUNTA-->
             <script type="text/javascript">
               $(document).ready(function(){
-                $('.botao-porteiro-over').click(function(){
-                 $(this).show();
+                $('.porteiro').click(function(){
+                 $('.botao-porteiro-over').show();
                  $('.balao').fadeIn('fast'); 
                 });
                 
@@ -120,14 +159,6 @@
               <?php endif; ?>
             <?php endif; ?>  
             
-            <!--NAVEGAÇÃO PG A PG-->
-            <a href="/castelo/morgana" class="nav-Esquerda" title="Anterior" target="_self">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
-            </a>
-            <a href="/castelo/hall" class="nav-Direita" title="Próxima" target="_self">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
-            </a>
-            <!--/NAVEGAÇÃO PG A PG-->
             <!-- MENU NAVEGAÇÃO-->
             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
             <!--/MENU NAVEGAÇÃO-->
