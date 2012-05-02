@@ -73,34 +73,61 @@
           <div class="capa grid3">
             
             
-            
-
-            
-            <!--PERGUNTA-->
             <!--PORTEIRO-->
-            <div class="balao" style="display:none" >
+            <div class="balao" style="display: none;">
               
-              <div class="senha" style="display:none"></div>
-              <div class="pergunta1" style="display:none"></div>
+              <div class="senha"></div>
+              <div class="pergunta" style="display: none;">
+                <p class="questao">pergunta</p>
+                <form action="">
+                    <input type="text" class="resposta"/>
+                </form>
+                
+                
+              </div>
               
             </div>
             
             <div class="botao-porteiro"></div>
             <div class="gif-porteiro"></div>
-            <a href="javascript:" class="botao-porteiro-over"  name="over-porteiro"style="display:none"></a>
+            <a href="javascript:" class="botao-porteiro-over" style="display:none"></a>
             <!--/PORTEIRO-->
             
+            <!--PERGUNTA-->
+            <script type="text/javascript">
+              $(document).ready(function(){
+                $('.botao-porteiro-over').click(function(){
+                 $(this).show();
+                 $('.balao').fadeIn('fast'); 
+                });
+                
+                $('.senha').click(function(){
+                 $(this).hide();
+                 $('.pergunta').fadeIn('fast'); 
+                });
+                
+              });
+            </script>
+            <!--/PERGUNTA-->
+            
             <?php if(isset($displays["dr-abobrinha"])): ?>
-            	<?php if(count($displays["dr-abobrinha"]) > 0): ?>
+              <?php if(count($displays["dr-abobrinha"]) > 0): ?>
             <!--DR.ABROBINHA-->
             <div class="botao-dr-abobrinha"></div>
             <div class="gif-dr-abobrinha"></div>
             <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
             <!--/DR.ABROBINHA-->
-            	<?php endif; ?>
+              <?php endif; ?>
             <?php endif; ?>  
             
-            
+            <!--NAVEGAÇÃO PG A PG-->
+            <a href="/castelo/morgana" class="nav-Esquerda" title="Anterior" target="_self">
+              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
+            </a>
+            <a href="/castelo/hall" class="nav-Direita" title="Próxima" target="_self">
+              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
+            </a>
+            <!--/NAVEGAÇÃO PG A PG-->
             <!-- MENU NAVEGAÇÃO-->
             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
             <!--/MENU NAVEGAÇÃO-->

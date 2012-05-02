@@ -75,14 +75,7 @@
   
   </script>
   
-<!--NAVEGAÇÃO PG A PG-->
-<a hef="#" class="nav-Esquerda" title="Anterior">
-  <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
-</a>
-<a hef="#" class="nav-Direita" title="Próxima">
-  <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
-</a>
-<!--/NAVEGAÇÃO PG A PG-->
+
 
 <!--/MODAL-->
 <div class="navegacao">
