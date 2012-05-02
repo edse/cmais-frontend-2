@@ -159,7 +159,9 @@
             <?php if(isset($displays["pedro"])): ?>
               <?php if(count($displays["pedro"]) > 0): ?>
             <!--pedro-->
-              <div class="botao-pedro"></div>
+              <div class="botao-pedro">
+                <div class="gif-pedro"></div>
+              </div>
               <a href="<?php echo $displays["pedro"][0]->retriveUrl()?>" title="<?php echo $displays["pedro"][0]->getTitle()?>" class="botao-pedro-over" name="over-pedro" style="display:none"></a>  
             <!--/pedro-->  
               <?php endif; ?>

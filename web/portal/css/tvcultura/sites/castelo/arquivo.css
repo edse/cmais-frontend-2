@@ -29,5 +29,6 @@ body { background:#911630; min-height: 970px; }
 .botao-gato {z-index: 0;cursor: pointer;width: 101px;height: 96px;position: absolute;top: 367px;left: 231px;}
 .botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;left: 228px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
 
+.gif-pedro{background:  url(/portal/images/capaPrograma/castelo/gif-personagem-pedro.gif) no-repeat; width:50px; height:56px;top: -48px;position: absolute;left: 67px;}
 .botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;}
 .botao-pedro-over {z-index:1;width:179px; height:200px;position:absolute;bottom: 151px;right: 122px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro-over.png) no-repeat;}
