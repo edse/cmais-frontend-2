@@ -1,0 +1,19 @@
+body { background:#fff687; min-height: 970px; }
+#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-cozinha.jpg") no-repeat scroll center; min-width:1000px !important; }
+.tudo { height:680px; width:1030px; position:relative; left:-60px; }
+#capa-site { width: 1040px; }
+#menuFloat { z-index: 10000; }
+
+.botao-bongo {z-index:0; cursor:pointer ; width:246px; height:445px; position:absolute; top:19px; left:108px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-bongo.gif) no-repeat 184px 72px;}
+.botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:-43px; left: 10px;background: url(/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
+
+.botao-caipora {z-index:0;cursor:pointer ;width:329px; height:476px;position:absolute;top:66px; right:70px;background:url(/portal/images/capaPrograma/castelo/gif-personagem-caipora.gif) no-repeat;}
+.botao-caipora-over {z-index:1;width:170px; height:246px;position:absolute;top: -126px;left: 252px;background: url(/portal/images/capaPrograma/castelo/img-personagem-caipora-over.png) no-repeat;}
+
+/*
+.botao-dedolandia {z-index:0;cursor:pointer ;width:152px; height:413px;position:absolute;top: 54px;left: 137px;background: url(/portal/images/capaPrograma/castelo/gif-dedolandia.gif) no-repeat -12px 19px;}
+.botao-dedolandia-over {z-index:1;width:396px; height:526px;position:absolute;top:-45px; left:76px; background: url(/portal/images/capaPrograma/castelo/img-dedolandia-over.png) no-repeat;}
+
+.botao-lavarmaos {z-index:0;cursor:pointer ;width:121px; height:104px;position:absolute;top: 0; left: 0;background: url(/portal/images/capaPrograma/castelo/gif-agua-lavar-as-maos.gif) no-repeat;}
+.botao-lavarmaos-over {z-index:1;width:220px; height:297px;position:absolute;top: 0; left:0; background: url(/portal/images/capaPrograma/castelo/img-lavar-as-maos-over.png) no-repeat;}
+*/
