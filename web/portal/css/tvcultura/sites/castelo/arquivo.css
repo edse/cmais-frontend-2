@@ -1,10 +1,10 @@
 body { background:#911630; min-height: 970px; }
 #bg { background:url("/portal/images/capaPrograma/castelo/img-arquivo-bg-biblioteca.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
-#capa-site { *height:993px; }
-.tudo { height:680px; }
+#capa-site { *height:1040px !important; }
+.tudo { height:680px;*height:709px  }
 
-.bg-site{margin-top:-100px;}
+.navegacao{*left:40px !important;}
 .botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px; position:absolute; bottom: 109px; right: 227px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
 .botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 70px;right: 179px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
 
@@ -26,9 +26,9 @@ body { background:#911630; min-height: 970px; }
 .botao-arquivo7 {z-index:0;cursor:pointer ;width:85px; height:45px;position:absolute;bottom: 103px;left: 208px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7.gif) no-repeat;}
 .botao-arquivo7-over {z-index:1;width:95px; height:52px;position:absolute;bottom: 97px;left: 206px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}
 
-.gif-olho{width:33px;height:12px;position: absolute;top: 21px;left: 40px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-gatopintado.gif) no-repeat;}
-.botao-gato {z-index: 0;cursor: pointer;width: 101px;height: 96px;position: absolute;top: 367px;left: 231px;}
-.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;left: 228px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
+.gif-olho{width:33px;height:12px;position: absolute;top: 21px;*top: 49px;left: 40px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-gatopintado.gif) no-repeat;}
+.botao-gato {z-index: 0;cursor: pointer;width: 101px;height: 96px;position: absolute;*top: 395px;top: 367px;left: 231px;}
+.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;*top: 392px;left: 228px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
 
 .gif-pedro{background:  url(/portal/images/capaPrograma/castelo/gif-personagem-pedro.gif) no-repeat; width:50px; height:56px;top: -48px;position: absolute;left: 67px;}
 .botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;}
