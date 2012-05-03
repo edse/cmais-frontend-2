@@ -1,10 +1,22 @@
 /*CASTELO EM BREVE */
 /*#capa-site {min-height: 895px;margin-top: 48px !important;width: 100%;background: url(/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat center 0 #50579f !important;}*/
 
+@font-face {
+    font-family: 'CrazyHaroldRegular';
+    src: url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot');
+    src: url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.woff') format('woff'),
+         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.ttf') format('truetype'),
+         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.svg#CrazyHaroldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
   
 .castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
-.castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
+.castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px; }
 
 #rodape-portal .voltar-topo {*margin-left:-340px;}
 #rodape-portal{margin-top:-25px;}
@@ -41,8 +53,8 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .balao{position:absolute;top: -2px;left: 165px;width:388px; height:375px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao.png) no-repeat}
 #castelo .senha{cursor:pointer;position: absolute; top: 67px;left: 31px;width: 305px; height: 230px;background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-senha.png) no-repeat;}
 #castelo .pergunta{position: absolute;top: 66px;left: 55px;width: 260px;height: 240px;}
-#castelo .questao{}
-#castelo .resposta{color:#e4222b; font-size:50px; font-family:Arial, Helvetica, sans-serif; text-transform: uppercase;position: absolute;bottom: 13px;left: 27px;width: 242px;}
+#castelo .questao{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#005bac;font-size: 19px;line-height: 27px;}
+#castelo .resposta{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#e4222b; font-size:50px;text-transform: uppercase;position: absolute;bottom: 19px;left: 17px;width: 242px;}
 
 .nav-Esquerda{z-index:5;width:90px; height:900px; position: absolute; left:50px; top:0;}
 .nav-Esquerda img{position:absolute;top:18%; right: 0;}
@@ -84,7 +96,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .navegacao .thumbs a.laboratorio:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
 .navegacao .thumbs a.morgana:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
 /*/HOME*/
- 
+
 
 /*MODAL*/
 /*.modal{width:100%; height: 961px;*height: 1010px;background:red;position: absolute; top:50px; left:0;}*/

@@ -71,13 +71,13 @@
           <div class="capa grid3">
             
             <script>
-              var questions = new Array("Quantos anos tem o nino?",
-                                        "Quem é o melhor amigo do Godofredo?",
-                                        "O que o Dr. Abobrinha quer construir no lugar do Castelo?",
-                                        "Qual é o nome do irmão do Perônio?", 
-                                        "Como faz pra chamar a caipora?",
-                                        "Quem toma conta da biblioteca do Castelo?",
-                                        "Que comida gostosa o Bongô sempre trazia pro pessoal?");
+              var questions = new Array("A senha de hoje é:</br></br>Quantos anos tem o nino?",
+                                        "A senha de hoje é:</br></br>Quem é o melhor amigo do Godofredo?",
+                                        "A senha de hoje é:</br></br>O que o Dr. Abobrinha quer construir no lugar do Castelo?",
+                                        "A senha de hoje é:</br></br>Qual é o nome do irmão do Perônio?", 
+                                        "A senha de hoje é:</br></br>Como faz pra chamar a caipora?",
+                                        "A senha de hoje é:</br></br>Quem toma conta da biblioteca do Castelo?",
+                                        "A senha de hoje é:</br></br>Que comida gostosa o Bongô sempre trazia pro pessoal?");
               var answers = new Array("300",
                                       "Mau",
                                       "Prédio",
@@ -117,8 +117,12 @@
             <!--PORTEIRO-->
             <div class="balao" style="display: none;">
               <div class="senha"></div>
+               
               <div class="pergunta" style="display: none;">
-                <p class="questao" id="questao"></p>
+                
+                <p class="questao" id="questao">
+                  
+                </p>
                 <form action="">
                     <input type="text" class="resposta" name="resposta" id="resposta" />
                 </form>
