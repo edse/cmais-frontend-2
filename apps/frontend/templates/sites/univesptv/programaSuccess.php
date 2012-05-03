@@ -135,6 +135,7 @@
                   <!-- BOX PADRAO NOTICIAS -->
                   <?php
                   $asset = $pager->getCurrent();
+									/*
                   $assets = Doctrine_Query::create()
                     ->select('a.*')
                     ->from('Asset a')
@@ -144,6 +145,39 @@
                     ->orderBy('a.created_at desc')
                     ->limit(60)
                     ->execute();
+									 * 
+									 */
+						      if($section->getSlug() != "home"){
+						        $assets = Doctrine_Query::create()
+						          ->select('a.*')
+						          ->from('Asset a, SectionAsset sa')
+						          ->where('sa.section_id = ?', (int)$section->getId())
+						          ->andWhere('sa.asset_id = a.id')
+						          ->orderBy('sa.display_order')
+	                  	->limit(60)
+	                  	->execute();
+						      }
+						      else{
+						        if(count($section->getAssets()) > 0){
+						          $assets = Doctrine_Query::create()
+						            ->select('a.*')
+						            ->from('Asset a, SectionAsset sa')
+						            ->where('sa.section_id = ?', (int)$section->getId())
+						            ->andWhere('sa.asset_id = a.id')
+						            ->orderBy('sa.display_order')
+						            ->limit(60)
+												->execute();
+						        }else{
+						          $assets = Doctrine_Query::create()
+						            ->select('a.*')
+						            ->from('Asset a')
+						            ->where('a.site_id = ?', (int)$site->getId())
+						            ->orderBy('a.created_at asc')
+						            ->limit(60)
+												->execute();
+						        }
+						      }
+									 									
                   if($assets): 
                   ?>
                   <div id="box-videos" class="box-padrao grid1">
