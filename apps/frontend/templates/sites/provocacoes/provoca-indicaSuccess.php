@@ -160,6 +160,7 @@
              <!-- DIREITA -->
              <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
              <div id="direita" class="form-lateral grid1">
+             	<!--
              	<div class="box-padrao">
 	         		<p class="titulos"><?php echo $section->getTitle() ?></p>
 	         		<p><?php echo $section->getDescription()?></p>	         		
@@ -248,7 +249,8 @@
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     </div>                                 
                   </form>
-                </div>	              	         	
+                </div>	     
+                -->         	         	
 	         </div>
 	         <!-- /DIREITA -->
           </div>
