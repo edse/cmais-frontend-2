@@ -167,7 +167,8 @@
 	         	<div class="box-padrao">
 	         		<p class="titulos"><?php echo $section->getTitle() ?></p>
 	         		<p>Escreva aqui tudo o que você quiser, com toda a liberdade que algum dia talvez não lhe tenham deixado ter. Escreva sobre o Brasil, o mundo, as pessoas, as coisas, tudo. Não importa se os outros amarão ou odiarão suas palavras, desde que respeitem o seu direito de escrevê-las.</p>
-	         		<p>Vamos, enforque-se na corda da liberdade. Mas só uma vez por dia</p>	         		
+					<p>Aqui você também pode mandar as suas indicações de peças, filmes, eventos, livros, etc.</p>
+					<p>Vamos, enforque-se na corda da liberdade. Mas só uma vez por dia.</p>       		
 	         	</div>
 	         	
 	         	<div class="contato">
