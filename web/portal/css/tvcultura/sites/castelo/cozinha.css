@@ -1,5 +1,5 @@
 body { background:#fff687; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-cozinha.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#fff687 url("/portal/images/capaPrograma/castelo/img-bg-cozinha.jpg") no-repeat scroll center; min-width:1000px !important; }
 .tudo { height:680px; width:1030px; position:relative; left:-60px; top:-230px; }
 #capa-site { width: 1040px; }
 #menuFloat { z-index: 10000; }

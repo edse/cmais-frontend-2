@@ -1,5 +1,5 @@
 body { background:#a6b94d; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-qmorgana.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#a6b94d url("/portal/images/capaPrograma/castelo/img-bg-qmorgana.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}
