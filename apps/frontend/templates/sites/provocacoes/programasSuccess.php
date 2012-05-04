@@ -179,7 +179,7 @@
           	<input type="hidden" name="palavra" id="palavra" value="<?php if(isset($_REQUEST['palavra'])) echo $_REQUEST['palavra'] ?>" />
           	<input type="hidden" name="ordem" id="ordem" value="<?php if(isset($_REQUEST['ordem'])) echo $_REQUEST['ordem'] ?>" />
           	<input type="hidden" name="sequencia" id="sequencia" value="<?php if(isset($_REQUEST['sequencia'])) echo $_REQUEST['sequencia'] ?>" />
-          	<input type="hidden" name="de" id="de" value="<?php if(isset($_REQUEST['ate'])) echo $_REQUEST['ate'] ?>" />
+          	<input type="hidden" name="de" id="de" value="<?php if(isset($_REQUEST['de'])) echo $_REQUEST['de'] ?>" />
           	<input type="hidden" name="ate" id="ate" value="<?php if(isset($_REQUEST['ate'])) echo $_REQUEST['ate'] ?>" />
           </form>
           <script>
