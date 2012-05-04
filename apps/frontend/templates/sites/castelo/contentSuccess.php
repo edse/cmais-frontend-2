@@ -1,12 +1,21 @@
+
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
+
+<body data-twttr-rendered="true"style="background: none !important;">
 <?php use_helper('I18N', 'Date') ?>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#rodape-portal').hide();
+  $('body').addClass('bac');
+});
+</script>
+
 
 <div class="base">
   
-  <!--HEADER-->
-  <div class="headerF">
-    
-  </div>
-  <!--/HEADER-->
+  
   
   <!--CONTEUDO-->
   <div class="mioloF">
@@ -36,23 +45,24 @@
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           </div>
           
-          <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
+          <?php $relacionados = $asset->retriveRelatedAssets(); ?>
           <?php if(count($relacionados) > 0): ?>
             
-            <!-- SAIBA MAIS -->
-            <div class="box-padrao grid2" style="margin-bottom: 20px;">
-              <div id="saibamais">                                                            
-              <h4>Veja +</h4>                                                            
-              <ul class="conteudo">
-                
-                  <li style="width: auto;">
-                    <a class="titulos" href="http://172.20.18.133/frontend_dev.php/castelo/dr-abobrinha-2<?php //echo $displays["dr-abobrinha"][0]->retriveUrl()?>" style="width: auto;">Galeria</a>
-                  </li>
-                
-              </ul>
-             </div>
-            </div>
-            <!-- SAIBA MAIS -->
+          <!-- SAIBA MAIS -->
+          <div class="box-padrao grid2" style="margin-bottom: 20px;">
+            <div id="saibamais">                                                            
+            <h4>Veja +</h4>                                                            
+            <ul class="conteudo">
+            <?php foreach($relacionados as $k=>$d): ?>        
+              <li style="width: auto;">
+                <a class="titulos" href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>" style="width: auto;"><?php echo $d->getTitle()?></a>
+              </li>
+            <?php endforeach; ?>
+              
+            </ul>
+           </div>
+          </div>
+          <!-- SAIBA MAIS -->
             
           <?php endif; ?>
       
@@ -68,10 +78,7 @@
   </div>
   <!--/CONTEUDO-->
   
-  <!--FOOTER-->
-  <div class="footerF">
-    
-  </div>
-  <!--/FOOTER-->
+
   
 </div>
+</body>
