@@ -110,17 +110,21 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .comentario-fb {background: none !important;}
 #fancybox-title{display:none !important;}
 
-.base{width: 695px !important; !important;}
-.base .claro .capa-titulo {background: #F63;height: 22px;width: 658px;float: left;margin-top: 5px;}
-.base .container .comentario-fb{background: #ffe282; width: 673px;}
-.base .container .box-compartilhar {width: 100%;}
-.base .box-interna {text-align: left;margin-bottom: 20px;width: 673px;}
-.base .box-interna .assinatura{width: 673px;}
-.container.galeriaNew{margin-left: 36px;}
-body{background: none !important}
+.base{width: 675px !important;margin-left: 20px;}
+.claro .capa-titulo {background: #F63;height: 22px;width: 634px;float: left;margin-top: 5px;margin-bottom: 10px;padding-left: 10px;}
+.topo span {background: url(/portal/images/capaPrograma/castelo/aba-titulo.png) no-repeat -15px 0;width: 15px;height: 27px;float: left;position: relative;}
+.container .comentario-fb{background: #ffe282; width: 610px;margin-left:23px;}
+.container .box-compartilhar {width: 100%;}
+.box-interna {text-align: left;margin-bottom: 20px;width: 660px !important;}
+.box-interna h3{margin-left:15px;}
+.assinatura {width: 660px !important;}
+.container.galeriaNew{margin-left: 20px;}
+body{background: none !important;}
 /*/MODAL*/
 
 .nav-Esquerda,
 .nav-Direita { display: none; }
+.bg-site { display: none;}
+#capa-site { margin-top:48px !important; }
 
 /*/CASTELO SITE*/
