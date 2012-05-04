@@ -14,7 +14,7 @@
 }
 
 body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
-  
+	
 .castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
 .castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
 
@@ -60,14 +60,14 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .nav-Esquerda img{position:absolute;top:18%; right: 0;}
 .nav-Direita{z-index:5;width:90px; height:900px; position: absolute;right:50px; top:0;}
 .nav-Direita img{position:absolute;top:18%; right: 0;}
-#castelo .porteiro{cursor: pointer;z-index:0;width:39px; height:78px;position:absolute;top: 334px;left: 552px;}
-#castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 498px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
+#castelo .porteiro{cursor: pointer;z-index:0;width:39px; height:78px;position:absolute;top: 334px;left: 505px;}
+#castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 458px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
 
 #castelo .botao-dr-abobrinha{z-index:0;cursor:pointer ;width:121px; height:207px;position:absolute;top: 359px;left: 213px;}
 #castelo .gif-dr-abobrinha{position: absolute;z-index:-1;top: 296px;left: 334px;width: 103px;height: 87px; background:url(/portal/images/capaPrograma/castelo/gif-drabobrinha.gif) no-repeat;}
-#castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 131px;background: url(/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
-#castelo .gif-porteiro{position:absolute;top: 340px;left: 510px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
-#castelo .gif-abre{position:absolute;top: 282px;left: 422px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
+#castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 81px;background: url(/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
+#castelo .gif-porteiro{position:absolute;top: 340px;left: 460px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
+#castelo .gif-abre{position:absolute;top: 282px;left:372px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
   
 .navegacao{position:absolute;width:77px; /*height:928px;*/ bottom:30px; left:0px;}
 .navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height:27px; background:url(/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat; bottom:0px;left:331px; z-index: 0; }
@@ -100,30 +100,29 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 
 /*MODAL*/
 /*.modal{width:100%; height: 961px;*height: 1010px;background:red;position: absolute; top:50px; left:0;}*/
-
-#fancybox-wrap { top:300px !important;}
-#fancybox-outer {background: none !important;}
-#fancybox-content {border:none !important;}
+#fancybox-wrap {top:314px !important;width: 747px !important;display: block;height: 606px !important;background: url(/portal/images/capaPrograma/castelo/fundo-modal.png) no-repeat !important;}
 .fancybox-bg{background: none !important}
-#fancybox-close {background:url(/portal/images/capaPrograma/castelo/img-fechar-layer.gif) no-repeat !important; height: 26px !important;position: absolute;right: 66px !important;top: 37px !important;width: 77px !important;}
+#fancybox-content {border:none !important; width: 727px !important;height: 544px !important;}
+#fancybox-content iframe{width:720px !important}
+.display{display:none!important;}
+#fancybox-close {top: -31px !important;right: 1px !important;width: 106px!important;background:url(/portal/images/capaPrograma/castelo/img-fechar-layer.gif) no-repeat !important; height: 26px !important;}
+#fancybox-outer {position: relative;width: 712px!important;height: 543px !important;margin: 49px 6px 0px 6px;background: none !important;}
+.comentario-fb {background: none !important;}
+#fancybox-title{display:none !important;}
 
-
-
-.base{width:790px !important; height: 630px!important;}
-.base .mioloF .claro .capa-titulo h4{padding-left: 12px !important;}
-.base .headerF{width:100%; height:58px;background: url(/portal/images/capaPrograma/castelo/img-topo-layer.png) no-repeat 5px top;}
-.base .mioloF .claro .capa-titulo {background: #F63;height: 22px;width: 658px;float: left;margin-top: 5px;}
-.base .mioloF .topo span {background: url(/portal/images/aba-titulo.png) no-repeat -15px 0 !important;width: 15px;height: 27px;float: left;position: relative;}
-.base .mioloF{width:100%; height:503px;background: url(/portal/images/capaPrograma/castelo/img-meio-layer.png) repeat-y center 0;}
-.base .mioloF .container{height: 509px;left: 49px;overflow: auto;position: absolute;width: 696px;top: 72px;}
-.base .mioloF .container .comentario-fb{background: #ffe282; width: 673px;}
-.base .mioloF .container .box-compartilhar {width: 100%;}
-.base .mioloF .box-interna {text-align: left;margin-bottom: 20px;width: 673px;}
-.base .mioloF .box-interna .assinatura{width: 673px;}
-.base .footerF{width:100%; height:58px;background: url(/portal/images/capaPrograma/castelo/img-rodape-layer.png) no-repeat center bottom;}
+.base{width: 695px !important; !important;}
+.base .claro .capa-titulo {background: #F63;height: 22px;width: 658px;float: left;margin-top: 5px;}
+.base .container .comentario-fb{background: #ffe282; width: 673px;}
+.base .container .box-compartilhar {width: 100%;}
+.base .box-interna {text-align: left;margin-bottom: 20px;width: 673px;}
+.base .box-interna .assinatura{width: 673px;}
+.container.galeriaNew{margin-left: 36px;}
+body{background: none !important}
 /*/MODAL*/
 
 .nav-Esquerda,
 .nav-Direita { display: none; }
+.bg-site { display: none;}
+#capa-site { margin-top:48px !important; }
 
 /*/CASTELO SITE*/
