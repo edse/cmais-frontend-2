@@ -66,7 +66,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .botao-dr-abobrinha{z-index:0;cursor:pointer ;width:121px; height:207px;position:absolute;top: 359px;left: 213px;}
 #castelo .gif-dr-abobrinha{position: absolute;z-index:-1;top: 296px;left: 334px;width: 103px;height: 87px; background:url(/portal/images/capaPrograma/castelo/gif-drabobrinha.gif) no-repeat;}
 #castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 131px;background: url(/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
-#castelo .gif-porteiro{position:absolute;top: 330px;left: 506px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
+#castelo .gif-porteiro{position:absolute;top: 330px;left: 556px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
 #castelo .gif-abre{position:absolute;top: 282px;left:372px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}  
 .navegacao{position:absolute;width:77px; /*height:928px;*/ bottom:30px; left:0px;}
 .navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height:27px; background:url(/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat; bottom:0px;left:331px; z-index: 0; }
