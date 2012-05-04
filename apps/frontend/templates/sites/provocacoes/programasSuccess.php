@@ -189,45 +189,10 @@
           	}
           </script>
       	  
-      <!-- PAGINACAO -->
-        <?php endif; ?>
-      <?php endif; ?>
+		      <!-- PAGINACAO -->
+		        <?php endif; ?>
+		      <?php endif; ?>
           	  
-          <!--
-          <?php if(isset($pager)): ?>
-          <?php if($pager->haveToPaginate()): ?>
-          <div class="paginacao grid3">
-          <div class="centraliza">
-          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
-          <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
-          <ul>
-          <?php foreach ($pager->getLinks() as $page): ?>
-          <?php if ($page == $pager->getPage()): ?>
-          <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
-          <?php else: ?>
-          <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php endif; ?>
-          <?php endforeach; ?>
-          </ul>
-          <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
-          <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
-          </div>
-          </div>
-          <form id="page_form" action="" method="post">
-          <input type="hidden" name="return_url" value="<?php echo $url?>" />
-          <input type="hidden" name="page" id="page" value="" />
-          <input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
-          <input type="hidden" name="site_id" id="site_id" value="<?php echo $site_id ?>" />
-          </form>
-          <script>
-          function goToPage(i){
-          $("#page").val(i);
-          $("#page_form").submit();
-          }
-          </script>
-          <?php endif; ?>
-          <?php endif; ?>
-          -->
         </div>
       </div>
       <!-- BOX PUBLICIDADE 2 -->
