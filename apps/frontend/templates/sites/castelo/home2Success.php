@@ -47,7 +47,7 @@
 
          <div class="castelo18">
            <img src="/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">
-           <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img src="/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
+           <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank" class="twitter"><img src="/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
            <a href="#" target="_blank"><img src="/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a>
 
          </div>
@@ -158,7 +158,8 @@
             <!--DR.ABROBINHA-->
             <div class="botao-dr-abobrinha"></div>
             <div class="gif-dr-abobrinha"></div>
-            <a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
+            <!--a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a-->  
+            <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $displays["dr-abobrinha"][0]->Asset->getSlug() ?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
             <!--/DR.ABROBINHA-->
               <?php endif; ?>
             <?php endif; ?>  
