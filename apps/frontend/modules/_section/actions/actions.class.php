@@ -478,7 +478,7 @@ class _sectionActions extends sfActions
               ->orderBy('sa.display_order')
             */
           }
-          else if ($this->site->getSlug() == 'rodaviva') {
+          else if (in_array($this->site->getSlug(), array('rodaviva','provocacoes'))) {
           	
             if($this->section->getSlug()=="programas"){
               if($request->getParameter('ordem') == 'alfabetica') {
