@@ -1,5 +1,5 @@
 body { background:#5e6f94; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-laboratorio.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#5e6f94 url("/portal/images/capaPrograma/castelo/img-bg-laboratorio.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}

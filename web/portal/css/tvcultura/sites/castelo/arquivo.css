@@ -1,5 +1,5 @@
 body { background:#911630; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-arquivo-bg-biblioteca.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:url("/portal/images/capaPrograma/castelo/img-arquivo-bg-biblioteca.jpg") no-repeat scroll center #911630; min-width:1000px !important; }
 #capa-site { height:963px; }
 #capa-site { *height:1040px !important; }
 .tudo { height:680px;*height:709px  }
@@ -12,7 +12,7 @@ body { background:#911630; min-height: 970px; }
 .botao-arquivo2-over {z-index:1;width:90px; height:85px;position:absolute;bottom: 58px;right: 314px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-2-over.png) no-repeat;}
 
 .botao-arquivo3 {z-index:0;cursor:pointer ;width:60px; height:65px;position:absolute;bottom: 154px;right: 313px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3.gif) no-repeat;}
-.botao-arquivo3-over {z-index:1;width:71px; height:73px;position:absolute;bottom: 146px;right: 300px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
+.botao-arquivo3-over {z-index:1;width:87px; height:106px;position:absolute;bottom: 146px;right: 281px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
 
 .botao-arquivo4 {z-index:0;cursor:pointer ;width:72px; height:85px;position:absolute;bottom: 139px;left: 340px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4.gif) no-repeat -7px 0px;}
 .botao-arquivo4-over {z-index:1;width:99px; height:125px;position:absolute;bottom: 128px;left: 335px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4-over.png) no-repeat;}
@@ -24,12 +24,12 @@ body { background:#911630; min-height: 970px; }
 .botao-arquivo6-over {z-index:1;width:122px; height:81px;position:absolute;bottom: 48px;left: 346px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6-over.png) no-repeat;}
 
 .botao-arquivo7 {z-index:0;cursor:pointer ;width:85px; height:45px;position:absolute;bottom: 103px;left: 208px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7.gif) no-repeat;}
-.botao-arquivo7-over {z-index:1;width:95px; height:52px;position:absolute;bottom: 97px;left: 206px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}
+.botao-arquivo7-over {z-index:1;width:134px; height:92px;position:absolute;bottom: 47px;left:167px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}
 
 .gif-olho{width:33px;height:12px;position: absolute;top: 21px;*top: 49px;left: 40px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-gatopintado.gif) no-repeat;}
 .botao-gato {z-index: 0;cursor: pointer;width: 101px;height: 96px;position: absolute;*top: 395px;top: 367px;left: 231px;}
-.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;*top: 392px;left: 228px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
+.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;*top: 392px;left: 248px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
 
 .gif-pedro{background:  url(/portal/images/capaPrograma/castelo/gif-personagem-pedro.gif) no-repeat; width:50px; height:56px;top: -48px;position: absolute;left: 67px;}
-.botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;}
-.botao-pedro-over {z-index:1;width:179px; height:200px;position:absolute;bottom: 151px;right: 122px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro-over.png) no-repeat;}
+.botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;/*background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;*/}
+.botao-pedro-over {z-index:1;width:179px; height:200px;position:absolute;bottom: 151px;right: 102px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro-over.png) no-repeat;}

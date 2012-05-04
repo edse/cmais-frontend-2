@@ -1,5 +1,5 @@
 body { background:#a0d3f2; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-sala.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#a0d3f2 url("/portal/images/capaPrograma/castelo/img-bg-sala.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}
@@ -7,4 +7,3 @@ body { background:#a0d3f2; min-height: 970px; }
 .botao-penelope{position: absolute;top: 298px;width: 182px;height: 363px;right: 102px;}
 .botao-penelope-over{position: absolute;top: 255px;width: 298px;height: 796px;background: url(/portal/images/capaPrograma/castelo/img-personagem-penelope-over.png) repeat-x;right: 65px;}
 .gif-penelope{width: 84px;height: 68px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-penelope.gif) no-repeat;position: absolute;top: 30px;left: -29px;}
-

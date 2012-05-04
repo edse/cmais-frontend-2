@@ -1,5 +1,5 @@
 body { background:#ffc561; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-bg-hall-entrada.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#ffc561 url("/portal/images/capaPrograma/castelo/img-bg-hall-entrada.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
