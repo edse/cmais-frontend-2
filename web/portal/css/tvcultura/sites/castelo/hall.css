@@ -3,7 +3,7 @@ body { background:#ffc561; min-height: 970px; }
 #capa-site { height:963px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
-
+.navegacao {position: absolute;left: 40px;}
 .botao-relogio {z-index: 0;cursor: pointer;width: 153px;height: 337px;position: absolute;top: 20px;left: 141px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-relogio.gif) no-repeat 54px 168px;}
 .botao-relogio-over {z-index:1;width:200px; height:346px;position:absolute;top: 16px; left: 136px;background: url(/portal/images/capaPrograma/castelo/img-personagem-relogio-over.png) no-repeat;}
 .botao-relogio-over { *top:30px; }
