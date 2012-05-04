@@ -5,10 +5,10 @@ body { background:#fff687; min-height: 970px; }
 #menuFloat { z-index: 10000; }
 
 .botao-bongo {z-index:0; cursor:pointer ; width:246px; height:445px; position:absolute; top:249px; left:128px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-bongo.gif) no-repeat 184px 72px;}
-.botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:187px; left: 27px;background: url(/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
+.botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:187px; left: 30px;background: url(/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
 
 .botao-caipora {z-index:0;cursor:pointer ;width:310px; height:476px;position:absolute;top:296px; right:75px;background:url(/portal/images/capaPrograma/castelo/gif-personagem-caipora.gif) no-repeat;}
-.botao-caipora-over {z-index:1;width:467px; height:494px;position:absolute;top:285px; right:65px;background: url(/portal/images/capaPrograma/castelo/img-personagem-caipora-over.png) no-repeat;}
+.botao-caipora-over {z-index:1;width:467px; height:494px;position:absolute;top: 286px;right: 66px;background: url(/portal/images/capaPrograma/castelo/img-personagem-caipora-over.png) no-repeat;}
 
 
 .botao-dedolandia {z-index:0;cursor:pointer ;width:110px; height:177px;position:absolute;top:73px;right: 218px;background: url(/portal/images/capaPrograma/castelo/gif-dedolandia.gif) no-repeat -12px 19px;}
