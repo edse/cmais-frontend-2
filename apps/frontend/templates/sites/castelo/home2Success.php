@@ -71,13 +71,13 @@
           <div class="capa grid3">
             
             <script>
-              var questions = new Array("A senha de hoje:</br></br><span class='senha2'>Quantos anos tem o nino?</span>",
-                                        "A senha de hoje:</br></br><span class='senha2'>Quem é o melhor amigo do Godofredo?</span>",
-                                        "A senha de hoje:</br></br><span class='senha2'>O que o Dr. Abobrinha quer construir no lugar do Castelo?</span>",
-                                        "A senha de hoje:</br></br><span class='senha2'>Qual é o nome do irmão do Perônio?</span>", 
-                                        "A senha de hoje:</br></br><span class='senha2'>Como faz pra chamar a caipora?</span>",
-                                        "A senha de hoje:</br></br><span class='senha2'>Quem toma conta da biblioteca do Castelo?</span>",
-                                        "A senha de hoje:</br></br><span class='senha2'>Que comida gostosa o Bongô sempre trazia pro pessoal?</span>");
+              var questions = new Array("A senha de hoje:</br><span class='senha2'>Quantos anos tem o nino?</span>",
+                                        "A senha de hoje:</br><span class='senha2'>Quem é o melhor amigo do Godofredo?</span>",
+                                        "A senha de hoje:</br><span class='senha2'>O que o Dr. Abobrinha quer construir no lugar do Castelo?</span>",
+                                        "A senha de hoje:</br><span class='senha2'>Qual é o nome do irmão do Perônio?</span>", 
+                                        "A senha de hoje:</br><span class='senha2'>Como faz pra chamar a caipora?</span>",
+                                        "A senha de hoje:</br><span class='senha2'>Quem toma conta da biblioteca do Castelo?</span>",
+                                        "A senha de hoje:</br><span class='senha2'>Que comida gostosa o Bongô sempre trazia pro pessoal?</span>");
               var answers = new Array("300",
                                       "Mau",
                                       "Prédio",
