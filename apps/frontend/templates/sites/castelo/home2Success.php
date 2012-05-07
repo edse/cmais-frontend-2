@@ -96,18 +96,18 @@
               
               $(function(){
                 $('#questao').html(currentQuestion);
-                $('#formsenha').append('<input type="text" class="resposta" name="resposta" id="resposta"  maxlength="'+numbercaracters+'" /><div class="sublinhado a'+numbersK+'"></div>');
+                $('#formsenha').append('<input type="text" class="resposta a'+numbersK+'" name="resposta" id="resposta"  maxlength="'+numbercaracters+'" /><div class="sublinhado a'+numbersK+'"></div>');
                 
                 $('#resposta').keyup(function(){
                   answered = $('#resposta').val().toLowerCase()
                   if (answered == currentAnswer) {
-                    $('.balao, .botao-porteiro-over, .gif-porteiro').fadeOut('fast',function(){
-                      $('.gif-abre').fadeIn(2000, function(){
-                        $('.gif-abre').fadeOut('slow',function(){
-                          window.location.href = "http://cmais.com.br/castelo/hall";
-                        });
+                    $('.balao, .botao-porteiro-over, .gif-porteiro').hide();
+                    $('.gif-abre').fadeIn(2000, function(){
+                      $('.gif-abre').fadeOut('slow',function(){
+                        window.location.href = "http://cmais.com.br/castelo/hall";
                       });
                     });
+                    
                   }
                   
                 });

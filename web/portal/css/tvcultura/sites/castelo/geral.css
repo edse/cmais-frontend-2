@@ -51,10 +51,10 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .senha{cursor:pointer;position: absolute; top: 67px;left: 31px;width: 305px; height: 230px;background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-senha.png) no-repeat;}
 #castelo .pergunta{position: absolute;top: 66px;left: 55px;width: 260px;height: 240px;}
 #castelo .questao{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#005bac;font-size: 19px;line-height: 27px;}
-#castelo .resposta{font-family: "CrazyHaroldRegular",Arial, Helvetica, sans-serif;color: #E4222B;font-size: 36px;text-transform: uppercase;position: absolute;bottom: 24px;left: 4px;width: 276px;line-height: 1;letter-spacing: 12px;background: none;border: none;}
+#castelo .resposta{font-family: "CrazyHaroldRegular",Arial, Helvetica, sans-serif;color: #E4222B;font-size: 36px;text-transform: uppercase;position: absolute;bottom: 44px;left: 4px;width: 276px;line-height: 1;letter-spacing: 12px;background: none;border: none;}
 #castelo .senha2{color: #005bac; font-size:22px;}
 #castelo .formsenha{position:relative;}
-#castelo .sublinhado{height: 5px; width:100%;position:absolute; bottom: 22px;left: 6px;}
+#castelo .sublinhado{height: 5px; width:100%;position:absolute; bottom: 45px;left: 6px;}
 #castelo .sublinhado.a1{background: url(/portal/images/capaPrograma/castelo/su-300.gif) no-repeat;}
 #castelo .sublinhado.a2{background: url(/portal/images/capaPrograma/castelo/su-mau.gif) no-repeat;}
 #castelo .sublinhado.a3{background: url(/portal/images/capaPrograma/castelo/su-predio.gif) no-repeat;}
