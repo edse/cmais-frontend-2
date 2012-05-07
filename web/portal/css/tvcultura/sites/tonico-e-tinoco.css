@@ -1,6 +1,4 @@
 .bg-chamada,
-.bg-site { background :url(/portal/images/capaPrograma/tonico-e-tinoco/bkg.png) repeat-x; }
-.bg-chamada { background-position:0 -20px; }
-.noticia .img-video { width:310px; margin:0; }
+.bg-site { background :url(/portal/images/capaPrograma/tonico-e-tinoco/bkg.png) repeat; }
 #barra-site .redes { float: right; }
-#chamada { margin-bottom:0; }
+#barra-site h2 { margin-top:35px; }
