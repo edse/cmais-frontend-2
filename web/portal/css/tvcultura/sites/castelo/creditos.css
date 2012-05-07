@@ -2,4 +2,5 @@
 .bg-video {background-position: 40px 80px !important;}
 #miolo {margin-top: -199px;}
 #creditos{margin:10px 0 0 10px;}
-#conteudo-pagina p{margin-left:10px;}
+#conteudo-pagina p{margin-left:10px; margin-bottom: 15px !important;}
+#conteudo-pagina p strong{font-weight: bold !important;}
