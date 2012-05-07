@@ -5,17 +5,17 @@ body { background:#911630; min-height: 970px; }
 .tudo { height:680px;*height:709px  }
 
 .navegacao{*left:40px !important;}
-.botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px;bottom: 107px;right: 211px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
-.botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 70px;right: 179px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
+.botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px; position:absolute; bottom: 107px;right: 211px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
+.botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 67px;right: 156px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
 
 .botao-arquivo2 {z-index:0;cursor:pointer ;width:65px; height:70px;position:absolute;bottom: 74px;right: 324px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-2.gif) no-repeat;}
 .botao-arquivo2-over {z-index:1;width:90px; height:85px;position:absolute;bottom: 59px;right: 298px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-2-over.png) no-repeat;}
 
 .botao-arquivo3 {z-index:0;cursor:pointer ;width:60px; height:65px;position:absolute;bottom: 154px;right: 313px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3.gif) no-repeat;}
-.botao-arquivo3-over {z-index:1;width:87px; height:106px;position:absolute;bottom: 146px;right: 281px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
+.botao-arquivo3-over {z-index:1;width:87px; height:106px;position:absolute;bottom: 147px;right: 284px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
 
 .botao-arquivo4 {z-index:0;cursor:pointer ;width:72px; height:85px;position:absolute;bottom: 139px;left: 362px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4.gif) no-repeat -7px 0px;}
-.botao-arquivo4-over {z-index:1;width:99px; height:125px;position:absolute;bottom: 128px;left: 335px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4-over.png) no-repeat;}
+.botao-arquivo4-over {z-index:1;width:99px; height:125px;position:absolute;bottom: 128px;left: 357px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4-over.png) no-repeat;}
 
 .botao-arquivo5 {z-index:0;cursor:pointer ;width:65px; height:45px;position:absolute;top: 315px;right: 316px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5.gif) no-repeat;}
 .botao-arquivo5-over {z-index:1;width:99px; height:75px;position:absolute;top: 316px;right: 294px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5-over.png) no-repeat;}
