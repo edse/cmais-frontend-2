@@ -4,7 +4,7 @@ body { background:#fece7b; min-height: 970px; }
 #capa-site { *height:993px; }
 .tudo { height:800px; margin-top:-123px; }
 #menuFloat { z-index: 10000; }
-
+.navegacao{margin-left: 40px;}
 .botao-celeste {z-index:0; cursor:pointer ; width:94px; height:105px; position:absolute; top: 124px; right:439px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-celeste.gif) no-repeat 0 19px;}
 .botao-celeste-over {z-index:1;width:181px; height:161px;position:absolute;top: 86px; right: 390px;background: url(/portal/images/capaPrograma/castelo/img-personagem-celeste-over.png) no-repeat;}
 

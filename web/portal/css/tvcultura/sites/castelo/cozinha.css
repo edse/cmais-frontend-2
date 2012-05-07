@@ -4,6 +4,7 @@ body { background:#fff687; min-height: 970px; }
 #capa-site { width: 1040px; }
 #menuFloat { z-index: 10000; }
 
+.navegacao{margin-left:40px}
 .botao-bongo {z-index:0; cursor:pointer ; width:246px; height:445px; position:absolute; top:249px; left:128px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-bongo.gif) no-repeat 184px 72px;}
 .botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:187px; left: 30px;background: url(/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
 
