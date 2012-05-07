@@ -12,7 +12,7 @@
 							<li><a href="http://www.cmais.com.br/videos" title="V&iacute;deos">V&iacute;deos</a></li>
               				<li><a href="http://www.cmais.com.br/aovivo" title="Home">Ao Vivo</a></li>
               				<li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
-							<!--li><a href="http://www.cmais.com.br/expediente" title="Expediente">Expediente</a></li-->
+							        <li><a href="http://www.cmais.com.br/expediente" title="Expediente">Expediente</a></li>
 						</ul>
 						<ul>
 							<li class="tit">Editorias</li>
