@@ -1,4 +1,4 @@
-body { background:url(/portal/images/capaPrograma/castelo/pattern-videos-bg.jpg) repeat; }
+body { background:url(/portal/images/capaPrograma/castelo/pattern-videos-bg.jpg) repeat !important; }
 #busca-galeria { display:none; }
 #menu-rodape { margin:50px 0 70px 0; }
 .abas li.ativo a, 
