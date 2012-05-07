@@ -1,0 +1,34 @@
+.busca { width:950px; margin:0; padding: 20px 10px; background:#f5f5f5; }
+.busca form { width:960px; max-width:960px; }
+.busca form .busque { margin: 0 0 5px 0 }
+.busca form .buscar { margin-left:10px; }
+.palavra-chave { width:245px; float:left;}
+.busca form .campo-busca { border:1px solid #ABADB3; }
+.filtro { width:340px; float:left; margin:0 40px; }
+.busca form .bt-filtrar { height:10px; }
+.busca form a,
+.busca form label { clear:none; margin-top:0; color:#ff6633; }
+.busca form .periodo { width:320px; margin:0 0 5px 5px; }
+.busca form .text { margin:0 5px; width:90px; }
+.organizar { width:260px; float:left; }
+.organizar .borda { border-right:1px solid #ff6633; margin-right:5px; padding-right:5px; }
+.busca form .organizar label { width:260px; }
+.busca form .organizar a { margin-top:5px; display:block; }
+.busca form .organizar .ativo { font-weight:bold; }
+.blocos li a.bg img,
+.blocos li a.bg { width:310px; height:186px; }
+#galeria-videos .capa ul li { width:310px; }
+.blocos li a.bg img {top:0;}
+#galeria-videos .blocos { width: 970px; }
+/*#menu-rodape .abas-conteudo,
+#galeria-videos .blocos,
+#menu-rodape .abas-conteudo,*/
+#galeria-videos .blocos ul { max-height:950px; }
+#galeria-videos .blocos { max-height:1000px; }
+#galeria-videos .capa ul li { height:297px; margin:0 0 20px 10px; }
+#menu-rodape { max-height:1110px; }
+#menu-rodape .conteudo-lista a,
+#menu-rodape .conteudo-lista .titulos { color:#333; font-size:14px; width: 310px; height:auto; }
+#menu-rodape .conteudo-lista .bg { width: 310px; height: 186px; display: block; }
+#menu-rodape .conteudo-lista .bg,
+#menu-rodape .conteudo-lista .bg:hover { border:none; } 

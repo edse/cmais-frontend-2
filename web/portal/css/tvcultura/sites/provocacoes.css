@@ -28,4 +28,32 @@
 #chamada {margin-bottom:0;}
 #barra-site #horario { margin-top:50px; }
 
+.ui-widget-header {
+	border: 1px solid #F63;
+	background-color: #F63;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #ee3a24;
+	background: none repeat scroll 0 0 #ee3a24;
+	color: #fff;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #ee3a24;
+	background: none repeat scroll 0 0 #ee3a24;
+	color: #fff;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #ee3a24;
+	background: none repeat scroll 0 0 #ee3a24;
+}
+
 /** /PROVOCACOES **/
