@@ -147,8 +147,8 @@ a:hover { text-decoration:underline; }
 #barra-site .topo-programa {  width:970px; min-height:100px !important;}
 
 /* curtir */
-#barra-site .redes { width:432px; float:left; margin:35px 0 0 30px; }
-#barra-site .redes .curtir { width:210px; float:left; margin-left:0; text-align: left; }
+#barra-site .redes { width:460px; float:left; margin:35px 0 0 30px; }
+#barra-site .redes .curtir { width:240px; float:left; margin-left:0; text-align: left; }
 #barra-site .redes ul { width:112px; float:left; }
 #barra-site .redes ul li { width:24px; float:left; margin-right:4px; }
 #barra-site .redes ul li a { background:url(../images/ico-compartilhar.png) no-repeat 0 -208px; width:24px; height:24px; text-indent:-99999px; display:block; }
