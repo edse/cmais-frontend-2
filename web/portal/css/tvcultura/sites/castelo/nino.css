@@ -3,7 +3,7 @@ body { background:#e8e687; min-height: 970px; }
 #capa-site { height:950px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
-
+.navegacao{margin-left: 40px;}
 .botao-nino {z-index:0; cursor:pointer ; width:287px; height:293px; position:absolute; top:224px; right:425px; background: url(/portal/images/capaPrograma/castelo/gif-nino-pisca.gif) no-repeat  146px 139px;}
 .botao-nino-over {z-index:1;width:442px; height:524px;position:absolute;top: 141px; right: 296px;background: url(/portal/images/capaPrograma/castelo/img-personagem-nino.png) no-repeat;}
 

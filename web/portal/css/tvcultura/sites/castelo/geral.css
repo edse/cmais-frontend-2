@@ -14,7 +14,7 @@
 }
 
 body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
-  
+#barra-site .topo-programa {width: 990px !important;}
 .castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
 .castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
 
