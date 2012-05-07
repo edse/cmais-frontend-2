@@ -39,7 +39,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .selected{ background: #e11e24; border:1px solid #c32428;}
 
 
-.castelo18 {width: 280px;position: absolute;top: -268px;right: -9px;}
+.castelo18 {width: 280px;position: absolute;top: -268px;right: -3px;}
 .castelo18 .twitter,#castelo .castelo18 .instangram, {margin-top:5px;}
 
 .logo{margin-left:7px;}
