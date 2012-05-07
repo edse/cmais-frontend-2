@@ -14,7 +14,7 @@
 }
 
 body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
-#barra-site .topo-programa {width: 990px !important;}
+
 .castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
 .castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
 
@@ -51,19 +51,30 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .senha{cursor:pointer;position: absolute; top: 67px;left: 31px;width: 305px; height: 230px;background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-senha.png) no-repeat;}
 #castelo .pergunta{position: absolute;top: 66px;left: 55px;width: 260px;height: 240px;}
 #castelo .questao{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#005bac;font-size: 19px;line-height: 27px;}
-#castelo .resposta{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#e4222b; font-size:50px;text-transform: uppercase;position: absolute;bottom: 19px;left: 17px;width: 242px;}
-
+#castelo .resposta{font-family: "CrazyHaroldRegular",Arial, Helvetica, sans-serif;color: #E4222B;font-size: 36px;text-transform: uppercase;position: absolute;bottom: 38px;left: 0px;width: 284px;line-height: 1;letter-spacing: 12px;background: none;border: none;}
+#castelo .senha2{color: #005bac; font-size:22px;}
+#castelo .formsenha{position:relative;}
+#castelo .sublinhado{height: 5px; width:100%;position:absolute; bottom:41px;}
+#castelo .sublinhado.a1{background: url(/portal/images/capaPrograma/castelo/su-300.gif) no-repeat;}
+#castelo .sublinhado.a2{background: url(/portal/images/capaPrograma/castelo/su-mau.gif) no-repeat;}
+#castelo .sublinhado.a3{background: url(/portal/images/capaPrograma/castelo/su-predio.gif) no-repeat;}
+#castelo .sublinhado.a4{background: url(/portal/images/capaPrograma/castelo/su-tibio.gif) no-repeat;}
+#castelo .sublinhado.a5{background: url(/portal/images/capaPrograma/castelo/su-assobio.gif) no-repeat;}
+#castelo .sublinhado.a6{background: url(/portal/images/capaPrograma/castelo/su-gato.gif) no-repeat;}
+#castelo .sublinhado.a7{background: url(/portal/images/capaPrograma/castelo/su-pizza.gif) no-repeat;}
+  
 .nav-Esquerda{z-index:5;width:90px; height:900px; position: absolute; left:50px; top:0;}
 .nav-Esquerda img{position:absolute;top:18%; right: 0;}
 .nav-Direita{z-index:5;width:90px; height:900px; position: absolute;right:50px; top:0;}
 .nav-Direita img{position:absolute;top:18%; right: 0;}
 #castelo .porteiro{cursor: pointer;z-index:0;width:39px; height:78px;position:absolute;top: 334px;left: 556px;}
 #castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
+#castelo .porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
 
 #castelo .botao-dr-abobrinha{z-index:0;cursor:pointer ;width:121px; height:207px;position:absolute;top: 359px;left: 213px;}
 #castelo .gif-dr-abobrinha{position: absolute;z-index:-1;top: 296px;left: 334px;width: 103px;height: 87px; background:url(/portal/images/capaPrograma/castelo/gif-drabobrinha.gif) no-repeat;}
 #castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 131px;background: url(/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
-#castelo .gif-porteiro{position:absolute;top: 330px;top: 337px;left: 506px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
+#castelo .gif-porteiro{position:absolute;top: 337px;left: 516px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
 #castelo .gif-abre{position:absolute;top: 282px;left:427px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
   
 .navegacao{position:absolute;width:77px; /*height:928px;*/ bottom:30px; left:0px;}

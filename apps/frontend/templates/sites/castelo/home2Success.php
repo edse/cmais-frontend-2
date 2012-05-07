@@ -71,13 +71,13 @@
           <div class="capa grid3">
             
             <script>
-              var questions = new Array("A senha de hoje é:</br></br>Quantos anos tem o nino?",
-                                        "A senha de hoje é:</br></br>Quem é o melhor amigo do Godofredo?",
-                                        "A senha de hoje é:</br></br>O que o Dr. Abobrinha quer construir no lugar do Castelo?",
-                                        "A senha de hoje é:</br></br>Qual é o nome do irmão do Perônio?", 
-                                        "A senha de hoje é:</br></br>Como faz pra chamar a caipora?",
-                                        "A senha de hoje é:</br></br>Quem toma conta da biblioteca do Castelo?",
-                                        "A senha de hoje é:</br></br>Que comida gostosa o Bongô sempre trazia pro pessoal?");
+              var questions = new Array("A senha de hoje:</br></br><span class='senha2'>Quantos anos tem o nino?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Quem é o melhor amigo do Godofredo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>O que o Dr. Abobrinha quer construir no lugar do Castelo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Qual é o nome do irmão do Perônio?</span>", 
+                                        "A senha de hoje:</br></br><span class='senha2'>Como faz pra chamar a caipora?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Quem toma conta da biblioteca do Castelo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Que comida gostosa o Bongô sempre trazia pro pessoal?</span>");
               var answers = new Array("300",
                                       "Mau",
                                       "Prédio",
@@ -85,12 +85,18 @@
                                       "Assobio",
                                       "Gato",
                                       "Pizza");
+              var caracters = new Array("3","3","6","5","7","4","5");
+              var number = new Array("1","2","3","4","5","6","7");
+              
               var k = Math.floor(Math.random() * questions.length);
-              var currentQuestion = questions[k];
-              var currentAnswer = answers[k].toLowerCase();
+              var currentQuestion  = questions[k];
+              var currentAnswer    = answers[k].toLowerCase();
+              var numbercaracters  = caracters[k];
+              var numbersK         = number[k];
               
               $(function(){
                 $('#questao').html(currentQuestion);
+                $('#formsenha').append('<input type="text" class="resposta" name="resposta" id="resposta"  maxlength="'+numbercaracters+'" /><div class="sublinhado a'+numbersK+'"></div>');
                 
                 $('#resposta').keyup(function(){
                   answered = $('#resposta').val().toLowerCase()
@@ -102,14 +108,10 @@
                         });
                       });
                     });
-                    
-                    /*
-                    $('.balao2').fadeIn('normal',function(){
-                      window.location("");
-                    });
-                    */
                   }
+                  
                 });
+                
                 
               });
             </script>
@@ -123,9 +125,10 @@
                 <p class="questao" id="questao">
                   
                 </p>
-                <form action="">
-                    <input type="text" class="resposta" name="resposta" id="resposta" />
+                <form id="formsenha" action="">
+                    
                 </form>
+                
               </div>
             </div>
 
@@ -134,14 +137,23 @@
             <div class="gif-porteiro"></div>
             <div class="gif-abre" style="display: none;"></div>
             <a href="javascript:" class="botao-porteiro-over" style="display:none"></a>
+            <a href="javascript:" class="porteiro-over" style="display:none"></a>
             <!--/PORTEIRO-->
             
             <!--PERGUNTA-->
             <script type="text/javascript">
               $(document).ready(function(){
-                $('.porteiro').click(function(){
+                $('.porteiro').hover(function(){
+                  $('.porteiro-over').fadeIn('fast');
+                });
+                $('.porteiro-over').mouseleave(function(){
+                  $(this).fadeOut('fast');
+                });
+                
+                $('.porteiro-over').click(function(){
                  $('.botao-porteiro-over').show();
-                 $('.balao').fadeIn('fast'); 
+                 $('.balao').fadeIn('fast');
+                 $('.balao, .botao-porteiro-over').delay(30000).fadeOut('fast'); 
                 });
                 
                 $('.senha').click(function(){
