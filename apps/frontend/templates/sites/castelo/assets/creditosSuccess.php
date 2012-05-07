@@ -62,6 +62,8 @@
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina" align="left">
           
+          <a href="http://cmais.com.br/castelo/chat" title="Chat - Ao vivo" id="linkChat"></a>
+          
           <h1 id="creditos">
             <img src="/portal/images/capaPrograma/castelo/img-titulo-creditos.png" alt="Créditos">
           </h1>
