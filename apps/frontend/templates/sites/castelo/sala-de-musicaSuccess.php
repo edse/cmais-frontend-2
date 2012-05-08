@@ -53,15 +53,18 @@
         
       </div>
       <!-- /BARRA SITE -->
-
+      
+      
+            
       <!-- MIOLO -->
       <div id="miolo">
         
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           
+            
           <!-- CAPA -->
           <div class="capa grid3">
             
@@ -80,6 +83,26 @@
             <!--/penelope-->
               <?php endif; ?>  
             <?php endif; ?>
+            
+            <!--papeis de parede-->
+            <a href="#" title="Papéis de Parede" class="ppb">teste</a> 
+            <div class="papeis-de-parede-over" style="display:none;"></div> 
+            <div class="papeis-de-parede"></div>
+            <!--/papeis de parede-->
+            
+            <script>
+              $(document).ready(function(){
+                
+                $('.ppb').hover(function(){
+                  $('.papeis-de-parede').fadeOut('fast');
+                  $('.papeis-de-parede-over').fadeIn('fast');
+                });
+                $('.ppb').mouseleave(function(){
+                  $('.papeis-de-parede').fadeIn('fast');
+                  $('.papeis-de-parede-over').fadeOut('fast');
+                });
+              });
+            </script>
             
             </div> 
             <!--tudo-->
