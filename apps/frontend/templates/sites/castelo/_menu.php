@@ -1,6 +1,6 @@
           <script>
             $(document).ready(function(){
-              $('.m-chat').append('<div class="chat2">AO VIVO</div>');  
+              $('.m-chat-ao-vivo').append('<div class="chat-ao-vivo">AO VIVO</div>');  
             });
           </script>
           <?php if(count($siteSections) > 0): ?>
@@ -21,13 +21,16 @@
               <?php else: ?>
                 <li class="m-<?php echo $s->getSlug() ?>">
                 <?php if($section->getSlug()): ?>
-                  <?php if($s->getSlug() == $section->getSlug()): ?>
-                  <a class="selected" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
-                  <?php else: ?>
-                  <a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
-                  <?php endif; ?>
+                	<?php if($s->getSlug() == $section->getSlug()): ?>
+                	<a class="selected" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
+                	<?php else: ?>
+                	<a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
+                	<?php endif; ?>
+                	<?php if($s->getSlug() == 'chat-ao-vivo'): ?>
+									<div class="chat-ao-vivo">AO VIVO</div>
+									<?php endif; ?>          	
                 <?php else: ?>
-                  <a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
+                	<a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a>
                 <?php endif; ?>
                 </li>
               <?php endif; ?>
