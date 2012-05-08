@@ -10,7 +10,7 @@ body { background:#a6b94d; min-height: 970px; }
 
 .botao-adelaide{position: absolute;top: 163px;left: 32px;width: 196px;height: 282px;}
 .botao-adelaide-over{position: absolute;top: 149px;left: -4px;width: 241px;height: 311px;background: url(/portal/images/capaPrograma/castelo/img-personagem-adelaide-over.png) repeat-x;}
-.gif-adelaide{width: 55px;height: 57px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-adelaide.gif)no-repeat;position: absolute;top: 19px;left: 78px;}
+.gif-adelaide{width: 55px;height: 57px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-adelaide.gif) no-repeat;position: absolute;top: 19px;left: 78px;}
 
 .botao-valdirene{position: absolute;top: 141px;left: 249px;width: 81px;height: 334px;}
 .botao-valdirene-over{position: absolute;top: 102px;left: 219px;width: 118px;height: 383px; background: url(/portal/images/capaPrograma/castelo/img-personagem-valdirene-over.png) repeat-x;}
