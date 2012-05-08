@@ -12,14 +12,14 @@
     });
     
     $("a[class*=botao]").not('.botao-porteiro-over').fancybox({
-      'transitionIn'  : 'fadein',
+      
+       'transitionIn' : 'fadein',
       'transitionOut' : 'fadeout',
-      'speedIn'   : 600, 
-      'speedOut'    : 200, 
-      'overlayShow' : true,
-      'type' : 'iframe'
+            'speedIn' : 600, 
+           'speedOut' : 200, 
+        'overlayShow' : true,
+               'type' : 'iframe'
     });
-    
   });
   </script>
   <!--FANCYBOX--> 
@@ -80,19 +80,19 @@
 
 <!--/MODAL-->
 <div class="navegacao">
-              
+               
               <!--MOUSE OVER -->
               <div class="thumbs" style="display:none;">
-                
                 <?php
+                                 
                 $arrayTelas = array(1 => "Home", 2 => "Hall de entrada", 3 => "Hall da escada", 4 => "Quarto do nino", 5 => "Sala de música", 6 => "Biblioteca", 7 => "Cozinha", 8 => "Laboratorio", 9 =>"Quarto da morgana" );
                 $arraySlugs = array(1 => "home2", 2 => "hall", 3 => "arvore", 4 => "nino", 5 => "sala-de-musica", 6 => "arquivo", 7 => "cozinha", 8 => "laboratorio", 9 =>"morgana" );
                 for($i=1;$i<=count($arrayTelas);$i++):
                 ?>
-                  <a href="<?php echo $arraySlugs[$i] ?>" title="<?php echo $arrayTelas[$i] ?>" class="<?php echo $arraySlugs[$i];?>"></a>
-                <?php 
-                endfor;
-                ?>
+                  
+                    <a href="<?php echo $arraySlugs[$i] ?>" title="<?php echo $arrayTelas[$i] ?>" class="<?php echo $arraySlugs[$i]; $pos = strrpos($_SERVER['PHP_SELF'], $arraySlugs[$i]); if($pos==true) echo " selected"?>"></a>
+                  
+                <?php endfor;?>
                  
               </div>
               <!--/MOUSE OVER -->
