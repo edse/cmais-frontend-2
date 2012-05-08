@@ -115,9 +115,9 @@
                 
                 <?php
                                 
-                foreach($arraySlugs as $i):
+                foreach($arraySlugs as $t):
                   
-                  $pos = strrpos($_SERVER['REQUEST_URI'], $i);
+                  $pos = strrpos($_SERVER['REQUEST_URI'], $t);
                 
                   if ($pos == true) {
                   ?>
