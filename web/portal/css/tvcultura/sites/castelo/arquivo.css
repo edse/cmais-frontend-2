@@ -20,8 +20,8 @@ body { background:#911630; min-height: 970px; }
 .botao-arquivo5 {z-index:0;cursor:pointer ;width:65px; height:45px;position:absolute;top: 315px;right: 316px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5.gif) no-repeat;}
 .botao-arquivo5-over {z-index:1;width:99px; height:75px;position:absolute;top: 316px;right: 294px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5-over.png) no-repeat;}
 
-.botao-arquivo6 {z-index:0;cursor:pointer ;width:85px; height:55px;position:absolute;bottom: 73px;left: 347px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6.gif) no-repeat;}
-.botao-arquivo6-over {z-index:1;width:122px; height:81px;position:absolute;bottom: 48px;left: 346px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6-over.png) no-repeat;}
+.botao-arquivo6 {z-index:0;cursor:pointer ;width:85px; height:55px;position:absolute;bottom: 73px;left: 366px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6.gif) no-repeat;}
+.botao-arquivo6-over {z-index:1;width:122px; height:81px;position:absolute;bottom: 48px;left: 364px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6-over.png) no-repeat;}
 
 .botao-arquivo7 {z-index:0;cursor:pointer ;width:85px; height:45px;position:absolute;bottom: 103px;left: 208px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7.gif) no-repeat;}
 .botao-arquivo7-over {z-index:1;width:134px; height:92px;position:absolute;bottom: 57px;left:167px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}

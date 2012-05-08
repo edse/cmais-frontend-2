@@ -101,7 +101,7 @@
                 $('#resposta').keyup(function(){
                   answered = $('#resposta').val().toLowerCase()
                   if (answered == currentAnswer) {
-                    $('.balao, .botao-porteiro-over, .gif-porteiro').hide();
+                    $('.balao, .gif-porteiro').hide();
                     $('.gif-abre').fadeIn(2000, function(){
                       $('.gif-abre').fadeOut('slow',function(){
                         window.location.href = "http://cmais.com.br/castelo/hall";
