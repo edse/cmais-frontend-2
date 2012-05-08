@@ -1,3 +1,8 @@
+          <script>
+            $(document).ready(function(){
+              $('.m-chat').append('<div class="chat2">AO VIVO</div>');  
+            });
+          </script>
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
           <ul class="menu-interna grid3">
