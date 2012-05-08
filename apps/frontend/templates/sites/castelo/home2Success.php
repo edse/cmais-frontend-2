@@ -45,7 +45,6 @@
 
           <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
-         
         </div>
         <!-- /box-topo -->
         
@@ -65,13 +64,13 @@
           <div class="capa grid3">
             
             <script>
-              var questions = new Array("A senha de hoje:</br><span class='senha2'>Quantos anos tem o nino?</span>",
-                                        "A senha de hoje:</br><span class='senha2'>Quem é o melhor amigo do Godofredo?</span>",
-                                        "A senha de hoje:</br><span class='senha2'>O que o Dr. Abobrinha quer construir no lugar do Castelo?</span>",
-                                        "A senha de hoje:</br><span class='senha2'>Qual é o nome do irmão do Perônio?</span>", 
-                                        "A senha de hoje:</br><span class='senha2'>Como faz pra chamar a caipora?</span>",
-                                        "A senha de hoje:</br><span class='senha2'>Quem toma conta da biblioteca do Castelo?</span>",
-                                        "A senha de hoje:</br><span class='senha2'>Que comida gostosa o Bongô sempre trazia pro pessoal?</span>");
+              var questions = new Array("A senha de hoje:</br></br><span class='senha2'>Quantos anos tem o nino?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Quem é o melhor amigo do Godofredo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>O que o Dr. Abobrinha quer construir no lugar do Castelo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Qual é o nome do irmão do Perônio?</span>", 
+                                        "A senha de hoje:</br></br><span class='senha2'>Como faz pra chamar a caipora?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Quem toma conta da biblioteca do Castelo?</span>",
+                                        "A senha de hoje:</br></br><span class='senha2'>Que comida gostosa o Bongô sempre trazia pro pessoal?</span>");
               var answers = new Array("300",
                                       "Mau",
                                       "Prédio",
@@ -90,7 +89,7 @@
               
               $(function(){
                 $('#questao').html(currentQuestion);
-                $('#formsenha').append('<input type="text" class="resposta a'+numbersK+'" name="resposta" id="resposta"  maxlength="'+numbercaracters+'" /><div class="sublinhado a'+numbersK+'"></div>');
+                $('#formsenha').append('<input type="text" class="resposta" name="resposta" id="resposta"  maxlength="'+numbercaracters+'" /><div class="sublinhado a'+numbersK+'"></div>');
                 
                 $('#resposta').keyup(function(){
                   answered = $('#resposta').val().toLowerCase()
@@ -170,7 +169,20 @@
               <?php endif; ?>
             <?php endif; ?>  
             
+            <!--NAVEGAÇÃO PG A PG-->
+            
+            
+              <a href="http://cmais.com.br/castelo/morgana" class="anterior" title="Anterior">
+                <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
+              </a>
+              
+              <a href="http://cmais.com.br/castelo/hall" class="posterior"  title="Posterior">
+                <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
+              </a>
+            <!--/NAVEGAÇÃO PG A PG-->
+            
             <!-- MENU NAVEGAÇÃO-->
+            
             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
             <!--/MENU NAVEGAÇÃO-->
             

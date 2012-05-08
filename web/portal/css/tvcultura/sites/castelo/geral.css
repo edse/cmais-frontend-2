@@ -36,7 +36,9 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .menu-interna li a{ background: #f4821f; border:1px solid #e17223;color:#f7e55d;padding:0px 7px; border-radius:5px;}
 .menu-interna li a:hover{ background: #e11e24; border:1px solid #c32428;}
 
-.menu-interna li .chat2{background: #FFE282 !important;position: absolute;width: 51px;height: 20px;z-index: -2;top: -4px;left: -3px;border-radius: 5px;color: red;padding-top: 25px;font-size: 10px;font-weight: bold;}
+.anterior{position:absolute;left:0px;bottom:30px;}
+.posterior{position:absolute;right:0px;bottom:30px;}
+.chat-ao-vivo{background: #FFE282 !important;position: absolute;width: 51px;height: 20px;z-index: -2;top: -4px;left: -3px;border-radius: 5px;color: red;padding-top: 25px;font-size: 10px;font-weight: bold;}
 .menu-interna li a.selected{ background: #e11e24 !important; border:1px solid #c32428 !important;}
 #linkChat{width: 300px;height: 300px;position: absolute;top: 198px;left: 30px;z-index: 1000;}
 .castelo18 {width: 280px;position: absolute;top: -268px;right: -3px;}
@@ -63,10 +65,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .sublinhado.a6{background: url(/portal/images/capaPrograma/castelo/su-gato.gif) no-repeat;}
 #castelo .sublinhado.a7{background: url(/portal/images/capaPrograma/castelo/su-pizza.gif) no-repeat;}
   
-.nav-Esquerda{z-index:5;width:90px; height:900px; position: absolute; left:50px; top:0;}
-.nav-Esquerda img{position:absolute;top:18%; right: 0;}
-.nav-Direita{z-index:5;width:90px; height:900px; position: absolute;right:50px; top:0;}
-.nav-Direita img{position:absolute;top:18%; right: 0;}
+
 #castelo .porteiro{cursor: pointer;z-index:0;width:39px; height:78px;position:absolute;top: 334px;left: 556px;}
 #castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
 #castelo .porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}

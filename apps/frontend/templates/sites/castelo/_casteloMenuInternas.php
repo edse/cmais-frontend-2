@@ -38,13 +38,7 @@
          $('div[class*="botao"]').fadeIn('fast');
       });
       
-      $('a[class*=nav]').hover(function(){
-        $('.'+$(this).attr('class')+' img').fadeIn('fast');
-      });
       
-      $('a[class*=nav]').mouseleave(function(){
-        $('.'+$(this).attr('class')+' img').fadeOut('fast');
-      });
       
       //ratinho hall
       $('.botao-ratinho').hover(function(){
@@ -65,12 +59,13 @@
     
     $('.bolinhas').hover(function(){
       $('.thumbs').fadeIn('fast');
+      $('.anterior, .posterior').fadeOut('fast');
       $(this).fadeOut('fast');  
     });
     
     $('.thumbs').mouseleave(function(){
       $(this).fadeOut('fast');
-      $('.bolinhas').fadeIn('fast');
+      $('.anterior, .posterior, .bolinhas').fadeIn('fast');
     });
   });
   
