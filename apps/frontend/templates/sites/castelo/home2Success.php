@@ -169,17 +169,7 @@
               <?php endif; ?>
             <?php endif; ?>  
             
-            <!--NAVEGAÇÃO PG A PG-->
             
-            
-              <a href="http://cmais.com.br/castelo/morgana" class="anterior" title="Anterior">
-                <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
-              </a>
-              
-              <a href="http://cmais.com.br/castelo/hall" class="posterior"  title="Posterior">
-                <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
-              </a>
-            <!--/NAVEGAÇÃO PG A PG-->
             
             <!-- MENU NAVEGAÇÃO-->
             
