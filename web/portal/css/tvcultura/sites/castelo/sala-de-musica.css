@@ -9,5 +9,5 @@ body { background:#a0d3f2; min-height: 970px; }
 .gif-penelope{width: 84px;height: 68px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-penelope.gif) no-repeat;position: absolute;top: 34px;left: -5px;}
 
 .ppb{width: 319px;height: 600px;position: absolute;top: -284px;left: 13px;z-index: 1;}
-.papeis-de-parede {width: 311px;height: 432px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede.jpg) no-repeat;position: absolute;top: -284px;left: 16px;}
-.papeis-de-parede-over {width: 311px;height: 583px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede-over.jpg) no-repeat;position: absolute;top: -284px;left: 16px;}
+.papeis-de-parede {width: 311px;height: 432px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
+.papeis-de-parede-over {width: 311px;height: 583px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede-over.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
