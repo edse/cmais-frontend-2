@@ -14,7 +14,7 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
 
-    <title>Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura</title>
+    <!--title>Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura</title>
     <meta name="title" content="Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura" />
     <meta name="description" content="Um menino de 300 anos." />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
@@ -25,7 +25,12 @@
     <meta property="og:description" content="Um menino de 300 anos. - cmais+ O portal de conteúdo da Cultura" />
     <meta property="og:url" content="http://cmais.com.br/castelo/nino-1" />
     <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/face-home.jpg" />
+    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/face-home.jpg"/-->
+    
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
+    
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
@@ -63,53 +68,53 @@
 
 <script type="text/javascript">
 $(window).load(function() {
-  $('#featured').orbit({
-    'bullets' : true,   
-    'bulletThumbs': true
-  });
+	$('#featured').orbit({
+		'bullets' : true,   
+		'bulletThumbs': true
+	});
 });
 </script>
 
-<div class="base">    
-    <!--CONTAINER ASSSET -->
-    <div class="container">
-      
-      <!-- GALERIA DE FOTOS -->
-      <div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
-        <div id="featured">
-        <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-        <?php if(count($related)>0): ?>
-          <?php foreach($related as $d): ?>
-          <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?>" data-thumb="<?php echo $d->retriveImageUrlByImageUsage('image-1') ?>" data-caption="#html<?php echo $d->getSlug() ?>" />
+<div class="base">  	
+		<!--CONTAINER ASSSET -->
+		<div class="container">
+			
+			<!-- GALERIA DE FOTOS -->
+			<div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
+			  <div id="featured">
+	      <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+	      <?php if(count($related)>0): ?>
+	      	<?php foreach($related as $d): ?>
+			    <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?>" data-thumb="<?php echo $d->retriveImageUrlByImageUsage('image-1') ?>" data-caption="#html<?php echo $d->getSlug() ?>" />
           <?php endforeach; ?>
         <?php endif; ?>
-        </div>
-      
-        <!-- THUMBNAILS -->
-        <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-        <?php if(count($related)>0): ?>
-          <?php foreach($related as $d): ?>
-            <?php $related_content = $d->retriveRelatedAssetsByAssetTypeId(1); ?>
-        <span class="orbit-caption" id="html<?php echo $d->getSlug() ?>">
-          <span class="espaco">
-            <?php echo $d->getDescription() ?><?php if($d->AssetImage->getHeadline()!="") echo "<br>".$d->AssetImage->getHeadline() ?><?php if($d->AssetImage->getAuthor()!="") echo "<br>Foto: ".$d->AssetImage->getAuthor() ?>
-            <?php if(count($related_content)>0): ?>
-            <br /><a href="<?php echo $related_content[0]->retriveUrl()?>" target="_blank">Saiba mais</a>
-            <?php endif; ?>
-          </span>
-        </span>
+			  </div>
+			
+			  <!-- THUMBNAILS -->
+	      <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+	      <?php if(count($related)>0): ?>
+	      	<?php foreach($related as $d): ?>
+	      		<?php $related_content = $d->retriveRelatedAssetsByAssetTypeId(1); ?>
+			  <span class="orbit-caption" id="html<?php echo $d->getSlug() ?>">
+			    <span class="espaco">
+	          <?php echo $d->getDescription() ?><?php if($d->AssetImage->getHeadline()!="") echo "<br>".$d->AssetImage->getHeadline() ?><?php if($d->AssetImage->getAuthor()!="") echo "<br>Foto: ".$d->AssetImage->getAuthor() ?>
+	          <?php if(count($related_content)>0): ?>
+	          <br /><a href="<?php echo $related_content[0]->retriveUrl()?>" target="_blank">Saiba mais</a>
+	          <?php endif; ?>
+			    </span>
+			  </span>
           <?php endforeach; ?>
         <?php endif; ?>
-        <!-- THUMBNAILS -->
-      </div>
-      <!-- /GALERIA DE FOTOS -->
+			  <!-- THUMBNAILS -->
+			</div>
+			<!-- /GALERIA DE FOTOS -->
               
-      <!-- barra compartilhar -->
-      <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-      <!-- /barra compartilhar -->
+			<!-- barra compartilhar -->
+			<?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+			<!-- /barra compartilhar -->
 
-    </div>
-    <!--CONTAINER ASSSET -->
+		</div>
+		<!--CONTAINER ASSSET -->
 
 
   
