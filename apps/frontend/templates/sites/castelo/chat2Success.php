@@ -53,7 +53,7 @@ $(function(){ //onready
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
          <div class="castelo18">
            <img src="/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">

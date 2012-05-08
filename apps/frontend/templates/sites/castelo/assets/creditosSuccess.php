@@ -1,8 +1,15 @@
+<?php
+$section = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = 976')
+  ->andWhere('s.slug = ?', 'creditos2')
+  ->fetchOne();
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/creditos.css" type="text/css" />
-
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -39,7 +46,7 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
          <div class="castelo18">
            <img src="/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">
