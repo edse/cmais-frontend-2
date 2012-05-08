@@ -103,7 +103,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .navegacao .thumbs a.laboratorio:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
 .navegacao .thumbs a.morgana:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
 
-.navegacao .thumbs a.home2.selected{border: 2px solid #c32428;margin: 9px 0px 10px 8px;}
+.navegacao .thumbs a.selected{border: 2px solid #c32428;margin: 9px 0px 10px 8px;}
 .navegacao .thumbs a.home2.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb1over.jpg) no-repeat;}
 .navegacao .thumbs a.hall.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb2over.jpg) no-repeat;}
 .navegacao .thumbs a.arvore.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb3over.jpg) no-repeat;}
