@@ -72,7 +72,7 @@
                 <h3 class="tit-pagina"><?php echo $section->getTitle() ?></h3>
                 <div class="linguas">
                   <a href="fale-conosco" class="pt" title="Português">Português</a>
-                  <a href="fale-conosco-en" class="en" title="English">English</a>
+                  <a href="contact-us" class="en" title="English">English</a>
                 </div>            
 	              
                 <p><?php echo $section->getDescription()?></p>
