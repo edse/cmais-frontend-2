@@ -116,7 +116,7 @@
             
             
             <!-- MENU NAVEGAÇÃO-->
-             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site)) ?>
+              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?>
             <!--/MENU NAVEGAÇÃO-->
             
           </div>

@@ -91,17 +91,13 @@
               <?php endif; ?>  
             <?php endif; ?>
             
-            <?php if(isset($displays["valdirene"])): ?>
-              <?php if(count($displays["valdirene"]) > 0): ?>
             <!--valdirene-->
               <div class="botao-valdirene">
                 <div class="gif-valdirene"></div>
               </div>
               
-              <a href="<?php echo $displays["valdirene"][0]->retriveUrl()?>" title="<?php echo $displays["valdirene"][0]->getTitle()?>" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a>  
+              <a href="http://tvratimbum.cmais.com.br/casteloratimbum/carinhas-castelo-ra-tim-bum-1" target="_blank" title="Carinhas - Castelo Ra Tim Bum" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a>  
             <!--/valdirene-->
-              <?php endif; ?>  
-            <?php endif; ?>
             
             
             
@@ -113,7 +109,7 @@
 
             
             <!-- MENU NAVEGAÇÃO-->
-             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site)) ?> 
+              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>
