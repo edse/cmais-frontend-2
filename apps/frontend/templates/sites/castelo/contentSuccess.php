@@ -113,6 +113,19 @@ $(document).ready(function(){
           <!-- SAIBA MAIS -->
             
           <?php endif; ?>
+
+			    <div id="fb-root"></div>
+			    <script>
+			      window.fbAsyncInit = function() {
+			        FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
+			      };
+			      (function() {
+			        var e = document.createElement('script'); e.async = true;
+			        e.src = document.location.protocol +
+			          '//connect.facebook.net/pt_BR/all.js';
+			        document.getElementById('fb-root').appendChild(e);
+			      }());
+			    </script>
       
           <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
           

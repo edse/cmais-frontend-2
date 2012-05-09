@@ -1,3 +1,16 @@
+			    <div id="fb-root"></div>
+			    <script>
+			      window.fbAsyncInit = function() {
+			        FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
+			      };
+			      (function() {
+			        var e = document.createElement('script'); e.async = true;
+			        e.src = document.location.protocol +
+			          '//connect.facebook.net/pt_BR/all.js';
+			        document.getElementById('fb-root').appendChild(e);
+			      }());
+			    </script>
+      
                    
           <!--TIMER-->
           <!--script type="text/javascript" src="/portal/js/jTimer/jquery.timer.js"></script-->

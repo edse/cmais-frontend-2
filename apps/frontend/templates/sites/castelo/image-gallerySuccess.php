@@ -1,5 +1,3 @@
-<?php use_helper('I18N','Date') ?>
-
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
@@ -60,6 +58,7 @@
 
   </head>
   <body>
+<?php use_helper('I18N','Date') ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
@@ -108,6 +107,19 @@ $(window).load(function() {
 			  <!-- THUMBNAILS -->
 			</div>
 			<!-- /GALERIA DE FOTOS -->
+			
+	    <div id="fb-root"></div>
+	    <script>
+	      window.fbAsyncInit = function() {
+	        FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
+	      };
+	      (function() {
+	        var e = document.createElement('script'); e.async = true;
+	        e.src = document.location.protocol +
+	          '//connect.facebook.net/pt_BR/all.js';
+	        document.getElementById('fb-root').appendChild(e);
+	      }());
+	    </script>
               
 			<!-- barra compartilhar -->
 			<?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
