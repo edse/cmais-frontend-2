@@ -77,9 +77,9 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo .gif-abre{position:absolute;top: 286px; left: 478px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
   
 .navegacao{position:absolute;width:77px; /*height:928px;*/ bottom:30px; left:0px;}
-.navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height:27px; background:url(/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat; bottom:0px;left:331px; z-index: 0; }
+.navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height: 31px;background: url(/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat 0 1px; bottom:0px;left:331px; z-index: 0; }
 .navegacao .bolinhas img.on{margin:6px 0 0 6px;}
-.navegacao .bolinhas img.off{margin:1px 0 0 7px !important;}
+.navegacao .bolinhas img.off{margin:1px 0 0 6px !important;}
 .navegacao .thumbs{position:absolute; height:77px; width:928px; background:url(/portal/images/capaPrograma/castelo/img-navegacao-telas-over.png) no-repeat;bottom:0px; left:7px; z-index: 10;}
 .navegacao .thumbs a{display:block;width:91px;height:55px;float:left;margin:11px 0 0 11px;}
 
