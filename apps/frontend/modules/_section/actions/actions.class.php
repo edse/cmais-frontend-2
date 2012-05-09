@@ -775,7 +775,7 @@ class _sectionActions extends sfActions
       $pagelimit = 9;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="univesptv"))
       $pagelimit = 2;
-    elseif(($sectionSlug == 'videos')&&($this->site->getSlug()=="univesptv"))
+    elseif(($sectionSlug == 'videos')&&($this->site->getSlug()=="univesptv")||($this->site->getSlug() == "castelo" && $sectionSlug == "episodios"))
       $pagelimit = 12;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
