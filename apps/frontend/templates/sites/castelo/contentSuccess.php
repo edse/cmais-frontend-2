@@ -78,7 +78,7 @@ $(document).ready(function(){
           <div class="topo claro">
             <span></span>
             <div class="capa-titulo">
-              <h4>Entrevista</h4>
+              <h4>Perfil</h4>
               <a href="/feed" class="rss" title="rss" style="display: block"></a>
             </div>
           </div>
