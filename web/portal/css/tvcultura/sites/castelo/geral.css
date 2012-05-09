@@ -36,7 +36,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .menu-interna li a{ background: #f4821f; border:1px solid #e17223;color:#f7e55d;padding:0px 7px; border-radius:5px;}
 .menu-interna li a:hover{ background: #e11e24; border:1px solid #c32428;}
 
-.anterior{position:absolute;left:0px;bottom: 391px;z-index: 2000;}
+.anteriorC{position:absolute;left:0px;bottom: 391px;z-index: 2000;}
 .posterior{position:absolute;right:0px;bottom: 391px;z-index: 2000; }
 .chat-ao-vivo{background: #FFE282 !important;position: absolute;width: 51px;height: 20px;z-index: -2;top: -4px;left: -3px;border-radius: 5px;color: red;padding-top: 25px;font-size: 10px;font-weight: bold;}
 .menu-interna li a.selected{ background: #e11e24 !important; border:1px solid #c32428 !important;}

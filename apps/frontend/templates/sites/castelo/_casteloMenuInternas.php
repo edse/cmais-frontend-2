@@ -68,13 +68,13 @@ $sections = Doctrine_Query::create()
     
     $('.bolinhas').hover(function(){
       $('.thumbs').fadeIn('fast');
-      $('.anterior, .posterior').fadeOut('fast');
+      $('.anteriorC, .posterior').fadeOut('fast');
       $(this).fadeOut('fast');  
     });
     
     $('.thumbs').mouseleave(function(){
       $(this).fadeOut('fast');
-      $('.anterior, .posterior, .bolinhas').fadeIn('fast');
+      $('.anteriorC, .posterior, .bolinhas').fadeIn('fast');
     });
   });
   
@@ -86,11 +86,11 @@ $sections = Doctrine_Query::create()
     <?php if($sections[$i]->getSlug() == $section->getSlug()): ?>
       <?php if($i > 0): ?>
         <?php if ($sections[$i-1]->getSlug() == 'home2'): ?>
-  <a href="<?php echo url_for('homepage') . $site->getSlug(); ?>" class="anterior" title="Anterior">
+  <a href="<?php echo url_for('homepage') . $site->getSlug(); ?>" class="anteriorC" title="Anterior">
     <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php else: ?>
-  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anterior" title="Anterior">
+  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anteriorC" title="Anterior">
     <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php endif; ?>
