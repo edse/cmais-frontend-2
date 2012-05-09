@@ -66,7 +66,7 @@ $(function(){ //onready
       <!-- MIOLO -->
       <div id="miolo">
         
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        
 
       <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">

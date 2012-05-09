@@ -109,7 +109,7 @@
 
             
             <!-- MENU NAVEGAÇÃO-->
-            <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas') ?> 
+             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site)) ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>
