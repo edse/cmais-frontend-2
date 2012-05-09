@@ -54,12 +54,7 @@
 
 <!--body data-twttr-rendered="true"style="background: none !important;">
 
-<!--script type="text/javascript">
-$(document).ready(function(){
-  $('#rodape-portal').hide();
-  $('body').addClass('bac');
-});
-</script-->
+
 
 <div class="base">
   
