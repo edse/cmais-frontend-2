@@ -88,7 +88,7 @@ class AssetContent extends BaseAssetContent
     $("#jquery_jplayer_\\2").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "http://midia.cmais.com.br/assets/audio/default/\\2.mp3",
+          mp3: "http://midia.cmais.com.br/assets/audio/default/\\2.mp3"
         });
       },
       play: function() { // To avoid both jPlayers playing together.
