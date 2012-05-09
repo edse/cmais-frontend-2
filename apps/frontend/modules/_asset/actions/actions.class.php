@@ -341,9 +341,8 @@ class _assetActions extends sfActions
     if($this->site->getSlug() == "maiscrianca")
       $this->setLayout(false);
 		
-    if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos")
+    if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
-		
     
     if($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
