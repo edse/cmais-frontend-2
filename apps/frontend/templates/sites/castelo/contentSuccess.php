@@ -1,5 +1,3 @@
-<?php use_helper('I18N','Date') ?>
-
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
@@ -16,7 +14,12 @@
 
     <?php include_title() ?>
     <?php include_metas() ?>
-    <?php include_meta_props() ?>
+    <meta property="og:title" content="<?php echo $asset->getTitle(); ?> - <?php echo $site->getTitle(); ?> - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="<?php echo $asset->getDescription(); ?>" />
+    <meta property="og:url" content="<?php echo $asset->retriveUrl(); ?>" />
+    <meta property="og:site_name" content="<?php echo $site->getTitle(); ?>" />
+    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/ratimbum-icon.jpg"/>
 
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
     <meta property="fb:admins" content="100000889563712"/>
@@ -30,6 +33,11 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
+    </script>
+    <script>
+    if(window.location == parent.window.location){
+    	self.location.href+='&layout=1';
+    }
     </script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -47,7 +55,7 @@
 
   </head>
   <body>
-
+<?php use_helper('I18N','Date') ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />

@@ -12,22 +12,14 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
 
-    <!--title>Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura</title>
-    <meta name="title" content="Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="description" content="Um menino de 300 anos." />
-    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
-    <meta name="language" content="pt_BR" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Nino - casteloratimbum.com.br - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Um menino de 300 anos. - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:url" content="http://cmais.com.br/castelo/nino-1" />
-    <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/face-home.jpg"/-->
-    
     <?php include_title() ?>
     <?php include_metas() ?>
-    <?php include_meta_props() ?>
+    <meta property="og:title" content="<?php echo $asset->getTitle(); ?> - <?php echo $site->getTitle(); ?> - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="<?php echo $asset->getDescription(); ?>" />
+    <meta property="og:url" content="<?php echo $asset->retriveUrl(); ?>" />
+    <meta property="og:site_name" content="<?php echo $site->getTitle(); ?>" />
+    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/ratimbum-icon.jpg"/>
     
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
     <meta property="fb:admins" content="100000889563712"/>
@@ -41,6 +33,11 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
+    </script>
+    <script>
+    if(window.location == parent.window.location){
+    	self.location.href+='&layout=1';
+    }
     </script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -59,7 +56,6 @@
   </head>
   <body>
 <?php use_helper('I18N','Date') ?>
-
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <script src="/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
 <link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
@@ -126,9 +122,9 @@ $(window).load(function() {
       </div>
       <!-- SAIBA MAIS -->
       <?php endif; ?>
-
 			
-	    <div id="fb-root"></div>
+			
+ 	    <div id="fb-root"></div>
 	    <script>
 	      window.fbAsyncInit = function() {
 	        FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
@@ -140,7 +136,7 @@ $(window).load(function() {
 	        document.getElementById('fb-root').appendChild(e);
 	      }());
 	    </script>
-              
+
 			<!-- barra compartilhar -->
 			<?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 			<!-- /barra compartilhar -->
