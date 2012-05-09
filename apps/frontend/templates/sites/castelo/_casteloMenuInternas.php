@@ -4,6 +4,7 @@ $sections = Doctrine_Query::create()
   ->from('Section s')
   ->where('s.site_id = 976')
   ->andWhere('s.slug IN ("home2","hall","arvore","nino","sala-de-musica","arquivo","cozinha","laboratorio","morgana")')
+  ->orderBy('s.display_order ASC')
   ->execute();
 ?>
 <!--MODAL-->
