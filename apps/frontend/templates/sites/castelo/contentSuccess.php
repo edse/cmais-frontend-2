@@ -85,7 +85,7 @@
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           </div>
           
-          <?php $relacionados = $asset->retriveRelatedAssets(); ?>
+          <?php $relacionados = $asset->retriveRelatedAssetsbyRelationType('Asset Relacionado'); ?>
           <?php if(count($relacionados) > 0): ?>
             
           <!-- SAIBA MAIS -->

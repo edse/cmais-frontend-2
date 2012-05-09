@@ -108,6 +108,26 @@ $(window).load(function() {
 			</div>
 			<!-- /GALERIA DE FOTOS -->
 			
+      <?php $relacionados = $asset->retriveRelatedAssetsbyRelationType('Asset Relacionado'); ?>
+      <?php if(count($relacionados) > 0): ?>
+      <!-- SAIBA MAIS -->
+      <div class="box-padrao grid2" style="margin-bottom: 20px;">
+        <div id="saibamais">                                                            
+        <h4>Veja +</h4>                                                            
+        <ul class="conteudo">
+				<?php foreach($relacionados as $k=>$d): ?>        
+          <li style="width: auto;">
+            <a class="titulos" href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>" style="width: auto;"><?php echo $d->getTitle()?></a>
+          </li>
+        <?php endforeach; ?>
+          
+        </ul>
+       </div>
+      </div>
+      <!-- SAIBA MAIS -->
+      <?php endif; ?>
+
+			
 	    <div id="fb-root"></div>
 	    <script>
 	      window.fbAsyncInit = function() {
