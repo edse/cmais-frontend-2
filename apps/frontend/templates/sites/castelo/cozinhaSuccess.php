@@ -34,9 +34,7 @@
           </h2>
           
 
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('sites/castelo','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+					<?php include_partial_from_folder('sites/castelo','global/like', array('uri' => $uri)) ?>          
           
           
         </div>
