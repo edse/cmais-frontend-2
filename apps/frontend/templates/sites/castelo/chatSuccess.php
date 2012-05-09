@@ -1,3 +1,7 @@
+<?php 
+header("Location: http://cmais.com.br/castelo/chat-ao-vivo");
+die();
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
