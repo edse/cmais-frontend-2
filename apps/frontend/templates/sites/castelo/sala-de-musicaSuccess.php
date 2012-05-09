@@ -45,7 +45,7 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
+           <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
         </div>
         <!-- /box-topo -->
@@ -85,7 +85,7 @@
             <?php endif; ?>
             
             <!--papeis de parede-->
-            <a href="http://tvratimbum.cmais.com.br/baixar?section_id=1060" target="_blank"  title="Papéis de Parede" class="ppb">teste</a> 
+            <a href="http://tvratimbum.cmais.com.br/baixar?section_id=1060" target="_blank" title="Papéis de Parede" class="ppb">teste</a> 
             <div class="papeis-de-parede-over" style="display:none;"></div> 
             <div class="papeis-de-parede"></div>
             <!--/papeis de parede-->
@@ -109,7 +109,7 @@
 
             
             <!-- MENU NAVEGAÇÃO-->
-              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
+               <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>

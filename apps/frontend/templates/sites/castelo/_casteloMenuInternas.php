@@ -1,3 +1,11 @@
+<?php
+$sections = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = 976')
+  ->andWhere('s.slug IN ("home2","hall","arvore","nino","sala-de-musica","arquivo","cozinha","laboratorio","morgana")')
+  ->execute();
+?>
 <!--MODAL-->
 
   <!--TRAVA MOUSE FUNDO-->
@@ -11,7 +19,7 @@
       $(this).fancybox()
     });
     
-    $("a[class*=botao]").not('.botao-porteiro-over').fancybox({
+    $("a[class*=botao]").not('.botao-porteiro-over, .botao-valdirene-over').fancybox({
       
        'transitionIn' : 'fadein',
       'transitionOut' : 'fadeout',
@@ -73,38 +81,43 @@
   
 
 <!--NAVEGAÇÃO PG A PG-->
-  <?php
-  $arrayTelas = array(1 => "Home", 2 => "Hall de entrada", 3 => "Hall da escada", 4 => "Quarto do nino", 5 => "Sala de música", 6 => "Biblioteca", 7 => "Cozinha", 8 => "Laboratorio", 9 =>"Quarto da morgana" );
-  $arraySlugs = array(1 => "home2", 2 => "hall", 3 => "arvore", 4 => "nino", 5 => "sala-de-musica", 6 => "arquivo", 7 => "cozinha", 8 => "laboratorio", 9 =>"morgana" );
-  
-  for($i=1;$i<=count($arrayTelas);$i++):
-  $pos = strrpos($_SERVER['PHP_SELF'], $arraySlugs[$i]); 
-  
-  if($pos==true){
-  ?>          
-  <a href="http://cmais.com.br/castelo/<?php if($i==1){echo $arraySlugs[9];}else{echo $arraySlugs[$i-1];}?>" class="anterior" title="Anterior">
+  <?php for($i=0; $i<count($sections); $i++): ?>
+    <?php if($sections[$i]->getSlug() == $section->getSlug()): ?>
+      <?php if($i > 0): ?>
+        <?php if ($sections[$i-1]->getSlug() == 'home2'): ?>
+  <a href="<?php echo url_for('homepage') . $site->getSlug(); ?>" class="anterior" title="Anterior">
     <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
-  
-  <a href="http://cmais.com.br/castelo/<?php if($i==9){echo $arraySlugs[1];}else{echo $arraySlugs[$i+1];}?>" class="posterior"  title="Posterior">
+        <?php else: ?>
+  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anterior" title="Anterior">
+    <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
+  </a>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if($i < count($sections)): ?>
+        <?php if($sections[$i+1]->getSlug() != ''): ?>
+  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i+1]->getSlug(); ?>" class="posterior"  title="Próxima">
     <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
   </a>
-  <?php }?>
-  <?php 
-  endfor;
-  ?>
+        <?php endif; ?>
+      <?php endif; ?>
+    <?php endif; ?>
+  <?php endfor; ?>
 <!--/NAVEGAÇÃO PG A PG-->
 <!--/MODAL-->
 <div class="navegacao">
                
               <!--MOUSE OVER -->
               <div class="thumbs" style="display:none;">
-                <?php
-                for($i=1;$i<=count($arrayTelas);$i++):
-                ?>
-                  
-                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $arraySlugs[$i]; ?>" title="<?php echo $arrayTelas[$i] ?>" class="<?php echo $arraySlugs[$i]; $pos = strrpos($_SERVER['PHP_SELF'], $arraySlugs[$i]);if($pos==true) echo " selected"?>"></a>
-                  
+                <?php for($i=0; $i<count($sections); $i++): ?>
+                  <?php if($sections[$i]->getSlug() != ''): ?>
+                    <?php if ($sections[$i]->getSlug() == 'home2'): ?>
+                    <a href="<?php echo url_for('homepage') . $site->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
+                    <?php else: ?>
+                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i]->getSlug() ?>" title="<?php echo $arrayTelas[$i] ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
+                    <?php endif; ?>
+                  <?php endif; ?>
                 <?php endfor;?>
                  
               </div>
@@ -112,25 +125,15 @@
               
               <!--MOUSE OUT / INDICAÇAO DA TELA -->  
               <div class="bolinhas" align="left">
-                
-                <?php
-                                
-                foreach($arraySlugs as $t):
-                  
-                  $pos = strrpos($_SERVER['REQUEST_URI'], $t);
-                
-                  if ($pos == true) {
-                  ?>
+                <?php for($i=0; $i<count($sections); $i++): ?>
+                  <?php if($sections[$i]->getSlug() != ''): ?>
+                    <?php if($sections[$i]->getSlug() == $section->getSlug()): ?>
                     <img class="on" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-on.png" />
-                  <?php 
-                  }else{
-                  ?>
+                    <?php else: ?>
                     <img class="off" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-off.png" />
-                  <?php  
-                  }
-                  
-                endforeach;
-                ?>
+                    <?php endif; ?>
+                  <?php endif; ?>                   
+                <?php endfor;?>
 
               </div>
               <!--/MOUSE OUT / INDICAÇAO DA TELA -->

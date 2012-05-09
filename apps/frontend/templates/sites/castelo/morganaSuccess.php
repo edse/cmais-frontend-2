@@ -45,8 +45,7 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
-
+           <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
          
         </div>
         <!-- /box-topo -->
@@ -91,6 +90,7 @@
               <?php endif; ?>  
             <?php endif; ?>
             
+
             <!--valdirene-->
               <div class="botao-valdirene">
                 <div class="gif-valdirene"></div>
@@ -98,12 +98,7 @@
               
               <a href="http://tvratimbum.cmais.com.br/casteloratimbum/carinhas-castelo-ra-tim-bum-1" target="_blank" title="Carinhas - Castelo Ra Tim Bum" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a>  
             <!--/valdirene-->
-            
-            
-            
-            
-            
-            
+                       
             </div> 
             <!--tudo-->
 

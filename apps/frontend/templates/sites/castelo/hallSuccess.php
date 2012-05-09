@@ -66,15 +66,7 @@
           <!-- CAPA -->
           <div class="capa grid3">
             
-            <!--NAVEGAÇÃO PG A PG-->
-            <a hef="#" class="nav-Esquerda" title="Anterior">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
-            </a>
-            <a hef="#" class="nav-Direita" title="Próxima">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
-            </a>
-            <!--/NAVEGAÇÃO PG A PG-->
-            
+                       
            <div class="tudo">
             
             <?php if(isset($displays["relogio"])): ?>
@@ -114,9 +106,17 @@
             
             </div> 
             
+            <!--NAVEGAÇÃO PG A PG-->
+            <a href="/castelo/home" class="nav-Esquerda" title="Anterior" target="_self">
+              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
+            </a>
+            <a href="/castelo/arvore" class="nav-Direita" title="Próxima" target="_self">
+              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
+            </a>
+            <!--/NAVEGAÇÃO PG A PG-->
             
             <!-- MENU NAVEGAÇÃO-->
-              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?>
+             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>

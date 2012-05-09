@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/arvore.css" type="text/css" />
@@ -12,15 +13,15 @@
 <div id="bg" >
   
     <!-- CAPA SITE -->
-    <div id="capa-site">      
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-        
+    <div id="capa-site">  
+      
       <!--FANCYBOX-->
       <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
       <link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-      <!--/FANCYBOX-->
+      <!--/FANCYBOX-->    
+
+      <!-- BARRA SITE -->
+      <div id="barra-site">
         
         
         <div class="topo-programa">
@@ -44,9 +45,8 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
-
-         
+           <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
+          
         </div>
         <!-- /box-topo -->
         
@@ -77,39 +77,39 @@
            <div class="tudo">
             
             <?php if(isset($displays["celeste"])): ?>
-            	<?php if(count($displays["celeste"]) > 0): ?>
+              <?php if(count($displays["celeste"]) > 0): ?>
             <!--celeste-->
               <div class="botao-celeste"></div>
               <a href="<?php echo $displays["celeste"][0]->retriveUrl()?>" title="<?php echo $displays["celeste"][0]->getTitle()?>" class="botao-celeste-over" name="over-celeste" style="display:none"></a>  
             <!--/celeste-->
-            	<?php endif; ?>
+              <?php endif; ?>
             <?php endif; ?>
             
             <?php if(isset($displays["lanaelara"])): ?>
-            	<?php if(count($displays["lanaelara"]) > 0): ?>
+              <?php if(count($displays["lanaelara"]) > 0): ?>
             <!--lanaelara-->
               <div class="botao-lanaelara"></div>
               <a href="<?php echo $displays["lanaelara"][0]->retriveUrl()?>" title="<?php echo $displays["lanaelara"][0]->getTitle()?>" class="botao-lanaelara-over" name="over-lanaelara" style="display:none"></a>  
             <!--/lanaelara-->  
-            	<?php endif; ?>
+              <?php endif; ?>
             <?php endif; ?>
             
             <?php if(isset($displays["joaodebarro"])): ?>
-            	<?php if(count($displays["joaodebarro"]) > 0): ?>
+              <?php if(count($displays["joaodebarro"]) > 0): ?>
             <!--joaodebarro-->
               <div class="botao-joaodebarro"></div>
               <a href="<?php echo $displays["joaodebarro"][0]->retriveUrl()?>" title="<?php echo $displays["joaodebarro"][0]->getTitle()?>" class="botao-joaodebarro-over" name="over-joaodebarro" style="display:none"></a>  
             <!--/joaodebarro-->
-            	<?php endif; ?>
+              <?php endif; ?>
             <?php endif; ?>
             
             <?php if(isset($displays["etevaldo"])): ?>
-            	<?php if(count($displays["etevaldo"]) > 0): ?>
+              <?php if(count($displays["etevaldo"]) > 0): ?>
              <!--etevaldo-->
               <div class="botao-etevaldo"></div>
               <a href="<?php echo $displays["etevaldo"][0]->retriveUrl()?>" title="<?php echo $displays["etevaldo"][0]->getTitle()?>" class="botao-etevaldo-over" name="over-etevaldo" style="display:none"></a>  
             <!--/etevaldo-->    
-            	<?php endif; ?>
+              <?php endif; ?>
             <?php endif; ?>            
             
             
@@ -117,7 +117,7 @@
             
             
             <!-- MENU NAVEGAÇÃO-->
-              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
+              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?>
             <!--/MENU NAVEGAÇÃO-->
             
           </div>

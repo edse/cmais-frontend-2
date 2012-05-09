@@ -55,8 +55,6 @@
       <!-- MIOLO -->
       <div id="miolo">
         
-        
-
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           
@@ -172,8 +170,7 @@
             
             
             <!-- MENU NAVEGAÇÃO-->
-            
-              <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
+             <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
             <!--/MENU NAVEGAÇÃO-->
             
           </div>
