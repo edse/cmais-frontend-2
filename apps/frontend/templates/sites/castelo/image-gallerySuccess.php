@@ -35,9 +35,11 @@
       {lang: 'pt-BR'}
     </script>
     <script>
+    /*
     if(window.location == parent.window.location){
     	self.location.href+='&layout=1';
     }
+    */
     </script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
