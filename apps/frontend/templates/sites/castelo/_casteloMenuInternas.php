@@ -103,7 +103,7 @@
                 for($i=1;$i<=count($arrayTelas);$i++):
                 ?>
                   
-                    <a href="<?php echo $arraySlugs[$i] ?>" title="<?php echo $arrayTelas[$i] ?>" class="<?php echo $arraySlugs[$i]; $pos = strrpos($_SERVER['PHP_SELF'], $arraySlugs[$i]);if($pos==true) echo " selected"?>"></a>
+                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $arraySlugs[$i]; ?>" title="<?php echo $arrayTelas[$i] ?>" class="<?php echo $arraySlugs[$i]; $pos = strrpos($_SERVER['PHP_SELF'], $arraySlugs[$i]);if($pos==true) echo " selected"?>"></a>
                   
                 <?php endfor;?>
                  
