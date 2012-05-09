@@ -115,7 +115,7 @@ $sections = Doctrine_Query::create()
                     <?php if ($sections[$i]->getSlug() == 'home2'): ?>
                     <a href="<?php echo url_for('homepage') . $site->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
                     <?php else: ?>
-                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i]->getSlug() ?>" title="<?php echo $arrayTelas[$i] ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
+                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i]->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
                     <?php endif; ?>
                   <?php endif; ?>
                 <?php endfor;?>
