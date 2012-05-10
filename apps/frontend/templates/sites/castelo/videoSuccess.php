@@ -70,3 +70,4 @@
     <!-- /CAPA SITE -->
 </div>   
 <!--/CASTELO-->
+<?php include_partial_from_folder('blocks','global/footer') ?>
