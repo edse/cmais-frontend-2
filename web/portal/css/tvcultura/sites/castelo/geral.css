@@ -30,7 +30,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #castelo {background:url(/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
 
 .twitter{top: 0;left: 0;position: absolute;}
-.instangram{top: 0;left: 0;position: absolute;}
+.instangram{top: 0;left: 42px;position: absolute;}
 .menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 403px;}
 .menu-interna li{padding:0px;background: none;}
 .menu-interna li:hover{background: none;}
@@ -43,7 +43,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 .menu-interna li a.selected{ background: #e11e24 !important; border:1px solid #c32428 !important;}
 #linkChat{width: 300px;height: 300px;position: absolute;top: 198px;left: 30px;z-index: 1000;}
 .castelo18 {width: 280px;position: absolute;top: -268px;right: -3px;}
-.castelo18 .twitter,#castelo .castelo18 .instangram, {margin-top:5px;}
+
 
 .logo{margin-left:7px;}
 
