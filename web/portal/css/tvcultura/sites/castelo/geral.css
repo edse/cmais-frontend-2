@@ -29,7 +29,8 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 #barra-site .redes {margin: 20px 0 0 7px;}
 #castelo {background:url(/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
 
-.twitter{margin:-6px;}
+.twitter{top: 0;left: 0;position: absolute;}
+.instangram{top: 0;left: 0;position: absolute;}
 .menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 403px;}
 .menu-interna li{padding:0px;background: none;}
 .menu-interna li:hover{background: none;}
