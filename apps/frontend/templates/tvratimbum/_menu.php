@@ -11,53 +11,8 @@
         <script type="text/javascript">
         $(document).ready(function(){
   
-          $('.carrossel img, .carrossel span').hide().delay(1000).fadeIn();
-          
-          
-          
-          /*
-          var date = new Date(),
-          hour = date.getHours(),
-          background,
-          background2,
-          cor
-          switch(true){
-            case (hour > 0 && hour <= 6): //madrugada
-              background = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/topo_madrugada.jpg';
-              background2 = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/rodape_madrugada.jpg';
-              cor = '#91daea';
-              break;
-            case (hour > 6 && hour <= 12): //manh�
-              background = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/topo_manha.jpg';
-              background2 = 'http://172.20.1.79/testes/TVratimbum/image/rodape_manha.jpg';
-              cor = '#c6ecf4';
-              break;
-            case (hour > 12 && hour <= 18): //tarde
-              background = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/topo_tarde.jpg';
-              background2 = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/rodape_tarde.jpg';
-              cor = '#86d7e8';
-              break;
-            case (hour > 18 || hour == 0): //noite
-              background = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/topo_noite.jpg';
-              background2 = 'http://tvratimbum.cmais.com.br/portal/tvratimbum/image/rodape_noite.jpg';
-              cor = '#4d47b4';
-              break;
-            default:
-              break;
-          }
-          $('#bodyWrapper').css({
-            'background': 'url('+ background +') center top no-repeat'
-          });
-          $('.rodape').css({
-            'background': 'url('+ background2 +') center bottom no-repeat'
-          });
-          $('#bodyWrapper').css({
-            'background-color': cor
-          });
-          */
-         
-          
-          
+          $('.carrossel img, .carrossel span').hide().delay(2000).fadeIn('fast');
+        
         });
         </script>
         <div id="menu-topo">
