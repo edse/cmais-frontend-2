@@ -35,8 +35,8 @@
           <?php endif; ?>
           
           <div class="castelo18">
-           <img src="/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">
-           <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img src="/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
-           <a href="http://statigr.am/viewer.php#/tag/castelo18anos/" target="_blank"><img src="/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a>
+
+           <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img class="twitter" src="/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
+           <a href="http://statigr.am/viewer.php#/tag/castelo18anos/" target="_blank"><img class="instangram" src="/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a>
 
          </div>
