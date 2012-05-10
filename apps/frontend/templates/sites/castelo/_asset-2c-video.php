@@ -1,4 +1,4 @@
-    <a href="http://cmais.com.br/castelo/chat" title="Chat - Ao vivo" id="linkChat"></a>
+    
     <?php if(isset($asset)): ?>
       <?php if($asset->AssetType->getSlug() == "video"): ?>
         <div class="embed-video">
