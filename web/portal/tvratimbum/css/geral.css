@@ -2503,6 +2503,7 @@ form textarea.error{
 #box-programas-programaEscolhido .carrossel .jcarousel-item a img{
   overflow: hidden;
   float: left;
+  margin-bottom: 10px;
 }
 #box-programas-programaEscolhido .carrossel .jcarousel-item a:hover{
   border: 3px solid #f25d4d;
