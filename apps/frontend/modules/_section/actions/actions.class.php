@@ -605,6 +605,9 @@ class _sectionActions extends sfActions
     if($sectionSlug == 'contate-o-nucleo')
       $sectionSlug = 'contact';
 
+    if($this->site->getSlug() == "m" && $sectionSlug == 'list')
+      $sectionSlug = 'noticias';
+
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);
 
