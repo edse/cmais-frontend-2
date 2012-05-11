@@ -49,7 +49,7 @@ body { background:url(/portal/images/capaPrograma/castelo/pattern-videos-bg.jpg)
 #chat2 .bg-video { *background-image:url("/portal/images/capaPrograma/castelo/bg-chat2.gif"); }
 #chat2 #esquerda { float:right; margin: 0 0 0 10px; background: orange; }
 #chat2 #direita { margin:200px 10px 0 0; }
-#chat2 .duas-colunas { height:487px; overflow: hidden; }
+#chat2 .duas-colunas { height:510px; overflow: hidden; }
 #chat2 .box-compartilhar { background:#f69524; }
 #chat2 .duas-colunas a,
 #chat2 .duas-colunas p { margin:10px; }
