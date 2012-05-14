@@ -22,6 +22,15 @@
                       <param name="wmode" value="opaque">
                       <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "episode"): ?>
+                    <?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>
+                    <object height="390" width="640" style="height:390px; width: 640px">
+                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
+                      <param name="allowFullScreen" value="true" />
+                      <param name="allowscriptaccess" value="always" />
+                      <param name="wmode" value="opaque">
+                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
+                    </object>
                   <?php else: ?>
                   <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
                   <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays[0]->getTitle() ?>" name="<?php echo $displays[0]->getTitle() ?>" />
