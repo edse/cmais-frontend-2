@@ -1282,12 +1282,11 @@
   $(document).ready(function(){
     //mascaras
     
-    $('.rg').mask("99.999.999-9");
+    //$('.rg').mask("99.999.999-9");
     $('.cpf').mask("999.999.999-99");
     $('.cep').mask("99999-999");
     $('.tel').mask("(99) 9999-9999");
     $('.nasc').mask("99/99/9999");
-    
     
     $('#form-contato-conjunto input#enviar').click(function(){
       $(".msgAcerto, .msgErro").hide();
