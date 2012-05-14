@@ -25,6 +25,11 @@ class _assetActions extends sfActions
       $this->mainSite = Doctrine::getTable('Site')->findOneBySlug('cmais');
       // asset
       $this->asset = $request->getParameter('object');
+			
+			if ($this->asset->getIsActive() != '1'){
+				header("Location: ".$this->asset->Site->retriveUrl());
+				die();
+			}
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
