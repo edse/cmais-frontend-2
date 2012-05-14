@@ -500,6 +500,7 @@ class _sectionActions extends sfActions
                 ->select('*')
                 ->from('Asset a, AssetEpisode ae')
                 ->where('a.id = ae.asset_id')
+                ->andWhere('a.asset_type_id = ?', 15)
                 ->andWhere('a.site_id = ?', $this->site->id)
                 ->andWhere("a.title like '%" . $request->getParameter('palavra') . "%' OR a.description like '%" . $request->getParameter('palavra') . "%'")
                 ->andWhere('ae.date_release >= ?', $request->getParameter('de') ? $request->getParameter('de') : '0')
@@ -604,6 +605,9 @@ class _sectionActions extends sfActions
 
     if($sectionSlug == 'contate-o-nucleo')
       $sectionSlug = 'contact';
+
+    if($this->site->getSlug() == "m" && $sectionSlug == 'list')
+      $sectionSlug = 'noticias';
 
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);

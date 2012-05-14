@@ -82,7 +82,7 @@
                 </div>
                 <hr />
                 <?php endif; ?>
-                <p class="breve"><?php if($site->Program->getLongDescription()!=""):?><?php echo $site->Program->getLongDescription()?><?php else:?><?php echo $site->Program->getDescription()?><?php endif;?></p>
+                <p class="breve"><?php if($site->Program->getLongDescription()!=""):?><?php echo html_entity_decode($site->Program->getLongDescription())?><?php else:?><?php echo html_entity_decode($site->Program->getDescription())?><?php endif;?></p>
               </div>
             </div>
             <hr />
