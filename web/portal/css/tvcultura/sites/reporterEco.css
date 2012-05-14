@@ -1,9 +1,0 @@
-@import url("../geral.css");
-
-/** MANOS E MINAS **/
-#barra-site { background:url(../../../images/capaPrograma/bg-reporterEco.png) no-repeat 564px -25px; margin-top:0; padding-top:20px; }
-#barra-site {_background-image:url(../../../images/capaPrograma/bg-reporterEco.gif);}
-.submenu-interna {width:126px;}
-#horario {margin-top:30px;}
-#barra-site .topo-programa {margin-bottom:10px;}
-/** /MANOS E MINAS **/
