@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/rodaviva.css" type="text/css" />
+
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
@@ -24,7 +24,7 @@ function stream1() {
 function updateTweets() {
   $.ajax({
     url: "/ajax/tweetmonitor",
-    data: "monitor_id=2",
+    data: "monitor_id=9",
     success: function(data) {
       $('#twitter').html(data);
     }
@@ -100,13 +100,13 @@ jQuery(document).ready(function() {
         <!-- BOX LATERAL -->
       	
         <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina exceptionn">
+        <div id="conteudo-pagina">
           <!-- CAPA -->
-          <div class="capa grid3 exceptionn">
-          	<div class="tudo-Rodaviva">
-          		<span class="bordaTopRV"></span>
-          		<div class="centroRV">
-          			<div class="transmissaoH">
+          <div class="capa grid3">
+         
+          		
+          		
+          			<div class="transmissaoH grid2" id="esquerda">
           				<div class="boxVideo">
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
@@ -117,10 +117,10 @@ jQuery(document).ready(function() {
           				</div>
           			</div>
           			
-          			<div class="chat">
+          			<div class="chat grid1" id="direita">
           				<div class="repercussao">
           					<div class="grid1">
-          					  <a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>	
+          					  <a href="http://twitter.com/ingles_musica" class="twitter-follow-button" target="_blank">Siga @ingles_musica</a>	
 			                  <div id="twitter"></div>
 			            	</div>
           				</div>
@@ -129,9 +129,8 @@ jQuery(document).ready(function() {
           					#twitter {margin-top:0} 
           				</style>
           			</div>
-          		</div>
-          		<span class="bordaBottomRV"></span>
-          	</div>
+          		
+         
           </div>
         
         </div>
