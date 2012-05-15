@@ -117,17 +117,13 @@ jQuery(document).ready(function() {
           				</div>
           			</div>
           			
-          			<div class="chat grid1" id="direita">
-          				<div class="repercussao">
+          			<div class="grid1" id="direita">
+          				
           					<div class="grid1">
           					  <a href="http://twitter.com/ingles_musica" class="twitter-follow-button" target="_blank">Siga @ingles_musica</a>	
 			                  <div id="twitter"></div>
 			            	</div>
-          				</div>
-          				<style type="text/css">
-          					.chat .repercussao {margin-top:10px;}
-          					#twitter {margin-top:0} 
-          				</style>
+          			        			
           			</div>
           		
          
