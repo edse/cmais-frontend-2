@@ -6,36 +6,54 @@
 
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 <script>
-function stream1() {
-  var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
-  so.addVariable('controlbar', 'bottom');
-  so.addVariable('autostart', 'true');
-  so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-  so.addVariable('file', 'tv');
-  so.addVariable('type', 'video');
-  so.addParam('allowscriptaccess','always');
-  so.addParam('allowfullscreen','true');
-  so.addParam('wmode','transparent');
-  so.write('boxVideoWrapper');
-  $('.transmissaoH li a').removeClass('ativo');
-  $('#stream_tv').addClass('ativo');
-}
-
-function updateTweets() {
-  $.ajax({
-    url: "/ajax/tweetmonitor",
-    data: "monitor_id=9",
-    success: function(data) {
-      $('#twitter').html(data);
-    }
+  //TIMER TRANSMISSAO
+  function timer1(){
+    var request = $.ajax({
+      data: {
+        asset_id: '52646',
+        url_out: 'http://univesptv.cmais.com.br/inglescommusica'
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        eval(data);
+      },
+      url: '/ajax/timer'
+    });
+  }
+  $(window).load(function(){
+    var t=setInterval("timer1()",60000);
   });
-}
 
-jQuery(document).ready(function() {
-  updateTweets();
-  var t=setInterval("updateTweets()",60000);
-  stream1();
-});
+	function stream1() {
+	  var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+	  so.addVariable('controlbar', 'bottom');
+	  so.addVariable('autostart', 'true');
+	  so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+	  so.addVariable('file', 'tv');
+	  so.addVariable('type', 'video');
+	  so.addParam('allowscriptaccess','always');
+	  so.addParam('allowfullscreen','true');
+	  so.addParam('wmode','transparent');
+	  so.write('boxVideoWrapper');
+	  $('.transmissaoH li a').removeClass('ativo');
+	  $('#stream_tv').addClass('ativo');
+	}
+	
+	function updateTweets() {
+	  $.ajax({
+	    url: "/ajax/tweetmonitor",
+	    data: "monitor_id=9",
+	    success: function(data) {
+	      $('#twitter').html(data);
+	    }
+	  });
+	}
+	
+	jQuery(document).ready(function() {
+	  updateTweets();
+	  var t=setInterval("updateTweets()",60000);
+	  stream1();
+	});
 </script>
 
     
