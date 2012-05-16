@@ -218,7 +218,7 @@ $(function(){ //onready
                   <li id="radio-cb" class="filho"></li>
                   <li id="radio-fm" class="filho" style="display:none;"></li>
                   <li id="radio-rtb" class="filho" style="display: none; ">
-                    <a href="http://www.tvratimbum.com.br/secoes/radiortb/" class="bg-Ratimbum"></a>
+                    <a href="http://tvratimbum.cmais.com.br/radio" class="bg-Ratimbum"></a>
                   </li>
                   <li id="radio-cocorico" class="filho" style="display: none; ">
                     <a href="http://www.tvcultura.com.br/cocorico/radio/" class="bg-Cocorico"></a>
