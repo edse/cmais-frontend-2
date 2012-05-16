@@ -1006,7 +1006,7 @@
                   $('#btnIntegrante_'+i).click(function(){
                     $(this).next().toggle();
                   });
-                  $('.rg'+i).mask("99.999.999-9");
+                  //$('.rg'+i).mask("99.999.999-9");
                   $('.cpf'+i).mask("999.999.999-99");
                   $('.cep'+i).mask("99999-999");
                   $('.tel'+i).mask("(99) 9999-9999");
@@ -1219,21 +1219,21 @@
         
           
           <!--captcha-->
-          <div class="linha codigo" id="captchaimage">
-            
-            <label for="captcha">Confirma&ccedil;&atilde;o</label>
-            <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-              <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
-            </a>
-          </div>
-          
-          <div class="linha t7 m10">
-            Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:
-            <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-            <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
-            <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-          </div>
-          <!--captcha-->
+              <div class="linha codigo" id="captchaimage">
+                
+                <label for="captcha">Confirma&ccedil;&atilde;o</label>
+                <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                  <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                </a>
+              </div>
+              
+              <div class="linha t7 m10">
+                Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:
+                <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+              </div>
+              <!--captcha-->
     
               
               </form>
