@@ -639,7 +639,7 @@
         <!-- /DIREITA -->
         <!-- rodape preestreia-->
         <div class="grid3 apoio">
-          <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
+          <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />  
          </div>
          <!-- /rodape preestreia-->
         
@@ -732,7 +732,7 @@ $(document).ready(function(){
              minlength: 2
             },
             sexo:{
-              required: true,
+              required: true
             },
             rg:{
               required: true,
@@ -870,27 +870,7 @@ $(document).ready(function(){
               minlength: 2
             },
             regulamento:{
-              required: true,
-            },
-            /*
-            rgresp:{
-              required: true,
-            },
-            cpfresp:{
-              required: true,
-            },
-            nomeresp:{
-              required: true,
-              minlength: 2
-            },
-            naturalidaderesp:{
-              required: true,
-              minlength: 2
-            },
-            */
-            rg:{
-              required: true,
-              minlength: 2
+              required: true 
             },
             cpf:{
               required: true,
@@ -899,8 +879,12 @@ $(document).ready(function(){
             concursos:{
               required: true,
               minlength: 2
+            },
+            new_photo:{
+              required: true 
             }
           },
+          
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
             sexo: "Escolha obrigat&oacute;ria",
@@ -939,10 +923,6 @@ $(document).ready(function(){
             curriculo: "Campo obrigat&oacute;rio",
             captcha: "Campo obrigat&oacute;rio",
             regulamento: "Aceite obrigat&oacute;rio",
-            rgresp: "Campo obrigat&oacute;rio",
-            cpfresp: "Campo obrigat&oacute;rio",
-            nomeresp: "Campo obrigat&oacute;rio",
-            rg: "Campo obrigat&oacute;rio",
             cpf: "Campo obrigat&oacute;rio",
             naturalidaderesp: "Campo obrigat&oacute;rio",
             concursos: "Campo obrigat&oacute;rio"
