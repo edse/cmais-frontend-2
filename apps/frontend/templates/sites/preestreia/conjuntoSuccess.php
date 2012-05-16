@@ -1359,26 +1359,7 @@
           required: true,
           remote: "/portal/js/validate/demo/captcha/process.php"
         },
-        /*
-        nome_1:{
-          required: true,
-          minlength: 2
-        },
-        */
-        /*
-        responsavelmenor_1:{
-          required: true,
-          minlength: 2
-        },
-        rgmenor_1:{
-          required: true,
-          minlength: 2
-        },
-        cpfmenor_1:{
-          required: true,
-          minlength: 2
-        },
-        */
+        
         sexo_1:{
           required: true,
           minlength: 1
@@ -1439,12 +1420,7 @@
           required: true,
           minlength: 8
         },
-        /*
-        nome_2:{
-          required: true,
-          minlength: 2
-        },
-        */
+        
         sexo_2:{
           required: true,
           minlength: 1
@@ -1503,24 +1479,7 @@
         professor_2:{
           required: true
         },
-        /*
-        nome_3:{
-          required: true,
-          minlength: 2
-        },
-        responsavelmenor_2:{
-          required: true,
-          minlength: 2
-        },
-        rgmenor_2:{
-          required: true,
-          minlength: 2
-        },
-        cpfmenor_2:{
-          required: true,
-          minlength: 2
-        },
-        */
+        
         
         sexo_3:{
           required: true,
@@ -1580,20 +1539,7 @@
         professor_3:{
           required: true
         },
-        /*
-        responsavelmenor_3:{
-          required: true,
-          minlength: 2
-        },
-        rgmenor_3:{
-          required: true,
-          minlength: 2
-        },
-        cpfmenor_3:{
-          required: true,
-          minlength: 2
-        },
-        */
+        
         sugestao1:{
           required: true,
           minlength: 2
