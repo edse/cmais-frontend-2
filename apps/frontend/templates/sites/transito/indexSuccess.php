@@ -112,19 +112,7 @@ function isDevice(OSName)
               <div class="textoVerde grid1">
 
                 <p>CÂMERAS DE SÃO PAULO</p>
-                <form id="opcoes-livestream" action="" method="post">
-                  <select id="opcao-livestream-1" class="required">
-                    <option value="6">Av. Dummont Villares</option>
-                    <option value="8">Av. Pompéia</option>
-                    <option value="3">Av. Tiradentes</option> 
-                    <option value="5">Marginal Pinheiros - Estação Pinheiros</option>
-                    <option value="4">Marginal Pinheiros - Jockey Club</option>
-                    <option value="1" selected="selected">Marginal Tietê</option>
-                    <option value="2">Radial Leste X Salim Farah Maluf</option>
-                    <option value="7">Radial Leste - Metrô Tatuapé</option>
-                  </select> 
-                </form>
-
+                
                 <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
                 
                 <script>
