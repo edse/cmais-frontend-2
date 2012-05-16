@@ -1590,7 +1590,7 @@
           minlength: 2
         },
         regulamento:{
-          required: true,
+          required: true
         }
       },
       messages:{
