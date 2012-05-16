@@ -1591,6 +1591,9 @@
         },
         regulamento:{
           required: true
+        },
+        new_photo:{
+          required: true
         }
       },
       messages:{
