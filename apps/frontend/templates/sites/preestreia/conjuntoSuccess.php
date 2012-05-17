@@ -1357,7 +1357,7 @@
         },  
         captcha: {
           required: true,
-          minlength: 2,
+          minlength: 2
         },
         
         sexo_1:{
