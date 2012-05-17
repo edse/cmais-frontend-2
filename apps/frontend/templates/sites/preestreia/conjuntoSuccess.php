@@ -1681,7 +1681,7 @@
         anexofoto: "Este campo &eacute; Obrigat&oacute;rio.",
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.",
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
-        regulamento: "Este campo &eacute; Obrigat&oacute;rio.",
+        regulamento: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
         // set &nbsp; as text for IE
