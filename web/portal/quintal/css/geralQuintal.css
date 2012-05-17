@@ -102,9 +102,9 @@ hr{
 }
 /*cabe�alho*/
 .cabecalho{
-	float: left;
-	text-align: left;
-	width: 970px;
+  float: left;
+  text-align: left;
+  width: 990px;
 }
 .cabecalho .pontilhado{
 	background: url(../images/bg-pontilhado.png) no-repeat;
