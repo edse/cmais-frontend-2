@@ -1357,6 +1357,7 @@
         },  
         captcha: {
           required: true,
+          minlength: 4,
           remote: "/portal/js/validate/demo/captcha/process.php"
         },
         
