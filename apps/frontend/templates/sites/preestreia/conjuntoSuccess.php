@@ -1358,7 +1358,6 @@
         captcha: {
           required: true,
           minlength: 2,
-          remote: "/portal/js/validate/demo/captcha/process.php"
         },
         
         sexo_1:{
