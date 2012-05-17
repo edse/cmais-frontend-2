@@ -102,9 +102,9 @@ hr{
 }
 /*cabe�alho*/
 .cabecalho{
-	float: left;
-	text-align: left;
-	width: 970px;
+  float: left;
+  text-align: left;
+  width: 990px;
 }
 .cabecalho .pontilhado{
 	background: url(../images/bg-pontilhado.png) no-repeat;
@@ -130,86 +130,94 @@ hr{
 	float: left;
 }
 .cabecalho li a{
-	background: url(../images/btn-menu.png) no-repeat;
-	display: block;
-	height: 76px;
-	margin-right: 10px;
+  background: url(../images/btn-menu.png) no-repeat;
+  display: block;
+  height: 76px;
+  margin-right: 4px;
 }
 
 .cabecalho li a span{
-	float: left;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 52px 0 0 12px;
-	text-transform: uppercase;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 52px 0 0 12px;
+  text-transform: uppercase;
 }
 .cabecalho li a.jogos{
-	background-position: 0 0;
-	width: 76px;
+  background-position: 0 0;
+  width: 76px;
 }
 .cabecalho li a.videos{
-	background-position: 0 -152px;
-	width: 79px;
+  background-position: 0 -152px;
+  width: 79px;
 }
 .cabecalho li a.atividades{
-	background-position: 0 -1291px;
-	width: 112px;
+  background-position: 0 -1291px;
+  width: 112px;
 }
 .cabecalho li a.musica{
-	background-position: 0 -1446px;
-	width: 92px;
+  background-position: 0 -456px;
+  width: 80px;
+}
+.cabecalho li a.cultura{
+  background-position: 0 -1446px;
+  width: 92px;
 }
 .cabecalho li a.imagens{
-	background-position: 0 -608px;
-	width: 92px;
+  background-position: 0 -608px;
+  width: 92px;
 }
 .cabecalho li a.baixar{
-	background-position: 0 -760px;
-	width: 79px;
+  background-position: 0 -760px;
+  width: 79px;
 }
 .cabecalho li a.jogos:hover{
-	background-position: 0 -76px;
-	text-decoration:none;
+  background-position: 0 -76px;
+  text-decoration:none;
 }
 .cabecalho li a.videos:hover{
-	background-position: 0 -228px;
-	text-decoration:none;
+  background-position: 0 -228px;
+  text-decoration:none;
 }
 .cabecalho li a.atividades:hover{
-	background-position: 0 -1368px;
-	text-decoration:none;
+  background-position: 0 -1368px;
+  text-decoration:none;
 }
-.cabecalho li a.musica span{margin-left:20px}
 .cabecalho li a.musica:hover{
-	background-position: 0 -1526px;
-	text-decoration:none;
+  background-position: 0 -533px;
+  text-decoration:none;
+}
+.cabecalho li a.cultura span{margin-left:18px !important;}
+.cabecalho li a.cultura:hover{
+  background-position: 0 -1526px;
+  text-decoration:none;
 }
 .cabecalho li a.imagens:hover{
-	background-position: 0 -684px;
-	text-decoration:none;
+  background-position: 0 -684px;
+  text-decoration:none;
 }
 .cabecalho li a.baixar:hover{
-	background-position: 0 -836px;
-	text-decoration:none;
+  background-position: 0 -836px;
+  text-decoration:none;
 }
 .cabecalho a.paraPais{
-	background: url(../images/btn-cabecalho.png) no-repeat 0 -384px;
-	display: block;
-	float: left;
-	margin: 12px 0 0 30px;
-	width: 211px;
-	height: 64px;
+  background: url(../images/btn-cabecalho.png) no-repeat 0 -384px;
+  display: block;
+  float: left;
+  margin: 28px 0 0 0px;
+  width: 211px;
+  height: 64px;
 }
 .cabecalho a.paraPais:hover{
-	background-position: 0 -448px;
-	text-decoration:none;
+  background-position: 0 -448px;
+  text-decoration:none;
 }
 .cabecalho a.paraPais span{
-	float: left;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 17px 0 0 70px;
-	text-transform: uppercase;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 17px 0 0 70px;
+  text-transform: uppercase;
 }
 
 .cabecalho .fonte{

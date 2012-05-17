@@ -156,7 +156,7 @@
               
               <!--Integrante-1-->
               <a href="javascript:;" class="t7 titulo laranja" id="btnIntegrante_1">Integrante nº 01</a>
-              <div class="container-1" style="display: none;">
+              <div class="container-1" style="display: block;">
               <input type="hidden" name="integrante-1" value="integrante-1" />
                 
                 <!--Nome-1-->
@@ -360,7 +360,7 @@
                 
                 <!--Integrante-2-->
               <a href="javascript:;" class="t7 titulo laranja" id="btnIntegrante_2">Integrante nº 02</a>
-              <div class="container-2" style="display: none;">
+              <div class="container-2" style="display: block;">
               <input type="hidden" name="integrante-2" value="integrante-2" />  
                 <!--Nome-2-->
                 <div class="linha t5">
@@ -562,7 +562,7 @@
                 
               <!--Integrante-3-->
               <a href="javascript:;" class="t7 titulo laranja"  id="btnIntegrante_3">Integrante nº 03</a>
-              <div class="container-3" style="display: none;">
+              <div class="container-3" style="display: block;">
               <input type="hidden" name="integrante-3" value="integrante-3" />
                
                 <!--Nome-3-->
@@ -793,7 +793,7 @@
                     var new_field = '<div id="container-'+i+'">';
                     new_field += '<!--Integrante-'+i+'-->';
                     new_field += '<a href="javascript:;" class="t7 titulo laranja" id="btnIntegrante_'+i+'">Integrante nº 0'+i+'</a>';
-                    new_field += '<div style="display: none;">';
+                    new_field += '<div style="display: block;">';
                     new_field += '<input type="hidden" value="integrante-'+i+'" />';
                       
                     new_field += '<!--Nome-'+i+'-->';
@@ -1357,7 +1357,7 @@
         },  
         captcha: {
           required: true,
-          remote: "/portal/js/validate/demo/captcha/process.php"
+          minlength: 2
         },
         
         sexo_1:{
