@@ -1,0 +1,339 @@
+﻿<?xml version='1.0' ?>
+<muppets>
+<muppet name="Abelardo" colo="0xF68B1F" colot="0x000000">
+
+<carta>	<codigo>1</codigo><imagen>abelardo_1_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>	
+<prueba><![CDATA[
+Abelardo gosta de saltar, mas só pode saltar quatro vezes. Vamos saltar também?
+]]>
+</prueba>
+</carta>
+
+<carta>	<codigo>2</codigo><imagen>abelardo_2_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo e Elmo estão brincando de jogar o balão um para o outro sem deixar cair. Que tal tentar jogar com o seu amigo?
+Cuidado para não deixar o balão cair!
+]]></prueba>
+</carta>
+
+<!--<carta>	<codigo>3</codigo><imagen>abelardo_3_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>	
+<prueba><![CDATA[
+A Abelardo le gusta jugar a la carretilla con Pancho y dice que es muy divertido. 
+Qué tal si escoges a un amigo. Uno es la carretilla y el otro quien lo guía.  
+Con mucho cuidado llevas a tu amigo donde estén tus otros compañeros.
+]]></prueba>
+</carta>-->
+
+<!--<carta>	<codigo>4</codigo><imagen>abelardo_4_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo quiere que, organizados en grupos de tres, escojan verduras diferentes para preparar una ensalada. 
+Cada grupo le pone un nombre divertido a la ensalada que ha preparado.
+]]></prueba>
+</carta>-->
+
+<carta>	<codigo>5</codigo><imagen>abelardo_5_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo diz: O participante escolhido irá contar em segredo para o amigo ao lado o nome de um vegetal. O segredo deve ser dito na orelha do próximo companheiro, até que chegue ao último. Se a mensagem que chegar for a mesma do início, Abelardo diz: Parabéns!.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>6</codigo><imagen>abelardo_6_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo diz: Organizem-se em três equipes: azul, vermelho e amarelo. Depois respondam quais são os alimentos que só podem ser consumidos de vez em quando.
+]]></prueba>
+</carta>
+
+<!--<carta>	<codigo>7</codigo><imagen>abelardo_7_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo dice: Vamos a estirar los brazos y las piernas, alto y recto como una palmera. ¿Quién puede estirarse más alto?
+Luego vamos a mover el tronco de un lado a otro como si el viento sacudiera la palmera. ¿Quién puede estirarse más lejos?.
+]]></prueba>
+</carta>-->
+
+<!--<carta>	<codigo>8</codigo><imagen>abelardo_8_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo siente que después de correr, algo pasa con su corazón. 
+Hagan una carrera si están afuera, o salten si están en los salones. No importa quién gane. En parejas escuchen sus corazones. 
+¿Cómo se sienten? ¿Qué ocurre con tu corazón?
+]]></prueba>
+</carta>-->
+
+<carta>	<codigo>9</codigo><imagen>abelardo_9_a.png</imagen>
+<actividad>Atividade de habilidades onde todos ganham</actividad>
+<prueba><![CDATA[
+Abelardo disse que rir é saudável. Encontre um amigo que tente fazer você dar risada enquanto você segura o riso. É difícil segurar a risada?
+]]></prueba>
+</carta>
+
+
+</muppet>
+
+<muppet name="Elmo" colo="0xFFDD00" colot="0x000000">
+<!--<carta>	<codigo>1</codigo><imagen>elmo_1_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>
+<prueba><![CDATA[
+Elmo nos invita a jugar al muñeco de plastilina. Elige un compañero y deja que él mueva tus brazos, cabeza o piernas con mucho cuidado. ¡Invita a tus amigos también! 	
+]]></prueba>	
+</carta>-->
+
+<!--<carta>	<codigo>2</codigo><imagen>elmo_2_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	
+<prueba><![CDATA[
+Elmo quiere aprender a jugar a golosa o rayuela. (Nombre de la niña o niño) nos enseñará a jugar. Saltemos en dos pies, luego en un solo pie como lo hace (nombre de la niña o niño).	
+]]></prueba>	
+</carta>-->
+
+<!--<carta>	<codigo>3</codigo><imagen>elmo_3_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	
+<prueba><![CDATA[
+Elmo está aprendiendo a hacer círculos con la cintura. (Nombre del niño o la niña) nos enseñará como hacerlo.	
+]]></prueba>	
+</carta>-->
+
+<carta>	<codigo>4</codigo><imagen>elmo_4_a.png</imagen>	
+<actividad>Quem sorteou o cartão, lidera a atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Elmo está pensando na sua fruta favorita. (Nome da criança) irá nos dizer qual é sua fruta favorita e nos mostrará como descascar, cortar em pedaços,separar as sementes, espremer e saborear! Vamos imitá-lo!	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>5</codigo><imagen>elmo_5_a.png</imagen>	
+<actividad>Quem sorteou o cartão, lidera a atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Elmo quer adivinhar que fruta ou verdura o grupo está pensando. Para fazer isso ele pede ajuda a/ao (nome da criança) Para esta atividade, a criança sorteada deve sair da sala. Depois o grupo, em conjunto, escolhe uma fruta ou verdura. Quando (nome da criança) voltar, tem direito a fazer quatro perguntas: De que cor é? Que gosto tem? (doce ou ácido) Tem sementes ou caroço? Se come com ou sem casca?	
+]]></prueba>	
+</carta>
+
+<!--<carta>	<codigo>6</codigo><imagen>elmo_6_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	
+<prueba><![CDATA[
+Elmo dice que vamos por un campo sembrado de zanahorias. A cada paso te agachas a coger una. Primero con una mano y luego con la otra. Sigamos a (nombre de la niña o el niño) quien nos indicará el camino.	
+]]></prueba>	
+</carta>-->
+
+<!--<carta>	<codigo>7</codigo><imagen>elmo_7_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	
+<prueba><![CDATA[
+Dice Elmo: Todos seguiremos los movimientos de (nombre de la niña o del niño) para ponernos contentos. Movamos cabeza, troncos, manos y pies una y otra vez.	
+]]></prueba>	
+</carta>-->
+
+<!--<carta>	<codigo>8</codigo><imagen>elmo_8_a.png</imagen>	
+<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo	</actividad>	
+<prueba><![CDATA[
+Elmo dice que es tiempo de mover el esqueleto. Movamos la cabeza como lo hace (nombre de la niña o el niño). Ahora movamos los hombros como lo hace (nombre de la niña o el niño). Ahora movamos la cintura como lo hace (nombre de la niña o el niño). Ahora movamos los pies como lo hace (nombre de la niña o el niño). 	
+]]></prueba>	
+</carta>-->
+
+<carta>	<codigo>9</codigo><imagen>elmo_9_a.png</imagen>	
+<actividad>Quem sorteou o cartão, lidera a atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Vamos aprender a canção que o Elmo vai nos ensinar hoje. (Nome do menino ou da menina) vai nos ensinar a dançar enquanto cantamos. "Cabeças, ombros e pés, e todos aplaudem de uma vez". Podemos cantar e dançar cada vez mais rápido!	
+]]></prueba>	
+</carta>
+
+</muppet>
+<muppet name="Blas" colo="0xEF3A43" colot="0x000000">
+<carta>	<codigo>1</codigo><imagen>blas_1_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto quer saber qual é o jogo que você mais gosta e que faz o coração bater mais rápido?
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>2</codigo><imagen>blas_2_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto quer saber qual é o seu esporte favorito? Imite os movimentos desse esporte.	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>3</codigo><imagen>blas_3_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto quer saber o que você faz dentro de casa ou da escola quando chove lá fora.	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>4</codigo><imagen>blas_4_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto sabe que algumas comidas são muito saudáveis e por isso podemos comê-las todos os dias, mas ele se esqueceu quais são. Vamos ajuda-lo a se lembrar?
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>5</codigo><imagen>blas_5_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto quer dar frutas e verduras vermelhas de aniversário aos seus amigos. Quais ele pode comprar no mercado?	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>6</codigo><imagen>blas_6_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto sabe que alguns alimentos podemos comer todos os dias, e outros só de vez em quando. Quais são os alimentos que só podemos comer de vez em quando?	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>7</codigo><imagen>blas_7_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto quer saber quais são as partes do corpo? Comece pela cabeça e termine com os pés. 	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>8</codigo><imagen>blas_8_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto pergunta: você pode me mostrar onde está o seu coração?
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>9</codigo><imagen>blas_9_a.png</imagen>	
+<actividad>Atividade individual</actividad>	
+<prueba><![CDATA[
+Beto adora enigmas. Para jogar com ele, invente um enigma sobre uma parte do corpo e deixe seus amigos adivinharem qual é.	
+]]></prueba>	
+</carta>
+
+</muppet>
+<muppet name="Lola" colo="0xCFDD28" colot="0x000000">
+<!--<carta><codigo>1</codigo><imagen>lola_1_a.png</imagen>
+<actividad>Actividad que todos realizan al tiempo</actividad>
+<prueba><![CDATA[
+Lola dice que caminemos como un robot.<br>Cuanco digas "stop" nos quedamos quietos como si se nos hubieran acabado las pilas.<br><br>¿Quién puede permanecer quieta o quieto más tiempo?
+]]></prueba>
+</carta>-->
+
+<!--<carta>	<codigo>2</codigo><imagen>lola_2_a.png</imagen>	
+<actividad>Actividad que todos realizan al tiempo.</actividad>	
+<prueba><![CDATA[
+Lola dice: Mientras me arreglo las pestañas, movámonos como arañas. Una pestaña, dos pestañas …  hasta diez pestañas.	
+]]></prueba>	
+</carta>-->
+
+<!--<carta>	<codigo>3</codigo><imagen>lola_3_a.png</imagen>	
+<actividad>Actividad que todos realizan al tiempo.</actividad>	
+<prueba><![CDATA[
+¡Lola quere aprender a moverse con destreza como el animal que más le interesa!  Vamos todos a movernos como nuestros animales favoritos: aves, peces, gatos, monos, caballos, cangrejos.	
+]]></prueba>	
+</carta>-->
+
+<carta>	<codigo>4</codigo><imagen>lola_4_a.png</imagen>	
+<actividad>Atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Lola disse que nós vamos para uma ilha onde não existem frutas. Vamos levar frutas de presente? Cada um fala qual fruta quer levar, não pode repetir!
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>5</codigo><imagen>lola_5_a.png</imagen>	
+<actividad>Atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Quando a Lola falar "alface" nós movemos os braços como uma lagarta. Quando a Lola falar "espinafre" nós movemos as mãos como se tivéssemos um chocalho. Quando a Lola falar "cebola" todos pulam!	
+]]></prueba>	
+</carta>
+
+<!--<carta>	<codigo>6</codigo><imagen>lola_6_a.png</imagen>	
+<actividad>Actividad que todos realizan al tiempo.</actividad>	
+<prueba><![CDATA[
+Lola dice que tomar agua es muy importante. Entonces vamos a hacer un rio. Dos niñas o niños hacen un puente, los demas pasan una y otra vez por debajo contando: RONDA Pasa agüita, pasa agüita, cuando me la tomo ¡Qué rica!	
+]]></prueba>	
+</carta>-->
+
+<carta>	<codigo>7</codigo><imagen>lola_7_a.png</imagen>	
+<actividad>Atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Lola propõe que a gente imite o barulho do coração com alguma parte do nosso corpo. Que tal com as palmas das mãos? Ou com os pés batendo no chão?	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>8</codigo><imagen>lola_8_a.png</imagen>	
+<actividad>Atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Lola se diverte movimentando os pés e contanto até dez. Que tal brincarmos também?	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>9</codigo><imagen>lola_9_a.png</imagen>	
+<actividad>Atividade que todos realizam ao mesmo tempo</actividad>	
+<prueba><![CDATA[
+Lola disse que não tem nada melhor do que terminar o dia e ir dormir.Vamos encostar, contar dez respirações e sentir como nosso corpo relaxa e descansa.	
+]]></prueba>	
+</carta>
+
+</muppet>
+<muppet name="Epi" colo="0x4CC0EF" colot="0xffffff">
+<carta>	<codigo>1</codigo><imagen>epi_1_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio gosta de brincar de espelho com seu amigo Abelardo. Vamos brincar também? Encontre um amigo e fique parado na frente dele. Um faz um exercício físico e o espelho tem que fazer igual. Vai ser muito legal se você conseguir imitá-lo!
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>2</codigo><imagen>epi_2_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Beto e Ênio gostam de cantar e dançar. Escolha um amigo para dançar e cantar com você a sua música preferida!	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>3</codigo><imagen>epi_3_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Beto gosta de brincar de espelho com o seu amigo Ênio. Quer brincar também? Escolha uma dupla e pare em frente a ela. Um finge que está acabando de acordar e o outro tem que mover-se como ele. Será muito divertido se conseguir imitá-lo!	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>4</codigo><imagen>epi_4_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio conhece muito bem os seus amigos da Vila Sésamo. Será que você também? Feche os olhos e escolha três amigos que dirão o nome da sua verdura favorita. Você deverá adivinhar quem é o amigo quando escutar a sua voz. Todos devem ficar em silêncio para que ele consiga se concentrar e adivinhar.	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>5</codigo><imagen>epi_5_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio gosta de decorar a sua casa com quadros de frutas e verduras. Que tal buscar dois amigos e cada um desenha a fruta ou verdura que mais gosta? Depois podemos colar todos os desenhos na parede formando uma grande salada!	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>6</codigo><imagen>epi_6_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio diz: Organizem-se em grupos de três amigos, e procurem pela sala algo que se pareça com a fruta que mais gostam. Depois que pegarem, mostre para a turma e deixe que eles adivinhem qual fruta é.	
+]]></prueba>	
+</carta>
+<carta>	<codigo>7</codigo><imagen>epi_7_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio gosta de atuar. Vamos brincar de teatro? Escolha um amigo para ser o doutor, e vamos representar uma visita ao médico. Conte para ele como você está sentido o seu corpo. O doutor vai examinar o seu coração, a cabeça, os braços, as pernas, e vai te contar como você está.	
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>8</codigo><imagen>epi_8_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio diz: Procure um amigo e desenhe no ar um coração. Depois conte para ele como é seu coração.
+]]></prueba>	
+</carta>
+
+<carta>	<codigo>9</codigo><imagen>epi_9_a.png</imagen>	
+<actividad>Atividade em pares ou trios</actividad>	
+<prueba><![CDATA[
+Ênio está montando uma galeria de corações felizes. Procure mais dois amigos, desenhem os seus corações e depois exponham na galeria. Todos estarão ansiosos para ver a sua obra de arte.
+]]></prueba>	
+</carta>
+
+</muppet>
+</muppets>
+

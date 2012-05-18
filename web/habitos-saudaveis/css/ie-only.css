@@ -1,0 +1,169 @@
+******** RACKS IE GERAL********/
+.banner h2 a { _background-image:url(../images/logo-tv.gif); }
+#barra-portal h1 { _margin-left:-50px; }
+#barra-portal h1 a { _background-image:url(../images/logoCMAIS.gif); }
+#barra-portal { _border-bottom:none; }
+#menu-portal { _margin-left:0; }
+#menu-portal li a span { _background-image:url(../images/ico-drop.gif); }
+#menu-portal .m-musica {_width:70px}
+#menu-portal .m-educacao {_width:88px}
+#menu-portal .m-arte {_width:50px}
+#menu-portal .m-jornalismo {_width:97px}
+#menu-portal .m-infantil {_width:69px}
+#menu-portal .m-especiais {_width:87px}
+#menu-portal .menu-aberto .abas {_width:945px;}
+#menu-portal .tvcultura  { _width:92px; }
+#menu-portal .univesptv  { _width:99px; }
+#menu-portal .multicultura  { _width:101px; }
+#menu-portal .tvrtb { _width:126px;}
+#menu-portal .quintal  { _width:127px; }
+#menu-portal .radio-cb  { _width:159px; }
+#menu-portal .radio-fm  { _width:90px; }
+#menu-portal .radio-rtb { _width:155px; }
+#menu-portal .radio-cocorico  { _width:127px; }
+.barra-menu .busca-portal .ipt-txt { _background-image:url(../images/ico-lupa.gif); }
+#menu-portal .abas li { _margin-right:20px; }
+.abas li.ativo a {_background:none;}
+.abas li.ativo span { _display:none; }
+#menu-portal .compartilhe,
+#menu-portal .box-logo { _margin-left:0 }
+html>body .capa-voltar-topo,
+.capa-voltar-topo { *margin-left:-120px; }
+#menu-portal .editorias { _margin-left:-50px; }
+#rodape-portal .copyright {  *padding:0;  }
+#rodape-portal .col-esq { _margin-left:10px;}  
+#rodape-portal .col-dir .fpa { _background-image: url(../images/logo-fpa.gif); }
+#rodape-portal .col-dir .cultura {  _background-image:url(../images/logo-tvcultura.gif); }
+#menu-portal .menu-aberto .abas .neutro:hover span,
+#menu-portal .menu-aberto .abas .neutro span {_background-image:url(../images/detalhe-menu.gif);}
+#menu-portal .menu-aberto .botoes a {*width:202px;}
+/******** / RACKS IE GERAL ********/
+
+/******** RACKS IE TV CULTURA *******/
+/**/
+html>body .box-lateral { *margin-left:-40px; }
+.box-lateral li a { *background-image:url(../images/barra-lateral.gif) !important; }
+html>body .box-lateral li a { *background-image:url(../images/barra-lateral.gif) !important; }
+#chamada { *margin-left:65px; }
+#chamada { _margin-left:30px; }
+#barra-site {*margin-left:10px;}
+#barra-site .redes ul li a { _background-image:url(../images/ico-compartilhar.gif); }
+.menu-interna .m-videos { _width:50px; }
+.menu-interna .m-fotos { _width:40px; }
+.menu-interna .m-charges { _width:60px; }
+.menu-interna .m-galeria { _width:120px; }
+.menu-interna .m-agenda { _width:63px; }
+.menu-interna .m-noticias { _width:55px; }
+.menu-interna .m-blog { _width:44px; }
+.menu-interna .m-sobre { _width:120px; }
+.menu-interna .m-fale { _width:90px; }
+.menu-interna .m-aovivo { _width:50px; }
+.menu-interna .m-episodios { _width:62px; }
+.menu-interna .m-diario { _width:146px; }
+.menu-interna .m-personagens { _width:82px; }
+.menu-interna .m-temporada { _width:89px; }
+.menu-interna .m-360 { _width:35px; }
+.menu-interna a span { _background-image:url(../images/ico-drop2.gif); }
+.box-lateral { *margin-left:-40px; }
+.box-lateral { _display:none !important; }
+.box-listao span { _background-image:url(../images/ico-noticia.gif) }
+.box-topo h5 { _width:200px; }
+.box-listao { *margin-bottom:20px;} 
+.box-listao .box-texto a { _width:630px; }
+.pag-bola { _width:90px; }
+.pag-bola li a { _background-image:url(../images/pag-ball.gif); }
+.pag-escura .pag-bola li a { _background-image:url(../../images/pag-ball.gif); }
+.box-padrao .btn { _background-image:url(../images/btn-paginacao.gif); }
+.box-borda .conteudo ul,
+.box-borda .conteudo ol,
+.box-borda .conteudo .txt-padrao { _padding-top:0; _margin-top:30px }
+.box-borda .detalhe-borda { _background-image: url(../images/detalhe-borda.gif); }
+#datepicker .ui-widget-header { _margin-left:0; }
+.filtrar select { _width:260px; }
+.filtrar input { _height:22px; }
+.box-padrao .posts h5 { _width:310px; }
+.para-ouvir a { _background-image: url(../images/btn-play.gif); }
+.topo span { _background-image:url(../images/aba-titulo.gif); }
+.contato form .t1,
+.contato form .t1 label,
+.contato form .t1 input { _width:457px; }
+.calendario-escuro .txt-12 { _width:860px; }
+.lista-calendario .grade { _min-height:300px; }
+.lista-calendario .escura .botao { _background-image:url(../images/ico-drop.gif); }
+.paginacao a { _background-image:url(../../images/btn-paginacao.gif) }
+.menu2 #lista-destaques a,
+.blocos li a.bg { _background-image:url(../../images/btn-play.gif); }
+#box-infantil .btn-barra a { _width:256px; }
+#box-infantil .carrossel .jcarousel-next{ _background-image: url(../images/ico-spriteSeta.gif); }
+#box-infantil .carrossel .jcarousel-prev{ _background-image: url(../images/ico-spriteSeta.gif); }
+#menu-rodape .abas { _background:#333; _height:28px; }
+#menu-rodape .abas .minha-cultura { _width:135px; }
+#menu-rodape .abas .musica  { _width:75px; }
+#menu-rodape .abas .jornalismo { _width:112px; }
+#menu-rodape .abas .educacao { _width:99px; }
+#menu-rodape .abas .infantil { _width:82px; }
+#menu-rodape .abas .arte-cultura { _width:139px; }
+#menu-rodape .abas .especiais { _width:92px; }
+#menu-rodape .abas .juvenil { _width:79px; }
+#menu-rodape .abas .tvcultura { _width:108px; }
+#menu-rodape .abas .univesptv { _width:101px; }
+#menu-rodape .abas .multicultura { _width:120px; }
+#menu-rodape .abas .tvrtb { _width:127px; }
+.blocos ul { *margin-top:20px;} 
+.carrossel{ *margin-left:-30px; }
+.carrossel .jcarousel-next,
+.carrossel .jcarousel-prev { *bottom:-10px;}
+
+html>body .carrossel .jcarousel-next,   
+html>body .carrossel .jcarousel-prev { *bottom:-9px;  }
+
+html>body .carrossel .jcarousel-next { *right:0px; }
+html>body .carrossel .jcarousel-prev { *right:20px; }
+
+.carrossel .musica,
+.carrossel .jornalismo,
+.carrossel .educacao,
+.carrossel .infantil,
+.carrossel .arte,
+.carrossel .especiais,
+.carrossel .juvenil,
+#menu-rodape .abas .programas { _width:111px;}  
+#menu-rodape .abas .recentes {  _width:106px; }
+#menu-rodape .abas .tv {  _width:65px; }
+#menu-rodape .abas .radio {  _width:65px; }
+.carrossel .minha-cultura,
+.carrossel .programas,
+.carrossel .recentes { _margin:0;}
+#menu-rodape #logos .blocos,
+#menu-rodape #logos .carrossel { *height:200px;}  
+#menu-rodape #logos .carrossel .jcarousel-next {*right:-5px; *bottom:0;   }
+#menu-rodape #logos .carrossel .jcarousel-prev {*right:16px; *bottom:0;}
+#menu-rodape .neutro { _width:75px;} 
+.submenu-interna {*width:150px;}
+.filtrar select {*width:260px;}
+.box-interna .cp-sembg {_width:200px;}
+.assinatura .inf { _width:350px; }
+.ytb-direct {*height:400px;}
+.box-borda .bg-branco {_margin-top:30px;}
+#barra-site {*margin-left:10px;}
+.box-padrao .rss { *background-image:url(../images/rss.gif); }
+.uma-coluna .pag-bola {*margin-left:10px;}
+.pag-bola li { *float:left; *margin-right:5px;}
+.box-listao .box-texto {_width:530px; float:left;}
+/******** /RACKS IE TVCULTURA *******/
+
+/******** BROWSER ********/
+#browser { background:#fce1be; height:68px; overflow:hidden;}
+#browser .conteudo-browser { width:1054px; margin:0 auto; }
+#browser .mensagem {margin-top:16px; width:490px; float:left; text-align:left; margin-left:42px;}
+#browser  p {font-size:14px;}
+#browser .bold { font-weight:bold;}
+#browser ul {width:486px; float:right; margin-top:16px;}
+#browser ul li { float:left; margin-left:16px;}
+#browser ul a {background:url(../images/browser.gif) no-repeat; width:143px; height:34px; border:1px solid #f1b8a4; display:block;}
+#browser ul .firefox {background-position:0 -34px;}
+#browser ul .explorer {background-position:0 -68px;}
+/******** /BROWSER ********/
+
+#barra-portal h1 { _margin-left:0px; }
+.facebook { _margin-left:0 !important; }

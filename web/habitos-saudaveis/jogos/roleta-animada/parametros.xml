@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' ?>
+<parametros>
+<parametro name="idioma">
+<idioma lan="portugues" carpeta="portugues" logo="portugues_logo.png" carga="carregamento de dados ..."></idioma>
+</parametro>
+<parametro name="intromusic">
+<music song="sesame.mp3">
+</parametro>
+</parametros>
+

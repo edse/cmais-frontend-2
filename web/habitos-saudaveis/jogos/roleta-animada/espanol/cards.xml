@@ -1,0 +1,134 @@
+﻿<?xml version='1.0' ?>
+<muppets>
+<muppet name="Abelardo" colo="0xF68B1F" colot="0x000000">
+
+<carta>	<codigo>1</codigo><imagen>abelardo_1_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>	
+<prueba><![CDATA[
+A Abelardo le gusta saltar, pero solo ha podido hacerlo cuatro veces seguidas.
+¿Qué tal si le ganamos?.
+]]>
+</prueba>
+</carta>
+
+<carta>	<codigo>2</codigo><imagen>abelardo_2_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo juega con Elmo a lanzarse un globo sin dejarlo caer.
+Juega con tu amigo.
+¡Cuidado no lo dejes caer!.	
+]]></prueba>
+</carta>
+
+<carta>	<codigo>3</codigo><imagen>abelardo_3_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>	
+<prueba><![CDATA[
+A Abelardo le gusta jugar a la carretilla con Pancho y dice que es muy divertido. 
+Qué tal si escoges a un amigo. Uno es la carretilla y el otro quien lo guía.  
+Con mucho cuidado llevas a tu amigo donde estén tus otros compañeros.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>4</codigo><imagen>abelardo_4_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo quiere que, organizados en grupos de tres, escojan verduras diferentes para preparar una ensalada. 
+Cada grupo le pone un nombre divertido a la ensalada que ha preparado.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>5</codigo><imagen>abelardo_5_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelado dice: El participante dirá en secreto a su compañero del lado el nombre de una verdura.
+El secreto debe contarse al oido del siguiente compañero. 
+Hasta que llegue el mensaje a la última niña o niño, quién dirá en voz alta cuál fue el mensaje que escuchó. Si no se equivocan Abelardo les felicitará.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>6</codigo><imagen>abelardo_6_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo dice: Organiza tres equipos: azul, rojo y amarillo.
+Luego pregúntales sobre los alimentos que solo se comen de vez en cuando.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>7</codigo><imagen>abelardo_7_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo dice: Vamos a estirar los brazos y las piernas, alto y recto como una palmera. ¿Quién puede estirarse más alto?
+Luego vamos a mover el tronco de un lado a otro como si el viento sacudiera la palmera. ¿Quién puede estirarse más lejos?.
+]]></prueba>
+</carta>
+
+<carta>	<codigo>8</codigo><imagen>abelardo_8_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo siente que después de correr, algo pasa con su corazón. 
+Hagan una carrera si están afuera, o salten si están en los salones. No importa quién gane. En parejas escuchen sus corazones. 
+¿Cómo se sienten? ¿Qué ocurre con tu corazón?
+]]></prueba>
+</carta>
+
+<carta>	<codigo>9</codigo><imagen>abelardo_9_a.png</imagen>
+<actividad>Actividad de competencias donde todos ganan.</actividad>
+<prueba><![CDATA[
+Abelardo dice que reírse es saludable. Busquen un amigo que los haga reir, mientras ustedes aguantan la risa.
+¡Qué no te hagan reir!
+]]></prueba>
+</carta>
+
+
+</muppet>
+
+<muppet name="Elmo" colo="0xFFDD00" colot="0x000000">
+<carta>	<codigo>1</codigo><imagen>elmo_1_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo nos invita a jugar al muñeco de plastilina. Elige un compañero y deja que él mueva tus brazos, cabeza o piernas con mucho cuidado. ¡Invita a tus amigos también! 	]]></prueba>	</carta>
+<carta>	<codigo>2</codigo><imagen>elmo_2_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo quiere aprender a jugar a golosa o rayuela. (Nombre de la niña o niño) nos enseñará a jugar. Saltemos en dos pies, luego en un solo pie como lo hace (nombre de la niña o niño).	]]></prueba>	</carta>
+<carta>	<codigo>3</codigo><imagen>elmo_3_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo está aprendiendo a hacer círculos con la cintura. (Nombre del niño o la niña) nos enseñará como hacerlo.	]]></prueba>	</carta>
+<carta>	<codigo>4</codigo><imagen>elmo_4_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo está pensando en su fruta favorita. (Nombre de la niña o del niño) nos dirá cuál es su fruta favorita y nos mostrará como pelarla, cortarla en trocitos, separar los gajos, exprimirla y disfrutarla. ¡Imitemos todos!	]]></prueba>	</carta>
+<carta>	<codigo>5</codigo><imagen>elmo_5_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo quiere adivinar en que fruta o verdura está pensando el grupo. Para hacerlo pide la ayuda de (nombre de la niña o el niño). Para esta actividad, la niña o el niño seleccionado debe salir del salón, mientras el grupo se pone de acuerdo en la fruta o verdura. Al entrar tiene la posibilidad de hacer cinco preguntas como: ¿De qué color es?  ¿Cómo es su sabor: dulce o ácido?  ¿Tiene semillas o pepitas?  ¿Se come con o  sin cáscara? ¿Es de tierra o de tierra fría?	]]></prueba>	</carta>
+<carta>	<codigo>6</codigo><imagen>elmo_6_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Elmo dice que vamos por un campo sembrado de zanahorias. A cada paso te agachas a coger una. Primero con una mano y luego con la otra. Sigamos a (nombre de la niña o el niño) quien nos indicará el camino.	]]></prueba>	</carta>
+<carta>	<codigo>7</codigo><imagen>elmo_7_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo.	</actividad>	<prueba><![CDATA[Dice Elmo: Todos seguiremos los movimientos de (nombre de la niña o del niño) para ponernos contentos. Movamos cabeza, troncos, manos y pies una y otra vez.	]]></prueba>	</carta>
+<carta>	<codigo>8</codigo><imagen>elmo_8_a.png</imagen>	<actividad>Quien escogió la tarjeta, lidera una actividad que todos realizan al tiempo	</actividad>	<prueba><![CDATA[Elmo dice que es tiempo de mover el esqueleto. Movamos la cabeza como lo hace (nombre de la niña o el niño). Ahora movamos los hombros como lo hace (nombre de la niña o el niño). Ahora movamos la cintura como lo hace (nombre de la niña o el niño). Ahora movamos los pies como lo hace (nombre de la niña o el niño). 	]]></prueba>	</carta>
+<carta>	<codigo>9</codigo><imagen>elmo_9_a.png</imagen>	<actividad>Quien escogió la targeta, lidera una actividad que todos realizan al tiempo	</actividad>	<prueba><![CDATA[Aprendamos la canción que Elmo nos enseña hoy. (Nombre de la niña o el niño) nos enseñará como movernos mientras cantamos. "Cabeza, hombros y pies y todos aplaudimos a la vez". Podemos bailar y cantar cada vez más rápido.	]]></prueba>	</carta>
+
+</muppet>
+<muppet name="Blas" colo="0xEF3A43" colot="0x000000">
+<carta>	<codigo>1</codigo><imagen>blas_1_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas quiere saber ¿Cuál es el juego que más te gusta y te hace saltar el corazón?.	]]></prueba>	</carta>
+<carta>	<codigo>2</codigo><imagen>blas_2_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas quiere saber ¿cuál es tu deporte favorito? Imita los movimientos de este deporte.	]]></prueba>	</carta>
+<carta>	<codigo>3</codigo><imagen>blas_3_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas quiere saber lo qué vas a hacer dentro de casa o en la escuela  cuando llueve afuera.	]]></prueba>	</carta>
+<carta>	<codigo>4</codigo><imagen>blas_4_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas sabe que algunas comidas son muy sanas y las podemos comer todos los días, pero ha olvidado cuáles son ¿Se las podrías recordar?	]]></prueba>	</carta>
+<carta>	<codigo>5</codigo><imagen>blas_5_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas quiere regalar frutas y verduras rojas de cumpleaños a sus amigos. ¿cuáles podría comprar en el mercado?	]]></prueba>	</carta>
+<carta>	<codigo>6</codigo><imagen>blas_6_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas sabe que algunos alimentos se deben comer todos los días y otros de vez en cuando. Recuérdanos algunos alimentos que puedes comer de vez en cuando.	]]></prueba>	</carta>
+<carta>	<codigo>7</codigo><imagen>blas_7_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas quiere saber ¿cuáles son las partes del cuerpo? Empieza por la cabeza y acaba por los pies. 	]]></prueba>	</carta>
+<carta>	<codigo>8</codigo><imagen>blas_8_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[Blas pregunta: ¿puedes mostrarme dónde está tu corazón?	]]></prueba>	</carta>
+<carta>	<codigo>9</codigo><imagen>blas_9_a.png</imagen>	<actividad>Actividad individual.</actividad>	<prueba><![CDATA[A Blas le encantan las adivinanzas. Para jugar como él, inventa una adivinanza sobre una parte del cuerpo deja que tus amigos adivinen cuál es.	]]></prueba>	</carta>
+
+</muppet>
+<muppet name="Lola" colo="0xCFDD28" colot="0x000000">
+<carta><codigo>1</codigo><imagen>lola_1_a.png</imagen><actividad>Actividad que todos realizan al tiempo</actividad><prueba><![CDATA[Lola dice que caminemos como un robot.<br>Cuanco digas "stop" nos quedamos quietos como si se nos hubieran acabado las pilas.<br><br>¿Quién puede permanecer quieta o quieto más tiempo?]]></prueba></carta>
+<carta>	<codigo>2</codigo><imagen>lola_2_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola dice: Mientras me arreglo las pestañas, movámonos como arañas. Una pestaña, dos pestañas …  hasta diez pestañas.	]]></prueba>	</carta>
+<carta>	<codigo>3</codigo><imagen>lola_3_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[¡Lola quere aprender a moverse con destreza como el animal que más le interesa!  Vamos todos a movernos como nuestros animales favoritos: aves, peces, gatos, monos, caballos, cangrejos.	]]></prueba>	</carta>
+<carta>	<codigo>4</codigo><imagen>lola_4_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola dice que nos vamos para una isla donde no conocen las frutas.  Llevaremos frutas de regalo.  Cada quién diga la fruta que va a llevar sin que se repitan.	]]></prueba>	</carta>
+<carta>	<codigo>5</codigo><imagen>lola_5_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Cuando Lola dice "lechuga" movamos el brazo izquierdo como una oruga.  Cuando Lola dice "espinaca" movamos las manos como tocando las maracas. Cuando Lola dice "cebolla" se acurrucan y se enrollan.	]]></prueba>	</carta>
+<carta>	<codigo>6</codigo><imagen>lola_6_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola dice que tomar agua es muy importante. Entonces vamos a hacer un rio. Dos niñas o niños hacen un puente, los demas pasan una y otra vez por debajo contando: RONDA Pasa agüita, pasa agüita, cuando me la tomo ¡Qué rica!	]]></prueba>	</carta>
+<carta>	<codigo>7</codigo><imagen>lola_7_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola propone que todos imitemos el sonido del corazón con alguna parte de nuestro cuerpo. ¿Qué tal con las palmas de las manos? O ¿Con las palmas de los pies?	]]></prueba>	</carta>
+<carta>	<codigo>8</codigo><imagen>lola_8_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola se divierte moviendo los pies mientra cuenta hasta diez. ¿qué tal si lo hazemos nosotros también?	]]></prueba>	</carta>
+<carta>	<codigo>9</codigo><imagen>lola_9_a.png</imagen>	<actividad>Actividad que todos realizan al tiempo.</actividad>	<prueba><![CDATA[Lola dice que al terminar el dia no hay nada mejor que dormir. Recostémonos, contemos hasta diez respiraciones y vamos a sentir como nuestro cuerpo descansa y se relaja.	]]></prueba>	</carta>
+
+</muppet>
+<muppet name="Epi" colo="0x4CC0EF" colot="0xffffff">
+<carta>	<codigo>1</codigo><imagen>epi_1_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[A Epi le gusta jugar al espejo con su amigo Abelardo ¿qué tal si jugamos tambien? Busca un amigo y parate al frente de él. Uno hará ejercicio físico y quien sea el espejo deberá moverse como lo haga el otro. ¡Será muy divertido si logras imitarlo!	]]></prueba>	</carta>
+<carta>	<codigo>2</codigo><imagen>epi_2_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[A Epi y a Blas les gusta cantar y bailar. Únete a dos amigos para cantar y bailar como dice la canción. "Muévete y come bien, dale tun tun a tu corazón"  En esta fiesta Mi corazón suena como un tambor Tun tun tun Así cuenta qué tan bien estoy.	]]></prueba>	</carta>
+<carta>	<codigo>3</codigo><imagen>epi_3_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[A Epi le gusta jugar al espejo con su amigo Elmo ¿qué tal si jugamos también? Busca un amigo y párate al frente de él. Uno hara como cuando se levanta en la mañana y quien sea el espejo deberá moverse como hace el otro. ¡Será muy divertido si logras imitarlo!	]]></prueba>	</carta>
+<carta>	<codigo>4</codigo><imagen>epi_4_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[Epi conoze muy bien a sus amigos de Barrio Sésamo. ¡Veamos si tú también! Cierra los ojos.  Yo escogeré tres amigos que dirán el nombre de su verdura favorita. Tú deberás adivinar quienes son cuando escuchas sus voces. Todos los demás en silencio que debe concentrarse  para adivinar.	]]></prueba>	</carta>
+<carta>	<codigo>5</codigo><imagen>epi_5_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[A Epi le gusta decorar su casa de cuadros de frutas y verduras. Qué tal si buscas dos amigos para que cada uno dibuje la fruta o verdura que mas le gusta. Luego, las pegan en la pared y forman una ensalada.	]]></prueba>	</carta>
+<carta>	<codigo>6</codigo><imagen>epi_6_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[Epi dice: Organicen un grupo de tres amigos, luego busquen en el salón algo que se parezca a la fruta que más les gusta. Cuando la tengan, muéstrenla a los demás y dejen que adivinen qué fruta es.	]]></prueba>	</carta>
+<carta>	<codigo>7</codigo><imagen>epi_7_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[A Epi le encanta actuar. Escoge un amigo representa la visita del doctor, cuéntale cómo sientes todo tu cuerpo. El doctor revisará tu corazón y cabeza, tus brazos y piernas y te contará cómo estás.	]]></prueba>	</carta>
+<carta>	<codigo>8</codigo><imagen>epi_8_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[Epi dice: Busca un amigo y dibújale con tu dedo magico el corazón. Luego cuéntale como suena su corazón.	]]></prueba>	</carta>
+<carta>	<codigo>9</codigo><imagen>epi_9_a.png</imagen>	<actividad>Actividad para parejas o trios.</actividad>	<prueba><![CDATA[Epi está montando la galería de corazones felices. Busca dos amigos más i pinten su corazón. Déspues expongan los dibujos en la galería. Los demás estarán ansiosos por ver la obra artística.	]]></prueba>	</carta>
+
+</muppet>
+</muppets>
+
