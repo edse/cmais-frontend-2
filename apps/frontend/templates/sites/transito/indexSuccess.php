@@ -373,9 +373,16 @@ function isDevice(OSName)
                        
                        <!--Mapa-->
                        <div class="container-camera">
-                       <div class="conteudo-camera-ao-vivo">  
-                       <div id="rodovias">
                          
+                       <div class="conteudo-camera-ao-vivo"> 
+                          
+                       <div id="rodovias">
+                          
+                          <!--facebook--> 
+                          <div class="cont-direita">
+                            <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>     
+                          </div>
+                          <!--/facebook-->  
                           <div id="legendas-ruas"></div>
                           
                           <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
@@ -876,11 +883,13 @@ function isDevice(OSName)
                       
                     </div>
                   </div>
+                  <!--facebook-->
                   
                   <!-- Máscara para cobrir a tela -->
                     <div id="mask"></div>
                  
                  </div>
+                 
                            <!--/MODAl CAMERA Corre-->                          <!--/MODAIS--> 
                           
                        </div>
@@ -897,15 +906,12 @@ function isDevice(OSName)
                        <iframe width="970" height="880" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 0px solid gray; width: 964px;height:880px;"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
+                     
 
                   </ul>
                   <!--CONTEUDOS --> 
                   
-                  <!--facebook-->
-                  <div class="cont-direita">
-                    <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>     
-                  </div>
-                  <!--/facebook-->       
+                       
               </div>
               <!-- MENU E OPÇÕES--> 
             
