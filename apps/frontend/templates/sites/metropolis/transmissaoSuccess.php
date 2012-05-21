@@ -1,0 +1,269 @@
+<?php
+/*
+header("Location: http://tvcultura.cmais.com.br/metropolis");
+die();
+
+if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
+  header('Location: http://tvcultura.cmais.com.br/metropolis/bastidores');
+  die();
+}
+ */
+?>
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+
+<?php
+  $episode = Doctrine_Query::create()
+    ->select('a.*')
+    ->from('Asset a, AssetEpisode ae')
+    ->where('a.id = ae.asset_id')
+    ->andWhere('a.site_id = ?', (int)$site->id)
+    ->andWhere('a.asset_type_id = 15')
+    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+    ->limit(1)
+    ->orderBy('a.id desc')
+    ->execute();
+  if(!isset($asset))
+  	$asset = $episode[0];
+?>
+
+<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<script>
+
+  //TIMER TRANSMISSAO
+  function timer1(){
+    var request = $.ajax({
+      data: {
+        asset_id: '32782',
+        url_out: 'http://tvcultura.cmais.com.br/metropolis'
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        eval(data);
+      },
+      url: '/ajax/timer'
+    });
+  }
+  $(window).load(function(){
+    var t=setInterval("timer1()",60000);
+  });
+
+  function stream1() {
+    var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+    so.addVariable('controlbar', 'bottom');
+    so.addVariable('autostart', 'true');
+    so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+    so.addVariable('file', 'tv');
+    so.addVariable('type', 'video');
+    so.addParam('allowscriptaccess','always');
+    so.addParam('allowfullscreen','true');
+    so.addParam('wmode','transparent');
+    so.write('boxVideoWrapper');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_tv').addClass('ativo');
+  }
+
+  function stream2() {
+    var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+    so.addVariable('controlbar', 'bottom');
+    so.addVariable('autostart', 'true');
+    so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+    so.addVariable('file', 'eventual');
+    so.addVariable('type', 'video');
+    so.addParam('allowscriptaccess','always');
+    so.addParam('allowfullscreen','true');
+    so.addParam('wmode','transparent');
+    so.write('boxVideoWrapper');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_exclusiva').addClass('ativo');
+  }
+
+  function stream3() {
+    $('#boxVideoWrapper').html('<iframe src="http://www.ustream.tv/embed/9564814" width="640" height="364" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_ustream').addClass('ativo');
+  }
+
+  function stream4() {
+    $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://cdn.livestream.com/embed/tvculturanaweb?layout=4&amp;height=364&amp;width=640&amp;autoplay=false" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe>');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_livestream').addClass('ativo');      
+  }
+
+  function stream5() {
+    $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_youtube').addClass('ativo');  
+  }
+
+  function updateTweets() {
+    $.ajax({
+      url: "/ajax/tweetmonitor",
+      data: "monitor_id=4",
+      success: function(data) {
+        $('#twitter').html(data);
+      }
+    });
+  }
+  
+  function isDevice(OSName)
+  {
+    var system = navigator.appVersion.toLowerCase(); // get local system values
+	var OSName = OSName.toLowerCase(); // put parameter value to lowecase
+	 
+	// put some parameters value in standard names
+	if (OSName == "macos") OSName = "mac";
+	if (OSName == "windows") OSName = "win";
+	if (OSName == "unix") OSName = "x11";
+	   
+	if (system.indexOf(OSName) != -1)
+    	return true;
+    else
+    	return false;
+  }
+  
+  jQuery(document).ready(function() {
+    updateTweets();
+    var t=setInterval("updateTweets()",60000);
+    
+    if (isDevice('ipad') || isDevice('iphone') || isDevice('ipod') || isDevice('Android'))
+      stream3();
+    else
+      stream1();
+
+  });
+</script>
+
+    
+    <!-- CAPA SITE -->
+	<div class="bg-metropolis">
+    <div id="capa-site">
+
+      <!-- BREAKING NEWS -->
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+      <!-- /BREAKING NEWS -->
+      
+      <!-- BARRA SITE -->
+      <div id="barra-site">
+	  	<div class="topo-programa">
+	  	  <?php if(isset($program) && $program->id > 0): ?>
+		  <h2>
+		    <a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>">
+		      <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/uploads/programs/<?php echo $program->getImageThumb() ?>">
+		    </a>
+		  </h2>
+		  <?php endif; ?>
+		  
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <!-- horario -->
+          <div id="horario">
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          </div>
+          <!-- /horario -->
+          <?php endif; ?>
+		</div>
+		<div class="box-topo grid3">
+          <?php if(count($siteSections) > 0): ?>
+          <ul class="menu">
+            <?php foreach($siteSections as $s): ?>
+				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><span><?php echo $s->getTitle() ?></span></a></li>
+			<?php endforeach; ?>
+          </ul>
+          <?php endif; ?>
+		</div>
+		<!-- /box-topo -->
+	</div>
+      <!-- /BARRA SITE -->
+      <!-- MIOLO -->
+      <div id="miolo">
+      	
+        <!-- BOX LATERAL -->
+        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <!-- BOX LATERAL -->
+      	
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina exceptionn">
+          <!-- CAPA -->
+          <div class="capa grid3 exceptionn">
+          	<div class="tudo-metropolis">
+          		<span class="bordaTopRV"></span>
+          		<div class="centroRV">
+          			<div class="transmissaoH">
+          				<ul>
+          					<li><a href="javascript: stream1();" id="stream_tv" title="TV Cultura"><span>TV Cultura</span></a></li>
+          					<li><a href="javascript: stream2();" id="stream_exclusiva" title="Câmera exclusiva"><span>Câmera exclusiva</span></a></li>
+          					<li><a href="javascript: stream3();" id="stream_ustream" title="UStream"><span></span></a></li>
+          					<li><a href="javascript: stream4();" id="stream_livestream" title="LiveStream"><span></span></a></li>
+          					<li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
+          				</ul>
+          				<div class="boxVideo">
+          					<script type="text/javascript">
+          						timer1();
+          					</script>
+          					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
+		                    <span class="faixa"></span>
+		                    <h3><?php echo $asset->getTitle() ?></h3>
+		                    <p><?php echo $asset->getDescription() ?></p>
+		                    <br />
+		                    <?php include_partial_from_folder('sites/metropolis','global/share-2c') ?>
+          				</div>
+          			</div>
+          			
+          			<div class="chat">
+          				<?php if(isset($displays['chat'])): ?>
+          				<p class="btn-chat"><span>Chat</span></p>
+          				<div class="covert">
+					      <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>          					
+          				</div>
+          				<?php endif; ?>
+          				<div class="repercussao">
+          					<h2><span>Repercussão</span></h2>
+          					<div class="grid1">
+			                  <div id="twitter">
+								<!--
+								<div class="topo-fb"><h3>#metropolis</h3></div>
+								<ul style="overflow-x: hidden; overflow-y: auto;">
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+								</ul>
+								<div class="respiro"></div>
+								-->
+			                  </div>
+			            	</div>
+          				</div>
+          			</div>
+          		</div>
+          		<span class="bordaBottomRV"></span>
+          	</div>
+          </div>
+        
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+
+      </div>
+      <!-- /MIOLO -->
+
+    </div>
+    </div>
+    <!-- / CAPA SITE -->
+
+
