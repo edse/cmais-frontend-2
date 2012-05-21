@@ -26,7 +26,7 @@ class _assetActions extends sfActions
       // asset
       $this->asset = $request->getParameter('object');
 			
-			if ($this->asset->getIsActive() != '1'){
+			if ($this->asset->getIsActive() != '1' && $this->asset->Site->getType() != "Programa TVRTB"){
 				header("Location: ".$this->asset->Site->retriveUrl());
 				die();
 			}
