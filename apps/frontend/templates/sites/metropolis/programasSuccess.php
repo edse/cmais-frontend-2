@@ -176,7 +176,7 @@ $apresentador = Doctrine_Query::create()
 		                  			$day = substr($d->getTitle(),6,2);
 														$title = "Programa exibido em " . $day . "/" . $month . "/" . $year;
 													}
-													elseif (preg_match("/^[0-9]{8}(_|-){1}(.)*$/",trim($asset->getTitle())))
+													elseif (preg_match("/^[0-9]{8}(_|-){1}(.)*$/",trim($d->getTitle())))
 		                  		{
 		                  			$year = substr($d->getTitle(),0,4);
 		                  			$month = substr($d->getTitle(),4,2);
