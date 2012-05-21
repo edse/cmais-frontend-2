@@ -14,40 +14,6 @@
 <script type="text/javascript" src="/portal/js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
-	//TIMER TRANSMISSAO
-	function timer1() {
-		var request = $.ajax({
-			data : {
-				asset_id : '32782',
-				url_in : 'http://tvcultura.cmais.com.br/metropolis/transmissao'
-			},
-			dataType : 'jsonp',
-			success : function(data) {
-				eval(data);
-			},
-			url : '/ajax/timer'
-		});
-	}
-
-	function timer2() {
-		var request = $.ajax({
-			data : {
-				asset_id : '32761',
-				url_in : 'http://tvcultura.cmais.com.br/metropolis/bastidores'
-			},
-			dataType : 'jsonp',
-			success : function(data) {
-				eval(data);
-			},
-			url : '/ajax/timer'
-		});
-	}
-
-
-	$(window).load(function() {
-		var t = setInterval("timer1()", 60000);
-		var t = setInterval("timer2()", 60000);
-	});
 	$(function() {
 
 		// destaque principal
