@@ -400,7 +400,9 @@ function isDevice(OSName)
                               <div id="twitter"></div>
                            
                             <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
-                            <!-- /BOX TWITTER -->
+                            <!-- /BOX TWITTER -->   
+                          </div>
+                          <!--/facebook-->  
                           <div id="legendas-ruas"></div>
                           
                           <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
