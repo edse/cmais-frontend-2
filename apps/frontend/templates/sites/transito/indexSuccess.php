@@ -380,9 +380,27 @@ function isDevice(OSName)
                           
                           <!--facebook--> 
                           <div class="cont-direita">
-                            <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>     
-                          </div>
-                          <!--/facebook-->  
+                            <script>
+                              function updateTweets(){
+                                $.ajax({
+                                  url: "/index.php/ajax/tweetmonitor",
+                                  data: "monitor_id=11",
+                                  success: function(data) {
+                                    $('#twitter').html(data);
+                                  }
+                                });
+                              }
+                              $(function(){ //onready
+                                updateTweets();
+                                var t=setTimeout("updateTweets()",10000);
+                              });
+                            </script>  
+                            <!-- BOX TWITTER -->
+                            
+                              <div id="twitter"></div>
+                           
+                            <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
+                            <!-- /BOX TWITTER -->
                           <div id="legendas-ruas"></div>
                           
                           <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
