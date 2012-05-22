@@ -937,12 +937,12 @@ function isDevice(OSName)
               <!-- MENU E OPÇÕES--> 
             
               <!-- BOX PUBLICIDADE 2 -->
-              <div class="box-publicidade pub-grd grid3">
+              <!--div class="box-publicidade pub-grd grid3"-->
                 <!-- cmais-assets-728x90 -->
-                <script type='text/javascript'>
+                <!--script type='text/javascript'>
                 GA_googleFillSlot("cmais-assets-728x90");
-                </script>
-              </div>
+                </script-->
+              <!--/div-->
               <!-- / BOX PUBLICIDADE 2 -->
 
             </div>
