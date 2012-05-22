@@ -54,6 +54,7 @@ function isDevice(OSName)
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
+          <div class="fundo-topo"></div>
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>"> 
