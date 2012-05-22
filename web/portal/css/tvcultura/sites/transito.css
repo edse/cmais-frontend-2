@@ -104,7 +104,7 @@
 #twitter .topo-fb h4 a {font-size:14px; color:#fff; font-weight:bold;}
 #twitter ul {background:#fff; height:360px; overflow:hidden; overflow-y: scroll; !important;}
 #twitter ul img {width:30px;}
-#twitter ul li {border-bottom:1px dotted #ddd; padding-top:5px; text-align:left; overflow:hidden; margin-top:0; padding-bottom:0;}
+#twitter ul li {width: 300px;height: 70px;position: relative;border-bottom:1px dotted #ddd; padding-top:5px; text-align:left; overflow:hidden; margin-top:0; padding-bottom:0;}
 #twitter ul .avatar {margin: 10px;}
 #twitter ul li a { color:#ff6633;}
 #twitter ul li a,
