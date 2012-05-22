@@ -259,7 +259,7 @@ body{
 	*left: -12px;
 	margin-top: 0px;
 	width: 605px;
-	height: 175px;
+	height: 174px;
 }
 .acervoDestaque .carrossel ul{
 	margin-top: 7px;
@@ -1222,7 +1222,8 @@ form.entrevistas label input{
 	display: block;
 	float: left;
 	width: 316px;
-	height: 376px;
+	height: auto;
+	overflow:hidden;
 }
 .centro .centrowrapper{
 	float: left;
@@ -2058,6 +2059,7 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 .msgAcerto {
 	margin: 105px 0 105px 105px !important;
 }
+
 #barra-site #horario p { font-size:14px; color:#5b5a50; }
 .centroRV .esq .chapeu { font-size:16px; color:#333; font-weight: normal; }
 #barra-site .redes { margin-top:6px; }
