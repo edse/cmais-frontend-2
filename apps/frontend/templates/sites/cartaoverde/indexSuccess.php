@@ -10,7 +10,7 @@ function updateTweets(){
     url: "/index.php/ajax/tweetmonitor",
     data: "monitor_id=2",
     success: function(data) {
-      $('.twtr-timeline').html(data);
+      $('#twitter').html(data);
     }
   });
 }
@@ -198,7 +198,15 @@ $(function(){ //onready
                 <!-- /BOX PADRAO + Visitados -->
               <?php endif; ?> 
 
-              <?php if(isset($displays["twitter"])) include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php if(isset($displays["twitter"])): ?>
+	              <!-- BOX TWITTER -->
+	              <div class="grid1">
+	              	
+	              	<a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>
+	                <div id="twitter"></div>
+	              </div>
+	              <!-- /BOX TWITTER -->
+              <?php endif; ?>
               
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
               
