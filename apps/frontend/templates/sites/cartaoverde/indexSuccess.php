@@ -10,7 +10,7 @@ function updateTweets(){
     url: "/index.php/ajax/tweetmonitor",
     data: "monitor_id=2",
     success: function(data) {
-      $('#twitter').html(data);
+      $('.twtr-timeline').html(data);
     }
   });
 }
