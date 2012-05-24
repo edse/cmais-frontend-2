@@ -224,10 +224,10 @@
 								<div class="boxRedes">
 									<ul>
 										<li>
-											<a class="twitter" href="http://twitter.com/metropolis" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Siga o @metropolis</span></a>
+											<a class="twitter" href="http://twitter.com/metrocultura" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Siga o @metrocultura</span></a>
 										</li>
 										<li>
-											<a class="facebook" href="http://www.facebook.com/metropolis" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a p&aacute;gina no facebook</span></a>
+											<a class="facebook" href="https://www.facebook.com/profile.php?id=100001140082440" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a p&aacute;gina no facebook</span></a>
 										</li>
 										<li>
 											<a class="youtube" href="http://www.youtube.com/metropolis" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Veja os v&iacute;deos no YouTube</span></a>
