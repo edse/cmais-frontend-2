@@ -173,7 +173,7 @@
             }
           },
           messages:{
-            mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
+            mensagem: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
           },
           success: function(label){
