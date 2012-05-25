@@ -100,7 +100,7 @@
   line-height: 15px;
 }
 .boxMsg p.aviso{
-  font-weight: bold;
+  font-weight: bold; margin-bottom:20px;
 }
 
 .contato form select.estado {width:56px;}
