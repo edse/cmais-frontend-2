@@ -60,10 +60,7 @@
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           
-          <div style="text-align: left;">
-            <h5>Está parado no trânsito? Flagrou algum problema nas vias da cidade? Faça uma gravação do seu celular e envie para nós.</h5>
-            <h6 style="text-decoration: underline;">Importante: não use o celular enquanto estiver ao volante.</h6>
-          </div>
+          
 
           <!-- CAPA -->
           <div class="capa grid3">
@@ -75,34 +72,45 @@
                      
                <!--PORTAL DE VIDEOS-->
                <li class="conteudo-portal-de-videos" style=""> 
-
-                  <a name="ytd">
-                  <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
-                  <script type="text/javascript">
-                  var ytdInitFunction = function() {
-                    var ytd = new Ytd();
-                    ytd.setAssignmentId("1001");
-                    ytd.setCallToAction("callToActionId-1001");
-                    var containerWidth = 350;
-                    var containerHeight = 550;
-                    ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
-                    ytd.ready();
-                  };
-                  if (window.addEventListener) {
-                    window.addEventListener("load", ytdInitFunction, false);
-                  } else if (window.attachEvent) {
-                    window.attachEvent("onload", ytdInitFunction);
-                  }
-                  </script>
-                  </a><div class="youtube"><a name="ytd">
-                    </a><a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
-                    <div id="ytdContainer-1001"></div>
+                  
+                  <div id="videoApre">
+                    <div style="text-align: left;width:400px;">
+                      <h5> Você no Guia do Trânsito</h5>
+                      <p>Está parado no trânsito? Flagrou algum problema nas vias da cidade?</br>
+                        Faça uma gravação do seu celular e envie para nós.</p>
+                      <h6 style="text-decoration: underline;">Importante: não use o celular enquanto estiver ao volante.</h6></br>
+                    </div>
                     
-                  </div>
-                  <div class="participe">
-                    <div class="img-enviar"></div>
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/kXXiLFW4d7o" frameborder="0" allowfullscreen></iframe>
                     <a href="#" class="titulos">Participe! Envie seu vídeo.</a>
-                    <!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
+                  </div>  
+                  
+                  <div id="youtube">
+                    <a name="ytd">
+                    <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
+                    <script type="text/javascript">
+                    var ytdInitFunction = function() {
+                      var ytd = new Ytd();
+                      ytd.setAssignmentId("1001");
+                      ytd.setCallToAction("callToActionId-1001");
+                      var containerWidth = 350;
+                      var containerHeight = 550;
+                      ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+                      ytd.ready();
+                    };
+                    if (window.addEventListener) {
+                      window.addEventListener("load", ytdInitFunction, false);
+                    } else if (window.attachEvent) {
+                      window.attachEvent("onload", ytdInitFunction);
+                    }
+                    </script>
+                    </a>
+                    <div class="youtube">
+                      <a name="ytd"></a>
+                      <a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
+                      <div id="ytdContainer-1001"></div>
+                      
+                    </div> 
                   </div>
                   
                   
