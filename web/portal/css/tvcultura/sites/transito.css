@@ -13,7 +13,10 @@
 .textoVerde select{width:310px;}
 .textoAzul select{width:290px;}
 /* estruturas */
-
+/*portal*/
+#videoApre{width:420px;float:left;}
+#youtube{width:420px; overflow: hidden; height:auto; float:right;}
+/*portal*/
 /*TOPO GUIA*/
 
 .box-transito .textoVerde form, .box-transito .textoAzul form{
