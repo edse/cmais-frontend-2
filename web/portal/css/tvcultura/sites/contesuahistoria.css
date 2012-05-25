@@ -1,0 +1,8 @@
+body { background:url(/portal/images/capaPrograma/contesuahistoria/folha.jpg) repeat top center; }
+.contato form .linha label { color:#ff6633; }
+.contato form .linha select, 
+.contato form .linha input,
+.contato form .linha textarea { border-color:#ff6633; }
+.contato form .txt-10 span,
+.contato form .txt-10 { color:#c04238; }
+#barra-site { margin-top:20px; }
