@@ -50,7 +50,7 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
 
-                <p class="titulos grid2"><?php echo $section->getTitle() ?></p>  
+                <!--p class="titulos grid2"><?php echo $section->getTitle() ?></p-->  
                 <p>Oi! Esse blog é pra você, que está no ensino médio da rede pública estadual e, ao contrário do que muita gente pensa, já viveu bastante e tem muita história pra contar.</p>
                 <p>E é com base nessas histórias que a TV Cultura vai criar uma série que tem tudo a ver com você: suas experiências, desejos, frustrações, problemas, alegrias e angústias, dentro e fora da escola.</p>
                 <p>Queremos que você assista a essa série com prazer, que se identifique com os personagens e as histórias contadas nela.</p>
