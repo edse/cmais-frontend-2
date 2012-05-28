@@ -59,6 +59,7 @@
                 <p>Pode falar de sexo, drogas e rock and roll, pode contar aquela história engraçada que aconteceu com você e seus amigos, pode lembrar aquele jantar em família que acabou da forma mais inesperada possível, pode revelar aquele momento difícil da vida pelo qual você teve de passar e como você se virou, enfim, tudo o que lhe vier à cabeça.</p>
                 <p>E fique tranquilo: só quem vai ler o que você mandar somos nós, da turma de criação da série. Sem nenhum tipo de julgamento. Tudo que a gente quer é fazer uma série que não pareça de mentira, que faça você se identificar, entrar na pele de cada um dos personagens.</p>
                 <p>Então agora é com você: conta pra gente tudo o que você quiser!</p>
+                <p class="bold">Os dados pessoais não são obrigatórios.</p>
                 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
