@@ -2065,5 +2065,11 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 #barra-site .redes { margin-top:6px; }
 #barra-site #horario { width:200px; margin-top:0; }
 
-
+.box-padrao #datepicker .ui-widget-content .ui-state-active,
+.box-padrao #datepicker .ui-state-hover,
+.box-padrao #datepicker .ui-widget-content .ui-state-hover,
+.box-padrao #datepicker .ui-widget-header .ui-state-hover, 
+.box-padrao #datepicker .ui-state-focus, 
+.box-padrao #datepicker .ui-widget-content .ui-state-focus, 
+.box-padrao #datepicker .ui-widget-header .ui-state-focus {background:#F19F3F; }
 /** /METROPOLIS **/

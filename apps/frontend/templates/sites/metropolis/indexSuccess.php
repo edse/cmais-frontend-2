@@ -227,7 +227,7 @@
 											<a class="twitter" href="http://twitter.com/metrocultura" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Siga o @metrocultura</span></a>
 										</li>
 										<li>
-											<a class="facebook" href="https://www.facebook.com/programametropolis" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a p&aacute;gina no facebook</span></a>
+											<a class="facebook" href="https://www.facebook.com/metrocultura" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a p&aacute;gina no facebook</span></a>
 										</li>
 										<li>
 											<a class="youtube" href="http://www.youtube.com/metropolis" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Veja os v&iacute;deos no YouTube</span></a>
