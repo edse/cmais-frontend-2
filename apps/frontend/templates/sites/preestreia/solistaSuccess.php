@@ -763,7 +763,7 @@ $(document).ready(function(){
               minlength: 2
             },
             estado:{
-              required: true,
+              required: true
             },
             cep:{
               required: true,
