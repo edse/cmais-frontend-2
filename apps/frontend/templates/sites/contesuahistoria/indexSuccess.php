@@ -113,7 +113,7 @@
             
             <!-- DIREITA -->
             <div id="direita" class="grid1">
-             
+             <img src="/portal/images/capaPrograma/contesuahistoria/caneta.png" alt="Conte sua História!" />
             </div>
             <!-- /DIREITA -->
             
