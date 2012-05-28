@@ -93,7 +93,7 @@
           			    <script type='text/javascript'>
           			      GA_googleFillSlot("tvcultura-homepage-300x250");
           			    </script>
-          			    <?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) ?>
+          			     <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
           			  </div>
           			</div>
 					<?php if(isset($conteudosRelacionados)): ?>
