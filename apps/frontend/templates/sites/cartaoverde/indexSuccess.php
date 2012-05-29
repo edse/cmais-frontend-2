@@ -201,7 +201,6 @@ $(function(){ //onready
               <?php if(isset($displays["twitter"])): ?>
 	              <!-- BOX TWITTER -->
 	              <div class="grid1">
-	              	
 	              	<a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>
 	                <div id="twitter"></div>
 	              </div>
