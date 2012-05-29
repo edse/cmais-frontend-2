@@ -51,14 +51,9 @@
               <div class="contato grid2">
 
                 <!--p class="titulos grid2"><?php echo $section->getTitle() ?></p-->  
-                <p>Oi! Esse blog é pra você, que está no ensino médio da rede pública estadual e, ao contrário do que muita gente pensa, já viveu bastante e tem muita história pra contar.</p>
-                <p>E é com base nessas histórias que a TV Cultura vai criar uma série que tem tudo a ver com você: suas experiências, desejos, frustrações, problemas, alegrias e angústias, dentro e fora da escola.</p>
-                <p>Queremos que você assista a essa série com prazer, que se identifique com os personagens e as histórias contadas nela.</p>
-                <p>Para isso, abrimos esse espaço para você dividir com a gente situações do seu dia-a-dia, que você vive na escola, em casa, com os amigos, com a família.</p>
-                <p>Aqui, você pode escrever o que quiser, sem medo de qualquer tipo de julgamento e em total anonimato: situações que você já viveu com amigos, professores, namorados, namoradas.</p>
-                <p>Pode falar de sexo, drogas e rock and roll, pode contar aquela história engraçada que aconteceu com você e seus amigos, pode lembrar aquele jantar em família que acabou da forma mais inesperada possível, pode revelar aquele momento difícil da vida pelo qual você teve de passar e como você se virou, enfim, tudo o que lhe vier à cabeça.</p>
-                <p>E fique tranquilo: só quem vai ler o que você mandar somos nós, da turma de criação da série. Sem nenhum tipo de julgamento. Tudo que a gente quer é fazer uma série que não pareça de mentira, que faça você se identificar, entrar na pele de cada um dos personagens.</p>
-                <p>Então agora é com você: conta pra gente tudo o que você quiser!</p>
+                <p>Você que está no ensino médio pode nos ajudar a fazer uma série de televisão.</p>
+                <p>A TV Cultura está produzindo uma série que tem a ver com as suas experiências dentro e fora da escola. Abrimos este espaço para você dividir com a gente situações que já viveu com seus amigos, professores, familiares, namorados e namoradas. Pode escrever sobre o que você quiser, sem receio ou censura. Ninguém vai saber que foi você quem escreveu. Queremos contar histórias baseadas em histórias reais.</p>
+                <p>Pode ter acontecido com você ou com seus amigos.</p>
                 <p class="bold">Os dados pessoais não são obrigatórios.</p>
                 
                   <div class="msgErro" style="display:none">
@@ -87,7 +82,16 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                 
+                  <div class="linha t4">
+                    <label>aluno de escola</label>
+                    <br />
+                    <select class="required" id="escola" style="width:116px;">
+                      <option value="" selected="selected">--</option>
+                      <option value="Pública">Pública</option>
+                      <option value="Privada">Privada</option>
+                     
+                  </select>
+                  </div>
                   
                  
                   <div class="linha t3">
