@@ -1,13 +1,4 @@
 /** METROPOLIS **/
-/*	
-#barra-site { background:url(/portal/images/capaPrograma/bg-metropolis.png) no-repeat 620px 1px; margin-top:0; }
-#barra-site {_background-image:url(/portal/images/capaPrograma/bg-metropolis.gif);}
-.submenu-interna {width:116px;}
-#barra-site h2 { margin-top:20px; }
-#barra-site {margin-top:0;} 
-#chamada {margin-bottom:0;}
-*/
-
 
 body{
 	background: #eee;
@@ -1271,6 +1262,7 @@ form.entrevistas label input{
 .centro p a{
 	color: #737373;
 	width: 280px;
+	max-height:98px;
 }
 .centro p{
 	line-height: 16px;
