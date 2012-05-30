@@ -106,7 +106,7 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                  <div class="linha t20">
+                  <div class="linha t1">
                     <label>city</label>
                     <input type="text" name="cidade" id="cidade" />
                   </div>
