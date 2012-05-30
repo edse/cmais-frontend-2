@@ -218,7 +218,7 @@ $apresentador = Doctrine_Query::create()
 	          						<?php endif; ?>
 	          						</a>
 	          					</p>
-	          					<span class="exibido">Exibido em <?php echo format_date($d->AssetEpisode->getDateRelease(),'d') ?></span>
+	          					
 	          					<a class="mais" href="<?php echo $d->retriveUrl() ?>"><span>+</span></a>
 	          				</div>
 	          			</div>	
