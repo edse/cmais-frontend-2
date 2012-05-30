@@ -20,8 +20,7 @@
 							<li><a href="http://www.cmais.com.br/educacao" title="Educa&ccedil;&atilde;o">Educa&ccedil;&atilde;o</a></li>
 							<li><a href="http://www.cmais.com.br/infantil" title="+ Crian&ccedil;a">+ Crian&ccedil;a</a></li>
 							<li><a href="http://www.cmais.com.br/jornalismo" title="Jornalismo">Jornalismo</a></li>
-							<li><a href="http://www.cmais.com.br/juvenil" title="Juvenil">Juvenil</a></li>
-							<li><a href="http://www.cmais.com.br/musica" title="M&uacute;sica">M&uacute;sica</a></li>
+          		<li><a href="http://www.cmais.com.br/musica" title="M&uacute;sica">M&uacute;sica</a></li>
 						</ul>
 					</div>
 					<div class="col-central">
@@ -34,7 +33,7 @@
 								<li><a href="http://tvcultura.cmais.com.br/provocacoes" title="Provoca&ccedil;&otilde;es">Provoca&ccedil;&otilde;es</a></li>
                 <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/rodaviva" title="Roda Viva">Roda Viva</a></li>
-								<li><a href="http://tvcultura.cmais.com.br/vitrine" title="Vitrine">Vitrine</a></li>
+								<li><a href="http://tvcultura.cmais.com.br/transito" title="Guia do Trânsito">Guia do Trânsito</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www.culturabrasil.com.br/" class="tit" title="R&aacute;dio Cultura Brasil">R&aacute;dio Cultura Brasil</a></li>
@@ -56,25 +55,24 @@
 								<li><a href="http://univesp.tv.br/" class="tit">Univesp TV</a></li>
 								<li><a href="http://univesptv.cmais.com.br/inglescommusica" title="Ingl&ecirc;s Com M&uacute;sica">Ingl&ecirc;s Com M&uacute;sica</a></li>
 								<li><a href="http://univesptv.cmais.com.br/pedagogia-unesp" title="Pedagogia Unesp">Pedagogia Unesp</a></li>
-                <li><a href="http://univesptv.cmais.com.br/cursos-livres" title="Cursos Livres">Cursos Livres</a></li>
-                <li><a href="http://univesptv.cmais.com.br/cursos-usp" title="Cursos USP">Cursos USP</a></li>
+                <li><a href="http://univesptv.cmais.com.br/cursos" title="Cursos Livres">Cursos Livres</a></li>
                 <li><a href="http://univesptv.cmais.com.br/licenciatura-em-ciencias" title="Licenciatura em
 ciências">Licenciatura em
 ciências</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www.multicultura.com.br/" class="tit">multiCULTURA</a></li>
-								<li><a href="http://www.multicultura.com.br/o-que-e" title="O que &eacute;">O que &eacute;</a></li>
-								<li><a href="http://www.multicultura.com.br/como-assistir" title="Como Assistir">Como Assistir</a></li>
-								<li><a href="http://www.multicultura.com.br/programacao" title="Programa&ccedil;&atilde;o">Programa&ccedil;&atilde;o</a></li>
+								<li><a href="http://multicultura.cmais.com.br/o-que-e-1" title="O que &eacute;">O que &eacute;</a></li>
+								<li><a href="http://multicultura.cmais.com.br/como-assistir-o-multicultura" title="Como Assistir">Como Assistir</a></li>
+								<li><a href=" http://multicultura.cmais.com.br/programacao" title="Programa&ccedil;&atilde;o">Programa&ccedil;&atilde;o</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www.tvratimbum.com.br/" class="tit">TV R&aacute; Tim Bum</a></li>
-                <li><a href="http://www.tvcultura.com.br/x-tudo/index.htm" title="X-Tudo ">X-Tudo </a></li>
+                <li><a href="http://tvratimbum.cmais.com.br/xtudo" title="X-Tudo ">X-Tudo </a></li>
 								<li><a href="http://www.tvcultura.com.br/cocorico" title="Cocoric&oacute;">Cocoric&oacute;</a></li>
-								<li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=20" title="Ba&uacute; de Hist&oacute;rias">Ba&uacute; de Hist&oacute;rias</a></li>
-								<li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=9" title="Mundo da Lua">Mundo da Lua</a></li>
-								<li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=25" title="Ilha R&aacute; Tim Bum">Ilha R&aacute; Tim Bum</a></li>
+								<li><a href="http://tvratimbum.cmais.com.br/baudehistorias" title="Ba&uacute; de Hist&oacute;rias">Ba&uacute; de Hist&oacute;rias</a></li>
+								<li><a href="http://tvratimbum.cmais.com.br/mundodalua" title="Mundo da Lua">Mundo da Lua</a></li>
+								<li><a href="http://cmais.com.br/castelo" title="Castelo R&aacute; Tim Bum">Castelo R&aacute; Tim Bum</a></li>
 							</ul>
 						</div>
 						<div class="posicao">
@@ -82,13 +80,15 @@ ciências</a></li>
 								<li class="tit">Pela Web</li>
 								<li><a href="http://www.facebook.com/tvcultura" title="Facebook">Facebook</a></li>
 								<li><a href="http://www.flickr.com/photos/televisaocultura" title="Flickr">Flickr</a></li>
+								<li><a href="https://plus.google.com/b/107290730774038797358/107290730774038797358" title="Google+">Google+</a></li>
+								<li><a href="http://statigr.am/tvcultura" title="Instagram">Instagram</a></li>
 								<li><a href="http://twitter.com/#!/tvcultura" title="Twitter">Twitter</a></li>
 								<li><a href="http://www.youtube.com/cultura" title="Youtube">Youtube</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www2.tvcultura.com.br/fpa/" class="tit">Funda&ccedil;&atilde;o Padre Anchieta</a></li>
 								<li><a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" title="Licitações">Licitações</a></li>
-								<li><a href="http://www2.tvcultura.com.br/captacao/" title="Captacao">Capta&ccedil;&atilde;o</a></li>
+								<li><a href="http://cmais.com.br/captacao" title="Captacao">Capta&ccedil;&atilde;o</a></li>
 								<!-- <li><a href="http://www2.tvcultura.com.br/imprensa/" title="Imprensa">Imprensa</a></li> -->
 								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
 							</ul>
