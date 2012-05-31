@@ -51,8 +51,8 @@
               <div class="contato grid2">
 
                 <p class="titulos">Pesquisa</p>  
-                <p>Com o apoio da Secretaria da Educação, a TV Cultura está produzindo uma série de ficção sobre a vida e  as experiências dos jovens no ensino médio.</p>
-                <p>Abrimos este espaço para receber depoimentos e histórias de quem vive essa realidade. Vale contar qualquer situação.  Quem quiser participar desta pesquisa, estará contribuindo com um programa de tv que assume o compromisso de divertir, mas principalmente de refletir sobre essa fase tão marcante da vida de um adolescente.</p>
+                <p>Em parceria com a Secretaria da Educação do Estado de São Paulo, a TV Cultura está produzindo uma série de ficção sobre a vida e  as experiências dos jovens no Ensino Médio.</p>
+                <p>Abrimos este espaço para receber depoimentos e histórias de quem vive essa realidade. Vale contar qualquer situação.  Quem quiser participar desta pesquisa, estará contribuindo com um programa de TV que assume o compromisso de divertir, mas principalmente de refletir sobre essa fase tão marcante da vida de um adolescente.</p>
                 <p class="bold">Os dados pessoais não são obrigatórios.</p>
                 
                   <div class="msgErro" style="display:none">
