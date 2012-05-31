@@ -3,3 +3,4 @@
 #barra-site .redes { float: right; }
 #barra-site .topo-programa { background: url(/portal/images/capaPrograma/gil/bandeirinhas.png) no-repeat top right; }
 #chamada { margin-bottom:0; }
+#barra-site h2 { margin-top:30px; }
