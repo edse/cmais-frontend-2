@@ -51,9 +51,8 @@
               <div class="contato grid2">
 
                 <!--p class="titulos grid2"><?php echo $section->getTitle() ?></p-->  
-                <p>Você que está no ensino médio pode nos ajudar a fazer uma série de televisão.</p>
-                <p>A TV Cultura está produzindo uma série que tem a ver com as suas experiências dentro e fora da escola. Abrimos este espaço para você dividir com a gente situações que já viveu com seus amigos, professores, familiares, namorados e namoradas. Pode escrever sobre o que você quiser, sem receio ou censura. Ninguém vai saber que foi você quem escreveu. Queremos contar histórias baseadas em histórias reais.</p>
-                <p>Pode ter acontecido com você ou com seus amigos.</p>
+                <p>Com o apoio da Secretaria da Educação, a TV Cultura está produzindo uma série de ficção sobre a vida e  as experiências dos jovens no ensino médio.</p>
+                <p>Abrimos este espaço para receber depoimentos e histórias de quem vive essa realidade. Vale contar qualquer situação.  Quem quiser participar desta pesquisa, estará contribuindo com um programa de tv que assume o compromisso de divertir, mas principalmente de refletir sobre essa fase tão marcante da vida de um adolescente.</p>
                 <p class="bold">Os dados pessoais não são obrigatórios.</p>
                 
                   <div class="msgErro" style="display:none">
