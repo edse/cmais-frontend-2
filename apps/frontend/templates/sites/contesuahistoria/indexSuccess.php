@@ -110,7 +110,7 @@
                   <div class="linha t3">
                     <label>mensagem</label>
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
-                    <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
+                    <p class="txt-10" style="clear:both;"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                   </div>
                   <div class="linha t3 regulamento">
 	            	  <p class="titulos">Termos de Uso</p>
