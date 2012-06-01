@@ -6,3 +6,12 @@ body { background:url(/portal/images/capaPrograma/contesuahistoria/folha.jpg) re
 .contato form .txt-10 span,
 .contato form .txt-10 { color:#c04238; }
 #barra-site { margin-top:20px; }
+.contato form .regulamento { background:#fff; border:solid 1px #ff6633; padding:10px; width: 616px; }
+.contato form .regulamento .texto { height:200px; overflow-x: hidden; clear:both; }
+.contato form .regulamento .texto p { margin-bottom:10px; }
+.contato form .regulamento ul li { font-size:14px; margin-left:10px; color:#333; line-height: 20px; }
+.contato form .regulamento ul { margin-bottom:10px; }
+.contato form .concordo input { width:20px; float:left; }
+.contato form .concordo label { float: left;    margin: 5px 0 0 5px;    width: 500px; }
+.contato form .t4 { width: 490px; }
+.contato form .t4 input { width:480px; }
