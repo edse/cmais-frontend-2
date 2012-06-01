@@ -72,7 +72,7 @@
                     </div>
                     <hr />
                   </div>
-                <form id="form-contato" method="post" action="">
+                <form id="form-contato" method="post" action="" style="width:640px; overflow: hidden;">
                   <div class="linha t3">
                     <label>nome</label>
                     <input type="text" name="nome" id="nome" />
