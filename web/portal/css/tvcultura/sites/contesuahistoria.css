@@ -7,7 +7,11 @@ body { background:url(/portal/images/capaPrograma/contesuahistoria/folha.jpg) re
 .contato form .txt-10 { color:#c04238; }
 #barra-site { margin-top:20px; }
 .contato form .regulamento { background:#fff; border:solid 1px #ff6633; padding:10px; width: 616px; }
+<<<<<<< HEAD
+.contato form .regulamento .texto { height:200px;overflow: auto;; *overflow: scroll; clear:both; }
+=======
 .contato form .regulamento .texto { height:200px; overflow-y: scroll; clear:both; }
+>>>>>>> 4983c5251f6461603f734039723a820122e46d17
 .contato form .regulamento .texto p { margin-bottom:10px; }
 .contato form .regulamento ul li { font-size:14px; margin-left:10px; color:#333; line-height: 20px; }
 .contato form .regulamento ul { margin-bottom:10px; }
