@@ -128,10 +128,10 @@
             <?php endif; ?>
             </div>
                            
-			<div class="destaque carta">
+      <div class="destaque carta">
               <a href="http://cmais.com.br/quintaldacultura/como-escrever-uma-cartinha-para-a-turma-do-quintal">
                 <h3>Quintal da Cultura</h3>
-              	<p>caixa postal: 11544 <br /> cep: 05036-900 <br /> são paulo - sp</p>
+                <p>caixa postal: 11544 <br /> cep: 05036-900 <br /> são paulo - sp</p>
               </a>
          </div>
          <!--teste -->
@@ -141,10 +141,10 @@
             </div-->  
               
             <!--div class="album">
-              	<a href="http://cmais.com.br/quintaldacultura/participe">Redação</a>
+                <a href="http://cmais.com.br/quintaldacultura/participe">Redação</a>
              </div-->  
             
-			<!--
+      <!--
             <div class="radioCarro">
               <span class="farolEsq"></span>
               <span class="farolDir"></span>
@@ -186,7 +186,7 @@
                 </div>
                 <hr />
               </div>
-				
+        
             </div>
            -->
           </div>
@@ -211,7 +211,7 @@
             <hr />
 
             <div class="boxDestaque">
-              <div class="destaque">
+              <!--div class="destaque">
                 <span class="minhoca"></span>
                 <h2><span class="ico-cross"></span><span class="tit">Clipes</span></h2>
                 <div class="boxVideos">
@@ -242,7 +242,7 @@
                   </div>
 
                 </div>
-              </div>
+              </div-->
 
               <?php if(isset($displays['destaque-curiosidade'][0])): ?>
               <div class="curiosidades">
