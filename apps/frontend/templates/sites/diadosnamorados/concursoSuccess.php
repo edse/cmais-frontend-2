@@ -176,7 +176,7 @@
                   <div class="linha t3">
                     <label>vídeo escolhido</label>
                     <br />
-                    <select class="select required" id="video">
+                    <select class="select required" id="video" name="video" >
                       <option value="" selected="selected">--</option>
                       <option value="As maneiras de se reconquistar">As maneiras de se reconquistar</option>
                       <option value="Paixão por um amigo">Paixão por um amigo</option>
