@@ -124,6 +124,7 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
               <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
               <a class="voltarBig" href="/quintaldacultura/imagens"><span class="ico-voltar"></span><span class="tit">Imagens</span></a>
@@ -214,7 +215,7 @@
           </div>
           <hr />
           
-          <div class="boxDestaque pagImag">
+          <!--div class="boxDestaque pagImag">
             <div class="destaque jg">
               <span class="minhoca"></span>
               <h2><span class="ico-cross"></span><span class="tit">Artes</span></h2>
@@ -268,7 +269,10 @@
 
             <hr />
           
-          </div>
+          </div-->
+          <!--QUINTAL PERGUNTE FILOMENA-->
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+          <!--/QUINTAL PERGUNTE-->
         
         </div>
       </div>
@@ -285,7 +289,30 @@
 <div id="miolo"></div>
 <div class="box-lateral"></div>
 
-
+<script type='text/javascript'>
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 30538;
+_sf_async_config.domain = 'cmais.com.br';
+_sf_async_config.sections = '<?php echo $site->getTitle()?> - <?php $asset->getTitle()?>';  //CHANGE THIS
+_sf_async_config.authors = 'cmais+';    //CHANGE THIS
+/** CONFIGURATION END **/
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+       'js/chartbeat.js');
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
 
 
 </body>

@@ -63,6 +63,7 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
                 <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
             </div>
@@ -109,7 +110,7 @@
             </div>
 
                           <hr />
-                          <div class="boxDestaque activo">
+                          <!--div class="boxDestaque activo">
                             <div class="destaque jg">
 
                                   <span class="minhoca"></span>
@@ -138,24 +139,27 @@
                                     </div>
                                 </div>
 
-                <?php
-                if(!isset($curiosidades)){
-                  $block = Doctrine::getTable('Block')->findOneById(332);
-                  if($block)
-                    $curiosidades = $block->retriveDisplays();
-                }
-                ?>
-                <?php if(isset($curiosidades[0])): ?>
-                <div class="curiosidades">
-                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                          <?php
+                          if(!isset($curiosidades)){
+                            $block = Doctrine::getTable('Block')->findOneById(332);
+                            if($block)
+                              $curiosidades = $block->retriveDisplays();
+                          }
+                          ?>
+                          <?php if(isset($curiosidades[0])): ?>
+                          <div class="curiosidades">
+                            <p><?php echo $curiosidades[0]->getDescription() ?></p>
+                            <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                          </div>
+                          <?php endif; ?>
+          
+                          <hr />
+                        </div-->
+                        <!--QUINTAL PERGUNTE FILOMENA-->
+                        <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+                        <!--/QUINTAL PERGUNTE-->
+
                 </div>
-                <?php endif; ?>
-
-                <hr />
-              </div>
-
-            </div>
             
           </div>
 

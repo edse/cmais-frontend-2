@@ -20,7 +20,6 @@
     
     <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-       
     
     <!-- scripts -->
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
@@ -44,10 +43,6 @@
       $("ul.dropdown li ul li:has(ul)").find("a:first").append("  ");
     })
     </script>
-    <style>
-    .rodape.rodVid {*margin-top: -10px !important;}
-    .allWrapper #rodape-portal{margin-top: 53px !important;*margin-top: 88px !important;}
-  </style>
   </head>
   <script type="text/javascript"> 
     var _gaq = _gaq || [];
@@ -62,7 +57,7 @@
     })();
   </script> 
   <body>
-   <link rel="stylesheet" href="/portal/quintal/css/videosQuintal.css" type="text/css" />
+
   <div class="allWrapper">
 
   <?php use_helper('I18N', 'Date') ?>
@@ -71,14 +66,13 @@
       <div class="contentWrapper" align="center">
 
 
-      <div class="content videos">
+      <div class="content">
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
         <hr />
 
         <div class="conteudo">
 
           <div class="conteudoWrapper">
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
                 <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
             </div>
@@ -87,14 +81,37 @@
             <div class="videosBox">
               <span class="palhaco"></span>
                 <div class="rodaGigante">
-                  <a class="todosVideos" href="/quintaldacultura/videos/todos" title="Todos os vídeos"><span>Todos os V&iacute;deos</span></a>
-                  <a class="musicasquintal" href="/quintaldacultura/videos/musicas-do-quintal" title="Músicas da Quintal">Músicas do Quintal</a>
-                  <a class="historiadesenhada" href="/quintaldacultura/videos/historia-desenhada" title="História Desenhada">História Desenhada</a>
-                  <a class="momentofabuloso" href="/quintaldacultura/videos/momento-fabuloso" title="Momento Fabuloso">Momento Fabuloso</a>
-                  <a class="historiapraboi" href="/quintaldacultura/videos/historias-pra-boi-nao-dormir" title="Histórias pra boi não dormir">Histórias pra Boi não dormir</a>
-                  <a class="quintaldascriancas" href="/quintaldacultura/videos/quintal-das-criancas" title="Quintal das crianças">Quintal das crianças</a>
+                  <a class="todosVideos" href="/quintaldacultura/videos/todos"><span>Todos os V&iacute;deos</span></a>
 
-                    
+                    <div class="boxVideo">
+                      <ul class="dropdown">
+                        <li><a href=""><span class="esq"></span><span class="centro">Ou escolha pelo desenho</span><span class="dir"></span></a>
+                          <ul class="carinha" style="visibility: visible;">
+                            <li><a href="/quintaldacultura/videos?s=7"><img src="/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=10"><img src="/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=45"><img src="/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=19"><img src="/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=46"><img src="/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=98"><img src="/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=32"><img src="/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=34"><img src="/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=34"><img src="/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=38"><img src="/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=44"><img src="/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=43"><img src="/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=49"><img src="/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=50"><img src="/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=105"><img src="/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=57"><img src="/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=55"><img src="/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=101"><img src="/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=104"><img src="/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=62"><img src="/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
+                            <li><a href="/quintaldacultura/videos?s=64"><img src="/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
+                          </ul>                                                                                                                                      
+                        </li>
+                      </ul>
+                  </div>
                 </div>
                 <span class="palhaca"></span>
             </div>
@@ -102,8 +119,7 @@
 
                       </div>
                         <div class="allpages">
-                          
-                          <!--div class="carrossel activo">
+                          <div class="carrossel activo">
                           <?php
                           // section assets
                           $assets = Doctrine_Query::create()
@@ -132,7 +148,7 @@
                             </ul>
                             </div>
                             <hr />
-                            <div class="boxDestaque" align="center">
+                            <div class="boxDestaque">
                               <div class="destaque jg">
                                   <span class="minhoca"></span>
                                     <h2><span class="ico-cross"></span><span class="tit">Jogos</span></h2>
@@ -161,25 +177,22 @@
                                     </div>
                                 </div>
 
-        				                <?php
-        				                if(!isset($curiosidades)){
-        				                  $block = Doctrine::getTable('Block')->findOneById(332);
-        				                  if($block)
-        				                    $curiosidades = $block->retriveDisplays();
-        				                }
-        				                ?>
-        				                <?php if(isset($curiosidades[0])): ?>
-        				                <div class="curiosidades">
-        				                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-        				                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
-        				                </div>
-        				                <?php endif; ?>
+                <?php
+                if(!isset($curiosidades)){
+                  $block = Doctrine::getTable('Block')->findOneById(332);
+                  if($block)
+                    $curiosidades = $block->retriveDisplays();
+                }
+                ?>
+                <?php if(isset($curiosidades[0])): ?>
+                <div class="curiosidades">
+                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
+                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                </div>
+                <?php endif; ?>
 
                                 <hr />
-                            </div-->
-                            <!--QUINTAL PERGUNTE FILOMENA-->
-                            <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
-                            <!--/QUINTAL PERGUNTE-->
+                            </div>
                         </div>      
             
                     </div>

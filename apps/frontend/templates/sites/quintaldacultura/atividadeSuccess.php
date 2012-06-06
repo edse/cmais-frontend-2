@@ -111,7 +111,7 @@
   <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
       <div class="contentWrapper" align="center">
-
+      
 
       <div class="content">
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
@@ -120,6 +120,7 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             
             <div class="menuVoltar">
               <a href="/quintaldacultura" class="voltar"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
@@ -189,7 +190,7 @@
                                 </div>
                             </div>
                             <hr />
-                            <div class="boxDestaque inter">
+                            <!--div class="boxDestaque inter">
                               <div class="destaque jg">
                                   <span class="minhoca"></span>
 
@@ -197,52 +198,55 @@
                                     <div class="boxVideos">
                                       <div class="videoThumbs">
                                         <ul>
-                      <?php
-                      if(!isset($fotos)){
-                        $block = Doctrine::getTable('Block')->findOneById(321);
-                        if($block)
-                          $fotos = $block->retriveDisplays();
-                      }
-                      ?>
-                      <?php if(isset($fotos)): ?>
-                        <?php if(count($fotos) > 0): ?>
-                          <?php foreach($fotos as $k=>$d): ?>
-                            <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
-                              <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
-                            <?php endif; ?>
-                          <?php endforeach; ?>
-                        <?php endif; ?>
-                      <?php endif; ?>
+                                        <?php
+                                        if(!isset($fotos)){
+                                          $block = Doctrine::getTable('Block')->findOneById(321);
+                                          if($block)
+                                            $fotos = $block->retriveDisplays();
+                                        }
+                                        ?>
+                                        <?php if(isset($fotos)): ?>
+                                          <?php if(count($fotos) > 0): ?>
+                                            <?php foreach($fotos as $k=>$d): ?>
+                                              <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
+                                                <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
+                                              <?php endif; ?>
+                                            <?php endforeach; ?>
+                                          <?php endif; ?>
+                                        <?php endif; ?>
                                         </ul>
                                       </div>
 
                                       <div class="videoBig">
-                    <?php if(isset($fotos[0])): ?>
-                      <?php if($fotos[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
-                        <a href="<?php echo $fotos[0]->retriveUrl() ?>"><img src="<?php echo $fotos[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $fotos[0]->getTitle() ?>" style="width:310px" /></a>
-                      <?php endif; ?>
-                    <?php endif; ?>
+                                      <?php if(isset($fotos[0])): ?>
+                                        <?php if($fotos[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
+                                          <a href="<?php echo $fotos[0]->retriveUrl() ?>"><img src="<?php echo $fotos[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $fotos[0]->getTitle() ?>" style="width:310px" /></a>
+                                        <?php endif; ?>
+                                      <?php endif; ?>
                                       </div>
 
                                     </div>
                                 </div>
 
-                <?php
-                if(!isset($curiosidades)){
-                  $block = Doctrine::getTable('Block')->findOneById(332);
-                  if($block)
-                    $curiosidades = $block->retriveDisplays();
-                }
-                ?>
-                <?php if(isset($curiosidades[0])): ?>
-                <div class="curiosidades">
-                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
-                </div>
+                            <?php
+                            if(!isset($curiosidades)){
+                              $block = Doctrine::getTable('Block')->findOneById(332);
+                              if($block)
+                                $curiosidades = $block->retriveDisplays();
+                            }
+                            ?>
+                            <?php if(isset($curiosidades[0])): ?>
+                            <div class="curiosidades">
+                              <p><?php echo $curiosidades[0]->getDescription() ?></p>
+                              <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                            </div>
                 <?php endif; ?>
 
                 <hr />
-              </div>
+              </div-->
+              <!--QUINTAL PERGUNTE FILOMENA-->
+              <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+              <!--/QUINTAL PERGUNTE-->
 
             </div>
             
@@ -262,7 +266,30 @@
   <div id="miolo"></div>
   <div class="box-lateral"></div>
   
-
+<script type='text/javascript'>
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 30538;
+_sf_async_config.domain = 'cmais.com.br';
+_sf_async_config.sections = '<?php echo $site->getTitle()?> - <?php $asset->getTitle()?>';  //CHANGE THIS
+_sf_async_config.authors = 'cmais+';    //CHANGE THIS
+/** CONFIGURATION END **/
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+       'js/chartbeat.js');
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
   
 
 </body>

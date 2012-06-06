@@ -19,8 +19,7 @@
     
     <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/videosQuintal.css" type="text/css" />
-        
+    
     <!-- scripts -->
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
@@ -62,16 +61,11 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  </script>
-  <style>
-    .rodape.rodVid {margin-top: -317px !important;*margin-top: -297px !important;}
-    .allWrapper #rodape-portal{margin-top: 53px !important;*margin-top: -21px !important;}
-  </style>
-  </style> 
+  </script> 
   <body>
 
   <div class="allWrapper">
-  
+
   <?php
   // section assets
   if(isset($s)){
@@ -84,18 +78,14 @@
       ->execute();
   }
   else{
-  	if ($section->getSlug() != 'todos')
-			$assets = $section->getAssets();
-		else {
-	    $assets = Doctrine_Query::create()
-	      ->select('a.*')
-	      ->from('Asset a, Site s')
-	      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-	      ->andWhere('a.site_id = s.id')
-	      ->andWhere('a.asset_type_id = 6')
-	      ->orderBy('a.id desc')
-	      ->execute();
-		}
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, Site s')
+      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
+      ->andWhere('a.site_id = s.id')
+      ->andWhere('a.asset_type_id = 6')
+      ->orderBy('a.id desc')
+      ->execute();
   }
   if(!isset($asset)){
     $asset = $assets[0];
@@ -114,7 +104,6 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
               <a href="/quintaldacultura" class="voltar"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
               <a href="/quintaldacultura/videos" class="voltarBig"><span class="ico-voltar"></span><span class="tit">Vídeos</span></a>
@@ -134,7 +123,7 @@
 			 <a class="assitir" href="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>" onclick="NovaJanela(this.href,'nomeJanela','640','390','yes');return false">Assitir na janelinha</a>	
               <span class="palhaca"></span>
               <span class="palhaco"></span>
-              <!--div class="boxDesenho">
+              <div class="boxDesenho">
                 <ul class="dropdown">
                   <li class="">
                     <a href="" class=""><span class="esq"></span><span class="centro">Ou escolha pelo desenho</span><span class="dir"></span></a>
@@ -181,90 +170,27 @@
                     </ul>
                   </li>
                 </ul>
-              </div-->
+              </div>
             </div>
           </div>
 
           <div class="allpages">
-            <div class="categorias">
-                <a class="mais" href="/quintaldacultura/videos"><span class="icoBtn"></span><span class="tit">V&iacute;deos -</span></a>
-                <p class="categoriaSelecionada"><?php echo $section->getTitle() ?></p>
-            </div>
             <div class="carrosselWrapper">
-            
-            <div class="tampa"></div> 
+              <div class="categorias">
+                <a class="mais" href="/quintaldacultura/videos"><span class="icoBtn"></span><span class="tit">V&iacute;deos</span></a>
+                <p class="categoriaSelecionada"><?php if(isset($s)) echo $s->getTitle(); else echo "Todos";?></p>
+              </div>
               <div class="carrossel">
                 <ul>
                   <?php if($assets): ?>
-                    <?php 
-                    $contador=0;
-                    $medida  = 0;
-                    $qtdLeft = 220;
-                    
-                    $total	 = count($assets);
-                    if($total%2 != 0) $total++;
-                    $total = round($total/6);
-
-                    ?> 
-                    <script>
-                    	$(document).ready(function(){
-                    		
-                    		total = <?php echo $total ?>;
-                    		
-                    		
-                    		$('.jcarousel-prev').hide();
-                    		$('.tampa').hide();
-                    		
-                    		var cont = -1;
-                    		
-                    		$('.jcarousel-next').click(function(){
-                    			cont++;
-                    			$('.tampa').show().delay(1000).fadeOut(200);
-                    			
-                    			if(cont>-1){
-                    				$('.jcarousel-prev').fadeIn('slow');
-                    			}
-                    			
-                    			if(cont== total){
-                    				$('.jcarousel-next').fadeOut('slow');
-                    				cont== total;
-                    			}
-                    			
-                    		});
-                    		
-                    		$('.jcarousel-prev').click(function(){
-                    			cont--;
-                    			$('.tampa').show().delay(1000).fadeOut(200);
-                    			
-                    			if(cont<total){
-                    				$('.jcarousel-next').fadeIn('slow');
-                    			}
-                    			if(cont== -1){
-                    				$('.jcarousel-prev').fadeOut('slow');
-                    				cont= -1;
-                    			}
-                    		});
-                    		
-                    	})
-                    </script>
                     <?php if(count($assets) > 0): ?>
                       <?php foreach($assets as $k=>$d): ?>
-                        
-						<?php //echo $contador ." / ". $qtdLeft . " / " . $medida . "<br/>"?>  
-                        <li class="<?php if(($k > 0) && ($k % 2 != 0)){ echo "topo";}else{ echo "embaixo";}?>" style="left:<?php if($contador <2){echo "0";}else{echo $medida;} ?>px" >
-                        	 	
-						<a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
+                        <li>
+                          <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
                           <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
                             <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
                           <?php endif; ?><span class="bottom"><span class="text2">assistir</span></span></a>
                         </li>
-						<?php
-						$contador++;
-						if($contador%2==0){
-                          
-                          $medida = $medida + $qtdLeft;
-                        }
-						?>
                       <?php endforeach; ?>
                     <?php endif; ?>
                   <?php endif; ?>
@@ -272,7 +198,58 @@
               </div>
             </div>
             <hr />
-            
+            <div class="boxDestaque inter">
+              <div class="destaque jg">
+                <span class="minhoca"></span>
+                <h2><span class="ico-cross"></span><span class="tit">Atividades</span></h2>
+                <div class="boxVideos">
+                  <div class="videoThumbs">
+                    <ul>
+                      <?php
+                      if(!isset($displays['destaque-jogos'])){
+                        $block = Doctrine::getTable('Block')->findOneById(317);
+                        if($block)
+                          $jogos = $block->retriveDisplays();
+                      }else
+                          $jogos = $displays['destaque-jogos'];
+                      ?>
+                      <?php if(isset($jogos)): ?>
+                        <?php if(count($jogos) > 0): ?>
+                          <?php foreach($jogos as $k=>$d): ?>
+                            <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
+                              <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
+                            <?php endif; ?>
+                          <?php endforeach; ?>
+                        <?php endif; ?>
+                      <?php endif; ?>
+                    </ul>
+                  </div>
+                  <div class="videoBig">
+                  <?php if(isset($jogos[0])): ?>
+                    <?php if($jogos[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
+                      <a href="<?php echo $jogos[0]->retriveUrl() ?>"><img src="<?php echo $jogos[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $jogos[0]->getTitle() ?>" style="width:310px" /></a>
+                    <?php endif; ?>
+                  <?php endif; ?>
+                  </div>
+                </div>
+              </div>
+              
+                <?php
+                if(!isset($curiosidades)){
+                  $block = Doctrine::getTable('Block')->findOneById(332);
+                  if($block)
+                    $curiosidades = $block->retriveDisplays();
+                }
+                ?>
+                <?php if(isset($curiosidades[0])): ?>
+                <div class="curiosidades">
+                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
+                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                </div>
+                <?php endif; ?>
+
+            <hr />
+          </div>
         </div>
 
                     </div>
