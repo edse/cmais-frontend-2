@@ -1,5 +1,13 @@
-.bg-chamada,
+.bg-chamada { background:#550d19; }
 .bg-site { background: url(/portal/images/capaPrograma/diadosnamorados/bkg.png) repeat; }
 #barra-site .redes { float: right; }
 #chamada { margin-bottom:0; }
 #barra-site h2 { margin-top:20px; }
+.contato form .linha .select { width:634px; }
+.lista-videos { clear:both; width: 640px; overflow: hidden; }
+.lista-videos li { width: 310px; float:left; margin:0 10px 20px 0; }
+.lista-videos a { margin-bottom:0; font-weight: bold; }
+.contato form .linha label { color:#ff6633; }
+.contato form .linha select, 
+.contato form .linha input,
+.contato form .linha textarea { border-color: #ff6633; }
