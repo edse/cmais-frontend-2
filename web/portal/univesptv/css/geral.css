@@ -129,8 +129,8 @@
 #box-videos .episodio { background:#333; color:#fff; width:59px; height:38px; display:block; float:left; font-size:12px; font-weight:bold; text-align:center; margin:1px 5px 0 0; padding-top:7px; }
 #box-videos .episodio.ativo,
 #box-videos .episodio:hover {background:#af111d; text-decoration:none;}
-#box-videos .conteudo-lista {height:50px;}
-#box-videos ul { overflow-x:hidden; max-height:420px; margin:0;}
+/*#box-videos .conteudo-lista {max-height:55px;}*/
+#box-videos ul { overflow-x:hidden; overflow-y:scroll; max-height:420px; margin:0;}
 #box-videos li {width:290px;}
 
 /* /PROGRAMA  SIMPLES EPISODIOS */
