@@ -38,7 +38,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/ludovico-show.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/voce-escolhe.css" type="text/css" />
+
     <!--/CSS-->
      
     <!--SCRIPT--> 
@@ -75,7 +75,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
         type: "POST",
         dataType: "json",
         data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
-        url: "<?php //echo url_for('homepage')?>/ajax/enquetes",
+        url: "<?php echo url_for('homepage')?>ajax/enquetes",
         beforeSend: function(){
           $('.sim, .nao').hide();
           $('#espera').fadeIn('slow');

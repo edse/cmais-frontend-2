@@ -9,7 +9,6 @@ $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 $img_a = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
 $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
-
 ?>
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
