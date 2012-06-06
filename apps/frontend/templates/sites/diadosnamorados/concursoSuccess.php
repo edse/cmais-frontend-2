@@ -79,8 +79,8 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
 
-                <h3 class="tit-pagina grid2">Concurso Amor declarado</h3>  
-                <p>O amor está no ar; e na TV Cultura também! No Dia dos Namorados você pode surpreender o (a) seu (sua) amado (a) de um jeito bem especial e diferente. Escolha um vídeo e mande-nos a sua declaração de amor, conforme o formulário abaixo. As cinco mais criativas serão enviadas, via e-mail, pela TV Cultura e ainda ganharão destaque em nossa página na internet. Gostou? Então mande já a sua mensagem de amor!</p>
+                <h3 class="tit-pagina grid2">Concurso Amor Declarado</h3>  
+                <p>O amor está no ar; e na TV Cultura também! No Dia dos Namorados você pode surpreender o (a) seu (sua) amado (a) de um jeito bem especial e diferente. Escolha um vídeo para oferecer ao seu amor e mande-nos a sua declaração, conforme o formulário abaixo. As cinco mais criativas serão enviadas, via e-mail, pela TV Cultura e ainda ganharão destaque em nossa página na internet. Gostou? Então mande já a sua mensagem de amor!</p>
                 <ul class="lista-videos">
                 	<li>
                 		<iframe  width="310" height="174" src="http://www.youtube.com/embed/YwfijL3BkjI?wmode=transparent" frameborder="0" allowfullscreen></iframe>
@@ -153,21 +153,22 @@
                     <hr />
                   </div>
                 <form id="form-contato" method="post" action="">
-                  <div class="linha t4" style="width:312px">
+                  <div class="linha t3">
                     <label>seu nome</label>
-                    <input type="text" name="nome" id="nome" style="width: 302px" />
+                    <input type="text" name="nome" id="nome" />
                   </div>
                   
-                  <div class="linha t4">
+                  <div class="linha t3">
                     <label>seu email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                   <div class="linha t4" style="width:312px">
+                  <br />
+                   <div class="linha t3" >
                     <label>nome do(a) namorado(a)</label>
-                    <input type="text" name="nome_namorado" id="nome_namorado" style="width: 302px" />
+                    <input type="text" name="nome_namorado" id="nome_namorado"  />
                   </div>
                   
-                  <div class="linha t4">
+                  <div class="linha t3">
                     <label>email namorado(a)</label>
                     <input type="text" name="email_namorado" id="email_namorado" />
                   </div>
@@ -191,7 +192,7 @@
                       
                   </select>
                   </div>
-                   <div class="linha t6">
+                   <div class="linha t3">
                     <label>título</label>
                     <input type="text" name="titulo" id="titulo" />
                   </div>
