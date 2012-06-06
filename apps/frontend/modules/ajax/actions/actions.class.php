@@ -986,6 +986,119 @@ class ajaxActions extends sfActions
     //}
     die();
   }
+  
+  public function executeMobilegetvideos(sfWebRequest $request){
+   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+    if($request->isXmlHttpRequest()){
+      $return = '';
+      $start = 0;
+      $items = intval($request->getParameter('items'));
+      $site = intval($request->getParameter('site'));
+      $page = intval($request->getParameter('page'));
+      if($page >= 1)
+        $start = ($page * $items)-$items;
+      if($site > 0){
+        $q = Doctrine_Query::create()
+					->select('a.*')
+					->from('Asset a, AssetVideo av')
+					->where('a.asset_type_id = 6')
+					->andWhere('av.asset_id = a.id')
+					->andWhere('a.is_active = ?', 1);
+				if($site > 0)
+					$q->andWhere('a.site_id = ?',$site);
+        $q->orderBy('a.id desc');
+        $q->limit($items);
+        $q->offset($start);
+        $assets = $q->execute();
+        foreach($assets as $d){
+					$return .= '							<!--VIDEO ITEM-->';
+					$return .= '							<li>';
+					$return .= '								<a href="http://youtube.com/v/' . $d->AssetVideo->getYoutubeId() . '">';
+					$return .= '									<fieldset class="ui-grid-a">';
+					$return .= '										<div class="ui-block-a">';
+					$return .= '											<div class="fotinho">';
+					$return .= '												<img class="" src="http://img.youtube.com/vi/' . $d->AssetVideo->getYoutubeId() .'/0.jpg" alt="' . $d->getTitle() . '" width="100%">';
+					$return .= '											</div>';
+					$return .= '										</div>';
+					$return .= '										<div class="ui-block-b video">';
+					$return .= '											<h4>' . $d->getTitle() . '</h4>';
+					if($d->getCreatedAt() != "")
+						$return .= '											<p class="data">' . format_datetime($d->getCreatedAt(),"dd/MM/yyyy HH:mm:ss") . '</p>';
+					if ($d->AssetVideo->getDuration() != "")
+						$return .= '											<p class="duracao">Duração: ' . format_datetime($d->AssetVideo->getDuration(),"HH:mm:ss") . '</p>';
+ 					$return .= '										</div>';
+					$return .= '									</fieldset>';
+					$return .= '								</a>';
+					$return .= '                <div class="linha2"></div>';
+					$return .= '							</li>';
+					$return .= '							<!--/VIDEO ITEM-->';
+        }
+      }
+      echo $return;
+    }
+    die();
+  }
+
+  public function executeMobilegetcontents(sfWebRequest $request){
+   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
+    if($request->isXmlHttpRequest()){
+      $return = '';
+      $start = 0;
+      $items = intval($request->getParameter('items'));
+      $site = intval($request->getParameter('site'));
+      $page = intval($request->getParameter('page'));
+      if($page >= 1)
+        $start = ($page * $items)-$items;
+      if($site > 0){
+        $q = Doctrine_Query::create()
+					->select('a.*')
+					->from('Asset a, AssetContent ac')
+					->where('a.asset_type_id = 1')
+					->andWhere('ac.asset_id = a.id')
+					->andWhere('a.is_active = ?', 1);
+				if($site > 0)
+					$q->andWhere('a.site_id = ?',$site);
+        $q->orderBy('a.id desc');
+        $q->limit($items);
+        $q->offset($start);
+        $assets = $q->execute();
+        //echo "site>".$site." >section> ".$section." >>>".count($assets);
+        foreach($assets as $d){
+					$return .= '							<!--ITEM NOTICIA-->';
+					$return .= '							<li>';
+					$return .= '								<a href="'. url_for('@homepage') . 'm/' . $d->getSlug() . '">';
+					$return .= '									<fieldset class="ui-grid-a">';
+					if ($d->retriveImageUrlByImageUsage("image-1-b")) {
+						$return .= '										<!--FOTO-->';
+						$return .= '										<div class="ui-block-a">';
+						$return .= '											<div class="fotinho">';
+						$return .= '												<img src="' . $d->retriveImageUrlByImageUsage("image-1-b") .'" alt="' . $d->getTitle() . '" width="100%">';
+						$return .= '											</div>';
+						$return .= '										</div>';
+						$return .= '										<!--/FOTO-->';
+						$return .= '										<!--MANCHETE-->';
+						$return .= '										<div class="ui-block-b">';
+					}
+					else {
+						$return .= '										<!--MANCHETE-->';
+						$return .= '										<div class="ui-block-b sfoto">';
+					}
+					$return .= '											<p class="foto">' . $d->getTitle() . '</p>';
+					$return .= '										</div>';
+					$return .= '										<!--/MANCHETE-->';   
+					$return .= '									</fieldset>';
+					$return .= '									<div class="linha2"></div>';
+					$return .= '								</a>';
+					$return .= '							</li>';
+					$return .= '							<!--/ITEM NOTICIA-->';
+        }
+      }
+      echo $return;
+    }
+    die();
+  }
+    
 
   public function executeStreamingunivesp(sfWebRequest $request){
     $this->setLayout(false);
