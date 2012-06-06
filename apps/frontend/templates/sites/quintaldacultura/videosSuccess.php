@@ -20,7 +20,6 @@
     
     <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/videosQuintal.css" type="text/css" />
        
     
     <!-- scripts -->
