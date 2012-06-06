@@ -12,7 +12,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"/ajax/mensagem/",
+              url:"/ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').hide();

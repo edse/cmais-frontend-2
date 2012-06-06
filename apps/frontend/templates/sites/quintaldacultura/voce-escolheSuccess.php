@@ -38,7 +38,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/ludovico-show.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/voce-escolhe.css" type="text/css" />
+
     <!--/CSS-->
      
     <!--SCRIPT--> 
