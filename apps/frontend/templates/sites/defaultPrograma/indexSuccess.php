@@ -89,6 +89,10 @@
             	
               <!-- col-esq -->
               <div class="col-esq grid1">
+              	
+                <!-- BOX PADRAO Enquete -->
+                <?php if(isset($displays["destaque-enquete-1"])) include_partial_from_folder('blocks','global/display-1c-poll', array('displays' => $displays["destaque-enquete-1"])) ?>
+                <!-- /BOX PADRAO Enquete -->
                 
                 <?php include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador"])) ?>
                 
