@@ -33,8 +33,9 @@
   <!--/GOOGLE ANALYTICS-->
   
 	<script>
+		var p = "<?php if (isset($_REQUEST['p'])) echo $_REQUEST['p'] ?>";
 		// redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
-		if ((screen.width * screen.height) / 768 >= 1024)
+		if ((screen.width * screen.height) / 768 >= 1024 && !p)
  			window.location="http://cmais.com.br";
 		/*
 		// redireciona caso a resolução seja menor que a do ipad (1024 x 768) 
