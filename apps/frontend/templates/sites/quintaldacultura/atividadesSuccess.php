@@ -63,6 +63,7 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
                 <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
             </div>
@@ -112,7 +113,7 @@
                             </ul>
                             </div>
                             <hr />
-                            <div class="boxDestaque activ">
+                            <!--div class="boxDestaque activ">
 
                               <div class="destaque jg">
                                   <span class="minhoca"></span>
@@ -121,56 +122,59 @@
                                     <div class="boxVideos">
                                       <div class="videoThumbs">
                                         <ul>
-                      <?php
-                      if(!isset($fotos)){
-                        $block = Doctrine::getTable('Block')->findOneById(321);
-                        if($block)
-                          $fotos = $block->retriveDisplays();
-                      }
-                      ?>
-                      <?php if(isset($fotos)): ?>
-                        <?php if(count($fotos) > 0): ?>
-                          <?php foreach($fotos as $k=>$d): ?>
-                            <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
-                              <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
-                            <?php endif; ?>
-                          <?php endforeach; ?>
-                        <?php endif; ?>
-                      <?php endif; ?>
+                                        <?php
+                                        if(!isset($fotos)){
+                                          $block = Doctrine::getTable('Block')->findOneById(321);
+                                          if($block)
+                                            $fotos = $block->retriveDisplays();
+                                        }
+                                        ?>
+                                        <?php if(isset($fotos)): ?>
+                                          <?php if(count($fotos) > 0): ?>
+                                            <?php foreach($fotos as $k=>$d): ?>
+                                              <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
+                                                <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
+                                              <?php endif; ?>
+                                            <?php endforeach; ?>
+                                          <?php endif; ?>
+                                        <?php endif; ?>
                                         </ul>
                                       </div>
 
                                       <div class="videoBig">
-                    <?php if(isset($fotos[0])): ?>
-                      <?php if($fotos[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
-                        <a href="<?php echo $fotos[0]->retriveUrl() ?>"><img src="<?php echo $fotos[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $fotos[0]->getTitle() ?>" style="width:310px" /></a>
-                      <?php endif; ?>
-                    <?php endif; ?>
-                                      </div>
+                                      <?php if(isset($fotos[0])): ?>
+                                        <?php if($fotos[0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
+                                          <a href="<?php echo $fotos[0]->retriveUrl() ?>"><img src="<?php echo $fotos[0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $fotos[0]->getTitle() ?>" style="width:310px" /></a>
+                                        <?php endif; ?>
+                                      <?php endif; ?>
+                                                        </div>
 
                                     </div>
                                 </div>
 
-                <?php
-                if(!isset($curiosidades)){
-                  $block = Doctrine::getTable('Block')->findOneById(332);
-                  if($block)
-                    $curiosidades = $block->retriveDisplays();
-                }
-                ?>
-                <?php if(isset($curiosidades[0])): ?>
-                <div class="curiosidades">
-                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
-                </div>
-                <?php endif; ?>
+                                <?php
+                                if(!isset($curiosidades)){
+                                  $block = Doctrine::getTable('Block')->findOneById(332);
+                                  if($block)
+                                    $curiosidades = $block->retriveDisplays();
+                                }
+                                ?>
+                                <?php if(isset($curiosidades[0])): ?>
+                                <div class="curiosidades">
+                                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
+                                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
+                                </div>
+                                <?php endif; ?>
+                
+                                <hr />
+                              </div-->
+                              <!--QUINTAL PERGUNTE FILOMENA-->
+                              <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+                              <!--/QUINTAL PERGUNTE-->
 
-                <hr />
-              </div>
-
-            </div>
+                        </div>
             
-          </div>
+                  </div>
 
           <hr />
 

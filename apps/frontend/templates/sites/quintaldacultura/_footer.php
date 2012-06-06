@@ -1,4 +1,4 @@
-      <div class="rodape">
+      <div class="rodape rodVid">
         <hr />
         <div class="menuRodape">
           <ul>

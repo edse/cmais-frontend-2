@@ -64,6 +64,8 @@
         <div class="conteudo">
 
           <div class="conteudoWrapper">
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
+
             <div class="menuVoltar">
                 <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
             </div>
@@ -81,7 +83,8 @@
                 </div>
               <span class="palhaco"></span>
             </div>
-
+            
+            
           </div>
 
           <div class="allpages">
@@ -112,9 +115,12 @@
                 <?php endif; ?>
               </ul>
             </div>
-
+            
+            <!--QUINTAL PERGUNTE FILOMENA-->
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+            <!--/QUINTAL PERGUNTE-->
             <hr />
-            <div class="boxDestaque">
+            <!--div class="boxDestaque">
               <div class="destaque jg">
                 <span class="minhoca"></span>
                   <h2><span class="ico-cross"></span><span class="tit">Atividades</span></h2>
@@ -157,7 +163,7 @@
                 <?php endif; ?>
 
                 <hr />
-              </div>
+              </div-->
 
             </div>
             

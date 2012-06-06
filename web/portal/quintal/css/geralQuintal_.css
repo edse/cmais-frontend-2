@@ -70,8 +70,7 @@ a{
 }
 .allWrapper #rodape-portal,
 .allWrapper .capa-voltar-topo{
-    margin-top: -79px !important;
-    /*margin-top: -25px !important;*/
+    margin-top: -25px !important;
 }
 hr{
 	clear: both;
@@ -80,14 +79,12 @@ hr{
 	visibility: hidden;	
 }
 .contentWrapper{
-  background: url(/portal/quintal/images/pattern-bg-quintal.jpg) scroll repeat-x;
-	/*background: url(../images/bg.jpg) no-repeat top;*/
+	background: url(../images/bg.jpg) no-repeat top;
 	padding-bottom: 0 !important;
 	width: 100%;
 	height: 1229px;
 	margin: auto;
 	margin-top:48px;
-	overflow: hidden;
 	/*padding: 0 auto*/;
 }
 .contentWrapper .cerca{
@@ -105,10 +102,9 @@ hr{
 }
 /*cabe�alho*/
 .cabecalho{
-	float: left;
-	text-align: left;
-	width: 990px;
-	position: relative;
+  float: left;
+  text-align: left;
+  width: 990px;
 }
 .cabecalho .pontilhado{
 	background: url(../images/bg-pontilhado.png) no-repeat;
@@ -127,73 +123,69 @@ hr{
 	height: 108px;
 }
 .cabecalho ul{
-	/*float: left;
-	margin-top: 15px;*/
-	position: absolute;
-  left: 138px;
-  top: 15px;
-  z-index: 10;
+	float: left;
+	margin-top: 15px;
 }
 .cabecalho ul li{
 	float: left;
 }
 .cabecalho li a{
-	background: url(../images/btn-menu.png) no-repeat;
-	display: block;
-	height: 76px;
-	margin-right: 4px;
+  background: url(../images/btn-menu.png) no-repeat;
+  display: block;
+  height: 76px;
+  margin-right: 4px;
 }
 
 .cabecalho li a span{
-	float: left;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 52px 0 0 12px;
-	text-transform: uppercase;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 52px 0 0 12px;
+  text-transform: uppercase;
 }
 .cabecalho li a.jogos{
-	background-position: 0 0;
-	width: 76px;
+  background-position: 0 0;
+  width: 76px;
 }
 .cabecalho li a.videos{
-	background-position: 0 -152px;
-	width: 79px;
+  background-position: 0 -152px;
+  width: 79px;
 }
 .cabecalho li a.atividades{
-	background-position: 0 -1291px;
-	width: 112px;
+  background-position: 0 -1291px;
+  width: 112px;
 }
 .cabecalho li a.musica{
-	background-position: 0 -456px;
-	width: 92px;
+  background-position: 0 -456px;
+  width: 80px;
 }
 .cabecalho li a.cultura{
   background-position: 0 -1446px;
   width: 92px;
 }
 .cabecalho li a.imagens{
-	background-position: 0 -608px;
-	width: 92px;
+  background-position: 0 -608px;
+  width: 92px;
 }
 .cabecalho li a.baixar{
-	background-position: 0 -760px;
-	width: 79px;
+  background-position: 0 -760px;
+  width: 79px;
 }
 .cabecalho li a.jogos:hover{
-	background-position: 0 -76px;
-	text-decoration:none;
+  background-position: 0 -76px;
+  text-decoration:none;
 }
 .cabecalho li a.videos:hover{
-	background-position: 0 -228px;
-	text-decoration:none;
+  background-position: 0 -228px;
+  text-decoration:none;
 }
 .cabecalho li a.atividades:hover{
-	background-position: 0 -1368px;
-	text-decoration:none;
+  background-position: 0 -1368px;
+  text-decoration:none;
 }
 .cabecalho li a.musica:hover{
-	background-position: 0 -533px;
-	text-decoration:none;
+  background-position: 0 -533px;
+  text-decoration:none;
 }
 .cabecalho li a.cultura span{margin-left:18px !important;}
 .cabecalho li a.cultura:hover{
@@ -201,33 +193,31 @@ hr{
   text-decoration:none;
 }
 .cabecalho li a.imagens:hover{
-	background-position: 0 -684px;
-	text-decoration:none;
+  background-position: 0 -684px;
+  text-decoration:none;
 }
 .cabecalho li a.baixar:hover{
-	background-position: 0 -836px;
-	text-decoration:none;
+  background-position: 0 -836px;
+  text-decoration:none;
 }
 .cabecalho a.paraPais{
-	background: url(../images/btn-cabecalho.png) no-repeat 0 -384px;
+  background: url(../images/btn-cabecalho.png) no-repeat 0 -384px;
   display: block;
-  width: 201px;
+  float: left;
+  margin: 28px 0 0 0px;
+  width: 211px;
   height: 64px;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  top: 29px;
 }
 .cabecalho a.paraPais:hover{
-	background-position: 0 -448px;
-	text-decoration:none;
+  background-position: 0 -448px;
+  text-decoration:none;
 }
 .cabecalho a.paraPais span{
-	float: left;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 17px 0 0 70px;
-	text-transform: uppercase;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 17px 0 0 70px;
+  text-transform: uppercase;
 }
 
 .cabecalho .fonte{
@@ -364,7 +354,7 @@ hr{
 }
 /*rodap�2*/
 .rodape{
-	/*background: url(../images/cerca_pattern.png) repeat-x;*/
+	background: url(../images/cerca_pattern.png) repeat-x;
 	margin-top: -228px;
 	display: block;
 	height: 228px;
@@ -396,7 +386,6 @@ hr{
 	text-decoration: underline;
 }
 /*conteudo*/
-.destaque.carta{margin: -13px 0 0 0;}
 .conteudo{
 	position: relative;
 	width: 970px;
@@ -637,22 +626,20 @@ hr{
 }
 .allpages .carrossel{
 	float: left;
-	/*margin: 30px 0 0 -8px;
-	top:20px;*/
-	height: 190px;
+	margin: 30px 0 0 -8px;
+	top:20px;
 }
 .carrocel .jcarousel-container{
 	margin-left: 0px;
 	width: 275px;
 	height: 55px;
-
+	
 }
 .carrossel .jcarousel-clip{
 	left: 40px;
 	padding-top: 2px;
 	width: 880px;
 	height: 190px;
-	margin:0 0 30px 0;
 }
 .carrossel .jcarousel-item{
 	width: 200px;
@@ -977,7 +964,7 @@ hr{
 	background: url(../images/bg-categorias.png) repeat-x;
 	float: left;
 	position: relative;
-	margin: 60px 0 30px 0;
+	margin-top: 40px;
 	width: 970px;
 	height: 130px;
 }
@@ -1577,15 +1564,15 @@ hr{
 .papel .palhaca{
 	margin: 0px;
 	position: absolute;
-  top: 118px;
-  left: -98px;
+	top: 287px;
+	left: -203px;
 }
 .papel .palhaco{
 	background: url(../images/img-palhaco4.png) no-repeat;
 	margin: 0px;
 	position: absolute;
-  top: 74px;
-  left: 915px;
+	top: -7px;
+	left: 948px;
 	width: 153px;
 	height: 382px;
 }
@@ -1865,7 +1852,7 @@ hr{
 	background: url(../images/img-palhaca4.png) no-repeat;	
 	margin: 0px;
 	position: absolute;
-	top: 52px;
+	top: 3px;
 	left: 875px;
 	width: 196px;
 	height: 360px;
@@ -1874,7 +1861,7 @@ hr{
 	background: url(../images/img-palhaco5.png) no-repeat;
 	margin: 0px;
 	position: absolute;
-	top: 35px;
+	top: -23px;
 	left: 985px;
 	width: 168px;
 	height: 367px;
@@ -2598,36 +2585,3 @@ z-index: 503;
 .carrossel .jcarousel-item a:hover {text-decoration:none;}
 /***** /box videos *****/
 
-/* pergunte a filomena */
-#pFilomena{position:relative;clear:both;width:700px;margin:0 0 0 50px;padding:20px 0 0 230px; min-height:251px; background:url(/portal/quintal/images/img-pergunte-filomena.png) no-repeat}
-#pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
-#pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
-#pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
-#pFilomena input.nome {width: 180px;}
-#pFilomena input.email {width: 276px;}
-#pFilomena .t1input{width: 296px;float: left;}
-#pFilomena .t2input{width: 396px;float: left;}
-#pFilomena .t2message label{margin: 15px 8px 0 0; text-align:right}
-#pFilomena .t2message label span{font-weight:normal;}
-#pFilomena .t2message textarea{margin: 15px 0 0 0; width:538px;height: 65px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
-#pFilomena .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#pFilomena label.error{color:#fff; position:absolute;left:30px; bottom:49px; margin:0 0 0 0 !important; font-size:18px}
-#pFilomena .nome.error, #pFilomena .email.error, #pFilomena .mensagem.error{border:2px red solid !important;}
-#pFilomena span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
-
-#respFilomena{clear:both; position:relative;width:700px;margin:0 0 0 50px;padding:20px 0 0 230px; min-height:251px; background:url(/portal/quintal/images/img-pergunte-filomena.png) no-repeat;}
-#respFilomena p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
-#respFilomena .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#respFilomena .recebeu{line-height: 29px;text-align: left;margin-top: 34px;}
-/* pergunte a filomena */
-/* itens background */
-.conteudoWrapper #back .pos{position:absolute;}
-#nuvem1{width:266px; height:212px; top:-25px; left:-280px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#nuvem2{width:188px; height:155px; top:-120px; left:426px;background: url(/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
-#nuvem3{width:260px; height:234px; top: -59px;left: 855px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#balao{width:196px; height:348px; top:-109px; left:-191px;background: url(/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;}
-#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
-#bau{width:441px; height:407px;top: 504px;left: -320px;background: url(/portal/quintal/back-novo/img-bg-bau.png) no-repeat; z-index:0;}
-#peteca{width:410px; height:464px;top: 423px;right: -280px; background: url(/portal/quintal/back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
-
-/* itens background */
