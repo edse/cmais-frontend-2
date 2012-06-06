@@ -1191,4 +1191,103 @@ EOT;
   	die(str_replace("&","",$content));
   }  
 
+
+  public function executeEnquetes(sfWebRequest $request){
+    $request->checkCSRFProtection();
+    //if(!$request->isXmlHttpRequest()) die();
+
+    if($request->getParameter('opcao') > 0){
+          
+      $aa = Doctrine::getTable('AssetAnswer')->findOneById($request->getParameter('opcao'));
+      $aq = Doctrine::getTable('AssetQuestion')->findOneById($aa->AssetQuestion->id);
+      
+      if($aq->getWorksheetId()!="" && $aq->getSpreadsheetId()!=""){
+          
+        $clientLibraryPath = sfConfig::get('sf_lib_dir').'/vendor/ZendGdata-1.11.11/library';
+        $oldPath = set_include_path($clientLibraryPath);
+        // load Zend Gdata libraries
+        require_once 'Zend/Loader.php';
+        Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');
+        Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
+        
+        // set credentials for ClientLogin authentication
+        $user = "cmp@tvcultura.com.br";
+        $pass = "alipio@28042011";
+        
+        try {
+          // connect to API
+          $service = Zend_Gdata_Spreadsheets::AUTH_SERVICE_NAME;
+          $client = Zend_Gdata_ClientLogin::getHttpClient($user, $pass, $service);
+          $service = new Zend_Gdata_Spreadsheets($client);
+        
+          // set target spreadsheet and worksheet
+          $ssKey = $aa->AssetQuestion->getSpreadsheetId();
+          $wsKey = $aa->AssetQuestion->getWorksheetId();
+        
+          $row = array(
+            "date" => date("d/m/Y H:i:s"), 
+            "token" => time(), 
+            "vote" => $_REQUEST["opcao"]
+          );
+        
+          // insert new row
+          $entryResult = $service->insertRow($row, $ssKey, $wsKey);
+          //echo 'The ID of the new row entry is: ' . $entryResult->id;
+
+          // get rows matching query
+          $query = new Zend_Gdata_Spreadsheets_ListQuery();
+          $query->setSpreadsheetKey($ssKey);
+          $query->setWorksheetId($wsKey);
+          //$query->setReverse('true');
+          //$query->setSpreadsheetQuery("vote=\"6\" and date<\"3/6/2012 7:01:44\"");
+          //$query->setSpreadsheetQuery("vote=\"6\" and date<\"".date("d/m/Y")." 8:00:00\"");
+          
+          $result = null;
+          $total = 0;
+          foreach($aq->Answers as $a){
+            $query->setSpreadsheetQuery("vote=\"".$a->getId()."\" and token>\"".(time()-86400)."\"");
+            $listFeed = $service->getListFeed($query);
+            $result[] = array("answer"=>$a->Asset->getTitle(), "votes"=>count($listFeed));
+            $total += count($listFeed);
+          }
+          
+          $resultp = null;
+          foreach($result as $r){
+            $resultp[] = array("answer"=>$r["answer"], "votes"=>number_format(100*$r["votes"]/$total, 2)."%");
+          }
+          die(json_encode($resultp));
+        } catch (Exception $e) {
+          die('ERROR: '.$e->getMessage());
+        }
+
+      }
+
+    }
+  }  
+
+  public function executeMensagem(sfWebRequest $request){
+    $request->checkCSRFProtection();
+    $email_site = "quintal.tv@gmail.com";
+    $email_user = strip_tags($request->getParameter('email'));
+    $nome_user = strip_tags($request->getParameter('nome'));
+    ini_set('sendmail_from', $email_site);
+    $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
+    while(list($campo, $valor) = each($_REQUEST)) {
+      if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+        $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+    }
+    $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
+    $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
+    $cabecalho .= "X-Priority: 3\r\n";
+    $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
+    $cabecalho .= "MIME-Version: 1.0\r\n";
+    $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
+    $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+    if(mail($email_site, '[Quintal da Cultura][Pergunta para Filomena] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho))
+      die("1");
+    else
+      die("0");
+  }
+
+
 }
