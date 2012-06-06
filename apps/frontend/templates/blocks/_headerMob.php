@@ -33,11 +33,10 @@
   <!--/GOOGLE ANALYTICS-->
   
 	<script>
-	/*
 		// redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
 		if ((screen.width * screen.height) / 768 >= 1024)
  			window.location="http://cmais.com.br";
- 			
+		/*
 		// redireciona caso a resolução seja menor que a do ipad (1024 x 768) 
 		if ((screen.width * screen.height) / 768 < 1024)
  			window.location="http://m.cmais.com.br";
