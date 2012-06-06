@@ -115,7 +115,7 @@
 <!--/Pergunte a Filomena-->
 
 <div id="respFilomena" style="display:none;">
-  <p class="recebeu">A Filomena já recebeu a sua pergunta, em breve você receberá um e-mail com a resposta.</p>
+  <p class="recebeu">A Filomena já recebeu a sua pergunta. Fique ligado no programa ao vivo, quem sabe é a sua dúvida que ela irá solucionar.</p>
   <p>AGUARDE!</p>
   <a class="btn-enviar" href="javascript:;">
     ENVIAR OUTRA PERGUNTA
