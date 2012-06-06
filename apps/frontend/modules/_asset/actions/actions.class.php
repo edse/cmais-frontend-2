@@ -348,8 +348,16 @@ class _assetActions extends sfActions
 		
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
-    
-    if($this->site->getSlug() == "quintaldacultura"){
+		
+		if ($request->getParameter('param1') == "m") {
+			if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
+	      $this->setLayout(false);
+				if($debug)
+					print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug();
+	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
+			}
+    }
+		elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
       foreach($this->asset->Sections as $s){
         if(in_array($s->id, array('92','98','99','100','101'))){
