@@ -1,0 +1,50 @@
+.cabecalho{*margin-top:50px;}
+/* conteudo */
+.content.videos {height: 970px;}
+.contentWrapper {/*background: url(../images/bg.jpg) no-repeat center 0px;*/height: 1176px !important;}
+.contentWrapper {*height: 1100px;}
+
+/* meio */
+.conteudoWrapper {height: 450px}
+.carrosselWrapper{background:none;}
+.categorias{float:left;}
+
+.categorias a.mais .tit {color:#FFF;}
+.categorias p.categoriaSelecionada {margin: 15px 0 0 10px;color:#FFF;}
+
+.carrosselWrapper{margin-top:-20px !important;}
+.carrosselWrapper .carrossel {margin: 0px 0 0 0px;}
+.carrosselWrapper .carrossel .jcarousel-clip {width: 892px;height: 353px;}
+.tampa{display: block; width:1000px; height:380px;position:absolute;z-index: 9999;}
+
+.carrosselWrapper .carrossel ul{height: 400px;}
+.carrosselWrapper .carrossel ul li.topo{position:absolute !important; top:0px; height: 97px; }
+.carrosselWrapper .carrossel ul li.embaixo{position:absolute !important; top:160px;height: 97px; }
+
+.videosbox .palhaco {margin: 30px 0 0 23px}
+.videosBox .rodaGigante {background: url(../images/roda.png) no-repeat;float: left;position: relative;width: 390px;height: 527px;margin: 0 0 30px 75px;}
+.videosbox .palhaca {margin: 35px 0 0 80px;}
+.videosBox a.todosVideos {position:absolute !important; top: 126px !important;left: 150px !important;}
+.videosbox .rodaGigante a{display:block;text-align: center !important;}
+
+a.musicasquintal, a.historiadesenhada, a.momentofabuloso, a.historiapraboi, a.quintaldascriancas{padding-top:55px; font-weight:bolder; text-align:center;}
+a.musicasquintal:hover, a.historiadesenhada:hover, a.momentofabuloso:hover, a.historiapraboi:hover, a.quintaldascriancas:hover{color:#e37606;}
+.musicasquintal{ width:112px !important; height:39px !important; background: url(../images/btn-videos_musicas-do-quintal.png) no-repeat !important;position:absolute;top:20px;}
+.historiadesenhada{ width:112px !important; height:39px !important; background: url(../images/btn-videos_historia-desenhada.png) no-repeat !important;position:absolute;top:-16px;right:46px}
+.momentofabuloso{ width:112px !important; height:39px !important; background: url(../images/btn-videos_momento-fabuloso.png) no-repeat !important;position:absolute;top:155px;right:-40px}
+.historiapraboi{ width:143px !important; height:39px !important; background: url(../images/btn-videos_historias-pra-boi.png) no-repeat !important;position:absolute;top:320px;left: 158px;}
+.quintaldascriancas{ width:124px !important; height:39px !important; background: url(../images/btn-videos_quintal-das-criancas.png) no-repeat !important;position:absolute;top:213px;left:-31px;}
+
+.carrossel .jcarousel-prev {left:0px !important; top:112px;}
+.carrossel .jcarousel-next {top:112px;}
+
+/* destaque rodape */
+
+.boxDestaque {position: absolute;z-index: 1;margin-top: 117px;}
+.boxDestaque .curiosidades {padding-left: 0px;}
+.curiosidades p, .curiosidades h3 {width: 277px}
+.destaque .minhoca {background: url(../images/minhoca.png) no-repeat -104px 0px !important;display: block;position: absolute;top: 98px;left: -45px;width: 200px;height: 180px;}
+
+/* rodape */
+.rodape {/*background: url(../images/cerca_pattern.png) repeat-x;*/margin: -61px 0 0 0;display: block;height: 228px;width: 100%; *margin-left: 0px !important}
+.rodape .menuRodape {margin-top: 181px;}
