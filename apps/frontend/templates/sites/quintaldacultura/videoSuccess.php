@@ -83,10 +83,9 @@
       ->orderBy('a.id desc')
       ->execute();
   }
-  /*
   else{
-  	if($asset->Section->getSlug() != 'todos')
-			$assets = $asset->Section->getAssets();
+  	if(isset($section) && $section->getSlug() != 'todos')
+			$assets = $section->getAssets();
 		else {
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
@@ -98,8 +97,6 @@
 	      ->execute();
 		}
   }
-  */
-
   if(!isset($asset)){
     $asset = $assets[0];
   }
