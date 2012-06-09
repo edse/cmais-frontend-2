@@ -83,6 +83,7 @@
       ->orderBy('a.id desc')
       ->execute();
   }
+  /*
   else{
   	if($asset->Section->getSlug() != 'todos')
 			$assets = $asset->Section->getAssets();
@@ -97,6 +98,8 @@
 	      ->execute();
 		}
   }
+  */
+
   if(!isset($asset)){
     $asset = $assets[0];
   }
