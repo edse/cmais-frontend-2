@@ -92,23 +92,23 @@
            
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
-              if(orientacao == 0  && $('#destaque').width() <= 330 || orientacao == 180  && $('#destaque').width() <= 330){
+              if(orientacao == 0  && $(window).width() <= 330 || orientacao == 180  && $(window).width() <= 330){
                 $('#destaque').css('width','320px');
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && $('#destaque').width() <= 490 || orientacao == -90 && $('#destaque').width() <= 490){
+              }else if(orientacao == 90 && $(window).width() <= 490 || orientacao == -90 && $(window).width() <= 490){
                 $('#destaque').css('width','480px');
                 quant = 3;
                 liga = true;
-              }else if($('#destaque').width() <= 640) {
+              }else if($(window).width() <= 640) {
                 $('#destaque').css('width','320px'); 
                 quant = 2;
                 liga = true;
-              }else if($('#destaque').width() <= 764) {
+              }else if($(window).width() <= 764) {
                 $('#destaque').css('width','640px'); 
                 quant = 4;
                 liga = true;
-              }else if($('#destaque').width() >= 1024) {
+              }else if($(window).width() >= 1024) {
                 $('#destaque').css('width','100%');  
                 quant = 5;
                 liga = false;
