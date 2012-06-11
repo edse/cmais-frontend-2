@@ -99,9 +99,12 @@
               }else if(orientacao == 90 && $('#cmais').width() <= 490 || orientacao == -90 && $('#cmais').width() <= 490){
                 quant = 3;
                 liga = true;
+              }else if($('#cmais').width() == 400) {
+                quant = 2;
+                liga = true;
               }else if($('#cmais').width() <= 683) {
                 quant = 4;
-                liga = false;
+                liga = true;
               }else if($('#cmais').width() >= 1024) {
                 quant = 5;
                 liga = false;
