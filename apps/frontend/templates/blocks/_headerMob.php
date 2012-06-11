@@ -100,10 +100,10 @@
                 liga = true;
               }
               //orientacao para samsung tablet
-              else if($('#destaque').width() <= 800){
+              /*else if($('#destaque').width() <= 800){
                 quant = 5;
                 liga = false
-              }
+              }*/
               
               
             }
