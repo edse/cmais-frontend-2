@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
-  <title>Cmais+</title> 
+  <title>Cmais+ Mobile</title> 
   
   <!--HEADER PADRAO JQUERY MOBILE-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
