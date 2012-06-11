@@ -154,7 +154,7 @@
         
 <!--BUBBLE BOOKMARK-->
   <link rel="stylesheet" href="/js/bubblemark/css/add2home.css">
-  <link rel="apple-touch-icon" href="/portal/images/capaPrograma/mob/ico-transito-final-ipod.png">
+  <link rel="apple-touch-icon" href="/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
   <script type="text/javascript">
   var addToHomeConfig = {
     autostart:true,
