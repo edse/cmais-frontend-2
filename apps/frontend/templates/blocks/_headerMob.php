@@ -92,6 +92,8 @@
            
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
+              alert($('#cmais').width());
+              /*
               if(orientacao == 0  && window.width <= 330 || orientacao == 180  && window.width <= 330){
                 quant = 2;
                 liga = true;
@@ -105,7 +107,7 @@
                 quant = 5;
                 liga = false;
               }
-              
+              */
               
               
             }
