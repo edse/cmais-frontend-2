@@ -101,7 +101,8 @@
               }
               //orientacao para samsung tablet
               else if($('#destaque').width() <= 800){
-                quant = 3;
+                $('#destaque').width('320');
+                quant = 2;
                 liga = true;
               }
               else if($('#destaque').width() > 800){
