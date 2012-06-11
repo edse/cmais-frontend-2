@@ -93,22 +93,22 @@
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
              
-              if($('#cmais').width() >= 1024) {
-                $('#destaque').css('width','100%'); 
-                quant = 5;
-                liga = false;
+              if(orientacao == 0  && $('#cmais').width() <= 410 || orientacao == 180  && $('#cmais').width() <= 410){
+                $('#destaque').css('width','320px'); 
+                quant = 2;
+                liga = true;
+              }else if(orientacao == 90 && $('#cmais').width() <= 490 || orientacao == -90 && $('#cmais').width() <= 490){
+                $('#destaque').css('width','480px'); 
+                quant = 3;
+                liga = true;
               }else if($('#cmais').width() <= 764) {
                 $('#destaque').css('width','640px'); 
                 quant = 4;
                 liga = true;
-              }else if(orientacao == 90 && $('#cmais').width() <= 500 || orientacao == -90 && $('#cmais').width() <= 500){
-                $('#destaque').css('width','480px'); 
-                quant = 3;
-                liga = true;
-              }else if(orientacao == 0  && $('#cmais').width() <= 410 || orientacao == 180  && $('#cmais').width() <= 410){
-                $('#destaque').css('width','320px'); 
-                quant = 2;
-                liga = true;
+              }else if($('#cmais').width() >= 1024) {
+                $('#destaque').css('width','100%'); 
+                quant = 5;
+                liga = false;
               }
               
               
@@ -120,9 +120,9 @@
             $(window).orientationchange(function(){
               verificaTela();
               if($('#destaque').width() >= 410){
-                $('.tc-paging-item:contains("2")').hide();
+                $('.tc-paging-item:contains("3")').hide();
               }else{
-                $('.tc-paging-item:contains("2")').show();
+                $('.tc-paging-item:contains("3")').show();
               }
               
            })
