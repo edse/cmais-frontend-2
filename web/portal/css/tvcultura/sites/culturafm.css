@@ -138,7 +138,9 @@ form.selecao .item,
 .carrilhao { background-image:url(/portal/images/capaPrograma/culturafm/carrilhao.jpg) !important; }
 .timpanos { background-image:url(/portal/images/capaPrograma/culturafm/timpanos.jpg) !important; }
 .trompete { background-image:url(/portal/images/capaPrograma/culturafm/trompete.jpg) !important; }
-/*.homenagem-tineti { background-image:url(/portal/images/capaPrograma/culturafm/homenagem-tineti.jpg) !important; }*/
+.fm35-1 { background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_I.png) !important; }
+.fm35-2 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_II.png) !important;}
+.fm35-3 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_III.png) !important;}
 #barra-site h2 {margin-bottom:20px;}
 .menu-interna { margin-top:0; background:#666; }
 .menu-interna li {margin-right:0; padding:5px 20px 5px 20px; background:#666; }
