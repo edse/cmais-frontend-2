@@ -87,18 +87,18 @@
           
           function isDevice(OSName)
           {
-          var system = navigator.appVersion.toLowerCase(); // get local system values
-          var OSName = OSName.toLowerCase(); // put parameter value to lowecase
-           
-          // put some parameters value in standard names
-          if (OSName == "macos") OSName = "mac";
-          if (OSName == "windows") OSName = "win";
-          if (OSName == "unix") OSName = "x11";
+            var system = navigator.appVersion.toLowerCase(); // get local system values
+            var OSName = OSName.toLowerCase(); // put parameter value to lowecase
              
-          if (system.indexOf(OSName) != -1)
-            return true;
-          else
-            return false;
+            // put some parameters value in standard names
+            if (OSName == "macos") OSName = "mac";
+            if (OSName == "windows") OSName = "win";
+            if (OSName == "unix") OSName = "x11";
+               
+            if (system.indexOf(OSName) != -1)
+              return true;
+            else
+              return false;
           }
           if (isDevice('Android'))
           {
