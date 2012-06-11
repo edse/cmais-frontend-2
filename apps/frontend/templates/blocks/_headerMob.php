@@ -97,7 +97,7 @@
                 $('#destaque').css('width','320px'); 
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && $('#cmais').width() <= 490 || orientacao == -90 && $('#cmais').width() <= 490){
+              }else if(orientacao == 90 && $('#cmais').width() <= 480 || orientacao == -90 && $('#cmais').width() <= 480){
                 $('#destaque').css('width','480px'); 
                 quant = 3;
                 liga = true;
