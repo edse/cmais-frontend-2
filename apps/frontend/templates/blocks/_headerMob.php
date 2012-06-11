@@ -98,7 +98,8 @@
               }else if(orientacao == 90 && $('#destaque').width() <= 490 || orientacao == -90 && $('#destaque').width() <= 490){
                 quant = 3;
                 liga = true;
-              }else if($('#destaque').width() > 490) { 
+              }else if($('#destaque').width() > 490) {
+                $('#destaque').width('320'); 
                 quant = 5;
                 liga = false;
               }
