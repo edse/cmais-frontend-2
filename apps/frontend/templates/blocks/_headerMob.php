@@ -85,13 +85,28 @@
           var liga;
           var orientacao = window.orientation;
           
-          
+          function isDevice(OSName)
+          {
+          var system = navigator.appVersion.toLowerCase(); // get local system values
+          var OSName = OSName.toLowerCase(); // put parameter value to lowecase
+           
+          // put some parameters value in standard names
+          if (OSName == "macos") OSName = "mac";
+          if (OSName == "windows") OSName = "win";
+          if (OSName == "unix") OSName = "x11";
+             
+          if (system.indexOf(OSName) != -1)
+            return true;
+          else
+            return false;
+          }
+          if (isDevice('Android'))
+          {
+            $.mobile.orientationChangeEnabled = false;
+          }
           $(function(){
             
-            if (isDevice('Android'))
-            {
-              $.mobile.orientationChangeEnabled = false;
-            }
+            
                       
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
