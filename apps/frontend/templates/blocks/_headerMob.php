@@ -92,22 +92,21 @@
            
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
-              alert($('#cmais').width());
-              /*
-              if(orientacao == 0  && window.width <= 330 || orientacao == 180  && window.width <= 330){
+             
+              if(orientacao == 0  && $('#cmais').width() <= 330 || orientacao == 180  && $('#cmais').width() <= 330){
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && window.width <= 490 || orientacao == -90 && window.width <= 490){
+              }else if(orientacao == 90 && $('#cmais').width() <= 490 || orientacao == -90 && $('#cmais').width() <= 490){
                 quant = 3;
                 liga = true;
-              }else if(window.width <= 640) {
+              }else if($('#cmais').width() <= 683) {
                 quant = 4;
-                liga = true;
-              }else if(window.width >= 1024) {
+                liga = false;
+              }else if($('#cmais').width() >= 1024) {
                 quant = 5;
                 liga = false;
               }
-              */
+              
               
               
             }
