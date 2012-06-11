@@ -99,7 +99,7 @@
                 quant = 3;
                 liga = true;
               }else if($('#destaque').width() <= 640) {
-                $('#destaque').width('320'); 
+                $('#destaque').width('480'); 
                 quant = 2;
                 liga = true;
               }else if($('#destaque').width() <= 764) {
