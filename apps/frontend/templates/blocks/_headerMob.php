@@ -93,14 +93,18 @@
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
              
-              if($('#cmais').width() <= 410){
+              if($('#cmais').width() >= 100 ){
                 $('#destaque').css('width','320px'); 
-                quant = 2;
-                liga = true;
-              }else if($('#cmais').width() <= 1024 || $('#cmais').width() <= 1024){
-                $('#destaque').css('width','480px'); 
                 quant = 3;
                 liga = true;
+              }if($('#cmais').width() >= 410){
+                $('#destaque').css('width','480px'); 
+                quant = 2;
+                liga = true;
+              }else if($('#cmais').width() >= 1024 ){
+                $('#destaque').css('width','800px'); 
+                quant = 5;
+                liga = false;
               }
               
               
