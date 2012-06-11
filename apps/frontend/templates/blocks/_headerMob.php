@@ -92,7 +92,7 @@
            
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
-              if(orientacao == 0  && $('#destaque').width() <= 300 || orientacao == 180  && $('#destaque').width() <= 300){
+              if(orientacao == 0  && $('#destaque').width() <= 330 || orientacao == 180  && $('#destaque').width() <= 330){
                 quant = 2;
                 liga = true;
               }else if(orientacao == 90 && $('#destaque').width() <= 490 || orientacao == -90 && $('#destaque').width() <= 490){
@@ -102,7 +102,7 @@
               //orientacao para samsung tablet
               else if($('#destaque').width() <= 640){
                 quant = 4;
-                liga = false
+                liga = true
               }
               else if($('#destaque').width() > 640){
                 quant = 5;
