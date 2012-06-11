@@ -7,6 +7,8 @@
  * 
  * @property integer $asset_id
  * @property integer $asset_questionnaire_id
+ * @property string $spreadsheet_id
+ * @property string $worksheet_id
  * @property string $question
  * @property Asset $Asset
  * @property AssetQuestionnaire $AssetQuestionnaire
@@ -14,12 +16,16 @@
  * 
  * @method integer             getAssetId()                Returns the current record's "asset_id" value
  * @method integer             getAssetQuestionnaireId()   Returns the current record's "asset_questionnaire_id" value
+ * @method string              getSpreadsheetId()          Returns the current record's "spreadsheet_id" value
+ * @method string              getWorksheetId()            Returns the current record's "worksheet_id" value
  * @method string              getQuestion()               Returns the current record's "question" value
  * @method Asset               getAsset()                  Returns the current record's "Asset" value
  * @method AssetQuestionnaire  getAssetQuestionnaire()     Returns the current record's "AssetQuestionnaire" value
  * @method Doctrine_Collection getAnswers()                Returns the current record's "Answers" collection
  * @method AssetQuestion       setAssetId()                Sets the current record's "asset_id" value
  * @method AssetQuestion       setAssetQuestionnaireId()   Sets the current record's "asset_questionnaire_id" value
+ * @method AssetQuestion       setSpreadsheetId()          Sets the current record's "spreadsheet_id" value
+ * @method AssetQuestion       setWorksheetId()            Sets the current record's "worksheet_id" value
  * @method AssetQuestion       setQuestion()               Sets the current record's "question" value
  * @method AssetQuestion       setAsset()                  Sets the current record's "Asset" value
  * @method AssetQuestion       setAssetQuestionnaire()     Sets the current record's "AssetQuestionnaire" value
@@ -40,6 +46,14 @@ abstract class BaseAssetQuestion extends sfDoctrineRecord
              ));
         $this->hasColumn('asset_questionnaire_id', 'integer', null, array(
              'type' => 'integer',
+             ));
+        $this->hasColumn('spreadsheet_id', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
+             ));
+        $this->hasColumn('worksheet_id', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
              ));
         $this->hasColumn('question', 'string', 255, array(
              'type' => 'string',

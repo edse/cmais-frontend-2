@@ -84,7 +84,7 @@
       ->execute();
   }
   else{
-  	if ($section->getSlug() != 'todos')
+  	if(isset($section) && $section->getSlug() != 'todos')
 			$assets = $section->getAssets();
 		else {
 	    $assets = Doctrine_Query::create()

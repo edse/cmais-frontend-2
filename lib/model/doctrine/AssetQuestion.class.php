@@ -12,4 +12,109 @@
  */
 class AssetQuestion extends BaseAssetQuestion
 {
+  
+  public function postUpdate($values){
+    //clear cache
+    #@exec("rm /var/frontend/web/cache/".str_replace("http://", "", $this->Asset->retriveUrl2()));
+
+    set_time_limit(0);
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+
+    $clientLibraryPath = sfConfig::get('sf_lib_dir').'/vendor/ZendGdata-1.11.11/library';
+    $oldPath = set_include_path($clientLibraryPath);
+    // load Zend Gdata libraries
+    require_once sfConfig::get('sf_lib_dir').'/vendor/ZendGdata-1.11.11/library/Zend/Loader.php';
+    Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');
+    Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
+
+    // set credentials for ClientLogin authentication
+    $user = "cmp@tvcultura.com.br";
+    $pass = "alipio@28042011";
+
+    //die($this->getSpreadsheetId()."<br>".$this->getWorksheetId());
+
+    try {
+      // connect to API
+      $service = Zend_Gdata_Spreadsheets::AUTH_SERVICE_NAME;
+      $client = Zend_Gdata_ClientLogin::getHttpClient($user, $pass, $service);
+      $service = new Zend_Gdata_Spreadsheets($client);
+
+      // get worksheet entry
+      $query = new Zend_Gdata_Spreadsheets_DocumentQuery();
+      $query->setSpreadsheetKey($this->getSpreadsheetId());
+      $query->setWorksheetId($this->getWorksheetId());
+      $wsEntry = $service->getWorksheetEntry($query);
+      $title = new Zend_Gdata_App_Extension_Title($this->getQuestion());
+      $wsEntry->setTitle($title);
+
+      // update entry
+      $entryResult = $service->updateEntry($wsEntry, 
+        $wsEntry->getLink('edit')->getHref());
+      echo 'The ID of the updated worksheet entry is: ' . $entryResult->id;
+
+    } catch (Exception $e) {
+      die('ERROR: ' . $e->getMessage());
+    }
+    
+  }
+
+  public function postDelete($values){
+    die('TEST');
+  }
+  
+  public function postInsert($values){
+    set_time_limit(0);
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+
+    $clientLibraryPath = sfConfig::get('sf_lib_dir').'/vendor/ZendGdata-1.11.11/library';
+    $oldPath = set_include_path($clientLibraryPath);
+    // load Zend Gdata libraries
+    require_once sfConfig::get('sf_lib_dir').'/vendor/ZendGdata-1.11.11/library/Zend/Loader.php';
+    Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');
+    Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
+
+    // set credentials for ClientLogin authentication
+    $user = "cmp@tvcultura.com.br";
+    $pass = "alipio@28042011";
+
+    try {
+      // connect to API
+      $service = Zend_Gdata_Spreadsheets::AUTH_SERVICE_NAME;
+      $client = Zend_Gdata_ClientLogin::getHttpClient($user, $pass, $service);
+      $service = new Zend_Gdata_Spreadsheets($client);
+
+      // get spreadsheet entry
+      $ssEntry = $service->getSpreadsheetEntry(
+        'https://spreadsheets.google.com/feeds/spreadsheets/'.$this->getSpreadsheetId());
+
+      // get worksheet feed for this spreadsheet
+      $wsFeed = $service->getWorksheetFeed($ssEntry);
+
+      // create new entry
+      $wsEntry = new Zend_Gdata_Spreadsheets_WorksheetEntry();
+      $title = new Zend_Gdata_App_Extension_Title($this->getQuestion());
+      $wsEntry->setTitle($title);
+      $row = new Zend_Gdata_Spreadsheets_Extension_RowCount('10');
+      $wsEntry->setRowCount($row);
+      $col = new Zend_Gdata_Spreadsheets_Extension_ColCount('3');
+      $wsEntry->setColumnCount($col);
+
+      // insert entry
+      $entryResult = $service->insertEntry($wsEntry, 
+        $wsFeed->getLink('self')->getHref());
+      $wsid = end(explode("/", $entryResult->id));
+      echo 'The ID of the new worksheet entry is: ' . $wsid;
+      
+      $this->worksheet_id = $wsid;
+      $this->save();
+      //die('ok');
+
+    } catch (Exception $e) {
+      die('ERROR: ' . $e->getMessage());
+    }
+    
+  }
+
 }
