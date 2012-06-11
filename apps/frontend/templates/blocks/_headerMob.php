@@ -98,6 +98,9 @@
               }else if(orientacao == 90 && $('#destaque').width() <= 490 || orientacao == -90 && $('#destaque').width() <= 490){
                 quant = 3;
                 liga = true;
+              }else{ 
+                quant = 2;
+                liga = true;
               }
               
               
