@@ -93,12 +93,12 @@
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
              
-              if(orientacao == 0  && $('#cmais').width() <= 410 || orientacao == 180  && $('#cmais').width() <= 410){
-                $('#destaque').width('320'); 
+              if($('#cmais').width() <= 410){
+                $('#destaque').css('width','320px'); 
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && $('#cmais').width() <= 683 || orientacao == -90 && $('#cmais').width() <= 683){
-                $('#destaque').width('480'); 
+              }else if($('#cmais').width() <= 1024 || $('#cmais').width() <= 1024){
+                $('#destaque').css('width','480px'); 
                 quant = 3;
                 liga = true;
               }
