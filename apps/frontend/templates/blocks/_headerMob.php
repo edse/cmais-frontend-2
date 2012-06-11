@@ -99,16 +99,7 @@
                 quant = 3;
                 liga = true;
               }
-              //orientacao para samsung tablet
-              else if($('#destaque').width() <= 800){
-                quant = 3;
-                liga = true;
-              }
-              else if($('#destaque').width() > 800){
-                $('#destaque').width('640');
-                quant = 4;
-                liga = false;
-              }
+              
               
               
             }
