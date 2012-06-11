@@ -102,7 +102,7 @@
                 quant = 3;
                 liga = true;
               }else{
-                $('#destaque').css('width','480px'); 
+                $('#destaque').css('width','800px'); 
                 quant = 5;
                 liga = false;
               }
