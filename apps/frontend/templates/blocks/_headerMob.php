@@ -94,15 +94,15 @@
               //orintacao para iphone e samsung galaxy
              
               if(orientacao == 0  && $('#cmais').width() <= 410 || orientacao == 180  && $('#cmais').width() <= 410){
-                alert($('#destaque').width()); 
+                $('#destaque').width('320'); 
                 quant = 2;
                 liga = true;
               }else if(orientacao == 90 && $('#cmais').width() <= 683 || orientacao == -90 && $('#cmais').width() <= 683){
-                alert($('#destaque').width()); 
+                $('#destaque').width('480'); 
                 quant = 3;
                 liga = true;
               }else{
-                alert($('#destaque').width()); 
+                $('#destaque').width('800'); 
                 quant = 5;
                 liga = false;
               }
