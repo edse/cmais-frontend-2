@@ -97,16 +97,12 @@
                 $('#destaque').css('width','320px'); 
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && $('#cmais').width() <= 480 || orientacao == -90 && $('#cmais').width() <= 480){
+              }else if(orientacao == 90 && $('#cmais').width() <= 1024 || orientacao == -90 && $('#cmais').width() <= 1024){
                 $('#destaque').css('width','480px'); 
                 quant = 3;
                 liga = true;
-              }else if($('#cmais').width() <= 764) {
-                $('#destaque').css('width','640px'); 
-                quant = 4;
-                liga = true;
-              }else if($('#cmais').width() >= 1024) {
-                $('#destaque').css('width','100%'); 
+              }else{
+                $('#destaque').css('width','480px'); 
                 quant = 5;
                 liga = false;
               }
