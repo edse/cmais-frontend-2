@@ -115,10 +115,18 @@
                 $('#destaque').css('width','320px');
                 quant = 2;
                 liga = true;
-              }else if($('#cmais').width() > 410 ){
+              }else if($('#cmais').width() < 500 ){
                 $('#destaque').css('width','480px');
                 quant = 3;
                 liga = true;
+              }else if($('#cmais').width() < 764 ){
+                $('#destaque').css('width','640px');
+                quant = 4;
+                liga = true;
+              }else if($('#cmais').width() > 800 ){
+                $('#destaque').css('width','100%');
+                quant = 5;
+                liga = false;
               }
            }
             
