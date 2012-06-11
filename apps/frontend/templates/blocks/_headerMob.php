@@ -99,15 +99,15 @@
                 quant = 3;
                 liga = true;
               }else if($('#destaque').width() <= 640) {
-                $('#destaque').width('480'); 
+                $('#destaque').css('width','480px'); 
                 quant = 2;
                 liga = true;
               }else if($('#destaque').width() <= 764) {
-                $('#destaque').width('640'); 
+                $('#destaque').css('width','640px'); 
                 quant = 4;
                 liga = true;
               }else if($('#destaque').width() >= 1024) {
-                $('#destaque').width('100%'); 
+                $('#destaque').css('width','100%');  
                 quant = 5;
                 liga = false;
               }
