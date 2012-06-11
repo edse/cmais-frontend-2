@@ -88,7 +88,11 @@
           
           $(function(){
             
-            $.mobile.orientationChangeEnabled = false;          
+            if (isDevice('Android'))
+            {
+              $.mobile.orientationChangeEnabled = false;
+            }
+                      
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
              
