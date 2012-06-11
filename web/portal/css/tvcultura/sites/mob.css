@@ -178,7 +178,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .grade .ui-btn-inner{padding:0px;}
 .grade h2{font-size: 1.1em; margin:0 0 13px 12px !important; text-align:left;}
 .grade .hora{font-size: 1.1em;width: 60px;float: left;font-weight: lighter !important;line-height: 30px;margin-left: -33px;}
-.grade .nome{line-height:30px;font-size:0.9em;width:70%;float:left;font-weight: normal !important;}
+.grade .nome{line-height:30px;font-size:0.9em;width:70%;float:left;font-weight: normal !important;font-size: 12px;display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .grade .seta{border-radius:30px;margin-top:6px;margin-right:15px;width:20px; height:20px; float:right;background:url(/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat #979798!important;}
 .grade .seta.mudaPosicao{background-position: 0 -21px !important;}
 .grade .ui-btn-icon-left .ui-icon {display:none;}
@@ -256,7 +256,7 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .programa.degrade{text-align:left;color:#333;clear:both;border-top: 1px solid #E7E7E7; border-bottom: 1px solid #E7E7E7;}
 .programa.degrade .head{border-bottom:1px solid #969696;}
 .programa.degrade .head a{background:none;font-weight:lighter !important;font-size:1.2em;font-family:Helvetica, Arial,Tahoma, sans-serif;text-shadow:none !important;color:#333 !important;}
-.programa.degrade .head p{width:90%;float:left; margin:0 0 0 10px; padding: 11px 0;}
+.programa.degrade .head p{width:70%;float:left; margin:0 0 0 10px; padding: 11px 0;}
 .programa.degrade .head .seta{margin-top:11px}
 .programa.degrade .head .ui-block-a{width:100%;margin:0}
 .programa.degrade .ui-grid-a {margin: 0px 0 0 0;background:none;}
@@ -269,7 +269,7 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .content fieldset{background-color:#FFF; padding: 0px 12px; clear:both; }
 .content .titulo{background-color:#FFF !important; padding: 0px 12px 0px 12px; }
 .content .ui-block-a{width:75px;}
-.content .ui-block-b{border-left: 1px dashed #FF855C;height: 28px;margin: 8px 0 0 0;}
+.content .ui-block-b{border-left: 1px dashed #FF855C; width:65%;height: 28px;margin: 8px 0 0 0;}
 .content .ui-block-b p{line-height: 19px;padding: 0px 0px 0 9px;font-weight: bold;color: #FF855C;margin: 5px 0 0 0;}
 .content .voltar{width:49px;padding: 6px 9px 6px 12px;line-height: 45px;border-radius: 10px;background:url(/portal/images/capaPrograma/mob/voltar-asset.png) no-repeat 0 -7px; text-shadow:none; color:#FFF;}
 .content .fotob{width:300px; margin:10px 0; padding:0 12px;}
