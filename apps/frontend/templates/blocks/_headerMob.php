@@ -89,7 +89,7 @@
           {
             var system = navigator.appVersion.toLowerCase(); // get local system values
             var OSName = OSName.toLowerCase(); // put parameter value to lowecase
-             
+            alert(OSName); 
             // put some parameters value in standard names
             if (OSName == "macos") OSName = "mac";
             if (OSName == "windows") OSName = "win";
@@ -101,9 +101,8 @@
               return false;
           }
           if (isDevice('Android'))
-          {
             $.mobile.orientationChangeEnabled = false;
-          }
+          
           $(function(){
             
             
