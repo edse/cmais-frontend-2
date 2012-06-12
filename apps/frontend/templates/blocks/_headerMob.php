@@ -85,27 +85,49 @@
           var liga;
           var orientacao = window.orientation;
           
+          function isDevice(OSName)
+          {
+            var system = navigator.appVersion.toLowerCase(); // get local system values
+            var OSName = OSName.toLowerCase(); // put parameter value to lowecase
+            alert(OSName); 
+            // put some parameters value in standard names
+            if (OSName == "macos") OSName = "mac";
+            if (OSName == "windows") OSName = "win";
+            if (OSName == "unix") OSName = "x11";
+               
+            if (system.indexOf(OSName) != -1)
+              return true;
+            else
+              return false;
+          }
+          if (isDevice('Android'))
+            $.mobile.orientationChangeEnabled = false;
           
           $(function(){
             
-
-           
+            
+                      
             function verificaTela(){
               //orintacao para iphone e samsung galaxy
              
-              if(orientacao == 0  && $('#cmais').width() <= 410 || orientacao == 180  && $('#cmais').width() <= 410){
-                $('#destaque').width('320'); 
+              if($('#cmais').width() < 410 ){
+                $('#destaque').css('width','320px');
                 quant = 2;
                 liga = true;
-              }else if(orientacao == 90 && $('#cmais').width() <= 683 || orientacao == -90 && $('#cmais').width() <= 683){
-                $('#destaque').width('480'); 
+              }else if($('#cmais').width() < 500 ){
+                $('#destaque').css('width','480px');
                 quant = 3;
                 liga = true;
+              }else if($('#cmais').width() < 764 ){
+                $('#destaque').css('width','640px');
+                quant = 4;
+                liga = true;
+              }else if($('#cmais').width() > 800 ){
+                $('#destaque').css('width','100%');
+                quant = 5;
+                liga = false;
               }
-              
-              
-              
-            }
+           }
             
             //tira quant de paginas para o iphone
             verificaTela();
