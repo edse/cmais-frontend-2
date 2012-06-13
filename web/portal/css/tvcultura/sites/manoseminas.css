@@ -1,10 +1,6 @@
-@import url("../geral.css");
-
 /** MANOS E MINAS **/
 	
 #barra-site { background:url(../../../images/capaPrograma/manoseminas/bg.png) no-repeat right top; margin-top:0; min-height:130px;}
-#barra-site {_background-image:url(../../../images/capaPrograma/manoseminas/bg.gif);}
-
 .submenu-interna {width:126px;}
 #barra-site #horario {margin-top:40px; width:200px;}
 #chamada { margin-bottom:0; }
