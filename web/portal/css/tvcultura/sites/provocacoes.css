@@ -26,7 +26,7 @@
 /* enforque */
 
 #chamada {margin-bottom:0;}
-#barra-site #horario { margin-top:50px; }
+#barra-site #horario { margin-top:50px; width: 200px; }
 
 .ui-widget-header {
 	border: 1px solid #F63;

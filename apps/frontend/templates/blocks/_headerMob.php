@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
-  <title>Cmais+</title> 
+  <title>Cmais+ Mobile</title> 
   
   <!--HEADER PADRAO JQUERY MOBILE-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
@@ -32,7 +32,7 @@
   </script>
   <!--/GOOGLE ANALYTICS-->
   
-	<script>
+	<!--script>
 		var p = "<?php if (isset($_REQUEST['p'])) echo $_REQUEST['p'] ?>";
 		// redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
 		if ((screen.width * screen.height) / 768 >= 1024 && !p)
@@ -42,7 +42,7 @@
 		if ((screen.width * screen.height) / 768 < 1024)
  			window.location="http://m.cmais.com.br";
  		*/
-	</script>
+	</script-->
   
 
     
@@ -89,7 +89,7 @@
           {
             var system = navigator.appVersion.toLowerCase(); // get local system values
             var OSName = OSName.toLowerCase(); // put parameter value to lowecase
-            alert(OSName); 
+            //alert(OSName); 
             // put some parameters value in standard names
             if (OSName == "macos") OSName = "mac";
             if (OSName == "windows") OSName = "win";
@@ -173,9 +173,13 @@
 <!--BUBBLE BOOKMARK-->
   <link rel="stylesheet" href="/js/bubblemark/css/add2home.css">
   <link rel="apple-touch-icon" href="/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
+  <?php
+  //$schedule = 60 * 60 * 24 * 60 + time() // 2 months;
+	setcookie('lastVisit', date("G:i - m/d/y"), -1);
+  ?>
   <script type="text/javascript">
   var addToHomeConfig = {
-    autostart:true,
+    autostart:<?php echo (isset($_COOKIE['lastVisit']) ? 'false':'true') ?>,
     animationIn: 'bubble',
     animationOut: 'drop',
     lifespan:20000,

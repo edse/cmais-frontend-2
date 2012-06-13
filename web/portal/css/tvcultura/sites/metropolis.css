@@ -1,10 +1,10 @@
 /** METROPOLIS **/
 
 body{
-	background: #eee;
+	background: #f0f0f0;
 }
 .bg-metropolis{
-	background-color: #eeeeee;
+	background-color: #f0f0f0;
 }
 .bg-metropolis #chamada{
 	margin-left: 61px!important;
@@ -49,10 +49,12 @@ body{
 	font-weight: bold;
 	padding: 5px 10px;
 }
-.bg-metropolis .menu li a:hover span{
+.bg-metropolis .menu li a:hover span,
+.bg-metropolis .menu li a.ativo span{
 	color: #fff;
 }
-.bg-metropolis .menu li a:hover{
+.bg-metropolis .menu li a:hover,
+	.bg-metropolis .menu li a.ativo{
 	background: url("/portal/images/capaPrograma/metropolis/bg-menuRVOver.png") repeat-x;
 }
 .bg-metropolis .exceptionn{
