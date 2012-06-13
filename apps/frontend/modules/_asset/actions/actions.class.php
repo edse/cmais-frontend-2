@@ -350,6 +350,7 @@ class _assetActions extends sfActions
       $this->setLayout(false);
 		
 		if ($request->getParameter('param1') == "m") {
+			die();
 			if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
 	      $this->setLayout(false);
 				if($debug)
