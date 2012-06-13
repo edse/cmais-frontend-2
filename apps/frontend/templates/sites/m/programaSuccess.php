@@ -40,6 +40,7 @@
           if (videoPage == 1)
             $('#videos').hide();
           else
+            $('.loader.video').hide();
             $('#maisvideos').hide();
                       
       }
@@ -63,6 +64,7 @@
           if (contentPage == 1)
             $('#noticias').hide();
           else
+            $('.loader.not').hide();
             $('#maisnoticias').hide();
       }
     });

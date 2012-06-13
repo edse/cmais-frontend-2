@@ -4,7 +4,7 @@ body { background: none !important; }
 /*ESTRUTURAS */
 .degrade{
 background: #999; /* para browsers sem suporte a CSS 3 */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0'); /* IE */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0');  IE */
 background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0)); /* webkit browsers */
 background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 }
@@ -139,6 +139,8 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .gradeCompleta{border-radius:6px !important; background:url(/portal/images/capaPrograma/mob/pattern-cinza.gif);text-align: center;text-decoration: none !important;text-shadow: none;padding: 7px 10px ;line-height: 20px; font-size:1em;}
 .programa .gradeCompleta:active{background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
 #cmais .programa .grade{color:#FFF !important;}
+.programa #sobre li{height:auto !important;}
+.programa #sobre p{color:#333;}
 /*/PROGRAMA INTERNA*/
 
 /*RADIO*/
