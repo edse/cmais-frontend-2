@@ -138,7 +138,7 @@ if (isset($pager)) {
 					<?php foreach($siteSections as $s):
 					?>
 					<li>
-						<a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><span><?php echo $s->getTitle()
+						<a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle()
 							?></span></a>
 					</li>
 					<?php endforeach;?>

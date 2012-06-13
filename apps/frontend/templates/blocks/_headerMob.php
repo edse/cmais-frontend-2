@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
-  <title>Cmais+</title> 
+  <title>Cmais+ Mobile</title> 
   
   <!--HEADER PADRAO JQUERY MOBILE-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
@@ -173,9 +173,13 @@
 <!--BUBBLE BOOKMARK-->
   <link rel="stylesheet" href="/js/bubblemark/css/add2home.css">
   <link rel="apple-touch-icon" href="/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
+  <?php
+  //$schedule = 60 * 60 * 24 * 60 + time() // 2 months;
+	setcookie('lastVisit', date("G:i - m/d/y"), -1);
+  ?>
   <script type="text/javascript">
   var addToHomeConfig = {
-    autostart:true,
+    autostart:<?php echo (isset($_COOKIE['lastVisit']) ? 'false':'true') ?>,
     animationIn: 'bubble',
     animationOut: 'drop',
     lifespan:20000,
