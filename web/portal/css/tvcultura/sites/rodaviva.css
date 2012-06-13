@@ -68,10 +68,12 @@ body{
 	font-weight: bold;
 	padding: 5px 10px;
 }
-.bg-rodaviva .menu li a:hover span{
+.bg-rodaviva .menu li a:hover span,
+.bg-rodaviva .menu li a.ativo span{
 	color: #fff;
 }
-.bg-rodaviva .menu li a:hover{
+.bg-rodaviva .menu li a:hover,
+.bg-rodaviva .menu li a.ativo{
 	background: url("../../../images/capaPrograma/rodaviva/bg-menuRVOver.png") repeat-x;
 }
 .bg-rodaviva .exceptionn{
