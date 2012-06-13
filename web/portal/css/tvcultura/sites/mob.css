@@ -4,7 +4,7 @@ body { background: none !important; }
 /*ESTRUTURAS */
 .degrade{
 background: #999; /* para browsers sem suporte a CSS 3 */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0'); /* IE */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0');  IE */
 background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0)); /* webkit browsers */
 background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 }
