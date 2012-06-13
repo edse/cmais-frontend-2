@@ -1,12 +1,20 @@
-@import url("../geral.css");
-
 /** MANOS E MINAS **/
-/*
-#barra-site { background:url(../../../images/capaPrograma/bg-manoseminas.png) no-repeat right 2px; margin-top:0; min-height:130px;}
-#barra-site {_background-image:url(../../../images/capaPrograma/bg-manoseminas.gif);}
-*/
+	
+#barra-site { background:url(../../../images/capaPrograma/manoseminas/bg.png) no-repeat right top; margin-top:0; min-height:130px;}
 .submenu-interna {width:126px;}
 #barra-site #horario {margin-top:40px; width:200px;}
 #chamada { margin-bottom:0; }
 #barra-site h2 { margin-top:15px; }
+
+#barra-site #horario p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    background: #f0f0f0;
+    margin-right: 10px;
+    padding: 0 5px;
+    width: 135px;
+    float: right;
+}
 /** /MANOS E MINAS **/
