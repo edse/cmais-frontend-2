@@ -27,21 +27,22 @@
       url: "<?php echo url_for("@homepage") ?>ajax/mobilegetvideos",
       data: "page="+videoPage+"&items=5&site=<?php echo (int)$site->id ?>",
       beforeSend: function(){
-          $('#maisvideos').hide();
-          $('.loader.video').show();
-        },
+        $('#maisvideos').hide();
+        $('#maisvideosLoader').show();
+      },
       success: function(data){
+        $('#maisvideosLoader').hide();
         if (data != "") {
           $('#videoList').append(data);
           videoPage++;
-          $('.loader.video').hide();
           $('#maisvideos').show();
         } else
           if (videoPage == 1)
             $('#videos').hide();
-          else
-            $('.loader.video').hide();
+          else {
             $('#maisvideos').hide();
+            $('#videoList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
+          }
                       
       }
     });
@@ -52,20 +53,21 @@
       data: "page="+contentPage+"&items=5&site=<?php echo (int)$site->id ?>",
       beforeSend: function(){
           $('#maisnoticias').hide();
-          $('.loader.not').show();
+          $('#maisnoticiasLoader').show();
         },
       success: function(data){
+        $('#maisnoticiasLoader').hide();
         if (data != "") {
           $('#contentList').append(data);
           contentPage++;
-          $('.loader.not').hide();
           $('#maisnoticias').show();
         } else
           if (contentPage == 1)
             $('#noticias').hide();
-          else
-            $('.loader.not').hide();
+          else {
+            $('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
             $('#maisnoticias').hide();
+          }
       }
     });
   }
@@ -100,7 +102,7 @@
           <div class="video-item" align="center">
             <ul id="videoList">
             </ul>
-            <img class="loader video" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none;">
+            <img class="loader" id="maisvideosLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
             <a href="javascript:mobileGetVideos()" id="maisvideos" class="gradeCompleta" data-direction="slide" data-rel="external">mais vídeos</a>
           </div>
           
@@ -120,7 +122,7 @@
           <div class="noticias"  align="center">
             <ul id="contentList">
             </ul>
-            <img class="loader not" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none;">
+            <img class="loader" id="maisnoticiasLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none;">
             <a href="javascript:mobileGetContents()" id="maisnoticias" class="gradeCompleta" data-rel="external">mais notícias</a>
           </div>
         </div>

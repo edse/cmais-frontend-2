@@ -4,7 +4,7 @@ body { background: none !important; }
 /*ESTRUTURAS */
 .degrade{
 background: #999; /* para browsers sem suporte a CSS 3 */
-/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0');  IE */
+/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0');  IE */
 background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0)); /* webkit browsers */
 background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 }
@@ -107,8 +107,8 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programas .divisor{font-family:"Calibri", Helvetica, sans-serif;font-size:1.3em; color:#ff6633; text-shadow:none;}
 .programas .ui-bar-b{ padding-top:2px; padding-bottom:2px;}
 .programas .ui-li, .ui-li.ui-field-contain {border-top-width: 0;}
-.programas .programaNome a{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 0 #ffffff;}
-.programas .programaNome a:active{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -82px #ff6633 !important; text-shadow: none; }
+.programas .programaNome a{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 0 #ffffff;text-shadow: none !important; color:#333 !important; }
+.programas .programaNome a:active{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -82px #ff6633 !important; text-shadow: none !important; color:#333 !important; }
 .programas .bordas{border-top:1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; margin-top: -2px;z-index: 10;}
 .footer.programas {margin-top:15px;}
 /*/PG PROGRAMAS*/
@@ -129,8 +129,8 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa a{color:#FFF !important; text-decoration: none !important;}
 .programa h3 a{color:#333 !important;}
 .programa .ui-block-b.titulo{position:relative;height: 58px;padding: 14px 0;}
-.programa .ui-block-b.video h4{color:#333 !important; width:90%; font-size:0.8em; margin: 0 0 10px 0px !important;float: left; text-align:left;}
-.programa .ui-block-b.video p{padding-left:0px; font-size:0.6em; color:#333 !important;width:45%;}
+.programa .ui-block-b.video h4{max-height:34px; overflow:hidden;color:#333 !important; width:90%; font-size:0.8em; margin: 0 0 10px 0px !important;float: left; text-align:left;}
+.programa .ui-block-b.video p{padding-left:0px; font-size:0.5em; color:#333 !important;width:45%;}
 .programa .ui-block-b.video p.data{float:left;text-align:left;}
 .programa .ui-block-b.video p.duracao{ float:left; text-align:right;}
 .programa p.sobre{padding:15px 0 15px 0; text-align:left; font-size:0.8em;} 
@@ -210,10 +210,10 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .noticias .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;padding:5px 0 0 0}
 .noticias ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
 .noticias ul li{list-style:none; padding:5px 0 0 0}
-.noticias ul li a{text-decoration:none !important; color:#333 !important;} 
+.noticias ul li a{text-decoration:none !important; color:#333;} 
 .noticias ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
-.noticias ul li a .ui-grid-a:active{color:#ff855c !important;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
-.noticias ul li a .ui-grid-a:visited{color:#333 !important;}
+.noticias ul li a .ui-grid-b:active{color:#ff855c !important}
+.noticias ul li a .ui-grid-b:visited{color:#333;}
 .noticias h4{font-size:0.6em;text-align:left; margin:-3px 0px 0 8px}
 .noticias .ui-block-a{width:90px}
 .noticias .ui-block-b{width:65%}
@@ -279,11 +279,11 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .content .ui-block-b p{line-height: 19px;padding: 0px 0px 0 9px;font-weight: bold;color: #FF855C;margin: 5px 0 0 0;}
 .content .voltar{width:49px;padding: 6px 9px 6px 12px;line-height: 45px;border-radius: 10px;background:url(/portal/images/capaPrograma/mob/voltar-asset.png) no-repeat 0 -7px; text-shadow:none; color:#FFF;}
 .content .fotob{width:300px; margin:10px 0; padding:0 12px;}
-.content h2{font-size:1.3em !important;margin: 0;}
+.content h2{font-size:1.3em !important;margin: 0 0 0 0;}
 .content .conteudo{padding: 0 12px 12px 12px; border-bottom:1px solid #e6e6e6; clear:both;}
 .content .olho p{font-size:0.9em; max-height:10px !important; overflow:hidden; line-height: 18px;padding: 8px 0 25px 0; margin:0;}
-.content .data p{font-size:0.7em;float: left; margin:0 0 0 12px;}
-.content .autor p{font-size:0.7em;float: right; margin:0 12px 0 0;}
+.content .data p{font-size:0.7em;float: left; margin:0 0 6px 12px;}
+.content .autor p{font-size:0.7em;float: right; margin:0 12px 6px 0;}
 .content .conteudo p img { max-width:290px;  }
 .conteudo img { max-width:290px !important;  }
 .content .conteudo p iframe { max-width:290px; height:210px;  }
