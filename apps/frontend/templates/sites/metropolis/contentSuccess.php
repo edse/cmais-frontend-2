@@ -35,13 +35,18 @@
           <?php endif; ?>
 		</div>
 		<div class="box-topo grid3">
-          <?php if(count($siteSections) > 0): ?>
-          <ul class="menu">
-            <?php foreach($siteSections as $s): ?>
-					<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getSlug() == 'sobre-o-programa' && $asset->getSlug() == 'o-metropolis'): ?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle() ?></span></a></li>
-			<?php endforeach; ?>
-          </ul>
-          <?php endif; ?>
+	    <?php if(count($siteSections) > 0): ?>
+	    <ul class="menu">
+	      <?php foreach($siteSections as $s): ?>
+	      	<?php if(is_array($asset->getSections())): ?>
+				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if(in_array($s->getSlug(),$asset->getSections())): ?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle() ?></span></a></li>
+					<?php else: ?>
+	    			<?php	$sectionAsset = $asset->getSections() ?>
+				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getSlug() == $sectionAsset[0]->getSlug()): ?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle() ?></span></a></li>
+					<?php endif; ?>
+				<?php endforeach; ?>
+	    </ul>
+	    <?php endif; ?>
 		</div>
 		<!-- /box-topo -->
 	</div>
