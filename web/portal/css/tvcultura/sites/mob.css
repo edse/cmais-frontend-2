@@ -134,7 +134,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .ui-block-b.video p.data{float:left;text-align:left;}
 .programa .ui-block-b.video p.duracao{ float:left; text-align:right;}
 .programa p.sobre{padding:15px 0 15px 0; text-align:left; font-size:0.8em;} 
-.programa .linha2 {width: 100%; margin:2px 0 0 0; border-bottom: 1px dotted #6B6B6B;}
+.programa .linha2 {width: 100%; margin:2px 0 6px 0; border-bottom: 1px dotted #6B6B6B;}
 .programa .grade .ui-grid-a {margin: 0px 0 0 0;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right;}
 .programa .gradeCompleta{border-radius:6px !important; background:url(/portal/images/capaPrograma/mob/pattern-cinza.gif);text-align: center;text-decoration: none !important;text-shadow: none;padding: 7px 10px ;line-height: 20px; font-size:1em;}
 .programa .gradeCompleta:active{background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
