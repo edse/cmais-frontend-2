@@ -16,7 +16,7 @@ background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 
 .selected{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif) !important;}
 
-a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}  
+a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 
 .cor1{color:#9D44D5 !important;}/*arte e cultura*/
 .cor2{color:#369AE3 !important;}/*musica*/
@@ -123,9 +123,9 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .textoPrograma{border-left: 1px solid #bebebe;text-align: left;height: 44px; font-size:0.7em;}
 .programa .textoPrograma p{margin:0; font-size:0.8em; padding-left:10px;}
 .programa .ui-collapsible-set {margin:0 !important;}
-.programa .video-item{margin-bottom:20px !important;}
-.programa .noticias {margin-bottom:20px !important;}
-.programa ul li{list-style: none;height: auto;margin: 2px 0 0px 0;padding: 6px 0;}
+.programa .video-item{margin-bottom:9px 0 20px 0 !important;}
+.programa .noticias {margin-bottom:9px 0 20px 0  !important;}
+.programa ul li{list-style: none;height: auto;}
 .programa a{color:#FFF !important; text-decoration: none !important;}
 .programa h3 a{color:#333 !important;}
 .programa .ui-block-b.titulo{position:relative;height: 58px;padding: 14px 0;}
@@ -209,7 +209,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*NOTICIAS*/
 .noticias .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;padding:5px 0 0 0}
 .noticias ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
-.noticias ul li{list-style:none; padding:5px 0 0 0}
+.noticias ul li{list-style:none;}
 .noticias ul li a{text-decoration:none !important; color:#333;} 
 .noticias ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
 .noticias ul li a .ui-grid-b:active{color:#ff855c !important}
