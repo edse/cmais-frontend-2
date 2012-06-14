@@ -123,8 +123,8 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .textoPrograma{border-left: 1px solid #bebebe;text-align: left;height: 44px; font-size:0.7em;}
 .programa .textoPrograma p{margin:0; font-size:0.8em; padding-left:10px;}
 .programa .ui-collapsible-set {margin:0 !important;}
-.programa .video-item{margin-bottom:9px 0 20px 0 !important;}
-.programa .noticias {margin-bottom:9px 0 20px 0  !important;}
+.programa .video-item{margin:9px 0 20px 0 !important;}
+.programa .noticias {margin:9px 0 20px 0  !important;}
 .programa ul li{list-style: none;height: auto;}
 .programa a{color:#FFF !important; text-decoration: none !important;}
 .programa h3 a{color:#333 !important;}
