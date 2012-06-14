@@ -16,7 +16,7 @@ background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 
 .selected{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif) !important;}
 
-a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
+a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}  
 
 .cor1{color:#9D44D5 !important;}/*arte e cultura*/
 .cor2{color:#369AE3 !important;}/*musica*/
@@ -125,7 +125,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .ui-collapsible-set {margin:0 !important;}
 .programa .video-item{margin-bottom:20px !important;}
 .programa .noticias {margin-bottom:20px !important;}
-.programa ul li{list-style: none;height: 57px;margin: 2px 0 0px 0;padding: 6px 0;}
+.programa ul li{list-style: none;height: auto;margin: 2px 0 0px 0;padding: 6px 0;}
 .programa a{color:#FFF !important; text-decoration: none !important;}
 .programa h3 a{color:#333 !important;}
 .programa .ui-block-b.titulo{position:relative;height: 58px;padding: 14px 0;}
