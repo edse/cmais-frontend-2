@@ -220,7 +220,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .noticias .ui-block-b.sfoto{width:95%;}
 .noticias .ui-block .texto{max-height:50px;overflow: hidden; margin:0 0 3px 0;width:95%; float:left;}
 .noticias .ui-block p.foto {padding:0 0 0 10px;margin:0;width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px;}
-.noticias .ui-block-b p.foto{ color:#333;float:left;margin:0 5px 0 5px; width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px; overflow: hidden;}
+.noticias .ui-block-b p.foto{ line-height:16px;color:#333;float:left;margin:0 5px 0 5px; width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px; overflow: hidden;}
 .noticias .fotinho{width:75px; height:47px;margin:2px 0 0 10px !important;}
 .noticias {margin-bottom: 60px !important;}
 .noticias .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
