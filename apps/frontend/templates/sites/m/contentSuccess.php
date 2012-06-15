@@ -31,7 +31,24 @@
         </div-->
         
         <div class="conteudo">
+        	<?php if ($asset->AssetContent->getContent()): ?>
           <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+          <?php else: ?>
+	          <?php $relateds = $asset->retriveRelatedAssets(); ?>
+  	        <?php if (count($relateds) > 0): ?>
+          <ul>
+    		      <?php foreach($relateds as $k=>$d): ?>
+    		      	<?php if ($d->related_asset_type == 'Download'): ?>
+    		      		<?php if ($d->getAssetType() == 'Imagem'): ?>
+          	<li><a href="<?php echo $d->AssetImage->getOriginalUrl(); ?>" title="<?php echo $d->getTitle(); ?>" target="_blank"><?php echo $d->getTitle(); ?></a></li>
+          				<?php endif; ?>
+          			<?php else: ?>
+						<li><a href="<?php echo url_for('@homepage') . 'm/' . $d->getSlug() ?>" title="<?php echo $d->getTitle(); ?>"><?php echo $d->getTitle(); ?></a></li>          	
+          			<?php endif; ?>
+        		  <?php endforeach; ?>
+          </ul>
+          	<?php endif; ?>
+          <?php endif; ?>
         </div>  
           
       </div>
@@ -46,5 +63,5 @@
 <!--/PAGINA INDEX-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob') ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site,'asset'=>$asset)) ?>
 <!--/footer-->

@@ -1,3 +1,8 @@
+<?php
+	if (!isset($_COOKIE['lastVisit']))
+		setcookie('lastVisit', date("G:i - m/d/y"), -1);
+?>
+
 <!DOCTYPE html>
 <html>
   <head> 
@@ -32,17 +37,17 @@
   </script>
   <!--/GOOGLE ANALYTICS-->
   
-	<!--script>
-		var p = "<?php if (isset($_REQUEST['p'])) echo $_REQUEST['p'] ?>";
-		// redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
-		if ((screen.width * screen.height) / 768 >= 1024 && !p)
- 			window.location="http://cmais.com.br";
-		/*
-		// redireciona caso a resolução seja menor que a do ipad (1024 x 768) 
-		if ((screen.width * screen.height) / 768 < 1024)
- 			window.location="http://m.cmais.com.br";
- 		*/
-	</script-->
+  <!--script>
+    var p = "<?php if (isset($_REQUEST['p'])) echo $_REQUEST['p'] ?>";
+    // redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
+    if ((screen.width * screen.height) / 768 >= 1024 && !p)
+      window.location="http://cmais.com.br";
+    /*
+    // redireciona caso a resolução seja menor que a do ipad (1024 x 768) 
+    if ((screen.width * screen.height) / 768 < 1024)
+      window.location="http://m.cmais.com.br";
+    */
+  </script-->
   
 
     
@@ -57,28 +62,28 @@
 
 <!--JQUERY MOBILE-->
 <div data-role="page" align="center">
-	
-	<!-- TOPO -->
-	<div class="header">
-		
-		<!-- FIO LARANJA -->
-		<div class="fio"></div>
-		<!-- /FIO LARANJA -->
-		
-		<!-- BOTAO AO VIVO -->
-		<div class="aovivo" align="center">
-			<a href="<?php echo url_for('homepage') . 'm' ?>/aovivo" data-transition="slidedown">
-				<img src="/portal/images/capaPrograma/mob/aovivo.png" width="90%">
-			</a>
-		</div>	
-		<!-- /BOTAO AO VIVO -->
-		
-		<!-- LOGO CMAIS -->
-		<a href="<?php echo url_for('homepage') . 'm' ?>" data-transition="flip" class="logo">
-			<img src="/portal/images/capaPrograma/mob/logoCmais.png" alt="Cmais" width="100%"/>
-		</a>	
-		<!-- /LOGO CMAIS -->
-		<!--Swipe Carousel / ACCORDIN-->
+  
+  <!-- TOPO -->
+  <div class="header">
+    
+    <!-- FIO LARANJA -->
+    <div class="fio"></div>
+    <!-- /FIO LARANJA -->
+    
+    <!-- BOTAO AO VIVO -->
+    <div class="aovivo" align="center">
+      <a href="<?php echo url_for('homepage') . 'm' ?>/aovivo" data-transition="slidedown">
+        <img src="/portal/images/capaPrograma/mob/aovivo.png" width="90%">
+      </a>
+    </div>  
+    <!-- /BOTAO AO VIVO -->
+    
+    <!-- LOGO CMAIS -->
+    <a href="<?php echo url_for('homepage') . 'm' ?>" data-transition="flip" class="logo">
+      <img src="/portal/images/capaPrograma/mob/logoCmais.png" alt="Cmais" width="100%"/>
+    </a>  
+    <!-- /LOGO CMAIS -->
+    <!--Swipe Carousel / ACCORDIN-->
        <script type="text/javascript">
           //swipe-verificação se a tela esta na vertical ou horizontal
           var quant = 2;
@@ -89,7 +94,7 @@
           {
             var system = navigator.appVersion.toLowerCase(); // get local system values
             var OSName = OSName.toLowerCase(); // put parameter value to lowecase
-            //alert(OSName); 
+             
             // put some parameters value in standard names
             if (OSName == "macos") OSName = "mac";
             if (OSName == "windows") OSName = "win";
@@ -170,13 +175,9 @@
         });
         </script>
         
-<!--BUBBLE BOOKMARK-->
+  <!--BUBBLE BOOKMARK-->
   <link rel="stylesheet" href="/js/bubblemark/css/add2home.css">
-  <link rel="apple-touch-icon" href="/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
-  <?php
-  //$schedule = 60 * 60 * 24 * 60 + time() // 2 months;
-	setcookie('lastVisit', date("G:i - m/d/y"), -1);
-  ?>
+  <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
   <script type="text/javascript">
   var addToHomeConfig = {
     autostart:<?php echo (isset($_COOKIE['lastVisit']) ? 'false':'true') ?>,
@@ -186,10 +187,11 @@
     expire:0,
     touchIcon:true,
     arrow:true,
-    message:' Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+    message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
   };
   </script>
-  <script>
+  <script type="application/javascript" src="/js/bubblemark/add2home.js"></script>
+  <!--script>
   // get your button...
   var my_button = $(".my_button_class");
   
@@ -204,40 +206,40 @@
   });
 
   </script>
-  <script type="application/javascript" src="/js/bubblemark/add2home.js"></script>
+  <script type="application/javascript" src="/js/bubblemark/add2home.js"></script-->
   <!--BUBBLE BOOKMARK-->
 
 
-		<!-- BOTOES NAVEGACAO -->
-		<div class="botoes">
-		  <?php
-		  $pgs = array(0=>"noticia",1=> "asset",2=>"programas", 3=>"culturabrasil",4=>"culturafm");
-	  
-		  $noticiaA = strpos($_SERVER["REQUEST_URI"], $pgs[0]);
+    <!-- BOTOES NAVEGACAO -->
+    <div class="botoes">
+      <?php
+      $pgs = array(0=>"noticia",1=> "asset",2=>"programas", 3=>"culturabrasil",4=>"culturafm");
+    
+      $noticiaA = strpos($_SERVER["REQUEST_URI"], $pgs[0]);
       $noticiaB = strpos($_SERVER["REQUEST_URI"], $pgs[1]);
       $programaA = strpos($_SERVER["REQUEST_URI"], $pgs[2]);
       $radioA = strpos($_SERVER["REQUEST_URI"], $pgs[3]);
       $radioB = strpos($_SERVER["REQUEST_URI"], $pgs[4]);
-		  ?>
-			<a href="<?php echo url_for('homepage') . 'm' ?>/noticias" class="first <?php if($noticiaA==true ||$noticiaB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+      ?>
+      <a href="<?php echo url_for('homepage') . 'm' ?>/noticias" class="first <?php if($noticiaA==true ||$noticiaB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
         <p>NOTÍCIAS</p>
         <!--img src="/portal/images/capaPrograma/mob/btn-noticias.png"/-->
       </a>
-			<a href="<?php echo url_for('homepage') . 'm' ?>/programas" class="middle <?php if($programaA==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
-			   <p>PROGRAMAS</p>
-			   <!--img src="/portal/images/capaPrograma/mob/btn-programas.png"/-->
-			</a>
-			<a href="<?php echo url_for('homepage') . 'm' ?>/culturabrasil" class="<?php if($radioA==true || $radioB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
-			   <p>RÁDIO</p>
-			   <!--img src="/portal/images/capaPrograma/mob/btn-radio.png"/-->
-			</a>	
-		</div>	
-		
-		<!-- FIO PRETO -->
-		<div class="fioblack"></div>
-		<!-- /FIO PRETO -->
-		
-	</div>
-	<!-- /TOPO -->
-	
-	<?php use_helper('I18N', 'Date') ?>	
+      <a href="<?php echo url_for('homepage') . 'm' ?>/programas" class="middle <?php if($programaA==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+         <p>PROGRAMAS</p>
+         <!--img src="/portal/images/capaPrograma/mob/btn-programas.png"/-->
+      </a>
+      <a href="<?php echo url_for('homepage') . 'm' ?>/culturabrasil" class="<?php if($radioA==true || $radioB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+         <p>RÁDIO</p>
+         <!--img src="/portal/images/capaPrograma/mob/btn-radio.png"/-->
+      </a>  
+    </div>  
+    
+    <!-- FIO PRETO -->
+    <div class="fioblack"></div>
+    <!-- /FIO PRETO -->
+    
+  </div>
+  <!-- /TOPO -->
+  
+  <?php use_helper('I18N', 'Date') ?> 

@@ -7,13 +7,18 @@
 <!--/header-->
 
 <script>
-	videoPage = 1;
 	contentPage = 1;
 	function mobileGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/mobilegetcontents",
       data: "page="+contentPage+"&items=5&site=<?php echo (int)$site->id ?>",
+      beforeSend: function(){
+				$('.mais').hide();
+				$('#maisnoticiasLoader').show();
+      },
       success: function(data){
+				$('#maisnoticiasLoader').hide();
+				$('.mais').show();
         $('#contentList').append(data);
         contentPage++;
       }
@@ -62,6 +67,7 @@
       <!--/NOTICIA ITEM-->
 			*/ ?>
     </ul> 
+    <img class="loader" id="maisnoticiasLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
     <a href="javascript:mobileGetContents()" class="mais">
       mais notícias
     </a>  
@@ -71,5 +77,5 @@
 <!--/NOTICIAS-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob') ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
 <!--/footer-->

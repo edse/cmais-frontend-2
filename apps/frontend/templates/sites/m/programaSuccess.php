@@ -20,34 +20,34 @@
 <!--/header-->
 
 <script>
-  videoPage = 1;
-  contentPage = 1;
-  function mobileGetVideos() {
+	videoPage = 1;
+	contentPage = 1;
+	function mobileGetVideos() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/mobilegetvideos",
       data: "page="+videoPage+"&items=5&site=<?php echo (int)$site->id ?>",
       beforeSend: function(){
-        $('#maisvideos').hide();
-        $('#maisvideosLoader').show();
+				$('#maisvideos').hide();
+				$('#maisvideosLoader').show();
       },
       success: function(data){
-        $('#maisvideosLoader').hide();
-        if (data != "") {
-          $('#videoList').append(data);
-          videoPage++;
+				$('#maisvideosLoader').hide();
+      	if (data != "") {
+        	$('#videoList').append(data);
+        	videoPage++;
           $('#maisvideos').show();
         } else
-          if (videoPage == 1)
-            $('#videos').hide();
-          else {
-            $('#maisvideos').hide();
-            $('#videoList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
-          }
-                      
+        	if (videoPage == 1)
+        		$('#videos').hide();
+        	else {
+        		$('#maisvideos').hide();
+        		$('#videoList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
+        	}
+						        	
       }
     });
-  }
-  function mobileGetContents() {
+	}
+	function mobileGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/mobilegetcontents",
       data: "page="+contentPage+"&items=5&site=<?php echo (int)$site->id ?>",
@@ -57,23 +57,23 @@
         },
       success: function(data){
         $('#maisnoticiasLoader').hide();
-        if (data != "") {
-          $('#contentList').append(data);
-          contentPage++;
-          $('#maisnoticias').show();
-        } else
-          if (contentPage == 1)
-            $('#noticias').hide();
-          else {
-            $('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
-            $('#maisnoticias').hide();
-          }
-      }
+				if (data != "") {
+	        $('#contentList').append(data);
+	        contentPage++;
+	        $('#maisnoticias').show();
+	     	} else
+        	if (contentPage == 1)
+        		$('#noticias').hide();
+        	else {
+        		$('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
+        		$('#maisnoticias').hide();
+        	}
+     	}
     });
-  }
-  $(document).ready(function(){
-    mobileGetVideos();
-    mobileGetContents();
+	}
+	$(document).ready(function(){
+  	mobileGetVideos();
+  	mobileGetContents();
   });
 </script>
 <div id="cmais" data-fullscreen="true">
@@ -213,5 +213,5 @@
   <!--/PROGRAMA-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob') ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
 <!--/footer-->
