@@ -87,5 +87,5 @@
 <!--/PAGINA INDEX-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob') ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
 <!--/footer-->
