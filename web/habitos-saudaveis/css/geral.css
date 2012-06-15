@@ -208,7 +208,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .videos .descricao { float: left;    margin: 20px;    width: 576px;}
 .videos .capa-player { margin:25px 0 0 97px; width:420px; height:236px; clear:both; float: left; }
 .lista-videos { background:#fcebbf; width:300px; overflow: hidden; padding-bottom:5px;  }
-.lista-videos ul { width:287px; height:395px; padding:5px; margin:0; overflow-x:hidden; position:relative; }
+.lista-videos ul { width:287px; height:395px; padding:5px; margin:0; overflow-x:hidden; overflow-y:scroll; position:relative; }
 .lista-videos ul li { width:275px; height:105px;  -moz-border-radius:0 0; border-radius:0 0 ; position:relative;    }
 .lista-videos ul .thumb-video { width:140px; float:left; height:105px; }
 .lista-videos ul .descricao { width: 125px; float:left; padding:0; max-height:100px; overflow:hidden; margin:0 0 0 5px; }
@@ -474,7 +474,7 @@ z-index:5000;
 #radio .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color:#333 !important; }
 #radio .playlist div.jp-playlist ul,
 #radio div.jp-playlist {border:none !important;}
-#radio .playlist div.jp-playlist ul { max-height:240px; overflow-x:hidden; }
+#radio .playlist div.jp-playlist ul { max-height:240px; overflow-x:hidden; overflow-y:scroll; }
 
 #radio .radio2 { margin-top:13px; background:#fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; border:1px solid #bfdbf3; padding:10px 10px 10px 40px; width:260px; }
 #radio .radio2 li { margin-bottom:10px; list-style:decimal; }
