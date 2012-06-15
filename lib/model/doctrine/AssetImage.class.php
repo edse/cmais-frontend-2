@@ -17,6 +17,18 @@ class AssetImage extends BaseAssetImage
     return "<img src=\'http://midia.cmais.com.br/assets/image/image-".$s."/".$this->getFile().".jpg\' title=\'".$this->Asset->getTitle()."\' alt=\'".$this->Asset->getTitle()."\' style=\'float: left; padding-right: 15px; padding-bottom: 10px\' />";
   }
   
+  public function getImageUrl($s=3){
+    return "http://midia.cmais.com.br/assets/image/image-".$s."/".$this->getFile().".jpg";
+  }
+  
+  public function getOriginalUrl(){
+    $r = "";
+    if($this->getFile()){
+      $r =  "http://midia.cmais.com.br/assets/image/original/".$this->getFile().".jpg";
+    }
+    return $r;
+  }
+  
   public function formatBytes($bytes) {
      if ($bytes < 1024) return $bytes.' B';
      elseif ($bytes < 1048576) return round($bytes / 1024, 2).' KB';
