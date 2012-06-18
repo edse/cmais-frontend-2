@@ -1,0 +1,71 @@
+/**
+A feature is a 300x250 block which may be positioned anywhere.
+- IMAGE features (default) contain a single image or flash movie
+- HTML features contain an additional SPAN to enable buffering. These have a green bordered background.
+
+[ feature-large ]
+
+**/
+
+/****************************************************************/
+/** horizontal-features (full width row)                       **/
+/****************************************************************/
+
+DIV#horizontal-features DIV.feature-large{
+	display:inline;
+	float:left;
+	margin-right:9px;
+}
+
+
+/* vertical */
+DIV.grid-col.feature DIV.feature-large{
+	margin-bottom:10px;
+}	
+DIV.grid-col.feature DIV.last{
+	margin-bottom:0px;
+}	
+
+
+DIV.feature-large{
+	width:300px;
+	height:250px;
+	padding:0px;
+	margin:0px;
+}
+DIV.feature-large DIV{
+	background:url('../images/header/features300x250_background.gif') top left no-repeat #FFF;
+	display:block;
+	width:288px;
+	height:230px;
+	padding:20px 0px 0px 12px;
+	margin:0px;
+}
+DIV.feature-large DIV H3{
+	font-size:18px;
+	font-weight:bold;
+	display:block;
+	padding:0px 0px 20px 0px;
+	margin:0px;
+}
+DIV.feature-large DIV img{
+	vertical-align:text-top;
+	float:left;
+	display:inline;
+	padding-right:10px;
+}
+DIV.feature-large DIV P{
+	float:left;
+	display:inline;
+	padding:0px;
+	margin:0px;
+	width:148px;
+}
+DIV.feature-large DIV P a{
+	text-decoration:none;
+	color:#0066cc;
+	font-weight:bold;
+}
+DIV.feature-large DIV P a:hover{
+	text-decoration:underline;
+}

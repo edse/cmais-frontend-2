@@ -1,0 +1,22 @@
+
+/* kill header */
+DIV#header ul{display:none;}
+BODY.low-bandwidth  DIV#header, DIV#header{color:#000;background:url(../images/print_header.gif) top left no-repeat #FFF;width:918px;margin-left:25px;}
+
+/** kill search bar and submenu **/
+DIV#searchbar{display:none;}
+DIV#submenu{display:none;}
+
+/** kill footer except for copyright **/
+DIV#promos{display:none;}
+DIV#footer-banners{display:none}
+
+/* kill promo */
+DIV.grid-row.promo-row DIV.grid-col.content {width:918px;}
+DIV.grid-row.promo-row{ background:none; }  
+DIV.grid-col.promo{display:none;}
+
+/* starcursor */
+#starcursor{display:none; }
+
+.noprint{display:none;}

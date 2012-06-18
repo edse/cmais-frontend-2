@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* SEARCHBAR CONTAINER */
+DIV#searchbar {background:url(../images/searchbar/searchbg.gif) top left no-repeat #FFF;}
+
+/* SEARCHBAR NAVIGATION LIST */
+DIV#searchbar ul{margin:0px 0px 0px 16px;padding:0;list-style:none;}
+DIV#searchbar ul li{display:block;float:left;margin-top:8px;margin-right:6px;}
+DIV#searchbar ul a.search-button{display:block;width:90px;height:24px;background:top left no-repeat transparent;}
+DIV#searchbar ul a span{ display:none; }	/* make the default text disappear when we show the image */
+
+/** nav buttons **/
+DIV#searchbar a#searchbar-parents{background-image:url(../images/searchbar/btnparents.gif);}
+DIV#searchbar a#searchbar-parents.current{background-image:url(../images/searchbar/btnparents_c.gif);}
+DIV#searchbar a#searchbar-parents:hover{background-image:url(../images/searchbar/btnparents_r.gif);}
+
+DIV#searchbar a#searchbar-onair{background-image:url(../images/searchbar/btnonair.gif);}
+DIV#searchbar a#searchbar-onair.current{background-image:url(../images/searchbar/btnonair_c.gif);}
+DIV#searchbar a#searchbar-onair:hover{background-image:url(../images/searchbar/btnonair_r.gif);}
+
+DIV#searchbar a#searchbar-aboutus{background-image:url(../images/searchbar/btnaboutus.gif);}
+DIV#searchbar a#searchbar-aboutus.current{background-image:url(../images/searchbar/btnaboutus_c.gif);}
+DIV#searchbar a#searchbar-aboutus:hover{background-image:url(../images/searchbar/btnaboutus_r.gif);}
+
+DIV#searchbar a#searchbar-podcast{background-image:url(../images/searchbar/btnpodcast.gif);}
+DIV#searchbar a#searchbar-podcast.current{background-image:url(../images/searchbar/btnpodcast_c.gif);}
+DIV#searchbar a#searchbar-podcast:hover{background-image:url(../images/searchbar/btnpodcast_r.gif);}
+
+/* Low Bandwidth instruction text and link */
+DIV#searchbar li.searchbar-lowbandwidthtxt{
+	font-size:10px;
+	position:relative;
+	padding-top:7px;
+	padding-left:13px;
+	color:#FFF;
+	font-weight:bold;
+}
+DIV#searchbar li.searchbar-lowbandwidthtxt a{
+	color: #FFF;	
+	font-weight:normal;
+	text-decoration:underline !important;	
+}
+
+/* search form */
+DIV#searchbar li.searchbar-form{	
+	display:inline;
+	float:right;
+	width:198px;
+	margin-right:46px;
+}
+DIV#searchbar li.searchbar-form form{margin:0;padding:0;}
+
+DIV#searchbar li.searchbar-form a.search-button{	
+	float:left;
+	margin-left:6px;
+	height:24px;
+	width:37px;	
+	background-image:url(../images/searchbar/btnsearchgo.gif);
+}
+DIV#searchbar ul li.searchbar-form a.search-button:hover{
+	background-image:url(../images/searchbar/btnsearchgo_r.gif);
+}
+DIV#searchbar li.searchbar-form .search-field{
+	float:left;
+	color:#999;
+	
+	width:141px;
+	height:20px;
+	padding:4px 7px 0px 7px;
+	border:none;
+	background:url(../images/searchbar/txtboxsearch.gif) top left no-repeat;
+}

@@ -62,7 +62,6 @@ body { background:#fff;  }
 #direita { width:380px; float: left; margin:0; }
 #direita .azul { background-image:url(../images/bg-azul380x222.png); height:222px;  }
 #direita .roxo { background-image:url(../images/bg-roxo380x222.png); height:222px;  }
-#direita2 .vermelho { background-image:url(../images/bg-vermelho300x224.png); height:224px;  }
 
 #esquerda2 {width:640px; margin:0 0 0 10px; float: left;}
 #esquerda2 .box2 { height:auto; }
@@ -81,7 +80,7 @@ body { background:#fff;  }
 .player h3 img {margin-top:2px;}
 h3 img{ margin:5px 0 3px 10px; }
 h3 img{ *margin:5px 0 9px 10px; }
-.capa-player { width:420px; height:395px; margin:80px 0 0 60px; }
+.capa-player { width:420px; height:395px; margin:6px 0 0 60px; }
 #direita2 .thumb,
 #direita .thumb { width:360px; height:164px; -moz-border-radius:0 0 7px 7px; border-radius:0 0 7px 7px; overflow:hidden; margin-left:10px; display:block; }
 #direita2 .thumb { width:280px; height:164px; }
@@ -98,6 +97,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .carrossel .jcarousel-prev { left:10px; top:5px; }
 .carrossel .jcarousel-next { right:10px; top:5px; background-position:-50px 0;  }
 
+.tipo1 {background:#ffedb8;}
 .tipo2 { background:#a6caed; }
 .area { background:#fff; height:188px; margin-top:23px; padding:10px 13px;  }
 .tipo2 .area { background:url(../images/bg-area.jpg) repeat-x; }
@@ -121,7 +121,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .galeria { width:640px; float:left; margin-bottom:20px; }
 .galeria li { width:140px; height:105px; background-repeat:no-repeat; background-position:bottom; float:left; margin:0 20px 10px 0;  position:relative;}
 .galeria li img {  -moz-border-radius:7px 7px; border-radius:7px 7px; }
-.lista { width:97px; height:25px; display:block; background:url(../images/lista.jpg) no-repeat; float:right; text-indent:-9999px; margin-right:20px; }
+.lista { width:97px; height:25px; display:block; /*background:url(../images/lista.jpg) no-repeat;*/ float:right; text-indent:-9999px; margin-right:20px; }
 .mais { width: 97px; height:25px; background:url(../images/mais.jpg) no-repeat; display: block; text-indent:-9999px; float:right; margin-right:20px; margin-top:10px; }
 
 .centraliza { width:960px; float:left; margin-top:60px; }
@@ -191,10 +191,9 @@ h3 img{ *margin:5px 0 9px 10px; }
 .roleta .interna .carrossel { margin-top:40px; } 
 /* /roleta */
 .descricao p,
-.descricao a {font-size:12px; color:#333; margin-bottom:5px; height:auto; max-height:53px;  -moz-border-radius:0 0; border-radius:0 0; display: block; clear:both; line-height: 14px;}
+.descricao a {font-size:12px; color:#333; height:auto;  -moz-border-radius:0 0; border-radius:0 0; display: block; clear:both; line-height: 16px;}
 .descricao .tit {font-size:13px; max-height:30px; }
 .descricao .email { background:url(../images/ico-email.png) no-repeat 0 2px; padding:0 0 0 18px; color:#db582c; }
-.descricao .email { display:none; }
 .lista-personagens li { float:left; margin-right:5px; width:95px; }
 .jogos .botao {  background:url(../images/bg-botao-jogos.jpg) no-repeat;  }
 .jogos .botao:hover { background-image:url(../images/bg-botao.jpg); }
@@ -205,17 +204,17 @@ h3 img{ *margin:5px 0 9px 10px; }
 
 /* VIDEOS */
 .videos .destaques { background:url(../images/bg-videos.jpg) no-repeat; height:464px; margin-top:0; }
-.videos .descricao { float: left;    margin: 20px;    width: 576px;}
-.videos .capa-player { margin:25px 0 0 97px; width:420px; height:236px; clear:both; float: left; }
+.videos .descricao { width: 140px; float:left; margin-left:10px;}
+.videos .capa-player { margin:5px 0 0 20px; width:420px; float:left; }
 .lista-videos { background:#fcebbf; width:300px; overflow: hidden; padding-bottom:5px;  }
-.lista-videos ul { width:287px; height:395px; padding:5px; margin:0; overflow-x:hidden; overflow-y:scroll; position:relative; }
+.lista-videos ul { width:287px; height:395px; padding:5px; margin:0; overflow-x:hidden; position:relative; }
 .lista-videos ul li { width:275px; height:105px;  -moz-border-radius:0 0; border-radius:0 0 ; position:relative;    }
 .lista-videos ul .thumb-video { width:140px; float:left; height:105px; }
 .lista-videos ul .descricao { width: 125px; float:left; padding:0; max-height:100px; overflow:hidden; margin:0 0 0 5px; }
 .lista-videos ul .descricao { *height:95px; }
 #videos .navegacao a,
-.lista-videos ul .tit { color:#f76e00; text-transform:uppercase; }
-.lista-videos ul li .thumb-video a {display:block; width: 140px; height:105px; text-transform:uppercase;}
+.lista-videos ul .tit { color:#f76e00; }
+.lista-videos ul li .thumb-video a {display:block; width: 140px; height:105px;}
 .lista-videos ul li .btn { width: 134px; }
 .lista-videos ul li img { -moz-border-radius:5px 5px; border-radius:5px 5px ; }
 .lista-videos .galeria li .barra { background-image:url(../images/barra-video-140x20.png); margin-top:-20px; position:absolute; height:20px; }
@@ -437,7 +436,7 @@ z-index:5000;
 /* /tooltip*/
 
 /* apoio */
-.apoio { clear:both; height:79px; margin:0 auto; margin-bottom:20px; width: 712px;}
+.apoio { clear:both; height:79px; margin:0 auto; margin-bottom:20px; width:582px;}
 .apoio li { float:left; margin-right:50px; }
 .apoio .sesame { margin-top:9px ;}
 .apoio .tvcultura,
@@ -474,13 +473,5 @@ z-index:5000;
 #radio .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color:#333 !important; }
 #radio .playlist div.jp-playlist ul,
 #radio div.jp-playlist {border:none !important;}
-#radio .playlist div.jp-playlist ul { max-height:240px; overflow-x:hidden; overflow-y:scroll; }
-
-#radio .radio2 { margin-top:13px; background:#fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; border:1px solid #bfdbf3; padding:10px 10px 10px 40px; width:260px; }
-#radio .radio2 li { margin-bottom:10px; list-style:decimal; }
-#radio .radio2 li a:hover,
-#radio .radio2 li:hover { color:#f85654; }
-#radio .radio2 h2 { color:#6ea8cd; font-size:18px; margin-left:-20px; margin-bottom:10px; }
+#radio .playlist div.jp-playlist ul { max-height:240px; overflow-x:hidden; }
 /* /radio */
-.interna .carrossel .jcarousel-next,
-.interna .carrossel .jcarousel-prev { display:none !important; }

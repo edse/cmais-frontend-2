@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* IE specific style overrides */
+
+/* workshop menu margin fix */
+DIV#promos DIV.workshopmenu ul, BODY.low-bandwidth DIV#promos DIV.workshopmenu ul{margin-top:-3px;}
+.box.schedule-green TD{height:51px !important;}
+
+/* search bar margin fix */
+DIV#submenu ul li.subnav-search .search-field{width:135px;}
+
+/* fix for 5 column width */
+DIV.col5 {width:19.5%;}
+
+UL.col2 LI {width:49%;}
+
+DIV.grid-row.promo-row{margin-bottom:0px;}
+
+/* on air schedule table height */
+.box.schedule-green TD{vertical-align:middle; padding:5px; height:61px;}

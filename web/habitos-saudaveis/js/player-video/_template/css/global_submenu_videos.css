@@ -1,0 +1,31 @@
+/** videos-subnav buttons **/ 
+
+DIV#submenu.videos { background-image:url(../images/submenu/videos/videos_subnav_bg.gif);}
+
+DIV#submenu a#videos-subnav-home{background-image:url(../images/submenu/videos/videos_subnav_videos.gif); width:64px; }
+DIV#submenu a#videos-subnav-home.current{background-image:url(../images/submenu/videos/videos_subnav_videos_c.gif); width:64px; }
+DIV#submenu a#videos-subnav-home:hover{background-image:url(../images/submenu/videos/videos_subnav_videos_r.gif); width:64px; }
+
+DIV#submenu a#videos-subnav-browse-all{background-image:url(../images/submenu/videos/videos_subnav_browse_all.gif); width:80px; height:26px;}
+DIV#submenu a#videos-subnav-browse-all.current{background-image:url(../images/submenu/videos/videos_subnav_browse_all_c.gif); width:80px; }
+DIV#submenu a#videos-subnav-browse-all:hover{background-image:url(../images/submenu/videos/videos_subnav_browse_all_r.gif); width:80px; }
+
+DIV#submenu a#videos-subnav-by-subject{background-image:url(../images/submenu/videos/videos_subnav_by_subject.gif); width:81px; height:26px;}
+DIV#submenu a#videos-subnav-by-subject.current{background-image:url(../images/submenu/videos/videos_subnav_by_subject_c.gif); width:81px; }
+DIV#submenu a#videos-subnav-by-subject:hover{background-image:url(../images/submenu/videos/videos_subnav_by_subject_r.gif); width:81px; }
+
+DIV#submenu a#videos-subnav-by-theme{background-image:url(../images/submenu/videos/videos_subnav_by_theme.gif); width:77px; height:26px;}
+DIV#submenu a#videos-subnav-by-theme.current{background-image:url(../images/submenu/videos/videos_subnav_by_theme_c.gif); width:77px; }
+DIV#submenu a#videos-subnav-by-theme:hover{background-image:url(../images/submenu/videos/videos_subnav_by_theme_r.gif); width:77px; }
+
+DIV#submenu a#videos-subnav-by-character{background-image:url(../images/submenu/videos/videos_subnav_by_character.gif); width:92px; height:26px;}
+DIV#submenu a#videos-subnav-by-character.current{background-image:url(../images/submenu/videos/videos_subnav_by_character_c.gif); width:92px; }
+DIV#submenu a#videos-subnav-by-character:hover{background-image:url(../images/submenu/videos/videos_subnav_by_character_r.gif); width:92px; }
+
+DIV#submenu a#videos-subnav-songs{background-image:url(../images/submenu/videos/videos_subnav_songs.gif); width:55px; height:26px;}
+DIV#submenu a#videos-subnav-songs.current{background-image:url(../images/submenu/videos/videos_subnav_songs_c.gif); width:55px; height:26px;}
+DIV#submenu a#videos-subnav-songs:hover{background-image:url(../images/submenu/videos/videos_subnav_songs_r.gif); width:55px; height:26px;}
+
+DIV#submenu a#videos-subnav-classic-clips{background-image:url(../images/submenu/videos/videos_subnav_classic_clips.gif);width:88px; height:26px;}
+DIV#submenu a#videos-subnav-classic-clips.current{background-image:url(../images/submenu/videos/videos_subnav_classic_clips_c.gif);width:88px; height:26px;}
+DIV#submenu a#videos-subnav-classic-clips:hover{background-image:url(../images/submenu/videos/videos_subnav_classic_clips_r.gif);width:88px; height:26px;}

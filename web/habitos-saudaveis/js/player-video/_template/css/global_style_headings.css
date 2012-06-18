@@ -1,0 +1,39 @@
+/* text heading styles */
+H1.flush,H2.flush,H3.flush,H4.flush,H5.flush{margin-top:0;}
+H1{font-size:28px; font-weight:bold; color:#ff6600; margin:0px 0px 10px 0px;}
+H2{font-size:16px; font-weight:bold; color:#029449;margin-bottom:5px;padding:0px 0px 5px 0px;}
+H3{font-size:14px; font-weight:bold; color:#029449;margin:15px 0 15px 0px;}
+H4{font-size:14px; font-weight:bold; color:#ff6600;}
+H5{font-size:14px; font-weight:bold; color:#999999;margin-top:0px; margin-bottom:12px;}
+
+/* H1 variant for episode guide page */
+H1.episode-guide {font-size:22px;color:#999;font-weight:normal;margin-top:0px;}
+H1.episode-guide EM {color:#333;font-weight:bold; font-style:normal;}
+
+/* image heading styles */
+H1.image,H2.image,H3.image,H4.image{background:top left no-repeat transparent; height:32px; margin:0;}
+H1.image SPAN,H2.image SPAN,H3.image SPAN,H4.image SPAN{display:none; }
+/* specific image styles */
+H2.image.on-air-episode-guide { background-image:url(../images/titles/title_on_air_episode_guide.png);margin-left:10px;}
+H2.image.on-air-celebrity-guests { margin:0px 0px 0px 8px;background-image:url(../images/titles/title_on_air_celebrity_guests.png); }
+H2.image.on-air-whatsnew { margin-left:8px;background-image:url(../images/titles/title_on-air_whatsnew.png); }
+H2.image.on-air-cast { margin:0px 0px 0px 8px;background-image:url(../images/titles/title_on_air_cast.png); }
+H2.image.on-air-characters { margin:0px 0px 0px 8px;background-image:url(../images/titles/title_on_air_characters.png); }
+H2.image.topics { margin:0px;background-image:url(../images/titles/title_topics_topics.png); }
+H2.image.parenting-topics { margin:0px 0px 5px 8px;background-image:url(../images/titles/title_parents_parenting_topics.png); }
+
+/*
+H2.on-air {font-size:18px; font-weight:bold;color:#333;margin:0px;padding:0px 0px 5px 0px;}
+H2.on-air.cast {color:#009999;}
+H2.on-air.characters {color:#ed4904;}
+
+
+H2.parents-orange {margin-top:0px;font-size:20px;color:#ff6634;}
+H2.parents-main-heading {font-size:20px;color:#333;}
+
+H2.on-air.heading-orange {color:#ed4904;}
+
+
+
+H3.section-heading {margin:-9px 0px 1px 0px;}
+*/

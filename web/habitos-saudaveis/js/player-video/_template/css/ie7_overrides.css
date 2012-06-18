@@ -1,0 +1,4 @@
+/* basic row - buffered at the top to seperate - fixes IE6 margin drop bug */
+DIV.grid-row{ margin-top:9px !important; border-top:1px solid transparent;}	
+DIV.grid-row.top {margin-top:3px !important;border-top:1px solid transparent;}
+DIV.box.white-green-inset.nomargin.grid-row {border:0px solid transparent;}

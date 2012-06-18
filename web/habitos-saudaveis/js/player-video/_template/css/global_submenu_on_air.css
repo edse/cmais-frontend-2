@@ -1,0 +1,28 @@
+/** on air-subnav buttons **/ 
+
+DIV#submenu.on_air { background-image:url(../images/submenu/on_air/on_air-subnav-bg.gif); }
+
+DIV#submenu a#on_air-subnav-home{background-image:url(../images/submenu/on_air/on_air-subnav-home.gif); width:67px; }
+DIV#submenu a#on_air-subnav-home.current{background-image:url(../images/submenu/on_air/on_air-subnav-home_c.gif); width:67px; }
+DIV#submenu a#on_air-subnav-home:hover{background-image:url(../images/submenu/on_air/on_air-subnav-home_r.gif); width:67px; }
+
+DIV#submenu a#on_air-subnav-episode-guide{background-image:url(../images/submenu/on_air/on_air-subnav-episode-guide.gif); width:101px; height:26px;}
+DIV#submenu a#on_air-subnav-episode-guide.current{background-image:url(../images/submenu/on_air/on_air-subnav-episode-guide_c.gif); width:101px; }
+DIV#submenu a#on_air-subnav-episode-guide:hover{background-image:url(../images/submenu/on_air/on_air-subnav-episode-guide_r.gif); width:101px; }
+
+DIV#submenu a#on_air-subnav-celebrity-guests{background-image:url(../images/submenu/on_air/on_air-subnav-celebrity-guests.gif); width:114px; height:26px;}
+DIV#submenu a#on_air-subnav-celebrity-guests.current{background-image:url(../images/submenu/on_air/on_air-subnav-celebrity-guests_c.gif); width:114px; }
+DIV#submenu a#on_air-subnav-celebrity-guests:hover{background-image:url(../images/submenu/on_air/on_air-subnav-celebrity-guests_r.gif); width:114px; }
+
+DIV#submenu a#on_air-subnav-cast{background-image:url(../images/submenu/on_air/on_air-subnav-cast.gif); width:46px; height:26px;}
+DIV#submenu a#on_air-subnav-cast.current{background-image:url(../images/submenu/on_air/on_air-subnav-cast_c.gif); width:46px; }
+DIV#submenu a#on_air-subnav-cast:hover{background-image:url(../images/submenu/on_air/on_air-subnav-cast_r.gif); width:46px; }
+
+DIV#submenu a#on_air-subnav-characters{background-image:url(../images/submenu/on_air/on_air-subnav-characters.gif); width:80px; height:26px;}
+DIV#submenu a#on_air-subnav-characters.current{background-image:url(../images/submenu/on_air/on_air-subnav-characters_c.gif); width:80px; }
+DIV#submenu a#on_air-subnav-characters:hover{background-image:url(../images/submenu/on_air/on_air-subnav-characters_r.gif); width:80px; }
+
+DIV#submenu a#on_air-subnav-history{background-image:url(../images/submenu/on_air/on_air-subnav-history.gif); width:63px; height:26px;}
+DIV#submenu a#on_air-subnav-history.current{background-image:url(../images/submenu/on_air/on_air-subnav-history_c.gif); width:63px; }
+DIV#submenu a#on_air-subnav-history:hover{background-image:url(../images/submenu/on_air/on_air-subnav-history_r.gif); width:63px; }
+

@@ -472,7 +472,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /** no ar **/
 
 /** lista **/
-#menu-portal .padrao .lista {width:231px; float:left; margin:0 10px 0 0;}
+#menu-portal .padrao .lista {width:231px; float:left; margin:0 10px 0 0; height:auto; text-indent:0;}
 #menu-portal .padrao .lista li {height:auto; width:221px; border-bottom:1px dotted #ccc; margin:0 0 10px 10px;}
 #menu-portal .padrao .lista a { height:auto; font-size:12px; width:211px; padding-left:10px; }
 #menu-portal .padrao .lista a:hover { text-decoration: underline;}  
@@ -541,7 +541,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #rodape-portal { margin-top:50px; }
 .capa-voltar-topo {  width:970px; margin:0 auto; position:relative; z-index:10; margin-bottom:-15px; }
 .voltar-topo { display:block; overflow:hidden; width:96px; background:url(../images/bg-voltar-topo.jpg) repeat-x; height:36px; padding:4px 0 0 4px; font-size:10px; color:#fff; line-height:16px; }
-.voltar-topo span { background:url(../images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; }
+.voltar-topo span { background:url(../images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; margin-right:5px; }
 .voltar-topo:hover { text-decoration:none; }
 .capa-rodape {  background:#333; border-top:2px solid #d3d3d3; height:470px; }
 #rodape-portal .box-rodape { width:1054px; padding-left:50px; margin:0 auto; height:470px; background:#333;  }

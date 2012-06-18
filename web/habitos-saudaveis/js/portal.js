@@ -431,3 +431,22 @@ $.fn.clearForm = function() {
   	  this.selectedIndex = -1;
   });
 };
+
+
+var request_header = jQuery.ajax({ 
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body #capa-site').before(data);
+  },
+  url: '/habitos-saudaveis-online/ajax/insert_header.php'
+});
+
+var request_footer = jQuery.ajax({
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body').append(data);
+  },
+  url: '/habitos-saudaveis-online/ajax/insert_footer.php'
+});
