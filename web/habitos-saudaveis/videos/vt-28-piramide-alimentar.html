@@ -12,15 +12,17 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     <title>Vídeos | Vila Sésamo: Hábitos para uma vida saudável</title>
-    <meta name="title" content="cmais+ O portal de conteúdo da Cultura" />
-    <meta name="description" content="Homepage do C+ - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="title" content="cmais+ O portal de conteúdo da Cultura" /> <meta name="description" content="Vila Sésamo: Hábitos para uma vida saudável" />
     <meta name="keywords" content="hábitos de saúde, bem estar, alimentação saudável, saúde, hábito, vida, física, habilidade, exercício, ativo, pais, vila sésamo, jogos de criança, vídeos, playlists, pré-escolar, bel, beto, come come, elmo, ênio, garibaldo, groover, zoe, a alfabetização, os números, contando, resolução de problemas, desenvolvimento emocional" />
     <meta name="language" content="pt_BR" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="cmais+ O portal de conteúdo da Cultura" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Homepage do C+ - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:url" content="http://cmais.com.br/frontend.php" />
+    <meta property="og:description" content="Vila Sésamo: Hábitos para uma vida saudável" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://cmais.com.br/habitos-saudaveis" />
+<meta property="og:site_name" content="cmais+ - Hábitos Saudáveis" />
+<meta property="og:image" content="http://cmais.com.br/habitos-saudaveis/images/logo.png" /><meta property="og:url" content="http://cmais.com.br/frontend.php" />
     <meta property="og:site_name" content="cmais+" />
     <meta property="og:image" content="../images/logoCMAIS.jpg" />
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
@@ -32,25 +34,6 @@
     <script type="text/javascript" src="../js/portal.js"></script>
     <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    
-    
-    
-      <script type="text/javascript">
-          /* bg */
-          $(function(){
-              abreBg = function(){
-                  $('#bgGeral').show().css("height", ($("body").height()) + "px");
-                  $('#modal').show();
-                  //$('#video').hide();
-              }
-              fechaBg = function(){
-                  $('#bgGeral').hide();
-                  $('#modal').hide();
-                  //$('#video').show();
-              }
-          });
-          /* /bg */
-      </script>
       <script type="text/javascript" src="../js/player-video/_template/js/flashRightClick.js"></script>
       <script type="text/javascript" src="../js/player-video/_template/js/preload_images.js"></script>
       <script type="text/javascript" src="../js/player-video/_template/js/global.js"></script>
@@ -70,97 +53,7 @@
   </head>
   <body>
        <!-- CAPA SITE -->
-    <div id="capa-site">
-
-<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
-     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
-     <div id="modal" style="display:none;">
-      <p class="tit">Enviar para amigo</p>
-      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
-      <div class="divisa"></div>
-      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
-      <form id="enviar-amigo">
-        <div class="nome">
-          <label for="seunome">Seu nome</label>
-          <input type="text" id="seunome" name="seunome" class="required" />
-         </div>
-         <div class="nome last">
-          <label for="nomeamigo">Nome do seu amigo</label>
-          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
-        </div>
-        <div class="email">
-          <label for="email">E-mail do seu amigo</label>
-          <input type="text" id="email" name="email" class="required" />
-        </div>
-        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
-                            
-      </form>
-      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
-    </div>
-    <script type="text/javascript">
-    
-      $(document).ready(function(){
-        $('input#enviar').click(function(){
-          $(".msgAcerto, .msgErro").hide();
-        });
-        
-        var validator = $('#enviar-amigo').validate({
-          submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-              beforeSend: function(){
-                $('input#enviar').attr('disabled','disabled');
-                $(".msgAcerto").hide();
-                $(".msgErro").hide();
-                $('img#ajax-loader').show();
-              },
-              success: function(data){
-              $('input#enviar').removeAttr('disabled');
-                window.location.href="#";
-                if(data == "1"){
-                  $("#form-contato").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });         
-          },
-          rules:{
-            seunome:{
-              required: true,
-              minlength: 2
-            },
-            nomeamigo:{
-              required: true,
-              minlength: 2
-            },
-            email:{
-              required: true,
-              email: true
-            }
-            
-          },
-          messages:{
-            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
-          },
-          success: function(label){
-            // set &nbsp; as text for IE
-            label.html("&nbsp;").addClass("checked");
-          }
-        });
-      });
-      
-      
-      
-    </script> 
+    <div id="capa-site"> 
     
     <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
     
@@ -173,32 +66,6 @@
       <div id="mydiv"></div> 
       <!-- MIOLO -->
       <div id="miolo">
-        <!-- BOX LATERAL -->
-        <ul class="box-lateral posicao-lateral" id="menuFloat">
-          <li>
-            <a class="cmais" href="http://cmais.com.br" title="cmais+ O portal de conteúdo da Cultura
-            ">cmais+ O portal de conteúdo da Cultura</a>
-          </li>
-          <li>
-            <a class="tvcultura" href="http://tvcultura.cmais.com.br" title="TV Cultura">TV Cultura</a>
-          </li>
-          <li>
-            <a class="tvrtb" href="http://tvratimbum.com.br" title="TV R&aacute; Tim Bum">TV R&aacute; Tim Bum</a>
-          </li>
-          <li>
-            <a class="multicultura" href="http://multicultura.cmais.com.br" title="multiCULTURA">multiCULTURA</a>
-          </li>
-          <li>
-            <a class="univesptv" href="http://univesp.tv.br" title="Univesp TV">Univesp TV</a>
-          </li>
-          <li>
-            <a class="culturabrasil" href="http://www.culturabrasil.com.br" title="culturabrasil">culturabrasil</a>
-          </li>
-          <li>
-            <a class="radioculturafm" href="http://www2.tvcultura.com.br/radiofm" title="R&aacute;dio Cultura FM">R&aacute;dio Cultura FM</a>
-          </li>
-        </ul>
-        <!-- BOX LATERAL -->
         
         
         <!-- CONTEUDO PAGINA -->
@@ -207,7 +74,7 @@
           <div class="capa grid3">
              <!-- TOPO -->
             <ul class="menu-topo">
-             <li class="vilasesamo"><a  href="#" title="Vila Sésamo" name="Vila Sésamo"></a></li><li class="guia"><a  href="#" title="Guia dos Professores" name="Guia dos Professores"></a></li>                                       
+             <li class="vilasesamo"><a  href="http://cmais.com.br/vilasesamo" title="Vila Sésamo" name="Vila Sésamo"></a></li><li class="guia"><a  href="../guia-dos-professores.pdf" title="Guia dos Professores" name="Guia dos Professores"></a></li>                                       
             </ul>
             <div class="menu-secoes">
               <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
@@ -230,7 +97,7 @@
                 <div class="descricao">
                   <p class="tit">Pirâmide alimentar</p>
                   <p>Pirâmide alimentar</p>
-                  <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">enviar para um amigo</a>                  
+                                 
                 </div>
                 <div class="capa-player">
                   <div id="VideoPlayer-container" class="grid-col content-610 background-of-the-day"></div>
@@ -663,7 +530,7 @@
                   </div>
                   <div class="descricao">
                     <a class="tit" href="vt-40-o-jantar-do-principe-omelete.html" name="O jantar do Príncipe Omelete" title="O jantar do Príncipe Omelete">O JANTAR DO PRINCIPE OMELETE</a>
-                    <a href="vt-40-o-jantar-do-principe-omelete.html">O Principe Omelete precisa decidir entre comer ervilhas e brócolis.</a>                                     
+                    <a href="vt-40-o-jantar-do-principe-omelete.html">O Príncipe Omelete precisa decidir entre comer ervilhas e brócolis.</a>                                     
                   </div>
                 </li>
                 <li>
@@ -754,11 +621,11 @@
               <div class="apoio">
                 <img src="../images/apoio.jpg" border="0" usemap="#Map" />
 				<map name="Map">
-				  <area shape="rect" coords="0,2,119,64" href="http://www.sesameworkshop.org/" target="_blank" title="Sesame Workshop">
-				  <area shape="rect" coords="149,2,317,63" href="http://www.brasilia.unesco.org/" title="Unesco" target="_blank">
-			      <area shape="rect" coords="348,2,434,67" href="http://portalsme.prefeitura.sp.gov.br/" title="Prefeitura de São Paulo - Educação" target="_blank">
-			      <area shape="rect" coords="465,-1,554,67" href="http://www.tvcultura.com.br" title="TV Cultura" target="_blank">
-			      <area shape="rect" coords="582,-4,726,71" href="http://www.msdonline.com.br" title="MSD" target="_blank">
+				  <area shape="rect" coords="0,2,119,64" href="http://www.sesameworkshop.org/" target="_blank" title="Sesame Workshop" alt="Sesame Workshop">
+				  <area shape="rect" coords="149,2,317,63" href="http://www.brasilia.unesco.org/" title="Unesco" alt="Unesco" target="_blank">
+			      <area shape="rect" coords="348,2,434,67" href="http://portalsme.prefeitura.sp.gov.br/" title="Prefeitura de São Paulo - Educação" alt="Prefeitura de São Paulo - Educação" target="_blank">
+			      <area shape="rect" coords="465,-1,554,67" href="http://www.tvcultura.com.br" title="TV Cultura" alt="TV Cultura" target="_blank">
+			      <area shape="rect" coords="582,-4,726,71" href="http://www.msdonline.com.br" title="MSD" alt="MSD" target="_blank">
 				</map>
               </div>          
               <ul class="rodape-vila">

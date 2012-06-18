@@ -191,7 +191,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .roleta .interna .carrossel { margin-top:40px; } 
 /* /roleta */
 .descricao p,
-.descricao a {font-size:12px; color:#333; margin-bottom:5px; height:auto; max-height:54px;  -moz-border-radius:0 0; border-radius:0 0; display: block; clear:both; line-height: 14px;}
+.descricao a {font-size:12px; color:#333; height:auto;  -moz-border-radius:0 0; border-radius:0 0; display: block; clear:both; line-height: 16px;}
 .descricao .tit {font-size:13px; max-height:30px; }
 .descricao .email { background:url(../images/ico-email.png) no-repeat 0 2px; padding:0 0 0 18px; color:#db582c; }
 .lista-personagens li { float:left; margin-right:5px; width:95px; }
