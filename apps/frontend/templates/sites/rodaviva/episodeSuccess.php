@@ -318,12 +318,7 @@
           				<?php endif; ?>
           		      <?php endif; ?>
           		      
-						<div class="publicidade">
-                          <!-- tvcultura-homepage-300x250 -->
-                          <script type='text/javascript'>
-                            GA_googleFillSlot("tvcultura-homepage-300x250");
-                          </script>
-          				</div>
+						
           				
           			  <?php if(isset($fotos)): ?>
           			    <?php if(count($fotos) > 0): ?>
@@ -345,6 +340,13 @@
           				</div>
           				<?php endif; ?>
           		      <?php endif; ?>
+          		      
+          		      <div class="publicidade">
+                          <!-- tvcultura-homepage-300x250 -->
+                          <script type='text/javascript'>
+                            GA_googleFillSlot("tvcultura-homepage-300x250");
+                          </script>
+                  </div> 
           				
           			  <?php if(isset($conteudosRelacionados)): ?>
           			    <?php if(count($conteudosRelacionados) > 0): ?>
