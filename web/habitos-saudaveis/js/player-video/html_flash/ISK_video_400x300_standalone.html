@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/fc_master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Video landing</title>
+<!-- InstanceEndEditable -->
+<link href="../_template/css/global.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="../_template/css/ie_overrides.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if LTE IE 6]>
+<link href="../_template/css/ie6_overrides.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+<link href="../_template/css/ie7_overrides.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="../_template/js/jquery.js"></script>
+<script type="text/javascript" src="../_template/js/flashRightClick.js"></script>
+<script type="text/javascript" src="../_template/js/preload_images.js"></script>
+<script type="text/javascript" src="../_template/js/global.js"></script>
+<script type="text/javascript">
+var GB_ROOT_DIR = "../_template/js/greybox/";
+</script>
+<script type="text/javascript" src="../_template/js/swfobject.js"></script>
+<script type="text/javascript" src="../_template/js/starcursor.js"></script>
+<script type="text/javascript" src="../_template/js/flash_communication.js"></script>
+<script type="text/javascript" src="../_template/js/disablemenu.js"></script>
+
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<h1 class="structure-heading">Page Title</h1>
+
+<div id="wrapper">
+
+	<p><a href="index.html" style="font-size:12px;color:red;">&laquo; back to Flash Components menu</a></p>
+	
+	<!-- InstanceBeginEditable name="Flash Component Content" -->
+	<h1>ISK Video Player 400 x 300 Standalone (ISK_video_400x300_standalone.swf)</h1>
+	<h3>Input params (XML)</h3>
+	<ul>		
+		<li><strong>None</strong></li>
+	</ul>
+	<h3>Input params (FlashVars)</h3>
+	<ul>
+		<li><strong>configUrl</strong>: path to XML config</li>
+		<li><strong>skinUrl</strong>: path to SWF for button skins</li>
+		<li><strong>jsShareMethod</strong>: name of Javascript method called when the "send to friend" button is clicked </li>	
+		<li><strong>jsStatsMethod</strong>: target method to call to feed usage stats to 3rd party web stats (Google).</li>
+	    <li><strong>autoStart</strong>: video auto starts on launch</li>
+	</ul>
+	
+	<textarea id="last-stats-call" style="width:968px;height:200px;">
+		last stats call....
+	</textarea>
+	
+	
+  <div id="VideoPlayer-container" class="grid-col content-610 background-of-the-day">
+		<h2 class="structure-heading">F is for Flash</h2>
+		<div> <img src="../_template/images/noflash/no_flash_playlisthome.jpg" alt="download flash" width="610" height="510" border="0" usemap="#NoFlashMap"/>
+				<map name="NoFlashMap" id="Map">
+					<area shape="rect" coords="175,250,363,283" href="http://adobe.com/go/getflashplayer" target="_blank" alt="download flash now" />
+				</map>
+		</div>
+		<div class="structure-flash">
+			<p>Fun features on SesameStreet.org - games, videos, playlists and more - require the latest Flash player.</p>
+			<p>Don't miss out on the full experience, download the player now.</p>
+			<p>Get the latest Flash Player here!</p>
+			<a href="http://adobe.com/go/getflashplayer" target="_blank">Download Now</a> </div>
+	</div>
+
+	<script type="text/javascript">
+		(function(){
+			// define embed config
+			var config = {
+				swfUrl			: "../swf/loader.swf",
+				expressInstall	: "../swf/expressinstall_videolanding.swf",				
+				swfId 			: "VideoPlayer",
+				containerId		: "VideoPlayer-container",				
+				width			: 420,
+				height			: 395,
+				
+				flashvars 		: {
+					targetSwf 				: "../swf/ISK_video_400x300_standalone.swf", 
+					configUrl				: "../_data/sample_video.xml",
+					skinUrl					: "../swf/sesame_ISK_video_control_skin.swf", 
+					autoStart				: "false",
+					titleColor				: "0x000000"
+				}
+			}
+			// embed movie
+			sesameEmbedSwf(config); 			
+		}());		
+	</script>
+	<!-- InstanceEndEditable -->
+</div>
+
+<!-- Start of mouse follower -->
+<div id="starcursor" class="starcursor"></div>
+<!-- End of mouse follower --> 
+
+</body>
+<!-- InstanceEnd --></html>

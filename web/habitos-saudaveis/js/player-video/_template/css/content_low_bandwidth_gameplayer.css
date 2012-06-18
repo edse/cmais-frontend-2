@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+html,body {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-color:#FFF;
+	/*height:289px;
+	width:600px;
+	border:1px solid #ccc;
+	padding:29px 0px 0px 0px;*/
+}
+DIV.game-area {text-align:center;}

@@ -14,8 +14,8 @@
               if (ie||ns6)
               var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
               
-              function ietruebody(){
-              return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+              function ietruebody() {
+              	return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
               }
               
               function ddrivetip(thetext, thecolor, thewidth){

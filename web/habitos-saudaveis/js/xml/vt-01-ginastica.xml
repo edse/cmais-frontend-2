@@ -15,10 +15,11 @@ It contains a stand-alone video definition
 		  <filename><![CDATA[../../../flv/vt-01-ginastica.flv]]></filename>
 		  <title><![CDATA[Vila Sesamo - Ginastica]]></title>
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
-		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
-		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
-		  <thumbLarge>../_sample_content/thumbnails/t02_full.jpg</thumbLarge>
-
+		  <!--
+		  <thumbSmall>../../../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
+		  <thumbMedium>../../../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
+		  <thumbLarge>../../../_sample_content/thumbnails/t02_full.jpg</thumbLarge>
+		-->
 		  <height>395</height>
 		  <width>420</width>
 		  <codec>ON2.VP6</codec>

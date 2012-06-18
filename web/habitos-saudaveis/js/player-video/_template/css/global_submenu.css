@@ -1,0 +1,35 @@
+@import "global_submenu_on_air.css";
+@import "global_submenu_games.css";
+@import "global_submenu_videos.css";
+@import "global_submenu_playlists.css";
+@import "global_submenu_parents.css";
+@import "global_submenu_on_air.css";
+
+@import "global_submenu_parenting_topics.css";
+
+/** global submenu styles **/
+DIV#submenu { 
+	padding-left:20px;
+	width:898px;height:26px;
+	margin:4px 0px 0px 0px;
+}
+DIV#submenu ul{margin:0;padding:0;list-style:none;}
+DIV#submenu ul li{display:inline;float:left;}
+DIV#submenu ul a{display:block; background:top left no-repeat transparent;width:100px; height:26px;}
+DIV#submenu ul a span{ display:none; }	/* make the default text disappear when we show the image */
+
+/* SEARCH FIELD (applies to all submenu types) */
+DIV#submenu ul li.subnav-search {float:right;margin-right:20px;}
+DIV#submenu ul li.subnav-search DIV.search-bg{
+	float:left; background:url(../images/submenu/games/games-subnav-searchbox.gif) top left no-repeat transparent;
+	margin-top:4px;
+	margin-right:9px;
+}
+DIV#submenu ul li.subnav-search .search-field{background:none;border:none; height:15px; width:145px; color:#999; padding:3px 5px 0px 5px; font-size:10px;}
+DIV#submenu ul li.subnav-search form{ margin:0;padding:0; }
+
+DIV#submenu ul li.subnav-search a.search-button{width:20px;height:24px; background-image:url(../images/submenu/subnav-go.png); float:left;cursor:pointer;}
+
+
+
+

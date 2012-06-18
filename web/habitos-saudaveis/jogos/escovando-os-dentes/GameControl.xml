@@ -1,0 +1,21 @@
+<configData>
+	<config>
+		<isLoggedIn>false</isLoggedIn>
+	</config>
+	<data>
+		<itemList>		
+			<game>
+				<id>brushing_teeth_kinder</id>
+				<title>Brushing Teeth</title>
+				<description>Brushing Teeth</description>
+				<type>Full</type>
+				<scriptLanguage>AS3</scriptLanguage>
+				<gameState>isLogging:true,jsLogMethod:logStats</gameState>
+				<filename>games/brushing_teeth_kinder/elmo_brush_teeth_2a.swf</filename>
+				<assetPath>games/brushing_teeth_kinder/elmo_brush_teeth_2a.swf</assetPath>
+				<thumbSmall></thumbSmall>
+			</game>
+		
+		</itemList>
+	</data>
+</configData>

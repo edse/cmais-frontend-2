@@ -31,7 +31,36 @@
     <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="../js/portal.js"></script>
     <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
-    
+    <script type="text/javascript">
+          /* bg */
+          $(function(){
+              abreBg = function(){
+                  $('#bgGeral').show().css("height", ($("body").height()) + "px");
+                  $('#modal').show();
+                  //$('#video').hide();
+              }
+              fechaBg = function(){
+                  $('#bgGeral').hide();
+                  $('#modal').hide();
+                  //$('#video').show();
+              }
+          });
+          /* /bg */
+      </script>
+      <script type="text/javascript" src="../js/player-video/_template/js/flashRightClick.js"></script>
+      <script type="text/javascript" src="../js/player-video/_template/js/preload_images.js"></script>
+      <script type="text/javascript" src="../js/player-video/_template/js/global.js"></script>
+      <script type="text/javascript">
+      var GB_ROOT_DIR = "../js/player-video/_template/js/greybox/";
+      </script>
+      <script type="text/javascript" src="../js/player-video/_template/js/swfobject.js"></script>
+      <script type="text/javascript" src="../js/player-video/_template/js/starcursor.js"></script>
+      <script type="text/javascript" src="../js/player-video/_template/js/flash_communication.js"></script>
+      <script type="text/javascript" src="../js/player-video/_template/js/disablemenu.js"></script>
+      
+      <!-- InstanceBeginEditable name="head" -->
+      
+      <!-- InstanceEndEditable -->
     
     
     
@@ -43,11 +72,102 @@
   <body>
     
      
-    <script type="text/javascript" src="../js/mediaplayer/swfobject.js"></script>
+    
      
 
     <!-- CAPA SITE -->
     <div id="capa-site">
+    	<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
+     <div id="modal" style="display:none;">
+      <p class="tit">Enviar para amigo</p>
+      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
+      <div class="divisa"></div>
+      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
+      <form id="enviar-amigo">
+        <div class="nome">
+          <label for="seunome">Seu nome</label>
+          <input type="text" id="seunome" name="seunome" class="required" />
+         </div>
+         <div class="nome last">
+          <label for="nomeamigo">Nome do seu amigo</label>
+          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
+        </div>
+        <div class="email">
+          <label for="email">E-mail do seu amigo</label>
+          <input type="text" id="email" name="email" class="required" />
+        </div>
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
+                            
+      </form>
+      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
+    </div>
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#enviar-amigo').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            seunome:{
+              required: true,
+              minlength: 2
+            },
+            nomeamigo:{
+              required: true,
+              minlength: 2
+            },
+            email:{
+              required: true,
+              email: true
+            }
+            
+          },
+          messages:{
+            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      
+      
+      
+    </script> 
+    
+    <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
       <!-- CHAMADA -->
       <!-- /CHAMADA -->
       
@@ -90,7 +210,7 @@
           <div class="capa grid3">
              <!-- TOPO -->
             <ul class="menu-topo">
-             <li class="vilasesamo"><a  href="http://cmais.com.br/vilasesamo" title="Vila Sésamo" name="Vila Sésamo" target="_blank"></a></li><li class="guia"><a  href="../guia-dos-professores.pdf" title="Guia dos professores" name="Guia dos professores" target="_blank"></a></li>                                       
+             <li class="vilasesamo"><a  href="http://cmais.com.br/vilasesamo" title="Vila Sésamo" name="Vila Sésamo"></a></li><li class="guia"><a  href="../guia-dos-professores.pdf" title="Guia dos professores" name="Guia dos professores"></a></li>                                       
             </ul>
             <div class="menu-secoes">
               <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
@@ -116,15 +236,31 @@
                   <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">enviar para um amigo</a>                  
                 </div>
                 <div class="capa-player">
-                  <div id="videoPlayer"></div>
-                  <script>
-                      var so = new SWFObject("../js/mediaplayer/player.swf","mpl","420","236","9");
-                      so.addParam("allowscriptaccess","always");
-                      so.addParam("allowfullscreen","true");
-                      so.addParam("wmode","transparent");
-                      so.addParam("flashvars","&file=../../flv/vt-38-cancao-do-garibaldo.flv&autostart=true&controlbar=over");
-                      so.write("videoPlayer");
+                 <div id="VideoPlayer-container" class="grid-col content-610 background-of-the-day"></div>
+                  <script type="text/javascript">
+                    (function(){
+                      // define embed config
+                      var config = {
+                        swfUrl      : "../js/player-video/swf/loader.swf",
+                        expressInstall  : "../js/player-video/swf/expressinstall_videolanding.swf",       
+                        swfId       : "VideoPlayer",
+                        containerId   : "VideoPlayer-container",        
+                        width     : 420,
+                        height      : 395,
+                        
+                        flashvars     : {
+                          targetSwf         : "../js/player-video/swf/ISK_video_400x300_standalone.swf", 
+                          configUrl       : "../js/xml/vt-38-cancao-do-garibaldo.xml",
+                          skinUrl         : "../js/player-video/swf/sesame_ISK_video_control_skin.swf", 
+                          autoStart       : "false",
+                          titleColor        : "0x000000"
+                        }
+                      }
+                      // embed movie
+                      sesameEmbedSwf(config);       
+                    }());   
                   </script>
+                  <!-- InstanceEndEditable -->
                 </div>
                 
                 
@@ -166,7 +302,7 @@
                     <a href="vt-03-street-dance.html" title="Street Dance" name="Street Dance"><img src="../images/videos/vt-03-street-dance.png" alt="Street Dance" /></a>
                   </div>
                   <div class="descricao">
-                    <a class="tit" href="vt-03-street-dance.html" name="Street Dance" title="Street Dance">Street Dance</a>
+                    <a class="tit" href="vt-03-street-dance.html" name="Street Dance" title="Street Dance">STREET DANCE</a>
                     <a href="vt-03-street-dance.html">Já ouviu falar em Street Dance?</a>                                     
                   </div>
                 </li>                
@@ -290,8 +426,8 @@
                     </a>
                   </div>
                   <div class="descricao">
-                    <a href="vt-16-salada-frutas.html" class="tit" name="Salada de frutas" title="Salada de frutas">Salada de frutas</a>
-                    <a href="vt-16-salada-frutas.html">Amiguinhos da Vila Sésamo mostram como se faz uma salada de frutas.</a>                                     
+                    <a href="vt-16-salada-fruta.html" class="tit" name="Salada de frutas" title="Salada de frutas">Salada de frutas</a>
+                    <a href="vt-16-salada-fruta.html">Amiguinhos da Vila Sésamo mostram como se faz uma salada de frutas.</a>                                     
                   </div>
                 </li>
                 <li>
@@ -453,6 +589,7 @@
                     <a href="vt-32-biscoito-nao-e-pra-toda-hora.html" title="Biscoito não é pra toda hora" name="Biscoito não é pra toda hora">
                       <img src="../images/videos/vt-32-biscoito-nao-e-pra-toda-hora.png" alt="Biscoito não é pra toda hora" />
                     </a>
+                    
                   </div>
                   <div class="descricao">
                     <a href="vt-32-biscoito-nao-e-pra-toda-hora.html" class="tit" name="Biscoito não é pra toda hora" title="Biscoito não é pra toda hora">Biscoito não é pra toda hora</a>
@@ -530,8 +667,8 @@
                     <a href="vt-40-o-jantar-do-principe-omelete.html" title="O jantar do Príncipe Omelete" name="O jantar do Príncipe Omelete"><img src="../images/videos/vt-40-o-jantar-do-principe-omelete.png" alt="" /></a>
                   </div>
                   <div class="descricao">
-                    <a class="tit" href="vt-40-o-jantar-do-principe-omelete.html" name="O jantar do Príncipe Omelete" title="O jantar do Príncipe Omelete">O JANTAR DO PRÍNCIPE OMELETE</a>
-                    <a href="vt-40-o-jantar-do-principe-omelete.html">O PrÍncipe Omelete precisa decidir entre comer ervilhas e brócolis.</a>                                     
+                    <a class="tit" href="vt-40-o-jantar-do-principe-omelete.html" name="O jantar do Príncipe Omelete" title="O jantar do Príncipe Omelete">O JANTAR DO PRINCIPE OMELETE</a>
+                    <a href="vt-40-o-jantar-do-principe-omelete.html">O Principe Omelete precisa decidir entre comer ervilhas e brócolis.</a>                                     
                   </div>
                 </li>
                 <li>
@@ -558,7 +695,7 @@
                     <a href="vt-43-elmo-e-o-triciclo.html" title="Elmo e o triciclo" name="Elmo e o triciclo"><img src="../images/videos/vt-43-elmo-e-o-triciclo.png" alt="Elmo e o triciclo" /></a>
                   </div>
                   <div class="descricao">
-                    <a class="tit" href="vt-43-elmo-e-o-triciclo.html" name="Elmo e o triciclo" title="Elmo e o triciclo">ELMO E O TRICICLO</a>
+                    <a class="tit" href="vt-43-elmo-e-o-triciclo.html" name="Elmo e o triciclo" title="Elmo e o triciclo">Elmo e o triciclo</a>
                     <a href="vt-43-elmo-e-o-triciclo.html">Elmo mostra como é gostoso andar de triciclo!</a>                                     
                   </div>
                 </li>
@@ -586,7 +723,7 @@
                   </div>
                   <div class="descricao">
                     <a href="vt-46-pao-integral.html" class="tit" name="Pão integral" title="Pão integral">PÃO INTEGRAL</a>
-                    <a href="vt-46-pao-integral.html">Você sabia que os pães integrais são mais saudáveis?</a>                                     
+                    <a href="vt-46-pao-integral.html">Você sabia que os Pães integrais são mais saudáveis?</a>                                     
                   </div>
                 </li>
                 <li>
@@ -607,8 +744,9 @@
                     <a href="vt-48-fique-saudavel-ja.html">Elmo apresenta o programa “Fique Saudável já!” com os vegetais e frutas ainda não maduros.</a>                                     
                   </div>
                 </li>
+               
                                         
-              </ul>                                  
+              </ul>                           
               </div>
               <!-- /mais videos -->
               <a href="index.html" class="vd" name="Todos os Vídeos" title="Todos os Vídeos">Todos os Vídeos »</a>  
@@ -620,13 +758,13 @@
             <div class="centraliza">
               <div class="apoio">
                 <img src="../images/apoio.jpg" border="0" usemap="#Map" />
-				
-				  
-				  
-			      
-			      
-			      
-				
+				<map name="Map">
+				  <area shape="rect" coords="0,2,119,64" href="http://www.sesameworkshop.org/" target="_blank" title="Sesame Workshop">
+				  <area shape="rect" coords="149,2,317,63" href="http://www.brasilia.unesco.org/" title="Unesco" target="_blank">
+			      <area shape="rect" coords="348,2,434,67" href="http://portalsme.prefeitura.sp.gov.br/" title="Prefeitura de São Paulo - Educação" target="_blank">
+			      <area shape="rect" coords="465,-1,554,67" href="http://www.tvcultura.com.br" title="TV Cultura" target="_blank">
+			      <area shape="rect" coords="582,-4,726,71" href="http://www.msdonline.com.br" title="MSD" target="_blank">
+				</map>
               </div>          
               <ul class="rodape-vila">
                 <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Locale>
+	<strings locale="en-US">
+		<string id="Q00" value="High Quality" />
+		<string id="Q01" value="Medium Quality" />
+		<string id="Q02" value="Low Quality" />
+		<string id="LOCALE_0000" value="It is WORKING :)" />
+		<string id="LOCALE_0001" value="CONTINUE" />
+	</strings>
+</Locale>
