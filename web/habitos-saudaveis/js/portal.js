@@ -439,7 +439,7 @@ var request_header = jQuery.ajax({
     if (data)
       jQuery('body #capa-site').before(data);
   },
-  url: '/habitos-saudaveis-online/ajax/insert_header.php'
+  url: '/habitos-saudaveis/ajax/insert_header.php'
 });
 
 var request_footer = jQuery.ajax({
@@ -448,5 +448,5 @@ var request_footer = jQuery.ajax({
     if (data)
       jQuery('body').append(data);
   },
-  url: '/habitos-saudaveis-online/ajax/insert_footer.php'
+  url: '/habitos-saudaveis/ajax/insert_footer.php'
 });
