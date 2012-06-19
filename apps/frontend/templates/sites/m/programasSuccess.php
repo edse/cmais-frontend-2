@@ -4,7 +4,7 @@
   $programs_az["#"] = array();	  
   for ($i=0; $i < 26; $i++) {
     $chars[] = $char;
-    $programs_az["$char"] = array();	  
+    $programs_az["$char"] = array();
     $char++;
   }
 
