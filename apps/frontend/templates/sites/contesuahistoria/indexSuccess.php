@@ -238,8 +238,8 @@
               email:true              
             },
             concordo:{
-              required: true,
-              minlength: 2            
+              required: true
+                        
             },
             mensagem:{
               required: true,
