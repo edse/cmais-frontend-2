@@ -5,7 +5,8 @@
 		<div class="fio"></div>
 		<!-- /FIO LARANJA -->
 		<?php
-			$url = 'ze';
+		echo $url;
+			$url = '';
 			if ($site->getSlug() != 'm') {
 				if (isset($asset))
 					$url = url_for(@homepage) . $site->getSlug() . '/' . $asset->getSlug() . '?from=m';
@@ -32,6 +33,7 @@
 			<p><a href="<?php echo url_for(@homepage) . $site->getSlug() . '?from=m' ?>" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <?php endif; ?>
 		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
+		  <p>teste</p>
 		</div>
 		
 	</div>
