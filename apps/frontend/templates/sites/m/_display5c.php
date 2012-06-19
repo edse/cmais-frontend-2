@@ -1,7 +1,7 @@
 <?php
 	$block = Doctrine::getTable('Block')->findOneById(450);
 	if($block)
-		$displays = $block->retriveDisplays();
+		$displays = $block->retriveDisplays(); 
 ?>
 <?php if(isset($displays)): ?>
   <?php if(count($displays) > 0): ?>
