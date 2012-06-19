@@ -4,7 +4,7 @@
   $programs_az["#"] = array();	  
   for ($i=0; $i < 26; $i++) {
     $chars[] = $char;
-    $programs_az["$char"] = array();	  
+    $programs_az["$char"] = array();
     $char++;
   }
 
@@ -68,7 +68,7 @@
 						<?php foreach($programs as $p): ?>
 							<?php $programSite = $p->getSite() ?>
 			<!--PROGRAMAS TITULO-->
-			<li class="programaNome"><a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $programSite->getSlug(); ?>" data-transition="slide" data-ajax="false"><p><?php echo $p->getTitle(); ?></p><div class="linha2"></div></a></li>
+			<li class="programaNome"><a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $programSite->getSlug(); ?>" data-transition="slide" data-ajax="false"><p><?php echo $p->getTitle(); ?></p><div class="linha2"></div></a></li>
 			<!--/PROGRAMAS TITULO-->
 						<?php endforeach; ?>
 					<?php else: ?>
