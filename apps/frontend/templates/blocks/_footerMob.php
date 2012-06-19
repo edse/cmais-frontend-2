@@ -5,7 +5,7 @@
 		<div class="fio"></div>
 		<!-- /FIO LARANJA -->
 		<?php
-			$url = '';
+			$url = 'ze';
 			if ($site->getSlug() != 'm') {
 				if (isset($asset))
 					$url = url_for(@homepage) . $site->getSlug() . '/' . $asset->getSlug() . '?from=m';
