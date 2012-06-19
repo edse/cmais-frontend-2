@@ -213,7 +213,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .lista-videos ul .descricao { width: 125px; float:left; padding:0; max-height:100px; overflow:hidden; margin:0 0 0 5px; }
 .lista-videos ul .descricao { *height:95px; }
 #videos .navegacao a,
-.lista-videos ul .tit { color:#f76e00; }
+.lista-videos ul .tit { color:#f76e00; text-transform:uppercase; }
 .lista-videos ul li .thumb-video a {display:block; width: 140px; height:105px;}
 .lista-videos ul li .btn { width: 134px; }
 .lista-videos ul li img { -moz-border-radius:5px 5px; border-radius:5px 5px ; }
