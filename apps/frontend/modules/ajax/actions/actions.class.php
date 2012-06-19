@@ -988,32 +988,37 @@ class ajaxActions extends sfActions
   }
   
   public function executeMobilegetvideos(sfWebRequest $request){
+  	
    	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+		
     if($request->isXmlHttpRequest()){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
       $page = intval($request->getParameter('page'));
+			
       if($page >= 1)
         $start = ($page * $items)-$items;
+			
       if($site > 0){
-        $q = Doctrine_Query::create()
+        $assets = Doctrine_Query::create()
 					->select('a.*')
 					->from('Asset a, AssetVideo av')
 					->where('a.asset_type_id = 6')
 					->andWhere('av.asset_id = a.id')
-					->andWhere('a.is_active = ?', 1);
-				if($site > 0)
-					$q->andWhere('a.site_id = ?',$site);
-        $q->orderBy('a.id desc');
-        $q->limit($items);
-        $q->offset($start);
-        $assets = $q->execute();
+					->andWhere('a.is_active = ?', 1)
+					->andWhere('a.site_id = ?',$site)
+					->andWhere('av.youtube_id != ""')
+        	->orderBy('a.id desc')
+        	->limit($items)
+        	->offset($start)
+        	->execute();
+					
         foreach($assets as $d){
 					$return .= '							<!--VIDEO ITEM-->';
 					$return .= '							<li>';
-					$return .= '								<a href="http://youtube.com/v/' . $d->AssetVideo->getYoutubeId() . '">';
+					$return .= '								<a href="http://www.youtube.com/embed/' . $d->AssetVideo->getYoutubeId() . '?rel=0">';
 					$return .= '									<fieldset class="ui-grid-a">';
 					$return .= '										<div class="ui-block-a">';
 					$return .= '											<div class="fotinho">';
@@ -1042,28 +1047,30 @@ class ajaxActions extends sfActions
   public function executeMobilegetcontents(sfWebRequest $request){
    	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
    	require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
+		
     if($request->isXmlHttpRequest()){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
       $page = intval($request->getParameter('page'));
+			
       if($page >= 1)
         $start = ($page * $items)-$items;
-      if($site > 0){
-        $q = Doctrine_Query::create()
+			
+      if( $site > 0 && !in_array($site,array('67','267','976','19')) ){
+        $assets = Doctrine_Query::create()
 					->select('a.*')
 					->from('Asset a, AssetContent ac')
 					->where('a.asset_type_id = 1')
 					->andWhere('ac.asset_id = a.id')
-					->andWhere('a.is_active = ?', 1);
-				if($site > 0)
-					$q->andWhere('a.site_id = ?',$site);
-        $q->orderBy('a.id desc');
-        $q->limit($items);
-        $q->offset($start);
-        $assets = $q->execute();
-        //echo "site>".$site." >section> ".$section." >>>".count($assets);
+					->andWhere('a.is_active = ?', 1)
+					->andWhere('a.site_id = ?',$site)
+        	->orderBy('a.id desc')
+        	->limit($items)
+        	->offset($start)
+        	->execute();
+					
         foreach($assets as $d){
 					$return .= '							<!--ITEM NOTICIA-->';
 					$return .= '							<li>';
