@@ -239,7 +239,6 @@
             },
             concordo:{
               required: true
-                        
             },
             mensagem:{
               required: true,
