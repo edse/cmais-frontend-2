@@ -13,16 +13,14 @@ $podcasts = new SimpleXMLElement($xml);
   <!--CONTEUDO RADIO-->
   <div class="radio" >
     
-    <!--ESCOLHA DE RADIO-->
-    <div class="alinha" align="center">
-      <div class="btn-escolha">
-        
-        <a class="cbrasil" href="http://172.20.18.133/frontend_dev.php/m/culturabrasil">Cultura Brasil</a>
-        <a class="cfm selected" href="http://172.20.18.133/frontend_dev.php/m/culturafm">Cultura FM</a>
-      
-      </div>
-    </div>
-    <!--ESCOLHA DE RADIO-->
+		<!--ESCOLHA DE RADIO-->
+		<div class="alinha" align="center">
+			<div class="btn-escolha">
+				<a class="cbrasil" href="<?php echo url_for('homepage') . $site->getSlug() . '/culturabrasil' ?>" title="Cultura Brasil">Cultura Brasil</a>
+				<a class="cfm selected" href="<?php echo url_for('homepage') . $site->getSlug() . '/culturafm' ?>" title="Cultura FM">Cultura FM</a>
+			</div>
+		</div>
+		<!--ESCOLHA DE RADIO-->
     
     <!--LISTA RADIO CULTURA BRASIL-->
     <ul data-role="listview" class="plCultBrasil">

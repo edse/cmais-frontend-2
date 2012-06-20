@@ -106,5 +106,5 @@
 <!--/PAGINA INDEX-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site,'section'=>$section)) ?>
 <!--/footer-->

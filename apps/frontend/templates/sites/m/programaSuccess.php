@@ -43,7 +43,6 @@
         		$('#maisvideos').hide();
         		$('#videoList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
         	}
-						        	
       }
     });
 	}

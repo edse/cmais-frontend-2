@@ -95,7 +95,7 @@
 			<?php if(count($live) > 0): ?>
 		  <!--PROGRAMA ITEM-->
 		  <li class="noar degrade">
-			  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
+			  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
 				    	
 				<!--PROGRAMA FOTO-->
 				<div class="foto">
@@ -134,7 +134,7 @@
 				<?php foreach($schedules as $k=>$d): ?>
 		  <!--PROGRAMA ITEM-->
 		  <li class="noar degrade">
-			  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $d->Program->Site->getSlug() ?>" title="<?php echo $d->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
+			  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $d->Program->Site->getSlug() ?>" title="<?php echo $d->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
 			  
 				<?php if ($d->retriveLiveImage()): ?>				    	
 				<!--PROGRAMA FOTO-->
