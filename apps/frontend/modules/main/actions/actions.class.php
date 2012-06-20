@@ -33,7 +33,7 @@ class mainActions extends sfActions
     if($request->getParameter('s')!="")
       $subdomain = $request->getParameter('s');
 
-    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp')))
+    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp','m')))
       $subdomain = 'cmais';
 
     $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug($subdomain));
