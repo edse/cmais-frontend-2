@@ -1,10 +1,10 @@
 <?php
   //pega todas as letras do alfabeto
   $char = 'A';
-  $programs_az["#"] = array();	  
+  $programs_az["#"] = array();
   for ($i=0; $i < 26; $i++) {
     $chars[] = $char;
-    $programs_az["$char"] = array();	  
+    $programs_az["$char"] = array();
     $char++;
   }
 
