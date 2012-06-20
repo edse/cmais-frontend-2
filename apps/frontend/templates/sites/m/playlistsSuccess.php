@@ -18,12 +18,8 @@ $podcasts = new SimpleXMLElement($xml);
 		<!--ESCOLHA DE RADIO-->
 		<div class="alinha" align="center">
 			<div class="btn-escolha">
-			  
-				
-				
-				<a class="cbrasil <?php if($brasil == TRUE) echo "selected"?>" href="http://172.20.18.133/frontend_dev.php/m/culturabrasil">Cultura Brasil</a>
-				<a class="cfm <?php if($fm == TRUE) echo "selected"?>" href="http://172.20.18.133/frontend_dev.php/m/culturafm">Cultura FM</a>
-			
+				<a class="cbrasil <?php if($brasil == TRUE) echo "selected"?>" href="<?php echo url_for('homepage') . $site->getSlug() . '/culturabrasil' ?>" title="Cultura Brasil">Cultura Brasil</a>
+				<a class="cfm <?php if($fm == TRUE) echo "selected"?>" href="<?php echo url_for('homepage') . $site->getSlug() . '/culturafm' ?>" title="Cultura FM">Cultura FM</a>
 			</div>
 		</div>
 		<!--ESCOLHA DE RADIO-->

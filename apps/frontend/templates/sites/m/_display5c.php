@@ -1,7 +1,7 @@
 <?php
 	$block = Doctrine::getTable('Block')->findOneById(450);
 	if($block)
-		$displays = $block->retriveDisplays(); 
+		$displays = $block->retriveDisplays();
 ?>
 <?php if(isset($displays)): ?>
   <?php if(count($displays) > 0): ?>
@@ -14,7 +14,7 @@
 		    <!--ITEM-->
 		    <li class="touchcarousel-item">
 		      <!--PROGRAMA-->
-		      <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
+		      <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
 		        <div class="touchcarousel-a" >
 		          <!--LOGO-->
 		          <img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">

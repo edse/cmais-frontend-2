@@ -68,7 +68,7 @@
 						<?php foreach($programs as $p): ?>
 							<?php $programSite = $p->getSite() ?>
 			<!--PROGRAMAS TITULO-->
-			<li class="programaNome"><a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $programSite->getSlug(); ?>" data-transition="slide" data-ajax="false"><p><?php echo $p->getTitle(); ?></p><div class="linha2"></div></a></li>
+			<li class="programaNome"><a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $programSite->getSlug(); ?>" data-transition="slide" data-ajax="false"><p><?php echo $p->getTitle(); ?></p><div class="linha2"></div></a></li>
 			<!--/PROGRAMAS TITULO-->
 						<?php endforeach; ?>
 					<?php else: ?>
@@ -87,5 +87,5 @@
 <!--/PAGINA INDEX-->
 
 <!--footer-->
-<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
+<?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site, 'section'=>$section)) ?>
 <!--/footer-->
