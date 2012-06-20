@@ -27,7 +27,7 @@ $(function(){
     <div id="capa-site">
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-1
+
       <!-- BARRA SITE -->
       <div id="barra-site">
       	
