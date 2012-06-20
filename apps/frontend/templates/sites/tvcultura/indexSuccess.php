@@ -154,6 +154,7 @@
               <!-- /BOX PADRAO + Visitados -->
               */ ?>
               
+              <?php if(isset($displays["destaque-para-ouvir"])): ?>
               <!-- BOX PADRAO Para Ouvir -->
               <div class="box-padrao box-borda grid1">
                 <div class="topo">
@@ -167,6 +168,7 @@
                 </div>
               </div>
               <!-- /BOX PADRAO Para Ouvir -->
+              <?php endif; ?>
               
               <?php if(isset($displays["destaque-carrossel-2"])) include_partial_from_folder('blocks','global/display1c-carrossel', array('displays' => $displays["destaque-carrossel-2"])) ?>
               
