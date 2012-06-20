@@ -154,7 +154,7 @@
               <!-- /BOX PADRAO + Visitados -->
               */ ?>
               
-              <?php if(isset($displays["destaque-para-ouvir"])): ?>
+              <?php if(count($displays["destaque-para-ouvir"]) > 0 ): ?>
               <!-- BOX PADRAO Para Ouvir -->
               <div class="box-padrao box-borda grid1">
                 <div class="topo">
