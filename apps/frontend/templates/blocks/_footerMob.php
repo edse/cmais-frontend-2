@@ -29,7 +29,7 @@
 			<?php if ($url != ''): ?>
 		  <p><a href="<?php echo $url ?>" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <?php else: ?>
-			<p><a href="<?php echo url_for(@homepage) . $site->getSlug() . '?from=m' ?>" title="versão clássica" rel="external">Versão clássica</a></p>
+			<p><a href="http://cmais.com.br?from=m' ?>" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <?php endif; ?>
 		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
 		</div>
