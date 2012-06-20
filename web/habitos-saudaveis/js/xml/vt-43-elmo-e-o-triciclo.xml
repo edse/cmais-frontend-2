@@ -10,10 +10,10 @@ It contains a stand-alone video definition
 	<data>
 		<video>
 		  <id>00100290317</id>
-		  <longDescription><![CDATA[Vila Sesamo - Andando de triciclo]]></longDescription>
-		  <description><![CDATA[Andando de triciclo]]></description>
-		  <filename><![CDATA[../../../flv/vt-43-andando-de-triciclo.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Andando de triciclo]]></title>
+		  <longDescription><![CDATA[Vila Sesamo - Elmo e o triciclo]]></longDescription>
+		  <description><![CDATA[Elmo e o triciclo]]></description>
+		  <filename><![CDATA[../../../flv/vt-43-elmo-e-o-triciclo.flv]]></filename>
+		  <title><![CDATA[Vila Sesamo - Elmo e o triciclo]]></title>
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
