@@ -2,7 +2,7 @@
 $sites = Doctrine_Query::create()
   ->select('s.*')
   ->from('Site s')
-  ->where("s.slug IN ('rodaviva','metropolis','cartaoverde','vitrine','culturaretro','manoseminas','provocacoes','jornaldacultura')")
+  ->where("s.slug IN ('viola','srbrasil','reisdarua','jornaldacultura','materiadecapa','ensaio','cartaozinho','rodaviva','metropolis','cartaoverde','vitrine','culturaretro','manoseminas','provocacoes')")
   ->orderBy('s.title asc')
   ->limit(9)	
   ->execute();
