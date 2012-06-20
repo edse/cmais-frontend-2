@@ -1013,7 +1013,7 @@ class ajaxActions extends sfActions
         foreach($assets as $d){
 					$return .= '							<!--VIDEO ITEM-->';
 					$return .= '							<li>';
-					$return .= '								<a href="http://youtube.com/v/' . $d->AssetVideo->getYoutubeId() . '">';
+					$return .= '								<a href="http://youtube.com/embed/' . $d->AssetVideo->getYoutubeId() . '?rel=0">';
 					$return .= '									<fieldset class="ui-grid-a">';
 					$return .= '										<div class="ui-block-a">';
 					$return .= '											<div class="fotinho">';
