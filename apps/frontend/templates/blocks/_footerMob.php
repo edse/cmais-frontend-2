@@ -8,9 +8,9 @@
 			$url = '';
 			if ($site->getSlug() != 'm') {
 				if (isset($asset))
-					$url = url_for(@homepage) . $site->getSlug() . '/' . $asset->getSlug() . '?from=m';
+					$url = url_for(@homepage) . $asset->getSlug() . '?from=m';
 				else
-					$url = url_for(@homepage) . $site->getSlug() . '?from=m';
+					$url = url_for(@homepage) . '?from=m';
 			}
 			else {
 				if (isset($section)) {
