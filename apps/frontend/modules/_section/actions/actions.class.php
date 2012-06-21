@@ -54,6 +54,10 @@ class _sectionActions extends sfActions
         }
      }
     }
+		
+    if($this->site->getSlug() == "m" && $request->getParameter('test')) {
+    	die($request->getParameter('slug'));
+    }
 
     
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
