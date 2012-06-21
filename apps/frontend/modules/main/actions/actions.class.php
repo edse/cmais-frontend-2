@@ -214,9 +214,6 @@ class mainActions extends sfActions
       if($request->getParameter('param3')) $param4 = $request->getParameter('param3');
       if($request->getParameter('param4')) $param5 = $request->getParameter('param4');
       if($request->getParameter('param5')) $param6 = $request->getParameter('param5');
-			if($request->getParameter('test') == '1') {
-				die('param1:'.$param1.'; param2:'.$param2.'; param3:'.$param3);
-			}
     }else{
       if($request->getParameter('param1')) $param1 = $request->getParameter('param1');
       if($request->getParameter('param2')) $param2 = $request->getParameter('param2');
