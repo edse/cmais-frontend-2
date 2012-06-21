@@ -403,14 +403,16 @@ class mainActions extends sfActions
         if($this->section)
           return $this->section;
         else{
+        	
           // #2b Look for an Asset
           $this->asset = Doctrine_Query::create()
             ->select('a.*')
-            ->from('Asset a')
-          	->where('a.site_id = ?', (int)$object->id)
-          	->andWhere('a.slug = ?', (string)$string)
-            ->orderby('a.id desc')
-            ->fetchOne();
+            ->from('Asset a');
+					if ($object->getSlug() != 'm')
+          	$this->asset->where('a.site_id = ?', (int)$object->id);
+          $this->asset->andWhere('a.slug = ?', (string)$string);
+          $this->asset->orderby('a.id desc');
+          $this->asset->fetchOne();
           if($this->asset)
             return $this->asset;
           else
