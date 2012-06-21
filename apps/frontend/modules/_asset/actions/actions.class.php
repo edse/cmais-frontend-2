@@ -30,6 +30,10 @@ class _assetActions extends sfActions
 				header("Location: ".$this->asset->Site->retriveUrl());
 				die();
 			}
+			
+			if ($request->getParameter('test') == '1') {
+				die($request->getParameter('param2'));				
+			}
 			/*
 			// controls mobile user redirections
 			if ($this->asset->Site->Program->getChannelId() == 1 || in_array($this->asset->Site->getSlug(), array("cmais","m","tvcultura"))) {
