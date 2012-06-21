@@ -174,7 +174,7 @@ class _sectionActions extends sfActions
 					if ($request->getParameter('param1') != 'm' && $request->getParameter('test') == 1) {
 						//die($request->getHost());
 						if (!isset($_COOKIE['versao_classica']) && $from != 'm') {
-							if ($request->getParameter('param1') != 'cmais' || $request->getHost() != "cmais.com.br") {
+							if ($request->getParameter('param1') != 'cmais' && $request->getHost() != "cmais.com.br") {
 								header('Location: http://cmais.com.br/m/programa/' . $request->getParameter('param1'));
 								die();
 							}
