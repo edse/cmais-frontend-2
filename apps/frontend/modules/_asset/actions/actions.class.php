@@ -30,7 +30,7 @@ class _assetActions extends sfActions
 				header("Location: ".$this->asset->Site->retriveUrl());
 				die();
 			}
-			
+			/*
 			// controls mobile user redirections
 			if ($this->asset->Site->Program->getChannelId() == 1 || in_array($this->asset->Site->getSlug(), array("cmais","m","tvcultura"))) {
 				$from = $request->getParameter('from');
@@ -58,7 +58,7 @@ class _assetActions extends sfActions
 						}
 					}
 				}
-			}
+			}*/
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
