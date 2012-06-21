@@ -232,7 +232,7 @@ class _sectionActions extends sfActions
 					}
 				}
 			}
-			*/
+			
 			
       // siteSections
       if($this->section->Site->type == "Portal" || $this->section->Site->getSlug() == "m"){
