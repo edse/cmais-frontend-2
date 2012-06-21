@@ -71,7 +71,7 @@
 		          <fieldset class="ui-grid-a">
 		           
 		            <div class="ui-block-a">
-		               <a title="<?php echo $d->Program->getTitle() ?>" href="<?php echo url_for('homepage') . $site->getSlug() . '/programa?slug=' . $d->Program->Site->getSlug() ?>" data-transition="slide" rel="external"></a>
+		               <a title="<?php echo $d->Program->getTitle() ?>" href="<?php echo url_for('homepage') . '/programa/' . $d->Program->Site->getSlug() ?>" data-transition="slide" rel="external"></a>
 		              <div class="fotinho">
 		              	<?php if ($d->retriveLiveImage()): ?>
 		                <img src="<?php echo $d->retriveLiveImage() ?>" width="100%">

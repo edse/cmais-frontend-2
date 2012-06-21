@@ -14,7 +14,7 @@
 		    <!--ITEM-->
 		    <li class="touchcarousel-item">
 		      <!--PROGRAMA-->
-		      <a href="<?php echo url_for('homepage') . $site->getSlug() . '/programa/' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
+		      <a href="<?php echo url_for('homepage') . '/programa/' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
 		        <div class="touchcarousel-a" >
 		          <!--LOGO-->
 		          <img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">

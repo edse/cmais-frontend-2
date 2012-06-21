@@ -136,7 +136,7 @@
 						<fieldset class="ui-grid-a head">
 							<div class="ui-block-a">
 
-								<a title="Sobre o Programa" href="<?php echo url_for('@homepage') . 'm/' . $asset->getSlug() ?>">
+								<a title="Sobre o Programa" href="<?php echo url_for('@homepage') . $asset->getSlug() ?>">
 									<p>Sobre o Programa</p>
 									<span class="seta"></span>
 								</a>
