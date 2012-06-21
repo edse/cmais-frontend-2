@@ -207,7 +207,7 @@ class mainActions extends sfActions
     //subdomain
     $subdomain = @current(explode(".", $request->getHost()));
     $param1 = FALSE; $param2 = FALSE; $param3 = FALSE; $param4 = FALSE; $param5 = FALSE; $param6 = FALSE;
-    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp'))){
+    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp','m'))){
       $param1 = $subdomain;
       if($request->getParameter('param1')) $param2 = $request->getParameter('param1');
       if($request->getParameter('param2')) $param3 = $request->getParameter('param2');
@@ -215,20 +215,11 @@ class mainActions extends sfActions
       if($request->getParameter('param4')) $param5 = $request->getParameter('param4');
       if($request->getParameter('param5')) $param6 = $request->getParameter('param5');
     }else{
-    	if (in_array($subdomain, array('m'))){
-	      if($request->getParameter('param1')) $param1 = $request->getParameter('param2');
-	      if($request->getParameter('param2')) $param2 = $request->getParameter('param3');
-	      if($request->getParameter('param3')) $param3 = $request->getParameter('param4');
-	      if($request->getParameter('param4')) $param4 = $request->getParameter('param5');
-	      if($request->getParameter('param5')) $param5 = $request->getParameter('param6');
-			}
-			else {
-	      if($request->getParameter('param1')) $param1 = $request->getParameter('param1');
-	      if($request->getParameter('param2')) $param2 = $request->getParameter('param2');
-	      if($request->getParameter('param3')) $param3 = $request->getParameter('param3');
-	      if($request->getParameter('param4')) $param4 = $request->getParameter('param4');
-	      if($request->getParameter('param5')) $param5 = $request->getParameter('param5');
-			}
+      if($request->getParameter('param1')) $param1 = $request->getParameter('param1');
+      if($request->getParameter('param2')) $param2 = $request->getParameter('param2');
+      if($request->getParameter('param3')) $param3 = $request->getParameter('param3');
+      if($request->getParameter('param4')) $param4 = $request->getParameter('param4');
+      if($request->getParameter('param5')) $param5 = $request->getParameter('param5');
     }
     if(!$param1)
       $this->forward('main', 'index');
