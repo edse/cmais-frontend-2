@@ -3,7 +3,7 @@
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
               <div class="enunciado">
-                <h2><a href="http://tvcultura.cmais.com.br/grade">Esta semana na TV Cultura</a></h2>
+                <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>
                 <span></span>
               </div>
               <div class="destaque-5">
