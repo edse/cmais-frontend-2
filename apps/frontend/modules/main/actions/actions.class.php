@@ -15,10 +15,8 @@ class mainActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
- 
   public function executeIndex(sfWebRequest $request)
   {
-  	
     if(($request->getHost() == "nucleodevideosp.com.br")||($request->getHost() == "www.nucleodevideosp.com.br")||($request->getHost() == "www.nucleodevideosp.cmais.com.br")){
       header("Location: http://nucleodevideosp.cmais.com.br");
       die();
@@ -409,11 +407,10 @@ class mainActions extends sfActions
           $this->asset = Doctrine_Query::create()
             ->select('a.*')
             ->from('Asset a')
-          	->where('a.slug = ?', (string)$string);
-          if ($this->site->getSlug() != "m")
-          	$this->asset->andWhere('a.site_id = ?', (int)$object->id);
-          $this->asset->orderby('a.id desc');
-          $this->asset->fetchOne();
+          	->where('a.site_id = ?', (int)$object->id)
+          	->andWhere('a.slug = ?', (string)$string)
+            ->orderby('a.id desc')
+            ->fetchOne();
           if($this->asset)
             return $this->asset;
           else
