@@ -2,9 +2,9 @@
 $sites = Doctrine_Query::create()
   ->select('s.*')
   ->from('Site s')
-  ->where("s.slug IN ('viola','srbrasil','reisdarua','jornaldacultura','materiadecapa','ensaio','cartaozinho','rodaviva','metropolis','cartaoverde','vitrine','culturaretro','manoseminas','provocacoes')")
+  ->where("s.slug IN ('cartaoverde','cartaozinho','ensaio','jornaldacultura','materiadecapa','metropolis','provocacoes','reisdarua','rodaviva','srbrasil','viola')")//,'vitrine','culturaretro','manoseminas'
   ->orderBy('s.title asc')
-  ->limit(20)
+  ->limit(15)
   ->execute();
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug(); ?>.css" type="text/css" />
