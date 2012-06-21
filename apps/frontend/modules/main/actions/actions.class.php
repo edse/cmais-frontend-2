@@ -403,9 +403,6 @@ class mainActions extends sfActions
         if($this->section)
           return $this->section;
         else{
-        	if ($request->getParameter('test') == '1') {
-        		die($this->site->getSlug());
-        	}
           // #2b Look for an Asset
           $this->asset = Doctrine_Query::create()
             ->select('a.*')
