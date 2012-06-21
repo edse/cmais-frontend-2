@@ -215,11 +215,20 @@ class mainActions extends sfActions
       if($request->getParameter('param4')) $param5 = $request->getParameter('param4');
       if($request->getParameter('param5')) $param6 = $request->getParameter('param5');
     }else{
-      if($request->getParameter('param1')) $param1 = $request->getParameter('param1');
-      if($request->getParameter('param2')) $param2 = $request->getParameter('param2');
-      if($request->getParameter('param3')) $param3 = $request->getParameter('param3');
-      if($request->getParameter('param4')) $param4 = $request->getParameter('param4');
-      if($request->getParameter('param5')) $param5 = $request->getParameter('param5');
+    	if (in_array($subdomain, array('m'))){
+	      if($request->getParameter('param1')) $param1 = $request->getParameter('param2');
+	      if($request->getParameter('param2')) $param2 = $request->getParameter('param3');
+	      if($request->getParameter('param3')) $param3 = $request->getParameter('param4');
+	      if($request->getParameter('param4')) $param4 = $request->getParameter('param5');
+	      if($request->getParameter('param5')) $param5 = $request->getParameter('param6');
+			}
+			else {
+	      if($request->getParameter('param1')) $param1 = $request->getParameter('param1');
+	      if($request->getParameter('param2')) $param2 = $request->getParameter('param2');
+	      if($request->getParameter('param3')) $param3 = $request->getParameter('param3');
+	      if($request->getParameter('param4')) $param4 = $request->getParameter('param4');
+	      if($request->getParameter('param5')) $param5 = $request->getParameter('param5');
+			}
     }
     if(!$param1)
       $this->forward('main', 'index');
