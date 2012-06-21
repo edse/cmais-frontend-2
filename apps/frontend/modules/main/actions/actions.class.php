@@ -412,7 +412,7 @@ class mainActions extends sfActions
 						->orderby('a.id desc')
             ->fetchOne();
 					if ($object->getSlug() != 'm')
-          	$this->asset->where('a.site_id = ?', (int)$object->id);
+          	$this->asset->andWhere('a.site_id = ?', (int)$object->id);
           	
           if($this->asset)
             return $this->asset;
