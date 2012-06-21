@@ -32,7 +32,7 @@ class _assetActions extends sfActions
 			}
 			
 			// controls mobile user redirections
-			if ($this->asset->Site->Program->getChannelId() == 1 || in_array($this->asset->Site->getSlug(), array("cmais","m"))) {
+			if ($this->asset->Site->Program->getChannelId() == 1 || in_array($this->asset->Site->getSlug(), array("cmais","m","tvcultura"))) {
 				$from = $request->getParameter('from');
 				if (!isset($_COOKIE['versao_classica']) && $from == 'm')
 					setcookie('versao_classica', 1, -1);
