@@ -16,7 +16,7 @@
 	    <!--CABEÇALHO-->
 	    <h2>PROGRAMAÇÃO</h2>
 	    
-	    <a href="<?php echo url_for('homepage') . '/grade' ?>" class="gradeCompleta" data-direction="slide" data-rel="external">Grade completa</a>
+	    <a href="<?php echo url_for('homepage') . 'grade' ?>" class="gradeCompleta" data-direction="slide" data-rel="external">Grade completa</a>
 	
 			<div class="grade">
 				
@@ -44,7 +44,7 @@
 		          <fieldset class="ui-grid-a">
 		           
 		            <div class="ui-block-a">
-		               <a title="<?php echo $d->Program->getTitle() ?>" href="<?php echo url_for('homepage') . '/programa/' . $d->Program->Site->getSlug() ?>" data-transition="slide" rel="external"></a>
+		               <a title="<?php echo $d->Program->getTitle() ?>" href="<?php echo url_for('homepage') . 'programa/' . $d->Program->Site->getSlug() ?>" data-transition="slide" rel="external"></a>
 		              <div class="fotinho">
 		                <img src="<?php echo $d->retriveLiveImage() ?>" width="100%">
 		              </div>
