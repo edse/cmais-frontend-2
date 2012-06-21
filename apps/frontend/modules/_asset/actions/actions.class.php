@@ -377,8 +377,8 @@ class _assetActions extends sfActions
 		
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
-		die();
-		if ($this->site->getSlug() == "m") {
+		
+		if ($request->getParameter('param1') == "m") {
 			if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
 	      $this->setLayout(false);
 				if($debug)
