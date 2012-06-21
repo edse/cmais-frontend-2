@@ -164,7 +164,7 @@ class _sectionActions extends sfActions
       }
 
 			// controls mobile user redirections
-			if ($this->section->Site->Program->getChannelId() == 1 || in_array($this->section->Site->getSlug(), array("cmais","m"))) {
+			if ($this->section->Site->Program->getChannelId() == 1 || in_array($this->section->Site->getSlug(), array("cmais","m","tvcultura"))) {
 				$from = $request->getParameter('from');
 				if (!isset($_COOKIE['versao_classica']) && $from == 'm')
 					setcookie('versao_classica', 1, -1);
