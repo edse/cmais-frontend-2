@@ -1074,7 +1074,7 @@ class ajaxActions extends sfActions
         foreach($assets as $d){
 					$return .= '							<!--ITEM NOTICIA-->';
 					$return .= '							<li>';
-					$return .= '								<a href="'. url_for('@homepage') . $d->getSlug() . '">';
+					$return .= '								<a href="'. url_for('@homepage') . $d->getSlug() . '" data-rel="external">';
 					$return .= '									<fieldset class="ui-grid-a">';
 					if ($d->retriveImageUrlByImageUsage("image-1-b")) {
 						$return .= '										<!--FOTO-->';
