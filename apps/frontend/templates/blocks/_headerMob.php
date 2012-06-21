@@ -79,7 +79,7 @@
     <!-- /BOTAO AO VIVO -->
     
     <!-- LOGO CMAIS -->
-    <a href="<?php echo url_for('homepage') ?>" data-transition="flip" class="logo">
+    <a href="http://m.cmais.com.br" data-transition="flip" class="logo">
       <img src="/portal/images/capaPrograma/mob/logoCmais.png" alt="Cmais" width="100%"/>
     </a>  
     <!-- /LOGO CMAIS -->
