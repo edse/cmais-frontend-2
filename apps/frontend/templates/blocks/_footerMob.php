@@ -10,7 +10,10 @@
 				if (isset($asset))
 					$url = 'http://cmais.com.br/' . $site->getSlug() . '/' . $asset->getSlug() . '?from=m';
 				else
-					$url = 'http://cmais.com.br/' . $site->getSlug() . '?from=m';
+					if ($site->getSlug() == 'cmais')
+						$url = 'http://cmais.com.br?from=m';
+					else
+						$url = 'http://cmais.com.br/' . $site->getSlug() . '?from=m';
 			}
 			else {
 				if (isset($section)) {
