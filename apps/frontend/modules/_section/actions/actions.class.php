@@ -177,11 +177,11 @@ class _sectionActions extends sfActions
 								$siteMob = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param1'));
 								if ($siteMob->id > 0) {
 									if ($siteMob->getSlug() != 'cmais') {
-										header('Location: http://cmais.com.br/m/programa/' . $siteMob->getSlug());
+										header('Location: http://m.cmais.com.br/programa/' . $siteMob->getSlug());
 										die();
 									}
 									else {
-										header('Location: http://cmais.com.br/m');
+										header('Location: http://m.cmais.com.br');
 										die();
 									}
 								}
@@ -199,7 +199,7 @@ class _sectionActions extends sfActions
 						}
 					}
 					else {
-						header('Location: http://cmais.com.br/m');
+						header('Location: http://m.cmais.com.br');
 						die();
 					}
 				}
