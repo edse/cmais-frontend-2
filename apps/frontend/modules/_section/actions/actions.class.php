@@ -176,18 +176,24 @@ class _sectionActions extends sfActions
 							if (!isset($_COOKIE['versao_classica']) && $from != 'm') {
 								$siteMob = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param1'));
 								if ($siteMob->id > 0) {
-									if ($siteMob->getSlug() != 'cmais')
+									if ($siteMob->getSlug() != 'cmais') {
 										header('Location: http://m.cmais.com.br/programa/' . $siteMob->getSlug());
-									else
+										die();
+									}
+									else {
 										header('Location: http://m.cmais.com.br');
-									die();
+										die();
+									}
 								}
 								else {
-									if (in_array($request->getParameter('param1'), array("programas","grade","aovivo")))
+									if (in_array($request->getParameter('param1'), array("programas","grade","aovivo"))) {
 										header('Location: http://m.cmais.com.br/'.$request->getParameter('param1'));
-									else
+										die();
+									}
+									else {
 										header('Location: http://m.cmais.com.br');
-									die();
+										die();
+									}
 								}
 							}
 						}
@@ -198,19 +204,30 @@ class _sectionActions extends sfActions
 					}
 					else {
 						if ($this->section->Site->getSlug() == "m" && $_REQUEST['force'] != "1") {
-							if (in_array($this->section->getSlug(), array("home","home-page","homepage")))
+							if (in_array($this->section->getSlug(), array("home","home-page","homepage"))) {
 								header('Location: http://cmais.com.br');
-							elseif (in_array($this->section->getSlug(), array("programa","grade","aovivo")))
+								die();
+							}
+							elseif (in_array($this->section->getSlug(), array("programa","grade","aovivo"))) {
 								header('Location: http://cmais.com.br/'.$request->getParameter('param2'));
-							elseif ($this->section->getSlug() == "programas")
+								die();
+							}
+							elseif ($this->section->getSlug() == "programas") {
 								header('Location: http://cmais.com.br/programas-de-a-z');
-							elseif ($this->section->getSlug() == "culturabrasil")
+								die();
+							}
+							elseif ($this->section->getSlug() == "culturabrasil") {
 								header('Location: http://www.culturabrasil.com.br');
-							elseif ($this->section->getSlug() == "culturafm")
+								die();
+							}
+							elseif ($this->section->getSlug() == "culturafm") {
 								header('Location: http://culturafm.cmais.com.br');
-							else
+								die();
+							}
+							else {
 								header('Location: http://cmais.com.br');
-							die();
+								die();
+							}
 						}
 					}
 				}
