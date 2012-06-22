@@ -110,7 +110,7 @@
           
           <?php if(count($displays["destaque-padrao-5"]) > 0 ) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"])) ?>
           
-          <?php// if(isset($displays["destaque-carrossel-1"])) include_partial_from_folder('blocks','global/display1c-carrossel', array('displays' => $displays["destaque-carrossel-1"])) ?>                      
+                                
                 
               </div>
               <!-- /col-dir -->
