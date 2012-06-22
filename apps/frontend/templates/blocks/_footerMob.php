@@ -14,13 +14,13 @@
 			}
 			else {
 				if (isset($section)) {
-					$url = url_for(@homepage) . 'cmais/' . $section->getSlug() . '?from=m';
+					$url = 'http://cmais.com.br/' . $section->getSlug() . '?from=m';
 					if ($section->getSlug() == 'culturafm' || (isset($_GET['url']) && strpos($_GET['url'], "radiofm")))
 						$url = 'http://culturafm.cmais.com.br?from=m';
 					if ($section->getSlug() == 'culturabrasil' || (isset($_GET['url']) && strpos($_GET['url'], "culturabrasil.com.br")))
 						$url = 'http://www.culturabrasil.com.br';
 					if ($section->getSlug() == 'programas')
-						$url = url_for(@homepage) . 'cmais/programas-de-a-z?from=m';
+						$url = 'http://cmais.com.br/programas-de-a-z?from=m';
 				}
 			}
 		?>
