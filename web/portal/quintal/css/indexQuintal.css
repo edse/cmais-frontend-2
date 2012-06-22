@@ -1,0 +1,7 @@
+.rodape .menuRodape {margin-top: 74px;}
+.conteudoWrapper {height: auto;}
+
+#menu-quintal-principal{position:relative;width:100%;min-height:700px;}
+#menu-quintal-principal #btn-a{position:absolute;top:45px;z-index: 2;}
+#menu-quintal-principal #btn-b{position:absolute;left: 184px;top: 90px;z-index: 3;}
+#menu-quintal-principal #btn-c{position:absolute;right: 0;top: 25px;z-index: 1;}
