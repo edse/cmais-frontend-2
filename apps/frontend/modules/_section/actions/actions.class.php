@@ -187,11 +187,11 @@ class _sectionActions extends sfActions
 								}
 								else {
 									if (in_array($request->getParameter('param1'), array("programas","grade","aovivo"))) {
-										header('Location: http://cmais.com.br/m/'.$request->getParameter('param1'));
+										header('Location: http://m.cmais.com.br/'.$request->getParameter('param1'));
 										die();
 									}
 									else {
-										header('Location: http://cmais.com.br/m');
+										header('Location: http://m.cmais.com.br');
 										die();
 									}
 								}
