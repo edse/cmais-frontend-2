@@ -107,8 +107,10 @@
           <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
                 
           <?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
-
-      <?php if(isset($displays["destaque-carrossel-1"])) include_partial_from_folder('blocks','global/display1c-carrossel', array('displays' => $displays["destaque-carrossel-1"])) ?>                      
+          
+          <?php if(count($displays["destaque-padrao-5"]) > 0 ) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"])) ?>
+          
+                                
                 
               </div>
               <!-- /col-dir -->
@@ -129,14 +131,19 @@
 
               <!-- BOX PADRAO Noticia -->
               <div class="box-padrao grid1">
-                <div class="topo claro">
+                <!--div class="topo claro">
                   <span></span>
                   <div class="capa-titulo">
                     <h4>Conte&uacute;dos + recentes</h4>
                     <a href="/feed" class="rss" title="rss" style="display: block"></a>
                   </div>
-                </div>
-                <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
+                </div-->
+                
+                <?php //if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
+              
+                <?php if(count($displays["destaque-padrao-6"]) > 0 ) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-6"])) ?>
+                
+                <?php if(count($displays["destaque-padrao-7"]) > 0 ) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-7"])) ?>
               </div>
               <!-- /BOX PADRAO Noticia -->
 
