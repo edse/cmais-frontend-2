@@ -292,7 +292,7 @@ $asset = $pager->getCurrent();
                               <a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
                           <?php endforeach; ?>
                         <?php else: ?>
-                          <?php $k=count($assets)+1; foreach($assets as $d): $k--; ?>
+                          <?php $k=0; foreach($assets as $d): $k++; ?>
                             <li class="conteudo-lista">
                               <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Aula<span><?php echo $k; ?></span></a>
                               <a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a>
