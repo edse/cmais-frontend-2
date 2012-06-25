@@ -146,6 +146,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .box-interna .texto { padding-bottom:20px; }
 .assinatura { width:600px; }
 .box-compartilhar p { background:none; }
+.box-interna img { max-width:600px }
 /* /interna */
 
 /*secao*/
