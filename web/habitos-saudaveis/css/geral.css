@@ -80,7 +80,7 @@ body { background:#fff;  }
 .player h3 img {margin-top:2px;}
 h3 img{ margin:5px 0 3px 10px; }
 h3 img{ *margin:5px 0 9px 10px; }
-.capa-player { width:420px; height:395px; margin:6px 0 0 60px; }
+.capa-player { width:420px; height:395px; margin:0 0 0 60px; }
 #direita2 .thumb,
 #direita .thumb { width:360px; height:164px; -moz-border-radius:0 0 7px 7px; border-radius:0 0 7px 7px; overflow:hidden; margin-left:10px; display:block; }
 #direita2 .thumb { width:280px; height:164px; }
@@ -93,7 +93,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .carrossel .jcarousel-item a img { width:112px; height:95px; }
 .carrossel .jcarousel-list { min-width:960px; margin-left:50px; }
 .carrossel .jcarousel-prev,
-.carrossel .jcarousel-next { background:url(../images/setas.png) no-repeat; width:50px; height:87px; position: absolute; }
+.carrossel .jcarousel-next { background:url(../images/setas.png) no-repeat; width:50px; height:87px; position: absolute; cursor:pointer }
 .carrossel .jcarousel-prev { left:10px; top:5px; }
 .carrossel .jcarousel-next { right:10px; top:5px; background-position:-50px 0;  }
 

@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Maioral]]></longDescription>
 		  <description><![CDATA[Maioral]]></description>
 		  <filename><![CDATA[../../../flv/vt-39-maioral.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Maioral]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Maioral]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

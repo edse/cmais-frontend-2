@@ -59,7 +59,7 @@ function starShow(){
 function starHide(){
 	if(window!=top) top.starHide();
 	var star = getStarCursor();
-	star.style.display = "none";
+	//star.style.display = "none";
 }
 function flashStarEnter(){	
 	var star = getStarCursor();		
@@ -125,7 +125,7 @@ function hideStarSelectBoxes(){
 	for(var i=0;i<sel.length;i++){
 		var box = sel[i];
 		box.onmouseover = function(){ starOverride=true; starHide();  };
-		box.onmouseout = function(){ starOverride=false; /*starShow();*/ }
+		box.onmouseout = function(){ starOverride=false; starShow(); }
 	}
 }
 

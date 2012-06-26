@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Brincadeiras com bola]]></longDescription>
 		  <description><![CDATA[Brincadeiras com bola]]></description>
 		  <filename><![CDATA[../../../flv/vt-06-brincadeiras-com-bola.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Brincadeiras com bola]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Brincadeiras com bola]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

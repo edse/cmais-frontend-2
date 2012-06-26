@@ -137,6 +137,7 @@ function flash_generateStatsUrl(context, eventType, assetId, assetType, assetUrl
 	
 	// TEST -- TITLE REWRITE
 	// just for kicks
+	/*
 	var titleArray = ["Sesame Street"];
 	titleArray.push(topLevel);
 	if(playlistData && playlistData.playlistName){
@@ -144,6 +145,7 @@ function flash_generateStatsUrl(context, eventType, assetId, assetType, assetUrl
 	}
 	titleArray.push(assetTitle);
 	document.title = titleArray.join(" - ");
+	*/
 	// END TEST
 
 	var statsArray = [topLevel];
@@ -179,11 +181,13 @@ function flash_debugStats(str){
 }
 
 function flash_escapeTitle(title){
+	/*
 	var rex = /[^a-zA-Z0-9_-]/g;
 	var rex2 = /_{2,}/g
 	var newTitle = title.split(" ").join("_");
 	newTitle = newTitle.replace(rex,"").replace(rex2,"_");
-	
+	*/
+	var newTitle = '';
 	return newTitle;
 }
 

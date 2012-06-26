@@ -1,4 +1,4 @@
-/*
+
 // JavaScript Document
 // Array of muppet names which when combined with other pre and post strings point to image names and image rollovers.
 var aMuppets = new Array('abby','bert','bigbird','cookie','count','elmo','ernie','grover','oscar','rosita','telly','zoe');
@@ -64,4 +64,3 @@ function randomMuppet(){
 	element.className = muppet;
 	return muppet;
 }
-*/

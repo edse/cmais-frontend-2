@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - O dia do Matheus]]></longDescription>
 		  <description><![CDATA[O dia do Matheus]]></description>
 		  <filename><![CDATA[../../../flv/vt-27-o-dia-do-matheus.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - O dia do Matheus]]></title>
+		  <!--title><![CDATA[Vila Sesamo - O dia do Matheus]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

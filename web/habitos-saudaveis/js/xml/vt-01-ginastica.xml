@@ -6,14 +6,14 @@ It contains a stand-alone video definition
 <configData>
 	<config>
 		
-	</config>
+	</config> 
 	<data>
 		<video>
 		  <id>00100290317</id>
 		  <longDescription><![CDATA[Vila Sesamo - Ginastica]]></longDescription>
 		  <description><![CDATA[Ginastica]]></description>
 		  <filename><![CDATA[../../../flv/vt-01-ginastica.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Ginastica]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Ginastica]]></title-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <!--
 		  <thumbSmall>../../../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>

@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Brincadeiras fora de casa]]></longDescription>
 		  <description><![CDATA[Brincando fora de casa]]></description>
 		  <filename><![CDATA[../../../flv/vt-08-brincadeiras-fora-de-casa.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Brincadeiras fora de casa]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Brincadeiras fora de casa]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

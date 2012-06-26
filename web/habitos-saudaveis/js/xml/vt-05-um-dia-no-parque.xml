@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Um dia no parque]]></longDescription>
 		  <description><![CDATA[Um dia no parque]]></description>
 		  <filename><![CDATA[../../../flv/vt-05-um-dia-no-parque.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Um dia no parque]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Um dia no parque]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

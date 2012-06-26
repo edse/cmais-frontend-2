@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Dance com as flores]]></longDescription>
 		  <description><![CDATA[Dance com as flores]]></description>
 		  <filename><![CDATA[../../../flv/vt-33-dance-com-as-flores.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Dance com as flores]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Dance com as flores]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

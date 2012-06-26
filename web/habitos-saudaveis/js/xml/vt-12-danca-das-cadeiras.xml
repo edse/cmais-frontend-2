@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - Danca das cadeiras]]></longDescription>
 		  <description><![CDATA[Danca das cadeiras]]></description>
 		  <filename><![CDATA[../../../flv/vt-12-danca-das-cadeiras.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - Danca das cadeiras]]></title>
+		  <!--title><![CDATA[Vila Sesamo - Danca das cadeiras]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>

@@ -13,7 +13,7 @@ It contains a stand-alone video definition
 		  <longDescription><![CDATA[Vila Sesamo - So eu sou eu]]></longDescription>
 		  <description><![CDATA[So eu sou eu]]></description>
 		  <filename><![CDATA[../../../flv/vt-35-so-eu-sou-eu.flv]]></filename>
-		  <title><![CDATA[Vila Sesamo - So eu sou eu]]></title>
+		  <!--title><![CDATA[Vila Sesamo - So eu sou eu]]></title!-->
 		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
 		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
 		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
