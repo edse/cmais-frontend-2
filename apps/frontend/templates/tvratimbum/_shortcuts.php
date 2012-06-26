@@ -102,10 +102,7 @@
 			</div>
 		</div>
       <ul>
-        <li><a class="ml-rss" href="">Rss</a></li>
         <li><a class="ml-facebook" href="#dialog2" name="modal">Facebook</a></li>
-        <li><a class="ml-twitter" href="#dialog3" name="modal">Twitter</a></li>
-        <li><a class="ml-youtube" href="">Youtube</a></li>
-        <li><a class="ml-flicker" href="">Flicker</a></li>
+        <li><a class="ml-youtube" href="http://www.youtube.com.br/tvratimbum">Youtube</a></li>
       </ul>
     </div>
