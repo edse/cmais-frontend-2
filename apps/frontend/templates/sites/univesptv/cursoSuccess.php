@@ -95,31 +95,31 @@ $asset = $pager->getCurrent();
                           <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior" style="width: 110px; padding-left: 20px; float: left; margin-left: 7px;"> Aula anterior</a>
                           <?php endif; ?>
                         </div>
-				        <form id="page_form" action="" method="post">
-				          <input type="hidden" name="return_url" value="<?php echo $url?>" />
-				          <input type="hidden" name="page" id="page" value="" />
-				        </form>
-				        <script>
-				          function goToPage(i){
-				          	$("#page").val(i);
-				          	$("#page_form").submit();
-				          }
-				        </script>
+                <form id="page_form" action="" method="post">
+                  <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                  <input type="hidden" name="page" id="page" value="" />
+                </form>
+                <script>
+                  function goToPage(i){
+                    $("#page").val(i);
+                    $("#page_form").submit();
+                  }
+                </script>
                         <?php endif; ?>
                       <?php endif; ?>
                       <!-- PAGINACAO -->
                       <?php
                       if($asset->AssetType->getSlug() == "video") 
-                      	$video = $asset;
+                        $video = $asset;
                       else{
-                      	$video = $asset->retriveRelatedAssetsByAssetTypeId(6);
-                      	$video = $video[0];
+                        $video = $asset->retriveRelatedAssetsByAssetTypeId(6);
+                        $video = $video[0];
                       }
                       ?>
                       <?php if($video->AssetVideo->getYoutubeId() != ""): ?>
                       <div class="media grid2">
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
-                        <div><?php echo $asset->getDescription() ?></div>
+                        <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
                       </div>
                       <?php endif; ?>
 
@@ -207,57 +207,73 @@ $asset = $pager->getCurrent();
                   <!-- BOX PADRAO NOTICIAS -->
                   <?php
                   $asset = $pager->getCurrent();
-									/*
+                  /*
                   if($section->getSlug() != "home"){
-                  	$assets = Doctrine_Query::create()
-	                  	->select('a.*')
-	                  	->from('Asset a, SectionAsset sa')
-	                  	->where('sa.section_id = ?', (int)$section->getId())
-	                  	->andWhere('sa.asset_id = a.id')
-	                  	->orderBy('a.created_at desc')
-	                  	->limit(60)
-	                  	->execute();
+                    $assets = Doctrine_Query::create()
+                      ->select('a.*')
+                      ->from('Asset a, SectionAsset sa')
+                      ->where('sa.section_id = ?', (int)$section->getId())
+                      ->andWhere('sa.asset_id = a.id')
+                      ->orderBy('a.created_at desc')
+                      ->limit(60)
+                      ->execute();
                   }else{
-                  	$assets = Doctrine_Query::create()
-	                  	->select('a.*')
-	                  	->from('Asset a')
-	                  	->where('a.site_id = ?', (int)$site->getId())
-	                  	->orderBy('a.created_at asc')
-	                  	->limit(60)
-	                  	->execute();
+                    $assets = Doctrine_Query::create()
+                      ->select('a.*')
+                      ->from('Asset a')
+                      ->where('a.site_id = ?', (int)$site->getId())
+                      ->orderBy('a.created_at asc')
+                      ->limit(60)
+                      ->execute();
                   }
-									*/
-						      if($section->getSlug() != "home"){
-						        $assets = Doctrine_Query::create()
-						          ->select('a.*')
-						          ->from('Asset a, SectionAsset sa')
-						          ->where('sa.section_id = ?', (int)$section->getId())
-						          ->andWhere('sa.asset_id = a.id')
-						          ->orderBy('sa.display_order')
-	                  	->limit(60)
-	                  	->execute();
-						      }
-						      else{
-						        if(count($section->getAssets()) > 0){
-						          $assets = Doctrine_Query::create()
-						            ->select('a.*')
-						            ->from('Asset a, SectionAsset sa')
-						            ->where('sa.section_id = ?', (int)$section->getId())
-						            ->andWhere('sa.asset_id = a.id')
-						            ->orderBy('sa.display_order')
-						            ->limit(60)
-												->execute();
-						        }else{
-						          $assets = Doctrine_Query::create()
-						            ->select('a.*')
-						            ->from('Asset a')
-						            ->where('a.site_id = ?', (int)$site->getId())
-						            ->orderBy('a.created_at asc')
-						            ->limit(60)
-												->execute();
-						        }
-						      }
-									
+                  */
+                  if($section->getSlug() != "home"){
+                    $assets = Doctrine_Query::create()
+                      ->select('a.*')
+                      ->from('Asset a, SectionAsset sa')
+                      ->where('sa.section_id = ?', (int)$section->getId())
+                      ->andWhere('sa.asset_id = a.id')
+                      ->orderBy('sa.display_order')
+                      ->limit(60)
+                      ->execute();
+                  }
+                  else{
+                    if(count($section->getAssets()) > 0){
+                      $assets = Doctrine_Query::create()
+                        ->select('a.*')
+                        ->from('Asset a, SectionAsset sa')
+                        ->where('sa.section_id = ?', (int)$section->getId())
+                        ->andWhere('sa.asset_id = a.id')
+                        ->orderBy('sa.display_order')
+                        ->limit(60)
+                        ->execute();
+                    }else{
+                      $assets = Doctrine_Query::create()
+                        ->select('a.*')
+                        ->from('Asset a')
+                        ->where('a.site_id = ?', (int)$site->getId())
+                        ->orderBy('a.created_at asc')
+                        ->limit(60)
+                        ->execute();
+                    }
+                  }?>
+
+                  <!-- BOX PADRAO NOTICIAS -->
+                  <?php if((isset($displays["saiba-mais"]))&&(count($displays["saiba-mais"]) > 0)): ?>
+                  <div class="box-padrao grid1">
+                    <div class="topo">
+                      <span></span>
+                      <div class="capa-titulo">
+                        <h4><?php if(isset($displays["saiba-mais"])) echo $displays["saiba-mais"][0]->Block->getTitle() ?></h4>
+                      </div>
+                    </div>
+                    <?php if(isset($displays["saiba-mais"])) include_partial_from_folder('blocks','global/display1c-news2', array('displays' => $displays["saiba-mais"])) ?>
+                  </div>
+                  <?php endif; ?>
+                  <!-- /BOX PADRAO NOTICIAS -->
+
+
+                  <?php
                   if($assets): 
                   ?>
                   <div id="box-videos" class="box-padrao grid1">
@@ -269,11 +285,21 @@ $asset = $pager->getCurrent();
                       </div>
                     <div class="">
                       <ul class="sem-borda">
-                        <?php $k=0; foreach($assets as $d): $k++; ?>
-                          <li class="conteudo-lista">
-                          	<!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> -->
-                          	<a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
-                        <?php endforeach; ?>
+                        <?php if($site->getSlug() != "curso-modelo"): ?>
+                          <?php $k=0; foreach($assets as $d): $k++; ?>
+                            <li class="conteudo-lista">
+                              <!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> -->
+                              <a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
+                          <?php endforeach; ?>
+                        <?php else: ?>
+                          <?php $k=0; foreach($assets as $d): $k++; ?>
+                            <li class="conteudo-lista">
+                              <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Aula<span><?php echo $k; ?></span></a>
+                              <a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a>
+                              <p><?php echo $d->getDescription(); ?></p>
+                            </li>
+                          <?php endforeach; ?>
+                        <?php endif; ?>
                       </ul>
                     </div>
                   </div>
@@ -283,9 +309,9 @@ $asset = $pager->getCurrent();
                   <!-- BOX PUBLICIDADE -->
                   <div class="box-publicidade grid1">
                     <!-- univesptv-300x250 -->
-					<script type='text/javascript'>
-					GA_googleFillSlot("univesptv-300x250");
-					</script>
+          <script type='text/javascript'>
+          GA_googleFillSlot("univesptv-300x250");
+          </script>
                   </div>
                   <!-- / BOX PUBLICIDADE -->
 
@@ -317,21 +343,6 @@ $asset = $pager->getCurrent();
                   <?php endif; ?>
                   <!-- /BOX PADRAO NOTICIAS -->
 
-                  <!-- BOX PADRAO NOTICIAS -->
-                  <?php if((isset($displays["saiba-mais"]))&&(count($displays["saiba-mais"]) > 0)): ?>
-                  <div class="box-padrao grid1">
-                    <div class="topo">
-                      <span></span>
-                      <div class="capa-titulo">
-                        <h4><?php if(isset($displays["saiba-mais"])) echo $displays["saiba-mais"][0]->Block->getTitle() ?></h4>
-                      </div>
-                    </div>
-                    <?php if(isset($displays["saiba-mais"])) include_partial_from_folder('blocks','global/display1c-news2', array('displays' => $displays["saiba-mais"])) ?>
-                  </div>
-                  <?php endif; ?>
-                  <!-- /BOX PADRAO NOTICIAS -->
-
-                  <!-- /BOX NOTICIA -->
 
                   <!-- BOX PADRAO LINKS -->
                   <?php if((isset($displays["links-uteis"]))&&(count($displays["links-uteis"]) > 0)): ?>
@@ -353,16 +364,16 @@ $asset = $pager->getCurrent();
                 <!-- /DIREITA -->
                 
               <!-- APOIO -->
-	          <ul id="apoio" class="grid3">
-	              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
-	              <li><a href="http://www.fapesp.br" class="fapesp"><img src="/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
-	              <li><a href="http://www.unicamp.br" class="unicamp"><img src="/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
-	              <li><a href="http://www.unesp.br" class="unesp"><img src="/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
-	              <li><a href="http://www.usp.br" class="usp"><img src="/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
-	              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
-	              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
-	          </ul>
-	          <!-- APOIO -->
+            <ul id="apoio" class="grid3">
+                <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
+                <li><a href="http://www.fapesp.br" class="fapesp"><img src="/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
+                <li><a href="http://www.unicamp.br" class="unicamp"><img src="/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
+                <li><a href="http://www.unesp.br" class="unesp"><img src="/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
+                <li><a href="http://www.usp.br" class="usp"><img src="/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
+                <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
+                <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
+            </ul>
+            <!-- APOIO -->
                 
             </div>
             <!-- /CAPA -->
