@@ -1,0 +1,14 @@
+/**
+HOME LAYOUT contains two rows
+
+[ homeflash-container   ]
+[ home-features ]
+
+**/
+
+/****************************************************************/
+/** homeflash-container (full width row)                                **/
+/****************************************************************/
+
+DIV#homeflash-container{ }
+DIV#homeflash-container .home-no-flash{ }

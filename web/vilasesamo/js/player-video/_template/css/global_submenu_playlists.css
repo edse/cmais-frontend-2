@@ -1,0 +1,25 @@
+/** playlists-subnav buttons **/ 
+
+/* coloured backgrounds */
+DIV#submenu.playlists { background-image:url(../images/submenu/playlists/playlists_subnav_bg.gif); }
+
+DIV#submenu a#playlists-subnav-home{background-image:url(../images/submenu/playlists/playlists_subnav_playlist.gif); width:130px; }
+DIV#submenu a#playlists-subnav-home.current{background-image:url(../images/submenu/playlists/playlists_subnav_playlist_c.gif); width:130px; }
+DIV#submenu a#playlists-subnav-home:hover{background-image:url(../images/submenu/playlists/playlists_subnav_playlist_r.gif); width:130px; }
+
+DIV#submenu a#playlists-subnav-browse-all{background-image:url(../images/submenu/playlists/playlists_subnav_browse_all.gif); width:80px; height:26px;}
+DIV#submenu a#playlists-subnav-browse-all.current{background-image:url(../images/submenu/playlists/playlists_subnav_browse_all_c.gif); width:80px; }
+DIV#submenu a#playlists-subnav-browse-all:hover{background-image:url(../images/submenu/playlists/playlists_subnav_browse_all_r.gif); width:80px; }
+
+DIV#submenu a#playlists-subnav-by-subject{background-image:url(../images/submenu/playlists/playlists_subnav_by_subject.gif); width:81px; height:26px;}
+DIV#submenu a#playlists-subnav-by-subject.current{background-image:url(../images/submenu/playlists/playlists_subnav_by_subject_c.gif); width:81px; }
+DIV#submenu a#playlists-subnav-by-subject:hover{background-image:url(../images/submenu/playlists/playlists_subnav_by_subject_r.gif); width:81px; }
+
+DIV#submenu a#playlists-subnav-by-theme{background-image:url(../images/submenu/playlists/playlists_subnav_by_theme.gif); width:77px; height:26px;}
+DIV#submenu a#playlists-subnav-by-theme.current{background-image:url(../images/submenu/playlists/playlists_subnav_by_theme_c.gif); width:77px; }
+DIV#submenu a#playlists-subnav-by-theme:hover{background-image:url(../images/submenu/playlists/playlists_subnav_by_theme_r.gif); width:77px; }
+
+DIV#submenu a#playlists-subnav-by-character{background-image:url(../images/submenu/playlists/playlists_subnav_by_character.gif); width:92px; height:26px;}
+DIV#submenu a#playlists-subnav-by-character.current{background-image:url(../images/submenu/playlists/playlists_subnav_by_character_c.gif); width:92px; }
+DIV#submenu a#playlists-subnav-by-character:hover{background-image:url(../images/submenu/playlists/playlists_subnav_by_character_r.gif); width:92px; }
+

@@ -1,0 +1,99 @@
+/**
+GRID LAYOUT contains any number of rows (grid-row) 
+Each row may contain specifically typed columns
+
+These styles describe the outer template structure for the 
+large content area (left) with the narrow advertising bar (right)
+
+[ROW]
+[ COL content    ] [ COL promo ]
+[END ROW]
+
+**/
+
+/****************************************************************/
+/** grid-row		                                           **/
+/****************************************************************/
+
+
+/** unhacked grid-rows **/
+DIV.grid-row{ margin-top:10px;}	
+/* top row (on some layouts) requires a smaller margin */
+DIV.grid-row.top {margin-top:4px !important;}
+
+
+DIV.grid-row.flush{ margin-top:0px !important}	/* flush to top */
+/* outer row - fixed width */
+DIV.grid-row.outer{ width:918px;}
+/* promo row contains the promo bar which needs a background to match height */
+DIV.grid-row.promo-row{ background:url(../images/promo-bar-bg-tile.gif) top right repeat-y #FFF;}  
+
+DIV.grid-col{ float:left;}
+
+/****************************************************************/
+/** grid-col		                                           **/
+/****************************************************************/
+
+/** features **/
+DIV.grid-col.solo{
+	float:none;
+}	
+
+/** features **/
+DIV.grid-col.player{
+	margin-left:5px;
+	width:958px;
+}	
+
+/** features **/
+DIV.grid-col.feature{
+	width:300px;
+}	
+
+DIV.grid-col.feature.left{
+	float:left;
+}	
+
+/** main content area **/
+DIV.grid-row.promo-row DIV.grid-col.content{ 
+	width:764px;
+	float:left;
+}
+
+DIV.grid-col.content-460{ 
+	width:438px;
+	float:left;
+	padding-right:25px;
+}
+
+DIV.grid-col.content-250{ 
+	width:250px;
+	float:left;
+}
+
+DIV.grid-col.content-525{ 
+	width:530px;
+	float:left;
+}
+V.grid-col.content-608{ 
+	width:608px;
+	float:left;
+	margin-right:10px;
+}
+
+DIV.grid-col.content-610{ 
+	width:610px;
+	float:left;
+	margin-right:8px;
+}
+
+/** 120 wide promo area (right side) **/
+DIV.grid-col.promo {
+	width:120px;
+	margin:0px;
+	background:url(../images/promo-bar-bg.gif) top left no-repeat #dddddd;
+	padding:14px 14px 7px 14px;
+	color:#FFF;
+	float:right;
+}
+DIV.flush DIV.grid-col.promo {border-top:10px solid #FFF;}

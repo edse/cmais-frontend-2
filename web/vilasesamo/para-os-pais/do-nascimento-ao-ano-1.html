@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+  <head>
+    <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <link rel="stylesheet" href="../css/geral-portal.css" type="text/css" />    
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../css/ie-only.css" />
+    <![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <title>Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Para os Pais – Vila Sésamo" />
+    <meta name="description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="Vila Sésamo, programa infantil, crianças na televisão, jogos de criança, playlists, muppets, pré-escolar, bel, beto, come come, elmo, ênio, garibaldo, groover, zoe, a alfabetização, os números, contando, resolução de problemas, desenvolvimento emocional" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Para os Pais – Vila Sésamo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://cmais.com.br/frontend.php" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="../images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <!-- scripts -->
+    <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/portal.js"></script>
+    <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>    
+    <!-- /scripts -->
+    
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
+    <script type="text/javascript" src="../js/swfobject.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
+     <div id="modal" style="display:none;">
+      <p class="tit">Enviar para amigo</p>
+      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
+      <div class="divisa"></div>
+      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
+      <form id="enviar-amigo">
+        <div class="nome">
+          <label for="seunome">Seu nome</label>
+          <input type="text" id="seunome" name="seunome" class="required" />
+         </div>
+         <div class="nome last">
+          <label for="nomeamigo">Nome do seu amigo</label>
+          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
+        </div>
+        <div class="email">
+          <label for="email">E-mail do seu amigo</label>
+          <input type="text" id="email" name="email" class="required" />
+        </div>
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
+                            
+      </form>
+      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
+    </div>
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#enviar-amigo').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            seunome:{
+              required: true,
+              minlength: 2
+            },
+            nomeamigo:{
+              required: true,
+              minlength: 2
+            },
+            email:{
+              required: true,
+              email: true
+            }
+            
+          },
+          messages:{
+            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      
+      
+      
+    </script>
+    
+    <!-- CAPA SITE -->
+    <div id="capa-site">
+      <!-- CHAMADA -->
+      <!-- /CHAMADA -->
+      
+      <link rel="stylesheet" href="../css/geral.css" type="text/css" />
+      <script type="text/javascript" src="../js/script.js"></script>            
+      <div id="mydiv"></div> 
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        
+        
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina">
+          <!-- CAPA -->
+          <div class="capa grid3 para-os-pais">
+            <ul class="menu-topo">
+              <li class="para-os-pais"><a href="../para-os-pais" class="ativo" title="Para os Pais" name="Para os Pais"></a></li>
+              <li class="natv"><a href="../natv/index.html" title="Na TV" name="Na TV"></a></li>
+               <li class="habitos"><a href="#"  title="Hábitos Saudáveis" name="Hábitos Saudáveis"></a></li>                        
+            </ul>
+            <div class="menu-secoes">
+              <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
+              <ul>
+                <li class="jogos"><a href="../jogos/index.html" title="Jogos" name="jogos"></a></li>
+                <li class="videos"><a href="../videos/index.html" title="Vídeos" name="Vídeos"></a></li>
+                <li class="atividades"><a href="../atividades/index.html" title="Atividades" name="Atividades"></a></li>
+                <li class="personagens"><a href="../personagens/index.html" title="Personagens" name="Personagens"></a></li>                            
+              </ul>
+              <div class="barra-menu"></div>
+            </div>
+            <div id="referencia"></div>
+            <div class="navegacao artigo">
+              <a class="home" href="index.html">Para os pais</a><span>»</span>
+              <p>Através do olhar infantil – Do nascimento ao Ano 1</p>
+            </div>
+            <!-- ESQUERDA -->
+            <div id="esquerda2">
+              <div class="texto">
+                <p class="grd">Através do olhar infantil – Do nascimento ao Ano 1</p>
+                <div class="info">                  
+                  <a href="JavaScript:window.print();" class="imprimir">Imprimir</a>
+                  <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">Email</a>
+                </div>
+                <img src="../images/para-os-pais/do-nascimento-1-ano.jpg" alt="teste" />
+                <!--
+                <p></p>
+                <p class="bold"></p> 
+                -->
+                <p class="bold">Apoie o desenvolvimento da criança através dos momentos do dia a dia. </p>
+                <p>Do nascimento ao ano um, seu filho está experimentando um rápido crescimento e desenvolvimento de sua vida. Durante o primeiro ano, ele começará a se aventurar no mundo exterior. Construirá suas habilidades de comunicação e responderá a muitas de suas sugestões. Também irá construir habilidades física, sociais e de pensamentos, enquanto  experimenta o mundo. Aqui, estão algumas maneiras para você enriquecer as primeiras experiências de seu filho:</p>
+                <p class="bold">Desenvolvimento Físico</p>
+                <p>Enquanto seu filho cresce, você pode promover sua saúde dentro de um ambiente sadio, no qual ele possa desenvolver suas habilidades físicas e investigar o mundo a sua volta. Você também pode criar oportunidades para que ele desenvolva habilidades motoras bem como outros tipos de aprendizados.</p>
+                <ul>
+                  <li>Forme uma parceria com o médico de seu filho desde o início, agendando visitas médicas o tanto quanto se façam necessárias. O médico irá checar se a criança está recebendo alimentação adequada e se está crescendo corretamente. Estar imunizado é muito importante nos primeiros anos, pois ajuda a evitar doenças e propicia um começo saudável para o bebê. </li>
+                  <li>O primeiro ano de vida exige mais fisicamente. Faça com que a criança tenha horários para dormir, incluindo cochilos. Não há uma quantidade de horas certas para cada criança da mesma idade, mas um recém-nascido pode gastar uma boa parte do dia dormindo enquanto um neném um pouco mais crescido poderá dosar de forma mais uniforme o tempo entre dormir e estar acordado.</li>
+                  <li>Dê chances para seu filho aprender sobre o mundo através de seus sentidos. Por exemplo, tenha à mão objetos seguros que ele possa agarrar, como um brinquedo macio ou com cores vivas, assim ele poderá experimentar diferentes texturas e cores.</li>
+                  <li>É importante que seu filho tenha uma experiência divertida ao desenvolver habilidades físicas. Para ajudá-lo a alongar o pescoço e os músculos dos ombros, coloque seu bebê de barriga para baixo algumas vezes ao dia (supervisione para garantir segurança) e abaixe ao seu lado para brincar.</li>
+                  <li>Para ajudar no desenvolvimento muscular e motor, dê para seu filho brinquedos macios, que ele possa agarrar e rastejar para alcançar.</li>
+                  <li>Às vezes, a curiosidade do bebê é mais visual que física, assim, coloque seu filho num lugar em que ele possa ver as atividades da família durante o dia.</li>
+                </ul>
+                <p class="bold">Desenvolvimento Emocional e Social </p>
+                <p>Para desenvolver-se emocionalmente e socialmente, seu filho beneficia-se de um ambiente estimulante e responsável. Quando você responde aos diferentes tipos de choros que a criança usa para comunicar suas diversas necessidades, você está ajudando seu filho a compreender que ela pode afetar o mundo. Quando a criança tenta alcançar um brinquedo e você dá a ele, isso dá a criança um senso de competência e de domínio sobre o mundo.</p>
+                <ul>
+                  <li>Seu filho está expressando suas emoções de diversas maneiras; é útil reconhecer qual a forma que ele usa e responder de forma apropriada. Ele pode mexer os braços ou as pernas rapidamente para mostrar excitação ou que está agitado, ou olhar para além de você quando está satisfeito. Conhecer as sugestões emocionais de sua criança e respondê-las irá fazer com que ela se sinta segura e aconchegada.</li>
+                  <li>Incentive seu filho a conhecer novos desafios que irão melhorar sua autoconfiança e o desejo de experimentar coisas novas. Ofereça oportunidades para sua criança alcançar e agarrar objetos seguros ou seguir com os olhos um objeto de um lado para o outro. Faça com que ele saiba que está aprendendo algo novo “você alcançou o brinquedo!”. Isso irá incentivar a criança a continuar tentando enquanto impulsiona sua autoconfiança ao dominar novas habilidades.</li>
+                  <li>Os bebês mais crescidos irão se descobrir seres independentes. Frequentemente, você vai pegar seu bebê olhando para as próprias mãos ou tentando alcançar os dedos do pé,  maravilhados. Permitir que eles façam uma autoexploração ajuda o bebê nos primeiros passos para aprender sobre seu corpo e sua autoimagem.</li>
+                  <li>Promover oportunidades para que seu bebê observe e esteja com outras crianças é uma forma de encorajar e aprimorar suas habilidades sociais. Você vai descobrir que ele observa intensamente o que as outras crianças estão fazendo, e bebês mais velhos podem se aproximar das crianças. Essas primeiras interações são a base para as crianças pequenas se enturmarem com as outras.</li>
+                  <li>Assim como é importante promover o estímulo, também é importante para os bebês serem incentivados, terem conforto, e se sentirem seguros. Seu bebê irá sinalizar quando ele tiver estímulo demais ao rolar seus olhos para além de você. Este pode ser o tempo para um afago ou para embalá-lo, demonstrando assim que você compreende seus sentimentos.</li>                                    
+                </ul>
+                <p class="bold">Linguagem e pensamentos</p>
+                <p>Linguagem é o alicerce em que todo o aprendizado e o pensamento são baseados – até mesmo matemática e ciências. Você começa a oferecer para a criança ferramentas para o desenvolvimento linguístico ao falar com ela frequentemente, como por exemplo,  um passo a passo do que você está fazendo (“agora, eu vou trocar a sua fralda, vou pegar alguns lenços, estou colocando uma nova fralda, aí está, limpinho!”). Existem várias maneiras de promover as habilidades de seu filho:</p>
+                <ul>
+                  <li>Responda de forma recíproca quando seu bebê emitir um som ou fizer uma careta. Esta é uma forma de começar uma conversa e sua reciprocidade irá fazer com que ele compreenda que está se comunicando com você.</li>
+                  <li>Para elaborar algo em cima das primeiras palavras de sua criança, transforme uma palavra numa sentença ou conceito. Se a criança diz “da”, você pode dizer “Sim, papai está em casa agora”. Se ela apontar para sua caneca, você pode dizer, “Você quer que eu ponha leite em sua caneca? Ok, aqui está, um pouco de leite na sua caneca.”</li>
+                  <li>Use interações do cotidiano para informar ao seu bebê o nome ou rótulos dos objetos que ele vê constantemente. Por exemplo, enquanto estiver dando comida para a criança, use palavras para descrever a comida e os utensílios que você está usando. “Estou colocando cenouras macias em sua colher, você está vendo a colher?”. Ao vestir a criança diga, “Vamos colocar meias em seus pés. Pegue a meia amarela.” Com o passar do tempo, a criança vai ligar os nomes aos objetos.  </li>
+                  <li>Enquanto passear com o bebê pela vizinhança, fale sobre o que está acontecendo ou o que está ao seu redor. “Olhe para aquela árvore enorme. Ela tem um monte de folhas.” Ou “Nós estamos indo visitar a vovó hoje.” Ouvir o ritmo da sua voz e as descrições do que ele vê irá aumentar seu entendimento sobre o mundo a sua volta.</li>
+                  <li>Nunca é cedo demais para ler para seu filho. Escolha livros de pano ou cartonados, com figuras bem coloridas e, junto com a criança, olhe para eles e nomeie os objetos. Lembre-se que não há problema se ele apenas quiser agarrar o livro ou mastigá-lo ou apenas olhar para uma ou duas figuras, Cada experiência está moldando o caminho para que a leitura seja um passatempo agradável e aconchegante.</li>
+                  <li>Música é um excelente jeito de incentivar as habilidades linguísticas de seu bebê. Ao escutar suas músicas favoritas ou canções que usam rimas ou palavras repetidas, seu bebê irá responder a diferentes ritmos, tons e maneiras de usar a linguagem.</li>                                    
+                </ul>
+              </div>                                                               
+            </div>
+           
+            <!-- /ESQUERDA -->
+            <!-- DIREITA -->
+            <div id="direita2" class="esq">
+              <p class="grd vejatb">Veja também</p>
+              <ul class="lista-artigos">
+                   <li>
+                   <a href="do-nascimento-ao-ano-1.html" class="thumb" title="Do Nascimento ao Ano 1" name="Do Nascimento ao Ano 1"><img src="../images/para-os-pais/do-nascimento-1-ano.jpg" alt="Do Nascimento ao Ano 1" /></a>
+                   <div class="descricao">
+                    <a href="do-nascimento-ao-ano-1.html" class="tit" name="Do Nascimento ao Ano 1" title="Do Nascimento ao Ano 1">Do Nascimento ao Ano 1</a>
+                    <a href="do-nascimento-ao-ano-1.html" >Veja formas de enriquecer as primeiras experiências de seu filho.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="compreendendo-a-diferenca-do-outro.html" class="thumb" title="Compreendendo a diferença do outro" name="Compreendendo a diferença do outro"><img src="../images/para-os-pais/compreendendo-diferenca-outro.jpg" alt="Compreendendo a diferença do outro" /></a>
+                   <div class="descricao">
+                    <a href="compreendendo-a-diferenca-do-outro.html" class="tit" name="Compreendendo a diferença do outro" title="Compreendendo a diferença do outro">Compreendendo a diferença do outro</a>
+                    <a href="compreendendo-a-diferenca-do-outro.html">Ensine as crianças a apreciar a si mesmo e a respeitar os outros como eles são.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="crie-musica-e-arte.html" class="thumb" title="Crie Música e Arte " name="Crie Música e Arte "><img src="../images/para-os-pais/crie-musica-e-arte.jpg" alt="Crie Música e Arte" /></a>
+                   <div class="descricao">
+                    <a href="crie-musica-e-arte.html" class="tit" name="Crie Música e Arte" title="Crie Música e Arte">Crie Música e Arte</a>
+                    <a href="crie-musica-e-arte.html">Dê oportunidades para seu filho se expressar como artista!</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="matematica-todos-os-dias.html" class="thumb" title="Matemática todos os dias" name="Matemática todos os dias"><img src="../images/para-os-pais/matematica-todos-dias.jpg" alt="Matemática todos os dias" /></a>
+                   <div class="descricao">
+                    <a href="matematica-todos-os-dias.html" class="tit" name="Matemática todos os dias" title="Matemática todos os dias">Matemática todos os dias</a>
+                    <a href="matematica-todos-os-dias.html">A matemática está em todos os lugares! Veja algumas ideias para explorar a mágica dos números com as crianças.</a>                                     
+                  </div>
+                </li>
+              </ul>  
+             
+            </div>
+            <!-- /DIREITA -->
+            
+            <!-- rodape vila -->
+            <div class="centraliza">           
+              <ul class="rodape-vila">
+                <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>
+                <li><a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+                <li><a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+                <li><a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="last"><a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a></li>
+              </ul>
+            </div>
+            <!-- rodape vila -->
+           
+           
+
+          </div>
+          <!-- /CAPA -->
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+      </div>
+      <!-- /MIOLO -->
+    </div>
+    <!-- / CAPA SITE -->
+    
+        
+  
+  </body>

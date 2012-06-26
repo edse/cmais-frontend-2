@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>picture_play</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="rightClick.js"></script>
+</head>
+<body onload="RightClick.init();" bgcolor="#f5bf29">
+<script language="JavaScript1.1">
+<!--
+function right(e)
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+//--></script>
+
+<div id="flashcontent"></div>
+		<script type="text/javascript">
+		   var so = new SWFObject("picture_play.swf", "sesame_game", "600", "307", "9", "#f5bf29");
+			so.addParam("quality", "high");
+			so.addParam("name", "sesame_game");
+			so.addParam("id", "sesame_game");
+			so.addParam("AllowScriptAccess", "sameDomain");
+			so.addParam("wmode", "opaque");
+			so.addParam("menu", "false");
+
+			so.write("flashcontent");
+		</script>
+</body>
+</html>

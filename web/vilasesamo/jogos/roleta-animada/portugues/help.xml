@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' ?>
+<help>
+<prepare>
+<![CDATA[
+<b>Preparar o jogo.</b>
+Antes de começar o jogo, o professor deve ler as atividades e preparar os elementos necessários como fitas coloridas, folhas, balões e lápis de cor. 
+
+Encontrem um lugar confortável para jogar e que também tenha um computador. O jogo é muito simples: Quando essa janela se fechar, a roleta vai começar a girar e escolherá um cartão aleatoriamente. Basta seguir as instruções do cartão que aparecer.
+
+A qualquer momento você poderá visualizar os cartões clicando no botão a cima. Caso tenha dúvidas, pressione o botão com um ponto de interrogação que fica no topo. 
+Boa Sorte! Clique na seta para dar início ao jogo.
+
+]]>
+</prepare>
+<game>
+<![CDATA[
+<b>Dinâmica do jogo</b>
+O professor deve escolher aleatoriamente o primeiro participante.
+Depois, deve decidir a ordem. 
+Por exemplo, pelo número da carteira caso os alunos estejam sentados em seus lugares, ou da direita para a esquerda se todos estiverem sentados em circulo.
+A criança sorteada deve girar a roleta para saber qual é o personagem que apresentará a atividade.
+A atividade é escolhida pelo personagem aleatoriamente e os cartões que já foram utilizados saem do jogo.
+Se a roleta parar na LOLA, o professor deve ler a atividade e todos executam.
+Se a roleta parar no BETO, o professor pergunta e o aluno responde.
+Se a roleta parar no Ênio, o professor propõe aos alunos uma atividade que deve ser desenvolvida em duplas ou em trios.
+Se a roleta parar no Elmo, o professor deverá ler em voz alta as instruções de como ele deve se movimentar, e os alunos imitam.Se a roleta parar no Garibaldo, haverá um concurso onde todos ganham.
+]]>
+</game>
+</help>
+

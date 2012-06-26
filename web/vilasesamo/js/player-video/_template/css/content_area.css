@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****************************************************************/
+/** MASKING STYLES FOR background-of-the-day boxes             **/
+/****************************************************************/
+.border-mask1{background:url(../images/border_masks/mask1.gif) top left no-repeat transparent; }
+.border-mask2{background:url(../images/border_masks/mask2.gif) top left no-repeat transparent; }
+.border-mask3{background:url(../images/border_masks/mask3.gif) top left no-repeat transparent; }
+
+/****************************************************************/
+/** ON AIR layout   		                                   **/
+/****************************************************************/
+.onair-box-right { width:30%; float:right; }
+.onair-box-left { width:69%; float:left; }
+
+/****************************************************************/
+/** EPISODE GUIDE layout   (on air)                            **/
+/****************************************************************/
+
+/* episode guide navigation */
+.episode-guide-nav {float:left;width:149px;margin:0px 0px 0px 0px;padding:0px;display:inline;/* border:1px solid blue;*/}
+.episode-guide-nav ul {list-style:none; padding:0; margin:0px 0px 0px -6px;border-top:1px solid #26c166;border-bottom:1px solid #c6ecc1;}
+.episode-guide-nav li {color:#333; border-bottom:1px solid #26c166;border-top:1px solid #c6ecc1;padding:5px 0px 5px 0px;}
+.episode-guide-nav li.current a{text-decoration:none;color:#333;font-weight:bold;}
+.episode-guide-nav li a{text-decoration:none;color:#029449;font-weight:bold;padding-left:17px;/*border:1px solid red;*/}
+.episode-guide-nav li a:hover{text-decoration:underline;color:#029449;font-weight:bold;}
+/* episode guide content */
+.episode-guide-content {color:#666; margin-left:154px !important;}
+.episode-guide-content TABLE.episode-table{width:100%}
+.episode-guide-content TABLE.episode-table TR.odd{background-color:#f3fcf7;}
+.episode-guide-content TABLE.episode-table TR.even {background-color:#e5f7ed;}
+.episode-guide-content TABLE.episode-table TD {vertical-align:top; padding:5px !important;}
+.episode-guide-content TABLE.episode-table TD.episode { width:100px;padding-left:20px; }
+.episode-guide-content TABLE.episode-table TD.episode a { text-decoration:none; color:#666 }
+.episode-guide-content TABLE.episode-table TD.episode a:hover { text-decoration:underline; }
+.episode-guide-content TABLE.episode-table TD.title { color:#0066cc;font-weight:bold; }
+.episode-guide-content TABLE.episode-table TD.title a {text-decoration:none;color:#0066cc;}
+.episode-guide-content TABLE.episode-table TD.title a:hover {text-decoration:underline !important;}
+
+DIV.article-nav {float:right;font-weight:bold;color:#999;}
+
+/****************************************************************/
+/** PLAYSAFE PANEL                                             **/
+/** consists of header, mid, footer. Standalone full-width     **/
+/** row element                                                **/
+/****************************************************************/
+
+.playsafe {margin:4px 0px 0px 0px;width:918px;background:url(../images/contentarea/playsafe_background.gif) repeat-y #FFF;}
+.playsafe .playsafe-header { background:url(../images/contentarea/playsafe_top.gif) top left no-repeat transparent; height:85px }
+.playsafe .playsafe-content {margin:0px 20px 0px 20px !important;padding:0px 20px 0px 20px;}
+.playsafe .playsafe-footer { background:url(../images/contentarea/playsafe_bottom.gif) top left no-repeat transparent; height:27px}
+.playsafe .playsafe-content UL {margin:0px;padding:0 0 0 15px;}
+.playsafe .playsafe-content LI {padding-bottom:10px;}
+.playsafe .playsafe-content LI.last {padding-bottom:0px;}
+
+/* what's new panel */
+.whatsnew {background:url(../images/contentarea/panel_background_on_air_whatsnew.gif) repeat-y #FFF;}
+/* what's new content */
+.whatsnew-content {float:left;width:474px;margin:-15px 0px 0px 12px !important;padding:0px 10px 15px 10px;}
+/* what's new schedule */
+.whatsnew-schedule {float:left;width:208px;margin:0px 0px 0px 11px !important;padding:10px 14px 15px 14px;}
+
+/****************************************************************/
+/** MUPPET PROFILE PAGE                                        **/
+/** This is a an absolute positioned DIV that places the       **/
+/** content over the top of a flash movie.                     **/
+/****************************************************************/
+.muppet-content {position:absolute;top:150px;left:392px;margin-left:25px;width:456px;height:458px;padding:15px 22px 0px 22px;}
+.muppet-content .muppet-content-info {height:250px;overflow:auto;}
+.muppet-content p {font-size:13px;color:#666;margin-top:0px;}
+.muppet-content .buttons{position:absolute;top:280px;}
+.muppet-content .buttons A SPAN{display:block;padding-top:125px;font-size:13px;font-weight:bold;color:#20a8ee;text-align:center;padding-right:8px;}
+.muppet-content .buttons A:hover SPAN{color:#20a8ee;}
+/* text position and line height adjustment for text wrapped over 2 lines */
+.muppet-content .buttons A SPAN.wrap{padding-top:120px;line-height:18px;}
+.muppet-content .buttons A{display:inline;float:left;margin-right:14px;height:113px;width:142px;}
+/* Button Images */
+.muppet-content .buttons A#muppet-games{background:url(../../images/muppets/games_button.gif) top left no-repeat #FFF;}
+.muppet-content .buttons A:hover#muppet-games{background:url(../../images/muppets/games_button_r.gif);}
+.muppet-content .buttons A#muppet-videos{background:url(../../images/muppets/videos_button.gif) top left no-repeat #FFF;}
+.muppet-content .buttons A:hover#muppet-videos{background:url(../../images/muppets/videos_button_r.gif);}
+.muppet-content .buttons A#muppet-playlists{margin-right:0px;background:url(../../images/muppets/playlists_button.gif) top left no-repeat #FFF;}
+.muppet-content .buttons A:hover#muppet-playlists{margin-right:0px;background:url(../../images/muppets/playlists_button_r.gif)}
+/* Visit prompt link */
+.muppet-content .link a {position:absolute;top:458px;font-size:10px;font-weight:bold;color:#0066cc;}
+/* Visit colour change for dark backgrounds */
+.muppet-content .link a.white-text {color:#fff;}
+
+/****************************************************************/
+/** ARTICLE STYLES                                             **/
+/****************************************************************/
+
+SPAN.list-label{font-weight:bold; color:#999;}
+
+/* global box styles */
+.box-x2.on-air {margin-top:20px; position:relative;}
+SPAN.on-air-intro-text {margin-left:10px;display:block}
+
+.on-air-celebrity-guests li {font-weight:bold;}
+
+
+
+.breakout-image-top {position:relative;top:-27px;float:right;right:50px;z-index:999;clear:right;}
+
+DIV.page-control {float:right;display:inline;}
+DIV.page-control SELECT{color:#666;width:150px;}
+
+P.language-links {margin-top:10px;}
+
+/* image box - DIV version */
+DIV.image-box {display:inline;}
+TABLE.image-box {width:261px;}
+
+DIV.image-box.buffer-top,
+TABLE.image-box.buffer-top {margin-top:15px;}
+
+DIV.image-box.align-right,
+TABLE.image-box.align-right {float:right;margin-left:15px;}
+
+DIV.image-box.align-left,
+TABLE.image-box.align-left {float:left;margin-right:15px;}
+DIV.image-box DIV.image,
+
+DIV.image-box DIV.image-caption,
+TABLE.image-box TD.image-caption {font-size:11px;color:#999;margin-bottom:15px;padding-top:4px;}
+
+
+
+DIV.grid-row DIV.col2 {margin-bottom:10px;}

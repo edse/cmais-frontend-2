@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+  <head>
+    <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <link rel="stylesheet" href="../css/geral-portal.css" type="text/css" />    
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../css/ie-only.css" />
+    <![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <title>Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Para os Pais – Vila Sésamo" />
+    <meta name="description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="Vila Sésamo, programa infantil, crianças na televisão, jogos de criança, playlists, muppets, pré-escolar, bel, beto, come come, elmo, ênio, garibaldo, groover, zoe, a alfabetização, os números, contando, resolução de problemas, desenvolvimento emocional" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Para os Pais – Vila Sésamo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://cmais.com.br/frontend.php" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="../images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <!-- scripts -->
+    <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/portal.js"></script>
+    <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>    
+    <!-- /scripts -->
+    
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
+    <script type="text/javascript" src="../js/swfobject.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
+     <div id="modal" style="display:none;">
+      <p class="tit">Enviar para amigo</p>
+      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
+      <div class="divisa"></div>
+      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
+      <form id="enviar-amigo">
+        <div class="nome">
+          <label for="seunome">Seu nome</label>
+          <input type="text" id="seunome" name="seunome" class="required" />
+         </div>
+         <div class="nome last">
+          <label for="nomeamigo">Nome do seu amigo</label>
+          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
+        </div>
+        <div class="email">
+          <label for="email">E-mail do seu amigo</label>
+          <input type="text" id="email" name="email" class="required" />
+        </div>
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
+                            
+      </form>
+      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
+    </div>
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#enviar-amigo').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            seunome:{
+              required: true,
+              minlength: 2
+            },
+            nomeamigo:{
+              required: true,
+              minlength: 2
+            },
+            email:{
+              required: true,
+              email: true
+            }
+            
+          },
+          messages:{
+            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      
+      
+      
+    </script>
+    
+    <!-- CAPA SITE -->
+    <div id="capa-site">
+      <!-- CHAMADA -->
+      <!-- /CHAMADA -->
+      
+      <link rel="stylesheet" href="../css/geral.css" type="text/css" />
+      <script type="text/javascript" src="../js/script.js"></script>            
+      <div id="mydiv"></div> 
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        
+        
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina">
+          <!-- CAPA -->
+          <div class="capa grid3 para-os-pais">
+            <ul class="menu-topo">
+              <li class="para-os-pais"><a href="../para-os-pais" class="ativo" title="Para os Pais" name="Para os Pais"></a></li>
+              <li class="natv"><a href="../natv/index.html" title="Na TV" name="Na TV"></a></li>
+               <li class="habitos"><a href="#"  title="Hábitos Saudáveis" name="Hábitos Saudáveis"></a></li>                        
+            </ul>
+            <div class="menu-secoes">
+              <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
+              <ul>
+                <li class="jogos"><a href="../jogos/index.html" title="Jogos" name="jogos"></a></li>
+                <li class="videos"><a href="../videos/index.html" title="Vídeos" name="Vídeos"></a></li>
+                <li class="atividades"><a href="../atividades/index.html" title="Atividades" name="Atividades"></a></li>
+                <li class="personagens"><a href="../personagens/index.html" title="Personagens" name="Personagens"></a></li>                            
+              </ul>
+              <div class="barra-menu"></div>
+            </div>
+            <div id="referencia"></div>
+            <div class="navegacao artigo">
+              <a class="home" href="index.html">Para os pais</a><span>»</span>
+              <p>Aprendizado através das mídias</p>
+            </div>
+            <!-- ESQUERDA -->
+            <div id="esquerda2">
+              <div class="texto">
+                <p class="grd">Aprendizado através das mídias</p>
+                <div class="info">                  
+                  <a href="JavaScript:window.print();" class="imprimir">Imprimir</a>
+                  <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">Email</a>
+                </div>
+                <img src="../images/para-os-pais/aprendizado-atraves-midias.jpg" alt="teste" />
+                <p>Tecnologias como a TV, vídeos, DVDs e computadores podem expandir as habilidades de pensamento e incitar a imaginação. Elas também podem estimular o amor pelo aprendizado e incentivar a apreciação pela diversidade humana. As crianças vão aprender a partir da melhor mídia aquilo que é envolvente e adequado para seu desenvolvimento. Um programa como Vila Sésamo é um ótimo exemplo de como uma mídia educacional permite a extensão do aprendizado de forma criativa e divertida.</p>
+                <p>Essas dicas podem ajudar a tirar o máximo proveito das mídias que você escolher usar:</p>
+                <ul>
+                  <li>O uso  de um modelo saudável de mídia deve equilibrar o tempo da TV com outras atividades.</li>
+                  <li>Escolha programas apropriados para o desenvolvimento que se baseiam no interesse das crianças e desenvolva sua imaginação.</li>
+                  <li>Melhore as oportunidades de aprendizagem, mantendo o seu filho envolvido. Faça uma pausa para pedir previsões, verificar a compreensão, discutir as questões ou revisar o conteúdo abordado.</li>
+                  <li>A repetição aumenta o aprendizado. Assim como seu filho ama reler livros favoritos, ele também vai gostar de rever os vídeos e jogos de computador. Em cada repetição, ele está construindo um pensamento em cima do que aprendeu.</li>
+                  <li>Incorpore a mídia de forma conveniente. Tente não se restringir à programação televisiva; se você quiser gastar um tempo extra fora de casa em um dia lindo, fitas de vídeo, DVRs e DVDs permitem que você curta o momento sem perder nada.</li>
+                  <li>Planeje com antecedência. Se você assistir a um programa antes de compartilhá-lo com seu filho, você pode selecionar o pedaço que gostaria de destacar. Desta forma, você pode ter uma atividade de acompanhamento ou selecionar uma leitura apropriada.</li>
+                </ul>                
+                <p class="bold">Como integrar diversão e adequar  às mídias</p>
+                <p>Usar a mídia de forma ativa ajuda a preparar a criança para interagir com o conteúdo que ela ouve e vê. A mídia também pode expandir a aprendizagem do seu filho, especialmente quando as aulas são reforçadas com o acompanhamento das atividades.</p>
+                <p>Aqui, apresentamos alguns passos para integrar a mídia na rotina de seus filhos:</p>
+                <ul>
+                  <li>Decida o que exibir e faça um cronograma. Você pode usar os temas do programa, que estão disponíveis na Internet.</li>
+                  <li>Planeje questões para serem feitas durante a exibição do programa.</li>
+                  <li>Planeje atividades. Faça desenhos, desempenhe papéis, crie jogos ou cante músicas que se baseiam no que seu filho tem aprendido.</li>
+                  <li>Procure livros relacionados ao tema e programe um tempo para lê-los em voz alta com seu filho.</li>
+                  <li>Prepare seu filho. Quando ele estiver pronto para assistir a um vídeo ou usar o computador, diga à criança o que você espera dela. Mencione algumas coisas que os personagens possam vir a fazer. </li>
+                  <li>Defina limites de tempo. O aprendizado mais profundo acontece quando a criança aprende com todos os cinco sentidos, assim,  alterne entre o tempo de visualização e as atividades que dão ao seu filho a oportunidade de tocar e manipular objetos, mover seu corpo e mudar o foco de seus olhos.</li>
+                </ul>
+                <p>A mídia pode ser um professor efetivo. Seu filho aprende com o que ele vê na tela, mesmo se for um programa violento ou um programa educacional. Você pode ajudá-lo a obter o máximo de conteúdo direcionando-o para programas educacionais compatíveis com a idade dele e usando as atividades relacionadas para aprimorar as experiências de aprendizagem. As atividades que você escolher devem reforçar os temas do programa, e as lições devem ajudar seu filho a apreciar as diferenças e semelhanças (raciais, étnicas, estilos de vida, gêneros, culturais, físicas, idiomas, grupos de famílias e habilidades), e incluem uma grande variedade de materiais para incentivar a criatividade. A visualização, a ação e a leitura podem acontecer em qualquer ordem. A chave é usar as palavras para recordar o seu filho das conexões.</p>
+                <p class="bold">Use a televisão, vídeos ou DVDs </p>
+                <ul>
+                  <li>Mostre para seu filho, através das próprias ações, o que seria legal para cantar, dançar, bater palmas ou brincar, de acordo com o que ele vê na TV.</li>
+                  <li>Ajude seu filho a identificar formas, cores e números ao repeti-los junto com o programa.</li>
+                  <li>Faça seu filho explorar os sentimentos ao identificar emoções e nomear o que os personagens estão vivenciando. Ajude a lembrar seu filho de suas próprias experiências e relacioná-las com o que ele vê na TV.</li>
+                  <li>Responda às questões de seu filho sobre as coisas que acontecem no programa. Ajude-o a compreender conceitos como cooperação e sentimentos, conversando sobre as situações que os personagens vivenciaram.</li>
+                  <li>Pratique uma sequência pedindo para que seu filho reconte a história que ele viu ou identificar o que aconteceu no começo, no meio e no fim da história.</li>
+                  <li>Com vídeos e DVDs é possível criar uma experiência interativa usando o botão de pausa. Pause o programa e incentive seu filho a adivinhar o que irá acontecer na sequência. Tenha em mente que muitas interrupções podem ser difíceis para crianças na idade pré-escolar acompanhar a história, a não ser que elas já tenham visto o episódio. Também é possível usar o botão de voltar para praticar habilidades de audição e deixar que seu filho cheque o quão sua memória é apurada.</li>                  
+                </ul>
+                <p class="bold">Use computadores </p>
+                <ul>
+                  <li>Explore o mundo. Se seu filho é curioso sobre um determinado assunto, como elefantes ou África, faça uma pesquisa on-line. Facilmente, você irá encontrar vários websites que podem ser visitados para aprender mais sobre estes assuntos.</li>
+                  <li>Exemplifique como usar o computador para escrever histórias, fazer arte ou música, descobrir informações, bem como jogar jogos. Nos primeiros anos, seu filho está descobrindo como usar o mouse e o teclado, então, quanto mais simples for o programa, melhor.</li>
+                  <li>Visite websites de alguns de seus programas de TV favoritos, como o Vila Sésamo, para descobrir atividades relacionadas e mais informações sobre os tópicos abordados.</li>
+                  <li>Adicione segurança de internet às demais lições sobre segurança. Ensine seu filho a nunca fornecer informações pessoais no computador. Observe antes os websites para ter certeza de que eles são apropriados para a idade de seu filho e que sigam regras básicas de privacidade (ou seja, você está confortável com o modo como eles rastreiam sua atividade on-line e usam sua informação?)</li>                  
+                </ul>
+                <p class="bold">Escolhendo a mídia </p> 
+                <p>As dicas abaixo podem ajudar a escolher uma mídia apropriada que irá aumentar o interesse de seu filho e oportunidades educacionais.</p>
+                <p class="bold">Selecionando programas de TV, Vídeos ou DVDs</p>
+                <p>Ao selecionar programas de televisão, vídeos, DVDs, pergunte a si mesmo as observações: </p>
+                <ul>
+                  <li>Reflita os valores que você quer ensinar e/ou conteúdo que você deseja partilhar </li>
+                  <li>Mostra (ao invés de apenas dizer) conceitos chave e repetir ideias importantes de formas variadas para diferentes tipos de aprendizados</li>
+                  <li>Tem personagens que incentivam a participação e são bons modelos para seu filho</li>
+                  <li>Incentiva seu filho a usar a imaginação</li>
+                  <li>Aborda assuntos apropriados para a idade</li>
+                  <li>Usa uma linguagem que seu filho possa compreender e insere novas palavras para aumentar seu vocabulário</li>
+                  <li>Dá chances para seu filho praticar solução de problemas</li>
+                  <li>Faz com que seu filho sinta-se bem sobre ele mesmo e os outros</li>
+                  <li>Deixa seu filho animado para aprender</li>
+                  <li>Adiciona novas informações em cima da base de conhecimento de seu filho de forma divertida</li>
+                  <li>Apresenta conceitos que seu filho está interessado em aprender</li>
+                  <li>Permite que você tenha discussões sobre</li>                  
+                </ul>                
+                <p class="bold">Selecionando softwares ou websites </p>
+                <p>Quando você considera um software ou programa de computador, pergunte-se:</p>
+                <ul>
+                  <li>Pode ser usado com movimentos fáceis (combinando uma coordenação motora ainda limitada) e responde rápido aos comandos (para que a criança não fique distraída enquanto espera)?</li>
+                  <li>Oferece desafios com crescente dificuldade enquanto melhora as habilidades de seu filho tanto individualmente quanto em situações em grupo?</li>
+                  <li>Oferece maneiras para que seu filho esteja interessado nas coisas que acontecem e dá assunto para ele falar sobre?</li>
+                  <li>Ajuda seu filho a ver causa e efeito ao responder claramente sobre as ações do usuário?</li>
+                  <li>Oferece oportunidades para seu filho se engajar em solução de problemas?</li>
+                  <li>Suporta a linguagem que seu filho fala e insere novas linguagens? </li>
+                </ul>                                    
+              </div>                                                              
+            </div>
+           
+            <!-- /ESQUERDA -->
+            <!-- DIREITA -->
+            <div id="direita2" class="esq">
+              <p class="grd vejatb">Veja também</p>
+              <ul class="lista-artigos">
+                  <li>
+                   <a href="do-nascimento-ao-ano-1.html" class="thumb" title="Do Nascimento ao Ano 1" name="Do Nascimento ao Ano 1"><img src="../images/para-os-pais/do-nascimento-1-ano.jpg" alt="Do Nascimento ao Ano 1" /></a>
+                   <div class="descricao">
+                    <a href="do-nascimento-ao-ano-1.html" class="tit" name="Do Nascimento ao Ano 1" title="Do Nascimento ao Ano 1">Do Nascimento ao Ano 1</a>
+                    <a href="do-nascimento-ao-ano-1.html" >Veja formas de enriquecer as primeiras experiências de seu filho.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="compreendendo-a-diferenca-do-outro.html" class="thumb" title="Compreendendo a diferença do outro" name="Compreendendo a diferença do outro"><img src="../images/para-os-pais/compreendendo-diferenca-outro.jpg" alt="Compreendendo a diferença do outro" /></a>
+                   <div class="descricao">
+                    <a href="compreendendo-a-diferenca-do-outro.html" class="tit" name="Compreendendo a diferença do outro" title="Compreendendo a diferença do outro">Compreendendo a diferença do outro</a>
+                    <a href="compreendendo-a-diferenca-do-outro.html">Ensine as crianças a apreciar a si mesmo e a respeitar os outros como eles são.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="crie-musica-e-arte.html" class="thumb" title="Crie Música e Arte " name="Crie Música e Arte "><img src="../images/para-os-pais/crie-musica-e-arte.jpg" alt="Crie Música e Arte" /></a>
+                   <div class="descricao">
+                    <a href="crie-musica-e-arte.html" class="tit" name="Crie Música e Arte" title="Crie Música e Arte">Crie Música e Arte</a>
+                    <a href="crie-musica-e-arte.html">Dê oportunidades para seu filho se expressar como artista!</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="matematica-todos-os-dias.html" class="thumb" title="Matemática todos os dias" name="Matemática todos os dias"><img src="../images/para-os-pais/matematica-todos-dias.jpg" alt="Matemática todos os dias" /></a>
+                   <div class="descricao">
+                    <a href="matematica-todos-os-dias.html" class="tit" name="Matemática todos os dias" title="Matemática todos os dias">Matemática todos os dias</a>
+                    <a href="matematica-todos-os-dias.html">A matemática está em todos os lugares! Veja algumas ideias para explorar a mágica dos números com as crianças.</a>                                     
+                  </div>
+                </li>    
+              </ul> 
+             
+            </div>
+            <!-- /DIREITA -->
+            
+            <!-- rodape vila -->
+            <div class="centraliza">           
+              <ul class="rodape-vila">
+                <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>
+                <li><a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+                <li><a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+                <li><a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="last"><a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a></li>
+              </ul>
+            </div>
+            <!-- rodape vila -->
+           
+           
+
+          </div>
+          <!-- /CAPA -->
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+      </div>
+      <!-- /MIOLO -->
+    </div>
+    <!-- / CAPA SITE -->
+   
+        
+  
+  </body>

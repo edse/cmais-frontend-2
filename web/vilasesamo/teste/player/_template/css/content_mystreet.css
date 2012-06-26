@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+DIV#mystreet .mystreet-title {padding-left:17px;}
+DIV#mystreet .mystreet-logo {position:absolute;top:170px;left:10px;}
+
+
+/** user image - top navigation **/
+DIV#header DIV.user-image-top{
+	position:absolute;
+	width:48px;height:48px;
+	top:30px; left:833px;
+}
+
+/** user image - left navigation **/
+DIV#mystreet DIV.user-image-left{
+	position:absolute;
+	width:74px;height:76px;
+	top:198px; left:15px;
+}
+
+
+
+/************* DEPRECATED STYLES -- this is now implemented using Flash styles above. ********************
+*************** These remain for posterity and so as not to break older layouts       ********************/
+/* analagous post-login image(s) for my street logo */
+DIV#mystreet .postlogin-images-x1,
+DIV#mystreet .postlogin-images-x2{
+	position:absolute;
+	width:94px;height:60px;
+	top:198px; left:0px;
+}
+DIV#mystreet .postlogin-images-x1 .img1{ position:absolute; top:0;left:17px; }
+DIV#mystreet .postlogin-images-x2 .img1{ position:absolute; top:0;left:0; }
+DIV#mystreet .postlogin-images-x2 .img2{ position:absolute; top:6px;left:30px; }
+/* when overlaying the flash movie */
+DIV#mystreet .postlogin-images-x1-flash,
+DIV#mystreet .postlogin-images-x2-flash{
+	position:absolute;
+	width:94px;height:60px;
+	top:190px; left:0px;
+}
+DIV#mystreet .postlogin-images-x1-flash .img1{ position:absolute; top:0;left:17px; }
+DIV#mystreet .postlogin-images-x2-flash .img1{ position:absolute; top:0;left:0; }
+DIV#mystreet .postlogin-images-x2-flash .img2{ position:absolute; top:6px;left:30px; }
+/************* END DEPRECATED STYLES *******************/
+
+
+
+DIV#mystreet .float-right {float:right;}
+DIV#mystreet .float-left {float:left;}
+DIV#mystreet .display-block {display:block;}
+
+/* mystreet nav */
+DIV#mystreet DIV.nav-buffer {height:20px;}
+DIV#mystreet DIV.mystreet-nav {background:url(../images/my_street/my_street_nav_background.gif) top left no-repeat;height:29px;width:918px;}
+DIV#mystreet DIV.mystreet-nav DIV.nav-links {padding:5px 0px 0px 10px;}
+DIV#mystreet DIV.mystreet-nav DIV.nav-links A {color:#fff;font-weight:bold;padding-left:15px;}
+
+/* Log In Page */
+DIV#mystreet DIV.log-in {background:url(../../images/my_street/log_in.jpg) top left no-repeat;height:540px;width:943px;}
+DIV#mystreet DIV.info {padding:145px 0px 0px 335px;float:left;width:210px;height:222px;}
+DIV#mystreet DIV.sign-in {padding:145px 0px 0px 70px;float:left;width:210px;height:222px;}
+DIV#mystreet H2.sign-up-now {background:url(../../images/my_street/sign_up_now.png) top left no-repeat;width:118px;height:20px;padding:0;margin:0;}
+DIV#mystreet P.sign-up-now {color:#666;}
+DIV#mystreet H2.already-a-member {background:url(../../images/my_street/already_a_member.png) top left no-repeat;width:206px;height:40px;padding:0;margin:0;}
+DIV#mystreet DIV.log-in INPUT {margin-bottom:5px;}
+DIV#mystreet A.sign-up img {padding-top:35px;}
+DIV#mystreet A.privacy-policy,
+DIV#mystreet A.forgot-your-password {font-weight:bold;display:block;padding-top:5px;}
+DIV#mystreet A.privacy-policy {text-indent:10px;}
+
+/* Congratulations Page */
+DIV#mystreet DIV.elmo-inset { background:url(../../images/my_street/elmo_wave_inset_box.gif) 0 0 no-repeat !important;width:706px; height:440px;}
+DIV#mystreet DIV.congratulations {width:250px;padding-left:20px;padding-top:20px;}
+DIV#mystreet DIV.congratulations H3 {font-size:22px;font-weight:bold;border:none;margin-top:0px;}
+DIV#mystreet DIV.congratulations A {font-weight:bold;}
+DIV#mystreet DIV.congratulations A img {padding-top:10px;}
+
+/* Forgot Password Page */
+DIV#mystreet DIV.forgot-password-inset { background:url(../../images/my_street/inset_box_forgot-password.gif) 0 0 no-repeat !important;width:706px; height:440px;}
+DIV#mystreet DIV.forgot-password-inset H4 {margin-bottom:10px;}
+DIV#mystreet DIV.forgot-password {width:310px;padding:10px 10px 0px 20px;}
+
+/* Forgot Password Incorrect Page */
+DIV#mystreet DIV.forgot-password-wide {width:350px;padding:10px 10px 0px 20px;}
+
+/* Create Account and Manage Account */
+DIV#mystreet .mystreet-settings-inset {margin-left:170px;width:707px;}
+DIV#mystreet .mystreet-settings-inset .grid-col1 {float:left;width:511px;padding-left:20px;}
+DIV#mystreet .mystreet-settings-inset .grid-col2 {float:right;width:157px;padding-right:18px;}
+
+DIV#mystreet H3 {color:#ff6600;font-size:16px;font-weight:bold;border-bottom:1px solid #ebebeb;margin-right:20px;}
+DIV#mystreet LABEL {display:block;font-size:13px;}
+DIV#mystreet H3 A,
+DIV#mystreet LABEL A {font-size:11px;font-weight:normal;margin-left:10px;}
+
+DIV#mystreet .output-text {font-weight:bold;color:#999;position:absolute;left:360px;}
+DIV#mystreet .text-light {font-size:10px;color:#999;}
+DIV#mystreet .text-error {font-size:10px;color:red;}
+
+DIV#mystreet INPUT.buffer,
+DIV#mystreet SELECT.buffer {display:block;margin-bottom:10px;width:170px;}
+DIV#mystreet INPUT.radio {margin-left:0px;}
+DIV#mystreet DIV.favorites DIV {float:left;width:130px;}
+DIV#mystreet LABEL.radio {float:left;margin-right:20px;}
+
+DIV#mystreet TABLE TD {padding-bottom:10px;width:25%;}
+DIV#mystreet TABLE TD.last {width:120px !important;}
+
+DIV#mystreet IMG.radio {vertical-align:text-top;margin-top:-11px;}
+DIV#mystreet IMG.radio.disable {margin-left:30px;}
+
+DIV#mystreet DIV.right-links {float:right;padding-right:20px;}
+DIV#mystreet DIV.footer-link {padding-top:10px;font-weight:bold;}
+
+DIV#mystreet .callout {float:right;width:119px;background-color:#e1f7ff;padding:0px 10px 10px 10px;}
+DIV#mystreet .callout H3 {color:#999;margin:10px 0px 10px 0px;}
+
+DIV#mystreet SPAN.muppet-bg{width:120px;height:90px;display:block;}
+DIV#mystreet SPAN.abby-cadabby {background:url(../../images/my_street/background_abby_cadabby.gif) top left no-repeat;}
+DIV#mystreet SPAN.bert {background:url(../../images/my_street/background_bert.gif) top left no-repeat;}
+DIV#mystreet SPAN.big-bird {background:url(../../images/my_street/background_big_bird.gif) top left no-repeat;}
+DIV#mystreet SPAN.cookie-monster {background:url(../../images/my_street/background_cookie_monster.gif) top left no-repeat;}
+DIV#mystreet SPAN.the-count {background:url(../../images/my_street/background_the_count.gif) top left no-repeat;}
+DIV#mystreet SPAN.elmo {background:url(../../images/my_street/background_elmo.gif) top left no-repeat;}
+DIV#mystreet SPAN.ernie {background:url(../../images/my_street/background_ernie.gif) top left no-repeat;}
+DIV#mystreet SPAN.grover {background:url(../../images/my_street/background_grover.gif) top left no-repeat;}
+DIV#mystreet SPAN.oscar {background:url(../../images/my_street/background_oscar.gif) top left no-repeat;}
+DIV#mystreet SPAN.rosita {background:url(../../images/my_street/background_rosita.gif) top left no-repeat;}
+DIV#mystreet SPAN.telly-monster {background:url(../../images/my_street/background_telly_monster.gif) top left no-repeat;}
+DIV#mystreet SPAN.zoe {background:url(../../images/my_street/background_zoe.gif) top left no-repeat;}

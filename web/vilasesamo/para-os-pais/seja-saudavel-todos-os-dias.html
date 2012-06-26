@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+  <head>
+    <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <link rel="stylesheet" href="../css/geral-portal.css" type="text/css" />    
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../css/ie-only.css" />
+    <![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <title>Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Para os Pais – Vila Sésamo" />
+    <meta name="description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="Vila Sésamo, programa infantil, crianças na televisão, jogos de criança, playlists, muppets, pré-escolar, bel, beto, come come, elmo, ênio, garibaldo, groover, zoe, a alfabetização, os números, contando, resolução de problemas, desenvolvimento emocional" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Para os Pais – Vila Sésamo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://cmais.com.br/frontend.php" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="../images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <!-- scripts -->
+    <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/portal.js"></script>
+    <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>    
+    <!-- /scripts -->
+    
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
+    <script type="text/javascript" src="../js/swfobject.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.js"></script>
+     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
+     <div id="modal" style="display:none;">
+      <p class="tit">Enviar para amigo</p>
+      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
+      <div class="divisa"></div>
+      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
+      <form id="enviar-amigo">
+        <div class="nome">
+          <label for="seunome">Seu nome</label>
+          <input type="text" id="seunome" name="seunome" class="required" />
+         </div>
+         <div class="nome last">
+          <label for="nomeamigo">Nome do seu amigo</label>
+          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
+        </div>
+        <div class="email">
+          <label for="email">E-mail do seu amigo</label>
+          <input type="text" id="email" name="email" class="required" />
+        </div>
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
+                            
+      </form>
+      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
+    </div>
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#enviar-amigo').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            seunome:{
+              required: true,
+              minlength: 2
+            },
+            nomeamigo:{
+              required: true,
+              minlength: 2
+            },
+            email:{
+              required: true,
+              email: true
+            }
+            
+          },
+          messages:{
+            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      
+      
+      
+    </script>
+    
+    <!-- CAPA SITE -->
+    <div id="capa-site">
+      <!-- CHAMADA -->
+      <!-- /CHAMADA -->
+      
+      <link rel="stylesheet" href="../css/geral.css" type="text/css" />
+      <script type="text/javascript" src="../js/script.js"></script>            
+      <div id="mydiv"></div> 
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        
+        
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina">
+          <!-- CAPA -->
+          <div class="capa grid3 para-os-pais">
+           <ul class="menu-topo">
+              <li class="para-os-pais"><a href="../para-os-pais" class="ativo" title="Para os Pais" name="Para os Pais"></a></li>
+              <li class="natv"><a href="../natv/index.html" title="Na TV" name="Na TV"></a></li>
+               <li class="habitos"><a href="#"  title="Hábitos Saudáveis" name="Hábitos Saudáveis"></a></li>                        
+            </ul>
+            <div class="menu-secoes">
+              <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
+              <ul>
+                <li class="jogos"><a href="../jogos/index.html" title="Jogos" name="jogos"></a></li>
+                <li class="videos"><a href="../videos/index.html" title="Vídeos" name="Vídeos"></a></li>
+                <li class="atividades"><a href="../atividades/index.html" title="Atividades" name="Atividades"></a></li>
+                <li class="personagens"><a href="../personagens/index.html" title="Personagens" name="Personagens"></a></li>                            
+              </ul>
+              <div class="barra-menu"></div>
+            </div>
+            <div id="referencia"></div>
+            <div class="navegacao artigo">
+              <a class="home" href="index.html">Para os pais</a><span>»</span>
+              <p>Seja saudável todos os dias</p>
+            </div>
+            <!-- ESQUERDA -->
+            <div id="esquerda2">
+              <div class="texto">
+                <p class="grd">Seja saudável todos os dias</p>
+                <div class="info">                  
+                  <a href="JavaScript:window.print();" class="imprimir">Imprimir</a>
+                  <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">Email</a>
+                </div>
+                <img src="../images/para-os-pais/seja-saudavel-todos-dias.jpg" alt="teste" />
+                <p>Quando crianças e adultos praticam simples ações diárias, isso os leva a permanecerem saudáveis, afastando os germes e vírus, especialmente aqueles que causam gripe. As crianças novas não compreendem exatamente como se dá a propagação dos germes, mas compreenderá que há determinadas coisas que podem ser feitas para permanecer saudável, especialmente quando incentivadas pelos adultos que se preocupam com o dia a dia dos filhos.</p>
+                <p class="bold">Lave suas mãos</p>
+                <p>Lave suas mãos com frequencia, especialmente após tossir ou espirrar, antes das refeições, e depois que usar o banheiro. Assegure que a pia, sabonete e toalhas possam ser facilmente alcançadas tanto por crianças quanto adultos. Caso não tenha sabão/sabonete à mão, substitua por álcool em gel para mãos. Cante “parabéns a você” duas vezes seguidas para fazer a correta lavagem das mãos. Vale também recitar o alfabeto.</p>
+                <p class="bold">Cubra a boca e o nariz ao tossir e espirrar</p>
+                <p>Cubra sua boca e nariz com um lenço descartável ao tossir ou espirrar. Após o uso, jogue fora o lenço num cesto de lixo. Caso você não tenha um lenço, use sua manga ao invés de suas mãos.</p>
+                <p class="bold">Evite o contato com olhos, nariz ou boca</p>
+                <p>Tente evitar o contato com os olhos, nariz ou boca para evitar que os germes se espalhem.</p>
+                <p class="bold">Fique em casa quando se sentir doente</p>
+                <p>Incentive as crianças a contar para os adultos quando se sentir doentes. Se você ou seu filho estiverem doentes, fique em casa, assim você não espalha os vírus que podem deixar outras pessoas adoentadas.</p>
+                <p class="bold">Hábitos saudáveis o dia todo</p>
+                <p>O que você pode fazer para se manter saudável? Alterne entre ambientes fechados e ao ar livre, coma de forma saudável balanceando os alimentos, durma o suficiente e beba muita água.</p>
+                <p class="bold">Espalhe a mensagem</p>
+                <p>Atualmente, avisos sobre saúde são emitidos regularmente. As crianças, especialmente as mais novas, podem ter interesses sobre estes avisos, mas podem não necessariamente expressar seu medo ou ansiedade sobre isso. Limite sua exposição aos meios que podem discutir a gripe H1N1 de forma imprópria para crianças mais novas. Incentive a discussão entre os familiares e responda as dúvidas que as crianças possam ter, e garanta a eles que os adultos em suas vidas estão lá para mantê-las seguras.</p>
+                
+                
+                
+              </div>    
+                                              
+             
+            </div>
+           
+            <!-- /ESQUERDA -->
+            <!-- DIREITA -->
+            <div id="direita2" class="esq">
+              <p class="grd vejatb">Veja também</p>
+              <ul class="lista-artigos">
+                  <li>
+                   <a href="do-nascimento-ao-ano-1.html" class="thumb" title="Do Nascimento ao Ano 1" name="Do Nascimento ao Ano 1"><img src="../images/para-os-pais/do-nascimento-1-ano.jpg" alt="Do Nascimento ao Ano 1" /></a>
+                   <div class="descricao">
+                    <a href="do-nascimento-ao-ano-1.html" class="tit" name="Do Nascimento ao Ano 1" title="Do Nascimento ao Ano 1">Do Nascimento ao Ano 1</a>
+                    <a href="do-nascimento-ao-ano-1.html" >Veja formas de enriquecer as primeiras experiências de seu filho.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="compreendendo-a-diferenca-do-outro.html" class="thumb" title="Compreendendo a diferença do outro" name="Compreendendo a diferença do outro"><img src="../images/para-os-pais/compreendendo-diferenca-outro.jpg" alt="Compreendendo a diferença do outro" /></a>
+                   <div class="descricao">
+                    <a href="compreendendo-a-diferenca-do-outro.html" class="tit" name="Compreendendo a diferença do outro" title="Compreendendo a diferença do outro">Compreendendo a diferença do outro</a>
+                    <a href="compreendendo-a-diferenca-do-outro.html">Ensine as crianças a apreciar a si mesmo e a respeitar os outros como eles são.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="crie-musica-e-arte.html" class="thumb" title="Crie Música e Arte " name="Crie Música e Arte "><img src="../images/para-os-pais/crie-musica-e-arte.jpg" alt="Crie Música e Arte" /></a>
+                   <div class="descricao">
+                    <a href="crie-musica-e-arte.html" class="tit" name="Crie Música e Arte" title="Crie Música e Arte">Crie Música e Arte</a>
+                    <a href="crie-musica-e-arte.html">Dê oportunidades para seu filho se expressar como artista!</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="matematica-todos-os-dias.html" class="thumb" title="Matemática todos os dias" name="Matemática todos os dias"><img src="../images/para-os-pais/matematica-todos-dias.jpg" alt="Matemática todos os dias" /></a>
+                   <div class="descricao">
+                    <a href="matematica-todos-os-dias.html" class="tit" name="Matemática todos os dias" title="Matemática todos os dias">Matemática todos os dias</a>
+                    <a href="matematica-todos-os-dias.html">A matemática está em todos os lugares! Veja algumas ideias para explorar a mágica dos números com as crianças.</a>                                     
+                  </div>
+                </li>
+                
+              </ul>  
+             
+            </div>
+            <!-- /DIREITA -->
+            
+            <!-- rodape vila -->
+            <div class="centraliza">           
+              <ul class="rodape-vila">
+                <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>
+                <li><a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+                <li><a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+                <li><a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="last"><a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a></li>
+              </ul>
+            </div>
+            <!-- rodape vila -->
+           
+           
+
+          </div>
+          <!-- /CAPA -->
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+      </div>
+      <!-- /MIOLO -->
+    </div>
+    <!-- / CAPA SITE -->
+   
+        
+  
+  </body>

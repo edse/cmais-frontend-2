@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* text heading styles */
+H1.flush,H2.flush,H3.flush,H4.flush,H5.flush{background:#CCCCCC;}
+H1,H2,H3,H4,H5{background:#CCCCCC;}

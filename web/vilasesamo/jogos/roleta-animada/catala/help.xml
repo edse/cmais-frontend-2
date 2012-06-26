@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' ?>
+<help>
+<prepare>
+<![CDATA[
+<b>Preparar el juego.</b>
+Antes de comenzar el juego, el maestro lee las actividades y prepara los elementos necesarios, como colores cinta, hojas, globos y lápices.
+También busca un lugar cómodo para jugar, el cual debe incluir lógicamente un ordenador conectado a internet.
+El juego es muy sencillo. Al cerrar esta ventana comenzará la ruleta a girar y te escogerá una carta al azar.
+Solo tienes que seguir las instrucciones de la carta que aparezca. En todo momento podrás ver las cartas que has jugado pulsando el botón superior.
+Si deseas ver más ayuda pulsa el interrogante de la parte superior.
+Muy buena suerte y pulsa la Flecha amarilla para empezar el juego.
+
+]]>
+</prepare>
+<game>
+<![CDATA[
+<b>Dinámica del juego</b>
+El maestro escoge al azar el primer participante.
+Luego, decide por dónde sigue el turno. Por ejemplo, por número de mesa si niñas y nuños permanecen en sus puestos, o por la izquierda o la derecha si están en círculo.
+La niña y el niño elegido gira la ruleta para escoger el personaje que le propondrá la actividad a desarrollar.
+La actividad a realizar la elige el juego aleatoriamente. Las tarjetas utilizadas salen del juego.
+Si sale LOLA, el maestro lee la actividad y todo el grupo la realiza.
+Si sale BLAS, el maestro pregunta y el niño o niña responde. Si necesita ayuda, se podrá brindar el siguiente jugador.
+Si sale EPI, el maestro propone al grupo desarrollar en parejas o tríos las actividades.
+Si sale ELMO, el maestro le leerá a la niña o el niño la instrucción, para que se mueva de cierta manera y los demás le imiten.
+Si sale Abelardo, habrá un concurso donde todas y todos ganarán.
+]]>
+</game>
+</help>
+

@@ -1,0 +1,22 @@
+/* this relates to the "share" dialog window - which is a seperate HTML template */
+
+body,html{
+	height:100%;
+}
+/* CSS Document */
+body {color:#404040;background:url(../images/share/share_dialog_background.gif) bottom left repeat-x #FFF;}
+.banner {margin:0px;padding:0px;}
+DIV#content {margin-top:10px;padding-left:15px; }
+DIV#content p.text {margin:0px 0px 5px 0px;}
+DIV#content p.spaced-text {margin:0px 10px 35px 0px;}
+DIV#content p.spaced-text a {color:#0066cc; font-weight:bold; text-decoration:none;}
+DIV#content p.spaced-text a:hover {text-decoration:underline;}
+DIV#content .smaller {font-size:9px;color:#888}
+DIV#content .standard { width:144px;height:19px; margin:5px 10px 10px 0px;}
+DIV#content input.standard { padding:3px 3px 0px 2px; }
+DIV#content .wide { width:309px;height:19px; margin-top:5px; margin-bottom:15px;}
+DIV#content input.wide { padding:3px 3px 0px 2px; }
+DIV#content .options {margin:0px;}
+DIV#content .options img {margin:0px 10px 10px 0px;vertical-align:text-top;}
+DIV#content .options a {color:#0066cc; font-weight:bold; text-decoration:none;}
+DIV#content .options a:hover {text-decoration:underline;}

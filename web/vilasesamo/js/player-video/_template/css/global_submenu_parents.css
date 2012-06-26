@@ -1,0 +1,24 @@
+/** parents-subnav buttons **/ 
+
+DIV#submenu.parents { background-image:url(../images/submenu/parents/parents-subnav-bg.gif); }
+
+DIV#submenu a#parents-subnav-home{background-image:url(../images/submenu/parents/parents-subnav-parents.gif); width:74px; }
+DIV#submenu a#parents-subnav-home.current{background-image:url(../images/submenu/parents/parents-subnav-parents_c.gif); width:74px; }
+DIV#submenu a#parents-subnav-home:hover{background-image:url(../images/submenu/parents/parents-subnav-parents_r.gif); width:74px; }
+
+DIV#submenu a#parents-subnav-topics{background-image:url(../images/submenu/parents/parents-subnav-topics.gif); width:58px; height:26px;}
+DIV#submenu a#parents-subnav-topics.current{background-image:url(../images/submenu/parents/parents-subnav-topics_c.gif); width:58px; }
+DIV#submenu a#parents-subnav-topics:hover{background-image:url(../images/submenu/parents/parents-subnav-topics_r.gif); width:58px; }
+
+DIV#submenu a#parents-subnav-newsletters{background-image:url(../images/submenu/parents/parents-subnav-newsletters.gif); width:90px; height:26px;}
+DIV#submenu a#parents-subnav-newsletters.current{background-image:url(../images/submenu/parents/parents-subnav-newsletters_c.gif); width:90px; }
+DIV#submenu a#parents-subnav-newsletters:hover{background-image:url(../images/submenu/parents/parents-subnav-newsletters_r.gif); width:90px; }
+
+DIV#submenu a#parents-subnav-how-to{background-image:url(../images/submenu/parents/parents-subnav-howto.gif); width:135px; height:26px;}
+DIV#submenu a#parents-subnav-how-to.current{background-image:url(../images/submenu/parents/parents-subnav-howto_c.gif); width:135px; }
+DIV#submenu a#parents-subnav-how-to:hover{background-image:url(../images/submenu/parents/parents-subnav-howto_r.gif); width:135px; }
+
+DIV#submenu a#parents-subnav-podcasts{background-image:url(../images/submenu/parents/parents-subnav-podcast.gif); width:75px; height:26px;}
+DIV#submenu a#parents-subnav-podcasts.current{background-image:url(../images/submenu/parents/parents-subnav-podcast_c.gif); width:75px; }
+DIV#submenu a#parents-subnav-podcasts:hover{background-image:url(../images/submenu/parents/parents-subnav-podcast_r.gif); width:75px; }
+

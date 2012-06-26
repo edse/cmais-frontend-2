@@ -1,0 +1,147 @@
+/** CMAIS **/
+
+.peq { background:#333;  }
+.peq a { color:#fff; }
+.duas-colunas { margin-top:20px; }
+.duas-colunas h5 { margin:10px 10px 0 10px; }
+.duas-colunas .txt { margin:0 10px 10px; }
+.lista-blogs { margin-top:20px; }
+.lista-blogs li{ margin-right:56px; float: left;  text-align: left; width:200px;}
+.lista-blogs li a{ font-weight: bold; }
+.lista-blogs li .foto img { border:none; width:250px; margin:-25px 0 0 -25px}
+/** CMAIS **/
+
+/*homeCmais*/
+.exception{ background: none; }
+.galeriaCmais{ position: relative; width: 420px; }
+.conteudoWrapper{ background-color: #fff; }
+.conteudoBox a{ text-decoration: none; width: 420px!important; }
+.conteudoBox a img{	margin-bottom: 10px; width: 420px; height: 252px;}
+.conteudoBox a h3{ font-size: 16px; margin-left: 5px; }
+.conteudoBox a p{ padding: 0 5px 5px 5px; }
+.pagControl{ background: url(../images/bg-transparente.png) repeat; position: absolute;	top: 193px;	left: 150px; }
+.pagControl li{ float: left; padding: 3px 2px; }
+.pagControl li a{ margin: 0; }
+.pagControl li:hover a,
+.pagControl li.ativo a{ background-position: -42px 0; }
+.pagControl li.primeiro{ margin-left: 5px;}
+.pagControl li.ultimo{ margin-right: 5px; }
+.pagControl li a{ background: url(../images/pag-ball.png) no-repeat scroll -28px 0; display: block;	overflow: hidden; text-indent: -9999px; width: 13px; height: 13px; }
+.pagImage{ background: url(../images/bg-transparente.png) repeat; position: absolute; bottom: 95px;	width: 420px;}
+.pagImage li{ float: left; margin: 0 5px; padding: 5px 0 5px 0;}
+.pagImage li a img{	width: 50px; height: 30px;}
+.pagImage li a,
+.pagImage li a img{	float: left; overflow: hidden;	width: 50px; margin: 0px;}
+.pagImage li:hover a,
+.pagImage li a:hover{ border: 2px solid #fff; }
+.pagImage li a:hover{ margin: -2px;}
+/*galeria C+*/
+.galeriaCmais .big{ width: 970px!important; }
+.galeriaCmais .big p{text-align: left;}
+.galeriaCmais .big p.sup{ font-size: 16px; font-weight: bold; margin-top: 16px; }
+.galeriaCmais .big .cp-sembg{ float: right;}
+.galeriaCmais .big .cp-sembg .addthis_toolbox{ margin: 0px; }
+.galeriaCmais #container{ float: left;	width: 970px;}
+.galeriaCmais #container .ad-gallery{	width: 970px;}
+.galeriaCmais #container .ad-gallery .cp-sembg{	width: 970px;}
+.galeriaCmais #container .ad-gallery .ad-image-wrapper .ad-image a img{	margin-top: 10px;}
+.galeriaCmais #container .ad-gallery .ad-back{	left: 925px;}
+/*galeria Cmais*/
+.galeriaCmaisTit{	margin: 20px 0 0 0!important;}
+.galeriaCmais .box-video a img{	margin-bottom: 10px;}
+.galeriaCmais .box-descricao a{	font-size: 16px;	font-weight: bold;}
+.galeriaCmais .box-galeria{	margin-top: -10px;}
+.galeriaCmais .abas-menu .enunciado{	background-color: #e5e5e5;	font-size: 14px;	font-weight: bold;	height: 24px;	margin-left: 0px;	top: 2px;}
+.galeriaCmais .abas-menu .enunciado span{	color: #333;	text-transform: uppercase;	padding: 0 10px;	position: relative;	top: 4px;}
+.galeriaCmais .abas-menu li span{	color: #fff;	text-transform: lowercase;	top: 1px;}
+.box-padrao .left li,
+.box-padrao .left li a {width:200px;}
+.box-padrao .left li {margin-top:0; margin-bottom:10px;}
+.box-padrao .left a {margin-top:0;}
+.box-padrao .left li:first-child .titulos {font-size:20px; line-height:22px;}
+.galeria .destaques li {margin-bottom:10px;}
+.galeria .tooltip p,
+.galeria .tooltip a {background:#ff6633;}
+.galeria .tooltip span {background-position: 0 -4px;}
+.uma-coluna .conteudo li,
+.carrossel-videos { background:#fff; }
+.carrossel-videos { margin-bottom: 20px; position: relative; }
+.lista-blogs a {font-weight:bold; color:#333; margin-bottom:10px; display:block; margin-bottom:10px; width:200px; height:120px; overflow:hidden;}
+.lista-blogs a:hover {text-decoration:none;}
+.lista-blogs li:last-child { margin-right:0;}
+.lista-blogs .musica .chapeu,
+.lista-blogs .musica a:hover { color:#369AE3;}
+.lista-blogs .chapeu,
+.lista-blogs a:hover {color:#ff6633;}
+.lista-blogs .arte .chapeu,
+.lista-blogs .arte a:hover {color:#9D44D5;}
+.lista-blogs .jornalismo .chapeu,
+.lista-blogs .jornalismo a:hover {color:#FF6633;}
+.lista-blogs .infantil .chapeu,
+.lista-blogs .infantil a:hover {color:#DCAF00;}
+.lista-blogs .educacao .chapeu,
+.lista-blogs .educacao a:hover {color:#96A84C;}
+.lista-blogs .especiais .chapeu,
+.lista-blogs .especiais a:hover {color:#EE2125;}
+.lista-blogs .juvenil .chapeu,
+.lista-blogs .juvenil a:hover {color:#ED1089;}
+#esquerda .col1 {margin-top:20px;}
+.col1 { height:350px;}
+.col1 .titulos {margin-top:10px; width:200px;}
+.col1 p {clear:both;}
+.galleria-info-text { max-height:91px;}
+.col2 .content {margin-top:-64px;}
+#capa-site {padding-top:20px;}
+.galleria-thumbnails .galleria-image {margin:0 0 0 5px !important;}
+
+
+/* novo*/
+/*#esquerda {margin-top:-20px;}
+#direita {margin-top:-20px;}
+*/
+#revista { height:395px; margin-bottom:20px; }
+.destaque-revista { width:815px; float:left; }
+#menu-revista {float:left; background:url(../images/barra-menu.png) no-repeat; width:171px; text-align:left;}
+#menu-revista li { height:44px; overflow:hidden; }
+#menu-revista li:last-child {height:43px;}
+#menu-revista li a { display:block; font-size:14px; font-weight:bold; color:#666; height:27px; line-height:27px; padding-left:10px; width:130px; overflow:hidden; text-transform:uppercase;  }
+#menu-revista li a:hover {text-decoration:none;}
+#menu-revista li.ativo,
+#menu-revista li:hover {background:url(../images/bg-hover.png) no-repeat ;}
+#menu-revista li.ativo a,
+#menu-revista li:hover a { color:#fff; }
+#conteudo-revista { float:left; margin-top:5px; width:638px; border-right:2px solid #ff6633; border-left:2px solid #ff6633; overflow:hidden; background:#fff; text-align:left; }
+#conteudo-revista .capa-conteudo {display:none; width:640px; height:390px; overflow:hidden; position:relative; background:#fff;}
+#conteudo-revista .capa-conteudo .media img {width:640px; height:390px;}
+#conteudo-revista .ativo {display:block;}
+#conteudo-revista .bg { position:absolute; background:#000; opacity:0.7;-moz-opacity: 0.7; filter: alpha(opacity=70); height:90px; width:640px; bottom:0; left:0; overflow:hidden; }
+#conteudo-revista .descricao {position:absolute; height:90px; width:640px; overflow:hidden; bottom:0; left:0;}
+#conteudo-revista .descricao a,
+#conteudo-revista .descricao p {color:#fff;}
+#conteudo-revista .descricao h3 {margin:5px 20px 0 20px;}
+#conteudo-revista .descricao p {margin-top:0; max-height:45px; overflow:hidden;}
+#conteudo-revista .not {height:345px; overflow:hidden; margin-bottom:10px;}
+#conteudo-revista .not .jp-audio {margin-left:20px;}
+#conteudo-revista .titulo {font-size:24px; margin:20px 20px 10px 20px; display:block;}
+#conteudo-revista h1,
+#conteudo-revista p {font-size:14px; margin:10px 20px;}
+#conteudo-revista p img {float:left; margin-right:10px;}
+#conteudo-revista .leia {background:#ff6633; color:#fff; padding:2px 3px; font-weight:bold; text-transform:uppercase; font-size:12px; margin-left:20px; }
+#conteudo-revista .leia:hover {text-decoration:none;}
+#conteudo-revista .linha {background:#edebeb; height:1px; width:100%; position:absolute; bottom:0;}
+#revista .menu-editorias {width:139px; float:left; margin-left:16px; margin-top:5px; }
+#revista .menu-editorias li { background:#fff; text-indent:-9999px; border-left:2px solid #ff6633; width:137px; height:76px; margin-bottom:2px;}
+#revista .menu-editorias li:last-child a,
+#revista .menu-editorias li:last-child {height:78px; margin-bottom:0;}
+#revista .menu-editorias li a { background:url(../images/icones-editorias.jpg) no-repeat 2px 0; width:137px; height:76px; display:block;}
+#revista .menu-editorias .inf a {background-position:2px -75px;}
+#revista .menu-editorias .edu a {background-position:2px -150px;}
+#revista .menu-editorias .jor a {background-position:2px -225px;}
+#revista .menu-editorias .mus a {background-position:2px -300px;}
+#revista .menu-editorias li a:hover { background-position:-137px 0; background-color:#ff6633; }
+#revista .menu-editorias .inf a:hover {background-position:-137px -75px;}
+#revista .menu-editorias .edu a:hover {background-position:-137px -150px;}
+#revista .menu-editorias .jor a:hover {background-position:-137px -225px;}
+#revista .menu-editorias .mus a:hover {background-position:-137px -300px;}
+#conteudo-pagina {padding-top:0;}
+/* /novo*/

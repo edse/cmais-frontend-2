@@ -1,0 +1,18 @@
+/** onair-subnav buttons **/ 
+
+DIV#submenu a#on_air-subnav-onair{background-image:url(../images/submenu/onair/onair-subnav-onair.gif); width:74px; }
+DIV#submenu a#on_air-subnav-onair.current{background-image:url(../images/submenu/onair/onair-subnav-onair_c.gif); width:74px; }
+DIV#submenu a#on_air-subnav-onair:hover{background-image:url(../images/submenu/onair/onair-subnav-onair_r.gif); width:74px; }
+
+DIV#submenu a#on_air-subnav-topics{background-image:url(../images/submenu/onair/onair-subnav-topics.gif); width:58px; height:26px;}
+DIV#submenu a#on_air-subnav-topics.current{background-image:url(../images/submenu/onair/onair-subnav-topics_c.gif); width:58px; }
+DIV#submenu a#on_air-subnav-topics:hover{background-image:url(../images/submenu/onair/onair-subnav-topics_r.gif); width:58px; }
+
+DIV#submenu a#on_air-subnav-newsletters{background-image:url(../images/submenu/onair/onair-subnav-newsletters.gif); width:90px; height:26px;}
+DIV#submenu a#on_air-subnav-newsletters.current{background-image:url(../images/submenu/onair/onair-subnav-newsletters_c.gif); width:90px; }
+DIV#submenu a#on_air-subnav-newsletters:hover{background-image:url(../images/submenu/onair/onair-subnav-newsletters_r.gif); width:90px; }
+
+DIV#submenu a#on_air-subnav-howto{background-image:url(../images/submenu/onair/onair-subnav-howto.gif); width:135px; height:26px;}
+DIV#submenu a#on_air-subnav-howto.current{background-image:url(../images/submenu/onair/onair-subnav-howto_c.gif); width:135px; }
+DIV#submenu a#on_air-subnav-howto:hover{background-image:url(../images/submenu/onair/onair-subnav-howto_r.gif); width:135px; }
+

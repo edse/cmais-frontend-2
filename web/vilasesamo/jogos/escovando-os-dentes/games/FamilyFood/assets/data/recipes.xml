@@ -1,0 +1,2061 @@
+<Sesame>
+	<States>
+		<Welcome Recipe="Salad" >
+			<Intro type="FIRSTTIME">
+				<VO character="bb">
+					<VO sound="bb_welcome1"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome2"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome4"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome5"/>
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_salad"/>
+					<VO sound="bb_goal"/>
+				</VO>
+			</Intro>
+			<Intro type="SUBSEQUENT">
+				<VO character="bb">
+					<VO>
+						<VO sound="welcomeback1"/>
+						<VO sound="welcomeback2"/>
+						<VO sound="welcomeback3"/>
+					</VO>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_back"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome4"/>
+				</VO>						
+				<VO character="bb">
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_salad"/>
+					<VO sound="bb_goal"/>
+				</VO>				
+			</Intro>
+		</Welcome>
+		<Welcome Recipe="Burritos" >
+			<Intro type="FIRSTTIME">
+				<VO character="bb">
+					<VO sound="bb_welcome1"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome2"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome4"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome5"/>
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_burritos"/>
+					<VO sound="bb_goal"/>
+				</VO>
+			</Intro>
+			<Intro type="SUBSEQUENT">
+				<VO character="bb">
+					<VO>
+						<VO sound="welcomeback1"/>
+						<VO sound="welcomeback2"/>
+						<VO sound="welcomeback3"/>
+					</VO>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_back"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="pb">
+					<VO sound="pb_welcome4"/>
+				</VO>						
+				<VO character="bb">
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_burritos"/>
+					<VO sound="bb_goal"/>
+				</VO>				
+			</Intro>
+		</Welcome>		
+		<Welcome Recipe="Stew" >
+			<Intro type="FIRSTTIME">
+				<VO character="bb">
+					<VO sound="bb_welcome1"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome2"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome4"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome5"/>
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_stew"/>
+					<VO sound="bb_goal"/>
+				</VO>
+			</Intro>
+			<Intro type="SUBSEQUENT">
+				<VO character="bb">
+					<VO>
+						<VO sound="welcomeback1"/>
+						<VO sound="welcomeback2"/>
+						<VO sound="welcomeback3"/>
+					</VO>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_back"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome4"/>
+				</VO>						
+				<VO character="bb">
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_stew"/>
+					<VO sound="bb_goal"/>
+				</VO>				
+			</Intro>
+		</Welcome>		
+		<Welcome Recipe="Smoothies" >
+			<Intro type="FIRSTTIME">
+				<VO character="bb">
+					<VO sound="bb_welcome1"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome2"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome4"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome5"/>
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_smoothies"/>
+					<VO sound="bb_goal"/>
+				</VO>
+			</Intro>
+			<Intro type="SUBSEQUENT">
+				<VO character="bb">
+					<VO>
+						<VO sound="welcomeback1"/>
+						<VO sound="welcomeback2"/>
+						<VO sound="welcomeback3"/>
+					</VO>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_back"/>
+				</VO>
+				<VO character="bb">
+					<VO sound="bb_welcome3"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_welcome4"/>
+				</VO>						
+				<VO character="bb">
+					<VO sound="bb_recipe"/>
+					<VO sound="bb_smoothies"/>
+					<VO sound="bb_goal"/>
+				</VO>				
+			</Intro>
+		</Welcome>	
+		<ChooseIngredient>
+			<Intro type="SHELF">
+				<VO character="bb">
+					<VO sound="bb_shelf"/>
+					<VO sound="bb_shelf_instrux"/>					
+				</VO>
+			</Intro>
+			<Intro type="FRIDGE">
+				<VO character="bb">
+					<VO sound="bb_fridge"/>
+					<VO sound="bb_fridge_instrux"/>					
+				</VO>
+			</Intro>
+			<Intro type="FREEZER">
+				<VO character="bb">
+					<VO sound="bb_freezer"/>
+					<VO sound="bb_freezer_instrux"/>					
+				</VO>
+			</Intro>
+			<Reactions>
+				<VO>
+					<VO sound="bb_fact_react1"/>
+					<VO sound="bb_fact_react2"/>
+					<VO sound="bb_fact_react3"/>
+					<VO sound="bb_fact_react4"/>
+					<VO sound="bb_fact_react5"/>
+				</VO>
+			</Reactions>
+			<Payoffs>
+				<VO>
+					<VO sound="bb_payoff1"/>
+					<VO sound="bb_payoff1_alt"/>
+				</VO>
+				
+				<VO sound="bb_payoff2"/>
+				
+				<VO>
+					<VO sound="bb_payoff3"/>
+					<VO sound="bb_payoff3_alt1"/>
+					<VO sound="bb_payoff3_alt2"/>
+				</VO>
+				
+				<VO>
+					<VO sound="bb_payoff4"/>
+					<VO sound="bb_payoff4_alt1"/>
+					<VO sound="bb_payoff4_alt2"/>
+				</VO>
+				
+				<VO>
+					<VO sound="bb_payoff5"/>
+					<VO sound="bb_payoff5_alt"/>
+				</VO>
+				
+				<VO>
+					<VO sound="bb_payoff6"/>
+					<VO sound="bb_payoff6_alt"/>
+				</VO>
+				
+				<VO>
+					<VO sound="bb_payoff7"/>
+					<VO sound="bb_payoff7_alt"/>
+				</VO>
+				
+				
+				<VO sound="bb_payoff9"/>
+				
+				<VO>
+					<VO sound="bb_payoff9_alt1"/>
+					<VO sound="bb_payoff9_alt2"/>
+				</VO>
+				
+				<VO sound="bb_payoff10"/>				
+			</Payoffs>
+			<Timeouts type="SHELF">
+				<VO sound="bb_general_to1"/>
+				<VO sound="bb_shelf_to2"/>
+				<VO sound="bb_shelf_to3"/>
+				<VO sound="bb_general_to4"/>
+				<VO sound="bb_general_to5"/>
+			</Timeouts>		
+			<Timeouts type="FRIDGE">
+				<VO sound="bb_general_to1"/>
+				<VO sound="bb_fridge_to1"/>
+				<VO sound="bb_fridge_to2"/>
+				<VO sound="bb_general_to4"/>
+				<VO sound="bb_general_to5"/>
+			</Timeouts>		
+			<Timeouts type="FREEZER">
+				<VO sound="bb_general_to1"/>
+				<VO sound="bb_freezer_to2"/>
+				<VO>
+						<VO sound="bb_freezer_to3"/>
+						<VO sound="bb_freezer_to3_alt"/>
+				</VO>
+				<VO sound="bb_general_to4"/>
+				<VO sound="bb_general_to5"/>
+			</Timeouts>					
+		</ChooseIngredient>
+		<IngredientAnim>
+			<Intro>
+				<VO character="bb">
+					<VO sound="bb_add_food"/>
+				</VO>
+			</Intro>
+			<Transition>
+				<VO character="pb">
+					<VO sound="pb_transition"/>
+				</VO>
+				<VO character="mb">
+					<VO sound="mb_transition"/>
+				</VO>
+			</Transition>
+		</IngredientAnim>				
+	</States>
+	<Recipes>
+<!-- the salad-->
+		<Recipe Name="Salad" Character="PAPA" closeUp="BowlCloseUp">
+			<Ingredients type="Shelf">
+				<Ingredient Name="beans"/>
+				<Ingredient Name="tuna"/>
+				<Ingredient Name="orange"/>
+				<Ingredient Name="banana"/>
+			</Ingredients>
+			<Ingredients type="Fridge">
+				<Ingredient Name="strawberries"/>
+				<Ingredient Name="blueberries"/>
+				<Ingredient Name="broccoli"/>
+				<Ingredient Name="cheese"/>
+			</Ingredients>
+			<Ingredients type="Freezer">
+				<Ingredient Name="raspberries"/>
+				<Ingredient Name="carrots"/>
+				<Ingredient Name="corn"/>
+			</Ingredients>
+			<AddIngredient>
+				<Timeouts>
+					<VO character="bb">
+						<VO sound="bb_add_to1a"/>
+						<VO sound="bb_bowl"/>
+						<VO sound="bb_bowl_movethem"/>
+					</VO>
+				</Timeouts>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_add_payoff1"/>
+						<VO sound="bb_add_payoff2"/>
+						<VO sound="bb_add_payoff3"/>
+						<VO sound="bb_add_payoff4"/>
+						<VO sound="bb_add_payoff5"/>
+						<VO sound="bb_add_payoff6"/>
+						<VO sound="bb_add_payoff7"/>
+						<VO sound="bb_add_payoff8"/>
+						<VO sound="bb_payoff9"/>
+						<VO sound="bb_payoff6"/>
+					</VO>
+				</Payoffs>
+			</AddIngredient>
+			<End>
+				<Final>
+					<VO character="pb">
+						<VO sound="4final_line1"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="4final_line2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="4final_line3"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="4final_line4"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="4final_line5"/>
+					</VO>
+					<VO character="cb">
+						<VO sound="4final_line6"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="4final_line7"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="4final_line8"/>
+					</VO>
+				</Final>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_endpayoff4a"/>
+						<VO>
+							<VO sound="bb_endpayoff_b_alt_1"/>
+							<VO sound="bb_endpayoff_b_alt_2"/>							
+						</VO>
+					</VO>
+					<VO character="pb">
+						<VO sound="pb_endpayoff2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="bb_endpayoff_sure_pb"/>
+						<VO sound="bb_endpayoff_hereigo"/>
+					</VO>
+				</Payoffs>
+			</End>
+			<VO character="bb">
+				<VO type="add">
+					<VO sound="bb_bowl"/>
+					<VO sound="bb_bowl_movethem"/>
+				</VO>
+			</VO>
+		</Recipe>
+<!-- the Burritos-->
+		<Recipe Name="Burritos" Character="PAPA" closeUp="BowlCloseUp">
+			<Ingredients type="Shelf">
+				<Ingredient Name="bor_peas"/>
+				<Ingredient Name="bor_beans"/>
+				<Ingredient Name="bor_tomatosauce"/>
+				<Ingredient Name="bor_tuna"/>
+			</Ingredients>
+			<Ingredients type="Fridge">
+				<Ingredient Name="bor_blueberries"/>
+				<Ingredient Name="bor_broccoli"/>				
+				<Ingredient Name="bor_mushrooms"/>				
+				<Ingredient Name="bor_cheese"/>
+			</Ingredients>
+			<Ingredients type="Freezer">
+				<Ingredient Name="bor_spinach"/>
+				<Ingredient Name="bor_carrots"/>
+				<Ingredient Name="bor_corn"/>
+			</Ingredients>
+			<AddIngredient>
+				<Timeouts>
+					<VO character="bb">
+						<VO sound="bb_add_to1a"/>
+						<VO sound="bb_plate"/>
+						<VO sound="bb_plate_movethem"/>
+					</VO>
+				</Timeouts>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_add_payoff1"/>
+						<VO sound="bb_add_payoff2"/>
+						<VO sound="bb_add_payoff3"/>
+						<VO sound="bb_add_payoff4"/>
+						<VO sound="bb_add_payoff5"/>
+						<VO sound="bb_add_payoff6"/>
+						<VO sound="bb_add_payoff7"/>
+						<VO sound="bb_add_payoff8"/>
+						<VO sound="bb_payoff9"/>
+						<VO sound="bb_payoff6"/>
+					</VO>
+				</Payoffs>
+			</AddIngredient>
+			<End>
+				<Final>
+					<VO character="pb">
+						<VO sound="3final_line1"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="3final_line2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="3final_line3"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="3final_line4"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="3final_line5"/>
+					</VO>
+					<VO character="cb">
+						<VO sound="3final_line6"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="3final_line7"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="3final_line8"/>
+					</VO>
+				</Final>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_endpayoff3a"/>
+						<VO>
+							<VO sound="bb_endpayoff_b_1"/>
+							<VO sound="bb_endpayoff_b_2"/>							
+						</VO>
+					</VO>
+					<VO character="pb">
+						<VO sound="pb_endpayoff1"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="bb_endpayoff_sure_pb"/>
+						<VO sound="bb_endpayoff_hereigo"/>
+					</VO>
+				</Payoffs>
+			</End>
+			<VO character="bb">
+				<VO type="add">
+					<VO sound="bb_plate"/>
+					<VO sound="bb_plate_movethem"/>
+				</VO>
+			</VO>
+		</Recipe>
+<!-- the Stew-->
+		<Recipe Name="Stew" Character="MAMA" closeUp="BowlCloseUp">
+			<Ingredients type="Shelf">
+				<Ingredient Name="ste_oats"/>	
+				<Ingredient Name="ste_peas"/>
+				<Ingredient Name="ste_beans"/>
+				<Ingredient Name="ste_tomatosauce"/>	
+							
+			</Ingredients>
+			<Ingredients type="Fridge">
+				<Ingredient Name="ste_broccoli"/>				
+				<Ingredient Name="ste_mushrooms"/>	
+				<Ingredient Name="ste_milk"/>								
+				<Ingredient Name="ste_cheese"/>
+			</Ingredients>
+			<Ingredients type="Freezer">
+				<Ingredient Name="ste_spinach"/>
+				<Ingredient Name="ste_carrots"/>
+				<Ingredient Name="ste_corn"/>
+			</Ingredients>
+			<AddIngredient>
+				<Timeouts>
+					<VO character="bb">
+						<VO sound="bb_add_to1a"/>
+						<VO sound="bb_pot"/>
+						<VO sound="bb_pot_movethem"/>
+					</VO>
+				</Timeouts>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_add_payoff1"/>
+						<VO sound="bb_add_payoff2"/>
+						<VO sound="bb_add_payoff3"/>
+						<VO sound="bb_add_payoff4"/>
+						<VO sound="bb_add_payoff5"/>
+						<VO sound="bb_add_payoff6"/>
+						<VO sound="bb_add_payoff7"/>
+						<VO sound="bb_add_payoff8"/>
+						<VO sound="bb_payoff9"/>
+						<VO sound="bb_payoff6"/>
+					</VO>
+				</Payoffs>
+			</AddIngredient>
+			<End>
+				<Final>
+					<VO character="pb">
+						<VO sound="2final_line1"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="2final_line2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="2final_line3"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="2final_line4"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="2final_line5"/>
+					</VO>
+					<VO character="cb">
+						<VO sound="2final_line6"/>
+					</VO>
+					<VO character="cb">
+						<VO sound="2final_line7"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="2final_line8"/>	
+					</VO>
+				</Final>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_endpayoff2a"/>
+						<VO>
+							<VO sound="bb_endpayoff_b_alt3"/>
+							<VO sound="bb_endpayoff_b_alt3_2"/>
+						</VO>
+					</VO>
+					<VO character="mb">
+						<VO sound="mb_endpayoff2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="bb_endpayoff_sure_mb"/>
+						<VO sound="bb_endpayoff_hereigo"/>
+					</VO>
+				</Payoffs>
+			</End>
+			<VO character="bb">
+				<VO type="add">
+					<VO sound="bb_pot"/>
+					<VO sound="bb_pot_movethem"/>
+				</VO>
+			</VO>
+		</Recipe>
+<!-- the Smoothies-->
+		<Recipe Name="Smoothies" Character="MAMA" closeUp="BowlCloseUp">
+			<Ingredients type="Shelf">
+				<Ingredient Name="smt_orange"/>	
+				<Ingredient Name="smt_banana"/>
+				<Ingredient Name="smt_oats"/>
+				<Ingredient Name="smt_peanutbutter"/>	
+							
+			</Ingredients>
+			<Ingredients type="Fridge">
+				<Ingredient Name="smt_strawberries"/>
+				<Ingredient Name="smt_blueberries"/>
+				<Ingredient Name="smt_broccoli"/>
+				<Ingredient Name="smt_milk"/>
+			</Ingredients>
+			<Ingredients type="Freezer">
+				<Ingredient Name="smt_spinach"/>
+				<Ingredient Name="smt_raspberries"/>
+				<Ingredient Name="smt_carrots"/>				
+			</Ingredients>
+			<AddIngredient>
+				<Timeouts>
+					<VO character="bb">
+						<VO sound="bb_add_to1a"/>
+						<VO sound="bb_blender"/>
+						<VO sound="bb_blender_movethem"/>
+					</VO>
+				</Timeouts>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_add_payoff1"/>
+						<VO sound="bb_add_payoff2"/>
+						<VO sound="bb_add_payoff3"/>
+						<VO sound="bb_add_payoff4"/>
+						<VO sound="bb_add_payoff5"/>
+						<VO sound="bb_add_payoff6"/>
+						<VO sound="bb_add_payoff7"/>
+						<VO sound="bb_add_payoff8"/>
+						<VO sound="bb_payoff9"/>
+						<VO sound="bb_payoff6"/>
+					</VO>
+				</Payoffs>
+			</AddIngredient>
+			<End>
+				<Final>
+					<VO character="pb">
+						<VO sound="1final_line1"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="1final_line2"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="1final_line3"/>
+					</VO>
+					<VO character="pb">
+						<VO sound="1final_line4"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="1final_line5"/>
+					</VO>
+					<VO character="cb">
+						<VO sound="1final_line6"/>
+					</VO>
+					<VO character="mb">
+						<VO sound="1final_line7"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="1final_line8"/>
+					</VO>
+				</Final>
+				<Payoffs>
+					<VO character="bb">
+						<VO sound="bb_endpayoff1a"/>
+						<VO>
+							<VO sound="bb_endpayoff_b_alt2_1"/>
+							<VO sound="bb_endpayoff_b_alt2_2"/>
+						</VO>
+					</VO>
+					<VO character="mb">
+						<VO sound="mb_endpayoff1"/>
+					</VO>
+					<VO character="bb">
+						<VO sound="bb_endpayoff_sure_mb"/>
+						<VO sound="bb_endpayoff_hereigo"/>
+					</VO>
+				</Payoffs>
+			</End>
+			<VO character="bb">
+				<VO type="add">
+					<VO sound="bb_blender"/>
+					<VO sound="bb_blender_movethem"/>
+				</VO>
+			</VO>
+		</Recipe>				
+
+	</Recipes>
+	<Ingredients>
+		<Ingredient Name="peas" anim="CanOpenerBeans" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_peas"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>
+
+		<Ingredient Name="bor_peas" anim="CanopenerPeas" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_peas"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_peas" anim="SesameStreet_MAMAcanopenerPeas" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_peas"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_peas"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>
+		
+		<Ingredient Name="beans" anim="CanOpenerBeans" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_beans"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_beans" anim="CanOpenerBeans" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_beans"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_beans" anim="SesameStreet_MAMAcanopenerBeans" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_beans"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_beans"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="tomatosauce" anim="SesameStreet_openjarTomatosauce" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_sauce"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_tomatosauce" anim="SesameStreet_openjarTomatosauce" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_sauce"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_sauce"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_openjar"/>
+					<VO sound="pb_openjar_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_openjar"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_tomatosauce" anim="SesameStreet_MAMAopenjarTomatosauce"  plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_sauce"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_sauce"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_openjar"/>
+					<VO sound="pb_openjar_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_sauce"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_openjar"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="tuna"  anim="CanOpenerTuna" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_tuna"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="pb_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_tuna"  anim="CanOpenerTuna" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_tuna"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_opencan2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_opencan1"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="pb_tuna"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_opencan1"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="orange" anim="PeelOrange" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_orange"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_orange"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_peel"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_peel"/>
+				</VO>
+			</VO>
+		</Ingredient>
+
+		<Ingredient Name="bor_orange" anim="PeelOrange" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_orange"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_orange"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_peel"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_peel"/>
+				</VO>
+			</VO>
+		</Ingredient>			
+		
+		<Ingredient Name="smt_orange" anim="SesameStreet_MAMApeelOrange" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_orange"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_orange"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_peel"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_orange"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_peel"/>
+				</VO>
+			</VO>
+		</Ingredient>			
+		
+		<Ingredient Name="banana" anim="PeelBanana" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_banana"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_banana"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_banana"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_peel"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_banana"/>
+				</VO>
+			</VO>
+		</Ingredient>
+		
+		<Ingredient Name="smt_banana" anim="SesameStreet_MAMApeelBanana" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_banana"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_banana"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_banana"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_peel"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_banana"/>
+				</VO>
+			</VO>
+		</Ingredient>
+		
+		<Ingredient Name="ste_oats" anim="" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_oats"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="mb_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_oats" anim="" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_oats"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="mb_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_oats"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+		</Ingredient>	
+		 
+		
+		<Ingredient Name="smt_peanutbutter" anim="SesameStreet_MAMAopenjarPeanutButter" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_peanutbutter"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_peanutbutter"/>					
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="mb_peanutbutter"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_openjar"/>
+					<VO sound="pb_openjar_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_peanutbutter"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_openjar"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="strawberries" anim="WashStrawberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_strawberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_strawberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_strawberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_strawberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_strawberries" anim="WashStrawberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_strawberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_strawberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_strawberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_strawberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_strawberries" anim="WashStrawberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_strawberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_strawberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_strawberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_strawberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		
+		<Ingredient Name="blueberries" anim="WashBlueberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_blueberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_blueberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_blueberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_blueberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_blueberries" anim="WashBlueberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_blueberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_blueberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_blueberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_blueberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_blueberries" anim="WashBlueberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_blueberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_blueberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_blueberries"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_blueberries"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="broccoli" anim="WashBroccoli" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_broccoli"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_broccoli"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_broccoli"/>
+					<VO sound="mb_broccoli_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_broccoli" anim="WashBroccoli" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_broccoli"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_broccoli"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_broccoli"/>
+					<VO sound="mb_broccoli_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_broccoli" anim="WashBroccoli" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_broccoli"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_broccoli"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_broccoli"/>
+					<VO sound="mb_broccoli_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_broccoli" anim="WashBroccoli" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_broccoli"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_broccoli"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_broccoli"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_broccoli"/>
+					<VO sound="mb_broccoli_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="mushrooms" anim="WashMushrooms" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_mushrooms"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_mushrooms"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_mushrooms"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_mushrooms"/>
+					<VO sound="mb_mushrooms_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_mushrooms" anim="WashMushrooms" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_mushrooms"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_mushrooms"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_mushrooms"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_mushrooms"/>
+					<VO sound="mb_mushrooms_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		<Ingredient Name="ste_mushrooms" anim="WashMushrooms" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_mushrooms"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_mushrooms"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_wash"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_mushrooms"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_mushrooms"/>
+					<VO sound="mb_mushrooms_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_milk" anim="" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_milk"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_milk"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="mb_milk"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_milk"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_milk" anim="" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_milk"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_milk"/>
+				</VO>
+				<VO type="open">
+					
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="mb_milk"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_milk"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="cheese" anim="Grater" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">					
+					<VO sound="bb_cheese"/>
+					<VO sound="bb_cheese_alt"/>					
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_grate2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_grate1"/>
+					<VO sound="pb_grate1_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_grate1"/>
+					<VO sound="mb_grate1_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_cheese" anim="Grater" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_cheese"/>
+					<VO sound="bb_cheese_alt"/>					
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_grate2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_grate1"/>
+					<VO sound="pb_grate1_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_grate1"/>
+					<VO sound="mb_grate1_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_cheese" anim="SesameStreet_MAMAgraterCheese" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">				
+					<VO sound="bb_cheese"/>
+					<VO sound="bb_cheese_alt"/>					
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="bb_grate2"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_grate1"/>
+					<VO sound="pb_grate1_alt"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_cheese"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_grate1"/>
+					<VO sound="mb_grate1_alt"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="spinach" anim="MicrowaveSpinach" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_spinach"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_spinach"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_spinach"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_spinach"/>
+					<VO sound="mb_spinach_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_spinach" anim="SesameStreet_MAMAmicrowaveSpinach" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_spinach"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_spinach"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_spinach"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_spinach"/>
+					<VO sound="mb_spinach_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_spinach" anim="SesameStreet_MAMAmicrowaveSpinach" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_spinach"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_spinach"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_spinach"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_spinach"/>
+					<VO sound="mb_spinach_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_spinach" anim="SesameStreet_MAMAmicrowaveSpinach" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_spinach"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_spinach"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_spinach"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_spinach"/>
+					<VO sound="mb_spinach_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="raspberries" anim="MicrowaveRaspberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_raspberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_raspberries"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_raspberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_raspberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_raspberries" anim="SesameStreet_MAMAmicrowaveRaspberries" plural="1">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_raspberries"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_raspberries"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_raspberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_raspberries"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		
+		<Ingredient Name="carrots" anim="MicrowaveCarrots" plural="1">	
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_carrots"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_carrots"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_carrots"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_carrots"/>
+					<VO sound="mb_carrots_alt"/>
+					<VO sound="mb_carrots_alt2"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="bor_carrots" anim="MicrowaveCarrots" plural="1">	
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_carrots"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_carrots"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_carrots"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_carrots"/>
+					<VO sound="mb_carrots_alt"/>
+					<VO sound="mb_carrots_alt2"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="ste_carrots" anim="SesameStreet_MAMAmicrowaveCarrots" plural="1">	
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_carrots"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_carrots"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_carrots"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_carrots"/>
+					<VO sound="mb_carrots_alt"/>
+					<VO sound="mb_carrots_alt2"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="smt_carrots" anim="SesameStreet_MAMAmicrowaveCarrots" plural="1">	
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_carrots"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_carrots"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_carrots"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_carrots"/>
+					<VO sound="mb_carrots_alt"/>
+					<VO sound="mb_carrots_alt2"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>	
+		
+		<Ingredient Name="corn" anim="MicrowaveCorn" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_corn"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_corn"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_corn"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_corn"/>
+					<VO sound="mb_corn_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>		
+		<Ingredient Name="bor_corn" anim="MicrowaveCorn" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_corn"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_corn"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_corn"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_corn"/>
+					<VO sound="mb_corn_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>		
+		
+		<Ingredient Name="ste_corn" anim="SesameStreet_MAMAmicrowaveCorn" plural="0">
+			<VO character="bb">
+				<VO type="pauseon">
+					<VO sound="bb_corn"/>
+				</VO>
+				<VO type="add">
+					<VO sound="bb_add_corn"/>
+				</VO>
+			</VO>
+			<VO character="pb">
+				<VO type="prepare">
+					<VO sound="pb_corn"/>
+				</VO>
+				<VO type="open">
+					<VO sound="pb_microwave"/>
+				</VO>
+			</VO>
+			<VO character="mb">
+				<VO type="prepare">
+					<VO sound="mb_corn"/>
+					<VO sound="mb_corn_alt"/>
+				</VO>
+				<VO type="open">
+					<VO sound="mb_microwave"/>
+				</VO>
+			</VO>
+		</Ingredient>		
+		
+	</Ingredients>
+</Sesame>

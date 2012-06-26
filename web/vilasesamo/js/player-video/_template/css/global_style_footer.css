@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+DIV#footer-links{
+	background:url(../images/footer/dotted_line.gif) top left no-repeat;
+	position:relative;
+	width:900px;
+	color:#999999;
+	padding-top:20px;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+DIV#footer-links A {
+	color: #999999;
+	text-decoration:none;
+}
+DIV#footer-links A:hover {
+	text-decoration:underline;
+}
+DIV#footer-banners{
+	margin-top:10px;
+	margin-right:35px;
+	padding:10px 10px 10px 0px;
+	background-color:#dddddd;
+}
+DIV#footer-banners DIV.footer-banner{
+	display:inline;
+	float:left;
+	margin-left:10px;	
+}

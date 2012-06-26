@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+this property implements a fix for alpha transparency in PNG for IE6
+The path to the iepngfix.htc file should be absolute
+You must also edit the iepngfix.htc file to change the path to the 
+blank image (currently blankImg = '_template/images/blank.gif';)
+This should also be an absolute path
+*/
+IMG, DIV, TABLE, A, H1, H2, H3, H4 {	
+	BEHAVIOR: url(_template/css/iepngfix.htc);
+}
+
+/** episode guide page **/
+.episode-guide-content TABLE.episode-table{width:99%}
+.episode-guide-content {width:730px;}	/* no ad banner */
+.promo-row .episode-guide-content {width:580px; !important} /* with ad banner */
+
+/* search box */
+DIV#browse SPAN.browse-nav .search-sesame-street{margin:-3px 0px 0px 7px;}
+
+/* Workshop nav */
+DIV#promos DIV.workshopmenu ul a,  BODY.low-bandwidth DIV#promos DIV.workshopmenu ul a{padding-bottom:5px !important;}
+
+
+/* basic row - bordererd at the top to seperate - fixes IE6 margin drop bug */
+DIV.grid-row.ie6margindrop{ margin-top:9px !important; border:1px solid white;}	
+
+/* muppet browse results box margin fix */
+.box.browse-muppets .bt,.box.browse-muppets .bt div{height:30px;}
+
+/* scrolling box inside video browse */
+DIV#browse DIV.list-box TABLE{width:94%;}
+
+
+/* force relative positioning for floats */
+.white-lightgreen-inset{position:relative;}
+img.inline-left{position:relative;}
+.outline-green{position:relative;}
+.image-box{position:relative;}
+
+.float-right {position:relative;}
+.float-left {position:relative;}
+
+/* columns */
+.col2,.col3,.col4,.col5{position:relative;}
+ul.col5 li,ul.col4 li,ul.col3 li,ul.col2 li,ul.col1 li{position:relative;}
+

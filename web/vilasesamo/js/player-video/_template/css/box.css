@@ -1,0 +1,417 @@
+.box { /* inner right */
+	padding:0 12px 0 0;
+	background:url(../images/box/solid_green_border.gif) 100% 0 repeat-y;
+}
+.box.rel{position:relative;}
+.bi { /* inner left */
+	padding:0 0 0 12px;	
+	background:url(../images/box/solid_green_border.gif) 0 0 repeat-y;
+}
+.bt { /* top row / right */	
+	height:17px;
+	margin:0 -12px !important;
+	background:url(../images/box/solid_green_box.gif) 100% 0 no-repeat;
+}
+.bt div { /* top left corner */	
+	width:18px;	/* width of title area (left)*/
+	height:17px;
+	background:url(../images/box/solid_green_box.gif) 0 0 no-repeat;
+}
+.bb { /* bottom row / right  */	
+	height:17px;
+	margin:0 -12px !important;
+	background:url(../images/box/solid_green_box.gif) 100% 100% no-repeat;
+}
+.bb div { /* bottom left corner */
+	width:18px;
+	height:17px;
+	background:url(../images/box/solid_green_box.gif) 0 100% no-repeat;
+}
+
+/* box content */
+.box.nomargin p, .box.nomargin ul {
+	margin:0;
+	padding:4px 0px;
+}
+.box.nomargin li {
+	margin:0 0 0 0;
+	padding:0 !important;
+}
+
+.box { text-align:left } /* stop IE from stuffing up text align when the parent container is aligned */
+ 
+
+/* boxes with tall 30px header row */
+.box-header{}
+.box-header .bt,.box-header .bt div{height:30px}
+
+/* boxes containing striped tables */
+.box-table TD{padding:5px;text-align:left;vertical-align:middle;}
+.box-table TD.image{width:90px;}
+.box-table TD.image img{margin-left:5px;}
+.box-table TR.odd{/*background-color:#ddf4f6;*/}
+.box-table TR.even {background-color:#FFF;}
+
+/** narrow margin boxes **/
+.box-thin{ padding:0 1px 0 0; }
+.box-thin .bi{ padding:0 0 0 1px ; }
+.box-thin .bt{ margin:0 -1px !important; }
+.box-thin .bb{ margin:0 -1px !important;}
+
+.box-thin-border{ padding:0 5px 0 0 ; }
+.box-thin-border .bi{ padding:0 0 0 5px ; }
+.box-thin-border .bt{ margin:0 -5px !important; }
+.box-thin-border .bb{ margin:0 -5px !important;}
+
+/***********************************************************************************************/
+
+/* striped green with green outline */
+.box.striped-green{ background-image:url(../images/box/striped_green_border.gif) !important; }
+.box.striped-green .bi{ background-image:url(../images/box/striped_green_border.gif) !important; }
+.box.striped-green .bt{ background-image:url(../images/box/striped_green_box.gif) !important; }
+.box.striped-green .bt div{ background-image:url(../images/box/striped_green_box.gif) !important; }
+.box.striped-green .bb{ background-image:url(../images/box/striped_green_box.gif) !important; }
+.box.striped-green .bb div{ background-image:url(../images/box/striped_green_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* striped dark green with green outline */
+.box.striped-green-dark{ background-image:url(../images/box/striped_green-dark_border.gif) !important; }
+.box.striped-green-dark .bi{ background-image:url(../images/box/striped_green-dark_border.gif) !important; }
+.box.striped-green-dark .bt{ background-image:url(../images/box/striped_green-dark_box.gif) !important; }
+.box.striped-green-dark .bt div{ background-image:url(../images/box/striped_green-dark_box.gif) !important; }
+.box.striped-green-dark .bb{ background-image:url(../images/box/striped_green-dark_box.gif) !important; }
+.box.striped-green-dark .bb div{ background-image:url(../images/box/striped_green-dark_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white with green outline */
+.box.outline-green{ background-image:url(../images/box/outline_green_border.gif) !important; padding:0 25px 0 0 ;}
+.box.outline-green .bi{ background-image:url(../images/box/outline_green_border.gif) !important; padding:0 0 0 25px ;}
+.box.outline-green .bt{ background-image:url(../images/box/outline_green_box.gif) !important; margin:0 -25px !important;}
+.box.outline-green .bt div{ background-image:url(../images/box/outline_green_box.gif) !important; }
+.box.outline-green .bb{ background-image:url(../images/box/outline_green_box.gif) !important; margin:0 -25px !important;}
+.box.outline-green .bb div{ background-image:url(../images/box/outline_green_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* light green box */
+.box.light-green{ background-image:url(../images/box/solid_light-green_border.gif) !important; }
+.box.light-green .bi{ background-image:url(../images/box/solid_light-green_border.gif) !important; }
+.box.light-green .bt{ background-image:url(../images/box/solid_light-green_box.gif) !important; }
+.box.light-green .bt div{ background-image:url(../images/box/solid_light-green_box.gif) !important; }
+.box.light-green .bb{ background-image:url(../images/box/solid_light-green_box.gif) !important; }
+.box.light-green .bb div{ background-image:url(../images/box/solid_light-green_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* orange box */
+.box.solid-light-orange{ background-image:url(../images/box/solid_light-orange_border.gif) !important; }
+.box.solid-light-orange .bi{ background-image:url(../images/box/solid_light-orange_border.gif) !important; }
+.box.solid-light-orange .bt{ background-image:url(../images/box/solid_light-orange_box.gif) !important; }
+.box.solid-light-orange .bt div{ background-image:url(../images/box/solid_light-orange_box.gif) !important; }
+.box.solid-light-orange .bb{ background-image:url(../images/box/solid_light-orange_box.gif) !important; }
+.box.solid-light-orange .bb div{ background-image:url(../images/box/solid_light-orange_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* blue box */
+.box.solid-blue{ background-image:url(../images/box/solid_blue_border.gif) !important; }
+.box.solid-blue .bi{ background-image:url(../images/box/solid_blue_border.gif) !important; }
+.box.solid-blue .bt{ background-image:url(../images/box/solid_blue_box.gif) !important; }
+.box.solid-blue .bt div{ background-image:url(../images/box/solid_blue_box.gif) !important; }
+.box.solid-blue .bb{ background-image:url(../images/box/solid_blue_box.gif) !important; }
+.box.solid-blue .bb div{ background-image:url(../images/box/solid_blue_box.gif) !important; }
+
+/* transparent green border */
+.box.green-border-transparent{ background-image:url(../images/box/green_border_transparent_border.gif) !important; }
+.box.green-border-transparent .bi{ background-image:url(../images/box/green_border_transparent_border.gif) !important; }
+.box.green-border-transparent .bt{ background-image:url(../images/box/green_border_transparent_box.gif) !important; }
+.box.green-border-transparent .bt div{ background-image:url(../images/box/green_border_transparent_box.gif) !important; }
+.box.green-border-transparent .bb{ background-image:url(../images/box/green_border_transparent_box.gif) !important; }
+.box.green-border-transparent .bb div{ background-image:url(../images/box/green_border_transparent_box.gif) !important; }
+
+/***********************************************************************************************/
+/** DEFINE INSETS BELOW HERE *******************************************************************/
+/***********************************************************************************************/
+
+/* Schedule box (green) */
+.box.schedule-green{ background-image:url(../images/box/schedule_green_border.gif) !important; padding:0 5px 0 0 ; }
+.box.schedule-green .bi{ background-image:url(../images/box/schedule_green_border.gif) !important;	padding:0 0 0 5px ; }
+.box.schedule-green .bt{ background-image:url(../images/box/schedule_green_box.gif) !important; margin:0 -5px !important; }
+.box.schedule-green .bt div{ background-image:url(../images/box/schedule_green_box.gif) !important; }
+.box.schedule-green .bb{ background-image:url(../images/box/schedule_green_box.gif) !important; margin:0 -5px !important;}
+.box.schedule-green .bb div{ background-image:url(../images/box/schedule_green_box.gif) !important; }
+.box.schedule-green .bt div{width:80px;}
+/* embedded table row style */
+.box.schedule-green TR.odd{/*background-color:#ddf4f6;*/}
+.box.schedule-green TR.even {background-color:#e5f7ed;}
+.box.schedule-green TD{vertical-align:middle; padding:12px 5px 12px 0px;}
+.box.schedule-green TD.image{text-align:center;width:60px;}
+
+/***********************************************************************************************/
+/* MyStreet Settings Inset */
+.box.mystreet-settings-inset { background:none;}
+.box.mystreet-settings-inset .it { background:url(../images/box/mystreet_settings_inset_box.gif) 0 0 no-repeat !important;width:706px; height:20px;}
+.box.mystreet-settings-inset .im { background:url(../images/box/mystreet_settings_inset_border.gif) 0 0 repeat-y transparent !important; width:706px;}
+.box.mystreet-settings-inset .ib { background:url(../images/box/mystreet_settings_inset_box.gif) 0 100%  no-repeat !important; width:706px; height:20px;}
+
+/***********************************************************************************************/
+
+/* celebrity - purple box (use header in conjunction) */
+.box.celebrity{ background-image:url(../images/box/celebrity_purple_border.gif) !important; padding:0 1px 0 0 ; }
+.box.celebrity .bi{ background-image:url(../images/box/celebrity_purple_border.gif) !important;	padding:0 0 0 1px ; }
+.box.celebrity .bt{ background-image:url(../images/box/celebrity_purple_box.gif) !important; margin:0 -1px !important; }
+.box.celebrity .bt div{ background-image:url(../images/box/celebrity_purple_box.gif) !important; }
+.box.celebrity .bb{ background-image:url(../images/box/celebrity_purple_box.gif) !important; margin:0 -1px !important;}
+.box.celebrity .bb div{ background-image:url(../images/box/celebrity_purple_box.gif) !important; width:230px; /* allow room for footer link */}
+.box.celebrity .bt div{width:230px;}
+.box.celebrity .bb, .box.celebrity .bb div{height:28px;} 
+/* embedded table row style */
+.box.celebrity TR.odd{/*background-color:#e9e5f9;*/}
+.box.celebrity TR.even {background-color:#d9d2f5;}
+/* footer link */
+.box.celebrity .bb A {display:block;margin:0px 0px -10px 10px;z-index:50000;height:20px;background:url(../images/contentarea/on_air_celebrity_guests_list_bottom_text.gif) top left no-repeat transparent}
+.box.celebrity .bb A span{display:none;}
+
+/***********************************************************************************************/
+
+/* cast - blue box (use header in conjunction) */
+.box.cast{ background-image:url(../images/box/cast_blue_border.gif) !important; padding:0 1px 0 0 ; }
+.box.cast .bi{ background-image:url(../images/box/cast_blue_border.gif) !important;	padding:0 0 0 1px ; }
+.box.cast .bt{ background-image:url(../images/box/cast_blue_box.gif) !important; margin:0 -1px !important; }
+.box.cast .bt div{ background-image:url(../images/box/cast_blue_box.gif) !important; }
+.box.cast .bb{ background-image:url(../images/box/cast_blue_box.gif) !important; margin:0 -1px !important;}
+.box.cast .bb div{ background-image:url(../images/box/cast_blue_box.gif) !important; width:230px; /* allow room for footer link */}
+.box.cast .bt div{width:230px;}
+.box.cast .bb, .box.cast .bb div{height:28px;} 
+/* embedded table row style */
+.box.cast TR.odd{/*background-color:#ddf4f6;*/}
+.box.cast TR.even {background-color:#c3ebf0;}
+/* footer link */
+.box.cast .bb A {display:block;margin:0px 0px -10px 10px;z-index:50000;height:20px;background:url(../images/contentarea/on_air_cast_list_bottom_text.gif) top left no-repeat transparent}
+.box.cast .bb A span{display:none;}
+
+/***********************************************************************************************/
+
+/* characters - orange box (use header in conjunction) */
+.box.characters{ background-image:url(../images/box/characters_orange_border.gif) !important; padding:0 1px 0 0 ; }
+.box.characters .bi{ background-image:url(../images/box/characters_orange_border.gif) !important;	padding:0 0 0 1px ; }
+.box.characters .bt{ background-image:url(../images/box/characters_orange_box.gif) !important; margin:0 -1px !important; }
+.box.characters .bt div{ background-image:url(../images/box/characters_orange_box.gif) !important; }
+.box.characters .bb{ background-image:url(../images/box/characters_orange_box.gif) !important; margin:0 -1px !important;}
+.box.characters .bb div{ background-image:url(../images/box/characters_orange_box.gif) !important; width:230px; /* allow room for footer link */}
+.box.characters .bt div{width:230px;}
+.box.characters .bb, .box.characters .bb div{height:28px;} 
+/* embedded table row style */
+.box.characters TR.odd{/*background-color:#fde7d2;*/}
+.box.characters TR.even {background-color:#fcd5b1;}
+/* footer link */
+.box.characters .bb A {display:block;margin:0px 0px -10px 10px;z-index:50000;height:20px;background:url(../images/contentarea/on_air_characters_list_bottom_text.gif) top left no-repeat transparent}
+.box.characters .bb A span{display:none;}
+
+/***********************************************************************************************/
+
+/* browse videos - orange box (use header in conjunction) */
+.box.browse-videos{ background-image:url(../images/box/browse_videos_orange_border.gif) !important; padding:0 3px 0 0 ;}
+.box.browse-videos .bi{ background-image:url(../images/box/browse_videos_orange_border.gif) !important;	padding:0 0 0 3px ; }
+.box.browse-videos .bt{ background-image:url(../images/box/browse_videos_orange_box.gif) !important; margin:0 -3px !important; }
+.box.browse-videos .bt div{ background-image:url(../images/box/browse_videos_orange_box.gif) !important; }
+.box.browse-videos .bb{ background-image:url(../images/box/browse_videos_orange_box.gif) !important; margin:0 -3px !important;}
+.box.browse-videos .bb div{ background-image:url(../images/box/browse_videos_orange_box.gif) !important;width:98%;/* allow room for footer link */}
+.box.browse-videos .bt div{width:500px;}
+
+.box.browse-videos .bb, .box.browse-videos .bb div{height:60px;} 
+.box.browse-videos.short .bb, .box.browse-videos.short .bb div{height:20px;}
+.box.browse-videos .bt,.box.browse-videos .bt div{height:50px}
+/* embedded table row style */
+.box.browse-videos TR.odd{/*background-color:#ddf4f6;*/}
+.box.browse-videos TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/* search videos - orange box (use header in conjunction) */
+.box.search-videos{ background-image:url(../images/box/search_videos_orange_border.gif) !important; padding:0 3px 0 0 ; }
+.box.search-videos .bi{ background-image:url(../images/box/search_videos_orange_border.gif) !important;	padding:0 0 0 3px ; }
+.box.search-videos .bt{ background-image:url(../images/box/search_videos_orange_box.gif) !important; margin:0 -3px !important; }
+.box.search-videos .bt div{ background-image:url(../images/box/search_videos_orange_box.gif) !important; }
+.box.search-videos .bb{ background-image:url(../images/box/search_videos_orange_box.gif) !important; margin:0 -3px !important;}
+.box.search-videos .bb div{ background-image:url(../images/box/search_videos_orange_box.gif) !important;  width:98%;/* allow room for footer link */}
+.box.search-videos .bt div{width:500px;}
+
+.box.search-videos .bb, .box.search-videos .bb div{height:60px;} 
+.box.search-videos .bt,.box.search-videos .bt div{height:50px}
+/* embedded table row style */
+.box.search-videos TR.odd{/*background-color:#ddf4f6;*/}
+.box.search-videos TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/***********************************************************************************************/
+
+/* browse muppets - red box */
+.box.browse-muppets{ background-image:url(../images/box/muppet_red_border.gif) !important; padding:0 3px 0 0 ;}
+.box.browse-muppets .bi{ background-image:url(../images/box/muppet_red_border.gif) !important;	padding:0 0 0 3px ; }
+.box.browse-muppets .bt{ background-image:url(../images/box/muppet_red_box.gif) !important; margin:0 -3px !important; }
+.box.browse-muppets .bt div{ background-image:url(../images/box/muppet_red_box.gif) !important; }
+.box.browse-muppets .bb{ background-image:url(../images/box/muppet_red_box.gif) !important; margin:0 -3px !important;}
+.box.browse-muppets .bb div{ background-image:url(../images/box/muppet_red_box.gif) !important;width:98%;/* allow room for footer link */}
+.box.browse-muppets .bt div{width:903px;}
+.box.browse-muppets .bt div a{display:block; float:right; padding:15px 0px 0px 0px; color:#FFF; font-weight:bold;} /* back link */
+.box.browse-muppets .bt div span.muppet-title{display:block;padding:15px 0px 0px 15px;}
+
+.box.browse-muppets .bb, .box.browse-muppets .bb div{height:60px;} 
+.box.browse-muppets.short .bb, .box.browse-muppets.short .bb div{height:50px;}
+.box.browse-muppets .bt,.box.browse-muppets .bt div{height:50px}
+/* embedded table row style */
+.box.browse-muppets TR.odd{background-color:#FFF3EC;}
+.box.browse-muppets TR.even {background-color:#FFF3EC;}
+/* footer link */
+
+/***********************************************************************************************/
+
+/* browse games - blue box (use header in conjunction) */
+.box.browse-games{ background-image:url(../images/box/browse_games_blue_border.gif) !important; padding:0 3px 0 0 ; }
+.box.browse-games .bi{ background-image:url(../images/box/browse_games_blue_border.gif) !important;	padding:0 0 0 3px ; }
+.box.browse-games .bt{ background-image:url(../images/box/browse_games_blue_box.gif) !important; margin:0 -3px !important; }
+.box.browse-games .bt div{ background-image:url(../images/box/browse_games_blue_box.gif) !important; }
+.box.browse-games .bb{ background-image:url(../images/box/browse_games_blue_box.gif) !important; margin:0 -3px !important;}
+.box.browse-games .bb div{ background-image:url(../images/box/browse_games_blue_box.gif) !important;  width:98%;/* allow room for footer link */}
+.box.browse-games .bt div{width:500px;}
+
+.box.browse-games .bb, .box.browse-games .bb div{height:60px;} 
+.box.browse-games.short .bb, .box.browse-games.short .bb div{height:20px;}
+.box.browse-games .bt,.box.browse-games .bt div{height:50px}
+/* embedded table row style */
+.box.browse-games TR.odd{/*background-color:#ddf4f6;*/}
+.box.browse-games TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/* search games - blue box (use header in conjunction) */
+.box.search-games{ background-image:url(../images/box/search_games_blue_border.gif) !important; padding:0 3px 0 0 ; }
+.box.search-games .bi{ background-image:url(../images/box/search_games_blue_border.gif) !important;	padding:0 0 0 3px ; }
+.box.search-games .bt{ background-image:url(../images/box/search_games_blue_box.gif) !important; margin:0 -3px !important; }
+.box.search-games .bt div{ background-image:url(../images/box/search_games_blue_box.gif) !important; }
+.box.search-games .bb{ background-image:url(../images/box/search_games_blue_box.gif) !important; margin:0 -3px !important;}
+.box.search-games .bb div{ background-image:url(../images/box/search_games_blue_box.gif) !important;  width:98%;/* allow room for footer link */}
+.box.search-games .bt div{width:500px;}
+
+.box.search-games .bb, .box.search-games .bb div{height:60px;} 
+.box.search-games .bt,.box.search-games .bt div{height:50px}
+/* embedded table row style */
+.box.search-games TR.odd{/*background-color:#ddf4f6;*/}
+.box.search-games TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/***********************************************************************************************/
+
+/* browse playlists - purple box (use header in conjunction) */
+.box.browse-playlists{ background-image:url(../images/box/browse_playlists_purple_border.gif) !important; padding:0 3px 0 0 ; }
+.box.browse-playlists .bi{ background-image:url(../images/box/browse_playlists_purple_border.gif) !important;	padding:0 0 0 3px ; }
+.box.browse-playlists .bt{ background-image:url(../images/box/browse_playlists_purple_box.gif) !important; margin:0 -3px !important; }
+.box.browse-playlists .bt div{ background-image:url(../images/box/browse_playlists_purple_box.gif) !important; }
+.box.browse-playlists .bb{ background-image:url(../images/box/browse_playlists_purple_box.gif) !important; margin:0 -3px !important;}
+.box.browse-playlists .bb div{ background-image:url(../images/box/browse_playlists_purple_box.gif) !important;  width:98%;/* allow room for footer link */}
+.box.browse-playlists .bt div{width:500px;}
+
+.box.browse-playlists .bb, .box.browse-playlists .bb div{height:60px;} 
+.box.browse-playlists.short .bb, .box.browse-playlists.short .bb div{height:20px;} 
+.box.browse-playlists .bt,.box.browse-playlists .bt div{height:50px}
+/* embedded table row style */
+.box.browse-playlists TR.odd{/*background-color:#ddf4f6;*/}
+.box.browse-playlists TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/* search playlists - purple box (use header in conjunction) */
+.box.search-playlists{ background-image:url(../images/box/search_playlists_purple_border.gif) !important; padding:0 3px 0 0 ; }
+.box.search-playlists .bi{ background-image:url(../images/box/search_playlists_purple_border.gif) !important;	padding:0 0 0 3px ; }
+.box.search-playlists .bt{ background-image:url(../images/box/search_playlists_purple_box.gif) !important; margin:0 -3px !important; }
+.box.search-playlists .bt div{ background-image:url(../images/box/search_playlists_purple_box.gif) !important; }
+.box.search-playlists .bb{ background-image:url(../images/box/search_playlists_purple_box.gif) !important; margin:0 -3px !important;}
+.box.search-playlists .bb div{ background-image:url(../images/box/search_playlists_purple_box.gif) !important;  width:98%;/* allow room for footer link */}
+.box.search-playlists .bt div{width:500px;}
+
+.box.search-playlists .bb, .box.search-playlists .bb div{height:60px;} 
+.box.search-playlists .bt,.box.search-playlists .bt div{height:50px}
+/* embedded table row style */
+.box.search-playlists TR.odd{/*background-color:#ddf4f6;*/}
+.box.search-playlists TR.even {background-color:#c3ebf0;}
+/* footer link */
+
+/***********************************************************************************************/
+
+/* browse videos - orange box (use header in conjunction) */
+.box.search-sesame-street-green{ background-image:url(../images/box/search_sesame_street_border.gif) !important; padding:0 3px 0 0 ;}
+.box.search-sesame-street-green .bi{ background-image:url(../images/box/search_sesame_street_border.gif) !important;	padding:0 0 0 3px ; }
+.box.search-sesame-street-green .bt{ background-image:url(../images/box/search_sesame_street_box.gif) !important; margin:0 -3px !important; }
+.box.search-sesame-street-green .bt div{ background-image:url(../images/box/search_sesame_street_box.gif) !important; }
+.box.search-sesame-street-green .bb{ background-image:url(../images/box/search_sesame_street_box.gif) !important; margin:0 -3px !important;}
+.box.search-sesame-street-green .bb div{ background-image:url(../images/box/search_sesame_street_box.gif) !important;width:98%;/* allow room for footer link */}
+.box.search-sesame-street-green .bt div{width:500px;}
+
+.box.search-sesame-street-green .bb, .box.search-sesame-street-green .bb div{height:60px;} 
+.box.search-sesame-street-green .bt,.box.search-sesame-street-green .bt div{height:40px}
+/* footer link */
+
+/***********************************************************************************************/
+/* white on green inset box (Define this last!)*/
+.box.white-green-inset{ background-image:url(../images/box/white_inset_border.gif) !important; }
+.box.white-green-inset .bi{ background-image:url(../images/box/white_inset_border.gif) !important; }
+.box.white-green-inset .bt{ background-image:url(../images/box/white-green_inset_box.gif) !important; }
+.box.white-green-inset .bt div{ background-image:url(../images/box/white-green_inset_box.gif) !important; }
+.box.white-green-inset .bb{ background-image:url(../images/box/white-green_inset_box.gif) !important; }
+.box.white-green-inset .bb div{ background-image:url(../images/box/white-green_inset_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white on lightgreen inset box (Define this last!)*/
+.box.white-lightgreen-inset{ background-image:url(../images/box/white-light-green_inset_border.gif) !important; }
+.box.white-lightgreen-inset .bi{ background-image:url(../images/box/white-light-green_inset_border.gif) !important; }
+.box.white-lightgreen-inset .bt{ background-image:url(../images/box/white-light-green_inset_box.gif) !important; }
+.box.white-lightgreen-inset .bt div{ background-image:url(../images/box/white-light-green_inset_box.gif) !important; }
+.box.white-lightgreen-inset .bb{ background-image:url(../images/box/white-light-green_inset_box.gif) !important; }
+.box.white-lightgreen-inset .bb div{ background-image:url(../images/box/white-light-green_inset_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white on green inset box (Define this last!)*/
+.box.striped-green-inset{ background-image:url(../images/box/striped_green_inset_border.gif) !important; }
+.box.striped-green-inset .bi{ background-image:url(../images/box/striped_green_inset_border.gif) !important; }
+.box.striped-green-inset .bt{ background-image:url(../images/box/striped_green_inset_box.gif) !important; }
+.box.striped-green-inset .bt div{ background-image:url(../images/box/striped_green_inset_box.gif) !important; }
+.box.striped-green-inset .bb{ background-image:url(../images/box/striped_green_inset_box.gif) !important; }
+.box.striped-green-inset .bb div{ background-image:url(../images/box/striped_green_inset_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white on blue inset box (Define this last!)*/
+.box.white-blue-inset{ background-image:url(../images/box/white-blue_inset_border.gif) !important; }
+.box.white-blue-inset .bi{ background-image:url(../images/box/white-blue_inset_border.gif) !important; }
+.box.white-blue-inset .bt{ background-image:url(../images/box/white-blue_inset_box.gif) !important; }
+.box.white-blue-inset .bt div{ background-image:url(../images/box/white-blue_inset_box.gif) !important; }
+.box.white-blue-inset .bb{ background-image:url(../images/box/white-blue_inset_box.gif) !important; }
+.box.white-blue-inset .bb div{ background-image:url(../images/box/white-blue_inset_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white on orange inset box (Define this last!)*/
+.box.white-orange-inset{ background-image:url(../images/box/white-light-orange_inset_border.gif) !important; }
+.box.white-orange-inset .bi{ background-image:url(../images/box/white-light-orange_inset_border.gif) !important; }
+.box.white-orange-inset .bt{ background-image:url(../images/box/white-light-orange_inset_box.gif) !important; }
+.box.white-orange-inset .bt div{ background-image:url(../images/box/white-light-orange_inset_box.gif) !important; }
+.box.white-orange-inset .bb{ background-image:url(../images/box/white-light-orange_inset_box.gif) !important; }
+.box.white-orange-inset .bb div{ background-image:url(../images/box/white-light-orange_inset_box.gif) !important; }
+
+/***********************************************************************************************/
+
+/* white on striped green inset box -- Parents landing page (Define this last!)*/
+.box.striped-green-dark-inset-parenting-topics{ background-image:url(../images/box/parenting-topics_striped_green_inset_border.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bi{ background-image:url(../images/box/parenting-topics_striped_green_inset_border.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bt{ background-image:url(../images/box/parenting-topics_striped_green_inset_box.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bt div{ background-image:url(../images/box/parenting-topics_striped_green_inset_box.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bb{ background-image:url(../images/box/parenting-topics_striped_green_inset_box.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bb div{ background-image:url(../images/box/parenting-topics_striped_green_inset_box.gif) !important; }
+.box.striped-green-dark-inset-parenting-topics .bt div,
+.box.striped-green-dark-inset-parenting-topics .bb div {width:220px;}
+
+
+
+/***********************************************************************************************/

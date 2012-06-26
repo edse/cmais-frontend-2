@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+  <head>
+    <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <link rel="stylesheet" href="../css/geral-portal.css" type="text/css" />    
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../css/ie-only.css" />
+    <![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <title>Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Para os Pais – Vila Sésamo" />
+    <meta name="description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="Vila Sésamo, programa infantil, crianças na televisão, jogos de criança, playlists, muppets, pré-escolar, bel, beto, come come, elmo, ênio, garibaldo, groover, zoe, a alfabetização, os números, contando, resolução de problemas, desenvolvimento emocional" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Para os Pais – Vila Sésamo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Para os Pais – Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://cmais.com.br/frontend.php" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="../images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <!-- scripts -->
+    <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/portal.js"></script>
+    <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>    
+    <!-- /scripts -->
+    
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
+    <script type="text/javascript" src="../js/swfobject.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+     <div id="bgGeral" onclick="fechaBg();" style="display:none;"></div>
+     <div id="modal" style="display:none;">
+      <p class="tit">Enviar para amigo</p>
+      <a href="javascript:void(0);" onclick="fechaBg(); return false;" class="fechar" name="Fechar" title="Fechar">Fechar</a>
+      <div class="divisa"></div>
+      <p>Texto de explicação Nam erat odio, lobortis quis lacinia vel, convallis non mauris. Phasellus vel lectus ligula.</p>
+      <form id="enviar-amigo">
+        <div class="nome">
+          <label for="seunome">Seu nome</label>
+          <input type="text" id="seunome" name="seunome" class="required" />
+         </div>
+         <div class="nome last">
+          <label for="nomeamigo">Nome do seu amigo</label>
+          <input type="text" id="nomeamigo" name="nomeamigo" class="required" />
+        </div>
+        <div class="email">
+          <label for="email">E-mail do seu amigo</label>
+          <input type="text" id="email" name="email" class="required" />
+        </div>
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" style="cursor:pointer" />
+                            
+      </form>
+      <p>The information you provide on this page will be used only to notify the recipient that you are sharing this item with them. <a href="../politica-de-privacidade/" target="_blank">Política de Privacidade »</a></p>
+    </div>
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var validator = $('#enviar-amigo').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            seunome:{
+              required: true,
+              minlength: 2
+            },
+            nomeamigo:{
+              required: true,
+              minlength: 2
+            },
+            email:{
+              required: true,
+              email: true
+            }
+            
+          },
+          messages:{
+            seunome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nomeamigo: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio."            
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      
+      
+      
+    </script>
+    
+    <!-- CAPA SITE -->
+    <div id="capa-site">
+      <!-- CHAMADA -->
+      <!-- /CHAMADA -->
+      
+      <link rel="stylesheet" href="../css/geral.css" type="text/css" />
+      <script type="text/javascript" src="../js/script.js"></script>            
+      <div id="mydiv"></div> 
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        
+        
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina">
+          <!-- CAPA -->
+          <div class="capa grid3 para-os-pais">
+            <ul class="menu-topo">
+              <li class="para-os-pais"><a href="../para-os-pais" title="Para os Pais" name="Para os Pais"></a></li>
+              <li class="natv"><a href="../natv/index.html" title="Na TV" name="Na TV"></a></li>
+              <!--li class="artigos"><a href="../artigos" class="ativo" title="Artigos" name="Artigos"></a></li-->                        
+            </ul>
+            <div class="menu-secoes">
+              <h2><a href="../index.html"><img src="../images/logo.png" /></a></h2>
+              <ul>
+                <li class="jogos"><a href="../jogos/index.html" title="Jogos" name="jogos"></a></li>
+                <li class="videos"><a href="../videos/index.html" title="Vídeos" name="Vídeos"></a></li>
+                <li class="atividades"><a href="../atividades/index.html" title="Atividades" name="Atividades"></a></li>
+                <li class="personagens"><a href="../personagens/index.html" title="Personagens" name="Personagens"></a></li>                            
+              </ul>
+              <div class="barra-menu"></div>
+            </div>
+            <div id="referencia"></div>
+            <div class="navegacao artigo">
+              <a class="home" href="../para-os-pais/">Para os Pais</a><span>»</span>
+              <p>Mostre a seu filho os princípios da criatividade</p>
+            </div>
+            <!-- ESQUERDA -->
+            <div id="esquerda2">
+              <div class="texto">
+                <p class="grd">Mostre a seu filho os princípios da criatividade</p>
+                <div class="info">                  
+                  <a href="JavaScript:window.print();" class="imprimir">Imprimir</a>
+                  <a href="javascript:void(0);" onclick="abreBg(); return false;" class="email">Email</a>
+                </div>
+                <img src="../images/personagens/220x183/thumb-220x183.jpg" alt="teste" />
+                <!--
+                <p></p>
+                <p class="bold"></p> 
+                -->
+                <p>Jovens crianças precisam ter oportunidades para fazer e aprender sobre música e artes a fim de desenvolver sua criatividade, competência e confiança. Seu filho irá prosperar melhor dentro de um ambiente no qual ele possa explorar uma grande variedade de músicas, artes, materiais e instrumentos – especialmente ao lado de um adulto.</p>
+                <p class="bold">Adquirindo habilidades através da música e arte</p>
+                <p>Ao cantar músicas, tocar bateria, dançar com lenços, mesclar cores, dividir o molde de massa de pão ou usar bonecos feitos a mão, crianças irão desenvolver suas habilidades cognitivas, sociais, emocionais e físicas. Música e arte irão ensinar seu filho sobre o mundo e como ele funciona.</p>
+                <p>Nós sabemos:</p>
+                <ul>
+                  <li>Todas as artes suportam linguagem e instrução. Crianças podem construir vocabulário através das letras das músicas, expressar suas ideias através da arte e contar histórias através da encenação.</li>
+                  <li>A música demonstra princípios de matemática e ciências através das variações de ritmo, passos, padrão e tempo.</li>
+                  <li>A arte revela a ciência da luz e cor, causa e efeito, e as propriedades dos materiais, bem como os padrões matemáticos e geométricos.</li>
+                  <li>A dança ajuda as crianças a aprender sobre seu corpo e como eles se movem, além de  princípios básicos como rápido/devagar, alto/baixo, perto/longe, para baixo/para cima.</li>
+                  <li>Resolução de problemas, habilidades sociais, autoexpressão, autoestima, e pequenas e grandes habilidades motoras é o resultado natural de crianças que fazem música e arte.</li>                  
+                </ul>                
+                <p class="bold">Aprendendo tudo sobre música e arte</p>
+                <p>As artes criativas promovem, de forma universal, maneiras para as crianças se comunicarem e celebrarem e é uma rica e recompensante parte da vida. </p>
+                <p>Nós sabemos:</p>
+                <ul>
+                  <li>Crianças nunca são tão novas para experimentar todos os tipos de música, instrumentos e canções de culturas do mundo todo. Aprender sobre todos os tipos de artes e artistas promove uma apreciação de diversas culturas e diferentes tipos e estilos de criação.</li>
+                  <li>Frequentar museus, galerias, shows e concertos, e celebrar a música e arte no dia a dia da vida das crianças, na escola, em casa e na comunidade, ajuda as crianças a desenvolver um amor pela arte que dure para a vida toda e entusiasmo para fazer suas próprias criações artísticas.</li>
+                </ul>
+              </div>    
+                                              
+             
+            </div>
+           
+            <!-- /ESQUERDA -->
+            <!-- DIREITA -->
+            <div id="direita2" class="esq">
+              <p class="grd vejatb">Veja também</p>
+              <ul class="lista-artigos">
+                  <li>
+                   <a href="do-nascimento-ao-ano-1.html" class="thumb" title="Do Nascimento ao Ano 1" name="Do Nascimento ao Ano 1"><img src="../images/para-os-pais/do-nascimento-1-ano.jpg" alt="Do Nascimento ao Ano 1" /></a>
+                   <div class="descricao">
+                    <a href="do-nascimento-ao-ano-1.html" class="tit" name="Do Nascimento ao Ano 1" title="Do Nascimento ao Ano 1">Do Nascimento ao Ano 1</a>
+                    <a href="do-nascimento-ao-ano-1.html" >Veja formas de enriquecer as primeiras experiências de seu filho.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="compreendendo-a-diferenca-do-outro.html" class="thumb" title="Compreendendo a diferença do outro" name="Compreendendo a diferença do outro"><img src="../images/para-os-pais/compreendendo-diferenca-outro.jpg" alt="Compreendendo a diferença do outro" /></a>
+                   <div class="descricao">
+                    <a href="compreendendo-a-diferenca-do-outro.html" class="tit" name="Compreendendo a diferença do outro" title="Compreendendo a diferença do outro">Compreendendo a diferença do outro</a>
+                    <a href="compreendendo-a-diferenca-do-outro.html">Ensine as crianças a apreciar a si mesmo e a respeitar os outros como eles são.</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="crie-musica-e-arte.html" class="thumb" title="Crie Música e Arte " name="Crie Música e Arte "><img src="../images/para-os-pais/crie-musica-e-arte.jpg" alt="Crie Música e Arte" /></a>
+                   <div class="descricao">
+                    <a href="crie-musica-e-arte.html" class="tit" name="Crie Música e Arte" title="Crie Música e Arte">Crie Música e Arte</a>
+                    <a href="crie-musica-e-arte.html">Dê oportunidades para seu filho se expressar como artista!</a>                                     
+                  </div>
+                </li>
+                <li>
+                   <a href="matematica-todos-os-dias.html" class="thumb" title="Matemática todos os dias" name="Matemática todos os dias"><img src="../images/para-os-pais/matematica-todos-dias.jpg" alt="Matemática todos os dias" /></a>
+                   <div class="descricao">
+                    <a href="matematica-todos-os-dias.html" class="tit" name="Matemática todos os dias" title="Matemática todos os dias">Matemática todos os dias</a>
+                    <a href="matematica-todos-os-dias.html">A matemática está em todos os lugares! Veja algumas ideias para explorar a mágica dos números com as crianças.</a>                                     
+                  </div>
+                </li>
+                
+              </ul> 
+             
+            </div>
+            <!-- /DIREITA -->
+            
+            <!-- rodape vila -->
+            <div class="centraliza">           
+              <ul class="rodape-vila">
+                <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>
+                <li><a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+                <li><a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+                <li><a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="last"><a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a></li>
+              </ul>
+            </div>
+            <!-- rodape vila -->
+           
+           
+
+          </div>
+          <!-- /CAPA -->
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+      </div>
+      <!-- /MIOLO -->
+    </div>
+    <!-- / CAPA SITE -->
+    
+        
+  
+  </body>

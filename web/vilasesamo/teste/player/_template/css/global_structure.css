@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* GLOBAL - container structure */
+
+body,html{ margin:0;padding:0;}
+.clear{	clear:both; display:block; }
+
+
+/**
+WRAPPER 
+- master container which holds all page elements
+- full design width, centered on screen
+*/
+DIV#wrapper{
+	position:relative;
+	/*position:absolute;
+	left:50%;
+	margin-left:-484px;*/
+	margin:0 auto;
+	width:968px;
+	
+}
+
+/**
+HEADER
+- master navigation
+*/
+DIV#header{
+	margin-left:25px;
+	height:117px;
+}
+
+/**
+CONTENT
+- site content (different layouts inside here)
+*/
+DIV#content{
+	padding-left:25px;
+}
+
+/* Some stuff breaks frame, though so needs to override the margin */
+DIV#content DIV.fullsize{margin-left:-25px}
+
+DIV#searchbar{
+	margin-top:10px;
+	margin-left:34px;
+	position:relative;
+	height:40px;
+}
+
+/**
+FOOTER
+- global footer (navigation, promos, links etc)
+*/
+DIV#footer{
+	margin-left:34px;
+}

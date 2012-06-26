@@ -1,0 +1,56 @@
+<!--
+video.xml
+This structure will be sent to a singleton video player component.
+It contains a stand-alone video definition
+-->
+<configData>
+	<config>
+		
+	</config>
+	<data>
+		<video>
+		  <id>00100290317</id>
+		  <longDescription><![CDATA[A song about the letter U]]></longDescription>
+		  <description><![CDATA[A song about the letter U]]></description>
+		  <filename><![CDATA[http://172.20.1.79/testes/portal/vilasesamo/flv/mudanca_climatica_global__1310067134.flv]]></filename>
+		  <title><![CDATA[U Song 1]]></title>
+		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
+		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
+		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
+		  <thumbLarge>../_sample_content/thumbnails/t02_full.jpg</thumbLarge>
+
+		  <height>400</height>
+		  <width>300</width>
+		  <codec>ON2.VP6</codec>
+		  <bitRate>409600</bitRate>
+		  <isFavorite>false</isFavorite>
+
+		  <downloadUrl></downloadUrl>
+		  <shareUrl><![CDATA[http://google.com]]></shareUrl>
+		  <directLinkUrl><![CDATA[http://google.com]]></directLinkUrl>
+		  <volume>1</volume>
+		</video>
+		<video>
+		  <id>00100290317</id>
+		  <longDescription><![CDATA[A song about the letter U]]></longDescription>
+		  <description><![CDATA[A song about the letter U]]></description>
+		  <filename><![CDATA[http://172.20.1.79/testes/portal/vilasesamo/flv/mudanca_climatica_global__1310067134.flv]]></filename>
+		  <title><![CDATA[U Song 2]]></title>
+		  <name><![CDATA[SEGMENT_A1001001A07F08A04300H86093.xml]]></name>
+		  <thumbSmall>../_sample_content/thumbnails/t02_sm.jpg</thumbSmall>
+		  <thumbMedium>../_sample_content/thumbnails/t02_med.jpg</thumbMedium>
+		  <thumbLarge>../_sample_content/thumbnails/t02_full.jpg</thumbLarge>
+
+		  <height>400</height>
+		  <width>300</width>
+		  <codec>ON2.VP6</codec>
+		  <bitRate>409600</bitRate>
+		  <isFavorite>false</isFavorite>
+
+		  <downloadUrl></downloadUrl>
+		  <shareUrl><![CDATA[http://google.com]]></shareUrl>
+		  <directLinkUrl><![CDATA[http://google.com]]></directLinkUrl>
+		  <volume>1</volume>
+		</video>
+	</data>
+</configData>

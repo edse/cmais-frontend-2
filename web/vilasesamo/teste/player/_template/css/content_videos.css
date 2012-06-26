@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+DIV.video-background {background:url(../images/videos/video_background.png) top left #FFF;width:918px;height:384px;margin-bottom:10px;}
+DIV.video-player {float:left;display:inline;width:884px;height:358px;margin:13px 10px 10px 17px;}

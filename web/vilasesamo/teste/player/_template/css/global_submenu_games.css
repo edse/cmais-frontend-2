@@ -1,0 +1,27 @@
+/** games-subnav buttons **/ 
+
+DIV#submenu.games { background-image:url(../images/submenu/games/games-subnav-bg.gif); }
+
+DIV#submenu a#games-subnav-home{background-image:url(../images/submenu/games/games_subnav_home.gif); width:64px; }
+DIV#submenu a#games-subnav-home.current{background-image:url(../images/submenu/games/games_subnav_home_c.gif); width:64px; }
+DIV#submenu a#games-subnav-home:hover{background-image:url(../images/submenu/games/games_subnav_home_r.gif); width:64px; }
+
+DIV#submenu a#games-subnav-browse-all{background-image:url(../images/submenu/games/games_subnav_browse_all.gif); width:80px; height:26px;}
+DIV#submenu a#games-subnav-browse-all.current{background-image:url(../images/submenu/games/games_subnav_browse_all_c.gif); width:80px; }
+DIV#submenu a#games-subnav-browse-all:hover{background-image:url(../images/submenu/games/games_subnav_browse_all_r.gif); width:80px; }
+
+DIV#submenu a#games-subnav-by-subject{background-image:url(../images/submenu/games/games_subnav_by_subject.gif); width:81px; height:26px;}
+DIV#submenu a#games-subnav-by-subject.current{background-image:url(../images/submenu/games/games_subnav_by_subject_c.gif); width:81px; }
+DIV#submenu a#games-subnav-by-subject:hover{background-image:url(../images/submenu/games/games_subnav_by_subject_r.gif); width:81px; }
+
+DIV#submenu a#games-subnav-by-theme{background-image:url(../images/submenu/games/games_subnav_by_theme.gif); width:77px; height:26px;}
+DIV#submenu a#games-subnav-by-theme.current{background-image:url(../images/submenu/games/games_subnav_by_theme_c.gif); width:77px; }
+DIV#submenu a#games-subnav-by-theme:hover{background-image:url(../images/submenu/games/games_subnav_by_theme_r.gif); width:77px; }
+
+DIV#submenu a#games-subnav-by-character{background-image:url(../images/submenu/games/games_subnav_by_character.gif); width:92px; height:26px;}
+DIV#submenu a#games-subnav-by-character.current{background-image:url(../images/submenu/games/games_subnav_by_character_c.gif); width:92px; }
+DIV#submenu a#games-subnav-by-character:hover{background-image:url(../images/submenu/games/games_subnav_by_character_r.gif); width:92px; }
+
+DIV#submenu a#games-subnav-art{background-image:url(../images/submenu/games/games_subnav_art.gif); width:45px; height:26px;}
+DIV#submenu a#games-subnav-art.current{background-image:url(../images/submenu/games/games_subnav_art_c.gif); width:45px; }
+DIV#submenu a#games-subnav-art:hover{background-image:url(../images/submenu/games/games_subnav_art_r.gif); width:45px; }

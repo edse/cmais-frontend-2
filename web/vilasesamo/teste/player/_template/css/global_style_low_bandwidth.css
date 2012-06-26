@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+BODY.low-bandwidth H1 {color:#177EDA;}
+
+BODY.low-bandwidth DIV#header{
+	margin-left:35px;
+	height:117px;
+	width:900px;
+	background:url(../images/header/low_bandwidth_background.gif) bottom left repeat-x #FFF;
+}
+
+/* GLOBAL - header and main navigation */
+
+BODY.low-bandwidth DIV#header ul a{display:block;background:none;text-decoration:none;width:115px;height:61px;margin:39px 0px 3px 6px;}
+BODY.low-bandwidth DIV#header ul a#nav-home {margin:0px;width:252px;height:106px;}
+
+/* internal spans */
+BODY.low-bandwidth DIV#header ul a span {  }
+BODY.low-bandwidth DIV#header ul a#nav-home span{ display:none;}	
+BODY.low-bandwidth DIV#header ul a span{display:block;font-size:18px;font-weight:bold;color:#FFF;text-align:center;line-height:20px;text-transform:uppercase;margin-top:21px;}
+BODY.low-bandwidth DIV#header ul a#nav-playlists span{margin-top:11px;}	
+BODY.low-bandwidth DIV#header ul a#nav-loginregister{ margin-top:0;}
+BODY.low-bandwidth DIV#header ul a#nav-loginregister span{ font-size:11px; color:#0066cc; text-transform:none; line-height:normal; font-weight:normal;}
+
+/** nav buttons **/
+BODY.low-bandwidth DIV#header a:hover{border:3px solid #ffe119 !important;}
+BODY.low-bandwidth DIV#header a#nav-home:hover{ border:none !important;}	
+
+BODY.low-bandwidth DIV#header a#nav-home{background:url(../images/header/sesame_logo_low_bandwidth_beta.gif) no-repeat 14px 0px transparent;}
+BODY.low-bandwidth DIV#header a#nav-home:hover{}	
+
+BODY.low-bandwidth DIV#header a#nav-games{background:none #4dbbf3;border:3px solid #35abef;}
+BODY.low-bandwidth DIV#header a#nav-games:hover{background:none #4dbbf3 !important;}
+
+BODY.low-bandwidth DIV#header a#nav-videos{background:none #ffb413;border:3px solid #ff9603;}
+BODY.low-bandwidth DIV#header a#nav-videos:hover{background:none #ffb413 !important;}
+
+BODY.low-bandwidth DIV#header a#nav-playlists{background:none #a555f4;border:3px solid #8831e9;}
+BODY.low-bandwidth DIV#header a#nav-playlists:hover{background:none #a555f4 !important;}
+
+BODY.low-bandwidth DIV#header a#nav-muppets{background:none #f54800;border:3px solid #d72d03;}
+BODY.low-bandwidth DIV#header a#nav-muppets:hover{background:none #f54800 !important;}
+
+BODY.low-bandwidth DIV#header a#nav-mystreet{background:none #fc73b0;border:3px solid #f42a98;}
+BODY.low-bandwidth DIV#header a#nav-mystreet:hover{background:none #fc73b0 !important;}
+
+BODY.low-bandwidth DIV#header a#nav-loginregister:hover {border:none !important;}
+
+/** CONTENT AREA **/
+
+BODY.low-bandwidth DIV#content-area {border:3px solid #28a2ec;background-color:#c7ebfb;width:912px;}
+BODY.low-bandwidth DIV#content-area H3{color:#167eda; font-size:14px; margin-top:0px;}
+BODY.low-bandwidth DIV#content-area DIV.content{margin:14px 20px 14px 20px;min-height:400px;}
+
+BODY.low-bandwidth DIV#content-area.green {border:3px solid #00C060;background-color:#E5FAEE;}
+
+BODY.low-bandwidth DIV#content-area DIV.col5 H2{margin-top:0px;}
+
+BODY.low-bandwidth SPAN.lb-search-count{color:#FF6600; font-size:18px !important; margin-left:20px; margin-top:10px; font-weight:bold; }
+BODY.low-bandwidth SPAN.lb-search-label{ font-size:14px; color:#009A34; padding:0px 5px 5px 20px;font-weight:bold;}
+
+BODY.low-bandwidth DIV#content-area form {margin:0px;}
+
+/* SEARCHBAR CONTAINER */
+BODY.low-bandwidth DIV#searchbar {background:url(../images/header/low_bandwidth_background.gif) bottom left repeat-x #FFF;width:900px;}
+BODY.low-bandwidth DIV#searchbar ul a {text-decoration:none;}
+BODY.low-bandwidth DIV#searchbar ul a span{display:block;font-size:13px;font-weight:bold;color:#FFF;text-align:center;text-transform:uppercase;line-height:22px;}
+
+/* SEARCHBAR NAVIGATION LIST */
+BODY.low-bandwidth DIV#searchbar a#searchbar-parents{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-parents:hover{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-onair{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-onair:hover{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-aboutus{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-aboutus:hover{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-podcast{background:none #4ee972;}
+BODY.low-bandwidth DIV#searchbar a#searchbar-podcast:hover{background:none #4ee972;}
+
+/* search form */
+BODY.low-bandwidth DIV#searchbar li.searchbar-form{	
+	display:inline;
+	float:right;
+	width:206px;
+	margin-right:10px;
+}
+BODY.low-bandwidth DIV#searchbar li.searchbar-form input.search-button{
+	margin-left:8px;
+	font-size:11px;
+	font-weight:bold;
+	width:37px;
+	height:24px;
+}
+
+/** workshop menu **/
+BODY.low-bandwidth DIV#promos DIV.workshopmenu { width:638px;position:relative;float:left; display:inline; }
+BODY.low-bandwidth DIV#promos DIV.workshopmenu ul{margin:0px;padding:0;list-style:none;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu ul li{display:inline;float:left;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu ul a{display:block;background:none;text-decoration:none;border-left:1px solid #096a13;padding:2px 0 2px 0;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu ul a span{display:block;font-size:11px;color:#FFF;text-align:center;}
+
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-insidetheworkshop{background:none #33b04b;width:114px;height:13px;border-left:none;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-initiatives{background:none #33b04b;width:63px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-programs{background:none #33b04b;width:64px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-aroundtheworld{background:none #33b04b;width:103px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-newsandevents{background:none #33b04b;width:81px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-supportus{background:none #33b04b;width:67px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-shop{background:none #33b04b;width:39px;height:13px;}
+BODY.low-bandwidth DIV#promos DIV.workshopmenu a#workshopmenu-fundingpartners{background:none #33b04b;width:100px;height:13px;}
+
+BODY.low-bandwidth DIV#promos DIV.workshopmenu li a:hover{background:none #33b04b!important;}
+
+BODY.low-bandwidth DIV#footer-links{margin-bottom:18px;}
+
+DIV.start-over {font-weight:bold;float:left;width:132px;padding-top:10px;}
+DIV#low-bandwidth-gameplayer {width:610px;margin:0;float:left;background:#FFF; border:1px solid #BBBBBB;}
+DIV#low-bandwidth-gameplayer iframe {padding:25px 100px 20px 100px !important;height:289px;}
+
+DIV.games-suggestion {width:466px;height:auto;padding:0px 0px 0px 132px;}
+DIV.games-suggestion .games-now-playing {color:#0066cc;font-weight:bold;padding:4px 0px 9px 6px;line-height:12px;}
+DIV.games-suggestion .games-now-playing SPAN.now-playing {color:#9f9fa1;}
+DIV.games-suggestion .games-text {width:132px;height:116px;padding:45px 0px 0px 0px;color:#0066cc;font-weight:bold;font-size:20px;float:left;}
+DIV.games-suggestion .games-images {width:332px;height:156px;float:right;}
+DIV.games-suggestion .games-images IMG {border:1px solid #ccc;padding:4px;background-color:#fff;}
+DIV.games-suggestion .games-images-top A {margin-left:16px;padding:0px;}
+DIV.games-suggestion .games-images-top {text-align:right;}
+DIV.games-suggestion .games-images-bottom {text-align:left;padding-top:16px;}
+DIV.games-suggestion .games-images-bottom A {margin-right:16px;padding:0px;}

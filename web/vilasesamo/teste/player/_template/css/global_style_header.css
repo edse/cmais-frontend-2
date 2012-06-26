@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* GLOBAL - header and main navigation */
+
+DIV#header{background:url(../images/header/nav_rounded_right.gif) 898px 0px no-repeat #FFF;}
+DIV#header ul{margin:0;padding:0;list-style:none;}
+DIV#header ul li{display:inline;float:left;}
+DIV#header ul a{display:block;width:126px;height:117px;background:top left no-repeat transparent;}
+DIV#header ul a span{ display:none; }	/* make the default text disappear when we show the image */
+
+/** DEPRECATED: post-login image(s) - see content_mystreet.css for new styles ("user-image-top") **/
+DIV#header .postlogin-images-x1,
+DIV#header .postlogin-images-x2{
+	position:absolute;
+	width:85px;height:55px;
+	top:30px; left:815px;
+}
+DIV#header .postlogin-images-x1 .img1{ position:absolute; top:0;left:17px; }
+
+DIV#header .postlogin-images-x2 .img1{ position:absolute; top:0;left:0; }
+DIV#header .postlogin-images-x2 .img2{ position:absolute; top:6px;left:30px; }
+/** END DEPRECATED STYLES **/
+
+
+
+/** nav buttons **/
+DIV#header a#nav-home{width:268px;background-image:url(../images/header/sesame_logo_beta.gif);}
+DIV#header a#nav-home-highlight{width:268px;background-image:url(../images/header/sesame_logo_beta.gif);}
+DIV#header a#nav-home:hover{}
+
+DIV#header a#nav-games{background-image:url(../images/header/nav_games.gif);}
+DIV#header a#nav-games-highlight{background-image:url(../images/header/nav_games_rb.gif);}
+DIV#header a#nav-games-current{background-image:url(../images/header/nav_games_r.gif);}
+DIV#header a#nav-games-highlight:hover,
+DIV#header a#nav-games-current:hover,
+DIV#header a#nav-games:hover{background-image:url(../images/header/nav_games_ra.gif) !important;}
+
+DIV#header a#nav-videos{background-image:url(../images/header/nav_videos.gif);}
+DIV#header a#nav-videos-highlight{background-image:url(../images/header/nav_videos_rb.gif);}
+DIV#header a#nav-videos-current{background-image:url(../images/header/nav_videos_r.gif);}
+DIV#header a#nav-videos-highlight:hover,
+DIV#header a#nav-videos-current:hover,
+DIV#header a#nav-videos:hover{background-image:url(../images/header/nav_videos_ra.gif) !important;}
+
+DIV#header a#nav-playlists{background-image:url(../images/header/nav_playlists.gif);}
+DIV#header a#nav-playlists-highlight{background-image:url(../images/header/nav_playlists_rb.gif);}
+DIV#header a#nav-playlists-current{background-image:url(../images/header/nav_playlists_r.gif);}
+DIV#header a#nav-playlists-highlight:hover,
+DIV#header a#nav-playlists-current:hover,
+DIV#header a#nav-playlists:hover{background-image:url(../images/header/nav_playlists_ra.gif) !important;}
+
+DIV#header a#nav-mystreet{background-image:url(../images/header/nav_mystreet.gif);}
+DIV#header a#nav-mystreet-highlight{background-image:url(../images/header/nav_mystreet_rb.gif);}
+DIV#header a#nav-mystreet-current{background-image:url(../images/header/nav_mystreet_r.gif);}
+DIV#header a#nav-mystreet.rollover, /* special case - used from postlogin image */
+DIV#header a#nav-mystreet-highlight:hover,
+DIV#header a#nav-mystreet-current:hover,
+DIV#header a#nav-mystreet:hover{background-image:url(../images/header/nav_mystreet_ra.gif) !important;}
+
+DIV#header a#nav-muppets{background-image:url(../images/header/nav_muppets.gif);}
+DIV#header a#nav-muppets-highlight{background-image:url(../images/header/nav_muppets_rb.gif);}
+DIV#header a#nav-muppets-current{background-image:url(../images/header/nav_muppets_r.gif)}
+DIV#header a#nav-muppets:hover{background-image:url(../images/header/nav_muppets_ra.gif);}
+
+/* special case  (appears above main navigation) */
+DIV#header ul a#nav-loginregister{position:absolute;top:0px;left:825px;font-size:9px;float:none;text-decoration:none;height:20px;}
+DIV#header ul a#nav-loginregister:hover{text-decoration:underline;}
+DIV#header a#nav-loginregister span{display:inline;}
+
+
+/* muppet variations */
+DIV#header a.abby{background-image:url(../images/header/nav_muppets_abby.gif) !important;}
+DIV#header a.highlight-abby{background-image:url(../images/header/nav_muppets_abby_rb.gif) !important;}
+DIV#header a.current-abby{background-image:url(../images/header/nav_muppets_abby_r.gif) !important;}
+DIV#header a.current-abby:hover,
+DIV#header a.highlight-abby:hover,
+DIV#header a.abby:hover{background-image:url(../images/header/nav_muppets_abby_ra.gif) !important;}
+
+DIV#header a.bert{background-image:url(../images/header/nav_muppets_bert.gif) !important;}
+DIV#header a.highlight-bert{background-image:url(../images/header/nav_muppets_bert_rb.gif) !important;}
+DIV#header a.current-bert{background-image:url(../images/header/nav_muppets_bert_r.gif) !important;}
+DIV#header a.current-bert:hover,
+DIV#header a.highlight-bert:hover,
+DIV#header a.bert:hover{background-image:url(../images/header/nav_muppets_bert_ra.gif) !important;}
+
+DIV#header a.bigbird{background-image:url(../images/header/nav_muppets_bigbird.gif) !important; }
+DIV#header a.highlight-bigbird{background-image:url(../images/header/nav_muppets_bigbird_rb.gif) !important; }
+DIV#header a.current-bigbird{background-image:url(../images/header/nav_muppets_bigbird_r.gif) !important; }
+DIV#header a.current-bigbird:hover,
+DIV#header a.highlight-bigbird:hover,
+DIV#header a.bigbird:hover{background-image:url(../images/header/nav_muppets_bigbird_ra.gif) !important; }
+
+DIV#header a.cookie{background-image:url(../images/header/nav_muppets_cookie.gif) !important; }
+DIV#header a.highlight-cookie{background-image:url(../images/header/nav_muppets_cookie_rb.gif) !important; }
+DIV#header a.current-cookie{background-image:url(../images/header/nav_muppets_cookie_r.gif) !important; }
+DIV#header a.current-cookie:hover,
+DIV#header a.highlight-cookie:hover,
+DIV#header a.cookie:hover{background-image:url(../images/header/nav_muppets_cookie_ra.gif) !important; }
+
+DIV#header a.count{background-image:url(../images/header/nav_muppets_count.gif) !important; }
+DIV#header a.highlight-count{background-image:url(../images/header/nav_muppets_count_rb.gif) !important; }
+DIV#header a.current-count{background-image:url(../images/header/nav_muppets_count_r.gif) !important; }
+DIV#header a.current-count:hover,
+DIV#header a.highlight-count:hover,
+DIV#header a.count:hover{background-image:url(../images/header/nav_muppets_count_ra.gif) !important; }
+
+DIV#header a.elmo{background-image:url(../images/header/nav_muppets_elmo.gif) !important; }
+DIV#header a.highlight-elmo{background-image:url(../images/header/nav_muppets_elmo_rb.gif) !important; }
+DIV#header a.current-elmo{background-image:url(../images/header/nav_muppets_elmo_r.gif) !important; }
+DIV#header a.current-elmo:hover,
+DIV#header a.highlight-elmo:hover,
+DIV#header a.elmo:hover{background-image:url(../images/header/nav_muppets_elmo_ra.gif) !important; }
+
+DIV#header a.ernie{background-image:url(../images/header/nav_muppets_ernie.gif) !important; }
+DIV#header a.highlight-ernie{background-image:url(../images/header/nav_muppets_ernie_rb.gif) !important; }
+DIV#header a.current-ernie{background-image:url(../images/header/nav_muppets_ernie_r.gif) !important; }
+DIV#header a.current-ernie:hover,
+DIV#header a.highlight-ernie:hover,
+DIV#header a.ernie:hover{background-image:url(../images/header/nav_muppets_ernie_ra.gif) !important; }
+
+DIV#header a.grover{background-image:url(../images/header/nav_muppets_grover.gif) !important; }
+DIV#header a.highlight-grover{background-image:url(../images/header/nav_muppets_grover_rb.gif) !important; }
+DIV#header a.current-grover{background-image:url(../images/header/nav_muppets_grover_r.gif) !important; }
+DIV#header a.current-grover:hover,
+DIV#header a.highlight-grover:hover,
+DIV#header a.grover:hover{background-image:url(../images/header/nav_muppets_grover_ra.gif) !important; }
+
+DIV#header a.rosita{background-image:url(../images/header/nav_muppets_rosita.gif) !important; }
+DIV#header a.highlight-rosita{background-image:url(../images/header/nav_muppets_rosita_rb.gif) !important; }
+DIV#header a.current-rosita{background-image:url(../images/header/nav_muppets_rosita_r.gif) !important; }
+DIV#header a.current-rosita:hover,
+DIV#header a.highlight-rosita:hover,
+DIV#header a.rosita:hover{background-image:url(../images/header/nav_muppets_rosita_ra.gif) !important; }
+
+DIV#header a.oscar{background-image:url(../images/header/nav_muppets_oscar.gif) !important; }
+DIV#header a.highlight-oscar{background-image:url(../images/header/nav_muppets_oscar_rb.gif) !important; }
+DIV#header a.current-oscar{background-image:url(../images/header/nav_muppets_oscar_r.gif) !important; }
+DIV#header a.current-oscar:hover,
+DIV#header a.highlight-oscar:hover,
+DIV#header a.oscar:hover{background-image:url(../images/header/nav_muppets_oscar_ra.gif) !important; }
+
+DIV#header a.telly{background-image:url(../images/header/nav_muppets_telly.gif) !important; }
+DIV#header a.highlight-telly{background-image:url(../images/header/nav_muppets_telly_rb.gif) !important; }
+DIV#header a.current-telly{background-image:url(../images/header/nav_muppets_telly_r.gif) !important; }
+DIV#header a.current-telly:hover,
+DIV#header a.highlight-telly:hover,
+DIV#header a.telly:hover{background-image:url(../images/header/nav_muppets_telly_ra.gif) !important; }
+
+DIV#header a.zoe{background-image:url(../images/header/nav_muppets_zoe.gif) !important; }
+DIV#header a.highlight-zoe{background-image:url(../images/header/nav_muppets_zoe_rb.gif) !important; }
+DIV#header a.current-zoe{background-image:url(../images/header/nav_muppets_zoe_r.gif) !important; }
+DIV#header a.current-zoe:hover,
+DIV#header a.highlight-zoe:hover,
+DIV#header a.zoe:hover{background-image:url(../images/header/nav_muppets_zoe_ra.gif) !important; }
+

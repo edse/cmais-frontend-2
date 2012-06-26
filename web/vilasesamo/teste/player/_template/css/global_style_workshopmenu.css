@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** FOOTER ADS **/
+DIV#promos { border-top:1px solid white; margin-top:-1px;/* margin fix */}
+
+DIV#promos DIV.workshopmenu { width:638px;position:relative;float:left; display:inline; height:20px !important;}
+DIV#promos DIV.workshopmenu ul{margin:0px;padding:0;list-style:none;}
+DIV#promos DIV.workshopmenu ul li{display:inline;float:left;}
+DIV#promos DIV.workshopmenu ul a{display:block;background:top left no-repeat transparent;}
+DIV#promos DIV.workshopmenu ul a span{ display:none; }	/* make the default text disappear when we show the image */
+
+/** small adverts **/
+DIV#promos DIV.promo-small { float:left; margin-left:6px; display:inline; margin-top:20px;}
+
+/** nav buttons **/
+DIV#promos DIV.workshopmenu a#workshopmenu-insidetheworkshop{background-image:url(../images/workshopmenu/btninsidetheworkshop.gif);width:114px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-insidetheworkshop:hover{background-image:url(../images/workshopmenu/btninsidetheworkshop.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-initiatives{background-image:url(../images/workshopmenu/btninitiatives.gif);width:64px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-initiatives:hover{background-image:url(../images/workshopmenu/btninitiatives.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-programs{background-image:url(../images/workshopmenu/btnprograms.gif);width:65px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-programs:hover{background-image:url(../images/workshopmenu/btnprograms.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-aroundtheworld{background-image:url(../images/workshopmenu/btnaroundtheworld.gif);width:104px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-aroundtheworld:hover{background-image:url(../images/workshopmenu/btnaroundtheworld.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-newsandevents{background-image:url(../images/workshopmenu/btnnewsandevents.gif);width:82px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-newsandevents:hover{background-image:url(../images/workshopmenu/btnnewsandevents.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-supportus{background-image:url(../images/workshopmenu/btnsupportus.gif);width:68px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-supportus:hover{background-image:url(../images/workshopmenu/btnsupportus.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-shop{background-image:url(../images/workshopmenu/btnshop.gif);width:40px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-shop:hover{background-image:url(../images/workshopmenu/btnshop.gif);}
+
+DIV#promos DIV.workshopmenu a#workshopmenu-fundingpartners{background-image:url(../images/workshopmenu/btnfundingpartners.gif);width:101px; height:19px;}
+DIV#promos DIV.workshopmenu a#workshopmenu-fundingpartners:hover{background-image:url(../images/workshopmenu/btnfundingpartners.gif);}
+
