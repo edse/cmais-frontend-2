@@ -163,8 +163,13 @@ a:hover { text-decoration:underline; }
 
 #menu-portal-1 #menu-portal{margin: 0 0 0 0; position: relative; width:572px !important;}
 #menu-portal-1 #menu-portal .menu-aberto {left: -105px;border:1px solid #b0b0b0; border-top:none !important;}
-
+#menu-portal-1 #menu-portal .menu-aberto .img  {margin-bottom:5px; display:block; width:285px; height:186px; overflow:hidden;}
 #menu-portal-1 #menu-portal li {float: left;width: auto;}
+
+/* box-agora */
+#menu-portal-1 #menu-portal .box-agora { width:285px; float: left; margin: 0 10px;}
+#menu-portal-1 #menu-portal .box-agora p {clear:both; color: #333;}
+/* /box-agora */
 
 #menu-portal-1 #menu-portal li a.filho{padding:8px 0 0 0;margin:0 4px 0 4px;}
 
@@ -191,8 +196,15 @@ a:hover { text-decoration:underline; }
 
 #menu-portal-1 #menu-portal li a.filho span { right:0px;top:7px;}
 
-#menu-portal-1 #menu-portal .box-vjtambem {width: 232px;}
-#menu-portal-1 #menu-portal .box-vjtambem li{width: 281px;}
+#menu-portal-1 #menu-portal .box-vjtambem {width: 255px;}
+#menu-portal-1 #menu-portal .box-vjtambem li{width: 260px;}
+#menu-portal-1 #menu-portal .box-vjtambem p { font-size:25px; font-weight:bold; margin-left:10px; width:245px; }
+#menu-portal-1 #menu-portal .box-vjtambem a { font-size:14px; float:left; margin:3px 10px; width:245px; line-height:20px; height:auto; }
+
+/** no ar **/
+#menu-portal-1 #menu-portal .ar a { width:292px; } 
+/** no ar **/
+  
 #menu-portal-1 #menu-portal a.filho {color:#000;}
 #menu-portal-1 #menu-portal li.ativo a.filho,
 #menu-portal-1 #menu-portal a.filho:hover {color:#ff6633;background:none !important;}
