@@ -201,9 +201,7 @@ a:hover { text-decoration:underline; }
 #menu-portal-1 #menu-portal .box-vjtambem p { font-size:25px; font-weight:bold; margin-left:10px; width:245px; }
 #menu-portal-1 #menu-portal .box-vjtambem a { font-size:14px; float:left; margin:3px 10px; width:245px; line-height:20px; height:auto; }
 
-/** no ar **/
-#menu-portal-1 #menu-portal .ar a { width:292px; } 
-/** no ar **/
+
   
 #menu-portal-1 #menu-portal a.filho {color:#000;}
 #menu-portal-1 #menu-portal li.ativo a.filho,
