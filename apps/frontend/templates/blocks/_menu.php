@@ -58,7 +58,7 @@
       <!--menu editorias-->
       
       <!-- Busca Portal -->
-      <form class="busca-portal" action="/cmais/busca" method="post">
+      <form class="busca-portal" action="/busca" method="post">
         <input type="hidden" name="site_id" id="site_id" value="<?php if((isset($site)) && (($site->type == "Programa Simples") || ($site->type == "Programa"))) echo $site->getId();?>" />
         <input class="ipt-txt" type="text" name="term" id="term" value="<?php if($_REQUEST['term']) echo $_REQUEST['term']; ?>" />
         <?php if($_REQUEST['filter']): ?>
