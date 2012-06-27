@@ -1,4 +1,4 @@
-body {background:#ffffff;}
+body { background:#ffffff url('/portal/images/bg-tudo3a.jpg') repeat-x; }
 #capa-site {background:none;}
 #capa-site { *margin-top:-48px; }
 #esquerda { /*margin-top:-20px;*/}
