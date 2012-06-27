@@ -206,11 +206,28 @@ class _sectionActions extends sfActions
 					}
 					else {
 						if ($this->section->Site->getSlug() == "m" && $_REQUEST['force'] != "1") {
-							if (in_array($this->section->getSlug(), array("home","home-page","homepage"))) {
+							if ($this->section->getSlug() == "programa") {
+								$siteDesk = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param2'));
+								if ($siteDesk->id > 0) {
+									if ($siteDesk->getSlug() != 'cmais') {
+										header('Location: http://cmais.com.br/'.$siteDesk->getSlug());
+										die();
+									}
+									else {
+										header('Location: http://cmais.com.br/');
+										die();
+									}
+								}
+								else {
+									header('Location: http://cmais.com.br/');
+									die();
+								}
+							}
+							elseif (in_array($this->section->getSlug(), array("home","home-page","homepage"))) {
 								header('Location: http://cmais.com.br');
 								die();
 							}
-							elseif (in_array($this->section->getSlug(), array("programa","grade","aovivo"))) {
+							elseif (in_array($this->section->getSlug(), array("grade","aovivo"))) {
 								header('Location: http://cmais.com.br/'.$this->section->getSlug());
 								die();
 							}
