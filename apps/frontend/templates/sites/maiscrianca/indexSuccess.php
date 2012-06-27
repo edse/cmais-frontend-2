@@ -21,9 +21,9 @@
     <title>Home - +crian&ccedil;a - cmais+ O portal de conteúdo da Cultura</title>
     
     
-    <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1" type="text/css" />
     
-    <link href="/portal/maiscrianca/css/geralCrianca.css" type="text/css" rel="stylesheet">
+    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1" type="text/css" rel="stylesheet">
     
     <!–-[if IE 7]>
     <link rel="stylesheet" href="/portal/maiscrianca/css/ie7.css" type="text/css" />
