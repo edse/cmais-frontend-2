@@ -207,7 +207,7 @@ class _sectionActions extends sfActions
 					else {
 						if ($this->section->Site->getSlug() == "m" && $_REQUEST['force'] != "1") {
 							if ($this->section->getSlug() == "programa") {
-								$siteDesk = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param2'));
+								$siteDesk = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param1'));
 								if ($siteDesk->id > 0) {
 									if ($siteDesk->getSlug() != 'cmais') {
 										header('Location: http://cmais.com.br/'.$siteDesk->getSlug());
