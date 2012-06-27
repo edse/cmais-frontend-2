@@ -79,11 +79,11 @@ hr{
 	visibility: hidden;	
 }
 .contentWrapper{
-	background: url(../images/background-content.jpg) no-repeat center top;
+	background: url(../images/background-content.jpg) no-repeat center 70px;
 	padding-bottom: 0 !important;
 	width: 100%;
 	height: 1623px;
-	margin: auto;
+	margin: 0 auto;
 }
 .contentWrapper .cerca{
 	background: url(../images/cerca.png) repeat-x;
