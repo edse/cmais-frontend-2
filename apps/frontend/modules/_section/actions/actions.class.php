@@ -164,7 +164,7 @@ class _sectionActions extends sfActions
       }
 
 			// controls mobile user redirections
-			if ($request->getHost() != 'm.cmais.com.br') {			
+			//if ($request->getHost() != 'm.cmais.com.br') {			
 				if ($this->section->Site->Program->getChannelId() == 1 || in_array($this->section->Site->getSlug(), array("cmais","m","tvcultura"))) {
 					$from = $request->getParameter('from');
 					if (!isset($_COOKIE['versao_classica']) && $from == 'm')
@@ -231,7 +231,7 @@ class _sectionActions extends sfActions
 						}
 					}
 				}
-			}
+			//}
 			
       // siteSections
       if($this->section->Site->type == "Portal" || $this->section->Site->getSlug() == "m"){
