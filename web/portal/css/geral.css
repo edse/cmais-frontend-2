@@ -143,8 +143,18 @@ a:hover { text-decoration:underline; }
 
 /******** TOPO NOVO 2012 ********/
 /*body {background:#fff url(../images/bg-tudo2.jpg) repeat-x;}*/
-#guia-topo{margin: 0 0 -4px 36px;}
-#topo-cmais{width:970px; height:74px;position:relative; z-index:10000}
+#guia-topo {
+background: ur;
+padding: 0 0 0px 36px;
+margin-bottom: -3px;
+background: url(/portal/images/bg-tudo3a.jpg) repeat-x;
+}
+#topo-cmais {
+width: 970px;
+height: 70px;
+position: relative;
+z-index: 10000;
+}
 #logoCultura{display:block;width:80px; height:77px;float:left; margin:0 0 -7px 0}
 
 #menu-portal-1{width:892px; height:34px;position:absolute;top: 37px;left: 81px;z-index:2000;}
