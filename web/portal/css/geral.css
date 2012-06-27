@@ -446,7 +446,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /******** /BANNER ********/
 
 /******** BARRA-PORTAL ********/
-#barra-portal { width:1012px; height:48px; margin:0 auto; color:#fff;background: url(../images/bg-tudo2.jpg) repeat-x; border:none; }
+#barra-portal { width:1012px; height:48px; margin:0 auto; color:#fff;background: url(../images/bg-tudo3a.jpg) repeat-x; border:none; }
 #barra-portal .curtir { width:245px; float:left; margin-top:20px; height:23px; }
 
 /**** topo geral ****/
@@ -670,7 +670,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 body, html {border:none !important; margin: 0; padding:0; }
 
 /* teste */
-body {background:#fff url(../images/bg-tudo2.jpg) repeat-x;}
+body {background:#fff url(../images/bg-tudo3a.jpg) repeat-x;}
 .topo-geral {background:url(../images/bg-dot-dark.jpg) repeat; position:fixed; top:0; width: 100%; z-index: 2000; border-bottom:2px solid #ff6633; left:0;}
 #capa-site {margin-top:48px !important; }
 #menuFloat { *margin-left:-40px; }
