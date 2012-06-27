@@ -11,7 +11,7 @@ font-style: normal;
 }
 
 
-/*body { background:#fbe9f9 url(../../../images/capaPrograma/penarua/bg.jpg) repeat;}*/
+body { background:#fbe9f9 url(../../../images/capaPrograma/penarua/bg.jpg) repeat;}
 .menu-interna li { background:#ffda33; }
 .menu-interna li.ativo, 
 .menu-interna li:hover { background:#0c55bb; }
