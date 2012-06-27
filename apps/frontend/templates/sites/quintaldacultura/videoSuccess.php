@@ -184,7 +184,6 @@
               </div-->
             </div>
           </div>
-				<?php /*
           <div class="allpages">
             <div class="categorias">
                 <a class="mais" href="/quintaldacultura/videos"><span class="icoBtn"></span><span class="tit">V&iacute;deos -</span></a>
@@ -275,7 +274,6 @@
             
         </div>
         
-        */ ?>
 
                     </div>
           <hr />
