@@ -21,7 +21,7 @@
 
       <!-- banner -->
       <div class="banner">
-
+				<?php /*
         <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
 
         <div class="curtir">
@@ -36,6 +36,7 @@
           </script>
         </div>
         <!-- /publicidade -->
+				 */ ?> 
         <!-- contador--> 
 	    <link rel="Stylesheet" type="text/css" href="http://cmais.com.br/portal/js/contador/style/main.css"></link>
 	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery-1.4.1.js"></script>
