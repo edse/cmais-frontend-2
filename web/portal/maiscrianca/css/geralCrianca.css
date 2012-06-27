@@ -78,7 +78,7 @@ hr{
 	visibility: hidden;	
 }
 .contentWrapper{
-	background: url(../images/background-content.jpg) no-repeat center 70px;
+	background: url(../images/background-content.jpg) no-repeat center 0;
 	padding-bottom: 0 !important;
 	width: 100%;
 	height: 1623px;
