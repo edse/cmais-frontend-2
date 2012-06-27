@@ -11,7 +11,7 @@ font-style: normal;
 }
 
 
-body { background:#fbe9f9 url(../../../images/capaPrograma/penarua/bg.jpg) repeat;}
+/*body { background:#fbe9f9 url(../../../images/capaPrograma/penarua/bg.jpg) repeat;}*/
 .menu-interna li { background:#ffda33; }
 .menu-interna li.ativo, 
 .menu-interna li:hover { background:#0c55bb; }
@@ -31,7 +31,7 @@ body { background:#fbe9f9 url(../../../images/capaPrograma/penarua/bg.jpg) repea
 .home #barra-site {height:141px !important; overflow:hidden; background:none;}
 .home #barra-site .redes {float:right; margin-top:55px;}
 .home #barra-site #horario {margin-top:10px;}
-.home .bg-tudo { background:url(../../../images/capaPrograma/penarua/bg-tudo2.png) center bottom no-repeat; height:920px; margin-bottom:-76px; }
+.home .bg-tudo { background:url(../../../images/capaPrograma/penarua/bg-tudo.png) center bottom no-repeat; height:920px; margin-bottom:-76px; }
 .home .bg-tudo { *height: 970px; }
 .home #miolo {min-height:735px;}
 .home #chamada {margin:10px 0 0 0;}
