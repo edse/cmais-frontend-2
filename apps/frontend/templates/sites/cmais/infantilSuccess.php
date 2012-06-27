@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/portal/images/favicon.ico" type="image/x-icon" />
     <link rel="image_src" href="/portal/images/logoCMAIS.jpg" />
     
-    <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/css/geralCrianca.css" type="text/css" />
 
     

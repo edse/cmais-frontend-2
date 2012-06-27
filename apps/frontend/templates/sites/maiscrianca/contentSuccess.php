@@ -18,8 +18,8 @@
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1" type="text/css" />
-    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
     <script src="/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
     <script src="/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
     <script src="/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>

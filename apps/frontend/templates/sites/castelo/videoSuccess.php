@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />

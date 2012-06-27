@@ -4,8 +4,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><?php echo $site->getTitle() ?> - +crian&ccedil;a - cmais+ O portal de conteúdo da Cultura</title>
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1" type="text/css" />
-    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
     <script src="/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
     <script src="/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
     <script src="/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>

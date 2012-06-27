@@ -17,7 +17,7 @@
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
-    <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/videosQuintal.css" type="text/css" />
         

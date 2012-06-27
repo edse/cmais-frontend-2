@@ -35,7 +35,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
     <!--CSS-->
-    <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/ludovico-show.css" type="text/css" />
     <!--/CSS-->

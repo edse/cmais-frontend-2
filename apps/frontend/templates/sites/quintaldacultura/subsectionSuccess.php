@@ -11,7 +11,7 @@ if(isset($pager)){
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 
-<link rel="stylesheet" href="/portal/css/geral.css" />  
+<link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" />  
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" />  
 <?php if($section->Parent->Parent->getSlug() != ""): ?>
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->Parent->getSlug() ?>.css" type="text/css" />
