@@ -161,6 +161,7 @@
     </div>
     <!-- /TOPO PORTAL -->';*/
 	$return = '
+	<link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
 <div id="guia-topo" align="center">
   <!--topo Cmais-->
   <div id="topo-cmais">
