@@ -48,7 +48,7 @@ class _assetActions extends sfActions
 						}
 					}
 					else {
-						if ($request->getParameter('param1') == "m" && $_REQUEST['force'] != "1") {
+						if ($request->getHost() == 'm.cmais.com.br' && $_REQUEST['force'] != "1") {
 							if ($this->asset->Site->getSlug() != "cmais") {
 								header('Location: http://cmais.com.br/' . $this->asset->Site->getSlug() . '/' . $this->asset->getSlug());
 								die();
