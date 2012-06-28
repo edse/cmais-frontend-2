@@ -255,7 +255,7 @@ a{
 	padding: 0 10px;
 }
 .conteudoWrapper{
-  margin: 0 auto;
+  margin: 3px auto;
   width: 1065px;
 }
 /*topo*/
@@ -2055,7 +2055,7 @@ form p{
 	margin: 0 0 10px 0;
 }
 form input{
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	border: none;
 	color: #6b6b6b;
 	height: 31px;

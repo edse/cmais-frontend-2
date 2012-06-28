@@ -86,7 +86,7 @@ hr{
 	width: 100%;
 	height: 1229px;
 	margin: auto;
-	margin-top:-4px;
+	margin-top:3px;
 	overflow: hidden;
 	/*padding: 0 auto*/;
 }
@@ -120,7 +120,7 @@ hr{
 	background: url(../images/logo-quintal.png) no-repeat;
 	display: block;
 	float: left;
-	margin-right: 10px;
+	margin: 7px 10px 0 0;
 	overflow: hidden;
 	text-indent: -9999px;
 	width: 129px;
