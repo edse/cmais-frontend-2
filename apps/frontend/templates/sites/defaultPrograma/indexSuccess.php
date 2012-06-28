@@ -7,12 +7,11 @@
 <div class="bg-chamada">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 </div>
-
+<div class="bg-site">
+</div>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
-      <div class="bg-site">
-      </div>      
+    <div id="capa-site">      
 
       <!-- BARRA SITE -->
       <div id="barra-site">
