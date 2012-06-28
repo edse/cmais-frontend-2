@@ -154,6 +154,7 @@
  * 
  */
 	$return = '
+		<link rel="stylesheet" href="/portal/css/geral.css?nocache=12345" type="text/css" />
     <link rel="stylesheet" href="/doctorwho/css/geral.css" type="text/css"/>
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css" type="text/css" />
     <link href="css/default.css" rel="stylesheet" type="text/css">
