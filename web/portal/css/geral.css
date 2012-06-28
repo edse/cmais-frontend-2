@@ -572,7 +572,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .m-radio .bg-Cocorico { background:url(../images/bg-radioCocorico.jpg) no-repeat; }
 #menu-portal .m-radio .bg-Ratimbum { background:url(../images/bg-radioRatimbum.jpg) no-repeat; }
 #menu-portal .m-radio .bg-Cocorico,
-#menu-portal .m-radio .bg-Ratimbum { width:945px; height:333px; position:absolute; right:11px; bottom:0; display:block;}
+#menu-portal .m-radio .bg-Ratimbum { width:945px; height:333px; position:absolute; display:block;left:10px}
 #menu-portal .m-radio .abas li { margin:0 0 0 33px; } 
 /** /radio **/
 
