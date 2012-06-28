@@ -81,6 +81,7 @@
               <p class="titTem"><span>6ª Temporada</span></p> 
               <a class="imgTem" href="/doctorwho/sextoano/index.html"><img src="/portal/images/capaPrograma/doctorwho/img-lixo2.jpg" alt="Doctor Who" /></a>
               <a class="txtTem" href="/doctorwho/sextoano/index.html">
+              	<!-- sim, sou eu! -->
                 <!--h3></h3>
                 <p></p-->
               </a>
