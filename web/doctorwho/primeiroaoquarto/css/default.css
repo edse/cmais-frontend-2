@@ -207,3 +207,113 @@ margin: 0px 0px 0px 0px;  }
 padding-left: 20px;
 }
 
+/******** TOPO NOVO 2012 ********/
+/*body {background:#fff url(../images/bg-tudo2.jpg) repeat-x;}*/
+#guia-topo {
+background: ur;
+padding: 0 0 0px 36px;
+margin-bottom: -3px;
+background: url(/portal/images/bg-tudo3a.jpg) repeat-x;
+}
+#topo-cmais {
+width: 970px;
+height: 70px;
+position: relative;
+z-index: 10000;
+}
+#logoCultura{display:block;width:80px; height:77px;float:left; margin:0 0 -7px 0}
+
+#menu-portal-1{width:892px; height:34px;position:absolute;top: 37px;left: 81px;z-index:2000;}
+#menu-portal-1 .fb-like{float:left;}
+#menu-portal-1 .fb-like iframe{margin:6px 0 0 4px;}
+
+#menu-portal-1  #redesnovo{width:207px; height: 32px; float:right;}
+  #redesnovo .redesA{width:24px; height:30px; display:block; float:left;background:url(../images/redes-topo.png) no-repeat;margin:0 0 0 3px;}
+  #redesnovo .redesB{width:17px; height:30px; display:block; float:left;background:url(../images/redes-topo.png) no-repeat;}
+  #redesnovo #controle-remoto{background-position: -5px 0;}
+  #redesnovo #apple{background-position: -26px 0;}
+  #redesnovo #google{background-position: -54px 0;}
+  #redesnovo #instangram{background-position: -83px 0;}
+  #redesnovo #face{background-position: -111px 0;}
+  #redesnovo #twit{background-position: -139px 0;}
+  #redesnovo #youtube{background-position: -167px 0;}
+  #redesnovo #rss{background-position: -195px 0;}
+
+#menu-portal-1 #menu-portal{margin: 0 0 0 0; position: relative; width:572px !important;}
+#menu-portal-1 #menu-portal .menu-aberto {left: -105px;border:1px solid #b0b0b0; border-top:none !important;}
+#menu-portal-1 #menu-portal .menu-aberto .img  {margin-bottom:5px; display:block; width:310px; height:186px; overflow:hidden;}
+#menu-portal-1 #menu-portal li {float: left;width: auto;}
+
+/* box-agora */
+#menu-portal-1 #menu-portal .box-agora { width:310px; float: left; margin: 0 10px;}
+#menu-portal-1 #menu-portal .box-agora p {clear:both; color: #333;}
+/* /box-agora */
+
+#menu-portal-1 #menu-portal li a.filho{padding:8px 0 0 0;margin:0 4px 0 4px;}
+
+#menu-portal-1 #menu-portal li.ativo,
+#menu-portal-1 #menu-portal li:hover{ background:none !important; }
+
+#menu-portal-1 #menu-portal li.m-videos a{width: 52px;color:#000; text-align:center;}
+#menu-portal-1 #menu-portal li.m-videos a:hover{color:#ff6633;background:none; }
+
+#menu-portal-1 #menu-portal li.m-aovivo a{width: 58px; color:#ff6633;margin-left: 3px; }
+#menu-portal-1 #menu-portal li.m-aovivo a:hover{color:#000; background:none;}
+
+#menu-portal-1 #menu-portal li.m-videos a {margin:0 0 0 5px;padding:8px 0 0 0;height:auto;float:right;*float:left;}
+
+#menu-portal-1 #menu-portal li.m-aovivo a {text-align:right;padding:8px 0 0 0;height:auto;width:65px; float:right;*float:left;}
+
+#menu-portal-1 #menu-portal li.m-radio a.filho{width: 75px;}
+
+#menu-portal-1 #menu-portal li.m-tv a.filho{width: 112px;}
+
+#menu-portal-1 #menu-portal li.m-noar a.filho{width: 211px;}
+
+#menu-portal-1 #menu-portal .padrao .lista a { height:auto; font-size:12px; width:190px; padding-left:10px; }
+
+#menu-portal-1 #menu-portal li a.filho span { right:0px;top:7px;}
+
+#menu-portal-1 #menu-portal .box-vjtambem {width: 211px;}
+#menu-portal-1 #menu-portal .box-vjtambem li{width: 214px;}
+#menu-portal-1 #menu-portal .box-vjtambem p { font-size:25px; font-weight:bold; margin-left:10px; width:200px; }
+#menu-portal-1 #menu-portal .box-vjtambem a { font-size:14px; float:left; margin:3px 10px; width:200px; line-height:20px; height:auto; }
+
+  
+#menu-portal-1 #menu-portal a.filho {color:#000;}
+#menu-portal-1 #menu-portal li.ativo a.filho,
+#menu-portal-1 #menu-portal a.filho:hover {color:#ff6633;background:none !important;}
+#menu-portal-1 #menu-portal li.ativo a.filho span{background-position:0 bottom;}
+
+#menu-portal-1 #menu-portal li a.filho:hover span { background-position:0 bottom !important; }
+
+#menu-portal-1 #menu-portal .menu-aberto ul li.neutro{margin: 2px 0 0 0;}
+#menu-portal-1 #menu-portal .menu-aberto .abas li {margin: 0 0 0 62px;}
+#menu-portal-1 #menu-portal .menu-aberto{width:884px;top:32px;z-index: 3000 !important}
+#menu-portal-1 #menu-portal .padrao .lista {width: 214px;margin:0 0 0 0;}
+#menu-portal-1 #menu-portal .padrao .lista li{width:199px;}
+
+#menu-portal-1 #menu-portal .m-radio .menu-aberto ul.abas-menu li{margin:0 0 0 35px;}
+#menu-portal-1 #menu-portal .m-radio .menu-aberto ul.abas-menu li.neutro{margin:2px 0 0 0;}
+
+#menu-portal-1 #menu-portal #radio-rtb,
+#menu-portal-1 #menu-portal #radio-cocorico {height:346px;}
+
+#menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
+#menu-portal-1 #menu-portal .m-radio .bg-Ratimbum { width:883px; height: 333px;}
+
+#menu-portal-2{width:887px; height:32px;position:absolute;left: 81px;z-index:1000}
+#menu-portal-2 h1 a{margin:7px 5px 5px 5px;text-indent:-9999px;width:94px; height:23px; display:block; float:left;background:url(../images/logo-cmais-topo-novo.png) no-repeat;}
+#menu-portal-2 ul.abas{width:572px; float:left;background: none;}
+#menu-portal-2 li{float:left; width:auto; height: auto;}
+
+#menu-portal-2 .abas li{margin-right:20px!important;}
+#menu-portal-2 li a { font:bold 14px arial; color:#fff; text-transform:uppercase;  padding:10px 7px 0 7px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
+
+#menu-portal-2 .busca-portal a { width:220px;}  
+#menu-portal-2 .busca-portal { float:right; margin:6px -4px 0 0;}
+#menu-portal-2 .busca-portal .ipt-txt { width:109px; float:left; height:22px; line-height:25px; font-size:12px; color:#333; padding-left:30px; border:1px solid #c5c5c5; border-right:none; background:#fff url(../images/ico-lupa.png) no-repeat 6px 3px; }
+#menu-portal-2 .busca-portal .ipt-submit { width:67px;padding:3px 0 0 0;float:left; border:none; border-left:none; height:24px; background:#ff6633; color:#fff; font:bold 12px arial; padding-bottom:2px; }
+
+#facebook-cultura{width:113px;height:10px;float:left;}
+/******** /TOPO NOVO 2012 ********/
