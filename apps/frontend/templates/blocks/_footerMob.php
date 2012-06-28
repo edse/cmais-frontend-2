@@ -1,10 +1,16 @@
+	<script>
+		function setCookie(name)
+		{
+			alert(name);
+		}
+	</script>
 	<!--FOOTER-->
 	<div class="footer programas" align="center">
 		
 		<!-- FIO LARANJA -->
 		<div class="fio"></div>
 		<!-- /FIO LARANJA -->
-		<?php
+		<?php /*
 			$url = '';
 			if ($site->getSlug() != 'm') {
 				if (isset($asset))
@@ -26,14 +32,23 @@
 						$url = 'http://cmais.com.br/programas-de-a-z?from=m';
 				}
 			}
-		?>
 		
+		 * 
+		 */?>
+		<?php /*
 		<div class="footerBotoes">
 			<?php if ($url != ''): ?>
 		  <p><a href="<?php echo $url ?>" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <?php else: ?>
 			<p><a href="http://cmais.com.br?from=m" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <?php endif; ?>
+		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
+		</div>
+		 * 
+		 */
+		?>
+		<div class="footerBotoes">
+		  <p><a href="javascript:setCookie('classic');" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
 		</div>
 		

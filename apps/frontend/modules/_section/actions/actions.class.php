@@ -162,7 +162,7 @@ class _sectionActions extends sfActions
             $this->asset = Doctrine::getTable('Asset')->findOneBySlug($request->getParameter('p'));
         }
       }
-
+/*
 			// controls mobile user redirections
 			//if ($request->getHost() != 'm.cmais.com.br') {			
 				if ($this->section->Site->Program->getChannelId() == 1 || in_array($this->section->Site->getSlug(), array("cmais","m","tvcultura"))) {
@@ -252,7 +252,7 @@ class _sectionActions extends sfActions
 					}
 				}
 			//}
-			
+			*/
       // siteSections
       if($this->section->Site->type == "Portal" || $this->section->Site->getSlug() == "m"){
         
