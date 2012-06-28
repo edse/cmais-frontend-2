@@ -153,6 +153,8 @@
  * 
  */
 	$return = '
+		<link rel="stylesheet" href="/portal/css/geral.css?nocache=12345" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="/doctorwho/sextoano/css/style.css" />	
     <link rel="stylesheet" href="/doctorwho/css/geral.css" type="text/css"/>
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css" type="text/css" />
     <link type="text/css" rel="stylesheet" href="/doctorwho/sextoano/css/style.css" />
