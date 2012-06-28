@@ -2,7 +2,7 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {height:100px !important; background:#000!important;}
+.bg-site {height:100px !important; background:#000!important; *top:1px !important;}
 /*#capa-site {margin-top:-52px !important;}
 #capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
