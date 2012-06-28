@@ -16,7 +16,7 @@
 	width: 135px;
 }
 #barra-site #horario p{
-	color: #fff;
+	color: #fff !important;
 }
 #rodape-portal{
     margin-top: -25px!important;

@@ -682,7 +682,7 @@ body, html {border:none !important; margin: 0; padding:0; }
 /* teste */
 body {background:#fff url(../images/bg-tudo3a.jpg) repeat-x;}
 .topo-geral {background:url(../images/bg-dot-dark.jpg) repeat; position:fixed; top:0; width: 100%; z-index: 2000; border-bottom:2px solid #ff6633; left:0;}
-#capa-site {margin-top:48px !important; }
+#capa-site {margin-top:3px !important; }
 #menuFloat { *margin-left:-40px; }
 #capa-site {*top:50px; *position:relative;}
 .topo-geral { height:46px !important; }
