@@ -175,7 +175,8 @@ class _sectionActions extends sfActions
 						if ($request->getHost() != 'm.cmais.com.br') {
 							//if ($request->getParameter('param1')) {
 								if (!isset($_COOKIE['versao_classica']) && $from != 'm') {
-									$siteMob = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param1'));
+									if ($request->getParameter('param1'))
+										$siteMob = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('param1'));
 									if ($siteMob->id > 0) {
 										if ($siteMob->getSlug() != 'cmais') {
 											header('Location: http://m.cmais.com.br/programa/' . $siteMob->getSlug());
