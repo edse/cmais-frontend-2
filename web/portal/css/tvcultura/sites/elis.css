@@ -2,9 +2,9 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {height:100px !important; background:#000!important;}
-/*#capa-site {margin-top:-52px !important;}
-#capa-site {*margin-top:-100px !important;}*/
+.bg-site {height:100px; position:relative; top:3px!important;*top:1px!important; z-index: 0; overflow:hidden; clear:both;}}
+#capa-site {margin-top:-96px !important;}
+/*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
 #barra-site {height:100px; background:#bbe9fa url(/portal/images/capaPrograma/elis/logo.png) no-repeat; margin:0; width:1012px; }
 #barra-site h2 { width: 340px; }
