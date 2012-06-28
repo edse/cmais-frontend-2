@@ -44,12 +44,13 @@ class _siteActions extends sfActions
       		die();
       	}
       }
+			/*
       elseif($this->site->slug == "m"){
         if(!$request->getParameter('test')){
           header("Location: http://cmais.com.br");
           die();
         }
-      }
+      }*/
 			
       
       // title
