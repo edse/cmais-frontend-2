@@ -1,5 +1,5 @@
 /* topo site */
-.bg-site {height:100px; position:relative; top:3px; z-index: 0; overflow:hidden; clear:both;}
+.bg-site {height:100px; position:relative; top:3px;top:1px; z-index: 0; overflow:hidden; clear:both;}
 /*#capa-site {margin-top:-52px !important;}*/
 #capa-site {margin-top:-96px !important;}
 #barra-site {min-height:100px; margin:0; width:1012px; }
