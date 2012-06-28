@@ -2,14 +2,14 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {height:100px; position:relative; top:3px!important;*top:1px!important; z-index: 0; overflow:hidden; clear:both;}}
+.bg-site {height:100px; background:#000;position:relative; top:3px!important;*top:1px!important; z-index: 0; overflow:hidden; clear:both;}}
 #capa-site {margin-top:-96px !important;}
 /*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
 #barra-site {height:100px; background:#bbe9fa url(/portal/images/capaPrograma/elis/logo.png) no-repeat; margin:0; width:1012px; }
 #barra-site h2 { width: 340px; }
 #barra-site h2 a { font-size:25px; color:#fff; text-transform:uppercase; text-indent:-9999px; width: 340px; height:100px; display:block; }
-.bg-site  {_margin-top:-49px !important;}
+.bg-site  {_margin-top:-96px !important;}
 .facebook {padding:0 !important;}
 .bg-chamada {width:100%;  background:#000; position:relative; top:48px; overflow:hidden;}
 #chamada { width:970px; margin:0 auto; float:none; margin-top:20px; margin-bottom:20px;}
