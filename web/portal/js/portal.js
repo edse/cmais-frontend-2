@@ -508,7 +508,10 @@ if ((screen.width * screen.height) / 768 < 1024) // verifica se a resolução da
 		if (mobileVersion != "yes") // verifica se o cookie 'mobile' não está setado para evitar loop infinito
 		{
 			mobileVersion = setCookie('mobile','yes','','/','cmais.com.br');
-  		window.location="http://m.cmais.com.br/";
+			if (mobileVersion == "yes")
+			{
+  			window.location="http://m.cmais.com.br/";
+  		}
   	}
  	}
 }
