@@ -256,6 +256,10 @@ class mainActions extends sfActions
           if(!$param3)
             $this->forwardObject($parm2Object);
           else{
+          	if ($parm1Object->slug = "m") {
+					    $this->getRequest()->setParameter('object', $parm2Object);
+					    $this->forward('_section', 'index');
+          	}
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
