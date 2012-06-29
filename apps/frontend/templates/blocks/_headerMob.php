@@ -74,7 +74,7 @@
     
     <!-- BOTAO AO VIVO -->
     <div class="aovivo" align="center">
-      <a href="<?php echo url_for('homepage') ?>/aovivo" data-transition="slidedown">
+      <a href="<?php echo url_for('homepage') ?>aovivo" data-transition="slidedown">
         <img src="/portal/images/capaPrograma/mob/aovivo.png" width="90%">
       </a>
     </div>  
@@ -231,15 +231,15 @@
       $radioA = strpos($_SERVER["REQUEST_URI"], $pgs[3]);
       $radioB = strpos($_SERVER["REQUEST_URI"], $pgs[4]);
       ?>
-      <a href="<?php echo url_for('homepage') ?>/noticias" class="first <?php if($noticiaA==true ||$noticiaB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+      <a href="<?php echo url_for('homepage') ?>noticias" class="first <?php if($noticiaA==true ||$noticiaB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
         <p>NOTÍCIAS</p>
         <!--img src="/portal/images/capaPrograma/mob/btn-noticias.png"/-->
       </a>
-      <a href="<?php echo url_for('homepage') ?>/programas" class="middle <?php if($programaA==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+      <a href="<?php echo url_for('homepage') ?>programas" class="middle <?php if($programaA==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
          <p>PROGRAMAS</p>
          <!--img src="/portal/images/capaPrograma/mob/btn-programas.png"/-->
       </a>
-      <a href="<?php echo url_for('homepage') ?>/culturabrasil" class="<?php if($radioA==true || $radioB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
+      <a href="<?php echo url_for('homepage') ?>culturabrasil" class="<?php if($radioA==true || $radioB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
          <p>RÁDIO</p>
          <!--img src="/portal/images/capaPrograma/mob/btn-radio.png"/-->
       </a>  
