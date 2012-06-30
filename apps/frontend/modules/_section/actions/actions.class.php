@@ -254,7 +254,7 @@ class _sectionActions extends sfActions
 			//}
 			*/
       // siteSections
-      if($this->section->Site->type == "Portal"){
+      if($this->section->Site->type == "Portal" || $this->section->Site->getSlug() == "m"){
         
         if($this->section->Site->getSlug() == "cmais"){
           $this->siteSections = Doctrine_Query::create()
