@@ -14,6 +14,7 @@
     ->from('Schedule s')
     ->where('s.channel_id = 1')
     ->andWhere('s.date_start >= ?', date('Y-m-d H:i:s'))
+    ->andWhere('is_live = 1')
     ->orderBy('s.date_start asc')
     ->limit(4)
     ->execute();
