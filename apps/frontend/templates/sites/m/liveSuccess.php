@@ -8,7 +8,7 @@
     ->andWhere('s.is_live = 1')
 	  ->orderBy('s.date_start desc')
 		->limit(1)
-		->execute();
+		->fetchOne();
 		
   $schedules = Doctrine_Query::create()
     ->select('s.*')
@@ -94,7 +94,7 @@
 		
 		<!--PROGRAMAS-->
 		<ul>
-			<?php if(count($live) > 0): ?>
+			<?php if($live): ?>
 		  <!--PROGRAMA ITEM-->
 		  <li class="noar degrade">
 			  <a href="<?php echo url_for('homepage') . 'programa/' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
