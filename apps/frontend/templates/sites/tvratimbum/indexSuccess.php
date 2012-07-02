@@ -72,8 +72,10 @@
           <span class="picote"></span>
           <?php include_partial_from_folder('tvratimbum','global/next') ?>
           <span class="picote"></span>
+          <?php /*
           <?php include_partial_from_folder('tvratimbum','global/important') ?>
           <span class="picote"></span>
+					 */ ?>
         </div>
         <hr />
         <div id="radioPlayer">
