@@ -5,6 +5,7 @@
 	  ->from('Schedule s')
 	  ->where('s.channel_id = 1')
 	  ->andWhere('s.date_start <= ? AND s.date_end > ?', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
+    ->andWhere('s.is_live = 1')
 	  ->orderBy('s.date_start desc')
 		->limit(1)
 		->fetchOne();
@@ -14,6 +15,7 @@
     ->from('Schedule s')
     ->where('s.channel_id = 1')
     ->andWhere('s.date_start >= ?', date('Y-m-d H:i:s'))
+    ->andWhere('s.is_live = 1')
     ->orderBy('s.date_start asc')
     ->limit(4)
     ->execute();
@@ -92,7 +94,7 @@
 		
 		<!--PROGRAMAS-->
 		<ul>
-			<?php if(count($live) > 0): ?>
+			<?php if($live): ?>
 		  <!--PROGRAMA ITEM-->
 		  <li class="noar degrade">
 			  <a href="<?php echo url_for('homepage') . 'programa/' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
