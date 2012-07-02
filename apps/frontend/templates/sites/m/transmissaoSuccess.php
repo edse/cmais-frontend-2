@@ -58,7 +58,7 @@
 		<!--/LogoCmais-->
 		
 		<h3>
-			<span class="titulo">Ao vivo</span>
+			<span class="titulo"><?php echo $section->getTitle(); ?></span>
 			<span class="desc"><?php echo $section->getDescription(); ?></span>
 		</h3>
 
