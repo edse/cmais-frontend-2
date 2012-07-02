@@ -46,12 +46,13 @@
               }
             });         
           },
-          rules:{
-           captcha: {
-              required: true
+          rules:{       
+            captcha: {
+             required: true,
+             minlength: 6,
+             remote: "/portal/js/validate/demo/captcha/process.php"
             }
           },
-          
           success: function(label){
             // set &nbsp; as text for IE
             label.html("&nbsp;").addClass("checked");
@@ -196,7 +197,7 @@
                   <div class="linha t4 codigo" id="captchaimage">
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
-                    <a class="img" href="javascript:;" onselectstart="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
                       <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
