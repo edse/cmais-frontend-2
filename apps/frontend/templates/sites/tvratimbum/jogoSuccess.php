@@ -46,7 +46,10 @@
             <div class="personagem-escolhido">
               <div class="logo-destaque">
                 <span></span>
-                <a href="<?php echo $asset->Site->retriveUrl() ?>" title="<?php echo $asset->getTitle()?>"><img alt="<?php echo $asset->getTitle()?>" src="http://midia.cmais.com.br/programs/<?php echo $asset->Site->Program->getImageThumb() ?>" /></a>
+                
+                <a href="<?php if ($asset->Site->Program->getImageThumb()): ?><?php echo $asset->Site->retriveUrl(); ?><?php else: ?>#<?php endif; ?>" title="<?php echo $asset->getTitle()?>">
+                	<img alt="<?php echo $asset->getTitle()?>" src="http://midia.cmais.com.br/programs/<?php echo $asset->Site->Program->getImageThumb() ?>" />
+                </a>
               </div>
               <p><?php echo $asset->getTitle()?></p>
             </div>
