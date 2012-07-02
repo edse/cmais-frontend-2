@@ -257,6 +257,7 @@ a{
 .conteudoWrapper{
   margin: 3px auto;
   width: 1065px;
+  clear:both;
 }
 /*topo*/
 .conteudoWrapper .topo{
