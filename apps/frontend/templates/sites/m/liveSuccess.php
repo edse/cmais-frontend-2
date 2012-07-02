@@ -94,6 +94,44 @@
 		
 		<!--PROGRAMAS-->
 		<ul>
+			<?php if(count($live) > 0): ?>
+		  <!--PROGRAMA ITEM-->
+		  <li class="noar degrade">
+			  <a href="<?php echo url_for('homepage') . 'programa/' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
+				    	
+				<!--PROGRAMA FOTO-->
+				<div class="foto">
+					<img src="<?php echo $live->retriveLiveImage() ?>" alt="<?php echo $live->Program->getTitle() ?>" width="100%">           
+				</div>
+		    <!--/PROGRAMA FOTO-->
+			    
+				<!--PROGRAMA TITULO-->
+				<h3><?php echo $live->Program->getTitle() ?></h3>
+				<!--/PROGRAMA TITULO-->
+				
+				<!--PROGRAMA LINHA ENFEITE-->
+				<div class="linha"></div>
+				<!--/PROGRAMA LINHA ENFEITE-->
+				
+				<!--PROGRAMA DATA - HORA -->
+				<span class="data"><?php echo format_datetime($live->getDateStart(),'dd/MM/yyyy - HH:mm') ?></span>
+				<!--PROGRAMA DATA - HORA-->
+				 
+				<!--PROGRAMA NO AR-->
+				<div class="noar">
+					<span>no ar</span>
+				</div>
+				<!--/PROGRAMA NO AR-->
+				
+				<!--PROGRAMA SETA-->
+				<span class="seta">
+					<img src="/portal/images/capaPrograma/mob/seta-no-ar.png" width="100%">
+				</span>
+				<!--PROGRAMA SETA-->
+			</li>
+			<!--/PROGRAMA ITEM-->
+			<?php endif; ?>
+			
 			<?php if(count($schedules) > 0): ?>
 				<?php foreach($schedules as $k=>$d): ?>
 		  <!--PROGRAMA ITEM-->
