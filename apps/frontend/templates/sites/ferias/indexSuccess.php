@@ -222,14 +222,8 @@
               }
             });         
           },
-          rules:{
-           captcha: {
-              remote: "/portal/js/validate/demo/captcha/process.php"
-            }
-          },
-          messages:{
-            captcha: "Digite corretamente o código que está ao lado."
-          },
+          
+          
           success: function(label){
             // set &nbsp; as text for IE
             label.html("&nbsp;").addClass("checked");
