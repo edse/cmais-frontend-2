@@ -72,7 +72,7 @@ class Display extends BaseDisplay
     }
     elseif($this->Asset->AssetType->getSlug() == "video"){
       if($this->Asset->AssetVideo->getYoutubeId() != ""){
-        if($usage=="image-3")
+        if($usage=="image-3" || $usage=="image-3-b")
           return "http://img.youtube.com/vi/".$this->Asset->AssetVideo->getYoutubeId()."/0.jpg";
         else
           return "http://img.youtube.com/vi/".$this->Asset->AssetVideo->getYoutubeId()."/1.jpg";
