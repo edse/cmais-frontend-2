@@ -67,12 +67,12 @@
 	<script>
 		$(function() {
 			//screen.width * screen.height
-			$("#mpl").attr('width',screen.width);
+			//$("#mpl").attr('width',screen.width);
 		};)
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
-		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="" height="" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">		
+		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">		
 	</div>
 	<!-- /CONTEUDO -->
 		
