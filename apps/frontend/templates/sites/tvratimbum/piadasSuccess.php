@@ -114,7 +114,7 @@
                         window.location.href="#";
                         if(data == "1"){
                           $("#form-contato").clearForm().hide();
-                          $('img#ajax-loader, #enviando').hide();
+                          $('#enviando').hide();
                           $(".caudaBarra,.pontaBarra,.msgAcerto").show();
                         }
                         else {
