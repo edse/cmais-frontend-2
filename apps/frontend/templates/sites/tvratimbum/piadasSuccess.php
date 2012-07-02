@@ -114,7 +114,7 @@
                         if(data == "1"){
                           $("#form-contato").clearForm().hide();
                           $('#enviando').hide();
-                          $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto').show();
+                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
                         }
                         else {
                           $("#form-contato").hide();
