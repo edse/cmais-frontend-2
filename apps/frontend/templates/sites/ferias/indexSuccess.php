@@ -46,7 +46,12 @@
               }
             });         
           },
-          
+          rules:{
+           captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
+          },
           
           success: function(label){
             // set &nbsp; as text for IE
