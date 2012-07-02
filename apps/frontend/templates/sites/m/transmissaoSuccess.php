@@ -67,7 +67,7 @@
 	
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
-		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">		
+		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="100%" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">		
 	</div>
 	<!-- /CONTEUDO -->
 		
