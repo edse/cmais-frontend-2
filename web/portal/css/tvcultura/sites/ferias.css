@@ -1,0 +1,34 @@
+body { background:url(/portal/images/capaPrograma/ferias/todentro-pattern.jpg) repeat top center; }
+
+#barra-site h2 {float: left;margin: 40px 0 0 0;}
+.contato form .linha label { color:#333; }
+.contato form .linha select, 
+.contato form .linha input{border:1px solid #f3b734; border-radius:5px; width: 150px;}
+#barra-site { margin-top:20px 20px 30px 20px;min-height:194px; }
+.contato .titulos {margin-bottom: 15px;color:white;font-size: 18px;}
+.contato .regulamento .titulos {color:#333;}
+.contato form .regulamento { background:#fff; border:1px solid #f3b734; padding:10px; width: 616px; }
+.contato form .regulamento .texto { height:200px; overflow-x: hidden; clear:both; }
+.contato form .regulamento .texto p { margin-bottom:10px; }
+.contato form .regulamento ul li { font-size:14px; margin-left:10px; color:#333; line-height: 20px; }
+.contato form .regulamento ul { margin-bottom:10px; }
+.contato form .concordo{position:relative;}
+.contato form .concordo input { width:14px; position: absolute; top:4px; left:0; }
+.contato form .concordo label { float: left;    margin: 8px 0 0 21px;    width: 312px; }
+
+.contato form .t1{ width: 14px; }
+
+.contato form .t2{ width: 150px; }
+.contato form .t2 .error{ width: 150px; }
+.contato form .t2 input { width:150px; }
+
+.contato form .t3{ width: 490px; }
+.contato form .t3 input { width:480px; }
+
+.contato form .t4,
+.contato form .t4 input,
+.contato form .t4 label{ width:640px; }
+
+.contato .codigo .caracteres {width: 485px}
+
+#rodape-portal {margin-top: -28px;}
