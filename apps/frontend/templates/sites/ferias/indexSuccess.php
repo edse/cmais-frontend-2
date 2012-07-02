@@ -19,7 +19,7 @@
       <script type="text/javascript">
                 
         $(document).ready(function(){
-       
+          $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
           var validator = $('#form-contato').validate({
           submitHandler: function(form){
             $.ajax({
