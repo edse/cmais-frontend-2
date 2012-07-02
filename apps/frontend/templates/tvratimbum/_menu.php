@@ -48,4 +48,26 @@
             </ul>
           </div>
         </div>
-        <img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="A TV que cresce como você!" />
+        <!--img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="A TV que cresce com você!" /-->
+        <div id="destaque-ferias">
+          <ul>
+            <li class="m90">
+              <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
+              <map name="missao" id="missao">
+                <area title="Missão Minuto Rá Tim Bum" alt="Missão Minuto Rá Tim Bum" shape="circle" coords="109,110,99" href="/missao-minuto" />
+              </map>
+            </li>
+            <li class="m22">
+              <img src="/portal/tvratimbum/image/btn-fazdeconta.png" usemap="#fdc"/>
+              <map name="fdc" id="fdc">
+                <area title="Faz de Conta Rá Tim Bum" alt="Faz de Conta Rá Tim Bum" shape="circle" coords="109,110,99" href="/faz-de-conta" />
+              </map>
+            </li>
+            <li class="m80">
+              <img src="/portal/tvratimbum/image/btn-sessaopiada.png" usemap="#piada"/>
+              <map name="piada" id="piada">
+                <area title="Sessão Piada Rá Tim Bum" alt="Sessão Piada Rá Tim Bum" shape="circle" coords="109,110,99" href="/piadas" />
+              </map>
+            </li>
+          </ul>
+        <div> 

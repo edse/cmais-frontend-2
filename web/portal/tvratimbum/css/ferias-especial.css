@@ -1,0 +1,135 @@
+#ferias .colunaMaior{width:960px;}
+#ferias span.picote {background: url(../image/bg-picote.png) repeat-x;border: none;display: block;height: 3px;}
+/*BOX-DESTAQUE*/
+#ferias #box-especial-interna{width:960px;}
+#ferias #box-especial-interna .topo{width:927px}
+
+#ferias #box-especial-interna .tarja-titulo{background: url(../image/bg-SpriteEscolhido.png) repeat-x 0 -204px;float: left;width: 957px;}
+#ferias #box-especial-interna .tarja-titulo p{color: #11B19C ;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 15px;}
+
+#ferias .alca{background: url(../image/img-alca.png) no-repeat;display: block;position: absolute;width: 6px;height: 28px;z-index:2000;}
+#ferias .alca.pos01{top:-19px;left:5px;}
+#ferias .alca.pos02{top:-19px;left:630px;}
+
+#ferias #box-especial-interna #destaque-ferias{width:640px; height:380px;overflow: hidden; border:1px solid #ccc; float: left; }
+
+#ferias #box-especial-interna #destaque-texto-ferias{float:left;width:310px;}
+#ferias #box-especial-interna #destaque-texto-ferias p{color:#6b6b6b; font-size: 14px; padding:12px;}
+/*BOX-DESTAQUE*/
+
+/* CARRROSSEL VIDEOS */
+#ferias #videos-especial{width:640px; float:left;background-color: #fff;position:relative;margin:10px 0 0 0;}
+#ferias #videos-especial .topo{background: url("../image/bg-sprite.png") repeat-x scroll 0 -135px; border: 1px solid #fff; float: left;width: 608px; height: 27px;}
+#ferias #videos-especial .topo p{color:white;float: left;font-size: 20px;margin: 4px 0 0 10px;text-transform: uppercase;}
+#ferias #videos-especial .topo-esq{background: url("../image/btn_videos.jpg") no-repeat; border: 1px solid #fff;  display: block;  float: left; width: 28px; height: 27px;}
+#ferias #videos-especial .carrossel{width:640px; height:190px;margin:0; position:relative;float:left}
+#ferias #videos-especial .carrossel img{border:2px solid #fff}
+#ferias #videos-especial .carrossel a:hover img{border:2px solid #067af6;}
+#ferias #videos-especial .carrossel a:hover span,
+#ferias #videos-especial .carrossel a:hover p{color:#067af6 !important;text-decoration:none !important;}
+#ferias #videos-especial .carrossel ul li span{float: left;width: 148px;}
+#ferias #videos-especial .carrossel ul li p{width: 148px;}
+#ferias #videos-especial .carrossel #seta-esquerda{background:url("../image/bg-sprite.png") repeat-x scroll 0 -351px;position:absolute;top:30px; left:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel #seta-direita{background:url("../image/bg-sprite.png") repeat-x scroll 0 -351px;position:absolute;top:30px; right:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel .sombra{width:17px;height:11px;position:absolute;z-index:800}
+#ferias #videos-especial .carrossel .sombra-esquerda{background:url("../image/sombrinha-btn-nav.png") repeat-x 0px 0px;top:65px; left:0px;}
+#ferias #videos-especial .carrossel .sombra-direita{background:url("../image/sombrinha-btn-nav.png") repeat-x -16px 0px;top:65px; right:-3px;} 
+#ferias #videos-especial .carrossel .jcarousel-prev{background:url(../image/btns_navegacao.png) no-repeat -58px -52px;position:absolute;top:30px; left:-3px;z-index:1000; width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel .jcarousel-next{background:url(../image/btns_navegacao.png) no-repeat -78px -52px;position:absolute;top:30px; right:-3px;z-index:1000; width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel .jcarousel-clip {width: 610px;margin: 0 16px;}
+#ferias #videos-especial .carrossel .jcarousel-list{min-width: 640px !important;left: 0px;height: 174px !important;}
+#ferias #videos-especial .carrossel .jcarousel-item {width: 151px;height: 181px;margin:1px;}
+#ferias #videos-especial .carrossel .jcarousel-item a img{width:146px; height:90px; float:left;}
+#ferias #videos-especial .carrossel .jcarousel-item a p {margin:5px 0 0 0;overflow:hidden; height:64px;float:left;color:#6b6b6b;}
+#ferias #videos-especial .carrossel .picote{width:100%;position:absolute;bottom:0; z-index:3000;} 
+/* /CARRROSSEL VIDEOS */
+
+/* CONCURSO PIADA */
+#ferias #cantinho-da-piada{float:right;width:290px;background:white; margin:10px 0 0 0;}
+#ferias #cantinho-da-piada .topo {background: url("../image/bg-sprite.png") repeat-x scroll 0 -216px;border: 1px solid white;float: left;width: 258px;height: 27px;}
+#ferias #cantinho-da-piada .topo a.enunciado {color:white;float: left;font-size: 20px;margin: 1px 0 0 10px;text-transform: uppercase;}
+#ferias #cantinho-da-piada .topo-esq {background: url("../image/btn_especial.jpg") no-repeat;border: 1px solid white;display: block;float: left;width: 28px;height: 27px;}
+#ferias #cantinho-da-piada .carrossel-piada {margin: 30px 0 0 0;width:290px;}
+#ferias #cantinho-da-piada .carrossel-piada p{padding:10px; font-size:14px;}
+#ferias #cantinho-da-piada .carrossel-piada #assinatura-piada p{font-weight:bold; text-align: right;}
+#ferias #cantinho-da-piada .carrossel-piada .jcarousel-item {width: 290px;height:auto;}
+
+
+#ferias #form-piada{width:640px; float:left;background-color: #fff;position:relative;margin:10px 0 0 0;padding: 20px 0 0 0;}
+#ferias #form-piada .contato form{padding: 20px 20px;}
+#ferias #form-piada .contato .t3{width:598px;}
+#ferias #form-piada .contato form textarea,
+#ferias #form-piada .contato form .t3 input {width: 594px;border-radius:8px;background: #f0f3f3;border: 1px solid #dddfe0;padding-left: 2px;color: #6b6b6b;}
+#ferias #form-piada .contato form .t1{width: 528px;}
+#ferias #form-piada .contato form .t1 label,
+#ferias #form-piada .contato form .t1 input{width: 523px;}
+#ferias #form-piada .picote{bottom: 0;position: absolute;width: 637px;}
+#ferias #form-piada span.titulo{color: #11b19c; margin:20px 20px 25px 20px !important;}
+#ferias #form-piada label{color: #6b6b6b;}
+#ferias #form-piada span.titulo,
+#ferias #form-piada label{font-size:15px; font-weight:bold;} 
+#ferias #form-piada .contato form .linha select, 
+#ferias #form-piada .contato form .linha input{border-radius:8px;height: 20px;line-height: 20px;background: #f0f3f3;border: 1px solid #dddfe0;padding-left: 2px;color: #6b6b6b;}
+#ferias #form-piada .contato form textarea{height:120px;}
+#ferias #form-piada .contato form .regulamento{width: 587px;border-radius: 8px;background-color:#F0F3F3;}
+
+#ferias #paginador-tv-ra-tim-bum{position:relative;width:100%;height:28px;background-color:#dddfe0;padding: 4px 0 0 0; }
+#ferias #paginador-tv-ra-tim-bum .btn{display:block;width:13px;height:20px;background: url(../image/btns_navegacao.png)}
+#ferias #paginador-tv-ra-tim-bum .btn.anterior{position:absolute;top:6px;left:8px;background-position: -65px -31px;}
+#ferias #paginador-tv-ra-tim-bum .btn.proxima{position:absolute;top:6px;right:8px;background-position: -85px -31px;}
+#ferias #paginador-tv-ra-tim-bum p{float:left;line-height:27px;text-align: center;width:100%;margin: 0 !important; padding: 0 !important;}
+#ferias #paginador-tv-ra-tim-bum .picote.cima{position:absolute;top: 0; width:100%}
+#ferias #paginador-tv-ra-tim-bum .picote.baixo{position:absolute;bottom: 0; width:100%}
+
+#ferias .contato form .declaracao{position:absolute; top:-1px; left:25px;}
+#ferias .contato form .t5{position:relative;}
+#ferias .contato form #regulamento {width:20px;float:left;}
+#ferias .contato form .regulamento {border: 1px solid #BFBFBF;height: 193px;overflow-y: scroll;width: 638px;padding: 5px;margin-right: 0;}
+#ferias .contato form .btn-barra{background-color:#DDDFE0;height: 23px;float: left;width: 100%;}
+#ferias .contato form .btn-barra input#enviar{width: 548px !important;height: 21px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%}
+#ferias .contato form .estado.error{border:1px solid red !important;}
+form label.error{display:block !important;}
+#form-contato label.error {background-color: #F5D6CC;color:#863F27 !important;display: none;font-size: 12px !important;margin-top: 4px;width: 100%;text-align: center;font-weight: lighter !important;}
+#ferias .msgAcerto p,
+#ferias .msgErro p{font-size: 24px;line-height: 32px;text-align: center;font-weight: bold;padding: 104px 0 200px 0;color:#11b19c;}
+#ferias .msgAcerto,
+#ferias .msgErro{background: #FFF;width:100%; margin:0;}
+#ferias .msgAcerto .btn-barra a,
+#ferias .msgErro .btn-barra a{width:588px !important;}
+/*/CONCURSO PIADA */
+
+/* MISSAO-MINUTO */
+#ferias #banner-especial{width:350px;height:250px;border:1px solid red;}
+
+#ferias .coluna-640{width:640px; height:auto; float:left;margin:20px 0 0 0;}
+#ferias .coluna-640 #videos-especial{margin:10px 0 20px 0;}
+#ferias .coluna-640 #box-imagens{float:left; margin: 0 0 0 20px}
+#ferias .coluna-640 #box-imagens .veja{display: none;}
+#ferias .coluna-640 #box-jogos{float:left}
+#ferias .coluna-640 #box-jogos .veja{display: none;}
+#ferias .coluna-300{float:right;width:300px;margin:20px 0 0 0;}
+/* /MISSAO-MINUTO */
+
+/* BANNER */
+#banner-rtb-300{width:300px;height: auto;}
+#banner-rtb-300 .topo-banner{width:100%;height:16px !important;background:url(../image/borda-banner.png);}
+#banner-rtb-300 .rodape-banner{width:100%;height:16px !important;background:url(../image/borda-banner-baixo.png)}
+#banner-rtb-300 #banner{width:300px;height:250px;}
+/* /BANNER */
+
+/* FAZ-DE-CONTA */
+#ferias .coluna-640 #especial-baixar{width:640px;background-color:#fff;display: block; margin:20px 0 0 0;float:left;}
+#ferias .coluna-640 #especial-baixar .topo {background: url("../image/bg-sprite.png") repeat-x scroll 0 -270px;border: 1px solid white;float: left;width: 607px;height: 27px;}
+#ferias .coluna-640 #especial-baixar .topo p {color:white;float: left;font-size: 20px;margin: 1px 0 0 10px;text-transform: uppercase;}
+#ferias .coluna-640 #especial-baixar .topo-esq {background: url(../image/btn_baixar.jpg) no-repeat;border: 1px solid white;display: block;float: left;width: 28px;height: 27px;}
+#ferias .coluna-640 #especial-baixar .picote{float: left;width: 100%;}
+
+#ferias .coluna-640 #especial-baixar .conteudo-baixar .imagem{margin:0 20px 0 0px;width:310px; height:190px; overflow: hidden;border:1px solid #ccc;float:left;}
+#ferias .coluna-640 #especial-baixar .conteudo-baixar span.titulo{width:306px;float:left;color:#F42198;font-size: 16px;font-weight: bold;padding:10px 0px;}
+#ferias .coluna-640 #especial-baixar .conteudo-baixar p{color:#6B6B6B!important;font-size: 14px;line-height: 18px; margin: 0 10px 30px 16px}
+
+#ferias .btn-barra {float: left;width: 100%;}
+#ferias .coluna-640 #especial-baixar .conteudo-baixar .btn-barra a{width: 590px !important;}
+#ferias .btn-barra .caudaBarra{float: right !important;}
+
+/* FAZ-DE-CONTA */
