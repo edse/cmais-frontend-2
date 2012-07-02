@@ -113,8 +113,8 @@
                         window.location.href="#";
                         if(data == "1"){
                           $("#form-contato").clearForm().hide();
-                          $('img#ajax-loader, #enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
+                          $('#enviando').hide();
+                          $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto').show();
                         }
                         else {
                           $("#form-contato").hide();
