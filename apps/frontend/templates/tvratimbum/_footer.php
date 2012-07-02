@@ -12,7 +12,7 @@
           <li><a href="/especial">Especial</a></li>
           <li><a href="http://cmais.com.br/paraospais"><span>Exclusivo para os pais</span></a></li>
           <li><a href="http://tvcultura.com.br"><span class="logotv"></span>TV Cultura</a></li>
-          <li class="last"><a href="http://tvratimbum.com.br"><span class="logotvRa"></span>TV R&aacute; Tim Bum</a></li>
+          <li class="last"><a href="http://tvratimbum.com.br"><span class="logotvRa"></span>TV R&aacute; Tim Bum!</a></li>
         </ul>
         <span class="caudaBarra"></span>
         <div class="copyright">
