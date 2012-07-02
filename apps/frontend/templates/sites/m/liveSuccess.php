@@ -82,7 +82,7 @@
 		<!--/LogoCmais-->
 		
 		<h3>
-			<span class="titulo">Próximos programas ao vivo</span>
+			<span class="titulo"><?php echo $section->getTitle(); ?></span>
 			<span class="desc"><?php echo $section->getDescription(); ?></span>
 		</h3>
 
@@ -97,7 +97,7 @@
 			<?php if($live): ?>
 		  <!--PROGRAMA ITEM-->
 		  <li class="noar degrade">
-			  <a href="<?php echo url_for('homepage') . 'programa/' . $live->Program->Site->getSlug() ?>" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
+			  <a href="/transmissao" title="<?php echo $live->Program->getTitle() ?>" class="aovivo"  data-transition="slide" rel="external"></a>
 				    	
 				<!--PROGRAMA FOTO-->
 				<div class="foto">
