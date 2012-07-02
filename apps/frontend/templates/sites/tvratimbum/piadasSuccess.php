@@ -114,12 +114,12 @@
                         if(data == "1"){
                           $("#form-contato").clearForm().hide();
                           $('img#ajax-loader, #enviando').hide();
-                          $(".msgAcerto").show();
+                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
                         }
                         else {
                           $("#form-contato").hide();
                           $('img#ajax-loader, #enviando').hide();
-                          $(".msgErro").show();
+                          $(".caudaBarra,.pontaBarra,.msgErro").show();
                         }
                       }
                     });         
