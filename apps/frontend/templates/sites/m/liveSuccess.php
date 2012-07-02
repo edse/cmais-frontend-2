@@ -8,7 +8,7 @@
     ->andWhere('s.is_live = 1')
 	  ->orderBy('s.date_start desc')
 		->limit(1)
-		->fetchOne();
+		->execute();
 		
   $schedules = Doctrine_Query::create()
     ->select('s.*')
