@@ -224,7 +224,6 @@
           },
           rules:{
            captcha: {
-              required: true,
               remote: "/portal/js/validate/demo/captcha/process.php"
             }
           },
