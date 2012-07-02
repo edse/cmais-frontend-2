@@ -171,7 +171,7 @@
  * 
  */
 	$return = '
-        
+    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>    
 		<link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css" type="text/css" />
     <link href="css/default.css" rel="stylesheet" type="text/css" />
