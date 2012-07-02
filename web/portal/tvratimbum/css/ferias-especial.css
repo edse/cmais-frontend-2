@@ -104,6 +104,8 @@ form label.error{display:block !important;}
 #ferias .coluna-640{width:640px; height:auto; float:left;margin:20px 0 0 0;}
 #ferias .coluna-640 #videos-especial{margin:10px 0 20px 0;}
 #ferias .coluna-640 #box-imagens{float:left; margin: 0 0 0 20px}
+#ferias .coluna-640 #box-jogos .tudo .box-carrocel {float:left;}
+#ferias .coluna-640 #box-imagens .tudo .box-carrocel {float:left;}
 #ferias .coluna-640 #box-imagens .veja{display: none;}
 #ferias .coluna-640 #box-jogos{float:left}
 #ferias .coluna-640 #box-jogos .veja{display: none;}

@@ -152,9 +152,13 @@
             <!--MSG ACERTO-->
             <div class="msgAcerto" style="display:none">
               <p>
-                Sua piada foi enviada com sucesso<br/>
-                e em breve será publicada aqui no<br/>
-                cantinho de piadas!
+                Sua piada foi recebida com sucesso!<br/><br/>
+                O conteúdo será avaliado pela equipe<br/>
+                responsável e as selecionadas<br/>
+                serão publicadas.<br/><br/>
+                
+                Obrigado pela participação,<br/>
+                TV Rá Tim Bum!
               </p>
               <div class="btn-barra">
                 <span class="pontaBarra"></span>
