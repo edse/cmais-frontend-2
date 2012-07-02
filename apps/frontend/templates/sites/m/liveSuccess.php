@@ -82,7 +82,7 @@
 		<!--/LogoCmais-->
 		
 		<h3>
-			<span class="titulo">Programas ao vivo</span>
+			<span class="titulo">Próximos programas ao vivo</span>
 			<span class="desc"><?php echo $section->getDescription(); ?></span>
 		</h3>
 
