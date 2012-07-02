@@ -5,17 +5,15 @@
 	  ->from('Schedule s')
 	  ->where('s.channel_id = 1')
 	  ->andWhere('s.date_start <= ? AND s.date_end > ?', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
-    ->andWhere('s.is_live = 1')
 	  ->orderBy('s.date_start desc')
 		->limit(1)
-		->execute();
+		->fetchOne();
 		
   $schedules = Doctrine_Query::create()
     ->select('s.*')
     ->from('Schedule s')
     ->where('s.channel_id = 1')
     ->andWhere('s.date_start >= ?', date('Y-m-d H:i:s'))
-    ->andWhere('s.is_live = 1')
     ->orderBy('s.date_start asc')
     ->limit(4)
     ->execute();
