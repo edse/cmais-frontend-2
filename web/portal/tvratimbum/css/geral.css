@@ -573,6 +573,7 @@ a{
 .conteudoWrapper .conteudo{
   float: left;
   margin: 10px 0 0 45px;
+  width: 990px;
 }
 .conteudoWrapper .internas{
   margin: 35px 0 0 55px;
