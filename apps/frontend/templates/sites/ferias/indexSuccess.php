@@ -14,6 +14,47 @@
     <!-- CAPA SITE -->
     <div id="capa-site">
 
+      <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+      <script type="text/javascript" src="/portal/js/portal.js"></script>
+      <script type="text/javascript">
+                
+        $(document).ready(function(){
+       
+          var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').hide();
+                $(".msgAcerto, .msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').show;
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          
+          
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+      </script>
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
@@ -190,44 +231,4 @@
     </div>
     <!-- / CAPA SITE -->
     <img src="/portal/images/capaPrograma/ferias/todentro-img.jpg"  alt="Férias na Cultura - Tô Dentro "/>
-    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-     <script type="text/javascript" src="/portal/js/portal.js"></script>
-    <script type="text/javascript">
-              
-      $(document).ready(function(){
-     
-        var validator = $('#form-contato').validate({
-          submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-              beforeSend: function(){
-                $('input#enviar').hide();
-                $(".msgAcerto, .msgErro").hide();
-                $('img#ajax-loader').show();
-              },
-              success: function(data){
-              $('input#enviar').show;
-                window.location.href="#";
-                if(data == "1"){
-                  $("#form-contato").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });         
-          },
-          
-          
-          success: function(label){
-            // set &nbsp; as text for IE
-            label.html("&nbsp;").addClass("checked");
-          }
-        });
-      });
-    </script>
+    
