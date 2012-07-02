@@ -51,7 +51,7 @@
                 	<img alt="<?php echo $asset->getTitle()?>" src="http://midia.cmais.com.br/programs/<?php echo $asset->Site->Program->getImageThumb() ?>" />
                 </a>
                 <?php else: ?>
-                <a href="javascript:back()" title="<?php echo $asset->getTitle()?>">
+                <a href="javascript:history.back()" title="<?php echo $asset->getTitle()?>">
                 	<img alt="<?php echo $asset->getTitle()?>" src="http://midia.cmais.com.br/programs/<?php echo $asset->Site->getImageThumb() ?>" />
                 </a>
                 <?php endif; ?>
