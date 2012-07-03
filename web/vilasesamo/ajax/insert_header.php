@@ -1,5 +1,5 @@
 <?php
-
+/*
     $return = '
         
     <!-- TOPO PORTAL -->
@@ -159,8 +159,8 @@
       <!-- /Barra Portal -->
 
     </div>
-    <!-- /TOPO PORTAL -->';
-	/*$return = '
+    <!-- /TOPO PORTAL -->';*/
+	$return = '
 	<link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
 <div id="guia-topo" align="center">
   <!--topo Cmais-->
@@ -334,7 +334,7 @@
       
   </div>
   <!--/topo Cmais-->
-</div>'; */  
+</div>';   
 	echo $return;
 	die();
 ?>
