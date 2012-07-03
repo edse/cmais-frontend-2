@@ -30,25 +30,8 @@
   </script>
   <!--/GOOGLE ANALYTICS-->
   <script>
-  var ts = null;
-  var te = null;
-
-  $(function(){
-    //carrossel
-    $('.carrossel').jcarousel({
-        wrap: "both"
-    });
-    // comportamento inicial da grade
-    $('.btn-toggle:first').parent().addClass('escura');
-    $('.btn-toggle:first').parent().next().slideDown(400);
-    //hover states on the static widgets
-    $('#dialog_link, ul#icons li').hover(
-      function() { $(this).addClass('ui-state-hover'); }, 
-      function() { $(this).removeClass('ui-state-hover'); }
-    );
-    //start streaming
-    //timerStart();
-  });
+	  var ts = null;
+	  var te = null;
   
 	  function checkStreamingStart(){
 	    var request = $.ajax({
