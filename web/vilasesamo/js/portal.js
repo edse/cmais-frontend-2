@@ -2,6 +2,25 @@
  * Scripts Novo portal
  */
 
+var request_header = jQuery.ajax({ 
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body #capa-site').before(data);
+  },
+  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
+});
+
+var request_footer = jQuery.ajax({
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body').append(data);
+  },
+  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
+});
+
+
 var cultura = new Object();
 
 cultura = {
@@ -432,20 +451,3 @@ $.fn.clearForm = function() {
   });
 };
 
-var request_header = jQuery.ajax({ 
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body #capa-site').before(data);
-  },
-  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
-});
-
-var request_footer = jQuery.ajax({
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body').append(data);
-  },
-  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
-});
