@@ -87,14 +87,9 @@
               <div class="contato grid2">
 
                 <!--p class="titulos grid2"><?php echo $section->getTitle() ?></p-->  
-                <p class="titulos">Não importa onde você esteja ou que esteja fazendo, esteja na Cultura!
-                  
+                <p class="titulos">Não importa o lugar nem o que você fizer, fique na Cultura!</p>                  
                 <p>
-                  Nessas férias, nós queremos você aqui dentro da Cultura! Então, mande para a gente um vídeo de você se divertindo
-                  com a família, com os amigos, com a namorada, com quem você quiser, até sozinho vale! Pode ser em uma viagem, em um
-                  parque de diversões, na piscina, na sala de casa, na cama, na festa, na biblioteca, na praça, no avião, no carro,
-                  em qualquer lugar! E não se esqueça da frase: FÉRIAS NA CULTURA, TÔ DENTRO! Peça para a criançada gritar em coro, 
-                  escreva na areia da praia, faça um poema, cante uma música! Para ficar dentro da Cultura, vale tudo!
+                  Nessas férias, nós queremos você conosco aqui dentro da Cultura! Então, mande para a gente um vídeo de você se divertindo com a família, com os amigos, com a namorada, com quem você quiser, até sozinho vale! Pode ser em uma viagem, em um parque de diversões, na piscina, na sala de casa, na cama, na festa, na biblioteca, na praça, no avião, no carro, em qualquer lugar! E não se esqueça da frase: FÉRIAS NA CULTURA, TÔ DENTRO! Peça para a criançada gritar em coro, escreva na areia da praia, faça um poema, cante uma música! Para ficar dentro da Cultura, vale tudo!
                 </p>
                 
                   <div class="msgErro" style="display:none">
