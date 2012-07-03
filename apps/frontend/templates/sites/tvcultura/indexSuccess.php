@@ -4,7 +4,7 @@
 <script type="text/javascript">
   $(function(){
     //carrossel
-    $('.carrossel').jcarousel({
+    $('.carrossel, .carrossel-menu').jcarousel({
         wrap: "both"
     });
   })
