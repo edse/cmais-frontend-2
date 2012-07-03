@@ -35,7 +35,7 @@
 	      success: function(data) {
 	        //eval(data);
 	        alert(data);
-	        if (data != "")
+	        //if (data != "")
 	      },
 	      url: '/ajax/streamingend'
 	    });
