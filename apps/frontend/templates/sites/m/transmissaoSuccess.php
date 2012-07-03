@@ -43,9 +43,9 @@
 	    var request = $.ajax({
 	      //dataType: 'jsonp',
 	      success: function(data) {
-	        //eval(data);
-	        if (data != "")
-	        	history.back(); 
+	        eval(data);
+	        //if (data != "")
+	        //	history.back(); 
 	      },
 	      url: '/ajax/streamingend'
 	    });
