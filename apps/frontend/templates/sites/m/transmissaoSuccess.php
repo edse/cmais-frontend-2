@@ -103,12 +103,11 @@
 	<!-- /TOPO -->
 	
 	<script>
-	/*
 		$(function() {
 			
 			
 			//$("#mpl").attr('width',screen.width);
-			
+			/*
 		  function verificaTela()
 		  {
 		    //orintacao para iphone e samsung galaxy
@@ -133,9 +132,9 @@
 		      liga = false;
 		    }
 			}
-            
+           */ 
 			//tira quant de paginas para o iphone
-			verificaTela();
+			//verificaTela();
 		
 			$(window).orientationchange(function(){
   			//verificaTela();
@@ -148,12 +147,12 @@
 				{
   				$('.tc-paging-item:contains("2")').show();
     		}
-    		
+    		*/
     		alert(screen.width);
     	});
     	
 		});
-	*/
+	
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
