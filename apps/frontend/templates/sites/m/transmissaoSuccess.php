@@ -28,6 +28,25 @@
       })();
   </script>
   <!--/GOOGLE ANALYTICS-->
+  <script>
+	  function checkStreamingEnd(){
+	    var request = $.ajax({
+	      dataType: 'jsonp',
+	      success: function(data) {
+	        //eval(data);
+	        if (data != '')
+	        	alert(1);
+	      },
+	      url: '/ajax/streamingend'
+	    });
+	  }
+	  
+	  $(window).load(function(){
+	    checkStreamingEnd();
+	    te=setInterval("checkStreamingEnd()",60000);
+	  });
+  </script>
+  
   
 </head>
 <!--/HEADER PADRAO JQUERY MOBILE-->
@@ -68,6 +87,7 @@
 		$(function() {
 			//screen.width * screen.height
 			//$("#mpl").attr('width',screen.width);
+			/*
         function verificaTela(){
           //orintacao para iphone e samsung galaxy
          
@@ -103,6 +123,7 @@
            })
 			
 		};)
+		*/
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
