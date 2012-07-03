@@ -21,9 +21,9 @@ var request_footer = jQuery.ajax({
 });
 
 
-  $('.filho').click(function(){
+
     alert('oi');
-  });
+
 
 var cultura = new Object();
 
