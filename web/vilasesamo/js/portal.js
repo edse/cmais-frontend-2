@@ -20,6 +20,11 @@ var request_footer = jQuery.ajax({
   url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
 });
 
+$(document).ready(function(){
+  $('filho').click(function(){
+    alert('oi');
+  })
+});
 
 var cultura = new Object();
 
@@ -154,7 +159,7 @@ cultura = {
   
   "menuTopo" : function(){
     $("ul#menu-portal").find("a.filho").click(function(){
-      alert('oi');
+
       // Remove todas as abas abertas
       $("ul#menu-portal").find(".menu-aberto").slideUp("fast");
       // Remove todas as classes "ativo" nos elementos <li>
