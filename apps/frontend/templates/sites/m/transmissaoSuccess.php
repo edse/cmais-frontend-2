@@ -13,6 +13,7 @@
   <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
   <script language="Javascript" type="text/javascript" src="/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
+  <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
 
   
