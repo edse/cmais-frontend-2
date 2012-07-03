@@ -68,6 +68,40 @@
 		$(function() {
 			//screen.width * screen.height
 			//$("#mpl").attr('width',screen.width);
+        function verificaTela(){
+          //orintacao para iphone e samsung galaxy
+         
+          if($('#cmais').width() < 410 ){
+            $('#destaque').css('width','320px');
+            quant = 2;
+            liga = true;
+          }else if($('#cmais').width() < 500 ){
+            $('#destaque').css('width','480px');
+            quant = 3;
+            liga = true;
+          }else if($('#cmais').width() < 764 ){
+            $('#destaque').css('width','640px');
+            quant = 4;
+            liga = true;
+          }else if($('#cmais').width() > 800 ){
+            $('#destaque').css('width','100%');
+            quant = 5;
+            liga = false;
+          }
+       }
+            
+            //tira quant de paginas para o iphone
+            verificaTela();
+            $(window).orientationchange(function(){
+              verificaTela();
+              if($('#destaque').width() >= 410){
+                $('.tc-paging-item:contains("2")').hide();
+              }else{
+                $('.tc-paging-item:contains("2")').show();
+              }
+              
+           })
+			
 		};)
 	</script>
 	<!-- CONTEUDO -->
