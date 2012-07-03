@@ -14,52 +14,6 @@
     <!-- CAPA SITE -->
     <div id="capa-site">
 
-      <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-      <script type="text/javascript" src="/portal/js/portal.js"></script>
-      <script type="text/javascript">
-                
-        $(document).ready(function(){
-          $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
-          var validator = $('#form-contato').validate({
-          submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-              beforeSend: function(){
-                $('input#enviar').hide();
-                $(".msgAcerto, .msgErro").hide();
-                $('img#ajax-loader').show();
-              },
-              success: function(data){
-              $('input#enviar').show;
-                window.location.href="#";
-                if(data == "1"){
-                  $("#form-contato").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });         
-          },
-          rules:{       
-            captcha: {
-             required: true,
-             minlength: 6,
-             remote: "/portal/js/validate/demo/captcha/process.php"
-            }
-          },
-          success: function(label){
-            // set &nbsp; as text for IE
-            label.html("&nbsp;").addClass("checked");
-          }
-        });
-      });
-      </script>
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
@@ -87,9 +41,14 @@
               <div class="contato grid2">
 
                 <!--p class="titulos grid2"><?php echo $section->getTitle() ?></p-->  
-                <p class="titulos">Não importa o lugar nem o que você fizer, fique na Cultura!</p>                  
+                <p class="titulos">Não importa onde você esteja ou que esteja fazendo, esteja na Cultura!
+                  
                 <p>
-                  Nessas férias, nós queremos você conosco aqui dentro da Cultura! Então, mande para a gente um vídeo de você se divertindo com a família, com os amigos, com a namorada, com quem você quiser, até sozinho vale! Pode ser em uma viagem, em um parque de diversões, na piscina, na sala de casa, na cama, na festa, na biblioteca, na praça, no avião, no carro, em qualquer lugar! E não se esqueça da frase: FÉRIAS NA CULTURA, TÔ DENTRO! Peça para a criançada gritar em coro, escreva na areia da praia, faça um poema, cante uma música! Para ficar dentro da Cultura, vale tudo!
+                  Nessas férias, nós queremos você aqui dentro da Cultura! Então, mande para a gente um vídeo de você se divertindo
+                  com a família, com os amigos, com a namorada, com quem você quiser, até sozinho vale! Pode ser em uma viagem, em um
+                  parque de diversões, na piscina, na sala de casa, na cama, na festa, na biblioteca, na praça, no avião, no carro,
+                  em qualquer lugar! E não se esqueça da frase: FÉRIAS NA CULTURA, TÔ DENTRO! Peça para a criançada gritar em coro, 
+                  escreva na areia da praia, faça um poema, cante uma música! Para ficar dentro da Cultura, vale tudo!
                 </p>
                 
                   <div class="msgErro" style="display:none">
@@ -231,4 +190,66 @@
     </div>
     <!-- / CAPA SITE -->
     <img src="/portal/images/capaPrograma/ferias/todentro-img.jpg"  alt="Férias na Cultura - Tô Dentro "/>
-    
+
+    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+
+    <script type="text/javascript">
+              
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
+        
+        var num = 0;
+
+       
+        
+        var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+          
+      // Contador de Caracters
+      function limitText (limitField, limitNum, textCounter)
+      {
+        if (limitField.value.length > limitNum)
+          limitField.value = limitField.value.substring(0, limitNum);
+        else
+          $(textCounter).html(limitNum - limitField.value.length);
+      }
+    </script>
