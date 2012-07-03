@@ -51,7 +51,7 @@
 	      success: function(data) {
 	        //eval(data);
 	        if (data != "")
-	       	  history.back(); 
+	       	  document.history.back(); 
 	      },
 	      url: '/ajax/streamingend'
 	    });
@@ -100,7 +100,7 @@
 	</div>
 	<!-- /TOPO -->
 	<script>
-	/*
+	
 		$(function() {
 			//screen.width * screen.height
 			//$("#mpl").attr('width',screen.width);
@@ -138,9 +138,10 @@
               }
               
            })
+			*/
 			
 		};)
-*/
+
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
