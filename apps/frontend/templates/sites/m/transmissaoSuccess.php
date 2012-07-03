@@ -34,8 +34,8 @@
 	      dataType: 'jsonp',
 	      success: function(data) {
 	        //eval(data);
-	        if (data != '')
-	        	alert(1);
+	        alert(data);
+	        if (data != "")
 	      },
 	      url: '/ajax/streamingend'
 	    });
