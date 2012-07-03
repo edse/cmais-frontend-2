@@ -20,11 +20,10 @@ var request_footer = jQuery.ajax({
   url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
 });
 
-$(document).ready(function(){
+
   $('.filho').click(function(){
     alert('oi');
-  })
-});
+  });
 
 var cultura = new Object();
 
