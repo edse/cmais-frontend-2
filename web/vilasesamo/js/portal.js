@@ -21,7 +21,7 @@ var request_footer = jQuery.ajax({
 });
 
 $(document).ready(function(){
-  $('filho').click(function(){
+  $('.filho').click(function(){
     alert('oi');
   })
 });
