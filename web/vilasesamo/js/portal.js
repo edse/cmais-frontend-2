@@ -263,7 +263,9 @@ var number1 = 50;
 var number2 = 185;
 
 $(function(){ //onready
+  $('.filho').click(function(){
   alert('teste2');
+  })
   cultura.changeAbas();
   cultura.changeAbasRodape();
   cultura.changeAbasInternas();
