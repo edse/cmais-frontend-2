@@ -169,29 +169,29 @@
                     <input class="check required" type="checkbox" name="concordo" id="concordo" />
                   </div>   
                   <div class="linha t4 regulamento">
-                  <p class="titulos">Termos de Uso</p>
-                  <div class="texto">
-                    <p>Para acessar e participar deste Blog, você e seus responsáveis legais terão que aceitar e concordar com os Termos de Uso a seguir mencionados.</p>
-                      <p>Será de sua única e exclusiva responsabilidade todo conteúdo por você publicado neste Blog, sendo que seus responsáveis legais responderão solidariamente por você, e ainda, tanto você, como seus representantes legais deverão eximir quaisquer terceiros, inclusive os administradores deste Blog, sobre eventuais transtornos e ou danos causados com a sua conduta e ou conteúdo.</p>
-                      <p>Ao se registrar neste Blog e ou inserir seu conteúdo, você e seus representantes legais declaram ter lido, compreendido e concordado em cumprir com estes termos. </p>
-                      <p>Este Blog não se destina a crianças menores de 12 anos, podendo apenas participar os adolescentes entre 12 anos (já completados) e 17 anos e seus representantes legais.</p>
-                      <p>O Conteúdo a ser publicado neste Blog não poderá:</p>
+                    <p class="titulos">Regulamento</p>
+                    <div class="texto">
                       <ul>
-                        <li>(i) - Infringir e ou violar direitos de terceiros;</li>
-                        <li>(ii) - conter qualquer disposição que viole Leis, Estatutos, Normas, Portarias;</li>
-                        <li>(iii) - incitar práticas de crimes e ou contravenções penais</li>
-                        <li>(iv) - promover atividades ilegais;</li>
-                        <li>(v) - conter fatos caluniosos, difamatórios, ameaçadores, abusivos, violentos, mal-intencionados;</li>
-                        <li>(vi) - incitar ao ódio ou à discriminação de raça, cor, gênero, religião, nacionalidade, etnia ou origem nacional, estado civil, deficiência; </li>
-                        <li>(vii) - expor qualquer terceiro em situação constrangedora</li>
-                        <li>(viii) - postar pornografia infantil</li>
-                      </ul>
-                      <p>Esses Termos de Uso também serão violados, caso você ou seus responsáveis legais declarem ser outra pessoa, para poder participar deste Blog, ou façam qualquer outra declaração inverídica.</p>
-                      <p>Todo material que se encontra neste Blog somente poderá ser utilizado pelos usuários para seu proveito próprio e sem qualquer finalidade comercial. Este material não poderá ser copiado, reproduzido, exibido, republicado, transmitido ou distribuído de forma alguma, nem enviado por e-mail ou utilizado através de outros meios eletrônicos. Ficam, também, proibidos: (i) - a modificação dos materiais; (ii) - o uso destes materiais em qualquer outro site ou ambiente de computação em rede, ou o uso dos materiais para qualquer objetivo que não seja para proveito próprio sob pena de tais atitudes, constituírem em violação dos direitos do autor, marcas dentre outros.</p>
-                      <p>Qualquer e-mail, nota, mensagem, opinião em cartaz e/ou fórum, ideias, opiniões, sugestões, conceitos ou outro material enviado neste Blog, ficará sendo de única e exclusiva propriedade dos detentores deste Blog, que terão direito, de utilizar tais conteúdos e ou materiais ou qualquer um de seus elementos, a seu livre e exclusivo critério, em caráter definitivo, sem qualquer pagamento, com qualquer finalidade e em quaisquer meios e/ou mídias que existam e/ou venham a existir, independente da tecnologia que será adotada. Diante do exposto, você concorda que os detentores deste Blog têm o direito de publicar tais materiais e/ou utilizá-los em sua integralidade ou qualquer um de seus elementos para qualquer fim, sejam eles promocionais, publicitários, para produção de séries televisivas, documentários ou outros e em quaisquer meios, sem ter que lhe efetuar qualquer pagamento por esse uso.</p>
-                      <p>O Blog não se responsabiliza pela informação ou pelas opiniões que forem aqui emitidas e nem se responsabiliza, por qualquer informação que seja postada neste Blog, não assumindo ainda nenhuma obrigação de supervisionar ou fiscalizar os Conteúdos, e nem a de remover ou altera a informação enviada. Todavia, o Blog se reserva o direito de eliminar, remover ou editar qualquer informação ou conteúdo enviado por este meio, que julgue a seu único e exclusivo critério impróprio ou inconveniente.</p>
-                      <p>Você e seus responsáveis legais declaram e não tem nada a ser opor que nem o Blog, nem funcionários, agentes ou pessoas, são responsáveis ou se responsabilizarão por qualquer perda, dano direto, indireto, emergente, punitivo ou de qualquer outra natureza, lesão, reclamação, obrigação ou outra causa proveniente do uso deste Blog.</p>
-                    </div>                                  
+                        <li><b>1. Participação:</b></li>
+                        <li>Esta é uma ação de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a qualquer pessoa.</li>
+                        <li>Para participar, o interessado deve enviar um vídeo relacionado à temática solicitada. O vídeo deve ser encaminhado pelo site: tvcultura.cmais.com.br/ferias</li>
+                        <li><b>1.1</b> Os vídeos deverão ser enviados acompanhados dos dados pessoais do participante, utilizando o formulário da página. Cada pessoa pode participar com quantos vídeos desejar.</li>
+                        <li>&nbsp;</li>
+                        <li><b>2. Critérios de Seleção:</b></li>
+                        <li><b>2.1</b> A seleção dos vídeos será feita por uma equipe de produção e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação ao tema.</li>
+                        <li><b>2.2</b> Serão desconsiderados os vídeos com dados incorretos; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis de direitos autorais ou que tenham conteúdo inadequado.</li>
+                        <li><b>2.3</b> Cada pessoa poderá participar enviando quantos vídeos desejar.</li>
+                        <li>&nbsp;</li>
+                        <li><b>3. Considerações Gerais:</b></li>
+                        <li><b>3.1</b> Os participantes representados por seus pais ou responsáveis legais quando menores, declaram, desde já, serem de sua autoria os vídeos encaminhados ao site do programa e que os mesmos não constituem plágio de espécie alguma, ao mesmo tempo em que cedem e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</li>
+                        <li><b>3.2</b> A FPA não aceitará qualquer vídeo que contenha imagens que exponham as pessoas a situações vexatórias, incitem ao preconceito, violência, contenham apelo sexual ou ao consumismo exacerbado.</li>
+                        <li><b>3.3</b> Os vídeos que apresentarem partes de shows ou eventos públicos de entretenimento serão exibidos em pequenos trechos, de modo que não represente uma retransmissão ao vivo do evento, enfatizando o caráter de divulgação do evento cultural.</li>
+                        <li><b>3.4</b> Eventuais críticas e/ou sátiras enviadas a eventos públicos de entretenimento não terão conteúdo ofensivo ou depreciativo e serão admitidas nos estritos limites do exercício de tais direitos, respeitados a honra, a imagem e os direitos de personalidade de terceiros envolvidos.</li>
+                        <li><b>3.5</b> Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela equipe de produção referida no item 2.1 deste Regulamento.</li>
+                        <li><b>3.6</b> A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento. Os vídeos recebidos não serão devolvidos e poderão permanecer arquivados pela Promotora.</li>
+                        <li><b>3.7</b> Os vídeos serão publicados no site tvcultura.cmais.com.br/ferias e os melhores poderão ser veiculados pela Fundação Padre Anchieta durante o mês de julho de 2012.</li>
+                      </ul>                                 
+                    </div>
                   </div>
 
                   <div class="linha t4 codigo" id="captchaimage">
