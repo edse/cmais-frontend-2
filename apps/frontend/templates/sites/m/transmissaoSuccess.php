@@ -61,7 +61,7 @@
   
 	  function checkStreamingEnd(){
 	    var request = $.ajax({
-	      //dataType: 'jsonp',
+	      dataType: 'jsonp',
 	      success: function(data) {
 	        eval(data);
 	        //if (data != "")
