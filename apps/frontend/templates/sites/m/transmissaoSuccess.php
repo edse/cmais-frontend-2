@@ -148,7 +148,7 @@
   				$('.tc-paging-item:contains("2")').show();
     		}
     		*/
-    		alert(screen.width);
+    		alert($('#cmais').width());
     	});
     	
 		});
