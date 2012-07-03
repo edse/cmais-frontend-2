@@ -32,34 +32,21 @@
   </script>
   <!--/GOOGLE ANALYTICS-->
   <script>
-	  var ts = null;
-	  var te = null;
-  
-	  function checkStreamingStart(){
-	    var request = $.ajax({
-	      dataType: 'jsonp',
-	      success: function(data) {
-	        eval(data);
-	      },
-	      url: '/ajax/streaming'
-	    });
-	  }
-  
 	  function checkStreamingEnd(){
 	    var request = $.ajax({
 	      dataType: 'jsonp',
 	      success: function(data) {
-	        eval(data);
-	        //if (data != "")
-	       	//history.back(); 
+	        if (data != "")
+	        {
+	       		history.back();
+	       	} 
 	      },
 	      url: '/ajax/streamingend'
 	    });
 	  }
 	  
 	  $(window).load(function(){
-	    checkStreamingStart();
-	    te=setInterval("checkStreamingEnd()",60000);
+	    checkStreamingEnd();
 	  });
   </script>
   
@@ -144,8 +131,9 @@
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
-		<div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
-		<!-- embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video"-->
+		<!--div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div-->
+		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
+		<?php /*
 				                  <!-- Countdown dashboard start -->
                   <div id="countdown_dashboard" style="width:418px;">
                     <div class="dash hours_dash">
@@ -165,7 +153,9 @@
                     </div>
                   </div>
                   <!-- Countdown dashboard end -->
-
+		 * 
+		 */
+	?>
 	</div>
 	<!-- /CONTEUDO -->
 		
