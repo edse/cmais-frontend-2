@@ -2,26 +2,6 @@
  * Scripts Novo portal
  */
 
-var request_header = jQuery.ajax({ 
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body #capa-site').before(data);
-  },
-  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
-});
-
-var request_footer = jQuery.ajax({
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body').append(data);
-  },
-  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
-});
-
-
-
 var cultura = new Object();
 
 cultura = {
@@ -155,7 +135,7 @@ cultura = {
   
   "menuTopo" : function(){
     $("ul#menu-portal").find("a.filho").click(function(){
-
+      
       // Remove todas as abas abertas
       $("ul#menu-portal").find(".menu-aberto").slideUp("fast");
       // Remove todas as classes "ativo" nos elementos <li>
@@ -263,9 +243,6 @@ var number1 = 50;
 var number2 = 185;
 
 $(function(){ //onready
-  $('.filho').click(function(){
-  alert('teste2');
-  })
   cultura.changeAbas();
   cultura.changeAbasRodape();
   cultura.changeAbasInternas();
@@ -455,3 +432,20 @@ $.fn.clearForm = function() {
   });
 };
 
+var request_header = jQuery.ajax({ 
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body #capa-site').before(data);
+  },
+  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
+});
+
+var request_footer = jQuery.ajax({
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body').append(data);
+  },
+  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
+});
