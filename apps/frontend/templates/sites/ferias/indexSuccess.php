@@ -74,7 +74,7 @@
                   </div>
                   <div class="linha t2">
                     <label>idade</label>
-                    <input type="text" name="idade" id="idade" class="required" />
+                    <input type="text" name="idade" id="idade" maxlength="2" class="required" />
                   </div>
                   <div class="linha t3">
                     <label>cidade</label>
