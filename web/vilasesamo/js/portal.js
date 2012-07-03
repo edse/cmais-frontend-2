@@ -22,9 +22,6 @@ var request_footer = jQuery.ajax({
 
 
 
-    alert('oi');
-
-
 var cultura = new Object();
 
 cultura = {
@@ -266,6 +263,7 @@ var number1 = 50;
 var number2 = 185;
 
 $(function(){ //onready
+  alert('teste2');
   cultura.changeAbas();
   cultura.changeAbasRodape();
   cultura.changeAbasInternas();
