@@ -35,7 +35,6 @@ cultura = {
     var sel = id = atual = t = "";
     //Pega todos os elementos com a classe "abas" e adiciona o evento "click" em seus filhos "a"
     $('#destaque .abas-menu, #menu-portal .abas-menu').find('a').click(function(){
-      alert('oi');
       clearTimeout(window.tCarrossel);
       ativaCarrossel();
       //Guarda em uma variï¿½vel o bloco onde a funï¿½ï¿½o estï¿½ sendo executada. Para que mais de um mï¿½dulo possa usar esta funï¿½ï¿½o em uma mesma pï¿½gina
@@ -155,7 +154,7 @@ cultura = {
   
   "menuTopo" : function(){
     $("ul#menu-portal").find("a.filho").click(function(){
-      
+      alert('oi');
       // Remove todas as abas abertas
       $("ul#menu-portal").find(".menu-aberto").slideUp("fast");
       // Remove todas as classes "ativo" nos elementos <li>
