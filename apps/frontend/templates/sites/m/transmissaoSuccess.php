@@ -51,7 +51,7 @@
 	      success: function(data) {
 	        eval(data);
 	        //if (data != "")
-	       	//  history.back(); 
+	       	//history.back(); 
 	      },
 	      url: '/ajax/streamingend'
 	    });
@@ -146,6 +146,26 @@
 	<div class="conteudoLive">
 		<div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
 		<!-- embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video"-->
+				                  <!-- Countdown dashboard start -->
+                  <div id="countdown_dashboard" style="width:418px;">
+                    <div class="dash hours_dash">
+                      <div class="digit">0</div>
+                      <div class="digit">0</div>
+                      <span class="dash_title" style="font-size:15px; margin: auto;">horas</span>
+                    </div>
+                    <div class="dash minutes_dash">
+                      <div class="digit">0</div>
+                      <div class="digit">0</div>
+                      <span class="dash_title" style="font-size:15px; margin: auto;">minutos</span>
+                    </div>
+                    <div class="dash seconds_dash">
+                      <div class="digit">0</div>
+                      <div class="digit">0</div>
+                      <span class="dash_title" style="font-size:15px; margin: auto;">segundos</span>
+                    </div>
+                  </div>
+                  <!-- Countdown dashboard end -->
+
 	</div>
 	<!-- /CONTEUDO -->
 		
