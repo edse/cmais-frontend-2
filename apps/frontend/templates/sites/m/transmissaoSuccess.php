@@ -103,11 +103,11 @@
 	<!-- /TOPO -->
 	
 	<script>
+	/*
 		$(function() {
 			
 			
 			//$("#mpl").attr('width',screen.width);
-			/*
 		  function verificaTela()
 		  {
 		    //orintacao para iphone e samsung galaxy
@@ -132,13 +132,9 @@
 		      liga = false;
 		    }
 			}
-           */ 
-			//tira quant de paginas para o iphone
-			//verificaTela();
 		
 			$(window).orientationchange(function(){
-  			//verificaTela();
-  			/*
+  			verificaTela();
   			if($('#destaque').width() >= 410)
   			{
   				$('.tc-paging-item:contains("2")').hide();
@@ -147,11 +143,12 @@
 				{
   				$('.tc-paging-item:contains("2")').show();
     		}
-    		*/
-    		alert($('#cmais').width());
+    		
+    		alert(screen.width);
     	});
     	
 		});
+		*/
 	
 	</script>
 	<!-- CONTEUDO -->
