@@ -4,14 +4,14 @@
 <script type="text/javascript">
   $(function(){
     //carrossel
-    $('.carrossel, .carrossel-menu').jcarousel({
+    $('.carrossel').jcarousel({
         wrap: "both"
     });
   })
 </script>
 
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
     <div id="capa-site">
