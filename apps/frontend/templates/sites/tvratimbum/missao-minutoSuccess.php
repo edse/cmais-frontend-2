@@ -1,6 +1,3 @@
-<?php
-  $assets = $section->getAssets();
-?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <!--CSS-->
@@ -80,7 +77,7 @@
         <!--COLUNA-640-->
         <div class="coluna-640">
           <!--VIDEOS-ESPECIAL-->
-          <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('section'=>$section,'assets'=>$assets)) ?>
+          <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
           <!--/VIDEOS-ESPECIAL-->
         
           <!--JOGOS-->

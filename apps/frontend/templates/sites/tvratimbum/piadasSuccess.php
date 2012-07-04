@@ -1,7 +1,3 @@
-<?php
-  $assets = $section->getAssets();
-?>
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
@@ -377,7 +373,7 @@
         <?php endif; ?>
         
         <!--VIDEOS-ESPECIAL-->
-        <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias') ?>
+        <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
         <!--/VIDEOS-ESPECIAL-->
             
             

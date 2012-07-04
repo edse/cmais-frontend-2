@@ -103,7 +103,7 @@
 	<!-- /TOPO -->
 	
 	<script>
-	/*
+
 		$(function() {
 			
 			
@@ -134,7 +134,8 @@
 			}
 		
 			$(window).orientationchange(function(){
-  			verificaTela();
+  			//verificaTela();
+  			/*
   			if($('#destaque').width() >= 410)
   			{
   				$('.tc-paging-item:contains("2")').hide();
@@ -144,11 +145,12 @@
   				$('.tc-paging-item:contains("2")').show();
     		}
     		
-    		alert(screen.width);
+    		alert(screen.width);*/
+    		alert($('#cmais').width());
     	});
     	
 		});
-		*/
+
 	
 	</script>
 	<!-- CONTEUDO -->

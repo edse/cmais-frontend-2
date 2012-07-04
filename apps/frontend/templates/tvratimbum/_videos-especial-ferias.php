@@ -1,5 +1,5 @@
-<?php if(isset($assets)): ?>
-  <?php if(count($assets) > 0): ?>
+<?php if(isset($displays)): ?>
+  <?php if(count($displays) > 0): ?>
 <!--VIDEOS-->
 <div id="videos-especial">
 
@@ -17,9 +17,9 @@
       <div id="seta-direita"></div>
       <span class="sombra sombra-direita"></span>
       <ul>
-        <?php foreach($assets as $k=>$d): ?>
-          <?php if ($d->getAssetType() == 'Vídeo'): ?>
-            <?php if ($d->AssetVideo->getYoutubeId() != ''): ?>
+        <?php foreach($displays as $k=>$d): ?>
+          <?php if ($d->Asset->getAssetType() == 'Vídeo'): ?>
+            <?php if ($d->Asset->AssetVideo->getYoutubeId() != ''): ?>
         <!--ITEM CARROSSEL--> 
         <li>
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
