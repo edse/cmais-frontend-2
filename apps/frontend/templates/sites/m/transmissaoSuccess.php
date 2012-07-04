@@ -106,7 +106,7 @@
 	  function verificaTela()
 	  {
 	  	i = 364 / 640;
-	  	width = document.width;
+	  	width = $(window).Width();
 	  	height = Math.round(width * i);
 	  	//alert("width: "+width+"\nheight: "+height);
 	  	if (width < 640)
