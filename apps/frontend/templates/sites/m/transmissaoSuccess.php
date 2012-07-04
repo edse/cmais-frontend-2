@@ -106,9 +106,9 @@
 	  function verificaTela()
 	  {
 	  	i = 364 / 640;
-	  	width = $(window).Width();
+	  	width = document.width;
 	  	height = Math.round(width * i);
-	  	//alert("width: "+width+"\nheight: "+height);
+	  	alert("width: "+width+"\nheight: "+height);
 	  	if (width < 640)
 	  	{
 	  		$('#mpl').attr({
