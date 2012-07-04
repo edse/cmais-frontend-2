@@ -107,7 +107,7 @@
 	  {
 	  	i = 364 / 640;
 	  	width = $('#cmais').width();
-	  	height = $('#cmais').width() * i;
+	  	height = Math.ceil($('#cmais').width() * i);
 	  	alert("width: "+width+"\nheight: "+height);
 	  	if ($('#cmais').width() < 640)
 	  	{
