@@ -113,6 +113,13 @@
 	  			'height': $('#cmais').width() * i
 	  		});
 	  	}
+	  	else
+	  	{
+	  		$('#mpl').attr({
+	  			'width': 640,
+	  			'height': 364
+	  		});
+	  	}
 	 	}
 
 		$(function()
