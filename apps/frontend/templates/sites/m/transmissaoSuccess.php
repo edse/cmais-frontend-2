@@ -105,7 +105,7 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	i = 640 / 364;
+	  	i = 364 / 640;
 	  	if ($('#cmais').width() < 640)
 	  	{
 	  		$('#mpl').attr({
