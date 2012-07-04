@@ -1,0 +1,41 @@
+body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico.jpg)}
+.novoDestaque .enunciado span,
+.novoNoAr .enunciado span {background: url(/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new.png) no-repeat !important;}
+#miolo {margin: -3px 0 0px 0px}
+.banner {position:relative;margin: 0px 0 0px 42px}
+.box-contador{position:absolute;top:124px;left:469px;}
+.box-contador p{color:#277dc7;font-size:15px;font-weight:bolder; font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif}
+
+.novoDestaque .enunciado h2,
+.proximasAtracoes .enunciado,
+.box-padrao .claro .capa-titulo,
+.novoNoAr .enunciado h2,
+.box-padrao .capa-titulo{background-color: #279127 !important;}
+
+.abas li.ativo a, .abas li:hover a{background-color: #a7c127 !important;}
+
+.box-padrao .topo span {background: url(/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new-2.png) no-repeat !important;}
+  
+.proximasAtracoes .proximasAtracoes-box p a,
+.proximasAtracoes .proximasAtracoes-box .gradeCompleta {color: #279127;}
+
+#menu-rodape .abas .minha-cultura.ativo span,
+#menu-rodape .abas .minha-cultura:hover span,
+#menu-rodape .abas .musica.ativo span,
+#menu-rodape .abas .musica:hover span,
+#menu-rodape .abas .jornalismo.ativo span,
+#menu-rodape .abas .jornalismo:hover span,
+#menu-rodape .abas .educacao.ativo span,
+#menu-rodape .abas .educacao:hover span,
+#menu-rodape .abas .arte-cultura.ativo span,
+#menu-rodape .abas .arte-cultura:hover span,
+#menu-rodape .abas .infantil.ativo span,
+#menu-rodape .abas .infantil:hover span{background: url(/portal/images/capaPrograma/cocoricoHome/img-verde.png) no-repeat !important;}
+
+#menu-rodape .blocos a,.cor-padrao,
+#menu-rodape .blocos .jornalismo a,.jornalismo,
+#menu-rodape .blocos .musica a, .musica,
+#menu-rodape .blocos .infantil a, .infantil,
+#menu-rodape .blocos .arte a, .arte, .arte-e-cultura{color:#339133;}
+
+.blocos li a.bg:hover { border-color:#a7c127 !important;} 
