@@ -108,6 +108,7 @@
 			$(window).orientationchange(function(){
 				var width = $('#cmais').width();
 				$("#mpl").attr('width',width);
+				alert($("#mpl").attr('width'));
     	});
 		});
 
