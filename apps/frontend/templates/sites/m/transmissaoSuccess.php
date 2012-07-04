@@ -77,7 +77,7 @@
 <body>
 
 <!--JQUERY MOBILE-->
-<div data-role="page">
+<div id="cmais" data-role="page" data-fullscreen="true">
 	
 	<!-- TOPO -->
 	<div class="headerLive">
@@ -144,8 +144,8 @@
 				{
   				$('.tc-paging-item:contains("2")').show();
     		}
-    		
-    		alert(screen.width);*/
+    		*/
+    		alert(screen.width);*
     		alert($('#cmais').width());
     	});
     	
