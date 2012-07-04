@@ -106,13 +106,10 @@
 	  function verificaTela()
 	  {
 	  	i = 364 / 640;
-	  	//width = $('#cmais').width();
 	  	width = document.width;
-	  	//height = Math.round($('#cmais').width() * i);
-	  	height = document.height;
-	  	alert("width: "+width+"\nheight: "+height);
-	  	
-	  	if ($('#cmais').width() < 640)
+	  	height = Math.round(width * i);
+	  	//alert("width: "+width+"\nheight: "+height);
+	  	if (width < 640)
 	  	{
 	  		$('#mpl').attr({
 	  			'width': width,
@@ -127,7 +124,7 @@
 	  		});
 	  	}
 	 	}
-
+	 	
 		$(function()
 		{
 			verificaTela();
