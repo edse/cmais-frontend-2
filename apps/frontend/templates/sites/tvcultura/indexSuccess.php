@@ -42,7 +42,7 @@
        
       
         <div class="box-contador">
-          <p>ESTREIA DIA 9 ÀS 11H</p>
+          <p>ESTREIA DIA 9 ÀS 11H - AO VIVO</p>
       <!--       
           <div id="countdown_dashboard">
             <div class="dash days_dash">
