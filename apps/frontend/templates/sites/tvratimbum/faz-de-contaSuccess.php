@@ -1,11 +1,3 @@
-<?php
-  $assets = $section->getAssets();
-  
-  /*if ($section->getParentSectionId() > 0)
-    $parent_section = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
-   * 
-   */
-?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
@@ -84,7 +76,7 @@
         <!--COLUNA-640-->
         <div class="coluna-640">
           <!--VIDEOS-ESPECIAL-->
-          <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('section'=>$section,'assets'=>$assets)) ?>
+          <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
           <!--/VIDEOS-ESPECIAL-->
           
           <?php if(isset($displays['baixar'])): ?>
