@@ -1,17 +1,11 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" /-->
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico-home.css" type="text/css" />
 <!-- teste -->
-<script type="text/javascript">
-  $(function(){
-    //carrossel
-    $('.carrossel').jcarousel({
-        wrap: "both"
-    });
-  })
-</script>
+
 
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -21,7 +15,10 @@
 
       <!-- banner -->
       <div class="banner">
-				<?php /*
+        <a href="http://cmais.com.br/cocorico" target="_blank" title="Cocoricó">
+          <img src="/portal/images/capaPrograma/cocoricoHome/img-topo-logo.png" alt="Cocoricó"/>
+        </a>
+        <?php /*
         <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
 
         <div class="curtir">
@@ -36,29 +33,30 @@
           </script>
         </div>
         <!-- /publicidade -->
-				 */ ?> 
+         */ ?> 
         <!-- contador--> 
-	    <link rel="Stylesheet" type="text/css" href="http://cmais.com.br/portal/js/contador/style/main.css"></link>
-	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery-1.4.1.js"></script>
-	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
-	    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/misc.js"></script>  
-	     
-	    <!--       
-      	<div class="box-contador" style="width: 275px; left:404px;">
-        	<p>DE SEGUNDA A SEXTA, ÀS 20:20H</p>
+      <link rel="Stylesheet" type="text/css" href="http://cmais.com.br/portal/js/contador/style/main.css"></link>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery-1.4.1.js"></script>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/misc.js"></script>  
+       
       
-        	<div id="countdown_dashboard">
-        		<div class="dash days_dash">
-         	 		<div class="digit">0</div>
-          			<div class="digit">0</div>
-          			<div class="digit">0</div>
-        	 	</div>
-       		</div>
-       		<p>para a estreia</p>
-       	
-	    </div>
-	    -->
-	    <!-- contador-->
+        <div class="box-contador">
+          <p>ESTREIA DIA 9 ÀS 11H</p>
+      <!--       
+          <div id="countdown_dashboard">
+            <div class="dash days_dash">
+              <div class="digit">0</div>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+          </div>
+          <p>para a estreia</p>
+      -->        
+      </div>
+
+      <!-- contador-->
+      
       </div>
       <!-- /banner -->
 
@@ -163,7 +161,7 @@
               */ ?>
               
               <?php if(isset($displays["destaque-para-ouvir"])): ?>
-              	<?php if(count($displays["destaque-para-ouvir"]) > 0 ): ?>
+                <?php if(count($displays["destaque-para-ouvir"]) > 0 ): ?>
               <!-- BOX PADRAO Para Ouvir -->
               <div class="box-padrao box-borda grid1">
                 <div class="topo">
@@ -177,7 +175,7 @@
                 </div>
               </div>
               <!-- /BOX PADRAO Para Ouvir -->
-              	<?php endif; ?>
+                <?php endif; ?>
               <?php endif; ?>
               
               <?php if(isset($displays["destaque-carrossel-2"])) include_partial_from_folder('blocks','global/display1c-carrossel', array('displays' => $displays["destaque-carrossel-2"])) ?>
