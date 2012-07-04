@@ -111,7 +111,6 @@
     	});
 		});
 
-	
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
