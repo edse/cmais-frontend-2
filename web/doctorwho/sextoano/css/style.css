@@ -6,6 +6,14 @@ http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
 #rodape-portal {
     margin-top: 0 !important;
 }
+#menu-portal-2 h1{margin:0 !important;}
+#menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
+#menu-portal-1 #menu-portal .m-radio .bg-Ratimbum {
+margin: 0px 0 11px 0;
+}
+#header a {
+background: url(../img/header/header.jpg) no-repeat left 4px !important;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -140,7 +148,7 @@ body { background: #000 url(../img/bg.jpg) no-repeat top center; }
 .ie6 #contentRight { margin-right:12px; }
 
 /* Content Box */
-#content .box { padding: 10px 8px; background: url(../img/main/content/box_bg.png) repeat left top; }
+#content .box { text-align:left; padding: 10px 8px; background: url(../img/main/content/box_bg.png) repeat left top; }
 #content .box img { display: block; border:2px solid #F7D306; }
 #content .box p { font-size: 0.725em; line-height: 1.37em; color: #fff; }
 
