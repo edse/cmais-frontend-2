@@ -105,53 +105,13 @@
 	<script>
 
 		$(function() {
-			
-			
-			//$("#mpl").attr('width',screen.width);
-		  function verificaTela()
-		  {
-		    //orintacao para iphone e samsung galaxy
-		    if($('#cmais').width() < 410 )
-		    	$("#mpl").attr('width',screen.width);
-		    else if($('#cmais').width() < 500 )
-		    {
-		      $('#destaque').css('width','480px');
-		      quant = 3;
-		      liga = true;
-		    }
-		    else if($('#cmais').width() < 764 )
-		    {
-		      $('#destaque').css('width','640px');
-		      quant = 4;
-		      liga = true;
-		    }
-		    else if($('#cmais').width() > 800 )
-		    {
-		      $('#destaque').css('width','100%');
-		      quant = 5;
-		      liga = false;
-		    }
-			}
-		
 			$(window).orientationchange(function(){
-  			//verificaTela();
-  			/*
-  			if($('#destaque').width() >= 410)
-  			{
-  				$('.tc-paging-item:contains("2")').hide();
-				}
-				else
-				{
-  				$('.tc-paging-item:contains("2")').show();
-    		}
-    		*/
-    		alert(screen.width);
-    		alert($('#cmais').width());
+				var width = $('#cmais').width();
+				$("#mpl").attr('width',width);
+				alert($("#mpl").attr('width'));
     	});
-    	
 		});
 
-	
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
