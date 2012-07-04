@@ -105,7 +105,8 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	alert($('#cmais').width());
+	  	$('#mpl').attr('width',$('#cmais').width());
+	  	//alert($('#cmais').width());
 	  	/*
 	    if($('#cmais').width() < 410 ){
 	      $('#destaque').css('width','320px');
