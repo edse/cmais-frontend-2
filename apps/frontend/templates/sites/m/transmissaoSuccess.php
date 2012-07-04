@@ -106,14 +106,14 @@
 	  function verificaTela()
 	  {
 	  	i = 364 / 640;
-	  	width = document.width;
-	  	height = Math.round(width * i);
-	  	alert("width: "+width+"\nheight: "+height);
-	  	if (width < 640)
+	  	_width = document.width;
+	  	_height = Math.round(_width * i);
+	  	alert("width: "+_width+"\nheight: "+_height);
+	  	if (_width < 640)
 	  	{
 	  		$('#mpl').attr({
-	  			'width': width,
-	  			'height': height
+	  			'width': _width,
+	  			'height': _height
 	  		});
 	  	}
 	  	else
