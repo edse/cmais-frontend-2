@@ -103,16 +103,12 @@
 	<!-- /TOPO -->
 	
 	<script>
-
 		$(function() {
 			$(window).orientationchange(function(){
 				var width = $('#cmais').width();
 				alert(width);
     	});
-    	
 		});
-
-	
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
