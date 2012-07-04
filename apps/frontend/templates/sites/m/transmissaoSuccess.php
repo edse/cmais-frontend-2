@@ -135,7 +135,7 @@
 			}
 		
 			$(window).orientationchange(function(){
-				var width = $('#cmais').width()
+				var width = $('#cmais').width();
 				alert(width);
 				//$("#mpl").attr('width',);
   			//verificaTela();
