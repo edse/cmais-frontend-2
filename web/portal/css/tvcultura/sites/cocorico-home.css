@@ -3,8 +3,8 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 .novoNoAr .enunciado span {background: url(/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new.png) no-repeat !important;}
 #miolo {margin: -3px 0 0px 0px}
 .banner {position:relative;margin: 0px 0 0px 42px}
-.box-contador{.box-contador {left: 420px;position: absolute;top: 125px;}
-.box-contador p{color:#277dc7;font-size:15px;font-weight:bolder; font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif}
+.box-contador{left: 420px;position: absolute;top: 125px;}
+.box-contador p{color:#277dc7;font-size:15px;font-weight:bolder; font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif;}
 
 .novoDestaque .enunciado h2,
 .proximasAtracoes .enunciado,
