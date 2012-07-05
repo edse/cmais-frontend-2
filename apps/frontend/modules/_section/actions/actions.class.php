@@ -44,16 +44,25 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
 
-    if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
-      $this->setLayout(false);
-    }elseif($this->site->getSlug() == "prontoatendimento"){
-      if($this->section->getSlug() != "ao-vivo") {
-        if(date('w') == 6 && date('H:i') >= "12:30") {
-          header("Location: http://tvcultura.cmais.com.br/prontoatendimento/ao-vivo");
-      die(); 
-        }
-     }
-    }
+	    if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
+	      $this->setLayout(false);
+	    }elseif($this->site->getSlug() == "prontoatendimento"){
+	      if($this->section->getSlug() != "ao-vivo") {
+	        if(date('w') == 6 && date('H:i') >= "12:30") {
+	          header("Location: http://tvcultura.cmais.com.br/prontoatendimento/ao-vivo");
+	      die(); 
+	        }
+	     }
+	    }
+			
+	    if(($this->site->getSlug() == "quintaldacultura")){
+	    	if(in_array($this->section->getSlug(), array('home-page','homepage','home'))){
+	        if(date('y-m-d H:i:s') >= "2012-07-09 12:00:00" && date('y-m-d H:i:s') < "2012-07-09 18:00:00") {
+	          header("Location: http://cmais.com.br/quintaldacultura/voce-escolhe");
+	      		die(); 
+	        }
+	     	}
+	    }
 
     
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
