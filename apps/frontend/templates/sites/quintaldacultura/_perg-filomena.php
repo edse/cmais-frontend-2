@@ -244,7 +244,7 @@
 <!--RESPOSTA CHA COM CHARADA-->
 <div id="respCha" style="display:none;">
   <a href="javascript:;" class="troca tFilo"></a>
-  <p class="recebeu">Recebemos a sua charada. Fique ligado no programa ao vivo, quem sabe é a sua charada que irá aparecer.</p>
+  <p class="recebeu"> A turma do Quintal adorou a sua charada! <br/>Fique ligado no programa ao vivo, quem sabe a sua charada é a escolhida!</p>
   <p>AGUARDE!</p>
   <a class="btn-enviar" href="javascript:;">
     ENVIAR OUTRA CHARADA
