@@ -105,7 +105,7 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	i = 182 / 320;
+	  	i = 480 / 640;
 	  	mobWidth = screen.width;
 	  	mobHeight = Math.round(screen.width * i);
 	  	
@@ -120,7 +120,7 @@
 	  	{
 	  		$('embed#mpl').attr({
 	  			'width': 640,
-	  			'height': 364
+	  			'height': 480
 	  		});
 	  	}
 	 	}
