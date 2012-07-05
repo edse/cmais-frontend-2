@@ -1386,7 +1386,14 @@ EOT;
 
   public function executeMensagem(sfWebRequest $request){
     $request->checkCSRFProtection();
-    $email_site = "quintal.tv@gmail.com";
+    //$email_site = "quintal.tv@gmail.com";
+		$email_site = "jedoljak@gmail.com";
+		$subject = "[Quintal da Cultura][Pergunta para Filomena] ";
+		if ($request->getParameter('formSection') == "chaComCharadas") {
+			//$email_site = "chacomcharadas@gmail.com";
+			$email_site = "cristovamruizjr@gmail.com";
+			$subject = "[Quintal da Cultura][Chá com charadas] ";
+		}
     $email_user = strip_tags($request->getParameter('email'));
     $nome_user = strip_tags($request->getParameter('nome'));
     ini_set('sendmail_from', $email_site);
@@ -1402,7 +1409,7 @@ EOT;
     $cabecalho .= "MIME-Version: 1.0\r\n";
     $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
     $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
-    if(mail($email_site, '[Quintal da Cultura][Pergunta para Filomena] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho))
+    if(mail($email_site, $subject . $nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho))
       die("1");
     else
       die("0");
