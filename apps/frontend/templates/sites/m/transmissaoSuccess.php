@@ -131,7 +131,7 @@
 	 	
 		$(function()
 		{
-			//$.mobile.orientationChangeEnabled = false
+			$.mobile.orientationChangeEnabled = false
 			
 			verificaTela();
 			
