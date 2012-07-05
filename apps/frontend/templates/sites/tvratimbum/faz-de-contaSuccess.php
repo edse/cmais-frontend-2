@@ -92,7 +92,7 @@
 
             <!--CONTEUDO-BAIXAR-->
             <div class="conteudo-baixar">
-              <div class="imagem"><?php echo $displays['baixar'][0]->Block->getTitle() ?></div>
+              <div class="imagem"><img src="<?php echo $displays['baixar'][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays['baixar'][0]->getTitle() ?>" title="<?php echo $displays['baixar'][0]->getTitle() ?>" /></div>
               <span class="titulo"><?php echo $displays['baixar'][0]->getTitle() ?></span>
               <p><?php echo $displays['baixar'][0]->getDescription() ?></p>
               <div class="btn-barra">
