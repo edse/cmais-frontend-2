@@ -1,4 +1,5 @@
 <?php 
+/*
 $respostas = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa')
@@ -356,3 +357,6 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
   
 </body>
 </html>
+ */
+echo 1;
+?>
