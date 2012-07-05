@@ -120,7 +120,7 @@
 	  	{
 	  		$('embed#mpl').attr({
 	  			'width': 640,
-	  			'height': 480
+	  			'height': 360
 	  		});
 	  	}
 	 	}
