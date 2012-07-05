@@ -190,8 +190,8 @@
               */ ?>
               <div class="voceSabiaBox">
                 <a href="<?php echo $voce_sabia->retriveUrl() ?>"><h2>você sabia?</h2></a>
-                <?php if($voce_sabia->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                  <img src="<?php echo $voce_sabia->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $voce_sabia->getTitle() ?>" />
+                <?php if($voce_sabia->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
+                  <img src="<?php echo $voce_sabia->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $voce_sabia->getTitle() ?>" />
                 <?php endif; ?>
                 <div class="voceSabiaBoxWrapper">
                   <a href="<?php echo $voce_sabia->retriveUrl() ?>">
