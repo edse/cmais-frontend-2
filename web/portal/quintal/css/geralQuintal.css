@@ -394,7 +394,6 @@ width: 680px;
 .menuRodape li a{
   font-size: 12px;
   font-weight: bold;
-  margin-left: 40px;
   text-transform: uppercase; 
 }
 .menuRodape li a:hover{
