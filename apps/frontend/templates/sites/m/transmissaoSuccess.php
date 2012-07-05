@@ -105,12 +105,9 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	//alert("window.width: "+window.width);
-	  	alert("width: "+window.width);
-	  	
 	  	i = 182 / 320;
-	  	mobWidth = document.width;
-	  	mobHeight = Math.round(mobWidth * i);
+	  	mobWidth = screen.width;
+	  	mobHeight = Math.round(screen.width * i);
 	  	//alert("width: "+mobWidth+"\nheight: "+mobHeight);
 	  	
 	  	if (mobWidth < 640)
@@ -123,7 +120,7 @@
 	  	else
 	  	{
 	  		$('embed#mpl').attr({
-	  			'width': 700,
+	  			'width': 640,
 	  			'height': 364
 	  		});
 	  	}
@@ -138,7 +135,7 @@
 			
 			$(window).orientationchange(function()
 			{
-		ns		verificaTela();
+				verificaTela();
     	});
 		});
 
