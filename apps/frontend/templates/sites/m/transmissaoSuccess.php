@@ -106,14 +106,14 @@
 	  function verificaTela()
 	  {
 	  	i = 364 / 640;
-	  	width = $('#cmais').width();
-	  	height = Math.round($('#cmais').width() * i);
-	  	alert("width: "+width+"\nheight: "+height);
-	  	if ($('#cmais').width() < 640)
+	  	mobWidth = document.width;
+	  	mobHeight = Math.round(mobWidth * i);
+	  	//alert("width: "+mobWidth+"\nheight: "+mobHeight);
+	  	if (mobWidth < 640)
 	  	{
 	  		$('#mpl').attr({
-	  			'width': width,
-	  			'height': height
+	  			'width': mobWidth,
+	  			'height': mobHeight
 	  		});
 	  	}
 	  	else
@@ -124,7 +124,7 @@
 	  		});
 	  	}
 	 	}
-
+	 	
 		$(function()
 		{
 			verificaTela();
