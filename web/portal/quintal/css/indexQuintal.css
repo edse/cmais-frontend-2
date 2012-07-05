@@ -4,11 +4,9 @@
 #menu-quintal-principal{position:relative;width:100%;min-height:700px;z-index:3000;}
 .over{position:absolute;z-index:5000;}
 
-#over-teobaldo{top: 13px;left: 107px;}
-#over-quelonio{bottom: 12px;left: 37px}
-#over-minhoquias{bottom: 26px;left: 454px;}
-#over-osorio{left: 292px;top: -28px;}
-#over-doroteia{right: 149px;top: 3px;}
-#over-ludovico{right: 16px;bottom: -6px;}
-
-
+#over-teobaldo{top: -16px;left: 107px;}
+#over-quelonio{bottom: 60px;left: 37px}
+#over-minhoquias{bottom: 81px;left: 454px;}
+#over-osorio{left: 292px;top: -59px;}
+#over-doroteia{right: 149px;top: -25px;}
+#over-ludovico{right: 16px;bottom: 30px;}
