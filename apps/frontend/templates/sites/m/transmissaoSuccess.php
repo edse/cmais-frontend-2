@@ -121,7 +121,7 @@
 	  	else
 	  	{
 	  		$('embed#mpl').attr({
-	  			'width': 640,
+	  			'width': 700,
 	  			'height': 364
 	  		});
 	  	}
