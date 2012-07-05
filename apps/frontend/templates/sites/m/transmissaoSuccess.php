@@ -105,12 +105,9 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	alert(screen.width);
-	  	/*
 	  	i = 182 / 320;
 	  	mobWidth = screen.width;
 	  	mobHeight = Math.round(screen.width * i);
-	  	//alert("width: "+mobWidth+"\nheight: "+mobHeight);
 	  	
 	  	if (mobWidth < 640)
 	  	{
@@ -126,7 +123,6 @@
 	  			'height': 364
 	  		});
 	  	}
-	  	*/
 	 	}
 	 	
 		$(function()
