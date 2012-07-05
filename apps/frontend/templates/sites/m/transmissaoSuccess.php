@@ -110,17 +110,17 @@
 	  	i = 364 / 640;
 	  	mobWidth = document.width;
 	  	mobHeight = Math.round(mobWidth * i);
-	  	//alert("width: "+mobWidth+"\nheight: "+mobHeight);
+	  	alert("width: "+mobWidth+"\nheight: "+mobHeight);
 	  	if (mobWidth < 640)
 	  	{
-	  		$('#mpl').attr({
+	  		$('embed#mpl').attr({
 	  			'width': mobWidth,
 	  			'height': mobHeight
 	  		});
 	  	}
 	  	else
 	  	{
-	  		$('#mpl').attr({
+	  		$('embed#mpl').attr({
 	  			'width': 640,
 	  			'height': 364
 	  		});
@@ -129,6 +129,8 @@
 	 	
 		$(function()
 		{
+			$.mobile.orientationChangeEnabled = false
+			
 			verificaTela();
 			
 			$(window).orientationchange(function()
