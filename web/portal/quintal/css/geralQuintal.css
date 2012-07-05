@@ -2630,7 +2630,7 @@ z-index: 503;
 #cha .t2message label{margin: 15px 8px 0 0; text-align:right}
 #cha .t2message label span{font-weight:normal;}
 #cha .t2message textarea{margin: 15px 0 0 0; width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
-#cha .t2message textarea#mensagemCharadas{width: 517px;}
+#cha .t2message textarea#mensagem{width: 517px;}
 #cha .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #cha label.error{color: red;position: absolute;left: 30px;bottom: 60px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
 #cha .nome.error, #cha .email.error, #cha .mensagem.error{border:2px red solid !important;}
