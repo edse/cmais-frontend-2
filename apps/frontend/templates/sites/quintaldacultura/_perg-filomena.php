@@ -23,14 +23,14 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php //echo url_for('homepage')?>/ajax/mensagem",
+              url:"<?php echo url_for('homepage')?>ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
-                $('input#enviar').hide();
+                $('#form-contato input#enviar').hide();
                 $('img#ajax-loader').show();
               },
               success: function(data){
-                $('input#enviar').show()
+                $('#form-contato input#enviar').show()
                 $('#pFilomena').hide();
                 $('#respFilomena').show();
                 //if(data == "1"){
@@ -77,14 +77,14 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php //echo url_for('homepage')?>/ajax/mensagem",
+              url:"<?php echo url_for('homepage')?>ajax/mensagem",
               data: $("#form-contato-2").serialize(),
               beforeSend: function(){
-                $('input#enviarCharadas').hide();
+                $('#form-contato-2 input#enviar').hide();
                 $('img#ajax-loader1').show();
               },
               success: function(data){
-                $('input#enviarCharadas').show()
+                $('#form-contato-2 input#enviar').show()
                 $('#cha').hide();
                 $('#respCha').show();
                 //if(data == "1"){
@@ -95,23 +95,23 @@
             });         
           },
           rules:{
-            nomeCharadas:{
+            nome:{
               required: true,
               minlength: 2
             },
-            emailCharadas:{
+            email:{
               required: true,
               email: true
             },
-            mensagemCharadas:{
+            mensagem:{
               required: true,
               minlength: 5
             }
           },
           messages:{
-            nomeCharadas: "*os campos em vermelho apresentam erro de preenchimento!",
-            emailCharadas: "*os campos em vermelho apresentam erro de preenchimento!",
-            mensagemCharadas: "*os campos em vermelho apresentam erro de preenchimento!"
+            nome: "*os campos em vermelho apresentam erro de preenchimento!",
+            email: "*os campos em vermelho apresentam erro de preenchimento!",
+            mensagem: "*os campos em vermelho apresentam erro de preenchimento!"
           },
           success: function(label){
             // set &nbsp; as text for IE
@@ -206,14 +206,14 @@
     <!--NOME-->
     <div class="t1input">
       <label>NOME:</label>
-      <input type="text" id="nomeCharadas" name="nomeCharadas" class="nome"  placeholder="Seu Nome Amiguinho"/>
+      <input type="text" id="nome" name="nome" class="nome"  placeholder="Seu Nome Amiguinho"/>
     </div>
     <!--/NOME-->
     
     <!--E-MAIL-->
     <div class="t2input">
       <label>E-MAIL:</label>
-      <input type="text" name="emailCharadas" class="email"  placeholder="amiguinho@seuemail.com.br"/>
+      <input type="text" name="email" class="email"  placeholder="amiguinho@seuemail.com.br"/>
     </div>
     <!--/E-MAIL-->
     
@@ -224,14 +224,14 @@
         [<span id="textCounter1">250</span>]
       </label>
       
-      <textarea name="mensagemCharadas" id="mensagemCharadas" class="mensagem" placeholder="Sua charada com rersposta" onKeyDown="limitText(this,250,'#textCounter1');"></textarea>
+      <textarea name="mensagem" id="mensagem" class="mensagem" placeholder="Sua charada com rersposta" onKeyDown="limitText(this,250,'#textCounter1');"></textarea>
     </div>
     <!--PERGUNTA-->
 
     <!--ENVIAR-->
     <div id="btn-nav" align="center">
       <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader1" />
-      <input type="submit" name="enviarCharadas" id="enviarCharadas" class="btn-enviar" value="Enviar"/>
+      <input type="submit" name="enviar" id="enviar" class="btn-enviar" value="Enviar"/>
     </div>
     <!--/ENVIAR-->
     
