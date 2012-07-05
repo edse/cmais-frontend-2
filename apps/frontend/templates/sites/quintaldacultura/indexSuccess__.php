@@ -113,7 +113,7 @@
           <p class="breadcrumb"><a href="/">cmais</a> &gt;&gt; Quintal da Cultura</p>
 
           <div class="conteudoWrapper">
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
+
             <div class="videoWrapper">
             <?php if(isset($displays['destaque-principal'])): ?>
               <?php if(count($displays['destaque-principal']) > 0): ?>
@@ -210,7 +210,7 @@
             </div>
             <hr />
 
-            <!--div class="boxDestaque">
+            <div class="boxDestaque">
               <div class="destaque">
                 <span class="minhoca"></span>
                 <h2><span class="ico-cross"></span><span class="tit">Clipes</span></h2>
@@ -252,10 +252,7 @@
               <?php endif; ?>
               <hr />
 
-            </div-->
-            <!--QUINTAL PERGUNTE FILOMENA-->
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
-            <!--/QUINTAL PERGUNTE-->
+            </div>
 
           </div>
             

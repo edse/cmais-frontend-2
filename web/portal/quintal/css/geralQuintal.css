@@ -2599,11 +2599,12 @@ z-index: 503;
 /***** /box videos *****/
 
 /* pergunte a filomena */
+#personagens{top:-30px;}
 .troca.tFilo{width: 236px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-pergunte.png) no-repeat top left;}
 .troca.tFilo:hover{background:  url(../images/btn-pergunte-over.png) no-repeat top left;}
 .troca.tCha{width: 242px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-charada.png) no-repeat top left;}
 .troca.tCha:hover{background:  url(../images/btn-charada-over.png) no-repeat top left;}
-#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -40px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
+#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
 #pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
@@ -2619,7 +2620,7 @@ z-index: 503;
 #pFilomena .nome.error, #pFilomena .email.error, #pFilomena .mensagem.error{border:2px red solid !important;}
 #pFilomena span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
-#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -40px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #cha h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #cha label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #cha input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
@@ -2636,12 +2637,12 @@ z-index: 503;
 #cha .nome.error, #cha .email.error, #cha .mensagem.error{border:2px red solid !important;}
 #cha span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
-#respCha{clear: both;position: relative;width: 700px;margin: -40px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#respCha{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #respCha p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
 #respCha .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #respCha .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
 
-#respFilomena{clear: both;position: relative;width: 700px;margin: -40px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
+#respFilomena{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
 #respFilomena p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
 #respFilomena .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #respFilomena .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
