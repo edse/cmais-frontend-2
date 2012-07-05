@@ -1386,12 +1386,10 @@ EOT;
 
   public function executeMensagem(sfWebRequest $request){
     $request->checkCSRFProtection();
-    //$email_site = "quintal.tv@gmail.com";
-		$email_site = "jedoljak@gmail.com";
+    $email_site = "quintal.tv@gmail.com";
 		$subject = "[Quintal da Cultura][Pergunta para Filomena] ";
 		if ($request->getParameter('formSection') == "chaComCharadas") {
-			//$email_site = "chacomcharadas@gmail.com";
-			$email_site = "cristovamruizjr@gmail.com";
+			$email_site = "chacomcharadas@gmail.com";
 			$subject = "[Quintal da Cultura][Chá com charadas] ";
 		}
     $email_user = strip_tags($request->getParameter('email'));
