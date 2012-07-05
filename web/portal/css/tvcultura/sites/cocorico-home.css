@@ -41,4 +41,5 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 
 .blocos li a.bg:hover { border-color:#a7c127 !important;} 
 #menu-portal .menu-aberto .abas li.ativo a,
-#menu-portal .menu-aberto .abas li:hover a {background: #F63 !important;}
+#menu-portal .menu-aberto .abas li:hover a,
+#menu-portal-2 li:hover a { {background: #F63 !important;}
