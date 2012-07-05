@@ -382,14 +382,19 @@ hr{
     margin-top: 90px;
   }
 }
+.menuRodape ul{
+margin: 0px auto;
+height: 34px;
+width: 680px;
+}
 .menuRodape ul li{
   float: left;
-  margin-top: 8px;
+  margin: 8px 33px 0 0;
 }
 .menuRodape li a{
   font-size: 12px;
   font-weight: bold;
-  margin-left: 45px;
+  margin-left: 40px;
   text-transform: uppercase; 
 }
 .menuRodape li a:hover{
