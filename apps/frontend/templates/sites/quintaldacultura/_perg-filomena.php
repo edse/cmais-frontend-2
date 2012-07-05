@@ -23,7 +23,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              url:"<?php //echo url_for('homepage')?>/ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').hide();
@@ -77,7 +77,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              url:"<?php //echo url_for('homepage')?>/ajax/mensagem",
               data: $("#form-contato-2").serialize(),
               beforeSend: function(){
                 $('input#enviarCharadas').hide();
