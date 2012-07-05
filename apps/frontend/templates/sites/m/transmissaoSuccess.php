@@ -105,6 +105,8 @@
 	<script>
 	  function verificaTela()
 	  {
+	  	alert("window.width: "+window.width);
+	  	alert("document.width: "+document.width);
 	  	i = 364 / 640;
 	  	mobWidth = document.width;
 	  	mobHeight = Math.round(mobWidth * i);
