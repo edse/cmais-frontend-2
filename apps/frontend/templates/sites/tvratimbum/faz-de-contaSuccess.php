@@ -86,7 +86,7 @@
             <!--TOPO BAIXAR ESPECIAL-->
             <div class="topo-esq"></div>
             <div class="topo">
-              <p><a href="/baixar" title="baixar"><?php echo $displays['baixar'][0]->Block->getTitle() ?></a></p>
+              <p><a href="/baixar" title="baixar"><?php echo $displays['baixar'][0]->Block->getTitle() ?></a></p> 
             </div>
             <!--/TOPO BAIXAR ESPECIAL-->
 
