@@ -1,7 +1,18 @@
 <script type="text/javascript" src="/portal/quintal/js/jquery.validate.js"></script>
 <script type="text/javascript">
       $(document).ready(function(){
+        //troca forms
         
+        $('.tCha').click(function(){
+          $('#pFilomena,#respFilomena').hide();
+          $('#cha').fadeIn('fast');
+        });
+        $('.tFilo').click(function(){
+          $('#pFilomena').fadeIn('fast');
+          $('#cha, #respCha').hide();
+        });
+        
+        //form filomena
         $('#respFilomena .btn-enviar').click(function(){
           $('#respFilomena').hide();
           $('#pFilomena').show();
@@ -22,7 +33,6 @@
                 $('input#enviar').show()
                 $('#pFilomena').hide();
                 $('#respFilomena').show();
-                
                 //if(data == "1"){
                   $("#form-contato").clearForm();
                   $('img#ajax-loader').hide();
@@ -54,6 +64,62 @@
             label.html("&nbsp;").addClass("checked");
           }
         });
+        //form filomena
+        
+        //cha com charadas
+        $('#respCha .btn-enviar').click(function(){
+          $('#respCha').hide();
+          $('#cha').show();
+        });
+        
+        var validator2 = $('#form-contato-2').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              data: $("#form-contato-2").serialize(),
+              beforeSend: function(){
+                $('input#enviarCharadas').hide();
+                $('img#ajax-loader1').show();
+              },
+              success: function(data){
+                $('input#enviarCharadas').show()
+                $('#cha').hide();
+                $('#respCha').show();
+                //if(data == "1"){
+                  $("#form-contato-2").clearForm();
+                  $('img#ajax-loader1').hide();
+                //}
+              }
+            });         
+          },
+          rules:{
+            nomeCharadas:{
+              required: true,
+              minlength: 2
+            },
+            emailCharadas:{
+              required: true,
+              email: true
+            },
+            mensagemCharadas:{
+              required: true,
+              minlength: 5
+            }
+          },
+          messages:{
+            nomeCharadas: "*os campos em vermelho apresentam erro de preenchimento!",
+            emailCharadas: "*os campos em vermelho apresentam erro de preenchimento!",
+            mensagemCharadas: "*os campos em vermelho apresentam erro de preenchimento!"
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+        //cha com charadas
+        
       });
           
       // Contador de Caracters
@@ -64,18 +130,19 @@
         else
           $(textCounter).html(limitNum - limitField.value.length);
       }
+      
+      
     </script>
 <!--Pergunte a Filomena-->
 <div id="pFilomena">
-  <h2>Pergunte a Filomena:</h2>
- 
+  <a href="javascript:;" class="troca tCha"></a>
   <!--FORMULARIO-->
   <form id="form-contato" action="" method="post">
     <?php 
     $form = new BaseForm();
     echo $form->renderHiddenFields();
     ?>
-    
+    <input type="hidden" name="formSection" id="formSection" value="pergunteParaFilomena">
     <!--NOME-->
     <div class="t1input">
       <label>NOME:</label>
@@ -94,10 +161,10 @@
     <div class="t2message">
       <label>
         PERGUNTA:</br>
-        [<span id="textCounter">140</span>]
+        [<span id="textCounter">250</span>]
       </label>
       
-      <textarea name="mensagem" id="mensagem" class="mensagem" placeholder="Sua pergunta" onKeyDown="limitText(this,140,'#textCounter');"></textarea>
+      <textarea name="mensagem" id="mensagem" class="mensagem" placeholder="Sua pergunta" onKeyDown="limitText(this,250,'#textCounter');"></textarea>
     </div>
     <!--PERGUNTA-->
 
@@ -111,13 +178,77 @@
   </form>
   <!--/FORMULARIO-->
   
+  
 </div>
 <!--/Pergunte a Filomena-->
 
+<!--RESPOSTA FORM FILOMENA-->
 <div id="respFilomena" style="display:none;">
+  <a href="javascript:;" class="troca tCha"></a>
   <p class="recebeu">A Filomena já recebeu a sua pergunta. Fique ligado no programa ao vivo, quem sabe é a sua dúvida que ela irá solucionar.</p>
   <p>AGUARDE!</p>
   <a class="btn-enviar" href="javascript:;">
     ENVIAR OUTRA PERGUNTA
   </a>
 </div>
+<!--RESPOSTA FORM FILOMENA-->
+
+<!--CHA COM CHARADAS-->
+<div id="cha" style="display:none">
+  <a href="javascript:;" class="troca tFilo"></a>
+  <!--FORMULARIO-->
+  <form id="form-contato-2" action="" method="post">
+    <?php 
+    $form = new BaseForm();
+    echo $form->renderHiddenFields();
+    ?>
+    <input type="hidden" name="formSection" id="formSection" value="chaComCharadas">
+    <!--NOME-->
+    <div class="t1input">
+      <label>NOME:</label>
+      <input type="text" id="nomeCharadas" name="nomeCharadas" class="nome"  placeholder="Seu Nome Amiguinho"/>
+    </div>
+    <!--/NOME-->
+    
+    <!--E-MAIL-->
+    <div class="t2input">
+      <label>E-MAIL:</label>
+      <input type="text" name="emailCharadas" class="email"  placeholder="amiguinho@seuemail.com.br"/>
+    </div>
+    <!--/E-MAIL-->
+    
+    <!--PERGUNTA-->
+    <div class="t2message">
+      <label>
+        CHARADA COM<br/>RESPOSTA:</br>
+        [<span id="textCounter1">250</span>]
+      </label>
+      
+      <textarea name="mensagemCharadas" id="mensagemCharadas" class="mensagem" placeholder="Sua charada com rersposta" onKeyDown="limitText(this,250,'#textCounter1');"></textarea>
+    </div>
+    <!--PERGUNTA-->
+
+    <!--ENVIAR-->
+    <div id="btn-nav" align="center">
+      <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader1" />
+      <input type="submit" name="enviarCharadas" id="enviarCharadas" class="btn-enviar" value="Enviar"/>
+    </div>
+    <!--/ENVIAR-->
+    
+  </form>
+  <!--/FORMULARIO-->
+  
+</div>
+<!--/CHA COM CHARADA-->
+
+<!--RESPOSTA CHA COM CHARADA-->
+<div id="respCha" style="display:none;">
+  <a href="javascript:;" class="troca tFilo"></a>
+  <p class="recebeu">Recebemos a sua charada. Fique ligado no programa ao vivo, quem sabe é a sua charada que irá aparecer.</p>
+  <p>AGUARDE!</p>
+  <a class="btn-enviar" href="javascript:;">
+    ENVIAR OUTRA CHARADA
+  </a>
+</div>
+<!--RESPOSTA CHA COM CHARADA-->
+
