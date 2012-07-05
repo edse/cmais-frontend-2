@@ -412,9 +412,9 @@ class mainActions extends sfActions
           $this->asset = Doctrine_Query::create()
             ->select('a.*')
             ->from('Asset a')
-          	->where('a.site_id = ?', (int)$object->id)
-						->andWhere('a.slug = ?', (string)$string)
-						//->where('a.slug = ?', (string)$string)
+          	//->where('a.site_id = ?', (int)$object->id)
+						//->andWhere('a.slug = ?', (string)$string)
+						->where('a.slug = ?', (string)$string)
 						->orderby('a.id desc')
             ->fetchOne();
           	
