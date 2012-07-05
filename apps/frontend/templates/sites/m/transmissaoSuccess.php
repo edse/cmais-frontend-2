@@ -105,22 +105,20 @@
 	<script>
 	  function verificaTela()
 	  {
-	  	alert("window.width: "+window.width);
-	  	alert("document.width: "+document.width);
-	  	i = 364 / 640;
-	  	mobWidth = document.width;
-	  	mobHeight = Math.round(mobWidth * i);
-	  	//alert("width: "+mobWidth+"\nheight: "+mobHeight);
+	  	i = 182 / 320;
+	  	mobWidth = screen.width;
+	  	mobHeight = Math.round(screen.width * i);
+	  	
 	  	if (mobWidth < 640)
 	  	{
-	  		$('#mpl').attr({
+	  		$('embed#mpl').attr({
 	  			'width': mobWidth,
 	  			'height': mobHeight
 	  		});
 	  	}
 	  	else
 	  	{
-	  		$('#mpl').attr({
+	  		$('embed#mpl').attr({
 	  			'width': 640,
 	  			'height': 364
 	  		});
@@ -129,6 +127,8 @@
 	 	
 		$(function()
 		{
+			$.mobile.orientationChangeEnabled = false
+			
 			verificaTela();
 			
 			$(window).orientationchange(function()
@@ -141,7 +141,7 @@
 	<!-- CONTEUDO -->
 	<div class="conteudoLive">
 		<!--div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div-->
-		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
+		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="320" height="182" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
                   <!--div id="countdown_dashboard" style="width:418px;display:none">
                   </div-->
 
