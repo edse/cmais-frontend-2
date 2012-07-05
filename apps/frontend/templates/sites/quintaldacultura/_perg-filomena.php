@@ -134,7 +134,7 @@
       
     </script>
 <!--Pergunte a Filomena-->
-<div id="pFilomena">
+<div id="pFilomena" style="display:none">
   <a href="javascript:;" class="troca tCha"></a>
   <!--FORMULARIO-->
   <form id="form-contato" action="" method="post">
@@ -194,7 +194,7 @@
 <!--RESPOSTA FORM FILOMENA-->
 
 <!--CHA COM CHARADAS-->
-<div id="cha" style="display:none">
+<div id="cha" >
   <a href="javascript:;" class="troca tFilo"></a>
   <!--FORMULARIO-->
   <form id="form-contato-2" action="" method="post">
