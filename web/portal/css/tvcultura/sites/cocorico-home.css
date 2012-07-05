@@ -40,3 +40,5 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #menu-rodape .blocos .arte a, .arte, .arte-e-cultura{color:#339133;}
 
 .blocos li a.bg:hover { border-color:#a7c127 !important;} 
+#menu-portal .menu-aberto .abas li.ativo a,
+#menu-portal .menu-aberto .abas li:hover a {background: #F63 !important;}
