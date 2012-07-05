@@ -236,7 +236,7 @@ z-index: 10000;
 #menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
 #menu-portal-1 #menu-portal .m-radio .bg-Ratimbum { width:883px; height: 333px;}
 
-#menu-portal-2{width:887px; height:32px;position:absolute;left: 81px;z-index:1000}
+#menu-portal-2{width:887px; height:32px;position:absolute;left: 81px;top:-1px;z-index:1000}
 #menu-portal-2 h1 a{margin:7px 5px 5px 5px;text-indent:-9999px;width:94px; height:23px; display:block; float:left;background:url(../images/logo-cmais-topo-novo.png) no-repeat;}
 #menu-portal-2 ul.abas{width:572px; float:left;background: none;}
 #menu-portal-2 li{float:left; width:auto; height: auto;}
