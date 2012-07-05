@@ -110,7 +110,7 @@
 	  	i = 364 / 640;
 	  	mobWidth = document.width;
 	  	mobHeight = Math.round(mobWidth * i);
-	  	alert("width: "+mobWidth+"\nheight: "+mobHeight);
+	  	
 	  	if (mobWidth < 640)
 	  	{
 	  		$('embed#mpl').attr({
@@ -125,6 +125,7 @@
 	  			'height': 364
 	  		});
 	  	}
+	  	alert("width: "+mobWidth+"\nheight: "+mobHeight);
 	 	}
 	 	
 		$(function()
