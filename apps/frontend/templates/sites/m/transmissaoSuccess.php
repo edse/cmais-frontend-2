@@ -138,7 +138,7 @@
 			
 			$(window).orientationchange(function()
 			{
-				verificaTela();
+		ns		verificaTela();
     	});
 		});
 
