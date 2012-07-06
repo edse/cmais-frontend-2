@@ -81,7 +81,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
           $('#espera').fadeIn('slow');
         },
         success: function(data){
-        	alert(data);
+        	window.alert(data);
           var i=1;
           $.each(data, function(key, val) {
             $('.candidato'+i+' .porcento').html("<p>"+val.votes+"</p>");
@@ -347,7 +347,6 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
   </div>
   <div id="miolo"></div>
   <div class="box-lateral"></div>
-  
   <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>">
     <?php 
     $form = new BaseForm();
