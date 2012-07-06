@@ -67,12 +67,14 @@ class _sectionActions extends sfActions
 	      		die(); 
 	        }
 	     	}
+				/*
 	    	if($this->section->getSlug() == 'voceescolhe'){
 	        if(date('y-m-d H:i:s') < "2012-07-06 12:00:00" || date('y-m-d H:i:s') > "2012-07-06 18:00:00") {
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      		die(); 
 	        }
 	     	}
+				 */
 	    }
 
     
