@@ -6,9 +6,9 @@ $respostas = Doctrine_Query::create()
   ->execute();
 
 $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-$img_a = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+$img_a = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".gif";
 $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-$img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+$img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".gif";
 ?>
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
