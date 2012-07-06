@@ -1312,6 +1312,7 @@ EOT;
 
 
   public function executeEnquetes(sfWebRequest $request){
+  	/*
     $request->checkCSRFProtection();
     //if(!$request->isXmlHttpRequest()) die();
 
@@ -1382,7 +1383,62 @@ EOT;
       }
 
     }
-  }  
+		 * 
+		 */
+ 		if($request->getParameter('opcao') > 0){
+
+			$aa = Doctrine::getTable('AssetAnswer')->findOneById($request->getParameter('opcao'));
+			$aq = Doctrine::getTable('AssetQuestion')->findOneById($aa->AssetQuestion->id);
+	
+			$filename = "/var/frontend/web/uploads/assets/question/".$aa->AssetQuestion->id.".txt";
+			$vote = date("d/m/Y H:i:s")."\t".time()."\t".$request->getParameter('opcao')."\n";
+			$fp = fopen($filename,'a');
+			fwrite($fp, $vote);
+			fclose($fp); 
+	
+			$lines = file($filename);
+			$total = count($lines);
+			for($i=$total;$i>0;$i--){
+	  		$vote = trim(@end(explode("\t", $lines[$i])));
+	  		if(intVal($vote)>0){
+	    		@$votes[$vote] += 1;
+	  		}
+			}
+	
+			/*
+			$file = fopen($filename, "r") or exit("Unable to open file!");
+			$results = null;
+			$votes = null;
+			$total = 0;
+			for($i=1;$i<10;$i++){
+			  $vote = trim(@end(explode("\t", fgets($file))));
+			  if(intVal($vote)>0){
+			    @$votes[$vote] += 1;
+			    $total++;
+			  }
+			}
+			 */
+			/*
+			while(!feof($file)){
+			  $vote = trim(@end(explode("\t", fgets($file))));
+			}
+			
+			
+			fclose($file);
+			*/
+			//var_dump($votes);
+	
+			foreach($aq->Answers as $a){
+			  $results[] = array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+			}
+			
+			//echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
+			die(json_encode($results));
+	  }else{
+	    header("Location: http://cmais.com.br");
+	    die();
+	  }
+	}  		
 
   public function executeMensagem(sfWebRequest $request){
     $request->checkCSRFProtection();
