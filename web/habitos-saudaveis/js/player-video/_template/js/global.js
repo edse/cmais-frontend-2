@@ -10,9 +10,9 @@ var selectedMuppet="";
 function onWindowLoad(){
 	if(typeof lowBandwidth == "undefined" || !lowBandwidth){
 		// preload main nav
-		preloadMainNav();
+		//preloadMainNav();
 		// select a muppet
-		//try{selectedMuppet = randomMuppet();}catch(e){}
+		try{selectedMuppet = randomMuppet();}catch(e){}
 	}
 	// prevent star cursor from showing over select boxes
 	hideStarSelectBoxes();
