@@ -14,6 +14,8 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #capa-site #menu-tv-cocorico ul{width:445px;float:right;margin:23px 0 0 0;position: relative;z-index: 5000;}
 #capa-site #menu-tv-cocorico li{float:left;}
 
+#horario-tv p {color: #277DC7;font-size: 15px;font-weight: bolder;font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif;text-transform: uppercase;}
+
 #video-tv-cocorico{height:582px;float:left;background-color:#f1ba27;border:2px solid #f1ba27;margin:6px 0 0 0;}
 
 #palco{ overflow:hidden;}

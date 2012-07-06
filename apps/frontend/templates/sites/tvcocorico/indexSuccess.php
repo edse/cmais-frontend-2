@@ -72,7 +72,14 @@
         </ul>
         <!--/LISTA-BOTOES-->  
       </div>
-      <!-- /MENU COCORICO -->        
+      <!-- /MENU COCORICO -->
+      
+      <!-- HORARIO -->
+      <div id="horario-tv">
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <p>de segunda a sexta, 11h</p>
+      </div>
+      <!-- HORARIO -->        
       
       <!--VIDEO-->
       <div id="video-tv-cocorico">
