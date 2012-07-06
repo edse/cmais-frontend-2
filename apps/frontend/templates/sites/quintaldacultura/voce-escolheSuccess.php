@@ -211,7 +211,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                   
                   <!--PORCENTO-->
                   <div class="porcento" style="display: none;">
-                    <p>60%</p>
+                    <p></p>
                   </div>
                   <!--/PORCENTO-->
   
@@ -245,7 +245,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                   
                   <!--PORCENTO-->
                   <div class="porcento" style="display: none;">
-                    <p>60%</p>
+                    <p></p>
                   </div>
                   <!--/PORCENTO-->
                 
