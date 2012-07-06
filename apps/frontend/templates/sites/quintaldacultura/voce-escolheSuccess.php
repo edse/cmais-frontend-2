@@ -191,7 +191,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
               <div id="ca" class="voce-escolhe candidato candidatoA candidato1" name="1">
                 
                 <!--BOTAO-->
-                <a href="javascript:;" class="voto" rel="<?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $respostas[0]->Asset->AssetAnswer->getId()?>">
+                <a href="javascript:;" class="voto" rel="<?php echo $respostas[0]->Asset->AssetAnswer->getDescription()?>" name="<?php echo $respostas[0]->Asset->AssetAnswer->getId()?>">
                 
                   <!--NOME-->
                   <p><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></p>
@@ -225,7 +225,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
               <div id="cb" class="voce-escolhe candidato candidatoB candidato2" name="2">
                 
                 <!--BOTAO-->
-                <a href="javascript:;" class="voto" rel="<?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $respostas[1]->Asset->AssetAnswer->getId()?>">
+                <a href="javascript:;" class="voto" rel="<?php echo $respostas[1]->Asset->AssetAnswer->getDescription()?>" name="<?php echo $respostas[1]->Asset->AssetAnswer->getId()?>">
                 
                   <!--NOME-->
                   <p><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?></p>
@@ -261,7 +261,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                 <!--TEXTO CONFIRMA VOTO-->
                 <div class="texto">
                   <span class="seta"></span>
-                  <p class="certeza">CONFIRMA SEU VOTO EM</p>
+                  <!--p class="certeza">CONFIRMA SEU VOTO EM</p-->
                   <p id="escolha_texto">NOME?</p>
                 </div>
                 <!--/TEXTO CONFIRMA VOTO-->
