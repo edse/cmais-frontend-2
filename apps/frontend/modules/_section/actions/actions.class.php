@@ -75,7 +75,7 @@ class _sectionActions extends sfActions
 	      		die(); 
 	        }
 					*/
-	    		if((date('w') != 5 || date('H:i') > "14:00")) {
+	    		if((date('w') != 5 || date('H:i') > "18:00")) {
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      		die(); 
 					}
