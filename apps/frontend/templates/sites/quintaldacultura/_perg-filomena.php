@@ -177,8 +177,8 @@
     
     <!--CIDADE-->
     <div class="t1input">
-      <label>Cidade:</label>
-      <input type="text" name="cidade" id="cidade" class="cidade" />
+      <label>CIDADE:</label>
+      <input type="text" name="cidade" id="cidade" class="cidade" placeholder="Sua Cidade Amiguinho"/>
     </div>
     <!--/CIDADE-->
     
