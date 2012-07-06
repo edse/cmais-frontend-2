@@ -55,7 +55,7 @@ class _sectionActions extends sfActions
 	     }
 	    }
 			
-	    if(($this->site->getSlug() == "quintaldacultura") && $request->getParameter('force') == "1"){
+	    if(($this->site->getSlug() == "quintaldacultura") && $request->getParameter('force') != "1"){
 	    	if(in_array($this->section->getSlug(), array('home-page','homepage','home'))){
 					/*
 	        if(date('y-m-d H:i:s') >= "2012-07-06 12:00:00" && date('y-m-d H:i:s') <= "2012-07-06 18:00:00") {
@@ -63,7 +63,7 @@ class _sectionActions extends sfActions
 	      		die(); 
 	        }
 					*/
-	    		if(date('w') == 5 && date('H:i') >= "12:00") {
+	    		if(date('w') == 1 && date('H:i') >= "12:00") {
 	          header("Location: http://cmais.com.br/quintaldacultura/voceescolhe");
 	      		die(); 
 					}
@@ -75,7 +75,7 @@ class _sectionActions extends sfActions
 	      		die(); 
 	        }
 					*/
-	    		if(date('w') == 5 && date('H:i') > "14:00") {
+	    		if(date('w') == 1 && date('H:i') > "18:00") {
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      		die(); 
 					}
