@@ -1405,7 +1405,7 @@ EOT;
 	  		}
 			}
 	
-			/*
+			
 			$file = fopen($filename, "r") or exit("Unable to open file!");
 			$results = null;
 			$votes = null;
@@ -1417,15 +1417,15 @@ EOT;
 			    $total++;
 			  }
 			}
-			 */
-			/*
+			
+			
 			while(!feof($file)){
 			  $vote = trim(@end(explode("\t", fgets($file))));
 			}
 			
 			
 			fclose($file);
-			*/
+			
 			//var_dump($votes);
 	
 			foreach($aq->Answers as $a){
