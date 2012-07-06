@@ -10,7 +10,7 @@ var selectedMuppet="";
 function onWindowLoad(){
 	if(typeof lowBandwidth == "undefined" || !lowBandwidth){
 		// preload main nav
-		preloadMainNav();
+		//preloadMainNav();
 		// select a muppet
 		try{selectedMuppet = randomMuppet();}catch(e){}
 	}

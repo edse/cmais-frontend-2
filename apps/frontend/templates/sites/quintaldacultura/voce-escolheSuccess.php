@@ -86,16 +86,11 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
             $('.candidato'+i+' .porcento').html("<p>"+val.votes+"</p>");
             i++;
           });
-
           $('.votar, .confirma, #espera').fadeOut('fast');
           $('.porcento, .candidato').fadeIn('fast');
           $('.voto').removeClass('selected');
-         
           $('#pConfirma').addClass('tCentro').attr("id", "pAtivo");
           $('#pAtivo').removeClass('tCentro').attr("id", "pConfirma");
-          
-          <?php echo $respostas[0]->Asset->getId()?>
-          
         }
       });
     }
@@ -211,7 +206,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                   
                   <!--PORCENTO-->
                   <div class="porcento" style="display: none;">
-                    <p>60%</p>
+                    <p></p>
                   </div>
                   <!--/PORCENTO-->
   
@@ -245,7 +240,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                   
                   <!--PORCENTO-->
                   <div class="porcento" style="display: none;">
-                    <p>60%</p>
+                    <p></p>
                   </div>
                   <!--/PORCENTO-->
                 
@@ -345,7 +340,6 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
   </div>
   <div id="miolo"></div>
   <div class="box-lateral"></div>
-  
   <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>">
     <?php 
     $form = new BaseForm();

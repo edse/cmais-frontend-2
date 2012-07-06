@@ -12,10 +12,6 @@
 
   <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-  <!--script language="Javascript" type="text/javascript" src="/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script-->
-  <!--script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script-->
-  <!--link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" /-->
-
   
   <!--GOOGLE ANALYTICS-->
   <script type="text/javascript">
@@ -31,40 +27,6 @@
       })();
   </script>
   <!--/GOOGLE ANALYTICS-->
-  <script>
-  /*
-	  var ts = null;
-	  var te = null;
-  
-	  function checkStreamingStart(){
-	    var request = $.ajax({
-	      dataType: 'jsonp',
-	      success: function(data) {
-	        eval(data);
-	      },
-	      url: '/ajax/streaming'
-	    });
-	  }
-  
-	  function checkStreamingEnd(){
-	    var request = $.ajax({
-	      dataType: 'jsonp',
-	      success: function(data) {
-	        //eval(data);
-	        if (data != "")
-	       	  document.history.back(); 
-	      },
-	      url: '/ajax/streamingend'
-	    });
-	  }
-	  
-	  $(window).load(function(){
-	    checkStreamingStart();
-	    te=setInterval("checkStreamingEnd()",60000);
-	  });
-	  */
-  </script>
-  
   
 </head>
 <!--/HEADER PADRAO JQUERY MOBILE-->
@@ -139,12 +101,8 @@
 
 	</script>
 	<!-- CONTEUDO -->
-	<div class="conteudoLive" style="text-align: center">
-		<!--div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div-->
+	<div class="conteudoLive" style="margin: 0 auto">
 		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="360" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
-                  <!--div id="countdown_dashboard" style="width:418px;display:none">
-                  </div-->
-
 	</div>
 	<!-- /CONTEUDO -->
 		
