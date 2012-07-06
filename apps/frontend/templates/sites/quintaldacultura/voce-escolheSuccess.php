@@ -81,7 +81,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
           $('#espera').fadeIn('slow');
         },
         success: function(data){
-        	window.alert(data);
+        	//window.alert(data);
         	
           var i=1;
           $.each(data, function(key, val) {
