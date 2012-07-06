@@ -85,6 +85,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
           $.each(data, function(key, val) {
             $('.candidato'+i+' .porcento').html("<p>"+val.votes+"</p>");
             i++;
+            alert($('.candidato'+i+' .porcento').html());
           });
 
           $('.votar, .confirma, #espera').fadeOut('fast');
