@@ -115,7 +115,8 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
        $('#escolha_texto').html($(this).attr('rel'));
        
        $(this).find('votar').fadeOut('fast');
-       $('.texto .seta').removeClass('setaDireita, setaEsquerda');
+       $('.texto span.seta').removeClass('setaDireita');
+       $('.texto span.seta').removeClass('setaEsquerda');
        $('.texto p').removeClass('right, left');
        $('.confirma').removeClass('left346, left106');
        
