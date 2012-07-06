@@ -185,7 +185,7 @@
     <!--ESTADO-->
     <div class="t2input">
       <label>ESTADO:</label>
-        <select class="estado required" id="estado">
+        <select class="estado required" id="estado" name="estado">
           <option value="" selected="selected">--</option>
           <option value="Acre">AC</option>
           <option value="Alagoas">AL</option>
@@ -288,7 +288,7 @@
     <!--ESTADO-->
     <div class="t2input">
       <label>ESTADO:</label>
-        <select class="estado required" id="estado">
+        <select class="estado required" id="estado" name="estado">
           <option value="" selected="selected">--</option>
           <option value="Acre">AC</option>
           <option value="Alagoas">AL</option>
