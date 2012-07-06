@@ -81,21 +81,22 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
           $('#espera').fadeIn('slow');
         },
         success: function(data){
+        	alert(1);
           var i=1;
           $.each(data, function(key, val) {
             $('.candidato'+i+' .porcento').html("<p>"+val.votes+"</p>");
             i++;
             alert($('.candidato'+i+' .porcento').html());
           });
-
+					/*
           $('.votar, .confirma, #espera').fadeOut('fast');
           $('.porcento, .candidato').fadeIn('fast');
           $('.voto').removeClass('selected');
          
           $('#pConfirma').addClass('tCentro').attr("id", "pAtivo");
           $('#pAtivo').removeClass('tCentro').attr("id", "pConfirma");
-          
-          <?php echo $respostas[0]->Asset->getId()?>
+          */
+          <?php //echo $respostas[0]->Asset->getId()?>
           
         }
       });
