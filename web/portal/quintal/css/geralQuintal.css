@@ -2617,7 +2617,7 @@ z-index: 503;
 .troca.tFilo:hover{background:  url(../images/btn-pergunte-over.png) no-repeat top left;}
 .troca.tCha{width: 242px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-charada.png) no-repeat top left;}
 .troca.tCha:hover{background:  url(../images/btn-charada-over.png) no-repeat top left;}
-#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
 #pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
