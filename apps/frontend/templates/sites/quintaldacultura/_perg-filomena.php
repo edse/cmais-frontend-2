@@ -49,6 +49,13 @@
               required: true,
               email: true
             },
+            cidade:{
+              required: true,
+              minlength: 2
+            },
+            estado:{
+              required: true
+            },
             mensagem:{
               required: true,
               minlength: 5
@@ -57,6 +64,8 @@
           messages:{
             nome: "*os campos em vermelho apresentam erro de preenchimento!",
             email: "*os campos em vermelho apresentam erro de preenchimento!",
+            cidade: "*os campos em vermelho apresentam erro de preenchimento!",
+            estado: "*os campos em vermelho apresentam erro de preenchimento!",
             mensagem: "*os campos em vermelho apresentam erro de preenchimento!" 
           },
           success: function(label){
@@ -103,6 +112,13 @@
               required: true,
               email: true
             },
+            cidade:{
+              required: true,
+              minlength: 2
+            },
+            estado:{
+              required: true
+            },
             mensagem:{
               required: true,
               minlength: 5
@@ -111,6 +127,8 @@
           messages:{
             nome: "*os campos em vermelho apresentam erro de preenchimento!",
             email: "*os campos em vermelho apresentam erro de preenchimento!",
+            cidade: "*os campos em vermelho apresentam erro de preenchimento!",
+            estado: "*os campos em vermelho apresentam erro de preenchimento!",
             mensagem: "*os campos em vermelho apresentam erro de preenchimento!"
           },
           success: function(label){
@@ -156,6 +174,49 @@
       <input type="text" name="email" class="email"  placeholder="amiguinho@seuemail.com.br"/>
     </div>
     <!--/E-MAIL-->
+    
+    <!--CIDADE-->
+    <div class="t1input">
+      <label>Cidade:</label>
+      <input type="text" name="cidade" id="cidade" class="cidade" />
+    </div>
+    <!--/CIDADE-->
+    
+    <!--ESTADO-->
+    <div class="t2input">
+      <label>ESTADO:</label>
+        <select class="estado required" id="estado">
+          <option value="" selected="selected">--</option>
+          <option value="Acre">AC</option>
+          <option value="Alagoas">AL</option>
+          <option value="Amazonas">AM</option>
+          <option value="Amap&aacute;">AP</option>
+          <option value="Bahia">BA</option>
+          <option value="Cear&aacute;">CE</option>
+          <option value="Distrito Federal">DF</option>
+          <option value="Espirito Santo">ES</option>
+          <option value="Goi&aacute;s">GO</option>
+          <option value="Maranh&atilde;o">MA</option>
+          <option value="Minas Gerais">MG</option>
+          <option value="Mato Grosso do Sul">MS</option>
+          <option value="Mato Grosso">MT</option>
+          <option value="Par&aacute;">PA</option>
+          <option value="Para&iacute;ba">PB</option>
+          <option value="Pernambuco">PE</option>
+          <option value="Piau&iacute;">PI</option>
+          <option value="Paran&aacute;">PR</option>
+          <option value="Rio de Janeiro">RJ</option>
+          <option value="Rio Grande do Norte">RN</option>
+          <option value="Rond&ocirc;nia">RO</option>
+          <option value="Roraima">RR</option>
+          <option value="Rio Grande do Sul">RS</option>
+          <option value="Santa Catarina">SC</option>
+          <option value="Sergipe">SE</option>
+          <option value="S&atilde;o Paulo">SP</option>
+          <option value="Tocantins">TO</option>
+      </select>
+    </div>
+    <!--/ESTADO-->
     
     <!--PERGUNTA-->
     <div class="t2message">
@@ -216,6 +277,49 @@
       <input type="text" name="email" class="email"  placeholder="amiguinho@seuemail.com.br"/>
     </div>
     <!--/E-MAIL-->
+    
+    <!--CIDADE-->
+    <div class="t1input">
+      <label>CIDADE:</label>
+      <input type="text" name="cidade" id="cidade" class="cidade" placeholder="Sua Cidade Amiguinho"/>
+    </div>
+    <!--/CIDADE-->
+    
+    <!--ESTADO-->
+    <div class="t2input">
+      <label>ESTADO:</label>
+        <select class="estado required" id="estado">
+          <option value="" selected="selected">--</option>
+          <option value="Acre">AC</option>
+          <option value="Alagoas">AL</option>
+          <option value="Amazonas">AM</option>
+          <option value="Amap&aacute;">AP</option>
+          <option value="Bahia">BA</option>
+          <option value="Cear&aacute;">CE</option>
+          <option value="Distrito Federal">DF</option>
+          <option value="Espirito Santo">ES</option>
+          <option value="Goi&aacute;s">GO</option>
+          <option value="Maranh&atilde;o">MA</option>
+          <option value="Minas Gerais">MG</option>
+          <option value="Mato Grosso do Sul">MS</option>
+          <option value="Mato Grosso">MT</option>
+          <option value="Par&aacute;">PA</option>
+          <option value="Para&iacute;ba">PB</option>
+          <option value="Pernambuco">PE</option>
+          <option value="Piau&iacute;">PI</option>
+          <option value="Paran&aacute;">PR</option>
+          <option value="Rio de Janeiro">RJ</option>
+          <option value="Rio Grande do Norte">RN</option>
+          <option value="Rond&ocirc;nia">RO</option>
+          <option value="Roraima">RR</option>
+          <option value="Rio Grande do Sul">RS</option>
+          <option value="Santa Catarina">SC</option>
+          <option value="Sergipe">SE</option>
+          <option value="S&atilde;o Paulo">SP</option>
+          <option value="Tocantins">TO</option>
+      </select>
+    </div>
+    <!--/ESTADO-->
     
     <!--PERGUNTA-->
     <div class="t2message">

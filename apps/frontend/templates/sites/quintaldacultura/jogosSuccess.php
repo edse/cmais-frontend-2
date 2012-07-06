@@ -75,6 +75,7 @@
               <span class="palhaca"></span>
                 <div class="rodaGigante">
                   <a class="todosJogos" href="/quintaldacultura/jogos/todos"><span>Todos os jogos</span></a>
+                  <a class="vila" href="http://cmais.com.br/vilasesamo/jogos/index.html"><span>Vila Sesamo</span></a>
                   <a class="desafio" href="/quintaldacultura/jogos/desafio"><span>Desafio</span></a>
                   <a class="habilidade" href="/quintaldacultura/jogos/habilidade"><span>Habilidade</span></a>
                   <a class="aventura" href="/quintaldacultura/jogos/aventura"><span>Aventura</span></a>

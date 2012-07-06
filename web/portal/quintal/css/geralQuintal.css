@@ -827,14 +827,21 @@ width: 680px;
   width: 112px;
   height: 76px;
 }
+.rodaGigante a.vila{
+  background-position: 0 -1610px;
+  top: -27px;
+  left: 129px;
+  height:84px !important;
+}
 .rodaGigante a.desafio{
   background-position: 0 -911px;
-  top: 30px;
-  left: 15px;
+  top: 55px;
+  left: 8px;
 }
 .rodaGigante a.habilidade{
   background-position: 0 -987px;
-  top: 165px;
+  top: 160px;
+  left: 18px;
 }
 .rodaGigante a.aventura{
   background-position: 0 -1063px;
@@ -843,20 +850,22 @@ width: 680px;
 }
 .rodaGigante a.educativo{
   background-position: 0 -1139px;
-  top: 130px;
+  top: 144px;
   left: 270px;
 }
 .rodaGigante a.esporte{
   background-position: 0 -1215px;
-  left: 213px;
+  left: 254px;
+  top: 35px;
 }
+.rodaGigante a.vila span{ float: left;margin: 61px 0 0 8px;}
 .rodaGigante a.desafio span,
 .rodaGigante a.habilidade span,
 .rodaGigante a.aventura span,
 .rodaGigante a.educativo span,
 .rodaGigante a.esporte span{
   float: left;
-  margin: 50px 0 0 10px;
+  margin: 50px 0 0 8px;
 }
 .rodaGigante a.desafio span{
   margin-left: 22px;
@@ -2608,37 +2617,40 @@ z-index: 503;
 .troca.tFilo:hover{background:  url(../images/btn-pergunte-over.png) no-repeat top left;}
 .troca.tCha{width: 242px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-charada.png) no-repeat top left;}
 .troca.tCha:hover{background:  url(../images/btn-charada-over.png) no-repeat top left;}
-#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
+#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
 #pFilomena input.nome {width: 180px;}
 #pFilomena input.email {width: 276px;}
-#pFilomena .t1input{width: 296px;float: left;}
-#pFilomena .t2input{width: 396px;float: left;}
-#pFilomena .t2message label{margin: 15px 8px 0 0; text-align:right}
+#pFilomena .t1input{width: 296px;float: left;margin:4px 0;}
+#pFilomena select{width:100px; border:none;background-color:#F5E700;float:left;}
+#pFilomena .t2input{width: 396px;float: left;margin:4px 0;}
+#pFilomena .t2message label{margin: 4px 8px 0 33px; text-align:right}
 #pFilomena .t2message label span{font-weight:normal;}
-#pFilomena .t2message textarea{margin: 15px 0 0 0; width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
+#pFilomena .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
+#pFilomena .t2message textarea#mensagem{width: 461px;}
 #pFilomena .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#pFilomena label.error{color: red;position: absolute;left: 30px;bottom: 60px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
-#pFilomena .nome.error, #pFilomena .email.error, #pFilomena .mensagem.error{border:2px red solid !important;}
+#pFilomena label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
+#pFilomena .nome.error, #pFilomena .email.error, #pFilomena .cidade.error,#pFilomena .estado.error, #pFilomena .mensagem.error{border:2px red solid !important;}
 #pFilomena span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
-#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 106px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #cha h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #cha label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #cha input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
 #cha input.nome {width: 180px;}
 #cha input.email {width: 276px;}
-#cha .t1input{width: 296px;float: left;}
-#cha .t2input{width: 396px;float: left;}
-#cha .t2message label{margin: 15px 8px 0 0; text-align:right}
+#cha .t1input{width: 296px;float: left;margin:4px 0;}
+#cha select{width:100px; border:none;background-color:#F5E700;float:left;}
+#cha .t2input{width: 396px;float: left;margin:4px 0;}
+#cha .t2message label{margin: 4px 8px 0 33px; text-align:right}
 #cha .t2message label span{font-weight:normal;}
-#cha .t2message textarea{margin: 15px 0 0 0; width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
-#cha .t2message textarea#mensagem{width: 517px;}
+#cha .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
+#cha .t2message textarea#mensagem{width: 461px;}
 #cha .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#cha label.error{color: red;position: absolute;left: 30px;bottom: 60px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
-#cha .nome.error, #cha .email.error, #cha .mensagem.error{border:2px red solid !important;}
+#cha label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
+#cha .nome.error, #cha .email.error, #cha .cidade.error,#cha .estado.error, #cha .mensagem.error{border:2px red solid !important;}
 #cha span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
 #respCha{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
