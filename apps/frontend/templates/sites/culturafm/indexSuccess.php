@@ -52,7 +52,7 @@
           	<a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
           </div>         
 
-	       <img style="position: absolute;" usemap="#cultura" src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm_aniversario.png" title="Conheça a história da rádio Cultura FM" alt="Conheça a história da rádio Cultura FM" >
+	       <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm_aniversario.png" title="Conheça a história da rádio Cultura FM" alt="Conheça a história da rádio Cultura FM" >
          <map name="cultura" id="cultura">
           <area shape="poly" coords="4,305,2,4,418,2,419,161,968,163,966,304" href="http://culturafm.cmais.com.br/culturafm35anos" title="Conheça a história da rádio Cultura FM" target="_self"/>
         </map>
