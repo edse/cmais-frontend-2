@@ -1405,7 +1405,7 @@ EOT;
 	  		}
 			}
 	
-			
+			/*
 			$file = fopen($filename, "r") or exit("Unable to open file!");
 			$results = null;
 			$votes = null;
@@ -1427,7 +1427,7 @@ EOT;
 			fclose($file);
 			
 			//var_dump($votes);
-	
+			*/
 			foreach($aq->Answers as $a){
 			  $results[] = array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
 			}
