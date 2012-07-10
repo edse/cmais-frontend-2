@@ -2665,6 +2665,7 @@ z-index: 503;
 
 /* pergunte a filomena */
 /* itens background */
+.conteudoWrapper #back{position: relative; z-index: -1}
 .conteudoWrapper #back .pos{position:absolute;}
 #nuvem1{width:266px; height:212px; top:-25px; left:-280px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
 #nuvem2{width:188px; height:155px; top:-120px; left:426px;background: url(/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
