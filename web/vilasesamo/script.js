@@ -9,3 +9,7 @@ function follow(evt) {if (document.getElementById) {var obj = document.getElemen
 obj.left = (parseInt(mouseX(evt))+offX) + 'px';        
 obj.top = (parseInt(mouseY(evt))+offY) + 'px';}}        
 document.onmousemove = follow;        
+
+
+
+
