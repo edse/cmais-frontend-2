@@ -125,10 +125,10 @@ form.selecao .item,
 .menu-interna a { font-family:'GothamMediumRegular';font-weight: normal; font-style: normal;  }
 
 
-#barra-site .redes {float:right; margin-top:0;}
+#barra-site .redes {float:right; margin-top:0;position: relative;z-index: 2;}
 #barra-site #horario { float:right; clear:both; margin-top:-60px; width:111px;}
 #barra-site #horario { *margin-top:20px;}
-#barra-site #horario { *width: 90px }
+#barra-site #horario { *width: 90px;position: relative;z-index: 1;}
 .topo-programa .aovivo { display:block; width:111px; height:44px; background:url(/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
 #home { background: no-repeat 0 127px; height:350px; }
 .violino { background-image:url(/portal/images/capaPrograma/culturafm/violino.jpg) !important; }

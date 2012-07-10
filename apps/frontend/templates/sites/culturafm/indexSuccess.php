@@ -4,15 +4,17 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <script>
+
+/* comentado para aplicar a home com o link para infografico de aniversario de 35 anos
   number2 = 429;
   $(function(){ 
 	  var instruments=new Array(/*"violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete",*/ "fm35-1", "fm35-2", "fm35-3" );
 	  //var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
 	  // o codigo acima é uma gambi para aumentar a probabilidade de 'homenagem-tineti' ser sorteado mais vezes
 	 	//var instruments=new Array("trombone");
-  	var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
+  	/*var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
 	  $('div#home').addClass(currentInstrument);
-  });
+  });*/
 </script>
 
 <!-- remover este css depois que acabar campanha da radio -->
@@ -50,7 +52,10 @@
           	<a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
           </div>         
 
-	       <!-- img src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm2.jpg" title="Music Nation 2012" alt="Music Nation 2012" //-->
+	       <img style="position: absolute;" usemap="#cultura" src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm_aniversario.png" title="Conheça a história da rádio Cultura FM" alt="Conheça a história da rádio Cultura FM" >
+         <map name="cultura" id="cultura">
+          <area shape="poly" coords="4,305,2,4,418,2,419,161,968,163,966,304" href="http://culturafm.cmais.com.br/culturafm35anos" title="Conheça a história da rádio Cultura FM" target="_self"/>
+        </map>
         </div>
 
         <?php if(isset($siteSections)): ?>
