@@ -55,7 +55,7 @@ class _sectionActions extends sfActions
 	     }
 	    }
 			
-	    if(($this->site->getSlug() == "quintaldacultura") && $request->getParameter('force') != "1"){
+	    if(($this->site->getSlug() == "quintaldacultura") && !$request->getParameter('force')){
 	    	if($this->section->getSlug() == 'voceescolhe'){
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      	  die(); 
