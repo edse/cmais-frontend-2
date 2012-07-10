@@ -328,7 +328,7 @@
         [<span id="textCounter1">250</span>]
       </label>
       
-      <textarea name="mensagem" id="mensagem" class="mensagem" placeholder="Sua charada com rersposta" onKeyDown="limitText(this,250,'#textCounter1');"></textarea>
+      <textarea name="mensagem" id="mensagem" class="mensagem" placeholder="Sua charada com resposta" onKeyDown="limitText(this,250,'#textCounter1');"></textarea>
     </div>
     <!--PERGUNTA-->
 
