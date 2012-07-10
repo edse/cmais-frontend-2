@@ -54,7 +54,7 @@ class _sectionActions extends sfActions
 	        }
 	     }
 	    }
-			
+	/*		
 	    if(($this->site->getSlug() == "quintaldacultura") && $request->getParameter('force') != "1"){
 	    	if(in_array($this->section->getSlug(), array('home-page','homepage','home'))){
 					/*
@@ -62,7 +62,7 @@ class _sectionActions extends sfActions
 	          header("Location: http://cmais.com.br/quintaldacultura/voceescolhe");
 	      		die(); 
 	        }
-					*/
+					
 	    		if(date('w') == 1 && date('H:i') >= "12:00") {
 	          header("Location: http://cmais.com.br/quintaldacultura/voceescolhe");
 	      		die(); 
@@ -74,14 +74,14 @@ class _sectionActions extends sfActions
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      		die(); 
 	        }
-					*/
+					
 	    		if((date('w') != 1 || date('H:i') > "18:00")) {
 	          header("Location: http://cmais.com.br/quintaldacultura");
 	      		die(); 
 					}
 				}
 	    }
-
+*/
     
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
         if($this->section->getSlug() == "diario-de-programacao" || $this->section->getSlug() == "home" || $this->section->getSlug() == "homepage" || $this->section->getSlug() == "programacao"){
