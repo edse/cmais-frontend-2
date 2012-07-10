@@ -17,15 +17,19 @@
 		      <a href="<?php echo url_for('homepage') . 'programa/' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
 		        <div class="touchcarousel-a" >
 		          <!--LOGO-->
-		          <?php if ($d->Asset->Site->getImageIcon()): ?>
-		          <img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">
-							<?php endif; ?>		          
+		          <div style="min-heigh:65px">
+		          	<?php if ($d->Asset->Site->getImageIcon()): ?>
+								<img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">
+								<?php endif; ?>		          	
+		          </div>
 		          <!--/LOGO-->
-		          <?php if ($d->retriveImageUrlByImageUsage('image-9')): ?>
 		          <!--FOTO-->
-		          <img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage('image-9') ?>" width="100%">
+		          <div style="min-heigh:197px">
+		          	<?php if ($d->retriveImageUrlByImageUsage('image-9')): ?>
+			          <img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage('image-9') ?>" width="100%">
+			          <?php endif; ?>
+		          </div>
 		          <!--/FOTO-->
-		          <?php endif; ?>
 		          <!--DESCRICAO / HORA-->
 		          	<p><?php echo $d->getTitle() ?></p>
 		          	<p><?php echo $d->getLabel() ?></p>
