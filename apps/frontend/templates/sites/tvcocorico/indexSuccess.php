@@ -77,7 +77,7 @@
       <!-- HORARIO -->
       <div id="horario-tv">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <p>de segunda a sexta, 11h</p>
+        <p>AO VIVO DE 2ª a 6ª, ÀS 11H</p>
       </div>
       <!-- HORARIO -->        
       
