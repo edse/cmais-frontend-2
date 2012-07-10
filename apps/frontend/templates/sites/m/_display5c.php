@@ -17,11 +17,11 @@
 		      <a href="<?php echo url_for('homepage') . 'programa/' . $d->Asset->Site->getSlug() ?>" data-transition="slidedown" rel="external">
 		        <div class="touchcarousel-a" >
 		          <!--LOGO-->
-		          <div style="min-height:68px">
+		          <div style="height: 68px; vertical-align: middle;display: table-cell;">
 		          	<?php if ($d->Asset->Site->getImageIcon()): ?>
 								<img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">
 								<?php else: ?>
-								<?php echo $d->Asset->Site->Program->getTitle() ?>	
+								<h3><?php echo $d->Asset->Site->Program->getTitle() ?></h3>	
 								<?php endif; ?>		          	
 		          </div>
 		          <!--/LOGO-->
