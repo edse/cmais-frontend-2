@@ -17,7 +17,7 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-  	 <div id="bg-site"></div>
+	 <div id="bg-site"></div>
 
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -28,19 +28,15 @@ $(function(){
       <div id="barra-site">
 
         <div class="topo-programa">
-          
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/logo-radiofm.png"></a></h2>
+       
+          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-          
-          <!-- horario -->
           <div id="horario">
-            <p>A frequência dos clássicos.</p>
-          </div>
-          <!-- /horario -->
-
+          	<a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+          </div>         
         </div>
 
         <?php if(isset($siteSections)): ?>
