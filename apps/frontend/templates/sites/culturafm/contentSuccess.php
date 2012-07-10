@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/radiofm/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -27,19 +28,15 @@ $(function(){
       <div id="barra-site">
 
         <div class="topo-programa">
-          
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/logo-radiofm.png"></a></h2>
+       
+          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-          
-          <!-- horario -->
           <div id="horario">
-            <p>A frequência dos clássicos.</p>
-          </div>
-          <!-- /horario -->
-
+          	<a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+          </div>         
         </div>
 
         <?php if(isset($siteSections)): ?>
