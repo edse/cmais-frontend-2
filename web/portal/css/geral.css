@@ -242,7 +242,7 @@ z-index: 10000;
 #menu-portal-2 li{float:left; width:auto; height: auto;}
 
 #menu-portal-2 .abas li{margin-right:20px!important;}
-#menu-portal-2 li a { font:bold 14px arial; color:#fff; text-transform:uppercase;  padding:10px 7px 0 7px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
+#menu-portal-2 li a { font:bold 14px arial; color:#fff; text-transform:uppercase;  padding:10px 7px 0 7px; text-decoration:none; position:relative; display:block; text-align:left; height:26px; }
 
 #menu-portal-2 .busca-portal a { width:220px;}  
 #menu-portal-2 .busca-portal { float:right; margin:6px -4px 0 0;}
@@ -534,13 +534,13 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 
 /** tv **/
 #menu-portal .menu-aberto  .abas .tvcultura.ativo span,
-#menu-portal .menu-aberto  .abas .tvcultura:hover span { left:39px; }
+#menu-portal .menu-aberto  .abas .tvcultura:hover span { left:41px; }
 #menu-portal .menu-aberto  .abas .univesptv.ativo span,
-#menu-portal .menu-aberto  .abas .univesptv:hover span { left:40px; }
+#menu-portal .menu-aberto  .abas .univesptv:hover span { left:43px; }
 #menu-portal .menu-aberto  .abas .multicultura.ativo span,
-#menu-portal .menu-aberto  .abas .multicultura:hover span { left:50px; }
+#menu-portal .menu-aberto  .abas .multicultura:hover span { left:53px; }
 #menu-portal .menu-aberto  .abas .tvrtb.ativo span,
-#menu-portal .menu-aberto  .abas .tvrtb:hover span { left:52px; }
+#menu-portal .menu-aberto  .abas .tvrtb:hover span { left:55px; }
 #menu-portal .menu-aberto  .abas .quintal.ativo span,
 #menu-portal .menu-aberto  .abas .quintal:hover span { left:65px; }
 #menu-portal .menu-aberto  .abas li p, 
@@ -557,10 +557,10 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .box-vjtambem .tit,
 #menu-portal .tit { color:#ff6633!important; font-weight:bold; text-transform:uppercase; font-size:14px !important; }
 #menu-portal .radio .abas li { margin-right:20px; }
-#menu-portal .radio-cb span { left:70px; }
-#menu-portal .radio-fm span { left:65px; }
+#menu-portal .radio-cb span { left:51px; }
+#menu-portal .radio-fm span { left:43px; }
 #menu-portal .radio-rtb span { left:63px; }
-#menu-portal .radio-cocorico span { left:54px; }
+#menu-portal .radio-cocorico span { left:59px; }
 #menu-portal .menu-aberto .bt-cocorico { bottom:25px; right:0; }
 #menu-portal .menu-aberto .bt-cocorico,
 #menu-portal .menu-aberto .bt-rtb{ position:absolute; width:677px;}
