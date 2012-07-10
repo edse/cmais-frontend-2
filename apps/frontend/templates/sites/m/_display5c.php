@@ -20,6 +20,8 @@
 		          <div style="min-height:68px">
 		          	<?php if ($d->Asset->Site->getImageIcon()): ?>
 								<img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" width="100%">
+								<?php else: ?>
+								<?php echo $d->Asset->Site->Program->getTitle() ?>	
 								<?php endif; ?>		          	
 		          </div>
 		          <!--/LOGO-->
