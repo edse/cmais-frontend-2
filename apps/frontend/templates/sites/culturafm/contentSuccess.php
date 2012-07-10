@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/radiofm/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -16,7 +17,7 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-	 <div id="bg-site"></div>
+  	 <div id="bg-site"></div>
 
     <!-- CAPA SITE -->
     <div id="capa-site">
