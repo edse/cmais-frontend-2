@@ -1074,7 +1074,7 @@ class ajaxActions extends sfActions
         foreach($assets as $d){
 					$return .= '							<!--ITEM NOTICIA-->';
 					$return .= '							<li>';
-					$return .= '								<a href="'. url_for('@homepage') . $d->getSlug() . '" data-rel="external">';
+					$return .= '								<a href="/'. $d->getSlug() . '" data-rel="external" teste>';
 					$return .= '									<fieldset class="ui-grid-a">';
 					if ($d->retriveImageUrlByImageUsage("image-1-b")) {
 						$return .= '										<!--FOTO-->';
@@ -1405,7 +1405,7 @@ EOT;
 	  		}
 			}
 	
-			
+			/*
 			$file = fopen($filename, "r") or exit("Unable to open file!");
 			$results = null;
 			$votes = null;
@@ -1427,7 +1427,7 @@ EOT;
 			fclose($file);
 			
 			//var_dump($votes);
-	
+			*/
 			foreach($aq->Answers as $a){
 			  $results[] = array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
 			}
