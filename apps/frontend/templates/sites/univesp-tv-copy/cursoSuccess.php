@@ -120,6 +120,7 @@ $asset = $pager->getCurrent();
                           $video = $asset->retriveRelatedAssetsByAssetTypeId(7);
                         $video = $video[0];
                       }
+                      echo ">>>v>".$video->getId();
                       ?>
                       <?php if($video->AssetVideo->getYoutubeId() != ""): ?>
                       <?php echo ">>>".$video->AssetVideo->getYoutubeId() ?>
