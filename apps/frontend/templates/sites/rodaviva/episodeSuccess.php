@@ -254,7 +254,7 @@
 		                  <?php if ($asset->AssetEpisode->getTranscription()): ?>
 		                  	<span class="faixa" style="height:5px; margin-top:5px;"></span>
 							<div class="transcricao">
-								<h3>Transcrição</h3>
+								<!--h3>Transcrição</h3-->
 								<div class="transcricaoWrapper">
 								  <?php echo html_entity_decode($asset->AssetEpisode->getTranscription()) ?>
 								</div>
