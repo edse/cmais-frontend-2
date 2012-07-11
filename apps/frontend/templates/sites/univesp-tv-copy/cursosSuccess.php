@@ -211,7 +211,7 @@
           ?>
 					<ul>
           <?php foreach($programs as $d): ?>
-						<li><a href="http://cmais.com.br/univesp-tv-copy/<?php echo $d->getSlug()?>-copy"><?php echo $d->getTitle()?></a></li>
+						<li><a href="http://cmais.com.br/frontend_dev.php/univesp-tv-copy/<?php echo $d->getSlug()?>-copy"><?php echo $d->getTitle()?></a></li>
 					<?php endforeach; ?>
           </ul>
 			 	</div>

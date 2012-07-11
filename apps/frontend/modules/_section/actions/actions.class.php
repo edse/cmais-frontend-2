@@ -874,7 +874,7 @@ class _sectionActions extends sfActions
       $pagelimit = 12;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
-    elseif(($this->site->Program->Channel->getSlug()=="univesptv")&&($this->site->getType() != "Portal")){
+    elseif(($this->site->Program->Channel->getSlug()=="univesptv" || $this->site->Program->Channel->getSlug()=="univesp-tv-copy")&&($this->site->getType() != "Portal")){
       if($this->section->getSlug() != "home"){
         if($request->getParameter('debug') != "")
           echo ">>>>>>disciplina";
@@ -1052,10 +1052,23 @@ class _sectionActions extends sfActions
           }
           else{
             if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa';
-						if($this->site->getSlug() == 'inglescommusica')
-						  $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/subsection');
-						else
-            	$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
+            if($this->site->getSlug() == 'inglescommusica')
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/subsection');
+            else
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
+          }
+        }        
+        else if($this->site->Program->Channel->getSlug()=="univesp-tv-copy"){
+          if($this->site->Program->getIsACourse()){
+            if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
+          }
+          else{
+            if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/programa';
+            if($this->site->getSlug() == 'inglescommusica')
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/subsection');
+            else
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/programa');
           }
         }        
         elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
