@@ -288,7 +288,7 @@ $asset = $pager->getCurrent();
                         <?php $k=0; foreach($assets as $d): $k++; ?>
                           <li class="conteudo-lista">
                             <!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> -->
-                            <a href="<?php echo $section->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
+                            <a href="http://cmais.com.br/frontend_dev.php/univesp-tv-copy/<?php echo $site->getSlug(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
                         <?php endforeach; ?>
                       </ul>
                     </div>
