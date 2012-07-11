@@ -475,3 +475,10 @@ z-index:5000;
 #radio div.jp-playlist {border:none !important;}
 #radio .playlist div.jp-playlist ul { max-height:240px; overflow-x:hidden; overflow-y:scroll; }
 /* /radio */
+
+#menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
+#menu-portal-1 #menu-portal .m-radio .bg-Ratimbum {bottom: 11px;}
+
+#menu-portal-2 li a:hover{background:#ff6633;}
+
+#menu-portal .menu-aberto .botoes {*width:100% !important;}
