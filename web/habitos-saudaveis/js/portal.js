@@ -432,7 +432,7 @@ $.fn.clearForm = function() {
   });
 };
 
-
+/*passar a ser puxado pelo script.js
 var request_header = jQuery.ajax({ 
   dataType: 'html',
   success: function(data) {
@@ -449,4 +449,4 @@ var request_footer = jQuery.ajax({
       jQuery('body').append(data);
   },
   url: '/habitos-saudaveis/ajax/insert_footer.php?randNum='+ new Date().getTime()
-});
+});*/
