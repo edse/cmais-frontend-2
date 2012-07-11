@@ -52,8 +52,7 @@
                   em qualquer lugar! E não se esqueça da frase: FÉRIAS NA CULTURA, TÔ DENTRO!
                   Peça para a criançada gritar em coro, escreva na areia da praia,
                   faça um poema, cante uma música! Para ficar dentro da Cultura, vale tudo!
-                  <br/><br/>
-                  Também precisamos de uma URL de exemplo do campo “URL do vídeo”
+
                   </p>
                 
                   <div class="msgErro" style="display:none">
