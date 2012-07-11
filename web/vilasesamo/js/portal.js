@@ -431,7 +431,9 @@ $.fn.clearForm = function() {
       this.selectedIndex = -1;
   });
 };
-
+/*
+ * esta parte agora esta sendo puxada pelo script.js 
+ 
 var request_header = jQuery.ajax({ 
   dataType: 'html',
   success: function(data) {
@@ -449,3 +451,4 @@ var request_footer = jQuery.ajax({
   },
   url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
 });
+*/

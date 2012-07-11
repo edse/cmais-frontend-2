@@ -126,7 +126,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .galeria { width:640px; float:left; margin-bottom:20px; }
 .galeria li { width:140px; height:105px; background-repeat:no-repeat; background-position:bottom; float:left; margin:0 20px 10px 0;  position:relative;}
 .galeria li img {  -moz-border-radius:7px 7px; border-radius:7px 7px; }
-.lista { width:97px; height:25px; display:block; background:url(../images/lista.jpg) no-repeat; float:right; text-indent:-9999px; margin-right:20px; }
+/*.lista { width:97px; height:25px; display:block; background:url(../images/lista.jpg) no-repeat; float:right; text-indent:-9999px; margin-right:20px; }*/
 .mais { width: 97px; height:25px; background:url(../images/mais.jpg) no-repeat; display: block; text-indent:-9999px; float:right; margin-right:20px; margin-top:10px; }
 
 .centraliza { width:960px; float:left; margin-top:60px; }
@@ -400,7 +400,8 @@ left:0;
 position:absolute;
 top:0;
 width:16px;
-z-index:5000;
+z-index:15000;
+*z-index:15000 !important;
 } 
 /* /estrela */
 
@@ -482,6 +483,13 @@ z-index:5000;
 #radio div.jp-playlist {border:none !important;}
 #radio .playlist div.jp-playlist ul { max-height:225px; overflow-x:hidden; }
 /* /radio */
+
+#menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
+#menu-portal-1 #menu-portal .m-radio .bg-Ratimbum {bottom: 11px;}
+
+#menu-portal-2 li a:hover{background:#ff6633;}
+
+#menu-portal .menu-aberto .botoes {*width:100% !important;}
 
 
 

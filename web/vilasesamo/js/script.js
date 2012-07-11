@@ -9,3 +9,21 @@ function follow(evt) {if (document.getElementById) {var obj = document.getElemen
 obj.left = (parseInt(mouseX(evt))+offX) + 'px';        
 obj.top = (parseInt(mouseY(evt))+offY) + 'px';}}        
 document.onmousemove = follow;        
+
+var request_header = jQuery.ajax({ 
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body #capa-site').before(data);
+  },
+  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
+});
+
+var request_footer = jQuery.ajax({
+  dataType: 'html',
+  success: function(data) {
+    if (data)
+      jQuery('body').append(data);
+  },
+  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
+});
