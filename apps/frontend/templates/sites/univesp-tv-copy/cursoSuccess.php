@@ -113,7 +113,7 @@ $asset = $pager->getCurrent();
                         $video = $asset;
                       else if($asset->AssetType->getSlug() == "video-gallery") 
                         $video = $asset;
-                      else{
+                      elseif($asset->AssetType->getSlug() == "content"){
                         $video = $asset->retriveRelatedAssetsByAssetTypeId(6);
                         if(!$video)
                           $video = $asset->retriveRelatedAssetsByAssetTypeId(7);
@@ -121,6 +121,7 @@ $asset = $pager->getCurrent();
                       }
                       ?>
                       <?php if($video->AssetVideo->getYoutubeId() != ""): ?>
+                      <?php echo ">>>".$video->AssetVideo->getYoutubeId() ?>
                       <div class="media grid2">
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
                         <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
@@ -128,6 +129,7 @@ $asset = $pager->getCurrent();
                       <?php endif; ?>
 
                       <?php if($video->AssetVideoGallery->getYoutubeId() != ""): ?>
+                      <?php echo ">>>".$video->AssetVideoGallery->getYoutubeId() ?>
                       <div class="media grid2">galeria
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
                         <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
