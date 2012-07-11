@@ -115,6 +115,8 @@ $asset = $pager->getCurrent();
                         $video = $asset;
                       else{
                         $video = $asset->retriveRelatedAssetsByAssetTypeId(6);
+                        if(!$video)
+                          $video = $asset->retriveRelatedAssetsByAssetTypeId(7);
                         $video = $video[0];
                       }
                       ?>
