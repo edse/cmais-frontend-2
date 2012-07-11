@@ -116,7 +116,7 @@ $asset = $pager->getCurrent();
                         $video = $asset;
                       elseif($asset->AssetType->getSlug() == "content"){
                         $video = $asset->retriveRelatedAssetsByAssetTypeId(6);
-                        if(!$video)
+                        if(count($video)<=0)
                           $video = $asset->retriveRelatedAssetsByAssetTypeId(7);
                         $video = $video[0];
                       }
