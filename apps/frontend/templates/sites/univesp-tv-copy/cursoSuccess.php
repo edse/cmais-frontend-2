@@ -111,12 +111,21 @@ $asset = $pager->getCurrent();
                       <?php
                       if($asset->AssetType->getSlug() == "video") 
                         $video = $asset;
+                      else if($asset->AssetType->getSlug() == "video-gallery") 
+                        $video = $asset;
                       else{
                         $video = $asset->retriveRelatedAssetsByAssetTypeId(6);
                         $video = $video[0];
                       }
                       ?>
                       <?php if($video->AssetVideo->getYoutubeId() != ""): ?>
+                      <div class="media grid2">
+                        <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
+                        <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
+                      </div>
+                      <?php endif; ?>
+
+                      <?php if($video->AssetVideoGallery->getYoutubeId() != ""): ?>
                       <div class="media grid2">
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
                         <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
