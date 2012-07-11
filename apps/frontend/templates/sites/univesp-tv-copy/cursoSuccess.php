@@ -128,7 +128,7 @@ $asset = $pager->getCurrent();
                       <?php endif; ?>
 
                       <?php if($video->AssetVideoGallery->getYoutubeId() != ""): ?>
-                      <div class="media grid2">
+                      <div class="media grid2">galeria
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
                         <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
                       </div>
