@@ -62,7 +62,7 @@ body #drwho {
 #drwho #header {
 	width:100%;
 	height:50px;
-	margin:48px 0 2px 0;
+  margin: 3px 0 2px 0;
 	background:url(../images/img_top_grad.gif) repeat-x;
 }
 
