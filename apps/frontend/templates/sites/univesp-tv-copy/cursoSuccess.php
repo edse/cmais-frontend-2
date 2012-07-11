@@ -109,6 +109,7 @@ $asset = $pager->getCurrent();
                       <?php endif; ?>
                       <!-- PAGINACAO -->
                       <?php
+                      echo ">>>>".$asset->getId();
                       if($asset->AssetType->getSlug() == "video") 
                         $video = $asset;
                       else if($asset->AssetType->getSlug() == "video-gallery") 
