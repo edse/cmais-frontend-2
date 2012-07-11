@@ -90,7 +90,7 @@
 			                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
 			                  <?php endif; ?>
 			                </div>
-			                <?php include_partial_from_folder('sites/rodaviva','global/fb-comments') ?>
+			                <?php include_partial_from_folder('sites/rodaviva','global/fb-comments',array('uri'=>$uri)) ?>
           				</div>
           			</div>
           			<div class="veja">

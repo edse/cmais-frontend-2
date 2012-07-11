@@ -272,7 +272,7 @@
 							</div>
 						    <?php endif; ?>
 						  <?php endif; ?>
-		                  <?php include_partial_from_folder('sites/rodaviva','global/share-2c') ?>
+		                  <?php include_partial_from_folder('sites/rodaviva','global/share-2c',array('uri'=>$uri)) ?>
           				</div>
           			</div>
           			<div class="veja">
