@@ -13,20 +13,22 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('#form-contato input#enviar').hide();
                 $('img#ajax-loader').show();
               },
               success: function(data){
-                $('#form-contato input#enviar').show()
-                $('#pFilomena').hide();
-                $('#respFilomena').show();
-                //if(data == "1"){
+      	  	    if(data == "1"){
+	                $('#form-contato input#enviar').show()
+	                $('#pFilomena').hide();
+	                $('#respFilomena').show();
                   $("#form-contato").clearForm();
                   $('img#ajax-loader').hide();
-                //}
+              	}
+              	else {
+              		window.alert("Não foi possível enviar a mensagem.\nPor favor, tente novamente mais tarde!")
+              	}
               }
             });         
           },
