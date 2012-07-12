@@ -91,11 +91,6 @@
   </p>  
   <!--FORMULARIO-->
   <form id="form-contato" action="" method="post">
-    <?php 
-    $form = new BaseForm();
-    echo $form->renderHiddenFields();
-    ?>
-    <input type="hidden" name="formSection" id="formSection" value="pergunteParaFilomena">
     <!--NOME-->
     <div class="t1input">
       <label>NOME:</label>
