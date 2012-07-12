@@ -499,7 +499,7 @@ function setExpiration(cookieLife)
  * redireciona caso a resolução seja menor que a do ipad (1024 x 768)
  * e o cookie 'classic' (versão clássica) não exista
  */
-if ((screen.width * screen.height) / 768 < 1024) // verifica se a resolução da tela é menor que a do iPad (1024 x 768)
+if ((screen.width * screen.height) / 768 < 1024 || window.location.href.indexOf("cmais.com.br/transito")) // verifica se a resolução da tela é menor que a do iPad (1024 x 768)
 {
 	classicVersion = getCookie('classic');
 	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
