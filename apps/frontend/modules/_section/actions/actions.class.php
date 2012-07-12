@@ -749,7 +749,7 @@ class _sectionActions extends sfActions
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='piadas')||($this->site->getSlug()=='quintaldacultura')){
+      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='piadas')||($this->site->slug == 'quintaldacultura')){
         
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
@@ -772,10 +772,11 @@ class _sectionActions extends sfActions
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-        die("1");
+        			die("1");
             }
-            else
+            else {
               die("0");
+						}
           }
           else {
             header("Location: http://cmais.com.br");
