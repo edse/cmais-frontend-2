@@ -1441,7 +1441,7 @@ EOT;
 	}  		
 
   public function executeMensagem(sfWebRequest $request){
-    $request->checkCSRFProtection();
+    //$request->checkCSRFProtection();
     $email_site = "quintal.tv@gmail.com";
 		$subject = "[Quintal da Cultura][Pergunta para Filomena] ";
 		if ($request->getParameter('formSection') == "chaComCharadas") {
