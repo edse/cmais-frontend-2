@@ -155,6 +155,14 @@
     </div>
     <!--/E-MAIL-->
     
+    <!--PERGUNTA-->
+    <?php 
+    $form = new BaseForm();
+    echo $form->renderHiddenFields();
+    ?>
+    <input type="hidden" name="pergunta" id="pergunta" value="Na vinheta de abertura do Cocoricó qual instrumento musical o Júlio toca?">
+    <!--/PERGUNTA-->
+    
     <!--RESPOSTA-->
     <div class="t1input">
       <label>
