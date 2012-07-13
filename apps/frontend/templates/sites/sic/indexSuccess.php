@@ -37,7 +37,7 @@
         <div class="float col-400-sic">
           <?php if(isset($displays["acesso-a-informacao"])): ?>
           <h2>
-            <?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?>
+            <?php echo $displays["acesso-a-informacao"]->Block->getTitle() ?>
           </h2>
           
           <?php if(count($displays["acesso-a-informacao"]) > 0): ?>
