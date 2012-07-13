@@ -72,20 +72,24 @@
         </ul>
         <!--/LISTA-BOTOES-->  
       </div>
-      <!-- /MENU COCORICO -->
-      
+      <!-- /MENU COCORICO -->  
+            
       <!-- HORARIO -->
       <div id="horario-tv">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <p>AO VIVO DE 2ª a 6ª, ÀS 11H</p>
       </div>
-      <!-- HORARIO -->        
+      <!-- HORARIO -->
       
       <!--VIDEO-->
       <div id="video-tv-cocorico">
         <img src="/portal/images/capaPrograma/cocoricoHome/no_ar.jpg" />
       </div>
       <!--/VIDEO-->
+      
+      <!--PROMOCAO-->  
+      <?php include_partial_from_folder('sites/tvcocorico', 'global/promocao') ?>          
+      <!--/PROMOCAO-->
       
       <div id="back">
       <!-- HOLOFOTES -->
