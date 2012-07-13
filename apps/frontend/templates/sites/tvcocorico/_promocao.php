@@ -105,7 +105,7 @@
     <!--CIDADE-->
     <div class="t2input">
       <label>Cidade:</label>
-      <input type="text" name="cidade" id="cidade" class="cidade"   placeholder="Seu Nome Amiguinho"/>
+      <input type="text" name="cidade" id="cidade" class="cidade"   placeholder="A Cidade Onde Você Mora">
     </div>
     <!--/CIDADE-->
     
