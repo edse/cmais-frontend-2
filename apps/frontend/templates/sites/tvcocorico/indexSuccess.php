@@ -102,6 +102,29 @@
       </div>
       <!--/VIDEO-->
       
+      <!--PROMOCAO-->  
+      <?php // include_partial_from_folder('sites/tvcocorico', 'global/promocao') ?>          
+      <!--/PROMOCAO-->
+      
+      <!--RESPOSTA FORM FILOMENA-->
+      <div id="respPromocao" >
+        <a href="javascript:;" class="troca tCha"></a>
+        <p class="recebeu">
+        Ganhadores da guitarra do Júlio:<br/><br/>
+        <span class="preto">Artur da Silva de Oliveira, 4 anos – São Paulo</span><br/>
+        <span class="preto">Gabrielle Antunes Rosa, 4 anos - Curitiba</span><br/>
+        <span class="preto">Mateus Ferreira Jacques, 4 anos - Florianópolis</span><br/>
+        <span class="preto">Maria Luiza Vieira Brito, 8 anos - Itapevi</span><br/>
+        <span class="preto">Deborah Genovese Fernandes, 6 anos  - São Paulo</span><br/><br/>
+
+        Parabéns!<br/>
+        <span class="obs">*Entraremos em contato por e-mail para a retirada do brinquedo.</span>
+        </p>
+
+        
+      </div>
+      <!--RESPOSTA FORM FILOMENA-->
+      
       <div id="back">
       <!-- HOLOFOTES -->
         <div id="holofote-01" class="holofote"></div>
