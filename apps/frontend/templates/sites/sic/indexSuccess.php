@@ -36,16 +36,16 @@
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic">
           <?php if(isset($displays["acesso-a-informacao"])): ?>
+          	<?php if(count($displays["acesso-a-informacao"]) > 0): ?>
           <h2>
-            <?php echo $displays["acesso-a-informacao"]->Block->getTitle() ?>
+            <?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?>
           </h2>
           
-          <?php if(count($displays["acesso-a-informacao"]) > 0): ?>
           	<?php foreach($displays["acesso-a-informacao"] as $d): ?>
           <span class="pergunta"><?php echo $d->getTitle() ?></span>
           <p><?php echo $d->getDescription() ?></p>
           <a href="<?php echo $d->retriveUrl() ?>" title="Leia mais">Leia +</a>
-          	<?php endforeach; ?>
+          	<?php endforeach; ?>	
           <?php endif; ?>
           
           <?php endif; ?>
