@@ -98,6 +98,14 @@
           <!-- /COLUNA SUB DIR 1 -->
             <?php endif; ?>
           <?php endif; ?>
+
+        	<?php if(isset($displays["acompanhar-solicitacao"])): ?>
+        		<?php if(count($displays["acompanhar-solicitacao"]) > 0): ?>
+        	<h3><?php echo $displays["acompanhar-solicitacao"][0]->getTitle() ?></h3>
+        	<?php echo html_entity_decode($displays["acompanhar-solicitacao"][0]->Asset->AssetContent->render()) ?>
+            <?php endif; ?>
+          <?php endif; ?>
+          
         </div>  
         <!-- /COLUNA DIREITA -->
       </div>  
