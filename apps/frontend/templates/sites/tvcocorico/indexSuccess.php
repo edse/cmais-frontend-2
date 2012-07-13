@@ -6,6 +6,21 @@
 <?php include_partial_from_folder('blocks','global/menu-reduzido') ?>
 <!-- /TOPO CMAIS REDUZIDO-->
 
+  <!--GOOGLE ANALYTICS-->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!--/GOOGLE ANALYTICS--> 
+  
 <div id="palco">
     <!-- CAPA SITE -->
     <div id="capa-site">
