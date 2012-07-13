@@ -28,3 +28,25 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #rodape-portal {margin-top: 0px;position: relative}
 
 .capa-voltar-topo {margin: -26px auto;}
+#guitarra{position: absolute;right: -278px;width: 250px;height: 246px;background: url(/portal/images/capaPrograma/cocoricoHome/destaque-guitarra.png) no-repeat;top: 52px;}
+#promocao p{color:#a81617; line-height:30px;font-size: 21px;font-weight: bolder;font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif !important;text-transform: uppercase;text-align:left;}
+#promocao {position: relative;z-index: 4000;clear: both;width: 520px;padding: 50px 0 0 115px;min-height: 307px;}
+#promocao label{margin:3px 0 0 0;clear:both;float:left; font-size:16px;font-weight:bold;width: 103px;text-align: right;}
+#promocao input{border: none;padding: 4px;background-color:#f2ba27;margin: 0 0 0 10px;color:#333;}
+#promocao .t1input{width: 504px;float: left;margin:4px 0;}
+#promocao .t2input{width: 340px;float: left;margin:4px 0;}
+#promocao .t3input{width: 165px;float: left;margin:4px 0;}
+#promocao .t1input #nome, #promocao .t1input .resposta{width: 381px;}
+#promocao .t2input #cidade{width: 216px;}
+#promocao .t2input .email{width: 197px;margin: 0 0 0 -8px}
+#promocao .t3input .idade{width: 49px;margin: 0 0 0 -2px}
+#promocao select{width:61px; border:none;background-color:#f2ba27;float:left;}
+
+#promocao .btn-enviar{color:#a81617;float: right;font-size: 18px;font-weight: bold;padding: 10px 16px;background: url(/portal/images/capaPrograma/cocoricoHome/btn-enviar.png) no-repeat;cursor: pointer;}
+#promocao label.error{color: #A81617;position: absolute;left: 226px;bottom: 40px;margin: 0 0 0 0 !important;font-size: 15px;background: yellow;padding: 5px;width: 305px;text-align: center;}
+#promocao .nome.error, #promocao .email.error, #promocao .cidade.error,#promocao .resposta.error,#promocao .estado.error, #promocao .mensagem.error, #promocao .idade.error{border:1px red solid !important;}
+#promocao span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
+
+#respPromocao p{color:#a81617; line-height:30px;font-size: 21px;font-weight: bolder;font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif !important;text-transform: uppercase;text-align:left;}
+#respPromocao p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
+#respPromocao .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
