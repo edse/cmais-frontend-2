@@ -111,14 +111,9 @@ Exemplo: Destinatário da FPA (Compras,Jurídico, Tesouraria, Engenharia, Admini
           		<?php foreach($displays["formas-de-atendimento"] as $d): ?>
       
             <div id="accordion" class="texto-preto">
-              <h3><a href="#">Section 1</a></h3>
+              <h3><a href="#"><?php echo $d->getTitle() ?></a></h3>
               <div>
-                <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                </p>
+              	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
               </div>
             </div>
              
