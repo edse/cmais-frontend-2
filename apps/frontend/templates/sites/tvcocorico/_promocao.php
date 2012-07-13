@@ -105,7 +105,7 @@
     <!--CIDADE-->
     <div class="t2input">
       <label>Cidade:</label>
-      <input type="text" name="cidade" id="cidade" class="cidade" />
+      <input type="text" name="cidade" id="cidade" class="cidade"   placeholder="Seu Nome Amiguinho"/>
     </div>
     <!--/CIDADE-->
     
@@ -155,7 +155,7 @@
     <!--IDADE -->
     <div class="t3input">
       <label>IDADE:</label>
-      <input type="text" name="idade" class="idade required"  placeholder="99"/>
+      <input type="text" name="idade" class="idade required" maxlength="2"  placeholder="00"/>
     </div>
     <!--/E-MAIL-->
     
@@ -172,7 +172,7 @@
       <label>
         RESPOSTA:</br>
       </label>
-      <input type="text" name="resposta" class="resposta"  placeholder="99"/>
+      <input type="text" name="resposta" class="resposta"  placeholder="Resposta da pergunta."/>
     </div>
     <!--RESPOSTA-->
 
