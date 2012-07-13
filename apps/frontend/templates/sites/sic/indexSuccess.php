@@ -34,7 +34,7 @@
       <!-- CORPO SITE -->
       <div id="corpo-sic">
         <!-- COLUNA ESQUERDA -->
-        <div class="float col-420-sic">
+        <div class="float col-400-sic">
           <?php if(isset($displays["acesso-a-informacao"])): ?>
           <h2>
             <?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?>
@@ -98,7 +98,7 @@ Exemplo: Destinatário da FPA (Compras,Jurídico, Tesouraria, Engenharia, Admini
         <!-- /COLUNA ESQUERDA -->
         
         <!-- COLUNA DIREITA -->
-        <div class="float col-570-sic">
+        <div class="float col-585-sic">
         	
         	<?php if(isset($displays["formas-de-atendimento"])): ?>
           
