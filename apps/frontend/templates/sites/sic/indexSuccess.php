@@ -37,26 +37,24 @@
         <div class="float col-400-sic">
           <?php if(isset($displays["acesso-a-informacao"])): ?>
           	<?php if(count($displays["acesso-a-informacao"]) > 0): ?>
-          <h2>
-            <?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?>
-          </h2>
+          <h2><?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?></h2>
           
-          	<?php foreach($displays["acesso-a-informacao"] as $d): ?>
+          		<?php foreach($displays["acesso-a-informacao"] as $d): ?>
           <span class="pergunta"><?php echo $d->getTitle() ?></span>
           <p><?php echo $d->getDescription() ?></p>
           <a href="<?php echo $d->retriveUrl() ?>" title="Leia mais">Leia +</a>
-          	<?php endforeach; ?>	
-          <?php endif; ?>
-          
+          		<?php endforeach; ?>
+          			
+          	<?php endif; ?>
           <?php endif; ?>
           
 					<?php if(isset($displays["oriente-se"])): ?>
+						<?php if(count($displays["oriente-se"]) > 0): ?>
           <!-- COLUNA SUB ESQ 1 -->
           <div class="coluna-sub-1 cinza-claro texto-branco">
             <h4><?php echo $displays["oriente-se"][0]->Block->getTitle() ?></h4>
             <p><?php echo $displays["oriente-se"][0]->Block->getDescription() ?></p>
             
-						<?php if(count($displays["oriente-se"]) > 0): ?>
           		<?php foreach($displays["oriente-se"] as $d): ?>
             <!-- COLUNA SUB ESQ 2 -->
             <div id="accodion" class="coluna-sub-1 cinza-escuro">
@@ -66,32 +64,13 @@
               <div id="risco-2"></div>
               <div class="conteudo" style="display: none;">
               	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
-              	<?php /*
-                <p>
-                  a)Para que sua consulta seja mais precisa, descreva com objetividade e clareza o tipo de informação ou documento que procura. Você tem um limite de 600 caracteres para esta descrição.
-                </p><br/>
-                <p>
-                  b) Faça um pedido por vez. O protocolo oferecido corresponde uma requisição cujo fluxo segue até a resposta à sua solicitação ou até a resposta a um recurso se o pedido original for negado.
-                </p><br/>
-                <p>
-                  c) Caso queira ter acesso a mais de um tipo de documento ou de informação. Preencha NOVA requisição. Não será necessário preencher novo cadastro,  pois o número de identificação RG ou CNPJ recuperará seus dados e abrirá campo da SOLICITAÇÂO.
-Exemplo: Destinatário da FPA (Compras,Jurídico, Tesouraria, Engenharia, Administração, TV Cultura, Rádio Cultura FM, Rádio Cultura AM, Produtos, Projetos e Parcerias Características: Tipo de informação (gastos, receita, participantes, parcerias)  ou tipo de Documento (Balancete, licitação, contratos), Período ou data  
-                </p><br/>
-                <p>
-                  d) Recomenda-se evitar solicitações com exagero explícito ou sem nexo. Estas poderão não ser atendidas com  
-                </p><br/>
-                <p>
-                  e) Verifique a cada solicitação se seus dados de endereço e telefone estão atualizados
-                </p>
-								 * 
-								 */ ?>
               </div>
             </div>
             <!-- /COLUNA SUB ESQ 2 -->
             	<?php endforeach; ?>
-            <?php endif; ?>
           </div>           
           <!-- /COLUNA SUB ESQ 1 -->
+          	<?php endif; ?>
           <?php endif; ?>
           
         </div>
@@ -101,29 +80,23 @@ Exemplo: Destinatário da FPA (Compras,Jurídico, Tesouraria, Engenharia, Admini
         <div class="float col-585-sic">
         	
         	<?php if(isset($displays["formas-de-atendimento"])): ?>
-          
+        		<?php if(count($displays["formas-de-atendimento"]) > 0): ?>
           <!-- COLUNA SUB DIR 1 -->
           <div class="coluna-sub-1 cinza-claro-2 texto-branco">
             <span class="titulo bold"><?php echo $displays["formas-de-atendimento"][0]->Block->getTitle() ?></span>
             <!-- COLUNA SUB DIR 2 -->
             
-						<?php if(count($displays["formas-de-atendimento"]) > 0): ?>
           		<?php foreach($displays["formas-de-atendimento"] as $d): ?>
-      
             <div id="accordion" class="texto-preto">
               <h3><a href="#"><?php echo $d->getTitle() ?></a></h3>
               <div>
               	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
               </div>
             </div>
-             
             	<?php endforeach; ?>
-            <?php endif; ?>
-   
-
-
           </div>           
           <!-- /COLUNA SUB DIR 1 -->
+            <?php endif; ?>
           <?php endif; ?>
         </div>  
         <!-- /COLUNA DIREITA -->
