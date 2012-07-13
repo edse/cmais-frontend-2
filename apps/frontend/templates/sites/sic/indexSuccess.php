@@ -41,7 +41,7 @@
           
           		<?php foreach($displays["acesso-a-informacao"] as $d): ?>
           <span class="pergunta"><?php echo $d->getTitle() ?></span>
-          <p><?php echo $d->getDescription() ?></p>
+          <p><?php echo $d->Asset->getDescription() ?></p>
           <a href="<?php echo $d->retriveUrl() ?>" title="Leia mais">Leia +</a>
           		<?php endforeach; ?>
           			
