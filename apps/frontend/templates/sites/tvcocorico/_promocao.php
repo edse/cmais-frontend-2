@@ -20,9 +20,8 @@
               },
               success: function(data){
       	  	    if(data == "1"){
-	                $('#form-contato input#enviar').show()
-	                $('#pFilomena').hide();
-	                $('#respFilomena').show();
+	                $('#respPromocao').show();
+                  $('#promocao').hide();
                   $("#form-contato").clearForm();
                   $('img#ajax-loader').hide();
               	}
@@ -52,6 +51,10 @@
             estado:{
               required: true
             },
+            resposta:{
+              required: true,
+              minlength: 2
+            },
             mensagem:{
               required: true,
               minlength: 5
@@ -63,6 +66,7 @@
             cidade: "*os campos em vermelho apresentam erro de preenchimento!",
             idade: "*os campos em vermelho apresentam erro de preenchimento!",
             estado: "*os campos em vermelho apresentam erro de preenchimento!",
+            resposta: "*os campos em vermelho apresentam erro de preenchimento!",
             mensagem: "*os campos em vermelho apresentam erro de preenchimento!" 
           },
           success: function(label){
@@ -189,11 +193,10 @@
 <!--RESPOSTA FORM FILOMENA-->
 <div id="respPromocao" style="display:none;">
   <a href="javascript:;" class="troca tCha"></a>
-  <p class="recebeu">A Filomena já recebeu a sua pergunta. Fique ligado no programa ao vivo, quem sabe é a sua dúvida que ela irá solucionar.</p>
+  <p class="recebeu">Agradecemos sua participação!
+  <br/>O resultado será divulgado aqui no site ainda hoje!</p>
   <p>AGUARDE!</p>
-  <a class="btn-enviar" href="javascript:;">
-    ENVIAR OUTRA PERGUNTA
-  </a>
+  <div id="guitarra"></div>
 </div>
 <!--RESPOSTA FORM FILOMENA-->
 
