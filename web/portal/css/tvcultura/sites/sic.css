@@ -8,14 +8,14 @@
 /*/TOPO PORTAL*/ 
 
 /* PAGINAS PADRÕES*/
-body{background: url(../imgs/pattern-fundo.jpg) !important;}
+body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
 h1,h2,h3,h4,p,span{margin:0 0 6px 0 !important;}
 p{font-size:14px}
 h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
 
 
-#risco{background: url(../imgs/pattern-linha.jpg) repeat-x !important; height:2px;max-width:562px;float:left; margin:0;}
-#risco-2{background: url(../imgs/pattern-linha-2.jpg) repeat-x !important; height:2px;float:left; margin:0;}
+#risco{background: url(/portal/images/capaPrograma/sic/pattern-linha.jpg) repeat-x !important; height:2px;max-width:562px;float:left; margin:0;}
+#risco-2{background: url(/portal/images/capaPrograma/sic/pattern-linha-2.jpg) repeat-x !important; height:2px;float:left; margin:0;}
 span.pergunta{font-size:20px; font-weight:bold;}
 .float{float:left;}
 .conteudo{padding:10px 0 0 0;}
