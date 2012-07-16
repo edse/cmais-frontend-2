@@ -105,46 +105,63 @@
                     <label>Telefone</label>
                     <input type="text" name="telefone" id="telefone" />
                   </div>
-                  <div class="linha t3">
+                  <div class="linha t4">
                     <label>email</label>
                     <input type="text" name="email" id="email" />
+                  </div>
+                  <div class="linha t4">
+                    <label>escolha a data</label>
+                    <br />
+                    <select class="data required" id="data">
+                        <option value="1ª Eliminatória - 25 de Agosto - Teatro FECAP" selected="selected">1ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
+                        <option value="2ª Eliminatória - 25 de Agosto - Teatro FECAP">2ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
+                        <option value="3ª Eliminatória – 1º de Setembro - Teatro FECAP">3ª Eliminatória – 1º de Setembro - Teatro FECAP</option>
+                        <option value="4ª Eliminatória – 1º de Setembro - Teatro FECAP">4ª Eliminatória – 1º de Setembro - Teatro FECAP </option>
+                        <option value="5ª Eliminatória - 22 de Setembro - Teatro FECAP">5ª Eliminatória - 22 de Setembro - Teatro FECAP</option>
+                        <option value="6ª Eliminatória - 22 de Setembro - Teatro FECAP">6ª Eliminatória - 22 de Setembro - Teatro FECAP</option>
+                        <option value="7ª Eliminatória - 6 de Outubro - Teatro FECAP">7ª Eliminatória - 6 de Outubro - Teatro FECAP</option>
+                        <option value="8ª Eliminatória - 6 de Outubro - Teatro FECAP">8ª Eliminatória - 6 de Outubro - Teatro FECAP </option>
+                        <option value="1ª Semifinal – 10 de Novembro - Conservatório de Tatuí">1ª Semifinal – 10 de Novembro - Conservatório de Tatuí</option>
+                        <option value="2ª Semifinal – 10 de Novembro - Conservatório de Tatuí">2ª Semifinal – 10 de Novembro - Conservatório de Tatuí</option>
+                        <option value="Final – 9 de Dezembro - Sala São Paulo">Final – 9 de Dezembro - Sala São Paulo</option>
+                  </select>
                   </div>
                   <div class="linha t1">
                     <label>cidade</label>
                     <input type="text" name="cidade" id="cidade" />
                   </div>
-                  <div class="linha">
+                  <div class="linha t2">
                     <label>estado</label>
-                                        <br />
+                    <br />
                     <select class="estado required" id="estado">
-                                            <option value="Acre">AC</option>
-                                            <option value="Alagoas">AL</option>
-                                            <option value="Amazonas">AM</option>
-                                            <option value="Amapá">AP</option>
-                                            <option value="Bahia">BA</option>
-                                            <option value="Ceará">CE</option>
-                                            <option value="Distrito Federal">DF</option>
-                                            <option value="Espirito Santo">ES</option>
-                                            <option value="Goiás">GO</option>
-                                            <option value="Maranhão">MA</option>
-                                            <option value="Minas Gerais">MG</option>
-                                            <option value="Mato Grosso do Sul">MS</option>
-                                            <option value="Mato Grosso">MT</option>
-                                            <option value="Pará">PA</option>
-                                            <option value="Paraíba">PB</option>
-                                            <option value="Pernambuco">PE</option>
-                                            <option value="Piauí">PI</option>
-                                            <option value="Paraná">PR</option>
-                                            <option value="Rio de Janeiro">RJ</option>
-                                            <option value="Rio Grande do Norte">RN</option>
-                                            <option value="Rondônia">RO</option>
-                                            <option value="Roraima">RR</option>
-                                            <option value="Rio Grande do Sul">RS</option>
-                                            <option value="Santa Catarina">SC</option>
-                                            <option value="Sergipe">SE</option>
-                                            <option value="São Paulo" selected="selected">SP</option>
-                                            <option value="Tocantins">TO</option>
-                                        </select>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Amapá">AP</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Ceará">CE</option>
+                        <option value="Distrito Federal">DF</option>
+                        <option value="Espirito Santo">ES</option>
+                        <option value="Goiás">GO</option>
+                        <option value="Maranhão">MA</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Mato Grosso do Sul">MS</option>
+                        <option value="Mato Grosso">MT</option>
+                        <option value="Pará">PA</option>
+                        <option value="Paraíba">PB</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piauí">PI</option>
+                        <option value="Paraná">PR</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Rio Grande do Norte">RN</option>
+                        <option value="Rondônia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="São Paulo" selected="selected">SP</option>
+                        <option value="Tocantins">TO</option>
+                    </select>
                   </div>
                   <div class="linha t3">
                     <label>mensagem</label>
@@ -180,11 +197,7 @@
           </div>
           <!-- /CAPA -->
           
-          <!-- rodape srbrasil-->
-          <?php include_partial_from_folder('blocks','global/rodape-srbrasil');?>
-          <!-- /rodape srbrasil-->
-          
-        </div>
+         </div>
         <!-- /CONTEUDO PAGINA -->
       </div>
       <!-- /MIOLO -->
@@ -235,6 +248,10 @@
               required: true,
               email: true
             },
+            data:{
+              required: true,
+              minlength: 2
+            },
             cidade:{
               required: true,
               minlength: 3
@@ -243,14 +260,15 @@
               required: true,
               minlength: 2
             },
-                  captcha: {
-                    required: true,
-                    remote: "/portal/js/validate/demo/captcha/process.php"
-                  }
+            captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
           },
           messages:{
             nome: "Digite um nome válido. Este campo é obrigatório.",
             email: "Digite um e-mail válido. Este campo é obrigatório.",
+            data: "Este campo é obrigatório.",
             cidade: "Este campo é obrigatório.",
             estado: "Este campo é obrigatório.",
             captcha: "Digite corretamente o código que está ao lado."
