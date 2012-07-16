@@ -97,7 +97,7 @@
                                     
                   <form id="form-contato" name="form-contato" method="post" action="">
                   <!-- <input type="hidden" name="email" value="<?php echo $section->Site->getContactEmail() ?>"> -->
-                  <div class="linha t1">
+                  <div class="linha t4">
                     <label>nome</label>
                     <input type="text" name="nome" id="nome" />
                   </div>
