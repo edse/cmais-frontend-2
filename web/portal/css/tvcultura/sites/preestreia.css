@@ -5,6 +5,11 @@
 .submenu-interna ul {width:135px;}
 #barra-site h2 {margin-top:30px;}
 #barra-site #horario {width:200px;}
+
+/* participe da plateia*/
+.contato #data{width: 316px !important;}
+.contato form .t4 {width: 320px !important;}
+.contato form .t4 input#nome, .contato form .t4 input#email{width:305px;}
 /* form 
 .form { background:#fff; }
 .form .box-padrao {margin:5px;}

@@ -101,7 +101,7 @@
                     <label>nome</label>
                     <input type="text" name="nome" id="nome" />
                   </div>
-                  <div class="linha t2">
+                  <div class="linha t4">
                     <label>Telefone</label>
                     <input type="text" name="telefone" id="telefone" />
                   </div>
@@ -112,7 +112,7 @@
                   <div class="linha t4">
                     <label>escolha a data</label>
                     <br />
-                    <select class="data required" id="data">
+                    <select class="data required" name="data" id="data">
                         <option value="1ª Eliminatória - 25 de Agosto - Teatro FECAP" selected="selected">1ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="2ª Eliminatória - 25 de Agosto - Teatro FECAP">2ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="3ª Eliminatória – 1º de Setembro - Teatro FECAP">3ª Eliminatória – 1º de Setembro - Teatro FECAP</option>
@@ -133,7 +133,7 @@
                   <div class="linha t2">
                     <label>estado</label>
                     <br />
-                    <select class="estado required" id="estado">
+                    <select class="estado required" name="estado" id="estado">
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
                         <option value="Amazonas">AM</option>
