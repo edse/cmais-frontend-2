@@ -1,0 +1,81 @@
+/* TOPO PORTAL*/
+#menu-portal-1 #menu-portal .m-radio .bg-Cocorico,
+#menu-portal-1 #menu-portal .m-radio .bg-Ratimbum {bottom: 11px;}
+
+#menu-portal-2 li a:hover{background:#ff6633;}
+
+#menu-portal .menu-aberto .botoes {*width:100% !important;}
+/*/TOPO PORTAL*/ 
+
+/* PAGINAS PADRÕES*/
+body{background: url(../imgs/pattern-fundo.jpg) !important;}
+h1,h2,h3,h4,p,span{margin:0 0 6px 0 !important;}
+p{font-size:14px}
+h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
+
+
+#risco{background: url(../imgs/pattern-linha.jpg) repeat-x !important; height:2px;max-width:562px;float:left; margin:0;}
+#risco-2{background: url(../imgs/pattern-linha-2.jpg) repeat-x !important; height:2px;float:left; margin:0;}
+span.pergunta{font-size:20px; font-weight:bold;}
+.float{float:left;}
+.conteudo{padding:10px 0 0 0;}
+
+/* /PAGINAS PADRÕES*/
+
+/* COLUNAS */
+.col-400-sic{width:400px; margin:0 20px 0 0;text-align:left;}
+.col-585-sic{width:585px;text-align:left;}
+.coluna-sub-1{border-radius:5px; padding: 10px}
+.coluna-sub-2{border-radius:5px; padding: 10px}
+/*/ COLUNAS */
+
+/* CORES */
+h5{color:#106d41 !important}
+.texto-branco{color:#FFF !important;}
+.texto-preto{color:#333 !important;}
+.texto-verde{color:#106d41 !important}
+
+.cinza-escuro{background:#7f7f7f !important;}
+.cinza-claro{background:#a1a1a1 !important;}
+.cinza-claro-2{background:#f3f3f3 !important;}
+
+.zebra-1{background: #e1e1e1;}
+.zebra-2{background: #eaeaea;}
+
+label.valid {float:right}
+.control-group{float:left;}
+.help-inline {color: #B94A48;font-size: 10px;line-height: 11px;}
+label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-size: 10px;line-height: 10px;}
+
+/* /CORES */
+
+/* TOPO SIC */
+#topo-sic{padding: 20px 0 0 0;height:auto;overflow: hidden;}
+#topo-sic .logo-sic{float:left; margin:0 0 20px 0;}
+
+#topo-sic .menu-sic{width:100%;}
+#topo-sic .menu-sic ul{width:100%;}
+#topo-sic .menu-sic ul li{float:left;padding:6px 0px;}
+#topo-sic .menu-sic ul li a{color:#676767;padding:7px 15px;}
+#topo-sic .menu-sic ul li a:hover{text-decoration: none; background-color: #01723a; color:#FFF;}
+/* /TOPO SIC */
+
+/* CORPO SIC */
+#capa-site{padding: 0 0 0 78px;}
+
+#capa-site #lista-sic{margin:20px 0 0 0}
+#capa-site #lista-sic li a{display:block;width:100%; margin:2px; padding: 10px 0}
+#capa-site span.pergunta{}
+
+#corpo-sic{ margin:20px 0 0 0;height:auto;overflow: hidden;}
+/* /CORPO SIC */
+
+/* COLUNA ESQUERDA */
+
+/* /COLUNA ESQUERDA */
+
+/* COLUNA DIREITA */
+/* COLUNA DIREITA */
+
+.ui-accordion .ui-accordion-header .ui-icon {top: 30%;}
+.ui-accordion .ui-accordion-content {height: auto; overflow:hidden;}
