@@ -108,7 +108,7 @@
       <?php // include_partial_from_folder('sites/tvcocorico', 'global/promocao') ?>          
       <!--/PROMOCAO-->
       
-      <!--RESPOSTA FORM FILOMENA-->
+      <!--RESPOSTA FORM FILOMENA>
       <div id="respPromocao" >
         <a href="javascript:;" class="troca tCha"></a>
         <p class="recebeu">
