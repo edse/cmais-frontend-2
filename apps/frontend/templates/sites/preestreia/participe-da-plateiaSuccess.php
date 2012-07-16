@@ -114,7 +114,7 @@
                     <br />
                     <select class="data required" name="data" id="data">
                         <option value="" selected="selected">Selecione uma data</option>
-                        <option value="1ª Eliminatória - 25 de Agosto - Teatro FECAP" selected="selected">1ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
+                        <option value="1ª Eliminatória - 25 de Agosto - Teatro FECAP">1ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="2ª Eliminatória - 25 de Agosto - Teatro FECAP">2ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="3ª Eliminatória – 1º de Setembro - Teatro FECAP">3ª Eliminatória – 1º de Setembro - Teatro FECAP</option>
                         <option value="4ª Eliminatória – 1º de Setembro - Teatro FECAP">4ª Eliminatória – 1º de Setembro - Teatro FECAP </option>
@@ -135,7 +135,7 @@
                     <label>estado</label>
                     <br />
                     <select class="estado required" name="estado" id="estado">
-                        <option value="">UF</option>
+                        <option value="" selected="selected">UF</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
                         <option value="Amazonas">AM</option>
@@ -161,7 +161,7 @@
                         <option value="Rio Grande do Sul">RS</option>
                         <option value="Santa Catarina">SC</option>
                         <option value="Sergipe">SE</option>
-                        <option value="São Paulo" selected="selected">SP</option>
+                        <option value="São Paulo">SP</option>
                         <option value="Tocantins">TO</option>
                     </select>
                   </div>
