@@ -1,8 +1,8 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
-		<!-- SCRIPTS -->
-    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!-- SCRIPTS -->
+     
     <script src="/portal/js/validate/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
@@ -17,13 +17,13 @@
       <!-- /CSS TOPO CMAIS -->
       
       <!-- CSS BOOTSTRAP -->
-      <link rel="stylesheet" href="/portal/css/tvcultura/bootstrap/bootstrap.min.css">
-      <link rel="stylesheet" href="/portal/css/tvcultura/bootstrap/bootstrap-responsive.min.css">
-      <link rel="stylesheet" href="/portal/css/tvcultura/bootstrap/style.css">
+      <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+      <link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
       <!-- /CSS BOOTSTRAP -->
       
       <!-- CSS SIC -->
-  		<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+      <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
       <!-- /CSS SIC-->
       
     <!-- /CSS -->
