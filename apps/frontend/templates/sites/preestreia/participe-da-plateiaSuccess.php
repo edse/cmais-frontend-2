@@ -247,21 +247,21 @@
               minlength: 2
             },
             telefone:{
-              required: true,
+              required: true
             },
             email:{
               required: true,
               email: true
             },
             data:{
-              required: true,
+              required: true
             },
             cidade:{
               required: true,
               minlength: 3
             },
             estado:{
-              required: true,
+              required: true
             },
             captcha: {
               required: true,
