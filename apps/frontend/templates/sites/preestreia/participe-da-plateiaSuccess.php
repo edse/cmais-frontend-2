@@ -244,6 +244,9 @@
               required: true,
               minlength: 2
             },
+            telefone:{
+              required: true,
+            },
             email:{
               required: true,
               email: true
@@ -267,6 +270,7 @@
           },
           messages:{
             nome: "Digite um nome válido. Este campo é obrigatório.",
+            telefone: "Este campo é obrigatório.",
             email: "Digite um e-mail válido. Este campo é obrigatório.",
             data: "Este campo é obrigatório.",
             cidade: "Este campo é obrigatório.",
