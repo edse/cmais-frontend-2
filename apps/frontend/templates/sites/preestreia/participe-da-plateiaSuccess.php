@@ -113,6 +113,7 @@
                     <label>escolha a data</label>
                     <br />
                     <select class="data required" name="data" id="data">
+                        <option value="" selected="selected">Selecione uma data</option>
                         <option value="1ª Eliminatória - 25 de Agosto - Teatro FECAP" selected="selected">1ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="2ª Eliminatória - 25 de Agosto - Teatro FECAP">2ª Eliminatória - 25 de Agosto - Teatro FECAP</option>
                         <option value="3ª Eliminatória – 1º de Setembro - Teatro FECAP">3ª Eliminatória – 1º de Setembro - Teatro FECAP</option>
@@ -134,6 +135,7 @@
                     <label>estado</label>
                     <br />
                     <select class="estado required" name="estado" id="estado">
+                        <option value="">UF</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
                         <option value="Amazonas">AM</option>
@@ -253,7 +255,6 @@
             },
             data:{
               required: true,
-              minlength: 2
             },
             cidade:{
               required: true,
@@ -261,7 +262,6 @@
             },
             estado:{
               required: true,
-              minlength: 2
             },
             captcha: {
               required: true,
