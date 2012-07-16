@@ -549,7 +549,7 @@
                   $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "http://172.20.17.129/esic/soap.php",
+                    url: "http://cmais.com.br/forms-sic/soap.php",
                     data: $("#form1").serialize(),
                     beforeSend: function(){
                       $('#loader1').show();
@@ -608,7 +608,7 @@
                   $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "http://172.20.17.129/esic/soap.php",
+                    url: "http://cmais.com.br/forms-sic/soap.php",
                     data: $("#form2").serialize(),
                     beforeSend: function(){
                       $('#loader2').show();
@@ -667,7 +667,7 @@
                   $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "http://172.20.17.129/esic/soap.php",
+                    url: "http://cmais.com.br/forms-sic/soap.php",
                     data: $("#form3").serialize(),
                     beforeSend: function(){
                       $('#loader3').show();
@@ -710,7 +710,7 @@
                   $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "http://172.20.17.129/esic/soap.php",
+                    url: "http://cmais.com.br/forms-sic/soap.php",
                     data: $("#form4").serialize(),
                     beforeSend: function(){
                       $('#loader4').show();
@@ -736,7 +736,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "http://172.20.17.129/esic/soap.php",
+                url: "http://cmais.com.br/forms-sic/soap.php",
                 data: "action=municipios&uf="+$('#'+form+'_estado :selected').val()+"&form="+form,
                 beforeSend: function(){
                   //$('img#ajax-loader').show();
@@ -756,7 +756,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "http://172.20.17.129/esic/soap.php",
+                url: "http://cmais.com.br/forms-sic/soap.php",
                 data: "action=assuntos&cod_programa=24",
                 beforeSend: function(){
                   //$('img#ajax-loader').show();
