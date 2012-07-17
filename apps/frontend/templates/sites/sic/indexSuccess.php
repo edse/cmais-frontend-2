@@ -7,7 +7,11 @@
     <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
     <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
-    <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>  
+    <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
+		<script>
+      $(".collapse").collapse()
+    </script>  
+
     <!-- /SCRIPTS -->
     
     <!-- CSS --> 
