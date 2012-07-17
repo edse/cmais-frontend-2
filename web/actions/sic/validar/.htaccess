@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^(.*)?(.*)$ index.php?$2
+RewriteRule ^(.*)?id=(.*)$ index.php?id=$2
