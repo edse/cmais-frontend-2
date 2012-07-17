@@ -7,10 +7,7 @@
     <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
     <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
-    <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
-    <script>
-      $(".collapse").collapse()
-    </script>  
+    <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>  
     <!-- /SCRIPTS -->
     
     <!-- CSS --> 
@@ -25,13 +22,12 @@
       <link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
       <!-- /CSS BOOTSTRAP -->
       
-      
       <!-- CSS SIC -->
       <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
       <!-- /CSS SIC-->
       
     <!-- /CSS -->
-      
+    	
     <!-- CAPA SITE -->
     <div id="capa-site">
       
@@ -42,87 +38,71 @@
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic">
           <?php if(isset($displays["acesso-a-informacao"])): ?>
-          <h2>
-            <?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?>
-          </h2>
+          	<?php if(count($displays["acesso-a-informacao"]) > 0): ?>
+          <h2><?php echo $displays["acesso-a-informacao"][0]->Block->getTitle() ?></h2>
           
-          <?php if(count($displays["acesso-a-informacao"]) > 0): ?>
-            <?php foreach($displays["acesso-a-informacao"] as $d): ?>
+          		<?php foreach($displays["acesso-a-informacao"] as $d): ?>
           <span class="pergunta"><?php echo $d->getTitle() ?></span>
-
-          <p>
-            <?php echo $d->getDescription() ?>
-            <a href="<?php echo $d->retriveUrl() ?>" class="leiamais" title="Leia mais">Leia +</a>
-          </p>
-          
-            <?php endforeach; ?>
-
+          <p><?php echo $d->Asset->getDescription() ?></p>
+          <a href="<?php echo $d->retriveUrl() ?>" title="Leia mais">Leia +</a>
+          		<?php endforeach; ?>
+          	
+          	<?php endif; ?>
           <?php endif; ?>
           
-          <?php endif; ?>
-          
-          <?php if(isset($displays["oriente-se"])): ?>
+					<?php if(isset($displays["oriente-se"])): ?>
+						<?php if(count($displays["oriente-se"]) > 0): ?>
           <!-- COLUNA SUB ESQ 1 -->
-          <div class="coluna-sub-1 cinza-claro texto-branco m30">
+          <div class="coluna-sub-1 cinza-claro texto-branco">
             <h4><?php echo $displays["oriente-se"][0]->Block->getTitle() ?></h4>
-            <p class=" texto-branco"><?php echo $displays["oriente-se"][0]->Block->getDescription() ?></p>
+            <p><?php echo $displays["oriente-se"][0]->Block->getDescription() ?></p>
             
-            <?php if(count($displays["oriente-se"]) > 0): ?>
-              <?php foreach($displays["oriente-se"] as $d): ?>
+						
+							<?php foreach($displays["oriente-se"] as $d): ?>
             <!-- COLUNA SUB ESQ 2 -->
             <div id="accodion" class="coluna-sub-1 cinza-escuro">
-              
-              <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#dicas">
-                <h4><i class="icon-plus icon-white"></i><?php echo $d->getTitle() ?></h4>
+              <a href="javascript:;" class="menu-sic"/>
+                <h4><?php echo $d->getTitle() ?></h4>
               </a>
-             
-            <div id="dicas" class="collapse on">
-              <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
+              <div id="risco-2"></div>
+              <div class="conteudo" style="display: none;">
+              	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
+              </div>
             </div>
-            </div>
-            
             <!-- /COLUNA SUB ESQ 2 -->
-              <?php endforeach; ?>
-            <?php endif; ?>
+							<?php endforeach; ?>
           </div>           
           <!-- /COLUNA SUB ESQ 1 -->
-          <?php endif; ?>
+	          <?php endif; ?>
+	        <?php endif; ?>
           
         </div>
         <!-- /COLUNA ESQUERDA -->
         
         <!-- COLUNA DIREITA -->
         <div class="float col-585-sic">
-          
-          <?php if(isset($displays["formas-de-atendimento"])): ?>
+        	
+        	<?php if(isset($displays["formas-de-atendimento"])): ?>
+        		<?php if(count($displays["formas-de-atendimento"]) > 0): ?>
           
           <!-- COLUNA SUB DIR 1 -->
           <div class="coluna-sub-1 cinza-claro-2 texto-branco">
             <span class="titulo bold"><?php echo $displays["formas-de-atendimento"][0]->Block->getTitle() ?></span>
             <!-- COLUNA SUB DIR 2 -->
             
-            <?php if(count($displays["formas-de-atendimento"]) > 0): ?>
-              <?php foreach($displays["formas-de-atendimento"] as $d): ?>
+          		<?php foreach($displays["formas-de-atendimento"] as $d): ?>
       
             <div id="accordion" class="texto-preto">
-              <h3><a href="#">Section 1</a></h3>
+              <h3><a href="#"><?php echo $d->getTitle() ?></a></h3>
               <div>
-                <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                </p>
+              	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
               </div>
             </div>
              
-              <?php endforeach; ?>
-            <?php endif; ?>
-   
-
-
+            	<?php endforeach; ?>
           </div>           
           <!-- /COLUNA SUB DIR 1 -->
+          	<?php endif; ?>
           <?php endif; ?>
         </div>  
         <!-- /COLUNA DIREITA -->
