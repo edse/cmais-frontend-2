@@ -12,7 +12,7 @@
 
 /* PAGINAS PADRÕES*/
 body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
-#capa-site{overflow: visible;}
+
 #capa-site h1,#capa-site h2,#capa-site h3,#capa-site h4,#capa-site p,#capa-site span{margin:6px 0 6px 2px !important;}
 #capa-site p{font-size:14px}
 #capa-site h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
@@ -59,19 +59,23 @@ h5{color:#106d41 !important}
 #topo-sic .nav-tabs > li > a,
 #topo-sic .nav-pills > li > a {margin: 4px 0 4px 0px;}
 #topo-sic .nav {margin:0; float:left;border-top:1px solid #acacac;border-bottom:1px solid #acacac;}
-#topo-sic .dropdown-menu {background-color:#00723a;padding:0;text-align:left;border-radius:0;top:34px;left:0px;border:none; border-bottom-right-radius:8px;border-bottom-left-radius:8px;border-top-right-radius:8px   }
+#topo-sic .dropdown-menu {background-color:#00723a;padding:0;text-align:left;border-radius:0;top:34px;left:0px;border:none; border-bottom-right-radius:8px;border-bottom-left-radius:8px;border-top-right-radius:8px;padding:1px 0;  }
 #topo-sic .active a,
 #topo-sic .dropdown.open a,
 #topo-sic a:hover{background-color:#00723a;color:#FFF!important;border-radius:5px }
 #topo-sic .dropdown.open a{border-bottom-right-radius:0px;border-bottom-left-radius:0px;margin-bottom: 0px;height: 17px;}
-#topo-sic .dropdown-menu li a{background-color: #00723a;margin: 3px;border-radius:5px !important;}
-#topo-sic .dropdown-menu li a:hover{background-color: #ED9F18;margin: 3px;border-radius: 5px}
+#topo-sic .dropdown-menu li a{background-color: #00723a;border-radius:5px !important;border: 2px solid #00723a;}
+#topo-sic .dropdown-menu li a:hover{background-color: #ED9F18;border-radius: 5px;border: 2px solid #00723a;}
 
 /* /TOPO SIC */
 
+#corpo-sic .leiamais{color: #00723a;text-decoration: underline;}
 label.valid {float:right}
 .help-block {font-size: 10px !important;line-height: 11px !important;}
 label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-size: 10px;line-height: 10px;}
 
-
-
+.m30{margin-top:30px}
+#corpo-sic #dicas p{color:#FFF;}
+#corpo-sic a.dicas{color:#fff;}
+#corpo-sic a.dicas{text-decoration: none;}
+#corpo-sic a.dicas:hover{text-decoration:underline;}
