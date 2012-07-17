@@ -95,7 +95,7 @@
             <div id="accordion" class="texto-preto">
               <h3><a href="#"><?php echo $d->getTitle() ?></a></h3>
               <div>
-              	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
+              	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
               </div>
             </div>
              
