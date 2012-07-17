@@ -476,7 +476,20 @@
             <script>
             $(document).ready(function(){
               assuntos();
-              
+
+              var vars = getUrlVars();
+              if(vars['email'] != undefined){
+                $('#f1_email').val(vars['email'])
+                $('#email').val(vars['email'])
+                $('#f1_email').attr("disabled","disabled");
+                $('#f1_protocolo').focus();
+                $('#f1_protocolo').addClass('focused');
+              }else{
+                $('#f1_email').val("");
+                $('#email').val("");
+                $('#f1_email').focus();
+              }
+
               $('#f2_tipo1').click(function(){
                 $('#row3').fadeOut('fast', function() {
                   $('#row2').fadeIn();

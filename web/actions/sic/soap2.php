@@ -12,8 +12,8 @@ if(!isset($_REQUEST["step"]))
 
 if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")){
   
-  $email = (isset($_REQUEST["email"]))? $_REQUEST["email"] : $_REQUEST["f1_email"];
-  $protocolo = (isset($_REQUEST["protocolo"]))? $_REQUEST["protocolo"] : $_REQUEST["f1_protocolo"];
+  $email = ($_REQUEST["email"]!="")? $_REQUEST["email"] : $_REQUEST["f1_email"];
+  $protocolo = ($_REQUEST["protocolo"]!="")? $_REQUEST["protocolo"] : $_REQUEST["f1_protocolo"];
   
   //CHECK STATUS
   $result = $client->sic_andamento(array('email'=>$email, 'protocolo'=>$protocolo));
