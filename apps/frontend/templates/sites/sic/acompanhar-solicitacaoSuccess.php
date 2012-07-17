@@ -35,20 +35,16 @@
                 
       <!-- CORPO SITE -->
       <div id="corpo-sic">
+				<?php if(isset($displays["acompanhar-solicitacao"])): ?>
+					<?php if(count($displays["acompanhar-solicitacao"]) > 0): ?>      	
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic">
-
-          <h2>
-            Coluna Esquerda
-          </h2>
-          
-          <p>
-            conteudo
-          </p>
-       
-          
+          <h2><?php echo $displays["acompanhar-solicitacao"][0]->Block->getTitle() ?></h2>
+          <p><?php echo html_entity_decode($displays["acompanhar-solicitacao"][0]->Asset->AssetContent->render()) ?></p>
         </div>
         <!-- /COLUNA ESQUERDA -->
+        	<?php endif; ?>
+        <?php endif; ?>
         
         <!-- COLUNA DIREITA -->
         <div class="float col-585-sic">
