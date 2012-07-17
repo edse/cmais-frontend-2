@@ -1,1 +1,2 @@
-RewriteEngine off
+RewriteEngine on
+RewriteRule ^(.*)?(.*)$ index.php?$2
