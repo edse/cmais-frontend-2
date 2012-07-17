@@ -1,3 +1,3 @@
 <?php 
-header("Location: http://172.20.17.129/esic/acompanhamento.html?protocolo=".$_REQUEST["protocolo"]);
+header("Location: http://cmais.com.br/sic/acompanhar-solicitacao?protocolo=".$_REQUEST["protocolo"]);
 die();
