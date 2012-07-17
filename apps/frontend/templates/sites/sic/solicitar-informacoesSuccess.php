@@ -533,8 +533,6 @@
               $("#f2_cep, #f3_cep, #f4_cep").mask("99999-999");
               $("#f2_telefone, #f3_telefone, #f4_telefone").mask("(99) 9999-9999");
               
-              $('#f1_email').val("");
-              
               $('#loader').hide();
               
               $('.row:first').show();
