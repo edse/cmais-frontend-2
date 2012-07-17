@@ -100,26 +100,32 @@
             <span class="titulo bold"><?php echo $displays["formas-de-atendimento"][0]->Block->getTitle() ?></span>
             <!-- COLUNA SUB DIR 2 -->
             
-              <?php foreach($displays["formas-de-atendimento"] as $d): ?>
+              
       
             <div id="formas-de-contato" class="texto-preto">
               <ul>
-                  <li>
-                      
-                  <a href="javascript:;" class="" data-toggle="collapse" data-target="#formas">
+                  
+                    <?php 
+           $i=0;
+           foreach($displays["formas-de-atendimento"] as $d):
+            $i++
+           ?> 
+                      <li>  
+                  <a href="javascript:;" class="" data-toggle="collapse" data-target="#formas<?php echo $i ?>">
                       <i class="icon-play"></i><?php echo $d->getTitle() ?>
                     </a>
-                        <div id="formas" class="collapse on">
+                        <div id="formas<?php echo $i ?>" class="collapse on">
                             <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                         </div>
           </li>
+                    <?php endforeach; ?>
                  </ul>                        
             
                 
             </div>
             
              
-              <?php endforeach; ?>
+              
           </div>           
           <!-- /COLUNA SUB DIR 1 -->
             <?php endif; ?>
@@ -131,3 +137,4 @@
       
     </div>
     <!-- / CAPA SITE -->
+  
