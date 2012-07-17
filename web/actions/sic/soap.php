@@ -12,7 +12,7 @@ if(!isset($_REQUEST["step"]))
 
 if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")){
   
-  $email = (isset($_REQUEST["email"]))? $_REQUEST["email"] : $_REQUEST["f1_email"];
+  $email = ($_REQUEST["email"]!="")? $_REQUEST["email"] : $_REQUEST["f1_email"];
    
   //CHECK EMAIL
   $result = $client->valida_email(array('email'=>$email));

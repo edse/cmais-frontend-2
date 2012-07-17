@@ -476,7 +476,20 @@
             <script>
             $(document).ready(function(){
               assuntos();
-              
+
+              var vars = getUrlVars();
+              if(vars['email'] != undefined){
+                $('#f1_email').val(vars['email'])
+                $('#email').val(vars['email'])
+                $('#f1_email').attr("disabled","disabled");
+                $('#f1_protocolo').focus();
+                $('#f1_protocolo').addClass('focused');
+              }else{
+                $('#f1_email').val("");
+                $('#email').val("");
+                $('#f1_email').focus();
+              }
+
               $('#f2_tipo1').click(function(){
                 $('#row3').fadeOut('fast', function() {
                   $('#row2').fadeIn();
@@ -519,8 +532,6 @@
               $('#f3_cnpj').mask('99.999.999/9999-99');
               $("#f2_cep, #f3_cep, #f4_cep").mask("99999-999");
               $("#f2_telefone, #f3_telefone, #f4_telefone").mask("(99) 9999-9999");
-              
-              $('#f1_email').val("");
               
               $('#loader').hide();
               
