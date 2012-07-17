@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)?protocolo=(.*)$ index.php?protocolo=$2
