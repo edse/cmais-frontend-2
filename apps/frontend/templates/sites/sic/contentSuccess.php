@@ -33,7 +33,7 @@
         <!-- COLUNA ESQUERDA -->
         <div class="float col-585-sic">
 
-          <h2><?php echo $asset->AssetContent->getTitle() ?></h2>
+          <h2><?php echo $asset->getTitle() ?></h2>
           
 					<?php echo html_entity_decode($asset->AssetContent->render()) ?>       
           
