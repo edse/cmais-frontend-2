@@ -35,12 +35,12 @@
                 
       <!-- CORPO SITE -->
       <div id="corpo-sic">
-				<?php if(isset($displays["acompanhar-solicitacao"])): ?>
-					<?php if(count($displays["acompanhar-solicitacao"]) > 0): ?>      	
+				<?php if(isset($displays["conteudo-complementar"])): ?>
+					<?php if(count($displays["conteudo-complementar"]) > 0): ?>      	
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic">
-          <h2><?php echo $displays["acompanhar-solicitacao"][0]->Block->getTitle() ?></h2>
-          <p><?php echo html_entity_decode($displays["acompanhar-solicitacao"][0]->Asset->AssetContent->render()) ?></p>
+          <h2><?php echo $displays["conteudo-complementar"][0]->Block->getTitle() ?></h2>
+          <p><?php echo html_entity_decode($displays["conteudo-complementar"][0]->Asset->AssetContent->render()) ?></p>
         </div>
         <!-- /COLUNA ESQUERDA -->
         	<?php endif; ?>
