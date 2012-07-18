@@ -407,7 +407,7 @@ class mainActions extends sfActions
         if($this->section)
           return $this->section;
         else{
-        	if ($this->site->slug == "m") {
+        	if ($this->site->slug == "m" || $this->site->slug == "sic") {
 	          // #2b Look for an Asset
 	          $this->asset = Doctrine_Query::create()
 	            ->select('a.*')
