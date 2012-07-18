@@ -291,6 +291,7 @@ class _sectionActions extends sfActions
             ->select('s.*')
             ->from('Section s')
             ->where('s.site_id = ?', $this->section->getSiteId())
+            ->andWhere('parent_section_id IS NULL')
             ->andWhere('s.is_active = ?', 1)
             ->andWhere('s.is_visible = ?', 1)
             ->orderBy('s.display_order')
@@ -302,7 +303,6 @@ class _sectionActions extends sfActions
             ->where('s.site_id = ?', $this->section->getSiteId())
             ->andWhere('s.is_active = ?', 1)
             ->andWhere('s.is_visible = ?', 1)
-            ->andWhere('parent_section_id IS NULL')
             ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
             ->orderBy('s.display_order')
             ->execute();
