@@ -26,7 +26,7 @@
     <!-- CAPA SITE -->
     <div id="capa-site">
       
-      <?php include_partial_from_folder('sites/sic', 'global/topo', array('site' => $site,'siteSections' => $siteSections)) ?>
+      <?php include_partial_from_folder('sites/sic', 'global/topo', array('site' => $site,'siteSections' => $siteSections, 'section' => $section)) ?>
                 
       <!-- CORPO SITE -->
       <div id="corpo-sic">
