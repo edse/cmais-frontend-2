@@ -26,54 +26,31 @@
           <!-- MENU PRINCIPAL -->
           <ul class="nav nav-pills">
 
-            <!-- MENU BOTAO -->
-            <li class="active"><a href="/sic">Sobre</a></li>
-            <!-- /MENU BOTAO -->
-            
             <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown" id="menu8">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu8">
+            <li class="dropdown" id="menu1">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
                 Solicitações
               </a>
               <ul class="dropdown-menu">
-                <li><a href="/sic/solicitar-informação" title="Solicitar Informação">Solicitar Informação</a></li>
-                <li><a href="/sic/solicitar-informação" title="Acompanhar Solicitação">Acompanhar Solicitação</a></li>
-              </ul>
-            </li>
-            <!-- /MENU BOTAO DROP DOWN -->
-            <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown" id="menu2">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
-                Institucional
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#" title="Estatuto da FPA">Estatuto da FPA</a></li>
-                <li><a href="#" title="Composição do Conselho Curador">Composição do Conselho Curador</a></li>
-                <li><a href="#" title="Atas do Conselho">Atas do Conselho</a></li>
-                <li><a href="#" title="Diretoria">Diretoria</a></li>
-                <li><a href="#" title="Organograma">Organograma</a></li>
-                <li><a href="#" title="Relatório de Atividades 2011">Relatório de Atividades 2011</a></li>
-                <li><a href="#" title="Patrimônio">Patrimônio</a></li>
+                <li><a href="/sic/solicitar-informacoes" title="Solicitar Informação">Solicitar Informação</a></li>
+                <li><a href="/sic/acompanhar-solicitacao" title="Acompanhar Solicitação">Acompanhar Solicitação</a></li>
               </ul>
             </li>
             <!-- /MENU BOTAO DROP DOWN -->
             
-             <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown active" id="menu3">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">
-                Finanças
+            <!-- MENU BOTAO DROP DOWN -->
+            <li class="dropdown" id="menu5">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu5">
+                Licitações
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#" title="Orçamento 2012">Orçamento 2012</a></li>
-                <li><a href="#" title="Repasses do Estado no ano">Repasses do Estado no ano</a></li>
-                <li><a href="#" title="Balanço de 2011">Balanço de 2011</a></li>
-                <li><a href="#" title="Plano Anual da Lei Rouanet">Plano Anual da Lei Rouanet</a></li>
-                <li><a href="#" title="Projetos aprovados da Lei Rouanet">Projetos aprovados da Lei Rouanet</a></li>
-                <li><a href="#" title="Convênios">Convênios</a></li>
+                <li><a href="#" title="Licitações em andamento">Licitações em andamento</a></li>
+                <li><a href="#" title="Editais já concluídos (desde 16/05) e respectivos resultados">Editais já concluídos (desde 16/05) e respectivos resultados</a></li>
+                
               </ul>
             </li>
             <!-- /MENU BOTAO DROP DOWN -->
- 
+                        
             <!-- MENU BOTAO DROP DOWN -->
             <li class="dropdown" id="menu4">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu4">
@@ -89,14 +66,17 @@
             <!-- /MENU BOTAO DROP DOWN -->
 
             <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown" id="menu5">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu5">
-                Licitações
+            <li class="dropdown" id="menu3">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">
+                Finanças
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#" title="Licitações em andamento">Licitações em andamento</a></li>
-                <li><a href="#" title="Editais já concluídos (desde 16/05) e respectivos resultados – link interno">Editais já concluídos (desde 16/05) e respectivos resultados – link interno</a></li>
-                
+                <li><a href="#" title="Orçamento 2012">Orçamento 2012</a></li>
+                <li><a href="#" title="Repasses do Estado no ano">Repasses do Estado no ano</a></li>
+                <li><a href="#" title="Balanço de 2011">Balanço de 2011</a></li>
+                <li><a href="#" title="Plano Anual da Lei Rouanet">Plano Anual da Lei Rouanet</a></li>
+                <li><a href="#" title="Projetos aprovados da Lei Rouanet">Projetos aprovados da Lei Rouanet</a></li>
+                <li><a href="#" title="Convênios">Convênios</a></li>
               </ul>
             </li>
             <!-- /MENU BOTAO DROP DOWN -->
@@ -128,11 +108,33 @@
               </ul>
             </li>
             <!-- /MENU BOTAO DROP DOWN -->
-
+            
+            <!-- MENU BOTAO DROP DOWN -->
+            <li class="dropdown" id="menu2">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
+                Institucional
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" title="Estatuto da FPA">Estatuto da FPA</a></li>
+                <li><a href="#" title="Composição do Conselho Curador">Composição do Conselho Curador</a></li>
+                <li><a href="#" title="Atas do Conselho">Atas do Conselho</a></li>
+                <li><a href="#" title="Diretoria">Diretoria</a></li>
+                <li><a href="#" title="Organograma">Organograma</a></li>
+                <li><a href="#" title="Relatório de Atividades 2011">Relatório de Atividades 2011</a></li>
+                <li><a href="#" title="Patrimônio">Patrimônio</a></li>
+              </ul>
+            </li>
+            <!-- /MENU BOTAO DROP DOWN -->
+            
+            <!-- MENU BOTAO -->
+            <li class="active"><a href="/sic">Sobre</a></li>
+            <!-- /MENU BOTAO -->
+            
             <!-- MENU BOTAO -->
             <li><a href="/faq" style="margin-right:0 !important;">FAQ</a></li>
-            <!-- /MENU BOTAO -->            
-                                  
+            <!-- /MENU BOTAO --> 
+            
+                                        
           </ul>
           <!-- /MENU PRINCIPAL -->
 
