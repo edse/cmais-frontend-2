@@ -64,7 +64,7 @@ h5{color:#106d41 !important}
 #topo-sic .dropdown.open a,
 #topo-sic a:hover{background-color:#00723a;color:#FFF!important;border-radius:5px }
 #topo-sic .dropdown.open a{border-bottom-right-radius:0px;border-bottom-left-radius:0px;margin-bottom: 0px;height: 17px;}
-#topo-sic .dropdown-menu li a{margin-right:0!important;background-color: #00723a;border-radius:5px !important;border: 2px solid #00723a;}
+#topo-sic .dropdown-menu li a{margin-right:0 !important;background-color: #00723a;border-radius:5px !important;border: 2px solid #00723a;}
 #topo-sic .dropdown-menu li a:hover{background-color: #ED9F18;border-radius: 5px;border: 2px solid #00723a;}
 
 /* /TOPO SIC */
@@ -87,3 +87,6 @@ label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-
 #formas-de-contato ul li:nth-child(even) {background: #eaeaea;}
 #formas{background:#F3F3F3 !important;}
 #formas p{padding:10px 0 0 15px;}
+
+.fundo-cinza{background: #F3F3F3 !important;}
+.fundo-cinza p{padding: 16px 0 0 25px;}
