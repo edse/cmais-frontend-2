@@ -936,8 +936,8 @@ class _sectionActions extends sfActions
 		
 		if ($this->section->Site->getSlug() == "sic") {
   		if($this->pager->count() == 1){
-    		header("Location: ".$this->$pager->getCurrent()->retriveUrl());
-    		die();
+    		//header("Location: ".$this->$pager->getCurrent()->retriveUrl());
+    		//die();
   		} 
   	} 
 
