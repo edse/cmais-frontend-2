@@ -15,7 +15,7 @@
 	          <?php $subsections = $s->subsections(); ?>
             <?php if(count($subsections) > 0): ?>
             <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown" id="menu<?php echo $s->id ?>">
+            <li class="dropdown <?php if($section->id == $s->id): ?>active<?php endif; ?>" id="menu<?php echo $s->id ?>">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu<?php echo $s->id ?>" title="<?php echo $s->getTitle() ?>">
                 <?php echo $s->getTitle() ?>
               </a>
@@ -28,7 +28,7 @@
             <!-- /MENU BOTAO DROP DOWN -->
             <?php else: ?>
             <!-- MENU BOTAO -->
-            <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+            <li <?php if($section->id == $s->id): ?>class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
             <!-- /MENU BOTAO -->
             <?php endif; ?>
           <?php endforeach; ?> 
