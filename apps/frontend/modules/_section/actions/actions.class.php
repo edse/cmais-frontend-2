@@ -286,16 +286,6 @@ class _sectionActions extends sfActions
             header("Location: ".$this->uri."?d=".str_replace("-","/",$date));
             die();
           }
-        }elseif($this->section->Site->getSlug() == "sic"){
-          $this->siteSections = Doctrine_Query::create()
-            ->select('s.*')
-            ->from('Section s')
-            ->where('s.site_id = ?', $this->section->getSiteId())
-            ->andWhere('parent_section_id IS NULL')
-            ->andWhere('s.is_active = ?', 1)
-            ->andWhere('s.is_visible = ?', 1)
-            ->orderBy('s.display_order')
-            ->execute();
         }else{
           $this->siteSections = Doctrine_Query::create()
             ->select('s.*')
@@ -530,7 +520,17 @@ class _sectionActions extends sfActions
               ->orderBy('s.display_order')
               ->limit(10)
               ->execute();
-          }
+	        }elseif($this->section->Site->getSlug() == "sic"){
+	          $this->siteSections = Doctrine_Query::create()
+	            ->select('s.*')
+	            ->from('Section s')
+	            ->where('s.site_id = ?', $this->section->getSiteId())
+	            ->andWhere('parent_section_id IS NULL')
+	            ->andWhere('s.is_active = ?', 1)
+	            ->andWhere('s.is_visible = ?', 1)
+	            ->orderBy('s.display_order')
+	            ->execute();
+					}					
           else{
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
