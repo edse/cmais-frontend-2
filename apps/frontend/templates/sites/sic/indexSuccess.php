@@ -9,7 +9,16 @@
     <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
     <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
   <script>
-      $(".collapse").collapse()
+      $(".collapse").collapse();
+      
+      $(document).ready(function(){
+        $(".dicas").click(function(){
+          $(this).prev().toggleClass('icon-minus');
+        });
+        $('.formas').click(function(){
+          $(this).prev().toggleClass('icon-circle-arrow-down');
+        });
+      });
     </script>  
 
     <!-- /SCRIPTS -->
@@ -71,11 +80,11 @@
             <div id="accodion" class="coluna-sub-1 box-dicas cinza-escuro">
             
                 <i class="icon-plus icon-white"></i>
-                <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#dicas">
+                <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
                   <h4><?php echo $d->getTitle() ?></h4>
                 </a>
                 <div id="risco-2"></div>
-                <div id="dicas" class="collapse on">
+                <div id="<?php echo $d->getId() ?>" class="box-hide collapse on">
                     <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                 </div>   
             </div>
@@ -105,22 +114,18 @@
             <div id="formas-de-contato" class="texto-preto">
               <ul>
                   
-                    <?php 
-           $i=0;
-           foreach($displays["formas-de-atendimento"] as $d):
-            $i++
-           ?> 
-                      <li>
-                   <i class="icon-circle-arrow-right"></i>  
-                  <a href="javascript:;" class="" data-toggle="collapse" data-target="#formas<?php echo $i ?>">
+               <?php foreach($displays["formas-de-atendimento"] as $d): ?> 
+                  <li>
+                    <i class="icon-circle-arrow-right"></i>  
+                    <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
                       <?php echo $d->getTitle() ?>
                     </a>
-                        <div id="formas<?php echo $i ?>" class="fundo-cinza collapse on">
-                            <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
-                        </div>
-          </li>
-                    <?php endforeach; ?>
-                 </ul>                        
+                    <div id="<?php echo $d->getId() ?>" class="fundo-cinza collapse on">
+                      <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
+                    </div>
+                  </li>
+                <?php endforeach; ?>
+              </ul>                        
             
                 
             </div>
