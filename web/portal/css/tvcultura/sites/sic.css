@@ -75,8 +75,8 @@ h5{color:#106d41 !important}
 #corpo-sic .leiamais{color: #00723a;text-decoration: none;}
 #corpo-sic .leiamais:hover{text-decoration: underline;}
 
-#formas-de-contato .fundo-cinza a{color: #00723a;text-decoration: none;}
-#formas-de-contato .fundo-cinza a:hover{text-decoration: underline;}
+#formas-de-contato .fundo-cinza a{color: #00723a !important;text-decoration: none !important;}
+#formas-de-contato .fundo-cinza a:hover{text-decoration: underline !important;}
 label.valid {float:right}
 .help-block {font-size: 10px !important;line-height: 11px !important;}
 label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-size: 10px;line-height: 10px;}
