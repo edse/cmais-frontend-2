@@ -933,6 +933,14 @@ class _sectionActions extends sfActions
       $this->pager->init();
       $this->page = $request->getParameter('page');
     }
+		
+		if ($this->section->Site->getSlug() == "sic") {
+  		if($this->pager->count() == 1){
+    		//header("Location: ".$this->$pager->getCurrent()->retriveUrl());
+    		//die();
+  		} 
+  	} 
+
 
     $debug = false;
     if($request->getParameter('debug') != ""){
