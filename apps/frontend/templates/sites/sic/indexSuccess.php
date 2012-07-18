@@ -68,11 +68,11 @@
       <?php foreach($displays["oriente-se"] as $d): ?>
                         
             <!-- COLUNA SUB ESQ 2 -->
-            <div id="accodion" class="coluna-sub-1 cinza-escuro">
+            <div id="accodion" class="coluna-sub-1 box-dicas cinza-escuro">
             
-              
+                <i class="icon-plus icon-white"></i>
                 <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#dicas">
-                  <h4><i class="icon-plus icon-white"></i><?php echo $d->getTitle() ?></h4>
+                  <h4><?php echo $d->getTitle() ?></h4>
                 </a>
                 <div id="risco-2"></div>
                 <div id="dicas" class="collapse on">
@@ -110,9 +110,10 @@
            foreach($displays["formas-de-atendimento"] as $d):
             $i++
            ?> 
-                      <li>  
+                      <li>
+                   <i class="icon-circle-arrow-right"></i>  
                   <a href="javascript:;" class="" data-toggle="collapse" data-target="#formas<?php echo $i ?>">
-                      <i class="icon-circle-arrow-right"></i><?php echo $d->getTitle() ?>
+                      <?php echo $d->getTitle() ?>
                     </a>
                         <div id="formas<?php echo $i ?>" class="fundo-cinza collapse on">
                             <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
