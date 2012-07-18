@@ -40,7 +40,9 @@
       <!-- /CSS SIC-->
       
     <!-- /CSS -->
-      
+    
+    <!-- DIV CRIADA SOMENTE PRA MUDAR O RESIZE DA PG -->
+    <div style="width:100%;overflow: hidden; height:auto;">  
     <!-- CAPA SITE -->
     <div id="capa-site">
       
@@ -143,4 +145,4 @@
       
     </div>
     <!-- / CAPA SITE -->
-  
+    </div>
