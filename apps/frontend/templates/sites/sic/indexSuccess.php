@@ -112,9 +112,9 @@
            ?> 
                       <li>  
                   <a href="javascript:;" class="" data-toggle="collapse" data-target="#formas<?php echo $i ?>">
-                      <i class="icon-circle-arrow-right"></i><?php echo $d->getTitle() ?>
+                      <i class="icon-play"></i><?php echo $d->getTitle() ?>
                     </a>
-                        <div id="formas<?php echo $i ?>" class="fundo-cinza collapse on">
+                        <div id="formas<?php echo $i ?>" class="collapse on">
                             <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                         </div>
           </li>
