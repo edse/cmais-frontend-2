@@ -354,6 +354,7 @@
                   $(target).html(page);
                 }
               </script>
+              <!-- teste -->
               <!--PAGINADOR-->
               <div id="paginador-tv-ra-tim-bum" align="center">
                 <span class="picote cima"></span>
