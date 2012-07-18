@@ -82,11 +82,11 @@ label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-
 
 #formas-de-contato{margin-top:20px}
 #formas-de-contato ul{margin:0;}
-#formas-de-contato ul li a{display: block;width: 538px;margin: 0 0 0 0;padding: 13px;margin:1px;color:#333;}
+#formas-de-contato ul li a{display: block;margin: 0 0 0 0;padding: 13px;margin:1px;color:#333;}
 #formas-de-contato ul li:nth-child(odd) {background: #e1e1e1;}
 #formas-de-contato ul li:nth-child(even) {background: #eaeaea;}
 #formas{background:#F3F3F3 !important;}
 #formas p{padding:10px 0 0 15px;}
 
-.fundo-cinza{background: #F3F3F3 !important;}
-.fundo-cinza p{padding: 16px 0 0 25px;}
+.fundo-cinza{background: #FFF !important; padding: 1px 10px 1px 10px;}
+
