@@ -18,7 +18,7 @@
 	          if(isset($asset)){
 	          	$assetSections = $asset->getSections();
 							$sectionId = $assetSections[0]->getId();
-							if ($assetSections[0]->getParentSectionId())
+							if ($assetSections[0]->getParentSectionId() > 0)
 								$sectionId = $assetSections[0]->getParentSectionId();
 	          }
           ?>
