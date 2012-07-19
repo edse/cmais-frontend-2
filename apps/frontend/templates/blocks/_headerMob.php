@@ -31,7 +31,7 @@
 			}
 			
 	    // redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
-	    if (((screen.width * screen.height) / 768 >= 1024) && mobileVersion != "yes")
+	    if (((screen.width * screen.height) / 600 >= 800) && mobileVersion != "yes")
 	    {
 	      window.location="http://cmais.com.br";
 	    }
