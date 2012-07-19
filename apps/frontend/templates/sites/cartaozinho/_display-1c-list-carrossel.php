@@ -5,7 +5,7 @@
                 <div class="topo claro">
                   <span></span>
                   <div class="capa-titulo">
-                    <h4>Vídeos</h4>
+                    <img src="/portal/images/capaPrograma/cartaozinho/tit-videos.png" />
                   </div>
                 </div>
                 <div class="carrossel" id="carrossel1">

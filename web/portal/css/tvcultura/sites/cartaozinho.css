@@ -74,7 +74,9 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos { height:auto; background-image:none; }
 .videos { background-image:none; }
 .videos #box-videos { background:#86D5F3; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; }
+.videos #box-videos .topo{background: #2B8DB2;padding: 2px 10px 10px;}
 .videos #box-videos .claro span { display:none; }
+.videos #box-videos h4{color:#000 !important;}
 .videos .pag3,
 .videos #box-videos .claro .capa-titulo { background:none; }
 .videos .pag3 { border-color:#2B8DB2; }
@@ -154,3 +156,8 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 /* /secao*/
 
 .bg-site { height:auto; padding-bottom:20px; }
+.box-padrao.content .topo {overflow: visible;}
+.box-padrao.content .claro .capa-titulo {background: #2B8DB2;padding: 10px 10px 3px 10px;margin: 0 0 11px 0;}
+.box-padrao.content {text-align: left;background: #86D5F3;}
+.box-padrao.content li {width: 294px;}
+.box-padrao.content .conteudo {padding: 7px;}
