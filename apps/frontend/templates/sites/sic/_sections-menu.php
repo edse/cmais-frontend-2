@@ -18,6 +18,7 @@
             <li class="dropdown <?php if($section->getId() == $s->getId()): ?>active<?php endif; ?>" id="menu<?php echo $s->id ?>">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu<?php echo $s->id ?>" title="<?php echo $s->getTitle() ?>">
                 <?php echo $s->getTitle() ?>
+                <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
 							<?php foreach($subsections as $s): ?>
