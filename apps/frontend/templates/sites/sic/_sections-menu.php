@@ -41,7 +41,7 @@
             <!-- /MENU BOTAO DROP DOWN -->
             <?php else: ?>
             <!-- MENU BOTAO -->
-            <li <?php if($section->getId() == $s->getId()): ?>class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+            <li <?php if($s->getId() == $sectionId): ?>class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
             <!-- /MENU BOTAO -->
             <?php endif; ?>
           <?php endforeach; ?> 
