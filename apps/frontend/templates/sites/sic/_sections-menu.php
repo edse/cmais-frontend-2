@@ -10,12 +10,23 @@
         	
           <!-- MENU PRINCIPAL -->
           <ul class="nav nav-pills">
-          	
+          <?php
+          	$sectionId = 0;
+	          if(isset($section)){
+	          	$sectionId = $section->getId();
+	          }
+	          if(isset($asset)){
+	          	$assetSections = $asset->getSections();
+							$sectionId = $assetSections[0]->getId();
+							if ($assetSection->getParentSectionId())
+								$sectionId = $assetSection->getParentSectionId();
+	          }
+          ?>
 					<?php foreach($siteSections as $s): ?>
 	          <?php $subsections = $s->subsections(); ?>
             <?php if(count($subsections) > 0): ?>
             <!-- MENU BOTAO DROP DOWN -->
-            <li class="dropdown <?php if($section->getId() == $s->getId()): ?>active<?php endif; ?>" id="menu<?php echo $s->id ?>">
+            <li class="dropdown <?php if($s->getId() == $sectionId): ?>active<?php endif; ?>" id="menu<?php echo $s->id ?>">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu<?php echo $s->id ?>" title="<?php echo $s->getTitle() ?>">
                 <?php echo $s->getTitle() ?>
                 <b class="caret"></b>
