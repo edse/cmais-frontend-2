@@ -21,6 +21,7 @@
 							if ($assetSections[0]->getParentSectionId() > 0)
 								$sectionId = $assetSections[0]->getParentSectionId();
 	          }
+						echo "<!--".$sectionId."-->";
           ?>
 					<?php foreach($siteSections as $s): ?>
 	          <?php $subsections = $s->subsections(); ?>
