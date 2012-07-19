@@ -69,7 +69,7 @@ h5{color:#106d41 !important}
 #topo-sic .nav-pills > li > a {margin: 4px 0 4px 0px;}
 #topo-sic .nav {margin:0; float:left;border-top:1px solid #acacac;border-bottom:1px solid #acacac;}
 #topo-sic .dropdown-menu {background-color:#00723a;padding:0;text-align:left;border-radius:0;top:34px;left:0px;border:none; border-bottom-right-radius:8px;border-bottom-left-radius:8px;border-top-right-radius:8px;padding:1px 0;  }
-#topo-sic .active a,
+#topo-sic .dropdown.active .caret a,
 #topo-sic .dropdown.open .caret {border-top-color: white;}
 #topo-sic .active a,
 #topo-sic .dropdown.open a,
