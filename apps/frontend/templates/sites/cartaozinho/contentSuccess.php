@@ -9,10 +9,10 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-	<div class="bg-chamada">
-	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-	</div>
-	<div class="bg-site">
+  <div class="bg-chamada">
+    <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+  </div>
+  <div class="bg-site">
 
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -115,12 +115,12 @@
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
-                	
-                	
+                  
+                  
                   <!-- SAIBA MAIS -->
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                  	<div id="saibamais">                                                            
-                  	<h4>saiba +</h4>                                                            
+                    <div id="saibamais">                                                            
+                    <h4>saiba +</h4>                                                            
                     <ul class="conteudo">
                       <?php foreach($relacionados as $k=>$d): ?>
                         <li style="width: auto;">
@@ -168,11 +168,10 @@
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
-              <div class="box-padrao grid1">
+              <div class="box-padrao content grid1">
                 <div class="topo claro">
-                  <span></span>
                   <div class="capa-titulo">
-                    <h4>relacionadas</h4>
+                    <img src="/portal/images/capaPrograma/cartaozinho/tit-relacionadas.png" />
                     <a href="#" class="rss" title="rss"></a>
                   </div>
                 </div>
