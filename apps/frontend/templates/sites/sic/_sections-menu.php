@@ -18,8 +18,8 @@
 	          if(isset($asset)){
 	          	$assetSections = $asset->getSections();
 							$sectionId = $assetSections[0]->getId();
-							if ($assetSection->getParentSectionId())
-								$sectionId = $assetSection->getParentSectionId();
+							if ($assetSections[0]->getParentSectionId())
+								$sectionId = $assetSections[0]->getParentSectionId();
 	          }
           ?>
 					<?php foreach($siteSections as $s): ?>
