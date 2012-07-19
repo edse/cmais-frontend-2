@@ -64,7 +64,8 @@
       <div class="content">
 
         <!--MENU QUINTAL-->
-        <?php //include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?> 
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
+        <?php /* 
         <div class="cabecalho">
           <h1><a href="http://cmais.com.br/quintaldacultura">Quintal da Cultura</a></h1>
           <ul>
@@ -75,6 +76,9 @@
         </div>         
         <!--/MENU QUINTAL-->
         <hr />
+				 * 
+				 */
+				?>
       
 
         <!--CONTEUDO-->
