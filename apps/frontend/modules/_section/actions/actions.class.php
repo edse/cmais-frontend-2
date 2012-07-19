@@ -293,6 +293,7 @@ class _sectionActions extends sfActions
             ->where('s.site_id = ?', $this->section->getSiteId())
             ->andWhere('s.is_active = ?', 1)
             ->andWhere('s.is_visible = ?', 1)
+						->andWhere('parent_section_id IS NULL')						
             ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
             ->orderBy('s.display_order')
             ->execute();
@@ -543,7 +544,6 @@ class _sectionActions extends sfActions
               ->orderBy('s.display_order')
               ->limit(10)
               ->execute();
-						
           }
         }
           
@@ -563,7 +563,6 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-        	
           if($this->site->getSlug() == "penarua"){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
