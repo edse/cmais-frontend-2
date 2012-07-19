@@ -71,6 +71,7 @@ h5{color:#106d41 !important}
 #topo-sic .dropdown-menu {background-color:#00723a;padding:0;text-align:left;border-radius:0;top:34px;left:0px;border:none; border-bottom-right-radius:8px;border-bottom-left-radius:8px;border-top-right-radius:8px;padding:1px 0;  }
 #topo-sic .active a,
 #topo-sic .dropdown.open .caret {border-top-color: white;}
+#topo-sic .active a,
 #topo-sic .dropdown.open a,
 #topo-sic a:hover{background-color:#00723a;color:#FFF!important;border-radius:5px }
 #topo-sic .dropdown.open a{border-bottom-right-radius:0px;border-bottom-left-radius:0px;margin-bottom: 0px;height: 17px;}
