@@ -33,7 +33,7 @@
       <!-- CORPO SITE -->
       <div id="corpo-sic">
         <!-- COLUNA ESQUERDA -->
-        <div class="float span8">
+        <div class="float col-640-sic">
 
           <h2><?php echo $asset->getTitle() ?></h2>
           
