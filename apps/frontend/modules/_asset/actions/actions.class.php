@@ -120,28 +120,40 @@ class _assetActions extends sfActions
 
       // siteSections
       if($this->asset->Site->getType() == "ProgramaRadio"){
-          $this->siteSections = Doctrine_Query::create()
-            ->select('s.*')
-            ->from('Section s')
-            ->where('s.site_id = ?', 4)
-            ->andWhere('s.is_active = ?', 1)
-            ->andWhere('s.is_visible = ?', 1)
-            ->andWhere('parent_section_id IS NULL')
-            ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-            ->orderBy('s.display_order')
-            ->execute();
-        }else{
-          $this->siteSections = Doctrine_Query::create()
-		->select('s.*')
-		->from('Section s')
-		->where('s.site_id = ?', $this->asset->Site->id)
-		->andWhere('s.is_active = ?', 1)
-		->andWhere('s.is_visible = ?', 1)
-		->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-		->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-		->orderBy('s.display_order')
-		->execute();
-	}
+	      $this->siteSections = Doctrine_Query::create()
+	        ->select('s.*')
+	        ->from('Section s')
+	        ->where('s.site_id = ?', 4)
+	        ->andWhere('s.is_active = ?', 1)
+	        ->andWhere('s.is_visible = ?', 1)
+	        ->andWhere('parent_section_id IS NULL')
+	        ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+	        ->orderBy('s.display_order')
+	        ->execute();
+      }
+			elseif($this->asset->Site->getSlug() == "sic"){
+	      $this->siteSections = Doctrine_Query::create()
+	        ->select('s.*')
+	        ->from('Section s')
+	        ->where('s.site_id = ?', $this->asset->Site->getId())
+	        ->andWhere('s.is_active = ?', 1)
+	        ->andWhere('s.is_visible = ?', 1)
+	        ->andWhere('parent_section_id IS NULL')
+	        ->orderBy('s.display_order')
+	        ->execute();
+      }
+      else{
+        $this->siteSections = Doctrine_Query::create()
+					->select('s.*')
+					->from('Section s')
+					->where('s.site_id = ?', $this->asset->Site->id)
+					->andWhere('s.is_active = ?', 1)
+					->andWhere('s.is_visible = ?', 1)
+					->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+					->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+					->orderBy('s.display_order')
+					->execute();
+			}
       
       /*
       // editorials
