@@ -75,7 +75,7 @@
                       </div>
                       <div class="float">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
-                        <button type="submit" class="btn btn-success" id="btn1">Próximo Passo</button>
+                        <button type="button" class="btn btn-success" id="btn1">Próximo Passo</button>
                         <a href="/sic" class="btn">Cancelar</a>
                       </div>
                     </fieldset>
@@ -492,6 +492,14 @@
                 $('#email').val("");
                 $('#f1_email').focus();
               }
+
+              $('#btn1').click(function(){
+                if($('#f1_email').val() != "")
+                  $('#email').val($('#f1_email').val())
+                else if($('#email').val() != "")
+                  $('#f1_email').val($('#f1_email').val())
+                $('#form1').submit();
+              });
 
               $('#f2_tipo1').click(function(){
                 $('#row3').fadeOut('fast', function() {
