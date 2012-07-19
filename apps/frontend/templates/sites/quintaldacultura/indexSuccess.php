@@ -64,7 +64,15 @@
       <div class="content">
 
         <!--MENU QUINTAL-->
-        <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>          
+        <?php //include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?> 
+        <div class="cabecalho">
+          <h1><a href="http://cmais.com.br/quintaldacultura">Quintal da Cultura</a></h1>
+          <ul>
+            <li><a class="musica" href="http://tvratimbum.cmais.com.br/radio"><span>M&uacute;sica</span></a></li>
+            <li><a class="cultura" href="http://tvcultura.cmais.com.br/" title="Cmais +"><span>Cmais+</span></a></li>
+          </ul>
+          <a href="/paraospais" class="paraPais"><span>Para os pais</span></a>
+        </div>         
         <!--/MENU QUINTAL-->
         <hr />
       
