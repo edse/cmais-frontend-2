@@ -75,10 +75,9 @@
           <a href="/paraospais" class="paraPais"><span>Para os pais</span></a>
         </div>         
         <!--/MENU QUINTAL-->
+				 */ ?>
         <hr />
         
-				 * 
-				 */?>
 
         <!--CONTEUDO-->
         <div class="conteudo">
