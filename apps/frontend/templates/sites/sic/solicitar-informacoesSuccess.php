@@ -498,6 +498,7 @@
                   $('#email').val($('#f1_email').val())
                 else if($('#email').val() != "")
                   $('#f1_email').val($('#f1_email').val())
+                $('#form1').submit();
               });
 
               $('#f2_tipo1').click(function(){
