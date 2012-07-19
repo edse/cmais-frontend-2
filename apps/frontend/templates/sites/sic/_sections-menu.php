@@ -14,6 +14,8 @@
           	$sectionId = 0;
 	          if(isset($section)){
 	          	$sectionId = $section->getId();
+							if ($section->getParentSectionId())
+								$sectionId = $section->getParentSectionId();
 	          }
 	          if(isset($asset)){
 	          	$assetSections = $asset->getSections();
@@ -21,7 +23,6 @@
 							if ($assetSections[0]->getParentSectionId())
 								$sectionId = $assetSections[0]->getParentSectionId();
 	          }
-						echo "<!--".$sectionId."-->";
           ?>
 					<?php foreach($siteSections as $s): ?>
 	          <?php $subsections = $s->subsections(); ?>
