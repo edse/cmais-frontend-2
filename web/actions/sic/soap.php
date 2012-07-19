@@ -10,7 +10,7 @@ $client = new SoapClient("http://intranet.tvcultura.com.br/crm_webservices/crm.a
 if(!isset($_REQUEST["step"]))
   $_REQUEST["step"] = 0;
 
-if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")){
+if(($_REQUEST["step"]==1)&&(isset($_REQUEST["f1_email"]) || isset($_REQUEST["email"]))){
   
   $email = (isset($_REQUEST["email"]))? $_REQUEST["email"] : $_REQUEST["f1_email"];
    

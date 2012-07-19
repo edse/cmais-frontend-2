@@ -63,6 +63,7 @@
                 <div class="span6">
                   <form class="form-horizontal" id="form1" method="post">
                     <input type="hidden" name="step" value="1" />
+                    <input type="hidden" name="email" id="email" value="" />
                     <fieldset>
         
                       <div class="control-group">
