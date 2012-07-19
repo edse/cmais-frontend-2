@@ -9,7 +9,12 @@
         <!-- /LOGO -->
         <?php endif; ?>
 
-        <?php include_partial_from_folder('sites/sic','global/sections-menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
+        <?php
+        	if(isset($asset))
+        		include_partial_from_folder('sites/sic','global/sections-menu', array('siteSections' => $siteSections, 'section' => $section, 'asset' => $asset));
+        	else
+        		include_partial_from_folder('sites/sic','global/sections-menu', array('siteSections' => $siteSections, 'section' => $section));
+        ?>
                 
 
       </div>  
