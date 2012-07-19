@@ -138,6 +138,23 @@
           <!-- /COLUNA SUB DIR 1 -->
             <?php endif; ?>
           <?php endif; ?>
+
+          <?php if(isset($displays["acompanhar-solicitacao"])): ?>
+            <?php if(count($displays["acompanhar-solicitacao"]) > 0): ?>
+          <h2><?php echo $displays["acompanhar-solicitacao"][0]->Block->getTitle() ?></h2>
+          
+              <?php foreach($displays["acompanhar-solicitacao"] as $d): ?>
+          <span class="pergunta"><?php echo $d->getTitle() ?></span>
+          <p>
+        <?php echo $d->getDescription() ?>
+            <a href="<?php echo $d->retriveUrl() ?>" class="leiamais" title="Leia mais">Leia +</a>
+          </p>
+          
+              <?php endforeach; ?>
+            
+            <?php endif; ?>
+          <?php endif; ?>
+          
         </div>  
         <!-- /COLUNA DIREITA -->
       </div>  
