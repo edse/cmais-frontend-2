@@ -37,6 +37,14 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     }
     $html .= '</tbody></table>';
     $script .= '$("#status-html").html(\''.$html.'\');';
+
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Protocolo</th><th>Email</th><th>Descrição</th><th>Data</th></tr></thead><tbody>';
+    foreach($mensagem as $m){
+      $d = new DateTime($m->data_mensagem);
+      $html .= '<tr><td>'.$protocolo.'</td><td>'.$email.'</td><td>'.$m->mensagem.'</td><td>'.$d->format('Y-m-d H:i:s').'</td></tr>';
+    }
+    $script .= '$("#mensagem-html").html(\''.$html.'\');';
+
     $script .= '$("#f2_email").val("'.$email.'");$("#f2_protocolo").val("'.$protocolo.'");$("#email_td").html("'.$email.'");$("#mensagem_td").html("'.$mensagem->mensagem.'");$("#protocolo_td, #protocolo2").html("'.$protocolo.'");$("#data_td").html("'.$data1->format('d/m/Y H:i:s').'");$("#entrega").html("'.$data2->format('d/m/Y H:i:s').'");$("#status_td").html("'.$status.'");';
     //die($mensagem->mensagem);
     if($flag->flag == "1")

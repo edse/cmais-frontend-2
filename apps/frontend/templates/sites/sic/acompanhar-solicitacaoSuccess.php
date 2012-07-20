@@ -97,24 +97,7 @@
                 
                 <div class="span6">
                   <h2>Dados da Solicitação</h2>
-                  <table class="table table-striped table-bordered table-condensed">
-                    <thead>
-                      <tr>
-                        <th>Protocolo</th>
-                        <th>Email</th>
-                        <th>Descrição</th>
-                        <th>Data</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td id="protocolo_td"></td>
-                        <td id="email_td"></td>
-                        <td id="mensagem_td"></td>
-                        <td id="data_td"></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div id="mensagem-html"></div>
                   <hr />
                   <h2>Status</h2>
                   <div id="status-html"></div>
