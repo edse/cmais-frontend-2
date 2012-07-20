@@ -55,7 +55,7 @@
 
                   </p>
                   
-                  <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL19B78A79E85A3BCD&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL19B78A79E85A3BCD&amp&rel=0;hl=en_US" frameborder="0" allowfullscreen></iframe>
                 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
