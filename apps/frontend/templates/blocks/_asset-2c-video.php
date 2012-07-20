@@ -30,7 +30,7 @@
                       $youtubeid = "";
                     ?>
                     <?php if($youtubeid != ""): ?>
-                    <iframe src="http://www.youtube.com/embed/videoseries?list=PL<?php echo $youtubeid ?>" width="640" height="390" frameborder="0"></iframe>
+                    <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL<?php echo $youtubeid ?>&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
                     <?php /*
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $youtubeid ?>?version=3&amp;hl=en_US&amp;fs=1" />
