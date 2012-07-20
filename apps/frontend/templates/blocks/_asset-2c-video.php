@@ -30,6 +30,8 @@
                       $youtubeid = "";
                     ?>
                     <?php if($youtubeid != ""): ?>
+                    <iframe src="http://www.youtube.com/embed/videoseries?list=<?php echo $youtubeid ?>" width="390" height="640" frameborder="0"></iframe>
+                    <?php /*
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $youtubeid ?>?version=3&amp;hl=en_US&amp;fs=1" />
                       <param name="allowFullScreen" value="true" />
@@ -37,6 +39,7 @@
                       <param name="wmode" value="opaque">
                       <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $youtubeid ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
+                    */?>
                     <?php else: ?>
                     <?php $videos = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
                     <div id="player"><iframe title="<?php echo $videos[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $videos[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>
