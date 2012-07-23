@@ -97,6 +97,9 @@
                 
                 <div class="span6">
                   <h2>Dados da Solicitação</h2>
+                  <div id="dados-html"></div>
+                  <hr />
+                  <h2>Mensagens</h2>
                   <div id="mensagem-html"></div>
                   <hr />
                   <h2>Status</h2>
