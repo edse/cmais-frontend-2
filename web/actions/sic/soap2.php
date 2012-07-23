@@ -55,7 +55,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
       if($m->resposta)
         $html .= '<td>'.$dr->format('d/m/Y H:i:s').'<br />'.$m->resposta.'</td></tr>';
       else
-        $html .= '<td><td></tr>';
+        $html .= '<td></td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
