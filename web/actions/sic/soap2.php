@@ -35,7 +35,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td><td>'.$status.'</td></tr>';
     $script .= '$("#dados-html").html(\''.$html.'\');';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Previsão de entrega</th><th>Status</th><th>Justificativa</th></tr></thead><tbody>';
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Status</th><th>Data Limite</th><th>Justificativa</th></tr></thead><tbody>';
     $data1 = new DateTime($andamento[0]->data_envio);
     $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
     $status = $andamento[count($andamento)-1]->status;
@@ -44,7 +44,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
       $d2 = new DateTime($a->data_entrega);
       if(!$a->justificativa)
         $a->justificativa = "-";
-      $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$d2->format('d/m/Y H:i:s').'</td><td>'.$a->status.'</td><td>'.$a->justificativa.'</td></tr>';
+      $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$a->status.'</td><td>'.$d2->format('d/m/Y H:i:s').'</td><td>'.$a->justificativa.'</td></tr>';
     }
     $html .= '</tbody></table>';
     $script .= '$("#status-html").html(\''.$html.'\');';
