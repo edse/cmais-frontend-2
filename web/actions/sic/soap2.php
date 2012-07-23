@@ -47,10 +47,11 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $html .= '</tbody></table>';
     $script .= '$("#status-html").html(\''.$html.'\');';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Protocolo</th><th>Email</th><th>Descrição</th><th>Data</th></tr></thead><tbody>';
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Mensagem</th><th>Data</th><th>Resposta</th></tr></thead><tbody>';
     foreach($mensagem as $m){
-      $d = new DateTime($m->data_mensagem);
-      $html .= '<tr><td>'.$protocolo.'</td><td>'.$email.'</td><td>'.$m->mensagem.'</td><td>'.$d->format('d/m/Y H:i:s').'</td></tr>';
+      $dm = new DateTime($m->data_mensagem);
+      $dr = new DateTime($m->data_mensagem);
+      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').'</td><td>'.$m->mensagem.'</td><td>'.$dr->format('d/m/Y H:i:s').'</td><td>'.$m->resposta.'</td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
