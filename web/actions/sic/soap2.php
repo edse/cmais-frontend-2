@@ -42,6 +42,8 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     foreach($andamento as $a){
       $d1 = new DateTime($a->data_envio);
       $d2 = new DateTime($a->data_entrega);
+      if(!$a->justificativa)
+        $a->justificativa = "-";
       $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$d2->format('d/m/Y H:i:s').'</td><td>'.$a->status.'</td><td>'.$a->justificativa.'</td></tr>';
     }
     $html .= '</tbody></table>';
@@ -55,7 +57,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
       if($m->resposta)
         $html .= '<td>'.$dr->format('d/m/Y H:i:s').'</td><td>'.$m->resposta.'</td></tr>';
       else
-        $html .= '<td></td><td></td></tr>';
+        $html .= '<td>-</td><td>-</td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
