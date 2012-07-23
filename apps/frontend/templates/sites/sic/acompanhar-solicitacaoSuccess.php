@@ -96,13 +96,13 @@
               <div class="row" id="row2">
                 
                 <div class="span6">
-                  <h2>Dados da Solicitação</h2>
+                  <h3>Dados da Solicitação</h3>
                   <div id="dados-html"></div>
                   <hr />
-                  <h2>Mensagens</h2>
+                  <h3>Mensagens</h3>
                   <div id="mensagem-html"></div>
                   <hr />
-                  <h2>Andamento</h2>
+                  <h3>Andamento</h3>
                   <div id="status-html"></div>
                   <div id="recurso_holder" style="display: none;">
                     <hr />
