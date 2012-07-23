@@ -102,7 +102,7 @@
                   <h2>Mensagens</h2>
                   <div id="mensagem-html"></div>
                   <hr />
-                  <h2>Status</h2>
+                  <h2>Andamento</h2>
                   <div id="status-html"></div>
                   <div id="recurso_holder" style="display: none;">
                     <hr />

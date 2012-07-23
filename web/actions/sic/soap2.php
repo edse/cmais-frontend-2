@@ -31,8 +31,8 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
     $status = $andamento[count($andamento)-1]->status;
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th></tr></thead><tbody>';
-    $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td></tr>';
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th><th>Status</th></tr></thead><tbody>';
+    $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td><td>'.$status.'</td></tr>';
     $script .= '$("#dados-html").html(\''.$html.'\');';
 
     $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Previsão de entrega</th><th>Status</th><th>Justificativa</th></tr></thead><tbody>';
@@ -47,11 +47,11 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $html .= '</tbody></table>';
     $script .= '$("#status-html").html(\''.$html.'\');';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Mensagem</th><th>Data</th><th>Resposta</th></tr></thead><tbody>';
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Mensagem</th><th>Resposta</th></tr></thead><tbody>';
     foreach($mensagem as $m){
       $dm = new DateTime($m->data_mensagem);
-      $dr = new DateTime($m->data_mensagem);
-      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').'</td><td>'.$m->mensagem.'</td><td>'.$dr->format('d/m/Y H:i:s').'</td><td>'.$m->resposta.'</td></tr>';
+      $dr = new DateTime($m->data_resposta);
+      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').' - '.$m->mensagem.'</td><td>'.$dr->format('d/m/Y H:i:s').' - '.$m->resposta.'</td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
