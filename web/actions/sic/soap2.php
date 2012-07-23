@@ -51,7 +51,11 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     foreach($mensagem as $m){
       $dm = new DateTime($m->data_mensagem);
       $dr = new DateTime($m->data_resposta);
-      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').' - '.$m->mensagem.'</td><td>'.$dr->format('d/m/Y H:i:s').' - '.$m->resposta.'</td></tr>';
+      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').'<br />'.$m->mensagem.'</td>';
+      if($m->resposta)
+        $html .= '<td>'.$dr->format('d/m/Y H:i:s').'<br />'.$m->resposta.'</td></tr>';
+      else
+        $html .= '<td><td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
