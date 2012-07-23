@@ -304,7 +304,8 @@
             },
 			cel:{
               required: true,
-              minlength: 8
+              minlength: 8,
+              maxlength: 9
             },
             captcha: {
               required: true,
