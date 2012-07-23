@@ -341,6 +341,7 @@
                   <form class="form-horizontal" id="form4" method="post">
                     <input type="hidden" name="step" id="f4_step" value="4" />
                     <input type="hidden" name="email" id="f4_email" value="" />
+                    <input type="hidden" name="f4_cod_assunto" id="f4_cod_assunto" value="38" />
                     <fieldset>
                       <div class="control-group">
                         <label for="f4_email2"><h5>Email</h5></label>
@@ -351,13 +352,14 @@
                       </div>
                       
                       <div id="message">
-                      
+                      <!--
                       <div class="control-group">
                         <label for="f4_cod_assunto"><h5>Assunto<h5></label>
                         <div class="controls">
                           <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
                         </div>
                       </div>
+                      -->
                       <div class="control-group">
                         <label for="f4_descricao"><h5>Descrição</h5></label>
                         <div class="controls">
@@ -478,7 +480,7 @@
 
             <script>
             $(document).ready(function(){
-              assuntos();
+              //assuntos();
 
               var vars = getUrlVars();
               if(vars['email'] != undefined){

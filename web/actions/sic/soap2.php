@@ -26,22 +26,38 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
   if($andamento!=NULL && $mensagem!=NULL){
     $last = end($andamento);
     $script = '$("#row1").hide();$("#row2").show();$("#row3").hide();$("#row5").hide();$("f1_email").val("");';
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Previsão de entrega</th><th>Status</th><th>Justificativa</th></tr></thead><tbody>';
+    
+    $data1 = new DateTime($andamento[0]->data_envio);
+    $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
+    $status = $andamento[count($andamento)-1]->status;
+
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th><th>Status</th></tr></thead><tbody>';
+    $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td><td>'.$status.'</td></tr>';
+    $script .= '$("#dados-html").html(\''.$html.'\');';
+
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Status</th><th>Data Limite</th><th>Justificativa</th></tr></thead><tbody>';
     $data1 = new DateTime($andamento[0]->data_envio);
     $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
     $status = $andamento[count($andamento)-1]->status;
     foreach($andamento as $a){
       $d1 = new DateTime($a->data_envio);
       $d2 = new DateTime($a->data_entrega);
-      $html .= '<tr><td>'.$d1->format('Y-m-d H:i:s').'</td><td>'.$d2->format('Y-m-d H:i:s').'</td><td>'.$a->status.'</td><td>'.$a->justificativa.'</td></tr>';
+      if(!$a->justificativa)
+        $a->justificativa = "-";
+      $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$a->status.'</td><td>'.$d2->format('d/m/Y H:i:s').'</td><td>'.$a->justificativa.'</td></tr>';
     }
     $html .= '</tbody></table>';
     $script .= '$("#status-html").html(\''.$html.'\');';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Protocolo</th><th>Email</th><th>Descrição</th><th>Data</th></tr></thead><tbody>';
+    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th colspan=2>Mensagem</th><th colspan=2>Resposta</th></tr></thead><tbody>';
     foreach($mensagem as $m){
-      $d = new DateTime($m->data_mensagem);
-      $html .= '<tr><td>'.$protocolo.'</td><td>'.$email.'</td><td>'.$m->mensagem.'</td><td>'.$d->format('Y-m-d H:i:s').'</td></tr>';
+      $dm = new DateTime($m->data_mensagem);
+      $dr = new DateTime($m->data_resposta);
+      $html .= '<tr><td>'.$dm->format('d/m/Y H:i:s').'</td><td>'.$m->mensagem.'</td>';
+      if($m->resposta)
+        $html .= '<td>'.$dr->format('d/m/Y H:i:s').'</td><td>'.$m->resposta.'</td></tr>';
+      else
+        $html .= '<td>-</td><td>-</td></tr>';
     }
     $script .= '$("#mensagem-html").html(\''.$html.'\');';
 
