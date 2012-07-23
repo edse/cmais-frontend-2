@@ -249,7 +249,7 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#tel").mask("(99) 9999-9999");
+        $("#tel").mask("(99) 99999999?9");
         $("#cep").mask("99999-999");
 
       $(document).ready(function(){

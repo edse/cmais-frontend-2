@@ -293,7 +293,7 @@
        
       $(document).ready(function(){
         var num = 0;
-        $("#telResponsavel").mask("(99) 9999-9999");
+        $("#telResponsavel").mask("(99) 99999999?9");
         
         $('.adicionar').click(function()
           {
