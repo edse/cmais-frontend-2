@@ -106,7 +106,7 @@
                 </div>
                 
                 <?php $videoRelated = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-                <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $videoRelated[0])) ?>
+                <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset)) ?>
                 
                 <div class="texto">
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
