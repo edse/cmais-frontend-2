@@ -192,7 +192,7 @@
                       <div class="control-group">
                         <label for="f2_telefone"><h5>Telefone</h5></label>
                         <div class="controls">
-                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(11) 1111-1111">
+                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(11) 11111111">
                         </div>
                       </div>
         
@@ -317,7 +317,7 @@
                       <div class="control-group">
                         <label for="f3_telefone"><h5>Telefone</h5></label>
                         <div class="controls">
-                          <input type="text" class="span2" id="f3_telefone" name="f3_telefone" placeholder="(11) 1111-1111">
+                          <input type="text" class="span2" id="f3_telefone" name="f3_telefone" placeholder="(11) 11111111">
                         </div>
                       </div>
         
@@ -544,7 +544,7 @@
               $("#f2_cpf").mask("999.999.999-99");
               $('#f3_cnpj').mask('99.999.999/9999-99');
               $("#f2_cep, #f3_cep, #f4_cep").mask("99999-999");
-              $("#f2_telefone, #f3_telefone, #f4_telefone").mask("(99) 9999-9999");
+              $("#f2_telefone, #f3_telefone, #f4_telefone").mask("(99) 99999999?9");
               
               $('#loader').hide();
               

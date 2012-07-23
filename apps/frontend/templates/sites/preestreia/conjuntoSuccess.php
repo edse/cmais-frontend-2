@@ -211,7 +211,7 @@
                   <!--tel Com-1-->
                   <div class="linha t8 m10 w204">
                     <label>Telefone Celular</label><br/>
-                    <input type="text" name="telcom_1" id="telcom_1" class="tel" /><br/>
+                    <input type="text" name="telcom_1" id="telcom_1" class="cel" /><br/>
                   </div>
                   <!--/tel Com-1-->
                 </div>
@@ -617,7 +617,7 @@
                   <!--tel Com-3-->
                   <div class="linha t8 m10 w204">
                     <label>Telefone Celular</label><br/>
-                    <input type="text" name="telcom_3" id="telcom_3" class="tel"/><br/>
+                    <input type="text" name="telcom_3" id="telcom_3" class="tel" /><br/>
                   </div>
                   <!--/tel Com-3-->
                 </div>
@@ -848,7 +848,7 @@
                     new_field += '  <!--tel Com-'+i+'-->';
                     new_field += '  <div class="linha t8 m10 w204">';
                     new_field += '    <label>Telefone Celular</label><br/>';
-                    new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="tel'+i+' required" /><br/>';
+                    new_field += '    <input type="text" name="telcom_'+i+'" id="telcom_'+i+'" class="cel'+i+' required" /><br/>';
                     new_field += '  </div>';
                     new_field += '  <!--/tel Com-'+i+'-->';
                     new_field += '</div>';
@@ -1009,7 +1009,8 @@
                   //$('.rg'+i).mask("99.999.999-9");
                   $('.cpf'+i).mask("999.999.999-99");
                   $('.cep'+i).mask("99999-999");
-                  $('.tel'+i).mask("(99) ?9999-9999");
+                  $('.tel'+i).mask("(99) 9999-9999");
+                  $('.cel'+i).mask("(99) ?999999999");
                   $('.nasc'+i).mask("99/99/9999");
                                 
                 });
@@ -1286,6 +1287,7 @@
     $('.cpf').mask("999.999.999-99");
     $('.cep').mask("99999-999");
     $('.tel').mask("(99) 9999-9999");
+    $('.cel').mask("(99) ?999999999");
     $('.nasc').mask("99/99/9999");
     
     $('#form-contato-conjunto input#enviar').click(function(){
