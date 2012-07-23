@@ -108,17 +108,17 @@
                 <?php $videoRelated = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
                 
                 
-	            	<?php if(isset($videoRelated)): ?>
+	            	<?php if(count($videoRelated) > 0): ?>
 	              <!-- DESTAQUE 2 COLUNAS -->
 	              <div class="duas-colunas destaque grid2">
 	
-	                  <?php if($videoRelated->AssetType->getSlug() == "video"): ?>
+	                  <?php if($videoRelated[0]->AssetType->getSlug() == "video"): ?>
 	                    <object style="height:390px; width: 640px">
-	                      <param name="movie" value="http://www.youtube.com/v/<?php echo $videoRelated->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
+	                      <param name="movie" value="http://www.youtube.com/v/<?php echo $videoRelated[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
 	                      <param name="allowFullScreen" value="true">
 	                      <param name="allowScriptAccess" value="always">
 	                      <param name="wmode" value="opaque">
-	                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $videoRelated->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
+	                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $videoRelated[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
 	                    </object>
 	                  <?php endif; ?>
 	              </div>
