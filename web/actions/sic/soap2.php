@@ -32,7 +32,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $status = $andamento[count($andamento)-1]->status;
 
     $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th></tr></thead><tbody>';
-    $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td></tr>';
+    $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td></tr>';
     $script .= '$("#dados-html").html(\''.$html.'\');';
 
     $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Previsão de entrega</th><th>Status</th><th>Justificativa</th></tr></thead><tbody>';
