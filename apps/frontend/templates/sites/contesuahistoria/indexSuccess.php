@@ -186,7 +186,7 @@
       	});
       	
       	var num = 0;
-        $("#telefone").mask("(99)9999-9999");
+        $("#telefone").mask("(99) 99999999?9");
        
         
       	var validator = $('#form-contato').validate({

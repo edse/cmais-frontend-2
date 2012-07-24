@@ -146,7 +146,7 @@
     
        $(document).ready(function(){
         var num = 0;
-        $("#tel").mask("(99) 9999-9999");
+        $("#tel").mask("(99) 99999999?9");
                 
         // validate signup form on keyup and submit
         var validator = $("#form-contato").validate({

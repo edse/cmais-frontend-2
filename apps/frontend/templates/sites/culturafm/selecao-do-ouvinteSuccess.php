@@ -225,7 +225,7 @@
 
   $(document).ready(function() {
   
-  	$("#tel").mask("(99) 9999 - 9999");
+  	$("#tel").mask("(99) 99999999?9");
   	
       	$('input#enviar').click(function(){
       	  $(".msgAcerto, .msgErro").hide();

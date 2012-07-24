@@ -203,7 +203,7 @@
     <script type="text/javascript">          
       $(document).ready(function(){
         var num = 0;
-        $("#tel").mask("(99) 9999-9999");
+        $("#tel").mask("(99) 99999999?9");
         $("#cpf").mask("999.999.999-99");
         $("#cpf_do_responsavel").mask("999.999.999-99");
         $("#dn").mask("99/99/9999");
