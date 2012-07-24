@@ -37,15 +37,15 @@
                 
       <!-- CORPO SITE -->
       <div id="corpo-sic">
-				<?php if(isset($displays["conteudo-complementar"])): ?>
-					<?php if(count($displays["conteudo-complementar"]) > 0): ?>      	
+        <?php if(isset($displays["conteudo-complementar"])): ?>
+          <?php if(count($displays["conteudo-complementar"]) > 0): ?>       
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic  font-span-14">
           <h2><?php echo $displays["conteudo-complementar"][0]->Block->getTitle() ?></h2>
           <p><?php echo html_entity_decode($displays["conteudo-complementar"][0]->Asset->AssetContent->render()) ?></p>
         </div>
         <!-- /COLUNA ESQUERDA -->
-        	<?php endif; ?>
+          <?php endif; ?>
         <?php endif; ?>
         
         <!-- COLUNA DIREITA -->
@@ -256,6 +256,7 @@
                   $('#loader1').hide();
                   $('#btn1').show();
                   if(data.script != ""){
+                    //console.log(data.script)
                     eval(data.script);
                   }
                   else{
@@ -350,5 +351,3 @@
   </div>
   <!-- / CAPA SITE -->
   </div>
-
-  

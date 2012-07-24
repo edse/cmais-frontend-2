@@ -31,11 +31,11 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
     $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
     $status = $andamento[count($andamento)-1]->status;
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th><th>Status</th></tr></thead><tbody>';
+    $html = "<table class='table table-striped table-bordered table-condensed'><thead><tr><th>Data</th><th>Email</th><th>Protocolo</th><th>Status</th></tr></thead><tbody>";
     $html .= '<tr><td>'.$data1->format('d/m/Y H:i:s').'</td><td>'.$email.'</td><td>'.$protocolo.'</td><td>'.$status.'</td></tr>';
-    $script .= '$("#dados-html").html(\''.$html.'\');';
+    $script .= '$("#dados-html").html("'.$html.'");';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th>Data</th><th>Status</th><th>Data Limite</th><th>Justificativa</th></tr></thead><tbody>';
+    $html = "<table class='table table-striped table-bordered table-condensed'><thead><tr><th>Data</th><th>Status</th><th>Data Limite</th><th>Justificativa</th></tr></thead><tbody>";
     $data1 = new DateTime($andamento[0]->data_envio);
     $data2 = new DateTime($andamento[count($andamento)-1]->data_entrega);
     $status = $andamento[count($andamento)-1]->status;
@@ -47,9 +47,9 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
       $html .= '<tr><td>'.$d1->format('d/m/Y H:i:s').'</td><td>'.$a->status.'</td><td>'.$d2->format('d/m/Y H:i:s').'</td><td>'.$a->justificativa.'</td></tr>';
     }
     $html .= '</tbody></table>';
-    $script .= '$("#status-html").html(\''.$html.'\');';
+    $script .= '$("#status-html").html("'.$html.'");';
 
-    $html = '<table class="table table-striped table-bordered table-condensed"><thead><tr><th colspan=2>Mensagem</th><th colspan=2>Resposta</th></tr></thead><tbody>';
+    $html = "<table class='table table-striped table-bordered table-condensed'><thead><tr><th colspan=2>Mensagem</th><th colspan=2>Resposta</th></tr></thead><tbody>";
     foreach($mensagem as $m){
       $dm = new DateTime($m->data_mensagem);
       $dr = new DateTime($m->data_resposta);
@@ -59,10 +59,9 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="" || $_REQUEST["email"]!="")
       else
         $html .= '<td>-</td><td>-</td></tr>';
     }
-    $script .= '$("#mensagem-html").html(\''.$html.'\');';
+    $script .= '$("#mensagem-html").html("'.str_replace("\n", "<br />", $html).'");';
 
-    $script .= '$("#f2_email").val("'.$email.'");$("#f2_protocolo").val("'.$protocolo.'");$("#email_td").html("'.$email.'");$("#mensagem_td").html("'.$mensagem->mensagem.'");$("#protocolo_td, #protocolo2").html("'.$protocolo.'");$("#data_td").html("'.$data1->format('d/m/Y H:i:s').'");$("#entrega").html("'.$data2->format('d/m/Y H:i:s').'");$("#status_td").html("'.$status.'");';
-    //die($mensagem->mensagem);
+    $script .= '$("#f2_email").val("'.$email.'");$("#f2_protocolo").val("'.$protocolo.'");$("#protocolo_td, #protocolo2").html("'.$protocolo.'");$("#status_td").html("'.$status.'");';
     if($flag->flag == "1")
       $script .= '$("#recurso_holder").show();';
     echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
