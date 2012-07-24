@@ -42,7 +42,7 @@
         <!-- COLUNA ESQUERDA -->
         <div class="float col-400-sic  font-span-14">
           <h2><?php echo $displays["conteudo-complementar"][0]->Block->getTitle() ?></h2>
-          <p><?php echo html_entity_decode($displays["conteudo-complementar"][0]->Asset->AssetContent->render()) ?></p>
+          <?php echo html_entity_decode($displays["conteudo-complementar"][0]->Asset->AssetContent->render()) ?>
         </div>
         <!-- /COLUNA ESQUERDA -->
           <?php endif; ?>
