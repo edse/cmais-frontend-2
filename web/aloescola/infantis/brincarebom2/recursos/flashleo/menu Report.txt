@@ -1,0 +1,41 @@
+Movie Report
+-------------
+FrameFrame #    Frame Bytes    Total Bytes    Page
+------------    -----------    -----------    ---------------
+    1           189            189        Scene 1
+    2          3328           3517          2
+    3         10354          13871          3
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                         184             0
+
+Page                       Symbol Bytes    Text Bytes
+-----------------------    ------------    ----------
+pais e professores               42           122
+txt_charges                       0             0
+txt_jobos                       120             0
+txt_brinq                       706             0
+txt_guia                        583             0
+guia bot                         42           144
+hist bot                        116           156
+jogos bot                        41            78
+charges                         191            86
+brincar                         910           138
+
+Event Sounds: 11KHz Mono 16 kbps MP3
+
+Sound name                 Bytes        Format    
+-----------------------    ---------    ----------
+menu04.wav                   1367        11KHz Mono 16 kbps MP3
+menu03.wav                   1367        11KHz Mono 16 kbps MP3
+menu02.wav                   1679        11KHz Mono 16 kbps MP3
+menu01.wav                   1367        11KHz Mono 16 kbps MP3
+
+
+Sound name                 Bytes        Format    
+-----------------------    ---------    ----------
+Tahoma Bold                   774         Paefiors
+Brady Bunch                    84        !
+Geek a byte                  1921         BCGHJabcdegimnoqrstu
+Space Woozies                 156        é
