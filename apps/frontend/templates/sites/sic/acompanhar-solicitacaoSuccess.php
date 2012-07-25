@@ -251,7 +251,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "http://cmais.com.br/actions/sic/soap2.php",
+                url: "http://fpa.com.br/sic/actions/soap2.php",
                 data: $("#form1").serialize(),
                 beforeSend: function(){
                   $('#loader1').show();
@@ -293,7 +293,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "http://cmais.com.br/actions/sic/soap2.php",
+                url: "http://fpa.com.br/sic/actions/soap2.php",
                 data: $("#form2").serialize(),
                 beforeSend: function(){
                   $('#loader2').show();
@@ -321,7 +321,7 @@
           $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://cmais.com.br/actions/sic/soap2.php",
+            url: "http://fpa.com.br/sic/actions/soap2.php",
             data: "action=assuntos&cod_programa=24",
             beforeSend: function(){
               //$('img#ajax-loader').show();
