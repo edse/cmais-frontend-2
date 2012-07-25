@@ -27,13 +27,19 @@ class mainActions extends sfActions
     	die();
     }
     
+    if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
+      $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug("sic"));
+      $this->forward('_site', 'index');
+      die();
+    }
+    
     $subdomain = @current(explode(".", $request->getHost()));
     
     //subdomain
     if($request->getParameter('s')!="")
       $subdomain = $request->getParameter('s');
 
-    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp','m')))
+    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp','m','fpa.com.br')))
       $subdomain = 'cmais';
 
     $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug($subdomain));
