@@ -260,9 +260,9 @@ class mainActions extends sfActions
       //$param1 = $param2;
       //$param2 = $param3;
       //$param3 = null;
-      echo "<br>".$param1;
-      echo "<br>".$param2;
-      echo "<br>".$param3;
+      //echo "<br>".$param1;
+      //echo "<br>".$param2;
+      //echo "<br>".$param3;
       //die('123');
     }
 
