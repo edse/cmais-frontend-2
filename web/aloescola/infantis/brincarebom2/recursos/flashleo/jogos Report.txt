@@ -1,0 +1,170 @@
+Movie Report
+-------------
+FrameFrame #    Frame Bytes    Total Bytes    Page
+------------    -----------    -----------    ---------------
+    1            98             98        carregando
+    2          2499           2597          2
+    3            69           2666          3
+    4             2           2668          4
+    5             2           2670          5
+    6           561           3231        Scene 1
+    7          2789           6020          2
+    8          1406           7426          3
+    9          4411          11837          4
+   10          2594          14431          5
+   11          5175          19606          6
+   12          1704          21310          7
+   13          1139          22449          8
+   14          2343          24792          9
+   15          2636          27428          10
+   16          3710          31138          11
+   17          1751          32889          12
+   18            49          32938          13
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+carregando                        0            47
+Scene 1                         453            44
+
+Page                       Symbol Bytes    Text Bytes
+-----------------------    ------------    ----------
+sons_mv                           0             0
+botpalavras                     405           132
+botpontos                       324           126
+bottorre                        425           122
+bot quarto                      533           130
+bot8erros                       389           128
+bottoca                         320           122
+botmemo                         438           126
+botquebra                       465           122
+a1                                0            37
+l                                 0            37
+o2                                0            37
+b                                 0            37
+movpalavras                     202             0
+movpontos                        63             0
+pontos                          105             0
+MOV8                              0           295
+Tween 8                           0             0
+movquarto                       961             0
+cartafrente                     142             0
+movmemo                           0             0
+movtorre                          0             0
+movcoelho                         0             0
+Tween 17                          0             0
+Tween 16                          0             0
+Tween 15                          0             0
+Tween 14                       2104             0
+movquebra                      2096             0
+comidas                           0             0
+botcomida                       494           128
+botjogodas bolhas               473           126
+movbolha                          0             0
+carta                           528             0
+botao                             0             0
+menu abre                         0             0
+maisjogos                         0             0
+jogo bolhas                       0             0
+jogo 8 erros                      0             0
+liga ospontos                     0             0
+quebracabeca                      0             0
+jogodas comidas                   0             0
+jogo memoria                      0             0
+toca coelho                       0             0
+palavras                          0             0
+bagunca                           0             0
+hanoi                             0             0
+menu                              0             0
+brincar                           0             0
+estrela                         119             0
+menininha                         0             0
+to1                               0             0
+bolha                           131             0
+mv_to1                            0             0
+b_to1                             0             0
+txt_to1                           0             0
+Tween 1                           0             0
+da                                0             0
+mv_da                             0             0
+b_da                              0             0
+txt_da                            0             0
+Tween 2                           0             0
+cri                               0             0
+mv_cri                            0             0
+b_cri                             0             0
+tct_cri                           0             0
+Tween 3                           0             0
+an                                0             0
+mv_an                             0             0
+b_an                              0             0
+txt_an                            0             0
+Tween 4                           0             0
+ça                                0             0
+mv_ça                             0             0
+b_ça                              0             0
+txt_ça                            0             0
+Tween 5                           0             0
+tem                               0             0
+mv_tem                            0             0
+b_tem                             0             0
+txt_tem                           0             0
+Tween 6                           0             0
+O                                 0             0
+mv_O                              0             0
+b_O                               0             0
+txt_O                             0             0
+Tween 7                           0             0
+di                                0             0
+mv_di                             0             0
+b_di                              0             0
+txt_di                            0             0
+rei                               0             0
+mv_rei                            0             0
+b_rei                             0             0
+txt_rei                           0             0
+Tween 9                           0             0
+to2                               0             0
+mv_to2                            0             0
+b_to2                             0             0
+txt_to2                           0             0
+Tween 10                          0             0
+de                                0             0
+mv_de                             0             0
+b_de                              0             0
+txt_de                            0             0
+Tween 11                          0             0
+brin                              0             0
+mv_brin                           0             0
+b_brin                            0             0
+txt_brin                          0             0
+Tween 12                          0             0
+car                               0             0
+mv_car                            0             0
+b_car                             0             0
+txt_car                           0             0
+Tween 13                          0             0
+maca                            307             0
+cenoura                         263             0
+sorvete                         454             0
+bife                            425             0
+coelho                          920             0
+vareta                          108             0
+arco verm                       394             0
+arco amarelo                    386             0
+arco verde                      562             0
+arco azul                       596             0
+bola                            505             0
+peteca                          562             0
+bone                            199             0
+camiseta                        159             0
+livro2                          101             0
+carregando                        0           169
+
+Tweened Shapes: 119 bytes
+
+
+Sound name                 Bytes        Format    
+-----------------------    ---------    ----------
+Brady Bunch                   510        12345678
+Geek a byte                  2466         8ABJLOQabcdeghijlmnopqrstuv
+Geek a byte Bold             2080        %.0123456789acdegnor

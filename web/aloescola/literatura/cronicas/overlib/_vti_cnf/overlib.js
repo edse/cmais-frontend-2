@@ -1,0 +1,4 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|22 Jan 2003 22:00:00 -0000
+vti_extenderversion:SR|5.0.2.5012
+vti_backlinkinfo:VX|aloescola/literatura/cronicas/cronicakonder01.htm aloescola/literatura/cronicas/cronicakonder08.htm aloescola/literatura/cronicas/cronicakonder06.htm aloescola/literatura/cronicas/cronicakonder07.htm aloescola/literatura/cronicas/cronicakonder15.htm aloescola/literatura/cronicas/cronicakonder16.htm aloescola/literatura/cronicas/cronicakonder13.htm aloescola/literatura/cronicas/cronicakonder14.htm aloescola/literatura/cronicas/cronicakonder11.htm aloescola/literatura/cronicas/cronicakonder12.htm

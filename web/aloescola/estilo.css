@@ -1,0 +1,20 @@
+A.especial:link {text-decoration:none}
+A.especial:visited {text-decoration:none}
+A.especial:hover {text-decoration:none; clip:   rect(   )}
+A.especial:active {text-decoration:none}
+
+
+a:active {  text-decoration: none}
+a:link {  text-decoration: none}
+a:visited {  text-decoration: none}
+a:hover {  text-decoration: underline}
+
+.texto2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; text-decoration: none}
+.texto1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-decoration: none}
+.td1normal {  text-decoration: none}
+.td1hover {  text-decoration: none; background-color: #CCFFFF}
+.especial {  text-decoration: none}
+
+.texto1azul { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-decoration: none ; color: #000099}
+kbd { font: 9px Verdana, Arial, Helvetica, sans-serif; color: #444444; text-decoration: none; border-color:#303030 solid; }
+.testando {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-decoration: none; position: relative; top: -5px; clip:   rect(   ); overflow: visible; z-index: auto}
