@@ -111,13 +111,16 @@
                       <input type="hidden" name="step" value="2" />
                       <input type="hidden" name="f2_email" id="f2_email" value="" />
                       <input type="hidden" name="f2_protocolo" id="f2_protocolo" value="" />
-                      <fieldset style="display: none">      
+                      <input type="hidden" name="f2_cod_assunto" id="f2_cod_assunto" value="44" />
+                      <fieldset style="display: none">
+                        <!--
                         <div class="control-group">
                           <label  for="f2_cod_assunto"><h5>Assunto</h5></label>
                           <div class="controls">
                             <select name="f2_cod_assunto" id="f2_cod_assunto"></select>
                           </div>
                         </div>
+                        -->
                         <div class="control-group">
                           <label  for="email"><h5>Justificativa</h5></label>
                           <div class="controls">
@@ -176,9 +179,11 @@
                     <h4 class="alert-heading">Obrigado. Sua solicitação de recurso foi enviada com sucesso!</h4>
                     <p>Número do Protocolo: <span class="label label-success" id="protocolo_r2"></span></p>
                     <p>Você receberá um email com o número de protocolo referente a esta solicitação e se aplicável você receberá a resposta nesse mesmo email.</p>
+                    <!--
                     <p>
                       <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
                     </p>
+                    -->
                   </div>
                 </div>
               </div>
@@ -194,7 +199,7 @@
         <script>
         
         $(document).ready(function(){
-          assuntos();
+          //assuntos();
           var vars = getUrlVars();
           if(vars['protocolo'] != undefined){
             $('#f1_protocolo').val(vars['protocolo']);
