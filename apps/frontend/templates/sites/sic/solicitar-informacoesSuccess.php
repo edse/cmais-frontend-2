@@ -411,9 +411,9 @@
                     <h4 class="alert-heading">Obrigado. Sua solicitação foi enviada!</h4>
                     <p>Número do Protocolo: <span class="label label-success" id="protocolo2"></span></p>
                     <p>Você receberá um email com o número de protocolo referente a esta solicitação e se aplicável você receberá a resposta nesse mesmo email.</p>
-                    <p>
+                    <!--<p>
                       <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
-                    </p>
+                    </p>-->
                   </div>
                 </div>
               </div>
@@ -428,9 +428,9 @@
                     <button class="close" data-dismiss="alert">×</button>
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi efetuado com sucesso!</h4>
                     <p>Você deve validar seu cadastro cliando no link que foi enviado para o seu email.</p>
-                    <p>
+                    <!--<p>
                       <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
-                    </p>
+                    </p>-->
                   </div>
                 </div>
               </div>
@@ -445,9 +445,9 @@
                     <button class="close" data-dismiss="alert">×</button>
                     <h4 class="alert-heading">Atenção: Seu cadastro não pode ser realizado!</h4>
                     <p>Se você já cadastrou o seu email você deve validar seu cadastro cliando no link que foi enviado para o seu email.</p>
-                    <p>
+                    <!--<p>
                       <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
-                    </p>
+                    </p>-->
                   </div>
                 </div>
               </div>
