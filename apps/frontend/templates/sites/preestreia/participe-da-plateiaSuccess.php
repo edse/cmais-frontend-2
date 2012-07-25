@@ -119,7 +119,7 @@
                         <option value="5ª e 6ª Eliminatória - 22 de Setembro - Teatro FECAP">5ª e 6ª Eliminatória - 22 de Setembro - Teatro FECAP</option>
                         <option value="7ª e 8ª Eliminatória - 6 de Outubro - Teatro FECAP">7ª e 8ª Eliminatória - 6 de Outubro - Teatro FECAP</option>
                         <option value="1ª e 2ª Semifinal – 10 de Novembro - Conservatório de Tatuí">1ª e 2ª Semifinal – 10 de Novembro - Conservatório de Tatuí</option>
-                        <option value="Final – 9 de Dezembro - Sala São Paulo">Final – 9 de Dezembro - Sala São Paulo</option>
+                        
                   </select>
                   </div>
                   <div class="linha t1">
