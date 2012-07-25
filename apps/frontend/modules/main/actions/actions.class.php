@@ -249,6 +249,23 @@ class mainActions extends sfActions
       die();
     }
 
+    if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
+      if($param1 == "fpa")
+        $param1 = "sic";
+      if($param2 == "sic"){
+        $param2 = $param3;
+        $param3 = null;
+      }
+      
+      //$param1 = $param2;
+      //$param2 = $param3;
+      //$param3 = null;
+      echo "<br>".$param1;
+      echo "<br>".$param2;
+      echo "<br>".$param3;
+      //die('123');
+    }
+
     $parm1Object = $this->parse($param1);
     if($parm1Object){
       if($request->getParameter('debug') != "")
