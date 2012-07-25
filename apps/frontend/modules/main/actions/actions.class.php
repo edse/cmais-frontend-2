@@ -23,14 +23,14 @@ class mainActions extends sfActions
     }
 
     if(($request->getHost() == "multicultura.com.br")||($request->getHost() == "www.multicultura.com.br")){
-    	header("Location: http://multicultura.cmais.com.br");
-    	die();
+      header("Location: http://multicultura.cmais.com.br");
+      die();
     }
     
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
+      //die('123');
       $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug("sic"));
       $this->forward('_site', 'index');
-      die();
     }
     
     $subdomain = @current(explode(".", $request->getHost()));
@@ -209,11 +209,12 @@ class mainActions extends sfActions
   * @param sfRequest $request A request object
   */
   public function executeParse(sfWebRequest $request)
-  {
+  {    
     //subdomain
     $subdomain = @current(explode(".", $request->getHost()));
     $param1 = FALSE; $param2 = FALSE; $param3 = FALSE; $param4 = FALSE; $param5 = FALSE; $param6 = FALSE;
-    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp','m'))){
+    
+    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp','m','fpa'))){
       $param1 = $subdomain;
       if($request->getParameter('param1')) $param2 = $request->getParameter('param1');
       if($request->getParameter('param2')) $param3 = $request->getParameter('param2');
@@ -262,10 +263,10 @@ class mainActions extends sfActions
           if(!$param3)
             $this->forwardObject($parm2Object);
           else{
-          	if ($parm1Object->slug == "m") {
-					    $this->getRequest()->setParameter('object', $parm2Object);
-					    $this->forward('_section', 'index');
-          	}
+            if ($parm1Object->slug == "m") {
+              $this->getRequest()->setParameter('object', $parm2Object);
+              $this->forward('_section', 'index');
+            }
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
@@ -413,26 +414,26 @@ class mainActions extends sfActions
         if($this->section)
           return $this->section;
         else{
-        	if ($this->site->slug == "m") {
-	          // #2b Look for an Asset
-	          $this->asset = Doctrine_Query::create()
-	            ->select('a.*')
-	            ->from('Asset a')
-							->where('a.slug = ?', (string)$string)
-							->orderby('a.id desc')
-	            ->fetchOne();
-					}
-					else {	          
-						// #2b Look for an Asset
-	          $this->asset = Doctrine_Query::create()
-	            ->select('a.*')
-	            ->from('Asset a')
-	          	->where('a.site_id = ?', (int)$object->id)
-							->andWhere('a.slug = ?', (string)$string)
-							->orderby('a.id desc')
-	            ->fetchOne();
-					}
-          	
+          if ($this->site->slug == "m") {
+            // #2b Look for an Asset
+            $this->asset = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a')
+              ->where('a.slug = ?', (string)$string)
+              ->orderby('a.id desc')
+              ->fetchOne();
+          }
+          else {            
+            // #2b Look for an Asset
+            $this->asset = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a')
+              ->where('a.site_id = ?', (int)$object->id)
+              ->andWhere('a.slug = ?', (string)$string)
+              ->orderby('a.id desc')
+              ->fetchOne();
+          }
+            
           if($this->asset)
             return $this->asset;
           else
