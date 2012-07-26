@@ -518,11 +518,17 @@ function setExpiration(cookieLife)
 if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
 {
 	classicVersion = getCookie('classic');
-	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
+	if (classicVersion != "yes")
 	{
-  	mobileVersion = setCookie('mobile', 'yes', '', '/', 'cmais.com.br');
-  	if (mobileVersion == "yes")
- 			window.location="http://m.cmais.com.br";
+		mobileVersion = getCookie('mobile');
+		if (mobileVersion != "yes")
+		{
+  		mobileVersion = setCookie('mobile', 'yes', 0, '/', 'cmais.com.br');
+  		if (mobileVersion == "yes")
+  		{
+ 				window.location="http://m.cmais.com.br";
+ 			}
+ 		}
  	}
 }
 else
