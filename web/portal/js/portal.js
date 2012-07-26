@@ -487,9 +487,10 @@ function setCookie(name, value, expires, path, domain, secure)
 		document.cookie += "secure; ";
 	}
 	cookie = getCookie(name);
- 	if (window.location.href.indexOf("teste"))
+ 	if (window.location.href.indexOf("teste")){
  		alert(cookie);
-	
+ 		alert(document.cookie);
+	}
 	return cookie;
 }
 
