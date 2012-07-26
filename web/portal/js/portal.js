@@ -475,13 +475,13 @@ function setCookie(name, value, expires, path, domain, secure)
 	
 	if(expires){
 		expires = setExpiration(expires);
-		document.cookie += "expires="+expires+"; ";
+		document.cookie += "expires="+escape(expires)+"; ";
 	}
 	if(path){
-		document.cookie += "path="+path+"; ";
+		document.cookie += "path="+escape(path)+"; ";
 	}
 	if(domain){
-		document.cookie += "domain="+domain+"; ";
+		document.cookie += "domain="+escape(domain)+"; ";
 	}
 	if(secure){
 		document.cookie += "secure; ";
