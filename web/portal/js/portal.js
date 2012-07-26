@@ -475,20 +475,20 @@ function setCookie(name, value, expires, path, domain, secure)
 	
 	if(expires){
 		expires = setExpiration(expires);
-		document.cookie += "expires=" + expires + "; ";
+		document.cookie += "expires="+expires+"; ";
 	}
 	if(path){
-		document.cookie += "path=" + path + "; ";
+		document.cookie += "path="+path+"; ";
 	}
 	if(domain){
-		document.cookie += "domain=" + domain + "; ";
+		document.cookie += "domain="+domain+"; ";
 	}
 	if(secure){
 		document.cookie += "secure; ";
 	}
-	cookie = getCookie(name);
+	myCookie = getCookie(name);
 	//alert(cookie);
-	return cookie;
+	return myCookie;
 }
 
 function setExpiration(cookieLife)
