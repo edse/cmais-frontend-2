@@ -486,15 +486,19 @@ function setCookie(name, value, expires, path, domain, secure)
 	if(secure){
 		document.cookie += "secure; ";
 	}
+	/*
 	if (window.location.href.indexOf("?teste") > 0)
 	{
 		alert("document.cookie: "+document.cookie);
 	}
+	*/
 	myCookie = getCookie(name);
+	/*
 	if (window.location.href.indexOf("?teste") > 0)
 	{
 		alert("myCookie: "+myCookie);
 	}
+	*/
 	return myCookie;
 }
 
@@ -516,7 +520,7 @@ if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexO
 	classicVersion = getCookie('classic');
 	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
 	{
-  	mobileVersion = setCookie('mobile', 'yes', '', '/', '.cmais.com.br');
+  	mobileVersion = setCookie('mobile', 'yes', '', '/', 'cmais.com.br');
  		window.location="http://m.cmais.com.br";
  	}
 }
@@ -525,6 +529,7 @@ else
 	if (window.location.href.indexOf("m.cmais.com.br") > 0)
 	{
 		mobileVersion = getCookie('mobile');
+		alert(mobileVersion);
 		
 		if (mobileVersion != "yes")
 		{
