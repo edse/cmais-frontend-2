@@ -19,6 +19,7 @@
   
   <!-- COOKIE MOBILE REDIRECTION CONTROL -->
   <script>
+  
   		var mobileVersion = getCookie('mobile');
   		
   		if (mobileVersion != "yes")
