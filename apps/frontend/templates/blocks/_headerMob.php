@@ -17,27 +17,6 @@
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
   <script src="/portal/js/portal.js"></script>
   
-  <!-- COOKIE MOBILE REDIRECTION CONTROL -->
-  <script>
-  
-  		var mobileVersion = getCookie('mobile');
-  		
-  		if (mobileVersion != "yes")
-  		{
-  			var forceMobile = "<?php if (isset($_REQUEST['force'])) echo $_REQUEST['force'] ?>";
-  			if (forceMobile == "1")
-  			{
-					mobileVersion = setCookie('mobile','yes','');
-				}
-			}
-			
-	    // redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
-	    if (((screen.width * screen.height) / 600 >= 800) && mobileVersion != "yes")
-	    {
-	      window.location="http://cmais.com.br";
-	    }
-  </script>
-  <!--/COOKIE MOBILE REDIRECTION CONTROL -->
   
   <!--GOOGLE ANALYTICS-->
   <script type="text/javascript">
