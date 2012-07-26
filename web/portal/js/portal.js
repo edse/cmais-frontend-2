@@ -519,6 +519,10 @@ else
 	if (window.location.href.indexOf("m.cmais.com.br") > 0)
 	{
 		mobileVersion = getCookie('mobile');
+  	if (window.location.href.indexOf("teste"))
+  	{
+  		alert(mobileVersion);
+  	}
 		
 		if (mobileVersion != "yes")
 		{
