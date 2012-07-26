@@ -19,22 +19,40 @@
   
   <!-- COOKIE MOBILE REDIRECTION CONTROL -->
   <script>
-  		var mobileVersion = getCookie('mobile');
-  		
+  		//var mobileVersion = getCookie('mobile');
+			var forceMobile = "<?php if (isset($_REQUEST['force'])) echo $_REQUEST['force'] ?>";  		
+  
+	    // redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
+	    //if (((screen.width * screen.height) / 600 >= 800) && mobileVersion != "yes" && forceMobile != "1")
+	    if (((screen.width * screen.height) / 600 >= 800) && forceMobile != "1")
+	    {
+	      window.location="http://cmais.com.br";
+	    }
+	    /*
+	    else
+	    {
+	    	mobileVersion = setCookie('mobile','yes','','/','cmais.com.br');
+	    }
+	    */
+  
+  		/*
   		if (mobileVersion != "yes")
   		{
-  			var forceMobile = "<?php if (isset($_REQUEST['force'])) echo $_REQUEST['force'] ?>";
+  			var forceMobile = "<?php //if (isset($_REQUEST['force'])) echo $_REQUEST['force'] ?>";
+  			
   			if (forceMobile == "1")
   			{
 					mobileVersion = setCookie('mobile','yes','');
 				}
 			}
 			
+			
 	    // redireciona caso a resolução seja maior ou igual a do ipad (1024 x 768) 
 	    if (((screen.width * screen.height) / 600 >= 800) && mobileVersion != "yes")
 	    {
 	      window.location="http://cmais.com.br";
 	    }
+	    */
   </script>
   <!--/COOKIE MOBILE REDIRECTION CONTROL -->
   
