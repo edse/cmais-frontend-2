@@ -471,7 +471,7 @@ function printCookies(w)
 
 function setCookie(name, value, expires, path, domain, secure)
 {
-	document.cookie = name + "=" + escape(value) + "; ";
+	document.cookie = name + "=" + escape(value) + escape("; ");
 	
 	if(expires){
 		expires = setExpiration(expires);
