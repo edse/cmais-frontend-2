@@ -499,15 +499,17 @@ function setExpiration(cookieLife)
  * redireciona caso a resolução seja menor que a do ipad (1024 x 768)
  * e o cookie 'classic' (versão clássica) não exista
  */
-
+/*
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
 {
 	classicVersion = getCookie('classic');
 	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
 	{
-  	mobileVersion = setCookie('mobile','yes','');
- 		window.location="http://m.cmais.com.br";
+  	mobileVersion = setCookie('mobile','yes','','/','cmais.com.br');
+  	if (mobileVersion == 'yes')
+  	{
+  		window.location="http://m.cmais.com.br";
  	}
 }
 else
@@ -530,5 +532,5 @@ else
 	  }
 	}
 }
-
+*/
 
