@@ -507,10 +507,7 @@ if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexO
 	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
 	{
   	mobileVersion = setCookie('mobile','yes','','/','cmais.com.br');
-  	if (mobileVersion == "yes")
-  	{
-  		window.location="http://m.cmais.com.br";
-  	}
+ 		window.location="http://m.cmais.com.br";
  	}
 }
 else
