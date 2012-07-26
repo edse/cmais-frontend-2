@@ -1,5 +1,5 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+  
 
     <!-- SCRIPTS -->
      
@@ -42,7 +42,7 @@
     <!-- /CSS -->
     
     <!-- DIV CRIADA SOMENTE PRA MUDAR O RESIZE DA PG -->
-    <div style="width:100%;overflow: hidden; height:auto;">  
+    <div id="centralizar">  
     <!-- CAPA SITE -->
     <div id="capa-site">
       

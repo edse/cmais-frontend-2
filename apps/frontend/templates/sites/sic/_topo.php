@@ -1,5 +1,10 @@
       <!-- TOPO SIC -->
       <div id="topo-sic">
+      	<div id="logo-fpa">
+      	<a href="http://fpa.com.br" title="Fundação Padre Anchieta">
+        	<img src="http://cmais.com.br/portal/images/capaPrograma/sic/lgo-fpa.gif" border="0" />
+        </a>
+        </div>
         <?php if(isset($site) && $site->id > 0): ?>
         <!-- LOGO -->
         <a href="<?php echo $site->retriveUrl() ?>" title="<?php echo $site->getTitle() ?>">
