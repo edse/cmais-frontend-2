@@ -475,16 +475,16 @@ function setCookie(name, value, expires, path, domain, secure)
 	
 	if(expires){
 		expires = setExpiration(expires);
-		document.cookie += "expires="+escape(expires)+"; ";
+		document.cookie += escape("expires="+expires+"; ");
 	}
 	if(path){
-		document.cookie += "path="+escape(path)+"; ";
+		document.cookie += escape("path="+path+"; ");
 	}
 	if(domain){
-		document.cookie += "domain="+escape(domain)+"; ";
+		document.cookie += escape("domain="+domain+"; ");
 	}
 	if(secure){
-		document.cookie += "secure; ";
+		document.cookie += escape("secure; ");
 	}
 	if (window.location.href.indexOf("?teste") > 0)
 	{
