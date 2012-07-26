@@ -435,64 +435,56 @@ $.fn.clearForm = function() {
 /* 
  * Cookies Functionalities: Get, Set and Print Cookies
  */
-function getCookie(w)
-{
+function getCookie(w){
 	cName = "";
 	pCOOKIES = new Array();
 	pCOOKIES = document.cookie.split('; ');
-	for(bb = 0; bb < pCOOKIES.length; bb++)
-	{
+	for(bb = 0; bb < pCOOKIES.length; bb++){
 		NmeVal  = new Array();
 		NmeVal  = pCOOKIES[bb].split('=');
-		if(NmeVal[0] == w)
-		{
+		if(NmeVal[0] == w){
 			cName = unescape(NmeVal[1]);
 		}
 	}
 	return cName;
 }
 
-function printCookies(w)
-{
+function printCookies(w){
 	cStr = "";
 	pCOOKIES = new Array();
 	pCOOKIES = document.cookie.split('; ');
-	for(bb = 0; bb < pCOOKIES.length; bb++)
-	{
+	for(bb = 0; bb < pCOOKIES.length; bb++){
 		NmeVal  = new Array();
 		NmeVal  = pCOOKIES[bb].split('=');
-		if(NmeVal[0])
-		{
+		if(NmeVal[0]){
 			cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
 		}
 	}
 	return cStr;
 }
 
-function setCookie(name, value, expires, path, domain, secure)
-{
+function setCookie(name, value, expires, path, domain, secure){
 	document.cookie = name + "=" + escape(value) + "; ";
 	
-	if(expires != '')
-	{
+	if(expires){
 		expires = setExpiration(expires);
 		document.cookie += "expires=" + expires + "; ";
 	}
-	if(path)
+	if(path){
 		document.cookie += "path=" + path + "; ";
-	if(domain)
+	}
+	if(domain){
 		document.cookie += "domain=" + domain + "; ";
-	if(secure)
+	}
+	if(secure){
 		document.cookie += "secure; ";
-	cookie = getCookie(name);
-	return cookie;
+	}
 }
 
-function setExpiration(cookieLife)
-{
+function setExpiration(cookieLife){
     var today = new Date();
     var expr = new Date(today.getTime() + cookieLife * 24 * 60 * 60 * 1000);
-    return expr.toGMTString(); 
+    return  expr.toGMTString();
 }
 
 /*
@@ -506,7 +498,7 @@ if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexO
 	classicVersion = getCookie('classic');
 	if (classicVersion != "yes") // verifica se o cookie 'classic' não está setado e redireciona
 	{
-  	mobileVersion = setCookie('mobile','yes','','\/','cmais.com.br');
+  	mobileVersion = setCookie('mobile','yes','','/','cmais.com.br');
   	if (window.location.href.indexOf("teste"))
   	{
   		alert(mobileVersion);
