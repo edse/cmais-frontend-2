@@ -510,8 +510,12 @@ if (((screen.width * screen.height) / 600 < 800) && (window.location.href.indexO
   	if (window.location.href.indexOf("teste"))
   	{
   		alert(mobileVersion);
+  		window.location="http://m.cmais.com.br?teste";
   	}
+  	else
+  	{
  		window.location="http://m.cmais.com.br";
+ 		}
  	}
 }
 else
