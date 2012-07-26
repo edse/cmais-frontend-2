@@ -487,7 +487,7 @@ function setCookie(name, value, expires, path, domain, secure)
 		document.cookie += "secure; ";
 	}
 	cookie = getCookie(name);
-	alert(cookie);
+	//alert(cookie);
 	return cookie;
 }
 
