@@ -439,7 +439,6 @@ function getCookie(w)
 {
 	cName = "";
 	pCOOKIES = new Array();
-	document.cookie = unescape(document.cookie); 
 	pCOOKIES = document.cookie.split('; ');
 	for(bb = 0; bb < pCOOKIES.length; bb++)
 	{
@@ -469,7 +468,7 @@ function printCookies(w)
 	}
 	return cStr;
 }
-
+/*
 function setCookie(name, value, expires, path, domain, secure)
 {
 	document.cookie = name + "=" + escape(value) + escape("; ");
@@ -490,6 +489,25 @@ function setCookie(name, value, expires, path, domain, secure)
 	myCookie = getCookie(name);
 	return myCookie;
 }
+*/
+function setCookie(name, value, expires, path, domain, secure)
+{
+	document.cookie = name + "=" + escape(value) + "; ";
+	
+	if(expires){
+		expires = setExpiration(expires);
+		document.cookie += "expires=" + expires + "; ";
+	}
+	if(path){
+		document.cookie += "path=" + path + "; ";
+	}
+	if(domain){
+		document.cookie += "domain=" + domain + "; ";
+	}
+	if(secure){
+		document.cookie += "secure; ";
+	}
+}
 
 function setExpiration(cookieLife)
 {
@@ -508,7 +526,7 @@ if ((screen.width * screen.height) / 600 < 800)
 {
 	alert(printCookies());
 	classicVersion = getCookie('classic');
-	//alert(classicVersion);
+	alert(classicVersion);
 	/*
 	if (classicVersion != "yes")
 	{

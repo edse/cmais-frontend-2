@@ -1,7 +1,8 @@
 <script>
 	function setCookieAndRedirect(cookieName, cookieValue, cookieExpires, cookiePath, cookieDomain, urlToRedirect) {
-		alert(cookieValue);
-		classicVersion = setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
+		//alert(cookieValue);
+		setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
+		classicVersion = getCookie('classic');
 		if (classicVersion == 'yes')
 			window.location = urlToRedirect;
 		else
@@ -15,7 +16,7 @@
 		<div class="fio"></div>
 		<!-- /FIO LARANJA -->
 		<div class="footerBotoes">
-		  <p><a href="javascript:setCookieAndRedirect('classic', 'yes', '', '/', '.cmais.com.br', 'http://cmais.com.br');" title="versão clássica" rel="external">Versão clássica</a></p>
+		  <p><a href="javascript:setCookieAndRedirect('classic', 'yes', '', '/', 'cmais.com.br', 'http://cmais.com.br');" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
 		</div>
 		

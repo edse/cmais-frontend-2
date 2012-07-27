@@ -25,12 +25,12 @@
 			}
 			else
 			{
-				mobileVersion = setCookie('mobile','yes','','/','.cmais.com.br');
+				setCookie('mobile','yes','','/','cmais.com.br');
 			}				
 		}
 		else
 		{
-			mobileVersion = setCookie('mobile','yes','','/','.cmais.com.br');
+			setCookie('mobile','yes','','/','cmais.com.br');
 		}
   </script>
   
