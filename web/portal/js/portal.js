@@ -506,9 +506,9 @@ function setExpiration(cookieLife)
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if ((screen.width * screen.height) / 600 < 800)
 {
-	//alert(printCookies());
+	alert(printCookies());
 	classicVersion = getCookie('classic');
-	alert(classicVersion);
+	//alert(classicVersion);
 	/*
 	if (classicVersion != "yes")
 	{
