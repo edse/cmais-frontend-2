@@ -508,6 +508,7 @@ if ((screen.width * screen.height) / 600 < 800)
 {
 	alert(printCookies());
 	classicVersion = getCookie('classic');
+	alert(classicVersion);
 	if (classicVersion != "yes")
 	{
 		if ((window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
