@@ -85,13 +85,15 @@
       ->execute();
   }
   else{
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a')
-      ->where('a.site_id = ?', (int)$s->getId())
-      ->andWhere('a.asset_type_id = 6')
-      ->orderBy('a.id desc')
-      ->execute();
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, Site s')
+        ->where('s.type = ? OR s.id=67', 'Programa Infantil')
+        ->andWhere('a.site_id = s.id')
+        ->andWhere('a.asset_type_id = 6')
+        ->orderBy('a.id desc')
+        ->limit(80)
+        ->execute();
 
     /*
   	if($section->getSlug() != 'todos') {
