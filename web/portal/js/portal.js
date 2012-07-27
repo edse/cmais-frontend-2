@@ -518,7 +518,7 @@ function setExpiration(cookieLife)
 if ((screen.width * screen.height) / 600 < 800)
 {
 	classicVersion = getCookie('classic');
-	if (classicVersion != "yes")
+	if (classicVersion != "yes;")
 	{
 		if ((window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
 		{
