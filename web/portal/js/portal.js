@@ -527,7 +527,7 @@ if ((screen.width * screen.height) / 600 < 800)
 {
 	//alert(printCookies());
 	//classicVersion = getCookie('classic');
-	if (window.location.href.indexOf("?teste") < 0)
+	if (window.location.href.indexOf("?teste") > 0)
 		alert(document.cookie);
 	/*
 	if (classicVersion != "yes")
