@@ -439,6 +439,7 @@ function getCookie(w)
 {
 	cName = "";
 	pCOOKIES = new Array();
+	document.cookie = unescape(document.cookie); 
 	pCOOKIES = document.cookie.split('; ');
 	for(bb = 0; bb < pCOOKIES.length; bb++)
 	{
