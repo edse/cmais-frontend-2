@@ -2,7 +2,6 @@
 	function setCookieAndRedirect(cookieName, cookieValue, cookieExpires, cookiePath, cookieDomain, urlToRedirect) {
 		alert(cookieValue);
 		classicVersion = setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
-		//classicVersion = getCookie('classic');
 		if (classicVersion == 'yes')
 			window.location = urlToRedirect;
 		else
