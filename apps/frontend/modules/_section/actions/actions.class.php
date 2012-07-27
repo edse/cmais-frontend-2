@@ -620,20 +620,34 @@ class _sectionActions extends sfActions
             }
           }
           else {
-            $this->assetsQuery = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, SectionAsset sa')
-              ->where('sa.section_id = ?', $this->section->id)
-              ->andWhere('sa.asset_id = a.id')
-              ->andWhere('a.is_active = ?', 1);
-            if($request->getParameter('busca') != '')
-              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-            if(($this->site->getId() == 295)&&($this->section->id == 893))
-              $this->assetsQuery->orderBy('sa.display_order');
-            else if(($this->site->getId() == 282)&&($this->section->id == 778))
-              $this->assetsQuery->orderBy('sa.display_order');
-            else
-              $this->assetsQuery->orderBy('a.created_at desc');
+          	if ($this->site->getSlug() == "reportereco") {
+	            $this->assetsQuery = Doctrine_Query::create()
+	              ->select('a.*')
+	              ->from('Asset a, SectionAsset sa')
+	              ->where('sa.section_id = ?', $this->section->id)
+	              ->andWhere('sa.asset_id = a.id')
+	              ->andWhere('a.asset_type_id = ?', 1)
+	              ->andWhere('a.is_active = ?', 1);
+	            if($request->getParameter('busca') != '')
+	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+	            $this->assetsQuery->orderBy('a.created_at desc');
+						}
+						else {
+	            $this->assetsQuery = Doctrine_Query::create()
+	              ->select('a.*')
+	              ->from('Asset a, SectionAsset sa')
+	              ->where('sa.section_id = ?', $this->section->id)
+	              ->andWhere('sa.asset_id = a.id')
+	              ->andWhere('a.is_active = ?', 1);
+	            if($request->getParameter('busca') != '')
+	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+	            if(($this->site->getId() == 295)&&($this->section->id == 893))
+	              $this->assetsQuery->orderBy('sa.display_order');
+	            else if(($this->site->getId() == 282)&&($this->section->id == 778))
+	              $this->assetsQuery->orderBy('sa.display_order');
+	            else
+	              $this->assetsQuery->orderBy('a.created_at desc');
+						}
           }
         }
       }
