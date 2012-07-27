@@ -526,8 +526,10 @@ function setExpiration(cookieLife)
 if ((screen.width * screen.height) / 600 < 800)
 {
 	//alert(printCookies());
-	classicVersion = getCookie('classic');
-	//alert(classicVersion);
+	//classicVersion = getCookie('classic');
+	setCookie('classic', 'yes', '', '/', '.cmais.com.br');
+	if (window.location.href.indexOf("?teste") > 0)
+		alert(document.cookie);
 	/*
 	if (classicVersion != "yes")
 	{
