@@ -527,7 +527,7 @@ if ((screen.width * screen.height) / 600 < 800)
 {
 	//alert(printCookies());
 	classicVersion = getCookie('classic');
-	alert(classicVersion);
+	//alert(classicVersion);
 	/*
 	if (classicVersion != "yes")
 	{
@@ -537,6 +537,5 @@ if ((screen.width * screen.height) / 600 < 800)
 		}
  	}
  	*/
- 	
 }
 
