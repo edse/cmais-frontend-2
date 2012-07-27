@@ -200,7 +200,7 @@
           <div class="allpages">
             <div class="categorias">
                 <a class="mais" href="/quintaldacultura/videos"><span class="icoBtn"></span><span class="tit">V&iacute;deos -</span></a>
-                <p class="categoriaSelecionada"><?php echo $section->getTitle() ?></p>
+                <!-- <p class="categoriaSelecionada"><?php echo $section->getTitle() ?></p> -->
             </div>
             <div class="carrosselWrapper">
             
