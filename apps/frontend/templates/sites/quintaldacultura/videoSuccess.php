@@ -84,7 +84,16 @@
       ->orderBy('a.id desc')
       ->execute();
   }
-  else{/*
+  else{
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a')
+      ->where('a.site_id = ?', (int)$s->getId())
+      ->andWhere('a.asset_type_id = 6')
+      ->orderBy('a.id desc')
+      ->execute();
+
+    /*
   	if($section->getSlug() != 'todos') {
 			//$assets = $section->getAssets();
 	    $assets = Doctrine_Query::create()
@@ -97,7 +106,7 @@
 	      ->limit(80)
 	      ->execute();
 			
-		} else {*/
+		} else {
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
 	      ->from('Asset a, Site s')
@@ -108,6 +117,7 @@
 	      ->limit(80)
 	      ->execute();
 		//}
+   */
   }
   if(!isset($asset)){
     $asset = $assets[0];
