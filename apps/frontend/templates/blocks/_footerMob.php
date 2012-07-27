@@ -1,17 +1,18 @@
 <script>
 	function setCookieAndRedirect(cookieName, cookieValue, cookieExpires, cookiePath, cookieDomain, urlToRedirect) {
 		//alert(cookieValue);
-		/*
+		
 		setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
 		classicVersion = getCookie('classic');
 		if (classicVersion == 'yes')
 			window.location = urlToRedirect;
 		else
 			alert('Redirecionamento inválido!')
-		*/
+		/*
 		setCookie('classic', 'yes', '', '/', '.cmais.com.br');
 		if (window.location.href.indexOf("?teste") > 0)
 			alert(document.cookie);
+		*/
 	}
 </script>
 	<!--FOOTER-->
