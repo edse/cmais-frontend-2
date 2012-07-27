@@ -3,7 +3,7 @@
 		classicVersion = setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
 		classicVersion = getCookie('classic');
 		//alert(classicVersion);
-		if (classicVersion == 'yes;')
+		if (classicVersion == 'yes')
 			window.location = urlToRedirect;
 		else
 			alert('Redirecionamento inválido!')
