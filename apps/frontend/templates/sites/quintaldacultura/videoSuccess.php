@@ -84,8 +84,8 @@
       ->orderBy('a.id desc')
       ->execute();
   }
-  else{
-  	if ($section->getSlug() != 'todos') {
+  else{/*
+  	if($section->getSlug() != 'todos') {
 			//$assets = $section->getAssets();
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
@@ -97,7 +97,7 @@
 	      ->limit(80)
 	      ->execute();
 			
-		} else {
+		} else {*/
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
 	      ->from('Asset a, Site s')
@@ -107,7 +107,7 @@
 	      ->orderBy('a.id desc')
 	      ->limit(80)
 	      ->execute();
-		}
+		//}
   }
   if(!isset($asset)){
     $asset = $assets[0];
