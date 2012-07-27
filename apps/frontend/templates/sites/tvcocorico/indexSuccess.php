@@ -26,7 +26,9 @@
       
       <!--LOGO TVCOCORICO -->
       <h1>
-        <img src="/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
+      	<a href="/tvcocorico" title="TV Cocórico" target="_self">
+	        <img src="/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
+    	</a>
       </h1>  
       <!--LOGO TVCOCORICO -->
       
@@ -36,7 +38,7 @@
             
       <!-- HORARIO -->
       <div id="horario-tv">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <a href="http://youtube.com.br" title="Canal TV Cocoricó">
           <img src="/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
         </a>
