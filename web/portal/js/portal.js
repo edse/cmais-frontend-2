@@ -521,7 +521,7 @@ function setExpiration(cookieLife)
  * redireciona caso a resolução seja menor que a do ipad (1024 x 768)
  * e o cookie 'classic' (versão clássica) não exista
  */
-/*
+
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if ((screen.width * screen.height) / 600 < 800)
 {
@@ -536,6 +536,6 @@ if ((screen.width * screen.height) / 600 < 800)
 			window.location="http://m.cmais.com.br";
 		}
  	}
- 	
+ 	*/
 }
-*/
+
