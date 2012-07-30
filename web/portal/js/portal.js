@@ -469,28 +469,7 @@ function printCookies(w)
 	}
 	return cStr;
 }
-/*
-function setCookie(name, value, expires, path, domain, secure)
-{
-	document.cookie = name + "=" + escape(value) + escape("; ");
-	
-	if(expires){
-		expires = setExpiration(expires);
-		document.cookie += "expires=" + expires + escape("; ");
-	}
-	if(path){
-		document.cookie += "path=" + path + escape("; ");
-	}
-	if(domain){
-		document.cookie += "domain=" + domain + escape("; ");
-	}
-	if(secure){
-		document.cookie += "secure; ";
-	}
-	myCookie = getCookie(name);
-	return myCookie;
-}
-*/
+
 function setCookie(name, value, expires, path, domain, secure)
 {
 	document.cookie = name + "=" + escape(value) + "; ";
