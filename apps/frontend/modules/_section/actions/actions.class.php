@@ -962,7 +962,7 @@ class _sectionActions extends sfActions
       if($_REQUEST["debug"]==1){
         echo $this->section->Site->getSlug();
       }
-      if(count($t) > 1){
+      if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
         die();
       }
