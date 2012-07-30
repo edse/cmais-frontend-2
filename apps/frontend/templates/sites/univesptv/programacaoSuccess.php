@@ -1,4 +1,4 @@
-<!--script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script-->
+<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/grade.css" type="text/css" />
 <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
