@@ -225,7 +225,7 @@ class _assetActions extends sfActions
     }
 
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
-      $t = explode("-old", $this->Site->getSlug());
+      $t = explode("-old", $this->asset->getSlug());
       if($_REQUEST["debug"]==1){
         echo $this->section->Site->getSlug();
       }
