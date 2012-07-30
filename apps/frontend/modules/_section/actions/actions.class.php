@@ -951,17 +951,22 @@ class _sectionActions extends sfActions
     }
 		
 		if($this->section->Site->getSlug() == "sic") {
-		  $t = @end(explode("-", $this->section->Site->getSlug()));
-      if($t == "old"){
-        header("Location: ".$this->section->Site->retriveUrl());
-        die();
-      }
   		if($this->pager->count() == 1){
     		header("Location: ".$this->pager->getCurrent()->retriveUrl());
     		die();
   		} 
   	} 
 
+    if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
+      $t = explode("-old", $this->section->Site->getSlug());
+      if($_REQUEST["debug"]==1){
+        echo $this->section->Site->getSlug();
+      }
+      if(count($t) > 1){
+        header("Location: ".$t[0]);
+        die();
+      }
+    }
 
     $debug = false;
     if($request->getParameter('debug') != ""){

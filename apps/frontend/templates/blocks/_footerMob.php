@@ -22,7 +22,7 @@
 		<div class="fio"></div>
 		<!-- /FIO LARANJA -->
 		<div class="footerBotoes">
-		  <p><a href="javascript:setCookieAndRedirect('classic', 'yes', '', '/', '.cmais.com.br', 'http://cmais.com.br');" title="versão clássica" rel="external">Versão clássica</a></p>
+		  <p><a href="javascript:setCookieAndRedirect('classic', 'yes', '', '/', '.cmais.com.br', 'http://cmais.com.br?from=m');" title="versão clássica" rel="external">Versão clássica</a></p>
 		  <p>Copyright © 1996 - <?php echo date('Y') ?> Fundação Padre Anchieta</p>
 		</div>
 		
