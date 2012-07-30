@@ -1078,7 +1078,7 @@ class _sectionActions extends sfActions
       elseif($this->site->getType() == "Programa" || $this->site->getType() == 3){
         if($this->site->Program->Channel->getSlug()=="univesptv"){
           $test = @end(explode("-",$this->site->getSlug()));
-          if($test == "copy"){
+          if($test != "old"){
             if($this->site->Program->getIsACourse()){
               if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
