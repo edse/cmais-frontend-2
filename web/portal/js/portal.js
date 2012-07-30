@@ -532,7 +532,7 @@ if ((screen.width * screen.height) / 600 < 800)
 	if (window.location.href.indexOf("?teste") > 0)
 		alert(document.cookie);
 	*/
-	if (classicVersion != "yes")
+	if (classicVersion != "yes" && window.location.href.indexOf("m.cmais.com.br?from=m") < 0)
 	{
 		if ((window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
 		{
