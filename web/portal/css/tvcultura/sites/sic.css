@@ -13,8 +13,8 @@
 /* PAGINAS PADRÕES*/
 body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
 
-#capa-site{overflow:visible; width:1012px; margin:0 auto;}
-#capa-site h2,#capa-site p,#capa-site span{margin:6px 0 20px 2px !important;}
+#capa-site{overflow:visible; width:1012px; margin:0 auto; min-height: 700px; }
+#capa-site h2,#capa-site p,#capa-site span{margin:6px 0 20px 2px !important; }
 #capa-site p{font-size:14px}
 #capa-site h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
 #menu-portal-2 ul.abas{margin: 0;}
@@ -28,7 +28,8 @@ span.pergunta{font-size:20px; font-weight:bold;}
 
 /* COLUNAS */
 .col-379-sic{width:379px; margin:0 20px 0 0;text-align:left;}
-.col-400-sic{width:400px; margin:0 20px 0 0;text-align:left;}
+.col-400-sic{width:400px; margin:0 20px 0 0;text-align:left; }
+.col-400-sic p span { font-size: 14px !important; }
 .col-585-sic{width:585px;text-align:left;}
 .col-640-sic{width:640px;text-align:left;}
 .col-640-sic h2,
