@@ -13,7 +13,7 @@
 /* PAGINAS PADRÕES*/
 body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
 
-#capa-site{overflow:visible;}
+#capa-site{overflow:visible; width:1012px; margin:0 auto;}
 #capa-site h2,#capa-site p,#capa-site span{margin:6px 0 20px 2px !important;}
 #capa-site p{font-size:14px}
 #capa-site h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
