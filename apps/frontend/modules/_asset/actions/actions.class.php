@@ -225,6 +225,11 @@ class _assetActions extends sfActions
     }
 
     if($this->site->slug == 'sic'){
+      $t = @end(explode("-", $this->section->Site->getSlug()));
+      if($t == "old"){
+        header("Location: ".$this->section->Site->retriveUrl());
+        die();
+      }
       $this->setLayout(false);
     }
 
