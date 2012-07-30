@@ -72,11 +72,9 @@
 
   <div class="allWrapper">
   	
-  <?php
-  /*
+	<?php
   // section assets
   if(isset($s)){
-  	//die($s->getId());
     $assets = Doctrine_Query::create()
       ->select('a.*')
       ->from('Asset a')
@@ -86,73 +84,30 @@
       ->execute();
   }
   else{
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, Site s')
-        ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-        ->andWhere('a.site_id = s.id')
-        ->andWhere('a.asset_type_id = 6')
-        ->orderBy('a.id desc')
-        ->limit(80)
-        ->execute();
-
-    /*
-  	if($section->getSlug() != 'todos') {
-			//$assets = $section->getAssets();
-	    $assets = Doctrine_Query::create()
-	      ->select('a.*')
-	      ->from('Asset a, Site s')
-	      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-	      ->andWhere('a.site_id = s.id')
-	      ->andWhere('a.asset_type_id = 6')
-	      ->orderBy('a.id desc')
-	      ->limit(80)
-	      ->execute();
-			
-		} else {
-	    $assets = Doctrine_Query::create()
-	      ->select('a.*')
-	      ->from('Asset a, Site s')
-	      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-	      ->andWhere('a.site_id = s.id')
-	      ->andWhere('a.asset_type_id = 6')
-	      ->orderBy('a.id desc')
-	      ->limit(80)
-	      ->execute();
-		//}
-   *//*
-  }
-  if(!isset($asset)){
-    $asset = $assets[0];
-  }
-  */?>
-  
-  <?php
-  // section assets
-  if(isset($s)){
-  	//die($s->getId());
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a')
-      ->where('a.site_id = ?', (int)$s->getId())
-      ->andWhere('a.asset_type_id = 6')
-      ->orderBy('a.id desc')
-      ->execute();
-  }
-  else{
-  	if ($section->getSlug() != 'todos') {
-			//$assets = $section->getAssets();
-	    $assets = Doctrine_Query::create()
-	      ->select('a.*')
-	      ->from('Asset a, Site s')
-	      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-	      ->andWhere('a.site_id = s.id')
-	      ->andWhere('a.asset_type_id = 6')
-	      ->orderBy('a.id desc')
-	      ->limit(80)
-	      ->execute();
-			
-		} else {
+  	if (isset($section)) {
+	  	if ($section->getSlug() != 'todos') {
+		    $assets = Doctrine_Query::create()
+		      ->select('a.*')
+		      ->from('Asset a, Site s')
+		      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
+		      ->andWhere('a.site_id = s.id')
+		      ->andWhere('a.asset_type_id = 6')
+		      ->orderBy('a.id desc')
+		      ->limit(80)
+		      ->execute();
+			} else {
+		    $assets = Doctrine_Query::create()
+		      ->select('a.*')
+		      ->from('Asset a, Site s')
+		      ->where('s.type = ? OR s.id=67', 'Programa Infantil')
+		      ->andWhere('a.site_id = s.id')
+		      ->andWhere('a.asset_type_id = 6')
+		      ->orderBy('a.id desc')
+		      ->limit(80)
+		      ->execute();
+			}
+		}
+		else {
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
 	      ->from('Asset a, Site s')
@@ -167,7 +122,8 @@
   if(!isset($asset)){
     $asset = $assets[0];
   }
-  ?>  
+  ?>
+
 
   <?php use_helper('I18N', 'Date') ?>
   <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
