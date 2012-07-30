@@ -950,7 +950,12 @@ class _sectionActions extends sfActions
       $this->page = $request->getParameter('page');
     }
 		
-		if ($this->section->Site->getSlug() == "sic") {
+		if($this->section->Site->getSlug() == "sic") {
+		  $t = @end(explode("-", $this->section->Site->getSlug()));
+      if($t == "old"){
+        header("Location: ".$this->section->Site->retriveUrl());
+        die();
+      }
   		if($this->pager->count() == 1){
     		header("Location: ".$this->pager->getCurrent()->retriveUrl());
     		die();
