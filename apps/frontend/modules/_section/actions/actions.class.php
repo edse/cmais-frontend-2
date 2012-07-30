@@ -1077,16 +1077,31 @@ class _sectionActions extends sfActions
       }
       elseif($this->site->getType() == "Programa" || $this->site->getType() == 3){
         if($this->site->Program->Channel->getSlug()=="univesptv"){
-          if($this->site->Program->getIsACourse()){
-            if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/curso';
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/curso');
-          }
-          else{
-            if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa';
-            if($this->site->getSlug() == 'inglescommusica')
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/subsection');
-            else
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
+          $test = @end(explode("-",$this->site->getSlug()));
+          if($test == "copy"){
+            if($this->site->Program->getIsACourse()){
+              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
+            }
+            else{
+              if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/programa';
+              if($this->site->getSlug() == 'inglescommusica')
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/subsection');
+              else
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/programa');
+            }
+          }else{
+            if($this->site->Program->getIsACourse()){
+              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/curso';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/curso');
+            }
+            else{
+              if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa';
+              if($this->site->getSlug() == 'inglescommusica')
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/subsection');
+              else
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/programa');
+            }
           }
         }        
         else if($this->site->Program->Channel->getSlug()=="univesp-tv-copy"){
