@@ -224,12 +224,15 @@ class _assetActions extends sfActions
       unset($displays); unset($bs);
     }
 
-    if($this->site->slug == 'sic'){
-      $t = @end(explode("-", $this->section->Site->getSlug()));
-      if($t == "old"){
-        header("Location: ".$this->section->Site->retriveUrl());
+    if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
+      $t = explode("-old", $this->section->Site->getSlug());
+      if(count($t) > 0){
+        header("Location: ".$t[0]);
         die();
       }
+    }
+
+    if($this->site->slug == 'sic'){
       $this->setLayout(false);
     }
 
