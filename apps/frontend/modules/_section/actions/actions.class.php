@@ -767,6 +767,9 @@ class _sectionActions extends sfActions
     elseif($this->site->slug == 'm'){
       $this->setLayout(false);
     }
+    elseif($this->site->slug == 'sic'){
+      $this->setLayout(false);
+    }
 
     // mail sender
     $email_site = $this->section->getContactEmail();
