@@ -206,6 +206,7 @@
             ->andWhere('cp.channel_id = ?', 3)
             ->andWhere('p.is_a_course = ?', 1)
             ->andWhere('p.is_in_menu = ?', 1)
+            ->andWhere('p.is_active = ?', 1)
             ->orderBy('p.title')
             ->execute();
           ?>

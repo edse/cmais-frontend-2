@@ -224,6 +224,10 @@ class _assetActions extends sfActions
       unset($displays); unset($bs);
     }
 
+    if($this->site->slug == 'sic'){
+      $this->setLayout(false);
+    }
+
     // mail sender
     $email_site = "";
     if($request->getParameter('section_id') != ""){

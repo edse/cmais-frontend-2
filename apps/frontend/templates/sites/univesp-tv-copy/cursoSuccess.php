@@ -174,6 +174,7 @@ $asset = $pager->getCurrent();
                             ->where('p.id = cp.program_id')
                             ->andWhere('cp.channel_id = ?', 3)
                             ->andWhere('p.is_a_course = ?', 1)
+                            ->andWhere('p.is_active = ?', 1)
                             ->orderBy('p.title')
                             ->execute();
                           ?>
@@ -298,8 +299,8 @@ $asset = $pager->getCurrent();
                       <ul class="sem-borda">
                         <?php $k=0; foreach($assets as $d): $k++; ?>
                           <li class="conteudo-lista">
-                            <a href="http://cmais.com.br/frontend_dev.php/univesp-tv-copy/<?php echo $site->getSlug();?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Aula<span><?php echo $k; ?></span></a>
-                            <a href="http://cmais.com.br/frontend_dev.php/univesp-tv-copy/<?php echo $site->getSlug();?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a>
+                            <a href="http://univesptv.cmais.com.br/<?php echo $site->getSlug();?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Aula<span><?php echo $k; ?></span></a>
+                            <a href="http://univesptv.cmais.com.br/<?php echo $site->getSlug();?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a>
                             <p><?php echo $d->getDescription(); ?></p>
                           </li>
                         <?php endforeach; ?>
