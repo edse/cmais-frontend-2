@@ -98,8 +98,8 @@ label.error {font-weight: bold;color: red;padding: 2px 1px;margin-top: 2px;font-
 #formas-de-contato{margin-top:20px}
 #formas-de-contato ul{margin:0;}
 #formas-de-contato ul li a.formas{display: block;margin: 0 0 0 0;padding: 13px;margin:1px;color:#333;}
-#formas-de-contato ul li:nth-child(odd) {background: #e1e1e1;}
-#formas-de-contato ul li:nth-child(even) {background: #eaeaea;}
+#formas-de-contato ul li:nth-child(odd) {background: #e1e1e1; list-style:none;}
+#formas-de-contato ul li:nth-child(even) {background: #eaeaea; list-style:none;}
 #formas-de-contato .icon-circle-arrow-right{background-position: -241px -143px;float:left;margin: 14px 7px 0 15px;}
 #formas-de-contato .icon-circle-arrow-down{background-position: -313px -143px;float:left;margin: 14px 7px 0 15px;}
 #formas-de-contato .fundo-cinza{background: #FFF !important; padding: 1px 10px 1px 10px;}
