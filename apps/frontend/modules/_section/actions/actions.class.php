@@ -626,6 +626,20 @@ class _sectionActions extends sfActions
           }
           else {
           	if ($this->site->getSlug() == "reportereco") {
+							$relatedAssets = Doctrine_Query::create()
+								->select('ra.parent_asset_id')
+								->from('RelatedAsset ra, Asset a2, AssetVideo av')
+								->where('ra.asset_id = a2.id')
+								->andWhere('a2.asset_type_id = ?', 6)
+								->andWhere('a2.site_id = ?', $this->site->getId())
+								->andWhere('av.asset_id = a2.id')
+								->andWhere('av.youtube_id != ""')
+								->groupBy('ra.parent_asset_id')
+								->execute();
+							
+							foreach($relatedAssets as $ra)
+								$related[] = $ra->parent_asset_id;
+							
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -633,7 +647,7 @@ class _sectionActions extends sfActions
                 ->andWhere('sa.asset_id = a.id')
                 ->andWhere('a.asset_type_id = ?', 1)
                 ->andWhere('a.is_active = ?', 1)
-								->andWhere('a.id IN (SELECT ra.parent_asset_id FROM RelatedAsset ra, Asset a2, AssetVideo av WHERE ra.asset_id = a2.id AND a2.asset_type_id = 6 AND a2.site_id = 120 AND av.asset_id = a2.id AND av.youtube_id != "" GROUP BY ra.parent_asset_id)');
+								->andWhereIn('a.id',$related);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
