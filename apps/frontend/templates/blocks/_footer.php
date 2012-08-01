@@ -72,7 +72,7 @@ ciências</a></li>
 								<li><a href="http://www.tvcultura.com.br/cocorico" title="Cocoric&oacute;">Cocoric&oacute;</a></li>
 								<li><a href="http://tvratimbum.cmais.com.br/baudehistorias" title="Ba&uacute; de Hist&oacute;rias">Ba&uacute; de Hist&oacute;rias</a></li>
 								<li><a href="http://tvratimbum.cmais.com.br/mundodalua" title="Mundo da Lua">Mundo da Lua</a></li>
-								<li><a href="http://cmais.com.br/castelo" title="Castelo R&aacute; Tim Bum">Castelo R&aacute; Tim Bum</a></li>
+								<li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informação ao Cidadão">SiC</a></li>
 							</ul>
 						</div>
 						<div class="posicao">
@@ -91,6 +91,7 @@ ciências</a></li>
 								<li><a href="http://cmais.com.br/captacao" title="Captacao">Capta&ccedil;&atilde;o</a></li>
 								<!-- <li><a href="http://www2.tvcultura.com.br/imprensa/" title="Imprensa">Imprensa</a></li> -->
 								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
+								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">SiC</a></li>
 							</ul>
 							
               <a href="http://cmais.com.br/programas-de-a-z" class="tit todos">Todos os sites</a>
@@ -99,11 +100,11 @@ ciências</a></li>
 						</div>
 					</div>
 					<div class="col-dir">
-						<a class="fpa" href="http://www2.tvcultura.com.br/fpa/" title="Funda&ccedil;&atilde;o Padre Anchieta">Funda&ccedil;&atilde;o Padre Anchieta</a>
+						<!-- a class="fpa" href="http://www2.tvcultura.com.br/fpa/" title="Funda&ccedil;&atilde;o Padre Anchieta">Funda&ccedil;&atilde;o Padre Anchieta</a-->
 						<a class="cultura" href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a>
 					</div>
 					<div class="copyright">
-						<p>Copyright &copy; 1996 - 2012 Funda&ccedil;&atilde;o Padre Anchieta</p>
+						<p>Copyright &copy; 1996 - <?php echo date('Y') ?> Funda&ccedil;&atilde;o Padre Anchieta</p>
 					</div>
 				</div>
 				
