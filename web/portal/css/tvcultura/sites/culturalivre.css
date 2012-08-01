@@ -1,10 +1,10 @@
-@import url("../geral.css");
-
-.tit-pagina a {text-indent:-9999px; background:url(../../../images/capaPrograma/logo-culturaLivre.png);}
-#barra-site { background:url(../../../images/capaPrograma/bg-culturaLivre.png) no-repeat 700px 30px; }
+.tit-pagina a {text-indent:-9999px;}
+#barra-site { background:url(../../../images/capaPrograma/culturalivre/bg.png) no-repeat right; }
 #barra-site .topo-programa {height:80px;}
 .box-padrao .chapeu {color:#ff6633;}
 #destaque .data {margin-top:10px;}
 #barra-site #horario {width:240px; margin-top:0;}
 .uma-coluna .conteudo li {height:570px;}
 #barra-site {*margin-left:0;}
+#capa-site { margin-top:-100px !important; }
+#barra-site h2 { margin-top:20px; }
