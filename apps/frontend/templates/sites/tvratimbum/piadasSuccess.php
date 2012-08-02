@@ -12,7 +12,7 @@
 <script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <!--script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
 <script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/portal.js"></script>
+
 <script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 
 <!--SCRIPT-->
