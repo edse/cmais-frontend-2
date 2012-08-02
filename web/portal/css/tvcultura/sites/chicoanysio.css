@@ -15,5 +15,5 @@
 #chamada { width:970px; margin:0 auto; float:none; margin-top:20px;}
 .noticia .img-video { margin-top:0; }
 #barra-site .redes ul {display:none;}
-#barra-site .redes { float:right; width:320px !important; }
+#barra-site .redes { float:right; width:350px !important;*float:right !important; }
 /** /chicoanysio **/
