@@ -501,7 +501,8 @@ function setExpiration(cookieLife)
  * e o cookie 'classic' (versão clássica) não exista
  */
 
-setCookie('classic', 'yes', '', '/', '.cmais.com.br');
+//setCookie('classic', 'yes', '', '/', '.cmais.com.br');
+document.cookie = 'ppkcookie1=testcookie; expires=Thu, 2 Aug 2001 20:47:11 UTC; path=/';
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if ((screen.width * screen.height) / 600 < 800)
 {
