@@ -303,7 +303,7 @@
             <!--CARROSSEL-->
             <div class="carrossel-piada">
               
-              <ul class="piadaCarrossel">
+              <ul>
                 <?php foreach($displays['cantinho-das-piadas'] as $k=>$d ): ?>
                 <!--PIADA-->
                 <li>
@@ -332,7 +332,7 @@
 									$('#current_page').html(liindex)
 								};
 								
-								$('#piadaCarrossel').jcarousel({
+								$('.carrossel-piada').jcarousel({
 									wrap: "both",
 									scroll:1,
 									animation: 200,
