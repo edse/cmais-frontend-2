@@ -17,6 +17,7 @@
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
   <script src="/portal/js/portal.js"></script>
   <script>
+  /*
 		if ((screen.width * screen.height) / 600 >= 800)
 		{
 			if (window.location.href.indexOf("?force=1") < 0)
@@ -32,6 +33,7 @@
 		{
 			setCookie('mobile','yes','','/','.cmais.com.br');
 		}
+		*/
   </script>
   
   <!--GOOGLE ANALYTICS-->
