@@ -3,6 +3,8 @@
 		//alert(cookieValue);
 		setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
 		classicVersion = getCookie('classic');
+		if (window.location.href.indexOf("?teste") > 0)
+			alert(document.cookie);
 		if (classicVersion == 'yes')
 			window.location = urlToRedirect;
 		else
