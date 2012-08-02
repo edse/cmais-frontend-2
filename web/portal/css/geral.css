@@ -471,7 +471,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /**** menu portal ****/
 #menu-portal { float:left; margin:15px 0 0 13px; width:686px; }
 #menu-portal li { float:left; width:auto; margin-right:3px; }
-#menu-portal li a { font:bold 14px arial; color:#fff; text-transform:uppercase;  padding:5px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
+#menu-portal li a { font:bold 14px; font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;  padding:5px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
 #menu-portal li a span { background:url(../images/ico-drop.png) no-repeat; width:16px; height:16px; position:absolute; right:5px; top:5px;  }
 #menu-portal li.ativo,
 #menu-portal li:hover{ background:#ff6633; }
