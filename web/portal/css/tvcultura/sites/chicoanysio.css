@@ -2,8 +2,8 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {background:url(/portal/images/capaPrograma/chicoanysio/bg-topo.jpg) repeat-x;height:100px; position:relative; top:3px!important;*top:1px!important; z-index: 0; overflow:hidden; clear:both;}
-#capa-site {margin-top:-96px !important;}
+.bg-site {background:url(/portal/images/capaPrograma/chicoanysio/bg-topo.jpg) repeat-x;height:100px; position:relative; top:0px!important;*top:0px!important; z-index: -1000; overflow:hidden; clear:both;}
+#capa-site {margin-top:-97px !important;}
 #capa-site {*margin-top:-100px !important;}
 #miolo {margin-top:28px;}
 #barra-site {height:100px; background:url(/portal/images/capaPrograma/chicoanysio/logo.png) no-repeat 50px 0; margin:0; width:1012px; }
