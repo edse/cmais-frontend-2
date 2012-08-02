@@ -506,7 +506,7 @@ if ((screen.width * screen.height) / 600 < 800)
 {
 	if (window.location.href.indexOf("?from=m") > 0)
 	{
-		setCookie('classic', 'yes', '', '/', '.cmais.com.br');
+		setCookie('classic', 'yes', '', '/', 'cmais.com.br');
 	}
 	classicVersion = getCookie('classic');
 	//alert(classicVersion);
