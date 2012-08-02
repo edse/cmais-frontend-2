@@ -30,8 +30,8 @@
 #ferias #videos-especial .carrossel a:hover p{color:#067af6 !important;text-decoration:none !important;}
 #ferias #videos-especial .carrossel ul li span{float: left;width: 148px;}
 #ferias #videos-especial .carrossel ul li p{width: 148px;}
-#ferias #videos-especial .carrossel #seta-esquerda{background:url("../image/bg-sprite.png") repeat-x scroll 0 -351px;position:absolute;top:30px; left:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
-#ferias #videos-especial .carrossel #seta-direita{background:url("../image/bg-sprite.png") repeat-x scroll 0 -351px;position:absolute;top:30px; right:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel #seta-esquerda{background:#FFFFFF;position:absolute;top:30px; left:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
+#ferias #videos-especial .carrossel #seta-direita{background:#fff;position:absolute;top:30px; right:-3px; z-index:900;width:27px !important; height:33px !important; display:block;border:1px solid #ced0d0;}
 #ferias #videos-especial .carrossel .sombra{width:17px;height:11px;position:absolute;z-index:800}
 #ferias #videos-especial .carrossel .sombra-esquerda{background:url("../image/sombrinha-btn-nav.png") repeat-x 0px 0px;top:65px; left:0px;}
 #ferias #videos-especial .carrossel .sombra-direita{background:url("../image/sombrinha-btn-nav.png") repeat-x -16px 0px;top:65px; right:-3px;} 
