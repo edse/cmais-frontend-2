@@ -1,7 +1,7 @@
 <script>
 	function setCookieAndRedirect(cookieName, cookieValue, cookieExpires, cookiePath, cookieDomain, urlToRedirect) {
 		//alert(cookieValue);
-		setCookie(cookieName,cookieValue,cookieExpires,cookiePath,cookieDomain);
+		setCookie('classic', 'yes', 0, '/', '.cmais.com.br', 'http://cmais.com.br');
 		classicVersion = getCookie('classic');
 		if (window.location.href.indexOf("?teste") > 0)
 			alert(document.cookie);
