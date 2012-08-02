@@ -501,12 +501,13 @@ function setExpiration(cookieLife)
  * e o cookie 'classic' (versão clássica) não exista
  */
 
+setCookie('classic', 'yes', '', '/', '.cmais.com.br');
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if ((screen.width * screen.height) / 600 < 800)
 {
 	if (window.location.href.indexOf("?from=m") > 0)
 	{
-		setCookie('classic', 'yes', '', '/', 'cmais.com.br');
+		setCookie('classic', 'yes', '', '/', '.cmais.com.br');
 	}
 	classicVersion = getCookie('classic');
 	//alert(classicVersion);
