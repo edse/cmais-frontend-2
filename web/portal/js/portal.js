@@ -501,14 +501,13 @@ function setExpiration(cookieLife)
  * e o cookie 'classic' (versão clássica) não exista
  */
 
-setCookie('classic', 'yes', 0, '/', '.cmais.com.br');
-document.cookie = 'ppkcookie1=testcookie; expires=Thu, 9 Aug 2012 21:47:11 UTC; path=/';
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
+/*
 if ((screen.width * screen.height) / 600 < 800)
 {
 	if (window.location.href.indexOf("?from=m") > 0)
 	{
-		setCookie('classic', 'yes', '', '/', '.cmais.com.br');
+		setCookie('classic', 'yes', 0, '/', '.cmais.com.br');
 	}
 	classicVersion = getCookie('classic');
 	//alert(classicVersion);
@@ -520,4 +519,17 @@ if ((screen.width * screen.height) / 600 < 800)
 		}
  	}
 }
+*/
 
+// verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
+if ((screen.width * screen.height) / 600 < 800)
+{
+	classicVersion = getCookie('classic');
+	if (classicVersion != "yes")
+	{
+		if ((window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
+		{
+			window.location="http://m.cmais.com.br";
+		}
+ 	}
+}
