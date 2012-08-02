@@ -72,7 +72,6 @@ ciências</a></li>
 								<li><a href="http://www.tvcultura.com.br/cocorico" title="Cocoric&oacute;">Cocoric&oacute;</a></li>
 								<li><a href="http://tvratimbum.cmais.com.br/baudehistorias" title="Ba&uacute; de Hist&oacute;rias">Ba&uacute; de Hist&oacute;rias</a></li>
 								<li><a href="http://tvratimbum.cmais.com.br/mundodalua" title="Mundo da Lua">Mundo da Lua</a></li>
-								<li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informação ao Cidadão">SiC</a></li>
 							</ul>
 						</div>
 						<div class="posicao">
