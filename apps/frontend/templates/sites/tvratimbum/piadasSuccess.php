@@ -85,11 +85,6 @@
                 $('.carrossel').jcarousel({
                   wrap: "both"
                 });
-                $('.carrossel-piada').jcarousel({
-                  wrap: "both",
-                  visible:1,
-                  scroll:1
-                });
                 
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato").show();
@@ -331,36 +326,27 @@
                 <?php endforeach; ?>
               </ul>
               
-              <script>
-                function pageCounter(target, operator, total)
-                {
-                  if (operator == 'increment')
-                  {
-                    page = parseInt($(target).text());
-                    if (page < total)
-                      page = page+1;
-                    else
-                      page = 1;
-                  }
-                  if (operator == 'decrement')
-                  {
-                    page = parseInt($(target).text());
-                    if (page > 1)
-                      page = page-1;
-                    else
-                      page = total;
-                  }
-                  //alert(page);
-                  $(target).html(page);
-                }
-              </script>
+	            <script>
+							$(function() {
+								function itemCounter(carousel, obejctli,liindex,listate){
+									$('#current_page').html(liindex)
+								};
+								
+								$('.carrossel-piada').jcarousel({
+									wrap: "both",
+									scroll:1,
+									animation: 200,
+									itemVisibleInCallback: itemCounter
+									//itemVisibleOutCallback: removehighlight		
+								});
+							});
+	            </script>
               <!--PAGINADOR-->
               <div id="paginador-tv-ra-tim-bum" align="center">
                 <span class="picote cima"></span>
-                <a href="javascript:;" class="btn anterior jcarousel-prev" id="btnPrev" title="piadas anteriores" onclick="javascript: pageCounter('#current_page','decrement',<?php echo count($displays['cantinho-das-piadas']) ?>)"></a>
-                <a href="javascript:;" class="btn proxima jcarousel-next" id="btnNext" title="próximas piadas" onclick="javascript: pageCounter('#current_page','increment',<?php echo count($displays['cantinho-das-piadas']) ?>)"></a>
-                
-                <p><span id="current_page"><?php if(count($displays['cantinho-das-piadas']) > 0): ?>1<?php endif; ?></span> de <?php echo count($displays['cantinho-das-piadas']) ?></p>
+                <a href="javascript:;" class="btn anterior jcarousel-prev" id="btnPrev" title="piadas anteriores"></a>
+                <a href="javascript:;" class="btn proxima jcarousel-next" id="btnNext" title="próximas piadas"></a>
+                <p><span id="current_page">1</span> de <?php echo count($displays['cantinho-das-piadas']) ?></p>
                 <span class="picote baixo"></span>
               </div>  
               <!--/PAGINADOR-->
