@@ -472,7 +472,7 @@ function printCookies(w)
 
 function setCookie (name,value,expires,path,domain,secure) {
 	document.cookie = name + "=" + escape (value) +
-    ((expires) ? "; expires=" + setExpiration(expires) : "") +
+    ((expires > 0) ? "; expires=" + setExpiration(expires) : "") +
     ((path) ? "; path=" + path : "") +
     ((domain) ? "; domain=" + domain : "") +
     ((secure) ? "; secure" : "");
@@ -483,7 +483,7 @@ function setExpiration(cookieLife)
 	if ('number' === typeof expires) {
 	  expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
 	}
-  return expires; 
+  return expires.toUTCString(); 
 }
 
 /*
