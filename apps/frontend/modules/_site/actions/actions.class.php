@@ -21,11 +21,14 @@ class _siteActions extends sfActions
       $this->site = $request->getParameter('object');
       
       if($this->site->slug == "reportereco"){
+      	/*
         if(!$request->getParameter('test')){
           header("Location: http://www2.tvcultura.com.br/reportereco");
           die();
         }
+				 */
       }
+			
       elseif($this->site->slug == "cocorico"){
         if(!$request->getParameter('test')){
           header("Location: http://www3.tvcultura.com.br/cocorico");
