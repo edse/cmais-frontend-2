@@ -471,7 +471,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /**** menu portal ****/
 #menu-portal { float:left; margin:15px 0 0 13px; width:686px; }
 #menu-portal li { float:left; width:auto; margin-right:3px; }
-#menu-portal li a { font:bold 14px; font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;  padding:5px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
+#menu-portal li a { font-weight:bold; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;  padding:5px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
 #menu-portal li a span { background:url(../images/ico-drop.png) no-repeat; width:16px; height:16px; position:absolute; right:5px; top:5px;  }
 #menu-portal li.ativo,
 #menu-portal li:hover{ background:#ff6633; }
@@ -656,7 +656,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #rodape-portal .box-rodape { width:1054px; padding-left:50px; margin:0 auto; height:470px; background:#333;  }
 #rodape-portal .box-rodape ul { margin-bottom:25px; }
 #rodape-portal .box-rodape li { text-align:left;  line-height:18px; }
-#rodape-portal .box-rodape .tit { font:bold 12px; color:#fff; font-family:Arial, Helvetica, sans-serif; }
+#rodape-portal .box-rodape .tit { font:bold;font-size: 12px; color:#fff; font-family:Arial, Helvetica, sans-serif; }
 #rodape-portal .box-rodape li a { font-size:11px; color:#fff; }
 #rodape-portal .col-esq { width:200px; float:left; margin-left:20px; margin-top:20px; }
 #rodape-portal .col-central { width:610px; float:left; margin-top:20px; }
