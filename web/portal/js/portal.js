@@ -483,7 +483,7 @@ function setExpiration(cookieLife)
 	if ('number' === typeof expires) {
 	  expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
 	}
-  return expires; 
+  return expires.toUTCString(); 
 }
 
 /*
