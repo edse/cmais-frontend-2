@@ -67,6 +67,21 @@ class _sectionActions extends sfActions
 				die();
 			}
 
+	    if($this->site->getSlug() == "rodaviva"){
+				if (date('w H:i') > "1 22:00" && date('w H:i') < "1 23:35") {
+					if ($this->section->getSlug() == "home") {
+						header("Location: http://tvcultura.cmais.com.br/rodaviva/transmissao");
+						die();
+					}	
+				}
+				else {
+					if ($this->section->getSlug() == "transmissao") {
+						header("Location: http://tvcultura.cmais.com.br/rodaviva");
+						die();
+					}	
+				}
+			}
+
     
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
         if($this->section->getSlug() == "diario-de-programacao" || $this->section->getSlug() == "home" || $this->section->getSlug() == "homepage" || $this->section->getSlug() == "programacao"){
