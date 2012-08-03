@@ -231,10 +231,10 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
           						<div class="ao-vivo">
           							<div id="aovivo"><img src="/portal/images/capaPrograma/rodaviva/img-transmissao-02.jpg" alt="Fique ligado!"></div>
           					   </div>
-          					   <script type="text/javascript">
+          					   <!--script type="text/javascript">
           					     timer1();
           					     timer2();
-          					   </script>
+          					   </script-->
           						<?php /* 
           						<div class="ao-vivo">
                                   <?php if(date('H:i:s') >= '22:00:00' and date('H:i:s') <= '23:35:00'): ?>
