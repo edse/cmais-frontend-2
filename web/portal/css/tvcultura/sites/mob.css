@@ -209,7 +209,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*NOTICIAS*/
 .noticias .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;padding: 4px 0 0px 0;margin-bottom: 5px;}
 .noticias ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
-.noticias ul li{list-style:none;}
+.noticias ul li{list-style:none;padding: 4px 0 4px 0;}
 .noticias ul li a{text-decoration:none !important; color:#333;} 
 .noticias ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
 .noticias ul li a .ui-grid-b:active{color:#ff855c !important}
