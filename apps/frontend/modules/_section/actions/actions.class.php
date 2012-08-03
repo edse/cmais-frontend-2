@@ -625,7 +625,7 @@ class _sectionActions extends sfActions
             }
           }
           else {
-          	if ($this->site->getSlug() == "reportereco") {
+          	if ($this->site->getSlug() == "reportereco" && $this->section->getSlug() == "videos") {
 							$relatedAssets = Doctrine_Query::create()
 								->select('ra.parent_asset_id')
 								->from('RelatedAsset ra, Asset a2, AssetVideo av')
