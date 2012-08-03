@@ -10,5 +10,6 @@
 .box-topo { margin-left:42px; }
 #barra-site .topo-programa { margin-left:42px; }
 .bg-site { background-position:bottom; }
-#barra-site .redes { float:right !important; width:auto !important;*float:right !important; }
+#barra-site .redes {  width:auto !important; }
+
 /* /topo site */
