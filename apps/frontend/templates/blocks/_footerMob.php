@@ -2,6 +2,8 @@
 	function setCookieAndRedirect(urlToRedirect) {
 		document.cookie = 'classic=yes; domain=cmais.com.br; path=/';
 		//setCookie('classic', 'yes', 0, '/', 'cmais.com.br', 'http://cmais.com.br');
+	if (window.location.href.indexOf("?teste") > 0)
+		alert(document.cookie);
 		classicVersion = getCookie('classic');
 		if (window.location.href.indexOf("?teste") > 0)
 			alert(document.cookie);
