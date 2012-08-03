@@ -470,32 +470,20 @@ function printCookies(w)
 	return cStr;
 }
 
-function setCookie(name, value, expires, path, domain, secure)
-{
-	document.cookie = name + "=" + escape(value) + "; ";
-	
-	if(expires > 0 && expires != ''){
-		expires = setExpiration(expires);
-		document.cookie += "expires=" + expires + "; ";
-	}
-	if(path){
-		document.cookie += "path=" + path + "; ";
-	}
-	if(domain){
-		document.cookie += "domain=" + domain + "; ";
-	}
-	if(secure){
-		document.cookie += "secure; ";
-	}
-	//if (window.location.href.indexOf("?teste") > 0)
-	//	alert(document.cookie);
+function setCookie (name,value,expires,path,domain,secure) {
+	document.cookie = name + "=" + escape (value) +
+    ((expires) ? "; expires=" + setExpiration(expires) : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
 }
 
 function setExpiration(cookieLife)
 {
-    var today = new Date();
-    var expr = new Date(today.getTime() + cookieLife * 24 * 60 * 60 * 1000);
-    return expr.toGMTString(); 
+	if ('number' === typeof expires) {
+	  expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
+	}
+  return expires; 
 }
 
 /*
