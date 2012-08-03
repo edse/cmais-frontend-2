@@ -365,11 +365,22 @@
                         </div>
                       </div>
                       -->
+                      <script>
+                      // Contador de Caracters
+                      function limitText (limitField, limitNum, textCounter)
+                      {
+                        if (limitField.value.length > limitNum)
+                          limitField.value = limitField.value.substring(0, limitNum);
+                        else
+                          $(textCounter).html(limitNum - limitField.value.length);
+                      }
+                      </script>
                       <div class="control-group">
                         <label for="f4_descricao"><h5>Descrição</h5></label>
                         <div class="controls">
-                          <textarea class="input-xlarge" id="f4_descricao" name="f4_descricao" rows="5"></textarea>
-                          <p class="help-block">Descreva sua solicitação informando quais tipos de documentos você tem interesse.</p>
+                          <textarea class="input-xlarge" id="f4_descricao" name="f4_descricao" rows="5" onKeyDown="limitText(this,500,'#textCounter');"></textarea>
+                          
+                          <p class="help-block"><span id="textCounter">500</span> caracteres restantes</br></br>Descreva sua solicitação informando quais tipos de documentos você tem interesse.</p>
                         </div>
                       </div>
         
