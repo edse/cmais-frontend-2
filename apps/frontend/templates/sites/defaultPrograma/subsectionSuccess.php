@@ -161,7 +161,7 @@ $(function(){
           <h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3>
           
           <?php if($section->getDescription() != ""): ?>
-          <h2 style="text-align: left; margin-bottom:15px;clear: both;"><?php echo $section->getDescription() ?></h2>
+          <h2 style="text-align: left; margin-bottom:15px;clear: both;"><?php echo html_entity_decode($section->getDescription()) ?></h2>
           <?php endif; ?>
 
         </div>
