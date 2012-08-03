@@ -474,7 +474,7 @@ function setCookie(name, value, expires, path, domain, secure)
 {
 	document.cookie = name + "=" + escape(value) + "; ";
 	
-	if(expires){
+	if(expires > 0 || expires != ''){
 		expires = setExpiration(expires);
 		document.cookie += "expires=" + expires + "; ";
 	}
