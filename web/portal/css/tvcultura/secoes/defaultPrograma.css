@@ -1,5 +1,5 @@
 /* topo site */
-.bg-site {height:100px; position:relative; top:3px!important;*top:-10px!important; z-index: 0; overflow:hidden; clear:both;}
+.bg-site {height:100px; position:relative; top:3px!important;*top:-1px!important; z-index: 0; overflow:hidden; clear:both;}
 /*#capa-site {margin-top:-52px !important;}*/
 #capa-site {margin-top:-96px !important;}
 #capa-site {*margin-top:-147px !important;}
