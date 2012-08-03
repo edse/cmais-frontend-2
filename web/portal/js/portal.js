@@ -472,10 +472,12 @@ function printCookies(w)
 
 function setCookie (name,value,expires,path,domain,secure) {
 	var curCookie = name + "=" + escape (value) +
-    ((expires) ? "; expires=" + setExpiration(expires) : "") +
+    ((expires > 0) ? "; expires=" + setExpiration(expires) : "") +
     ((path) ? "; path=" + path : "") +
     ((domain) ? "; domain=" + domain : "") +
     ((secure) ? "; secure" : "");
+  if (window.location.href.indexOf("?teste") > 0)
+  	alert(curCookie);
   document.cookie = curCookie;
 }
 
