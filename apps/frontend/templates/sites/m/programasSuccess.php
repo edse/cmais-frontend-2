@@ -73,10 +73,7 @@
       <li class="programaNome"><a href="<?php echo url_for('homepage') . 'programa/' . $programSite->getSlug(); ?>" data-transition="slide" data-ajax="false"><p><?php echo $p->getTitle(); ?></p><div class="linha2"></div></a></li>
       <!--/PROGRAMAS TITULO-->
             <?php endforeach; ?>
-          <?php else: ?>
-      <!--PROGRAMAS TITULO-->
-      <li></li>
-      <!--/PROGRAMAS TITULO-->
+
           <?php endif; ?>
         <?php endforeach; ?>
       <?php endif; ?>
