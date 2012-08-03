@@ -194,10 +194,6 @@ class ajaxActions extends sfActions
           die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
         }
 				
-        if($schedules[0]->program_id == 75){
-          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
-        }
-      	 
       	$block = false;
       	if($schedules[0]->getIsGeoblocked()){
       		require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
@@ -225,7 +221,9 @@ class ajaxActions extends sfActions
         
                
         if($schedules[0]->program_id == 75){
-          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
+        	if (date('w') != "5") { // se dia diferente de sexta, redireciona...
+	          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
+					}
         }
                
         if($schedules[0]->program_id == 547){
