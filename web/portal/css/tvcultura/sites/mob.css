@@ -120,7 +120,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
 .programa ul li a .ui-grid-a:active{color:#ff855c !important;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
 .programa .logo img{width:140px; height: 58px; padding: 10px 0;}
-.programa .textoPrograma{border-left: 1px solid #bebebe;text-align: left;height: 44px; font-size:0.7em;}
+.programa .textoPrograma{border-left: 1px solid #bebebe;text-align: left;height: 44px; font-size:0.9em;}
 .programa .textoPrograma p{margin:0; font-size:0.8em; padding-left:10px;}
 .programa .ui-collapsible-set {margin:0 !important;}
 .programa .video-item{margin:9px 0 20px 0 !important;}
@@ -207,9 +207,9 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*/GRADE COMPLETA*/
 
 /*NOTICIAS*/
-.noticias .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;padding:5px 0 0 0}
+.noticias .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;padding: 4px 0 0px 0;margin-bottom: 5px;}
 .noticias ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
-.noticias ul li{list-style:none;}
+.noticias ul li{list-style:none;padding: 4px 0 0 0; min-height: 16px;}
 .noticias ul li a{text-decoration:none !important; color:#333;} 
 .noticias ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
 .noticias ul li a .ui-grid-b:active{color:#ff855c !important}

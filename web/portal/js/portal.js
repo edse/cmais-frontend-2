@@ -470,56 +470,22 @@ function printCookies(w)
 	return cStr;
 }
 
-function setCookie(name, value, expires, path, domain, secure)
-{
-	document.cookie = name + "=" + escape(value) + "; ";
-	
-	if(expires > 0 || expires != ''){
-		expires = setExpiration(expires);
-		document.cookie += "expires=" + expires + "; ";
-	}
-	if(path){
-		document.cookie += "path=" + path + "; ";
-	}
-	if(domain){
-		document.cookie += "domain=" + domain + "; ";
-	}
-	if(secure){
-		document.cookie += "secure; ";
-	}
+function setCookie (name,value,expires,path,domain,secure) {
+	var curCookie = name + "=" + escape (value) +
+    ((expires > 0) ? "; expires=" + setExpiration(expires) : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
 }
 
 function setExpiration(cookieLife)
 {
-    var today = new Date();
-    var expr = new Date(today.getTime() + cookieLife * 24 * 60 * 60 * 1000);
-    return expr.toGMTString(); 
-}
-
-/*
- * redireciona caso a resolução seja menor que a do ipad (1024 x 768)
- * e o cookie 'classic' (versão clássica) não exista
- */
-
-// verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
-/*
-if ((screen.width * screen.height) / 600 < 800)
-{
-	if (window.location.href.indexOf("?from=m") > 0)
-	{
-		setCookie('classic', 'yes', 0, '/', '.cmais.com.br');
+	if ('number' === typeof expires) {
+	  expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
 	}
-	classicVersion = getCookie('classic');
-	//alert(classicVersion);
-	if (classicVersion != "yes")
-	{
-		if ((window.location.href.indexOf("cmais.com.br/transito") < 0) && (window.location.href.indexOf("fpa.com.br/sic") < 0) && (window.location.href.indexOf("m.cmais.com.br") < 0))
-		{
-			window.location="http://m.cmais.com.br";
-		}
- 	}
+  return expires.toUTCString(); 
 }
-*/
 
 // verifica se a resolução da tela é menor que 800 x 600 e se os sites não são: transito, sic ou cmais-mobile
 if ((screen.width * screen.height) / 600 < 800)
