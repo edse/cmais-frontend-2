@@ -193,6 +193,10 @@ class ajaxActions extends sfActions
         if($schedules[0]->program_id == 542){
           die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
         }
+				
+        if($schedules[0]->program_id == 75){
+          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
+        }
       	 
       	$block = false;
       	if($schedules[0]->getIsGeoblocked()){
