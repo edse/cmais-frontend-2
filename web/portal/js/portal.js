@@ -487,6 +487,8 @@ function setCookie(name, value, expires, path, domain, secure)
 	if(secure){
 		document.cookie += "secure; ";
 	}
+	//if (window.location.href.indexOf("?teste") > 0)
+	//	alert(document.cookie);
 }
 
 function setExpiration(cookieLife)
