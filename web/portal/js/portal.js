@@ -471,11 +471,12 @@ function printCookies(w)
 }
 
 function setCookie (name,value,expires,path,domain,secure) {
-	document.cookie = name + "=" + escape (value) +
+	var curCookie = name + "=" + escape (value) +
     ((expires) ? "; expires=" + setExpiration(expires) : "") +
     ((path) ? "; path=" + path : "") +
     ((domain) ? "; domain=" + domain : "") +
     ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
 }
 
 function setExpiration(cookieLife)
