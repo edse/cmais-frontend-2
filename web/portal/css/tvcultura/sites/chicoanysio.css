@@ -16,4 +16,6 @@
 .noticia .img-video { margin-top:0; }
 #barra-site .redes ul {display:none;}
 
+.topo-programa .tit-pagina{display:none;}
+#barra-site .redes{float:right !important;}
 /** /chicoanysio **/
