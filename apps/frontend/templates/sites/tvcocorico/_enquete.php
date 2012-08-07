@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
 <!-- /CSS BOOTSTRAP -->
 
+
 <div id="enqueteRapida" >
         
     <h2>ENQUETE COCÓRICO</h2>
@@ -55,31 +56,38 @@
      <br/><br/>
      
       <!--PORCENTAGEM 1--> 
-     <p>50% - <span>Resposta 1</span></p>
-     <div class="porcentagem">
-       <div class="progress progress-warning" style="margin-bottom: 9px;">
-          <div class="bar" style="width: 50%"></div>
+      <div class="resposta-1">
+         <p>50% - <span><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <div class="porcentagem">
+           <div class="progress progress-warning" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 50%"></div>
+           </div>
+         </div>
        </div>
-     </div>
      <!--/PORCENTAGEM 1-->
      
-     <!--PORCENTAGEM 2-->
-     <p>30%- <span>Resposta 2</span></p>
-     <div class="porcentagem">
-       <div class="progress progress-warning" style="margin-bottom: 9px;">
-          <div class="bar" style="width: 30%"></div>
-       </div>  
-     </div>
-     <!--/PORCENTAGEM 2-->
-     
-     <!--PORCENTAGEM 3-->
-     <p>20%- <span>Resposta 3</span></p>
-     <div class="porcentagem">
-       <div class="progress progress-warning" style="margin-bottom: 9px;">
-          <div class="bar" style="width: 20%"></div>
+      <!--PORCENTAGEM 2--> 
+      <div class="resposta-2">
+         <p>50% - <span><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <div class="porcentagem">
+           <div class="progress progress-warning" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 50%"></div>
+           </div>
+         </div>
        </div>
-     </div>
+     <!--/PORCENTAGEM 2-->
+      <!--PORCENTAGEM 3--> 
+      <div class="resposta-3">
+         <p>50% - <span><?php echo $respostas[3]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <div class="porcentagem">
+           <div class="progress progress-warning" style="margin-bottom: 9px;">
+              <div class="bar" style="width: 50%"></div>
+           </div>
+         </div>
+       </div>
      <!--/PORCENTAGEM 3-->
+     
+
    </div>    
 </div>
 
@@ -99,6 +107,30 @@ $(document).ready(function(){
   });
   
 });
+
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('#votar').hide();
+      $('#ajax-loader').show();
+
+    },
+    success: function(data){
+      var i=1;
+      $.each(data, function(key, val) {
+        $('.resposta-'+i+').html("<p>"+val.votes+"</p>");
+        i++;
+      });
+    $("#form-contato").hide();
+    $("#resultadoParcial").fadeIn("fast"); 
+     
+    }
+  });
+}
 </script>
 <!--/SCRIPT-->
 
