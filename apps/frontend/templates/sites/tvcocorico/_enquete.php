@@ -16,12 +16,12 @@
     <form id="form-contato" action="" method="post" >
       
       <!--PERGUNTA-->
-      <p>"Texto da pergunta da enquete do dia lorem ipsum sit dolor?"</p>
+      <p><? $respostas[0]->Asset->AssetQuestion->getQuestion() ?></p>
       <!--/PERGUNTA-->
 
       <!--RESPOSTA 1-->
       <input type="radio" name="resposta" id="resposta-" class="resposta" value="" checked="checked" />
-      <label for="resposta1" class="preto selected"><?php echo $a[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <label for="resposta1" class="preto selected"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
 
 
