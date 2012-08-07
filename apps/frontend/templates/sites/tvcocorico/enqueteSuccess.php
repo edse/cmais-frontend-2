@@ -4,6 +4,12 @@ $respostas = Doctrine_Query::create()
   ->from('AssetAnswer aa')
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
+
+$display = Doctrine_Query::create()
+  ->select('aa.*')
+  ->from('AssetAnswer aa')
+  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->question)
+  ->execute();
   
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
@@ -65,7 +71,7 @@ $respostas = Doctrine_Query::create()
       <!--/PROMOCAO-->
       
       <!--PROMOCAO-->  
-      <?php include_partial_from_folder('sites/tvcocorico', 'global/enquete', array('respostas' => $respostas)) ?>          
+      <?php include_partial_from_folder('sites/tvcocorico', 'global/enquete', array('respostas' => $respostas, 'display' => $display)) ?>          
       <!--/PROMOCAO-->
         
     </div>
