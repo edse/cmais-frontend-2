@@ -79,7 +79,10 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-728x90");
-     GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
     </script>
     <script type='text/javascript'>
     GA_googleFetchAds();

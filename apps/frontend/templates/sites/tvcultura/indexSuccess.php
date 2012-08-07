@@ -27,10 +27,10 @@
 
         <!-- publicidade -->
         <div class="box-publicidade pub-grd">
-          <!-- tvcultura-homepage-728x90 -->
-          <script type='text/javascript'>
-          GA_googleFillSlot("tvcultura-homepage-728x90");
-          </script>
+         <!-- home-geral728x90 -->
+		  <script type='text/javascript'>
+		  GA_googleFillSlot("home-geral728x90");
+		  </script>
         </div>
         <!-- /publicidade -->
          */ ?> 
@@ -121,10 +121,10 @@
 
               <!-- publicidade -->
               <div class="box-publicidade grid1">
-                <!-- tvcultura-homepage-300x250 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("tvcultura-homepage-300x250");
-                </script>
+                <!-- home-geral300x250 -->
+				<script type='text/javascript'>
+				GA_googleFillSlot("home-geral300x250");
+				</script>
               </div>
               <!-- /publicidade -->
 

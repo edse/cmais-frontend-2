@@ -105,10 +105,10 @@
               
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- cmais-homepage-300x250 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("cmais-homepage-300x250");
-                </script>
+                 <!-- home-geral300x250 -->
+				<script type='text/javascript'>
+				GA_googleFillSlot("home-geral300x250");
+				</script>
               </div>
               <!-- / BOX PUBLICIDADE -->
               
@@ -121,10 +121,10 @@
         	  
           	  <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- cmais-homepage-300x250-2 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("cmais-homepage-300x250-2");
-                </script>
+                <!-- home-geral2-300x250 -->
+				<script type='text/javascript'>
+				GA_googleFillSlot("home-geral2-300x250");
+				</script>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
