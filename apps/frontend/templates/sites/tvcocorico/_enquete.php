@@ -16,7 +16,7 @@
     <form id="form-contato" action="" method="post" >
       
       <!--PERGUNTA-->
-      <p><?php echo $display[0] ?></p>
+      <p><?php echo $q ?></p>
       <!--/PERGUNTA-->
       
 

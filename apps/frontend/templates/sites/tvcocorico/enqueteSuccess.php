@@ -5,7 +5,7 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
 
-  echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion()."teste"; ?>
+$q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion()."teste"; ?>
 
   
 ?>
@@ -68,7 +68,7 @@ $respostas = Doctrine_Query::create()
       <!--/PROMOCAO-->
       
       <!--PROMOCAO-->  
-      <?php include_partial_from_folder('sites/tvcocorico', 'global/enquete', array('respostas' => $respostas, 'display' => $display)) ?>          
+      <?php include_partial_from_folder('sites/tvcocorico', 'global/enquete', array('respostas' => $respostas, 'q' => $q)) ?>          
       <!--/PROMOCAO-->
         
     </div>
