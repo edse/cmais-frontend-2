@@ -5,7 +5,7 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
   
-  echo $displays["enquete"][0]->Asset->AssetQuestion->id
+  echo "teste>>>>>>>>>>>>>".$respostas
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
