@@ -1,8 +1,8 @@
 <?php
-  echo "teste1>>>>>>>>>>>>>".$respostas;
-  echo "teste2>>>>>>>>>>>>>".$respostas[0]->Asset->AssetAnswer->getAnswer();
-  echo "teste3>>>>>>>>>>>>>".$respostas[1]->Asset->AssetAnswer->getAnswer();
-  echo "teste4>>>>>>>>>>>>>".$respostas[2]->Asset->AssetAnswer->getAnswer();
+  echo "teste1>>>>>>>>>>>>>".$respostas."<br/>";
+  echo "teste2>>>>>>>>>>>>>".$respostas[1]->Asset->AssetAnswer->getAnswer()."<br/>";
+  echo "teste3>>>>>>>>>>>>>".$respostas[2]->Asset->AssetAnswer->getAnswer()."<br/>";
+  echo "teste4>>>>>>>>>>>>>".$respostas[3]->Asset->AssetAnswer->getAnswer()."<br/>";
 ?>
 <!--BOOTSTRAP-->
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
