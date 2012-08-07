@@ -16,7 +16,7 @@
     <form id="form-contato" action="" method="post" >
       
       <!--PERGUNTA-->
-      <p><?php echo $respostas[1]->Asset->AssetQuestion->getQuestion() ?></p>
+      <p><?php echo $respostas[0] ?></p>
       <!--/PERGUNTA-->
       
 
