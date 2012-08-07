@@ -5,7 +5,7 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
 
-echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
+  echo $displays["enquete"][0]->Asset->getDescription();
 
   
 ?>
