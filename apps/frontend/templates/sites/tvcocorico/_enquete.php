@@ -26,12 +26,12 @@
       
       <!--RESPOSTA 2-->
       <input type="radio" name="resposta" id="resposta-<?php echo $respostas[2]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>"/>
-      <label for="resposta1" class="preto selected"><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <label for="resposta1" class="preto"><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 2-->
       
       <!--RESPOSTA 3-->
       <input type="radio" name="resposta" id="resposta-<?php echo $respostas[3]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[3]->Asset->AssetAnswer->id ?>" />
-      <label for="resposta1" class="preto selected"><?php echo $respostas[3]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <label for="resposta1" class="preto"><?php echo $respostas[3]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 3-->
 
 
