@@ -1,16 +1,4 @@
-<?php 
-$respostas = Doctrine_Query::create()
-  ->select('aa.*')
-  ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->execute();
-  
-  echo "teste>>>>>>>>>>>>>".$respostas;
-  echo "teste>>>>>>>>>>>>>".$respostas[0]->Asset->AssetAnswer->getAnswer();
-  echo "teste>>>>>>>>>>>>>".$respostas[1]->Asset->AssetAnswer->getAnswer();
-  echo "teste>>>>>>>>>>>>>".$respostas[2]->Asset->AssetAnswer->getAnswer();
 
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
 
