@@ -6,9 +6,10 @@ $respostas = Doctrine_Query::create()
   ->execute();
   
   echo "teste>>>>>>>>>>>>>".$respostas;
-  echo "teste>>>>>>>>>>>>>".$respostas->AssetAswer[0];
-  echo "teste>>>>>>>>>>>>>".$respostas->AssetAswer[1];
-  echo "teste>>>>>>>>>>>>>".$respostas->AssetAswer[2];
+  echo "teste>>>>>>>>>>>>>".$respostas[0]->Asset->AssetAnswer->getAnswer();
+  echo "teste>>>>>>>>>>>>>".$respostas[1]->Asset->AssetAnswer->getAnswer();
+  echo "teste>>>>>>>>>>>>>".$respostas[2]->Asset->AssetAnswer->getAnswer();
+
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
