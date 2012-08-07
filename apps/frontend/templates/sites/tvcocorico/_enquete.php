@@ -1,9 +1,3 @@
-<?php
-  echo "teste1>>>>>>>>>>>>>".$respostas."<br/>";
-  echo "teste2>>>>>>>>>>>>>".$respostas[1]->Asset->AssetAnswer->getAnswer()."<br/>";
-  echo "teste3>>>>>>>>>>>>>".$respostas[2]->Asset->AssetAnswer->getAnswer()."<br/>";
-  echo "teste4>>>>>>>>>>>>>".$respostas[3]->Asset->AssetAnswer->getAnswer()."<br/>";
-?>
 <!--BOOTSTRAP-->
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
 <!--BOOTSTRAP-->
@@ -24,21 +18,13 @@
       <!--PERGUNTA-->
       <p>"Texto da pergunta da enquete do dia lorem ipsum sit dolor?"</p>
       <!--/PERGUNTA-->
-      
+      <?php foreach($respostas as $a):?>
       <!--RESPOSTA 1-->
-      <input type="radio" name="resposta" id="resposta-1" class="resposta" value="1" checked="checked" />
-      <label for="resposta1" class="preto selected">Resposta 1</label><br />
+      <input type="radio" name="resposta" id="resposta-<?php echo $a[1]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $a[1]->Asset->AssetAnswer->id ?>" checked="checked" />
+      <label for="resposta1" class="preto selected"><?php echo $a[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
-      
-      <!--RESPOSTA 2-->
-      <input type="radio" name="resposta" id="resposta-2" class="resposta" value="2" />
-      <label for="resposta2" class="preto">Resposta 2</label><br />
-      <!--/RESPOSTA 2-->
-      
-      <!--RESPOSTA 3-->
-      <input type="radio" name="resposta" id="resposta-3" class="resposta" value="3" />
-      <label for="resposta3" class="preto">Resposta 3</label><br />
-      <!--/RESPOSTA 3-->
+      <?php endforeach;?>
+
       
       <!--ENVIAR-->
         <div id="btn-nav" align="center">
