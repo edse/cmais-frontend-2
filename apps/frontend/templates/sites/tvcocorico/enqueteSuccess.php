@@ -5,11 +5,8 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
 
-$display = Doctrine_Query::create()
-  ->select('aa.*')
-  ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->question)
-  ->execute();
+echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
+
   
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
