@@ -19,7 +19,7 @@
       <p><?php echo $respostas[0]->Asset->getDescription() ?></p>
       <!--/PERGUNTA-->
       
-      <?php foreach($displays[0]->Asset->AssetQuestion->Answers as $a): ?>
+      <?php foreach($respostas[1]->Asset->AssetQuestion->Answers as $a): ?>
       <!--RESPOSTA 1-->
       <input type="radio" name="resposta" id="resposta-<?php echo $a->getId() ?>" class="resposta" value="<?php echo $a->getId() ?>" checked="checked" />
       <label for="resposta1" class="preto selected"><?php echo $a->getAnswer() ?></label><br />
