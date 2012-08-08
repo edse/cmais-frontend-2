@@ -144,10 +144,10 @@ function sendAnswer(){
       $('#ajax-loader').show();
     },
     success: function(data){
+      $(".form-contato").hide();
+        $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
       $.each(data, function(key, val) {
-        $(".form-contato").hide();
-        $("#resultadoParcial").fadeIn("fast"); 
         $('.resposta-'+i).html("<p>"+val.votes+"</p>");
         i++;
       });
