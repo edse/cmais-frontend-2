@@ -25,7 +25,6 @@
       
 
       <!--RESPOSTA 1-->
-      <?php echo $respostas[0]->Asset->getId()?>
       <input type="radio" name="resposta" id="resposta-<?php echo $respostas[0]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>" checked="checked" />
       <label for="resposta1" class="preto selected"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->

@@ -71,12 +71,12 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #enqueteRapida{float:left;margin:30px 0 30px 80px;text-align:left;}
 #enqueteRapida h2{font-size:24px; font-family:"Arial Rounded MT Bold",Arial, Helvetica, sans-serif; font-weight:bolder; color:#aa1718;}
 #enqueteRapida p{font-size:18px; font-weight: bolder; }
-#enqueteRapida #form-contato{margin: 10px; padding:0 0 0 30px; color:#333; height: 300px;}
-#enqueteRapida #form-contato p{ margin:0 0 40px 0; *margin:0 0 40px 0;}
-#enqueteRapida #form-contato label{font-size: 15px; font-family: Arial, Helvetica, sans-serif;line-height:10px;}
-#enqueteRapida #form-contato label.selected{font-weight:bolder;}
+#enqueteRapida .form-contato{margin: 10px; padding:0 0 0 30px; color:#333; height: 300px;}
+#enqueteRapida .form-contato p{ margin:0 0 40px 0; *margin:0 0 40px 0;}
+#enqueteRapida .form-contato label{font-size: 15px; font-family: Arial, Helvetica, sans-serif;line-height:10px;}
+#enqueteRapida .form-contato label.selected{font-weight:bolder;}
 
-#enqueteRapida #form-contato #votar{float:left; background:url("/portal/images/capaPrograma/cocoricoHome/btn-votar.png") no-repeat; width:87px; height:42px;border:none;margin: 11px 0 13px 9px;box-shadow: none;}
+#enqueteRapida .form-contato #votar{float:left; background:url("/portal/images/capaPrograma/cocoricoHome/btn-votar.png") no-repeat; width:87px; height:42px;border:none;margin: 11px 0 13px 9px;box-shadow: none;}
 #enqueteRapida #resultadoParcial{padding:0 0 50px 30px;float: left;}
 #enqueteRapida #resultadoParcial span{font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight:normal;}
 
