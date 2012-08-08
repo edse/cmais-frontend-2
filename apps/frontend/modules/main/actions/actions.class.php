@@ -248,6 +248,12 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
+    
+    if($request->getParameter('debug') != ""){
+      echo "<br>param1) ".$param1;
+      echo "<br>param2) ".$param2;
+      echo "<br>param3) ".$param3;
+    }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
@@ -260,9 +266,6 @@ class mainActions extends sfActions
       //$param1 = $param2;
       //$param2 = $param3;
       //$param3 = null;
-      //echo "<br>".$param1;
-      //echo "<br>".$param2;
-      //echo "<br>".$param3;
       //die('123');
     }
 
