@@ -273,8 +273,11 @@ class mainActions extends sfActions
     if($parm1Object){
       if($request->getParameter('debug') != "")
         print "<br>main: 1>>".$param1." - ".get_class($parm1Object).">>".$parm1Object->id;
-      if(!$param2)
+      if(!$param2){
+        if($request->getParameter('debug') != "")
+          print "<br>forwardObject >>".$param1;
         $this->forwardObject($parm1Object);
+      }
       else{
         $parm2Object = $this->parseWithObject($param2, $parm1Object);
         if($parm2Object){
