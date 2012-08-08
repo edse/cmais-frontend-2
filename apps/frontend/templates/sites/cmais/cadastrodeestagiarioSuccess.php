@@ -140,6 +140,35 @@
                
                 <h3>Documentação</h3><br/>
                 
+                <div class="linha t7">
+                  <label>rg</label>
+                  <input type="text" name="rg" id="rg" class="required" />
+                </div>
+                
+                <div class="linha t7">
+                  <label>cpf</label>
+                  <input type="text" name="cpf" id="cpf" class="required" />
+                </div>
+                <div class="linha t7">
+                  <label>titulo de eleitor</label>
+                  <input type="text" name="titulo_de_eleitor" id="titulo_de_eleitor" class="required" />
+                </div>
+                <div class="linha t2">
+                  <label>zona</label>
+                  <input type="text" name="zona" id="zona" class="required" />
+                </div>
+                <div class="linha t4">
+                  <label>seção</label>
+                  <input type="text" name="seção" id="seção" class="required" />
+                </div>
+                <div class="linha t7">
+                  <label>município</label>
+                  <input type="text" name="municipio" id="municipio" class="required" />
+                </div>
+                
+                <h3>Formação</h3><br/>
+                
+                
                 <div class="linha t3">
                   <label>curso</label>
                   <input type="text" name="curso" id="curso" class="required" />
