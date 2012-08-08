@@ -248,6 +248,10 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
+    elseif(($param1 == "mosaicos")||($param2 == "mosaicos")){
+      header("Location: http://tvcultura.cmais.com.br/mosaicos");
+      die();
+    }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
