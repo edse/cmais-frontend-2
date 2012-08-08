@@ -101,11 +101,6 @@ $(document).ready(function(){
     $(this).next("label").addClass("selected");
   });
   
-  $("#votar").click(function(){
-    $("#form-contato").hide();
-    $("#resultadoParcial").fadeIn("fast"); 
-  });
-  
 });
 
 function sendAnswer(){
@@ -117,7 +112,6 @@ function sendAnswer(){
     beforeSend: function(){
       $('#votar').hide();
       $('#ajax-loader').show();
-
     },
     success: function(data){
       var i=1;
