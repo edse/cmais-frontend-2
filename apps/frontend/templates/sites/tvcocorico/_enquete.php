@@ -25,17 +25,17 @@
       
 
       <!--RESPOSTA 1-->
-      <input type="radio" name="opcao" id="opcao1" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"  />
+      <input type="radio" name="opcao" id="opcao1" class="resposta required" value="<?php echo $respostas[0]->Asset->AssetAnswer->id ?>"  />
       <label for="resposta1" class="preto"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
       
       <!--RESPOSTA 2-->
-      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>"/>
+      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"/>
       <label for="resposta1" class="preto"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 2-->
       
       <!--RESPOSTA 3-->
-      <input type="radio" name="opcao" id="opcao3" class="resposta required" value="<?php echo $respostas[3]->Asset->AssetAnswer->id ?>" />
+      <input type="radio" name="opcao" id="opcao3" class="resposta required" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>" />
       <label for="resposta1" class="preto"><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 3-->
 
@@ -145,7 +145,7 @@ function sendAnswer(){
     },
     success: function(data){
       $(".form-contato").hide();
-        $("#resultadoParcial").fadeIn("fast"); 
+      $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
       $.each(data, function(key, val) {
         $('.resposta-'+i).html("<p>"+val.votes+"</p>");
