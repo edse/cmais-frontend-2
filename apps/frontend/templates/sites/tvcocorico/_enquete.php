@@ -123,7 +123,7 @@ $(document).ready(function(){
         },
     success: function(data){
         $('input#votar').removeAttr('disabled');
-        window.location.href="javasctipt:;";
+        window.location.href="#";
         if(data == "1"){
             sendAnswer();
           }
