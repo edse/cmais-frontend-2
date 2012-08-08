@@ -106,7 +106,8 @@ $(document).ready(function(){
   //deixa resposta selecionada em negrito
   $('.resposta').click(function() {
     $("label").removeClass("selected");
-    $($(this) + " label.preto").addClass("selected");
+    $(this).next("label").addClass("selected");
+    $(this).next().next().addClass("selected");
   });
   
   //valida form
