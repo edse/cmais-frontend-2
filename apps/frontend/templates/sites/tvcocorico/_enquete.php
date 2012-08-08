@@ -111,25 +111,9 @@ $(document).ready(function(){
   });
   
   //valida form
-  /*
   var validator = $('.form-contato').validate({
     submitHandler: function(form){
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        data: $(".form-contato").serialize(),
-        beforeSend: function(){
-          $('input#votar').hide();
-          $('img#ajax-loader').show();
-        },
-    success: function(data){
-        $('input#votar').removeAttr('disabled');
-        window.location.href="#";
-        if(data == "1"){
-            sendAnswer();
-          }
-        }
-      });         
+      sendAnswer()
     },
     rules:{
         opcao:{
@@ -144,7 +128,7 @@ $(document).ready(function(){
         label.html("&nbsp;").addClass("checked");
       }
     });
-    */
+    
   
 });
 
