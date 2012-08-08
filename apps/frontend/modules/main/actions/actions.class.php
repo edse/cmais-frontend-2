@@ -248,11 +248,9 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
-    
-    if($request->getParameter('debug') != ""){
-      echo "<br>param1) ".$param1;
-      echo "<br>param2) ".$param2;
-      echo "<br>param3) ".$param3;
+    elseif(($param1 == "cmais")&&($param2 == "mosaicos")){
+      header("Location: http://tvcultura.cmais.com.br/mosaicos");
+      die();
     }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
@@ -269,14 +267,25 @@ class mainActions extends sfActions
       //die('123');
     }
 
+    if($request->getParameter('debug') != ""){
+      echo "<br>param1) ".$param1;
+      echo "<br>param2) ".$param2;
+      echo "<br>param3) ".$param3;
+    }
+
     $parm1Object = $this->parse($param1);
     if($parm1Object){
       if($request->getParameter('debug') != "")
-        print "<br>main: 1>>".$param1." - ".get_class($parm1Object).">>".$parm1Object->id;
-      if(!$param2)
+        print "<br>1main: 1>>".$param1." - ".get_class($parm1Object).">>".$parm1Object->id.">>>".$param2;
+      if($param2 == ""){
+        if($request->getParameter('debug') != "")
+          print "<br>forwardObject >>".$param1;
         $this->forwardObject($parm1Object);
+      }
       else{
         $parm2Object = $this->parseWithObject($param2, $parm1Object);
+        if($request->getParameter('debug') != "")
+          print "<br>parseWithObject >>".$param2." - ".$param1;
         if($parm2Object){
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
@@ -480,6 +489,7 @@ class mainActions extends sfActions
         ->select('s.*')
         ->from('Site s')
         ->where('s.slug = ?', (string)$string)
+        ->andWhere('s.is_active = 1')
         ->orderby('s.id desc')
         ->fetchOne();
       if($this->site){
