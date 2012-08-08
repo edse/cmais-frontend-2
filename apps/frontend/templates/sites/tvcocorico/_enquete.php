@@ -106,9 +106,11 @@ $(document).ready(function(){
   //deixa resposta selecionada em negrito
   $('.resposta').click(function() {
     $("label").removeClass("selected");
-    $(this).next("label.preto").addClass("selected");
+    $(this).next("label").addClass("selected");
+    $(this).next().next().addClass("selected");
   });
   
+  //valida form
   var validator = $('.form-contato').validate({
     submitHandler: function(form){
       $.ajax({
@@ -120,14 +122,10 @@ $(document).ready(function(){
           $('img#ajax-loader').show();
         },
     success: function(data){
-      $('input#enviar').removeAttr('disabled');
-          window.location.href="#";
-          if(data == "1"){
-            $(".form-contato").hide();
-            $("#resultadoParcial").fadeIn("fast"); 
-          }
-          else {
-
+        $('input#votar').removeAttr('disabled');
+        window.location.href="#";
+        if(data == "1"){
+            sendAnswer();
           }
         }
       });         
@@ -162,6 +160,8 @@ function sendAnswer(){
     success: function(data){
       var i=1;
       $.each(data, function(key, val) {
+        $(".form-contato").hide();
+        $("#resultadoParcial").fadeIn("fast"); 
         $('.resposta-'+i).html("<p>"+val.votes+"</p>");
         i++;
       });
