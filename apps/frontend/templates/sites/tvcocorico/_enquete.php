@@ -148,7 +148,7 @@ function sendAnswer(){
       $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
       $.each(data, function(key, val) {
-        $('.resposta-'+i).html("<p>"+val.votes+"</p>");
+        $('.resposta-'+i).html("<p>"+ Math.round (val.votes) +"</p>");
         i++;
       });
      
