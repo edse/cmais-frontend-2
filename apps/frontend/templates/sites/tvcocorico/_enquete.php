@@ -25,17 +25,17 @@
       
 
       <!--RESPOSTA 1-->
-      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"  />
+      <input type="radio" name="opcao" id="opcao1" class="resposta required" value="<?php echo $respostas[0]->Asset->AssetAnswer->id ?>"  />
       <label for="resposta1" class="preto"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
       
       <!--RESPOSTA 2-->
-      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>"/>
+      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"/>
       <label for="resposta1" class="preto"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 2-->
       
       <!--RESPOSTA 3-->
-      <input type="radio" name="opcao" id="opcao3" class="resposta required" value="<?php echo $respostas[3]->Asset->AssetAnswer->id ?>" />
+      <input type="radio" name="opcao" id="opcao3" class="resposta required" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>" />
       <label for="resposta1" class="preto"><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 3-->
 
@@ -113,22 +113,7 @@ $(document).ready(function(){
   //valida form
   var validator = $('.form-contato').validate({
     submitHandler: function(form){
-      $.ajax({
-        type: "POST",
-        dataType: "text",
-        data: $(".form-contato").serialize(),
-        beforeSend: function(){
-          $('input#votar').hide();
-          $('img#ajax-loader').show();
-        },
-    success: function(data){
-        $('input#votar').removeAttr('disabled');
-        window.location.href="#";
-        if(data == "1"){
-            sendAnswer();
-          }
-        }
-      });         
+      sendAnswer()
     },
     rules:{
         opcao:{
@@ -143,6 +128,7 @@ $(document).ready(function(){
         label.html("&nbsp;").addClass("checked");
       }
     });
+    
   
 });
 
@@ -158,11 +144,11 @@ function sendAnswer(){
       $('#ajax-loader').show();
     },
     success: function(data){
+      $(".form-contato").hide();
+      $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
       $.each(data, function(key, val) {
-        $(".form-contato").hide();
-        $("#resultadoParcial").fadeIn("fast"); 
-        $('.resposta-'+i).html("<p>"+val.votes+"</p>");
+        $('.resposta-'+i).html("<p>"+val.votes) +"</p>");
         i++;
       });
      
