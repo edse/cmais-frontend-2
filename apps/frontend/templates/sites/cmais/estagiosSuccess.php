@@ -1,4 +1,4 @@
-  <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
   <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
   
@@ -15,7 +15,7 @@
   <div id="capa-site">
 
     <!-- BARRA SITE -->
-    <div id="barra-site">
+    <!-- <div id="barra-site">
       <div class="topo-programa">
         <?php if(isset($program) && $program->id > 0): ?>
         <h2>
@@ -37,14 +37,15 @@
 
         <?php if(isset($program) && $program->id > 0): ?>
         <!-- horario -->
-        <div id="horario">
+        <!--div id="horario">
           <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-        </div>
+        </div-->
         <!-- /horario -->
         <?php endif; ?>
-      </div>
+      <!--  
+      <div>
 
-      <!-- box-topo -->
+      <!-- box-topo >
       <div class="box-topo grid3">
 
         <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
@@ -58,9 +59,9 @@
         <?php endif; ?>
     
       </div>
-      <!-- /box-topo -->
+      <!-- /box-topo >
       
-    </div>
+    </div> -->
     
     <!-- /BARRA SITE -->
 
