@@ -248,7 +248,7 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
-    elseif(($param1 == "mosaicos")||($param2 == "mosaicos")){
+    elseif(($param1 == "cmais")&&($param2 == "mosaicos")){
       header("Location: http://tvcultura.cmais.com.br/mosaicos");
       die();
     }
