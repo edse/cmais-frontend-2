@@ -57,7 +57,7 @@
      
       <!--PORCENTAGEM 1--> 
       <div class="resposta-1">
-         <p>50% - <span><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <p>50% - <span><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></span></p>
          <div class="porcentagem">
            <div class="progress progress-warning" style="margin-bottom: 9px;">
               <div class="bar" style="width: 50%"></div>
@@ -68,7 +68,7 @@
      
       <!--PORCENTAGEM 2--> 
       <div class="resposta-2">
-         <p>50% - <span><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <p>50% - <span><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></span></p>
          <div class="porcentagem">
            <div class="progress progress-warning" style="margin-bottom: 9px;">
               <div class="bar" style="width: 50%"></div>
@@ -78,7 +78,7 @@
      <!--/PORCENTAGEM 2-->
       <!--PORCENTAGEM 3--> 
       <div class="resposta-3">
-         <p>50% - <span><?php echo $respostas[3]->Asset->AssetAnswer->getAnswer() ?></span></p>
+         <p>50% - <span><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></span></p>
          <div class="porcentagem">
            <div class="progress progress-warning" style="margin-bottom: 9px;">
               <div class="bar" style="width: 50%"></div>
