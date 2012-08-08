@@ -8,20 +8,24 @@
 <link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
 <!-- /CSS BOOTSTRAP -->
 
-
+<!--ENQUETE RAPIDA-->
 <div id="enqueteRapida" >
         
     <h2>ENQUETE COCÓRICO</h2>
     
     <!--FORMULARIO-->
-    <form id="form-contato" action="" method="post" >
-      
+    <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-contato">
+    <?php 
+    $form = new BaseForm();
+    echo $form->renderHiddenFields();
+    ?>
       <!--PERGUNTA-->
       <p><?php echo $q ?></p>
       <!--/PERGUNTA-->
       
 
       <!--RESPOSTA 1-->
+      <?php echo $respostas[0]->Asset->getId()?>
       <input type="radio" name="resposta" id="resposta-<?php echo $respostas[0]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>" checked="checked" />
       <label for="resposta1" class="preto selected"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
@@ -39,15 +43,16 @@
 
       
       <!--ENVIAR-->
-        <div id="btn-nav" align="center">
-          <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
-          <input type="submit" name="votar" id="votar" class="btn-votar" value=""/>
-        </div>
-        <!--/ENVIAR-->
+      <div id="btn-nav" align="center">
+        <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+        <input type="submit" name="votar" id="votar" class="btn-votar" value=""/>
+      </div>
+      <!--/ENVIAR-->
    
    </form>  
    <!--/FORMULARIO--> 
    
+   <!--RESULTADO PARCIAL-->
    <div id="resultadoParcial" style="display:none;">
      <!--PERGUNTA-->
       <p>"Texto da pergunta da enquete do dia lorem ipsum sit dolor?"</p>
@@ -88,8 +93,11 @@
      <!--/PORCENTAGEM 3-->
      
 
-   </div>    
+   </div>  
+   <!--RESULTADO PARCIAL-->
+     
 </div>
+<!--ENQUETE RAPIDA-->
 
 <!--SCRIPT-->
 <script>
