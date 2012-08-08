@@ -485,6 +485,7 @@ class mainActions extends sfActions
         ->select('s.*')
         ->from('Site s')
         ->where('s.slug = ?', (string)$string)
+        ->andWhere('s.is_active = 1')
         ->orderby('s.id desc')
         ->fetchOne();
       if($this->site){
