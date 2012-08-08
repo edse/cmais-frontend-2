@@ -261,9 +261,9 @@ class mainActions extends sfActions
       //$param2 = $param3;
       //$param3 = null;
       if($request->getParameter('debug') != ""){
-        echo "<br>".$param1;
-        echo "<br>".$param2;
-        echo "<br>".$param3;
+        echo "<br>param1) ".$param1;
+        echo "<br>param2) ".$param2;
+        echo "<br>param3) ".$param3;
       }
       //die('123');
     }
