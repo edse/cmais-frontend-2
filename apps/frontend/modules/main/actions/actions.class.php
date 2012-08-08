@@ -248,10 +248,6 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
-    elseif(($param1 == "cmais")&&($param2 == "mosaicos")){
-      header("Location: http://tvcultura.cmais.com.br/mosaicos");
-      die();
-    }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
@@ -277,7 +273,7 @@ class mainActions extends sfActions
     if($parm1Object){
       if($request->getParameter('debug') != "")
         print "<br>1main: 1>>".$param1." - ".get_class($parm1Object).">>".$parm1Object->id.">>>".$param2;
-      if($param2 == ""){
+      if(!$param2){
         if($request->getParameter('debug') != "")
           print "<br>forwardObject >>".$param1;
         $this->forwardObject($parm1Object);
@@ -404,7 +400,16 @@ class mainActions extends sfActions
               ->fetchOne();
             if($this->site){
               if(($this->site->type != "Hotsite")&&($this->site->type != "Portal")){
-                $programa = Doctrine::getTable('Program')->findOneBySlug($this->site->slug);
+
+                $programa = Doctrine_Query::create()
+                  ->select('p.*')
+                  ->from('Program p')
+                  ->where('p.slug = ?', (string)$this->site->slug)
+                  ->andWhere('p.is_active = 1')
+                  ->orderby('p.id desc')
+                  ->fetchOne();
+
+                //$programa = Doctrine::getTable('Program')->findOneBySlug($this->site->slug);
                 if(!$programa){
                   $programa = Doctrine_Query::create()
                     ->select('p.*')
