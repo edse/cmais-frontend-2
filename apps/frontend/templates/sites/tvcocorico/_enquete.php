@@ -147,8 +147,8 @@ function sendAnswer(){
       $(".form-contato").hide();
       $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
-      $.each(data, function(key, val) {
-        $('.resposta-'+i).html("<p>"+ parseInt(Math.round (val.votes)) +"</p>");
+      $.each(data, function(key, Math.round (val)) {
+        $('.resposta-'+i).html("<p>"+ val.votes +"</p>");
         i++;
       });
      
