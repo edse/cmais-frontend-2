@@ -115,7 +115,7 @@ $(document).ready(function(){
     submitHandler: function(form){
       $.ajax({
         type: "POST",
-        dataType: "text",
+        dataType: "json",
         data: $(".form-contato").serialize(),
         beforeSend: function(){
           $('input#votar').hide();
@@ -123,7 +123,7 @@ $(document).ready(function(){
         },
     success: function(data){
         $('input#votar').removeAttr('disabled');
-        window.location.href="#";
+        window.location.href="javasctipt:;";
         if(data == "1"){
             sendAnswer();
           }
