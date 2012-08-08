@@ -280,6 +280,8 @@ class mainActions extends sfActions
       }
       else{
         $parm2Object = $this->parseWithObject($param2, $parm1Object);
+        if($request->getParameter('debug') != "")
+          print "<br>parseWithObject >>".$param2." - ".$param1;
         if($parm2Object){
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
