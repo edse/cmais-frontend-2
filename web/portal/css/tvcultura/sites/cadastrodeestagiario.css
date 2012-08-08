@@ -1,0 +1,20 @@
+.contato form .t5 input {width: 23px;margin-top: -4px; float: left; }
+
+.contato form .t7 { width:193px; }
+.contato form .t7 label,
+.contato form .t7 input { width:180px; }
+
+.contato form .t8 { width:250px; }
+.contato form .t8 label,
+.contato form .t8 input { width:244px; }
+
+h3{clear:both;}
+
+#capa-site{margin: -30px  auto !important;}
+
+.op1{float: left; margin:0 4px;}
+.op2{float: left; margin:-12px 4px 0 0;}
+.tem_parente{float: left; margin:0 4px;}
+#tem_parente_na_cultura_sim{height: 20px !important;margin: 0 14px 0 -1px;}
+#tem_parente_na_cultura_nao{height:20px !important;margin: -13px 0 20px -1px;}
+.contato form textarea {height:100px;}

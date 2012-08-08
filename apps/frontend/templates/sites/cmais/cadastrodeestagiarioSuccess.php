@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-  <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+  <link rel="stylesheet" href="/portal/css/tvcultura/sites/cadastrodeestagiario.css" type="text/css" />
   
 
   <?php use_helper('I18N', 'Date') ?>
@@ -14,56 +14,7 @@
   <!-- CAPA SITE -->
   <div id="capa-site">
 
-    <!-- BARRA SITE -->
-    <!-- <div id="barra-site">
-      <div class="topo-programa">
-        <?php if(isset($program) && $program->id > 0): ?>
-        <h2>
-          <a href="<?php echo $program->retriveUrl() ?>">
-            <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-          </a>
-        </h2>
-        <?php elseif(isset($site) && $site->id > 0): ?>
-        <h2>
-          <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
-          </a>
-        </h2>
-        <?php endif; ?>
-
-        <?php if(isset($program) && $program->id > 0): ?>
-        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-        <?php endif; ?>
-
-        <?php if(isset($program) && $program->id > 0): ?>
-        <!-- horario -->
-        <!--div id="horario">
-          <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-        </div-->
-        <!-- /horario -->
-        <?php endif; ?>
-      <!--  
-      <div>
-
-      <!-- box-topo >
-      <div class="box-topo grid3">
-
-        <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-        
-        <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-        <div class="navegacao txt-10">
-          <a href="../" title="Home">Home</a>
-          <span>&gt;</span>
-          <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-        </div>
-        <?php endif; ?>
     
-      </div>
-      <!-- /box-topo >
-      
-    </div> -->
-    
-    <!-- /BARRA SITE -->
 
     <!-- MIOLO -->
     <div id="miolo">
@@ -100,21 +51,29 @@
                   <hr />
                 </div>
               <form id="form-contato" method="post" action="">
-                <div class="linha t1">
+                <div class="linha t3">
                   <label>nome</label>
-                  <input type="text" name="nome" id="nome" />
+                  <input type="text" name="nome" id="nome" class="required" />
+                </div>
+                <div class="linha t1">
+                  <label>endereço</label>
+                  <input type="text" name="endereco" id="endereco" class="required"/>
                 </div>
                 <div class="linha t2">
-                  <label>idade</label>
-                  <input type="text" maxlength="2" name="idade" id="idade" />
+                  <label>número</label>
+                  <input type="text" name="numero" id="numero" class="required"/>
                 </div>
-                <div class="linha t3">
-                  <label>email</label>
-                  <input type="text" name="email" id="email" />
+                <div class="linha t7">
+                  <label>bairro</label>
+                  <input type="text" name="bairro" id="bairro" class="required"/>
                 </div>
-                <div class="linha t1">
+                <div class="linha t7">
+                  <label>cep</label>
+                  <input type="text" name="cep" id="cep" class="required"/>
+                </div>
+                <div class="linha t7">
                   <label>cidade</label>
-                  <input type="text" name="cidade" id="cidade" />
+                  <input type="text" name="cidade" id="cidade" class="required"/>
                 </div>
                 <div class="linha t2">
                   <label>estado</label>
@@ -150,154 +109,215 @@
                     <option value="Tocantins">TO</option>
                 </select>
                 </div>
-                <div class="linha t6">
-                  <label>assunto</label>
-                  <br />
-                  <select style="width:150px;" id="assunto" name="assunto" class="required">
-                    <option value="">- Selecione -</option>
-                    <option value="Elogio">Elogio</option>
-                    <option value="Crítica">Crítica</option>
-                    <option value="Comentário">Comentário</option>
-                    <option value="Sugestão">Sugestão</option>
-                    <option value="Compra de DVD">Compra de DVD</option>
-                  </select>
+                <div class="linha t7">
+                  <label>telefone</label>
+                  <input type="text" name="telefone" id="telefone" class="required"/>
+                </div>
+                <div class="linha t7">
+                  <label>celular</label>
+                  <input type="text" name="celular" id="celular" class="required"/>
+                </div>
+                <div class="linha t8">
+                  <label>data de nascimento</label>
+                  <input type="text" name="nascimento" id="nascimento" class="required"/>
                 </div>
                 <div class="linha t3">
-                  <label>mensagem</label>
-                  <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
-                  <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
+                  <label>nome da mãe</label>
+                  <input type="text" name="nome_mae" id="nome_mae" class="required"/>
                 </div>
-                <div class="linha t3 codigo" id="captchaimage">
-                  <label for="captcha">Confirma&ccedil;&atilde;o</label>
-                  <br />
-                  <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                    <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
-                  </a>
-                  <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
-                  <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                  <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
-                  <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                <div class="linha t4">
+                  <label>e-mail</label>
+                  <input type="text" name="email" id="email" />
                 </div>
-              </form>
+                <div class="linha ">
+                  <label>tem parentes na TV Cultura?</label><br/>
+                  <label for="opcao1" class="op1">sim</label>
+                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_sim" class="tem_parente required" value="sim" /><br/>
+                  <label for="opcao2" class="op2">não</label>
+                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_nao" class="tem_parente" value="não" />
+                  
+                </div>
+               
+                <h3>Documentação</h3><br/>
+                
+                <div class="linha t3">
+                  <label>curso</label>
+                  <input type="text" name="curso" id="curso" class="required" />
+                </div>
+                <div class="linha t3">
+                  <label>instituição de ensino: </label>
+                  <input type="text" name="instituto_de_ensino" id="instituto_de_ensino" class="required"/>
+                </div>
+                 <div class="linha t7">
+                  <label>ano/semestre</label>
+                  <input type="text" name="ano_semestre" id="ano_semestre" class="required"/>
+                </div>
+                 <div class="linha t7">
+                  <label>horário</label>
+                  <input type="text" name="horario" id="horario" class="required"/>
+                </div>
+                 <div class="linha t8">
+                  <label>previsao de formatura</label>
+                  <input type="text" name="formatura" id="formatura" class="required"/>
+                </div>
+                <div class="linha t3">
+                  <label>cursos complementares</label>
+                  <textarea name="cursos_complementares" id="cursos_complementares" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
+                  <p class="txt-10"><span id="textCounter">400</span> caracteres restantes</p>                                       
+                </div>
+                
+                <h3>Experiência profissional ou em estágios</h3><br/> 
+                
+                <div class="linha t1">
+                  <label>empresa</label>
+                  <input type="text" name="empresa" id="empresa" />
+                </div>
+                <div class="linha t1">
+                  <label>período</label>
+                  <input type="text" name="periodo" id="periodo" />
+                </div>
+                <div class="linha t3">
+                  <label>funções / atividades desenvolvidas</label>
+                  <textarea name="atividades_desenvolvidas" id="atividades_desenvolvidas" onKeyDown="limitText(this,500,'#textCounter1');"></textarea>
+                  <p class="txt-10"><span id="textCounter1">500</span> caracteres restantes</p>                                       
+                </div>
+                
+                
+                <div class="linha t1">
+                  <label>empresa</label>
+                  <input type="text" name="empresa2" id="empresa2" />
+                </div>
+                <div class="linha t1">
+                  <label>período</label>
+                  <input type="text" name="periodo2" id="periodo2" />
+                </div>
+                <div class="linha t3">
+                  <label>funções / atividades desenvolvidas</label>
+                  <textarea name="atividades_desenvolvidas2" id="atividades_desenvolvidas2" onKeyDown="limitText(this,500,'#textCounter1');"></textarea>
+                  <p class="txt-10"><span id="textCounter1">500</span> caracteres restantes</p>                                       
+                </div>
+                
+                
+         
+                
+
+                <div class="linha t5">
+                  <span class="declaracao">Garanto a veracidade das informações acima prestadas:</span> 
+                  <input class="check" type="checkbox" name="garantia" id="garantia" />
+                  
+                </div>
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <label for="captcha">Confirma&ccedil;&atilde;o</label>
+                    <br />
+                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                      <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                    </a>
+                    <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
+                    <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
+                </form>
+              </div>
             </div>
+            <!-- /ESQUERDA -->
+            
+            <!-- DIREITA -->
+            <div id="direita" class="grid1">
+              <!-- BOX PUBLICIDADE -->
+              <div class="box-publicidade grid1">
+                <!-- programas-assets-300x250 -->
+                <script type='text/javascript'>
+                GA_googleFillSlot("programas-assets-300x250");
+                </script>
+              </div>
+              <!-- / BOX PUBLICIDADE -->
+            </div>
+            <!-- /DIREITA -->
+            
           </div>
-          <!-- /ESQUERDA -->
+          <!-- /CAPA -->
           
-          <!-- DIREITA -->
-          <div id="direita" class="grid1">
-            <!-- BOX PUBLICIDADE -->
-            <div class="box-publicidade grid1">
-              <!-- programas-assets-300x250 -->
-              <script type='text/javascript'>
-              GA_googleFillSlot("programas-assets-300x250");
-              </script>
-            </div>
-            <!-- / BOX PUBLICIDADE -->
-          </div>
-          <!-- /DIREITA -->
+          <?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
           
         </div>
-        <!-- /CAPA -->
-        
-        <?php if (isset($displays["rodape-interno"])): ?>
-        <!--APOIO-->
-        <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
-        <!--/APOIO-->
-        <?php endif; ?>
+        <!-- /CONTEUDO PAGINA -->
         
       </div>
-      <!-- /CONTEUDO PAGINA -->
-      
+      <!-- /MIOLO -->
+  
     </div>
-    <!-- /MIOLO -->
-
-  </div>
-  <!-- / CAPA SITE -->
-
-  <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('input#enviar').click(function(){
-        $(".msgAcerto, .msgErro").hide();
-      });
-      
-      var validator = $('#form-contato').validate({
-        submitHandler: function(form){
-          $.ajax({
-            type: "POST",
-            dataType: "text",
-            data: $("#form-contato").serialize(),
-            beforeSend: function(){
-              $('input#enviar').attr('disabled','disabled');
-              $(".msgAcerto").hide();
-              $(".msgErro").hide();
-              $('img#ajax-loader').show();
-            },
-            success: function(data){
-            $('input#enviar').removeAttr('disabled');
-              window.location.href="#";
-              if(data == "1"){
-                $("#form-contato").clearForm();
-                $(".msgAcerto").show();
-                $('img#ajax-loader').hide();
-              }
-              else {
-                $(".msgErro").show();
-                $('img#ajax-loader').hide();
-              }
-            }
-          });         
-        },
-        rules:{
-          nome:{
-            required: true,
-            minlength: 2
-          },
-          email:{
-            required: true,
-            email: true
-          },
-          cidade:{
-            required: true,
-            minlength: 3
-          },
-          estado:{
-            required: true,
-            minlength: 2
-          },
-          assunto:{
-            required: true
-          },
-          mensagem:{
-            required: true
-          },
-          captcha: {
-            required: true,
-            remote: "/portal/js/validate/demo/captcha/process.php"
-          }
-        },
-        messages:{
-          nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-          email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-          cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-          estado: "Este campo &eacute; Obrigat&oacute;rio.",
-          assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-          mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-          captcha: "Digite corretamente o código que está ao lado."
-        },
-        success: function(label){
-          // set &nbsp; as text for IE
-          label.html("&nbsp;").addClass("checked");
-        }
-      });
-    });
+    <!-- / CAPA SITE -->
+  
+    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('input#enviar').click(function(){
+          $(".msgAcerto, .msgErro").hide();
+        });
         
-    // Contador de Caracters
-    function limitText (limitField, limitNum, textCounter)
-    {
-      if (limitField.value.length > limitNum)
-        limitField.value = limitField.value.substring(0, limitNum);
-      else
-        $(textCounter).html(limitNum - limitField.value.length);
-    }
-  </script>
+        var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+              $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+              }
+            });         
+          },
+          rules:{
+            email:{
+                required: true,
+                email: true
+            },
+            garantia:{
+              required: true
+            },
+        
+            captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
+          },
+          messages:{
+            
+            captcha: "Digite corretamente o código que está ao lado."
+          },
+          success: function(label){
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
+          }
+        });
+      });
+          
+      // Contador de Caracters
+      function limitText (limitField, limitNum, textCounter)
+      {
+        if (limitField.value.length > limitNum)
+          limitField.value = limitField.value.substring(0, limitNum);
+        else
+          $(textCounter).html(limitNum - limitField.value.length);
+      }
+    </script>
