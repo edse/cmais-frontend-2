@@ -25,7 +25,7 @@
       
 
       <!--RESPOSTA 1-->
-      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"  />
+      <input type="radio" name="opcao" id="opcao1" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"  />
       <label for="resposta1" class="preto"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
       
@@ -111,6 +111,7 @@ $(document).ready(function(){
   });
   
   //valida form
+  /*
   var validator = $('.form-contato').validate({
     submitHandler: function(form){
       $.ajax({
@@ -143,6 +144,7 @@ $(document).ready(function(){
         label.html("&nbsp;").addClass("checked");
       }
     });
+    */
   
 });
 
