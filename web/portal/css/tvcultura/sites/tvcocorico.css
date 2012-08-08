@@ -68,7 +68,7 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #form-contato label.error {background-color: #F5E8CC !important;}
 
 #enqueteRapida input[type="radio"] {margin: -1px 10px !important;float:left;}
-#enqueteRapida{float:left;margin:30px 0 30px 80px;text-align:left;}
+#enqueteRapida{float:left;margin:30px 0 30px 80px;text-align:left;} 
 #enqueteRapida h2{font-size:24px; font-family:"Arial Rounded MT Bold",Arial, Helvetica, sans-serif; font-weight:bolder; color:#aa1718;}
 #enqueteRapida p{font-size:18px; font-weight: bolder; }
 #enqueteRapida .form-contato{margin: 10px; padding:0 0 0 30px; color:#333; height: 300px;}

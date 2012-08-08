@@ -25,8 +25,8 @@
       
 
       <!--RESPOSTA 1-->
-      <input type="radio" name="resposta" id="resposta-<?php echo $respostas[0]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>" checked="checked" />
-      <label for="resposta1" class="preto selected"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <input type="radio" name="resposta" id="resposta-<?php echo $respostas[0]->Asset->AssetAnswer->id ?>" class="resposta" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"  />
+      <label for="resposta1" class="preto"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA 1-->
       
       <!--RESPOSTA 2-->
@@ -99,6 +99,7 @@
 <!--ENQUETE RAPIDA-->
 
 <!--SCRIPT-->
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
   
@@ -108,8 +109,54 @@ $(document).ready(function(){
     $(this).next("label").addClass("selected");
   });
   
+  var validator = $('.form-contato').validate({
+    submitHandler: function(form){
+      $.ajax({
+        type: "POST",
+        dataType: "text",
+        data: $(".form-contato").serialize(),
+        beforeSend: function(){
+          $('input#votar').hide();
+          $('img#ajax-loader').show();
+        },
+    success: function(data){
+      $('input#enviar').removeAttr('disabled');
+          window.location.href="#";
+          if(data == "1"){
+            $(".form-contato").hide();
+            $("#resultadoParcial").fadeIn("fast"); 
+          }
+          else {
+
+          }
+        }
+      });         
+    },
+    rules:{
+        opcao1:{
+          required: true
+        },
+        opcao2:{
+          required: true
+        },
+        opcao3:{
+          required: true
+        }
+      },
+      messages:{
+        opcao1: "Escolha uma opção.",
+        opcao2: "Escolha uma opção.",
+        opcao3: "Escolha uma opção.",
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
+      }
+    });
+  
 });
 
+//enviar voto
 function sendAnswer(){
   $.ajax({
     type: "POST",
@@ -126,11 +173,10 @@ function sendAnswer(){
         $('.resposta-'+i).html("<p>"+val.votes+"</p>");
         i++;
       });
-    $("#form-contato").hide();
-    $("#resultadoParcial").fadeIn("fast"); 
      
     }
   });
+  
 }
 </script>
 <!--/SCRIPT-->
