@@ -124,7 +124,7 @@
               <div class="box-publicidade grid1">
                 <!-- cmais-aovivo-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-aovivo-300x250");
+                GA_googleFillSlot("cmais-assets-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
@@ -143,7 +143,7 @@
           <div class="box-publicidade pub-grd grid3">
             <!-- cmais-aovivo-728x90 -->
             <script type='text/javascript'>
-            GA_googleFillSlot("cmais-aovivo-728x90");
+            GA_googleFillSlot("cmais-assets-728x90");
             </script>
           </div>
           <!-- /publicidade -->
