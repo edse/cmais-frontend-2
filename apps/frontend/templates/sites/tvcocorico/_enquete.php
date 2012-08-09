@@ -144,12 +144,12 @@ function sendAnswer(){
       $("#resultadoParcial").fadeIn("fast");
 
       <?php 
-       echo "var r = new Array();";
+       echo "var r = new Array();</br>";
       for($i=0; $i<count($respostas); $i++){
-        echo "r[".($i + 1)."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
+        echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";<br/>";
       } 
       ?> 
-      var i=0;
+      var i=1;
       $.each(data, function(key, val) {
         $('.resposta-'+i).html("<p>"+val.votes+" - <span>"+r[i]+"</span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
         i++;
