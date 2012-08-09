@@ -149,7 +149,7 @@ function sendAnswer(){
         echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
       } 
       ?> 
-      var i=1;
+      var i=0;
       $.each(data, function(key, val) {
         $('.resposta-'+i).html("<p>"+val.votes+" - <span>"+r[i]+"</span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
         i++;
