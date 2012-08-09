@@ -23,23 +23,16 @@
       <p>"<?php echo $q ?>"</p>
       <!--/PERGUNTA-->
       
-
-      <!--RESPOSTA 1-->
-      <input type="radio" name="opcao" id="opcao1" class="resposta required" value="<?php echo $respostas[0]->Asset->AssetAnswer->id ?>"  />
-      <label for="resposta1" class="preto"><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></label><br />
-      <!--/RESPOSTA 1-->
-      
-      <!--RESPOSTA 2-->
-      <input type="radio" name="opcao" id="opcao2" class="resposta required" value="<?php echo $respostas[1]->Asset->AssetAnswer->id ?>"/>
-      <label for="resposta1" class="preto"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></label><br />
-      <!--/RESPOSTA 2-->
-      
-      <!--RESPOSTA 3-->
-      <input type="radio" name="opcao" id="opcao3" class="resposta required" value="<?php echo $respostas[2]->Asset->AssetAnswer->id ?>" />
-      <label for="resposta1" class="preto"><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></label><br />
-      <!--/RESPOSTA 3-->
-
-
+    <?php
+    for($i=0; $i++; $i<count($respostas)){
+      ?>
+      <!--RESPOSTA -->
+      <input type="radio" name="opcao" id="opcao<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
+      <label for="resposta1" class="preto"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <!--/RESPOSTA -->
+      <?php
+    }
+    ?>
       
       <!--ENVIAR-->
       <div id="btn-nav" align="center">
@@ -58,39 +51,24 @@
       <!--/PERGUNTA-->
      <span>Seu voto foi realizado com sucesso! Confira abaixo o resultado parcial da enquete:</span>
      <br/><br/>
-     
-      <!--PORCENTAGEM 1--> 
-      <div class="resposta-1">
-         <p>50% - <span><?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></span></p>
+
+
+    <?php
+    for($i=0; $i++; $i<count($respostas)){
+      ?>
+      <!--PORCENTAGEM --> 
+      <div class="resposta-<?php echo $i?>">
+         <p>50% - <span><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></span></p>
          <div class="porcentagem">
            <div class="progress progress-warning" style="margin-bottom: 9px;">
               <div class="bar" style="width: 50%"></div>
            </div>
          </div>
        </div>
-     <!--/PORCENTAGEM 1-->
-     
-      <!--PORCENTAGEM 2--> 
-      <div class="resposta-2">
-         <p>50% - <span><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer() ?></span></p>
-         <div class="porcentagem">
-           <div class="progress progress-warning" style="margin-bottom: 9px;">
-              <div class="bar" style="width: 50%"></div>
-           </div>
-         </div>
-       </div>
-     <!--/PORCENTAGEM 2-->
-      <!--PORCENTAGEM 3--> 
-      <div class="resposta-3">
-         <p>50% - <span><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></span></p>
-         <div class="porcentagem">
-           <div class="progress progress-warning" style="margin-bottom: 9px;">
-              <div class="bar" style="width: 50%"></div>
-           </div>
-         </div>
-       </div>
-     <!--/PORCENTAGEM 3-->
-     
+     <!--/PORCENTAGEM -->
+      <?php
+    }
+    ?>
 
    </div>  
    <!--RESULTADO PARCIAL-->
@@ -142,16 +120,9 @@ function sendAnswer(){
     success: function(data){
       $(".form-contato").hide();
       $("#resultadoParcial").fadeIn("fast");
-
-      <?php 
-       echo "var r = new Array();";
-      for($i=0; $i<count($respostas); $i++){
-        echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
-      } 
-      ?> 
       var i=0;
       $.each(data, function(key, val) {
-        $('.resposta-'+i).html("<p>"+val.votes+" - <span>"+r[i]+"</span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
+        $('.resposta-'+i).html("<p>"+val.votes+" - <span>"+val.answer+"</span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
         i++;
       });
      
@@ -161,20 +132,3 @@ function sendAnswer(){
 }
 </script>
 <!--/SCRIPT-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
