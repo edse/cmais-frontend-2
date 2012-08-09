@@ -24,7 +24,7 @@
       <!--/PERGUNTA-->
       
     <?php
-    for($i=0; $i++; $i<count($respostas)){
+    for($i=0; $i<count($respostas); $i++){
       ?>
       <!--RESPOSTA -->
       <input type="radio" name="opcao" id="opcao<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
@@ -54,7 +54,7 @@
 
 
     <?php
-    for($i=0; $i++; $i<count($respostas)){
+    for($i=0; $i<count($respostas); $i++){
       ?>
       <!--PORCENTAGEM --> 
       <div class="resposta-<?php echo $i?>">
