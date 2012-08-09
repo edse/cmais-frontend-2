@@ -122,10 +122,6 @@ $(document).ready(function(){
       },
       messages:{
         opcao: "Escolha uma opção."
-      },
-      success: function(label){
-        // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
       }
     });
     
