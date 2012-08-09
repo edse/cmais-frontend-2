@@ -141,12 +141,16 @@ function sendAnswer(){
     },
     success: function(data){
       $(".form-contato").hide();
-      $("#resultadoParcial").fadeIn("fast"); 
-      var i=1;
-      
+      $("#resultadoParcial").fadeIn("fast");
+
+      <?php 
+      for($i=0; $i<count($respostas); $i++){
+        echo "var r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
+      } 
+      ?> 
+      var i=0;
       $.each(data, function(key, val) {
-        
-        $('.resposta-'+i).html("<p>"+val.votes+" - <span><?php $i=0; echo $respostas[$i]->Asset->AssetAnswer->getAnswer(); $i++; ?></span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
+        $('.resposta-'+i).html("<p>"+val.votes+" - <span>"+r[i]+"</span></p><div class='porcentagem'><div class='progress progress-warning' style='margin-bottom: 9px;'><div class='bar' style='width:"+val.votes+" '></div></div></div>");
         i++;
       });
      
