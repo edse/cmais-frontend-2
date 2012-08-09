@@ -7,10 +7,9 @@ $respostas = Doctrine_Query::create()
   
 echo ">>>>>>>".count($respostas);
 
-$q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion(); ?>
-
-  
+$q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
 ?>
+
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
 
