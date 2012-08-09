@@ -20,7 +20,7 @@
     echo $form->renderHiddenFields();
     ?>
       <!--PERGUNTA-->
-      <p><?php echo $q ?></p>
+      <p>"<?php echo $q ?>"</p>
       <!--/PERGUNTA-->
       
 
@@ -54,7 +54,7 @@
    <!--RESULTADO PARCIAL-->
    <div id="resultadoParcial" style="display:none;">
      <!--PERGUNTA-->
-      <p>"Texto da pergunta da enquete do dia lorem ipsum sit dolor?"</p>
+      <p>"<?php echo $q ?>"</p>
       <!--/PERGUNTA-->
      <span>Seu voto foi realizado com sucesso! Confira abaixo o resultado parcial da enquete:</span>
      <br/><br/>
