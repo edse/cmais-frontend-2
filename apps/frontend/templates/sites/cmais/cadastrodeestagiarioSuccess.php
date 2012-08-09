@@ -255,7 +255,7 @@
             <div id="direita" class="grid1">
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- programas-assets-300x250 -->
+                <!-- home-geral300x250 -->
                 <script type='text/javascript'>
                 GA_googleFillSlot("home-geral300x250");
                 </script>
