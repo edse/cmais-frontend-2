@@ -13,8 +13,18 @@ h3{clear:both;}
 #capa-site{margin: -30px  auto !important;}
 
 .op1{float: left; margin:0 4px;}
-.op2{float: left; margin:-12px 4px 0 0;}
+/*.op2{float: left; margin:-12px 4px 0 0;}*/
 .tem_parente{float: left; margin:0 4px;}
 #tem_parente_na_cultura_sim{height: 20px !important;margin: 0 14px 0 -1px;}
-#tem_parente_na_cultura_nao{height:20px !important;margin: -13px 0 20px -1px;}
+#tem_parente_na_cultura_nao{height:20px !important;}
 .contato form textarea {height:100px;}
+
+.parentes { width:310px; }
+.parentes .dados label { clear:both; display: block; width:44px; }
+.parentes input,
+.parentes label { float:left; }
+.parentes .dados input  { width:262px; }
+
+.dados label.error{width:100%;}
+.parentes{position:relative;}
+.parentes #tem_parente_na_cultura_sim .error{position:absolute;top:0;left:0;} 
