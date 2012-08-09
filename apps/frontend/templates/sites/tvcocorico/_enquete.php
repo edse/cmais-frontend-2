@@ -146,7 +146,7 @@ function sendAnswer(){
       <?php 
        echo "var r = new Array();";
       for($i=0; $i<count($respostas); $i++){
-        echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
+        echo "r[".($i + 1)."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
       } 
       ?> 
       var i=0;
