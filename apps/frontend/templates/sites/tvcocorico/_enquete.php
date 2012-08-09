@@ -143,8 +143,14 @@ function sendAnswer(){
       $(".form-contato").hide();
       $("#resultadoParcial").fadeIn("fast"); 
       var i=1;
+      
       $.each(data, function(key, val) {
-        $('.resposta-'+i).html("<p>"+val.votes +"</p>");
+        $('.resposta-'+i).html("<p>"+val.votes+" - <span><?php echo $respostas[2]->Asset->AssetAnswer->getAnswer() ?></span></p>"
+                               +"<div class='porcentagem'>"
+                               +" <div class='progress progress-warning' style='margin-bottom: 9px;'>"
+                               +"   <div class='bar' style='width:"+val.votes+"'></div>
+                               +" </div>"
+                               +"</div>");
         i++;
       });
      
