@@ -178,7 +178,7 @@ $(window).load(function() {
               <div class="box-publicidade grid1">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("programas-assets-300x250");
+                GA_googleFillSlot("culturafm-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
@@ -211,7 +211,7 @@ $(window).load(function() {
           <div class="box-publicidade pub-grd grid3">
             <!-- programas-assets-728x90 -->
             <script type='text/javascript'>
-            GA_googleFillSlot("programas-assets-728x90");
+            GA_googleFillSlot("culturafm-728x90");
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
