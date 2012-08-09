@@ -129,13 +129,20 @@
                   <label>e-mail</label>
                   <input type="text" name="email" id="email" />
                 </div>
-                <div class="linha ">
-                  <label>tem parentes na TV Cultura?</label><br/>
+                <div class="linha parentes">
+                  <label>tem parentes na TV Cultura?</label>
                   <label for="opcao1" class="op1">sim</label>
-                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_sim" class="tem_parente required" value="sim" /><br/>
+                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_sim" class="tem_parente required" value="sim" />
                   <label for="opcao2" class="op2">não</label>
                   <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_nao" class="tem_parente" value="não" />
-                  
+                  <hr />
+                  <div class="dados">
+                  <label for="nome_parente">Nome</label>
+                  <input type="text" name="nome_parente" id="nome_parente" />
+                  <hr/>
+                  <label for="area_parente">Área</label>
+                  <input type="text" name="area_parente" id="area_parente" />
+                  </div>
                 </div>
                
                 <h3>Documentação</h3><br/>
@@ -168,13 +175,12 @@
                 
                 <h3>Formação</h3><br/>
                 
-                
                 <div class="linha t3">
                   <label>curso</label>
                   <input type="text" name="curso" id="curso" class="required" />
                 </div>
                 <div class="linha t3">
-                  <label>instituição de ensino: </label>
+                  <label>instituição de ensino</label>
                   <input type="text" name="instituto_de_ensino" id="instituto_de_ensino" class="required"/>
                 </div>
                  <div class="linha t7">
@@ -255,7 +261,7 @@
             <div id="direita" class="grid1">
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- home-geral300x250 -->
+                <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
                 GA_googleFillSlot("home-geral300x250");
                 </script>
@@ -317,12 +323,95 @@
             });         
           },
           rules:{
+            nome:{
+              required: true,
+              minlength: 2
+            },
             email:{
+              required: true,
+              email: true
+            },
+            endereco:{
+              required: true,
+              minlength: 2
+            },
+            bairro:{
+              required: true,
+              minlength: 2
+            },
+            cep:{
+              required: true,
+              minlength: 2
+            },
+            cidade:{
+              required: true,
+              minlength: 2
+            },
+            telefone:{
+              required: true,
+              minlength: 2
+            },
+            celular:{
+              required: true,
+              minlength: 2
+            },
+            nascimento:{
+              required: true,
+              minlength: 10
+            },
+            nome_mae:{
+              required: true,
+              minlength: 2
+            },
+            
+            nome_parente:{
+              required: true,
+              minlength: 2
+            },
+            area_parente:{
                 required: true,
-                email: true
+                minlength: 2
             },
             garantia:{
               required: true
+            },
+            
+            curso:{
+                required: true,
+                minlength: 2
+            },
+            instituto_de_ensino:{
+                required: true,
+                minlength: 2
+            },
+            ano_semestre:{
+                required: true,
+                minlength: 2
+            },
+            horario:{
+                required: true,
+                minlength: 2
+            },
+            formatura:{
+                required: true,
+                minlength: 2
+            },
+            
+            rg:{
+                required: true,
+                minlength: 2
+            },
+            cpf:{
+                required: true,
+                minlength: 2
+            },
+            titulo_de_eleitor:{
+                required: true,
+                minlength: 2
+            },
+            zona:{
+                required: true,
+                minlength: 2
             },
         
             captcha: {
@@ -331,6 +420,29 @@
             }
           },
           messages:{
+            nome:"Digite um nome válido",
+            endereco:"Digite um endereço válido",
+            bairro:"Digite um bairro válido",
+            cep:"Digite um cep válido",
+            cidade:"Digite um cidade válida",
+            telefone:"Digite um tefone válido",
+            celular:"Digite um celular válido",
+            nascimento:"Digite a data corretamente(dd/mm/aaaa)",
+            nome_mae:"Digite um nome válido",
+            nome_parente:"Digite um nome válido",
+            area_parente:"Digite uma área válida",
+            
+            rg:"Digite uma rg válido",
+            cpf:"Digite uma cpf válido",
+            titulo_de_eleitor:"Digite um título válido",
+            zona:"Digite uma zona válida",
+            
+            curso:"Digite um curso válido",
+            instituto_de_ensino:"Digite uma instituição válida",
+            ano_semestre:"Digite um ano válido",
+            horario:"Digite uma hora válida",
+            formatura:"Digite uma data válida",
+            
             
             captcha: "Digite corretamente o código que está ao lado."
           },
