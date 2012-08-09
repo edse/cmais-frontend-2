@@ -132,16 +132,16 @@
                 <div class="linha parentes">
                   <label>tem parentes na TV Cultura?</label>
                   <label for="opcao1" class="op1">sim</label>
-                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_sim" class="tem_parente required" value="sim" />
+                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_sim" class="tem_parente " value="sim" />
                   <label for="opcao2" class="op2">não</label>
-                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_nao" class="tem_parente" value="não" />
+                  <input type="radio" name="tem_parente_na_cultura" id="tem_parente_na_cultura_nao" class="tem_parente required" value="não" checked="checked"/>
                   <hr />
                   <div class="dados">
                   <label for="nome_parente">Nome</label>
-                  <input type="text" name="nome_parente" id="nome_parente" />
+                  <input type="text" name="nome_parente" id="nome_parente" disabled="disabled" />
                   <hr/>
                   <label for="area_parente">Área</label>
-                  <input type="text" name="area_parente" id="area_parente" />
+                  <input type="text" name="area_parente" id="area_parente" disabled="disabled"/>
                   </div>
                 </div>
                
@@ -452,7 +452,15 @@
           }
         });
       });
-          
+      //desabilitando campo
+      $("#tem_parente_na_cultura_sim").click(function(){
+        $("#nome_parente, #area_parente").removeAttr("disabled");
+        $(".dados label.error, .dados label.error").show();
+      });
+      $("#tem_parente_na_cultura_nao").click(function(){
+        $("#nome_parente, #area_parente").attr("disabled","disabled");
+        $(".dados label.error, .dados label.error").hide();
+      });    
       // Contador de Caracters
       function limitText (limitField, limitNum, textCounter)
       {
