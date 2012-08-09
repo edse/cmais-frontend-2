@@ -144,9 +144,9 @@ function sendAnswer(){
       $("#resultadoParcial").fadeIn("fast");
 
       <?php 
-       echo "var r = new Array();</br>";
+       echo "var r = new Array();";
       for($i=0; $i<count($respostas); $i++){
-        echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";<br/>";
+        echo "r[".$i."] = \"".$respostas[$i]->Asset->AssetAnswer->getAnswer()."\";";
       } 
       ?> 
       var i=1;
