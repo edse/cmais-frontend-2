@@ -28,7 +28,7 @@
       ?>
       <!--RESPOSTA -->
       <input type="radio" name="opcao" id="opcao<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
-      <label for="resposta1" class="preto"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label><br />
+      <label for="resposta<?php echo $i?>" class="preto"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA -->
       <?php
     }
