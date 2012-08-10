@@ -2,7 +2,7 @@
 $respostas = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->id)
+  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion)
   ->execute();
   
 $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
