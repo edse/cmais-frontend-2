@@ -292,7 +292,7 @@ if (isset($pager)) {
 								<div class="box-publicidade grid1">
 									<!-- programas-assets-300x250 -->
 									<script type='text/javascript'>
-										GA_googleFillSlot("programas-assets-300x250");
+										GA_googleFillSlot("cmais-assets-300x250");
 
 									</script>
 									<?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) ?>

@@ -114,7 +114,7 @@
               <div class="box-publicidade grid1">
                 <!-- metropolis-homepage-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("metropolis-homepage-300x250");
+                GA_googleFillSlot("cmais-assets-300x250");
                 </script>
               </div>
               <!-- /BOX PUBLICIDADE -->

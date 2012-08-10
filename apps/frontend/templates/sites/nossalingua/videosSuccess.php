@@ -131,7 +131,7 @@ $(function(){
               <div class="box-publicidade grid1">
                 <!-- nossalingua-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("nossalingua-assets-300x250");
+                GA_googleFillSlot("multicultura-300x250");
                 </script>
               </div>
               <!-- /BOX PUBLICIDADE -->
@@ -164,7 +164,7 @@ $(function(){
           <div class="box-publicidade pub-grd grid3">
             <!-- nossalingua-assets-728x90 -->
             <script type='text/javascript'>
-            GA_googleFillSlot("nossalingua-assets-728x90");
+            GA_googleFillSlot("multicultura-728x90");
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
