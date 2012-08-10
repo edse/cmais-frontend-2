@@ -233,7 +233,7 @@
           <div class="box-publicidade pub-grd grid3" style="margin-top: 15px;">
           	<!-- provocacoes-728x90 -->
 			<script type='text/javascript'>
-			GA_googleFillSlot("provocacoes-728x90");
+			GA_googleFillSlot("cmais-assets-728x90");
 			</script>         
         
           </div>

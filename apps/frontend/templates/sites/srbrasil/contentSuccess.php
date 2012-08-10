@@ -151,7 +151,7 @@
               <div class="box-publicidade grid1">
                 <!-- srbrasil-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("srbrasil-assets-300x250");
+                GA_googleFillSlot("home-geral300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->

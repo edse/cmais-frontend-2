@@ -331,7 +331,7 @@
 						<div class="publicidade">
                           <!-- tvcultura-homepage-300x250 -->
                           <script type='text/javascript'>
-                            GA_googleFillSlot("tvcultura-homepage-300x250");
+                            GA_googleFillSlot("cmais-assets-300x250");
                           </script>
           				</div>
           				
