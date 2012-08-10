@@ -5,8 +5,6 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
   
-echo ">>>>>>>".count($respostas);
-
 $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
 ?>
 

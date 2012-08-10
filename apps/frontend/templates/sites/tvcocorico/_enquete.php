@@ -27,7 +27,7 @@
     for($i=0; $i<count($respostas); $i++){
       ?>
       <!--RESPOSTA -->
-      <input type="radio" name="opcao" id="opcao<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
+      <input type="radio" name="opcao" id="resposta<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
       <label for="resposta<?php echo $i?>" class="preto"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label><br />
       <!--/RESPOSTA -->
       <?php
