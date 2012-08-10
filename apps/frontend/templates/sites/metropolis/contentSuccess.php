@@ -96,7 +96,7 @@
           			  <div class="publicidade">
           			    <!-- tvcultura-homepage-300x250 -->
           			    <script type='text/javascript'>
-          			      GA_googleFillSlot("tvcultura-homepage-300x250");
+          			      GA_googleFillSlot("cmais-assets-300x250");
           			    </script>
           			     <!-- BOX FACEBOOK -->
 			              <div class="box-padrao facebook" style="width:300px; margin:0 0 20px 0; float:left;">

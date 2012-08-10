@@ -155,7 +155,7 @@
               <div class="box-publicidade grid1">
                 <!-- nossalingua-homepage-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("nossalingua-homepage-300x250");
+                GA_googleFillSlot("multicultura-300x250");
                 </script>
               </div>
               <!-- /BOX PUBLICIDADE -->
