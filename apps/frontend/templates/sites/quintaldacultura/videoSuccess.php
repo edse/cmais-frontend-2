@@ -103,7 +103,7 @@
         $assets = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa, AssetVideo av')
-          ->where('sa.section_id = ?', (int)$s->getId())
+          ->where('sa.section_id = ?', (int)$section->getId())
           ->andWhere('sa.asset_id = a.id')
           ->andWhere('av.asset_id = a.id')
           ->andWhere('a.is_active = ?', 1)
