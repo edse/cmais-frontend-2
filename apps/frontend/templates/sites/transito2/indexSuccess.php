@@ -167,7 +167,7 @@
               <div class="box-publicidade grid1">
                 <!-- cmais-homepage-300x250-2 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-homepage-300x250-2");
+                GA_googleFillSlot("cmais-assets-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->

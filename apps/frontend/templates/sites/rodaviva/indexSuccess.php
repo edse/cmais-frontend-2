@@ -288,7 +288,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
           				<div class="publicidade">
                           <!-- tvcultura-homepage-300x250 -->
                           <script type='text/javascript'>
-                            GA_googleFillSlot("tvcultura-homepage-300x250");
+                            GA_googleFillSlot("cmais-assets-300x250");
                           </script>
           				</div>
           				<div class="boxRedes">
