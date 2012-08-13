@@ -26,6 +26,7 @@
 .videosbox .palhaca {margin: 35px 0 0 80px;}
 .videosBox a.todosVideos {position:absolute !important; top: 126px !important;left: 150px !important;}
 .videosbox .rodaGigante a{display:block;text-align: center !important;}
+.palhacoVideo{right: -70px;position: absolute;top: 0;}
 
 a.musicasquintal, a.historiadesenhada, a.momentofabuloso, a.historiapraboi, a.quintaldascriancas{padding-top:55px; font-weight:bolder; text-align:center;}
 a.musicasquintal:hover, a.historiadesenhada:hover, a.momentofabuloso:hover, a.historiapraboi:hover, a.quintaldascriancas:hover{color:#e37606;}
