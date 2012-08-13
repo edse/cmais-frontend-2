@@ -77,11 +77,23 @@
   if(isset($s)){
     $assets = Doctrine_Query::create()
       ->select('a.*')
+      ->from('Asset a, SectionAsset sa, AssetVideo av')
+      ->where('sa.section_id = ?', (int)$s->getId())
+      ->andWhere('sa.asset_id = a.id')
+      ->andWhere('av.asset_id = a.id')
+      ->andWhere('a.is_active = ?', 1)
+      ->andWhere('av.youtube_id IS NOT NULL')
+      ->orderBy('sa.display_order')
+      ->limit(160);
+    /*
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
       ->from('Asset a')
       ->where('a.site_id = ?', (int)$s->getId())
       ->andWhere('a.asset_type_id = 6')
       ->orderBy('a.id desc')
       ->execute();
+    */
   }
   else{
   	if (isset($section)) {
@@ -146,6 +158,8 @@
             <hr />
             <div class="jogosBox papel video1">
               <div class="videointerna">
+                <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+                <?php /*
                 <object style="height:390px; width: 640px">
                   <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>">
                   <param name="allowFullScreen" value="true">
@@ -153,6 +167,7 @@
                   <param name="wmode" value="opaque">
                   <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
                 </object>
+                */ ?>
               </div>
 			         <!--
               <a class="assitir" href="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>" onclick="NovaJanela(this.href,'nomeJanela','640','390','yes');return false">Assitir na janelinha</a>
