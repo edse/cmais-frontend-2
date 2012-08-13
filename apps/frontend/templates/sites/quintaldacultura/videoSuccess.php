@@ -293,14 +293,10 @@
                     </script>
                     <?php if(count($assets) > 0): ?>
                       <?php foreach($assets as $k=>$d): ?>
-                        
-						<?php //echo $contador ." / ". $qtdLeft . " / " . $medida . "<br/>"?>  
                         <li class="<?php if(($k > 0) && ($k % 2 != 0)){ echo "topo";}else{ echo "embaixo";}?>" style="left:<?php if($contador <2){echo "0";}else{echo $medida;} ?>px" >
-                        	 	
-						<a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
-                          <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
-                          <?php endif; ?><span class="bottom"><span class="text2">assistir</span></span></a>
+						              <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
+						                <?php echo $d->getThumbnail() ?>
+                          <span class="bottom"><span class="text2">assistir</span></span></a>
                         </li>
 						<?php
 						$contador++;
