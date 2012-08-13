@@ -14,6 +14,8 @@
                   </a>
 
                   <?php elseif($asset->AssetType->getSlug() == "video"): ?>
+                    <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+                    <?php /*
                     <object style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
                       <param name="allowFullScreen" value="true">
@@ -21,6 +23,7 @@
                       <param name="wmode" value="opaque">
                       <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
                     </object>
+                    */ ?>
 
                   <?php elseif($asset->AssetType->getSlug() == "video-gallery" || $asset->AssetType->getSlug() == "episode"): ?>
                     <?php 
