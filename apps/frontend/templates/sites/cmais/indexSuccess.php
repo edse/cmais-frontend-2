@@ -68,7 +68,12 @@
                 <?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
                 <!-- /BOX PADRAO Noticia -->
                 
+                <!-- BOX PADRAO Noticia -->
+                <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"])) ?>
+                <!-- /BOX PADRAO Noticia -->
+                
                 <!-- BOX PADRAO Previsao -->
+                <!--
                 <?php if(isset($displays["destaque-previsao"])): ?>
                 <div class="box-padrao grid1">
                   <div class="topo azul">
@@ -82,6 +87,7 @@
                   </div>
                 </div>
                 <?php endif; ?>
+                -->
                 <!-- BOX PADRAO Previsao -->
 
                 <!-- BOX PADRAO GALERIA -->
