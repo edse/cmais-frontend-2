@@ -84,7 +84,8 @@
       ->andWhere('a.is_active = ?', 1)
       ->andWhere('av.youtube_id IS NOT NULL')
       ->orderBy('sa.display_order')
-      ->limit(160);
+      ->limit(160)
+      ->execute();
     /*
     $assets = Doctrine_Query::create()
       ->select('a.*')
@@ -108,6 +109,20 @@
 		      ->limit(80)
 		      ->execute();
 			} else {
+			  
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, AssetVideo av')
+          ->where('sa.section_id = ?', 93)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('av.youtube_id IS NOT NULL')
+          ->orderBy('sa.display_order')
+          ->limit(160)
+          ->execute();
+          
+        /*
 		    $assets = Doctrine_Query::create()
 		      ->select('a.*')
 		      ->from('Asset a, Site s')
@@ -117,9 +132,11 @@
 		      ->orderBy('a.id desc')
 		      ->limit(80)
 		      ->execute();
+        */
 			}
 		}
 		else {
+		  /*
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
 	      ->from('Asset a, Site s')
@@ -129,6 +146,20 @@
 	      ->orderBy('a.id desc')
 	      ->limit(80)
 	      ->execute();
+      */
+   
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, AssetVideo av')
+        ->where('sa.section_id = ?', 93)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('av.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('av.youtube_id IS NOT NULL')
+        ->orderBy('sa.display_order')
+        ->limit(160)
+        ->execute();
+   
 		}
   }
   if(!isset($asset)){
