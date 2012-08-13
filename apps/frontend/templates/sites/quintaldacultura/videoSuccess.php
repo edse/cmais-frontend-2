@@ -154,7 +154,7 @@
                   <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
                 </object>
               </div>
-			         <!--
+			        <!--
               <a class="assitir" href="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>" onclick="NovaJanela(this.href,'nomeJanela','640','390','yes');return false">Assitir na janelinha</a>
               <span class="palhaca"></span>
               <span class="palhaco"></span>
