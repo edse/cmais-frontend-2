@@ -77,15 +77,42 @@
   if(isset($s)){
     $assets = Doctrine_Query::create()
       ->select('a.*')
+      ->from('Asset a, SectionAsset sa, AssetVideo av')
+      ->where('sa.section_id = ?', (int)$s->getId())
+      ->andWhere('sa.asset_id = a.id')
+      ->andWhere('av.asset_id = a.id')
+      ->andWhere('a.is_active = ?', 1)
+      ->andWhere('av.youtube_id IS NOT NULL')
+      ->orderBy('sa.display_order')
+      ->limit(160)
+      ->execute();
+    /*
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
       ->from('Asset a')
       ->where('a.site_id = ?', (int)$s->getId())
       ->andWhere('a.asset_type_id = 6')
       ->orderBy('a.id desc')
       ->execute();
+    */
   }
   else{
   	if (isset($section)) {
 	  	if ($section->getSlug() != 'todos') {
+	  	  
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, AssetVideo av')
+          ->where('sa.section_id = ?', 93)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('av.youtube_id IS NOT NULL')
+          ->orderBy('sa.display_order')
+          ->limit(160)
+          ->execute();
+
+         /*
 		    $assets = Doctrine_Query::create()
 		      ->select('a.*')
 		      ->from('Asset a, Site s')
@@ -95,7 +122,22 @@
 		      ->orderBy('a.id desc')
 		      ->limit(80)
 		      ->execute();
+         */
 			} else {
+			  
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, AssetVideo av')
+          ->where('sa.section_id = ?', 93)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('av.youtube_id IS NOT NULL')
+          ->orderBy('sa.display_order')
+          ->limit(160)
+          ->execute();
+          
+        /*
 		    $assets = Doctrine_Query::create()
 		      ->select('a.*')
 		      ->from('Asset a, Site s')
@@ -105,9 +147,11 @@
 		      ->orderBy('a.id desc')
 		      ->limit(80)
 		      ->execute();
+        */
 			}
 		}
 		else {
+		  /*
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
 	      ->from('Asset a, Site s')
@@ -117,6 +161,20 @@
 	      ->orderBy('a.id desc')
 	      ->limit(80)
 	      ->execute();
+      */
+   
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, AssetVideo av')
+        ->where('sa.section_id = ?', 93)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('av.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('av.youtube_id IS NOT NULL')
+        ->orderBy('sa.display_order')
+        ->limit(160)
+        ->execute();
+   
 		}
   }
   if(!isset($asset)){
@@ -146,6 +204,8 @@
             <hr />
             <div class="jogosBox papel video1">
               <div class="videointerna">
+                <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+                <?php /*
                 <object style="height:390px; width: 640px">
                   <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>">
                   <param name="allowFullScreen" value="true">
@@ -153,8 +213,9 @@
                   <param name="wmode" value="opaque">
                   <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
                 </object>
+                */ ?>
               </div>
-			         <!--
+			        <!--
               <a class="assitir" href="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>" onclick="NovaJanela(this.href,'nomeJanela','640','390','yes');return false">Assitir na janelinha</a>
               <span class="palhaca"></span>
               <span class="palhaco"></span>
@@ -278,14 +339,10 @@
                     </script>
                     <?php if(count($assets) > 0): ?>
                       <?php foreach($assets as $k=>$d): ?>
-                        
-						<?php //echo $contador ." / ". $qtdLeft . " / " . $medida . "<br/>"?>  
                         <li class="<?php if(($k > 0) && ($k % 2 != 0)){ echo "topo";}else{ echo "embaixo";}?>" style="left:<?php if($contador <2){echo "0";}else{echo $medida;} ?>px" >
-                        	 	
-						<a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
-                          <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
-                          <?php endif; ?><span class="bottom"><span class="text2">assistir</span></span></a>
+						              <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
+						                <?php echo $d->getThumbnail() ?>
+                          <span class="bottom"><span class="text2">assistir</span></span></a>
                         </li>
 						<?php
 						$contador++;

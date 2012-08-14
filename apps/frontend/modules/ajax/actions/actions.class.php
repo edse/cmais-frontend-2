@@ -975,12 +975,23 @@ class ajaxActions extends sfActions
         else{
         */
 	        foreach($assets as $a){
-	          $return .= '<li><a href="'.$a->retriveUrl().'" class="aImg" title="'.$a->getDescription().'">';
-	          $return .= '<img alt="'.$a->getTitle().'" src="'.$a->retriveImageUrlByImageUsage("image-3-b").'"></a>';
-	          //$return .= '<a href="/'.$a->getSlug().'" class="aTxt"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
-	          $return .= '<a href="/'.$a->getSlug().'" class="aTxt" title="'.$a->Site->getTitle().'"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
-	          //<span class="nomeItem">'.$a->getDescription().'</span>
-	          $return .= '</a></li>';
+	          if($request->getParameter('piadas')==1){
+	            ?>
+              <li>
+                <p><?php echo $a->AssetContent->getContent()?></p>
+                <span><?php echo $a->AssetContent->getDescription()?></span>
+              </li>
+              <span class="picote"></span>
+	            <?php
+	          }else{
+              $return .= '<li><a href="'.$a->retriveUrl().'" class="aImg" title="'.$a->getDescription().'">';
+              $return .= '<img alt="'.$a->getTitle().'" src="'.$a->retriveImageUrlByImageUsage("image-3-b").'"></a>';
+              //$return .= '<a href="/'.$a->getSlug().'" class="aTxt"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
+              $return .= '<a href="/'.$a->getSlug().'" class="aTxt" title="'.$a->Site->getTitle().'"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
+              //<span class="nomeItem">'.$a->getDescription().'</span>
+              $return .= '</a></li>';
+	          }
+            
 	        }
         //}
       }
