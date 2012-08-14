@@ -140,7 +140,7 @@
         <div class="row">
           <div class="span10">
             <p class="titulos">Universidades</p>
-            <a class="todos" href="/cursos/cursos-usp">Ver todos</a>
+            <a class="todos" href="/cursos/universidades">Ver todos</a>
             <div class="carrossel cursos span10">
               <ul class="thumbnails">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
@@ -185,7 +185,7 @@
         <div class="row">
           <div class="span10">
             <p class="titulos">Ciência</p>
-            <a class="todos" href="/cursos/politica">Ver todos</a>
+            <a class="todos" href="/cursos/ciencia">Ver todos</a>
             <div class="carrossel politica span10 cursos">
               <ul class="thumbnails">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
@@ -230,7 +230,7 @@
         <div class="row">
           <div class="span10">
             <p class="titulos">Humanidades</p>
-            <a class="todos" href="/cursos/comunicacao">Ver todos</a>
+            <a class="todos" href="/cursos/humanidades">Ver todos</a>
             <div class="carrossel comunicacao span10 cursos">
               <ul class="thumbnails">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
