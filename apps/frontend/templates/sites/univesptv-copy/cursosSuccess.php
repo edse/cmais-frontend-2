@@ -125,7 +125,7 @@
             ->select('b.*')
             ->from('Block b, Section s')
             ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'cursos-usp')
+            ->andWhere('s.slug = ?', 'universidades')
             ->andWhere('s.site_id = ?', $site->id)
 						->execute();
 						
@@ -139,7 +139,7 @@
         	<?php if (count($displays['destaques']) > 0): ?>
         <div class="row">
           <div class="span10">
-            <p class="titulos">Cursos USP</p>
+            <p class="titulos">Universidades</p>
             <a class="todos" href="/cursos/cursos-usp">Ver todos</a>
             <div class="carrossel cursos span10">
               <ul class="thumbnails">
@@ -170,7 +170,7 @@
             ->select('b.*')
             ->from('Block b, Section s')
             ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'politica')
+            ->andWhere('s.slug = ?', 'ciencia')
             ->andWhere('s.site_id = ?', $site->id)
 						->execute();
 						
@@ -184,7 +184,7 @@
         	<?php if (count($displays['destaques']) > 0): ?>
         <div class="row">
           <div class="span10">
-            <p class="titulos">Política</p>
+            <p class="titulos">Ciência</p>
             <a class="todos" href="/cursos/politica">Ver todos</a>
             <div class="carrossel politica span10 cursos">
               <ul class="thumbnails">
@@ -215,7 +215,7 @@
             ->select('b.*')
             ->from('Block b, Section s')
             ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'comunicacao')
+            ->andWhere('s.slug = ?', 'humanidades')
             ->andWhere('s.site_id = ?', $site->id)
 						->execute();
 						
@@ -229,7 +229,7 @@
         	<?php if (count($displays['destaques']) > 0): ?>
         <div class="row">
           <div class="span10">
-            <p class="titulos">Comunicação</p>
+            <p class="titulos">Humanidades</p>
             <a class="todos" href="/cursos/comunicacao">Ver todos</a>
             <div class="carrossel comunicacao span10 cursos">
               <ul class="thumbnails">
