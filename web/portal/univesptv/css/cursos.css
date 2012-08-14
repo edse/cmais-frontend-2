@@ -1,0 +1,201 @@
+body {	background: #fff;	}
+#menu-portal-2 .busca-portal { float:none; margin:6px 0 0; }
+#menu-portal-2 .busca-portal .ipt-txt { height:auto; width: 109px; height:14px;  }
+#menu-portal-2 .busca-portal .ipt-txt,
+#menu-portal-2 .busca-portal .ipt-submit {border-radius:0;  }
+#menu-portal-2 .busca-portal .ipt-submit { width:66px; }
+ul, ol {  margin:0;}
+p { font-size: 14px; }
+@font-face {
+    font-family: 'InterstateRegular';
+    src: url('/portal/css/fontes/interstate/interstate-extralight-webfont.eot');
+    src: url('/portal/css/fontes/interstate/interstate-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/interstate/interstate-extralight-webfont.woff') format('woff'),
+         url('/portal/css/fontes/interstate/interstate-extralight-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/interstate/interstate-extralight-webfont.svg#InterstateRegular') format('svg');
+    font-weight: bold;
+    font-style: bold;
+
+}
+a:hover,
+a { color:#333; }
+
+.cursos-livres,
+.titulos {font-family:"InterstateRegular", Arial, Helvetica, sans-serif; color:#686868;}
+.titulos.grd { font-size:32px; line-height:32px; margin-bottom:15px; }
+.span10 { width:970px; }
+.input-xlarge { width:300px; }
+.btn { background:#ff6633; color:#fff; text-transform:uppercase; box-shadow:none; border:none; border-radius:0; text-shadow:none;}
+.btn:hover { background:#666; color:#fff; text-decoration:none; }
+input, textarea, select, .uneditable-input { border-radius:0; }
+.mg20 { margin-bottom:20px !important; }
+.titulos.mg30 { margin-top:30px; }
+.box-compartilhar,
+.row .fb-like { width:640px; }
+.box-compartilhar .comentar:hover { color:#fff; }
+
+.capa { margin-top:70px; }
+.bg-site { background:url(/portal/images/capaPrograma/univesptv-copy/bg-topo.jpg); height:586px; }
+#barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left;  }
+.titulos { font-size:22px; margin-bottom:10px; text-align:left;}
+#capa-site { margin-top:-586px !important; }
+.box-destaque { margin:45px 0; border: solid 5px #ccc; width:955px; clear:both; }
+.carrossel { margin:0; clear: both; text-align:left; width:970px;}
+.carrossel .jcarousel-next,
+.carrossel .jcarousel-prev { background: url(/portal/images/capaPrograma/univesptv-copy/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
+.carrossel .jcarousel-clip{ width:880px; height:130px; left:40px;  }
+.carrossel .jcarousel-prev {left:0; }
+.carrossel .jcarousel-next { background-position:-20px 0; right:0;}
+.carrossel .jcarousel-item-horizontal { margin:0 10px; }
+.thumbnail { border:5px solid #e0e0e0; border-radius:0; box-shadow:none; padding:0; margin-right:20px;  }
+.row { margin-bottom:50px; }
+a.thumbnail:hover { border-color:#ff6633; }
+.todos { color:#ff6633; right:0; text-align:right; margin:0 50px 5px 0; font-size:12px; clear:both; display:block;  }
+.todos:hover { color:#ff6633;  }
+.destaque-3c .media { width:965px; height:339px; }
+.destaque-3c .media img { border: 5px solid #CCCCCC; width:960px; height:329px; }
+.destaque-3c, 
+.destaque-3c .conteudo { height: 339px; overflow:hidden; }
+.pag-bola { position:absolute; right: 15px; bottom:15px; height:14px; }
+#barra-site h2 { margin-bottom:30px; }
+select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
+
+
+/* novos-cursos*/
+.cursos-novos .jcarousel-item-horizontal { width:880px; margin:0; }
+.cursos-novos .jcarousel-item .tit,
+.cursos-novos .jcarousel-item .descricao  { float:left; width:600px; padding:0 10px 0 0; color:#333; }
+.cursos-novos .jcarousel-item .tit { font-size:18px; font-weight:bold; margin-top: 30px; }
+.cursos-novos .jcarousel-item .descricao { font-size: 14px; }
+.cursos-novos .jcarousel-item .tit:hover,
+.cursos-novos .jcarousel-item .descricao:hover { text-decoration:underline; } 
+.cursos-novos .thumbnail { width:200px; height:120px; }
+
+/* cursos - carrossel */
+.cursos .jcarousel-item-horizontal { width:276px; height:280px; background:#e0e0e0; }
+.cursos .jcarousel-clip { height: 280px; }
+.cursos .thumbnail .caption { height:92px; overflow:hidden;  }
+.thumbnails .span3:hover,
+.cursos .jcarousel-item-horizontal:hover { background-color:#ff6633; }
+.cursos .caption { color:#333 }
+.cursos .caption h5,
+.cursos .caption h5 a { font-size:18px; max-height:35px; }
+.cursos .caption p { font-size:14px;  max-height: 54px;    overflow: hidden; }
+.cursos .jcarousel-item-horizontal:hover .thumbnail { border-color:#ff6633; background:#ff6633; }
+.cursos .jcarousel-item-horizontal:hover h5,
+.cursos .jcarousel-item-horizontal:hover p { color:#fff; }
+.cursos .thumbnail { margin:0;  }
+.cursos .thumbnails > li { margin:0 25px 0 0; width: 276px;  }
+.cursos .thumbnail:hover { border-color:#ff6633; background-color:#ff6633; }
+.cursos .thumbnail:hover h5,
+.cursos .thumbnail:hover p,
+.cursos .thumbnail:hover a { color:#fff; }
+.cursos .caption h5 { margin-bottom:5px; }
+.cursos .caption a { max-height:54px; overflow:hidden;}
+.cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
+.cursos .thumbnail:hover a { text-decoration:none; }
+.cursos .thumbnail { background:#e0e0e0;  }
+.cursos .thumbnails a img { width:266px; height:160px; }
+
+/* apoio */
+.apoio { width:970px; margin:0 auto; }
+.apoio li { width:auto; float:left; margin:0 34px 0 0; }
+.apoio li a { display: block; }
+.last { margin-right:0; }
+
+/*internas*/
+.bg-site.interna { height:217px; background-position:bottom; margin-top:3px; }
+.breadcrumb { border:none; background:none; text-align:left; border-radius:none; padding:0; }
+.breadcrumb a { font-size:11px; color:#333; }
+.breadcrumb .divider { color:#333; font-size:11px;}
+.breadcrumb .active { font-size: 11px; color:#ff6633; }
+#capa-site.internas { text-align:left; margin-top:-210px !important; }
+
+.internas .capa { margin-top:20px;  }
+.internas #barra-site { height:173px; }
+.span7.esq { margin-left:0; width: 640px; float:left; }
+.esq p {clear:both; margin-bottom:20px;}
+.esq p.titulos { margin-bottom: 10px; }
+.esq img { clear: both; display: block; margin-bottom:10px; }
+.esq p.bold { margin-bottom:5px; font-size: 16px; } 
+.botoes { margin:10px auto 15px; width:210px; }
+.descricao { margin:20px 0 50px 0; }
+.descricao .titulos { font:16px bold Arial, Helvetica, sans-serif; color:#333; margin-bottom:5px; }
+.descricao p { clear:both;}
+.material { margin-bottom:50px; }
+.material li { clear:both; margin-bottom:10px; }
+.material li,
+.material a { color:#333; }
+.span3.dir { margin-left:20px; width:310px; float:left; }
+.dir select { width: 267px; }
+.box-compartilhar .comentar { text-indent:-9999px; }
+.box-compartilhar .comentar span {display:none;}  
+.btn-compartilhar {float:left;}
+
+/* video */
+.assistir { background:#ff6633; color:#fff; font-size:32px; text-align:center; clear:both; height:102px; line-height:102px; width: 310px; margin-bottom:30px; }
+.assistir:hover { color:#fff; background:#666; text-decoration:none; }
+.dir form { clear:both; margin-bottom:30px; }
+.dir form .controls { margin-left:0; }
+.dir form .titulos { text-align:left; }
+.dir form .control-label { width:300px; }
+.lista-aulas { clear:both; background:#fafafa; padding:10px; margin-bottom:20px; max-height:326px; overflow-y:scroll; overflow-x: hidden; }
+.lista-aulas li { clear:both; margin-bottom:10px; overflow:hidden; height:46px; }
+.lista-aulas li span { background:#ff6633; color:#fff; text-align:center; display:block; float: left; margin-right:10px; padding:8px; text-transform:uppercase; font-size:12px; font-weight:bold; height: 30px; line-height:15px;}
+.lista-aulas li a.ativo span,
+.lista-aulas li a:hover span { background:#666; }
+
+.lista-aulas li a { color:#333; height:44px; line-height: 21px; }
+.tab-content p { clear:both; }
+.tab-content .bold { margin-top:10px; }
+.nav-tabs > li > a { border-radius:0;  text-transform:uppercase; font-size: 16px; font-family:"InterstateRegular", Arial, Helvetica, sans-serif; color:#ff6633; padding:8px;}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover { background:#ff6633; color:#fff; border-color:#ff6633; }
+.nav-tabs > li > a:hover { border-color:#fff; border-bottom:#ff6633;}
+.nav-tabs > li { width: 150px; }
+.nav-tabs { border-color:#ff6633; }
+.nav-tabs > li > a:hover { background:#fff; }
+
+#sobre a { clear:both; display:block; }
+#sobre { margin-bottom:30px; }
+
+/* curso */
+/*.dir form textarea { color:#999; }*/
+.dir form input { clear:both; display: block; }
+.dir .btn {  height:28px; }
+#bloco-notas .btn { margin-top:10px;  }
+#bloco-notas #email { width:300px; height:28px;  }
+.dir .nav-tabs { margin-top:28px; }
+.descricao a { clear:both; display:block; }
+
+/* erro*/
+.error { border-color: #ff6633;  color: #ff6633;  display: none; clear:both;  font-size: 12px;  font-weight: normal;  margin-top: 4px;  padding-left: 3px;  text-transform: none; }
+.erro {  border: 1px solid #ff6633;}
+.checked {  background: none;  height: 0px; }
+.msgErro {  background-color: #666;  margin:0; }
+.msgErro .alerta {  background: url(/portal/images/ico-erro.png) no-repeat;  display: block;  float: left;  margin: 20px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
+.msgAcerto {  background-color: #666;  margin: 0;  width: 300px; }
+.msgAcerto .alerta {  background: url(/portal/images/ico-acerto.png) no-repeat;  display: block;  float: left;  margin: 13px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
+.boxMsg { float: left;  margin: 5px 0 5px 10px;  width: 248px; }
+.boxMsg p {  color: #fff;  font-size: 12px;  line-height: 15px; }
+.boxMsg p.aviso {  font-weight: bold; margin-bottom:5px; }
+
+/* cursos */
+#cursos .thumbnails > li { margin:0 70px 45px 0; }
+#cursos .thumbnails > li.last,
+#cursos .thumbnails > li:nth-child(3n) { margin-right:0 }
+#cursos .titulos { margin-bottom:40px; }
+#cursos .thumbnail .caption { height:95px; }
+.fb-like.mg20 { margin:-5px 0 30px 0 !important; } 
+.duas-colunas.destaque { margin-top:20px; }
+
+/* IE */
+.carrossel .thumbnail { *height:150px; *background:#e0e0e0; }
+.cursos .thumbnails a { *clear:both; }
+.cursos .caption h5, 
+.cursos .caption h5 a { *margin-bottom:0; }
+.cursos .thumbnail .caption { *height:90px; }
+#capa-site { *margin-top:-636px !important; }
+#capa-site.internas { *margin-top:-260px !important; }
+.contato { *margin-left:-20px; }
+.dir form select { *margin-left:-20px; }
+.botoes { *width:220px; }
