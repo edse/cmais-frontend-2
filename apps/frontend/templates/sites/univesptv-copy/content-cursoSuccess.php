@@ -224,7 +224,7 @@
 	              <?php if (isset($displays['sobre-o-curso'])): ?>
 	              	<?php if (count($displays['sobre-o-curso']) > 0): ?>
                 <p class="titulos"><?php echo $displays['sobre-o-curso'][0]->Block->getTitle() ?></p>
-                <a href="/<?php echo $site->getSlug() ?>" title="<?php echo $displays['sobre-o-curso'][0]->getTitle() ?>"><?php echo html_entity_decode($displays['sobre-o-curso'][0]->Asset->AssetContent->render()) ?></a>
+                <a href="/<?php echo $site->getSlug() ?>" title="<?php echo $displays['sobre-o-curso'][0]->getTitle() ?>"><?php echo $displays['sobre-o-curso'][0]->Asset->AssetContent->render() ?></a>
               	<br/>
               		<?php endif; ?>
               	<?php endif; ?>
