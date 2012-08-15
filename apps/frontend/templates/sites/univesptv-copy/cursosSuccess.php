@@ -46,9 +46,7 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <?php if(isset($program) && $program->id > 0): ?>
-      <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <img src="/portal/images/capaPrograma/univesptv-copy/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> </a></h2>
-      <?php endif;?>
+      <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <img src="<?php echo $site->getImageIcon() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" /> </a></h2>
       <h2 class="cursos-livres">Cursos Livres
       <br />
       Para Todos</h2>
