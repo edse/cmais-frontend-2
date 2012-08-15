@@ -980,11 +980,16 @@ class _sectionActions extends sfActions
     if(!isset($pagelimit))
       $pagelimit = 9;
     if(isset($this->assetsQuery)){
-      $this->pager = new sfDoctrinePager('Asset', $pagelimit);
-      $this->pager->setQuery($this->assetsQuery);
-      $this->pager->setPage($request->getParameter('page', 1));
-      $this->pager->init();
-      $this->page = $request->getParameter('page');
+    	if ($this->site->Program->getIsACourse() && $request->getParameter('test')) {
+    		$this->assets = $this->assetsQuery->execute();
+    	}
+			else{
+	      $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+	      $this->pager->setQuery($this->assetsQuery);
+	      $this->pager->setPage($request->getParameter('page', 1));
+	      $this->pager->init();
+	      $this->page = $request->getParameter('page');
+	    }
     }
 		
 		if($this->section->Site->getSlug() == "sic") {
