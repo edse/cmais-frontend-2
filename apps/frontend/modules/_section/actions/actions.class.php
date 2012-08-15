@@ -980,7 +980,7 @@ class _sectionActions extends sfActions
     if(!isset($pagelimit))
       $pagelimit = 9;
     if(isset($this->assetsQuery)){
-    	if ($this->site->Program->getIsACourse() && $request->getParameter('test')) {
+    	if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
     		$this->assets = $this->assetsQuery->execute();
     	}
 			else{
