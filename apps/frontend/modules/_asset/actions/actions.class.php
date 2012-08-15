@@ -250,9 +250,16 @@ class _assetActions extends sfActions
       $email_site = $this->section->getContactEmail();
     }
     $this->mailSent = $request->getParameter('mailSent');
+		
+		if ($this->site->Program->getIsACourse()) {
+			if ($request->getParameter('bloco-de-notas')) {
+				$email_site = strip_tags($request->getParameter('email'));
+			}
+		}
+		
     // mail sender
     if($email_site!="") {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))){
+      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($request->getParameter('bloco-de-notas'))){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
@@ -271,7 +278,19 @@ class _assetActions extends sfActions
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
-            if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
+						
+						if (isset($this->section->id)) {
+							$subject = '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>';
+						}
+						else { 
+							if ($this->site->Program->getIsACourse()) {
+								if ($request->getParameter('bloco-de-notas')) {
+									$subject = '['.$this->site->getTitle().'][Bloco de Notas] '.$nome_user.' <'.$email_user.'>';
+								}
+							}
+						}
+						
+            if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
               //header("Location: ".$this->uri."?mailSent=1");
               die("1");
             }
@@ -314,6 +333,38 @@ class _assetActions extends sfActions
       }
 
     }
+		
+    if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+    	$sections = $this->asset->getSections();
+			
+			if (count($sections) > 0) {
+				$this->section = $sections[0];
+				//$this->assets = $this->section->getAssets();
+				$this->assets = Doctrine_Query::create()
+					->select('a.*')
+					->from('Asset a, SectionAsset sa')
+					->where('sa.asset_id = a.id')
+					->andWhere('sa.section_id = ?', $this->section->id)
+					->andWhere('a.site_id = ?', $this->site->id)
+					->andWhere('a.is_active = ?', 1)
+					->orderBy('sa.display_order')
+					->execute();
+					
+				for($k=0; $k < count($this->assets); $k++){
+					
+					if ($this->assets[$k]->id == $this->asset->id){
+						if (count($this->assets) > ($k+1)){
+							$this->assetNext = $this->assets[$k+1];
+						}
+						if ($k > 0){
+							$this->assetPrev = $this->assets[$k-1];
+						}
+					}
+				}
+				
+			}
+		}
+				
 
     //metas
     $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
