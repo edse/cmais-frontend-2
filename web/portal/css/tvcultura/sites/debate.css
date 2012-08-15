@@ -1,0 +1,64 @@
+#guia-topo,
+body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
+.bg-site{ top:0 !important;  }
+#rodape-portal { margin-top:-37px; }
+#conteudo-pagina { background: #fff;    overflow: hidden; }
+#capa-site { margin-top:0 !important; padding-bottom:50px; }
+.conteudo { margin:20px; overflow:hidden; }
+.streaming {margin:10px 0;}
+#barra-site { background: #b32439; height:141px; width: 970px; float:right; margin:0; }
+#miolo { margin-top:0; }
+#chamada { margin-bottom:0; }
+#barra-site h2 { background:url(/portal/images/capaPrograma/debate/data.png) no-repeat; text-indent:-9999px; width:307px; height:24px; margin:60px 0 10px 30px;  }
+#barra-site .redes { position:absolute; bottom:25px; left:30px; margin:0;}
+.eleicoes { text-indent:-9999px; background:url(/portal/images/capaPrograma/debate/debate.png) no-repeat; width:148px; height:120px; float:left; display: block; margin:12px 63px 0 77px; }
+.patrocinio { float:left; margin:38px 30px 0 0; }
+.patrocinio li { float: left; width: auto; margin-right:8px; }
+.patrocinio a { display:block; text-indent:-9999px;}
+.patrocinio .estadao { background: url(/portal/images/capaPrograma/debate/estadao.png) no-repeat; width: 119px; height:25px; margin-top:20px; }
+.patrocinio .cultura { background: url(/portal/images/capaPrograma/debate/cultura.png) no-repeat; width: 81px; height:70px; }
+.patrocinio .youtube { background: url(/portal/images/capaPrograma/debate/youtube.png) no-repeat; width: 91px; height:38px; margin-top:17px; }
+
+/* home tv */
+.home-tv #conteudo-pagina { background:#b32439; }
+#v2 li { border-color:#b32439; }
+.novoNoAr .enunciado span,
+.novoDestaque .enunciado span {background: url("/portal/images/capaPrograma/debate/ponta-destaque.png") no-repeat scroll 0 0 transparent }
+.proximasAtracoes .enunciado,
+.novoDestaque .enunciado h2,
+.proximasAtracoes .enunciado,
+.box-padrao .claro .capa-titulo,
+.novoNoAr .enunciado h2,
+.box-padrao .capa-titulo { background:#64b1d6; }
+
+.box-padrao .titulos,
+.noticia p,
+.box-padrao .chapeu,
+.conteudo a { color:#fff; }
+
+.abas li.ativo a, .abas li:hover a {background-color: #9e2a37 !important;}
+.box-padrao .topo span {background: url(/portal/images/capaPrograma/debate/ponta-destaque2.png) no-repeat !important;}
+.proximasAtracoes .proximasAtracoes-box .gradeCompleta { color:#333; }
+.proximasAtracoes .proximasAtracoes-box p a {color: #64b1d6;}
+#menu-rodape .abas .minha-cultura.ativo span,
+#menu-rodape .abas .minha-cultura:hover span,
+#menu-rodape .abas .musica.ativo span,
+#menu-rodape .abas .musica:hover span,
+#menu-rodape .abas .jornalismo.ativo span,
+#menu-rodape .abas .jornalismo:hover span,
+#menu-rodape .abas .educacao.ativo span,
+#menu-rodape .abas .educacao:hover span,
+#menu-rodape .abas .arte-cultura.ativo span,
+#menu-rodape .abas .arte-cultura:hover span,
+#menu-rodape .abas .infantil.ativo span,
+#menu-rodape .abas .infantil:hover span {background: url(/portal/images/capaPrograma/debate/decoracao.png) no-repeat !important;}
+#menu-rodape .blocos a,.cor-padrao,
+#menu-rodape .blocos .jornalismo a,.jornalismo,
+#menu-rodape .blocos .musica a, .musica,
+#menu-rodape .blocos .infantil a, .infantil,
+#menu-rodape .blocos .arte a, .arte, .arte-e-cultura{color:#9e2a37;}
+.blocos li a.bg:hover { border-color:#9e2a37 !important;} 
+#menu-portal .menu-aberto .abas li.ativo a,
+#menu-portal .menu-aberto .abas li:hover a {background: #9e2a37 !important;}
+#menu-portal-2 li a:hover {background: #9e2a37 !important;}
+#menu-rodape { margin-bottom:0; }

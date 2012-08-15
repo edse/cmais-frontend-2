@@ -148,11 +148,13 @@
                     <label>assunto</label>
                     <br />
                     <select style="width:150px;" id="assunto" name="assunto" class="required">
+                      <!--
                       <option value="">- Selecione -</option>
                       <option value="Elogio">Elogio</option>
                       <option value="Crítica">Crítica</option>
                       <option value="Comentário">Comentário</option>
                       <option value="Sugestão">Sugestão</option>
+                      -->
                       <option value="Compra de DVD">Compra de DVD</option>
                     </select>
                   </div>
