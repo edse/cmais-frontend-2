@@ -1138,11 +1138,13 @@ class _sectionActions extends sfActions
           $test = @end(explode("-",$this->site->getSlug()));
           if($test != "old"){
             if($this->site->Program->getIsACourse()){
-              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
 	            if($request->getParameter('test') == 1) {
 	              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv-copy/curso';
 	              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv-copy/curso');
+							}
+							else {
+	              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
+	              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
 							}
             }
             else{
