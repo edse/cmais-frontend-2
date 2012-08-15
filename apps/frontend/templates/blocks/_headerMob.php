@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head> 
+  <!--PUBLICIDADE-->
+  <script type='text/javascript'>
+    (function() {
+      var useSSL = 'https:' == document.location.protocol;
+      var src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt_mobile.js';
+      document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    })();
+  </script>
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/4079539/mobile320x50', [320, 50], 'div-gpt-ad-1344351883965-0').addService(googletag.pubads());
+    googletag.enableServices();
+    });
+  </script>
+  <!--/PUBLICIDADE-->  
   <title>cmais+ Mobile</title> 
   
   <!--HEADER PADRAO JQUERY MOBILE-->

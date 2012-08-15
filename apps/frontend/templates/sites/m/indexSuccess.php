@@ -20,6 +20,13 @@
 </div>
 <!--/PAGINA INDEX-->
 
+<!-- mobile320x50 -->
+<div id='div-gpt-ad-1344351883965-0'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1344351883965-0')});
+  </script>
+</div>
+
 <!--footer-->
 <?php include_partial_from_folder('blocks', 'global/footerMob', array('site'=>$site)) ?>
 <!--/footer-->
