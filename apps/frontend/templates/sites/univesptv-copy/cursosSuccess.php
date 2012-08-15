@@ -46,15 +46,9 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <h2>
-      	<a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-      		<img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageIcon() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
-      	</a>
-      </h2>
-      <h2 class="cursos-livres">Cursos Livres
-      <br />
-      Para Todos</h2>
-
+    	
+			<?php include_partial_from_folder('sites/univesptv','global/topo', array('site'=>$site)) ?>
+			
 			<?php if (isset($displays['destaque-principal'])): ?>      
 				<?php if (count($displays['destaque-principal']) > 0): ?>      
       <div id="destaque" class="destaque destaque-3c grid3	">
