@@ -228,6 +228,7 @@
               	<br/>
               		<?php endif; ?>
               	<?php endif; ?>
+              	<?php /*
 	              <?php if (isset($displays['professor'])): ?>
 	              	<?php if (count($displays['professor']) > 0): ?>
 	              		<?php $relatedAssets = $displays['professor'][0]->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
@@ -237,6 +238,9 @@
               	<a href="<?php echo $displays['professor'][0]->retriveUrl() ?>" title="<?php echo $displays['professor'][0]->getTitle() ?>"><?php echo $displays['professor'][0]->getDescription() ?></a>
               		<?php endif; ?>
               	<?php endif; ?>
+								 * 
+								 */
+								?>
               </div>
               
             </div>
