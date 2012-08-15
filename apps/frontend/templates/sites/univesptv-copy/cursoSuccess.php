@@ -93,7 +93,7 @@ if(isset($assets)){
 							<!-- material de apoio -->
 			      	<?php if (isset($displays['material-de-apoio'])): ?>
 			      		<?php if (count($displays['material-de-apoio']) > 0): ?>
-              <p class="titulos mg30">Material de apoio</p>
+              <p class="titulos mg30"><?php echo $displays['material-de-apoio'][0]->Block->getTitle() ?></p>
               <ul class="material">
               	<?php foreach($displays['material-de-apoio'] as $d): ?>
               		<?php $download = $d->Asset->retriveRelatedAssetsByRelationType('Download') ?>
