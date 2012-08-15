@@ -224,23 +224,25 @@
 	              <?php if (isset($displays['sobre-o-curso'])): ?>
 	              	<?php if (count($displays['sobre-o-curso']) > 0): ?>
                 <p class="titulos"><?php echo $displays['sobre-o-curso'][0]->Block->getTitle() ?></p>
-                <a href="/<?php echo $site->getSlug() ?>" title="<?php echo $displays['sobre-o-curso'][0]->getTitle() ?>"><?php echo $displays['sobre-o-curso'][0]->getDescription() ?></a>
+                <a href="/<?php echo $site->getSlug() ?>" title="<?php echo $displays['sobre-o-curso'][0]->getTitle() ?>"><?php echo html_entity_decode($displays['sobre-o-curso'][0]->Asset->AssetContent->render()) ?></a>
               	<br/>
               		<?php endif; ?>
               	<?php endif; ?>
-              	<?php /*
 	              <?php if (isset($displays['professor'])): ?>
 	              	<?php if (count($displays['professor']) > 0): ?>
-	              		<?php $relatedAssets = $displays['professor'][0]->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
               	<p class="titulos"><?php echo $displays['professor'][0]->Block->getTitle() ?></p>
+										<?php if (isset($d->Asset)): ?>
+		              		<?php $relatedAssets = $displays['professor'][0]->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
               	<a href="<?php echo $displays['professor'][0]->retriveUrl() ?>" title="<?php echo $displays['professor'][0]->getTitle() ?>"><img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays['professor'][0]->getTitle() ?>" /></a>
               	<a href="<?php echo $displays['professor'][0]->retriveUrl() ?>" title="<?php echo $displays['professor'][0]->getTitle() ?>" class="bold"><?php echo $displays['professor'][0]->getTitle() ?></a>
               	<a href="<?php echo $displays['professor'][0]->retriveUrl() ?>" title="<?php echo $displays['professor'][0]->getTitle() ?>"><?php echo $displays['professor'][0]->getDescription() ?></a>
+              			<?php else: ?>
+              	<img src="<?php echo $displays['professor'][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays['professor'][0]->getTitle() ?>" />
+              	<?php echo $displays['professor'][0]->getTitle() ?>
+              	<?php echo $displays['professor'][0]->getDescription() ?>
+              			<?php endif; ?>
               		<?php endif; ?>
               	<?php endif; ?>
-								 * 
-								 */
-								?>
               </div>
               
             </div>
