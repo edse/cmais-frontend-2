@@ -96,17 +96,31 @@ if(isset($assets)){
               <p class="titulos mg30"><?php echo $displays['material-de-apoio'][0]->Block->getTitle() ?></p>
               <ul class="material">
               	<?php foreach($displays['material-de-apoio'] as $d): ?>
-              		<?php $download = $d->Asset->retriveRelatedAssetsByRelationType('Download') ?>
-              		<?php if(count($download) > 0): ?>
-              			<?php foreach($download as $d): ?>
-              				<?php if ($d->getAssetType() == 'File'): ?>
+              		<?php if (isset($d->Asset)): ?>
+              			<?php $download = $d->Asset->retriveRelatedAssetsByRelationType('Download') ?>
+              			<?php if(count($download) > 0): ?>
+              				<?php foreach($download as $d): ?>
+              					<?php if ($d->getAssetType() == 'File'): ?>
                 <li><a href="http://midia.cmais.com.br/assets/file/original/<?php echo $d->AssetFile->getFile() ?>.<?php echo $d->AssetFile->getExtension() ?>" title="<?php echo $d->getTitle() ?>" target="_blank"><?php echo $d->getTitle() ?></a></li>
-                			<?php elseif ($d->getAssetType() == 'Imagem'): ?>
+                				<?php elseif ($d->getAssetType() == 'Imagem'): ?>
                 <li><a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" title="<?php echo $d->getTitle() ?>" target="_blank"><?php echo $d->getTitle() ?></a></li>
-                			<?php elseif ($d->getAssetType() == 'Áudio'): ?>
+                				<?php elseif ($d->getAssetType() == 'Áudio'): ?>
                 <li><a href="http://midia.cmais.com.br/assets/audio/original/<?php echo $d->AssetAudio->getOriginalFile() ?>" title="<?php echo $d->getTitle() ?>" target="_blank"><?php echo $d->getTitle() ?></a></li>
-                			<?php endif; ?>
-                		<?php endforeach; ?>
+                				<?php endif; ?>
+                			<?php endforeach; ?>
+                		<?php else: ?>
+                <li><?php echo html_entity_decode($displays['material-de-apoio'][0]->Asset->AssetContent->render()) ?></li>
+										<?php endif; ?>
+                	<?php else: ?>
+								<li>
+										<?php
+											if ($displays['material-de-apoio'][0]->getDescription())
+												echo $displays['material-de-apoio'][0]->getDescription();
+											else if ($displays['material-de-apoio'][0]->getHtml())
+												echo $displays['material-de-apoio'][0]->getHtml();
+										?>
+								</li>
+											
                 	<?php endif; ?>
                 <?php endforeach; ?>
               </ul>
