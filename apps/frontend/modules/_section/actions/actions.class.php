@@ -1030,12 +1030,13 @@ class _sectionActions extends sfActions
     }
     
     if(isset($this->category) && ($this->section->Parent->id > 0)){
+    	
       if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
         if($debug) print "<br1>>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
       }else{
       	$parentSection = $this->section->getParent();
-      	if($this->site->Program->Channel->getSlug()=="univesptv-copy" && $parentSection->getSlug() == "cursos") {
+      	if($this->site->Program->Channel->getSlug()=="univesptv" && $parentSection->getSlug() == "cursos") {
 		      if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos';
 		      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos');
 				}
