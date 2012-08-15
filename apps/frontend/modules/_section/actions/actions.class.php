@@ -668,20 +668,22 @@ class _sectionActions extends sfActions
               $this->assetsQuery->orderBy('a.created_at desc');
 						}
 						else {
-	            $this->assetsQuery = Doctrine_Query::create()
-	              ->select('a.*')
-	              ->from('Asset a, SectionAsset sa')
-	              ->where('sa.section_id = ?', $this->section->id)
-	              ->andWhere('sa.asset_id = a.id')
-	              ->andWhere('a.is_active = ?', 1);
-	            if($request->getParameter('busca') != '')
-	              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-	            if(($this->site->getId() == 295)&&($this->section->id == 893))
-	              $this->assetsQuery->orderBy('sa.display_order');
-	            else if(($this->site->getId() == 282)&&($this->section->id == 778))
-	              $this->assetsQuery->orderBy('sa.display_order');
-	            else
-	              $this->assetsQuery->orderBy('a.created_at desc');
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhere('a.is_active = ?', 1);
+              if($request->getParameter('busca') != '')
+                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+              if(($this->site->getId() == 295)&&($this->section->id == 893))
+                $this->assetsQuery->orderBy('sa.display_order');
+              else if(($this->site->getId() == 282)&&($this->section->id == 778))
+                $this->assetsQuery->orderBy('sa.display_order');
+              else if ($this->site->Program->getIsACourse())
+								$this->assetsQuery->orderBy('sa.display_order');									
+							else
+                $this->assetsQuery->orderBy('a.created_at desc');
 						}
           }
         }
@@ -1028,12 +1030,20 @@ class _sectionActions extends sfActions
     }
     
     if(isset($this->category) && ($this->section->Parent->id > 0)){
+    	
       if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
         if($debug) print "<br1>>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
       }else{
-        if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+      	$parentSection = $this->section->getParent();
+      	if($this->site->getSlug()=="univesptv-copy" && $parentSection->getSlug() == "cursos") {
+		      if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos';
+		      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos');
+				}
+				else {
+	        if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+	        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+				}
       }
     }
     elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){

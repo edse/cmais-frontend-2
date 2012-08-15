@@ -72,14 +72,14 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos-novos .thumbnail { width:200px; height:120px; }
 
 /* cursos - carrossel */
-.cursos .jcarousel-item-horizontal { width:276px; height:280px; background:#e0e0e0; }
-.cursos .jcarousel-clip { height: 280px; }
-.cursos .thumbnail .caption { height:92px; overflow:hidden;  }
+.cursos .jcarousel-item-horizontal { width:276px; height:300px; background:#e0e0e0; }
+.cursos .jcarousel-clip { height: 300px; }
+.cursos .thumbnail .caption { height:117px; overflow:hidden;  }
 .thumbnails .span3:hover,
 .cursos .jcarousel-item-horizontal:hover { background-color:#ff6633; }
 .cursos .caption { color:#333 }
 .cursos .caption h5,
-.cursos .caption h5 a { font-size:18px; max-height:35px; }
+.cursos .caption h5 a { font-size:18px; max-height:44px; }
 .cursos .caption p { font-size:14px;  max-height: 54px;    overflow: hidden; }
 .cursos .jcarousel-item-horizontal:hover .thumbnail { border-color:#ff6633; background:#ff6633; }
 .cursos .jcarousel-item-horizontal:hover h5,
@@ -91,7 +91,8 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .thumbnail:hover p,
 .cursos .thumbnail:hover a { color:#fff; }
 .cursos .caption h5 { margin-bottom:5px; }
-.cursos .caption a { max-height:54px; overflow:hidden;}
+.cursos .caption a { max-height:75px; overflow:hidden;}
+.cursos .thumbnails h5 a { line-height:22px; }
 .cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
 .cursos .thumbnail:hover a { text-decoration:none; }
 .cursos .thumbnail { background:#e0e0e0;  }
