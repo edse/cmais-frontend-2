@@ -76,8 +76,8 @@ if(isset($assets)){
 			      	<?php if (isset($displays['professor'])): ?>
 			      		<?php if (count($displays['professor']) > 0): ?>
 			      			<?php foreach($displays['professor'] as $k=>$d): ?>
-			      				<?php if (isset($d->Asset)): ?>
               <p class="titulos mg30">Professor</p>
+			      				<?php if (isset($d->Asset)): ?>
 			      					<?php $relatedAssets = $d->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
               <img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
               				<?php else: ?>
