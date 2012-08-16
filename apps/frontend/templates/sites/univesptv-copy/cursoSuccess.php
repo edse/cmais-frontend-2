@@ -197,7 +197,7 @@ if(isset($assets)){
                 		<span>aula <br /> <?php echo $k+1; ?></span>
                 		<?php echo $d->getTitle() ?>
                 	</a>
-                	<p style="color:grey; font-style: italic"><?php echo $d->getDescription() ?></p>
+                	<p style="color:#999; font-style: italic;"><?php echo $d->getDescription() ?></p>
                 </li>
                 <?php endforeach; ?>
               </ul>
