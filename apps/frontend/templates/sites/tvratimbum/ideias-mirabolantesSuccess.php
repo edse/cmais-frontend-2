@@ -1,32 +1,5 @@
-<?php 
-
-//videos piadas
-$assets = Doctrine_Query::create()
-  ->select('a.*')
-  ->from('Asset a, SectionAsset sa')
-  ->where('sa.asset_id = a.id')
-  ->andWhereIn('sa.section_id',  array(13))
-  ->orderBy('a.id desc')
-  ->execute();
-
-//piadas
-$a_piadas = Doctrine_Query::create()
-  ->select('aa.*')
-  ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->execute();
-
-//piada destaque da semana
-$piada = html_entity_decode($displays["piada-destaque-semana"][0]->Asset->AssetContent->getContent());
-$piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
-
-
-?>
-<?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
@@ -82,120 +55,9 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               <p><?php echo $section->getTitle() ?></p>
             </div>  
             <!--/TITULO-->
-            <?php  
-            if(isset($a_piadas)):
-              if(count($a_piadas) > 0):
-             ?>
-              <!--PIADA DA SEMANA-->
-              <div id="piada-da-semana">
-                
-
-                <!--LOGO PIADA-->
-                <img id="logo-piada" src="/portal/tvratimbum/image/piada-da-semana.png" border="0" />
-                <!--/LOGO PIADA-->
-                
-                <!--PIADA DESTAQUE-->
-                <div id="piada-destaque">
-                                 
-                  <!--PIADA VENCEDORA DA SEMANA-->  
-                  <div id="container-piada">
-                    <?php echo $piada; ?> 
-                    <div id="assinatura">
-                      <?php echo $piadaAssinatura; ?>
-                    </div>  
-                  </div>    
-                  <!--/PIADA VENCEDORA DA SEMANA-->
-                  
-                </div> 
-                <!--/PIADA DESTAQUE-->
-
-                  
-                <!--VOTACAO PIADA-->
-                <div id="votacao-piada">
-                  
-                  <!--LISTA-PIADA-->
-                  <form method="post" id="e<?php echo $a_piadas[0]->Asset->getId()?>" class="form-votacao">
-                    <a class="btn-lista-piadas" href="/lista-piadas" title="lista completa de piadas">...ou clique aqui para ler todas as piadas :)</a>
-                  
-                   <h2>VOTE NA sua piada favorita desta semana! </h2>
-                    <ul>
-                      <?php
-                        foreach($a_piadas as $key=>$value){
-                          $c = $value->Asset->retriveRelatedAssetsByAssetTypeId(1);
-                          if(count($c)>=1){
-                            $content = $c[0]->AssetContent->getContent();
-                            $description = $c[0]->getDescription();
-                            ?>
-                            <li>
-                              <input type="radio" name="opcao" id="opcao-piada-<?php echo $value->getId();?>" class="form-contato" value="<?php echo $value->getId();?>"  />
-                              <label for="opcao-piada-<?php echo $value->getId();?>">
-                                <?php echo $value->Asset->getTitle();?>
-                                <?php echo $content."<span>(".$description.")</span>";?>
-                              </label>
-                            </li>
-                            <?php
-                          }
-                        }
-                      ?>
-                    </ul>
-  
-                  <div class="btn-barra votacao">
-                      <span class="pontaBarra"></span>
-                      <input id="votar" type="submit" value="votar" />
-                      <span class="caudaBarra"></span>
-                      <div id="enviando" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
-                        Registrando voto, aguarde um momentinho...
-                      </div>
-                  </div>
-                  </form>
-                  <!--/LISTA-PIADA-->
-                  <!--SCRIPT-->
-                  
-                  <!--/SCRIPT-->
-                </div>  
-                <!--/VOTACAO PIADA-->
-                
-                <!--RESULTADO PARCIAL-->
-                <div id="resultado-piada" style="display:none">
-                  <a class="btn-lista-piadas" href="/lista-piadas" title="lista completa de piadas">...clique aqui para ler todas as piadas :)</a>
-                  
-                  <h2>Resultado Parcial: </h2>
-                  <!--LISTA-RESULTADO-->
-                  <?php
-                  for($i=0; $i<count($a_piadas); $i++){
-                   ?>
-                   <ul class="parcial-<?php echo $i?> classificacao">
-                      <li>
-                        <p><?php echo $value->Asset->getTitle();?></p> 
-                        <span>00%</span>
-                        <div class="progress progress-success">
-                           <div class="bar" style="width: 40%"></div>
-                        </div>
-                     </li>
-                
-                    </ul>
-                    <?php
-                    }
-                    ?>
-                  </form>
-                  <!--/LISTA-RESULTADO-->
-                  <h2>Agradecemos seu voto! não esqueça:você também pode participar enviando a sua piada. ;) </h2>
-  
-                </div>  
-                <!--/RESULTADO PARCIAL-->
-              </div>
-              <!--/PIADA DA SEMANA-->
-            <?php
-              
-              
-              else:?>  
-              <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section)) ?>
+        
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'] )) ?>
             
-              <?php
-                endif;
-               endif;
-               ?>  
             <hr />
             
             <span class="picote"></span>
@@ -213,24 +75,16 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
           
           <!--CONTATO-->
           <div class="contato">
-            <?php 
-              if(count($a_piadas) > 0):
-            ?>
-              <h2 class="tit-destaque-ferias">Participe!!!</h2>
-              <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'])) ?>
-            <?php
-            endif;
-            ?>
+            
             <!--SCRIPT-->
             <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
             <script type="text/javascript">
               $(document).ready(function(){
-                //carrossel programas
+                
                 $('.carrossel').jcarousel({
                   wrap: "both"
                 });
                 
-                //enviando piadas
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato").show();
                   $('.msgAcerto,.msgErro').hide();
@@ -272,22 +126,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                     label.html("&nbsp;").addClass("checked");
                   }
                 });
-                
-                //valida form votacao
-                var validator2 = $('.form-votacao').validate({
-                submitHandler: function(form){
-                  sendAnswer()
-                },
-                rules:{
-                    opcao:{
-                      required: true
-                    }
-                  },
-                  messages:{
-                    opcao: "Escolha uma opção para votar."
-                  }
-                });
-            });
+              });
             
             // Contador de Caracters
               function limitText (limitField, limitNum, textCounter)
@@ -297,38 +136,13 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               else
                 $(textCounter).html(limitNum - limitField.value.length);
               }
-              
-              //enviar voto
-              function sendAnswer(){
-                $.ajax({
-                  type: "POST",
-                  dataType: "json",
-                  data: $("#e<?php echo $a_piadas[0]->Asset->getId()?>").serialize(),
-                  url: "<?php echo url_for('homepage')?>ajax/enquetes",
-                  beforeSend: function(){
-                    $('.btn-barra.votacao').hide();
-                    $('#ajax-loader').show();
-                  },
-                  success: function(data){
-                    $(".form-votacao, asax-loader").hide();
-                    $("#resultado-piada").fadeIn("fast");
-                    var i=0;
-                    $.each(data, function(key, val) {
-                      $('.parcial-'+i).html("<li><p>PIADA "+(i+1)+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
-                      i++;
-                    });
-                   
-                  }
-                });
-                
-              }
             </script>
             <!--SCRIPT-->
             
             <!--MSG ACERTO-->
             <div class="msgAcerto" style="display:none">
               <p>
-                Sua piada foi recebida com sucesso!<br/><br/>
+                Sua idéia foi recebida com sucesso!<br/><br/>
                 O conteúdo será avaliado pela equipe<br/>
                 responsável e as selecionadas<br/>
                 serão publicadas.<br/><br/>
@@ -338,7 +152,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               </p>
               <div class="btn-barra">
                 <span class="pontaBarra"></span>
-                <a href="javascript:;" id="enviar-outra">enviar outra piada</a>
+                <a href="javascript:;" id="enviar-outra">enviar outra idéia mirabolante</a>
                 <span class="caudaBarra"></span>
               </div>  
               
@@ -347,7 +161,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
             <!--MSG ERRO-->
             <div class="msgErro" style="display:none">
               <p>
-                Sua piada foi não foi enviada com sucesso<br/>
+                Sua idéia foi não foi enviada com sucesso<br/>
                 Por favor, tente novamente
               </p>
               <div class="btn-barra">
@@ -371,7 +185,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 </div>
                 
                 <div class="linha t3">
-                  <label>nome dos pais ou reponsável legal</label>
+                  <label>NOME DOS PAIS OU RESPONSÁVEL LEGAL</label>
                   <input type="text" name="nomePais" id="nomePais" class="required" placeholder="Nome Completo"/>
                 </div>
                 
@@ -421,7 +235,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               </div>
               
               <div class="linha t3">
-                <label>piada</label>
+                <label>ideia mirabolante</label>
                 <textarea name="piada" id="piada" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
                 <p class="txt-10"><span id="textCounter">400</span> caracteres restantes</p>                                       
               </div>
@@ -430,23 +244,23 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               <div class="linha t1 regulamento">
                 
                   <ul>
-                    <li class="bold">Regulamento SESSÃO PIADA RÁ TIM BUM</br></li> 
-                    <li class="bold">1. Participação:</li>
+                    <li class="bold">Regulamento IDEIAS MIRABOLANTES</li>
+                    <li class="bold">Participação:</li>
                     <li>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta à crianças representadas por seus pais ou responsáveis legais.</li>
-                    <li>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar uma piada escrita. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</li> 
-                    <li><span class="bold">1.1</span> Os textos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, endereço, e-mail e título da piada.</li>
+                    <li>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto com sua idéia. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</li>
+                    <li><span class="bold">1.1</span> Os textos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email, website (opcional), título da ideia, endereço.</li>
                     <li class="bold">2. Critérios de Seleção:</li>
-                    <li><span class="bold">2.1</span> A seleção das piadas serão feita pela equipe de Produção da TV RÁ TIM BUM! e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</li>
+                    <li><span class="bold">2.1</span> A seleção dos textos serão feita pela equipe de Produção da TV RÁ TIM BUM! e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</li>                 
                     <li><span class="bold">2.2</span> Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</li>
-                    <li><span class="bold">2.3</span> Cada criança poderá participar enviando quantas piadas desejar.</li>
-                    <li class="bold">3. Considerações Gerais:</li>
-                    <li><span class="bold">3.1</span> Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV RÁ TIM BUM! intitulada SESSÃO PIADA RÁ TIM BUM! e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</li>
-                    <li><span class="bold">3.2</span> A FPA não aceitará qualquer texto que contenha exposição de nomes de pessoas em situações vexatórias, incitando o preconceito, violência e que  contenham apelo sexual ou ao consumismo exacerbado.</li>
+                    <li><span class="bold">2.3</span> Cada criança poderá participar enviando quantas ideias desejar.</li>
+                    <li class="bold">3. Considerações Gerais:</li>                    
+                    <li><span class="bold">3.1</span> Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV RÁ TIM BUM! intitulada IDEIAS MIRABOLANTES e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</li>
+                    <li><span class="bold">3.2</span> A FPA não aceitará qualquer texto que contenha exposição de nomes de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</li>
                     <li><span class="bold">3.3</span> Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV RÁ TIM BUM! referida no item 2.1 deste Regulamento.</li>
                     <li><span class="bold">3.4</span> A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</li>
                     <li><span class="bold">3.5</span> Os textos serão publicados no site tvratimbum.com.br e os melhores poderão ser exibidos na programação da TV RÁ TIM BUM!</li>
                  </ul>
-                    
+      
               </div>
               
               <div class="linha t5">
@@ -460,8 +274,8 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>
                 <div id="enviando" align="center"style="display:none">
-                  <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
-                  Enviando piada, aguarde um momentinho...
+                  <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
+                  Enviando idéia, aguarde um momentinho...
                 </div>  
               </div>
             </form>
@@ -482,7 +296,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
          ?>
               <div class="galeriaVideos">
                 <div class="enunciado">
-                  <h2><span class="mais">+</span>Piadas</h2>
+                  <h2><span class="mais">+</span>Ideias Mirabolantes</h2>
                 </div>
                 <span class="alcaA"></span>
                 <span class="alcaB"></span>
@@ -507,7 +321,9 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
           <?php
             endif;
            endif;?>
-        <!--/VIDEOS-->
+        <!--VIDEOS-->
+        
+        
         <!--VIDEOS-ESPECIAL-->
         <?php //include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
         <!--/VIDEOS-ESPECIAL-->

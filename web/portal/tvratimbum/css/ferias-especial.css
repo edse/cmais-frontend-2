@@ -46,6 +46,56 @@
 /* /CARRROSSEL VIDEOS */
 
 /* CONCURSO PIADA */
+#ferias h2.tit-destaque-ferias{color: #11B19C;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 0 0 0 10px !important; clear:both;width:100%;padding:0 0 0 10px;}
+#ferias iframe{width:640px; height: 390px;margin:0 0 0 0;}
+#ferias .contato iframe{width:310px; height: 210px}
+#ferias .contato #destaque-ferias{width: 310px;height: 210px;float: left;padding: 10px 16px 0px 10px;}
+#ferias .contato #destaque-texto-ferias p{margin-bottom:3px; clear:none !important;font-size:14px;padding: 37px 10px 10px 0;line-height: 18px;}
+#ferias .galeriaVideos {float: left;position: relative;width: 300px;margin: 20px 0 0 20px;}
+#ferias .galeriaVideos .listaGaleria,
+#ferias .galeriaVideos .enunciado {width: 300px;}
+#ferias .galeriaVideos .enunciado h2 {color: #11B19C;}
+#ferias .galeriaVideos .listaGaleria .wrappperlistaGaleria {width: 300px;height: 521px;}
+#ferias .galeriaVideos .enunciado h2 .mais {background: url("../image/bg-icoCross.png") repeat scroll 0 -201px transparent;}
+
+.conteudoWrapper .conteudo {width: 940px !important;}
+#ferias #piada-da-semana{float:left;width:940px;margin: 20px 20px 0 20px;position:relative;}
+#ferias #piada-destaque{background-color: #E8F7F5;width: 90%;border-radius: 10px;margin: -133px 0 20px 50px;overflow: hidden;min-height: 120px;}
+#ferias #piada-destaque #logo-piada{margin:-7px 0 0 -57px;float:left;}
+#ferias #piada-destaque #container-piada{float: right;width: 723px;padding: 20px;color:#6b6b6b; font-weight:bold;}
+#ferias #piada-destaque #container-piada p{color:#6b6b6b !important;}
+#ferias #piada-destaque #assinatura{text-align:right;padding-top: 20px;}
+
+#ferias h2{line-height:27px; padding:2px 0 30px 0 !important; color: #11B19C;font-size: 18px;font-weight: bold;text-transform: uppercase;padding: 15px;}
+#ferias a.btn-lista-piadas{font-weight: bold;font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
+#ferias a.btn-lista-piadas:hover{text-decoration:none; background-color: #59c9ba;}
+#ferias #votacao-piada label{font-weight: bold; text-transform: uppercase;}
+#ferias #votacao-piada label p{font-weight: normal; margin:0 12px 0 20px; text-transform: none;}
+#ferias #votacao-piada label span{margin:0 0 0 18px; text-transform: none;}
+#ferias #votacao-piada form input{height:18px; float:left;margin:0 5px 0 0;}
+#ferias #votacao-piada form .btn-barra{width:924px !important; margin:20px 0 0 0;}
+#ferias #votacao-piada form .btn-barra input#votar{border-radius: 0;margin: 0;width: 874px !important;height: 22px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%;}
+#ferias #votacao-piada form label.error{position: absolute;bottom: 24px;left: 19px;font-weight: bold;color: red;}
+
+#ferias #resultado-piada .classificacao p{font-weight: bold; margin:0 0 3px 0;}
+#ferias #resultado-piada .classificacao span{font-weight: bold; float:left;}
+#ferias #resultado-piada .classificacao li{overflow: hidden;}
+#ferias #resultado-piada .classificacao .progress-success{width:800px; margin:0 10px 10px 10px; float:left;}
+#ferias #resultado-piada .classificacao .progress-success .bar{background: #12b19d !important;}
+  
+#ferias #listao-piada a.btn-lista-piadas{font-weight: bold;font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
+#ferias #listao-piada a.btn-lista-piadas:hover{text-decoration:none; background-color: #59c9ba;}
+#ferias #listao-piada h2{line-height:27px;padding:2px 0 30px 0 !important; color: #11B19C;font-size: 18px;font-weight: bold;text-transform: uppercase;padding: 15px;}
+#ferias #listao-piada ul li{overflow: hidden; margin: 0; padding:10px 6px;}
+#ferias #listao-piada ul li span{padding-top: 6px; float:right; margin:0 35px 0 0; color:#6b6b6b; font-weight:bold;}
+#ferias #listao-piada .btn-barra{width:924px !important; margin:20px 0 0 0;}
+#ferias #listao-piada .btn-barra input#carregar-mais{border:0; width: 874px !important;height: 22px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%;}
+#ferias #listao-piada span.picote {background: url(../image/bg-picote.png) repeat-x;border: none;display: block;height: 3px; margin:0 18px 0 0}
+#ferias.listao hr{margin: 0; height: 0;}
+#ferias #infinite_scroll{overflow-y: scroll !important; height:400px !important;} 
+#ferias .lista-piadas #box-especial-interna .lista-programas li {float: left;margin: 10px 5px 10px 0;width: 906px;}
+
+/* foi excluido da pg
 #ferias #cantinho-da-piada{float:right;width:290px;background:white; margin:10px 0 0 0;}
 #ferias #cantinho-da-piada .topo {background: url("../image/bg-sprite.png") repeat-x scroll 0 -216px;border: 1px solid white;float: left;width: 258px;height: 27px;}
 #ferias #cantinho-da-piada .topo a.enunciado {color:white;float: left;font-size: 20px;margin: 1px 0 0 10px;text-transform: uppercase;}
@@ -54,10 +104,10 @@
 #ferias #cantinho-da-piada .carrossel-piada p{padding:10px; font-size:14px;}
 #ferias #cantinho-da-piada .carrossel-piada #assinatura-piada p{font-weight:bold; text-align: right;}
 #ferias #cantinho-da-piada .carrossel-piada .jcarousel-item {width: 290px;height:auto;}
-
+*/
 
 #ferias #form-piada{width:640px; float:left;background-color: #fff;position:relative;margin:10px 0 0 0;padding: 20px 0 0 0;}
-#ferias #form-piada .contato form{padding: 20px 20px;}
+#ferias #form-piada .contato form{padding: 0 10px;}
 #ferias #form-piada .contato .t3{width:598px;}
 #ferias #form-piada .contato form textarea,
 #ferias #form-piada .contato form .t3 input {width: 594px;border-radius:8px;background: #f0f3f3;border: 1px solid #dddfe0;padding-left: 2px;color: #6b6b6b;}
@@ -65,7 +115,7 @@
 #ferias #form-piada .contato form .t1 label,
 #ferias #form-piada .contato form .t1 input{width: 523px;}
 #ferias #form-piada .picote{bottom: 0;position: absolute;width: 637px;}
-#ferias #form-piada span.titulo{color: #11b19c; margin:20px 20px 25px 20px !important;}
+#ferias #form-piada span.titulo{color: #11b19c; margin:20px 20px 25px 0px !important;}
 #ferias #form-piada label{color: #6b6b6b;}
 #ferias #form-piada span.titulo,
 #ferias #form-piada label{font-size:15px; font-weight:bold;} 
@@ -87,7 +137,7 @@
 #ferias .contato form #regulamento {width:20px;float:left;}
 #ferias .contato form .regulamento {border: 1px solid #BFBFBF;height: 193px;overflow-y: scroll;width: 638px;padding: 5px;margin-right: 0;}
 #ferias .contato form .btn-barra{background-color:#DDDFE0;height: 23px;float: left;width: 100%;}
-#ferias .contato form .btn-barra input#enviar{width: 548px !important;height: 21px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%}
+#ferias .contato form .btn-barra input#enviar{width: 568px !important;height: 21px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%}
 #ferias .contato form .estado.error{border:1px solid red !important;}
 form label.error{display:block !important;}
 #form-contato label.error {background-color: #F5D6CC;color:#863F27 !important;display: none;font-size: 12px !important;margin-top: 4px;width: 100%;text-align: center;font-weight: lighter !important;}

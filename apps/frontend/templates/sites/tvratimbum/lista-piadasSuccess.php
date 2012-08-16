@@ -52,7 +52,7 @@ if(count($block) > 0){
         return "page="+$('#pag').val()+"&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1";
       },
       start : function() {
-        $('<div class="loading"><img src="/portal/tvratimbum/image/loading.gif"/></div>').appendTo(this);
+        $('<div class="loading" style="width:220px;margin:20px auto;"><img src="/portal/images/ajax-loader-especial.gif"/></div>').appendTo(this);
       },
       ScrollAfterHeight : 95,     //this is the height in percentage
       onload : function( data ) {
@@ -94,7 +94,7 @@ if(count($block) > 0){
     <!--/MENU RA-TIM-BUM-->
     
     <!--CONTEUDO INTERNAS-->
-    <div id="ferias" class="conteudo internas">
+    <div id="ferias" class="conteudo internas listao">
       
       <!--COLUNA MAIOR-->
       <div class="colunaMaior">

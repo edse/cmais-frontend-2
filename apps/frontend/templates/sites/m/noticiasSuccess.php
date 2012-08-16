@@ -72,6 +72,14 @@
       mais notícias
     </a>  
   </div>
+  
+    <!-- mobile320x50 -->
+  <div id='div-gpt-ad-1344351883965-0' class="banner">
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1344351883965-0')});
+    </script>
+  </div>
+  <!-- mobile320x50 -->
 
 </div>
 <!--/NOTICIAS-->

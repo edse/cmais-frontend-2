@@ -50,11 +50,11 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*/HEADER CMAIS PRINCIPAL */
 
 /*CONTEUDO*/
-#cmais{min-height: 250px;margin-bottom: -15px;}
+#cmais{min-height: 250px;margin-bottom: -15px;overflow: hidden; height: auto;}
 /*/CONTEUDO*/
 
 /*BANNER*/
-.banner{margin:20px}
+.banner{display:block; margin:20px auto; width:320px;height: 50px;}
 /*/BANNER*/
 
 /*HOME*/
@@ -181,7 +181,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*GRADE COMPLETA*/
 .accordin .artigo .ui-grid-a a{height:100%; width:100%;position:absolute; z-index: 2; top:0; left:0 }
 .grade .ui-collapsible-content{position:relative;}
-.grade {font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;margin-bottom:60px;background:none;padding-top:13px; }
+.grade {font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;background:none;padding-top:13px; }
 .grade p{margin:0px;}
 .grade .ui-btn-inner{padding:0px;}
 .grade h2{font-size: 1.1em; margin:0 0 13px 12px !important; text-align:left;}
@@ -226,7 +226,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .noticias .ui-block p.foto {padding:0 0 0 10px;margin:0;width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px;}
 .noticias .ui-block-b p.foto{ line-height:16px;color:#333;float:left;margin:0 5px 0 5px; width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px; overflow: hidden;}
 .noticias .fotinho{width:75px; height:47px;margin:2px 0 0 10px !important;}
-.noticias {margin-bottom: 60px !important;}
+/*.noticias {margin-bottom: 60px !important;}*/
 .noticias .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
 .noticias .mais:hover{color:#FFF !important;}
 .noticias .mais:active{color:#FFF !important;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
