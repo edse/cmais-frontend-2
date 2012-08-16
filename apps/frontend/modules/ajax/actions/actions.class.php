@@ -979,7 +979,7 @@ class ajaxActions extends sfActions
 	            ?>
               <li>
                 <p><?php echo $a->AssetContent->getContent()?></p>
-                <span><?php echo $a->AssetContent->getDescription()?></span>
+                <span><?php echo $a->getDescription()?></span>
               </li>
               <span class="picote"></span>
 	            <?php
