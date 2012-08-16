@@ -84,10 +84,10 @@
                 <?php endif; ?>
               </div>
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
-              <!--div class="descricao">
-                <a class="titulos" href="http://univesptv.cmais.com.br/o-artista-e-a-cidade-parte-1-marisa-florido-cesar"><?php echo $asset->getDescription(); ?></a>
-                <p><?php echo html_entity_decode($asset->getDescription()) ?></p>
-              </div-->
+              <div class="descricao">
+                <a class="titulos" href="#"><?php echo $asset->getTitle(); ?></a>
+                <p><?php echo $asset->getDescription() ?></p>
+              </div>
 							<?php
 								if($asset->AssetType->getSlug() == "content") 
 								echo html_entity_decode($asset->AssetContent->render());
@@ -331,7 +331,12 @@
             <p class="titulos" href="#">Lista de Aulas</p>
             <ul class="lista-aulas">
             	<?php foreach($assets as $k=>$d): ?>
-              <li class="ativo"><a <?php if ($d->id == $asset->id): ?>class="ativo"<?php endif; ?> href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>"> <span>aula <br /> <?php echo ($k+1); ?></span> <?php echo $d->getTitle(); ?> </a></li>
+              <li class="ativo">
+              	<a <?php if ($d->id == $asset->id): ?>class="ativo"<?php endif; ?> href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
+              		<span>aula <br /> <?php echo ($k+1); ?></span> <?php echo $d->getTitle(); ?>
+              	</a>
+              </li>
+              <p style="color:#999; font-style: italic; margin-left:63px;"><?php echo $d->getDescription() ?></p>
               <?php endforeach; ?>
             </ul>
             <?php else: ?>
