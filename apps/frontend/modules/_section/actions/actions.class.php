@@ -980,11 +980,16 @@ class _sectionActions extends sfActions
     if(!isset($pagelimit))
       $pagelimit = 9;
     if(isset($this->assetsQuery)){
-      $this->pager = new sfDoctrinePager('Asset', $pagelimit);
-      $this->pager->setQuery($this->assetsQuery);
-      $this->pager->setPage($request->getParameter('page', 1));
-      $this->pager->init();
-      $this->page = $request->getParameter('page');
+    	if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+    		$this->assets = $this->assetsQuery->execute();
+    	}
+			else{
+	      $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+	      $this->pager->setQuery($this->assetsQuery);
+	      $this->pager->setPage($request->getParameter('page', 1));
+	      $this->pager->init();
+	      $this->page = $request->getParameter('page');
+	    }
     }
 		
 		if($this->section->Site->getSlug() == "sic") {
@@ -1138,8 +1143,14 @@ class _sectionActions extends sfActions
           $test = @end(explode("-",$this->site->getSlug()));
           if($test != "old"){
             if($this->site->Program->getIsACourse()){
-              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
+	            if($request->getParameter('test') == 1) {
+	              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv-copy/curso';
+	              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv-copy/curso');
+							}
+							else {
+	              if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso';
+	              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/curso');
+							}
             }
             else{
               if($debug) print "<br>3.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesp-tv-copy/programa';
