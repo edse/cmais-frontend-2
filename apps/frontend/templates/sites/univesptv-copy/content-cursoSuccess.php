@@ -335,8 +335,8 @@
               	<a <?php if ($d->id == $asset->id): ?>class="ativo"<?php endif; ?> href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
               		<span>aula <br /> <?php echo ($k+1); ?></span> <?php echo $d->getTitle(); ?>
               	</a>
+              	<p style="color:#999; font-style: italic; margin-left:63px;"><?php echo $d->getDescription() ?></p>
               </li>
-              <p style="color:#999; font-style: italic; margin-left:63px;"><?php echo $d->getDescription() ?></p>
               <?php endforeach; ?>
             </ul>
             <?php else: ?>
