@@ -147,7 +147,7 @@
                       <hr />
                     </div>
                     <form id="bloco-notas" class="form-horizontal">
-                    	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="" />
+                    	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="1" />
                       <fieldset>
                         <div class="control-group">
                           <div class="controls">

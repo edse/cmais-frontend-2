@@ -270,8 +270,7 @@ class _assetActions extends sfActions
             $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
             while(list($campo, $valor) = each($_REQUEST)) {
               if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-								if($valor != "")
-                	$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+               	$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
             }
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
