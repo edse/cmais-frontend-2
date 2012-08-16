@@ -195,9 +195,9 @@ if(isset($assets)){
                 <li>
                 	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 		<span>aula <br /> <?php echo $k+1; ?></span>
-                		<?php echo $d->getTitle() ?>
+                		<?php echo $d->getTitle() ?>z'
                 	</a>
-                	<p><?php echo $d->getDescription() ?></p>
+                	<p style="color:grey; font-style: italic"><?php echo $d->getDescription() ?></p>
                 </li>
                 <?php endforeach; ?>
               </ul>
