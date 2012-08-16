@@ -113,7 +113,16 @@
       </div>
       <!--/ASSET-->
       <?php include_partial_from_folder('sites/m', 'global/topoAsset', array('asset'=>$asset)) ?> 
-      <div class="espaco30"></div>  
+      <div class="espaco30"></div> 
+      
+      <!-- mobile320x50 -->
+      <div id='div-gpt-ad-1344351883965-0' class="banner">
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1344351883965-0')});
+        </script>
+      </div>
+      <!-- mobile320x50 -->
+   
   </div>
   <!--/CONTEUDO Content-->
   
