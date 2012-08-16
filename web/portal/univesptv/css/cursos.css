@@ -35,14 +35,14 @@ input, textarea, select, .uneditable-input { border-radius:0; }
 .box-compartilhar .comentar:hover { color:#fff; }
 
 .capa { margin-top:70px; }
-.bg-site { background:url(/portal/images/capaPrograma/univesptv-copy/bg-topo.jpg); height:586px; }
+.bg-site { background:url(/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; }
 #barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left;  }
 .titulos { font-size:22px; margin-bottom:10px; text-align:left;}
 #capa-site { margin-top:-586px !important; }
 .box-destaque { margin:45px 0; border: solid 5px #ccc; width:955px; clear:both; }
 .carrossel { margin:0; clear: both; text-align:left; width:970px;}
 .carrossel .jcarousel-next,
-.carrossel .jcarousel-prev { background: url(/portal/images/capaPrograma/univesptv-copy/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
+.carrossel .jcarousel-prev { background: url(/portal/images/capaPrograma/univesptv/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
 .carrossel .jcarousel-clip{ width:880px; height:130px; left:40px;  }
 .carrossel .jcarousel-prev {left:0; }
 .carrossel .jcarousel-next { background-position:-20px 0; right:0;}
