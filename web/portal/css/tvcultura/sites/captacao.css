@@ -106,3 +106,4 @@
 #esquerda .menu-publicidade li {display:list-item !important; font-family:Arial,Verdana, Geneva,Helvetica, sans-serif; font-size: 14px; font-weight: normal;}
 .grade ul li{list-style: disc !important; margin-left: 31px !important;}
 
+.box-playlist a { max-height:88px; }
