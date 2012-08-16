@@ -129,8 +129,9 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                             <li>
                               <input type="radio" name="opcao" id="opcao-piada-<?php echo $value->getId();?>" class="form-contato" value="<?php echo $value->getId();?>"  />
                               <label for="opcao-piada-<?php echo $value->getId();?>">
-                                <?php echo $value->Asset->getTitle();?>
-                                <?php echo $content."<span>(".$description.")</span>";?>
+                                
+                                <?php echo $description ?>
+                                <?php echo $content?>
                               </label>
                             </li>
                             <?php
@@ -167,7 +168,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                    ?>
                    <ul class="parcial-<?php echo $i?> classificacao">
                       <li>
-                        <p><?php echo $value->Asset->getTitle();?></p> 
+                        <p><?php echo $displays["piada-destaque-semana"][$i]->getDescription();;?></p> 
                         <span>00%</span>
                         <div class="progress progress-success">
                            <div class="bar" style="width: 40%"></div>
@@ -297,7 +298,17 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               else
                 $(textCounter).html(limitNum - limitField.value.length);
               }
+
+              <?php
               
+                echo "var nome = new Array();";
+                foreach($a_piadas as $key=>$value){
+                  $c = $value->Asset->retriveRelatedAssetsByAssetTypeId(1);
+                  $c = preg_replace('/\s/',' ',$c[0]->getDescription());
+                  echo "nome[".$key."]= '".$c."';";
+                }
+               
+               ?>
               //enviar voto
               function sendAnswer(){
                 $.ajax({
@@ -314,7 +325,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                     $("#resultado-piada").fadeIn("fast");
                     var i=0;
                     $.each(data, function(key, val) {
-                      $('.parcial-'+i).html("<li><p>PIADA "+(i+1)+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+                      $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
                       i++;
                     });
                    
