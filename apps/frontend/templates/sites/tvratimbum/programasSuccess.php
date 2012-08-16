@@ -77,6 +77,7 @@
           <div class="lista-programas">
             <ul>
             <?php foreach($programs as $p): ?>
+            	<?php if(isset($p->Site->id)): ?>
               <li>
                 <div class="boxPersonagens-tip">
                   <a href="<?php echo $p->retriveUrl()?>">
@@ -85,6 +86,7 @@
                   </a>
                 </div>
               </li>
+              <?php endif; ?>
             <?php endforeach; ?>
             </ul>
           </div>
