@@ -226,8 +226,9 @@ class _assetActions extends sfActions
 
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
       $t = explode("-old", $this->asset->getSlug());
-      if($_REQUEST["debug"]==1){
-        echo $this->section->Site->getSlug();
+      if(isset($_REQUEST["debug"])){
+      	if ($_REQUEST["debug"]==1)
+        	echo $this->section->Site->getSlug();
       }
       if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
@@ -269,7 +270,7 @@ class _assetActions extends sfActions
             $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
             while(list($campo, $valor) = each($_REQUEST)) {
               if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-                $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+               	$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
             }
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";

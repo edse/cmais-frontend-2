@@ -25,7 +25,7 @@
     <div class="topo-programa">
       <?php if(isset($program) && $program->id > 0):
       ?>
-      <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <img src="/portal/images/capaPrograma/univesptv-copy/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> </a></h2>
+      <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <img src="/portal/images/capaPrograma/univesptv/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> </a></h2>
       <?php endif;?>
       <h2 class="cursos-livres">Cursos Livres <br /> Para Todos</h2>
     </div>
@@ -147,7 +147,7 @@
                       <hr />
                     </div>
                     <form id="bloco-notas" class="form-horizontal">
-                    	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="sim" />
+                    	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="1" />
                       <fieldset>
                         <div class="control-group">
                           <div class="controls">
