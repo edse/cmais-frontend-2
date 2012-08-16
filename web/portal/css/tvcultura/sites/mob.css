@@ -53,6 +53,10 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 #cmais{min-height: 250px;margin-bottom: -15px;}
 /*/CONTEUDO*/
 
+/*BANNER*/
+.banner{margin:20px}
+/*/BANNER*/
+
 /*HOME*/
 .progamacaoDia .gradeCompleta{padding: 8px 14px 8px 8px;text-shadow: none;top: -28px;color: white;text-decoration: none;background: url(/portal/images/capaPrograma/mob/grade-completa.png) no-repeat right;font-size: 0.9em;text-align: center;line-height: 17px;float: right !important;width: 105px;position: relative;right: 15px;border-radius: 5px;}
 .progamacaoDia .grade{padding-top: 20px;}
