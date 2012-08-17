@@ -23,12 +23,8 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <?php if(isset($program) && $program->id > 0):
-      ?>
-      <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <img src="/portal/images/capaPrograma/univesptv/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> </a></h2>
-      <?php endif;?>
-      <h2 class="cursos-livres">Cursos Livres <br /> Para Todos</h2>
-    </div>
+			<?php include_partial_from_folder('sites/univesptv','global/topo', array('site'=>$site)) ?>
+		</div>
   </div>
   <!-- /BARRA SITE -->
   <!-- MIOLO -->
