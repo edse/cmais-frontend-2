@@ -169,18 +169,19 @@
 			<?php endif; ?>	
 		</ul>	
 		<!--/PROGRAMAS-->
+		
+    <!-- mobile320x50 -->
+    <div id="banner-320x50" class="banner">
+      <script type='text/javascript'>
+      GA_googleFillSlot("mobile2-320x50");
+      </script>
+    </div>
+    <!-- mobile320x50 -->
+    
 	</div>
 	<!-- /CONTEUDO -->
 	
-	  <!-- mobile320x50 -->
-  <div id='div-gpt-ad-1344351883965-0' class="banner">
-    <script type='text/javascript'>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1344351883965-0')});
-    </script>
-  </div>
-  <!-- mobile320x50 -->
-		
-	<!--FOOTER-->
+  <!--FOOTER-->
 	<div class="footerLive degrade" align="center">
 		
 		<div class="voltarLive" align="center">
