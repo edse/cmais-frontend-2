@@ -293,9 +293,11 @@
 	                      <option value="<?php echo $d->retriveUrl() ?>"<?php if($d->Site->getId() == $site->getId()) echo 'selected="selected"'; ?>><?php echo $d->getTitle() ?></option>
 	                    <?php endforeach; ?>
                     </select>
+                    <?php /*
                     <button class="btn" type="button" id="submitCurso">
                       OK
                     </button>
+										 */ ?> 
                   </div>
                 </div>
                 <?php endif; ?>
@@ -319,9 +321,11 @@
                         <option value="<?php echo $d->retriveUrl() ?>"<?php if($d->getId() == $section->getId()) echo 'selected="selected"'; ?>><?php echo $d->getTitle() ?></option>
                       <?php endforeach; ?>
                     </select>
+                    <?php /*
                     <button class="btn" type="button" id="submitDisciplina">
                       OK
                     </button>
+										 */ ?>
                   </div>
                 </div>
                 <?php endif; ?>
