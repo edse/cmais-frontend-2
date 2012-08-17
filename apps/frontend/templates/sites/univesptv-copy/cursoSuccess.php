@@ -157,6 +157,7 @@ if(isset($assets)){
                   ->execute();
               ?>
               <script>
+              	/*
               	$(function(){
               		$('#submitDisciplina').click(function(){
               			var url = $('#select01 :selected').val();
@@ -166,6 +167,7 @@ if(isset($assets)){
 	              			alert("Escolha uma disciplina");
               		});
               	});
+              	*/
               </script>
 			        <?php if(count($sections) >= 1): ?>
               <form class="form-horizontal">
@@ -173,15 +175,17 @@ if(isset($assets)){
                   <div class="control-group">
                     <label for="select01" class="control-label titulos">Navegue pelas Disciplinas</label>
                     <div class="controls">
-                      <select id="select01">
+                      <select id="select01" onchange="if(this.options[this.selectedIndex].value!='--') self.location.href=this.options[this.selectedIndex].value;">
                         <option value=""> </option>
                       	<?php foreach($sections as $d): ?>
                         <option value="<?php echo $d->retriveUrl() ?>"<?php if($d->id == $section->id) echo 'selected="selected"'; ?>><?php echo $d->getTitle() ?></option>
                         <?php endforeach; ?>
                       </select>
+                      <?php /*
                       <button class="btn" type="button" id="submitDisciplina">
                         OK
                       </button>
+											 */ ?>
                     </div>
                   </div>
                 </fieldset>

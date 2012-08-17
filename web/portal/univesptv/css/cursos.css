@@ -129,7 +129,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .material li,
 .material a { color:#333; }
 .span3.dir { margin-left:20px; width:310px; float:left; }
-.dir select { width: 267px; }
+.dir select { width: 309px; }
 .box-compartilhar .comentar { text-indent:-9999px; }
 .box-compartilhar .comentar span {display:none;}  
 .btn-compartilhar {float:left;}

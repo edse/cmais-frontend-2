@@ -224,7 +224,7 @@
 	              <?php if (isset($displays['sobre-o-curso'])): ?>
 	              	<?php if (count($displays['sobre-o-curso']) > 0): ?>
                 <p class="titulos"><?php echo $displays['sobre-o-curso'][0]->Block->getTitle() ?></p>
-                <a href="/<?php echo $site->getSlug() ?>" title="<?php echo $displays['sobre-o-curso'][0]->getTitle() ?>"><?php echo $displays['sobre-o-curso'][0]->Asset->AssetContent->render() ?></a>
+                <p><?php echo $displays['sobre-o-curso'][0]->Asset->AssetContent->render() ?></p>
               	<br/>
               		<?php endif; ?>
               	<?php endif; ?>
@@ -250,6 +250,7 @@
             <?php endif; ?>
             
             <script>
+            /*
             	$(function(){
             		$('#submitCurso').click(function(){
             			var url = $('#select01 :selected').val();
@@ -266,6 +267,7 @@
               			alert("Escolha uma disciplina");
             		});
             	});
+            	*/
             </script>
             
             <form class="form-horizontal" id="disciplinas">
@@ -285,15 +287,17 @@
               	<div class="control-group">
                   <label for="select01" class="control-label titulos">Navegue pelos Cursos</label>
                   <div class="controls">
-                    <select id="select01">
+                    <select id="select01" onchange="if(this.options[this.selectedIndex].value!='--') self.location.href=this.options[this.selectedIndex].value;">
                         <option value=""> </option>
 	                    <?php foreach($programs as $d): ?>
 	                      <option value="<?php echo $d->retriveUrl() ?>"<?php if($d->Site->getId() == $site->getId()) echo 'selected="selected"'; ?>><?php echo $d->getTitle() ?></option>
 	                    <?php endforeach; ?>
                     </select>
+                    <?php /*
                     <button class="btn" type="button" id="submitCurso">
                       OK
                     </button>
+										 */ ?> 
                   </div>
                 </div>
                 <?php endif; ?>
@@ -311,15 +315,17 @@
                 <div class="control-group">
                   <label for="select02" class="control-label titulos">Navegue pelas Disciplinas</label>
                   <div class="controls">
-                    <select id="select02">
+                    <select id="select02" onchange="if(this.options[this.selectedIndex].value!='--') self.location.href=this.options[this.selectedIndex].value;">
                       <option value=""> </option>
                       <?php foreach($sections as $d): ?>
                         <option value="<?php echo $d->retriveUrl() ?>"<?php if($d->getId() == $section->getId()) echo 'selected="selected"'; ?>><?php echo $d->getTitle() ?></option>
                       <?php endforeach; ?>
                     </select>
+                    <?php /*
                     <button class="btn" type="button" id="submitDisciplina">
                       OK
                     </button>
+										 */ ?>
                   </div>
                 </div>
                 <?php endif; ?>

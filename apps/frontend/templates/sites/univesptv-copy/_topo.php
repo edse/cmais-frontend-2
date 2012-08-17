@@ -1,5 +1,5 @@
 <h2>
-	<a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
+	<a href="/cursos" style="text-decoration: none;">
 		<img src="/portal/images/capaPrograma/univesptv/logo.png" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
 	</a>
 </h2>
