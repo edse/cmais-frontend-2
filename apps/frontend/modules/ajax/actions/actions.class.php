@@ -979,7 +979,7 @@ class ajaxActions extends sfActions
 	            ?>
 	            <script>
               $(document).ready(function(){
-                $('.loading.inicial').hide();
+                $('.loading.inicial').remove();
               });
               </script>
               <li>
