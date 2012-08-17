@@ -47,7 +47,7 @@
             </ul>
             
             <div class="span7 esq">
-              <p class="titulos"><?php echo $asset->getTitle() ?></p>
+              <p class="titulos"><?php echo $site->getTitle() ?></p>
               <?php
 	              if($asset->AssetType->getSlug() == "video") 
 	                $video = $asset;
@@ -85,7 +85,7 @@
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
               <div class="descricao">
                 <h2 class="titulos"><?php echo $video->getTitle(); ?></h2>
-                <p><?php echo $asset->getDescription() ?></p>
+                <p><?php echo $video->getDescription() ?></p>
               </div>
 							<?php
 								if($asset->AssetType->getSlug() == "content") 
