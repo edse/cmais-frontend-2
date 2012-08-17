@@ -42,7 +42,7 @@
        
       
         <div class="box-contador">
-          <p>AO VIVO DE 2ª a 6ª, ÀS 11H</p>
+          <p>AO VIVO DE 2ª a 6ª, ÀS 11H30</p>
       <!--       
           <div id="countdown_dashboard">
             <div class="dash days_dash">
