@@ -20,9 +20,9 @@
       	<p class="eleicoes">Eleições 2012 - Debate</p>
       	<!--a href="http://cmais.com.br/debate" class="eleicoes" title="Eleições 2012 - Debate">Eleições 2012 - Debate</a-->
       	<ul class="patrocinio">
-      		<li><a href="http://www.estadao.com.br/" class="estadao" title="Estadão" target="_blank">Estadão</a></li>
-      		<li><a href="Carla Gimenes de Sena" class="cultura" title="TV Cultura" target="_blank">TV Cultura</a></li>
-      		<li><a href="#" class="youtube" title="Youtube" target="_blank">Youtube</a></li>
+      		<li class="estadao">Estadão</li>
+      		<li class="cultura">TV Cultura</li>
+      		<li class="youtube">Youtube</li>
       	</ul>
         <!-- curtir -->
         <div class="redes">
