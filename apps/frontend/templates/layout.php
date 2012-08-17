@@ -46,7 +46,6 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-arteecultura-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-educacao-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-grade-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250-2");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-jornalismo-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-musica-300x250");
@@ -85,6 +84,7 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
     </script>
     <script type='text/javascript'>
     GA_googleFetchAds();
