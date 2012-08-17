@@ -2,19 +2,17 @@
 <html>
   <head> 
   <!--PUBLICIDADE-->
-  <script type='text/javascript'>
-    (function() {
-      var useSSL = 'https:' == document.location.protocol;
-      var src = (useSSL ? 'https:' : 'http:') +
-      '//www.googletagservices.com/tag/js/gpt_mobile.js';
-      document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-    })();
+  <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
   </script>
   <script type='text/javascript'>
-    googletag.cmd.push(function() {
-    googletag.defineSlot('/4079539/mobile320x50', [320, 50], 'div-gpt-ad-1344351883965-0').addService(googletag.pubads());
-    googletag.enableServices();
-    });
+  GS_googleAddAdSenseService("ca-pub-6681834746443470");
+  GS_googleEnableAllServices();
+  </script>
+  <script type='text/javascript'>
+  GA_googleAddSlot("ca-pub-6681834746443470", "mobile2-320x50");
+  </script>
+  <script type='text/javascript'>
+  GA_googleFetchAds();
   </script>
   <!--/PUBLICIDADE-->  
   <title>cmais+ Mobile</title> 
