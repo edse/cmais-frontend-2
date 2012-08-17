@@ -44,6 +44,7 @@ if(count($block) > 0){
 </script>
 <!--SCRIPT-->
 <script>
+  
   function loadScroll(){
     var page = 2;
     $('#infinite_scroll').scrollLoad({
@@ -151,7 +152,11 @@ if(count($block) > 0){
                 
                 <h2>LISTÃO DE PIADAS</h2>
                 <!--LISTA-PIADA-->
+                <div class="loading inicial" style="width:220px;margin:20px auto;">
+                  <img src="/portal/images/ajax-loader-especial.gif"/>
+                </div>
                 <ul class="lista-piadas" id="infinite_scroll">
+                
                   <!--li>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         In iaculis diam eget enim porta id consectetur massa venenatis. 
