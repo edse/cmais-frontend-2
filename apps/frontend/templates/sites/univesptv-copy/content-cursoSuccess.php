@@ -72,12 +72,10 @@
               </p>
               <div class="botoes">
               	<?php //die($assetPrev); ?>
-              	<?php if(isset($assetPrev)): ?>
-                <a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-                <?php endif; ?>
-                <?php if(isset($assetNext)): ?>
-                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-                <?php endif; ?>
+              	
+                <a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn <?php if(!isset($assetPrev)): ?>disabled<?php endif;?>" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn <?php if(!isset($assetNext)): ?>disabled<?php endif;?>" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+                
               </div>
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
               <div class="descricao">
