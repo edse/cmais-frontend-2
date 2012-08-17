@@ -2,16 +2,16 @@
 body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 .bg-site{ top:0 !important;  }
 #rodape-portal { margin-top:-37px; }
-#conteudo-pagina { background: #fff;    overflow: hidden; }
+#conteudo-pagina { background: #fff;    overflow: hidden; min-height:800px; }
 #capa-site { margin-top:0 !important; padding-bottom:50px; }
 .conteudo { margin:20px; overflow:hidden; }
 .streaming {margin:10px 0;}
 #barra-site { background: #b32439; height:141px; width: 970px; float:right; margin:0; }
 #miolo { margin-top:0; }
 #chamada { margin-bottom:0; }
-#barra-site h2 { background:url(/portal/images/capaPrograma/debate/data.png) no-repeat; text-indent:-9999px; width:307px; height:24px; margin:60px 0 10px 30px;  }
+#barra-site h2 { background:url(/portal/images/capaPrograma/debate/data.png) no-repeat; text-indent:-9999px; width:327px; height:24px; margin:60px 0 10px 30px;  }
 #barra-site .redes { position:absolute; bottom:25px; left:30px; margin:0;}
-.eleicoes { text-indent:-9999px; background:url(/portal/images/capaPrograma/debate/debate.png) no-repeat; width:148px; height:120px; float:left; display: block; margin:12px 63px 0 77px; }
+.eleicoes { text-indent:-9999px; background:url(/portal/images/capaPrograma/debate/debate.png) no-repeat; width:148px; height:120px; float:left; display: block; margin:12px 53px 0 67px; }
 .patrocinio { float:left; margin:38px 30px 0 0; }
 .patrocinio li { float: left; width: auto; margin-right:8px; }
 .patrocinio a { display:block; text-indent:-9999px;}
@@ -62,3 +62,10 @@ body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 #menu-portal .menu-aberto .abas li:hover a {background: #9e2a37 !important;}
 #menu-portal-2 li a:hover {background: #9e2a37 !important;}
 #menu-rodape { margin-bottom:0; }
+.home-debate #esquerda { margin:20px 7px; }
+.home-debate #direita { margin: 20px 0; }
+.home-debate .box-padrao .titulos, 
+.home-debate .noticia p, 
+.home-debate .box-padrao .chapeu, 
+.home-debate .conteudo a { color:#333; }
+.home-debate .box-padrao img { margin-left:10px; }
