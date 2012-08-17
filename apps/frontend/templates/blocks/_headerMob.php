@@ -86,7 +86,7 @@
     
     <!-- BOTAO AO VIVO -->
     <div class="aovivo" align="center">
-      <a href="/aovivo" data-transition="slidedown">
+      <a href="/aovivo" data-transition="slidedown" rel="external">
         <img src="/portal/images/capaPrograma/mob/aovivo.png" width="90%">
       </a>
     </div>  
