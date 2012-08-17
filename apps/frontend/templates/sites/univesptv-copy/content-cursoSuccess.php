@@ -238,7 +238,7 @@
               	<a href="<?php echo $displays['professor'][0]->retriveUrl() ?>" title="<?php echo $displays['professor'][0]->getTitle() ?>"><?php echo $displays['professor'][0]->getDescription() ?></a>
               			<?php else: ?>
               	<img src="<?php echo $displays['professor'][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays['professor'][0]->getTitle() ?>" />
-              	<p class="titulo"><?php echo $displays['professor'][0]->getTitle() ?></p>
+              	<p class="bold"><?php echo $displays['professor'][0]->getTitle() ?></p>
               	<p><?php echo $displays['professor'][0]->getDescription() ?></p>
               			<?php endif; ?>
               		<?php endif; ?>
