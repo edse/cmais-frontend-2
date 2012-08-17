@@ -74,12 +74,12 @@
 								<?php if(isset($assetPrev)): ?>              	
                 	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
                 <?php else: ?>
-                	<a href="#" class="btn disabled" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                	<a href="javascript:;" class="btn disabled" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
                 <?php endif; ?>
 								<?php if(isset($assetNext)): ?>              	
                 <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
                 <?php else: ?>
-                <a href="#" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+                <a href="javascript:;" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
                 <?php endif; ?>
               </div>
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
