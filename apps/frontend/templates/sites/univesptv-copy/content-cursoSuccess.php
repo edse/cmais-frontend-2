@@ -84,7 +84,7 @@
               </div>
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
               <div class="descricao">
-                <h2 class="titulos"><?php echo $video->getTitle(); ?></h2>
+                <p class="bold"><?php echo $video->getTitle(); ?></p>
                 <p><?php echo $video->getDescription() ?></p>
               </div>
 							<?php
