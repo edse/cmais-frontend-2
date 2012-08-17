@@ -53,7 +53,6 @@
           <!-- DESTAQUE 2 COLUNAS -->
           <div class="duas-colunas destaque grid2">
             <iframe width="640" height="390" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/dyC7vRvzA-g?rel=0&amp;wmode=transparent#t=0m0s" title="'Uma História Bonita e Feliz', por Silvio Brito"></iframe>
-            <a class="titulos" href="http://tvcultura.cmais.com.br/ensaio/uma-historia-bonita-e-feliz-por-silvio-brito">'Uma História Bonita e Feliz', por Silvio Brito</a>
             <p>Música é tema de seu novo show</p>
           </div>
           <!-- /DESTAQUE 2 COLUNAS -->
