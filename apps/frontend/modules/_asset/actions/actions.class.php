@@ -335,7 +335,8 @@ class _assetActions extends sfActions
 
     }
 		
-    if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+    //if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+    if ($this->site->Program->getIsACourse()) {
     	$sections = $this->asset->getSections();
 			
 			if (count($sections) > 0) {
@@ -541,7 +542,8 @@ class _assetActions extends sfActions
           elseif($this->asset->AssetType->getSlug() == "episode")
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/video-gallery');
           else
-						if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+						//if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
+						if ($this->site->Program->getIsACourse()) {
      					$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso');
 							if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso';
 						}
