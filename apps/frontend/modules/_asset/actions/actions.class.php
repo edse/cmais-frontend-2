@@ -227,8 +227,9 @@ class _assetActions extends sfActions
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
       $t = explode("-old", $this->asset->getSlug());
       if(isset($_REQUEST["debug"])){
-      	if ($_REQUEST["debug"]==1 && $this->section->Site->getSlug())
-        	echo $this->section->Site->getSlug();
+      	if ($_REQUEST["debug"]==1)
+					if ($this->section->Site->getSlug())
+        		echo $this->section->Site->getSlug();
       }
       if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
