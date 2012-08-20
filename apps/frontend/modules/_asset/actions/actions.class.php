@@ -228,8 +228,8 @@ class _assetActions extends sfActions
       $t = explode("-old", $this->asset->getSlug());
       if(isset($_REQUEST["debug"])){
       	if ($_REQUEST["debug"]==1)
-					if (isset($this->section->Site->getSlug()))
-        		echo $this->section->Site->getSlug();
+       		//echo $this->section->Site->getSlug();
+       		echo $this->Site->getSlug();
       }
       if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
