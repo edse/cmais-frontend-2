@@ -33,7 +33,7 @@
 								<li><a href="http://tvcultura.cmais.com.br/metropolis" title="Metr&oacute;polis">Metr&oacute;polis</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/provocacoes" title="Provoca&ccedil;&otilde;es">Provoca&ccedil;&otilde;es</a></li>
                 <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
-								<li><a href="http://tvcultura.cmais.com.br/reportereco" title="Reporter Eco">Reporter Eco</a></li>
+								<li><a href="http://tvcultura.cmais.com.br/reportereco" title="Reporter Eco">Repórter Eco</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/rodaviva" title="Roda Viva">Roda Viva</a></li>
 							</ul>
 							<ul>
