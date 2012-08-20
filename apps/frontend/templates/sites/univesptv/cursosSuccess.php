@@ -242,9 +242,7 @@
 					if ($('#humanidades ul li').length <= 3)
 						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
 					if ($('#ciencia ul li').length <= 3) {
-						//$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
-						$('#ciencia .jcarousel-next').addClass('jcarousel-next-disabled');
-						$('#ciencia .jcarousel-prev').addClass('jcarousel-prev-disabled');
+						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
 					}
 					if ($('#universidades ul li').length <= 3)
 						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
