@@ -7,28 +7,13 @@
 	//carrossel
 	$(function() {
 		$('.carrossel, .carrossel.cursos, .carrossel.politica, .carrossel.comunicacao').jcarousel({
-			scroll : 1
+			scroll : 1,
+			wrap:null
 		});
 	});
 </script>
-
-<!-- retirar o q nao for usar -->
+<!-- JS BOOTSTRAP -->
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
-<!--
-<script src="/portal/js/bootstrap/transition.js"></script>
-<script src="/portal/js/bootstrap/alert.js"></script>
-<script src="/portal/js/bootstrap/modal.js"></script>
-<script src="/portal/js/bootstrap/dropdown.js"></script>
-<script src="/portal/js/bootstrap/scrollspy.js"></script>
-<script src="/portal/js/bootstrap/tab.js"></script>
-<script src="/portal/js/bootstrap/tooltip.js"></script>
-<script src="/portal/js/bootstrap/popover.js"></script>
-<script src="/portal/js/bootstrap/button.js"></script>
-<script src="/portal/js/bootstrap/collapse.js"></script>
-<script src="/portal/js/bootstrap/carousel.js"></script>
-<script src="/portal/js/bootstrap/typeahead.js"></script>
--->
-<!-- /retirar o q nao for usar -->
 <!-- / JS BOOTSTRAP -->
 
 <?php use_helper('I18N', 'Date')
