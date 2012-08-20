@@ -68,3 +68,6 @@ body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 .home-debate .box-padrao .chapeu, 
 .home-debate .conteudo a { color:#333; }
 .home-debate .box-padrao img { margin-left:10px; }
+.home-debate .conteudo { margin:20px; overflow:hidden; }
+.novoNoAr .noAr-box .chapeu,
+.novoNoAr .noAr-box .titulos { color:#333; }
