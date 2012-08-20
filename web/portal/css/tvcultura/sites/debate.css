@@ -57,7 +57,7 @@ body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 .blocos li a.bg:hover { border-color:#9e2a37 !important;} 
 #menu-portal .menu-aberto .abas li.ativo a,
 #menu-portal .menu-aberto .abas li:hover a {background: #9e2a37 !important;}
-#menu-portal-2 li a:hover {background: #9e2a37 !important;}
+#menu-portal-2 li a:hover {background: #ff6633 !important;}
 #menu-rodape { margin-bottom:0; }
 .home-debate #esquerda { margin:20px 7px; }
 .home-debate #direita { margin: 20px 0; }
