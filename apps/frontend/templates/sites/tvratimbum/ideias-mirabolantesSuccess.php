@@ -67,7 +67,7 @@
         </div>
         <!--/BOX-ESPECIAL-INTERNA-->
                 
-        <!--FORM PIADA-->
+        <!--FORM IDEIAS MIRABOLANTES-->
         <div id="form-piada"> 
           <span class="alca pos01"></span>
           <span class="alca pos02"></span>
@@ -236,7 +236,7 @@
               
               <div class="linha t3">
                 <label>ideia mirabolante</label>
-                <textarea name="piada" id="piada" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
+                <textarea name="ideia" id="ideia" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
                 <p class="txt-10"><span id="textCounter">400</span> caracteres restantes</p>                                       
               </div>
               
@@ -287,7 +287,7 @@
           <!--/CONTATO-->
           
         </div>
-        <!--/FORM PIADA-->
+        <!--/FORM IDEIAS MIRABOLANTES-->
         
         <!--VIDEOS-->
         <?php 

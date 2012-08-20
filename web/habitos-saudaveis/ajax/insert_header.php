@@ -190,6 +190,7 @@
        <li class="m-educacao" style="float:right"><a title="Educação" href="http://cmais.com.br/educacao">Educação</a></li>
        <li class="m-arte-e-cultura " style="float:right"><a title="Arte &amp; Cultura" href="http://cmais.com.br/arte-e-cultura">Arte &amp; Cultura</a></li>
        <li class="m-jornalismo" style="float:right"><a title="Jornalismo" href="http://cmais.com.br/jornalismo">Jornalismo</a></li>
+       <li class="m-cursos" style="float:right"><a title="Cursos" href="http://univesptv.cmais.com.br/cursos">Cursos</a></li> 
       </ul> 
       <!--menu editorias-->
       

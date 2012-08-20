@@ -26,7 +26,7 @@
 </div>
 <div class="bg-site"></div>
 <!-- CAPA SITE -->
-<div id="capa-site">
+<div id="capa-site" class="home">
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
