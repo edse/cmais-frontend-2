@@ -238,13 +238,13 @@
         <script>
         $(function() {
 					if ($('#novos ul li').length	 <= 3)
-						$('#novos .jcarousel-next, #novos .jcarousel-prev').disabled();
+						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
 					if ($('#humanidades ul li').length <= 3)
-						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').disabled();
+						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
 					if ($('#ciencia ul li').length <= 3)
-						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').disabled();
+						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
 					if ($('#universidades ul li').length <= 3)
-						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').disabled();
+						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
 				});
         </script>
       
