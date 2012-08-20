@@ -194,8 +194,8 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .duas-colunas.destaque { margin-top:20px; }
 */
 
-.home #miolo { margin-top:-452px; }
-.home #conteudo-pagina { margin-top:452px; }
+#capa-site.home #miolo { margin-top:-452px; }
+#capa-site.home #conteudo-pagina { margin-top:452px; }
 
 /* IE */
 .carrossel .thumbnail { *height:150px; *background:#e0e0e0; }
