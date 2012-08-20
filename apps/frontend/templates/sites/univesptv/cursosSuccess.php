@@ -236,6 +236,14 @@
       </div>
       <!-- /CAPA -->
       
+        <script>
+        $(function() {
+					if ($('ul.thumbnails li').length <= 3)
+						$('.jcarousel-next, .jcarousel-prev').hide();
+				});
+        </script>
+      
+      
 			<?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?>
 			
     </div>
