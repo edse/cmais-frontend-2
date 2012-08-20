@@ -76,7 +76,7 @@
       <div class="capa grid3">
       	<?php if (isset($displays['destaque-1'])): ?>
       		<?php if (count($displays['destaque-1']) > 0): ?>
-        <div class="row">
+        <div class="row" id="novos">
           <div class="span10">
             <p class="titulos"><?php echo $displays['destaque-1'][0]->Block->getTitle(); ?></p>
             <div class="carrossel span10 cursos-novos">
@@ -117,7 +117,7 @@
         ?>
         <?php if (isset($displays['destaques'])): ?>
         	<?php if (count($displays['destaques']) > 0): ?>
-        <div class="row">
+        <div class="row" id="universidades">
           <div class="span10">
             <p class="titulos">Universidades</p>
             <a class="todos" href="/cursos/universidades">Ver todos</a>
@@ -162,7 +162,7 @@
         ?>
         <?php if (isset($displays['destaques'])): ?>
         	<?php if (count($displays['destaques']) > 0): ?>
-        <div class="row">
+        <div class="row" id="ciencia">
           <div class="span10">
             <p class="titulos">Ciência</p>
             <a class="todos" href="/cursos/ciencia">Ver todos</a>
@@ -207,7 +207,7 @@
         ?>
         <?php if (isset($displays['destaques'])): ?>
         	<?php if (count($displays['destaques']) > 0): ?>
-        <div class="row">
+        <div class="row" id="humanidades">
           <div class="span10">
             <p class="titulos">Humanidades</p>
             <a class="todos" href="/cursos/humanidades">Ver todos</a>
@@ -234,6 +234,21 @@
 				<?php endif; ?>       
       </div>
       <!-- /CAPA -->
+      
+        <script>
+        $(function() {
+					if ($('#novos ul li').length <= 3)
+						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
+					if ($('#humanidades ul li').length <= 3)
+						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
+					if ($('#ciencia ul li').length <= 3) {
+						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
+					}
+					if ($('#universidades ul li').length <= 3)
+						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
+				});
+        </script>
+      
       
 			<?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?>
 			
