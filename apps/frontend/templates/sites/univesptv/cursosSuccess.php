@@ -237,7 +237,7 @@
       
         <script>
         $(function() {
-					if ($('ul.thumbnails li').length <= 3)
+					if ($('.thumbnails li').length <= 3)
 						$('.jcarousel-next, .jcarousel-prev').hide();
 				});
         </script>
