@@ -84,6 +84,7 @@ $(function(){
                 <!-- /BOX PADRAO NOTICIAS -->
 
                 <!-- BOX PADRAO Para Ouvir -->
+                <!--
                 <div class="box-padrao box-borda grid1">
                   <div class="topo">
                     <span></span>
@@ -95,6 +96,7 @@ $(function(){
                   <div class="detalhe-borda grid1">
                   </div>
                 </div>
+                -->
                 <!-- /BOX PADRAO Para Ouvir -->
 
               </div>
@@ -120,6 +122,7 @@ $(function(){
                 <!-- /BOX NOTICIA-6 -->
 
                 <!-- BOX PADRAO Previsao -->
+                <!--
                 <?php if(isset($displays["destaque-previsao"])): ?>
                 <div class="box-padrao grid1">
                   <div class="topo azul">
@@ -133,6 +136,7 @@ $(function(){
                   </div>
                 </div>
                 <?php endif; ?>
+                -->
                 <!-- BOX PADRAO Previsao -->
 
               </div>
@@ -158,6 +162,7 @@ $(function(){
               <!-- / BOX PUBLICIDADE -->
 
               <!-- BOX PADRAO + Visitados -->
+              <!--
               <div class="box-padrao mais-visitados grid1">
                 <div class="topo">
                   <span></span>
@@ -167,6 +172,7 @@ $(function(){
                 </div>
                 <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"])) ?>
               </div>
+              -->
               <!-- /BOX PADRAO + Visitados -->
 
               <!-- BOX FACEBOOK -->
