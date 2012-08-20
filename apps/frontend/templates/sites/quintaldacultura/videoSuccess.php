@@ -198,7 +198,7 @@
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <div class="menuVoltar">
               <a href="/quintaldacultura" class="voltar"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
-              <a href="/quintaldacultura/videos" class="voltarBig"><span class="ico-voltar"></span><span class="tit">Vídeos</span></a>
+              <a href="/quintaldacultura/videos/todos" class="voltarBig"><span class="ico-voltar"></span><span class="tit">Vídeos</span></a>
               <p><?php echo $asset->getTitle() ?></p>
             </div>
             <hr />
