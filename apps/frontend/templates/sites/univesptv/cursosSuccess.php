@@ -12,8 +12,7 @@
 		});
 	});
 </script>
-
-<!-- retirar o q nao for usar -->
+<!-- JS BOOTSTRAP -->
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
 <!-- / JS BOOTSTRAP -->
 
