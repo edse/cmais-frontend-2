@@ -80,7 +80,7 @@
           <div class="span10">
             <p class="titulos"><?php echo $displays['destaque-1'][0]->Block->getTitle(); ?></p>
             <div class="carrossel span10 cursos-novos">
-              <ul class="thumbnails">
+              <ul class="thumbnails" id="novos">
 								<?php foreach($displays['destaque-1'] as $k=>$d): ?>
                 <li class="">
                 	<a class="thumbnail" href="<?php echo $d->retriveUrl(); ?>">
@@ -122,7 +122,7 @@
             <p class="titulos">Universidades</p>
             <a class="todos" href="/cursos/universidades">Ver todos</a>
             <div class="carrossel cursos span10">
-              <ul class="thumbnails">
+              <ul class="thumbnails" id="universidades">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
                 <li class="span3">
                  <div class="thumbnail">
@@ -167,7 +167,7 @@
             <p class="titulos">Ciência</p>
             <a class="todos" href="/cursos/ciencia">Ver todos</a>
             <div class="carrossel politica span10 cursos">
-              <ul class="thumbnails">
+              <ul class="thumbnails" id="ciencia">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
                 <li class="span3">
                  <div class="thumbnail">
@@ -212,7 +212,7 @@
             <p class="titulos">Humanidades</p>
             <a class="todos" href="/cursos/humanidades">Ver todos</a>
             <div class="carrossel comunicacao span10 cursos">
-              <ul class="thumbnails">
+              <ul class="thumbnails" id="humanidades">
               	<?php foreach($displays['destaques'] as $k=>$d): ?>
                 <li class="span3">
                  <div class="thumbnail">
@@ -234,6 +234,20 @@
 				<?php endif; ?>       
       </div>
       <!-- /CAPA -->
+      
+        <script>
+        $(function() {
+					if ($('#humanidades li').length <= 3)
+						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
+					if ($('#ciencia li').length <= 3)
+						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
+					if ($('#universidades li').length <= 3)
+						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
+					if ($('#novos li').length <= 3)
+						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
+				});
+        </script>
+      
       
 			<?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?>
 			
