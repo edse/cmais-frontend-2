@@ -88,7 +88,7 @@ hr{
   margin: auto;
   margin-top:3px;
   overflow: hidden;
-  /*padding: 0 auto*/
+  /*padding: 0 auto*/;
 }
 .contentWrapper .cerca{
   background: url(../images/cerca.png) repeat-x;
