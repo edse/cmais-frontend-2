@@ -52,8 +52,7 @@
         <div class="grid2" id="esquerda">
           <!-- DESTAQUE 2 COLUNAS -->
           <div class="duas-colunas destaque grid2">
-            <iframe width="640" height="390" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/dyC7vRvzA-g?rel=0&amp;wmode=transparent#t=0m0s" title="'Uma História Bonita e Feliz', por Silvio Brito"></iframe>
-            <p>Música é tema de seu novo show</p>
+            <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           </div>
           <!-- /DESTAQUE 2 COLUNAS -->
           
@@ -72,8 +71,7 @@
           <div class="box-publicidade grid1">
             <!-- programas-homepage-300x250 -->
             <script type='text/javascript'>
-				GA_googleFillSlot("cmais-homepage-300x250");
-
+				    GA_googleFillSlot("cmais-homepage-300x250");
             </script>
           </div>
           <!-- / BOX PUBLICIDADE -->
