@@ -7,8 +7,7 @@
 	//carrossel
 	$(function() {
 		$('.carrossel, .carrossel.cursos, .carrossel.politica, .carrossel.comunicacao').jcarousel({
-			scroll : 1,
-			wrap:"null"
+			scroll : 1
 		});
 	});
 </script>
