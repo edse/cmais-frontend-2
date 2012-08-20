@@ -1042,7 +1042,8 @@ class _sectionActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
       }else{
       	$parentSection = $this->section->getParent();
-      	if($this->site->getSlug()=="univesptv-copy" && $parentSection->getSlug() == "cursos") {
+      	//if($this->site->getSlug()=="univesptv-copy" && $parentSection->getSlug() == "cursos") {
+      	if($this->site->getSlug()=="univesptv" && $parentSection->getSlug() == "cursos") {
 		      if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos';
 		      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos');
 				}
