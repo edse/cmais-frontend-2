@@ -4,7 +4,6 @@ body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 #rodape-portal { margin-top:-37px; }
 #conteudo-pagina { background: #fff;    overflow: hidden; min-height:800px; }
 #capa-site { margin-top:0 !important; padding-bottom:50px; }
-.conteudo { margin:20px; overflow:hidden; }
 .streaming {margin:10px 0;}
 #barra-site { background: #b32439; height:141px; width: 970px; float:right; margin:0; }
 #miolo { margin-top:0; }
@@ -34,7 +33,6 @@ body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 .noticia p,
 .box-padrao .chapeu,
 .conteudo a { color:#fff; }
-
 .abas li.ativo a, .abas li:hover a {background-color: #9e2a37 !important;}
 .box-padrao .topo span {background: url(/portal/images/capaPrograma/debate/ponta-destaque2.png) no-repeat !important;}
 .proximasAtracoes .proximasAtracoes-box .gradeCompleta { color:#333; }
