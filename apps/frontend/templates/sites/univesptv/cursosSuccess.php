@@ -26,7 +26,7 @@
 </div>
 <div class="bg-site"></div>
 <!-- CAPA SITE -->
-<div id="capa-site">
+<div id="capa-site" class="home">
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
@@ -237,13 +237,12 @@
       
         <script>
         $(function() {
-					if ($('#novos ul li').length <= 3)
+					if ($('#novos ul li').length	 <= 3)
 						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
 					if ($('#humanidades ul li').length <= 3)
 						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
-					if ($('#ciencia ul li').length <= 3) {
+					if ($('#ciencia ul li').length <= 3)
 						$('#ciencia .jcarousel-next, #ciencia .jcarousel-prev').hide();
-					}
 					if ($('#universidades ul li').length <= 3)
 						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
 				});
