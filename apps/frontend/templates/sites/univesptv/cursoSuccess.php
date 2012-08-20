@@ -61,7 +61,7 @@ if(isset($assets)){
             </ul>
             <div class="span7 esq">
               <p class="titulos grd"><?php echo $site->getTitle() ?></p>
-              <div class="fb-like mg20" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
+              <div class="fb-like mg20" data-send="false" data-width="600" data-show-faces="false" data-action="recommend"></div>
               
               <!-- sobre o curso -->
 			      	<?php if (isset($displays['sobre-o-curso'])): ?>
