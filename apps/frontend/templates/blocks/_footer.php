@@ -28,12 +28,13 @@
 							<p class="tit">+Populares</p>
 							<ul>
 								<li><a href="http://tvcultura.cmais.com.br" class="tit">TV Cultura</a></li>
+								<li><a href="http://tvcultura.cmais.com.br/transito" title="Guia do Trânsito">Guia do Trânsito</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/jornaldacultura" title="Jornal da Cultura">Jornal da Cultura</a></li>
-								<li><a href="http://tvcultura.cmais.com.br/metropolis" title="Metropolis">Metropolis</a></li>
+								<li><a href="http://tvcultura.cmais.com.br/metropolis" title="Metr&oacute;polis">Metr&oacute;polis</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/provocacoes" title="Provoca&ccedil;&otilde;es">Provoca&ccedil;&otilde;es</a></li>
                 <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
+								<li><a href="http://tvcultura.cmais.com.br/reportereco" title="Reporter Eco">Reporter Eco</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/rodaviva" title="Roda Viva">Roda Viva</a></li>
-								<li><a href="http://tvcultura.cmais.com.br/transito" title="Guia do Trânsito">Guia do Trânsito</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www.culturabrasil.com.br/" class="tit" title="R&aacute;dio Cultura Brasil">R&aacute;dio Cultura Brasil</a></li>
