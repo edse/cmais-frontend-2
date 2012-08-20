@@ -17,8 +17,8 @@
     <div id="barra-site">
     
       	<h2>17 de setembro às 22h</h2>
-      	<p class="eleicoes">Eleições 2012 - Debate</p>
-      	<!--a href="http://cmais.com.br/debate" class="eleicoes" title="Eleições 2012 - Debate">Eleições 2012 - Debate</a-->
+      	<!--p class="eleicoes">Eleições 2012 - Debate</p-->
+      	<a href="http://cmais.com.br/debate" class="eleicoes" title="Eleições 2012 - Debate">Eleições 2012 - Debate</a>
       	<ul class="patrocinio">
       		<li class="estadao">Estadão</li>
       		<li class="cultura">TV Cultura</li>
@@ -30,7 +30,7 @@
             <div style="display:block; float: left; margin-right:10px;">
               <g:plusone size="medium" count="false"></g:plusone>
             </div>
-            <fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else:?><?php echo $uri ?><?php endif;?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+            <fb:like href="http://cmais.com.br/debate" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
           </div>
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else:?>tvcultura<?php endif;?>">Tweet</a>
         </div>
