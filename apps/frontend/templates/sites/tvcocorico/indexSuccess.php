@@ -40,7 +40,7 @@
       <!-- HORARIO -->
       <div id="horario-tv">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <a href="http://youtube.com.br" title="Canal TV Cocoricó">
+        <a href="http://youtube.com/tvcocorico" title="Canal TV Cocoricó">
           <img src="/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
         </a>
       </div>
