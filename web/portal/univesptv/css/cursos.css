@@ -197,6 +197,11 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 #capa-site.home #miolo { margin-top:-452px; }
 #capa-site.home #conteudo-pagina { margin-top:452px; }
 .bg-chamada { width:1012px; margin:0 auto; }
+#chamada { margin: 15px 0 -15px 42px; }
+
+
+
+
 /* IE */
 .carrossel .thumbnail { *height:150px; *background:#e0e0e0; }
 .cursos .thumbnails a { *clear:both; }
