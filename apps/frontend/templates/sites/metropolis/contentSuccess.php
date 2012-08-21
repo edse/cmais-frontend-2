@@ -71,7 +71,7 @@
           				<div class="boxNoticia-interna">
 		                    <p class="subtit"><?php echo $asset->getDescription() ?></p>
 		                    <div class="assinatura grid2">
-			                  <p class="sup"> <span><?php echo $asset->retriveLabel() ?></span></p>
+			                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
 			                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
 			                  <!--
 			                  <div class="acessibilidade">
