@@ -89,7 +89,7 @@
                   $("#form-contato").show();
                   $('#envia-ideia.btn-barra').show();
                   $('.msgAcerto,.msgErro,#enviando').hide();
-                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('')
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('');
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){

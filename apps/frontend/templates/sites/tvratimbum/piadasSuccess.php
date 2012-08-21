@@ -233,7 +233,8 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 
                 //enviando piadas
                 $('#enviar-outra, #tentar-enviar').click(function(){
-                  $("#form-contato").show();
+                  $("#form-contato, #enviar-piada.btn-barra").show();
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('');
                   $('.msgAcerto,.msgErro').hide();
                 });
                 var validator = $('#form-contato').validate({
@@ -242,22 +243,21 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                       type: "POST",
                       dataType: "text",
                       beforeSend: function(){
-                        $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
+                        $('#enviar-piada.btn-barra, .msgAcerto, .msgErro').hide();
                         $('img#ajax-loader, #enviando').show();
                       },
                       success: function(data){
                         $('input#enviar').show();
                         window.location.href="#";
                         if(data == "1"){
-                          //$("#form-contato").clearForm();
                           $("#form-contato").hide();
                           $('#enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
+                          $("#enviar-piada.btn-barra,.msgAcerto").show();
                         }
                         else {
                           $("#form-contato").hide();
                           $('img#ajax-loader, #enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgErro").show();
+                          $("#enviar-piada.btn-barra ,.msgErro").show();
                         }
                       }
                     });         
@@ -466,7 +466,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 
               </div>
               
-              <div class="btn-barra">
+              <div class="btn-barra" id="enviar-piada">
                 <span class="pontaBarra"></span>
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>
