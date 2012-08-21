@@ -70,6 +70,7 @@
 								}
 							?>
               </p>
+							<?php if(isset($assetPrev) xor isset($assetNext)): ?>
               <div class="botoes">
 								<?php if(isset($assetPrev)): ?>              	
                 	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
@@ -82,6 +83,7 @@
                 <a href="javascript:;" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
                 <?php endif; ?>
               </div>
+              <?php endif; ?>
               <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
               <div class="descricao">
                 <p class="bold"><?php echo $video->getTitle(); ?></p>
