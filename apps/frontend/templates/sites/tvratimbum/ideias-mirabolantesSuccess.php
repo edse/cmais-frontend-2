@@ -88,7 +88,7 @@
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato").show();
                   $('#envia-ideia.btn-barra').show();
-                  $('.msgAcerto,.msgErro').hide();
+                  $('.msgAcerto,.msgErro,#enviando').hide();
                   $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('')
                 });
                 var validator = $('#form-contato').validate({
