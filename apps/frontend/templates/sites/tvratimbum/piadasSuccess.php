@@ -249,7 +249,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                         $('input#enviar').show();
                         window.location.href="#";
                         if(data == "1"){
-                          $("#form-contato").clearForm();
+                          //$("#form-contato").clearForm();
                           $("#form-contato").hide();
                           $('#enviando').hide();
                           $(".caudaBarra,.pontaBarra,.msgAcerto").show();
