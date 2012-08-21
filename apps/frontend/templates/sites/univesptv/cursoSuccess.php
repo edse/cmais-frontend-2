@@ -98,7 +98,7 @@ if(isset($assets)){
               		<?php endforeach; ?>
               	<?php endif; ?>
               <?php endif; ?>
-              <!--/professor-->
+              <!--/professor2-->
               
 							<!-- material de apoio -->
 			      	<?php if (isset($displays['material-de-apoio'])): ?>
