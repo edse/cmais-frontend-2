@@ -131,7 +131,7 @@
                         if(data == "1"){
                           //$("#form-contato").clearForm();
                           $(".msgAcerto").show();
-                          $('img#ajax-loader').hide();
+                          $('img#ajax-loader, #form-contato').hide();
                         }
                         else {
                           $(".msgErro").show();
