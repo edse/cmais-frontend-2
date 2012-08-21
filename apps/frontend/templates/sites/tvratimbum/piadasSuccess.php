@@ -252,12 +252,12 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                         if(data == "1"){
                           $("#form-contato").hide();
                           $('#enviando').hide();
-                          $("#enviar-piada.btn-barra,.msgAcerto").show();
+                          $(".caudaBarra,.pontaBarra,,.msgAcerto").show();
                         }
                         else {
                           $("#form-contato").hide();
                           $('img#ajax-loader, #enviando').hide();
-                          $("#enviar-piada.btn-barra ,.msgErro").show();
+                          $(".caudaBarra,.pontaBarra,.msgErro").show();
                         }
                       }
                     });         
