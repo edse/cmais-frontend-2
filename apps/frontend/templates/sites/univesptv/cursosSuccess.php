@@ -236,6 +236,7 @@
       <!-- /CAPA -->
       
         <script>
+        /*
         $(function() {
 					if ($('#novos ul li').length <= 3)
 						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
@@ -246,6 +247,7 @@
 					if ($('#universidades ul li').length <= 3)
 						$('#universidades .jcarousel-next, #universidades .jcarousel-prev').hide();
 				});
+				*/
         </script>
       
       
