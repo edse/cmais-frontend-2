@@ -93,7 +93,13 @@ if(isset($assets)){
               <img src="<?php echo $d->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
               				<?php endif; ?>
               			<?php endif; ?>		
-              <p class="bold"><?php echo $d->getTitle() ?></p>
+              <p class="bold">
+              	<?php if($d->retriveUrl()): ?>
+              	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
+              	<?php else: ?>
+              	<?php echo $d->getTitle() ?>
+              	<?php endif; ?>
+              </p>
               <p><?php echo $d->getDescription() ?></p>
               		<?php endforeach; ?>
               	<?php endif; ?>
