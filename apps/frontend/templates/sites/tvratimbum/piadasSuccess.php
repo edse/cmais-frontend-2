@@ -144,8 +144,8 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                       <span class="pontaBarra"></span>
                       <input id="votar" type="submit" value="votar" />
                       <span class="caudaBarra"></span>
-                      <div id="enviando" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
+                      <div id="enviando-voto" align="center"style="display:none">
+                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
                   </div>
@@ -241,7 +241,6 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                     $.ajax({
                       type: "POST",
                       dataType: "text",
-                      data: $("#form-contato").serialize(),
                       beforeSend: function(){
                         $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
                         $('img#ajax-loader, #enviando').show();
@@ -250,7 +249,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                         $('input#enviar').show();
                         window.location.href="#";
                         if(data == "1"){
-                          $("#form-contato").clearForm();
+                          //$("#form-contato").clearForm();
                           $("#form-contato").hide();
                           $('#enviando').hide();
                           $(".caudaBarra,.pontaBarra,.msgAcerto").show();
@@ -319,10 +318,10 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                   url: "<?php echo url_for('homepage')?>ajax/enquetes",
                   beforeSend: function(){
                     $('.btn-barra.votacao').hide();
-                    $('#ajax-loader').show();
+                    $('#ajax-loader-b').show();
                   },
                   success: function(data){
-                    $(".form-votacao, asax-loader").hide();
+                    $(".form-votacao, #ajax-loader-b").hide();
                     $("#resultado-piada").fadeIn("fast");
                     var i=0;
                     $.each(data, function(key, val) {
