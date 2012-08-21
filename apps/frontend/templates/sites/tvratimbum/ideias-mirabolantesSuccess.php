@@ -105,7 +105,7 @@
                       },
                       success: function(data){
         
-                        window.location.href="#";
+                        window.location.href="javascript:;";
                         if(data == "1"){
                           $(".msgAcerto").show();
                           $('img#ajax-loader, #form-contato').hide();
