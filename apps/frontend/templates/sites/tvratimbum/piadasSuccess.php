@@ -191,7 +191,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               
               
               else:?>  
-              <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section)) ?>
+              <?php// include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section)) ?>
             
               <?php
                 endif;
