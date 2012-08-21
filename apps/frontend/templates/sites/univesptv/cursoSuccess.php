@@ -79,16 +79,32 @@ if(isset($assets)){
 			      			<?php foreach($displays['professor'] as $k=>$d): ?>
 			      				<?php if (isset($d->Asset)): ?>
 			      					<?php $relatedAssets = $d->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
-              <img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+             					<?php if (count($relatedAssets) > 0): ?>
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+              	<img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+              </a>
+             					<?php endif; ?>
+              			<?php else: ?>
+              				<?php if($d->retriveUrl()): ?>
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+              	<img src="<?php echo $d->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+              </a>
               				<?php else: ?>
               <img src="<?php echo $d->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
-              				<?php endif; ?>		
-              <p class="bold"><?php echo $d->getTitle() ?></p>
+              				<?php endif; ?>
+              			<?php endif; ?>		
+              <p class="bold">
+              	<?php if($d->retriveUrl()): ?>
+              	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
+              	<?php else: ?>
+              	<?php echo $d->getTitle() ?>
+              	<?php endif; ?>
+              </p>
               <p><?php echo $d->getDescription() ?></p>
               		<?php endforeach; ?>
               	<?php endif; ?>
               <?php endif; ?>
-              <!--/professor-->
+              <!--/professor2-->
               
 							<!-- material de apoio -->
 			      	<?php if (isset($displays['material-de-apoio'])): ?>
