@@ -91,7 +91,7 @@
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
-                    $.ajax({
+                    /*$.ajax({
                       type: "POST",
                       dataType: "text",
                       data: $("#form-contato").serialize(),
@@ -112,6 +112,30 @@
                           $("#form-contato").hide();
                           $('img#ajax-loader, #enviando').hide();
                           $(".caudaBarra,.pontaBarra,.msgErro").show();
+                        }
+                      }
+                    });*/
+                   $.ajax({
+                      type: "POST",
+                      dataType: "text",
+                      data: $("#form-contato").serialize(),
+                      beforeSend: function(){
+                        $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
+                        $('img#ajax-loader, #enviando').show();
+                        $(".msgAcerto").hide();
+                        $(".msgErro").hide();
+                      },
+                      success: function(data){
+        
+                        window.location.href="#";
+                        if(data == "1"){
+                          //$("#form-contato").clearForm();
+                          $(".msgAcerto").show();
+                          $('img#ajax-loader').hide();
+                        }
+                        else {
+                          $(".msgErro").show();
+                          $('img#ajax-loader').hide();
                         }
                       }
                     });         
