@@ -79,7 +79,7 @@ if(isset($assets)){
 			      			<?php foreach($displays['professor'] as $k=>$d): ?>
 			      				<?php if (isset($d->Asset)): ?>
 			      					<?php $relatedAssets = $d->Asset->retriveRelatedAssetsByRelationType('Preview') ?>
-              <img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $relatedAssets[0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" /></a>
               				<?php else: ?>
               <img src="<?php echo $d->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $d->getTitle() ?>" />
               				<?php endif; ?>		
