@@ -65,7 +65,7 @@
               	if($video->AssetVideo->getYoutubeId() != ""){
               		include_partial_from_folder('sites/univesptv','global/asset-2c-video', array('asset' => $video));
 								}
-              	if($video->AssetVideoGallery->getYoutubeId() != "") {
+								else if($video->AssetVideoGallery->getId() > 0) {
               		include_partial_from_folder('sites/univesptv','global/asset-2c-video', array('asset' => $video));
 								}
 							?>

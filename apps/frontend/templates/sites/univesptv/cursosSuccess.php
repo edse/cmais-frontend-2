@@ -6,7 +6,7 @@
 <script type="text/javascript">
 	//carrossel
 	$(function() {
-		$('.carrossel, .carrossel.cursos, .carrossel.politica, .carrossel.comunicacao').jcarousel({
+		$('.carrossel').jcarousel({
 			scroll : 1
 		});
 	});
@@ -237,7 +237,7 @@
       
         <script>
         $(function() {
-					if ($('#novos ul li').length	 <= 3)
+					if ($('#novos ul li').length <= 3)
 						$('#novos .jcarousel-next, #novos .jcarousel-prev').hide();
 					if ($('#humanidades ul li').length <= 3)
 						$('#humanidades .jcarousel-next, #humanidades .jcarousel-prev').hide();
