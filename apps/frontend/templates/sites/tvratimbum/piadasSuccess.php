@@ -248,7 +248,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                       },
                       success: function(data){
                         $('input#enviar').show();
-                        window.location.href="#";
+                        window.location.href="javascript:;";
                         if(data == "1"){
                           $("#form-contato").hide();
                           $('#enviando').hide();
