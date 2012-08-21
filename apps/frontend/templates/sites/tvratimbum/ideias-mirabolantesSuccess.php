@@ -87,7 +87,9 @@
                 
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato").show();
+                  $('#envia-ideia.btn-barra').show();
                   $('.msgAcerto,.msgErro').hide();
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('')
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
@@ -96,7 +98,7 @@
                       dataType: "text",
                       data: $("#form-contato").serialize(),
                       beforeSend: function(){
-                        $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
+                        $('#envia-ideia.btn-barra,.msgAcerto, .msgErro').hide();
                         $('img#ajax-loader, #enviando').show();
                         $(".msgAcerto").hide();
                         $(".msgErro").hide();
@@ -105,7 +107,6 @@
         
                         window.location.href="#";
                         if(data == "1"){
-                          //$("#form-contato").clearForm();
                           $(".msgAcerto").show();
                           $('img#ajax-loader, #form-contato').hide();
                         }
@@ -270,7 +271,7 @@
                 
               </div>
               
-              <div class="btn-barra">
+              <div class="btn-barra" id="envia-ideia">
                 <span class="pontaBarra"></span>
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>
