@@ -234,7 +234,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 //enviando piadas
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato, #enviar-piada.btn-barra").show();
-                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('');
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #piada').val('');
                   $('.msgAcerto,.msgErro').hide();
                 });
                 var validator = $('#form-contato').validate({
