@@ -35,7 +35,7 @@ input, textarea, select, .uneditable-input { border-radius:0; }
 .box-compartilhar .comentar:hover { color:#fff; }
 
 .capa { margin-top:70px; }
-.bg-site { background:url(/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; }
+.bg-site { background:url(/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; margin-top:3px; }
 #barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left;  }
 .titulos { font-size:22px; margin-bottom:10px; text-align:left;}
 #capa-site { margin-top:-586px !important; }
