@@ -204,7 +204,7 @@
             <hr />
             <div class="jogosBox papel video1">
               <div class="videointerna">
-                <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+                <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
                 <?php /*
                 <object style="height:390px; width: 640px">
                   <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0<?php echo $asset->AssetVideo->retriveStartFromParameter(); ?>">
