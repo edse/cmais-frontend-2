@@ -1,3 +1,4 @@
+body { background:#fff; }
 .bg-home {	background: #fff url(/portal/images/capaPrograma/univesptv/bg-univesp.jpg) repeat-x;	}
 #menu-portal-2 .busca-portal { float:none; margin:6px 0 0; }
 #menu-portal-2 .busca-portal .ipt-txt { height:auto; width: 109px; height:14px;  }
