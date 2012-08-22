@@ -6,6 +6,12 @@
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
 <!-- / JS BOOTSTRAP -->
+<script type="text/javascript">
+	$(function(){
+	    $("body").addClass('bg-interna');
+	}); 
+</script>
+
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
