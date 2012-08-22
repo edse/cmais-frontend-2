@@ -144,8 +144,8 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                       <span class="pontaBarra"></span>
                       <input id="votar" type="submit" value="votar" />
                       <span class="caudaBarra"></span>
-                      <div id="enviando" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
+                      <div id="enviando-voto" align="center"style="display:none">
+                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
                   </div>
@@ -191,7 +191,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               
               
               else:?>  
-              <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section)) ?>
+              <?php// include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section)) ?>
             
               <?php
                 endif;
@@ -233,7 +233,8 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 
                 //enviando piadas
                 $('#enviar-outra, #tentar-enviar').click(function(){
-                  $("#form-contato").show();
+                  $("#form-contato, #enviar-piada.btn-barra").show();
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #piada').val('');
                   $('.msgAcerto,.msgErro').hide();
                 });
                 var validator = $('#form-contato').validate({
@@ -241,18 +242,17 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                     $.ajax({
                       type: "POST",
                       dataType: "text",
-                      data: $("#form-contato").serialize(),
                       beforeSend: function(){
-                        $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
+                        $('#enviar-piada.btn-barra, .msgAcerto, .msgErro').hide();
                         $('img#ajax-loader, #enviando').show();
                       },
                       success: function(data){
                         $('input#enviar').show();
-                        window.location.href="#";
+                        window.location.href="javascript:;";
                         if(data == "1"){
-                          $("#form-contato").clearForm().hide();
+                          $("#form-contato").hide();
                           $('#enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
+                          $(".caudaBarra,.pontaBarra,,.msgAcerto").show();
                         }
                         else {
                           $("#form-contato").hide();
@@ -318,10 +318,10 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                   url: "<?php echo url_for('homepage')?>ajax/enquetes",
                   beforeSend: function(){
                     $('.btn-barra.votacao').hide();
-                    $('#ajax-loader').show();
+                    $('#ajax-loader-b').show();
                   },
                   success: function(data){
-                    $(".form-votacao, asax-loader").hide();
+                    $(".form-votacao, #ajax-loader-b").hide();
                     $("#resultado-piada").fadeIn("fast");
                     var i=0;
                     $.each(data, function(key, val) {
@@ -466,7 +466,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 
               </div>
               
-              <div class="btn-barra">
+              <div class="btn-barra" id="enviar-piada">
                 <span class="pontaBarra"></span>
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>

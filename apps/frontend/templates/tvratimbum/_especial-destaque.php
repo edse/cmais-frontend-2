@@ -24,12 +24,7 @@
     
     <!--TEXTO-->
     <div id="destaque-texto-ferias">
-      <p>
-        <?php //echo $displays[0]->Asset->getDescription() ?>
-        Ficamos sabendo que você é uma pessoa muito engraçada, piadista de plantão! É verdade?<br/><br/>
-        É porque a turma da <strong>TV RÁ TIM BUM!</strong> está querendo dar boas risadas e se você souber de alguma piada engraçada e quiser contar pra gente é só nos escrever!<br/><br/>
-        As piadas serão publicadas na nossa página e as mais divertidas serão gravadas pela <strong>“Voz”</strong>  da <strong>TV RÁ TIM BUM!</strong>
-      </p>
+      <p><?php echo $displays[0]->Asset->getDescription(); ?></p>
     </div>
     <!--/TEXTO-->
           <?php endif; ?>

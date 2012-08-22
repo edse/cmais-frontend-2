@@ -87,30 +87,32 @@
                 
                 $('#enviar-outra, #tentar-enviar').click(function(){
                   $("#form-contato").show();
-                  $('.msgAcerto,.msgErro').hide();
+                  $('#envia-ideia.btn-barra').show();
+                  $('.msgAcerto,.msgErro,#enviando').hide();
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('');
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
-                    $.ajax({
+                   $.ajax({
                       type: "POST",
                       dataType: "text",
                       data: $("#form-contato").serialize(),
                       beforeSend: function(){
-                        $('input#enviar,.caudaBarra,.pontaBarra,.msgAcerto, .msgErro').hide();
+                        $('#envia-ideia.btn-barra,.msgAcerto, .msgErro').hide();
                         $('img#ajax-loader, #enviando').show();
+                        $(".msgAcerto").hide();
+                        $(".msgErro").hide();
                       },
                       success: function(data){
-                        $('input#enviar').show();
-                        window.location.href="#";
+        
+                        window.location.href="javascript:;";
                         if(data == "1"){
-                          $("#form-contato").clearForm().hide();
-                          $('#enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgAcerto").show();
+                          $(".msgAcerto").show();
+                          $('img#ajax-loader, #form-contato').hide();
                         }
                         else {
-                          $("#form-contato").hide();
-                          $('img#ajax-loader, #enviando').hide();
-                          $(".caudaBarra,.pontaBarra,.msgErro").show();
+                          $(".msgErro").show();
+                          $('img#ajax-loader,  #form-contato').hide();
                         }
                       }
                     });         
@@ -269,7 +271,7 @@
                 
               </div>
               
-              <div class="btn-barra">
+              <div class="btn-barra" id="envia-ideia">
                 <span class="pontaBarra"></span>
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>
