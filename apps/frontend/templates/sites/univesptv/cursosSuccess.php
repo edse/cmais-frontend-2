@@ -10,7 +10,12 @@
 			scroll : 1
 		});
 	});
+	$(function(){
+	    $("body").addClass('bg-home');
+	});
 </script>
+
+
 <!-- JS BOOTSTRAP -->
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
 <!-- / JS BOOTSTRAP -->
