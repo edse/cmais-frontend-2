@@ -94,7 +94,7 @@ if(isset($assets)){
               				<?php endif; ?>
               			<?php endif; ?>		
               <p class="bold">
-              	<?php if($d->retriveUrl()): ?>
+              	<?php if($d->getUrl()): ?>
               	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
               	<?php else: ?>
               	<?php echo $d->getTitle() ?>
