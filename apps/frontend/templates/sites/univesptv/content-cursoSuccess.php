@@ -66,7 +66,7 @@
               		include_partial_from_folder('sites/univesptv','global/asset-2c-video', array('asset' => $video));
 								}
 								else if($video->AssetVideoGallery->getId() > 0) {
-              		include_partial_from_folder('sites/univesptv','global/asset-2c-video', array('asset' => $video));
+              		include_partial_from_folder('sites/univesptv','global/asset-2c-video', array('asset' => $video, 'ipad' => $ipad));
 								}
 							?>
               </p>

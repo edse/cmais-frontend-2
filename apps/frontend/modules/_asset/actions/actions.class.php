@@ -460,6 +460,10 @@ class _assetActions extends sfActions
       $debug = true;
     }
 
+		if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
+			$this->ipad = true;
+		}
+
     if($this->site->getSlug() == "maiscrianca")
       $this->setLayout(false);
 		
