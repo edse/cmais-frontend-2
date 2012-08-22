@@ -60,7 +60,7 @@
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 					
-					<?php include_partial_from_folder('sites/castelo','global/asset-2c-video', array('asset' => $asset)) ?>        	
+					<?php include_partial_from_folder('sites/castelo','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>        	
           
         </div>
         <!-- /CONTEUDO PAGINA -->

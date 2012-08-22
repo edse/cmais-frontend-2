@@ -1034,6 +1034,10 @@ class _sectionActions extends sfActions
         die();
       }
     }
+		
+		if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
+			$this->ipad = true;
+		}
     
     if(isset($this->category) && ($this->section->Parent->id > 0)){
     	

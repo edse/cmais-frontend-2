@@ -112,7 +112,7 @@ $(function(){
             <div id="esquerda" class="grid2">
               <div class="texto">
 
-              <?php if(isset($asset)) include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset)) ?>
+              <?php if(isset($asset)) include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
               
               <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
               <?php if(count($relacionados) > 0): ?>

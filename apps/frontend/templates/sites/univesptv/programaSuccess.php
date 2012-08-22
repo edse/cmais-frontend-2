@@ -108,7 +108,7 @@
                       ?>
                       <?php if(($video)&&(count($video)>0)): ?>
                       <div class="media grid2">
-                        <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video[0])) ?>
+                        <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video[0], 'ipad' => $ipad)) ?>
                       </div>
                       <?php endif; ?>
                                             
