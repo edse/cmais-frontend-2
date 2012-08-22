@@ -20,8 +20,10 @@ if(isset($assets)){
 			scroll : 1
 		});
 	});
-	
-	
+	$(function(){
+	    $("body").addClass('bg-interna');
+	}); 
+
 </script>
 
 <!-- / JS BOOTSTRAP -->
