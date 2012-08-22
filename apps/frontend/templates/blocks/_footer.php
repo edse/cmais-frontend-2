@@ -10,9 +10,8 @@
 							<li class="tit">Portal</li>
 							<li><a href="http://www.cmais.com.br" title="Home">Home</a></li>
 							<li><a href="http://www.cmais.com.br/videos" title="V&iacute;deos">V&iacute;deos</a></li>
-              				<li><a href="http://www.cmais.com.br/aovivo" title="Home">Ao Vivo</a></li>
-              				<li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
-							        <li><a href="http://www.cmais.com.br/expediente" title="Expediente">Expediente</a></li>
+      				<li><a href="http://www.cmais.com.br/aovivo" title="Home">Ao Vivo</a></li>
+			        <li><a href="http://www.cmais.com.br/expediente" title="Expediente">Expediente</a></li>
 						</ul>
 						<ul>
 							<li class="tit">Editorias</li>
@@ -87,11 +86,12 @@ ciências</a></li>
 							</ul>
 							<ul>
 								<li><a href="http://www2.tvcultura.com.br/fpa/" class="tit">Funda&ccedil;&atilde;o Padre Anchieta</a></li>
+								<li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informações ao Cidadão">SiC</a></li>
 								<li><a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" title="Licitações">Licitações</a></li>
 								<li><a href="http://cmais.com.br/captacao" title="Captacao">Capta&ccedil;&atilde;o</a></li>
 								<!-- <li><a href="http://www2.tvcultura.com.br/imprensa/" title="Imprensa">Imprensa</a></li> -->
+	      				<li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
 								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
-								<li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informações ao Cidadão">SiC</a></li>
 							</ul>
 							
               <a href="http://cmais.com.br/programas-de-a-z" class="tit todos">Todos os sites</a>

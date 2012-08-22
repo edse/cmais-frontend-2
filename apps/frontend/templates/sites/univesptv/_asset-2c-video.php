@@ -23,7 +23,7 @@
 
                   <?php elseif($asset->AssetType->getSlug() == "video-gallery" || $asset->AssetType->getSlug() == "episode"): ?>
                     <?php 
-                    if($asset->AssetType->getSlug() == "video-gallery")
+                    if($asset->AssetType->getSlug() == "video-gallery" && !$ipad)
                       $youtubeid = $asset->AssetVideoGallery->getYoutubeId();
                     else
                       $youtubeid = "";
