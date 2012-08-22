@@ -460,6 +460,7 @@ class _assetActions extends sfActions
       $debug = true;
     }
 
+    $this->ipad = false;
 		if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
 			$this->ipad = true;
 		}

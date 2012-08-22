@@ -1035,6 +1035,7 @@ class _sectionActions extends sfActions
       }
     }
 		
+		$this->ipad = false;
 		if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
 			$this->ipad = true;
 		}
