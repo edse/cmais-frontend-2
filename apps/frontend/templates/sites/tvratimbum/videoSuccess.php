@@ -59,7 +59,7 @@
             </div>
             <div class="info">
               <div id="video">
-                <iframe title="<?php echo $asset->getTitle() ?>" width="640" height="384" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                <iframe title="<?php echo $asset->getTitle() ?>" width="640" height="384" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0#t=0m0s" frameborder="0" allowfullscreen></iframe>
               </div>
               <h4><?php echo $asset->getTitle() ?></h4>
               <p><?php echo $asset->getDescription() ?></p>

@@ -16,11 +16,11 @@
                     <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
                     <object height="390" width="640" style="height:390px; width: 640px">
-                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
+                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1&amp;rel=0" />
                       <param name="allowFullScreen" value="true" />
                       <param name="allowscriptaccess" value="always" />
                       <param name="wmode" value="opaque">
-                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
+                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1&amp;rel=0" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
                   <?php else: ?>
                   	<?php if($displays[0]->getType() == "default" || $displays[0]->getLabel() == "transmissao"): ?>
