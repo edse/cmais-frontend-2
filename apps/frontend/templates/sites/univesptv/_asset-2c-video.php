@@ -60,9 +60,7 @@
                               <img class="img-150x90" src="<?php echo $dd->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $dd->getTitle() ?>" />
                             </a>
                             <?php endif; ?>
-                            <?php if($dd->retriveLabel() != ""): ?>
-                            <h3 class="chapeu"><?php echo $dd->retriveLabel() ?></h3>
-                            <?php endif; ?>
+                            <h3 class="chapeu"><?php echo $dd->getTitle() ?></h3>
                             <a href="<?php echo $dd->retriveUrl() ?>"><?php echo $dd->getDescription() ?></a>
                           </li>
                         <?php endforeach; ?>
