@@ -335,7 +335,7 @@
       <div id="redesnovo">
         <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto"></a>
         <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" id="apple" class="redesA" title=""></a>
-        <a href="https://plus.google.com/b/107290730774038797358/107290730774038797358" id="google" class="redesA" title=""></a>
+        <a href="http://google.com/+tvcultura" id="google" class="redesA" title=""></a>
         <a href="http://statigr.am/tvcultura" id="instangram" class="redesA" title=""></a>
         <a href="http://facebook.com/tvcultura" id="face" class="redesA" title=""></a>
         <a href="http://twitter.com/tvcultura" id="twit" class="redesA" title=""></a>
