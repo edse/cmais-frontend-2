@@ -105,11 +105,11 @@
                     <?php endif; ?>
                   <?php elseif($displays["destaque-1"][0]->Asset->AssetType->getSlug() == "video"): ?>
                     <object style="height:252px; width: 420px">
-                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-1"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer">
+                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-1"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
                       <param name="allowFullScreen" value="true">
                       <param name="allowScriptAccess" value="always">
                       <param name="wmode" value="opaque">
-                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-1"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
+                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-1"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
                     </object>
                   <?php else: ?>
                     <div style="width:420px; height:252px;"><h2><?php echo $displays["destaque-1"][0]->getTitle() ?></h2><h4><?php echo $displays["destaque-1"][0]->getDescription() ?></h4></div>
@@ -130,11 +130,11 @@
                     <?php endif; ?>
                   <?php elseif($displays["destaque-2"][0]->Asset->AssetType->getSlug() == "video"): ?>
                     <object style="height:252px; width: 420px">
-                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-2"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer">
+                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-2"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
                       <param name="allowFullScreen" value="true">
                       <param name="allowScriptAccess" value="always">
                       <param name="wmode" value="opaque">
-                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-2"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
+                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-2"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
                     </object>
                   <?php else: ?>
                     <div style="width:420px; height:252px;"><h2><?php echo $displays["destaque-2"][0]->getTitle() ?></h2><h4><?php echo $displays["destaque-2"][0]->getDescription() ?></h4></div>
@@ -155,11 +155,11 @@
                     <?php endif; ?>
                   <?php elseif($displays["destaque-3"][0]->Asset->AssetType->getSlug() == "video"): ?>
                     <object style="height:252px; width: 420px">
-                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-3"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer">
+                      <param name="movie" value="http://www.youtube.com/v/<?php echo $displays["destaque-3"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
                       <param name="allowFullScreen" value="true">
                       <param name="allowScriptAccess" value="always">
                       <param name="wmode" value="opaque">
-                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-3"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
+                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $displays["destaque-3"][0]->Asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="420" height="252"></embed>
                     </object>
                   <?php else: ?>
                     <div style="width:420px; height:252px;"><h2><?php echo $displays["destaque-3"][0]->getTitle() ?></h2><h4><?php echo $displays["destaque-3"][0]->getDescription() ?></h4></div>

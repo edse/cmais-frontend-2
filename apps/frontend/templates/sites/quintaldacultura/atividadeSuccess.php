@@ -151,11 +151,11 @@
                                     <div class="videoIntrucao">
                                       <div class="videoWrapperSmall">
                                       <object style="height:310px; width: 186px">
-                                        <param name="movie" value="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer">
+                                        <param name="movie" value="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
                                         <param name="allowFullScreen" value="true">
                                         <param name="allowScriptAccess" value="always">
                                         <param name="wmode" value="opaque">
-                                        <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="310" height="186"></embed>
+                                        <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="310" height="186"></embed>
                                       </object>
                                       </div>
                                     </div>

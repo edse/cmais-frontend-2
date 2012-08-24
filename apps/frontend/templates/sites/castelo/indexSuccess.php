@@ -18,7 +18,7 @@ echo "<br />#1 destaque YTID: " . $video -> Asset -> AssetVideo -> getYoutubeId(
   <div id="conteudo-pagina" class="castelo">
     <!--VIDEO-->
     <div class="video">
-      <iframe width="420" height="315" src="http://www.youtube.com/embed/<?php echo $video -> Asset -> AssetVideo -> getYoutubeId();?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/<?php echo $video -> Asset -> AssetVideo -> getYoutubeId();?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!--VIDEO-->
   </div>
