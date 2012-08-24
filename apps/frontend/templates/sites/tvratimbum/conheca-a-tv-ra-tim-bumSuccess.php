@@ -11,7 +11,7 @@
 <script type="text/javascript">
       //carrocel
       $(function(){
-        $('.carrossel').jcarousel({
+        $('.carrossel').jcarousel({ 
         wrap: "both"      
         });
       
