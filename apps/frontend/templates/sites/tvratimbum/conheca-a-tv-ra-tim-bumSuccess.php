@@ -349,7 +349,7 @@
             <div class="seLiga-box">
               <span class="top"></span>
               <div class="propaganda">
-                <a href="http://www.facebook.com/ratimbum" title="fanpage">
+                <a href="http://www.facebook.com/ratimbum" title="fanpage" target="_blank">
                   <img src="/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
                 </a>
               </div>
