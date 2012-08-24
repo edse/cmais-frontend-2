@@ -14,7 +14,7 @@
                   </a>
 
                   <?php elseif($asset->AssetType->getSlug() == "video"): ?>
-                    <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=opaque&rel=0" frameborder="0" allowfullscreen></iframe>
                     <?php /*
                     <object style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
@@ -33,7 +33,7 @@
                       $youtubeid = "";
                     ?>
                     <?php if($youtubeid != ""): ?>
-                    <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL<?php echo $youtubeid ?>&amp;hl=en_US&rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="640" height="390" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=opaque&rel=0" frameborder="0" allowfullscreen></iframe>
                     <?php /*
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $youtubeid ?>?version=3&amp;hl=en_US&amp;fs=1" />
