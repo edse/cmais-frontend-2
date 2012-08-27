@@ -1016,6 +1016,7 @@ class _sectionActions extends sfActions
       print "<br>Site>>".$this->site->id;
       print "<br>Seasons>>".count($this->seasons);
       print "<br>Assets: ".count($this->pager);
+      print "<br>Site Sections: ".count($this->siteSections);
       print "<br>section: ".$this->section->getSlug();
       print "<br>section: ".$sectionSlug;
       print "<br>section: ".$this->section->getId();
