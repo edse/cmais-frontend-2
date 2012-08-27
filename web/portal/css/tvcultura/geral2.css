@@ -404,7 +404,7 @@
 .carrossel-videos .media {width:310px; height:216px;}
 .carrossel-videos .abas-conteudo,
 .carrossel-videos .abas-conteudo li {/*height:345px;*/ height:auto; overflow:hidden;}
-.carrossel-videos .abas-conteudo li p {max-height:88px; width:290px;}
+.carrossel-videos .abas-conteudo li p {max-height:98px; width:290px;}
 .carrossel-videos .media .capa-video {width:310px; height:144px; position:absolute; top:20px; left:0; z-index:1000;}
 .carrossel-videos .titulos { font-size:16px; margin:10px 0 0 10px;}
 .carrossel-videos .box-compartilhar {position:absolute; bottom:0; left:0;}
