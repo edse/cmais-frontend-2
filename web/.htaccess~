@@ -80,4 +80,8 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 ## no, so we redirect to our front web controller
 #RewriteRule ^(.*)$ index.php [QSA,L]
 
+//301 Redirect Old File
+Redirect http://tvratimbum.cmais.com.br/MemoriaMidias.swf http:///tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf
+ 
+
 
