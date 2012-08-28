@@ -149,7 +149,7 @@
                       <span class="alerta"></span>
                       <div class="boxMsg">
                         <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Suas anotações sobre a aula <b><?php echo $site->getTitle() ?></b> foram enviadas ao e-mail fornecido.</p>
+                      <p>Suas anotações sobre <b><?php echo $site->getTitle() ?></b> foram enviadas ao e-mail fornecido.</p>
                       </div>
                       <hr />
                     </div>
