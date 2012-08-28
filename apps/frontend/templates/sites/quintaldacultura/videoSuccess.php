@@ -220,10 +220,10 @@
               <span class="palhaca"></span>
               <span class="palhaco"></span>
               --> 
-              <img class="palhacoVideo" src="/portal/quintal/back-novo/youtube-channel.png" border="0" usemap="#Map" />
-              <map name="Map" id="Map">
+              <img class="palhacoVideo" src="/portal/quintal/images/img-teobaldo.png" border="0" />
+              <!--<map name="Map" id="Map">
                 <area shape="poly" title="Conheça nosso canal no Youtube" target="_blank" href="http://www.youtube.com/user/quintaldacultura/videos" coords="169,501,116,494,133,265,106,263,96,248,64,236,18,238,10,152,116,143,129,98,114,74,154,13,209,25,230,79,212,119,261,133,363,9,386,22,341,100,318,188,287,187,269,210,255,217,324,353,339,456,357,497,354,522,170,541,165,529" href="#" />
-              </map>
+              </map>-->
               <!--div class="boxDesenho">
                 <ul class="dropdown">
                   <li class="">
