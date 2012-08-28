@@ -79,7 +79,7 @@ ciências</a></li>
 								<li class="tit">Pela Web</li>
 								<li><a href="http://www.facebook.com/tvcultura" title="Facebook">Facebook</a></li>
 								<li><a href="http://www.flickr.com/photos/televisaocultura" title="Flickr">Flickr</a></li>
-								<li><a href="https://plus.google.com/b/107290730774038797358/107290730774038797358" title="Google+">Google+</a></li>
+								<li><a href="https://google.com/+tvcultura" title="Google+">Google+</a></li>
 								<li><a href="http://statigr.am/tvcultura" title="Instagram">Instagram</a></li>
 								<li><a href="http://twitter.com/#!/tvcultura" title="Twitter">Twitter</a></li>
 								<li><a href="http://www.youtube.com/cultura" title="Youtube">Youtube</a></li>

@@ -149,7 +149,7 @@
                       <span class="alerta"></span>
                       <div class="boxMsg">
                         <p class="aviso">Mensagem enviada com sucesso!</p>
-                        <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p>Suas anotações sobre <b><?php echo $site->getTitle() ?></b> foram enviadas ao e-mail fornecido.</p>
                       </div>
                       <hr />
                     </div>

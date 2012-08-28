@@ -7,7 +7,7 @@
 #menu-rodape .abas .neutro a {float:left; padding:0 10px; background:#fff;}
 #menu-rodape .abas .neutro:hover span, 
 #menu-rodape .abas .neutro span { background: url("../../../images/detalhe-menu.png") no-repeat scroll transparent -13px 0; float: left;  height: 24px; width: 13px;}
-#menu-rodape .abas-conteudo {height:auto; margin-top:-8px; padding-top:0;}
+#menu-rodape .abas-conteudo {height:auto; margin-top:-8px; padding-top:0; position:relative;}
 #galeria-videos .blocos {height:auto; max-height:900px; overflow:hidden;}
 #galeria-videos .blocos ul {margin:10px 0; height:auto; max-height:880px;}
 #galeria-videos .blocos li {_margin:0 5px;}
@@ -52,3 +52,6 @@
 .busca form .campo-busca {padding-left:5px; border-right: none;}
 
 .abas li { margin-right:20px;}
+#galeria-videos .blocos,
+#menu-rodape .abas-conteudo { min-height:734px; }
+
