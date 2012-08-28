@@ -76,7 +76,12 @@
 								}
 							?>
               </p>
-							<?php if(isset($assetPrev) xor isset($assetNext)): ?>
+							<?php if(isset($assetPrev) && isset($assetNext)): ?>
+              <div class="botoes">
+               	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+              </div>
+							<?php else: ?>
               <div class="botoes">
 								<?php if(isset($assetPrev)): ?>              	
                 	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
@@ -149,7 +154,7 @@
                       <span class="alerta"></span>
                       <div class="boxMsg">
                         <p class="aviso">Mensagem enviada com sucesso!</p>
-                        <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p>Suas anotações sobre <b><?php echo $site->getTitle() ?></b> foram enviadas ao e-mail fornecido.</p>
                       </div>
                       <hr />
                     </div>

@@ -72,7 +72,7 @@ class _sectionActions extends sfActions
 					if ($this->section->getSlug() == "home") {
 						header("Location: http://tvcultura.cmais.com.br/rodaviva/transmissao");
 						die();
-					}	
+					}
 				}
 				else {
 					if ($this->section->getSlug() == "transmissao") {

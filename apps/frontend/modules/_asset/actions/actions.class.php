@@ -270,14 +270,25 @@ class _assetActions extends sfActions
             ini_set('sendmail_from', $email_site);
 						
 						if ($this->site->Program->getIsACourse())
-							$msg = "Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":";
+							$msg = "<p>Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":<p>";
 						else
             	$msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
-						
-            while(list($campo, $valor) = each($_REQUEST)) {
-              if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-               	$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
-            }
+		
+						if ($this->site->Program->getIsACourse()) {
+							while(list($campo, $valor) = each($_REQUEST)) {
+								if ($campo != "bloco-de-notas") {
+									if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+										$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+								}
+            	}
+						} 
+						else {
+							while(list($campo, $valor) = each($_REQUEST)) {
+								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+							}
+						}
+            
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "X-Priority: 3\r\n";
