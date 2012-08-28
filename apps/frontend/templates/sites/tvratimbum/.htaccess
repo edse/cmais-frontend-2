@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule /MemoriaMidias.swf http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf
