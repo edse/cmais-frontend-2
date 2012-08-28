@@ -270,7 +270,7 @@ class _assetActions extends sfActions
             ini_set('sendmail_from', $email_site);
 						
 						if ($this->site->Program->getIsACourse())
-							$msg = "Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":";
+							$msg = "<p>Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":<p>";
 						else
             	$msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
 						
