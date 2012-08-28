@@ -188,6 +188,15 @@ $(function(){
           <!-- MENU-RODAPE -->
           <?php if(isset($displays["ultimos-videos"])) include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $displays["ultimos-videos"])) ?>
           <!-- /MENU-RODAPE -->
+          
+          <!-- BOX PUBLICIDADE 2 -->
+          <div class="box-publicidade pub-grd grid3">
+            <!-- programas-assets-728x90 -->
+            <script type='text/javascript'>
+            GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+          <!-- / BOX PUBLICIDADE 2 -->
 
         </div>
         <!-- CONTEUDO PAGINA -->

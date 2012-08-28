@@ -72,7 +72,7 @@ class _sectionActions extends sfActions
 					if ($this->section->getSlug() == "home") {
 						header("Location: http://tvcultura.cmais.com.br/rodaviva/transmissao");
 						die();
-					}	
+					}
 				}
 				else {
 					if ($this->section->getSlug() == "transmissao") {
@@ -525,7 +525,6 @@ class _sectionActions extends sfActions
             ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
             ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
             ->orderBy('s.display_order')
-            ->limit(10)
             ->execute();
         }
         else{
@@ -539,7 +538,6 @@ class _sectionActions extends sfActions
               ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
               ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
               ->orderBy('s.display_order')
-              ->limit(10)
               ->execute();
 	        }elseif($this->section->Site->getSlug() == "sic"){
 	          $this->siteSections = Doctrine_Query::create()
@@ -562,7 +560,6 @@ class _sectionActions extends sfActions
               ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
               ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
               ->orderBy('s.display_order')
-              ->limit(10)
               ->execute();
           }
         }
@@ -1016,6 +1013,7 @@ class _sectionActions extends sfActions
       print "<br>Site>>".$this->site->id;
       print "<br>Seasons>>".count($this->seasons);
       print "<br>Assets: ".count($this->pager);
+      print "<br>Site Sections: ".count($this->siteSections);
       print "<br>section: ".$this->section->getSlug();
       print "<br>section: ".$sectionSlug;
       print "<br>section: ".$this->section->getId();
