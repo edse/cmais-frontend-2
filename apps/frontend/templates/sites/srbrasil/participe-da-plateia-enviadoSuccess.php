@@ -83,7 +83,12 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">
               <!-- BOX PUBLICIDADE -->
-                            <?php if(isset($displays["publicidade-300x250"])) include_partial_from_folder('blocks','global/banner-300x250', array('displays' => $displays["publicidade-300x250"])) ?>
+              <div class="box-publicidade grid1">
+               <!-- home-geral300x250 -->
+				<script type='text/javascript'>
+				GA_googleFillSlot("home-geral300x250");
+				</script>
+              </div>
               <!-- / BOX PUBLICIDADE -->
             </div>
             <!-- /DIREITA -->
