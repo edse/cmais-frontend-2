@@ -1,2 +1,2 @@
-Redirect 301 /MemoriaMidias.swf http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf
-Redirect 301 /MemoriaRatimbum.swf http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaRatimbum.swf
+Redirect /MemoriaMidias.swf http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf
+Redirect /MemoriaRatimbum.swf http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaRatimbum.swf
