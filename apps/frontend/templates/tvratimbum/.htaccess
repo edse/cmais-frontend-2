@@ -1,6 +1,6 @@
-DefaultType text/html
+
 
 RewriteEngine On
 
-RewriteRule ^MemoriaMidias.swf$ http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf[QSA,L]
-RewriteRule ^MemoriaRatimbum.swf$ http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaRatimbum.swf [QSA,L]
+RewriteRule ../MemoriaMidias.swf$ http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaMidias.swf[QSA,L]
+RewriteRule ../MemoriaRatimbum.swf$ http://tvratimbum.cmais.com.br/portal/tvratimbum/jogos/MemoriaRatimbum.swf [QSA,L]
