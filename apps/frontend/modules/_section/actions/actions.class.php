@@ -66,7 +66,7 @@ class _sectionActions extends sfActions
 				header('Location: http://fpa.com.br/sic');
 				die();
 			}
-
+/*
 	    if($this->site->getSlug() == "rodaviva"){
 				if (date('w H:i') > "1 22:00" && date('w H:i') < "1 23:35") {
 					if ($this->section->getSlug() == "home") {
@@ -80,7 +80,7 @@ class _sectionActions extends sfActions
 						die();
 					}	
 				}
-			}
+			}*/
 
     
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
