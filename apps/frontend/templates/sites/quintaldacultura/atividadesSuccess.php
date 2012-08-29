@@ -70,7 +70,7 @@
             <hr />
 
             <div class="atividadesBox">
-              <span class="palhaca"></span>
+              
               <div class="rodaGigante">
                 <a class="todosJogos ativit" href="/quintaldacultura/atividades/todas"><span>Todas as atividades</span></a>
                 <a class="experiencias" href="/quintaldacultura/atividades/experiencia"><span>Experi&ecirc;ncia</span></a>
@@ -79,7 +79,11 @@
                 <a class="brincadeiras" href="/quintaldacultura/atividades/brincadeiras"><span>Brincadeiras do Quintal</span></a>
                 <a class="receitinhas" href="/quintaldacultura/atividades/receitas"><span>receitinhas</span></a>
               </div>
+              <!--
+              <span class="palhaca"></span>
               <span class="palhaco"></span>
+              -->
+              <span class="palhaco-osorio"></span>
             </div>
 
           </div>
