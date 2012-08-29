@@ -1086,8 +1086,8 @@ width: 680px;
 .atividadesBox.inter .galleria-container {overflow: visible;}
 .atividadesBox.inter .galleria-info-link{display:none;}
 .atividadesbox.inter .galleria-info-text {display: block !important;width: 227px !important;position: absolute !important;right: -291px !important;top: 122px !important;height: 224px !important; overflow: auto !important;}
-.atividadesbox.inter #descricao-video{position: absolute;right: 64;top: 179;width: 237px;height: 250px;overflow: auto;}
-.atividadesbox.inter #descricao-video p{padding:10px;}
+#descricao-video{position: absolute;right: 64px;top: 179px;width: 237px;height: 250px;overflow: auto;}
+#descricao-video p{padding:10px;}
   
 .atividadesBox .rodaGigante{
   background: url(../images/bg-rodaGigante.png) no-repeat;
