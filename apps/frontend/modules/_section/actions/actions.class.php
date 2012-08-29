@@ -996,7 +996,7 @@ class _sectionActions extends sfActions
     		die();
   		} 
   	} 
-
+		/*
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
       $t = explode("-old", $this->section->Site->getSlug());
       if($_REQUEST["debug"]==1){
@@ -1007,6 +1007,8 @@ class _sectionActions extends sfActions
         die();
       }
     }
+		 * 
+		 */
 
     $debug = false;
     if($request->getParameter('debug') != ""){
