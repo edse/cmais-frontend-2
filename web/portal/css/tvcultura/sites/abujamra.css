@@ -1,8 +1,10 @@
 .bg-chamada,
 .bg-site { background :#000; }
-#barra-site .topo-programa { background :url(/portal/images/capaPrograma/abujamra/bg-abu.jpg) no-repeat 380px 0; }
+.bg-site { background :url(/portal/images/capaPrograma/abujamra/bg-abu.jpg) no-repeat center; height:146px; margin-top:-46px; z-index: 0; }
 .bg-site { top:0 !important; }
 #barra-site .redes { float: right; }
 #barra-site h2 {margin-top:30px;}
 #capa-site { margin-top:-102px !important; }
 #chamada { margin-bottom:0; }
+body {  background-image :url(/portal/images/capaPrograma/abujamra/bg-tudo3a.jpg);  }
+.bg-chamada { height:60px; z-index: 100; }
