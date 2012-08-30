@@ -264,7 +264,7 @@ form.selecao .btn-enviar { margin-left:-10px; background:#fff; margin-bottom:0; 
 form.selecao .btn-enviar .enviar {margin-right:-5px; cursor:pointer;}
 .uma-coluna .conteudo li {height:auto;}
 .programacao { height:378px; overflow-x:hidden; background: #f7f6f6; padding:10px 10px 20px 10px;  }
-.programacao li { border-bottom:none; padding-bottom:0; margin-top:5px; width:300px; }
+.programacao li { border-bottom:none; padding-bottom:0; margin-top:5px; width:280px; }
 .programacao li span { margin-right:10px; }
 form.selecao .item span { color: #FFFFFF; float: right; line-height: 30px; text-transform: uppercase; }
 form.selecao .divisa .compositor {padding-bottom:10px;}
