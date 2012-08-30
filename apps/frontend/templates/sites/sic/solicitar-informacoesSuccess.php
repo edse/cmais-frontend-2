@@ -59,7 +59,7 @@
           <!-- COLUNA SUB DIR 1 -->
           <div class="coluna-sub-1 cinza-claro-2 ">
 
-            <div class="container">
+            <div class="">
             
               <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:block" width="16px" height="16px" id="loader" />
               
