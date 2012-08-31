@@ -1,4 +1,4 @@
-body { background:#ffffff url('/portal/images/bg-tudo3a.jpg') repeat-x; }
+body { background:#ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x; }
 #capa-site {background:none;}
 #capa-site { *margin-top:-48px; }
 #esquerda { /*margin-top:-20px;*/}
@@ -130,7 +130,7 @@ form.selecao .item,
 #barra-site #horario { *margin-top:20px;}
 #barra-site #horario { *width: 90px;position: relative;z-index: 1;}
 .topo-programa .aovivo { display:block; width:111px; height:44px; background:url(/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
-#home { background: no-repeat 0 127px; height:350px; }
+.home .topo-programa { background: no-repeat 0 127px; height:350px; }
 .violino { background-image:url(/portal/images/capaPrograma/culturafm/violino.jpg) !important; }
 .clarinete { background-image:url(/portal/images/capaPrograma/culturafm/clarinete.jpg) !important; }
 .trombone { background-image:url(/portal/images/capaPrograma/culturafm/trombone.jpg) !important; }
@@ -264,7 +264,7 @@ form.selecao .btn-enviar { margin-left:-10px; background:#fff; margin-bottom:0; 
 form.selecao .btn-enviar .enviar {margin-right:-5px; cursor:pointer;}
 .uma-coluna .conteudo li {height:auto;}
 .programacao { height:378px; overflow-x:hidden; background: #f7f6f6; padding:10px 10px 20px 10px;  }
-.programacao li { border-bottom:none; padding-bottom:0; margin-top:5px; width:300px; }
+.programacao li { border-bottom:none; padding-bottom:0; margin-top:5px; width:280px; }
 .programacao li span { margin-right:10px; }
 form.selecao .item span { color: #FFFFFF; float: right; line-height: 30px; text-transform: uppercase; }
 form.selecao .divisa .compositor {padding-bottom:10px;}
@@ -473,5 +473,8 @@ h3 { margin-bottom:20px}
 .audio .maisprogramas,
 .audio .assinatura { margin-bottom:50px; }
 .audio h3 { margin-bottom:0; }
+
+.home #miolo { margin-top:-409px; }
+.home #conteudo-pagina { margin-top:409px; }
 
 /** /RADIO FM  **/

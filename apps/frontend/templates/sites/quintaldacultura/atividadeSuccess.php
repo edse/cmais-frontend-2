@@ -129,40 +129,43 @@
             </div>
             <hr />
 
-                            <div class="atividadesBox inter">
-
-                              <span class="palhaco"></span>
-
+           <div class="atividadesBox inter">
+              <!--
+                <span class="palhaco"></span>
+              -->
+              <span class="palhaco-osorio"></span>
+              <span class="balao-orientacao"></span>
+                <?php $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+                <?php if(count($imgs) > 0): ?>
                 <div id="galleria">
-                  <?php $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-                  <?php if(count($imgs) > 0): ?>
-                    <?php foreach($imgs as $k=>$d): ?>
+                      <?php foreach($imgs as $k=>$d): ?>
                       <a href="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>">
                         <img title="<?php echo $d->getTitle() ?>"
                           alt="<?php echo $d->getDescription() ?>" 
                           src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" />
                       </a>
                     <?php endforeach; ?>
-                  <?php endif; ?>
                 </div>
-
-                                  <?php $vid = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-                                  <?php if(count($vid) > 0): ?>
-                                    <div class="videoIntrucao">
-                                      <div class="videoWrapperSmall">
-                                      <object style="height:310px; width: 186px">
-                                        <param name="movie" value="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
-                                        <param name="allowFullScreen" value="true">
-                                        <param name="allowScriptAccess" value="always">
-                                        <param name="wmode" value="opaque">
-                                        <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="310" height="186"></embed>
-                                      </object>
-                                      </div>
-                                    </div>
-                                  <?php endif; ?>
-                                  <?php foreach($asset->getTags() as $t): ?>
-                                    <?php if($t == "faça com um adulto") echo '<span class="aviso">Fa&ccedil;a com um adulto!</span>'; ?>
-                                  <?php endforeach; ?> 
+                <?php else:; ?>
+                  <?php
+                  $vid = $asset->retriveRelatedAssetsByAssetTypeId(6);
+                  if((count($vid) <= 0)&&($asset->AssetType->getSlug() == "video")){
+                    $vid = array($asset);
+                  }
+                  ?>
+                  <?php if(count($vid) > 0): ?>
+                    <div class="videoIntrucao">
+                      <div class="videoWrapperSmall">
+                      <iframe width="620" height="360" src="http://www.youtube.com/v/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>&rel=0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div id="descricao-video">
+                        <p><?php echo $asset->getDescription() ?></p>
+                      </div>
+                    </div>
+                  <?php endif; ?>
+                  
+                <?php endif; ?>
+                 
                             </div>
                           </div>
 

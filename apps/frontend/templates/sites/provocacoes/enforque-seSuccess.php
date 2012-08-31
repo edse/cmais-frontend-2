@@ -249,10 +249,11 @@
     <script type="text/javascript">
     
       $(document).ready(function(){
+        /* somente para teste
       	$('input#enviar').click(function(){
       	  $(".msgAcerto, .msgErro").hide();
       	});
-      	
+      	*/
       	var validator = $('#form-contato').validate({
       	  submitHandler: function(form){
       	  	$.ajax({

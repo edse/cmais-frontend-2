@@ -108,22 +108,30 @@
             </div>
             <hr />
 
-                            <div class="atividadesBox dois interna">
+                            <div class="atividadesBox dois colorir interna">
                               <div class="gameAtividade">
                                 <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-                                <?php if(count($preview) > 0): ?>
-                                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-6-b') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+                                <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+                                
+                                <?php if(count($preview) > 0 && count($download) > 0): ?>
+                                  <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" target="_blank">
+                                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-6-b') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+                                  </a>
                                 <?php endif; ?>
                               </div>
 
-                              <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+                              
                               <?php if(count($download) > 0): ?>
-                              <div class="boxBaixarImprimir">
-                                <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" target="_blank">Clique para baixar e imprimir.</a>
-                              </div>
+                              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" class="download" target="_blank">
+                                <span class="balao-dowload"></span>
+                              </a>
                               <?php endif; ?>
+                              <!--
                               <span class="palhaca"></span>
                               <span class="palhaco"></span>
+                              -->
+                              <span class="palhaco-osorio"></span>
+                              
                             </div>
 
                           </div>

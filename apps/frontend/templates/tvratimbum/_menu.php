@@ -20,6 +20,8 @@
             <div class="carrossel">
               <ul>
               <?php foreach($programs as $p): ?>
+	            	<?php if($p->Site->id > 0): ?>
+
                 <li>
                   <div class="boxPersonagens-tip">
                     <a href="<?php echo $p->retriveUrl()?>">
@@ -28,6 +30,7 @@
                     </a>
                   </div>
                 </li>
+                <?php endif; ?>
               <?php endforeach; ?>
               </ul>
             </div>

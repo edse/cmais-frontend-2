@@ -1072,10 +1072,27 @@ width: 680px;
   width: 167px;
   height: 324px;
 }
+.atividadesBox .palhaco-osorio,
+.atividadesBox.colorir.inter .palhaco-osorio,
+.atividadesBox.inter .palhaco-osorio{background:url(/portal/quintal/images/img-osorio.png) no-repeat; width: 368px; height: 599px;}
+
+.atividadesBox .palhaco-osorio{position:absolute; right: -57px;top: -11px;}
+.atividadesBox.inter .palhaco-osorio{position:absolute; right: 8px;top: 5px;}
+.atividadesBox.colorir .palhaco-osorio{position:absolute; right: -9px;top: -40px;}
+
+.atividadesBox.colorir .balao-dowload{width:163px; height: 104px;background: url(/portal/quintal/images/balao-paracolorir.png) no-repeat; position:absolute;top: -51px;right: 124px;z-index: 3}
+.atividadesBox.inter .balao-orientacao{display:block;background: url(/portal/quintal/images/balao-passos.png) no-repeat; width:267px;height:331px; position:absolute; right: 49px; top: 98px;}
+
+.atividadesBox.inter .galleria-container {overflow: visible;}
+.atividadesBox.inter .galleria-info-link{display:none;}
+.galleria-info-text {display: block !important;width: 227px !important;position: absolute !important;right: -291px !important;top: 122px !important;height: 224px !important; overflow: auto !important;}
+#descricao-video{position: absolute;right: 64px;top: 179px;width: 237px;height: 250px;overflow: auto;}
+#descricao-video p{padding:10px;}
+  
 .atividadesBox .rodaGigante{
   background: url(../images/bg-rodaGigante.png) no-repeat;
   float: left;
-  margin-left: 70px;
+  margin: 0 0 13px 180px;
   position: relative;
   width: 378px;
   height: 381px;
@@ -1314,12 +1331,12 @@ width: 680px;
   float: right;
 }
 .videoIntrucao{
-  background: url(../images/bg-videoIntrucao.png) no-repeat;
+/*background: url(../images/bg-videoIntrucao.png) no-repeat;*/
   display: block;
   float: left;
   margin: 10px 0 0 8px;
   width: 322px;
-  height: 209px;
+  height: 374px;
 }
 .videoIntrucao .videoWrapperSmall{
   margin-top: 13px;
