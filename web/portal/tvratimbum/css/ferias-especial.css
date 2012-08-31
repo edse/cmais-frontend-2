@@ -5,7 +5,7 @@
 #ferias #box-especial-interna .topo{width:927px}
 
 #ferias #box-especial-interna .tarja-titulo{background: url(../image/bg-SpriteEscolhido.png) repeat-x 0 -204px;float: left;width: 957px;}
-#ferias #box-especial-interna .tarja-titulo p{color: #11B19C ;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 15px;}
+#ferias #box-especial-interna .tarja-titulo p{color: #11B19C ;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;}
 
 #ferias .alca{background: url(../image/img-alca.png) no-repeat;display: block;position: absolute;width: 6px;height: 28px;z-index:2000;}
 #ferias .alca.pos01{top:-19px;left:5px;}
@@ -44,6 +44,31 @@
 #ferias #videos-especial .carrossel .jcarousel-item a p {margin:5px 0 0 0;overflow:hidden; height:64px;float:left;color:#6b6b6b;}
 #ferias #videos-especial .carrossel .picote{width:100%;position:absolute;bottom:0; z-index:3000;} 
 /* /CARRROSSEL VIDEOS */
+
+/* SEU PEDIDO É UMA ORDEM */
+#ferias #destaque-principal{background-color: #E8F7F5;width: 920px;border-radius: 10px;margin: 20px;overflow: hidden;min-height: 120px;float:left;}
+#ferias #container-destaque-principal{padding: 20px;color:#6b6b6b; font-weight:bold;}
+#ferias #container-destaque-principal p{color:#6b6b6b !important;}
+
+#ferias #votacao-video #lista-videos{padding:0 30px;}
+#ferias #votacao-video label{font-weight: bold; text-transform: uppercase; padding:0 0 0 20px;}
+#ferias #votacao-video label p{font-weight: normal; margin:0 12px 0 20px; text-transform: none;}
+#ferias #votacao-video label span{margin:0 0 0 18px; text-transform: none;}
+#ferias #votacao-video form{padding: 20px; overflow: hidden; position: relative;}
+#ferias #votacao-video form ul li{width:337px;}
+#ferias #votacao-video form input{height:18px; float:left;margin:0 5px 0 0;}
+#ferias #votacao-video form .btn-barra{width:924px !important; margin:20px 0 0 0;}
+#ferias #votacao-video form .btn-barra input#votar{border-radius: 0;margin: 0;width: 874px !important;height: 22px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%;}
+#ferias #votacao-video form label{cursor:pointer;}
+#ferias #votacao-video form label.error{position: absolute;top: 50px;left: 0;font-weight: bold;color: red;}
+#ferias #votacao-video iframe{width:310px; height: 210px; padding:0 0 0 20px;}
+#ferias #resultado-video{padding:20px}
+#ferias #resultado-video li p{font-weight:bold; font-size:16px;}
+#ferias #resultado-video .classificacao{width:444px;}
+#ferias #resultado-video .left{float:right;}
+#ferias #resultado-video .right{float:left;}
+#ferias #resultado-video h2{clear:both;}
+/* /SEU PEDIDO É UMA ORDEM */
 
 /* CONCURSO PIADA */
 #ferias h2.tit-destaque-ferias{color: #11B19C;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 0 0 0 10px !important; clear:both;width:100%;padding:0 0 0 10px;}
