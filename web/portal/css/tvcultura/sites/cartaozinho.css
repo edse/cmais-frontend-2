@@ -162,3 +162,11 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .box-padrao.content li {width: 294px;}
 .box-padrao.content .titulos {width: 294px;}
 .box-padrao.content .conteudo {padding: 7px;}
+
+/* arquivo*/
+.box-padrao {     background: none repeat scroll 0 0 #86D5F3;    border-radius: 5px 5px 5px 5px;}
+.box-padrao .topo {    background: none repeat scroll 0 0 #2B8DB2;    padding: 2px 10px 10px;}
+.box-padrao .topo .capa-titulo { background:transparent; }
+.box-padrao .topo span {  display: none;}
+.box-padrao .topo h4 { font-size:16px; }
+/* /arquivo*/
