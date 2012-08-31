@@ -169,7 +169,7 @@
                       ->from('Section s')
                       ->where('s.site_id = ?', $site->getId())
                       ->andWhere('s.slug != ?', 'home')
-                      ->orderBy('s.title')
+                      ->orderBy('s.display_order')
                       ->execute();
                   ?>
                   <?php if(count($sections) >= 1): ?>
