@@ -292,7 +292,7 @@ $(function(){
                 <div class="topo">
                   <span></span>
                   <div class="capa-titulo">
-                    <h4>arquivo</h4>
+                    <img src="/portal/images/capaPrograma/cartaozinho/txtarquivo.png" />
                   </div>
                 </div>
                 <div id="datepicker"></div>
