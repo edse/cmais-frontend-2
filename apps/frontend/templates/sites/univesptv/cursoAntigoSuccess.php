@@ -9,7 +9,7 @@ $assets = Doctrine_Query::create()
   ->execute();
 
 if(isset($assets)){
-  if(count($assets) >= 1 && $section->getSlug() != "home"){
+  if(count($assets) >= 1){
     header("Location: ".$assets[0]->retriveUrl());
     die();
   }  
