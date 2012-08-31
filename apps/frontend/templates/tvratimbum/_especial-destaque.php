@@ -10,7 +10,7 @@
         </a>
         <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
         <div class="media grid2 video">
-          <iframe src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+          <iframe src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId() ?>?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
           <div class="capa-video" onclick="play()"></div>
           
         </div>

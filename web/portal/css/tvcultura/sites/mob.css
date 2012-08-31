@@ -152,7 +152,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .radio .ui-li-desc{font-size:1em !important;font-weight:bold;}
 .radio .alinha{width:100%}
 .radio .btn-escolha{height:60px; width:280px;}
-.radio .btn-escolha a{height:auto;font-family:"Calibri", Helvetica, sans-serif; font-weight:normal;text-align:center;text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza-claro-degrade.gif);float:left;display:block;width:49.5%;border-radius: 20px; padding: 5px 0 5px 0; text-shadow: none;color:#FFF;font-size:1em; margin: 15px 1px;}
+.radio .btn-escolha a{height:auto;font-family:"Calibri", Helvetica, sans-serif; font-weight:normal;text-align:center;text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza-claro-degrade.gif);float:left;display:block;width:48.5%;border-radius: 20px; padding: 5px 0 5px 0; text-shadow: none;color:#FFF;font-size:1em; margin: 15px 1px;}
 .radio .btn-escolha a:hover{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif)}
 .radio ul{background-color:#FFF;}
 .radio .linha2 {width: 100%;border-bottom: 1px dotted #6B6B6B;margin-top: 10px;}
