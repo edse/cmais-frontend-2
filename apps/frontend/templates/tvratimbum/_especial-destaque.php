@@ -24,7 +24,7 @@
     
     <!--TEXTO-->
     <div id="destaque-texto-ferias">
-      <p><?php echo $displays[0]->getDescription(); ?></p>
+      <p><?php echo $displays[0]->Asset->getDescription(); ?></p>
     </div>
     <!--/TEXTO-->
           <?php endif; ?>
