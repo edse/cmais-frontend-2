@@ -17,11 +17,14 @@
   });*/
 </script>
 
-<!-- remover este css depois que acabar campanha da radio -->
-<style type="text/css">
-#home { background-position:0 0; }	
-	
-</style>
+<script type="text/javascript">
+	$(function() {
+		$("body").addClass('home');
+
+	})
+</script>
+
+
     <div id="bg-site"></div>
 
     <!-- CAPA SITE -->
