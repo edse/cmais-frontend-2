@@ -1,5 +1,19 @@
 <?php
-//$asset = $pager->getCurrent();
+$assets = Doctrine_Query::create()
+  ->select('a.*')
+  ->from('Asset a, SectionAsset sa')
+  ->where('sa.section_id = ?', (int)$section->getId())
+  ->andWhere('sa.asset_id = a.id')
+  ->orderBy('sa.display_order')
+  ->limit(60)
+  ->execute();
+
+if(isset($assets)){
+  if(count($assets) >= 1 && $section->getSlug() != "home"){
+    header("Location: ".$assets[0]->retriveUrl());
+    die();
+  }  
+} 
 ?>
 <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" />
 
@@ -71,7 +85,7 @@
           
            <!-- CAPA -->
             <div class="capa grid3">
-              
+              <?php /*
                 <!-- ESQUERDA -->
                 <div id="esquerda" class="grid2">
                   <h3><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a></h3>
@@ -123,14 +137,12 @@
                       <?php if($video->AssetVideo->getYoutubeId() != ""): ?>
                       <div class="media grid2">
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
-                        <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
                       </div>
                       <?php endif; ?>
 
                       <?php if($video->AssetVideoGallery->getYoutubeId() != ""): ?>
                       <div class="media grid2">
                         <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $video)) ?>
-                        <?php /* <div><?php echo $asset->getDescription() ?></div> */ ?>
                       </div>
                       <?php endif; ?>
 
@@ -152,10 +164,10 @@
                     
                 </div>
                 <!-- /ESQUERDA -->
-                
+                */ ?>
                 <!-- DIREITA -->
                 <div id="direita" class="grid1">
-                  
+                  <?php /*
                   <!-- BOX FILTRAR -->
                   <div class="box-padrao filtrar grid1">
                     <div class="topo">
@@ -185,7 +197,7 @@
                     </form>
                   </div>
                   <!-- /BOX FILTRAR -->
-                  
+                  */ ?>
                   <!-- BOX FILTRAR -->
                   <?php
                     $sections = Doctrine_Query::create()
@@ -218,7 +230,7 @@
                   
                   <!-- BOX PADRAO NOTICIAS -->
                   <?php
-                  $asset = $pager->getCurrent();
+                  //$asset = $pager->getCurrent();
                   /*
                   if($section->getSlug() != "home"){
                     $assets = Doctrine_Query::create()
