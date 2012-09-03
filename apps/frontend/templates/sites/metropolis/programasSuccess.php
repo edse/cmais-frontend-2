@@ -252,12 +252,12 @@ $apresentador = Doctrine_Query::create()
           	    </div>
           	  </div>
               <form id="page_form" action="" method="post">
-              	<input type="hidden" name="return_url" value="<?php echo $url?>" />
+              	<input type="hidden" name="return_url" value="<?php if (isset($_REQUEST['url'])) echo $_REQUEST['url'] ?>" />
               	<input type="hidden" name="page" id="page" value="" />
-              	<input type="hidden" name="palavra" id="palavra" value="<?php echo $palavra ?>" />
-              	<input type="hidden" name="ordem" id="ordem" value="<?php echo $ordem ?>" />
-              	<input type="hidden" name="sequencia" id="sequencia" value="<?php echo $sequencia ?>" />
-              	<input type="hidden" name="ate" id="ate" value="<?php echo $ate ?>" />
+              	<input type="hidden" name="palavra" id="palavra" value="<?php if (isset($_REQUEST['palavra'])) echo $_REQUEST['palavra'] ?>" />
+              	<input type="hidden" name="ordem" id="ordem" value="<?php if (isset($_REQUEST['ordem'])) echo $_REQUEST['ordem'] ?>" />
+              	<input type="hidden" name="sequencia" id="sequencia" value="<?php if (isset($_REQUEST['sequencia'])) echo $_REQUEST['sequencia'] ?>" />
+              	<input type="hidden" name="ate" id="ate" value="<?php if (isset($_REQUEST['ate'])) echo $_REQUEST['ate'] ?>" />
               </form>
               <script>
               	function goToPage(i){

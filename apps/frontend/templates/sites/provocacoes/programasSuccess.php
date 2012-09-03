@@ -174,7 +174,7 @@
       	    </div>
       	  </div>
           <form id="page_form" action="" method="post">
-          	<input type="hidden" name="return_url" value="<?php echo $url?>" />
+          	<input type="hidden" name="return_url" value="<?php if (isset($_REQUEST['url'])) echo $_REQUEST['url'] ?>" />
           	<input type="hidden" name="page" id="page" value="" />
           	<input type="hidden" name="palavra" id="palavra" value="<?php if(isset($_REQUEST['palavra'])) echo $_REQUEST['palavra'] ?>" />
           	<input type="hidden" name="ordem" id="ordem" value="<?php if(isset($_REQUEST['ordem'])) echo $_REQUEST['ordem'] ?>" />
