@@ -4,7 +4,7 @@ body {background:url(/portal/images/capaPrograma/millor/bg-tudo2.jpg) repeat-x 0
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
 .bg-site {height:100px; width:100%; /*background:url(/portal/images/capaPrograma/millor/bkg.gif) repeat-x;*/ position:relative; top:48px; z-index: 0; clear:both;}
-#capa-site {margin-top:-94px !important;}
+#capa-site {margin-top:-45px !important;}
 /*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
 #barra-site {height:100px; background:url(/portal/images/capaPrograma/millor/logo.png) no-repeat 50px 0; margin:0; width:1012px; }
@@ -20,5 +20,6 @@ body {background:url(/portal/images/capaPrograma/millor/bg-tudo2.jpg) repeat-x 0
 #barra-site .redes { float:right; width:320px !important; }
 #barra-site,
 #barra-site .topo-programa { width: 100%; padding-right:50px; }
-.bg-chamada {display:none;}
+#chamada { margin-bottom:-55px; }
+.bg-chamada { background:none; }
 /** /millor **/
