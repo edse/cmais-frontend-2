@@ -2,7 +2,7 @@
 .bg-chamada { background:#ecc752; }
 .bg-site { background :url(/portal/images/capaPrograma/pele/bg.jpg) repeat-x; }
 #barra-site{margin: -3px 0 0 0;}
-#barra-site .topo-programa { background:url(/portal/images/capaPrograma/pele/bolaPele.jpg) no-repeat right; }
+#barra-site .topo-programa { background:url(/portal/images/capaPrograma/pele/bolaPele.jpg) no-repeat right -3px; }
 #barra-site .topo-programa h2{margin-left: 62px;}
 .noticia .img-video { width:310px; margin:0; }
 #barra-site .redes { float: right; }

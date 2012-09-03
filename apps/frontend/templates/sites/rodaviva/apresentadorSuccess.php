@@ -78,7 +78,7 @@ if(isset($pager)){
 					  <?php if(count($displays['apresentadores-do-passado']) > 0): ?>
           			<div class="apresentadoresPassado">
           				<h2><?php echo $displays['apresentadores-do-passado'][0]->Block->getTitle() ?></h2>
-          				<div class="boxApresentadoresPassado"  style="height:400px; overflow-y:scroll">
+          				<div class="boxApresentadoresPassado"  style="height:400px; overflow-y:scroll; width:300px; padding-right:10px;">
           				  <?php if ($displays['apresentadores-do-passado'][0]->Asset->AssetType->getSlug() == "content"): ?>
           					<?php echo html_entity_decode($displays['apresentadores-do-passado'][0]->Asset->AssetContent->getContent()) ?>
           			      <?php endif; ?>

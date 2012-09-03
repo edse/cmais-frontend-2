@@ -1371,6 +1371,7 @@ form.entrevistas label input{
 	color: #5b5a50:
 	font-size: 15px;
 	margin-top: 8px;
+	max-height:70px;
 }
 .boxVideo .acervoDestaque .carrossel .jcarousel-item a:hover{
 	text-decoration: none!important;
