@@ -232,6 +232,7 @@
                 </select>
               </div>
               
+              
               <div class="linha t3">
                 <label>email</label>
                 <input type="text" name="email" id="email" class="required" placeholder="email@valido.com.br"/>
@@ -325,11 +326,13 @@
             endif;
            endif;?>
         <!--VIDEOS-->
-                
+        
+        
         <!--VIDEOS-ESPECIAL-->
         <?php //include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
         <!--/VIDEOS-ESPECIAL-->
-                        
+            
+            
       </div>
       <!--/COLUNA MAIOR-->
     
