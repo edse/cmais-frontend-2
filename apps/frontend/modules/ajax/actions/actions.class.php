@@ -975,7 +975,7 @@ class ajaxActions extends sfActions
         else{
         */
 	        foreach($assets as $a){
-	          if($request->getParameter('piadas')==1){
+	          if($request->getParameter('piadas')==1 || $request->getParameter('lista-ideias')){
 	            ?>
 	            <script>
               $(document).ready(function(){
