@@ -5,13 +5,13 @@
 #ferias #box-especial-interna .topo{width:927px}
 
 #ferias #box-especial-interna .tarja-titulo{background: url(../image/bg-SpriteEscolhido.png) repeat-x 0 -204px;float: left;width: 957px;}
-#ferias #box-especial-interna .tarja-titulo p{color: #11B19C ;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 15px;}
+#ferias #box-especial-interna .tarja-titulo p{color: #11B19C ;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;}
 
 #ferias .alca{background: url(../image/img-alca.png) no-repeat;display: block;position: absolute;width: 6px;height: 28px;z-index:2000;}
 #ferias .alca.pos01{top:-19px;left:5px;}
 #ferias .alca.pos02{top:-19px;left:630px;}
 
-#ferias #box-especial-interna #destaque-ferias{width:640px; height:390px;overflow: hidden; border:1px solid #ccc; float: left;margin:0 20px 0 0px; }
+#ferias #box-especial-interna #destaque-ferias{width:640px; height:390px;overflow: hidden; border:1px solid #ccc; float: left;margin:0 20px 0 0px; position: relative; }
 
 #ferias #box-especial-interna #destaque-texto-ferias{width:100%;}
 #ferias #box-especial-interna #destaque-texto-ferias p{color:#6b6b6b; font-size: 14px; padding:108px 10px 0 10px;}
@@ -45,12 +45,37 @@
 #ferias #videos-especial .carrossel .picote{width:100%;position:absolute;bottom:0; z-index:3000;} 
 /* /CARRROSSEL VIDEOS */
 
+/* SEU PEDIDO É UMA ORDEM */
+#ferias #destaque-principal{background-color: #E8F7F5;width: 920px;border-radius: 10px;margin: 20px;overflow: hidden;min-height: 120px;float:left;}
+#ferias #container-destaque-principal{padding: 20px;color:#6b6b6b; font-weight:bold;}
+#ferias #container-destaque-principal p{color:#6b6b6b !important;}
+
+#ferias #votacao-video #lista-videos{padding:0 30px;}
+#ferias #votacao-video label{font-weight: bold; text-transform: uppercase; padding:0 0 0 20px;}
+#ferias #votacao-video label p{font-weight: normal; margin:0 12px 0 20px; text-transform: none;}
+#ferias #votacao-video label span{margin:0 0 0 18px; text-transform: none;}
+#ferias #votacao-video form{padding: 20px; overflow: hidden; position: relative;}
+#ferias #votacao-video form ul li{width:337px;}
+#ferias #votacao-video form input{height:18px; float:left;margin:0 5px 0 0;}
+#ferias #votacao-video form .btn-barra{width:924px !important; margin:20px 0 0 0;}
+#ferias #votacao-video form .btn-barra input#votar{border-radius: 0;margin: 0;width: 874px !important;height: 22px;background: url(../image/bg-barra.png) repeat-x;color: #6B6B6B;font-size: 15px;font-weight: bold;float: left;line-height: 23px;padding: 0 0px;text-decoration: none;text-transform: uppercase;width:100%;}
+#ferias #votacao-video form label{cursor:pointer;}
+#ferias #votacao-video form label.error{position: absolute;top: 50px;left: 0;font-weight: bold;color: red;}
+#ferias #votacao-video iframe{width:310px; height: 210px; padding:0 0 0 20px;}
+#ferias #resultado-video{padding:20px}
+#ferias #resultado-video li p{font-weight:bold; font-size:16px;}
+#ferias #resultado-video .classificacao{width:444px;}
+#ferias #resultado-video .left{float:right;}
+#ferias #resultado-video .right{float:left;}
+#ferias #resultado-video h2{clear:both;}
+/* /SEU PEDIDO É UMA ORDEM */
+
 /* CONCURSO PIADA */
 #ferias h2.tit-destaque-ferias{color: #11B19C;float: left;font-size: 24px;font-weight: bold;text-transform: uppercase;padding: 0 0 0 10px !important; clear:both;width:100%;padding:0 0 0 10px;}
 #ferias iframe{width:640px; height: 390px;margin:0 0 0 0;}
 #ferias .contato iframe{width:310px; height: 210px}
 #ferias .contato #destaque-ferias{width: 310px;height: 210px;float: left;padding: 10px 16px 0px 10px;}
-#ferias .contato #destaque-texto-ferias p{margin-bottom:3px; clear:none !important;font-size:14px;padding: 37px 10px 10px 0;line-height: 18px;}
+#ferias .contato #destaque-texto-ferias p{clear:none !important;margin-top:20px; font-size:14px;padding: 37px 10px 30px 0;line-height: 18px;}
 #ferias .galeriaVideos {float: left;position: relative;width: 300px;margin: 20px 0 0 20px;}
 #ferias .galeriaVideos .listaGaleria,
 #ferias .galeriaVideos .enunciado {width: 300px;}
@@ -67,8 +92,11 @@
 #ferias #piada-destaque #assinatura{text-align:right;padding-top: 20px;}
 
 #ferias h2{line-height:27px; padding:2px 0 30px 0 !important; color: #11B19C;font-size: 18px;font-weight: bold;text-transform: uppercase;padding: 15px;}
-#ferias a.btn-lista-piadas{font-weight: bold;font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
-#ferias a.btn-lista-piadas:hover{text-decoration:none; background-color: #59c9ba;}
+#ferias a.btn-lista-piadas,
+#ferias a.btn-ideias{font-weight: bold; margin-top: 20px; font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
+#ferias a.btn-lista-piadas:hover,
+#ferias a.btn-lista-ideias:hover{text-decoration:none; background-color: #59c9ba;}
+#ferias a.btn-lista-ideias{position:absolute; bottom: 0px; right: 0px;}
 #ferias #votacao-piada label{font-weight: bold; text-transform: uppercase;}
 #ferias #votacao-piada label p{font-weight: normal; margin:0 12px 0 20px; text-transform: none;}
 #ferias #votacao-piada label span{margin:0 0 0 18px; text-transform: none;}
