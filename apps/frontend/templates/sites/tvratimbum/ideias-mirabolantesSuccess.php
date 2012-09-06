@@ -325,11 +325,13 @@
             endif;
            endif;?>
         <!--VIDEOS-->
-                
+        
+        
         <!--VIDEOS-ESPECIAL-->
         <?php //include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
         <!--/VIDEOS-ESPECIAL-->
-                     
+            
+            
       </div>
       <!--/COLUNA MAIOR-->
     
