@@ -977,11 +977,6 @@ class ajaxActions extends sfActions
 	        foreach($assets as $a){
 	          if($request->getParameter('piadas')==1){
 	            ?>
-	            <script>
-              $(document).ready(function(){
-                $('.loading.inicial').remove();
-              });
-              </script>
               <li>
                 <p><?php echo $a->AssetContent->getContent()?></p>
                 <span><?php echo $a->getDescription()?></span>
@@ -998,6 +993,9 @@ class ajaxActions extends sfActions
 	          }
             
 	        }
+					
+					$return .= '<script>$(document).ready(function(){ $(".loading.inicial").remove(); });</script>';
+					
         //}
       }
       echo $return;
