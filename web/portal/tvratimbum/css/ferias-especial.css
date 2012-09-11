@@ -93,7 +93,7 @@
 
 #ferias h2{line-height:27px; padding:2px 0 30px 0 !important; color: #11B19C;font-size: 18px;font-weight: bold;text-transform: uppercase;padding: 15px;}
 #ferias a.btn-lista-piadas,
-#ferias a.btn-ideias{font-weight: bold; margin-top: 20px; font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
+#ferias a.btn-ideias{font-weight: bold; font-size: 18px;background-color: #11B19C;border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: white;padding: 3px 8px;text-transform: lowercase;float: right; }
 #ferias a.btn-lista-piadas:hover,
 #ferias a.btn-lista-ideias:hover{text-decoration:none; background-color: #59c9ba;}
 #ferias a.btn-lista-ideias{position:absolute; bottom: 0px; right: 0px;}
