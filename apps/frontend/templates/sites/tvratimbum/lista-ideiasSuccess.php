@@ -39,7 +39,9 @@ $block = Doctrine_Query::create()
 <script>
   
   function loadScroll(){
-    var page = 2;
+  	
+  	var stop = false;
+
     $('#infinite_scroll').scrollLoad({
       url : '<?php echo url_for('@homepage')?>ajax/infinitescroll',
       getData : function() {
@@ -51,15 +53,25 @@ $block = Doctrine_Query::create()
       },
       ScrollAfterHeight : 95,     //this is the height in percentage
       onload : function( data ) {
-        $(this).append( data );
-        $('.loading').remove();
-        $('#pag').val(parseInt($('#pag').val())+1);
+     		$('.loading').remove();
+      	if(data != ""){
+	        $(this).append( data );
+	        $('#pag').val(parseInt($('#pag').val())+1);
+      	}else{
+      		stop = true;
+      	}
       },
       continueWhile : function( resp ) {
+      	if(!stop)
+      		return true;
+      	else
+      		return false;
+      	/*
         if( $(this).children('li').length >= 100 ) {
           return false;
         }
         return true;
+        */
       }
     });
   }
@@ -77,7 +89,7 @@ $block = Doctrine_Query::create()
 </script>
 
 
-<input type="hidden" name="pag" id="pag" value="1" />
+<input type="text" name="pag" id="pag" value="2" />
 <!--BODY WRAPPER-->
 <div id="bodyWrapper">
 
