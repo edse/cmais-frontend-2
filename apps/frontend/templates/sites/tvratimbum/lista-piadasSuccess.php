@@ -83,7 +83,7 @@ if(count($block) > 0){
 </script>
 
 
-<input type="hidden" name="pag" id="pag" value="1" />
+<input type="hidden" name="pag" id="pag" value="2" />
 <!--BODY WRAPPER-->
 <div id="bodyWrapper">
 
