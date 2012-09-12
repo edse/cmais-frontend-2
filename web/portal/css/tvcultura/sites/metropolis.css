@@ -230,7 +230,7 @@ body{
 .esq .acervoDestaque h3{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-align: left;
@@ -291,7 +291,7 @@ body{
 }
 .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado{
 	color: #5b5a50:
-	font-size: 15px;
+	font-size: 16px;
 	margin-top: 8px;
 }
 .acervoDestaque .carrossel .jcarousel-item a:hover{
@@ -364,7 +364,7 @@ body{
 .transmissao h3{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-align: left;
@@ -406,7 +406,7 @@ body{
 .charges h3{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-align: left;
@@ -595,7 +595,7 @@ h2, h3{
 .equipe h2,
 .apresentadoresPassado h2{
 	color: #5b5a50;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 15px;
 	text-transform: uppercase;
@@ -662,7 +662,7 @@ h2, h3{
 	background: url("/portal/images/capaPrograma/metropolis/bg-cameraRV.png") repeat-x;
 	border-radius: 4px;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	text-transform: uppercase;
 	height: 30px;
 }
@@ -750,7 +750,7 @@ h2, h3{
 .comentarios p.btn-comentarios span{
 	color: #fff;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	margin: 5px 0 0 19px;
 	text-transform: uppercase;
 }
@@ -773,7 +773,7 @@ h2, h3{
 .chat p.btn-chat span{
 	color: #fff;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	margin: 5px 0 0 17px;
 	text-transform: uppercase;
 }
@@ -797,7 +797,7 @@ h2, h3{
 .repercussao h2 span{
     color: #78755c;
     float: left;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     margin: 6px 0 0 17px;
     text-transform: uppercase;
@@ -818,7 +818,7 @@ h2, h3{
 .veja p.btn-veja span{
 	color: #78755c;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	margin: 5px 0 0 20px;
 	text-transform: uppercase;
 }
@@ -866,7 +866,7 @@ h2, h3{
 }
 .vejaTambem li a.aTxt .nomeRlacionado{
 	color: #5b5a50;
-	font-size: 15px;
+	font-size: 16px;
 }
 .vejaTambem li a.aTxt .nomeTxt{
 	color: #737373;
@@ -949,7 +949,7 @@ h2, h3{
 }
 .box-noticiasRelacionadas h4 a{
 	color: #5b5a50;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	text-transform: none;
 }
@@ -978,7 +978,7 @@ h2, h3{
 .cabecalho h2{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin: 7px 0 0 15px;
 	text-transform: uppercase;
@@ -997,7 +997,7 @@ h2, h3{
 }
 .busca p{
 	color: #5b5a50;
-	font-size: 15px;
+	font-size: 16px;
 	float: left;
 }
 .busca .palavra-chave,
@@ -1076,7 +1076,7 @@ form.entrevistas label input{
 .busca form .filtro .formWrapper label{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 }
 .busca form .filtro .formWrapper label input,
 .busca form .filtro .formWrapper label input{
@@ -1254,7 +1254,7 @@ form.entrevistas label input{
 }
 .centro h4{
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 16px;
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
@@ -1306,7 +1306,7 @@ form.entrevistas label input{
 .boxVideo .transcricao h3{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	text-align: left;
 	text-transform: uppercase;
@@ -1369,7 +1369,7 @@ form.entrevistas label input{
 }
 .boxVideo .acervoDestaque .carrossel .jcarousel-item a.aTxt .nomeRlacionado{
 	color: #5b5a50:
-	font-size: 15px;
+	font-size: 16px;
 	margin-top: 8px;
 	max-height:70px;
 }
@@ -1619,7 +1619,7 @@ form.entrevistas label input{
 .trezentosesessenta h2{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1651,7 +1651,7 @@ form.entrevistas label input{
 .preShow .convidado h2{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1709,7 +1709,7 @@ form.entrevistas label input{
 .bastidores h2{
 	color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1721,7 +1721,7 @@ form.entrevistas label input{
 	background: url("/portal/images/capaPrograma/metropolis/bg-balaoRVSmall.png") no-repeat scroll 0 0 transparent;
     color: #5b5a50;
 	float: left;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -1731,7 +1731,7 @@ form.entrevistas label input{
 .aoVivo h2 span{
     color: #FFFFFF;
     float: left;
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px 0 0 7px;
     text-transform: uppercase;
 }
@@ -1816,7 +1816,7 @@ a.memRoda img{
 .btn-calendario span{
     color: #FFFFFF;
     float: left;
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px 0 0 19px;
     text-transform: uppercase;
 }
@@ -1910,7 +1910,7 @@ a.memRoda img{
 }
 .box-noticiasRelacionadas h4 a{
 	color: #5b5a50;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	text-transform: none;
 }
