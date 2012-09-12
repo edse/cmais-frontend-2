@@ -61,9 +61,7 @@
         <div id="direita" class="grid1">
         	 <!-- BOX PADRAO Noticia -->
             <div class="box-padrao grid1">
-              <a href="http://politica.estadao.com.br/eleicoes/debate/participe-regras/" title="Envie sua pergunta para os candidatos" target="_blank">
-              	<img src="/portal/images/capaPrograma/debate/participe.jpg" alt="Envie sua pergunta para os candidatos" />
-              </a>
+              
               
             </div>
             <!-- BOX PADRAO Noticia -->
