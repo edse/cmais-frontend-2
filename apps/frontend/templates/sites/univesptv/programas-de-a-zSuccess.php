@@ -192,9 +192,9 @@
           
           <!-- publicidade -->
           <div class="box-publicidade pub-grd grid3">
-            <!-- cmais-assets-728x90 -->
+            <!-- univesptv-728x90 -->
             <script type='text/javascript'>
-            GA_googleFillSlot("cmais-assets-728x90");
+            GA_googleFillSlot("univesptv-728x90");
             </script>
           </div>
           <!-- /publicidade -->
