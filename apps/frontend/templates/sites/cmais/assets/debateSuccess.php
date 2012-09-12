@@ -60,10 +60,7 @@
         <!-- DIREITA -->
         <div id="direita" class="grid1">
         	 <!-- BOX PADRAO Noticia -->
-            <div class="box-padrao grid1">
-              
-              
-            </div>
+            <div class="box-padrao grid1"></div>
             <!-- BOX PADRAO Noticia -->
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1">
