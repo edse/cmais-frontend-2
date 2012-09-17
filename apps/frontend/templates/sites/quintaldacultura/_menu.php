@@ -5,7 +5,7 @@
             <li><a class="videos" href="/quintaldacultura/videos/todos" title="Vídeos"><span>V&iacute;deos</span></a></li>
             <li><a class="atividades" href="/quintaldacultura/atividades" title="Atividades"><span>Atividades</span></a></li>
             <li><a class="musica" href="http://tvratimbum.cmais.com.br/radio" target="_blank"><span>M&uacute;sica</span></a></li>
-            <li><a class="imagens" href="/quintaldacultura/imagens" title="Imagens"><span>Imagens</span></a></li>
+            <li><a class="imagens" href="http://tvcultura.cmais.com.br/sid/turminha-do-sid" title="Imagens"><span>Imagens</span></a></li>
             <li><a class="baixar" href="/quintaldacultura/baixar" title="Baixar"><span>Baixar</span></a></li>
             <li><a class="cultura" href="/paraospais" title="para os pais"><span>Pais</span></a></li>
           </ul>
