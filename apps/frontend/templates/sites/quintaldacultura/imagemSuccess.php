@@ -191,8 +191,8 @@
             <?php if(($asset->AssetType->getSlug() == "image-gallery") && ($asset->AssetImageGallery->getHeadline() != "")): ?>
               <a href="javascript:;" onclick="$('#my-carousel-1').fadeOut();$('#textS').fadeIn();"><span class="conheca">Conheça Mais</span></a>
             <?php endif; ?>
-            <span class="palhaca"></span>
-            <span class="palhaco"></span>
+            <!--<span class="palhaca"></span>
+            <span class="palhaco"></span>-->
           </div>
         </div>
         
