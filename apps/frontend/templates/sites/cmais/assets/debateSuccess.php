@@ -65,7 +65,7 @@
           <div class="box-publicidade grid1">
             <!-- programas-homepage-300x250 -->
             <script type='text/javascript'>
-				    GA_googleFillSlot("cmais-homepage-300x250");
+				    GA_googleFillSlot("home-geral2-300x250");
             </script>
           </div>
           <!-- / BOX PUBLICIDADE -->
