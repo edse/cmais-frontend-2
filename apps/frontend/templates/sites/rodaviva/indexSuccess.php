@@ -68,31 +68,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
     // charges caruso
     $('a.charges_caruso').fancybox();
     //$('#gallery ul li:last').remove();
-    
-	// Newsletter
-    $("#assine-news").hide();
-    $("a.news").click(function(){
-      $("#assine-news").slideToggle("slow");
-      return true;
-    });
-    
-    // Validador Newsletter
-    var validator = $("#form-contact").validate({
-      rules:{
-        nome:{
-          required: true,
-          minlength: 2
-        },
-        email:{
-          required: true,
-          email: true
-        },
-        captcha: {
-          required: true,
-          remote: "/portal/js/validate/demo/captcha/process.php"
-        }
-      }
-    });
+   
 
     // comportamento dos botões das redes sociais    
     $('.boxRedes li a.twitter').mouseover(function(){
@@ -297,33 +273,9 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
           						<li><a class="facebook" href="http://www.facebook.com/rodaviva" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a p&aacute;gina no facebook</span></a></li>
           						<li><a class="youtube" href="http://www.youtube.com/rodaviva" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Veja os v&iacute;deos no YouTube</span></a></li>
           						<li><a class="rss" href="http://cmais.com.br/rodaviva/feed" target="_blank"><span class="ico"></span><span class="borda"></span><span class="nome">Feed RSS</span></a></li>
-								<li><a class="news" href="javascript:;"><span class="ico"></span><span class="borda"></span><span class="nome">Assine a newsletter</span></a></li>
+								
           					</ul>
-							<div id="assine-news">
-          						<div class="wrapperAssine-news">
-          							<form id="form-contact" name="news" method="post" action="">
-	          							<label class="nome">
-	          								Nome
-	          								<input type="text" name="nome" id="nome">
-	          							</label>
-	          							<label class="email">
-	          								E-mail
-	          								<input type="text" name="email" id="email">
-	          							</label>
-	          							<label for="captcha">
-	          								Confirmação
-	          								<a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código" style="float:left">
-	          									<img src="/portal/js/validate/demo/captcha/images/image.php?1322157115" width="132" height="46" alt="Captcha image" id="captcha_image">
-	          								</a>
-	          							</label>
-                      		            <label class="msg" for="captcha" style="text-transform:lowercase;">
-                      		            	Digite no campo abaixo os caracteres que você vê na imagem:
-                      		            	<input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" style="float: left;">
-                      		            </label>
-	          							<input type="submit" class="assinar" name="newsletter" id="newsletter" value="assinar">
-          							</form>          						
-          						</div>
-          					</div>
+							
           				</div>
 						<a class="memRoda" target="_blank" href="http://www.rodaviva.fapesp.br/"><img src="../portal/images/capaPrograma/rodaviva/banner-roda-viva.png" alt="Memória Roda Viva" title="Memória Roda Viva" /></a>
           			</div>

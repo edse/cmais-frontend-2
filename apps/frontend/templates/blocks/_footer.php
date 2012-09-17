@@ -89,7 +89,7 @@ ciências</a></li>
 								<li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informações ao Cidadão">SiC</a></li>
 								<li><a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" title="Licitações">Licitações</a></li>
 								<li><a href="http://cmais.com.br/captacao" title="Captacao">Capta&ccedil;&atilde;o</a></li>
-								<!-- <li><a href="http://www2.tvcultura.com.br/imprensa/" title="Imprensa">Imprensa</a></li> -->
+						    <li><a href="http://cmais.com.br/imprensa" title="Assessoria de Imprensa">Assessoria de Imprensa</a></li>
 	      				<li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
 								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
 							</ul>
