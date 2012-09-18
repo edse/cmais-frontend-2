@@ -1,3 +1,10 @@
+<?php
+$a = Doctrine_Query::create()
+  ->select('aa.*')
+  ->from('AssetAnswer aa')
+  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+  ->execute();
+?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
@@ -85,12 +92,6 @@ $(document).ready(function(){
                 <h2><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();?></h2>
                 <ul id="lista-videos">
                   <?php 
-                  $a = Doctrine_Query::create()
-                    ->select('aa.*')
-                    ->from('AssetAnswer aa')
-                    ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-                    ->execute();
-                    
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
