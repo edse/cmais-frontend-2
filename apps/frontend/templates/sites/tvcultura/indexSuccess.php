@@ -1,44 +1,34 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/debate.css" type="text/css" />
-<!-- teste -->
-
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
 	 
 
     <!-- CAPA SITE -->
-    <div id="capa-site" class="home-tv">
-    	<div class="bg-chamada">
+    <div id="capa-site">
+    	
 	 
 	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-	  </div>
-	  <!-- BARRA SITE -->
-    <div id="barra-site">
-    
-      	<h2>17 de setembro às 22h</h2>
-      	<!--p class="eleicoes">Eleições 2012 - Debate</p-->
-      	<a href="http://cmais.com.br/debate" class="eleicoes" title="Eleições 2012 - Debate">Eleições 2012 - Debate</a>
-      	<ul class="patrocinio">
-      		<li class="estadao">Estadão</li>
-      		<li class="cultura">TV Cultura</li>
-      		<li class="youtube">Youtube</li>
-      	</ul>
-        <!-- curtir -->
-        <div class="redes">
-          <div class="curtir">
-            <div style="display:block; float: left; margin-right:10px;">
-              <g:plusone size="medium" count="false"></g:plusone>
-            </div>
-            <fb:like href="http://cmais.com.br/debate" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
-          </div>
-          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else:?>tvcultura<?php endif;?>">Tweet</a>
+
+	  <!-- banner -->
+      <div class="banner">
+	
+        <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
+
+        <div class="curtir">
+          <fb:like href="http://facebook.com/tvcultura" layout="button_count" show_faces="false" width="170"></fb:like>
         </div>
-        <!-- /curtir -->
-        
-     
-    </div>
-    <!-- /BARRA SITE -->
+
+        <!-- publicidade -->
+        <div class="box-publicidade pub-grd">
+          <!-- tvcultura-homepage-728x90 -->
+          <script type='text/javascript'>
+          GA_googleFillSlot("home-geral728x90");
+          </script>
+        </div>
+        <!-- /publicidade -->
+		
+      </div>
+      <!-- /banner -->
      
      
 
