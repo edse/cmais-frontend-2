@@ -1,17 +1,24 @@
+<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
+<!--link rel="stylesheet" href="/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" /-->
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico-home.css" type="text/css" />
+<!-- teste -->
+
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-	 
-
     <!-- CAPA SITE -->
     <div id="capa-site">
-    	
-	 
-	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
-	  <!-- banner -->
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+     
+
+      <!-- banner -->
       <div class="banner">
-	
+        <a href="http://cmais.com.br/tvcocorico" target="_blank" title="TV Cocoricó">
+          <img src="/portal/images/capaPrograma/cocoricoHome/img-topo-logo.png" alt="TV Cocoricó"/>
+        </a>
+        <?php /*
         <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
 
         <div class="curtir">
@@ -20,19 +27,39 @@
 
         <!-- publicidade -->
         <div class="box-publicidade pub-grd">
-          <!-- tvcultura-homepage-728x90 -->
-          <script type='text/javascript'>
-          GA_googleFillSlot("home-geral728x90");
-          </script>
+         <!-- home-geral728x90 -->
+		  <script type='text/javascript'>
+		  GA_googleFillSlot("home-geral728x90");
+		  </script>
         </div>
         <!-- /publicidade -->
-		
+         */ ?> 
+        <!-- contador--> 
+      <link rel="Stylesheet" type="text/css" href="http://cmais.com.br/portal/js/contador/style/main.css"></link>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery-1.4.1.js"></script>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
+      <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/misc.js"></script>  
+       
+      
+        <div class="box-contador">
+          <p>AO VIVO DE 2ª a 6ª, ÀS 11H30</p>
+      <!--       
+          <div id="countdown_dashboard">
+            <div class="dash days_dash">
+              <div class="digit">0</div>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+          </div>
+          <p>para a estreia</p>
+      -->        
+      </div>
+
+      <!-- contador-->
+      
       </div>
       <!-- /banner -->
-     
-     
 
-  
       <!-- MIOLO -->
       <div id="miolo">
 
@@ -166,4 +193,3 @@
       <!-- /MIOLO -->
     </div>
     <!-- /CAPA SITE -->
-   
