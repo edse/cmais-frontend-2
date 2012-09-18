@@ -15,16 +15,18 @@
     <div class="curtir">
       <fb:like href="http://facebook.com/tvcultura" layout="button_count" show_faces="false" width="170"></fb:like>
     </div>
+
     <div class="box-publicidade pub-grd">
       <script type='text/javascript'>
-		    GA_googleFillSlot("home-geral728x90");
+        GA_googleFillSlot("home-geral728x90");
       </script>
     </div>
-  -->
+
   </div>
+  -->
   <!-- /banner -->
   <!-- MIOLO -->
-  <div id="miolo"  style="margin-top:40px">
+  <div id="miolo" style="margin-top:40px" >
     <?php include_partial_from_folder('blocks','global/shortcuts')
     ?>
 
