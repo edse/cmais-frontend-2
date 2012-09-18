@@ -91,8 +91,11 @@
               <div class="game" style="border:none;">
               <?php echo html_entity_decode($asset->AssetContent->getContent()) ?>
               </div>
+              <!--
               <span class="palhaca"></span>
-                <span class="palhaco"></span>
+              <span class="palhaco"></span>
+              -->
+              <span class="ludovico jogo"></span>
             </div>
                             
           </div>

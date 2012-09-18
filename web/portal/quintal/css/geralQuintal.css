@@ -88,7 +88,7 @@ hr{
   margin: auto;
   margin-top:3px;
   overflow: hidden;
-  /*padding: 0 auto*/;
+  /*padding: 0 auto*/
 }
 .contentWrapper .cerca{
   background: url(../images/cerca.png) repeat-x;
@@ -778,6 +778,8 @@ width: 680px;
   margin-top: 20px;
   width: 970px;
 }
+.jogosBox .ludovico{background: url(../images/img-ludovico.png) no-repeat;width:306px;height:462px;display: block; float:left;float: left;margin: 0 0 -63px 56px;}
+.jogosBox .ludovico.jogo{position:absolute; top:0; right:-30px;}
 .jogosBox .palhaca{
   background: url(../images/img-palhaca.png) no-repeat;
   display: block;
@@ -796,11 +798,12 @@ width: 680px;
 }
 .jogosBox .rodaGigante{
   background: url(../images/bg-rodaGigante.png) no-repeat;
-  float: left;
+  float: right;
   margin-left: 15px;
   position: relative;
   width: 378px;
   height: 381px;
+  right: 170px;
 }
 .rodaGigante a.todosJogos{
   background: url(../images/btn-bola.png) no-repeat;
@@ -1113,6 +1116,7 @@ width: 680px;
   float: left;
   margin: 37px 0 0 11px;
   width: 80px;
+  text-align: center;
 }
 .atividadesBox .rodaGigante a{
   background: url(../images/btn-menu2.png) no-repeat;
@@ -1356,7 +1360,7 @@ width: 680px;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
   .carousel2{
-    margin-top: 43px;
+    margin-top: -30px;
   }
   .carousel2 ul{
     width: 300px!important;
