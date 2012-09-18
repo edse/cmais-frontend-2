@@ -2,7 +2,7 @@
 body { background:url(/portal/images/capaPrograma/debate/bg.jpg) repeat-x;  }
 .bg-site{ top:0 !important;  }
 #rodape-portal { margin-top:-37px; }
-#conteudo-pagina { background: #fff;    overflow: hidden; min-height:800px; }
+#conteudo-pagina { background: #fff;    overflow: hidden;}
 #capa-site { margin-top:0 !important; padding-bottom:50px; }
 .streaming {margin:10px 0;}
 #barra-site { background: #b32439; height:141px; width: 970px; float:right; margin:0; }

@@ -1,0 +1,6 @@
+.bg-site { height:146px; margin-top:-46px; z-index: 0; }
+#barra-site .redes { float: right; }
+#capa-site { margin-top:-102px !important; }
+#barra-site .topo-programa { *margin-top:-20px; }
+#chamada { margin-bottom:0; }
+body {  background-image :url(/portal/images/capaPrograma/animatv/bg.jpg);  }
