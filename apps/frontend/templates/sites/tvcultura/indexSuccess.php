@@ -19,16 +19,15 @@
     <div class="box-publicidade pub-grd">
 
       <script type='text/javascript'>
-		GA_googleFillSlot("home-geral728x90");
-
+        GA_googleFillSlot("home-geral728x90");
       </script>
     </div>
-    
+
   </div>
   -->
   <!-- /banner -->
   <!-- MIOLO -->
-  <div id="miolo">
+  <div id="miolo" style="margin-top:40px" >
     <?php include_partial_from_folder('blocks','global/shortcuts')
     ?>
 

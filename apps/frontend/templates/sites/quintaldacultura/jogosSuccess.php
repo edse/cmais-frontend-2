@@ -72,7 +72,8 @@
             <hr />
 
             <div class="jogosBox">
-              <span class="palhaca"></span>
+              <!--<span class="palhaca"></span>-->
+              <span class="ludovico"></span>
                 <div class="rodaGigante">
                   <a class="todosJogos" href="/quintaldacultura/jogos/todos"><span>Todos os jogos</span></a>
                   <a class="vila" href="http://cmais.com.br/vilasesamo/jogos/index.html"><span>Vila Sesamo</span></a>
@@ -82,7 +83,7 @@
                   <a class="educativo" href="/quintaldacultura/jogos/educativos"><span>Educativos</span></a>
                   <a class="esporte" href="/quintaldacultura/jogos/esportes"><span>Esportes</span></a>
                 </div>
-              <span class="palhaco"></span>
+              <!--<span class="palhaco"></span>-->
             </div>
             
             

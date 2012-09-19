@@ -1,13 +1,9 @@
-<?php 
+<?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa')
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
-  
-$q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
-$qDesc = $displays["enquete"][0]->Asset->getDescription();
-
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -81,7 +77,7 @@ $(document).ready(function(){
                              
               <!--CONTEUDO-->  
               <div id="container-destaque-principal">
-                 <?php echo $qDesc; ?>
+                 <?php echo $displays["enquete"][0]->getDescription(); ?>
               </div>    
               <!--/CONTEUDO-->
            
@@ -93,9 +89,9 @@ $(document).ready(function(){
               
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                <h2>vote no vídeo que você quer ver na tv rá tim bum! dia 12 de outubro.</h2>
+                <h2><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();?></h2>
                 <ul id="lista-videos">
-                  <?php
+                  <?php 
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
