@@ -77,7 +77,7 @@ $(document).ready(function(){
                              
               <!--CONTEUDO-->  
               <div id="container-destaque-principal">
-                 <?php echo $displays["enquete"][0]->getDescription(); ?>
+                 <?php echo html_entity_decode($displays["enquete"][0]->getDescription()); ?>
               </div>    
               <!--/CONTEUDO-->
            
