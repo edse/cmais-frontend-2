@@ -9,21 +9,23 @@
   ?>
 
   <!-- banner -->
+  <!--
   <div class="banner">
     <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
     <div class="curtir">
       <fb:like href="http://facebook.com/tvcultura" layout="button_count" show_faces="false" width="170"></fb:like>
     </div>
-    <!-- publicidade -->
+
     <div class="box-publicidade pub-grd">
-      <!-- tvcultura-homepage-728x90 -->
+
       <script type='text/javascript'>
 		GA_googleFillSlot("home-geral728x90");
 
       </script>
     </div>
-    <!-- /publicidade -->
+    
   </div>
+  -->
   <!-- /banner -->
   <!-- MIOLO -->
   <div id="miolo">
