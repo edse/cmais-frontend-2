@@ -19,50 +19,39 @@
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link type="text/css" href="/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
-<?php use_helper('I18N', 'Date')
-?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
-?>
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- CAPA SITE -->
 <div class="bg-rodaviva">
   <div id="capa-site">
     <!-- BREAKING NEWS -->
-    <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
-    ?>
+    <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
     <!-- /BREAKING NEWS -->
     <!-- BARRA SITE -->
     <div id="barra-site">
       <div class="topo-programa">
-        <?php if(isset($program) && $program->id > 0):
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
         <h2><a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>"> <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/uploads/programs/<?php echo $program->getImageThumb() ?>"> </a></h2>
         <?php endif;?>
 
-        <?php if(isset($program) && $program->id > 0):
-        ?>
-        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
+        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
         <?php endif;?>
 
-        <?php if(isset($program) && $program->id > 0):
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
         <!-- horario -->
         <div id="horario">
-          <p><?php echo html_entity_decode($program->getSchedule())
-          ?></p>
+          <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
         </div>
         <!-- /horario -->
         <?php endif;?>
       </div>
       <div class="box-topo grid3">
-        <?php if(count($siteSections) > 0):
-        ?>
+        <?php if(count($siteSections) > 0): ?>
         <ul class="menu">
-          <?php foreach($siteSections as $s):
-          ?>
-          <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif;?>><span><?php echo $s->getTitle()
-          ?></span></a></li>
+          <?php foreach($siteSections as $s): ?>
+          <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif;?>><span><?php echo $s->getTitle() ?></span></a></li>
           <?php endforeach;?>
         </ul>
         <?php endif;?>
@@ -73,8 +62,7 @@
     <!-- MIOLO -->
     <div id="miolo">
       <!-- BOX LATERAL -->
-      <?php include_partial_from_folder('blocks','global/shortcuts')
-      ?>
+      <?php include_partial_from_folder('blocks','global/shortcuts') ?>
       <!-- BOX LATERAL -->
       <!-- CONTEUDO PAGINA -->
       <div id="conteudo-pagina exceptionn">
@@ -85,8 +73,7 @@
             <div class="centroRV excp">
               <div class="video">
                 <div class="cabecalho">
-                  <h2><?php echo $section->getTitle()
-                  ?></h2>
+                  <h2><?php echo $section->getTitle() ?></h2>
                 </div>
                 <div class="busca">
                   <form class="chave" name="busca" id="busca" method="post">
@@ -164,31 +151,23 @@
             </div>
             <span class="bordaBottomRV"></span>
             <div class="listaVideos">
-              <?php if(count($pager) > 0):
-              ?>
-              <?php foreach($pager->getResults() as $d):
-              ?>
-              <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6);
-			//$guest = $d->retriveRelatedAssetsByRelationType('entrevistado');
-              ?>
+              <?php if(count($pager) > 0): ?>
+              <?php foreach($pager->getResults() as $d): ?>
+              <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6); ?>
               <div class="boxLista-video">
                 <span class="topo"></span>
                 <div class="centro">
                   <div class="centrowrapper">
                     <span class="faixa"></span>
-                    <?php if(count($videos) > 0):
-                    ?>
+                    <?php if(count($videos) > 0): ?>
                     <a class="imgTumb" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"> <img src="http://img.youtube.com/vi/<?php echo $videos[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" /> </a>
                     <?php else:?>
                     <a class="imgTumb" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"> <img src="/portal/images/capaPrograma/rodaviva/img-padrao.png" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" /> </a>
                     <?php endif;?>
                     <span class="faixa"></span>
-                    <h4><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle()
-                    ?></a></h4>
-                    <p><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getDescription()
-                    ?></a></p>
-                    <span class="exibido">Exibido em <?php echo format_date($d->AssetEpisode->getDateRelease(),'d')
-                    ?></span>
+                    <h4><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h4>
+                    <p><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getDescription() ?></a></p>
+                    <span class="exibido">Exibido em <?php echo format_date($d->AssetEpisode->getDateRelease(),'d') ?></span>
                     <a class="mais" href="<?php echo $d->retriveUrl() ?>"><span>+</span></a>
                   </div>
                 </div>
@@ -199,25 +178,19 @@
               <p style="float:left">Nenhum resultado encontrado!</p>
               <?php endif;?>
 
-              <?php if(isset($pager)):
-              ?>
-              <?php if($pager->haveToPaginate()):
-              ?>
+              <?php if(isset($pager)): ?>
+              <?php if($pager->haveToPaginate()): ?>
               <!-- PAGINACAO -->
               <div class="paginacao grid3">
                 <div class="centraliza">
                   <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
                   <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
                   <ul>
-                    <?php foreach ($pager->getLinks() as $page):
-                    ?>
-                    <?php if ($page == $pager->getPage()):
-                    ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page
-                    ?></a></li>
+                    <?php foreach ($pager->getLinks() as $page): ?>
+                    <?php if ($page == $pager->getPage()): ?>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
                     <?php else:?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page
-                    ?></a></li>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
                     <?php endif;?>
                     <?php endforeach;?>
                   </ul>
