@@ -153,6 +153,7 @@ $apresentador = Doctrine_Query::create()
             </div>
             <span class="bordaBottomRV"></span>
             <div class="listaVideos">
+            	<?php echo "1"; ?>
               <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>
               <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6); ?>
