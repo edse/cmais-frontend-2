@@ -20,7 +20,7 @@
             <div class="carrossel">
               <ul>
               <?php foreach($programs as $p): ?>
-	            	<?php if($p->Site->id > 0): ?>
+                <?php if($p->Site->id > 0): ?>
 
                 <li>
                   <div class="boxPersonagens-tip">
@@ -61,9 +61,9 @@
               </map>
             </li>
             <li>
-              <img src="/portal/tvratimbum/image/btn-fazdeconta.png" usemap="#fdc"/>
-              <map name="fdc" id="fdc">
-                <area title="Faz de Conta Rá Tim Bum" alt="Faz de Conta Rá Tim Bum" shape="circle" coords="109,110,99" href="/faz-de-conta" />
+              <img src="/portal/tvratimbum/image/btn-seupedido.png" usemap="#speuo"/>
+              <map name="speuo" id="speuo">
+                <area title="Seu pedido é uma ordem" alt="Seu pedido é uma ordem" shape="circle" coords="109,110,99" href="/seu-pedido-e-uma-ordem" />
               </map>
             </li>
             <li>
