@@ -66,13 +66,13 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "CartaoVerde728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "provocacoes-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "reisdarua-728x90");
     */
+    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
