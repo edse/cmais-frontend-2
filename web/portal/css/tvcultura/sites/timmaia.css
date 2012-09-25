@@ -1,0 +1,9 @@
+.bg-site { height:146px;}
+#barra-site .redes { float: right; }
+#barra-site h2 {margin-top:30px;}
+#capa-site { margin-top:-102px !important; }
+#barra-site .topo-programa { *margin-top:-20px; }
+#chamada { margin-bottom:0; }
+body {  background:url(/portal/images/capaPrograma/timmaia/bg.png) repeat-x;  }
+.bg-chamada { height:60px; z-index: 100; }
+
