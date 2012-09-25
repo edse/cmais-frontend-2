@@ -17,6 +17,11 @@ class _sectionActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request){
     gc_enable();
+    
+    if($request->getParameter('artista')){
+      $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
+    }
+
     if($request->getParameter('object')){
       
       if($request->getParameter('busca'))
@@ -460,6 +465,17 @@ class _sectionActions extends sfActions
 	            ->orderBy('s.display_order')
 	            ->execute();
 					}					
+          elseif($this->section->Site->getSlug() == "radarcultura"){
+            $this->siteSections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', $this->site->id)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+              ->orderBy('s.display_order')
+              ->execute();
+          }
           else{
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
@@ -595,6 +611,115 @@ class _sectionActions extends sfActions
           }
         }
       }
+
+
+      if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
+  
+        if($request->getParameter('artista')){
+          
+          $aux = Doctrine_Query::create()
+            ->select('a.description as description')
+            ->from('Asset a')
+            ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+            ->andWhere('site_id = 189')
+            ->orderBy('a.description')
+            ->fetchOne();
+  
+          if($aux["description"] != ""){
+            $this->artist = @end(explode("Por ", $aux["description"]));
+          }
+          
+          // ARTISTA musicas
+  
+          if($request->getParameter('letter')!=""){
+  
+            $this->letter = $request->getParameter('letter');
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a')
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a')
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+  
+          }else{
+            
+            //die('2');
+  
+            //die("<br>".$request->getParameter('artista'));
+  
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a')
+              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->orderBy('a.title');
+            
+            /*
+            foreach($this->assetsQuery->fetchArray() as $d){
+              echo "<br>".$d["title"]; 
+            }
+            die();
+            */
+            
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(title) as description')
+              ->from('Asset a')
+              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+  
+          }
+          
+        }
+        else{
+          
+          // ARTISTAS
+  
+          if($request->getParameter('letter')!=""){
+            $this->letter = $request->getParameter('letter');
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('DISTINCT description as description')
+              ->from('Asset a')
+              ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a')
+              ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+  
+          }else{
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('DISTINCT description as description')
+              ->from('Asset a')
+              ->where('description LIKE ?', 'Por %')
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description');
+              
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a')
+              ->where('description LIKE ?', 'Por %')
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+              
+          }
+           
+        }
+
+      }
+
+
       // program
       $this->program = $this->site->Program;
       // main site
@@ -884,20 +1009,38 @@ class _sectionActions extends sfActions
         $pagelimit = 9;
 		  			
     }
+
     if(!isset($pagelimit))
       $pagelimit = 9;
+
     if(isset($this->assetsQuery)){
-    	//if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
-    	if ($this->site->Program->getIsACourse()) {
-    		$this->assets = $this->assetsQuery->execute();
-    	}
-			else{
-	      $this->pager = new sfDoctrinePager('Asset', $pagelimit);
-	      $this->pager->setQuery($this->assetsQuery);
-	      $this->pager->setPage($request->getParameter('page', 1));
-	      $this->pager->init();
-	      $this->page = $request->getParameter('page');
-	    }
+      //if ($this->site->Program->getIsACourse() && !in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))) {
+      if ($this->site->Program->getIsACourse()) {
+        $this->assets = $this->assetsQuery->execute();
+      }
+      else if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
+        
+        if($request->getParameter('artista')){
+          $this->section = Doctrine::getTable('Section')->findOneBySlugAndSiteId("musicas", $this->site->id);
+          $sectionSlug = "musicas";
+        }
+        
+        $pagelimit = 30;
+        $this->pager = new sfDoctrinePager('', $pagelimit);
+        $this->pager->setQuery($this->assetsQuery);
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+        $this->pager->setNbResults($countQuery[0]["description"]);
+        $this->pager->setLastPage(ceil($countQuery[0]["description"]/$pagelimit));
+        $this->page = $request->getParameter('page');
+      }
+      else{
+        $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+        $this->pager->setQuery($this->assetsQuery);
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+        $this->page = $request->getParameter('page');
+      }
     }
 		
 		if($this->section->Site->getSlug() == "sic") {
