@@ -79,14 +79,28 @@ class Block extends BaseBlock
           $order = $this->items_order;
         else
           $order = "a.created_at desc";
-        $cs = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a')
-          ->where('a.is_active = ?', 1)
-          ->andWhere($this->query)
-          ->orderBy($order)
-          ->limit($limit)
-          ->execute();
+				if ($this->Section->Site->getSlug() == "radarcultura") {
+	        $cs = Doctrine_Query::create()
+	          ->select('a.*')
+	          ->from('Asset a, Section s, SectionAsset sa')
+	          ->where('a.is_active = ?', 1)
+						->andWhere('sa.section_id = s.id')
+						->andWhere('sa.asset_id = a.id')
+	          ->andWhere($this->query)
+	          ->orderBy($order)
+	          ->limit($limit)
+	          ->execute();
+				}
+				else {
+	        $cs = Doctrine_Query::create()
+	          ->select('a.*')
+	          ->from('Asset a')
+	          ->where('a.is_active = ?', 1)
+	          ->andWhere($this->query)
+	          ->orderBy($order)
+	          ->limit($limit)
+	          ->execute();
+				} 
       }else{
         $cs = Doctrine_Query::create()
           ->select('d.*')
