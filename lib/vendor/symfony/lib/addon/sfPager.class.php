@@ -303,7 +303,7 @@ abstract class sfPager implements Iterator, Countable
    *
    * @param integer $nb
    */
-  protected function setNbResults($nb)
+  public function setNbResults($nb)
   {
     $this->nbResults = $nb;
   }
@@ -333,7 +333,7 @@ abstract class sfPager implements Iterator, Countable
    *
    * @param integer $page
    */
-  protected function setLastPage($page)
+  public function setLastPage($page)
   {
     $this->lastPage = $page;
 
