@@ -29,7 +29,7 @@ body{background: none; padding: 0;text-align:left;}
 
 /* menu */
 .span10.menu-principal{position:relative;}
-.nav.menu-principal {margin-top:32px;}
+.nav.menu-principal {margin-top:79px;}
 .nav.menu-principal > li.active > a{color:#333333;font-weight: bold;}
 .nav.menu-principal > li > a{color:#999999;}
 .nav.menu-principal > li:hover > a{color:#333333;}
@@ -45,9 +45,9 @@ body{background: none; padding: 0;text-align:left;}
 .span8.menu-principal{position:relative;}
 .redes-share{position:absolute; bottom:0; right:0;}
 .redes-share .span1{margin:0}
-.redes-share .twitter-share{width:71px;}
-.redes-share .facebook-ahare{width:61px;}
-.redes-share .googleplus-share{width:61px;}
+.redes-share .twitter-share{width:71px;float:left}
+.redes-share .facebook-ahare{width:61px;float:left}
+.redes-share .googleplus-share{width:61px;float:left}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
 
 
