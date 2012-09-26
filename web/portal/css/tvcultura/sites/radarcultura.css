@@ -12,7 +12,7 @@ body{background: none; padding: 0;text-align:left;}
 /* /topo cmais desktop */
 
 /* geral */
-.container{max-width:1010px}
+.container{max-width:1010px;}
 .banner-radio {margin:0px auto; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
@@ -61,7 +61,7 @@ body{background: none; padding: 0;text-align:left;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
-.redes .span4{max-width:290px\9;max-width:309px;}
+.redes .span4{max-width:290px\9;}
 .redes .span6{max-width:290px\9;}
 .redes h4{color:black;}
 
