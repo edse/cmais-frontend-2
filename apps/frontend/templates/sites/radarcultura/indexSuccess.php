@@ -22,7 +22,7 @@
         <div class="row-fluid">
           <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
         </div>
-        <div class="row">  
+        <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
