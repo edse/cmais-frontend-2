@@ -200,8 +200,4 @@
         </div>
         <!--rodape-->
       </div>
-      <!--container-->
-      
-      
-      <script src="http://cdn.wibiya.com/Toolbars/dir_1266/Toolbar_1266058/Loader_1266058.js" type="text/javascript"></script><noscript><a href="http://www.wibiya.com/"></a></noscript>
-         
+      <!--container-->      
