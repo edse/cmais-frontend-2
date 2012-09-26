@@ -2,8 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -21,18 +21,8 @@
         <!--topo menu/alert/logo-->
         <div class="row-fluid">
           <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-          
-          <!-- logo --->
-          <ul class="span2 pull-right">
-            <li class="">
-              <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura"/>
-            </li>
-            <li class="">
-              <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
-            </li>
-          </ul>  
-          <!-- logo --->
-          
+        </div>
+        <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
@@ -87,7 +77,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -116,7 +108,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -129,7 +123,7 @@
           <?php if(count($displays['na-rede']) > 0): ?>
           <div class="span4">
               <div class="page-header">
-                <h3>Na rede<small>comentários dos usuários</small></h3>
+                <h3>Na rede<small> comentários dos usuários</small></h3>
               </div>
               <div class="row-fluid redes ">
                 <div class="span12 thumbnail">
@@ -141,7 +135,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> ver detalhes</a>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
@@ -200,4 +196,4 @@
         </div>
         <!--rodape-->
       </div>
-      <!--container-->  
+      <!--container-->      
