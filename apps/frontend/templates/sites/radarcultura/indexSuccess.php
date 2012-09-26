@@ -87,7 +87,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -116,7 +118,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -141,7 +145,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> ver detalhes</a>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
