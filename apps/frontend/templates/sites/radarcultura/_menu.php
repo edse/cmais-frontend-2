@@ -34,14 +34,14 @@
        </ul>
        <?php endif; ?>
        
-       <div class="span3 redes-share pull-right">
-         <div class="span1 twitter">
+       <div class="redes-share pull-right">
+         <div class="twitter-share">
            <!--twitter-->
            <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-size="medium">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
            <!--twitter-->
          </div>
-         <div class="span1 google">
+         <div class="googleplus-share">
            <!--google plus-->
            <!-- Place this tag where you want the +1 button to render. -->
             <div class="g-plusone" data-size="tall"></div>
@@ -60,7 +60,7 @@
          </div>
 
            
-           <div class="span1 face">  
+           <div class="facebook-share">  
            <!--face-->  
            <div id="fb-root"></div>
            

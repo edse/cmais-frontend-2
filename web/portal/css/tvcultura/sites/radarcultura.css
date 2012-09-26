@@ -43,12 +43,11 @@ body{background: none; padding: 0;text-align:left;}
 .span10.radarIndex{max-width:760px\9;padding:10px;}
 .span10.radarIndex a{margin:10px 0 10px 10px}
 .span8.menu-principal{position:relative;}
-.redes-share{position:absolute; top:0; right:0;}
+.redes-share{position:absolute; bottom:0; right:0;}
 .redes-share .span1{margin:0}
-.redes-share.span3{width:210px;}
-.redes-share .twitter{width:71px;}
-.redes-share .facebook{width:61px;}
-.redes-share .googleplus{width:61px;}
+.redes-share .twitter-share{width:71px;}
+.redes-share .facebook-ahare{width:61px;}
+.redes-share .googleplus-share{width:61px;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
 
 
