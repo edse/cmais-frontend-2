@@ -126,8 +126,8 @@
               <div class="page-header">
                 <h3>Na rede<small> comentários dos usuários</small></h3>
               </div>
-              <div class="row-fluid redes ">
-                <div class="span12 thumbnail">
+              <div class="redes ">
+                <div class="thumbnail">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
