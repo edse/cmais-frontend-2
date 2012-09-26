@@ -29,7 +29,8 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
-.logo a{margin:0 0 0 10px;*margin:0 0 0 0px}
+.logo{*width:136px;}
+.logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;}
 .nav.menu-principal > li.active > a{color:#333333;font-weight: bold;}
