@@ -26,9 +26,7 @@
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
-        
-    <div class="container lista-musica">
-    
+
      <div class="span12 row">
        <div class="row">
           <ul class="breadcrumb">
