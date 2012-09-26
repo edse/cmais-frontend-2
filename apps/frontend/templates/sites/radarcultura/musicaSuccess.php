@@ -2,8 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -15,25 +15,18 @@
     
     <!--container-->
     <div class="container">
-      <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback', array('site' => $site)) ?>
-			       
-			<?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-			       
-      <!-- logo --->
-      <div class=" row pull-right">
-        <ul class="span2 direita row pull-right">
-          <li class="span2 logo row pull-right">
-            <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura"  style="width:90%;"/>
-          </li>
-          <li class="span2 row">
-            <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Ouvir a Rádio Cultura Brasil</a>
-          </li>
-        </ul>  
-      </div>
-      <!-- logo --->
       
-			<?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section' => $section)) ?>
-                
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
+        
+        <!--topo menu/alert/logo-->
+        <div class="row-fluid">
+          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
+           
      <div class="span12 row">
    
         <section id="row descricao">

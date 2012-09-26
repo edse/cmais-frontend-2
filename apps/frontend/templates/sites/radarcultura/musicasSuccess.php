@@ -2,110 +2,30 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
- 
-    <link href="/radar2012/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/radar2012/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="/radar2012/css/radarcultura.css" type="text/css" />   
-    
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
-    <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
-    <script src="/radar2012/js/radarcultura.js"></script>
-    
-    
-    <div class="container lista-musica">
-      <!-- box-alert-topo -->
-      <div class="row span8 alert alert-block alert-info radarIndex">
-        <a href="#" type="button" class="btn btn-mini btn-info pull-right"><i class="icon-share-alt icon-white"></i> link direcionado</a>
-        <span><strong>Lorem Ipsulum</strong> Lorem Ipsum é simplesmente uma simulação de texto da indústria.</span>
-      </div>      
-      <!-- /box-alert-topo-->
-      <!-- logo --->
-      <div class="span2 row pull-right">
-        <ul class="span2 direita row pull-right">
-          <li class="span2 logo row pull-right">
-            <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura" />
-          </li>
-          <li class="span2 row">
-            <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Ouvir a Rádio Cultura Brasil</a>
-          </li>
-        </ul>  
-      </div>
-      <!-- logo --->
-
-      <!-- menu --->
-      <div class="span8 row">
-        <ul class="nav menu-principal nav-tabs pull-right">
-          <!-- botao --->
-          <li class="">
-            <a href="/radar2012/index.html" title="Home">Radar Cultura</a>
-          </li>
-          <!-- /botao --->
-          
-          <!-- botao --->
-          <li class="active">
-            <a href="/radar2012/lista-artista.html" title="Artistas">Artistas</a>
-          </li>
-          <!-- /botao --->
-          
-          <!-- botao --->
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Conteúdo">
-              Conteúdo
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               
-              <li class="">
-                <a href="/radar2012/lista-assets.html" title="Entrevista">Entrevistas</a>
-              </li>
-              <li class="">
-                <a href="/radar2012/lista-assets.html" title="Cinco Sons">Cinco Sons</a>
-              </li>
-            </ul>
-          </li>
-          <!-- botao --->
-          
-          <!-- botao --->
-          <li class="">
-            <a href="/radar2012/lista-playlist.html" title="Playlist">Playlist</a>
-          </li>
-          <!-- botao --->
-          
-          <!-- botao --->
-          <li class="">
-            <a href="/radar2012/aovivo.html" title="Ao Vivo">Ao Vivo</a>
-          </li>
-          <!-- botao --->
-          
-          <!-- botao --->
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Sobre">
-              Sobre
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               
-              <li class="">
-                <a href="/radar2012/asset-conteudo-como-participar.html" title="Como Participar">Como Participar</a>
-              </li>
-              <li class="">
-                <a href="/radar2012/asset-conteudo-sobre.html" title="Sobre o Programa">Sobre o Programa</a>
-              </li>
-            </ul>
-          </li>
-          <!-- botao --->
-       </ul>
-     </div>
-     <!-- menu --->
+    <!--container-->
+    <div class="container">
+      
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
+        
+        <!--topo menu/alert/logo-->
+        <div class="row-fluid">
+          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
 
      <div class="span12 row">
        <div class="row">
