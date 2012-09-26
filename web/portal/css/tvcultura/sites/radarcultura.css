@@ -54,7 +54,7 @@ body{background: none; padding: 0;text-align:left;}
 
 .icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
 .icone-rede.twitter{background-position:-139px }
-.icone-rede.facebook{background-position:-111px }
+.icone-rede.facebook{background-position:-111px; padding:0; }
 .icone-rede.googleplus{background-position:-55px }
 
 .redes .page-header {padding: 0 0 0 8px;margin: 11px 0 11px;}

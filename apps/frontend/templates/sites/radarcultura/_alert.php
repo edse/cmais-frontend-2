@@ -15,18 +15,11 @@
       ?>
       <?php if(isset($displays['alerta'])):?>
         <?php if(count($displays['alerta']) > 0): ?>
-          <style type="text/css">
-            .span10.menu-principal{margin:0 0 20px 0;}
-          </style> 
           <!-- box-alert-topo -->
-          <div class="span10 alert alert-block alert-info radarIndex" style="margin:0 0 10px 0px;" >
+          <div class="alert alert-block alert-info radarIndex" style="margin:0 0 10px 0px;" >
             <a href="<?php echo $displays['alerta'][0]->retriveUrl() ?>" type="button" class="btn btn-mini btn-info pull-right"><i class="icon-share-alt icon-white"></i> link direcionado</a>
             <span><strong><?php echo $displays['alerta'][0]->getTitle() ?></strong> <?php echo $displays['alerta'][0]->getDescription() ?></span>
           </div>      
           <!-- /box-alert-topo-->
-        <?php else: ?>
-          <style type="text/css">
-            .span10.menu-principal{margin:65px 0 0 0;}
-          </style> 
         <?php endif; ?>
      <?php endif; ?>
