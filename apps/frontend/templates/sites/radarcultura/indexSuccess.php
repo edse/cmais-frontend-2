@@ -2,8 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -200,8 +200,4 @@
         </div>
         <!--rodape-->
       </div>
-      <!--container-->
-      
-      
-      <script src="http://cdn.wibiya.com/Toolbars/dir_1266/Toolbar_1266058/Loader_1266058.js" type="text/javascript"></script><noscript><a href="http://www.wibiya.com/"></a></noscript>
-         
+      <!--container-->      
