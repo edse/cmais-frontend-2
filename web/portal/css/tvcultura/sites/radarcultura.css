@@ -28,7 +28,8 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
-.span10.menu-principal{position:relative;}
+.logo a{margin:0 0 0 10px;}
+.menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;}
 .nav.menu-principal > li.active > a{color:#333333;font-weight: bold;}
 .nav.menu-principal > li > a{color:#999999;}

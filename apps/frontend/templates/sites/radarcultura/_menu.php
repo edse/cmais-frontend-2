@@ -72,7 +72,7 @@
      </div>
      <!-- menu --->
      <!-- logo --->
-     <div class="span2 pull-right">
+     <div class="span2 logo pull-right">
        <div>
          <img src="/portal/images/capaPrograma/radarcultura/Logo-Radar.jpg" alt="Radar Cultura"/>
        </div>
