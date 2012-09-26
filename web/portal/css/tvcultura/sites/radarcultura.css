@@ -51,6 +51,7 @@ body{background: none; padding: 0;text-align:left;}
 .redes-share .facebook-share{width:61px;float:left;}
 .redes-share .googleplus-share{width:61px;float:left;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
+.carousel-inner img{width:100%}
 
 
 .icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
