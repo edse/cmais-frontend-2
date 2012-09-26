@@ -2,8 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -11,130 +11,21 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
-    <script src="/radar2012/js/radarcultura.js"></script>
     
     <!--container-->
     <div class="container">
-      <!--FEEDBACK-->
-      <div class="btn-feedback">
-        <a href="#modal-feedback" class="" data-toggle="modal">Feedback</a>
-      </div>  
-      <!--/FEEDBACK-->
-        <!-- Modal Feedback-->
-        <div id="modal-feedback" class="modal playlist hide fade">
-            <div class="modal-header">
-              <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h2>Indique esta música</h2>
-            </div>
-            <div class="modal-body playlist">
-              <form action="" method="post" id="form-feedback" class="span5">
-                <legend>Feedback Radar Cultura</legend>
-                <div class="control-group">
-                  <label>Nome</label>
-                  <input type="text" placeholder="Nome" name="nome" class="input-large required">
-                  <span class="help-block"></span>
-                </div>  
-                <div class="control-group">  
-                  <label>E-mail</label>
-                  <input type="text"  name="email" placeholder="email@dominio.com.br" class="input-large required">
-                  <span class="help-block"></span>
-                </div> 
-                
-                <div class="control-group mensagem">  
-                  <label>Mensagem</label>
-                  <textarea name="mensagem" class="required" rows="4"></textarea>
-                  <span class="help-block"></span>
-                </div>  
-                
-              </div>
-                
-
-              
-              <div class="modal-footer">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-                  <input type="submit" class="btn btn-primary btn-enviar"></a>
-                </div>
-              </form>               
-            </div>
-            
-            <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
-            <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
-            <script type="text/javascript">
-            $(document).ready(function(){
-              
-              var validator = $('#form-feedback').validate({
-                rules:{
-                  nome:{
-                    required: true,
-                    minlength: 2
-                  },
-                  email:{
-                    required: true,
-                    email: true
-                  },
-                  mensagem:{
-                    required: true
-                  }
-                },
-                highlight: function(label) {
-                  $(label).closest('.control-group').addClass('error');
-                },
-                success: function(label){
-                  label
-                    .text('OK!').addClass('valid')
-                    .closest('.control-group').addClass('success');
-                },
-                submitHandler: function(form){
-                  $.ajax({
-                    type: "POST",
-                    dataType: "text",
-                    data: $("#form-feedback").serialize(),
-                    beforeSend: function(){
-                      $('#loader2').show();
-                      $('.btn-enviar').hide();
-                    },
-                    success: function(data){
-                      window.location.href="javascript:;";
-                      if(data == "1"){
-
-                      }
-                      else {
-
-                      }
-                    }
-                  });         
-                },
-                
-                
-
-
-              });
-            });
-                
-        </script>
-
-        <!--Modal Feedback-->
-              
-      <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-
-      <!-- logo --->
-      <div class=" row pull-right">
-        <ul class="span2 direita row pull-right">
-          <li class="span2 logo row pull-right">
-            <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura"  style="width:90%;"/>
-          </li>
-          <li class="span2 row">
-            <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Ouvir a Rádio Cultura Brasil</a>
-          </li>
-        </ul>  
-      </div>
-      <!-- logo --->
-
-     <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section' => $section)) ?>
+      
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
+        <!--topo menu/alert/logo-->
+        <div class="row-fluid">
+          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
      
      <div class="row span5">  
         <div class="page-header">
