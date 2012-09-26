@@ -11,41 +11,31 @@ if(isset($pager)){
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/radarcultura.css" type="text/css" />
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
+    <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
     <!--container-->
     <div class="container">
-          
-      <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
+      
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
         <div class="row-fluid">
           <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-          
-        <!-- logo --->
-        <ul class="span2 pull-right">
-          <li class="">
-            <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura"/>
-          </li>
-          <li class="">
-            <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Ouvir a Rádio Cultura Brasil</a>
-          </li>
-        </ul>  
-        <!-- logo --->
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
         
-        <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
-      </div>
-      <!--/topo menu/alert/logo-->
-      
 		 <?php if($section->getParentSectionId()): ?>
 		 <?php $parentSection = Doctrine::getTable('section')->findOneById($section->getParentSectionId()); ?>
 		 <?php endif; ?>
