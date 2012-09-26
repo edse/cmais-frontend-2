@@ -39,7 +39,6 @@
         <div class="row-fluid span12" style="margin:0 0 0 0;">
           <ul class="thumbnails span8">
             <li class="span12">
-              <p><small><?php echo $asset->getTitle() ?></small></p>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
              <div class="container face span12">
