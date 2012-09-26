@@ -76,9 +76,9 @@ function slugfy($string){
 ?>
 
 <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/radar2012/css/radarcultura.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
