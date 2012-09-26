@@ -15,8 +15,8 @@
 #menu-rodape #logos .carrossel .jcarousel-item a.ativo { border-color:#96a84c;} 
 .abas li a.ativo,
 .abas li a:hover { background-position:0 -306px;  }
-.menu-interna li.ativo, 
-.menu-interna li:hover {color:#fff; background:#96a84c;}
+.box-topo .menu-interna li.ativo, 
+.box-topo .menu-interna li:hover {color:#fff; background:#96a84c;}
 .menu-interna a,
 #menu-rodape .blocos a,
 .tit-pagina a,
@@ -26,10 +26,11 @@
 #menu-rodape .exibir-programas a:hover { background:#96a84c; color:#fff }
 .topo span {background-position:-45px;}
 .claro .capa-titulo { background:#96a84c;}
-.abas li.ativo .decoracao,
+/*.abas li.ativo .decoracao,
 .abas li:hover .decoracao  {background-position:0 -12px;}
 .abas li.ativo a,
 .abas li:hover a,
+*/
 .submenu-interna,
 .capa-titulo,
 .box-borda .newsletter .assinar,
