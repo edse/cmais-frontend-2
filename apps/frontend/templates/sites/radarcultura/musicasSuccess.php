@@ -2,25 +2,31 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
- 
-    <link href="/radar2012/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/radar2012/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="/radar2012/css/radarcultura.css" type="text/css" />   
-    
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
-    <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
-    <script src="/radar2012/js/radarcultura.js"></script>
-    
-    
+    <!--container-->
+    <div class="container">
+      
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
+        
+        <!--topo menu/alert/logo-->
+        <div class="row-fluid">
+          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
+        
     <div class="container lista-musica">
       <!-- box-alert-topo -->
       <div class="row span8 alert alert-block alert-info radarIndex">
