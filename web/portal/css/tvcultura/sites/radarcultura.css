@@ -47,21 +47,21 @@ body{background: none; padding: 0;text-align:left;}
 .redes-share .span1{margin:0}
 .redes-share.span3{width:210px;}
 .redes-share .twitter{width:71px;}
-.redes-share .face{width:61px;}
-.redes-share .google{width:61px;}
+.redes-share .facebook{width:61px;}
+.redes-share .googleplus{width:61px;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
 
 
 .icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
 .icone-rede.twitter{background-position:-139px }
-.icone-rede.face{background-position:-111px }
-.icone-rede.google{background-position:-55px }
+.icone-rede.facebook{background-position:-111px }
+.icone-rede.googleplus{background-position:-55px }
 
 .redes .page-header {padding: 0 0 0 8px;margin: 11px 0 11px;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
-.redes .span4{max-width:290px\9; }
+.redes .span4{max-width:290px\9;max-width:309px;}
 .redes .span6{max-width:290px\9;}
 .redes h4{color:black;}
 
