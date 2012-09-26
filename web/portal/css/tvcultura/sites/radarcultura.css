@@ -29,7 +29,7 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
-.logo{*width:136px;}
+.logo{*width:50px;}
 .logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;}
