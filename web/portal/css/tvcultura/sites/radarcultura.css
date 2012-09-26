@@ -16,6 +16,7 @@ body{background: none; padding: 0;text-align:left;}
 .banner-radio {margin:0px auto; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
+.thumbnail{overflow: hidden;margin-bottom: 20px;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; }
