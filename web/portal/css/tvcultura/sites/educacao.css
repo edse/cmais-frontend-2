@@ -28,8 +28,9 @@
 .claro .capa-titulo { background:#96a84c;}
 .abas li.ativo .decoracao,
 .abas li:hover .decoracao  {background-position:0 -12px;}
+/*
 .abas li.ativo a,
-.abas li:hover a,
+.abas li:hover a,*/ 
 .submenu-interna,
 .capa-titulo,
 .box-borda .newsletter .assinar,
