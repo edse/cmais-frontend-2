@@ -129,7 +129,7 @@
           <?php if(count($displays['na-rede']) > 0): ?>
           <div class="span4">
               <div class="page-header">
-                <h3>Na rede<small>comentários dos usuários</small></h3>
+                <h3>Na rede<small> comentários dos usuários</small></h3>
               </div>
               <div class="row-fluid redes ">
                 <div class="span12 thumbnail">
