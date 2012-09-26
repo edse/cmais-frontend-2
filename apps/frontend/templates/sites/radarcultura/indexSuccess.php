@@ -50,6 +50,7 @@
                     <!-- /item -->
                   <?php endforeach; ?>
                 </div>
+                <?php endif; ?>
                 <!-- Carousel nav -->
                 <?php if(count($displays['destaque-principal']) > 1): ?>
                   <a class="carousel-control left" href="#carrossel-radar" data-slide="prev">&lsaquo;</a>
@@ -57,7 +58,7 @@
                 <?php endif; ?>
               </div>
               <!-- /box-carrossel -->
-            <?php endif; ?>
+            
           <?php endif; ?>    
         </div>
         <!--/carrossel-->
