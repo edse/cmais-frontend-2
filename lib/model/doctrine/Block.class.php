@@ -78,7 +78,7 @@ class Block extends BaseBlock
         if($this->items_order != "")
           $order = $this->items_order;
         else
-          $order = "a.created_at desc";
+          $order = "a.id desc";
 				if ($this->Section->Site->getSlug() == "radarcultura") {
 	        $cs = Doctrine_Query::create()
 	          ->select('a.*')
