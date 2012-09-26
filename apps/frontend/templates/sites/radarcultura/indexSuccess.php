@@ -150,7 +150,7 @@
         <!--rodape-->
         <div class="row-fluid">
           <div class="span12">
-            <div class="page-header"></div>
+
               <div class="row-fluid redes">
               <?php if(isset($displays['como-participar'])):?>
                 <?php if(count($displays['como-participar']) > 0): ?>       
