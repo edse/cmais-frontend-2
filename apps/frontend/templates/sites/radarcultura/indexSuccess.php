@@ -77,7 +77,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -106,7 +108,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
+                  <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -119,7 +123,7 @@
           <?php if(count($displays['na-rede']) > 0): ?>
           <div class="span4">
               <div class="page-header">
-                <h3>Na rede<small>comentários dos usuários</small></h3>
+                <h3>Na rede<small> comentários dos usuários</small></h3>
               </div>
               <div class="row-fluid redes ">
                 <div class="span12 thumbnail">
@@ -131,7 +135,9 @@
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> ver detalhes</a>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
