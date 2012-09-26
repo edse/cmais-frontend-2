@@ -74,8 +74,7 @@ function slugfy($string){
   return str_replace("por-", "", str_replace(" ", "", $slug));
 }
 ?>
-
-<!-- Le styles -->
+    <!-- Le styles -->
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
@@ -90,26 +89,16 @@ function slugfy($string){
     <!--container-->
     <div class="container">
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
-      
-      <!--topo menu/alert/logo-->
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
-        <!-- logo --->
-        <ul class="span2 pull-right">
-          <li class="">
-            <img src="/radar2012/images/Logo-Radar.jpg" alt="Radar Cultura"/>
-          </li>
-          <li class="">
-            <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
-          </li>
-        </ul>  
-        <!-- logo --->
-        
-        <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
-      </div>
-      <!--topo menu/alert/logo-->
+        <!--topo menu/alert/logo-->
+        <div class="row-fluid">
+          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        </div>
+        <div class="row-fluid">  
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        </div>
+        <!--topo menu/alert/logo-->
         <!--letra-->      
         <div class="row-fluid">  
           <div class="page-header">
