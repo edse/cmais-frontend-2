@@ -36,7 +36,7 @@
                 <div class="carousel-inner">
                   <?php foreach($displays['destaque-principal'] as $k=>$d): ?>          
                     <!-- item -->
-                    <div class="<?php if($k==1): ?>active<?php endif; ?> item">
+                    <div class="<?php if($k==0): ?> active<?php endif; ?>item">
                       <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                         <?php /*<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>" /> */ ?>
                         <img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
