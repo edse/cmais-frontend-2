@@ -80,6 +80,7 @@
       <!--curtir-->
       <div id="facebook-cultura">
         
+        <?php /* 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -89,8 +90,9 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
         </script>
-        <!--curtir-->
+        */ ?>
         
+        <!--curtir-->
         <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
       
       </div>
