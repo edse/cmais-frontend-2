@@ -205,22 +205,22 @@
             <!--/banner-->
          </div>
          <!--/coluna direita-->
-         <!--paginaçao-->
-         <?php if ($pager->haveToPaginate()): ?>
-          <div class="pagination pagination-centered">
-            <ul>
-              <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
-              <?php foreach ($pager->getLinks() as $page): ?>
-                <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
-              <?php endforeach; ?>
-              <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
-            </ul>
-          </div>
-          <?php endif; ?>
-          <!--/paginaçao-->
+         
       </div>
       <!--/centro pagina-->
-      
+      <!--paginaçao-->
+       <?php if ($pager->haveToPaginate()): ?>
+        <div class="pagination pagination-centered">
+          <ul>
+            <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
+            <?php foreach ($pager->getLinks() as $page): ?>
+              <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
+            <?php endforeach; ?>
+            <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
+          </ul>
+        </div>
+        <?php endif; ?>
+        <!--/paginaçao-->
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
