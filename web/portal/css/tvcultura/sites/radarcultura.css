@@ -82,4 +82,5 @@ body{background: none; padding: 0;text-align:left;}
 .row-fluid.musicas{margin-top:30px;}
 .table.musica{color:#333;}
 .table.musica tr td{width:240px;padding:3px;}
+.direita{*max-width:280px;}
 

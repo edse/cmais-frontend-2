@@ -139,7 +139,7 @@
         </table>
         <!--/coluna esquerda-->
         <!--coluna direita-->
-        <div class="span4">
+        <div class="span4 direita">
           <!--sobre o programa-->
           <?php
               $displays = array();
