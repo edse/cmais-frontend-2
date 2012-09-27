@@ -101,12 +101,21 @@ function slugfy($string){
         <!--topo menu/alert/logo-->
         <!--letra-->      
         <div class="row-fluid">  
-          <div class="page-header">
+          <div class="page-header artista">
             <h1>Artistas <small>lista completa de artistas</small>
             <?php if(isset($letter) != ""): ?>
               <h3><?php echo strtoupper($letter)?> <small>artistas que começam com a letra "<?php echo strtoupper($letter)?>"</small></h3>
             <?php endif; ?>
-            </h1> 
+            </h1>
+            <!--contagem-->
+            <div class="contagem">
+              <?php if(isset($letter)):?>
+                <h3><small>Total de artistas com a letra "<?php echo strtoupper($letter)?>" - </small><?php echo $pager->count()?></h3>
+              <?php else:?>
+                <h3><small>Total de artistas - </small><?php echo $pager->count()?></h3>  
+              <?php endif; ?>
+            </div>
+            <!--/contagem--> 
           </div>
           <div class="pagination pagination-centered">
             <ul>
@@ -196,15 +205,7 @@ function slugfy($string){
         </div>
       </div>
       <!--lista-->
-      <!--contagem-->
-      <div class="row-fluid">
-        <?php if(isset($letter)):?>
-          <h3><small>Total de artistas com a letra "<?php echo strtoupper($letter)?>" - </small><?php echo $pager->count()?></h3>
-        <?php else:?>
-          <h3><small>Total de artistas - </small><?php echo $pager->count()?></h3>  
-        <?php endif; ?>
-      </div>
-      <!--/contagem-->
+
       <!--paginador-->
       <?php if ($pager->haveToPaginate()): ?>
         <div class="pagination pagination-centered">

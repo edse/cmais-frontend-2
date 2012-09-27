@@ -12,11 +12,13 @@ body{background: none; padding: 0;text-align:left;}
 /* /topo cmais desktop */
 
 /* geral */
+h1{max-width:830px;}
 .container{max-width:1010px; clear:both;}
 .banner-radio {margin:0px auto; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
 .thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px}
+.page-header{overflow: hidden;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; }
@@ -75,6 +77,8 @@ body{background: none; padding: 0;text-align:left;}
 .lista-assets.span4{margin:0px\9;}
 
 /* artistas */
+.page-header.artista h1{float:left;}
+.contagem{max-width:200px; float:right; text-align: right;}
 .table.artista tr td{max-width: 312px}
 
 
