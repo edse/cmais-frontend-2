@@ -108,7 +108,7 @@
       </div>
       <!--/letras-->        
       <!--Centro pagina-->
-      <div class="row-fluid">
+      <div class="row-fluid musicas">
         <!--coluna esquerda-->
         <table class="table table-condensed table-hover musica span8">
           <tbody>
@@ -138,11 +138,99 @@
         <!--/coluna esquerda-->
         <!--coluna direita-->
         <div class="span4">
-          coluna direita
-        </div>
-        <!--/coluna direita-->
+          <!--sobre o programa-->
+          <?php
+              $displays = array();
+              $block_sobre = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'sobre-o-programa')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_sobre) > 0){
+                $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
+              }
+            ?>
+            <?php if(isset($displays['sobre-o-programa'])):?>
+              <?php if(count($displays['sobre-o-programa']) > 0): ?>
+              <div class="row-fluid thumbnail">
+                <div class="page-header">
+                  <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+                </div>
+                <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+              </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <!--/sobre o programa-->
+            <!--como participar-->
+            <?php
+              $displays = array();
+              $block_comoparticipar = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'como-participar')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_comoparticipar) > 0){
+                $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
+              }
+            ?>
+           <?php if(isset($displays['como-participar'])):?>
+              <?php if(count($displays['como-participar']) > 0): ?>       
+                <div class="row-fluid thumbnail">
+                  <div class="page-header">
+                    <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
+                  </div>
+                  <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                  <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <!--/como participar-->
+            <!--banner-->
+            <div class="row-fluid">
+              <div class="banner-radio">
+                <script type='text/javascript'>
+                  GA_googleFillSlot("cmais-assets-300x250");
+                </script>
+              </div>
+            </div>
+            <!--/banner-->
+         </div>
+         <!--/coluna direita-->
+         <!--paginaçao-->
+         <?php if ($pager->haveToPaginate()): ?>
+          <div class="pagination pagination-centered">
+            <ul>
+              <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
+              <?php foreach ($pager->getLinks() as $page): ?>
+                <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
+              <?php endforeach; ?>
+              <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
+            </ul>
+          </div>
+          <?php endif; ?>
+          <!--/paginaçao-->
       </div>
       <!--/centro pagina-->
+      
+      <!--banner horizontal-->    
+        <div class="container">
+          <div class="banner-radio horizontal">
+            <script type='text/javascript'>
+              GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+        </div>
+        <!--banner horizontal-->
+        
     </div>
     <!--/container-->
     
