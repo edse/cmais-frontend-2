@@ -29,6 +29,33 @@
       <!--breadcrumbs-->
        <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'displays' => $displays, 'section'=>$section)) ?>
       <!--breadcrumbs-->
+      
+      <div id="row-fluid">
+        <div class="page-header">
+          <h1><?php echo $artist?> <small>lista completa de músicas</small>
+            
+          <div class="contagem2 pull-right">
+          <?php if(isset($letter)):?>
+            <?php if($pager->count() > 1):?>
+              <h3><?php echo $pager->count()?><small> Músicas começando com "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php elseif($pager->count() == 1):?>
+              <h3>1<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php else:?>
+              <h3>Nenhuma<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php endif; ?>
+          <?php else:?>
+            <?php if($pager->count() > 1):?>
+              <h3><?php echo $pager->count()?><small> Músicas</small></h3>
+            <?php elseif($pager->count() == 1):?>
+              <h3>1<small> Música</small></h3>
+            <?php else:?>
+              <h3>Nenhuma<small> Música</small></h3>
+            <?php endif; ?>
+          <?php endif; ?>
+          </div>
+               
+        </div>
+      </div>
     </div>
     <!--/container-->
     
