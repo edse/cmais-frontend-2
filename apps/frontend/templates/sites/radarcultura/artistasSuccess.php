@@ -106,7 +106,7 @@ function slugfy($string){
             <?php if(isset($letter) != ""): ?>
               <h3><?php echo strtoupper($letter)?> <small>artistas que começam com a letra "<?php echo strtoupper($letter)?>"</small></h3>
             <?php endif; ?>
-            </h1>
+            </h1> 
           </div>
           <div class="pagination pagination-centered">
             <ul>
