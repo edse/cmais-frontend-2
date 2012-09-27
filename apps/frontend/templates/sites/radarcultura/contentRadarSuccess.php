@@ -72,7 +72,7 @@
               </li>
               <li class="span12">
                 <div class="thumbnail">
-                  <link href="/radar2012/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+                  <link href="/portal/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
                   <script type="text/javascript" src="/radar2012/js/jquery.jplayer.min.js"></script>
                   <script type="text/javascript">
 										//<![CDATA[
