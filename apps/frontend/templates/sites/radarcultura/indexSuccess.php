@@ -77,7 +77,7 @@
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p><?php echo str_replace("&#039;", "", html_entity_decode($d->AssetContent->getContent())) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
                   <?php endif; ?>
