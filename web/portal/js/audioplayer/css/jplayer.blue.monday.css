@@ -481,7 +481,7 @@ a.jp-unmute:hover,
 div.jp-volume-bar,
 div.jp-volume-bar-value,
 div.jp-video div.jp-video-play,
-div.jp-video div.jp-video-play:hover {background-image:url(/portal/images/jplayer.png);}
+div.jp-video div.jp-video-play:hover {background-image:url(/images/jplayer.png);}
 div.jp-seeking-bg {	background-image:url(/portal/images/pbar-ani.gif);}
 /*div.jp-audio {width:310px;}*/
 div.jp-audio div.jp-type-single a.jp-play,
