@@ -46,7 +46,7 @@
       <div id="row-fluid">
         <!--Titulo-->
         <div class="page-header">
-          <h1><?php echo $artist?> <small>lista completa de músicas</small>
+          <h1><?php echo $artist?> <small>lista completa de músicas</small></h1>
           
           <!--contagem-->
           <div class="contagem2 pull-right">
@@ -77,38 +77,72 @@
       <?php  /*if($letter != ""): ?>
           <h3><small>Músicas começando com </small><?php echo strtoupper($letter)?></h3>
         <?php endif; */ ?>
-
-        <div class="row pagination pagination-centered">
-          <ul>
-            <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('#');">#</a></li>
-            <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('a');">A</a></li>
-            <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('b');">B</a></li>
-            <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('c');">C</a></li>
-            <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('d');">D</a></li>
-            <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('e');">E</a></li>
-            <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('f');">F</a></li>
-            <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('g');">G</a></li>
-            <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('h');">H</a></li>
-            <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('i');">I</a></li>
-            <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('j');">J</a></li>
-            <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('l');">L</a></li>
-            <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('m');">M</a></li>
-            <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('n');">N</a></li>
-            <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('o');">O</a></li>
-            <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('p');">P</a></li>
-            <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('q');">Q</a></li>
-            <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('r');">R</a></li>
-            <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('s');">S</a></li>
-            <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('t');">T</a></li>
-            <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('u');">U</a></li>
-            <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('v');">V</a></li>
-            <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('x');">X</a></li>
-            <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('z');">Z</a></li>
-          </ul>
+      <!--letras-->
+      <div class="row pagination pagination-centered">
+        <ul>
+          <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('#');">#</a></li>
+          <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('a');">A</a></li>
+          <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('b');">B</a></li>
+          <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('c');">C</a></li>
+          <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('d');">D</a></li>
+          <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('e');">E</a></li>
+          <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('f');">F</a></li>
+          <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('g');">G</a></li>
+          <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('h');">H</a></li>
+          <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('i');">I</a></li>
+          <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('j');">J</a></li>
+          <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('l');">L</a></li>
+          <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('m');">M</a></li>
+          <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('n');">N</a></li>
+          <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('o');">O</a></li>
+          <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('p');">P</a></li>
+          <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('q');">Q</a></li>
+          <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('r');">R</a></li>
+          <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('s');">S</a></li>
+          <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('t');">T</a></li>
+          <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('u');">U</a></li>
+          <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('v');">V</a></li>
+          <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('x');">X</a></li>
+          <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('z');">Z</a></li>
+        </ul>
+      </div>
+      <!--/letras-->        
+      <!--Centro pagina-->
+      <div class="row-fluid">
+        <!--coluna esquerda-->
+        <table class="table table-condensed table-hover musica span8">
+          <tbody>
+            <thead>
+              <tr>
+                <th>Música</th>
+                <th>Intérprete</th>
+                <th>Compositor</th>
+                <th style="text-align: right;"></th>
+              </tr>
+            </thead>
+          <?php if(count($pager) > 0): ?>
+            <?php
+            foreach($pager->getResults() as $d):
+              $aux = explode(";", $d->AssetContent->getHeadlineShort());
+              ?>
+              <tr>
+                <td><?php echo $d->getTitle(); ?></td>
+                <td><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
+                <td><?php echo $aux[4] ?></td>
+                <td class="play"><a href="<?php echo url_for('@homepage') ?>radarcultura/musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+              </tr>
+            <?php endforeach; ?>
+          <?php endif; ?>
+          </tbody>
+        </table>
+        <!--/coluna esquerda-->
+        <!--coluna direita-->
+        <div class="span4">
+          coluna direita
         </div>
-        
-
-      
+        <!--/coluna direita-->
+      </div>
+      <!--/centro pagina-->
     </div>
     <!--/container-->
     
