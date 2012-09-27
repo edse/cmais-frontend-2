@@ -158,7 +158,7 @@
             ?>
             <?php if(isset($displays['sobre-o-programa'])):?>
               <?php if(count($displays['sobre-o-programa']) > 0): ?>
-              <div class="row-fluid thumbnail">
+              <div class="thumbnail">
                 <div class="page-header">
                   <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
                 </div>
@@ -186,7 +186,7 @@
             ?>
            <?php if(isset($displays['como-participar'])):?>
               <?php if(count($displays['como-participar']) > 0): ?>       
-                <div class="row-fluid thumbnail">
+                <div class="thumbnail">
                   <div class="page-header">
                     <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                   </div>
@@ -197,7 +197,7 @@
             <?php endif; ?>
             <!--/como participar-->
             <!--banner-->
-            <div class="row-fluid">
+            <div class="">
               <div class="banner-radio">
                 <script type='text/javascript'>
                   GA_googleFillSlot("cmais-assets-300x250");

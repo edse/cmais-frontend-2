@@ -102,7 +102,11 @@ function slugfy($string){
         <!--letra-->      
         <div class="row-fluid">  
           <div class="page-header">
-            <h1>Artistas <small>lista completa de artistas</small></h1>
+            <h1>Artistas <small>lista completa de artistas</small>
+            <?php if(isset($letter) != ""): ?>
+              <h3><?php echo strtoupper($letter)?> <small>artistas que começam com a letra "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php endif; ?>
+            </h1>
           </div>
           <div class="pagination pagination-centered">
             <ul>
@@ -133,9 +137,7 @@ function slugfy($string){
             </ul>
           </div>
           
-          <?php if(isset($letter) != ""): ?>
-            <h3><?php echo strtoupper($letter)?> <small>artistas que começam com a letra "<?php echo strtoupper($letter)?>"</small></h3>
-          <?php endif; ?>
+          
        </div>
        <!--letras-->
        <!--lista-->
