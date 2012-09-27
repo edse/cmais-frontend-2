@@ -73,7 +73,7 @@
               <li class="span12">
                 <div class="thumbnail">
                   <link href="/portal/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-                  <script type="text/javascript" src="/radar2012/js/jquery.jplayer.min.js"></script>
+                  <script type="text/javascript" src="/portal/js/jquery.jplayer.min.js"></script>
                   <script type="text/javascript">
 										//<![CDATA[
 										$(document).ready(function(){
@@ -157,7 +157,7 @@
   	                  			$(this).blur();
     	                			return false;
       	              		});
-        	            
+        	             
           	          		// Disable free media links to force access via right click
             	        		if(this.playlist[i].free) {
               	      			$.each(this.playlist[i], function(property,value) {
