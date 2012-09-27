@@ -68,12 +68,12 @@
                     <g:plusone size="medium" count="false"></g:plusone>
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" style="float:right; display:block">Tweet</a>
                   </div>
-
+ 
               </li>
               <li class="span12">
                 <div class="thumbnail">
-                  <link href="/portal/js/jPlayer/skin/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-                  <script type="text/javascript" src="/portal/js/jPlayer/js/jquery.jplayer.min.js"></script>
+                  <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+                  <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
                   <script type="text/javascript">
 										//<![CDATA[
 										$(document).ready(function(){
