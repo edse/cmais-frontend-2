@@ -80,7 +80,7 @@
           <h3><small>Músicas começando com </small><?php echo strtoupper($letter)?></h3>
         <?php endif; */ ?>
       <!--letras-->
-      <div class="row pagination pagination-centered">
+      <div class="row-fluid pagination pagination-centered">
         <ul>
           <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('#');">#</a></li>
           <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="javascript: goToLetter('a');">A</a></li>
