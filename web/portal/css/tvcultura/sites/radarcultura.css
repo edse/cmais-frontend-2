@@ -52,13 +52,10 @@ body{background: none; padding: 0;text-align:left;}
 .redes-share .googleplus-share{width:61px;float:left;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
 .carousel-inner img{width:100%}
-
-
 .icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
 .icone-rede.twitter{background-position:-139px }
 .icone-rede.facebook{background-position:-111px; padding:0; }
 .icone-rede.googleplus{background-position:-55px }
-
 .redes .page-header {padding: 0 0 0 8px;margin: 11px 0 11px;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
@@ -78,8 +75,10 @@ body{background: none; padding: 0;text-align:left;}
 .lista-assets.span4{margin:0px\9;}
 
 /* artistas */
-.table.musica{color:#333;}
 .table.artista tr td{max-width: 312px}
-.contagem h3{max-width: 285px; margin:0 auto;}
 
+
+/* musicas */
+.table.musica{color:#333;}
+.table.musica tr td{width:240px;padding:3px;}
 
