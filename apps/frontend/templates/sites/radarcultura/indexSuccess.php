@@ -36,7 +36,7 @@
                 <div class="carousel-inner">
                   <?php foreach($displays['destaque-principal'] as $k=>$d): ?>          
                     <!-- item -->
-                    <div class="<?php if($k==1): ?>active<?php endif; ?> item">
+                    <div class="<?php if($k==0): ?> active<?php endif; ?>item">
                       <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                         <?php /*<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>" /> */ ?>
                         <img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
@@ -77,7 +77,7 @@
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p><?php echo str_replace("&#039;", "", html_entity_decode($d->AssetContent->getContent())) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
                   <?php endif; ?>
@@ -126,8 +126,8 @@
               <div class="page-header">
                 <h3>Na rede<small> comentários dos usuários</small></h3>
               </div>
-              <div class="row-fluid redes ">
-                <div class="span12 thumbnail">
+              <div class="redes ">
+                <div class="thumbnail">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
@@ -149,52 +149,48 @@
         
         <!--rodape-->
         <div class="row-fluid">
-          <div class="span12">
-            <div class="page-header"></div>
-              <div class="row-fluid redes">
-              <?php if(isset($displays['como-participar'])):?>
-                <?php if(count($displays['como-participar']) > 0): ?>       
-                  <div class="span4 thumbnail">
-                    <div class="page-header">
-                      <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                    </div>
-                    <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                    <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                  </div>
-                <?php endif; ?>
-              <?php endif; ?>
-              <?php if(isset($displays['sobre-o-programa'])):?>
-                <?php if(count($displays['sobre-o-programa']) > 0): ?>
+          <div class="row-fluid redes">
+            <?php if(isset($displays['como-participar'])):?>
+              <?php if(count($displays['como-participar']) > 0): ?>       
                 <div class="span4 thumbnail">
                   <div class="page-header">
-                    <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+                    <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                   </div>
-                  <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                  <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                  <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                  <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
                 </div>
-                <?php endif; ?>
               <?php endif; ?>
-              <div class="span4">
-                <div class="banner-radio">
-                  <script type='text/javascript'>
-                    GA_googleFillSlot("home-geral300x250");
-                  </script>
+            <?php endif; ?>
+            <?php if(isset($displays['sobre-o-programa'])):?>
+              <?php if(count($displays['sobre-o-programa']) > 0): ?>
+              <div class="span4 thumbnail">
+                <div class="page-header">
+                  <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
                 </div>
+                <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+              </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <div class="span4">
+              <div class="banner-radio">
+                <script type='text/javascript'>
+                  GA_googleFillSlot("home-geral300x250");
+                </script>
               </div>
             </div>
           </div>
-          <!--/rodape-->
-        
-          <!--banner horizontal-->    
-          <div class="container">
-            <div class="banner-radio horizontal">
-              <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-728x90");
-              </script>
-            </div>
-          </div>
-          <!--banner horizontal-->
-        </div>
+       </div>
         <!--rodape-->
+        
+        <!--banner horizontal-->    
+        <div class="container">
+          <div class="banner-radio horizontal">
+            <script type='text/javascript'>
+              GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+        </div>
+        <!--banner horizontal-->
       </div>
       <!--container-->      

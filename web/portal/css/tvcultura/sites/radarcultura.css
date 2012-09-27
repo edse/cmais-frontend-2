@@ -12,10 +12,11 @@ body{background: none; padding: 0;text-align:left;}
 /* /topo cmais desktop */
 
 /* geral */
-.container{max-width:1010px;}
+.container{max-width:1010px; clear:both;}
 .banner-radio {margin:0px auto; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
+.thumbnail{overflow: hidden;margin-bottom: 20px;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; }
@@ -28,9 +29,9 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
-.logo a{margin:0 0 0 10px;}
+.logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
-.nav.menu-principal {margin-top:79px;}
+.nav.menu-principal {margin-top:79px;*margin-left:-20px;}
 .nav.menu-principal > li.active > a{color:#333333;font-weight: bold;}
 .nav.menu-principal > li > a{color:#999999;}
 .nav.menu-principal > li:hover > a{color:#333333;}
@@ -50,6 +51,7 @@ body{background: none; padding: 0;text-align:left;}
 .redes-share .facebook-share{width:61px;float:left;}
 .redes-share .googleplus-share{width:61px;float:left;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 315px;top: 0;color: white;}
+.carousel-inner img{width:100%}
 
 
 .icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
@@ -61,6 +63,8 @@ body{background: none; padding: 0;text-align:left;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
+.redes .span4{*max-width:280px;}
+.redes .span6{*max-width:280px;}
 .redes h4{color:black;}
 
 /* lista assets subsection */

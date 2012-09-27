@@ -386,28 +386,70 @@
                   </script>
                 </div>
               </li>
+              
+              <?php
+							$displays = array();
+			        $block_sobre = Doctrine_Query::create()
+			          ->select('b.*')
+			          ->from('Block b, Section s')
+			          ->where('b.section_id = s.id')
+			          ->andWhere('s.slug = ?', 'home')
+			          ->andWhere('b.slug = ?', 'sobre-o-programa')
+			          ->andWhere('s.site_id = ?', $site->id)
+								->execute();
+						
+				      if(count($block_sobre) > 0){
+			          $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
+				      }
+            ?>
+              <?php if(isset($displays['sobre-o-programa'])):?>
+            	<?php if(count($displays['sobre-o-programa']) > 0): ?>
               <li class="span12">
                 <div class="thumbnail">
                   <div class="caption">
                     <div class="page-header">
-                      <h4>Sobre o programa</h4>
+                      <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
                     </div>
-                    <p>cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="asset-conteudo-sobre.html" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                    <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                    <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
+         	 <?php endif; ?>
+         	 
+         	 <?php
+							$displays = array();
+						  $block_comoparticipar = Doctrine_Query::create()
+						    ->select('b.*')
+						    ->from('Block b, Section s')
+						    ->where('b.section_id = s.id')
+						    ->andWhere('s.slug = ?', 'home')
+						    ->andWhere('b.slug = ?', 'como-participar')
+						    ->andWhere('s.site_id = ?', $site->id)
+								->execute();
+						
+						  if(count($block_comoparticipar) > 0){
+						    $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
+						  }
+						?>
+         	 
+         	 <?php if(isset($displays['como-participar'])):?>
+            <?php if(count($displays['como-participar']) > 0): ?>
               <li class="span12">
                 <div class="thumbnail">
                   <div class="caption">
                     <div class="page-header">
-                      <h4>Como Participar</h4>
+                      <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                     </div>
-                    <p>cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="asset-conteudo-como-participar.html" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                    <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                    <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
+         		  <?php endif; ?>
+              
               <li class="span12">
                 <div class="banner-radio">
                   <script type='text/javascript'>
@@ -474,10 +516,5 @@
         </div>
             
       </div>
-
       <!-- /informações -->
-
      </div>
-    
-  </body>
-</html>  
