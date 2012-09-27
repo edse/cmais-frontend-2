@@ -68,7 +68,7 @@
                     <g:plusone size="medium" count="false"></g:plusone>
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" style="float:right; display:block">Tweet</a>
                   </div>
-
+ 
               </li>
               <li class="span12">
                 <div class="thumbnail">
