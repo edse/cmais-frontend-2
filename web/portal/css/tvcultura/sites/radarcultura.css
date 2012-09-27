@@ -31,6 +31,7 @@ h1{max-width:830px;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
+.logo{width:140px;float:right;margin:0 0 0 0px;}
 .logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;*margin-left:-20px;}
