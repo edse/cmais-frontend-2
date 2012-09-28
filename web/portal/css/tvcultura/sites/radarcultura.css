@@ -99,3 +99,6 @@ body{background: none; padding: 0;text-align:left;}
 
 /* playlists */
 .table.playlist tr td{max-width:260px;}
+
+/* ao vivo */
+#videoPlayer{margin:0 auto;width:451px;}
