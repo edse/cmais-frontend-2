@@ -132,7 +132,7 @@
                   <td><?php echo $d->getTitle(); ?></td>
                   <td><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td><?php echo $aux[4] ?></td>
-                  <td class="play"><a href="<?php echo url_for('@homepage') ?>radarcultura/musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+                  <td class="play"><a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
                 </tr>
               <?php endforeach; ?>
             <?php endif; ?>
@@ -239,7 +239,7 @@
     <!--/container-->
     
     <!--form paginacao-->
-    <form id="page_form" action="" method="post">
+    <form id="page_form" action="" method="get">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
