@@ -39,7 +39,7 @@ class mainActions extends sfActions
     if($request->getParameter('s')!="")
       $subdomain = $request->getParameter('s');
 
-    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp','m','fpa.com.br')))
+    if(!in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','nucleodevideosp','m','radarcultura','fpa.com.br')))
       $subdomain = 'cmais';
 
     $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug($subdomain));
@@ -214,7 +214,7 @@ class mainActions extends sfActions
     $subdomain = @current(explode(".", $request->getHost()));
     $param1 = FALSE; $param2 = FALSE; $param3 = FALSE; $param4 = FALSE; $param5 = FALSE; $param6 = FALSE;
     
-    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp','m','fpa'))){
+    if(in_array($subdomain, array('tvcultura','tvratimbum','culturabrasil','culturafm','univesptv','multicultura','cmais','nucleodevideosp','m','radarcultura','fpa'))){
       $param1 = $subdomain;
       if($request->getParameter('param1')) $param2 = $request->getParameter('param1');
       if($request->getParameter('param2')) $param3 = $request->getParameter('param2');
