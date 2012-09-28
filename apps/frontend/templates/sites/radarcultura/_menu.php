@@ -9,7 +9,7 @@
             <?php if(count($subsections) > 0): ?>
           <!-- botao --->
           <li class="dropdown <?php if($section->getParentSectionId() == $s->id): ?>active<?php endif; ?>">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" title="<?php echo $s->getTitle()?>">
               <?php echo $s->getTitle()?>
               <b class="caret"></b>
             </a>

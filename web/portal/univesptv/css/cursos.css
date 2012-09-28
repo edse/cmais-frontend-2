@@ -120,7 +120,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .esq p span { color:#333 !important; }
 .esq img { clear: both; display: block; margin-bottom:10px; }
 .esq p.bold { margin-bottom:5px; font-size: 16px; } 
-.botoes { margin:10px auto 15px; width:226px; }
+.botoes { margin:10px auto 15px; width:229px; }
 .descricao { margin:20px 0 50px 0; }
 .descricao .titulos { font:16px bold Arial, Helvetica, sans-serif; color:#333; margin-bottom:5px; }
 .descricao p { clear:both;}
@@ -166,8 +166,8 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .dir form input { clear:both; display: block; }
 .dir .btn {  height:28px; }
 #bloco-notas .btn { margin-top:10px;  }
-#bloco-notas #email { width:300px; height:28px;  }
-.dir .nav-tabs { margin-top:28px; }
+#bloco-notas #email { width:300px; height:28px; margin:0; padding:0 0 0 5px;  }
+#anotacoes { margin:0; padding:0 0 0 5px; }
 .descricao a { clear:both; display:block; }
 
 /* erro*/
