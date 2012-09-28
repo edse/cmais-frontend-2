@@ -30,7 +30,11 @@
         <!--titulo musica-->
         <div class="page-header">
           <h1>Colagem <small>por Elis Regina</small>
-          <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique essa música para tocar no RadarCultura</a>
+            <!--contagem-->
+            <div class="pull-right">
+              <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique essa música para tocar no RadarCultura</a>     
+            </div>
+            <!--/contagem-->
           </h1>
         </div>
         <!--/titulo musica-->
@@ -286,6 +290,226 @@
       <!--script-->
     </div>  
     <!--/descricao-->
+      <!-- container -->
+      <div class="row-fluid">
+        <!--coluna esquerda-->
+        <div class="span8" style="margin:0 0 0 0">
+          <!--injformacoes-->
+          <div class="row-fluid">  
+            <table class="table table-striped span6 musicas">
+              <tr>
+                <td>
+                  <h4>Informações</h4>
+                </td> 
+              </tr> 
+              <tr>
+                <td><strong>Música</strong></td> 
+              </tr>
+              <tr>
+                <td><p>Colagem</p></td> 
+              </tr>
+              <tr>
+                <td><strong>Intérprete</strong></td> 
+              </tr> 
+              <tr>
+                <td><p>Colagem</p></td> 
+              </tr> 
+              <tr>
+                <td><strong>Compositor</strong></td> 
+              </tr> 
+              <tr>
+                <td><p>Colagem</p></td> 
+              </tr> 
+              <tr>
+                <td><strong>Sobre a canção</strong></td> 
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  </p>
+                </td> 
+              </tr> 
+            </table>
+            <table class="table table-striped span6 musicas">
+              <tr>
+                <td>
+                  <h4>Letra</h4>
+                </td> 
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    Se você com muita calma usar sua raça<br> 
+                    Vai surpreender<br> 
+                    A surpresa para muitos é uma arma<br> 
+                    Pra se esconder</p>
+                    <p>Se esconder não é tão bom<br> 
+                    Pra viver, pra morrer<br> 
+                    Se você lembrar que tudo é relativo<br> 
+                    Vai compreender</p>
+                    <p>E a compreensão por vezes tão sensata<br> 
+                    Vai lhe conter<br> 
+                    Se conter não é tão bom<br> 
+                    Pra viver, pra morrer<br> 
+                    Pra viver, pra morrer</p>
+                    <p>Se você tentar despir essa colagem<br> 
+                    Vai se perder<br> 
+                    E a perda de si próprio é quase um passo<br> 
+                    Pra conceder</p>
+                    <p>Conceder não é tão bom<br> 
+                    Pra viver, pra morrer, pra nascer<br> 
+                    Somos homens sem lugar<br> 
+                    Homens velhos com raça</p>
+                    <p>À espera de algum descuido<br> 
+                    E com cuidado gozamos paz<br> 
+                    Somos homens bons demais<br> 
+                    Sufocados pelo mal</p>
+                    <p>Só queremos acreditar<br> 
+                    Que isso tudo<br> 
+                    Pode acabar<br> 
+                  </p>
+                </td> 
+              </tr> 
+            </table>
+          </div>
+          <!-- /informações -->
+          
+          <!-- comentario facebook -->
+          <div class="container">
+            <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <hr />
+          </div>
+          <!-- /comentario facebook -->
+        </div>
+        <!--/coluna esquerda-->
+        <!--coluna direita-->
+        <div class="span4 direita">
+          <!--banner -->
+          <div class="span12">
+            <div class="banner-radio">
+              <script type='text/javascript'>
+                GA_googleFillSlot("cmais-assets-300x250");
+              </script>
+            </div>
+          </div>
+          <!--/banner -->
+          <!--sobre o programa-->
+          <?php
+              $displays = array();
+              $block_sobre = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'sobre-o-programa')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_sobre) > 0){
+                $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
+              }
+            ?>
+            <?php if(isset($displays['sobre-o-programa'])):?>
+              <?php if(count($displays['sobre-o-programa']) > 0): ?>
+              <div class="thumbnail">
+                <div class="page-header">
+                  <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+                </div>
+                <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+              </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <!--/sobre o programa-->
+            <!--como participar-->
+            <?php
+              $displays = array();
+              $block_comoparticipar = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'como-participar')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_comoparticipar) > 0){
+                $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
+              }
+            ?>
+           <?php if(isset($displays['como-participar'])):?>
+              <?php if(count($displays['como-participar']) > 0): ?>       
+                <div class="thumbnail">
+                  <div class="page-header">
+                    <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
+                  </div>
+                  <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                  <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <!--/como participar-->
+            <!--banner-->
+            <div class="">
+              <div class="banner-radio">
+                <script type='text/javascript'>
+                  GA_googleFillSlot("home-geral300x250");
+                </script>
+              </div>
+            </div>
+            <!--/banner-->
+         </div>
+         <!--/coluna direita-->
+         
+         <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
+         <?php if(count($relacionados) > 0): ?>
+         <!--pela web-->  
+         <div class="row-fluid">
+            <div class="span12 page-header">
+              <h3>Pela Web <small> quem já indicou essa música</small></h3>
+            </div>
+            <!-- pitaco -->
+            <div class="thumbnails">
+            <?php foreach($relacionados as $k=>$d): ?> 
+              <!--item-->
+              <div class="span4">
+                <div class="row-fluid redes ">
+                  <div class="thumbnail">
+                    <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                      <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                    </a>
+                    <div class="page-header">
+                      <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
+                    </div>
+                    <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                    <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                    <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
+                  </div>
+                </div>
+              </div>
+              <!--/item-->
+            <?php endforeach; ?>
+            </div>
+            <!-- /pitaco -->
+          </div>
+          <!--pela web-->
+          <?php endif; ?>
+          
+          <!--banner horizontal-->    
+          <div class="container">
+            <div class="banner-radio horizontal">
+              <script type='text/javascript'>
+                GA_googleFillSlot("cmais-assets-728x90");
+              </script>
+            </div>
+          </div>
+          <!--banner horizontal-->
+      
+    </div>
+    <!--/container-->  
   </div>  
   <!--container-->       
      
