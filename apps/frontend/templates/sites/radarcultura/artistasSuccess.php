@@ -169,8 +169,8 @@ function slugfy($string){
                   $counter++;
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>radarcultura/artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td><a href="<?php echo url_for('@homepage') ?>radarcultura/artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                 <?php endforeach; ?>
               <?php endif; ?>
@@ -194,8 +194,8 @@ function slugfy($string){
                   if($counter > 15):
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>radarcultura/artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td class="play"><a href="<?php echo url_for('@homepage') ?>radarcultura/artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td class="play"><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                   <?php endif; ?>
                 <?php endforeach; ?>
@@ -231,7 +231,7 @@ function slugfy($string){
       <!--banner horizontal-->
     </div>
     <!--container-->
-    <form id="page_form" action="" method="post">
+    <form id="page_form" action="" method="get">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
