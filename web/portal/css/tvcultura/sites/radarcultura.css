@@ -95,3 +95,6 @@ body{background: none; padding: 0;text-align:left;}
 /* musica */
 .popover {width: 350px;}
 .facebook-comment{width:100px; float:left;}
+
+/* playlists */
+.table.playlist tr td{max-width:260px;}
