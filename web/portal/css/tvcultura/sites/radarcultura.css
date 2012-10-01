@@ -1,4 +1,4 @@
-body{background: none; padding: 0;text-align:left;}
+body{background: none; padding: 0;text-align:left;position: relative;}
 #rodape-portal {margin-top: 0px;}
 
 /* topo cmais desktop */
@@ -31,7 +31,7 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
-.logo{width:140px;float:right;margin:0 0 0 0px;}
+.logo{width:140px\9; width:140px;float:right;margin:0 0 0 0px;}
 .logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;*margin-left:-20px;}
@@ -98,9 +98,15 @@ body{background: none; padding: 0;text-align:left;}
 .facebook-comment{width:100px; float:left;}
 
 /* playlists */
-.page-header.playlist h1{float:left;max-width:830px;}
+.playlist h1{max-width:830px; float:left;}
 .table.playlist tr td{max-width:260px;}
 
 /* ao vivo */
-#videoPlayer{margin:0 auto;width:451px;margin-bottom:30px;}
+#videoPlayer{margin:0 auto;width:451px;}
 
+/* modal */
+.modal{min-width: 633px;top:15%;}
+.modal.fade.in {top: 15%;}
+.modal-backdrop{height: 100%;}
+.control-group{positon:relative;}
+.control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
