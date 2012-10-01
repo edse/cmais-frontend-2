@@ -111,7 +111,7 @@ function slugfy($string){
             -->
             
             <!--contagem-->
-            <div class="contagem">
+            <div class="contagem2" style="float: right;">
               <?php if(isset($letter)):?>
                 <h3><small>Total de artistas com a letra "<?php echo strtoupper($letter)?>" - </small><?php echo $pager->count()?></h3>
               <?php else:?>
