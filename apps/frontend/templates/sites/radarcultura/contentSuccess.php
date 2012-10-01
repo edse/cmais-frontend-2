@@ -50,7 +50,7 @@
             </li>
           </ul>
           
-          <ul class="direita span4">
+           <ul class="direita span4">
               <li class="span12">
                 <div class="banner-radio">
                   <script type='text/javascript'>
