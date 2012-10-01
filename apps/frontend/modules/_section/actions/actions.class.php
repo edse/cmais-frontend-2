@@ -21,6 +21,12 @@ class _sectionActions extends sfActions
     if($request->getParameter('artista')){
       $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
     }
+    else if($request->getParameter('letra')){
+      $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
+      $request->setParameter('letter', $request->getParameter('letra'));
+      if($request->getParameter('letter') == "1-9")
+        $request->setParameter('letter', "#");
+    }
     
     if($request->getParameter('object')){
       
@@ -644,20 +650,42 @@ class _sectionActions extends sfActions
           if($request->getParameter('letter')!=""){
   
             $this->letter = $request->getParameter('letter');
-            $this->assetsQuery = Doctrine_Query::create()
-              ->select('a.title')
-              ->from('Asset a')
-              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
-              ->andWhere('site_id = 189')
-              ->orderBy('a.description');
-  
-            $countQuery = Doctrine_Query::create()
-              ->select('COUNT(DISTINCT description) as description')
-              ->from('Asset a')
-              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
-              ->andWhere('site_id = 189')
-              ->fetchArray();
-  
+            
+            if($this->letter == "#"){
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.title')
+                ->from('Asset a')
+                ->where('slug REGEXP ?', '^[0-9].*$')
+                //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+                ->andWhere('site_id = 189')
+                ->orderBy('a.description');
+    
+              $countQuery = Doctrine_Query::create()
+                ->select('COUNT(DISTINCT description) as description')
+                ->from('Asset a')
+                ->where('slug REGEXP ?', '^[0-9].*$')
+                //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+                ->andWhere('site_id = 189')
+                ->fetchArray();
+
+            }
+            else{
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.title')
+                ->from('Asset a')
+                ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+                ->andWhere('site_id = 189')
+                ->orderBy('a.description');
+    
+              $countQuery = Doctrine_Query::create()
+                ->select('COUNT(DISTINCT description) as description')
+                ->from('Asset a')
+                ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+                ->andWhere('site_id = 189')
+                ->fetchArray();
+
+            }
+
           }else{
             
             //die('2');
@@ -693,20 +721,40 @@ class _sectionActions extends sfActions
           // ARTISTAS
   
           if($request->getParameter('letter')!=""){
+            
             $this->letter = $request->getParameter('letter');
-            $this->assetsQuery = Doctrine_Query::create()
-              ->select('DISTINCT description as description')
-              ->from('Asset a')
-              ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
-              ->andWhere('site_id = 189')
-              ->orderBy('a.description');
-  
-            $countQuery = Doctrine_Query::create()
-              ->select('COUNT(DISTINCT description) as description')
-              ->from('Asset a')
-              ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
-              ->andWhere('site_id = 189')
-              ->fetchArray();
+            
+            if($this->letter == "#"){
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('DISTINCT description as description')
+                ->from('Asset a')
+                ->where('description REGEXP ?', '^Por [0-9].*$')
+                //->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+                ->andWhere('site_id = 189')
+                ->orderBy('a.description');
+    
+              $countQuery = Doctrine_Query::create()
+                ->select('COUNT(DISTINCT description) as description')
+                ->from('Asset a')
+                ->where('description REGEXP ?', '^Por [0-9].*$')
+                //->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+                ->andWhere('site_id = 189')
+                ->fetchArray();
+            }else{
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('DISTINCT description as description')
+                ->from('Asset a')
+                ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+                ->andWhere('site_id = 189')
+                ->orderBy('a.description');
+    
+              $countQuery = Doctrine_Query::create()
+                ->select('COUNT(DISTINCT description) as description')
+                ->from('Asset a')
+                ->where('description LIKE ?', 'Por '.$request->getParameter('letter').'%')
+                ->andWhere('site_id = 189')
+                ->fetchArray();
+            }
   
           }else{
             $this->assetsQuery = Doctrine_Query::create()
@@ -1019,6 +1067,10 @@ class _sectionActions extends sfActions
         $pagelimit = 9;
             
     }
+		if($this->section->Site->getSlug() == "radarcultura") {
+			if($this->section->getSlug() == "playlist")
+				$pagelimit = 20;
+		}
     if(!isset($pagelimit))
       $pagelimit = 9;
     
@@ -1121,9 +1173,14 @@ class _sectionActions extends sfActions
       }
     }
     elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
-      
-      if($debug) print "<br>3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
-      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
+      if ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlist") {
+        if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists');
+      }
+			else {
+	      if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
+	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
+			}
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){

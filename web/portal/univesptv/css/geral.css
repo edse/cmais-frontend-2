@@ -171,5 +171,6 @@
 .cursos a { display:block; clear:both;  }
 
 .box-playlist .img:hover {border-color:#AF111D;}
+#menu-portal-2 li:hover a { background:#ff6633; }
 
 /** /UNIVESPTV  **/

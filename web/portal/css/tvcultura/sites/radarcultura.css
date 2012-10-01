@@ -13,10 +13,12 @@ body{background: none; padding: 0;text-align:left;}
 
 /* geral */
 .container{max-width:1010px; clear:both;}
-.banner-radio {margin:0px auto; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
+.banner-radio {margin:0px auto 20px; border:1px solid #ccc; padding:8px 4px 4px 8px;min-width:300px;max-width: 728px; border-radius:5px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
-.thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px}
+.thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px;}
+.thumbnail p{min-height:57px;}
+.page-header{overflow: hidden;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; }
@@ -29,6 +31,7 @@ body{background: none; padding: 0;text-align:left;}
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
+.logo{width:140px;float:right;margin:0 0 0 0px;}
 .logo a{margin:0 0 0 10px;*margin:0 0 0 5px;}
 .menu-principal{position:relative;}
 .nav.menu-principal {margin-top:79px;*margin-left:-20px;}
@@ -75,13 +78,29 @@ body{background: none; padding: 0;text-align:left;}
 .lista-assets.span4{margin:0px\9;}
 
 /* artistas */
+.page-header.artista h1{float:left;max-width:830px;}
+.contagem{max-width:200px; float:right; text-align: right;}
+.table.artista h4{color:black;}
 .table.artista tr td{max-width: 312px}
 
-
 /* musicas */
+.page-header.musicas h1{float:left;max-width:830px;}
 .row-fluid.musicas{margin-top:30px;}
+.table.musicas h4{color:black;}
+.table.musicas p{width:312px; width:280px\9;}
 .table.musica{color:#333;}
 .table.musica tr td{width:240px;padding:3px;}
-.direita{*max-width:280px;}
 .direita h4{color:black\9;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
+
+/* musica */
+.popover {width: 350px;}
+.facebook-comment{width:100px; float:left;}
+
+/* playlists */
+.page-header.playlist h1{float:left;max-width:830px;}
+.table.playlist tr td{max-width:260px;}
+
+/* ao vivo */
+#videoPlayer{margin:0 auto;width:451px;margin-bottom:30px;}
+

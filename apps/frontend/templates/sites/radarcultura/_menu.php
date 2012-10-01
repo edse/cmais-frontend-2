@@ -9,7 +9,7 @@
             <?php if(count($subsections) > 0): ?>
           <!-- botao --->
           <li class="dropdown <?php if($section->getParentSectionId() == $s->id): ?>active<?php endif; ?>">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" title="<?php echo $s->getTitle()?>">
               <?php echo $s->getTitle()?>
               <b class="caret"></b>
             </a>
@@ -25,7 +25,7 @@
             <?php else: ?>  
           <!-- botao --->
           <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
-            <a href="<?php echo $s->retriveUrl()?>" title="Home"><?php echo $s->getTitle()?></a>
+            <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
           </li>
           <!-- /botao --->
             <?php endif; ?>
@@ -72,13 +72,9 @@
      </div>
      <!-- menu --->
      <!-- logo --->
-     <div class="span2 logo pull-right">
-       <div>
-         <img src="/portal/images/capaPrograma/radarcultura/Logo-Radar.jpg" alt="Radar Cultura"/>
-       </div>
-       <div class="">
-         <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
-       </div>
+     <div class="logo pull-right">
+        <img src="/portal/images/capaPrograma/radarcultura/Logo-Radar.jpg" alt="Radar Cultura"/>
+        <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
      </div>  
      <!-- logo --->
      

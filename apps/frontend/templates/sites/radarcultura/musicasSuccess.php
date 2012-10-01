@@ -45,32 +45,32 @@
       <!--topo Artista/contagem-->
       <div id="row-fluid">
         <!--Titulo-->
-        <div class="page-header">
+        <div class="page-header musicas">
           <h1>
             <?php echo $artist?> <small>lista completa de músicas</small>
-            
-            <!--contagem-->
-            <div class="contagem2 pull-right">
-            <?php if(isset($letter)):?>
-              <?php if($pager->count() > 1):?>
-                <h3><?php echo $pager->count()?><small> Músicas começando com "<?php echo strtoupper($letter)?>"</small></h3>
-              <?php elseif($pager->count() == 1):?>
-                <h3>1<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
-              <?php else:?>
-                <h3>Nenhuma<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
-              <?php endif; ?>
-            <?php else:?>
-              <?php if($pager->count() > 1):?>
-                <h3><?php echo $pager->count()?><small> Músicas</small></h3>
-              <?php elseif($pager->count() == 1):?>
-                <h3>1<small> Música</small></h3>
-              <?php else:?>
-                <h3>Nenhuma<small> Música</small></h3>
-              <?php endif; ?>
-            <?php endif; ?>
-            </div>
-            <!--contagem-->
           </h1>
+          
+          <!--contagem-->
+          <div class="contagem pull-right">
+          <?php if(isset($letter)):?>
+            <?php if($pager->count() > 1):?>
+              <h3><?php echo $pager->count()?><small> Músicas começando com "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php elseif($pager->count() == 1):?>
+              <h3>1<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php else:?>
+              <h3>Nenhuma<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
+            <?php endif; ?>
+          <?php else:?>
+            <?php if($pager->count() > 1):?>
+              <h3><?php echo $pager->count()?><small> Músicas</small></h3>
+            <?php elseif($pager->count() == 1):?>
+              <h3>1<small> Música</small></h3>
+            <?php else:?>
+              <h3>Nenhuma<small> Música</small></h3>
+            <?php endif; ?>
+          <?php endif; ?>
+          </div>
+          <!--/contagem--> 
         </div>
         <!--/Titulo-->
       </div>
@@ -110,33 +110,35 @@
       </div>
       <!--/letras-->        
       <!--Centro pagina-->
-      <div class="row-fluid musicas">
+      <div class="row-fluid musicas" >
         <!--coluna esquerda-->
-        <table class="table table-condensed table-hover musica span8">
-          <tbody>
-            <thead>
-              <tr>
-                <th>Música</th>
-                <th>Intérprete</th>
-                <th>Compositor</th>
-                <th style="text-align: right;"></th>
-              </tr>
-            </thead>
-          <?php if(count($pager) > 0): ?>
-            <?php
-            foreach($pager->getResults() as $d):
-              $aux = explode(";", $d->AssetContent->getHeadlineShort());
-              ?>
-              <tr>
-                <td><?php echo $d->getTitle(); ?></td>
-                <td><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
-                <td><?php echo $aux[4] ?></td>
-                <td class="play"><a href="<?php echo url_for('@homepage') ?>radarcultura/musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
-              </tr>
-            <?php endforeach; ?>
-          <?php endif; ?>
-          </tbody>
-        </table>
+        <div class="span8" style="margin: 0 0 0 0;">
+          <table class="table table-condensed table-hover musica">
+            <tbody>
+              <thead>
+                <tr>
+                  <th>Música</th>
+                  <th>Intérprete</th>
+                  <th>Compositor</th>
+                  <th style="text-align: right;"></th>
+                </tr>
+              </thead>
+            <?php if(count($pager) > 0): ?>
+              <?php
+              foreach($pager->getResults() as $d):
+                $aux = explode(";", $d->AssetContent->getHeadlineShort());
+                ?>
+                <tr>
+                  <td><?php echo $d->getTitle(); ?></td>
+                  <td><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
+                  <td><?php echo $aux[4] ?></td>
+                  <td class="play"><a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+                </tr>
+              <?php endforeach; ?>
+            <?php endif; ?>
+            </tbody>
+          </table>
+        </div>
         <!--/coluna esquerda-->
         <!--coluna direita-->
         <div class="span4 direita">
@@ -237,7 +239,7 @@
     <!--/container-->
     
     <!--form paginacao-->
-    <form id="page_form" action="" method="post">
+    <form id="page_form" action="" method="get">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
