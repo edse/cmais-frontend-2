@@ -1,3 +1,5 @@
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:fb="https://www.facebook.com/2008/fbml">
@@ -12,8 +14,9 @@
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
     <link rel="stylesheet" href="http://172.20.17.129/radar2012/css/radarcultura.css" type="text/css" />    
-    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  	<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -42,31 +45,9 @@
       
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <script type="text/javascript" src="js/jwplayer.js"></script>
-        <!-- Add-On Info Here -->
-        <div id='mediaplayer'></div>
-        <script type="text/javascript">
-			jwplayer('mediaplayer').setup({
-				'flashplayer' : 'js/player.swf',
-				'id' : 'playerID',
-				'screencolor' : '333333',
-				'controlbar' : 'none',
-				'autostart': 'true',
-				'width' : '415',
-				'height' : '35',
-				'file' : 'radioam',
-				'streamer' : 'rtmp://200.136.27.12/live',
-				'plugins' : {
-					'audiolivestream-1' : {
-						format : 'Playing: %track',
-						buffer : 'Buffering: %perc%',
-						backgroundCss : false,
-						trackCss : 'color: #fff; font-size: 11px;'
-					}
-				}
-			});
-
-        </script>
+        
+        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+        
       </div>
     </div>
     <!-- container -->
@@ -74,3 +55,4 @@
 
   </body>
 </html>
+
