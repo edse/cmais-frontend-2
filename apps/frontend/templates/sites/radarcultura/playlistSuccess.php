@@ -39,7 +39,7 @@
               <p><small><?php echo $asset->getTitle() ?></small></p>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
-             <div class="container face span12">
+             <div class="face">
                 <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
                 <hr />
               </div>
