@@ -234,7 +234,41 @@
       }
       */
   
-      function postToFeed() {
+
+    function postToFeed() {
+      // calling the API ...
+      var obj = {
+        method: 'feed',
+        link: 'http://intense-shore-1681.herokuapp.com/html/musica.html',
+        picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
+        name: 'Colagem',
+        caption: 'por Elis Regina',
+        description: 'Minha indicação para o RadarCultura'
+      };
+
+      function callback2(response) {
+        //obj
+        opts= "post_id="+response['post_id'];
+        //loading
+        $('#socialBtn').popover('hide');
+        $('#socialBtn').hide();
+        $('#socialLoading').fadeIn();
+        $.getJSON("http://cmais.com.br/actions/radarcultura/facebookPost.php?post_id="+response['post_id']+"&callback=?");
+      }
+      
+      FB.ui(obj, callback2);
+    }
+
+    function callback(d){
+      $('#socialLoading').fadeOut();
+      if(d == "1"){
+        $('#socialAlert').fadeIn();        
+      }else{
+        alert('erro');
+      }
+    }
+      
+      function postToFeed2() {
         // calling the API ...
         var obj = {
           method: 'feed',
@@ -243,7 +277,7 @@
           caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
         };
-        function callback(response) {
+        function callback2(response) {
           console.log(response);
           document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
@@ -267,7 +301,7 @@
             }
           });
         }
-        FB.ui(obj, callback);
+        FB.ui(obj, callback2);
       }
   
       function popup(url,name,windowWidth,windowHeight){
