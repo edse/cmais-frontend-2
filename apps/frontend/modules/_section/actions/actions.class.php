@@ -680,9 +680,9 @@ class _sectionActions extends sfActions
           $this->assetsQuery = Doctrine_Query::create()
             ->select('a.*')
             ->from('Asset a, SectionAsset sa')
-            ->where('sa.section_id = ?', $this->section->id)
+            ->where('sa.section_id = ?', 1952)
             ->andWhere('sa.asset_id = a.id')
-            ->orderBy('sa.display_order');
+            ->orderBy('a.title');
           
           /*
           $this->assetsQuery = Doctrine_Query::create()
