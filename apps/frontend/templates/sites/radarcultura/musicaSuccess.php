@@ -242,7 +242,6 @@
       var obj = {
         method: 'feed',
         link: 'http://intense-shore-1681.herokuapp.com/html/musica.html',
-        picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
         name: 'Colagem',
         caption: 'por Elis Regina',
         description: 'Minha indicação para o RadarCultura'
