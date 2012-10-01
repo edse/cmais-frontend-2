@@ -343,7 +343,7 @@
               </tr>
               <tr>
                 <td>
-                  <?php echo $asset->AssetContent->getHeadlineLong()?>
+                  <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
                 </td> 
               </tr> 
             </table>
