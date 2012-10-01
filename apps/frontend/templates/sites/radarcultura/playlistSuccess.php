@@ -29,7 +29,7 @@
         <!--centro-->        
         <div class="row-fluid" style="margin:0 0 0 0;">
            <!-- colunavesquerda -->
-           <div class="span12 row">
+           <div class="span8">
               <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
                     
               <div class="page-header">
@@ -106,12 +106,10 @@
               <?php endif; ?>
               <!--/como participar-->
               <!--banner-->
-              <div class="">
-                <div class="banner-radio">
-                  <script type='text/javascript'>
-                    GA_googleFillSlot("cmais-assets-300x250");
-                  </script>
-                </div>
+              <div class="banner-radio">
+                <script type='text/javascript'>
+                  GA_googleFillSlot("cmais-assets-300x250");
+                </script>
               </div>
               <!--/banner-->
            </div>
