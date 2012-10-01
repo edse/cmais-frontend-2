@@ -27,7 +27,7 @@
         </div>
         <!--topo menu/alert/logo-->
      <!--titulo--> 
-     <div class="span12 row">
+     <div class="row-fluid">
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
         <div class="page-header">
           <h1><?php echo $asset->getTitle(); ?></h1>
