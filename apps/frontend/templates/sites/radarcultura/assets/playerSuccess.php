@@ -12,11 +12,7 @@
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./bootstrap/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./bootstrap/ico/apple-touch-icon-144-precomposed.png">
@@ -25,7 +21,7 @@
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
     <script src="/portal/js/jquery-1.7.2.min.js"></script>
-    <script src="/portal/js/bootstrap/bootstrap.js"></script>
+    <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
     	h1 a { text-indent:-9999px; background:url(images/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
