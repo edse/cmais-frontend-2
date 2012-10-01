@@ -221,7 +221,7 @@
   
       function postGoogle() {
         $('#socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url=<?php urlencode($asset->retriveUrl())?>','',600,600);
+        popup('https://plus.google.com/share?url=<?php urlencode($url)?>','',600,600);
       }
 
   
@@ -238,7 +238,7 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: '<?php echo $asset->retriveUrl()?>',
+          link: '<?php echo $url?>',
           name: '<?php echo $asset->getTitle()?>',
           caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
