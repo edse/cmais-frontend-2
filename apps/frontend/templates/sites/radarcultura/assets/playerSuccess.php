@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
     <script src="/portal/js/jquery-1.7.2.min.js"></script>
-    <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
+    <script src="/portal/js/bootstrap/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
     	h1 a { text-indent:-9999px; background:url(images/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
