@@ -235,41 +235,8 @@
         self.location.href='postToFacebook.php';
       }
       */
-  
-
-    function postToFeed() {
-      // calling the API ...
-      var obj = {
-        method: 'feed',
-        link: 'http://intense-shore-1681.herokuapp.com/html/musica.html',
-        name: 'Colagem',
-        caption: 'por Elis Regina',
-        description: 'Minha indicação para o RadarCultura'
-      };
-
-      function callback2(response) {
-        //obj
-        opts= "post_id="+response['post_id'];
-        //loading
-        $('#socialBtn').popover('hide');
-        $('#socialBtn').hide();
-        $('#socialLoading').fadeIn();
-        $.getJSON("http://cmais.com.br/actions/radarcultura/facebookPost.php?post_id="+response['post_id']+"&callback=?");
-      }
       
-      FB.ui(obj, callback2);
-    }
-
-    function callback(d){
-      $('#socialLoading').fadeOut();
-      if(d == "1"){
-        $('#socialAlert').fadeIn();        
-      }else{
-        alert('erro');
-      }
-    }
-      
-      function postToFeed2() {
+      function postToFeed() {
         // calling the API ...
         var obj = {
           method: 'feed',
@@ -278,7 +245,7 @@
           caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
         };
-        function callback2(response) {
+        function callback(response) {
           console.log(response);
           document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
@@ -302,7 +269,7 @@
             }
           });
         }
-        FB.ui(obj, callback2);
+        FB.ui(obj, callback);
       }
   
       function popup(url,name,windowWidth,windowHeight){
