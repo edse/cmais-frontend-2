@@ -27,9 +27,9 @@
         </div>
         <!--topo menu/alert/logo-->
         <!--centro-->        
-        <div class="row-fluid" style="margin:0 0 0 0;">
+        <div class="row-fluid">
            <!-- colunavesquerda -->
-           <div class="span8">
+           <div class="span8" style="margin: 0 0 0 0;">
               <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
                     
               <div class="page-header">
