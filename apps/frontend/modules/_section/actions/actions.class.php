@@ -489,6 +489,7 @@ class _sectionActions extends sfActions
               ->execute();
           }         
           elseif($this->section->Site->getSlug() == "radarcultura"){
+            $this->setLayout('radarcultura');
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
