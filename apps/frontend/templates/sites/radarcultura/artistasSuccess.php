@@ -102,13 +102,12 @@ function slugfy($string){
         <!--letra-->      
         <div class="row-fluid">  
           <div class="page-header artista">
-            <h1>Artistas <small>lista completa de artistas</small>
+            <h1>Artistas <small>lista completa de artistas</small></h1>
               
             <!--
             <?php if(isset($letter) != ""): ?>
               <h3><?php echo strtoupper($letter)?> <small>artistas que começam com a letra "<?php echo strtoupper($letter)?>"</small></h3>
             <?php endif; ?>
-            </h1>
             -->
             
             <!--contagem-->
