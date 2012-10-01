@@ -236,7 +236,7 @@
       }
       */
       
-      function postToFeed2() {
+      function postToFeed() {
         // calling the API ...
         var obj = {
           method: 'feed',
