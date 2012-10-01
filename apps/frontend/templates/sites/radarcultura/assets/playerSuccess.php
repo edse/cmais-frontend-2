@@ -45,7 +45,7 @@
       
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        
+        <p>olha eu aqui!</p>
         <?php echo html_entity_decode($asset->AssetContent->render()) ?>
         
       </div>
