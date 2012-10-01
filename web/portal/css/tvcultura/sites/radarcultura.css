@@ -98,7 +98,9 @@ body{background: none; padding: 0;text-align:left;}
 .facebook-comment{width:100px; float:left;}
 
 /* playlists */
+.page-header.playlist h1{float:left;max-width:830px;}
 .table.playlist tr td{max-width:260px;}
 
 /* ao vivo */
 #videoPlayer{margin:0 auto;width:451px;margin-bottom:30px;}
+

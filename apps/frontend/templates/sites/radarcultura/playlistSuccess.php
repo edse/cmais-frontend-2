@@ -29,7 +29,7 @@
         
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
               
-        <div class="page-header">
+        <div class="page-header playlist">
           <h1><?php echo $asset->getTitle() ?> <small></small></h1>
           <!--contagem-->
           <div class="pull-right">
