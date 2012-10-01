@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:fb="https://www.facebook.com/2008/fbml">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <title>Cultura Brasil - RadarCultura</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,7 @@
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./bootstrap/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./bootstrap/ico/apple-touch-icon-144-precomposed.png">
