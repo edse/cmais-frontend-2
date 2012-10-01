@@ -25,7 +25,11 @@
             <?php else: ?>  
           <!-- botao --->
           <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
-            <a href="<?php echo $s->retriveUrl()?>" title="Home"><?php echo $s->getTitle()?></a>
+            <?php if($s->getSlug() == "home"): ?>
+              <a href="<?php echo url_for('@homepage') ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
+            <?php else: ?>
+              <a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
+            <?php endif; ?>
           </li>
           <!-- /botao --->
             <?php endif; ?>
