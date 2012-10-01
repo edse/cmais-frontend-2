@@ -26,15 +26,22 @@
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
+        
+        <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
+              
+        <div class="page-header">
+          <h1><?php echo $asset->getTitle() ?> <small></small>
+            <div class="btn-group pull-right">
+              <a href="javascript:;" class="btn-large btn-danger" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugerir uma playlist</a>
+              <a href="/atendidas" class="btn-large btn-inverse"><i class="icon-list icon-white"></i> Listas Atendidas</a>
+            </div>
+          </h1>
+        </div>
+
         <!--centro-->        
         <div class="row-fluid">
            <!-- colunavesquerda -->
            <div class="span8" style="margin: 0 0 0 0;">
-              <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-                    
-              <div class="page-header">
-                <h1><?php echo $asset->getTitle() ?> <small></small></h1>
-              </div>
 
               <p><small><?php echo $asset->getTitle() ?></small></p>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
