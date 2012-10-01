@@ -635,7 +635,65 @@ class _sectionActions extends sfActions
         }
       }
 
-      if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
+      if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "musicas"){
+  
+        if($request->getParameter('letter')!=""){
+  
+          $this->letter = $request->getParameter('letter');
+          
+          if($this->letter == "#"){
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a')
+              ->where('slug REGEXP ?', '^[0-9].*$')
+              //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a')
+              ->where('slug REGEXP ?', '^[0-9].*$')
+              //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+  
+          }
+          else{
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a')
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a')
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->andWhere('site_id = 189')
+              ->fetchArray();
+  
+          }
+        }else{
+          $this->assetsQuery = Doctrine_Query::create()
+            ->select('a.title')
+            ->from('Asset a')
+            ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+            ->andWhere('site_id = 189')
+            ->orderBy('a.title');
+
+          $countQuery = Doctrine_Query::create()
+            ->select('COUNT(title) as description')
+            ->from('Asset a')
+            ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+            ->andWhere('site_id = 189')
+            ->fetchArray();
+
+        }
+
+      }
+      else if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
   
         if($request->getParameter('artista')){
           
