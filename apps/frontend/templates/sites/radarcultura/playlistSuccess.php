@@ -48,8 +48,6 @@
               <?php if(isset($displays['playlists'])):?>
                 <?php if(count($displays['playlists']) > 0): ?>
                 
-                <div class="row-fluid">
-                  <div class="span8">
                     <div class="page-header">
                       <h3>Pitacos<small></small></h3>
                     </div>
@@ -69,8 +67,7 @@
                         <?php endif; ?>
                       </div>
                       <?php endforeach; ?>
-                    </div>
-                  </div>
+
                  <?php endif; ?>
               <?php endif; ?>
               <!--/redes pitacos-->
