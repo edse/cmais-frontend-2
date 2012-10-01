@@ -35,8 +35,7 @@
               <div class="page-header">
                 <h1><?php echo $asset->getTitle() ?> <small></small></h1>
               </div>
-           </div>
-           <div class="span8">
+
               <p><small><?php echo $asset->getTitle() ?></small></p>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
@@ -45,6 +44,36 @@
                 <hr />
               </div>
               <!-- /comentario facebook -->
+              <!--redes pitacos-->
+              <?php if(isset($displays['playlists'])):?>
+                <?php if(count($displays['playlists']) > 0): ?>
+                
+                <div class="row-fluid">
+                  <div class="span8">
+                    <div class="page-header">
+                      <h3>Pitacos<small></small></h3>
+                    </div>
+                    <div class="row-fluid redes">
+                      <?php foreach($displays['playlists'] as $k=>$d): ?>
+                      <div class="span6 thumbnail">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                          <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                        </a>
+                        <div class="page-header">
+                          <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
+                        </div>
+                        <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                        <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                        <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                        <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
+                        <?php endif; ?>
+                      </div>
+                      <?php endforeach; ?>
+                    </div>
+                  </div>
+                 <?php endif; ?>
+              <?php endif; ?>
+              <!--/redes pitacos-->
            </div>
           <!--coluna esquerda-->
           <!--coluna direita-->
