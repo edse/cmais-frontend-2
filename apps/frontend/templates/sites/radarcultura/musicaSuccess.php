@@ -49,6 +49,7 @@
           <!--modal-body-->
           <div class="modal-body">
             <form action="" method="post" id="form-indicacao" class="span5">
+              <input type="hidden" name="section_id" value="1952" />
               <legend>Dados Pessoais</legend>
               <div class="control-group">
                 <label>Nome</label>
