@@ -3,7 +3,7 @@
 			 <?php endif; ?>
 			 <?php if(isset($parentSection) || isset($asset)): ?>
 		    <!--breadcrumb-->
-		    <div class="row">
+		    <div class="row-fluid">
 		       <ul class="breadcrumb">
 		         <li><a href="<?php echo url_for('homepage') . $site->getSlug() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">/</span></li>
 		         <?php if(isset($parentSection)): ?>
