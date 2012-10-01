@@ -74,7 +74,7 @@
      <!-- logo --->
      <div class="logo pull-right">
         <img src="/portal/images/capaPrograma/radarcultura/Logo-Radar.jpg" alt="Radar Cultura"/>
-        <a href="javascript: window.open('http://172.20.17.129/radar2012/player.html?start=am','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
+        <a href="javascript: window.open('http://www.cmais.com.br/playerSuccess.php','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
      </div>  
      <!-- logo --->
      
