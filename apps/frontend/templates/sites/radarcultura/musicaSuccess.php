@@ -1,6 +1,6 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-
+<?php $vars = explode(";", $asset->AssetContent->getHeadlineShort())?>
     <!-- Le styles -->
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
       <div class="row-fluid descricao">
         <!--titulo musica-->
         <div class="page-header">
-          <h1>Colagem <small>por Elis Regina</small>
+          <h1><?php echo $asset->getTitle()?> <small><?php echo $asset->getDescription()?></small>
             <!--contagem-->
             <div class="pull-right">
               <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique essa música para tocar no RadarCultura</a>     
@@ -238,10 +238,10 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: 'http://intense-shore-1681.herokuapp.com/html/musica.html',
-          picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
-          name: 'Colagem',
-          caption: 'por Elis Regina',
+          link: '<?php echo $asset->retriveUrl()?>',
+          //picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
+          name: '<?php echo $asset->getTitle()?>',
+          caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
         };
         function callback(response) {
@@ -306,30 +306,32 @@
                 <td><strong>Música</strong></td> 
               </tr>
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $asset->getTitle()?></p></td> 
               </tr>
               <tr>
                 <td><strong>Intérprete</strong></td> 
               </tr> 
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $vars[4]?></p></td> 
               </tr> 
               <tr>
                 <td><strong>Compositor</strong></td> 
               </tr> 
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $vars[5]?></p></td> 
+              </tr> 
+              <tr>
+                <td><strong>Ano</strong></td> 
+              </tr> 
+              <tr>
+                <td><p><?php echo end($vars)?></p></td> 
               </tr> 
               <tr>
                 <td><strong>Sobre a canção</strong></td> 
               </tr>
               <tr>
                 <td>
-                  <p>
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. 
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  </p>
+                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                 </td> 
               </tr> 
             </table>
@@ -341,36 +343,7 @@
               </tr>
               <tr>
                 <td>
-                  <p>
-                    Se você com muita calma usar sua raça<br> 
-                    Vai surpreender<br> 
-                    A surpresa para muitos é uma arma<br> 
-                    Pra se esconder</p>
-                    <p>Se esconder não é tão bom<br> 
-                    Pra viver, pra morrer<br> 
-                    Se você lembrar que tudo é relativo<br> 
-                    Vai compreender</p>
-                    <p>E a compreensão por vezes tão sensata<br> 
-                    Vai lhe conter<br> 
-                    Se conter não é tão bom<br> 
-                    Pra viver, pra morrer<br> 
-                    Pra viver, pra morrer</p>
-                    <p>Se você tentar despir essa colagem<br> 
-                    Vai se perder<br> 
-                    E a perda de si próprio é quase um passo<br> 
-                    Pra conceder</p>
-                    <p>Conceder não é tão bom<br> 
-                    Pra viver, pra morrer, pra nascer<br> 
-                    Somos homens sem lugar<br> 
-                    Homens velhos com raça</p>
-                    <p>À espera de algum descuido<br> 
-                    E com cuidado gozamos paz<br> 
-                    Somos homens bons demais<br> 
-                    Sufocados pelo mal</p>
-                    <p>Só queremos acreditar<br> 
-                    Que isso tudo<br> 
-                    Pode acabar<br> 
-                  </p>
+                  <?php echo $asset->AssetContent->getHeadlineLong()?>
                 </td> 
               </tr> 
             </table>
@@ -379,7 +352,7 @@
           
           <!-- comentario facebook -->
           <div class="container">
-            <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <fb:comments href="<?php echo $asset->retriveUrl()?>" numposts="3" width="610" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->
