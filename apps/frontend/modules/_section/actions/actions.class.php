@@ -645,7 +645,7 @@ class _sectionActions extends sfActions
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
-              ->where('slug REGEXP ?', '^[0-9].*$')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
               //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
               ->andWhere('site_id = 189')
               ->orderBy('a.description');
@@ -653,7 +653,7 @@ class _sectionActions extends sfActions
             $countQuery = Doctrine_Query::create()
               ->select('COUNT(DISTINCT description) as description')
               ->from('Asset a')
-              ->where('slug REGEXP ?', '^[0-9].*$')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
               //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
               ->andWhere('site_id = 189')
               ->fetchArray();
@@ -663,14 +663,14 @@ class _sectionActions extends sfActions
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
-              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-%')
               ->andWhere('site_id = 189')
               ->orderBy('a.description');
   
             $countQuery = Doctrine_Query::create()
               ->select('COUNT(DISTINCT description) as description')
               ->from('Asset a')
-              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
+              ->where('slug LIKE ?', $request->getParameter('letter').'%-por-%')
               ->andWhere('site_id = 189')
               ->fetchArray();
   
