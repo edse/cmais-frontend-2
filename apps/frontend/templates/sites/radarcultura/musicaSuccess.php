@@ -102,21 +102,17 @@
               <legend>Minha Indicação</legend>
               <div class="control-group">
                 <label>Título</label>
-                <input type="text" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
                 <span class="help-block"></span>
               </div>  
               <div class="control-group">  
                 <label>Intérprete</label>
-                <input type="text" placeholder="email@dominio.com.br" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
               </div>  
               <div class="control-group">
                 <label>URL</label>
-                <input type="text" placeholder="Cidade" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
               </div>
-              <div class="control-group">
-                <label>Imagem</label>
-                <img src="" alt="Imagem"/>
-              </div>  
               <div class="modal-footer">
                 <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
                 <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
