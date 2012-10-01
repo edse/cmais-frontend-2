@@ -20,7 +20,7 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <scnt Pradoript src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le fav and touch icons -->
@@ -45,8 +45,38 @@
       
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <p>olha eu aqui!</p>
-        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+             <script type="text/javascript" src="js/jwplayer.js"></script>
+        <!-- Add-On Info Here -->
+        <div id='mediaplayer'></div>
+        <script type="text/javascript">
+			jwplayer('mediaplayer').setup({
+				'flashplayer' : 'js/player.swf',
+				'id' : 'playerID',
+				'screencolor' : '333333',
+				'controlbar' : 'none',
+				'autostart': 'true',
+				'width' : '415',
+				'height' : '35',
+				'file' : 'radioam',
+				'streamer' : 'rtmp://200.136.27.12/live',
+				'plugins' : {
+					'audiolivestream-1' : {
+						format : 'Playing: %track',
+						buffer : 'Buffering: %perc%',
+						backgroundCss : false,
+						trackCss : 'color: #fff; font-size: 11px;'
+					}
+				}
+			});
+
+        </script>
+    
+
+
+  </body>
+</html>
+
+
         
       </div>
     </div>
