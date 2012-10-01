@@ -243,7 +243,7 @@
     <!--/container-->
     
     <!--form paginacao-->
-    <form id="page_form" action="" method="get">
+    <form id="page_form" action="" method="post">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
