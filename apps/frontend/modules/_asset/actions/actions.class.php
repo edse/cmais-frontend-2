@@ -488,6 +488,9 @@ class _assetActions extends sfActions
 			$this->ipad = true;
 		}
 
+		if($this->site->getSlug() == 'radarcultura' && $this->asset->getSlug() == 'player')
+			$this->setLayout(false);
+
     if($this->site->getSlug() == "maiscrianca")
       $this->setLayout(false);
 		
