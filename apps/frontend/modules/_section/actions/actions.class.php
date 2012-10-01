@@ -25,6 +25,7 @@ class _sectionActions extends sfActions
       $request->setParameter('letter', $request->getParameter('letram'));
       if($request->getParameter('letter') == "1-9")
         $request->setParameter('letter', "#");
+      $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'musicas'));
     }
     else if($request->getParameter('letra')){
       $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
