@@ -678,6 +678,14 @@ class _sectionActions extends sfActions
         }else{
 
           $this->assetsQuery = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->orderBy('sa.display_order');
+          
+          /*
+          $this->assetsQuery = Doctrine_Query::create()
             ->select('a.title')
             ->from('Asset a')
             ->where('slug LIKE ?', '%-por-%')
@@ -690,6 +698,7 @@ class _sectionActions extends sfActions
             ->where('slug LIKE ?', '%-por-%')
             ->andWhere('site_id = 189')
             ->fetchArray();
+          */
 
         }
 
