@@ -216,12 +216,12 @@
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html&source=tweetbutton&text=Minha%20indica%C3%A7%C3%A3o%20para%20o%20%23RadarCultura&url=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php urlencode($asset->retriveUrl())?>&source=tweetbutton&text=<?php urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php urlencode($asset->retriveUrl())?>', '', 600, 600);
       }
   
       function postGoogle() {
         $('#socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html','',600,600);
+        popup('https://plus.google.com/share?url=<?php urlencode($asset->retriveUrl())?>','',600,600);
       }
 
   
