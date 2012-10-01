@@ -26,19 +26,17 @@
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
-
-     <!-- asset -->
-     <div class="span12 row">
-      
-        <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-              
-        <div class="page-header">
-          <h1><?php echo $asset->getTitle() ?> <small></small></h1>
-        </div>
-     </div>
-        <div class="row-fluid span12" style="margin:0 0 0 0;">
-          <ul class="thumbnails span8">
-            <li class="span12">
+        <!--centro-->        
+        <div class="row-fluid" style="margin:0 0 0 0;">
+           <!-- colunavesquerda -->
+           <div class="span12 row">
+              <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
+                    
+              <div class="page-header">
+                <h1><?php echo $asset->getTitle() ?> <small></small></h1>
+              </div>
+           </div>
+           <div class="span8">
               <p><small><?php echo $asset->getTitle() ?></small></p>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
@@ -47,93 +45,90 @@
                 <hr />
               </div>
               <!-- /comentario facebook -->
+           </div>
+          <!--coluna esquerda-->
+          <!--coluna direita-->
+          <div class="span4 direita">
+            <!--sobre o programa-->
+            <?php
+                $displays = array();
+                $block_sobre = Doctrine_Query::create()
+                  ->select('b.*')
+                  ->from('Block b, Section s')
+                  ->where('b.section_id = s.id')
+                  ->andWhere('s.slug = ?', 'home')
+                  ->andWhere('b.slug = ?', 'sobre-o-programa')
+                  ->andWhere('s.site_id = ?', $site->id)
+                  ->execute();
               
-            </li>
-          </ul>
-          
-          <ul class="direita span4">
-              <li class="span12">
+                if(count($block_sobre) > 0){
+                  $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
+                }
+              ?>
+              <?php if(isset($displays['sobre-o-programa'])):?>
+                <?php if(count($displays['sobre-o-programa']) > 0): ?>
+                <div class="thumbnail">
+                  <div class="page-header">
+                    <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+                  </div>
+                  <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                  <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                </div>
+                <?php endif; ?>
+              <?php endif; ?>
+              <!--/sobre o programa-->
+              <!--como participar-->
+              <?php
+                $displays = array();
+                $block_comoparticipar = Doctrine_Query::create()
+                  ->select('b.*')
+                  ->from('Block b, Section s')
+                  ->where('b.section_id = s.id')
+                  ->andWhere('s.slug = ?', 'home')
+                  ->andWhere('b.slug = ?', 'como-participar')
+                  ->andWhere('s.site_id = ?', $site->id)
+                  ->execute();
+              
+                if(count($block_comoparticipar) > 0){
+                  $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
+                }
+              ?>
+             <?php if(isset($displays['como-participar'])):?>
+                <?php if(count($displays['como-participar']) > 0): ?>       
+                  <div class="thumbnail">
+                    <div class="page-header">
+                      <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
+                    </div>
+                    <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                    <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                  </div>
+                <?php endif; ?>
+              <?php endif; ?>
+              <!--/como participar-->
+              <!--banner-->
+              <div class="">
                 <div class="banner-radio">
                   <script type='text/javascript'>
                     GA_googleFillSlot("cmais-assets-300x250");
                   </script>
                 </div>
-              </li>
-            <?php
-              $displays = array();
-              $block_sobre = Doctrine_Query::create()
-                ->select('b.*')
-                ->from('Block b, Section s')
-                ->where('b.section_id = s.id')
-                ->andWhere('s.slug = ?', 'home')
-                ->andWhere('b.slug = ?', 'sobre-o-programa')
-                ->andWhere('s.site_id = ?', $site->id)
-                ->execute();
-            
-              if(count($block_sobre) > 0){
-                $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-              }
-            ?>
-            <?php if(isset($displays['sobre-o-programa'])):?>
-              <?php if(count($displays['sobre-o-programa']) > 0): ?>
-              <li class="span12">
-                <div class="thumbnail">
-                  <div class="caption">
-                    <div class="page-header">
-                      <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-                    </div>
-                    <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                    <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                  </div>
-                </div>
-              </li>
-             <?php endif; ?>
-           <?php endif; ?>
-           
-            <?php
-              $displays = array();
-              $block_comoparticipar = Doctrine_Query::create()
-                ->select('b.*')
-                ->from('Block b, Section s')
-                ->where('b.section_id = s.id')
-                ->andWhere('s.slug = ?', 'home')
-                ->andWhere('b.slug = ?', 'como-participar')
-                ->andWhere('s.site_id = ?', $site->id)
-                ->execute();
-            
-              if(count($block_comoparticipar) > 0){
-                $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
-              }
-            ?>
-           
-           <?php if(isset($displays['como-participar'])):?>
-            <?php if(count($displays['como-participar']) > 0): ?>
-              <li class="span12">
-                <div class="thumbnail">
-                  <div class="caption">
-                    <div class="page-header">
-                      <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                    </div>
-                    <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                    <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                  </div>
-                </div>
-              </li>
-             <?php endif; ?>
-           <?php endif; ?>
-            </ul>            
+              </div>
+              <!--/banner-->
+           </div>
+           <!--/coluna direita-->
         </div>
+        <!--centro-->            
+
   
-        <div class="container pull-left">
-          <div class="banner-radio horizontal">
-           <script type='text/javascript'>
-             GA_googleFillSlot("cmais-assets-728x90");
-           </script>
+          <!--banner horizontal-->    
+          <div class="container">
+            <div class="banner-radio horizontal">
+              <script type='text/javascript'>
+                GA_googleFillSlot("cmais-assets-728x90");
+              </script>
+            </div>
           </div>
-        </div>  
+          <!--banner horizontal-->  
 
-            
-          </div>
-
-     <!-- asset -->
- </div>
+      </div>
+      <!--container-->

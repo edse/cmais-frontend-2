@@ -101,4 +101,4 @@ body{background: none; padding: 0;text-align:left;}
 .table.playlist tr td{max-width:260px;}
 
 /* ao vivo */
-#videoPlayer{margin:0 auto;width:451px;}
+#videoPlayer{margin:0 auto;width:451px;margin-bottom:30px;}
