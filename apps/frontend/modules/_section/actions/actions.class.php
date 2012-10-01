@@ -21,6 +21,10 @@ class _sectionActions extends sfActions
     if($request->getParameter('artista')){
       $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
     }
+    else if($request->getParameter('letra')){
+      $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
+      $request->setParameter('letter', $request->getParameter('letra'));
+    }
     
     if($request->getParameter('object')){
       
