@@ -239,7 +239,6 @@
         var obj = {
           method: 'feed',
           link: '<?php echo $asset->retriveUrl()?>',
-          //picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
           name: '<?php echo $asset->getTitle()?>',
           caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
