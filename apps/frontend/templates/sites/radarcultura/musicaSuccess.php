@@ -216,12 +216,12 @@
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php urlencode($asset->retriveUrl())?>&source=tweetbutton&text=<?php urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php urlencode($asset->retriveUrl())?>', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
       }
   
       function postGoogle() {
         $('#socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url=<?php urlencode($url)?>','',600,600);
+        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
       }
 
   
@@ -238,7 +238,7 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: '<?php echo $url?>',
+          link: '<?php echo $uri?>',
           name: '<?php echo $asset->getTitle()?>',
           caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
@@ -351,7 +351,7 @@
           
           <!-- comentario facebook -->
           <div class="container">
-            <fb:comments href="<?php echo $asset->retriveUrl()?>" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->
