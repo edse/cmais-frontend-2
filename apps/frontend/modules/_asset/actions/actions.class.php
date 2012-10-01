@@ -62,6 +62,7 @@ class _assetActions extends sfActions
         ->fetchOne();
 
       if($this->site->getSlug() == "radarcultura") {
+        $this->setLayout('radarcultura');
         if(!$this->section){
           $se = $this->asset->Sections;
           if(count($se)>0){

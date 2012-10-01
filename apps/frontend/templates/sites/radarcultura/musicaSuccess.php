@@ -1,6 +1,6 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-
+<?php $vars = explode(";", $asset->AssetContent->getHeadlineShort())?>
     <!-- Le styles -->
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
       <div class="row-fluid descricao">
         <!--titulo musica-->
         <div class="page-header">
-          <h1>Colagem <small>por Elis Regina</small>
+          <h1><?php echo $asset->getTitle()?> <small><?php echo $asset->getDescription()?></small>
             <!--contagem-->
             <div class="pull-right">
               <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique essa música para tocar no RadarCultura</a>     
@@ -49,6 +49,7 @@
           <!--modal-body-->
           <div class="modal-body">
             <form action="" method="post" id="form-indicacao" class="span5">
+              <input type="hidden" name="section_id" value="1952" />
               <legend>Dados Pessoais</legend>
               <div class="control-group">
                 <label>Nome</label>
@@ -102,21 +103,17 @@
               <legend>Minha Indicação</legend>
               <div class="control-group">
                 <label>Título</label>
-                <input type="text" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
                 <span class="help-block"></span>
               </div>  
               <div class="control-group">  
                 <label>Intérprete</label>
-                <input type="text" placeholder="email@dominio.com.br" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
               </div>  
               <div class="control-group">
                 <label>URL</label>
-                <input type="text" placeholder="Cidade" class="input-large" disabled="disabled">
+                <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
               </div>
-              <div class="control-group">
-                <label>Imagem</label>
-                <img src="" alt="Imagem"/>
-              </div>  
               <div class="modal-footer">
                 <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
                 <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
@@ -202,6 +199,7 @@
           $('#socialAlert').fadeIn();
         }
         
+        /*
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
@@ -211,17 +209,18 @@
         }(document, 'script', 'facebook-jssdk'));
         
         FB.init({appId: "222430124549926", status: true, cookie: true});
+        */
         
       });
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html&source=tweetbutton&text=Minha%20indica%C3%A7%C3%A3o%20para%20o%20%23RadarCultura&url=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
       }
   
       function postGoogle() {
         $('#socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url=http%3A%2F%2Fintense-shore-1681.herokuapp.com%2Fhtml%2Fmusica.html','',600,600);
+        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
       }
 
   
@@ -233,15 +232,14 @@
         self.location.href='postToFacebook.php';
       }
       */
-  
+      
       function postToFeed() {
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: 'http://intense-shore-1681.herokuapp.com/html/musica.html',
-          picture: 'http://www.allaboutjazz.com/media/large/d/2/5/5d9e4ace2742c66cf7c23f623db19.jpg',
-          name: 'Colagem',
-          caption: 'por Elis Regina',
+          link: '<?php echo $uri?>',
+          name: '<?php echo $asset->getTitle()?>',
+          caption: '<?php echo $asset->getDescription()?>',
           description: 'Minha indicação para o RadarCultura'
         };
         function callback(response) {
@@ -306,30 +304,32 @@
                 <td><strong>Música</strong></td> 
               </tr>
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $asset->getTitle()?></p></td> 
               </tr>
               <tr>
                 <td><strong>Intérprete</strong></td> 
               </tr> 
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $vars[4]?></p></td> 
               </tr> 
               <tr>
                 <td><strong>Compositor</strong></td> 
               </tr> 
               <tr>
-                <td><p>Colagem</p></td> 
+                <td><p><?php echo $vars[5]?></p></td> 
+              </tr> 
+              <tr>
+                <td><strong>Ano</strong></td> 
+              </tr> 
+              <tr>
+                <td><p><?php echo end($vars)?></p></td> 
               </tr> 
               <tr>
                 <td><strong>Sobre a canção</strong></td> 
               </tr>
               <tr>
                 <td>
-                  <p>
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. 
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                     cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  </p>
+                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                 </td> 
               </tr> 
             </table>
@@ -341,36 +341,7 @@
               </tr>
               <tr>
                 <td>
-                  <p>
-                    Se você com muita calma usar sua raça<br> 
-                    Vai surpreender<br> 
-                    A surpresa para muitos é uma arma<br> 
-                    Pra se esconder</p>
-                    <p>Se esconder não é tão bom<br> 
-                    Pra viver, pra morrer<br> 
-                    Se você lembrar que tudo é relativo<br> 
-                    Vai compreender</p>
-                    <p>E a compreensão por vezes tão sensata<br> 
-                    Vai lhe conter<br> 
-                    Se conter não é tão bom<br> 
-                    Pra viver, pra morrer<br> 
-                    Pra viver, pra morrer</p>
-                    <p>Se você tentar despir essa colagem<br> 
-                    Vai se perder<br> 
-                    E a perda de si próprio é quase um passo<br> 
-                    Pra conceder</p>
-                    <p>Conceder não é tão bom<br> 
-                    Pra viver, pra morrer, pra nascer<br> 
-                    Somos homens sem lugar<br> 
-                    Homens velhos com raça</p>
-                    <p>À espera de algum descuido<br> 
-                    E com cuidado gozamos paz<br> 
-                    Somos homens bons demais<br> 
-                    Sufocados pelo mal</p>
-                    <p>Só queremos acreditar<br> 
-                    Que isso tudo<br> 
-                    Pode acabar<br> 
-                  </p>
+                  <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
                 </td> 
               </tr> 
             </table>
@@ -379,7 +350,7 @@
           
           <!-- comentario facebook -->
           <div class="container">
-            <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->
