@@ -61,7 +61,7 @@ class _assetActions extends sfActions
         ->orderby('s.parent_section_id desc')
         ->fetchOne();
 
-      if($this->site->getSlug() == "radarcultura") {
+			if(in_array($this->site->getSlug(), array("radarcultura","culturafm"))) {
         $this->setLayout('radarcultura');
         if(!$this->section){
           $se = $this->asset->Sections;
@@ -574,9 +574,29 @@ class _assetActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist');
         }
         else {
-          if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-        }
+        	if ($this->site->getSlug() == "culturafm") {
+	        	$sections = $this->asset->getSections();
+						if(count($sections) >= 1) {
+							foreach ($sections as $s) {
+								if($parentSection = $s->getParent()){
+									if($parentSection->getSlug() == "colunistas"){
+						        if($debug) print "<br>2-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista';
+						        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista');
+										break;
+									}
+								}
+							}
+						}
+						else {
+			        if($debug) print "<br>2-2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+			        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+			      }
+			    }
+					else {
+		        if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+		        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+					}
+				}
       }
       else{
         if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
