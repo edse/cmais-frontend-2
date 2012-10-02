@@ -310,26 +310,58 @@
                 <td><strong>Intérprete</strong></td> 
               </tr> 
               <tr>
-                <td><p><?php echo $vars[4]?></p></td> 
+                <td><p><?php echo substr($asset->getDescription(), 4, strlen($asset->getDescription()))?></p></td> 
+              </tr> 
+              <tr>
+                <td><strong>Intérprete (2)</strong></td> 
+              </tr> 
+              <tr>
+              <?php if($vars[5] != ""):?>
+                <td><p><?php echo $vars[5]?></p></td> 
+              <?php else:?>
+                <td><p>Não disponível</p></td> 
+              <?php endif;?>
               </tr> 
               <tr>
                 <td><strong>Compositor</strong></td> 
               </tr> 
               <tr>
-                <td><p><?php echo $vars[5]?></p></td> 
+              <?php if($vars[4] != ""):?>
+                <td><p><?php echo $vars[4]?></p></td> 
+              <?php else:?>
+                <td><p>Não disponível</p></td> 
+              <?php endif;?>
               </tr> 
               <tr>
                 <td><strong>Ano</strong></td> 
               </tr> 
               <tr>
-                <td><p><?php echo end($vars)?></p></td> 
+              <?php if($vars[6] != ""):?>
+                <td><p><?php echo $vars[6]?></p></td> 
+              <?php else:?>
+                <td><p>Não disponível</p></td> 
+              <?php endif;?>
+              </tr> 
+              <tr>
+                <td><strong>Disco</strong></td> 
+              </tr> 
+              <tr>
+              <?php if($vars[7] != ""):?>
+                <td><p><?php echo $vars[7]?></p></td> 
+              <?php else:?>
+                <td><p>Não disponível</p></td> 
+              <?php endif;?>
               </tr> 
               <tr>
                 <td><strong>Sobre a canção</strong></td> 
               </tr>
               <tr>
                 <td>
-                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                  <?php if($asset->AssetContent->getContent() != ""):?>
+                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                  <?php else:?>
+                     Não disponível
+                  <?php endif;?>
                 </td> 
               </tr> 
             </table>
