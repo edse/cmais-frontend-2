@@ -6414,7 +6414,7 @@ form .nome{
   overflow: hidden;
   position: relative;
 }
-.box-especial-infoTxt .internas iframe{
+.box-especial-infoTxt iframe{
   border: none;
   margin-left:0px !important;
   overflow: hidden;
