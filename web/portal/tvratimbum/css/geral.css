@@ -6409,10 +6409,16 @@ form .nome{
 	overflow-y: scroll;
 }
 .internas iframe{
-	border: none;
-	/*margin-left: 100px;*/
-	overflow: hidden;
-	position: relative;
+  border: none;
+  margin-left: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.box-especial-interna .internas iframe{
+  border: none;
+  /*margin-left: 100px;*/
+  overflow: hidden;
+  position: relative;
 }
 /*breadcrumb (.trilha)*/
 .trilha{
