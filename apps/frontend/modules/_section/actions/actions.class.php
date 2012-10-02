@@ -650,6 +650,7 @@ class _sectionActions extends sfActions
             ->select('a.title')
             ->from('Asset a')
             ->where('title LIKE ?', '%'.$request->getParameter('buscam').'%')
+            ->andWhere('description LIKE ?', 'Por %')
             ->andWhere('site_id = 189')
             ->orderBy('a.description');
           
@@ -657,6 +658,7 @@ class _sectionActions extends sfActions
             ->select('COUNT(DISTINCT description) as description')
             ->from('Asset a')
             ->where('title LIKE ?', '%'.$request->getParameter('buscam').'%')
+            ->andWhere('description LIKE ?', 'Por %')
             ->andWhere('site_id = 189')
             ->fetchArray();
 
