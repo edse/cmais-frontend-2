@@ -97,7 +97,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .musica h1{max-width:825px; float:left;color:black;}
 .popover {width: 350px;}
 .facebook-comment{width:100px; float:left;}
-.table.musicas tr td{min-width:309px;}
+.table.musicas tr td{min-width:309px;min-width:300px\9;}
 
 /* playlists */
 .playlist h1{max-width:825px; float:left;}
