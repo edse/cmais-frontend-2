@@ -32,10 +32,10 @@
   <body>
     <!-- container -->
     <div id="radar-home" class="">
-      
+       
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <script type="text/javascript" src="http://www.cmais.com.br/radarcultura/js/jwplayer.js"></script>
+        <script type="text/javascript" src="js/jwplayer.js"></script>
         <!-- Add-On Info Here -->
         <div id='mediaplayer'></div>
         <script type="text/javascript">
