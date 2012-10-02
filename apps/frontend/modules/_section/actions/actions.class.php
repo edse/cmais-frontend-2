@@ -732,16 +732,16 @@ class _sectionActions extends sfActions
         if($request->getParameter('busca')!=""){
 
           $this->assetsQuery = Doctrine_Query::create()
-            ->select('a.title')
+            ->select('DISTINCT description as description')
             ->from('Asset a')
-            ->where('description LIKE ?', '%'.$request->getParameter('busca').'%')
+            ->where('description LIKE ?', 'Por '.$request->getParameter('busca').'%')
             ->andWhere('site_id = 189')
             ->orderBy('a.description');
   
           $countQuery = Doctrine_Query::create()
             ->select('COUNT(DISTINCT description) as description')
             ->from('Asset a')
-            ->where('description LIKE ?', '%'.$request->getParameter('busca').'%')
+            ->where('description LIKE ?', 'Por '.$request->getParameter('busca').'%')
             ->andWhere('site_id = 189')
             ->fetchArray();
 
