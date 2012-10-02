@@ -26,6 +26,9 @@
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
+      
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
+      
       <!--topo menu/alert/logo-->
       <div class="row-fluid descricao">
         <!--titulo musica-->
