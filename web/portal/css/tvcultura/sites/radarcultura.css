@@ -114,4 +114,4 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-body {max-height: 440px;}
-.modal-footer{margin-top:75px;}
+.modal-footer{margin-top:75px;clear:both\9;}
