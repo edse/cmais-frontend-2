@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-        <div class="row-fluid span12" style="margin:0 0 0 0;">
+        <div class="row-fluid" style="margin:0 0 0 0;">
           <ul class="thumbnails span8">
             <li class="span12">
               <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
