@@ -28,10 +28,10 @@
         <!--topo menu/alert/logo-->
 
      <!-- asset -->
-     <div class="span12 row">
-     	
-				<?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-				     	
+     <div class="row-fluid">
+      
+        <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
+              
         <div class="page-header">
           <h1><?php echo $asset->getTitle() ?> <small><?php echo $asset->getDescription() ?></small></h1>
         </div>
@@ -59,22 +59,22 @@
                 </div>
               </li>
             <?php
-							$displays = array();
-			        $block_sobre = Doctrine_Query::create()
-			          ->select('b.*')
-			          ->from('Block b, Section s')
-			          ->where('b.section_id = s.id')
-			          ->andWhere('s.slug = ?', 'home')
-			          ->andWhere('b.slug = ?', 'sobre-o-programa')
-			          ->andWhere('s.site_id = ?', $site->id)
-								->execute();
-						
-				      if(count($block_sobre) > 0){
-			          $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-				      }
+              $displays = array();
+              $block_sobre = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'sobre-o-programa')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_sobre) > 0){
+                $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
+              }
             ?>
             <?php if(isset($displays['sobre-o-programa'])):?>
-            	<?php if(count($displays['sobre-o-programa']) > 0): ?>
+              <?php if(count($displays['sobre-o-programa']) > 0): ?>
               <li class="span12">
                 <div class="thumbnail">
                   <div class="caption">
@@ -87,25 +87,25 @@
                 </div>
               </li>
              <?php endif; ?>
-         	 <?php endif; ?>
-         	 
-						<?php
-							$displays = array();
-						  $block_comoparticipar = Doctrine_Query::create()
-						    ->select('b.*')
-						    ->from('Block b, Section s')
-						    ->where('b.section_id = s.id')
-						    ->andWhere('s.slug = ?', 'home')
-						    ->andWhere('b.slug = ?', 'como-participar')
-						    ->andWhere('s.site_id = ?', $site->id)
-								->execute();
-						
-						  if(count($block_comoparticipar) > 0){
-						    $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
-						  }
-						?>
-         	 
-         	 <?php if(isset($displays['como-participar'])):?>
+           <?php endif; ?>
+           
+            <?php
+              $displays = array();
+              $block_comoparticipar = Doctrine_Query::create()
+                ->select('b.*')
+                ->from('Block b, Section s')
+                ->where('b.section_id = s.id')
+                ->andWhere('s.slug = ?', 'home')
+                ->andWhere('b.slug = ?', 'como-participar')
+                ->andWhere('s.site_id = ?', $site->id)
+                ->execute();
+            
+              if(count($block_comoparticipar) > 0){
+                $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
+              }
+            ?>
+           
+           <?php if(isset($displays['como-participar'])):?>
             <?php if(count($displays['como-participar']) > 0): ?>
               <li class="span12">
                 <div class="thumbnail">
@@ -119,7 +119,7 @@
                 </div>
               </li>
              <?php endif; ?>
-         	 <?php endif; ?>
+           <?php endif; ?>
             </ul>            
         </div>
   

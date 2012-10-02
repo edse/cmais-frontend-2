@@ -304,94 +304,98 @@
         <!--coluna esquerda-->
         <div class="span8" style="margin:0 0 0 0">
           <!--injformacoes-->
-          <div class="row-fluid">  
-            <table class="table table-striped span6 musicas">
-              <tr>
-                <td>
-                  <h4>Informações</h4>
-                </td> 
-              </tr> 
-              <tr>
-                <td><strong>Música</strong></td> 
-              </tr>
-              <tr>
-                <td><p><?php echo $asset->getTitle()?></p></td> 
-              </tr>
-              <tr>
-                <td><strong>Intérprete</strong></td> 
-              </tr> 
-              <tr>
-                <td><p><?php echo substr($asset->getDescription(), 4, strlen($asset->getDescription()))?></p></td> 
-              </tr> 
-              <tr>
-                <td><strong>Intérprete (2)</strong></td> 
-              </tr> 
-              <tr>
-              <?php if($vars[5] != ""):?>
-                <td><p><?php echo $vars[5]?></p></td> 
-              <?php else:?>
-                <td><p>Não disponível</p></td> 
-              <?php endif;?>
-              </tr> 
-              <tr>
-                <td><strong>Compositor</strong></td> 
-              </tr> 
-              <tr>
-              <?php if($vars[4] != ""):?>
-                <td><p><?php echo $vars[4]?></p></td> 
-              <?php else:?>
-                <td><p>Não disponível</p></td> 
-              <?php endif;?>
-              </tr> 
-              <tr>
-                <td><strong>Ano</strong></td> 
-              </tr> 
-              <tr>
-              <?php if($vars[6] != ""):?>
-                <td><p><?php echo $vars[6]?></p></td> 
-              <?php else:?>
-                <td><p>Não disponível</p></td> 
-              <?php endif;?>
-              </tr> 
-              <tr>
-                <td><strong>Disco</strong></td> 
-              </tr> 
-              <tr>
-              <?php
-              $disco = explode($var[0], $vars[7]);
-              ?>
-              <?php
-               if($disco[0] != ""):?>
-                <td><p><?php echo $disco[0]?></p></td> 
-              <?php else:?>
-                <td><p>Não disponível</p></td> 
-              <?php endif;?>
-              </tr> 
-              <tr>
-                <td><strong>Sobre a canção</strong></td> 
-              </tr>
-              <tr>
-                <td>
-                  <?php if($asset->AssetContent->getContent() != ""):?>
-                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-                  <?php else:?>
-                     Não disponível
-                  <?php endif;?>
-                </td> 
-              </tr> 
-            </table>
-            <table class="table table-striped span6 musicas">
-              <tr>
-                <td>
-                  <h4>Letra</h4>
-                </td> 
-              </tr>
-              <tr>
-                <td>
-                  <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
-                </td> 
-              </tr> 
-            </table>
+          <div class="row-fluid">
+            <div class="span6">  
+              <table class="table table-striped musicas">
+                <tr>
+                  <td>
+                    <h4>Informações</h4>
+                  </td> 
+                </tr> 
+                <tr>
+                  <td><strong>Música</strong></td> 
+                </tr>
+                <tr>
+                  <td><p><?php echo $asset->getTitle()?></p></td> 
+                </tr>
+                <tr>
+                  <td><strong>Intérprete</strong></td> 
+                </tr> 
+                <tr>
+                  <td><p><?php echo substr($asset->getDescription(), 4, strlen($asset->getDescription()))?></p></td> 
+                </tr> 
+                <tr>
+                  <td><strong>Intérprete (2)</strong></td> 
+                </tr> 
+                <tr>
+                <?php if($vars[5] != ""):?>
+                  <td><p><?php echo $vars[5]?></p></td> 
+                <?php else:?>
+                  <td><p>Não disponível</p></td> 
+                <?php endif;?>
+                </tr> 
+                <tr>
+                  <td><strong>Compositor</strong></td> 
+                </tr> 
+                <tr>
+                <?php if($vars[4] != ""):?>
+                  <td><p><?php echo $vars[4]?></p></td> 
+                <?php else:?>
+                  <td><p>Não disponível</p></td> 
+                <?php endif;?>
+                </tr> 
+                <tr>
+                  <td><strong>Ano</strong></td> 
+                </tr> 
+                <tr>
+                <?php if($vars[6] != ""):?>
+                  <td><p><?php echo $vars[6]?></p></td> 
+                <?php else:?>
+                  <td><p>Não disponível</p></td> 
+                <?php endif;?>
+                </tr> 
+                <tr>
+                  <td><strong>Disco</strong></td> 
+                </tr> 
+                <tr>
+                <?php
+                $disco = explode($var[0], $vars[7]);
+                ?>
+                <?php
+                 if($disco[0] != ""):?>
+                  <td><p><?php echo $disco[0]?></p></td> 
+                <?php else:?>
+                  <td><p>Não disponível</p></td> 
+                <?php endif;?>
+                </tr> 
+                <tr>
+                  <td><strong>Sobre a canção</strong></td> 
+                </tr>
+                <tr>
+                  <td>
+                    <?php if($asset->AssetContent->getContent() != ""):?>
+                      <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                    <?php else:?>
+                       Não disponível
+                    <?php endif;?>
+                  </td> 
+                </tr> 
+              </table>
+            </div>
+            <div class="span6">
+              <table class="table table-striped musicas">
+                <tr>
+                  <td>
+                    <h4>Letra</h4>
+                  </td> 
+                </tr>
+                <tr>
+                  <td>
+                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
+                  </td> 
+                </tr> 
+              </table>
+            </div>
           </div>
           <!-- /informações -->
           
