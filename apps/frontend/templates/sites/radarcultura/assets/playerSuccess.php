@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
+    <script src="/portal/js/jwPlayer/jquery-1.7.2.min.js"></script>
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
@@ -40,7 +40,7 @@
         <div id='mediaplayer'></div>
         <script type="text/javascript">
 			jwplayer('mediaplayer').setup({
-				'flashplayer' : '/portal/js/player.swf',
+				'flashplayer' : '/portal/js/jwPlayer/player.swf',
 				'id' : 'playerID',
 				'screencolor' : '333333',
 				'controlbar' : 'none',
