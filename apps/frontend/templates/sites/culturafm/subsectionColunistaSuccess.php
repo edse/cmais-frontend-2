@@ -109,7 +109,7 @@ if(isset($pager)){
 						<ul class="abas-conteudo conteudo">
 							<li style="display: block; height: auto;" id="bloco1" class="filho">
 								<a class="media" href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre'][0]->getTitle() ?>"> 
-									<img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
+									<img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
 								</a>
 								<a href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['sobre'][0]->getTitle() ?>"><?php echo $displays['sobre'][0]->getTitle() ?></a>
 									<p><?php echo $displays['sobre'][0]->getDescription() ?></p>
