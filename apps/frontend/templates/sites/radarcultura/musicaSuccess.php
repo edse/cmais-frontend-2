@@ -1,6 +1,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <?php $vars = explode(";", $asset->AssetContent->getHeadlineShort())?>
+<?php var_dump($vars);?>
     <!-- Le styles -->
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
