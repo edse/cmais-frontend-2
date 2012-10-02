@@ -113,7 +113,12 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
 }
 
 /* NOVO */
-.menu-interna li.span { display:none; }
+/*.menu-interna li.span { display:none; }*/
+.menu-interna li span { top:12px; background:url(/portal/images/capaPrograma/culturafm/arrow_down_8x8.png) no-repeat 0 0; }
+.menu-interna li.ativo span, .menu-interna li:hover span { background:url(/portal/images/ico-drop2.png) no-repeat 0 -136px;}
+.submenu-interna {    background: none repeat scroll 0 0 #333;    border: none;   top: 31px;    }
+.menu-interna .submenu-interna li { background:#333; }
+
 .menu-interna li { border-radius:0; background:#136c9b; }
 .menu-interna a {color:#fff;}
 @font-face {font-family: "GothamMediumRegular"; src: url("/portal/css/fontes/gotham/gotham-medium-webfont.eot");src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), url("/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'), url("/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), url("/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");}
@@ -143,7 +148,7 @@ form.selecao .item,
 .fm35-3 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_III.png) !important;}
 #barra-site h2 {margin-bottom:20px;}
 .menu-interna { margin-top:0; background:#666; }
-.menu-interna li {margin-right:0; padding:5px 20px 5px 20px; background:#666; }
+.menu-interna li {margin-right:0; padding:5px 11px; background:#666; }
 .menu-interna .m-contato {float:right;}
 .menu-interna li a {text-transform:uppercase; }
 .box-padrao .topo span {display:none;}
@@ -184,7 +189,7 @@ div.jp-video div.jp-video-play:hover { background-image:url("/portal/images/capa
 .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color:#333 !important; }
 .playlist div.jp-playlist ul,
 div.jp-playlist {border:none !important;}
-.playlist div.jp-playlist ul { max-height:279px; overflow-x:hidden; overflow-y:scroll;}
+.playlist div.jp-playlist ul { max-height:279px; overflow-x:hidden; overflow-y:scroll; }
 
 .vermais,
 .bg-cinza { background: #f7f6f6; padding:10px; overflow:hidden; }
@@ -243,7 +248,7 @@ p strong {font-weight:bold;}
 .audio .col-dir p {color:#666; font-size:12px;}
 .audio .playlist div.jp-playlist ul { padding-left:10px !important; }
 .audio .paraouvir {height:346px;}
-.maisprogramas { float:right; color:#fff; text-decoration: none;  margin-top:10px; background: #666; padding:3px 5px; text-transform:uppercase ; font-size:12px; }
+.maisprogramas { float:right; color:#fff; text-decoration: none; margin-top:10px;  background: #666; padding:3px 5px; text-transform:uppercase ; font-size:12px; }
 .maisprogramas:hover { background:#333; text-decoration:none; }
 .selecao { overflow:hidden; padding:10px 0 0 10px; }
 form.selecao textarea, 
@@ -476,5 +481,6 @@ h3 { margin-bottom:20px}
 
 .home #miolo { margin-top:-303px; }
 .home #conteudo-pagina { margin-top:303px; }
+.submenu-interna, .submenu-interna ul { min-width:218px; }
 
 /** /RADIO FM  **/

@@ -94,19 +94,24 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
 
 /* musica */
+.musica h1{max-width:825px; float:left;color:black;}
 .popover {width: 350px;}
 .facebook-comment{width:100px; float:left;}
+.table.musicas tr td{min-width:309px;min-width:300px\9;}
 
 /* playlists */
-.playlist h1{max-width:830px; float:left;}
+.playlist h1{max-width:825px; float:left;}
 .table.playlist tr td{max-width:260px;}
 
 /* ao vivo */
 #videoPlayer{margin:0 auto;width:451px;}
 
 /* modal */
+#modal .error.valid{display:none !important;}
 .modal{min-width: 633px;top:15%;}
 .modal.fade.in {top: 15%;}
 .modal-backdrop{height: 100%;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
+.modal-body {max-height: 440px;}
+.modal-footer{margin-top:75px;}
