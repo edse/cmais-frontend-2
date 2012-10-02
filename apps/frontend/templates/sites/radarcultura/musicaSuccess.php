@@ -26,99 +26,109 @@
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
+      
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
+      
       <!--topo menu/alert/logo-->
       <div class="row-fluid descricao">
         <!--titulo musica-->
-        <div class="page-header">
-          <h1><?php echo $asset->getTitle()?> <small><?php echo $asset->getDescription()?></small>
+        <div class="page-header musica">
+          <h1><?php echo $asset->getTitle()?> <small><?php echo $asset->getDescription()?></small></h1>
             <!--contagem-->
             <div class="pull-right">
-              <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique essa música para tocar no RadarCultura</a>     
+              <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
             </div>
             <!--/contagem-->
-          </h1>
+          
         </div>
         <!--/titulo musica-->
         <!--modal-->
-        <div id="modal" class="modal hide fade">
+        <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
-          <div class="modal-header">
+          <div class="modal-header span12">
             <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h2>indique esta música</h2>
+            <h2>Indique esta Música</h2>
           </div>
           <!--/modal-header-->
           <!--modal-body-->
           <div class="modal-body">
-            <form action="" method="post" id="form-indicacao" class="span5">
-              <input type="hidden" name="section_id" value="1952" />
-              <legend>Dados Pessoais</legend>
-              <div class="control-group">
-                <label>Nome</label>
-                <input type="text" placeholder="Nome" name="nome" class="input-large required">
-                <span class="help-block"></span>
-              </div>  
-              <div class="control-group">  
-                <label>E-mail</label>
-                <input type="text"  name="email" placeholder="email@dominio.com.br" class="input-large required">
-                <span class="help-block"></span>
-              </div>  
-              <div class="control-group">
-                <label>Cidade</label>
-                <input type="text"  name="cidade" placeholder="Cidade" class="input-large required">
-                <span class="help-block"></span>
-              </div>  
-              <div class="control-group">  
-                <label>Estado</label>
-                <span class="help-block"></span>
-                <select class="estado required input-large"  name="estado" id="estado">
-                    <option value="" selected="selected">--</option>
-                    <option value="Acre">AC</option>
-                    <option value="Alagoas">AL</option>
-                    <option value="Amazonas">AM</option>
-                    <option value="Amap&aacute;">AP</option>
-                    <option value="Bahia">BA</option>
-                    <option value="Cear&aacute;">CE</option>
-                    <option value="Distrito Federal">DF</option>
-                    <option value="Espirito Santo">ES</option>
-                    <option value="Goi&aacute;s">GO</option>
-                    <option value="Maranh&atilde;o">MA</option>
-                    <option value="Minas Gerais">MG</option>
-                    <option value="Mato Grosso do Sul">MS</option>
-                    <option value="Mato Grosso">MT</option>
-                    <option value="Par&aacute;">PA</option>
-                    <option value="Para&iacute;ba">PB</option>
-                    <option value="Pernambuco">PE</option>
-                    <option value="Piau&iacute;">PI</option>
-                    <option value="Paran&aacute;">PR</option>
-                    <option value="Rio de Janeiro">RJ</option>
-                    <option value="Rio Grande do Norte">RN</option>
-                    <option value="Rond&ocirc;nia">RO</option>
-                    <option value="Roraima">RR</option>
-                    <option value="Rio Grande do Sul">RS</option>
-                    <option value="Santa Catarina">SC</option>
-                    <option value="Sergipe">SE</option>
-                    <option value="S&atilde;o Paulo">SP</option>
-                    <option value="Tocantins">TO</option>
-                </select>
+            <form action="" method="post" id="form-indicacao" class="span12">
+              
+              <div class="span6">
+                <input type="hidden" name="section_id" value="1952" />
+                <legend>Dados Pessoais</legend>
+                <div class="control-group">
+                  <label>Nome</label>
+                  <input type="text" placeholder="Nome" name="nome" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>E-mail</label>
+                  <input type="text"  name="email" placeholder="email@dominio.com.br" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">
+                  <label>Cidade</label>
+                  <input type="text"  name="cidade" placeholder="Cidade" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>Estado</label>
+                  <span class="help-block"></span>
+                  <select class="estado required input-large"  name="estado" id="estado">
+                      <option value="" selected="selected">--</option>
+                      <option value="Acre">AC</option>
+                      <option value="Alagoas">AL</option>
+                      <option value="Amazonas">AM</option>
+                      <option value="Amap&aacute;">AP</option>
+                      <option value="Bahia">BA</option>
+                      <option value="Cear&aacute;">CE</option>
+                      <option value="Distrito Federal">DF</option>
+                      <option value="Espirito Santo">ES</option>
+                      <option value="Goi&aacute;s">GO</option>
+                      <option value="Maranh&atilde;o">MA</option>
+                      <option value="Minas Gerais">MG</option>
+                      <option value="Mato Grosso do Sul">MS</option>
+                      <option value="Mato Grosso">MT</option>
+                      <option value="Par&aacute;">PA</option>
+                      <option value="Para&iacute;ba">PB</option>
+                      <option value="Pernambuco">PE</option>
+                      <option value="Piau&iacute;">PI</option>
+                      <option value="Paran&aacute;">PR</option>
+                      <option value="Rio de Janeiro">RJ</option>
+                      <option value="Rio Grande do Norte">RN</option>
+                      <option value="Rond&ocirc;nia">RO</option>
+                      <option value="Roraima">RR</option>
+                      <option value="Rio Grande do Sul">RS</option>
+                      <option value="Santa Catarina">SC</option>
+                      <option value="Sergipe">SE</option>
+                      <option value="S&atilde;o Paulo">SP</option>
+                      <option value="Tocantins">TO</option>
+                  </select>
+                </div>
               </div>
-              <legend>Minha Indicação</legend>
-              <div class="control-group">
-                <label>Título</label>
-                <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
-                <span class="help-block"></span>
-              </div>  
-              <div class="control-group">  
-                <label>Intérprete</label>
-                <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
-              </div>  
-              <div class="control-group">
-                <label>URL</label>
-                <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+              <div class="span6">
+                <legend>Minha Indicação</legend>
+                <div class="control-group">
+                  <label>Título</label>
+                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>Intérprete</label>
+                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
+                </div>  
+                <div class="control-group">
+                  <label>URL</label>
+                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                </div>
               </div>
-              <div class="modal-footer">
-                <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-                <input type="submit" class="btn btn-primary btn-enviar"></a>
+              <div class="row-fluid">
+                <div class="modal-footer musica">
+                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"></a>
+                </div>
               </div>
             </form> 
              
