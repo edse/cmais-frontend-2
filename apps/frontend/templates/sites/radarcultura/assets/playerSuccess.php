@@ -35,7 +35,7 @@
       
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <script type="text/javascript" src="portal/js/jwplayer.js"></script>
+        <script type="text/javascript" src="portal/js/jPlayer/js/jwplayer.js"></script>
         <!-- Add-On Info Here -->
         <div id='mediaplayer'></div>
         <script type="text/javascript">
