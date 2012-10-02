@@ -6414,11 +6414,12 @@ form .nome{
   overflow: hidden;
   position: relative;
 }
-.box-especial-interna .internas iframe{
+.box-especial-infoTxt .internas iframe{
   border: none;
-  /*margin-left: 100px;*/
+  margin-left:0px !important;
   overflow: hidden;
   position: relative;
+  width:100%;
 }
 /*breadcrumb (.trilha)*/
 .trilha{
