@@ -18,7 +18,7 @@ class _sectionActions extends sfActions
   public function executeIndex(sfWebRequest $request){
     gc_enable();
     
-    if($request->getParameter('busca')){
+    if($request->getParameter('buscaa')){
       $request->setParameter('object', Doctrine::getTable('Section')->findOneBySiteIdAndSlug(189, 'artistas'));
     }
     elseif($request->getParameter('buscam')){
@@ -731,19 +731,19 @@ class _sectionActions extends sfActions
       }
       else if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
   
-        if($request->getParameter('busca')!=""){
+        if($request->getParameter('buscaa')!=""){
 
           $this->assetsQuery = Doctrine_Query::create()
             ->select('DISTINCT description as description')
             ->from('Asset a')
-            ->where('description LIKE ?', 'Por '.$request->getParameter('busca').'%')
+            ->where('description LIKE ?', 'Por '.$request->getParameter('buscaa').'%')
             ->andWhere('site_id = 189')
             ->orderBy('a.description');
   
           $countQuery = Doctrine_Query::create()
             ->select('COUNT(DISTINCT description) as description')
             ->from('Asset a')
-            ->where('description LIKE ?', 'Por '.$request->getParameter('busca').'%')
+            ->where('description LIKE ?', 'Por '.$request->getParameter('buscaa').'%')
             ->andWhere('site_id = 189')
             ->fetchArray();
 
