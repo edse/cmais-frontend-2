@@ -40,7 +40,7 @@
         <div id='mediaplayer'></div>
         <script type="text/javascript">
 			jwplayer('mediaplayer').setup({
-				'flashplayer' : 'js/player.swf',
+				'flashplayer' : '/portal/js/player.swf',
 				'id' : 'playerID',
 				'screencolor' : '333333',
 				'controlbar' : 'none',
