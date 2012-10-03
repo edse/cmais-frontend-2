@@ -11,7 +11,7 @@
           </ul>
           
           <div id="horario" class="horario">
-            <p><span>TV CULTURA</span><br/>SEG a SEX: 9h • 14h30 / SÁB: 8h</p>
+            <p><span>TV CULTURA</span><br/>SEG a SEX: 9h30 • 15h / SÁB: 8h</p>
             <p><span>TV Rá Tim Bum!</span><br/>SEG a SEX: 7h • 19h • 1h<br/>SÁB e DOM: 15h</p>
           </div>  
         </div>

@@ -6097,7 +6097,7 @@ form .nome{
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 #box-especial-interna .box-especial-infoTxt p{
   color: #6b6b6b;
@@ -6409,10 +6409,17 @@ form .nome{
 	overflow-y: scroll;
 }
 .internas iframe{
-	border: none;
-	margin-left: 100px;
-	overflow: hidden;
-	position: relative;
+  border: none;
+  margin-left: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.box-especial-infoTxt iframe{
+  border: none;
+  margin-left:0px !important;
+  overflow: hidden;
+  position: relative;
+  width:100%;
 }
 /*breadcrumb (.trilha)*/
 .trilha{

@@ -63,8 +63,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
-.redes .span4{*max-width:280px;}
-.redes .span6{*max-width:280px;}
+.redes .span4{*width:270px;}
+.redes .span6{*width:270px;}
 .redes h4{color:black;}
 
 /* lista assets subsection */
