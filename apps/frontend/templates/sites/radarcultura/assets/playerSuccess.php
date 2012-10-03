@@ -24,11 +24,11 @@
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
-    	h1 a { text-indent:-9999px; background:url(images/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
+    	h1 a { text-indent:-9999px; background:url(/portal/images/radarcultura/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
 			#mediaplayer_wrapper { margin-bottom:20px;}
     </style>
   </head>
-
+ 
   <body>
     <!-- container -->
     <div id="radar-home" class="">
