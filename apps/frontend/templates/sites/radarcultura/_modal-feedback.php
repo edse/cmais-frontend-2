@@ -31,7 +31,7 @@
       <div class="modal-footer">
         <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-        <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"></a>
+        <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"/>
       </div>
     </form> 
     </div>              
