@@ -107,7 +107,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 #videoPlayer{margin:0 auto;width:451px;}
 
 /* modal */
-#modal .error.valid{display:none !important;}
+.error.valid{display:none !important;}
 .modal{min-width: 633px;top:15%;}
 .modal.fade.in {top: 15%;}
 .modal-backdrop{height: 100%;}
