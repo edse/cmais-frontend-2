@@ -27,7 +27,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 #modal-feedback .modal-body{min-height:252px}
 #modal-feedback .control-group.mensagem{width:100%}
 #modal-feedback .control-group.mensagem textarea{width:440px}
-#modal-feedback .control-group.mensagem .error{left:-40px;}
+/*#modal-feedback .control-group.mensagem .error{left:-40px;}*/
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
 
 /* menu */
