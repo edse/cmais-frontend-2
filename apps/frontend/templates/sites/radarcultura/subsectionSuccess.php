@@ -36,20 +36,7 @@ if(isset($pager)){
         </div>
         <!--topo menu/alert/logo-->
         
-		 <?php if($section->getParentSectionId()): ?>
-		 <?php $parentSection = Doctrine::getTable('section')->findOneById($section->getParentSectionId()); ?>
-		 <?php endif; ?>
-		 <?php if(isset($parentSection)): ?>
-      <!--breadcrumb-->
-      <div class="row-fluid">
-         <ul class="breadcrumb">
-           <li><a href="<?php echo url_for('homepage') . $site->getSlug() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">/</span></li>
-           <li><a href="#"><?php echo $parentSection->getTitle(); ?></a> <span class="divider">/</span></li>
-           <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a></li>
-         </ul>
-      </div>
-      <!--breadcrumb-->
-		 <?php endif; ?>
+		 <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section) ?>
 		 
       <!--nome programa-->
       <div class="page-header">
