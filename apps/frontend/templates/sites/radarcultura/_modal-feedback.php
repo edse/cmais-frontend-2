@@ -37,3 +37,46 @@
     </div>              
   </div>
   <!--/ Modal Feedback-->
+  <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
+  <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    
+    var validator = $('#form-feedback').validate({
+      rules:{
+        nome:{
+          required: true,
+          minlength: 2
+        },
+        email:{
+          required: true,
+          email: true
+        },
+        mensagem:{
+          required: true,
+          minlength: 3
+        }
+      },
+      highlight: function(label) {
+        $(label).closest('.control-group').addClass('error');
+      },
+      success: function(label){
+        label.text('OK!').addClass('valid').closest('.control-group').addClass('success');
+      },
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-indicacao").serialize(),
+          beforeSend: function(){
+            $('#loader2').show();
+            $('.btn-enviar').hide();
+          },
+          success: function(data){
+            window.location.href="#";
+          }
+        });         
+      }
+    });
+  });
+</script>
