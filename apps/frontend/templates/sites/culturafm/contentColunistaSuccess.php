@@ -136,6 +136,12 @@
         <!--ESQUERDA-->
         <div class="grid2" id="esquerda">
         	<h3 style="float:none" class="tit-pagina grid2"><?php echo $asset->getTitle(); ?></h3>
+        	<p><?php echo $asset->getDescription() ?></p>
+            <div class="assinatura grid2">
+              <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+              <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+            </div>
         	<div style="text-align: left"><?php echo html_entity_decode($asset->AssetContent->render()) ?></div>
         </div>
         <!--/ESQUERDA-->

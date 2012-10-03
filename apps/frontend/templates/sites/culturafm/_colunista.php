@@ -14,7 +14,7 @@
               <p><?php echo $displays['colunista'][0]->getDescription() ?></p>
             </div>
             <style type="text/css">
-            	.programacao { height:114px; }
+            	.programacao { height:107px; }
             </style>
             	<?php endif; ?>
             <?php endif; ?>
