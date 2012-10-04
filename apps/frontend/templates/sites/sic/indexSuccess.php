@@ -79,7 +79,7 @@
                             <h4><?php echo $d->getTitle() ?></h4>
                         </a>
                         <div id="risco-2"></div>
-                        <div id="<?php echo $d->getId() ?>" class="box-hide collapse on">
+                        <div id="<?php echo $d->getId() ?>" class="box-hide collapse on" style="overflow: hidden; clear: both;">
                         	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                 		</div>   
             		</div>
