@@ -12,16 +12,23 @@
 					 <?php else: ?>
 			       <?php if(isset($parentSection)): ?>
 			         <?php if(count($parentSection->getAssets()) > 0): ?>
-			         <li><a href="<?php echo $parentSection->retriveUrl()?>"><?php echo $parentSection->getTitle(); ?></a> <span class="divider">/</span></li>
+			       <li><a href="<?php echo $parentSection->retriveUrl()?>"><?php echo $parentSection->getTitle(); ?></a> <span class="divider">/</span></li>
 			         <?php else: ?>
-			         <li><?php echo $parentSection->getTitle(); ?> <span class="divider">/</span></li>
+			       <li><?php echo $parentSection->getTitle(); ?> <span class="divider">/</span></li>
 			         <?php endif; ?>
-			       <?php endif; ?>
-			       <?php if(isset($asset) && $parentSection->getSlug() != "sobre"): ?>
-			         <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">/</span></li>
-			         <li><?php echo $asset->getTitle() ?></li>
+			       	 <?php if(isset($asset) && $parentSection->getSlug() != "sobre"): ?>
+			       <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">/</span></li>
+			       <li><?php echo $asset->getTitle() ?></li>
+			         <?php else: ?>
+			       <li><?php echo $section->getTitle(); ?> </li>
+			         <?php endif; ?>
 			       <?php else: ?>
-			         <li><?php echo $section->getTitle(); ?> </li>
+			       	 <?php if(isset($asset)): ?>
+			       <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">/</span></li>
+			       <li><?php echo $asset->getTitle(); ?> </li>
+			       	 <?php else: ?>
+			       <li><?php echo $section->getTitle(); ?> </li>
+			         <?php endif; ?>
 			       <?php endif; ?>
 		       <?php endif; ?>
 		       </ul>
