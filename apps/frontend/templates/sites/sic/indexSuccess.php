@@ -114,7 +114,7 @@
                     <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
                       <?php echo $d->getTitle() ?>
                     </a>
-                    <div id="<?php echo $d->getId() ?>" class="fundo-cinza collapse on">
+                    <div id="<?php echo $d->getId() ?>" class="fundo-cinza on collapse " style="display:none;">
                       <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                     </div>
                   </li>
