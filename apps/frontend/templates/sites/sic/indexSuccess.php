@@ -80,9 +80,11 @@
                             <h4><?php echo $d->getTitle() ?></h4>
                         </a>
                         <div id="risco-2"></div>
-                        <div id="<?php echo $d->getId() ?>" class="box-hide collapse on">
+                        <div class="row-fluid">
+                        <div id="<?php echo $d->getId() ?>" class="" style="display:none;">
                         	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
-                		</div>   
+                    		</div>   
+                    		</div>
             		</div>
             		<!-- /COLUNA SUB ESQ 2 -->
 					  <?php endforeach; ?>
