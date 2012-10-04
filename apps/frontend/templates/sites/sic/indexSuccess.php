@@ -76,15 +76,13 @@
             		<!-- COLUNA SUB ESQ 2 -->
             		<div id="accodion" class="coluna-sub-1 box-dicas cinza-escuro">
             			<i class="icon-plus icon-white"></i>
-                        <a href="javascript:;" class="dicas" data-target="#<?php echo $d->getId() ?>">
+                        <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
                             <h4><?php echo $d->getTitle() ?></h4>
                         </a>
                         <div id="risco-2"></div>
-                        <div class="row-fluid">
-                        <div id="<?php echo $d->getId() ?>" class="" style="display:none;">
+                        <div id="<?php echo $d->getId() ?>" class="box-hide collapse on">
                         	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
-                    		</div>   
-                    		</div>
+                		</div>   
             		</div>
             		<!-- /COLUNA SUB ESQ 2 -->
 					  <?php endforeach; ?>
@@ -117,7 +115,7 @@
                     <a href="javascript:;" class="formas" data-target="#<?php echo $d->getId() ?>">
                       <?php echo $d->getTitle() ?>
                     </a>
-                    <div id="<?php echo $d->getId() ?>" class="fundo-cinza on collapse " style="display:none;">
+                    <div id="<?php echo $d->getId() ?>" class="fundo-cinza on collapse " style="display:block;">
                       <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                     </div>
                   </li>
