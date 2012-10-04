@@ -99,6 +99,7 @@ function slugfy($string){
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
         <!--topo menu/alert/logo-->
+        <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
         <!--letra-->      
         <div class="row-fluid">  
           <div class="page-header artista">

@@ -26,6 +26,8 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
       <!--/topo menu/alert/logo-->
+      
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
       <!--Linha Central-->
       <div class="row-fluid">
         <!--transmissao ao vivo -->

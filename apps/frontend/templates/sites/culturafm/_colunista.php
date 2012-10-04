@@ -13,5 +13,8 @@
               <a href="<?php echo $displays['colunista'][0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['colunista'][0]->getTitle() ?>"><?php echo $displays['colunista'][0]->getTitle() ?></a>
               <p><?php echo $displays['colunista'][0]->getDescription() ?></p>
             </div>
+            <style type="text/css">
+            	.programacao { height:107px; }
+            </style>
             	<?php endif; ?>
             <?php endif; ?>

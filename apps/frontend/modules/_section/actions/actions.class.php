@@ -170,7 +170,7 @@ class _sectionActions extends sfActions
 
               if(count($next)>0){
                 $d = explode(" ",$next[0]->date_start);
-                header("Location: ".$this->uri."?d=".str_replace("-","/",$d[0]));
+                header("Location: ".$this->uri."?d=".str_replace("-","/",$d[0])."&1".time());
                 die();
               }else{
                 $prev = Doctrine_Query::create()
@@ -183,7 +183,7 @@ class _sectionActions extends sfActions
                   ->execute();
                 if(count($prev)>0){
                   $d = explode(" ",$prev[0]->date_start);
-                  header("Location: ".$this->uri."?d=".str_replace("-","/",$d[0]));
+                  header("Location: ".$this->uri."?d=".str_replace("-","/",$d[0])."&2".time());
                   die();
                 }
               }

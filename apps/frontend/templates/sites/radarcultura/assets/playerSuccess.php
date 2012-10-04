@@ -20,27 +20,27 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
+    <script src="/portal/js/jwPlayer/jquery-1.7.2.min.js"></script>
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
-    	h1 a { text-indent:-9999px; background:url(images/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
+    	h1 a { text-indent:-9999px; background:url(/portal/images/radarcultura/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
 			#mediaplayer_wrapper { margin-bottom:20px;}
     </style>
   </head>
-
+ 
   <body>
     <!-- container -->
     <div id="radar-home" class="">
        
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <script type="text/javascript" src="js/jwplayer.js?start=am"></script>
+        <script type="text/javascript" src="/portal/js/jwPlayer/jwplayer.js?start=am"></script>
         <!-- Add-On Info Here -->
         <div id='mediaplayer'></div>
         <script type="text/javascript">
 			jwplayer('mediaplayer').setup({
-				'flashplayer' : 'js/player.swf',
+				'flashplayer' : '/portal/js/jwPlayer/player.swf',
 				'id' : 'playerID',
 				'screencolor' : '333333',
 				'controlbar' : 'none',
