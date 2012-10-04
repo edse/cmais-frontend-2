@@ -19,6 +19,7 @@
         });
         $('.formas').click(function(){
           $(this).prev().toggleClass('icon-circle-arrow-down');
+          $(this).next().toggle();
         });
       });
     </script>  
@@ -111,7 +112,7 @@
                <?php foreach($displays["formas-de-atendimento"] as $d): ?> 
                   <li>
                     <i class="icon-circle-arrow-right"></i>  
-                    <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
+                    <a href="javascript:;" class="formas" data-target="#<?php echo $d->getId() ?>">
                       <?php echo $d->getTitle() ?>
                     </a>
                     <div id="<?php echo $d->getId() ?>" class="fundo-cinza on collapse " style="display:none;">
