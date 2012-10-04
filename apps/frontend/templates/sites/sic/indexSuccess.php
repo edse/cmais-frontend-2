@@ -76,7 +76,7 @@
             		<!-- COLUNA SUB ESQ 2 -->
             		<div id="accodion" class="coluna-sub-1 box-dicas cinza-escuro">
             			<i class="icon-plus icon-white"></i>
-                        <a href="javascript:;" class="dicas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
+                        <a href="javascript:;" class="dicas" data-target="#<?php echo $d->getId() ?>">
                             <h4><?php echo $d->getTitle() ?></h4>
                         </a>
                         <div id="risco-2"></div>
