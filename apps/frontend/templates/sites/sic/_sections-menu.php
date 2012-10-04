@@ -13,7 +13,7 @@
         
         </script>
         <!--/menu Drop Down -->
-        <?php echo count($siteSections) ?>
+
         <?php if(count($siteSections) > 0): ?>
         <!-- MENU SIC -->
         <div class="menu-sic">
