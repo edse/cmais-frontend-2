@@ -1,6 +1,12 @@
         <!--menu Drop Down -->
         <script>
-          $('.dropdown-toggle').dropdown()
+          $(document).ready(function(){
+          //$('.dropdown-toggle').dropdown();
+          $('.dropdown-toggle').click(function(){
+            $('.dropdown').removeClass('open');
+            $(this).parent().toggleClass("open");
+          });
+        }); 
         </script>
         <!--/menu Drop Down -->
         
