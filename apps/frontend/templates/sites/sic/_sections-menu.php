@@ -6,6 +6,9 @@
             $('.dropdown').removeClass('open');
             $(this).parent().addClass("open");
           });
+          $('.dropdown').mouseleave(function(){
+            $(this).removeClass("open");
+          });
         });  
         
         </script>
