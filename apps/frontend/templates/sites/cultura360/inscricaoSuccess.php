@@ -68,7 +68,14 @@
                 <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>
                 <!-- <p class="titulos">Pellentesque volutpat rutrum metus nec vulputate</p>-->
                 <!-- <p><?php echo $section->getDescription()?></p> -->
-                <p>O programa Cultura 360 é uma parceria entre a Fundação Padre Anchieta e a Associação Brasileira de Televisão Universitária. Na Tv Cultura serão exibidos, por programa, três vídeos de 6 minutos cada. Na página do Cultura 360, além dos vídeos de 6 minutos, poderão participar vídeos de 1 minuto e 30 segundos (podendo ser exibidos em programa especial). Leia o <a href="http://tvcultura.cmais.com.br/cultura360/regulamento-cultura-360" target="_blank" style="font-weight:bold">Regulamento</a>.</p>
+                <p>A nova temporada do Cultura 360 vem aí! Se você é aluno ou professor de faculdades ou universidades brasileiras, e tem um trabalho em audiovisual, envie seu material pra gente.</br></br>
+                  Agora, uma novidade: nessa nova fase do programa, os vídeos podem ter de 3 a 12 minutos de duração. São aceitos trabalhos de todas as modalidades: reportagem, documentário, peça de ficção, videoclipe musical ou o que mais você quiser inventar.</br></br>
+                  Aqui no site você encontra todas as informações de como se inscrever. É muito fácil!</br></br>
+                  Não perca essa chance de mostrar seu talento pra todo o Brasil através da TV Cultura.</br></br>
+                  O programa Cultura 360 é uma parceria entre a Fundação Padre Anchieta e a Associação Brasileira de Televisão Universitária.</br></br>
+                  Cultura 360 – o olhar universitário da sociedade.</br></br>
+                  Leia o <a href="http://tvcultura.cmais.com.br/cultura360/regulamento-cultura-360" target="_blank" style="font-weight:bold">Regulamento</a>.
+                </p>
                 <div class="msgErro" style="display:none">
                                       <span class="alerta"></span>
                                         <div class="boxMsg">
