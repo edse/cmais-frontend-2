@@ -181,7 +181,8 @@
           	<?php endif; ?>
           <?php endif; ?>
           
-          <?php include_partial_from_folder('sites/culturafm','global/programacaododia') ?>
+          <?php //include_partial_from_folder('sites/culturafm','global/programacaododia') ?>
+          <?php include_partial_from_folder('sites/culturafm','global/recentesColunista', array('asset' => $asset)) ?>
           
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1">
