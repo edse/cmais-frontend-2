@@ -37,7 +37,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     <!--CSS-->
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/ludovico-show.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/quintal/css/dia12.css" type="text/css" />
     <!--/CSS-->
      
     <!--SCRIPT--> 
@@ -182,11 +182,11 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
           <!--CONTEUDO WRAPPER-->
           <div class="conteudoWrapper">
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
-            <!--LUDOVICO PALCO-->
-            <div class="palco ludovico">
+            <!--dia12 PALCO-->
+            <div class="palco dia12">
               
               <!--CANDITADO A-->
-              <div id="ca" class="ludovico candidato candidatoA candidato1" name="1">
+              <div id="ca" class="dia12 candidato candidatoA candidato1" name="1">
                 
                 <!--BOTAO-->
                 <a href="javascript:;" class="voto" rel="<?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $respostas[0]->Asset->AssetAnswer->getId()?>">
@@ -220,7 +220,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
               <!--CANDITADO A-->
               
               <!--CANDITADO B-->
-              <div id="cb" class="ludovico candidato candidatoB candidato2 " name="2">
+              <div id="cb" class="dia12 candidato candidatoB candidato2 " name="2">
                 
                 <!--BOTAO-->
                 <a href="javascript:;" class="voto" rel="<?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $respostas[1]->Asset->AssetAnswer->getId()?>">
@@ -281,7 +281,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                 
                 <!--BOX ESPERA-->
                 <div id="espera" align="center" style="display:none">
-                  <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" />
+                  <img src="/portal/quintal/images/dia12/ajax-loader.gif" />
                   <p>
                     Aguarde só um pouquinho!
                   </p>
@@ -315,7 +315,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
               <!--/AGUARDA VOTO-->
               
             </div>  
-            <!--/LUDOVICO PALCO-->
+            <!--/dia12 PALCO-->
             
             <!--QUINTAL PERGUNTE FILOMENA-->
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>

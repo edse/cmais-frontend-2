@@ -1,5 +1,5 @@
 .palco.voce-escolhe{width:967px; height:623px;position:relative; background:url(/portal/quintal/images/dia12/img-vcescolhe-cenario.png) no-repeat;}
-.palco.ludovico{width:967px; height:623px;position:relative; background:url(/portal/quintal/images/dia12/img-show-cenario.png) no-repeat;}
+.palco.dia12{width:967px; height:623px;position:relative; background:url(/portal/quintal/images/dia12/img-show-cenario.png) no-repeat;}
 
 .candidato{width:250px;height:402px;position:absolute;bottom:45px; background: url(/portal/quintal/images/dia12/img-box-candidato.png) no-repeat;}
 p{font-family:Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold; text-align:center; margin-top:17px}
@@ -37,14 +37,14 @@ p{font-family:Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold; te
 #pAtivo.tCentro p{}
 #pAtivo.tCentro .sim{margin-left:112px;}
 
-.ludovico .left346{left: 346px;}
-.ludovico .left106{left: 106px;}
+.dia12 .left346{left: 346px;}
+.dia12 .left106{left: 106px;}
 
 .voce-escolhe .left346{left: 434px;}
 .voce-escolhe .left106{left: 192px;}
 
-.ludovico.candidatoA{left:100px;}
-.ludovico.candidatoB{left:408px;}
+.dia12.candidatoA{left:100px;}
+.dia12.candidatoB{left:408px;}
 
 .voce-escolhe.candidatoA{left:187px;}
 .voce-escolhe.candidatoB{left:494px;}
