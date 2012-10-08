@@ -13,7 +13,7 @@
                     <?php endif; ?>
                   </a>
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
-                    <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                    <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
