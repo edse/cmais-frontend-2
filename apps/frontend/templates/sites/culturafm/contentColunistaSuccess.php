@@ -200,6 +200,7 @@
 				GA_googleFillSlot("culturafm-300x250");
 
             </script><script src="http://pubads.g.doubleclick.net/gampad/ads?correlator=992806083932014&amp;output=json_html&amp;callback=GA_googleSetAdContentsBySlotForSync&amp;impl=s&amp;client=ca-pub-6681834746443470&amp;slotname=culturafm-300x250&amp;page_slots=culturafm-300x250&amp;cookie=ID%3D92f85a2d13e3fe88%3AT%3D1334062340%3AS%3DALNI_MZm08l6j7VTImPqL37xIU1-3L0eEQ&amp;url=http%3A%2F%2Fculturafm.cmais.com.br%2Fguia-do-ouvinte&amp;ref=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fculturafm%2Fpara-ouvir&amp;lmt=1347992705&amp;dt=1347992705946&amp;cc=100&amp;biw=1903&amp;bih=864&amp;adk=4276249504&amp;adx=1153&amp;ady=317&amp;ifi=1&amp;oid=3&amp;u_tz=-180&amp;u_his=5&amp;u_java=true&amp;u_h=1080&amp;u_w=1920&amp;u_ah=972&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=6&amp;u_nmime=87&amp;flash=11.2.202&amp;gads=v2&amp;ga_vid=1364026977.1347992706&amp;ga_sid=1347992706&amp;ga_hid=1433285561"></script>
+            <!--
             <div id="google_ads_div_culturafm-300x250_ad_wrapper">
               <div style="display:inline-block;" id="google_ads_div_culturafm-300x250_ad_container">
                 <ins style="width: 300px; height: 250px; display: inline-table; position: relative; border: 0px none;"><ins style="width: 300px; height: 250px; display: block; position: relative; border: 0px none;"><iframe width="300" scrolling="no" height="250" frameborder="0" id="google_ads_iframe_culturafm-300x250" name="google_ads_iframe_culturafm-300x250" marginwidth="0" marginheight="0" style="border: 0px none; position: absolute; top: 0px; left: 0px;"></iframe></ins></ins>
@@ -209,6 +210,7 @@
 				GA_googleCreateDomIframe("google_ads_div_culturafm-300x250_ad_container", "culturafm-300x250");
 
             </script>
+            -->
           </div>
           <!-- / BOX PUBLICIDADE -->
         </div>
