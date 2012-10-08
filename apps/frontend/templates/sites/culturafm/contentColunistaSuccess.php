@@ -143,6 +143,15 @@
               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
         	<div style="text-align: left"><?php echo html_entity_decode($asset->AssetContent->render()) ?></div>
+        	
+          <!-- comentario facebook -->
+          <div class="comentario-fb grid2" style="display:block">
+            <fb:comments href="<?php echo $uri ?>" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <hr />
+          </div>
+          <!-- /comentario facebook -->
+          
+          <a class="voltar" href="#">&lsaquo;&lsaquo; voltar</a>
         </div>
         <!--/ESQUERDA-->
         <!-- DIREITA -->
