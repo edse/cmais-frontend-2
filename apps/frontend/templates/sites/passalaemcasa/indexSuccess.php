@@ -96,7 +96,6 @@
           <?php endif;?>  
           </div>
           <!-- /col-esq -->
-          <!-- col-dir -->
           <div class="col-dir grid1">
             <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"]))?>
             <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"]))?>
