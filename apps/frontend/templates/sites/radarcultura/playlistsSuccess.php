@@ -26,8 +26,6 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
         <!--topo menu/alert/logo-->
-      <!--breadcrumbs-->
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
        
       <!--topo Playlits/contagem-->
       <div id="row-fluid">

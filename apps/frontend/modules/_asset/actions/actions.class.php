@@ -65,6 +65,8 @@ class _assetActions extends sfActions
         $this->setLayout('radarcultura');
         if(!$this->section){
           $se = $this->asset->Sections;
+					$this->section = $this->asset->Sections[0];
+					/*
           if(count($se)>0){
             foreach($se as $s){
               if(!$this->section){
@@ -78,6 +80,7 @@ class _assetActions extends sfActions
               }
             }
           }
+					*/
           if(!$this->section){
             $this->section = Doctrine_Query::create()
               ->select('s.*')

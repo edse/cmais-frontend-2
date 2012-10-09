@@ -109,7 +109,11 @@
           <!-- col-esq -->
           <div class="col-esq grid1">
           	
-						<?php include_partial_from_folder('sites/culturafm','global/colunista', array('displays' => $displays)) ?> 
+						<?php include_partial_from_folder('sites/culturafm','global/colunista', array('displays' => $displays)) ?>
+						<style type="text/css">
+            	.programacao { height:114px; }
+            </style>
+ 
           	
             <!-- BOX PADRAO -->
           <div class="box-padrao grid1">

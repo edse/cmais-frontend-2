@@ -240,7 +240,7 @@ $(function(){
             <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
               <!-- PAGINACAO -->
-              <div class="paginacao grid3">
+              <div class="paginacao grid2">
                 <div class="centraliza">
                   <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
                   <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>

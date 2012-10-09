@@ -1,59 +1,33 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug(); ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //carrossel
-    $('#carrossel1').jcarousel({
+    $('.carrossel').jcarousel({
         wrap: "both",
         scroll: 1
-    });
-    //carrossel
-    $('#carrossel4').jcarousel({
-        wrap: "both",
-        scroll: 4
     });
 });
 </script>
 
-<?php
-  $vid1 = Doctrine_Query::create()
-    ->select('a.*')
-    ->from('Asset a, AssetVideo av')
-    ->where('a.id = av.asset_id')
-    ->andWhere('a.site_id = ?', (int)$site->id)
-    ->andWhere('a.asset_type_id = 6')
-    ->andWhere('a.is_active = 1')
-    ->andWhere("av.youtube_id != ''")
-    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-    ->limit(1)
-    ->orderBy('a.id desc')
-    ->execute();
-  if(!isset($asset)) $asset = $vid1[0];
-
-  $vid2 = Doctrine_Query::create()
-    ->select('a.*')
-    ->from('Asset a, AssetVideo av')
-    ->where('a.id = av.asset_id')
-    ->andWhere('a.asset_type_id = 6')
-    ->andWhere('a.is_active = 1')
-    ->andWhere("av.youtube_id != ''")
-    ->limit(30)
-    ->orderBy('a.id desc')
-    ->execute();
-?>
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+
+  <div class="bg-chamada">
+    <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+  </div>
+  <div class="bg-site"></div>
 
     <!-- / CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
       <!-- BARRA SITE -->
       <div id="barra-site">
+        
+        <?php if(isset($program) && $program->id > 0): ?>
         <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
               <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
@@ -71,13 +45,13 @@ $(function(){
             <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
           </div>
           <!-- /horario -->
-          <?php endif; ?>
         </div>
+        <?php endif; ?>
 
         <?php if(isset($siteSections)): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
-          
+
           <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
           <?php if(isset($section->slug)): ?>
@@ -86,8 +60,6 @@ $(function(){
               <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
               <span>&gt;</span>
               <a href="<?php echo $site->retriveUrl() ?>/videos" title="Vídeos">Vídeos</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
             </div>
             <?php endif; ?>
           <?php endif; ?>
@@ -106,74 +78,120 @@ $(function(){
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-
-          <!-- CAPA -->
-          <div class="capa grid3">
-
-            <!-- ESQUERDA -->
-            <div id="esquerda" class="grid2">
-
-              <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
-
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-
-            </div>
-            <!-- /ESQUERDA -->
-
-            <!-- DIREITA -->
-            <div id="direita" class="grid1">
-
-              <?php if(isset($displays["veja-tambem"])) include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $displays["veja-tambem"])) ?>
-
-              <?php //include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $vid1)) ?>
+          <div id="menu-rodape" class="grid3">
+            
+            <ul class="abas">
+              <li class="neutro"><a href="videos">Todos os V&iacute;deos</a><span></span></li>
+              <!-- li class="vistos"><a title="+ Vistos" href="#vistos">+ Vistos</a><span class="decoracao"></span></li -->
+              <!--li class="recentes"><a title="+ Recentes" href="#recentes">+ Recentes</a><span class="decoracao"></span></li-->
+            </ul>
+            
+            <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
               
-              <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
-                <!-- nossalingua-assets-300x250 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("multicultura-300x250");
-                </script>
+              <div class="busca">
+                <form id="busca-galeria" name="busca" action="" method="post">
+                  <label class="busque">Busque por <span>palavra-chave</span></label>
+                  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
+                  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+                </form>
               </div>
-              <!-- /BOX PUBLICIDADE -->
               
-              <?php if(isset($displays["destaque-noticias"])): ?>
-              <!-- BOX PADRAO Noticia -->
-              <div class="box-padrao grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>Not&iacute;cias + recentes</h4>
-                    <!-- <a href="#" class="rss" title="rss"></a> -->
-                  </div>
+              <div id="todas" class="filho blocos" style="display:block;">
+                <div class="capa">
+                  <ul>
+                  <?php if(count($pager) > 0): ?>
+                    <?php foreach($pager->getResults() as $d): ?>
+                    <li class="conteudo-lista">
+                      <a href="<?php echo $d->retriveUrl() ?>" class="bg" title="<?php echo $d->getTitle() ?>"><img class="" src="<?php echo $d->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $d->getTitle() ?>" /><span></span></a>
+                      <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
+                    </li>
+                    <?php endforeach; ?>
+                  <?php endif; ?>
+                  </ul>
                 </div>
-                <?php include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias"])) ?>
               </div>
-              <!-- /BOX PADRAO Noticia -->
-              <?php endif; ?>
-
-            </div>
-            <!-- /DIREITA -->
-          </div>
-          <!-- /CAPA -->
-
-          <!-- MENU-RODAPE -->
-          <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
-          <!-- /MENU-RODAPE -->
-
-          <!-- BOX PUBLICIDADE 2 -->
-          <div class="box-publicidade pub-grd grid3">
-            <!-- nossalingua-assets-728x90 -->
-            <script type='text/javascript'>
-            GA_googleFillSlot("multicultura-728x90");
-            </script>
-          </div>
-          <!-- / BOX PUBLICIDADE 2 -->
+               <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
+                <!-- cmais-assets-250x250 -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("cmais-assets-250x250");
+        </script>
+        </div>
+              
+              <!--div id="recentes" class="filho blocos" style="display:none;">
+                <div class="capa">
+                  <ul>
+                    <li class="conteudo-lista ativo">
+                      <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
+                      <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div id="vistos" class="filho blocos" style="display:none;">
+                <div class="capa">
+                  <ul>
+                    <li class="conteudo-lista ativo">
+                      <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
+                      <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
+                    </li>
+                  </ul>
+                </div>
+              </div -->
+              
+              <?php if(isset($pager)): ?>
+                <?php if($pager->haveToPaginate()): ?>
+              <!-- PAGINACAO -->
+              <div class="paginacao grid3">
+                <div class="centraliza">
+                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
+                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
+                  <ul>
+                    <?php foreach ($pager->getLinks() as $page): ?>
+                      <?php if ($page == $pager->getPage()): ?>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+                      <?php else: ?>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+                      <?php endif; ?>
+                    <?php endforeach; ?>
+                  </ul>
+                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
+                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
+                </div>
+              </div>
+          <!-- PAGINACAO -->
+              <form id="page_form" action="" method="post">
+                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                <input type="hidden" name="page" id="page" value="" />
+                <input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
+              </form>
+              <script>
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
+              </script>
+          <!-- PAGINACAO -->
+            <?php endif; ?>
+          <?php endif; ?>
+         
+          
+      </div>
+      </div>
+    
+      <!-- BOX PUBLICIDADE 2 -->
+      <div class="box-publicidade pub-grd grid3">
+        <!-- programas-assets-728x90 -->
+        <script type='text/javascript'>
+          GA_googleFillSlot("cmais-assets-728x90");
+        </script>
+      </div>
+      <!-- / BOX PUBLICIDADE 2 -->
 
         </div>
         <!-- /CONTEUDO PAGINA -->
+        
       </div>
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-
-

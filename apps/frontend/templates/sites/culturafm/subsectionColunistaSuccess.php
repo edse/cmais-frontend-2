@@ -1,7 +1,9 @@
 <?php
 if(isset($pager)){
   if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
+    //header("Location: ".$pager->getCurrent()->retriveUrl());
+    $assets = $pager->getResults();
+    header("Location: ". url_for('homepage') . $site->getSlug() . '/colunistas/' . $assets[0]->getSlug());
     die();
   }  
 } 

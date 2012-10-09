@@ -31,9 +31,52 @@
       <div class="modal-footer">
         <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-        <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"></a>
+        <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"/>
       </div>
     </form> 
     </div>              
   </div>
   <!--/ Modal Feedback-->
+  <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
+  <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    
+    var validator = $('#form-feedback').validate({
+      rules:{
+        nome:{
+          required: true,
+          minlength: 2
+        },
+        email:{
+          required: true,
+          email: true
+        },
+        mensagem:{
+          required: true,
+          minlength: 3
+        }
+      },
+      highlight: function(label) {
+        $(label).closest('.control-group').addClass('error');
+      },
+      success: function(label){
+        label.text('OK!').addClass('valid').closest('.control-group').addClass('success');
+      },
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-indicacao").serialize(),
+          beforeSend: function(){
+            $('#loader2').show();
+            $('.btn-enviar').hide();
+          },
+          success: function(data){
+            window.location.href="#";
+          }
+        });         
+      }
+    });
+  });
+</script>

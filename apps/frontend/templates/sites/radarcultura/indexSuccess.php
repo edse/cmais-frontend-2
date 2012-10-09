@@ -122,6 +122,7 @@
 
         <?php if(isset($displays['na-rede'])):?>
           <?php if(count($displays['na-rede']) > 0): ?>
+          <?php $d = $displays['na-rede'][0]; ?>
           <div class="span4">
               <div class="page-header">
                 <h3>Na rede<small> comentários dos usuários</small></h3>

@@ -79,75 +79,91 @@ function distance_of_time_in_words($from_time, $to_time = null, $include_seconds
   {
     if (!$include_seconds)
     {
-      $string = $distance_in_minutes == 0 ? 'less than a minute' : '1 minute';
+      //$string = $distance_in_minutes == 0 ? 'less than a minute' : '1 minute';
+      $string = $distance_in_minutes == 0 ? 'há menos de um minuto' : 'há um minuto';
     }
     else
     {
       if ($distance_in_seconds <= 5)
       {
-        $string = 'less than 5 seconds';
+        //$string = 'less than 5 seconds';
+        $string = 'há menos de 5 segundos';
       }
       else if ($distance_in_seconds >= 6 && $distance_in_seconds <= 10)
       {
-        $string = 'less than 10 seconds';
+        //$string = 'less than 10 seconds';
+        $string = 'há menos de 10 segundos';
       }
       else if ($distance_in_seconds >= 11 && $distance_in_seconds <= 20)
       {
-        $string = 'less than 20 seconds';
+        //$string = 'less than 20 seconds';
+        $string = 'há menos de 20 segundos';
       }
       else if ($distance_in_seconds >= 21 && $distance_in_seconds <= 40)
       {
-        $string = 'half a minute';
+        //$string = 'half a minute';
+        //$string = 'há menos de meio minuto';
+        $string = 'há menos de 30 segundos';
       }
       else if ($distance_in_seconds >= 41 && $distance_in_seconds <= 59)
       {
-        $string = 'less than a minute';
+        //$string = 'less than a minute';
+        $string = 'há menos de 1 minuto';
       }
       else
       {
-        $string = '1 minute';
+        //$string = '1 minute';
+        $string = 'há 1 minuto';
       }
     }
   }
   else if ($distance_in_minutes >= 2 && $distance_in_minutes <= 44)
   {
-    $string = '%minutes% minutes';
+    $string = 'há %minutes% minutos';
     $parameters['%minutes%'] = $distance_in_minutes;
   }
   else if ($distance_in_minutes >= 45 && $distance_in_minutes <= 89)
   {
-    $string = 'about 1 hour';
+    //$string = 'about 1 hour';
+    $string = 'há cerca de 1 hora';
   }
   else if ($distance_in_minutes >= 90 && $distance_in_minutes <= 1439)
   {
-    $string = 'about %hours% hours';
+    //$string = 'about %hours% hours';
+    $string = 'há cerca de %hours% horas';
     $parameters['%hours%'] = round($distance_in_minutes / 60);
   }
   else if ($distance_in_minutes >= 1440 && $distance_in_minutes <= 2879)
   {
-    $string = '1 day';
+    //$string = '1 day';
+    $string = 'há 1 dia';
   }
   else if ($distance_in_minutes >= 2880 && $distance_in_minutes <= 43199)
   {
-    $string = '%days% days';
+    //$string = '%days% days';
+    $string = 'há %days% dias';
     $parameters['%days%'] = round($distance_in_minutes / 1440);
   }
   else if ($distance_in_minutes >= 43200 && $distance_in_minutes <= 86399)
   {
-    $string = 'about 1 month';
+    //$string = 'about 1 month';
+    $string = 'há cerca de 1 mês';
   }
   else if ($distance_in_minutes >= 86400 && $distance_in_minutes <= 525959)
   {
-    $string = '%months% months';
+    //$string = '%months% months';
+    $string = '%months% meses';
     $parameters['%months%'] = round($distance_in_minutes / 43200);
   }
   else if ($distance_in_minutes >= 525960 && $distance_in_minutes <= 1051919)
   {
-    $string = 'about 1 year';
+    //$string = 'about 1 year';
+    $string = 'há cerca de 1 ano';
   }
   else
   {
-    $string = 'over %years% years';
+    //$string = 'over %years% years';
+    $string = 'há mais de %years% anos';
     $parameters['%years%'] = floor($distance_in_minutes / 525960);
   }
 
