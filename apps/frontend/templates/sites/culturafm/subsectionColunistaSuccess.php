@@ -2,7 +2,7 @@
 if(isset($pager)){
   if($pager->count() == 1){
     $assets = $pager->getResults();
-    header("Location: ". url_for('homepage') . '/colunistas/' . $section->getSlug() . '/' . $assets[0]->getSlug());
+    header("Location: http://culturafm.cmais.com.br/" . 'colunistas/' . $section->getSlug() . '/' . $assets[0]->getSlug());
     die();
   }  
 } 
