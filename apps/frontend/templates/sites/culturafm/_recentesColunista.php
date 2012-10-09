@@ -27,7 +27,7 @@
 
 							<ul class="recentes">
 								<?php foreach($assets as $d): ?>
-								<li><a href="<?php echo $d->retriveUrl() ?>" name="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a></li>
+                <li><a href="<?php url_for('homepage') . 'colunistas/' . $section->getSlug() . '/' . $d->getSlug() ?>" name="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>
