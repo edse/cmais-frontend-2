@@ -1185,8 +1185,10 @@ class _sectionActions extends sfActions
             
     }
 		if($this->section->Site->getSlug() == "radarcultura") {
-			if($this->section->getSlug() == "playlist")
-				$pagelimit = 20;
+      if($this->section->getSlug() == "playlist")
+        $pagelimit = 20;
+      else if($this->section->getSlug() == "musicas")
+        $pagelimit = 20;
 		}
     if(!isset($pagelimit))
       $pagelimit = 9;
@@ -1203,7 +1205,7 @@ class _sectionActions extends sfActions
           $sectionSlug = "musicas";
         }
         
-        $pagelimit = 30;
+        $pagelimit = 60;
         $this->pager = new sfDoctrinePager('', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
