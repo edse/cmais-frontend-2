@@ -150,8 +150,14 @@
             <hr />
           </div>
           <!-- /comentario facebook -->
-          
-          <a class="voltar" href="#">&lsaquo;&lsaquo; voltar</a>
+          <?php
+            $sections = $asset->getSections();
+            $section = $sections[0];
+            $assets = $section->getAssets();
+          ?>
+          <?php if(count($assets) > 1): ?> 
+          <a class="voltar" href="javascript:history.back()">&lsaquo;&lsaquo; voltar</a>
+          <?php endif; ?>
         </div>
         <!--/ESQUERDA-->
         <!-- DIREITA -->

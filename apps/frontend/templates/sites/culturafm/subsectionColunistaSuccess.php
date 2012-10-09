@@ -1,9 +1,8 @@
 <?php
 if(isset($pager)){
   if($pager->count() == 1){
-    //header("Location: ".$pager->getCurrent()->retriveUrl());
     $assets = $pager->getResults();
-    header("Location: ". url_for('homepage') . $site->getSlug() . '/colunistas/' . $assets[0]->getSlug());
+    header("Location: http://culturafm.cmais.com.br/" . 'colunistas/' . $section->getSlug() . '/' . $assets[0]->getSlug());
     die();
   }  
 } 
@@ -13,14 +12,10 @@ if(isset($pager)){
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
 <script type="text/javascript">
 	$(function() {
-
 		$('.m-colunistas, .submenu-interna').mouseover(function() {
-
 			$('.toggle-menu').slideDown("fast");
-
 		});
 		$('.m-colunistas, .submenu-interna').mouseleave(function() {
-
 			$('.toggle-menu').slideUp("fast");
 		});
 	});
