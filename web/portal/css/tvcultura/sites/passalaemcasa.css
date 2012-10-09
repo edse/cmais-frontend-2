@@ -29,5 +29,8 @@ span.faixa {    background: url("/portal/images/capaPrograma/passalaemcasa/bgtit
 .noticiaTxt p { margin-bottom:20px; } 
 .comentarios p.btn-comentarios {    background: url("/portal/images/capaPrograma/passalaemcasa/bg-balao.png") no-repeat scroll 0 0 transparent;    float: left;    height: 35px;    width: 147px;}
 .comentarios p.btn-comentarios span { color: #FFFFFF;    float: left;    font-size: 16px;    margin: 5px 0 0 19px;    text-transform: uppercase; }
-
-
+.assinatura .inf { width: 240px; }
+.cp-sembg { width: 400px; float:right; }
+.box-interna .box-compartilhar { display:none; }
+.uma-coluna .conteudo li { height:auto;}
+.pag-bola { display:none; }
