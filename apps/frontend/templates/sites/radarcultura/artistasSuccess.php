@@ -168,7 +168,7 @@ function slugfy($string){
                 <?php
                 $counter = 0; 
                 foreach($pager->getResults() as $d):
-                  if($counter >= 15)
+                  if($counter >= 30)
                     break;
                   $counter++;
                   ?>
@@ -195,7 +195,7 @@ function slugfy($string){
                 $counter = 0;
                 foreach($pager->getResults() as $d):
                   $counter++;
-                  if($counter > 15):
+                  if($counter > 30):
                   ?>
                   <tr>
                     <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
