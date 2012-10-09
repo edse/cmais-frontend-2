@@ -1205,7 +1205,7 @@ class _sectionActions extends sfActions
           $sectionSlug = "musicas";
         }
         
-        $pagelimit = 30;
+        $pagelimit = 60;
         $this->pager = new sfDoctrinePager('', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
