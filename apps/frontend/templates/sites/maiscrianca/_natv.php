@@ -1,54 +1,3 @@
-     <!--div class="row-fluid destaques">
-      <div class="span12">
-        <div class="span3 h2"><h2>Na TV</h2><span></span></div>
-        <div id="myCarousel" class="carousel slide ">
-          
-          <div class="carousel-inner row-fluid span12">
-            <div class="active item">
-              <ul class="row-fluid span12">
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-              </ul>
-            </div>
-             <div class=" item">
-              <ul class="row-fluid span12">
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb2.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-              </ul>
-            </div>
-             <div class=" item">
-              <ul class="row-fluid span12">
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb3.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-                <li class="span2"><a href="#" title="thumb" ><img src="/portal/images/capaPrograma/maiscrianca2/thumb.jpg" alt="Quintal da Cultura" /></a></li>
-              </ul>
-            </div>
-           
-          </div>
-          
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
-        </div>
-        <div class="pontilhado row-fluid span12"></div>
-      </div>
-    </div-->
 <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -58,21 +7,6 @@ $(function(){
     });
 });
 </script> 
-
-<style type="text/css">
-  .carrossel.span12 { margin:0; }
-  .jcarousel-clip.jcarousel-clip-horizontal{ margin-left:46px; }
-  .carrossel li a,
-  .carrossel .jcarousel-item a img,
-  .carrossel .jcarousel-item { width: 90px; height:auto;}
-  .carrossel .jcarousel-item { width:90px; height:55px; overflow:hidden; }
-  .carrossel .jcarousel-item-horizontal { margin:0 10px 0 0; }
-  .carrossel .jcarousel-prev,
-  .carrossel .jcarousel-next {  background:url(/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width:36px; height:55px;  top:0;  }
-  .carrossel .jcarousel-prev { left:0; }
-  .carrossel .jcarousel-next { right:0; background-position:-36px 0; }
- 
-</style>
 
      <div class="row-fluid destaques">
       <div class="span12">

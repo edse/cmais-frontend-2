@@ -165,12 +165,24 @@ p { color:#333; font-size: 14px;}
 
 .nav-tabs > .atividades.active span, 
 .nav-tabs > .atividades:hover span.ativo { margin-left:-13px\9;} 
-
+/* /hacks ie */
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
   .naweb ul li,
   .naweb ul li.last { clear:both; float:left;}
    } }
-
-/* /hacks ie */
+ 
+/* natv */
+.carrossel.span12 { margin:0; }
+.jcarousel-clip.jcarousel-clip-horizontal{ margin-left:40px; width:900px; }
+.carrossel li a,
+.carrossel .jcarousel-item a img,
+.carrossel .jcarousel-item { width: 90px; height:auto;}
+.carrossel .jcarousel-item { width:90px; height:55px; overflow:hidden; }
+.carrossel .jcarousel-item-horizontal { margin:0 10px 0 0; }
+.carrossel .jcarousel-prev,
+.carrossel .jcarousel-next {  background:url(/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width:36px; height:55px;  top:0;  }
+.carrossel .jcarousel-prev { left:0; }
+.carrossel .jcarousel-next { right:0; background-position:-36px 0; }
+/* /natv */
