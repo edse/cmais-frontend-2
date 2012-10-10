@@ -1,6 +1,25 @@
-
+      <!--logo-->
+      <div class="row-fluid logo">
+        <div class="span4">
+          <a href="http://radarcultura.cmais.com.br/" title="Radar Cultura">
+            <img src="/portal/images/capaPrograma/radarcultura/logo-radar-novo.png" alt="Radar Cultura" />
+          </a>
+        </div>
+        <div class="span8 share">
+          <div class="google">
+            <g:plusone size="medium" count="false"></g:plusone>
+          </div>
+          <div class="fb">
+            <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          </div>
+          <div class="twt">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="false" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+          </div>
+        </div>  
+      </div>  
+      <!--logo-->
       <!-- menu --->
-      <div class="span10 menu-principal">
+      <div class="row-fluid menu-principal">
         
         <?php if(count($siteSections) > 0): ?>        
         <ul class="nav menu-principal nav-tabs">
@@ -34,47 +53,11 @@
        </ul>
        <?php endif; ?>
        
-       <div class="redes-share pull-right">
-         <div class="twitter-share">
-           <!--twitter-->
-           <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-size="medium">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-           <!--twitter-->
-         </div>
-         <div class="googleplus-share">
-           <!--google plus-->
-           <!-- Place this tag where you want the +1 button to render. -->
-            <div class="g-plusone" data-size="tall"></div>
-            
-            <!-- Place this tag after the last +1 button tag. -->
-            <script type="text/javascript">
-              window.___gcfg = {lang: 'pt-BR'};
-            
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-           <!--google plus-->
-         </div>
-
-           
-           <div class="facebook-share">  
-           <!--face-->  
-           <div id="fb-root"></div>
-           
-           <div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
-           <!--/face-->
-         </div>
-
-       </div>
+       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;">
+         <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
+       </a>
+       
      </div>
      <!-- menu --->
-     <!-- logo --->
-     <div class="logo pull-right">
-        <img src="/portal/images/capaPrograma/radarcultura/Logo-Radar.jpg" alt="Radar Cultura"/>
-        <a href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;" class="btn btn-inverse btn-mini"><i class="icon-music icon-white"></i> Rádio Cultura Brasil  </a>
-     </div>  
-     <!-- logo --->
+
      

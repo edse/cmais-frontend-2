@@ -5,10 +5,12 @@ $respostas = Doctrine_Query::create()
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
 
-$imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-$img_a = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
-$imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-$img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+$imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+if($imgs)
+  $img_a = $imgs[0]->AssetVideo->getYoutubeId();
+$imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+if($imgs)
+  $img_b = $imgs[0]->AssetVideo->getYoutubeId();
 ?>
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
@@ -184,7 +186,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
             <!--talentodesobra PALCO-->
             <div class="palco talentodesobra">
-              <div class="categoria"><span></span><h3>Categoria: <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer() ?></h3><span class="right"></span></div>             
+              <div class="categoria"><span></span><h3>Categoria: <?php echo $displays["enquete"][0]->Asset->getTitle() ?></h3><span class="right"></span></div>             
               <div class="x">X</div>
               <!--CANDITADO A-->
               <div id="ca" class="talentodesobra candidato candidatoA candidato1" name="1">
@@ -197,9 +199,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                   <!--FOTO A-->
                   <div class="foto">
                     <!--img src="<?php echo $img_a ?>"-->
-                    <iframe width="450" height="253" src="http://www.youtube.com/embed/3M5fLz3dchY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
-                    
-                    
+                    <iframe width="450" height="253" src="http://www.youtube.com/embed/<?php echo $img_a?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <!--/FOTO A-->
                   
@@ -227,12 +227,10 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                 <!--BOTAO-->
                 <a href="javascript:;" class="voto" rel="<?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $respostas[1]->Asset->AssetAnswer->getId()?>">
                 
-                  
-                  
                   <!--FOTO A-->
                   <div class="foto">
                     <!--img src="<?php echo $img_b ?>"-->
-                    <iframe width="450" height="253" src="http://www.youtube.com/embed/3M5fLz3dchY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="450" height="253" src="http://www.youtube.com/embed/<?php echo $img_b?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <!--/FOTO A-->
                   
