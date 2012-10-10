@@ -6,9 +6,11 @@ $respostas = Doctrine_Query::create()
   ->execute();
 
 $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-$img_a = $imgs[0]->AssetVideo->getYoutubeId();
+if($imgs)
+  $img_a = $imgs[0]->AssetVideo->getYoutubeId();
 $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-$img_b = $imgs[0]->AssetVideo->getYoutubeId();
+if($imgs)
+  $img_b = $imgs[0]->AssetVideo->getYoutubeId();
 ?>
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
