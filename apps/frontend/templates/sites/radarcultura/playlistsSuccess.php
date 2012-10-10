@@ -60,7 +60,7 @@
                   <th>Nome</th>
                   <th>Autor</th>
                   <th style="text-align: right;"></th>
-                </tr>
+                </tr> 
               </thead>
             <?php if(count($pager) > 0): ?>
               <?php
