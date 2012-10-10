@@ -110,6 +110,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.musica tr td{width:240px;padding:3px;}
 .direita h4{color:black\9;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
+.direita.content .banner-radio{margin-top:15px;}
 
 
 /* musica */
