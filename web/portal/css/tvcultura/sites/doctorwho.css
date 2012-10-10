@@ -5,7 +5,7 @@
 }
 */
 .bg-doctorWho{
-	background: url(../../../images/capaPrograma/doctorwho/bg-doutorquem.jpg) center top no-repeat;
+	background: url(../../../images/capaPrograma/doctorwho/bg-doutorquem.jpg) center top repeat;
 	height: 835px;
 }
 .bg-doctorWho #barra-site .redes{
