@@ -50,10 +50,10 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav.menu-principal .dropdown-menu > li:hover > a  {background: none; color:#999999}
 .nav.menu-principal .dropdown.open > a{color:#FFF;}
 .span8.menu-principal{position:relative;}
-.breadcrumb {padding: 0px 15px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
-.breadcrumb a{color:#00b4d5; font-weight: bold;}
+.breadcrumb {padding: 0px 15px;margin: 0 0 10px;list-style: none;background: none;font-size: 10px;}
+.breadcrumb a{color:#00b4d5;}
 .breadcrumb .divider {padding: 0 3px;color: #00b4d5;position: relative;bottom:2px;}
-.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; font-weight: bold; float:left\9;}
+.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; float:left\9;}
 .breadcrumb{margin:0px;}
 
 /* home */
