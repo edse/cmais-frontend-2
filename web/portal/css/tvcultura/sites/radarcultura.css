@@ -53,7 +53,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .breadcrumb {padding: 0px 15px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
 .breadcrumb a{color:#00b4d5; font-weight: bold;}
 .breadcrumb .divider {padding: 0 3px;color: #00b4d5;position: relative;bottom:2px;}
-.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; font-weight: bold;}
+.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; font-weight: bold; float:left\9;}
 .breadcrumb{margin:0px;}
 
 /* home */
