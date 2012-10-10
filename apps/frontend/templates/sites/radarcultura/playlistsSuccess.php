@@ -31,9 +31,9 @@
       <div id="row-fluid">
         <!--Titulo-->
         <div class="page-header musicas">
-          <h1>
-            <?php echo $section?> <small></small>
-          </h1>
+         <h1>
+           <?php echo $section->getTitle()?> <small><?php echo $section->getDescription() ?></small>
+         </h1>
 
           <!--contagem-->
           <div class="pull-right">
@@ -69,7 +69,7 @@
                 ?>
                 <tr>
                   <td><?php echo $d->getTitle(); ?></td>
-                  <td><?php echo $d->AssetContent->getHeadline(); ?></td>
+                  <td><?php echo $d->AssetContent->getAuthor(); ?></td>
                   <td><a href="<?php echo url_for('@homepage') ?><?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
                 </tr>
               <?php endforeach; ?>
