@@ -12,9 +12,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* /topo cmais desktop */
 
 /* geral */
-.alert{background-color:#eee; border:1px solid #ccc; padding:15px 14px 15px 14px;}
+.alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
-.banner-radio {margin:0px auto 20px;padding:0px 4px 4px 8px;min-width:300px;max-width: 728px; }
+.banner-radio {margin:0px auto 20px;padding:0px 4px 0px 8px;min-width:300px;max-width: 728px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
 .redes .direita{margin-top:20px;}
 .thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px;}
@@ -50,6 +50,11 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav.menu-principal .dropdown-menu > li:hover > a  {background: none; color:#999999}
 .nav.menu-principal .dropdown.open > a{color:#FFF;}
 .span8.menu-principal{position:relative;}
+.breadcrumb {padding: 0px 15px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
+.breadcrumb a{color:#00b4d5; font-weight: bold;}
+.breadcrumb .divider {padding: 0 3px;color: #00b4d5;position: relative;bottom:2px;}
+.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; font-weight: bold;}
+.breadcrumb{margin:0px;}
 
 /* home */
 .span10.radarIndex{max-width:760px\9;padding:10px;}
@@ -74,7 +79,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
 .redes .span4{width:300px\9;position:relative;}
-.redes .span4.thumbnail{width:260px\9;position:relative;}
+.redes .span4.thumbnail{width:270px\9;position:relative;}
 .redes .span6{width:300px\9;position:relative;}
 .redes h4{color:black;}
 .linha-lateral{border-right: 1px #eee solid; height:225px;float:right; position: absolute; top:16px; right:-10px;}
@@ -106,6 +111,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .direita h4{color:black\9;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
 
+
 /* musica */
 .musica h1{max-width:825px; float:left;color:black;}
 .popover {width: 350px;}
@@ -128,3 +134,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-body {max-height: 440px;}
 .modal-footer{margin-top:75px;clear:both\9;}
+
+/* content */
+.page-header.content {padding-bottom: 5px;margin: 0px 0 20px;border-bottom: 1px solid #EEE;}
+.page-header.content h1{margin-bottom:0px;}
+div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
