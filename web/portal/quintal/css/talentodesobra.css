@@ -9,7 +9,7 @@ p{font-family:Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold; te
 .candidato .foto{position: absolute;top: 15px;left: 0;width:450px;height: 253px;overflow: hidden;}
 .candidato .votar {    background: #ffff05;    bottom: 10px;    height: 30px;    left: 20px;    position: absolute;    width: 410px;  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
 .candidato .porcento{width:450px; position:absolute; bottom:0;}
-.candidato .porcento p{ height:52px; line-height: 52px; font-size: 50px; color:#ffff05;}
+.candidato .porcento p{ height:52px; line-height: 52px; font-size: 50px; color:#ffff05; margin-top:0;}
 
 .palco .confirma{width:450px;height:320px;position: absolute;bottom: 45px;background-color:#f8ec34; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .confirma .texto p{width: 256px;margin:0 0 0 0; padding:2px 0; font-size:24px;line-height: 26px;}
