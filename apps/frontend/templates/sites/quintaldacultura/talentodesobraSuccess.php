@@ -95,7 +95,7 @@ if($imgs)
           $('#pConfirma').addClass('tCentro').attr("id", "pAtivo");
           $('#pAtivo').removeClass('tCentro').attr("id", "pConfirma");
           
-          <?php echo $respostas[0]->Asset->getId()?>
+          <?php //echo $respostas[0]->Asset->getId()?>
           
         }
       });
