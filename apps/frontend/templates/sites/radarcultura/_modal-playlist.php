@@ -115,6 +115,12 @@
               <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
               <script type="text/javascript">
               $(document).ready(function(){
+
+                $('#socialBtn').click(function(){ 
+                  $('html, body').animate({
+                    scrollTop: $("#guia-topo").offset().top
+                  }, "slow");
+                });
                 
                 var validator = $('#form-indicacao').validate({
                   rules:{
