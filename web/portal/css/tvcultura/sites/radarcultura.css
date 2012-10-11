@@ -114,6 +114,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.artista h4{color:black;}
 .table.artista tr td{max-width: 312px}
 .pagination.artista {height: 40px;margin: 60px 0 40px 0;}
+.pagination.artista a{color: #00b4d8;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */

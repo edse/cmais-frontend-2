@@ -152,7 +152,7 @@ function slugfy($string){
             <?php if(isset($letter)):?>
               <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> ARTISTAS </small>
+              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
             <?php endif; ?>
           
           </div>
