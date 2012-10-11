@@ -1,8 +1,13 @@
 body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal.jpg) repeat-x ; position:relative; }
 .bg {  background:url(/portal/images/capaPrograma/maiscrianca2/bg.png) no-repeat bottom left; width:1444px; height:676px; position:absolute; bottom:474px; left:0; }
-.header { /*width:1088px;*/ margin:0 auto; }
-.logo {/* background:url(/portal/images/capaPrograma/maiscrianca2/logo.jpg) no-repeat 0 4px;*/ max-width:1088px; max-height:212px; margin:0 auto; }
+.header { margin:0 auto;  margin-top:3px; }
+.logo { max-width:1088px; max-height:212px; margin:0 auto;float:none; }
+.logo a { max-width:1088px; max-height:212px;  } 
+.logo a img,
+.logo a {display:block; overflow:hidden;}
+
 .container { z-index: 100; position:relative; min-height:1240px; }
+
 #guia-topo ul,ol { margin:0; }
 .container/*, .navbar-fixed-top .container, .navbar-fixed-bottom .container*/ { max-width:970px; padding-left:40px; }
 p { color:#333; font-size: 14px;}
@@ -189,10 +194,7 @@ p { color:#333; font-size: 14px;}
   .naweb ul li,
   .naweb ul li.last { clear:both; float:left;}
    } }
-   
-
-
-
+  
 
 /* natv */
 .carrossel.span12 { margin:0; }
