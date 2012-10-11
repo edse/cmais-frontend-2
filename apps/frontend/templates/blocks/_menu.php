@@ -49,7 +49,7 @@
       
       <!--menu editorias-->
       <ul class="abas">
-       <li class="m-infantil" style="float:right; margin:0 0px 0 0 !important;"><a title="+ Criança" href="http://cmais.com.br/infantil">Infantil</a></li>
+       <li class="m-infantil" style="float:right; margin:0 0px 0 0 !important;"><a title="Joguinhos + Criança" href="http://cmais.com.br/infantil">Joguinhos</a></li>
        <li class="m-musica" style="float:right"><a title="Música" href="http://cmais.com.br/musica">Música</a></li>
        <li class="m-educacao" style="float:right"><a title="Educação" href="http://cmais.com.br/educacao">Educação</a></li>
        <li class="m-arte-e-cultura " style="float:right"><a title="Arte &amp; Cultura" href="http://cmais.com.br/arte-e-cultura">Arte &amp; Cultura</a></li>
@@ -65,7 +65,7 @@
         <?php if($_REQUEST['filter']): ?>
         <input type="hidden" name="filter" id="filter" value="<?php echo $_REQUEST['filter']; ?>" />
         <?php endif; ?>
-        <input class="ipt-submit" type="submit" value="BUSCAR" />
+        <input class="ipt-submit" type="submit" value="OK" />
       </form>
       <!-- /Busca Portal -->  
          
