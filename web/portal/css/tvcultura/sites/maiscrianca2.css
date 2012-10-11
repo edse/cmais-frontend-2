@@ -104,7 +104,7 @@ p { color:#333; font-size: 14px;}
 /* /HOME */
 
 /* VOCE SABIA*/
-.vcsabia ul li.span4  { margin-left:0; margin-bottom:10px; }
+.vcsabia ul li.span4  { margin-left:0; margin-bottom:10px; min-height: 250px; }
 .vcsabia ul li.span4.last { margin-right:0;}
 .vcsabia ul li.span4 a { color:#333; text-align:left; font-size:16px; font-weight:bold; line-height:30px; }
 .destaques .h2.acento { padding-top:10px;}
@@ -113,20 +113,37 @@ p { color:#333; font-size: 14px;}
 .voltar .icon-chevron-left { color:#ff6525; font-size:15px; margin-top:2px;  }
 
 .pagination ul { border:none; box-shadow:none; border-radius:0; }
-.pagination .disabled a,
-.pagination .active a,
-.pagination .active a,
-.pagination .disabled a { background:#ffce2b; border:none; color:#ff6525; cursor: pointer; }
+.pagination ul > li > a, .pagination ul > li > span,
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span,
+.pagination ul > li { background:#ffce2b; border:none; color:#ff6525; cursor: pointer; border-radius:3px; }
+.pagination ul > li > a, .pagination ul > li > span { border:none; }
+.pagination ul > li > a:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span
 .pagination .active a:hover,
-.pagination .disabled a:hover { background:#ff6525; border:none; color:#ffce2b; }
+.pagination .disabled a:hover { background:#ff6525; border:none; color:#ffce2b; border-radius:3px; }
 .pagination .active a,
 .pagination li:first-child a,
 .pagination li:last-child a { border-radius: 3px; }
-.pagination ul li { margin-right:10px; }
-.pagination .anterior a, 
-.pagination .proxima a { background-repeat:no-repeat; background-position: 5px 12px; }
-.pagination .anterior a { background-image:url(/portal/images/capaPrograma/maiscrianca2/anterior.png); padding-left:20px;   }
-.pagination .proxima a { background-image:url(/portal/images/capaPrograma/maiscrianca2/proxima.png); background-position:70px 12px; padding-right:20px;  }
+.pagination ul li { margin-right:10px; border-radius:3px; }
+
+.pagination .anterior a,
+.pagination .anterior a:hover,
+.pagination ul .disabled.anterior a,
+.pagination .proxima a,
+.pagination .proxima a:hover,
+.pagination ul .disabled.proxima a { background-color:#ffce2b; background-repeat:no-repeat; border-radius: 3px; cursor: pointer; }
+
+.pagination .anterior a,
+.pagination .anterior a:hover,
+.pagination ul .disabled.anterior a { background-image:url(/portal/images/capaPrograma/maiscrianca2/anterior.png); background-position:5px 8px; padding-left:20px;} 
+.pagination .proxima a,
+.pagination .proxima a:hover,
+.pagination ul .disabled.proxima a { background-image:url(/portal/images/capaPrograma/maiscrianca2/proxima.png); background-position:85px 8px;}
+.pagination li a,
+.pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {  color:#ff6525; font-size:15px; text-transform:uppercase; padding-right:20px;} 
+.pagination ul > li > a, .pagination ul > li > span { line-height:30px;} 
+.vcsabia ul li.span4 { height:250px;} 
 /* /VOCE SABIA*/
 
 /* CONTEUDO */
@@ -172,7 +189,11 @@ p { color:#333; font-size: 14px;}
   .naweb ul li,
   .naweb ul li.last { clear:both; float:left;}
    } }
- 
+   
+
+
+
+
 /* natv */
 .carrossel.span12 { margin:0; }
 .jcarousel-clip.jcarousel-clip-horizontal{ margin-left:40px; width:900px; }
