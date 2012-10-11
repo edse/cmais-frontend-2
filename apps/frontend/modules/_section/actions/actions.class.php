@@ -1004,8 +1004,7 @@ class _sectionActions extends sfActions
       }
     }
     elseif($this->site->slug == 'maiscrianca'){
-      //if(in_array($sectionSlug, array('index','home','vocesabia','recadinhos'))){
-      if(in_array($sectionSlug, array('recadinhos'))){ 
+      if(in_array($sectionSlug, array('index','home','recadinhos'))){ 
         $this->setLayout(false);
       }
     }
