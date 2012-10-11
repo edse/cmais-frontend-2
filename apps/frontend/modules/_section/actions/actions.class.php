@@ -1087,7 +1087,7 @@ class _sectionActions extends sfActions
       else
         $title = 'cmais+ O portal de conteúdo da Cultura';
     }
-    if($title == "")
+    if(!isset($title))
       $title = 'cmais+ O portal de conteúdo da Cultura';
 
     $this->getResponse()->setTitle($title, false);
