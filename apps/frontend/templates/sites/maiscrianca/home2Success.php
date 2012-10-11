@@ -14,7 +14,7 @@
 
 <div class="bg"></div>
   <div class="header">
-    <h1 class="logo"><img class="row-fluid span11" src="/portal/images/capaPrograma/maiscrianca2/logo.jpg" alt="+criança" /></h1>
+    <h1 class="logo span12"><a href="<?php echo $site->retriveUrl() ?>" title="+Criança"><img class="row-fluid span12" src="/portal/images/capaPrograma/maiscrianca2/logo.jpg" alt="+criança" /></a></h1>
   </div>
   <div class="container">
     
