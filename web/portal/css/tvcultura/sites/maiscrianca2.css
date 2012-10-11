@@ -3,6 +3,7 @@ body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal
 /* TOPO PORTAL*/
 h1 { margin-top:0;} 
 #menu-portal-2 li a { padding-top:0} 
+#menu-portal-2 .busca-portal .ipt-txt { border-radius:0; margin: 0;    padding: 0 0 0 30px;}
 /*/TOPO PORTAL*/ 
 
 .header { margin:0 auto;  margin-top:3px; }
