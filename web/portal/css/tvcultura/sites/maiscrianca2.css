@@ -1,8 +1,19 @@
 body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal.jpg) repeat-x ; position:relative; }
 .bg {  background:url(/portal/images/capaPrograma/maiscrianca2/bg.png) no-repeat bottom left; width:1444px; height:676px; position:absolute; bottom:474px; left:0; }
-.header { /*width:1088px;*/ margin:0 auto; }
-.logo {/* background:url(/portal/images/capaPrograma/maiscrianca2/logo.jpg) no-repeat 0 4px;*/ max-width:1088px; max-height:212px; margin:0 auto; }
+/* TOPO PORTAL*/
+h1 { margin-top:0;} 
+#menu-portal-2 li a { padding-top:0} 
+/*/TOPO PORTAL*/ 
+
+.header { margin:0 auto;  margin-top:3px; }
+.logo { max-width:1088px; max-height:212px; margin:0 auto;float:none; }
+.logo a { max-width:1088px; max-height:212px;  } 
+.logo a img,
+.logo a {display:block; overflow:hidden;}
+
+
 .container { z-index: 100; position:relative; min-height:1240px; }
+
 #guia-topo ul,ol { margin:0; }
 .container/*, .navbar-fixed-top .container, .navbar-fixed-bottom .container*/ { max-width:970px; padding-left:40px; }
 p { color:#333; font-size: 14px;}
@@ -42,7 +53,9 @@ p { color:#333; font-size: 14px;}
 .tab-content { background:#ffce2b; }
 #menu .lista { margin:0 0 0 60px; padding:20px 0; overflow:hidden;  }
 #menu .lista li { margin:0 0 10px 10px; min-width: 210px;  }
+#menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden;} 
 #menu .lista li img { border:5px solid transparent; }
+#menu .lista li a:hover {color:#ff6733; text-decoration:none;}
 #menu .lista li:hover img { border-color:#ff6733; }
 #menu .tab-content { border-radius:0 15px 15px 15px; -moz-border-radius: 0 15px 15px 15px; -webkit-border-radius:0 15px 15px 15px;  }
 .row-fluid.pontilhado,
@@ -50,9 +63,12 @@ p { color:#333; font-size: 14px;}
 /* /menu*/
 
 /* destaques*/
-.destaques .h2 { clear: both;    display: block;    float: left;    margin: 20px 0; }
+.destaques .h2 { clear: both;    display: block;    float: left; margin-top:10px; }
+.destaques .span4 { margin-top:20px;}
 .destaques .h2 h2,
 .destaques .h2 h2 a { font-size:30px; text-transform:uppercase; color:#ff6733; background:#ffce2b; margin:0; text-align:left; padding:0; line-height:23px; float: left; }
+.destaques.rodape .h2 h2,
+.destaques.rodape .h2 h2 a { background:none;}
 .destaques .h2 span { background:url(/portal/images/capaPrograma/maiscrianca2/detalhe2.png) no-repeat; width:71px; height: 23px; display:block; float:left; }
 .destaques ul { clear: both; margin-left:0; }
 .destaques ul li { float:left; margin-right:21px; margin-left:0; }
@@ -60,6 +76,8 @@ p { color:#333; font-size: 14px;}
 .naweb ul li.last { margin:0; margin-top:25px; float:right; }
 .destaques ul li a { display: block; }
 
+.box-conteudo .row-fluid span,
+.box-conteudo .row-fluid [class*="span"]:first-child { text-align:left !important;}
 
 #myCarousel { clear: both; overflow:hidden; }
 #myCarousel ul { margin:0 0 0 62px; }
@@ -72,29 +90,17 @@ p { color:#333; font-size: 14px;}
 .destaques p,
 .destaques a { text-align:left; }
 .destaques.rodape .h2 { margin-bottom:10px;  }
-<<<<<<< HEAD
 .destaques.rodape .h2 h2,
-.destaques.rodape .h2 h2 a { background:none; color:#ffed5a;}
-=======
-.destaques.rodape .h2 h2 { background:none; color:#ffed5a;}
-.destaques.rodape .h2 h2 a { background:none; color:#ffed5a; font-size: 30px; text-decoration: none}
-.destaques.rodape .h2 h2 a:hover { text-decoration: underline}
->>>>>>> 426a476b9718f78c403d234ce8f5d0b1ee525feb
+.destaques.rodape .h2 h2 a { background:none; color:#333; margin-left:2px;}
+.destaques.rodape .h2 h2 a:hover { text-decoration:none;} 
 .destaques .carousel-inner { margin-left:56px; }
-.destaques.rodape .descricao { color:#333; font-weight:bold; font-size:16px; background:#fff; display: block; text-align:left; padding:6px; }
+.destaques.rodape .descricao { color:#333; font-weight:bold; font-size:16px; display: block; text-align:left; padding:6px; }
 .destaques .span4 { overflow:hidden;  }
 .destaques.rodape .pais a:hover p,
-<<<<<<< HEAD
 .destaques.rodape .pais h2,
-.destaques.rodape .pais h2 a { color:#ff6525; }
-=======
-.destaques.rodape .pais h2 { color:#ff6525; }
-.destaques.rodape .pais h2 a { color:#ff6525; font-size: 30px; text-decoration: none }
-.destaques.rodape .pais h2 a:hover { text-decoration: underline }
->>>>>>> 426a476b9718f78c403d234ce8f5d0b1ee525feb
+.destaques.rodape .pais h2 a { color:#333; }
 .destaques.rodape .pais a p { color:#333; }
-.destaques.rodape .descricao,
-.destaques.rodape .pais ul { background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat;  }
+.destaques.rodape .span4 { background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; height:283px;  }
 .destaques.rodape .pais ul { padding-bottom:10px; }
 .destaques.rodape .pais li img { float:left; margin:0 0 0 10px; }
 .destaques.rodape .pais li { margin:10px 0 0 0; padding:0 0 10px 0; background: url(/portal/images/capaPrograma/maiscrianca2/borda-noticia.png)repeat-x bottom; }
@@ -120,8 +126,9 @@ p { color:#333; font-size: 14px;}
 
 /* VOCE SABIA*/
 .vcsabia ul li.span4  { margin-left:0; margin-bottom:10px; min-height: 250px; }
-.vcsabia ul li.span4.last { margin-right:0;}
-.vcsabia ul li.span4 a { color:#333; text-align:left; font-size:16px; font-weight:bold; line-height:30px; }
+.vcsabia ul li.span4.last { margin-right:0; }
+.vcsabia ul li.span4 a { color:#333; text-align:left; font-size:16px; font-weight:bold; }
+.vcsabia ul li.span4 a img { margin-bottom:5px;} 
 .destaques .h2.acento { padding-top:10px;}
 .voltar { text-align:left; margin:0 0 -20px 0; color:#ff6525; padding:0; font-size:15px; text-transform:uppercase; font-weight:bold; background:url(/portal/images/capaPrograma/maiscrianca2/voltar.png) no-repeat left 4px; padding-left:15px;   }
 .voltar:hover { color:#ff6525; }
@@ -164,9 +171,9 @@ p { color:#333; font-size: 14px;}
 /* CONTEUDO */
 .box-conteudo img.span12,
 .box-conteudo { margin-left:0; }
-/*.box-conteudo h3 { color:#ff6525; font-size: 30px; font-weight:bold; text-transform:uppercase; height:40px; line-height:40px; margin-bottom:5px; clear:both; }*/
-.box-conteudo h3 { color:#ff6525; font-size: 30px; font-weight:bold; text-transform:uppercase; margin-bottom:5px; clear:both; }
-.box-conteudo p { margin:20px 0; float:left; text-align:left }
+.box-conteudo h3 { color:#ff6525; font-size: 30px; font-weight:bold; text-transform:uppercase; line-height:40px; margin-bottom:5px; clear:both; }
+.box-conteudo p { margin:20px 0; float:left; }
+.box-conteudo span { text-align:left;}
 .box-conteudo .span6 { margin-bottom:10px; }
 #myCarousel .item { display:none;}
  #myCarousel .active { display:block;}
@@ -205,10 +212,7 @@ p { color:#333; font-size: 14px;}
   .naweb ul li,
   .naweb ul li.last { clear:both; float:left;}
    } }
-   
-
-
-
+  
 
 /* natv */
 .carrossel.span12 { margin:0; }
@@ -224,11 +228,5 @@ p { color:#333; font-size: 14px;}
 .carrossel .jcarousel-next { right:0; background-position:-36px 0; }
 /* /natv */
 
-<<<<<<< HEAD
-.destaques.rodape .span4.last { padding:5px; background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; } 
-=======
-.row-fluid [class*="span"]:first-child {
-  text-align:left !important;
-  
-}
->>>>>>> 426a476b9718f78c403d234ce8f5d0b1ee525feb
+.destaques.rodape .span4.last { padding:5px; background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; height:260px;} 
+.destaques .span12 .box-conteudo { text-align:left;}
