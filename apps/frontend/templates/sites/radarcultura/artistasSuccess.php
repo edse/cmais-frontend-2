@@ -150,9 +150,9 @@ function slugfy($string){
             <br/>
             
             <?php if(isset($letter)):?>
-              <small><?php echo $pager->count()?> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><?php echo $pager->count()?> ARTISTAS </small>
+              <small><strong><?php echo $pager->count()?></strong> ARTISTAS </small>
             <?php endif; ?>
           
           </div>
@@ -163,7 +163,7 @@ function slugfy($string){
        <!--lista-->
        <div class="row-fluid">
         <div class=" span6">
-          <table class="table table-condensed table-hover artista">
+          <table class="table table-striped artista">
             <tbody>
               <thead>
                 <tr>
@@ -189,7 +189,7 @@ function slugfy($string){
           </table>
         </div>  
         <div class="span6">
-          <table class="table table-condensed table-hover artista">
+          <table class="table table-striped artista">
             <tbody>
               <thead>
                 <tr>
@@ -218,17 +218,7 @@ function slugfy($string){
       <!--lista-->
 
       <!--paginador-->
-      <?php if ($pager->haveToPaginate()): ?>
-        <div class="pagination pagination-centered">
-          <ul>
-            <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
-            <?php foreach ($pager->getLinks() as $page): ?>
-              <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
-            <?php endforeach; ?>
-            <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
-          </ul>
-        </div>
-      <?php endif; ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
       <!--paginador-->
       
       <!--banner horizontal-->    
@@ -248,11 +238,6 @@ function slugfy($string){
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
-      function goToPage(i){
-        $("#page").val(i);
-        //$("#letter").val("");
-        $("#page_form").submit();
-      }
       function goToLetter(i){
         $("#letter").val(i);
         $("#page").val("");
