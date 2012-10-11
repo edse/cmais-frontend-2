@@ -10,6 +10,10 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* /topo cmais desktop */
 
 /* geral */
+.table th, .table td {border:none;}
+.table td a{color:#484848;}
+.table td a.btn{color:#FFF;}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {background-color: #f1f1f1;}
 .badge{color:black; background-color: #FFF;padding: 5px 9px 5px;}
 .alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
@@ -101,6 +105,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .span2{height: 60px; margin: 0 0 20px 0;}
 .lista-assets .span2 img{margin-top:7px;}
 .row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
+
 /* artistas */
 .artista h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
 .artista .input-prepend{margin:5px 0 0 0;}
