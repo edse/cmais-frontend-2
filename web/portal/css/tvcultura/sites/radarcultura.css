@@ -54,8 +54,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav.menu-principal .dropdown.open > a{color:#FFF;}
 .span8.menu-principal{position:relative;}
 .breadcrumb {padding: 0px 5px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
-.breadcrumb a{color:#00b4d5;font-size:12px;} 
-.breadcrumb .divider {padding: 0 3px;color: #00b4d5;position: relative;bottom:2px;}
+.breadcrumb a{color:#00b4d8;font-size:12px;} 
+.breadcrumb .divider {padding: 0 3px;color: #00b4d8;position: relative;bottom:2px;}
 .breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; float:left\9;}
 .breadcrumb{margin:0px;}
 
@@ -89,7 +89,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid .span4.como-participar{margin:0px\9;}
 
 /* lista assets subsection */
-.lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d5;margin: 0 0 -2px 0;}
+.lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d8;margin: 0 0 -2px 0;}
 .lista-assets a h2,
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
@@ -101,7 +101,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
 .lista-assets .span10{margin-left:10px}
 .lista-assets .span2{height: 60px; margin: 0 0 20px 0;}
-.lista-assets .span2 img{margin-top:20px;}
+.lista-assets .span2 img{margin-top:7px;}
 .row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
 /* artistas */
 .page-header.artista h1{float:left;max-width:830px;}
