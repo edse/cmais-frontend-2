@@ -20,6 +20,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px;}
 .thumbnail p{min-height:57px;}
 .page-header{overflow: hidden;}
+.pagination .paginacao{padding:11px; border:none;}
 
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
@@ -98,6 +99,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
 .lista-assets .span10{margin-left:10px}
 .lista-assets .span2 img{margin-top:15px;}
+
 /* artistas */
 .page-header.artista h1{float:left;max-width:830px;}
 .contagem{max-width:200px; float:right; text-align: right;}
