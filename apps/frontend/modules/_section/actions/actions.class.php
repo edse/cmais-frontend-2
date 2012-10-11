@@ -1003,12 +1003,11 @@ class _sectionActions extends sfActions
         $this->setLayout(false);
       }
     }
-    /*elseif($this->site->slug == 'maiscrianca'){
-      if(in_array($sectionSlug, array('index','home','recadinhos'))){ 
+    elseif($this->site->slug == 'maiscrianca'){
+      if(in_array($sectionSlug, array('recadinhos'))){ 
         $this->setLayout(false);
       }
     }
-     */
     elseif($this->site->slug == 'm'){
       $this->setLayout(false);
     }
@@ -1057,7 +1056,7 @@ class _sectionActions extends sfActions
     }
 
     if($this->site->type == "Programa Infantil")
-      $this->setLayout(false);
+      //$this->setLayout(false);
     
     //metas
     /*
