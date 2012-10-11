@@ -95,8 +95,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets a{text-decoration: none;cursor: hand;}
 .lista-assets .centro.span12{margin-left:-20px\9;} 
 .lista-assets.span4{margin:0px\9;}
-.lista-assets .titulo h2{margin:0;font-weight:normal; font-size:24px;}
-.lista-assets .span10{margin:10px}
+.lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
+.lista-assets .span10{margin-left:10px}
+.lista-assets .span2 img{margin-top:15px;}
 /* artistas */
 .page-header.artista h1{float:left;max-width:830px;}
 .contagem{max-width:200px; float:right; text-align: right;}
