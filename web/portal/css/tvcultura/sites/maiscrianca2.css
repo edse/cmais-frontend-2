@@ -213,7 +213,7 @@ p { color:#333; font-size: 14px;}
 /* Landscape phones and down */
 @media (max-width: 480px) { 
   .naweb ul li,
-  .naweb ul li.last { clear:both; float:left;}
+  .naweb ul li.last { clear:both; float:left;} 
    } }
   
 
