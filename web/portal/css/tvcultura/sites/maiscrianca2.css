@@ -4,6 +4,7 @@ body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal
 h1 { margin-top:0;} 
 #menu-portal-2 li a { padding-top:0} 
 #menu-portal-2 .busca-portal .ipt-txt { border-radius:0; margin: 0;    padding: 0 0 0 30px;}
+#menu-portal-2 .busca-portal { margin-top:0;} 
 /*/TOPO PORTAL*/ 
 
 .header { margin:0 auto;  margin-top:3px; }
@@ -197,13 +198,14 @@ p { color:#333; font-size: 14px;}
 
 .nav-tabs > li { max-width:210px\9;   }
 .nav-tabs > .joguinhos > a { max-width:210px\9;   }
+/*
 .nav-tabs > .joguinhos > a p { paddin:0\9; margin:0\9; width: 160px\9; }
 .nav-tabs > .joguinhos > a span { z-index: 10\9; margin-left:-10px\9; padding:0\9;}
 
 .pagination { max-width:500px\9; margin:0 auto\9; }
 .pagination ul li { float: left\9; width: 40px\9; margin-right:10px\9; }
 .pagination ul .disabled { width:120px\9; }
-
+*/
 .nav-tabs > .atividades.active span, 
 .nav-tabs > .atividades:hover span.ativo { margin-left:-13px\9;} 
 /* /hacks ie */
