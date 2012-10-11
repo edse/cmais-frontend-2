@@ -102,8 +102,8 @@ function slugfy($string){
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
         <!--letra-->      
         <div class="row-fluid">  
-          <div class="page-header artista">
-            <h1>Artistas <small>lista completa de artistas</small></h1>
+          <div class="row-fluid artista">
+            <h1>Lista de músicas por artistas</h1>
               
             <!--
             <?php if(isset($letter) != ""): ?>
@@ -112,16 +112,15 @@ function slugfy($string){
             -->
             
             <!--contagem-->
-            <div class="contagem2" style="float: right;">
-              <?php if(isset($letter)):?>
-                <h3><small>Total de artistas com a letra "<?php echo strtoupper($letter)?>" - </small><?php echo $pager->count()?></h3>
-              <?php else:?>
-                <h3><small>Total de artistas - </small><?php echo $pager->count()?></h3>  
-              <?php endif; ?>
-            </div>
+            <form action="" method="post">
+              <input class="btn pull-right btn-busca" type="submit" value="Busca">
+              <div class="input-prepend">
+               <input class="span3 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+              </div>
+            <form>
             <!--/contagem--> 
           </div>
-          <div class="pagination pagination-centered">
+          <div class="pagination pagination-centered artista">
             <ul>
               <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/1-9">#</a></li>
               <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/a">A</a></li>
@@ -148,6 +147,14 @@ function slugfy($string){
               <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/x">X</a></li>
               <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/z">Z</a></li>
             </ul>
+            <br/>
+            
+            <?php if(isset($letter)):?>
+              <small><?php echo $pager->count()?> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+            <?php else:?>
+              <small><?php echo $pager->count()?> ARTISTAS </small>
+            <?php endif; ?>
+          
           </div>
           
           

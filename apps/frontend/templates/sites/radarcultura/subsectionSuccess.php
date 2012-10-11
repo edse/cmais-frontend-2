@@ -78,13 +78,6 @@ if(isset($pager)){
         <!--listaAssets>
         <!--coluna direita-->
         <div class="lista-assets redes span4">
-          <div class="span12">
-            <div class="banner-radio">
-              <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
-              </script>
-            </div>
-          </div>
           <?php
             $displays = array();
             $block_sobre = Doctrine_Query::create()
