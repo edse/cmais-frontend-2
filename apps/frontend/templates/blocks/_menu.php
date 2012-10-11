@@ -61,8 +61,8 @@
       <!-- Busca Portal -->
       <form class="busca-portal" action="/busca" method="post">
         <input type="hidden" name="site_id" id="site_id" value="<?php if((isset($site)) && (($site->type == "Programa Simples") || ($site->type == "Programa"))) echo $site->getId();?>" />
-        <input class="ipt-txt" type="text" name="term" id="term" value="<?php if($_REQUEST['term']) echo $_REQUEST['term']; ?>" />
-        <?php if($_REQUEST['filter']): ?>
+        <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
+        <?php if(isset($_REQUEST['filter'])): ?>
         <input type="hidden" name="filter" id="filter" value="<?php echo $_REQUEST['filter']; ?>" />
         <?php endif; ?>
         <input class="ipt-submit" type="submit" value="OK" />
