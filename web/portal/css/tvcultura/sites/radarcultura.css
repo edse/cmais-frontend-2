@@ -113,12 +113,11 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .contagem{max-width:200px; float:right; text-align: right;}
 .table.artista h4{color:black;}
 .table.artista tr td{max-width: 312px}
-.pagination.artista {height: 40px;margin: 60px 0 40px 0;}
-.pagination.artista a{color: #00b4d8;}
+.pagination {height: 40px;margin: 60px 0 40px 0;}
+.pagination a{color: #00b4d8;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */
-.page-header.musicas h1{float:left;max-width:830px;}
 .row-fluid.musicas{margin-top:30px;}
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
@@ -127,6 +126,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .direita h4{color:black\9;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
 .direita.content .banner-radio{margin-top:15px;}
+.musicas small{color: #949494;text-align: left;float: left;font-size:12px}
+.musicas h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.table-striped tbody tr td{color:#484848;} 
 
 
 /* musica */
