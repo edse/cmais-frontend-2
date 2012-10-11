@@ -12,6 +12,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* /topo cmais desktop */
 
 /* geral */
+.badge{color:black; background-color: #FFF;padding: 5px 9px 5px;}
 .alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
 .banner-radio {margin:0px auto 20px;padding:0px 4px 0px 8px;min-width:300px;max-width: 728px; }
@@ -20,7 +21,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px;}
 .thumbnail p{min-height:57px;}
 .page-header{overflow: hidden;}
-.pagination .paginacao{border:none;margin-left:1px}
+.pagination .paginacao{padding:11px; border:none;margin-left:1px;line-height: 37px;height: 41px;}
 .pagination ul > li > a, .pagination ul > li > span {border-left-width: 1px;margin-left: -1px; }
 
 /* modal */
@@ -52,8 +53,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav.menu-principal .dropdown-menu > li:hover > a  {background: none; color:#999999}
 .nav.menu-principal .dropdown.open > a{color:#FFF;}
 .span8.menu-principal{position:relative;}
-.breadcrumb {padding: 0px 15px;margin: 0 0 10px;list-style: none;background: none;font-size: 10px;}
-.breadcrumb a{color:#00b4d5;font-size:10px;} 
+.breadcrumb {padding: 0px 5px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
+.breadcrumb a{color:#00b4d5;font-size:12px;} 
 .breadcrumb .divider {padding: 0 3px;color: #00b4d5;position: relative;bottom:2px;}
 .breadcrumb li {display: inline-block;text-shadow: 0 1px 0 white;color: #8F8F8F; float:left\9;}
 .breadcrumb{margin:0px;}
@@ -88,7 +89,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid .span4.como-participar{margin:0px\9;}
 
 /* lista assets subsection */
-.lista-assets a h6{margin:0;}
+.lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d5;margin: 0 0 -2px 0;}
 .lista-assets a h2,
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
@@ -99,8 +100,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets.span4{margin:0px\9;}
 .lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
 .lista-assets .span10{margin-left:10px}
-.lista-assets .span2 img{margin-top:15px;}
-.row-fluid.subSection h1{color:#565656;}
+.lista-assets .span2{height: 60px; margin: 0 0 20px 0;}
+.lista-assets .span2 img{margin-top:20px;}
+.row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
 /* artistas */
 .page-header.artista h1{float:left;max-width:830px;}
 .contagem{max-width:200px; float:right; text-align: right;}
