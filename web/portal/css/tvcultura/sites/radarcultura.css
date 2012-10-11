@@ -90,7 +90,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets a h2,
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
-.lista-assets a h4:hover{color:#005580\9;}
+.lista-assets a h4:hover{color:#005580\9;} 
 .lista-assets p{font-weight: normal\9;}
 .lista-assets a{text-decoration: none;cursor: hand;}
 .lista-assets .centro.span12{margin-left:-20px\9;} 
