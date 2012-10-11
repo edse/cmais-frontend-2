@@ -1,10 +1,8 @@
 body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal.jpg) repeat-x ; position:relative; }
 .bg {  background:url(/portal/images/capaPrograma/maiscrianca2/bg.png) no-repeat bottom left; width:1444px; height:676px; position:absolute; bottom:474px; left:0; }
 /* TOPO PORTAL*/
-h1 { margin-top:0;} 
-#menu-portal-2 li a { padding-top:0} 
+h1{ margin:0;} 
 #menu-portal-2 .busca-portal .ipt-txt { border-radius:0; margin: 0;    padding: 0 0 0 30px;}
-#menu-portal-2 .busca-portal { margin-top:0;} 
 /*/TOPO PORTAL*/ 
 
 .header { margin:0 auto;  margin-top:3px; }
