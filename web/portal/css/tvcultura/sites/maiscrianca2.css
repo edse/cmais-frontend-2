@@ -100,6 +100,7 @@ p { color:#333; font-size: 14px;}
 .destaques.rodape .pais h2,
 .destaques.rodape .pais h2 a { color:#333; }
 .destaques.rodape .pais a p { color:#333; }
+.destaques.rodape .pais a:hover p { color:#FF6733;}
 .destaques.rodape .span4 { background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; height:283px;  }
 .destaques.rodape .pais ul { padding-bottom:10px; }
 .destaques.rodape .pais li img { float:left; margin:0 0 0 10px; }
