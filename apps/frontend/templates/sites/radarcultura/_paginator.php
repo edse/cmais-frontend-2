@@ -1,4 +1,3 @@
-teste
 <?php if(isset($pager)): ?>
   <?php if($pager->haveToPaginate()): ?>
   <div class="row">
