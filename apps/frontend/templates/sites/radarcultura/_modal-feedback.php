@@ -1,3 +1,4 @@
+
 <!--FEEDBACK-->
 <div class="btn-feedback">
   <a href="#modal-feedback" class="" data-toggle="modal">Feedback</a>
@@ -41,6 +42,12 @@
   <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
   <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('.btn-feedback a').click(function(){ 
+      $('html, body').animate({
+        scrollTop: $("#guia-topo").offset().top
+      }, "slow");
+    });
     
     var validator = $('#form-feedback').validate({
       rules:{
