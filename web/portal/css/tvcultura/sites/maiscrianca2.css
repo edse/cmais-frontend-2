@@ -187,7 +187,7 @@ p { color:#333; font-size: 14px;}
 /* /NA TV */
 
 /* hacks ie */
-#menu .lista li { width :270px\9;   }
+/*#menu .lista li { width :270px\9;   }*/
 .naweb ul li { margin-right:0\9; }
 .naweb ul li { width: auto\9; margin-left:0\9; margin-right:0\9; padding:0\9; float:left\9; overflow:hidden\9; }
 
