@@ -146,11 +146,6 @@
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
-      function goToPage(i){
-        $("#page").val(i);
-        //$("#letter").val("");
-        $("#page_form").submit();
-      }
       function goToLetter(i){
         $("#letter").val(i);
         $("#page").val("");
