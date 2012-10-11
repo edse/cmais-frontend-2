@@ -15,7 +15,7 @@
         <?php if(count($assets) > 0): ?>
       <div class="span4 pais">
         <!--div class="h2"><h2>Para os pais</h2></div-->
-        <div class="h2"><h2><a href="/maiscrianca/paraospais" title="Para os pais" class="paraospais">Para os pais</a></h2></div>
+        <div class="h2"><h2><a href="/paraospais" title="Para os pais" class="paraospais">Para os pais</a></h2></div>
         <ul class="row-fluid span12">
           <?php foreach($assets as $k=>$d): ?>
           <li class="row-fluid span12<?php if(($k+1) == count($assets)): ?> last<?php endif; ?>">

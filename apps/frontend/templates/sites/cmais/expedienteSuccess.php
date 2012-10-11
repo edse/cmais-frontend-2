@@ -86,7 +86,7 @@
                 Cristovam Ruiz Jr<br/>
                 Emerson Estrella<br/>
                 Jefferson M. Doljak<br/>
-                Rafael Cruz<br/>
+                Rafael Cruz<br/> 
                 Renata Noronha<br/>
               </p><br/>   
 

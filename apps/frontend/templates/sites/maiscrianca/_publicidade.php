@@ -1,6 +1,6 @@
         <div class="span4 last row-fluid">
-          <!--img class="span12" src="/portal/images/capaPrograma/maiscrianca2/banner.jpg" alt="banner"/-->
+          <!-- maiscrianca -->
           <script type='text/javascript'>
-            GA_googleFillSlot("home-geral2-300x250");
+            GA_googleFillSlot("maiscrianca");
           </script>
         </div>
