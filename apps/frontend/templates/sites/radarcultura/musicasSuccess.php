@@ -31,35 +31,24 @@
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
-        <!--Titulo-->
-        <div class="page-header musicas">
-          <h1>
-            <?php echo $artist?> <small>lista completa de músicas</small>
-          </h1>
-          
-          <!--contagem-->
-          <div class="contagem pull-right">
-          <?php if(isset($letter)):?>
-            <?php if($pager->count() > 1):?>
-              <h3><?php echo $pager->count()?><small> Músicas começando com "<?php echo strtoupper($letter)?>"</small></h3>
-            <?php elseif($pager->count() == 1):?>
-              <h3>1<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
-            <?php else:?>
-              <h3>Nenhuma<small> Música começando com a letra "<?php echo strtoupper($letter)?>"</small></h3>
-            <?php endif; ?>
-          <?php else:?>
-            <?php if($pager->count() > 1):?>
-              <h3><?php echo $pager->count()?><small> Músicas</small></h3>
-            <?php elseif($pager->count() == 1):?>
-              <h3>1<small> Música</small></h3>
-            <?php else:?>
-              <h3>Nenhuma<small> Música</small></h3>
-            <?php endif; ?>
-          <?php endif; ?>
+        <div class="row-fluid musicas">
+            <h1>Lista de músicas por artistas
+              <?php if(isset($letter)):?>
+                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <?php else:?>
+                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+              <?php endif; ?>  
+            </h1>
+            
+            <!--contagem-->
+            <form action="" method="post">
+              <input class="btn pull-right btn-busca" type="submit" value="Busca">
+              <div class="input-prepend">
+               <input class="span3 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+              </div>
+            <form>
+            <!--/contagem--> 
           </div>
-          <!--/contagem--> 
-        </div>
-        <!--/Titulo-->
       </div>
       <!--/topo Artista/contagem-->
       
@@ -96,15 +85,15 @@
           <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/x">X</a></li>
           <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/z">Z</a></li>
         </ul>
+        
       </div>
       <!--/letras-->
       <?php endif; ?>
         
       <!--Centro pagina-->
       <div class="row-fluid musicas" >
-        <!--coluna esquerda-->
-        <div class="span8" style="margin: 0 0 0 0;">
-          <table class="table table-condensed table-hover musica">
+
+          <table class="table table-striped musica">
             <tbody>
               <thead>
                 <tr>
@@ -129,93 +118,14 @@
             <?php endif; ?>
             </tbody>
           </table>
-        </div>
-        <!--/coluna esquerda-->
-        <!--coluna direita-->
-        <div class="span4 direita">
-          <!--sobre o programa-->
-          <?php
-              $displays = array();
-              $block_sobre = Doctrine_Query::create()
-                ->select('b.*')
-                ->from('Block b, Section s')
-                ->where('b.section_id = s.id')
-                ->andWhere('s.slug = ?', 'home')
-                ->andWhere('b.slug = ?', 'sobre-o-programa')
-                ->andWhere('s.site_id = ?', $site->id)
-                ->execute();
-            
-              if(count($block_sobre) > 0){
-                $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-              }
-            ?>
-            <?php if(isset($displays['sobre-o-programa'])):?>
-              <?php if(count($displays['sobre-o-programa']) > 0): ?>
-              <div class="thumbnail">
-                <div class="page-header">
-                  <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-                </div>
-                <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              </div>
-              <?php endif; ?>
-            <?php endif; ?>
-            <!--/sobre o programa-->
-            <!--como participar-->
-            <?php
-              $displays = array();
-              $block_comoparticipar = Doctrine_Query::create()
-                ->select('b.*')
-                ->from('Block b, Section s')
-                ->where('b.section_id = s.id')
-                ->andWhere('s.slug = ?', 'home')
-                ->andWhere('b.slug = ?', 'como-participar')
-                ->andWhere('s.site_id = ?', $site->id)
-                ->execute();
-            
-              if(count($block_comoparticipar) > 0){
-                $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
-              }
-            ?>
-           <?php if(isset($displays['como-participar'])):?>
-              <?php if(count($displays['como-participar']) > 0): ?>       
-                <div class="thumbnail">
-                  <div class="page-header">
-                    <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                  </div>
-                  <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                  <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                </div>
-              <?php endif; ?>
-            <?php endif; ?>
-            <!--/como participar-->
-            <!--banner-->
-            <div class="">
-              <div class="banner-radio">
-                <script type='text/javascript'>
-                  GA_googleFillSlot("cmais-assets-300x250");
-                </script>
-              </div>
-            </div>
-            <!--/banner-->
-         </div>
-         <!--/coluna direita-->
+
+
          
       </div>
       <!--/centro pagina-->
       <!--paginaçao-->
-       <?php if ($pager->haveToPaginate()): ?>
-        <div class="pagination pagination-centered">
-          <ul>
-            <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
-            <?php foreach ($pager->getLinks() as $page): ?>
-              <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
-            <?php endforeach; ?>
-            <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
-          </ul>
-        </div>
-        <?php endif; ?>
-        <!--/paginaçao-->
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+      <!--/paginaçao-->
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
@@ -236,11 +146,6 @@
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
-      function goToPage(i){
-        $("#page").val(i);
-        //$("#letter").val("");
-        $("#page_form").submit();
-      }
       function goToLetter(i){
         $("#letter").val(i);
         $("#page").val("");

@@ -4,14 +4,16 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* topo cmais desktop */
 #guia-topo{padding:0;margin:0 0 20px 0;}
 #topo-cmais #menu-portal-2 h1{margin:0 ;}
-#topo-cmais #menu-portal-2 .busca-portal input{border-radius:0 ;}
-#topo-cmais #menu-portal-2 .busca-portal .ipt-submit {border-radius:0 ; width: 67px;float: left;border: none;border-left: none;height: 22px;background: #F63;color: white;font: bold 12px arial;}
-#topo-cmais #menu-portal-2 ul.abas {width: 572px;float: left;background: none;margin: 0 0 0 0;}
-#topo-cmais #menu-portal-2 .busca-portal .ipt-txt {height: 12px;}
-
+#menu-portal-2 ul.abas {margin:0;}
+#topo-cmais #menu-portal-2 .busca-portal input{border-radius:0 ;height: 12px;}
+#topo-cmais #menu-portal-2 .busca-portal .ipt-submit {border-radius:0 ; width: 30px;float: left;border: none;border-left: none;height: 22px;background: #F63;color: white;font: bold 12px arial;}
 /* /topo cmais desktop */
 
 /* geral */
+.table th, .table td {border:none;}
+.table td a{color:#484848;}
+.table td a.btn{color:#FFF;}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {background-color: #f1f1f1;}
 .badge{color:black; background-color: #FFF;padding: 5px 9px 5px;}
 .alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
@@ -101,16 +103,21 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
 .lista-assets .span10{margin-left:10px}
 .lista-assets .span2{height: 60px; margin: 0 0 20px 0;}
-.lista-assets .span2 img{margin-top:7px;} 
+.lista-assets .span2 img{margin-top:7px;}
 .row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
+
 /* artistas */
-.page-header.artista h1{float:left;max-width:830px;}
+.artista h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.artista .input-prepend{margin:5px 0 0 0;}
+.artista small{color: #949494;text-align: left;float: left;margin-left: 50px;}
 .contagem{max-width:200px; float:right; text-align: right;}
 .table.artista h4{color:black;}
 .table.artista tr td{max-width: 312px}
+.pagination {height: 40px;margin: 60px 0 40px 0;}
+.pagination a{color: #00b4d8;}
+.btn-busca{margin: 0 5px;}
 
 /* musicas */
-.page-header.musicas h1{float:left;max-width:830px;}
 .row-fluid.musicas{margin-top:30px;}
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
@@ -119,6 +126,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .direita h4{color:black\9;}
 .direita  .page-header {padding-bottom: 9px; margin: 10px 0 12px;}
 .direita.content .banner-radio{margin-top:15px;}
+.musicas small{color: #949494;text-align: left;float: left;font-size:12px}
+.musicas h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.table-striped tbody tr td{color:#484848;} 
 
 
 /* musica */
