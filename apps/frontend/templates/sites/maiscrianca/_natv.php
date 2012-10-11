@@ -1,11 +1,11 @@
 <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
 <script type="text/javascript">
-$(function(){
-  //carrossel
+  $(function(){
+    //carrossel
     $('.carrossel').jcarousel({
-        wrap: "both"
+      wrap: "both"
     });
-});
+  });
 </script> 
 
      <div class="row-fluid destaques">

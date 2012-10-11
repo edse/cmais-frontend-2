@@ -86,6 +86,7 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
     </script>
     <script type='text/javascript'>
     GA_googleFetchAds();
