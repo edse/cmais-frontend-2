@@ -143,6 +143,7 @@
     background: #F2F2F2;
     min-height: 200px;
     padding: 20px;
+    overflow:hidden;
 }
 
 #rodovias{

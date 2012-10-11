@@ -36,11 +36,11 @@ if(isset($pager)){
         </div>
         <!--topo menu/alert/logo-->
         
-		 <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
-		 
+     <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
+     
       <!--nome programa-->
-      <div class="page-header">
-        <h1><?php echo $section->getTitle(); ?> <small></small>
+      <div class="row-fluid subSection">
+        <h1><?php echo $section->getTitle(); ?><small></small>
       </div>
       <!--nome programa-->
       <!--clounaprincipal-->
@@ -49,27 +49,29 @@ if(isset($pager)){
         <div class="lista-assets span8">
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
-              <div class="row-fluid">
-                <div class="centro span12">
-                  <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
                   <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if ($related[0]->getThumbnail2()): ?>
-                    <div class="span2">
-                      <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
-                      <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
-                    </div>
-                  <?php endif; ?>
-                  <div class="span10">
-                  <h4>
-                    <?php echo $d->getTitle(); ?>
-                  </h4> 
-                  <p>
-                    <?php echo $d->getDescription(); ?>
-                  </p> 
+                  <div class="row-fluid titulo">
+                    <h2><?php echo $d->getTitle(); ?></h2>
                   </div>
-                </a>
-              </div>
-            </div>
+                  <?php endif;?>
+              <div class="row-fluid">
+                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
+                <?php if ($related[0]->getThumbnail2()): ?>
+                <div class="span2">
+                  <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
+                </div>
+                <?php endif; ?>
+                <div class="span10">
+                 <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
+                 <p>
+                    <?php echo $d->getDescription(); ?>
+                  </p>  
+                </div>
+              </div>    
+             </a>
+              
             <?php endforeach; ?>
           <?php endif; ?>
         </div>
@@ -160,11 +162,13 @@ if(isset($pager)){
         <div class="row">
           <div class="pagination pagination-centered">
             <ul>
-              <li class="disabled"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
+              <li class="<?php if($pager== 1) echo "disabled"?>"><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
+              <li class="<?php if($pager== 1) echo "disabled"?>disabled"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
               <?php foreach ($pager->getLinks() as $page): ?>
               <li <?php if ($page == $pager->getPage()): ?>class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
               <?php endforeach; ?>
-              <li><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próximo">»</a></li>
+              <li class="<?php if($pager== count($pager)) echo "disabled"?>"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
+              <li class="<?php if($pager== count($pager)) echo "disabled"?>"><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
             </ul>
           </div>
         </div>

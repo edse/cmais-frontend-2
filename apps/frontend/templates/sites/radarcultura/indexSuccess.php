@@ -23,7 +23,7 @@
           <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
         </div>
         <div class="row-fluid">  
-          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+          <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
         </div>
         <!--topo menu/alert/logo-->
       
@@ -64,12 +64,13 @@
           <?php if(count($displays['musicas']) > 0): ?>
           <div class="row-fluid">
             <div class="span12">
-              <div class="page-header">
-                <h3>Músicas <small> indicações dos usuários</small></h3>
+              <div class="page-header na-rede">
+                <h3>Músicas</h3>
+                <small>INDICAÇÕES DOS USUÁRIOS</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
-                <div class="span4 thumbnail">
+                <div class="span4">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
@@ -80,10 +81,15 @@
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <?php if($k < 2):?>
+                    <div class="linha-lateral"></div>
+                  <?php endif;?>
                   <?php endif; ?>
                 </div>
+                
                 <?php endforeach; ?>
               </div>
+
             </div>
           </div>
           <?php endif; ?>
@@ -93,14 +99,15 @@
         <?php if(isset($displays['playlists'])):?>
           <?php if(count($displays['playlists']) > 0): ?>
           
-          <div class="row-fluid">
+          <div class="row-fluid na-rede">
             <div class="span8">
-              <div class="page-header">
-                <h3>Playlists <small>indicações dos usuários</small></h3>
+              <div class="page-header na-rede">
+                <h3>Playlists</h3>
+                <small>INDICAÇÕES DOS USUÁRIOS</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
-                <div class="span6 thumbnail">
+                <div class="span6">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
@@ -112,6 +119,7 @@
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
                   <?php endif; ?>
+                  <div class="linha-lateral"></div>
                 </div>
                 <?php endforeach; ?>
               </div>
@@ -124,11 +132,12 @@
           <?php if(count($displays['na-rede']) > 0): ?>
           <?php $d = $displays['na-rede'][0]; ?>
           <div class="span4">
-              <div class="page-header">
-                <h3>Na rede<small> comentários dos usuários</small></h3>
+              <div class="page-header na-rede">
+                <h3>Na rede</h3>
+                <small>COMENTÁRIOS DOS USUÁRIOS</small>
               </div>
               <div class="row-fluid redes ">
-                <div class="span12 thumbnail">
+                <div class="span12">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
@@ -149,41 +158,37 @@
         <!--/redes playlists/narede-->
         
         <!--rodape-->
-        <div class="row-fluid">
-          <div class="span12">
-            <div class="page-header"></div>
-              <div class="row-fluid redes">
-              <?php if(isset($displays['como-participar'])):?>
-                <?php if(count($displays['como-participar']) > 0): ?>       
-                  <div class="span4 thumbnail">
-                    <div class="page-header">
-                      <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                    </div>
-                    <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                    <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                  </div>
-                <?php endif; ?>
-              <?php endif; ?>
-              <?php if(isset($displays['sobre-o-programa'])):?>
-                <?php if(count($displays['sobre-o-programa']) > 0): ?>
-                <div class="span4 thumbnail">
-                  <div class="page-header">
-                    <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-                  </div>
-                  <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                  <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+        <div class="row-fluid redes">
+          <?php if(isset($displays['como-participar'])):?>
+            <?php if(count($displays['como-participar']) > 0): ?>       
+              <div class="span4 thumbnail como-partipar">
+                <div class="page-header">
+                  <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                 </div>
-                <?php endif; ?>
-              <?php endif; ?>
-              <div class="span4">
-                <div class="banner-radio">
-                  <script type='text/javascript'>
-                    GA_googleFillSlot("home-geral300x250");
-                  </script>
-                </div>
+                <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+                <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
               </div>
+            <?php endif; ?>
+          <?php endif; ?>
+          <?php if(isset($displays['sobre-o-programa'])):?>
+            <?php if(count($displays['sobre-o-programa']) > 0): ?>
+            <div class="span4 thumbnail">
+              <div class="page-header">
+                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+              </div>
+              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+            </div>
+            <?php endif; ?>
+          <?php endif; ?>
+          <div class="span4">
+            <div class="banner-radio">
+              <script type='text/javascript'>
+                GA_googleFillSlot("home-geral300x250");
+              </script>
             </div>
           </div>
+
           <!--/rodape-->
         
           <!--banner horizontal-->    
@@ -199,3 +204,4 @@
         <!--rodape-->
       </div>
       <!--container-->      
+ 

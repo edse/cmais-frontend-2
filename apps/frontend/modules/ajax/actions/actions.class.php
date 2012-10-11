@@ -1414,7 +1414,7 @@ EOT;
 	
 			$lines = file($filename);
 			$total = count($lines);
-			for($i=$total;$i>0;$i--){
+			for($i=$total;$i>=0;$i--){
 	  		$vote = trim(@end(explode("\t", $lines[$i])));
 	  		if(intVal($vote)>0){
 	    		@$votes[$vote] += 1;
@@ -1487,3 +1487,4 @@ EOT;
 
 
 }
+
