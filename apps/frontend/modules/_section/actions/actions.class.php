@@ -1004,7 +1004,6 @@ class _sectionActions extends sfActions
       }
     }
     elseif($this->site->slug == 'maiscrianca'){
-      //if(in_array($sectionSlug, array('index','home','vocesabia','recadinhos'))){
       if(in_array($sectionSlug, array('recadinhos'))){ 
         $this->setLayout(false);
       }
@@ -1057,7 +1056,7 @@ class _sectionActions extends sfActions
     }
 
     if($this->site->type == "Programa Infantil")
-      $this->setLayout(false);
+      //$this->setLayout(false);
     
     //metas
     /*

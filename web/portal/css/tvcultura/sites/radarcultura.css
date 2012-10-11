@@ -21,7 +21,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .thumbnail{overflow: hidden;margin-bottom: 20px;padding:0px 15px;}
 .thumbnail p{min-height:57px;}
 .page-header{overflow: hidden;}
-.pagination .paginacao{padding:11px; border:none;margin-left:1px;line-height: 37px;height: 41px;}
+.pagination .paginacao{padding:11px; border:none;margin-left:1px;line-height: 20px;height: 18px;}
 .pagination ul > li > a, .pagination ul > li > span {border-left-width: 1px;margin-left: -1px; }
 
 /* modal */
@@ -101,7 +101,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
 .lista-assets .span10{margin-left:10px}
 .lista-assets .span2{height: 60px; margin: 0 0 20px 0;}
-.lista-assets .span2 img{margin-top:7px;}
+.lista-assets .span2 img{margin-top:7px;} 
 .row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
 /* artistas */
 .page-header.artista h1{float:left;max-width:830px;}
