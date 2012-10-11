@@ -56,7 +56,8 @@ p { color:#333; font-size: 14px;}
 
 /* destaques*/
 .destaques .h2 { clear: both;    display: block;    float: left;    margin: 20px 0; }
-.destaques .h2 h2 { font-size:30px; text-transform:uppercase; color:#ff6733; background:#ffce2b; margin:0; text-align:left; padding:0; line-height:23px; float: left; }
+.destaques .h2 h2,
+.destaques .h2 h2 a { font-size:30px; text-transform:uppercase; color:#ff6733; background:#ffce2b; margin:0; text-align:left; padding:0; line-height:23px; float: left; }
 .destaques .h2 span { background:url(/portal/images/capaPrograma/maiscrianca2/detalhe2.png) no-repeat; width:71px; height: 23px; display:block; float:left; }
 .destaques ul { clear: both; margin-left:0; }
 .destaques ul li { float:left; margin-right:21px; margin-left:0; }
@@ -76,12 +77,14 @@ p { color:#333; font-size: 14px;}
 .destaques p,
 .destaques a { text-align:left; }
 .destaques.rodape .h2 { margin-bottom:10px;  }
-.destaques.rodape .h2 h2 { background:none; color:#ffed5a;}
+.destaques.rodape .h2 h2,
+.destaques.rodape .h2 h2 a { background:none; color:#ffed5a;}
 .destaques .carousel-inner { margin-left:56px; }
 .destaques.rodape .descricao { color:#333; font-weight:bold; font-size:16px; background:#fff; display: block; text-align:left; padding:6px; }
 .destaques .span4 { overflow:hidden;  }
 .destaques.rodape .pais a:hover p,
-.destaques.rodape .pais h2 { color:#ff6525; }
+.destaques.rodape .pais h2,
+.destaques.rodape .pais h2 a { color:#ff6525; }
 .destaques.rodape .pais a p { color:#333; }
 .destaques.rodape .descricao,
 .destaques.rodape .pais ul { background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat;  }
@@ -209,3 +212,5 @@ p { color:#333; font-size: 14px;}
 .carrossel .jcarousel-prev { left:0; }
 .carrossel .jcarousel-next { right:0; background-position:-36px 0; }
 /* /natv */
+
+.destaques.rodape .span4.last { padding:5px; background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; } 
