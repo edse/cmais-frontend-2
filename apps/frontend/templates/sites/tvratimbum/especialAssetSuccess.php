@@ -67,7 +67,7 @@
                 <img alt="<?php echo $asset->getTitle()?>" src="<?php echo $asset->retriveImageUrlByImageUsage("image-6") ?>" />
               </div-->
               <div class="box-especial-infoTxt">
-                <h3><?php echo html_entity_decode($asset->getDescription()) ?></h3>
+                <h3><?php echo $asset->getDescription() ?></h3>
                 <p><?php echo html_entity_decode($asset->AssetContent->getContent()) ?></p>
               </div>
               <hr>
