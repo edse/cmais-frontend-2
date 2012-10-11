@@ -1003,11 +1003,12 @@ class _sectionActions extends sfActions
         $this->setLayout(false);
       }
     }
-    elseif($this->site->slug == 'maiscrianca'){
+    /*elseif($this->site->slug == 'maiscrianca'){
       if(in_array($sectionSlug, array('index','home','recadinhos'))){ 
         $this->setLayout(false);
       }
     }
+     */
     elseif($this->site->slug == 'm'){
       $this->setLayout(false);
     }
