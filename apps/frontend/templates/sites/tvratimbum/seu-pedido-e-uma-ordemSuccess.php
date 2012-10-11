@@ -1,4 +1,17 @@
 <?php
+  $now = date('YmdHis');
+  $schedule = '20121012000000';
+  
+  if($now > $schedule) {
+    header('Location: http://tvratimbum.cmais.com.br/vencedores-seu-pedido-e-uma-ordem');
+    die();
+  }
+  else {
+    header('Location: http://tvratimbum.cmais.com.br/aguarde-ja-ja-voce-sabera-quem-foi-o-mais-votado');
+    die();
+  }
+?>
+<?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa')
