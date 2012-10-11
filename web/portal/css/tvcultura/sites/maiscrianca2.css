@@ -3,6 +3,7 @@ body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal
 /* TOPO PORTAL*/
 h1 { margin-top:0;} 
 #menu-portal-2 li a { padding-top:0} 
+#menu-portal-2 .busca-portal .ipt-txt { border-radius:0; margin: 0;    padding: 0 0 0 30px;}
 /*/TOPO PORTAL*/ 
 
 .header { margin:0 auto;  margin-top:3px; }
@@ -53,8 +54,8 @@ p { color:#333; font-size: 14px;}
 .tab-content { background:#ffce2b; }
 #menu .lista { margin:0 0 0 60px; padding:20px 0; overflow:hidden;  }
 #menu .lista li { margin:0 0 10px 10px; min-width: 210px;  }
-#menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden;} 
-#menu .lista li img { border:5px solid transparent; }
+#menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden; width:210px;} 
+#menu .lista li img { border:5px solid transparent; clear:both; }
 #menu .lista li a:hover {color:#ff6733; text-decoration:none;}
 #menu .lista li:hover img { border-color:#ff6733; }
 #menu .tab-content { border-radius:0 15px 15px 15px; -moz-border-radius: 0 15px 15px 15px; -webkit-border-radius:0 15px 15px 15px;  }
@@ -125,7 +126,7 @@ p { color:#333; font-size: 14px;}
 /* /HOME */
 
 /* VOCE SABIA*/
-.vcsabia ul li.span4  { margin-left:0; margin-bottom:10px; min-height: 250px; }
+.vcsabia ul li.span4  { margin-left:0; margin-bottom:10px; }
 .vcsabia ul li.span4.last { margin-right:0; }
 .vcsabia ul li.span4 a { color:#333; text-align:left; font-size:16px; font-weight:bold; }
 .vcsabia ul li.span4 a img { margin-bottom:5px;} 
@@ -165,7 +166,7 @@ p { color:#333; font-size: 14px;}
 .pagination li a,
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {  color:#ff6525; font-size:15px; text-transform:uppercase; padding-right:20px;} 
 .pagination ul > li > a, .pagination ul > li > span { line-height:30px;} 
-.vcsabia ul li.span4 { height:250px;} 
+.vcsabia ul li.span4 { height:235px;} 
 /* /VOCE SABIA*/
 
 /* CONTEUDO */
@@ -186,7 +187,7 @@ p { color:#333; font-size: 14px;}
 /* /NA TV */
 
 /* hacks ie */
-#menu .lista li { width :270px\9;   }
+/*#menu .lista li { width :270px\9;   }*/
 .naweb ul li { margin-right:0\9; }
 .naweb ul li { width: auto\9; margin-left:0\9; margin-right:0\9; padding:0\9; float:left\9; overflow:hidden\9; }
 
