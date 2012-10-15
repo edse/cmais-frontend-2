@@ -15,7 +15,7 @@
              <?php endif; ?>
            <?php elseif($section->getSlug() == "musicas"): ?>
              <?php if(isset($asset)): ?>
-             <li>Musicas <span class="divider">»</span></li>
+             <li><a href="<?php echo url_for('homepage') . $site->getSlug() . '/musicas' ?>">Musicas</a> <span class="divider">»</span></li>
              <li><?php echo $asset->getTitle() ?></li>
              <?php else: ?>
                <?php if(isset($artist)): ?>
