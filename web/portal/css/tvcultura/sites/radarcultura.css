@@ -146,6 +146,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .playlist.musica h1{float:left;}
 .playlist.musica small{color: #6F6F6F;float:left;}
 .table.playlist tr td{max-width:260px;}
+.direita.playlist{margin-top:30px;}
 
 /* ao vivo */
 #videoPlayer{margin:0 auto;width:451px;}

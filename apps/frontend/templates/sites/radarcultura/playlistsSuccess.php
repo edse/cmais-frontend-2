@@ -30,7 +30,7 @@
       <!--topo Playlits/contagem-->
       <div class="row-fluid">
         <!--Titulo-->
-        <div class="playlist">
+        <div class="playlist musica">
          <h1><?php echo $section->getTitle()?><br/>
          <small><?php echo $section->getDescription() ?></small>
          </h1>
@@ -78,7 +78,7 @@
         </div>
         <!--/coluna esquerda-->
         <!--coluna direita-->
-        <div class="span4 direita">
+        <div class="span4 direita playlist">
           <!--sobre o programa-->
           <?php
               $displays = array();
