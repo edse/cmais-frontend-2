@@ -89,6 +89,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .redes h4{color:black;}
 .linha-lateral{border-right: 1px #eee solid; height:225px;float:right; position: absolute; top:16px; right:-10px;}
 .row-fluid .span4.como-participar{margin:0px\9;}
+.carousel-control {top: 51%;}
+.carousel {margin-bottom:0}
+.page-header.na-rede{margin:10px 0 20px 0;}
 
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d8;margin: 0 0 -2px 0;}
