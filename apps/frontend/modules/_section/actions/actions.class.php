@@ -536,20 +536,6 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-          if($this->site->getSlug() == "pedroebianca"){
-            $this->assetsQuery = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, SectionAsset sa')
-              ->where('sa.asset_id = a.id')
-              ->andWhere('a.is_active = ?', 1);
-            if($request->getParameter('busca') != '') 
-              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
-            if($request->getParameter('section') != '') 
-              $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
-            else
-              $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
-            $this->assetsQuery->orderBy('sa.display_order');
-          }
           if($this->site->getSlug() == "penarua"){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
@@ -909,6 +895,22 @@ class _sectionActions extends sfActions
       }
 
 
+    if($this->site->getSlug() == "pedroebianca"){
+      $this->assetsQuery = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1);
+      if($request->getParameter('busca') != '') 
+        $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
+      if($request->getParameter('section') != '') 
+        $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
+      else
+        $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
+      $this->assetsQuery->orderBy('sa.display_order');
+      $test = $this->assetsQuery->execute();
+    }
+
       // program
       $this->program = $this->site->Program;
       // main site
@@ -1201,12 +1203,12 @@ class _sectionActions extends sfActions
         $pagelimit = 9;
             
     }
-		if($this->section->Site->getSlug() == "radarcultura") {
+    if($this->section->Site->getSlug() == "radarcultura") {
       if($this->section->getSlug() == "playlist")
         $pagelimit = 20;
       else if($this->section->getSlug() == "musicas")
         $pagelimit = 20;
-		}
+    }
     if(!isset($pagelimit))
       $pagelimit = 9;
     
@@ -1303,15 +1305,15 @@ class _sectionActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cursosTodos');
         }
         else {
-					$parentSection = $this->section->getParent();
-					if($this->site->getSlug()=="culturafm" && $parentSection->getSlug() == "colunistas") {
-		        if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista';
-		        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista');
-					}
-					else {
-		        if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
-		        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
-					}
+          $parentSection = $this->section->getParent();
+          if($this->site->getSlug()=="culturafm" && $parentSection->getSlug() == "colunistas") {
+            if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista');
+          }
+          else {
+            if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+          }
         }
       }
     }
@@ -1320,10 +1322,10 @@ class _sectionActions extends sfActions
         if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists');
       }
-			else {
-	      if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
-	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
-			}
+      else {
+        if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
+      }
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
