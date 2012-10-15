@@ -298,17 +298,7 @@ if (isset($pager)) {
 									<?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) ?>
 								</div>
 								<!-- / BOX PUBLICIDADE -->
-								<!-- CALENDARIO -->
-								<div class="box-padrao grid1">
-									<div class="topo">
-										<span></span>
-										<div class="capa-titulo">
-											<h4>arquivo</h4>
-										</div>
-									</div>
-									<div id="datepicker"></div>
-								</div>
-								<!-- /CALENDARIO -->
+							
 							</div>
 							<!-- /DIREITA -->
 						</div>
