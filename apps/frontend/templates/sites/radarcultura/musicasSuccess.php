@@ -112,7 +112,10 @@
                   <td><?php echo $d->getTitle(); ?></td>
                   <td><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td><?php echo $aux[4] ?></td>
-                  <td class="play"><a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+                  <td class="play">
+                    <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
+                    <a href="" class="btn btn-mini btn-info pull-right" ><i class="icon-share-alt icon-white"></i> sugerir esta música </a>
+                  </td>
                 </tr>
               <?php endforeach; ?>
             <?php endif; ?>

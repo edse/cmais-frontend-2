@@ -4,7 +4,7 @@
     <div class="pagination pagination-centered">
       <ul>
         <li class=""><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
-        <li class=""?>"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
+        <li class=""?><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
         <?php foreach ($pager->getLinks() as $page): ?>
         <li <?php if ($page == $pager->getPage()): ?>class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
         <?php endforeach; ?>

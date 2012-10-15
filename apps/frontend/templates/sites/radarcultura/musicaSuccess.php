@@ -30,10 +30,13 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
       
       <!--topo menu/alert/logo-->
-      <div class="row-fluid descricao">
+      <div class="row-fluid">
         <!--titulo musica-->
-        <div class="page-header musica">
-          <h1><?php echo $asset->getTitle()?> <small><?php echo $asset->getDescription()?></small></h1>
+        <div class="playlist musica">
+         <h1><?php echo $asset->getTitle()?><br/>
+         <small><?php echo $asset->getDescription() ?></small>
+         </h1>
+        
             <!--contagem-->
             <div class="pull-right">
               <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
@@ -302,7 +305,7 @@
       <!-- container -->
       <div class="row-fluid">
         <!--coluna esquerda-->
-        <div class="span8" style="margin:0 0 0 0">
+        <div class="span8" style="margin:30px 0 0 0">
           <!--injformacoes-->
           <div class="row-fluid">
             <div class="span6">  
@@ -494,12 +497,12 @@
               <h3>Pela Web <small> quem já indicou essa música</small></h3>
             </div>
             <!-- pitaco -->
-            <div class="thumbnails">
+            <div class="row-fluid">
             <?php foreach($relacionados as $k=>$d): ?> 
               <!--item-->
               <div class="span4">
-                <div class="row-fluid redes ">
-                  <div class="thumbnail">
+                <div class="row-fluid redes">
+                  <div class="">
                     <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                       <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                     </a>
@@ -511,6 +514,9 @@
                     <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
                   </div>
                 </div>
+                <?php if($k < 2):?>
+                  <div class="linha-lateral"></div>
+                <?php endif;?>
               </div>
               <!--/item-->
             <?php endforeach; ?>
