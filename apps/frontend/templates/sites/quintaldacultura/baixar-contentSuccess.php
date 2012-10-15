@@ -24,7 +24,7 @@
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="/portal/js/portal.js"></script>
-	<script type="text/javascript" src="/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
 
     <script type="text/javascript">
       //carrocel
@@ -45,21 +45,21 @@
           });
           $("ul.dropdown li ul li:has(ul)").find("a:first").append("  ");
       });
-	  $(document).ready(function(){
-			$("#jquery_jplayer_1").jPlayer({
-				ready: function () {
-					$(this).jPlayer("setMedia", {
-						m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-						oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-					}).jPlayer("pause");
-				},
-				ended: function (event) {
-					$(this).jPlayer("play");
-				},
-				swfPath: "js",
-				supplied: "m4a, oga"
-			});
-		});
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          }).jPlayer("pause");
+        },
+        ended: function (event) {
+          $(this).jPlayer("play");
+        },
+        swfPath: "js",
+        supplied: "m4a, oga"
+      });
+    });
     </script>
   </head>
   <script type="text/javascript"> 
@@ -195,9 +195,9 @@
                         <?php endif; ?>
                       <?php endif;?>
 
-								<span class="palhaca"></span>
-								
-								<span class="palhaco"></span>
+                <span class="palhaca"></span>
+                
+                <span class="palhaco"></span>
                                 
                             </div>
                       </div>
