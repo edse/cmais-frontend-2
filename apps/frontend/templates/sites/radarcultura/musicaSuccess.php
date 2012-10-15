@@ -411,7 +411,7 @@
         </div>
         <!--/coluna esquerda-->
         <!--coluna direita-->
-        <div class="span4 direita">
+        <div class="span4 direita playlist">
           <!--banner -->
           <div class="span12">
             <div class="banner-radio">
