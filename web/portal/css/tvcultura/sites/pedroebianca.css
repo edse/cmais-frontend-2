@@ -1244,7 +1244,7 @@ form.entrevistas label input{
 .centro h4,
 .centro p{
 	float: left;
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	text-transform: inherit;
 	width: 280px;
 }
