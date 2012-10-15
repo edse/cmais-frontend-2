@@ -536,6 +536,20 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
+          if($this->site->getSlug() == "pedroebianca"){
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1);
+            if($request->getParameter('busca') != '') 
+              $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
+            if($request->getParameter('section') != '') 
+              $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
+            else
+              $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
+            $this->assetsQuery->orderBy('sa.display_order');
+          }
           if($this->site->getSlug() == "penarua"){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
