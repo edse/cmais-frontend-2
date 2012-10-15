@@ -65,8 +65,8 @@
           <div class="row-fluid">
             <div class="span12">
               <div class="page-header na-rede">
-                <h3>Músicas</h3>
-                <small>INDICAÇÕES DOS USUÁRIOS</small>
+                <h3>Músicas em Destaque</h3>
+                <small>INDICAÇÕES DE USUÁRIOS</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
@@ -102,7 +102,7 @@
           <div class="row-fluid na-rede">
             <div class="span8">
               <div class="page-header na-rede">
-                <h3>Playlists</h3>
+                <h3>Playlists do Radar</h3>
                 <small>INDICAÇÕES DOS USUÁRIOS</small>
               </div>
               <div class="row-fluid redes">
