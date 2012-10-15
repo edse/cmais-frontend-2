@@ -120,6 +120,13 @@ function slugfy($string){
             <form>
             <!--/contagem--> 
           </div>
+          <script>
+          function goToLetter(i){
+            $("#letter").val(i);
+            $("#page").val("");
+            $("#page_form").submit();
+          }
+          </script>
           <div class="pagination pagination-centered artista">
             <ul>
               <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/1-9">#</a></li>
@@ -220,7 +227,7 @@ function slugfy($string){
       <!--paginador-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager, 'letter'=> $letter)) ?>
       <!--paginador-->
-      
+
       <!--banner horizontal-->    
       <div class="container">
         <div class="banner-radio horizontal">
