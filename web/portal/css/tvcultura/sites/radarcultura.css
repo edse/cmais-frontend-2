@@ -107,7 +107,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
 
 /* artistas */
-.artista h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.artista h1{float: left;margin: 30px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.artista form{margin:30px 0 0 0;}
 .artista .input-prepend{margin:5px 0 0 0;}
 .artista small{color: #949494;text-align: left;float: left;margin-left: 50px;}
 .contagem{max-width:200px; float:right; text-align: right;}
