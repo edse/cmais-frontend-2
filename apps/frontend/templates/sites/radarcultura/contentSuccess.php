@@ -33,7 +33,7 @@
      <div class="row-fluid" style="margin:0 0 0 0;">
       <!--col esquerda -->
       <div class="span8" style="margin:0 0 0 0;">
-        <div class="page-header content">
+        <div class="content">
           <h1><?php echo $asset->getTitle() ?></h1>
           <small><?php echo $asset->getDescription() ?></small>
         </div>

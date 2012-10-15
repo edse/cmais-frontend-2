@@ -34,11 +34,9 @@
         <div class="row-fluid" style="margin:0 0 0 0;">
           <!--col esquerda-->
           <div class="thumbnails span8">
-            <div class="page-header content">
-              <h1><?php echo $asset->getTitle(); ?></h1>
-              <div class="row">
-                <small class="pull-left"><?php echo $asset->getDescription(); ?></small>
-              </div>
+            <div class="content">
+              <h1><?php echo $asset->getTitle() ?></h1>
+              <small><?php echo $asset->getDescription() ?></small>
             </div>
             <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
