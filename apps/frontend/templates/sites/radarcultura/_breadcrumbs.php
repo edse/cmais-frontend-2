@@ -5,9 +5,9 @@
         <!--breadcrumb-->
         <div class="row-fluid">
            <ul class="breadcrumb">
-             <li><a href="<?php echo url_for('homepage') . $site->getSlug() ?>">Início/<?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
+             <li><a href="<?php echo url_for('homepage') . $site->getSlug() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
            <?php if($section->getSlug() == "artistas"): ?>
-             <li><a href="<?php echo url_for("homepage") . $site->getSlug() . "artistas" ?>">Musicas</a> <span class="divider">»</span></li>
+             <li>Musicas <span class="divider">»</span></li>
              <?php if(isset($artist)): ?>
              <li><a href="">Por artistas</a> <span class="divider">»</span></li>
              <li><?php echo $artist ?></li>
@@ -15,12 +15,17 @@
              <li>Por artistas</li>
              <?php endif; ?>
            <?php elseif($section->getSlug() == "musicas"): ?>
-             <li><a href="<?php echo url_for("homepage") . $site->getSlug() . "artistas" ?>">Musicas</a> <span class="divider">»</span></li>
+             <li>Musicas <span class="divider">»</span></li>
              <?php if(isset($asset)): ?>
              <li><a href="">Por título</a> <span class="divider">»</span></li>
              <li><?php echo $asset->getTitle() ?></li>
              <?php else: ?>
+               <?php if(isset($artist)): ?>
+             <li><a href="">Por título</a> <span class="divider">»</span></li>
+             <li><?php echo $artist ?></li>
+               <?php else: ?>
              <li>Por título</li>
+               <?php endif; ?>
              <?php endif; ?>
            <?php else: ?>
              <?php if(isset($parentSection)): ?>
