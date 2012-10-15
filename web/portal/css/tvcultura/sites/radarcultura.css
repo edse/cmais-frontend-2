@@ -167,3 +167,4 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .page-header.content h1{margin-bottom:0px;}
 .content small{color:#6F6F6F;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
+div.jp-playlist, div.jp-interface {border:none !important;}
