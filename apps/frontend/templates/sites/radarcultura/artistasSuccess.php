@@ -1,13 +1,5 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-<?php
-if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
-} 
-?>
 <?php 
 
 function slugfy($string){
@@ -232,7 +224,7 @@ function slugfy($string){
       <!--lista-->
 
       <!--paginador-->
-      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager, 'letter'=> $letter)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager,'letter'=>$letter)) ?>
       <!--paginador-->
 
       <!--banner horizontal-->    
