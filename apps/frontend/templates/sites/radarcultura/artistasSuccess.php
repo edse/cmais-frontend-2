@@ -218,7 +218,7 @@ function slugfy($string){
       <!--lista-->
 
       <!--paginador-->
-      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager, 'letter'=> $letter)) ?>
       <!--paginador-->
       
       <!--banner horizontal-->    

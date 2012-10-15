@@ -123,9 +123,9 @@
          
       </div>
       <!--/centro pagina-->
-      <!--paginaçao-->
-      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-      <!--/paginaçao-->
+      <!--paginador-->
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager, 'letter'=> $letter)) ?>
+      <!--paginador-->
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
