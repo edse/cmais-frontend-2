@@ -9,10 +9,10 @@
            <?php if($section->getSlug() == "artistas"): ?>
              <li>Musicas <span class="divider">»</span></li>
              <?php if(isset($artist)): ?>
-             <li><a href="">Por artistas</a> <span class="divider">»</span></li>
+             <li><a href="">Por artista</a> <span class="divider">»</span></li>
              <li><?php echo $artist ?></li>
              <?php else: ?>
-             <li>Por artistas</li>
+             <li>Por artista</li>
              <?php endif; ?>
            <?php elseif($section->getSlug() == "musicas"): ?>
              <li>Musicas <span class="divider">»</span></li>
@@ -21,7 +21,7 @@
              <li><?php echo $asset->getTitle() ?></li>
              <?php else: ?>
                <?php if(isset($artist)): ?>
-             <li><a href="">Por título</a> <span class="divider">»</span></li>
+             <li><a href="">Por artista</a> <span class="divider">»</span></li>
              <li><?php echo $artist ?></li>
                <?php else: ?>
              <li>Por título</li>
