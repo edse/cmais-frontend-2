@@ -27,7 +27,7 @@
       </div>
         <!--topo menu/alert/logo-->
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artista' => $artist)) ?>
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
