@@ -20,9 +20,9 @@
              <li><a href="">Por título</a> <span class="divider">»</span></li>
              <li><?php echo $asset->getTitle() ?></li>
              <?php else: ?>
-               <?php if(isset($buscam)): ?>
+               <?php if(isset($_REQUEST['buscam'])): ?>
              <li><a href="">Por artista</a> <span class="divider">»</span></li>
-             <li><?php echo $buscam ?></li>
+             <li><?php echo $_REQUEST['buscam'] ?></li>
                <?php else: ?>
              <li>Por título</li>
                <?php endif; ?>
