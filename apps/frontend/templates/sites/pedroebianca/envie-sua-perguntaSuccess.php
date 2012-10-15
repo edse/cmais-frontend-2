@@ -5,7 +5,7 @@
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
     
     <!-- CAPA SITE -->
-	<div class="bg-rodaviva">
+	<div class="bg-pedroebianca">
     <div id="capa-site">
     	
       <!-- BREAKING NEWS -->
@@ -59,9 +59,9 @@
         <div id="conteudo-pagina exceptionn">
           <!-- CAPA -->
           <div class="capa grid3 exceptionn">
-          	<div class="tudo-Rodaviva">
-          		<span class="bordaTopRV"></span>
-          		<div class="centroRV">
+          	<div class="tudo-pedroebianca">
+          		<span class="bordaTop"></span>
+          		<div class="centro">
           			<div class="faleConosco">
           				<h2><?php echo $section->getTitle() ?></h2>
           				<p><?php echo $section->getDescription()?></p>
@@ -144,7 +144,7 @@
                       </script>
       				</div>
           		</div>
-          		<span class="bordaBottomRV"></span>
+          		<span class="bordaBottom"></span>
           	</div>
           </div>
         

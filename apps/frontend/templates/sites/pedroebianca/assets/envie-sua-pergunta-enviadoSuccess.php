@@ -1,17 +1,11 @@
-<?php
-if(isset($pager)){
-	$asset = $pager->getCurrent();
-}
-?>
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $asset->Site->getSlug() ?>.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
-
-<?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-
+    <?php use_helper('I18N', 'Date') ?>
+    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
     
     <!-- CAPA SITE -->
-	<div class="bg-rodaviva">
+	<div class="bg-pedroebianca">
     <div id="capa-site">
     	
       <!-- BREAKING NEWS -->
@@ -41,11 +35,12 @@ if(isset($pager)){
           <!-- /horario -->
           <?php endif; ?>
 		</div>
+		<!-- box-topo -->
 		<div class="box-topo grid3">
           <?php if(count($siteSections) > 0): ?>
           <ul class="menu">
             <?php foreach($siteSections as $s): ?>
-				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle() ?></span></a></li>
+				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><span><?php echo $s->getTitle() ?></span></a></li>
 			<?php endforeach; ?>
           </ul>
           <?php endif; ?>
@@ -59,36 +54,40 @@ if(isset($pager)){
         <!-- BOX LATERAL -->
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
-        
+              	
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina exceptionn">
           <!-- CAPA -->
           <div class="capa grid3 exceptionn">
-          	<div class="tudo-Rodaviva">
-          		<span class="bordaTopRV"></span>
-          		<div class="centroRV">
-          			<?php if($asset->AssetType->getSlug() == 'content'): ?>
-          			<div class="apresentador">
+          	<div class="tudo-pedroebianca">
+          		<span class="bordaTop"></span>
+          		<div class="centro">
+          			<div class="faleConosco">
           				<h2><?php echo $asset->getTitle() ?></h2>
-          				<p><?php echo html_entity_decode($asset->AssetContent->getContent()) ?></p>
+          				<!-- p><?php echo $asset->getDescription()?></p-->
+          				<?php //echo "mailSent: " . $sf_user->getAttribute('mailSent') ?>
+                        	
+                        <div class="msgAcerto">
+                          <span class="alerta"></span>
+                          <div class="boxMsg">
+                            <p class="aviso"><?php echo $asset->getDescription() ?></p>
+                            <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+                          </div>
+                          <hr />                                   
+                        </div>
+          			    <ul>
+          					<li class="voltarJa"><a href="javascript:back()"><span>Voltar</span></a></li>
+          				</ul>
+                        
+                        
           			</div>
-          			<?php endif; ?>
-          			
-          			<?php if(isset($displays['equipe'])): ?>
-					  <?php if(count($displays['equipe']) > 0): ?>
-          			<div class="apresentadoresPassado">
-          				<h2><?php echo $displays['equipe'][0]->Block->getTitle() ?></h2>
-          				<div class="boxApresentadoresPassado">
-          				  <?php if ($displays['equipe'][0]->Asset->AssetType->getSlug() == "content"): ?>
-          					<?php echo html_entity_decode($displays['equipe'][0]->Asset->AssetContent->getContent()) ?>
-          			      <?php endif; ?>
-          				</div>
-          			</div>
-          			  <?php endif; ?>
-          			<?php endif; ?>
-          			
+          			<div class="publicidade fl">
+                      <script type='text/javascript'>
+                        GA_googleFillSlot("cmais-assets-300x250");
+                      </script>
+      				</div>
           		</div>
-          		<span class="bordaBottomRV"></span>
+          		<span class="bordaBottom"></span>
           	</div>
           </div>
         
@@ -102,5 +101,3 @@ if(isset($pager)){
     </div>
     <!-- / CAPA SITE -->
     
-
-

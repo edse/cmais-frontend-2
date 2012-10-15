@@ -4,7 +4,7 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
-	<div class="bg-rodaviva">
+	<div class="bg-pedroebianca">
     <div id="capa-site">
     	
       <!-- BREAKING NEWS -->
@@ -62,14 +62,13 @@
         <div id="conteudo-pagina exceptionn">
           <!-- CAPA -->
           <div class="capa grid3 exceptionn">
-          	<div class="tudo-Rodaviva">
-          		<span class="bordaTopRV"></span>
-          		<div class="centroRV">
+          	<div class="tudo-pedroebianca">
+          		<span class="bordaTop"></span>
+          		<div class="centro">
           			<div class="noticia-interna">
-          				<h2>Notícia</h2>
+          				<h2><?php echo $asset->getTitle() ?></h2>
           				<span class="faixa"></span>
           				<div class="boxNoticia-interna">
-          					<h3><?php echo $asset->getTitle() ?></h3>
 		                    <p class="subtit"><?php echo $asset->getDescription() ?></p>
 		                    <div class="assinatura grid2">
 			                  <p class="sup"> <span><?php echo $asset->retriveLabel() ?></span></p>
@@ -90,7 +89,7 @@
 			                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
 			                  <?php endif; ?>
 			                </div>
-			                <?php include_partial_from_folder('sites/rodaviva','global/fb-comments',array('uri'=>$uri)) ?>
+			                <?php include_partial_from_folder('sites/pedroebianca','global/fb-comments') ?>
           				</div>
           			</div>
           			<div class="veja">
@@ -99,6 +98,16 @@
           			    <script type='text/javascript'>
           			      GA_googleFillSlot("cmais-assets-300x250");
           			    </script>
+          			     <!-- BOX FACEBOOK -->
+			              <div class="box-padrao facebook" style="width:300px; margin:0 0 20px 0; float:left;">
+			                  <g:plusone></g:plusone>
+			                  <br /><br />
+			                  <a href="<?php if($site->twitter_url!=""): ?><?php echo $site->twitter_url ?><?php else: ?>http://twitter.com/tvcultura<?php endif; ?>" class="twitter-follow-button">Siga @<?php echo $site->title ?></a>
+			                  <br /><br />
+			                  <fb:like-box href="<?php if($site->facebook_url!=""): ?><?php echo $site->facebook_url ?><?php else: ?>http://facebook.com/tvcultura<?php endif; ?>" width="290" show_faces="true" stream="false" header="true"></fb:like-box>
+			                  <!--fb:activity site="<?php echo $url?>" width="290" height="200" header="false" font="" border_color="" recommendations="true"></fb:activity-->
+			              </div>
+			              <!-- /BOX FACEBOOK -->
           			  </div>
           			</div>
 					<?php if(isset($conteudosRelacionados)): ?>
@@ -118,7 +127,7 @@
 					<?php endif; ?>
           			
           		</div>
-          		<span class="bordaBottomRV"></span>
+          		<span class="bordaBottom"></span>
           	</div>
           </div>
         
