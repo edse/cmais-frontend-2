@@ -1,9 +1,11 @@
-<!-- Modal -->
+              <!-- Modal -->
             <div id="modal" class="modal playlist hide fade">
-              <div class="page-header span6">
-                <h2>Sugira uma playlist</h2>
+              <div class="row-fluid">
+                <div class="page-header">
+                  <h2>Sugira uma playlist</h2>
+                </div>
               </div>
-              <form action="" method="post" id="form-indicacao" class="span6" >
+              <form action="" method="post" id="form-indicacao" class="span12" >
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>

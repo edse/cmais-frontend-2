@@ -2,8 +2,8 @@
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=54321" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=4" type="text/css" />
     <!--[if IE]>
       <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
     <![endif]-->

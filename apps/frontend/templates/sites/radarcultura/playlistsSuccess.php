@@ -28,13 +28,12 @@
         <!--topo menu/alert/logo-->
        
       <!--topo Playlits/contagem-->
-      <div id="row-fluid">
+      <div class="row-fluid">
         <!--Titulo-->
-        <div class="page-header musicas">
-         <h1>
-           <?php echo $section->getTitle()?> <small><?php echo $section->getDescription() ?></small>
+        <div class="playlist musica">
+         <h1><?php echo $section->getTitle()?><br/>
+         <small><?php echo $section->getDescription() ?></small>
          </h1>
-
           <!--contagem-->
           <div class="pull-right">
             <div class="btn-group">
@@ -53,7 +52,7 @@
       <div class="row-fluid musicas" >
         <!--coluna esquerda-->
         <div class="span8" style="margin: 0 0 0 0;">
-          <table class="table table-condensed table-hover playlist">
+          <table class="table table-striped playlist">
             <tbody>
               <thead>
                 <tr>
@@ -79,7 +78,7 @@
         </div>
         <!--/coluna esquerda-->
         <!--coluna direita-->
-        <div class="span4 direita">
+        <div class="span4 direita playlist">
           <!--sobre o programa-->
           <?php
               $displays = array();
@@ -150,19 +149,9 @@
          
       </div>
       <!--/centro pagina-->
-      <!--paginaçao-->
-       <?php if ($pager->haveToPaginate()): ?>
-        <div class="pagination pagination-centered">
-          <ul>
-            <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
-            <?php foreach ($pager->getLinks() as $page): ?>
-              <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
-            <?php endforeach; ?>
-            <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
-          </ul>
-        </div>
-        <?php endif; ?>
-        <!--/paginaçao-->
+      <!--paginador-->
+      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+      <!--paginador-->
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
