@@ -7,24 +7,22 @@
            <ul class="breadcrumb">
              <li><a href="<?php echo url_for('homepage') . $site->getSlug() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
            <?php if($section->getSlug() == "artistas"): ?>
-             <li>Musicas <span class="divider">»</span></li>
              <?php if(isset($artist)): ?>
              <li><a href="">Por artista</a> <span class="divider">»</span></li>
              <li><?php echo $artist ?></li>
              <?php else: ?>
-             <li>Por artista</li>
+             <li>Artistas</li>
              <?php endif; ?>
            <?php elseif($section->getSlug() == "musicas"): ?>
-             <li>Musicas <span class="divider">»</span></li>
              <?php if(isset($asset)): ?>
-             <li><a href="">Por título</a> <span class="divider">»</span></li>
+             <li>Musicas <span class="divider">»</span></li>
              <li><?php echo $asset->getTitle() ?></li>
              <?php else: ?>
-               <?php if(isset($_REQUEST['buscam'])): ?>
-             <li><a href="">Por artista</a> <span class="divider">»</span></li>
-             <li><?php echo $_REQUEST['buscam'] ?></li>
+               <?php if(isset($artist)): ?>
+             <li><a href="<?php echo url_for('homepage') . $site->getSlug() . '/artistas' ?>">Artistas</a> <span class="divider">»</span></li>
+             <li><?php echo $artist ?></li>
                <?php else: ?>
-             <li>Por título</li>
+             <li>Musicas</li>
                <?php endif; ?>
              <?php endif; ?>
            <?php else: ?>
