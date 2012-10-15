@@ -119,13 +119,7 @@ function slugfy($string){
             <form>
             <!--/contagem--> 
           </div>
-          <script>
-          function goToLetter(i){
-            $("#letter").val(i);
-            $("#page").val("");
-            $("#page_form").submit();
-          }
-          </script>
+
           <div class="pagination pagination-centered artista">
             <ul>
               <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/1-9">#</a></li>

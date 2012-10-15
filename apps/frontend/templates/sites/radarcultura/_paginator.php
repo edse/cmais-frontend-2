@@ -27,6 +27,11 @@
     $("#page").val(i);
     $("#page_form").submit();
   }
+  function goToLetter(i){
+    $("#letter").val(i);
+    $("#page").val("");
+    $("#page_form").submit();
+  }
   </script>
   <?php endif; ?>
 <?php endif; ?>
