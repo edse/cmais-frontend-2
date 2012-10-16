@@ -64,6 +64,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* home */
 .span10.radarIndex{max-width:760px\9;padding:10px;}
 .span10.radarIndex a{margin:10px 0 10px 10px}
+.page-header.na-rede{margin:0px 0 10px 0;}
 .page-header.na-rede h3{margin-bottom:-8px}
 .page-header.na-rede small{color:#bbb;}
 .row-fluid.na-rede{margin-bottom:40px;}
@@ -79,7 +80,6 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .icone-rede.twitter{background-position:-139px }
 .icone-rede.facebook{background-position:-111px; padding:0; }
 .icone-rede.googleplus{background-position:-55px }
-.redes .page-header {padding: 0 0 0 8px;margin: 11px 0 11px;}
 .redes .avatar{margin:7px 7px 0px 7px; width: 50px; height: 50px;}
 .redes .indique{clear: both;float: left;margin: 8px;}
 .redes p{padding: 0 0 0 8px}
@@ -89,6 +89,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .redes h4{color:black;}
 .linha-lateral{border-right: 1px #eee solid; height:225px;float:right; position: absolute; top:16px; right:-10px;}
 .row-fluid .span4.como-participar{margin:0px\9;}
+.carousel-control {top: 51%;}
+.carousel {margin-bottom:0}
+.row-fluid.redes{margin-bottom:20px;}
 
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d8;margin: 0 0 -2px 0;}
@@ -130,6 +133,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .direita.content .banner-radio{margin-top:15px;}
 .musicas small{color: #949494;text-align: left;float: left;font-size:12px}
 .musicas h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.table.musica{min-width:25%;}
 .table-striped tbody tr td{color:#484848;} 
 
 
@@ -147,6 +151,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .playlist.musica small{color: #6F6F6F;float:left;}
 .table.playlist tr td{max-width:260px;}
 .direita.playlist{margin-top:30px;}
+.page-header.playlist{border:none;}
 
 /* ao vivo */
 #videoPlayer{margin:0 auto;width:451px;}
@@ -163,8 +168,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .modal-footer{margin-top:75px;clear:both\9;}
 
 /* content */
-.page-header.content {padding-bottom: 5px;margin: 0px 0 20px;border-bottom: 1px solid #EEE;}
-.page-header.content h1{margin-bottom:0px;}
-.content small{color:#6F6F6F;}
+.content {padding-bottom: 5px;margin: 0px 0 20px;}
+.content h1{margin-bottom:0px;}
+.content small{color:#6F6F6F;font-size:14px;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}

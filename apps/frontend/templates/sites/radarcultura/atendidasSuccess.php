@@ -32,7 +32,7 @@
       <!--topo Playlits/contagem-->
       <div id="row-fluid">
         <!--Titulo-->
-        <div class="page-header musicas">
+        <div class="musicas">
            <h1>
             <?php echo $section->getTitle()?> <small><?php echo $section->getDescription() ?></small>
           </h1> 

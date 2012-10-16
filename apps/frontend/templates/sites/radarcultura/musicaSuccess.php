@@ -493,8 +493,9 @@
          <?php if(count($relacionados) > 0): ?>
          <!--pela web-->  
          <div class="row-fluid">
-            <div class="span12 page-header">
-              <h3>Pela Web <small> quem já indicou essa música</small></h3>
+            <div class="span12 page-header na-rede">
+              <h3>Pela Web</h3>
+              <small> quem já indicou essa música</small>
             </div>
             <!-- pitaco -->
             <div class="row-fluid">
