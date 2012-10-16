@@ -154,7 +154,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .page-header.playlist{border:none;}
 
 /* ao vivo */
-#videoPlayer{margin:0 auto;width:451px;}
+#videoPlayer embed{width:495px;height:370px;}
+.page-header.ao-vivo{border:none;margin: 20px 0 10px 0;color: #6F6F6F;}
 
 /* modal */
 .error.valid{display:none !important;}
