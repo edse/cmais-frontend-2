@@ -59,12 +59,12 @@
               <?php if(isset($displays['playlists'])):?>
                 <?php if(count($displays['playlists']) > 0): ?>
                 
-                    <div class="page-header">
+                    <div class="page-header na-rede">
                       <h3>Pitacos<small></small></h3>
                     </div>
                     <div class="row-fluid redes">
                       <?php foreach($displays['playlists'] as $k=>$d): ?>
-                      <div class="span6 thumbnail">
+                      <div class="span4">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                         </a>

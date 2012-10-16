@@ -64,6 +64,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* home */
 .span10.radarIndex{max-width:760px\9;padding:10px;}
 .span10.radarIndex a{margin:10px 0 10px 10px}
+.page-header.na-rede{margin:0px 0 10px 0;}
 .page-header.na-rede h3{margin-bottom:-8px}
 .page-header.na-rede small{color:#bbb;}
 .row-fluid.na-rede{margin-bottom:40px;}
@@ -90,7 +91,6 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid .span4.como-participar{margin:0px\9;}
 .carousel-control {top: 51%;}
 .carousel {margin-bottom:0}
-.page-header.na-rede{margin:10px 0 20px 0;}
 .row-fluid.redes{margin-bottom:20px;}
 
 /* lista assets subsection */
@@ -151,6 +151,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .playlist.musica small{color: #6F6F6F;float:left;}
 .table.playlist tr td{max-width:260px;}
 .direita.playlist{margin-top:30px;}
+.page-header.playlist{border:none;}
 
 /* ao vivo */
 #videoPlayer{margin:0 auto;width:451px;}
