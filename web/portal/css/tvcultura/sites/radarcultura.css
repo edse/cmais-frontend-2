@@ -160,7 +160,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
-.modal.musicas{top:46% !important;}
+.modal.musicas{top:42% !important;}
 .modal.fade.in {top: 15%;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
