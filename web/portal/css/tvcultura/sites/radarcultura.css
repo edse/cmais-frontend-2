@@ -159,14 +159,16 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 /* modal */
 .error.valid{display:none !important;}
-.modal{min-width: 633px;top:15%;padding-right:30px;}
-.modal.playlist .page-header{margin-left:20px;}
+.modal{width: 476px;padding: 0 30px;}
+.modal.musicas{top:46% !important;}
 .modal.fade.in {top: 15%;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-body {max-height: 440px;}
-.modal-footer{margin-top:75px;clear:both\9;}
+.modal-footer{margin-top:15px;clear:both\9;}
+.modal-footer.musica{margin-top:75px;}
+
 
 /* content */
 .content {padding-bottom: 5px;margin: 0px 0 20px;}
