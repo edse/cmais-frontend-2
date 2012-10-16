@@ -43,9 +43,9 @@
           <!-- botao --->
             <?php else: ?>  
           <!-- botao --->
-          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
+          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>"><?php echo $s?> <?php echo $section->id?>
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
-          </li>
+          </li>         
           <!-- /botao --->
             <?php endif; ?>
           
@@ -56,6 +56,7 @@
        <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
+       
        
      </div>
      <!-- menu --->
