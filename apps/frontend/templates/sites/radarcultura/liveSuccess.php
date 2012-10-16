@@ -32,7 +32,7 @@
       <div class="row-fluid">
         <!--transmissao ao vivo -->
         <div class="span6">  
-          <div class="page-header">
+          <div class="page-header ao-vivo">
             <h4>Transmiss&atilde;o ao vivo</h4>
           </div>
           <div id="videoPlayer"></div>
@@ -54,14 +54,14 @@
           <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
          <!-- comentario facebook -->
-         <fb:comments href="http://cmais.com.br" numposts="3" width="450" publish_feed="true"></fb:comments>
+         <fb:comments href="http://cmais.com.br" numposts="3" width="495" publish_feed="true" style="margin-top:30px;"></fb:comments>
          <hr />
          <!-- /comentario facebook -->
          </div>      
          <!--/transmissao ao vivo -->
          <!--Bate papo-->
          <div class="span6">
-           <div class="page-header">
+           <div class="page-header ao-vivo">
             <h4>Bate Papo</h4>
            </div> 
            <iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=aa92a56e37/height=680/width=467" scrolling="no" height="680px" width="467px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=aa92a56e37" >Rádio Cultura Brasil</a></iframe>

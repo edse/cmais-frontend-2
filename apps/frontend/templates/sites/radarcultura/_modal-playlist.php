@@ -5,7 +5,7 @@
                   <h2>Sugira uma playlist</h2>
                 </div>
               </div>
-              <form action="" method="post" id="form-indicacao" class="span12" >
+              <form action="" method="post" id="form-indicacao">
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>

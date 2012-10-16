@@ -56,7 +56,7 @@
       <div class="row-fluid musicas" >
         <!--coluna esquerda-->
         <div class="span8" style="margin: 0 0 0 0;">
-          <table class="table table-condensed table-hover playlist">
+          <table class="table table-striped playlist">
             <tbody>
               <thead>
                 <tr>

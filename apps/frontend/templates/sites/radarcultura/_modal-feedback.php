@@ -11,7 +11,7 @@
       <h2>Mande sua opinião</h2>
     </div>
     <div class="modal-body playlist">
-      <form action="" method="post" id="form-feedback" class="span5">
+      <form action="" method="post" id="form-feedback">
         <div class="control-group">
           <label>Nome</label>
           <input type="text" placeholder="Nome" name="nome" class="input-large required">
