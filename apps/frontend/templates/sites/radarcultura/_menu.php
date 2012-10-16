@@ -43,7 +43,7 @@
           <!-- botao --->
             <?php else: ?>  
           <!-- botao --->
-          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>"><?php echo $s?> <?php echo $section->id?>
+          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
           </li>         
           <!-- /botao --->
