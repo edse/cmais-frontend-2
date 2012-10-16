@@ -80,7 +80,7 @@
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
                   <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
-                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> veja mais</a>
                   <?php if($k < 2):?>
                     <div class="linha-lateral"></div>
                   <?php endif;?>
