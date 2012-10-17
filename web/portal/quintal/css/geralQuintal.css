@@ -100,7 +100,7 @@ hr{
 }
 .conteudoWrapper{
   width: 970px;
-  height: 380px;
+  height: 430px;
   position:relative;
   z-index: 0;
 }
@@ -285,6 +285,7 @@ hr{
   width: 112px;
   height: 164px;
 }
+.papel .palhaco {  }
 .destaque h2{
   background: url(../images/bg-tituloh2.jpg) no-repeat;
   float: left;
@@ -777,6 +778,7 @@ width: 680px;
 .jogosBox{
   margin-top: 20px;
   width: 970px;
+  position:relative;
 }
 .jogosBox .ludovico{background: url(../images/img-ludovico.png) no-repeat;width:306px;height:462px;display: block; float:left;float: left;margin: 0 0 -63px 56px;}
 .jogosBox .ludovico.jogo{position:absolute; top:0; right:-30px;}
@@ -788,22 +790,25 @@ width: 680px;
   width: 161px;
   height: 349px;
 }
+.papel .palhaco,
 .jogosBox .palhaco{
-  background: url(../images/img-palhaco.png) no-repeat;
+  background: url(../images/img-minhoquias.png) no-repeat;
   display: block;
-  float: left;
+  position:absolute;
+  right:20px;
+  top:110px;
   margin-left: 10px;
-  width: 227px;
-  height: 380px;
+  width: 298px;
+  height: 248px;
 }
+.papel .palhaco { right:0; z-index: 0; }
 .jogosBox .rodaGigante{
   background: url(../images/bg-rodaGigante.png) no-repeat;
-  float: right;
   margin-left: 15px;
-  position: relative;
+  position: absolute;
   width: 378px;
   height: 381px;
-  right: 170px;
+  left: 165px;
 }
 .rodaGigante a.todosJogos{
   background: url(../images/btn-bola.png) no-repeat;
@@ -1448,13 +1453,13 @@ width: 680px;
 .down a.papel{
   background-position: 0 0;
   top: 30px;
-  left: 0px;
+  right: 0px;
   width: 132px;
   height: 96px;
 }
 .down a.carinhas{
   background-position: -131px 0;
-  top: 165px;
+  top: 120px;
   width: 112px;
   height: 77px;
 }
@@ -1470,6 +1475,7 @@ width: 680px;
   left: 213px;
   width: 112px;
   height: 76px;
+  top:230px;
 }
 .down a.papel span,
 .down a.carinhas span,
@@ -1617,6 +1623,7 @@ width: 680px;
   top: 118px;
   left: -98px;
 }
+/*
 .papel .palhaco{
   background: url(../images/img-palhaco4.png) no-repeat;
   margin: 0px;
@@ -1626,15 +1633,16 @@ width: 680px;
   width: 153px;
   height: 382px;
 }
+*/
 .papel .baixarPapelParede{
-  background: url(../images/img-cliqueDownload.png) no-repeat;
+  background: url(../images/img-balao-folhinha.png) no-repeat;
   position: absolute;
   text-indent: -999px;
   overflow: hidden;
-  top: 78px;
+  top: 8px;
   left: 718px;
-  width: 246px;
-  height: 232px;
+  width: 177px;
+  height: 121px;
 }
 .papel .boxDesenho{
   background: url(../images/bg-mes.jpg) repeat-x;
@@ -2015,6 +2023,8 @@ width: 680px;
   text-align: left;
   width: 640px;
   height: 384px;
+  position:relative;
+  z-index: 10;
 }
 .baixar-carinhaWrapper ul{
   margin: 5px 0 0 5px;
@@ -2025,14 +2035,14 @@ width: 680px;
 }
 .baixar-carinhaWrapper li a{}
 .baixarCarinha{
-  background: url(../images/img-clicleCarinha.png) no-repeat;
+  background: url(../images/img-balao-carinha.png) no-repeat;
   display: block;
-  float: left;
-  margin: 35px 0 0 40px;
-  overflow: hidden;
   text-indent: -9999px;
-  width: 284px;
-  height: 243px;
+  width: 173px;
+  height: 117px;
+  position:absolute;
+  right:40px;
+  top:-10px;
 }
 .boxCarinha{
   margin: 64px 0 0 19px!important;

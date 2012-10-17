@@ -32,22 +32,35 @@
       <!--topo Artista/contagem-->
       <div id="row-fluid">
         <div class="row-fluid musicas">
-            <h1>Lista de músicas por artistas
+            <h1>Lista de músicas por título
               <?php if(isset($letter)):?>
                 <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
               <?php else:?>
                 <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
               <?php endif; ?>  
             </h1>
-            
-            <!--contagem-->
-            <form action="" method="post">
-              <input class="btn pull-right btn-busca" type="submit" value="Busca">
-              <div class="input-prepend">
-               <input class="span3 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
-              </div>
-            <form>
-            <!--/contagem--> 
+            <div class="span6">
+              <!--busca-->
+              <form action="" method="post">
+                <div class="row-fluid">
+                  <input class="btn pull-right btn-busca" type="submit" value="Busca">
+                  <div class="input-prepend">
+                   <input class="span6 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                  </div>
+                </div>  
+                <div class="row-fluid">
+                  <label class="radio inline" style="margin-left: 147px">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Por Título
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    Por Artista
+                  </label>
+                </div>
+              </form>
+              <!--/busca--> 
+            </div>
           </div>
       </div>
       <!--/topo Artista/contagem-->
@@ -226,7 +239,7 @@
                 <div class="modal-footer musica">
                   <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
                   <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-                  <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"/>
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
             </form> 
