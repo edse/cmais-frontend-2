@@ -53,7 +53,7 @@
        </ul>
        <?php endif; ?>
        
-       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=425,height=110,left=50,top=50,scrollbars=no'); return false;">
+       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=425,height=115,left=50,top=50,scrollbars=no,resizable=no'); return false;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
