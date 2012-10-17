@@ -10,6 +10,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* /topo cmais desktop */
 
 /* geral */
+.icon-list {background-position: -360px -50px;}
 .table th, .table td {border:none;}
 .table td a{color:#484848;}
 .table td a.btn{color:#FFF;}
@@ -174,5 +175,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .content {padding-bottom: 5px;margin: 0px 0 20px;}
 .content h1{margin-bottom:0px;}
 .content small{color:#6F6F6F;font-size:14px;}
+.content-asset p,
+.content-asset strong,
+.content-asset span{color:black !important;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}
