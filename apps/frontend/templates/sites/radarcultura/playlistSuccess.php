@@ -31,12 +31,193 @@
               
         <div class="page-header playlist">
           <h1><?php echo $asset->getTitle() ?> <small></small></h1>
-          <!--contagem-->
-          <div class="pull-right">
-            <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira uma playlist</a>     
-          </div>
-          <!--/contagem-->
+       
+            <div class="btn-group pull-right">
+              <a href="javascript:;" class="btn btn-large btn-danger" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira uma playlist</a>
+              <a href="javascript:;" class="btn btn-large btn-danger" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique uma música</a>
+            </div>
         </div>
+        <!--modal-->
+        <div id="modal-1" class="modal musicas hide fade">
+          <!--modal-header-->  
+          <div class="modal-header">
+            <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2>Indique esta Música</h2>
+          </div>
+          <!--/modal-header-->
+          <!--modal-body-->
+          <div class="modal-body" class="row-fluid">
+            <form action="" method="post" id="form-indicacao-1" class="row-fluid">
+              
+              <div class="span6">
+                <input type="hidden" name="section_id" value="1952" />
+                <legend>Dados Pessoais</legend>
+                <div class="control-group">
+                  <label>Nome</label>
+                  <input type="text" placeholder="Nome" name="nome" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>E-mail</label>
+                  <input type="text"  name="email" placeholder="email@dominio.com.br" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">
+                  <label>Cidade</label>
+                  <input type="text"  name="cidade" placeholder="Cidade" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>Estado</label>
+                  <span class="help-block"></span>
+                  <select class="estado required input-large"  name="estado" id="estado">
+                      <option value="" selected="selected">--</option>
+                      <option value="Acre">AC</option>
+                      <option value="Alagoas">AL</option>
+                      <option value="Amazonas">AM</option>
+                      <option value="Amap&aacute;">AP</option>
+                      <option value="Bahia">BA</option>
+                      <option value="Cear&aacute;">CE</option>
+                      <option value="Distrito Federal">DF</option>
+                      <option value="Espirito Santo">ES</option>
+                      <option value="Goi&aacute;s">GO</option>
+                      <option value="Maranh&atilde;o">MA</option>
+                      <option value="Minas Gerais">MG</option>
+                      <option value="Mato Grosso do Sul">MS</option>
+                      <option value="Mato Grosso">MT</option>
+                      <option value="Par&aacute;">PA</option>
+                      <option value="Para&iacute;ba">PB</option>
+                      <option value="Pernambuco">PE</option>
+                      <option value="Piau&iacute;">PI</option>
+                      <option value="Paran&aacute;">PR</option>
+                      <option value="Rio de Janeiro">RJ</option>
+                      <option value="Rio Grande do Norte">RN</option>
+                      <option value="Rond&ocirc;nia">RO</option>
+                      <option value="Roraima">RR</option>
+                      <option value="Rio Grande do Sul">RS</option>
+                      <option value="Santa Catarina">SC</option>
+                      <option value="Sergipe">SE</option>
+                      <option value="S&atilde;o Paulo">SP</option>
+                      <option value="Tocantins">TO</option>
+                  </select>
+                </div>
+              </div>
+              <div class="span6">
+                <legend>Minha Indicação</legend>
+                <div class="control-group">
+                  <label>Título</label>
+                  <input type="text" name="titulo" class="input-large required">
+                  <span class="help-block"></span>
+                </div>  
+                <div class="control-group">  
+                  <label>Intérprete</label>
+                  <input type="text" name="interprete" class="input-large required">
+                </div>  
+                <div class="control-group">
+                  <label>URL</label>
+                  <input type="text" name="url" class="input-large required" >
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="modal-footer musica">
+                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
+                </div>
+              </div>
+            </form> 
+            <!--scripts-->
+        <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
+        <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          
+          var validator = $('#form-indicacao-1').validate({
+            rules:{
+              nome:{
+                required: true,
+                minlength: 2
+              },
+              email:{
+                required: true,
+                email: true
+              },
+              cidade:{
+                required: true,
+                minlength: 3
+              },
+              estado:{
+                required: true,
+                minlength: 1
+              },
+              titulo:{
+                required: true,
+                minlength: 1
+              },
+              interprete:{
+                required: true,
+                minlength: 1
+              },
+              url:{
+                required: true,
+                minlength: 1
+              }
+            },
+            highlight: function(label) {
+              $(label).closest('.control-group').addClass('error');
+            },
+            success: function(label){
+              label
+                .text('OK!').addClass('valid')
+                .closest('.control-group').addClass('success');
+            },
+            submitHandler: function(form){
+              $.ajax({
+                type: "POST",
+                dataType: "text",
+                data: $("#form-indicacao-1").serialize(),
+                beforeSend: function(){
+                  $('#loader2').show();
+                  $('.btn-enviar').hide();
+                },
+                success: function(data){
+                  window.location.href="javascript:;";
+                  if(data == "1"){
+
+                  }
+                  else {
+
+                  }
+                }
+              });         
+            }
+          });
+        });
+      </script>
+      <script>
+      $(document).ready(function() {
+        //$('#popover').popover('show');
+        $('#socialBtn-1').popover({
+          placement:"left"
+        });
+        $('#socialBtn-1').click(function(){
+          $('#socialBtn').popover('hide');
+          $('html, body').animate({
+          scrollTop: $("#guia-topo").offset().top
+            }, "slow");
+          });
+          
+        $('.btn-fechar').click(function(){
+          $('#socialBtn-1').popover('hide');
+        });
+      });
+      </script>
+      <!--script-->
+          </div>
+          <!--/modal-body-->
+        </div>
+        <!--/modal-->
+
 
         
         
