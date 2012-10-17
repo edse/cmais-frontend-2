@@ -145,7 +145,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.musicas{min-width:309px;min-width:300px\9;}
 
 /* playlists */
-.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black;}
+.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black; max-width:635px;}
 .playlist h1 small{font-size:12px;}
 .playlist.musica{margin:30px 0 0 0;}
 .playlist.musica h1{float:left;}
@@ -161,8 +161,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
-.modal.musicas{top:42% !important;}
-.modal.fade.in {top: 15%;}
+
+.modal.fade.in {top: 20%;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
