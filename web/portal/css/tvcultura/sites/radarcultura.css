@@ -145,7 +145,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.musicas{min-width:309px;min-width:300px\9;}
 
 /* playlists */
-.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: #6F6F6F;}
+.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black;}
 .playlist h1 small{font-size:12px;}
 .playlist.musica{margin:30px 0 0 0;}
 .playlist.musica h1{float:left;}
@@ -157,7 +157,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* ao vivo */
 #videoPlayer embed{width:495px;height:370px;}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: #6F6F6F;padding: 0;}
-
+.page-header.ao-vivo h4{text-transform: none;}
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
@@ -181,3 +181,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
+
+/* player */
+#mediaplayer_wrapper {margin-bottom:0px;}
+#radar-home h1 a{margin:0 0 0 15px;}
