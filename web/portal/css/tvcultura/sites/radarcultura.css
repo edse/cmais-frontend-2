@@ -145,7 +145,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.musicas{min-width:309px;min-width:300px\9;}
 
 /* playlists */
-.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black; max-width:648px;}
+.playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black; max-width:635px;}
 .playlist h1 small{font-size:12px;}
 .playlist.musica{margin:30px 0 0 0;}
 .playlist.musica h1{float:left;}
