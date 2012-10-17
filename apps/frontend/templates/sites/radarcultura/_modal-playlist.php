@@ -69,7 +69,7 @@
                     </div>
                     <div class="control-group">
                       <label>Descrição</label>
-                      <textarea name="descricao" class="required"></textarea>
+                      <textarea name="descricao" class="required" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row-fluid">
