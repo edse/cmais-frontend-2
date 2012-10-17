@@ -180,3 +180,4 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .content-asset span{color:black !important;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
