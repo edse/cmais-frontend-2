@@ -202,6 +202,12 @@
           placement:"left"
           
         });
+        $('#socialBtn').click(function(){
+          $('html, body').animate({
+          scrollTop: $("#guia-topo").offset().top
+            }, "slow");
+          });
+        });
         
         $('.btn-fechar').click(function(){
           $('#socialBtn').popover('hide');
