@@ -1,7 +1,7 @@
 
 <!--FEEDBACK-->
 <div class="btn-feedback">
-  <a href="#modal-feedback" class="" data-toggle="modal">Feedback</a>
+  <a href="#modal-feedback" class="" data-toggle="modal">Dê a sua opinião</a>
 </div>  
 <!--/FEEDBACK-->
 <!-- Modal Feedback-->

@@ -29,7 +29,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #CCC;z-index: 10;}
-.btn-feedback a{padding: 0px 20px; line-height: 40px; }
+.btn-feedback a{padding: 0px 20px; line-height: 40px; color:#FFFFFF; }
 .modal{position:absolute;z-index:13000;}
 .modal-backdrop{position:absolute;z-index:12000;}
 #modal-feedback .modal-body{min-height:252px}
@@ -95,7 +95,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid.redes{margin:-4px 0 0 0;}
 
 /* lista assets subsection */
-.lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d8;margin: 0 0 -2px 0;}
+.lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d5;margin: 0 0 -2px 0;}
 .lista-assets a h2,
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
@@ -120,7 +120,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table.artista h4{color:black;}
 .table.artista tr td{max-width: 312px}
 .pagination {height: 40px;margin: 60px 0 40px 0;}
-.pagination a{color: #00b4d8;}
+.pagination a{color: #00b4d5;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */
