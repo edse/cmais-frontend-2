@@ -206,3 +206,4 @@ div.jp-volume-bar,
 div.jp-volume-bar-value, 
 div.jp-video div.jp-video-play, 
 div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png) !important;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
