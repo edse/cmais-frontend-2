@@ -572,7 +572,7 @@ class _assetActions extends sfActions
           if($debug) print "<br>2-1b>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/musica';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/musica');
         }
-        elseif ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlist") {
+        elseif ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlists") {
           if($debug) print "<br>2-1c>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist');
         }
