@@ -101,7 +101,7 @@ function slugfy($string){
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artista' => $artist)) ?>
         <!--letra-->      
         <div class="row-fluid">  
-          <div class="row-fluid artista">
+          <div class="row-fluid musicas">
             <h1>Lista de músicas por artistas</h1>
               
             <!--
@@ -110,14 +110,28 @@ function slugfy($string){
             <?php endif; ?>
             -->
             
-            <!--contagem-->
-            <form action="" method="post">
-              <input class="btn pull-right btn-busca" type="submit" value="Busca">
-              <div class="input-prepend">
-               <input class="span3 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
-              </div>
-            <form>
-            <!--/contagem--> 
+            <div class="span6 pull-right">
+              <!--busca-->
+              <form action="" method="post">
+                <div class="row-fluid">
+                  <input class="btn pull-right btn-busca" type="submit" value="Busca">
+                  <div class="input-prepend">
+                   <input class="span6 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                  </div>
+                </div>  
+                <div class="row-fluid">
+                  <label class="radio inline" style="margin-left: 147px">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    Por Título
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Por Artista
+                  </label>
+                </div>
+              </form>
+              <!--/busca--> 
+            </div> 
           </div>
 
           <div class="pagination pagination-centered artista">
