@@ -109,7 +109,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .span10 p{margin:0 0 20px 0;}
 .lista-assets .span2{height: 39px; margin: 0 0 20px 0;}
 .lista-assets .span2 img{margin-top:7px;}
-.row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0;}
+.row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0; font-size:24px;}
 
 /* artistas */
 .artista h1{float: left;margin: 34px 0 0 0 ;font-size: 24px;color: black;}
@@ -124,7 +124,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */
-.row-fluid.musicas{margin-top:30px;}
+.row-fluid.musicas{margin-top:10px;}
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
 .table.musica{color:#333;}
@@ -139,7 +139,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 
 /* musica */
-.musica h1{max-width:825px; float:left;color:black;}
+.musica h1{max-width:825px; float:left;color:black; font-size:24px}
 .popover {width: 350px;}
 .facebook-comment{width:100px; float:left;}
 .table.musicas{min-width:309px;min-width:300px\9;}
@@ -157,7 +157,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* ao vivo */
 #videoPlayer embed{width:495px;height:370px;}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: black;padding: 0;}
-.page-header.ao-vivo h4{text-transform: none;}
+.page-header.ao-vivo h4{text-transform: none;font-size:24px;}
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
@@ -173,7 +173,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 /* content */
 .content {padding-bottom: 5px;margin: 0px 0 20px;}
-.content h1{margin-bottom:0px;}
+.content h1{font-size:24px;margin-bottom:0px;}
 .content small{color:#6F6F6F;font-size:14px;}
 .content-asset p,
 .content-asset strong,
