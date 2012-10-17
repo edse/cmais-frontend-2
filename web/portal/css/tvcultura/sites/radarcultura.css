@@ -185,3 +185,4 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
 /* player */
 #mediaplayer_wrapper {margin-bottom:0px;}
 #radar-home h1 a{margin:0 0 0 15px;}
+#radar-home .row {width: 415px;margin: 0 0 0 0 !important;height: 109px;}
