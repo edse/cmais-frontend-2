@@ -186,3 +186,23 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
 #mediaplayer_wrapper {margin-bottom:0px;}
 #radar-home h1 a{margin:0 0 0 15px;}
 #radar-home .row {width: 415px;margin: 0 0 0 0 !important;height: 109px;}
+a.jp-play, 
+a.jp-play:hover, 
+a.jp-pause,
+a.jp-pause:hover, 
+a.jp-stop, 
+a.jp-stop:hover, 
+a.jp-previous, 
+a.jp-previous:hover, 
+a.jp-next, 
+a.jp-next:hover, 
+div.jp-seek-bar, 
+div.jp-play-bar, 
+a.jp-mute, 
+a.jp-mute:hover, 
+a.jp-unmute, 
+a.jp-unmute:hover, 
+div.jp-volume-bar, 
+div.jp-volume-bar-value, 
+div.jp-video div.jp-video-play, 
+div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png);}
