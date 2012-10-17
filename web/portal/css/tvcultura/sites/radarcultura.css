@@ -205,4 +205,4 @@ a.jp-unmute:hover,
 div.jp-volume-bar, 
 div.jp-volume-bar-value, 
 div.jp-video div.jp-video-play, 
-div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png);}
+div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png) !important;}
