@@ -233,16 +233,16 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="<?php echo"titulo"?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo"titulo"?>" class="input-large" disabled="disabled" id="music">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="<?php echo "descricao"?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo "descricao"?>" class="input-large" disabled="disabled" id="performer">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo "url"?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo "url"?>" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
                 </div>
               </div>
               <div class="row-fluid">
