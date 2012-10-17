@@ -140,7 +140,7 @@
               $('.socialBtn').click(function(){
                 $('#music').val($('.music-'+$(this).attr('name')).html());
                 $('#performer').val($('.performer-'+$(this).attr('name')).html());
-                $('#url').val($('.play input[type=hidden]').val());
+                //$('#url').val($('.play input[type=hidden]').val());
               });
             });
           </script>
@@ -242,7 +242,7 @@
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo "url"?>" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
+                  <input type="text" value="<?php echo $uri ?>" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
                 </div>
               </div>
               <div class="row-fluid">
