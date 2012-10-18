@@ -197,4 +197,3 @@
         $("#page_form").submit();
       }
     </script>
-    <!--/form paginacao-->  
