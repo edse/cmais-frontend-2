@@ -462,7 +462,7 @@ class _sectionActions extends sfActions
             ->execute();
         }
         else{
-          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
+          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -1175,7 +1175,7 @@ class _sectionActions extends sfActions
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-        if ($this->site->getSlug() != "inglescommusica")
+        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes"))
           $this->assetsQuery->limit(60);
       }
       else{
@@ -1199,7 +1199,7 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-      if ($this->site->getSlug() == "inglescommusica")
+      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes"))
         $pagelimit = 9;
             
     }
@@ -1420,7 +1420,7 @@ class _sectionActions extends sfActions
             if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo');
           }
-          elseif($this->site->getSlug() == "inglescommusica"){
+          elseif(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")){
             if($debug) print "<br>3.01>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
           }
