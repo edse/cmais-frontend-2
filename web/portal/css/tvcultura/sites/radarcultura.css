@@ -185,8 +185,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
 /* player */
  
 #radar-home h1 a{margin:0 0 0 15px;}
-#radar-home .row {width: 415px;margin: 0 0 0 5px !important;height: 109px;}
-a.jp-play, 
+#radar-home .row {width: 415px;margin: 0 auto !important;height: 109px;}
 a.jp-play, 
 a.jp-play:hover, 
 a.jp-pause,
