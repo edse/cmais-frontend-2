@@ -128,8 +128,8 @@
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3"/>
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
@@ -176,21 +176,23 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    alert('ok');
                   }
-                  else {
-
+                  else{
+                    alert('Erro!');
                   }
                 }
-              });         
+              });
             }
           });
         });
@@ -219,18 +221,6 @@
           $('#socialAlert').fadeIn();
         }
         
-        /*
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222430124549926";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        
-        FB.init({appId: "222430124549926", status: true, cookie: true});
-        */
-        
       });
   
       function postTwitter() {
@@ -242,16 +232,6 @@
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
       }
-
-  
-      /*
-      function postFacebook() {
-        $('#socialBtn').popover('hide');
-        $('#socialBtn').hide();
-        $('#socialLoading').fadeIn();
-        self.location.href='postToFacebook.php';
-      }
-      */
       
       function postToFeed() {
         // calling the API ...
@@ -264,7 +244,7 @@
         };
         function callback(response) {
           console.log(response);
-          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
           //loading
@@ -400,7 +380,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo nl2br($asset->AssetContent->getHeadlineLong()); else echo "Letra não disponível";?>
+                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
                   </td> 
                 </tr> 
               </table>

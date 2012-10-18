@@ -247,8 +247,8 @@
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
@@ -290,21 +290,23 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    alert('ok');
                   }
-                  else {
-
+                  else{
+                    alert('Erro!');
                   }
                 }
-              });         
+              });
             }
           });
         });
