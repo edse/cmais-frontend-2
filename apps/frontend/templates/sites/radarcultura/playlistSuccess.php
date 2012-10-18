@@ -213,6 +213,70 @@
           $('#socialBtn-1').popover('hide');
         });
       });
+      
+      //////////////////////
+      
+      function postTwitter() {
+        $('#socialBtn').popover('hide');
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+      }
+  
+      function postGoogle() {
+        $('#socialBtn').popover('hide');
+        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
+      }
+      
+      function postToFeed() {
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: '<?php echo $uri?>',
+          name: '<?php echo $asset->getTitle()?>',
+          caption: '<?php echo $asset->getDescription()?>',
+          description: 'Minha indicação para o RadarCultura'
+        };
+        function callback(response) {
+          console.log(response);
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //obj
+          opts= "post_id="+response['post_id'];
+          //loading
+          $('#socialBtn').popover('hide');
+          $('#socialBtn').hide();
+          $('#socialLoading').fadeIn();
+          
+          $.ajax({
+            url: 'http://cmais.com.br/actions/radarcultura/facebookPost.php',
+            data: opts,
+            dataType: "html",
+            success: function(data) {
+              $('#socialLoading').fadeOut();
+              if(data == "1"){
+                $('#socialAlert').fadeIn();
+              }else{
+                alert('erro');
+              }
+            }
+          });
+        }
+        FB.ui(obj, callback);
+      }
+  
+      function popup(url,name,windowWidth,windowHeight){
+        myleft=(screen.width)?(screen.width-windowWidth)/2:100;
+        mytop=(screen.height)?(screen.height-windowHeight)/2:100;
+        properties = "width="+windowWidth+",height="+windowHeight;
+        properties +=",scrollbars=yes, top="+mytop+",left="+myleft;
+        window.open(url,name,properties);
+      }
+      
+      function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str,key,value) {
+          params[key] = value;
+        });
+        return params;
+      }
       </script>
       <!--script-->
           </div>
