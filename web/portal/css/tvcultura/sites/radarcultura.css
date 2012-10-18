@@ -55,7 +55,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav .dropdown-toggle .caret {margin-top: 6px;border-top-color: #00b4d5C;border-bottom-color: #00b4d5C;}
 .nav.menu-principal .navbar-search .search-query {padding: 13px 14px;line-height: 16px;}
 .nav.menu-principal .nav .dropdown-toggle .caret {border-top-color: #000;border-bottom-color: #000;}
-.nav.menu-principal .dropdown-menu > li:hover > a  {background: none; color:#00b4d5;}
+.nav.menu-principal .dropdown-menu > li:hover > a  {background-color:#FFF; color:#00b4d5;}
+.nav.menu-principal .dropdown-menu > li > a{background-color:#FFF;}
 .nav.menu-principal .dropdown-menu > li{color:#515151; margin:0; }
 .nav.menu-principal .dropdown.open > a{color:#FFF;background-color: #515151; border-bottom-left-radius:0; border-bottom-right-radius:0;}
 .nav.menu-principal .dropdown-menu{padding:0;min-width: 99px;border:1px solid #515151;border-radius:0;margin-top:-3px; }
