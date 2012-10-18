@@ -1,9 +1,8 @@
               <!-- Modal -->
             <div id="modal" class="modal playlist hide fade">
-              <div class="row-fluid">
-                <div class="page-header">
-                  <h2>Sugira uma playlist</h2>
-                </div>
+              <div class="modal-header">
+                <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2>Crie sua playlist</h2>
               </div>
               <form action="" method="post" id="form-indicacao">
                 <div class="row-fluid">
