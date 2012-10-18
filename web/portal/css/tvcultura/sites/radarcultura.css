@@ -59,7 +59,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav.menu-principal .dropdown-menu > li > a{background:#FFF;}
 .nav.menu-principal .dropdown-menu > li{color:#515151; margin:0; }
 .nav.menu-principal .dropdown.open > a{color:#FFF;background-color: #515151; border-bottom-left-radius:0; border-bottom-right-radius:0;}
-.nav.menu-principal .dropdown-menu{padding:0;min-width: 102px;border:1px solid #515151;border-radius:0;margin-top:-3px; }
+.nav.menu-principal .dropdown-menu{padding:0;min-width: 104px;border:1px solid #515151;border-radius:0;margin-top:-3px; }
 .nav.menu-principal .dropdown a.dropdown{padding:2px 10px;}
 .span8.menu-principal{position:relative;}
 .breadcrumb {padding: 0px 5px;margin: 0 0 10px;list-style: none;background: none;font-size: 12px;}
@@ -172,6 +172,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
+.modal-header{border:none; padding:0;}
+.modal-header h2{font-size:24px;}
 .modal-body {max-height: 448px; min-width: 473px;}
 .modal-footer{margin-top:15px;clear:both\9;}
 .modal-footer.musica{margin-top:75px; clear: both;}

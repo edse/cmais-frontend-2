@@ -127,7 +127,7 @@
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
-                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <input type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage') . $site->getSlug() . '/' . $section->getSlug() . '/' . $d->getSlug() ?>" />
                   </td>
                 </tr>
@@ -319,15 +319,19 @@
         $('.socialBtn').click(function(){
           $('.socialBtn').not("#"+$(this).attr('id')).popover('hide');
           $("#"+$(this).attr('id')).popover();
-          $('html, body').animate({
-          scrollTop: $(".pagination").offset().top
-            }, "slow");
-          });
         });
         $('.btn-fechar').click(function(){
           $('.socialBtn').popover('hide');
         });
-
+        
+       });
+        function goTop(){
+          $(document).ready(function() {
+            $('html, body').animate({
+              scrollTop: $("#guia-topo").offset().top
+            }, "slow");
+           }); 
+         };
       </script>
       <!--script-->
           </div>
