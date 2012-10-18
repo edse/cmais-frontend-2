@@ -22,7 +22,7 @@
       <div class="row-fluid menu-principal">
         
         <?php if(count($siteSections) > 0): ?>        
-        <ul class="nav menu-principal nav-tabs">
+        <ul class="nav menu-principal nav-pills">
           <?php foreach($siteSections as $k=>$s): ?>
             <?php $subsections = $s->subsections(); ?>
             <?php if(count($subsections) > 0): ?>
@@ -35,7 +35,7 @@
             <ul class="dropdown-menu">
               <?php foreach($subsections as $s): ?>
               <li class="">
-                <a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
+                <a class="dropdown" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
               </li>
               <?php endforeach; ?>
             </ul>
@@ -53,7 +53,7 @@
        </ul>
        <?php endif; ?>
        
-       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=425,height=115,left=50,top=50,scrollbars=no,resizable=no'); return false;">
+       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=430,height=115,left=50,top=50,scrollbars=no,resizable=no'); return false;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
