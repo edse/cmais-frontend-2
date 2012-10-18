@@ -246,7 +246,7 @@
           $('#socialLoading').fadeIn();
           
           $.ajax({
-            url: 'http://cmais.com.br/actions/radarcultura/facebookPost.php',
+            url: '/actions/radarcultura/facebookPost.php',
             data: opts,
             dataType: "html",
             success: function(data) {
