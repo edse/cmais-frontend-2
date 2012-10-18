@@ -400,7 +400,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
+                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo nl2br($asset->AssetContent->getHeadlineLong()); else echo "Letra não disponível";?>
                   </td> 
                 </tr> 
               </table>
