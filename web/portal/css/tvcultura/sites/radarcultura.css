@@ -46,7 +46,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .twt{float:left;margin-left: 10px;}
 .google{float:left;}
 .fb{float:left; margin-left: 10px;}
-.menu-principal{position:relative;min-height: 42px;border-bottom: 1px solid #ECECEC;}
+.nav.menu-principal{position:relative;min-height: 42px;border-bottom: 1px solid #ECECEC;}
 .nav.menu-principal li{margin-right:5px;}
 .nav.menu-principal li.active a{background-color: #515151;}
 .nav.menu-principal > li.active > a{color:#FFFFFF;font-weight: bold;}
