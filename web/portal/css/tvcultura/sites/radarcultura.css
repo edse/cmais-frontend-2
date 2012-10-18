@@ -166,17 +166,18 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 #videoPlayer embed{width:495px;height:370px;}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: black;padding: 0;}
 .page-header.ao-vivo h4{text-transform: none;font-size:24px;}
+
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
-
+.modal form legend{font-size:18px; line-height: 29px; margin-top: 5px;}
 .modal.fade.in {top: 20%;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-header{border:none; padding:0;}
 .modal-header h2{font-size:24px;}
-.modal-body {max-height: 448px; min-width: 473px;}
+.modal-body {max-height: 448px; min-width: 473px; padding:0;}
 .modal-footer{margin-top:15px;clear:both\9;}
 .modal-footer.musica{margin-top:75px; clear: both;}
 
