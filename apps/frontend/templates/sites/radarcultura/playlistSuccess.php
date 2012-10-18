@@ -250,6 +250,7 @@
             data: opts,
             dataType: "text",
             success: function(data) {
+              alert(data)
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $('#socialAlert').fadeIn();
