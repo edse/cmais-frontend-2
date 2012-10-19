@@ -251,7 +251,7 @@ function slugfy($string){
       $('#busca-radar').submit(function() {
         if($("#busca-por1:checked"))
           self.location.href = $('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
-        else if($("#busca-por1:checked"))
+        else if($("#busca-por2:checked"))
           self.location.href = $('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
         return false;
       });                    
