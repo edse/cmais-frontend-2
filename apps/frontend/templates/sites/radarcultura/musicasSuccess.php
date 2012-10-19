@@ -32,13 +32,12 @@
       <!--topo Artista/contagem-->
       <div id="row-fluid">
         <div class="row-fluid musicas">
-            <h1>Lista de músicas por título
-              <?php if(isset($letter)):?>
-                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
-              <?php else:?>
-                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
-              <?php endif; ?>  
-            </h1>
+            <h1>Lista de músicas por título</h1>
+            <?php if(isset($letter)):?>
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+            <?php else:?>
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+            <?php endif; ?>  
             <div class="span5">
               <!--busca-->
               <form action="" method="post">
