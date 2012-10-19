@@ -103,7 +103,7 @@
             <div class="span8">
               <div class="page-header na-rede">
                 <h3>Playlists do Radar</h3>
-                <small>INDICAÇÕES DOS USUÁRIOS Indicações dos usuários</small>
+                <small>Indicações dos usuários</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
