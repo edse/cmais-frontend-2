@@ -261,7 +261,7 @@
                 <div class="modal-footer musica">
                   <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
                   <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
-                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar" data-dismiss="modal" aria-hidden="true"/>
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar" />
                 </div>
               </div>
             </form> 

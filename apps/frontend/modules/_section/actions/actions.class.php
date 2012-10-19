@@ -1204,7 +1204,7 @@ class _sectionActions extends sfActions
             
     }
     if($this->section->Site->getSlug() == "radarcultura") {
-      if($this->section->getSlug() == "playlist")
+      if($this->section->getSlug() == "playlists")
         $pagelimit = 20;
       else if($this->section->getSlug() == "musicas")
         $pagelimit = 20;
