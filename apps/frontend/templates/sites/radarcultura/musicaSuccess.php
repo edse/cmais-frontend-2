@@ -258,9 +258,12 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $('#socialAlert').fadeIn();
-              }else{
-                alert('erro');
+                $("#modal").fadeOut('fast');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $("#socialAlertError").fadeIn('fast');
               }
             }
           });
