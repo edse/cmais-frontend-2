@@ -28,12 +28,14 @@
         <!--topo menu/alert/logo-->
         
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
-          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
-        <div id="socialAlertError" class="alert alert-error alert-in hide">
-          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>      
+        <div class="row-fluid"> 
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
+            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
+            <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>      
+        </div>  
         <div class="page-header playlist">
           
           <h1><?php echo $asset->getTitle() ?><small><?php echo $asset->getDescription() ?></small></h1>
