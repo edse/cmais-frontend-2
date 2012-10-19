@@ -399,14 +399,12 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                goTop();
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
               }
               else{
-                goTop();
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
