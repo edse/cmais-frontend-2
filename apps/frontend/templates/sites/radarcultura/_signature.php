@@ -1,6 +1,6 @@
  <div class="row-fluid signature">
-    <small>Quem escreveu</small>
-    <small class="pull-right">00/00/00 00:00- Atualizado em 00/00/00 00:00</small>  
+    <small><?php echo $asset->AssetContent->getAuthor() ?></small>
+    <small class="pull-right"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>  
   </div>
   <div class="row-fluid cabecalho">
     <div class="share content">
