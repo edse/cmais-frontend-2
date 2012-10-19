@@ -81,21 +81,21 @@
                         <span class="help-block"></span>
                       </div>
                       <div class="control-group lista">
-                        <input type="text" name="musica2" class="input-large required">
+                        <input type="text" name="musica2" class="input-large">
                         <span class="help-block"></span>
                       </div>
                       <div class="control-group lista">
-                        <input type="text" name="musica3" class="input-large required">
+                        <input type="text" name="musica3" class="input-large">
                         <span class="help-block"></span>
                       </div>
                     </div>
                     <div class="span6">
                       <div class="control-group lista">
-                        <input type="text" name="musica4" class="input-large required">
+                        <input type="text" name="musica4" class="input-large">
                         <span class="help-block"></span>
                       </div>
                       <div class="control-group lista last">
-                        <input type="text" name="musica5" class="input-large required">
+                        <input type="text" name="musica5" class="input-large">
                         <span class="help-block"></span>
                       </div>
                     </div>
