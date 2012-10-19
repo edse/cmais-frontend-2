@@ -195,14 +195,12 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    $("#modal").fadeOut('fast');
-                    $(".modal-backdrop").fadeOut('fast');
+                    $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
-                    $("#modal").fadeOut('fast');
-                    $(".modal-backdrop").fadeOut('fast');
+                    $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertError").fadeIn('fast');
                   }

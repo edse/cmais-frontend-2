@@ -84,13 +84,11 @@
             $('#loader2').hide();
             $('.btn-enviar').show();
             if(data == "1"){
-              $("#modal").fadeOut('fast');
-              $(".modal-backdrop").fadeOut('fast');
+              $("#modal").modal('hide');
               $("#socialAlertOk").fadeIn('fast');
             }
             else{
-              $("#modal").fadeOut('fast');
-              $(".modal-backdrop").fadeOut('fast');
+              $("#modal").modal('hide');  
               $("#socialAlertError").fadeIn('fast');
             }
           }

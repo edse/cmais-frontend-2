@@ -159,9 +159,11 @@
                     $('#loader3').hide();
                     $('.btn-enviar').show();
                     if(data == "1"){
+                      $("#modal").modal('hide');
                       alert('ok');
                     }
                     else{
+                      $("#modal").modal('hide');
                       alert('Erro!');
                     }
                   }
