@@ -133,6 +133,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 /* musicas */
 .row-fluid.musicas{margin-top:10px;}
+.row-fluid.musicas small{position:absolute;margin-top:37px;}
+
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
 .table.musica{color:#333;}
