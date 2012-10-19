@@ -357,19 +357,19 @@
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url=<?php echo urlencode($uri)?>', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
       }
   
       function postGoogle() {
         $('#socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
+        popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
       }
       
       function postToFeed() {
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: '<?php echo $uri?>',
+          link: $('#url2').val(),
           name: $('#titulo2').val(),
           caption: $('#interprete2').val(),
           description: 'Minha indicação para o @RadarCultura'
