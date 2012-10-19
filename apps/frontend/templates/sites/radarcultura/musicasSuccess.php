@@ -61,10 +61,10 @@
               <!--/busca--> 
             </div>
           </div>
-          <div id="socialAlertOk" class="alert alert-block alert-in" >
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
             <span><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
-          <div id="socialAlertError" class="alert alert-error alert-in" >
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
             <span><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
       </div>
@@ -316,13 +316,13 @@
                     $(".modal-backdrop").fadeOut('fast');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("fast");', 5000);
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
-                    setTimeout('$("#socialAlertError").fadeOut("fast");', 5000);
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
                 }
               });
