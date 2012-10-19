@@ -309,11 +309,13 @@
                     $(".modal-backdrop").fadeOut('fast');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
+                    setTimeout('$("#socialAlertOk").fadeOut("fast");', 5000);
                   }
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
+                    setTimeout('$("#socialAlertError").fadeOut("fast");', 5000);
                   }
                 }
               });
