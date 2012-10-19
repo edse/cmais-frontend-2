@@ -66,7 +66,7 @@
             <div class="span12">
               <div class="page-header na-rede">
                 <h3>Músicas em Destaque</h3>
-                <small>INDICAÇÕES DE USUÁRIOS</small>
+                <small>Indicações de usuários</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
@@ -103,7 +103,7 @@
             <div class="span8">
               <div class="page-header na-rede">
                 <h3>Playlists do Radar</h3>
-                <small>INDICAÇÕES DOS USUÁRIOS</small>
+                <small>INDICAÇÕES DOS USUÁRIOS Indicações dos usuários</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
@@ -134,7 +134,7 @@
           <div class="span4">
               <div class="page-header na-rede">
                 <h3>Na rede</h3>
-                <small>COMENTÁRIOS DOS USUÁRIOS</small>
+                <small>Comentários dos usuários</small>
               </div>
               <div class="row-fluid redes ">
                 <div class="span12">
