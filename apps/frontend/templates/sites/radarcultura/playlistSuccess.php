@@ -196,13 +196,13 @@
                   $('.btn-enviar').show();
                   if(data == "1"){
                     $("#modal-1").modal('hide');
-                    $('#socialBtn').popover('hide');
+                    $('#socialBtn-1').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
                   else{
                     $("#modal-1").modal('hide');
-                    $('#socialBtn').popover('hide');
+                    $('#socialBtn-1').popover('hide');
                     $("#socialAlertError").fadeIn('fast');
                     setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }

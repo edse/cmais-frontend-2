@@ -28,7 +28,14 @@
         <!--topo menu/alert/logo-->
       <!--breadcrumbs-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
-       
+      <div class="row-fluid" style="margin:10px;">
+        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+      </div>   
       <!--topo Playlits/contagem-->
       <div id="row-fluid">
         <!--Titulo-->
@@ -48,12 +55,7 @@
         
       </div>
       <!--/topo Playlists/contagem-->
-      <div id="socialAlertOk" class="alert alert-block alert-in hide">
-        <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-      </div>
-      <div id="socialAlertError" class="alert alert-error alert-in hide">
-        <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-      </div>
+      
       
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
 

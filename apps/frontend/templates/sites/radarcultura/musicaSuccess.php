@@ -45,11 +45,13 @@
           
         </div>
         <!--/titulo musica-->
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
-            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
-        <div id="socialAlertError" class="alert alert-error alert-in hide">
-          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        <div class="row-fluid" style="margin:10px;">
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
+              <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
+            <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>
         </div>
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
