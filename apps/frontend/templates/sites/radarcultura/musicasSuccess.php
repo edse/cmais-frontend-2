@@ -49,11 +49,11 @@
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por" value="musicas" checked>
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked>
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por" value="artistas">
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas">
                     Por Artista
                   </label>
                 </div>
@@ -272,7 +272,10 @@
         $(document).ready(function(){
 
           $('#busca-radar').submit(function() {
-            self.location.href = $('#busca-por').val()+"/busca-por/"+$('#busca-input').val();
+            if($("#busca-por1:checked"))
+              self.location.href = "/"+$('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
+            else if($("#busca-por2:checked"))
+              self.location.href = "/"+$('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
             return false;
           });                    
           
