@@ -238,12 +238,12 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="music">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="performer">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
@@ -305,10 +305,16 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    alert('ok');
+                    $("#modal").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
-                    alert('Erro!');
+                    $("#modal").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertError").fadeIn('fast');
                   }
                 }
               });
