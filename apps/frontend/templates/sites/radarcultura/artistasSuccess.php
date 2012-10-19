@@ -121,11 +121,11 @@ function slugfy($string){
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por" value="musicas" checked>
+                    <input type="radio" name="busca-por" id="busca-por" value="musicas" />
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por" value="artistas">
+                    <input type="radio" name="busca-por" id="busca-por" value="artistas" checked="checked" />
                     Por Artista
                   </label>
                 </div>
