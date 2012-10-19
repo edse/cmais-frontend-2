@@ -146,6 +146,10 @@
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.play input[type=hidden]').val());
+
+                $('#titulo2').val($('.music-'+$(this).attr('name')).html());
+                $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
+                $('#url2').val($('.play input[type=hidden]').val());
               });
             });
           </script>
