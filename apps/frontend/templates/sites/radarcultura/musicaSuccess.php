@@ -114,16 +114,16 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
+                  <input type="text" name="titulo" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
+                  <input type="text" name="interprete" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                  <input type="text" name="url" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
                 </div>
               </div>
               <div class="row-fluid">
