@@ -38,7 +38,7 @@
             <?php else:?>
               <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
             <?php endif; ?>  
-            <div class="span5">
+            <div class="span5 pull-right">
               <!--busca-->
               <form action="" method="post">
                 <div class="row-fluid">
