@@ -49,7 +49,7 @@
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por" value="titulo" checked>
+                    <input type="radio" name="busca-por" id="busca-por" value="musica" checked>
                     Por Título
                   </label>
                   <label class="radio inline">
@@ -272,7 +272,7 @@
         $(document).ready(function(){
 
           $('#busca-radar').submit(function() {
-            self.location.href = "/busca-por/"+$('#busca-por').val()+"/"+$('#busca-input').val();
+            self.location.href = $('#busca-por').val()+"/busca-por/"+$('#busca-input').val();
             return false;
           });                    
           
