@@ -52,8 +52,8 @@
           <?php endforeach; ?>          
        </ul>
        <?php endif; ?>
-       
-       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=430,height=115,left=50,top=50,scrollbars=no,resizable=no'); return false;">
+                                      
+       <a class="ouca" href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=am','controle','width=300,height=600,left=50,top=50,scrollbars=no,resizable=no'); return false;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
