@@ -186,10 +186,12 @@
                   $('.btn-enviar').show();
                   if(data == "1"){
                     $("#modal").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
                     $("#modal").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
                   }
                 }
@@ -261,9 +263,14 @@
               alert(data)
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $('#socialAlert').fadeIn();
-              }else{
-                alert('erro');
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $("#socialAlertError").fadeIn('fast');
               }
             }
           });
