@@ -320,9 +320,9 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    $("#modal").fadeOut('fast');
-                    $(".modal-backdrop").fadeOut('fast');
-                    $('#socialBtn').popover('hide');
+                    $("#modal").hide();
+                    $(".modal-backdrop").hide();
+                    $('.socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
