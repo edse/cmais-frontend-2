@@ -43,7 +43,7 @@
             <p>
               <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
               <div class="legenda">
-                <small><?php echo $related[0]->getDescription()?></small>
+                <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
               </div>
             </p>
             <?php endif; ?>
