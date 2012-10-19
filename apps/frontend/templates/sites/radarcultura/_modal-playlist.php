@@ -160,11 +160,13 @@
                     $('.btn-enviar').show();
                     if(data == "1"){
                       $("#modal").modal('hide');
-                      alert('ok');
+                      $("#socialAlertOk").fadeIn('fast');
+                      setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                     }
                     else{
                       $("#modal").modal('hide');
-                      alert('Erro!');
+                      $("#socialAlertError").fadeIn('fast');
+                      setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                     }
                   }
                 });

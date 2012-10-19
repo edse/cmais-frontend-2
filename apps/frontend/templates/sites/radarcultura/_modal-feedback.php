@@ -86,10 +86,12 @@
             if(data == "1"){
               $("#modal").modal('hide');
               $("#socialAlertOk").fadeIn('fast');
+              setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
             }
             else{
               $("#modal").modal('hide');  
               $("#socialAlertError").fadeIn('fast');
+              setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
             }
           }
         });

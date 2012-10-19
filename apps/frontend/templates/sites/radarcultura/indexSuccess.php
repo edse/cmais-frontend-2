@@ -13,6 +13,13 @@
 
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
+    <script>
+      $(function(){
+        $('.redes-content a').attr('target','_blank');
+      });
+      
+    </script>
+    
     <!--container-->
     <div class="container">
       
@@ -72,14 +79,14 @@
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
                 <div class="span4">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                    <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                    <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right" target="_blank"></i>
                   </a>
                   <div class="">
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
-                  <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p> 
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?> 
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> veja mais</a>
                   <?php if($k < 2):?>
                     <div class="linha-lateral"></div>
@@ -108,14 +115,14 @@
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
                 <div class="span6">
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" ">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
                   <div class="">
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
                   <?php endif; ?>
@@ -145,7 +152,7 @@
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> ver detalhes</a>
                   <?php endif; ?>
