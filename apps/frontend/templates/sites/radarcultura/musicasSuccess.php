@@ -61,10 +61,10 @@
               <!--/busca--> 
             </div>
           </div>
-          <div id="socialAlertOk" class="alert alert-block alert-in" >
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
             <span><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
-          <div id="socialAlertError" class="alert alert-error alert-in" >
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
             <span><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
       </div>
@@ -146,6 +146,10 @@
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.play input[type=hidden]').val());
+
+                $('#titulo2').val($('.music-'+$(this).attr('name')).html());
+                $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
+                $('#url2').val($('.play input[type=hidden]').val());
               });
             });
           </script>
@@ -238,16 +242,19 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo2">
+                  <input type="hidden" value="" id="titulo">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete2">
+                  <input type="hidden" value="" id="interprete">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
+                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
+                  <input type="hidden" value="" id="url">
                 </div>
               </div>
               <div class="row-fluid">
@@ -309,13 +316,13 @@
                     $(".modal-backdrop").fadeOut('fast');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("fast");', 5000);
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
-                    setTimeout('$("#socialAlertError").fadeOut("fast");', 5000);
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
                 }
               });
@@ -339,13 +346,84 @@
         });
         
        });
-        function goTop(){
-          $(document).ready(function() {
-            $('html, body').animate({
-              scrollTop: $("#guia-topo").offset().top
-            }, "slow");
-           }); 
-         };
+       
+       function goTop(){
+        $(document).ready(function() {
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+         }); 
+       };
+  
+      function postTwitter() {
+        $('#socialBtn').popover('hide');
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+      }
+  
+      function postGoogle() {
+        $('#socialBtn').popover('hide');
+        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
+      }
+      
+      function postToFeed() {
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: '<?php echo $uri?>',
+          name: '<?php echo $asset->getTitle()?>',
+          caption: '<?php echo $asset->getDescription()?>',
+          description: 'Minha indicação para o RadarCultura'
+        };
+        function callback(response) {
+          console.log(response);
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //obj
+          opts= "post_id="+response['post_id'];
+          //loading
+          $('#socialBtn').popover('hide');
+          $('#socialBtn').hide();
+          $('#socialLoading').fadeIn();
+          
+          $.ajax({
+            url: '/actions/radarcultura/facebookPost.php',
+            data: opts,
+            dataType: "html",
+            success: function(data) {
+              $('#socialLoading').fadeOut();
+              if(data == "1"){
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertError").fadeIn('fast');
+              }
+            }
+          });
+        }
+        FB.ui(obj, callback);
+      }
+  
+      function popup(url,name,windowWidth,windowHeight){
+        myleft=(screen.width)?(screen.width-windowWidth)/2:100;
+        mytop=(screen.height)?(screen.height-windowHeight)/2:100;
+        properties = "width="+windowWidth+",height="+windowHeight;
+        properties +=",scrollbars=yes, top="+mytop+",left="+myleft;
+        window.open(url,name,properties);
+      }
+      
+      function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str,key,value) {
+          params[key] = value;
+        });
+        return params;
+      }
+         
       </script>
       <!--script-->
           </div>
