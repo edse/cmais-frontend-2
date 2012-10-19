@@ -26,7 +26,12 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
         <!--topo menu/alert/logo-->
-       
+      <div id="socialAlertOk" class="alert alert-block alert-in hide">
+        <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+      </div>
+      <div id="socialAlertError" class="alert alert-error alert-in hide">
+        <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+      </div> 
       <!--topo Playlits/contagem-->
       <div class="row-fluid">
         <!--Titulo-->
@@ -45,12 +50,7 @@
           <!--/contagem-->
         </div>
         <!--/Titulo-->
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
-            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
-        <div id="socialAlertError" class="alert alert-error alert-in hide">
-          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
+        
 
           <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
         

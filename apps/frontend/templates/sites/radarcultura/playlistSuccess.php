@@ -28,7 +28,12 @@
         <!--topo menu/alert/logo-->
         
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-              
+        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>      
         <div class="page-header playlist">
           
           <h1><?php echo $asset->getTitle() ?><small><?php echo $asset->getDescription() ?></small></h1>
@@ -39,12 +44,7 @@
               <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javasript:goTop();" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique uma música</a>
             </div>
         </div>
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
-          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
-        <div id="socialAlertError" class="alert alert-error alert-in hide">
-          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
+        
         <!--modal-->
         <div id="modal-1" class="modal musicas hide fade">
           <!--modal-header-->  
