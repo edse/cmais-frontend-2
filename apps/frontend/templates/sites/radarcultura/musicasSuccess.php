@@ -370,9 +370,9 @@
         var obj = {
           method: 'feed',
           link: '<?php echo $uri?>',
-          name: '<?php echo $asset->getTitle()?>',
-          caption: '<?php echo $asset->getDescription()?>',
-          description: 'Minha indicação para o RadarCultura'
+          name: $('#titulo2').val(),
+          caption: $('#interprete2').val(),
+          description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
           console.log(response);
