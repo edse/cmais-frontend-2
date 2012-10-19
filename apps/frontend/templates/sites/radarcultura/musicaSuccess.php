@@ -114,16 +114,16 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
+                  <input type="text" name="titulo" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
+                  <input type="text" name="interprete" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                  <input type="text" name="url" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
                 </div>
               </div>
               <div class="row-fluid">
@@ -186,10 +186,14 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    alert('ok');
+                    $("#modal").fadeOut('fast');
+                    $("#modal-backdrop").fadeOut('fast');
+                    $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
-                    alert('Erro!');
+                    $("#modal").fadeOut('fast');
+                    $("#modal-backdrop").fadeOut('fast');
+                    $("#socialAlertError").fadeIn('fast');
                   }
                 }
               });
@@ -258,9 +262,12 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $('#socialAlert').fadeIn();
-              }else{
-                alert('erro');
+                $("#modal").fadeOut('fast');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $("#socialAlertError").fadeIn('fast');
               }
             }
           });
