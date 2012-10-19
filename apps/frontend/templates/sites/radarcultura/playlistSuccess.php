@@ -202,7 +202,7 @@
         $('#socialBtn-1').popover({
           placement:"left"
         });
-        $('#socialBtn-1').click(function(){
+        $('#socialBtn-1,#socialBtn').click(function(){
           $('#socialBtn').popover('hide');
           $('html, body').animate({
           scrollTop: $("#guia-topo").offset().top
