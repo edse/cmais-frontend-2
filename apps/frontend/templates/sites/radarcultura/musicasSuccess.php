@@ -61,11 +61,11 @@
               <!--/busca--> 
             </div>
           </div>
-          <div class="alert alert-block alert-in" >
-            <span><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span>
+          <div id="socialAlertOk" class="alert alert-block alert-in" >
+            <span><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
-          <div class="alert alert-error alert-in" >
-            <span><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span>
+          <div id="socialAlertError" class="alert alert-error alert-in" >
+            <span><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
       </div>
       <!--/topo Artista/contagem-->
