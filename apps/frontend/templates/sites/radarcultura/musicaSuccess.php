@@ -39,12 +39,18 @@
         
             <!--contagem-->
             <div class="pull-right">
-              <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
             </div>
             <!--/contagem-->
           
         </div>
         <!--/titulo musica-->
+        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
@@ -114,22 +120,25 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled" id="titulo2">
+                  <input type="hidden" value="<?php echo $asset->getTitle()?>" id="titulo" name="titulo" />
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled" id="interprete2">
+                  <input type="hidden" value="<?php echo $asset->getDescription()?>" id="interprete" name="interprete" />
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
+                  <input type="hidden" value="<?php echo $uri?>" id="url" name="url" />
                 </div>
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3"/>
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
@@ -176,21 +185,29 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    $("#modal").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertOk").fadeIn('fast');
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
-                  else {
-
+                  else{
+                    $("#modal").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertError").fadeIn('fast');
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
                 }
-              });         
+              });
             }
           });
         });
@@ -200,14 +217,7 @@
         //$('#popover').popover('show');
         $('#socialBtn').popover({
           placement:"left"
-          
         });
-        $('#socialBtn').click(function(){
-          $('html, body').animate({
-            scrollTop: $("#guia-topo").offset().top
-          }, "slow");
-        });
-
         
         $('.btn-fechar').click(function(){
           $('#socialBtn').popover('hide');
@@ -219,19 +229,15 @@
           $('#socialAlert').fadeIn();
         }
         
-        /*
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222430124549926";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        
-        FB.init({appId: "222430124549926", status: true, cookie: true});
-        */
-        
       });
+      
+      function goTop(){
+        $(document).ready(function() {
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+         }); 
+       };
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
@@ -242,16 +248,6 @@
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
       }
-
-  
-      /*
-      function postFacebook() {
-        $('#socialBtn').popover('hide');
-        $('#socialBtn').hide();
-        $('#socialLoading').fadeIn();
-        self.location.href='postToFacebook.php';
-      }
-      */
       
       function postToFeed() {
         // calling the API ...
@@ -264,7 +260,7 @@
         };
         function callback(response) {
           console.log(response);
-          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
           //loading
@@ -273,15 +269,22 @@
           $('#socialLoading').fadeIn();
           
           $.ajax({
-            url: 'http://cmais.com.br/actions/radarcultura/facebookPost.php',
+            url: '/actions/radarcultura/facebookPost.php',
             data: opts,
             dataType: "html",
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $('#socialAlert').fadeIn();
-              }else{
-                alert('erro');
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertError").fadeIn('fast');
               }
             }
           });
@@ -400,7 +403,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo nl2br($asset->AssetContent->getHeadlineLong()); else echo "Letra não disponível";?>
+                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
                   </td> 
                 </tr> 
               </table>

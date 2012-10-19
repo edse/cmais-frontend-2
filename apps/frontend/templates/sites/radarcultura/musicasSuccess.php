@@ -32,35 +32,40 @@
       <!--topo Artista/contagem-->
       <div id="row-fluid">
         <div class="row-fluid musicas">
-            <h1>Lista de músicas por título
-              <?php if(isset($letter)):?>
-                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
-              <?php else:?>
-                <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
-              <?php endif; ?>  
-            </h1>
-            <div class="span6">
+            <h1>Lista de músicas por título</h1>
+            <?php if(isset($letter)):?>
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+            <?php else:?>
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+            <?php endif; ?>  
+            <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="post">
+              <form action="" method="post" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span6 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input"><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
-                  <label class="radio inline" style="margin-left: 147px">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  <label class="radio inline" style="margin-left: 35px">
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked>
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas">
                     Por Artista
                   </label>
                 </div>
               </form>
               <!--/busca--> 
             </div>
+          </div>
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
+            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
+            <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
           </div>
       </div>
       <!--/topo Artista/contagem-->
@@ -128,7 +133,7 @@
                   <td class="play">
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
                     <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
-                    <input type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage') . $site->getSlug() . '/' . $section->getSlug() . '/' . $d->getSlug() ?>" />
+                    <input type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -138,9 +143,16 @@
           <script>
             $(function(){
               $('.socialBtn').click(function(){
-                $('#music').val($('.music-'+$(this).attr('name')).html());
-                $('#performer').val($('.performer-'+$(this).attr('name')).html());
+                
+                alert($('#url2').val());
+                
+                $('#titulo').val($('.music-'+$(this).attr('name')).html());
+                $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.play input[type=hidden]').val());
+
+                $('#titulo2').val($('.music-'+$(this).attr('name')).html());
+                $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
+                $('#url2').val($('.play input[type=hidden]').val());
               });
             });
           </script>
@@ -233,23 +245,26 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="music">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo2">
+                  <input type="hidden" value="" id="titulo" name="titulo" />
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="performer">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete2">
+                  <input type="hidden" value="" id="interprete" name="interprete" />
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
+                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
+                  <input type="hidden" value="" id="url" name="url" />
                 </div>
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar" />
                 </div>
               </div>
             </form> 
@@ -258,6 +273,14 @@
         <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function(){
+
+          $('#busca-radar').submit(function() {
+            if($("#busca-por1:checked"))
+              self.location.href = "/"+$('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
+            else if($("#busca-por2:checked"))
+              self.location.href = "/"+$('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
+            return false;
+          });                    
           
           var validator = $('#form-indicacao').validate({
             rules:{
@@ -290,21 +313,28 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    $("#modal").modal('hide');
+                    $('.socialBtn').popover('hide');
+                    $("#socialAlertOk").fadeIn('fast');
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
-                  else {
-
+                  else{
+                    $("#modal").modal('hide');
+                    $("#socialAlertError").fadeIn('fast');
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
                 }
-              });         
+              });
             }
           });
         });
@@ -325,13 +355,80 @@
         });
         
        });
-        function goTop(){
-          $(document).ready(function() {
-            $('html, body').animate({
-              scrollTop: $("#guia-topo").offset().top
-            }, "slow");
-           }); 
-         };
+       
+       function goTop(){
+        $(document).ready(function() {
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+         }); 
+       };
+  
+      function postTwitter() {
+        $('#socialBtn').popover('hide');
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
+      }
+  
+      function postGoogle() {
+        $('#socialBtn').popover('hide');
+        popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
+      }
+      
+      function postToFeed() {
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: $('#url').val(),
+          name: $('#titulo').val(),
+          caption: $('#interprete').val(),
+          description: 'Minha indicação para o @RadarCultura'
+        };
+        function callback(response) {
+          console.log(response);
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //obj
+          opts= "post_id="+response['post_id'];
+          //loading
+          $('#socialBtn').popover('hide');
+          $('#socialBtn').hide();
+          $('#socialLoading').fadeIn();
+          
+          $.ajax({
+            url: '/actions/radarcultura/facebookPost.php',
+            data: opts,
+            dataType: "text",
+            success: function(data) {
+              $('#socialLoading').fadeOut();
+              if(data == "1"){
+                $('#socialBtn').popover('hide');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $('#socialBtn').popover('hide');
+                $("#socialAlertError").fadeIn('fast');
+              }
+            }
+          });
+        }
+        FB.ui(obj, callback);
+      }
+  
+      function popup(url,name,windowWidth,windowHeight){
+        myleft=(screen.width)?(screen.width-windowWidth)/2:100;
+        mytop=(screen.height)?(screen.height-windowHeight)/2:100;
+        properties = "width="+windowWidth+",height="+windowHeight;
+        properties +=",scrollbars=yes, top="+mytop+",left="+myleft;
+        window.open(url,name,properties);
+      }
+      
+      function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str,key,value) {
+          params[key] = value;
+        });
+        return params;
+      }
+         
       </script>
       <!--script-->
           </div>

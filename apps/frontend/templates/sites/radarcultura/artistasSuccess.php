@@ -110,22 +110,22 @@ function slugfy($string){
             <?php endif; ?>
             -->
             
-            <div class="span6 pull-right">
+            <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="post">
+              <form action="" method="post" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span6 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input"><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
-                  <label class="radio inline" style="margin-left: 147px">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                  <label class="radio inline" style="margin-left: 35px">
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" />
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" checked="checked" />
                     Por Artista
                   </label>
                 </div>
@@ -246,4 +246,14 @@ function slugfy($string){
       <!--banner horizontal-->
     </div>
     <!--container-->
+    
+    <script>
+      $('#busca-radar').submit(function() {
+        if($("#busca-por1:checked"))
+          self.location.href = "/"+$('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
+        else if($("#busca-por2:checked"))
+          self.location.href = "/"+$('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
+        return false;
+      });                    
+    </script>
 

@@ -26,7 +26,12 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
         <!--topo menu/alert/logo-->
-       
+      <div id="socialAlertOk" class="alert alert-block alert-in hide">
+        <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+      </div>
+      <div id="socialAlertError" class="alert alert-error alert-in hide">
+        <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+      </div> 
       <!--topo Playlits/contagem-->
       <div class="row-fluid">
         <!--Titulo-->
@@ -37,14 +42,15 @@
           <!--contagem-->
           <div class="pull-right">
             <div class="btn-group">
-              <a href="javascript:;" class="btn btn-large btn-danger" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira uma playlist</a>
-              <a href="/atendidas" class="btn btn-large btn-inverse"><i class="icon-list icon-white"></i> Lista Playlists Atendidas</a>
+              <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>
+              <a href="/atendidas" class="btn btn-large btn-info"><i class="icon-list icon-white"></i> Lista Playlists Atendidas</a>
             </div>
                
           </div>
           <!--/contagem-->
         </div>
         <!--/Titulo-->
+        
 
           <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
         
@@ -172,6 +178,14 @@
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
+      $(document).ready(function(){
+        $('#socialBtn').click(function(){ 
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+        });
+      });
+
       function goToPage(i){
         $("#page").val(i);
         //$("#letter").val("");

@@ -28,15 +28,23 @@
         <!--topo menu/alert/logo-->
         
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-              
+        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>      
         <div class="page-header playlist">
-          <h1><?php echo $asset->getTitle() ?> <small></small></h1>
+          
+          <h1><?php echo $asset->getTitle() ?><small><?php echo $asset->getDescription() ?></small></h1>
+          
        
             <div class="btn-group pull-right">
-              <a href="javascript:;" class="btn btn-large btn-danger" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira uma playlist</a>
-              <a href="javascript:;" class="btn btn-large btn-danger" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique uma música</a>
+              <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>
+              <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javasript:goTop();" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Indique uma música</a>
             </div>
         </div>
+        
         <!--modal-->
         <div id="modal-1" class="modal musicas hide fade">
           <!--modal-header-->  
@@ -120,8 +128,8 @@
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
@@ -175,21 +183,29 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao-1").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    $("#modal-1").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertOk").fadeIn('fast');
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
-                  else {
-
+                  else{
+                    $("#modal-1").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertError").fadeIn('fast');
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
                 }
-              });         
+              });
             }
           });
         });
@@ -200,7 +216,7 @@
         $('#socialBtn-1').popover({
           placement:"left"
         });
-        $('#socialBtn-1').click(function(){
+        $('#socialBtn').click(function(){
           $('#socialBtn').popover('hide');
           $('html, body').animate({
           scrollTop: $("#guia-topo").offset().top
@@ -211,6 +227,84 @@
           $('#socialBtn-1').popover('hide');
         });
       });
+      function goTop(){
+        $(document).ready(function() {
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+         }); 
+       };
+      //////////////////////
+      
+      function postTwitter() {
+        $('#socialBtn').popover('hide');
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+      }
+  
+      function postGoogle() {
+        $('#socialBtn').popover('hide');
+        popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
+      }
+      
+      function postToFeed() {
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: '<?php echo $uri?>',
+          name: '<?php echo $asset->getTitle()?>',
+          caption: '<?php echo $asset->getDescription()?>',
+          description: 'Minha indicação para o RadarCultura'
+        };
+        function callback(response) {
+          console.log(response);
+          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          //obj
+          opts= "post_id="+response['post_id'];
+          //loading
+          $('#socialBtn').popover('hide');
+          $('#socialBtn').hide();
+          $('#socialLoading').fadeIn();
+          
+          $.ajax({
+            url: '/actions/radarcultura/facebookPost.php',
+            data: opts,
+            dataType: "text",
+            success: function(data) {
+              alert(data)
+              $('#socialLoading').fadeOut();
+              if(data == "1"){
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertOk").fadeIn('fast');
+              }
+              else{
+                $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
+                $("#socialAlertError").fadeIn('fast');
+              }
+            }
+          });
+        }
+        FB.ui(obj, callback);
+      }
+  
+      function popup(url,name,windowWidth,windowHeight){
+        myleft=(screen.width)?(screen.width-windowWidth)/2:100;
+        mytop=(screen.height)?(screen.height-windowHeight)/2:100;
+        properties = "width="+windowWidth+",height="+windowHeight;
+        properties +=",scrollbars=yes, top="+mytop+",left="+myleft;
+        window.open(url,name,properties);
+      }
+      
+      function getUrlParams() {
+        var params = {};
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str,key,value) {
+          params[key] = value;
+        });
+        return params;
+      }
       </script>
       <!--script-->
           </div>
@@ -228,7 +322,8 @@
            <!-- colunavesquerda -->
            <div class="span8" style="margin: 0 0 0 0;">
 
-              <p><small><?php echo $asset->getTitle() ?></small></p>
+
+              <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri, 'asset'=>$asset)) ?>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
              <div class="face">

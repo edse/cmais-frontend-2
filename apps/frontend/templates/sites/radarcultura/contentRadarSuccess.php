@@ -37,10 +37,15 @@
             <div class="content">
               <h1><?php echo $asset->getTitle() ?></h1>
               <small><?php echo $asset->getDescription() ?></small>
-            </div>
+              <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
             <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
-            <p><img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt=""></p>
+            <p>
+              <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
+              <div class="legenda">
+                <small>testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd</small>
+              </div>
+            </p>
             <?php endif; ?>
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
            <!-- comentario facebook -->
@@ -49,6 +54,8 @@
               <hr />
             </div>
             <!-- /comentario facebook -->
+            </div>
+            <!--content-->
           </div>
           <!--col esquerda-->
           <div class="span4 direita">

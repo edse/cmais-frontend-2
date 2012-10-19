@@ -470,7 +470,11 @@ class _assetActions extends sfActions
       elseif($this->site->getImageThumb() != "")
         $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
     }
-
+    
+    if($this->site->getSlug() == "radarcultura"){
+      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+    }
+    
     if(!$this->section)
       $this->section = Doctrine::getTable('Section')->findOneById(1);
 

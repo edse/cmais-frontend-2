@@ -1130,17 +1130,22 @@ class _sectionActions extends sfActions
     $this->getResponse()->addMetaProp('og:description', $description);
     $this->getResponse()->addMetaProp('og:url', $this->uri);
     $this->getResponse()->addMetaProp('og:site_name', 'cmais+');
-    if($this->site->Program->getImageLive() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
-    elseif($this->site->Program->getImageThumb() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
-    elseif($this->site->getImageThumb() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
-    else
-      $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
-
-    if($this->site->getSlug() == "socrates")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
+    
+    if($this->site->getSlug() == "radarcultura"){
+      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+    }else{
+      if($this->site->Program->getImageLive() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
+      elseif($this->site->Program->getImageThumb() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
+      elseif($this->site->getImageThumb() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
+      else
+        $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+  
+      if($this->site->getSlug() == "socrates")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
+    }
     
     // pagination
     if($sectionSlug == 'recadinhos'){
@@ -1204,7 +1209,7 @@ class _sectionActions extends sfActions
             
     }
     if($this->section->Site->getSlug() == "radarcultura") {
-      if($this->section->getSlug() == "playlist")
+      if($this->section->getSlug() == "playlists")
         $pagelimit = 20;
       else if($this->section->getSlug() == "musicas")
         $pagelimit = 20;

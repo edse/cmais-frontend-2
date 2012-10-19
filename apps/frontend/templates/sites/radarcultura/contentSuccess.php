@@ -37,6 +37,7 @@
           <h1><?php echo $asset->getTitle() ?></h1>
           <small><?php echo $asset->getDescription() ?></small>
         </div>
+        <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
         <div>
           <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
          <!-- comentario facebook -->

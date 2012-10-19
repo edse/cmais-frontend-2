@@ -16,7 +16,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table td a.btn{color:#FFF;}
 .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {background-color: #f1f1f1;}
 .badge{color:black; background-color: #FFF;padding: 5px 9px 5px;}
-.alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
+.alert-info{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
 .banner-radio {margin:0px auto 20px;padding:0px 4px 0px 8px;min-width:300px;max-width: 728px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}
@@ -117,7 +117,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .lista-assets .span10 p{margin:0 0 30px 0;}
 .lista-assets .span2{height: 39px; margin: 0 0 20px 0;}
 .lista-assets .span2 img{margin-top:7px;}
-.row-fluid.subSection h1{color:#565656;margin: 13px 0 30px 0; font-size:24px;}
+.row-fluid.subSection h1{color:black;margin: 13px 0 30px 0; font-size:24px;}
 
 /* artistas */
 .artista h1{float: left;margin: 34px 0 0 0 ;font-size: 24px;color: black;}
@@ -132,7 +132,9 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */
-.row-fluid.musicas{margin-top:10px;}
+.row-fluid.musicas{margin-top:10px;position:relative;}
+.row-fluid.musicas small{position:absolute;top:37px;left:0px;}
+
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
 .table.musica{color:#333;}
@@ -160,37 +162,46 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .playlist.musica small{color: #6F6F6F;float:left;}
 .table.playlist tr td{max-width:260px;}
 .direita.playlist{margin-top:30px;}
-.page-header.playlist{border:none;}
+.page-header.playlist{border:none;margin: 20px 0 5px 0; position:relative;}
+.page-header.playlist small{position: absolute; bottom:0px;left:0px;}
 
 /* ao vivo */
 #videoPlayer embed{width:495px;height:370px;}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: black;padding: 0;}
 .page-header.ao-vivo h4{text-transform: none;font-size:24px;}
+
 /* modal */
 .error.valid{display:none !important;}
 .modal{width: 476px;padding: 0 30px;}
-
+.modal form legend{font-size:18px; line-height: 29px; margin-top: 5px;}
 .modal.fade.in {top: 20%;}
 .modal-backdrop{height: 100%;height: 100%\9;}
 .control-group{positon:relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-header{border:none; padding:0;}
 .modal-header h2{font-size:24px;}
-.modal-body {max-height: 448px; min-width: 473px;}
+.modal-body {max-height: 448px; min-width: 473px; padding:0;}
 .modal-footer{margin-top:15px;clear:both\9;}
 .modal-footer.musica{margin-top:75px; clear: both;}
 
 
 /* content */
-.content {padding-bottom: 5px;margin: 0px 0 20px;}
+.content {padding-bottom: 5px;margin: 0px 0 10px;}
 .content h1{font-size:24px;margin-bottom:0px;}
 .content small{color:#6F6F6F;font-size:14px;}
 .content-asset p,
 .content-asset strong,
-.content-asset span{color:black !important;}
+.content-asset span{color:black !important;margin-bottom:0px;}
+.legenda{min-width: 646px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
+.legenda small{color:#000;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
+.signature{margin:10px 0 5px 0;border-bottom: 1px dotted #ccc}
+.signature small{font-size:11px; color:black;}
+.cabecalho{font-size:11px; margin-bottom:20px; color:black;}
+.cabecalho small{font-size:10px; color:black;}
+.share.content{margin:0 -28px 0;float: right;width: 234px;}
 
 /* player */
  

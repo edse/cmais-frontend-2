@@ -30,7 +30,7 @@
         </div>  
     
       <div class="modal-footer">
-        <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
+        <!-- <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a> -->
         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
         <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
       </div>
@@ -74,15 +74,27 @@
         $.ajax({
           type: "POST",
           dataType: "text",
-          data: $("#form-indicacao").serialize(),
+          url: "/actions/radarcultura/feedback.php",
+          data: $("#form-feedback").serialize(),
           beforeSend: function(){
             $('#loader2').show();
             $('.btn-enviar').hide();
           },
           success: function(data){
-            window.location.href="#";
+            $('#loader2').hide();
+            $('.btn-enviar').show();
+            if(data == "1"){
+              $("#modal").modal('hide');
+              $("#socialAlertOk").fadeIn('fast');
+              setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
+            }
+            else{
+              $("#modal").modal('hide');  
+              $("#socialAlertError").fadeIn('fast');
+              setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
+            }
           }
-        });         
+        });
       }
     });
   });
