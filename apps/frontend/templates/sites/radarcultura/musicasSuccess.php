@@ -39,17 +39,17 @@
                 <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
               <?php endif; ?>  
             </h1>
-            <div class="span6">
+            <div class="span5">
               <!--busca-->
               <form action="" method="post">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span6 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
-                  <label class="radio inline" style="margin-left: 147px">
+                  <label class="radio inline" style="margin-left: 35px">
                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                     Por Título
                   </label>
