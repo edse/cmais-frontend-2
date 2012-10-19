@@ -261,7 +261,7 @@
                 <div class="modal-footer musica">
                   <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
                   <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
-                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar" data-dismiss="modal" aria-hidden="true"/>
                 </div>
               </div>
             </form> 
@@ -356,7 +356,6 @@
        
        function goTop(){
         $(document).ready(function() {
-          $("#modal,.modal-backdrop").fadeIn('fast');
           $('html, body').animate({
             scrollTop: $("#guia-topo").offset().top
           }, "slow");
@@ -399,14 +398,10 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
               }
               else{
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
               }
