@@ -143,6 +143,9 @@
           <script>
             $(function(){
               $('.socialBtn').click(function(){
+                
+                alert($('#url2').val());
+                
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.play input[type=hidden]').val());
