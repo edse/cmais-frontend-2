@@ -246,4 +246,11 @@ function slugfy($string){
       <!--banner horizontal-->
     </div>
     <!--container-->
+    
+    <script>
+      $('#busca-radar').submit(function() {
+        self.location.href = $('#busca-por').val()+"/busca-por/"+$('#busca-input').val();
+        return false;
+      });                    
+    </script>
 
