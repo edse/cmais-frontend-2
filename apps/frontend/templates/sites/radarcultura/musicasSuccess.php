@@ -148,11 +148,11 @@
                 
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
-                $('#url').val($('.play input[type=hidden].url-'+$(this).attr('name')).val());
+                $('#url').val($('.url-'+$(this).attr('name')).val());
 
                 $('#titulo2').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
-                $('#url2').val($('.play input[type=hidden].url-'+$(this).attr('name')).val());
+                $('#url2').val($('.url-'+$(this).attr('name')).val());
               });
             });
           </script>
