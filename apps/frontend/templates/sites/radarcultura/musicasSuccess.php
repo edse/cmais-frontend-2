@@ -320,13 +320,13 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    $("#modal,.modal-backdrop").fadeOut('fast');
+                    $("#modal").modal('hide');
                     $('.socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
                   }
                   else{
-                    $("#modal").fadeOut('fast');
+                    $("#modal").modal('hide');
                     $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
                     setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
