@@ -43,7 +43,7 @@
             <p>
               <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
               <div class="legenda">
-                <small>testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd testet Lorem ipsulum dfgdfgd</small>
+                <small><?php echo $related[0]->getDescription()?></small>
               </div>
             </p>
             <?php endif; ?>
