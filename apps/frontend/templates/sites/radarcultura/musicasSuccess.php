@@ -143,8 +143,8 @@
           <script>
             $(function(){
               $('.socialBtn').click(function(){
-                $('#music').val($('.music-'+$(this).attr('name')).html());
-                $('#performer').val($('.performer-'+$(this).attr('name')).html());
+                $('#titulo').val($('.music-'+$(this).attr('name')).html());
+                $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.play input[type=hidden]').val());
               });
             });
@@ -313,7 +313,6 @@
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
-                    $('#socialBtn').popover('hide');
                     $("#socialAlertError").fadeIn('fast');
                   }
                 }
