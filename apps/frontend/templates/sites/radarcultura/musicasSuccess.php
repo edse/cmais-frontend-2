@@ -387,7 +387,7 @@
           $.ajax({
             url: '/actions/radarcultura/facebookPost.php',
             data: opts,
-            dataType: "html",
+            dataType: "text",
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
