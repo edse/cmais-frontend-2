@@ -327,7 +327,6 @@
                   }
                   else{
                     $("#modal").modal('hide');
-                    $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
                     setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   }
