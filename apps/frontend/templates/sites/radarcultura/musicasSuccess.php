@@ -238,16 +238,19 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="titulo2">
+                  <input type="hidden" value="" id="titulo">
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete">
+                  <input type="text" value="" class="input-large" disabled="disabled" id="interprete2">
+                  <input type="hidden" value="" id="interprete">
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url">
+                  <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
+                  <input type="hidden" value="" id="url">
                 </div>
               </div>
               <div class="row-fluid">
