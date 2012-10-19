@@ -16,7 +16,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .table td a.btn{color:#FFF;}
 .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {background-color: #f1f1f1;}
 .badge{color:black; background-color: #FFF;padding: 5px 9px 5px;}
-.alert{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
+.alert-info{background-color:#ffff9d; border:1px solid #fff500; padding:15px 14px 15px 14px;}
 .container{max-width:1010px; clear:both;}
 .banner-radio {margin:0px auto 20px;padding:0px 4px 0px 8px;min-width:300px;max-width: 728px; }
 .banner-radio.horizontal{margin:30px auto 15px;padding:8px 8px 4px 8px;}

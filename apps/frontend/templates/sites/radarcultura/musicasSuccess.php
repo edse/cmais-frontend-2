@@ -64,6 +64,9 @@
           <div class="alert alert-block alert-in" >
             <span><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span>
           </div>
+          <div class="alert alert-error alert-in" >
+            <span><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span>
+          </div>
       </div>
       <!--/topo Artista/contagem-->
       
