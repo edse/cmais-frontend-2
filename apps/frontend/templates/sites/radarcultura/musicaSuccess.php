@@ -187,12 +187,12 @@
                   $('.btn-enviar').show();
                   if(data == "1"){
                     $("#modal").fadeOut('fast');
-                    $("#modal-backdrop").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
                     $("#modal").fadeOut('fast');
-                    $("#modal-backdrop").fadeOut('fast');
+                    $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
                   }
                 }
@@ -263,10 +263,12 @@
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
                 $("#socialAlertOk").fadeIn('fast');
               }
               else{
                 $("#modal").fadeOut('fast');
+                $(".modal-backdrop").fadeOut('fast');
                 $("#socialAlertError").fadeIn('fast');
               }
             }
