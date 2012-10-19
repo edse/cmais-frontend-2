@@ -49,11 +49,11 @@
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por" value="musica" checked>
+                    <input type="radio" name="busca-por" id="busca-por" value="musicas" checked>
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por" value="artista">
+                    <input type="radio" name="busca-por" id="busca-por" value="artistas">
                     Por Artista
                   </label>
                 </div>
