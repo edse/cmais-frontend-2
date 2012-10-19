@@ -309,13 +309,13 @@
                     $(".modal-backdrop").fadeOut('fast');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeIn("fast");', 5000);
+                    setTimeout('$("#socialAlertOk").fadeOut("fast");', 5000);
                   }
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
                     $("#socialAlertError").fadeIn('fast');
-                    setTimeout('$("#socialAlertError").fadeIn("fast");', 5000);
+                    setTimeout('$("#socialAlertError").fadeOut("fast");', 5000);
                   }
                 }
               });
