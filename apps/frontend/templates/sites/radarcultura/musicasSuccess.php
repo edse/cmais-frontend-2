@@ -375,9 +375,9 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: $('#url2').val(),
-          name: $('#titulo2').val(),
-          caption: $('#interprete2').val(),
+          link: $('#url').val(),
+          name: $('#titulo').val(),
+          caption: $('#interprete').val(),
           description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
