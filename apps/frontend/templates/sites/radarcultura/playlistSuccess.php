@@ -185,10 +185,12 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    alert('ok');
+                    $("#modal").fadeOut('fast');
+                    $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
-                    alert('Erro!');
+                    $("#modal").fadeOut('fast');
+                    $("#socialAlertError").fadeIn('fast');
                   }
                 }
               });
