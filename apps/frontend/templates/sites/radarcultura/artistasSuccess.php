@@ -112,20 +112,20 @@ function slugfy($string){
             
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="post">
+              <form action="" method="post" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input"><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <input type="radio" name="busca-por" id="busca-por" value="musicas" checked>
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <input type="radio" name="busca-por" id="busca-por" value="artistas">
                     Por Artista
                   </label>
                 </div>
