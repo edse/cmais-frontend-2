@@ -30,7 +30,7 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
               
         <div class="page-header playlist">
-          <h1><?php echo $asset->getTitle() ?> <small></small></h1>
+          <h1><?php echo $asset->getTitle() ?> <small><?php echo $asset->getDescription() ?></small></h1>
        
             <div class="btn-group pull-right">
               <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>
@@ -314,7 +314,7 @@
            <!-- colunavesquerda -->
            <div class="span8" style="margin: 0 0 0 0;">
 
-              <small><?php echo $asset->getDescription() ?></small>
+
               <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri, 'asset'=>$asset)) ?>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
