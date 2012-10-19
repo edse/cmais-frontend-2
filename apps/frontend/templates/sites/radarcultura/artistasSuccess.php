@@ -121,11 +121,11 @@ function slugfy($string){
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por" value="musicas" />
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" />
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por" value="artistas" checked="checked" />
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" checked="checked" />
                     Por Artista
                   </label>
                 </div>
@@ -249,7 +249,10 @@ function slugfy($string){
     
     <script>
       $('#busca-radar').submit(function() {
-        self.location.href = $('#busca-por').val()+"/busca-por/"+$('#busca-input').val();
+        if($("#busca-por1:checked"))
+          self.location.href = $('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
+        else if($("#busca-por1:checked"))
+          self.location.href = $('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
         return false;
       });                    
     </script>
