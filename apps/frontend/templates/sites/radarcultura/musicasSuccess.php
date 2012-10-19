@@ -243,18 +243,18 @@
                 <div class="control-group">
                   <label>Título</label>
                   <input type="text" value="" class="input-large" disabled="disabled" id="titulo2">
-                  <input type="hidden" value="" id="titulo">
+                  <input type="hidden" value="" id="titulo" name="titulo" />
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
                   <input type="text" value="" class="input-large" disabled="disabled" id="interprete2">
-                  <input type="hidden" value="" id="interprete">
+                  <input type="hidden" value="" id="interprete" name="interprete" />
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
                   <input type="text" value="" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
-                  <input type="hidden" value="" id="url">
+                  <input type="hidden" value="" id="url" name="url" />
                 </div>
               </div>
               <div class="row-fluid">
