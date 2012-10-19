@@ -188,11 +188,13 @@
                   if(data == "1"){
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
+                    $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                   }
                   else{
                     $("#modal").fadeOut('fast');
                     $(".modal-backdrop").fadeOut('fast');
+                    $('#socialBtn').popover('hide');
                     $("#socialAlertError").fadeIn('fast');
                   }
                 }
@@ -264,11 +266,13 @@
               if(data == "1"){
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
               }
               else{
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
+                $('#socialBtn').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
               }
             }
