@@ -296,7 +296,7 @@
            <div class="span8" style="margin: 0 0 0 0;">
 
               <p><small><?php echo $asset->getTitle() ?></small></p>
-              <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri)) ?>
+              <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri, 'asset'=>$asset)) ?>
               <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
              <!-- comentario facebook -->
              <div class="face">
