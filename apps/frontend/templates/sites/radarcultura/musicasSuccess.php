@@ -320,8 +320,7 @@
                   $('#loader3').hide();
                   $('.btn-enviar').show();
                   if(data == "1"){
-                    $("#modal").hide();
-                    $(".modal-backdrop").hide();
+                    $("#modal,.modal-backdrop").fadeOut('fast');
                     $('.socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
@@ -357,6 +356,7 @@
        
        function goTop(){
         $(document).ready(function() {
+          $("#modal,.modal-backdrop").fadeIn('fast');
           $('html, body').animate({
             scrollTop: $("#guia-topo").offset().top
           }, "slow");
