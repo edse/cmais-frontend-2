@@ -132,8 +132,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .btn-busca{margin: 0 5px;}
 
 /* musicas */
-.row-fluid.musicas{margin-top:10px;}
-.row-fluid.musicas small{position:absolute;margin-top:37px;}
+.row-fluid.musicas{margin-top:10px;position:relative;}
+.row-fluid.musicas small{position:absolute;top:37px;left:0px;}
 
 .table.musicas h4{color:black;}
 .table.musicas p{width:312px; width:280px\9;}
