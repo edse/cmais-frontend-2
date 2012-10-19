@@ -25,7 +25,7 @@ if(isset($email_site)) {
       $cabecalho .= "MIME-Version: 1.0\r\n";
       $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
       $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
-      if(mail($email_site, '[RadarCultura][Sugestão de playlist] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
+      if(mail($email_site, '[RadarCultura][Música para playlist: ] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
         die("1");
       }
       else {
