@@ -646,6 +646,8 @@ class _sectionActions extends sfActions
         
         if($request->getParameter('buscam')!=""){
           
+          $this->busca_radar = $request->getParameter('buscam');
+          
           $this->assetsQuery = Doctrine_Query::create()
             ->select('a.title')
             ->from('Asset a')
@@ -732,6 +734,8 @@ class _sectionActions extends sfActions
       else if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
   
         if($request->getParameter('buscaa')!=""){
+          
+          $this->busca_radar = $request->getParameter('buscaa');
 
           $this->assetsQuery = Doctrine_Query::create()
             ->select('DISTINCT description as description')
