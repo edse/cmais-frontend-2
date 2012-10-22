@@ -19,6 +19,16 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
+        <div class="row-fluid" style="margin:10px 0 0 0;"> 
+          <div id="socialAlertOk" class="alert alert-block alert-in hide">
+            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, essa playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>
+          <div id="socialAlertError" class="alert alert-error alert-in hide">
+            <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
+          </div>      
+        </div>
+          
+        <div class="page-header playlist">
         <div class="row-fluid">
           <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
         </div>
@@ -28,15 +38,7 @@
         <!--topo menu/alert/logo-->
         
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-        <div class="row-fluid" style="margin:10px 0 0 0;"> 
-          <div id="socialAlertOk" class="alert alert-block alert-in hide">
-            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
-          </div>
-          <div id="socialAlertError" class="alert alert-error alert-in hide">
-            <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
-          </div>      
-        </div>  
-        <div class="page-header playlist">
+
           
           <h1><?php echo $asset->getTitle() ?><small><?php echo $asset->getDescription() ?></small></h1>
           
