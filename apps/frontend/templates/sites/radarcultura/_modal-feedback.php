@@ -53,7 +53,7 @@
     <div id="error" class="alert alert-error alert-in">
       <span class="badge"><strong>Erro!</strong></span><br/>
       <span> Sua mensagem não foi enviada, tente novamente mais tarde</span><br/>
-      <span> Caso a janela não feche em 4 segundos <a href="#" class="close-modal">Clique aqui<a/></span>
+      <span> Caso a janela não feche em 4 segundos <a href="javascript:;" class="close-modal">Clique aqui<a/></span>
     </div>
   </div>
   <!-- /Modal Feedback resposta-->
@@ -68,8 +68,7 @@
       }, "slow");
     });
     $('.close-modal').click(function(){
-      $("#modal-ok").is(':visible').modal('hide');
-      $("#modal-error").is(':visible').modal('hide');
+      $(".modal:visible").modal('hide');
     });
     var validator = $('#form-feedback').validate({
       rules:{
