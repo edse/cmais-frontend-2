@@ -62,7 +62,7 @@
     <script>
     $(document).ready(function(){
       $('html').click(function(){
-        $('.socialBtn:visible').popover('hide');
+
       });
     });
     </script>
