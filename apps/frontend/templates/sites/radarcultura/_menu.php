@@ -59,5 +59,11 @@
        
      </div>
      <!-- menu --->
-
+    <script>
+    $(document).ready(function(){
+      $('html').click(function(){
+        alert('teste');
+      });
+    });
+    </script>
      

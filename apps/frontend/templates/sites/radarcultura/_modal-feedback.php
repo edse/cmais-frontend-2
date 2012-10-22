@@ -43,7 +43,7 @@
     <div id="ok" class="alert alert-block alert-in">
       <span class="badge"><strong>Obrigado pela sua participação!</strong></span><br/>
       <span> Sua opinião é muito importante pra nós!</span><br/>
-      <span> Caso a janela não feche em 4 segundos <a href="#" class="close-modal">Clique aqui</a></span>
+      <span> Caso a janela não feche em 10 segundos <a href="#" class="close-modal">Clique aqui</a></span>
       
     </div>
   </div>
@@ -53,7 +53,7 @@
     <div id="error" class="alert alert-error alert-in">
       <span class="badge"><strong>Erro!</strong></span><br/>
       <span> Sua mensagem não foi enviada, tente novamente mais tarde</span><br/>
-      <span> Caso a janela não feche em 4 segundos <a href="javascript:;" class="close-modal">Clique aqui</a></span>
+      <span> Caso a janela não feche em 10 segundos <a href="javascript:;" class="close-modal">Clique aqui</a></span>
     </div>
   </div>
   <!-- /Modal Feedback resposta-->
@@ -107,12 +107,12 @@
             if(data == "1"){
               $("#modal-feedback").modal('hide');
               $("#modal-ok").modal('show');
-              setTimeout('$("#modal-ok").modal("hide");', 55000);
+              setTimeout('$("#modal-ok").modal("hide");', 10000);
             }
             else{
               $("#modal-feedback").modal('hide');
               $("#modal-error").modal('show');
-              setTimeout('$("#modal-error").modal("hide");', 55000);
+              setTimeout('$("#modal-error").modal("hide");', 10000);
             }
           }
         });

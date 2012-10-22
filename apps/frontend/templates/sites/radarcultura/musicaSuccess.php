@@ -20,6 +20,14 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
       
       <!--topo menu/alert/logo-->
+      <div class="row-fluid" style="margin:10px;">
+        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+      </div>
       <div class="row-fluid">
         <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
       </div>
@@ -28,14 +36,7 @@
       </div>
       
       <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-      <div class="row-fluid" style="margin:10px;">
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
-            <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
-          </div>
-          <div id="socialAlertError" class="alert alert-error alert-in hide">
-            <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
-          </div>
-      </div>
+
       <!--topo menu/alert/logo-->
       <div class="row-fluid">
         <!--titulo musica-->
@@ -199,13 +200,13 @@
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
+                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
                   }
                   else{
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $("#socialAlertError").fadeIn('fast');
-                    setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 10000);
                   }
                 }
               });
