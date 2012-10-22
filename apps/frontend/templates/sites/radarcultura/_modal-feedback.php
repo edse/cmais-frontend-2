@@ -1,7 +1,7 @@
 
 <!--FEEDBACK-->
 <div class="btn-feedback">
-  <a href="#modal-feedback" class="" data-toggle="modal">Dê sua opinião</a>
+  <a href="#modal-error" class="" data-toggle="modal">Dê sua opinião</a>
 </div>  
 <!--/FEEDBACK-->
 <!-- Modal Feedback-->
@@ -61,7 +61,7 @@
   <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
   <script type="text/javascript">
   $(document).ready(function(){
-    $("#modal-error").modal('show');
+
     $('.btn-feedback a').click(function(){ 
       $('html, body').animate({
         scrollTop: $("#guia-topo").offset().top
