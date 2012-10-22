@@ -116,7 +116,7 @@ function slugfy($string){
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
@@ -249,10 +249,10 @@ function slugfy($string){
     
     <script>
       $('#busca-radar').submit(function() {
-        if($("#busca-por1:checked"))
-          self.location.href = "/"+$('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
-        else if($("#busca-por2:checked"))
-          self.location.href = "/"+$('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
+        if($("#busca-por1").is(':checked'))
+          self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
+        else if($("#busca-por2").is(':checked'))
+          self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
         return false;
       });                    
     </script>

@@ -44,16 +44,16 @@
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input"><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
                 <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked>
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked="checked" />
                     Por Título
                   </label>
                   <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por2" value="artistas">
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" />
                     Por Artista
                   </label>
                 </div>
@@ -275,10 +275,10 @@
         $(document).ready(function(){
 
           $('#busca-radar').submit(function() {
-            if($("#busca-por1:checked"))
-              self.location.href = "/"+$('#busca-por1').val()+"/busca-por/"+$('#busca-input').val();
-            else if($("#busca-por2:checked"))
-              self.location.href = "/"+$('#busca-por2').val()+"/busca-por/"+$('#busca-input').val();
+            if($("#busca-por1").is(':checked'))
+              self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
+            else if($("#busca-por2").is(':checked'))
+              self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
             return false;
           });                    
           
