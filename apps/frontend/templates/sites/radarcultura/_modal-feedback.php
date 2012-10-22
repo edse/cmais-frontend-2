@@ -46,7 +46,7 @@
   </div>
   <!-- /Modal Feedback resposta-->
   <!-- Modal Feedback resposta-->
-  <div id="modal-ok" class="modal playlist hide fade">
+  <div id="modal-error" class="modal playlist hide fade">
     <div id="ok" class="alert alert-error alert-in">
       <span class="badge"><strong>Erro!</strong></span><span> sua mensagem não foi enviada, tente novamente mais tarde</span><button type="button" class="close" data-dismiss="alert">×</button>
     </div>
@@ -98,14 +98,14 @@
             $('#loader2').hide();
             $('.btn-enviar').show();
             if(data == "1"){
-              $("#modal").modal('hide');
-              $("#modal-resposta").modal('show');
-              setTimeout('$("#modal-resposta").modal("hide");', 5000);
+              $("#modal-feedback").modal('hide');
+              $("#modal-ok").modal('show');
+              setTimeout('$("#modal-ok").modal("hide");', 2000);
             }
             else{
-              $("#modal").modal('hide');
-              $("#modal-resposta").modal('show');
-              setTimeout('$("#modal-resposta").modal("hide");', 5000);
+              $("#modal-feedback").modal('hide');
+              $("#modal-error").modal('show');
+              setTimeout('$("#modal-error").modal("hide");', 2000);
             }
           }
         });
