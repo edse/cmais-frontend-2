@@ -27,11 +27,11 @@
       </div>
         <!--topo menu/alert/logo-->
       <div id="socialAlertOk" class="alert alert-block alert-in hide">
-        <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
       </div>
       <div id="socialAlertError" class="alert alert-error alert-in hide">
-        <span class="badge"><strong>Erro!</strong></span><span> logo mais tocaremos sua indicação!</span><button type="button" class="close" data-dismiss="alert">×</button>
-      </div> 
+        <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
+      </div>
       <!--topo Playlits/contagem-->
       <div class="row-fluid">
         <!--Titulo-->
