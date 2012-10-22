@@ -27,7 +27,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .pagination .paginacao{padding: 10px;line-height: 20px;height: 18px;border: 1px solid #E5E5E5;}
 .pagination ul > li > a, .pagination ul > li > span {border-left-width: 1px;margin-left: -1px; }
 .pagination ul li a i{opacity:0.50;}
-.icone-rede.email{background:url(/portal/images/redes-topo.png) no-repeat; opacity:0.50; }
+.icone-rede.email{background:url(/portal/images/mail_24x18.png) no-repeat; opacity:0.50; }
 
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #00b4d5;z-index: 10;}
