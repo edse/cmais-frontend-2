@@ -32,6 +32,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #00b4d5;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; color:#FFFFFF; }
+.modal input[type="text"]{height:24px;}
 .modal{position:absolute;z-index:13000;}
 .modal-backdrop{position:absolute;z-index:12000;}
 #modal-feedback .modal-body{min-height:252px}
