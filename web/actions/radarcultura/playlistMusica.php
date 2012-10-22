@@ -3,6 +3,9 @@
 //$email_site = "emerson.estrella@gmail.com, fransciscofernandes@tvcultura.com.br, pedronakano@tvcultura.com.br";
 $email_site = "radar.email@tvcultura.com.br";
 
+var_dump($_REQUEST);
+die();
+
 if(isset($email_site)) {
     
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
