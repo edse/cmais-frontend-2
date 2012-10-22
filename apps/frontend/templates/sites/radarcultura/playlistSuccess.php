@@ -123,10 +123,11 @@
                   <label>Intérprete</label>
                   <input type="text" name="interprete" class="input-large required">
                 </div>  
-                <div class="control-group">
+                <input type="hidden" name="url" value="<?php echo $uri?>" />
+                <!--<div class="control-group">
                   <label>URL</label>
                   <input type="text" name="url" class="input-large required" >
-                </div>
+                </div>-->
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
@@ -167,11 +168,11 @@
               interprete:{
                 required: true,
                 minlength: 1
-              },
+              }/*,
               url:{
                 required: true,
                 minlength: 1
-              }
+              }*/
             },
             highlight: function(label) {
               $(label).closest('.control-group').addClass('error');
@@ -185,7 +186,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
-                url: "/actions/radarcultura/iteracao.php",
+                url: "/actions/radarcultura/playlistMusica.php",
                 data: $("#form-indicacao-1").serialize(),
                 beforeSend: function(){
                   $('#loader3').show();
