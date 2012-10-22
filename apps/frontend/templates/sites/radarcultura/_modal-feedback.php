@@ -107,12 +107,12 @@
             if(data == "1"){
               $("#modal-feedback").modal('hide');
               $("#modal-ok").modal('show');
-              setTimeout('$("#modal-ok").modal("hide");', 4000);
+              setTimeout('$("#modal-ok").modal("hide");', 55000);
             }
             else{
               $("#modal-feedback").modal('hide');
               $("#modal-error").modal('show');
-              setTimeout('$("#modal-error").modal("hide");', 4000);
+              setTimeout('$("#modal-error").modal("hide");', 55000);
             }
           }
         });
