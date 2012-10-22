@@ -35,9 +35,9 @@ if(isset($email_site)) {
         die("0");
       }
     //}
-    else {
-      header("Location: http://cmais.com.br");
-      die();
-    }
+    //else {
+      //header("Location: http://cmais.com.br");
+      //die();
+    //}
   }
 }
