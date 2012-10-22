@@ -275,9 +275,9 @@
         $(document).ready(function(){
 
           $('#busca-radar').submit(function() {
-            if($("#busca-por1:checked"))
+            if($("#busca-por1").is(':checked'))
               self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
-            else if($("#busca-por2:checked"))
+            else if($("#busca-por2").is(':checked'))
               self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
             return false;
           });                    
