@@ -53,7 +53,7 @@
        </ul>
        <?php endif; ?>
                                       
-       <a class="ouca" href="javascript:;">
+       <a id="ouca" class="ouca" href="javascript:;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
