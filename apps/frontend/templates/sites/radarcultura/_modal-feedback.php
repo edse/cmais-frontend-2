@@ -61,7 +61,7 @@
   <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
   <script type="text/javascript">
   $(document).ready(function(){
-    
+    $("#modal-error").modal('show');
     $('.btn-feedback a').click(function(){ 
       $('html, body').animate({
         scrollTop: $("#guia-topo").offset().top
