@@ -1132,10 +1132,12 @@ class _sectionActions extends sfActions
     else
       $this->getResponse()->addMetaProp('og:type', 'website');
     $this->getResponse()->addMetaProp('og:description', $description);
+    
     $this->getResponse()->addMetaProp('og:url', $this->uri);
     $this->getResponse()->addMetaProp('og:site_name', 'cmais+');
     
     if($this->site->getSlug() == "radarcultura"){
+      $this->getResponse()->addMetaProp('og:description', $title." ".$description);
       $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
     }else{
       if($this->site->Program->getImageLive() != "")
