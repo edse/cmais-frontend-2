@@ -473,6 +473,7 @@ class _assetActions extends sfActions
     
     if($this->site->getSlug() == "radarcultura"){
       $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+      $this->getResponse()->addMetaProp('og:description', $title." ".$description);
     }
     
     if(!$this->section)
