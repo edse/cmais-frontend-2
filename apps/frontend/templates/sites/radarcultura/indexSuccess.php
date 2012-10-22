@@ -73,7 +73,7 @@
             <div class="span12">
               <div class="page-header na-rede">
                 <h3>Músicas em Destaque</h3>
-                <small>Indicações de usuários</small>
+                <small>Indicações dos usuários</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
