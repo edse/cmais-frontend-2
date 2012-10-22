@@ -57,7 +57,7 @@
           <!--/modal-header-->
           <!--modal-body-->
           <div class="modal-body" class="row-fluid">
-            <form action="" method="post" id="form-indicacao-1" class="row-fluid">
+            <form action="" method="post" id="form-indicacao-playlist-musica" class="row-fluid">
               
               <div class="span6">
                 <input type="hidden" name="section_id" value="1952" />
@@ -143,7 +143,7 @@
         <script type="text/javascript">
         $(document).ready(function(){
           
-          var validator = $('#form-indicacao-1').validate({
+          var validator = $('#form-indicacao-playlist-musica').validate({
             rules:{
               nome:{
                 required: true,
@@ -187,7 +187,7 @@
                 type: "POST",
                 dataType: "text",
                 url: "/actions/radarcultura/playlistMusica.php",
-                data: $("#form-indicacao-1").serialize(),
+                data: $("#form-indicacao-playlist-musica").serialize(),
                 beforeSend: function(){
                   $('#loader3').show();
                   $('.btn-enviar').hide();
