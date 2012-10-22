@@ -4,7 +4,7 @@
                 <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2>Crie sua playlist</h2>
               </div>
-              <form action="" method="post" id="form-indicacao">
+              <form action="" method="post" id="form-indicacao-playlist">
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>
@@ -118,7 +118,7 @@
         <script type="text/javascript">
           $(document).ready(function(){
 
-            var validator = $('#form-indicacao').validate({
+            var validator = $('#form-indicacao-playlist').validate({
               rules:{
                 nome:{
                   required: true,
@@ -150,7 +150,7 @@
                   type: "POST",
                   dataType: "text",
                   url: "/actions/radarcultura/playlist.php",
-                  data: $("#form-feedback").serialize(),
+                  data: $("#form-indicacao-playlist").serialize(),
                   beforeSend: function(){
                     $('#loader3').show();
                     $('.btn-enviar').hide();

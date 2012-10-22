@@ -52,12 +52,12 @@
           <!--modal-header-->  
           <div class="modal-header">
             <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h2>Indique esta Música</h2>
+            <h2>Indique uma música para esta playlist</h2>
           </div>
           <!--/modal-header-->
           <!--modal-body-->
           <div class="modal-body" class="row-fluid">
-            <form action="" method="post" id="form-indicacao-1" class="row-fluid">
+            <form action="" method="post" id="form-indicacao-playlist-musica" class="row-fluid">
               
               <div class="span6">
                 <input type="hidden" name="section_id" value="1952" />
@@ -123,10 +123,11 @@
                   <label>Intérprete</label>
                   <input type="text" name="interprete" class="input-large required">
                 </div>  
-                <div class="control-group">
+                <input type="hidden" name="url" value="<?php echo $uri?>" />
+                <!--<div class="control-group">
                   <label>URL</label>
                   <input type="text" name="url" class="input-large required" >
-                </div>
+                </div>-->
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
@@ -142,7 +143,7 @@
         <script type="text/javascript">
         $(document).ready(function(){
           
-          var validator = $('#form-indicacao-1').validate({
+          var validator = $('#form-indicacao-playlist-musica').validate({
             rules:{
               nome:{
                 required: true,
@@ -167,11 +168,11 @@
               interprete:{
                 required: true,
                 minlength: 1
-              },
+              }/*,
               url:{
                 required: true,
                 minlength: 1
-              }
+              }*/
             },
             highlight: function(label) {
               $(label).closest('.control-group').addClass('error');
@@ -185,8 +186,8 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
-                url: "/actions/radarcultura/iteracao.php",
-                data: $("#form-indicacao-1").serialize(),
+                url: "/actions/radarcultura/playlistMusica.php",
+                data: $("#form-indicacao-playlist-musica").serialize(),
                 beforeSend: function(){
                   $('#loader3').show();
                   $('.btn-enviar').hide();
@@ -429,6 +430,47 @@
               <!--/banner-->
            </div>
            <!--/coluna direita-->
+           
+           <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
+           <?php if(count($relacionados) > 0): ?>
+           <!--pela web-->  
+           <div class="row-fluid">
+              <div class="span12 page-header na-rede">
+                <h3>Pela Web</h3>
+                <small> quem já indicou essa música</small>
+              </div>
+              <!-- pitaco -->
+              <div class="row-fluid">
+              <?php foreach($relacionados as $k=>$d): ?> 
+                <!--item-->
+                <div class="span4">
+                  <div class="row-fluid redes">
+                    <div class="">
+                      <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                        <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                      </a>
+                      <div class="page-header">
+                        <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
+                      </div>
+                      <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                      <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                      <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
+                    </div>
+                  </div>
+                  <?php if($k < 2):?>
+                    <div class="linha-lateral"></div>
+                  <?php endif;?>
+                </div>
+                <!--/item-->
+              <?php endforeach; ?>
+              </div>
+              <!-- /pitaco -->
+            </div>
+            <!--pela web-->
+            <?php endif; ?>
+           
+           
+           
         </div>
         <!--centro-->            
 
