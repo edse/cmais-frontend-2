@@ -59,14 +59,4 @@
        
      </div>
      <!-- menu --->
-    <script>
-    $(document).ready(function(){
-      $('html').click(function(){
-        if($('.socialBtn').popover().is(':hidden'))
-          $('.socialBtn').popover('show');
-        else($('.socialBtn').popover().is(':visible'))
-          $('.socialBtn').popover('hide');
-      });
-    });
-    </script>
      

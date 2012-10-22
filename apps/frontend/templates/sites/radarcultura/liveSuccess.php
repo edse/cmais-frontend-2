@@ -35,12 +35,19 @@
           <div class="page-header ao-vivo">
             <h4>Transmiss&atilde;o ao vivo</h4>
           </div>
+         
           <div id="videoPlayer"></div>
           <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
   
-          <script>
+          <script type="text/javascript" src="swfobject.js"></script>
+          <div id="flashcontent">
+          Este texto será substituído pelo filme Flash.
+          </div>
+    
+          <script type="text/javascript">
+                  
+         
           var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf","cam1","450","338","9");
-          so.addParam("pluginspage","http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash");
           so.addParam("allowscriptaccess","always");
           so.addParam("allowfullscreen","true");
           so.addParam("wmode","transparent");
@@ -51,6 +58,7 @@
           so.addVariable('file', "galeria");
           so.addVariable('type', 'video');
           so.write("videoPlayer");
+          so.write("flashcontent");
           </script>
           <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
