@@ -32,7 +32,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* modal */
 .btn-feedback {position: fixed;bottom: 0;right: 0;background-color: #00b4d5;z-index: 10;}
 .btn-feedback a{padding: 0px 20px; line-height: 40px; color:#FFFFFF; }
-.modal input{height:30px;}
+.modal input{height:24px;}
 .modal{position:absolute;z-index:13000;}
 .modal-backdrop{position:absolute;z-index:12000;}
 #modal-feedback .modal-body{min-height:252px}
@@ -181,7 +181,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .control-group .error{position: absolute; font-weight:bold; font-size:10px;margin-top:-10px;}
 .modal-header{border:none; padding:0;}
 .modal-header h2{font-size:24px;}
-.modal-body {max-height: 448px; min-width: 473px; padding:0;}
+.modal-body {min-width: 477px; padding:0;}
 .modal-footer{margin-top:15px;clear:both\9;}
 .modal-footer.musica{margin-top:75px; clear: both;}
 
@@ -194,12 +194,12 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .content-asset strong,
 .content-asset span{color:black !important;margin-bottom:0px;}
 .legenda{min-width: 646px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
-.legenda small{color:#000;}
+.legenda small{color:#949494; font-size:11px;}
 div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
 div.jp-playlist, div.jp-interface {border:none !important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
 .signature{margin:10px 0 5px 0;border-bottom: 1px dotted #ccc}
-.signature small{font-size:11px; color:black;}
+.signature small{font-size:11px; color:#949494;}
 .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
 .cabecalho small{font-size:10px; color:black;}
 .share.content{margin:0 -28px 0;float: right;width: 234px;}
