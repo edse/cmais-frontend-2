@@ -40,6 +40,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 #modal-feedback .control-group.mensagem textarea{width:440px}
 /*#modal-feedback .control-group.mensagem .error{left:-40px;}*/
 #modal-feedback .control-group.mensagem .error.valid{left:-133px;}
+#modal-ok #ok, #modal-error #error {margin-top: 20px;text-align: center;line-height: 26px;}
 
 /* menu */
 .ouca{position:absolute; top:-11px; right:0;}
