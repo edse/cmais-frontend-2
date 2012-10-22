@@ -38,6 +38,11 @@
     </div>              
   </div>
   <!--/ Modal Feedback-->
+  <!-- Modal Feedback resposta-->
+  <div id="modal-resposta" class="modal playlist hide fade">
+    teste
+  </div>
+  <!-- /Modal Feedback resposta-->
   <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
   <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -85,13 +90,13 @@
             $('.btn-enviar').show();
             if(data == "1"){
               $("#modal").modal('hide');
-              $("#socialAlertOk").fadeIn('fast');
-              setTimeout('$("#socialAlertOk").fadeOut("slow");', 5000);
+              $("#modal-resposta").modal('show');
+              setTimeout('$("#modal-resposta").modal("hide");', 5000);
             }
             else{
-              $("#modal").modal('hide');  
-              $("#socialAlertError").fadeIn('fast');
-              setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
+              $("#modal").modal('hide');
+              $("#modal-resposta").modal('show');
+              setTimeout('$("#modal-resposta").modal("hide");', 5000);
             }
           }
         });
