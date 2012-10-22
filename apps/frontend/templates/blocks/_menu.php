@@ -18,7 +18,7 @@
 
       var controle = null;
 
-      $('#controle-remoto').click(function(){
+      $('#controle-remoto,#ouca').click(function(){
         if(controle == null || controle.closed){
           controle = window.open('http://www.culturabrasil.com.br/controle-remoto?start=am','controle','width=300,height=600,scrollbars=no');
         } else {
