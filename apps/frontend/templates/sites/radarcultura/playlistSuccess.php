@@ -52,7 +52,7 @@
           <!--modal-header-->  
           <div class="modal-header">
             <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h2>Indique esta Música</h2>
+            <h2>Indique uma música para esta playlist</h2>
           </div>
           <!--/modal-header-->
           <!--modal-body-->
