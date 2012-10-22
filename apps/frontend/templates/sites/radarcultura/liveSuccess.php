@@ -40,6 +40,7 @@
   
           <script>
           var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf","cam1","450","338","9");
+          so.addParam("pluginspage","http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash");
           so.addParam("allowscriptaccess","always");
           so.addParam("allowfullscreen","true");
           so.addParam("wmode","transparent");

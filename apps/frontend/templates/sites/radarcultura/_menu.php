@@ -62,7 +62,10 @@
     <script>
     $(document).ready(function(){
       $('html').click(function(){
-
+        if($('.socialBtn').popover().is(':hidden'))
+          alert('escondido');
+        else($('.socialBtn').popover().is(':visible'))
+          alert('visivel');  
       });
     });
     </script>
