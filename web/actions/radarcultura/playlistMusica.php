@@ -3,8 +3,8 @@
 //$email_site = "emerson.estrella@gmail.com, fransciscofernandes@tvcultura.com.br, pedronakano@tvcultura.com.br";
 $email_site = "radar.email@tvcultura.com.br";
 
-var_dump($_REQUEST);
-die();
+//var_dump($_REQUEST);
+//die();
 
 if(isset($email_site)) {
     
@@ -13,7 +13,7 @@ if(isset($email_site)) {
     $email_user = @strip_tags($_REQUEST['email']);
     $nome_user = @strip_tags($_REQUEST['nome']);
     
-    if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+    //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
       // verifica se o servidor que ta o formulario é o mesmo que o chamou, se for um ataque de injeção de dados este valor será diferente
       ini_set('sendmail_from', $email_site);
       $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
@@ -34,7 +34,7 @@ if(isset($email_site)) {
       else {
         die("0");
       }
-    }
+    //}
     else {
       header("Location: http://cmais.com.br");
       die();
