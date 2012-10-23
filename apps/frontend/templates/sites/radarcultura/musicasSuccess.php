@@ -148,7 +148,7 @@
               $('.socialBtn').click(function(){
                 
                 //alert($('#url2').val());
-                
+                $('#btn-pressed').attr('value',"'"+$(this).attr('id')+"'")
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
@@ -190,7 +190,7 @@
           <!--modal-body-->
           <div class="modal-body" class="row-fluid">
             <form action="" method="post" id="form-indicacao" class="row-fluid">
-              
+              <input type="hidden" id="btn-pressed" value="">
               <div class="span6">
                 <input type="hidden" name="section_id" value="1952" />
                 <legend>Dados Pessoais</legend>

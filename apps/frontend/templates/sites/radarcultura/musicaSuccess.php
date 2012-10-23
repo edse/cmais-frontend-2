@@ -199,7 +199,7 @@
                   if(data == "1"){
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
-                    $('#socialBtn').hide();
+                    $('#socialBtn').fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
                   }
