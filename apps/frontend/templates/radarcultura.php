@@ -15,7 +15,6 @@
     <?php include_metas() ?>
     <?php include_meta_props() ?>
 
-
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>

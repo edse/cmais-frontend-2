@@ -649,6 +649,15 @@ class _sectionActions extends sfActions
           $this->busca_radar = $request->getParameter('buscam');
           
           $this->assetsQuery = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
+          
+          /*
+          $this->assetsQuery = Doctrine_Query::create()
             ->select('a.title')
             ->from('Asset a')
             ->where('title LIKE ?', '%'.$request->getParameter('buscam').'%')
@@ -663,6 +672,15 @@ class _sectionActions extends sfActions
             ->andWhere('description LIKE ?', 'Por %')
             ->andWhere('site_id = 189')
             ->fetchArray();
+          */
+
+          $countQuery = Doctrine_Query::create()
+            ->select('COUNT(DISTINCT description) as description')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
 
         }
         elseif($request->getParameter('letter')!=""){
