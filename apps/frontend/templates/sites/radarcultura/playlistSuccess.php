@@ -444,13 +444,13 @@
               <div class="row-fluid">
               <?php foreach($relacionados as $k=>$d): ?> 
                 <!--item-->
-                <div class="span4">
+                <div class="span4 redes">
                   <div class="row-fluid redes">
                     <div class="">
                       <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                         <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                       </a>
-                      <div class="page-header">
+                      <div class="">
                         <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                       </div>
                       <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">

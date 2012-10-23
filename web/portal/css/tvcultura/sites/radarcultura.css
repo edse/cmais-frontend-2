@@ -155,6 +155,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .popover {width: 350px;}
 .facebook-comment{width:100px; float:left;}
 .table.musicas{min-width:309px;min-width:300px\9;}
+.span4.redes{position:relative; min-height:230px;}
 
 /* playlists */
 .playlist h1{float: left;margin: -6px 0 0 0 ;font-size: 24px;color: black; max-width:635px;}
