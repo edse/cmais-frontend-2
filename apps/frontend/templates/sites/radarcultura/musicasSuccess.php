@@ -150,6 +150,7 @@
                 
                 //alert($('#url2').val());
                 $('#btn-pressed').attr('value',$(this).attr('id'))
+                $('#btn-pressed').attr('name','indicada-'+$(this).attr('name'))
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
