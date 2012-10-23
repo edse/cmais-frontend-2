@@ -50,7 +50,7 @@
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
            <!-- comentario facebook -->
             <div class="container face">
-              <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+              <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
               <hr />
             </div>
             <!-- /comentario facebook -->
