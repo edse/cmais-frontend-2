@@ -148,7 +148,7 @@
               $('.socialBtn').click(function(){
                 
                 //alert($('#url2').val());
-                $('#btn-pressed').attr('value',"'"+$(this).attr('id')+"'")
+                $('#btn-pressed').attr('value',$(this).attr('id'))
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
@@ -190,8 +190,8 @@
           <!--modal-body-->
           <div class="modal-body" class="row-fluid">
             <form action="" method="post" id="form-indicacao" class="row-fluid">
-              <input type="hidden" id="btn-pressed" value="">
-              <div class="span6">
+              
+              <div class="span6" style="margin:0;">
                 <input type="hidden" name="section_id" value="1952" />
                 <legend>Dados Pessoais</legend>
                 <div class="control-group">
@@ -266,6 +266,7 @@
               <div class="row-fluid">
                 <div class="modal-footer musica">
                   <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <input type="hidden" id="btn-pressed" value="">
                   <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar" />
                 </div>
@@ -404,6 +405,7 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
+                $('#'+$('btn-pressed').attr('value'));
                 $('#socialBtn').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
               }
