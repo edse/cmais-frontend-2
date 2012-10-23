@@ -147,7 +147,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .musicas small{color: #949494;text-align: left;float: left;font-size:12px}
 .musicas h1{float: left;margin: 5px 0 0 0 ;font-size: 24px;color: black;}
 .table.musica{min-width:25%;}
-.table-striped tbody tr td{color:#484848;} 
+.table-striped tbody tr td{color:#484848;}
+.indicada{float: left;margin: 4px 0 0 36px;} 
 
 
 /* musica */
