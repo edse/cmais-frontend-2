@@ -20,7 +20,7 @@
         
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin:10px 0 0 0;">
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+        <div id="socialAlertOk" class="alert alert-info alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
@@ -134,7 +134,7 @@
                   <td class="performer-<?php echo $value ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
-                    <span class="label label-important" class="indicada" style="display:none;">Música indicada.</span>
+                    <span class="label label-important" class="indicada"  style="display:none;">Música indicada.</span>
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
                     <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <input class="url-<?php echo $value ?>" type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
@@ -332,8 +332,10 @@
                     $('.socialBtn').popover('hide');
                     $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
                     $('.indicada').fadeIn('fast');
+                    $('.alert.radarIndex').hide();
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
+                    setTimeout('$("#socialAlertOk").hide();', 10000);
+                    setTimeout('$(".alert.radarIndex").hide();', 10000);
                   }
                   else{
                     $("#modal").modal('hide');
@@ -409,7 +411,10 @@
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $('#socialBtn').popover('hide');
+                $('.alert.radarIndex').hide();
                 $("#socialAlertOk").fadeIn('fast');
+                setTimeout('$("#socialAlertOk").hide();', 10000);
+                setTimeout('$(".alert.radarIndex").hide();', 10000);
               }
               else{
                 $('#socialBtn').popover('hide');
