@@ -647,15 +647,7 @@ class _sectionActions extends sfActions
         if($request->getParameter('buscam')!=""){
           
           $this->busca_radar = $request->getParameter('buscam');
-          
-          $this->assetsQuery = Doctrine_Query::create()
-            ->select('a.*')
-            ->from('Asset a, SectionAsset sa')
-            ->where('sa.section_id = ?', $this->section->id)
-            ->andWhere('sa.asset_id = a.id')
-            ->andWhere('a.is_active = ?', 1)
-            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
-          
+
           /*
           $this->assetsQuery = Doctrine_Query::create()
             ->select('a.title')
@@ -673,6 +665,14 @@ class _sectionActions extends sfActions
             ->andWhere('site_id = 189')
             ->fetchArray();
           */
+          
+          $this->assetsQuery = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
 
           $countQuery = Doctrine_Query::create()
             ->select('COUNT(DISTINCT description) as description')
@@ -688,6 +688,27 @@ class _sectionActions extends sfActions
           $this->letter = $request->getParameter('letter');
           
           if($this->letter == "#"){
+            
+          
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a, SectionAsset sa')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
+              ->andWhere('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('a.description');
+
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a, SectionAsset sa')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
+              ->andWhere('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('a.description');
+
+            /*
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
@@ -703,9 +724,28 @@ class _sectionActions extends sfActions
               //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
               ->andWhere('site_id = 189')
               ->fetchArray();
+            */
   
           }
           else{
+            
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+              
+            /*
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
@@ -719,6 +759,7 @@ class _sectionActions extends sfActions
               ->where('slug LIKE ?', $request->getParameter('letter').'%-por-%')
               ->andWhere('site_id = 189')
               ->fetchArray();
+            */
   
           }
         }else{
