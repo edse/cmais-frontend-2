@@ -115,7 +115,7 @@
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
                 <div class="span6">
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" ">
+                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" >
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
                   <div class="">
