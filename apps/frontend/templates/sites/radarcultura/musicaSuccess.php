@@ -200,10 +200,10 @@
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
+                    $('.alert.radarIndex').hide();
                     $("#socialAlertOk").fadeIn('fast');
-                    $('.radar.Index').hide();
                     setTimeout('$("#socialAlertOk").hide();', 10000);
-                    setTimeout('$(".radar.Index").fadeIn("fast");', 10000);
+                    setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
                   }
                   else{
                     $("#modal").modal('hide');
