@@ -488,15 +488,6 @@
               <?php endif; ?>
             <?php endif; ?>
             <!--/como participar-->
-            <!--banner-->
-            <div class="">
-              <div class="banner-radio">
-                <script type='text/javascript'>
-                  GA_googleFillSlot("home-geral300x250");
-                </script>
-              </div>
-            </div>
-            <!--/banner-->
          </div>
          <!--/coluna direita-->
          
