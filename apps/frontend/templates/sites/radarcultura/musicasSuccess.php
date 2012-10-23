@@ -329,6 +329,7 @@
                   if(data == "1"){
                     $("#modal").modal('hide');
                     $('.socialBtn').popover('hide');
+                    $('#'+$('btn-pressed').attr('value'));
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
                   }
@@ -405,7 +406,6 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $('#'+$('btn-pressed').attr('value'));
                 $('#socialBtn').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
               }
