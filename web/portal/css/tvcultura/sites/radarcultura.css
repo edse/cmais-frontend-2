@@ -102,7 +102,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .row-fluid .span4.como-participar{margin:0px\9;}
 .carousel-control {top: 51%;}
 .carousel {margin-bottom:0}
-.row-fluid.redes{margin:-4px 0 0 0;}
+.row-fluid.redes{margin:-4px 0 0 0;overflow: hidden;}
 
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color: #00b4d5;margin: 0 0 -2px 0;}
