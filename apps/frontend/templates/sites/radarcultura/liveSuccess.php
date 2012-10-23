@@ -36,7 +36,10 @@
             <h4>Transmiss&atilde;o ao vivo</h4>
           </div>
           <div id="videoPlayer">
-            nao funciona flash
+            <span class="falta-flash">
+              Você precisa ter o flash instalado em seu computador para acessar esse site.<br/>
+              <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>.
+            </span>
           </div>
           <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
   

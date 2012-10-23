@@ -169,6 +169,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 
 /* ao vivo */
 #videoPlayer embed{width:495px;height:370px;}
+.falta-flash{width:494px; height:11px;background: url(/portal/images/capaPrograma/radarcultura/flash.jpg)}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: black;padding: 0;}
 .page-header.ao-vivo h4{text-transform: none;font-size:24px;}
 
