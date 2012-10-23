@@ -70,7 +70,7 @@
            <div class="page-header ao-vivo">
             <h4>Bate Papo</h4>
            </div> 
-           <iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=aa92a56e37/height=680/width=467" scrolling="no" height="680px" width="467px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=aa92a56e37" >Rádio Cultura Brasil</a></iframe>
+           <?php echo $displays["chat"][0]; ?>
          </div>
          <!--/Bate papo-->
          <!--banner horizontal-->    
