@@ -70,7 +70,7 @@
            <div class="page-header ao-vivo">
             <h4>Bate Papo</h4>
            </div> 
-           <?php echo $displays["chat"][0]->getHtml(); ?>
+           <?php echo $displays["chat"][0]->renderHtml(); ?>
          </div>
          <!--/Bate papo-->
          <!--banner horizontal-->    
