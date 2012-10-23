@@ -501,39 +501,41 @@
          <!--/coluna direita-->
          
          <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-         <?php if(count($relacionados) > 0): ?>
-         <!--pela web-->  
-         <div class="row-fluid">
-            <div class="span12 page-header na-rede">
-              <h3>Pela Web</h3>
-              <small> quem já indicou essa música</small>
-            </div>
-            <!-- pitaco -->
-            <div class="row-fluid">
-            <?php foreach($relacionados as $k=>$d): ?> 
-              <!--item-->
-              <div class="span4 redes">
-                <div class="row-fluid redes">
-                  <div class="">
-                    <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                      <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
-                    </a>
-                      <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
-                    <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                    <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                    <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
-                  </div>
-                </div>
-                <?php if($k < 2):?>
-                  <div class="linha-lateral"></div>
-                <?php endif;?>
+         <?php if(count($relacionados) <= 3): ?>
+           <?php if(count($relacionados) > 0): ?>
+           <!--pela web-->  
+           <div class="row-fluid">
+              <div class="span12 page-header na-rede">
+                <h3>Pela Web</h3>
+                <small> quem já indicou essa música</small>
               </div>
-              <!--/item-->
-            <?php endforeach; ?>
+              <!-- pitaco -->
+              <div class="row-fluid">
+              <?php foreach($relacionados as $k=>$d): ?> 
+                <!--item-->
+                <div class="span4 redes">
+                  <div class="row-fluid redes">
+                    <div class="">
+                      <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                        <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                      </a>
+                        <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
+                      <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                      <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                      <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
+                    </div>
+                  </div>
+                  <?php if($k < 2):?>
+                    <div class="linha-lateral"></div>
+                  <?php endif;?>
+                </div>
+                <!--/item-->
+              <?php endforeach; ?>
+              </div>
+              <!-- /pitaco -->
             </div>
-            <!-- /pitaco -->
-          </div>
-          <!--pela web-->
+            <!--pela web-->
+            <?php endif; ?>
           <?php endif; ?>
           
           <!--banner horizontal-->    
