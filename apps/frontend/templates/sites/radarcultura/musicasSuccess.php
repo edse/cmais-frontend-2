@@ -148,7 +148,7 @@
               $('.socialBtn').click(function(){
                 
                 //alert($('#url2').val());
-                $('#btn-clicado').val($('#'+$(this).attr('id')).val());
+                
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
@@ -190,7 +190,7 @@
           <!--modal-body-->
           <div class="modal-body" class="row-fluid">
             <form action="" method="post" id="form-indicacao" class="row-fluid">
-              <input type="hidden" id="btn-clicado" value="">
+              
               <div class="span6">
                 <input type="hidden" name="section_id" value="1952" />
                 <legend>Dados Pessoais</legend>
@@ -329,7 +329,6 @@
                     $("#modal").modal('hide');
                     $('.socialBtn').popover('hide');
                     $("#socialAlertOk").fadeIn('fast');
-                    
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
                   }
                   else{
