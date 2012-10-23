@@ -160,8 +160,10 @@
                     $('.btn-enviar').show();
                     if(data == "1"){
                       $("#modal").modal('hide');
+                      $('.alert.radarIndex').hide();
                       $("#socialAlertOk").fadeIn('fast');
-                      setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
+                      setTimeout('$("#socialAlertOk").hide();', 10000);
+                      setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
                     }
                     else{
                       $("#modal").modal('hide');

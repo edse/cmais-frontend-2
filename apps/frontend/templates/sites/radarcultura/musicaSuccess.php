@@ -21,7 +21,7 @@
       
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin:10px;">
-        <div id="socialAlertOk" class="alert alert-block alert-in hide">
+        <div id="socialAlertOk" class="alert alert-info alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
@@ -201,7 +201,9 @@
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
+                    $('.radar.Index').fadeOut('fast');
+                    setTimeout('$("#socialAlertOk").hide();', 10000);
+                    setTimeout('$(".radar.Index").fadeIn("fast");', 10000);
                   }
                   else{
                     $("#modal").modal('hide');
