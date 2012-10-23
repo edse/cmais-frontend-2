@@ -201,7 +201,7 @@
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
-                    $('.radar.Index').fadeOut('fast');
+                    $('.radar.Index').hide();
                     setTimeout('$("#socialAlertOk").hide();', 10000);
                     setTimeout('$(".radar.Index").fadeIn("fast");', 10000);
                   }
