@@ -329,7 +329,7 @@
                   if(data == "1"){
                     $("#modal").modal('hide');
                     $('.socialBtn').popover('hide');
-                    $('#'+$('#btn-pressed').attr('value'));
+                    $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
                     $("#socialAlertOk").fadeIn('fast');
                     setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
                   }
