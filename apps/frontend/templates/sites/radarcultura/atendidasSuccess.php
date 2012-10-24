@@ -195,6 +195,13 @@
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
+      $(document).ready(function(){
+        $('#socialBtn').click(function(){ 
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+        });
+      });
       function goToPage(i){
         $("#page").val(i);
         //$("#letter").val("");
