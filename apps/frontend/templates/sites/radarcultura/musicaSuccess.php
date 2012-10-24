@@ -45,20 +45,13 @@
          <small><?php echo $asset->getDescription() ?></small>
          </h1>
         
-        
-<!-- Place this tag where you want the share button to render. -->
-<div id="googlepulsshare" class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="http//:cmais.com.br"></div>
-<!-- Place this render call where appropriate. -->
+<div id="plusone-div"></div>
 <script type="text/javascript">
-gapi.plus.render (
-  "googlepulsshare",
-  {"size": "tall", "onendinteraction": myCallbackFunction}
-);
+gapi.plusone.render("plusone-div", {"onendinteraction": myCallbackFunction});
 function myCallbackFunction(data){
   console.log(data);
 }
 </script>
-
         
             <!--contagem-->
             <div class="pull-right">
