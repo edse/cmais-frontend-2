@@ -16,7 +16,7 @@
       <?php if(isset($displays['alerta'])):?>
         <?php if(count($displays['alerta']) > 0): ?>
           <!-- box-alert-topo -->
-          <div class="alert alert-block alert-info radarIndex" style="margin:0 0 10px 0px;" >
+          <div class="alert alert-block alert-block radarIndex" style="margin:0 0 10px 0px;" >
             <a href="<?php echo $displays['alerta'][0]->retriveUrl() ?>" type="button" class="btn btn-mini btn-info pull-right"><i class="icon-share-alt icon-white"></i> link direcionado</a>
             <span class="badge"><strong><?php echo $displays['alerta'][0]->getTitle() ?></strong></span><span> <?php echo $displays['alerta'][0]->getDescription() ?></span>
           </div>      

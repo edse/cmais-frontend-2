@@ -189,8 +189,12 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .modal-body {min-width: 477px; max-height:451px; padding:0;}
 .modal-footer{margin-top:15px;clear:both\9;}
 .modal-footer.musica{margin-top:75px; clear: both;}
-
-
+.btn-fechar-redes{top: 10px;right: 10px;position: absolute;}
+#modal-facebook{display: block;width: 577px;padding: 30px;}
+.ajuda-face{width:575px; height:319px; display: block; background: url(/portal/images/capaPrograma/radarcultura/tela-share-facebook.jpg);}
+.ajuda-google{width:584px; height:305px; display: block; background: url(/portal/images/capaPrograma/radarcultura/tela-share-google.jpg);}
+.avancar{position: absolute;bottom: 41px;right: 40px;width: 93px;height: 25px;background: url(/portal/images/capaPrograma/radarcultura/bt-avancar.png) no-repeat;text-indent: -999999px;}
+.avancar:hover{background-position: left bottom;}
 /* content */
 .content {padding-bottom: 5px;margin: 0px 0 10px;}
 .content h1{font-size:24px;margin-bottom:0px;}
