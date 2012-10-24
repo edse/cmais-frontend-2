@@ -45,6 +45,21 @@
          <small><?php echo $asset->getDescription() ?></small>
          </h1>
         
+        
+<!-- Place this tag where you want the share button to render. -->
+<div id="googlepulsshare" class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="http//:cmais.com.br"></div>
+<!-- Place this render call where appropriate. -->
+<script type="text/javascript">
+gapi.plus.render (
+  "googlepulsshare",
+  {"size": "tall", "onendinteraction": myCallbackFunction}
+);
+function myCallbackFunction(data){
+  console.log(data);
+}
+</script>
+
+        
             <!--contagem-->
             <div class="pull-right">
               <a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
