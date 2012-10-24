@@ -65,12 +65,13 @@
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="ajuda-google"></div>
           <div id="plusone-div"></div>
-          <a class="avancar" href="javascript:postGoogle();">Avançar</a>
+          <a id="avancar" class="avancar" href="javascript:postToGoogle();">Avançar</a>
           <script type="text/javascript">
-          gapi.plusone.render({"onendinteraction": buttonInvisible});
+          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
           function buttonInvisible(data){
             if(data.type == "confirm"){
               alerta();
+              popOverHide();
             }
           }
           </script>
