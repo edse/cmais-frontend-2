@@ -70,7 +70,7 @@
           gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
           function buttonInvisible(data){
             if(data.type == "confirm"){
-              alerta();
+              alerta              
               popOverHide();
             }
           }
@@ -272,8 +272,8 @@
          }); 
        };
        function alerta(){
+        $(document).ready(function(){
           $("#socialBtn").fadeOut("fast");
-          $(document).ready(function(){
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
          });
