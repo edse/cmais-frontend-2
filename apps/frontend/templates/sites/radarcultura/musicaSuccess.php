@@ -61,6 +61,11 @@
           
         </div>
         <!--/titulo musica-->
+        <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade">
+         teste face
+        </div>  
+        <!--modal facebook-->
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
