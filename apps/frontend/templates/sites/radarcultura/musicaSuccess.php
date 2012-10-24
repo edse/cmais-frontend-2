@@ -260,7 +260,7 @@
       });
       function popOverHide(){
         $(document).ready(function() {
-          $("#modal-"+$(".modal:visible").attr('name')).modal('hide');
+          alert($("#modal-"+$(".modal:visible").attr('name')).modal('hide');)
           $("#socialBtn").popover("hide");
         });
       }
