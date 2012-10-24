@@ -49,7 +49,9 @@
 <script type="text/javascript">
 gapi.plusone.render("plusone-div", {"onendinteraction": myCallbackFunction});
 function myCallbackFunction(data){
-  console.log(data);
+  if(data.type == "confirm"){
+    console.log(data);
+  }
 }
 </script>
         
