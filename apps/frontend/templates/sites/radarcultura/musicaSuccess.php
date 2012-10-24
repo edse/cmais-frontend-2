@@ -42,30 +42,43 @@
          <small><?php echo $asset->getDescription() ?></small>
          </h1>
         
-            <div id="plusone-div"></div>
-            <script type="text/javascript">
-            gapi.plusone.render("plusone-div", {"onendinteraction": buttonInvisible});
-            function buttonInvisible(data){
-              if(data.type == "confirm"){
-                alerta();
-              }
-            }
-            </script>
         
             <!--contagem-->
             <div class="pull-right">
               <!--<a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
-              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn"href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-twitter">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
             </div>
             <!--/contagem-->
           
         </div>
         <!--/titulo musica-->
-        <!--modal facebook-->
-        <div id="modal-facebook" class="modal playlist hide fade">
-         teste face
+        <!--modal twitter-->
+        <div id="modal-twitter" class="modal playlist hide fade" name="twitter">
+         teste twitter
+         <a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a>
+         
         </div>  
+        <!--/modal twitter-->
         <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
+         teste face
+         <a class="btn" href="javascript:postToFeed();">Facebook</a>
+        </div>  
+        <!--/modal facebook-->
+        <!--modal google-->
+        <div id="modal-google" class="modal playlist hide fade" name="google">
+         teste google
+          <div id="plusone-div"></div>
+          <script type="text/javascript">
+          gapi.plusone.render("plusone-div", {"onendinteraction": buttonInvisible});
+          function buttonInvisible(data){
+            if(data.type == "confirm"){
+              alerta();
+            }
+          }
+          </script>
+        </div>  
+        <!--/modal google-->
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
@@ -254,6 +267,7 @@
          }); 
        };
        function alerta(){
+          $("#modal-"+$(".modal:visible").attr('name')).modal('hide');
           $("#socialBtn").popover("hide");
           $("#socialBtn").fadeOut("fast");
           $(document).ready(function(){
