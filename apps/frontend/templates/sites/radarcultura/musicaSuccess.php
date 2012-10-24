@@ -54,20 +54,20 @@
         <!--/titulo musica-->
         <!--modal twitter-->
         <div id="modal-twitter" class="modal playlist hide fade" name="twitter">
-         teste twitter
-         <a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a>
+         <div class="ajuda-twitter"></div>
+         <a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">avançar</a>
          
         </div>  
         <!--/modal twitter-->
         <!--modal facebook-->
         <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
-         teste face
-         <a class="btn" href="javascript:postToFeed();">Facebook</a>
+         <div class="ajuda-face"></div> 
+         <a class="btn" href="javascript:postToFeed();">Avançar</a>
         </div>  
         <!--/modal facebook-->
         <!--modal google-->
         <div id="modal-google" class="modal playlist hide fade" name="google">
-         teste google
+          <div class="ajuda-google"></div>
           <div id="plusone-div"></div>
           <script type="text/javascript">
           gapi.plusone.render("plusone-div", {"onendinteraction": buttonInvisible});
