@@ -44,8 +44,8 @@
         
             <div id="plusone-div"></div>
             <script type="text/javascript">
-            gapi.plusone.render("plusone-div", {"onendinteraction": buttonOff});
-            function buttonOff(data){
+            gapi.plusone.render("plusone-div", {"onendinteraction": buttonInvisible});
+            function buttonInvisible(data){
               if(data.type == "confirm"){
                 alerta();
               }
