@@ -260,7 +260,8 @@
       });
       function popOverHide(){
         $(document).ready(function() {
-          alert($("#modal-"+$(".modal").attr('name')));
+          $("#modal-google").modal('hide');
+          $("#modal-facebook").modal('hide');
           $("#socialBtn").popover("hide");
         });
       }
@@ -272,7 +273,7 @@
          }); 
        };
        function alerta(){
-        $(document).ready(function(){
+       $(document).ready(function(){
           $("#socialBtn").fadeOut("fast");
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
