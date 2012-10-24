@@ -58,7 +58,7 @@ function myCallbackFunction(data){
             <!--contagem-->
             <div class="pull-right">
               <!--<a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
-              a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
             </div>
             <!--/contagem-->
           
@@ -211,7 +211,7 @@ function myCallbackFunction(data){
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
-                    alert();
+                    alerta();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -251,8 +251,10 @@ function myCallbackFunction(data){
           }, "slow");
          }); 
        };
-       function alert(){
-         $(document).ready(function(){
+       function alerta(){
+          $("#socialBtn").popover("hide");
+          $("#socialBtn").fadeOut("fast");
+          $(document).ready(function(){
           $('.alert.radarIndex').hide();
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
@@ -261,7 +263,7 @@ function myCallbackFunction(data){
        };
   
       twttr.events.bind('tweet', function(event) {
-        alert('oi');
+        alerta();
         console.log(event);
         /*
         $('.alert.radarIndex').hide();
@@ -308,7 +310,7 @@ function myCallbackFunction(data){
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $('#socialBtn').popover('hide');
-                alert();
+                alerta();
               }
               else{
                 $('#socialBtn').popover('hide');
