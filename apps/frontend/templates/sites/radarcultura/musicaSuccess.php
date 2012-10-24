@@ -200,10 +200,7 @@
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
-                    $('.alert.radarIndex').hide();
-                    $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").hide();', 10000);
-                    setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
+                    alert();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -243,6 +240,14 @@
           }, "slow");
          }); 
        };
+       function alert(){
+         $(document).ready(function(){
+          $('.alert.radarIndex').hide();
+          $("#socialAlertOk").fadeIn('fast');
+          setTimeout('$("#socialAlertOk").hide();', 10000);
+          setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
+         });
+       };
   
       function postTwitter() {
         $('#socialBtn').popover('hide');
@@ -280,14 +285,10 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               if(data == "1"){
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
-                $("#socialAlertOk").fadeIn('fast');
+                alert();
               }
               else{
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
               }
