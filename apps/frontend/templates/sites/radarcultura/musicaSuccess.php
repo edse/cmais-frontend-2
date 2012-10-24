@@ -261,10 +261,13 @@ function myCallbackFunction(data){
        };
   
       twttr.events.bind('tweet', function(event) {
+        alert('oi');
+        /*
         $('.alert.radarIndex').hide();
         $("#socialAlertOk").fadeIn('fast');
         setTimeout('$("#socialAlertOk").hide();', 10000);
         setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
+        */
       });
       
       function postTwitter() {
