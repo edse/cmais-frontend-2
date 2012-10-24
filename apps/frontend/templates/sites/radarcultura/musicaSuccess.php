@@ -259,20 +259,15 @@
   
       twttr.events.bind('tweet', function(event) {
         alerta();
-        console.log(event);
-        /*
-        $('.alert.radarIndex').hide();
-        $("#socialAlertOk").fadeIn('fast');
-        setTimeout('$("#socialAlertOk").hide();', 10000);
-        setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
-        */
       });
-      
+      <?php 
+       /*
       function postTwitter() {
-        //$('#socialBtn').popover('hide');
-        //popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+        $('#socialBtn').popover('hide');
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
       }
-  
+       */
+      ?>
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
