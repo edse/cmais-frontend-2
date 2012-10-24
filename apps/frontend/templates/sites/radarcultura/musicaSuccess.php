@@ -245,7 +245,10 @@
         $('.btn-fechar').click(function(){
           $('#socialBtn').popover('hide');
         });
-
+        $('.avancar').click(function(){
+          $("#modal-"+$(".modal:visible").attr('name')).modal('hide');
+          $("#socialBtn").popover("hide");
+        })
         var params = getUrlParams();
         if(params.shared == "true"){
           $('#socialBtn').hide();
@@ -262,8 +265,6 @@
          }); 
        };
        function alerta(){
-          $("#modal-"+$(".modal:visible").attr('name')).modal('hide');
-          $("#socialBtn").popover("hide");
           $("#socialBtn").fadeOut("fast");
           $(document).ready(function(){
           $("#socialAlertOk").fadeIn('fast');
