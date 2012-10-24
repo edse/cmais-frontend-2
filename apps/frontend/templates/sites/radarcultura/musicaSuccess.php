@@ -20,16 +20,13 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
       
       <!--topo menu/alert/logo-->
-      <div class="row-fluid" style="margin:10px;">
+      <div class="row-fluid">
         <div id="socialAlertOk" class="alert alert-info alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
           <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
-      </div>
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
       </div>
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
@@ -45,15 +42,15 @@
          <small><?php echo $asset->getDescription() ?></small>
          </h1>
         
-<div id="plusone-div"></div>
-<script type="text/javascript">
-gapi.plusone.render("plusone-div", {"onendinteraction": myCallbackFunction});
-function myCallbackFunction(data){
-  if(data.type == "confirm"){
-    console.log(data);
-  }
-}
-</script>
+            <div id="plusone-div"></div>
+            <script type="text/javascript">
+            gapi.plusone.render("plusone-div", {"onendinteraction": buttonOff});
+            function buttonOff(data){
+              if(data.type == "confirm"){
+                alerta();
+              }
+            }
+            </script>
         
             <!--contagem-->
             <div class="pull-right">
@@ -255,10 +252,8 @@ function myCallbackFunction(data){
           $("#socialBtn").popover("hide");
           $("#socialBtn").fadeOut("fast");
           $(document).ready(function(){
-          $('.alert.radarIndex').hide();
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
-          setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
          });
        };
   
