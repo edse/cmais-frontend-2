@@ -282,6 +282,7 @@
       //////////////////////
       twttr.events.bind('tweet', function(event) {
         $('#socialBtn-1').popover('hide');
+        alerta();
         goTop();
       });
       <?php 
