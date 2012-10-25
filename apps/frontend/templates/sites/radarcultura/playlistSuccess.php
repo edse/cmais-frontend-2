@@ -66,6 +66,7 @@
             if(data.type == "confirm"){
               alerta();                
               popOverHide();
+              goTop();
             }
           }
           </script>
@@ -245,7 +246,7 @@
           placement:"left"
         });
         $('#socialBtn').click(function(){
-          $('#socialBtn').popover('hide');
+          $('#socialBtn-1').popover('hide');
           $('html, body').animate({
           scrollTop: $("#guia-topo").offset().top
             }, "slow");
@@ -263,7 +264,7 @@
         $(document).ready(function() {
           $("#modal-google").modal('hide');
           $("#modal-facebook").modal('hide');
-          $("#socialBtn").popover("hide");
+          $("#socialBtn-1").popover("hide");
         });
       };
       function goTop(){
@@ -275,14 +276,17 @@
        };
       //////////////////////
       twttr.events.bind('tweet', function(event) {
-        $('#socialBtn').popover('hide');
+        $('#socialBtn-1').popover('hide');
         goTop();
       });
+      <?php 
+       /*
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("minha indicação para essa playlist é a música: ")?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
       }
-  
+       */
+      ?>
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
@@ -316,17 +320,19 @@
               if(data == "1"){
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
-                $('#socialBtn').popover('hide');
+                $('#socialBtn-1').popover('hide');
                 $("#socialAlertOk").fadeIn('fast');
                 $('.radar.Index').fadeOut('fast');
                 setTimeout('$("#socialAlertOk").hide();', 10000);
                 setTimeout('$(".radar.Index").fadeIn("fast");', 10000);
+                goTop();
               }
               else{
                 $("#modal").fadeOut('fast');
                 $(".modal-backdrop").fadeOut('fast');
-                $('#socialBtn').popover('hide');
+                $('#socialBtn-1').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
+                goTop();
               }
             }
           });

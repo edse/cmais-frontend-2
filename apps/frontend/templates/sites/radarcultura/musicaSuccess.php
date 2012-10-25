@@ -72,6 +72,7 @@
             if(data.type == "confirm"){
               alerta();                
               popOverHide();
+              goTop();
             }
           }
           </script>
@@ -283,6 +284,7 @@
   
       twttr.events.bind('tweet', function(event) {
         alerta();
+        goTop();
       });
       <?php 
        /*
@@ -325,6 +327,7 @@
               if(data == "1"){
                 $('#socialBtn').popover('hide');
                 alerta();
+                goTop();
               }
               else{
                 $('#socialBtn').popover('hide');
