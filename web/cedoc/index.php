@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script>
+  (function() {
+    var cx = '014171385304484677642:rn0zsdt5eig';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+<body>
+
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<gcse:search></gcse:search>
+</body>
+</html>
+      
