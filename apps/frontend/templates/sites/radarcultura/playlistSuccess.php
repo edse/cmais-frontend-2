@@ -58,8 +58,9 @@
         <div id="modal-google" class="modal playlist hide fade" name="google">
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="ajuda-google"></div>
+          <a class="avancar" href="javascript:postGoogle();">Avançar</a>
+          <!--
           <div id="plusone-div"></div>
-          <a id="avancar" class="avancar" href="javascript:postToGoogle();">Avançar</a>
           <script type="text/javascript">
           gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
           function buttonInvisible(data){
@@ -70,6 +71,7 @@
             }
           }
           </script>
+          -->
         </div>  
         <!--/modal google-->
         <!--modal-->
