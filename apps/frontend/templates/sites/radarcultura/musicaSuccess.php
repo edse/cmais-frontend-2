@@ -250,6 +250,7 @@
         });
         $('.avancar').click(function(){
           popOverHide();
+          goTop;
         })
         var params = getUrlParams();
         if(params.shared == "true"){
@@ -264,7 +265,7 @@
           $("#modal-facebook").modal('hide');
           $("#socialBtn").popover("hide");
         });
-      }
+      };
       function goTop(){
         $(document).ready(function() {
           $('html, body').animate({

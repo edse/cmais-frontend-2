@@ -254,7 +254,18 @@
         $('.btn-fechar').click(function(){
           $('#socialBtn-1').popover('hide');
         });
+        $('.avancar').click(function(){
+          popOverHide();
+          goTop();
+        })
       });
+      function popOverHide(){
+        $(document).ready(function() {
+          $("#modal-google").modal('hide');
+          $("#modal-facebook").modal('hide');
+          $("#socialBtn").popover("hide");
+        });
+      };
       function goTop(){
         $(document).ready(function() {
           $('html, body').animate({
@@ -263,7 +274,10 @@
          }); 
        };
       //////////////////////
-      
+      twttr.events.bind('tweet', function(event) {
+        $('socialBtn-1').popover('hide');
+        goTop();
+      });
       function postTwitter() {
         $('#socialBtn').popover('hide');
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("minha indicação para essa playlist é a música: ")?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
@@ -290,7 +304,7 @@
           opts= "post_id="+response['post_id'];
           //loading
           $('#socialBtn').popover('hide');
-          $('#socialBtn').hide();
+          //$('#socialBtn').hide();
           $('#socialLoading').fadeIn();
           
           $.ajax({
