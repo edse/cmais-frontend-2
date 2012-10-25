@@ -301,7 +301,7 @@
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
-        popOverHide()
+        popOverHide();
       }
       
       function postToFeed() {
