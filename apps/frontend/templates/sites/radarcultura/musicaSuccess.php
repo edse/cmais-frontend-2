@@ -13,7 +13,7 @@
     <![endif]-->
 
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
-    
+
     <!--container-->
     <div class="container">
       
@@ -70,7 +70,7 @@
           gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
           function buttonInvisible(data){
             if(data.type == "confirm"){
-              alerta              
+              alerta();                
               popOverHide();
             }
           }
