@@ -31,7 +31,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .icone-rede.email{width: 25px;height: 20px;background:url(/portal/images/capaPrograma/radarcultura/mail_24x18.png) no-repeat; opacity:0.50; }
 
 /* modal */
-.btn-feedback {position: fixed;top: 50%;right: -50px;background-color: #00b4d5;z-index: 10;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg); -o-transform: rotate(90deg);}
+.btn-feedback {position:fixed; top:50%; right:0; width: 36px; height:135px;background:url(/portal/images/capaPrograma/radarcultura/btn_opiniao.jpg) no-repeat;}
+/*.btn-feedback {position: fixed;top: 50%;right: -50px;background-color: #00b4d5;z-index: 10;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg); -o-transform: rotate(90deg);}*/
 .btn-feedback a{padding: 0px 20px; line-height: 40px; color:#FFFFFF; }
 .modal input[type="text"]{height:30px; padding: 0px 5px;}
 .modal{position:absolute;z-index:13000;}
