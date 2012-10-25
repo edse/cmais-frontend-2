@@ -381,15 +381,10 @@
         buttonVanish();
         goTop();
       });
-      <?php 
-       /*
       function postTwitter() {
         $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
       }
-       */
-      ?>
-  
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
