@@ -274,6 +274,12 @@
           }, "slow");
          }); 
        };
+       function alerta(){
+       $(document).ready(function(){
+          $("#socialAlertOk").fadeIn('fast');
+          setTimeout('$("#socialAlertOk").hide();', 10000);
+         });
+       };
       //////////////////////
       twttr.events.bind('tweet', function(event) {
         $('#socialBtn-1').popover('hide');
