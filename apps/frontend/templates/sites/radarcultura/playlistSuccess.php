@@ -41,11 +41,37 @@
           
        
             <div class="btn-group pull-right">
-              <a href="javascript:;" class="btn btn-large btn-info socialBtn" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javasript:goTop();" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Participe dessa playlist</a>
+              <!--a href="javascript:;" class="btn btn-large btn-info socialBtn" id="socialBtn-1" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javasript:goTop();" data-toggle="modal" data-target="#modal-1">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Participe dessa playlist</a-->
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a onClick="javasript:popOverHide();" class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i>Participe dessa playlist</a>
               <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>
             </div>
         </div>
         
+        <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
+         <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <div class="ajuda-face"></div> 
+         <a class="avancar" href="javascript:postToFeed();">Avançar</a>
+        </div>  
+        <!--/modal facebook-->
+        <!--modal google-->
+        <div id="modal-google" class="modal playlist hide fade" name="google">
+          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="ajuda-google"></div>
+          <div id="plusone-div"></div>
+          <a id="avancar" class="avancar" href="javascript:postToGoogle();">Avançar</a>
+          <script type="text/javascript">
+          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
+          function buttonInvisible(data){
+            if(data.type == "confirm"){
+              alerta();                
+              popOverHide();
+            }
+          }
+          </script>
+        </div>  
+        <!--/modal google-->
+        <!--modal-->
         <!--modal-->
         <div id="modal-1" class="modal musicas hide fade">
           <!--modal-header-->  
