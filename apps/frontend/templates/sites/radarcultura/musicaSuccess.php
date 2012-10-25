@@ -13,23 +13,20 @@
     <![endif]-->
 
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
-    
+
     <!--container-->
     <div class="container">
       
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
       
       <!--topo menu/alert/logo-->
-      <div class="row-fluid" style="margin:10px;">
-        <div id="socialAlertOk" class="alert alert-info alert-in hide">
+      <div class="row-fluid">
+        <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
           <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
-      </div>
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
       </div>
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
@@ -46,28 +43,41 @@
          </h1>
         
         
-<!-- Place this tag where you want the share button to render. -->
-<div id="googlepulsshare" class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="http//:cmais.com.br"></div>
-<!-- Place this render call where appropriate. -->
-<script type="text/javascript">
-gapi.plus.render (
-  "googlepulsshare",
-  {"size": "tall", "onendinteraction": myCallbackFunction}
-);
-function myCallbackFunction(data){
-  console.log(data);
-}
-</script>
-
-        
             <!--contagem-->
             <div class="pull-right">
-              <a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
+              <!--<a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a onClick="javasript:popOverHide();" class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
             </div>
             <!--/contagem-->
           
         </div>
         <!--/titulo musica-->
+
+        <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
+         <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <div class="ajuda-face"></div> 
+         <a class="avancar" href="javascript:postToFeed();">Avançar</a>
+        </div>  
+        <!--/modal facebook-->
+        <!--modal google-->
+        <div id="modal-google" class="modal playlist hide fade" name="google">
+          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="ajuda-google"></div>
+          <div id="plusone-div"></div>
+          <a id="avancar" class="avancar" href="javascript:postToGoogle();">Avançar</a>
+          <script type="text/javascript">
+          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
+          function buttonInvisible(data){
+            if(data.type == "confirm"){
+              alerta();                
+              popOverHide();
+              goTop();
+            }
+          }
+          </script>
+        </div>  
+        <!--/modal google-->
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
@@ -215,7 +225,7 @@ function myCallbackFunction(data){
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
-                    alert();
+                    alerta();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -239,7 +249,10 @@ function myCallbackFunction(data){
         $('.btn-fechar').click(function(){
           $('#socialBtn').popover('hide');
         });
-
+        $('.avancar').click(function(){
+          popOverHide();
+          goTop;
+        })
         var params = getUrlParams();
         if(params.shared == "true"){
           $('#socialBtn').hide();
@@ -247,7 +260,13 @@ function myCallbackFunction(data){
         }
         
       });
-      
+      function popOverHide(){
+        $(document).ready(function() {
+          $("#modal-google").modal('hide');
+          $("#modal-facebook").modal('hide');
+          $("#socialBtn").popover("hide");
+        });
+      };
       function goTop(){
         $(document).ready(function() {
           $('html, body').animate({
@@ -255,20 +274,26 @@ function myCallbackFunction(data){
           }, "slow");
          }); 
        };
-       function alert(){
-         $(document).ready(function(){
-          $('.alert.radarIndex').hide();
+       function alerta(){
+       $(document).ready(function(){
+          $("#socialBtn").fadeOut("fast");
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
-          setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
          });
        };
   
+      twttr.events.bind('tweet', function(event) {
+        alerta();
+        goTop();
+      });
+      <?php 
+       /*
       function postTwitter() {
         $('#socialBtn').popover('hide');
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
       }
-  
+       */
+      ?>
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
@@ -301,7 +326,8 @@ function myCallbackFunction(data){
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $('#socialBtn').popover('hide');
-                alert();
+                alerta();
+                goTop();
               }
               else{
                 $('#socialBtn').popover('hide');

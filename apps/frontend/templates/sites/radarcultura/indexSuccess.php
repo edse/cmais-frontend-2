@@ -19,11 +19,12 @@
       });
       
     </script>
-    
+    <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?> 
+     
     <!--container-->
     <div class="container">
       
-        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
+
         
         <!--topo menu/alert/logo-->
         <div class="row-fluid">

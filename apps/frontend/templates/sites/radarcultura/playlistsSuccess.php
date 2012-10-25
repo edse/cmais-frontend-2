@@ -27,9 +27,7 @@
           <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
       </div>  
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-      </div>
+      
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>

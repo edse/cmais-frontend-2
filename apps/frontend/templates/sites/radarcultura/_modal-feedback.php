@@ -1,8 +1,8 @@
 
 <!--FEEDBACK-->
-<div class="btn-feedback">
-  <a href="#modal-feedback" class="" data-toggle="modal">Dê sua opinião</a>
-</div>  
+<a href="#modal-feedback" class="" data-toggle="modal">
+  <div class="btn-feedback"></div>
+</a>  
 <!--/FEEDBACK-->
 <!-- Modal Feedback-->
 <div id="modal-feedback" class="modal playlist hide fade">

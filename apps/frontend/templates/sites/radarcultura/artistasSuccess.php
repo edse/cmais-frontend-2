@@ -91,9 +91,6 @@ function slugfy($string){
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
-        <div class="row-fluid">
-          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-        </div>
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
