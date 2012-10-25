@@ -224,8 +224,7 @@
                   if(data == "1"){
                     $("#modal-1").modal('hide');
                     $('#socialBtn-1').popover('hide');
-                    $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").fadeOut("slow");', 10000);
+                    alerta();
                   }
                   else{
                     $("#modal-1").modal('hide');
