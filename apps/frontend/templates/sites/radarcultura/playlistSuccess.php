@@ -275,7 +275,7 @@
        };
       //////////////////////
       twttr.events.bind('tweet', function(event) {
-        $('socialBtn-1').popover('hide');
+        $('socialBtn').popover('hide');
         goTop();
       });
       function postTwitter() {
