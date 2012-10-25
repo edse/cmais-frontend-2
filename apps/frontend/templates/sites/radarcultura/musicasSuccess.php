@@ -143,14 +143,11 @@
             <?php endif; ?>
             </tbody>
           </table>
-          <input id="#control-press" type="hidden" value="" name"">
           <script>
             $(function(){
               $('.socialBtn').click(function(){
                 
-                //alert($('#url2').val())
-                $('#control-press').attr('value','#'+$('#btn-pressed').attr('value',$(this).attr('id')));
-                $('#control-press').attr('value','#'+$('#btn-pressed').attr('value',$(this).attr('name')));
+                //alert($('#url2').val());
                 $('#btn-pressed').attr('value',$(this).attr('id'))
                 $('#btn-pressed').attr('name','indicada-'+ $(this).attr('name'))
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
@@ -378,8 +375,8 @@
        };
        function alerta(){
        $(document).ready(function(){
-          $("'"+$("#control-press").attr('value')+"'").show();
-          $("'"+$("#control-press").attr('name')+"'").show();
+          $("#socialBtn").fadeOut("fast");
+          
           $("#socialAlertOk").fadeIn('fast');
           setTimeout('$("#socialAlertOk").hide();', 10000);
          });
