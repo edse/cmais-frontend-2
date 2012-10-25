@@ -20,7 +20,7 @@
         
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin: 10px 0 0 0;">
-        <div id="socialAlertOk" class="alert alert-info alert-in hide">
+        <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">

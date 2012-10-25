@@ -1,6 +1,6 @@
 body { background:url(/portal/images/capaPrograma/passalaemcasa/bg.jpg) repeat-x; height:100%; }
 #miolo { background:#fff; width:1032px; padding:10px; }
-#capa-site {  margin-top:-102px !important; width:1032px; }
+#capa-site {  margin-top:0 !important; width:1032px; }
 .duas-colunas { background:#eee; padding:10px; width:620px; margin-bottom:20px;}
 .duas-colunas .titulos { font-size:24px; text-transform: uppercase; line-height:30px; }
 .duas-colunas .sub-titulo { font-size: 16px; font-weight:bold; }

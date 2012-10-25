@@ -50,16 +50,17 @@
         <!--modal facebook-->
         <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
-         <div class="ajuda-face"></div> 
+         <div class="ajuda-face p"></div> 
          <a class="avancar" href="javascript:postToFeed();">Avançar</a>
         </div>  
         <!--/modal facebook-->
         <!--modal google-->
         <div id="modal-google" class="modal playlist hide fade" name="google">
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <div class="ajuda-google"></div>
+          <div class="ajuda-google p"></div>
+          <a class="avancar" href="javascript:postGoogle();">Avançar</a>
+          <!--
           <div id="plusone-div"></div>
-          <a id="avancar" class="avancar" href="javascript:postToGoogle();">Avançar</a>
           <script type="text/javascript">
           gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
           function buttonInvisible(data){
@@ -70,6 +71,7 @@
             }
           }
           </script>
+          -->
         </div>  
         <!--/modal google-->
         <!--modal-->

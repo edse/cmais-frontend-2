@@ -20,7 +20,7 @@
         
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin:10px 0 0 0;">
-        <div id="socialAlertOk" class="alert alert-info alert-in hide">
+        <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
@@ -73,7 +73,34 @@
       <?php  /*if($letter != ""): ?>
           <h3><small>Músicas começando com </small><?php echo strtoupper($letter)?></h3>
         <?php endif; */ ?>
-      
+        
+        <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
+         <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <div class="ajuda-face"></div> 
+         <a class="avancar" href="javascript:postToFeed();">Avançar</a>
+        </div>  
+        <!--/modal facebook-->
+        <!--modal google-->
+        <div id="modal-google" class="modal playlist hide fade" name="google">
+          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="ajuda-google"></div>
+          <a class="avancar" href="javascript:postGoogle();">Avançar</a>
+          <!--
+          <div id="plusone-div"></div>
+          <script type="text/javascript">
+          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
+          function buttonInvisible(data){
+            if(data.type == "confirm"){
+              alerta();                
+              popOverHide();
+              goTop();
+            }
+          }
+          </script>
+          -->
+        </div>  
+        <!--/modal google-->
       <?php if($artist == ""): ?>
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
@@ -131,9 +158,9 @@
                   <td class="performer-<?php echo $value ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
-                    <span id="indicada-<?php echo $value ?>" class="label label-important indicada"  style="display:none;">Música sugerida.</span>
+                    <span id="indicada-<?php echo $value ?>" class="btn btn-mini btn-success indicada"  style="display:none;"><i class="icon-share-alt icon-white"></i> Música sugerida.</span>
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
-                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <input class="url-<?php echo $value ?>" type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
                   </td>
                 </tr>
@@ -328,12 +355,8 @@
                   if(data == "1"){
                     $("#modal").modal('hide');
                     $('.socialBtn').popover('hide');
-                    $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
-                    $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
-                    $('.alert.radarIndex').hide();
-                    $("#socialAlertOk").fadeIn('fast');
-                    setTimeout('$("#socialAlertOk").hide();', 10000);
-                    setTimeout('$(".alert.radarIndex").fadeIn("fast");', 10000);
+                    buttonVanish();
+                    alerta();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -363,7 +386,16 @@
         });
         
        });
-       
+       function buttonVanish(){
+         $(document).ready(function(){
+           $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
+           $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
+         });
+       };
+       function alerta(){
+         $("#socialAlertOk").fadeIn('fast');
+         setTimeout('$("#socialAlertOk").hide();', 10000);
+       }
        function goTop(){
         $(document).ready(function() {
           $('html, body').animate({
@@ -371,12 +403,15 @@
           }, "slow");
          }); 
        };
-  
+      twttr.events.bind('tweet', function(event) {
+        alerta();
+        buttonVanish();
+        goTop();
+      });
       function postTwitter() {
         $('#socialBtn').popover('hide');
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
       }
-  
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
