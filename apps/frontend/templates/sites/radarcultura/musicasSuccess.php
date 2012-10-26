@@ -389,10 +389,10 @@
        });
        
        function buttonVanish(){
-         $(document).ready(function(){
-           $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
-           $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
-         });
+         $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
+         $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
+         console.log($('#'+$('#btn-pressed').attr('name')));
+         console.log($('#'+$('#btn-pressed').attr('value')));
        };
        
       function alerta(){
@@ -415,11 +415,13 @@
           }, "slow");
          }); 
        };
-     twttr.events.bind('tweet', function(event) {
+       
+      twttr.events.bind('tweet', function(event) {
         alerta();
         buttonVanish();
         goTop();
       });
+      
       function postTwitter() {
         $('.socialBtn').popover('hide');
         <?php
