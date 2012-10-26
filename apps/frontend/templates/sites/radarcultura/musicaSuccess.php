@@ -268,7 +268,7 @@
         $("#socialBtn").popover("hide");
         $("#socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
-        setTimeout('$("#socialAlertOk").hide();', 10000);
+        setTimeout('$("#socialAlertOk").hide()', 10000);
         goTop();
       }
   

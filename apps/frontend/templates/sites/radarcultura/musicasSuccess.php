@@ -443,7 +443,7 @@
                 }
                 else{
                   $("#socialAlertError").fadeIn('fast');
-                  setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
+                  setTimeout('$("#socialAlertError").fadeOut("slow")', 5000);
                   goTop();
                 }
               }
