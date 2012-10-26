@@ -17,7 +17,7 @@
         </ul>
         <span class="caudaBarra"></span>
         <div class="copyright">
-          <p>&copy; 1996-2011 Funda&ccedil;&atilde;o Padre Anchieta</p>
+          <p>&copy; 1996-2012 Funda&ccedil;&atilde;o Padre Anchieta</p>
         </div>
       </div>
     </div>
