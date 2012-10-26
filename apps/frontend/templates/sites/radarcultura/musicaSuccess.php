@@ -21,6 +21,9 @@
       
       <!--topo menu/alert/logo-->
       <div class="row-fluid">
+        <div id="socialLoading" class="alert alert-info alert-in hide">
+          <span class="badge"><strong>Aguarde um momento<img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
         <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
@@ -65,19 +68,6 @@
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="ajuda-google"></div>
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
-          <!--
-          <div id="plusone-div"></div>
-          <script type="text/javascript">
-          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
-          function buttonInvisible(data){
-            if(data.type == "confirm"){
-              alerta();                
-              popOverHide();
-              goTop();
-            }
-          }
-          </script>
-          -->
         </div>  
         <!--/modal google-->
         <!--modal-->
@@ -227,7 +217,7 @@
                     $("#modal").modal('hide');
                     $('#socialBtn').popover('hide');
                     $('#socialBtn').fadeOut('fast');
-                    alerta();
+                    alertOk();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -274,7 +264,7 @@
           scrollTop: $("#guia-topo").offset().top
         }, "slow");
       }
-      function alerta(){
+      function alertOk(){
         $("#socialBtn").popover("hide");
         $("#socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
@@ -283,16 +273,11 @@
       }
   
       twttr.events.bind('tweet', function(event) {
-        alerta();
+        alertOk();
         goTop();
       });
       <?php 
-       /*
-      function postTwitter() {
-        $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
-      }
-       */
+
       ?>
       function postGoogle() {
         $('#socialBtn').popover('hide');
@@ -328,7 +313,7 @@
                 $('#socialLoading').fadeOut();
                 if(data == "1"){
                   $('#socialBtn').popover('hide');
-                  alerta();
+                  alertOk();
                   goTop();
                 }
                 else{
