@@ -395,10 +395,12 @@
          });
        };
        
-       function alerta(){
-         $("#socialAlertOk").fadeIn('fast');
-         setTimeout('$("#socialAlertOk").hide();', 10000);
-       }
+      function alerta(){
+        $("#socialBtn").fadeOut("fast");
+        $("#socialAlertOk").fadeIn('fast');
+        setTimeout('$("#socialAlertOk").hide();', 10000);
+        goTop();
+      }
 
       function popOverHide(){
         $("#modal-google").modal('hide');
@@ -444,7 +446,7 @@
           description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
-          if(response){
+          if(response!=null){
             //console.log(response);
             //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
             //obj
@@ -463,20 +465,20 @@
                 $('#socialLoading').fadeOut();
                 if(data == "1"){
                   $('#socialBtn').popover('hide');
-                  $('.alert.radarIndex').hide();
-                  $("#socialAlertOk").fadeIn('fast');
-                  setTimeout('$("#socialAlertOk").hide();', 10000);
-                  setTimeout('$(".alert.radarIndex").hide();', 10000);
+                  alerta();
+                  goTop();
                 }
                 else{
                   $('#socialBtn').popover('hide');
                   $("#socialAlertError").fadeIn('fast');
+                  goTop();
                 }
               }
             });
           }else{
             $('#socialBtn').popover('hide');
             $("#socialAlertError").fadeIn('fast');
+            goTop();
           }
         }
         FB.ui(obj, callback);
