@@ -190,9 +190,7 @@
               </div>
 
             <div class="span4 banner-radio">
-              <script type='text/javascript'>
-                GA_googleFillSlot("home-geral300x250");
-              </script>
+              <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
             </div>
 
 
@@ -200,7 +198,9 @@
 
             <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
 
-            <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
+            <script type='text/javascript'>
+              GA_googleFillSlot("home-geral300x250");
+            </script>
 
           </div>
           
