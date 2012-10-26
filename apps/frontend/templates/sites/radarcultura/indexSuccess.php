@@ -23,8 +23,6 @@
      
     <!--container-->
     <div class="container">
-      
-
         
         <!--topo menu/alert/logo-->
         <div class="row-fluid">
@@ -167,6 +165,15 @@
         
         <!--rodape-->
         <div class="row-fluid redes">
+
+          <div class="span4 thumbnail">
+            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
+          </div>
+
+          <div class="span4 thumbnail">
+            <fb:activity href="http://radarcultura.cmais.com.br" app_id="222430124549926" width="319" height="300" header="true" recommendations="true"></fb:activity>
+          </div>
+          
           <?php if(isset($displays['como-participar'])):?>
             <?php if(count($displays['como-participar']) > 0): ?>       
               <div class="span4 thumbnail como-partipar">
