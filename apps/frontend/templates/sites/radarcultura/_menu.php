@@ -7,7 +7,8 @@
         </div>
         <div class="span8 share">
           <div class="google">
-            <g:plus width="100" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
+            <a href="https://plus.google.com/105450700645861288327?prsrc=3" rel="publisher" style="text-decoration:none;">
+            <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
           </div>
           <div class="fb">
             <fb:like href="http://www.facebook.com/programaradarcultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
