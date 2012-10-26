@@ -166,43 +166,41 @@
         <!--rodape-->
         <div class="row-fluid redes">
 
-          <?php if(isset($displays['como-participar'])):?>
-            <?php if(count($displays['como-participar']) > 0): ?>       
               <div class="span4 thumbnail como-partipar">
+              <?php if(isset($displays['como-participar'])):?>
+                <?php if(count($displays['como-participar']) > 0): ?>       
                 <div class="page-header">
                   <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                 </div>
                 <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
                 <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              </div>
-            <?php endif; ?>
-          <?php endif; ?>
+                <?php endif; ?>
+              <?php endif; ?>
+                
+              <?php if(isset($displays['sobre-o-programa'])):?>
+                <?php if(count($displays['sobre-o-programa']) > 0): ?>
+                <div class="page-header">
+                  <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+                </div>
+                <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                <?php endif; ?>
+              <?php endif; ?>
 
-          <?php if(isset($displays['sobre-o-programa'])):?>
-            <?php if(count($displays['sobre-o-programa']) > 0): ?>
-            <div class="span4 thumbnail">
-              <div class="page-header">
-                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-              </div>
-              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              
-              <div class="banner-radio">
-                <script type='text/javascript'>
-                  GA_googleFillSlot("home-geral300x250");
-                </script>
               </div>
 
+            <div class="span4 banner-radio">
+              <script type='text/javascript'>
+                GA_googleFillSlot("home-geral300x250");
+              </script>
             </div>
-            <?php endif; ?>
-          <?php endif; ?>
 
 
           <div class="span4">
 
-            <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
-
             <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
+
+            <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
 
           </div>
           
