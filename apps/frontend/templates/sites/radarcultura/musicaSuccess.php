@@ -306,7 +306,7 @@
             $('#socialLoading').fadeIn();
             
             $.ajax({
-              url: '/actions/radarcultura/retriveFacebookPost.php',
+              url: '/actions/radarcultura/facebookPost.php',
               data: opts,
               dataType: "html",
               success: function(data) {
