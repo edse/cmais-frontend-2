@@ -10,11 +10,11 @@
             <a href="https://plus.google.com/105450700645861288327?prsrc=3" rel="publisher" style="text-decoration:none;">
             <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/></a>
           </div>
-          <div class="fb">
-            <fb:like href="http://www.facebook.com/programaradarcultura" layout="button_count" show_faces="false" send="false" width="180"></fb:like>
-          </div>
           <div class="twt">
             <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
+          </div>
+          <div class="fb" style="width: 180px;">
+            <fb:like href="http://www.facebook.com/programaradarcultura" layout="button_count" show_faces="false" send="false" width="180"></fb:like>
           </div>
         </div>  
       </div>  
