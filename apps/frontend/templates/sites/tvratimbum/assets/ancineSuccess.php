@@ -117,7 +117,29 @@
       <!--Direita-->
       <div class="coluna">
         
-         
+          <!--se liga-->
+          <div class="galeriaVideos seLiga">
+            
+            <div class="enunciado">
+              <span class="ico-seLiga"></span>
+              <h2>Se Liga!</h2>
+            </div>
+            
+            <span class="alcaA"></span>
+            <span class="alcaB"></span>
+            
+            <div class="seLiga-box">
+              <span class="top"></span>
+              <div class="propaganda">
+                <a href="http://www.facebook.com/ratimbum" title="fanpage" target="_blank">
+                  <img src="/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
+                </a>
+              </div>
+              <span class="bottom"></span>
+            </div>
+            
+          </div>
+          <!--/se liga-->
           
           <hr />
 
