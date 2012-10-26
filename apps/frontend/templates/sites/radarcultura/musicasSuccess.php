@@ -381,29 +381,42 @@
           $('.socialBtn').not(botao).popover('hide');
           botao.popover();
         });
+        
         $('.btn-fechar').click(function(){
           $('.socialBtn').popover('hide');
         });
         
        });
+       
        function buttonVanish(){
          $(document).ready(function(){
            $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
            $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
          });
        };
-       function alerta(){
-         $("#socialAlertOk").fadeIn('fast');
-         setTimeout('$("#socialAlertOk").hide();', 10000);
-       }
-       function goTop(){
+       
+      function alerta(){
+        $("#socialBtn").fadeOut("fast");
+        $("#socialAlertOk").fadeIn('fast');
+        setTimeout('$("#socialAlertOk").hide();', 10000);
+        goTop();
+      }
+
+      function popOverHide(){
+        $("#modal-google").modal('hide');
+        $("#modal-facebook").modal('hide');
+        $(".socialBtn").popover("hide");
+        goTop();
+      }
+      
+     function goTop(){
         $(document).ready(function() {
           $('html, body').animate({
             scrollTop: $("#guia-topo").offset().top
           }, "slow");
          }); 
        };
-      twttr.events.bind('tweet', function(event) {
+     twttr.events.bind('tweet', function(event) {
         alerta();
         buttonVanish();
         goTop();
@@ -416,13 +429,18 @@
         */
         ?>
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
-      }
-      function postGoogle() {
-        $('#socialBtn').popover('hide');
+       }
+
+       function postGoogle() {
+        $('.socialBtn').popover('hide');
         popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
-      }
+        popOverHide();
+       }
       
-      function postToFeed() {
+       function postToFeed() {
+        $(".socialBtn").popover("hide");
+        $("#modal-facebook").modal('hide');
+
         // calling the API ...
         var obj = {
           method: 'feed',
@@ -432,34 +450,40 @@
           description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
-          console.log(response);
-          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-          //obj
-          opts= "post_id="+response['post_id'];
-          //loading
-          $('#socialBtn').popover('hide');
-          $('#socialBtn').hide();
-          $('#socialLoading').fadeIn();
-          
-          $.ajax({
-            url: '/actions/radarcultura/facebookPost.php',
-            data: opts,
-            dataType: "text",
-            success: function(data) {
-              $('#socialLoading').fadeOut();
-              if(data == "1"){
-                $('#socialBtn').popover('hide');
-                $('.alert.radarIndex').hide();
-                $("#socialAlertOk").fadeIn('fast');
-                setTimeout('$("#socialAlertOk").hide();', 10000);
-                setTimeout('$(".alert.radarIndex").hide();', 10000);
+          if(response!=null){
+            //console.log(response);
+            //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+            //obj
+            opts= "post_id="+response['post_id'];
+            //loading
+            $('.socialBtn').popover('hide');
+            $('#socialBtn').hide();
+            $('#socialLoading').fadeIn();
+            
+            $.ajax({
+              url: '/actions/radarcultura/facebookPost.php',
+              data: opts,
+              dataType: "text",
+              success: function(data) {
+                goTop();
+                $('#socialLoading').fadeOut();
+                if(data == "1"){
+                  $('.socialBtn').popover('hide');
+                  alerta();
+                  goTop();
+                }
+                else{
+                  $('.socialBtn').popover('hide');
+                  $("#socialAlertError").fadeIn('fast');
+                  goTop();
+                }
               }
-              else{
-                $('#socialBtn').popover('hide');
-                $("#socialAlertError").fadeIn('fast');
-              }
-            }
-          });
+            });
+          }else{
+            $('.socialBtn').popover('hide');
+            $("#socialAlertError").fadeIn('fast');
+            goTop();
+          }
         }
         FB.ui(obj, callback);
       }

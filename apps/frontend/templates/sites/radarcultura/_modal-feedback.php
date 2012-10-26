@@ -42,8 +42,9 @@
   <div id="modal-ok" class="modal playlist hide fade">
     <div id="ok" class="alert alert-block alert-in">
       <span class="badge"><strong>Obrigado pela sua participação!</strong></span><br/>
-      <span> Sua opinião é muito importante pra nós!</span><br/>
-      <span> Caso a janela não feche em 10 segundos <a href="#" class="close-modal">Clique aqui</a></span>
+      <span> Sua opinião é muito importante pra nós!</span><br/><br/>
+      <a href="#" class="close-modal">Fechar</a>
+      <!--<span> Caso a janela não feche em 10 segundos <a href="#" class="close-modal">Clique aqui</a></span>-->
       
     </div>
   </div>
@@ -53,7 +54,8 @@
     <div id="error" class="alert alert-error alert-in">
       <span class="badge"><strong>Erro!</strong></span><br/>
       <span> Sua mensagem não foi enviada, tente novamente mais tarde</span><br/>
-      <span> Caso a janela não feche em 10 segundos <a href="javascript:;" class="close-modal">Clique aqui</a></span>
+      <a href="#" class="close-modal">Fechar</a>
+      <!--<span> Caso a janela não feche em 10 segundos <a href="#" class="close-modal">Clique aqui</a></span>-->
     </div>
   </div>
   <!-- /Modal Feedback resposta-->
