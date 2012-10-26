@@ -197,7 +197,7 @@
             },
             success: function(label){
               label
-                .text('OK!').addClass('valid')
+                .text('OK!').addClass('valid');
                 .closest('.control-group').addClass('success');
             },
             submitHandler: function(form){

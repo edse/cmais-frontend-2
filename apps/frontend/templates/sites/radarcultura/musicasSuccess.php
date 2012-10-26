@@ -158,8 +158,8 @@
           <script>
             $(function(){
               $('.socialBtn').click(function(){
-                $('#btn-pressed').attr('value',$(this).attr('id'))
-                $('#btn-pressed').attr('name','indicada-'+ $(this).attr('name'))
+                $('#btn-pressed').attr('value',$(this).attr('id'));
+                $('#btn-pressed').attr('name','indicada-'+ $(this).attr('name'));
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
@@ -320,7 +320,7 @@
             },
             success: function(label){
               label
-                .text('OK!').addClass('valid')
+                .text('OK!').addClass('valid');
                 .closest('.control-group').addClass('success');
             },
             submitHandler: function(form){
@@ -359,7 +359,7 @@
         });
 
         $('.socialBtn').click(function(){
-          var botao = $("#"+$(this).attr('id'))
+          var botao = $("#"+$(this).attr('id'));
           $('.socialBtn').not(botao).popover('hide');
           botao.popover();
         });
