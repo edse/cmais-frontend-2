@@ -161,7 +161,8 @@
                     <span id="indicada-<?php echo $value ?>" class="btn btn-mini btn-success indicada"  style="display:none;"><i class="icon-share-alt icon-white"></i> Música sugerida.</span>
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
                     <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
-                    <input class="url-<?php echo $value ?>" type="hidden" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
+                    <input type="hidden" class="url-<?php echo $value ?>" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
+                    <input type="hidden" id="btn-pressed" value="" name="">
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -292,7 +293,7 @@
               <div class="row-fluid">
                 <div class="modal-footer musica">
                   <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
-                  <input type="hidden" id="btn-pressed" value="" name="">
+                  <!--<input type="hidden" id="btn-pressed" value="" name="">-->
                   <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar" />
                 </div>
@@ -396,7 +397,6 @@
        };
        
       function alerta(){
-        $("#socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
         setTimeout('$("#socialAlertOk").hide();', 10000);
         goTop();
@@ -422,7 +422,7 @@
         goTop();
       });
       function postTwitter() {
-        $('#socialBtn').popover('hide');
+        $('.socialBtn').popover('hide');
         <?php
         /*
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
