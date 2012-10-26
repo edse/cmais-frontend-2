@@ -508,14 +508,14 @@ a{
   background: url(../image/ico-separador.png) no-repeat;
   float: left;
   margin: 10px 8px 0 0;
-  padding-left: 8px;
+  
 }
 #menu-rodape li.first{
   background: none;
-  padding-left: 23px;
+  padding-left: 5px;
 }
 #menu-rodape li.last{
-  padding-right: 23px;
+  padding-right: 5px;
 }
 #menu-rodape li a{
   color: #6b6b6b;
