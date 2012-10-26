@@ -19,6 +19,9 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
+        <div id="socialLoading" class="alert alert-info radarIndex alert-in hide">
+          <span class="badge"><strong>Aguarde um momento</strong><img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
         <div class="row-fluid" style="margin:10px 0 0 0;"> 
           <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
             <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, essa playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
@@ -59,19 +62,7 @@
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="ajuda-google p"></div>
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
-          <!--
-          <div id="plusone-div"></div>
-          <script type="text/javascript">
-          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
-          function buttonInvisible(data){
-            if(data.type == "confirm"){
-              alerta();                
-              popOverHide();
-              goTop();
-            }
-          }
-          </script>
-          -->
+          
         </div>  
         <!--/modal google-->
         <!--modal-->
@@ -152,10 +143,7 @@
                   <input type="text" name="interprete" class="input-large required">
                 </div>  
                 <input type="hidden" name="url" value="<?php echo $uri?>" />
-                <!--<div class="control-group">
-                  <label>URL</label>
-                  <input type="text" name="url" class="input-large required" >
-                </div>-->
+
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
@@ -226,7 +214,7 @@
                   if(data == "1"){
                     $("#modal-1").modal('hide');
                     $('#socialBtn-1').popover('hide');
-                    alerta();
+                    alertOk();
                   }
                   else{
                     $("#modal-1").modal('hide');
@@ -262,29 +250,23 @@
         })
       });
       function popOverHide(){
-        $(document).ready(function() {
-          $("#modal-google").modal('hide');
-          $("#modal-facebook").modal('hide');
-          $("#socialBtn-1").popover("hide");
-        });
+        $("#modal-google").modal('hide');
+        $("#modal-facebook").modal('hide');
+        $("#socialBtn-1").popover("hide");
       };
       function goTop(){
-        $(document).ready(function() {
-          $('html, body').animate({
-            scrollTop: $("#guia-topo").offset().top
-          }, "slow");
-         }); 
+        $('html, body').animate({
+          scrollTop: $("#guia-topo").offset().top
+        }, "slow");
        };
-       function alerta(){
-       $(document).ready(function(){
-          $("#socialAlertOk").fadeIn('fast');
-          setTimeout('$("#socialAlertOk").hide();', 10000);
-         });
+       function alertOk(){
+        $("#socialAlertOk").fadeIn('fast');
+        setTimeout('$("#socialAlertOk").hide();', 10000);
        };
       //////////////////////
       twttr.events.bind('tweet', function(event) {
         $('#socialBtn-1').popover('hide');
-        alerta();
+        alertOk();
         goTop();
       });
       <?php 
@@ -324,20 +306,13 @@
             data: opts,
             dataType: "text",
             success: function(data) {
-              $('#socialLoading').fadeOut();
+            $('#socialLoading').fadeOut();
               if(data == "1"){
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn-1').popover('hide');
-                $("#socialAlertOk").fadeIn('fast');
-                $('.radar.Index').fadeOut('fast');
-                setTimeout('$("#socialAlertOk").hide();', 10000);
-                setTimeout('$(".radar.Index").fadeIn("fast");', 10000);
+                alertOk();
                 goTop();
               }
               else{
-                $("#modal").fadeOut('fast');
-                $(".modal-backdrop").fadeOut('fast');
                 $('#socialBtn-1').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
                 goTop();
