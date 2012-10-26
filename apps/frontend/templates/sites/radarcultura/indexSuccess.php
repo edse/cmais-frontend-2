@@ -190,7 +190,7 @@
               </div>
 
             <div class="span4 banner-radio">
-              <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
+              <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" height="500" show_faces="true" stream="true" header="true"></fb:like-box>
             </div>
 
 
