@@ -7,7 +7,7 @@
         </div>
         <div class="span8 share">
           <div class="google">
-            <g:plusone annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
+            <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
           </div>
           <div class="twt">
             <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
