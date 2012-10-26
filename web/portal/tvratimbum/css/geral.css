@@ -503,12 +503,13 @@ a{
   background: url(../image/bg-parafusoTransparente.png) repeat-x;
   float: left;
   height: 33px;
+  width:502px;
 }
 #menu-rodape li{
   background: url(../image/ico-separador.png) no-repeat;
   float: left;
-  margin: 10px 8px 0 0;
-  
+  margin: 10px 0px 0 0;
+  padding:0 7px;  
 }
 #menu-rodape li.first{
   background: none;
