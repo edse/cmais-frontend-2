@@ -106,7 +106,7 @@
                 <div class="box-especial-info">
                   
                   <!--menu-especial-info--> 
-                  <div class="menu-especial-info">
+                  <div class="menu-especial-info"> 
                    
                   </div>
                   <!--menu-especial-info--> 
