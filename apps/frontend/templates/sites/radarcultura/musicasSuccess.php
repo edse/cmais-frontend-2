@@ -396,7 +396,7 @@
        };
        
       function alerta(){
-        $("#socialBtn").fadeOut("fast");
+        $(".socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
         setTimeout('$("#socialAlertOk").hide();', 10000);
         goTop();
@@ -405,7 +405,7 @@
       function popOverHide(){
         $("#modal-google").modal('hide');
         $("#modal-facebook").modal('hide');
-        $("#socialBtn").popover("hide");
+        $(".socialBtn").popover("hide");
         goTop();
       }
       
@@ -423,19 +423,19 @@
        });
        
        function postTwitter() {
-        $('#socialBtn').popover('hide');
+        $('.socialBtn').popover('hide');
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
        }
 
        function postGoogle() {
-        $('#socialBtn').popover('hide');
+        $('.socialBtn').popover('hide');
         popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
         popOverHide();
        }
       
        function postToFeed() {
+        $(".socialBtn").popover("hide");
         $("#modal-facebook").modal('hide');
-        $("#socialBtn").popover("hide");
 
         // calling the API ...
         var obj = {
@@ -452,7 +452,7 @@
             //obj
             opts= "post_id="+response['post_id'];
             //loading
-            $('#socialBtn').popover('hide');
+            $('.socialBtn').popover('hide');
             $('#socialBtn').hide();
             $('#socialLoading').fadeIn();
             
@@ -464,19 +464,19 @@
                 goTop();
                 $('#socialLoading').fadeOut();
                 if(data == "1"){
-                  $('#socialBtn').popover('hide');
+                  $('.socialBtn').popover('hide');
                   alerta();
                   goTop();
                 }
                 else{
-                  $('#socialBtn').popover('hide');
+                  $('.socialBtn').popover('hide');
                   $("#socialAlertError").fadeIn('fast');
                   goTop();
                 }
               }
             });
           }else{
-            $('#socialBtn').popover('hide');
+            $('.socialBtn').popover('hide');
             $("#socialAlertError").fadeIn('fast');
             goTop();
           }
