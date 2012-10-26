@@ -437,7 +437,6 @@
                 goTop();
                 $('#socialLoading').fadeOut();
                 $('.socialBtn').popover('hide');
-                $("#socialAlertError").fadeIn('fast');
                 if(data == "1"){
                   alertOk();
                   buttonVanish();
