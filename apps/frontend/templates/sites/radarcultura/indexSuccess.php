@@ -178,9 +178,17 @@
             <?php endif; ?>
           <?php endif; ?>
 
-          <div class="span4 thumbnail">
-            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
-          </div>
+          <?php if(isset($displays['sobre-o-programa'])):?>
+            <?php if(count($displays['sobre-o-programa']) > 0): ?>
+            <div class="span4 thumbnail">
+              <div class="page-header">
+                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+              </div>
+              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+            </div>
+            <?php endif; ?>
+          <?php endif; ?>
 
           <div class="span4">
             <div class="banner-radio">
@@ -196,20 +204,12 @@
         <!--rodape-->
         <div class="row-fluid redes">
 
-          <?php if(isset($displays['sobre-o-programa'])):?>
-            <?php if(count($displays['sobre-o-programa']) > 0): ?>
-            <div class="span4 thumbnail">
-              <div class="page-header">
-                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-              </div>
-              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          <div class="span4 thumbnail">
+          <div class="span4">
             <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
+          </div>
+
+          <div class="span4">
+            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
           </div>
 
           <!--/rodape-->
