@@ -154,7 +154,7 @@
                 $aux = explode(";", $d->AssetContent->getHeadlineShort());
                 ?>
                 <tr>
-                  <td class="music-<?php echo $value ?>"><?php echo $d->getTitle(); ?></td>
+                  <td class="music-<?php echo $value ?>"><?php echo $d->getTitle(); ?> <input type="hidden" name="music-<?php echo $value ?>-encoded" value="<?php echo urlencode($d->getTitle()) ?>" /></td>
                   <td class="performer-<?php echo $value ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
@@ -162,6 +162,7 @@
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
                     <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <input type="hidden" class="url-<?php echo $value ?>" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
+                    <input type="hidden" class="url-<?php echo $value ?>-encoded" value="<?php echo urlencode("http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug()) ?>" />
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -179,9 +180,9 @@
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
 
-                $('#titulo2').val($('.music-'+$(this).attr('name')).html());
+                $('#titulo2').val($('.music-'+$(this).attr('name')+'-encoded').val());
                 $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
-                $('#url2').val($('.url-'+$(this).attr('name')).val());
+                $('#url2').val($('.url-'+$(this).attr('name')+'-encoded').val());
               });
             });
           </script>
@@ -429,7 +430,8 @@
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
         */
         ?> 
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
+        //popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
+        self.open('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val());
        }
 
        function postGoogle() {
