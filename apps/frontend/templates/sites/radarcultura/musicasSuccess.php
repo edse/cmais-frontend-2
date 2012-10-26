@@ -432,7 +432,9 @@
        }
       
        function postToFeed() {
-        popOverHide();
+        $("#modal-facebook").modal('hide');
+        $("#socialBtn").popover("hide");
+
         // calling the API ...
         var obj = {
           method: 'feed',
@@ -442,7 +444,7 @@
           description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
-          console.log(response);
+          //console.log(response);
           //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
@@ -456,6 +458,7 @@
             data: opts,
             dataType: "text",
             success: function(data) {
+              goTop();
               $('#socialLoading').fadeOut();
               if(data == "1"){
                 $('#socialBtn').popover('hide');
