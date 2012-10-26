@@ -70,10 +70,6 @@
       </div>
       <!--/topo Artista/contagem-->
       
-      <?php  /*if($letter != ""): ?>
-          <h3><small>Músicas começando com </small><?php echo strtoupper($letter)?></h3>
-        <?php endif; */ ?>
-        
         <!--modal facebook-->
         <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -86,19 +82,6 @@
           <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="ajuda-google"></div>
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
-          <!--
-          <div id="plusone-div"></div>
-          <script type="text/javascript">
-          gapi.plusone.render("avancar", {"onendinteraction": buttonInvisible});
-          function buttonInvisible(data){
-            if(data.type == "confirm"){
-              alerta();                
-              popOverHide();
-              goTop();
-            }
-          }
-          </script>
-          -->
         </div>  
         <!--/modal google-->
       <?php if($artist == ""): ?>
@@ -172,14 +155,11 @@
           <script>
             $(function(){
               $('.socialBtn').click(function(){
-                
-                //alert($('#url2').val());
                 $('#btn-pressed').attr('value',$(this).attr('id'))
                 $('#btn-pressed').attr('name','indicada-'+ $(this).attr('name'))
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete').val($('.performer-'+$(this).attr('name')).html());
                 $('#url').val($('.url-'+$(this).attr('name')).val());
-
                 $('#titulo2').val($('.music-'+$(this).attr('name')).html());
                 $('#interprete2').val($('.performer-'+$(this).attr('name')).html());
                 $('#url2').val($('.url-'+$(this).attr('name')).val());
@@ -355,9 +335,8 @@
                   $('.btn-enviar').show();
                   if(data == "1"){
                     $("#modal").modal('hide');
-                    $('.socialBtn').popover('hide');
                     buttonVanish();
-                    alerta();
+                    alertOk();
                   }
                   else{
                     $("#modal").modal('hide');
@@ -372,7 +351,6 @@
       </script>
       <script>
       $(document).ready(function() {
-        //$('#popover').popover('show');
         $('.socialBtn').popover({
           placement:"left"
         });
@@ -390,11 +368,12 @@
        });
        
        function buttonVanish(){
+         $('.socialBtn').popover('hide');
          $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
          $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
        };
        
-      function alerta(){
+      function alertOk(){
         $("#socialAlertOk").fadeIn('fast');
         setTimeout('$("#socialAlertOk").hide();', 10000);
         goTop();
@@ -414,26 +393,15 @@
      }
        
      twttr.events.bind('tweet', function(event) {
-        alerta();
+        alertOk();
         buttonVanish();
-        goTop();
       });
       
-      function postTwitter() {
-        $('.socialBtn').popover('hide');
-        <?php
-        /*
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
-        */
-        ?> 
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
-       }
-
-       function postGoogle() {
-        $('.socialBtn').popover('hide');
-        popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
-        popOverHide();
-       }
+     function postGoogle() {
+      $('.socialBtn').popover('hide');
+      popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
+      popOverHide();
+     }
       
        function postToFeed() {
         $(".socialBtn").popover("hide");
@@ -467,12 +435,12 @@
                 $('#socialLoading').fadeOut();
                 if(data == "1"){
                   $('.socialBtn').popover('hide');
-                  alerta();
-                  goTop();
+                  alertOk();
                 }
                 else{
-                  $('.socialBtn').popover('hide');
+                  $(".socialBtn").popover('hide');
                   $("#socialAlertError").fadeIn('fast');
+                  setTimeout('$("#socialAlertError").fadeOut("slow");', 10000);
                   goTop();
                 }
               }
