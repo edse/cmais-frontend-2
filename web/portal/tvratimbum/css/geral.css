@@ -150,7 +150,7 @@ a{
 }
 #menu-lateral li a.ml-twitter:hover{
   background-position: -196px -41px;
-}
+} 
 #menu-lateral li a.ml-youtube:hover{
   background-position: -245px -41px;
 }
@@ -513,7 +513,11 @@ a{
 }
 #menu-rodape li.first{
   background: none;
+<<<<<<< HEAD
+  padding-left: 18px;
+=======
   padding-left: 15px;
+>>>>>>> 04af0b946e35efd8fd0c76eafdfd23430c5af289
 }
 #menu-rodape li.last{
   padding-right: 5px;
