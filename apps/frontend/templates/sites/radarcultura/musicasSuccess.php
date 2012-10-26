@@ -396,7 +396,7 @@
        };
        
       function alerta(){
-        $(".socialBtn").fadeOut("fast");
+        $("#socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
         setTimeout('$("#socialAlertOk").hide();', 10000);
         goTop();
