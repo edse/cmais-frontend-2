@@ -381,21 +381,32 @@
           $('.socialBtn').not(botao).popover('hide');
           botao.popover();
         });
+        
         $('.btn-fechar').click(function(){
           $('.socialBtn').popover('hide');
         });
         
        });
+       
        function buttonVanish(){
          $(document).ready(function(){
            $('#'+$('#btn-pressed').attr('value')).fadeOut('fast');
            $('#'+$('#btn-pressed').attr('name')).fadeIn('fast');
          });
        };
+       
        function alerta(){
          $("#socialAlertOk").fadeIn('fast');
          setTimeout('$("#socialAlertOk").hide();', 10000);
        }
+
+      function popOverHide(){
+        $("#modal-google").modal('hide');
+        $("#modal-facebook").modal('hide');
+        $("#socialBtn").popover("hide");
+        goTop();
+      }
+      
        function goTop(){
         $(document).ready(function() {
           $('html, body').animate({
@@ -403,21 +414,25 @@
           }, "slow");
          }); 
        };
-      twttr.events.bind('tweet', function(event) {
+       twttr.events.bind('tweet', function(event) {
         alerta();
         buttonVanish();
         goTop();
-      });
-      function postTwitter() {
+       });
+       
+       function postTwitter() {
         $('#socialBtn').popover('hide');
         popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=Minha indicação para o @radarcultura é: '+$('#titulo2').val()+'&url='+$('#url2').val(), '', 600, 600);
-      }
-      function postGoogle() {
+       }
+
+       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url='+$('#url2').val(),'',600,600);
-      }
+        popOverHide();
+       }
       
-      function postToFeed() {
+       function postToFeed() {
+        popOverHide();
         // calling the API ...
         var obj = {
           method: 'feed',

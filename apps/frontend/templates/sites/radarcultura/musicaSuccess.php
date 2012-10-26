@@ -262,29 +262,24 @@
         }
         
       });
+      
       function popOverHide(){
-        $(document).ready(function() {
-          $("#modal-google").modal('hide');
-          $("#modal-facebook").modal('hide');
-          $("#socialBtn").popover("hide");
-          goTop();
-        });
-      };
+        $("#modal-google").modal('hide');
+        $("#modal-facebook").modal('hide');
+        $("#socialBtn").popover("hide");
+        goTop();
+      }
       function goTop(){
-        $(document).ready(function() {
-          $('html, body').animate({
-            scrollTop: $("#guia-topo").offset().top
-          }, "slow");
-         }); 
-       };
-       function alerta(){
-       $(document).ready(function(){
-          $("#socialBtn").fadeOut("fast");
-          $("#socialAlertOk").fadeIn('fast');
-          setTimeout('$("#socialAlertOk").hide();', 10000);
-          goTop();
-         });
-       };
+        $('html, body').animate({
+          scrollTop: $("#guia-topo").offset().top
+        }, "slow");
+      }
+      function alerta(){
+        $("#socialBtn").fadeOut("fast");
+        $("#socialAlertOk").fadeIn('fast');
+        setTimeout('$("#socialAlertOk").hide();', 10000);
+        goTop();
+      }
   
       twttr.events.bind('tweet', function(event) {
         alerta();
@@ -314,7 +309,7 @@
           description: 'Minha indicação para o RadarCultura'
         };
         function callback(response) {
-          console.log(response);
+          //console.log(response);
           //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
