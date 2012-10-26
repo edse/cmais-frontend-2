@@ -492,8 +492,8 @@
              <!--pela web-->  
              <div class="row-fluid">
                 <div class="span12 page-header na-rede">
-                  <h3>Pela Web</h3>
-                  <small> quem já indicou essa música</small>
+                  <h3>Pitacos</h3>
+                  <small> quem já participou dessa playlist</small>
                 </div>
                 <!-- pitaco -->
                 <div class="row-fluid">
