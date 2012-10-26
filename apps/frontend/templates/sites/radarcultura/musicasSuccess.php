@@ -21,7 +21,7 @@
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin:10px 0 0 0;">
         <div id="socialLoading" class="alert alert-info alert-in hide">
-          <span class="badge"><strong>Aguarde um momento<img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
+          <span class="badge"><strong>Aguarde um momento</strong><img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
