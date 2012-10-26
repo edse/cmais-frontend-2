@@ -63,7 +63,7 @@
                     <legend>Playlist</legend>
                     <div class="control-group">
                       <label>Título</label>
-                      <input type="text" class="input-large required">
+                      <input name="titulo" type="text" class="input-large required">
                       <span class="help-block"></span>
                     </div>
                     <div class="control-group">
