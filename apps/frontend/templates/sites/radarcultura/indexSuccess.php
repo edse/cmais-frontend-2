@@ -173,7 +173,7 @@
                   <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
                 </div>
                 <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> como participar</a></p>
                 <?php endif; ?>
               <?php endif; ?>
                 
@@ -183,7 +183,7 @@
                   <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
                 </div>
                 <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+                <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> sobre o programa</a></p>
                 <?php endif; ?>
               <?php endif; ?>
 
