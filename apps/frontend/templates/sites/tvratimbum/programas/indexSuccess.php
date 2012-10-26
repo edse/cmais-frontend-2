@@ -58,9 +58,11 @@
             <div class="programaEscolhido-info">
               <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
               <div class="box-infos">
+                <?php /*
                 <div class="horario">
                   <p><?php echo html_entity_decode($site->Program->getSchedule())?></p>
                 </div>
+                 */ ?>
                 <?php /*
                 <div class="btn-episodeo">
                   <span class="picote"></span>

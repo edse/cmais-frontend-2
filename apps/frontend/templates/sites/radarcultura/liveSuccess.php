@@ -19,9 +19,6 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
       
       <!--topo menu/alert/logo-->
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-      </div>
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
@@ -32,14 +29,20 @@
       <div class="row-fluid">
         <!--transmissao ao vivo -->
         <div class="span6">  
-          <div class="page-header">
+          <div class="page-header ao-vivo">
             <h4>Transmiss&atilde;o ao vivo</h4>
           </div>
-          <div id="videoPlayer"></div>
+          <div id="videoPlayer">
+            <span class="falta-flash">
+              Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/>
+              <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>.
+            </span>
+          </div>
           <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
   
           <script>
           var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf","cam1","450","338","9");
+          
           so.addParam("allowscriptaccess","always");
           so.addParam("allowfullscreen","true");
           so.addParam("wmode","transparent");
@@ -54,17 +57,17 @@
           <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
          <!-- comentario facebook -->
-         <fb:comments href="http://cmais.com.br" numposts="3" width="450" publish_feed="true"></fb:comments>
+         <fb:comments href="<?php echo $uri?>" numposts="3" width="495" publish_feed="true" style="margin-top:30px;"></fb:comments>
          <hr />
          <!-- /comentario facebook -->
          </div>      
          <!--/transmissao ao vivo -->
          <!--Bate papo-->
          <div class="span6">
-           <div class="page-header">
+           <div class="page-header ao-vivo">
             <h4>Bate Papo</h4>
            </div> 
-           <iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=aa92a56e37/height=680/width=467" scrolling="no" height="680px" width="467px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=aa92a56e37" >Rádio Cultura Brasil</a></iframe>
+           <?php echo html_entity_decode($displays["chat"][0]->getHtml()); ?>
          </div>
          <!--/Bate papo-->
          <!--banner horizontal-->    

@@ -462,7 +462,7 @@ class _sectionActions extends sfActions
             ->execute();
         }
         else{
-          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
+          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -646,6 +646,9 @@ class _sectionActions extends sfActions
         
         if($request->getParameter('buscam')!=""){
           
+          $this->busca_radar = $request->getParameter('buscam');
+
+          /*
           $this->assetsQuery = Doctrine_Query::create()
             ->select('a.title')
             ->from('Asset a')
@@ -661,6 +664,23 @@ class _sectionActions extends sfActions
             ->andWhere('description LIKE ?', 'Por %')
             ->andWhere('site_id = 189')
             ->fetchArray();
+          */
+          
+          $this->assetsQuery = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
+
+          $countQuery = Doctrine_Query::create()
+            ->select('COUNT(DISTINCT description) as description')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.section_id = ?', $this->section->id)
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('title LIKE ?', '%'.$request->getParameter('buscam').'%');
 
         }
         elseif($request->getParameter('letter')!=""){
@@ -668,6 +688,27 @@ class _sectionActions extends sfActions
           $this->letter = $request->getParameter('letter');
           
           if($this->letter == "#"){
+            
+          
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a, SectionAsset sa')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
+              ->andWhere('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('a.description');
+
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a, SectionAsset sa')
+              ->where('slug REGEXP ?', '^[0-9].*-por-.*$')
+              ->andWhere('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('a.description');
+
+            /*
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
@@ -683,9 +724,28 @@ class _sectionActions extends sfActions
               //->where('slug LIKE ?', $request->getParameter('letter').'%-por-'.$request->getParameter('artista'))
               ->andWhere('site_id = 189')
               ->fetchArray();
+            */
   
           }
           else{
+            
+            $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.title')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+  
+            $countQuery = Doctrine_Query::create()
+              ->select('COUNT(DISTINCT description) as description')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.section_id = ?', $this->section->id)
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+              
+            /*
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
@@ -699,6 +759,7 @@ class _sectionActions extends sfActions
               ->where('slug LIKE ?', $request->getParameter('letter').'%-por-%')
               ->andWhere('site_id = 189')
               ->fetchArray();
+            */
   
           }
         }else{
@@ -732,6 +793,8 @@ class _sectionActions extends sfActions
       else if($this->section->Site->getSlug() == "radarcultura" && $this->section->getSlug() == "artistas"){
   
         if($request->getParameter('buscaa')!=""){
+          
+          $this->busca_radar = $request->getParameter('buscaa');
 
           $this->assetsQuery = Doctrine_Query::create()
             ->select('DISTINCT description as description')
@@ -1128,19 +1191,26 @@ class _sectionActions extends sfActions
     else
       $this->getResponse()->addMetaProp('og:type', 'website');
     $this->getResponse()->addMetaProp('og:description', $description);
+    
     $this->getResponse()->addMetaProp('og:url', $this->uri);
     $this->getResponse()->addMetaProp('og:site_name', 'cmais+');
-    if($this->site->Program->getImageLive() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
-    elseif($this->site->Program->getImageThumb() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
-    elseif($this->site->getImageThumb() != "")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
-    else
-      $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
-
-    if($this->site->getSlug() == "socrates")
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
+    
+    if($this->site->getSlug() == "radarcultura"){
+      $this->getResponse()->addMetaProp('og:description', $title." ".$description);
+      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+    }else{
+      if($this->site->Program->getImageLive() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
+      elseif($this->site->Program->getImageThumb() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
+      elseif($this->site->getImageThumb() != "")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
+      else
+        $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+  
+      if($this->site->getSlug() == "socrates")
+        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
+    }
     
     // pagination
     if($sectionSlug == 'recadinhos'){
@@ -1175,7 +1245,7 @@ class _sectionActions extends sfActions
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-        if ($this->site->getSlug() != "inglescommusica")
+        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes"))
           $this->assetsQuery->limit(60);
       }
       else{
@@ -1199,12 +1269,12 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-      if ($this->site->getSlug() == "inglescommusica")
+      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes"))
         $pagelimit = 9;
             
     }
     if($this->section->Site->getSlug() == "radarcultura") {
-      if($this->section->getSlug() == "playlist")
+      if($this->section->getSlug() == "playlists")
         $pagelimit = 20;
       else if($this->section->getSlug() == "musicas")
         $pagelimit = 20;
@@ -1420,7 +1490,7 @@ class _sectionActions extends sfActions
             if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo');
           }
-          elseif($this->site->getSlug() == "inglescommusica"){
+          elseif(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")){
             if($debug) print "<br>3.01>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
           }

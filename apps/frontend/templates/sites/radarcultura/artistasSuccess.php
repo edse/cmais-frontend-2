@@ -91,9 +91,6 @@ function slugfy($string){
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
-        <div class="row-fluid">
-          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-        </div>
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
@@ -101,7 +98,7 @@ function slugfy($string){
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artista' => $artist)) ?>
         <!--letra-->      
         <div class="row-fluid">  
-          <div class="row-fluid artista">
+          <div class="row-fluid musicas">
             <h1>Lista de músicas por artistas</h1>
               
             <!--
@@ -110,14 +107,28 @@ function slugfy($string){
             <?php endif; ?>
             -->
             
-            <!--contagem-->
-            <form action="" method="post">
-              <input class="btn pull-right btn-busca" type="submit" value="Busca">
-              <div class="input-prepend">
-               <input class="span3 pull-right" id="inputIcon" type="text" name="busca"><span class="add-on pull-right"><i class="icon-search"></i></span>
-              </div>
-            <form>
-            <!--/contagem--> 
+            <div class="span5 pull-right">
+              <!--busca-->
+              <form action="" method="post" id="busca-radar">
+                <div class="row-fluid">
+                  <input class="btn pull-right btn-busca" type="submit" value="Busca">
+                  <div class="input-prepend">
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
+                  </div>
+                </div>  
+                <div class="row-fluid">
+                  <label class="radio inline" style="margin-left: 35px">
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" />
+                    Por Título
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" checked="checked" />
+                    Por Artista
+                  </label>
+                </div>
+              </form>
+              <!--/busca--> 
+            </div> 
           </div>
 
           <div class="pagination pagination-centered artista">
@@ -232,4 +243,14 @@ function slugfy($string){
       <!--banner horizontal-->
     </div>
     <!--container-->
+    
+    <script>
+      $('#busca-radar').submit(function() {
+        if($("#busca-por1").is(':checked'))
+          self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
+        else if($("#busca-por2").is(':checked'))
+          self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
+        return false;
+      });                    
+    </script>
 

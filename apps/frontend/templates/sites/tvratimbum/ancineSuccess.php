@@ -100,7 +100,7 @@
                   <p>Informações ANCINE.</p>
                   
                 </div>
-                <!--explicacao-->
+                <!--explicacao--> 
                 
                 <!--especial-info-->                
                 <div class="box-especial-info">

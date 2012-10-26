@@ -71,7 +71,6 @@
 
                         <div class="jogosBox">
                           
-                          <!--<span class="palhaca"></span>-->
                           <div class="rodaGigante down">
                             <a class="todosJogos downloads" href="/quintaldacultura/baixar/tudo"><span>Tudo para baixar</span></a>
                             <a class="papel" href="/quintaldacultura/baixar/papel-de-parede"><span>Papel de Parede</span></a>
@@ -79,7 +78,7 @@
                             <?php /* <a class="toques" href="/quintaldacultura/baixar/toque-para-celular"><span>Toque para Celular</span></a> */?>
                             <a class="folhinhas" href="/quintaldacultura/baixar/folhinha"><span>Folhinha</span></a>
                           </div>
-                          <!--<span class="palhaco"></span>-->
+                          <span class="palhaco"></span>
                         </div>
                       </div>
 

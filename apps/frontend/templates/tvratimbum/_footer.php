@@ -2,8 +2,13 @@
       <div id="menu-rodape">
         <span class="pontaBarra"></span>
         <ul>
+<<<<<<< HEAD
           <li class="first"><a href="/especial">Ancine</a></li>
             <li><a href="/jogos">Jogos</a></li>
+=======
+          <li class="first"><a href="/ancine">Ancine</a></li>
+          <li><a href="/jogos">Jogos</a></li>
+>>>>>>> 04af0b946e35efd8fd0c76eafdfd23430c5af289
           <li><a href="/videos">V&iacute;deos</a></li>
           <li><a href="/imagens">Imagens</a></li>
           <li><a href="/atividades">Atividades</a></li>

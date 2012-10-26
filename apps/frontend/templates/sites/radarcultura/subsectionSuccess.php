@@ -28,9 +28,7 @@ if(isset($pager)){
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
-        <div class="row-fluid">
-          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-        </div>
+        
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
@@ -49,7 +47,7 @@ if(isset($pager)){
         <div class="lista-assets span8">
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
-              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
                   <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if ($related[0]->getThumbnail2()): ?>
                   <div class="row-fluid titulo">

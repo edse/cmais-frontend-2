@@ -19,16 +19,22 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
       <!--topo menu/alert/logo-->
-      <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+      <div class="row-fluid" style="margin:10px 0 0 0;">
+        <div id="socialAlertOk" class="alert alert-info alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
       </div>
+      
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
         <!--topo menu/alert/logo-->
       <!--breadcrumbs-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
-       
+   
       <!--topo Playlits/contagem-->
       <div id="row-fluid">
         <!--Titulo-->
@@ -39,7 +45,7 @@
           
           <!--contagem-->
           <div class="pull-right">
-            <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira uma playlist</a>     
+            <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>     
           </div>
           <!--/contagem-->
          
@@ -49,6 +55,7 @@
       </div>
       <!--/topo Playlists/contagem-->
       
+      
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
 
       <div class="container">  
@@ -56,7 +63,7 @@
       <div class="row-fluid musicas" >
         <!--coluna esquerda-->
         <div class="span8" style="margin: 0 0 0 0;">
-          <table class="table table-condensed table-hover playlist">
+          <table class="table table-striped playlist">
             <tbody>
               <thead>
                 <tr>
@@ -186,6 +193,13 @@
       <input type="hidden" name="letter" id="letter" value="<?php if(isset($letter)) echo $letter;?>" />
     </form>
     <script>
+      $(document).ready(function(){
+        $('#socialBtn').click(function(){ 
+          $('html, body').animate({
+            scrollTop: $("#guia-topo").offset().top
+          }, "slow");
+        });
+      });
       function goToPage(i){
         $("#page").val(i);
         //$("#letter").val("");
@@ -197,4 +211,3 @@
         $("#page_form").submit();
       }
     </script>
-    <!--/form paginacao-->  

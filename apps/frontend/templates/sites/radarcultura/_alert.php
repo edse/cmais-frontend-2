@@ -23,3 +23,8 @@
           <!-- /box-alert-topo-->
         <?php endif; ?>
      <?php endif; ?>
+      <script>
+      $(document).ready(function(){
+        setTimeout('$("#socialAlertOk").hide();', 10000);
+      });
+      </script>     

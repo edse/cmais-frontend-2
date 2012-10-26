@@ -13,7 +13,7 @@
     <![endif]-->
 
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
-    
+
     <!--container-->
     <div class="container">
       
@@ -21,14 +21,22 @@
       
       <!--topo menu/alert/logo-->
       <div class="row-fluid">
-        <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
+        <div id="socialLoading" class="alert alert-info radarIndex alert-in hide">
+          <span class="badge"><strong>Aguarde um momento</strong><img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
+          <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> As melhores sugestões ganham destaque no RadarCultura!</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
+        <div id="socialAlertError" class="alert alert-error alert-in hide">
+          <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
+        </div>
       </div>
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
       
       <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
-      
+
       <!--topo menu/alert/logo-->
       <div class="row-fluid">
         <!--titulo musica-->
@@ -37,14 +45,31 @@
          <small><?php echo $asset->getDescription() ?></small>
          </h1>
         
+        
             <!--contagem-->
             <div class="pull-right">
-              <a href="javascript:;" class="btn btn-large btn-danger pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>     
+              <!--<a href="javascript:;" class="btn btn-large btn-info pull-right socialBtn" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="javascript:postToFeed();">Facebook</a><a class="btn" href="javascript:postGoogle();">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
+              <a href="javascript:;" class="btn btn-large btn-info pull-right" id="socialBtn" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
             </div>
             <!--/contagem-->
           
         </div>
         <!--/titulo musica-->
+
+        <!--modal facebook-->
+        <div id="modal-facebook" class="modal playlist hide fade" name="facebook">
+         <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <div class="ajuda-face"></div> 
+         <a class="avancar" href="javascript:postToFeed();">Avançar</a>
+        </div>  
+        <!--/modal facebook-->
+        <!--modal google-->
+        <div id="modal-google" class="modal playlist hide fade" name="google">
+          <button type="button" class="close btn-fechar btn-fechar-redes" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="ajuda-google"></div>
+          <a class="avancar" href="javascript:postGoogle();">Avançar</a>
+        </div>  
+        <!--/modal google-->
         <!--modal-->
         <div id="modal" class="modal playlist hide fade">
           <!--modal-header-->  
@@ -114,23 +139,26 @@
                 <legend>Minha Indicação</legend>
                 <div class="control-group">
                   <label>Título</label>
-                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $asset->getTitle()?>" class="input-large" disabled="disabled" id="titulo2">
+                  <input type="hidden" value="<?php echo $asset->getTitle()?>" id="titulo" name="titulo" />
                   <span class="help-block"></span>
                 </div>  
                 <div class="control-group">  
                   <label>Intérprete</label>
-                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $asset->getDescription()?>" class="input-large" disabled="disabled" id="interprete2">
+                  <input type="hidden" value="<?php echo $asset->getDescription()?>" id="interprete" name="interprete" />
                 </div>  
                 <div class="control-group">
                   <label>URL</label>
-                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled">
+                  <input type="text" value="<?php echo $uri?>" placeholder="Cidade" class="input-large" disabled="disabled" id="url2">
+                  <input type="hidden" value="<?php echo $uri?>" id="url" name="url" />
                 </div>
               </div>
               <div class="row-fluid">
                 <div class="modal-footer musica">
-                  <a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader2"/>
-                  <input type="submit" class="btn btn-primary btn-enviar" value="Enviar"/>
+                  <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
+                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3"/>
+                  <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
             </form> 
@@ -176,21 +204,29 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
-                  $('#loader2').show();
+                  $('#loader3').show();
                   $('.btn-enviar').hide();
                 },
                 success: function(data){
-                  window.location.href="javascript:;";
+                  $('#loader3').hide();
+                  $('.btn-enviar').show();
                   if(data == "1"){
-
+                    $("#modal").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $('#socialBtn').fadeOut('fast');
+                    alertOk();
                   }
-                  else {
-
+                  else{
+                    $("#modal").modal('hide');
+                    $('#socialBtn').popover('hide');
+                    $("#socialAlertError").fadeIn('fast');
+                    setTimeout('$("#socialAlertError").fadeOut("slow");', 10000);
                   }
                 }
-              });         
+              });
             }
           });
         });
@@ -200,52 +236,54 @@
         //$('#popover').popover('show');
         $('#socialBtn').popover({
           placement:"left"
-          
         });
         
         $('.btn-fechar').click(function(){
           $('#socialBtn').popover('hide');
         });
-
+        $('.avancar').click(function(){
+          popOverHide();
+          goTop;
+        })
         var params = getUrlParams();
         if(params.shared == "true"){
           $('#socialBtn').hide();
           $('#socialAlert').fadeIn();
         }
         
-        /*
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222430124549926";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        
-        FB.init({appId: "222430124549926", status: true, cookie: true});
-        */
-        
       });
-  
-      function postTwitter() {
-        $('#socialBtn').popover('hide');
-        popup('https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$asset->getTitle())?>&url=<?php echo urlencode($uri)?>', '', 600, 600);
+      
+      function popOverHide(){
+        $("#modal-google").modal('hide');
+        $("#modal-facebook").modal('hide');
+        $("#socialBtn").popover("hide");
+        goTop();
+      }
+      function goTop(){
+        $('html, body').animate({
+          scrollTop: $("#guia-topo").offset().top
+        }, "slow");
+      }
+      function alertOk(){
+        $("#socialBtn").popover("hide");
+        $("#socialBtn").fadeOut("fast");
+        $("#socialAlertOk").fadeIn('fast');
+        setTimeout('$("#socialAlertOk").hide();', 10000);
+        goTop();
       }
   
+      twttr.events.bind('tweet', function(event) {
+        alertOk();
+        goTop();
+      });
+      <?php 
+
+      ?>
       function postGoogle() {
         $('#socialBtn').popover('hide');
         popup('https://plus.google.com/share?url=<?php echo urlencode($uri)?>','',600,600);
+        popOverHide();
       }
-
-  
-      /*
-      function postFacebook() {
-        $('#socialBtn').popover('hide');
-        $('#socialBtn').hide();
-        $('#socialLoading').fadeIn();
-        self.location.href='postToFacebook.php';
-      }
-      */
       
       function postToFeed() {
         // calling the API ...
@@ -257,28 +295,39 @@
           description: 'Minha indicação para o RadarCultura'
         };
         function callback(response) {
-          console.log(response);
-          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-          //obj
-          opts= "post_id="+response['post_id'];
-          //loading
-          $('#socialBtn').popover('hide');
-          $('#socialBtn').hide();
-          $('#socialLoading').fadeIn();
-          
-          $.ajax({
-            url: 'http://cmais.com.br/actions/radarcultura/facebookPost.php',
-            data: opts,
-            dataType: "html",
-            success: function(data) {
-              $('#socialLoading').fadeOut();
-              if(data == "1"){
-                $('#socialAlert').fadeIn();
-              }else{
-                alert('erro');
+          if(response!=null){
+            //console.log(response);
+            //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+            //obj
+            opts= "post_id="+response['post_id'];
+            //loading
+            $('#socialBtn').popover('hide');
+            $('#socialBtn').hide();
+            $('#socialLoading').fadeIn();
+            
+            $.ajax({
+              url: '/actions/radarcultura/facebookPost.php',
+              data: opts,
+              dataType: "html",
+              success: function(data) {
+                $('#socialLoading').fadeOut();
+                if(data == "1"){
+                  $('#socialBtn').popover('hide');
+                  alertOk();
+                  goTop();
+                }
+                else{
+                  $('#socialBtn').popover('hide');
+                  $("#socialAlertError").fadeIn('fast');
+                  goTop();
+                }
               }
-            }
-          });
+            });
+          }else{
+            $('#socialBtn').popover('hide');
+            $("#socialAlertError").fadeIn('fast');
+            goTop();
+          }
         }
         FB.ui(obj, callback);
       }
@@ -394,7 +443,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo $asset->AssetContent->getHeadlineLong(); else echo "Letra não disponível";?>
+                    <?php if($asset->AssetContent->getHeadlineLong()!="") echo nl2br($asset->AssetContent->getHeadlineLong()); else echo "Letra não disponível";?>
                   </td> 
                 </tr> 
               </table>
@@ -477,15 +526,6 @@
               <?php endif; ?>
             <?php endif; ?>
             <!--/como participar-->
-            <!--banner-->
-            <div class="">
-              <div class="banner-radio">
-                <script type='text/javascript'>
-                  GA_googleFillSlot("home-geral300x250");
-                </script>
-              </div>
-            </div>
-            <!--/banner-->
          </div>
          <!--/coluna direita-->
          

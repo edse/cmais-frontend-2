@@ -503,19 +503,24 @@ a{
   background: url(../image/bg-parafusoTransparente.png) repeat-x;
   float: left;
   height: 33px;
+  width:882px;
 }
 #menu-rodape li{
   background: url(../image/ico-separador.png) no-repeat;
   float: left;
-  margin: 10px 8px 0 0;
-  padding-left: 8px;
+  margin: 10px 0px 0 0;
+  padding:0 7px;  
 }
 #menu-rodape li.first{
   background: none;
+<<<<<<< HEAD
   padding-left: 18px;
+=======
+  padding-left: 15px;
+>>>>>>> 04af0b946e35efd8fd0c76eafdfd23430c5af289
 }
 #menu-rodape li.last{
-  padding-right: 23px;
+  padding-right: 5px;
 }
 #menu-rodape li a{
   color: #6b6b6b;

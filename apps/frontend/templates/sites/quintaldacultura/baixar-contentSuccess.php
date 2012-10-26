@@ -24,7 +24,7 @@
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="/portal/js/portal.js"></script>
-  <script type="text/javascript" src="/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
 
     <script type="text/javascript">
       //carrocel
@@ -45,21 +45,21 @@
           });
           $("ul.dropdown li ul li:has(ul)").find("a:first").append("  ");
       });
-    $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-          }).jPlayer("pause");
-        },
-        ended: function (event) {
-          $(this).jPlayer("play");
-        },
-        swfPath: "js",
-        supplied: "m4a, oga"
-      });
-    });
+	  $(document).ready(function(){
+			$("#jquery_jplayer_1").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+						oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+					}).jPlayer("pause");
+				},
+				ended: function (event) {
+					$(this).jPlayer("play");
+				},
+				swfPath: "js",
+				supplied: "m4a, oga"
+			});
+		});
     </script>
   </head>
   <script type="text/javascript"> 
@@ -155,7 +155,7 @@
                           </div>  
                         </div>
                         <span class="baixarCarinha">clique para baixar carinhas!</span>
-                        <span class="palhaca"></span>
+                        <!--span class="palhaca"></span-->
                       <?php elseif($section->getSlug() == "papel-de-parede"):?>
                         <div class="papelParede">
                           <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
@@ -179,25 +179,32 @@
                         </div>
                       <?php else:?>
                         <div class="papelParede">
+                          <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+                          
                           <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
                           <?php if(count($preview) > 0): ?>
+                            
+                            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" target="_blank">
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+                            </a>
                           <?php endif; ?>
                         </div>
-                        <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+                        <!-- /////////////////se falhar usar isto
                         <?php if(count($download) > 0): ?>
                           <?php if($download[0]->AssetType->getSlug() == "image"): ?>
-                            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" target="_blank">
+                            
                           <?php elseif($download[0]->AssetType->getSlug() == "file"): ?>
                             <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" target="_blank">
                           <?php endif; ?>
-                          <span class="baixarPapelParede">clique para baixar</span></a>
+                          
                         <?php endif; ?>
+                        -->
+                        <span class="baixarPapelParede">clique para baixar</span>
                       <?php endif;?>
 
-                <span class="palhaca"></span>
-                
-                <span class="palhaco"></span>
+						
+								
+								<span class="palhaco"></span>
                                 
                             </div>
                       </div>

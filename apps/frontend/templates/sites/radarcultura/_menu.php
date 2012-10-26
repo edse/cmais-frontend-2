@@ -7,13 +7,13 @@
         </div>
         <div class="span8 share">
           <div class="google">
-            <g:plusone size="medium" count="false"></g:plusone>
-          </div>
-          <div class="fb">
-            <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+            <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
           </div>
           <div class="twt">
-            <a href="http://twitter.com/share" class="twitter-share-button" data-count="false" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+            <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
+          </div>
+          <div class="fb">
+            <fb:like href="https://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
           </div>
         </div>  
       </div>  
@@ -22,7 +22,7 @@
       <div class="row-fluid menu-principal">
         
         <?php if(count($siteSections) > 0): ?>        
-        <ul class="nav menu-principal nav-tabs">
+        <ul class="nav menu-principal nav-pills">
           <?php foreach($siteSections as $k=>$s): ?>
             <?php $subsections = $s->subsections(); ?>
             <?php if(count($subsections) > 0): ?>
@@ -35,33 +35,28 @@
             <ul class="dropdown-menu">
               <?php foreach($subsections as $s): ?>
               <li class="">
-                <a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
+                <a class="dropdown" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
               </li>
               <?php endforeach; ?>
             </ul>
           </li>
           <!-- botao --->
             <?php else: ?>  
-          <!-- botao ---> <?php if($section->getSlug() == "artistas"): ?>
-          <li class="
-          <?php if($section->id == $s->id): ?>active<?php endif; ?>">
-          <?php elseif($section->getSlug() == "por-titulo"): ?>
-          <?php elseif($section->getSlug() == "por-artista"): ?>  
+          <!-- botao --->
+          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
-          </li>         
+          </li>
           <!-- /botao --->
             <?php endif; ?>
-           <?php endif; ?>
+          
           <?php endforeach; ?>          
        </ul>
        <?php endif; ?>
-       
-       <a class="ouca" href="javascript: window.open('http://radarcultura.cmais.com.br/player','controle','width=450,height=150,left=50,top=50,scrollbars=no'); return false;">
+                                      
+       <a id="ouca" class="ouca" href="javascript:;">
          <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
-       
      </div>
      <!-- menu --->
-
      

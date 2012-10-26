@@ -13,10 +13,16 @@
 
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
+    <script>
+      $(function(){
+        $('.redes-content a').attr('target','_blank');
+      });
+      
+    </script>
+    <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?> 
+     
     <!--container-->
     <div class="container">
-      
-        <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
         <div class="row-fluid">
@@ -66,20 +72,20 @@
             <div class="span12">
               <div class="page-header na-rede">
                 <h3>Músicas em Destaque</h3>
-                <small>INDICAÇÕES DE USUÁRIOS</small>
+                <small>Indicações dos usuários </small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['musicas'] as $k=>$d): ?>
                 <div class="span4">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                    <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
+                    <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right" target="_blank"></i>
                   </a>
-                  <div class="page-header">
+                  <div class="">
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
-                  <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px"  alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
+                  <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p> 
+                  <?php if($d->AssetContent->getHeadlineLong()!=""): ?> 
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> veja mais</a>
                   <?php if($k < 2):?>
                     <div class="linha-lateral"></div>
@@ -103,21 +109,21 @@
             <div class="span8">
               <div class="page-header na-rede">
                 <h3>Playlists do Radar</h3>
-                <small>INDICAÇÕES DOS USUÁRIOS</small>
+                <small>Indicações dos usuários</small>
               </div>
               <div class="row-fluid redes">
                 <?php foreach($displays['playlists'] as $k=>$d): ?>
                 <div class="span6">
-                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" >
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
-                  <div class="page-header">
+                  <div class="">
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" width="50px" height="50px" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
-                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> sugira sua música</a>
+                  <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> Participe dessa playlist</a>
                   <?php endif; ?>
                   <div class="linha-lateral"></div>
                 </div>
@@ -134,18 +140,18 @@
           <div class="span4">
               <div class="page-header na-rede">
                 <h3>Na rede</h3>
-                <small>COMENTÁRIOS DOS USUÁRIOS</small>
+                <small>Comentários dos usuários</small>
               </div>
               <div class="row-fluid redes ">
                 <div class="span12">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
                   </a>
-                  <div class="page-header">
+                  <div class="">
                     <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
                   </div>
                   <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                  <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+                  <p class="redes-content"><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
                   <?php if($d->AssetContent->getHeadlineLong()!=""): ?>
                   <a href="<?php echo $d->AssetContent->getHeadlineLong() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> ver detalhes</a>
                   <?php endif; ?>
@@ -159,35 +165,44 @@
         
         <!--rodape-->
         <div class="row-fluid redes">
+  
+          <div class="span4 thumbnail como-partipar">
           <?php if(isset($displays['como-participar'])):?>
             <?php if(count($displays['como-participar']) > 0): ?>       
-              <div class="span4 thumbnail como-partipar">
-                <div class="page-header">
-                  <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                </div>
-                <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              </div>
+            <div class="page-header">
+              <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
+            </div>
+            <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
+            <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> como participar</a></p>
             <?php endif; ?>
           <?php endif; ?>
+            
           <?php if(isset($displays['sobre-o-programa'])):?>
             <?php if(count($displays['sobre-o-programa']) > 0): ?>
-            <div class="span4 thumbnail">
-              <div class="page-header">
-                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-              </div>
-              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+            <div class="page-header">
+              <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
             </div>
+            <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
+            <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> sobre o programa</a></p>
             <?php endif; ?>
           <?php endif; ?>
-          <div class="span4">
-            <div class="banner-radio">
-              <script type='text/javascript'>
-                GA_googleFillSlot("home-geral300x250");
-              </script>
-            </div>
           </div>
+
+          <div class="span4 banner-radio">
+            <fb:like-box href="https://www.facebook.com/programaradarcultura" width="319" height="500" show_faces="true" border_color="#DDDDDD" stream="true" header="true"></fb:like-box>
+          </div>
+
+          <div class="span4">
+            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
+            <script type='text/javascript'>
+              GA_googleFillSlot("home-geral300x250");
+            </script>
+          </div>
+          
+        </div>
+        
+        <!--rodape-->
+        <div class="row-fluid redes">
 
           <!--/rodape-->
         

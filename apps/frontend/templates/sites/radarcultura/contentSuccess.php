@@ -19,9 +19,7 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
-        <div class="row-fluid">
-          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-        </div>
+        
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
         </div>
@@ -37,11 +35,12 @@
           <h1><?php echo $asset->getTitle() ?></h1>
           <small><?php echo $asset->getDescription() ?></small>
         </div>
+        <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
         <div>
           <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
          <!-- comentario facebook -->
          <div class="container face">
-            <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->

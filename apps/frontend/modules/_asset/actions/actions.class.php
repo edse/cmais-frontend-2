@@ -470,7 +470,12 @@ class _assetActions extends sfActions
       elseif($this->site->getImageThumb() != "")
         $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
     }
-
+    
+    if($this->site->getSlug() == "radarcultura"){
+      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+      $this->getResponse()->addMetaProp('og:description', $title." ".$description);
+    }
+    
     if(!$this->section)
       $this->section = Doctrine::getTable('Section')->findOneById(1);
 
@@ -572,7 +577,7 @@ class _assetActions extends sfActions
           if($debug) print "<br>2-1b>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/musica';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/musica');
         }
-        elseif ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlist") {
+        elseif ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlists") {
           if($debug) print "<br>2-1c>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist');
         }

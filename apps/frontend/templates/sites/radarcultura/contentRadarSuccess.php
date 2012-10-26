@@ -19,9 +19,7 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
         <!--topo menu/alert/logo-->
-        <div class="row-fluid">
-          <?php include_partial_from_folder('sites/radarcultura', 'global/alert', array('site' => $site)) ?>
-        </div>
+        
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
         </div>
@@ -33,22 +31,29 @@
         <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'asset' => $asset)) ?>
         <div class="row-fluid" style="margin:0 0 0 0;">
           <!--col esquerda-->
-          <div class="thumbnails span8">
+          <div class="span8 content-asset">
             <div class="content">
               <h1><?php echo $asset->getTitle() ?></h1>
               <small><?php echo $asset->getDescription() ?></small>
-            </div>
+              <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
             <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
-            <p><img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt=""></p>
+            <p>
+              <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
+              <div class="legenda">
+                <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
+              </div>
+            </p>
             <?php endif; ?>
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
            <!-- comentario facebook -->
             <div class="container face">
-              <fb:comments href="http://cmais.com.br" numposts="3" width="610" publish_feed="true"></fb:comments>
+              <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
               <hr />
             </div>
             <!-- /comentario facebook -->
+            </div>
+            <!--content-->
           </div>
           <!--col esquerda-->
           <div class="span4 direita">
