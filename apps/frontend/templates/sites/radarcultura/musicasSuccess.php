@@ -144,7 +144,7 @@
                   <td class="performer-<?php echo $value ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></td>
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
-                    <span id="indicada-<?php echo $value ?>" class="btn btn-mini btn-success indicada"  style="display:none;"><i class="icon-share-alt icon-white"></i> Música sugerida.</span>
+                    <span id="indicada-<?php echo $value ?>" class="btn btn-mini btn-success indicada" disabled="disabled"  style="display:none;"><i class="icon-ok icon-white"></i> Música sugerida</span>
                     <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
                     <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$d->getTitle()) ?>&url=<?php echo urlencode("http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug())?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <!--<a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
@@ -437,13 +437,14 @@
                 goTop();
                 $('#socialLoading').fadeOut();
                 $('.socialBtn').popover('hide');
+                $("#socialAlertError").fadeIn('fast');
                 if(data == "1"){
                   alertOk();
                   buttonVanish();
                 }
                 else{
                   $("#socialAlertError").fadeIn('fast');
-                  setTimeout('$("#socialAlertError").fadeOut("slow");', 10000);
+                  setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
                   goTop();
                 }
               }
