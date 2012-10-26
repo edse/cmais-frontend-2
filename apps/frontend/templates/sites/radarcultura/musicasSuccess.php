@@ -444,35 +444,40 @@
           description: 'Minha indicação para o @RadarCultura'
         };
         function callback(response) {
-          //console.log(response);
-          //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-          //obj
-          opts= "post_id="+response['post_id'];
-          //loading
-          $('#socialBtn').popover('hide');
-          $('#socialBtn').hide();
-          $('#socialLoading').fadeIn();
-          
-          $.ajax({
-            url: '/actions/radarcultura/facebookPost.php',
-            data: opts,
-            dataType: "text",
-            success: function(data) {
-              goTop();
-              $('#socialLoading').fadeOut();
-              if(data == "1"){
-                $('#socialBtn').popover('hide');
-                $('.alert.radarIndex').hide();
-                $("#socialAlertOk").fadeIn('fast');
-                setTimeout('$("#socialAlertOk").hide();', 10000);
-                setTimeout('$(".alert.radarIndex").hide();', 10000);
+          if(response){
+            //console.log(response);
+            //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+            //obj
+            opts= "post_id="+response['post_id'];
+            //loading
+            $('#socialBtn').popover('hide');
+            $('#socialBtn').hide();
+            $('#socialLoading').fadeIn();
+            
+            $.ajax({
+              url: '/actions/radarcultura/facebookPost.php',
+              data: opts,
+              dataType: "text",
+              success: function(data) {
+                goTop();
+                $('#socialLoading').fadeOut();
+                if(data == "1"){
+                  $('#socialBtn').popover('hide');
+                  $('.alert.radarIndex').hide();
+                  $("#socialAlertOk").fadeIn('fast');
+                  setTimeout('$("#socialAlertOk").hide();', 10000);
+                  setTimeout('$(".alert.radarIndex").hide();', 10000);
+                }
+                else{
+                  $('#socialBtn').popover('hide');
+                  $("#socialAlertError").fadeIn('fast');
+                }
               }
-              else{
-                $('#socialBtn').popover('hide');
-                $("#socialAlertError").fadeIn('fast');
-              }
-            }
-          });
+            });
+          }else{
+            $('#socialBtn').popover('hide');
+            $("#socialAlertError").fadeIn('fast');
+          }
         }
         FB.ui(obj, callback);
       }
