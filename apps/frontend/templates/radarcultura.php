@@ -43,54 +43,12 @@
     </script>
     
     <script type='text/javascript'>
-    /*
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-aovivo-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-aovivo-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-arteecultura-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-educacao-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-grade-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250-2");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-jornalismo-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-musica-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "jornaldacultura-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "preestreia-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "programas-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "programas-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "programas-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "CartaoVerde728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "provocacoes-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "reisdarua-728x90");
-    */
-    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-125x125");
-    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "home-geral300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "home-geral728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
-
     </script>
     <script type='text/javascript'>
     GA_googleFetchAds();
