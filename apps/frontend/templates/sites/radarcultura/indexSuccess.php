@@ -166,6 +166,15 @@
         <!--rodape-->
         <div class="row-fluid redes">
 
+          <div class="span4 thumbnail">
+            <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
+          </div>
+
+          <div class="span4 thumbnail">
+            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
+          </div>
+          
+          <!--
           <?php if(isset($displays['como-participar'])):?>
             <?php if(count($displays['como-participar']) > 0): ?>       
               <div class="span4 thumbnail como-partipar">
@@ -178,13 +187,6 @@
             <?php endif; ?>
           <?php endif; ?>
 
-          <div class="span4 thumbnail">
-            <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
-          </div>
-
-          <div class="span4 thumbnail">
-            <fb:like-box href="http://www.facebook.com/programaradarcultura" width="319" show_faces="true" stream="true" header="true"></fb:like-box>
-          </div>
           
           <?php if(isset($displays['sobre-o-programa'])):?>
             <?php if(count($displays['sobre-o-programa']) > 0): ?>
@@ -197,6 +199,7 @@
             </div>
             <?php endif; ?>
           <?php endif; ?>
+          -->
           <div class="span4">
             <div class="banner-radio">
               <script type='text/javascript'>
