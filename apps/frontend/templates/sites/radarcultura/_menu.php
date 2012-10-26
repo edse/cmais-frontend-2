@@ -7,13 +7,13 @@
         </div>
         <div class="span8 share">
           <div class="google">
-            <g:plusone size="medium" count="false"></g:plusone>
+            <g:plus width="100" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
           </div>
           <div class="fb">
-            <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+            <fb:like href="http://www.facebook.com/programaradarcultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
           </div>
           <div class="twt">
-            <a href="http://twitter.com/share" class="twitter-share-button" data-count="false" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+            <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
           </div>
         </div>  
       </div>  
