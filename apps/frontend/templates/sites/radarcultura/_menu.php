@@ -3,7 +3,6 @@
         <div class="span4">
           <a href="http://radarcultura.cmais.com.br/" title="Radar Cultura">
             <img src="/portal/images/capaPrograma/radarcultura/logo-radar-novo.png" alt="Radar Cultura" />
-            <fb:like href="https://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
           </a>
         </div>
         <div class="span8 share">
@@ -14,7 +13,7 @@
             <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
           </div>
           <div class="fb">
-            <fb:like href="https://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
+            <fb:like href="http://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
           </div>
         </div>  
       </div>  
