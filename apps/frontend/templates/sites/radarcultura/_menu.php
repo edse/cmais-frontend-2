@@ -13,14 +13,19 @@
             <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
           </div>
           <div class="fb">
-            <fb:like href="http://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
+            <fb:like href="https://www.facebook.com/programaradarcultura" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
           </div>
         </div>  
       </div>  
       <!--logo-->
       <!-- menu --->
       <div class="row-fluid menu-principal">
-        
+        <style>
+        div.fb-like span {
+            width: 450px;
+            overflow: visible;
+        }
+        </style>
         <?php if(count($siteSections) > 0): ?>        
         <ul class="nav menu-principal nav-pills">
           <?php foreach($siteSections as $k=>$s): ?>
