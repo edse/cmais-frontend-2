@@ -34,7 +34,7 @@
                <?php endif; ?>
                <?php if(isset($asset) && $parentSection->getSlug() != "sobre"): ?>
              <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">»</span></li>
-             <li><?php echo $asset->getTitle() ?></li>
+             <li><?php echo $asset->getTitle() ?> <span class="divider">»</span> <?php echo $asset->getDescription() ?></li>
                <?php else: ?>
              <li><?php echo $section->getTitle(); ?> </li>
                <?php endif; ?>

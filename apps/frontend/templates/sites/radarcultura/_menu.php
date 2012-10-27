@@ -20,12 +20,6 @@
       <!--logo-->
       <!-- menu --->
       <div class="row-fluid menu-principal">
-        <style>
-        div.fb-like span {
-            width: 450px;
-            overflow: visible;
-        }
-        </style>
         <?php if(count($siteSections) > 0): ?>        
         <ul class="nav menu-principal nav-pills">
           <?php foreach($siteSections as $k=>$s): ?>
