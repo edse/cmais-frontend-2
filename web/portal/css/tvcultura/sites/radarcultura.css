@@ -51,7 +51,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .share{margin:15px 0 0 0;}
 .twt{float:left;margin-left: 10px;}
 .google{float:left;}
-.fb{float:left; margin-left: 10px;}
+.fb{float:left; margin-left: 10px; width: 200px;}
 .row-fluid.menu-principal{position:relative;}
 .nav.menu-principal{position:relative;min-height: 42px;border-bottom: 1px solid #ECECEC;}
 .nav.menu-principal li{margin-right:5px;}
