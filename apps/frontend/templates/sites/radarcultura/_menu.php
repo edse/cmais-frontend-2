@@ -13,7 +13,7 @@
             <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
           </div>
           <div class="fb">
-            <fb:like href="https://www.facebook.com/programaradarcultura" width="200" send="true" show_faces="false"></fb:like>
+            <fb:like href="https://www.facebook.com/programaradarcultura" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
           </div>
         </div>  
       </div>  
