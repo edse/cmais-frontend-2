@@ -50,6 +50,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .logo img{margin-left:13px;}
 .share{margin:15px 0 0 0;}
 .twt{float:left;margin-left: 10px;}
+.twt.conteudo{width:75px; float:left;margin-left: 10px;}
 .google{float:left;}
 .fb{float:left; margin-left: 10px; width: 200px;}
 .row-fluid.menu-principal{position:relative;}

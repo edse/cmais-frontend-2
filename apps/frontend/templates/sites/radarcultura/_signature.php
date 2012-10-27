@@ -7,7 +7,7 @@
         <div class="google">
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
-        <div class="twt">
+        <div class="twt conteudo">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="false" data-via="portalcmais" data-related="tvcultura">Tweet</a>
         </div>
         <div class="fb" style="width: 100px;">
