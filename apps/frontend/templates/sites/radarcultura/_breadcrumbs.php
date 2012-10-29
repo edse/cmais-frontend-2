@@ -15,11 +15,11 @@
              <?php endif; ?>
            <?php elseif($section->getSlug() == "musicas"): ?>
              <?php if(isset($asset)): ?>
-             <li><a href="<?php echo url_for('homepage') . '/musicas' ?>">Musicas</a> <span class="divider">»</span></li>
-             <li><?php echo $asset->getTitle() ?></li>
+             <li><a href="<?php echo url_for('homepage') . 'musicas' ?>">Musicas</a> <span class="divider">»</span></li>
+             <li><?php echo $asset->getTitle() ?> <span class="divider">»</span> <?php echo $asset->getDescription() ?></li>
              <?php else: ?>
                <?php if(isset($artist)): ?>
-             <li><a href="<?php echo url_for('homepage') . '/artistas' ?>">Artistas</a> <span class="divider">»</span></li>
+             <li><a href="<?php echo url_for('homepage') . 'artistas' ?>">Artistas</a> <span class="divider">»</span></li>
              <li><?php echo $artist ?></li>
                <?php else: ?>
              <li>Musicas</li>

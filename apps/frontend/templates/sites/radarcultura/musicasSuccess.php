@@ -320,7 +320,7 @@
             },
             success: function(label){
               label
-                .text('OK!').addClass('valid');
+                .text('OK!').addClass('valid')
                 .closest('.control-group').addClass('success');
             },
             submitHandler: function(form){
@@ -443,7 +443,7 @@
                 }
                 else{
                   $("#socialAlertError").fadeIn('fast');
-                  setTimeout('$("#socialAlertError").fadeOut("slow");', 5000);
+                  setTimeout('$("#socialAlertError").fadeOut("slow")', 5000);
                   goTop();
                 }
               }

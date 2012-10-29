@@ -193,12 +193,10 @@
               }
             },
             highlight: function(label) {
-              $(label).closest('.control-group').addClass('error');
+              $('label').closest('.control-group').addClass('error');
             },
             success: function(label){
-              label
-                .text('OK!').addClass('valid');
-                .closest('.control-group').addClass('success');
+              $('label').text('OK!').addClass('valid').closest('.control-group').addClass('success');
             },
             submitHandler: function(form){
               $.ajax({
@@ -268,7 +266,7 @@
         $("#socialBtn").popover("hide");
         $("#socialBtn").fadeOut("fast");
         $("#socialAlertOk").fadeIn('fast');
-        setTimeout('$("#socialAlertOk").hide();', 10000);
+        setTimeout('$("#socialAlertOk").hide()', 10000);
         goTop();
       }
   
