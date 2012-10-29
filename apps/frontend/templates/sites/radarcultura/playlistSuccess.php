@@ -292,12 +292,12 @@
           description: 'indicação de música para essa playlist'
         };
         function callback(response) {
-          console.log(response);
+          //console.log(response);
           //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
           //loading
-          $('#socialBtn').popover('hide');
+          $('#socialBtn-1').popover('hide');
           //$('#socialBtn').hide();
           $('#socialLoading').fadeIn();
           
