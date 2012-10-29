@@ -17,7 +17,7 @@
 <?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('AssetAnswer aa')
+  ->from('AssetAnswer aa')  
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
   ->execute();
 ?>
