@@ -1,5 +1,5 @@
 <?php
-/*
+
   $now = date('YmdHis');
   $schedule = '20121012000000';
   
@@ -11,8 +11,6 @@
     header('Location: http://tvratimbum.cmais.com.br/aguarde-ja-ja-voce-sabera-quem-foi-o-mais-votado');
     die();
   }
- * 
- */
 ?>
 <?php
 $a = Doctrine_Query::create()
