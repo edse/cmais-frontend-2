@@ -319,7 +319,7 @@
               $('label').closest('.control-group').addClass('error');
             },
             success: function(label){
-              $('label').text('OK!').addClass('valid').closest('.control-group').addClass('success');
+              $('label').addClass('valid').closest('.control-group').addClass('success');
             },
             submitHandler: function(form){
               $.ajax({
