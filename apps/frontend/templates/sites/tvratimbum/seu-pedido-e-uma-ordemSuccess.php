@@ -33,7 +33,7 @@ $a = Doctrine_Query::create()
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <!--CSS-->
 
-<!--SCRIPT-->
+<!--SCRIPT--> 
 <script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <!--script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
 <script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
