@@ -307,15 +307,15 @@
             data: opts,
             dataType: "text",
             success: function(data) {
-            $('#socialLoading').fadeOut();
+              $('#socialLoading').fadeOut();
+              $('#socialBtn-1').popover('hide');
               if(data == "1"){
-                $('#socialBtn-1').popover('hide');
                 alertOk();
                 goTop();
               }
               else{
-                $('#socialBtn-1').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
+                setTimeout('$("#socialAlertError").fadeOut("slow")', 5000);
                 goTop();
               }
             }
