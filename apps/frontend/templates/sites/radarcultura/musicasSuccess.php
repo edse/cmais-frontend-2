@@ -318,9 +318,11 @@
             highlight: function(label) {
               $('label').closest('.control-group').addClass('error');
             },
+            /*
             success: function(label){
               $('label').addClass('valid').closest('.control-group').addClass('success');
             },
+            */
             submitHandler: function(form){
               $.ajax({
                 type: "POST",
