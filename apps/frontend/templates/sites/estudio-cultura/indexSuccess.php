@@ -73,7 +73,7 @@
               <p><?php echo $site->getDescription() ?></p>
               <div class="assinatura grid2">
              
-              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+              <?php /*include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri))*/ ?>
             </div>
               
             </div>
