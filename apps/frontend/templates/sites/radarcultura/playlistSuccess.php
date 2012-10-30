@@ -367,7 +367,7 @@
               <!-- /comentario facebook -->
               <!--redes pitacos-->
               <?php if(isset($displays['playlists'])):?>
-                <?php if(count($displays['playlists']) > 0): ?>
+                <?php if(count($displays['playlists']) > 0 || count($displays['playlists']) < 3): ?>
                 
                     <div class="page-header na-rede">
                       <h3>Pitacos<small></small></h3>
