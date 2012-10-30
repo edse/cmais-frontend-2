@@ -78,10 +78,12 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
-Teste
+
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
+Esse espaço é destinado para pessoas que queiram relatar suas experiências relacionadas à moradia acessível no Brasil ou outros países. Podem ser experiências vividas ou observadas, desde que relatem ações ou visões sobre questões como autonomia e inclusão de pessoas com deficiência na sociedade. Os relatos também podem ser relacionados a ações públicas (no caso de instituições) ou ações particulares, desde ações pessoais para mudar a qualidade de vida de alguém com deficiência (seja física, mental, motora, auditiva ou visual) até ações coletivas de grupos sociais.
 
+Adoraríamos ouvir a sua história, escreva para a gente!
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
                     <div class="boxMsg">
