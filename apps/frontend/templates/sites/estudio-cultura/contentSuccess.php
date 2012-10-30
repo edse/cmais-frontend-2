@@ -165,7 +165,7 @@ $(function(){
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
-
+              <?php /*
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
@@ -181,7 +181,10 @@ $(function(){
               </div>
               <!-- BOX PADRAO Mais recentes -->
               <?php endif; ?>
-
+               * 
+               */
+              ?>
+              <?php /*
               <?php if(isset($displays["destaque-noticias-recentes"])): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
@@ -227,7 +230,10 @@ $(function(){
               </div>
               <!-- /BOX PADRAO + Visitados -->
               <?php endif; ?>
-
+              
+               * 
+               */
+              ?>
             </div>
             <!-- /DIREITA -->
           </div>
