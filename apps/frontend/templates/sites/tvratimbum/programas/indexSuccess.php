@@ -80,7 +80,7 @@
                 ?>
                 <div class="btn-diario">
                   <span class="picote"></span>
-                  <a href="<?php echo $site->retriveUrl()?>/programacao">Diário de programação</a>
+                  <a href="http://tvratimbum.cmais.com.br/grade">Diário de programação</a>
                 </div>
                 <hr />
                 <?php endif; ?>

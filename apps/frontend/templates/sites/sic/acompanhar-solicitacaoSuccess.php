@@ -46,7 +46,7 @@
         <?php if(isset($displays["conteudo-complementar"])): ?>
           <?php if(count($displays["conteudo-complementar"]) > 0): ?>       
         <!-- COLUNA ESQUERDA -->
-        <div class="float col-400-sic  font-span-14">
+        <div class="float col-640-sic  font-span-14">
           <h2><?php echo $displays["conteudo-complementar"][0]->Block->getTitle() ?></h2>
           <?php echo html_entity_decode($displays["conteudo-complementar"][0]->Asset->AssetContent->render()) ?>
         </div>
@@ -55,7 +55,7 @@
         <?php endif; ?>
         
         <!-- COLUNA DIREITA -->
-        <div class="float col-585-sic">
+        <div class="float col-585-sic" style="display: none;">
           
           <!-- COLUNA SUB DIR 1 -->
           <div class="coluna-sub-1 cinza-claro-2 ">
