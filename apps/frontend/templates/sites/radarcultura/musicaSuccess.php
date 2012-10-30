@@ -528,7 +528,7 @@
          <!--/coluna direita-->
          
          <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-         <?php if(count($relacionados) > 0): ?>
+         <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
          <!--pela web-->  
          <div class="row-fluid">
             <div class="span12 page-header na-rede">

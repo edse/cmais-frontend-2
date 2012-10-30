@@ -64,7 +64,7 @@
   <script type="text/javascript">
   $(document).ready(function(){
 
-    $('.btn-feedback a').click(function(){ 
+    $('.btn-feedback').click(function(){ 
       $('html, body').animate({
         scrollTop: $("#guia-topo").offset().top
       }, "slow");
