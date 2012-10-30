@@ -193,12 +193,10 @@
               }
             },
             highlight: function(label) {
-              $(label).closest('.control-group').addClass('error');
+              $('label').closest('.control-group').addClass('error');
             },
             success: function(label){
-              label
-                .text('OK!').addClass('valid');
-                .closest('.control-group').addClass('success');
+              $('label').text('OK!').addClass('valid').closest('.control-group').addClass('success');
             },
             submitHandler: function(form){
               $.ajax({
@@ -530,7 +528,7 @@
          <!--/coluna direita-->
          
          <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-         <?php if(count($relacionados) > 0): ?>
+         <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
          <!--pela web-->  
          <div class="row-fluid">
             <div class="span12 page-header na-rede">

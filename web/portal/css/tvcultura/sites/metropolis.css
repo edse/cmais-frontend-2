@@ -2069,4 +2069,6 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 .box-padrao #datepicker .ui-widget-header .ui-state-focus {background:#F19F3F; }
 
 .box-listao ul .video { width:20px; margin:0; }
+.noticiaTxt p a:hover,
+.noticiaTxt p a { color:#ff6633; }
 /** /METROPOLIS **/

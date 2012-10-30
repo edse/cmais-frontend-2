@@ -292,12 +292,12 @@
           description: 'indicação de música para essa playlist'
         };
         function callback(response) {
-          console.log(response);
+          //console.log(response);
           //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
           //obj
           opts= "post_id="+response['post_id'];
           //loading
-          $('#socialBtn').popover('hide');
+          $('#socialBtn-1').popover('hide');
           //$('#socialBtn').hide();
           $('#socialLoading').fadeIn();
           
@@ -307,15 +307,15 @@
             data: opts,
             dataType: "text",
             success: function(data) {
-            $('#socialLoading').fadeOut();
+              $('#socialLoading').fadeOut();
+              $('#socialBtn-1').popover('hide');
               if(data == "1"){
-                $('#socialBtn-1').popover('hide');
                 alertOk();
                 goTop();
               }
               else{
-                $('#socialBtn-1').popover('hide');
                 $("#socialAlertError").fadeIn('fast');
+                setTimeout('$("#socialAlertError").fadeOut("slow")', 5000);
                 goTop();
               }
             }
@@ -367,7 +367,7 @@
               <!-- /comentario facebook -->
               <!--redes pitacos-->
               <?php if(isset($displays['playlists'])):?>
-                <?php if(count($displays['playlists']) > 0): ?>
+                <?php if(count($displays['playlists']) > 0 || count($displays['playlists']) < 3): ?>
                 
                     <div class="page-header na-rede">
                       <h3>Pitacos<small></small></h3>
