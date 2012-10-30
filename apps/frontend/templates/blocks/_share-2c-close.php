@@ -1,3 +1,10 @@
+              <div class="rodape-cmais">
+                <p>
+                  O <strong>cmais+</strong> é o portal de conteúdo da Cultura e reúne os canais <strong>TV Cultura</strong>, <strong>UnivespTV<strong>, <strong>MultiCultura</strong>,
+                  <strong>TV Rá-Tim-Bum!</strong> e as rádios <strong>Cultura Brasil</strong> e <strong>Cultura FM</strong>.<br/><br/>
+                  Visite o <strong>cmais+</strong> e navegue pelo nossos conteúdos.
+                </p>  
+              </div>
               <!-- barra compartilhar -->
               <div class="box-compartilhar grid2">
                 <a href="#" class="comentar btn-toggle" style="display:block"><span></span>Comentários</a>
