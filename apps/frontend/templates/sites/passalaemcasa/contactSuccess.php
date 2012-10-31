@@ -111,11 +111,17 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                  <div class="linha t1">
-                    <label>telefone (ddd + número)</label>
-                    <input type="text" maxlength="15" name="telefone" id="telefone" />
+                  <div class="linha t2">
+                  <label>DDD</label>
+                   <input type="text" maxlength="2" name="ddd" id="ddd" />
                   </div>
-                  
+                                 
+                 <div class="linha t4">
+                    <label>telefone</label>
+                    <input type="text" maxlength="9" name="tel" id="tel" />
+                   </div>
+                 
+                   
                   <div class="linha t3">
                     <label>deixe seu depoimento</label>
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
