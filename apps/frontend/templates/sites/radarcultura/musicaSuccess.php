@@ -537,10 +537,9 @@
             </div>
             <!-- pitaco -->
             <div class="row-fluid">
-              
+            <?php $contador = 0; ?>  
             <?php foreach($relacionados as $k=>$d): ?> 
               <!--item-->
-              <?php $contador = 0; ?>
               <?php if($contador <= 3); ?>
               <div class="span4">
                 <div class="row-fluid redes">
