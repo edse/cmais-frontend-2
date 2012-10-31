@@ -111,14 +111,16 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                 <div class="linha t4">
-                    <label>DDD</label>
-                    <input type="text" name="dddT" id="dddT" />
-                   </div>
                   <div class="linha t2">
-                  <label>Telefone</label>
-                   <input type="text" name="tel" id="tel" />
+                  <label>DDD</label>
+                   <input type="text" maxlength="2" name="ddd" id="ddd" />
                   </div>
+                                 
+                 <div class="linha t4">
+                    <label>telefone</label>
+                    <input type="text" maxlength="9" name="tel" id="tel" />
+                   </div>
+                 
                    
                   <div class="linha t3">
                     <label>deixe seu depoimento</label>
