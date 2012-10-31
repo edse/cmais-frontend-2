@@ -113,7 +113,7 @@
                   </div>
                   <div class="linha t1">
                     <label>telefone (ddd + número)</label>
-                    <input type="text" name="cidade" id="cidade" />
+                    <input type="text" maxlength="15" name="telefone" id="telefone" />
                   </div>
                   
                   <div class="linha t3">
