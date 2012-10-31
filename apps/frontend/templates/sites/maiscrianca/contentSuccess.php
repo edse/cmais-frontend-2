@@ -27,6 +27,7 @@
         <div class="row-fluid span8">
           <h3><?php echo $asset->getTitle()?></h3>
           <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+          <?php include_partial_from_folder('blocks', 'global/maiscrianca', array('uri'=>$uri)) ?>
           <div class="pontilhado row-fluid span12"></div>
         </div>
         
