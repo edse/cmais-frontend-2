@@ -9,7 +9,6 @@
 	<div class="bg-chamada">
 	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 	</div>
-	<div class="bg-site"></div>
 	
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -108,64 +107,17 @@
                     <label>idade</label>
                     <input type="text" maxlength="2" name="idade" id="idade" />
                   </div>
-                  <div class="linha t3">
+                  <div class="linha t3"> 
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
                   <div class="linha t1">
-                    <label>cidade</label>
-                    <input type="text" name="cidade" id="cidade" />
+                    <label>telefone (ddd + número)</label>
+                    <input type="text" maxlength="15" name="telefone" id="telefone" />
                   </div>
-                  <div class="linha t2">
-                    <label>estado</label>
-                    <br />
-                    <select class="estado required" id="estado">
-                      <option value="" selected="selected">--</option>
-                      <option value="Acre">AC</option>
-                      <option value="Alagoas">AL</option>
-                      <option value="Amazonas">AM</option>
-                      <option value="Amap&aacute;">AP</option>
-                      <option value="Bahia">BA</option>
-                      <option value="Cear&aacute;">CE</option>
-                      <option value="Distrito Federal">DF</option>
-                      <option value="Espirito Santo">ES</option>
-                      <option value="Goi&aacute;s">GO</option>
-                      <option value="Maranh&atilde;o">MA</option>
-                      <option value="Minas Gerais">MG</option>
-                      <option value="Mato Grosso do Sul">MS</option>
-                      <option value="Mato Grosso">MT</option>
-                      <option value="Par&aacute;">PA</option>
-                      <option value="Para&iacute;ba">PB</option>
-                      <option value="Pernambuco">PE</option>
-                      <option value="Piau&iacute;">PI</option>
-                      <option value="Paran&aacute;">PR</option>
-                      <option value="Rio de Janeiro">RJ</option>
-                      <option value="Rio Grande do Norte">RN</option>
-                      <option value="Rond&ocirc;nia">RO</option>
-                      <option value="Roraima">RR</option>
-                      <option value="Rio Grande do Sul">RS</option>
-                      <option value="Santa Catarina">SC</option>
-                      <option value="Sergipe">SE</option>
-                      <option value="S&atilde;o Paulo">SP</option>
-                      <option value="Tocantins">TO</option>
-                  </select>
-                  </div>
-                  <div class="linha t6">
-                    <label>assunto</label>
-                    <br />
-                    <select style="width:150px;" id="assunto" name="assunto" class="required">
-                      <option value="">- Selecione -</option>
-                      <option value="Elogio">Elogio</option>
-                      <option value="Crítica">Crítica</option>
-                      <option value="Comentário">Comentário</option>
-                      <option value="Sugestão">Sugestão</option>
-                      <?php if(!in_array($site->getSlug(), array('manoseminas'))): ?>
-                      <option value="Compra de DVD">Compra de DVD</option>
-                      <?php endif; ?>
-                    </select>
-                  </div>
+                  
                   <div class="linha t3">
-                    <label>mensagem</label>
+                    <label>deixe seu depoimento</label>
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                   </div>
