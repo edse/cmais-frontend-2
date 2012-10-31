@@ -89,8 +89,9 @@
 			                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
 			                  <?php endif; ?>
 			                </div>
+			                <?php include_partial_from_folder('sites/metropolis','global/visite-cmais',array('uri'=>$uri)) ?>
 			                <?php include_partial_from_folder('sites/metropolis','global/fb-comments',array('uri'=>$uri)) ?>
-          				</div>
+			            </div>
           			</div>
           			<div class="veja">
           			  <div class="publicidade">
