@@ -166,13 +166,16 @@
             <ul class="abas-conteudo">
               <li id="todos" class="filho">
                 <ul class="box-listao grid3">
+                  <?php /*
                   <li>
                     <div class="box-texto grid2">
                       <a href="/cedoc" class="titulos"><span class="content"></span>CEDOC</a>
                       <!--p>Descrição</p-->
                       <!--p class="fonte"><a href="">Arte &amp; Cultura</a> | sexta-feira, 25 de outubro de 2012 | 12:18</p-->
                     </div>
-                  </li>                  
+                  </li>
+                   * 
+                   */ ?>                  
                 <?php if(count($pager) > 0): ?>
                   <?php foreach($pager->getResults() as $d): ?>
                     <?php if($type_id == "100"): ?>
