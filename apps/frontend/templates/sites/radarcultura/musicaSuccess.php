@@ -537,8 +537,10 @@
             </div>
             <!-- pitaco -->
             <div class="row-fluid">
+            <?php $contador = 0; ?>  
             <?php foreach($relacionados as $k=>$d): ?> 
               <!--item-->
+              <?php if($contador <= 3); ?>
               <div class="span4">
                 <div class="row-fluid redes">
                   <div class="">
@@ -553,17 +555,21 @@
                     <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
                   </div>
                 </div>
+                 <?php $contador ++ ?> 
+               
                 <?php if($k < 2):?>
                   <div class="linha-lateral"></div>
                 <?php endif;?>
+        
               </div>
               <!--/item-->
-            <?php endforeach; ?>
+              
+             <?php endforeach; ?>
             </div>
             <!-- /pitaco -->
           </div>
           <!--pela web-->
-          <?php endif; ?>
+          <?php endif;?>
     
           <!--banner horizontal-->    
           <div class="container">
