@@ -51,7 +51,9 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .brasao { width:109px; height:140px; position:relative; top:126px; left:25px; }
 .bio .texto { clear: both; height: 279px; left: 0; overflow: hidden; position: relative; text-align: left; top: 90px; width:900px; z-index: 100;}
 .bio .texto p {    color: #003300;    float: left;    font-size: 16px;    font-style: italic;    margin: 0 0 5px 40px;    width: 410px;}
+.bio .texto a,
 .bio .texto span { color:#3c3787; }
+.bio .texto a { font-size:16px; text-decoration:underline; }
 .bio .texto .titulo { margin-bottom:10px; width: 800px; }
 .bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
 
