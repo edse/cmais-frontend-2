@@ -568,7 +568,7 @@
             <!-- /pitaco -->
           </div>
           <!--pela web-->
-          <?php endif;?>
+          
     
           <!--banner horizontal-->    
           <div class="container">
