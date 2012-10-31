@@ -527,6 +527,13 @@
          </div>
          <!--/coluna direita-->
          
+         <?php 
+
+          $i = 0;
+          do {
+         
+          ?>
+         
          <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
          <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
          <!--pela web-->  
@@ -564,6 +571,7 @@
           </div>
           <!--pela web-->
           <?php endif; ?>
+          <?php } while ($i > 3); ?>
           
           <!--banner horizontal-->    
           <div class="container">
