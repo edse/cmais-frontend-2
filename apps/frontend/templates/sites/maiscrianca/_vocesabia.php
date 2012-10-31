@@ -8,7 +8,7 @@
             ->andWhere('a.asset_type_id = 1')
             ->andWhere('s2.id = 692')
             //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-            //->orderBy('a.id desc')
+            ->orderBy('a.id desc')
             ->limit(1)
             ->fetchOne();
         ?>
