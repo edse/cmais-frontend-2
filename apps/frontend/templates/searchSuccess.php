@@ -168,7 +168,7 @@
                 <ul class="box-listao grid3">
                   <li>
                     <div class="box-texto grid2">
-                      <a href="/cedoc" class="titulos"><span class="content"></span>CEDOC</a>
+                      <a href="/cedoc/index.php" class="titulos"><span class="content"></span>CEDOC</a>
                       <!--p>Descrição</p-->
                       <!--p class="fonte"><a href="">Arte &amp; Cultura</a> | sexta-feira, 25 de outubro de 2012 | 12:18</p-->
                     </div>
