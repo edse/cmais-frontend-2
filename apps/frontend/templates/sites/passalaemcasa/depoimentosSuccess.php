@@ -113,7 +113,7 @@
                     <input type="text" name="email" id="email" />
                   </div>
                   <div class="linha t1">
-                    <label>telefone (xx) xxxx-xxxx</label>
+                    <label>telefone (ddd + número)</label>
                     <input type="text" name="cidade" id="cidade" />
                   </div>
                   
