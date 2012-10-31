@@ -111,9 +111,13 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                  <div class="linha t1">
-                    <label>telefone (ddd + número)</label>
-                    <input type="text" maxlength="15" name="telefone" id="telefone" />
+                 <div class="linha t4">
+                    <label>DDD</label>
+                    <input type="text" name="dddT" id="dddT" />
+                   </div>
+                  <div class="linha t2">
+                  <label>Telefone</label>
+                   <input type="text" name="tel" id="tel" />
                   </div>
                   
                   <div class="linha t3">
