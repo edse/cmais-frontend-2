@@ -16,6 +16,27 @@
 
 <!-- Place this tag where you want both of the search box and the search results to render -->
 <gcse:search></gcse:search>
+<ul>
+  
+<?php
+  $htmlDir = "html/";
+  
+  if (is_dir($htmlDir))
+  {
+    $pointer  = opendir($htmlDir);  
+    while ($itensName = readdir($pointer))
+    {
+      if (!in_array($itensName, array(".", "..", "converted" )) )
+      {
+?>
+  <li><a href="html/<?php echo $itensName ?>" title="<?php echo $itensName ?>"><?php echo $itensName ?></a></li>
+<?php
+        
+      }
+    }  
+  }
+?>
+</ul>
 </body>
 </html>
       
