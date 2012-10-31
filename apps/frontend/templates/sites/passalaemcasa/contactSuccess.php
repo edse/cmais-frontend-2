@@ -107,7 +107,7 @@
                     <label>idade</label>
                     <input type="text" maxlength="2" name="idade" id="idade" />
                   </div>
-                  <div class="linha t3">
+                  <div class="linha t3"> 
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
