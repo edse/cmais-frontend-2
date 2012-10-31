@@ -90,6 +90,7 @@
 			                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
 			                  <?php endif; ?>
 			                </div>
+			                <?php include_partial_from_folder('blocks','global/visite-cmais', array('site' => $site, 'uri' => $uri)) ?>
 			                <?php include_partial_from_folder('sites/rodaviva','global/fb-comments',array('uri'=>$uri)) ?>
           				</div>
           			</div>
