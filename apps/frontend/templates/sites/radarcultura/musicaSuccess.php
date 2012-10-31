@@ -560,6 +560,7 @@
                 <?php if($k < 2):?>
                   <div class="linha-lateral"></div>
                 <?php endif;?>
+                <?php endif;?>
               </div>
               <!--/item-->
               
