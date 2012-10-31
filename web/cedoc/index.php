@@ -19,7 +19,7 @@
 <ul>
   
 <?php
-  $htmlDir = "html/";
+  $htmlDir = "/var/frontend/web/cedoc/html/";
   
   if (is_dir($htmlDir))
   {
