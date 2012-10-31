@@ -116,22 +116,9 @@
                     <label>telefone (xx) xxxx-xxxx</label>
                     <input type="text" name="cidade" id="cidade" />
                   </div>
-                  <div class="linha t6">
-                    <label>assunto</label>
-                    <br />
-                    <select style="width:150px;" id="assunto" name="assunto" class="required">
-                      <option value="">- Selecione -</option>
-                      <option value="Elogio">Elogio</option>
-                      <option value="Crítica">Crítica</option>
-                      <option value="Comentário">Comentário</option>
-                      <option value="Sugestão">Sugestão</option>
-                      <?php if(!in_array($site->getSlug(), array('manoseminas'))): ?>
-                      <option value="Compra de DVD">Compra de DVD</option>
-                      <?php endif; ?>
-                    </select>
-                  </div>
+                  
                   <div class="linha t3">
-                    <label>mensagem</label>
+                    <label>deixe seu depoimento</label>
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                   </div>
