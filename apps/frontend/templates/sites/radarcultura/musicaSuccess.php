@@ -554,19 +554,19 @@
                     <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
                   </div>
                 </div>
-                
-                <?php if($k <= 2):?>
+                <?php if($k < 2):?>
                   <div class="linha-lateral"></div>
                 <?php endif;?>
+        
               </div>
               <?php endif;?>              
               <!--/item-->
-            <?php endforeach; ?>
+             <?php endforeach; ?>
             </div>
             <!-- /pitaco -->
           </div>
           <!--pela web-->
-          <?php endif; ?>
+          <?php endif;?>
     
           <!--banner horizontal-->    
           <div class="container">
