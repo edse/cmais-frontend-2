@@ -526,7 +526,7 @@
             <!--/como participar-->
          </div>
          <!--/coluna direita-->
-         
+               
          <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
          <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
          <!--pela web-->  
@@ -564,7 +564,7 @@
           </div>
           <!--pela web-->
           <?php endif; ?>
-          
+    
           <!--banner horizontal-->    
           <div class="container">
             <div class="banner-radio horizontal">
