@@ -6,7 +6,7 @@ body { background:url(/portal/images/capaPrograma/passalaemcasa/bg.jpg) repeat-x
 .duas-colunas .sub-titulo { font-size: 16px; font-weight:bold; }
 .uma-coluna .titulos,
 .box-padrao .rss,
-.uma-coluna p { display: none; }
+.uma-coluna p { }
 .box-padrao .topo .capa-titulo h4,
 .box-padrao .chapeu { font-size:16px; color:#333; font-weight: normal; }
 .box-padrao .topo .capa-titulo h4 { margin-left:0; }
@@ -34,3 +34,4 @@ span.faixa {    background: url("/portal/images/capaPrograma/passalaemcasa/bgtit
 .box-interna .box-compartilhar { display:none; }
 .uma-coluna .conteudo li { height:auto;}
 .pag-bola { display:none; }
+.duas-colunas p a { clear:none; display: inline; }
