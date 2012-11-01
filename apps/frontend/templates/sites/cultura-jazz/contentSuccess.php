@@ -115,7 +115,7 @@ $(function(){
                 <div class="texto">
                   <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                 </div>
-
+                <p>teste</p>
                 <?php $audioGallery = $asset->retriveRelatedAssetsByAssetTypeId(5) ?>
                 <?php $assets = $audioGallery->retriveRelatedAssetsByAssetTypeId(4) ?>
                 <?php if(count($assets) > 0): ?>
