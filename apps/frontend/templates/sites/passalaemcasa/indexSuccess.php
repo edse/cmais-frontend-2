@@ -21,7 +21,7 @@
       </h3> <?php endif;?></a></h2>
       <?php endif;?>
 
-      <h2><a href="#"> <img src="/portal/images/capaPrograma/passalaemcasa/thumb.png" alt="" title="" /></a></h2>      
+     
       
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))?>
@@ -105,7 +105,7 @@
         <!-- /ESQUERDA -->
         <!-- DIREITA -->
         <div id="direita" class="grid1">
-          <?php include_partial_from_folder('blocks','global/display-1c-vertical-multiple', array('displays' => $displays["destaque-secundario"]))?>
+          <?php include_partial_from_folder('blocks','global/display-1c-vertical-multiple', array('displays' => $displays["destaque-secundario"])) ?>
           <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-2"]))?>
           <?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"]))?>
         </div>
