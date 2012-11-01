@@ -135,7 +135,7 @@ $(function(){
             <div id="esquerda" class="grid2">
 
               <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
-
+              <?php include_partial_from_folder('blocks','global/visite-cmais',array('uri'=>$uri)) ?>
               <!-- barra compartilhar -->
               <div class="box-compartilhar grid2">
                 <a href="javascript:;" class="comentar" style="display:none"><span></span>Coment&aacute;rios</a>

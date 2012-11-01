@@ -99,6 +99,7 @@
                   <img src="/portal/tvratimbum/image/institucional.jpg" alt="" />
                   <p>Caro visitante,</p>
                   <p>Esta &aacute;rea traz informa&ccedil;&otilde;es institucionais da <span class="bold">Funda&ccedil;&atilde;o Padre Anchieta</span>, mantenedora do canal <span class="bold">TV R&aacute; Tim Bum</span>. Nossos objetivos, valores e hist&oacute;ria est&atilde;o dispon&iacute;veis para que voc&ecirc; conhe&ccedil;a um pouco mais do nosso canal, que &eacute; um marco na hist&oacute;ria da TV brasileira.</p>
+                  <?php include_partial_from_folder('blocks','global/visite-cmais', array('uri' => $uri)) ?>
                 </div>
                 <!--explicacao-->
                 

@@ -539,6 +539,7 @@
             <div class="row-fluid">
             <?php foreach($relacionados as $k=>$d): ?> 
               <!--item-->
+              <?php if($k < 3): ?>
               <div class="span4">
                 <div class="row-fluid redes">
                   <div class="">
@@ -556,14 +557,16 @@
                 <?php if($k < 2):?>
                   <div class="linha-lateral"></div>
                 <?php endif;?>
+        
               </div>
+              <?php endif;?>              
               <!--/item-->
-            <?php endforeach; ?>
+             <?php endforeach; ?>
             </div>
             <!-- /pitaco -->
           </div>
           <!--pela web-->
-          <?php endif; ?>
+          <?php endif;?>
     
           <!--banner horizontal-->    
           <div class="container">
