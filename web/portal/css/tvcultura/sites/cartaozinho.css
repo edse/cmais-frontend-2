@@ -172,3 +172,6 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .box-padrao .topo span {  display: none;}
 .box-padrao .topo h4 { font-size:16px; }
 /* /arquivo*/
+
+.contato.sugestao h3 { background: url("/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
+.contato p { margin-left:10px; }

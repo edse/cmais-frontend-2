@@ -20,7 +20,7 @@
         
       <!--topo menu/alert/logo-->
       <div class="row-fluid" style="margin: 10px 0 0 0;">
-        <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
+        <div id="socialAlertOk" class="alert alert-info alert-in indexRadar hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
@@ -159,48 +159,6 @@
       <!--paginador-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
       <!--paginador-->
-      
-       <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-         <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
-         <!--pela web-->  
-         <div class="row-fluid">
-            <div class="span12 page-header na-rede">
-              <h3>Pitacos</h3>
-              
-            </div>
-            <!-- pitaco -->
-            <div class="row-fluid">
-            <?php foreach($relacionados as $k=>$d): ?> 
-              <!--item-->
-              <?php if($k < 3): ?>
-              <div class="span4">
-                <div class="row-fluid redes">
-                  <div class="">
-                    <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                      <i class=" icone-rede <?php echo strtolower($d->getDescription())?> pull-right"></i>
-                    </a>
-                    <div class="page-header">
-                      <h5><?php echo $d->getTitle() ?> <small><br/><?php echo distance_of_time_in_words(strtotime($d->AssetContent->getHeadlineShort()), NULL, TRUE)?></small></h5>
-                    </div>
-                    <img src="<?php echo $d->AssetContent->getHeadline() ?>" alt="<?php echo $d->getTitle() ?>" class="avatar pull-left">
-                    <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-                    <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
-                  </div>
-                </div>
-                <?php if($k < 2):?>
-                  <div class="linha-lateral"></div>
-                <?php endif;?>
-        
-              </div>
-              <?php endif;?>              
-              <!--/item-->
-             <?php endforeach; ?>
-            </div>
-            <!-- /pitaco -->
-          </div>
-          <!--pela web-->
-          <?php endif;?>
-      
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
