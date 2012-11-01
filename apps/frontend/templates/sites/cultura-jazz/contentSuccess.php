@@ -147,7 +147,7 @@ $(function(){
               </div>
               <!-- /NOTICIA INTERNA -->
               
-            <?php $assets = $asset->retriveAssetsByAssetTypeId(5) ?>
+            <?php $assets = $asset->retriveRelatedAssetsByAssetTypeId(5) ?>
             <?php if($assets): ?> 
             <!-- NOTICIA INTERNA -->            
             <div class="box-interna encontro grid2">            
