@@ -5,8 +5,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
 ?>
 
+<!-- CAPA SITE -->
 <div class="bg-provocacoes">
-  <!-- CAPA SITE -->
   <div id="capa-site">
     <!-- BREAKING NEWS -->
     <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
@@ -69,36 +69,15 @@
                 <h2><?php echo $section->getTitle()
                 ?></h2>
                 <!--p><?php echo $section->getDescription()?></p-->
-                <script>
-                $(document).ready(function(){
-                  $('.abre-form').click(function(){
-                   $('.box.fechado').hide();
-                   $('.box.aberto').fadeIn('fast');
-                  });
-                  
-                  $('.fecha-form').click(function(){
-                    $('.box.fechado').show();
-                   $('.box.aberto').hide();
-                  })
-                  
-                });
-                </script>
-                <div class="box fechado">
-                  <p class="icon abre-form">Vamos, enforque-se na corda da liberdade.</p>
-                  <p class="btn abre-form">preencha o formulário</p>
-                </div>
-                <div class="box msg" style="display:none;">
+                <div class="box msg" style="display: none;">
                   <div class="msgErro" style="display:none">
                     <p class="aviso">Sua mensagem não pode ser enviada.</p>
                   </div>
                   <div class="msgAcerto" style="display:none">
-                    <p class="aviso">Informações enviadas com sucesso. Aguarde até amanhã para nos provocar novamente.</p>
+                    <p class="aviso">Mensagem enviada com sucesso.</p>
                   </div>
                 </div>
-                <div class="box aberto" style="display: none;">
-                  <p class="icon fecha-form">Vamos, enforque-se na corda da liberdade. Mas só uma vez por dia.</p>
-                  <p>Escreva aqui tudo o que você quiser, com toda a liberdade que algum dia talvez não lhe tenham deixado ter. Escreva sobre o Brasil, o mundo, as pessoas, as coisas, tudo. Não importa se os outros amarão ou odiarão suas palavras, desde que respeitem o seu direito de escrevê-las.</p>
-                  <p>Aqui você também pode mandar as suas indicações de peças, filmes, eventos, livros, etc.</p>
+                <div class="box aberto" style="display: block;">
                   <form id="form-contato" method="post" action="">
                     <label class="med">Nome
                       <input type="text" name="nome" id="nome" />
@@ -109,9 +88,50 @@
                     <label class="grd">E-mail
                       <input type="text" name="email" id="email" />
                     </label>
-                    <label class="grd">Website
-                      <input type="text" name="website" id="website" />
+                    <label class="med">Cidade
+                      <input type="text" name="cidade" id="cidade" />
                     </label>
+                    <label class="peq">Estado
+                      <select class="estado required" id="estado">
+                        <option value="" selected="selected">--</option>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Amap&aacute;">AP</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Cear&aacute;">CE</option>
+                        <option value="Distrito Federal">DF</option>
+                        <option value="Espirito Santo">ES</option>
+                        <option value="Goi&aacute;s">GO</option>
+                        <option value="Maranh&atilde;o">MA</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Mato Grosso do Sul">MS</option>
+                        <option value="Mato Grosso">MT</option>
+                        <option value="Par&aacute;">PA</option>
+                        <option value="Para&iacute;ba">PB</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piau&iacute;">PI</option>
+                        <option value="Paran&aacute;">PR</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Rio Grande do Norte">RN</option>
+                        <option value="Rond&ocirc;nia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="S&atilde;o Paulo">SP</option>
+                        <option value="Tocantins">TO</option>
+                      </select> </label>
+                    <label class="peq assunto">Assunto
+                      <select id="assunto" name="assunto">
+                        <option value="">--</option>
+                        <option value="Elogio">Elogio</option>
+                        <option value="Crítica">Crítica</option>
+                        <option value="Comentário">Comentário</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Compra de DVD">Compra de DVD</option>
+                      </select> </label>
+                    <br/>
                     <div class="grd">
                       <label class="mensagem">Mensagem</label>
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
@@ -126,86 +146,8 @@
                     </div>
                     <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input type="submit" value="confirmar" id="enviar" name="enviar" class="btn">
-                    <input type="submit" value="cancelar" id="cancelar" name="cancelar" class="btn">
                   </form>
                 </div>
-                <!-- LISTA -->
-                
-               	<?php if(count($pager) > 0): ?>
-              <!-- BOX LISTAO -->
-              <div class="box-listao grid2">         
-                <ul>
-                	<?php $current_date= ''; ?>
-                  <?php foreach($pager->getResults() as $d):
-                  	$date= explode(' ', $d->getCreatedAt()); 
-                  	$date= $date[0];
-                  	
-                  ?>
-               	
-               		<?php if($current_date != $date): ?>
-               		
-               			<h2 id="data-post"><?php echo format_date(strtotime($date),"D") ?></h2>
-               			<li>
-							<?php if(isset($date)): ?>
-								<p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
-							<?php endif ?>
-							
-								<a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
-								<p><?php echo $d->getDescription() ?></p>
-						</li>
-                   <?php else: ?>
-                   		<li>
-							<?php if(isset($date)): ?>
-								<p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
-							<?php endif ?>
-								
-								<a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
-								<p><?php echo $d->getDescription() ?></p>
-						</li>
-                  <?php endif; ?> 	
-                  <?php $current_date=$date; ?>
-                  <?php endforeach; ?>
-                </ul>
-              </div>
-              <!-- /BOX LISTAO -->
-            <?php endif; ?>
-
-            <?php if(isset($pager)): ?>
-              <?php if($pager->haveToPaginate()): ?>
-              <!-- PAGINACAO -->
-              <div class="paginacao grid3">
-                <div class="centraliza">
-                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
-                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
-                  <ul>
-                    <?php foreach ($pager->getLinks() as $page): ?>
-                      <?php if ($page == $pager->getPage()): ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
-                      <?php else: ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-                      <?php endif; ?>
-                    <?php endforeach; ?>
-                  </ul>
-                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
-                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
-                </div>
-              </div>
-              <form id="page_form" action="" method="post">
-                <input type="hidden" name="return_url" value="<?php echo $url?>" />
-                <input type="hidden" name="page" id="page" value="" />
-              </form>
-              <script>
-                function goToPage(i){
-                  $("#page").val(i);
-                  $("#page_form").submit();
-                }
-              </script>
-              <!--// PAGINACAO -->
-                <?php endif; ?>
-            <?php endif; ?>
-
-          
-                <!-- /LISTA -->
               </div>
               <div class="box-publicidade">
                 <script type='text/javascript'>
@@ -222,18 +164,14 @@
     </div>
     <!-- /MIOLO -->
   </div>
-  <!-- / CAPA SITE -->
+  <!-- /capa site -->
 </div>
-<!--/bg provoca-->
+<!-- /bg provocacoes -->
+
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-	  /* somente para teste
-		$('input#enviar').click(function() {
-			$('.box.msg, .msgAcerto').show();
-			$(".box.aberto").hide();
-		});
-		*/
+		
 		$('input#cancelar').click(function(){
 		  $('#form-contato').clearForm();
 		})
@@ -276,14 +214,21 @@
 					required : true,
 					minlength : 2
 				},
+				idade : {
+					required : true
+				},
 				email : {
 					required : true,
 					email : true
 				},
-				website : {
+				cidade : {
+					required : true,
+					minlength : 2
+				},
+				estado : {
 					required : true
 				},
-				idade : {
+				assunto : {
 					required : true
 				},
 				mensagem : {
@@ -299,7 +244,9 @@
 				nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
 				idade : "Este campo &eacute; obrigat&oacute;rio.",
 				email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-				website : "Este campo &eacute; obrigat&oacute;rio.",
+				cidade : "Este campo &eacute; obrigat&oacute;rio.",
+				estado : "Este campo &eacute; obrigat&oacute;rio.",
+				assunto : "Este campo &eacute; obrigat&oacute;rio.",
 				mensagem : "Este campo &eacute; obrigat&oacute;rio.",
 				captcha : "Digite corretamente o código que está ao lado."
 			},

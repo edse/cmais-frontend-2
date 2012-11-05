@@ -15,13 +15,13 @@
       wrap : "both"
     });
     
-    $(".fancybox").fancybox();
-    
-    });
+    // charges caruso
+    $('a.img').fancybox();
+    //$('#gallery ul li:last').remove();
+
+  });
 
 </script>
-
-
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
@@ -101,31 +101,29 @@
              </div>
                     
         <!-- /destaque principal e barra compartilhar-->
-                <!--
+                
                   <div class="acervoDestaque" style="display: block;">
                     <h3>acervo em destaque</h3>
-                    
                     <div class="carrossel jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
                       <div class="jcarousel-clip jcarousel-clip-horizontal" style="overflow: hidden; position: relative;">
                     <?php include_partial_from_folder('blocks','global/display-2c-playlist', array('displays' => $displays["destaque-playlist"])) ?>
                       </div><div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block;"></div><div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div>
                     </div>
-                    
                     <a href="/rodaviva/programas" class="acervoCompleto"><span>+ Acervo completo</span></a>
                   
                   </div>
-                     -->  
+                       
                   <div class="grid1" style="margin-right:20px; ">
-                    <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-1"])) ?>
+                    <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
                   </div>
                   <div class="grid1">
-                    <?php if(isset($displays["destaque-2"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-2"])) ?>
+                    <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-padrao-2"])) ?>
                   </div>
                   <div class="grid1" style="margin-right:20px; ">
-                    <?php if(isset($displays["destaque-3"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-3"])) ?>
+                    <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
                   </div>
                   <div class="grid1">
-                    <?php if(isset($displays["destaque-4"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-4"])) ?>
+                    <?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
                   </div>
             
                  
@@ -177,13 +175,13 @@
                    
                   <?php if($images): ?>
                   <div class="charges">
-                    <h3>Fotos do Último Programa</h3>
+                    <h3>Galeria de Fotos</h3>
                     <div class="box-charges">
                       <div id="gallery">
                     <ul>
                       <?php foreach($images as $k=>$d): ?>
                         <li>
-                            <a class="fancybox" href="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" title="<?php echo $d->getTitle() ?>" rel="charges_caruso">
+                            <a class="img" href="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" title="<?php echo $d->getTitle() ?>" rel="charges_caruso">
                                 <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                             </a>
                         </li>

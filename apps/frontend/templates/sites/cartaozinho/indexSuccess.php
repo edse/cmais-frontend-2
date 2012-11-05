@@ -81,7 +81,11 @@
             <?php endif; ?>
       <!-- /DESTAQUE 2 COLUNAS -->
       </div>
+      <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!">
+       
+      </a>
       <div class="juiza"></div>
+     
       <div class="redes-sociais">
         <a href="#" class="face" name"Facebook" title="Facebook">Facebook</a>
         <a href="#" class="twt" name"Twitter" title="Twitter">Twitter</a>
