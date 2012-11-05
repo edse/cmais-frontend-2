@@ -34,4 +34,5 @@ span.faixa {    background: url("/portal/images/capaPrograma/passalaemcasa/bgtit
 .box-interna .box-compartilhar { display:none; }
 .uma-coluna .conteudo li { height:auto;}
 .pag-bola { display:none; }
-.duas-colunas p a { clear:none; display: inline; }
+.duas-colunas p a { clear:none; display: inline;}
+.duas-colunas .texto { max-height:390px; overflow-x:hidden; overflow-y:scroll; }
