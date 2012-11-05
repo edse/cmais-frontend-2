@@ -28,23 +28,19 @@ $(function(){
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
-      <!-- BARRA SITE -->
+      <!-- BARRA SITE --> 
       <div id="barra-site">
       	
       	<h3 class="tit-pagina">Vídeos</h3>
       	
-        <?php if(isset($program) && $program->id > 0): ?>
-        <div class="topo-programa">
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php endif; ?>
-
+       <?php if(isset($program) && $program->id > 0): ?>
+                  <div class="topo-programa">
+           
+          <?php endif; ?> 
+          
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+          <?php endif; ?> 
           
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
