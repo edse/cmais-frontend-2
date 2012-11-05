@@ -1212,10 +1212,11 @@ class ajaxActions extends sfActions
   }
 
   public function executeEpg(sfWebRequest $request){
-	date_default_timezone_set('Brazil/East');
+	 date_default_timezone_set('Brazil/East');
 
   	$date = date('Ymd');
-  	$time = strtotime(date('Ymd'))+(24*60*60*7);
+    //$time = strtotime(date('Ymd'))+(24*60*60*7);
+    $time = strtotime(date('Ymd'));
   	$end = date("Y-m-d 23:59:59", $time);
   	$start = date('Y-m-d 00:00:00');
   	$channels = array(1,3,4);
