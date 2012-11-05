@@ -65,7 +65,7 @@
             <div class="texto">
             <?php include_partial_from_folder('sites/passalaemcasa','global/destaquepadrao', array('displays' => $displays)) ?>
             </div>
-            
+            </div>
           
           <!-- /DESTAQUE 2 COLUNAS -->
           <?php endif; ?>
