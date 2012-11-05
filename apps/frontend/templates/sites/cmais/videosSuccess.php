@@ -33,7 +33,7 @@ $(function(){
       	
       	<h3 class="tit-pagina">Vídeos</h3>
       	
-        <!--<?php if(isset($program) && $program->id > 0): ?>
+       <?php if(isset($program) && $program->id > 0): ?>
                   <div class="topo-programa">
           <h2>
               <a href="<?php echo $program->retriveUrl() ?>">
@@ -44,7 +44,7 @@ $(function(){
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?> -->
+          <?php endif; ?> 
           
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
