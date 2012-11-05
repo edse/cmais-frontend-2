@@ -81,11 +81,15 @@
             <?php endif; ?>
       <!-- /DESTAQUE 2 COLUNAS -->
       </div>
+      <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!">
+       
+      </a>
       <div class="juiza"></div>
-      <div class="redes-sociais">
-        <a href="#" class="face" name"Facebook" title="Facebook">Facebook</a>
-        <a href="#" class="twt" name"Twitter" title="Twitter">Twitter</a>
-        <a href="#" class="ytb" name"Youtube" title="Youtube">Youtube</a>
+     
+       <div class="redes-sociais">
+        <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
+        <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
+        <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="Youtube">Youtube</a>
       </div>
       
       <script>

@@ -20,19 +20,19 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 
 /* home */
-.home { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
+.home { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo3.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
 .home #barra-site .topo-programa { background:none; }
 .home .destaque-video { min-height:460px; width:900px; overflow:hidden; }
 .home .duas-colunas a,
 .home .duas-colunas p { display:none; }
-.home .duas-colunas { float:none; margin:0 auto; width:528px; height:427px; background:url(/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
+.home .duas-colunas { float:none; margin:0 0 0 225px; width:528px; height:427px; background:url(/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
 .home .duas-colunas iframe { margin: 0 0 0 39px; }
 .home .duas-colunas .acompanhe { margin:40px 0 10px 40px; }
 .home .duas-colunas .mais-videos { display: block; float:right; margin:10px 40px 0 0; }
 .home .box-topo { height:26px; }
 
-.personagens { width:970px; }
-.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px;  }
+.personagens { width:970px; margin-top:-300px; }
+.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px; margin-top:20px;  }
 .personagens li { height:317px; float: left; margin-right:60px; cursor:pointer; width:142px; }
 .personagens .b-joao { background:url(/portal/images/capaPrograma/cartaozinho/joao.png) no-repeat; }
 .personagens .b-eric { background:url(/portal/images/capaPrograma/cartaozinho/eric.png) no-repeat;   }
@@ -57,14 +57,14 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .texto .titulo { margin-bottom:10px; width: 800px; }
 .bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
 
-.juiza { position:absolute; top:110px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:199px; height:330px; }
+.juiza { position:relative; bottom:215px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:199px; height:330px; }
 .juiza:hover { background-position:-199px 0; }
 
-.redes-sociais { width: 244px; height:340px; position:absolute; top:0; right:0; }
+.redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
 .redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
-.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top:80px; left:0;  }
-.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom:0; right:0; }
-.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right:55px; top:0; }
+.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top:37px; left:41px;  }
+.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom:66px; right:26px; }
+.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right:0; top:0; }
 
 .fb_iframe_widget iframe { position:relative; }
 .box-topo .navegacao { margin-bottom:10px; }
@@ -175,3 +175,5 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 .contato.sugestao h3 { background: url("/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
 .contato p { margin-left:10px; }
+.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }
+
