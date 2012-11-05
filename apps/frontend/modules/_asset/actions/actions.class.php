@@ -498,10 +498,10 @@ class _assetActions extends sfActions
 
 		if($this->site->getSlug() == 'radarcultura' && $this->asset->getSlug() == 'player')
 			$this->setLayout(false);
-
+    /*
     if($this->site->getSlug() == "maiscrianca")
-      //$this->setLayout(false);
-		
+      $this->setLayout(false);
+		*/
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
 			
