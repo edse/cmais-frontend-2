@@ -22,7 +22,6 @@
       <?php endif;?>
 
      
-      
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))?>
       <?php endif;?>
@@ -63,8 +62,11 @@
           <?php if(isset($displays)): ?>
           <!-- DESTAQUE 2 COLUNAS -->
           <div class="duas-colunas destaque grid2">
+            <div class="texto">
             <?php include_partial_from_folder('sites/passalaemcasa','global/destaquepadrao', array('displays' => $displays)) ?>
-          </div>
+            </div>
+            
+          
           <!-- /DESTAQUE 2 COLUNAS -->
           <?php endif; ?>
           <!-- col-esq -->
