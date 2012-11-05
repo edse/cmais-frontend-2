@@ -21,7 +21,7 @@
       </h3> <?php endif;?></a></h2>
       <?php endif;?>
 
-      <h2><a href="#"> <img src="/portal/images/capaPrograma/passalaemcasa/thumb.png" alt="" title="" /></a></h2>      
+     
       
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))?>
