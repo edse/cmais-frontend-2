@@ -7,7 +7,7 @@
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))?>
 </div>
 
-<!-- CAPA SITE -->
+<!-- CAPA SITE --> 
 <div id="capa-site">
   <!-- BARRA SITE -->
   <div id="barra-site">
