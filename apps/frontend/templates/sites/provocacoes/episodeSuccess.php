@@ -130,9 +130,9 @@
                     <!-- span class="nomeTxt"><?php echo $d->getDescription() ?></span-->
                   </a>
                 </li>
-              <?php endforeach; ?>
+              <?php endforeach; ?> 
                     </ul>
-                    <a href=../programas" class="sugestoes"><span>mais vídeos</span></a>
+                    <a href=../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
                   <div class="charges">
                <?php
