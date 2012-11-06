@@ -132,7 +132,7 @@
                 </li>
               <?php endforeach; ?>
                     </ul>
-                    <a href="" class="sugestoes"><span>mais vídeos</span></a>
+                    <a href=../programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
                   <div class="charges">
                <?php
