@@ -71,40 +71,68 @@
                 ?></h2>
                 
                 <!-- LISTA -->
-                <h2 id="data-post">27 de Janeiro de 2011</h2>
+                <?php if(count($pager) > 0): ?>
                 <!-- BOX LISTAO -->
-                <div class="box-listao">
-                  <ul>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    <li><a href="#" class="titulos">PGM01 - 06/08/2000</a><p>Mario Prata / Jorge Wilheim / Mario Chamie / Marina De Sabrit E Suzana Alves</p></li>
-                    
-                  </ul>
-                </div>
+                <div class="box-listao indica">
+                <?php if(isset($date)): ?>
+                <h3><?php echo format_date(strtotime($date),"D") ?></h3>
+                <?php endif ?>
+                <ul>
+                  <?php foreach($pager->getResults() as $d): ?>
+                    <li>
+                      <?php if(isset($date)): ?>
+                      <p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
+                      <?php endif ?>
+                      <h3 class="chapeu"><?php echo $d->retriveLabel() ?></h3>
+                      <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
+                      <p><?php echo $d->getDescription() ?></p>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+              </div>
                 <!-- /BOX LISTAO -->
-                <div class="paginacao">
-                  <div class="centraliza">
-                    <a class="btn-ante" href="javascript: goToPage(1);"></a>
-                    <a href="javascript: goToPage(1);" class="btn anterior">Anterior</a>
-                    <ul>
-                      <li><a class="ativo" href="javascript: goToPage(1);">1</a></li>
-                      <li><a href="javascript: goToPage(2);">2</a></li>
-                      <li><a href="javascript: goToPage(3);">3</a></li>
-                      <li><a href="javascript: goToPage(4);">4</a></li>
-                      <li><a href="javascript: goToPage(5);">5</a></li>
-                    </ul>
-                    <a href="javascript: goToPage(2);" class="btn proxima">Próxima</a>
-                    <a class="btn-prox" href="javascript: goToPage(2);"></a>
-                  </div>
+                     <?php endif; ?>  
+                
+                <?php if(isset($pager)): ?>
+              <?php if($pager->haveToPaginate()): ?>
+              <!-- PAGINACAO -->
+              <div class="paginacao">
+                <div class="centraliza">
+                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
+                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
+                  <ul>
+                    <?php foreach ($pager->getLinks() as $page): ?>
+                      <?php if ($page == $pager->getPage()): ?>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+                      <?php else: ?>
+                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+                      <?php endif; ?>
+                    <?php endforeach; ?>
+                  </ul>
+                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
+                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proxima"></a>
                 </div>
+              </div>
+              <form id="page_form" action="" method="post">
+                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                <input type="hidden" name="page" id="page" value="" />
+              </form>
+              <script>
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
+              </script>
+              <!--// PAGINACAO -->
+              <?php endif; ?>
+            <?php endif; ?>
+
+              
                 <!-- /LISTA -->
               </div>
               <div class="box-publicidade">
                 <script type='text/javascript'>
-					GA_googleFillSlot("cmais-assets-300x250");
+          GA_googleFillSlot("cmais-assets-300x250");
 
                 </script>
               </div>
@@ -117,6 +145,8 @@
     </div>
     <!-- /MIOLO -->
   </div>
-  <!-- capa site-->
+  <!-- / CAPA SITE -->
 </div>
-<!-- bg provoca -->
+<!-- / bg provoca -->
+
+
