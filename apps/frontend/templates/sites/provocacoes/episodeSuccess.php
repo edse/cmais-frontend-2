@@ -168,14 +168,14 @@
                   </div>
                  
                 </div>
-                
-              </div>
-               <div class="publicidade">
+                <div class="publicidade">
                           <!-- tvcultura-homepage-300x250 -->
                           <script type='text/javascript'>
                             GA_googleFillSlot("cmais-assets-300x250");
                           </script>
                   </div>
+              </div>
+               
             </div>
           </div>
           <span class="bordaBottomRV"></span>
