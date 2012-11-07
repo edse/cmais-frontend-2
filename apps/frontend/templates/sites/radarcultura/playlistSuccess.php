@@ -302,8 +302,8 @@
           $('#socialLoading').fadeIn();
           
           $.ajax({
-            //url: '/actions/radarcultura/facebookPost.php',
-            url: '/actions/radarcultura/playlistMusica.php',
+            url: '/actions/radarcultura/facebookPost.php',
+            //url: '/actions/radarcultura/playlistMusica.php',
             data: opts,
             dataType: "html",
             success: function(data) {
