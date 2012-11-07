@@ -305,7 +305,7 @@
             //url: '/actions/radarcultura/facebookPost.php',
             url: '/actions/radarcultura/playlistMusica.php',
             data: opts,
-            dataType: "text",
+            dataType: "html",
             success: function(data) {
               $('#socialLoading').fadeOut();
               $('#socialBtn-1').popover('hide');
