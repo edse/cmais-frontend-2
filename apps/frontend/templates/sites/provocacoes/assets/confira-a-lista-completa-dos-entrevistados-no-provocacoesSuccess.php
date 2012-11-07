@@ -87,6 +87,3 @@
     <!-- /MIOLO -->
   </div>
   <!-- /capa site -->
-</div>
-<!-- /bg provocacoes -->
-</div>
