@@ -1,25 +1,9 @@
-<link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script> 
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
       
 <script>
-  // TIMER TRANSMISSAO
-  /*function timer1(){
-    var request = $.ajax({
-      data: {
-        asset_id: '32924',
-        url_in: '/teleton/ao-vivo'
-      },
-      dataType: 'jsonp',
-      success: function(data) {
-        eval(data);
-      },
-      url: '/ajax/timer'
-    });
-  }
-*/
+
   // Update Twitter Statuses
   function updateTweets(){
     $.ajax({
@@ -30,12 +14,7 @@
       }
     });
   }
-  /*
-  $(window).load(function(){
-    timer1();
-    var t=setInterval("timer1()",60000);
-  });
-  */
+
 
   $(function(){ //onready
     updateTweets();
