@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script> 
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
