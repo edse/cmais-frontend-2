@@ -71,8 +71,8 @@
     $nextPage = false;
 ?>
 <ul class="pagination">
-  <li><?php if($prevPage): ?><a href="index.php?offset=<?php echo $prevPage; ?>"><< Anterior</a><?php else: ?><< Anterior<?php endif; ?></li>
-  <li><?php if($nextPage): ?><a href="index.php?offset=<?php echo $nextPage; ?>">Próxima >></a><?php else: ?>Próxima >><?php endif; ?></li>
+  <li><?php if($prevPage): ?><a href="index.php?offset=<?php echo $prevPage; ?>" title="anterior"><< Anterior</a><?php else: ?><< Anterior<?php endif; ?></li>
+  <li><?php if($nextPage): ?><a href="index.php?offset=<?php echo $nextPage; ?>" title="próxima">Próxima >></a><?php else: ?>Próxima >><?php endif; ?></li>
 </ul>
 <ul>
 <?php foreach($currentFiles as $k=>$d): ?>
