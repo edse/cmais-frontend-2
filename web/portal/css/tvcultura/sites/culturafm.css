@@ -483,7 +483,7 @@ h3 { margin-bottom:20px}
 .home #conteudo-pagina { margin-top:303px; }
 .submenu-interna, .submenu-interna ul { min-width:218px; }
 
-.assinatura { margin-top:-20px; }
+.assinatura { margin-top:-20px !important; }
 .assinatura .inf { text-align:left;  width:250px; }
 .box-compartilhar.cp-sembg { float:right; width:390px; }
 #esquerda p { text-align:left; }
