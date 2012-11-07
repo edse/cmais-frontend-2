@@ -21,7 +21,8 @@ $(function(){
       <!-- BARRA SITE -->
       <div id="barra-site">
 
-        <?php if(isset($program) && $program->id > 0): ?>
+        <?php //if(isset($program) && $program->id > 0): ?>
+        <?php if(false): ?>
         <div class="topo-programa">
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
