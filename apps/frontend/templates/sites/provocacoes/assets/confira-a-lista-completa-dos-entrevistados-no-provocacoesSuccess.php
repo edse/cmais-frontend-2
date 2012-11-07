@@ -65,17 +65,18 @@
           <div class="tudo-provocacoes">
             <span class="bordaTopRV"></span>
             <div class="centroRV">
-              <div class="box-publicidade">
-                <script type='text/javascript'>
-          GA_googleFillSlot("cmais-assets-300x250");
-
-                </script>
-              </div>
+            
               <div class="faleConosco">
                 <h2><?php echo $asset->getTitle()
                 ?></h2>
                 <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
                 </div>
+                  <div class="box-publicidade">
+                <script type='text/javascript'>
+          GA_googleFillSlot("cmais-assets-300x250");
+
+                </script>
+              </div>
               </div>
               
             </div>
