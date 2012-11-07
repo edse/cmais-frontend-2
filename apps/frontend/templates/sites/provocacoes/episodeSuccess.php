@@ -130,9 +130,9 @@
                     <!-- span class="nomeTxt"><?php echo $d->getDescription() ?></span-->
                   </a>
                 </li>
-              <?php endforeach; ?>
+              <?php endforeach; ?> 
                     </ul>
-                    <a href="" class="sugestoes"><span>mais vídeos</span></a>
+                    <a href=../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
                   <div class="charges">
                <?php
@@ -168,9 +168,9 @@
                   </div>
                  
                 </div>
-                
+               
               </div>
-               <div class="publicidade">
+                  <div class="publicidade">
                           <!-- tvcultura-homepage-300x250 -->
                           <script type='text/javascript'>
                             GA_googleFillSlot("cmais-assets-300x250");
