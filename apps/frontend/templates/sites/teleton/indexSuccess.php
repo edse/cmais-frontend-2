@@ -5,21 +5,7 @@
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
       
 <script>
-  // TIMER TRANSMISSAO
-  /*function timer1(){
-    var request = $.ajax({
-      data: {
-        asset_id: '32924',
-        url_in: '/teleton/ao-vivo'
-      },
-      dataType: 'jsonp',
-      success: function(data) {
-        eval(data);
-      },
-      url: '/ajax/timer'
-    });
-  }
-*/
+
   // Update Twitter Statuses
   function updateTweets(){
     $.ajax({
@@ -30,18 +16,13 @@
       }
     });
   }
-  /*
-  $(window).load(function(){
-    timer1();
-    var t=setInterval("timer1()",60000);
-  });
-  */
-
+ 
   $(function(){ //onready
     updateTweets();
     var t=setInterval("updateTweets()",60000);
   });
 </script>
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
