@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script> 
+<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
       
 <script>
 
@@ -15,14 +16,13 @@
     });
   }
  
+
   $(function(){ //onready
     updateTweets();
     var t=setInterval("updateTweets()",60000);
   });
 </script>
-
 <?php use_helper('I18N', 'Date') ?>
-
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
