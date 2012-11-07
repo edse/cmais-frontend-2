@@ -1,19 +1,6 @@
-@import url("../geral.css");
-
-/* TELE TON*/
-body { background:#000 url(../../../images/capaPrograma/teleton/bkg.jpg) no-repeat center 0;}
-#conteudo-pagina {
-	width:970px; 
-	margin-left:33px;
-	margin-top:37px;
-	padding:10px 10px 100px 10px;
-	overflow:hidden;
-	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius: 20px 107px 0 0;
-	max-height:1547px;
-	
-}
+/* TELETON*/
+body { background:#acd134 url(/portal/images/capaPrograma/teleton/fundo.jpg) repeat-x center 0;}
+#conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
 .comentario-fb { max-height:864px; overflow-x:hidden;} 
 
 #rodape-portal {margin-top:-25px;}
@@ -24,15 +11,15 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 .facebook,
 #chamada,
 #menuFloat {display:none !important; }
-.box-interna h3 {color:#02909a;}
+.box-interna h3 {color:#a4002f;}
 .assinatura {margin-top:0;}
-.assinatura .sup {height:1px; padding-bottom:0; border-color: #02909a;}
+.assinatura .sup {height:1px; padding-bottom:0; border-color: #a4002f;}
 .box-interna .cp-sembg {top:0; }
-.cp-sembg .compartilhar {border-color:#02909a;}
+.cp-sembg .compartilhar {border-color:#a4002f;}
 .assinatura .print {/*display:none*/}
 
 .box-interna .texto {margin-top:20px; float:left;}
-#direita h3 { color:#02909a; margin-bottom: 20px; margin-top: 45px; text-align: left;}
+#direita h3 { color:#a4002f; margin-bottom: 20px; text-align: left;}
 .carrossel-videos {margin-bottom:20px;}
 .carrossel-videos .conteudo {height:206px; overflow:hidden; margin-bottom:0;}
 
@@ -47,10 +34,11 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 .box-topo {display:none;}
 
 #barra-site h2 a {color:#000;}
+#twitter { margin-bottom:50px; }
+.topo-programa h2 { margin-top:20px; }
+.numeros {    background: url("/portal/images/capaPrograma/teleton/numeros.jpg") no-repeat scroll 0 0 transparent;    display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
+#miolo { margin:-20px 0 50px 0; z-index: 20000; background:#fff; }
+#barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
+.gplus { margin:6px 0 0 5px; float:left; }
+/* /TELETON */
 
-#twitter ul li {text-align:left;}
-#twitter ul { overflow-y: scroll; !important;}
-#twitter .topo-fb h3 {margin:0;}
-#twitter .respiro { display: none; }
-#twitter .topo-fb {text-align:left;}
-/* /TELE TON */
