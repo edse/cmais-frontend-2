@@ -1,6 +1,4 @@
 /* TELETON*/
-@import url("../geral.css");
-
 body { background:#acd134 url(/portal/images/capaPrograma/teleton/fundo.jpg) repeat-x center 0;}
 #conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
 .comentario-fb { max-height:864px; overflow-x:hidden;} 
