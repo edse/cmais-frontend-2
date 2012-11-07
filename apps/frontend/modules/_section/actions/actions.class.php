@@ -332,7 +332,7 @@ class _sectionActions extends sfActions
               ->execute();
             }
           }
-          else if(($this->section->slug == "videos")){
+          else if(($this->section->slug == "videos")||($this->section->slug == "dica-de-hoje")){
             if(($request->getParameter('site_id') <= 0)&&($request->getParameter('busca') == '')){
               if($this->site->getSlug() == "penarua"){
                 $this->assetsQuery = Doctrine_Query::create()

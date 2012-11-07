@@ -3,7 +3,7 @@ body { background:#fff; }
 #menu-portal-2 .busca-portal .ipt-txt { height:auto; width: 109px; height:14px;  }
 #menu-portal-2 .busca-portal .ipt-txt,
 #menu-portal-2 .busca-portal .ipt-submit {border-radius:0;  }
-#menu-portal-2 .busca-portal .ipt-submit { width:66px; }
+#menu-portal-2 .busca-portal .ipt-submit { width:23px; }
 ul, ol {  margin:0;}
 p { font-size: 14px; }
 @font-face {
