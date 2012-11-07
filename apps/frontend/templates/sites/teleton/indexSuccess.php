@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
       
@@ -23,8 +22,7 @@
 </script>
 
 <?php use_helper('I18N', 'Date') ?>
-
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
     <div id="capa-site">
