@@ -40,5 +40,6 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 #miolo { margin:-20px 0 50px 0; z-index: 20000; background:#fff; }
 #barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
 .gplus { margin:6px 0 0 5px; float:left; }
+.box-compartilhar .btn-compartilhar { width: 200px; }
 /* /TELETON */
 
