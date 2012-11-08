@@ -99,7 +99,7 @@
 
 .abas li .decoracao {
     left: 48% !important;
-    
+}    
 /* TWITTER */
 #twitter {border:1px solid #666}
 #twitter .topo-fb { background-color:#666; overflow:hidden; padding:10px; text-align:left;}
@@ -107,7 +107,7 @@
 #twitter .topo-fb img { width:31px; margin-bottom:0; }
 #twitter .topo-fb h3 {font-size:11px; color:#fff; margin:0;}
 #twitter .topo-fb h4 a {font-size:14px; color:#fff; font-weight:bold;}
-#twitter ul {background:#fff; height:360px; overflow:hidden; overflow-y: scroll; !important;}
+#twitter ul {background:#fff; height:360px; overflow:hidden; overflow-y: scroll;}
 #twitter ul img {width:30px;}
 #twitter ul li {border-bottom:1px dotted #ddd; padding-top:5px; text-align:left; overflow:hidden; margin-top:0; padding-bottom:0;}
 #twitter ul .avatar {margin: 10px;}
@@ -120,7 +120,7 @@
 #twitter ul em a {margin:0; padding:0;}
 /* /TWITTER */
     /*background: url(/portal/images/capaPrograma/transito/setinha-decoracao.png);*/
-}
+
 
 .mapa-sao-paulo .conteudos #mapa-sp-legenda li{
   position:absolute;
