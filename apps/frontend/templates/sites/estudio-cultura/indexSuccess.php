@@ -66,9 +66,7 @@
         <div id="esquerda" class="grid2">
           <h3 class="tit-pagina grid2"><?php echo $site->getTitle()?></h3>
           
-            
-
-          <div class="box-interna grid2">
+          <div class="box-interna grid2" style="margin-bottom:-20px">
             <div class="texto">
               <p><?php echo $site->getDescription() ?></p>
               <div class="assinatura grid2">
