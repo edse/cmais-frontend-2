@@ -1144,7 +1144,7 @@ class _sectionActions extends sfActions
       }
     }
 
-    if($this->site->type == "Programa Infantil")
+    //if($this->site->type == "Programa Infantil")
       //$this->setLayout(false);
     
     //metas
