@@ -116,7 +116,6 @@
             }
           ?>
           <?php if(isset($displays['baixar'])): ?>
-            <?php if(count($displays['baixar']) > 0): ?>
           <!--BAIXAR-->
           <div id="especial-baixar">
             <!--TOPO BAIXAR ESPECIAL-->
@@ -142,7 +141,6 @@
             <span class="picote baixo"></span>
           </div>  
           <!--/BAIXAR-->
-            <?php endif; ?>
           <?php endif; ?>
         </div>
         <!--COLUNA-640-->
