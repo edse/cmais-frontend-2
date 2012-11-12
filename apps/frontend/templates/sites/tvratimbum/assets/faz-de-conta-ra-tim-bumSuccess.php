@@ -110,6 +110,10 @@
               ->andWhere('b.slug = ?', 'baixar')
               ->andWhere('s.site_id = ?', $site->id)
               ->execute();
+          
+            if(count($blocks) > 0){
+              $displays["baixar"] = $blocks[0]->retriveDisplays();
+            }
           ?>
           <?php if(isset($displays['baixar'])): ?>
             <?php if(count($displays['baixar']) > 0): ?>
