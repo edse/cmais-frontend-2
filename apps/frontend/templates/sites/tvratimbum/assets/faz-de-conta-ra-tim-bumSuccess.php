@@ -40,7 +40,7 @@
         
         <!--TRILHA-->
         <div class="trilha">
-          <p><a href="/" title="TV Rá tim Bum">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/especial" title="Especial">Especial</a></p><span>&gt;&gt;</span><a href="#" title="<?php echo $section->getTitle() ?>"><?php echo $section->getTitle() ?></a>
+          <p><a href="/" title="TV Rá tim Bum">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/especial" title="Especial">Especial</a></p><span>&gt;&gt;</span><a href="#" title="Faz de conta Rá-Tim-Bum">Faz de conta Rá-Tim-Bum</a>
         </div>
         <!--/TRILHA-->
         
