@@ -199,7 +199,7 @@
                     </ul>    
                          </div>
                     </div>
-                    <div class="grd concordo">
+                    <div class="t3 concordo">
                       <input type="checkbox" class="check" name="concordo" id="concordo">
                       <label for="concordo">Declaro que li e concordo com o regulamento</label>
                     </div>
