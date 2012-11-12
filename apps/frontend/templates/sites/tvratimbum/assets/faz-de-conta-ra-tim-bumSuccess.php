@@ -115,7 +115,6 @@
               $displays["baixar"] = $blocks[0]->retriveDisplays();
             }
           ?>
-          <?php if(isset($displays['baixar'])): ?>
           <!--BAIXAR-->
           <div id="especial-baixar">
             <!--TOPO BAIXAR ESPECIAL-->
@@ -141,7 +140,6 @@
             <span class="picote baixo"></span>
           </div>  
           <!--/BAIXAR-->
-          <?php endif; ?>
         </div>
         <!--COLUNA-640-->
         
