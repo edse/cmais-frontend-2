@@ -283,7 +283,11 @@
             });         
           },
           rules:{
-            nome:{
+            nome_crianca:{
+              required: true,
+              minlength: 2
+            },
+            nome_resp:{
               required: true,
               minlength: 2
             },
@@ -300,7 +304,7 @@
               minlength: 2
             },
             url:{
-              site:true,
+              url:true,
               required: true
             },
             concordo:{
@@ -312,7 +316,8 @@
             }
           },
           messages:{
-            nome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nome_crianca: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+            nome_resp: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
