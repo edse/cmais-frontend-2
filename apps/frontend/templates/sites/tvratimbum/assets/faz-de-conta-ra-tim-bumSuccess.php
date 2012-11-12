@@ -100,7 +100,17 @@
           <!--VIDEOS-ESPECIAL-->
           <?php include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
           <!--/VIDEOS-ESPECIAL-->
-          
+          <?php
+            $displays = array();
+            $blocks = Doctrine_Query::create()
+              ->select('b.*')
+              ->from('Block b, Section s')
+              ->where('b.section_id = s.id')
+              ->andWhere('s.slug = ?', 'faz-de-conta')
+              ->andWhere('b.slug = ?', 'baixar')
+              ->andWhere('s.site_id = ?', $site->id)
+              ->execute();
+          ?>
           <?php if(isset($displays['baixar'])): ?>
             <?php if(count($displays['baixar']) > 0): ?>
           <!--BAIXAR-->
