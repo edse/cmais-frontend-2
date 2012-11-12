@@ -58,7 +58,7 @@
             
             <!--TITULO-->
             <div class="tarja-titulo">
-              <p><?php echo $section->getTitle() ?></p>
+              <p><?php echo $asset->getTitle() ?></p>
             </div>  
             <!--/TITULO-->
             <!--asset-->
