@@ -1,425 +1,230 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/radiofm/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<link type="text/css" href="/portal/css/tvcultura/secoes/programas.css" rel="stylesheet">
+<link type="text/css" href="/portal/css/tvcultura/sites/culturafm.css" rel="stylesheet">
+<link rel="stylesheet" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" type="text/css">
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript">
 <script type="text/javascript">
-$(function(){
-  //hover states on the static widgets
-  $('#dialog_link, ul#icons li').hover(
-    function() { $(this).addClass('ui-state-hover'); }, 
-    function() { $(this).removeClass('ui-state-hover'); } 
-  );
-  
-  $('.comentario-fb').show();
+	$(function() {
+		
+	 $('.m-colunistas, .submenu-interna').mouseover(function() {
+	      
+	   $('.toggle-menu').slideDown("fast");
+	    
+	 });
+	 $('.m-colunistas, .submenu-interna').mouseleave(function() {
 
-});
-</script> 
-<script type="text/javascript">
-  $(function() {
-    
-   $('.m-colunistas, .submenu-interna').mouseover(function() {
-        
-     $('.toggle-menu').slideDown("fast");
-      
-   });
-   $('.m-colunistas, .submenu-interna').mouseleave(function() {
-
-     $('.toggle-menu').slideUp("fast");
-   });
+	   $('.toggle-menu').slideUp("fast");
+	 });
 
     });
     
 </script>
+	<script
+	type = "text/javascript" > $(function() {
+		// Datepicker
+		$('#datepicker').datepicker({
+			//beforeShowDay: dateLoading,
+			onSelect : redirect,
+			defaultDate : new Date("2012/09/18"),
+			dateFormat : 'yy/mm/dd',
+			altFormat : 'yy-mm-dd',
+			inline : true
+		});
+	});
+	function redirect(d) {
+		send('culturafm', d);
+		//self.location.href = 'http://culturafm.cmais.com.br/guia-do-ouvinte?d='+d;
+	}
 
+	//cache the days and months
+	var cached_days = [];
+	var cached_months = [];
+	function dateLoading(date) {
+		var year_month = "" + (date.getFullYear()) + "-" + (date.getMonth() + 1) + "";
+		var year_month_day = "" + year_month + "-" + date.getDate() + "";
+		var opts = "";
+		var i = 0;
+		var ret = false;
+		i = 0;
+		ret = false;
+		for(i in cached_months) {
+			if(cached_months[i] == year_month) {
+				// if found the month in the cache
+				ret = true;
+				break;
+			}
+		}
+		// check if the month was not cached
+		if(ret == false) {
+			// load the month via .ajax
+			opts = "month=" + (date.getMonth() + 1);
+			opts = opts + "&year=" + (date.getFullYear());
+			opts = opts + "&program_id=394";
+			// opts=opts +"&day="+ (date.getDate());
+			// we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
+			$.ajax({
+				url : "/ajax/getdays",
+				data : opts,
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					// add the month to the cache
+					cached_months[cached_months.length] = year_month;
+					$.each(data.days, function(i, day) {
+						cached_days[cached_days.length] = year_month + "-" + day.day + "";
+					});
+				}
+			});
+		}
+		i = 0;
+		ret = false;
+		// check if date from datapicker is in the cache otherwise return false
+		// the .ajax returns only days that exists
+		for(i in cached_days) {
+			if(year_month_day == cached_days[i]) {
+				ret = true;
+			}
+		}
+		return [ret, ''];
+	}
+</script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-   <div id="bg-site"></div>
-
-    <!-- CAPA SITE -->
-    <div id="capa-site">
-
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-
-        <div class="topo-programa">
-       
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          <div id="horario">
-            <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
-          </div>         
-        </div>
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-
+<div id="bg-site"></div>
+<div id="capa-site">
+  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+  <!-- BARRA SITE -->
+  <div id="barra-site">
+    <div class="topo-programa">
+      <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
+      <?php if(isset($program) && $program->id > 0): ?>
+      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+      <?php endif;?>
+      <div id="horario">
+        <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
-      <!-- /BARRA SITE -->
-
-      <!-- MIOLO -->
-      <div id="miolo">
-      
-        <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
-
-        <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina">
-
-          <!-- CAPA -->
-          <div class="capa grid3">
-
-            <!-- ESQUERDA -->
-            <div id="esquerda" class="grid2">
-
-              <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
-                <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo $asset->getDescription() ?></p>
-                <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
-                  <!--
-                  <div class="acessibilidade">
-                    <a href="#" class="zoom">+A</a>
-                    <a href="#" class="zoom">-A</a>
-                  </div>
-                  -->
-
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
-
-                </div>
-                
-                <div class="texto">
-                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-                </div>
-               
-                                          
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
-
-              </div>
-              <!-- /NOTICIA INTERNA -->
-              
-              
-            </div>
-            <!-- /ESQUERDA -->
-            
-            <!-- DIREITA -->
-            <div id="direita" class="grid1">
-
-              
-              <!-- BOX PLAYLISTS-->
-              <div class="span4 direita">
-            <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-            <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
-            <script type="text/javascript">
-              //<![CDATA[
-              $(document).ready(function(){
-              
-                var Playlist = function(instance, playlist, options) {
-                  
-                  var self = this;
-              
-                  this.instance = instance; // String: To associate specific HTML with this playlist
-                  this.playlist = playlist; // Array of Objects: The playlist
-                  this.options = options; // Object: The jPlayer constructor options for this playlist
-              
-                  this.current = 0;
-              
-                  this.cssId = {
-                    jPlayer: "jquery_jplayer_",
-                    interface: "jp_interface_",
-                    playlist: "jp_playlist_"
-                  };
-                  this.cssSelector = {};
-              
-                  $.each(this.cssId, function(entity, id) {
-                    self.cssSelector[entity] = "#" + id + self.instance;
-                  });
-              
-                  if(!this.options.cssSelectorAncestor) {
-                    this.options.cssSelectorAncestor = this.cssSelector.interface;
-                  }
-              
-                  $(this.cssSelector.jPlayer).jPlayer(this.options);
-              
-                  $(this.cssSelector.interface + " .jp-previous").click(function() {
-                    self.playlistPrev();
-                    $(this).blur();
-                    return false;
-                  });
-              
-                  $(this.cssSelector.interface + " .jp-next").click(function() {
-                    self.playlistNext();
-                    $(this).blur();
-                    return false;
-                  });
-                };
-              
-                Playlist.prototype = {
-                  displayPlaylist: function() {
-                  var self = this;
-                  $(this.cssSelector.playlist + " ul").empty();
-                  for (i=0; i < this.playlist.length; i++) {
-                    var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                    listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a>";
-              
-                    // Create links to free media
-                    if(this.playlist[i].free) {
-                      var first = true;
-                      listItem += "<div class='jp-free-media'>(";
-                      $.each(this.playlist[i], function(property,value) {
-                        if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                          if(first) {
-                            first = false;
-                          } else {
-                            listItem += " | ";
-                          }
-                          listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
-                        }
-                      });
-                      listItem += ")</span>";
-                    }
-                
-                    listItem += "</li>";
-                
-                    // Associate playlist items with their media
-                    $(this.cssSelector.playlist + " ul").append(listItem);
-                    $(this.cssSelector.playlist + "_item_" + i).data("index", i).click(function() {
-                      var index = $(this).data("index");
-                      if(self.current !== index) {
-                        self.playlistChange(index);
-                      } else {
-                        $(self.cssSelector.jPlayer).jPlayer("play");
-                      } 
-                      $(this).blur();
-                      return false;
-                    });
-                 
-                    // Disable free media links to force access via right click
-                    if(this.playlist[i].free) {
-                      $.each(this.playlist[i], function(property,value) {
-                        if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                          $(self.cssSelector.playlist + "_item_" + i + "_" + property).data("index", i).click(function() {
-                            var index = $(this).data("index");
-                            $(self.cssSelector.playlist + "_item_" + index).click();
-                            $(this).blur();
-                            return false;
-                          });
-                        }
-                      });
-                    }
-                  }
-                },
-                playlistInit: function(autoplay) {
-                  if(autoplay) {
-                    this.playlistChange(this.current);
-                  } else {
-                    this.playlistConfig(this.current);
-                  }
-                },
-                playlistConfig: function(index) {
-                  $(this.cssSelector.playlist + "_item_" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
-                  $(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
-                  this.current = index;
-                  $(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
-                },
-                playlistChange: function(index) {
-                  this.playlistConfig(index);
-                  $(this.cssSelector.jPlayer).jPlayer("play");
-                },
-                playlistNext: function() {
-                  var index = (this.current + 1 < this.playlist.length) ? this.current + 1 : 0;
-                  this.playlistChange(index);
-                },
-                playlistPrev: function() {
-                  var index = (this.current - 1 >= 0) ? this.current - 1 : this.playlist.length - 1;
-                  this.playlistChange(index);
-                }
-              };
-              
-              <?php
-                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-                $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
-              ?>
-              var audioPlaylist = new Playlist("1",
-              [
-                <?php foreach($audios as $k=>$d): ?>
-                {
-                  name:"<?php echo $d->getTitle(); ?>",
-                  mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-                }<?php if($k < (count($audios) - 1)): ?>,<?php endif;?>
-                
-                <?php endforeach; ?>
-              ],
-              {
-                ready: function()
-                {
-                  audioPlaylist.displayPlaylist();
-                  audioPlaylist.playlistInit(); // Parameter is a boolean for autoplay.
-                },
-                ended: function()
-                {
-                  audioPlaylist.playlistNext();
-                },
-                play: function()
-                {
-                  $(this).jPlayer("pauseOthers");
-                },
-                swfPath: "/js/audioplayer",
-                supplied: "mp3"
-              });
-            });
-            //]]>
-          </script>
-          
-            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-            <div class="jp-audio">
-              <div class="jp-type-playlist">
-                <div id="jp_interface_1" class="jp-interface" style="height:94px;">
-                  <ul class="jp-controls">
-                    <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
-                    <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
-                    <li><a href="#" class="jp-stop" tabindex="1" style="left:121px;top:16px;">stop</a></li>
-                    <li><a href="#" class="jp-mute" tabindex="1" style="left:166px;top:22px;">mute</a></li>
-                    <li><a href="#" class="jp-unmute" tabindex="1" style="left:166px;top:22px;">unmute</a></li>
-                    <li><a href="#" class="jp-previous" tabindex="1" style="left:17px;top:16px;">previous</a></li>
-                    <li><a href="#" class="jp-next" tabindex="1" style="left:84px;top:16px;">next</a></li>
-                  </ul>
-                  <div class="jp-progress" style="left:20px;top:56px; width: 85%;">
-                    <div class="jp-seek-bar">
-                      <div class="jp-play-bar"></div>
-                    </div>
-                  </div>
-                  <div class="jp-volume-bar" style="left:193px;top:27px;">
-                    <div class="jp-volume-bar-value"></div>
-                  </div>
-                  <div class="jp-current-time" style="left:20px;top:72px;"></div>
-                  <div class="jp-duration" style="left:20px;top:72px;"></div>
-                </div>
-                <div id="jp_playlist_1" class="jp-playlist">
-                  <ul>
-                    <!-- The method Playlist.displayPlaylist() uses this unordered list -->
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-              <!-- /BOX PLAYLISTS -->
-
-              <!-- BOX PADRAO -->
-              <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
-              <!-- /BOX PADRAO -->
-              
-              <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
-                <!-- cmais-assets-300x250 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("culturafm-300x250");
-                </script>
-              </div>
-              <!-- / BOX PUBLICIDADE -->
-              <?php /*
-              <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
-              <?php if(count($relacionados) > 0): ?>
-              <!-- BOX PADRAO Mais recentes -->
-              <div class="box-padrao grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>relacionadas</h4>
-                    <a href="#" class="rss" title="rss"></a>
-                  </div>
-                </div>
-                <?php if(count($relacionados) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $relacionados)) ?>
-              </div>
-              <!-- BOX PADRAO Mais recentes -->
-              <?php endif; ?>
-               * 
-               */
-              ?>
-              <?php /*
-              <?php if(isset($displays["destaque-noticias-recentes"])): ?>
-              <!-- BOX PADRAO Mais recentes -->
-              <div class="box-padrao grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>+ recentes</h4>
-                    <a href="/feed" class="rss" title="rss" style="display: block"></a>
-                  </div>
-                </div>
-                <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
-              </div>
-              <!-- BOX PADRAO Mais recentes -->
-              <?php endif; ?>
-
-              <?php if(isset($displays["destaque-categorias"])): ?>
-              <!-- BORDA 02 -->
-              <div class="box-padrao box-borda grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4><?php if(isset($displays["destaque-categorias"])) echo $displays["destaque-categorias"][0]->Block->getTitle() ?></h4>
-                  </div>
-                </div>
-                <div class="conteudo top tipo2">
-                  <?php if(isset($displays["destaque-categorias"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-categorias"])) ?>
-                </div>
-                <div class="detalhe-borda grid1"></div>
-              </div>
-              <!-- /BORDA 02 -->
-              <?php endif; ?>
-              
-              <?php if(isset($displays["destaque-links"])): ?>
-              <!-- BOX PADRAO + Visitados -->
-              <div class="box-padrao mais-visitados grid1">
-                <div class="topo">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4><?php if(isset($displays["destaque-links"])) echo $displays["destaque-links"][0]->Block->getTitle() ?></h4>
-                  </div>
-                </div>
-                <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"])) ?>
-              </div>
-              <!-- /BOX PADRAO + Visitados -->
-              <?php endif; ?>
-              
-               * 
-               */
-              ?>
-            </div>
-            <!-- /DIREITA -->
-          </div>
-          <!-- /CAPA -->
-        </div>
-        <!-- /CONTEUDO PAGINA -->
-
-      </div>
-      <!-- /MIOLO -->
     </div>
-    <!-- / CAPA SITE -->
-    
+    <?php if(isset($siteSections)): ?>
+    <!-- box-topo -->
+    <div class="box-topo grid3">
+      <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
 
+      <?php if(isset($section)): ?>
+      <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+      <div class="navegacao txt-10">
+        <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
+        <span>&gt;</span>
+        Colunistas
+        <span>&gt;</span>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle() ?></a>
+      </div>
+      <?php endif;?>
+      <?php endif;?>
+    </div>
+    <!-- /box-topo -->
+    <?php endif;?>
+  </div>
+  <!-- /BARRA SITE -->
+  <!-- MIOLO -->
+  <div id="miolo">
+  	<?php include_partial_from_folder('blocks','global/shortcuts') ?>
+  	
+    <!-- CONTEUDO PAGINA -->
+    <div id="conteudo-pagina">
+      <!-- CAPA -->
+      <div class="capa grid3">
+        <!--ESQUERDA-->
+        <div class="grid2" id="esquerda">
+        	<h3 style="float:none" class="tit-pagina grid2"><?php echo $asset->getTitle(); ?></h3>
+        	<p><?php echo $asset->getDescription() ?></p>
+            <div class="assinatura grid2">
+              <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+              <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+            </div>
+        	<div style="text-align: left"><?php echo html_entity_decode($asset->AssetContent->render()) ?></div>
+        	
+          <!-- comentario facebook -->
+          <div class="comentario-fb grid2" style="display:block">
+            <fb:comments href="<?php echo $uri ?>" numposts="3" width="610" publish_feed="true"></fb:comments>
+            <hr />
+          </div>
+          <!-- /comentario facebook -->
+          <?php
+            $sections = $asset->getSections();
+            $section = $sections[0];
+            $assets = $section->getAssets();
+          ?>
+          <?php if(count($assets) > 1): ?> 
+          <a class="voltar" href="javascript:history.back()">&lsaquo;&lsaquo; voltar</a>
+          <?php endif; ?>
+        </div>
+        <!--/ESQUERDA-->
+        <!-- DIREITA -->
+        <div class="grid1" id="direita">
+        	<?php
+	          $displays = array();
+	          
+	          $blocks = Doctrine_Query::create()
+	            ->select('b.*')
+	            ->from('Block b, Section s')
+	            ->where('b.section_id = s.id')
+	            ->andWhere('s.slug = ?', $section->getSlug())
+	            ->andWhere('s.site_id = ?', $site->id)
+							->execute();
+							
+			      if(count($blocks) > 0){
+			        foreach($blocks as $b){
+			          $displays["sobre"] = $b->retriveDisplays();
+			        }
+			      }
+        	?>
+        	<?php if(isset($displays['sobre'])): ?>
+        		<?php if(count($displays['sobre']) > 0): ?>
+          <!-- destaque secundario -->	
+          <div id="destaque" class="uma-coluna destaque grid1">
+            <ul class="abas-conteudo conteudo">
+              <li style="display: block; height: auto;" id="bloco1" class="filho">
+              	<a class="media" href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre'][0]->getTitle() ?>">
+              		<img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
+              	</a>
+              	<a href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['sobre'][0]->getTitle() ?>"><?php echo $displays['sobre'][0]->getTitle() ?></a>
+              	<p><?php echo $displays['sobre'][0]->getDescription() ?></p></li>
+            </ul>
+          </div>
+          <!-- /destaque secundario -->
+          	<?php endif; ?>
+          <?php endif; ?>
+          
+          <?php //include_partial_from_folder('sites/culturafm','global/programacaododia') ?>
+          <?php include_partial_from_folder('sites/culturafm','global/recentesColunista', array('asset' => $asset)) ?>
+          
+          <!-- BOX PUBLICIDADE -->
+          <div class="box-publicidade grid1">
+            <!-- culturafm-300x250 -->
+            <script type="text/javascript">
+				GA_googleFillSlot("culturafm-300x250");
+
+            </script><script src="http://pubads.g.doubleclick.net/gampad/ads?correlator=992806083932014&amp;output=json_html&amp;callback=GA_googleSetAdContentsBySlotForSync&amp;impl=s&amp;client=ca-pub-6681834746443470&amp;slotname=culturafm-300x250&amp;page_slots=culturafm-300x250&amp;cookie=ID%3D92f85a2d13e3fe88%3AT%3D1334062340%3AS%3DALNI_MZm08l6j7VTImPqL37xIU1-3L0eEQ&amp;url=http%3A%2F%2Fculturafm.cmais.com.br%2Fguia-do-ouvinte&amp;ref=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fculturafm%2Fpara-ouvir&amp;lmt=1347992705&amp;dt=1347992705946&amp;cc=100&amp;biw=1903&amp;bih=864&amp;adk=4276249504&amp;adx=1153&amp;ady=317&amp;ifi=1&amp;oid=3&amp;u_tz=-180&amp;u_his=5&amp;u_java=true&amp;u_h=1080&amp;u_w=1920&amp;u_ah=972&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=6&amp;u_nmime=87&amp;flash=11.2.202&amp;gads=v2&amp;ga_vid=1364026977.1347992706&amp;ga_sid=1347992706&amp;ga_hid=1433285561"></script>
+            <!--
+            <div id="google_ads_div_culturafm-300x250_ad_wrapper">
+              <div style="display:inline-block;" id="google_ads_div_culturafm-300x250_ad_container">
+                <ins style="width: 300px; height: 250px; display: inline-table; position: relative; border: 0px none;"><ins style="width: 300px; height: 250px; display: block; position: relative; border: 0px none;"><iframe width="300" scrolling="no" height="250" frameborder="0" id="google_ads_iframe_culturafm-300x250" name="google_ads_iframe_culturafm-300x250" marginwidth="0" marginheight="0" style="border: 0px none; position: absolute; top: 0px; left: 0px;"></iframe></ins></ins>
+              </div>
+            </div>
+            <script>
+				GA_googleCreateDomIframe("google_ads_div_culturafm-300x250_ad_container", "culturafm-300x250");
+
+            </script>
+            -->
+          </div>
+          <!-- / BOX PUBLICIDADE -->
+        </div>
+        <!-- /DIREITA -->
+      </div>
+      <!-- /CAPA -->
+    </div>
+    <!-- /CONTEUDO PAGINA -->
+  </div>
+  <!-- /MIOLO -->
+</div>
