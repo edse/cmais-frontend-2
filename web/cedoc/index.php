@@ -33,6 +33,15 @@
   </head>
 <body>
 
+<div class="row-fluid">
+  <ul class="nav nav-pills">
+    <li class=""><a href="./index.php" title="Início">Início</a></li>
+    <li class=""><a href="./thesaurus/index.html" title="Thesaurus">Thesaurus</a></li>
+    <li class=""><a href="./identidade/index.html" title="Identidade">Identidade</a></li>
+    <li class=""><a href="./sobre.html" title="Sobre o projeto">Sobre o projeto</a></li>
+  </ul>
+</div>
+
 <!-- Place this tag where you want both of the search box and the search results to render -->
 <gcse:search></gcse:search>
 <?php
