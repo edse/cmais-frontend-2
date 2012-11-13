@@ -90,7 +90,7 @@ if(isset($pager)){
 						<?php if(isset($pager)): ?>
 							<?php foreach($pager as $d): ?>
 						<div class="bg-cinza">
-							<p><strong><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a></strong><br></p>
+							<p><strong><a href="<?php echo "/colunistas/" . $section->getSlug() . '/' . $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a></strong><br></p>
 						</div>
 							<?php endforeach; ?>
 						<?php endif; ?>

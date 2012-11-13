@@ -147,7 +147,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .box-interna p,
 .box-interna .assinatura,
 .box-interna .texto { padding:0 10px; }
-.box-interna .texto { padding-bottom:20px; }
+.box-interna .texto { padding-bottom:1px; margin-bottom:0; }
 .assinatura { width:600px; }
 .box-compartilhar p { background:none; }
 .box-interna img { max-width:600px }
@@ -186,3 +186,5 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .regulamento li ul { margin:-20px 0 20px 20px; }
 .regulamento li ul li { font-size:14px; }
 .regulamento li a { color:#2B8DB2; }
+.contato form .concordo { clear: both;}
+.contato form .concordo .check { width: 15px; }

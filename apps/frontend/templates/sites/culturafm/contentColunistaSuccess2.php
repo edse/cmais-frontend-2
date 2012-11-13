@@ -6,13 +6,13 @@ $(function(){
   //hover states on the static widgets
   $('#dialog_link, ul#icons li').hover(
     function() { $(this).addClass('ui-state-hover'); }, 
-    function() { $(this).removeClass('ui-state-hover'); }
+    function() { $(this).removeClass('ui-state-hover'); } 
   );
   
   $('.comentario-fb').show();
 
 });
-</script>   
+</script> 
 <script type="text/javascript">
   $(function() {
     
@@ -74,7 +74,7 @@ $(function(){
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
- 
+
       </div>
       <!-- /BARRA SITE -->
 
@@ -115,37 +115,13 @@ $(function(){
                 <div class="texto">
                   <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                 </div>
-                
-                <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
-                <?php if(count($relacionados) > 0): ?>
-                  <!-- SAIBA MAIS -->
-                  <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                    <div id="saibamais">                                                            
-                    <h4>saiba +</h4>                                                            
-                    <ul class="conteudo">
-                      <?php foreach($relacionados as $k=>$d): ?>
-                        <li style="width: auto;">
-                          <a class="titulos" href="<?php echo $d->retriveUrl()?>" style="width: auto;"><?php echo $d->getTitle()?></a>
-                          <!--
-                          <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
-                            <a href="<?php echo $d->retriveUrl()?>" class="img-90x54" style="width: auto">
-                              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
-                            </a>
-                          <?php endif; ?>
-                          -->
-                          <!--p><?php echo $d->getDescription()?></p-->
-                        </li>
-                      <?php endforeach; ?>
-                    </ul>
-                   </div>
-                  </div>
-                  <!-- SAIBA MAIS -->
-                <?php endif; ?>
-
+               
+                                          
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
+              
               
             </div>
             <!-- /ESQUERDA -->
@@ -153,14 +129,8 @@ $(function(){
             <!-- DIREITA -->
             <div id="direita" class="grid1">
 
-              <!-- BOX PADRAO -->
-              <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
-              <!-- /BOX PADRAO -->
-                         
-            <?php $relacionados = $asset->retriveRelatedAssetsByRelationType(4); ?>
-              <?php if(count($relacionados) > 0): ?>
-              teste
-              <!-- /BOX PLAYLISTS -->
+              
+              <!-- BOX PLAYLISTS-->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
             <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
@@ -322,9 +292,9 @@ $(function(){
                 supplied: "mp3"
               });
             });
-           //]]>
+            //]]>
           </script>
-                             
+          
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-audio">
               <div class="jp-type-playlist">
@@ -357,8 +327,11 @@ $(function(){
                 </div>
               </div>
             </div>
-             <!-- /BOX PLAYLISTS --> 
-          <?php endif; ?>
+              <!-- /BOX PLAYLISTS -->
+
+              <!-- BOX PADRAO -->
+              <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
+              <!-- /BOX PADRAO -->
               
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
@@ -368,7 +341,7 @@ $(function(){
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
-
+              <?php /*
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
@@ -384,7 +357,10 @@ $(function(){
               </div>
               <!-- BOX PADRAO Mais recentes -->
               <?php endif; ?>
-
+               * 
+               */
+              ?>
+              <?php /*
               <?php if(isset($displays["destaque-noticias-recentes"])): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
@@ -430,7 +406,10 @@ $(function(){
               </div>
               <!-- /BOX PADRAO + Visitados -->
               <?php endif; ?>
-
+              
+               * 
+               */
+              ?>
             </div>
             <!-- /DIREITA -->
           </div>

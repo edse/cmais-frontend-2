@@ -489,7 +489,7 @@ class ajaxActions extends sfActions
         $return .= '</ul><ul class="lista">';
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
-        $return .= '</ul><div class="botoes"><a href="http://univesptv.cmais.com.br/grade?c=univesptv">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
+        $return .= '</ul><div class="botoes"><a href="http://univesptv.cmais.com.br/programacao">Grade completa</a><a href="http://univesptv.cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
       }
       elseif($request->getParameter('content') == "multicultura"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
