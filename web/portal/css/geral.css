@@ -241,7 +241,7 @@ z-index: 10000;
 #menu-portal-2 ul.abas{width:622px; float:left;background: none;}
 #menu-portal-2 li{float:left; width:auto; height: auto;}
 
-#menu-portal-2 .abas li{margin-right:7px!important;}
+#menu-portal-2 .abas li{margin-right:0px!important;}
 #menu-portal-2 li a { font-weight:bold; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;  padding:10px 7px 0 7px; text-decoration:none; position:relative; display:block; text-align:left; height:26px; }
 
 #menu-portal-2 .busca-portal a { width:220px;}  
