@@ -159,7 +159,7 @@ $(function(){
                          
             <?php $relacionados = $asset->retriveRelatedAssetsByRelationType(5); ?>
               <?php if(count($relacionados) > 0): ?>
-              
+              teste
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
