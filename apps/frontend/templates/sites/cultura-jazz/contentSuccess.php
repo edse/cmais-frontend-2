@@ -12,7 +12,7 @@ $(function(){
   $('.comentario-fb').show();
 
 });
-</script> 
+</script>   
 <script type="text/javascript">
   $(function() {
     
@@ -74,7 +74,7 @@ $(function(){
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
-
+ 
       </div>
       <!-- /BARRA SITE -->
 
@@ -157,9 +157,9 @@ $(function(){
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
                          
-            <?php $relacionados = $asset->retriveRelatedAssetsByRelationType(5); ?>
+            <?php $relacionados = $asset->retriveRelatedAssetsByRelationType(4); ?>
               <?php if(count($relacionados) > 0): ?>
-              
+              teste
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
