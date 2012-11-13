@@ -7,7 +7,7 @@
             ->andWhere('a.site_id = ?', 267)
             ->andWhere('a.asset_type_id = 1')
             ->andWhere('s2.id = 692')
-            ->orderBy('a.order desc')
+  
             //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
             //->orderBy('a.id desc')
             ->limit(1)
