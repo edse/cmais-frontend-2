@@ -157,8 +157,8 @@ $(function(){
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
                          
-            <?php $relacionados = $asset->retriveRelatedAssetsByRelationType(4); ?>
-              <?php if(count($relacionados) > 0): ?>
+            <?php $relacionados_audio = $asset->retriveRelatedAssetsByRelationType(5); ?>
+              <?php if(count($relacionados_audio) > 0): ?>
               teste
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
