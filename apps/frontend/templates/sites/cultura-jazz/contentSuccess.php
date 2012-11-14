@@ -156,11 +156,11 @@ $(function(){
               <!-- BOX PADRAO -->
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
-                    teste1     
-            <?php $relacionados_audio = $asset->retriveRelatedAssetsByAssetType(5); ?>
+                        
+            <?php $relacionados_audio = $asset->retriveRelatedAssetsByAssetTypeId(5); ?>
             <?php echo $asset->getTitle() ?>
               <?php if(count($relacionados_audio) > 0): ?>
-            teste3
+            
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
