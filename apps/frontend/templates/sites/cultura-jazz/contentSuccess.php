@@ -158,9 +158,9 @@ $(function(){
               <!-- /BOX PADRAO -->
                     teste1     
             <?php $relacionados_audio = $asset->retriveRelatedAssetsByRelationType(5); ?>
-            teste2
+            <?php echo $asset->getTitle() ?>
               <?php if(count($relacionados_audio) > 0): ?>
-            
+            teste3
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
