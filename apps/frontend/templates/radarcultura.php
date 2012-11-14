@@ -85,7 +85,9 @@
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
 
-    <div id="fb-root"></div>
+    <div id="fb-root">
+      <script src="http://connect.facebook.net/en_US/all.js" ></script>
+    </div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
