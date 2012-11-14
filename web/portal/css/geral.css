@@ -839,3 +839,4 @@ input[type=submit], input.enviar {cursor:pointer !important;}
 ::-webkit-scrollbar { height: 12px;	width: 12px; background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white)); }
 ::-webkit-scrollbar-thumb { background: #c2c2c2; -webkit-border-radius: 1ex;}
 ::-webkit-scrollbar-corner { background: #fff;}
+div.jp-playlist ul{text-align:left;}
