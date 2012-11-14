@@ -346,7 +346,7 @@ $(function(){
                   <div class="jp-volume-bar" style="left:193px;top:27px;">
                     <div class="jp-volume-bar-value"></div>
                   </div>
-                  <div class="jp-current-time" style="left:20px;top:72px;"></div>
+                  <div class="jp-current-time" style="left:0px;top:72px;"></div>
                   <div class="jp-duration" style="left:20px;top:72px;"></div>
                 </div>
                 <div id="jp_playlist_1" class="jp-playlist">
