@@ -1,6 +1,16 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
+    <!-- Le styles -->
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
     <script src="/portal/js/bootstrap/bootstrap.js"></script>
     
     <!--container-->
@@ -9,42 +19,46 @@
       <?php include_partial_from_folder('sites/radarcultura', 'global/modal-feedback') ?>
         
       <!--topo menu/alert/logo-->
-      <div class="row-fluid" style="margin: 10px 0 0 0;">
-        <div id="socialAlertOk" class="alert alert-info alert-in indexRadar hide">
+      <div class="row-fluid" style="margin:10px 0 0 0;">
+        <div id="socialAlertOk" class="alert alert-info alert-in hide">
           <span class="badge"><strong>Obrigado pela sua participação!</strong></span><span> Em breve, sua playlist irá ao ar no RadarCultura. Fique ligado!</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div id="socialAlertError" class="alert alert-error alert-in hide">
           <span class="badge"><strong>Ocorreu um erro!</strong></span><span> Por favor, tente novamente em alguns instantes.</span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
-      </div>  
+      </div>
       
       <div class="row-fluid">  
         <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
       </div>
         <!--topo menu/alert/logo-->
-      
+      <!--breadcrumbs-->
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
+   
       <!--topo Playlits/contagem-->
-      <div class="row-fluid">
+      <div id="row-fluid">
         <!--Titulo-->
-        <div class="playlist musica">
-         <h1><?php echo $section->getTitle()?><br/>
-         <small><?php echo $section->getDescription() ?></small>
-         </h1>
+        <div class="musicas">
+           <h1>
+            <?php echo $section->getTitle()?> <small><?php echo $section->getDescription() ?></small>
+          </h1> 
+          
           <!--contagem-->
           <div class="pull-right">
-            <div class="btn-group">
-              <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>
-              <a href="/atendidas" class="btn btn-large btn-info"><i class="icon-list icon-white"></i> Lista Playlists Atendidas</a>
-            </div>
-               
+            <a href="javascript:;" class="btn btn-large btn-info" id="socialBtn" data-toggle="modal" data-target="#modal"><i class="icon-share-alt icon-white"></i> Crie sua playlist</a>     
           </div>
           <!--/contagem-->
+         
         </div>
         <!--/Titulo-->
         
+      </div>
+      <!--/topo Playlists/contagem-->
+      
+      
+      <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
 
-          <?php include_partial_from_folder('sites/radarcultura', 'global/modal-playlist');?>
-        
+      <div class="container">  
       <!--Centro pagina-->
       <div class="row-fluid musicas" >
         <!--coluna esquerda-->
@@ -56,7 +70,7 @@
                   <th>Nome</th>
                   <th>Autor</th>
                   <th style="text-align: right;"></th>
-                </tr> 
+                </tr>
               </thead>
             <?php if(count($pager) > 0): ?>
               <?php
@@ -66,7 +80,7 @@
                 <tr>
                   <td><?php echo $d->getTitle(); ?></td>
                   <td><?php echo $d->AssetContent->getAuthor(); ?></td>
-                  <td><a href="<?php echo url_for('@homepage') ?><?php echo $section->getSlug() . '/' . $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+                  <td><a href="<?php echo url_for('@homepage') ?><?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
                 </tr>
               <?php endforeach; ?>
             <?php endif; ?>
@@ -75,7 +89,7 @@
         </div>
         <!--/coluna esquerda-->
         <!--coluna direita-->
-        <div class="span4 direita playlist">
+        <div class="span4 direita">
           <!--sobre o programa-->
           <?php
               $displays = array();
@@ -146,9 +160,19 @@
          
       </div>
       <!--/centro pagina-->
-      <!--paginador-->
-      <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-      <!--paginador-->
+      <!--paginaçao-->
+       <?php if ($pager->haveToPaginate()): ?>
+        <div class="pagination pagination-centered">
+          <ul>
+            <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>
+            <?php foreach ($pager->getLinks() as $page): ?>
+              <li<?php if ($page == $pager->getPage()): ?> class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);" title="Página <?php echo $page?>"><?php echo $page?></a></li>
+            <?php endforeach; ?>
+            <li<?php if($pager->getPage() == $pager->getLastPage()): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima">»</a></li>          
+          </ul>
+        </div>
+        <?php endif; ?>
+        <!--/paginaçao-->
       <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
@@ -176,7 +200,6 @@
           }, "slow");
         });
       });
-
       function goToPage(i){
         $("#page").val(i);
         //$("#letter").val("");
@@ -188,4 +211,3 @@
         $("#page_form").submit();
       }
     </script>
-    <!--/form paginacao-->  
