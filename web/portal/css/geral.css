@@ -647,7 +647,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /**** CHAMADA ****/
 
 /******** RODAPE-PORTAL ********/
-#rodape-portal { margin-top:50px; }
+#rodape-portal { margin-top:50px;clear:both; }
 .capa-voltar-topo {  width:970px; margin:0 auto; position:relative; z-index:10; margin-bottom:-15px; }
 .voltar-topo { display:block; overflow:hidden; width:96px; background:url(../images/bg-voltar-topo.jpg) repeat-x; height:36px; padding:4px 0 0 4px; font-size:10px; color:#fff; line-height:16px; }
 .voltar-topo span { background:url(../images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; }
