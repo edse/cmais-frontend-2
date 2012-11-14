@@ -107,9 +107,9 @@ body { background:#ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 .menu-calendario .proximo {background-position: 0 -108px;}
 
 div.jp-type-playlist div.jp-playlist a:hover {
-  color:#0d88c1;}
+  color:#0d88c1!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
-  color:#0d88c1;
+  color:#0d88c1 !important;
 }
 
 /* NOVO */
