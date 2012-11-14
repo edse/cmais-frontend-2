@@ -358,6 +358,7 @@ $(function(){
                 </div>
               </div>
             </div>
+          </div>
              <!-- /BOX PLAYLISTS --> 
           <?php endif; ?>
               
