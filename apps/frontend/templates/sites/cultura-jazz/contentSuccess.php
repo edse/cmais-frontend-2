@@ -158,6 +158,7 @@ $(function(){
               <!-- /BOX PADRAO -->
                          
             <?php $relacionados_audio = $asset->retriveRelatedAssetsByRelationType(5); ?>
+            <?php print_r($relacionados_audio) ?>
               <?php if(count($relacionados_audio) > 0): ?>
               teste
               <!-- /BOX PLAYLISTS -->
