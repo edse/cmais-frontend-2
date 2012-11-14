@@ -328,7 +328,7 @@ $(function(){
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-audio">
               <div class="jp-type-playlist">
-                <div id="jp_interface_1" class="jp-interface" style="height:94px;width: 306px;">
+                <div id="jp_interface_1" class="jp-interface" style="height:94px;width: 306px;border: none;">
                   <ul class="jp-controls">
                     <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
                     <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
