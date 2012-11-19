@@ -413,7 +413,6 @@
                 required: true,
                 minlength: 2
             },
-        
             captcha: {
               required: true,
               remote: "/portal/js/validate/demo/captcha/process.php"
@@ -431,19 +430,15 @@
             nome_mae:"Digite um nome válido",
             nome_parente:"Digite um nome válido",
             area_parente:"Digite uma área válida",
-            
             rg:"Digite uma rg válido",
             cpf:"Digite uma cpf válido",
             titulo_de_eleitor:"Digite um título válido",
             zona:"Digite uma zona válida",
-            
             curso:"Digite um curso válido",
             instituto_de_ensino:"Digite uma instituição válida",
             ano_semestre:"Digite um ano válido",
             horario:"Digite uma hora válida",
             formatura:"Digite uma data válida",
-            
-            
             captcha: "Digite corretamente o código que está ao lado."
           },
           success: function(label){
