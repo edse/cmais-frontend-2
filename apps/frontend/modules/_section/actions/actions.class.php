@@ -506,6 +506,9 @@ class _sectionActions extends sfActions
               ->orderBy('s.display_order')
               ->execute();
           }
+          elseif($this->section->Site->getSlug() == "culturafm"){
+           $this->setLayout();
+          }
           else{
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
