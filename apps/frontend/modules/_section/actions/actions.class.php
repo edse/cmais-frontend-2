@@ -507,7 +507,7 @@ class _sectionActions extends sfActions
               ->execute();
           }
           elseif($this->section->Site->getSlug() == "culturafm"){
-           $this->setLayout();
+           $this->setLayout('layout');
           }
           else{
             $this->siteSections = Doctrine_Query::create()
