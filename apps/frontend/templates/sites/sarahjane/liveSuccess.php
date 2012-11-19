@@ -147,24 +147,13 @@ $(function(){
               <p>Acompanhe as histórias da jornalista investigativa e ex-companheira do Doutor (de Doctor Who) em suas aventuras para defender a Terra de ameaças alienígenas, sempre com a ajuda do robô K-9 e de uma galerinha muito esperta. Ah, e também dá pra assistir à série com o áudio em inglês: basta clicar em “Áudio original”, acima do vídeo!</p>
             </div>
             <!-- /NOTICIA INTERNA -->
-            <div class="box-compartilhar grid2">
-              <div style="width: auto;" class="btn-compartilhar">
-                <p class="compartilhar">Compartilhar</p>
-                <div style="display:block; width:545px;" class="face">
-                  <div style="display:block; float: left; margin-right:10px;">
-                    <div style="height: 20px; width: 32px; display: inline-block; text-indent: 0pt; margin: 0pt; padding: 0pt; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;" id="___plusone_0">
-                      <iframe width="100%" scrolling="no" frameborder="0" allowtransparency="true" hspace="0" id="I1_1328286265338" marginheight="0" marginwidth="0" name="I1_1328286265338" src="https://plusone.google.com/_/+1/fastbutton?url=http%3A%2F%2Ftvcultura.cmais.com.br%2Frodaviva&amp;size=medium&amp;count=false&amp;annotation=&amp;hl=pt-BR&amp;jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3DO8v2EQ8nyPM.en.%2Fsv%3D1%2Fam%3D!uXA1SJUHioGIFdxJYA%2Fd%3D1%2F#id=I1_1328286265338&amp;parent=http%3A%2F%2Ftvcultura.cmais.com.br&amp;rpctoken=425021818&amp;_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart" style="position: static; left: 0pt; top: 0pt; width: 32px; margin: 0px; border-style: none; height: 20px; visibility: visible;" tabindex="-1" vspace="0" title="+1">
-                      </iframe>
-                    </div>
-                  </div>
-                  <fb:like show_faces="true" width="75" layout="button_count" send="false" href="https://www.facebook.com/pages/Dr-Who/341430049210852" class=" fb_edge_widget_with_comment fb_iframe_widget">
-                    
-                  </fb:like>
-                  <iframe scrolling="no" frameborder="0" title="Twitter Tweet Button" style="width: 110px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="http://platform.twitter.com/widgets/tweet_button.1326407570.html#_=1328286265242&amp;_version=2&amp;count=horizontal&amp;enableNewSizing=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Ftvcultura.cmais.com.br%2Frodaviva&amp;size=m&amp;text=Roda%20Viva%20-%20cmais%2B%20O%20portal%20de%20conte%C3%BAdo%20da%20Cultura&amp;url=http%3A%2F%2Ftvcultura.cmais.com.br%2Frodaviva&amp;via=rodaviva" allowtransparency="true">
-                  </iframe>
-                </div>
-              </div>
-            </div>
+            <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+
+              <style type="text/css">
+                #esquerda .box-compartilhar .comentar { text-indent:-9999px; }
+                #esquerda .box-compartilhar .comentar span {display:none;}  
+                #esquerda .btn-compartilhar {float:left;}
+              </style>
               
             </div>
             <!-- /ESQUERDA -->
