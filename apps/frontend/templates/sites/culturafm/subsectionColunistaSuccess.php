@@ -105,12 +105,17 @@ if(isset($pager)){
 					<div id="destaque" class="uma-coluna destaque grid1">
 						<ul class="abas-conteudo conteudo">
 							<li style="display: block; height: auto;" id="bloco1" class="filho">
-								<a class="media" href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre'][0]->getTitle() ?>"> 
-									<img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
-								</a>
-								<a href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['sobre'][0]->getTitle() ?>"><?php echo $displays['sobre'][0]->getTitle() ?></a>
-									<p><?php echo $displays['sobre'][0]->getDescription() ?></p>
-								</li>
+							  <img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
+								<p class="titulos"><?php echo $displays['sobre'][0]->getTitle() ?></p>
+								<p><?php echo $displays['sobre'][0]->getDescription() ?></p>
+						  </li>
+							<!--li style="display: block; height: auto;" id="bloco1" class="filho">
+               <a class="media" href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre'][0]->getTitle() ?>"> 
+                 <img src="<?php echo $displays['sobre'][0]->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $displays['sobre'][0]->getTitle() ?>">
+               </a>
+               <a href="<?php echo $displays['sobre'][0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['sobre'][0]->getTitle() ?>"><?php echo $displays['sobre'][0]->getTitle() ?></a>
+                 <p><?php echo $displays['sobre'][0]->getDescription() ?></p>
+              </li-->
 						</ul>
 						<?php
 						/*

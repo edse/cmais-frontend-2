@@ -50,10 +50,6 @@ body { background:#ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 
 .semBack{background:none !important;}
 
-.jp-type-playlist{
-  margin:20px 0px 0px 0px
-}
-
 .edicoes{
   background-color: #fff;
   overflow: auto;
@@ -493,5 +489,5 @@ h3 { margin-bottom:20px}
 
 #menuFloat{margin:0;}
 div.jp-playlist, div.jp-interface { border:none !important; }
-
+.uma-coluna .conteudo li .titulos { margin-top:10px; }
 /** /RADIO FM  **/
