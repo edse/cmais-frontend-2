@@ -17,7 +17,7 @@
       <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-    <?}?>
+    <?php }?>
     
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
