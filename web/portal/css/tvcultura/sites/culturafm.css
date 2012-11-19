@@ -490,5 +490,8 @@ h3 { margin-bottom:20px}
 .recentes li {max-height: 33px; border:none;}
 .box-padrao .recentes li:last-child { margin-top:10px; padding-bottom:10px; }
 .voltar { background: none repeat scroll 0 0 #666666;    width: 82px; color:#fff;  float: right;   height: 22px;    line-height: 22px;    margin-top: 10px;   text-transform: uppercase;  }
-/** /RADIO FM  **/
+
 #menuFloat{margin:0;}
+div.jp-playlist, div.jp-interface { border:none !important; }
+
+/** /RADIO FM  **/
