@@ -28,6 +28,7 @@ function stream2() {
   so.write('live');
 }
 $(function(){
+  /*
   var request = $.ajax({
     success: function(data) {
       if(data == "true")
@@ -37,6 +38,8 @@ $(function(){
     },
     url: '/doctorwho/check_streaming.php'
   });
+  */
+  stream1();
 });
 
       
