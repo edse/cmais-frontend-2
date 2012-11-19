@@ -28,3 +28,4 @@ h3{clear:both;}
 .dados label.error{width:100%;}
 .parentes{position:relative;}
 .parentes #tem_parente_na_cultura_sim .error{position:absolute;top:0;left:0;} 
+.contato { *margin-bottom:100px; }
