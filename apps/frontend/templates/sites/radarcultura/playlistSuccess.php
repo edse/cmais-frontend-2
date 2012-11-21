@@ -461,8 +461,7 @@
            <!--/coluna direita-->
            
            <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-           <!--<?php if(count($relacionados) <= 3): ?>-->
-             <?php if(count($relacionados) > 0): ?>
+         <?php if(count($relacionados) > 0 || count($relacionados) < 3): ?>
              <!--pela web-->  
              <div class="row-fluid">
                 <div class="span12 page-header na-rede">
@@ -497,8 +496,8 @@
                 <!-- /pitaco -->
               </div>
               <!--pela web-->
-             <!-- <?php endif; ?> -->
-            <?php endif; ?>
+             <?php endif; ?>
+            
            
            
         </div>
