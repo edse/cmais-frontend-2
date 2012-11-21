@@ -477,7 +477,7 @@
                 <!-- pitaco -->
                 <div class="row-fluid">
                   <?php 
-                  $i = 0;
+                  $i = 1;
                   ?>
                 <?php foreach($relacionados as $k=>$d): ?> 
                   <!--item-->
@@ -504,7 +504,7 @@
                   <?php 
                   $i ++;
                   ?>
-                <?php echo $i ?>
+                <?php echo $i.">>>>>>>>>" ?>
                 <?php endforeach; ?>
                 
                 </div>
