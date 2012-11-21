@@ -158,7 +158,6 @@ $(function(){
               <!-- /BOX PADRAO -->
                         
             <?php $relacionados_audio = $asset->retriveRelatedAssetsByAssetTypeId(5); ?>
-            <?php echo $asset->getTitle() ?>
               <?php if(count($relacionados_audio) > 0): ?>
             
               <!-- /BOX PLAYLISTS -->
@@ -329,7 +328,7 @@ $(function(){
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-audio">
               <div class="jp-type-playlist">
-                <div id="jp_interface_1" class="jp-interface" style="height:94px;">
+                <div id="jp_interface_1" class="jp-interface" style="height:94px;width: 306px;border: none;">
                   <ul class="jp-controls">
                     <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
                     <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
@@ -347,7 +346,7 @@ $(function(){
                   <div class="jp-volume-bar" style="left:193px;top:27px;">
                     <div class="jp-volume-bar-value"></div>
                   </div>
-                  <div class="jp-current-time" style="left:20px;top:72px;"></div>
+                  <div class="jp-current-time" style="left:-92px;top:72px;"></div>
                   <div class="jp-duration" style="left:20px;top:72px;"></div>
                 </div>
                 <div id="jp_playlist_1" class="jp-playlist">
