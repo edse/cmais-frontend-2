@@ -1,7 +1,7 @@
 
 <!--FEEDBACK-->
 <a class="position" href="#modal-feedback" class="" data-toggle="modal">
-  <div class="btn-feedback" style="position: fixed;top:247px;"></div>
+  <div class="btn-feedback" style="position: fixed;top:247px; left:0;"></div>
 </a>  
 <!--/FEEDBACK-->
 <!-- Modal Feedback-->
