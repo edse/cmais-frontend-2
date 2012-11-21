@@ -451,7 +451,7 @@
               <!--/banner-->
            </div>
            <!--/coluna direita-->
-            
+           
            <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
            <?php if(count($relacionados) <= 3): ?>
              <?php if(count($relacionados) > 0): ?>
