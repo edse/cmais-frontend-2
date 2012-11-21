@@ -85,7 +85,7 @@ if(isset($pager)){
           	<?php endforeach; */ ?>
 					</div>
 
-					<div class="box-interna grid2">
+					<div class="box-interna grid2" style="margin-top: -20px;">
 						<!-- div class="texto"></div-->
 						<?php if(isset($pager)): ?>
 							<?php foreach($pager as $d): ?>
