@@ -64,7 +64,7 @@
             <div id="esquerda" class="grid2">
               <!-- NOTICIA INTERNA -->						
 						<div class="box-interna grid2">
-							<div class="texto">
+							<div class="">
 								<h3 class="tit-pagina grid2"><?php echo $section->title ?></h3>
 								<p><?php echo $section->description ?></p>
 							</div>
