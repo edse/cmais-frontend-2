@@ -468,7 +468,7 @@
                 <div class="span12 page-header na-rede">
                   <h3>Pitacos</h3>
                   <small> quem já participou dessa playlist</small>
-                </div>
+                </div> 
                 <!-- pitaco -->
                 <div class="row-fluid">
                 <?php foreach($relacionados as $k=>$d): ?> 
