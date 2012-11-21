@@ -476,10 +476,10 @@
                 </div>
                 <!-- pitaco -->
                 <div class="row-fluid">
-                <?php foreach($relacionados as $k=>$d): ?> 
                   <?php 
                   $i = 0;
                   ?>
+                <?php foreach($relacionados as $k=>$d): ?> 
                   <!--item-->
                   <div class="span4 redes <?php if($i > 3) echo "m-20"?>">
                     <div class="row-fluid redes">
