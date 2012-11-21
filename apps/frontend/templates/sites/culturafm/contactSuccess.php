@@ -65,7 +65,7 @@
               <div class="contato grid2">
 
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
-                <p><?php echo $section->getDescription()?></p>
+                <!--p><?php echo $section->getDescription()?></p-->
 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
