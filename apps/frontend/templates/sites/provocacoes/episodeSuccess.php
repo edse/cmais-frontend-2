@@ -134,6 +134,12 @@
                     </ul>
                     <a href="../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
+                  <div class="publicidade">
+                          <!-- tvcultura-homepage-300x250 -->
+                          <script type='text/javascript'>
+                            GA_googleFillSlot("cmais-assets-300x250");
+                          </script>
+                  </div>
                   <div class="charges">
                <?php
                     
@@ -161,12 +167,7 @@
                       <?php endforeach; ?>
                     </ul>
                 </div>
-                <div class="publicidade">
-                          <!-- tvcultura-homepage-300x250 -->
-                          <script type='text/javascript'>
-                            GA_googleFillSlot("cmais-assets-300x250");
-                          </script>
-                  </div>
+                
                 
                     </div>
                   </div>
