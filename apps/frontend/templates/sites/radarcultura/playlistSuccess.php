@@ -496,7 +496,7 @@
                       </div>
                     </div>
                    
-                      <div class="<?php if($i %3 == 0) echo "linha-lateral"?> "></div>
+                      <div class="<?php if($i%3 != 0) echo "linha-lateral"?> "></div>
                      
                                        
                   </div>
