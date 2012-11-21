@@ -466,7 +466,7 @@
            <!--/coluna direita-->
            
            <?php $relacionados = $asset->retriveRelatedAssetsByAssetTypeId(1); ?>
-           <?php if(count($relacionados) <= 3): ?>
+           
              <?php if(count($relacionados) > 0): ?>
              <!--pela web-->  
              <div class="row-fluid">
@@ -492,9 +492,9 @@
                         <!--<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" class="indique btn btn-mini btn-inverse"><i class="icon-share-alt icon-white"></i> indique essa música</a>-->
                       </div>
                     </div>
-                    <?php if($k < 2):?>
+                   
                       <div class="linha-lateral"></div>
-                    <?php endif;?>
+                   
                   </div>
                   <!--/item-->
                 <?php endforeach; ?>
@@ -503,7 +503,7 @@
               </div>
               <!--pela web-->
               <?php endif; ?>
-            <?php endif; ?>
+           
            
            
         </div>
