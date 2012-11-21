@@ -1,7 +1,7 @@
 
 <!--FEEDBACK-->
-<a href="#modal-feedback" class="" data-toggle="modal">
-  <div class="btn-feedback"></div>
+<a class="position" href="#modal-feedback" class="" data-toggle="modal">
+  <div class="btn-feedback" style="position: fixed;top:247px;"></div>
 </a>  
 <!--/FEEDBACK-->
 <!-- Modal Feedback-->
@@ -63,7 +63,17 @@
   <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
   <script type="text/javascript">
   $(document).ready(function(){
-
+    $(document).scroll(function() {
+      $('.btn-feedback').css({'position':'fixed','top':$('.position').offset().top + 157});     
+      if($('.btn-feedback').offset().top > (parseInt($('.container').height()-$('.btn-feedback').height())))
+      {
+        $('.btn-feedback').css({'position':'absolute','top':parseInt($('.container').height()-$('.btn-feedback').height())});
+      }
+      else
+      { 
+        $('.btn-feedback').css({'position':'fixed','top':$('.position').offset().top +157});
+      }
+    });
     $('.btn-feedback').click(function(){ 
       $('html, body').animate({
         scrollTop: $("#guia-topo").offset().top
