@@ -132,7 +132,7 @@
                 </li>
               <?php endforeach; ?> 
                     </ul>
-                    <a href=../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
+                    <a href="../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
                   <div class="charges">
                <?php
@@ -167,6 +167,7 @@
                             GA_googleFillSlot("cmais-assets-300x250");
                           </script>
                   </div>
+                
                     </div>
                   </div>
                   <?php endif; ?>
