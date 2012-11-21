@@ -83,7 +83,7 @@
                       <?php if(isset($date)): ?>
                       <p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
                       <?php endif ?>
-                      <h3 class="chapeu"><?php echo $d->retriveLabel() ?></h3>
+                      <!--h3 class="chapeu"><?php echo $d->retriveLabel() ?></h3-->
                       <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
                       <p><?php echo $d->getDescription() ?></p>
                     </li>
