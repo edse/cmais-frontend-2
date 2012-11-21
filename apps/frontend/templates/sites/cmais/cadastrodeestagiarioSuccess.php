@@ -237,11 +237,12 @@
                 
 
                 <div class="linha t5">
-                  <span class="declaracao">Garanto a veracidade das informações acima prestadas:</span> 
+                  <span class="declaracao">Garanto a veracidade das informações acima prestadas.</span> 
                   <input class="check" type="checkbox" name="garantia" id="garantia" />
                   
                 </div>
                   <div class="linha t3 codigo" id="captchaimage">
+                    <!--
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
                     <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
@@ -249,6 +250,7 @@
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                    -->
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
                     <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
@@ -363,7 +365,6 @@
               required: true,
               minlength: 2
             },
-            
             nome_parente:{
               required: true,
               minlength: 2
@@ -375,7 +376,6 @@
             garantia:{
               required: true
             },
-            
             curso:{
                 required: true,
                 minlength: 2
@@ -396,7 +396,6 @@
                 required: true,
                 minlength: 2
             },
-            
             rg:{
                 required: true,
                 minlength: 2
@@ -412,11 +411,8 @@
             zona:{
                 required: true,
                 minlength: 2
-            },
-            captcha: {
-              required: true,
-              remote: "/portal/js/validate/demo/captcha/process.php"
             }
+            
           },
           messages:{
             nome:"Digite um nome válido",
@@ -438,8 +434,7 @@
             instituto_de_ensino:"Digite uma instituição válida",
             ano_semestre:"Digite um ano válido",
             horario:"Digite uma hora válida",
-            formatura:"Digite uma data válida",
-            captcha: "Digite corretamente o código que está ao lado."
+            formatura:"Digite uma data válida"
           },
           success: function(label){
             // set &nbsp; as text for IE
