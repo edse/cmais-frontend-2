@@ -504,8 +504,11 @@
                   <?php 
                   $i ++;
                   ?>
+                <?php echo $i ?>
                 <?php endforeach; ?>
+                
                 </div>
+                
                 <!-- /pitaco -->
               </div>
               <!--pela web-->
