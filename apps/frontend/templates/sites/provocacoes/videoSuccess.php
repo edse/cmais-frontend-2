@@ -1,21 +1,4 @@
-<?php
-  $episode = Doctrine_Query::create()
-    ->select('a.*')
-    ->from('Asset a, RelatedAsset r')
-    ->where('r.asset_id = ?', (int)$asset->id)
-    ->andWhere('a.site_id = ?', (int)$site->id)
-    ->andWhere('r.parent_asset_id = a.id')
-    ->andWhere('a.asset_type_id = 15')
-    
-    ->orderBy('a.id desc') 
-    ->limit(1)
-    ->fetchOne();
-     
-  if ($episode) {
-    $videos = $episode->retriveRelatedAssetsByAssetTypeId(6);    
-  }
 
-?>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
