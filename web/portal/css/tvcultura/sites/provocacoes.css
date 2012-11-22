@@ -1237,7 +1237,7 @@ form.entrevistas label input{
   width:290px;
   font-size:15px;
   max-height:34px;
-  font-weight:bold;
+  font-weight:bold; 
 }
 .centro h4 a:hover{
   color: #ee3a24;
