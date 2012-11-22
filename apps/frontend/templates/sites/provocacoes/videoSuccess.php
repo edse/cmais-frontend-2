@@ -223,10 +223,12 @@
                           </div>
                           
                   <span class="faixa"></span>
-                  <h3><?php echo $videos[0]->getTitle();  ?></h3>
-                  <p class="dataPost">Programa exibido em <?php echo format_date($videos[0]->getCreatedAt(),'D') ?></p>
-                  <p class="post"><?php echo $videos[0]->getDescription();  ?></p>
+                  
+                  <h3><?php echo $asset->getTitle();  ?></h3>
+                  <p class="dataPost">Programa exibido em <?php echo format_date($asset->getCreatedAt(),'D') ?></p>
+                  <p class="post"><?php echo $asset->getDescription();  ?></p>
                   <?php endif; ?>
+                   
                   <!-- barra compartilhar -->
                   <?php //include_partial_from_folder('sites/provocacoes','global/share-2c') ?>
                   <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
