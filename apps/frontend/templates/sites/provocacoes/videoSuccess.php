@@ -1,19 +1,4 @@
 <?php
-  if(!isset($asset))
-  {
-    $asset = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, AssetVideo av')
-      ->where('a.id = av.asset_id')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 6')
-      ->andWhere("av.youtube_id != ''")
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-      ->orderBy('a.id desc')
-      ->limit(1)
-      ->fetchOne();
-  }
-  
   $episode = Doctrine_Query::create()
     ->select('a.*')
     ->from('Asset a, RelatedAsset r')
@@ -24,78 +9,12 @@
     ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
     ->orderBy('a.id desc') 
     ->limit(1)
-    ->fetchOne(); 
-    
-  if ($episode)
-  {
-  /*  
-    $tags = $episode->getTags();
-  
-    if (count($tags) > 0)
-    {
-      $tagRelated = "";
-      $i=0;
-      foreach($tags as $t)
-      {
-        if ($i==0)
-      {
-          $tagRelated .= "t.name='".$t."'";
-          $titleRelated .= "a.title like '%".$t."%' OR a.description like '%".$t."%'";
-          $descRel  ated .= "t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
-      }
-      else
-      {
-          $tagRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
-          $titleRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
-          $descRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
-      }
-      $i++;
-      }
+    ->fetchOne();
      
+  if ($episode) {
+    $videos = $episode->retriveRelatedAssetsByAssetTypeId(6);    
+  }
 
-      $conteudosRelacionados = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, Tag t, Tagging t2')
-        ->where('a.site_id = ?',(int)$site->id)
-        ->andWhere('a.asset_type_id = 1')
-        ->andWhere('(t2.taggable_id = a.id AND t2.tag_id = t.id AND t.name IN ('.implode(',',$tags).')')
-        ->orWhereIn('a.title',$tags)
-        ->orWhereIn('a.description',$tags)
-        ->groupBy('a.id')
-        ->orderBy('a.id DESC') 
-        ->limit(4)
-        ->execute();
-    }
-   */ 
-  
-    $videos = $episode->retriveRelatedAssetsByAssetTypeId(6);
-  if (count($videos))
-  {
-      $bastidores = array();
-      $blocos = array();
-      foreach($videos as $k=>$d)
-      {
-        if($d->getRelatedAssetType() == "Bastidor")
-          $bastidores[] = $d;
-      else
-          $blocos[] = $d;
-      }
-  }
-  
-    $images = $episode->retriveRelatedAssetsByAssetTypeId(2);
-  if (count($images))
-  {
-      $charges = array();
-      $fotos = array();
-      foreach($images as $k=>$d)
-      {
-        if($d->getRelatedAssetType() == "Charge")
-          $charges[] = $d;
-      else
-          $fotos[] = $d;
-      }
-  }
-  }
 ?>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
