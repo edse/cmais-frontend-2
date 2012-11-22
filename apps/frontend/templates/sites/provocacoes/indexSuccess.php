@@ -115,6 +115,33 @@
                   
                   </div>
                      -->  
+                     <div class="acervoDestaque" style="display: block;">
+                   <div class="acervoDestaque">
+                    <h3><?php echo $displays['destaque-playlist'][0]->Block->getTitle() ?></h3>
+                    <div class="carrossel">
+                <ul>
+                  <?php foreach($displays['destaque-playlist'] as $k=>$d): ?>
+                  <li>
+                                      <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                    <a class="aImg" href="<?php echo $d->retriveUrl() ?>">
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <span class="ico"></span>
+                    </a>
+                                <?php endif; ?>
+                                <?php if($d->retriveLabel() != ""): ?>
+                    <a class="aTxt" href="<?php echo $d->retriveUrl() ?>">
+                      <span class="nomeRlacionado"><?php echo $d->getTitle() ?></span>
+                      <span class="nomeTxt"><?php echo $d->getDescription() ?></span>
+                    </a>
+                    <?php endif; ?>
+                  </li>
+                  <?php endforeach; ?>
+                </ul>
+              </div>
+              <a class="acervoCompleto" href="/provocacoes/programas"><span>Outros programas</span></a>
+                  </div>
+                  </div>
+                     
                   <div class="grid1" style="margin-right:20px; ">
                     <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/provocacoes','global/display1c-news', array('displays' => $displays["destaque-1"])) ?>
                   </div>
