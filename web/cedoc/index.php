@@ -1,71 +1,38 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-
-    <!-- Put the following javascript before the closing </head> tag. -->
-    <script>
-      (function() {
-        var cx = '014171385304484677642:rn0zsdt5eig';
-        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <style>
-      ul {
-        clear:both;
-      }
-      .pagination {
-        list-style: none;
-        clear:both;
-        margin:0 auto;
-        float: left;
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
-      .pagination li {
-        float: left;
-        margin-right: 20px;
-      }
-    </style>
-  </head>
-<body>
-
-<div class="row-fluid">
-  <ul class="nav nav-pills">
-    <li class=""><a href="./index.php" title="Início">Início</a></li>
-    <li class=""><a href="./thesaurus/index.html" title="Thesaurus">Thesaurus</a></li>
-    <li class=""><a href="./identidade/index.html" title="Identidade">Identidade</a></li>
-    <li class=""><a href="./sobre.html" title="Sobre o projeto">Sobre o projeto</a></li>
-  </ul>
-</div>
-
-<!-- Place this tag where you want both of the search box and the search results to render -->
-<gcse:search></gcse:search>
 <?php
+  include_once("includes/geral.php");
+  
   // pagination
-  $pageLimit = 10;
+  $pageLimit = 25;
   $currentPage = isset($_REQUEST['offset']) ? $_REQUEST['offset'] : 1; 
-  $nextPage = $currentPage + 10;
-  $prevPage = $_REQUEST['offset'] > 1 ? ($currentPage - 10) : false;
+  $nextPage = $currentPage + $pageLimit;
+  @$prevPage = $_REQUEST['offset'] > 1 ? ($currentPage - $pageLimit) : false;
   
   $dir = "/var/frontend/web/cedoc/html/";
   $currentFiles = array();
   if (is_dir($dir))
   {
+    $filecount = 0;
+    if (glob($dir . "*.html") != false)
+      $filecount = count(glob($dir . "*.html"));
+    
     $counter = 1;    
     $pointer = opendir($dir);
     while (false !== ($file = readdir($pointer)))
     {
-      if ( !in_array($file, array(".", "..", "converted" ) ) )
+      if (!in_array($file, array(".", "..", "converted" ) ) )
       {
         if ($counter >= $currentPage)
         {
           if($counter < $nextPage)
           {
             $currentFiles[] = $file;
+            
+            $filePath = $dir . $file;
+            $htmlCode = file_get_contents($filePath);
+            preg_match("/<title>(.*?)<\\/title>/si", $htmlCode, $match);
+            $title[] = $match[1];
+            preg_match("/<meta name=\"description\" content=\"(.*?)\" \/>/si", $htmlCode, $match);
+            $description[] = $match[1];
           }
           else
             break;
@@ -76,23 +43,73 @@
   }
   closedir($pointer);
   
-  if (count($currentFiles) < 10)
+  if (count($currentFiles) < $pageLimit)
     $nextPage = false;
 ?>
-<ul class="pagination">
-  <li><?php if($prevPage): ?><a href="index.php?offset=<?php echo $prevPage; ?>" title="anterior"><< Anterior</a><?php else: ?><< Anterior<?php endif; ?></li>
-  <li><?php if($nextPage): ?><a href="index.php?offset=<?php echo $nextPage; ?>" title="próxima">Próxima >></a><?php else: ?>Próxima >><?php endif; ?></li>
-</ul>
-<ul>
-<?php foreach($currentFiles as $k=>$d): ?>
-  <li><a href="html/<?php echo $d ?>" title="<?php echo $d ?>"><?php echo $d ?></a></li>
-<?php endforeach; ?>
-</ul>
-<ul class="pagination">
-  <li><?php if($prevPage): ?><a href="index.php?offset=<?php echo $prevPage; ?>"><< Anterior</a><?php else: ?><< Anterior<?php endif; ?></li>
-  <li><?php if($nextPage): ?><a href="index.php?offset=<?php echo $nextPage; ?>">Próxima >></a><?php else: ?>Próxima >><?php endif; ?></li>
-</ul>
+<?php echo $cmaisHeader ?>
 
-</body>
-</html>
+    <div class="container-narrow">
+
+      <div class="row-fluid">
+        <div class="span7">
+          <h1>CEDOC<br>
+            <small>Centro de Documentação da Fundação Padre Anchieta</small>
+          </h1>
+        </div>
+        <ul class="nav nav-pills pull-right span5">
+          <li class="pull-right active"><a href="/cedoc" title="Início">Início</a></li>
+          <li class="pull-right"><a href="/cedoc/thesaurus" title="Thesaurus">Thesaurus</a></li>
+          <li class="pull-right"><a href="/cedoc/identidade" title="Identidade">Identidade</a></li>
+          <li class="pull-right"><a href="/cedoc/sobre" title="Sobre">Sobre</a></li>
+        </ul>
+        <form class="form-search pull-right" action="busca.php">
+          <div class="input-append">
+            <input type="hidden" name="output" value="search">
+            <input type="text" name="q" class="search-query input-large">
+            <button type="submit" class="btn">Buscar</button>
+          </div>
+        </form>        
+      </div>
       
+      <p class="total">Total de registros: <strong><?php echo number_format($filecount, 0, "",".") ?></strong></p>
+      
+      <!--div class="row-fluid" style="clear:both"-->
+        <ul class="pager">
+          <li<?php if(!$prevPage): ?> class="disabled"<?php endif; ?>><a href="index.php?offset=<?php echo $prevPage; ?>" title="Anterior">Anterior</a></li>
+          <li<?php if(!$nextPage): ?> class="disabled"<?php endif; ?>><a href="index.php?offset=<?php echo $nextPage; ?>" title="Próxima">Próxima</a></li>
+        </ul>
+      <!--/div-->
+      
+      
+      <div class="row-fluid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Documento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php foreach($currentFiles as $k=>$d): ?>                
+            <tr>
+              <td>
+                <strong><?php echo $title[$k] ?></strong>
+                <br>
+                <span class="docDescription"><?php echo $description[$k] ?></span>
+              </td>
+              <td>
+                <a href="html/<?php echo $d ?>" class="btn btn-mini btn-inverse pull-right btnFilme" title="<?php echo $title[$k] ?>"><i class="icon-list icon-white"></i> ver detalhes </a>
+              </td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="footer">
+        <p><img src="/cedoc/images/realizacao.jpg" alt="Realização"></p>
+      </div>
+
+    </div>
+<?php echo $cmaisFooter ?>    
+
+
