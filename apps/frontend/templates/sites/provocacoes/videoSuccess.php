@@ -6,7 +6,7 @@
     ->andWhere('a.site_id = ?', (int)$site->id)
     ->andWhere('r.parent_asset_id = a.id')
     ->andWhere('a.asset_type_id = 15')
-    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+    
     ->orderBy('a.id desc') 
     ->limit(1)
     ->fetchOne();
