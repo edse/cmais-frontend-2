@@ -123,7 +123,7 @@
                   <?php foreach($displays['destaque-playlist'] as $k=>$d): ?>
                     <?php $videos= $d->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
                      <li>
-                                      <?php if($videos->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                                      <?php if($videos[0]->retriveImageUrlByImageUsage("image-2") != ""): ?>
                     <a class="aImg" href="<?php echo $d->retriveUrl() ?>">
                       <img src="<?php echo $videos[0]->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
                       <span class="ico"></span>
