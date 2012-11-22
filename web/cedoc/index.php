@@ -1,5 +1,5 @@
 <?php
-  include_once("includes/geral.php");
+  include_once("/cedoc/includes/geral.php");
   
   // pagination
   $pageLimit = 25;
