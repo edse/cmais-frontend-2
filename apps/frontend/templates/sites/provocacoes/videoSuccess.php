@@ -97,6 +97,7 @@
   }
   }
 ?>
+
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
@@ -113,7 +114,6 @@
   });
 
 </script>
-
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
@@ -129,7 +129,7 @@
     <!-- BARRA SITE -->
     <div id="barra-site">
       <div class="topo-programa">
-        
+        topo teste
         <?php if(isset($program) && $program->id > 0):
         ?>
         <h2><a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>"> <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/uploads/programs/<?php echo $program->getImageThumb() ?>"> </a></h2>
@@ -185,7 +185,9 @@
                   
                 </ul>
                 <div class="boxVideo">
-                 <?php if(isset($asset)): ?>
+                 
+                  <div class="boxVideoWrapper">
+                          <?php if(isset($asset)): ?>
                             <?php if($asset->AssetType->getSlug() == "image"): ?>
                             <a class="" href="<?php echo $asset->retriveUrl() ?>" title="<?php echo $asset->getTitle() ?>">
                               <img src="<?php echo $asset->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $asset->getTitle() ?>" name="<?php echo $asset->getTitle() ?>" />
@@ -218,37 +220,49 @@
                             <?php else: ?>
                             <div style="width:640px; height:384px;"><h2><?php echo $asset->getTitle() ?></h2><h4><?php echo $asset->getDescription() ?></h4></div>
                             <?php endif; ?>
-                            
+                          </div>
+                          
+                  <span class="faixa"></span>
+                  <h3><?php echo $videos[0]->getTitle();  ?></h3>
+                  <p class="dataPost">Programa exibido em <?php echo format_date($videos[0]->getCreatedAt(),'D') ?></p>
+                  <p class="post"><?php echo $videos[0]->getDescription();  ?></p>
+                  <?php endif; ?>
+                  <!-- barra compartilhar -->
+                  <?php //include_partial_from_folder('sites/provocacoes','global/share-2c') ?>
                   <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
                   <!-- /barra compartilhar -->
                   
                 </div>
                 <div class="veja">
+                  <?php if(isset($blocos)): ?>
+                            <?php if(count($blocos) > 0): ?>
                   <p class="btn-veja"><span>Veja também</span></p>
-                  <div class="vejaTambem">
-                    <ul>
-                                         
-                       <?php foreach($videos as $k=>$d): ?>
-                              <?php if(($k > 0) && ($k % 3 == 0)): ?>
-                                </li><li>
-                              <?php endif; ?>
-                      <li>
-                        <?php if($d->retriveImageUrlByImageUsage('image-7')): ?>
-                  <a class="aImg<?php if($d->getId() == (int)$asset->id): ?> ativo<?php endif; ?>" href="<?php echo $d->retriveUrl() ?>">
-                    <img src="<?php echo $d->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" />
-                    <span class="ico"></span>
-                  </a>
-                  <?php endif; ?>
-                  <a class="aTxt" href="<?php echo $d->retriveUrl() ?>">
-                    <span class="nomeRlacionado"><?php echo $d->getTitle() ?></span>
-                    <!-- span class="nomeTxt"><?php echo $d->getDescription() ?></span-->
-                  </a>
-                </li>
-              <?php endforeach; ?> 
-                    </ul>
+                  
+                   <div class="vejaTambem">
+                     <ul>
+                                <?php foreach($blocos as $k=>$d): ?>
+                                <li>
+                                    <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                                    <a class="aImg<?php if($d->getId() == (int)$asset->id): ?> ativo<?php endif; ?>" href="<?php echo $d->retriveUrl() ?>">
+                                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
+                                      <span class="ico"></span>
+                                    </a>
+                                    <?php endif; ?>
+                                    <?php //if($d->retriveLabel() != ""): ?>
+                                    <a class="aTxt" href="<?php echo $d->retriveUrl() ?>">
+                                      <span class="nomeRlacionado"><?php echo $d->getTitle() ?></span>
+                                      <?php /* <span class="nomeTxt"><?php echo $d->getDescription() ?></span> */ ?>
+                                    </a>
+                                    <?php //endif; ?>
+                                </li>
+                                <?php endforeach; ?>
+                              </ul>
                     <a href="../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
-                  <div class="publicidade">
+                   <?php endif; ?>
+                          <?php endif; ?>
+            
+                     <div class="publicidade">
                           <!-- tvcultura-homepage-300x250 -->
                           <script type='text/javascript'>
                             GA_googleFillSlot("cmais-assets-300x250");
@@ -306,3 +320,4 @@
   <!-- /capa site -->
 </div>
 <!-- / bg-provoca -->
+
