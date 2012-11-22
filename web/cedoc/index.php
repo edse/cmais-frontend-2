@@ -1,7 +1,6 @@
 <?php
-  die('0');
   include_once("includes/geral.php");
-  die('1');
+  
   // pagination
   $pageLimit = 25;
   $currentPage = isset($_REQUEST['offset']) ? $_REQUEST['offset'] : 1; 
@@ -12,7 +11,6 @@
   $currentFiles = array();
   if (is_dir($dir))
   {
-    die('2');
     $filecount = 0;
     if (glob($dir . "*.html") != false)
       $filecount = count(glob($dir . "*.html"));
@@ -47,7 +45,6 @@
   
   if (count($currentFiles) < $pageLimit)
     $nextPage = false;
-  die('3');
 ?>
 <?php echo $cmaisHeader ?>
 
