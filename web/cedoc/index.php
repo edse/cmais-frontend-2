@@ -1,5 +1,5 @@
 <?php
-  
+  die('0');
   include_once("includes/geral.php");
   die('1');
   // pagination
