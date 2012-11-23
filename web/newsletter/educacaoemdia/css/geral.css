@@ -1,0 +1,42 @@
+body { font-family: Arial, Helvetica, Sans serif; background: #eee center top; padding: 0; margin:0; }
+.all { margin: 0 auto !important; width: 637px; }
+.visualizar { color: #707070;  font-size: 11px; background:#fff; text-align:center; padding:10px 0; margin:0;}
+.visualizar a { color: #005dab; }
+li { list-style:none; }
+h2,
+.destaque a {  font-family: 'Sanchez', serif;}
+
+.conteudo { background: #fff; width:600px; float: left; box-shadow: 0px 3px 3px 3px #dbdbdb; -moz-box-shadow:  0 6px 6px 0 #dbdbdb; -webkit-box-shadow: 0 6px 6px 0 #dbdbdb; box-shadow:  0 6px 6px 0 #dbdbdb; margin-bottom:20px; }
+.destaque {height:310px; position:relative;}
+.destaque a { background:#000; color:#fff; position:absolute; bottom:50px; left:0; font-size: 24px; opacity:0.9; -moz-opacity: 0.9; filter: alpha(opacity=90); text-decoration:none; max-width:410px; padding:0 10px; max-height:70px; line-height: 32px; display: block; overflow:hidden;  }
+.destaque a:hover { text-decoration:underline; }
+.destaque .small { font-size:14px; bottom: 5px; max-width:230px; opacity:0.8;  -moz-opacity: 0.8;  filter: alpha(opacity=80); line-height: 18px; max-height:40px; }
+.divisao { margin:25px 50px 15px 50px; background:#e9e9e9; height:1px;  padding:0;}
+h2 { color:#005dab; font-size:24px; font-weight:normal; margin:0 0 0 20px; }
+.links { padding:0; margin:20px; }
+.links li { background:#f4f4f4 url(../images/icone.png) no-repeat 6px 7px; padding-left:25px; margin-bottom:5px;}
+.links li a { color:#444; text-decoration:none; font-size:14px; padding:5px; display:block; }
+.links li:hover { background:#005dab url(../images/icone-hover.png) no-repeat 6px 9px; ; }
+.links li:hover a { color:#fff; }
+.btn { background:#005dab; float: right; color:#fff; margin:0 20px 20px 0; font-size:14px; text-transform:uppercase; padding:5px 10px; font-weight:bold; text-decoration:none;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+    border-radius: 5px; box-shadow: 0px 3px 3px 3px #dbdbdb; 
+    -moz-box-shadow:  0 6px 6px 0 #dbdbdb; 
+    -webkit-box-shadow: 0 6px 6px 0 #dbdbdb; 
+    box-shadow:  0 6px 6px 0 #dbdbdb; 
+    background-color: #ED9C47; /* fallback flat color */
+    background-image: -webkit-gradient(linear, left top, left bottom,
+    from(#3a7ac2), to(#15559c) ); /* for Chrome + Safari */
+    background-image: -moz-linear-gradient(  top,
+    #3a7ac2, #15559c ); /* for Firefox */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a7ac2', endColorstr='#15559c');}
+p { font-size:13px; color:#444; text-align:center; clear:both; margin:0; padding:0; }
+.bottom { background:url(../images/bg-divisao.jpg) repeat-x; margin:10px 50px;  }
+.informativo { background:none; padding:0; margin-bottom:20px; }
+.redes { float:right; width: 36px; margin:20px 0 0 0; padding:0;  }
+.redes a { text-indent:-9999px; display: block; width:36px; height:32px;}
+.redes .twt { background:url(../images/icone-twitter.png) no-repeat; }
+.redes .face { background:url(../images/icone-facebook.png) no-repeat; }
+h1 { width: 233px; float:left; margin:20px;}
+.data { width:215px; float:right; clear:none; margin-top:40px; text-align:right;}
+.data span { font-weight: bold; font-size: 14px; }

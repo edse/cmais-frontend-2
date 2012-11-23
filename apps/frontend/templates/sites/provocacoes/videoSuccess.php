@@ -1,4 +1,19 @@
 <?php
+  if(!isset($asset))
+  {
+    $asset = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, AssetVideo av')
+      ->where('a.id = av.asset_id')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 6')
+      ->andWhere("av.youtube_id != ''")
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->orderBy('a.id desc')
+      ->limit(1)
+      ->fetchOne();
+  }
+  
   $episode = Doctrine_Query::create()
     ->select('a.*')
     ->from('Asset a, RelatedAsset r')
@@ -9,13 +24,80 @@
     ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
     ->orderBy('a.id desc') 
     ->limit(1)
-    ->fetchOne();
+    ->fetchOne(); 
+    
+  if ($episode)
+  {
+  /*  
+    $tags = $episode->getTags();
+  
+    if (count($tags) > 0)
+    {
+      $tagRelated = "";
+      $i=0;
+      foreach($tags as $t)
+      {
+        if ($i==0)
+      {
+          $tagRelated .= "t.name='".$t."'";
+          $titleRelated .= "a.title like '%".$t."%' OR a.description like '%".$t."%'";
+          $descRel  ated .= "t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
+      }
+      else
+      {
+          $tagRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
+          $titleRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
+          $descRelated .= " OR t.name='".$t."' OR a.title like '%".$t."%' OR a.description like '%".$t."%'";
+      }
+      $i++;
+      }
      
-  if ($episode) {
-    $videos = $episode->retriveRelatedAssetsByAssetTypeId(6);    
-  }
 
+      $conteudosRelacionados = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, Tag t, Tagging t2')
+        ->where('a.site_id = ?',(int)$site->id)
+        ->andWhere('a.asset_type_id = 1')
+        ->andWhere('(t2.taggable_id = a.id AND t2.tag_id = t.id AND t.name IN ('.implode(',',$tags).')')
+        ->orWhereIn('a.title',$tags)
+        ->orWhereIn('a.description',$tags)
+        ->groupBy('a.id')
+        ->orderBy('a.id DESC') 
+        ->limit(4)
+        ->execute();
+    }
+   */ 
+  
+    $videos = $episode->retriveRelatedAssetsByAssetTypeId(6);
+  if (count($videos))
+  {
+      $bastidores = array();
+      $blocos = array();
+      foreach($videos as $k=>$d)
+      {
+        if($d->getRelatedAssetType() == "Bastidor")
+          $bastidores[] = $d;
+      else
+          $blocos[] = $d;
+      }
+  }
+  
+    $images = $episode->retriveRelatedAssetsByAssetTypeId(2);
+  if (count($images))
+  {
+      $charges = array();
+      $fotos = array();
+      foreach($images as $k=>$d)
+      {
+        if($d->getRelatedAssetType() == "Charge")
+          $charges[] = $d;
+      else
+          $fotos[] = $d;
+      }
+  }
+  }
 ?>
+
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
@@ -26,7 +108,7 @@
   $(function() {
 
     // charges caruso
-    $('a.galeria').fancybox();
+    $('.fancybox').fancybox();
     //$('#gallery ul li:last').remove();
 
   });
@@ -99,92 +181,134 @@
             <div class="centroRV">
               <div class="video-interna">
                 <ul>
-                  <li class="voltarJa"><a href="javascript:back()"><span>Voltar</span></a></li>
+                  <li class="voltarJa"><a href="javascript:history.back()"><span>Voltar</span></a></li>
+                  
                 </ul>
                 <div class="boxVideo">
-                  <div class="boxVideoWrapper">
-                    <object style="height:390px; width: 640px">
-                      <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
-                      <param name="allowFullScreen" value="true">
-                      <param name="allowScriptAccess" value="always">
-                      <param name="wmode" value="opaque">
-                      <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
-                    </object>
-                  </div>
-                  <span class="faixa"></span>
-                  <h3><?php echo $asset->getTitle();  ?></h3>
-                  <p class="dataPost">Programa exibido em <?php echo $asset->getDate();  ?></p>
-                  <p class="post"><?php echo $videos[0]->getDescription();  ?></p>
-                  
-                  <!-- barra compartilhar -->
-                  <?php include_partial_from_folder('sites/provocacoes','global/share-2c') ?>
-                  <!-- /barra compartilhar -->
                  
+                  <div class="boxVideoWrapper">
+                          <?php if(isset($asset)): ?>
+                            <?php if($asset->AssetType->getSlug() == "image"): ?>
+                            <a class="" href="<?php echo $asset->retriveUrl() ?>" title="<?php echo $asset->getTitle() ?>">
+                              <img src="<?php echo $asset->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $asset->getTitle() ?>" name="<?php echo $asset->getTitle() ?>" />
+                              
+                            <?php elseif($asset->AssetType->getSlug() == "content" || $asset->AssetType->getSlug() == "image-gallery"): ?>
+                              <?php $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+                              <?php if(count($imgs) > 0): ?>
+                              <img src="/uploads/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $asset->getTitle() ?>" name="<?php echo $asset->getTitle() ?>" />
+                              <?php endif; ?>
+                            </a>
+                            
+                            <?php elseif($asset->AssetType->getSlug() == "video"): ?>
+                            <object style="height:390px; width: 640px">
+                              <param name="movie" value="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0">
+                              <param name="allowFullScreen" value="true">
+                              <param name="allowScriptAccess" value="always">
+                              <param name="wmode" value="opaque">
+                              <embed id="ytplayer" src="http://www.youtube.com/v/<?php echo $asset->AssetVideo->getYoutubeId() ?>?version=3&enablejsapi=1&playerapiid=ytplayer&rel=0" wmode="opaque" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed>
+                            </object>
+
+                            <?php elseif($asset->AssetType->getSlug() == "video-gallery"): ?>
+                            <object height="390" width="640" style="height:390px; width: 640px">
+                              <param name="movie" value="http://www.youtube.com/p/<?php echo $asset->AssetVideoGallery->getYoutubeId() ?>?version=3&amp;hl=en_US&amp;fs=1" />
+                              <param name="allowFullScreen" value="true" />
+                              <param name="allowscriptaccess" value="always" />
+                              <param name="wmode" value="opaque">
+                              <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $asset->AssetVideoGallery->getYoutubeId() ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
+                            </object>
+                            
+                            <?php else: ?>
+                            <div style="width:640px; height:384px;"><h2><?php echo $asset->getTitle() ?></h2><h4><?php echo $asset->getDescription() ?></h4></div>
+                            <?php endif; ?>
+                          </div>
+                          
+                  <span class="faixa"></span>
+                  
+                  <h3><?php echo $asset->getTitle();  ?></h3>
+                  <p class="dataPost">Programa exibido em <?php echo format_date($asset->getCreatedAt(),'D') ?></p>
+                  <p class="post"><?php echo $asset->getDescription();  ?></p>
+                  <?php endif; ?>
+                   
+                  <!-- barra compartilhar -->
+                  <?php //include_partial_from_folder('sites/provocacoes','global/share-2c') ?>
+                  <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+                  <!-- /barra compartilhar -->
+                  
                 </div>
                 <div class="veja">
+                  <?php if(isset($blocos)): ?>
+                            <?php if(count($blocos) > 0): ?>
                   <p class="btn-veja"><span>Veja também</span></p>
                   
-                  <div class="vejaTambem">
-                    <ul>
-                      <?php foreach($displays as $k=>$d): ?>
-                      <?php if(($k > 0) && ($k % 3 == 0)): ?>
-                        </li><li>
-                      <?php endif; ?>
-                      <div class="conteudo-lista">
-                        <?php if($d->retriveImageUrlByImageUsage('image-7')): ?>
-                        <a href="<?php echo $d->retriveUrl() ?>" class="img-150x90">
-                          <img src="<?php echo $d->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" />
-                        </a>
-                        <?php endif; ?>
-                        <h3 class="chapeu"><?php echo $d->retriveLabel() ?></h3>
-                        <a href="<?php echo $d->retriveUrl() ?>" class="txt"><?php echo $d->getTitle() ?></a>
-                      </div>
-                    <?php endforeach; ?>
-                    </ul>
-                    <a href="http://tvcultura.cmais.com.br/provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
+                   <div class="vejaTambem">
+                     <ul>
+                                <?php foreach($blocos as $k=>$d): ?>
+                                <li>
+                                    <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                                    <a class="aImg<?php if($d->getId() == (int)$asset->id): ?> ativo<?php endif; ?>" href="<?php echo $d->retriveUrl() ?>">
+                                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
+                                      <span class="ico"></span>
+                                    </a>
+                                    <?php endif; ?>
+                                    <?php //if($d->retriveLabel() != ""): ?>
+                                    <a class="aTxt" href="<?php echo $d->retriveUrl() ?>">
+                                      <span class="nomeRlacionado"><?php echo $d->getTitle() ?></span>
+                                      <?php /* <span class="nomeTxt"><?php echo $d->getDescription() ?></span> */ ?>
+                                    </a>
+                                    <?php //endif; ?>
+                                </li>
+                                <?php endforeach; ?>
+                              </ul>
+                    <a href="../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
+                  </div>
+                   <?php endif; ?>
+                          <?php endif; ?>
+            
+                     <div class="publicidade">
+                          <!-- tvcultura-homepage-300x250 -->
+                          <script type='text/javascript'>
+                            GA_googleFillSlot("cmais-assets-300x250");
+                          </script>
                   </div>
                   <div class="charges">
-                                     
-         <!--bloco de fotos-->
-          <?php
-              $displays = array();
-              $block_sobre = Doctrine_Query::create()
-                ->select('b.*')
-                ->from('Block b, Section s')
-                ->where('b.section_id = s.id')
-                ->andWhere('s.slug = ?', 'home')
-                ->andWhere('b.slug = ?', 'destaque-galeria-2')
-                ->andWhere('s.site_id = ?', $site->id)
-                ->execute();
-            
-              if(count($block_sobre) > 0){
-                $displays["destaque-galeria-2"] = $block_sobre[0]->retriveDisplays();
-              }
-            ?>
-            <?php if(isset($displays['destaque-galeria-2'])):?>
-              <?php if(count($displays['destaque-galeria-2']) > 0): ?>
-                  <div class="box-charges">
-                     <div id="gallery">
-                  <h3>Fotos do Programa</h3>
+               <?php
+                    
+                   
+                      $galeria = $asset->retriveRelatedAssetsByAssetTypeId(3);
+                      
+                      if(count($galeria)>0) {
+                        $images = $galeria[0]->retriveRelatedAssetsByAssetTypeId(2);
+                      }
+                    
+                 ?>     
+                 <?php if(isset($images)): ?> 
+                  <?php if(count($images)>0): ?>
+                  <div class="charges">
+                    <h3>Fotos do Programa</h3>
+                    <div class="box-charges">
+                      <div id="gallery">
+                    <ul>
+                      <?php foreach($images as $k=>$d): ?>
+                        <li>
+                            <a class="fancybox" href="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" title="<?php echo $d->getTitle() ?>" rel="charges_caruso">
+                                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                            </a>
+                        </li>
+                      <?php endforeach; ?>
+                    </ul>
                 </div>
-                <p><?php echo $displays['destaque-galeria-2'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['destaque-galeria-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-galeria-2'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              </div>
-              <?php endif; ?>
-            <?php endif; ?>
-            <!--/bloco de fotos-->
-                      </div>
+                
+                
                     </div>
                   </div>
-                  <div class="box-publicidade" style="margin-top:20px;">
-                    <!-- tvcultura-homepage-300x250 -->
-                    <script type="text/javascript">
-            GA_googleFillSlot("cmais-assets-300x250");
-
-                    </script>
+                  <?php endif; ?>
+                  <?php endif; ?>
                   </div>
+                 
                 </div>
+               
               </div>
+                  
             </div>
           </div>
           <span class="bordaBottomRV"></span>
