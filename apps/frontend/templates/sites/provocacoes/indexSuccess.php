@@ -223,7 +223,7 @@
                   <?php endif; ?>
                        
                        
-                        <a href="../provocacoes/programas" class="sugestoes"><span>outros programas</span></a>
+                        <!--a href="../provocacoes/programas" class="sugestoes"><span>outros programas</span></a-->
                     </div>
                        </div>
                     </div>
