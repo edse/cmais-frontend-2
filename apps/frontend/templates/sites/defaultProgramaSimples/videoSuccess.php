@@ -116,7 +116,7 @@ $(function(){
 
               <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
 
-              <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c-close-w-comment', array('site' => $site, 'uri' => $uri)) ?>
               <style type="text/css">
         		#esquerda .box-compartilhar .comentar { text-indent:-9999px; }
         		#esquerda .box-compartilhar .comentar span {display:none;}  
