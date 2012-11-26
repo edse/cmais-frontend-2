@@ -26,7 +26,7 @@ $(document).ready(function(){
       <a id="perguntas"></a>
       <h1>PERGUNTAS FREQUENTES</h1>
       
-      <p>
+      <p> 
         A Central de Relacionamento é uma área
         de atendimento exclusiva para telespectadores
         e ouvintes de nossas emissoras. Queremos  conhecer

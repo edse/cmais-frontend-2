@@ -4,7 +4,7 @@
           //$('.dropdown-toggle').dropdown();
           $('.dropdown-toggle').click(function(){
             $('.dropdown').removeClass('open');
-            $(this).parent().addClass("open");
+            $(this).parent().addClass("open"); 
           });
           $('.dropdown').mouseleave(function(){
             $(this).removeClass("open");
