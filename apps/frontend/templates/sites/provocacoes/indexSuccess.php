@@ -97,7 +97,7 @@
                 <div class="boxVideo">
                <div class="">
                    <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
-                    <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+                   <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
              </div>
                     
         <!-- /destaque principal e barra compartilhar-->
@@ -223,7 +223,7 @@
                   <?php endif; ?>
                        
                        
-                        <a href="../provocacoes/programas" class="sugestoes"><span>outros programas</span></a>
+                        <!--a href="../provocacoes/programas" class="sugestoes"><span>outros programas</span></a-->
                     </div>
                        </div>
                     </div>
