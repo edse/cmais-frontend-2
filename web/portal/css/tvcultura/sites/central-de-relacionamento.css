@@ -1,0 +1,76 @@
+/* TOPO central */
+#topo-central{margin-bottom:30px;overflow: hidden;}
+#topo-central .menu-central ul li a{color:#676767;padding:7px 6px;margin-right: 1px;}
+#topo-central .nav-tabs .dropdown-toggle .caret,
+#topo-central .nav-pills .dropdown-toggle .caret {border-top-color: black;}
+#topo-central .nav-tabs .dropdown-toggle:hover .caret,
+#topo-central .nav-pills .dropdown-toggle:hover .caret {border-top-color: white;}
+#topo-central .menu-central ul li:last-child a{margin-right: 0px !important;}
+#topo-central .nav-tabs > li > a,
+#topo-central .nav-pills > li > a {margin: 4px 0 4px 0px;}
+#topo-central .nav {margin:0; float:left;*float:left;border-top:1px solid #acacac;border-top:1px solid #acacac;border-bottom:1px solid #acacac;}
+#topo-central .nav {*margin-top:20px;}
+#topo-central .dropdown-menu {background-color:#00723a;padding:0;text-align:left;border-radius:0;top:34px;left:0px;border:none; border-bottom-right-radius:8px;border-bottom-left-radius:8px;border-top-right-radius:8px;padding:1px 0;  }
+#topo-central .nav-pills .dropdown.active .dropdown-toggle .caret {border-top-color: white !important;}
+#topo-central .dropdown.open .caret {border-top-color: white;}
+#topo-central .active a,
+#topo-central .dropdown.open a,
+#topo-central a:hover{background-color:#4cb957;color:#FFF!important;border-radius:5px }
+#topo-central .dropdown.open a{border-bottom-right-radius:0px;border-bottom-left-radius:0px;margin-bottom: 0px;height: 18px;}
+#topo-central .dropdown-menu li a{margin-right:0 !important;background-color: #00723a;border-radius:5px !important;border: 2px solid #00723a;}
+#topo-central .dropdown-menu a:hover{background-color: #ED9F18 !important;border-radius: 5px;border: 2px solid #00723a;}
+#topo-central .logo-central:hover{background:none}
+/* /TOPO central */
+
+/* GERAL */
+.container.content .col-equerda h1{text-transform: uppercase;}
+.mais-info{color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:normal !important; letter-spacing: 0.12em;}
+.logo-central{margin:50px 0 20px 0;}
+.col-esquerda{margin:0 !important; text-align:left;}
+.col-direita{text-align:left; margin-bottom: 20px;margin-bottom: 20px\9;}
+.col-esquerda h1,
+.col-direita h1{color:#2a4c9c;font-size: 24px;}
+.col-esquerda h3,
+.col-direita h3{color:#000000;font-size: 20px;}
+.voltar-perguntas{color:#333399; font-weight: bold; text-decoration: none; font-size:12px; margin-top:10px; margin-right:10px;}
+.voltar-perguntas:hover{text-decoration: none;}
+.col-esquerda a{color:#333399; font-weight: bold; text-decoration: underline;}
+.ico-perg{background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:8px; height:16px; display: block;float:left;}
+.coluna-sub{border-radius:5px; padding: 10px; overflow: hidden;}
+.cinza-escuro{background:#7f7f7f !important;}
+.cinza-claro{background:#a1a1a1 !important;}
+.cinza-claro-2{background:#f3f3f3 !important;}
+#col-sub{overflow:hidden;}
+#col-sub .fundo-cinza {*width:520px;}
+#col-sub{margin-top:20px}
+#col-sub ul{margin:0;}
+#col-sub ul li a.formas{display: block;margin: 0 0 0 0;padding: 13px;margin:1px;color:#333;}
+#col-sub ul li:nth-child(odd) {background: #e1e1e1; list-style:none;}
+#col-sub ul li:nth-child(even) {background: #eaeaea; list-style:none;}
+#col-sub ul li {*background: #eaeaea; *list-style:none;*float:left;*width:564px;}
+#col-sub .icon-circle-arrow-right{background-position: -241px -143px;float:left;margin: 14px 7px 0 15px;}
+#col-sub .icon-circle-arrow-down{background-position: -313px -143px;float:left;margin: 14px 7px 0 15px;}
+#col-sub .fundo-cinza{background: #FFF !important; padding: 1px 10px 1px 10px;}
+.texto-branco{color:#FFF !important;}
+.texto-preto{color:#333 !important;}
+.texto-verde{color:#106d41 !important}
+
+#row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:20px auto;}
+#email-central .pageheader{margin:0 0 10px 0;}
+#email-central input[type=text]{width: 295px;*margin-left:-120px;}
+#email-central input[type=checkbox]{width: 30px;}
+#email-central textarea{*margin-left:-120px;}
+#email-central .botoes-form{margin-left:120px;}
+#email-central .help-block{width:350px;}
+#email-central .cancelar{color:#333 !important;text-decoration:none;}
+#email-central .control-group.success .help-block{margin-top:10px;}
+#email-central .form-horizontal .control-label{width:115px;}
+#email-central .form-horizontal .controls{margin-left:122px;}
+#email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
+#email-central label.valid {width: 24px; height: 24px; background: url(/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
+#email-central label.error {font-weight: bold; color: red; padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}
+#email-central .trocar{position: absolute;left: 8px;}
+#email-central .form-horizontal .control-group {margin-bottom:10px;}
+#email-central .alert h4 {color:#106d41 ;text-transform: none;}
+#email-central .btn{text-decoration: none !important;}
+/* /GERAL */
