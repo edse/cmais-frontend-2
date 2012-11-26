@@ -2167,7 +2167,7 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 .ui-datepicker .ui-datepicker-prev-hover span { background-image: url("/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");  }
 .ui-datepicker .ui-datepicker-next-hover span {  background-image: url("/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");}
 .ui-datepicker th span { text-transform:uppercase; color:#333; font-size:11px; }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { color:#333; border:none; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { color:#333; border:none; background:#fff; }
 .ui-state-default.ui-state-highlight,
 .ui-state-default.ui-state-hover { background:#ee3a24; color:#fff; }
 .ui-state-default,
@@ -2175,3 +2175,4 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 .ui-datepicker-month { text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; }
 .ui-datepicker-month { font-size: 14px; }
 .ui-state-default { font-size:13px; }
+.ui-widget-content {  background:url("../../../images/capaPrograma/provocacoes/bg-pagRV.jpg") repeat scroll 0 0 transparent; border-radius:0;  }
