@@ -91,7 +91,7 @@ $(document).ready(function(){
           <ul>
             <li>
               <i class="icon-circle-arrow-right <?php if(isset($_GET['step'])&&$_GET['step']==1){echo "icon-circle-arrow-down";}else{echo "icon-circle-arrow-right";}?> seta"></i>  
-              <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#email-central">
+              <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#email-central" data-parent="#col-sub">
                 Por meio eletrônico
               </a>
               <div id="email-central" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step'] == 1)){echo "on";}else{echo "in";}?>"style="overflow: hidden; clear: both;">
