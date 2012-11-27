@@ -29,8 +29,8 @@ $(document).ready(function(){
   function goTop(){
     $('html, body').animate({
       scrollTop: $('#fundo-topo').offset().top
-    }, "slow"); 
-  } 
+    }, "slow");
+  }
   function beginAgain(){
     $('.row').slideUp('fast',function(){
       $('#row1').fadeIn('fast');
