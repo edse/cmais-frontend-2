@@ -57,19 +57,19 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    <div class="col-esquerda span5">
-      <?php if(isset($displays['chamada'])):?>
-      <?php if(count($displays['chamada']) > 0): ?>
-      <?php foreach($displays['chamada'] as $k=>$d): ?>
-      <h1><?php echo $d->getTitle() ?></h1>
-      <h3><?php echo $d->getDescription() ?></h3>
-      <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
-      <br/> 
-      <a href="/perguntas-frequentes" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
-    <?php endforeach; ?>
-    </div>
-     <?php endif; ?>
+    <?php if(isset($displays['chamada'])):?>
+    <?php if(count($displays['chamada']) > 0): ?>
+        <div class="col-esquerda span5"> 
+          <?php foreach($displays['chamada'] as $k=>$d): ?>
+            <h1><?php echo $d->getTitle() ?></h1>
+            <h3><?php echo $d->getDescription() ?></h3>
+            <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
+            <br/> 
+            <a href="/perguntas-frequentes" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
+          <?php endforeach; ?>
+        </div>
       <?php endif; ?>
+    <?php endif; ?>
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="col-direita span7 ">
