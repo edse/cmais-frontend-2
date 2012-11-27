@@ -1,5 +1,5 @@
 <script>
-$(document).ready(function(){
+
   $(".collapse").collapse();
   $(".dicas").click(function(){
     $(this).prev().toggleClass('icon-minus');
@@ -39,7 +39,7 @@ $(document).ready(function(){
       $('#f1_email').val("");     
     });
   }
-});
+
 </script>
 <?php if($_GET["step"]==1):?>
 <script>
