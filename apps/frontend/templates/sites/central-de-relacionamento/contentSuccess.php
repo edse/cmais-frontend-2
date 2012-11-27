@@ -12,7 +12,7 @@ $(document).ready(function(){
       scrollTop: $($(this).attr('href')).offset().top
     }, "slow");
   });
-});
+}); 
 </script>
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 <!--container-->

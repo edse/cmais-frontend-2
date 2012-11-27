@@ -30,7 +30,7 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $('#fundo-topo').offset().top
     }, "slow"); 
-  }
+  } 
   function beginAgain(){
     $('.row').slideUp('fast',function(){
       $('#row1').fadeIn('fast');

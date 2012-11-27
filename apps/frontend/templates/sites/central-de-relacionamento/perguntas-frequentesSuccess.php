@@ -21,7 +21,7 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    
+     
     <div class="col-esquerda span5">
       <a id="perguntas"></a>
       <h1>PERGUNTAS FREQUENTES</h1>
