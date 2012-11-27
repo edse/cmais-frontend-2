@@ -1154,8 +1154,45 @@ $(document).ready(function(){
                 </div>
               </li>
               <?php endforeach; ?>
-          </ul>                        
-        </div>
+          </ul>
+          
+           <!--descricao vagas-->
+           <div class="accordion" id="accordion2">
+              <!--tipo da vaga-->
+              <div class="accordion-group">                             
+              </div>
+              <!--tipo da vaga-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego3">
+                    Programa de estágio
+                  </a>
+                  <hr class="tipo"/>
+                </div>
+                <!--vagas relacionadas-->
+                <div id="emprego3" class="accordion-body collapse on">
+                  teste
+                </div>
+                <!--/vagas relacionadas-->  
+             </div>
+             <!--/tipo da vaga-->
+             <!--tipo da vaga-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego4">
+                    Vagas para deficientes
+                  </a>
+                  <hr class="tipo"/>
+                </div>
+                <!--vagas relacionadas-->
+                <div id="emprego4" class="accordion-body collapse on">
+                  teste
+                </div>
+                <!--/vagas relacionadas-->  
+             </div>
+             <!--/tipo da vaga-->
+            </div>
+            <!--/descricao vagas-->
       </div>           
       <!-- /COLUNA SUB DIR 1 -->
     </div>
