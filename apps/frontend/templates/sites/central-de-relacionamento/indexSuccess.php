@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
 $(document).ready(function(){
   $(".collapse").collapse();
   $(".dicas").click(function(){
