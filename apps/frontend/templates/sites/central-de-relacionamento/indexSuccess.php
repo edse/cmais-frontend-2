@@ -1146,7 +1146,7 @@ $(document).ready(function(){
             <?php foreach($displays["formas-de-atendimento"] as $d): ?> 
               <li>
                 <i class="icon-circle-arrow-right"></i>  
-                <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>">
+                <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>"  data-parent="#col-sub">
                   <?php echo $d->getTitle() ?>
                 </a>
                 <div id="<?php echo $d->getId() ?>" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step']==1)){echo"in";}else{echo"in";}?>"style="overflow: hidden; clear: both;">
