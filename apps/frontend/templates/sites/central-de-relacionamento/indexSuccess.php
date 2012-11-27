@@ -1159,9 +1159,6 @@ $(document).ready(function(){
            <!--descricao vagas-->
            <div class="accordion" id="accordion2">
               <!--tipo da vaga-->
-              <div class="accordion-group">                             
-              </div>
-              <!--tipo da vaga-->
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego3">
