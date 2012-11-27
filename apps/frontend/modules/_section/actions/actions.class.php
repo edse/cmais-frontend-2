@@ -1328,6 +1328,12 @@ class _sectionActions extends sfActions
         die();
       } 
     } 
+    if($this->section->Site->getSlug() == "central-de-relacionamento") {
+      if($this->pager->count() == 1){
+        header("Location: ".$this->pager->getCurrent()->retriveUrl());
+        die();
+      } 
+    } 
     
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() == "pedagogia-unesp")){
       $t = explode("-old", $this->section->Site->getSlug());
