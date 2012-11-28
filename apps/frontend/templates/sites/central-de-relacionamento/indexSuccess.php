@@ -1,11 +1,24 @@
 <script type="text/javascript">
 $(document).ready(function(){
-  $(".collapse").collapse();
+
   $(".dicas").click(function(){
     $(this).prev().toggleClass('icon-minus');
   });
   $('.formas').click(function(){
     $(this).prev().toggleClass('icon-circle-arrow-down');
+    goTop2()
+  });
+  $('.collapse').on('hide',function(){
+    $(this).prev().find('i').removeClass('icon-circle-arrow-down');
+    $(this).prev().find('a.fechar').fadeOut('fast');
+  })
+  $('.collapse').on('show',function(){
+     $(this).prev().find('a.fechar').fadeIn('fast');
+     if($(this).prev().find('a.fechar').is(":visible"))
+      goTop2();
+  });
+  $('.fechar').click(function(){
+     goTop();
   });
   $('.backBegin, .outro-email').click(function(){
     goTop();
@@ -83,18 +96,23 @@ $(document).ready(function(){
         </ul>  
       </p>
       <br/>
+
       <!-- COLUNA SUB DIR 1 -->
       <div id="cadastro" class="coluna-sub cinza-claro-2 ">
-         <span class="titulo bold">Tema</span>
+        <span class="titulo bold">Tema</span>
          <!-- COLUNA SUB DIR 2 -->
          <div id="col-sub" class="texto-preto">
-          <ul>
-            <li>
-              <i class="icon-circle-arrow-right <?php if(isset($_GET['step'])&&$_GET['step']==1){echo "icon-circle-arrow-down";}else{echo "icon-circle-arrow-right";}?> seta"></i>  
-              <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#email-central" data-parent="#col-sub">
-                Por meio eletrônico
-              </a>
-              <div id="email-central" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step'] == 1)){echo "on";}else{echo "in";}?>"style="overflow: hidden; clear: both;">
+            <div class="accordion-group">
+              <div class="accordion-heading escuro">
+                <i class="icon-circle-arrow-down <?php if(isset($_GET['step'])&&$_GET['step']==1){echo "icon-circle-arrow-down";}else{echo "icon-circle-arrow-right";}?> seta"></i>  
+                <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#email-central" data-parent="#col-sub">
+                  Por meio eletrônico
+                </a>
+                <a href="javascript:;"class="fechar" data-toggle="collapse" data-target="#email-central" data-parent="#col-sub">fechar</a>
+              </div>
+              
+
+                                <div id="email-central" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step'] == 1)){echo "on";}else{echo "in";}?>"style="overflow: hidden; clear: both;">
               <!--form envio-->
               <!-- row1 -->
               <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
@@ -1142,23 +1160,34 @@ $(document).ready(function(){
                 </script>
               <!--form envio-->
               </div>
-            </li> 
-            <?php foreach($displays["formas-de-atendimento"] as $d): ?> 
-              <li>
+                
+
+            </div>
+                <?php $i=0;?>
+              <?php foreach($displays["formas-de-atendimento"] as $d): ?>
+                <?php $i++;?>
+            <div class="accordion-group">
+              <div class="accordion-heading <?php if($i%2==0){ echo "escuro";}else{echo"claro";}?>">
                 <i class="icon-circle-arrow-right"></i>  
                 <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>"  data-parent="#col-sub">
                   <?php echo $d->getTitle() ?>
                 </a>
-                <div id="<?php echo $d->getId() ?>" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step']==1)){echo"in";}else{echo"in";}?>"style="overflow: hidden; clear: both;">
+                <a href="javascript:;"class="fechar" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>" data-parent="#col-sub" style="display:none;">fechar</a>
+              </div>
+              
+                <div id="<?php echo $d->getId() ?>" class="fundo-cinza collapse"style="overflow: hidden; clear: both;">
                   <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>
                 </div>
-              </li>
-              <?php endforeach; ?>
-          </ul>
-        </div>           
-        <!-- /COLUNA SUB DIR 2 -->  
-      </div>           
-      <!-- /COLUNA SUB DIR 1 -->
+  
+            </div>
+            <?php endforeach; ?>
+          </div>
+          <!-- COLUNA SUB DIR 2 -->
+        </div>
+        <!-- COLUNA SUB DIR 1 -->  
+        
+ 
+      
     </div>
     <!--/coluna direita-->
   </div>
