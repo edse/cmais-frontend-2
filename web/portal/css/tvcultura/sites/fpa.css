@@ -85,7 +85,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 
 .col-direita a.inscricao{padding:  20px;min-width:352px;}
 .col-direita a.conheca {padding:20px 0 0 0;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;}
-.col-direita{margin-top:65px; text-align:left;}
+.col-direita{text-align:left;}
 .col-direita a.inscricao p{margin:10px 0 0 0; text-align:left; color:#fff !important; font-size: 24px;}
 .col-direita a.inscricao p:first-child{font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important;}
 .col-direita a.inscricao p:last-child{font-size: 14px; margin:4px 0 0 0; color:#fff !important;}
