@@ -1155,7 +1155,8 @@ $(document).ready(function(){
               </li>
               <?php endforeach; ?>
           </ul>
-          
+        </div>           
+        <!-- /COLUNA SUB DIR 2 -->  
       </div>           
       <!-- /COLUNA SUB DIR 1 -->
     </div>
