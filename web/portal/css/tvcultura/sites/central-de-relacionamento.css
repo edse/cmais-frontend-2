@@ -32,7 +32,7 @@
 .col-direita h1{color:#2a4c9c;font-size: 24px;}
 .col-esquerda h3,
 .col-direita h3{color:#000000;font-size: 20px;}
-.voltar-perguntas{color:#333399; font-weight: bold; text-decoration: none; font-size:12px; margin-top:10px; margin-right:10px;}
+.voltar-perguntas, #col-sub .fechar{color:#333399; font-weight: bold; text-decoration: none; font-size:12px; margin-top:10px; margin-right:10px;}
 .voltar-perguntas:hover{text-decoration: none;}
 .col-esquerda a{color:#333399; font-weight: bold; text-decoration: underline;}
 .ico-perg{background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:8px; height:16px; display: block;float:left;}
@@ -44,15 +44,21 @@
 #col-sub .fundo-cinza {*width:520px;}
 #col-sub{margin-top:20px}
 #col-sub ul{margin:0;}
-#col-sub ul li a.formas{display: block;margin: 0 0 0 0;padding: 13px;margin:1px;color:#333;}
-#col-sub ul li:nth-child(odd) {background: #e1e1e1; list-style:none;}
-#col-sub ul li:nth-child(even) {background: #eaeaea; list-style:none;}
-#col-sub ul li {*background: #eaeaea; *list-style:none;*float:left;*width:564px;}
+#col-sub a.formas{display: block;margin: 0 0 0 0 !important;padding: 13px;margin:1px;color:#333;}
+#col-sub {*background: #eaeaea; *list-style:none;*float:left;*width:564px;}
 #col-sub .icon-circle-arrow-right{background-position: -241px -143px;float:left;margin: 14px 7px 0 15px;}
 #col-sub .icon-circle-arrow-down{background-position: -313px -143px;float:left;margin: 14px 7px 0 15px;}
-#col-sub .fundo-cinza{background: #FFF !important; padding: 1px 10px 1px 10px;}
+#col-sub .fundo-cinza{background: #FFF;}
+#col-sub .fundo-cinza p{padding:10px}
+#col-sub .accordion-heading{position:relative;}
+#col-sub .box-inner{margin:10px}
+#col-sub .page-header {padding: 0 9px;margin: 0px 0 20px;}
+#col-sub .row{margin-top:20px;}
+#col-sub .fechar{position: absolute;right: -9px;top: -9px;width: 538px;height: 15px;text-align: right;padding: 14px;}
+#col-sub .escuro{background: #e1e1e1; border:none;}
+#col-sub .claro{background: #eaeaea; border:none;}
 .texto-branco{color:#FFF !important;}
-.texto-preto{color:#333 !important;} 
+.texto-preto{color:#333 !important;}
 .texto-verde{color:#106d41 !important}
 
 #row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:20px auto;}
