@@ -493,8 +493,7 @@ class _sectionActions extends sfActions
               ->andWhere('s.is_visible = ?', 1)
               ->orderBy('s.display_order')
               ->execute();
-          }         
-          elseif($this->section->Site->getSlug() == "radarcultura"){
+          }elseif($this->section->Site->getSlug() == "radarcultura"){
             $this->setLayout('radarcultura');
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
@@ -505,8 +504,7 @@ class _sectionActions extends sfActions
               ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
               ->orderBy('s.display_order')
               ->execute();
-          }
-          else{
+          }else{
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -1103,9 +1101,6 @@ class _sectionActions extends sfActions
     elseif($this->site->slug == 'sic'){
       $this->setLayout(false);
     }
-    elseif($this->site->slug == 'central-de-relacionamento'){
-      $this->setLayout(false);
-    }   
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
@@ -1325,6 +1320,12 @@ class _sectionActions extends sfActions
     }
     
     if($this->section->Site->getSlug() == "sic") {
+      if($this->pager->count() == 1){
+        header("Location: ".$this->pager->getCurrent()->retriveUrl());
+        die();
+      } 
+    } 
+    if($this->section->Site->getSlug() == "central-de-relacionamento") {
       if($this->pager->count() == 1){
         header("Location: ".$this->pager->getCurrent()->retriveUrl());
         die();
