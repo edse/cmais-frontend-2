@@ -78,7 +78,7 @@ $(document).ready(function(){
             <h3><?php echo $d->getDescription() ?></h3>
             <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
             <br/> 
-            <a href="/perguntas-frequentes" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
+            <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>

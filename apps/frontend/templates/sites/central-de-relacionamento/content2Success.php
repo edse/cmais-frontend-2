@@ -27,7 +27,7 @@ $(document).ready(function(){
       <h1><?php echo $asset->getTitle() ?></h1>
       <?php echo html_entity_decode($asset->AssetContent->render()) ?>
       <br/>
-      <a href="<?php echo $asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="titulo"><i class=" icon-align-left icon-white"></i>&nbsp;Clique Aqui para mais informações</i></a>
+      <a href="<?php echo $asset->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="titulo"><i class=" icon-align-left icon-white"></i>&nbsp;Clique Aqui para mais informações</i></a>
     </div>
     <!--/coluna esquerda-->
   </div>
