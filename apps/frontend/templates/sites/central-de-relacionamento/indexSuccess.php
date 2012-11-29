@@ -15,7 +15,7 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    <div class="span5">
+    <div class="span5" style="margin:0;">
       <div class="col-esquerda central "> 
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
