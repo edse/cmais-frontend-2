@@ -64,9 +64,9 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #linha-do-tempo .navbar-fixed-top a.decadas.active{background-position: 0 0;color:#FFF;background-position: 0 0;}
 #linha-do-tempo .navbar-fixed-top a.decadas:hover{color:#FFF; text-decoration: none; background-position: 0 0px; }
 /*#linha-do-tempo .navbar-fixed-top a.decadas.first{margin-right: 55px;padding: 0 0 0 3px;}*/
-#linha-do-tempo .redes {float: left; background:yellow;}
-#linha-do-tempo .redes .curtir {width: 238px;float: left;margin-left: 0;text-align: left;}
-#linha-do-tempo .titulo{margin:25px 0 0 6px; float:left;}
+#linha-do-tempo .redes {float: left;width: 368px !important;margin-top: 6px;}
+#linha-do-tempo .redes .curtir {width: 202px;float: left;margin-left: 0;text-align: left;}
+#linha-do-tempo .titulo{margin:14px 0 0 6px; float:left;}
 #linha-do-tempo ul li{color: #FFF; font-size: 14px; font-family: Arial, Helvetica, sans-serif;margin:20px 9.2pt;}
 #linha-do-tempo ul li p{margin-left:9.2pt;}
 #linha-do-tempo h2{font-family:"gotham_lightregular"; font-size:42px;color:#FFF;font-weight: normal;margin:0 0 20px 8px;}

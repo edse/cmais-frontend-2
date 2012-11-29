@@ -1,59 +1,4 @@
-<script type="text/javascript">
-$(document).ready(function(){
 
-  $(".dicas").click(function(){
-    $(this).prev().toggleClass('icon-minus');
-  });
-  $('.formas').click(function(){
-    $(this).prev().toggleClass('icon-circle-arrow-down');
-    goTop2()
-  });
-  $('.collapse').on('hide',function(){
-    $(this).prev().find('i').removeClass('icon-circle-arrow-down');
-    $(this).prev().find('a.fechar').fadeOut('fast');
-  })
-  $('.collapse').on('show',function(){
-     $(this).prev().find('a.fechar').fadeIn('fast');
-     if($(this).prev().find('a.fechar').is(":visible"))
-      goTop2();
-  });
-  $('.fechar').click(function(){
-     goTop();
-  });
-  $('.backBegin, .outro-email').click(function(){
-    goTop();
-    beginAgain();
-  })
-  $('.backForm').click(function(){
-    $('.row').fadeOut('fast',function(){
-      $('#row4').fadeIn('fast');
-      $('#f4_mais').removeAttr('checked');
-      $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
-      $('#btn4, #message').show(); 
-      $('.control-group').removeClass('success').removeClass('error');
-      $('#f4_cod_assunto, #f4_mensagem').removeAttr('disabled');     
-    });
-  });
-  function goTop2(){
-    $('html, body').animate({
-      scrollTop: $('.coluna-sub').offset().top
-    }, "slow");
-  }
-  function goTop(){
-    $('html, body').animate({
-      scrollTop: $('#fundo-topo').offset().top
-    }, "slow");
-  }
-  function beginAgain(){
-    $('.row').slideUp('fast',function(){
-      $('#row1').fadeIn('fast');
-      $('.control-group').removeClass('success').removeClass('error');
-      $("label.error.valid").remove()
-      $('#f1_email').val("");     
-    });
-  }
-});
-</script>
 <?php if($_GET["step"]==1):?>
 <script>
 $(document).ready(function(){
@@ -78,7 +23,7 @@ $(document).ready(function(){
             <h3><?php echo $d->getDescription() ?></h3>
             <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
             <br/> 
-            <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
+            <a href="/perguntas-frequentes" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
@@ -112,13 +57,13 @@ $(document).ready(function(){
               </div>
               
 
-                                <div id="email-central" class="fundo-cinza collapse <?php if(isset($_GET['step'])&&($_GET['step'] == 1)){echo "on";}else{echo "in";}?>"style="overflow: hidden; clear: both;">
+             <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <!-- row1 -->
               <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
                   <h1>Email</h1>
-                  <span class="label label-warning">Verificação se o email está cadastrado</span> 
+                  <span class="label label-green">Verificação se o email está cadastrado</span> 
                 </div>  
                 <form class="form-horizontal" id="form1" method="post">
                   <input type="hidden" name="step" value="1" />
@@ -133,7 +78,7 @@ $(document).ready(function(){
                     </div>
                     <div class="botoes-form">
                       <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
-                      <button type="submit" class="btn btn-success" id="btn1">Próximo Passo</button>
+                      <button type="submit" class="btn btn-primary" id="btn1">Próximo Passo</button>
                     </div>
                   </fieldset>
                 </form>
@@ -143,7 +88,7 @@ $(document).ready(function(){
               <div class="row" id="row2">
                 <div class="page-header">
                   <h1>Formulário de cadastro</h1>
-                  <p><span class="label label-info">Email não cadastrado</span></p>
+                  <p><span class="label label-red">Email não cadastrado</span></p>
                 </div>
                 <form class="form-horizontal" id="form2" method="post">
                   <input type="hidden" name="step" value="2" />
@@ -707,9 +652,6 @@ $(document).ready(function(){
  
                     <h4 class="alert-heading">Obrigado. Sua mensagem foi enviada!</h4>
                     <p>Se aplicável você receberá uma resposta em seu email.</p>
-                    <p>
-                      <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
-                    </p>
                   </div>
                 </div>
                 <!-- /row6 -->
@@ -722,9 +664,6 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi efetuado com sucesso!</h4>
                     <p>Você deve validar seu cadastro cliando no link que foi enviado para o seu email.</p>
-                    <p>
-                      <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
-                    </p>
                   </div>
                 </div>
                 <!-- /row7 -->
@@ -756,7 +695,6 @@ $(document).ready(function(){
                     <p></p>
                     <p>
                       <button class="btn btn-success backForm">Continuar Envio</button>
-                      <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
                     </p>
                   </div>
                 </div>
@@ -767,12 +705,62 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
-                
+                  $(".dicas").click(function(){
+                    $(this).prev().toggleClass('icon-minus');
+                  });
+                  $('.formas').click(function(){
+                    $(this).prev().toggleClass('icon-circle-arrow-down');
+                    goTop2();
+                  });
+                  $('.collapse').on('hide',function(){
+                    $(this).prev().find('i').removeClass('icon-circle-arrow-down');
+                    $(this).prev().find('a.fechar').fadeOut('fast');
+                  })
+                  $('.collapse').on('show',function(){
+                     $(this).prev().find('a.fechar').fadeIn('fast');
+                     if($(this).prev().find('a.fechar').is(":visible"))
+                      goTop2();
+                  });
+                  $('.fechar').click(function(){
+                     goTop();
+                  });
+                  $('.backBegin, .outro-email').click(function(){
+                    goTop();
+                    beginAgain();
+                  })
+                  $('.backForm').click(function(){
+                    $('.row').fadeOut('fast',function(){
+                      $('#row4').fadeIn('fast');
+                      $('#f4_mais').removeAttr('checked');
+                      $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
+                      $('#btn4, #message').show(); 
+                      $('.control-group').removeClass('success').removeClass('error');
+                      $('#f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
+                      goTop2();     
+                    });
+                  });
+                  function goTop2(){
+                    $('html, body').animate({
+                      scrollTop: $('.coluna-sub').offset().top
+                    }, "slow");
+                  }
+                  function goTop(){
+                    $('html, body').animate({
+                      scrollTop: $('#fundo-topo').offset().top
+                    }, "slow");
+                  }
+                  function beginAgain(){
+                    $('.row').slideUp('fast',function(){
+                      $('#row1').fadeIn('fast');
+                      $('.control-group').removeClass('success').removeClass('error');
+                      $("label.error.valid").remove()
+                      $('#f1_email').val("");     
+                    });
+                  }
                   $.validator.addMethod("cep", function(value, element) {
                     response = (value.indexOf('_')<0) ? true : false;
                     return response;
                   }, "Por favor, forneça um número válido.");
-                
                   $.validator.addMethod("telefone", function(value, element) {
                     response = true;
                     /*
@@ -1039,6 +1027,7 @@ $(document).ready(function(){
                         success: function(data){
                           $('#loader4').hide();
                           $('#btn4').show();
+                          goTop2();
                           if(data.script != ""){
                             eval(data.script);
                           }
@@ -1167,7 +1156,7 @@ $(document).ready(function(){
               <?php foreach($displays["formas-de-atendimento"] as $d): ?>
                 <?php $i++;?>
             <div class="accordion-group">
-              <div class="accordion-heading <?php if($i%2==0){ echo "escuro";}else{echo"claro";}?>">
+              <div class="accordion-heading escuro">
                 <i class="icon-circle-arrow-right"></i>  
                 <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#<?php echo $d->getId() ?>"  data-parent="#col-sub">
                   <?php echo $d->getTitle() ?>
