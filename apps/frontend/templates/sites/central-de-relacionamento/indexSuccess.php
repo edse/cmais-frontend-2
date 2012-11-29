@@ -15,36 +15,61 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    <?php if(isset($displays['chamada'])):?>
-    <?php if(count($displays['chamada']) > 0): ?>
-        <div class="col-esquerda span5"> 
+    <div class="span5">
+      <div class="col-esquerda central "> 
+      <?php if(isset($displays['chamada'])):?>
+        <?php if(count($displays['chamada']) > 0): ?>
           <?php foreach($displays['chamada'] as $k=>$d): ?>
             <h1><?php echo $d->getTitle() ?></h1>
             <h3><?php echo $d->getDescription() ?></h3>
-            <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
+            <?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?>
             <br/> 
-            <a href="/perguntas-frequentes" class="btn btn-primary btn-large mais-info" title="Perguntas Frequentes"><i class="ico-perg"></i>&nbsp;&nbsp;Perguntas Frequentes</i></a>
+            <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info" title="Perguntas Frequentes">
+              <div class="container-btn">
+                <i class="ico-perg"></i>Perguntas Frequentes</i>
+              </div>
+            </a>
           <?php endforeach; ?>
-        </div>
+        <?php endif; ?>
       <?php endif; ?>
-    <?php endif; ?>
+      </div>
+      <div class="col-esquerda">
+        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
+          <i class="icone"></i>
+          <span class="tit-perg">Compra de Dvd´s</span>
+          <span class="desc-perg">Lorem lorem ipsulum</span>
+        </a>
+        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
+          <i class="icone sintonia"></i>
+          <span class="tit-perg">Sintonia</span>
+          <span class="desc-perg">Lorem lorem ipsulum</span>
+        </a>
+        <a href="http://www2.tvcultura.com.br/selecao/" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">
+          <i class="icone trabalhe-conosco"></i>
+          <span class="tit-perg">Trabalhe-Conosco</span>
+          <span class="desc-perg">Lorem lorem ipsulum</span>
+        </a>
+      </div>
+    </div>
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="col-direita span7 ">
-      <h1>MELHORE SEU RELACIONAMENTO CONOSCO</h1>
-      <p>
-        <ul>
-          <li>1) Mantenha sempre seus dados atualizados</li>
-          <li>2) Preencha os campos complementares de seu cadastro</li>
-          <li>3) Indique se quer ou não receber mensagens nossas via SMS, E-mail</li>
-          <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
-        </ul>  
-      </p>
+      <div class="coluna-sub cinza-claro-2">
+        <h1>MELHORE SEU RELACIONAMENTO CONOSCO</h1>
+        <p>
+          <ul>
+            <li>1) Mantenha sempre seus dados atualizados</li>
+            <li>2) Preencha os campos complementares de seu cadastro</li>
+            <li>3) Indique se quer ou não receber mensagens nossas via SMS, E-mail</li>
+            <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
+          </ul>  
+        </p>
+      </div>  
       <br/>
 
       <!-- COLUNA SUB DIR 1 -->
-      <div id="cadastro" class="coluna-sub cinza-claro-2 ">
-        <span class="titulo bold">Tema</span>
+      <div id="cadastro" class="coluna-sub cinza-claro-2">
+        <span class="titulo bold"><?php echo $displays["formas-de-atendimento"][0]->Block->getTitle();?></span>
          <!-- COLUNA SUB DIR 2 -->
          <div id="col-sub" class="texto-preto">
             <div class="accordion-group">
@@ -591,6 +616,15 @@ $(document).ready(function(){
                       <div id="message">
                       
                       <div class="control-group">
+                        <label class="control-label" for="f4_cod_grupo">Grupo</label>
+                        <div class="controls">
+                          <select name="f4_cod_grupo" id="f4_cod_grupo" onchange="programas();">
+                            <option value="--">teste 1</option>
+                            <option value="--- ">teste 2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="control-group f4" style="display:none;">
                         <label class="control-label" for="f4_cod_programa">Programa</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
@@ -598,13 +632,13 @@ $(document).ready(function(){
                           </select>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group f4" style="display:none;">
                         <label class="control-label" for="f4_cod_assunto">Assunto</label>
                         <div class="controls">
                           <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group f4" style="display:none;">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
                           <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
@@ -739,24 +773,6 @@ $(document).ready(function(){
                       goTop2();     
                     });
                   });
-                  function goTop2(){
-                    $('html, body').animate({
-                      scrollTop: $('.coluna-sub').offset().top
-                    }, "slow");
-                  }
-                  function goTop(){
-                    $('html, body').animate({
-                      scrollTop: $('#fundo-topo').offset().top
-                    }, "slow");
-                  }
-                  function beginAgain(){
-                    $('.row').slideUp('fast',function(){
-                      $('#row1').fadeIn('fast');
-                      $('.control-group').removeClass('success').removeClass('error');
-                      $("label.error.valid").remove()
-                      $('#f1_email').val("");     
-                    });
-                  }
                   $.validator.addMethod("cep", function(value, element) {
                     response = (value.indexOf('_')<0) ? true : false;
                     return response;
@@ -991,6 +1007,9 @@ $(document).ready(function(){
                         minlength: 9,
                         cep: true
                       },
+                      f4_cod_grupo: {
+                        required: "#f4_mais:!checked"
+                      },
                       f4_cod_programa: {
                         required: "#f4_mais:!checked"
                       },
@@ -1143,6 +1162,28 @@ $(document).ready(function(){
                         alert('Erro!');
                       }
                     }
+                  });
+                }
+                
+                function programas(){
+                  $('.control-group.f4').slideDown('fast'); 
+                }
+                function goTop2(){
+                  $('html, body').animate({
+                    scrollTop: $('.coluna-sub').offset().top
+                  }, "slow");
+                }
+                function goTop(){
+                  $('html, body').animate({
+                    scrollTop: $('#fundo-topo').offset().top
+                  }, "slow");
+                }
+                function beginAgain(){
+                  $('.row').slideUp('fast',function(){
+                    $('#row1').fadeIn('fast');
+                    $('.control-group').removeClass('success').removeClass('error');
+                    $("label.error.valid").remove()
+                    $('#f1_email').val("");     
                   });
                 }
                 
