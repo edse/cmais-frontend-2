@@ -219,7 +219,7 @@
 
                   </script>
                 </div>
-                <p class="btn-veja"><span>Arquivo</span></p>
+                <!--p class="btn-veja"><span>Arquivo</span></p-->
                 <div id="datepicker"></div>
               </div>
               <!-- /direita -->
