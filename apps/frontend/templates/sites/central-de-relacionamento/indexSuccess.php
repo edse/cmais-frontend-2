@@ -1,6 +1,6 @@
 <?php if(isset($_GET["step"])==1):?>
 <script>
-$(document).ready(function(){
+$(document).ready(function(){ 
   $('html, body').animate({
     scrollTop: $('#cadastro').offset().top
   }, "slow");
@@ -15,7 +15,7 @@ $(document).ready(function(){
   <div class="row-fluid">
     <!--coluna esquerda-->
     <div class="span5" style="margin:0;"> 
-      <div class="col-esquerda central "> 
+      <div class="col-esquerda central ">  
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
           <?php foreach($displays['chamada'] as $k=>$d): ?>
@@ -33,17 +33,17 @@ $(document).ready(function(){
       <?php endif; ?>
       </div>
       <div class="col-esquerda">
-        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
-         
+               
          <?php if(isset($displays['box-1'])):?>
         <?php if(count($displays['box-1']) > 0): ?>
        	<?php foreach($displays['box-1'] as $k=>$d): ?> 
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
           <i class="icone"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
-        </a>
+        </a> 
          <?php endforeach; ?>
-        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes"></a>
+        
           
            <?php endif; ?>
         <?php endif; ?>
@@ -51,25 +51,26 @@ $(document).ready(function(){
           <?php if(isset($displays['box-2'])):?>
         <?php if(count($displays['box-2']) > 0): ?>
        	<?php foreach($displays['box-2'] as $k=>$d): ?>
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
           <i class="icone sintonia"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
          <?php endforeach; ?>
-        	 <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes"></a>
-         <?php endif; ?>
+        	          <?php endif; ?>
        	 <?php endif; ?>
          
           
           <?php if(isset($displays['box-3'])):?>
         <?php if(count($displays['box-3']) > 0): ?>
        	<?php foreach($displays['box-3'] as $k=>$d): ?>
-          <i class="icone trabalhe-conosco"></i>
+ 		<a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">          
+ 			<i class="icone trabalhe-conosco"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
         <?php endforeach; ?>
-        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes"></a>
+       
         	 
          <?php endif; ?>
        	 <?php endif; ?>
