@@ -2176,3 +2176,14 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 .ui-datepicker-month { font-size: 14px; }
 .ui-state-default { font-size:13px; }
 .ui-widget-content {  background:url("../../../images/capaPrograma/provocacoes/bg-pagRV.jpg") repeat scroll 0 0 transparent; border-radius:0;  }
+
+.ui-datepicker .ui-datepicker-next-hover span,
+.ui-datepicker .ui-datepicker-prev-hover span,
+.ui-icon.ui-icon-circle-triangle-w:hover,
+.ui-icon.ui-icon-circle-triangle-w,
+.ui-icon.ui-icon-circle-triangle-e:hover,
+.ui-icon.ui-icon-circle-triangle-e { background: url(/portal/images/capaPrograma/provocacoes/seta-calendario.png) no-repeat; width: 11px; height:11px; }
+.ui-datepicker .ui-datepicker-next-hover span,
+.ui-icon.ui-icon-circle-triangle-e:hover,
+.ui-icon.ui-icon-circle-triangle-e { background-position:-11px 0; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { margin-top:-5px; }
