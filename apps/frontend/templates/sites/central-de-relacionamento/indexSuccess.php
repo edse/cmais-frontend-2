@@ -37,7 +37,7 @@ $(document).ready(function(){
          
          <?php if(isset($displays['box-1'])):?>
         <?php if(count($displays['box-1']) > 0): ?>
-       	<?php foreach($displays['chamada'] as $k=>$d): ?>
+       	<?php foreach($displays['box-1'] as $k=>$d): ?>
           <i class="icone"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
