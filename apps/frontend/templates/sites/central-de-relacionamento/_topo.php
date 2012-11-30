@@ -1,3 +1,17 @@
+     <?php
+        $displays = array();
+        $blocks = Doctrine_Query::create()
+          ->select('b.*')
+          ->from('Block b, Section s')
+          ->where('b.section_id = s.id')
+          ->andWhere('s.slug = ?', 'home')
+          ->andWhere('s.site_id = ?', $site->id)
+          ->execute();
+      
+        if(count($blocks) > 0){
+          $displays["alerta"] = $blocks[0]->retriveDisplays();
+        }
+      ?>
       <div id="topo-central">
         <div class="row-fluid" style="position: relative;">
           <a href="http://fpa.com.br/central-de-relacionamento" class="pull-left logo-central" title="Fundação Padre Anchieta - Central de Relacionamento">
