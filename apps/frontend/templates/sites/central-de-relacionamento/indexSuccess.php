@@ -34,7 +34,7 @@ $(document).ready(function(){
       </div>
       <div class="col-esquerda">
                
-         <?php if(isset($displays['box-1'])):?>
+        <?php if(isset($displays['box-1'])):?>
         <?php if(count($displays['box-1']) > 0): ?>
        	<?php foreach($displays['box-1'] as $k=>$d): ?> 
         <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
@@ -42,13 +42,11 @@ $(document).ready(function(){
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a> 
-         <?php endforeach; ?>
-        
-          
-           <?php endif; ?>
+        <?php endforeach; ?>      
+        <?php endif; ?>
         <?php endif; ?>
         
-          <?php if(isset($displays['box-2'])):?>
+        <?php if(isset($displays['box-2'])):?>
         <?php if(count($displays['box-2']) > 0): ?>
        	<?php foreach($displays['box-2'] as $k=>$d): ?>
         <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
@@ -56,12 +54,12 @@ $(document).ready(function(){
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
-         <?php endforeach; ?>
-        	          <?php endif; ?>
-       	 <?php endif; ?>
+        <?php endforeach; ?>
+        <?php endif; ?>
+       	<?php endif; ?>
          
           
-          <?php if(isset($displays['box-3'])):?>
+        <?php if(isset($displays['box-3'])):?>
         <?php if(count($displays['box-3']) > 0): ?>
        	<?php foreach($displays['box-3'] as $k=>$d): ?>
  		<a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">          
@@ -70,10 +68,8 @@ $(document).ready(function(){
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
         <?php endforeach; ?>
-       
-        	 
-         <?php endif; ?>
-       	 <?php endif; ?>
+        <?php endif; ?>
+       	<?php endif; ?>
       </div>
     </div>
     <!--/coluna esquerda-->
