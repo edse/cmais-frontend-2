@@ -35,8 +35,8 @@ $(document).ready(function(){
       <div class="col-esquerda">
         <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
          
-         <?php if(isset($displays['chamada-2'])):?>
-        <?php if(count($displays['chamada-2']) > 0): ?>
+         <?php if(isset($displays['box-1'])):?>
+        <?php if(count($displays['box-1']) > 0): ?>
           <i class="icone"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
