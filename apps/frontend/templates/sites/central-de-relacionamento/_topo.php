@@ -5,7 +5,13 @@
           </a>
           <!--DESCRIÇÃO-->
           <div class="desc-site">
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+          	<?php if(isset($displays['descricao'])):?>
+        <?php if(count($displays['descricao']) > 0): ?>
+          <?php foreach($displays['descricao'] as $k=>$d): ?>
+          	            <p><?php echo $d->getDescription() ?></p>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif; ?>
           </div>
           <!--/DESCRIÇÃO-->
         </div>
