@@ -13,7 +13,7 @@ $(document).ready(function(){
   <?php include_partial_from_folder('sites/central-de-relacionamento', 'global/topo', array('site' => $site,'siteSections' => $siteSections, 'section' => $section)) ?>
   <!--colunas-->
   <div class="row-fluid">
-    <!--coluna esquerda-->
+    <!--coluna esquerda--> 
     <div class="span5" style="margin:0;"> 
       <div class="col-esquerda central ">  
       <?php if(isset($displays['chamada'])):?>
