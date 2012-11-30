@@ -1,6 +1,6 @@
 /* TOPO central */
 #topo-central{margin-bottom:30px;overflow: hidden;}
-#topo-central .menu-central ul li a{color:#676767;padding:7px 6px;margin-right: 1px;}
+#topo-central .menu-central ul li a{color:#676767;padding:7px 6px;margin-right: 21px;}
 #topo-central .nav-tabs .dropdown-toggle .caret,
 #topo-central .nav-pills .dropdown-toggle .caret {border-top-color: black;}
 #topo-central .nav-tabs .dropdown-toggle:hover .caret,
@@ -23,19 +23,41 @@
 /* /TOPO central */
 
 /* GERAL */
+.container-btn{width: 288px;margin: 0 auto;}
 .container.content .col-equerda h1{text-transform: uppercase;}
-.mais-info{color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:normal !important; letter-spacing: 0.12em;}
+.mais-info{padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:bold !important; letter-spacing: 0.12em;}
 .logo-central{margin:50px 0 20px 0;}
+.col-esquerda.central{background: #f3f3f3;border-radius: 5px;}
+.col-esquerda .botoes{padding: 4px 10px;margin-top:30px !important; height:90px; background: url(/portal/images/capaPrograma/central-de-relacionamento/patterns-botoes.jpg) repeat-x;}
+.col-esquerda .desc-perg{float: left;text-shadow: none;font-size: 16px;text-transform: none;color: white;font-weight: normal;padding: 5px 0 0 10px;width:281px; height:40px; overflow: hidden; text-align: left;}
+.tit-perg{width: 281px;height: 18px;overflow: hidden;text-align: left;float: left;margin: 15px 0 0 10px;font-size: 16px;text-shadow: none;font-weight: bold !important;}
+.col-esquerda .botoes.blue .tit-perg{color:#fdb813;}
+.col-esquerda .botoes.blue{background-position:0 -361px;}
+.col-esquerda .botoes.blue:hover{background-position:0 -451px;}
+.col-esquerda .botoes.red .tit-perg{color:#7ce2e8;}
+.col-esquerda .botoes.red{background-position:0 0px;}
+.col-esquerda .botoes.red:hover{background-position:0 -92px;}
+.col-esquerda .botoes.green .tit-perg{color:#E1E43D;}
+.col-esquerda .botoes.green{background-position:0 -182px;}
+.col-esquerda .botoes.green:hover{background-position:0 -271px;}
 .col-esquerda{margin:0 !important; text-align:left;}
 .col-direita{text-align:left; margin-bottom: 20px;margin-bottom: 20px\9;}
+.col-esquerda p{width:94%; padding:0 10px;}
+.col-direita p{padding: 5px;}
+.desc-site{float:right; font-weight:bold; font-size:14px; color:#000;bottom: 15px;position: absolute;right: 1px;}
 .col-esquerda h1,
-.col-direita h1{color:#2a4c9c;font-size: 24px;}
+.col-direita h1{color: #2A4C9C;font-size: 22px;width: 94%;padding: 0 10px;margin: 0px 0 -5px 0;}
+.col-direita h1{padding:0; line-height: 22px;margin-bottom:10px;}
+.col-direita li{font-size:14px;}
 .col-esquerda h3,
-.col-direita h3{color:#000000;font-size: 20px;}
+.col-direita h3{color:#000000;font-size: 20px; width:94%;padding:0 10px;}
 .voltar-perguntas, #col-sub .fechar{color:#333399; font-weight: bold; text-decoration: none; font-size:12px; margin-top:10px; margin-right:10px;}
 .voltar-perguntas:hover{text-decoration: none;}
 .col-esquerda a{color:#333399; font-weight: bold; text-decoration: underline;}
-.ico-perg{background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:8px; height:16px; display: block;float:left;}
+.icone{float: left;display:block;width:72px;height:74px; background: url(/portal/images/capaPrograma/central-de-relacionamento/icones-central.png) no-repeat 0 0;}
+.sintonia{background-position: 0 -73px;}
+.trabalhe-conosco{background-position: 0 -144px;}
+.ico-perg{margin:-8px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;float:left;}
 .coluna-sub{border-radius:5px; padding: 10px; overflow: hidden;}
 .cinza-escuro{background:#7f7f7f !important;}
 .cinza-claro{background:#a1a1a1 !important;}

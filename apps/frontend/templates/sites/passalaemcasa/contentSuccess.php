@@ -113,7 +113,7 @@
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
                 </div>
-                <?php include_partial_from_folder('sites/passalaemcasa','global/fb-comments') ?>
+                
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
@@ -143,7 +143,9 @@
                   <!-- SAIBA MAIS -->
                 <?php endif; ?>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                 <?php include_partial_from_folder('blocks','global/visite-cmais', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('sites/passalaemcasa','global/fb-comments') ?>
+                <?php include_partial_from_folder('blocks','global/share-2c-w-comments', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
@@ -162,7 +164,7 @@
               <div class="box-publicidade grid1">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
+                GA_googleFillSlot("home-geral300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
@@ -252,7 +254,7 @@
           <div class="box-publicidade pub-grd grid3">
             <!-- programas-assets-728x90 -->
             <script type='text/javascript'>
-            GA_googleFillSlot("cmais-assets-728x90");
+            GA_googleFillSlot("tvcultura-homepage-728x90");
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
