@@ -14,12 +14,12 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    <div class="span5" style="margin:0;">
+    <div class="span5" style="margin:0;"> 
       <div class="col-esquerda central "> 
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
           <?php foreach($displays['chamada'] as $k=>$d): ?>
-            <h1><?php echo $d->getTitle() ?></h1>
+            <h1><?php echo $d->getTitle() ?></h1> 
             <h3><?php echo $d->getDescription() ?></h3>
             <?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?>
             <br/> 
