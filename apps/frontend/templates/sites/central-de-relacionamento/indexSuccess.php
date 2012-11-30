@@ -935,6 +935,7 @@ $(document).ready(function(){
                         success: function(data){
                           $('#loader2').hide();
                           $('#btn2').show();
+                          goTop2();
                           if(data.script != ""){
                             eval(data.script);
                           }
@@ -1186,9 +1187,9 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_programa option').size()<=1)
-                            $('#f4_cod_programa').attr('disabled','disabled');
+                            $('#f4_cod_programa, #f4_cod_assunto').attr('disabled','disabled');
                           else  
-                            $('#f4_cod_programa').removeAttr('disabled','disabled');
+                            $('#f4_cod_programa, #f4_cod_assunto').removeAttr('disabled','disabled');
                       }
                       else{
                         alert('Erro!');

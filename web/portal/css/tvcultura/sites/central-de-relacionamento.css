@@ -29,7 +29,7 @@
 .logo-central{margin:50px 0 20px 0;}
 .col-esquerda.central{background: #f3f3f3;border-radius: 5px;}
 .col-esquerda .botoes{padding: 4px 10px;margin-top:30px !important; height:90px; background: url(/portal/images/capaPrograma/central-de-relacionamento/patterns-botoes.jpg) repeat-x;}
-.col-esquerda .desc-perg{float: left;text-shadow: none;font-size: 16px;text-transform: none;color: white;font-weight: normal;padding: 5px 0 0 10px;width:281px; height:40px; overflow: hidden; text-align: left;}
+.col-esquerda .desc-perg{float: left;text-shadow: none;font-size: 14px;text-transform: none;color: white;font-weight: normal;padding: 5px 0 0 10px;width:281px; height:40px; overflow: hidden; text-align: left;}
 .tit-perg{width: 281px;height: 18px;overflow: hidden;text-align: left;float: left;margin: 15px 0 0 10px;font-size: 16px;text-shadow: none;font-weight: bold !important;}
 .col-esquerda .botoes.blue .tit-perg{color:#fdb813;}
 .col-esquerda .botoes.blue{background-position:0 -361px;}
