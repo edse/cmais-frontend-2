@@ -47,15 +47,30 @@ $(document).ready(function(){
            <?php endif; ?>
         <?php endif; ?>
         
+          <?php if(isset($displays['box-2'])):?>
+        <?php if(count($displays['box-2']) > 0): ?>
+       	<?php foreach($displays['box-2'] as $k=>$d): ?>
           <i class="icone sintonia"></i>
-          <span class="tit-perg">Sintonia</span>
-          <span class="desc-perg">Lorem lorem ipsulum</span>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
-        <a href="http://www2.tvcultura.com.br/selecao/" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">
+        	 <?php endforeach; ?>
+         <?php endif; ?>
+       	 <?php endif; ?>
+         
+          
+          <?php if(isset($displays['box-3'])):?>
+        <?php if(count($displays['box-3']) > 0): ?>
+       	<?php foreach($displays['box-3'] as $k=>$d): ?>
           <i class="icone trabalhe-conosco"></i>
-          <span class="tit-perg">Trabalhe-Conosco</span>
-          <span class="desc-perg">Lorem lorem ipsulum</span>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">
+        	 <?php endforeach; ?>
+         <?php endif; ?>
+       	 <?php endif; ?>
       </div>
     </div>
     <!--/coluna esquerda-->
