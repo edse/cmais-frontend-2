@@ -143,9 +143,9 @@
                   <!-- SAIBA MAIS -->
                 <?php endif; ?>
                 
-                 <?php include_partial_from_folder('blocks','global/visite-cmais.php', array('site' => $site, 'uri' => $uri)) ?>
+                 <?php include_partial_from_folder('blocks','global/visite-cmais', array('site' => $site, 'uri' => $uri)) ?>
                 <?php include_partial_from_folder('sites/passalaemcasa','global/fb-comments') ?>
-                <?php include_partial_from_folder('blocks','global/share-2c-close-w-comment.php', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('blocks','global/share-2c-close-w-comment', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
