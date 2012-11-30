@@ -34,12 +34,18 @@ $(document).ready(function(){
       <?php endif; ?>
       </div>
       <div class="col-esquerda">
-        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
+      	<a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
+         
+         <?php if(isset($displays['chamada-2'])):?>
+        <?php if(count($displays['chamada-2']) > 0): ?>
           <i class="icone"></i>
-          <span class="tit-perg">Compra de Dvd´s</span>
-          <span class="desc-perg">Lorem lorem ipsulum</span>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
-        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
+           <?php endif; ?>
+      	<?php endif; ?>
+      	
           <i class="icone sintonia"></i>
           <span class="tit-perg">Sintonia</span>
           <span class="desc-perg">Lorem lorem ipsulum</span>

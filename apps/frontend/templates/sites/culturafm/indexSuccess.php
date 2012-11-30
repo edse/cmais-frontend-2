@@ -66,9 +66,9 @@
       <div id="horario" style="margin-top:10px;">
         <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
-      <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm_aniversario.png" title="Conheça a história da rádio Cultura FM" alt="Conheça a história da rádio Cultura FM" >
+      <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="/portal/images/capaPrograma/culturafm/destaqueDEZEMBRO.png" title="Fim de ano na TV Cultura com música clássica" alt="Fim de ano na TV Cultura com música clássica" >
       <map name="cultura" id="cultura">
-        <area shape="poly" coords="4,305,2,4,418,2,419,161,968,163,966,304" href="http://culturafm.cmais.com.br/culturafm35anos" title="Conheça a história da rádio Cultura FM" target="_self"/>
+        <area shape="poly" coords="4,305,2,4,418,2,880,80,968,100,966,304" href="http://cmais.com.br/fim-de-ano-na-tv-cultura-com-musica-classica" title="Fim de ano na TV Cultura com música clássica" target="_blank"/>
       </map>
     </div>
     <?php if(isset($siteSections)):
