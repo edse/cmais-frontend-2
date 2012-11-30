@@ -67,7 +67,7 @@ $(document).ready(function(){
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
-        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes"></a>
         	 <?php endforeach; ?>
          <?php endif; ?>
        	 <?php endif; ?>
