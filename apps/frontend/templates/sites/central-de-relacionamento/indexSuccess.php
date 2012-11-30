@@ -1185,9 +1185,9 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_programa option').size()<=1)
-                            $('#f4_cod_programa, #f4_cod_assunto').attr('display','none');
+                            $('#f4_cod_programa, #f4_cod_assunto').attr({'display':'none','disabled':'disabled'});
                           else  
-                            $('#f4_cod_programa, #f4_cod_assunto').attr('display','block');
+                            $('#f4_cod_programa, #f4_cod_assunto').removeAttr({'display':'none','disabled':'disabled'});
                       }
                       else{
                         alert('Erro!');
