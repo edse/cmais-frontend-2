@@ -20,13 +20,11 @@
           </a>
           <!--DESCRIÇÃO-->
           <div class="desc-site">
-          	<?php if(isset($displays['descricao'])):?>
+           <?php if(isset($displays['descricao'])):?>
         <?php if(count($displays['descricao']) > 0): ?>
-          <?php foreach($displays['descricao'] as $k=>$d): ?>
           	            <p><?php echo $d->getDescription() ?></p>
-          <?php endforeach; ?>
         <?php endif; ?>
-      <?php endif; ?>
+     		<?php endif; ?>
           </div>
           <!--/DESCRIÇÃO-->
         </div>
