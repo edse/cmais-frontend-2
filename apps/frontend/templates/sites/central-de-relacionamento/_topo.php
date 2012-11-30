@@ -9,7 +9,7 @@
           ->execute();
       
         if(count($blocks) > 0){
-          $displays["alerta"] = $blocks[0]->retriveDisplays();
+          $displays["descricao"] = $blocks[0]->retriveDisplays();
         }
       ?>
       <div id="topo-central">
