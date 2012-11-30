@@ -1,5 +1,29 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
+<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+
+<script type="text/javascript">
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+      inline: true
+    });
+    //hover states on the static widgets
+    $('#dialog_link, ul#icons li').hover(
+      function() { $(this).addClass('ui-state-hover'); }, 
+      function() { $(this).removeClass('ui-state-hover'); }
+    );
+  });
+</script>
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
@@ -15,36 +39,28 @@
     <!-- BARRA SITE -->
     <div id="barra-site">
       <div class="topo-programa">
-        <?php if(isset($program) && $program->id > 0):
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
         <h2><a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>"> <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/uploads/programs/<?php echo $program->getImageThumb() ?>"> </a></h2>
         <?php endif;?>
 
-        <?php if(isset($program) && $program->id > 0):
-        ?>
-        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
+        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
         <?php endif;?>
 
-        <?php if(isset($program) && $program->id > 0):
-        ?>
+        <?php if(isset($program) && $program->id > 0): ?>
         <!-- horario -->
         <div id="horario">
-          <p><?php echo html_entity_decode($program->getSchedule())
-          ?></p>
+          <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
         </div>
         <!-- /horario -->
         <?php endif;?>
       </div>
       <!-- box-topo -->
       <div class="box-topo grid3">
-        <?php if(count($siteSections) > 0):
-        ?>
+        <?php if(count($siteSections) > 0): ?>
         <ul class="menu">
-          <?php foreach($siteSections as $s):
-          ?>
-          <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif;?>><span><?php echo $s->getTitle()
-          ?></span></a></li>
+          <?php foreach($siteSections as $s): ?>
+          <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif;?>><span><?php echo $s->getTitle() ?></span></a></li>
           <?php endforeach;?>
         </ul>
         <?php endif;?>
@@ -55,8 +71,7 @@
     <!-- MIOLO -->
     <div id="miolo">
       <!-- BOX LATERAL -->
-      <?php include_partial_from_folder('blocks','global/shortcuts')
-      ?>
+      <?php include_partial_from_folder('blocks','global/shortcuts') ?>
       <!-- BOX LATERAL -->
       <!-- CONTEUDO PAGINA -->
       <div id="conteudo-pagina exceptionn">
@@ -66,22 +81,21 @@
             <span class="bordaTopRV"></span>
             <div class="centroRV">
               <div class="faleConosco">
-                <h2><?php echo $section->getTitle()
-                ?></h2>
+                <h2><?php echo $section->getTitle() ?></h2>
                 <!--p><?php echo $section->getDescription()?></p-->
                 <script>
-                $(document).ready(function(){
-                  $('.abre-form').click(function(){
-                   $('.box.fechado').hide();
-                   $('.box.aberto').fadeIn('fast');
+                  $(document).ready(function() {
+                    $('.abre-form').click(function() {
+                      $('.box.fechado').hide();
+                      $('.box.aberto').fadeIn('fast');
+                    });
+
+                    $('.fecha-form').click(function() {
+                      $('.box.fechado').show();
+                      $('.box.aberto').hide();
+                    })
                   });
-                  
-                  $('.fecha-form').click(function(){
-                    $('.box.fechado').show();
-                   $('.box.aberto').hide();
-                  })
-                  
-                });
+
                 </script>
                 <div class="box fechado">
                   <p class="icon abre-form">Vamos, enforque-se na corda da liberdade.</p>
@@ -130,89 +144,85 @@
                   </form>
                 </div>
                 <!-- LISTA -->
-                
-               	<?php if(count($pager) > 0): ?>
-              <!-- BOX LISTAO -->
-              <div class="box-listao grid2">         
-                <ul>
-                	<?php $current_date= ''; ?>
-                  <?php foreach($pager->getResults() as $d):
-                  	$date= explode(' ', $d->getCreatedAt()); 
-                  	$date= $date[0];
-                  	
-                  ?>
-               	
-               		<?php if($current_date != $date): ?>
-               		
-               			<h2 id="data-post"><?php echo format_date(strtotime($date),"D") ?></h2>
-               			<li>
-							<?php if(isset($date)): ?>
-								<p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
-							<?php endif ?>
-							
-								<a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
-								<p><?php echo $d->getDescription() ?></p>
-						</li>
-                   <?php else: ?>
-                   		<li>
-							<?php if(isset($date)): ?>
-								<p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
-							<?php endif ?>
-								
-								<a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a>
-								<p><?php echo $d->getDescription() ?></p>
-						</li>
-                  <?php endif; ?> 	
-                  <?php $current_date=$date; ?>
-                  <?php endforeach; ?>
-                </ul>
-              </div>
-              <!-- /BOX LISTAO -->
-            <?php endif; ?>
-
-            <?php if(isset($pager)): ?>
-              <?php if($pager->haveToPaginate()): ?>
-              <!-- PAGINACAO -->
-              <div class="paginacao grid3">
-                <div class="centraliza">
-                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
-                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
+                <?php if(count($pager) > 0): ?>
+                <!-- BOX LISTAO -->
+                <div class="box-listao grid2">
                   <ul>
-                    <?php foreach ($pager->getLinks() as $page): ?>
-                      <?php if ($page == $pager->getPage()): ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
-                      <?php else: ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-                      <?php endif; ?>
-                    <?php endforeach; ?>
-                  </ul>
-                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
-                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
-                </div>
-              </div>
-              <form id="page_form" action="" method="post">
-                <input type="hidden" name="return_url" value="<?php echo $url?>" />
-                <input type="hidden" name="page" id="page" value="" />
-              </form>
-              <script>
-                function goToPage(i){
-                  $("#page").val(i);
-                  $("#page_form").submit();
-                }
-              </script>
-              <!--// PAGINACAO -->
-                <?php endif; ?>
-            <?php endif; ?>
+                    <?php $current_date = '';?>
+                    <?php foreach($pager->getResults() as $d):$date= explode(' ', $d->getCreatedAt());$date= $date[0]; ?>
 
-          
+                    <?php if($current_date != $date): ?>
+
+                    <h2 id="data-post"><?php echo format_date(strtotime($date),"D") ?></h2>
+                    <li><?php if(isset($date)): ?>
+                    <p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p><?php endif?>
+
+                    <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a><p><?php echo $d->getDescription() ?></p></li>
+                    <?php else:?>
+                    <li><?php if(isset($date)): ?>
+                    <p class="titulos"><?php echo format_date(strtotime($d->getCreatedAt()),"t") ?></p><?php endif?>
+
+                    <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->getTitle() ?></a><p><?php echo $d->getDescription() ?></p></li>
+                    <?php endif;?>
+                    <?php $current_date = $date;?>
+                    <?php endforeach;?>
+                  </ul>
+                </div>
+                <!-- /BOX LISTAO -->
+                <?php endif;?>
+
+                <?php if(isset($pager)): ?>
+                <?php if($pager->haveToPaginate()): ?>
+                <!-- PAGINACAO -->
+                <div class="paginacao grid3">
+                  <div class="centraliza">
+                    <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
+                    <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
+                    <ul>
+                      <?php foreach ($pager->getLinks() as $page): ?>
+                      <?php if ($page == $pager->getPage()): ?>
+                      <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+                      <?php else:?>
+                      <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page  ?></a></li>
+                      <?php endif;?>
+                      <?php endforeach;?>
+                    </ul>
+                    <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
+                    <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
+                  </div>
+                </div>
+                <form id="page_form" action="" method="post">
+                  <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                  <input type="hidden" name="page" id="page" value="" />
+                </form>
+                <script>
+                  function goToPage(i) {
+                    $("#page").val(i);
+                    $("#page_form").submit();
+                  }
+                </script>
+                <!--// PAGINACAO -->
+                <?php endif;?>
+                <?php endif;?>
+
                 <!-- /LISTA -->
               </div>
-              <div class="box-publicidade">
-                <script type='text/javascript'>
-					GA_googleFillSlot("cmais-assets-300x250");
+              <!-- direita -->
+              <style>
+                .veja { float:left; }
+                .btn-veja { margin-top:20px; }
+              </style>
+              <div class="veja">
+                <div class="box-publicidade">
+                  <script type='text/javascript'>
+                    GA_googleFillSlot("cmais-assets-300x250");
 
-                </script>
+                  </script>
+                </div>
+                <!--p class="btn-veja"><span>Arquivo</span></p-->
+                <div id="datepicker"></div>
               </div>
+              <!-- /direita -->
             </div>
             <span class="bordaBottomRV"></span>
           </div>
@@ -227,93 +237,93 @@
 <!--/bg provoca-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
-	  /* somente para teste
-		$('input#enviar').click(function() {
-			$('.box.msg, .msgAcerto').show();
-			$(".box.aberto").hide();
-		});
-		*/
-		$('input#cancelar').click(function(){
-		  $('#form-contato').clearForm();
-		})
-		var validator = $('#form-contato').validate({
-			submitHandler : function(form) {
-				$.ajax({
-					type : "POST",
-					dataType : "text",
-					data : $("#form-contato").serialize(),
-					beforeSend : function() {
-					  $('input#enviar').hide();
-					  $('img#ajax-loader').show();
-						/*$('input#enviar').attr('disabled', 'disabled');
-						$(".msgAcerto").hide();
-						$(".msgErro").hide();
-						$('img#ajax-loader').show();*/
-					},
-					success : function(data) {
-						$('input#enviar').show();
-						$('img#ajax-loader').hide();
-						window.location.href = "#";
-						
-						if(data == "1") {
-						  $('.box.msg, .msgAcerto').show();
-						  $(".box.aberto").hide();
-						  /*
-							$("#form-contato").clearForm();
-							$(".msgAcerto").show();
-							$('img#ajax-loader').hide();
-							*/
-						} else {
-							$(".box.msg, .msgErro").show();
-							$(".box.aberto").hide();
-						}
-					}
-				});
-			},
-			rules : {
-				nome : {
-					required : true,
-					minlength : 2
-				},
-				email : {
-					required : true,
-					email : true
-				},
-				website : {
-					required : true
-				},
-				idade : {
-					required : true
-				},
-				mensagem : {
-					required : true,
-					minlength : 2
-				},
-				captcha : {
-					required : true,
-					remote : "/portal/js/validate/demo/captcha/process.php"
-				}
-			},
-			messages : {
-				nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-				idade : "Este campo &eacute; obrigat&oacute;rio.",
-				email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-				website : "Este campo &eacute; obrigat&oacute;rio.",
-				mensagem : "Este campo &eacute; obrigat&oacute;rio.",
-				captcha : "Digite corretamente o código que está ao lado."
-			},
-			success : function(label) {
-				// set &nbsp; as text for IE
-				label.html("&nbsp;").addClass("checked");
-			}
-		});
-	});
-	// Contador de Caracters
-	function limitText(limitField, limitNum, textCounter) {
-		if(limitField.value.length > limitNum)
-			limitField.value = limitField.value.substring(0, limitNum);
-		else
-			$(textCounter).html(limitNum - limitField.value.length);
-	}
+  $(document).ready(function() {
+    /* somente para teste
+     $('input#enviar').click(function() {
+     $('.box.msg, .msgAcerto').show();
+     $(".box.aberto").hide();
+     });
+     */
+    $('input#cancelar').click(function() {
+      $('#form-contato').clearForm();
+    })
+    var validator = $('#form-contato').validate({
+      submitHandler : function(form) {
+        $.ajax({
+          type : "POST",
+          dataType : "text",
+          data : $("#form-contato").serialize(),
+          beforeSend : function() {
+            $('input#enviar').hide();
+            $('img#ajax-loader').show();
+            /*$('input#enviar').attr('disabled', 'disabled');
+             $(".msgAcerto").hide();
+             $(".msgErro").hide();
+             $('img#ajax-loader').show();*/
+          },
+          success : function(data) {
+            $('input#enviar').show();
+            $('img#ajax-loader').hide();
+            window.location.href = "#";
+
+            if(data == "1") {
+              $('.box.msg, .msgAcerto').show();
+              $(".box.aberto").hide();
+              /*
+               $("#form-contato").clearForm();
+               $(".msgAcerto").show();
+               $('img#ajax-loader').hide();
+               */
+            } else {
+              $(".box.msg, .msgErro").show();
+              $(".box.aberto").hide();
+            }
+          }
+        });
+      },
+      rules : {
+        nome : {
+          required : true,
+          minlength : 2
+        },
+        email : {
+          required : true,
+          email : true
+        },
+        website : {
+          required : true
+        },
+        idade : {
+          required : true
+        },
+        mensagem : {
+          required : true,
+          minlength : 2
+        },
+        captcha : {
+          required : true,
+          remote : "/portal/js/validate/demo/captcha/process.php"
+        }
+      },
+      messages : {
+        nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+        idade : "Este campo &eacute; obrigat&oacute;rio.",
+        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+        website : "Este campo &eacute; obrigat&oacute;rio.",
+        mensagem : "Este campo &eacute; obrigat&oacute;rio.",
+        captcha : "Digite corretamente o código que está ao lado."
+      },
+      success : function(label) {
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
+      }
+    });
+  });
+  // Contador de Caracters
+  function limitText(limitField, limitNum, textCounter) {
+    if(limitField.value.length > limitNum)
+      limitField.value = limitField.value.substring(0, limitNum);
+    else
+      $(textCounter).html(limitNum - limitField.value.length);
+  }
 </script>
