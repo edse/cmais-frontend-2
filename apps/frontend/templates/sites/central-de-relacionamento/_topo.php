@@ -10,6 +10,5 @@
           else
             include_partial_from_folder('sites/central-de-relacionamento','global/sections-menu', array('siteSections' => $siteSections, 'section' => $section));
         ?>  
- 
-      </div>  
+       </div>  
       <!-- /TOPO CENTRAL RELACIONAMENTO--> 
