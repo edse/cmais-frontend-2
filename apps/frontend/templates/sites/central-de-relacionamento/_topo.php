@@ -1,10 +1,11 @@
      <?php
         $displays = array();
         $blocks = Doctrine_Query::create()
-          ->select('b.*')
+         ->select('b.*')
           ->from('Block b, Section s')
           ->where('b.section_id = s.id')
           ->andWhere('s.slug = ?', 'home')
+          ->andWhere('b.slug = ?', 'descricao')
           ->andWhere('s.site_id = ?', $site->id)
           ->execute();
       
