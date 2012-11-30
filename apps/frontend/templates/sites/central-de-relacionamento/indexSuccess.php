@@ -37,11 +37,13 @@ $(document).ready(function(){
          
          <?php if(isset($displays['box-1'])):?>
         <?php if(count($displays['box-1']) > 0): ?>
+       	<?php foreach($displays['chamada'] as $k=>$d): ?>
           <i class="icone"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
         </a>
         <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
+           <?php endforeach; ?>
            <?php endif; ?>
         <?php endif; ?>
         
