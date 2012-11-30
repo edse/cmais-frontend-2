@@ -1,5 +1,4 @@
-
-<?php if($_GET["step"]==1):?>
+<?php if(isset($_GET["step"])==1):?>
 <script>
 $(document).ready(function(){
   $('html, body').animate({
@@ -34,7 +33,7 @@ $(document).ready(function(){
       <?php endif; ?>
       </div>
       <div class="col-esquerda">
-      	<a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
+        <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
          
          <?php if(isset($displays['chamada-2'])):?>
         <?php if(count($displays['chamada-2']) > 0): ?>
@@ -44,8 +43,8 @@ $(document).ready(function(){
         </a>
         <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
            <?php endif; ?>
-      	<?php endif; ?>
-      	
+        <?php endif; ?>
+        
           <i class="icone sintonia"></i>
           <span class="tit-perg">Sintonia</span>
           <span class="desc-perg">Lorem lorem ipsulum</span>
@@ -622,11 +621,10 @@ $(document).ready(function(){
                       <div id="message">
                       
                       <div class="control-group">
-                        <label class="control-label" for="f4_cod_grupo">Grupo</label>
+                        <label class="control-label" for="f4_cod_veiculo">Emissora</label>
                         <div class="controls">
-                          <select name="f4_cod_grupo" id="f4_cod_grupo" onchange="programas();">
-                            <option value="--">teste 1</option>
-                            <option value="--- ">teste 2</option>
+                          <select name="f4_cod_veiculo" id="f4_cod_veiculo" onchange="contas();">
+                            <option value="--"></option>
                           </select>
                         </div>
                       </div>
@@ -775,7 +773,7 @@ $(document).ready(function(){
                       $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
                       $('#btn4, #message').show(); 
                       $('.control-group').removeClass('success').removeClass('error');
-                      $('#f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
+                      $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                       goTop2();     
                     });
                   });
@@ -1019,6 +1017,9 @@ $(document).ready(function(){
                       f4_cod_programa: {
                         required: "#f4_mais:!checked"
                       },
+                      f4_cod_veiculo: {
+                        required: "#f4_mais:!checked"
+                      },
                       f4_cod_assunto: {
                         required: "#f4_mais:!checked"
                       },
@@ -1111,13 +1112,13 @@ $(document).ready(function(){
                     $('#btn4').hide();
                     $('#message').hide();
                     $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    $('#f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
                     $('#f3_maisinfo').show();
@@ -1150,6 +1151,33 @@ $(document).ready(function(){
                     }
                   });
                 }
+
+                
+      
+                function contas(){
+                  $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "/crm-form/soap.php",
+                    data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
+                    beforeSend: function(){
+                      //$('img#ajax-loader').show();
+                    },
+                    success: function(data){
+                      if(data.script != ""){
+                        eval(data.script);
+                        if($('#f4_cod_programa option').size()<=1)
+                            $('#f4_cod_programa').attr('disabled','disabled');
+                          else  
+                            $('#f4_cod_programa').removeAttr('disabled','disabled');
+                      }
+                      else{
+                        alert('Erro!');
+                      }
+                    }
+                  });
+                  $('.control-group.f4').slideDown('fast');
+                }
                 
                 function assuntos(){
                   $.ajax({
@@ -1170,10 +1198,7 @@ $(document).ready(function(){
                     }
                   });
                 }
-                
-                function programas(){
-                  $('.control-group.f4').slideDown('fast'); 
-                }
+
                 function goTop2(){
                   $('html, body').animate({
                     scrollTop: $('.coluna-sub').offset().top
