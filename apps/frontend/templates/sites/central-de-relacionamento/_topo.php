@@ -1,3 +1,18 @@
+     <?php
+        $displays = array();
+        $blocks = Doctrine_Query::create()
+         ->select('b.*')
+          ->from('Block b, Section s')
+          ->where('b.section_id = s.id')
+          ->andWhere('s.slug = ?', 'home')
+          ->andWhere('b.slug = ?', 'descricao') 
+          ->andWhere('s.site_id = ?', $site->id)
+          ->execute();
+      
+        if(count($blocks) > 0){
+          $displays["descricao"] = $blocks[0]->retriveDisplays();
+        }
+      ?>
       <div id="topo-central">
         <div class="row-fluid" style="position: relative;">
           <a href="http://fpa.com.br/central-de-relacionamento" class="pull-left logo-central" title="Fundação Padre Anchieta - Central de Relacionamento">
@@ -5,7 +20,11 @@
           </a>
           <!--DESCRIÇÃO-->
           <div class="desc-site">
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+           <?php if(isset($displays['descricao'])):?>
+        <?php if(count($displays['descricao']) > 0): ?>
+          	            <p><?php echo $displays['descricao'][0]->getDescription() ?></p>
+        <?php endif; ?>
+     		<?php endif; ?>
           </div>
           <!--/DESCRIÇÃO-->
         </div>
