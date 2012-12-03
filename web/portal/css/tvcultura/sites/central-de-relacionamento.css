@@ -23,7 +23,7 @@
 /* /TOPO central */
 
 /* GERAL */
-.container-btn{width: 288px;margin: 0 auto;}
+.container-btn{width: 254px;margin: 0 auto; font-size:14px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
 .mais-info{padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:bold !important; letter-spacing: 0.12em;}
 .logo-central{margin:50px 0 20px 0;}
@@ -57,7 +57,7 @@
 .icone{float: left;display:block;width:72px;height:74px; background: url(/portal/images/capaPrograma/central-de-relacionamento/icones-central.png) no-repeat 0 0;}
 .sintonia{background-position: 0 -73px;}
 .trabalhe-conosco{background-position: 0 -144px;}
-.ico-perg{margin:-8px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;float:left;}
+.ico-perg{margin:-9px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;float:left;}
 .coluna-sub{border-radius:5px; padding: 10px; overflow: hidden;}
 .cinza-escuro{background:#7f7f7f !important;}
 .cinza-claro{background:#a1a1a1 !important;}
