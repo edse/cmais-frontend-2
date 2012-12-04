@@ -270,7 +270,7 @@
           <?php endforeach; ?>
            <?php endif;?>
           <?php endif; ?>
-           <hr class="divisor"/> 
+      
         <!--/ASSET-->    
       </div>
       <!--/BLOG-AS-->
