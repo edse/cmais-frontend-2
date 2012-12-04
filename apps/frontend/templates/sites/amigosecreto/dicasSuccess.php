@@ -86,30 +86,34 @@
         <!--ASSET-->
         <!--/ASSET-->
         <a id="teobaldo-asset"></a> 
+        <?php if(isset($displays['teobaldo'])): ?>
+            <?php if(count($displays['teobaldo']) > 0): ?>
+           	<?php foreach($displays['teobaldo'] as $k=>$d): ?>
         <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do Teobaldo</h1>
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
         <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
+        	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div> 
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+          
         <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="ludovico-asset"></a>   
+        <?php if(isset($displays['ludovico'])): ?>
+            <?php if(count($displays['ludovico']) > 0): ?>
+           	<?php foreach($displays['ludovico'] as $k=>$d): ?>
         <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do Ludovico</h1>
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
+        <div class="blog-as-body"> </div>
+        <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
+        <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?> 
         <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
