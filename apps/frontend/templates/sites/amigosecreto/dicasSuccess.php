@@ -68,10 +68,10 @@
         <!--/DIV NAO APAGAR-->
         <!--ASSET-->
         <a id="osorio-asset"></a> 
-          <div class="blog-as-header">
-          	<?php if(isset($displays['osorio'])): ?>
+        	<?php if(isset($displays['osorio'])): ?>
             <?php if(count($displays['osorio']) > 0): ?>
            	<?php foreach($displays['osorio'] as $k=>$d): ?>
+          <div class="blog-as-header">
           <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
           <div class="blog-as-body">
