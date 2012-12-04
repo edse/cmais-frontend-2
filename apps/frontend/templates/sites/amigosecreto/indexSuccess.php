@@ -5,9 +5,16 @@
 <div class="container amigo-secreto">
   <!--CAPA-SITE-->
   <div id="capa-site">
+  	 <?php if(isset($displays['destaque-principal'])): ?>
+            <?php if(count($displays['destaque-principal']) > 0): ?>
+           	<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
     <div id="video-as">
-      <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-    </div>
+      <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+   	</div>
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+        
     <div id="btn-dica-as" class="btn-dica-as" >
       <img src="/portal/images/capaPrograma/amigosecreto/btn_home.png" width="262" height="276" border="0" usemap="#map-dica-as" />
       <map name="map-dica-as" id="map-dica-as" title="">
@@ -15,7 +22,7 @@
       </map>
     </div> 
   </div>
-  <!--/CAPA-SITE-->
+  <!--/CAPA-SITE--> 
 </div>
 <!--/CONTANER-->
 <script>
