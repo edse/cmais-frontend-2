@@ -7,6 +7,9 @@
 <div class="container amigo-secreto">
   <!--CAPA-SITE-->
   <div id="capa-site">
+    <!--botao-voltar-->
+    <a id="btn-voltar-as" href="/amigosecreto" title="Amigo Secreto"></a>
+    <!--/botao-voltar-->
     <!--DICAS-AS-->
     <div id="dica-as">
       <!--BOTOES PERSONAGENS-->
@@ -68,9 +71,9 @@
         <!--/DIV NAO APAGAR-->
         <!--ASSET-->
         <a id="osorio-asset"></a> 
-        	<?php if(isset($displays['osorio'])): ?>
+          <?php if(isset($displays['osorio'])): ?>
             <?php if(count($displays['osorio']) > 0): ?>
-           	  <?php foreach($displays['osorio'] as $k=>$d): ?>
+              <?php foreach($displays['osorio'] as $k=>$d): ?>
                 <div class="blog-as-header">
                   <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
                 </div>
@@ -86,7 +89,7 @@
         <a id="teobaldo-asset"></a> 
         <?php if(isset($displays['teobaldo'])): ?>
           <?php if(count($displays['teobaldo']) > 0): ?>
-           	<?php foreach($displays['teobaldo'] as $k=>$d): ?>
+            <?php foreach($displays['teobaldo'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -102,7 +105,7 @@
         <a id="ludovico-asset"></a>   
         <?php if(isset($displays['ludovico'])): ?>
           <?php if(count($displays['ludovico']) > 0): ?>
-           	<?php foreach($displays['ludovico'] as $k=>$d): ?>
+            <?php foreach($displays['ludovico'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -118,7 +121,7 @@
         <a id="doroteia-asset"></a>    
         <?php if(isset($displays['doroteia'])): ?>
           <?php if(count($displays['doroteia']) > 0): ?>
-           	<?php foreach($displays['doroteia'] as $k=>$d): ?>
+            <?php foreach($displays['doroteia'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -134,7 +137,7 @@
         <a id="filomena-asset"></a>   
         <?php if(isset($displays['filomena'])): ?>
           <?php if(count($displays['filomena']) > 0): ?>
-           	<?php foreach($displays['filomena'] as $k=>$d): ?>
+            <?php foreach($displays['filomena'] as $k=>$d): ?>
             <div class="blog-as-header">
               <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
             </div>
@@ -150,7 +153,7 @@
         <a id="joao-asset"></a>   
         <?php if(isset($displays['joao'])): ?>
           <?php if(count($displays['joao']) > 0): ?>
-           	<?php foreach($displays['joao'] as $k=>$d): ?>
+            <?php foreach($displays['joao'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -166,7 +169,7 @@
         <a id="eric-asset"></a>   
         <?php if(isset($displays['eric'])): ?>
           <?php if(count($displays['eric']) > 0): ?>
-           	<?php foreach($displays['eric'] as $k=>$d): ?>
+            <?php foreach($displays['eric'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -182,7 +185,7 @@
         <a id="pedro-asset"></a>   
         <?php if(isset($displays['pedro'])): ?>
           <?php if(count($displays['pedro']) > 0): ?>
-           	<?php foreach($displays['pedro'] as $k=>$d): ?>
+            <?php foreach($displays['pedro'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -198,7 +201,7 @@
         <a id="matheus-asset"></a>   
         <?php if(isset($displays['matheus'])): ?>
           <?php if(count($displays['matheus']) > 0): ?>
-           	<?php foreach($displays['matheus'] as $k=>$d): ?>
+            <?php foreach($displays['matheus'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -214,7 +217,7 @@
         <a id="julio-asset"></a>   
         <?php if(isset($displays['julio'])): ?>
           <?php if(count($displays['julio']) > 0): ?>
-           	<?php foreach($displays['julio'] as $k=>$d): ?>
+            <?php foreach($displays['julio'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
@@ -246,7 +249,7 @@
         <a id="caco-asset"></a>   
         <?php if(isset($displays['caco'])): ?>
           <?php if(count($displays['caco']) > 0): ?>
-           	<?php foreach($displays['caco'] as $k=>$d): ?>
+            <?php foreach($displays['caco'] as $k=>$d): ?>
               <div class="blog-as-header">
                 <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
               </div>
