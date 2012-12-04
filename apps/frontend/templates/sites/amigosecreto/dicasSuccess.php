@@ -75,7 +75,7 @@
           <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
           <div class="blog-as-body">
-          <?php echo html_entity_decode($d->AssetContent->render()) ?>  
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
           </div>        
          
           <?php endforeach; ?>
