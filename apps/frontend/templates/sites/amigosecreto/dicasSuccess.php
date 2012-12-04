@@ -72,7 +72,7 @@
           	<?php if(isset($displays['osorio'])): ?>
             <?php if(count($displays['osorio']) > 0): ?>
            	<?php foreach($displays['osorio'] as $k=>$d): ?>
-          <i class="ico-lateral"></i><h1><?php echo $d[0]->getTitle() ?></h1>
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
           <div class="blog-as-body">
           <?php echo html_entity_decode($d->AssetContent->render()) ?>  
