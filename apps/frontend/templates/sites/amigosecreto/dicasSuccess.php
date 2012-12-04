@@ -68,16 +68,20 @@
         <!--/DIV NAO APAGAR-->
         <!--ASSET-->
         <a id="osorio-asset"></a> 
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do Osorio</h1>
+          <div class="blog-as-header">
+          	<?php if(isset($displays['osorio'])): ?>
+            <?php if(count($displays['osorio']) > 0): ?>
+           	<?php foreach($displays['osorio'] as $k=>$d): ?>
+          <i class="ico-lateral"></i><h1><?php echo $d[0]->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <img alt="Alexandre Borges em ’Poema Bar’ (foto: Divulgação)" src="http://midia.cmais.com.br/assets/image/image-6-b/669dca806b410c64b904a241532c19a441ac84f8.jpg" title="Alexandre Borges em ’Poema Bar’ (foto: Divulgação)" />
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+          
         <hr class="divisor"/> 
         <!--ASSET-->
         <!--/ASSET-->
