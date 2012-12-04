@@ -89,12 +89,13 @@
         <?php if(isset($displays['teobaldo'])): ?>
             <?php if(count($displays['teobaldo']) > 0): ?>
            	<?php foreach($displays['teobaldo'] as $k=>$d): ?>
-        <div class="blog-as-header">
+          <div class="blog-as-header">
           <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-        	<?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
-          </div> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
           <?php endforeach; ?>
            <?php endif;?>
           <?php endif; ?>
@@ -106,15 +107,16 @@
         <?php if(isset($displays['ludovico'])): ?>
             <?php if(count($displays['ludovico']) > 0): ?>
            	<?php foreach($displays['ludovico'] as $k=>$d): ?>
-        <div class="blog-as-header">
+          <div class="blog-as-header">
           <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body"> </div>
-        <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
-        <?php endforeach; ?>
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
            <?php endif;?>
-          <?php endif; ?> 
-        <hr class="divisor"/> 
+          <?php endif; ?>
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="doroteia-asset"></a>   
