@@ -23,9 +23,9 @@
         ?>
         <li class="first">
           <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
-          <a href="#" id="btn-osorio-as"></a>
+          <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as"></a>
         </li>
-        <?php endfor?>
+        <?php endfor;?>
       </ul>
       <!--/BOTOES PERSONAGENS-->
       <!--BLOG-AS-->
