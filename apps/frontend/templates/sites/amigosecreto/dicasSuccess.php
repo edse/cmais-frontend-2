@@ -36,7 +36,7 @@
         $nome = $arrayNome[$j];
         ?>
           <!--ASSET-->
-          <a id="osorio-asset"></a> 
+          <a id="<?php echo $arrayNome[$j]?>-asset"></a> 
             <?php if(isset($displays[$nome])): ?>
               <?php if(count($displays[$nome]) > 0): ?>
                 <?php foreach($displays[$nome] as $k=>$d): ?>
