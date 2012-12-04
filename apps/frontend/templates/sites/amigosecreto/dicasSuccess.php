@@ -10,58 +10,22 @@
     <!--botao-voltar-->
     <a id="btn-voltar-as" href="/amigosecreto" title="Amigo Secreto"></a>
     <!--/botao-voltar-->
+    <?php
+    $arrayNome      = array("osorio", "teobaldo", "ludovico", "doroteia", "filomena", "joao", "eric", "pedro", "matheus", "julio", "lilica", "caco");
+    $arrayNomeExibi = array("Osório", "Teobaldo", "Ludovico", "Dorotéia", "Filomena", "João", "Eric", "Pedro", "Matheus", "Júlio", "Lilica", "Caco")
+    ?>
     <!--DICAS-AS-->
     <div id="dica-as">
       <!--BOTOES PERSONAGENS-->
       <ul>
+        <?php
+        for($i=0;$i<count($arrayNome); $i++):
+        ?>
         <li class="first">
-          <div class="btn-hover-as selected" name="osorio-asset" title="Osório"></div>
+          <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
           <a href="#" id="btn-osorio-as"></a>
         </li>
-        <li>
-          <div class="btn-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
-          <a href="#" id="btn-teobaldo-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="ludovico-asset" title="Ludovico"></div>
-          <a href="#" id="btn-ludovico-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="doroteia-asset" title="Dorotéia"></div>
-          <a href="#" id="btn-doroteia-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="filomena-asset" title="Filomena"></div>
-          <a href="#" id="btn-filomena-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="joao-asset" title="João"></div>
-          <a href="#" id="btn-joao-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="eric-asset" title="Eric"></div>
-          <a href="#" id="btn-eric-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="pedro-asset" title="Pedro"></div>
-          <a href="#" id="btn-pedro-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="matheus-asset" title="Matheus"></div>
-          <a href="#" id="btn-matheus-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="julio-asset" title="Júlio"></div>
-          <a href="#" id="btn-julio-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="lilica-asset" title="Lilica"></div>
-          <a href="#" id="btn-lilica-as"></a>
-        </li>
-        <li>
-          <div class="btn-hover-as" name="caco-asset" title="Caco"></div>
-          <a href="#" id="btn-caco-as"></a>
-        </li>
+        <?php endfor?>
       </ul>
       <!--/BOTOES PERSONAGENS-->
       <!--BLOG-AS-->
