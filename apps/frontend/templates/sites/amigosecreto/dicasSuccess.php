@@ -117,132 +117,160 @@
           <?php endforeach; ?>
            <?php endif;?>
           <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
-        <a id="doroteia-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do doroteia</h1>
+        <a id="doroteia-asset"></a>    
+        <?php if(isset($displays['doroteia'])): ?>
+            <?php if(count($displays['doroteia']) > 0): ?>
+           	<?php foreach($displays['doroteia'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="filomena-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do filomena</h1>
+        <?php if(isset($displays['filomena'])): ?>
+            <?php if(count($displays['filomena']) > 0): ?>
+           	<?php foreach($displays['filomena'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="joao-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do joao</h1>
+         <?php if(isset($displays['joao'])): ?>
+            <?php if(count($displays['joao']) > 0): ?>
+           	<?php foreach($displays['joao'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="eric-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do eric</h1>
+        <?php if(isset($displays['eric'])): ?>
+            <?php if(count($displays['eric']) > 0): ?>
+           	<?php foreach($displays['eric'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="pedro-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do pedro</h1>
+        <?php if(isset($displays['pedro'])): ?>
+            <?php if(count($displays['pedro']) > 0): ?>
+           	<?php foreach($displays['pedro'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET--> 
         <!--/ASSET-->
         <a id="matheus-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do matheus</h1>
+        <?php if(isset($displays['matheus'])): ?>
+            <?php if(count($displays['matheus']) > 0): ?>
+           	<?php foreach($displays['matheus'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="julio-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do julio</h1>
+        <?php if(isset($displays['julio'])): ?>
+            <?php if(count($displays['julio']) > 0): ?>
+           	<?php foreach($displays['julio'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="lilica-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do lilica</h1>
+       <?php if(isset($displays['lilica'])): ?>
+            <?php if(count($displays['lilica']) > 0): ?>
+           	<?php foreach($displays['lilica'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->
         <!--/ASSET-->
         <a id="caco-asset"></a>   
-        <div class="blog-as-header">
-          <i class="ico-lateral"></i><h1>quem será o amigo segredo do caco</h1>
+        <?php if(isset($displays['caco'])): ?>
+            <?php if(count($displays['caco']) > 0): ?>
+           	<?php foreach($displays['caco'] as $k=>$d): ?>
+          <div class="blog-as-header">
+          <i class="ico-lateral"></i><h1><?php echo $d->getTitle() ?></h1>
         </div>
-        <div class="blog-as-body">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/GozJ5gVTtfk?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-          <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido peg</p>
-        </div>
-        <hr class="divisor"/> 
+          <div class="blog-as-body">
+          <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
+          </div>        
+         
+          <?php endforeach; ?>
+           <?php endif;?>
+          <?php endif; ?>
+           <hr class="divisor"/> 
         <!--/ASSET-->    
       </div>
       <!--/BLOG-AS-->
