@@ -370,23 +370,29 @@ $(function(){
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
-              <?php if(count($relacionados) > 0): ?>
+              <?php
+                $recentes = array();
+                if($asset) {
+                  $section = $asset->getSections();
+                  $recentes = $section[0]->getAssets();
+                }
+              ?>
+              <?php if(count($recentes) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
                 <div class="topo claro">
                   <span></span>
                   <div class="capa-titulo">
-                    <h4>relacionadas</h4>
+                    <h4>+ recentes</h4>
                     <a href="#" class="rss" title="rss"></a>
                   </div>
                 </div>
-                <?php if(count($relacionados) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $relacionados)) ?>
+                <?php if(count($recentes) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $recentes)) ?>
               </div>
               <!-- BOX PADRAO Mais recentes -->
               <?php endif; ?>
 
-              <?php if(isset($displays["destaque-noticias-recentes"])): ?>
+              <?php /*if(isset($displays["destaque-noticias-recentes"])): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
                 <div class="topo claro">
@@ -430,7 +436,7 @@ $(function(){
                 <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"])) ?>
               </div>
               <!-- /BOX PADRAO + Visitados -->
-              <?php endif; ?>
+              <?php endif; */ ?>
 
             </div>
             <!-- /DIREITA -->
