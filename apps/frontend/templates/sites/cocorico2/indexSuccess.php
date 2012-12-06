@@ -73,7 +73,7 @@
   <?php if(count($displays['destaque-principal']) > 0): ?> 	
   
   	  <?php $secao= 0; ?>
-      <?php $secao= $displays[0]-> Asset-> getSections(); ?>
+      <?php $secao= $displays[0]-> Asset-> getSection(); ?>
       <?php $secao_destaque-> $secao ->getSlug(); ?>
       
     <div class="row-fluid conteudo">    
@@ -99,7 +99,7 @@
   	  <?php if(count($displays['receitinhas']) > 0): ?>
       
       <?php $secao= 0; ?>     
-      <?php $secao= $displays[0]-> Asset-> getSections(); ?>
+      <?php $secao= $displays[0]-> Asset-> getSection(); ?>
       <?php $secao_receitinhas-> $secao ->getSlug(); ?>
                     
       <div class="span12">
