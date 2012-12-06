@@ -1104,8 +1104,7 @@ class _sectionActions extends sfActions
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")){
-        
+      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->site->getSlug() == "cadastrodeestagiario")){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
           $email_site = $this->section->getContactEmail();
