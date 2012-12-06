@@ -99,7 +99,7 @@
   	  <?php if(count($displays['receitinhas']) > 0): ?>
       
       <?php $secao= 0; ?>     
-      <?php $secao= $displays['receitinhas'][0]-> Asset -> Site -> Section ->->getSlug(); ?>
+      <?php $secao= $displays['receitinhas'][0]-> Asset -> Site -> Section ->getSlug(); ?>
       <?php $secao_receitinhas-> $secao ->getSlug(); ?>
                     
       <div class="span12">
