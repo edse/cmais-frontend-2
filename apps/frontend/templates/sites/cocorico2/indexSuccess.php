@@ -71,7 +71,10 @@
   <!--row-->
   <?php if(isset($displays['destaque-principal'])):?>
   <?php if(count($displays['destaque-principal']) > 0): ?> 	
-  <?php $secao_destaque-> $displays['destaque-principal'][0]->$d->Section->getSlug() ?>
+  
+  	  <?php $secao= 0; ?>
+      <?php $secao= $displays[0]-> Asset-> getSections(); ?>
+      <?php $secao_destaque-> $secao[0] ->getSlug(); ?>
       
     <div class="row-fluid conteudo">    
     <div class="span8 col-esq">
@@ -94,7 +97,8 @@
       
       <?php if(isset($displays['receitinhas'])):?>
   	  <?php if(count($displays['receitinhas']) > 0): ?>
-           
+      
+      <?php $secao= 0; ?>     
       <?php $secao= $displays[0]-> Asset-> getSections(); ?>
       <?php $secao_receitinhas-> $secao[0] ->getSlug(); ?>
                     
