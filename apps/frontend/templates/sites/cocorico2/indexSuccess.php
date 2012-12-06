@@ -74,7 +74,7 @@
   
   	  <?php $secao= 0; ?>
       <?php $secao= $displays[0]-> Asset-> getSections(); ?>
-      <?php $secao_destaque-> $secao[0] ->getSlug(); ?>
+      <?php $secao_destaque-> $secao ->getSlug(); ?>
       
     <div class="row-fluid conteudo">    
     <div class="span8 col-esq">
@@ -100,7 +100,7 @@
       
       <?php $secao= 0; ?>     
       <?php $secao= $displays[0]-> Asset-> getSections(); ?>
-      <?php $secao_receitinhas-> $secao[0] ->getSlug(); ?>
+      <?php $secao_receitinhas-> $secao ->getSlug(); ?>
                     
       <div class="span12">
       	<?php foreach($displays['receitinhas'] as $k=>$d): ?>
