@@ -1,6 +1,6 @@
 .bg-site { background :url(/portal/images/capaPrograma/cassiaeller/pattern-cassia.jpg) repeat-x; }
 .bg-site { height:146px; margin-top:-58px; z-index: -1;*z-index:-1 !important; }
-.bg-site { top:0 !important; z-index: 100; }
+.bg-site { top:0 !important;}
 #barra-site .redes { float: right; }
 #barra-site h2 {margin-top:30px;}
 #capa-site { margin-top:-102px !important; }
