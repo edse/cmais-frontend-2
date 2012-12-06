@@ -72,14 +72,17 @@
   <?php if(isset($displays['destaque-principal'])):?>
   <?php if(count($displays['destaque-principal']) > 0): ?> 	
   
-      <?php $secao= 0; ?>     
-      <?php $secao= $displays['destaque-principal'][0]-> Asset -> Section -> getSlug(); ?>
-      <?php $secao_destaque-> $secao ->getSlug(); ?>
+      
       
     <div class="row-fluid conteudo">    
     <div class="span8 col-esq">
     	
      <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+     	
+      <?php $secao= 0; ?>     
+      <?php $secao= $displays['destaque-principal'][0]-> $d -> Asset -> Section -> getSlug(); ?>
+      <?php $secao_destaque-> $secao ->getSlug(); ?>
+      
       <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
         <a href="/cocorico/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
         <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
@@ -99,8 +102,8 @@
   	  <?php if(count($displays['receitinhas']) > 0): ?>
       
       <?php $secao= 0; ?>     
-      <?php $secao= $displays['receitinhas'][0]-> Asset -> Section ->getSlug(); ?>
-      <?php $secao_receitinhas-> $secao ->getSlug(); ?>
+      <?php $secao= $displays['receitinhas'][0]-> $d -> Asset -> Section -> getSlug(); ?>
+      <?php $secao_destaque-> $secao ->getSlug(); ?>
                     
       <div class="span12">
       	<?php foreach($displays['receitinhas'] as $k=>$d): ?>
