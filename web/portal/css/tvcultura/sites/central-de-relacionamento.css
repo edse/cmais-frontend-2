@@ -23,14 +23,14 @@
 /* /TOPO central */
 
 /* GERAL */
-.container-btn{width: 254px;margin: 0 auto; font-size:14px;}
+.container-btn{width: 288px;margin: 0 auto;}
 .container.content .col-equerda h1{text-transform: uppercase;}
-.mais-info{padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:bold !important; letter-spacing: 0.12em;}
+.mais-info{width:358px; font-size:15px; padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; font-weight:bold !important; letter-spacing: 0.12em;}
 .logo-central{margin:50px 0 20px 0;}
 .col-esquerda.central{background: #f3f3f3;border-radius: 5px;}
 .col-esquerda .botoes{padding: 4px 10px;margin-top:30px !important; height:90px; background: url(/portal/images/capaPrograma/central-de-relacionamento/patterns-botoes.jpg) repeat-x;}
-.col-esquerda .desc-perg{float: left;text-shadow: none;font-size: 14px;text-transform: none;color: white;font-weight: normal;padding: 0px 0 0 10px;width:281px; height:40px; overflow: hidden; text-align: left; line-height:20px;}
-.tit-perg{width: 281px;height: 18px;overflow: hidden;text-align: left;float: left;margin: 15px 0 0 10px;font-size: 14px;text-shadow: none;font-weight: bold !important;}
+.col-esquerda .desc-perg{float: left;text-shadow: none;font-size: 16px;text-transform: none;color: white;font-weight: normal;padding: 5px 0 0 10px;width:281px; height:40px; overflow: hidden; text-align: left;}
+.tit-perg{width: 281px;height: 18px;overflow: hidden;text-align: left;float: left;margin: 15px 0 0 10px;font-size: 16px;text-shadow: none;font-weight: bold !important;}
 .col-esquerda .botoes.blue .tit-perg{color:#fdb813;}
 .col-esquerda .botoes.blue{background-position:0 -361px;}
 .col-esquerda .botoes.blue:hover{background-position:0 -451px;}
@@ -43,12 +43,12 @@
 .col-esquerda{margin:0 !important; text-align:left;}
 .col-direita{text-align:left; margin-bottom: 20px;margin-bottom: 20px\9;}
 .col-esquerda p{width:94%; padding:0 10px;}
-.col-direita p{padding: 5px;}
+.col-direita p{padding: 5px 5px 11px 17px;}
 .desc-site{float:right; font-weight:bold; font-size:14px; color:#000;bottom: 15px;position: absolute;right: 1px;}
 .col-esquerda h1,
 .col-direita h1{color: #2A4C9C;font-size: 22px;width: 94%;padding: 0 10px;margin: 0px 0 -5px 0;}
 .col-direita h1{padding:0; line-height: 22px;margin-bottom:10px;}
-.col-direita li{font-size:14px;}
+.col-direita li{font-size:14px;border-bottom: 2px solid white;}
 .col-esquerda h3,
 .col-direita h3{color:#000000;font-size: 20px; width:94%;padding:0 10px;}
 .voltar-perguntas, #col-sub .fechar{color:#333399; font-weight: bold; text-decoration: none; font-size:12px; margin-top:10px; margin-right:10px;}
@@ -57,16 +57,18 @@
 .icone{float: left;display:block;width:72px;height:74px; background: url(/portal/images/capaPrograma/central-de-relacionamento/icones-central.png) no-repeat 0 0;}
 .sintonia{background-position: 0 -73px;}
 .trabalhe-conosco{background-position: 0 -144px;}
-.ico-perg{margin:-9px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;float:left;}
-.coluna-sub{border-radius:5px; padding: 10px; overflow: hidden;}
+.ico-perg{margin:-8px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;float:left;}
+.coluna-sub{border-radius:5px; padding: 10px; overflow: hidden;margin-bottom:20px;}
 .cinza-escuro{background:#7f7f7f !important;}
 .cinza-claro{background:#a1a1a1 !important;}
 .cinza-claro-2{background:#f3f3f3 !important;}
+.tarja1{background-color: #e1e1e1;}
+.tarja2{background-color: #eaeaea;}
 .label-green{background-color: #4cb957;}
 .label-red{background-color: #FF0000;}
 .label{margin:10px 0px}
 #col-sub .fundo-cinza {*width:520px;}
-#col-sub{margin-top:20px}
+#col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
 #col-sub a.formas{display: block;margin: 0 0 0 0;padding: 13px;color:#333;}
 #col-sub {*background: #eaeaea; *list-style:none;*float:left;overflow:hidden;}
@@ -95,9 +97,13 @@
 #email-central .form-horizontal .controls{margin-left:122px;}
 #email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
 #email-central label.valid {width: 24px; height: 24px; background: url(/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
-#email-central label.error {font-weight: bold; color: red; padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}
+#email-central label.error {font-weight: bold; overflow:hidden; padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}
 #email-central .trocar{position: absolute;left: 8px;}
 #email-central .form-horizontal .control-group {margin-bottom:10px;}
 #email-central .alert h4 {color:#106d41 ;text-transform: none;}
 #email-central .btn{text-decoration: none !important;}
 /* /GERAL */
+
+/* CONTENT */
+#img-destaque{width: 972px; height: 200px; margin:0 0 20px;overflow: hidden;}
+/* /CONTENT */
