@@ -72,8 +72,7 @@
   <?php if(isset($displays['destaque-principal'])):?>
   <?php if(count($displays['destaque-principal']) > 0): ?> 	
   
-      
-      
+            
     <div class="row-fluid conteudo">    
     <div class="span8 col-esq">
     	
