@@ -37,7 +37,7 @@ $(document).ready(function(){
         <?php if(isset($displays['box-1'])):?>
         <?php if(count($displays['box-1']) > 0): ?>
        	<?php foreach($displays['box-1'] as $k=>$d): ?> 
-        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes green" title="Perguntas Frequentes">
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes green mais-info-a" title="Perguntas Frequentes">
           <i class="icone"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
@@ -49,7 +49,7 @@ $(document).ready(function(){
         <?php if(isset($displays['box-2'])):?>
         <?php if(count($displays['box-2']) > 0): ?>
        	<?php foreach($displays['box-2'] as $k=>$d): ?>
-        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue" title="Perguntas Frequentes">
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue mais-info-a" title="Perguntas Frequentes">
           <i class="icone sintonia"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
@@ -62,7 +62,7 @@ $(document).ready(function(){
         <?php if(isset($displays['box-3'])):?>
         <?php if(count($displays['box-3']) > 0): ?>
        	<?php foreach($displays['box-3'] as $k=>$d): ?>
- 		<a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red" title="Perguntas Frequentes">          
+ 		<a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red mais-info-a" title="Perguntas Frequentes">          
  			<i class="icone trabalhe-conosco"></i>
           <span class="tit-perg"><?php echo $d->getTitle() ?></span>
           <span class="desc-perg"><?php echo $d->getDescription() ?></span>
