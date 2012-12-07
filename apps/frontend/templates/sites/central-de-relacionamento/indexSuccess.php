@@ -23,7 +23,7 @@ $(document).ready(function(){
             <h3><?php echo $d->getDescription() ?></h3>
             <?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?>
             <br/> 
-            <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info" title="Perguntas Frequentes">
+            <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info mais-info-a" title="Perguntas Frequentes">
               <div class="container-btn">
                 <i class="ico-perg"></i>Perguntas Frequentes</i>
               </div>
