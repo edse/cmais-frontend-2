@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
@@ -8,11 +8,6 @@
     <!--[if IE]>
       <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
     <![endif]-->
-    
-
-
-
-  
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
