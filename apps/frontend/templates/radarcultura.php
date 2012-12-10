@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234567" type="text/css" />
@@ -80,7 +81,7 @@
     <?php echo $sf_content ?>
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
-
+    
     <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
