@@ -187,7 +187,7 @@
           </div>
 
           <div class="span4" style="margin:0  0 0 30px\9;">
-            <fb:like-box href="https://www.facebook.com/programaradarcultura" width="319" height="500" show_faces="true" border_color="#DDDDDD" stream="true" header="true"></fb:like-box>
+            <fb:like-box href="https://www.facebook.com/programaradarcultura" width="319" height="675" show_faces="true" border_color="#DDDDDD" stream="true" header="true"></fb:like-box>
           </div>
 
           <div class="span4" style="margin:0  0 0 40px\9;">
