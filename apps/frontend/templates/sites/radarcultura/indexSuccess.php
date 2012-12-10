@@ -190,7 +190,7 @@
             <fb:like-box href="https://www.facebook.com/programaradarcultura" width="319" height="675" show_faces="true" border_color="#DDDDDD" stream="true" header="true"></fb:like-box>
           </div>
 
-          <div class="span4" style="margin:0 0 0 40px\9;*margin:0 0 0 0px;">
+          <div class="span4" style="margin:0 0 0 40px\9;">
             <g:plus width="319" href="https://plus.google.com/105450700645861288327" rel="publisher"></g:plus>
             <script type='text/javascript'>
               GA_googleFillSlot("home-geral300x250");
