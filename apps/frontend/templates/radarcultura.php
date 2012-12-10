@@ -4,6 +4,7 @@
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234567" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=11234" type="text/css" />
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
     <![endif]-->
