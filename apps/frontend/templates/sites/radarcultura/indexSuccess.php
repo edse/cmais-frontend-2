@@ -186,7 +186,7 @@
           <?php endif; ?>
           </div>
 
-          <div class="span4 banner-radio">
+          <div class="span4">
             <fb:like-box href="https://www.facebook.com/programaradarcultura" width="319" height="500" show_faces="true" border_color="#DDDDDD" stream="true" header="true"></fb:like-box>
           </div>
 
