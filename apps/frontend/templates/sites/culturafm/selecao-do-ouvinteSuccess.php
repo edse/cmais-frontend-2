@@ -174,7 +174,7 @@
                 </div>
               </div>               
               <div class="linha add" id="adicionar_holder">
-              	<a href="javascript:;" id="adicionar" class="enviar">+ Música</a>
+              	<a href="javascript:;" id="adicionar" class="enviar">Sugira mais músicas</a>
               </div>
               <div class="linha add" id="remover_holder" style="display:none;">
               	<a href="javascript:;" id="remover" class="enviar">Remover</a>
@@ -300,9 +300,9 @@
 	  if (i < max) {
 	    i++;
 	    var new_field = '<div class="divisa" id="item_'+i+'"><p class="item">'+i+'</p>';
-	    new_field += '<div class="linha t3"><label>música</label><input type="text" id="musica_'+i+'" name="musica_'+i+'"></div>';
-	    new_field += '<div class="linha t3 interprete"><label>intérprete</label><input type="text" id="interprete_'+i+'" name="interprete_'+i+'"></div>';
-	    new_field += '<div class="linha t3 compositor"><label>compositor</label><input type="text" id="compositor_'+i+'" name="compositor_'+i+'"></div></div>';
+	    new_field += '<div class="linha t3"><label>música</label><input type="text" id="musica_'+i+'" maxlength="100" name="musica_'+i+'"></div>';
+	    new_field += '<div class="linha t3 interprete"><label>intérprete</label><input type="text" id="interprete_'+i+'" maxlength="100" name="interprete_'+i+'"></div>';
+	    new_field += '<div class="linha t3 compositor"><label>compositor</label><input type="text" id="compositor_'+i+'" maxlength="100" name="compositor_'+i+'"></div></div>';
 	    $("#adicionar_holder").before(new_field);
 	  }
 	  else {
