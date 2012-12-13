@@ -173,8 +173,8 @@
                   <input type="text" name="compositor_1" id="compositor_1" />
                 </div>
               </div>               
-              <div class="linha add" id="adicionar_holder" style="width:156px; margin-right:20px;">
-              	<a href="javascript:;" id="adicionar" class="enviar" style="width:auto">Sugira mais músicas</a>
+              <div class="linha add" id="adicionar_holder" style="width:auto; margin-right:20px;">
+              	<a href="javascript:;" id="adicionar" class="enviar" style="width:auto; padding:6px">Sugira mais músicas</a>
               </div>
               <div class="linha add" id="remover_holder" style="display:none;">
               	<a href="javascript:;" id="remover" class="enviar">Remover</a>
