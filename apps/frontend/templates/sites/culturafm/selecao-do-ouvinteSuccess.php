@@ -158,7 +158,7 @@
                   <label>
                     Música
                   </label>
-                  <input type="text" id="musica_1" name="musica_1" />
+                  <input type="text" id="musica_1" name="musica_1" maxlength="100" />
                 </div>
                 <div class="linha t3">
                   <label>
