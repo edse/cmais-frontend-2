@@ -164,13 +164,13 @@
                   <label>
                     Intérprete
                   </label>
-                  <input type="text" id="interprete_1" name="interprete_1" />
+                  <input type="text" id="interprete_1" name="interprete_1" maxlength="100" />
                 </div>
                 <div class="linha t3 compositor">
                   <label>
                     Compositor
                   </label>
-                  <input type="text" name="compositor_1" id="compositor_1" />
+                  <input type="text" name="compositor_1" id="compositor_1" maxlength="100" />
                 </div>
               </div>               
               <div class="linha add" id="adicionar_holder" style="width:auto; margin-right:20px;">
