@@ -96,7 +96,10 @@ class Asset extends BaseAsset
   public function retriveImageUrlByImageUsage($usage){
     if($this->getId() > 0){
       if($this->AssetType->getSlug() == "image"){
-        return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".jpg";
+        if ($usage == 'original')
+          return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".".$this->AssetImage->getFileExtension();
+        else
+          return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".jpg";
       }
       elseif($this->AssetType->getSlug() == "video"){
         if($this->AssetVideo->getYoutubeId() != ""){
