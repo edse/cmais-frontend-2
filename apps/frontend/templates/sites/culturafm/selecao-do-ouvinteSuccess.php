@@ -174,10 +174,10 @@
                 </div>
               </div>               
               <div class="linha add" id="adicionar_holder" style="width:auto; margin-right:20px;">
-              	<a href="javascript:;" id="adicionar" class="enviar" style="width:auto; padding:6px">Sugira mais músicas</a>
+              	<a href="javascript:;" id="adicionar" class="enviar" style="width:auto; padding:2px 8px 2px 8px">Sugira mais músicas</a>
               </div>
-              <div class="linha add" id="remover_holder" style="display:none;">
-              	<a href="javascript:;" id="remover" class="enviar">Remover</a>
+              <div class="linha add" id="remover_holder" style="display:none;" style="width:auto; margin-right:20px;">
+              	<a href="javascript:;" id="remover" class="enviar" style="width:auto; padding:2px 8px 2px 8px">Remover</a>
               </div>
               <div class="linha t3 codigo" id="captchaimage">
               <label for="captcha">
