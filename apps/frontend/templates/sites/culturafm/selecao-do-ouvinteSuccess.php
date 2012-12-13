@@ -152,7 +152,7 @@
               </div>
               <div class="divisa">
                 <p class="item" id="item_1">
-                  1
+                  Música 1
                 </p>
                 <div class="linha t3">
                   <label>
@@ -299,7 +299,7 @@
 	  $('#remover_holder').show();
 	  if (i < max) {
 	    i++;
-	    var new_field = '<div class="divisa" id="item_'+i+'"><p class="item">'+i+'</p>';
+	    var new_field = '<div class="divisa" id="item_'+i+'"><p class="item">Música '+i+'</p>';
 	    new_field += '<div class="linha t3"><label>música</label><input type="text" id="musica_'+i+'" maxlength="100" name="musica_'+i+'"></div>';
 	    new_field += '<div class="linha t3 interprete"><label>intérprete</label><input type="text" id="interprete_'+i+'" maxlength="100" name="interprete_'+i+'"></div>';
 	    new_field += '<div class="linha t3 compositor"><label>compositor</label><input type="text" id="compositor_'+i+'" maxlength="100" name="compositor_'+i+'"></div></div>';
