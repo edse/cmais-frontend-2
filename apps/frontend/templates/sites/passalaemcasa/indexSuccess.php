@@ -71,7 +71,7 @@
           <?php endif; ?>
           <!-- col-esq -->
           <div class="col-esq grid1">
-          <?php if(isset($displays["destaque-multiplo-1"])):?>
+          <?php if(isset($displays["destaque-multiplo-1"])): ?>
             <!-- BOX PADRAO Mais recentes -->
             <div class="box-padrao grid1">
               <!--topo-claro-->
@@ -97,6 +97,7 @@
             <!-- /BOX PADRAO Mais recentes -->
           <?php endif;?>  
           </div>
+          <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"]))?>
           <!-- /col-esq -->
           <div class="col-dir grid1">
             <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"]))?>
