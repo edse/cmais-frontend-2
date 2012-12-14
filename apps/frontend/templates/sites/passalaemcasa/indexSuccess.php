@@ -95,7 +95,8 @@
               <?php if(isset($displays["destaque-multiplo-1"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-multiplo-1"]))?>
             </div>
             <!-- /BOX PADRAO Mais recentes -->
-          <?php endif;?>  
+          <?php endif;?>
+          <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"]))?>  
           </div>
           <!-- /col-esq -->
           <div class="col-dir grid1">
