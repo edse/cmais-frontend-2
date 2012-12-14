@@ -21,15 +21,23 @@ $(document).ready(function(){
   <!--colunas-->
   <div class="row-fluid">
     <!--coluna esquerda-->
-    
-    <div class="col-esquerda span9">
-      <a id="perguntas"></a>
+    <div class="row-fluid">
+      <div id="img-destaque">
+        <img src="/portal/images/capaPrograma/central-de-relacionamento/img_exemplo.jpg" alt="titulo imagem"/>
+      </div>
+    </div>
+    <div class="col-esquerda span7">
       <h1><?php echo $asset->getTitle() ?></h1>
       <?php echo html_entity_decode($asset->AssetContent->render()) ?>
       <br/>
-      <a href="<?php echo $asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="titulo"><i class=" icon-align-left icon-white"></i>&nbsp;Clique Aqui para mais informações</i></a>
     </div>
     <!--/coluna esquerda-->
+    <div class="col-direita span4">
+      <a href="<?php echo $asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large mais-info" title="titulo"><i class=" icon-align-left icon-white"></i>&nbsp;Clique Aqui para + informações</i></a>
+    </div>
+    <!--coluna direita-->
+    
+    <!--/coluna direita-->
   </div>
   <!--/colunas-->  
 </div>

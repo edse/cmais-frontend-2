@@ -1,19 +1,3 @@
-<script>
-$(document).ready(function(){
-  $(".collapse").collapse();
-  $(".dicas").click(function(){
-    $(this).prev().toggleClass('icon-minus');
-  });
-  $('.formas').click(function(){
-    $(this).prev().toggleClass('icon-circle-arrow-down');
-  });
-  $('.col-esquerda a, #voltar').click(function(){ 
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, "slow");
-  });
-});
-</script>
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 <!--container-->
 <div class="container">
@@ -36,68 +20,83 @@ $(document).ready(function(){
         Antes de enviar sua mensagem, verifique se sua pergunta
         ou informação não está contemplada nos itens 
         <?php if(isset($displays)):?>
-        <?php if(count($displays) > 0): ?>
-         <?php foreach($displays as $display): ?>
-           <?php if(count($display) > 0): ?>
-          <a href="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
-           <?php endif; ?>
-        <?php endforeach; ?>  
-       <?php endif; ?>
-       <?php endif; ?>        
-           Perguntas Frequentes
-        ou em <a href="#">algum</a> dos acessos oferecidos nesta página.
+          <?php if(count($displays) > 0): ?>
+             <?php foreach($displays as $display): ?>
+               <?php if(count($display) > 0): ?>
+              <a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
+               <?php endif; ?>
+            <?php endforeach; ?>  
+          <?php endif; ?>
+        <?php endif; ?>        
+        Perguntas Frequentes.
       </p>
     </div>
     <!--/coluna esquerda-->
     <!--coluna direita-->
-    
-     <div class="col-direita pull-right span7 ">
-       
-         <?php if(isset($displays)):?>
-          <?php if(count($displays) > 0): ?>
-      <!-- COLUNA SUB DIR 1 -->
-      <?php $i = 1; ?>
+    <div class="col-direita pull-right span7 ">
+    <?php if(isset($displays)):?>
+     <?php if(count($displays) > 0): ?>
+       <!-- COLUNA SUB DIR 1 -->
+       <?php $i = 1; ?>
        <?php foreach($displays as $display): ?>
-          <?php if(count($display) > 0): ?>
-         
-          
-          <a id="<a href="#<?php echo $display[0]->Block->getSlug() ?>">
-       
-      <div class="coluna-sub cinza-claro-2">
-         <span class="titulo bold"><?php echo $display[0]->Block->getDescription() ?></span>
-         <!-- COLUNA SUB DIR 2 -->
-         <div id="col-sub" class="texto-preto">
-          <ul>
-          <?php foreach($display as $d): ?>
-            <li>
-              <i class="icon-circle-arrow-right"></i>  
-              <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#a<?php echo $i ?>">
-                <?php echo $d->Asset->getTitle() ?>
-              </a>
-              <div id="a<?php echo $i ?>" class="fundo-cinza collapse in"style="overflow: hidden; clear: both;">
-                <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> <a href="#">link</a> 
+         <?php if(count($display) > 0): ?>
+           <!--ancora-->
+           <a id="<?php echo $display[0]->Block->getSlug() ?>"></a>
+           <!--/ancora-->
+           <div id="<?php echo $display[0]->Block->getId() ?>" class="coluna-sub cinza-claro-2">
+             <span class="titulo bold"><?php echo $display[0]->Block->getDescription() ?></span>
+              <!-- COLUNA SUB DIR 2 -->
+              <div id="col-sub" class="texto-preto">
+               <ul>
+               <?php foreach($display as $value=>$d): ?>
+                 <li class="<?php if($value%2==0){echo "tarja1";}else{echo "tarja2";}?>">
+                   <i class="icon-circle-arrow-right"></i>  
+                   <a href="javascript:;" class="formas" data-toggle="collapse" data-parent="#<?php echo $display[0]->Block->getSlug() ?>" data-target="#<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>">
+                     <?php echo $d->Asset->getTitle() ?>
+                   </a>
+                   <div id="<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>" class="fundo-cinza collapse in"style="overflow: hidden; clear: both;">
+                     <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
+                   </div>
+                 </li>
+              <?php $i++; ?>
+              <?php endforeach; ?>
+              </ul>    
               </div>
-            </li>
-            
-            <?php $i++; ?>
-            
-          <?php endforeach; ?>
-          </ul>    
-                             
-        </div>
-        <a id="voltar" class="voltar-perguntas pull-right" href="#a">voltar</a> 
-      </div>
-        <?php endif; ?>
-       <?php endforeach; ?>         
-      <!-- /COLUNA SUB DIR 1 -->
-       <?php endif; ?> 
+                <a id="voltar" class="voltar-perguntas pull-right" href="javascript:;" >voltar</a> 
+              </div>
+           <?php endif; ?>
+         <?php endforeach; ?>         
+         <!-- /COLUNA SUB DIR 1 -->
+      <?php endif; ?> 
     <?php endif; ?>
+    <!--pergunta-->
     </div>   
-      
-    
-   
     <!--/coluna direita-->
   </div>
   <!--/colunas-->  
 </div>
 <!--container-->
+<script>
+$(document).ready(function(){
+  $(".collapse").collapse();
+  $(".dicas").click(function(){
+    $(this).prev().toggleClass('icon-minus');
+  });
+  $('.formas').click(function(){
+    $(this).prev().toggleClass('icon-circle-arrow-down');
+    goTop($(this).attr('data-parent'));
+  });
+  $('.col-esquerda a').click(function(){ 
+    goTop($(this).attr('id'));
+  });
+  $('.voltar-perguntas').click(function(){ 
+    goTop('#fundo-topo');
+  });
+  function goTop(id){
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, "slow");
+  }
+});
+</script>
+

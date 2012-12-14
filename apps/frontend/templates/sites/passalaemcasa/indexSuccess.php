@@ -71,7 +71,7 @@
           <?php endif; ?>
           <!-- col-esq -->
           <div class="col-esq grid1">
-          <?php if(isset($displays["destaque-multiplo-1"])):?>
+          <?php if(isset($displays["destaque-multiplo-1"])): ?>
             <!-- BOX PADRAO Mais recentes -->
             <div class="box-padrao grid1">
               <!--topo-claro-->

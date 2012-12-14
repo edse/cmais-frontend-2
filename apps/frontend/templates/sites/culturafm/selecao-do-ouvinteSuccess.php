@@ -152,32 +152,32 @@
               </div>
               <div class="divisa">
                 <p class="item" id="item_1">
-                  1
+                  Música 1
                 </p>
                 <div class="linha t3">
                   <label>
                     Música
                   </label>
-                  <input type="text" id="musica_1" name="musica_1" />
+                  <input type="text" id="musica_1" name="musica_1" maxlength="100" />
                 </div>
                 <div class="linha t3">
                   <label>
                     Intérprete
                   </label>
-                  <input type="text" id="interprete_1" name="interprete_1" />
+                  <input type="text" id="interprete_1" name="interprete_1" maxlength="100" />
                 </div>
                 <div class="linha t3 compositor">
                   <label>
                     Compositor
                   </label>
-                  <input type="text" name="compositor_1" id="compositor_1" />
+                  <input type="text" name="compositor_1" id="compositor_1" maxlength="100" />
                 </div>
               </div>               
-              <div class="linha add" id="adicionar_holder">
-              	<a href="javascript:;" id="adicionar" class="enviar">+ Música</a>
+              <div class="linha add" id="adicionar_holder" style="width:auto; margin-right:20px;">
+              	<a href="javascript:;" id="adicionar" class="enviar" style="width:auto; padding:2px 8px 2px 8px">Sugira mais músicas</a>
               </div>
-              <div class="linha add" id="remover_holder" style="display:none;">
-              	<a href="javascript:;" id="remover" class="enviar">Remover</a>
+              <div class="linha add" id="remover_holder" style="display:none;" style="width:auto; margin-right:20px;">
+              	<a href="javascript:;" id="remover" class="enviar" style="width:auto; padding:2px 8px 2px 8px">Remover</a>
               </div>
               <div class="linha t3 codigo" id="captchaimage">
               <label for="captcha">
@@ -299,10 +299,10 @@
 	  $('#remover_holder').show();
 	  if (i < max) {
 	    i++;
-	    var new_field = '<div class="divisa" id="item_'+i+'"><p class="item">'+i+'</p>';
-	    new_field += '<div class="linha t3"><label>música</label><input type="text" id="musica_'+i+'" name="musica_'+i+'"></div>';
-	    new_field += '<div class="linha t3 interprete"><label>intérprete</label><input type="text" id="interprete_'+i+'" name="interprete_'+i+'"></div>';
-	    new_field += '<div class="linha t3 compositor"><label>compositor</label><input type="text" id="compositor_'+i+'" name="compositor_'+i+'"></div></div>';
+	    var new_field = '<div class="divisa" id="item_'+i+'"><p class="item">Música '+i+'</p>';
+	    new_field += '<div class="linha t3"><label>música</label><input type="text" id="musica_'+i+'" maxlength="100" name="musica_'+i+'"></div>';
+	    new_field += '<div class="linha t3 interprete"><label>intérprete</label><input type="text" id="interprete_'+i+'" maxlength="100" name="interprete_'+i+'"></div>';
+	    new_field += '<div class="linha t3 compositor"><label>compositor</label><input type="text" id="compositor_'+i+'" maxlength="100" name="compositor_'+i+'"></div></div>';
 	    $("#adicionar_holder").before(new_field);
 	  }
 	  else {

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234567" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=11234" type="text/css" />
+    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
     <![endif]-->
-    
-
-
-
-  
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
@@ -80,7 +77,7 @@
     <?php echo $sf_content ?>
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
-
+    
     <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
