@@ -8,7 +8,7 @@
 </div>
 
 <!-- CAPA SITE --> 
-<div id="capa-site">
+<div id="capa-site"> 
   <!-- BARRA SITE -->
   <div id="barra-site">
     <!--TOPO PROGRAMA-->
@@ -96,10 +96,10 @@
             </div>
             <!-- /BOX PADRAO Mais recentes -->
           <?php endif;?>
-          <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"]))?>  
+          <?php if(isset($displays["destaque-padrao-6"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-6"]))?>  
           </div>
           <!-- /col-esq -->
-          <div class="col-dir grid1">
+          <div class="col-dir grid1"> 
             <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"]))?>
             <?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"]))?>
           </div>
