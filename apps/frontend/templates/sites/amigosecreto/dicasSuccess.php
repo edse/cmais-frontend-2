@@ -47,9 +47,10 @@
                     <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?>  
                   </div>        
                 <?php endforeach; ?>
+              <hr class="divisor"/> 
               <?php endif;?>
             <?php endif; ?>
-          <hr class="divisor"/> 
+   
           <!--ASSET-->
         <?php endfor;?>
       </div>
