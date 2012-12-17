@@ -107,10 +107,10 @@
 <script>
   $(document).ready(function(){
     goTop('osorio-asset')
-    $('a[id|=btn]').hover(function(){
-      $(this).prev('.btn-hover-as').css('display','block');
+    $('a[id|=btnc]').hover(function(){
+      $(this).prev('.btnc-hover-as').css('display','block');
     });
-    $('.btn-hover-as').mouseout(function(){
+    $('.btnc-hover-as').mouseout(function(){
       $(this).not('.selected').css('display','none');
     });
     $('.btnc-hover-as').click(function(){
