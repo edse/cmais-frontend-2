@@ -22,7 +22,7 @@
    
             <li class="<?php if($i==0) echo "first";?>">
               <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
-              <?php if($arrayNome != 'filomena' || $arrayNome != 'lilica'):?>
+              <?php if($i!=4 || $i!=10):?>
               <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as"></a>
               <?php else:?>
               <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as" style="opacity: 0.5;"></a>
