@@ -18,7 +18,55 @@
     <div id="dica-as">
       <!--BOTOES PERSONAGENS-->
       <ul>
-        <?php for($i=0;$i<count($arrayNome); $i++): ?>
+        <li class="first">
+          <div class="btn-hover-as" name="osorio-asset" title="Osório"></div>
+          <a href="#" id="btn-osorio-as" style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
+          <a href="#" id="btn-teobaldo-as" style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="ludovico-asset" title="Ludovico"></div>
+          <a href="#" id="btn-ludovico-as" style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="doroteia-asset" title="Dorotéia"></div>
+          <a href="#" id="btn-doroteia-as" style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as  selected" name="filomena-asset" title="Filomena"></div>
+          <a href="#" id="btnc-filomena-as"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="joao-asset" title="João"></div>
+          <a href="#" id="btn-joao-as" style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="eric-asset" title="Eric"></div>
+          <a href="#" id="btn-eric-as"  style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="pedro-asset" title="Pedro"></div>
+          <a href="#" id="btn-pedro-as"  style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="matheus-asset" title="Matheus"></div>
+          <a href="#" id="btn-matheus-as"  style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="julio-asset" title="Júlio"></div>
+          <a href="#" id="btn-julio-as"  style="opacity: 0.5"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="lilica-asset" title="Lilica"></div>
+          <a href="#" id="btnc-lilica-as"></a>
+        </li>
+        <li>
+          <div class="btn-hover-as" name="caco-asset" title="Caco"></div>
+          <a href="#" id="btn-caco-as"  style="opacity: 0.5"></a>
+        </li>
+        <?php/* for($i=0;$i<count($arrayNome); $i++): ?>
    
             <li class="<?php if($i==0) echo "first";?>">
               <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
@@ -28,7 +76,8 @@
               <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as" style="opacity: 0.5;" disabled="disabled"></a>
               <?php };?>
             </li>
-        <?php endfor;?>
+        <?php endfor; */?>
+        
       </ul>
       <!--/BOTOES PERSONAGENS-->
       <!--BLOG-AS-->
@@ -75,7 +124,7 @@
     $('.btn-hover-as').mouseout(function(){
       $(this).not('.selected').css('display','none');
     });
-    $('.btn-hover-as').click(function(){
+    $('.btnc-hover-as').click(function(){
       //alert($(this).attr('name'))
       $('.btn-hover-as').css('display','none').removeClass('selected');
       $(this).addClass('selected');
