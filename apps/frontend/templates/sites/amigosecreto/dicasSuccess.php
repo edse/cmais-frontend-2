@@ -19,10 +19,14 @@
       <!--BOTOES PERSONAGENS-->
       <ul>
         <?php for($i=0;$i<count($arrayNome); $i++): ?>
-          <li class="<?php if($i==0) echo "first";?>">
-            <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
-            <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as"></a>
-          </li>
+          <?php if($arrayNome != 'filomena' || $arrayNome != 'lilica'):?>
+            <li class="<?php if($i==0) echo "first";?>">
+          <?php else:?>
+            <li class="<?php if($i==0) echo "first";?>" style="opacity: 0.5;">
+          <?php endif;?>    
+              <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
+              <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as"></a>
+            </li>
         <?php endfor;?>
       </ul>
       <!--/BOTOES PERSONAGENS-->
