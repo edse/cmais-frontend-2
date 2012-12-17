@@ -2,7 +2,7 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {height:100px; background:url(../../../images/capaPrograma/inezitabarroso/bg-topo.jpg) repeat-x; position:relative; top:48px; z-index: 0; overflow:hidden; clear:both;}
+.bg-site {height:100px; background:url(../../../images/capaPrograma/inezitabarroso/bg-topo.jpg) repeat-x; position:relative; top:0; z-index: 0; overflow:hidden; clear:both;}
 
 #miolo {margin-top:28px;}
 #barra-site {height:90px; background:url(../../../images/capaPrograma/inezitabarroso/flor.png) no-repeat 0 40px;}
@@ -10,7 +10,7 @@
 #barra-site h2 a { font-size:25px; color:#fff; text-transform:uppercase; }
 .bg-site  {_margin-top:-49px !important;}
 .facebook {padding:0 !important;}
-.bg-chamada {width:100%; position:relative; top:48px; overflow:hidden; background:url(../../../images/capaPrograma/inezitabarroso/bg-topo.jpg) repeat-x;}
+.bg-chamada {width:100%; position:relative; top:0; overflow:hidden; background:url(../../../images/capaPrograma/inezitabarroso/bg-topo.jpg) repeat-x;}
 #chamada { width:970px; margin:0 auto; float:none; margin-top:20px; margin-bottom:0;}
 .noticia .img-video { margin:0; }
 #barra-site .redes{float:right !important;}
