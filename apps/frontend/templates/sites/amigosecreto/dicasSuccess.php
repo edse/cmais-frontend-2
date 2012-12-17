@@ -20,19 +20,19 @@
       <ul>
         <li class="first">
           <div class="btnc-hover-as" name="osorio-asset" title="Osório"></div>
-          <a href="#" id="btnc-osorio-as" style="opacity: 0.5" title="Osório"></a>
+          <a href="#" id="btn-osorio-as" style="opacity: 0.5" title="Osório"></a>
         </li>
         <li>
           <div class="btnc-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
-          <a href="#" id="btnc-teobaldo-as" style="opacity: 0.5" title="Teobaldo"></a>
+          <a href="#" id="btn-teobaldo-as" style="opacity: 0.5" title="Teobaldo"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="ludovico-asset" title="Ludovico"></div>
-          <a href="#" id="btnc-ludovico-as" style="opacity: 0.5" title="Ludovico"></a>
+          <a href="#" id="btn-ludovico-as" style="opacity: 0.5" title="Ludovico"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="doroteia-asset" title="Dorotéia"></div>
-          <a href="#" id="btnc-doroteia-as" style="opacity: 0.5" title="Dorotéia"></a>
+          <a href="#" id="btn-doroteia-as" style="opacity: 0.5" title="Dorotéia"></a>
         </li>
         <li>
           <div class="btnc-hover-as  selected" name="filomena-asset" title="Filomena"></div>
@@ -40,23 +40,23 @@
         </li>
         <li>
           <div class="btnc-hover-as" name="joao-asset" title="João"></div>
-          <a href="#" id="btnc-joao-as" style="opacity: 0.5" title="João"></a>
+          <a href="#" id="btn-joao-as" style="opacity: 0.5" title="João"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="eric-asset" title="Eric"></div>
-          <a href="#" id="btnc-eric-as"  style="opacity: 0.5" title="Eric"></a>
+          <a href="#" id="btn-eric-as"  style="opacity: 0.5" title="Eric"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="pedro-asset" title="Pedro"></div>
-          <a href="#" id="btnc-pedro-as"  style="opacity: 0.5"  title="Pedro"></a>
+          <a href="#" id="btn-pedro-as"  style="opacity: 0.5"  title="Pedro"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="matheus-asset" title="Matheus"></div>
-          <a href="#" id="btnc-matheus-as"  style="opacity: 0.5" title="Matheus"></a>
+          <a href="#" id="btn-matheus-as"  style="opacity: 0.5" title="Matheus"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
-          <a href="#" id="btnc-julio-as"  style="opacity: 0.5" title="Júlio"></a>
+          <a href="#" id="btn-julio-as"  style="opacity: 0.5" title="Júlio"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
@@ -64,7 +64,7 @@
         </li>
         <li>
           <div class="btnc-hover-as" name="caco-asset" title="Caco"></div>
-          <a href="#" id="btnc-caco-as"  style="opacity: 0.5" title="Caco"></a>
+          <a href="#" id="btn-caco-as"  style="opacity: 0.5" title="Caco"></a>
         </li>
        
       </ul>
