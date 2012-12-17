@@ -35,8 +35,8 @@
           <a href="#" id="btn-doroteia-as" style="opacity: 0.5"></a>
         </li>
         <li>
-          <div class="btn-hover-as  selected" name="filomena-asset" title="Filomena"></div>
-          <a href="#" id="btnc-filomena-as"></a>
+          <div class="btnc-hover-as  selected" name="filomena-asset" title="Filomena"></div>
+          <a href="#" id="btn-filomena-as"></a>
         </li>
         <li>
           <div class="btn-hover-as" name="joao-asset" title="João"></div>
@@ -59,8 +59,8 @@
           <a href="#" id="btn-julio-as"  style="opacity: 0.5"></a>
         </li>
         <li>
-          <div class="btn-hover-as" name="lilica-asset" title="Lilica"></div>
-          <a href="#" id="btnc-lilica-as"></a>
+          <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
+          <a href="#" id="btn-lilica-as"></a>
         </li>
         <li>
           <div class="btn-hover-as" name="caco-asset" title="Caco"></div>
@@ -126,7 +126,7 @@
     });
     $('.btnc-hover-as').click(function(){
       //alert($(this).attr('name'))
-      $('.btn-hover-as').css('display','none').removeClass('selected');
+      $('.btnc-hover-as').css('display','none').removeClass('selected');
       $(this).addClass('selected');
       goTop($(this).attr('name'));
     });
