@@ -31,7 +31,7 @@
           <a href="#" id="btn-ludovico-as" class="alpha" title="Ludovico"></a>
         </li>
         <li>
-          <div class="btnc-hover-as  selected" name="doroteia-asset" title="Dorotéia"></div>
+          <div class="btnc-hover-as" name="doroteia-asset" title="Dorotéia"></div>
           <a href="#" id="btnc-doroteia-as" title="Dorotéia"></a>
         </li>
         <li>
