@@ -32,7 +32,7 @@
         </li>
         <li>
           <div class="btnc-hover-as" name="doroteia-asset" title="Dorotéia"></div>
-          <a href="#" id="btn-doroteia-as" class="alpha" title="Dorotéia"></a>
+          <a href="#" id="btnc-doroteia-as" class="alpha" title="Dorotéia"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="filomena-asset" title="Filomena"></div>
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    $('#blog-as').delay(600).goTop('caco-asset');
+    goTop('doroteia-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
