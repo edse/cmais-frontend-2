@@ -38,7 +38,7 @@
       <!--radio player-->
       <div id="musicPlayer" class="row">
         <!--/header controle remoto -->
-        <script type="text/javascript" src="/portal/js/mediaplayer-5.10/jwplayer.js"></script>
+        <script type="text/javascript" src="/portal/js/mediaplayer-6/jwplayer.js"></script>
         <!-- Add-On Info Here -->
         <div id="tampa"></div>
         <div id='mediaplayer'></div>
