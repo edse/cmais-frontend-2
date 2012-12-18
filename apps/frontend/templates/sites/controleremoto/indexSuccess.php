@@ -39,8 +39,8 @@
             $(".qualidade").css('display','none');
             
             //default começa na "radioam"(culturabrasil)
-            //$('#tampa').css('display','block').delay(500).fadeOut('fast'); 
-            //playerControle("radioam");
+            $('#tampa').css('display','block').delay(500).fadeOut('fast'); 
+            playerControle("radioam32");
             
             //troca radios
             $(".accordion-toggle").click(function() {
