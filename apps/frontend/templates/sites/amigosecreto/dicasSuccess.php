@@ -52,7 +52,7 @@
         </li>
         <li>
           <div class="btnc-hover-as selected" name="matheus-asset" title="Matheus"></div>
-          <a href="#" id="btnc-matheus-as"  class="alpha" title="Matheus"></a>
+          <a href="#" id="btnc-matheus-as" title="Matheus"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
