@@ -51,8 +51,8 @@
           <a href="#" id="btn-pedro-as"  class="alpha"  title="Pedro"></a>
         </li>
         <li>
-          <div class="btnc-hover-as" name="matheus-asset" title="Matheus"></div>
-          <a href="#" id="btn-matheus-as"  class="alpha" title="Matheus"></a>
+          <div class="btnc-hover-as selected" name="matheus-asset" title="Matheus"></div>
+          <a href="#" id="btnc-matheus-as"  class="alpha" title="Matheus"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('doroteia-asset');
+    goTop('matheus-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
