@@ -64,7 +64,7 @@
         </li>
         <li>
           <div class="btnc-hover-as" name="caco-asset" title="Caco"></div>
-          <a href="#" id="btn-caco-as"  class="alpha" title="Caco"></a>
+          <a href="#" id="btnc-caco-as"  title="Caco"></a>
         </li>
        
       </ul>
