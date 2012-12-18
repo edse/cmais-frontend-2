@@ -20,7 +20,7 @@
       <ul>
         <li class="first">
           <div class="btnc-hover-as" name="osorio-asset" title="Osório"></div>
-          <a href="#" id="btn-osorio-as" class="alpha" title="Osório"></a>
+          <a href="#" id="btn-osorio-as" class="alpha" title="Osório"></a> 
         </li>
         <li>
           <div class="btnc-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>

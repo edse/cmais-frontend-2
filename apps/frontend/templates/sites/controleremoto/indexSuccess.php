@@ -16,6 +16,19 @@
     <![endif]-->
     <!-- Le fav and touch icons -->
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!-- banner-->
+    <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+    <script type='text/javascript'>
+      GS_googleAddAdSenseService("ca-pub-6681834746443470");
+      GS_googleEnableAllServices();
+    </script>
+    <script type='text/javascript'>
+      GA_googleAddSlot("ca-pub-6681834746443470", "banner-controle-remoto");
+    </script>
+    <script type='text/javascript'>
+      GA_googleFetchAds();
+    </script>
+    <!-- /banner-->
   </head>
   <body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true" screen_capture_injected="true">
     <!--container-->
@@ -224,9 +237,13 @@
       <!--/radios-->
       <!--banner-->
       <div class="row">
-        <a class="destaque">
+        <!--a class="destaque">
           <img src="/portal/images/capaPrograma/controleremoto/destaque.jpg" alt="destaque" />
-        </a>
+        </a-->
+        <!-- banner-controle-remoto -->
+        <script type='text/javascript'>
+          GA_googleFillSlot("banner-controle-remoto");
+        </script>
       </div>
       <!--/banner-->
       <!--rodape-->
