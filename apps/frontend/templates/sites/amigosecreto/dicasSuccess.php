@@ -32,7 +32,7 @@
         </li>
         <li>
           <div class="btnc-hover-as  selected" name="doroteia-asset" title="Dorotéia"></div>
-          <a href="#" id="btnc-doroteia-as" class="alpha" title="Dorotéia"></a>
+          <a href="#" id="btnc-doroteia-as" title="Dorotéia"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="filomena-asset" title="Filomena"></div>
