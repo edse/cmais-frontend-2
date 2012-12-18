@@ -35,7 +35,7 @@
           <a href="#" id="btn-doroteia-as" class="alpha" title="Dorotéia"></a>
         </li>
         <li>
-          <div class="btnc-hover-as  selected" name="filomena-asset" title="Filomena"></div>
+          <div class="btnc-hover-as" name="filomena-asset" title="Filomena"></div>
           <a href="#" id="btnc-filomena-as" title="Filomena"></a>
         </li>
         <li>
@@ -63,7 +63,7 @@
           <a href="#" id="btnc-lilica-as"></a>
         </li>
         <li>
-          <div class="btnc-hover-as" name="caco-asset" title="Caco"></div>
+          <div class="btnc-hover-as  selected" name="caco-asset" title="Caco"></div>
           <a href="#" id="btnc-caco-as"  title="Caco"></a>
         </li>
        
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('osorio-asset')
+    goTop('caco-asset')
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
