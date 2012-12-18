@@ -31,7 +31,7 @@
           <a href="#" id="btn-ludovico-as" class="alpha" title="Ludovico"></a>
         </li>
         <li>
-          <div class="btnc-hover-as" name="doroteia-asset" title="Dorotéia"></div>
+          <div class="btnc-hover-as  selected" name="doroteia-asset" title="Dorotéia"></div>
           <a href="#" id="btnc-doroteia-as" class="alpha" title="Dorotéia"></a>
         </li>
         <li>
@@ -63,7 +63,7 @@
           <a href="#" id="btnc-lilica-as"></a>
         </li>
         <li>
-          <div class="btnc-hover-as  selected" name="caco-asset" title="Caco"></div>
+          <div class="btnc-hover-as" name="caco-asset" title="Caco"></div>
           <a href="#" id="btnc-caco-as"  title="Caco"></a>
         </li>
        
