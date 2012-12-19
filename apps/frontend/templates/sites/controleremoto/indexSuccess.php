@@ -38,13 +38,21 @@
       <!--radio player-->
       <div id="musicPlayer" class="row">
         <!--/header controle remoto -->
-        <script type="text/javascript" src="/portal/js/mediaplayer-6/jwplayer.js"></script>
+        <script type="text/javascript" src="/portal/js/mediaplayer-5.10/jwplayer.js"></script>
         <!-- Add-On Info Here -->
         <div id="tampa"></div>
         <div id='mediaplayer'></div>
         <div class="qualidade pull-right">
           <span>Qualidade:</span> <a href="#" class="selected" title="Alta">Alta</a> | <a class="" href="baxa">Baixa</a>
         </div>
+        <div id="myElement"></div>
+
+<script>
+    jwplayer("myElement").setup({
+        file: "/uploads/myAudio.aac",
+        image: "/uploads/myPoster.jpg"
+    });
+</script>
         
         <script type="text/javascript">
           $(document).ready(function(){

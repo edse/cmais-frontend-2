@@ -56,7 +56,7 @@
         </li>
         <li>
           <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
-          <a href="#" id="btn-julio-as"  class="alpha" title="Júlio"></a>
+          <a href="#" id="btnc-julio-as" title="Júlio"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
