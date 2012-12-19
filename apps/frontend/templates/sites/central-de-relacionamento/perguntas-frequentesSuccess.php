@@ -20,10 +20,11 @@
         Antes de enviar sua mensagem, verifique se sua pergunta
         ou informação não está contemplada nos itens 
         <?php foreach($section->Blocks as $b): ?>
+        	 <?php echo $section ?><p>
+          <?php echo $b ?>
           <?php if(count($b->Displays) > 0): ?>
             <a href="javascript:;" id="#<?php echo $b->getSlug() ?>"><?php echo $b->getDescription() ?>,</a>
-          <?php echo $section ?><p>
-          <?php echo $b ?>
+         
           <?php endif; ?>
         <?php endforeach; ?>
 
