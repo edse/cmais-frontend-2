@@ -29,6 +29,7 @@
       GA_googleFetchAds();
     </script>
     <!-- /banner-->
+    <script type="text/javascript" src="/portal/js/mediaplayer-5.10/jwplayer.js"></script>
   </head>
   <body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true" screen_capture_injected="true">
     <!--container-->
@@ -38,30 +39,30 @@
       <!--radio player-->
       <div id="musicPlayer" class="row">
         <!--/header controle remoto -->
-        <script type="text/javascript" src="/portal/js/mediaplayer-5.10/jwplayer.js"></script>
+        
         <!-- Add-On Info Here -->
         <div id="tampa"></div>
         <div id='mediaplayer'></div>
         <div class="qualidade pull-right">
-          <span>Qualidade:</span> <a href="#" class="selected" title="Alta">Alta</a> | <a class="" href="baxa">Baixa</a>
+          <span>Qualidade:</span> <a href="javascript:;" id="alta" class="btn-banda" title="Alta" name="">Alta</a> | <a href="javascript:;" id="baixa" class="btn-banda" href="baxa" name="">Baixa</a>
         </div>
-        <div id="myElement"></div>
-
-<script>
-    jwplayer("myElement").setup({
-        file: "/uploads/myAudio.aac",
-        image: "/uploads/myPoster.jpg"
-    });
-</script>
         
         <script type="text/javascript">
           $(document).ready(function(){
+            
             //perfumaria
             $(".qualidade").css('display','none');
             
             //default começa na "radioam"(culturabrasil)
             $('#tampa').css('display','block').delay(500).fadeOut('fast'); 
             playerControle("radioam32");
+            
+            $('.btn-banda').click(function(){
+              //alert($(this).attr('name'));
+              $('.btn-banda').removeClass('selected').removeAttr('disabled');
+              $(this).addClass('selected').attr('disabled','disabled');
+              playerControle($(this).attr('name'));
+            });
             
             //troca radios
             $(".accordion-toggle").click(function() {
@@ -70,7 +71,13 @@
                 var radio = $(this).find("a.accordion-toggle").attr('name')
                 $('.qualidade').css('display','block');
                 $('#tampa').css('display','block').delay(800).fadeOut('fast');
-                
+                if(radio=="radioam"){
+                  $('#alta').attr('name','radioam').addClass('selected');
+                  $('#baixa').attr('name','radioam32').removeClass('selected');
+                }else if(radio=="radiofm"){
+                  $('#alta').attr('name','radiofm').addClass('selected');
+                  $('#baixa').attr('name','radiofm32').removeClass('selected');
+                }
                 //verifica se não tem media player duplicado
                 var j=0;
                 $('#mediaplayer_wrapper').each(function(){
@@ -127,7 +134,12 @@
                     backgroundCss : false,
                     trackCss : 'color: #fff; font-size: 11px;'
                   }
-                }
+                },
+                'modes': [
+                 {type: 'html5'},
+                 {type: 'flash', src: '/portal/js/mediaplayer-5.10/player.swf'},
+                 {type: 'download'}
+                ]
               });
             }
           });
@@ -268,7 +280,7 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="/portal/js/bootstrap/jquery.js"></script>
     <script src="/portal/js/bootstrap/transition.js"></script>
-    <script src="/portal/js/bootstrap/alert.js"></script>
+
     <script src="/portal/js/bootstrap/modal.js"></script>
     <script src="/portal/js/bootstrap/dropdown.js"></script>
     <script src="/portal/js/bootstrap/scrollspy.js"></script>
