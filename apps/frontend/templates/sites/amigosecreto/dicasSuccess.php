@@ -19,7 +19,7 @@
       <!--BOTOES PERSONAGENS-->
       <ul>
         <li class="first">
-          <div class="btnc-hover-as  selected" name="osorio-asset" title="Osório"></div>
+          <div class="btnc-hover-as" name="osorio-asset" title="Osório"></div>
           <a href="#" id="btnc-osorio-as" title="Osório"></a> 
         </li>
         <li>
@@ -55,8 +55,8 @@
           <a href="#" id="btnc-matheus-as" title="Matheus"></a>
         </li>
         <li>
-          <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
-          <a href="#" id="btn-julio-as" class="alpha" title="Júlio"></a>
+          <div class="btnc-hover-as selected" name="julio-asset" title="Júlio"></div>
+          <a href="#" id="btnc-julio-as" title="Júlio"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
