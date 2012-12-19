@@ -25,7 +25,7 @@
           <?php endif; ?>
         <?php endforeach; ?>
 
-        <?php if(isset($displays)):?>
+        <?php /* if(isset($displays)):?> 
           <?php if(count($displays) > 0): ?>
              <?php foreach($displays as $display): ?>
                <?php if(count($display) > 0): ?>
@@ -33,7 +33,7 @@
                <?php endif; ?>
             <?php endforeach; ?>  
           <?php endif; ?>
-        <?php endif; ?>        
+        <?php endif; */ ?>        
         Perguntas Frequentes.
       </p>
     </div>
