@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('osorio-asset');
+    goTop('julio-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
