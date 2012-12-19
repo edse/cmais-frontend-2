@@ -9,7 +9,7 @@
     <div class="col-esquerda span5">
       <a id="perguntas"></a>
       <h1>PERGUNTAS FREQUENTES</h1>
-       
+      
       <p> 
         A Central de Relacionamento é uma área
         de atendimento exclusiva para telespectadores
@@ -19,9 +19,15 @@
         importantes para a Fundação Padre Anchieta.<br/>
         Antes de enviar sua mensagem, verifique se sua pergunta
         ou informação não está contemplada nos itens 
-        
-        
-            
+        <?php if(isset($displays)):?>
+          <?php if(count($displays) > 0): ?>
+             <?php foreach($displays as $display): ?>
+               <?php if(count($display) > 0): ?>
+              <a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
+               <?php endif; ?>
+            <?php endforeach; ?>  
+          <?php endif; ?>
+        <?php endif; ?>        
         Perguntas Frequentes.
       </p>
     </div>
@@ -69,7 +75,7 @@
   </div>
   <!--/colunas-->  
 </div>
-<!--container--> 
+<!--container-->
 <script>
 $(document).ready(function(){
   $(".collapse").collapse();
