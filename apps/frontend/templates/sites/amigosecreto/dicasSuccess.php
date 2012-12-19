@@ -19,8 +19,8 @@
       <!--BOTOES PERSONAGENS-->
       <ul>
         <li class="first">
-          <div class="btnc-hover-as" name="osorio-asset" title="Osório"></div>
-          <a href="#" id="btn-osorio-as" class="alpha" title="Osório"></a> 
+          <div class="btnc-hover-as  selected" name="osorio-asset" title="Osório"></div>
+          <a href="#" id="btnc-osorio-as" title="Osório"></a> 
         </li>
         <li>
           <div class="btnc-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
@@ -55,8 +55,8 @@
           <a href="#" id="btnc-matheus-as" title="Matheus"></a>
         </li>
         <li>
-          <div class="btnc-hover-as selected" name="julio-asset" title="Júlio"></div>
-          <a href="#" id="btnc-julio-as" title="Júlio"></a>
+          <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
+          <a href="#" id="btn-julio-as" title="Júlio"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('julio-asset');
+    goTop('osorio-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
