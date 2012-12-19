@@ -19,24 +19,7 @@
         importantes para a Fundação Padre Anchieta.<br/>
         Antes de enviar sua mensagem, verifique se sua pergunta
         ou informação não está contemplada nos itens 
-        <?php foreach($section->Blocks as $b): ?>
-        	 <?php echo $section ?><p>
-          <?php echo $b ?>
-          <?php if(count($b->Displays) > 0): ?>
-            <a href="javascript:;" id="#<?php echo $b->getSlug() ?>"><?php echo $b->getDescription() ?>,</a>
-         
-          <?php endif; ?>
-        <?php endforeach; ?>
-
-        <?php /* if(isset($displays)):?> 
-          <?php if(count($displays) > 0): ?>
-             <?php foreach($displays as $display): ?>
-               <?php if(count($display) > 0): ?>
-              <a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
-               <?php endif; ?>
-            <?php endforeach; ?>  
-          <?php endif; ?>
-        <?php endif; */ ?>        
+           
         Perguntas Frequentes.
       </p>
     </div>
