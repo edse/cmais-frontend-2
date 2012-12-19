@@ -9,7 +9,7 @@
     <div class="col-esquerda span5">
       <a id="perguntas"></a>
       <h1>PERGUNTAS FREQUENTES</h1>
-      
+       
       <p> 
         A Central de Relacionamento é uma área
         de atendimento exclusiva para telespectadores
@@ -22,6 +22,8 @@
         <?php foreach($section->Blocks as $b): ?>
           <?php if(count($b->Displays) > 0): ?>
             <a href="javascript:;" id="#<?php echo $b->getSlug() ?>"><?php echo $b->getDescription() ?>,</a>
+          <?php echo $section ?><p>
+          <?php echo $b ?>
           <?php endif; ?>
         <?php endforeach; ?>
 
