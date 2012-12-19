@@ -76,6 +76,8 @@ class _sectionActions extends sfActions
         die(); 
           }
        }
+      }elseif($this->site->getSlug()=="controleremoto"){
+        $this->setLayout(false);
       }
       
       if(($this->site->getSlug() == "quintaldacultura") && !$request->getParameter('force')){

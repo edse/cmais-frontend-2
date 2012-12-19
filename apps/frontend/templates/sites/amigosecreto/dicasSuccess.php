@@ -18,12 +18,55 @@
     <div id="dica-as">
       <!--BOTOES PERSONAGENS-->
       <ul>
-        <?php for($i=0;$i<count($arrayNome); $i++): ?>
-          <li class="<?php if($i==0) echo "first";?>">
-            <div class="btn-hover-as <?php if($i==0) echo "selected";?>" name="<?php echo $arrayNome[$i]?>-asset" title="<?php echo $arrayNomeExibi[$i]?>"></div>
-            <a href="#" id="btn-<?php echo $arrayNome[$i]?>-as"></a>
-          </li>
-        <?php endfor;?>
+        <li class="first">
+          <div class="btnc-hover-as  selected" name="osorio-asset" title="Osório"></div>
+          <a href="#" id="btnc-osorio-as" title="Osório"></a> 
+        </li>
+        <li>
+          <div class="btnc-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
+          <a href="#" id="btn-teobaldo-as" class="alpha" title="Teobaldo"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="ludovico-asset" title="Ludovico"></div>
+          <a href="#" id="btn-ludovico-as" class="alpha" title="Ludovico"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="doroteia-asset" title="Dorotéia"></div>
+          <a href="#" id="btnc-doroteia-as" title="Dorotéia"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="filomena-asset" title="Filomena"></div>
+          <a href="#" id="btnc-filomena-as" title="Filomena"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="joao-asset" title="João"></div>
+          <a href="#" id="btn-joao-as" class="alpha" title="João"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="eric-asset" title="Eric"></div>
+          <a href="#" id="btn-eric-as"  class="alpha" title="Eric"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="pedro-asset" title="Pedro"></div>
+          <a href="#" id="btn-pedro-as"  class="alpha"  title="Pedro"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="matheus-asset" title="Matheus"></div>
+          <a href="#" id="btnc-matheus-as" title="Matheus"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
+          <a href="#" id="btn-julio-as" class="alpha" title="Júlio"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="lilica-asset" title="Lilica"></div>
+          <a href="#" id="btnc-lilica-as"></a>
+        </li>
+        <li>
+          <div class="btnc-hover-as" name="caco-asset" title="Caco"></div>
+          <a href="#" id="btnc-caco-as"  title="Caco"></a>
+        </li>
+       
       </ul>
       <!--/BOTOES PERSONAGENS-->
       <!--BLOG-AS-->
@@ -63,16 +106,16 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('osorio-asset')
-    $('a[id|=btn]').hover(function(){
-      $(this).prev('.btn-hover-as').css('display','block');
+    goTop('osorio-asset');
+    $('a[id|=btnc]').hover(function(){
+      $(this).prev('.btnc-hover-as').css('display','block');
     });
-    $('.btn-hover-as').mouseout(function(){
+    $('.btnc-hover-as').mouseout(function(){
       $(this).not('.selected').css('display','none');
     });
-    $('.btn-hover-as').click(function(){
+    $('.btnc-hover-as').click(function(){
       //alert($(this).attr('name'))
-      $('.btn-hover-as').css('display','none').removeClass('selected');
+      $('.btnc-hover-as').css('display','none').removeClass('selected');
       $(this).addClass('selected');
       goTop($(this).attr('name'));
     });
