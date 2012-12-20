@@ -24,22 +24,22 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
-				<div class="contatoWrapper">
-				<?php if(date('Y-m-d') > "2012-01-10"): ?>
+        <div class="contatoWrapper">
+        <?php if(date('Y-m-d') > "2014-01-10"): ?>
                 <h3 class="tit-pagina grid3"><!-- <?php echo $section->getTitle() ?> -->Encerradas as inscrições para Tutor de Inglês</h3>
                 <p class="titu"><!-- <?php echo $section->getDescription()?> -->O cadastramento realizado pela Fundação Padre Anchieta terminou no dia 10</p>
-				<p>As inscrições para a seleção de Tutores de Inglês para educação a distância foram encerradas à meia-noite do dia 10/01/12.</p>
-				<br />
-				<p>Nos próximos dias, os professores que se cadastraram serão informados por e-mail sobre a análise de seus currículos e a continuidade do processo.</p>
-				<br />
-				<p>Os classificados concorrerão a vagas de tutor para os cursos a serem oferecidos nos dois semestres de 2012. Ou seja, eles poderão ser selecionados/convocados para atuar no curso do primeiro OU do segundo semestre. Em ambos os casos, pelo período de três meses.</p>
-				
-				<?php else: ?>
+        <p>As inscrições para a seleção de Tutores de Inglês para educação a distância foram encerradas à meia-noite do dia 10/01/12.</p>
+        <br />
+        <p>Nos próximos dias, os professores que se cadastraram serão informados por e-mail sobre a análise de seus currículos e a continuidade do processo.</p>
+        <br />
+        <p>Os classificados concorrerão a vagas de tutor para os cursos a serem oferecidos nos dois semestres de 2012. Ou seja, eles poderão ser selecionados/convocados para atuar no curso do primeiro OU do segundo semestre. Em ambos os casos, pelo período de três meses.</p>
+        
+        <?php else: ?>
                 <h3 class="tit-pagina grid3"><!-- <?php echo $section->getTitle() ?> -->Cadastro para processo seletivo de tutoria - Curso de inglês a distância</h3>
                 <p class="titu"><!-- <?php echo $section->getDescription()?> -->Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
-				<p>Prezado Professor,</p>
-				<p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
-				
+        <p>Prezado Professor,</p>
+        <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
+        
                 <?php if($mailSent): ?>
                 <div class="msgAcerto">
                   <span class="alerta"></span>
@@ -50,65 +50,113 @@
                     <hr />                                   
                 </div>
                 <?php else: ?>
-                <form id="form-contato" method="post" action="http://200.136.27.251/cadastro-de-tutores/submit.php">
-									<input type="hidden" value="t3vazrte5Hq-7LOsZBf6z_w" name="sid" />
-                  <input type="hidden" value="od7" name="wid" />
-                  <input type="hidden" value="20971520" name="MAX_FILE_SIZE" />
-                  <input type="hidden" value="http://cmais.com.br" name="return_url" />
-                
-				  <p class="enun">Dados de identificação</p>
-                  <div class="linha t1">
-                    <label>nome completo (sem abreviações)</label>
-                    <input type="text" name="nome" id="nome" />
+                <form id="form-contato" method="post" action="">
+                  <input type="hidden" name="cadastro-tutoria" id="cadastro-tutoria" value="true">
+          <p class="enun">Atividade pretendida</p>
+          <div class="linha t11">
+                      <input type="checkbox" name="atividade_pretendida" id="presencial" value="presencial" />
+            <label>Tutor presencial</label>
                   </div>
-				  <div class="linha t2">
+          <div class="linha t11">
+                      <input type="checkbox" name="atividade_pretendida" id="online" value="online" />
+            <label>Tutor online</label>
+                  </div>
+          
+                
+          <p class="enun">Dados de identificação</p>
+                  <div class="linha t1 exc">
+                    <label>Nome completo (sem abreviações)</label>
+                    <input type="text" name="nome" id="nome" style="width:626px" />
+                  </div>
+          <!--div class="linha t2">
                     <label>Data de nascimento</label>
                     <input type="text" name="data" id="data" />
-                  </div>
+              </div-->
                   <div class="linha t2">
-                    <label>cpf</label>
+                    <label>CPF</label>
                     <input type="text" name="cpf" id="cpf" />
                   </div>
-                  <div class="linha t2">
+                  <div class="linha t4">
+          <label>Email</label>
+          <input id="email" type="text" name="email">
+          </div>
+                  
+                  <!--div class="linha t2">
                     <label>RG</label>
                     <input type="text" name="rg" id="rg" />
                   </div>
-				  <div class="linha t2">
+          <div class="linha t2">
                     <label>Orgão de expedição</label>
                     <input type="text" name="exp" id="exp" />
                   </div>
-				  <div class="linha t2">
+          <div class="linha t2">
                     <label>UF</label>
                     <input type="text" name="uf" id="uf" />
-                  </div>
+                  </div-->
                   <p class="pergunta">É professor da Rede da Secretaria de Estado da Educação de São Paulo?</p>
-				  <div class="linha t10">
+          <div class="linha t10">
                     <input type="radio" name="rede" id="sim" value="sim" />
-					<label>Sim</label>
+          <label>Sim</label>
                   </div>
-				  <div class="linha t10">
+          <div class="linha t10">
                     <input type="radio" name="rede" id="nao" value="nao" />
-					<label>Não</label>
+          <label>Não</label>
                   </div>
-				  <span class="linhaFundo"></span>
- 				  <p class="enun">Endereço Residencial</p>
-				  <div class="linha t1">
+                  <p></p>
+          <div class="linha t5" id="escolaWrapper" style="display:none">
+                    <label>Nome da escola</label>
+                    <input type="text" name="escola" id="escola" />
+                  </div>
+                  <p class="pergunta">PCNP?</p>
+          <div class="linha t10">
+                    <input type="radio" name="pcnp" id="sim4" value="sim" />
+          <label>Sim</label>
+                  </div>
+          <div class="linha t10">
+                    <input type="radio" name="pcnp" id="nao4" value="não" />
+          <label>Não</label>
+                  </div>
+                  <p></p>
+          <div id="pcnpWrapper" style="display:none">
+            <div class="linha t11">
+                      <input type="checkbox" name="pcnp_cat" id="pcnptec" value="tec" />
+            <label>Tec</label>
+                  </div>
+            <div class="linha t11">
+                      <input type="checkbox" name="pcnp_cat" id="pcnping" value="inglês" />
+            <label>Inglês</label>
+                  </div>
+            <div class="linha t11">
+                      <input type="checkbox" name="pcnp_cat" id="pcnpoutro" value="outro" />
+            <label>Outro</label>
+                  </div>
+          </div>
+                  <p></p>
+          <div class="linha t4">
+                    <label>DE</label>
+                    <input type="text" name="de" id="de" />
+                  </div>
+                  
+                  
+          <span class="linhaFundo"></span>
+          <p class="enun">Endereço Residencial</p>
+          <div class="linha t1">
                     <label>Endereço (Rua, Avenida, Travessa, Etc.)</label>
                     <input type="text" name="rua" id="rua" />
                   </div>
-				  <div class="linha t2">
+          <div class="linha t2">
                     <label>Número</label>
                     <input type="text" name="numero" id="numero" />
                   </div>
-  				  <div class="linha t2">
+            <div class="linha t2">
                     <label>Complemento</label>
                     <input type="text" name="compl" id="compl" />
                   </div>
-				  <div class="linha t33">
+          <div class="linha t33">
                     <label>Bairro</label>
                     <input type="text" name="bairro" id="bairro" />
                   </div>
-   				  <div class="linha t2">
+            <div class="linha t2">
                     <label>CEP</label>
                     <input type="text" name="cep" id="cep" />
                   </div>
@@ -116,79 +164,69 @@
                     <label>cidade</label>
                     <input type="text" name="cidade" id="cidade" />
                   </div>
-				  <div class="linha t2">
+          <div class="linha t2">
                     <label>Estado</label>
                     <input type="text" name="estado" id="estado" />
                   </div>
-                  <div class="linha t1 exc">
-					<label>email</label>
-					<input id="email" type="text" name="email">
-				  </div>
-				  <div class="linha t4">
+                  <!--div class="linha t1 exc">
+          <label>email</label>
+          <input id="email" type="text" name="email">
+          </div-->
+          <div class="linha t4">
                     <label>DDD</label>
                     <input type="text" name="dddT" id="dddT" />
-				  </div>
+          </div>
                   <div class="linha t2">
-					<label>Telefone</label>
-					<input type="text" name="tel" id="tel" />
+          <label>Telefone</label>
+          <input type="text" name="tel" id="tel" />
                   </div>
-				  <div class="linha t4">
+          <div class="linha t4">
                     <label>DDD</label>
                     <input type="text" name="dddC" id="dddC" />
-				  </div>
+          </div>
                   <div class="linha t2">
-					<label>Celular</label>
-					<input type="text" name="cel" id="cel" />
+          <label>Celular</label>
+          <input type="text" name="cel" id="cel" />
                   </div>
-				  <span class="linhaFundo"></span>
-				  <p class="enun">Formação Acadêmica</p>
+          <span class="linhaFundo"></span>
+          <p class="enun">Formação Acadêmica</p>
 
-                    <p class="pergunta">É professor de Língua Inglesa?</p>
-					<div class="linha t11">
-	                    <input type="radio" name="profing" id="sim3" value="sim" />
-						<label>Sim</label>
-	                </div>
-					<div class="linha t11">
-	                    <input type="radio" name="profing" id="nao3" value="nao" />
-						<label>Não</label>
-	                </div>
-				  
                     <p class="pergunta">É licenciado em letras?</p>
-					<div class="linha t11">
-	                    <input type="checkbox" name="ingl" id="ingl" value="ingl" />
-						<label>Lingua Inglesa</label>
-	                </div>
-					<div class="linha t11">
-	                    <input type="checkbox" name="port" id="port" value="port" />
-						<label>Português</label>
-	                </div>
-					<div class="linha t11">
-	                    <input type="checkbox" name="idi" id="idi" value="idi" />
-						<label>Outras disciplinas</label>
-	                </div>
-					<p class="pergunta">Possui certificado internacional em inglês?</p>
-					<div class="linha t10">
-		        	    <input type="radio" name="certificado" id="sim1" value="sim" />
-						<label>Sim</label>
-		            </div>
-					<div class="linha t10">
-		                <input type="radio" name="certificado" id="nao1" value="nao" />
-						<label>Não</label>
-		            </div>
-                  <div class="linha t5" style="float: none;clear: both;">
-					<label>Se sim. Instituição de ensino</label>
-					<input id="ensino" type="text" name="ensino">
-				  </div>
-				  <span class="linhaFundo"></span>
-				  <p class="enun">Experiência em tutoria em cursos à distância</p>
-				  <p class="pergunta">Participou como professor tutor em algum curso à distância?</p>
-				  <div class="linha t10">
-                    <input type="radio" name="certificado2" id="sim2" value="sim" />
-					<label>Sim</label>
+          <div class="linha t11">
+                      <input type="checkbox" name="ingl" id="ingl" value="ingl" />
+            <label>Lingua Inglesa</label>
                   </div>
-				  <div class="linha t10">
+          <div class="linha t11">
+                      <input type="checkbox" name="port" id="port" value="port" />
+            <label>Português</label>
+                  </div>
+          <div class="linha t11">
+                      <input type="checkbox" name="idi" id="idi" value="idi" />
+            <label>Outro idioma</label>
+                  </div>
+          <p class="pergunta">Possui certificado internacional em inglês?</p>
+          <div class="linha t10">
+                  <input type="radio" name="certificado" id="sim1" value="sim" />
+            <label>Sim</label>
+                </div>
+          <div class="linha t10">
+                    <input type="radio" name="certificado" id="nao1" value="nao" />
+            <label>Não</label>
+                </div>
+                  <div class="linha t5" style="float: none;clear: both; display:none" id="certificadoInglWrapper">
+          <label>Instituição de ensino</label>
+          <input id="ensino" type="text" name="ensino">
+          </div>
+          <span class="linhaFundo"></span>
+          <p class="enun">Experiência em tutoria em cursos à distância</p>
+          <p class="pergunta">Participou como professor tutor em algum curso à distância?</p>
+          <div class="linha t10">
+                    <input type="radio" name="certificado2" id="sim2" value="sim" />
+          <label>Sim</label>
+                  </div>
+          <div class="linha t10">
                     <input type="radio" name="certificado2" id="nao2" value="nao" />
-					<label>Não</label>
+          <label>Não</label>
                   </div>
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
@@ -206,7 +244,7 @@
                 <?php endif; ?>
                 
                 
-				</div>
+        </div>
               </div>
             </div>
             <!-- /ESQUERDA -->
@@ -229,10 +267,30 @@
     <!-- / CAPA SITE -->
 
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-	<script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
+  <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-		var num = 0;
+        
+        $('#sim').click(function() {
+          $('#escolaWrapper').show();          
+        });
+        $('#nao').click(function() {
+          $('#escolaWrapper').hide();          
+        });
+        $('#sim4').click(function() {
+          $('#pcnpWrapper').show();          
+        });
+        $('#nao4').click(function() {
+          $('#pcnpWrapper').hide();          
+        });
+        $('#sim1').click(function() {
+          $('#certificadoInglWrapper').show();          
+        });
+        $('#nao1').click(function() {
+          $('#certificadoInglWrapper').hide();          
+        });
+        
+    var num = 0;
         $("#cpf").mask("999.999.999-99");
         $("#data").mask("99/99/9999");
         // validate signup form on keyup and submit
@@ -242,15 +300,15 @@
               required: true,
               minlength: 2
             },
-			email:{
-			required: true,
-			email: true
-			},
-			cpf:{
+      email:{
+      required: true,
+      email: true
+      },
+      cpf:{
               required: true,
               minlength: 11
             },
-			data:{
+      data:{
               required: true,
               minlength: 10
             },
@@ -258,27 +316,27 @@
               required: true,
               minlength: 2
             },
-			exp:{
+      exp:{
               required: true,
               minlength: 2
             },
-			uf:{
+      uf:{
               required: true,
               minlength: 2
             },
-			rua:{
+      rua:{
               required: true,
               minlength: 2
             },
-			numero:{
+      numero:{
               required: true,
               minlength: 2
             },
-			bairro:{
+      bairro:{
               required: true,
               minlength: 2
             },
-			cep:{
+      cep:{
               required: true,
               minlength: 2
             },
@@ -294,20 +352,53 @@
               required: true,
               minlength: 2
             },
-			dddC:{
+      dddC:{
               required: true,
               minlength: 2
             },
-			tel:{
+      tel:{
               required: true,
               minlength: 8
             },
-			cel:{
+      cel:{
               required: true,
-              minlength: 8,
-              maxlength: 9
+              minlength: 8
             },
-            captcha: {
+      escola:{
+              required: function() {
+                if ($('#sim:checked'))
+                  return true;
+                else
+                  return false;
+              },
+              minlength: 8
+            },
+      ensino:{
+              required: function() {
+                if ($('#sim1:checked'))
+                  return true;
+                else
+                  return false;
+              },
+              minlength: 8
+            },
+      pcnp_cat:{
+              required: function() {
+                if ($('#sim4:checked'))
+                  return true;
+                else
+                  return false;
+              }
+            },
+      atividade_pretendida:{
+              required: function() {
+                if ($('#presencial:not(:checked),#online:not(:checked),'))
+                  return true;
+                else
+                  return false;
+              }
+            },
+      captcha: {
               required: true,
               remote: "/portal/js/validate/demo/captcha/process.php"
             }
@@ -319,9 +410,9 @@
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
             mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-			rg: "Este campo &eacute; Obrigat&oacute;rio.",
-			dddC: "*",
-			dddT: "*",
+      rg: "Este campo &eacute; Obrigat&oacute;rio.",
+      dddC: "*",
+      dddT: "*",
             captcha: "Digite corretamente o código que está ao lado."
           }
         });
