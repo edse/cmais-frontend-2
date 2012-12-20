@@ -23,6 +23,11 @@ $(document).ready(function(){
     <!--coluna esquerda-->
     <div class="row-fluid">
       <div id="img-destaque">
+        <?php
+        $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        echo count($imgs)."teste >>>>>>>"
+        ?>
         <img src="/portal/images/capaPrograma/central-de-relacionamento/img_exemplo.jpg" alt="titulo imagem"/>
       </div>
     </div>
