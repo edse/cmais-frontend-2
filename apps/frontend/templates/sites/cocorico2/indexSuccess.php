@@ -1,3 +1,6 @@
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>	 
+	
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 
 <?php use_helper('I18N', 'Date') ?>
@@ -6,6 +9,7 @@
     $('.btn-tooltip').tooltip();
   });
 </script>
+
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
@@ -35,10 +39,10 @@
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-    	    	
- 	<?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>
-            
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+ 	
+ 	
+ 	<?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?> 
+    <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
     
     </div>
   </div>
