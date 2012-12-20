@@ -8,7 +8,7 @@
 <div id="header-as">
   <div class="fundo-as-1">
     <a href="/amigosecreto" title="Amigo Secreto" id="btn-as-tv-cultura"></a>
-    <p><?php echo $displays["alerta"][0]->getDescription();?></p>
+    <p>Confira a brincadeira de natal da TV Cultura!</p>
   </div>
   <!--FUNDO CLARO-A-->
   <div class="fundo-as-2">
