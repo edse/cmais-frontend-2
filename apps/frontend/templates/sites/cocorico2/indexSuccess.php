@@ -19,7 +19,7 @@
             <div class="carousel-inner">
             	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
               <div class=<?php if($k==1): ?>active<?php endif; ?> item>
-                <a href="<?php echo $d->retrieveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
+                <a href="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
               </div>
             </div>
             	<?php endforeach; ?>
