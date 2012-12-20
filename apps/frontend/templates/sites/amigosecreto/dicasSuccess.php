@@ -23,8 +23,8 @@
           <a href="#" id="btnc-osorio-as" title="Osório"></a> 
         </li>
         <li>
-          <div class="btnc-hover-as"  name="teobaldo-asset" title="Teobaldo"></div>
-          <a href="#" id="btn-teobaldo-as" class="alpha" title="Teobaldo"></a>
+          <div class="btnc-hover-as  selected"  name="teobaldo-asset" title="Teobaldo"></div>
+          <a href="#" id="btnc-teobaldo-as" title="Teobaldo"></a>
         </li>
         <li>
           <div class="btnc-hover-as" name="ludovico-asset" title="Ludovico"></div>
@@ -55,7 +55,7 @@
           <a href="#" id="btnc-matheus-as" title="Matheus"></a>
         </li>
         <li>
-          <div class="btnc-hover-as selected" name="julio-asset" title="Júlio"></div>
+          <div class="btnc-hover-as" name="julio-asset" title="Júlio"></div>
           <a href="#" id="btnc-julio-as" title="Júlio"></a>
         </li>
         <li>
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('julio-asset');
+    goTop('teobaldo-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
