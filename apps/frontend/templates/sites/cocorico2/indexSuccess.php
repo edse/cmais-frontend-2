@@ -19,7 +19,7 @@
             <div class="carousel-inner">
             	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
               <div class=<?php if($k==1): ?>active<?php endif; ?> item>
-                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
+                <a href="<?php echo $d->retrieveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
               </div>
             </div>
             	<?php endforeach; ?>
@@ -77,9 +77,9 @@
         <?php if(isset($displays['destaque-2'])):?>
     	    <?php if(count($displays['destaque-2']) > 0): ?>
             <?php foreach($displays['destaque-2'] as $k=>$d): ?>
-              <a class="box destaques span6" href="<?php echo $d->RetriveUrl() ?>" title="jogo">
+              <a class="box destaques span6" href="<?php echo $d->retriveImageUrlByImageUsage('original')?>" title="jogo">
                 <bold><?php echo $d->getHeadline() ?></bold>
-                <img class="span12" src="<?php echo $d->retriveImageUrl()?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+                <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage('original')?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
               </a>
             <?php endforeach; ?>
           <?php endif; ?>
