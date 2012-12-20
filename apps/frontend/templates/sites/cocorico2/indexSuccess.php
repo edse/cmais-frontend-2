@@ -74,7 +74,7 @@
       <!--destaques-->
       <div class="span12">
         <!--destaque 2-->
-        <?php if(isset($displays['destaque-2'])):?>
+        <?php if(isset($displays['destaque-2'])):?> 
     	    <?php if(count($displays['destaque-2']) > 0): ?>
             <?php foreach($displays['destaque-2'] as $k=>$d): ?>
               <a class="box destaques span6" href="<?php echo $d->retriveImageUrlByImageUsage('original')?>" title="jogo">
