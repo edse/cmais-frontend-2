@@ -23,7 +23,11 @@ $(document).ready(function(){
     <!--coluna esquerda-->
     <div class="row-fluid">
       <div id="img-destaque">
-        <img src="/portal/images/capaPrograma/central-de-relacionamento/img_exemplo.jpg" alt="titulo imagem"/>
+        <?php
+        $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        ?>
+        <img src="<?php echo $img_1 ?>" alt="titulo imagem"/>
       </div>
     </div>
     <div class="col-esquerda span7">
