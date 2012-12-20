@@ -490,7 +490,7 @@
             },
             pcnp1: {
               required: function() {
-                if ($('#pcnp2').is(':checked') || $('#pcnp3').is(':checked')) {
+                if ($('#pcnp2').is(':checked') || $('#pcnp3').is(':checked') || $('#nao4').is(':checked')) {
                   return false;
                 }
                 else {
@@ -500,7 +500,7 @@
             },
             pcnp2: {
               required: function() {
-                if ($('#pcnp1').is(':checked') || $('#pcnp3').is(':checked')) {
+                if ($('#pcnp1').is(':checked') || $('#pcnp3').is(':checked') || $('#nao4').is(':checked')) {
                   return false;
                 }
                 else {
@@ -510,7 +510,7 @@
             },
             pcnp3: {
               required: function() {
-                if ($('#pcnp1').is(':checked') || $('#pcnp2').is(':checked')) {
+                if ($('#pcnp1').is(':checked') || $('#pcnp2').is(':checked') || $('#nao4').is(':checked')) {
                   return false;
                 }
                 else {
