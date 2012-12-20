@@ -7,4 +7,4 @@
           <li class="diario"><a class="icon"  href="/cocorico/diario-do-julio" title="Diário do Júlio"></a><a href="/cocorico/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li>
           <li class="familia"><a  href="/cocorico/em-familia" title="Em família">Em família</a></li>
         </ul>
-      </div>
+     </div> 
