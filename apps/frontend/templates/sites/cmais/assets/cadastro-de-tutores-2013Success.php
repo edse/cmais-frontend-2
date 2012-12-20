@@ -65,11 +65,11 @@
                     <input type="hidden" name="section_id" id="section_id" value="2106">
                     <p class="enun">Atividade pretendida</p>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida[]" id="presencial" value="presencial" />
+                      <input type="checkbox" name="atividade_pretendida1" id="presencial" value="presencial" />
                       <label>Tutor presencial</label>
                     </div>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida[]" id="online" value="online" />
+                      <input type="checkbox" name="atividade_pretendida2" id="online" value="online" />
                       <label>Tutor online</label>
                     </div>
                 
@@ -123,17 +123,17 @@
                     
                     <div id="pcnpWrapper" style="display:none">
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp_cat" id="pcnptec" value="tec" />
+                        <input type="checkbox" name="pcnp1" id="pcnptec" value="tec" />
                         <label>Tec</label>
                       </div>
                       
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp_cat" id="pcnping" value="inglês" />
+                        <input type="checkbox" name="pcnp2" id="pcnping" value="inglês" />
                         <label>Inglês</label>
                       </div>
                       
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp_cat" id="pcnpoutro" value="outro" />
+                        <input type="checkbox" name="pcnp3" id="pcnpoutro" value="outro" />
                         <label>Outro</label>
                       </div>
                       
