@@ -97,7 +97,7 @@
                 <!--explicacao-->
                 <div class="explicacao">
                   <p><b>> Dezembro/2012</b></p>
-                  <p>Listagem Completa (Anexo I)<a href= "portal/tvratimbum/arquivos_ancine/12-2012/61914891000186_TVRATIMBUM_112530001_201211_20121207.xlsx"> 61914891000186_TVRATIMBUM_112530001_201211_20121207.xlsx</a></p>
+                  <p>Listagem Completa (Anexo I)<a href= "portal/tvratimbum/arquivos_ancine/12-2012/61914891000186_TVRATIMBUM_112530001_201211_20121207.csv"> 61914891000186_TVRATIMBUM_112530001_201211_20121207.csv</a></p>
                   <p>Acesso Público (Anexo II)<a href= "portal/tvratimbum/arquivos_ancine/12-2012/PUB_61914891000186_TVRATIMBUM_112530001_201212_20121123.xlsx"> PUB_61914891000186_TVRATIMBUM_112530001_201212_20121123.xlsx</a></p>
                   <p><b>> Novembro/2012</b></p>
                   <p>Listagem Completa (Anexo I)<a href= "portal/tvratimbum/arquivos_ancine/11-2012/61914891000186_TVRATIMBUM_112530001_201210_20121107.CSV"> 61914891000186_TVRATIMBUM_112530001_201210_20121107.CSV</a></p>
