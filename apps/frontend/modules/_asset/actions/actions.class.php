@@ -292,7 +292,7 @@ class _assetActions extends sfActions
 						if ($this->site->Program->getIsACourse()) {
 							while(list($campo, $valor) = each($_REQUEST)) {
 								if ($campo != "bloco-de-notas") {
-									if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+									if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action', 'Cadastro-tutoria', 'Section_id')))
 										$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
 								}
             	}
