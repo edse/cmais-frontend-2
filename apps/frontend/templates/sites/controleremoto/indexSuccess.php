@@ -183,8 +183,8 @@
                 <!--links-->
                 <div id="linhaDivisoria"></div>
                 <ul class="nav">
-                  <li class="pull-left"><a href="#" title="Confira a programação">Confira a programação »</a></li>
-                  <li class="pull-right"><a href="#" title="Edições anteriores">Edições anteriores »</a></li>
+                  <li class="pull-left"><a href="http://www.culturabrasil.com.br/programacao" title="Confira a programação">Confira a programação »</a></li>
+                  <li class="pull-right"><a href="http://www.culturabrasil.com.br/programas" title="Edições anteriores">Edições anteriores »</a></li>
                 </ul>
                 <!--/links-->
                 <!--a seguir-->
@@ -233,8 +233,8 @@
                 <!--links-->
                 <div id="linhaDivisoria"></div>
                 <ul class="nav">
-                  <li class="pull-left"><a href="#" title="Confira a programação">Confira a programação »</a></li>
-                  <li class="pull-right"><a href="#" title="Edições anteriores">Edições anteriores »</a></li>
+                  <li class="pull-left"><a href="http://www.culturafm.cmais.com.br/grade-de-programacao" title="Confira a programação">Confira a programação »</a></li>
+                  <li class="pull-right"><a href="http://www.culturafm.cmais.com.br/programas" title="Edições anteriores">Edições anteriores »</a></li>
                 </ul>
                 <!--/links-->
                 <!--a seguir-->
