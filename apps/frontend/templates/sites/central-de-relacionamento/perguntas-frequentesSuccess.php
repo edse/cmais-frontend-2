@@ -75,7 +75,7 @@
   </div>
   <!--/colunas-->  
 </div>
-<!--container--> 
+<!--container-->
 <script>
 $(document).ready(function(){
   $(".collapse").collapse();
