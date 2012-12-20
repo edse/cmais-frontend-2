@@ -1,6 +1,3 @@
-<?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>	 
-	
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 
 <?php use_helper('I18N', 'Date') ?>
