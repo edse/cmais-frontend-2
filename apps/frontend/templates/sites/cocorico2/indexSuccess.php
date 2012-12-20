@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
 
 <?php use_helper('I18N', 'Date') ?>
 <script type="text/javascript">
@@ -57,13 +57,13 @@
           $secao_destaque = $secao[0];
           ?>
             <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
-              <a href="/cocorico/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
+              <a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
               <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
                 <span class="mais"></span>
-                <div class="tit"><a href="/cocorico/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>"><?php if($secao_destaque=='joguinhos'): ?>Joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>Receitinhas<?php endif; ?></a><span></span></div>
+                <div class="tit"><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>"><?php if($secao_destaque=='joguinhos'): ?>Joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>Receitinhas<?php endif; ?></a><span></span></div>
                 <ul>
-                  <li><a href="/cocorico/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
-                  <li><a href="/cocorico/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
                 </ul>
               </div>
             </div>
@@ -102,7 +102,7 @@
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico2/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
       <!-- tv coco -->
       <div class="tvcoco span12">
         <!--convidado-->
@@ -110,7 +110,7 @@
     	    <?php if(count($displays['tv-cocorico']) > 0): ?>
     	      <?php foreach($displays['tv-cocorico'] as $k=>$d): ?>
               <h2><i class="icon-star-empty"></i><?php echo $d->getHeadline() ?><i class="icon-star-empty"></i></h2>
-              <a class="convidado span12" href="/cocorico/tvcocorico/convidado" title=""><img src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /> <?php echo $d->getTitle() ?><span class="mais"></span></a>
+              <a class="convidado span12" href="/cocorico2/tvcocorico/convidado" title=""><img src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /> <?php echo $d->getTitle() ?><span class="mais"></span></a>
             <?php endforeach; ?>
           <?php endif; ?>
         <?php endif; ?> 
@@ -190,7 +190,7 @@
   <!--row conteudo-->
   <!-- /row-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--row-->
 </div>
 <!-- /container-->
