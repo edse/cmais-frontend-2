@@ -65,11 +65,11 @@
                     <input type="hidden" name="section_id" id="section_id" value="2106">
                     <p class="enun">Atividade pretendida</p>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida" id="presencial" value="presencial" />
+                      <input type="checkbox" name="atividade_pretendida[]" id="presencial" value="presencial" />
                       <label>Tutor presencial</label>
                     </div>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida" id="online" value="online" />
+                      <input type="checkbox" name="atividade_pretendida[]" id="online" value="online" />
                       <label>Tutor online</label>
                     </div>
                 
