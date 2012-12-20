@@ -72,7 +72,10 @@
                       <input type="checkbox" name="atividade_pretendida2" id="online" value="online" class="atividade_pretendida" />
                       <label>Tutor online</label>
                     </div>
-                
+                    
+                    <span class="linhaFundo"></span>
+                    
+                    
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
@@ -186,7 +189,7 @@
                     
                     <div class="linha t4">
                       <label>DDD</label>
-                      <input type="text" name="dddT" id="dddT" />
+                      <input type="text" name="dddT" id="dddT" maxlength="2" />
                     </div>
                     
                     <div class="linha t2">
@@ -196,7 +199,7 @@
                     
                     <div class="linha t4">
                       <label>DDD</label>
-                      <input type="text" name="dddC" id="dddC" />
+                      <input type="text" name="dddC" id="dddC" maxlength="2" />
                     </div>
                     
                     <div class="linha t2">
@@ -340,6 +343,7 @@
 
         var num = 0;
         $("#cpf").mask("999.999.999-99");
+        $("#cep").mask("99999-999");
         $("#data").mask("99/99/9999");
         
         var validator = $('#form-contato').validate({
@@ -359,6 +363,7 @@
                 window.location.href="#";
                 if(data == "1"){
                   $("#form-contato").clearForm();
+                  $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
