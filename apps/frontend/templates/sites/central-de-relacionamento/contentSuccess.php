@@ -26,7 +26,6 @@ $(document).ready(function(){
         <?php
         $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2);
         $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
-        echo count($imgs)."teste >>>>>>>"
         ?>
         <img src="<?php echo $img_1 ?>" alt="titulo imagem"/>
       </div>
