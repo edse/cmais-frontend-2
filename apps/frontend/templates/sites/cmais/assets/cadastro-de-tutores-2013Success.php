@@ -26,15 +26,15 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   
-                  <?php if(date('Y-m-d') > "2014-01-10"): ?>
+                  <?php if(date('Y-m-d') > "2013-01-14"): ?>
                     
                   <h3 class="tit-pagina grid3">Encerradas as inscrições para Tutor de Inglês</h3>
-                  <p class="titu">O cadastramento realizado pela Fundação Padre Anchieta terminou no dia 10</p>
-                  <p>As inscrições para a seleção de Tutores de Inglês para educação a distância foram encerradas à meia-noite do dia 10/01/12.</p>
+                  <p class="titu">O cadastramento realizado pela Fundação Padre Anchieta terminou no dia 14</p>
+                  <p>As inscrições para a seleção de Tutores de Inglês para educação a distância foram encerradas à meia-noite do dia 14/01/13.</p>
                   <br />
                   <p>Nos próximos dias, os professores que se cadastraram serão informados por e-mail sobre a análise de seus currículos e a continuidade do processo.</p>
                   <br />
-                  <p>Os classificados concorrerão a vagas de tutor para os cursos a serem oferecidos nos dois semestres de 2012. Ou seja, eles poderão ser selecionados/convocados para atuar no curso do primeiro OU do segundo semestre. Em ambos os casos, pelo período de três meses.</p>
+                  <p>Os classificados concorrerão a vagas de tutor para os cursos a serem oferecidos nos dois semestres de 2013. Ou seja, eles poderão ser selecionados/convocados para atuar no curso do primeiro OU do segundo semestre. Em ambos os casos, pelo período de três meses.</p>
         
                   <?php else: ?>
                     
@@ -210,17 +210,17 @@
                     
                     <p class="pergunta">É licenciado em letras?</p>
                     <div class="linha t11">
-                      <input type="checkbox" name="ingl" id="ingl" value="ingl" />
+                      <input type="checkbox" name="licenciatura1" id="ingl" value="ingles" />
                       <label>Lingua Inglesa</label>
                     </div>
                     
                     <div class="linha t11">
-                      <input type="checkbox" name="port" id="port" value="port" />
+                      <input type="checkbox" name="licenciatura2" id="port" value="portugues" />
                       <label>Português</label>
                     </div>
                     
                     <div class="linha t11">
-                      <input type="checkbox" name="idi" id="idi" value="idi" />
+                      <input type="checkbox" name="licenciatura3" id="idi" value="outro idioma" />
                       <label>Outro idioma</label>
                     </div>
                     
