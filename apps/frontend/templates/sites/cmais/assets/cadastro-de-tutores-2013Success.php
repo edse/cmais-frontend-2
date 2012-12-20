@@ -317,6 +317,19 @@
         $('#nao1').click(function() {
           $('#certificadoInglWrapper').hide();          
         });
+        /*        
+        atividade_checked = true;
+        
+        function countChecked() {
+          var n = $(".atividade_pretendida:checked").length;
+          if (n < 2)
+            atividade_checked = true;
+          else
+            atividade_checked = false;
+        }
+                
+        $(".atividade_pretendida:checkbox").click(countChecked);
+        */
         $('.atividade_pretendida').click(function() {
           $("label[for='atividade_pretendida1'], label[for='atividade_pretendida2']").hide();
         });
@@ -427,7 +440,7 @@
             },
             escola:{
               required: function() {
-                if ($('#sim:checked'))
+                if ($("#sim").is(':checked'))
                   return true;
                 else
                   return false;
@@ -436,7 +449,7 @@
             },
             ensino:{
               required: function() {
-                if ($('#sim1:checked'))
+                if ($("#sim1").is(':checked'))
                   return true;
                 else
                   return false;
