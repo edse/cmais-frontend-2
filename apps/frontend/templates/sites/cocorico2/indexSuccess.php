@@ -5,7 +5,7 @@
   $(document).ready(function() {
     $('.btn-tooltip').tooltip();
   });
-</script>
+</script> 
 
 <!-- container-->
 <div class="container tudo">
