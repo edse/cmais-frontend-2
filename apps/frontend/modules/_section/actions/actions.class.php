@@ -898,7 +898,7 @@ class _sectionActions extends sfActions
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
               ->from('Asset a')
-              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
+              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista').'%')
               ->andWhere('site_id = 189')
               ->orderBy('a.title');
             
