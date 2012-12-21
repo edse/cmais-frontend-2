@@ -20,7 +20,7 @@ jwplayer("mediaplayer").setup({
     { type: "html5",
       config: {
         autostart : 'true',
-        file: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
+        file: "http://midiaserver.tvcultura.com.br:8003"
       }
     }
   ]
