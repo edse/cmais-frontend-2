@@ -43,11 +43,11 @@
           <a href="#" id="btnc-joao-as"  title="João"></a>
         </li>
         <li>
-          <div class="btnc-hover-as" name="eric-asset" title="Eric"></div>
-          <a href="#" id="btn-eric-as"  class="alpha" title="Eric"></a>
+          <div class="btnc-hover-as selected" name="eric-asset" title="Eric"></div>
+          <a href="#" id="btnc-eric-as"  title="Eric"></a>
         </li>
         <li>
-          <div class="btnc-hover-as selected" name="pedro-asset" title="Pedro"></div>
+          <div class="btnc-hover-as" name="pedro-asset" title="Pedro"></div>
           <a href="#" id="btnc-pedro-as"  title="Pedro"></a>
         </li>
         <li>
@@ -106,7 +106,7 @@
 <!--/CONTANER-->
 <script>
   $(document).ready(function(){
-    goTop('pedro-asset');
+    goTop('eric-asset');
     $('a[id|=btnc]').hover(function(){
       $(this).prev('.btnc-hover-as').css('display','block');
     });
