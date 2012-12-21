@@ -98,7 +98,7 @@
   	        <?php foreach($displays['destaque-3'] as $k=>$d): ?>
               <a class="box destaques span6" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <bold><?php echo $d->getHeadline() ?></bold>
-                <img class="span12" src="<?php echo $d->Asset->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+                <img class="span12" src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
               </a>
             <?php endforeach; ?>
           <?php endif; ?>
