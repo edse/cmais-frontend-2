@@ -2,10 +2,10 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
-
 <link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 
 <?php use_helper('I18N', 'Date') ?>
 <script type="text/javascript">  
