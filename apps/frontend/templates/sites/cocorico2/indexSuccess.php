@@ -1,9 +1,9 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
- 
+
+<!-- Le styles--> 
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
 
-<?php use_helper('I18N', 'Date') ?>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.btn-tooltip').tooltip();
