@@ -298,10 +298,25 @@ class _assetActions extends sfActions
             	}
 						} 
 						else {
+						  
+              if($request->getParameter('cadastro-tutoria')) {
+                $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
+                $csv = @file_get_contents($filename);
+                $csv .= "\r\n";
+                $fp = fopen($filename,'w+');
+              }
+						  
 							while(list($campo, $valor) = each($_REQUEST)) {
-								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
 									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+                  $csv .= str_replace(',',' ',strip_tags($valor)) . ", ";
+                }
 							}
+              if($request->getParameter('cadastro-tutoria')) {
+                fwrite($fp, $csv);
+                fclose($fp);
+                //die('123');
+              }
 						}
             
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
@@ -323,22 +338,21 @@ class _assetActions extends sfActions
 							}
 						}
             
-            if($request->getParameter('cadastro-tutoria')) {
-              $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
-              $csv = @file_get_contents($filename);
-              $csv .= "\r\n";
-              while(list($campo, $valor) = each($_REQUEST)) {
-                if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-                  $csv .= strip_tags($valor) . "\t";
-              }
-              $fp = fopen($filename,'w+');
-              fwrite($fp, $csv);
-              fclose($fp);
-              die('123');
-            }
-						
             if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
               //header("Location: ".$this->uri."?mailSent=1");
+              if($request->getParameter('cadastro-tutoria')) {
+                $cabecalho = "From: Cadastro de Tututores 2013 <nao-responda@tvcultura.com.br>\r\n";
+                $cabecalho .= "X-Priority: 3\r\n";
+                $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
+                $cabecalho .= "MIME-Version: 1.0\r\n";
+                $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
+                $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+                $subject = 'Cadastro efetuado com sucesso'; 
+                $mailto = $_REQUEST['email'];
+                $msg = "\n\rPrezado professor(a) recebemos seu cadastro, em breve faremos contato para maiores informações.\n\r\n\rAtenciosamente,\n\rEquipe de Tutoria";
+                mail($mailto, $subject, stripslashes(nl2br($msg)), $cabecalho);
+              }
+              
               die("1");
             }
 			else

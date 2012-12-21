@@ -2,21 +2,23 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
-
-<link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 
-<?php use_helper('I18N', 'Date') ?>
-<script type="text/javascript">  
+<script type="text/javascript">
   $(document).ready(function() {
     $('.btn-tooltip').tooltip();
-  }); 
-</script>
+  });
+</script> 
+
 <!-- container-->
 <div class="container tudo">
-  <!-- row-->  
-  <div class="row-fluid">  
+  <!-- row-->
+  <div class="row-fluid"> 
     <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
         <div class="span12">
@@ -25,7 +27,7 @@
             <div class="carousel-inner">
             	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
               <div class=<?php if($k==1): ?>active<?php endif; ?> item>
-                <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
+                <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $displays->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
               </div>
             </div>
             	<?php endforeach; ?>
@@ -42,16 +44,14 @@
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-    	    	
- 	<?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
-            
-      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+ 	 	
+ 	   <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
     
     </div>
   </div>
   <!-- /row-->
   <!--row conteudo-->
-  <div class="row-fluid conteudo">
+  <div class="row-fluid conteudo"> 
     <!--coluna esquerda-->
     <div class="span8 col-esq">
       <!--destaque principal-->
@@ -68,8 +68,8 @@
                 <span class="mais"></span>
                 <div class="tit"><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>"><?php if($secao_destaque=='joguinhos'): ?>Joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>Receitinhas<?php endif; ?></a><span></span></div>
                 <ul>
-                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
-                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
                 </ul>
               </div>
             </div>
@@ -80,12 +80,12 @@
       <!--destaques-->
       <div class="span12">
         <!--destaque 2-->
-        <?php if(isset($displays['destaque-2'])):?>
+        <?php if(isset($displays['destaque-2'])):?> 
     	    <?php if(count($displays['destaque-2']) > 0): ?>
             <?php foreach($displays['destaque-2'] as $k=>$d): ?>
-              <a class="box destaques span6" href="<?php echo $d->RetriveUrl() ?>" title="jogo">
+              <a class="box destaques span6" href="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" title="jogo">
                 <bold><?php echo $d->getHeadline() ?></bold>
-                <img class="span12" src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original')?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+                <img class="span12" src="<?php echo $displays->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
               </a>
             <?php endforeach; ?>
           <?php endif; ?>
@@ -97,7 +97,7 @@
   	        <?php foreach($displays['destaque-3'] as $k=>$d): ?>
               <a class="box destaques span6" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <bold><?php echo $d->getHeadline() ?></bold>
-                <img class="span12" src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+                <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
               </a>
             <?php endforeach; ?>
           <?php endif; ?>
@@ -108,21 +108,20 @@
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico2/tvcocorico2"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico2/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
       <!-- tv coco -->
       <div class="tvcoco span12">
         <!--convidado-->
-        <?php if(isset($displays['tv-cocorico2'])):?>
-    	    <?php if(count($displays['tv-cocorico2']) > 0): ?>
-    	      <?php foreach($displays['tv-cocorico2'] as $k=>$d): ?>
+        <?php if(isset($displays['tv-cocorico'])):?>
+    	    <?php if(count($displays['tv-cocorico']) > 0): ?>
+    	      <?php foreach($displays['tv-cocorico'] as $k=>$d): ?>
               <h2><i class="icon-star-empty"></i><?php echo $d->getHeadline() ?><i class="icon-star-empty"></i></h2>
-              <a class="convidado span12" href="/cocorico2/tvcocorico2/convidado" title=""><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /> <?php echo $d->getTitle() ?><span class="mais"></span></a>
+              <a class="convidado span12" href="/cocorico2/tvcocorico/convidado" title=""><img src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /> <?php echo $d->getTitle() ?><span class="mais"></span></a>
             <?php endforeach; ?>
           <?php endif; ?>
         <?php endif; ?> 
         <!--/convidado-->
         <!--ENQUETE-->
-       <?php if(count($displays['enquete']) > 0): ?>
         <?php
         //pergunta bloco enquete - 1º destaque
         $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
@@ -141,8 +140,6 @@
         $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
 		
         ?>
-         
-          
          <div class="enquete span12">
           <h3>enquete do dia</h3>
           <p><?php echo $q;?></p>
@@ -162,7 +159,7 @@
                 <div class="capa-img"><img class="" src="<?php echo $img; ?>" alt="" /></div>
               </label>
               
-             
+              
             </div>
             <?php endfor; ?>
             <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
@@ -190,7 +187,6 @@
           </form>
           <!--/Resposta-->
         </div>
-         <?php endif; ?> 
         <!--/ENQUETE-->
       </div>
       <!-- /tvcoco-->
