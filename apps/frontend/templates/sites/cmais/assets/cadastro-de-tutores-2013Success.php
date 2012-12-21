@@ -65,14 +65,17 @@
                     <input type="hidden" name="section_id" id="section_id" value="2106">
                     <p class="enun">Atividade pretendida</p>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida1" id="presencial" value="presencial" />
+                      <input type="checkbox" name="atividade_pretendida1" id="presencial" value="presencial" class="atividade_pretendida" />
                       <label>Tutor presencial</label>
                     </div>
                     <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida2" id="online" value="online" />
+                      <input type="checkbox" name="atividade_pretendida2" id="online" value="online" class="atividade_pretendida" />
                       <label>Tutor online</label>
                     </div>
-                
+                    
+                    <span class="linhaFundo"></span>
+                    
+                    
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
@@ -123,17 +126,17 @@
                     
                     <div id="pcnpWrapper" style="display:none">
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp1" id="pcnptec" value="tec" />
+                        <input type="checkbox" name="pcnp1" id="pcnp1" value="tec" class="pcnp" />
                         <label>Tec</label>
                       </div>
                       
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp2" id="pcnping" value="inglês" />
+                        <input type="checkbox" name="pcnp2" id="pcnp2" value="inglês" class="pcnp" />
                         <label>Inglês</label>
                       </div>
                       
                       <div class="linha t11">
-                        <input type="checkbox" name="pcnp3" id="pcnpoutro" value="outro" />
+                        <input type="checkbox" name="pcnp3" id="pcnp3" value="outro" class="pcnp" />
                         <label>Outro</label>
                       </div>
                       
@@ -186,7 +189,7 @@
                     
                     <div class="linha t4">
                       <label>DDD</label>
-                      <input type="text" name="dddT" id="dddT" />
+                      <input type="text" name="dddT" id="dddT" maxlength="2" />
                     </div>
                     
                     <div class="linha t2">
@@ -196,7 +199,7 @@
                     
                     <div class="linha t4">
                       <label>DDD</label>
-                      <input type="text" name="dddC" id="dddC" />
+                      <input type="text" name="dddC" id="dddC" maxlength="2" />
                     </div>
                     
                     <div class="linha t2">
@@ -317,9 +320,30 @@
         $('#nao1').click(function() {
           $('#certificadoInglWrapper').hide();          
         });
+        /*        
+        atividade_checked = true;
         
+        function countChecked() {
+          var n = $(".atividade_pretendida:checked").length;
+          if (n < 2)
+            atividade_checked = true;
+          else
+            atividade_checked = false;
+        }
+                
+        $(".atividade_pretendida:checkbox").click(countChecked);
+        */
+        $('.atividade_pretendida').click(function() {
+          $("label[for='atividade_pretendida1'], label[for='atividade_pretendida2']").hide();
+        });
+        $('.pcnp').click(function() {
+          $("label[for='pcnp1'], label[for='pcnp2'], label[for='pcnp3']").hide();
+        });
+        
+
         var num = 0;
         $("#cpf").mask("999.999.999-99");
+        $("#cep").mask("99999-999");
         $("#data").mask("99/99/9999");
         
         var validator = $('#form-contato').validate({
@@ -339,6 +363,7 @@
                 window.location.href="#";
                 if(data == "1"){
                   $("#form-contato").clearForm();
+                  $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
@@ -420,7 +445,7 @@
             },
             escola:{
               required: function() {
-                if ($('#sim:checked'))
+                if ($("#sim").is(':checked'))
                   return true;
                 else
                   return false;
@@ -429,27 +454,73 @@
             },
             ensino:{
               required: function() {
-                if ($('#sim1:checked'))
+                if ($("#sim1").is(':checked'))
                   return true;
                 else
                   return false;
               },
               minlength: 8
             },
-            pcnp_cat:{
+            atividade_pretendida1:{
               required: function() {
-                if ($('#sim4:checked'))
-                  return true;
-                else
+                if ($('#online').is(':checked')) {
                   return false;
+                }
+                else {
+                  return true;
+                } 
               }
             },
-            atividade_pretendida:{
+            atividade_pretendida2:{
               required: function() {
-                if ($('#presencial:not(:checked),#online:not(:checked),'))
-                  return true;
-                else
+                if ($('#presencial').is(':checked')) {
                   return false;
+                }
+                else {
+                  return true;
+                } 
+              }
+            },
+            rede: {
+              required: true
+            },
+            certificado: {
+              required: true
+            },
+            certificado2: {
+              required: true
+            },
+            pcnp: {
+              required: true
+            },
+            pcnp1: {
+              required: function() {
+                if ($('#pcnp2').is(':checked') || $('#pcnp3').is(':checked') || $('#nao4').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+              }
+            },
+            pcnp2: {
+              required: function() {
+                if ($('#pcnp1').is(':checked') || $('#pcnp3').is(':checked') || $('#nao4').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+              }
+            },
+            pcnp3: {
+              required: function() {
+                if ($('#pcnp1').is(':checked') || $('#pcnp2').is(':checked') || $('#nao4').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
               }
             },
             captcha: {

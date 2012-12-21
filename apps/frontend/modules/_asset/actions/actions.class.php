@@ -323,10 +323,10 @@ class _assetActions extends sfActions
 							}
 						}
             
-            /*
             if($request->getParameter('cadastro-tutoria')) {
-              $filename = "/var/frontend/web/cmais/assets/cadastro-de-tutores/cadastro.csv";
+              $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
               $csv = @file_get_contents($filename);
+              $csv .= "\r\n";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $csv .= strip_tags($valor) . "\t";
@@ -334,8 +334,8 @@ class _assetActions extends sfActions
               $fp = fopen($filename,'w+');
               fwrite($fp, $csv);
               fclose($fp);
+              die('123');
             }
-            */
 						
             if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
               //header("Location: ".$this->uri."?mailSent=1");
