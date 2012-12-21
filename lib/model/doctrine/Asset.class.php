@@ -97,7 +97,7 @@ class Asset extends BaseAsset
     if($this->getId() > 0){
       if($this->AssetType->getSlug() == "image"){
         if ($usage == 'original')
-          return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".".$this->AssetImage->getFileExtension();
+          return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".".$this->AssetImage->getExtension();
         else
           return "http://midia.cmais.com.br/assets/image/".$usage."/".$this->AssetImage->getFile().".jpg";
       }
