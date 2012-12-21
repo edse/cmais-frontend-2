@@ -349,7 +349,7 @@ class _assetActions extends sfActions
                 $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
                 $subject = 'Cadastro efetuado com sucesso'; 
                 $mailto = $_REQUEST['email'];
-                $msg = "Prezado professor(a) recebemos seu cadastro, em breve faremos contato para maiores informações\n\r\n\rAtenciosamente\n\rEquipe de Tutoria";
+                $msg = "\n\rPrezado professor(a) recebemos seu cadastro, em breve faremos contato para maiores informações.\n\r\n\rAtenciosamente,\n\rEquipe de Tutoria";
                 mail($mailto, $subject, stripslashes(nl2br($msg)), $cabecalho);
               }
               
