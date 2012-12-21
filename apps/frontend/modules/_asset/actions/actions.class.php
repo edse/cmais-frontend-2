@@ -298,10 +298,25 @@ class _assetActions extends sfActions
             	}
 						} 
 						else {
+						  
+              if($request->getParameter('cadastro-tutoria')) {
+                $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
+                $csv = @file_get_contents($filename);
+                $csv .= "\r\n";
+                $fp = fopen($filename,'w+');
+              }
+						  
 							while(list($campo, $valor) = each($_REQUEST)) {
-								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
 									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+                  $csv .= strip_tags($valor) . "\t";
+                }
 							}
+              if($request->getParameter('cadastro-tutoria')) {
+                fwrite($fp, $csv);
+                fclose($fp);
+                //die('123');
+              }
 						}
             
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
@@ -323,20 +338,6 @@ class _assetActions extends sfActions
 							}
 						}
             
-            if($request->getParameter('cadastro-tutoria')) {
-              $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
-              $csv = @file_get_contents($filename);
-              $csv .= "\r\n";
-              while(list($campo, $valor) = each($_REQUEST)) {
-                if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-                  $csv .= strip_tags($valor) . "\t";
-              }
-              $fp = fopen($filename,'w+');
-              fwrite($fp, $csv);
-              fclose($fp);
-              die('123');
-            }
-						
             if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
               //header("Location: ".$this->uri."?mailSent=1");
               die("1");
