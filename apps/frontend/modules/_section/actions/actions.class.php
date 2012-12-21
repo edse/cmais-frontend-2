@@ -830,6 +830,16 @@ class _sectionActions extends sfActions
             ->andWhere('site_id = 189')
             ->orderBy('a.description')
             ->fetchOne();
+            
+          if (!$aux) {
+            $aux = Doctrine_Query::create()
+              ->select('a.description as description')
+              ->from('Asset a')
+              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista').'-%')
+              ->andWhere('site_id = 189')
+              ->orderBy('a.description')
+              ->fetchOne();
+          }
   
           if($aux["description"] != ""){
             $this->artist = @end(explode("Por ", $aux["description"]));
