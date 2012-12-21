@@ -123,7 +123,7 @@
         <?php endif; ?> 
         <!--/convidado-->
         <!--ENQUETE-->
-        <?php if(count($displays['enquete']) > 0): ?>
+    
         <?php
         //pergunta bloco enquete - 1º destaque
         $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
@@ -142,7 +142,7 @@
         $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
 		
         ?>
-        <?php endif; ?> 
+            <?php if(count($displays['enquete']) > 0): ?>
          <div class="enquete span12">
           <h3>enquete do dia</h3>
           <p><?php echo $q;?></p>
@@ -162,7 +162,7 @@
                 <div class="capa-img"><img class="" src="<?php echo $img; ?>" alt="" /></div>
               </label>
               
-              
+             
             </div>
             <?php endfor; ?>
             <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
@@ -190,6 +190,7 @@
           </form>
           <!--/Resposta-->
         </div>
+         <?php endif; ?> 
         <!--/ENQUETE-->
       </div>
       <!-- /tvcoco-->
