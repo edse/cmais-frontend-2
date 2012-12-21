@@ -73,7 +73,7 @@
                       <label>Tutor online</label>
                     </div>
                     
-                    <span class="linhaFundo"></span>
+                    <span class="linhaFundo"></span> 
                     
                     
                     <p class="enun">Dados de identificação</p>

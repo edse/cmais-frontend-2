@@ -334,7 +334,7 @@ class _assetActions extends sfActions
               $fp = fopen($filename,'w+');
               fwrite($fp, $csv);
               fclose($fp);
-              die('123');
+              //die('123');
             }
 						
             if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
