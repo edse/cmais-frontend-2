@@ -123,6 +123,7 @@
         <?php endif; ?> 
         <!--/convidado-->
         <!--ENQUETE-->
+        <?php if(count($displays['enquete']) > 0): ?>
         <?php
         //pergunta bloco enquete - 1º destaque
         $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
@@ -141,6 +142,7 @@
         $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
 		
         ?>
+        <?php endif; ?> 
          <div class="enquete span12">
           <h3>enquete do dia</h3>
           <p><?php echo $q;?></p>
