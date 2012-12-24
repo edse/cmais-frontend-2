@@ -20,31 +20,26 @@
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
-  	<?php if(isset($displays['destaque-topo'])): ?>
-      <?php if(count($displays['destaque-topo']) > 0): ?>
     <div class="span12">
-      <div id="myCarousel" class="carousel slide span12"> 
-        <!-- Carousel items --> 
+      <div id="myCarousel" class="carousel slide span12">
+        <!-- Carousel items -->
         <div class="carousel-inner">
-           
           <div class="active item ">
-            <a href="<?php echo $d[0]->getHeadline() ?>" title="<?php echo $d[0]->getTitle() ?>"><img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico/banner.jpg" class="span12"/></a>
           </div>
           <div class="item">
-            <a href="<?php echo $d[1]->getHeadline() ?>" title="<?php echo $d[1]->getTitle() ?>"><img src="<?php echo $displays[1]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico/banner2.jpg" class="span12" /></a>
           </div>
-          
-         </div>
-         <
+          <div class="item">
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico/banner3.jpg" class="span12" /></a>
+          </div>
+        </div>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
-    
     <div class="divisoria span12"></div>
-    <?php endif; ?>
-    <?php endif; ?>
   </div>
   <!-- /row-->
   <!-- row-->
