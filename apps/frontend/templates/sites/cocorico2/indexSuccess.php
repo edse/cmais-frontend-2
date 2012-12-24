@@ -2,6 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
