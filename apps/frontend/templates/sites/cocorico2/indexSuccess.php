@@ -1,11 +1,4 @@
-<?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-
-<!-- Le styles--> 
-<link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
-<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 
 <style type="text/css">
 /* tooltip*/
@@ -20,47 +13,54 @@
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
-  	<?php if(isset($displays['destaque-topo'])): ?>
-      <?php if(count($displays['destaque-topo']) > 0): ?>
     <div class="span12">
-      <div id="myCarousel" class="carousel slide span12"> 
-        <!-- Carousel items --> 
+      <div id="myCarousel" class="carousel slide span12">
+        <!-- Carousel items -->
         <div class="carousel-inner">
-           
           <div class="active item ">
-            <a href="<?php echo $d[0]->getHeadline() ?>" title="<?php echo $d[0]->getTitle() ?>"><img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner.jpg" class="span12"/></a>
           </div>
           <div class="item">
-            <a href="<?php echo $d[1]->getHeadline() ?>" title="<?php echo $d[1]->getTitle() ?>"><img src="<?php echo $displays[1]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner2.jpg" class="span12" /></a>
           </div>
           <div class="item">
-            <a href="<?php echo $d[2]->getHeadline() ?>" title="<?php echo $d[2]->getTitle() ?>"><img src="<?php echo $displays[2]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner3.jpg" class="span12" /></a>
           </div>
-          <div class="item">
-            <a href="<?php echo $d[3]->getHeadline() ?>" title="<?php echo $d[3]->getTitle() ?>"><img src="<?php echo $displays[3]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
-          </div>
-         </div>
-         <
+        </div>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
-    
     <div class="divisoria span12"></div>
-    <?php endif; ?>
-    <?php endif; ?>
   </div>
   <!-- /row-->
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <div class="row-fluid menu">
-    <div class="navbar">
-      <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>      
-      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>   
-    </div>
-  </div>
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li class="personagens"><a href="/cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+          <li class="joguinhos"><a class="icon" href="/cocorico2/joguinhos" title="Joguinhos"></a><a href="/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
+          <li class="brincadeiras"><a class="icon"  href="/cocorico2/brincadeiras" title="Brincadeiras"></a><a href="/cocorico2/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
+          <li class="tvcoco"><a class="icon"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a><a href="/cocorico2/tvcocorico2" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
+          <li class="diario"><a class="icon"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a><a href="/cocorico2/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li>
+          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a></li>
+        </ul>
+      </div>
+      <div class="lista-personagens">
+        <h3>turma</h3>
+        <ul>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- /row-->
