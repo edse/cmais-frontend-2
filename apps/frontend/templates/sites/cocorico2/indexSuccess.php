@@ -33,12 +33,7 @@
           <div class="item">
             <a href="<?php echo $d[1]->getHeadline() ?>" title="<?php echo $d[1]->getTitle() ?>"><img src="<?php echo $displays[1]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
           </div>
-          <div class="item">
-            <a href="<?php echo $d[2]->getHeadline() ?>" title="<?php echo $d[2]->getTitle() ?>"><img src="<?php echo $displays[2]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
-          </div>
-          <div class="item">
-            <a href="<?php echo $d[3]->getHeadline() ?>" title="<?php echo $d[3]->getTitle() ?>"><img src="<?php echo $displays[3]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
-          </div>
+          
          </div>
          <
         <!-- Carousel nav -->
