@@ -26,12 +26,21 @@
       <div id="myCarousel" class="carousel slide span12">
         <!-- Carousel items --> 
         <div class="carousel-inner">
-        	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
-          <div class="<?php if($k==1): ?>active<?php endif; ?> item">
-            <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+           
+          <div class="active item ">
+            <a href="<?php echo $d[0]->getHeadline() ?>" title="<?php echo $d[0]->getTitle() ?>"><img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+          </div>
+          <div class="item">
+            <a href="<?php echo $d[1]->getHeadline() ?>" title="<?php echo $d[1]->getTitle() ?>"><img src="<?php echo $displays[1]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+          </div>
+          <div class="item">
+            <a href="<?php echo $d[2]->getHeadline() ?>" title="<?php echo $d[2]->getTitle() ?>"><img src="<?php echo $displays[2]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+          </div>
+          <div class="item">
+            <a href="<?php echo $d[3]->getHeadline() ?>" title="<?php echo $d[3]->getTitle() ?>"><img src="<?php echo $displays[3]->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
           </div>
          </div>
-         <?php endforeach; ?>
+         <
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
