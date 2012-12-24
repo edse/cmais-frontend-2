@@ -66,9 +66,6 @@ class _sectionActions extends sfActions
 
       // current site
       $this->site = $this->section->Site;
-	  
-	   if($this->section->Site->getSlug() == "cocorico2")
-        $this->setLayout('cocorico'); 
 
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
@@ -887,9 +884,13 @@ class _sectionActions extends sfActions
   
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
-              ->from('Asset a')
-              ->where('slug LIKE ?', '%-por-'.$request->getParameter('artista'))
-              ->andWhere('site_id = 189')
+              ->from('Asset a, Section s, SectionAsset sa')
+              ->where('a.slug LIKE ?', '%-por-'.$request->getParameter('artista').'%')
+              ->andWhere('a.site_id = 189')
+              ->andWhere('sa.section_id = s.id')
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('sa.section_id = 1952')
+              ->groupBy('sa.asset_id')
               ->orderBy('a.title');
             
             /*

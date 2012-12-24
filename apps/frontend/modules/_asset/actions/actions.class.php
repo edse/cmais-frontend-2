@@ -30,6 +30,8 @@ class _assetActions extends sfActions
 				header("Location: ".$this->asset->Site->retriveUrl());
 				die();
 			}
+      
+      $this->setLayout('layout_asset');
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
