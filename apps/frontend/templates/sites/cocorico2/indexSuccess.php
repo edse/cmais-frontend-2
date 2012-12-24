@@ -5,6 +5,7 @@
 <link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico-home.css" rel="stylesheet">
 <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 
 <style type="text/css">
