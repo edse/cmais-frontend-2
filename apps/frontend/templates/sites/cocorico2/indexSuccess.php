@@ -19,7 +19,7 @@
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
-  <div class="row-fluid">
+  <div class="row-fluid"> 
     <div class="span12">
       <div id="myCarousel" class="carousel slide span12">
         <!-- Carousel items -->
