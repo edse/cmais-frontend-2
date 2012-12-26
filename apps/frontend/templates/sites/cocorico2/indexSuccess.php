@@ -181,10 +181,24 @@
       </div>
     </div>
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico2/tvcocorico2"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico2/tvcocorico2">
+        <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
+      </a>
       <div class="tvcoco span12">
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
-        <a class="convidado span12" href="/cocorico2/tvcocorico2/convidado" title=""><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
+        <?php if(isset($displays['proximo-convidado'])):?>
+          <?php if(count($displays['proximo-convidado']) > 0): ?>
+            <?php
+              $display_img_src = $displays['proximo-convidado'][0]->retriveImageUrlByImageUsage('original');
+              if ($display_img_src == '') {
+                $related = $displays['proximo-convidado'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+              }
+            ?>
+            
+        <a class="convidado span12" href="<?php echo $displays['proximo-convidado'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['proximo-convidado'][0]->getTitle() ?>"><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="<?php echo $displays['proximo-convidado'][0]->getTitle() ?>" /><?php echo $displays['proximo-convidado'][0]->getTitle() ?><span class="mais"></span></a>
+          <?php endif; ?>
+        <?php endif; ?>
         
         <div class="enquete span12">
           <h3>enquete do dia</h3>
