@@ -2,8 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/brincadeiras.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/tvcocorico.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
