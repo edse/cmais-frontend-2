@@ -53,7 +53,7 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
-    	
+    	<?php /*
     	<!--joguinhos e receitinhas-->
     	<?php if(isset($displays['destaque-principal'])):?>
         <?php if(count($displays['destaque-principal']) > 0): ?> 	
@@ -82,6 +82,52 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/joguinhos e receitinhas-->
+       * 
+       */ ?>
+      <?php if(isset($displays['destaque-principal-joguinhos'])):?>
+        <?php if(count($displays['destaque-principal-joguinhos']) > 0): ?>
+          <?php $related = $displays['destaque-principal-joguinhos'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          
+      <div class="destaque-home joguinhos">
+        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" /></a>
+        <div class="box span3">
+          <span class="mais"></span>
+          <div class="tit"><a href="/cocorico/joguinhos">Joguinhos</a><span></span></div>
+          <ul>
+            <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?></a></li>
+            <?php $related = $displays['destaque-principal-joguinhos'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?></a></li>
+          </ul>
+        </div>
+      </div>
+      
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if(isset($displays['destaque-principal-receitinhas'])):?>
+        <?php if(count($displays['destaque-principal-receitinhas']) > 0): ?>
+          <?php $related = $displays['destaque-principal-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          
+      <div class="destaque-home receitinhas">
+        <a href="<?php echo $displays['destaque-principal-receitinhas'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>" /></a>
+        <div class="box span3">
+          <span class="mais"></span>
+          <div class="tit"><a href="/cocorico/receitinhas">Receitinhas</a><span></span></div>
+          <ul>
+            <?php $related = $displays['destaque-principal-receitinhas'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <li><a href="<?php echo $displays['destaque-principal-receitinhas'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?></a></li>
+            <?php $related = $displays['destaque-principal-receitinhas'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <li><a href="<?php echo $displays['destaque-principal-receitinhas'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?></a></li>
+          </ul>
+        </div>
+      </div>
+      
+        <?php endif; ?>
+      <?php endif; ?>
+
+       
+       
       <div class="span12">
         <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
         <bold>
