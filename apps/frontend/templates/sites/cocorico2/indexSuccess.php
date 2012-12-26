@@ -18,14 +18,9 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item ">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner.jpg" class="span12"/></a>
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico/banner.jpg" class="span12"/></a>
           </div>
-          <div class="item">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner2.jpg" class="span12" /></a>
-          </div>
-          <div class="item">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner3.jpg" class="span12" /></a>
-          </div>
+                  
         </div>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
