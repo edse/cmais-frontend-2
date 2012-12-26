@@ -13,6 +13,7 @@
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
+  	teste show
   	 <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
     <div class="span12">
