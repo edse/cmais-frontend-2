@@ -4,9 +4,9 @@
 <!-- Le styles--> 
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/brincadeiras.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/tvcocorico2.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
@@ -14,24 +14,24 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico2', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico22', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
        </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-        <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico22', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
       </div>
     </div>
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico">Home</a><span class="divider">&rsaquo;</span></li>
+    <li><a href="/cocorico2">Home</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Joguinhos</li>
-  </ul>
+  </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
-    <a href="/cocorico/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
+    <a href="/cocorico2/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>
   <!--row-->
   <div class="row-fluid">
@@ -45,7 +45,7 @@
   <div class="row-fluid conteudo">
    <h3>Astronauta marcos pontes</h3>
    <span class="data">00/00/0000</span>
-   <a class="span6"><img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="convidado" /></a>
+   <a class="span6"><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="convidado" /></a>
    <div class="span6">
      <p class="frase"><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. <span class="last"></span></p>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur blandit laoreet. In hac habitasse platea dictumst. Quisque suscipit elementum erat in rutrum. Aliquam malesuada arcu sed sapien sagittis vel dictum nulla accumsan. Nunc a venenatis dolor. Sed mollis feugiat sapien et semper. Nulla nec purus eros, id suscipit lorem. Mauris mattis enim eget quam condimentum eu dapibus lectus adipiscing. Phasellus tincidunt sollicitudin rutrum. Sed non nisi nisl, nec sodales elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas vitae lorem a metus sodales ponvallis. </p>
@@ -70,7 +70,7 @@
   <!-- /row-->
 
   <!-- rodape-->
-  	<?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  	<?php include_partial_from_folder('sites/cocorico22', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->
