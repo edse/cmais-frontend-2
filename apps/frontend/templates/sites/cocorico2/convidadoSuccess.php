@@ -2,11 +2,8 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
-<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico2/geral.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico2/brincadeiras.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico2/tvcocorico2.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
@@ -14,11 +11,11 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico22', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
        </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-        <?php include_partial_from_folder('sites/cocorico22', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
       </div>
     </div>
   </div>
