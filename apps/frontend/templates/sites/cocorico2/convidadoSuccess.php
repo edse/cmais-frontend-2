@@ -67,7 +67,7 @@
   <!-- /row-->
 
   <!-- rodape-->
-  	<?php include_partial_from_folder('sites/cocorico22', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  	<?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->
