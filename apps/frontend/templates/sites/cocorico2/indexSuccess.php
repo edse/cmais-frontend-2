@@ -146,10 +146,11 @@
             <?php echo $displays['destaque-2'][0]->getTitle() ?>
           </bold>
           <?php
-            $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-            $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
-            if ($display_img_src == '')
-              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
+            $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
+            if ($display_img_src == '') {
+              $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+              $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+            }
           ?>
           <?php if($display_img_src != ''): ?>
           <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?><span></span>
@@ -165,10 +166,11 @@
             <?php echo $displays['destaque-3'][0]->getTitle() ?>
           </bold>
           <?php
-            $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-            $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
-            if ($display_img_src == '')
-              $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
+            $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
+            if ($display_img_src == '') {
+              $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+              $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+            }
           ?>
           <?php if($display_img_src != ''): ?>
           <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?><span></span>
