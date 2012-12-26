@@ -13,7 +13,7 @@
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
-  	teste show
+  	teste destque-topo
   	 <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
     <div class="span12">
@@ -21,7 +21,7 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
         <?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
-           <div class="<?php if($k==1): ?>active<?php endif; ?> item">
+           <div class="<?php if($k==0): ?>active<?php endif; ?> item">
                 <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
            </div>
         </div>
