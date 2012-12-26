@@ -1,12 +1,6 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <!-- Le styles--> 
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
-<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 
 <script type="text/javascript">
