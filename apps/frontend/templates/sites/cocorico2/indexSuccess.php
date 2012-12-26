@@ -116,33 +116,66 @@
           <?php $related = $displays['destaque-principal-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
           
       <div class="destaque-home receitinhas">
+        <?php if(count($related) > 0): ?>
         <a href="<?php echo $displays['destaque-principal-receitinhas'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>" /></a>
+        <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
           <div class="tit"><a href="/cocorico/receitinhas">Receitinhas</a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-receitinhas'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <?php if(count($related) > 0): ?>
             <li><a href="<?php echo $displays['destaque-principal-receitinhas'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-receitinhas'][1]->getTitle() ?></a></li>
+            <?php endif; ?>
             <?php $related = $displays['destaque-principal-receitinhas'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <?php if(count($related) > 0): ?>
             <li><a href="<?php echo $displays['destaque-principal-receitinhas'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-receitinhas'][2]->getTitle() ?></a></li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>
       
         <?php endif; ?>
       <?php endif; ?>
-
-       
        
       <div class="span12">
-        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
-        <bold>
-          Receitinhas
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
-        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
-        <bold>
-          papel de parede
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
+        <?php if(isset($displays['destaque-2'])):?>
+          <?php if(count($displays['destaque-2']) > 0): ?>
+        <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
+          <bold>
+            <?php echo $displays['destaque-2'][0]->getTitle() ?>
+          </bold>
+          <?php
+            $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+            $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+            if ($display_img_src == '')
+              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
+          ?>
+          <?php if($display_img_src != ''): ?>
+          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?><span></span>
+          <?php endif; ?>
+        </a>
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($displays['destaque-3'])):?>
+          <?php if(count($displays['destaque-3']) > 0): ?>
+        <a class="box destaques span6" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-3'][0]->getTitle() ?>">
+          <bold>
+            <?php echo $displays['destaque-3'][0]->getTitle() ?>
+          </bold>
+          <?php
+            $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+            $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+            if ($display_img_src == '')
+              $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
+          ?>
+          <?php if($display_img_src != ''): ?>
+          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?><span></span>
+          <?php endif; ?>
+        </a>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
     </div>
     <div class="span4 col-dir">
