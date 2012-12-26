@@ -13,26 +13,25 @@
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
-  	teste destque-topo
-  	 <?php if(isset($displays['destaque-topo'])): ?>
-      <?php if(count($displays['destaque-topo']) > 0): ?>
     <div class="span12">
       <div id="myCarousel" class="carousel slide span12">
         <!-- Carousel items -->
         <div class="carousel-inner">
-        <?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
-           <div class="<?php if($k==0): ?>active <?php endif; ?>item">
-                <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
-           </div>
+          <div class="active item ">
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner.jpg" class="span12"/></a>
+          </div>
+          <div class="item">
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner2.jpg" class="span12" /></a>
+          </div>
+          <div class="item">
+            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner3.jpg" class="span12" /></a>
+          </div>
         </div>
-        <?php endforeach; ?>
         <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
-       <?php endif; ?>
-    <?php endif; ?>
     <div class="divisoria span12"></div>
   </div>
   <!-- /row-->
@@ -40,12 +39,28 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?> 
+        <ul class="nav">
+          <li class="personagens"><a href="/cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+          <li class="joguinhos"><a class="icon" href="/cocorico2/joguinhos" title="Joguinhos"></a><a href="/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
+          <li class="brincadeiras"><a class="icon"  href="/cocorico2/brincadeiras" title="Brincadeiras"></a><a href="/cocorico2/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
+          <li class="tvcoco"><a class="icon"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a><a href="/cocorico2/tvcocorico2" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
+          <li class="diario"><a class="icon"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a><a href="/cocorico2/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li>
+          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a></li>
+        </ul>
       </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-        	<?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
-        </div>
+        <ul>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- /row-->
@@ -53,32 +68,32 @@
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
       <div class="destaque-home joguinhos">
-        <a href="/cocorico/joguinhos" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+        <a href="/cocorico2/joguinhos" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="jogo" /></a>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="/cocorico/joguinhos">Joguinhos</a><span></span></div>
+          <div class="tit"><a href="/cocorico2/joguinhos">Joguinhos</a><span></span></div>
           <ul>
-            <li><a href="/cocorico/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
-            <li><a href="/cocorico/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
+            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
+            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
           </ul>
         </div>
       </div>
       <div class="span12">
-        <a class="box destaques span6" href="/cocorico/receitinhas" title="jogo">
+        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
         <bold>
           Receitinhas
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
-        <a class="box destaques span6" href="/cocorico/receitinhas" title="jogo">
+        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
+        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
         <bold>
           papel de parede
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
+        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
       </div>
     </div>
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico2/tvcocorico2"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
       <div class="tvcoco span12">
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
-        <a class="convidado span12" href="/cocorico/tvcocorico/convidado" title=""><img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
+        <a class="convidado span12" href="/cocorico2/tvcocorico2/convidado" title=""><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
         
         <div class="enquete span12">
           <h3>enquete do dia</h3>
@@ -90,14 +105,14 @@
                 <input type="radio" class="regular-radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                 no videogame
               </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" />
+              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
             </div>
             <!-- versus -->
             <div class="span6 last">
               <label class="radio">
                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
               no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" />
+              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
             </div>
             <div class="votar span12"><span></span><a href="#" class="span11">votar</a><span class="last"></span></div>
           </form>
@@ -105,13 +120,13 @@
             <div class="versus"></div>
             <div class="span6">
               <label class="radio">no videogame</label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" />
+              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
               <p>50%</p>
             </div>
             <!-- versus -->
             <div class="span6 last">
               <label class="radio">no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" />
+              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
               <p>50%</p>
             </div>
             <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
@@ -155,7 +170,7 @@
         <li><a href="#" title="Sobre a série">Sobre a série</a></li>
         <li><a href="#" title="Diário do Júlio">Diário do Júlio</a></li>
         <li><a href="#" title="Personagens">Personagens</a></li>
-        <li><a href="#" title="Cocoricolândia">Cocoricolândia</a></li>
+        <li><a href="#" title="cocorico2lândia">cocorico2lândia</a></li>
         <li><a href="#" title="Autógrafos">Autógrafos</a></li>
       </ul>
     </div>
