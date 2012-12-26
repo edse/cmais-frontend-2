@@ -35,6 +35,7 @@
     <div class="divisoria span12"></div>
   </div>
   <!-- /row-->
+  
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
@@ -48,20 +49,34 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
-      <div class="destaque-home joguinhos">
-        <a href="/cocorico2/joguinhos" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="jogo" /></a>
-        <div class="box span3">
-          <span class="mais"></span>
-          <div class="tit"><a href="/cocorico2/joguinhos">Joguinhos</a><span></span></div>
-          <ul>
-            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
-            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
-          </ul>
-        </div>
-      </div>
+    	
+    	<!--joguinhos e receitinhas-->
+    	<?php if(isset($displays['destaque-principal'])):?>
+        <?php if(count($displays['destaque-principal']) > 0): ?> 	
+          <?php 
+          foreach($displays['destaque-principal'] as $k=>$d):
+          $secao = $displays['destaque-principal'] -> getSections();
+          $secao_destaque = $secao[0];
+          ?>
+      <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+              <a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
+              <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+                <span class="mais"></span>
+                <div class="tit"><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>"><?php if($secao_destaque=='joguinhos'): ?>Joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>Receitinhas<?php endif; ?></a><span></span></div>
+                <ul>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
+                </ul>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif; ?>
+      <!--/joguinhos e receitinhas-->
       <div class="span12">
         <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
         <bold>
@@ -124,7 +139,6 @@
   <div class="row-fluid  border-top"></div>
   <div class="row-fluid rodape" >
    <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-     
   </div>
   <!--row-->
 </div>
