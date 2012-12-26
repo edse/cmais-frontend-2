@@ -60,7 +60,7 @@
           
           <?php 
           $secao = $displays['destaque-principal'][0]->Asset-> getSections();
-          $secao_destaque = $secao[0];
+          $secao_destaque = $secao[0]; 
           ?>
           
          	 <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
