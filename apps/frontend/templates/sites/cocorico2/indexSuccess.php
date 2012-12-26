@@ -39,28 +39,12 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <ul class="nav">
-          <li class="personagens"><a href="/cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
-          <li class="joguinhos"><a class="icon" href="/cocorico2/joguinhos" title="Joguinhos"></a><a href="/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
-          <li class="brincadeiras"><a class="icon"  href="/cocorico2/brincadeiras" title="Brincadeiras"></a><a href="/cocorico2/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
-          <li class="tvcoco"><a class="icon"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a><a href="/cocorico2/tvcocorico2" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
-          <li class="diario"><a class="icon"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a><a href="/cocorico2/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li>
-          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a></li>
-        </ul>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
       </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-        <ul>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-        </ul>
-      </div>
+       	 <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        </div>
     </div>
   </div>
   <!-- /row-->
