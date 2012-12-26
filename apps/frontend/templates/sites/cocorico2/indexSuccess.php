@@ -59,8 +59,8 @@
         <?php if(count($displays['destaque-principal']) > 0): ?> 	
           
           <?php 
-          $secao = $displays['destaque-principal'][0] -> getSection();
-          $secao_destaque = $secao;
+          $secao = $displays['destaque-principal'][0] -> getSections();
+          $secao_destaque = $secao[0];
           ?>
           
          	 <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
