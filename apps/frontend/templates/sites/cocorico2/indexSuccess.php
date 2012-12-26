@@ -1,202 +1,248 @@
-<link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
-<style type="text/css">
-/* tooltip*/
-.tooltip-inner { background:#747a3a; padding:3px 10px; font-size: 13px; line-height:15px; }
-.tooltip.in,
-.tooltip { opacity: 1; filter: alpha(opacity=100);}
-.tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
-/* tooltip*/
-</style>
+<!-- Le styles--> 
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
+<link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.btn-tooltip').tooltip();
+  });
+</script> 
 
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
-  <div class="row-fluid">
-    <div class="span12">
-      <div id="myCarousel" class="carousel slide span12">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="active item ">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner.jpg" class="span12"/></a>
+  <div class="row-fluid"> 
+    <?php if(isset($displays['destaque-topo'])): ?>
+      <?php if(count($displays['destaque-topo']) > 0): ?>
+        <div class="span12">
+          <div id="myCarousel" class="carousel slide span12">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+            	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>    
+              <div class=<?php if($k==1): ?>active<?php endif; ?> item>
+                <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $displays->retriveImageUrlByImageUsage('original') ?>" class="<?php echo $d->getTitle() ?>"/></a>
+              </div>
+            </div>
+            	<?php endforeach; ?>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
           </div>
-          <div class="item">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner2.jpg" class="span12" /></a>
-          </div>
-          <div class="item">
-            <a href="#" title="banner"><img src="/portal/images/capaPrograma/cocorico2/banner3.jpg" class="span12" /></a>
-          </div>
-        </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
+        </div>    
+      <?php endif; ?>
+    <?php endif; ?>
     <div class="divisoria span12"></div>
   </div>
   <!-- /row-->
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav">
-          <li class="personagens"><a href="/cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
-          <li class="joguinhos"><a class="icon" href="/cocorico2/joguinhos" title="Joguinhos"></a><a href="/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
-          <li class="brincadeiras"><a class="icon"  href="/cocorico2/brincadeiras" title="Brincadeiras"></a><a href="/cocorico2/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
-          <li class="tvcoco"><a class="icon"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a><a href="/cocorico2/tvcocorico2" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
-          <li class="diario"><a class="icon"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a><a href="/cocorico2/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li>
-          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a></li>
-        </ul>
-      </div>
-      <div class="lista-personagens">
-        <h3>turma</h3>
-        <ul>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico2/menu-astolfo.png" alt="Astolfo" /></a></li>
-        </ul>
-      </div>
+ 	 	
+ 	   <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+    
     </div>
   </div>
   <!-- /row-->
-  <!--row-->
-  <div class="row-fluid conteudo">
+  <!--row conteudo-->
+  <div class="row-fluid conteudo"> 
+    <!--coluna esquerda-->
     <div class="span8 col-esq">
-      <div class="destaque-home joguinhos">
-        <a href="/cocorico2/joguinhos" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="jogo" /></a>
-        <div class="box span3">
-          <span class="mais"></span>
-          <div class="tit"><a href="/cocorico2/joguinhos">Joguinhos</a><span></span></div>
-          <ul>
-            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
-            <li><a href="/cocorico2/joguinhos-interna" title="jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho</a></li>
-          </ul>
-        </div>
-      </div>
+      <!--destaque principal-->
+      <?php if(isset($displays['destaque-principal'])):?>
+        <?php if(count($displays['destaque-principal']) > 0): ?> 	
+          <?php 
+          foreach($displays['destaque-principal'] as $k=>$d):
+          $secao = $displays['destaque-principal'] -> getSections();
+          $secao_destaque = $secao[0];
+          ?>
+            <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+              <a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
+              <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+                <span class="mais"></span>
+                <div class="tit"><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>"><?php if($secao_destaque=='joguinhos'): ?>Joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>Receitinhas<?php endif; ?></a><span></span></div>
+                <ul>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][1]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal'][1]->getTitle() ?></a></li>
+                  <li><a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" title="<?php echo $displays['destaque-principal'][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays['destaque-principal'][2]->$d->retriveImageUrlByImageUsage ?>" alt="<?php echo $displays['destaque-principal'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal'][2]->getTitle() ?></a></li>
+                </ul>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif; ?>
+      <!--/destaque principal--> 
+      <!--destaques-->
       <div class="span12">
-        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
-        <bold>
-          Receitinhas
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
-        <a class="box destaques span6" href="/cocorico2/receitinhas" title="jogo">
-        <bold>
-          papel de parede
-        </bold><img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="nome jogo" />Nome do joguinho<span></span></a>
-      </div>
+        <!--destaque 2-->
+        <?php if(isset($displays['destaque-2'])):?> 
+    	    <?php if(count($displays['destaque-2']) > 0): ?>
+            <?php foreach($displays['destaque-2'] as $k=>$d): ?>
+              <a class="box destaques span6" href="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" title="jogo">
+                <bold><?php echo $d->getHeadline() ?></bold>
+                <img class="span12" src="<?php echo $displays->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+              </a>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif; ?> 
+        <!--/destaque 2-->
+        <!--destaque 3-->       
+        <?php if(isset($displays['destaque-3'])):?>
+  	      <?php if(count($displays['destaque-3']) > 0): ?>
+  	        <?php foreach($displays['destaque-3'] as $k=>$d): ?>
+              <a class="box destaques span6" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                <bold><?php echo $d->getHeadline() ?></bold>
+                <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?><span></span>
+              </a>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif; ?>
+      </div> 
+      <!--/destaques-->           
     </div>
+    <!--/coluna esquerda-->
+    <!--coluna direita-->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico2/tvcocorico2"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico2/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" /></a>
+      <!-- tv coco -->
       <div class="tvcoco span12">
-        <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
-        <a class="convidado span12" href="/cocorico2/tvcocorico2/convidado" title=""><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
+        <!--convidado-->
+        <?php if(isset($displays['tv-cocorico'])):?>
+    	    <?php if(count($displays['tv-cocorico']) > 0): ?>
+    	      <?php foreach($displays['tv-cocorico'] as $k=>$d): ?>
+              <h2><i class="icon-star-empty"></i><?php echo $d->getHeadline() ?><i class="icon-star-empty"></i></h2>
+              <a class="convidado span12" href="/cocorico2/tvcocorico/convidado" title=""><img src="<?php echo $d->retriveImageUrlByImageUsage ?>" alt="<?php echo $d->getTitle() ?>" /> <?php echo $d->getTitle() ?><span class="mais"></span></a>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif; ?> 
+        <!--/convidado-->
+        <!--ENQUETE-->
+        <?php
+        //pergunta bloco enquete - 1º destaque
+        $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
         
-        <div class="enquete span12">
+        //doctrine para respostas
+        $respostas = Doctrine_Query::create()
+          ->select('aa.*')
+          ->from('AssetAnswer aa')
+          ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+          ->execute();
+          
+        //imagens respectivas das respostas
+        $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_0 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+		
+        ?>
+         <div class="enquete span12">
           <h3>enquete do dia</h3>
-          <p>Como você brinca quando esta chovendo?</p>
-          <form class="navbar-form pull-left">
+          <p><?php echo $q;?></p>
+          <!--Pergunta-->
+          <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left" style="min-width:296px; ">
+            <?php 
+            $form = new BaseForm();
+            echo $form->renderHiddenFields();
+            ?>
             <div class="versus"></div>
-            <div class="span6">
-              <label class="radio">
-                <input type="radio" class="regular-radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                no videogame
+            <?php for($i=0; $i<count($respostas); $i++): ?>
+            <div class="span6 <?php if($i>0)echo "last"?>">
+              <label class="radio" for="resposta<?php echo $i?>">
+                <input type="radio" name="opcao" id="resposta<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
+                <?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?>
+                <?php if($i==0){$img = $img_0;}else{$img = $img_1;}?>
+                <div class="capa-img"><img class="" src="<?php echo $img; ?>" alt="" /></div>
               </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
+              
+              
             </div>
-            <!-- versus -->
-            <div class="span6 last">
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-              no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
+            <?php endfor; ?>
+            <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+            <div class="votar span12">
+              <span></span>
+              <input id="votar-input" class="span11" type="submit" value="votar" />
+              <span class="last"></span>
+              
             </div>
-            <div class="votar span12"><span></span><a href="#" class="span11">votar</a><span class="last"></span></div>
           </form>
-          <form class="navbar-form pull-left inativo" >
+          
+          <!--/Pergunta-->
+          <!--Resposta FORM INATIVA-->
+          <form class="navbar-form pull-left inativo" style="display: none;">
             <div class="versus"></div>
-            <div class="span6">
-              <label class="radio">no videogame</label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-              <p>50%</p>
+            <?php for($i=0; $i<count($respostas); $i++): ?>
+            <div class="span6 <?php if($i>0)echo "last"?>">
+              <label class="radio"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label>
+              <?php if($i==0){$img = $img_0;}else{$img = $img_1;}?>
+              <div class="capa-img"><img class="span12" src="<?php echo $img; ?>" alt="" /></div>
+              <p class="resposta-<?php echo $i?>">50%</p>
             </div>
-            <!-- versus -->
-            <div class="span6 last">
-              <label class="radio">no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-              <p>50%</p>
-            </div>
+            <?php endfor;?>
             <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
+          <!--/Resposta-->
         </div>
+        <!--/ENQUETE-->
       </div>
+      <!-- /tvcoco-->
     </div>
+    <!--/coluna direita-->
   </div>
-  
+  <!--row conteudo-->
   <!-- /row-->
   <div class="row-fluid  border-top"></div>
-  <div class="row-fluid rodape" >
-    <h3>2012 &copy; tv cultura - fpa</h3>
-    <div class="span2">
-      <a href="#" class="bold" title="Em família">em família</a>
-      <ul>
-        <li><a href="#" title="Na TV">Na TV</a></li>
-        <li><a href="#" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="#" title="Nas Redes">Nas Redes</a></li>
-        <li><a href="#" title="Nos Teatros">Nos Teatros</a></li>
-        <li><a href="#" title="Nos Cinemas">Nos Cinemas</a></li>
-        <li><a href="#" title="Na Web">Na Web</a></li>
-        <li><a href="#" title="Agenda">Agenda</a></li>
-        <li><a href="#" title="Newsletter">Newsletter</a></li>
-        <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
-      </ul>
-    </div>
-    <div class="span2"> <a href="#" class="bold" title="Em família">tv cocoricó</a>
-      <ul>
-        <li><a href="#" title="Sobre o programa">Sobre o programa</a></li>
-        <li><a href="#" title="Livro de receitas">Livro de receitas</a></li>
-        <li><a href="#" title="Bastidores">Bastidores</a></li>
-        <li><a href="#" title="Tour Virtual">Tour Virtual</a></li>
-        <li><a href="#" title="Receitinhas">Receitinhas</a></li>
-        <li><a href="#" title="Envie seu vídeo">Envie seu vídeo</a></li>
-        <li><a href="#" title="Enquete">Enquete</a></li>
-      </ul>
-    </div>
-    <div class="span2"> <a href="#" class="bold" title="Cocoricó">cocoricó</a>
-      <ul>
-        <li><a href="#" title="Sobre a série">Sobre a série</a></li>
-        <li><a href="#" title="Diário do Júlio">Diário do Júlio</a></li>
-        <li><a href="#" title="Personagens">Personagens</a></li>
-        <li><a href="#" title="cocorico2lândia">cocorico2lândia</a></li>
-        <li><a href="#" title="Autógrafos">Autógrafos</a></li>
-      </ul>
-    </div>
-    <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Brincadeiras</a>
-      <ul>
-        <li><a href="#" title="Joguinhos">Joguinhos</a></li>
-        <li><a href="#" title="Receitinhas">Receitinhas</a></li>
-        <li><a href="#" title="Para colorir">Para colorir</a></li>
-        <li><a href="#" title="Rádio">Rádio</a></li>
-        <li><a href="#" title="Vídeos">Vídeos</a></li>
-        <li><a href="#" title="Clipes musicais">Clipes musicais</a></li>
-        <li><a href="#" title="Papel de parede">Papel de parede</a></li>
-        <li><a href="#" title="Carinhas animadas">Carinhas animadas</a></li>
-        <li><a href="#" title="Cartões Comemorativos">Cartões Comemorativos</a></li>
-        <li><a href="#" title="Atividades para imprimir">Atividades para imprimir</a></li>
-      </ul></div>
-    <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
-      <ul>
-        <li><a href="#" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
-        <li><a href="#" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>
-        <li class="last"><a href="#" class="cultura" title="TV Cultura">TV Cultura</a></li>
-        <li><a href="#" class="castelo" title="Castelo Rá Tim Bum">Castelo Rá Tim Bum</a></li>
-        <li><a href="#" class="vila" title="Vila Sésamo">Vila Sésamo</a></li>
-      </ul></div>
-    
-  </div>
+  <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--row-->
 </div>
 <!-- /container-->
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+  $('#votar-input').click(function(){
+    $('label.error').css('display','none');
+  });
+  //valida form
+  var validator = $('.form-voto').validate({
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
+        }
+      },
+      messages:{
+        opcao: ""
+      }
+    });
+});
+//enviar voto
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('.votar').hide();
+      $('#ajax-loader').show();
+    },
+    success: function(data){
+      $(".form-voto").hide();
+      $("form.inativo").fadeIn("fast");
+      var i=0;
+      $.each(data, function(key, val) {
+        
+        $('.resposta-'+i).html(val.votes);
+        i++;
+      });
+    }
+  });
+  
+}
+</script>
