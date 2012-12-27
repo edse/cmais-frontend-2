@@ -150,7 +150,7 @@
                     <p></p>
                     
                     <div class="linha t4">
-                      <label>DE (Diretoria de Ensino da SEE SP)</label>
+                      <label style="width:300px">DE (Diretoria de Ensino da SEE SP)</label>
                       <input type="text" name="de" id="de" />
                     </div>
                     
@@ -184,6 +184,12 @@
                     
                     <div class="linha t1">
                       <label>cidade</label>
+                      <input type="text" name="cidade" id="cidade" />
+                    </div>
+                    
+                    <!--
+                    <div class="linha t1">
+                      <label>cidade</label>
                       <select name="cidade" id="cidade">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
@@ -198,6 +204,7 @@
                         <option value="Sorocaba">Sorocaba</option>
                       </select>
                     </div>
+                    -->
                     
                     <div class="linha t2">
                       <label>Estado</label>
@@ -469,7 +476,7 @@
                 else
                   return false;
               },
-              minlength: 8
+              minlength: 5
             },
             atividade:{
               required: function() {
@@ -477,9 +484,8 @@
                   return true;
                 else
                   return false;
-              },
-              minlength: 8
-            },
+              }
+           },
             ensino:{
               required: function() {
                 if ($("#sim1").is(':checked'))
@@ -487,7 +493,7 @@
                 else
                   return false;
               },
-              minlength: 8
+              minlength: 5
             },
             atividade_pretendida1:{
               required: function() {
