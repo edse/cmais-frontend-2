@@ -115,12 +115,10 @@
         <?php if(count($displays['destaque-principal-receitinhas']) > 0): ?>
           <?php $related = $displays['destaque-principal-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
           
-<<<<<<< HEAD
+
       <div class="destaque-home receitinhas span12">
-=======
-      <div class="destaque-home receitinhas">
+      
         <?php if(count($related) > 0): ?>
->>>>>>> b9cbc72af8855893818b6ef9f3edcc37749cbab7
         <a href="<?php echo $displays['destaque-principal-receitinhas'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-receitinhas'][0]->getTitle() ?>" /></a>
         <?php endif; ?>
         <div class="box span3">
