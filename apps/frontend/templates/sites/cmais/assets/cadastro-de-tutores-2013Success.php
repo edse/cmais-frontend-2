@@ -111,6 +111,11 @@
                       <input type="text" name="escola" id="escola" />
                     </div>
                     
+                    <div class="linha t5" id="atividadeWrapper" style="display:none">
+                      <label>Especificar a atividade:</label>
+                      <input type="text" name="atividade" id="atividade" />
+                    </div>
+                    
                     <p class="pergunta">PCNP?</p>
                     <div class="linha t10">
                       <input type="radio" name="pcnp" id="sim4" value="sim" />
@@ -145,7 +150,7 @@
                     <p></p>
                     
                     <div class="linha t4">
-                      <label>DE</label>
+                      <label>DE (Diretoria de Ensino da SEE SP)</label>
                       <input type="text" name="de" id="de" />
                     </div>
                     
@@ -179,7 +184,19 @@
                     
                     <div class="linha t1">
                       <label>cidade</label>
-                      <input type="text" name="cidade" id="cidade" />
+                      <select name="cidade" id="cidade">
+                        <option value="">---</option>
+                        <option value="Araçatuba">Araçatuba</option>
+                        <option value="Bauru">Bauru</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="Franca">Franca</option>
+                        <option value="Presidente Prudente">Presidente Prudente</option>
+                        <option value="Santos">Santos</option>
+                        <option value="São José do Rio Preto">São José do Rio Preto</option>
+                        <option value="São José dos Campos">São José dos Campos</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                      </select>
                     </div>
                     
                     <div class="linha t2">
@@ -303,10 +320,12 @@
       $(document).ready(function(){
         
         $('#sim').click(function() {
-          $('#escolaWrapper').show();          
+          $('#atividadeWrapper').hide();
+          $('#escolaWrapper').show();       
         });
         $('#nao').click(function() {
-          $('#escolaWrapper').hide();          
+          $('#escolaWrapper').hide();   
+          $('#atividadeWrapper').show();       
         });
         $('#sim4').click(function() {
           $('#pcnpWrapper').show();          
@@ -446,6 +465,15 @@
             escola:{
               required: function() {
                 if ($("#sim").is(':checked'))
+                  return true;
+                else
+                  return false;
+              },
+              minlength: 8
+            },
+            atividade:{
+              required: function() {
+                if ($("#nao").is(':checked'))
                   return true;
                 else
                   return false;
