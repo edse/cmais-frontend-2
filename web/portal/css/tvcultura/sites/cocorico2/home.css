@@ -18,7 +18,7 @@
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */
-.destaque-home { margin-bottom: 20px; float:left; }
+.col-esq .destaque-home.span12 { margin-bottom: 20px; float: left; }
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
 .destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
@@ -48,7 +48,7 @@
 .enquete.span12 { background: url(/portal/images/capaPrograma/cocorico/divisoria-tvcoco.png) repeat-x 0 -6px; margin-left:0;  }
 .enquete h3 { text-transform:uppercase; font-size: 20px;  margin:15px 0 0 0; background:url(/portal/images/capaPrograma/cocorico/ico-ok.png) no-repeat 10px 11px; padding-left:35px; color:#fff;  }
 .enquete p { margin:0 10px 0 10px; color:#fff; }
-.enquete form { position:relative; overflow:hidden;  }
+.enquete form.span12 { position:relative; overflow:hidden; margin-left:0;  }
 .enquete form .versus { width:27px; height:30px; position:absolute; background:url(/portal/images/capaPrograma/cocorico/versus.png) no-repeat; bottom:50%; left:46%;  }
 .enquete form .span6 { margin:0 1px; }
 .enquete .inativo .span6 .capa-img,
@@ -74,3 +74,4 @@
 .enquete form .votar .last { margin:0; float: left; background-position:-40px 0  }
 
 #votar-input {border: none;background: red;float: left;height: 38px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 93%;}
+

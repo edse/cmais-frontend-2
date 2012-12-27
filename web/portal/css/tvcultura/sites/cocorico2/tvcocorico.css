@@ -88,7 +88,7 @@
 input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20px;    max-width: 120px;    padding: 0 10px;}
 .form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 0 8px;    padding: 0;} 
 .form-search .icon-search {    background: url("/portal/images/capaPrograma/cocorico/ico-busca.png") no-repeat scroll 0 0 transparent;    height: 21px;    margin: 0;    width: 21px;}
-.pagination { margin-top:20px; margin-bottom:0; }
+.pagination { margin:10px 0; }
 .pagination .anterior:hover a,
 .pagination .proximo:hover a,
 .pagination .anterior a,
@@ -100,7 +100,7 @@ input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20
 /* convidado*/
 .convidados {  background: url("/portal/images/capaPrograma/cocorico/pontilhado-verde2.png") repeat-x scroll 0 40px transparent;    bottom: 0;    height: 44px;    max-width: 980px;    position: relative; }
 .convidados a { display: block;  position: absolute;    right: 0; bottom:3px; color:#fff; margin-right:20px; padding:0 10px; }
-.paginacao { margin:0 20px; }
+.paginacao { margin:0 20px 20px 20px; overflow:hidden; }
 .paginacao a { font-weight:bold; text-transform:uppercase; float:left; max-width:113px; max-height:40px; }
 .convidados a,
 .paginacao a:hover { text-decoration:none;}
@@ -116,7 +116,15 @@ input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20
 p.frase { color: #6B757D; font-weight: bold; text-align: center; text-transform: uppercase; padding:10px 20px 10px 20px; background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin-bottom: 20px; }
 p.frase span { background:url("/portal/images/capaPrograma/cocorico/aspas.png") no-repeat; display:block; width:25px; height:18px; float:left; margin:-10px 0 0 -20px;}
 p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 0 0; }
-.conteudo .tit { text-transform:uppercase; font-weight:bold; }
+.conteudo .tit { text-transform:uppercase; font-weight:bold; margin-bottom:5px; }
 /* /convidado*/
+.form-horizontal .g-autografo a { display:block; }
+
+/* IE8*/
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container { width:1190px\0; }
+/* IE8*/
 
 
