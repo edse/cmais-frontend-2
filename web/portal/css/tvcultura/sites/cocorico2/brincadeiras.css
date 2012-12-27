@@ -7,7 +7,7 @@
 .tit-pagina span { background-position:-20px 0;}
 .tit-pagina .likes { background:#f9b236;  }
 
-.likes li { background:url(/portal/images/capaPrograma/cocorico/estrela-laranja.png) no-repeat;  }
+.likes li { background:url(/portal/images/capaPrograma/cocorico/estrela-laranja.png) no-repeat; float:right; }
 .destaques .btn span { display:none; }
 .destaques a.span12 { padding-left:10px; height:24px; line-height: 24px; }
 .pagination .anterior:hover a,
@@ -123,7 +123,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* /videos*/
 
 /* personagens */
-#lista li.personagens a { background: url("/portal/images/capaPrograma/cocorico/ico-menos.png") no-repeat scroll 0 20px;  }
+#lista li.personagens a { background: url("/portal/images/capaPrograma/cocorico/ico-menos.png") no-repeat scroll 3px 20px;  }
 #lista .lista-personagens { max-height:none; }
 #lista .lista-personagens ul { overflow:hidden;}
 #lista .lista-personagens h2 { font-size:20px; color:#747a39; text-transform:uppercase; margin:10px; line-height:22px;  }
