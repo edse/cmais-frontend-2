@@ -73,6 +73,26 @@
                       <label>Tutor online</label>
                     </div>
                     
+                    <!--
+                    <div class="linha t1">
+                      <label>cidade</label>
+                      <select name="cidade" id="cidade">
+                        <option value="">---</option>
+                        <option value="Araçatuba">Araçatuba</option>
+                        <option value="Bauru">Bauru</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="Franca">Franca</option>
+                        <option value="Presidente Prudente">Presidente Prudente</option>
+                        <option value="Santos">Santos</option>
+                        <option value="São José do Rio Preto">São José do Rio Preto</option>
+                        <option value="São José dos Campos">São José dos Campos</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                      </select>
+                    </div>
+                    -->
+                    
+                    
                     <span class="linhaFundo"></span> 
                     
                     
@@ -183,28 +203,9 @@
                     </div>
                     
                     <div class="linha t1">
-                      <label>cidade</label>
+                      <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" />
                     </div>
-                    
-                    <!--
-                    <div class="linha t1">
-                      <label>cidade</label>
-                      <select name="cidade" id="cidade">
-                        <option value="">---</option>
-                        <option value="Araçatuba">Araçatuba</option>
-                        <option value="Bauru">Bauru</option>
-                        <option value="Campinas">Campinas</option>
-                        <option value="Franca">Franca</option>
-                        <option value="Presidente Prudente">Presidente Prudente</option>
-                        <option value="Santos">Santos</option>
-                        <option value="São José do Rio Preto">São José do Rio Preto</option>
-                        <option value="São José dos Campos">São José dos Campos</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Sorocaba">Sorocaba</option>
-                      </select>
-                    </div>
-                    -->
                     
                     <div class="linha t2">
                       <label>Estado</label>
