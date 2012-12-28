@@ -543,7 +543,7 @@ class _assetActions extends sfActions
 	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
 			}
     }
-    elseif($this->site->getSlug() == "cocorico") {
+    elseif($this->site->getSlug() == "cocorico2") {
       $this->setLayout('cocorico');
       
       if($this->section->slug == "joguinhos") {
