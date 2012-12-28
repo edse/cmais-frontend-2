@@ -43,7 +43,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!--/RANKING -->
     </div>
     <?php endif; ?>
-    <?php if($assets[1]): ?>
+    <?php if(isset($assets[1])): ?>
       <?php $related = $assets[1]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
       <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="<?php echo $related[1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
@@ -53,7 +53,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!--/RANKING -->
     </div>
     <?php endif; ?>
-    <?php if($assets[2]): ?>
+    <?php if(isset($assets[2])): ?>
       <?php $related = $assets[2]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
       <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="<?php echo $related[2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
