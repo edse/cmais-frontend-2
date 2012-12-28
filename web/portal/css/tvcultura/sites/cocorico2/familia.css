@@ -30,7 +30,7 @@
 .destaques .btn, .destaques-small a, .tit-pagina, .tit-pagina:hover { background:#c6e1e4; color:#6b757d; font-weight:bold; font-size:20px; }
 
 /* natv*/
-.conteudo .logos { margin-left:24px; }
+.conteudo .logos { margin-left:24px; float:right; }
 .logos a  { position:relative; background:#e9f3f4; display: block; float:left; min-width:140px; border:2px solid #fff; text-align:center; padding:10px 0;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px;}
 .logos a:hover { background:#fff; }
 .logos .cultura { margin-right:9px; }
@@ -154,4 +154,8 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /* nas lojas interna */
 
 /* /nas lojas */
+
+/* ie */
+.conteudo .logos { margin-left:20px\9; } 
+/*/ie*/
 

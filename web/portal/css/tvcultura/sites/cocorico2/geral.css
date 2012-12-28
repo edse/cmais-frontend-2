@@ -262,7 +262,17 @@ input.search-query,
 
 /* IE8*/
 .menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
-.menu .navbar .nav > li a { margin-left:-20px\0; padding-left:25px\0; }
+.menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
 .menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
-.menu .navbar .nav > li .icon { margin:1px\0; }
+.menu .navbar .nav > li .icon { margin:1px\9; }
+.menu .navbar .nav > li.personagens { margin-right:5px\9; }
+.menu .navbar .nav,
+.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container { width:1190px\9;  }
+.destaques-small li.span2 { margin:0 16px 10px 0\9; }
+.tit-especial { min-width:700px\9; }
+.destaques.span6 .bold { min-width: 300px\9; }
 /* /IE8*/
