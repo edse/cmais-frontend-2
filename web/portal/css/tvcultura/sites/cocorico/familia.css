@@ -1,0 +1,161 @@
+/* topo coco */
+.topo-coco { margin:10px 20px 0 20px; }
+.topo-coco h1 { min-width:300px; /*height:71px;*/ float:left; margin:5px 20px 0 0; }
+.topo-coco .fb-like { clear:both; display: block; }
+.box-publicidade.span9 { max-width: 620px; height:90px; background:#c1c1c1; float:left; margin-left:0; }
+/* /topo coco*/
+
+/* menu familia */
+.topo-familia .navbar .nav > li.familia { margin-left:20px; margin-top:5px; }
+.topo-familia .navbar .nav > li { margin-top:5px; }
+
+.tooltip-inner { background:#747a3a; color:#fdf035; text-align:left; font-size: 13px; line-height:15px; }
+.tooltip.in,
+.tooltip { opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
+.tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
+.topo-familia .navbar .nav > li.personagens { margin-right:0; margin-left:0; height:50px;  }
+.topo-familia .navbar .nav { margin:0; }
+#menu-familia { background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 10px 0 -12px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
+#menu-familia li { margin:0; }
+#menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
+#menu-familia li a.active,
+#menu-familia li a:hover { color:#6a747d; }
+#menu-familia li .divider { color: #fff; padding: 0 10px; background:none; line-height:40px; width: auto; }
+/* /menu familia */
+
+.breadcrumb .divider,
+.breadcrumb .active,
+.breadcrumb li,
+.breadcrumb a { color:#76b0b7; }
+.destaques .btn, .destaques-small a, .tit-pagina, .tit-pagina:hover { background:#c6e1e4; color:#6b757d; font-weight:bold; font-size:20px; }
+
+/* natv*/
+.conteudo .logos { margin-left:24px; float:right; }
+.logos a  { position:relative; background:#e9f3f4; display: block; float:left; min-width:140px; border:2px solid #fff; text-align:center; padding:10px 0;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px;}
+.logos a:hover { background:#fff; }
+.logos .cultura { margin-right:9px; }
+.logos a span { width:26px; height:15px; background:url(/portal/images/capaPrograma/cocorico/detalhe-logo.png) no-repeat; display: block; position:absolute; bottom:-15px; left:57px;}
+.natv ul { margin-top:-15px; margin-left:20px; }
+.natv ul li { background:#e0eeef; overflow:hidden; margin:0 10px 10px 0; max-height:180px; overflow:hidden;  }
+.natv ul li a { margin-right:10px;   }
+.natv ul li bold,
+.natv ul li a,
+.natv ul li p { color:#6b757d; }
+.natv ul li p { overflow:hidden; }
+.natv ul li bold { text-transform:uppercase; font-weight:bold;display: block; margin-top:5px; }
+.natv ul li img { margin-right:20px; }
+.natv .hora { background: #e9f3f4;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px; margin:10px 0 10px 20px;  }
+.natv .hora span { background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; min-height:1px; margin:0; padding:0; display: block; }
+.natv .hora a { margin:20px 0; display:block; text-align:center; }
+/* /natv */
+
+/* nas lojas */
+.row-fluid.naslojas .span4 { margin-left:20px; }
+.naslojas .span8 { width: 61.812%; }
+.naslojas .span4 { background:#d3e7e8; color:#6a747d; border-radius:10px 10px 0 0;  -moz-border-radius: 10px 10px 0 0; -webkit-border-radius:10px 10px 0 0; }
+.naslojas .topo { position:relative; overflow:hidden; border:2px solid #fff; border-radius:8px 8px 0 0;  -moz-border-radius: 8px 8px 0 0; -webkit-border-radius:8px 8px 0 0; background:#e9f3f4; }
+.naslojas .topo h2 { font-size:20px; text-transform:uppercase; background:url(/portal/images/capaPrograma/cocorico/ico-lojas.png) no-repeat 10px 0; padding-left:40px; line-height:20px; }
+.naslojas  .divisao {    display: block;   height: 14px;    margin: 0 ;  background: url(/portal/images/capaPrograma/cocorico/familia-pattern.png) repeat-x;}
+.form-search { margin:10px; }
+input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-height: 20px; font-size:14px; }
+.form-search button:hover,
+.form-search button { background:none; padding:0; box-shadow:none; margin:0 0 0 8px;  }
+.form-search .icon-search { background:url(/portal/images/capaPrograma/cocorico/ico-busca.png) no-repeat; width: 21px; height:21px; margin:0; }
+.naslojas .detalhe {background:url(/portal/images/capaPrograma/cocorico/detalhe-form.png) no-repeat;display: block;    height: 15px;    margin-left: 46%;    margin-top: -2px;    position: relative;    width: 26px;    z-index: 10;}
+.filtro {background:#70aab1; margin:-22px 10px 10px 10px; overflow:hidden; padding:10px; }
+.filtro h2 { font-size:14px; color:#fff; text-transform:uppercase; line-height:16px; margin-top:20px; }
+.filtro ul { margin:0; }
+.filtro ul a { color:#fff; line-height: 16px; background:url(/portal/images/capaPrograma/cocorico/ico-lixeira-verde.png) no-repeat; padding-left:15px; }
+.filtro ul a:hover { text-decoration:none; }
+.filtro .btn { background:#e9f3f4; color:#70aab1; padding:0 10px; height:20px; line-height: 20px; float:right; }
+.form-filtro  { margin-bottom:0; }
+.form-filtro fieldset { padding:0 10px; margin-bottom:10px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x bottom; padding-bottom:10px;}
+.form-filtro fieldset .grupo {  overflow-x:hidden; overflow-y:auto; max-height:200px; }
+.form-filtro legend { color:#6b757d; font-size:14px; text-transform:uppercase; font-weight:bold; height:16px; line-height:16px; margin:0; border:none; margin-bottom:10px;   }
+.form-filtro .radio input { margin-right:8px; }
+.form-filtro .radio input:checked { font-weight:bold; }
+.form-filtro .fabricante { background:none; margin-bottom:0; }
+.form-filtro .radio{ padding-left:20px; }
+
+.form-filtro ::-webkit-scrollbar { height: 12px; width: 12px; background:#d3e7e8; }
+.form-filtro ::-webkit-scrollbar-thumb { background: #72aab0; -webkit-border-radius: 1ex;}
+.form-filtro ::-webkit-scrollbar-corner { background: #d3e7e8;}
+
+.produtos { background:url(/portal/images/capaPrograma/cocorico/bg-naslojas.png) repeat; padding:10px 0 0 10px; font-weight: bold; margin-bottom:10px;}
+.produtos h2 { margin:0; font-size:14px; line-height: 16px;  min-height: 16px !important; text-transform:uppercase; color:#6b757d; }
+.produtos .itens { float:right; background:none; width: 37.171%; }
+.produtos .itens .divider { color:#fff; float:left; }
+.produtos .itens { position:relative; }
+.produtos .itens p { min-height:16px; color:#70aab1; text-transform:uppercase; margin-bottom:0; margin-left:20px;  }
+.produtos .itens ul { position:absolute; right: 0; top:-40px; border:2px solid #fff; background:#e9f3f4;  }
+.produtos .itens li { color:#70aab1; text-align:center; padding:0 5px; cursor: pointer; background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; }
+.produtos .itens li.active { color:#6b757d; }
+
+.pagination .anterior:hover a, 
+.pagination .proximo:hover a, 
+.pagination .anterior a, 
+.pagination .proximo a {    background-image: url("/portal/images/capaPrograma/cocorico/seta-familia.png");}
+.pagination ul > li > a:hover, 
+.pagination ul > .active > a, 
+.pagination ul > .active > span { color: #70aab1;}
+
+.lista-produtos { margin-left:0; }
+.lista-produtos a { color:#6a747d; background:#e9f3f4; text-align: center; }
+.lista-produtos a:hover { text-decoration:none; }
+.lista-produtos li { margin-bottom:30px; }
+
+/* nas lojas interna */
+.voltar:hover,
+.voltar {    background: url("/portal/images/capaPrograma/cocorico/voltar-familia.png") no-repeat scroll 0 0 transparent;    color: #6b757d; }
+.divisao {    background: url("/portal/images/capaPrograma/cocorico/pontilhado-familia2.png") repeat-x center center;}
+
+.tit-pagina.interna { color:#fff; background:#70aab1; width:92%; margin:0 20px 20px;  }
+.conteudo .alerta { color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
+.conteudo .alerta span { width:23px; height:19px; background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 40px; }
+.conteudo h3 {font-weight:bold; text-transform: uppercase; font-size:14px; line-height: 18px; margin-bottom:0;}
+.conteudo ul { margin-left:0; }
+.receita ul a { color:#f2722f; font-weight:bold; text-decoration:underline; }
+.zoom ul.span12 { margin:10px 0; }
+.zoom ul li { margin-bottom:10px; }
+.conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
+#rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:42px; }
+#rede-face { margin-top:4px; }
+#rede-twitter { margin-top:6px; }
+#rede-google { margin-top:5px; margin-right:0; }
+#rede-pinterest { margin-top:6px; }
+.conteudo .span6 h3 { margin-bottom:5px; }
+#produto-grid a,
+#produto-grid {cursor:none;}
+#tooltip {position: absolute;  background:url(/portal/images/capaPrograma/cocorico/cursor.png) no-repeat;  width:130px;  height:50px;  font-size:0px!important;}
+.conteudo .site { background:#70aab1 url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 10px 2px; color:#e9f3f4; padding:0 10px 0 35px; margin-top: 20px; display: block; max-width: 115px; text-align:center; height:20px; line-height: 20px;  }
+.conteudo .site:hover { text-decoration:none; }
+
+.modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
+.modal { width:980px; margin:-200px 0 0 -490px; border:none; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position:absolute; }
+.modal,
+.modal-footer,
+.modal-header { background:#d3e7e8; }
+.modal-footer,
+.modal-header { border:none; box-shadow:none; }
+.modal-body,
+.modal-footer,
+.modal-header { padding:10px 10px 0 10px; }
+.modal-header { padding-bottom:30px; }
+.modal-footer { padding-bottom:10px; }
+.modal-header p,
+.modal-header #myModalLabel { color:#70aab1; font-size:20px; line-height: 22px; margin:0; font-weight: bold;}
+.modal-header p { font-size:14px; text-transform:uppercase; }
+.modal-body { max-height:565px; text-align:center; padding-top:0; }
+.modal ::-webkit-scrollbar { height: 12px; width: 12px; background:#d3e7e8; }
+.modal ::-webkit-scrollbar-thumb { background: #72aab0; -webkit-border-radius: 1ex;}
+.modal ::-webkit-scrollbar-corner { background: #d3e7e8;}
+.modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
+.modal ul li { margin-bottom:10px; }
+/* nas lojas interna */
+
+/* /nas lojas */
+
+/* ie */
+.conteudo .logos { margin-left:20px\9; } 
+/*/ie*/
+

@@ -1,0 +1,122 @@
+/* TVCOCORICO*/
+
+/* personagens*/
+.autografo p,
+#alfabeto ul > li > a:hover, 
+#alfabeto ul > .active > a, 
+#alfabeto ul > .active > span,
+.col-esq .tit-pagina h2 ,
+.breadcrumb .divider, 
+.breadcrumb .active, 
+.breadcrumb li, 
+.voltar:hover,
+.voltar,
+.breadcrumb a { color:#747a39;}
+.col-esq .tit-pagina.span12 { background:#bfd540; }
+.destaques .btn { background:#747a39; }
+.destaques .btn {  box-shadow:none; text-shadow:none; }
+#alfabeto,
+.conteudo a.span6 img,
+.frase,
+.col-esq .tit-pagina.span12 { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+.destaque-home { margin:10px 0 20px 0; float:left; }
+.voltar { background: url("/portal/images/capaPrograma/cocorico/voltar-verde.png") no-repeat scroll 0 0 transparent;}
+.voltar .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-verde.png) repeat-x center; }
+.destaque-home .span9 { border-none; }
+.box ul li { margin:0 0 9px 0; overflow: hidden; }
+.col-esq .destaque-home .box { margin-bottom:0; }
+.destaques.span6 iframe { clear:both; display:block; }
+.destaques:hover span,
+.destaques span {    background:url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat scroll -36px 0 transparent; width:36px; height:36px; bottom: 5px;    right: 0; left:auto; position:absolute;}
+.destaques.joguinho span { background-position:0 0; } 
+.autografo { background:#eaefb2;  }
+.autografo h2 { margin:10px; font-size:20px; line-height:22px; color:#747a39; padding-left:25px; text-transform:uppercase; background:url(/portal/images/capaPrograma/cocorico/ico-autografo.png) no-repeat; }
+.divisao { background: url("/portal/images/capaPrograma/cocorico/tvcoco-pattern.png") repeat-x scroll 0 0 transparent;    display: block;    height: 14px;    margin: 0;}
+.autografo p { margin:5px 10px; }
+
+.form-horizontal { margin-bottom:0;  }
+.form-horizontal option,
+.form-horizontal textarea,
+.form-horizontal input { color:#6a747d; font-size:14px; }
+.form-horizontal .g-autografo,
+.form-horizontal .g-nome { margin:10px; }
+.form-horizontal .nome { background: url("/portal/images/capaPrograma/cocorico/ico-form-personagem.png") no-repeat; width:20px; height:19px; text-indent:-9999px; padding:0; margin:0 10px 0 0; }
+.form-horizontal .controls { margin-left:0; }
+.form-horizontal .control-group select,
+.form-horizontal .btn,
+.form-horizontal .controls input { height:20px; line-height: 20px; padding:0 5px; }
+.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:0 0 0 10px; float: right; border:none;  }
+.form-horizontal .controls input { border:none; }
+.form .form-horizontal .controls input { width:223px; }
+.form-horizontal .capa-btn { margin-top:10px; }
+.form-horizontal .capa-btn span { background: url("/portal/images/capaPrograma/cocorico/borda-menu.png") no-repeat -50px 0;  height: 40px;    width: 9px; display: block; float: left; }
+.form-horizontal .capa-btn .last { background-position:-40px 0;}
+.form-horizontal .btn { background: url("/portal/images/capaPrograma/cocorico/bg-amarelo.jpg") repeat-x; color:#747a3a; padding:0 5px; text-transform:uppercase; min-height:40px; font-weight:bold; float:left;  width: 93%; font-size: 16px;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+/* /personagens*/
+
+/* convidados*/
+.destaques a,
+.convidados a,
+.tit-pagina { background:#1db186; }
+.frase span,
+.data,
+.conteudo h3,
+.paginacao a,
+.tvcocorico .breadcrumb .divider,
+.tvcocorico .breadcrumb .active,
+.tvcocorico .breadcrumb li,
+#alfabeto ul > li > a:hover,
+#alfabeto ul > .active > a, 
+#alfabeto ul > .active > span,
+#alfabeto .divider.last,
+.pagination ul > li > a:hover, 
+.pagination ul > .active > a, 
+.pagination ul > .active > span,
+.tvcocorico .breadcrumb a  { color:#1db186; }
+#alfabeto,
+.row-fluid { clear:both; }
+#alfabeto {  background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin:0 10px;}
+#alfabeto ul { margin:0 5px 0 20px; float:left }
+#alfabeto ul > li > a { color:#747b3a; width: 15px; text-align:center;}
+#alfabeto ul > li > .divider { color:#bfd540; padding:0 5px; }
+#alfabeto .divider.last { display:block; height:40px; line-height:40px; float:left; font-size:26px; margin-right:10px; }
+#alfabeto ul,
+#alfabeto ul > li,
+#alfabeto ul > li a,
+#alfabeto ul > li span,
+#alfabeto { min-height:40px; line-height:40px; }
+input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20px;    max-width: 120px;    padding: 0 10px;}
+.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 0 8px;    padding: 0;} 
+.form-search .icon-search {    background: url("/portal/images/capaPrograma/cocorico/ico-busca.png") no-repeat scroll 0 0 transparent;    height: 21px;    margin: 0;    width: 21px;}
+.pagination { margin:10px 0; }
+.pagination .anterior:hover a,
+.pagination .proximo:hover a,
+.pagination .anterior a,
+.pagination .proximo a { background-image:url(/portal/images/capaPrograma/cocorico/seta-tvcoco.png); }
+.destaques ul { margin:0; }
+.destaques ul li { margin-bottom:20px; }
+/* /convidados*/
+
+/* convidado*/
+.convidados {  background: url("/portal/images/capaPrograma/cocorico/pontilhado-verde2.png") repeat-x scroll 0 40px transparent;    bottom: 0;    height: 44px;    max-width: 980px;    position: relative; }
+.convidados a { display: block;  position: absolute;    right: 0; bottom:3px; color:#fff; margin-right:20px; padding:0 10px; }
+.paginacao { margin:0 20px 20px 20px; overflow:hidden; }
+.paginacao a { font-weight:bold; text-transform:uppercase; float:left; max-width:113px; max-height:40px; }
+.convidados a,
+.paginacao a:hover { text-decoration:none;}
+.paginacao a span { background:url("/portal/images/capaPrograma/cocorico/seta-tvcoco.png") no-repeat; width:17px; height:31px; display:block; float:left; margin:5px 10px 0 0; }
+.paginacao .proximo, 
+.paginacao .proximo span { float:right; }
+.paginacao .proximo span { position:absolute; top:0; right:0; margin-right:0; background-position: -17px 0; }
+.paginacao .proximo { position:relative; }
+.conteudo { margin-top:0; }
+.conteudo h3 { font-size:30px; text-transform:uppercase; font-weight:normal; }
+.data { margin:5px 0; display:block; }
+.conteudo a.span6 { margin-left:0; display: block; }
+p.frase { color: #6B757D; font-weight: bold; text-align: center; text-transform: uppercase; padding:10px 20px 10px 20px; background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin-bottom: 20px; }
+p.frase span { background:url("/portal/images/capaPrograma/cocorico/aspas.png") no-repeat; display:block; width:25px; height:18px; float:left; margin:-10px 0 0 -20px;}
+p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 0 0; }
+.conteudo .tit { text-transform:uppercase; font-weight:bold; margin-bottom:5px; }
+/* /convidado*/
+.form-horizontal .g-autografo a { display:block; }
+
