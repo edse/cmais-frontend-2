@@ -120,11 +120,3 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /convidado*/
 .form-horizontal .g-autografo a { display:block; }
 
-/* IE8*/
-.container, 
-.navbar-static-top .container, 
-.navbar-fixed-top .container, 
-.navbar-fixed-bottom .container { width:1190px\0; }
-/* IE8*/
-
-

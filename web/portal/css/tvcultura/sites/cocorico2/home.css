@@ -14,7 +14,7 @@
 .destaques span { background-position:-36px 0; bottom:5px; right:0; }
 
 .destaques img.span12 { border:none; margin:0; clear:both; }
-.destaques bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block;}
+.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block; color:#fff; font-weight: normal;}
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */

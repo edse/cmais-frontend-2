@@ -130,3 +130,9 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* personagens */
 
 /* /BRINCADEIRAS */
+
+/* ie*/
+.especial .span8 { padding-right:0\9; float:left\9; }
+.especial .span6 { margin-left:10px\9; }
+.conteudo .destaque-especial .span3 { margin:0 10px 10px 0\9; }
+/* /ie*/

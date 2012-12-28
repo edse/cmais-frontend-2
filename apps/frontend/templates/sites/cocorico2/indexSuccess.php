@@ -144,9 +144,9 @@
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
         <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
-          <bold>
+          <p class="bold">
             <?php echo $displays['destaque-2'][0]->getTitle() ?>
-          </bold>
+          </p>
           <?php
             $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
             if ($display_img_src == '') {
@@ -164,9 +164,9 @@
         <?php if(isset($displays['destaque-3'])):?>
           <?php if(count($displays['destaque-3']) > 0): ?>
         <a class="box destaques span6" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-3'][0]->getTitle() ?>">
-          <bold>
+          <p class="bold">
             <?php echo $displays['destaque-3'][0]->getTitle() ?>
-          </bold>
+          </p>
           <?php
             $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
             if ($display_img_src == '') {
