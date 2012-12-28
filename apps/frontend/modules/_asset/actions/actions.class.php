@@ -547,6 +547,7 @@ class _assetActions extends sfActions
       $this->setLayout('cocorico');
       
       if($this->section->slug == "joguinhos") {
+        die("1");
         if ($debug) print "<br>cocorico-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho');
       }
