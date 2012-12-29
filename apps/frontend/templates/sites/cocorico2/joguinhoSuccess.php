@@ -52,19 +52,35 @@
     </div>  
   </div>
   <!--/row-->
+  
+  <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = joguinhos')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id desc')
+      ->limit(6)
+      ->execute();
+  ?>
+  <?php if (count($assets) > 0): ?>
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit"><span class="mais"></span><a href="/cocorico/joguinhos">Joguinhos</a><span></span></div>
     <ul class="destaques-small">
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- /row-->
+  <?php endif; ?>
   
   <div class="row-fluid  border-top"></div>
   <!-- rodape-->
