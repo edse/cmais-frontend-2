@@ -84,7 +84,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   </div>
   <!-- /row-->
   <?php else: ?>
-    <p>Nenhum joguinho encontrado.</p>
+    <p>Nenhuma receitinha encontrada.</p>
   <?php endif; ?>
   
   <?php /*
