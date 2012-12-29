@@ -59,7 +59,7 @@
       ->from('Asset a, SectionAsset sa, Section s')
       ->where('a.id = sa.asset_id')
       ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = joguinhos')
+      ->andWhere('s.slug = "joguinhos"')
       ->andWhere('a.site_id = ?', (int)$site->id)
       ->andWhere('a.asset_type_id = 1')
       ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
