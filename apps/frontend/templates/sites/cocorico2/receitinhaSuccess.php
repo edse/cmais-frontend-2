@@ -1,3 +1,5 @@
+<?php use_helper('I18N', 'Date') ?>
+
 <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
