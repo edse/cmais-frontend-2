@@ -98,3 +98,31 @@
   <!-- /rodape-->
 </div>
 <!-- /container-->
+
+<script>
+function vote(id){
+  $.ajax({
+    type: "GET",
+    dataType: "text",
+    data: "asset_id="+id,
+    url: "/ajax/ranking",
+    beforeSend: function(){
+      $('#btn_1').hide();
+      $('#btn_2').show();
+      $('#v_load').show();
+    },
+    success: function(data){
+      if(data == 1){
+        alert('Voto realizado com sucesso!');
+        $('#btn_1').hide();
+        $('#btn_2').show();
+      }else{
+        alert('Erro!');
+        $('#btn_1').show();
+        $('#btn_2').hide();
+      }
+      $('#v_load').hide();
+    }
+  });
+}
+</script>
