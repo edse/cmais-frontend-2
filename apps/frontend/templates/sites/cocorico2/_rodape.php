@@ -1,3 +1,4 @@
+
 <div class="row-fluid rodape" >
     <h3>2012 &copy; TV Cultura - Fundação Padre Anchieta</h3>
     <div class="span2">
@@ -57,3 +58,4 @@
       </ul></div>
     
   </div>
+  

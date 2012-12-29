@@ -245,9 +245,7 @@
   
   <!-- /row-->
   <div class="row-fluid  border-top"></div>
-  <div class="row-fluid rodape" >
-   <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-  </div>
+  <?php include_partial_from_folder('sites/cocorico2', 'global/rodape') ?>
   <!--row-->
 </div>
 <!-- /container-->
