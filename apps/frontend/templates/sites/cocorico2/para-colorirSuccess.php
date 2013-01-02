@@ -89,8 +89,8 @@
     <ul class="destaques-small">
         <?php
         echo $displays["destaques"][0]->getTitle();
-        $imgs = $displays["destaques"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); 
-        echo "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg"
+        $img = $displays["destaques"][0]->Asset->AssetImage->file.".jpg"; 
+        echo "http://midia.cmais.com.br/assets/image/original/".$img;
         ?>
             <li class="span2">
               <a href="#" title="">
