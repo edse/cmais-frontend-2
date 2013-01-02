@@ -19,7 +19,7 @@
       </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-          <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
       </div>
     </div>
   </div>
@@ -51,7 +51,35 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
+  <?php
+  if(!$section){
+    if(count($assets)<=0){
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->Where('sa.section_id = ?', $section->id)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }
   
+  if(!isset($asset))
+    $asset = $assets[0];
+  
+  echo "Título:".$asset->getTitle() . "<br/>";
+  echo "Descricao:".$asset->getDescription() . "<br/>";
+  
+  $preview = $asset->retriveRelatedAssetsByRelationType('Preview');
+  echo "preview:".$preview[0]->retriveImageUrlByImageUsage('image-6-b') . "<br/>";
+  
+  $download = $asset->retriveRelatedAssetsByRelationType('Download');
+  if(count($download) > 0)
+    echo "Pra Printa:".$download[0]->AssetImage->getOriginalFile() . "<br/>";
+  
+
+  
+  ?>
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis dolor eget orci laoreet porta. In et gravida purus. Aliquam erat volutpat. Vivamus quis elit odio, in luctus diam. Donec eu purus vitae dolor egestas rhoncus sed id lorem. Vivamus id quam arcu. Phasellus ac dolor non odio metus.</p>
