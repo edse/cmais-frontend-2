@@ -38,13 +38,27 @@
   <?php
   // section assets
   if(!$section){
-   $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->Where('sa.section_id = ?', $section->id)
-      ->andWhere('sa.asset_id = a.id')
-      ->orderBy('a.id desc')
-      ->execute();
+    if(count($assets)<=0){
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->whereIn('sa.section_id', 2114)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }else{
+    if(isset($pager))
+      $assets = $pager->getResults();
+    else{
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->Where('sa.section_id = ?', $section->id)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
   }
   if(!isset($asset)){
     $asset = $assets[0];
@@ -95,9 +109,10 @@
           <?php foreach($displays["destaques"] as $d):?>
             
             <li class="span2">
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle();?>">
+              <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
+                <?php echo $d->retriveUrl() ?>
               </a>
             </li>
           <?php endforeach; ?>
