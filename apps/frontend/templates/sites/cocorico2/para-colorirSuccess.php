@@ -64,7 +64,7 @@
   echo "Título:".$asset->getTitle() . "<br/>";
   echo "Descricao:".$asset->getDescription() . "<br/>";
   
-  $img = $asset->Asset->retriveRelatedAssetsByAssetTypeId(2);
+  $img = $asset->retriveRelatedAssetsByAssetTypeId(2);
   echo "preview:".$img[0]->AssetImage->file.".jpg". "<br/>";
   
   
