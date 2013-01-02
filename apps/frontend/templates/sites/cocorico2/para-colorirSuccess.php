@@ -36,13 +36,30 @@
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   <?php
-  $assets = Doctrine_Query::create()
+  // section assets
+  if(!$section){
+    if(count($assets)<=0){
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->whereIn('sa.section_id', 2114)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }else{
+    if(isset($pager))
+      $assets = $pager->getResults();
+    else{
+      $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
         ->Where('sa.section_id = ?', $section->id)
         ->andWhere('sa.asset_id = a.id')
         ->orderBy('a.id desc')
         ->execute();
+    }
+  }
   if(!isset($asset)){
     $asset = $assets[0];
   }    
