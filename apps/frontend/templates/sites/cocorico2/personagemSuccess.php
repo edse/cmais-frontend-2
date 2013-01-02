@@ -69,7 +69,7 @@
         <?php endif; ?>
         <?php if(isset($displays["conteudos"][1])): ?>
           <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
-        <a class="box destaques span6" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
+        <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
           </p>
@@ -92,16 +92,14 @@
           <label class="control-label nome" for="nome"></label>
           <div class="controls">
             <input type="text" id="nome" placeholder="Seu nome">
-            <a href="#"><img src="/portal/images/capaPrograma/cocorico/img-autografo.jpg" /></a>
           </div>
         </div>
         <div class="control-group g-autografo">
           <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
-            <button type="submit" class="btn">
-              enviar
-            </button><span class="last"></span>
+            <a class="btn" href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" target="_blank">enviar</a>
+            <span class="last"></span>
           </div>
         </div>
       </form>
