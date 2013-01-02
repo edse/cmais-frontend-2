@@ -43,8 +43,9 @@
         ->andWhere('sa.asset_id = a.id')
         ->orderBy('a.id desc')
         ->execute();
-  if(!isset($asset))
-    $asset = $assets[0];    
+  if(!isset($asset)){
+    $asset = $assets[0];
+  }    
   //echo "Título:".$asset->getTitle() . "<br/>";
   //echo "Descricao:".$asset->getDescription() . "<br/>";
   echo "img1:".$asset->AssetImage->file;
@@ -52,7 +53,7 @@
   ?> 
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php $asset->getTitle(); ?></h2>
+    <h2><?php echo $asset->getTitle(); ?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
