@@ -1044,7 +1044,7 @@ class _sectionActions extends sfActions
       $sectionSlug = 'list';
     elseif(in_array($sectionSlug, array('sobre','entrevistadores','entrevistados')))
       $sectionSlug = 'asset';
-    elseif(in_array($sectionSlug, array('equipe','apresentadores','personagens')))
+    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2')) 
       $sectionSlug = 'team';
     elseif(in_array($sectionSlug, array('fotos')))
       $sectionSlug = 'imagens';
