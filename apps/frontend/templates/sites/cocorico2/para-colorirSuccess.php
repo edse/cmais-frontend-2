@@ -87,17 +87,22 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-        <?php
-        echo $displays["destaques"][0]->getTitle();
-        $img = $displays["destaques"][0]->Asset->AssetImage->file.".jpg"; 
-        echo "http://midia.cmais.com.br/assets/image/original/".$img;
-        ?>
+      <?php
+      if(isset($displays["destaques"])):
+        if($displays["destaques"]>0):
+          foreach($displays["destaques"] as $k=>$d):      
+      ?>
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />
-                Nome do Joguinho
+                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$d[$k]->Asset->AssetImage->file.".jpg";?>" alt="<?php $d->getTitle();?>" />
+                <?php $d[$k]->getTitle();?>
               </a>
             </li>
+      <?php
+          endforeach;
+        endif;
+      endif;
+      ?>    
 
     </ul>
   </div>
