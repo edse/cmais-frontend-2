@@ -89,13 +89,13 @@
     <ul class="destaques-small">
       <?php
       if(isset($displays["destaques"])):
-        if($displays["destaques"]>0):
+        if(count($displays["destaques"])>0):
           foreach($displays["destaques"] as $k=>$d):      
       ?>
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$d[$k]->Asset->AssetImage->file.".jpg";?>" alt="<?php $d->getTitle();?>" />
-                <?php $d[$k]->getTitle();?>
+                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$d[0]->Asset->AssetImage->file.".jpg";?>" alt="<?php $d->getTitle();?>" />
+                <?php $d[0]->getTitle();?>
               </a>
             </li>
       <?php
