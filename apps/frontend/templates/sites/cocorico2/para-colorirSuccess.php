@@ -90,11 +90,11 @@
       <?php if(isset($displays["destaques"])):?>
         <?php if(count($displays["destaques"])>0):?>
           <?php foreach($displays["destaques"] as $d):?>
-            <?php $d->getTitle();?>
+            
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/" alt="" />
-
+                <?php echo $d->getTitle();?>
               </a>
             </li>
           <?php endforeach; ?>
