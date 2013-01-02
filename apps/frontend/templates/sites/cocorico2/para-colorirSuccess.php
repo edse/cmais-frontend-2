@@ -48,7 +48,7 @@
   }    
   //echo "Título:".$asset->getTitle() . "<br/>";
   //echo "Descricao:".$asset->getDescription() . "<br/>";
-  echo "img1:".$asset->AssetImage->file;
+  //echo "img1:".$asset->AssetImage->file;
   
   ?> 
   <!-- titulo da pagina -->
@@ -70,10 +70,12 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file;?>" title="Imprimir"><img class="border-radius10"  src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="" /></a>
-    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file;?>" alt="imprimir">imprimir</a>
+    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" title="Imprimir">
+      <img class="border-radius10"  src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="" />
+    </a>
+    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="imprimir">imprimir</a>
     <div id="div1" style="display: none;page-break-after:always;">
-      <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file;?>" style="width:95%">
+      <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" style="width:95%">
     </div>
     <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
