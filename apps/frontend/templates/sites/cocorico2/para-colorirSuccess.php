@@ -66,7 +66,7 @@
   $download = $asset->retriveRelatedAssetsByRelationType('Download');
   echo "img1:".$download[0]->AssetImage->getOriginalFile()."<br/>";
   
-  echo "img1:".$asset->getOriginalFile();
+  //echo "img1:".$asset->getOriginalFile();
   
   
   
