@@ -37,7 +37,6 @@
   <!-- /btn voltar-->
   <?php
   // section assets
-  if(!$section){
     $assets = Doctrine_Query::create()
       ->select('a.*')
       ->from('Asset a, SectionAsset sa')
@@ -45,7 +44,7 @@
       ->andWhere('sa.asset_id = a.id')
       ->orderBy('a.id desc')
       ->execute();
-  }
+
   
   if(!isset($asset)){
     $asset = $assets[0];
