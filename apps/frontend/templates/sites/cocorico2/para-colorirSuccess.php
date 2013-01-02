@@ -93,7 +93,7 @@
             
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/" alt="" />
+                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
               </a>
             </li>
