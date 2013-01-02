@@ -35,8 +35,8 @@
        
       <?php
       
-        $section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'joguinhos');
-        $sections = $section->subsections();
+        $s = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'joguinhos');
+        $sections = $s->subsections();
       ?>
       <?php if(isset($sections)):?>
         <?php if(count($sections) > 0): ?>
