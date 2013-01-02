@@ -201,7 +201,75 @@
         <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
           <?php endif; ?>
         <?php endif; ?>
+        <!--ENQUETE-->
+        <?php
+        //pergunta bloco enquete - 1º destaque
+        $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
         
+        //doctrine para respostas
+        $respostas = Doctrine_Query::create()
+          ->select('aa.*')
+          ->from('AssetAnswer aa')
+          ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+          ->execute();
+          
+        //imagens respectivas das respostas
+        $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_0 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+        $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+    
+        ?>
+         <div class="enquete span12">
+          <h3>enquete do dia</h3>
+          <p><?php echo $q;?></p>
+          <!--Pergunta-->
+          <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" style="min-width:296px; ">
+            <?php 
+            $form = new BaseForm();
+            echo $form->renderHiddenFields();
+            ?>
+            <div class="versus"></div>
+            <?php for($i=0; $i<count($respostas); $i++): ?>
+            <div class="span6 <?php if($i>0)echo "last"?>">
+              <label class="radio" for="resposta<?php echo $i?>">
+                <input type="radio" name="opcao" id="resposta<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
+                <?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?>
+                <?php if($i==0){$img = $img_0;}else{$img = $img_1;}?>
+                <div class="capa-img"><img class="" src="<?php echo $img; ?>" alt="" /></div>
+              </label>
+              
+              
+            </div>
+            <?php endfor; ?>
+            <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+            <div class="votar span12">
+              <span></span>
+              <input id="votar-input" class="span11" type="submit" value="votar" />
+              <span class="last"></span>
+              
+            </div>
+          </form>
+          
+          <!--/Pergunta-->
+          <!--Resposta FORM INATIVA-->
+          <form class="navbar-form pull-left inativo span12" style="display: none;">
+            <div class="versus"></div>
+            <?php for($i=0; $i<count($respostas); $i++): ?>
+            <div class="span6 <?php if($i>0)echo "last"?>">
+              <label class="radio"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label>
+              <?php if($i==0){$img = $img_0;}else{$img = $img_1;}?>
+              <div class="capa-img"><img class="span12" src="<?php echo $img; ?>" alt="" /></div>
+              <p class="resposta-<?php echo $i?>">50%</p>
+            </div>
+            <?php endfor;?>
+            <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
+          </form>
+          <!--/Resposta-->
+        </div>
+        <!--/ENQUETE-->
+        <?php /*
+        <!-- enquete-->
         <div class="enquete span12">
           <h3>enquete do dia</h3>
           <p>Como você brinca quando esta chovendo?</p>
@@ -239,6 +307,8 @@
             <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
         </div>
+        <!-- enquete -->
+         */ ?>
       </div>
     </div>
   </div>
