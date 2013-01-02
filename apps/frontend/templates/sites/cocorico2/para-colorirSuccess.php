@@ -109,10 +109,9 @@
           <?php foreach($displays["destaques"] as $d):?>
             
             <li class="span2">
-              <a href="#" title="">
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle();?>">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
-                <?php echo $d->retriveUrl() ?>
               </a>
             </li>
           <?php endforeach; ?>
