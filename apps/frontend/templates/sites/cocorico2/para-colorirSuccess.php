@@ -63,7 +63,7 @@
     $asset = $assets[0];    
   echo "Título:".$asset->getTitle() . "<br/>";
   echo "Descricao:".$asset->getDescription() . "<br/>";
-  echo "img1:".$asset->AssetImage->getOriginalFile();
+  echo "img1:".$asset->AssetImage->file;
   
   //echo "img1:".$asset->getOriginalFile();
   
