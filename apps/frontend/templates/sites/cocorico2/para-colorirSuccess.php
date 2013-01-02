@@ -52,7 +52,15 @@
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
  <?php
-  
+  $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->Where('sa.section_id = ?', $section->id)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+  if(!isset($asset))
+    $asset = $assets[0];    
   echo "Título:".$asset->getTitle() . "<br/>";
   echo "Descricao:".$asset->getDescription() . "<br/>";
   
