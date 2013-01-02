@@ -45,7 +45,7 @@
       <div class="lista-personagens">
         <h3>turma</h3>
        	 <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
-        </div>
+      </div>
     </div>
   </div>
   <!-- /row-->
