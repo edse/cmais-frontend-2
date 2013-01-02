@@ -93,13 +93,11 @@
       ?>
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$d[0]->Asset->AssetImage->file.".jpg";?>" alt="<?php $d->getTitle();?>" />
-                <?php $d[0]->getTitle();?>
+                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/";?>" alt="<?php $d->getTitle();?>" />
+
               </a>
             </li>
-      <?php
-
-      ?>    
+   
 
     </ul>
   </div>
