@@ -87,7 +87,11 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-        <?php echo $displays["destaques"][0]->getTitle();?>
+        <?php
+        echo $displays["destaques"][0]->getTitle();
+        $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2); 
+        echo "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg"
+        ?>
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />
