@@ -88,9 +88,8 @@
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
       <?php
-      if(isset($displays["destaques"])):
-        if(count($displays["destaques"])>0):
-          foreach($displays["destaques"] as $k=>$d):      
+
+          echo count($displays["destaques"])     
       ?>
             <li class="span2">
               <a href="#" title="">
@@ -99,9 +98,7 @@
               </a>
             </li>
       <?php
-          endforeach;
-        endif;
-      endif;
+
       ?>    
 
     </ul>
