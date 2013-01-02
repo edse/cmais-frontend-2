@@ -13,18 +13,18 @@
 <?php
 $home = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'home');
 $bloco = $home->retriveBlockBySlug('destaque-topo');
-$displays['destaque-topo'] = $bloco->retriveDisplays('destaque-topo');
+$destaque_topo = $bloco->retriveDisplays('destaque-topo');
 ?>
 
   <!-- row-->
   <div class="row-fluid">
-     <?php if(isset($displays['destaque-topo'])): ?>
-      <?php if(count($displays['destaque-topo']) > 0): ?>
+     <?php if(isset($destaque_topo)): ?>
+      <?php if(count($destaque_topo) > 0): ?>
     <div class="span12">
       <div id="myCarousel" class="carousel slide span12">
         <!-- Carousel items -->
         <div class="carousel-inner"> 
-          <?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
+          <?php foreach($destaque_topo as $k=>$d): ?>  
           <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
             <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
           </div>
