@@ -63,9 +63,10 @@
     $asset = $assets[0];    
   echo "Título:".$asset->getTitle() . "<br/>";
   echo "Descricao:".$asset->getDescription() . "<br/>";
+  $download = $asset->retriveRelatedAssetsByRelationType('Download');
+  echo "img1:".$download[0]->AssetImage->getOriginalFile()."<br/>";
   
-  $img = $asset->retriveRelatedAssetsByAssetTypeId(2);
-  echo "preview:".$img[0]->AssetImage->file.".jpg". "<br/>";
+  echo "img1:".$asset->getOriginalFile();
   
   
   
