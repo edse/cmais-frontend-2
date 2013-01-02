@@ -268,47 +268,6 @@
           <!--/Resposta-->
         </div>
         <!--/ENQUETE-->
-        <?php /*
-        <!-- enquete-->
-        <div class="enquete span12">
-          <h3>enquete do dia</h3>
-          <p>Como você brinca quando esta chovendo?</p>
-          <form class="navbar-form pull-left span12">
-            <div class="versus"></div>
-            <div class="span6">
-              <label class="radio">
-                <input type="radio" class="regular-radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                no videogame
-              </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-            </div>
-            <!-- versus -->
-            <div class="span6 last">
-              <label class="radio">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-              no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-            </div>
-            <div class="votar span12"><span></span><a href="#" class="span11">votar</a><span class="last"></span></div>
-          </form>
-          <form class="navbar-form pull-left inativo" >
-            <div class="versus"></div>
-            <div class="span6">
-              <label class="radio">no videogame</label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-              <p>50%</p>
-            </div>
-            <!-- versus -->
-            <div class="span6 last">
-              <label class="radio">no computador </label>
-              <img class="span12" src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="" />
-              <p>50%</p>
-            </div>
-            <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
-          </form>
-        </div>
-        <!-- enquete -->
-         */ ?>
       </div>
     </div>
   </div>
