@@ -10,6 +10,12 @@
 <!-- container-->
 <div class="container tudo" id="lista">
 
+<?php
+$home = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'home');
+$bloco = $home->retriveBlockBySlug('destaque-topo');
+$displays['destaque-topo'] = $bloco->retriveDisplays('destaque-topo');
+?>
+
   <!-- row-->
   <div class="row-fluid">
      <?php if(isset($displays['destaque-topo'])): ?>
