@@ -47,6 +47,7 @@
                 <?php
                   $block = $s->retriveBlockBySlug('icone');
                   $icone = $block->retriveDisplays();
+                  echo ">>>".count($icone);
                   if(count($icone) > 0): ?>
                     <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><img src="<?php echo $icone[0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $s->getTitle() ?>" /></a></li>
                   <?php endif; ?>
