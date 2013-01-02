@@ -990,7 +990,7 @@ class _sectionActions extends sfActions
         $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
       $this->assetsQuery->orderBy('sa.display_order');
       $test = $this->assetsQuery->execute();
-    }
+    }    
 
       // program
       $this->program = $this->site->Program;
@@ -1056,6 +1056,13 @@ class _sectionActions extends sfActions
       $sectionSlug = 'programas-de-a-z';
     #elseif(in_array($sectionSlug, array('programacao')))
     #  $sectionSlug = 'grade';
+
+
+    if($this->site->slug == 'cocorico' || $this->site->slug == 'cocorico2'){
+      if($this->section->Parent->getSlug() == "personagens"){
+        $sectionSlug = "personagem";
+      }
+    }
 
     if($sectionSlug == 'contate-o-nucleo')
       $sectionSlug = 'contact';
