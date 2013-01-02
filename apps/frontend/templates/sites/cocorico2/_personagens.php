@@ -34,9 +34,8 @@
        */?>
        
       <?php
-      
-        $s = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'joguinhos');
-        $sections = $s->subsections();
+        $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'joguinhos');
+        $sections = $ss->subsections();
       ?>
       <?php if(isset($sections)):?>
         <?php if(count($sections) > 0): ?>
@@ -47,7 +46,7 @@
                 <?php
                   $block = $s->retriveBlockBySlug('icone');
                   $icone = $block->retriveDisplays();
-                  echo ">>>".count($icone);
+                  echo "----- ".count($icone);
                   if(count($icone) > 0): ?>
                     <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><img src="<?php echo $icone[0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $s->getTitle() ?>" /></a></li>
                   <?php endif; ?>
