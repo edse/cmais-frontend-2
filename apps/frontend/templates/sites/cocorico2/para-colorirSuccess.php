@@ -52,8 +52,7 @@
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
   <?php
-  if(!$section){
-    if(count($assets)<=0){
+
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -61,8 +60,7 @@
         ->andWhere('sa.asset_id = a.id')
         ->orderBy('a.id desc')
         ->execute();
-    }
-  }
+
   
   if(!isset($asset))
     $asset = $assets[0];
