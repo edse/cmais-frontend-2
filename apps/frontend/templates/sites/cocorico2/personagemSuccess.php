@@ -49,9 +49,9 @@
         <a href="#" class="span9"><img class="span12" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" /></a>
         <div class="box span3">
           <ul>
-            <li><a href="#" title="<?php echo $displays["imagens"][1]->getTitle() ?>"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></a></li>
-            <li><a href="#" title="<?php echo $displays["imagens"][2]->getTitle() ?>"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></a></li>
-            <li><a href="#" title="<?php echo $displays["imagens"][3]->getTitle() ?>"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></a></li>
+            <li><a href="#" title="<?php echo $displays["imagens"][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></a></li>
+            <li><a href="#" title="<?php echo $displays["imagens"][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></a></li>
+            <li><a href="#" title="<?php echo $displays["imagens"][3]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][3]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></a></li>
           </ul>
         </div>
         <p><?php echo html_entity_decode($displays["texto"][0]->Asset->AssetContent->render()) ?></p>
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="control-group g-autografo">
-          <a href="<?php echo $displays["autografo"][0]->retriveImageUrlByImageUsage('original') ?>" title="BAIXAR" target="_blank"><img src="<?php echo $displays["autografo"][0]->retriveImageUrlByImageUsage('original') ?>" alt="BAIXAR" /></a>
+          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension().?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
             <button type="submit" class="btn">
