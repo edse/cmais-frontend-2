@@ -88,12 +88,11 @@
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
       <?php
-
           echo count($displays["destaques"])     
       ?>
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="<?php echo "http://midia.cmais.com.br/assets/image/original/";?>" alt="<?php $d->getTitle();?>" />
+                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/" alt="" />
 
               </a>
             </li>
