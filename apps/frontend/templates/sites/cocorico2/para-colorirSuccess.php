@@ -87,17 +87,19 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-      <?php
-          echo count($displays["destaques"])     
-      ?>
+      <?php if(isset($displays["destaques"])):?>
+        <?php if(count($displays["destaques"])>0):?>
+          <?php foreach($displays["destaques"] as $d):?>
+            
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/" alt="" />
-
+                <?php echo $d->getTitle();?>
               </a>
             </li>
-   
-
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif; ?>  
     </ul>
   </div>
   <!-- /row-->
