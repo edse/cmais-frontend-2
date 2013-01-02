@@ -1,5 +1,4 @@
       <?php
-      /*
         $displays = array();
             
         $blocks = Doctrine_Query::create()
@@ -30,11 +29,10 @@
           </div>
         <?php endif;?>
       <?php endif; ?>
-       * 
-       */?>
        
       <?php
-        $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1149, 'joguinhos');
+      /*
+        $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'joguinhos');
         $sections = $ss->subsections();
       ?>
       <?php if(isset($sections)):?>
@@ -55,3 +53,5 @@
           </div>
         <?php endif;?>
       <?php endif; ?>
+       */?>
+       */
