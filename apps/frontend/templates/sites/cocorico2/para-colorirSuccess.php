@@ -51,29 +51,15 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-  <?php
-
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->Where('sa.section_id = ?', $section->id)
-        ->andWhere('sa.asset_id = a.id')
-        ->orderBy('a.id desc')
-        ->execute();
-
-  
-  if(!isset($asset))
-    $asset = $assets[0];
+ <?php
   
   echo "Título:".$asset->getTitle() . "<br/>";
   echo "Descricao:".$asset->getDescription() . "<br/>";
   
-  $preview = $asset->retriveRelatedAssetsByRelationType('Preview');
-  echo "preview:".$preview[0]->retriveImageUrlByImageUsage('image-6-b') . "<br/>";
+  $img = $asset->retriveRelatedAssetsByRelationType(2);
+  echo "preview:".$imgs[0]->AssetImage->file.".jpg". "<br/>";
   
-  $download = $asset->retriveRelatedAssetsByRelationType('Download');
-  if(count($download) > 0)
-    echo "Pra Printa:".$download[0]->AssetImage->getOriginalFile() . "<br/>";
+  
   
 
   
