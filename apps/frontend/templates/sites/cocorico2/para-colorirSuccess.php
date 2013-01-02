@@ -87,32 +87,25 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-      <?php if($assets): ?>
-        <?php if(count($assets) > 0): ?>
-          <?php foreach($assets as $k=>$d): ?>
+      <?php echo $displays["destaques"][0]->getTitle();?>
             <li class="span2">
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview'); ?>
-                <?php if(count($preview) > 0): ?>
-                  <img class="span12" src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-2-b') ?>" alt="<?php echo $d->getTitle() ?>" />
-                 <?php elseif($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                  <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-                <?php endif; ?>
-                <?php echo $d->getTitle() ?>
+              <a href="#" title="">
+                <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />
+                Nome do Joguinho
               </a>
             </li>
+            <?php 
+            /*
+            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+           */
+           ?>
            <?php endforeach; ?>
         <?php endif; ?>
       <?php endif; ?>
-      <?php 
-      /*
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-     */
-     ?>
     </ul>
   </div>
   <!-- /row-->
