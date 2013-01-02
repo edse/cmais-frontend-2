@@ -87,22 +87,14 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-      <?php echo $displays["destaques"][0]->getTitle();?>
+
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />
                 Nome do Joguinho
               </a>
             </li>
-            <?php 
-            /*
-            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-            <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-           */ 
-           ?>
+
     </ul>
   </div>
   <!-- /row-->
