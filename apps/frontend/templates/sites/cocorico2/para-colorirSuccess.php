@@ -90,11 +90,12 @@
       <?php if(isset($displays["destaques"])):?>
         <?php if(count($displays["destaques"])>0):?>
           <?php foreach($displays["destaques"] as $d):?>
-            <?php echo $d->retriveUrl() ?>
+            
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
+                <?php echo $d->retriveUrl() ?>
               </a>
             </li>
           <?php endforeach; ?>
