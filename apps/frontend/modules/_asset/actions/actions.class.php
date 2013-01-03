@@ -318,6 +318,13 @@ class _assetActions extends sfActions
                   $_REQUEST["escola"] = " ";
                 if($_REQUEST["compl"]=="")
                   $_REQUEST["compl"] = " ";
+                if($_REQUEST["licenciatura1"]=="")
+                  $_REQUEST["licenciatura1"] = " ";
+                if($_REQUEST["licenciatura2"]=="")
+                  $_REQUEST["licenciatura2"] = " ";
+                if($_REQUEST["licenciatura3"]=="")
+                  $_REQUEST["licenciatura3"] = " ";
+                
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
                 $csv .= "\r\n";
