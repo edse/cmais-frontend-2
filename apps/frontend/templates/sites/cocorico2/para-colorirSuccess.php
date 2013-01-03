@@ -42,7 +42,7 @@
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
-        ->whereIn('sa.section_id', array(94, 103, 106, 104, 105, 107, 127))
+        ->whereIn('sa.section_id', 2114)
         ->andWhere('sa.asset_id = a.id')
         ->orderBy('a.id desc')
         ->execute();
@@ -63,9 +63,6 @@
   if(!isset($asset))
     $asset = $assets[0];
   
-  echo "Título:".$asset->getTitle() . "<br/>";
-  echo "Descricao:".$asset->getDescription() . "<br/>";
-  echo "img1:".$asset->AssetImage->file;
   ?>   
   
   <!-- titulo da pagina -->
@@ -83,7 +80,14 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-
+  <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+  <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+  <?php if(count($preview) > 0 && count($download) > 0): ?>
+    <?php echo "P title:".$preview[0]->getTitle(); ?>
+    <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
+    <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
+    
+  <?php endif; ?>
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
@@ -112,7 +116,6 @@
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
-                <?php echo $d->retriveUrl() ?>
               </a>
             </li>
           <?php endforeach; ?>
