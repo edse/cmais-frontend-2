@@ -303,30 +303,94 @@ class _assetActions extends sfActions
 						  
               if($request->getParameter('cadastro-tutoria')) {
                 
-                if(!isset($_REQUEST["atividade_pretendida1"]))
-                  $_REQUEST["atividade_pretendida1"] = " - ";
-                if(!isset($_REQUEST["atividade_pretendida2"]))
-                  $_REQUEST["atividade_pretendida2"] = " - ";
-                if(!isset($_REQUEST["pcnp1"]))
-                  $_REQUEST["pcnp1"] = " - ";
-                if(!isset($_REQUEST["pcnp2"]))
-                  $_REQUEST["pcnp2"] = " - ";
-                if(!isset($_REQUEST["pcnp3"]))
-                  $_REQUEST["pcnp3"] = " - ";
-                if(!isset($_REQUEST["ensino"]))
-                  $_REQUEST["ensino"] = " - ";
-                if(!isset($_REQUEST["atividade"]))
-                  $_REQUEST["atividade"] = " - ";
-                if(!isset($_REQUEST["escola"]))
-                  $_REQUEST["escola"] = " - ";
-                if(!isset($_REQUEST["compl"]))
-                  $_REQUEST["compl"] = " - ";
-                if(!isset($_REQUEST["licenciatura1"]))
-                  $_REQUEST["licenciatura1"] = " - ";
-                if(!isset($_REQUEST["licenciatura2"]))
-                  $_REQUEST["licenciatura2"] = " - ";
-                if(!isset($_REQUEST["licenciatura3"]))
-                  $_REQUEST["licenciatura3"] = " - ";
+                $campos = null;
+                
+                if($_REQUEST["atividade_pretendida1"]!="")
+                  $campos["atividade_pretendida1"] = $_REQUEST["atividade_pretendida1"];
+                else 
+                  $campos["atividade_pretendida1"] = " - ";
+
+                if($_REQUEST["atividade_pretendida2"]!="")
+                  $campos["atividade_pretendida2"] = $_REQUEST["atividade_pretendida2"];
+                else 
+                  $campos["atividade_pretendida2"] = " - ";
+
+                $campos["nome"] = $_REQUEST["nome"];
+                $campos["cpf"] = $_REQUEST["cpf"];
+                $campos["email"] = $_REQUEST["email"];
+                $campos["rede"] = $_REQUEST["rede"];
+                
+                $campos["rede"] = $_REQUEST["rede"];
+
+                if($_REQUEST["escola"]!="")
+                  $campos["escola"] = $_REQUEST["escola"];
+                else 
+                  $campos["escola"] = " - ";
+
+                if($_REQUEST["atividade"]!="")
+                  $campos["atividade"] = $_REQUEST["atividade"];
+                else 
+                  $campos["atividade"] = " - ";
+                
+                $campos["pcnp"] = $_REQUEST["pcnp"];
+                
+                if($_REQUEST["pcnp1"]!="")
+                  $campos["pcnp1"] = $_REQUEST["pcnp1"];
+                else 
+                  $campos["pcnp1"] = " - ";
+                
+                if($_REQUEST["pcnp2"]!="")
+                  $campos["pcnp2"] = $_REQUEST["pcnp2"];
+                else 
+                  $campos["pcnp2"] = " - ";
+                
+                if($_REQUEST["pcnp3"]!="")
+                  $campos["pcnp3"] = $_REQUEST["pcnp3"];
+                else 
+                  $campos["pcnp3"] = " - ";
+
+                $campos["de"] = $_REQUEST["de"];
+
+                $campos["rua"] = $_REQUEST["rua"];
+                $campos["numero"] = $_REQUEST["numero"];
+
+                if($_REQUEST["compl"]!="")
+                  $campos["compl"] = $_REQUEST["compl"];
+                else 
+                  $campos["compl"] = " - ";
+
+                $campos["bairro"] = $_REQUEST["bairro"];
+                $campos["cep"] = $_REQUEST["cep"];
+                $campos["cidade"] = $_REQUEST["cidade"];
+                $campos["estado"] = $_REQUEST["estado"];
+                $campos["dddT"] = $_REQUEST["dddT"];
+                $campos["tel"] = $_REQUEST["tel"];
+                $campos["dddC"] = $_REQUEST["dddC"];
+                $campos["cel"] = $_REQUEST["cel"];
+
+                if($_REQUEST["licenciatura1"]!="")
+                  $campos["licenciatura1"] = $_REQUEST["licenciatura1"];
+                else 
+                  $campos["licenciatura1"] = " - ";
+
+                if($_REQUEST["licenciatura2"]!="")
+                  $campos["licenciatura2"] = $_REQUEST["licenciatura2"];
+                else 
+                  $campos["licenciatura2"] = " - ";
+
+                if($_REQUEST["licenciatura3"]!="")
+                  $campos["licenciatura3"] = $_REQUEST["licenciatura3"];
+                else 
+                  $campos["licenciatura3"] = " - ";
+                
+                $campos["certificado"] = $_REQUEST["certificado"];
+                
+                if($_REQUEST["ensino"]!="")
+                  $campos["ensino"] = $_REQUEST["ensino"];
+                else 
+                  $campos["ensino"] = " - ";
+                
+                $campos["certificado2"] = $_REQUEST["certificado2"];
 
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
@@ -334,7 +398,7 @@ class _assetActions extends sfActions
                 $fp = fopen($filename,'w+');
               }
 						  
-							while(list($campo, $valor) = each($_REQUEST)) {
+							while(list($campo, $valor) = each($campos)) {
 								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
 									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
                   $csv .= str_replace(',',' ',strip_tags($valor)) . ", ";
