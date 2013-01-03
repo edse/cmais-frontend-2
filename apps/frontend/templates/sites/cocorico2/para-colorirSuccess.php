@@ -36,24 +36,38 @@
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   <?php
-  $assets = Doctrine_Query::create()
+  // section assets
+  if(!$section){
+    if(count($assets)<=0){
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->whereIn('sa.section_id', 2114)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }else{
+    if(isset($pager))
+      $assets = $pager->getResults();
+    else{
+      $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
         ->Where('sa.section_id = ?', $section->id)
         ->andWhere('sa.asset_id = a.id')
         ->orderBy('a.id desc')
         ->execute();
-  if(!isset($asset)){
+    }
+  }
+  if(!isset($asset))
     $asset = $assets[0];
-  }    
-  //echo "Título:".$asset->getTitle() . "<br/>";
-  //echo "Descricao:".$asset->getDescription() . "<br/>";
-  //echo "img1:".$asset->AssetImage->file;
   
-  ?> 
+  ?>   
+  
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle(); ?></h2>
+    <h2>Título</h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -66,16 +80,22 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-
+  <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+  <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+  <?php if(count($preview) > 0 && count($download) > 0): ?>
+    <?php echo "P title:".$preview[0]->getTitle(); ?>
+    <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
+    <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
+  <?php endif; ?>
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12"><?php echo $asset->getDescription(); ?></p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" title="Imprimir">
-      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="" />
+    <p class="span12">Descrição</p>
+    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" title="Imprimir">
+      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/image-6-b/305540493098327627d91b979a23d9c5c0c9a7ea.jpg" alt="" />
     </a>
-    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="imprimir">imprimir</a>
+    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" alt="imprimir">imprimir</a>
     <div id="div1" style="display: none;page-break-after:always;">
-      <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" style="width:95%">
+      <img src="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" style="width:95%">
     </div>
     <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
@@ -95,7 +115,6 @@
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
                 <?php echo $d->getTitle();?>
-                <?php echo $d->retriveUrl() ?>
               </a>
             </li>
           <?php endforeach; ?>
