@@ -6,7 +6,7 @@ if($_REQUEST["u"]!="")
 
 $im = imagecreatefrompng($url);
 
-$textColor = imagecolorallocate($im, 0, 0, 0);
+//$textColor = imagecolorallocate($im, 0, 0, 0);
 
 $width = imagesx($im);
 $height = imagesy($im);

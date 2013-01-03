@@ -3,9 +3,8 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
+    $('.destaques-small li:nth-child(12)').css('margin-right', '0');    
   });
-
 </script>
 <!-- container-->
 <div class="container tudo">
@@ -98,7 +97,7 @@
           <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
-            <a class="btn" style="padding-top: 9px; width: 85%" href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" target="_blank">enviar</a>
+            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%" href="#">enviar</a>
             <span class="last"></span>
           </div>
         </div>
@@ -114,3 +113,11 @@
   
 </div>
 <!-- /container-->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#getimage").click(function() {
+      self.open('http://cmais.com.br/actions/cocorico/image.php?n=asdf&u=http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>');
+    });
+  });
+</script>
