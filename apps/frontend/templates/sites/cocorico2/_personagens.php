@@ -30,13 +30,14 @@
           </div>
         <?php endif;?>
       <?php endif; ?>
-       
-      <?php
       */
+      ?>
+
+      <?php
         $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
         $sections = $ss->subsections();
-        echo "---------".count($sections);
       ?>
+
       <?php if(isset($sections)):?>
         <?php if(count($sections) > 0): ?>
           <div class="lista-personagens">
@@ -46,7 +47,6 @@
                 <?php
                   $block = $s->retriveBlockBySlug('icone');
                   $icone = $block->retriveDisplays();
-                  echo "----- ".count($icone);
                   if(count($icone) > 0): ?>
                     <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><img src="<?php echo $icone[0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $s->getTitle() ?>" /></a></li>
                   <?php endif; ?>
