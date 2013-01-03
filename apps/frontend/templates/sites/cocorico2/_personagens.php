@@ -1,4 +1,5 @@
       <?php
+        /*
         $displays = array();
             
         $blocks = Doctrine_Query::create()
@@ -31,7 +32,7 @@
       <?php endif; ?>
        
       <?php
-      /*
+      */
         $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'joguinhos');
         $sections = $ss->subsections();
       ?>
@@ -53,5 +54,3 @@
           </div>
         <?php endif;?>
       <?php endif; ?>
-       */?>
-       */
