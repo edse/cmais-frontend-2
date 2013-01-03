@@ -303,10 +303,6 @@ class _assetActions extends sfActions
 						  
               if($request->getParameter('cadastro-tutoria')) {
                 
-                if($_REQUEST["edse"]){
-                  var_dump($_REQUEST);
-                }
-                
                 if(!isset($_REQUEST["atividade_pretendida1"]))
                   $_REQUEST["atividade_pretendida1"] = " - ";
                 if(!isset($_REQUEST["atividade_pretendida2"]))
@@ -331,11 +327,6 @@ class _assetActions extends sfActions
                   $_REQUEST["licenciatura2"] = " - ";
                 if(!isset($_REQUEST["licenciatura3"]))
                   $_REQUEST["licenciatura3"] = " - ";
-
-                if($_REQUEST["edse"]){
-                  echo "<br>\n\n";
-                  var_dump($_REQUEST);
-                }
 
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
