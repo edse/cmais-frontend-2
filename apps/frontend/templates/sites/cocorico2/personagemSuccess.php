@@ -9,17 +9,13 @@
 <!-- container-->
 <div class="container tudo">
 
- <!-- row-->
+  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <!-- MENU PRINCIPAL -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>
-      <!--/MENU PRINCIPAL -->
-      
-      <!-- PERSONAGENS -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site' => $site)) ?>
-      <!--/PERSONAGENS -->
-
+      <div class="navbar-inner">
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
+      </div>
+      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('site'=>$site)) ?>
     </div>
   </div>
   <!-- /row-->
