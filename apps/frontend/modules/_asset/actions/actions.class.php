@@ -302,6 +302,8 @@ class _assetActions extends sfActions
 						else {
 						  
               if($request->getParameter('cadastro-tutoria')) {
+                if($_REQUEST["atividade_pretendida1"]=="")
+                  $_REQUEST["atividade_pretendida1"] = " ";
                 if($_REQUEST["atividade_pretendida2"]=="")
                   $_REQUEST["atividade_pretendida2"] = " ";
                 if($_REQUEST["pcnp1"]=="")
