@@ -82,17 +82,16 @@
   <!-- titulo da pagina -->
   <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
   <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-  <?php if(count($preview) > 0 && count($download) > 0): ?>
+
     <?php echo "P title:".$preview[0]->getTitle(); ?>
     <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
     <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
-    
-  <?php endif; ?>
+
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12"><?php echo $asset->getDescription(); ?></p>
+    <p class="span12">Descrição</p>
     <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" title="Imprimir">
-      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="" />
+      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/image-6-b/305540493098327627d91b979a23d9c5c0c9a7ea.jpg" alt="" />
     </a>
     <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->file.".jpg";?>" alt="imprimir">imprimir</a>
     <div id="div1" style="display: none;page-break-after:always;">
