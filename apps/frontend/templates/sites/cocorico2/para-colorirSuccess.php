@@ -37,23 +37,37 @@
   <!-- /btn voltar-->
   <?php
   // section assets
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->Where('sa.section_id = ?', $section->id)
-      ->andWhere('sa.asset_id = a.id')
-      ->orderBy('a.id desc')
-      ->execute();
-
-  
-  if(!isset($asset)){
+  if(!$section){
+    if(count($assets)<=0){
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->whereIn('sa.section_id', array(94, 103, 106, 104, 105, 107, 127))
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }else{
+    if(isset($pager))
+      $assets = $pager->getResults();
+    else{
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->Where('sa.section_id = ?', $section->id)
+        ->andWhere('sa.asset_id = a.id')
+        ->orderBy('a.id desc')
+        ->execute();
+    }
+  }
+  if(!isset($asset))
     $asset = $assets[0];
-  }    
-  //echo "Título:".$asset->getTitle() . "<br/>";
-  //echo "Descricao:".$asset->getDescription() . "<br/>";
-  //echo "img1:".$asset->AssetImage->file;
   
-  ?> 
+  echo "Título:".$asset->getTitle() . "<br/>";
+  echo "Descricao:".$asset->getDescription() . "<br/>";
+  echo "img1:".$asset->AssetImage->file;
+  ?>   
+  
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2><?php echo $asset->getTitle(); ?></h2>
