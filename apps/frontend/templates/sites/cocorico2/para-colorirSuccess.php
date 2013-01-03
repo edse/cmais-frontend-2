@@ -67,7 +67,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2>Título</h2>
+    <h2><?php echo $asset->getTitle(); ?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -82,11 +82,11 @@
   <!-- titulo da pagina -->
   <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
   <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-
-
+  <?php if(count($preview) > 0 && count($download) > 0): ?>
+    <?php echo "P title:".$preview[0]->getTitle(); ?>
     <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
     <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
-
+  <?php endif; ?>
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12">Descrição</p>
