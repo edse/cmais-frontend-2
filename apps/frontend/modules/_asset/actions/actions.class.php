@@ -310,6 +310,12 @@ class _assetActions extends sfActions
                   $_REQUEST["pcnp2"] = " ";
                 if($_REQUEST["pcnp3"]=="")
                   $_REQUEST["pcnp3"] = " ";
+                if($_REQUEST["ensino"]=="")
+                  $_REQUEST["ensino"] = " ";
+                if($_REQUEST["atividade"]=="")
+                  $_REQUEST["atividade"] = " ";
+                if($_REQUEST["escola"]=="")
+                  $_REQUEST["escola"] = " ";
                 }
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
