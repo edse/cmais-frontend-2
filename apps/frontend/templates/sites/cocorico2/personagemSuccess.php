@@ -97,7 +97,7 @@
           <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
-            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%" href="#">enviar</a>
+            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">enviar</a>
             <span class="last"></span>
           </div>
         </div>
