@@ -42,7 +42,7 @@
       <div class="navbar-inner">
         <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
       </div>
-      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('site'=>$site)) ?>
     </div>
   </div>
   <!-- /row-->
