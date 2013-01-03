@@ -302,31 +302,41 @@ class _assetActions extends sfActions
 						else {
 						  
               if($request->getParameter('cadastro-tutoria')) {
-                if(!isset($_REQUEST["atividade_pretendida1"]))
-                  $_REQUEST["atividade_pretendida1"] = " ";
-                if(!isset($_REQUEST["atividade_pretendida2"]))
-                  $_REQUEST["atividade_pretendida2"] = " ";
-                if(!isset($_REQUEST["pcnp1"]))
-                  $_REQUEST["pcnp1"] = " ";
-                if(!isset($_REQUEST["pcnp2"]))
-                  $_REQUEST["pcnp2"] = " ";
-                if(!isset($_REQUEST["pcnp3"]))
-                  $_REQUEST["pcnp3"] = " ";
-                if(!isset($_REQUEST["ensino"]))
-                  $_REQUEST["ensino"] = " ";
-                if(!isset($_REQUEST["atividade"]))
-                  $_REQUEST["atividade"] = " ";
-                if(!isset($_REQUEST["escola"]))
-                  $_REQUEST["escola"] = " ";
-                if(!isset($_REQUEST["compl"]))
-                  $_REQUEST["compl"] = " ";
-                if(!isset($_REQUEST["licenciatura1"]))
-                  $_REQUEST["licenciatura1"] = " ";
-                if(!isset($_REQUEST["licenciatura2"]))
-                  $_REQUEST["licenciatura2"] = " ";
-                if(!isset($_REQUEST["licenciatura3"]))
-                  $_REQUEST["licenciatura3"] = " ";
                 
+                if($_REQUEST["edse"]){
+                  var_dump($_REQUEST);
+                }
+                
+                if(!isset($_REQUEST["atividade_pretendida1"]))
+                  $_REQUEST["atividade_pretendida1"] = " - ";
+                if(!isset($_REQUEST["atividade_pretendida2"]))
+                  $_REQUEST["atividade_pretendida2"] = " - ";
+                if(!isset($_REQUEST["pcnp1"]))
+                  $_REQUEST["pcnp1"] = " - ";
+                if(!isset($_REQUEST["pcnp2"]))
+                  $_REQUEST["pcnp2"] = " - ";
+                if(!isset($_REQUEST["pcnp3"]))
+                  $_REQUEST["pcnp3"] = " - ";
+                if(!isset($_REQUEST["ensino"]))
+                  $_REQUEST["ensino"] = " - ";
+                if(!isset($_REQUEST["atividade"]))
+                  $_REQUEST["atividade"] = " - ";
+                if(!isset($_REQUEST["escola"]))
+                  $_REQUEST["escola"] = " - ";
+                if(!isset($_REQUEST["compl"]))
+                  $_REQUEST["compl"] = " - ";
+                if(!isset($_REQUEST["licenciatura1"]))
+                  $_REQUEST["licenciatura1"] = " - ";
+                if(!isset($_REQUEST["licenciatura2"]))
+                  $_REQUEST["licenciatura2"] = " - ";
+                if(!isset($_REQUEST["licenciatura3"]))
+                  $_REQUEST["licenciatura3"] = " - ";
+
+                if($_REQUEST["edse"]){
+                  echo "<br>\n\n";
+                  var_dump($_REQUEST);
+                }
+
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
                 $csv .= "\r\n";
