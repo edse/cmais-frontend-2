@@ -1,6 +1,10 @@
 <?php
 // Load the image
-$im = imagecreatefrompng("http://midia.cmais.com.br/assets/image/original/a072380663cf70defa084420a6c1c5c8cf6fc091.png");
+$url = "http://midia.cmais.com.br/assets/image/original/a072380663cf70defa084420a6c1c5c8cf6fc091.png";
+if($_REQUEST["u"]!="")
+  $url = $_REQUEST["u"];
+
+$im = imagecreatefrompng($url);
 
 $textColor = imagecolorallocate($im, 0, 0, 0);
 
