@@ -83,7 +83,7 @@
   <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
   <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
 
-    <?php echo "P title:".$preview[0]->getTitle(); ?>
+
     <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
     <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
 
