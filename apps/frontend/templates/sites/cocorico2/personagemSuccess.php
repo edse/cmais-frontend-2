@@ -29,7 +29,7 @@
   <!-- /breadcrumb-->
 
   <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="../" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
 
   <!--row-->
