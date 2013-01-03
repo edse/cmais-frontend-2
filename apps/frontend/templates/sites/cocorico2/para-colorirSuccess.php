@@ -67,7 +67,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle(); ?></h2>
+    <h2>Título</h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
