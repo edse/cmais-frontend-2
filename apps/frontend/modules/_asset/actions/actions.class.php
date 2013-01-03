@@ -316,6 +316,8 @@ class _assetActions extends sfActions
                   $_REQUEST["atividade"] = " ";
                 if($_REQUEST["escola"]=="")
                   $_REQUEST["escola"] = " ";
+                if($_REQUEST["compl"]=="")
+                  $_REQUEST["compl"] = " ";
                 }
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
