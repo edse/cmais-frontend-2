@@ -302,11 +302,14 @@ class _assetActions extends sfActions
 						else {
 						  
               if($request->getParameter('cadastro-tutoria')) {
-                if($_REQUEST["atividade_pretendida2"]!=""){
-                  if($_REQUEST["atividade_pretendida1"]!="")
-                    $_REQUEST["atividade_pretendida1"] .= " e ".$_REQUEST["atividade_pretendida2"];
-                  else 
-                    $_REQUEST["atividade_pretendida1"] = $_REQUEST["atividade_pretendida2"];
+                if($_REQUEST["atividade_pretendida2"]=="")
+                  $_REQUEST["atividade_pretendida2"] = " ";
+                if($_REQUEST["pcnp1"]=="")
+                  $_REQUEST["pcnp1"] = " ";
+                if($_REQUEST["pcnp2"]=="")
+                  $_REQUEST["pcnp2"] = " ";
+                if($_REQUEST["pcnp3"]=="")
+                  $_REQUEST["pcnp3"] = " ";
                 }
                 $filename = "/var/frontend/web/tutores-2013/cadastro.csv";
                 $csv = @file_get_contents($filename);
@@ -315,7 +318,7 @@ class _assetActions extends sfActions
               }
 						  
 							while(list($campo, $valor) = each($_REQUEST)) {
-								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action', 'Atividade_pretendida2'))) {
+								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
 									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
                   $csv .= str_replace(',',' ',strip_tags($valor)) . ", ";
                 }
