@@ -6,7 +6,6 @@
     $('.destaques-small li:nth-child(12)').css('margin-right', '0');
   });
 </script>
-<<<<<<< HEAD
 <!-- analytics -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -21,9 +20,6 @@
   })();
 </script>
 <!-- /analytics -->
-=======
->>>>>>> 9dd81397e6ab958078cab11613a65dc5b07dfb66
-
 <!-- container-->
 <div class="container tudo">
  <!-- row-->
