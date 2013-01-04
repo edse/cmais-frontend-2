@@ -13,7 +13,7 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu', array('site'=>$site)) ?>
       </div>
       <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('site'=>$site)) ?>
     </div>
@@ -22,8 +22,8 @@
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/personagens">Personagens</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/personagens">Personagens</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->

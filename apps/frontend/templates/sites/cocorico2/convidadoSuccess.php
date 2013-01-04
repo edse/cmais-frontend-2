@@ -10,11 +10,11 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico2', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu', array('site'=>$site)) ?>
        </div>
       <div class="lista-personagens">
         <h3>turma</h3>
-        <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+        <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('site'=>$site)) ?>
       </div>
     </div>
   </div>
