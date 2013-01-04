@@ -133,8 +133,9 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 #radio .radio-cocorico{position:relative;}
 #radio #container.playlist{position: absolute; right: 20px; top: 20px;}
 #radio .playlist div.jp-playlist ul {height: 397px;overflow: auto}
+#radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat 0 bottom; width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
 #radio .conteudo-diverso{background-color: #f2722f;}
-#radio .conteudo-diverso p{color:#fdf035;}
+#radio .conteudo-diverso p{color:#fdf035; position: relative;}
 #radio .destaque-2{border-radius:9px; margin-top:30px;position:relative;}
 #radio .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 10px;text-align: center;color: #FDF035 !important;padding: 0;overflow: hidden; height: 19px;}
 #radio .destaque-2 p{position:relative; padding: 3px 10px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;text-align: center;}
