@@ -383,7 +383,7 @@
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
         <a href="/cocorico/clipes" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
+          <iframe width="300" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
         </a>
         <p>
           texto corrido
@@ -396,7 +396,7 @@
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
         <a href="/cocorico/clipes" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
+          <iframe width="300" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
         </a>
         <p>
           texto corrido
@@ -409,7 +409,7 @@
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
         <a href="/cocorico/clipes" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
+          <iframe width="300" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
         </a>
         <p>
           texto corrido
