@@ -18,10 +18,10 @@
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */
-.col-esq .destaque-home.span12 { margin-bottom: 20px; float: left; }
+.col-esq .destaque-home.span9 { margin-bottom: 20px; float: left; }
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
-.destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+.destaque-home .span12 {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
 .destaque-home .box .mais { margin-left:-30px; }
 
 .destaque-home.joguinhos .span9 { border:2px solid #1793ce; }

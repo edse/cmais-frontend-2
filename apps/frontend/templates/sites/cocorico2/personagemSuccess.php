@@ -3,24 +3,19 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
+    $('.destaques-small li:nth-child(12)').css('margin-right', '0');    
   });
-
 </script>
 <!-- container-->
 <div class="container tudo">
 
- <!-- row-->
+  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <!-- MENU PRINCIPAL -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>
-      <!--/MENU PRINCIPAL -->
-      
-      <!-- PERSONAGENS -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site' => $site)) ?>
-      <!--/PERSONAGENS -->
-
+      <div class="navbar-inner">
+        <?php include_partial_from_folder('sites/cocorico2', 'global/menu') ?>
+      </div>
+      <?php include_partial_from_folder('sites/cocorico2', 'global/personagens', array('site'=>$site)) ?>
     </div>
   </div>
   <!-- /row-->
@@ -34,7 +29,7 @@
   <!-- /breadcrumb-->
 
   <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="../personagens" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
 
   <!--row-->
@@ -46,12 +41,12 @@
       </div>
       <!-- titulo da pagina -->
       <div class="destaque-home">
-        <a href="#" class="span9"><img class="span12" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" /></a>
+        <img class="span9" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" />
         <div class="box span3">
           <ul>
-            <li><a href="#" title="<?php echo $displays["imagens"][1]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></a></li>
-            <li><a href="#" title="<?php echo $displays["imagens"][2]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></a></li>
-            <li><a href="#" title="<?php echo $displays["imagens"][3]->getTitle() ?>"><img class="span12" src="<?php echo $displays["imagens"][3]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></a></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][3]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></li>
           </ul>
         </div>
         <p><?php echo html_entity_decode($displays["texto"][0]->Asset->AssetContent->render()) ?></p>
@@ -98,7 +93,7 @@
           <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
-            <a class="btn" style="padding-top: 9px; width: 85%" href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" target="_blank">enviar</a>
+            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">enviar</a>
             <span class="last"></span>
           </div>
         </div>
@@ -114,3 +109,14 @@
   
 </div>
 <!-- /container-->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#getimage").click(function() {
+      if($('#nome').val())
+        self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>');
+      else
+        $('#nome').focus();
+    });
+  });
+</script>
