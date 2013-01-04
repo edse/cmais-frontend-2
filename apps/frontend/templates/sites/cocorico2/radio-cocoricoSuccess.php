@@ -410,7 +410,7 @@
   <!-- /row conteudo radio -->
   
   <!-- rodape-->
-    <?php include_partial_from_folder('sites/cocorico2', 'global/rodape') ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->

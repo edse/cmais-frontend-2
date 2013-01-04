@@ -1,13 +1,11 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
-
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
     $('.destaques-small li:nth-child(12)').css('margin-right', '0');
   });
 </script>
-
 
 <!-- container-->
 <div class="container tudo">
@@ -26,8 +24,8 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Nome do Joguinho</li>
   </ul>
   <!-- /breadcrumb-->
@@ -77,7 +75,7 @@
  
   
   <!-- rodape-->
-    <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->

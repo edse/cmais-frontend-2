@@ -1,6 +1,5 @@
 <?php
 $assets = $pager->getResults(); //depois tem de ordenar por ranking...
-
 ?>
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
@@ -18,13 +17,12 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!-- PERSONAGENS -->
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site' => $site)) ?>
       <!--/PERSONAGENS -->
-      
     </div>
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Joguinhos</li>
   </ul>
   <!-- /breadcrumb-->

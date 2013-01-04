@@ -21,13 +21,13 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico2">Home</a><span class="divider">&rsaquo;</span></li>
+    <li><a href="<?php echo $site->retriveUrl() ?>">Home</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Joguinhos</li>
   </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
-    <a href="/cocorico2/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
+    <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>
   <!--row-->
   <div class="row-fluid">
@@ -66,7 +66,7 @@
   <!-- /row-->
 
   <!-- rodape-->
-  	<?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  	<?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->

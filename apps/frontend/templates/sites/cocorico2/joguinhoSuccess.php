@@ -20,8 +20,8 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
@@ -103,7 +103,7 @@ function vote(id){
     },
     success: function(data){
       if(data == 1){
-        alert('Voto realizado com sucesso!');
+        //alert('Voto realizado com sucesso!');
         $('#btn_1').hide();
         $('#btn_2').show();
       }else{

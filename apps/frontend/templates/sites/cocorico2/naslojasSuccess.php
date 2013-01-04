@@ -23,27 +23,11 @@
   });
 </script>
 
-<!-- analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22770265-1']);
-  _gaq.push(['_setDomainName', 'cmais.com.br']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- analytics -->
-
-<!-- container-->
 <div class="container tudo">
   <!-- row-->
   <div class="row-fluid">
     <div class="topo-coco">
-      <h1 class="span3"><a href="/cocorico" title="Cocorico"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
+      <h1 class="span3"><a href="<?php echo $site->retriveUrl() ?>" title="Cocorico"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
       <!-- BOX PUBLICIDADE 2 -->
       <div class="box-publicidade span9">
         <!-- portal-cocorico -->
@@ -62,20 +46,20 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-          <li class="familia"><a  href="/cocorico/em-familia" title="Em família">Em família</a>
+          <li class="familia"><a  href="<?php echo $site->retriveUrl() ?>/em-familia" title="Em família">Em família</a>
             <ul class="nav" id="menu-familia">
               <li><a class="active" href="/cocorico/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
-              <li><a href="/cocorico/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
-              <li><a href="/cocorico/noteatro" title="No Teatro">no teatro</a><span class="divider">|</span></li>
-              <li><a href="/cocorico/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
-              <li><a href="/cocorico/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
-              <li><a href="/cocorico/agenda" title="Agenda">agenda</a></li>
+              <li><a href="<?php echo $site->retriveUrl() ?>/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
+              <li><a href="<?php echo $site->retriveUrl() ?>/noteatro" title="No Teatro">no teatro</a><span class="divider">|</span></li>
+              <li><a href="<?php echo $site->retriveUrl() ?>/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
+              <li><a href="<?php echo $site->retriveUrl() ?>/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
+              <li><a href="<?php echo $site->retriveUrl() ?>/agenda" title="Agenda">agenda</a></li>
             </ul>
           </li>
-          <li class="joguinhos"><a class="icon" href="/cocorico/joguinhos" title="Joguinhos"></a></li>
-          <li class="brincadeiras"><a class="icon"  href="/cocorico/brincadeiras" title="Brincadeiras"></a></li>
-          <li class="tvcoco"><a class="icon"  href="/cocorico/tvcocorico" title="TV Cocoricó"></a></li>
-          <li class="diario"><a class="icon"  href="/cocorico/diario-do-julio" title="Diário do Júlio"></a></li>
+          <li class="joguinhos"><a class="icon" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
+          <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/brincadeiras" title="Brincadeiras"></a></li>
+          <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a></li>
+          <li class="diario"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a></li>
           <li class="personagens"><a href="#" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
         </ul>
       </div>
@@ -86,8 +70,8 @@
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Nome do Joguinho</li>
   </ul>
   <!-- /breadcrumb-->
@@ -96,9 +80,9 @@
   <!--row-->
   <div class="row-fluid conteudo ">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna a libero aliquet imper diet at eget ante. Pellentesque accumsan lobortis tellus, tempor dapibus metus bibendum a. Pellent esque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis massa molestie felis varius rutrum. Pellentesque laoreet faucibus viverra. Duis faucibus varius blandit. Donec sit amet diam et dolor feugiat venenatis. Aliquam blandit elit sit amet lectus venenatis sit posueree senectus et netus.</p>
-    
   </div>
   <!--/row-->
+  
   <!--row-->
   <div class="row-fluid naslojas">
     <div class="span4">
@@ -322,16 +306,7 @@
   <div class="row-fluid  border-top"></div>
   
   <!-- rodape-->
-    <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
 </div>
 <!-- /container-->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=418273974898589";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>

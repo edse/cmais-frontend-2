@@ -1,8 +1,8 @@
       <?php
-        $currentAsset_likes = @file_get_contents('cocorico/ranking/'.$section->getSlug().'/'.$asset->getId());
-        $totalAssets_likes = @file_get_contents('cocorico/ranking/'.$section->getSlug().'/total');
+        $currentAsset_likes = @file_get_contents('/var/frontend/cocorico/ranking/'.$section->getSlug().'/'.$asset->getId());
+        $totalAssets_likes = @file_get_contents('/var/frontend/cocorico/ranking/'.$section->getSlug().'/total');
         $currentAsset_stars = 0;
-        
+
         if ($totalAssets_likes > 0)
           $like_fixed_value = $totalAssets_likes / 5;
         
