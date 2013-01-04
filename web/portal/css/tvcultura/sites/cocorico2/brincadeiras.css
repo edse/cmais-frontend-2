@@ -130,8 +130,8 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* personagens */
 
 /* radio */
-#radio .conteudo{position:relative;}
-#radio #container.playlist{position: absolute; right: 0;}
+#radio .radio-cocorico{position:relative;}
+#radio #container.playlist{position: absolute; right: 182px; top: 20px;}
 #radio .conteudo-diverso{background-color: #f2722f;}
 #radio .conteudo-diverso p{color:#fdf035;}
 #radio .destaque-2{border-radius:9px; margin-top:30px;position:relative;}
