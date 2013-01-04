@@ -1,4 +1,5 @@
       <?php
+        /*
         $displays = array();
             
         $blocks = Doctrine_Query::create()
@@ -25,6 +26,31 @@
               <li><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /></a></li>
                 <?php endif; ?>
              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endif;?>
+      <?php endif; ?>
+      */
+      ?>
+
+      <?php
+        $ss = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+        $sections = $ss->subsections();
+      ?>
+
+      <?php if(isset($sections)):?>
+        <?php if(count($sections) > 0): ?>
+          <div class="lista-personagens">
+            <h3>turma</h3>
+            <ul>
+              <?php foreach($sections as $s): ?>
+                <?php
+                  $block = $s->retriveBlockBySlug('icone');
+                  $icone = $block->retriveDisplays();
+                  if(count($icone) > 0): ?>
+                    <li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>"><img src="<?php echo $icone[0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $s->getTitle() ?>" /></a></li>
+                  <?php endif; ?>
+              <?php endforeach; ?>
             </ul>
           </div>
         <?php endif;?>
