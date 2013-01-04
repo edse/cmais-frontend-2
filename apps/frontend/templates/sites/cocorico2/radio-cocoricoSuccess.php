@@ -369,8 +369,8 @@
       <!-- clipe -->
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
-        <a href="#" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="Receitinha">
+        <a href="/cocorico/clipes" title="Nome do clipe">
+          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
         </a>
         <p>
           texto corrido
@@ -382,8 +382,8 @@
       <!-- clipe -->
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
-        <a href="#" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="Receitinha">
+        <a href="/cocorico/clipes" title="Nome do clipe">
+          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
         </a>
         <p>
           texto corrido
@@ -395,8 +395,8 @@
       <!-- clipe -->
       <div class="destaque-2 conteudo-diverso span4">
         <h3>clipe</h3>
-        <a href="#" title="Nome do clipe">
-          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="Receitinha">
+        <a href="/cocorico/clipes" title="Nome do clipe">
+          <img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="">
         </a>
         <p>
           texto corrido
