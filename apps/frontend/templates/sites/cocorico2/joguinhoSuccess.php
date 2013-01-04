@@ -8,7 +8,7 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <!-- MENU PRINCIPAL -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/MENU PRINCIPAL -->
       
       <!-- PERSONAGENS -->
