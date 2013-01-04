@@ -91,7 +91,7 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="/cocorico/joguinhos">Joguinhos</a><span></span></div>
+          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
@@ -120,7 +120,7 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="/cocorico/receitinhas">Receitinhas</a><span></span></div>
+          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-receitinhas'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
@@ -180,7 +180,7 @@
       </div>
     </div>
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico2/tvcocorico2">
+      <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico2">
         <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
@@ -235,8 +235,6 @@
                 <?php if($i==0){$img = $img_0;}else{$img = $img_1;}?>
                 <div class="capa-img"><img class="" src="<?php echo $img; ?>" alt="" /></div>
               </label>
-              
-              
             </div>
             <?php endfor; ?>
             <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
@@ -244,7 +242,6 @@
               <span></span>
               <input id="votar-input" class="span11" type="submit" value="votar" />
               <span class="last"></span>
-              
             </div>
           </form>
           
@@ -271,7 +268,7 @@
   
   <!-- /row-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico2', 'global/rodape') ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
   <!--row-->
 </div>
 <!-- /container-->
@@ -296,6 +293,7 @@ $(document).ready(function(){
       }
     });
 });
+
 //enviar voto
 function sendAnswer(){
   $.ajax({
@@ -312,7 +310,6 @@ function sendAnswer(){
       $("form.inativo").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        
         $('.resposta-'+i).html(val.votes);
         i++;
       });

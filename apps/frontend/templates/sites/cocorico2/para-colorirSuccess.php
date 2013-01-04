@@ -1,12 +1,12 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
-
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
     $('.destaques-small li:nth-child(12)').css('margin-right', '0');
   });
 </script>
+<<<<<<< HEAD
 <!-- analytics -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -21,6 +21,8 @@
   })();
 </script>
 <!-- /analytics -->
+=======
+>>>>>>> 9dd81397e6ab958078cab11613a65dc5b07dfb66
 
 <!-- container-->
 <div class="container tudo">
@@ -39,8 +41,8 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Nome do Joguinho</li>
   </ul>
   <!-- /breadcrumb-->
@@ -75,9 +77,7 @@
   }
   if(!isset($asset))
     $asset = $assets[0];
-  
   ?>   
-  
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2>Título</h2>
@@ -123,7 +123,6 @@
       <?php if(isset($displays["destaques"])):?>
         <?php if(count($displays["destaques"])>0):?>
           <?php foreach($displays["destaques"] as $d):?>
-            
             <li class="span2">
               <a href="#" title="">
                 <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
@@ -136,10 +135,10 @@
     </ul>
   </div>
   <!-- /row-->
- 
   
   <!-- rodape-->
-    <?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!-- /rodape-->
+
 </div>
 <!-- /container-->

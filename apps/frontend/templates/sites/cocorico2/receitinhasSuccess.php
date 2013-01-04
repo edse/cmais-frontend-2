@@ -22,14 +22,14 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php //echo getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
   
   <a href="#" class="tit-pagina">Receitinhas</a>
-  <div class="zaza"><a href="/cocorico/cozinha-da-zaza">zaza</a></div>
+  <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
 
   <?php if(count($assets) > 0): ?>
   <div class="row-fluid conteudo destaques">

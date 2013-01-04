@@ -24,8 +24,8 @@
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
@@ -81,7 +81,7 @@
   <?php if (count($assets) > 0): ?>
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit"><span class="mais"></span><a href="/cocorico/receitinhas">Receitinhas</a><span></span></div>
+    <div class="tit"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a><span></span></div>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
