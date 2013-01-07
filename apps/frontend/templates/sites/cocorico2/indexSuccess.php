@@ -269,6 +269,7 @@
   </div>
   
   <!-- /row-->
+  <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
   <!--row-->
 </div>
