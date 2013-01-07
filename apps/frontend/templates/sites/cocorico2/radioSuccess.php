@@ -1,19 +1,6 @@
 <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
-<!-- analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22770265-1']);
-  _gaq.push(['_setDomainName', 'cmais.com.br']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- /analytics -->
+
 <!-- container-->
 <div class="container tudo">
  <!-- row-->
@@ -26,11 +13,11 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Rádio</li>
   </ul>
   <!-- /breadcrumb-->
   
