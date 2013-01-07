@@ -36,7 +36,7 @@ if(!isset($asset)){
   </ul>
   <!-- /breadcrumb-->
   
-  <!--btn voltar-->
+  <!--btn voltar
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   

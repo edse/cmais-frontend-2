@@ -1,9 +1,9 @@
-<?php
-if(!isset($asset)){
-  $assets = $pager->getResults();
-  $asset = $assets[0];
-}
-?>
+  <?php
+  if(!isset($asset)){
+    $assets = $pager->getResults();
+    $asset = $assets[0];
+  }
+  ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
@@ -35,7 +35,7 @@ if(!isset($asset)){
   </ul>
   <!-- /breadcrumb-->
   
-  <!--btn voltar-->
+  <!--btn voltar
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
