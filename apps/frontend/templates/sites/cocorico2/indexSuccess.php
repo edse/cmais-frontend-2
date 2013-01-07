@@ -151,7 +151,8 @@
               }
             ?>
             <?php if($display_img_src != ''): ?>
-            <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?><span></span>
+            <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?>
+            <i class="ico-mais"></i>
             <?php endif; ?>
             
           </a>
@@ -172,7 +173,8 @@
             }
           ?>
           <?php if($display_img_src != ''): ?>
-          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?><span></span>
+          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?>
+          <i class="ico-mais"></i> 
           <?php endif; ?>
         </a>
           <?php endif; ?>
