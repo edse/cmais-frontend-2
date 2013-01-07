@@ -100,4 +100,11 @@ class Section extends BaseSection
   }
 
 
+  public function retriveBlockBySlug($slug){
+    if($slug != "" && $this->getId() > 0){
+      return Doctrine::getTable('Block')->findOneBySectionIdAndSlug((int)$this->getId(), $slug);
+    }
+    return null;
+  }
+
 }

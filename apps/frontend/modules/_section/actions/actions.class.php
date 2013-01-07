@@ -68,7 +68,7 @@ class _sectionActions extends sfActions
       $this->site = $this->section->Site;
 	  
 	  if($this->section->Site->getSlug() == "cocorico2")
-        $this->setLayout('cocorico2');
+        $this->setLayout('cocorico');
 	  
 
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
@@ -990,7 +990,7 @@ class _sectionActions extends sfActions
         $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
       $this->assetsQuery->orderBy('sa.display_order');
       $test = $this->assetsQuery->execute();
-    }
+    }    
 
       // program
       $this->program = $this->site->Program;
@@ -1044,7 +1044,7 @@ class _sectionActions extends sfActions
       $sectionSlug = 'list';
     elseif(in_array($sectionSlug, array('sobre','entrevistadores','entrevistados')))
       $sectionSlug = 'asset';
-    elseif(in_array($sectionSlug, array('equipe','apresentadores','personagens')))
+    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2')) 
       $sectionSlug = 'team';
     elseif(in_array($sectionSlug, array('fotos')))
       $sectionSlug = 'imagens';
@@ -1056,6 +1056,13 @@ class _sectionActions extends sfActions
       $sectionSlug = 'programas-de-a-z';
     #elseif(in_array($sectionSlug, array('programacao')))
     #  $sectionSlug = 'grade';
+
+
+    if($this->site->slug == 'cocorico' || $this->site->slug == 'cocorico2'){
+      if($this->section->Parent->getSlug() == "personagens"){
+        $sectionSlug = "personagem";
+      }
+    }
 
     if($sectionSlug == 'contate-o-nucleo')
       $sectionSlug = 'contact';

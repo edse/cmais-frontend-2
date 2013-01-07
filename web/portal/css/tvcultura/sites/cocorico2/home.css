@@ -1,10 +1,10 @@
 .col-esq { position:relative; }
-.col-esq .destaque-home .box { /*position: absolute; top:0; right:0; */ margin-left:0px; float:right; margin-bottom:20px; }
+.col-esq .destaque-home .box { /*position: absolute; top:0; right:0; */ margin-left:0px; float:right;  }
 /*.small { width: 174px; }*/
 /*.small a img {  width:140px;  }*/
 .box .mais { z-index:10; background:url(/portal/images/capaPrograma/cocorico/mais.png) no-repeat; width:36px; height:36px; display: block; position:absolute; margin-left:20px; }
 .box a { margin-left:20px; font-size:15px; padding:0 0 0 30px; display:block; line-height: 35px; color:#fff !important; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase; border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px; }
-.box .tit a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x;  padding: 0 23px 0 38px; line-height: 40px; height:40px; width: auto; float:left;  }
+.box .tit a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x;  padding: 0 23px 0 33px; line-height: 40px; height:40px; width: 91px; float:left;  }
 .box .tit span { width:9px; height:40px; float:left;  background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat; margin:0; position:relative; right:0; }
 .box ul a,
 .box ul a img { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;  text-transform:none; text-align:center; background-image:none; border:none; margin:0; padding:0; background:#1893cf; font-size:14px; font-weight:normal; line-height: 20px;  }
@@ -14,10 +14,11 @@
 .destaques span { background-position:-36px 0; bottom:5px; right:0; }
 
 .destaques img.span12 { border:none; margin:0; clear:both; }
-.destaques bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block;}
+.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block; color:#fff; font-weight: normal;}
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */
+.col-esq .destaque-home.span12 { margin-bottom: 20px; float: left; }
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
 .destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
@@ -47,7 +48,7 @@
 .enquete.span12 { background: url(/portal/images/capaPrograma/cocorico/divisoria-tvcoco.png) repeat-x 0 -6px; margin-left:0;  }
 .enquete h3 { text-transform:uppercase; font-size: 20px;  margin:15px 0 0 0; background:url(/portal/images/capaPrograma/cocorico/ico-ok.png) no-repeat 10px 11px; padding-left:35px; color:#fff;  }
 .enquete p { margin:0 10px 0 10px; color:#fff; }
-.enquete form { position:relative; overflow:hidden;  }
+.enquete form.span12 { position:relative; overflow:hidden; margin-left:0;  }
 .enquete form .versus { width:27px; height:30px; position:absolute; background:url(/portal/images/capaPrograma/cocorico/versus.png) no-repeat; bottom:50%; left:46%;  }
 .enquete form .span6 { margin:0 1px; }
 .enquete .inativo .span6 .capa-img,
@@ -73,3 +74,4 @@
 .enquete form .votar .last { margin:0; float: left; background-position:-40px 0  }
 
 #votar-input {border: none;background: red;float: left;height: 38px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 93%;}
+
