@@ -4,7 +4,7 @@ $asset = $assets[0];
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico2/brincadeiras.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">

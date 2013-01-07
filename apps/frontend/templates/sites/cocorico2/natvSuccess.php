@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico2/familia.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 
 <!-- container-->
