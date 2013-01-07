@@ -4,7 +4,7 @@
    ->select('b.*')
     ->from('Block b, Section s')
     ->where('b.section_id = s.id')
-    ->andWhere('s.slug = ?', "homepage")//mudar para home quando for no ar
+    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
     ->andWhere('b.slug = ?', 'enquete') 
     ->andWhere('s.site_id = ?', $site->id)
     ->execute();
