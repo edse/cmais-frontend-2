@@ -25,13 +25,12 @@
  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <div class="navbar-inner">
-        <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
-      </div>
-      <div class="lista-personagens">
-        <h3>turma</h3>
-          <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
-      </div>
+      <!--menu principal-->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <!--/menu principal-->
+      <!--menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--/menu personagens -->
     </div>
   </div>
   <!-- /row-->

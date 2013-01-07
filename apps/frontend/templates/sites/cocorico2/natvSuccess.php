@@ -20,11 +20,9 @@
     <div class="divisoria span12"></div>
   </div>
   <!-- /row-->
-  <!-- row-->
-  
+  <!-- menu-->
   <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
-    
-  <!-- /row-->
+  <!-- /menu-->
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
