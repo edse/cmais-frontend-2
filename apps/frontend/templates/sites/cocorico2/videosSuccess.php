@@ -1,3 +1,10 @@
+<?php
+if(!isset($asset)){
+  $assets = $pager->getResults();
+  $asset = $assets[0];
+}
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <script type="text/javascript">

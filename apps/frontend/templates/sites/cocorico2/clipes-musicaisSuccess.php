@@ -14,7 +14,6 @@ if(!isset($asset)){
   });
 </script>
 
-
 <!-- container-->
 <div class="container tudo">
  <!-- row-->
