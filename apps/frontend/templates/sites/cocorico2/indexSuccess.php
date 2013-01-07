@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/home.css" rel="stylesheet">
 
 <style type="text/css">
 /* tooltip*/
@@ -79,7 +79,6 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/joguinhos e receitinhas-->
-       * 
        */ ?>
       <?php if(isset($displays['destaque-principal-joguinhos'])):?>
         <?php if(count($displays['destaque-principal-joguinhos']) > 0): ?>
@@ -137,24 +136,25 @@
         <?php endif; ?>
       <?php endif; ?>
        
-      <div class="span12">
+      <div class="span12 conteudo-diverso">
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
-        <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
-          <p class="bold">
-            <?php echo $displays['destaque-2'][0]->getTitle() ?>
-          </p>
-          <?php
-            $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
-            if ($display_img_src == '') {
-              $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-              $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
-            }
-          ?>
-          <?php if($display_img_src != ''): ?>
-          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?><span></span>
-          <?php endif; ?>
-        </a>
+          <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
+            <p class="bold">
+              <?php echo $displays['destaque-2'][0]->getTitle() ?>
+            </p>
+            <?php
+              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+              }
+            ?>
+            <?php if($display_img_src != ''): ?>
+            <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?><span></span>
+            <?php endif; ?>
+            
+          </a>
           <?php endif; ?>
         <?php endif; ?>
         
@@ -267,7 +267,6 @@
   </div>
   
   <!-- /row-->
-  <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
   <!--row-->
 </div>
