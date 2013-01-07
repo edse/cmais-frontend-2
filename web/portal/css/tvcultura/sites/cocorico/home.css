@@ -1,3 +1,4 @@
+.teste {}
 .col-esq { position:relative; }
 .col-esq .destaque-home .box { /*position: absolute; top:0; right:0; */ margin-left:0px; float:right;  }
 /*.small { width: 174px; }*/
