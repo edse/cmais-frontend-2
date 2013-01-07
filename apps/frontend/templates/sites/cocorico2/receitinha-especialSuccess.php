@@ -1,4 +1,7 @@
-<?php use_helper('I18N', 'Date') ?>
+<?php
+$assets = $pager->getResults();
+$asset = $assets[0];
+?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico2/brincadeiras.css" rel="stylesheet">

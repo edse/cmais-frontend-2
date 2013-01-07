@@ -1,9 +1,9 @@
 <?php
 $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 ?>
+
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
-
 
 <!-- container-->
 <div class="container tudo">
@@ -20,15 +20,17 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Joguinhos</li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Joguinhos</h2>
-  <!--row-->
   
+  <h2 class="tit-pagina">Joguinhos</h2>
+  
+  <!--row-->
   <?php if(count($assets) > 0): ?>
   <div class="row-fluid conteudo destaques">
     <?php if(isset($assets[0])): ?>

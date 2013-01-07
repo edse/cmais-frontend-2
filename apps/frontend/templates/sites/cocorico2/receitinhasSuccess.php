@@ -1,4 +1,4 @@
-<?php
+<?php 
 $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 ?>
 
@@ -20,15 +20,15 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php //echo getTitle() ?></li>
+     <li class="active">Receitinhas</li>
   </ul>
   <!-- /breadcrumb-->
   
-  <a href="#" class="tit-pagina">Receitinhas</a>
+  <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="tit-pagina">Receitinhas</a>
   <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
 
   <?php if(count($assets) > 0): ?>
