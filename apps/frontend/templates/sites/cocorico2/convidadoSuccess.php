@@ -11,18 +11,15 @@
     <div class="navbar">
       <div class="navbar-inner">
         <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
-       </div>
-      <div class="lista-personagens">
-        <h3>turma</h3>
-        <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       </div>
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
     </div>
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Joguinhos</li>
+    <li class="active">Convidado do dia</li>
   </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Convidado do Dia</h2>
