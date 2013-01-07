@@ -136,7 +136,7 @@
         <?php endif; ?>
       <?php endif; ?>
        
-      <div class="span12 conteudo-diverso">
+      <div class="span12">
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
           <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
@@ -173,7 +173,7 @@
             }
           ?>
           <?php if($display_img_src != ''): ?>
-          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" />teste<?php echo $displays['destaque-3'][0]->getTitle() ?>
+          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?>
           <i class="ico-mais"></i> 
           <?php endif; ?>
         </a>
