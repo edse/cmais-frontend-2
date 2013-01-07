@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico2/familia.css" rel="stylesheet">
 
 
 <!-- container-->
@@ -6,29 +6,29 @@
   <!-- row-->
   <div class="row-fluid">
     <div class="topo-coco">
-      <h1 class="span3"><a href="/cocorico" title="Cocorico"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
+      <h1 class="span3"><a href="/cocorico2" title="cocorico2"><img src="/portal/images/capaPrograma/cocorico2/logo-coco.png" alt="Cocoricó" /></a></h1>
       <!-- BOX PUBLICIDADE 2 -->
       <div class="box-publicidade span9">
-        <!-- portal-cocorico -->
+        <!-- portal-cocorico2 -->
         <script type='text/javascript'>
-        GA_googleFillSlot("portal-cocorico");
+        GA_googleFillSlot("portal-cocorico2");
         </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->
-       <fb:like href="http://www3.tvcultura.com.br/cocorico/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
+       <fb:like href="http://www3.tvcultura.com.br/cocorico2/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
     </div>
     <div class="divisoria span12"></div>
   </div>
   <!-- /row-->
   <!-- row-->
   
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
+  <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
     
   <!-- /row-->
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="/cocorico2">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li>Na TV </li>
      <li class="active"></li>
   </ul>
@@ -49,8 +49,8 @@
     <?php endif; ?>
     
     <div class="logos span4">
-      <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
-      <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
+      <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico2/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
+      <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico2/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
     </div>
   </div>
   <!--/row-->
@@ -95,7 +95,7 @@
   <!--row-->
   <div class="row-fluid  border-top"></div>
 	<!--row-->
-		<?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+		<?php include_partial_from_folder('sites/cocorico2', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
     <!-- /row-->
 </div>
 <!-- /container-->
