@@ -65,8 +65,9 @@
 
 .conteudo-diverso{background-color: #f2722f;}
 .conteudo-diverso p{color:#fdf035;}
-a.destaque-1:hover{text-decoration: none;}
+a.destaque-1:hover,
 a.destaque-2:hover{text-decoration: none; margin-left:20px;}
+a.destaque-2{margin-left:20px;}
 
 .destaque-1{border-radius:9px; margin-top:30px;position:relative;}
 .destaque-2{border-radius:9px; margin-top:30px;position:relative;}
