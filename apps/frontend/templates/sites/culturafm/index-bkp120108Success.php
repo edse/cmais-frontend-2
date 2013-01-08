@@ -8,14 +8,14 @@
 <script>
   /* comentado para aplicar a home com o link para infografico de aniversario de 35 anos*/
   //number2 = 429;
-  $(function(){
-  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete"/*, "fm35-1", "fm35-2", "fm35-3"*/ );
+  //$(function(){
+  //var instruments=new Array(/*"violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete",*/ "fm35-1", "fm35-2", "fm35-3" );
   //var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
   // o codigo acima é uma gambi para aumentar a probabilidade de 'homenagem-tineti' ser sorteado mais vezes
   //var instruments=new Array("trombone");
-  var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
-  $('div#home').addClass(currentInstrument);
-  });
+  //var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
+  //$('div#home').addClass(currentInstrument);
+  //});
 </script>
 <!-- remover este css depois que acabar campanha da radio -->
 <script type="text/javascript">
@@ -34,7 +34,13 @@
     });
     
 </script>
+<style type="text/css">
+  .home .topo-programa {
+    background-position: 0 0;
+  }
 
+
+</style>
 <div id="bg-site"></div>
 <!-- CAPA SITE -->
 <div id="capa-site">
@@ -43,18 +49,27 @@
 
   <!-- BARRA SITE -->
   <div id="barra-site">
-       
-    <div class="topo-programa" id="home">
-    
+    <!-- <div class="topo-programa" id="home" style="background-image:url('http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm2.jpg');"> -->
+    <!-- descomentar esta linha depois q acabar campanha da radio -->
+    <!--div class="topo-programa" id="home" style="height:334px; "-->
+    <!-- remover esta linha depois q acabar campanha da radio -->
+    <div class="topo-programa" id="home" style="height:313px; ">
       <!-- descomentar esta linha depois q acabar campanha da radio -->
-      <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
+      <!--h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2-->
       <?php if(isset($program) && $program->id > 0):
       ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))
       ?>
       <?php endif;?>
 
-      
+      <!-- remover este estilo  depois q acabar campanha da radio-->
+      <div id="horario" style="margin-top:10px;">
+        <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+      </div>
+      <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="/portal/images/capaPrograma/culturafm/destaqueDEZEMBRO.png" title="Fim de ano na TV Cultura com música clássica" alt="Fim de ano na TV Cultura com música clássica" >
+      <map name="cultura" id="cultura">
+        <area shape="poly" coords="4,305,2,4,418,2,880,80,968,100,966,304" href="http://cmais.com.br/fim-de-ano-na-tv-cultura-com-musica-classica" title="Fim de ano na TV Cultura com música clássica" target="_blank"/>
+      </map>
     </div>
     <?php if(isset($siteSections)):
     ?>
