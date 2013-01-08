@@ -7,12 +7,12 @@
 ?>
 <script>
   /* comentado para aplicar a home com o link para infografico de aniversario de 35 anos*/
-  number2 = 429;
+  //number2 = 429;
   $(function(){
-  var instruments=new Array("trombone","violino","clarinete"/*"trompete", "timpanos","bombardino","carrilhao", "fm35-1", "fm35-2", "fm35-3"*/ );
+  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete"/*, "fm35-1", "fm35-2", "fm35-3"*/ );
   //var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
   // o codigo acima é uma gambi para aumentar a probabilidade de 'homenagem-tineti' ser sorteado mais vezes
-  var instruments=new Array("trombone");
+  //var instruments=new Array("trombone");
   var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
   $('div#home').addClass(currentInstrument);
   });
