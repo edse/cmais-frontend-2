@@ -369,8 +369,8 @@
     <div class="row-fluid relacionados">
       
       <!-- clipe -->
-      <a href="#" title="titulo clipe">
-        <div class="destaque-2 conteudo-diverso span4">
+      <a href="#" title="titulo clipe span4">
+        <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
           <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
           <p>
@@ -382,8 +382,8 @@
       <!-- /clipe -->
       
       <!-- clipe -->
-      <a href="#" title="titulo clipe">
-        <div class="destaque-2 conteudo-diverso span4">
+      <a href="#" title="titulo clipe" class="span4">
+        <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
           <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
           <p>
@@ -395,8 +395,8 @@
       <!-- /clipe -->
       
       <!-- clipe -->
-      <a href="#" title="titulo clipe">
-        <div class="destaque-2 conteudo-diverso span4">
+      <a href="#" title="titulo clipe" class="span4">
+        <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
           <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
           <p>
