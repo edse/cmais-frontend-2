@@ -270,10 +270,9 @@
     </div>
   </div>
   
-  <!-- /row-->
-  <div class="row-fluid  border-top"></div>
+  <!-- rodapé-->
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
-  <!--row-->
+  <!--/rodapé-->
 </div>
 <!-- /container-->
 <!-- script enquete -->
