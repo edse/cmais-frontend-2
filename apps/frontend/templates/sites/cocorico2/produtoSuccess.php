@@ -26,68 +26,75 @@
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/naslojas">Nas Lojas</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
+  
    <!--btn voltar-->
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <a class="tit-pagina interna" href="#">Nome do produto</a>
+  <a class="tit-pagina interna" href=""><?php echo $asset->getTitle() ?></a>
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span6 zoom">
+    	
+    	 <?php
+         	$galeria = $asset->retriveRelatedAssetsByAssetTypeId(3);
+                      
+            if(count($galeria)>0) {
+              $images = $galeria[0]->retriveRelatedAssetsByAssetTypeId(2);
+            }
+                    
+         ?>     
+         <?php if(isset($images)): ?> 
+           <?php if(count($images)>0): ?>
       <!--deixar o espaço em branco no title-->
       <div id="produto-grid" title=" ">
-        <a href="#myModal" data-toggle="modal"><img class="destacada" src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" alt="produto"></a>
+        <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $images[0]->retriveImageUrlByImageUsage("image-1-b") ?>" alt="produto"></a>
       </div>
       <!-- Button to trigger modal -->
           
      
       <ul class="span12">
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-       
+      	
+        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+     	
       </ul>
     </div>
      <!-- Modal -->
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-          <h3 id="myModalLabel">Nome do produto</h3>
-          <p>marca do produto</p>
+          <h3 id="myModalLabel"><?php echo $asset->getTitle() ?></h3>
+          <p><?php echo $asset->getHeadline() ?></p>
         </div>
         <div class="modal-body">
           <img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira2.jpg" alt="teste" />
         </div>
         <div class="modal-footer">
           <ul>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="/portal/images/capaPrograma/cocorico/modelo-produto.jpg" /></a></li>
+          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
           </ul>
         </div>
       </div>
+       <?php endif; ?>
+      <?php endif; ?>
     <div class="span6">
     <div class="redes">
       <!--face-->
@@ -105,21 +112,8 @@
         <div class="g-plusone" data-size="medium"></div>
       </div>
     </div>
-    <p>A Turma do Cocoricó faz um enorme sucesso entre as crianças! Os personagens reforçam a integração social, as atitutes positivas e estimulam o desenvolvimento emocional e intelectual dos pequenos. Júlio é um menino de aproximadamente 6 anos, esperto, afetivo e curioso. Veio da cidade e mora com seus avós. Passa por conflitos típicos de crianças da sua idade e sua atitude em geral é positiva. Ele vai instigar a imaginação da criançada e fazer com que as brincadeiras fiquem muito mais divertidas!</p>
-    
-    <h3>Características do produto</h3>
-    <p>Modelo: 7110.</p>
-    <p>Material: cabeça de vinil, corpo em tecido e enchimento em fibra atóxica. Olhos fixos.</p>
-    <p>Idade recomendada: a partir de 03 anos</p>
-    <p>Conteúdo da embalagem: 01 Boneco Júlio</p>
-    
-    <h3>Dados técnicos</h3>
-    <p>(sujeitos a alterações)</p>
-    <p>Altura aprox. do boneco: 43 cm.</p>
-    <p>Dimensões aprox. com embalagem (L x A x P): 25,5 x 39,5 x 25,5 cm.</p>
-    <p>Prazo de garantia: 03 meses de garantia legal.</p>
-    <p>Atenção: Imagens meramente ilustrativas.</p>
-    <a class="site" href="#" title="Site do fabricante">Site do fabricante</a>
+    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+    <a class="site" href="<?php echo $asset->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
     </div>
     
   </div>
