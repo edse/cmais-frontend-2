@@ -381,32 +381,7 @@
       </a>  
       <!-- /clipe -->
       
-      <!-- clipe -->
-      <a href="#" title="titulo clipe">
-        <div class="destaque-2 conteudo-diverso span4">
-          <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
-          <p>
-            texto corrido
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <!-- /clipe -->
-      
-      <!-- clipe -->
-      <a href="#" title="titulo clipe">
-        <div class="destaque-2 conteudo-diverso span4">
-          <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
-          <p>
-            texto corrido
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <!-- /clipe -->
-      
+            
     </div>
     <!-- /row clipes relacionados -->
   </div>
