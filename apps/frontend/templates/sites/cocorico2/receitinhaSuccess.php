@@ -90,10 +90,10 @@
   <!-- /row-->
   <?php endif; ?>
 
+  <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
-  <!-- rodape-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
-  <!-- /rodape-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  <!--/rodapé-->
 </div>
 <!-- /container-->
 

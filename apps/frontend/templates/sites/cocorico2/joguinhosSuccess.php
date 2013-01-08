@@ -87,7 +87,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
 <!-- /container-->
