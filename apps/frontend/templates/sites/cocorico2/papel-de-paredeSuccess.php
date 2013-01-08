@@ -14,11 +14,11 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/receitinhas" class="active">Para Colorir</a></li>
-     
+     <li><a href="/cocorico/receitinhas" class="active">Papel de parede</a></li>
+     <li class="active"><?php //echo getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Para colorir</h2>
+  <h2 class="tit-pagina">Papel de parede</h2>
   
   <!--row-->
   <div class="row-fluid conteudo destaques">
