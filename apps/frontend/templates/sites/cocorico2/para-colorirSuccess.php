@@ -1,3 +1,6 @@
+<?php
+$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <script type="text/javascript">
@@ -45,34 +48,7 @@
   <!--btn voltar-->
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
-  <?php
-  // section assets
-  if(!$section){
-    if(count($assets)<=0){
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->whereIn('sa.section_id', 2114)
-        ->andWhere('sa.asset_id = a.id')
-        ->orderBy('a.id desc')
-        ->execute();
-    }
-  }else{
-    if(isset($pager))
-      $assets = $pager->getResults();
-    else{
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->Where('sa.section_id = ?', $section->id)
-        ->andWhere('sa.asset_id = a.id')
-        ->orderBy('a.id desc')
-        ->execute();
-    }
-  }
-  if(!isset($asset))
-    $asset = $assets[0];
-  ?>   
+  
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2>Título</h2>
@@ -88,13 +64,7 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-  <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-  <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-  <?php if(count($preview) > 0 && count($download) > 0): ?>
-    <?php echo "P title:".$preview[0]->getTitle(); ?>
-    <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
-    <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
-  <?php endif; ?>
+
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12">Descrição</p>
@@ -115,18 +85,14 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-      <?php if(isset($displays["destaques"])):?>
-        <?php if(count($displays["destaques"])>0):?>
-          <?php foreach($displays["destaques"] as $d):?>
+
             <li class="span2">
               <a href="#" title="">
-                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
-                <?php echo $d->getTitle();?>
+                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
+
               </a>
             </li>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      <?php endif; ?>  
+ 
     </ul>
   </div>
   <!-- /row-->
