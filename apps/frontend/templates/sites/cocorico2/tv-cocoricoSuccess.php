@@ -208,7 +208,7 @@
             <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
             <input type="text" class="span11 pull-right" name="nome" placeholder="Link do seu vídeo no You Tube"/>
             <label class="radio" style="clear: both; color:#FFF">
-              <input type="radio" name="concorda" id="concorda" value="option1" checked>
+              <input type="radio" name="concorda" id="concorda" value="option1">
               Estou ciente e de acordo com os Termos e Condições abaixo:
             </label>
           </div>
