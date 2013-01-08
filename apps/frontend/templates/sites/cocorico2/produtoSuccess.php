@@ -105,7 +105,7 @@
       </div>  
       <!-- pinterst -->
       <div id="rede-pinterest">
-        <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fcocorico%2Fnaslojas-interna&media=http%3A%2F%2F172.20.17.129%2Fportal%2Fimages%2FcapaPrograma%2Fcocorico%2Fmodelo-produto.jpg" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
       </div>
       <!-- google+ -->
       <div id="rede-google">
