@@ -1,4 +1,3 @@
-<script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
