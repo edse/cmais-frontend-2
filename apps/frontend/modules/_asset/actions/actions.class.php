@@ -658,6 +658,7 @@ class _assetActions extends sfActions
           ->execute();
       }
       
+      
     }
 		elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();

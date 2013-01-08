@@ -1,140 +1,193 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
-  });
-</script>
-<!-- analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22770265-1']);
-  _gaq.push(['_setDomainName', 'cmais.com.br']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- /analytics -->
 <!-- container-->
 <div class="container tudo">
- <!-- row-->
+  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <!--menu principal-->
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
-      <!--/menu principal-->
-      <!--menu personagens -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
-      <!--/menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>     
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
     </div>
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="/cocorico/receitinhas" class="active">Para Colorir</a></li>
+     
   </ul>
   <!-- /breadcrumb-->
+  <h2 class="tit-pagina">Para colorir</h2>
   
-  <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
-  <!-- /btn voltar-->
-  <?php
-  // section assets
-  if(!$section){
-    if(count($assets)<=0){
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->whereIn('sa.section_id', 2114)
-        ->andWhere('sa.asset_id = a.id')
-        ->orderBy('a.id desc')
-        ->execute();
-    }
-  }else{
-    if(isset($pager))
-      $assets = $pager->getResults();
-    else{
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->Where('sa.section_id = ?', $section->id)
-        ->andWhere('sa.asset_id = a.id')
-        ->orderBy('a.id desc')
-        ->execute();
-    }
-  }
-  if(!isset($asset))
-    $asset = $assets[0];
-  ?>   
-  <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
-    <h2>Título</h2>
-    <span></span>
-    <ul class="likes">
-      <li class="ativo"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+  <!--row-->
+  <div class="row-fluid conteudo destaques">
+    <div class="span4">
+      <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+      <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
+      <ul class="likes">
+        <li class="ativo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      
+    </div>
+      <div class="span4">
+      <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+      <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
+      <ul class="likes">
+        <li class="ativo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      
+    </div>
+     <div class="span4">
+      <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+      <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
+      <ul class="likes">
+        <li class="ativo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      
+    </div>
+    
   </div>
-  <a href="#" class="curtir" title="Curtir">curtir</a>
-  <a href="#" class="curtir disabled" title="Curtir">curtir</a>
-  <!-- titulo da pagina -->
-  <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-  <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-  <?php if(count($preview) > 0 && count($download) > 0): ?>
-    <?php echo "P title:".$preview[0]->getTitle(); ?>
-    <?php echo "P:".$preview[0]->retriveImageUrlByImageUsage('image-6-b'); ?>
-    <?php echo "D:".$download[0]->AssetImage->getOriginalFile() ?>
-  <?php endif; ?>
+  <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12">Descrição</p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" title="Imprimir">
-      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/image-6-b/305540493098327627d91b979a23d9c5c0c9a7ea.jpg" alt="" />
-    </a>
-    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" alt="imprimir">imprimir</a>
-    <div id="div1" style="display: none;page-break-after:always;">
-      <img src="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" style="width:95%">
-    </div>
-    <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
-      <!--/IFRAME PARA IMPRESSAO EM IE -->
-  </div>
-  <!--/row-->
-  
-  <!--row-->
-  <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
-      <?php if(isset($displays["destaques"])):?>
-        <?php if(count($displays["destaques"])>0):?>
-          <?php foreach($displays["destaques"] as $d):?>
-            <li class="span2">
-              <a href="#" title="">
-                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->Asset->AssetImage->file.".jpg"?>" alt="" />
-                <?php echo $d->getTitle();?>
-              </a>
-            </li>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      <?php endif; ?>  
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
     </ul>
   </div>
   <!-- /row-->
-  
-  <!-- rodapé-->
+  <!-- paginacao -->
+  <div class="pagination pagination-centered">
+    <ul>
+      <li class="anterior"><a href="#" title="Anterior"></a></li>
+      <li class="active"><a href="#" title="1">1</a></li>
+      <li><a href="#" title="1">2</a></li>
+      <li><a href="#" title="1">3</a></li>
+      <li><a href="#" title="1">...</a></li>
+      <li><a href="#" title="1">18</a></li>
+      <li class="proximo" title="Próximo"><a href="#"></a></li>
+    </ul>
+  </div>
+  <!-- /paginacao -->
+  <!-- rodape-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-  <!--/rodapé-->
-
+  <div class="row-fluid rodape" >
+    <h3>2012 &copy; tv cultura - fpa</h3>
+    <div class="span2">
+      <a href="#" class="bold" title="Em família">em família</a>
+      <ul>
+        <li><a href="#" title="Na TV">Na TV</a></li>
+        <li><a href="#" title="Nas lojas">Nas lojas</a></li>
+        <li><a href="#" title="Nas Redes">Nas Redes</a></li>
+        <li><a href="#" title="Nos Teatros">Nos Teatros</a></li>
+        <li><a href="#" title="Nos Cinemas">Nos Cinemas</a></li>
+        <li><a href="#" title="Na Web">Na Web</a></li>
+        <li><a href="#" title="Agenda">Agenda</a></li>
+        <li><a href="#" title="Newsletter">Newsletter</a></li>
+        <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <div class="span2"> <a href="#" class="bold" title="Em família">tv cocoricó</a>
+      <ul>
+        <li><a href="#" title="Sobre o programa">Sobre o programa</a></li>
+        <li><a href="#" title="Livro de receitas">Livro de receitas</a></li>
+        <li><a href="#" title="Bastidores">Bastidores</a></li>
+        <li><a href="#" title="Tour Virtual">Tour Virtual</a></li>
+        <li><a href="#" title="Receitinhas">Receitinhas</a></li>
+        <li><a href="#" title="Envie seu vídeo">Envie seu vídeo</a></li>
+        <li><a href="#" title="Enquete">Enquete</a></li>
+      </ul>
+    </div>
+    <div class="span2"> <a href="#" class="bold" title="Cocoricó">cocoricó</a>
+      <ul>
+        <li><a href="#" title="Sobre a série">Sobre a série</a></li>
+        <li><a href="#" title="Diário do Júlio">Diário do Júlio</a></li>
+        <li><a href="#" title="Personagens">Personagens</a></li>
+        <li><a href="#" title="Cocoricolândia">Cocoricolândia</a></li>
+        <li><a href="#" title="Autógrafos">Autógrafos</a></li>
+      </ul>
+    </div>
+    <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Brincadeiras</a>
+      <ul>
+        <li><a href="#" title="Joguinhos">Joguinhos</a></li>
+        <li><a href="#" title="Receitinhas">Receitinhas</a></li>
+        <li><a href="#" title="Para colorir">Para colorir</a></li>
+        <li><a href="#" title="Rádio">Rádio</a></li>
+        <li><a href="#" title="Vídeos">Vídeos</a></li>
+        <li><a href="#" title="Clipes musicais">Clipes musicais</a></li>
+        <li><a href="#" title="Papel de parede">Papel de parede</a></li>
+        <li><a href="#" title="Carinhas animadas">Carinhas animadas</a></li>
+        <li><a href="#" title="Cartões Comemorativos">Cartões Comemorativos</a></li>
+        <li><a href="#" title="Atividades para imprimir">Atividades para imprimir</a></li>
+      </ul></div>
+    <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
+      <ul>
+        <li><a href="#" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
+        <li><a href="#" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>
+        <li class="last"><a href="#" class="cultura" title="TV Cultura">TV Cultura</a></li>
+        <li><a href="#" class="castelo" title="Castelo Rá Tim Bum">Castelo Rá Tim Bum</a></li>
+        <li><a href="#" class="vila" title="Vila Sésamo">Vila Sésamo</a></li>
+      </ul></div>
+    
+  </div>
+  <!-- /rodape-->
 </div>
 <!-- /container-->

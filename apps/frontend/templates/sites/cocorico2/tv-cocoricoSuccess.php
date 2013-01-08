@@ -208,7 +208,7 @@
             <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
             <input type="text" class="span11 pull-right" name="nome" placeholder="Link do seu vídeo no You Tube"/>
             <label class="radio" style="clear: both; color:#FFF">
-              <input type="radio" name="concorda" id="concorda" value="option1" checked>
+              <input type="radio" name="concorda" id="concorda" value="option1">
               Estou ciente e de acordo com os Termos e Condições abaixo:
             </label>
           </div>
@@ -238,67 +238,67 @@
        </div>
         
         <!-- item -->
-        <div class="item">
-          <a href="#" title="Tour Virtual">
+        <a href="#" title="Tour Virtual">
+          <div class="item">
             <div class="img-bast">
                 <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
             </div>
             <span>Tour Virtual</span>
-          </a>
-          <hr/>
-        </div>
+          </div>
+        </a>
+        <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <div class="item">
-          <a href="#" title="Erros de gravação">
+        <a href="#" title="Erros de gravação">
+          <div class="item">
             <div class="img-bast">
-              <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
             </div>
             <span>Erros de gravação</span>
-          </a>
-          <hr/>
-        </div>
+          </div>
+        </a>
+        <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <div class="item">
-          <a href="#" title="Instangram oficial">
+        <a href="#" title="Instamgram Oficial">
+          <div class="item">
             <div class="img-bast">
-              <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
             </div>
-            <span>Instangram oficial</span>
-          </a>
-          <hr />
-        </div>
+            <span>Instamgram Oficial</span>
+          </div>
+        </a>
+        <hr/>
         <!-- /item -->
       </div>
       <!-- /bastidores -->
       
       <!-- convidado especial -->
-      <div class="destaque-1 conteudo-tv span6">
-        <h3>convidado especial</h3>
-        <a href="#" title="destaque 1 titulo">
+      <a href="#" title="titulo" class="span6 destaque1">
+        <div class="destaque-1 conteudo-tv">
+          <h3>convidado especial</h3>
           <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
-        </a>
-        <p>
-          texto corrido
-          <i class="ico-mais"></i>
-        </p>
-       </div>
+          <p>
+            texto corrido
+            <i class="ico-mais"></i>
+          </p>
+         </div>
+       </a>
       <!-- /convidado especial -->
       
       <!-- receitinhas -->
-      <div class="destaque-2 conteudo-diverso span6">
-        <h3>Receitinhas</h3>
-        <a href="#" title="destaque 2 titulo">
+      <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
+        <div class="destaque-2 conteudo-diverso">
+          <h3>Receitinhas</h3>
           <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
-        </a>
-        <p>
-          texto corrido
-          <i class="ico-mais"></i>
-        </p>
-      </div>  
+          <p>
+            texto corrido
+            <i class="ico-mais"></i>
+          </p>
+        </div>
+      </a>  
       <!-- /receitinhas -->
       
     </div>
