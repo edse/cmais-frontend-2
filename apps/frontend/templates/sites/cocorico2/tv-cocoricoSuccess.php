@@ -276,7 +276,7 @@
       <!-- /bastidores -->
       
       <!-- convidado especial -->
-      <a href="#" title="titulo" class="span6 destaque-1">
+      <a href="#" title="titulo" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
           <h3>convidado especial</h3>
           <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
@@ -289,7 +289,7 @@
       <!-- /convidado especial -->
       
       <!-- receitinhas -->
-      <a href="#" title=" titulo" class="span6 destaque-2" style="margin-left: 15px;">
+      <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
           <h3>Receitinhas</h3>
           <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
