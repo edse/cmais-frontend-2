@@ -85,8 +85,9 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <p>Nenhum joguinho encontrado.</p>
   <?php endif; ?>
   
-  <!-- rodape-->
+  <!-- rodapé-->
+  <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape') ?>
-  <!-- /rodape-->
+  <!--/rodapé-->
 </div>
 <!-- /container-->
