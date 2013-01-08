@@ -657,6 +657,10 @@ class _assetActions extends sfActions
           ->orderBy('sa.display_order')
           ->execute();
       }
+      elseif($this->section->slug == "para-colorir") {
+        if ($debug) print "<br>cocorico-4 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir');
+      }
       
     }
 		elseif($this->site->getSlug() == "quintaldacultura"){

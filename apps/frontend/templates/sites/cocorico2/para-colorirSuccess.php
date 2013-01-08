@@ -1,5 +1,12 @@
 <?php
 $assets = $pager->getResults(); //depois tem de ordenar por ranking...
+if(count($assets) > 0):
+  if(isset($assets[0])):
+    $related = $assets[0]->retriveRelatedAssetsByRelationType('Preview');
+    echo "url:".$assets[0]->retriveUrl() . "<br/>";
+    echo "titulo:".$assets[0]->getTitle();
+  endif;  
+endif;  
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
