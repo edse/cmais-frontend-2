@@ -96,7 +96,7 @@
 		<?php foreach($pager->getResults() as $d): ?>
     	  
       <li class="span4">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("preview") ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a>  
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a>  
       </li>
       	
         <?php endforeach; ?>
