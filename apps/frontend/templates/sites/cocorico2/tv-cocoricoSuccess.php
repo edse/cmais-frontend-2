@@ -49,7 +49,7 @@
         <!-- enquete -->
         <?php
         //pergunta bloco enquete - 1º destaque
-        $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion()."teste";
+        $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion();
 
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
@@ -163,7 +163,7 @@
             </h3>
           </div>
         </div>
-        <form method="post" action="">
+        <form id="form-contato" method="post" action="">
           <p>
             Para participar é muito fácil:<br/>
             1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
@@ -208,7 +208,7 @@
             <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
             <input type="text" class="span11 pull-right" name="nome" placeholder="Link do seu vídeo no You Tube"/>
             <label class="radio" style="clear: both; color:#FFF">
-              <input type="radio" name="concorda" id="concorda" value="option1">
+              <input type="radio" name="concorda" id="concorda" value="aceite">
               Estou ciente e de acordo com os Termos e Condições abaixo:
             </label>
           </div>
@@ -218,6 +218,7 @@
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at sapien orci, at placerat turpis. Phasellus ligula nulla, rhoncus nec adipiscing sit amet, congue eget nisi. Suspendisse semper leo ac nunc consectetur eu adipiscing dui cras amet.
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at sapien orci, at placerat turpis. Phasellus ligula nulla, rhoncus nec adipiscing sit amet, congue eget nisi. Suspendisse semper leo ac nunc consectetur eu adipiscing dui cras amet.
           </div> 
+          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
           
@@ -362,4 +363,69 @@ function sendAnswer(){
   });
   
 }
+</script>
+<!--form-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var validator = $('#form-contato').validate({
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          beforeSend: function(){
+            $('input#enviar').hide()
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+            //window.location.href="#";
+            if(data == "1"){
+              //$("#form-contato").clearForm();
+              $('input#enviar').show()
+              $('img#ajax-loader').hide();
+              alert("fui");
+            }
+            else {
+              //$(".msgErro").show();
+              $('img#ajax-loader').hide();
+              alert("nao fui")
+            }
+          }
+        });         
+      },
+      rules:{
+        nome:{
+          required: true,
+          minlength: 2
+        },
+        email:{
+          required: true,
+          email: true
+        },
+        cidade:{
+          required: true,
+          minlength: 3
+        },
+        estado:{
+          required: true,
+          minlength: 2
+        },
+        concorda{
+          required: true
+        }
+      },
+      messages:{
+        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        cidade: "Este campo &eacute; Obrigat&oacute;rio.",
+        estado: "Este campo &eacute; Obrigat&oacute;rio.",
+        assunto: "Este campo &eacute; Obrigat&oacute;rio.",
+        concorda: "Este campo &eacute; Obrigat&oacute;rio.";
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
+      }
+    });
+  });
 </script>
