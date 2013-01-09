@@ -179,7 +179,6 @@
             </div>
             <div class="row-fluid">
               <div span="span2 pull-right">
-                <i class="ico-tv ico-cidade"></i>
                 <select id="estado" name="estado" style="margin-left:12px;">
                     <option value="" selected="selected">UF</option>
                     <option value="Acre">AC</option>
@@ -212,6 +211,7 @@
                 </select>
               </div>
               <div class="span9 pull-right">
+                <i class="ico-tv ico-cidade"></i>
                 <input type="text" name="cidade" placeholder="Sua cidade"/>
               </div>
             </div>
