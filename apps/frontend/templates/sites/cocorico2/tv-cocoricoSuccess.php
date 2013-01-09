@@ -220,7 +220,7 @@
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div>
             <div class="row-fluid" style="position: relative;">
-              <label class="radio" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
+              <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
               <input type="radio" name="concorda" id="concorda" value="aceite" style="position: absolute;top: 0px;left: 10px;">
             </div>
           </div>
