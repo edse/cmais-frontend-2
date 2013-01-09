@@ -91,7 +91,7 @@
                 "Secretaria dos Direitos da Pessoa com deficiência"
                 que se encontra na home e abaixo do logo do Governo do
                 Estado de São Paulo com o seguinte endereço 
-                <a href="http://www.pessoacomdeficiencia.sp.gov.br/" title="Secretaria dos direitosda pessoa com deficiência" target="_blank">http://www.pessoacomdeficiencia.sp.gov.br/</a>
+                <a href="http://www.pessoacomdeficiencia.sp.gov.br/" title="Secretaria dos direitos da pessoa com deficiência" target="_blank" style="color:#9f7abf;">http://www.pessoacomdeficiencia.sp.gov.br/</a>
                 </p>
                 
                   <div class="msgErro" style="display:none">
