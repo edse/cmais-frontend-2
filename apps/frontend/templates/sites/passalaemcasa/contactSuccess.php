@@ -79,20 +79,22 @@
               <div class="contato grid2">
 
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3> 
-                <!--<p>Esse espaço é destinado para pessoas que queiram contar suas experiências relacionadas
-                à moradia acessível no Brasil ou em outros países. Podem ser experiências vividas ou
-                observadas, desde que relatem ações sobre questões como autonomia e inclusão de pessoas
-                com deficiência na sociedade. Os depoimentos também podem ser relacionados à ações
-                públicas (caso de instituições) ou ações particulares, desde ações pessoais para mudar a
-                qualidade de vida de alguém com deficiência (seja física, mental, motora, auditiva ou visual)
-                até ações coletivas de grupos sociais.</p>
-                <p>Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL).</p>-->
-                <p>
-                "Secretaria dos Direitos da Pessoa com deficiência"
-                que se encontra na home e abaixo do logo do Governo do
-                Estado de São Paulo com o seguinte endereço 
-                <a href="http://www.pessoacomdeficiencia.sp.gov.br/" title="Secretaria dos direitosda pessoa com deficiência" target="_blank">http://www.pessoacomdeficiencia.sp.gov.br/</a>
-                </p>
+                  <p>
+                    Esse espaço é destinado para pessoas que queiram contar suas
+                  experiências relacionadas à moradia acessível no Brasil ou em outros países.
+                  Podem ser experiências vividas ou observadas, desde que relatem ações sobre
+                  questões como autonomia e inclusão de pessoas com deficiência na sociedade.
+                  Os depoimentos também podem ser relacionados à ações públicas (caso de instituições)
+                  ou ações particulares, desde ações pessoais para mudar a qualidade de vida de alguém 
+                  om deficiência (seja física, mental, motora, auditiva ou visual) até ações coletivas 
+                  de grupos sociais.
+                  </p><br/>
+                  <p>
+                    Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL).
+                  </p>
+                
+                
+                
                 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
