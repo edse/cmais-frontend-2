@@ -45,6 +45,10 @@
   <div id="barra-site">
        
     <div class="topo-programa" id="home">
+      
+      <div id="horario" style="margin-top:10px;">
+        <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+      </div>
     
       <!-- descomentar esta linha depois q acabar campanha da radio -->
       <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
