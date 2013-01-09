@@ -90,16 +90,15 @@
   <!-- /paginacao -->
   <!--row-->
   
-  <?php if(count($assets) > 0): ?>
+  <?php if(count($pager) > 0): ?>
   <div class="row-fluid conteudo destaques">
   	<ul id="convidados">
-		<?php foreach($assets as $k=>$d): ?>
-    	  <?php if($k > 0): ?>
-         	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+		<?php foreach($pager->getResults() as $d): ?>
+    	  
       <li class="span4">
-        <a href="<?php echo $assets->retriveUrl() ?>" title="<?php echo $assets->getTitle() ?>"><img class="span12" src="<?php echo $related->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $assets->getTitle() ?>" /><?php echo $assets->getTitle() ?></a>  
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("preview") ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a>  
       </li>
-      	 <?php endif; ?>
+      	
         <?php endforeach; ?>
        </ul>
      <?php endif; ?> 
