@@ -67,7 +67,7 @@
 /* scrollbar p/ chome*/
 .regras ::-webkit-scrollbar { height: 12px; width: 20px; background: none; }
 .regras ::-webkit-scrollbar-thumb { background: #1db186; -webkit-border-radius: 5px;}
-.regras ::-webkit-scrollbar-corner { background: #fff;}
+.regras ::-webkit-scrollbar-corner { background: #fff;} 
 
 .conteudo-diverso{background-color: #f2722f;}
 .conteudo-diverso p{color:#fdf035;}
