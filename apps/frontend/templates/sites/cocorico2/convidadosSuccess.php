@@ -1,3 +1,4 @@
+
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 
 
@@ -96,7 +97,7 @@
     	  <?php if($k > 0): ?>
          	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
       <li class="span4">
-        <a href="<?php echo $assets->retriveUrl() ?>" title="<?php echo $assets->getTitle() ?>"><img class="span12" src="<?php echo $related->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets->getTitle() ?>" /><?php echo $assets->getTitle() ?></a>  
+        <a href="<?php echo $assets->retriveUrl() ?>" title="<?php echo $assets->getTitle() ?>"><img class="span12" src="<?php echo $related->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $assets->getTitle() ?>" /><?php echo $assets->getTitle() ?></a>  
       </li>
       	 <?php endif; ?>
         <?php endforeach; ?>
