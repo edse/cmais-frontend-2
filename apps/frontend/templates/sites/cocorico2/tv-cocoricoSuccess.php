@@ -177,13 +177,13 @@
               <i class="ico-tv ico-pessoa"></i>
               <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
             </div>
-            <div class="row-fluid">
+            <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               <div class="span9">
                 <input type="text" name="cidade" class="span11" placeholder="Sua cidade"/>
               </div>
-              <div span="span2">
-                <select id="estado" name="estado" style="margin-left:12px;" class="span2">
+              <div class="span2 estado">
+                <select id="estado" name="estado" class="span12">
                     <option value="" selected="selected">UF</option>
                     <option value="Acre">AC</option>
                     <option value="Alagoas">AL</option>
