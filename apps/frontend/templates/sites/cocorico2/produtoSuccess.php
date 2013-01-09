@@ -59,7 +59,6 @@
       </div>
       <!-- Button to trigger modal -->
           
-     
       <ul class="span12">
       	
         <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
