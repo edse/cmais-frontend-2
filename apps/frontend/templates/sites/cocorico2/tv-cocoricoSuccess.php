@@ -234,15 +234,12 @@
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <div id="msgAcerto" style="display:none;">
-          <p>
-            Seu vídeo foi enviado com sucesso!<br/>
-            <hr>
-            para assistir ao vivo, continue ligado na TV cocórico!
-          </p>          
+          <p>Seu vídeo foi enviado com sucesso!</p>
+          <hr>
+          <p>para assistir ao vivo, continue ligado na TV cocórico!</p>          
         </div>
         <div id="msgErro" style="display:none;">
-          <p>
-            Seu vídeo não foi enviado!<br/> 
+          <p> Seu vídeo não foi enviado!<br/> 
             <hr>
             tente novamente mais tarde!
           </p>
