@@ -178,38 +178,42 @@
               <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
             </div>
             <div class="row-fluid">
-              <i class="ico-tv ico-cidade"></i>
-              <select class="span2 pull-right" id="estado" name="estado" style="margin-left:12px;">
-                  <option value="" selected="selected">UF</option>
-                  <option value="Acre">AC</option>
-                  <option value="Alagoas">AL</option>
-                  <option value="Amazonas">AM</option>
-                  <option value="Amap&aacute;">AP</option>
-                  <option value="Bahia">BA</option>
-                  <option value="Cear&aacute;">CE</option>
-                  <option value="Distrito Federal">DF</option>
-                  <option value="Espirito Santo">ES</option>
-                  <option value="Goi&aacute;s">GO</option>
-                  <option value="Maranh&atilde;o">MA</option>
-                  <option value="Minas Gerais">MG</option>
-                  <option value="Mato Grosso do Sul">MS</option>
-                  <option value="Mato Grosso">MT</option>
-                  <option value="Par&aacute;">PA</option>
-                  <option value="Para&iacute;ba">PB</option>
-                  <option value="Pernambuco">PE</option>
-                  <option value="Piau&iacute;">PI</option>
-                  <option value="Paran&aacute;">PR</option>
-                  <option value="Rio de Janeiro">RJ</option>
-                  <option value="Rio Grande do Norte">RN</option>
-                  <option value="Rond&ocirc;nia">RO</option>
-                  <option value="Roraima">RR</option>
-                  <option value="Rio Grande do Sul">RS</option>
-                  <option value="Santa Catarina">SC</option>
-                  <option value="Sergipe">SE</option>
-                  <option value="S&atilde;o Paulo">SP</option>
-                  <option value="Tocantins">TO</option>
-              </select>
-              <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
+              <div span="span2 pull-right">
+                <i class="ico-tv ico-cidade"></i>
+                <select id="estado" name="estado" style="margin-left:12px;">
+                    <option value="" selected="selected">UF</option>
+                    <option value="Acre">AC</option>
+                    <option value="Alagoas">AL</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="Amap&aacute;">AP</option>
+                    <option value="Bahia">BA</option>
+                    <option value="Cear&aacute;">CE</option>
+                    <option value="Distrito Federal">DF</option>
+                    <option value="Espirito Santo">ES</option>
+                    <option value="Goi&aacute;s">GO</option>
+                    <option value="Maranh&atilde;o">MA</option>
+                    <option value="Minas Gerais">MG</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Par&aacute;">PA</option>
+                    <option value="Para&iacute;ba">PB</option>
+                    <option value="Pernambuco">PE</option>
+                    <option value="Piau&iacute;">PI</option>
+                    <option value="Paran&aacute;">PR</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Rio Grande do Norte">RN</option>
+                    <option value="Rond&ocirc;nia">RO</option>
+                    <option value="Roraima">RR</option>
+                    <option value="Rio Grande do Sul">RS</option>
+                    <option value="Santa Catarina">SC</option>
+                    <option value="Sergipe">SE</option>
+                    <option value="S&atilde;o Paulo">SP</option>
+                    <option value="Tocantins">TO</option>
+                </select>
+              </div>
+              <div class="span9 pull-right">
+                <input type="text" name="cidade" placeholder="Sua cidade"/>
+              </div>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-link"></i>
