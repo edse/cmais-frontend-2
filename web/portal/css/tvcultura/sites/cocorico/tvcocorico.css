@@ -56,8 +56,8 @@
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 center; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
-.interatividade .form-campos #msgErro,
-.interatividade .form-campos #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; color: yellow; height: 317px;} 
+.interatividade #msgErro,
+.interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; color: yellow; height: 317px;} 
 .interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:70px; overflow:auto; color:#747b3a;padding:10px;}
 
