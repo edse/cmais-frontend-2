@@ -183,7 +183,7 @@
                 <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
               <div class="span2 estado">
-                <select id="estado" name="estado" class="span12">
+                <select id="estado" name="estado" class="span12 required">
                     <option value="" selected="selected">UF</option>
                     <option value="Acre">AC</option>
                     <option value="Alagoas">AL</option>
@@ -219,7 +219,7 @@
               <i class="ico-tv ico-link"></i>
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div>
-            <div class="row-fluid">
+            <div class="row-fluid" style="position: relative;">
               <label class="radio" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
               <input type="radio" name="concorda" id="concorda" value="aceite" style="position: absolute;top: 0px;left: 10px;">
             </div>
@@ -418,10 +418,6 @@ function sendAnswer(){
           required: true,
           minlength: 3
         },
-        estado:{
-          required: true,
-          minlength: 2
-        },
         link:{
           required:true
         },
@@ -433,7 +429,7 @@ function sendAnswer(){
         nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-        estado: "Este campo &eacute; Obrigat&oacute;rio.",
+        link: "Este campo &eacute; Obrigat&oacute;rio.",
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
