@@ -1,10 +1,19 @@
+<?php
+if(isset($pager)){
+  if($pager->count() == 1){
+    header("Location: ".$pager->getCurrent()->retriveUrl());
+    die();
+  }  
+} 
+?>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- Le styles--> 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
-
-<!-- container-->
+ 
+<!-- container--> 
 <div class="container tudo receitinhas">
   <!-- row-->
   <div class="row-fluid menu">
@@ -28,41 +37,95 @@
   <div class="convidados">
     <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>
-  <!--row-->
+  
+  
+   <!-- PAGINACAO -->  	
+     <?php if(isset($pager)): ?>
+     <?php if($pager->haveToPaginate()): ?>
+  	<!--row-->
   <div class="row-fluid">
     <div class="paginacao">
-      <a href="#" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
-      <a href="#" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
+      <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
+      <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
     </div>
-  </div>
+  
   <!-- /row-->
-  <!--row-->
+  
+  <form id="page_form" action="" method="post">
+    <input type="hidden" name="return_url" value="<?php echo $url?>" />
+    <input type="hidden" name="page" id="page" value="" />
+    <input type="hidden" name="term" id="term" value="<?php echo $term ?>" />
+    <input type="hidden" name="filter" id="filter" value="<?php echo $filter ?>" />
+  </form>
+  
+  <script>
+     function goToPage(i){
+       $("#page").val(i);
+       $("#page_form").submit();
+     }
+  </script>
+  
+   <?php endif; ?>
+     <?php endif; ?>
+
+  </div>
+    <!--row-->
+    <!-- /PAGINACAO -->
+    
   <div class="row-fluid conteudo">
-   <h3>Astronauta marcos pontes</h3>
-   <span class="data">00/00/0000</span>
-   <a class="span6"><img src="/portal/images/capaPrograma/cocorico2/jogo-home.jpg" alt="convidado" /></a>
+   <h3><?php echo $d->getTitle() ?></h3>
+   <span class="data"><?php echo $d->getHeadlineShort() ?></span>
+   <a class="span6"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /></a>
    <div class="span6">
-     <p class="frase"><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. <span class="last"></span></p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur blandit laoreet. In hac habitasse platea dictumst. Quisque suscipit elementum erat in rutrum. Aliquam malesuada arcu sed sapien sagittis vel dictum nulla accumsan. Nunc a venenatis dolor. Sed mollis feugiat sapien et semper. Nulla nec purus eros, id suscipit lorem. Mauris mattis enim eget quam condimentum eu dapibus lectus adipiscing. Phasellus tincidunt sollicitudin rutrum. Sed non nisi nisl, nec sodales elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas vitae lorem a metus sodales ponvallis. </p>
+     <p class="frase"><span></span><?php echo $d->getHeadline() ?>
    </div>
-   
+   <?php echo html_entity_decode($asset->AssetContent->render()) ?>
   </div>
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="tit">Assista à participação na íntegra:</p>
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/PZENwhml0Xc" frameborder="0" allowfullscreen></iframe>
+  	<p class="tit">Assista à participação na íntegra:</p>
+  	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php if (count($related) > 0): ?>
+      	<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>  
+      <?php endif; ?>
+    
    
   </div>
   <!-- /row-->
-  <!--row-->
+
+   <!-- PAGINACAO -->  
+     <?php if(isset($pager)): ?>
+     <?php if($pager->haveToPaginate()): ?>	
+  	<!--row-->
   <div class="row-fluid">
     <div class="paginacao">
-      <a href="#" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
-      <a href="#" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
+      <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
+      <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
     </div>
-  </div>
+  
   <!-- /row-->
+  
+  <form id="page_form" action="" method="post">
+    <input type="hidden" name="return_url" value="<?php echo $url?>" />
+    <input type="hidden" name="page" id="page" value="" />
+    <input type="hidden" name="term" id="term" value="<?php echo $term ?>" />
+    <input type="hidden" name="filter" id="filter" value="<?php echo $filter ?>" />
+  </form>
+  
+  <script>
+     function goToPage(i){
+       $("#page").val(i);
+       $("#page_form").submit();
+     }
+  </script>
+  
+   <?php endif; ?>
+     <?php endif; ?>
+
+  </div>
+    <!--row-->
+    <!-- /PAGINACAO -->
 
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
