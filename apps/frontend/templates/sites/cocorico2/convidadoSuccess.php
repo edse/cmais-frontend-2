@@ -68,7 +68,7 @@ if(isset($pager)){
    <?php endif; ?>
      <?php endif; ?>
 
-  </div>
+  </div> 
     <!--row-->
     <!-- /PAGINACAO -->
     
