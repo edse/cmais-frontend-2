@@ -13,7 +13,7 @@ if(isset($pager)){
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
  
-<!-- container-->
+<!-- container--> 
 <div class="container tudo receitinhas">
   <!-- row-->
   <div class="row-fluid menu">
