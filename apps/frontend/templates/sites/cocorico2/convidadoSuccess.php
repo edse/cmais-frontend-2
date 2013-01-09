@@ -73,11 +73,11 @@ if(isset($pager)){
     <!-- /PAGINACAO -->
     
   <div class="row-fluid conteudo">
-   <h3><?php echo $d->getTitle() ?></h3>
-   <span class="data"><?php echo $d->getHeadlineShort() ?></span>
-   <a class="span6"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /></a>
+   <h3><?php echo $asset->getTitle() ?></h3>
+   <span class="data"><?php echo $asset->getHeadlineShort() ?></span>
+   <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
    <div class="span6">
-     <p class="frase"><span></span><?php echo $d->getHeadline() ?>
+     <p class="frase"><span></span><?php echo $asset->getHeadline() ?>
    </div>
    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
   </div>
