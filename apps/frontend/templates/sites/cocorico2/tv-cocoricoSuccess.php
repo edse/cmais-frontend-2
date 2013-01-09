@@ -233,7 +233,16 @@
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-          
+        <div id="msgAcerto">
+          Seu vídeo foi enviado com sucesso!<br/>
+          <hr>
+          para assistir ao vivo, continue ligado na TV cocórico!          
+        </div>
+        <div id="msgErro">
+          Seu vídeo não foi enviado!<br/>
+          <hr>
+          tente novamente mais tarde!
+        </div>  
 
       </div>
       <!-- form interatividade -->
@@ -392,15 +401,16 @@ function sendAnswer(){
           success: function(data){
             //window.location.href="#";
             if(data == "1"){
-              //$("#form-contato").clearForm();
               $('input#enviar').show()
               $('img#ajax-loader').hide();
-              alert("fui");
+              $('#form-contato').hide(); 
+              $('#msgAcerto').show();           
             }
             else {
-              //$(".msgErro").show();
               $('img#ajax-loader').hide();
-              alert("nao fui")
+              $('input#enviar').show()
+              $('#form-contato').hide();
+              $("#msgErro").show();
             }
           }
         });         
