@@ -233,12 +233,12 @@
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <div id="msgAcerto">
+        <div id="msgAcerto" style="display:none;">
           Seu vídeo foi enviado com sucesso!<br/>
           <hr>
           para assistir ao vivo, continue ligado na TV cocórico!          
         </div>
-        <div id="msgErro">
+        <div id="msgErro" style="display:none;">
           Seu vídeo não foi enviado!<br/>
           <hr>
           tente novamente mais tarde!
