@@ -384,7 +384,7 @@ function sendAnswer(){
         $.ajax({
           type: "POST",
           dataType: "text",
-          data: $("#form-contato").serialize(),
+          //data: $("#form-contato").serialize(),
           beforeSend: function(){
             $('input#enviar').hide()
             $('img#ajax-loader').show();
