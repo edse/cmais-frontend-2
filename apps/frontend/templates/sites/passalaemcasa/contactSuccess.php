@@ -93,7 +93,7 @@
                     Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL).
                   </p>
                 
-                <a href="http://www.pessoacomdeficiencia.sp.gov.br/" title="Secretaria dos direitos da pessoa com deficiência" target="_blank" style="color:#9f7abf;">http://www.pessoacomdeficiencia.sp.gov.br/</a>
+                
                 
                 
                   <div class="msgErro" style="display:none">
