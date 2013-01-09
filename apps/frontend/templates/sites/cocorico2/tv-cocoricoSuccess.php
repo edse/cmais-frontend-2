@@ -220,7 +220,7 @@
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div>
             <div class="row-fluid" style="position: relative;">
-              <label class="radio" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
+              <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
               <input type="radio" name="concorda" id="concorda" value="aceite" style="position: absolute;top: 0px;left: 10px;">
             </div>
           </div>
@@ -233,7 +233,17 @@
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-          
+        <div id="msgAcerto" style="display:none;">
+          <p>Seu vídeo foi enviado com sucesso!</p>
+          <hr>
+          <p>para assistir ao vivo, continue ligado na TV cocórico!</p>          
+        </div>
+        <div id="msgErro" style="display:none;">
+          <p> Seu vídeo não foi enviado!<br/> 
+            <hr>
+            tente novamente mais tarde!
+          </p>
+        </div>  
 
       </div>
       <!-- form interatividade -->
@@ -392,15 +402,16 @@ function sendAnswer(){
           success: function(data){
             //window.location.href="#";
             if(data == "1"){
-              //$("#form-contato").clearForm();
               $('input#enviar').show()
               $('img#ajax-loader').hide();
-              alert("fui");
+              $('#form-contato').hide(); 
+              $('#msgAcerto').show();           
             }
             else {
-              //$(".msgErro").show();
               $('img#ajax-loader').hide();
-              alert("nao fui")
+              $('input#enviar').show()
+              $('#form-contato').hide();
+              $("#msgErro").show();
             }
           }
         });         
