@@ -420,7 +420,7 @@ function sendAnswer(){
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         estado: "Este campo &eacute; Obrigat&oacute;rio.",
         assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-        concorda: "Este campo &eacute; Obrigat&oacute;rio.";
+        concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
         // set &nbsp; as text for IE
