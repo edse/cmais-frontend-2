@@ -171,46 +171,56 @@
             3 - Phasellus ligula nulla, rhoncus nec adipiscing sit amet<br/>
           </p>
           <div class="row-fluid form-campos">
-            <i class="ico-tv ico-pessoa"></i>
-            <i class="ico-tv ico-cidade"></i>
-            <i class="ico-tv ico-link"></i>
-            <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
-            <select class="span2 pull-right" id="estado" style="margin-left:12px;">
-                <option value="" selected="selected">UF</option>
-                <option value="Acre">AC</option>
-                <option value="Alagoas">AL</option>
-                <option value="Amazonas">AM</option>
-                <option value="Amap&aacute;">AP</option>
-                <option value="Bahia">BA</option>
-                <option value="Cear&aacute;">CE</option>
-                <option value="Distrito Federal">DF</option>
-                <option value="Espirito Santo">ES</option>
-                <option value="Goi&aacute;s">GO</option>
-                <option value="Maranh&atilde;o">MA</option>
-                <option value="Minas Gerais">MG</option>
-                <option value="Mato Grosso do Sul">MS</option>
-                <option value="Mato Grosso">MT</option>
-                <option value="Par&aacute;">PA</option>
-                <option value="Para&iacute;ba">PB</option>
-                <option value="Pernambuco">PE</option>
-                <option value="Piau&iacute;">PI</option>
-                <option value="Paran&aacute;">PR</option>
-                <option value="Rio de Janeiro">RJ</option>
-                <option value="Rio Grande do Norte">RN</option>
-                <option value="Rond&ocirc;nia">RO</option>
-                <option value="Roraima">RR</option>
-                <option value="Rio Grande do Sul">RS</option>
-                <option value="Santa Catarina">SC</option>
-                <option value="Sergipe">SE</option>
-                <option value="S&atilde;o Paulo">SP</option>
-                <option value="Tocantins">TO</option>
-            </select>   
-            <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
-            <input type="text" class="span11 pull-right" name="nome" placeholder="Link do seu vídeo no You Tube"/>
-            <label class="radio" style="clear: both; color:#FFF">
-              <input type="radio" name="concorda" id="concorda" value="aceite">
-              Estou ciente e de acordo com os Termos e Condições abaixo:
-            </label>
+            
+            
+            <div>
+              <i class="ico-tv ico-pessoa"></i>
+              <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
+            </div>
+            <div>
+              <i class="ico-tv ico-cidade"></i>
+              <select class="span2 pull-right" id="estado" style="margin-left:12px;">
+                  <option value="" selected="selected">UF</option>
+                  <option value="Acre">AC</option>
+                  <option value="Alagoas">AL</option>
+                  <option value="Amazonas">AM</option>
+                  <option value="Amap&aacute;">AP</option>
+                  <option value="Bahia">BA</option>
+                  <option value="Cear&aacute;">CE</option>
+                  <option value="Distrito Federal">DF</option>
+                  <option value="Espirito Santo">ES</option>
+                  <option value="Goi&aacute;s">GO</option>
+                  <option value="Maranh&atilde;o">MA</option>
+                  <option value="Minas Gerais">MG</option>
+                  <option value="Mato Grosso do Sul">MS</option>
+                  <option value="Mato Grosso">MT</option>
+                  <option value="Par&aacute;">PA</option>
+                  <option value="Para&iacute;ba">PB</option>
+                  <option value="Pernambuco">PE</option>
+                  <option value="Piau&iacute;">PI</option>
+                  <option value="Paran&aacute;">PR</option>
+                  <option value="Rio de Janeiro">RJ</option>
+                  <option value="Rio Grande do Norte">RN</option>
+                  <option value="Rond&ocirc;nia">RO</option>
+                  <option value="Roraima">RR</option>
+                  <option value="Rio Grande do Sul">RS</option>
+                  <option value="Santa Catarina">SC</option>
+                  <option value="Sergipe">SE</option>
+                  <option value="S&atilde;o Paulo">SP</option>
+                  <option value="Tocantins">TO</option>
+              </select>
+              <input type="text" class="span9 pull-right" name="cidade" placeholder="Sua cidade"/>
+            </div>
+            <div>
+              <i class="ico-tv ico-link"></i>
+              <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
+            </div>
+            <div>
+              <label class="radio" style="clear: both; color:#FFF">
+                <input type="radio" name="concorda" id="concorda" value="aceite">
+                Estou ciente e de acordo com os Termos e Condições abaixo:
+              </label>
+            </div>
           </div>
           
           <div class="regras">
@@ -410,6 +420,9 @@ function sendAnswer(){
           required: true,
           minlength: 2
         },
+        link:{
+          required:true
+        },
         concorda:{
           required: true
         }
@@ -419,7 +432,6 @@ function sendAnswer(){
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         estado: "Este campo &eacute; Obrigat&oacute;rio.",
-        assunto: "Este campo &eacute; Obrigat&oacute;rio.",
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
