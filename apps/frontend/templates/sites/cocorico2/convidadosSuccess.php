@@ -94,11 +94,11 @@
   <div class="row-fluid conteudo destaques">
   	<ul id="convidados">
 		<?php foreach($pager->getResults() as $d): ?>
-    	  <?php if($k > 0): ?>
+    	  
       <li class="span4">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("preview") ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a>  
       </li>
-      	 <?php endif; ?>
+      	
         <?php endforeach; ?>
        </ul>
      <?php endif; ?> 
