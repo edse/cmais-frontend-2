@@ -239,7 +239,7 @@
           para assistir ao vivo, continue ligado na TV cocórico!          
         </div>
         <div id="msgErro" style="display:none;">
-          Seu vídeo não foi enviado!<br/>
+          Seu vídeo não foi enviado!<br/> 
           <hr>
           tente novamente mais tarde!
         </div>  
