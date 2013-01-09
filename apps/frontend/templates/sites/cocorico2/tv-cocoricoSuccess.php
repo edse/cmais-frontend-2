@@ -179,7 +179,7 @@
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-cidade"></i>
-              <select class="span2 pull-right" id="estado" style="margin-left:12px;">
+              <select class="span2 pull-right" id="estado" name="estado" style="margin-left:12px;">
                   <option value="" selected="selected">UF</option>
                   <option value="Acre">AC</option>
                   <option value="Alagoas">AL</option>
