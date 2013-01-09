@@ -46,7 +46,7 @@
        
     <div class="topo-programa" id="home">
       
-      <div id="horario" style="margin-top:10px;">
+      <div id="horario" style="margin-top:10px;top:0;">
         <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
     
