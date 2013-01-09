@@ -1,3 +1,12 @@
+<?php
+if(isset($pager)){
+  if($pager->count() == 1){
+    header("Location: ".$pager->getCurrent()->retriveUrl());
+    die();
+  }  
+} 
+?>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- Le styles--> 
@@ -28,15 +37,41 @@
   <div class="convidados">
     <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>
-  <!--row-->
+  
+  <?php if(isset($pager)): ?>
+     <?php if($pager->haveToPaginate()): ?>
+   
+   <!-- PAGINACAO -->  	
+  	<!--row-->
   <div class="row-fluid">
     <div class="paginacao">
-      <a href="#" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
-      <a href="#" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
+      <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
+      <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
     </div>
-  </div>
+  
   <!-- /row-->
-  <!--row-->
+  
+  <form id="page_form" action="" method="post">
+    <input type="hidden" name="return_url" value="<?php echo $url?>" />
+    <input type="hidden" name="page" id="page" value="" />
+    <input type="hidden" name="term" id="term" value="<?php echo $term ?>" />
+    <input type="hidden" name="filter" id="filter" value="<?php echo $filter ?>" />
+  </form>
+  
+  <script>
+     function goToPage(i){
+       $("#page").val(i);
+       $("#page_form").submit();
+     }
+  </script>
+  
+   <?php endif; ?>
+     <?php endif; ?>
+
+  </div>
+    <!--row-->
+    <!-- /PAGINACAO -->
+    
   <div class="row-fluid conteudo">
    <h3>Astronauta marcos pontes</h3>
    <span class="data">00/00/0000</span>
