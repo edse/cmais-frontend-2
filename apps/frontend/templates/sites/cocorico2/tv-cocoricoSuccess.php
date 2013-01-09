@@ -180,7 +180,7 @@
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               <div class="span9">
-                <input type="text" name="cidade" class="span11" placeholder="Sua cidade"/>
+                <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
               <div class="span2 estado">
                 <select id="estado" name="estado" class="span12">
@@ -220,10 +220,8 @@
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div>
             <div class="row-fluid">
-              <label class="radio" style="clear: both; color:#FFF">
-                <input type="radio" name="concorda" id="concorda" value="aceite">
-                Estou ciente e de acordo com os Termos e Condições abaixo:
-              </label>
+              <input type="radio" name="concorda" id="concorda" value="aceite">
+              <label class="radio" style="clear: both; color:#FFF"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
             </div>
           </div>
           
