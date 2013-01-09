@@ -57,6 +57,7 @@
 .interatividade .form-campos .ico-cidade{background-position: 0 center; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
 .interatividade #msgErro p,
+.interatividade #msgAcerto p{color:yellow; padding-top: 110px;} 
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 317px;} 
 .interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
