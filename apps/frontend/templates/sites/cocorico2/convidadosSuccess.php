@@ -25,19 +25,19 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Convidados</li>
   </ul>
   <!-- /breadcrumb-->
   
   <!-- titulo da pagina -->
   <div class="tit-pagina">
-    <h2>Convidado do dia</h2>
+    <h2>Convidados</h2>
   </div>
   <!-- titulo da pagina -->
+  
   <!-- paginacao -->
-  <div class="pagination" id="alfabeto">
+  <!--<div class="pagination" id="alfabeto">
     <ul>
       <li class="active"><a href="#" title="1">A</a><span class="divider">|</span></li>
       <li><a href="#" title="1">B</a><span class="divider">|</span></li>
@@ -73,8 +73,9 @@
     </form>
   </div>
   <!-- /paginacao -->
+  
   <!-- paginacao -->
-  <div class="pagination pagination-centered">
+  <!--<div class="pagination pagination-centered">
     <ul>
       <li class="anterior"><a href="#" title="Anterior"></a></li>
       <li class="active"><a href="#" title="1">1</a></li>
@@ -87,86 +88,24 @@
   </div>
   <!-- /paginacao -->
   <!--row-->
+  
+  <?php if(count($assets) > 0): ?>
   <div class="row-fluid conteudo destaques">
-    <ul id="convidados">
+  	<ul id="convidados">
+		<?php foreach($assets as $k=>$d): ?>
+    	  <?php if($k > 0): ?>
+         	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
       <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
+        <a href="<?php echo $assets->retriveUrl() ?>" title="<?php echo $assets->getTitle() ?>"><img class="span12" src="<?php echo $related->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets->getTitle() ?>" /><?php echo $assets->getTitle() ?></a>  
       </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-      <li class="span4">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a>  
-      </li>
-    </ul>
-     
+      	 <?php endif; ?>
+        <?php endforeach; ?>
+       </ul>
+     <?php endif; ?> 
   </div>
   <!-- /row-->
-  <!-- paginacao -->
-  <div class="pagination pagination-centered">
+ <!-- paginacao -->
+  <!--<div class="pagination pagination-centered">
     <ul>
       <li class="anterior"><a href="#" title="Anterior"></a></li>
       <li class="active"><a href="#" title="1">1</a></li>
