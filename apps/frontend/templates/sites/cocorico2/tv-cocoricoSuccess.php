@@ -434,8 +434,9 @@ function sendAnswer(){
       },
       success: function(label){
         // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
-        $("label.checked").css("display","none");
+        label.addClass("checked");
+        $("label.error.checked").css("display","none");
+        label.html("&nbsp;");
       }
     });
   });
