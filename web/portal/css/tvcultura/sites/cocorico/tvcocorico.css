@@ -57,9 +57,11 @@
 .interatividade .form-campos .ico-cidade{background-position: 0 center; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
 .interatividade #msgErro p,
-.interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}  
+.interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
+.interatividade #msgErro hr,
+.interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
-.interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 317px;} 
+.interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
 .interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:70px; overflow:auto; color:#747b3a;padding:10px;}
 
@@ -74,7 +76,7 @@
 .conteudo-diverso{background-color: #f2722f;}
 .conteudo-diverso p{color:#fdf035;}
 a.destaque1:hover,
-a.destaque2:hover{text-decoration: none}
+a.destaque2:hover{text-decoration: none} 
 
 .destaque-1{border-radius:9px; margin-top:30px;position:relative;}
 .destaque-2{border-radius:9px; margin-top:30px;position:relative;}
