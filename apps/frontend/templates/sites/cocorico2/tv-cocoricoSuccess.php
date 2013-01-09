@@ -410,7 +410,7 @@ function sendAnswer(){
           required: true,
           minlength: 2
         },
-        concorda{
+        concorda:{
           required: true
         }
       },
