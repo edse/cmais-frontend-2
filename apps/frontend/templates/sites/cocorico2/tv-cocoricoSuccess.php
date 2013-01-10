@@ -13,6 +13,22 @@
     $displays['enquete'] = $blocks[0]->retriveDisplays();
   }
 ?>
+<?php
+  $displays = array();
+  $blocks = Doctrine_Query::create()
+   ->select('b.*')
+    ->from('Block b, Section s')
+    ->where('b.section_id = s.id')
+    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
+    ->andWhere('s.site_id = ?', $site->id)
+    ->execute();
+
+  if(count($blocks) > 0){
+    $displays['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
+  }
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->
@@ -45,7 +61,19 @@
       <!-- tv cocorico -->
       <div class="tvcoco span12">
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
-        <a class="convidado span12" href="/cocorico/tvcocorico/convidado" title=""><img src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
+        <?php if(isset($displays['destaque-tv-cocorico'])):?>
+          <?php if(count($displays['destaque-tv-cocorico']) > 0): ?>
+            <?php
+              $display_img_src = $displays['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('original');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-tv-cocorico'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+              }
+            ?>
+            
+        <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
+          <?php endif; ?>
+        <?php endif; ?>
         <!-- enquete -->
         <?php
         //pergunta bloco enquete - 1º destaque
