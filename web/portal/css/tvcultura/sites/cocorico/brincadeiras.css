@@ -145,9 +145,9 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* /radio */
 
 /* scrollbar p/ chome*/
-::-webkit-scrollbar { height: 12px; width: 18px; background:none; }
-::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
-::-webkit-scrollbar-corner { background: #fff;}
+#radio::-webkit-scrollbar { height: 12px; width: 18px; background:none; }
+#radio::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
+#radio::-webkit-scrollbar-corner { background: #fff;}
 
 /* /BRINCADEIRAS */
 
