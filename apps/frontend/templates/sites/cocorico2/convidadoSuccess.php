@@ -39,11 +39,13 @@ if(isset($pager)){
   </div>
   
   
-   <!-- PAGINACAO -->  	
+  
+  <div class="row-fluid">
+  	 <!-- PAGINACAO -->  	
      <?php if(isset($pager)): ?>
      <?php if($pager->haveToPaginate()): ?>
   	<!--row-->
-  <div class="row-fluid">
+  	
     <div class="paginacao">
       <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
       <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
@@ -93,11 +95,12 @@ if(isset($pager)){
   </div>
   <!-- /row-->
 
-   <!-- PAGINACAO -->  
+ 
+  <div class="row-fluid">
+  	  <!-- PAGINACAO -->  
      <?php if(isset($pager)): ?>
      <?php if($pager->haveToPaginate()): ?>	
   	<!--row-->
-  <div class="row-fluid">
     <div class="paginacao">
       <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="anterior" title="Convidado anterior"><span></span>Convidado Anterior</a>
       <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="proximo" title="Próximo Convidado">Próximo Convidado<span></span></a>
