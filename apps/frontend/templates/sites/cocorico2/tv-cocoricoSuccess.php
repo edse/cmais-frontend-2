@@ -176,8 +176,8 @@
       <div class="destaque-home-tv span9">
       	<?php if(isset($displays['destaque-seu-video'])):?>
         <?php if(count($displays['destaque-seu-video']) > 0): ?>   		
-        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle() ?>”</h2>
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
+        <h2><?php echo $displays['destaque-seu-video']->getTitle() ?>”</h2>
+        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video']->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
          <?php endif; ?>
           <?php endif; ?>
         <div class="destaque span12">
