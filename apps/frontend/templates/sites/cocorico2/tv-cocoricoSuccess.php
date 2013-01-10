@@ -31,7 +31,7 @@
       <!-- tv cocorico -->
       
       <?php
-  	//$displays = array();
+  	$displays_home = array();
  	$blocks = Doctrine_Query::create()
    	->select('b.*')
     ->from('Block b, Section s')
@@ -42,7 +42,7 @@
     ->execute();
 
   if(count($blocks) > 0){
-    $displays['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
+    $displays_home['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
   }
 ?>
 
