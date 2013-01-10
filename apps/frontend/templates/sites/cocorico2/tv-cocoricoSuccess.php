@@ -96,7 +96,7 @@
     
         ?>
          <div class="enquete span12">
-         	
+         	 
           <h3>enquete do dia</h3>
           <p><?php echo $q;?></p>
           <!--Pergunta-->
