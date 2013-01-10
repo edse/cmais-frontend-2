@@ -31,7 +31,7 @@
       <!-- tv cocorico -->
       
       <?php
-  	//$displays = array();
+  	$displays_home = array();
  	$blocks = Doctrine_Query::create()
    	->select('b.*')
     ->from('Block b, Section s')
@@ -42,7 +42,7 @@
     ->execute();
 
   if(count($blocks) > 0){
-    $displays['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
+    $displays_home['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
   }
 ?>
 
@@ -63,10 +63,10 @@
         <?php endif; ?>
         <!-- enquete -->
         <?php
- 		 //$displays = array();
+ 		 $displays_home = array();
  		 $blocks = Doctrine_Query::create()
   		 ->select('b.*')
-  		 ->from('Block b, Section s')
+  		 ->from('Block b, Section s') 
     	 ->where('b.section_id = s.id')
     	 ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
       	 ->andWhere('b.slug = ?', 'enquete') 
@@ -74,7 +74,7 @@
      	 ->execute();
 
   		if(count($blocks) > 0){
-    	$displays['enquete'] = $blocks[0]->retriveDisplays();
+    	$displays_home['enquete'] = $blocks[0]->retriveDisplays();
   }
 ?>
         <?php
