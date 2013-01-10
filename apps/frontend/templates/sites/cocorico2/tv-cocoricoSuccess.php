@@ -31,7 +31,7 @@
       <!-- tv cocorico -->
       
       <?php
-  	$displays = array();
+  	//$displays = array();
  	$blocks = Doctrine_Query::create()
    	->select('b.*')
     ->from('Block b, Section s')
@@ -63,7 +63,7 @@
         <?php endif; ?>
         <!-- enquete -->
         <?php
- 		 $displays = array();
+ 		 //$displays = array();
  		 $blocks = Doctrine_Query::create()
   		 ->select('b.*')
   		 ->from('Block b, Section s')
