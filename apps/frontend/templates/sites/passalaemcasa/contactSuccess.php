@@ -88,7 +88,7 @@
                   ou ações particulares, desde ações pessoais para mudar a qualidade de vida de alguém 
                   om deficiência (seja física, mental, motora, auditiva ou visual) até ações coletivas 
                   de grupos sociais.
-                  </p>
+                 <br><br>
                     Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL). 
                   </p>
                 
