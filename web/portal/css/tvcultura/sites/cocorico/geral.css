@@ -11,6 +11,8 @@ ul li { list-style:none; }
 .menu .navbar-inner {  background:none; border:none; box-shadow:none; }
 
 /* font-familt ubuntu */
+.destaque2 .radio a,
+.form-search p,
 .frase p span,
 .conteudo .data,
 .conteudo h3,
@@ -39,6 +41,8 @@ ul li { list-style:none; }
 #naweb .instagram h3{ font-family: 'Ubuntu', sans-serif; }
 
 /*border-radius 10px*/
+.destaque-1,
+.destaque-2,
 .autografo,
 .border-radius10,
 .modal-body img,
@@ -165,7 +169,7 @@ input.search-query,
 .breadcrumb a { font-size: 10px; text-transform:uppercase; color:#1893cf; text-shadow:none; }
 .breadcrumb .active { text-decoration:underline; }
 
-.tit-pagina { margin:0 0 20px 0; height:40px; line-height:40px; display:block; position:relative; float:left; overflow:hidden; }
+.tit-pagina { margin:0 0 20px 0; height:40px; line-height:40px; display:block; position:relative; float:left; overflow:hidden; min-width: 200px; max-width: 793px; }
 .tit-pagina h2 {font-size:30px; font-weight:normal; text-transform:uppercase; text-decoration:none; color:#fff; margin:0; }
 .tit-pagina,
 .tit-pagina:hover {font-size:30px; font-weight:normal; text-transform:uppercase; text-decoration:none; padding:0 20px; border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; color:#fff;  }
@@ -201,7 +205,7 @@ input.search-query,
 .likes li.ativo {  background-image:url(/portal/images/capaPrograma/cocorico/estrela-ativa.png); }
 
 .destaques-small { margin:0; }
-.destaques-small a { color:#fff; display: block; text-align:center; overflow:hidden; font-weight:normal; text-decoration:none; }.destaques-small li a { display:block;color:#fff; } .destaques-small a:hover { text-decoration:none; }
+.destaques-small a { max-height:104px; color:#fff; display: block; text-align:center; overflow:hidden; font-weight:normal; text-decoration:none; }.destaques-small li a { display:block;color:#fff; } .destaques-small a:hover { text-decoration:none; }
 .destaques-small li { margin-bottom:10px; }
 .destaques-small li { overflow:hidden;  }
 
@@ -211,7 +215,7 @@ input.search-query,
 .relacionados { clear: both; }
 .relacionados .tit a:hover { text-decoration:none; } 
 .relacionados .destaques-small { background:url(/portal/images/capaPrograma/cocorico/fundo-transparente.png) repeat; overflow:hidden; padding:30px 10px 0 10px; margin:10px; border:2px solid #1eb9e2; }
-.relacionados .destaques-small li { margin:0 24px 10px 0; }
+/*onados .destaques-small li { margin:0 24px 10px 0; }*/
 .relacionados .destaques-small li:last-child { margin-right:0; }
 .relacionados .tit { position:relative; top:33px; display:inline-block;  }
 
