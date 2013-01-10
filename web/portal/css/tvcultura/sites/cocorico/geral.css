@@ -33,7 +33,10 @@ ul li { list-style:none; }
 .tit,
 .tit-pagina,
 .menu .navbar .nav > li > a,
-#lista-enquetes .lista{ font-family: 'Ubuntu', sans-serif; }
+#lista-enquetes .lista,
+#naweb .destaque h2,
+#naweb .destaque .btn-inscreva-se .btn-destaque,
+#naweb .instagram h3{ font-family: 'Ubuntu', sans-serif; }
 
 /*border-radius 10px*/
 .autografo,
