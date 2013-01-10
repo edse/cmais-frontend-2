@@ -174,11 +174,48 @@
       
       <!-- form interatividade -->
       <div class="destaque-home-tv span9">
-      	<?php if(isset($displays['destaque-seu-video'])):?>
-        <?php if(count($displays['destaque-seu-video']) > 0): ?>   		
-        <h2><?php echo $displays['destaque-seu-video']->getTitle() ?>”</h2>
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video']->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
-         <?php endif; ?>
+      	   <?php if(isset($displays)): ?>
+              <!-- DESTAQUE 2 COLUNAS -->
+              <div class="duas-colunas destaque grid2">
+
+                  <?php if($displays[0]->Asset->AssetType->getSlug() == "image"): ?>
+                  <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
+                  <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays[0]->Asset->getTitle() ?>" name="<?php echo $displays[0]->Asset->getTitle() ?>" />
+                  
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "content" || $displays[0]->Asset->AssetType->getSlug() == "image-gallery"): ?>
+                    <?php $imgs = $displays[0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+                    <?php if(count($imgs) > 0): ?>
+                      <img src="http://midia.cmais.com.br/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $displays[0]->Asset->getTitle() ?>" name="<?php echo $displays[0]->Asset->getTitle() ?>" />
+                    <?php endif; ?>
+                  </a>
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
+                    <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
+                    <object height="390" width="640" style="height:390px; width: 640px">
+                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
+                      <param name="allowFullScreen" value="true" />
+                      <param name="allowscriptaccess" value="always" />
+                      <param name="wmode" value="opaque">
+                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
+                    </object>
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "episode"): ?>
+                    <?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>
+                    <object height="390" width="640" style="height:390px; width: 640px">
+                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
+                      <param name="allowFullScreen" value="true" />
+                      <param name="allowscriptaccess" value="always" />
+                      <param name="wmode" value="opaque">
+                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
+                    </object>
+                  <?php else: ?>
+                  <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
+                  <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays[0]->getTitle() ?>" name="<?php echo $displays[0]->getTitle() ?>" />
+                  <?php endif; ?>
+
+                <a href="<?php echo $displays[0]->retriveUrl() ?>" class="titulos"><?php echo $displays[0]->getTitle() ?></a>
+                <p><?php echo $displays[0]->getDescription() ?></p>
+              </div>
+              <!-- /DESTAQUE 2 COLUNAS -->
           <?php endif; ?>
         <div class="destaque span12">
           <span></span>
