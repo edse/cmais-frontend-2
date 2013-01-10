@@ -74,10 +74,10 @@ if(isset($pager)){
     
   <div class="row-fluid conteudo">
    <h3><?php echo $asset->getTitle() ?></h3>
-   <span class="data"><?php echo $asset->getHeadlineShort() ?></span>
+   <span class="data"><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
    <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
    <div class="span6">
-     <p class="frase"><span></span><?php echo $asset->getHeadline() ?>
+     <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?>
    </div>
    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
   </div>
