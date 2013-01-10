@@ -182,7 +182,7 @@
           <?php endif; ?>
         <div class="destaque span12">
           <span></span>
-          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participe</a>
+          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participe</a> 
           <span class="last"></span>
         </div>
       </div>
