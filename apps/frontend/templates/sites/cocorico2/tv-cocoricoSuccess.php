@@ -177,7 +177,7 @@
       	<?php if(isset($displays['destaque-seu-video'])):?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
        		 <h2>Seu vídeo na TV Cocoricó “Ao vivoooo!”</h2>
-        	 <iframe title="<?php echo $displays[0]->getTitle() ?>" width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+        	 <iframe title="<?php echo $displays['destaque-seu-video'][0]->getTitle() ?>" width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
           <?php endif; ?>
         <?php endif; ?>        
         <div class="destaque span12">
