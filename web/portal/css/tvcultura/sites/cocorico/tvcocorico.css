@@ -217,3 +217,16 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /convidado*/
 .form-horizontal .g-autografo a { display:block; }
 
+/* enquete */
+#lista-enquetes .lista {position: relative;}
+#lista-enquetes .lista .item-lista{padding:0 0 0 30px;}
+#lista-enquetes .lista .resultado{background:yellow;}
+#lista-enquetes .lista .ico-confirma{background:url(/portal/images/capaPrograma/cocorico/ico-confirma.png) no-repeat; width:20px;height:16px;display:block;position: absolute; top: 3px; left: 3px;}
+#lista-enquetes .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0 0 10px 0;color:#6b757d;}
+#lista-enquetes .lista h4{font-weight:bold; font-size:14px;text-transform: uppercase;margin:0}
+#lista-enquetes .lista .resultado{border-radius:10px; font-weight:bold; font-size: 14px;padding:5px 10px;direction: block; float:left; text-transform:uppercase;}
+#lista-enquetes .lista .verde{color:#1db186;}
+#lista-enquetes .lista .ico-versus-enquete{background: url(/portal/images/capaPrograma/cocorico/ico-versus-enquete.png) no-repeat center 8px; width:13; height:14px; padding:10px;float:left}
+#lista-enquetes .lista hr{clear: both; margin: 0; padding-top: 10px; border-bottom: 1px dashed green;}
+/* /enquete */
+
