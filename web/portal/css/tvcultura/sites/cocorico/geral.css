@@ -32,7 +32,8 @@ ul li { list-style:none; }
 .destaques bold,
 .tit,
 .tit-pagina,
-.menu .navbar .nav > li > a { font-family: 'Ubuntu', sans-serif; }
+.menu .navbar .nav > li > a,
+#lista-enquetes .lista{ font-family: 'Ubuntu', sans-serif; }
 
 /*border-radius 10px*/
 .autografo,
