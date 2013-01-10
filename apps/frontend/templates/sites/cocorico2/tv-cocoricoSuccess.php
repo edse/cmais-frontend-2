@@ -79,13 +79,13 @@
 ?>
         <?php
         //pergunta bloco enquete - 1º destaque
-        $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion();
+        $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
 
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
           ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
           ->execute();
           
         //imagens respectivas das respostas
@@ -96,7 +96,7 @@
     
         ?>
          <div class="enquete span12">
-         	
+         	 
           <h3>enquete do dia</h3>
           <p><?php echo $q;?></p>
           <!--Pergunta-->
