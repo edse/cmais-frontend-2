@@ -177,8 +177,8 @@
       	<?php if(isset($displays['destaque-seu-video'])): ?>
       	<?php if(count($displays['destaque-seu-video']) > 0): ?>
       	<?php foreach($displays['destaque-seu-video'] as $k=>$d): ?> 		
-        <h2><?php echo $d->getTitle() ?>”</h2>
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
+        <h2><?php echo $d[0]->getTitle() ?></h2>
+        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $d[0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
         <?php endforeach; ?> 
         <?php endif; ?>
         <?php endif; ?>
