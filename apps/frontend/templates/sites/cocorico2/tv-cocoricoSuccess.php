@@ -165,10 +165,8 @@
         </div>
         <form id="form-contato" method="post" action="">
           <p>
-            Para participar é muito fácil:<br/>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
-            2 - Vestibulum at sapien orci, at placerat turpis.<br/>
-            3 - Phasellus ligula nulla, rhoncus nec adipiscing sit amet<br/>
+            Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!<br/>
+            Grave você sozinho, com seus amigos, em casa ou no seu lugar preferido!  Mas não esqueça da empolgação hein?<br/>
           </p>
           <div class="row-fluid form-campos">
             
