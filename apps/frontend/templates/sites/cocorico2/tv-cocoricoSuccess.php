@@ -171,9 +171,12 @@
         </div>
       </div>
       <!-- /destaque-home -->
-      teste
       <!-- form interatividade -->
       <div class="destaque-home-tv span9">
+      	
+      	<?php echo count($displays['destaque-seu-video'] > 0 ?>
+      	
+      	
       	<?php if(isset($displays['destaque-seu-video'])): ?>
       	<?php if(count($displays['destaque-seu-video']) > 0): ?>
       	<?php echo $displays['destaque-seu-video'][0]->getTitle() ?>
