@@ -174,7 +174,7 @@
       <!-- form interatividade -->
       <div class="destaque-home-tv span9">
       	
-      	<?php echo count($displays['destaque-seu-video'] > 0 ?>
+      	<?php echo count($displays['destaque-seu-video']) ?>
       	
       	
       	<?php if(isset($displays['destaque-seu-video'])): ?>
