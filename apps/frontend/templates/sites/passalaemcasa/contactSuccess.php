@@ -89,8 +89,7 @@
                   om deficiência (seja física, mental, motora, auditiva ou visual) até ações coletivas 
                   de grupos sociais.
                   </p><br/>
-                  <p>
-                    Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL).
+                    Adoraríamos ouvir a sua história, envie para nós em forma de texto e/ ou vídeo (URL). 
                   </p>
                 
                 
