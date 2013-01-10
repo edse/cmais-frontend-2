@@ -1,34 +1,3 @@
-<?php
-  $displays = array();
-  $blocks = Doctrine_Query::create()
-   ->select('b.*')
-    ->from('Block b, Section s')
-    ->where('b.section_id = s.id')
-    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-    ->andWhere('b.slug = ?', 'enquete') 
-    ->andWhere('s.site_id = ?', $site->id)
-    ->execute();
-
-  if(count($blocks) > 0){
-    $displays['enquete'] = $blocks[0]->retriveDisplays();
-  }
-?>
-<?php
-  $displays = array();
-  $blocks = Doctrine_Query::create()
-   ->select('b.*')
-    ->from('Block b, Section s')
-    ->where('b.section_id = s.id')
-    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
-    ->andWhere('s.site_id = ?', $site->id)
-    ->execute();
-
-  if(count($blocks) > 0){
-    $displays['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
-  }
-?>
-
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->
@@ -58,7 +27,25 @@
     <!-- col direita -->
     <div class="span4 col-dir">
       <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      
       <!-- tv cocorico -->
+      
+      <?php
+  	$displays = array();
+ 	$blocks = Doctrine_Query::create()
+   	->select('b.*')
+    ->from('Block b, Section s')
+    ->where('b.section_id = s.id')
+    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
+    ->andWhere('s.site_id = ?', $site->id)
+    ->execute();
+
+  if(count($blocks) > 0){
+    $displays['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
+  }
+?>
+
       <div class="tvcoco span12">
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
         <?php if(isset($displays['destaque-tv-cocorico'])):?>
@@ -75,6 +62,21 @@
           <?php endif; ?>
         <?php endif; ?>
         <!-- enquete -->
+        <?php
+ 		 $displays = array();
+ 		 $blocks = Doctrine_Query::create()
+  		 ->select('b.*')
+  		 ->from('Block b, Section s')
+    	 ->where('b.section_id = s.id')
+    	 ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+      	 ->andWhere('b.slug = ?', 'enquete') 
+     	 ->andWhere('s.site_id = ?', $site->id)
+     	 ->execute();
+
+  		if(count($blocks) > 0){
+    	$displays['enquete'] = $blocks[0]->retriveDisplays();
+  }
+?>
         <?php
         //pergunta bloco enquete - 1º destaque
         $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion();
