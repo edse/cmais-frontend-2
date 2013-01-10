@@ -72,25 +72,24 @@ if(isset($pager)){
     <!--row-->
     <!-- /PAGINACAO -->
     
-  <div class="row-fluid conteudo">
+   <div class="row-fluid conteudo">
    <h3><?php echo $asset->getTitle() ?></h3>
    <span class="data"><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
    <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
    <div class="span6">
-     <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?>
+     <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?> <span class="last"></span></p>
+     <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
    </div>
-   <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+   
   </div>
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo">
-  	<p class="tit">Assista à participação na íntegra:</p>
   	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <?php if (count($related) > 0): ?>
-      	<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>  
-      <?php endif; ?>
-    
-   
+    	<?php if (count($related) > 0): ?>
+    		<p class="tit">Assista à participação na íntegra:</p>
+    			<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+   		 <?php endif; ?>
   </div>
   <!-- /row-->
 
