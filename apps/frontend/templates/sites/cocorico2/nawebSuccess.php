@@ -1,0 +1,105 @@
+<link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
+
+
+<!-- container-->
+<div class="container tudo">
+  <!-- row-->
+  <div class="row-fluid">
+    <div class="topo-coco">
+      <h1 class="span3"><a href="/cocorico" title="Cocorico"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
+      <!-- BOX PUBLICIDADE 2 -->
+      <div class="box-publicidade span9">
+        <!-- portal-cocorico -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("portal-cocorico");
+        </script>
+      </div>
+      <!-- / BOX PUBLICIDADE 2 -->
+       <fb:like href="http://www3.tvcultura.com.br/cocorico/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
+    </div>
+    <div class="divisoria span12"></div>
+  </div>
+  <!-- /row-->
+  <!-- row-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
+  <!-- /row-->
+  
+  <!-- breadcrumb-->
+  <ul class="breadcrumb">
+     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"></li>
+  </ul>
+  <!-- /breadcrumb-->
+  
+  <h2 class="tit-pagina clearfix">na web</h2>
+    
+  
+  <div class="row-fluid conteudo ">    
+    <div class="row-fluid">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna a libero aliquet imper diet at eget ante. Pellentesque accumsan lobortis tellus, tempor dapibus metus bibendum a. Pellent esque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis massa molestie felis varius rutrum. Pellentesque laoreet faucibus viverra. Duis faucibus varius blandit. Donec sit amet diam et dolor feugiat venenatis. Aliquam blandit elit sit amet lectus venenatis sit posueree senectus et netus.</p>  
+    </div>  
+  </div>
+  <!-- conteudo -->
+  <div id="naweb" class="row-fluid conteudo">
+    <!-- youtube -->
+    <div class="destaque span6">
+      <i class="ico-naweb"></i>
+      <h2>youtube.com/tvcocorico</h2>
+        
+      <iframe width="458" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="btn-inscreva-se ">
+        <span></span>
+        <a href="#" class="btn-destaque" title="Inscreva-se em nosso canal!">Inscreva-se em nosso canal!</a>
+        <span class="last"></span>
+      </div>
+    </div>   
+    <!-- /youtube -->
+    
+    <!-- instagram -->
+    <div class="instagram span2">
+      <div class="topo">
+          <div class="bac-blue">
+            <h3>
+              <i class="ico-naweb ico-instagram"></i>
+              instagram<br>
+              <span>@tvcocorico</span>
+              <i class="ico-seta-titulo"></i>
+           </h3>
+         </div>
+       </div>
+       <!-- SnapWidget -->
+        <iframe src="http://snapwidget.com/in/?u=dHZjdWx0dXJhfGlufDEzOHwxfDJ8fG5vfDV8ZmFkZU91dA==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:136px; height: 286px" ></iframe>
+        <div class="borda"></div>
+        
+    </div>   
+    <!-- /instagram -->  
+
+    <!-- facebook e twitter -->
+    <div class="twitter span4">
+      <a href="#" title="Cocórico no Twitter">
+        <img src="/portal/images/capaPrograma/cocorico/naweb-btn-twitter.png"/>
+      </a>
+      <br>
+      
+      <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fcocoricooficial&amp;width=300&amp;height=290&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:265px; background-color:#ffffff;" ></iframe>
+    
+    </div>   
+    <!-- /facebook e twiter-->
+  </div>
+  <!--/conteudo-->
+  
+  <div class="row-fluid  border-top"></div>
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  <!-- /row-->
+</div>
+<!-- /container-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=418273974898589";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

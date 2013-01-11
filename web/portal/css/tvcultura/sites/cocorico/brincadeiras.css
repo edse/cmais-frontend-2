@@ -185,10 +185,15 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque2 .radio a:hover { text-decoration:none; }
 .destaque2 .radio a span { color:#FDF035; margin-left:3px; }
 .destaque2 .radio .borda { background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -10px 0; width:10px; height:40px; display:block; float:left; }
-.bastidores.span4 { margin-left:auto; float: right; margin-top:30px; }
+.bastidores.span4 { margin-left:auto; float: right; margin-top:30px; border: none; }
 .bastidores.span4 .topo h3 i.ico-colorir {  background: url(/portal/images/capaPrograma/cocorico/ico-colorir.png) no-repeat; width: 20px; height: 17px; display: block; float: left; margin-top:2px; margin:5px 5px 0 0; }
 .bastidores .topo h3 { color:#F2722F; }
+.bastidores .topo .ico-seta-titulo { right:42%; }
 .bastidores.span4 .topo h3 { color:#F2722F; text-align:left; margin:0 0 0 5px;}
+.conteudo .bastidores.span4 img { border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.bastidores.span4 a { color:#fff; margin:15px 11px 0 2px; max-width:140px; max-height:105px; }
+.bastidores.span4 a:hover {text-decoration:none;  }
+.bastidores.span4 a.last { margin:15px 0 0; }
 /* /home brincadeiras */
 
 /* ie*/
