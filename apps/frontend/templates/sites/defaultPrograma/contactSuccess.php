@@ -158,10 +158,10 @@
                       <option value="Crítica">Crítica</option>
                       <option value="Comentário">Comentário</option>
                       <option value="Sugestão">Sugestão</option>
-                      <option value="Sugestão">Pedido de Informação</option>
-                      <?php //if(!in_array($site->getSlug(), array('manoseminas'))): ?>
-                      <!-- <option value="Compra de DVD">Compra de DVD</option> -->
-                      <?php //endif; ?>
+                      <option value="Pedido de Informação">Pedido de Informação</option>
+                      <?php if(in_array($site->getSlug(), array('jornaldacultura','jornaldacultura','reportereco'))): ?>
+                      <option value="Compra de DVD">Compra de DVD</option>
+                      <?php endif; ?>
                     </select>
                   </div>
                   <div class="linha t3">
