@@ -336,7 +336,7 @@
           </div>
         </a>
         <hr/>
-        <!-- /item -->
+        <!-- /item --> 
         
         <!-- item -->
          <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>">
