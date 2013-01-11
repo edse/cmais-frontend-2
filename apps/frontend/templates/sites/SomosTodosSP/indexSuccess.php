@@ -30,7 +30,7 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <a href="/somos-todos-sp/regulamento-sp" class="regulamento" title="Clique aqui para participar">Clique aqui para participar
+          <a href="/somostodossp/regulamento-sp" class="regulamento" title="Clique aqui para participar">Clique aqui para participar
             <i class="ico-borda"></i>
           </a>
           <!-- CAPA -->
