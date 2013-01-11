@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/somos-todos-sp.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/SomosTodosSP.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -12,7 +12,7 @@
       <div id="barra-site">
         <div class="topo-programa">
           <h2>
-            <a href="/somos-todos-sp" title="Somos todos SP">
+            <a href="/SomosTodosSP" title="Somos todos SP">
                 <img src="/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
             </a>
           </h2>
@@ -54,7 +54,7 @@
             <br><br>
             <strong>1. Participação:</strong><br><br>
             Esta é uma ação de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. Esta ação destina-se ao público em geral, sem qualquer limitação, e está devidamente regulada conforme as disposições do Código Civil (10.406/02) e Lei de Direitos Autorais (9.610/98).<br><br>
-            Para participar, o interessado deve enviar uma imagem relacionada à temática solicitada. A imagem deve ser encaminhada pelo site: <a href="/somos-todos-sp">cmais.com.br/somos-todos-sp</a><br><br>
+            Para participar, o interessado deve enviar uma imagem relacionada à temática solicitada. A imagem deve ser encaminhada pelo site: <a href="/somostodossp">cmais.com.br/somostodossp</a><br><br>
             1.1 As imagens deverão ser enviados até a data 21/01/2013 acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais. Cada pessoa pode participar com quantos vídeos desejar.<br><br>
             1.2. A Fundação Padre Anchieta não se responsabiliza por eventuaisfalhas causadas no envio do material.<br><br>
            <br> 

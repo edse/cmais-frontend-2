@@ -12,7 +12,7 @@
       <div id="barra-site">
         <div class="topo-programa">
           <h2>
-            <a href="#">
+            <a href="/SomosTodosSP">
                 <img src="/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
             </a>
           </h2>
@@ -30,7 +30,7 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <a href="/somos-todos-sp/regulamento-sp" class="regulamento" title="Clique aqui para participar">Clique aqui para participar
+          <a href="/somostodossp/regulamento-sp" class="regulamento" title="Clique aqui para participar">Clique aqui para participar
             <i class="ico-borda"></i>
           </a>
           <!-- CAPA -->
