@@ -125,7 +125,7 @@
               <span class="last"></span>
               
             </div>
-          </form>
+          </form>Test
           
           <!--/Pergunta-->
           <!--Resposta FORM INATIVA-->
@@ -178,7 +178,7 @@
       	<?php if(isset($displays['destaque-seu-video'])): ?>
       	<?php if(count($displays['destaque-seu-video']) > 0): ?> 	
       			
-        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle() ?></h2>
+        <h2>Seu vídeo na TV Cocoricó “Ao vivoooo!”</h2>
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
         
         <?php endif; ?>
