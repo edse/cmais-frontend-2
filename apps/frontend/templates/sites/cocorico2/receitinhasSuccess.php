@@ -35,7 +35,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php if(isset($assets[0])): ?>
       <?php $related = $assets[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $assets[0]->retriveUrl() ?>" title="<?php echo $assets[0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[0]->getTitle() ?>" /></a>
+      <a href="<?php echo $assets[0]->retriveUrl() ?>" title="<?php echo $assets[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[0]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[0]->getDescription() ?>" data-original-title="<?php echo $assets[0]->getTitle() ?>"><span class=""></span><?php echo $assets[0]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[0])) ?>
@@ -45,7 +45,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php if(isset($assets[1])): ?>
       <?php $related = $assets[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="<?php echo $related[1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
+      <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[1]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[1]->getDescription() ?>" data-original-title="<?php echo $assets[1]->getTitle() ?>"><span class=""></span><?php echo $assets[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[1])) ?>
@@ -55,7 +55,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php if(isset($assets[2])): ?>
       <?php $related = $assets[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="<?php echo $related[2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
+      <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[2]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[2]->getDescription() ?>" data-original-title="<?php echo $assets[2]->getTitle() ?>"><span class=""></span><?php echo $assets[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[2])) ?>
@@ -70,10 +70,10 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
-          <?php if($k > 2): ?> 
-            <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+          <?php if($k > 2): ?>
+          	<?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
             <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-              <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" />
+              <img class="span12" src="http://img.youtube.com/vi/<?php echo $related->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
               <?php echo $d->getTitle() ?></a>
             </li>
           <?php endif; ?>
