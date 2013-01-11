@@ -1,5 +1,5 @@
-.bg-site{background: url(/portal/images/capaPrograma/somostodossp/pattern-topo.jpg) repeat-x; height: 163px; position:relative;}
-#capa-site{margin-top:-141px !important;}
+.bg-site{background: url(/portal/images/capaPrograma/somostodossp/pattern-topo.png) repeat-x; height: 163px; position:relative; z-index: -1;}
+#capa-site{margin-top:-159px !important; background: url(/portal/images/capaPrograma/somostodossp/manchas-topo.png) no-repeat right top;}
 #barra-site .redes {width: 460px;float: left;margin: 85px 0 0 162px;background: #393939;padding: 5px;}
 #barra-site .redes ul{display: none;}
 #esquerda{text-align:left;}
@@ -7,8 +7,8 @@
 #esquerda a{color:#ed4761;}
 #guia-topo {z-index: 9000;position: relative;}
 .lb-data .lb-caption,
-.lb-data .lb-number {color:#FFF !important;}
+.lb-data .lb-number {display:none !important;}
 .capa.grid3 p{text-align:left;}
 .regulamento{position:relative;float: right;padding: 5px 10px;background-color: #ed415c;font-family: arial;text-transform: uppercase;font-weight: BOLD;margin-bottom: 13px;font-size: 16px;color: white;}
 .ico-borda{background: url(/portal/images/capaPrograma/somostodossp/botao-borda.jpg) no-repeat; width: 10px;height: 10px;display: block;position:absolute;bottom: -10px;right: 0px;}
-.lb-outerContainer {background:none !important;}
+.fundo{background:url(/portal/images/capaPrograma/somostodossp/fundo.jpg) no-repeat 0 428px; width:100%;}
