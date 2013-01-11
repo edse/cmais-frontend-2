@@ -372,7 +372,7 @@
        	<?php if(isset($displays['convidado-especial'])): ?>
       	 <?php if(count($displays['convidado-especial']) > 0): ?> 	
           <h3><?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?></h3>
-          <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
+          <img src="<?php echo $displays['convidado-especial'][0]->Asset->AssetContent->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
           <p>
             <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
