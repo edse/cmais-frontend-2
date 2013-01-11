@@ -12,7 +12,7 @@
       <div id="barra-site">
         <div class="topo-programa">
           <h2>
-            <a href="/somos-todos-sp" title="Somos todos SP">
+            <a href="/SomosTodosSP" title="Somos todos SP">
                 <img src="/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
             </a>
           </h2>
