@@ -330,7 +330,7 @@
         <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $displays['bastidores'][0]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
+                <img src="<?php echo $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
           </div>
@@ -342,7 +342,7 @@
          <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $displays['bastidores'][1]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>"/>
+                <img src="<?php echo $displays['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][1]->Asset->getTitle() ?></span>
           </div>
@@ -354,7 +354,7 @@
          <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $displays['bastidores'][2]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>"/>
+                <img src="<?php echo $displays['bastidores'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][2]->Asset->getTitle() ?></span>
           </div>
