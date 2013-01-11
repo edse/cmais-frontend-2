@@ -157,9 +157,9 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /* /nas lojas */
 
 /* naweb */
+.ico-naweb{background: url(/portal/images/capaPrograma/cocorico/naweb-ico-redes.png) no-repeat;width:20px; height:20px;margin: 9px; float:left;}
 #naweb .destaque{background-color:#f3f7f7;border-radius:8px;}
 #naweb .destaque h2{font-size: 14px;color: #77838B;font-weight: bold;line-height: 17px;padding: 10px;margin: 0; text-transform: uppercase;}
-#naweb .ico-naweb{background: url(/portal/images/capaPrograma/cocorico/naweb-ico-redes.png) no-repeat;width:20px; height:20px;margin: 9px; float:left;}
 #naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width: 429px;height: 42px;float: left;background: url(/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
 #naweb .destaque .btn-inscreva-se .btn-destaque:hover{text-decoration: none;}
 #naweb .destaque span{display:block; float:left;width:14px;height:42px; background:url(/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
@@ -169,11 +169,23 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #naweb .instagram h3{margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 5px; }
 #naweb .instagram span{font-size:11px; font-weight:bold; color:#70aab1;}
 #naweb .instagram .ico-instagram{background-position: 0 bottom; margin-top: 7px;}
-#naweb .instagram .borda{width:100%; height:13px; background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+#naweb .instagram .borda{bottom: 8px;position: relative;width:100%; height:13px; background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 #naweb .twitter a{margin-bottom: 10px;height: 30px;display: block;}
-
-
 /* /naweb */
+
+/* agenda e post */
+#agenda .lista {position: relative;}
+#agenda .lista .item-lista{position: relative;}
+#agenda .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0;color:#6b757d;}
+#agenda .lista hr{clear: both; margin: 0 0 10px 0; padding-top: 10px; border-bottom: 1px dashed #bbdadd;}
+#agenda .lista span{color:#70aab1; font-size:14px;font-weight:bold;text-transform:uppercase;}
+#agenda .acontece .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
+#agenda .acontece .bac-blue{background-color: #e9f3f4; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
+#agenda .acontece h3{position: relative;margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 6px; }
+#agenda .acontece span{font-size:11px; font-weight:bold; color:#70aab1;}
+#agenda .acontece .ico-acontece{background-position: 0 bottom; margin-top: -4px;}
+#agenda .acontece .seta-acontece{background-position: 0 -25px; top:21px; left:50%;}
+/* agenda e post */
 /* ie */
 .conteudo .logos { margin-left:20px\9; } 
 /*/ie*/

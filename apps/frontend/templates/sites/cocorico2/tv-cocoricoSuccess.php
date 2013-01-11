@@ -125,7 +125,7 @@
               <span class="last"></span>
               
             </div>
-          </form>Test
+          </form>
           
           <!--/Pergunta-->
           <!--Resposta FORM INATIVA-->
@@ -147,10 +147,8 @@
         <!-- fale conosco cr-->
       </div>
       <!-- /tv cocorico -->
-      <div class="cr span12">
-        <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">
-          <img src="/portal/images/capaPrograma/cocorico/btn-faleconosco.png"/>
-        </a>
+      <div class="cr">
+        <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
       <!-- /fale conosco cr-->
     </div>
@@ -325,65 +323,77 @@
        </div>
         
         <!-- item -->
-        <a href="#" title="Tour Virtual">
+      <?php if(isset($displays['bastidores'])): ?>
+       <?php if(count($displays['bastidores']) > 0): ?>
+        <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="<?php echo $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
             </div>
-            <span>Tour Virtual</span>
+            <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
+          </div>
+        </a>
+        <hr/>
+        <!-- /item --> 
+        
+        <!-- item -->
+         <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>">
+          <div class="item">
+            <div class="img-bast">
+                <img src="<?php echo $displays['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>"/>
+            </div>
+            <span><?php echo $displays['bastidores'][1]->Asset->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <a href="#" title="Erros de gravação">
+         <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="<?php echo $displays['bastidores'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>"/>
             </div>
-            <span>Erros de gravação</span>
+            <span><?php echo $displays['bastidores'][2]->Asset->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
-        
-        <!-- item -->
-        <a href="#" title="Instamgram Oficial">
-          <div class="item">
-            <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
-            </div>
-            <span>Instamgram Oficial</span>
-          </div>
-        </a>
-        <hr/>
-        <!-- /item -->
+        <?php endif; ?>
+       <?php endif; ?>
       </div>
       <!-- /bastidores -->
       
       <!-- convidado especial -->
       <a href="#" title="titulo" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
-          <h3>convidado especial</h3>
-          <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+       	<?php if(isset($displays['convidado-especial'])): ?>
+      	 <?php if(count($displays['convidado-especial']) > 0): ?> 	
+          <h3><?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?></h3>
+          <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
           <p>
-            texto corrido
+            <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
+          <?php endif; ?>
+        <?php endif; ?>
          </div>
        </a>
-      <!-- /convidado especial -->
+      <!-- /convidado especial --> 
       
       <!-- receitinhas -->
       <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
-          <h3>Receitinhas</h3>
-          <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+        <?php if(isset($displays['receitinhas'])): ?>
+      	 <?php if(count($displays['receitinhas']) > 0): ?> 	
+          <h3><?php echo $displays['receitinhas'][0]->Asset->getTitle() ?></h3>
+          <img src="<?php echo $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['receitinhas'][0]->Asset->getTitle() ?>">
           <p>
-            texto corrido
+            <?php echo $displays['receitinhas'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
+          <?php endif; ?>
+        <?php endif; ?>
         </div>
       </a>  
       <!-- /receitinhas -->
