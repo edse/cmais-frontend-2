@@ -38,7 +38,9 @@ ul li { list-style:none; }
 #lista-enquetes .lista,
 #naweb .destaque h2,
 #naweb .destaque .btn-inscreva-se .btn-destaque,
-#naweb .instagram h3{ font-family: 'Ubuntu', sans-serif; }
+#naweb .instagram h3,
+#agenda .lista h3,
+#agenda .lista span{font-family: 'Ubuntu', sans-serif; }
 
 /*border-radius 10px*/
 .destaque-1,
@@ -265,7 +267,6 @@ input.search-query,
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-
 /* /topo*/
 
 /* IE8*/
@@ -288,3 +289,13 @@ input.search-query,
 .destaques.span6 .bold { min-width: 300px\9; }
 .destaques a.span12 { *width:265px; }
 /* /IE8*/
+
+.carousel-control { opacity: 1; }
+.ico-seta-titulo{background: url(/portal/images/capaPrograma/cocorico/seta-titulo.png) no-repeat; width:19px; height:10px; position:absolute; top:24px;}
+
+.destaques {position:relative; background:#f2722f; border-radius:10px; text-align:center; display:block; line-height:25px; margin:0 0 30px 0;  }
+.destaques span { background-position:-36px 0; bottom:5px; right:0; }
+
+.cr {margin-left: 0 !important; width:300px; margin-top:30px; height:40px; background:url(/portal/images/capaPrograma/cocorico/btn-faleconosco.png) no-repeat; float:left;}
+.cr a { margin-right:10px; color:#fff; text-transform:uppercase; text-align:right; font-weight:bold; height:40px; line-height:40px; display: block;  }
+.cr a:hover { text-decoration:none; }
