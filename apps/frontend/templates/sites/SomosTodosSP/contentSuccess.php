@@ -57,8 +57,7 @@
             Para participar, o interessado deve enviar uma imagem relacionada à temática solicitada. A imagem deve ser encaminhada pelo site: <a href="/somostodossp">cmais.com.br/somostodossp</a><br><br>
             1.1 As imagens deverão ser enviados até a data 21/01/2013 acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais. Cada pessoa pode participar com quantos vídeos desejar.<br><br>
             1.2. A Fundação Padre Anchieta não se responsabiliza por eventuaisfalhas causadas no envio do material.<br><br>
-           <br> 
-           <strong>2. Critérios de Seleção:</strong><br><br>
+           <br><strong>2. Critérios de Seleção:</strong><br><br>
             2.1 A seleção das imagens será feita por uma equipe de produção,baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação ao tema.<br><br>
             2.2 Serão desconsideradas as imagens com dados incorretos e de menoressem autorização dos seus responsáveis legais; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis relacionadas a direitos autorais ou direitos de imagem e que tenham
             conteúdo inadequado.<br><br>
