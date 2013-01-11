@@ -325,40 +325,44 @@
        </div>
         
         <!-- item -->
-        <a href="#" title="Tour Virtual">
+      <?php if(isset($displays['bastidores'])): ?>
+       <?php if(count($displays['bastidores']) > 0): ?>
+        <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="<?php echo $displays['bastidores'][0]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
             </div>
-            <span>Tour Virtual</span>
+            <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <a href="#" title="Erros de gravação">
+         <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="<?php echo $displays['bastidores'][1]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>"/>
             </div>
-            <span>Erros de gravação</span>
+            <span><?php echo $displays['bastidores'][1]->Asset->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <a href="#" title="Instamgram Oficial">
+         <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+                <img src="<?php echo $displays['bastidores'][2]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>"/>
             </div>
-            <span>Instamgram Oficial</span>
+            <span><?php echo $displays['bastidores'][2]->Asset->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
+        <?php endif; ?>
+       <?php endif; ?>
       </div>
       <!-- /bastidores -->
       
@@ -387,7 +391,7 @@
           <h3><?php echo $displays['receitinhas'][0]->Asset->getTitle() ?></h3>
           <img src="<?php echo $displays['receitinhas'][0]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['receitinhas'][0]->Asset->getTitle() ?>">
           <p>
-            <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
+            <?php echo $displays['receitinhas'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
           <?php endif; ?>
