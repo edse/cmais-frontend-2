@@ -125,7 +125,7 @@
               <span class="last"></span>
               
             </div>
-          </form>Test
+          </form>
           
           <!--/Pergunta-->
           <!--Resposta FORM INATIVA-->
@@ -377,7 +377,7 @@
         <?php endif; ?>
          </div>
        </a>
-      <!-- /convidado especial -->
+      <!-- /convidado especial --> 
       
       <!-- receitinhas -->
       <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
