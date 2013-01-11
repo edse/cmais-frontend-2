@@ -127,6 +127,7 @@
 			                      <option value="Crítica">Crítica</option>
 			                      <option value="Comentário">Comentário</option>
 			                      <option value="Sugestão">Sugestão</option>
+			                      <option value="Pedido de Informação">Pedido de Informação</option>
 			                      <option value="Compra de DVD">Compra de DVD</option>
 			                	</select>
 			                </label>
