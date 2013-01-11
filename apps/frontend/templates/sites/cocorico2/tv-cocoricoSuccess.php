@@ -147,10 +147,8 @@
         <!-- fale conosco cr-->
       </div>
       <!-- /tv cocorico -->
-      <div class="cr span12">
-        <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">
-          <img src="/portal/images/capaPrograma/cocorico/btn-faleconosco.png"/>
-        </a>
+      <div class="cr">
+        <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
       <!-- /fale conosco cr-->
     </div>
