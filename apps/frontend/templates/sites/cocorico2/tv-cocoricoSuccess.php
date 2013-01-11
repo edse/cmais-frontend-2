@@ -365,12 +365,16 @@
       <!-- convidado especial -->
       <a href="#" title="titulo" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
-          <h3>convidado especial</h3>
-          <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+       	<?php if(isset($displays['convidado-especial'])): ?>
+      	 <?php if(count($displays['convidado-especial']) > 0): ?> 	
+          <h3><?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?></h3>
+          <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
           <p>
-            texto corrido
+            <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
+          <?php endif; ?>
+        <?php endif; ?>
          </div>
        </a>
       <!-- /convidado especial -->
