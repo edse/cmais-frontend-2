@@ -382,12 +382,16 @@
       <!-- receitinhas -->
       <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
-          <h3>Receitinhas</h3>
-          <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+        <?php if(isset($displays['receitinhas'])): ?>
+      	 <?php if(count($displays['receitinhas']) > 0): ?> 	
+          <h3><?php echo $displays['receitinhas'][0]->Asset->getTitle() ?></h3>
+          <img src="<?php echo $displays['receitinhas'][0]->Asset->retriveImageUrlByImageUsage('preview') ?>" alt="<?php echo $displays['receitinhas'][0]->Asset->getTitle() ?>">
           <p>
-            texto corrido
+            <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
+          <?php endif; ?>
+        <?php endif; ?>
         </div>
       </a>  
       <!-- /receitinhas -->
