@@ -82,7 +82,7 @@
     <div class="tit"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a><span></span></div>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
-        <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
       <?php endforeach; ?>
     </ul>
