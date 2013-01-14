@@ -1,4 +1,4 @@
-/* topo coco */
+z/* topo coco */
 .topo-coco { margin:10px 20px 0 20px; }
 .topo-coco h1 { min-width:300px; /*height:71px;*/ float:left; margin:5px 20px 0 0; }
 .topo-coco .fb-like { clear:both; display: block; }
@@ -173,7 +173,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #naweb .twitter a{margin-bottom: 10px;height: 30px;display: block;}
 /* /naweb */
 
-/* agenda e post */
+/* agenda, cinema e post */
 #agenda .lista {position: relative;}
 #agenda .lista .item-lista{position: relative;}
 #agenda .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0;color:#6b757d;}
@@ -183,9 +183,17 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .acontece .bac-blue{background-color: #e9f3f4; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
 #agenda .acontece h3{position: relative;margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 6px; }
 #agenda .acontece span{font-size:11px; font-weight:bold; color:#70aab1;}
-#agenda .acontece .ico-acontece{background-position: 0 bottom; margin-top: -4px;}
+#agenda .acontece .ico-acontece{background-position: 0 -48px; margin-top: -4px;}
+#agenda .acontece .ico-cinema{background-position: 0 bottom; margin-top: -4px;}
 #agenda .acontece .seta-acontece{background-position: 0 -25px; top:21px; left:50%;}
-/* agenda e post */
+#agenda .destaque{margin-bottom: 20px;}
+#agenda .pagination{margin-top: 20px;}
+#agenda .paginacao {margin: 0 20px 20px 20px;overflow: hidden;}
+#agenda .paginacao a {font-weight: bold;text-transform: uppercase;float: left;max-width: 113px;max-height: 40px;}
+#agenda .paginacao a span {
+background: url("/portal/images/capaPrograma/cocorico/seta-tvcoco.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
+
+/* agenda,cinema e post */
 /* ie */
 .conteudo .logos { margin-left:20px\9; } 
 /*/ie*/
