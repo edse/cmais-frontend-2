@@ -67,6 +67,19 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!-- /row-->
   
   <!--row-->
+  
+  <div class="row-fluid conteudo">
+    <?php if(count($assets) > 0): ?>
+    <ul class="destaques-small">
+   	<?php foreach($assets as $k=>$d): ?>
+    <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+    <?php endforeach; ?>
+    </ul>
+    <?php endif; ?>
+  </div>
+  
+  
   <div class="row-fluid conteudo destaques">
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
