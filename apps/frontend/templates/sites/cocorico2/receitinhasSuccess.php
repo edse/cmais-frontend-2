@@ -32,7 +32,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 
   <?php if(count($assets) > 0): ?>
   <div class="row-fluid conteudo destaques">
-  	<center>
+  	
     <?php if(isset($assets[0])): ?>
       <?php $related = $assets[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
@@ -64,7 +64,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[2])) ?>
       <!--/RANKING -->
     </div>
-    </center>
+   
     
     <?php endif; ?>
   </div>
@@ -77,7 +77,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <ul class="destaques-small">
    	<?php foreach($assets as $k=>$d): ?>
     <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-    <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+    <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
     
     <?php endforeach; ?>
    
