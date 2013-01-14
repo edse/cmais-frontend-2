@@ -34,6 +34,7 @@
   <a href="../personagens" class="voltar personagem">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
 
+
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
