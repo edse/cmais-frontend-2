@@ -46,7 +46,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php if(isset($assets[1])): ?>
       <?php $related = $assets[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[1]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
+      <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[1]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[1]->getDescription() ?>" data-original-title="<?php echo $assets[1]->getTitle() ?>"><span class=""></span><?php echo $assets[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[1])) ?>
@@ -56,7 +56,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php if(isset($assets[2])): ?>
       <?php $related = $assets[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[2]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
+      <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[2]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[2]->getDescription() ?>" data-original-title="<?php echo $assets[2]->getTitle() ?>"><span class=""></span><?php echo $assets[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[2])) ?>
