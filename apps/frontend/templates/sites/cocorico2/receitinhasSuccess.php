@@ -73,7 +73,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!--row-->
   
   <div class="row-fluid conteudo">
-    <?php if(count($assets) > 0): ?>
+    <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
    	<?php foreach($assets as $k=>$d): ?>
     <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
