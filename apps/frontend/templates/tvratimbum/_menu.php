@@ -51,8 +51,8 @@
             </ul>
           </div>
         </div>
-        <img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="TV Rá Tim Bum! 8 anos crescendo com você!" />
-        <!--
+        <!-- <img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="TV Rá Tim Bum! 8 anos crescendo com você!" /> -->
+        
         <div id="destaque-ferias">
           <ul>
             <li>
@@ -81,4 +81,4 @@
             </li>
           </ul>
         </div> 
-        -->
+        
