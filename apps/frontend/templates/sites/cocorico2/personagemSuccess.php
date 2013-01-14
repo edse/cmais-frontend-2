@@ -42,6 +42,7 @@
       <div class="tit-pagina span12">
         <h2><?php echo $section->getTitle() ?></h2>
       </div>
+      <?php if(isset($displays["imagens"][0]) && isset($displays["imagens"][1]) && isset($displays["imagens"][2]) && isset($displays["imagens"][3])): ?>
       <!-- titulo da pagina -->
       <div class="destaque-home">
         <img class="span9" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" />
@@ -54,6 +55,7 @@
         </div>
         <p><?php echo html_entity_decode($displays["texto"][0]->Asset->AssetContent->render()) ?></p>
       </div>
+      <?php endif; ?>
       <div class="span12">
         <?php if(isset($displays["conteudos"][0])): ?>
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
@@ -102,6 +104,17 @@
         </div>
       </form>
     </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#getimage").click(function() {
+          if($('#nome').val())
+            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>');
+          else
+            $('#nome').focus();
+        });
+      });
+    </script>
     <?php endif; ?>
   </div>
   <!--/row-->
@@ -113,14 +126,3 @@
   
 </div>
 <!-- /container-->
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#getimage").click(function() {
-      if($('#nome').val())
-        self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>');
-      else
-        $('#nome').focus();
-    });
-  });
-</script>
