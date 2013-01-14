@@ -53,9 +53,9 @@
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
     </div>
     <div class="span6">
-      <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <?php if (count($related) > 0): ?>
-      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent#t=<?php echo $related[0]->AssetVideo->getStartFrom() ?>" frameborder="0" allowfullscreen></iframe> 
+      <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php if (count($related_video) > 0): ?>
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent#t=<?php echo $related_video[0]->AssetVideo->getStartFrom() ?>" frameborder="0" allowfullscreen></iframe> 
       <?php endif; ?>
     </div>
   </div>
