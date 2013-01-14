@@ -119,7 +119,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .zoom ul.span12 { margin:10px 0; }
 .zoom ul li { margin-bottom:10px; }
 .conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
-#rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:42px; }
+#rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:41px; }
 #rede-face { margin-top:4px; }
 #rede-twitter { margin-top:6px; }
 #rede-google { margin-top:5px; margin-right:0; }
@@ -188,12 +188,28 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .acontece .seta-acontece{background-position: 0 -25px; top:21px; left:50%;}
 #agenda .destaque{margin-bottom: 20px;}
 #agenda .pagination{margin-top: 20px;}
-#agenda .paginacao {margin: 0 20px 20px 20px;overflow: hidden;}
-#agenda .paginacao a {font-weight: bold;text-transform: uppercase;float: left;max-width: 113px;max-height: 40px;}
-#agenda .paginacao a span {
-background: url("/portal/images/capaPrograma/cocorico/seta-tvcoco.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
-
+#agenda .paginacao {margin: 0 0 20px 0;overflow: hidden;}
+#agenda .paginacao a {color:#70aab1;font-weight: bold;text-transform: uppercase;float: left;max-width: 103px;max-height: 40px;}
+#agenda .paginacao a:hover{text-decoration: none;}
+#agenda .paginacao a span {background: url("/portal/images/capaPrograma/cocorico/seta-familia.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
+#agenda .paginacao .proximo {position: relative;max-width: 70px;text-align: right;padding-right: 26px;}
+#agenda .paginacao .proximo, .paginacao .proximo span {float: right;}
+#agenda .paginacao .proximo span {position: absolute;top: 0;right: 0;margin-right: 0;background-position: -17px 0;}
+#agenda .redes {margin: 10px 0 !important;}
+#agenda #rede-face, #agenda #rede-twitter, #agenda #rede-google, #agenda #rede-pinterest {float: left;margin-right: 10px;float:right;}
+#agenda .titulo-post h2{font-weight: bold; color:#FFF; margin:0 0 4px 0; padding:10px;font-size:20px;background-color: #70aab1; text-transform: uppercase;line-height: 18px; border-radius: 10px;}
+#agenda .titulo-post span{font-weight: bold;color:#70aab1; font-size:14px; text-transform: uppercase;}
+#agenda .asset img{margin: 10px auto;}
+#agenda .asset iframe{width:620px; height:350px; margin:10px auto;}
+#agenda .anterior.cinema, 
+#agenda .proximo.cinema{margin:0; line-height: 40px;}
+#blocoCarrossel .texto{padding:8px; background-color:#e1eceb;} 
+#blocoCarrossel .texto h3{margin-top:2px;}
+#blocoCarrossel .nav .btn-nav{float:left; margin-right:5px; background:url(/portal/images/capaPrograma/cocorico/agenda-btn-destaque.png) no-repeat right 0; width:13px; height:13px; display: block;}
+#blocoCarrossel .nav .btn-nav.active{background-position: left 0;}
+#blocoCarrossel .nav .btn-nav.last{margin-right:0px;}
 /* agenda,cinema e post */
+
 /* ie */
 .conteudo .logos { margin-left:20px\9; } 
 /*/ie*/
