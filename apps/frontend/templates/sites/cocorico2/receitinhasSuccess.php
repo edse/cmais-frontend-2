@@ -82,7 +82,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
  
   <!-- /row-->
   <?php else: ?>
-    <p>Nenhuma receitinha encontrada.</p>
+    <p>Nenhuma receitinha encontrada.</p> 
   <?php endif; ?>
   
   <?php /*
