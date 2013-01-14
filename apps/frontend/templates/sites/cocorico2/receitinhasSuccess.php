@@ -37,11 +37,11 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <div class="span4">
       <a href="<?php echo $assets[0]->retriveUrl() ?>" title="<?php echo $assets[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $assets[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $assets[0]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[0]->getDescription() ?>" data-original-title="<?php echo $assets[0]->getTitle() ?>"><span class=""></span><?php echo $assets[0]->getTitle() ?></a>
-          </div>
+        
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[0])) ?>
       <!--/RANKING -->
-
+  	</div>
     <?php endif; ?>
     <?php if(isset($assets[1])): ?>
       <?php $related = $assets[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
