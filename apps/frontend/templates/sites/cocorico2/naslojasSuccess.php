@@ -67,6 +67,7 @@ $assets = $pager->getResults();
   <!--row-->
   <!-- /row-->
 </div>
+</div>
 <!-- /container-->
 <div id="fb-root"></div>
 <script>
