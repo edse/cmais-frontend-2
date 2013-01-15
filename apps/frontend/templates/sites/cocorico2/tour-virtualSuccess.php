@@ -31,7 +31,7 @@
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
+  <ul class="breadcrumb"> 
     <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
     <li><a href="/cocorico">Bastidores</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Tour virtual</li>
