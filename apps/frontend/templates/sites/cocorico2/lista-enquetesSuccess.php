@@ -1,19 +1,3 @@
-<?php
-  //$displays = array();
-  $blocks = Doctrine_Query::create()
-    ->select('b.*')
-    ->from('Block b, Section s')
-    ->where('b.section_id = s.id')
-    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
-    ->andWhere('s.site_id = ?', $site->id)
-    ->execute();
-
-  if(count($blocks) > 0){
-    $displays_tv_cocorico['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
-  }
-  
-?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -47,7 +31,26 @@
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
+  <?php
+   $displays_home = array();
+   $blocks = Doctrine_Query::create()
+     ->select('b.*')
+     ->from('Block b, Section s') 
+     ->where('b.section_id = s.id')
+     ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+       ->andWhere('b.slug = ?', 'enquete') 
+     ->andWhere('s.site_id = ?', $site->id)
+     ->execute();
   
+    if(count($blocks) > 0){
+    $displays['enquete'] = $blocks[0]->retriveDisplays();
+    }
+  
+      
+    //pergunta bloco enquete - 1º destaque
+    $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion();
+  
+  ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
@@ -56,7 +59,7 @@
       <li class="item-lista">
         <i class="ico-confirma"></i>
         <h4>dd/mm/aaaa</h4>
-        <h3>teste</h3>
+        <h3><?php echo $q;?></h3>
         <div class="resultado">00% - alternativa1</div>
         <i class="ico-versus-enquete"></i>
         <div class="resultado verde">alternativa2 - 00%</div>
