@@ -49,17 +49,18 @@
          ->execute();
       
         if(count($blocks) > 0):
-          foreach($displays_home['enquete'] as $k => $d):
-            $d = $blocks[$k]->retriveDisplays();
+          $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         
+        
+        
+          foreach($displays_home['enquete'] as $d): 
             //doctrine para respostas
             $respostas = Doctrine_Query::create()
               ->select('aa.*')
               ->from('AssetAnswer aa')
               ->where('aa.asset_question_id = ?', (int)$d[0]->Asset->AssetQuestion->id)
               ->execute();
-           
-        
+            
       ?>
           <!-- item -->
           <li class="item-lista">
@@ -75,8 +76,8 @@
             <!-- /pontilhado -->
           <!-- /item -->
        <?php
-            endforeach;
-          endif;
+          endforeach;
+        endif;
        ?>
       
       
