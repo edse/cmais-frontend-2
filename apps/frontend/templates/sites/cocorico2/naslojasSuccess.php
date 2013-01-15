@@ -45,9 +45,17 @@
   <div class="row-fluid naslojas">
     <div class="span12">
       <ul class="lista-produtos">
-        <li class="span4"><a class="span12" href="/cocorico/naslojas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do produto</a></li>
-       </ul>
-      
+      	<?php if(count($assets) > 0): ?>
+        <?php foreach($assets as $k=>$d): ?>
+         <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+        <li class="span4">
+        	<a class="span12" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+        	<img class="span12" src="/<?php echo $related[0]->retriveImageUrlByImageUsage('Preview') ?>" alt="<?php echo $d->getTitle() ?>" />
+          <?php echo $d->getTitle() ?>
+         </a></li>
+        <?php endforeach; ?>
+      <?php endif; ?>
+       </ul>   
     </div>
   </div>
   <!--row-->
