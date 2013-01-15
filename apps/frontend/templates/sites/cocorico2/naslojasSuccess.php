@@ -32,7 +32,7 @@ $assets = $pager->getResults();
     <li class="active">Nas Lojas</li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">nas lojas</h2>
+  <h2 class="tit-pagina">nas lojas</h2> 
   <!--row-->
   
   <?php if(isset($displays['descricao'])):?>
