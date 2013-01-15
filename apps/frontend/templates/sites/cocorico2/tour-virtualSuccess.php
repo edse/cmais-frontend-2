@@ -44,7 +44,7 @@
     <div class="row-fluid conteudo">
     <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
     
-      <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related_video = $asset->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <?php if (count($related_video) > 0): ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe> 
       <?php endif; ?>
