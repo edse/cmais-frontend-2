@@ -64,7 +64,7 @@
       <!-- item -->
       <li class="item-lista">
         <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
+        <h4><?php echo $displays_home["enquete"][0]->getHeadline();?></h4>
         <h3><?php echo $q;?></h3>
         <div class="resultado">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
         <i class="ico-versus-enquete"></i>
