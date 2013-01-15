@@ -49,8 +49,8 @@
          ->execute();
       
         if(count($blocks) > 0):
-          foreach($displays_home['enquete'] as $d):
-            $d = $blocks[0]->retriveDisplays();
+          foreach($displays_home['enquete'] as $k => $d):
+            $d = $blocks[$k]->retriveDisplays();
         
             //doctrine para respostas
             $respostas = Doctrine_Query::create()
