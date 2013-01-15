@@ -51,12 +51,7 @@
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         
-          $respostas = Doctrine_Query::create()
-              ->select('aa.*')
-              ->from('AssetAnswer aa')
-              ->where('aa.asset_question_id = ?', (int)$displays_home['enquete'][0]->Asset->AssetQuestion->id)
-              ->execute();
-        
+
           foreach($displays_home['enquete'] as $d): 
             //doctrine para respostas
             
@@ -67,9 +62,9 @@
             <i class="ico-confirma"></i>
             <h4><?php echo $d[0]->getHeadline();?></h4>
             <h3><?php echo $d[0]->Asset->AssetQuestion->getQuestion();?></h3>
-            <div class="resultado">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
+            <div class="resultado">00% - <?php echo $d[0]->Asset->AssetQuestion->AssetAnswer->getAnswer()?></div>
             <i class="ico-versus-enquete"></i>
-            <div class="resultado verde"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div>
+            <div class="resultado verde"><?php echo $d[0]->Asset->AssetQuestion->AssetAnswer->getAnswer()?> - 00% </div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
