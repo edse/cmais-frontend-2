@@ -43,10 +43,13 @@
      ->execute();
   
     if(count($blocks) > 0){
-      $displays['enquete'] = $blocks[0]->retriveDisplays();
+      $displays_home['enquete'] = $blocks[0]->retriveDisplays();
     }
   
       
+    //pergunta bloco enquete - 1º destaque
+    $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
+  
   ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
