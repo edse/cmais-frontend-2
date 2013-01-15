@@ -44,8 +44,13 @@
   <?php if(count($displays['tour-virtual']) > 0): ?>
   <div class="row-fluid conteudo">
   <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
-    
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/PZENwhml0Xc" frameborder="0" allowfullscreen></iframe>
+  
+  <?php if(isset($displays['tour-virtual'][0])): ?>
+  <?php $related_videos = $displays['tour-virtual'][0]->retriveRelatedAssetsByAssetTypeId(6); ?>
+      
+    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_videos[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+   <?php endif; ?>
+   
   </div>
   <?php endif; ?>
    <?php endif; ?>
