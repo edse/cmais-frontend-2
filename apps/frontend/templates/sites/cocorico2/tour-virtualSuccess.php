@@ -38,13 +38,14 @@
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Tour virtual</h2>
+  
   <!--row-->
     <?php if(isset($displays['tour-virtual'])):?>
     <?php if(count($displays['tour-virtual']) > 0): ?>     
     <div class="row-fluid conteudo">
     <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
     
-      <?php $related_video = $asset->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related_video = $displays['tour-virtual'][0]->retriveRelatedAssetsByAssetTypeId(6); ?>
       <?php if (count($related_video) > 0): ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe> 
       <?php endif; ?>
