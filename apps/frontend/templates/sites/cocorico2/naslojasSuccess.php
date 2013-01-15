@@ -1,3 +1,7 @@
+<?php
+$assets = $pager->getResults(); 
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 <script type="text/javascript">
@@ -45,19 +49,24 @@
   <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
   <!-- /menu-->
   
-  <!-- breadcrumb-->
+    <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Nas Lojas</li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">nas lojas</h2>
-  
-  <!--row-->
-  <div class="row-fluid conteudo ">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna a libero aliquet imper diet at eget ante. Pellentesque accumsan lobortis tellus, tempor dapibus metus bibendum a. Pellent esque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis massa molestie felis varius rutrum. Pellentesque laoreet faucibus viverra. Duis faucibus varius blandit. Donec sit amet diam et dolor feugiat venenatis. Aliquam blandit elit sit amet lectus venenatis sit posueree senectus et netus.</p>
-  </div>
+  <h2 class="tit-pagina">NAS LOJAS</h2>
+  <!--row--> 
+  <?php if(isset($displays['descricao'])):?>
+    <?php if(count($displays['descricao']) > 0): ?> 
+    
+  <?php foreach($displays['descricao'] as $k=>$d):?>   
+   <div class="row-fluid conteudo ">
+    <p><?php echo $d->getDescription() ?></p>
+  <?php endforeach; ?>
+   
+   <?php endif; ?>
+    <?php endif; ?>
   <!--/row-->
   
   <!--row-->
