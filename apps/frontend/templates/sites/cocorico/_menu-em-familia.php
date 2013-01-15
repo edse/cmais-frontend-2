@@ -15,7 +15,7 @@
           <li class="joguinhos"><a class="icon" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
           <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/brincadeiras" title="Brincadeiras"></a></li>
           <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a></li>
-          <li class="diario"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a></li>
+          <!--li class="diario"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a></li-->
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
         </ul>
       </div>
