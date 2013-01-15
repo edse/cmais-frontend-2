@@ -48,6 +48,7 @@
     <iframe width="940" height="529" src="http://www.youtube.com/embed/PZENwhml0Xc" frameborder="0" allowfullscreen></iframe>
   </div>
   <?php endif; ?>
+   <?php endif; ?>
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo erros">
