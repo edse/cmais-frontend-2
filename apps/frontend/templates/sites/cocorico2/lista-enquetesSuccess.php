@@ -22,14 +22,13 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico">TV Cocorico</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico/joguinhos">Bastidores</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Episódios completos</li>
+    <li><a href="<?php echo $site->retriveUrl() ?>">TV Cocorico</a><span class="divider">&rsaquo;</span></li>
+    <li class="active">Enquetes Anteriores</li>
   </ul>
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
   <div class="tit-pagina">
-    <h2>Enquete do dia</h2>
+    <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
   <!--row lista-enquetes-->
@@ -62,110 +61,7 @@
         <li><hr></li>
         <!-- /pontilhado -->
       <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
+      
     </ul>
     <!-- /lista -->
   </div>
