@@ -39,10 +39,17 @@
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Tour virtual</h2>
   <!--row-->
-  <div class="row-fluid conteudo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed.</p>
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/PZENwhml0Xc" frameborder="0" allowfullscreen></iframe>
+    <?php if(isset($displays['tour-virtual'])):?>
+    <?php if(count($displays['tour-virtual']) > 0): ?>     
+  	<?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <?php if (count($related_video) > 0): ?> 
+
+    <div class="row-fluid conteudo">
+    <p><?php echo $d->getDescription() ?></p>
+    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
   </div>
+  <?php endif; ?>
+    <?php endif; ?>
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo erros">
