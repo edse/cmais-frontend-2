@@ -1,5 +1,5 @@
 <?php
-$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+$assets = $pager->getResults(); 
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 <!-- container-->
