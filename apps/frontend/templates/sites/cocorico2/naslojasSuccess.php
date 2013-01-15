@@ -50,9 +50,9 @@ $assets = $pager->getResults();
     <div class="span12">
     	<?php if(count($assets) > 0): ?>
  	      <ul class="lista-produtos">
-      	 	<?php $related = $d->Asset->AssetContent->retriveRelatedAssetsByRelationType('original') ?>
+     
       	 	  <?php foreach($assets as $k=>$d): ?>
-				 <li class="span4"><a class="span12" href=<?php echo $d->retriveUrl() ?>" title=""><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('Preview') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+				 <li class="span4"><a class="span12" href=<?php echo $d->retriveUrl() ?>" title=""><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage('Preview') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
               <?php endforeach; ?>
           </ul>                   
       <?php endif; ?>
