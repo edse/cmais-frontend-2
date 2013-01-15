@@ -40,7 +40,7 @@ $assets = $pager->getResults();
    <div class="row-fluid conteudo ">
     <p><?php echo $d->getDescription() ?></p>
   <?php endforeach; ?>
-   
+    
    <?php endif; ?>
     <?php endif; ?>
   <!--/row-->
