@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <!-- /row-->
+  <!-- /row--> 
   <!-- breadcrumb-->
   <ul class="breadcrumb"> 
     <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
