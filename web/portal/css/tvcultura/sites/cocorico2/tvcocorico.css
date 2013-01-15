@@ -1,13 +1,12 @@
 /* TVCOCORICO*/
 
 /* home */
-.fonte{font-family:"Arial Rounded MT Bold",Arial, Helvetica, sans-serif;}
-
 .bread-tv li a,
 .bread-tv li.active,
+.voltar:hover,
+.voltar,
 .bread-tv .divider{color:#1db186;}
 
-.cr{margin-left: 0 !important; margin-top:30px;}
 .destaque-1{margin-left: 0 !important;}
 
 .conteudo .bastidores{margin-left:15px;padding:1px;}
@@ -17,7 +16,7 @@
 .destaque-home-tv{margin-left: 0 !important;}
 
 .destaque-home-tv h2{overflow: hidden;height: 38px;font-size:20px; color:#FFF; font-weight:bold; text-align:center;margin:0}
-.destaque-home-tv .btn-destaque{border: none;float: left;height: 40px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;font-weight: bold;text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 95%;line-height: 42px;}
+.destaque-home-tv .btn-destaque{border: none;float: left;height: 40px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;/*font-weight: bold;*/text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 95%;line-height: 42px;}
 .destaque-home-tv .btn-destaque:hover{text-decoration: none; color:#747A3A}
 .destaque-home-tv .destaque span{background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -50px 0;width: 9px;height: 40px;display: block;float: left;}
 .destaque-home-tv .destaque .last{background-position: -40px 0;}
@@ -48,10 +47,20 @@
 .interatividade .form-campos{padding:10px 0;position: relative;}
 .interatividade .form-campos input,
 .interatividade .form-campos select{border-radius:5px}
-.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:21px; height:21px; display: block; position: absolute;}
-.interatividade .form-campos .ico-pessoa{background-position: 0 top; top:14px; left:5px;}
-.interatividade .form-campos .ico-cidade{background-position: 0 center; top:52px; left:5px;}
-.interatividade .form-campos .ico-link{background-position: bottom; bottom:49px; left:5px;}
+.interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
+.interatividade .form-campos .cidade label.error,
+.interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
+.interatividade .form-campos label.error.checked{display:none !important;}
+.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:21px; height:21px; display: block; float:left;margin:5px 0 0 5px;}
+.interatividade .form-campos .ico-pessoa{background-position: 0 top; }
+.interatividade .form-campos .ico-cidade{background-position: 0 center; }
+.interatividade .form-campos .ico-link{background-position: bottom; }
+.interatividade #msgErro p,
+.interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
+.interatividade #msgErro hr,
+.interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
+.interatividade #msgErro,
+.interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
 .interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:70px; overflow:auto; color:#747b3a;padding:10px;}
 
@@ -59,21 +68,26 @@
 .conteudo-tv p{color: #747B3A; background-color:#bfd540;}
 
 /* scrollbar p/ chome*/
-::-webkit-scrollbar { height: 12px; width: 20px; background: none; }
-::-webkit-scrollbar-thumb { background: #1db186; -webkit-border-radius: 5px;}
-::-webkit-scrollbar-corner { background: #fff;}
+.regras::-webkit-scrollbar { height: 12px; width: 20px; background: none; }
+.regras::-webkit-scrollbar-thumb { background: #1db186; -webkit-border-radius: 5px;}
+.regras::-webkit-scrollbar-corner { background: #fff;} 
 
 .conteudo-diverso{background-color: #f2722f;}
 .conteudo-diverso p{color:#fdf035;}
+a.destaque1:hover,
+a.destaque2:hover{text-decoration: none}
 
-.destaque-1{border-radius:9px; margin-top:30px;position:relative;}
-.destaque-2{border-radius:9px; margin-top:30px;position:relative;}
+.destaque-1,
+.destaque-2{ margin-top:30px;position:relative;}
+
+.col-esq .span6 .destaque-1 img,
+.col-esq .span6 .destaque-2 img { border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
 
 .destaque-1 h3,
-.destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 0;text-align: center;color: #FDF035 !important;padding: 0;}
+.destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 0;text-align: center;color: #FDF035 !important;padding: 0; max-height: 34px; overflow:hidden;}
 
 .destaque-1 p,
-.destaque-2 p{position:relative; padding: 3px 10px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;text-align: center;}
+.destaque-2 p{position:relative; padding: 3px 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;text-align: center;}
 
 
 .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
@@ -85,18 +99,19 @@
 .ico-seta-titulo.video{right:50%;}
 /* /home */
 
+
 /* personagens*/
 .autografo p,
 #alfabeto ul > li > a:hover, 
 #alfabeto ul > .active > a, 
 #alfabeto ul > .active > span,
 .col-esq .tit-pagina h2 ,
-.breadcrumb .divider, 
-.breadcrumb .active, 
-.breadcrumb li, 
-.voltar:hover,
-.voltar,
-.breadcrumb a { color:#747a39;}
+.breadcrumb.personagem .divider, 
+.breadcrumb.personagem .active, 
+.breadcrumb.personagem li, 
+.voltar.personagem:hover,
+.voltar.personagem,
+.breadcrumb.personagem a { color:#747a39;}
 .col-esq .tit-pagina.span12 { background:#bfd540; }
 .destaques .btn { background:#747a39; }
 .destaques .btn {  box-shadow:none; text-shadow:none; }
@@ -105,9 +120,9 @@
 .frase,
 .col-esq .tit-pagina.span12 { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .destaque-home { margin:10px 0 20px 0; float:left; }
-.voltar { background: url("/portal/images/capaPrograma/cocorico/voltar-verde.png") no-repeat scroll 0 0 transparent;}
-.voltar .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-verde.png) repeat-x center; }
-.destaque-home .span9 { border-none; }
+.voltar.personagem { background: url("/portal/images/capaPrograma/cocorico/voltar-verde.png") no-repeat scroll 0 0 transparent;}
+.voltar.personagem .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-verde.png) repeat-x center; }
+.destaque-home .span9 { border:none; }
 .box ul li { margin:0 0 9px 0; overflow: hidden; }
 .col-esq .destaque-home .box { margin-bottom:0; }
 .destaques.span6 iframe { clear:both; display:block; }
@@ -137,19 +152,22 @@
 .form-horizontal .capa-btn span { background: url("/portal/images/capaPrograma/cocorico/borda-menu.png") no-repeat -50px 0;  height: 40px;    width: 9px; display: block; float: left; }
 .form-horizontal .capa-btn .last { background-position:-40px 0;}
 .form-horizontal .btn { background: url("/portal/images/capaPrograma/cocorico/bg-amarelo.jpg") repeat-x; color:#747a3a; padding:0 5px; text-transform:uppercase; min-height:40px; font-weight:bold; float:left;  width: 93%; font-size: 16px;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+.destaques.joguinho .bold { color:#fff; }
 /* /personagens*/
 
 /* convidados*/
 .destaques a,
 .convidados a,
+.destaques-small a, .tit-pagina, .destaques .btn 
 .tit-pagina { background:#1db186; }
+
 .frase span,
 .data,
 .conteudo h3,
 .paginacao a,
-.tvcocorico .breadcrumb .divider,
-.tvcocorico .breadcrumb .active,
-.tvcocorico .breadcrumb li,
+.breadcrumb .divider,
+.breadcrumb .active,
+.breadcrumb li,
 #alfabeto ul > li > a:hover,
 #alfabeto ul > .active > a, 
 #alfabeto ul > .active > span,
@@ -157,7 +175,8 @@
 .pagination ul > li > a:hover, 
 .pagination ul > .active > a, 
 .pagination ul > .active > span,
-.tvcocorico .breadcrumb a  { color:#1db186; }
+.breadcrumb a  { color:#1db186; }
+
 #alfabeto,
 .row-fluid { clear:both; }
 #alfabeto {  background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin:0 10px;}
@@ -171,9 +190,9 @@
 #alfabeto ul > li span,
 #alfabeto { min-height:40px; line-height:40px; }
 input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20px;    max-width: 120px;    padding: 0 10px;}
-.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 0 8px;    padding: 0;} 
+.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 10px 8px;    padding: 0;} 
 .form-search .icon-search {    background: url("/portal/images/capaPrograma/cocorico/ico-busca.png") no-repeat scroll 0 0 transparent;    height: 21px;    margin: 0;    width: 21px;}
-.pagination { margin:10px 0; }
+.pagination { margin:10px 0; clear:both; }
 .pagination .anterior:hover a,
 .pagination .proximo:hover a,
 .pagination .anterior a,
@@ -205,3 +224,54 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /convidado*/
 .form-horizontal .g-autografo a { display:block; }
 
+/* episodio*/
+.tit-pagina.episodio { margin-bottom:0; }
+.conteudo .destaques iframe { margin-top:0; }
+.conteudo iframe { margin-top: 20px; }
+.tit .mais {    background-position: -72px center;}
+.tit a { background-image: url("/portal/images/capaPrograma/cocorico/bg-verde.jpg"); }
+.tit span {    background-position: -21px 0;}
+.voltar .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-verde2.png) repeat-x center; }
+.voltar { background: url("/portal/images/capaPrograma/cocorico/voltar-verde2.png") no-repeat scroll 0 0 transparent;}
+.relacionados .destaques-small { border-color:#92d6bf;  }
+.form-episodio { clear:both; background:url("/portal/images/capaPrograma/cocorico/fundo-transparente.png") repeat; margin:0 20px; padding:0 10px; height:40px; line-height:40px;  }
+.form-episodio p { float:left; text-transform:uppercase; font-weight:bold; color:#6b757d; }
+.form-episodio p i { color:#1db186; }
+.form-episodio .botoes {  float:right;}
+.form-episodio .botoes span { color:#8bd1b6; font-size:26px; margin-right:20px; }
+.form-search .icon-search,
+.form-episodio .icon-search { background-image: url("/portal/images/capaPrograma/cocorico/ico-busca2.png"); }
+.form-episodio input.search-query { font-size:14px; color:#6a747d; border:none; min-width: 190px; height:25px; line-height:25px; text-align:center; padding:0; margin-bottom:10px; }
+/* /episodio*/
+
+/*erros*/
+.erros .span4 { margin:0 2% 0 0; }
+.erros .span4.last { margin-right:0 }
+.erros h3 {   float: left;  margin: 5px 0;  text-align: center;    width: 100%;}
+.erros .destaque-1,
+.erros .destaque-2 { margin-top:0; }
+.erros .destaque-1 p, 
+.erros .destaque-2 p { text-align:left; }
+/*/erros*/
+
+/* enquete */
+#lista-enquetes .lista {position: relative;}
+#lista-enquetes .lista .item-lista{padding:0 0 0 30px; position: relative;  text-align:left;}
+#lista-enquetes .lista .resultado{background:yellow;}
+#lista-enquetes .lista .ico-confirma{background:url(/portal/images/capaPrograma/cocorico/ico-confirma.png) no-repeat; width:20px;height:16px;display:block;position: absolute; top: 3px; left: 3px;}
+#lista-enquetes .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0 0 10px 0;color:#6b757d;}
+#lista-enquetes .lista h4{font-weight:bold; font-size:14px;text-transform: uppercase;margin:0}
+#lista-enquetes .lista .resultado{border-radius:10px; font-weight:bold; font-size: 14px;padding:5px 10px;display: block; float:left; text-transform:uppercase;}
+#lista-enquetes .lista .verde{color:#1db186;}
+#lista-enquetes .lista .ico-versus-enquete{background: url(/portal/images/capaPrograma/cocorico/ico-versus-enquete.png) no-repeat center 8px; width:13px; height:14px; padding:10px;float:left}
+#lista-enquetes .lista hr{clear: both; margin: 0; padding-top: 10px; border-bottom: 1px dashed green;}
+/* /enquete */
+
+/* instagram*/
+.instagram span { background: none;  position: inherit; width: auto; color:#fdf035; }
+.instagram h2 { margin:0; }
+.instagram .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
+#box-instagram { margin-left:5px;}
+.instagram-placeholder {  float: left;  margin:0 13px 13px 0; width: 300px; height:300px;}
+.instagram-image { width:300px; }
+/* /instagram*/

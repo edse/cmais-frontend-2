@@ -10,17 +10,20 @@
 .box ul a img { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;  text-transform:none; text-align:center; background-image:none; border:none; margin:0; padding:0; background:#1893cf; font-size:14px; font-weight:normal; line-height: 20px;  }
 .box ul li { margin-top:14px; }
 .box ul { margin:0px; }
-.destaques {position:relative; background:#f2722f; border-radius:10px; text-align:center; display:block; line-height:25px; margin:0 0 30px 0;  }
+
+/*.destaques {position:relative; background:#f2722f; border-radius:10px; text-align:center; display:block; line-height:25px; margin:0 0 30px 0;  }
 .destaques span { background-position:-36px 0; bottom:5px; right:0; }
+*/
 
 .destaques img.span12 { border:none; margin:0; clear:both; }
-.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block; color:#fff; font-weight: normal;}
+.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block; color:#FDF035; font-weight: normal;}
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */
 .col-esq .destaque-home.span12 { margin-bottom: 20px; float: left; }
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
+.destaque-home .box img,
 .destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
 .destaque-home .box .mais { margin-left:-30px; }
 
