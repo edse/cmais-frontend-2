@@ -51,6 +51,7 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
+    GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico");
 
     </script>
     <script type='text/javascript'>

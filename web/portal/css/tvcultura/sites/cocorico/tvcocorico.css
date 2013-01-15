@@ -266,3 +266,11 @@ input.search-query { font-size:14px; color:#6a747d; border:none; min-width: 190p
 #lista-enquetes .lista hr{clear: both; margin: 0; padding-top: 10px; border-bottom: 1px dashed green;}
 /* /enquete */
 
+/* instagram*/
+.instagram span { background: none;  position: inherit; width: auto; color:#fdf035; }
+.instagram h2 { margin:0; }
+.instagram .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
+#box-instagram { margin-left:5px;}
+.instagram-placeholder {  float: left;  margin:0 13px 13px 0; width: 300px; height:300px;}
+.instagram-image { width:300px; }
+/* /instagram*/
