@@ -1,4 +1,5 @@
 /* topo coco */
+
 .topo-coco { margin:10px 20px 0 20px; }
 .topo-coco h1 { min-width:300px; /*height:71px;*/ float:left; margin:5px 20px 0 0; }
 .topo-coco .fb-like { clear:both; display: block; }
@@ -6,8 +7,10 @@
 /* /topo coco*/
 
 /* menu familia */
-.topo-familia .navbar .nav > li.familia { margin-left:20px; margin-top:5px; }
-.topo-familia .navbar .nav > li { margin-top:5px; }
+.topo-familia .navbar .nav > li.familia { margin:5px 10px 0 20px; float:left; width: auto; }
+.topo-familia .navbar .nav > li { margin-top:5px; margin-right:10px; }
+.topo-familia .navbar .nav > li.familia a { width: 95px; }
+
 
 .tooltip-inner { background:#747a3a; color:#fdf035; text-align:left; font-size: 13px; line-height:15px; }
 .tooltip.in,
@@ -15,7 +18,7 @@
 .tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
 .topo-familia .navbar .nav > li.personagens { margin-right:0; margin-left:0; height:50px;  }
 .topo-familia .navbar .nav { margin:0; }
-#menu-familia { background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 10px 0 -12px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
+#menu-familia { width:auto; background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 0 0 -12px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
 #menu-familia li { margin:0; }
 #menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
 #menu-familia li a.active,
@@ -50,7 +53,9 @@
 /* /natv */
 
 /* nas lojas */
-.row-fluid.naslojas .span4 { margin-left:20px; }
+.lista-produtos { margin:0 20px; }
+.naslojas .lista-produtos .span4 { background:none; }
+/*.row-fluid.naslojas .span4 { margin-right:2%; }*/
 .naslojas .span8 { width: 61.812%; }
 .naslojas .span4 { background:#d3e7e8; color:#6a747d; border-radius:10px 10px 0 0;  -moz-border-radius: 10px 10px 0 0; -webkit-border-radius:10px 10px 0 0; }
 .naslojas .topo { position:relative; overflow:hidden; border:2px solid #fff; border-radius:8px 8px 0 0;  -moz-border-radius: 8px 8px 0 0; -webkit-border-radius:8px 8px 0 0; background:#e9f3f4; }
@@ -99,7 +104,6 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .pagination ul > .active > a, 
 .pagination ul > .active > span { color: #70aab1;}
 
-.lista-produtos { margin-left:0; }
 .lista-produtos a { color:#6a747d; background:#e9f3f4; text-align: center; }
 .lista-produtos a:hover { text-decoration:none; }
 .lista-produtos li { margin-bottom:30px; }
@@ -118,7 +122,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .zoom ul.span12 { margin:10px 0; }
 .zoom ul li { margin-bottom:10px; }
 .conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
-#rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:42px; }
+#rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:41px; }
 #rede-face { margin-top:4px; }
 #rede-twitter { margin-top:6px; }
 #rede-google { margin-top:5px; margin-right:0; }
@@ -154,6 +158,67 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /* nas lojas interna */
 
 /* /nas lojas */
+
+/* naweb */
+.ico-naweb{background: url(/portal/images/capaPrograma/cocorico/naweb-ico-redes.png) no-repeat;width:20px; height:20px;margin: 9px; float:left;}
+#naweb .destaque{background-color:#f3f7f7;border-radius:8px;}
+#naweb .destaque h2{font-size: 14px;color: #77838B;font-weight: bold;line-height: 17px;padding: 10px;margin: 0; text-transform: uppercase;}
+#naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width: 429px;height: 42px;float: left;background: url(/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
+#naweb .destaque .btn-inscreva-se .btn-destaque:hover{text-decoration: none;}
+#naweb .destaque span{display:block; float:left;width:14px;height:42px; background:url(/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
+#naweb .destaque span.last{background-position: right 0;}
+#naweb .instagram .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 60px;}
+#naweb .instagram .bac-blue{background-color: #f3f7f7; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
+#naweb .instagram h3{margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 5px; }
+#naweb .instagram span{font-size:11px; font-weight:bold; color:#70aab1;}
+#naweb .instagram .ico-instagram{background-position: 0 bottom; margin-top: 7px;}
+#naweb .instagram .borda{bottom: 8px;position: relative;width:100%; height:13px; background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+#naweb .twitter a{margin-bottom: 10px;height: 30px;display: block;}
+/* /naweb */
+
+/* agenda, cinema e post */
+#agenda .lista {position: relative;}
+#agenda .lista .item-lista{position: relative;}
+#agenda .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0;color:#6b757d;}
+#agenda .lista hr{clear: both; margin: 0 0 10px 0; padding-top: 10px; border-bottom: 1px dashed #bbdadd;}
+#agenda .lista span{color:#70aab1; font-size:14px;font-weight:bold;text-transform:uppercase;}
+#agenda .acontece .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
+#agenda .acontece .bac-blue{background-color: #e9f3f4; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
+#agenda .acontece h3{position: relative;margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 6px; }
+#agenda .acontece span{font-size:11px; font-weight:bold; color:#70aab1;}
+#agenda .acontece .ico-acontece{background-position: 0 -48px; margin-top: -4px;}
+#agenda .acontece .ico-cinema{background-position: 0 bottom; margin-top: -4px;}
+#agenda .acontece .seta-acontece{background-position: 0 -25px; top:21px; left:50%;}
+#agenda .destaque{margin-bottom: 20px;}
+#agenda .pagination{margin-top: 20px;}
+#agenda .paginacao {margin: 0 0 20px 0;overflow: hidden;}
+#agenda .paginacao a {color:#70aab1;font-weight: bold;text-transform: uppercase;float: left;max-width: 103px;max-height: 40px;}
+#agenda .paginacao a:hover{text-decoration: none;}
+#agenda .paginacao a span {background: url("/portal/images/capaPrograma/cocorico/seta-familia.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
+#agenda .paginacao .proximo {position: relative;max-width: 70px;text-align: right;padding-right: 26px;}
+#agenda .paginacao .proximo, .paginacao .proximo span {float: right;}
+#agenda .paginacao .proximo span {position: absolute;top: 0;right: 0;margin-right: 0;background-position: -17px 0;}
+#agenda .redes {margin: 10px 0 !important;}
+#agenda #rede-face, #agenda #rede-twitter, #agenda #rede-google, #agenda #rede-pinterest {float: left;margin-right: 10px;float:right;}
+#agenda .titulo-post h2{font-weight: bold; color:#FFF; margin:0 0 4px 0; padding:10px;font-size:20px;background-color: #70aab1; text-transform: uppercase;line-height: 18px; border-radius: 10px;}
+#agenda .titulo-post span{font-weight: bold;color:#70aab1; font-size:14px; text-transform: uppercase;}
+#agenda .asset img{margin: 10px auto;}
+#agenda .asset iframe{width:620px; height:350px; margin:10px auto;}
+#agenda .anterior.cinema, 
+#agenda .proximo.cinema{margin:0; line-height: 40px;}
+/*#blocoCarrossel .texto,
+#blocoCarrossel .base-btns*/
+.carousel { background: url(/portal/images/capaPrograma/cocorico/agenda-pattern-bloco.png); border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;}
+#blocoCarrossel .texto { margin:10px; display: block;} 
+#blocoCarrossel .texto:hover { text-decoration:none; }
+#blocoCarrossel .texto h3{margin-top:2px;}
+#blocoCarrossel .base-btns{position:relative; padding: 30px 0 5px 0; }
+#blocoCarrossel .bloco-nav {margin:0 auto; overflow: hidden;}
+#blocoCarrossel .bloco-nav .btn-nav{float:left; margin-right:5px; background:url(/portal/images/capaPrograma/cocorico/agenda-btn-destaque.png) no-repeat right 0; width:13px; height:13px; display: block;}
+#blocoCarrossel .bloco-nav .btn-nav.active{background-position: left 0;} 
+#blocoCarrossel .bloco-nav .btn-nav.last{margin-right:0px;}
+#blocoCarrossel .texto p { line-height:20px; }
+/* agenda,cinema e post */
 
 /* ie */
 .conteudo .logos { margin-left:20px\9; } 

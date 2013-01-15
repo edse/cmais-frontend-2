@@ -27,7 +27,7 @@
 .curtir { background-position: -108px 0; }
 .curtir.disabled { background-position: -108px -40px; }
 
-.conteudo .alerta { color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
+.conteudo .alerta { margin-bottom:20px; color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
 .conteudo .alerta span { width:23px; height:19px; background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 40px; }
 .conteudo h3 {font-weight:bold; text-transform: uppercase; font-size:14px; line-height: 18px; margin-bottom:0;}
 .conteudo ul { margin-left:0; }
@@ -136,22 +136,70 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 #radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat 0 bottom; width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
 #radio .conteudo-diverso{background-color: #f2722f;}
 #radio .conteudo-diverso p{color:#fdf035; position: relative;}
-#radio .destaque-2{border-radius:9px; margin-top:30px;position:relative;}
-#radio .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 10px;text-align: center;color: #FDF035 !important;padding: 0;overflow: hidden; height: 19px;}
-#radio .destaque-2 p{position:relative; padding: 3px 10px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;text-align: center;}
-#radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
+#radio .destaque-2{border-radius:9px; margin-top:30px;position:relative; padding-top:1px;}
+#radio .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 10px;text-align: center;color: #FDF035 !important;padding: 0;overflow: hidden;height: 19px;}
+#radio .destaque-2 p{position:relative; padding: 3px 10px 7px 10px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;text-align: center;}
+#radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-22px;}
 #radio .conteudo-diverso .ico-mais{background-position:0 top;}
+#radio a.clipe:hover{text-decoration: none}
 /* /radio */
 
 /* scrollbar p/ chome*/
-::-webkit-scrollbar { height: 12px; width: 12px; background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white)); }
-::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
-::-webkit-scrollbar-corner { background: #fff;}
+#radio::-webkit-scrollbar { height: 12px; width: 25px; background:none; }
+#radio::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
+#radio::-webkit-scrollbar-corner { background: #fff;}
 
 /* /BRINCADEIRAS */
+
+/* home brincadeiras */
+.tvcoco.span12 { margin-top:0; padding-top:0; background:#F2722F; }
+.destaque-home-tv h2,
+.tvcoco h2 { font-size:20px; text-transform:uppercase; font-weight:normal; margin-top:10px;}
+.convidado.span12 { background:#dd582a; color:#f8b145; }
+.enquete.span12 { background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x top ;}
+.tvcoco .mais { top:195px; background-position:-36px; }
+.enquete a.span6 { background:#f8b145; color:#dd582a; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; text-align: center; margin:10px 0 5px 3px !important; display:block; }
+.enquete a.span6 img {  border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0;}
+.destaque-home-tv iframe { margin-top:0; }
+.destaque-home-tv { background:#F2722F; }
+.destaque-home-tv h2 { margin-top: 0; color:#FDF035; }
+.destaque-home-tv .destaque .last { background-position:-10px 0; }
+.destaque-home-tv .destaque span { background-position:-60px 0; }
+.destaque-home-tv .btn-destaque { color:#fff; background: url(/portal/images/capaPrograma/cocorico/bg-laranja.jpg) repeat-x; }
+.destaque-home-tv { border-color:#F2722F; background:#F2722F; }
+.bastidores { border-color:#F2722F; background:#F2722F; }
+.destaque-2 { margin-top:0; }
+.destaque2 h3 { margin:5px 0; float:left; text-align:center; width: 100%; }
+.bastidores .topo h3 i.ico-serie {  background: url(/portal/images/capaPrograma/cocorico/ico-serie.jpg) no-repeat; width: 20px; height: 23px; display: block; float: left; margin-top:2px; }
+.bastidores .topo h3 { line-height:26px; width:90%; }
+.bastidores .topo .bac-yellow { border:2px solid #f8b145; }
+.ico-seta-titulo {right: 40%; top:26px; background-position:0 -13px;}
+.bastidores .topo { background-image:url(/portal/images/capaPrograma/cocorico/atividades-pattern.jpg);  }
+.bastidores .item {  background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x bottom; }
+.bastidores .item span { margin-bottom:2px; display:block; }
+.bastidores .img-bast { margin-bottom:2px; }
+.destaque-home-tv .btn-destaque:hover { color:#fff; }
+.destaque2 .radio .icon-music {  background:url(/portal/images/capaPrograma/cocorico/ico-musica.png) no-repeat; width:38px; height:38px; float:left; z-index: 100; position: relative }
+.destaque2 .radio { padding:0; }
+.destaque2 .radio a { background:url(/portal/images/capaPrograma/cocorico/bg-laranja.jpg) repeat-x; height:40px; line-height:40px; font-size:16px; text-transform:uppercase; color:#fff;  display: block;  -moz-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px;  border-radius:10px 0 0 10px;  float:left; margin-left:-28px; padding:0 8px 0 35px; z-index: 0; position:relative; }
+.destaque2 .radio a:hover { text-decoration:none; }
+.destaque2 .radio a span { color:#FDF035; margin-left:3px; }
+.destaque2 .radio .borda { background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -10px 0; width:10px; height:40px; display:block; float:left; }
+.bastidores.span4 { margin-left:auto; float: right; margin-top:30px; border: none; }
+.bastidores.span4 .topo h3 i.ico-colorir {  background: url(/portal/images/capaPrograma/cocorico/ico-colorir.png) no-repeat; width: 20px; height: 17px; display: block; float: left; margin-top:2px; margin:5px 5px 0 0; }
+.bastidores .topo h3 { color:#F2722F; }
+.bastidores .topo .ico-seta-titulo { right:42%; }
+.bastidores.span4 .topo h3 { color:#F2722F; text-align:left; margin:0 0 0 5px;}
+.conteudo .bastidores.span4 img { border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.bastidores.span4 a { color:#fff; margin:15px 11px 0 2px; max-width:140px; max-height:105px; }
+.bastidores.span4 a:hover {text-decoration:none;  }
+.bastidores.span4 a.last { margin:15px 0 0; }
+/* /home brincadeiras */
 
 /* ie*/
 .especial .span8 { padding-right:0\9; float:left\9; }
 .especial .span6 { margin-left:10px\9; }
 .conteudo .destaque-especial .span3 { margin:0 10px 10px 0\9; }
 /* /ie*/
+
+.destaques-small a { max-height:123px;  }

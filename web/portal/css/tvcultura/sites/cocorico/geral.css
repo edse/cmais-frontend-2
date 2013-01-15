@@ -9,6 +9,7 @@ ul li { list-style:none; }
 .row-fluid .divisoria { background:url(/portal/images/capaPrograma/cocorico/divisoria-azul.png) repeat-x; margin:0; padding:0; height:4px; min-height: 4px; }
 .menu .navbar,
 .menu .navbar-inner {  background:none; border:none; box-shadow:none; }
+.menu .navbar .nav { width: 100%; }
 
 /* font-familt ubuntu */
 .destaque2 .radio a,
@@ -110,9 +111,9 @@ input.search-query,
 .menu .navbar .nav > li > a:focus,
 .menu .navbar .nav > li > a:hover,
 .menu .navbar .nav > li > a { color:#fff;  }
-.menu .navbar .nav > li > a { font-size:15px; padding:0 9px 0 35px;  height:40px; line-height: 40px; color:#fff; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase;}
+.menu .navbar .nav > li > a { font-size:20px; padding:0 22px 0 50px;  height:40px; line-height: 40px; color:#fff; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase;}
 .menu .navbar-inner { padding:0; }
-.menu .navbar .nav > li { overflow:hidden; margin-right:/*10px*/75px; margin-top:12px;}
+.menu .navbar .nav > li { overflow:hidden; margin-right:20px; margin-top:12px;}
 .menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;  }
 .menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px;}
 
@@ -133,7 +134,7 @@ input.search-query,
 .menu .navbar .nav > li.diario a {background:url(/portal/images/capaPrograma/cocorico/bg-roxo.jpg) repeat-x;}
 .menu .navbar .nav > li.diario span { background-position:-30px 0; }
 
-.menu .navbar .nav > li.familia { margin:12px 0 0 20px; }
+.menu .navbar .nav > li.familia { float: right; margin: 12px 20px 0 0; padding: 0; width: 160px;}
 .menu .navbar .nav > li.familia a {background:url(/portal/images/capaPrograma/cocorico/ico-familia.png) no-repeat; text-indent:-9999px; width:122px; border: none; margin:0; height:40px; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; z-index: 10; position:relative;}
 
 .menu .navbar .nav > li span { width:9px; height:40px; float:left; background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat;  }
@@ -279,7 +280,7 @@ input.search-query,
 .menu .navbar .nav > li .icon { margin:1px\9; }
 .menu .navbar .nav > li.personagens { margin-right:5px\9; }
 .menu .navbar .nav,
-.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9;margin-left:0; margin-right:5px; }
+.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
 .container, 
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
