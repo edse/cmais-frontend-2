@@ -66,9 +66,9 @@
         <i class="ico-confirma"></i>
         <h4><?php echo $displays_home["enquete"][0]->getHeadline();?></h4>
         <h3><?php echo $q;?></h3>
-        <div class="resultado"><?php echo $respostas[0]->Asset->AssetAnswer->geVotos(); ?> - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
+        <div class="resultado"><?php echo $respostas[0]->Asset->AssetAnswer->getVotos(); ?> - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
         <i class="ico-versus-enquete"></i>
-        <div class="resultado verde"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - <?php echo $respostas[1]->Asset->AssetAnswer->geVotos(); ?> </div>
+        <div class="resultado verde"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - <?php echo $respostas[1]->Asset->AssetAnswer->getVotos(); ?> </div>
       </li>
         <!-- pontilhado -->
         <li><hr></li>
