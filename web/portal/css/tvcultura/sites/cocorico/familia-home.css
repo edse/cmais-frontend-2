@@ -3,7 +3,7 @@
 .carrossel-familia {  border-radius:10px ; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .carrossel-familia h2 { background:#e9f3f4; color:#6a747d; margin:0; height:35px; line-height: 35px; font-size:20px; margin-bottom:2px;   }
 .carrossel-familia .ico-presente { background:  url("/portal/images/capaPrograma/cocorico/ico-presente.png") no-repeat; width:20px; height:21px; float: left; margin:5px 5px 0 5px;}
-.carrossel-familia { background:#fff; padding:2px;  position:relative; overflow:hidden; margin-bottom:30px;}
+.carrossel-familia { background:#fff; padding:2px;  position:relative; overflow:hidden; margin-bottom:0;}
 #myCarousel { margin-left:0; }
 .ico-seta-titulo-grd { background:url("/portal/images/capaPrograma/cocorico/seta-titulo-grd.png") no-repeat; width:26px; height:15px; position:absolute; display:block; right:50%; z-index: 100; top:37px; }
 .texto:hover,
