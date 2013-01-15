@@ -279,7 +279,7 @@ input.search-query,
 .menu .navbar .nav > li .icon { margin:1px\9; }
 .menu .navbar .nav > li.personagens { margin-right:5px\9; }
 .menu .navbar .nav,
-.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
+.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9;margin-left:0; margin-right:5px; }
 .container, 
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
