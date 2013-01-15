@@ -1,3 +1,28 @@
+<?php
+  //$displays = array();
+  $blocks = Doctrine_Query::create()
+    ->select('b.*')
+    ->from('Block b, Section s')
+    ->where('b.section_id = s.id')
+    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
+    ->andWhere('s.site_id = ?', $site->id)
+    ->execute();
+
+  if(count($blocks) > 0){
+    $displays_tv_cocorico['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
+  }
+  
+  //pergunta bloco enquete - 1º destaque
+  $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
+  
+  //doctrine para respostas
+  $respostas = Doctrine_Query::create()
+    ->select('aa.*')
+    ->from('AssetAnswer aa')
+    ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+    ->execute();
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -31,31 +56,7 @@
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
-  <?php
-  //$displays = array();
-  $blocks = Doctrine_Query::create()
-    ->select('b.*')
-    ->from('Block b, Section s')
-    ->where('b.section_id = s.id')
-    ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-    ->andWhere('b.slug = ?', 'destaque-tv-cocorico') 
-    ->andWhere('s.site_id = ?', $site->id)
-    ->execute();
-
-  if(count($blocks) > 0){
-    $displays_tv_cocorico['destaque-tv-cocorico'] = $blocks[0]->retriveDisplays();
-  }
   
-  //pergunta bloco enquete - 1º destaque
-  $q = $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();
-  
-  //doctrine para respostas
-  $respostas = Doctrine_Query::create()
-    ->select('aa.*')
-    ->from('AssetAnswer aa')
-    ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-    ->execute();
-  ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
