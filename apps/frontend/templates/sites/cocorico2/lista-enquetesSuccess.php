@@ -31,30 +31,34 @@
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
-  <?php
-   $displays_home = array();
-   $blocks = Doctrine_Query::create()
-     ->select('b.*')
-     ->from('Block b, Section s') 
-     ->where('b.section_id = s.id')
-     ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-       ->andWhere('b.slug = ?', 'enquete') 
-     ->andWhere('s.site_id = ?', $site->id)
-     ->execute();
   
-    if(count($blocks) > 0){
-      $displays_home['enquete'] = $blocks[0]->retriveDisplays();
-    }
-  
-      
-    //pergunta bloco enquete - 1º destaque
-    $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
-  
-  ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
     <ul class="lista">
+      
+      <?php
+       $displays_home = array();
+       $blocks = Doctrine_Query::create()
+         ->select('b.*')
+         ->from('Block b, Section s') 
+         ->where('b.section_id = s.id')
+         ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+           ->andWhere('b.slug = ?', 'enquete') 
+         ->andWhere('s.site_id = ?', $site->id)
+         ->execute();
+      
+        if(count($blocks) > 0):
+          $displays_home['enquete'] = $blocks[0]->retriveDisplays();
+        
+        
+        //doctrine para respostas
+        $respostas = Doctrine_Query::create()
+          ->select('aa.*')
+          ->from('AssetAnswer aa')
+          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
+          ->execute();
+      ?>
       <!-- item -->
       <li class="item-lista">
         <i class="ico-confirma"></i>
@@ -68,19 +72,10 @@
         <li><hr></li>
         <!-- /pontilhado -->
       <!-- /item -->
-      <!-- item -->
-      <li class="item-lista">
-        <i class="ico-confirma"></i>
-        <h4>dd/mm/aaaa</h4>
-        <h3>pergunta?</h3>
-        <div class="resultado">00% - alternativa1</div>
-        <i class="ico-versus-enquete"></i>
-        <div class="resultado verde">alternativa2 - 00%</div>
-      </li>
-        <!-- pontilhado -->
-        <li><hr></li>
-        <!-- /pontilhado -->
-      <!-- /item -->
+       <?php
+        endif;
+       ?>
+      
       
     </ul>
     <!-- /lista -->
