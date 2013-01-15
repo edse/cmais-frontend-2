@@ -76,8 +76,7 @@
   		if(count($blocks) > 0){
     	$displays_home['enquete'] = $blocks[0]->retriveDisplays();
   }
-?>
-        <?php
+
         //pergunta bloco enquete - 1º destaque
         $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
 

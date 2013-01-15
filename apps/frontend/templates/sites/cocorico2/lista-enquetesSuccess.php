@@ -43,7 +43,7 @@
      ->execute();
   
     if(count($blocks) > 0){
-    $displays['enquete'] = $blocks[0]->retriveDisplays();
+      $displays['enquete'] = $blocks[0]->retriveDisplays();
     }
   
       
