@@ -42,7 +42,7 @@
     <?php if(isset($displays['tour-virtual'])):?>
     <?php if(count($displays['tour-virtual']) > 0): ?>     
     <div class="row-fluid conteudo">
-    <p><?php echo $displays[0]->getDescription() ?></p>
+    <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
     
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <?php if (count($related_video) > 0): ?>
