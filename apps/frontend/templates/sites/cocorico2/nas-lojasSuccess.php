@@ -32,7 +32,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">NAS LOJAS</h2>
-  <!--row-->
+  <!--row--> 
   <?php if(isset($displays['descricao'])):?>
     <?php if(count($displays['descricao']) > 0): ?> 
     
