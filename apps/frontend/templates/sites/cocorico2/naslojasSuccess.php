@@ -46,7 +46,7 @@ $assets = $pager->getResults();
     
   <!--/row-->
   <!--row-->
-  <div class="row-fluid naslojas">
+  <div class="row-fluid naslojas"> 
     <div class="span12">
     	<?php if(count($assets) > 0): ?>
  	      <ul class="lista-produtos">
