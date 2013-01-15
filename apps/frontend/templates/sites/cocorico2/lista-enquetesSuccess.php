@@ -47,9 +47,6 @@
     }
   
       
-    //pergunta bloco enquete - 1º destaque
-    $q = $displays['enquete'][0]->Asset->AssetQuestion->getQuestion();
-  
   ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
