@@ -52,7 +52,7 @@ $assets = $pager->getResults();
  	      <ul class="lista-produtos">
       	 	  <?php foreach($assets as $k=>$d): ?>
       	 	  	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-				 <li class="span4"><a class="span12" href=<?php echo $d->retriveUrl() ?>" title=""><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+				 <li class="span4"><a class="span12" href=<?php echo $d->retriveUrl() ?>" title=""><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original ') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
               <?php endforeach; ?>
           </ul>                   
       <?php endif; ?>
