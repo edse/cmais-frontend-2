@@ -51,15 +51,15 @@
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         
-        
+          $respostas = Doctrine_Query::create()
+              ->select('aa.*')
+              ->from('AssetAnswer aa')
+              ->where('aa.asset_question_id = ?', (int)$displays_home['enquete'][0]->Asset->AssetQuestion->id)
+              ->execute();
         
           foreach($displays_home['enquete'] as $d): 
             //doctrine para respostas
-            $respostas = Doctrine_Query::create()
-              ->select('aa.*')
-              ->from('AssetAnswer aa')
-              ->where('aa.asset_question_id = ?', (int)$d[0]->Asset->AssetQuestion->id)
-              ->execute();
+            
             
       ?>
           <!-- item -->
