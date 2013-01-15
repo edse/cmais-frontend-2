@@ -40,6 +40,7 @@ $assets = $pager->getResults();
   	  <?php foreach($displays['descricao'] as $k=>$d):?>   
   <div class="row-fluid conteudo ">
     <p><?php echo $d->getDescription() ?></p>
+    </div>
   <?php endforeach; ?>   
    <?php endif; ?>
     <?php endif; ?>

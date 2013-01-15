@@ -46,7 +46,7 @@
   <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
   
  
-  <?php $related_videos = $displays['tour-virtual']->retriveRelatedAssetsByAssetTypeId(6); ?>
+  <?php $related_videos = $displays['tour-virtual'][0]->retriveRelatedAssetsByAssetTypeId(6); ?>
       
     <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_videos[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
 
