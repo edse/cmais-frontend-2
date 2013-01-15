@@ -1,3 +1,6 @@
+<?php
+$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 <!-- container-->
 <div class="container tudo">
@@ -17,7 +20,7 @@
       <fb:like href="http://www3.tvcultura.com.br/cocorico/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
     </div>
     <div class="divisoria span12"></div>
-  </div>
+  </div> 
   <!-- /row-->
   <!-- row-->
    <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
@@ -29,7 +32,7 @@
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">NAS LOJAS</h2>
-  <!--row-->
+  <!--row--> 
   <?php if(isset($displays['descricao'])):?>
     <?php if(count($displays['descricao']) > 0): ?> 
     
