@@ -273,22 +273,28 @@ input.search-query,
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
 /* /topo*/
 
-/* IE8*/
+/* IE*/
+
 .menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
 .menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
-.menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
+/*
+
 .menu .navbar .nav > li .icon { margin:1px\9; }
 .menu .navbar .nav > li.personagens { margin-right:5px\9; }
 .menu .navbar .nav,
 .menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
+*/
 .container, 
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
 .navbar-fixed-bottom .container { width:1190px\9;  }
-.destaques-small li.span2 { margin:0 16px 10px 0\9; }
+
 .destaques-small li.span2 a {  *margin-bottom:10px;}
+.conteudo .destaques-small { *margin-left:4px; }
+/*
 .tit-pagina,
 .tit-especial { min-width:700px\9; }
+*/
 .voltar .divisao {  *display:none; }
 .destaques.span6 .bold { min-width: 300px\9; }
 .destaques a.span12 { *width:265px; }
@@ -298,7 +304,8 @@ input.search-query,
 .ico-seta-titulo{background: url(/portal/images/capaPrograma/cocorico/seta-titulo.png) no-repeat; width:19px; height:10px; position:absolute; top:24px;}
 
 .destaques {position:relative; border-radius:10px; text-align:center; display:block; line-height:25px;}
-.destaques span { background-position:-36px 0; bottom:5px; right:0; }
+.destaques span { background-position:/*-36px 0*/ 0 0; bottom:5px; right:0; }
+.destaques span:hover { bottom:-5px; }
 .col-esq .destaques.span6 { background:#f2722f; margin-top:0;}
 
 .cr {margin-left: 0 !important; width:300px; margin-top:30px; height:40px; background:url(/portal/images/capaPrograma/cocorico/btn-faleconosco.png) no-repeat; float:left;}
