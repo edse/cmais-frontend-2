@@ -54,7 +54,7 @@
         echo count($blocks[0]->retriveDisplays())."teste>>>><br>";
         echo count($displays_home['enquete'][0])."teste>>>><br>";
         foreach($displays_home['enquete'] as $k=>$d){
-          echo $displays_home['enquete'][$k]->getHeadline()."<br/>";
+          echo $displays_home['enquete'][$k]->getTitle()."<br/>";
         }
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
