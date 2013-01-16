@@ -1,5 +1,5 @@
 <?php
-$preview = $asset->retriveRelatedAssetsByAssetTypeId(6) ."teste<br>";
+$preview = $asset->retriveRelatedAssetsByAssetTypeId(6);
 echo $preview[0]->file;
 
 ?>
