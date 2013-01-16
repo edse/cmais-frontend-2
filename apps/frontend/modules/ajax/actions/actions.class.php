@@ -1455,7 +1455,25 @@ EOT;
 			
 			//echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
 			die(json_encode($results));
-	  }else{
+    }
+    elseif($request->getParameter('enquete_id') > 0){
+
+      $aq = Doctrine::getTable('AssetQuestion')->findOneById($request->getParameter('enquete_id'));
+  
+      $filename = "/var/frontend/web/uploads/assets/question/".$aa->AssetQuestion->id.".txt";
+      $lines = file($filename);
+      $total = count($lines);
+      for($i=$total;$i>=0;$i--){
+        $vote = trim(@end(explode("\t", $lines[$i])));
+        if(intVal($vote)>0){
+          @$votes[$vote] += 1;
+        }
+      }
+      foreach($aq->Answers as $a){
+        $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+      }
+      die(json_encode($results));
+    }else{
 	    header("Location: http://cmais.com.br");
 	    die();
 	  }
