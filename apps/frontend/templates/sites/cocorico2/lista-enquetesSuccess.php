@@ -54,14 +54,18 @@
         echo count($blocks[0]->retriveDisplays())."teste>>>><br>";
         echo count($displays_home['enquete'][0])."teste>>>><br>";
         foreach($displays_home['enquete'] as $k=>$d){
+          echo $displays_home['enquete'][$k]->getHeadline()."<br/>";
           echo $displays_home['enquete'][$k]->getTitle()."<br/>";
-        }
-        //doctrine para respostas
-        $respostas = Doctrine_Query::create()
+          $respostas = Doctrine_Query::create()
           ->select('aa.*')
           ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
+          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][$k]->Asset->AssetQuestion->id)
           ->execute();
+          echo $respostas[0]->Asset->AssetAnswer->getAnswer()."<br>";
+          echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>";
+        }
+        //doctrine para respostas
+        
 
          $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
       ?>
