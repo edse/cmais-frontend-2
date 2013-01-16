@@ -54,20 +54,37 @@
         endif;
         
         foreach($displays_home['enquete'] as $k=>$d):
+          
+          $filename = "/var/frontend/web/uploads/assets/question/".$displays_home["enquete"][$k]->Asset->AssetQuestion->id.".txt";
+          $lines = file($filename);
+          $total = count($lines);
+          for($i=$total;$i>=0;$i--){
+            $vote = trim(@end(explode("\t", $lines[$i])));
+            if(intVal($vote)>0){
+              @$votes[$vote] += 1;
+            }
+          }
+          foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
+            $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+          }
+          /*
           $respostas = Doctrine_Query::create()
-          ->select('aa.*')
-          ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][$k]->Asset->AssetQuestion->id)
-          ->execute();
+            ->select('aa.*')
+            ->from('AssetAnswer aa')
+            ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][$k]->Asset->AssetQuestion->id)
+            ->execute();
+          */
       ?>
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
             <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
             <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
-            <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
+            <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
+            <div class="resultado verde"><?php echo $results[0]["votes"]?> - <?php echo $results[0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
-            <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div>
+            <?php /* <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div> */ ?>
+            <div class="resultado"><?php echo $results[1]["votes"]?> - <?php echo $results[1]["answer"]?></div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
