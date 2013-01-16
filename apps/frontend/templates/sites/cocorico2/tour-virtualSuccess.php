@@ -52,7 +52,7 @@
     <?php endif; ?>
    <?php endif; ?>
      
-   
+  <!-- ** DESTAQUE 2 **-->
     
    <?php if(isset($displays['destaque-3'])):?>
     <?php if(count($displays['destaque-3']) > 0): ?>
