@@ -1462,7 +1462,7 @@ EOT;
 
       $aq = $a->AssetQuestion;
   
-      $filename = "/var/frontend/web/uploads/assets/question/".$aq->AssetQuestion->id.".txt";
+      $filename = "/var/frontend/web/uploads/assets/question/".$aq->id.".txt";
       $lines = file($filename);
       $total = count($lines);
       for($i=$total;$i>=0;$i--){
