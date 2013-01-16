@@ -100,7 +100,7 @@
   <!-- paginacao 
   <div class="pagination pagination-centered">
     <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
+      <li class="anterior"><a href="#" title="Anterior"></a ></li>
       <li class="active"><a href="#" title="1">1</a></li>
       <li><a href="#" title="1">2</a></li>
       <li><a href="#" title="1">3</a></li>
