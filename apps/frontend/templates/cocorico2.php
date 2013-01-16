@@ -87,6 +87,10 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <!--[if lte IE 8]>
+  <link type="text/css" rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico/ie8.css" />
+  <![endif]-->
 
   
   </head>
