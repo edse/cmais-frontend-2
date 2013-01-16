@@ -1,7 +1,7 @@
 <?php
-echo "titulo:".$asset->getTitle();
-echo "descricao:".$asset->getDescription();
-echo "img".$asset->AssetImage->getFile();
+echo "teste jefferson";
+$preview = $asset->retriveRelatedAssetsByRelationType('Preview')."<br>";
+echo $preview[0]->retriveImageUrlByImageUsage('image-6-b')."<br>"; 
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
