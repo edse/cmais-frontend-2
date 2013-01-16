@@ -75,7 +75,7 @@
       </div>
     </a>
      <?php endif; ?>
-   <?php endif; ?>
+   <?php endif; ?> 
     
   </div>
   <!-- /row-->
