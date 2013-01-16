@@ -5,15 +5,19 @@
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>     
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+      <!--menu principal-->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <!--/menu principal-->
+      <!--menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--/menu personagens -->
     </div>
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/receitinhas" class="active">Para Colorir</a></li>
+     <li class="active">Para Colorir</li>
      
   </ul>
   <!-- /breadcrumb-->
