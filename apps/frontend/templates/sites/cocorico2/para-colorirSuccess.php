@@ -5,8 +5,12 @@
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>     
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri, 'site'=>$site)) ?>
+      <!--menu principal-->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <!--/menu principal-->
+      <!--menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--/menu personagens -->
     </div>
   </div>
   <!-- /row-->
