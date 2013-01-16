@@ -67,7 +67,7 @@
    <?php if(isset($displays['destaque-3'])):?>
   	<?php if(count($displays['destaque-3']) > 0): ?>
   	 <?php $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
-      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
+      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
         <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
