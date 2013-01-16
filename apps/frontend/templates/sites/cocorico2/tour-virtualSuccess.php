@@ -60,7 +60,7 @@
         <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
         <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"><i class="ico-mais"></i></p>
       </div>
-    </a>
+    </a> 
     <?php endif; ?>
    <?php endif; ?>
     
