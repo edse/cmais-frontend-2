@@ -234,3 +234,8 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .conteudo .logos { margin-left:20px\9; } 
 /*/ie*/
 
+/*Somente para Safari e Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    #menu-familia li .divider { padding:0 16px; }
+}
