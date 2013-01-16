@@ -62,6 +62,7 @@
     </ul>
     
   </div>
+  <?php endif; ?>
   <!-- /row-->
   
   <!-- rodape-->
