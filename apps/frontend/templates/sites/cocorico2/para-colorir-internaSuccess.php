@@ -1,28 +1,10 @@
 <?php
-"titulo:".$asset->getTitle();
+echo "titulo:".$asset->getTitle();
+echo "descricao:".$asset->getDescription();
+echo "img".$asset->AssetImage->getFile();
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
-  });
-</script>
-<!-- analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22770265-1']);
-  _gaq.push(['_setDomainName', 'cmais.com.br']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- /analytics -->
 <!-- container-->
 <div class="container tudo">
  <!-- row-->

@@ -16,9 +16,8 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Para Colorir</li>
-     
+     <li><a href="/cocorico2">Cocórico</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Para Colorir</li>    
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Para colorir</h2>
