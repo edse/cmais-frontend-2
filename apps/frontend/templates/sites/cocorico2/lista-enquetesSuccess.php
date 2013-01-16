@@ -22,7 +22,7 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="<?php echo $site->retriveUrl() ?>">TV Cocorico</a><span class="divider">&rsaquo;</span></li>
+    <li><a href="/cocorico2/tv-cocorico">Tv Corórico</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Enquetes Anteriores</li>
   </ul>
   <!-- /breadcrumb-->
@@ -38,35 +38,34 @@
     <ul class="lista">
       
       <?php
+      //puxando bloco home
        $displays_home = array();
        $blocks = Doctrine_Query::create()
          ->select('b.*')
          ->from('Block b, Section s') 
          ->where('b.section_id = s.id')
          ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-           ->andWhere('b.slug = ?', 'enquete') 
+         ->andWhere('b.slug = ?', 'enquete') 
          ->andWhere('s.site_id = ?', $site->id)
          ->execute();
       
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
+        endif;
         
-        
-        //doctrine para respostas
-        $respostas = Doctrine_Query::create()
+        foreach($displays_home['enquete'] as $k=>$d):
+          $respostas = Doctrine_Query::create()
           ->select('aa.*')
           ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
+          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][$k]->Asset->AssetQuestion->id)
           ->execute();
-
- 
       ?>
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $displays_home["enquete"][0]->getHeadline();?></h4>
-            <h3><?php echo $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();?></h3>
-            <div class="resultado">00% - <?php echo $displays_home['enquete'][0]->Asset->AssetQuestion->Asset->AssetAnswer->getAnswer(0)?></div>
+            <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
+            <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
+            <div class="resultado">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
             <i class="ico-versus-enquete"></i>
             <div class="resultado verde"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div>
           </li>
@@ -75,11 +74,8 @@
             <!-- /pontilhado -->
           <!-- /item -->
        <?php
-          
-        endif;
+          endforeach;
        ?>
-      
-      
     </ul>
     <!-- /lista -->
   </div>
