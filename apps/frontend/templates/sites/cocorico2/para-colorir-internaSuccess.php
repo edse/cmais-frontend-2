@@ -1,7 +1,5 @@
 <?php
-echo "titulo:".$asset->getTitle();
-echo "descricao:".$asset->getDescription();
-echo "img".$asset->AssetImage->getFile();
+echo $asset->retriveRelatedAssetsByAssetTypeId(6) ."teste";
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
@@ -22,18 +20,18 @@ echo "img".$asset->AssetImage->getFile();
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/para-colorir">para colorir</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="#" class="javascript:window.history.go(-1)">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2>Título</h2>
+    <h2><?php echo $asset->getTitle()?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -49,8 +47,8 @@ echo "img".$asset->AssetImage->getFile();
 
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12">Descrição</p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" title="Imprimir">
+    <p class="span12"><?php echo $asset->getDescription(); ?></p>
+    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" title="Imprimir">
       <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/image-6-b/305540493098327627d91b979a23d9c5c0c9a7ea.jpg" alt="" />
     </a>
     <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/645ca48427c96fe91df1ce761009888a3f0e542e.jpg" alt="imprimir">imprimir</a>
