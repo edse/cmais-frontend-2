@@ -49,18 +49,24 @@
   <!-- conteudo -->
   <div id="naweb" class="row-fluid conteudo">
     <!-- youtube -->
+      <?php if(isset($displays['video'])):?>
+    <?php if(count($displays['video']) > 0): ?>     
+  	  <?php foreach($displays['video'] as $k=>$d):?>  
     <div class="destaque span6">
       <i class="ico-naweb"></i>
       <h2>youtube.com/tvcocorico</h2>
         
-      <iframe width="458" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
+      <iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
       
       <div class="btn-inscreva-se ">
         <span></span>
         <a href="#" class="btn-destaque" title="Inscreva-se em nosso canal!">Inscreva-se em nosso canal!</a>
         <span class="last"></span>
       </div>
-    </div>   
+    </div>  
+    <?php endforeach; ?>   
+   <?php endif; ?>
+    <?php endif; ?> 
     <!-- /youtube -->
     
     <!-- instagram -->
