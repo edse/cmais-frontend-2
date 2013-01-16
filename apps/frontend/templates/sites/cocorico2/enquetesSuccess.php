@@ -22,7 +22,7 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico2/tv-cocorico">Tv Corórico</a><span class="divider">&rsaquo;</span></li>
+    <li><a href="<?php echo $site->retieveUrl();?>/tvcocorico">Tv Corórico</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Enquetes Anteriores</li>
   </ul>
   <!-- /breadcrumb-->
@@ -97,7 +97,7 @@
     <!-- /lista -->
   </div>
   <!-- /row lista-enquetes-->
-  <!-- paginacao -->
+  <!-- paginacao 
   <div class="pagination pagination-centered">
     <ul>
       <li class="anterior"><a href="#" title="Anterior"></a></li>
