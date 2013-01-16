@@ -22,7 +22,7 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="<?php echo $site->retieveUrl();?>/tvcocorico">Tv Corórico</a><span class="divider">&rsaquo;</span></li>
+    <li><a href="<?php echo $site->retrieveUrl();?>/tvcocorico">Tv Corórico</a><span class="divider">&rsaquo;</span></li>
     <li class="active">Enquetes Anteriores</li>
   </ul>
   <!-- /breadcrumb-->

@@ -138,7 +138,7 @@
               <p class="resposta-<?php echo $i?>">50%</p>
             </div>
             <?php endfor;?>
-            <a href="#" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
+            <a href="<?php echo $site->retrieveUrl();?>/tvcocorico" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
           <!--/Resposta-->
         </div>

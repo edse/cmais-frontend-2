@@ -261,7 +261,7 @@
               <p class="resposta-<?php echo $i?>">50%</p>
             </div>
             <?php endfor;?>
-            <a href="<?php echo $site->retriveUrl() ?>/lista-enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
+            <a href="<?php echo $site->retriveUrl() ?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
           <!--/Resposta-->
         </div>
