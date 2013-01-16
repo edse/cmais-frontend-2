@@ -51,7 +51,7 @@
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         
-        echo count($blocks[0]->retriveDisplays())."teste>>>>";
+        echo count($displays_home['enquete'][0])."teste>>>>";
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
