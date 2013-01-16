@@ -42,7 +42,7 @@
        $blocks = Doctrine_Query::create()
          ->select('b.*')
          ->from('Block b, Section s') 
-         ->where('b.section_id ='.$section->id)
+         ->where('b.section_id = $site->id')
          ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
          ->andWhere('b.slug = ?', 'enquete') 
          ->andWhere('s.site_id = ?', $site->id)
@@ -52,7 +52,7 @@
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         
         echo count($blocks[0]->retriveDisplays())."teste>>>><br>";
-        echo count($displays_home['enquete'][0])."teste>>>><br>";
+        echo count($displays_home['enquete'][0][])."teste>>>><br>";
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
