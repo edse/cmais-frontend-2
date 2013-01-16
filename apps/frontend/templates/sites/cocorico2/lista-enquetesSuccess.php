@@ -49,23 +49,23 @@
          ->execute();
       
         if(count($blocks) > 0):
-          $displays_home['enquete'] = $blocks[0]->retriveDisplays();
+          $displays_home['enquete'] = $blocks[1]->retriveDisplays();
         
-        echo count($blocks[0]->retriveDisplays())."teste>>>><br>";
+        echo count($blocks[1]->retriveDisplays())."teste>>>><br>";
         echo count($displays_home['enquete'])."teste>>>><br>";
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
           ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][1]->Asset->AssetQuestion->id)
+          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
           ->execute();
 
-         $q = $displays_home['enquete'][1]->Asset->AssetQuestion->getQuestion();
+         $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
       ?>
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $displays_home["enquete"][1]->getHeadline();?></h4>
+            <h4><?php echo $displays_home["enquete"][0]->getHeadline();?></h4>
             <h3><?php echo $q;?></h3>
             <div class="resultado">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
             <i class="ico-versus-enquete"></i>
