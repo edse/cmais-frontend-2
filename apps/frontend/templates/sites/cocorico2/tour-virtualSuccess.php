@@ -44,21 +44,25 @@
   	  <a class="span4 destaque1" title="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
        <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-1'][0]->Asset->getTitle() ?></h3>
-        <img alt="Convidado" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
+        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
         <p><?php echo $displays['destaque-1'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
      </a>
     <?php endif; ?>
    <?php endif; ?>
      
-    <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
-    
+   <?php if(isset($displays['destaque-2'])):?>
+  	<?php if(count($displays['destaque-2']) > 0): ?>
+  	 <?php $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
+      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
-        <h3>Erros de gravação</h3>
-        <img alt="Convidado" src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg">
-        <p> texto corrido <i class="ico-mais"></i></p>
+        <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
+        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
+        <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"><i class="ico-mais"></i></p>
       </div>
     </a>
+    <?php endif; ?>
+   <?php endif; ?>
     
     <a class="span4 destaque1 last" title="titulo" href="#">
       <div class="destaque-1 conteudo-tv">
