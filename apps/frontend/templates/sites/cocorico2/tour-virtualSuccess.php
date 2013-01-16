@@ -28,7 +28,7 @@
   <?php if(isset($displays['tour-virtual'])):?>
   <?php if(count($displays['tour-virtual']) > 0): ?>
   <div class="row-fluid conteudo">  	
-  <p><?php echo html_entity_decode($displays['tour-virtual'][0]->AssetContent->render()) ?></p>
+  <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
    </div>
   <?php endif; ?>
    <?php endif; ?>
