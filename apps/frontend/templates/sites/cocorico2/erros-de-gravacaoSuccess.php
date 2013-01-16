@@ -51,7 +51,7 @@
       ->orderBy('a.id desc')
       ->limit(6)
       ->execute();
-  ?>
+  ?> 
   <?php if (count($assets) > 0): ?>
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Erros de gravação</a><span></span></div>
