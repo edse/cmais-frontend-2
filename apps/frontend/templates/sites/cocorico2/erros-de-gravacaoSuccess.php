@@ -1,8 +1,5 @@
-<?php
-if(!isset($asset)){
-  $assets = $pager->getResults();
-  $asset = $assets[0];
-}
+<?php 
+$assets = $pager->getResults(); //depois tem de ordenar por ranking...
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
