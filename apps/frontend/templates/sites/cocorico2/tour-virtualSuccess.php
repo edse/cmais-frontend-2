@@ -37,7 +37,7 @@
    
   <div class="row-fluid conteudo erros">
     <p class="tit"></p>
-    
+   
   <?php if(isset($displays['destaque-1'])):?>
   	<?php if(count($displays['destaque-1']) > 0): ?>
   	 <?php $related = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
@@ -76,8 +76,8 @@
     </a> 
      <?php endif; ?>
    <?php endif; ?> 
-    
-  </div>
+   </div>  
+  
   <!-- /row-->
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
