@@ -1,6 +1,6 @@
 <?php
 $preview = $asset->retriveRelatedAssetsByAssetTypeId(6) ."teste<br>";
-echo $preview[0]->getFile();
+echo $preview[0]->file;
 
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
