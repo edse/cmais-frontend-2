@@ -1,8 +1,5 @@
 <?php
-if(!isset($asset)){
   $assets = $pager->getResults();
-  $asset = $assets[0];
-}
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -39,6 +36,23 @@ if(!isset($asset)){
   <!-- /row-->
   <!--row-->
   <!--row-->
+  
+  <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "erros-de-gravacao"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 6')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id desc')
+      ->limit(6)
+      ->execute();
+  ?> 
+  <?php if (count($assets) > 0): ?>
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Erros de gravação</a><span></span></div>
     <ul class="destaques-small">
