@@ -56,7 +56,7 @@
       <i class="ico-naweb"></i>
       <h2>youtube.com/tvcocorico</h2>
         
-      <iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
       
       <div class="btn-inscreva-se ">
         <span></span>
