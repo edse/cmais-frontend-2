@@ -1,6 +1,4 @@
-<?php
-  $assets = $pager->getResults();
-?>
+
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
