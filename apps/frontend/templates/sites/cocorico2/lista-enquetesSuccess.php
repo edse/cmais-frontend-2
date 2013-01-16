@@ -64,7 +64,7 @@
               @$votes[$vote] += 1;
             }
           }
-          foreach($aq->Answers as $a){
+          foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
             $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
           /*
