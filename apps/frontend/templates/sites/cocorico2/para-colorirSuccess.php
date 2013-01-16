@@ -5,7 +5,7 @@
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu') ?>     
+     
       
     </div>
   </div>
