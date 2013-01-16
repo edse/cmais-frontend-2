@@ -6,28 +6,13 @@
   <div class="row-fluid menu">
     <div class="navbar">
       <div class="navbar-inner">
-        <ul class="nav">
-          <li class="personagens"><a href="#"></a></li>
-          <li class="joguinhos"><a class="icon" href="/cocorico/joguinhos" title="Joguinhos"></a><a href="/cocorico/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
-          <li class="brincadeiras"><a class="icon"  href="/cocorico/brincadeiras" title="Brincadeiras"></a><a href="/cocorico/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
-          <li class="tvcoco"><a class="icon"  href="/cocorico/tvcocorico" title="TV Cocoricó"></a><a href="/cocorico/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
-          <li class="familia"><a  href="/cocorico/em-familia" title="Em família">Em família</a></li>
-        </ul>
+      <!--menu principal-->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <!--/menu principal-->
+      <!--menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--/menu personagens -->
       </div>
-      <div class="lista-personagens">
-        <h3>turma</h3>
-        <ul>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-          <li><a href="#" title="Astolfo"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" alt="Astolfo" /></a></li>
-        </ul>
-      </div>
-    </div>
   </div>
   <!-- /row--> 
   <!-- breadcrumb-->
@@ -42,36 +27,43 @@
   <!--row-->
   <?php if(isset($displays['tour-virtual'])):?>
   <?php if(count($displays['tour-virtual']) > 0): ?>
-  <div class="row-fluid conteudo">
-  <p><?php echo $displays['tour-virtual'][0]->getDescription() ?></p>
-  
- 
-  <?php $related_videos = $displays['tour-virtual'][0]->retriveRelatedAssetsByAssetTypeId(6); ?>
-      
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_videos[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
-
-   
-  </div>
+  <div class="row-fluid conteudo">  	
+  <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
+   </div>
   <?php endif; ?>
    <?php endif; ?>
   <!-- /row-->
   <!--row-->
+   
   <div class="row-fluid conteudo erros">
-    <p class="tit">“Ops! Errei!” - Diversão garantida com os erros de gravação dessa turminha:</p>
-    <a class="span4 destaque1" title="titulo" href="#">
+    <p class="tit"></p>
+    
+  <?php if(isset($displays['destaque-1'])):?>
+  	<?php if(count($displays['destaque-1']) > 0): ?>
+  	 <?php $related = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
+  	  <a class="span4 destaque1" title="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
+       <div class="destaque-1 conteudo-tv">
+        <h3><?php echo $displays['destaque-1'][0]->Asset->getTitle() ?></h3>
+        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
+        <p><?php echo $displays['destaque-1'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
+      </div>
+     </a>
+    <?php endif; ?>
+   <?php endif; ?>
+     
+   <?php if(isset($displays['destaque-2'])):?>
+  	<?php if(count($displays['destaque-2']) > 0): ?>
+  	 <?php $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
+      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
-        <h3>Erros de gravação</h3>
-        <img alt="Convidado" src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg">
-        <p> texto corrido <i class="ico-mais"></i></p>
+        <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
+        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
+        <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"><i class="ico-mais"></i></p>
       </div>
     </a>
-    <a class="span4 destaque1" title="titulo" href="#">
-      <div class="destaque-1 conteudo-tv">
-        <h3>Erros de gravação</h3>
-        <img alt="Convidado" src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg">
-        <p> texto corrido <i class="ico-mais"></i></p>
-      </div>
-    </a>
+    <?php endif; ?>
+   <?php endif; ?>
+    
     <a class="span4 destaque1 last" title="titulo" href="#">
       <div class="destaque-1 conteudo-tv">
         <h3>Erros de gravação</h3>
