@@ -65,17 +65,18 @@
    <?php endif; ?>
     
    <?php if(isset($displays['destaque-3'])):?>
-    <?php if(count($displays['destaque-3']) > 0): ?>
-     <?php $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
-    <a class="span4 destaque1 last" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>">
+  	<?php if(count($displays['destaque-3']) > 0): ?>
+  	 <?php $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
+      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
         <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
-        <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
+        <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"><i class="ico-mais"></i></p>
       </div>
     </a> 
-     <?php endif; ?>
-   <?php endif; ?> 
+    <?php endif; ?>
+   <?php endif; ?>
+    
    </div>  
   
   <!-- /row-->
