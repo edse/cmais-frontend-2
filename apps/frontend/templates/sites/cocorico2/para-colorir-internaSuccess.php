@@ -1,4 +1,5 @@
 <?php
+echo "teste";
 $preview = $asset->retriveRelatedAssetsByAssetTypeId(6);
 echo $preview[0]->file;
 
