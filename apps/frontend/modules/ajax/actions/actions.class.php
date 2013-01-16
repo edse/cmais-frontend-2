@@ -1456,9 +1456,11 @@ EOT;
 			//echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
 			die(json_encode($results));
     }
-    elseif($request->getParameter('enquete_id') > 0){
+    elseif($request->getParameter('asset_id') > 0){
 
-      $aq = Doctrine::getTable('AssetQuestion')->findOneById($request->getParameter('enquete_id'));
+      $a = Doctrine::getTable('Asset')->findOneById($request->getParameter('asset_id'));
+
+      $aq = $a->AssetQuestion;
   
       $filename = "/var/frontend/web/uploads/assets/question/".$aa->AssetQuestion->id.".txt";
       $lines = file($filename);
