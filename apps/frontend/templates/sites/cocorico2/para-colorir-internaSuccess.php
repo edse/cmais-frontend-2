@@ -28,7 +28,7 @@ echo "img".$asset->AssetImage->getFile();
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="#" class="javascript:window.history.go(-1)">voltar<span class="divisao"></span></a>
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
@@ -65,7 +65,7 @@ echo "img".$asset->AssetImage->getFile();
   
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">para colorir</a><span></span></div>
     <ul class="destaques-small">
 
             <li class="span2">
