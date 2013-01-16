@@ -38,6 +38,7 @@
     <ul class="lista">
       
       <?php
+      //puxando bloco home
        $displays_home = array();
        $blocks = Doctrine_Query::create()
          ->select('b.*')
@@ -50,10 +51,8 @@
       
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
-        
-        echo count($blocks[0]->retriveDisplays())."teste>>>><br>";
-        echo count($displays_home['enquete'][0])."teste>>>><br>";
-        foreach($displays_home['enquete'] as $k=>$d){
+        endif;
+        foreach($displays_home['enquete'] as $k=>$d):
           echo $displays_home['enquete'][$k]->getHeadline()."<br/>";
           echo $displays_home['enquete'][$k]->getTitle()."<br/>";
           $respostas = Doctrine_Query::create()
@@ -63,7 +62,7 @@
           ->execute();
           echo $respostas[0]->Asset->AssetAnswer->getAnswer()."<br>";
           echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>";
-        }
+        
         //doctrine para respostas
         
 
@@ -83,8 +82,7 @@
             <!-- /pontilhado -->
           <!-- /item -->
        <?php
-          
-        endif;
+       endforeach;
        ?>
       
       
