@@ -13,7 +13,7 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/receitinhas" class="active">Para Colorir</a></li>
+     <li class="active">Para Colorir</a></li>
      
   </ul>
   <!-- /breadcrumb-->

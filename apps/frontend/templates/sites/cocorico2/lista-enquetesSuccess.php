@@ -65,9 +65,9 @@
             <i class="ico-confirma"></i>
             <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
             <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
-            <div class="resultado">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
+            <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div>
             <i class="ico-versus-enquete"></i>
-            <div class="resultado verde"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div>
+            <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
