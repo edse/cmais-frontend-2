@@ -34,7 +34,7 @@
   <h2 class="tit-pagina clearfix">na web</h2>
  
 
-    
+     
   <!--/row-->
   <?php if(isset($displays['descricao'])):?>
     <?php if(count($displays['descricao']) > 0): ?>     
