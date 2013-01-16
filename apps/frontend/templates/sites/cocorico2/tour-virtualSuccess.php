@@ -61,7 +61,7 @@
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
         <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>">
-        <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"><i class="ico-mais"></i></p>
+        <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
     </a> 
     <?php endif; ?>
