@@ -31,7 +31,7 @@
   <!-- /breadcrumb-->
   <!--row-->
   <div class="row-fluid conteudo emfamilia">
-    <!-- coluna da esquerda-->
+    <!-- coluna da esquerda--> 
     <div class="span8">
     <?php if(isset($displays['destaque-principal'])): ?>
       <?php if(count($displays['destaque-principal']) > 0): ?>     
