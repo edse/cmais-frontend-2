@@ -53,7 +53,7 @@
       </div>
       <?php endif; ?>
      <?php endif; ?>
-    </div>
+    </div> 
     <!-- /col direita -->
     <!-- col esquerda -->
     <div class="span8 col-esq">
