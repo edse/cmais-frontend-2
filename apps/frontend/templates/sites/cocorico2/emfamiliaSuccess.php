@@ -3,7 +3,7 @@
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
-  <div class="row-fluid">
+  <div class="row-fluid"> 
     <div class="topo-coco">
       <h1 class="span3"><a href="/cocorico" title="Cocorico"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
       <!-- BOX PUBLICIDADE 2 -->
@@ -29,34 +29,35 @@
     <li class="active">Em Família</li>
   </ul>
   <!-- /breadcrumb-->
-  <!--row-->
-  <div class="row-fluid conteudo emfamilia">
-    <!-- coluna da esquerda--> 
-    <div class="span8">
+  
+  <!-- carrossel-->
     <?php if(isset($displays['destaque-principal'])): ?>
       <?php if(count($displays['destaque-principal']) > 0): ?>     
-      <!-- carrossel-->
       <div class="carrossel-familia">
+       
         <h2><i class="ico-presente"></i>Encontre o presente ideal</h2>
         <i class="ico-seta-titulo-grd"></i>
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
+            <?php foreach($displays['destaque-topo'] as $k=>$d): ?> 
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-              <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
-            </div>
+              <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
+             </div>
              <?php endforeach; ?>  
+           
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <a href="<?php echo $d->retriveUrl() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3> <?php echo $d->getDescription() ?> </a>
+        <a href="<?php echo $d->getHeadline() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
       </div>
-       <?php endif; ?>
-    <?php endif; ?>
       <!-- /carrossel-->
+   <?php endif; ?>
+    <?php endif; ?>
+  
+  
       <a title="jogo" href="/cocorico/receitinhas" class="destaques span6"> <h2>Na TV</h2><img alt="nome jogo" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg"><p class="bold">TV Cultura e TV Rá Tim Bum</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nibh, pulvinar id aliquet eu, bibendum quis erat. Mauris gravida tincidunt tellus, in fringilla.</p></a>
       <a title="jogo" href="/cocorico/receitinhas" class="destaques span6 web"> <h2>Na Web</h2><img alt="nome jogo" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg"><p class="bold">TV Cultura e TV Rá Tim Bum</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nibh, pulvinar id aliquet eu, bibendum quis erat. Mauris gravida tincidunt tellus, in fringilla.</p></a>
     </div>
