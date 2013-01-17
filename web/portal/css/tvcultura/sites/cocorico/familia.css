@@ -226,7 +226,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #blocoCarrossel .base-btns{position:relative; padding: 30px 0 5px 0; }
 #blocoCarrossel .bloco-nav {margin:0 auto; overflow: hidden;}
 #blocoCarrossel .bloco-nav .btn-nav{float:left; margin-right:5px; background:url(/portal/images/capaPrograma/cocorico/agenda-btn-destaque.png) no-repeat right 0; width:13px; height:13px; display: block;}
-#blocoCarrossel .bloco-nav .btn-nav.active{background-position: left 0;} 
+#blocoCarrossel .bloco-nav .btn-nav.actived{background-position: left 0;} 
 #blocoCarrossel .bloco-nav .btn-nav.last{margin-right:0px;}
 #blocoCarrossel .texto p { line-height:20px; }
 /* agenda,cinema e post */
