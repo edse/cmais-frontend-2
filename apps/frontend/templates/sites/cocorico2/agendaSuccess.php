@@ -61,7 +61,7 @@ if(isset($pager)){
           <li><hr></li>
           <!-- /pontilhado -->
         <!-- /item -->
-       </ul>
+      </ul> 
       <!-- lista -->
       <?php endif; ?>
       
