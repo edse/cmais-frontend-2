@@ -62,24 +62,42 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
     
-    <?php
-    echo count($asset).">>>>>";
-     /*
-    <?php if(count($asset) > 2): ?>
+      <?php
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, Section s')
+        ->where('a.id = sa.asset_id')
+        ->andWhere('s.id = sa.section_id')
+        ->andWhere('s.slug = "para-colorir"')
+        ->andWhere('a.site_id = ?', (int)$site->id)
+        //->andWhere('a.asset_type_id = 1')
+        //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+        ->groupBy('sa.asset_id')
+        //->orderBy('a.id desc')
+        ->limit(6)
+        ->execute();
+    ?>
+    <?php echo count($assets) ?>
+    <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
-      <?php foreach($asset as $k=>$d): ?>
+      <?php foreach($assets as $d): ?>
+        
+      <?php 
+       echo $d[0]->getTitle(). "<br>";
+       echo $d[0]->retriveUrl();
+       /*  
       <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <?php echo $d->getTitle() ?>
         </a>
       </li>
+       * 
+       */ ?>
       <?php endforeach; ?>
     </ul>
     <?php endif; ?>
-     * 
-     */
-     ?>
+
     <!--ul class="destaques-small">
       <li class="span2">
         <a href="#" title="">
