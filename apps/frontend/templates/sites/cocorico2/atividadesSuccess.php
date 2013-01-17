@@ -133,7 +133,7 @@
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-    <a href="<?php echo $displays['destaque-imprima'][0]->retrieveUrl() ?>" title="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>" class="span4 destaque2">
+    <a href="<?php echo $displays['destaque-imprima'][0]->retrieveUrl() ?>" title="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>" class="span4 destaque2">
     <div class="destaque-2 conteudo-diverso">
       <h3>Imprima e brinque</h3>
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
@@ -149,13 +149,13 @@
     <?php if(isset($displays['destaque-papel-de-parede'])): ?>
       <?php if(count($displays['destaque-papel-de-parede']) > 0): ?>
         <?php $related = $displays['destaque-papel-de-parede'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-    <a href="<?php echo $displays['destaque-imprima'][0]->retrieveUrl() ?>" title="   <?php echo $displays['destaque-imprima'][0]->getTitle() ?>" class="span4 destaque2">
+    <a href="<?php echo $displays['destaque-papel-de-parede'][0]->retrieveUrl() ?>" title="   <?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>" class="span4 destaque2">
    
     <div class="destaque-2 conteudo-diverso">
       <h3>Papel de parede</h3>
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
       <p>
-        <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
+        <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
         <i class="ico-mais"></i>
       </p>
     </div> </a>
