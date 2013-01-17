@@ -47,7 +47,7 @@
         <?php if(count($related) > 0): ?>
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?> <span class="mais"></span></a>
         <?php endif; ?>
-        <?php endif; ?>
+        
         
         <?php if(isset($displays['videos-receitinha'])):?>
         <?php if(count($displays['videos-receitinha']) > 0): ?>     
