@@ -61,9 +61,9 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
-    <?php if(count($assets) > 2): ?>
+    <?php if(count($asset) > 2): ?>
     <ul class="destaques-small">
-      <?php foreach($assets as $k=>$d): ?>
+      <?php foreach($asset as $k=>$d): ?>
       <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
