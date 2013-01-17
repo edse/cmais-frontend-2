@@ -147,14 +147,19 @@
     <!-- /Imprima e brinque -->
     <!-- Papel de parede -->
     <a href="#" title=" titulo" class="span4 destaque2">
+       <?php if(isset($displays['destaque-papel-de-parede'])): ?>
+      <?php if(count($displays['destaque-papel-de-parede']) > 0): ?>
+        <?php $related = $displays['destaque-papel-de-parede'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
     <div class="destaque-2 conteudo-diverso">
       <h3>Papel de parede</h3>
-      <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
       <p>
-        texto corrido
+        <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
         <i class="ico-mais"></i>
       </p>
     </div> </a>
+    <?php endif; ?>
+    <?php endif; ?>
     <!-- /Papel de parede -->
     
     <div class="span4 destaque2 box-radio">
