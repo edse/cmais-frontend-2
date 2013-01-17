@@ -82,7 +82,7 @@
       <?php foreach($assets as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
-        <?php echo $related[0]->retriveImageUrlByImageUsage('image-3') ?>
+        <?php echo $related[0]->retriveImageUrlByImageUsage('image-6-b')."teste" ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <?php echo $d->getTitle() ?> 
         </a>
