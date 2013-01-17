@@ -54,6 +54,7 @@
      interval: 8000
    })  
    $('.btn-nav').click(function(){
+     alert($(this).attr('name'));
      $('#blocoCarrossel').carousel(parseInt($(this).attr('name')));
      $('.btn-nav').removeClass('actived');
      $(this).addClass('actived');
