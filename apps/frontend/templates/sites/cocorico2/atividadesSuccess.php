@@ -39,7 +39,7 @@
 
     <?php if(isset($displays['destaque-receitinhas'])): ?>
       <?php if(count($displays['destaque-receitinhas']) > 0): ?>
-        <?php $related = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related = $displays['destaque-receitinhas']->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="tvcoco span12">
         <h2>Cozinha da amiga zazá</h2>
         <?php if(count($related) > 0): ?>
