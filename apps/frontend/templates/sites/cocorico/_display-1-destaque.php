@@ -12,7 +12,7 @@
     <?php foreach($displays as $k=>$d): ?>
       <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <!-- item -->
-      <div class="<?php if($k==0) echo "active";?> item" name="<?php echo $k?>">
+      <div class="<?php if($k==0) echo "active";?> item bloco" name="<?php echo $k?>">
         <?php if(($imgs)&&(count($imgs)>0)):?>
         <a href="<?php echo $d->retriveUrl()?>"><imgs src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
         <?php endif; ?>
@@ -30,7 +30,7 @@
       <!-- bloco botoes troca -->
       <div class="bloco-nav">
       <?php foreach($displays as $k=>$d): ?>
-        <a id="btn-nav<?php echo $k?>" class="btn-nav" href="javascript:;" name="<?php echo $k?>"></a>
+        <a id="btn-nav<?php echo $k?>" class="btn-nav <?php if($k==0) echo "active";?>" href="javascript:;" name="<?php echo $k?>"></a>
       <?php endforeach; ?>
       </div>
       <!-- /bloco botoes troca -->
@@ -53,13 +53,13 @@
    })  
    $('.btn-nav').click(function(){
      $('#blocoCarrossel').carousel(parseInt($(this).attr('name')));
-     $('.btn-nav').removeClass('actived');
-     $(this).addClass('actived');
+     $('.btn-nav').removeClass('active');
+     $(this).addClass('active');
    });
    $('#blocoCarrossel').on('slid',function(){
-     var pos = $(".actived.item").attr('name')
-     $('.btn-nav').removeClass('actived');
-     $('#btn-nav'+pos).addClass('actived');
+     var pos = $(".active.item.bloco").attr('name')
+     $('.btn-nav').removeClass('active');
+     $('#btn-nav'+pos).addClass('active');
    });
    </script>
  </div>
