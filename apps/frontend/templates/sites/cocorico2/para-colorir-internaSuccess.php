@@ -37,26 +37,6 @@
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
   <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-  <?php
-  /*
-  <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle()?></h2>
-    <span></span>
-    <ul class="likes">
-      <li class="ativo"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-  <a href="#" class="curtir" title="Curtir">curtir</a>
-  <a href="#" class="curtir disabled" title="Curtir">curtir</a>
-  <!-- titulo da pagina -->
-   * 
-   */
-    ?>
     
   <!--row-->
   <div class="row-fluid conteudo">

@@ -93,14 +93,14 @@
       ->where('a.id = sa.asset_id')
       ->andWhere('s.slug = "agenda"')
       ->andWhere('a.site_id = 1149')
-      ->andWhere('a.asset_type_id = 1')
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      //->andWhere('a.asset_type_id = 1')
+      //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
       ->groupBy('sa.asset_id')
       ->orderBy('a.id desc')
-      ->limit(6)
+      //->limit(6)
       ->execute();
   ?>
-      <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque') ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays'=>$displays)) ?>
       <!-- fale conosco cr-->
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
