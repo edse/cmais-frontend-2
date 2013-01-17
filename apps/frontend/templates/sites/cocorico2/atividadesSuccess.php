@@ -39,16 +39,16 @@
     <?php if(isset($displays['destaque-receitinhas'])): ?>
       <?php if(count($displays['destaque-receitinhas']) > 0): ?>
         <?php $related = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <?php $related2 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="tvcoco span12">
         <h2>Cozinha da amiga zazá</h2>
         <?php if(count($related) > 0): ?>
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?> <span class="mais"></span></a>
         <?php endif; ?>
           <div class="enquete span12">
-          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></a>
-          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
+          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></a>
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
         </div>
       </div>
       <?php endif; ?>
@@ -80,6 +80,11 @@
       <!-- /destaque-home -->
 
       <!-- bastidores -->
+      <?php if(isset($displays['destaque-series'])): ?>
+      <?php if(count($displays['destaque-series']) > 0): ?>
+        <?php $related = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related2 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="bastidores fonte span3">
         <div class="topo">
           <div class="bac-yellow">
@@ -88,38 +93,40 @@
         </div>
 
         <!-- item -->
-        <a href="#" title="Tour Virtual">
+        <a href="<?php echo $displays['destaque-series'][0]->retriveUrl() ?>" title="Tour Virtual">
         <div class="item">
           <div class="img-bast">
-            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
           </div>
-          <span>Tour Virtual</span>
+          <span><?php echo $displays['destaque-series'][0]->getTitle() ?></span>
         </div> </a>
         <hr/>
         <!-- /item -->
 
         <!-- item -->
-        <a href="#" title="Erros de gravação">
+        <a href="<?php echo $displays['destaque-series'][1]->retriveUrl() ?>" title="Erros de gravação">
         <div class="item">
           <div class="img-bast">
-            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+            <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
           </div>
-          <span>Erros de gravação</span>
+          <span><?php echo $displays['destaque-series'][1]->getTitle() ?></span>
         </div> </a>
         <hr/>
         <!-- /item -->
 
         <!-- item -->
-        <a href="#" title="Instamgram Oficial">
+        <a href="<?php echo $displays['destaque-series'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][2]->getTitle() ?>">
         <div class="item">
           <div class="img-bast">
-            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+            <img src="<?php echo $related2[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/>
           </div>
-          <span>Instamgram Oficial</span>
+          <span><?php echo $displays['destaque-series'][2]->getTitle() ?></span>
         </div> </a>
         <hr/>
         <!-- /item -->
       </div>
+      <?php endif; ?>
+    <?php endif; ?> 
       <!-- /bastidores -->
 
     </div>
