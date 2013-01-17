@@ -155,7 +155,7 @@
       <h3>Papel de parede</h3>
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
       <p>
-        <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
+        <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
         <i class="ico-mais"></i>
       </p>
     </div> </a>
