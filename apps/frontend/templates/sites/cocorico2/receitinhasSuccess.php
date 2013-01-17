@@ -72,25 +72,50 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   
   <!--row-->
   
+  <?php if(count($pager) > 0): ?>
   <div class="row-fluid conteudo">
-    <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
-   	<?php foreach($assets as $k=>$d): ?>
+    <?php foreach($pager->getResults() as $d): ?>
     <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
     <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
-    
     <?php endforeach; ?>
-   
-   
     </ul>
+    <?php else: ?>
+      <p>Nenhuma receitinha encontrada.</p> 
     <?php endif; ?>
   </div>
   
- 
-  <!-- /row-->
-  <?php else: ?>
-    <p>Nenhuma receitinha encontrada.</p> 
+
+  <?php if(isset($pager)): ?>
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
   <?php endif; ?>
+ 
   
   <?php /*
    * 
