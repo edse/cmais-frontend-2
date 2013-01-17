@@ -77,7 +77,7 @@
         ->limit(6)
         ->execute();
     ?>
-    
+    <?php echo count($assets) ?>
     <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
