@@ -40,7 +40,7 @@
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <?php foreach($displays['destaque-topo'] as $k=>$d): ?> 
+            <?php foreach($displays['destaque-principal'] as $k=>$d): ?> 
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
               <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
              </div>
