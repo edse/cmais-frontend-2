@@ -104,6 +104,14 @@
         </div>
       </form>
     </div>
+    <!-- banner -->
+    <div class="span4">
+      <!-- portal-cocorico-300x250 -->
+      <script type='text/javascript'>
+        GA_googleFillSlot("portal-cocorico-300x250");
+      </script>
+    </div>
+    <!-- banner -->
     
     <script type="text/javascript">
       $(document).ready(function() {
