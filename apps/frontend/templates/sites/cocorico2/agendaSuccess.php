@@ -146,7 +146,8 @@ $(function(){
         <?php endforeach; ?>
       </ul>
       <!-- lista -->
-      
+       <?php endif; ?>
+            
             
       <!-- paginacao -->
       <?php if(isset($pager)): ?>
@@ -175,12 +176,13 @@ $(function(){
                 }
               </script>
               <!--// PAGINACAO -->
-              <?php endif; ?>
-            <?php endif; ?>
-            
+             
       
       
     </div>
+     <?php endif; ?>
+    <?php endif; ?>
+            
     <div class="span4 acontece">
       <!-- topo acontece -->
       <div class="topo">
