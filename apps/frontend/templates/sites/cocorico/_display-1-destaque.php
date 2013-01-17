@@ -7,25 +7,26 @@
  <div class="destaque">
    <!-- carrossel -->
    <div id="blocoCarrossel" class="carousel slide">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
       
     <?php foreach($displays as $k=>$d): ?>
       <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-      <!-- item -->
-      <div class="active item" name="<?php echo $k?>">
-        <?php if(($imgs)&&(count($imgs)>0)):?>
-        <a href="<?php echo $d->retriveUrl()?>"><imgs src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
-        <?php endif; ?>
-        <a class="texto" href="<?php echo $d->retriveUrl()?>">
-          <h3><?php echo $d->getTitle()?></h3>
-          <p><?php echo $d->getDescription()?></p>
-       </a>
-      </div>
-      <!-- /item -->
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <!-- item -->
+          <div class="active item" name="<?php echo $k?>">
+            <?php if(($imgs)&&(count($imgs)>0)):?>
+            <a href="<?php echo $d->retriveUrl()?>"><imgs src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
+            <?php endif; ?>
+            <a class="texto" href="<?php echo $d->retriveUrl()?>">
+              <h3><?php echo $d->getTitle()?></h3>
+              <p><?php echo $d->getDescription()?></p>
+           </a>
+          </div>
+          <!-- /item -->
+        </div>
+        <!-- /Carousel items -->
     <?php endforeach; ?>       
-    </div>
-    <!-- /Carousel items -->
+    
     <!-- base botoes troca -->
     <div class="base-btns">
       <!-- bloco botoes troca -->
@@ -54,13 +55,13 @@
    })  
    $('.btn-nav').click(function(){
      $('#blocoCarrossel').carousel(parseInt($(this).attr('name')));
-     $('.btn-nav').removeClass('active');
-     $(this).addClass('active');
+     $('.btn-nav').removeClass('actived');
+     $(this).addClass('actived');
    });
    $('#blocoCarrossel').on('slid',function(){
      var pos = $(".active.item").attr('name')
-     $('.btn-nav').removeClass('active');
-     $('#btn-nav'+pos).addClass('active');
+     $('.btn-nav').removeClass('actived');
+     $('#btn-nav'+pos).addClass('actived');
    });
    </script>
  </div>
