@@ -1,6 +1,5 @@
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
-
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
@@ -21,7 +20,7 @@
   </div>
   <!-- /row-->
   <!-- row-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
+  <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
   <!-- /row-->
   
   <!-- breadcrumb-->
@@ -32,28 +31,42 @@
   <!-- /breadcrumb-->
   
   <h2 class="tit-pagina clearfix">na web</h2>
-    
-  
+ 
+
+     
+  <!--/row-->
+  <?php if(isset($displays['descricao'])):?>
+    <?php if(count($displays['descricao']) > 0): ?>     
+  	  <?php foreach($displays['descricao'] as $k=>$d):?>   
   <div class="row-fluid conteudo ">    
     <div class="row-fluid">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna a libero aliquet imper diet at eget ante. Pellentesque accumsan lobortis tellus, tempor dapibus metus bibendum a. Pellent esque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis massa molestie felis varius rutrum. Pellentesque laoreet faucibus viverra. Duis faucibus varius blandit. Donec sit amet diam et dolor feugiat venenatis. Aliquam blandit elit sit amet lectus venenatis sit posueree senectus et netus.</p>  
+      <p><?php echo $d->getDescription() ?></p>  
     </div>  
   </div>
+  <?php endforeach; ?>   
+   <?php endif; ?>
+    <?php endif; ?>
   <!-- conteudo -->
   <div id="naweb" class="row-fluid conteudo">
     <!-- youtube -->
+      <?php if(isset($displays['video'])):?>
+    <?php if(count($displays['video']) > 0): ?>     
+  	  <?php foreach($displays['video'] as $k=>$d):?>  
     <div class="destaque span6">
       <i class="ico-naweb"></i>
       <h2>youtube.com/tvcocorico</h2>
         
-      <iframe width="458" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
+      <iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
       
       <div class="btn-inscreva-se ">
         <span></span>
         <a href="#" class="btn-destaque" title="Inscreva-se em nosso canal!">Inscreva-se em nosso canal!</a>
         <span class="last"></span>
       </div>
-    </div>   
+    </div>  
+    <?php endforeach; ?>   
+   <?php endif; ?>
+    <?php endif; ?> 
     <!-- /youtube -->
     
     <!-- instagram -->
