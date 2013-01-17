@@ -1,5 +1,5 @@
-<?php if(isset($displays['acontece'])): ?>
-  <?php if(count($displays['acontece']) >= 1): ?>
+<?php if(isset($displays)): ?>
+  <?php if(count($displays) >= 1): ?>
 
 <!-- destaque -->
  <div class="destaque">
@@ -8,7 +8,7 @@
     <!-- Carousel items -->
     <div class="carousel-inner">
       
-    <?php foreach($displays['acontece'] as $k=>$d): ?>
+    <?php foreach($displays as $k=>$d): ?>
       <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <!-- item -->
       <div class="active item" name="<?php echo $k?>">
@@ -28,7 +28,7 @@
     <div class="base-btns">
       <!-- bloco botoes troca -->
       <div class="bloco-nav">
-      <?php foreach($displays['acontece'] as $k=>$d): ?>
+      <?php foreach($displays as $k=>$d): ?>
         <a id="btn-nav<?php echo $k?>" class="btn-nav" href="javascript:;" name="<?php echo $k?>"></a>
       <?php endforeach; ?>
       </div>

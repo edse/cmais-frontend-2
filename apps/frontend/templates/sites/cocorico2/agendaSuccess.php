@@ -96,7 +96,7 @@ if(isset($pager)){
          </div>
        </div>
        <!-- /topo acontece -->
-        <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque') ?>
+        <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays['acontece'])) ?>
        <!-- banner -->
        <div class="">
          <!-- portal-cocorico-300x250 -->
