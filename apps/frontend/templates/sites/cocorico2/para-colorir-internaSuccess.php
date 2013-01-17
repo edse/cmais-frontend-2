@@ -80,7 +80,7 @@
     <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByRelationType('original'); ?>
+      <?php $related = $d->retriveRelatedAssetsByRelationType('original');  ?>
       <li class="span2">
         <?php echo $related[0]->retriveImageUrlByImageUsage('image-6-b')."teste5" ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
