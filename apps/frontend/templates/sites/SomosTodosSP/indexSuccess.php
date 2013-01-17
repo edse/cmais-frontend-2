@@ -83,7 +83,7 @@
               ?>
               <?php if(count($related)>0): ?>
                 <?php foreach($related as $d): ?>
-                <a href="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" rel="lightbox[photos]" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" /></a>
+                <a href="<?php echo $d->retriveImageUrlByImageUsage('image-10') ?>" rel="lightbox[photos]" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" /></a>
                 <?php endforeach; ?>
               <?php endif; ?>
               </div>
