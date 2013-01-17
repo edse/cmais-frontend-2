@@ -1,0 +1,182 @@
+<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<!-- container-->
+<div class="container tudo">
+
+  <!-- row-->
+  <div class="row-fluid menu">
+    <div class="navbar">
+       <!--menu principal-->
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <!--/menu principal-->
+      <!--menu personagens -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--/menu personagens -->
+    </div>
+  </div>
+  <!-- /row-->
+  <!-- breadcrumb-->
+  <ul class="breadcrumb">
+    <li>
+      <a href="/cocorico">Cocoricó</a><span class="divider">&rsaquo;</span>
+    </li>
+    <li>
+      <a href="/cocorico/joguinhos">Joguinhos</a><span class="divider">&rsaquo;</span>
+    </li>
+    <li class="active">
+      Nome do Joguinho
+    </li>
+  </ul>
+  <!-- /breadcrumb-->
+  <h2 class="tit-pagina">Atividades</h2>
+  <!--row conteudo -->
+  <div class="row-fluid conteudo">
+    <!-- col direita -->
+    <div class="span4 col-dir">
+
+
+
+    <?php if(isset($displays['destaque-receitinhas'])): ?>
+      <?php if(count($displays['destaque-receitinhas']) > 0): ?>
+        <?php $related = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+      <div class="tvcoco span12">
+        <h2>Cozinha da amiga zazá</h2>
+        <?php if(count($related) > 0): ?>
+        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?> <span class="mais"></span></a>
+        <?php endif; ?>
+        <div class="enquete span12">
+          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="<?php echo $related[1]->retriveImageUrlByImageUsage('original') ?>" alt="" /><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></a>
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="<?php echo $related[2]->retriveImageUrlByImageUsage('original') ?>" alt="" /><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
+        </div>
+      </div>
+      <?php endif; ?>
+     <?php endif; ?>
+    </div>
+    <!-- /col direita -->
+    <!-- col esquerda -->
+    <div class="span8 col-esq">
+
+      <!-- destaque-home -->
+      <div class="destaque-home-tv span9">
+        <h2>Clipe - Dias quentes de verão</h2>
+
+        <iframe width="460" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
+
+        <div class="destaque span12">
+          <span></span>
+          <a href="#" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
+          <span class="last"></span>
+        </div>
+      </div>
+      <!-- /destaque-home -->
+
+      <!-- bastidores -->
+      <div class="bastidores fonte span3">
+        <div class="topo">
+          <div class="bac-yellow">
+            <h3><i class="ico-serie"></i> Séries <i class="ico-seta-titulo"></i></h3>
+          </div>
+        </div>
+
+        <!-- item -->
+        <a href="#" title="Tour Virtual">
+        <div class="item">
+          <div class="img-bast">
+            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+          </div>
+          <span>Tour Virtual</span>
+        </div> </a>
+        <hr/>
+        <!-- /item -->
+
+        <!-- item -->
+        <a href="#" title="Erros de gravação">
+        <div class="item">
+          <div class="img-bast">
+            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+          </div>
+          <span>Erros de gravação</span>
+        </div> </a>
+        <hr/>
+        <!-- /item -->
+
+        <!-- item -->
+        <a href="#" title="Instamgram Oficial">
+        <div class="item">
+          <div class="img-bast">
+            <img src="http://midia.cmais.com.br/assets/image/image-2-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="titulo imagem"/>
+          </div>
+          <span>Instamgram Oficial</span>
+        </div> </a>
+        <hr/>
+        <!-- /item -->
+      </div>
+      <!-- /bastidores -->
+
+    </div>
+    <!-- /col esquerda -->
+  </div>
+  <!-- /row conteudo -->
+  <!--row conteudo -->
+  <div class="row-fluid conteudo">
+    <!-- Imprima e brinque -->
+    <a href="#" title=" titulo" class="span4 destaque2">
+    <div class="destaque-2 conteudo-diverso">
+      <h3>Imprima e brinque</h3>
+      <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+      <p>
+        texto corrido
+        <i class="ico-mais"></i>
+      </p>
+    </div> </a>
+    <!-- /Imprima e brinque -->
+    <!-- Papel de parede -->
+    <a href="#" title=" titulo" class="span4 destaque2">
+    <div class="destaque-2 conteudo-diverso">
+      <h3>Papel de parede</h3>
+      <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+      <p>
+        texto corrido
+        <i class="ico-mais"></i>
+      </p>
+    </div> </a>
+    <!-- /Papel de parede -->
+    
+    <div class="span4 destaque2 box-radio">
+      <!-- radio -->
+      <div class="radio">
+        <i class="icon-music"></i>
+        <a href="#" title="Está no ar: rádio cocoricó!">Está no ar:<span>rádio cocoricó!</span></a>
+        <span class="borda"></span>
+      </div>
+      <!-- /radio -->
+      
+    </div>
+    <!-- para colorir -->
+      <div class="bastidores span4">
+        <div class="topo">
+          <div class="bac-yellow">
+            <h3><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></h3>
+          </div>
+          <a  href="#" title="" class="span6">
+            <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" />
+            descricao
+          </a>
+          <a href="#" title="" class="span6 last">
+            <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" />
+            descricao
+          </a>
+        </div>        
+      </div>
+      <!-- /para colorir -->
+    
+    
+  </div>
+  <!--row conteudo -->
+  
+<!-- rodape-->
+    <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  <!-- /rodape-->
+</div>
+<!-- /container-->
