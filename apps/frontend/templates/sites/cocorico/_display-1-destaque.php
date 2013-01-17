@@ -14,7 +14,7 @@
       <!-- item -->
       <div class="<?php if($k==0) echo "active";?> item bloco" name="<?php echo $k?>">
         <?php if(($imgs)&&(count($imgs)>0)):?>
-        <a href="<?php echo $d->retriveUrl()?>">tyeste<img src="<?php echo $imgs->retriveImageUrlByImageUsage('original') ?>"></a>
+        <a href="<?php echo $d->retriveUrl()?>">tyeste<img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
         <?php endif; ?>
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
           <h3><?php echo $d->getTitle()?></h3>
