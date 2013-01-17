@@ -143,7 +143,7 @@
       </p>
     </div> </a>   
    <?php endif; ?>
-    <?php endif; ?> 
+    <?php endif; ?>  
     <!-- /Imprima e brinque -->
     <!-- Papel de parede -->
     <?php if(isset($displays['destaque-papel-de-parede'])): ?>
