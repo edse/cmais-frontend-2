@@ -1,10 +1,9 @@
 <?php
-if(isset($pager)){
+
   if($pager->count() == 1){
     header("Location: ".$pager->getCurrent()->retriveUrl());
     die();
-  }  
-} 
+  }
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
