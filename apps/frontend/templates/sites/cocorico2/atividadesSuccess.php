@@ -60,16 +60,23 @@
     <div class="span8 col-esq">
 
       <!-- destaque-home -->
-      <div class="destaque-home-tv span9">
+      
+      <?php if(isset($displays['videos'])):?>
+      <?php if(count($displays['videos']) > 0): ?>     
+      <?php foreach($displays['videos'] as $k=>$d):?>  
+       <div class="destaque-home-tv span9">
         <h2>Clipe - Dias quentes de verão</h2>
 
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
 
         <div class="destaque span12">
           <span></span>
-          <a href="#" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
+          <a href="/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
           <span class="last"></span>
         </div>
+    <?php endforeach; ?>   
+    <?php endif; ?>
+    <?php endif; ?> 
       </div>
       <!-- /destaque-home -->
 
