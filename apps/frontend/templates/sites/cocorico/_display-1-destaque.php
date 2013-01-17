@@ -1,18 +1,4 @@
-       <?php
-    $displays = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s')
-      ->where('a.id = sa.asset_id')
-      ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = "agenda"')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 1')
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-      ->groupBy('sa.asset_id')
-      ->orderBy('a.id desc')
-      ->limit(6)
-      ->execute();
-  ?>
+      
 
 <?php if(isset($displays)): ?>
   <?php if(count($displays) >= 1): ?>
