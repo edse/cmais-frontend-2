@@ -90,7 +90,7 @@
     </ul>
     <?php endif; ?>
 
-    <!--ul class="destaques-small">
+    <!--ul class="destaques-small"> 
       <li class="span2">
         <a href="#" title="">
           <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
