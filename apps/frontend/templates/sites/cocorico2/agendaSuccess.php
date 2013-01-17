@@ -42,6 +42,8 @@ if(isset($pager)){
   <h2 class="tit-pagina">agenda</h2>
   
   
+  
+  
   <?php if(count($pager) > 0): ?>
   <!--row lista-->
   <div id="agenda" class="row-fluid conteudo ">
