@@ -77,28 +77,20 @@
         ->limit(6)
         ->execute();
     ?>
-    <?php echo count($assets) ?>
     <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
-        
-      <?php 
-       echo $d[0]->getTitle(). "<br>";
-       echo $d[0]->retriveUrl();
-       /*  
-      <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <?php echo $d->getTitle() ?>
         </a>
       </li>
-       * 
-       */ ?>
       <?php endforeach; ?>
     </ul>
     <?php endif; ?>
 
-    <!--ul class="destaques-small">
+    <!--ul class="destaques-small"> 
       <li class="span2">
         <a href="#" title="">
           <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
