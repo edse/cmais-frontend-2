@@ -82,8 +82,8 @@
       <?php foreach($assets as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByRelationType('Original');  ?>
       <li class="span2">
-        <?php echo $related[0]->retriveImageUrlByImageUsage('image-6-b')."teste6" ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getFile(); ?>.jpg">
           <?php echo $d->getTitle() ?> 
         </a>
       </li>
