@@ -60,16 +60,26 @@
   
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">para colorir</a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
+    <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
-
-            <li class="span2">
-              <a href="#" title="">
-                <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
-              </a>
-            </li>
- 
+      <?php foreach($assets as $k=>$d): ?>
+      <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <?php echo $d->getTitle() ?>
+        </a>
+      </li>
+      <?php endforeach; ?>
     </ul>
+    <?php endif; ?>
+    <!--ul class="destaques-small">
+      <li class="span2">
+        <a href="#" title="">
+          <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
+        </a>
+      </li>
+    </ul-->
   </div>
   <!-- /row-->
   
