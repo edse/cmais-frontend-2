@@ -12,7 +12,7 @@
       <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <!-- item -->
       <div class="active item" name="<?php echo $k?>">
-        <?php if(($img)&&(count($imgs)>0)):?>
+        <?php if(($imgs)&&(count($imgs)>0)):?>
         <a href="<?php echo $d->retriveUrl()?>"><img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
         <?php endif; ?>
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
