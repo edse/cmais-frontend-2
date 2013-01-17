@@ -39,8 +39,8 @@
     <?php if(isset($displays['destaque-receitinhas'])): ?>
       <?php if(count($displays['destaque-receitinhas']) > 0): ?>
         <?php $related = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related1 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related2 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="tvcoco span12">
         <h2>Cozinha da amiga zazá</h2>
         <?php if(count($related) > 0): ?>
