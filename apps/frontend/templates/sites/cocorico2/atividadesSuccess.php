@@ -34,7 +34,7 @@
   <div class="row-fluid conteudo">
     <!-- col direita -->
     <div class="span4 col-dir">
-
+ 
 
 
     <?php if(isset($displays['destaque-receitinhas'])): ?>
