@@ -58,7 +58,7 @@
         <a href="<?php echo $d->getHeadline() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
       </div>
       <!-- /carrossel-->
-   <?php endif; ?>
+   <?php endif; ?> 
     <?php endif; ?>
   
       <?php if(isset($displays['destaque-1'])):?>
