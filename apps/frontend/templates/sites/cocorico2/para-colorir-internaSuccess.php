@@ -83,7 +83,7 @@
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <?php echo $d->getTitle() ?>
+          <?php echo $d->getTitle() ?> 
         </a>
       </li>
       <?php endforeach; ?>
