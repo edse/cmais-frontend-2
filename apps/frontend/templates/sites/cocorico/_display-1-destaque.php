@@ -15,11 +15,22 @@
           <!-- item -->
           <div class="<?php if($k==0) echo "active";?> item" name="<?php echo $k?>">
 
-  
-            <a class="texto" >
-              <h3><?php echo $d->getTitle()?></h3>
-              <p><?php echo $d->getDescription()?></p>
-           </a>
+  1
+
+          </div>
+          <!-- /item -->
+                    <!-- item -->
+          <div class="<?php if($k==0) echo "active";?> item" name="<?php echo $k?>">
+
+2
+
+          </div>
+          <!-- /item -->
+                    <!-- item -->
+          <div class="<?php if($k==0) echo "active";?> item" name="<?php echo $k?>">
+
+ 3
+
           </div>
           <!-- /item -->
         </div>
