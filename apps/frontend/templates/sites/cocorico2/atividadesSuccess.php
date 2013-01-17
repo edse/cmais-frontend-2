@@ -177,7 +177,7 @@
      <?php if(isset($displays['destaque-para-colorir'])): ?>
       <?php if(count($displays['destaque-para-colorir']) > 0): ?>
         <?php $related = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-para-colorir'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
@@ -188,8 +188,8 @@
             <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
-            <img src="<?php echo $related[1]->retriveImageUrlByImageUsage('original') ?>" />
-            <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
+            <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" />
+            <?php echo $displays['destaque-para-colorir'][1]->getDescription() ?>
           </a>
         </div>        
       </div>
