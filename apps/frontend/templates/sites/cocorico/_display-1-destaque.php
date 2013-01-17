@@ -30,7 +30,7 @@
       <!-- bloco botoes troca -->
       <div class="bloco-nav">
       <?php foreach($displays as $k=>$d): ?>
-        <a id="btn-nav<?php echo $k?>" class="btn-nav <?php if($k==0) echo "active";?> <?php if($k==count($displays)) echo "last";?>" href="javascript:;" name="<?php echo $k?>"></a>
+        <a id="btn-nav<?php echo $k?>" class="btn-nav <?php if($k==0) echo "active";?>" href="javascript:;" name="<?php echo $k?>"></a>
       <?php endforeach; ?>
       </div>
       <!-- /bloco botoes troca -->
@@ -44,7 +44,7 @@
    $(".bloco-nav a").each(function(index){
      quantidade ++;
    })
-   var width = (quantidade * 18)-3;
+   var width = quantidade * 18;
    $('.bloco-nav').css('width', width+'px');
    
    //carrossel
