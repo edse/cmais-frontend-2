@@ -67,8 +67,8 @@
       <?php foreach($asset as $d): ?>
         
       <?php 
-       echo $d->getTitle(). "<br>";
-       echo $d->retriveUrl();
+       echo $d[0]->getTitle(). "<br>";
+       echo $d[0]->retriveUrl();
        /*  
       <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
