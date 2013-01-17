@@ -25,7 +25,20 @@
   <!--btn voltar-->
   <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
-  
+  <div class="tit-pagina">
+    <h2><?php echo $asset->getTitle() ?></h2>
+    <span></span>
+    <!-- RANKING -->
+    <?php $section = $asset->getSections(); ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
+    <!--/RANKING -->
+  </div>
+  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId() ?>');" class="curtir" title="Curtir">curtir</a>
+  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
+  <!-- titulo da pagina -->
+  <?php
+  /*
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2><?php echo $asset->getTitle()?></h2>
@@ -41,7 +54,10 @@
   <a href="#" class="curtir" title="Curtir">curtir</a>
   <a href="#" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
-
+   * 
+   */
+    ?>
+    
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
@@ -100,3 +116,31 @@
 
 </div>
 <!-- /container-->
+
+<script>
+function vote(id){
+  $.ajax({
+    type: "GET",
+    dataType: "text",
+    data: "asset_id="+id,
+    url: "/ajax/ranking",
+    beforeSend: function(){
+      $('#btn_1').hide();
+      $('#btn_2').show();
+      $('#v_load').show();
+    },
+    success: function(data){
+      if(data == 1){
+        alert('Voto realizado com sucesso!');
+        $('#btn_1').hide();
+        $('#btn_2').show();
+      }else{
+        alert('Erro!');
+        $('#btn_1').show();
+        $('#btn_2').hide();
+      }
+      $('#v_load').hide();
+    }
+  });
+}
+</script>
