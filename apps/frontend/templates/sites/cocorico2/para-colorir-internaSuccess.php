@@ -82,6 +82,7 @@
       <?php foreach($assets as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
+        <?php echo $related[0]->retriveImageUrlByImageUsage('image-3') ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <?php echo $d->getTitle() ?> 
         </a>
@@ -89,14 +90,6 @@
       <?php endforeach; ?>
     </ul>
     <?php endif; ?>
-
-    <!--ul class="destaques-small"> 
-      <li class="span2">
-        <a href="#" title="">
-          <img class="span12" src="http://midia.cmais.com.br/assets/image/original/"?>" alt="" />
-        </a>
-      </li>
-    </ul-->
   </div>
   <!-- /row-->
   
