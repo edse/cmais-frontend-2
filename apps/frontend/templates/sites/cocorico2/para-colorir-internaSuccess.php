@@ -61,6 +61,10 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
+    
+    <?php
+    echo count($asset).">>>>>";
+     /*
     <?php if(count($asset) > 2): ?>
     <ul class="destaques-small">
       <?php foreach($asset as $k=>$d): ?>
@@ -73,6 +77,9 @@
       <?php endforeach; ?>
     </ul>
     <?php endif; ?>
+     * 
+     */
+     ?>
     <!--ul class="destaques-small">
       <li class="span2">
         <a href="#" title="">
