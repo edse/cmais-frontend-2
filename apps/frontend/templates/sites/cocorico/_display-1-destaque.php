@@ -46,7 +46,7 @@
    $(".bloco-nav a").each(function(index){
      quantidade ++;
    })
-   var width = (quantidade * 18)-3;
+   var width = quantidade * 18;
    $('.bloco-nav').css('width', width+'px');
    
    //carrossel
@@ -54,13 +54,12 @@
      interval: 8000
    })  
    $('.btn-nav').click(function(){
-     alert($(this).attr('name'));
      $('#blocoCarrossel').carousel(parseInt($(this).attr('name')));
      $('.btn-nav').removeClass('actived');
      $(this).addClass('actived');
    });
    $('#blocoCarrossel').on('slid',function(){
-     var pos = $(".active.item").attr('name')
+     var pos = $(".actived.item").attr('name')
      $('.btn-nav').removeClass('actived');
      $('#btn-nav'+pos).addClass('actived');
    });
