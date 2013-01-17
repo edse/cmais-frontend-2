@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
@@ -62,9 +65,9 @@
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
     
-    <?php if(count($asset) > 2): ?>
+    <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
-      <?php foreach($asset as $d): ?>
+      <?php foreach($assets as $d): ?>
         
       <?php 
        echo $d[0]->getTitle(). "<br>";
