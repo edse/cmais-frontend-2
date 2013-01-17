@@ -1,6 +1,3 @@
-<?php 
-$assets = $pager->getResults(); //depois tem de ordenar por ranking...
-?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
@@ -65,6 +62,21 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
     
+      <?php
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, Section s')
+        ->where('a.id = sa.asset_id')
+        ->andWhere('s.id = sa.section_id')
+        ->andWhere('s.slug = "para-colorir"')
+        ->andWhere('a.site_id = ?', (int)$site->id)
+        ->andWhere('a.asset_type_id = 1')
+        //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+        ->groupBy('sa.asset_id')
+        //->orderBy('a.id desc')
+        ->limit(6)
+        ->execute();
+    ?>
     <?php if(count($assets) > 2): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
