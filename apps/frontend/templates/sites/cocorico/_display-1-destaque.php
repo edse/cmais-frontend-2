@@ -14,23 +14,13 @@
         <div class="carousel-inner">
           <!-- item -->
           <div class="<?php if($k==0) echo "active";?> item" name="<?php echo $k?>">
-
-  1
-
-          </div>
-          <!-- /item -->
-                    <!-- item -->
-          <div class="item" name="<?php echo $k?>">
-
-2
-
-          </div>
-          <!-- /item -->
-                    <!-- item -->
-          <div class="item" name="<?php echo $k?>">
-
- 3
-
+            <?php if(($imgs)&&(count($imgs)>0)):?>
+            <a href="<?php echo $d->retriveUrl()?>"><imgs src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
+            <?php endif; ?>
+            <a class="texto" href="<?php echo $d->retriveUrl()?>">
+              <h3><?php echo $d->getTitle()?></h3>
+              <p><?php echo $d->getDescription()?></p>
+           </a>
           </div>
           <!-- /item -->
         </div>
