@@ -13,7 +13,7 @@
       <!-- item -->
       <div class="active item" name="<?php echo $k?>">
         <?php if(($imgs)&&(count($imgs)>0)):?>
-        <a href="<?php echo $d->retriveUrl()?>"><img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
+        <a href="<?php echo $d->retriveUrl()?>"><imgs src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('original') ?>"></a>
         <?php endif; ?>
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
           <h3><?php echo $d->getTitle()?></h3>
