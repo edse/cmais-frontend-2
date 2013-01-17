@@ -174,21 +174,27 @@
       
     </div>
     <!-- para colorir -->
+     <?php if(isset($displays['destaque-para-colorir'])): ?>
+      <?php if(count($displays['destaque-para-colorir']) > 0): ?>
+        <?php $related = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['destaque-para-colorir'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
             <h3><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></h3>
           </div>
-          <a  href="#" title="" class="span6">
-            <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" />
-            descricao
+          <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
+            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" />
+            <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
           </a>
-          <a href="#" title="" class="span6 last">
-            <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" />
-            descricao
+          <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
+            <img src="<?php echo $related[1]->retriveImageUrlByImageUsage('original') ?>" />
+            <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
           </a>
         </div>        
       </div>
+      <?php endif; ?>
+    <?php endif; ?>
       <!-- /para colorir -->
     
     
