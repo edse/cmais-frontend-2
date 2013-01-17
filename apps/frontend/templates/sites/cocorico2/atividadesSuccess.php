@@ -131,14 +131,19 @@
   <div class="row-fluid conteudo">
     <!-- Imprima e brinque -->
     <a href="#" title=" titulo" class="span4 destaque2">
+      <?php if(isset($displays['destaque-imprima'])): ?>
+      <?php if(count($displays['destaque-imprima']) > 0): ?>
+        <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
     <div class="destaque-2 conteudo-diverso">
       <h3>Imprima e brinque</h3>
-      <img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado">
+      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
       <p>
-        texto corrido
+        <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
         <i class="ico-mais"></i>
       </p>
-    </div> </a>
+    </div> </a>   
+   <?php endif; ?>
+    <?php endif; ?> 
     <!-- /Imprima e brinque -->
     <!-- Papel de parede -->
     <a href="#" title=" titulo" class="span4 destaque2">
