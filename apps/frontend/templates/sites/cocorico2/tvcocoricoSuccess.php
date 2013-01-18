@@ -369,40 +369,38 @@
        <?php endif; ?>
       <?php endif; ?>
             
-      <!-- convidado especial -->
-      <a href="#" title="titulo" class="span6 destaque1">
+       <!-- convidado especial -->
+       <?php if(isset($displays['convidado-especial'])):?>
+        <?php if(count($displays['convidado-especial']) > 0): ?>  
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
-       	<?php if(isset($displays['convidado-especial'])): ?>
-      	 <?php if(count($displays['convidado-especial']) > 0): ?> 
-      	      <?php $related_convidado = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-      	   	
-          <h3><?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?></h3>
-          <img src="<?php $related_convidado = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
+          <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
+          <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
           <p>
-            <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
+            <?php echo $displays['convidado-especial'][0]->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
-        <?php endif; ?>
-        <?php endif; ?>
          </div>
        </a>
-      <!-- /convidado especial --> 
+       <?php endif; ?>
+     <?php endif; ?>
+      <!-- /convidado especial -->
       
       <!-- receitinhas -->
-      <a href="#" title=" titulo" class="span6 destaque2" style="margin-left: 15px;"> 
+      <?php if(isset($displays['receitinhas'])):?>
+        <?php if(count($displays['receitinhas']) > 0): ?>  
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
-        <?php if(isset($displays['receitinhas'])): ?>
-      	 <?php if(count($displays['receitinhas']) > 0): ?> 	
-          <h3><?php echo $displays['receitinhas'][0]->Asset->getTitle() ?></h3>
-          <img src="<?php echo $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['receitinhas'][0]->Asset->getTitle() ?>">
+          <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
+          <img src="<?php echo $displays['receitinhas'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
           <p>
-            <?php echo $displays['receitinhas'][0]->Asset->getDescription() ?>
+            <?php echo $displays['receitinhas'][0]->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
-          <?php endif; ?>
-        <?php endif; ?>
         </div>
       </a>  
+      <?php endif; ?>
+     <?php endif; ?>
       <!-- /receitinhas -->
       
     </div>
