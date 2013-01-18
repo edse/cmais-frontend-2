@@ -33,18 +33,8 @@
     
   <h2 class="tit-pagina">na tv</h2>
   <!--row-->
-  <?php if(isset($displays['descricao'])):?>
-    <?php if(count($displays['descricao']) > 0): ?> 
-    
-  <?php foreach($displays['descricao'] as $k=>$d):?>   
-   <div class="row-fluid conteudo ">
-    <p class="span8"><?php echo $d->getDescription() ?></p>
-  
-  <?php endforeach; ?>
-   
-   <?php endif; ?>
-    <?php endif; ?>
-    
+  <div class="row-fluid conteudo ">
+    <p class="span8"><?php echo html_entity_decode($displays['descricao']->Asset->AssetContent->render()) ?></p>
     <div class="logos span4">
       <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
       <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
