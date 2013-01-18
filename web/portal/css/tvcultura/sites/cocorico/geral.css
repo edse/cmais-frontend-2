@@ -317,3 +317,4 @@ input.search-query,
 
 #myModal.alerta h3 { color:#ec342f; font-size:20px; }
 #myModal.alerta p { color:#6b757d; font-weight:bold; }
+.modal-header .close { background: url("/portal/images/capaPrograma/cocorico/ico-fechar.png") no-repeat scroll right center #FFFFFF; border-radius: 5px 20px 20px 5px; color: #EC342F; font-size: 14px; font-weight: normal; height: 21px; line-height: 21px; margin-top: 0; opacity: 1; padding: 0 26px 0 10px; text-shadow: none;}
