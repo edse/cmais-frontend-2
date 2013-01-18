@@ -1,61 +1,54 @@
 <div class="row-fluid rodape" >
-  <h3>2012 &copy; TV Cultura - Fundação Padre Anchieta</h3>
-  <div class="span2">
-    <a href="#" class="bold" title="Em família">em família</a>
-    <ul>
-      <li><a href="#" title="Na TV">Na TV</a></li>
-      <li><a href="#" title="Nas lojas">Nas lojas</a></li>
-      <li><a href="#" title="Nas Redes">Nas Redes</a></li>
-      <li><a href="#" title="Nos Teatros">Nos Teatros</a></li>
-      <li><a href="#" title="Nos Cinemas">Nos Cinemas</a></li>
-      <li><a href="#" title="Na Web">Na Web</a></li>
-      <li><a href="#" title="Agenda">Agenda</a></li>
-      <li><a href="#" title="Newsletter">Newsletter</a></li>
-      <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
-    </ul>
+    <h3>2013 &copy; tv cultura - fpa</h3>
+    <div class="span2"> <a href="http://cmais.com.br/cocorico2" class="bold" title="Cocoricó">Cocoricó</a>
+      <ul>
+        <li><a href="http://cmais.com.br/cocorico2/personagens" title="Personagens">Personagens</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/personagens" title="Autógrafos">Autógrafos</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/clipes-musicais" title="Receitinhas">Clipes</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/videos" title="Receitinhas">Séries Especiais</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
+      </ul>
+    </div>
+    <div class="span2"> <a href="http://cmais.com.br/cocorico2/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
+      <ul>
+        <li><a href="http://cmais.com.br/cocorico2/episodios" title="Episódios">Episódios</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/convidados" title="Convidado do dia">Convidado do dia</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/erros-de-gravacao" title="Erros de gravação">Erros de gravação</a></li>
+        <!--li><a href="http://cmais.com.br/cocorico2/instagram" title="Instagram">Instagram @TVCocoricó</a></li-->
+      </ul>
+    </div>
+    <div class="span2">
+      <a href="http://cmais.com.br/cocorico2/emfamilia" class="bold" title="Em família">em família</a>
+      <ul>
+        <li><a href="http://cmais.com.br/cocorico2/natv" title="Na TV">Na TV</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/naslojas" title="Nas lojas">Nas lojas</a></li>
+        <li><a href="http://cocoricoshow.com.br/" title="No Teatro">No Teatro</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/nocinema" title="Nos Cinemas">No Cinema</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/naweb" title="Na Web">Na Web</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/agenda" title="Agenda">Agenda</a></li>
+        <li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
+      </ul>
+    </div>
+    
+    
+    <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
+      <ul>
+        <li><a href="http://cmais.com.br/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/atividades" title="Atividades">Atividades</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Receitinhas">Receitinhas</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/imprima-e-brinque" title="Receitinhas">Imprima e Brinque</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/para-colorir" title="Receitinhas">Para Colorir</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/papel-de-parede" title="Receitinhas">Papel de Parede</a></li>
+        </ul></div>
+    <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
+      <ul>
+        <li><a href="http://cmais.com.br/quintaldacultura" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
+        <li><a href="http://tvratimbum.cmais.com.br/" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>
+        <li class="last"><a href="http://tvcultura.cmais.com.br/" class="cultura" title="TV Cultura">TV Cultura</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/castelo" class="castelo" title="Castelo Rá Tim Bum">Castelo Rá Tim Bum</a></li>
+        <li><a href="http://tvratimbum.cmais.com.br/vilasesamo/" class="vila" title="Vila Sésamo">Vila Sésamo</a></li>
+      </ul></div>
+    
   </div>
-  <div class="span2"> <a href="#" class="bold" title="Em família">tv cocoricó</a>
-    <ul>
-      <li><a href="#" title="Sobre o programa">Sobre o programa</a></li>
-      <li><a href="#" title="Livro de receitas">Livro de receitas</a></li>
-      <li><a href="#" title="Bastidores">Bastidores</a></li>
-      <li><a href="#" title="Tour Virtual">Tour Virtual</a></li>
-      <li><a href="#" title="Receitinhas">Receitinhas</a></li>
-      <li><a href="#" title="Envie seu vídeo">Envie seu vídeo</a></li>
-      <li><a href="#" title="Enquete">Enquete</a></li>
-    </ul>
-  </div>
-  <div class="span2"> <a href="#" class="bold" title="Cocoricó">cocoricó</a>
-    <ul>
-      <li><a href="#" title="Sobre a série">Sobre a série</a></li>
-      <li><a href="#" title="Diário do Júlio">Diário do Júlio</a></li>
-      <li><a href="#" title="Personagens">Personagens</a></li>
-      <li><a href="#" title="Cocoricolândia">Cocoricolândia</a></li>
-      <li><a href="#" title="Autógrafos">Autógrafos</a></li>
-    </ul>
-  </div>
-  <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Brincadeiras</a>
-    <ul>
-      <li><a href="#" title="Joguinhos">Joguinhos</a></li>
-      <li><a href="#" title="Receitinhas">Receitinhas</a></li>
-      <li><a href="#" title="Para colorir">Para colorir</a></li>
-      <li><a href="#" title="Rádio">Rádio</a></li>
-      <li><a href="#" title="Vídeos">Vídeos</a></li>
-      <li><a href="#" title="Clipes musicais">Clipes musicais</a></li>
-      <li><a href="#" title="Papel de parede">Papel de parede</a></li>
-      <li><a href="#" title="Carinhas animadas">Carinhas animadas</a></li>
-      <li><a href="#" title="Cartões Comemorativos">Cartões Comemorativos</a></li>
-      <li><a href="#" title="Atividades para imprimir">Atividades para imprimir</a></li>
-    </ul>
-  </div>
-  <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
-    <ul>
-      <li><a href="#" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
-      <li><a href="#" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>
-      <li class="last"><a href="#" class="cultura" title="TV Cultura">TV Cultura</a></li>
-      <li><a href="#" class="castelo" title="Castelo Rá Tim Bum">Castelo Rá Tim Bum</a></li>
-      <li><a href="#" class="vila" title="Vila Sésamo">Vila Sésamo</a></li>
-    </ul>
-  </div>
-</div>
-  

@@ -52,11 +52,14 @@
       <?php if(isset($displays['video'])):?>
     <?php if(count($displays['video']) > 0): ?>     
   	  <?php foreach($displays['video'] as $k=>$d):?>  
-    <div class="destaque span6">
+    <div class="destaque span4">
       <i class="ico-naweb"></i>
       <h2>youtube.com/tvcocorico</h2>
         
-      <iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+      <!--iframe width="458" height="280" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe-->
+      <div class="box-youtube">
+        <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=tvcocorico&synd=open&w=297&h=370&title=&output=js"></script>
+      </div>
       
       <div class="btn-inscreva-se ">
         <span></span>
@@ -70,23 +73,22 @@
     <!-- /youtube -->
     
     <!-- instagram -->
-    <div class="instagram span2">
+    <div class="instagram span4">
       <div class="topo">
           <div class="bac-blue">
             <h3>
               <i class="ico-naweb ico-instagram"></i>
-              instagram<br>
-              <span>@tvcocorico</span>
+              instagram<span>@tvcocorico</span>
               <i class="ico-seta-titulo"></i>
            </h3>
          </div>
        </div>
+       <div class="box-instagram">
        <!-- SnapWidget -->
-        <iframe src="http://snapwidget.com/in/?u=dHZjdWx0dXJhfGlufDEzOHwxfDJ8fG5vfDV8ZmFkZU91dA==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:136px; height: 286px" ></iframe>
-        <div class="borda"></div>
-        
-    </div>   
-    <!-- /instagram -->  
+       <iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>
+       </div> 
+     </div>   
+     <!-- /instagram -->  
 
     <!-- facebook e twitter -->
     <div class="twitter span4">
