@@ -309,7 +309,7 @@
       </div>
       <!-- form interatividade -->
       
-      <?php if(isset($displays['bastidores'])):?>
+      <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
           
         <?php $related0 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -374,15 +374,15 @@
         <div class="destaque-1 conteudo-tv">
        	<?php if(isset($displays['convidado-especial'])): ?>
       	 <?php if(count($displays['convidado-especial']) > 0): ?> 
-      	      <?php $related = $displays_convidado['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+      	      <?php $related_convidado = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       	   	
           <h3><?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?></h3>
-          <img src="<?php $related = $displays_convidado['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
+          <img src="<?php $related_convidado = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['convidado-especial'][0]->Asset->getTitle() ?>">
           <p>
             <?php echo $displays['convidado-especial'][0]->Asset->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
-          <?php endif; ?>
+        <?php endif; ?>
         <?php endif; ?>
          </div>
        </a>
