@@ -324,10 +324,11 @@
         <!-- item -->
       <?php if(isset($displays['bastidores'])): ?>
        <?php if(count($displays['bastidores']) > 0): ?>
+         <?php $related_bastidores = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
         <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
+                <img src="<?php echo $related_bastidores[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
           </div>
