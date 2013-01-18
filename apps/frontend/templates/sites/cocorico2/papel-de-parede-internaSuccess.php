@@ -60,15 +60,27 @@
       <?php foreach($download as $k=>$d): ?>
         <?php if($k==0):?>
           <li class="celular">
-            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" title=""><i class="icon-celular"></i>320 x 480</a>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-celular"></i>320 x 480</a>
           </li>
+        <?php elseif($k==1):?>
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>800 x 600</a>
+          </li>
+        <?php elseif($k==2):?>  
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1024 x 768</a>
+          </li>
+        <?php elseif($k==3):?>
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x1024</a>
+          </li>  
         <?php endif; ?>
       <?php endforeach; ?>
-
-      <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
-      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 768</a></li>
-      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 1024</a></li>
-      <li class="celular"><a href="#" title=""><i class="icon-celular"></i>320 x 480</a></li>
+      <?php if(count($preview) > 0): ?>
+        <li>
+          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $preview->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
+        </li>
+      <?php endif; ?>
     </ul>
     
     
