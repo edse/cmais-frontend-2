@@ -28,7 +28,7 @@ if(isset($pager)){
   </div>
   <!-- /row-->
   <!-- row-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'agenda', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
