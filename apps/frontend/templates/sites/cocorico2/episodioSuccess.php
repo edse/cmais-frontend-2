@@ -27,7 +27,7 @@
   
   <!--row-->
   <div class="row-fluid conteudo">
-   <span class="data"><?php echo $asset->getHeadline() ?></span>
+   <span class="data"><?php echo $asset->AssetContent->getHeadline() ?></span>
    <p>
      <?php echo html_entity_decode($asset->AssetContent->render()) ?>
    </p>
