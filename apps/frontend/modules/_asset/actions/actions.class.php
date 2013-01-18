@@ -678,13 +678,17 @@ class _assetActions extends sfActions
           ->execute();
       }
       elseif($this->section->slug == "para-colorir") {
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna';
+        if ($debug) print "<br>cocorico-3 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna');
       }
       elseif($this->section->slug == "papel-de-parede") {
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/papel-de-parede-interna';
+        if ($debug) print "<br>cocorico-4 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/papel-de-parede-interna';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/papel-de-parede-interna');
       }
+      elseif($this->section->slug == "episodios") {
+        if ($debug) print "<br>cocorico-5 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
+      } 
       
       
     }
