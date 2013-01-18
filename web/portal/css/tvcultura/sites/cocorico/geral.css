@@ -315,6 +315,26 @@ input.search-query,
 .cr a { margin-right:10px; color:#fff; text-transform:uppercase; text-align:right; font-weight:bold; height:40px; line-height:40px; display: block;  }
 .cr a:hover { text-decoration:none; }
 
+.modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
+.modal { width:980px; margin:-200px 0 0 -490px; border:none; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position:absolute; }
+.modal,
+.modal-footer,
+.modal-header { background:#d3e7e8; }
+.modal-footer,
+.modal-header { border:none; box-shadow:none; }
+.modal-body,
+.modal-footer,
+.modal-header { padding:10px 10px 0 10px; }
+.modal-header { padding-bottom:30px; }
+.modal-footer { padding-bottom:10px; }
+.modal-header p,
+.modal-header #myModalLabel { color:#70aab1; font-size:20px; line-height: 22px; margin:0; font-weight: bold;}
+.modal-header p { font-size:14px; text-transform:uppercase; }
+.modal-body { max-height:565px; text-align:center; padding-top:0; }
+.modal ::-webkit-scrollbar { height: 12px; width: 12px; background:#d3e7e8; }
+.modal ::-webkit-scrollbar-thumb { background: #72aab0; -webkit-border-radius: 1ex;}
+.modal ::-webkit-scrollbar-corner { background: #d3e7e8;}
+.modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
+.modal ul li { margin-bottom:10px; }
 #myModal.alerta h3 { color:#ec342f; font-size:20px; }
 #myModal.alerta p { color:#6b757d; font-weight:bold; }
-.modal-header .close { background: url("/portal/images/capaPrograma/cocorico/ico-fechar.png") no-repeat scroll right center #FFFFFF; border-radius: 5px 20px 20px 5px; color: #EC342F; font-size: 14px; font-weight: normal; height: 21px; line-height: 21px; margin-top: 0; opacity: 1; padding: 0 26px 0 10px; text-shadow: none;}
