@@ -78,7 +78,7 @@
       <?php endforeach; ?>
       <?php if(count($preview) > 0): ?>
         <li>
-          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $preview->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
+          <a href="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
         </li>
       <?php endif; ?>
     </ul>
