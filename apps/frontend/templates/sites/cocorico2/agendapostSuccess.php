@@ -30,7 +30,7 @@
      <li><a href="/cocorico">Em família</a> <span class="divider">&rsaquo;</span></li>
      <li>Agenda</li>
      <li class="active"></li>
-  </ul>
+  </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">agenda</h2>
   <!--row post-->
