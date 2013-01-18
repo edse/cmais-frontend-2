@@ -60,15 +60,27 @@
       <?php foreach($download as $k=>$d): ?>
         <?php if($k==0):?>
           <li class="celular">
-            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" title=""><i class="icon-celular"></i>320 x 480</a>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-celular"></i>320 x 480</a>
           </li>
+        <?php elseif($k==1):?>
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>800 x 600</a>
+          </li>
+        <?php elseif($k==2):?>  
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1024 x 768</a>
+          </li>
+        <?php elseif($k==3):?>
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x1024</a>
+          </li>  
         <?php endif; ?>
       <?php endforeach; ?>
-
-      <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
-      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 768</a></li>
-      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 1024</a></li>
-      <li class="celular"><a href="#" title=""><i class="icon-celular"></i>320 x 480</a></li>
+      <?php if(count($preview) > 0): ?>
+        <li>
+          <a href="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
+        </li>
+      <?php endif; ?>
     </ul>
     
     
@@ -79,16 +91,28 @@
   
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">papel de parede</a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl(); ?>/papel-de-parede">papel de parede</a><span></span></div>
+    <!--ul class="destaques-small">
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+    </ul-->
+    <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      
+      <?php foreach($assets as $d): ?>
+        <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>">
+          <?php echo $d->getTitle() ?> 
+        </a>
+      </li>
+      <?php endforeach; ?>
     </ul>
+    <?php endif; ?>
   </div>
   <!-- /row-->
  
