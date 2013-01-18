@@ -133,7 +133,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #produto-grid a,
 #produto-grid {cursor:none;}
 #tooltip {position: absolute;  background:url(/portal/images/capaPrograma/cocorico/cursor.png) no-repeat;  width:130px;  height:50px;  font-size:0px!important;}
-.conteudo .site { background:#70aab1 url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 10px 2px; color:#e9f3f4; padding:0 10px 0 35px; margin-top: 20px; display: block; max-width: 115px; text-align:center; height:20px; line-height: 20px;  }
+.conteudo .site { background:#70aab1 url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 10px 3px; color:#e9f3f4; padding:0 10px 0 35px; margin-top: 20px; display: block; max-width: 115px; text-align:center; height:20px; line-height: 20px;  }
 .conteudo .site:hover { text-decoration:none; }
 
 .modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
