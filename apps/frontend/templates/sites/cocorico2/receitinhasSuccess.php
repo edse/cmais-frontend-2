@@ -2,7 +2,6 @@
 $assets = $pager->getResults();
 ?>
 
-<script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
@@ -36,7 +35,7 @@ $assets = $pager->getResults();
       <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
       <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[0]->getDescription() ?>" data-original-title="<?php echo $favoritos[0]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
+      <a href="#" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
       <!--/RANKING -->
@@ -47,7 +46,7 @@ $assets = $pager->getResults();
       <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
       <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[1]->getDescription() ?>" data-original-title="<?php echo $favoritos[1]->getTitle() ?>"><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
+      <a href="#" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
       <!--/RANKING -->
@@ -58,7 +57,7 @@ $assets = $pager->getResults();
       <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
       <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[2]->getDescription() ?>" data-original-title="<?php echo $favoritos[2]->getTitle() ?>"><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
+      <a href="#" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
       <!--/RANKING -->
