@@ -82,17 +82,17 @@
         </div>
         <div class="modal-footer">
           <ul>
-          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
           </ul>
         </div>
       </div>
-      
+       
     <div class="span6">
     <div class="redes">
       <!--face-->
