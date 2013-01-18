@@ -54,7 +54,14 @@
     </div>
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <?php if (count($related_video) > 0): ?>
+      <?php 
+      if (count($related_video) > 0):
+        $offset = "0m0s";
+        if($related_video[0]->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+          $offset = $p[0]."m".$p[1]."s";
+        }
+      ?>
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php if($related_video[0]->AssetVideo->getStartFrom() != "") echo "#t=".$related_video[0]->AssetVideo->getStartFrom(); else echo "#t=0m0s"; ?>" frameborder="0" allowfullscreen></iframe>
       <?php endif; ?>
     </div>
