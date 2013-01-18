@@ -38,6 +38,7 @@
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2><?php echo $asset->getTitle() ?></h2>
+    <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
     <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
