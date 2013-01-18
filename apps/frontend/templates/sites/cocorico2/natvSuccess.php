@@ -5,7 +5,7 @@
   <!-- row-->
   <div class="row-fluid">
     <div class="topo-coco">
-      <h1 class="span3"><a href="/cocorico2" title="cocorico2"><img src="/portal/images/capaPrograma/cocorico2/logo-coco.png" alt="Cocoricó" /></a></h1>
+      <h1 class="span3"><a href="<?php echo $site->retriveUrl()?>" title="cocorico2"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
       <!-- BOX PUBLICIDADE 2 -->
       <div class="box-publicidade span9">
         <!-- portal-cocorico2 -->
@@ -34,7 +34,7 @@
   <h2 class="tit-pagina">na tv</h2>
   <!--row-->
   <div class="row-fluid conteudo ">
-    <p class="span8"><?php echo html_entity_decode($displays['descricao'][0]->Asset->AssetContent->render()) ?></p>
+    <p class="span8"><?php echo html_entity_decode(str_replace(array("<p>", "</p>"), array("", ""), $displays['descricao'][0]->Asset->AssetContent->render())) ?></p>
     <div class="logos span4">
       <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
       <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
