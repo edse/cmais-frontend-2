@@ -4,12 +4,12 @@
         <ul class="nav span12">
           <li class="familia"><a  href="<?php echo $site->retriveUrl() ?>/em-familia" title="Em família">Em família</a>
             <ul class="nav" id="menu-familia">
-              <li><a<?php if($s == 'natv') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'naslojas') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'noteatro') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/noteatro" title="No Teatro">no teatro</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'nocinema') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'naweb') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'agenda') echo 'class="active"'?> href="<?php echo $site->retriveUrl() ?>/agenda" title="Agenda">agenda</a></li>
+              <li><a<?php if($s == 'natv') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
+              <li><a<?php if($s == 'naslojas') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
+              <li><a<?php if($s == 'noteatro') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/noteatro" title="No Teatro">no teatro</a><span class="divider">|</span></li>
+              <li><a<?php if($s == 'nocinema') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
+              <li><a<?php if($s == 'naweb') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
+              <li><a<?php if($s == 'agenda') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/agenda" title="Agenda">agenda</a></li>
             </ul>
           </li>
           <li class="joguinhos"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Joguinhos" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
