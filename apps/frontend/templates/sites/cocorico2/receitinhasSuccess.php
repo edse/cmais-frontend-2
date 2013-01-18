@@ -86,7 +86,7 @@ $assets = $pager->getResults();
         <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
         <?php foreach ($pager->getLinks() as $page): ?>
           <?php if ($page == $pager->getPage()): ?>
-        <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+        <li class="ativo"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
           <?php else: ?>
         <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
           <?php endif; ?>
