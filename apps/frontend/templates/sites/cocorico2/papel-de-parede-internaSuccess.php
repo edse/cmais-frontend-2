@@ -53,7 +53,7 @@
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
     <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
      <?php if(count($preview) > 0): ?>
-       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
      <?php endif; ?>
     <ul>
       <li><a href="#" title=""><i class="icon-monitor"></i>800 x 600</a></li>
