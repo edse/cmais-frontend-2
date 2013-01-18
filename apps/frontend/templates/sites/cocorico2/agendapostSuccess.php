@@ -67,7 +67,7 @@
           <a href="#" class="proximo" title="Próximo Event">Próximo Evento<span></span></a>
         </div>
       </div>
-      <!-- paginacao -->
+      <!-- paginacao --> 
     </div>
     <!--/coluna esquerda -->
     <!--coluna direita -->
