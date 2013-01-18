@@ -309,8 +309,16 @@
       </div>
       <!-- form interatividade -->
       
-      <!-- bastidores -->
+      <?php if(isset($displays['bastidores'])):?>
+        <?php if(count($displays['bastidores']) > 0): ?>
+          
+          <?php $related = $displays0['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $related = $displays1['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $related = $displays2['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          
+       <!-- bastidores -->
       <div class="bastidores fonte span3">
+       <?php if(count($related) > 0): ?> 
         <div class="topo">
           <div class="bac-yellow">
             <h3>
@@ -322,51 +330,44 @@
        </div>
         
         <!-- item -->
-      <?php if(isset($displays['bastidores'])): ?>
-       <?php if(count($displays['bastidores']) > 0): ?>
-          
-         <?php $related0 = $displays['bastidores'][0]->Asset->retriveImageUrlByImageUsage('original'); ?>
-         <?php $related1 = $displays['bastidores'][1]->Asset->retriveImageUrlByImageUsage('original'); ?>
-         <?php $related2 = $displays['bastidores'][2]->Asset->retriveImageUrlByImageUsage('original'); ?>
-           
-        <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
+        <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>"/>
+                <img src="<?php $related = $displays0['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
-          </div>
-        </a>
-        <hr/> 
-        <!-- /item --> 
-        
-        <!-- item -->
-         <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>">
-          <div class="item">
-            <div class="img-bast">
-                <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['bastidores'][1]->Asset->getTitle() ?>"/>
-            </div>
-            <span><?php echo $displays['bastidores'][1]->Asset->getTitle() ?></span>
+            <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
         
         <!-- item -->
-         <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>">
+        <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php echo $related2[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['bastidores'][2]->Asset->getTitle() ?>"/>
+                <img src="<?php $related1 = $displays1['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['bastidores'][2]->Asset->getTitle() ?></span>
+            <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
-        <?php endif; ?>
-       <?php endif; ?>
+        
+        <!-- item -->
+        <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->getTitle() ?>">
+          <div class="item">
+            <div class="img-bast">
+                <img src="<?php $related1 = $displays2['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
+            </div>
+            <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
+          </div>
+        </a>
+        <hr/>
+        <!-- /item -->
       </div>
       <!-- /bastidores -->
+       <?php endif; ?>
+      <?php endif; ?>
       
       <!-- convidado especial -->
       <a href="#" title="titulo" class="span6 destaque1">
