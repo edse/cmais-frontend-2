@@ -104,7 +104,7 @@
           $displays['agenda'] = $blocks[0]->retriveDisplays();
         }
         ?>
-      <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays)) ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['agenda'])) ?>
       <!-- fale conosco cr-->
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
