@@ -1062,6 +1062,18 @@ class _sectionActions extends sfActions
       if($this->section->Parent->getSlug() == "personagens"){
         $sectionSlug = "personagem";
       }
+      else if($this->section->getSlug() == "receitinhas"){
+        $this->favoritos = 
+        $this->favoritos = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $this->section->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('sa.display_order')
+          ->limit(3)
+          ->execute();
+      }
     }
 
     if($sectionSlug == 'contate-o-nucleo')
