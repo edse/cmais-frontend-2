@@ -91,7 +91,7 @@
   
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl(); ?>/papel-de-parede">papel de parede</a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/papel-de-parede">papel de parede</a><span></span></div>
     <?php
       $assets = Doctrine_Query::create()
         ->select('a.*')
