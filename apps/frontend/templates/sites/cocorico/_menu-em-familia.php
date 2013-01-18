@@ -6,7 +6,7 @@
             <ul class="nav" id="menu-familia">
               <li><a class="active" href="<?php echo $site->retriveUrl() ?>/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
               <li><a href="<?php echo $site->retriveUrl() ?>/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
-              <li><a href="<?php echo $site->retriveUrl() ?>/noteatro" title="No Teatro">no teatro</a><span class="divider">|</span></li>
+              <li><a href="http://cocoricoshow.com.br/" title="No Teatro" target="_blank">no teatro</a><span class="divider">|</span></li>
               <li><a href="<?php echo $site->retriveUrl() ?>/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
               <li><a href="<?php echo $site->retriveUrl() ?>/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
               <li><a href="<?php echo $site->retriveUrl() ?>/agenda" title="Agenda">agenda</a></li>
