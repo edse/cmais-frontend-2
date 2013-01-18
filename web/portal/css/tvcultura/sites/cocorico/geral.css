@@ -340,7 +340,7 @@ input.search-query,
 #myModal.alerta h3 { color:#ec342f; font-size:20px; text-transform:uppercase; }
 #myModal.alerta p { color:#6b757d; font-weight:bold; }
 #myModal.alerta a { margin-top:20px;}
-#myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin-left:5px; }
+#myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin:0 5px; }
 #myModal.alerta a.span3 { color:#f2722f; display:block; font-weight: bold; margin-left:0; }
 #myModal.alerta a span { background:#f2722f; color:#fdf035; padding:0 5px; clear:both; display:block; text-align:center; height: 22px; line-height:22px;}
 #myModal.alerta a.adulto { float:right;  color:#70aab1; }
