@@ -32,7 +32,7 @@
      <?php echo html_entity_decode($asset->AssetContent->render()) ?>
    </p>
    <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <?php 
+     <?php 
       if (count($related_video) > 0):
         $offset = "0m0s";
         if($related_video[0]->AssetVideo->getStartFrom() != ""){
@@ -41,7 +41,7 @@
         }
       ?>
    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
-   
+   <?php endif; ?>
   </div>
   <!-- /row-->
   <!--row-->
