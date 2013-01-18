@@ -21,7 +21,7 @@
   </div>
   <!-- /row-->
   <!-- menu-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
   <!-- /menu-->
   
   <!-- breadcrumb-->
@@ -92,8 +92,7 @@
           </ul>
         </div>
       </div>
-       <?php endif; ?>
-      <?php endif; ?>
+      
     <div class="span6">
     <div class="redes">
       <!--face-->
@@ -111,8 +110,10 @@
         <div class="g-plusone" data-size="medium"></div>
       </div>
     </div>
+     <?php endif; ?> 
+      <?php endif; ?>
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-    <a class="site" href="<?php echo $asset->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
+    <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
     </div>
     
   </div>
