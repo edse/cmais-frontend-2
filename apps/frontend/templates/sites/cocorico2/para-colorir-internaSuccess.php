@@ -1,3 +1,8 @@
+<?php 
+$preview = $asset->retriveRelatedAssetsByRelationType('Preview'); 
+$download = $asset->retriveRelatedAssetsByRelationType('Download');
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
@@ -41,12 +46,12 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" title="Imprimir">
-      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" alt="" />
+    <a  href="javascript:printDiv('div1')" class="print" datasrc="<?php echo $download[0]->retriveImageUrlByImageUsage('original') ?>" title="Imprimir">
+      <img class="border-radius10" width="100%" src="<?php echo $download[0]->retriveImageUrlByImageUsage('original') ?>" alt="" />
     </a>
-    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" alt="imprimir">imprimir</a>
+    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="<?php echo $download[0]->retriveImageUrlByImageUsage('original') ?>" alt="imprimir">imprimir</a>
     <div id="div1" style="display: none;page-break-after:always;">
-      <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" style="width:95%">
+      <img src="<?php echo $download[0]->retriveImageUrlByImageUsage('original') ?>" style="width:95%">
     </div>
     <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
