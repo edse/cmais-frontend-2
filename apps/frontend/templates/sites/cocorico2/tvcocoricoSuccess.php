@@ -337,7 +337,7 @@
             <span><?php echo $displays['bastidores'][0]->Asset->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
+        <hr/> 
         <!-- /item --> 
         
         <!-- item -->
