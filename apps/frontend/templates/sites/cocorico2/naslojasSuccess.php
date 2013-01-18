@@ -23,7 +23,7 @@ $assets = $pager->getResults();
   </div>
   <!-- /row-->
   <!-- row-->
-     <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
+     <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
