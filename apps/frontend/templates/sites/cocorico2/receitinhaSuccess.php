@@ -55,7 +55,7 @@
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <?php if (count($related_video) > 0): ?>
-      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent#t=<?php echo $related_video[0]->AssetVideo->getStartFrom() ?>" frameborder="0" allowfullscreen></iframe> 
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent<?php if($related_video[0]->AssetVideo->getStartFrom() != "") echo "&t=".$related_video[0]->AssetVideo->getStartFrom() ?>&rel=0" frameborder="0" allowfullscreen></iframe> 
       <?php endif; ?>
     </div>
   </div>
