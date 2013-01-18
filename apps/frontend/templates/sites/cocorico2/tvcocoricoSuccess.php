@@ -305,20 +305,20 @@
             Tente novamente mais tarde.
           </p>
         </div>  
-
+ 
       </div>
       <!-- form interatividade -->
       
       <?php if(isset($displays['bastidores'])):?>
         <?php if(count($displays['bastidores']) > 0): ?>
           
-          <?php $related = $displays0['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-          <?php $related = $displays1['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-          <?php $related = $displays2['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $related0 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $related1 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $related2 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
           
        <!-- bastidores -->
       <div class="bastidores fonte span3">
-       <?php if(count($related) > 0): ?> 
+       
         <div class="topo">
           <div class="bac-yellow">
             <h3>
@@ -333,7 +333,7 @@
         <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php $related = $displays0['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
+                <img src="<?php $related0 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
           </div>
@@ -345,7 +345,7 @@
         <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php $related = $displays1['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
+                <img src="<?php $related1 = $displays['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
           </div>
@@ -357,7 +357,7 @@
         <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="<?php $related = $displays2['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
+                <img src="<?php $related2 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
           </div>
@@ -368,8 +368,7 @@
       <!-- /bastidores -->
        <?php endif; ?>
       <?php endif; ?>
-      <?php endif; ?>
-      
+            
       <!-- convidado especial -->
       <a href="#" title="titulo" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
