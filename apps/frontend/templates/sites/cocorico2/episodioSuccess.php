@@ -14,21 +14,33 @@
     </div>
   </div>
   <!-- /row-->
-  <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico">Episódios</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Nome do episódio</li>
+<ul class="breadcrumb">
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/episodios">para colorir</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
-  <a class="voltar" href="#">voltar<span class="divisao"></span></a>
-  <h2 class="tit-pagina episodio">Convidado do Dia</h2>
+  <!--btn voltar-->
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /btn voltar-->
+  <h2 class="tit-pagina episodio"><?php echo $asset->getTitle() ?></h2>
   
   <!--row-->
   <div class="row-fluid conteudo">
-   <span class="data">00/00/0000</span>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra,  sapien at interdum porta, leo purus varius massa, in imperdiet sed.</p>
-   <iframe width="940" height="529" src="http://www.youtube.com/embed/PZENwhml0Xc" frameborder="0" allowfullscreen></iframe>
+   <span class="data"><?php echo $asset->getHeadLine() ?></span>
+   <p>
+     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+   </p>
+   <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php 
+      if (count($related_video) > 0):
+        $offset = "0m0s";
+        if($related_video[0]->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+          $offset = $p[0]."m".$p[1]."s";
+        }
+      ?>
+   <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
    
   </div>
   <!-- /row-->

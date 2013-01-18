@@ -20,11 +20,9 @@
     </div>
   </div>
   <!-- /row-->
-  <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico">TV Cocorico</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico/joguinhos">Bastidores</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Episódios completos</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
