@@ -20,7 +20,7 @@
   </div>
   <!-- /row-->
   <!-- menu-->
-  <?php include_partial_from_folder('sites/cocorico2', 'global/menu-em-familia') ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'natv', 'site'=>$site)) ?>
   <!-- /menu-->
   
   <!-- breadcrumb-->
