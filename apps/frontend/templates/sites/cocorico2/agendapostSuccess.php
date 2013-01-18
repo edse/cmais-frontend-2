@@ -39,14 +39,15 @@
     <div class="span8">
      
      <!-- paginacao -->
-      <div class="row-fluid">
+    <!-- <div class="row-fluid">
         <div class="paginacao">
           <a href="#" class="anterior" title="Evento Anterior"><span></span>Evento Anterior</a>
           <a href="#" class="proximo" title="Próximo Event">Próximo Evento<span></span></a>
         </div>
       </div>
-      <!-- /paginacao -->
-      <!-- titulo post --> 
+      <!-- /paginacao --> 
+      
+      <!-- titulo post -->  
       <div class="row-fluid titulo-post">
         <h2><?php echo $asset->getTitle() ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
@@ -60,13 +61,13 @@
       <!-- /asset -->
       <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       <!-- paginacao -->
-      <div class="row-fluid">
+      <!--<div class="row-fluid">
         <div class="paginacao">
           <a href="#" class="anterior" title="Evento Anterior"><span></span>Evento Anterior</a>
           <a href="#" class="proximo" title="Próximo Event">Próximo Evento<span></span></a>
         </div>
       </div>
-      <!-- paginacao -->
+      <!-- paginacao --> 
     </div>
     <!--/coluna esquerda -->
     <!--coluna direita -->
