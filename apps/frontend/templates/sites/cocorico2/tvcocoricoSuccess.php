@@ -393,7 +393,7 @@
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
-          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
           <p>
             <?php echo $displays['receitinhas'][0]->getDescription() ?>
             <i class="ico-mais"></i>
