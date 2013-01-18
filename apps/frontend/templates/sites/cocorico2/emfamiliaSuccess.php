@@ -87,7 +87,7 @@
          </div>
        </div>
        <?php
-       /*
+
         $displays = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa, Section s')
@@ -104,8 +104,7 @@
         if(count($displays) > 0){
           $displays['agenda'] = $displays[0]->retriveDisplays();
         }
-        * 
-        */
+
         ?>
       <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['agenda'])) ?>
       <!-- fale conosco cr-->
