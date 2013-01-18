@@ -40,13 +40,13 @@
       <div class="carrossel-familia">
        
         <h2><i class="ico-presente"></i>Encontre o presente ideal</h2>
-        <i class="ico-seta-titulo-grd"></i>
+        <i class="ico-seta-titulo-grd"></i> 
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner">
             <?php foreach($displays['destaque-principal'] as $k=>$d): ?> 
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-              <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
              </div>
              <?php endforeach; ?>  
            
@@ -55,7 +55,7 @@
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <a href="<?php echo $d->getHeadline() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
+        <a href="<?php echo $d->retriveUrl() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
       </div>
       <!-- /carrossel-->
    <?php endif; ?> 
