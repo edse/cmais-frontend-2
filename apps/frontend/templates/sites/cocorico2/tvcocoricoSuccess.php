@@ -368,6 +368,7 @@
       <!-- /bastidores -->
        <?php endif; ?>
       <?php endif; ?>
+      <?php endif; ?>
       
       <!-- convidado especial -->
       <a href="#" title="titulo" class="span6 destaque1">
