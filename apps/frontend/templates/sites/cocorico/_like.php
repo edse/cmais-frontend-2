@@ -1,0 +1,18 @@
+<!-- like -->
+<div class="redes">
+  <!--face-->
+  <div id="rede-face" class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www3.tvcultura.com.br/cocorico/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" fb-xfbml-state="rendered"><span style="height: 20px; width: 143px;"><iframe id="f320e3b0d8" name="f24a6fedc4" scrolling="no" style="border: none; overflow: hidden; height: 20px; width: 143px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=418273974898589&amp;locale=pt_BR&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df192ad7dd%26origin%3Dhttp%253A%252F%252F172.20.17.129%252Ff1ff93a678%26domain%3D172.20.17.129%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww3.tvcultura.com.br%2Fcocorico%2F&amp;node_type=link&amp;width=450&amp;font=arial&amp;layout=button_count&amp;colorscheme=light&amp;show_faces=false&amp;send=true&amp;extended_social_context=false"></iframe></span></div>
+  <!-- twitter -->
+  <div id="rede-twitter">
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1357735024.html#_=1358185249199&amp;count=none&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fcocorico%2Fproduto&amp;size=m&amp;text=Cocoric%C3%B3%20-%20Produto%20-%20cmais%2B%20O%20portal%20de%20conte%C3%BAdo%20da%20Cultura&amp;url=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fcocorico%2Fproduto" class="twitter-share-button twitter-count-none" style="width: 59px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+  </div>  
+  <!-- pinterst -->
+  <div id="rede-pinterest">
+    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fcocorico%2Fnaslojas-interna&amp;media=http%3A%2F%2F172.20.17.129%2Fportal%2Fimages%2FcapaPrograma%2Fcocorico%2Fmodelo-produto.jpg" class="PIN_1358185248984_pin_it_button PIN_1358185248984_pin_it_beside" data-pin-aha="button_pinit" data-pin-config="beside"><span class="PIN_1358185248984_hidden" id="PIN_1358185248984_pin_count_0"><i></i></span></a>
+  </div>
+  <!-- google+ -->
+  <div id="rede-google">
+    <div style="height: 20px; width: 60px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1358185249073" name="I0_1358185249073" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=pt-BR&amp;origin=http%3A%2F%2F172.20.17.129&amp;url=http%3A%2F%2F172.20.17.129%2Ffrontend_dev.php%2Fcocorico%2Fproduto&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.pt_BR.tqhs4u748ug.O%2Fm%3D__features__%2Fam%3DiQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTPuUNPD6ivWsPRMP6IQ_6x2WR2P4g#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Conload&amp;id=I0_1358185249073&amp;parent=http%3A%2F%2F172.20.17.129" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div>
+  </div>
+</div>
+<!--/like-->
