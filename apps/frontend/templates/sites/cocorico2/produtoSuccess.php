@@ -55,18 +55,18 @@
            <?php if(count($images)>0): ?>
       <!--deixar o espaço em branco no title-->
       <div id="produto-grid" title=" ">
-        <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $images[0]->retriveImageUrlByImageUsage("image-1-b") ?>" alt="produto"></a>
+        <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $images[0]->retriveImageUrlByImageUsage("preview") ?>" alt="produto"></a>
       </div>
       <!-- Button to trigger modal -->
           
       <ul class="span12">
       	
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("image-1-b") ?>" /></a></li>
+        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
      	
       </ul>
     </div>
@@ -75,24 +75,24 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
           <h3 id="myModalLabel"><?php echo $asset->getTitle() ?></h3>
-          <p><?php echo $asset->getHeadline() ?></p>
+          <p><?php echo $asset->AssetContent->getHeadline() ?></p>
         </div>
         <div class="modal-body">
           <img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira2.jpg" alt="teste" />
         </div>
         <div class="modal-footer">
           <ul>
-          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
+            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("preview") ?>" /></a></li>
           </ul>
         </div>
       </div>
-      
+       
     <div class="span6">
     <div class="redes">
       <!--face-->
