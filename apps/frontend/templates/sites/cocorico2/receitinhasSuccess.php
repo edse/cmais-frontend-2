@@ -1,10 +1,10 @@
 <?php 
 $assets = $pager->getResults();
-/*
+
 $favoritos[] = $assets[0];
 $favoritos[] = $assets[1];
 $favoritos[] = $assets[2];
-*/
+
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
