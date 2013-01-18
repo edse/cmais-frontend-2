@@ -312,9 +312,9 @@
       <?php if(isset($displays['bastidores'])):?>
         <?php if(count($displays['bastidores']) > 0): ?>
           
-        <?php $related = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related2 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related2 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
           
        <!-- bastidores -->
       <div class="bastidores fonte span3">
