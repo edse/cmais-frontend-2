@@ -72,8 +72,15 @@
     <div class="tit"><span class="mais"></span><a href="/cocorico/joguinhos">Joguinhos</a><span></span></div>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
+        <?php if($d->getSlug() != $asset->getSlug()):?>
         <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+        <li class="span2">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" />
+            <?php echo $d->getTitle() ?>
+          </a>
+        </li>
+       <?php endif;?>
       <?php endforeach; ?>
     </ul>
   </div>
