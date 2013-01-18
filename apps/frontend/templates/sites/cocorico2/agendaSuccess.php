@@ -51,7 +51,7 @@ if(isset($pager)){
         <li class="item-lista">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <h3><?php echo $d->getTitle() ?></h3>
-            <span><?php echo $d->AssetContent->getHeadline() ?></span>
+            <span><?php echo $d->AssetContent->getHeadlineShort() ?></span>
           </a>
         </li>
         <!-- pontilhado -->
