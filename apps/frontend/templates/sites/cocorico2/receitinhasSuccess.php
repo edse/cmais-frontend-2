@@ -1,5 +1,5 @@
 <?php 
-$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+$assets = $pager->getResults();
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
@@ -77,7 +77,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
     <?php endforeach; ?>
     </ul>
   </div>
