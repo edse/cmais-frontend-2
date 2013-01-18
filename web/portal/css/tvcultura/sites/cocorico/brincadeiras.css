@@ -23,7 +23,7 @@
 .voltar:hover { color:#f2722f; }    
 .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.png) repeat-x center; }
 .relacionados .destaques-small { border:2px solid #f2722f; }
-
+.relacionados .destaques-small a { max-height:104px; }
 .curtir { background-position: -108px 0; }
 .curtir.disabled { background-position: -108px -40px; }
 
