@@ -336,5 +336,5 @@ input.search-query,
 .modal ::-webkit-scrollbar-corner { background: #d3e7e8;}
 .modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
 .modal ul li { margin-bottom:10px; }
-#myModal.alerta h3 { color:#ec342f; font-size:20px; }
+#myModal.alerta h3 { color:#ec342f; font-size:20px; text-transform:uppercase; }
 #myModal.alerta p { color:#6b757d; font-weight:bold; }

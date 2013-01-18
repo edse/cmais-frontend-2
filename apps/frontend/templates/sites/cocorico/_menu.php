@@ -29,6 +29,8 @@
     <h3 id="myModalLabel">Atenção!</h3>
     <p>A partir de agora, você está saindo da área exclusiva para crianças do site do Cocoricó e entrando numa parte direcionada para adultos. 
     Então, preferimos que você fique brincando por aqui ou chame o papai ou a mamãe para te acompanhar, combinado?</p>
+    <a class="crianca"><ico class="ico-familia"></ico>Sou criança, <span>quero continuar brincando</span></a>
+    <a class="adulto"><ico class="ico-familia"></ico>Sou adulto, <span>quero acessar Em Família!</span></a>
   </div>
 </div>
 <!-- /Modal -->
