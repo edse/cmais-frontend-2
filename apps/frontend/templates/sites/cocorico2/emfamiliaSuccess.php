@@ -87,7 +87,7 @@
          </div>
        </div>
        <?php
-        /*
+        
         $blocks = Doctrine_Query::create()
           ->select('b.*')
           ->from('Block b, Section s')
@@ -96,13 +96,14 @@
           ->andWhere('b.slug = ?', 'acontece') 
           ->andWhere('s.site_id = ?', $site->id)
           ->execute();
+        
         echo count($blocks)."<br>";
-        echo count($blocks[0])."<br>";
-        if(count($blocks) > 0){
-          $displays['acontece'] = $blocks[0]->retriveDisplays();
-        }
-        */
-        // include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['acontece'])) ?>
+        //echo count($blocks[0])."<br>";
+        //if(count($blocks) > 0){
+          //$displays['acontece'] = $blocks[0]->retriveDisplays();
+        //}
+        
+        // include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['acontece']))
         ?>
                 <!-- destaque -->
       <!-- fale conosco cr-->
