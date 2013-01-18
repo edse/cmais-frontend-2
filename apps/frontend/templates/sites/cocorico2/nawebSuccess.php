@@ -63,7 +63,7 @@
       
       <div class="btn-inscreva-se ">
         <span></span>
-        <a href="http://www.youtube.com/tvcocorico" class="btn-destaque" title="Inscreva-se em nosso canal!">Inscreva-se em nosso canal!</a>
+        <a href="http://www.youtube.com/tvcocorico" class="btn-destaque" title="Inscreva-se em nosso canal!" target="_blank">Inscreva-se em nosso canal!</a>
         <span class="last"></span>
       </div>
     </div>  
@@ -92,7 +92,7 @@
 
     <!-- facebook e twitter -->
     <div class="twitter span4">
-      <a href="https://twitter.com/tvcultura" title="Cocórico no Twitter">
+      <a href="https://twitter.com/tvcultura" title="Cocórico no Twitter" target="_blank">
         <img src="/portal/images/capaPrograma/cocorico/naweb-btn-twitter.png"/>
       </a>
       <br>
