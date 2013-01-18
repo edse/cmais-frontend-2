@@ -1,25 +1,14 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
     $('.destaques-small li:nth-child(12)').css('margin-right', '0');
   });
 </script>
-<!-- analytics --> 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22770265-1']);
-  _gaq.push(['_setDomainName', 'cmais.com.br']);
-  _gaq.push(['_setAllowHash', 'false']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- /analytics -->
+
+
 <!-- container-->
 <div class="container tudo">
  <!-- row-->
@@ -37,18 +26,18 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/papel-de-parede">papel de parede</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2>Nome do papel de parede</h2>
+    <h2><?php echo $asset->getTitle() ?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -63,9 +52,21 @@
   <!-- titulo da pagina -->
   
   <!--row-->
-  <div class="row-fluid conteudo" id="videos">
+  <div class="row-fluid conteudo box-papel-parede" id="videos">
     <p class="span12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis dolor eget orci laoreet porta. In et gravida purus. Aliquam erat volutpat. Vivamus quis elit odio, in luctus diam. Donec eu purus vitae dolor egestas rhoncus sed id lorem. Vivamus id quam arcu. Phasellus ac dolor non odio metus.</p>
-    <a href="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" target="_blank" title="papel de parede"><img class="border-radius10" src="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" alt="papel de parede" /></a>
+    <a href="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" target="_blank" title="papel de parede">
+      <img class="border-radius10" src="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" alt="papel de parede"/>
+    </a>
+    <ul>
+      <li><a href="#" title=""><i class="icon-monitor"></i>800 x 600</a></li>
+      <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
+      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 768</a></li>
+      <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 1024</a></li>
+      <li class="celular"><a href="#" title=""><i class="icon-celular"></i>320 x 480</a></li>
+    </ul>
+    
+    
+    
     
   </div>
   <!--/row-->
@@ -86,7 +87,7 @@
   <!-- /row-->
  
   
-   <!-- rodapé-->
+  <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
