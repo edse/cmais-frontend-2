@@ -75,7 +75,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
           <h3 id="myModalLabel"><?php echo $asset->getTitle() ?></h3>
-          <p><?php echo $asset->getHeadline() ?></p>
+          <p><?php echo $asset->AssetContent->getHeadline() ?></p>
         </div>
         <div class="modal-body">
           <img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira2.jpg" alt="teste" />
