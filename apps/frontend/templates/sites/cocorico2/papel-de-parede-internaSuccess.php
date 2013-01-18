@@ -106,7 +106,7 @@
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
-        <?php if($assets->getSlug() != $asset->getSlug()):?>
+        <?php if($d->getSlug() != $asset->getSlug()):?>
           <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
           <li class="span2">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
