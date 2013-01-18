@@ -19,6 +19,11 @@
           <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades"></a><a href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades">Atividades</a><span></span></li>
           <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a><a href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
           <!--li class="diario"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a><a href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li-->
-          <li class="familia"><a href="<?php echo $site->retriveUrl() ?>/emfamilia" title="Em família">Em família</a></li>
+          <li class="familia"><a href="#myModal" data-toggle="modal" title="Em família">Em família</a></li>
         </ul>
       </div>
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <a title="Em família" href="/cocorico2/emfamilia">Em família</a>
+</div>
+<!-- /Modal -->
