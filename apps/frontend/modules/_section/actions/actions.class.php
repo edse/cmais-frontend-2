@@ -1062,7 +1062,7 @@ class _sectionActions extends sfActions
       if($this->section->Parent->getSlug() == "personagens"){
         $sectionSlug = "personagem";
       }
-      else if($this->section->getSlug() == "receitinhas"){
+      else if($this->section->getSlug() == "receitinhas" || $this->section->getSlug() == "joguinhos"){
         $this->favoritos = 
         $this->favoritos = Doctrine_Query::create()
           ->select('a.*')
