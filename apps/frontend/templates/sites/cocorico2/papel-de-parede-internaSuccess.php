@@ -51,9 +51,10 @@
   <!--row-->
   <div class="row-fluid conteudo box-papel-parede" id="videos">
     <p class="span12"><?php echo $asset->getDescription(); ?></p>
-    <a href="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" target="_blank" title="papel de parede">
-      <img class="border-radius10" src="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" alt="papel de parede"/>
-    </a>
+    <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+     <?php if(count($preview) > 0): ?>
+       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+     <?php endif; ?>
     <ul>
       <li><a href="#" title=""><i class="icon-monitor"></i>800 x 600</a></li>
       <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
