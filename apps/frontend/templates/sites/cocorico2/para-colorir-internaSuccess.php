@@ -1,6 +1,6 @@
 <?php 
-$preview = $d->retriveRelatedAssetsByRelationType('Preview'); 
-$download = $d->retriveRelatedAssetsByRelationType('Download');
+$preview = $asset->retriveRelatedAssetsByRelationType('Preview'); 
+$download = $asset->retriveRelatedAssetsByRelationType('Download');
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
