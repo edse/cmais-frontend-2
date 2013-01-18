@@ -56,23 +56,13 @@ $(document).ready(function() {
     $('.modal li:nth-child(13)').css('margin-left', '0');
     
     /* lista produtos*/
-    $('.lista-produtos li:nth-child(3)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(5)').css('margin-left', '0');
+    $('.lista-produtos li:nth-child(4)').css('margin-left', '0');
     $('.lista-produtos li:nth-child(7)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(9)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(11)').css('margin-left', '0');
+    $('.lista-produtos li:nth-child(10)').css('margin-left', '0');
     $('.lista-produtos li:nth-child(13)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(15)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(17)').css('margin-left', '0');
+    $('.lista-produtos li:nth-child(16)').css('margin-left', '0');
     $('.lista-produtos li:nth-child(19)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(21)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(23)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(25)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(27)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(29)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(31)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(33)').css('margin-left', '0');
-    $('.lista-produtos li:nth-child(35)').css('margin-left', '0');
+    $('.lista-produtos li:nth-child(22)').css('margin-left', '0');
     
     /* destaque especial */
     $('.destaque-especial li:nth-child(5)').css('margin-left', '0');

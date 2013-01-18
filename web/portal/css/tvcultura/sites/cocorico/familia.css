@@ -109,7 +109,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .lista-produtos a { color:#6a747d; background:#e9f3f4; text-align: center;  }
 .lista-produtos a:hover { text-decoration:none; }
 .lista-produtos li { margin-bottom:30px; }
-.lista-produtos li a { max-height:198px; overflow:hidden; }
+
 /* nas lojas interna */
 .voltar:hover,
 .voltar {    background: url("/portal/images/capaPrograma/cocorico/voltar-familia.png") no-repeat scroll 0 0 transparent;    color: #6b757d; }
