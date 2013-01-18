@@ -46,7 +46,7 @@
         </div>
       </div>
       <!-- /paginacao -->
-      <!-- titulo post -->
+      <!-- titulo post --> 
       <div class="row-fluid titulo-post">
         <h2><?php echo $asset->getTitle() ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
