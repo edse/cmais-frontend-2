@@ -1,4 +1,11 @@
-
+<?php
+if(isset($pager)){
+  if($pager->count() == 1){
+    header("Location: ".$pager->getCurrent()->retriveUrl());
+    die();
+  }  
+} 
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 <!-- container-->
@@ -31,14 +38,11 @@
      <li class="active"></li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">agenda</h2>
+  <h2 class="tit-pagina">Agenda</h2>
   
-  
-  
-  
-  <?php if(count($pager) > 0): ?>
   <!--row lista-->
   <div id="agenda" class="row-fluid conteudo ">
+  <?php if(count($pager) > 0): ?>
     <div class="span8">
       <!-- lista -->
       <ul class="lista">
@@ -50,33 +54,47 @@
             <span><?php echo $d->AssetContent->getHeadline() ?></span>
           </a>
         </li>
+        <!-- pontilhado -->
+        <li><hr></li>
+        <!-- /pontilhado -->
         <?php endforeach; ?>
-          <!-- pontilhado -->
-          <li><hr></li>
-          <!-- /pontilhado -->
         <!-- /item -->
       </ul> 
       <!-- lista -->
-      <?php endif; ?>
-      
-      
-      
-      
-      
-      <!-- paginacao -->
+        
+      <?php if($pager->haveToPaginate()): ?>
+      <!-- PAGINACAO -->
       <div class="pagination pagination-centered">
         <ul>
-          <li class="anterior"><a href="#" title="Anterior"></a></li>
-          <li class="active"><a href="#" title="1">1</a></li>
-          <li><a href="#" title="1">2</a></li>
-          <li><a href="#" title="1">3</a></li>
-          <li><a href="#" title="1">...</a></li>
-          <li><a href="#" title="1">18</a></li>
-          <li class="proximo" title="Próximo"><a href="#"></a></li>
+          <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+          <?php foreach ($pager->getLinks() as $page): ?>
+            <?php if ($page == $pager->getPage()): ?>
+          <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+            <?php else: ?>
+          <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+            <?php endif; ?>
+          <?php endforeach; ?>
+          <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
         </ul>
       </div>
-      <!-- paginacao -->
+      <form id="page_form" action="" method="post">
+        <input type="hidden" name="return_url" value="<?php echo $url?>" />
+        <input type="hidden" name="page" id="page" value="" />
+      </form>
+      <script>
+        function goToPage(i){
+          $("#page").val(i);
+          $("#page_form").submit();
+        }
+      </script>
+      <!--// PAGINACAO -->
+      <?php endif; ?>
+
     </div>
+  <?php endif; ?>
+
+  <?php if(isset($displays['acontece'])): ?>
+    <?php if(count($displays['acontece']) > 0): ?>
     <div class="span4 acontece">
       <!-- topo acontece -->
       <div class="topo">
@@ -99,6 +117,9 @@
        </div>
        <!-- banner -->
     </div>
+    <?php endif; ?>
+  <?php endif; ?>
+  
   </div>
   
   <!--/row lista-->
