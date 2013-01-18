@@ -12,10 +12,10 @@
               <li><a href="/cocorico2/agenda" title="Agenda">agenda</a></li>
             </ul>
           </li>
-          <li class="joguinhos"><a class="icon" href="/cocorico2/joguinhos" title="Joguinhos"></a></li>
-          <li class="brincadeiras"><a class="icon"  href="/cocorico2/brincadeiras" title="Brincadeiras"></a></li>
-          <li class="tvcoco"><a class="icon"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a></li>
-          <!--li class="diario"><a class="icon"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a></li-->
+          <li class="joguinhos"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Joguinhos" href="/cocorico2/joguinhos" title="Joguinhos"></a></li>
+          <li class="brincadeiras"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Atividades"  href="/cocorico2/brincadeiras" title="Atividades"></a></li>
+          <li class="tvcoco"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="TV Cocoricó"  href="/cocorico2/tvcocorico2" title="TV Cocoricó"></a></li>
+          <!--li class="diario"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Diário do Júlio"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a></li-->
           <li class="personagens"><a href="/cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
         </ul>
       </div>
