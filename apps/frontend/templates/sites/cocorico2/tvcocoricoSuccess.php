@@ -155,19 +155,6 @@
     <!-- col esquerda --> 
     <div class="span8 col-esq">
       
-      <!-- destaque-home -->
-      <div class="destaque-home-tv span9" style="display: none;">
-        <h2>Título</h2>
-        
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/TpNwYOLnwEA" frameborder="0" allowfullscreen></iframe>
-        
-        <div class="destaque span12">
-          <span></span>
-          <a href="#" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
-          <span class="last"></span>
-        </div>
-      </div>
-      <!-- /destaque-home -->
       <!-- form interatividade -->
       <div class="destaque-home-tv span9">
     	
@@ -311,11 +298,7 @@
       
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
-          
-        <?php $related0 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <?php $related1 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <?php $related2 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-          
+                    
        <!-- bastidores -->
       <div class="bastidores fonte span3">
        
@@ -333,7 +316,7 @@
         <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
+                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
           </div>
@@ -345,7 +328,7 @@
         <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
+                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
           </div>
@@ -357,7 +340,7 @@
         <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
+                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
             </div>
             <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
           </div>
@@ -371,11 +354,12 @@
             
        <!-- convidado especial -->
        <?php if(isset($displays['convidado-especial'])):?>
-        <?php if(count($displays['convidado-especial']) > 0): ?>  
+        <?php if(count($displays['convidado-especial']) > 0): ?>
+          <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
           <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
-          <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+          <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
           <p>
             <?php echo $displays['convidado-especial'][0]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -389,11 +373,11 @@
       <!-- receitinhas -->
       <?php if(isset($displays['receitinhas'])):?>
         <?php if(count($displays['receitinhas']) > 0): ?>  
-          <?php $related_receitinhas = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2" style="margin-left: 15px;"> 
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
-          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+          <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
           <p>
             <?php echo $displays['receitinhas'][0]->getDescription() ?>
             <i class="ico-mais"></i>

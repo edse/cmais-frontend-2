@@ -111,7 +111,7 @@
           <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
           <li class="span2">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>">
+              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
               <?php echo $d->getTitle() ?> 
             </a>
           </li>
