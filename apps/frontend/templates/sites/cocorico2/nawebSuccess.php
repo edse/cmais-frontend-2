@@ -78,8 +78,7 @@
           <div class="bac-blue">
             <h3>
               <i class="ico-naweb ico-instagram"></i>
-              instagram<br>
-              <span>@tvcocorico</span>
+              instagram<span>@tvcocorico</span>
               <i class="ico-seta-titulo"></i>
            </h3>
          </div>
