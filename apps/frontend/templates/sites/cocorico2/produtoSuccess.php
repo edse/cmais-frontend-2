@@ -1,6 +1,8 @@
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
-
+<style type="text/css">
+  #tooltip {position: absolute;  background:url(/portal/images/capaPrograma/cocorico/cursor.png) no-repeat;  width:130px;  height:50px;  font-size:0px!important;}
+</style>
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
