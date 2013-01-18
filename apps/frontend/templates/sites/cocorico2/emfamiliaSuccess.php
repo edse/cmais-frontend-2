@@ -97,15 +97,18 @@
           ->andWhere('s.site_id = ?', $site->id)
           ->execute();
         
-        echo count($blocks)."<br>";
-        /*
-        if(count($blocks) > 0){
-          $displays['acontece'] = $blocks[0]->retriveDisplays();
-        }
+        //echo count($blocks)."<br>";
         
-        include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['acontece']))
-         * 
-         */
+        if(count($blocks) > 0){
+          $displays_acontece['acontece'] = $blocks[0]->retriveDisplays();
+        }
+       
+        if(isset($displays_acontece['acontece'])): 
+          if(count($displays_acontece['acontece']) > 0): 
+            include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays_acontece['acontece']));
+          endif;
+        endif;
+         
         ?>
                 <!-- destaque -->
       <!-- fale conosco cr-->

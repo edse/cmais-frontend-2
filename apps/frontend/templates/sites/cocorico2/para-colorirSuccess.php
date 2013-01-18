@@ -28,9 +28,9 @@
   <?php if(count($favoritos) > 0): ?>
   <div class="row-fluid conteudo destaques">
     <?php if(isset($favoritos[0])): ?>
-      <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related = $favoritos[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[0]->getDescription() ?>" data-original-title="<?php echo $favoritos[0]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
@@ -39,9 +39,9 @@
     <?php endif; ?>
     
     <?php if(isset($favoritos[1])): ?>
-      <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related = $favoritos[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[1]->getDescription() ?>" data-original-title="<?php echo $favoritos[1]->getTitle() ?>"><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
@@ -50,9 +50,9 @@
     <?php endif; ?>
     
     <?php if(isset($favoritos[2])): ?>
-      <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related = $favoritos[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
       <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[2]->getDescription() ?>" data-original-title="<?php echo $favoritos[2]->getTitle() ?>"><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
@@ -68,8 +68,8 @@
   <div class="row-fluid conteudo">
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+      <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
     <?php endforeach; ?>
     </ul>
   </div>

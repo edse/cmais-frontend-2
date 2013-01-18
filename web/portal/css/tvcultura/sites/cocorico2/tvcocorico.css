@@ -130,7 +130,7 @@ a.destaque2:hover{text-decoration: none}
 .destaques:hover span,
 .destaques span {    background:url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat scroll -36px 0 transparent; width:36px; height:36px; bottom: 5px;    right: 0; left:auto; position:absolute;}
 .destaques.joguinho span { background-position:0 0; } 
-.autografo { background:#eaefb2;  }
+.autografo { background:#eaefb2; margin-bottom:20px; }
 .autografo h2 { margin:10px; font-size:20px; line-height:22px; color:#747a39; padding-left:25px; text-transform:uppercase; background:url(/portal/images/capaPrograma/cocorico/ico-autografo.png) no-repeat; }
 .divisao { background: url("/portal/images/capaPrograma/cocorico/tvcoco-pattern.png") repeat-x scroll 0 0 transparent;    display: block;    height: 14px;    margin: 0;}
 .autografo p { margin:5px 10px; }
@@ -153,8 +153,9 @@ a.destaque2:hover{text-decoration: none}
 .form-horizontal .capa-btn span { background: url("/portal/images/capaPrograma/cocorico/borda-menu.png") no-repeat -50px 0;  height: 40px;    width: 9px; display: block; float: left; }
 .form-horizontal .capa-btn .last { background-position:-40px 0;}
 .form-horizontal .btn { background: url("/portal/images/capaPrograma/cocorico/bg-amarelo.jpg") repeat-x; color:#747a3a; padding:0; text-transform:uppercase; min-height:40px; font-weight:bold; float:left;  width: 93%; font-size: 16px;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
-.destaques.joguinho .bold { color:#fff; }
-
+.col-esq .destaques.span6.joguinho,
+.destaques.joguinho .bold { color:#fff; background:#1893cf; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display: block; }
+.col-esq .destaques.span6.joguinho img { border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; display: block; }
 /* carrossel personagem*/
 .lista-personagens .carousel-inner .item li { width:97px; float:left; margin-left:17px; }
 .menu .lista-personagens .carousel-control { border: none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
@@ -287,3 +288,5 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .col-esq .tit-pagina.span12 { *width: 580px; *overflow:hidden; }
 .form-horizontal .btn { *width:255px; *margin:0; }
 /* /ie */
+
+.span4 iframe {margin-top:0;  }
