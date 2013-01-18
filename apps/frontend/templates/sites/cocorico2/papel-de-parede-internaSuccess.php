@@ -72,7 +72,7 @@
             <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1024 x 768</a>
           </li>
         <?php elseif($k==3):?>
-          <li>
+          <li class="last">
             <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x1024</a>
           </li>  
         <?php endif; ?>

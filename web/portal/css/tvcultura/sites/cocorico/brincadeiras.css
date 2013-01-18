@@ -209,6 +209,9 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .box-papel-parede ul { padding-left:4%; background:#f2722f; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; padding-top: 20px; margin-top:-20px; height:40px; }
 .box-papel-parede ul li { float: left; margin:10px 7% 0 0; }
 .box-papel-parede ul li a { color:#f2722f; border:2px solid #f8b145; background:#fdf035; font-weight:bold; padding:0 10px;}
+.box-papel-parede ul li .icon-celular,
 .box-papel-parede ul li a .icon-monitor { width:16px; height:14px; background:url(/portal/images/capaPrograma/cocorico/ico-papel-parede.png) no-repeat; margin-right:10px;  }
-.box-papel-parede ul li.celular { margin-right:0; }
+
+.box-papel-parede ul li.last { margin-right:0; }
 .box-papel-parede ul li a:hover { text-decoration:none; }
+.box-papel-parede ul li .icon-celular { background-position:0 -14px; }
