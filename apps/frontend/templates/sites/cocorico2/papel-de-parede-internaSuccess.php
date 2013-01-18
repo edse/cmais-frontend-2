@@ -38,22 +38,19 @@
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2><?php echo $asset->getTitle() ?></h2>
-    <span></span>
-    <ul class="likes">
-      <li class="ativo"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+    <!-- RANKING -->
+    <?php $section = $asset->getSections(); ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
+    <!--/RANKING -->
   </div>
-  <a href="#" class="curtir" title="Curtir">curtir</a>
-  <a href="#" class="curtir disabled" title="Curtir">curtir</a>
+  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId() ?>');" class="curtir" title="Curtir">curtir</a>
+  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
   
   <!--row-->
   <div class="row-fluid conteudo box-papel-parede" id="videos">
-    <p class="span12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis dolor eget orci laoreet porta. In et gravida purus. Aliquam erat volutpat. Vivamus quis elit odio, in luctus diam. Donec eu purus vitae dolor egestas rhoncus sed id lorem. Vivamus id quam arcu. Phasellus ac dolor non odio metus.</p>
+    <p class="span12"><?php echo $asset->getDescription(); ?></p>
     <a href="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" target="_blank" title="papel de parede">
       <img class="border-radius10" src="/portal/images/capaPrograma/cocorico/papel-de-parede.jpg" alt="papel de parede"/>
     </a>
@@ -93,3 +90,30 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+<script>
+function vote(id){
+  $.ajax({
+    type: "GET",
+    dataType: "text",
+    data: "asset_id="+id,
+    url: "/ajax/ranking",
+    beforeSend: function(){
+      $('#btn_1').hide();
+      $('#btn_2').show();
+      $('#v_load').show();
+    },
+    success: function(data){
+      if(data == 1){
+        alert('Voto realizado com sucesso!');
+        $('#btn_1').hide();
+        $('#btn_2').show();
+      }else{
+        alert('Erro!');
+        $('#btn_1').show();
+        $('#btn_2').hide();
+      }
+      $('#v_load').hide();
+    }
+  });
+}
+</script>
