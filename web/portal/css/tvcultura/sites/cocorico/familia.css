@@ -41,7 +41,7 @@
 .logos .cultura { margin-right:9px; }
 .logos a span { width:26px; height:15px; background:url(/portal/images/capaPrograma/cocorico/detalhe-logo.png) no-repeat; display: block; position:absolute; bottom:-15px; left:57px;}
 .natv ul { margin-top:-15px; margin-left:20px; }
-.natv ul li { background:#e0eeef; overflow:hidden; margin:0 10px 10px 0; max-height:180px; overflow:hidden;  }
+.natv ul li { background:#e0eeef; overflow:hidden; margin:0 10px 10px 0; max-height:180px; overflow:hidden; float:left;  }
 .natv ul li a { margin-right:10px;   }
 .natv ul li bold,
 .natv ul li a,
