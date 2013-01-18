@@ -1339,6 +1339,9 @@ class _sectionActions extends sfActions
         $this->page = $request->getParameter('page');
       }
       else{
+        if(($this->section->Site->getSlug() == "cocorico2")||($this->section->Site->getSlug() == "cocorico")){
+          $pagelimit = 12;
+        }
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
