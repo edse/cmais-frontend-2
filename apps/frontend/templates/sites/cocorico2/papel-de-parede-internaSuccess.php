@@ -56,9 +56,15 @@
        <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
      <?php endif; ?>
     <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-    <?php echo count($download)."teste";?>
     <ul>
-      <li><a href="#" title=""><i class="icon-monitor"></i>800 x 600</a></li>
+      <?php foreach($download as $k=>$d): ?>
+        <?php if($k==0):?>
+          <li class="celular">
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" title=""><i class="icon-celular"></i>320 x 480</a>
+          </li>
+        <?php endif; ?>
+      <?php endforeach; ?>
+
       <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
       <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 768</a></li>
       <li><a href="#" title=""><i class="icon-monitor"></i>1280 x 1024</a></li>
