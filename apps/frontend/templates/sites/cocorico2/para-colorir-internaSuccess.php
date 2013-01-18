@@ -110,7 +110,6 @@ function vote(id){
     },
     success: function(data){
       if(data == 1){
-        alert('Voto realizado com sucesso!');
         $('#btn_1').hide();
         $('#btn_2').show();
       }else{
