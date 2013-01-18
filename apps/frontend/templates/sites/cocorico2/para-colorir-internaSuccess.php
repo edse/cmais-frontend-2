@@ -1,5 +1,4 @@
 <?php 
-$preview = $asset->retriveRelatedAssetsByRelationType('Preview'); 
 $download = $asset->retriveRelatedAssetsByRelationType('Download');
 ?>
 
@@ -76,10 +75,10 @@ $download = $asset->retriveRelatedAssetsByRelationType('Download');
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByRelationType('Original');  ?>
+        <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getFile(); ?>.jpg">
+          <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>">
           <?php echo $d->getTitle() ?> 
         </a>
       </li>
