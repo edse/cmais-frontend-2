@@ -71,6 +71,7 @@ ul li { list-style:none; }
 .lista-produtos a {  border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; }
 
 /*border-radius 5px*/
+#myModal.alerta a span,
 .box-papel-parede ul li a,
 .convidados a,
 .conteudo .site,
@@ -338,3 +339,7 @@ input.search-query,
 .modal ul li { margin-bottom:10px; }
 #myModal.alerta h3 { color:#ec342f; font-size:20px; text-transform:uppercase; }
 #myModal.alerta p { color:#6b757d; font-weight:bold; }
+#myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; }
+#myModal.alerta a { color:#f2722f; }
+#myModal.alerta a span { background:#fdf035; color:#f2722f;}
+
