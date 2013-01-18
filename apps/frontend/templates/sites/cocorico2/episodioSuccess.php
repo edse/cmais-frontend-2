@@ -16,7 +16,7 @@
   <!-- /row-->
 <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/episodios">para colorir</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/episodios">episódios</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
