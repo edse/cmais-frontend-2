@@ -2,7 +2,7 @@
 
 <!-- container-->
 <div class="container tudo">
- <!-- row-->
+  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
       <!--menu principal-->
@@ -14,113 +14,103 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/para-colorir">para colorir</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle()?></li>
+     <li><a href="/cocorico">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Para colorir</li>
   </ul>
   <!-- /breadcrumb-->
   
-  <!--btn voltar-->
-  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
-  <!-- /btn voltar-->
-  <div class="tit-pagina">
-    <h2><?php echo $asset->getTitle() ?></h2>
-    <span></span>
-    <!-- RANKING -->
-    <?php $section = $asset->getSections(); ?>
-    <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
-    <!--/RANKING -->
-  </div>
-  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId() ?>');" class="curtir" title="Curtir">curtir</a>
-  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
-  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
-  <!-- titulo da pagina -->
-    
-  <!--row-->
-  <div class="row-fluid conteudo">
-    <p class="span12"><?php echo $asset->getDescription(); ?></p>
-    <a  href="javascript:printDiv('div1')" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" title="Imprimir">
-      <img class="border-radius10" width="100%" src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" alt="" />
-    </a>
-    <a href="javascript:printDiv('div1')" class="print btn-imprimir border-radius10" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" alt="imprimir">imprimir</a>
-    <div id="div1" style="display: none;page-break-after:always;">
-      <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $asset->AssetImage->getFile(); ?>.jpg" style="width:95%">
-    </div>
-    <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
-      <!--/IFRAME PARA IMPRESSAO EM IE -->
-  </div>
-  <!--/row-->
+  <h2 class="tit-pagina">Para colorir</h2>
   
   <!--row-->
-  <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl();?>/para-colorir">para colorir</a><span></span></div>
+  <?php if(count($favoritos) > 0): ?>
+  <div class="row-fluid conteudo destaques">
+    <?php if(isset($favoritos[0])): ?>
+      <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[0]->getDescription() ?>" data-original-title="<?php echo $favoritos[0]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
     
-      <?php
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa, Section s')
-        ->where('a.id = sa.asset_id')
-        ->andWhere('s.id = sa.section_id')
-        ->andWhere('s.slug = "para-colorir"')
-        ->andWhere('a.site_id = ?', (int)$site->id)
-        //->andWhere('a.asset_type_id = 1')
-        //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-        ->groupBy('sa.asset_id')
-        //->orderBy('a.id desc')
-        ->limit(6)
-        ->execute();
-    ?>
-    <?php if(count($assets) > 2): ?>
-    <ul class="destaques-small">
-      <?php foreach($assets as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByRelationType('Original');  ?>
-      <li class="span2">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getFile(); ?>.jpg">
-          <?php echo $d->getTitle() ?> 
-        </a>
-      </li>
-      <?php endforeach; ?>
-    </ul>
+    <?php if(isset($favoritos[1])): ?>
+      <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[1]->getDescription() ?>" data-original-title="<?php echo $favoritos[1]->getTitle() ?>"><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
+    
+    <?php if(isset($favoritos[2])): ?>
+      <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $favoritos[2]->getDescription() ?>" data-original-title="<?php echo $favoritos[2]->getTitle() ?>"><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
+      <!--/RANKING -->
+    </div>
     <?php endif; ?>
   </div>
+  <!-- /row--> 
+  <?php endif; ?>
+
+  <!--row-->
+  <?php if(count($pager) > 0): ?>
+  <div class="row-fluid conteudo">
+    <ul class="destaques-small">
+    <?php foreach($pager->getResults() as $d): ?>
+      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+    <?php endforeach; ?>
+    </ul>
+  </div>
   <!-- /row-->
+
+  <?php if($pager->haveToPaginate()): ?>
+  <!-- PAGINACAO -->
+  <div class="pagination pagination-centered">
+    <ul>
+      <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+      <?php foreach ($pager->getLinks() as $page): ?>
+        <?php if ($page == $pager->getPage()): ?>
+      <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+        <?php else: ?>
+      <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <?php endif; ?>
+      <?php endforeach; ?>
+      <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+    </ul>
+  </div>
+  <form id="page_form" action="" method="post">
+    <input type="hidden" name="return_url" value="<?php echo $url?>" />
+    <input type="hidden" name="page" id="page" value="" />
+  </form>
+  <script>
+    function goToPage(i){
+      $("#page").val(i);
+      $("#page_form").submit();
+    }
+  </script>
+  <!--// PAGINACAO -->
+  <?php endif; ?>
   
+<?php else: ?>
+  <p>Nenhuma atividade encontrada.</p> 
+<?php endif; ?>
+
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
-
+  
 </div>
 <!-- /container-->
-
-<script>
-function vote(id){
-  $.ajax({
-    type: "GET",
-    dataType: "text",
-    data: "asset_id="+id,
-    url: "/ajax/ranking",
-    beforeSend: function(){
-      $('#btn_1').hide();
-      $('#btn_2').show();
-      $('#v_load').show();
-    },
-    success: function(data){
-      if(data == 1){
-        alert('Voto realizado com sucesso!');
-        $('#btn_1').hide();
-        $('#btn_2').show();
-      }else{
-        alert('Erro!');
-        $('#btn_1').show();
-        $('#btn_2').hide();
-      }
-      $('#v_load').hide();
-    }
-  });
-}
-</script>
