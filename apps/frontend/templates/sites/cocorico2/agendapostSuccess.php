@@ -22,7 +22,7 @@
   </div>
   <!-- /row-->
   <!-- row-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia') ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
@@ -30,7 +30,7 @@
      <li><a href="/cocorico">Em família</a> <span class="divider">&rsaquo;</span></li>
      <li>Agenda</li>
      <li class="active"></li>
-  </ul>
+  </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">agenda</h2>
   <!--row post-->
@@ -58,7 +58,7 @@
         <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
       </div>
       <!-- /asset -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/like') ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       <!-- paginacao -->
       <div class="row-fluid">
         <div class="paginacao">
