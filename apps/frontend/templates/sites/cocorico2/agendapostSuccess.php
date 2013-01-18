@@ -52,13 +52,13 @@
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
       <!-- /titulo post -->     
-      <?php include_partial_from_folder('sites/cocorico', 'global/like') ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       <!-- asset -->
       <div class="row-fuid asset">
         <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
       </div>
       <!-- /asset -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/like') ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       <!-- paginacao -->
       <div class="row-fluid">
         <div class="paginacao">
