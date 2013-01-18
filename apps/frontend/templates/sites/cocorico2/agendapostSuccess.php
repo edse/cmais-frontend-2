@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 
@@ -36,7 +39,8 @@
   <div id="agenda" class="row-fluid conteudo ">
     <!--coluna esquerda -->
     <div class="span8">
-      <!-- paginacao -->
+     
+     <!-- paginacao -->
       <div class="row-fluid">
         <div class="paginacao">
           <a href="#" class="anterior" title="Evento Anterior"><span></span>Evento Anterior</a>
