@@ -28,7 +28,7 @@ $assets = $pager->getResults();
   <!-- /breadcrumb-->
   
   <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="tit-pagina">Receitinhas</a>
-  <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
+  <div class="zaza"></div>
 
   <?php if(count($favoritos) > 0): ?>
   <div class="row-fluid conteudo destaques">
