@@ -325,9 +325,9 @@
       <?php if(isset($displays['bastidores'])): ?>
        <?php if(count($displays['bastidores']) > 0): ?>
          
-         <?php $related0 = $displays['bastidores'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-         <?php $related1 = $displays['bastidores'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-         <?php $related2 = $displays['bastidores'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+         <?php $related0 = $displays['bastidores'][0]->Asset->retriveImageUrlByImageUsage('original'); ?>
+         <?php $related1 = $displays['bastidores'][1]->Asset->retriveImageUrlByImageUsage('original'); ?>
+         <?php $related2 = $displays['bastidores'][2]->Asset->retriveImageUrlByImageUsage('original'); ?>
            
         <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->Asset->getTitle() ?>">
           <div class="item">
