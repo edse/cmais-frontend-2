@@ -110,10 +110,10 @@
         <div class="g-plusone" data-size="medium"></div>
       </div>
     </div>
-     <?php endif; ?>
+     <?php endif; ?> 
       <?php endif; ?>
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-    <a class="site" href="<?php echo $asset->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
+    <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
     </div>
     
   </div>
