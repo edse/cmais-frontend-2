@@ -87,25 +87,20 @@
          </div>
        </div>
        <?php
-        
-        $displays = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, SectionAsset sa, Section s')
-          ->where('a.id = sa.asset_id')
-          ->andWhere('s.slug = "agenda"')
-          ->andWhere('a.site_id = 1149')
-          ->andWhere('a.asset_type_id = 1')
-          ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-          ->groupBy('sa.asset_id')
-          ->orderBy('a.id desc')
-          ->limit(6)
+        $blocks = Doctrine_Query::create()
+          ->select('b.*')
+          ->from('Block b, Section s')
+          ->where('b.section_id = s.id')
+          ->andWhere('s.slug = ?', "agenda")
+          ->andWhere('b.slug = ?', 'acontece') 
+          ->andWhere('s.site_id = ?', $site->id)
           ->execute();
-        echo count($displays)."<br>";
-        echo count($displays[0])."<br>";
-        if(count($displays) > 0){
-          $displays['agenda'] = $displays[0]->retriveDisplays();
+        echo count($blocks)."<br>";
+        echo count($blocks[0])."<br>";
+        if(count($blocks) > 0){
+          $displays['acontece'] = $blocks[0]->retriveDisplays();
         }
-        
+        // include_partial_from_folder('sites/cocorico', 'global/display-1-destaque',array('displays'=>$displays['acontece'])) ?>
         ?>
         <!-- destaque -->
         
