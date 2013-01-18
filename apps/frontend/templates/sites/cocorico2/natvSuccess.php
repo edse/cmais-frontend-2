@@ -46,8 +46,8 @@
     <?php endif; ?>
     
     <div class="logos span4">
-      <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico2/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
-      <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico2/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
+      <a class="cultura" href="http://tvcultura.cmais.com.br/grade" title="TV Cultura"><img src="/portal/images/capaPrograma/cocorico/logo-cultura-grd.png" alt="TV Cultura" /><span></span></a>
+      <a href="http://tvratimbum.cmais.com.br/grade" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/cocorico/logo-rtb-grd.png" alt="TV Rá Tim Bum"/><span></span></a>
     </div>
   </div>
   <!--/row-->
@@ -69,7 +69,7 @@
         <div class="span8">
           <img class="span6" src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" />
           <bold><?php echo $d->getTitle() ?></bold>
-          <p><?php echo $d->getDescription() ?></p>
+          <p><?php echo $d->getHtml() ?></p>
         </div>
         <div class="hora span2">
         <a href="#" title=""><?php echo $horario[0] ?><br><?php echo $horario[1] ?></a>
@@ -96,12 +96,3 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=418273974898589";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
