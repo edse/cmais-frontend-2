@@ -214,8 +214,7 @@ input.search-query,
 .destaques-small { margin:0; }
 .destaques-small a { max-height:104px; color:#fff; display: block; text-align:center; overflow:hidden; font-weight:normal; text-decoration:none; }
 .destaques-small li a { display:block;color:#fff; } .destaques-small a:hover { text-decoration:none; }
-.destaques-small li { margin-bottom:10px; }
-.destaques-small li { overflow:hidden;  }
+.destaques-small li { margin-bottom:10px;  overflow:hidden; max-height:122px; }
 
 .voltar { margin-left:20px !important; margin:0 20px 10px 20px; display:block; font-size:14px; font-weight:bold; text-transform:uppercase; padding-left:25px;  height:30px; line-height: 30px; }
 .voltar:hover { text-decoration:none; }
