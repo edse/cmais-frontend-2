@@ -369,22 +369,22 @@
        <?php endif; ?>
       <?php endif; ?>
             
-       <!-- receitinhas -->
-      <?php if(isset($displays['convidado-especial'])):?>
+       <!-- convidado especial -->
+       <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>  
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque2" style="margin-left: 15px;"> 
-        <div class="destaque-2 conteudo-diverso">
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
+        <div class="destaque-1 conteudo-tv">
           <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
           <img src="<?php echo $displays['convidado-especial'][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
           <p>
             <?php echo $displays['convidado-especial'][0]->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
-        </div>
-      </a>  
-      <?php endif; ?>
+         </div>
+       </a>
+       <?php endif; ?>
      <?php endif; ?>
-      <!-- /receitinhas -->
+      <!-- /convidado especial -->
       
       <!-- receitinhas -->
       <?php if(isset($displays['receitinhas'])):?>
