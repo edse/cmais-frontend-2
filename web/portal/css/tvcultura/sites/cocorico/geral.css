@@ -12,6 +12,7 @@ ul li { list-style:none; }
 .menu .navbar .nav { width: 100%; }
 
 /* font-familt ubuntu */
+.box-papel-parede ul li a,
 .destaque2 .radio a,
 .form-search p,
 .frase p span,
@@ -69,6 +70,7 @@ ul li { list-style:none; }
 .lista-produtos a {  border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; }
 
 /*border-radius 5px*/
+.box-papel-parede ul li a,
 .convidados a,
 .conteudo .site,
 .zoom ul img,
@@ -115,22 +117,22 @@ input.search-query,
 .menu .navbar-inner { padding:0; }
 .menu .navbar .nav > li { overflow:hidden; margin-right:19px; margin-top:12px;}
 .menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;  }
-.menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px;}
+.menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;}
 
 .menu .navbar .nav > li.personagens {  margin:0 20px; background:#eaefb2 url(/portal/images/capaPrograma/cocorico/pontilhado-verde.jpg) repeat-x ; height:60px; width: 48px; }
 .menu .navbar .nav > li.personagens a { background:url(/portal/images/capaPrograma/cocorico/mais-amarelo.png) no-repeat; padding:0; margin:5px 0 0 4px; display:block;  width: 48px; height:50px;border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; border:none; }
 
-.menu .navbar .nav > li.joguinhos .icon { background:url(/portal/images/capaPrograma/cocorico/ico-joguinhos.png) no-repeat;} 
+.menu .navbar .nav > li.joguinhos .icon { background-position:0 0;} 
 
-.menu .navbar .nav > li.brincadeiras .icon { background:url(/portal/images/capaPrograma/cocorico/ico-brincadeiras.png) no-repeat;} 
+.menu .navbar .nav > li.brincadeiras .icon { background-position:0 -38px;} 
 .menu .navbar .nav > li.brincadeiras a { background:url(/portal/images/capaPrograma/cocorico/bg-laranja.jpg) repeat-x;}
 .menu .navbar .nav > li.brincadeiras span { background-position:-10px 0; }
 
-.menu .navbar .nav > li.tvcoco .icon { background:url(/portal/images/capaPrograma/cocorico/ico-coco.png) no-repeat;} 
+.menu .navbar .nav > li.tvcoco .icon {  background-position:0 -76px;} 
 .menu .navbar .nav > li.tvcoco a { background:url(/portal/images/capaPrograma/cocorico/bg-verde.jpg) repeat-x;}
 .menu .navbar .nav > li.tvcoco span { background-position:-20px 0; }
 
-.menu .navbar .nav > li.diario .icon { background:url(/portal/images/capaPrograma/cocorico/ico-diario.png) no-repeat;} 
+.menu .navbar .nav > li.diario .icon { background-position:0 -115px;} 
 .menu .navbar .nav > li.diario a {background:url(/portal/images/capaPrograma/cocorico/bg-roxo.jpg) repeat-x;}
 .menu .navbar .nav > li.diario span { background-position:-30px 0; }
 
@@ -311,3 +313,4 @@ input.search-query,
 .cr {margin-left: 0 !important; width:300px; margin-top:30px; height:40px; background:url(/portal/images/capaPrograma/cocorico/btn-faleconosco.png) no-repeat; float:left;}
 .cr a { margin-right:10px; color:#fff; text-transform:uppercase; text-align:right; font-weight:bold; height:40px; line-height:40px; display: block;  }
 .cr a:hover { text-decoration:none; }
+

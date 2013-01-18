@@ -76,5 +76,5 @@
 .votar span {  background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -50px 0; width:9px; height:40px; display:block; float:left;}
 .enquete form .votar .last { margin:0; float: left; background-position:-40px 0  }
 
-#votar-input {border: none;background: red;float: left;height: 38px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 93%;}
+#votar-input { padding:0; border: none;background: red;float: left;height: 38px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 93%;}
 
