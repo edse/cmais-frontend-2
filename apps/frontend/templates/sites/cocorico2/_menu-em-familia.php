@@ -2,7 +2,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav span12">
-          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a>
+          <li class="familia"><a title="Em família" href="#myModal" data-toggle="modal">Em família</a>
             <ul class="nav" id="menu-familia">
               <li><a class="active" href="/cocorico2/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
               <li><a href="/cocorico2/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
@@ -22,3 +22,9 @@
      
     </div>
  </div> 
+ <!-- Modal -->
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <a title="Em família" href="/cocorico2/emfamilia">Em família</a>
+       
+      </div>
+      <!-- /Modal -->
