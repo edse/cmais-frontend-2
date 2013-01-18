@@ -92,14 +92,17 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php $site->retriveUrl(); ?>/papel-de-parede">papel de parede</a><span></span></div>
-    <!--ul class="destaques-small">
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="#" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-    </ul-->
+    <?php
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, Section s')
+        ->where('a.id = sa.asset_id')
+        ->andWhere('s.id = sa.section_id')
+        ->andWhere('s.slug = ?', "papel-de-parede")
+        ->andWhere('a.site_id = ?', (int)$site->id)
+        ->limit(6)
+        ->execute();
+    ?>
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
