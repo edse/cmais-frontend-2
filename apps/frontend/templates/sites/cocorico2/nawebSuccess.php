@@ -86,9 +86,7 @@
        </div>
        <div class="box-instagram">
        <!-- SnapWidget -->
-       <!--iframe src="http://snapwidget.com/in/?u=dHZjdWx0dXJhfGlufDEzOHwxfDJ8fG5vfDV8ZmFkZU91dA==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:297px; height: 286px" ></iframe-->
-       <!-- SnapWidget -->
-       <iframe src="http://snapwidget.com/in/?u=dHZjdWx0dXJhfGlufDEzOHwyfDJ8fG5vfDEwfG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:296px; height: 296px" ></iframe>
+       <iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>
        </div> 
      </div>   
      <!-- /instagram -->  
