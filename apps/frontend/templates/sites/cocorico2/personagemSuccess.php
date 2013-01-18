@@ -16,57 +16,8 @@
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
-      <!--
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
-      -->
       <!--/menu personagens -->
-      <div class="lista-personagens">
-         <div id="myCarousel" class="carousel slide span12">
-        <!-- Carousel items -->
-        <div class="carousel-inner span11">
-          <div class="active item ">
-            <ul>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip" ><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-            </ul>
-            
-          </div>
-          <div class="item ">
-            <ul>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-            </ul>
-            
-          </div>
-          <div class="item ">
-            <ul>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-              <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-            </ul>
-            
-          </div>
-        
-        </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>      
-      </div>
     </div>
   </div>
   <!-- /row-->
