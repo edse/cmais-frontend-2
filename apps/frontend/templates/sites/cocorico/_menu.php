@@ -23,7 +23,12 @@
         </ul>
       </div>
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <a title="Em família" href="/cocorico2/emfamilia">Em família</a>
+<div id="myModal" class="modal hide fade alerta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+    <h3 id="myModalLabel">Atenção!</h3>
+    <p>A partir de agora, você está saindo da área exclusiva para crianças do site do Cocoricó e entrando numa parte direcionada para adultos. 
+    Então, preferimos que você fique brincando por aqui ou chame o papai ou a mamãe para te acompanhar, combinado?</p>
+  </div>
 </div>
 <!-- /Modal -->

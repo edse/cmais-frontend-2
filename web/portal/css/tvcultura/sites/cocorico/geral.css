@@ -12,6 +12,7 @@ ul li { list-style:none; }
 .menu .navbar .nav { width: 100%; }
 
 /* font-familt ubuntu */
+#myModal.alerta,
 .box-papel-parede ul li a,
 .destaque2 .radio a,
 .form-search p,
@@ -314,3 +315,5 @@ input.search-query,
 .cr a { margin-right:10px; color:#fff; text-transform:uppercase; text-align:right; font-weight:bold; height:40px; line-height:40px; display: block;  }
 .cr a:hover { text-decoration:none; }
 
+#myModal.alerta h3 { color:#ec342f; font-size:20px; }
+#myModal.alerta p { color:#6b757d; font-weight:bold; }
