@@ -55,6 +55,8 @@
      <?php if(count($preview) > 0): ?>
        <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
      <?php endif; ?>
+    <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+    <?php echo count($dowload)."teste";?>
     <ul>
       <li><a href="#" title=""><i class="icon-monitor"></i>800 x 600</a></li>
       <li><a href="#" title=""><i class="icon-monitor"></i>1024 x 768</a></li>
