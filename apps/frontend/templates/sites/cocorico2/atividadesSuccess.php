@@ -92,7 +92,7 @@
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-            <i class="ico-camera"></i>
+            <i class="ico-serie"></i>
             Séries
             <i class="ico-seta-titulo bastidores"></i>
            </h3>
