@@ -356,12 +356,22 @@ class mainActions extends sfActions
       if(get_class($object) == "Section"){
         // #3 Look for an Asset
         $this->asset = Doctrine_Query::create()
-        ->select('a.*')
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $object->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.slug = ?', (string)$string)
+          ->fetchOne();
+        /*
+        $this->asset = Doctrine_Query::create()
+          ->select('a.*')
           ->from('Asset a')
           ->where('a.site_id = ?', (int)$object->Site->id)
           ->andWhere('a.slug = ?', (string)$string)
           ->orderby('a.id desc')
           ->fetchOne();
+        */
         if($this->asset)
           return $this->asset;
         else{
