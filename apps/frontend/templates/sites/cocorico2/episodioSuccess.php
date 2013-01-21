@@ -31,16 +31,15 @@
    <p>
      <?php echo html_entity_decode($asset->AssetContent->render()) ?>
    </p>
-   <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
      <?php
-      if (count($related_video) > 0):
+      if (count($asset) > 0):
         $offset = "0m0s";
-        if($related_video[0]->AssetVideo->getStartFrom() != ""){
-          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+        if($asset->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$asset->AssetVideo->getStartFrom());
           $offset = $p[0]."m".$p[1]."s";
         }
       ?>
-   <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+   <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
    <?php endif; ?>
   </div>
   <!-- /row-->
