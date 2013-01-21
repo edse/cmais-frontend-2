@@ -42,7 +42,7 @@
         <li><a href="http://cmais.com.br/cocorico2/para-colorir" title="Receitinhas">Para Colorir</a></li>
         <li><a href="http://cmais.com.br/cocorico2/papel-de-parede" title="Receitinhas">Papel de Parede</a></li>
         </ul></div>
-    <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
+    <div class="span3 sites"> <p class="bold">Sites Relacionados</p>
       <ul>
         <li><a href="http://cmais.com.br/quintaldacultura" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
         <li><a href="http://tvratimbum.cmais.com.br/" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>
