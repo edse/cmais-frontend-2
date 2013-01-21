@@ -37,16 +37,19 @@
 
       <?php if(isset($displays['destaque-receitinhas'])):?> 
         <?php if(count($displays['destaque-receitinhas']) > 0): ?>
-          
-           
-          
+ 
+  <?php $related0 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+   <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>    
+    <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
         <h2>Cozinha da amiga zazá</h2> 
-        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="http://img.youtube.com/vi/<?php echo $displays['destaque-receitinhas'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><span class="mais"></span></a>
         <div class="enquete span12">
-          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $displays['destaque-receitinhas'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /> <?php echo $displays['destaque-receitinhas'][1]->getTitle() ?> </a>
-          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $displays['destaque-receitinhas'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /> <?php echo $displays['destaque-receitinhas'][2]->getTitle() ?> </a>
+       
+       <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /> <?php echo $displays['destaque-receitinhas'][1]->getTitle() ?> </a>
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /> <?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
+               
         </div>  
       </div>  
     <?php endif; ?>
