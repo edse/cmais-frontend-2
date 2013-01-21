@@ -186,7 +186,7 @@
       <!-- /radio -->
       
     </div>
-    <!-- para colorir -->
+    <!-- para colorir --> 
      <?php if(isset($displays['destaque-para-colorir'])): ?>
       <?php if(count($displays['destaque-para-colorir']) > 0): ?>
         <?php $related = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
@@ -198,11 +198,11 @@
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" />
-            <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
+            <?php echo $displays['destaque-para-colorir'][0]->getTitle() ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
             <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" />
-            <?php echo $displays['destaque-para-colorir'][1]->getDescription() ?>
+            <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?>
           </a>
         </div>        
       </div>
