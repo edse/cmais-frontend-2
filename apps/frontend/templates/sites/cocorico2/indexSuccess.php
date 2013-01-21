@@ -143,7 +143,7 @@
           <?php if(count($displays['destaque-2']) > 0): ?>
           <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
             <p class="bold">
-              <?php echo $displays['destaque-2'][0]->retriveLabel() ?>
+              <?php echo $displays['destaque-2'][0]->Asset->Sections[0]->getTitle() ?>
             </p>
             <?php
               $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
