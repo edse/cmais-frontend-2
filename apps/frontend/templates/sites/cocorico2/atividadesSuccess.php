@@ -62,6 +62,7 @@
       <?php if(count($displays['videos']) > 0): ?>     
       <?php foreach($displays['videos'] as $k=>$d):?>  
        <div class="destaque-home-tv span9">
+          <?php $related = $displays['videos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
         <h2>Clipes</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
 
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
