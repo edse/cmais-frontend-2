@@ -137,7 +137,7 @@
       
         <?php endif; ?>
       <?php endif; ?>
-       
+        
       <div class="span12">
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
