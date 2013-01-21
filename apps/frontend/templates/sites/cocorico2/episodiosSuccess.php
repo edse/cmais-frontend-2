@@ -66,7 +66,7 @@ $assets = $pager->getResults();
     <?php endif; ?>
 
   <!--row-->
-  <div class="row-fluid conteudo destaques">
+  <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
         <li class="span4">
