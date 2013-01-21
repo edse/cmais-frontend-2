@@ -93,7 +93,7 @@
 
   
   </head>
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body>
     <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
