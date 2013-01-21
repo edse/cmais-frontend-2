@@ -338,7 +338,7 @@ input.search-query,
 .modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
 .modal ul li { margin-bottom:10px; }
 #myModal.alerta h3 { color:#ec342f; font-size:20px; text-transform:uppercase; }
-#myModal.alerta p { color:#6b757d; font-weight:bold; text-transform: normal; }
+#myModal.alerta p { color:#6b757d; font-weight:bold; text-transform: none; margin-top:10px; }
 #myModal.alerta a { margin-top:20px;}
 #myModal.alerta a:hover { text-decoration:none;}
 #myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin:0 5px; }
