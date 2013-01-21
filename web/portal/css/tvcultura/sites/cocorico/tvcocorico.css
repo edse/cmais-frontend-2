@@ -253,7 +253,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .form-episodio { clear:both; background:url("/portal/images/capaPrograma/cocorico/fundo-transparente.png") repeat; margin:0 20px; padding:0 10px; height:40px; line-height:40px;  }
 .form-episodio p { float:left; text-transform:uppercase; font-weight:bold; color:#6b757d; }
 .form-episodio p i { color:#1db186; }
-.form-episodio .botoes {  float:right;}
+.form-episodio .botoes {  float:right; max-width:254px;}
 .form-episodio .botoes span { color:#8bd1b6; font-size:26px; margin-right:20px; }
 .form-search .icon-search,
 .form-episodio .icon-search { background-image: url("/portal/images/capaPrograma/cocorico/ico-busca2.png"); }
