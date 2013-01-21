@@ -67,11 +67,11 @@ $assets = $pager->getResults();
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
-      <?php foreach($assets as $d): ?>
+      <?php foreach($pager->getResults() as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         <li class="span4">
-          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>/<?php echo $related[0]->Asset->AssetVideo->getYoutubeId() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
             <?php echo $d->getTitle() ?>
           </a>
         </li>
