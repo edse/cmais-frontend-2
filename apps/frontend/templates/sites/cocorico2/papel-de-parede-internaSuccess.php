@@ -51,7 +51,7 @@
   
   <!--row-->
   <div class="row-fluid conteudo box-papel-parede" id="videos">
-    <p class="span12"><?php echo $asset->getDescription(); ?></p>
+    <!--<p class="span12"><?php // echo $asset->getDescription(); ?></p>-->
     <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
      <?php if(count($preview) > 0): ?>
        <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
