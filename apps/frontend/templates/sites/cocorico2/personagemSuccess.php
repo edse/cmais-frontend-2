@@ -37,8 +37,7 @@
           <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
           <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
         </ul>
-        
-      </div>
+       </div>
       <!--/menu personagens -->
     </div>
   </div>
