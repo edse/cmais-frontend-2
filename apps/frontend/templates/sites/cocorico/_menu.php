@@ -29,8 +29,9 @@
     <h3 id="myModalLabel">Atenção!</h3>
     <p>A partir de agora, você está saindo da área exclusiva para crianças do site do Cocoricó e entrando numa parte direcionada para adultos. 
     Então, preferimos que você fique brincando por aqui ou chame o papai ou a mamãe para te acompanhar, combinado?</p>
-    <a class="crianca span3" href="<?php echo $site->retriveUrl() ?>" title="Sou criança, quero continuar brincando!"><i class="ico-familia"></i>Sou criança, <span>quero continuar brincando!</span></a>
+    <a class="crianca span3" type="button" class="close" data-dismiss="modal" aria-hidden="true" ><i class="ico-familia"></i>Sou criança, <span>quero continuar brincando!</span></a>
     <a class="adulto span3" href="<?php echo $site->retriveUrl() ?>/emfamilia" title="Sou adulto, quero acessar Em Família!" ><i class="ico-familia"></i>Sou adulto, <span>quero acessar Em Família!</span></a>
   </div>
+ 
 </div>
 <!-- /Modal -->
