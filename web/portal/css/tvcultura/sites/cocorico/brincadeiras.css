@@ -164,7 +164,8 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .enquete.span12 { background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x top ;}
 .tvcoco .mais { top:195px; background-position:-36px; z-index: 200; }
 .enquete a.span6 { background:#f8b145; color:#dd582a; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; text-align: center; margin:10px 0 5px 3px !important; display:block; }
-.enquete a.span6 img {  border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0;}
+.enquete a.span6 img {  border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; margin:-12px 0 !important;}
+.enquete a.span6 p { background: none repeat scroll 0 0 #F8B145; color: #DD582A; height: 20px; margin: 0; position: relative; width: 100%; z-index: 100;}
 .destaque-home-tv iframe { margin-top:0; }
 .destaque-home-tv { background:#F2722F; }
 .destaque-home-tv h2 { margin-top: 0; color:#FDF035; }
