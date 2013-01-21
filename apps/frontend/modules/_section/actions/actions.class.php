@@ -1346,7 +1346,6 @@ class _sectionActions extends sfActions
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
         $this->page = $request->getParameter('page');
-        
       }
       else{
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
