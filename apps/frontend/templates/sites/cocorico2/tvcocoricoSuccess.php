@@ -156,6 +156,7 @@
       
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9" style="display: none;">
+        <?php echo count($displays['destaque-seu-video']). ">>>>>>>"?>
         <?php if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
             <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
