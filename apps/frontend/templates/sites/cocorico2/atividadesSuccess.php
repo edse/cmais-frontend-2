@@ -79,55 +79,62 @@
       </div>
       <!-- /destaque-home -->
 
-      <!-- bastidores -->
-      <?php if(isset($displays['destaque-series'])): ?>
-      <?php if(count($displays['destaque-series']) > 0): ?>
-        <?php $related = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related2 = $displays['destaque-series'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+      <?php if(isset($displays['destaque-series'])):?> 
+        <?php if(count($displays['destaque-series']) > 0): ?>
+                    
+       <!-- bastidores -->
       <div class="bastidores fonte span3">
+       
         <div class="topo">
           <div class="bac-yellow">
-            <h3><i class="ico-serie"></i> Séries <i class="ico-seta-titulo"></i></h3>
-          </div>
-        </div>
-
+            <h3>
+            <i class="ico-camera"></i>
+            Séries
+            <i class="ico-seta-titulo bastidores"></i>
+           </h3>
+         </div>
+       </div>
+        
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][0]->retriveUrl() ?>" title="Tour Virtual">
-        <div class="item">
-          <div class="img-bast">
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
+        <a href="<?php echo $displays['destaque-series'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][0]->getTitle() ?>">
+          <div class="item">
+            <div class="img-bast">
+                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
+            </div>
+            <span><?php echo $displays['destaque-series'][0]->getTitle() ?></span>
           </div>
-          <span><?php echo $displays['destaque-series'][0]->getTitle() ?></span>
-        </div> </a>
+        </a>
         <hr/>
         <!-- /item -->
-
+         
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][1]->retriveUrl() ?>" title="Erros de gravação">
-        <div class="item">
-          <div class="img-bast">
-            <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
+        <a href="<?php echo $displays['destaque-series'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][1]->getTitle() ?>">
+          <div class="item">
+            <div class="img-bast">
+                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
+            </div>
+            <span><?php echo $displays['destaque-series'][1]->getTitle() ?></span>
           </div>
-          <span><?php echo $displays['destaque-series'][1]->getTitle() ?></span>
-        </div> </a>
+        </a>
         <hr/>
         <!-- /item -->
-
+        
         <!-- item -->
         <a href="<?php echo $displays['destaque-series'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][2]->getTitle() ?>">
-        <div class="item">
-          <div class="img-bast">
-            <img src="<?php echo $related2[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/>
+          <div class="item">
+            <div class="img-bast">
+                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/>
+            </div>
+            <span><?php echo $displays['destaque-series'][2]->getTitle() ?></span>
           </div>
-          <span><?php echo $displays['destaque-series'][2]->getTitle() ?></span>
-        </div> </a>
+        </a>
         <hr/>
         <!-- /item -->
       </div>
-      <?php endif; ?>
-    <?php endif; ?> 
       <!-- /bastidores -->
+       <?php endif; ?>
+      <?php endif; ?>
+            
 
     </div>
     <!-- /col esquerda -->
