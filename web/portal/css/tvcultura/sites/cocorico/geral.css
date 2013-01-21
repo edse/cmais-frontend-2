@@ -342,7 +342,7 @@ input.search-query,
 #myModal.alerta p { color:#6b757d; font-weight:bold; text-transform: none; margin-top:10px; }
 #myModal.alerta a { margin-top:20px;}
 #myModal.alerta a:hover { text-decoration:none;}
-#myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin:0 5px; }
+#myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta-familia.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin:0 5px; }
 #myModal.alerta a.span3 { color:#f2722f; display:block; font-weight: bold; margin-left:0; cursor:pointer; min-width:210px; }
 #myModal.alerta a span { background:#f2722f; color:#fdf035; padding:0 5px; clear:both; display:block; text-align:center; height: 22px; line-height:22px;}
 #myModal.alerta a.adulto { float:right;  color:#70aab1; }
