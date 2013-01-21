@@ -156,11 +156,19 @@ a.destaque2:hover{text-decoration: none}
 .col-esq .destaques.span6.joguinho,
 .destaques.joguinho .bold { color:#fff; background:#1893cf; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display: block; }
 .col-esq .destaques.span6.joguinho img { border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; display: block; }
+
 /* carrossel personagem*/
 .lista-personagens .carousel-inner .item li { width:97px; float:left; margin-left:17px; }
 .menu .lista-personagens .carousel-control { border: none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; }
 .lista-personagens .carousel-inner ul { margin:0 0 0 60px; }
+.carrossel { margin: 0; max-width: 970px; overflow: hidden;  position: relative;}
+.carrossel .jcarousel-clip { max-width:793px; margin-left:66px; }
+.carrossel .jcarousel-next, 
+.carrossel .jcarousel-prev { background: url("/portal/images/capaPrograma/cocorico/setas.png") repeat scroll 0 0 transparent; bottom: 0; height: 69px; top: 18px; width: 41px; position:absolute;}
+.carrossel .jcarousel-prev { left: 10px;}
+.carrossel .jcarousel-next { background-position: -41px 0;  right: 10px;}
 /* /carrossel personagem*/
+
 /* /personagens*/
 
 /* convidados*/
@@ -290,3 +298,4 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /ie */
 
 .span4 iframe {margin-top:0;  }
+
