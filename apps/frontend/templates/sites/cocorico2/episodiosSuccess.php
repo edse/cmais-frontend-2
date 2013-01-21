@@ -34,6 +34,7 @@ $assets = $pager->getResults();
     <h2>Episódios completos</h2>
   </div>
   <!-- titulo da pagina -->
+  <!--
   <form class="form-search form-episodio">
     <p>XX resultados para "<i>palavra-chave</i>"</p>
     <div class="botoes">
@@ -44,7 +45,7 @@ $assets = $pager->getResults();
       </button>
     </div>
   </form>
-
+  -->
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->
