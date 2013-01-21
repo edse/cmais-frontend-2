@@ -33,7 +33,6 @@
    </p>
    <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
      <?php
-      echo count($related_video). ">>>>>>>>>>>";
       if (count($related_video) > 0):
         $offset = "0m0s";
         if($related_video[0]->AssetVideo->getStartFrom() != ""){
