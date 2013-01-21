@@ -9,7 +9,7 @@ $assets = Doctrine_Query::create()
 ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
 ->orderBy('a.id desc')
 ->limit(12)
-->execute();
+->fetchOne();
 ?>
 <?php 
  $assets = $pager->getResults($assets);
