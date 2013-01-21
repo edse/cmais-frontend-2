@@ -34,6 +34,7 @@ $assets = $pager->getResults();
     <h2>Episódios completos</h2>
   </div>
   <!-- titulo da pagina -->
+  <!--
   <form class="form-search form-episodio">
     <p>XX resultados para "<i>palavra-chave</i>"</p>
     <div class="botoes">
@@ -44,7 +45,7 @@ $assets = $pager->getResults();
       </button>
     </div>
   </form>
-
+  -->
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->
@@ -70,7 +71,7 @@ $assets = $pager->getResults();
       <?php foreach($pager->getResults() as $d): ?>
         <li class="span4">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/2.jpg" alt="<?php echo $d->getTitle() ?>" />
             <p><?php echo $d->getTitle() ?></p>
           </a>
         </li>
