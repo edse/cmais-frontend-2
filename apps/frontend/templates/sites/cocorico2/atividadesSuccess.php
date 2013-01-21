@@ -38,17 +38,17 @@
 
     <?php if(isset($displays['destaque-receitinhas'])): ?>
       <?php if(count($displays['destaque-receitinhas']) > 0): ?>
-        <?php $related = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related0 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
         <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
         <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="tvcoco span12">
         <h2>Cozinha da amiga zazá</h2>
-        <?php if(count($related) > 0): ?>
-        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?> <span class="mais"></span></a>
-        <?php endif; ?>
+        
+        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /> <?php echo $displays['destaque-receitinhas'][0]->getTitle() ?> <span class="mais"></span></a>
+        
           <div class="enquete span12">
-          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[1]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></a>
-          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[2]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
+          <a href="<?php echo $displays1['destaque-receitinhas'][0]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></a>
+          <a href="<?php echo $displays2['destaque-receitinhas'][0]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></a>
         </div>
       </div>
       <?php endif; ?>
@@ -64,7 +64,7 @@
       <?php if(count($displays['videos']) > 0): ?>     
       <?php foreach($displays['videos'] as $k=>$d):?>  
        <div class="destaque-home-tv span9">
-        <h2>Clipe - Dias quentes de verão</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
+        <h2>Clipes</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
 
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
 
@@ -186,11 +186,11 @@
       <!-- /radio -->
       
     </div>
-    <!-- para colorir -->
+    <!-- para colorir --> 
      <?php if(isset($displays['destaque-para-colorir'])): ?>
       <?php if(count($displays['destaque-para-colorir']) > 0): ?>
         <?php $related = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['destaque-para-colorir'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
@@ -198,11 +198,11 @@
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" />
-            <?php echo $displays['destaque-para-colorir'][0]->getDescription() ?>
+            <?php echo $displays['destaque-para-colorir'][0]->getTitle() ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
             <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" />
-            <?php echo $displays['destaque-para-colorir'][1]->getDescription() ?>
+            <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?>
           </a>
         </div>        
       </div>
