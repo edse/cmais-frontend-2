@@ -44,8 +44,8 @@
            
       <div class="tvcoco span12">    
         <h2>Cozinha da amiga zazá</h2> 
-        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title="">
-          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
+        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
+          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><p/>
           <span class="mais"></span>
         </a>
