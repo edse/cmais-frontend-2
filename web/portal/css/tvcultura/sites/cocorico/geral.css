@@ -157,7 +157,7 @@ input.search-query,
 .rodape { background:#76b0b7; }
 .rodape h3 {  text-transform:uppercase; background:url(/portal/images/capaPrograma/cocorico/border-bottom-rodape.png) repeat-x bottom;  font-size:12px; color:#c6e1e3; text-align:center; height:20px; line-height: 20px; margin-top:0; font-weight:normal;}
 .rodape a { color:#fff }
-.rodape .bold { text-transform:uppercase; }
+.rodape .bold { text-transform:uppercase; color:#fff; }
 .rodape ul { margin-left:10px; }
 .rodape .span2 { margin-left:20px;}
 .rodape .joguinhos { width:175px; }
