@@ -68,10 +68,9 @@ $assets = $pager->getResults();
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
-        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         <li class="span4">
-          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>/<?php echo $d->AssetVideo->getYoutubeId() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
             <?php echo $d->getTitle() ?>
           </a>
         </li>
@@ -79,19 +78,25 @@ $assets = $pager->getResults();
     </ul>
   </div>
   <!-- /row-->
-  <!-- paginacao -->
-  <div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
+  <?php if(count($pager) > 0): ?>
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
+    <?php endif; ?>
+   <?php endif; ?> 
       <form id="page_form" action="" method="post">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
