@@ -15,8 +15,7 @@ $assets = Doctrine_Query::create()
  $assets = $pager->getResults();
  echo count($assets). "teste";
 ?>
-<?php 
-/*
+
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -112,5 +111,4 @@ $assets = Doctrine_Query::create()
   <!--/rodapé-->
 </div>
 <!-- /container-->
- * */?>
- */
+ 
