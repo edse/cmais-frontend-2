@@ -317,7 +317,7 @@ input.search-query,
 .cr a:hover { text-decoration:none; }
 
 .modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
-.modal { width:980px; margin:-200px 0 0 -490px; border:none; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position:absolute; }
+.modal { width:880px; margin:-200px 0 0 -440px; border:none; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position:absolute; }
 .modal,
 .modal-footer,
 .modal-header { background:#d3e7e8; }
@@ -342,7 +342,7 @@ input.search-query,
 #myModal.alerta a { margin-top:20px;}
 #myModal.alerta a:hover { text-decoration:none;}
 #myModal.alerta a .ico-familia {background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; width: 40px; height:22px; display: block; float: left; margin:0 5px; }
-#myModal.alerta a.span3 { color:#f2722f; display:block; font-weight: bold; margin-left:0; }
+#myModal.alerta a.span3 { color:#f2722f; display:block; font-weight: bold; margin-left:0; cursor:pointer; min-width:204px; }
 #myModal.alerta a span { background:#f2722f; color:#fdf035; padding:0 5px; clear:both; display:block; text-align:center; height: 22px; line-height:22px;}
 #myModal.alerta a.adulto { float:right;  color:#70aab1; }
 #myModal.alerta a.adulto span { background:#70aab1; color:#fff; }
