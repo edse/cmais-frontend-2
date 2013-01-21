@@ -351,3 +351,9 @@ input.search-query,
 #myModal.alerta .modal-header { padding:20px; overflow:hidden; }
 #myModal.alerta,
 #myModal.alerta .modal-header { background:#e9f3f4 !important;}
+
+/* ytb*/
+.ytb .span4 a { overflow:hidden;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
+.ytb .span4 a img { margin:-26px 0;  }
+.ytb .span4 .btn { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+/* ytb*/
