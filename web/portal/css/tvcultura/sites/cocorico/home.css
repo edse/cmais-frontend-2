@@ -2,7 +2,7 @@
 .col-esq .destaque-home .box { /*position: absolute; top:0; right:0; */ margin-left:0px; float:right;  }
 /*.small { width: 174px; }*/
 /*.small a img {  width:140px;  }*/
-.box .mais { z-index:10; background:url(/portal/images/capaPrograma/cocorico/mais.png) no-repeat; width:36px; height:36px; display: block; position:absolute; margin-left:20px; }
+.box .mais { z-index:10; background:url(/portal/images/capaPrograma/cocorico/mais.png) no-repeat; width:36px; height:36px; display: block; position:absolute; margin-left:20px; padding:0; }
 .box a { margin-left:20px; font-size:15px; padding:0 0 0 30px; display:block; line-height: 35px; color:#fff !important; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase; border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px; }
 .box .tit a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x;  padding: 0 23px 0 33px; line-height: 40px; height:40px; width: 91px; float:left;  }
 .box .tit span { width:9px; height:40px; float:left;  background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat; margin:0; position:relative; right:0; }
@@ -16,7 +16,7 @@
 */
 
 .destaques img.span12 { border:none; margin:0; clear:both; }
-.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; display:block; color:#FDF035; font-weight: normal;}
+.destaques .bold { text-transform:uppercase; font-size:20px; line-height:31px; height:31px; overflow:hidden; display:block; color:#FDF035; font-weight: normal;}
 .col-esq div.span12 { margin:0; clear:both; }
 
 /* destaque home */
