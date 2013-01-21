@@ -1317,7 +1317,11 @@ class _sectionActions extends sfActions
     }
     if(!isset($pagelimit))
       $pagelimit = 9;
-    
+
+    if(($this->section->Site->getSlug() == "cocorico2")||($this->section->Site->getSlug() == "cocorico")){
+      $pagelimit = 12;
+    }
+
     if(isset($this->assetsQuery)){
       //if ($this->site->Program->getIsACourse() && !in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))) {
       if ($this->site->Program->getIsACourse()) {
@@ -1340,9 +1344,6 @@ class _sectionActions extends sfActions
         $this->page = $request->getParameter('page');
       }
       else{
-        if(($this->section->Site->getSlug() == "cocorico2")||($this->section->Site->getSlug() == "cocorico")){
-          $pagelimit = 12;
-        }
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
