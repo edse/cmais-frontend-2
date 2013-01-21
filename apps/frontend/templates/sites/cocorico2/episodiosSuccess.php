@@ -92,6 +92,16 @@ $assets = $pager->getResults();
     </ul>
   </div>
   <!-- /paginacao -->
+      <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
   <?php endif;?>
     <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
