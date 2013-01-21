@@ -35,21 +35,18 @@
     <!-- col direita -->
     <div class="span4 col-dir">
 
-      <?php if(isset($displays['videos'])):?>
-      <?php if(count($displays['videos']) > 0): ?>     
-      <?php foreach($displays['videos'] as $k=>$d):?> 
+      <?php if(isset($displays['destaque-receitinhas'])):?> 
+        <?php if(count($displays['destaque-receitinhas']) > 0): ?>
       <div class="tvcoco span12">
         <h2>Cozinha da amiga zazá</h2>
-        <a class="convidado span12" href="/cocorico/tvcocorico/convidado" title=""><img src="http://img.youtube.com/vi/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
+        <a class="convidado span12" href="/cocorico/tvcocorico/convidado" title=""><img src="http://www.youtube.com/embed/<?php echo $displays['destaque-receitinhas'][0]->Asset->AssetVideo->getYoutubeId() ?>" alt="proximo convidade" /> Nome convidado<span class="mais"></span></a>
         <div class="enquete span12">
-          <a href="#" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $displays['videos'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /> Torta de maçã </a>
-          <a  href="#" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $displays['videos'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="" /> Torta de maçã </a>
+          <a href="#" title="" class="span6"> <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" /> Torta de maçã </a>
+          <a  href="#" title="" class="span6 last"> <img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="" /> Torta de maçã </a>
         </div>
-         <?php endforeach; ?>   
+      </div>  
     <?php endif; ?>
     <?php endif; ?> 
-      </div>
-
     </div>
     <!-- /col direita -->
     <!-- col esquerda -->
