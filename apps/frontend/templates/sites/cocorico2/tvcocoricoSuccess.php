@@ -17,9 +17,8 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb bread-tv">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle(); ?></li>
   </ul>
   <!-- /breadcrumb-->
   <!--row conteudo -->
@@ -155,6 +154,26 @@
     <!-- col esquerda --> 
     <div class="span8 col-esq">
       
+      <!-- destaque-home-simples -->
+      <div class="destaque-home-tv span9" style="display: none;">
+        <?php if(isset($displays['destaque-seu-video'])): ?>
+          <?php if(count($displays['destaque-seu-video']) > 0): ?>
+            <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
+            
+            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            
+            <div class="destaque span12">
+              <span></span>
+              <a href="<?php $site->retriveUrl()?>/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <span class="last"></span>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
+      </div>
+      <!-- /destaque-home-simples -->
+      
+      <?php
+      /* FORM PARA QUANDO TIVE PARTICIPAÇÃO
       <!-- form interatividade -->
       <div class="destaque-home-tv span9">
     	
@@ -295,7 +314,8 @@
  
       </div>
       <!-- form interatividade -->
-      
+      */
+     ?>
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
