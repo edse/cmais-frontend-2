@@ -12,7 +12,7 @@ $assets = Doctrine_Query::create()
 ->fetchOne();
 ?>
 <?php 
- $assets = $pager->getResults($assets);
+ $assets = $pager->getResults();
  echo count($assets). "teste";
 ?>
 <?php 
