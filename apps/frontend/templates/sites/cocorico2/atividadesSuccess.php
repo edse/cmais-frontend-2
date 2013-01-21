@@ -44,12 +44,14 @@
            
       <div class="tvcoco span12">    
         <h2>Cozinha da amiga zazá</h2> 
-        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title=""><img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" /><p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><p/><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title="">
+          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
+          <p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><p/>
+          <span class="mais"></span>
+        </a>
         <div class="enquete span12">
-       
-       <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></p></a>
-       <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></p></a>
-               
+          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></p></a>
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></p></a>
         </div>  
       </div>  
     <?php endif; ?>
