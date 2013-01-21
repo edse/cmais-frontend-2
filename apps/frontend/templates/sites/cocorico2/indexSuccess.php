@@ -137,13 +137,13 @@
       
         <?php endif; ?>
       <?php endif; ?>
-       
-      <div class="span12">
+         
+      <div class="span12"> 
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
           <a class="box destaques span6" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
             <p class="bold">
-              <?php echo $displays['destaque-2'][0]->getTitle() ?>
+              <?php echo $displays['destaque-2'][0]->retriveLabel() ?>
             </p>
             <?php
               $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
@@ -165,7 +165,7 @@
           <?php if(count($displays['destaque-3']) > 0): ?>
         <a class="box destaques span6" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-3'][0]->getTitle() ?>">
           <p class="bold">
-            <?php echo $displays['destaque-3'][0]->getTitle() ?>
+            <?php echo $displays['destaque-3'][0]->retriveLabel() ?>
           </p>
           <?php
             $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
