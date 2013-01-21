@@ -14,7 +14,7 @@
 ?> 
       <div class="navbar-inner">
         <ul class="nav">
-          <li class="personagens"><a href="javascript: history.go(-1);" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+          <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
           <li class="joguinhos"><a class="icon" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a><a href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
           <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades"></a><a href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades">Atividades</a><span></span></li>
           <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a><a href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
