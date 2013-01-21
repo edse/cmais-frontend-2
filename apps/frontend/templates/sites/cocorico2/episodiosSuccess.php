@@ -57,6 +57,7 @@ $assets = Doctrine_Query::create()
       </button>
     </div>
   </form>
+  <?php /*
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->
@@ -75,11 +76,14 @@ $assets = Doctrine_Query::create()
     </div>
     <!-- /paginacao -->
     <?php endif; ?>
+   * 
+   */
+   ?>
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
       <?php foreach($assets as $d): ?>
-        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related = $d->AssetVideo->retriveRelatedAssetsByAssetTypeId(6); ?>
         <li class="span4">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
@@ -103,7 +107,7 @@ $assets = Doctrine_Query::create()
     </ul>
   </div>
   <!-- /paginacao -->
-  <?php endif;?>
+  <?php //endif;?>
     <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
