@@ -13,7 +13,6 @@ $assets = Doctrine_Query::create()
 ?>
 <?php 
  $assets = $pager->getResults();
- echo count($assets). "teste";
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
@@ -79,7 +78,7 @@ $assets = Doctrine_Query::create()
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
-      <?php foreach($pager->getResults() as $d): ?>
+      <?php foreach($assets as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         <li class="span4">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
