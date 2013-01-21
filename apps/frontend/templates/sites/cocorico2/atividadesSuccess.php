@@ -94,7 +94,7 @@
             <h3>
             <i class="ico-serie"></i>
             Séries
-            <i class="ico-seta-titulo bastidores"></i>
+            <i class="ico-seta-titulo"></i>
            </h3>
          </div>
        </div>
