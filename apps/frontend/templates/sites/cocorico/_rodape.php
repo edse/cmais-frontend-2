@@ -5,7 +5,7 @@
         <li><a href="http://cmais.com.br/cocorico2/personagens" title="Personagens">Personagens</a></li>
         <li><a href="http://cmais.com.br/cocorico2/personagens" title="Autógrafos">Autógrafos</a></li>
         <li><a href="http://cmais.com.br/cocorico2/clipes-musicais" title="Receitinhas">Clipes</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/videos" title="Receitinhas">Séries Especiais</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/series" title="Receitinhas">Séries Especiais</a></li>
         <li><a href="http://cmais.com.br/cocorico2/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
       </ul>
     </div>
