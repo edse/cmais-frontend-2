@@ -69,7 +69,7 @@ $assets = $pager->getResults();
         <li class="span4">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <?php echo $section->Parent->getSlug() ?> - <?php echo $d->getTitle() ?> - DD/MM/AA
+            <?php echo $d->$section->Parent->getSlug() ?> - <?php echo $d->getTitle() ?> - DD/MM/AA
           </a>
         </li>
       <?php endforeach; ?>
