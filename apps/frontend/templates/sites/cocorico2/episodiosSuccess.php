@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults();
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -40,6 +43,7 @@
       </button>
     </div>
   </form>
+  <?php if(count($pager) > 0): ?>
   <!-- paginacao -->
   <div class="pagination pagination-centered">
     <ul>
@@ -56,18 +60,15 @@
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
+      <?php foreach($pager->getResults() as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <li class="span4">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+            TV Cocoricó - <?php echo $d->getTitle() ?> - DD/MM/AA
+          </a>
+        </li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- /row-->
@@ -84,6 +85,7 @@
     </ul>
   </div>
   <!-- /paginacao -->
+  <?php endif;?>
     <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
