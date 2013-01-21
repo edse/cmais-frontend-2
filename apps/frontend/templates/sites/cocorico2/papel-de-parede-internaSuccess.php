@@ -37,7 +37,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle() ?></h2>
+    <h2><?php echo $asset->getDescription() ?></h2>
     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
