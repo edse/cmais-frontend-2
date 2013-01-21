@@ -300,6 +300,6 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 
 .span4 iframe {margin-top:0;  }
 
-.convidados a { overflow:hidden; }
-.convidados a img { margin:-25px 0;  }
-.convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
+#convidados a { overflow:hidden; }
+#convidados a img { margin:-25px 0;  }
+#convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
