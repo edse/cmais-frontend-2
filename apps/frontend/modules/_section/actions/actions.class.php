@@ -1341,8 +1341,6 @@ class _sectionActions extends sfActions
       else if(($this->site->getSlug() == "cocorico2")||($this->site->getSlug() == "cocorico")){
         //die('test');
         $pagelimit = 12;
-        if($sectionSlug == 'episodios')
-          $pagelimit = 14;
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
