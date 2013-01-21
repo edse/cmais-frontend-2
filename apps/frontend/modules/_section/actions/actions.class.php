@@ -1064,7 +1064,6 @@ class _sectionActions extends sfActions
         $sectionSlug = "personagem";
       }
       else if($this->section->getSlug() == "receitinhas" || $this->section->getSlug() == "joguinhos" || $this->section->getSlug() == "papel-de-parede" || $this->section->getSlug() == "para-colorir"){
-        $this->favoritos = 
         $this->favoritos = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
@@ -1318,10 +1317,6 @@ class _sectionActions extends sfActions
     if(!isset($pagelimit))
       $pagelimit = 9;
 
-    if(($this->section->Site->getSlug() == "cocorico2")||($this->section->Site->getSlug() == "cocorico")){
-      $pagelimit = 12;
-    }
-
     if(isset($this->assetsQuery)){
       //if ($this->site->Program->getIsACourse() && !in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))) {
       if ($this->site->Program->getIsACourse()) {
@@ -1342,6 +1337,16 @@ class _sectionActions extends sfActions
         $this->pager->setNbResults($countQuery[0]["description"]);
         $this->pager->setLastPage(ceil($countQuery[0]["description"]/$pagelimit));
         $this->page = $request->getParameter('page');
+      }
+      else if(($this->site->getSlug() == "cocorico2")||($this->site->getSlug() == "cocorico")){
+        //die('test');
+        $pagelimit = 22;
+        $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+        $this->pager->setQuery($this->assetsQuery);
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+        $this->page = $request->getParameter('page');
+        
       }
       else{
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
