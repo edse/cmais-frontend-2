@@ -64,7 +64,7 @@
       <?php if(count($displays['videos']) > 0): ?>     
       <?php foreach($displays['videos'] as $k=>$d):?>  
        <div class="destaque-home-tv span9">
-        <h2>Clipe - Dias quentes de verão</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
+        <h2>Clipes</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
 
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
 
@@ -190,7 +190,7 @@
      <?php if(isset($displays['destaque-para-colorir'])): ?>
       <?php if(count($displays['destaque-para-colorir']) > 0): ?>
         <?php $related = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $related1 = $displays['destaque-para-colorir'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+        <?php $related1 = $displays['destaque-para-colorir'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
