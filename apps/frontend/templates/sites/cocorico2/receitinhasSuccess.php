@@ -69,14 +69,14 @@ $assets = $pager->getResults();
   
   <!--row-->
   <?php if(count($pager) > 0): ?>
-  <div class="row-fluid conteudo">
+  <div class="row-fluid conteudo ytb">
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <?php echo $d->getTitle() ?>
+          <p><?php echo $d->getTitle() ?></p>
         </a>
       </li>
     <?php endforeach; ?>
