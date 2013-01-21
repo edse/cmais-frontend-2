@@ -19,7 +19,6 @@
       <!--
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       -->
-      
       <div class="lista-personagens carrossel">
         <ul class="thumbnails">
           <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip" ><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
