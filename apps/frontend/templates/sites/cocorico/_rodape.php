@@ -33,7 +33,7 @@
     </div>
     
     
-    <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
+    <div class="span2 joguinhos"> <a href="http://cmais.com.br/cocorico2/atividades" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
       <ul>
         <li><a href="http://cmais.com.br/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a></li>
         <li><a href="http://cmais.com.br/cocorico2/atividades" title="Atividades">Atividades</a></li>
