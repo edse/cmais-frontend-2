@@ -685,7 +685,7 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-4 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/papel-de-parede-interna';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/papel-de-parede-interna');
       }
-      elseif($this->section->slug == "episodios") {
+      elseif($this->section->slug == "episodios"||$this->site->slug == "tvcocorico") {
         if ($debug) print "<br>cocorico-5 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
       }
