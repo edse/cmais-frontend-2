@@ -355,5 +355,5 @@ input.search-query,
 /* ytb*/
 .ytb .span4 a { overflow:hidden;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
 .ytb .span4 a img { margin:-26px 0;  }
-.ytb .span4 .btn { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+.ytb .span4 .btn { border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;}
 /* ytb*/
