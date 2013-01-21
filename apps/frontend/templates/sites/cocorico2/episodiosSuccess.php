@@ -12,7 +12,7 @@ $assets = Doctrine_Query::create()
 ->fetchOne();
 ?>
 <?php 
- $assets = $pager->getResults();
+// $assets = $pager->getResults();
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
