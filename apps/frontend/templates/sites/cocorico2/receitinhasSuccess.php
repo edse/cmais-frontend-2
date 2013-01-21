@@ -30,7 +30,7 @@ $assets = $pager->getResults();
   <div class="zaza"></div>
 
   <?php if(count($favoritos) > 0): ?>
-  <div class="row-fluid conteudo destaques">
+  <div class="row-fluid conteudo destaques ytb">
     <?php if(isset($favoritos[0])): ?>
       <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
