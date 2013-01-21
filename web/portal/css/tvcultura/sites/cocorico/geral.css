@@ -358,6 +358,7 @@ input.search-query,
 .ytb .span4 .btn { border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;}
 .ytb .destaques-small li a { overflow:hidden; } 
 .ytb .destaques-small li a img { margin:-13px 0 !important; }
-.ytb .destaques-small li a p { background: #F2722F; color:#fff; height: 20px; position: relative; z-index: 100; overflow:hidden; margin:0; float:left;}
+.ytb .destaques-small li a p { background: #F2722F; color:#fff; height: 20px; position: relative; z-index: 100; overflow:hidden; margin:0; float:left; width: 100% }
+
 
 /* ytb*/
