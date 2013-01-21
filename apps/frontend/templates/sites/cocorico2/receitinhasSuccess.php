@@ -34,8 +34,8 @@ $assets = $pager->getResults();
     <?php if(isset($favoritos[0])): ?>
       <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
+      <a href="<?php echo $favoritos[0]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[0]->getSlug() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[0]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[0]->getSlug() ?>" class="span12 btn" title="<?php echo $favoritos[0]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
       <!--/RANKING -->
@@ -45,8 +45,8 @@ $assets = $pager->getResults();
     <?php if(isset($favoritos[1])): ?>
       <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
+      <a href="<?php echo $favoritos[1]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[1]->getSlug() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[1]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[1]->getSlug() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
       <!--/RANKING -->
@@ -56,8 +56,8 @@ $assets = $pager->getResults();
     <?php if(isset($favoritos[2])): ?>
       <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
+      <a href="<?php echo $favoritos[2]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[2]->getSlug() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[2]->Sections[0]->retriveUrl() ?>/<?php echo $favoritos[2]->getSlug() ?>" class="span12 btn" title="<?php echo $favoritos[2]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
       <!--/RANKING -->
@@ -74,7 +74,7 @@ $assets = $pager->getResults();
     <?php foreach($pager->getResults() as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+        <a href="<?php echo $d->Sections[0]->retriveUrl() ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
           <?php echo $d->getTitle() ?>
         </a>
