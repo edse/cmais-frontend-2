@@ -64,14 +64,14 @@
   <!--/row-->
   
   <!--row-->
-  <div class="row-fluid relacionados">
+  <div class="row-fluid relacionados ytb">
     <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/<?php echo $section[0]->getSlug() ?>"><?php echo $section[0]->getTitle() ?></a><span></span></div>
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <?php echo $d->getTitle() ?></a>
+            <p><?php echo $d->getTitle() ?></p></a>
           </li>
         <?php endforeach; ?>
       <?php endif; ?>
