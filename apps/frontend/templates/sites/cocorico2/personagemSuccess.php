@@ -1,9 +1,15 @@
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');    
+    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
+    //carrossel
+    $('.carrossel').jcarousel({
+      scroll : 1
+    });
   });
 </script>
 <!-- container-->
@@ -16,10 +22,9 @@
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
-      <!--
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
-      -->
       
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <!--
       <div class="lista-personagens carrossel">
         <ul class="thumbnails">
           <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip" ><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
@@ -38,6 +43,7 @@
           <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
         </ul>
        </div>
+       -->
       <!--/menu personagens -->
     </div>
   </div>
