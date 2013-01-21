@@ -1,3 +1,20 @@
+<?php
+$assets = Doctrine_Query::create()
+->select('a.*')
+->from('Asset a, AssetVideo av')
+->where('a.id = av.asset_id')
+->andWhere('a.site_id = ?', 1017)
+->andWhere('a.asset_type_id = 6')
+->andWhere("av.youtube_id != ''")
+->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+->orderBy('a.id desc')
+->limit(12)
+->fetchOne();
+?>
+<?php 
+// $assets = $pager->getResults();
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -22,7 +39,7 @@
   <!-- /row-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle()?></li>
+     <li class="active"><?php echo $section->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
@@ -31,7 +48,7 @@
   </div>
   <!-- titulo da pagina -->
   <form class="form-search form-episodio">
-    <p>XXX resultados para "<i>palavra-chave</i>"</p>
+    <p>XX resultados para "<i>palavra-chave</i>"</p>
     <div class="botoes">
       <span>|</span>
       <input type="text" class="input-medium search-query" placeholder="Busque por palavra-chave">
@@ -40,34 +57,40 @@
       </button>
     </div>
   </form>
-  <!-- paginacao -->
-  <div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
+  <?php /*
+  <?php if(count($pager) > 0): ?>
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
+    <?php endif; ?>
+   * 
+   */
+   ?>
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul id="convidados">
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
-      <li class="span4"><a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />TV Cocoricó - Tema do Episodio - DD/MM/AA</a></li>
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->AssetVideo->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <li class="span4">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <?php echo $d->getTitle() ?>
+          </a>
+        </li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- /row-->
@@ -84,9 +107,11 @@
     </ul>
   </div>
   <!-- /paginacao -->
+  <?php //endif;?>
     <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
 <!-- /container-->
+ 
