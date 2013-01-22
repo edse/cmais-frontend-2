@@ -321,7 +321,6 @@
                     
        <!-- bastidores -->
       <div class="bastidores fonte span3 ytb">
-       
         <div class="topo">
           <div class="bac-yellow">
             <h3>
