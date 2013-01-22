@@ -46,17 +46,19 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><?php echo $section->getTitle()?></a><span></span></div>
-    <?php
+   <?php
     $assets = Doctrine_Query::create()
       ->select('a.*')
-      ->from('Asset a, AssetVideo av, Section s')
+      ->from('Asset a, SectionAsset sa, Section s, AssetVideo av')
+      ->where('a.id = sa.asset_id')
       ->where('a.id = av.asset_id')
       ->andWhere('s.id = av.asset_id')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 6')
+      ->andWhere('s.id = sa.section_id')
       ->andWhere('s.slug = "episodios"')
-      ->andWhere("av.youtube_id != ''")
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
       ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
       ->orderBy('a.id desc')
       ->limit(6)
       ->execute();
