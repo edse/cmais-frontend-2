@@ -24,8 +24,12 @@
     </div>
   </div>
   <!-- /menu em familia -->
-<script>  
-$('.btn-tooltip').tooltip({ 
-    placement: "bottom"
+<script>
+$(document).ready(function(){  
+  $('.btn-tooltip').tooltip({
+      title:"teste",
+      selector: true, 
+      placement: "bottom"
+  });
 });
 </script>
