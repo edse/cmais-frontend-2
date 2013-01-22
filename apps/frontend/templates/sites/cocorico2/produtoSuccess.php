@@ -158,7 +158,7 @@ $('#produto-grid').tooltip({
     fixPNG: true,
     left:-60,
     extraClass:"tool1"
-});
+}); 
 </script>
 <!--/tooltip estilizado-->
 <!-- pinterest -->
