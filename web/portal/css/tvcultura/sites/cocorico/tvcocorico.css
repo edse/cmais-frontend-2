@@ -86,8 +86,8 @@ a.destaque2:hover{text-decoration: none}
 
 .destaque-1 h3,
 .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 0;text-align: center;color: #FDF035 !important;padding: 0; max-height: 34px; overflow:hidden;}
-.destaque-1 p, .destaque-2 p { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; bottom: 0; padding: 3px 10px; position: absolute; text-align: center; width: 94%;}
-
+.destaque-1 p, 
+.destaque-2 p { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; bottom: 0; padding: 3px 10px; position: absolute; text-align: center; width: 94%;}
 .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
 .conteudo-tv .ico-mais{background-position:0 bottom;}
 .conteudo-diverso .ico-mais{background-position:0 top;}
