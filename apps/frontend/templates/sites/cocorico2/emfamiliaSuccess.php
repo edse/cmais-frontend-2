@@ -61,11 +61,34 @@
    <?php endif; ?> 
     <?php endif; ?>
   
-      <?php if(isset($displays['destaque-1'])):?>
-        <?php if(count($displays['destaque-1']) > 0): ?>   
-          <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="destaques span6"> <h2><?php echo $displays['destaque-1'][0]->getTitle() ?></h2><img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>"><p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p><p><?php echo $displays['destaque-1'][0]->getDescription() ?></p></a>
-        <?php endif; ?>
+      <!-- convidado especial -->
+       <?php if(isset($displays['destaque-1'])):?>
+        <?php if(count($displays['destaque-1']) > 0): ?>
+          
+          <?php $related_image = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          
+      <a href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" class="span6 destaque1">
+        <div class="destaque-1 conteudo-tv">
+          <h3><?php echo $displays['destaque-1'][0]->getTitle() ?></h3>
+          
+          <?php if(count($related_image) > 0): ?>
+          <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
+          <?php endif; ?>
+          
+          <?php if(count($related_video) > 0): ?>
+          <img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
+          <?php endif; ?>
+          
+          <p>
+            <?php echo $displays['destaque-1'][0]->getDescription() ?>
+            <i class="ico-mais"></i>
+          </p>
+         </div>
+       </a>
+       <?php endif; ?>
      <?php endif; ?>
+      <!-- /convidado especial -->
      
      <?php if(isset($displays['destaque-2'])):?>
         <?php if(count($displays['destaque-2']) > 0): ?>   
