@@ -63,7 +63,7 @@
   
       <!-- convidado especial -->
        <?php if(isset($displays['destaque-1'])):?>
-        <?php if(count($displays['destaque-1']) > 0): ?>
+        <?php if(count($displays['destaque-1']) > 0): ?> 
           
           <?php $related_image = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php $related_video = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
