@@ -46,8 +46,22 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><?php echo $section->getTitle()?></a><span></span></div>
-
+    <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, AssetVideo av')
+      ->where('a.id = av.asset_id')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 6')
+      ->andWhere("av.youtube_id != ''")
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->orderBy('a.id desc')
+      ->limit(6)
+      ->execute();
+  ?>
   <?php echo count($assets).">>>>>>>>>>" ?>
+  <?php
+  /*
   <?php if (count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
@@ -60,6 +74,9 @@
      <?php endforeach; ?>
     </ul>
   <?php endif; ?>
+   * 
+   */
+   ?>
   </div>
   <!-- /row-->
   
