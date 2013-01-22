@@ -106,12 +106,16 @@
     ?>
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
-      <?php foreach($assets as $d): ?>
+      <?php 
+        $i=0;
+        foreach($assets as $d):
+          $i++
+      ?>
         <?php if($d->getSlug() != $asset->getSlug()):?>
           <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
           <li class="span2">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
+              <img src="<?php echo $i.$preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
               <?php echo $d->getTitle() ?> 
             </a>
           </li>
