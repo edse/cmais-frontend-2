@@ -370,15 +370,28 @@
       <!-- /bastidores -->
        <?php endif; ?>
       <?php endif; ?>
+         
+         
             
        <!-- convidado especial -->
        <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
-          <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          
+          <?php $related_image = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          
       <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
           <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
+          
+          <?php if(count($related_image) > 0): ?>
           <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+          <?php endif; ?>
+          
+          <?php if(count($related_video) > 0): ?>
+          <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+          <?php endif; ?>
+          
           <p>
             <?php echo $displays['convidado-especial'][0]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -389,6 +402,8 @@
      <?php endif; ?>
       <!-- /convidado especial -->
       
+      
+          
       <!-- receitinhas -->
       <?php if(isset($displays['receitinhas'])):?>
         <?php if(count($displays['receitinhas']) > 0): ?>  
