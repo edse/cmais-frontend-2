@@ -44,7 +44,7 @@ if(!isset($asset)){
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->Asset->Sections[0]->getTitle() ?></h2>
+    <h2><?php echo $asset->Asset->Sections[0]->getTitle() ?></h2> 
     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
