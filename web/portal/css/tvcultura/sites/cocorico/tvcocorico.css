@@ -14,7 +14,7 @@
 .bastidores,
 .destaque-home-tv{overflow:hidden;background-color:#1db186; border-radius:9px; margin-left: 0;}
 .destaque-home-tv{margin-left: 0 !important;}
-.destaque-home-tv iframe {margin-top: 0}
+.conteudo .destaque-home-tv iframe {margin-top: 0}
 
 .destaque-home-tv h2{overflow: hidden;height: 38px;font-size:20px; color:#FFF; font-weight:bold; text-align:center;margin:0}
 .destaque-home-tv .btn-destaque{border: none;float: left;height: 40px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;/*font-weight: bold;*/text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 95%;line-height: 42px;}
