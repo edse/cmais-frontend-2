@@ -105,6 +105,7 @@
         ->execute();
     ?>
     <?php if(count($assets) > 0): ?>
+    <?php echo $assets->getSlug().">>>>>>>>>"; ?>  
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
         <?php if($d->getSlug() != $asset->getSlug()):?>
