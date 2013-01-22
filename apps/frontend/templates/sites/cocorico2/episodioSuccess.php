@@ -53,6 +53,7 @@
       ->where('a.id = av.asset_id')
       ->andWhere('a.site_id = ?', (int)$site->id)
       ->andWhere('a.asset_type_id = 6')
+      ->andWhere('s.slug = "episodios"')
       ->andWhere("av.youtube_id != ''")
       ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
       ->orderBy('a.id desc')
