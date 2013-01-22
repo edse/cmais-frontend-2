@@ -672,6 +672,10 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/videos';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/videos');
       }
+      elseif($this->section->slug == "series") {
+        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series'); 
+      }
       elseif($this->section->slug == "clipes-musicais") {
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais');
