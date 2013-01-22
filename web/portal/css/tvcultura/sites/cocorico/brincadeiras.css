@@ -176,7 +176,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque-home-tv { border-color:#F2722F; background:#F2722F; }
 .bastidores { border-color:#F2722F; background:#F2722F; }
 .destaque-2 { margin-top:0; }
-.destaque2 h3 { margin:5px 0; float:left; text-align:center; width: 100%; }
+.destaque2 h3 {float:left; text-align:center; width: 100%; height:30px; line-height: 30px;  }
 .bastidores .topo h3 i.ico-serie {  background: url(/portal/images/capaPrograma/cocorico/ico-serie.jpg) no-repeat; width: 20px; height: 23px; display: block; float: left; margin-top:2px; }
 .bastidores .topo h3 { line-height:26px; width:90%; }
 .bastidores .topo .bac-yellow { border:2px solid #f8b145; }
@@ -221,4 +221,5 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .box-papel-parede ul li a:hover { text-decoration:none; }
 .box-papel-parede ul li .icon-celular { background-position:0 -14px; }
 
-/*.tvcoco p a.convidade { display: none; }*/
+.destaque-1 p, 
+.destaque-2 p { background:#F2722F; }
