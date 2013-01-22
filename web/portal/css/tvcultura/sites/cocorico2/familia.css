@@ -12,10 +12,10 @@
 .topo-familia .navbar .nav > li.familia a { width: 167px; margin:0; padding:0; }
 
 
-.toolFamily .tooltip-inner { background:#76b0b7; color:#fff; text-align:left; font-size: 13px; line-height:15px; }
-.toolFamily .tooltip.in,
-.toolFamily.tooltip { opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
-.toolFamily.tooltip.bottom .tooltip-arrow {  border-bottom-color: #76b0b7;}
+.tooltip-inner { background:#76b0b7; color:#fff; text-align:left; font-size: 13px; line-height:15px; }
+.tooltip.in,
+.tooltip { opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
+.tooltip.bottom .tooltip-arrow {  border-bottom-color: #76b0b7;}
 
 .topo-familia .navbar .nav > li.personagens { margin-right:0; margin-left:0; height:50px;  }
 .topo-familia .navbar .nav { margin:0;}
