@@ -81,7 +81,7 @@
               <div class="am-container" id="am-container">
               <?php
                 //$asset = $displays["galeria"][0]->Asset;
-                $related = Doctrine::getTable('Asset')->findBySiteIdAndAssetTypeID(1169, 2);
+                $related = Doctrine::getTable('Asset')->findBySiteIdAndAssetTypeId(1169, 2);
               ?>
               <?php if(count($related)>0): ?>
                 <?php foreach($related as $d): ?>
