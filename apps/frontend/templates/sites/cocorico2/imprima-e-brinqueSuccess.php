@@ -149,9 +149,6 @@
 <script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('.conteudo').tooltip({ 
-    track: true, 
-    fixPNG: true,
-    left:-60,
     extraClass:"tp-imprimir"
 }); 
 </script>
