@@ -1,3 +1,4 @@
+  <!-- menu em familia -->
   <div class="row-fluid menu topo-familia">
     <div class="navbar">
       <div class="navbar-inner">
@@ -22,3 +23,9 @@
      
     </div>
   </div>
+  <!-- /menu em familia -->
+<script>  
+$('.btn-tooltip').tooltip({ 
+    extraClass:"toolFamily"
+});
+</script>
