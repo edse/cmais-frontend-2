@@ -77,10 +77,16 @@
           <div class="bac-blue">
             <h3>
               <?php
-              echo $section->getSlug(). ">>>>>>>>>";
+              if($section->getSlug() == "agenda"):
+                $icon = "ico-acontece";
+                $title= "acontece";
+              elseif($section->getSlug() == "nocinema"):
+                $icon = "ico-cinema";
+                $title= "em cartaz";
+              endif;
               ?>
-              <i class="ico-naweb ico-acontece"></i>
-              Acontece
+              <i class="ico-naweb <?php echo $icon; ?>"></i>
+              <?php echo $title; ?>
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>
