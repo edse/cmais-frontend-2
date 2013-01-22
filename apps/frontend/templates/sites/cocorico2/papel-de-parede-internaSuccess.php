@@ -101,26 +101,31 @@
         ->andWhere('s.id = sa.section_id')
         ->andWhere('s.slug = ?', "papel-de-parede")
         ->andWhere('a.site_id = ?', (int)$site->id)
-        ->limit(6)
+        ->limit(7)
         ->execute();
     ?>
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
-      <?php 
-        $i=0;
-        foreach($assets as $d):
-          $i++
+      <?php
+      $i=0; 
+      while($i<=6):
+      foreach($assets as $d):
+        $i++;
       ?>
         <?php if($d->getSlug() != $asset->getSlug()):?>
           <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
           <li class="span2">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-              <img src="<?php echo $i.$preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
+              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
               <?php echo $d->getTitle() ?> 
             </a>
           </li>
-        <?php endif;?>
-      <?php endforeach; ?>
+        <?php
+        else:
+          $i--;
+        endif;
+      endforeach;
+    endwhile; ?>
     </ul>
     <?php endif; ?>
   </div>
