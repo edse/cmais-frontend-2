@@ -31,9 +31,11 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
+          <?php /*
           <a href="/somostodossp/regulamento-sp" class="regulamento" title="Clique aqui para participar">Clique aqui para participar
             <i class="ico-borda"></i>
           </a>
+          */ ?>
           <!-- CAPA -->
           <div class="capa grid3">
             
