@@ -19,4 +19,5 @@
 .conteudo .box-radio { *margin-left:5px; }
 .box-radio .destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
 .box-radio .destaque2 .radio .borda { float:left;  }
-.box .tit a { padding:0; }
+.box .tit a { padding:0; margin:0; }
+
