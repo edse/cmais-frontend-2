@@ -46,13 +46,11 @@
   <!--row-->
   <div class="row-fluid relacionados">
     <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><?php echo $section->getTitle()?></a><span></span></div>
-   <?php
+ <?php
     $assets = Doctrine_Query::create()
       ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s, AssetVideo av')
+      ->from('Asset a, SectionAsset sa, Section s')
       ->where('a.id = sa.asset_id')
-      ->where('a.id = av.asset_id')
-      ->andWhere('s.id = av.asset_id')
       ->andWhere('s.id = sa.section_id')
       ->andWhere('s.slug = "episodios"')
       ->andWhere('a.site_id = ?', (int)$site->id)
@@ -63,7 +61,7 @@
       ->limit(6)
       ->execute();
   ?>
-  <?php //echo count($assets).">>>>>>>>>>" ?>
+  <?php echo count($assets).">>>>>>>>>>" ?>
   <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
