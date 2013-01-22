@@ -106,25 +106,22 @@
     ?>
     <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
-      <?php for($i=0;$i<count($assets);$i++): ?>
-        <?php if($assets->getSlug() == $asset->getSlug()):
-            $i--;
-          else:
-            $preview = $assets->retriveRelatedAssetsByRelationType('Preview');
-          ?>
+      <?php foreach($assets as $d): ?>
+        <?php if($d->getSlug() != $asset->getSlug()):?>
+          <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview');?>
           <li class="span2">
-            <a href="<?php echo $assets->retriveUrl() ?>" title="<?php echo $assets->getTitle() ?>">
+            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
               <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
-              <?php echo $assets->getTitle() ?> 
+              <?php echo $d->getTitle() ?> 
             </a>
           </li>
         <?php endif;?>
-      <?php endfor; ?>
+      <?php endforeach; ?>
     </ul>
     <?php endif; ?>
   </div>
   <!-- /row-->
-  
+ 
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
