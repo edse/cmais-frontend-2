@@ -23,4 +23,4 @@
 .box .tit a { padding:0; margin:0 0 0 15px; }
 .box .tit span { *display:none; }
 .destaque-home .box .mais { margin-left:20px; }
-.destaque2 .radio .borda { *display:none; }
+.destaque2 .radio a { padding:0; }
