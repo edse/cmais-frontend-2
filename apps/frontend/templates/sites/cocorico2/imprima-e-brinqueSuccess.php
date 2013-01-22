@@ -146,9 +146,11 @@
 <!-- /container-->
 
 <!--tooltip estilizado-->
+<!--
 <script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('.conteudo').tooltip({ 
     extraClass:"tp-imprimir"
 }); 
+-->
 </script>
