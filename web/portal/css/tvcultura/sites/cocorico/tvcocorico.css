@@ -21,7 +21,7 @@
 .destaque-home-tv .btn-destaque:hover{text-decoration: none; color:#747A3A}
 .destaque-home-tv .destaque span{background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -50px 0;width: 9px;height: 40px;display: block;float: left;}
 .destaque-home-tv .destaque .last{background-position: -40px 0;}
-.destaque-home-tv .destaque{width:101.5%}
+.destaque-home-tv .destaque{width:101.5%; margin-top:-5px;}
 
 .interatividade{padding:1px;}
 .interatividade .topo,
