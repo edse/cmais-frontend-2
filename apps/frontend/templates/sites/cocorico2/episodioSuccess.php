@@ -44,8 +44,8 @@
   </div>
   <!-- /row-->
   <!--row-->
-  <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><?php echo $section->getTitle()?></a><span></span></div>
+  <div class="row-fluid relacionados ytb">
+    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><p><?php echo $section->getTitle()?></p></a><span></span></div>
 
  <?php
     $assets = Doctrine_Query::create()
