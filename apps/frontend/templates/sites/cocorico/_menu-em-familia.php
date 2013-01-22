@@ -1,3 +1,4 @@
+  <!-- menu em familia -->
   <div class="row-fluid menu topo-familia">
     <div class="navbar">
       <div class="navbar-inner">
@@ -12,13 +13,23 @@
               <li><a<?php if($s == 'agenda') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/agenda" title="Agenda">agenda</a></li>
             </ul>
           </li>
-          <li class="joguinhos"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Joguinhos" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
-          <li class="brincadeiras"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Atividades"  href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades"></a></li>
-          <li class="tvcoco"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="TV Cocoricó"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a></li>
+          <li class="joguinhos"><a class="icon btn-tooltip" data-original-title="Joguinhos" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
+          <li class="brincadeiras"><a class="icon btn-tooltip" data-original-title="Atividades"  href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades"></a></li>
+          <li class="tvcoco"><a class="icon btn-tooltip" data-original-title="TV Cocoricó"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a></li>
           <!--li class="diario"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Diário do Júlio"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a></li-->
-          <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+          <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" data-original-title="ver todos"></a></li>
         </ul>
       </div>
      
     </div>
   </div>
+  <!-- /menu em familia -->
+<script>
+$(document).ready(function(){  
+  $('.btn-tooltip').tooltip({
+      title:"teste",
+      selector: true, 
+      placement: "bottom"
+  });
+});
+</script>
