@@ -25,7 +25,7 @@
   </div>
   <!-- /menu em familia -->
 <script>  
-$('#produto-grid').tooltip({ 
+$('.btn-tooltip').tooltip({ 
     extraClass:"toolFamily"
 });
 </script>
