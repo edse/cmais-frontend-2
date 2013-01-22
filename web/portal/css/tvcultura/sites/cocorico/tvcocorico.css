@@ -41,7 +41,7 @@
 .bastidores .item hr.last{display:none;}
 .interatividade .item span,
 .bastidores .item span{color: #FFFFFF; display: block; max-height: 20px; overflow: hidden; text-align: center;}
-.bastidores .img-bast{border-radius: 5px;overflow: hidden;margin: 3px 0; width: 140px; height: 80px;}
+.bastidores .img-bast{border-radius: 5px;overflow: hidden;margin: 3px 0; width: 140px; max-height: /*80px*/ 68px;}
 .interatividade p{color:#FFF;}
 .interatividade form{padding:10px;}
 .interatividade .form-campos{padding:10px 0;position: relative;}

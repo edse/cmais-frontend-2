@@ -362,5 +362,5 @@ input.search-query,
 .bastidores.ytb .item span,
 .ytb .destaques-small li a p { background: #F2722F; color:#fff; height: 20px; position: relative; z-index: 100; overflow:hidden; margin:0; float:left; width: 100% }
 .bastidores.ytb .item img { margin:-11px 0 !important; }
-
+.bastidores.ytb .item span { background:none; }
 /* ytb*/
