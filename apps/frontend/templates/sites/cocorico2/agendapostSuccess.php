@@ -76,6 +76,9 @@
       <div class="topo">
           <div class="bac-blue">
             <h3>
+              <?php
+              echo $section->getSlug(). ">>>>>>>>>";
+              ?>
               <i class="ico-naweb ico-acontece"></i>
               Acontece
               <i class="ico-seta-titulo seta-acontece"></i>
