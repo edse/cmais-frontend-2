@@ -33,7 +33,7 @@ if(!isset($asset)){
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="http://cmais.com.br/cocorico2/atividades"><?php echo $section->getTitle() ?></a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->

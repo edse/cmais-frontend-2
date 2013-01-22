@@ -40,7 +40,7 @@
   	  <?php foreach($displays['descricao'] as $k=>$d):?>   
   <div class="row-fluid conteudo ">    
     <div class="row-fluid">
-      <p><?php echo $d->getDescription() ?></p>  
+      <p><?php echo html_entity_decode(str_replace(array("<p>", "</p>"), array("", ""), $displays['descricao'][0]->Asset->AssetContent->render())) ?></p>  
     </div>  
   </div>
   <?php endforeach; ?>   
