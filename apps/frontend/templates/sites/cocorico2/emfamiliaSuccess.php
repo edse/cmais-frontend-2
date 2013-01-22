@@ -73,10 +73,8 @@
           <h3><?php echo $displays['destaque-1'][0]->getTitle() ?></h3>
           
           <?php if(count($related_image) > 0): ?>
-          <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
-          <?php endif; ?>
-          
-          <?php if(count($related_video) > 0): ?>
+          <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage('original') ?>" 
+          <?php else: ?>
           <img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
           <?php endif; ?>
           
