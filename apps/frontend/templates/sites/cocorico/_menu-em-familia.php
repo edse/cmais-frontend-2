@@ -28,7 +28,8 @@
 $(document).ready(function(){  
   $('.btn-tooltip').tooltip({
       selector: true, 
-      placement: 'bottom'
+      placement: 'bottom',
+       delay: { show: 500, hide:40000 }
   });
 });
 </script>
