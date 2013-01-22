@@ -14,6 +14,7 @@
 .bastidores,
 .destaque-home-tv{overflow:hidden;background-color:#1db186; border-radius:9px; margin-left: 0;}
 .destaque-home-tv{margin-left: 0 !important;}
+.destaque-home-tv iframe {margin-top: 0}
 
 .destaque-home-tv h2{overflow: hidden;height: 38px;font-size:20px; color:#FFF; font-weight:bold; text-align:center;margin:0}
 .destaque-home-tv .btn-destaque{border: none;float: left;height: 40px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;/*font-weight: bold;*/text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 95%;line-height: 42px;}
@@ -231,7 +232,7 @@ input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20
 .paginacao .proximo span { position:absolute; top:0; right:0; margin-right:0; background-position: -17px 0; }
 .paginacao .proximo { position:relative; }
 .conteudo { margin-top:0; }
-.conteudo h3 { font-size:30px; text-transform:uppercase; font-weight:normal; }
+.conteudo h3 { font-size:30px; text-transform:uppercase; font-weight:normal; height:34px; line-height: 34px; }
 .data { margin:5px 0; display:block; }
 .conteudo a.span6 { margin-left:0; display: block; }
 p.frase { color: #6B757D; font-weight: bold; text-align: center; text-transform: uppercase; padding:10px 20px 10px 20px; background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin-bottom: 20px; }
@@ -304,5 +305,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .ytb #convidados a img { margin:-26px 0;  }
 .ytb #convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
 .ytb .destaques-small li a p { background: #1DB186; color:#fff; }
-.conteudo-diverso.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
-.col-esq .span6 .destaque-2 img { max-height:226px; }
+.destaque2.ytb { overflow:hidden; }
+.destaque2.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
+.col-esq .span6 .destaque-2 img { max-height:226px; margin:-26px 0; }
+.destaque2.ytb p { background:#F2722F; position: relative; z-index: 100;}
