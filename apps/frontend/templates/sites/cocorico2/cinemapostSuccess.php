@@ -27,7 +27,7 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="No Cinema"</li>
+     <li><a href="/cocorico2/nocinema">No Cinema</a> </li>
      <li class="active"></li>
   </ul> 
   <!-- /breadcrumb-->
