@@ -59,10 +59,8 @@
       ->limit(6)
       ->execute();
   ?>
-  <?php echo count($assets).">>>>>>>>>>" ?>
-  <?php
-  /*
-  <?php if (count($assets) > 0): ?>
+  <?php //echo count($assets).">>>>>>>>>>" ?>
+  <?php if(count($assets) > 0): ?>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
       <li class="span2">
@@ -74,9 +72,7 @@
      <?php endforeach; ?>
     </ul>
   <?php endif; ?>
-   * 
-   */
-   ?>
+
   </div>
   <!-- /row-->
   
