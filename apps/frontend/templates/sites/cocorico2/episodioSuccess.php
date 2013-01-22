@@ -45,7 +45,7 @@
   <!-- /row-->
   <!--row-->
   <div class="row-fluid relacionados ytb">
-    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><p><?php echo $section->getTitle()?></p></a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl();?>/episodios"><?php echo $section->getTitle()?></a><span></span></div>
 
  <?php
     $assets = Doctrine_Query::create()
@@ -68,7 +68,7 @@
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <?php echo $d->getTitle() ?> 
+          <p><?php echo $d->getTitle() ?></p>          
         </a>
      </li>
      <?php endforeach; ?>
