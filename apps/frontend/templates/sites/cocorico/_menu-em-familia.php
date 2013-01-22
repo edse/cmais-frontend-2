@@ -27,9 +27,8 @@
 <script>
 $(document).ready(function(){  
   $('.btn-tooltip').tooltip({
-      title:"teste",
       selector: true, 
-      placement: "bottom"
+      placement: 'bottom'
   });
 });
 </script>

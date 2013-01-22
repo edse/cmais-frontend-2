@@ -1,5 +1,4 @@
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
-<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 
 <!-- container-->
 <div class="container tudo">
@@ -152,6 +151,7 @@
   })();
 </script>
 <!--tooltip estilizado-->
+<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('#produto-grid').tooltip({ 
     track: true, 
