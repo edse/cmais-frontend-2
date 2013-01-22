@@ -79,17 +79,14 @@ a.destaque1:hover,
 a.destaque2:hover{text-decoration: none}
 
 .destaque-1,
-.destaque-2{ margin-top:30px;position:relative;}
+.destaque-2 { margin-top:30px;position:relative; max-height: 204px; overflow: hidden;}
 
 .col-esq .span6 .destaque-1 img,
-.col-esq .span6 .destaque-2 img { border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; max-height: 145px; width: 100%; }
+.col-esq .span6 .destaque-2 img { border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; /*max-height: 145px; width: 100%;*/ }
 
 .destaque-1 h3,
 .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 0;text-align: center;color: #FDF035 !important;padding: 0; max-height: 34px; overflow:hidden;}
-
-.destaque-1 p,
-.destaque-2 p{position:relative; padding: 3px 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;text-align: center;}
-
+.destaque-1 p, .destaque-2 p { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; bottom: 0; padding: 3px 10px; position: absolute; text-align: center; width: 94%;}
 
 .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
 .conteudo-tv .ico-mais{background-position:0 bottom;}
@@ -305,7 +302,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .ytb #convidados a img { margin:-26px 0;  }
 .ytb #convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
 .ytb .destaques-small li a p { background: #1DB186; color:#fff; }
-.destaque2.ytb { overflow:hidden; }
-.destaque2.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
+.destaque-2.ytb { max-height: 204px; overflow: hidden; position: relative;}
+.destaque-2.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
 .col-esq .span6 .destaque-2 img { max-height:226px; margin:-26px 0; }
-.destaque2.ytb p { background:#F2722F; position: relative; z-index: 100;}
+.destaque-2.ytb p { background:#F2722F; bottom: 0; position: absolute; width: 94%; z-index: 100;}
