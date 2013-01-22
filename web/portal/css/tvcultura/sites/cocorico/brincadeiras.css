@@ -40,10 +40,10 @@
 .tit span { background-position:-10px 0;  }
 .relacionados .tit { /*max-width:150px; */}
 
-.tooltip-inner { background:#f2722f url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 5px 5px; text-align:left; padding-left:25px; font-size: 13px; line-height:15px; }
-.tooltip.in,
-.tooltip { opacity: 1; filter: alpha(opacity=100);}
-.tooltip.right .tooltip-arrow {  border-right-color: #f2722f;}
+.conteudo .tooltip-inner { background:#f2722f url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 5px 5px; text-align:left; padding-left:25px; font-size: 13px; line-height:15px; }
+.conteudo .tooltip.in,
+.conteudo .tooltip { opacity: 1; filter: alpha(opacity=100);}
+.conteudo .tooltip.right .tooltip-arrow {  border-right-color: #f2722f;}
 /* receitinhas */
 
 /* receitinhas especial */
@@ -223,3 +223,5 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 
 .destaque-1 p, 
 .destaque-2 p { background:#F2722F; }
+
+.conteudo .tooltip {  }
