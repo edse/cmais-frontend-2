@@ -49,8 +49,9 @@
     <?php
     $assets = Doctrine_Query::create()
       ->select('a.*')
-      ->from('Asset a, AssetVideo av')
+      ->from('Asset a, AssetVideo av, Section s')
       ->where('a.id = av.asset_id')
+      ->andWhere('s.id = av.asset_id')
       ->andWhere('a.site_id = ?', (int)$site->id)
       ->andWhere('a.asset_type_id = 6')
       ->andWhere('s.slug = "episodios"')
