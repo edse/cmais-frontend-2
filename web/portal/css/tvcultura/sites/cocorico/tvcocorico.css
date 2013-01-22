@@ -41,7 +41,7 @@
 .bastidores .item hr.last{display:none;}
 .interatividade .item span,
 .bastidores .item span{color: #FFFFFF; display: block; max-height: 20px; overflow: hidden; text-align: center;}
-.bastidores .img-bast{border-radius: 5px;overflow: hidden;margin: 3px 0; width: 140px; height: 80px;}
+.bastidores .img-bast{border-radius: 5px;overflow: hidden;margin: 3px 0; width: 140px; max-height: /*80px*/ 68px;}
 .interatividade p{color:#FFF;}
 .interatividade form{padding:10px;}
 .interatividade .form-campos{padding:10px 0;position: relative;}
@@ -304,3 +304,5 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .ytb #convidados a img { margin:-26px 0;  }
 .ytb #convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
 .ytb .destaques-small li a p { background: #1DB186; color:#fff; }
+.conteudo-diverso.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
+.col-esq .span6 .destaque-2 img { max-height:226px; }

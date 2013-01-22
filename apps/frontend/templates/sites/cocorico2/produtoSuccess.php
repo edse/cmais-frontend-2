@@ -156,7 +156,8 @@
 $('#produto-grid').tooltip({ 
     track: true, 
     fixPNG: true,
-    left:-60
+    left:-60,
+    extraClass:"tool1"
 });
 </script>
 <!--/tooltip estilizado-->
