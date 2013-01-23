@@ -93,7 +93,7 @@
 		        $('#slideshow').embedagram({
 		            instagram_id: 45592979,
 		            limit:4,
-		            link_type:'img',
+		            link_type:'web',
 		            thumb_width:140
 		        });
 		    });
