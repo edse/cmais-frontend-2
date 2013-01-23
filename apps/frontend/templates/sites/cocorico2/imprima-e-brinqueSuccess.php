@@ -105,7 +105,7 @@ $assets = $pager->getResults();
     <script>
       function goToPage(i){
         $("#page").val(i);
-        $("#page_form").submit();
+        $("#page_form").submit(); 
       }
     </script>
     <!--// PAGINACAO -->
