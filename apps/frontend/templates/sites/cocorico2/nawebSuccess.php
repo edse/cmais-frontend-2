@@ -91,7 +91,10 @@
        <script type="text/javascript">
 		    $(document).ready(function() {
 		        $('#slideshow').embedagram({
-		            instagram_id: 45592979
+		            instagram_id: 45592979,
+		            limit:4,
+		            link_type:'img',
+		            thumb_width:150
 		        });
 		    });
 		    </script>
