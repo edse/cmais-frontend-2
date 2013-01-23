@@ -72,7 +72,7 @@
          <?php $download_image = $asset->retriveAssetByRelationType("download") ?>;   
       <?php if(count($related_image)>0): ?>
       
-       <ul class="imprimir">
+       <ul class="imprimir"> 
         <!-- figura -->
         <li class="span4">
           <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="<?php echo $$download_image[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
