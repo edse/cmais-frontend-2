@@ -86,7 +86,7 @@
        <div class="box-instagram">
        <!-- SnapWidget -->
        <!--<iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>-->
-       <iframe src="http://embedagram.com/e/widget/45592979/?css=http://mysite.com/embedagram.css" scrolling="no" frameborder="0" style="border:none; width:404px; height:144px; overflow:hidden;" allowTransparency="true"></iframe>
+        <iframe src="http://embedagram.com/e/widget/45592979/?css=http://mysite.com/embedagram.css" scrolling="no" frameborder="0" style="border:none; width:404px; height:144px; overflow:hidden;" allowTransparency="true"></iframe>
        </div> 
      </div>   
      <!-- /instagram -->  
