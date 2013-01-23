@@ -42,7 +42,7 @@ $(document).ready(function() {
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
       		      	     
-      if($('body').find('.popover').is(":visible")){ 
+      if($('body').find('.popover').hasClass('in')){ 
       	//$(this).find("span").addClass('ativo');
       	//$(this).find("span").removeClass('true');
       	alert('1');
