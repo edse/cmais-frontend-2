@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('.btn-popover').popover();
     $('.btn-popover').click(function(){	
       $('.btn-popover').not($(this)).popover('hide');
-      $($(this) + ' span').addClass('ativo');
+      $(this).find('span').addClass('ativo');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
