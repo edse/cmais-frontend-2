@@ -60,7 +60,7 @@
       <!-- /carrossel-->
    <?php endif; ?> 
     <?php endif; ?>
-  
+   
   
   <?php $related_image = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
   <?php $related_video = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
