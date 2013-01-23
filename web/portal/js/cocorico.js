@@ -49,7 +49,7 @@ $(document).ready(function() {
       }); 
     });
     
-    $('.btn-popover').mouseenter(function(){
+    $('.btn-popover').mouseenter(function(){ 
     	if(!$(this).find("span").hasClass('ativo')){
     		//$(this).find('span').addClass('ativo');
     		alert ('nao tenho');
