@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('.btn-popover').popover();
 
     $('.btn-popover').click(function(){	 
-   	  $('span.ativo').removeclass('ativo');
+   	  $('.btn-popover span').not($(this).find("span")).removeClass('ativo');  
       $('.btn-popover').not($(this)).popover('hide');
       $(this).find("span").toggleClass('ativo');
       $(this).popover({
