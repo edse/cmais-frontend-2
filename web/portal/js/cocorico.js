@@ -49,16 +49,14 @@ $(document).ready(function() {
       }); 
     });
     
-    $('.btn-popover').mouseover(function(){
+    $('.btn-popover').mouseenter(function(){ 
     	if(!$(this).find("span").hasClass('ativo')){
-    		//$(this).find('span').addClass('ativo');
-    		alert ('nao tenho');
+    		$(this).find('span').addClass('ativo');
     	}
     });
     $('.btn-popover').mouseleave(function(){
     	if($(this).find("span").hasClass('ativo')){
-    		//$(this).find('span').addClass('ativo');
-    		alert ('tenho');
+    		$(this).find('span').removeClass('ativo');
     	}
     });
     

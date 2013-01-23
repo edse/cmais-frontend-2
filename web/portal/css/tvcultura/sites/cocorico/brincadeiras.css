@@ -178,7 +178,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque-2 { margin-top:0; }
 .destaque2 h3 {float:left; text-align:center; width: 100%; height:30px; line-height: 30px;  }
 .bastidores .topo h3 i.ico-serie {  background: url(/portal/images/capaPrograma/cocorico/ico-serie.jpg) no-repeat; width: 20px; height: 23px; display: block; float: left; margin-top:2px; }
-.bastidores .topo h3 { line-height:26px; width:90%; }
+.bastidores .topo h3 { line-height:26px; width:90%; height:26px; }
 .bastidores .topo .bac-yellow { border:2px solid #f8b145; }
 .ico-seta-titulo {right: 40%; top:26px; background-position:0 -13px;}
 .bastidores .topo { background-image:url(/portal/images/capaPrograma/cocorico/atividades-pattern.jpg);  }
