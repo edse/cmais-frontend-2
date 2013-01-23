@@ -94,7 +94,7 @@
 		            instagram_id: 45592979,
 		            limit:4,
 		            link_type:'img',
-		            thumb_width:150
+		            thumb_width:140
 		        });
 		    });
 		    </script>
