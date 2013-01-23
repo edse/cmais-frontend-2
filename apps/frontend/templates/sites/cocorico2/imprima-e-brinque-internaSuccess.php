@@ -85,7 +85,7 @@
             alt="nome brincadeira" /><span></span></a>
             
           <div id="div1" style="display: none;page-break-after:always;">
-            <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+            <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <?php endif; ?>  
