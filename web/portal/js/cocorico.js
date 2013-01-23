@@ -41,7 +41,7 @@ $(document).ready(function() {
     $('.btn-popover').click(function(){	
       $('.btn-popover span').removeClass('ativo');    
       $('.btn-popover').not($(this)).popover('hide');
-      $(this).find('span').addClasss('ativo')
+      $(this).find('span').addClass('ativo')
       $(this).popover({
         trigger:'click',
         hide: 9999999999
