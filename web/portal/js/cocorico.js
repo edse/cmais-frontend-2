@@ -39,7 +39,6 @@ $(document).ready(function() {
     /* popover joguinhos*/
     $('.btn-popover').popover();
     $('.btn-popover').click(function(){
-    alert('oi');
       $('span').removeClass('ativo');
       $('.btn-popover').not($(this)).popover('hide');
       $(this).popover({
