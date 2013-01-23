@@ -50,7 +50,10 @@ $(document).ready(function() {
     });
     
     $('.btn-popover').hover(function(){
-    	$(this).find('span').css({'width': '29px', 'height':'28px'});
+    	$(this).find('span').addClass('ativo');
+    });
+    $('.btn-popover').mouseleave(function(){
+    	$(this).find('span').removeClass('ativo');
     });
     
     /* lista zoom*/
