@@ -39,9 +39,8 @@ $(document).ready(function() {
     /* popover joguinhos*/
     $('.btn-popover').popover();
     $('.btn-popover').click(function(){	
-      $('.btn-popover span').removeClass('ativo');    
       $('.btn-popover').not($(this)).popover('hide');
-      $(this).find('span').addClass('ativo')
+      $('btn-popover span').addClass('ativo');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
