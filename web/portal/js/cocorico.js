@@ -49,6 +49,10 @@ $(document).ready(function() {
       }); 
     });
     
+    $('.btn-popover').hover(function(){
+    	$(this).find('span').css({'width': '29px', 'height':'28px'});
+    });
+    
     /* lista zoom*/
     $('.zoom li:nth-child(4)').css('margin-left', '0');
     $('.zoom li:nth-child(7)').css('margin-left', '0');
