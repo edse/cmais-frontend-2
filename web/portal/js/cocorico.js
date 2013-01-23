@@ -43,24 +43,16 @@ $(document).ready(function() {
    	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
       		      	     
       if($('body').find('.popover').hasClass('in')){ 
-      	$(this).find("span").addClass('ativo');
-      	$(this).find("span").addClass('true');
-      	//alert('1');
+      	$(this).find("span").addClass('ativo').addClass('true');
       }else{
-      	$(this).find("span").removeClass('ativo');
-      	$(this).find("span").removeClass('true');
-      	//alert('0');
+      	$(this).find("span").removeClass('ativo').removeClass('true');
       }
-      	 
-      		
+   		
       $('.btn-popover').not($(this)).popover('hide');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
       });
-      
-      
-      
     });
     
     $('.btn-popover').mouseenter(function(){ 
