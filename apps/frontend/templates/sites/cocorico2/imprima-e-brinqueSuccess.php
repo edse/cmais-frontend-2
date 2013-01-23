@@ -27,7 +27,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
      <li class="active">Imprima e Brinque</li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Joguinhos</h2>
+  <h2 class="tit-pagina">Imprima e Brinque</h2> 
   
   <!--row-->
   <?php if(count($assets) > 0): ?>
