@@ -81,7 +81,7 @@
           <a href="javascript:printDiv('div1')" class="btn-tooltip print" 
           datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" 
             rel="tooltip" data-placement="bottom" data-original-title="imprimir">
-            <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" 
+            <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
             
           <div id="div1" style="display: none;page-break-after:always;">
