@@ -41,8 +41,9 @@ $(document).ready(function() {
 
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
-   	  if($(this).find("span").hasClass('ativo'))
-      	$(this).removeClass('ativo');
+   	  if(!$('body').find(".popover"))
+      	alert('nao encontrei');
+      	//$(this).removeClass('ativo');
       $('.btn-popover').not($(this)).popover('hide');
       $(this).popover({
         trigger:'click',
