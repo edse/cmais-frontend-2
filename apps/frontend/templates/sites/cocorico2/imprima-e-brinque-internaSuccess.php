@@ -133,7 +133,7 @@
       <?php endif; ?>   
     </div>
   </div>
-  <!--/row-->
+  <!--/row--> 
   
   <!--row-->
   <div class="row-fluid relacionados">
