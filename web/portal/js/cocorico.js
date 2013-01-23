@@ -44,7 +44,7 @@ $(document).ready(function() {
       $(this).popover({
         trigger:'click',
         hide: 9999999999
-      });
+      }); 
     });
     
     /* lista zoom*/
