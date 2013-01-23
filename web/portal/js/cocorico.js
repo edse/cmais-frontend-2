@@ -42,14 +42,14 @@ $(document).ready(function() {
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').not($(this).find("span")).removeClass('ativo');  
       $('.btn-popover').not($(this)).popover('hide');
-      $(this).find("span").addClass('ativo');
+      $(this).find("span").toggleClass('ativo');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
       }); 
     });
     
-    $('.btn-popover').hover(function(){
+    $('.btn-popover').mouseover(function(){
     	if(!$(this).find("span").hasClass('ativo')){
     		//$(this).find('span').addClass('ativo');
     		alert ('nao tenho');
