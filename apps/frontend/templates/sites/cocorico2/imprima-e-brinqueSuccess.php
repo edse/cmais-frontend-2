@@ -17,9 +17,9 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/atividades">Atividades</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
   
@@ -29,7 +29,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2>nome da brincadeira</h2>
+    <h2><?php echo $asset->getTitle() ?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -45,80 +45,92 @@
   
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis dolor eget orci laoreet porta. In et gravida purus. Aliquam erat volutpat. Vivamus quis elit odio, in luctus diam. Donec eu purus vitae dolor egestas rhoncus sed id lorem. Vivamus id quam arcu. Phasellus ac dolor non odio metus.</p>
+    <p class="span12"><?php echo $asset->getDescription() ?></p>
     <div class="span6 esq">
     <p class="alerta"><span></span>tenha Cuidado! peça ajuda a um adulto!</p>
-    <h3>Você vai precisar de:</h3>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
     
-    <h3>Passo 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    
-    <h3>Passo 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    
-    <h3>Passo 3</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    </div>
+    <p><?php echo html_entity_decode($asset->Asset->AssetContent->render()) ?></p>
+
+
+  </div>
     <div class="span6">
-      <iframe width="460" height="259" src="http://www.youtube.com/embed/1e87dwiz0yg?window=opaque" frameborder="0" allowfullscreen></iframe>
-      <ul class="imprimir">
+      <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       <?php if(count($related_video)>0): ?>
+      <?php 
+      if (count($related_video) > 0):
+        $offset = "0m0s";
+        if($related_video[0]->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+          $offset = $p[0]."m".$p[1]."s";
+        }
+      ?>
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      <?php endif; ?>
+       <?php endif; ?>     
+      
+         <?php $related_image = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>     
+      <?php if(count($related_image)>0): ?>
+      
+       <ul class="imprimir">
         <!-- figura -->
         <li class="span4">
           <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div1" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
+            <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
+        
         <!-- figura -->
         <li class="span4">
           <a  href="javascript:printDiv('div2')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div2" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" style="width:95%">
+            <img src="<?php echo $related_image[1]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
+        
         <!-- figura -->
         <li class="span4">
           <a style="margin-bottom:10px;" href="javascript:printDiv('div3')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div3" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
+            <img src="<?php echo $related_image[2]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
+        
         <!-- figura -->
         <li class="span4">
           <a  href="javascript:printDiv('div4')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div4" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
+            <img src="<?php echo $related_image[3]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
+        
         <!-- figura -->
         <li class="span4">
           <a  href="javascript:printDiv('div5')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div5" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
+            <img src="<?php echo $related_image[4]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
+        
         <!-- figura -->
         <li class="span4">
           <a  href="javascript:printDiv('div6')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div6" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
+            <img src="<?php echo $related_image[5]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
         <!-- /figura -->
       </ul>
+      
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
+      <?php endif; ?>   
     </div>
   </div>
   <!--/row-->
