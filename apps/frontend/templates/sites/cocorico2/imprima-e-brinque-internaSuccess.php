@@ -74,7 +74,7 @@
        <ul class="imprimir">
         <!-- figura -->
         <li class="span4">
-          <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
+          <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
           <div id="div1" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
