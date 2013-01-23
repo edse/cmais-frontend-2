@@ -201,7 +201,7 @@ input.search-query,
 .destaques .span4 { position:relative; }
 .destaques a.span12 {  margin:0; line-height18px; min-height:24px !important; padding:0 0 0 35px; text-align:left; text-shadow:none; }
 .destaques span { width: 29px; height:18px; background-repeat: no-repeat; display:block; position:absolute; left:0; z-index: 10000; }
-.destaques span.ativo,
+.destaques span.ativo{ width: 29px; height:28px; bottom:-5px;}
 .destaques span:hover { width: 29px; height:28px; }
 .destaques .btn { color:#fff; }
 .popover-title { display: none !important; }

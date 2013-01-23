@@ -36,7 +36,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <?php $related = $assets[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
       <a href="<?php echo $assets[0]->retriveUrl() ?>" title="<?php echo $assets[0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[0]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[0]->getDescription() ?>" data-original-title="<?php echo $assets[0]->getTitle() ?>"><span class=""></span><?php echo $assets[0]->getTitle() ?></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[0]->getDescription() ?>" data-original-title="<?php echo $assets[0]->getTitle() ?>"><span></span><?php echo $assets[0]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[0])) ?>
       <!--/RANKING -->
@@ -46,7 +46,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <?php $related = $assets[1]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
       <a href="<?php echo $assets[1]->retriveUrl() ?>" title="<?php echo $assets[1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[1]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[1]->getDescription() ?>" data-original-title="<?php echo $assets[1]->getTitle() ?>"><span class=""></span><?php echo $assets[1]->getTitle() ?></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[1]->getDescription() ?>" data-original-title="<?php echo $assets[1]->getTitle() ?>"><span></span><?php echo $assets[1]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[1])) ?>
       <!--/RANKING -->
@@ -56,7 +56,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <?php $related = $assets[2]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
       <a href="<?php echo $assets[2]->retriveUrl() ?>" title="<?php echo $assets[2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[2]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[2]->getDescription() ?>" data-original-title="<?php echo $assets[2]->getTitle() ?>"><span class=""></span><?php echo $assets[2]->getTitle() ?></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[2]->getDescription() ?>" data-original-title="<?php echo $assets[2]->getTitle() ?>"><span></span><?php echo $assets[2]->getTitle() ?></a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[2])) ?>
       <!--/RANKING -->
