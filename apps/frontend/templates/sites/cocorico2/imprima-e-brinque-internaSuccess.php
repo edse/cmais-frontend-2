@@ -67,7 +67,7 @@
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
       <?php endif; ?>
        <?php endif; ?>     
-      
+       
          <?php $preview_image = $asset->retriveRelatedAssetsByRelationType("preview") ?>;    
          <?php $download_image = $asset->retriveRelatedAssetsByRelationType("download") ?>;   
       <?php if(count($related_image)>0): ?>
