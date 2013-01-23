@@ -41,21 +41,22 @@ $(document).ready(function() {
 
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
-   	  if(!$('body').has(".popover"))
-      	alert('nao encontrei');
-      	//$(this).removeClass('ativo');
-      	
+      	     
+      if($(this).find("span").hasClass('true'))
+      	$(this).find("span").addClass('ativo');
+      	$(this).find("span").removeClass('true');
+      else
+      	$(this).find("span").removeClass('ativo');
+      	$(this).find("span").addClass('true');	 
+      		
       $('.btn-popover').not($(this)).popover('hide');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
       });
       
-      $(this).find("span").addClass('true')
-      if($(this).find("span").hasClass('true'))
-      	$(this).find("span").addClass('ativo');
-      else
-      	$(this).find("span").removeClass('ativo');	 
+      
+      
     });
     
     $('.btn-popover').mouseenter(function(){ 
