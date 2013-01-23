@@ -49,7 +49,7 @@
     <div class="span6 esq">
     <p class="alerta"><span></span>tenha Cuidado! peça ajuda a um adulto!</p>
     
-    <p><?php echo html_entity_decode($asset->Asset->AssetContent->render()) ?></p>
+    <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
 
 
   </div>
