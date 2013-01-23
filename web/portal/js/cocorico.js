@@ -47,9 +47,9 @@ $(document).ready(function() {
         hide: 9999999999
       });
       if($(this).find("span").hasClass('ativo'))
-      	$(this).find("span").removeClass('ativo');
+      	$(this).find("span").addClass('ativo');
       else
-      	$(this).find("span").addClass('ativo');	 
+      	$(this).find("span").removeClass('ativo');	 
     });
     
     $('.btn-popover').mouseenter(function(){ 
