@@ -42,17 +42,6 @@ $(document).ready(function() {
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
       		      	     
-      if($('body').index('.popover')){ 
-      	//$(this).find("span").addClass('ativo');
-      	//$(this).find("span").removeClass('true');
-      	alert('1');
-      }else{
-      	//$(this).find("span").removeClass('ativo');
-      	//$(this).find("span").addClass('true');
-      	alert('0');
-      }
-      	 
-      		
       $('.btn-popover').not($(this)).popover('hide');
       $(this).popover({
         trigger:'click',
@@ -63,6 +52,17 @@ $(document).ready(function() {
       
     });
     
+    $('.btn-popover').mousedown(function(){
+      if($('body').index('.popover')){ 
+      	//$(this).find("span").addClass('ativo');
+      	//$(this).find("span").removeClass('true');
+      	alert('1');
+      }else{
+      	//$(this).find("span").removeClass('ativo');
+      	//$(this).find("span").addClass('true');
+      	alert('0');
+      }
+    });
     $('.btn-popover').mouseenter(function(){ 
     	if(!$(this).find("span").hasClass('ativo')){
     		$(this).find('span').addClass('ativo');
