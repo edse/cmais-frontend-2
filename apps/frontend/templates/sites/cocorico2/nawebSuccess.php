@@ -87,7 +87,7 @@
        <!-- SnapWidget -->
        <!--<iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>-->
        <!--embedagram-->
-       <script type="text/javascript" src="./js/jquery-embedagram.pack.js"></script> 
+       <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
        <script type="text/javascript">
 		    $(document).ready(function() {
 		        $('#slideshow').embedagram({
