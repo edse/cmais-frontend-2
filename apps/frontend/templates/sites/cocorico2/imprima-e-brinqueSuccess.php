@@ -1,9 +1,12 @@
-<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
+<?php 
+$assets = $pager->getResults();
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
-<div class="container tudo">
- <!-- row-->
+<div class="container tudo receitinhas">
+  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
       <!--menu principal-->
@@ -15,142 +18,108 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Nome do Joguinho</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Receitinhas</li>
   </ul>
   <!-- /breadcrumb-->
   
-  <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
-  <!-- /btn voltar-->
-  
-  <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
-    <h2>nome da brincadeira</h2>
-    <span></span>
-    <ul class="likes">
-      <li class="ativo"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+  <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="tit-pagina">Receitinhas</a>
+  <div class="zaza"></div>
+
+  <?php if(count($favoritos) > 0): ?>
+  <div class="row-fluid conteudo destaques ytb">
+    <?php if(isset($favoritos[0])): ?>
+      <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[0]->getTitle() ?>"><span class=""></span><?php echo $favoritos[0]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
+    
+    <?php if(isset($favoritos[1])): ?>
+      <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[1]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
+    
+    <?php if(isset($favoritos[2])): ?>
+      <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
+    <div class="span4">
+      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[2]->getTitle() ?>" ><span class=""></span><?php echo $favoritos[2]->getTitle() ?></a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
   </div>
-  <a href="#" class="curtir" title="Curtir">curtir</a>
-  <a href="#" class="curtir disabled" title="Curtir">curtir</a>
-  <!-- titulo da pagina -->
+  <!-- /row--> 
+  <?php endif; ?>
   
   <!--row-->
-  <div class="row-fluid conteudo">
-    <p class="span12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis dolor eget orci laoreet porta. In et gravida purus. Aliquam erat volutpat. Vivamus quis elit odio, in luctus diam. Donec eu purus vitae dolor egestas rhoncus sed id lorem. Vivamus id quam arcu. Phasellus ac dolor non odio metus.</p>
-    <div class="span6 esq">
-    <p class="alerta"><span></span>tenha Cuidado! peça ajuda a um adulto!</p>
-    <h3>Você vai precisar de:</h3>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
-    <p>cola</p>
-    
-    <h3>Passo 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    
-    <h3>Passo 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    
-    <h3>Passo 3</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum tellus. Nunc porttitor sagittis pretium. Curabitur rutrum risus a magna placerat vitae mollis quam mattis. Sed sit amet mauris felis, in aliquet ante. Vestibulum ante volutpat.</p>
-    </div>
-    <div class="span6">
-      <iframe width="460" height="259" src="http://www.youtube.com/embed/1e87dwiz0yg?window=opaque" frameborder="0" allowfullscreen></iframe>
-      <ul class="imprimir">
-        <!-- figura -->
-        <li class="span4">
-          <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div1" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-        <!-- figura -->
-        <li class="span4">
-          <a  href="javascript:printDiv('div2')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div2" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/image-6-b/bf6eac5ee9ab32f370c0c6b83fbd66f86e545f07.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-        <!-- figura -->
-        <li class="span4">
-          <a style="margin-bottom:10px;" href="javascript:printDiv('div3')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div3" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-        <!-- figura -->
-        <li class="span4">
-          <a  href="javascript:printDiv('div4')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div4" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-        <!-- figura -->
-        <li class="span4">
-          <a  href="javascript:printDiv('div5')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div5" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-        <!-- figura -->
-        <li class="span4">
-          <a  href="javascript:printDiv('div6')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira.jpg" alt="nome brincadeira" /><span></span></a>
-          <div id="div6" style="display: none;page-break-after:always;">
-            <img src="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" style="width:95%">
-          </div>
-        </li>
-        <!-- /figura -->
-      </ul>
-      <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
-      <!--/IFRAME PARA IMPRESSAO EM IE -->
-    </div>
-  </div>
-  <!--/row-->
-  
-  <!--row-->
-  <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Imprima e brinque</a><span></span></div>
+  <?php if(count($pager) > 0): ?>
+  <div class="row-fluid conteudo ytb">
     <ul class="destaques-small">
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/96f844e33d17d83682e7e03e927d5c200114fcc2.jpg" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+    <?php foreach($pager->getResults() as $d): ?>
+      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+          <p><?php echo $d->getTitle() ?></p>
+        </a>
+      </li>
+    <?php endforeach; ?>
     </ul>
   </div>
-  <!-- /row-->
- 
+
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit(); 
+      }
+    </script>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
+
+  <?php else: ?>
+    <p>Nenhuma receitinha encontrada.</p> 
+  <?php endif; ?>
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
+  
+  <!-- /rodape-->
 </div>
 <!-- /container-->
-
-<!--tooltip estilizado-->
-<!--
-<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
-<script type="text/javascript">
-$('.conteudo').tooltip({ 
-    extraClass:"tp-imprimir"
-}); 
--->
-</script>

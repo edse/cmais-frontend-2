@@ -49,6 +49,13 @@ $(document).ready(function() {
       }); 
     });
     
+    $('.btn-popover').hover(function(){
+    	$(this).find('span').addClass('ativo');
+    });
+    $('.btn-popover').mouseleave(function(){
+    	$(this).find('span').removeClass('ativo');
+    });
+    
     /* lista zoom*/
     $('.zoom li:nth-child(4)').css('margin-left', '0');
     $('.zoom li:nth-child(7)').css('margin-left', '0');
