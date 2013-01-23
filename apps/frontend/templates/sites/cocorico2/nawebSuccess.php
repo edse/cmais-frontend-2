@@ -99,7 +99,7 @@
 		    });
 		    </script>
 		    <style>
-		    #slideshow li{width: 140px;float: left;margin: 0 6px 6px 0;}
+		    #slideshow li{width: 140px;float: left;margin: 0 6px 6px 0;} 
 		    </style>
 		    <ul id="slideshow" class="jcarousel-skin-tango"></ul>
        <!--/embedagram-->
