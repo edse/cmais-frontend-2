@@ -21,7 +21,7 @@ if($_REQUEST["n"]!="")
 // Write the string
 //imagestring($im, $fontSize, $leftTextPos, $height-28, $text, $textColor);
 //imagestring($im, $fontSize, 18, 150, $text, $textColor);
-imagettftext($im, 100, 0, 850, 420, $black, '/var/frontend/web/actions/cocorico/EmileeHandwriting.ttf', $text);
+imagettftext($im, 100, 0, 650, 920, $black, '/var/frontend/web/actions/cocorico/EmileeHandwriting.ttf', $text);
 // Output the image
 header('Content-type: image/png');
 imagepng($im);
