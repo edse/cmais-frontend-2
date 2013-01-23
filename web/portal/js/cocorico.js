@@ -38,14 +38,19 @@ $(document).ready(function() {
    
     /* popover joguinhos*/
     $('.btn-popover').popover();
+
     $('.btn-popover').click(function(){	 
-   	  $('.btn-popover').find("span").removeClass('ativo');
+   	  $('.btn-popover span').not($(this).find("span")).removeClass('ativo');  
       $('.btn-popover').not($(this)).popover('hide');
-      $(this).find("span").addClass('ativo');
+      $(this).find("span").toggleClass('ativo');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
       }); 
+    });
+    
+    $('.btn-popover').hover(function(){
+    	$(this).find('span').css({'width': '29px', 'height':'28px'});
     });
     
     /* lista zoom*/
