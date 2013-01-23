@@ -68,8 +68,8 @@
       <?php endif; ?>
        <?php endif; ?>     
       
-         <?php $preview_image = $asset->retriveImageByRelationType("preview") ?>;    
-         <?php $download_image = $asset->retriveImageByRelationType("download") ?>;   
+         <?php $preview_image = $asset->retriveAssetByRelationType("preview") ?>;    
+         <?php $download_image = $asset->retriveAssetByRelationType("download") ?>;   
       <?php if(count($related_image)>0): ?>
       
        <ul class="imprimir">
