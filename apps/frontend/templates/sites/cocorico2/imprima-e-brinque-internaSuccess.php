@@ -68,13 +68,14 @@
       <?php endif; ?>
        <?php endif; ?>     
       
-         <?php $related_image = $asset->retriveImageUrlByImageUsage("preview") ?>     
+         <?php $preview_image = $asset->retriveImageByRelationType("preview") ?>;    
+         <?php $download_image = $asset->retriveImageByRelationType("download") ?>;   
       <?php if(count($related_image)>0): ?>
       
        <ul class="imprimir">
         <!-- figura -->
         <li class="span4">
-          <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a href="javascript:printDiv('div1')" class="btn-tooltip print" datasrc="<?php echo $$download_image[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div1" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
@@ -83,7 +84,7 @@
         
         <!-- figura -->
         <li class="span4">
-          <a  href="javascript:printDiv('div2')" class="btn-tooltip print" datasrc="<?php echo $related_image[1]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[1]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a  href="javascript:printDiv('div2')" class="btn-tooltip print" datasrc="<?php echo $$download_image[1]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[1]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div2" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[1]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
@@ -92,7 +93,7 @@
         
         <!-- figura -->
         <li class="span4">
-          <a style="margin-bottom:10px;" href="javascript:printDiv('div3')" class="btn-tooltip print" datasrc="<?php echo $related_image[2]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[2]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a style="margin-bottom:10px;" href="javascript:printDiv('div3')" class="btn-tooltip print" datasrc="<?php echo $$download_image[2]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[2]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div3" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[2]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
@@ -101,7 +102,7 @@
         
         <!-- figura -->
         <li class="span4">
-          <a  href="javascript:printDiv('div4')" class="btn-tooltip print" datasrc="<?php echo $related_image[3]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[3]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a  href="javascript:printDiv('div4')" class="btn-tooltip print" datasrc="<?php echo $download_image[3]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[3]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div4" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[3]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
@@ -110,7 +111,7 @@
         
         <!-- figura -->
         <li class="span4">
-          <a  href="javascript:printDiv('div5')" class="btn-tooltip print" datasrc="<?php echo $related_image[4]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[4]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a  href="javascript:printDiv('div5')" class="btn-tooltip print" datasrc="<?php echo $download_image[4]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[4]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div5" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[4]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
@@ -119,7 +120,7 @@
         
         <!-- figura -->
         <li class="span4">
-          <a  href="javascript:printDiv('div6')" class="btn-tooltip print" datasrc="<?php echo $related_image[5]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[5]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
+          <a  href="javascript:printDiv('div6')" class="btn-tooltip print" datasrc="<?php echo $download_image[5]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_image[5]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div6" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_image[5]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
