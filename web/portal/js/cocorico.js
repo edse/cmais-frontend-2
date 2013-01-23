@@ -42,7 +42,7 @@ $(document).ready(function() {
     $('.btn-popover').click(function(){	 
    	  $('.btn-popover span').not($(this).find("span")).removeClass('ativo');  
       $('.btn-popover').not($(this)).popover('hide');
-      $(this).find("span").toggleClass('ativo');
+      $(this).find("span").addClass('ativo');
       $(this).popover({
         trigger:'click',
         hide: 9999999999
@@ -50,10 +50,16 @@ $(document).ready(function() {
     });
     
     $('.btn-popover').hover(function(){
-    	$(this).find('span').addClass('ativo');
+    	if(!$(this).find("span").hasClass('ativo')){
+    		//$(this).find('span').addClass('ativo');
+    		alert ('nao tenho');
+    	}
     });
     $('.btn-popover').mouseleave(function(){
-    	$(this).find('span').removeClass('ativo');
+    	if($(this).find("span").hasClass('ativo')){
+    		//$(this).find('span').addClass('ativo');
+    		alert ('tenho');
+    	}
     });
     
     /* lista zoom*/
