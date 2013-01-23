@@ -88,7 +88,7 @@
         <!-- /figura -->
         
         <!-- figura -->
-        <?php if(count($related_preview[1])>0): ?>
+        <?php if(count($related_preview)>0): ?>
         <li class="span4">
           <a  href="javascript:printDiv('div2')" class="btn-tooltip print" datasrc="<?php echo $related_download[1]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div2" style="display: none;page-break-after:always;">
@@ -99,7 +99,7 @@
         <!-- /figura -->
         
         <!-- figura -->
-        <?php if(count($related_preview[2])>0): ?>
+        <?php if(count($related_preview)>1): ?>
         <li class="span4">
           <a style="margin-bottom:10px;" href="javascript:printDiv('div3')" class="btn-tooltip print" datasrc="<?php echo $related_download[2]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div3" style="display: none;page-break-after:always;">
@@ -110,7 +110,7 @@
         <!-- /figura -->
         
         <!-- figura -->
-        <?php if(count($related_preview[3])>0): ?>
+        <?php if(count($related_preview)>2): ?>
         <li class="span4">
           <a  href="javascript:printDiv('div4')" class="btn-tooltip print" datasrc="<?php echo $related_download[3]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div4" style="display: none;page-break-after:always;">
@@ -121,7 +121,7 @@
         <!-- /figura -->
         
         <!-- figura -->
-        <?php if(count($related_preview[4])>0): ?>
+        <?php if(count($related_preview)>3): ?>
         <li class="span4">
           <a  href="javascript:printDiv('div5')" class="btn-tooltip print" datasrc="<?php echo $related_download[4]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div5" style="display: none;page-break-after:always;">
@@ -132,7 +132,7 @@
         <!-- /figura -->
         
         <!-- figura -->
-        <?php if(count($related_preview[5])>0): ?>
+        <?php if(count($related_preview)>4): ?>
         <li class="span4">
           <a  href="javascript:printDiv('div6')" class="btn-tooltip print" datasrc="<?php echo $related_download[5]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("original") ?>" alt="nome brincadeira" /><span></span></a>
           <div id="div6" style="display: none;page-break-after:always;">
