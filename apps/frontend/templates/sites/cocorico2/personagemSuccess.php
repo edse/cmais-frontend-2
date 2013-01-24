@@ -115,7 +115,7 @@
         <h2>Autografo</h2>
         <div class="divisao"></div>
         <p>Escreva seu nome no campo abaixo e clique no botão
-        <bold>
+        <bold> 
           BAIXAR
         </bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
         <div class="control-group g-nome">
