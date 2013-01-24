@@ -10,7 +10,7 @@
 .row-fluid .topo-coco { *margin-top:45px; *clear: both; }
 .relacionados .tit  {*max-width:300px; background:none !important;} 
 .tit a { padding-right:0; margin-right:9px; text-align:center; }
-.menu .lista-personagens { min-height:105px; }
+/*.menu .lista-personagens { min-height:105px; }*/
 #convidados .span4 { margin-left:10px; }
 .paginacao .proximo { *padding-right:25px;}
 .conteudo .span3.bastidores { margin-left:10px; float:left; }
@@ -25,6 +25,6 @@
 .destaque-home .box .mais { margin-left:20px; }
 .destaque2 .radio a { padding:0; }
 .imprimir li.span4 { margin-left:5px !important; height:87px; overflow:hidden; }
-.menu .lista-personagens li img { width: 89px; }
+/*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
 .bastidores.span4 { min-height: 150px; }
