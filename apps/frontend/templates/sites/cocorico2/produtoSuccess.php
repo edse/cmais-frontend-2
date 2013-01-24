@@ -45,8 +45,8 @@
     	   <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
          
-         <?php if(isset($images)): ?> 
-           <?php if(count($images)>0): ?>
+        
+           <?php if(count($related_preview)>0): ?>
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
         <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" alt="produto"></a>
@@ -105,7 +105,7 @@
       </div>
     </div>
      <?php endif; ?> 
-      <?php endif; ?>
+    
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
     <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
     </div>
