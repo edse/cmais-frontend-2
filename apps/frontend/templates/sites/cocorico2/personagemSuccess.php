@@ -106,7 +106,13 @@
         <?php endif; ?>
       </div>
     </div>
+    
+
     <?php if(isset($displays["autografo"][0])): ?>
+      
+    <?php $related_preview = $displays['autografo'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+      <?php $related_download = $displays['autografo'][0]->Asset->retriveRelatedAssetsByRelationType('Download'); ?>  
+
     <div class="span4 autografo">
       <form class="form-horizontal">
         <h2>Autografo</h2>
@@ -116,13 +122,13 @@
           BAIXAR
         </bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
         <div class="control-group g-nome">
-          <label class="control-label nome" for="nome"></label>
+          <label class="control-label nome" for="nome"></label> 
           <div class="controls">
             <input type="text" id="nome" placeholder="Seu nome">
           </div>
         </div>
         <div class="control-group g-autografo">
-          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
+          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
             <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">enviar</a>
@@ -135,7 +141,7 @@
       $(document).ready(function() {
         $("#getimage").click(function() {
           if($('#nome').val())
-            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $displays["autografo"][0]->Asset->AssetImage->getFile().".".$displays["autografo"][0]->Asset->AssetImage->getExtension() ?>');
+            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
           else
             $('#nome').focus();
         });

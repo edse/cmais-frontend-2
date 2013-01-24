@@ -101,13 +101,13 @@
         </div>
         <div class="modal-footer">
           <ul>
-          	<li class="span2"><a href="#" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="#" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+          	<li class="span2"><a href="" title=""><img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
           </ul>
         </div>
       </div>
@@ -122,7 +122,7 @@
       </div>  
       <!-- pinterst -->
       <div id="rede-pinterest">
-        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
       </div>
       <!-- google+ -->
       <div id="rede-google">
@@ -130,7 +130,7 @@
       </div>
     </div>
      <?php endif; ?> 
-      <?php endif; ?>
+    
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
     <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
     </div>

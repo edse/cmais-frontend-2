@@ -367,6 +367,7 @@
         <hr/>
         <!-- /item -->
       </div>
+      
       <!-- /bastidores -->
        <?php endif; ?>
       <?php endif; ?>
@@ -384,7 +385,7 @@
             <i class="ico-mais"></i>
           </p>
          </div>
-       </a>
+       </a>  
        <?php endif; ?>
      <?php endif; ?>
       <!-- /convidado especial -->

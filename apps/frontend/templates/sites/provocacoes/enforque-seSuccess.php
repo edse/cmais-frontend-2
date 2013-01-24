@@ -5,7 +5,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
+<?php /*
 <script type="text/javascript">
+
   $(function(){ //onready
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
@@ -14,16 +16,18 @@
       onSelect: redirect,
       dateFormat: 'yy/mm/dd',
       altFormat: 'yy-mm-dd',
-      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+      <?php if(isset($date)): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
-    $('#dialog_link, ul#icons li').hover(
-      function() { $(this).addClass('ui-state-hover'); }, 
+    $('#dialog_link, ul#icons li').hover(function() {
+       $(this).addClass('ui-state-hover'); 
+     },
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
 </script>
+ */ ?>
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
