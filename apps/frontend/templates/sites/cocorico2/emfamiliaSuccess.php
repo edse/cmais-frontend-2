@@ -88,8 +88,8 @@
      <?php endif; ?>
       
     </div>
-    <!-- /coluna da esquerda-->
-    <!-- coluna da direita-->
+    <!-- /coluna da esquerda -->
+    <!-- coluna da direita -->
     <div class="span4 acontece">
       <div class="topo">
           <div class="bac-blue">
