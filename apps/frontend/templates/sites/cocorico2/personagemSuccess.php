@@ -108,8 +108,8 @@
     </div>
     
     <?php if(isset($displays["autografo"][0])): ?>
-      <?php $related_preview = $displays["autografo"][0]->retriveRelatedAssetsByRelationType('Preview') ?> 
-         <?php $related_download = $displays["autografo"][0]->retriveRelatedAssetsByRelationType('Download') ?>
+      <?php $related_preview = $displays["autografo"][0]->Asset->retriveRelatedAssetsByRelationType('Preview') ?> 
+         <?php $related_download = $displays["autografo"][0]->Asset->retriveRelatedAssetsByRelationType('Download') ?>
     <div class="span4 autografo">
       <form class="form-horizontal">
         <h2>Autografo</h2>
