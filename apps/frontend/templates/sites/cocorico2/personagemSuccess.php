@@ -122,7 +122,7 @@
           BAIXAR
         </bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
         <div class="control-group g-nome">
-          <label class="control-label nome" for="nome"></label>
+          <label class="control-label nome" for="nome"></label> 
           <div class="controls">
             <input type="text" id="nome" placeholder="Seu nome">
           </div>
