@@ -14,14 +14,14 @@
       onSelect: redirect,
       dateFormat: 'yy/mm/dd',
       altFormat: 'yy-mm-dd',
-      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+      <?php if(isset($date)): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
     $('#dialog_link, ul#icons li').hover(function() {
        $(this).addClass('ui-state-hover'); 
-       } 
-      //function() { $(this).removeClass('ui-state-hover'); }
+     },
+      function() { $(this).removeClass('ui-state-hover'); }
     );
   });
 </script>
