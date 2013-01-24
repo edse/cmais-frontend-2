@@ -27,4 +27,4 @@
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
 .bastidores.span4 { min-height: 150px; }
-.conteudo a.destaque2  { margin-left:0 !important; }
+.conteudo a.destaque2  { margin-left:10px !important; }
