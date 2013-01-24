@@ -340,7 +340,7 @@
             <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
+       
         <!-- /item -->
          
         <!-- item -->
@@ -352,7 +352,7 @@
             <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
+       
         <!-- /item -->
         
         <!-- item -->
