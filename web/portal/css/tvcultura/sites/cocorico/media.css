@@ -17,4 +17,7 @@
 @media (max-width: 480px) { 
   .conteudo { margin:0 0 20px 0;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
+  .menu .navbar .nav > li a span,
+  .menu .navbar .nav > li a { display:none; }
+  .menu .navbar .nav > li a.icon { display:block; }
    }
