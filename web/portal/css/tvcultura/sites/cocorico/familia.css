@@ -193,12 +193,11 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .paginacao .proximo span {position: absolute;top: 0;right: 0;margin-right: 0;background-position: -17px 0;}
 #agenda .redes {margin: 10px 0 !important;}
 #agenda #rede-face, #agenda #rede-twitter, #agenda #rede-google, #agenda #rede-pinterest {float: left;margin-right: 10px;float:right;}
-#agenda .titulo-post h2{font-weight: bold; color:#FFF; margin:0 0 4px 0; padding:10px;font-size:20px; line-height:24px; background-color: #70aab1; text-transform: uppercase;line-height: 18px; border-radius: 10px;}
+#agenda .titulo-post h2{font-weight: bold; color:#FFF; margin:0 0 4px 0; padding:10px;font-size:20px; line-height:24px; background-color: #70aab1; text-transform: uppercase; border-radius: 10px;}
 #agenda .titulo-post span{font-weight: bold;color:#70aab1; font-size:14px; text-transform: uppercase;}
 #agenda .asset img{margin: 10px auto;}
 #agenda .asset iframe{width:620px; height:350px; margin:10px auto;}
 #agenda .asset p { margin-bottom:20px; }
-#agenda .asset { background:red; }
 #agenda .anterior.cinema, 
 #agenda .proximo.cinema{margin:0; line-height: 40px;}
 /*#blocoCarrossel .texto,
