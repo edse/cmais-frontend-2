@@ -141,7 +141,7 @@
       $(document).ready(function() {
         $("#getimage").click(function() {
           if($('#nome').val())
-            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".png ?>');
+            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
           else
             $('#nome').focus();
         });
