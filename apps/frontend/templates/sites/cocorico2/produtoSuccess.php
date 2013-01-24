@@ -41,28 +41,52 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span6 zoom">
-    	
-    	   <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-         <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
-         
-        
-           <?php if(count($related_preview)>0): ?>
-      <!--deixar o espaço em branco no title--> 
+    	 <script>
+    	   $('.thumb-produto li a').click(function(){
+    	     alert('oi');
+    	   });    	 
+    	 </script>
+    	 <?php
+         	$galeria = $asset->retriveRelatedAssetsByAssetTypeId(3);
+                      
+            if(count($galeria)>0) {
+              $images = $galeria[0]->retriveRelatedAssetsByAssetTypeId(2);
+            }
+            echo count($images).">>>>>>>>>";
+                    
+         ?>     
+         <?php if(isset($images)): ?> 
+           <?php if(count($images)>0): ?>
+      <!--deixar o espaço em branco no title-->
       <div id="produto-grid" title=" ">
-       
-        <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="produto"></a>
+        <a href="#myModal" data-toggle="modal">
+          <img class="destacada" src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" alt="produto">
+        </a>
       </div>
       <!-- Button to trigger modal -->
           
-      <ul class="span12">
-      	
-      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	<li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-     	
+      <ul class="span12 thumb-produto">
+      	<li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
+      	<li class="span4">
+      	  <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a>
+      	</li>
+     	  <li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
+        <li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
+        <li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
+        <li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
+        <li class="span4">
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        </li>
       </ul>
     </div>
      <!-- Modal -->
