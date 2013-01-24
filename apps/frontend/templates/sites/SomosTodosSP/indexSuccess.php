@@ -39,7 +39,7 @@
           <!-- CAPA -->
           <div class="capa grid3">
             <!--
-            iframe width="970" height="546" src="http://www.youtube.com/embed/aahIUhgjpWE" frameborder="0" allowfullscreen></iframe>
+            <iframe width="970" height="546" src="http://www.youtube.com/embed/9d4NcJUSPrs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             <p>A maior e mais querida cidade da América Latina está fazendo aniversário: neste 25 de janeiro, a Terra da Garoa completa 459 anos. E a gente aqui do cmais+ pediu para VOCÊ mostrar coom vê a metrópole em que mora ou frequenta.</p>
             <p>Pedimos que você nos mandasse fotos da sua rua, do seu bairro, do seu lugar preferido: um monumento, um ponto turístico, uma esquina, um mural, uma calçada, um viaduto, um arranha-céu... enfim, o que você quisesse!</p>
             <p>As melhores imagens foram selecionadas e postadas aqui no portal, e foram parar nesse vídeo especial em homenagem à cidade e a vocês!</p>
