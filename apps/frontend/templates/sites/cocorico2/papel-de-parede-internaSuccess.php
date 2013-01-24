@@ -101,7 +101,7 @@
         ->andWhere('s.id = sa.section_id')
         ->andWhere('s.slug = ?', "papel-de-parede")
         ->andWhere('a.site_id = ?', (int)$site->id)
-        ->limit(7)
+        ->limit(6)
         ->execute();
     ?>
     <?php if(count($assets) > 0): ?>
