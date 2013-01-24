@@ -99,7 +99,7 @@
 		    });
 		    </script>
 		    <style>
-		    #slideshow li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
 		    </style>
 		    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
