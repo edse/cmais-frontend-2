@@ -5,7 +5,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
+<?php /*
 <script type="text/javascript">
+
   $(function(){ //onready
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
@@ -25,6 +27,7 @@
     );
   });
 </script>
+ */ ?>
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
