@@ -49,6 +49,7 @@
            <?php if(count($related_preview)>0): ?>
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
+       
         <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" alt="produto"></a>
       </div>
       <!-- Button to trigger modal -->
@@ -97,7 +98,7 @@
       </div>  
       <!-- pinterst -->
       <div id="rede-pinterest">
-        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
       </div>
       <!-- google+ -->
       <div id="rede-google">
