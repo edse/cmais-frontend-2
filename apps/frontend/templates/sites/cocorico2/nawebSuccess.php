@@ -86,7 +86,23 @@
        <div class="box-instagram">
        <!-- SnapWidget -->
        <!--<iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>-->
-       <iframe src="http://embedagram.com/e/widget/45592979/?css=http://mysite.com/embedagram.css" scrolling="no" frameborder="0" style="border:none; width:404px; height:144px; overflow:hidden;" allowTransparency="true"></iframe>
+       <!--embedagram-->
+       <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+       <script type="text/javascript">
+		    $(document).ready(function() {
+		        $('#slideTvCocorico').embedagram({
+		            instagram_id: 290753701,
+		            limit:4,
+		            link_type:'web',
+		            thumb_width:140
+		        });
+		    });
+		    </script>
+		    <style>
+		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+		    </style>
+		    <ul id="slideTvCocorico"></ul>
+       <!--/embedagram-->
        </div> 
      </div>   
      <!-- /instagram -->  
