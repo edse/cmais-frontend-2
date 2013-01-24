@@ -80,6 +80,7 @@
     <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
     <script type="text/javascript" src="/portal/js/cocorico.js"></script>
     <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -155,6 +156,6 @@
     
     <div id="fb-root"></div> 
  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
- <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
+ 
   </body>
 </html>

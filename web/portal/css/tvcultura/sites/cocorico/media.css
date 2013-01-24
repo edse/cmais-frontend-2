@@ -20,4 +20,5 @@
   .menu .navbar .nav > li span,
   .menu .navbar .nav > li a { display:none !important; }
   .menu .navbar .nav > li a.icon { display:block !important; }
+  body { background:red; }
    }
