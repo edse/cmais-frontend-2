@@ -364,7 +364,6 @@
             <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
       </div>
       
