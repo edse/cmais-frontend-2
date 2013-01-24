@@ -52,6 +52,7 @@
             if(count($galeria)>0) {
               $images = $galeria[0]->retriveRelatedAssetsByAssetTypeId(2);
             }
+            echo count($images).">>>>>>>>>";
                     
          ?>     
          <?php if(isset($images)): ?> 
