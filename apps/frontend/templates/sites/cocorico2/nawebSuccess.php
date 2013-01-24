@@ -90,8 +90,8 @@
        <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
        <script type="text/javascript">
 		    $(document).ready(function() {
-		        $('#slideshow').embedagram({
-		            instagram_id: 45592979,
+		        $('#slideTvCocorico').embedagram({
+		            instagram_id: 290753701,
 		            limit:4,
 		            link_type:'web',
 		            thumb_width:140
@@ -101,7 +101,7 @@
 		    <style>
 		    #slideshow li{width: 140px;float: left;margin: 0 4px 4px 0;} 
 		    </style>
-		    <ul id="slideshow" class="jcarousel-skin-tango"></ul>
+		    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
        </div> 
      </div>   
