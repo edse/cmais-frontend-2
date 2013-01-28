@@ -157,6 +157,8 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .modal ::-webkit-scrollbar-corner { background: #d3e7e8;}
 .modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
 .modal ul li { margin-bottom:10px; }
+
+.zoom ul li { border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
 /* nas lojas interna */
 
 /* /nas lojas */
