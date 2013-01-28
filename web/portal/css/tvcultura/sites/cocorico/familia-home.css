@@ -14,10 +14,13 @@
 .destaques h2 { font-size:20px; color:#6b757d; height:30px; line-height: 30px; margin:0; text-transform:uppercase; text-align:center;}
 .destaques .bold { text-transform:uppercase; margin:5px 10px;  }
 .destaques p { margin:5px 10px 10px; }
-.destaques.web { float:right; }
+.destaques.web { float:right; overflow:hidden; }
+.destaques.web img { height:180px; }
+
 .cr { background-position:0 -40px; }
 #blocoCarrossel .texto { position:relative; }
 #blocoCarrossel .texto h3 { color:#6B757D; }
 #blocoCarrossel .texto { background: none; }
 .carousel-inner .item { height:335px; overflow:hidden; }
 
+.destaques.video-ytb img { width:480px; height:360px; }
