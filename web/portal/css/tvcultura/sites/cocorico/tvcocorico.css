@@ -242,7 +242,8 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .form-horizontal .g-autografo a { display:block; height:40px; line-height:40px; }
 .autografo .g-autografo .capa-btn a,
 .autografo .g-autografo { margin:0; }
-.autografo .g-autografo a { margin:10px; }
+.autografo .g-autografo a { margin:10px; color:#747A39; text-align:center; }
+.autografo .g-autografo a:hover { text-decoration:none; }
 /* episodio*/
 .tit-pagina.episodio { margin-bottom:0; }
 .conteudo .destaques iframe { margin-top:0; }
