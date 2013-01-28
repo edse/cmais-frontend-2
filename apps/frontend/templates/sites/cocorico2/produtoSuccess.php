@@ -43,10 +43,10 @@
   <div class="row-fluid conteudo">
     <div class="span6 zoom">
       
-         <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-         <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
+      <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
+      <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
          
-           <?php if(count($related_preview)>0): ?>
+      <?php if(count($related_preview)>0): ?>
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
        
@@ -68,14 +68,7 @@
         <?php endfor; ?>
       </ul>
     </div>
-    <script>
-    $('.btn-produto').click(function(){
-      //alert($(this).attr('name'));
-      var img_ampl = $(this).attr('name');
-      alert(img_ampl);
-      $('.modal-body img').attr('src', img_ampl); 
-    });
-    </script>
+    
      <!-- Modal -->
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
@@ -88,13 +81,14 @@
         </div>
         <div class="modal-footer">
           <ul>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <?php for($i=0; $i<count($related_preview);$i++):?>
+              <li class="span2">
+                <a href="javascript:;" class="btn-modal-prod" title="Ampliar imagem" name="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" >
+                  <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" />
+                </a>
+              </li>
+            <?php endfor;?>
+            
           </ul>
         </div>
       </div>
@@ -170,3 +164,16 @@ $('#produto-grid').tooltip({
 <!--/tooltip estilizado-->
 <!-- pinterest -->
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<!--modal produto-->
+<script>
+//chamando modal
+$('.btn-produto').click(function(){
+  var img_ampl = $(this).attr('name');
+  $('.modal-body img').attr('src', img_ampl); 
+});
+$('.btn-modal-prod').click(function(){
+  var img_ampl_modal = $(this).attr('name');
+  $('.modal-body img').hide().attr('src', img_ampl_modal).fadeIn("fast");
+});
+</script>
+<!--/modal produto-->
