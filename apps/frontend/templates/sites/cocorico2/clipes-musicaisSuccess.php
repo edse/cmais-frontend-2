@@ -16,6 +16,9 @@
 
 <!-- container-->
 <div class="container tudo">
+  <!--menu principal-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-coco', array('site'=>$site)) ?>
+  <!--/menu principal-->
  <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
