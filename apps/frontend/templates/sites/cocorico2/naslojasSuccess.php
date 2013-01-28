@@ -83,7 +83,7 @@ $assets = $pager->getResults();
         $("#page_form").submit();
       }
     </script>
-    <!--// PAGINACAO -->
+    <!--// PAGINACAO --> 
   <?php endif; ?>
     
   </div>
