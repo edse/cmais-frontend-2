@@ -11,7 +11,6 @@
       </script>
     </div>
   </div>
-  teststaeta af sfsdlk nsldk jf
   <div class="divisoria span12"></div>
 </div>
 <!-- /row-->
