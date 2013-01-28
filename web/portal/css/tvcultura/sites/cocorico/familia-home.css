@@ -11,13 +11,19 @@
 .texto:hover { text-decoration:none; }
 .texto h3 { color:#fff; margin:0; }
 .destaques.span6 { margin-left:0; background:#c6e1e4; text-align:left; color:#6b757d; line-height:18px;}
-.destaques h2 { font-size:20px; color:#6b757d; height:30px; line-height: 30px; margin:0; text-transform:uppercase; text-align:center;}
+.destaques h2 { background: none repeat scroll 0 0 #C6E1E4; color: #6B757D; font-size: 20px; height: 30px; line-height: 30px;  margin: 0; overflow: hidden;  position: relative; text-align: center; text-transform: uppercase; z-index: 100; }
 .destaques .bold { text-transform:uppercase; margin:5px 10px;  }
 .destaques p { margin:5px 10px 10px; }
-.destaques.web { float:right; }
+.destaques.web { float:right; overflow:hidden; }
+.destaques.web img { height:180px; }
+
 .cr { background-position:0 -40px; }
 #blocoCarrossel .texto { position:relative; }
 #blocoCarrossel .texto h3 { color:#6B757D; }
 #blocoCarrossel .texto { background: none; }
 .carousel-inner .item { height:335px; overflow:hidden; }
 
+
+.destaques.video-ytb p { background:#C6E1E4; display: block; margin: 0; overflow: hidden; padding: 5px 10px; position: relative; text-transform: uppercase; width: 93.1%; }
+.destaques.video-ytb img { margin: -59px -47px;  width: 396px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px;}
+.destaques.video-ytb { border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px; overflow:hidden; }
