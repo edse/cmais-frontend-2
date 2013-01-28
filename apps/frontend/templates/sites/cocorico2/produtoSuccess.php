@@ -46,7 +46,6 @@
          <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
          
-           <?php echo count($related_preview).">>>>>>>>>>>>>>"; ?> 
            <?php if(count($related_preview)>0): ?>
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
@@ -56,12 +55,15 @@
       <!-- Button to trigger modal -->
           
       <ul class="span12">
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
-        <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+        <?php for($i=0; $i<count($related_preview);$i++):?>
+          <?php if($i>0): ?>  
+            <li class="span4">
+              <a href="#myModal" data-toggle="modal" title="Ampliar imagem">
+                <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" />
+              </a>
+            </li>
+          <?php endif; ?>
+        <?php endfor; ?>
       </ul>
     </div>
      <!-- Modal -->
