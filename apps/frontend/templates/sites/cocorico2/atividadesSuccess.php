@@ -153,7 +153,7 @@
     <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>" class="span4 destaque2">
     <div class="destaque-2 conteudo-diverso">
       <h3>Imprima e brinque</h3>
-      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
+      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
       <p>
         <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
         <i class="ico-mais"></i>
@@ -170,7 +170,7 @@
    
     <div class="destaque-2 conteudo-diverso">
       <h3>Papel de parede</h3>
-      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
+      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
       <p>
         <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
         <i class="ico-mais"></i>
@@ -201,11 +201,11 @@
             <h3><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></h3>
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" />
+            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" />
             <?php echo $displays['destaque-para-colorir'][0]->getTitle() ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
-            <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('original') ?>" />
+            <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('image-5-b') ?>" />
             <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?>
           </a>
         </div>        
