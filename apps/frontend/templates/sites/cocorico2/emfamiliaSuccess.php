@@ -12,7 +12,7 @@
         <script type='text/javascript'>
           GA_googleFillSlot("portal-cocorico");
 
-        </script> 
+        </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->
       <fb:like href="http://www3.tvcultura.com.br/cocorico/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
@@ -46,7 +46,7 @@
           <div class="carousel-inner">
             <?php foreach($displays['destaque-principal'] as $k=>$d): ?> 
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('image-5-b') ?>" alt="" class="span12"/></a>
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
              </div>
              <?php endforeach; ?>  
            
@@ -66,23 +66,15 @@
   <?php if(count($related_image) > 0): ?> 
       <?php if(isset($displays['destaque-1'])):?> 
         <?php if(count($displays['destaque-1']) > 0): ?>   
-<<<<<<< HEAD
-          <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="destaques span6"> <h2><?php echo $displays['destaque-1'][0]->getTitle() ?></h2><img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>"><p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p><p><?php echo $displays['destaque-1'][0]->getDescription() ?></p></a>
-=======
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="destaques span6">
              <h2>Na TV</h2>
-             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>">
+             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
              <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p><p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
           </a>
->>>>>>> 30ceba5734d82095847f25dde53fcdc429f7af44
         <?php endif; ?>
      <?php endif; ?>
     
     <?php else: ?>
-<<<<<<< HEAD
-       
-=======
->>>>>>> 30ceba5734d82095847f25dde53fcdc429f7af44
       <?php if(isset($displays['destaque-1'])):?>
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="video-ytb destaques span6">
@@ -98,18 +90,14 @@
      
      <?php if(isset($displays['destaque-2'])):?>
         <?php if(count($displays['destaque-2']) > 0): ?>   
-<<<<<<< HEAD
-          <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web"> <h2><?php echo $displays['destaque-2'][0]->getTitle() ?></h2><img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>"><p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p><p><?php echo $displays['destaque-2'][0]->getDescription() ?></p></a>
-=======
           <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web">
             <h2>Na Web</h2>
-            <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>">
+            <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
             <p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p><p><?php echo $displays['destaque-2'][0]->getDescription() ?></p>
           </a>
->>>>>>> 555ebe1b97f1ca651122108b1a3a681d48dcb4c4
         <?php endif; ?>
-     <?php endif; ?> 
-       
+     <?php endif; ?>
+      
     </div>
     <!-- /coluna da esquerda -->
     <!-- coluna da direita -->
