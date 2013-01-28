@@ -41,7 +41,8 @@
     });
     </script>
     <style>
-    #slideTvCocorico li {width: 300px;float: left;margin: 0 0 2% 2%;} 
+    #slideTvCocorico { margin:0; }
+    #slideTvCocorico li {width: 300px; float: left; margin: 0 0 2% 2%;} 
     </style>
     <ul id="slideTvCocorico"></ul>
   <!--/embedagram-->
