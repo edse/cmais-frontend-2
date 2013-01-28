@@ -86,7 +86,7 @@
               endif;
               ?>
               <i class="ico-naweb <?php echo $icon; ?>"></i>
-              <?php echo $title; ?>
+              <?php echo $title. "teste"; ?>
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>
