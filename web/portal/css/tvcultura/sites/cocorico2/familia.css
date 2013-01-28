@@ -122,7 +122,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .conteudo ul { margin-left:0; }
 .receita ul a { color:#f2722f; font-weight:bold; text-decoration:underline; }
 .zoom ul.span12 { margin:10px 0; }
-.zoom ul li { margin-bottom:10px;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
+.zoom ul li.span4 { margin-bottom:10px;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
 .conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
 #rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:41px; }
 #rede-face { margin-top:4px; }
