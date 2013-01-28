@@ -32,7 +32,7 @@
   <!-- /breadcrumb-->
   
    <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="<?php echo $site->retriveUrl() ?>/naslojas" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
@@ -50,11 +50,8 @@
     	 <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
     	 <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
     	      
-         <?php if(isset($related_preview)): ?> 
-           <?php if(count($related_preview)>0): ?>
-             
-         <?php if(isset($related_download)): ?> 
-           <?php if(count($related_download)>0): ?>
+         <?php if(isset($related_preview) && ($related_download)): ?> 
+           <?php if(count($related_preview) && ($related_download)>0): ?>
              
       <!--deixar o espaço em branco no title-->
       <div id="produto-grid" title=" ">
@@ -90,8 +87,6 @@
     </div>
      <!-- Modal -->
       <?php endif; ?>
-       <?php endif; ?>
-
      
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
@@ -133,7 +128,6 @@
       </div>
     </div>
      <?php endif; ?> 
-      <?php endif; ?> 
     
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
     <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
