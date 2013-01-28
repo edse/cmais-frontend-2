@@ -78,7 +78,7 @@
       <?php if(isset($displays['destaque-1'])):?>
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="video-ytb destaques span6">
-            <h2><?php echo $displays['destaque-1'][0]->getTitle() ?><?php echo $related_video[0]->AssetVideo->getYoutube(). "teste >>>" ?></h2>
+            <h2><?php echo $displays['destaque-1'][0]->getTitle() ?><?php echo count($related_video) . ">>>>>>>"?></h2>
             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>/0.jpg">
             <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
             <p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
