@@ -35,12 +35,12 @@
       $('#slideTvCocorico').embedagram({
         instagram_id: 290753701,
         link_type:'web',
-        thumb_width:140
+        thumb_width:300
       });
     });
     </script>
     <style>
-    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+    #slideTvCocorico li{width: 300px;float: left;margin: 0 20px 20px 0;} 
     </style>
     <ul id="slideTvCocorico"></ul>
   <!--/embedagram-->
