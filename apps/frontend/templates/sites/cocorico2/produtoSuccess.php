@@ -50,7 +50,7 @@
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
        
-        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" name="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" name="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
       </div>
       <!-- Button to trigger modal -->
           
@@ -68,7 +68,9 @@
     </div>
     <script>
     $('.btn-produto').click(function(){
-      alert($(this).attr('name'));
+      //alert($(this).attr('name'));
+      var img_ampl = $(this).attr('name');
+      $('modal-body img').attr('src',img_ampl);
     });
     </script>
      <!-- Modal -->
@@ -79,7 +81,7 @@
           <p><?php echo $asset->AssetContent->getHeadline() ?></p>
         </div>
         <div class="modal-body">
-          <img src="/portal/images/capaPrograma/cocorico/thumb-brincadeira2.jpg" alt="teste" />
+          <img src=" " alt="teste" />
         </div>
         <div class="modal-footer">
           <ul>
