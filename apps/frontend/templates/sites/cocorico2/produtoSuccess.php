@@ -58,7 +58,7 @@
         <?php for($i=0; $i<count($related_preview);$i++):?>
           <?php if($i>0): ?>  
             <li class="span4">
-              <a class="btn-produto" href="#myModal" data-toggle="modal" title="Ampliar imagem" name="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>">
+              <a class="btn-produto" href="#myModal" data-toggle="modal" title="Ampliar imagem" name="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>">
                 <img src="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" />
               </a>
             </li>
