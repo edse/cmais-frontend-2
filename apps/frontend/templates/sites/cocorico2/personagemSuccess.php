@@ -117,10 +117,7 @@
       <form class="form-horizontal">
         <h2>Autografo</h2>
         <div class="divisao"></div>
-        <p>Escreva seu nome no campo abaixo e clique no botão
-        <bold>
-          BAIXAR
-        </bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
+        <p>Escreva seu nome no campo abaixo e clique no botão<bold>BAIXAR</bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
         <div class="control-group g-nome">
           <label class="control-label nome" for="nome"></label> 
           <div class="controls">
@@ -131,7 +128,7 @@
           <a href="http://midia.cmais.com.br/assets/image/image-5-b/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="BAIXAR" target="_blank"><img src="http://midia.cmais.com.br/assets/image/image-5-b/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="BAIXAR" /></a>
           <div class="capa-btn">
             <span></span>
-            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">enviar</a>
+            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">baixar</a>
             <span class="last"></span>
           </div>
         </div>
