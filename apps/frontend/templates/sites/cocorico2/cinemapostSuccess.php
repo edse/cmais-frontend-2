@@ -24,14 +24,15 @@
   <!-- row-->
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
   <!-- /row-->
-  <!-- breadcrumb--> 
+  <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico2">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico2/nocinema">No Cinema</a> </li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
+     <li><?php echo $asset->getTitle(); ?></li>
      <li class="active"></li>
   </ul> 
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">no cinema</h2>
+  <h2 class="tit-pagina">agenda</h2>
   <!--row post-->
   <div id="agenda" class="row-fluid conteudo ">
     <!--coluna esquerda -->
@@ -75,14 +76,36 @@
       <div class="topo">
           <div class="bac-blue">
             <h3>
-              <i class="ico-naweb ico-acontece"></i>
-              Acontece
+              <i class="ico-naweb ico-cinema"></i>
+              em cartaz
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>
        </div>
        <!-- /topo acontece -->
-       <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque') ?>
+       <?php
+       
+       $blocks = Doctrine_Query::create()
+          ->select('b.*')
+          ->from('Block b, Section s')
+          ->where('b.section_id = s.id')
+          ->andWhere('s.slug = ?', "agenda")
+          ->andWhere('b.slug = ?', 'acontece') 
+          ->andWhere('s.site_id = ?', $site->id)
+          ->execute();
+        
+        //echo count($blocks)."<br>";
+        
+        if(count($blocks) > 0){
+          $displays_acontece['acontece'] = $blocks[0]->retriveDisplays();
+        }
+       
+        if(isset($displays_acontece['acontece'])): 
+          if(count($displays_acontece['acontece']) > 0): 
+            include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays_acontece['acontece']));
+          endif;
+        endif;
+        ?>
        <!-- banner -->
        <div class="">
          <!-- portal-cocorico-300x250 -->
