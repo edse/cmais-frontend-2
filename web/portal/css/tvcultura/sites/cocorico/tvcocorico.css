@@ -116,7 +116,7 @@ a.destaque2:hover{text-decoration: none}
 .destaques .btn { background:#747a39; }
 .destaques .btn {  box-shadow:none; text-shadow:none; }
 #alfabeto,
-.conteudo a.span6 img,
+/*.conteudo a.span6 img,*/
 .frase,
 .col-esq .tit-pagina.span12 { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .destaque-home { margin:10px 0 20px 0; float:left; }
