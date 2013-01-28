@@ -366,3 +366,9 @@ bold,
 .bastidores.ytb .item span { background:none; }
 /* ytb*/
 
+/* topo coco*/
+.topo-coco { margin:10px 20px 0 20px; }
+.topo-coco h1 { min-width:300px; /*height:71px;*/ float:left; margin:5px 20px 0 0; }
+.topo-coco .fb-like { clear:both; display: block; }
+.box-publicidade.span9 { max-width: 620px; height:90px; background:#c1c1c1; float:left; margin-left:0; }
+/* /topo coco*/
