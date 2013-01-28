@@ -46,50 +46,51 @@
     	     alert('oi');
     	   });    	 
     	 </script>
-    	 <?php
-         	$galeria = $asset->retriveRelatedAssetsByAssetTypeId(3);
-                      
-            if(count($galeria)>0) {
-              $images = $galeria[0]->retriveRelatedAssetsByAssetTypeId(2);
-            }
-                    
-         ?>     
-         <?php if(isset($images)): ?> 
-           <?php if(count($images)>0): ?>
+    	 
+    	 <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+    	 <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+    	      
+         <?php if(isset($related_preview)): ?> 
+           <?php if(count($related_preview)>0): ?>
+             
+         <?php if(isset($related_download)): ?> 
+           <?php if(count($related_download)>0): ?>
+             
       <!--deixar o espaço em branco no title-->
       <div id="produto-grid" title=" ">
         <a href="#myModal" data-toggle="modal">
-          <img class="destacada" src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" alt="produto">
+          <img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" alt="produto">
         </a>
       </div>
       <!-- Button to trigger modal -->
           
       <ul class="span12 thumb-produto">
       	<li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
       	<li class="span4">
-      	  <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[1]->retriveImageUrlByImageUsage("original") ?>" /></a>
+      	  <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("preview") ?>" /></a>
       	</li>
      	  <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[2]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
         <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[3]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
         <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[4]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
         <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[5]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
         <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $images[6]->retriveImageUrlByImageUsage("original") ?>" /></a>
+          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[6]->retriveImageUrlByImageUsage("preview") ?>" /></a>
         </li>
       </ul>
     </div>
      <!-- Modal -->
       <?php endif; ?>
+       <?php endif; ?>
 
      
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -132,6 +133,7 @@
       </div>
     </div>
      <?php endif; ?> 
+      <?php endif; ?> 
     
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
     <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
