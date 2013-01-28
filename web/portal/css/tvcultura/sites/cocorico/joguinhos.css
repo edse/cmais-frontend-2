@@ -5,6 +5,7 @@
 .tit-pagina .likes { background:#1eb9e2;  }
 
 .destaques span { background-image:url(/portal/images/capaPrograma/cocorico/popover.png) ; }
+.destaques span.hover{width: 29px;height: 28px;bottom:-5px;}
 .destaques span.hover,
 .destaques span:hover { background-image:url(/portal/images/capaPrograma/cocorico/popover-hover.png);width: 29px;height: 28px;}
 .destaques span.ativo { background-image:url(/portal/images/capaPrograma/cocorico/popover-hoveroff.png);}
