@@ -68,14 +68,7 @@
         <?php endfor; ?>
       </ul>
     </div>
-    <script>
-    $('.btn-produto').click(function(){
-      //alert($(this).attr('name'));
-      var img_ampl = $(this).attr('name');
-      alert(img_ampl);
-      $('.modal-body img').attr('src', img_ampl); 
-    });
-    </script>
+    
      <!-- Modal -->
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
@@ -89,8 +82,10 @@
         <div class="modal-footer">
           <ul>
             <?php for($i=0; $i<count($related_preview);$i++):?>
-              <li class="span2"><a href="" title="Ampliar imagem">
-                <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" /></a>
+              <li class="span2">
+                <a href="javascript:;" class="btn-modal-prod" title="Ampliar imagem" name="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" >
+                  <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" />
+                </a>
               </li>
             <?php endfor;?>
             
@@ -169,3 +164,16 @@ $('#produto-grid').tooltip({
 <!--/tooltip estilizado-->
 <!-- pinterest -->
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<!--modal produto-->
+<script>
+//chamando modal
+$('.btn-produto').click(function(){
+  var img_ampl = $(this).attr('name');
+  $('.modal-body img').attr('src', img_ampl); 
+});
+$('.btn-modal-prod').click(function(){
+  var img_ampl_modal = $(this).attr('name');
+  $('.modal-body img').hide().attr('src', img_ampl_modal).delay(500).fadeIn("fast");
+});
+</script>
+<!--/modal produto-->
