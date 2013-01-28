@@ -1,5 +1,6 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
@@ -40,7 +41,8 @@
     });
     </script>
     <style>
-    #slideTvCocorico li{width: 300px;float: left;margin: 0 20px 20px 0;} 
+    #slideTvCocorico { margin-left:10px; }
+    #slideTvCocorico li {width: 300px;float: left;margin: 0 1.4% 1.4% 0;} 
     </style>
     <ul id="slideTvCocorico"></ul>
   <!--/embedagram-->
