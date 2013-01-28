@@ -171,13 +171,12 @@ $('.btn-produto').click(function(){
   var img_ampl = $(this).attr('name');
   $('.modal-body img').attr('src', img_ampl); 
 });
-$('.btn-modal-prod').click(function(){
-  $('modal-footer ul li a').addClass('btn-modal-prod');
+$('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
-  $(this).addClass('ativado').removeClass('btn-modal-prod');
+  $(this).addClass('ativado');
   $('.modal-body img').hide().attr('src', img_ampl_modal).fadeIn("fast");
 });
-$('.ativado').click(function(){
+$('.btn-modal-prod.ativado').click(function(){
   alert("oi");
 });
 </script>
