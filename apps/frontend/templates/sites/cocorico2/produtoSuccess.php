@@ -71,7 +71,7 @@
       //alert($(this).attr('name'));
       var img_ampl = $(this).attr('name');
       alert(img_ampl);
-      $('modal-body img').attr('src', img_ampl);
+      $('modal-body img').attr('src', "'" + img_ampl + "'");
     });
     </script>
      <!-- Modal -->
