@@ -20,7 +20,8 @@
   </div>
   <!-- /row-->
   <!-- menu-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
+
   <!-- /menu-->
   
   <!-- breadcrumb-->
@@ -32,7 +33,7 @@
   <!-- /breadcrumb-->
   
    <!--btn voltar-->
-  <a href="<?php echo $site->retriveUrl() ?>/naslojas" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
@@ -41,53 +42,31 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span6 zoom">
-    	 <script>
-    	   $('.thumb-produto li a').click(function(){
-    	     alert('oi');
-    	   });    	 
-    	 </script>
-    	 
-    	 <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-    	 <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
-    	      
-         <?php if(isset($related_preview) && ($related_download)): ?> 
-           <?php if(count($related_preview) && ($related_download)>0): ?>
-             
-      <!--deixar o espaço em branco no title-->
+      
+         <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
+         <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>    
+         
+        
+           <?php if(count($related_preview)>0): ?>
+      <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
-        <a href="#myModal" data-toggle="modal">
-          <img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" alt="produto">
-        </a>
+       
+        <a href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="produto"></a>
       </div>
       <!-- Button to trigger modal -->
           
-      <ul class="span12 thumb-produto">
-      	<li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
-      	<li class="span4">
-      	  <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-      	</li>
-     	  <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
-        <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
-        <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
-        <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
-        <li class="span4">
-          <a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[6]->retriveImageUrlByImageUsage("preview") ?>" /></a>
-        </li>
+      <ul class="span12">
+        
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[4]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[5]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      <li class="span4"><a href="#myModal" data-toggle="modal" title=""><img src="<?php echo $related_preview[6]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+      
       </ul>
     </div>
      <!-- Modal -->
-      <?php endif; ?>
-     
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
@@ -99,7 +78,7 @@
         </div>
         <div class="modal-footer">
           <ul>
-          	<li class="span2"><a href="" title=""><img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
+            <li class="span2"><a href="" title=""><img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
             <li class="span2"><a href="" title=""><img src="<?php echo $related_download[1]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
             <li class="span2"><a href="" title=""><img src="<?php echo $related_download[2]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
             <li class="span2"><a href="" title=""><img src="<?php echo $related_download[3]->retriveImageUrlByImageUsage("original") ?>" /></a></li>
@@ -181,4 +160,3 @@ $('#produto-grid').tooltip({
 <!--/tooltip estilizado-->
 <!-- pinterest -->
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-<!--/pinterest -->
