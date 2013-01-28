@@ -67,7 +67,7 @@
       <?php if(isset($displays['destaque-1'])):?> 
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="destaques span6">
-             <h2><?php echo $displays['destaque-1'][0]->getTitle() ?></h2>
+             <h2>Na TV</h2>
              <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
              <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p><p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
           </a>
@@ -78,7 +78,7 @@
       <?php if(isset($displays['destaque-1'])):?>
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="video-ytb destaques span6">
-            <h2><?php echo $displays['destaque-1'][0]->getTitle() ?></h2>
+            <h2>Na TV</h2>
             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg">
             <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
             <p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
@@ -90,7 +90,11 @@
      
      <?php if(isset($displays['destaque-2'])):?>
         <?php if(count($displays['destaque-2']) > 0): ?>   
-          <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web"> <h2><?php echo $displays['destaque-2'][0]->getTitle() ?></h2><img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>"><p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p><p><?php echo $displays['destaque-2'][0]->getDescription() ?></p></a>
+          <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web">
+            <h2>Na Web</h2>
+            <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
+            <p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p><p><?php echo $displays['destaque-2'][0]->getDescription() ?></p>
+          </a>
         <?php endif; ?>
      <?php endif; ?>
       
