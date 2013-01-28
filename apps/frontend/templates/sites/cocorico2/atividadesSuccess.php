@@ -3,9 +3,9 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <!-- container-->
 <div class="container tudo">
-  <!--menu principal-->
+  <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
-  <!--/menu principal-->
+  <!--/topo coco-->
 
   <!-- row-->
   <div class="row-fluid menu">

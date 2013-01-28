@@ -7,9 +7,9 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 
 <!-- container-->
 <div class="container tudo">
-  <!--menu principal-->
+  <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
-  <!--/menu principal-->
+  <!--/topo coco-->
   
   <!-- row-->
   <div class="row-fluid menu">

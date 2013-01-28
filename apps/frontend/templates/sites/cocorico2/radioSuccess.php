@@ -5,6 +5,10 @@
 <div class="container tudo">
  <!-- row-->
   <div class="row-fluid menu">
+    <!--topo coco-->
+    <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
+    <!--/topo coco-->
+  
     <div class="navbar">
       <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
