@@ -50,10 +50,10 @@
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
             <?php
-              $display_img_src = $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('original');
+              $display_img_src = $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('imaf');
               if ($display_img_src == '') {
                 $related = $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-4-b');
               }
             ?>
             
@@ -88,9 +88,9 @@
           
         //imagens respectivas das respostas
         $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_0 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
         $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_1 = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage->file.".jpg";
+        $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
     
         ?>
          <div class="enquete span12">
@@ -378,7 +378,7 @@
       <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
         <div class="destaque-1 conteudo-tv">
           <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
-          <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+          <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
           <p>
             <?php echo $displays['convidado-especial'][0]->getDescription() ?>
             <i class="ico-mais"></i>
