@@ -15,9 +15,9 @@
   </div>
   <!-- /row-->
 <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/episodios">episódios</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle()?></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/bastidores">bastidores</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
