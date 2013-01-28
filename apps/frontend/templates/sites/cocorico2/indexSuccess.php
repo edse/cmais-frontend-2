@@ -315,7 +315,7 @@ function sendAnswer(){
       $("form.inativo").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        $('.resposta-'+i).html(val.votes);
+        $('.resposta-'+i).html(parseInt(parseFloat(val.votes))+"%");
         i++;
       });
     }
