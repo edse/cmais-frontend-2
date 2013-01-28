@@ -1,10 +1,12 @@
-<?php 
-/*
+
 <!-- like -->
 <div class="redes">
   <!--face-->
-  <div id="rede-face" class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="<?php echo $uri ?>" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" fb-xfbml-state="rendered"><span style="height: 20px; width: 143px;"><iframe id="f320e3b0d8" name="f24a6fedc4" scrolling="no" style="border: none; overflow: hidden; height: 20px; width: 143px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=418273974898589&amp;locale=pt_BR&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df192ad7dd%26origin%3Dhttp%253A%252F%252F172.20.17.129%252Ff1ff93a678%26domain%3D172.20.17.129%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww3.tvcultura.com.br%2Fcocorico%2F&amp;node_type=link&amp;width=450&amp;font=arial&amp;layout=button_count&amp;colorscheme=light&amp;show_faces=false&amp;send=true&amp;extended_social_context=false"></iframe></span></div>
-  <!-- twitter -->
+  <div id="rede-face">
+
+<fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+</div>
+ <!-- twitter -->
   <div id="rede-twitter">
     <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1357735024.html#_=1358185249199&amp;count=none&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=<?php echo $uri ?>&amp;size=m&amp;text=Cocoric%C3%B3%20-%20Produto%20-%20cmais%2B%20O%20portal%20de%20conte%C3%BAdo%20da%20Cultura&amp;url=<?php echo $uri ?>" class="twitter-share-button twitter-count-none" style="width: 59px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
   </div>  
@@ -18,9 +20,3 @@
   </div>
 </div>
 <!--/like-->
- * 
- */
-?>
-
-<fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
-
