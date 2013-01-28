@@ -84,10 +84,6 @@ $assets = $pager->getResults();
       }
     </script>
     <!--// PAGINACAO -->
-    
-
-  <?php else: ?>
-    <p>Nenhum produto encontrado.</p> 
   <?php endif; ?>
     
   </div>
