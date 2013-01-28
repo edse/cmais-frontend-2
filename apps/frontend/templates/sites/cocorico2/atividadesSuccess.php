@@ -206,7 +206,7 @@
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
             <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
-            <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?>
+            <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?> 
           </a>
         </div>        
       </div> 
