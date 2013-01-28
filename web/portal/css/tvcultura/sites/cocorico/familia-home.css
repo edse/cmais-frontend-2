@@ -24,5 +24,6 @@
 .carousel-inner .item { height:335px; overflow:hidden; }
 
 
-.destaques.video-ytb p { background: red; display: block; margin: 0; overflow: hidden; padding: 5px 10px; position: relative; text-transform: uppercase; width: 93.1%; }
-.destaques.video-ytb .destaques.video-ytb img { height:236px; margin:-28px 0; }
+.destaques.video-ytb p { background:#C6E1E4; display: block; margin: 0; overflow: hidden; padding: 5px 10px; position: relative; text-transform: uppercase; width: 93.1%; }
+.destaques.video-ytb img { height:236px; margin:-28px 0; }
+.destaques.video-ytb { border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px; overflow:hidden; }
