@@ -353,7 +353,7 @@ bold,
 #myModal.alerta,
 #myModal.alerta .modal-header { background:#e9f3f4 !important;}
 .modal.fade.in { top:30%; }
-
+.modal.alerta.fade.in { top:50%; }
 /* ytb*/
 .bastidores.ytb .item,
 .ytb .span4 a { overflow:hidden;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
