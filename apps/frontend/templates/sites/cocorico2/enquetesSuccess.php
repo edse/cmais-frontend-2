@@ -65,7 +65,7 @@
             }
           }
           foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
-            $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+            $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
           /*
           $respostas = Doctrine_Query::create()
@@ -82,18 +82,18 @@
             <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
-            $valorr0=$results[0]["votes"];
-            $valorr1=$results[1]["votes"];
-            if(floatval($valorr0) < floatval($valorr1))
+            $valorr0=$results[$k][0]["votes"];
+            $valorr1=$results[$k][1]["votes"];
+            if(floatval($valorr1) < floatval($valorr1))
               echo "1 >>>>>>";
             else 
               echo "2 >>>>>>";
              
             ?>
-            <div class="resultado verde"><?php echo $results[0]["votes"]?> - <?php echo $results[0]["answer"]?></div>
+            <div class="resultado verde"><?php echo $results[$k][0]["votes"]?> - <?php echo $results[$k][0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
             <?php /* <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div> */ ?>
-            <div class="resultado"><?php echo $results[1]["votes"]?> - <?php echo $results[1]["answer"]?></div>
+            <div class="resultado"><?php echo $results[$k][1]["votes"]?> - <?php echo $results[$k][1]["answer"]?></div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
