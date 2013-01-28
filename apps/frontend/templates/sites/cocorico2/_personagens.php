@@ -40,7 +40,7 @@
 
       <?php if(isset($sections)):?>
         <?php if(count($sections) > 0): ?>
-          <div class="lista-personagens">
+          <div class="lista-personagens">  
             <h3>turma</h3>
             <ul>
               <?php foreach($sections as $s): ?>
