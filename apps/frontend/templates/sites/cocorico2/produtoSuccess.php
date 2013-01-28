@@ -50,7 +50,7 @@
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
        
-        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" name="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
       </div>
       <!-- Button to trigger modal -->
           
