@@ -9,7 +9,7 @@
             <h3>turma</h3>
             <ul>
               <?php foreach($sections as $s): ?>
-                <?php
+                <?php 
                   $block = $s->retriveBlockBySlug('icone');
                   if($block){
                     $icone = $block->retriveDisplays();
