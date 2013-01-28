@@ -82,13 +82,14 @@
             <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
-            $valorr0=$results[$k][0]["votes"];
-            $valorr1=$results[$k][1]["votes"];
-            if(floatval($valorr1) < floatval($valorr1))
+            $valorr0 = floatval($results[$k][0]["votes"]);
+            $valorr1 = floatval($results[$k][1]["votes"]);
+            if($valorr0 < $valorr1)
               echo "1 >>>>>>";
-            else 
+            elseif($valorr0 == $valorr1) 
               echo "2 >>>>>>";
-             
+            else
+              echo "3 >>>>>>>";
             ?>
             <div class="resultado verde"><?php echo $results[$k][0]["votes"]?> - <?php echo $results[$k][0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
