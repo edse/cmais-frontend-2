@@ -176,7 +176,7 @@ $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   $(this).addClass('ativado');
   $('.modal-body img').hide().attr('src', img_ampl_modal).fadeIn("fast");
 });
-$('.ativado').click(function(){
+$('.btn-modal-prod.ativado').click(function(){
   alert("oi");
 });
 </script>
