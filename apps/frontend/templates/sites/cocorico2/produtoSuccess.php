@@ -173,7 +173,7 @@ $('.btn-produto').click(function(){
 });
 $('.btn-modal-prod').click(function(){
   var img_ampl_modal = $(this).attr('name');
-  $(this).addClass('disabled','disabled');
+  $(this).attr('disabled','disabled');
   $('.modal-body img').hide().attr('src', img_ampl_modal).fadeIn("fast");
 });
 </script>
