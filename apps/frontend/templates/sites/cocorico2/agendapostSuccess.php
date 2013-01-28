@@ -80,13 +80,14 @@
               if($section->getSlug() == "agenda"):
                 $icon = "ico-acontece";
                 $title= "acontece";
-              elseif($section->getSlug() == "nocinema"):
+              endif;  
+             if($section->getSlug() == "nocinema"):
                 $icon = "ico-cinema";
                 $title= "em cartaz";
               endif;
               ?>
               <i class="ico-naweb <?php echo $icon; ?>"></i>
-              <?php echo $title. "teste"; ?>
+              <?php echo $title. "teste2"; ?>
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>
