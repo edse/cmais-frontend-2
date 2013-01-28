@@ -81,7 +81,10 @@
             <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
             <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
-            <?php echo intval($results[0]["votes"]) ?>
+            <?php 
+            $valor=$results[0]["votes"];
+            echo floatval($valor) . ">>>>>>>>"
+            ?>
             <div class="resultado verde"><?php echo $results[0]["votes"]?> - <?php echo $results[0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
             <?php /* <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div> */ ?>
