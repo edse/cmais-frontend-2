@@ -173,11 +173,8 @@ $('.btn-produto').click(function(){
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
-  $(this).addClass('ativado');
-  $('.modal-body img').hide().attr('src', img_ampl_modal).fadeIn("fast");
+  $('.modal-body img').hide().attr('src', img_ampl_modal).show();
 });
-$('.btn-modal-prod.ativado').click(function(){
-  alert("oi");
-});
+
 </script>
 <!--/modal produto-->

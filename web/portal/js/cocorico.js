@@ -40,12 +40,12 @@ $(document).ready(function() {
     $('.btn-popover').popover();
 
     $('.btn-popover').click(function(){	 
-   	  $('.btn-popover span').removeClass('ativo').removeClass('true');   
+   	  $('.btn-popover span').removeClass('ativo').removeClass('true').removeClass('hover');   
       		      	     
       if($('body').find('.popover').hasClass('in')){ 
-      	$(this).find("span").addClass('ativo').addClass('true');
+      	$(this).find("span").addClass('ativo').addClass('true').addClass('hover');
       }else{
-      	$(this).find("span").removeClass('ativo').removeClass('true');
+      	$(this).find("span").removeClass('ativo').removeClass('true').removeClass('hover');
       }
    		
       $('.btn-popover').not($(this)).popover('hide');
@@ -57,12 +57,12 @@ $(document).ready(function() {
     
     $('.btn-popover').mouseenter(function(){ 
     	if(!$(this).find("span").hasClass('ativo')){
-    		$(this).find('span').addClass('ativo');
+    		$(this).find('span').addClass('hover');
     	}
     });
     $('.btn-popover').mouseleave(function(){
     	if(!$(this).find("span").hasClass('true')){
-    		$(this).find('span').removeClass('ativo');
+    		$(this).find('span').removeClass('hover');
     	}
     });
     
