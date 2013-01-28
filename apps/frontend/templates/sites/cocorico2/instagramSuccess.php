@@ -28,7 +28,7 @@
   <!-- titulo da pagina -->
   
   <!--row-->
-  <div class="row-fluid conteudo">
+  <div class="row-fluid">
     <!--embedagram-->
     <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
     <script type="text/javascript">
@@ -41,8 +41,7 @@
     });
     </script>
     <style>
-    #slideTvCocorico { margin-left:10px; }
-    #slideTvCocorico li {width: 300px;float: left;margin: 0 1.4% 1.4% 0;} 
+    #slideTvCocorico li {width: 300px;float: left;margin: 0 0 2% 2%;} 
     </style>
     <ul id="slideTvCocorico"></ul>
   <!--/embedagram-->
