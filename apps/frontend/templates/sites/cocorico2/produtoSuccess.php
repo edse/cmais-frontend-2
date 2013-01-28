@@ -70,7 +70,8 @@
     $('.btn-produto').click(function(){
       //alert($(this).attr('name'));
       var img_ampl = $(this).attr('name');
-      $('modal-body img').attr('src',img_ampl);
+      alert(img_ampl);
+      $('modal-body img').attr('src', img_ampl);
     });
     </script>
      <!-- Modal -->
