@@ -239,7 +239,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .conteudo .tit { text-transform:uppercase; font-weight:bold; margin-bottom:5px; }
 #convidados li { height:200px; }
 /* /convidado*/
-.form-horizontal .g-autografo a { display:block; }
+.form-horizontal .g-autografo a { display:block; height:40px; line-height:40px; }
 
 /* episodio*/
 .tit-pagina.episodio { margin-bottom:0; }
