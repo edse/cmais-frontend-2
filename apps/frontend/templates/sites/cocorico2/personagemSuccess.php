@@ -72,12 +72,12 @@
       <?php if(isset($displays["imagens"][0]) && isset($displays["imagens"][1]) && isset($displays["imagens"][2]) && isset($displays["imagens"][3])): ?>
       <!-- titulo da pagina -->
       <div class="destaque-home">
-        <img class="span9" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" />
+        <img class="span9" src="<?php echo $displays["imagens"][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays["imagens"][0]->getTitle() ?>" />
         <div class="box span3">
           <ul>
-            <li><img class="span12" src="<?php echo $displays["imagens"][1]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></li>
-            <li><img class="span12" src="<?php echo $displays["imagens"][2]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></li>
-            <li><img class="span12" src="<?php echo $displays["imagens"][3]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][1]->retriveImageUrlByImageUsage('image-2-b') ?>" alt="<?php echo $displays["imagens"][1]->getTitle() ?>" /></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][2]->retriveImageUrlByImageUsage('image-2-b') ?>" alt="<?php echo $displays["imagens"][2]->getTitle() ?>" /></li>
+            <li><img class="span12" src="<?php echo $displays["imagens"][3]->retriveImageUrlByImageUsage('image-2-b') ?>" alt="<?php echo $displays["imagens"][3]->getTitle() ?>" /></li>
           </ul>
         </div>
         <p><?php echo html_entity_decode($displays["texto"][0]->Asset->AssetContent->render()) ?></p>
