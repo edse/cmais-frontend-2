@@ -26,7 +26,7 @@ $destaque_topo = $bloco->retriveDisplays('destaque-topo');
         <div class="carousel-inner"> 
           <?php foreach($destaque_topo as $k=>$d): ?>  
           <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-            <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('image-2') ?>" class="span12"/></a>
           </div>
            <?php endforeach; ?>       
         </div>
