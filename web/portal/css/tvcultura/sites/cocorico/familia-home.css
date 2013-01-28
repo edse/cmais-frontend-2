@@ -25,5 +25,5 @@
 
 .destaques.video-ytb .bold { padding-top:5px; }
 .destaques.video-ytb p { background:#C6E1E4; display: block; margin: 0; overflow: hidden; padding: 0 0 5px 10px; position: relative; width: 93.1%; }
-.destaques.video-ytb img { margin: -59px -47px;  max-width: 396px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px;}
-.destaques.video-ytb { border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px; overflow:hidden; }
+.destaques.video-ytb img { margin: -59px -47px;  max-width: 396px; border-radius: 150px; -moz-border-radius: 150px; -webkit-border-radius:150px;}
+.destaques.video-ytb { background:#C6E1E4;  border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px; overflow:hidden; }
