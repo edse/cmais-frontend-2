@@ -209,7 +209,7 @@
             <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?>
           </a>
         </div>        
-      </div>
+      </div> 
       <?php endif; ?>
     <?php endif; ?>
       <!-- /para colorir -->
