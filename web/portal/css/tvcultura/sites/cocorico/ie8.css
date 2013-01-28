@@ -33,4 +33,4 @@
 .emfamilia .acontece { *margin-left:0px; }
 
 .modal-backdrop,
-.modal-backdrop.fade.in { *opacity: 0; }
+.modal-backdrop.fade.in { opacity: 0; }
