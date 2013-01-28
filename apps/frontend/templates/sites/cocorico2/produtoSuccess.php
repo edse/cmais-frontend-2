@@ -50,7 +50,7 @@
       <!--deixar o espaço em branco no title--> 
       <div id="produto-grid" title=" ">
        
-        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
+        <a class="btn-produto" href="#myModal" data-toggle="modal"><img class="destacada" src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" /></a>
       </div>
       <!-- Button to trigger modal -->
           
@@ -59,7 +59,7 @@
           <?php if($i>0): ?>  
             <li class="span4">
               <a class="btn-produto" href="#myModal" data-toggle="modal" title="Ampliar imagem" name="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>">
-                <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" />
+                <img src="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" />
               </a>
             </li>
           <?php endif; ?>
