@@ -88,7 +88,7 @@
           
       <div class="destaque-home joguinhos span12">
         <?php if(count($related) > 0): ?>
-        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" /></a>
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
@@ -96,11 +96,11 @@
           <ul>
             <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?></a></li>
+            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?></a></li>
             <?php endif; ?>
             <?php $related = $displays['destaque-principal-joguinhos'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?></a></li>
+            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?></a></li>
             <?php endif; ?>
           </ul>
         </div>
@@ -117,7 +117,7 @@
       <div class="destaque-home receitinhas span12">
       
         <?php if(count($related) > 0): ?>
-        <a href="<?php echo $displays['destaque-principal-brincadeiras'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-brincadeiras'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][0]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['destaque-principal-brincadeiras'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-brincadeiras'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][0]->getTitle() ?>" /></a>
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
@@ -125,11 +125,11 @@
           <ul>
             <?php $related = $displays['destaque-principal-brincadeiras'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-brincadeiras'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?></a></li>
+            <li><a href="<?php echo $displays['destaque-principal-brincadeiras'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-brincadeiras'][1]->getTitle() ?></a></li>
             <?php endif; ?>
             <?php $related = $displays['destaque-principal-brincadeiras'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-brincadeiras'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?></a></li>
+            <li><a href="<?php echo $displays['destaque-principal-brincadeiras'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-brincadeiras'][2]->getTitle() ?></a></li>
             <?php endif; ?>
           </ul>
         </div>
@@ -146,10 +146,10 @@
               <?php echo $displays['destaque-2'][0]->Asset->Sections[0]->getTitle() ?>
             </p>
             <?php
-              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('original');
+              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-5-b');
               if ($display_img_src == '') {
                 $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
             <?php if($display_img_src != ''): ?>
@@ -168,10 +168,10 @@
             <?php echo $displays['destaque-3'][0]->Asset->Sections[0]->getTitle() ?>
           </p>
           <?php
-            $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('original');
+            $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('image-5-b');
             if ($display_img_src == '') {
               $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-              $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+              $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
             }
           ?>
           <?php if($display_img_src != ''): ?>
@@ -192,10 +192,10 @@
         <?php if(isset($displays['destaque-tv-cocorico'])):?>
           <?php if(count($displays['destaque-tv-cocorico']) > 0): ?>
             <?php
-              $display_img_src = $displays['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('original');
+              $display_img_src = $displays['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('image-5-b');
               if ($display_img_src == '') {
                 $related = $displays['destaque-tv-cocorico'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('original');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
             
