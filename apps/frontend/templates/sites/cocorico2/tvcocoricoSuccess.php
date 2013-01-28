@@ -461,7 +461,7 @@ function sendAnswer(){
       var i=0;
       $.each(data, function(key, val) {
         
-        $('.resposta-'+i).html(val.votes);
+        $('.resposta-'+i).html(parseFloat(val.votes));
         i++;
       });
     }
