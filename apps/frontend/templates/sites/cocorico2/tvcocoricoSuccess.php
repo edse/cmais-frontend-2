@@ -340,7 +340,7 @@
             <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
+       
         <!-- /item -->
          
         <!-- item -->
@@ -352,7 +352,7 @@
             <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
+       
         <!-- /item -->
         
         <!-- item -->
@@ -364,7 +364,6 @@
             <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
       </div>
       
@@ -394,7 +393,7 @@
       <?php if(isset($displays['receitinhas'])):?>
         <?php if(count($displays['receitinhas']) > 0): ?>  
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2" style="margin-left: 15px;"> 
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2"> 
         <div class="destaque-2 conteudo-diverso ytb">
           <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
           <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">

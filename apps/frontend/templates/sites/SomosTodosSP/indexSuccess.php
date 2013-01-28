@@ -39,13 +39,22 @@
           <!-- CAPA -->
           <div class="capa grid3">
             
+            
+            <p>A maior e mais querida cidade da América Latina está fazendo aniversário: neste 25 de janeiro, a Terra da Garoa completa 459 anos. E a gente aqui do cmais+ pediu para VOCÊ mostrar coom vê a metrópole em que mora ou frequenta.</p>
+            <p>Pedimos que você nos mandasse fotos da sua rua, do seu bairro, do seu lugar preferido: um monumento, um ponto turístico, uma esquina, um mural, uma calçada, um viaduto, um arranha-céu... enfim, o que você quisesse!</p>
+            <p>As melhores imagens foram selecionadas e postadas aqui no portal, e foram parar nesse vídeo especial em homenagem à cidade e a vocês!</p>
+            <p>Gostou?! Então curta, comente, compartilhe!</p>
+            <iframe width="970" height="546" src="http://www.youtube.com/embed/9d4NcJUSPrs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            
             <!-- texto -->
+            <!--
             <p>
               A maior e mais querida cidade da América Latina está fazendo aniversário! No dia 25 de janeiro, a Terra da Garoa completa 459 anos. 
               E a gente aqui do cmais+ quer saber como VOCÊ vê a metrópole em que mora ou frequenta.<br><br>
               Queremos que você nos mande fotos da sua rua, do seu bairro, do seu lugar preferido.Pode ser um monumento, um ponto turístico, uma esquina, um mural, uma calçada, um viaduto, um arranha-céu... enfim, o que você quiser! As melhores imagens serão selecionadas e postadas aqui no portal, e podem ir até mesmo para um especial na TV Cultura!<br><br>
               Então não perca tempo! Prepare sua câmera fotográfica ou seu telefone celular e mãos à obra! Você tem até o dia 21 de janeiro para homenagear a cidade de São Paulo aqui no cmais+.<br><br>
             </p>
+            -->
             <!-- /texto -->  
             <!-- galeria -->
             <?php if(isset($displays["galeria"]) && count($displays["galeria"])>0): ?>

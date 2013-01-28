@@ -35,16 +35,17 @@
 .bastidores .topo h3{width:123px;color: #747A3A;font-size: 14px;font-weight: bold;text-align: center;margin: 0 auto;padding: 0px;line-height: 24px;background-color: #FDF035; position:relative;}
 .interatividade .topo h3{width:95%;}
 .interatividade .item,
-.bastidores .item{text-align: center;float:left;}
+.bastidores .item{text-align: center;float:left; height: 104px;}
 .bastidores .item a{text-decoration: none;}
 .interatividade .item hr,
 .bastidores .item hr{border-bottom: 1px dashed #bfd540; border-top: 1px dashed #37a16f; margin:0;}
 .bastidores .item hr.last{display:none;}
 .interatividade .item span,
 .bastidores .item span{color: #FFFFFF; display: block; max-height: 20px; overflow: hidden; text-align: center;}
-.bastidores .img-bast{border-radius: 5px;overflow: hidden;margin: 3px 0; width: 140px; max-height: 86px;}
-.interatividade p{color:#FFF;}
-.interatividade form{padding:10px;}
+.bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; width: 140px; max-height: 86px;}
+.bastidores .img-bast img { margin:-6px 0;  min-width: 136px;}
+.interatividade p {color:#FFF;}
+.interatividade form {padding:10px;}
 .interatividade .form-campos{padding:10px 0;position: relative;}
 .interatividade .form-campos input,
 .interatividade .form-campos select{border-radius:5px}
@@ -307,3 +308,4 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .destaque-2.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
 .col-esq .span6 .destaque-2 img { max-height:226px; margin:-26px 0; }
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: absolute; width: 94%; z-index: 100;}
+.conteudo a.destaque2  { margin-left:15px; }
