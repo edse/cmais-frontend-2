@@ -121,7 +121,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .conteudo h3 {font-weight:bold; text-transform: uppercase; font-size:14px; line-height: 18px; margin-bottom:0;}
 .conteudo ul { margin-left:0; }
 .receita ul a { color:#f2722f; font-weight:bold; text-decoration:underline; }
-.zoom ul.span12 { margin:10px 0; }
+.zoom ul.span12 { margin:10px 0; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
 .zoom ul li { margin-bottom:10px; }
 .conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
 #rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:41px; }
@@ -157,8 +157,6 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .modal ::-webkit-scrollbar-corner { background: #d3e7e8;}
 .modal ul { padding:10px 10px 0 10px; background:#e9f3f4; overflow:hidden;  }
 .modal ul li { margin-bottom:10px; }
-
-.zoom ul li { border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
 /* nas lojas interna */
 
 /* /nas lojas */
