@@ -351,6 +351,7 @@ input.search-query,
 #myModal.alerta .modal-header { padding:20px; overflow:hidden; }
 #myModal.alerta,
 #myModal.alerta .modal-header { background:#e9f3f4 !important;}
+.modal.fade.in { top:30%; }
 
 /* ytb*/
 .bastidores.ytb .item,
