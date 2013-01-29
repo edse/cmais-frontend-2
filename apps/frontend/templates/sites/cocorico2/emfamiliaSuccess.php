@@ -104,14 +104,16 @@
                 limit:1,
                 thumb_width:300,
                 link_type:'img',
-                wrap_tag:'a'
+                success:function(){
+                  $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
+                }
               }
             });
             
         });
         </script>
         <style>
-        #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+        #slideTvCocorico li{width: 300px;float: left;margin: 0 4px 4px 0;} 
         </style>
         <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
