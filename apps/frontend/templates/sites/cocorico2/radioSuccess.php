@@ -376,7 +376,7 @@
       <a href="#" title="titulo clip" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
+          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
           <p>
             texto corrido
             <i class="ico-mais"></i>
@@ -389,7 +389,7 @@
       <a href="#" title="titulo clipe" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
+          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
           <p>
             texto corrido
             <i class="ico-mais"></i>
@@ -402,7 +402,7 @@
       <a href="#" title="titulo clipe" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
+          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
           <p>
             texto corrido
             <i class="ico-mais"></i>

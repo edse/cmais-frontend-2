@@ -123,10 +123,6 @@
               nextEffect  : 'none',
               prevEffect  : 'none',
               //padding : 0,
-              afterShow: function() {
-                // Render tweet button
-                twttr.widgets.load();
-              },
               helpers : {
                 title : {
                   type : 'inside'
