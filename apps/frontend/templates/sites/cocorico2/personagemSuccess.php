@@ -14,7 +14,10 @@
 </script>
 <!-- container-->
 <div class="container tudo">
-
+  <!--topo coco-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
+  <!--/topo coco-->
+  
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
@@ -132,7 +135,7 @@
           <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="<?php echo $section->getTitle() ?>" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="<?php echo $section->getTitle() ?>" /></a>
           <div class="capa-btn">
             <span></span>
-            <a id="getimage" class="btn" style="padding-top: 9px; width: 85%">baixar</a>
+            <a id="getimage" class="btn">baixar</a>
             <span class="last"></span>
           </div>
         </div>

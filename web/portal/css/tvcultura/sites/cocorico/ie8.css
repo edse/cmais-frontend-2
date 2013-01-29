@@ -31,3 +31,6 @@
 #naweb .twitter { *margin-left:5px; }
 #agenda .acontece,
 .emfamilia .acontece { *margin-left:0px; }
+
+.modal-backdrop,
+.modal-backdrop.fade.in { opacity: 0; }

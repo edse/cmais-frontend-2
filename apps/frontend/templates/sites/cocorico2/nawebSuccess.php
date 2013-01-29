@@ -1,3 +1,8 @@
+<!--FANCYBOX-->
+<script type="text/javascript" src="/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
+<link rel="stylesheet" href="/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
+<!--/FANCYBOX-->
 <link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 <!-- container-->
@@ -90,12 +95,41 @@
        <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
        <script type="text/javascript">
 		    $(document).ready(function() {
+		        
 		        $('#slideTvCocorico').embedagram({
 		            instagram_id: 290753701,
 		            limit:4,
-		            link_type:'web',
-		            thumb_width:140
+		            link_type:'img',
+		            thumb_width:140,
+		            success: function (){ 
+		                $('#slideTvCocorico li a')
+		                  .addClass('fancybox-media')
+		                  .attr('rel','instagram'); }
 		        });
+		        
+		        $('.fancybox-media').fancybox({
+		          beforeShow: function () {
+                /* Disable right click */
+                $.fancybox.wrap.bind("contextmenu", function (e) {
+                        return false; 
+                });
+              },
+              openEffect  : 'none',
+              closeEffect : 'none',
+              nextEffect  : 'none',
+              prevEffect  : 'none',
+              //padding : 0,
+              afterShow: function() {
+                // Render tweet button
+                twttr.widgets.load();
+              },
+              helpers : {
+                title : {
+                  type : 'inside'
+                },
+                media : {}
+              }
+            });
 		    });
 		    </script>
 		    <style>

@@ -3,6 +3,9 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <!-- container-->
 <div class="container tudo">
+  <!--topo coco-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
+  <!--/topo coco-->
 
   <!-- row-->
   <div class="row-fluid menu">
@@ -46,7 +49,7 @@
         <h2>Cozinha da amiga zazá</h2> 
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
-          <p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?><p/>
+          <p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
           <span class="mais"></span>
         </a>
         <div class="enquete span12">

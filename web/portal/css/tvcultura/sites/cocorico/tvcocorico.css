@@ -115,8 +115,8 @@ a.destaque2:hover{text-decoration: none}
 .col-esq .tit-pagina.span12 h2 { margin-right:0; }
 .destaques .btn { background:#747a39; }
 .destaques .btn {  box-shadow:none; text-shadow:none; }
+/*.conteudo a.span6 img,*/
 #alfabeto,
-.conteudo a.span6 img,
 .frase,
 .col-esq .tit-pagina.span12 { border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .destaque-home { margin:10px 0 20px 0; float:left; }
@@ -239,8 +239,11 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .conteudo .tit { text-transform:uppercase; font-weight:bold; margin-bottom:5px; }
 #convidados li { height:200px; }
 /* /convidado*/
-.form-horizontal .g-autografo a { display:block; }
-
+.form-horizontal .g-autografo a { display:block; height:40px; line-height:40px; }
+.autografo .g-autografo .capa-btn a,
+.autografo .g-autografo { margin:0; }
+.autografo .g-autografo a { margin:10px; color:#747A39; text-align:center; }
+.autografo .g-autografo a:hover { text-decoration:none; }
 /* episodio*/
 .tit-pagina.episodio { margin-bottom:0; }
 .conteudo .destaques iframe { margin-top:0; }

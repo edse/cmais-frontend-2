@@ -2,6 +2,10 @@
 
 <!-- container-->
 <div class="container tudo">
+  <!--topo coco-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
+  <!--/topo coco-->
+  
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
