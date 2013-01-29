@@ -99,11 +99,10 @@
 		        $('#slideTvCocorico').embedagram({
 		            instagram_id: 290753701,
 		            limit:4,
-		            link_type:'web',
+		            link_type:'img',
 		            thumb_width:140,
 		            success: function (){ 
 		                $('#slideTvCocorico li a')
-		                  .addClass('fancybox')
 		                  .addClass('fancybox-media')
 		                  .attr('rel','instagram'); }
 		        });
@@ -120,7 +119,14 @@
               nextEffect  : 'none',
               prevEffect  : 'none',
               padding : 0,
+              afterShow: function() {
+                // Render tweet button
+                twttr.widgets.load();
+              },
               helpers : {
+                title : {
+                  type : 'float'
+                },
                 media : {}
               }
             });
