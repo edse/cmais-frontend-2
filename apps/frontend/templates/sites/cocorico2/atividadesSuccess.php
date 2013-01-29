@@ -138,7 +138,7 @@
                     $('#slideTvCocorico').embedagram({
                       instagram_id: 290753701,
                       limit:1,
-                      thumb_width:136,
+                      thumb_width:140,
                       link_type:'img',
                       success:function(){
                         $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
@@ -147,7 +147,7 @@
                       });
                   </script>
                   <style>
-                  #slideTvCocorico li{width:136px;} 
+                  #slideTvCocorico li{width:141px;} 
                   </style>
                   <ul id="slideTvCocorico"></ul>
                  <!--/embedagram-->
