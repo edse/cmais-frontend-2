@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="control-group g-autografo">
-          <a href="http://midia.cmais.com.br/assets/image/image-5-b/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="<?php echo $section->getTitle() ?>" target="_blank"><img src="http://midia.cmais.com.br/assets/image/image-5-b/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="<?php echo $section->getTitle() ?>" /></a>
+          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="<?php echo $section->getTitle() ?>" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="<?php echo $section->getTitle() ?>" /></a>
           <div class="capa-btn">
             <span></span>
             <a id="getimage" class="btn">baixar</a>
@@ -142,10 +142,10 @@
       </form>
     </div>
     <script type="text/javascript">
-      $(document).ready(function() {
+      $(document).ready(function() { 
         $("#getimage").click(function() {
           if($('#nome').val())
-            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/image-5-b/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
+            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+$('#nome').val()+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
           else
             $('#nome').focus();
         });
