@@ -100,8 +100,8 @@
         $(document).ready(function() {
           $('#slideTvCocorico').embedagram({
             instagram_id: 290753701,
-            limit:1,
-            thumb_width:300,
+            limit:2,
+            thumb_width:150,
             link_type:'img',
             success:function(){
               $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
@@ -110,7 +110,7 @@
             });
         </script>
         <style>
-        #slideTvCocorico li{width: 300px;float: left;margin: 0 4px 4px 0;} 
+        #slideTvCocorico li{width:150px; float:left;} 
         </style>
         <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
