@@ -114,7 +114,7 @@
                 $.fancybox.wrap.bind("contextmenu", function (e) {
                         return false; 
                 });
-              }
+              },
               openEffect  : 'none',
               closeEffect : 'none',
               nextEffect  : 'none',
