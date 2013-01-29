@@ -116,16 +116,9 @@
 		        $('.fancybox-media').fancybox({
 		          beforeShow: function () {
                 /* Disable right click */
-                //$.fancybox.wrap.bind("contextmenu", function (e) {
-                  //return false; 
-                //});
-                // Redes Sociais
-                if (this.title) {
-                // New line
-                this.title += '<br />';
-                // Add FaceBook like button
-                this.title += '<iframe src="//www.facebook.com/plugins/like.php?href=' + this.href + '&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:23px;" allowTransparency="true"></iframe>';
-                }
+                $.fancybox.wrap.bind("contextmenu", function (e) {
+                  return false; 
+                });
               },
               openEffect  : 'none',
               closeEffect : 'none',
