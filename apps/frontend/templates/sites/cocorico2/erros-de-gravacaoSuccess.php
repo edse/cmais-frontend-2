@@ -25,7 +25,21 @@
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Erros de gravação</h2>
-  
+  <?php
+    $asset = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "erros-de-gravacao"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 6')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      //->groupBy('sa.asset_id')
+      //->orderBy('a.id desc')
+      ->limit(1)
+      ->execute();
+  ?>
   <!--row-->
   <div class="row-fluid conteudo">  	
   <p><?php echo $asset->getDescription()?></p>
