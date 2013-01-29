@@ -376,11 +376,11 @@
         <?php if(count($displays['destaque-clipes']) > 0): ?> 
           
        <!-- clipe --> 
-       <?php $related0 = $displays['destaque-clipes'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][0]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -390,11 +390,11 @@
        <!-- /clipe -->
        
        <!-- clipe --> 
-       <?php $related1 = $displays['destaque-clipes'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][1]->getTitle() ?></h3>
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related1[1]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][1]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -404,11 +404,11 @@
        <!-- /clipe -->
        
        <!-- clipe --> 
-       <?php $related2 = $displays['destaque-clipes'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related2[2]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][2]->getDescription() ?>
             <i class="ico-mais"></i>
