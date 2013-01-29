@@ -47,16 +47,16 @@
             <?php foreach($displays['destaque-principal'] as $k=>$d): ?> 
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" alt="" class="span12"/></a>
-             </div>
-             <?php endforeach; ?>  
+              <a href="<?php echo $d->retriveUrl() ?> teste" class="texto" ><h3><?php echo $d->getTitle() ?></h3></a>
+            </div>
+            <?php endforeach; ?>  
            
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <a href="<?php echo $d->retriveUrl() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
-      </div>
+              </div>
       <!-- /carrossel-->
    <?php endif; ?> 
     <?php endif; ?>
@@ -69,7 +69,8 @@
           <a title="<?php echo $displays['destaque-1'][0]->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" class="destaques span6">
              <h2>Na TV</h2>
              <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
-             <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p><p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
+             <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
+             <!--p><?php echo $displays['destaque-1'][0]->getDescription() ?></p-->
           </a>
         <?php endif; ?>
      <?php endif; ?>
@@ -81,7 +82,7 @@
             <h2>Na TV</h2>
             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg">
             <p class="bold"><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
-            <p><?php echo $displays['destaque-1'][0]->getDescription() ?></p>
+            <!--p><?php echo $displays['destaque-1'][0]->getDescription() ?></p-->
           </a>
         <?php endif; ?>
      <?php endif; ?>
@@ -93,7 +94,8 @@
           <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web">
             <h2>Na Web</h2>
             <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
-            <p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p><p><?php echo $displays['destaque-2'][0]->getDescription() ?></p>
+            <p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p>
+            <!--p><?php echo $displays['destaque-2'][0]->getDescription() ?></p-->
           </a>
         <?php endif; ?>
      <?php endif; ?>
