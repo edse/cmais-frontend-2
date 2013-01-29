@@ -104,7 +104,11 @@
 		            success: function (){ 
 		                $('#slideTvCocorico li a')
 		                  .addClass('fancybox-media')
-		                  .attr('rel','instagram'); }
+		                  .attr('rel','instagram')
+		                  .each( $(this), function( key, value ) {
+                        alert( key + ": " + value );
+                        });
+		                  }
 		        });
 		        
 		        $('.fancybox-media').fancybox({
