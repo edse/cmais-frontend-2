@@ -103,6 +103,9 @@
                 instagram_id: 290753701,
                 limit:1,
                 thumb_width:300,
+                link_type:'img',
+                wrap_tag:'a'
+              }
             });
             
         });
