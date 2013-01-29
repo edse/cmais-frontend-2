@@ -101,11 +101,25 @@
 		            limit:4,
 		            link_type:'web',
 		            thumb_width:140,
-		            success: function (){ $('#slideTvCocorico li a').addClass('fancybox-media'); }
+		            success: function (){ 
+		                $('#slideTvCocorico li a')
+		                  .addClass('fancybox')
+		                  .addClass('fancybox-media')
+		                  .attr('rel','instagram'); }
 		        });
+		        
 		        $('.fancybox-media').fancybox({
+		          beforeShow: function () {
+                /* Disable right click */
+                $.fancybox.wrap.bind("contextmenu", function (e) {
+                        return false; 
+                });
+              }
               openEffect  : 'none',
               closeEffect : 'none',
+              nextEffect  : 'none',
+              prevEffect  : 'none',
+              padding : 0,
               helpers : {
                 media : {}
               }
