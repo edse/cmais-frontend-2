@@ -37,7 +37,7 @@
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <a class="tit-pagina interna" href=""><?php echo $asset->getTitle() ?></a>
+  <h2 class="tit-pagina interna"><?php echo $asset->getTitle() ?></h2>
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo">
