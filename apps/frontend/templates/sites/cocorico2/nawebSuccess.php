@@ -107,9 +107,9 @@
 		                  .attr('rel','instagram')
 		                
 		                $('#slideTvCocorico a img').each(function(index) {
-                        alert( key + ": " + value );
-                        });
-		                  }
+                      alert($(this).attr('title'));
+                      });
+		                }
 		        });
 		        
 		        $('.fancybox-media').fancybox({
