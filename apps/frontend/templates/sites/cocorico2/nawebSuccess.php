@@ -95,12 +95,13 @@
        <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
        <script type="text/javascript">
 		    $(document).ready(function() {
-		        $('#slideTvCocorico li').addClass('fancybox-media');
+		        
 		        $('#slideTvCocorico').embedagram({
 		            instagram_id: 290753701,
 		            limit:4,
 		            link_type:'img',
-		            thumb_width:140
+		            thumb_width:140,
+		            success: function (){ $('#slideTvCocorico li a').addClass('fancybox-media'); }
 		        });
 		        $('.fancybox-media').fancybox({
               openEffect  : 'none',
