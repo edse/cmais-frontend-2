@@ -125,7 +125,7 @@
               },
               helpers : {
                 title : {
-                  type : 'float'
+                  type : 'inside'
                 },
                 media : {}
               }
