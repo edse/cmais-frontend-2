@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="control-group g-autografo">
-          <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension() ?>" title="<?php echo $section->getTitle() ?>" target="_blank"><img src="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="<?php echo $section->getTitle() ?>" /></a>
+          <img src="http://midia.cmais.com.br/assets/image/original/<?php echo $related_preview[0]->AssetImage->getFile().".".$related_preview[0]->AssetImage->getExtension()?>" alt="<?php echo $section->getTitle() ?>" />
           <div class="capa-btn">
             <span></span>
             <a id="getimage" class="btn">baixar</a>
