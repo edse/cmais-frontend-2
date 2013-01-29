@@ -105,7 +105,7 @@
 		                $('#slideTvCocorico li a')
 		                  .addClass('fancybox-media')
 		                  .attr('rel','instagram')
-		                  .each( $(this), function( key, value ) {
+		                  .each( $('#slideTvCocorico a'), function( key, value ) {
                         alert( key + ": " + value );
                         });
 		                  }
