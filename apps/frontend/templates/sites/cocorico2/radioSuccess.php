@@ -399,7 +399,7 @@
              <?php echo $displays['destaque-clipes'][1]->getDescription() ?>
             <i class="ico-mais"></i>
           </p>
-        </div>
+        </div> 
       </a> 
        <!-- /clipe -->
        
