@@ -7,7 +7,7 @@
 #myCarousel { margin-left:0; }
 .ico-seta-titulo-grd { background:url("/portal/images/capaPrograma/cocorico/seta-titulo-grd.png") no-repeat; width:26px; height:15px; position:absolute; display:block; right:50%; z-index: 100; top:37px; }
 .texto:hover,
-.texto { max-height:57px; min-width:594px;  border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; position:absolute; display:block; bottom: 2px;  background:url("/portal/images/capaPrograma/cocorico/bg-azul-transparente.png") repeat; padding:5px 10px; color:#fff; }
+.texto { max-height:57px; min-width:594px;  border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; position:absolute; display:block; bottom: 0;  background:url("/portal/images/capaPrograma/cocorico/bg-azul-transparente.png") repeat; padding:5px 10px; color:#fff; }
 .texto:hover { text-decoration:none; }
 .texto h3 { color:#fff; margin:0; }
 .destaques.span6 { margin-left:0; background:#c6e1e4; text-align:left; color:#6b757d; line-height:18px;}
