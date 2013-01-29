@@ -107,7 +107,8 @@
 		                  .attr('rel','instagram')
 		                
 		                $('#slideTvCocorico a img').each(function(index) {
-                      alert($(this).attr('title'));
+                      var titulo = $(this).attr('title'));
+                      $(this).parent().attr('title', titulo)
                       });
 		                }
 		        });
@@ -126,7 +127,7 @@
               //padding : 0,
               helpers : {
                 title : {
-                  type : 'inside'
+                  type : 'float'
                 },
                 media : {}
               }
