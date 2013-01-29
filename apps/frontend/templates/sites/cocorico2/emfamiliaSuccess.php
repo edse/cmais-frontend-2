@@ -55,7 +55,7 @@
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <a href="<?php echo $d->retriveUrl() ?>" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
+        <a href="<?php echo $d->retriveUrl() ?> teste" class="texto" > <h3><?php echo $d->getTitle() ?></h3>  <?php echo $d->getDescription() ?> </a>
       </div>
       <!-- /carrossel-->
    <?php endif; ?> 
