@@ -376,20 +376,11 @@
         <?php if(count($displays['destaque-clipes']) > 0): ?> 
           
        <!-- clipe --> 
-       <?php $related0 = $displays['destaque-clipes'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
-<<<<<<< HEAD
-          <h3>clipe</h3>
-          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
-=======
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
-<<<<<<< HEAD
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> c458077a984881d0879336a9de10ae52369b596a
-=======
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> d1d402612cbd995520f0fab9525b9d3b54424e27
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][0]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -399,20 +390,11 @@
        <!-- /clipe -->
        
        <!-- clipe --> 
-       <?php $related1 = $displays['destaque-clipes'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
-<<<<<<< HEAD
-          <h3>clipe</h3>
-          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
-=======
           <h3><?php echo $displays['destaque-clipes'][1]->getTitle() ?></h3>
-<<<<<<< HEAD
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> c458077a984881d0879336a9de10ae52369b596a
-=======
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related1[1]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> d1d402612cbd995520f0fab9525b9d3b54424e27
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][1]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -422,20 +404,11 @@
        <!-- /clipe -->
        
        <!-- clipe --> 
-       <?php $related2 = $displays['destaque-clipes'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       
       <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
-<<<<<<< HEAD
-          <h3>clipe</h3>
-          <img alt="TV Cocoricó - 21/01/13 - Parte 4" src="http://img.youtube.com/vi/J8TJ75G24s0/0.jpg">
-=======
           <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
-<<<<<<< HEAD
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[2]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> c458077a984881d0879336a9de10ae52369b596a
-=======
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related2[2]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
->>>>>>> d1d402612cbd995520f0fab9525b9d3b54424e27
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
           <p>
              <?php echo $displays['destaque-clipes'][2]->getDescription() ?>
             <i class="ico-mais"></i>
