@@ -69,7 +69,7 @@
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
       <!-- titulo da pagina -->
-      <div class="tit-pagina span12">
+      <div class="tit-pagina span12"> 
         <h2><?php echo $section->getTitle() ?></h2>
       </div>
       <?php if(isset($displays["imagens"][0]) && isset($displays["imagens"][1]) && isset($displays["imagens"][2]) && isset($displays["imagens"][3])): ?>
