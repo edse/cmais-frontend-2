@@ -372,45 +372,54 @@
     <!-- row clipes relacionados -->
     <div class="row-fluid relacionados">
       
-      <!-- clipe -->
-      <a href="#" title="titulo clip" class="span4 clipe">
-        <div class="destaque-2 conteudo-diverso">
-          <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
-          <p>
-            texto corrido
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <!-- /clipe -->
-      
-      <!-- clipe -->
-      <a href="#" title="titulo clipe" class="span4 clipe">
-        <div class="destaque-2 conteudo-diverso">
-          <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
-          <p>
-            texto corrido
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <!-- /clipe -->
-      
-      <!-- clipe -->
-      <a href="#" title="titulo clipe" class="span4 clipe">
-        <div class="destaque-2 conteudo-diverso">
-          <h3>clipe</h3>
-          <iframe width="100%" height="180" src="http://www.youtube.com/embed/Iy-mY2FRsA8" frameborder="0" allowfullscreen></iframe>
-          <p>
-            texto corrido
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <!-- /clipe -->
+       <?php if(isset($displays['destaque-clipes'])):?>
+        <?php if(count($displays['destaque-clipes']) > 0): ?> 
           
+       <!-- clipe --> 
+       <?php $related = $displays['destaque-clipes'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
+        <div class="destaque-2 conteudo-diverso">
+          <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <p>
+             <?php echo $displays['destaque-clipes'][0]->getDescription() ?>
+            <i class="ico-mais"></i>
+          </p>
+        </div>
+      </a> 
+       <!-- /clipe -->
+       
+       <!-- clipe --> 
+       <?php $related = $displays['destaque-clipes'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <a href="<?php echo $displays['destaque-clipes'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="span4 clipe">
+        <div class="destaque-2 conteudo-diverso">
+          <h3><?php echo $displays['destaque-clipes'][1]->getTitle() ?></h3>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <p>
+             <?php echo $displays['destaque-clipes'][1]->getDescription() ?>
+            <i class="ico-mais"></i>
+          </p>
+        </div> 
+      </a> 
+       <!-- /clipe -->
+       
+       <!-- clipe --> 
+       <?php $related = $displays['destaque-clipes'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="span4 clipe">
+        <div class="destaque-2 conteudo-diverso">
+          <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
+          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $related[2]->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <p>
+             <?php echo $displays['destaque-clipes'][2]->getDescription() ?>
+            <i class="ico-mais"></i>
+          </p>
+        </div> 
+      </a> 
+       <!-- /clipe -->
+       
+       <?php endif; ?>
+     <?php endif; ?> 
+             
     </div>
     <!-- /row clipes relacionados -->
   </div>
