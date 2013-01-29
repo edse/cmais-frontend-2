@@ -138,6 +138,7 @@
       <?php endforeach; ?>
     </ul>
   </div>
+  <?php endif; ?>
   <!-- /row-->
  
   
