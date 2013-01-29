@@ -136,7 +136,7 @@
 		    </script>
 		    <style>
 		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
-		    .fancybox-opened .fancybox-title {margin-bottom: -65px;} 
+		    .fancybox-opened .fancybox-title {margin-bottom: -10px;} 
 		    </style>
 		    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
