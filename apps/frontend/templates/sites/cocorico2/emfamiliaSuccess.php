@@ -110,7 +110,6 @@
               }
             });
             
-        });
         </script>
         <style>
         #slideTvCocorico li{width: 300px;float: left;margin: 0 4px 4px 0;} 
