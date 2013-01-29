@@ -107,7 +107,7 @@
 		                  .attr('rel','instagram')
 		                
 		                $('#slideTvCocorico a img').each(function(index) {
-                      var titulo = $(this).attr('title'));
+                      var titulo = $(this).attr('title');
                       $(this).parent().attr('title', titulo)
                       });
 		                }
