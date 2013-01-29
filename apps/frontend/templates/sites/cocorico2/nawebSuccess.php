@@ -99,7 +99,7 @@
 		        $('#slideTvCocorico').embedagram({
 		            instagram_id: 290753701,
 		            limit:4,
-		            link_type:'img',
+		            link_type:'web',
 		            thumb_width:140,
 		            success: function (){ $('#slideTvCocorico li a').addClass('fancybox-media'); }
 		        });
