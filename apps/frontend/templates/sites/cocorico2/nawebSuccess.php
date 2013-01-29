@@ -123,7 +123,7 @@
               openEffect  : 'none',
               closeEffect : 'none',
               nextEffect  : 'none',
-              prevEffect  : 'none',
+              prevEffect  : 'none', 
               //padding : 0,
               helpers : {
                 title : {
