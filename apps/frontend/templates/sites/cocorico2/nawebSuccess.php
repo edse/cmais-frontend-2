@@ -133,7 +133,7 @@
               closeEffect : 'none',
               nextEffect  : 'none',
               prevEffect  : 'none', 
-              //padding : 0,
+              padding : 0,
               afterShow: function() {
                 // Render tweet button
                 twttr.widgets.load();
