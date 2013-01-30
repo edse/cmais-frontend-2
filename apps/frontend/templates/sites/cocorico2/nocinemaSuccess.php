@@ -33,9 +33,8 @@ if(isset($pager)){
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico">Em família</a> <span class="divider">&rsaquo;</span></li>
-     <li>No Cinema</li>
-     <li class="active"></li>
+     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">No Cinema</li>
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">No Cinema</h2>
@@ -99,7 +98,7 @@ if(isset($pager)){
           <div class="bac-blue">
             <h3>
               <i class="ico-naweb ico-cinema"></i>
-              em cartaz
+              Acontece
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>

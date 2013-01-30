@@ -153,7 +153,7 @@
     </script>
     <?php endif; ?>
     <!-- banner -->
-    <div class="span4">
+    <div class="span4" style="float:right;">
       <!-- portal-cocorico-300x250 -->
       <script type='text/javascript'>
         GA_googleFillSlot("portal-cocorico-300x250");

@@ -8,6 +8,15 @@
 .tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
 /* tooltip*/
 </style>
+<script>
+
+  $(document).ready(function(){
+    alert ($(window).width()
+    );
+  })
+  
+  
+</script>
 
 <!-- container-->
 <div class="container tudo">
@@ -21,10 +30,10 @@
           <div class="carousel-inner"> 
           	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-              <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+              <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
             </div>
              <?php endforeach; ?>       
-          </div>
+          </div> 
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
@@ -121,7 +130,7 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>">Brincadeiras</a><span></span></div>
+          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/brincadeiras">Brincadeiras</a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-brincadeiras'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
@@ -184,7 +193,7 @@
       </div>
     </div>
     <div class="span4 col-dir">
-      <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico2">
+      <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico">
         <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
@@ -199,7 +208,7 @@
               }
             ?>
             
-        <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?></a><a href="<?php echo $site->retriveUrl() ?>/convidados"><span class="mais"></span></a>
           <?php endif; ?>
         <?php endif; ?>
         <!--ENQUETE-->

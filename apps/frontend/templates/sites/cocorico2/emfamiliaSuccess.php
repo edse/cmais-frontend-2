@@ -93,25 +93,8 @@
         <?php if(count($displays['destaque-2']) > 0): ?>   
           <a title="<?php echo $displays['destaque-2'][0]->getTitle() ?>" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" class="destaques span6 web">
             <h2>Na Web</h2>
-            <!--img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>"-->
-            <!--embedagram-->
-       <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-       <script type="text/javascript">
-        $(document).ready(function() {
+            <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-2'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
             
-            $('#slideTvCocorico').embedagram({
-                instagram_id: 290753701,
-                limit:1,
-                thumb_width:300,
-            });
-            
-        });
-        </script>
-        <style>
-        #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
-        </style>
-        <ul id="slideTvCocorico"></ul>
-       <!--/embedagram-->
             <p class="bold"><?php echo $displays['destaque-2'][0]->getTitle() ?></p>
             <!--p><?php echo $displays['destaque-2'][0]->getDescription() ?></p-->
           </a>

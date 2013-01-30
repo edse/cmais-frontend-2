@@ -9,14 +9,14 @@
         <li><a href="http://cmais.com.br/cocorico2/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
       </ul>
     </div>
-    <div class="span2"> <a href="http://cmais.com.br/cocorico2/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
+    <div class="span2 tvcoco"> <a href="http://cmais.com.br/cocorico2/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
       <ul>
         <li><a href="http://cmais.com.br/cocorico2/episodios" title="Episódios">Episódios</a></li>
         <li><a href="http://cmais.com.br/cocorico2/convidados" title="Convidado do dia">Convidado do dia</a></li>
         <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
         <li><a href="http://cmais.com.br/cocorico2/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
         <li><a href="http://cmais.com.br/cocorico2/erros-de-gravacao" title="Erros de gravação">Erros de gravação</a></li>
-        <!--li><a href="http://cmais.com.br/cocorico2/instagram" title="Instagram">Instagram @TVCocoricó</a></li-->
+        <li><a href="http://cmais.com.br/cocorico2/instagram" title="Instagram">Instagram @TVCocoricó</a></li>
       </ul>
     </div>
     <div class="span2">
@@ -24,7 +24,7 @@
       <ul>
         <li><a href="http://cmais.com.br/cocorico2/natv" title="Na TV">Na TV</a></li>
         <li><a href="http://cmais.com.br/cocorico2/naslojas" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="http://cocoricoshow.com.br/" title="No Teatro">No Teatro</a></li>
+        <li><a href="http://cocoricoshow.com.br/" title="No Teatro" target="_blank">No Teatro</a></li>
         <li><a href="http://cmais.com.br/cocorico2/nocinema" title="Nos Cinemas">No Cinema</a></li>
         <li><a href="http://cmais.com.br/cocorico2/naweb" title="Na Web">Na Web</a></li>
         <li><a href="http://cmais.com.br/cocorico2/agenda" title="Agenda">Agenda</a></li>

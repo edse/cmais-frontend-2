@@ -31,7 +31,8 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"></li>
+     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active">Na Web </li>
   </ul>
   <!-- /breadcrumb-->
   
@@ -107,7 +108,8 @@
 		                  .attr('rel','instagram')
 		                
 		                $('#slideTvCocorico a img').each(function(index) {
-                      alert($(this).attr('title'));
+                      var titulo = $(this).attr('title');
+                      $(this).parent().attr('title', titulo)
                       });
 		                }
 		        });
@@ -116,17 +118,17 @@
 		          beforeShow: function () {
                 /* Disable right click */
                 $.fancybox.wrap.bind("contextmenu", function (e) {
-                        return false; 
+                  return false; 
                 });
               },
               openEffect  : 'none',
               closeEffect : 'none',
               nextEffect  : 'none',
-              prevEffect  : 'none',
-              //padding : 0,
+              prevEffect  : 'none', 
+              padding : 0,
               helpers : {
                 title : {
-                  type : 'inside'
+                  type : 'float'
                 },
                 media : {}
               }
@@ -135,6 +137,7 @@
 		    </script>
 		    <style>
 		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+		    .fancybox-opened .fancybox-title {margin-bottom: -35px;} 
 		    </style>
 		    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->

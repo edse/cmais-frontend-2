@@ -35,20 +35,6 @@
     </script>
     
     <script type='text/javascript'>
-    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-125x125");
-    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
-    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
     GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico");
     GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-300x250");
@@ -80,7 +66,7 @@
     <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
     <script type="text/javascript" src="/portal/js/cocorico.js"></script>
     <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/cocorico2/media.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet">
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
