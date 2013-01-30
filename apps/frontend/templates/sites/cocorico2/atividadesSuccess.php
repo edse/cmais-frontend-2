@@ -175,10 +175,10 @@
       <h3>Imprima e brinque</h3>
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
       <p>
-        <?php echo $displays['destaque-imprima'][0]->getDescription() ?>
-        <i class="ico-mais"></i>
+        <?php echo $displays['destaque-imprima'][0]->getDescription() ?></a>  
+        <a href= "<?php echo $site->retriveUrl() ?>/paiol"><i class="ico-mais"></i></a>
       </p>
-    </div> </a>   
+    </div>  
    <?php endif; ?>
     <?php endif; ?>  
     <!-- /Imprima e brinque -->
