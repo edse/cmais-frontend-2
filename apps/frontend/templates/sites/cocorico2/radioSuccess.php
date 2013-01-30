@@ -376,7 +376,7 @@
         <?php if(count($displays['destaque-clipes']) > 0): ?> 
           
        <!-- clipe --> 
-       
+
       <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
@@ -391,7 +391,7 @@
        
        <!-- clipe --> 
        
-      <a href="<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="span4 clipe">
+      <a href="<?php echo $displays['destaque-clipes'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][1]->getTitle() ?></h3>
           <img alt="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
