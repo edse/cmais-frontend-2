@@ -15,7 +15,7 @@ if(!isset($asset)){
 </script>
 
 <!-- container-->
-<div class="container tudo">
+<div class="container tudo"> 
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
   <!--/topo coco-->
