@@ -30,6 +30,7 @@
   /* For portrait layouts only */
  body { background:red; }
  .conteudo { margin:0; }
+ 
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
