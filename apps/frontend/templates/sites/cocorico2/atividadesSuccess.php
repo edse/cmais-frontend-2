@@ -24,15 +24,12 @@
     <li>
       <a href="/cocorico">Cocoricó</a><span class="divider">&rsaquo;</span>
     </li>
-    <li>
-      <a href="/cocorico/joguinhos">Joguinhos</a><span class="divider">&rsaquo;</span>
-    </li>
-    <li class="active">
-      Nome do Joguinho
+     <li class="active">
+      Paiol
     </li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Atividades</h2>
+  <h2 class="tit-pagina">Paiol</h2>
   <!--row conteudo -->
   <div class="row-fluid conteudo">
     <!-- col direita -->
