@@ -45,7 +45,7 @@ $destaque_topo = $bloco->retriveDisplays('destaque-topo');
   <div class="row-fluid menu">
     <div class="navbar">
       <!--menu principal-->
-      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site, 'section'=>$section)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
