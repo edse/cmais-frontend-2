@@ -72,12 +72,14 @@ $assets = $pager->getResults();
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
+      	<?php if ($d->AssetVideo->getYoutubeId()): ?>
         <li class="span4">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
             <p><?php echo $d->getTitle() ?></p>
           </a>
         </li>
+        <?php endif; ?>
       <?php endforeach; ?>
     </ul>
   </div>
