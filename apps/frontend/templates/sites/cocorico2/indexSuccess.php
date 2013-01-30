@@ -8,6 +8,13 @@
 .tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
 /* tooltip*/
 </style>
+<script>
+  $(document).ready(function(){
+    alert ($(window).width()
+    );
+  })
+  
+</script>
 
 <!-- container-->
 <div class="container tudo">
