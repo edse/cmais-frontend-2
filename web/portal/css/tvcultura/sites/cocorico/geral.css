@@ -181,7 +181,7 @@ bold,
 .breadcrumb .active { text-decoration:underline; }
 
 .tit-pagina { margin:0 0 20px 0; height:40px; line-height:40px; display:block; position:relative; float:left; overflow:hidden; min-width: 200px; max-width: 793px; }
-.tit-pagina h2 {font-size:30px; font-weight:normal; text-transform:uppercase; text-decoration:none; color:#fff; margin:0 110px 0 0; width: 100%; }
+.tit-pagina h2 {font-size:30px; font-weight:normal; text-transform:uppercase; text-decoration:none; color:#fff; margin:0 110px 0 0; width: 88%; height:40px; }
 .tit-pagina,
 .tit-pagina:hover {font-size:30px; font-weight:normal; text-transform:uppercase; text-decoration:none; padding:0 20px; border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; color:#fff;  }
 .tit-pagina span { width:20px; height:40px; position:absolute; right:95px; bottom:0; background:url(/portal/images/capaPrograma/cocorico/ico-seta.png) no-repeat;}
