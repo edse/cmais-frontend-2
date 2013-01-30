@@ -21,10 +21,10 @@
           <div class="carousel-inner"> 
           	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-              <a href="<?php echo $d->getHeadline() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+              <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
             </div>
              <?php endforeach; ?>       
-          </div>
+          </div> 
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
