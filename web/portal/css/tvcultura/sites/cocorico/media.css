@@ -1,9 +1,7 @@
-
 @media (min-width: 1200px) { ... }
  
 @media (min-width: 768px) and (max-width: 981px) { 
-  body { background:red; }
-  .conteudo { margin:120px;}
+  .conteudo { margin:0;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
    }
  
@@ -18,21 +16,20 @@
   .menu .navbar .nav > li span,
   .menu .navbar .nav > li a { display:none !important; }
   .menu .navbar .nav > li a.icon { display:block !important; }
-  body { background:red; }
+  body { background:yellow; }
    }
 
 
+/*
 @media only screen and (device-width: 768px) {
-  /* For general iPad layouts */
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
  body { background:red; }
  .conteudo { margin:0; }
  
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
 }
+*/

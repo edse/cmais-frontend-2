@@ -14,7 +14,13 @@
 ?> 
       <div class="navbar-inner">
         <ul class="nav">
+          <?php if(isset($section)): ?>
+            <?php if($section->getSlug() == 'personagens'): ?>
+          <li class="personagens"><a href="javascript:history.back()" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="voltar"></a></li>
+            <?php endif; ?>
+          <?php else: ?>
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+          <?php endif; ?>
           <li class="joguinhos"><a class="icon" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a><a href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
           <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a><a href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
           <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/paiol" title="Paiol"></a><a href="<?php echo $site->retriveUrl() ?>/paiol" title="Paio">Paiol</a><span></span></li>

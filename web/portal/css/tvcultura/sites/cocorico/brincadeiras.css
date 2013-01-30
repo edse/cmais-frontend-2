@@ -139,18 +139,20 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 #radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat 0 bottom; width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
 #radio .conteudo-diverso{background-color: #f2722f;}
 #radio .conteudo-diverso p{color:#fdf035; position: relative;}
-#radio .destaque-2{border-radius:9px; margin-top:30px;position:relative; padding-top:1px;}
-#radio .destaque-2 h3{font-weight:bold;font-size: 20px !important;margin: 10px;text-align: center;color: #FDF035 !important;padding: 0;overflow: hidden;height: 19px;}
-#radio .destaque-2 p{position:relative; padding: 3px 10px 7px 10px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;text-align: center;}
+#radio .destaque-2{border-radius:9px; margin-top:30px;position:relative; padding-top:1px; overflow:hidden; max-height: 240px;}
+#radio .destaque-2 h3 { background: #F2722F; color: #FDF035 !important; font-size: 20px !important; font-weight: bold; height: 40px; line-height: 40px; margin: 0; overflow: hidden;  padding: 0;  position: relative; text-align: center; }
+#radio .destaque-2 p { background:#F2722F; border-bottom-left-radius: 9px;  border-bottom-right-radius: 9px; bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px;}
 #radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-22px;}
 #radio .conteudo-diverso .ico-mais{background-position:0 top;}
 #radio a.clipe:hover{text-decoration: none}
+#radio .destaque-2 img { margin: -29px 0; max-width: 304px; border-radius:30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;  }
+
 /* /radio */
 
 /* scrollbar p/ chome*/
-#jp_playlist_1::-webkit-scrollbar { height: 12px; width: 25px; background:none; }
-#jp_playlist_1::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
-#jp_playlist_1::-webkit-scrollbar-corner { background: #fff;}
+#jp_playlist_1 ul::-webkit-scrollbar { height: 12px; width: 25px; background:none; }
+#jp_playlist_1 ul::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
+#jp_playlist_1 ul::-webkit-scrollbar-corner { background: #fff;}
 
 /* /BRINCADEIRAS */
 

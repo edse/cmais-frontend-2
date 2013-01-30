@@ -174,7 +174,7 @@
                   </div>
                   <div class="boxRedes">
                     <ul>
-                      <li><a target="_blank" href="http://twitter.com/provocacoes" class="twitter"><span class="ico"></span><span class="borda"></span><span class="nome">Siga o @provocacoes</span></a></li>
+                      <li><a target="_blank" href="https://twitter.com/abu_provoca" class="twitter"><span class="ico"></span><span class="borda"></span><span class="nome">Siga o @abu_provoca</span></a></li>
                       <li><a target="_blank" href="http://www.facebook.com/provocacoes" class="facebook"><span class="ico"></span><span class="borda"></span><span class="nome">Curta a página no facebook</span></a></li>
                       <li><a target="_blank" href="http://www.youtube.com/provocacoes" class="youtube"><span class="ico"></span><span class="borda"></span><span class="nome">Veja os vídeos no YouTube</span></a></li>
                       

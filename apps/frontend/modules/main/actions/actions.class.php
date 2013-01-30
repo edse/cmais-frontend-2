@@ -58,6 +58,10 @@ class mainActions extends sfActions
     $this->filter = $request->getParameter('filter');
     if($request->getParameter('site_id')>0)
       $this->search_site = Doctrine::getTable('Site')->findOneById($request->getParameter('site_id'));
+    
+    if($this->term=="")
+      $this->term = "ver todo o conteúdo";
+    
     if($this->term) {
       //$this->assets = Doctrine_Core::getTable('Asset')->getForLuceneQuery($query);
       //$this->query = Doctrine_Core::getTable('Asset')->getQueryFromLucene($this->term);
