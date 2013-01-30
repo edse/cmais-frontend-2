@@ -15,7 +15,7 @@
       <div class="navbar-inner">
         <ul class="nav">
           <?php if(isset($section)): ?>
-            <?php if($section == 'personagens'): ?>
+            <?php if($section->getSlug() == 'personagens'): ?>
           <li class="personagens"><a href="javascript:history.back()" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="voltar"></a></li>
             <?php else: ?>
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
