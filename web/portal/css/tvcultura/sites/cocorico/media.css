@@ -1,8 +1,7 @@
 @media (min-width: 1200px) { ... }
  
 @media (min-width: 768px) and (max-width: 981px) { 
-  body { background:green; }
-  .conteudo { margin:120px;}
+  .conteudo { margin:0;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
    }
  
