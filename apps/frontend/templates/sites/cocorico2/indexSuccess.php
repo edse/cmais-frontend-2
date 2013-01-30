@@ -199,7 +199,7 @@
               }
             ?>
             
-        <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/convidados" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?></a><a href="<?php echo $site->retriveUrl() ?>/convidados"><span class="mais"></span></a>
           <?php endif; ?>
         <?php endif; ?>
         <!--ENQUETE-->
