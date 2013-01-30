@@ -28,8 +28,8 @@
 
   <!--row-->
   <div class="row-fluid conteudo">  	
-  <p><?php echo $asset->getDescription()?></p>
-  <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+  <p>ferfre</p>
+  <iframe width="940" height="529" src="http://www.youtube.com/embed/ferfre?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
 
   <!-- /row-->
