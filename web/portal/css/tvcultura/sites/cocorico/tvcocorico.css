@@ -32,7 +32,7 @@
 .bastidores .topo span{width:100%; background-color:#fdf035;}
 .bastidores .topo h3 i.ico-camera{background: url(/portal/images/capaPrograma/cocorico/topo-bastidores.png) no-repeat 0px -2px;width: 25px;height: 23px;display: block;float: left;}
 .interatividade .topo h3,
-.bastidores .topo h3{width:123px;color: #747A3A;font-size: 14px;font-weight: bold;text-align: center;margin: 0 auto;padding: 0px;line-height: 24px;background-color: #FDF035; position:relative;}
+.bastidores .topo h3{width:123px;color: #747A3A;font-size: 14px;font-weight: bold;text-align: center;margin: 0 auto;padding: 0px;line-height: 25px; height:25px; background-color: #FDF035; position:relative;}
 .interatividade .topo h3{width:95%;}
 .interatividade .item,
 .bastidores .item{text-align: center;float:left; height: 104px;}
