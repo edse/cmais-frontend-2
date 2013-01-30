@@ -94,10 +94,10 @@
             else
               echo $valorr0 . "/".$valorr1."3 >>>>>>>";
             ?>
-            <div class="resultado verde"><?php echo $results[$k][0]["votes"]?> - <?php echo $results[$k][0]["answer"]?></div>
+            <div class="resultado <?php if($valorr0 > $valorr1) echo "verde"; ?>"><?php echo $valor0; ?> - <?php echo $results[$k][0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
             <?php /* <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div> */ ?>
-            <div class="resultado"><?php echo $results[$k][1]["votes"]?> - <?php echo $results[$k][1]["answer"]?></div>
+            <div class="resultado <?php if($valorr0 > $valorr1) echo "verde"; ?>"><?php echo $valor1; ?> - <?php echo $results[$k][1]["answer"]?></div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
