@@ -3,6 +3,7 @@
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 981px) { 
+  body { background:red; }
   .conteudo { margin:120px;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
    }
@@ -22,3 +23,16 @@
   .menu .navbar .nav > li a.icon { display:block !important; }
   body { background:red; }
    }
+   
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+ body { background:red; }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+}

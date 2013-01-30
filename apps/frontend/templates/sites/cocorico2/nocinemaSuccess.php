@@ -34,8 +34,7 @@ if(isset($pager)){
   <ul class="breadcrumb">
      <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
-     <li>No Cinema</li>
-     <li class="active"></li>
+     <li class="active">No Cinema</li>
   </ul>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">No Cinema</h2>

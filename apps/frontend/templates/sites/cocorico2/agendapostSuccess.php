@@ -22,12 +22,12 @@
   <!-- row-->
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
   <!-- /row-->
-  <!-- breadcrumb-->
+  <!-- breadcrumb--> 
   <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
-     <li><?php echo $asset->getTitle(); ?></li>
-     <li class="active"></li>
+     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="/cocorico/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">agenda</h2>
