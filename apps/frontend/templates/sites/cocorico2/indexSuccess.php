@@ -9,12 +9,12 @@
 /* tooltip*/
 </style>
 <script>
-/*
+
   $(document).ready(function(){
     alert ($(window).width()
     );
   })
-  */
+  
   
 </script>
 
