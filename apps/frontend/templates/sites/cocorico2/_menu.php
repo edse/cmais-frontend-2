@@ -1,6 +1,6 @@
 <div class="navbar-inner">
   <ul class="nav">
-    <li class="personagens"><a href="cocorico2/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
+    <li class="personagens"><a href="javascript:history.back()" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="voltar"></a></li>
     <li class="joguinhos"><a class="icon" href="cocorico2/joguinhos" title="Joguinhos"></a><a href="cocorico2/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
     <li class="brincadeiras"><a class="icon"  href="cocorico2/brincadeiras" title="Brincadeiras"></a><a href="cocorico2/brincadeiras" title="Brincadeiras">Brincadeiras</a><span></span></li>
     <li class="tvcoco"><a class="icon"  href="cocorico2/tvcocorico" title="TV Cocoricó"></a><a href="cocorico2/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
