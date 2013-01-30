@@ -1,5 +1,4 @@
 body { background:url(/portal/images/capaPrograma/cocorico/pattern-bg-xadrez.jpg) repeat; font-family:Arial, Helvetica, sans-serif;  }
-body { background:red; }
 ul li { list-style:none; }
 /*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; }*/
 .navbar-inner .container { max-width:980px;}
