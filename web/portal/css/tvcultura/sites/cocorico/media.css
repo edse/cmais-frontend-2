@@ -1,4 +1,4 @@
-/*
+
 @media (min-width: 1200px) { ... }
  
 @media (min-width: 768px) and (max-width: 981px) { 
@@ -20,7 +20,7 @@
   .menu .navbar .nav > li a.icon { display:block !important; }
   body { background:red; }
    }
-*/
+
 
 @media only screen and (device-width: 768px) {
   /* For general iPad layouts */
