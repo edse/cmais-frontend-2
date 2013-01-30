@@ -184,7 +184,7 @@
       </div>
     </div>
     <div class="span4 col-dir">
-      <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico2">
+      <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico">
         <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
@@ -199,7 +199,7 @@
               }
             ?>
             
-        <a class="convidado span12" href="<?php echo $displays['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/convidados" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
           <?php endif; ?>
         <?php endif; ?>
         <!--ENQUETE-->
