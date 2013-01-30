@@ -27,13 +27,13 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/naslojas">Nas Lojas</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/emfamilia/naslojas">Nas Lojas</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
   
    <!--btn voltar-->
-  <a href="#" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="<?php echo $site->retriveUrl() ?>/emfamilia/naslojas" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
@@ -94,26 +94,11 @@
       </div>
        
     <div class="span6">
-    <div class="redes">
-      <!--face-->
-      <div id="rede-face" class="fb-like" data-href="http://www3.tvcultura.com.br/cocorico/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
-      <!-- twitter -->
-      <div id="rede-twitter">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
-      </div>  
-      <!-- pinterst -->
-      <div id="rede-pinterest">
-        <a href="http://pinterest.com/pin/create/button/?url=<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
-      </div>
-      <!-- google+ -->
-      <div id="rede-google">
-        <div class="g-plusone" data-size="medium"></div>
-      </div>
-    </div>
+    <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site, 'uri'=>$uri)) ?>
      <?php endif; ?> 
     
     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-    <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante">Site do fabricante</a>
+    <a class="site" href="<?php echo $asset->AssetContent->getHeadlineShort() ?>" title="Site do fabricante" target="_blank">Site do fabricante</a>
     </div>
     
   </div>
