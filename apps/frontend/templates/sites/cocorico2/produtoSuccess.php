@@ -27,6 +27,7 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
      <li><a href="<?php echo $site->retriveUrl() ?>/emfamilia/naslojas">Nas Lojas</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
