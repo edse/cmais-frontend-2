@@ -10,7 +10,8 @@
 </style>
 <script>
   $(document).ready(function(){
-    alert (window.width);
+    alert ($(window).width()
+    );
   })
   
 </script>
