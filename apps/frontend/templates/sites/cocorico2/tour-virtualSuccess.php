@@ -49,7 +49,7 @@
       <a class="span4 destaque1" title="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
        <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-1'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-1'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
      </a>
@@ -64,7 +64,7 @@
       <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
     </a> 
@@ -79,7 +79,7 @@
       <a class="span4 destaque1 last" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-3'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-3'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
     </a> 
