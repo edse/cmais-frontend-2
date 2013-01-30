@@ -380,7 +380,8 @@
       <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <img alt="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
+          <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
           <p>
              <?php echo $displays['destaque-clipes'][0]->getDescription() ?>
             <i class="ico-mais"></i>
@@ -409,7 +410,8 @@
       <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="span4 clipe">
         <div class="destaque-2 conteudo-diverso">
           <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
-          <iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>
+          <img alt="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
+          <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
           <p>
              <?php echo $displays['destaque-clipes'][2]->getDescription() ?>
             <i class="ico-mais"></i>
