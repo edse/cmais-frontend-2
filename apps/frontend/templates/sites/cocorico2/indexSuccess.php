@@ -121,7 +121,7 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>">Brincadeiras</a><span></span></div>
+          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/brincadeiras">Brincadeiras</a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-brincadeiras'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
