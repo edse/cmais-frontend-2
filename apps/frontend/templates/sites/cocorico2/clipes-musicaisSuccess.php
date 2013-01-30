@@ -68,7 +68,7 @@
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
-    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/<?php echo $section[0]->getSlug() ?>"><?php echo $section[0]->getTitle() ?></a><span></span></div>
+  
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
