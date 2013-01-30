@@ -130,7 +130,7 @@
   <?php if (count($assets) > 0): ?>
   <!--row-->
   <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/imprima-e-brinque">Imprima e brinque</a><span></span></div>
+    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/imprima-e-brinque">Imprima e brinque</a><span></span></div>
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
