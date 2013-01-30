@@ -150,7 +150,7 @@ bold,
 .menu .lista-personagens a:hover { border-color:#fdf035; }
 .menu .lista-personagens h3 { text-indent: -9999px; background:url(/portal/images/capaPrograma/cocorico/tit-turma.png) no-repeat; width:14px; height:73px; margin:16px 0 16px 16px; float:left;}
 .menu .lista-personagens li { list-style:none; float:left; margin:5px 0 5px 16px; }
-.conteudo { clear:both; margin:20px; max-width:940px;}
+.conteudo { clear:both; margin:2%; max-width:940px;}
 .conteudo .span7 { margin-left:0; /*min-width:620px;*/ }
 .conteudo .span3 { margin-left:20px; /*min-width:300px;*/ }
 .border-top { background:url(/portal/images/capaPrograma/cocorico/border-top-rodape.png) repeat-x; height:2px; margin-top:40px; clear:both; }

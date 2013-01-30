@@ -16,8 +16,8 @@
         <ul class="nav">
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
           <li class="joguinhos"><a class="icon" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a><a href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos">Joguinhos</a><span></span></li>
-          <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades"></a><a href="<?php echo $site->retriveUrl() ?>/atividades" title="Atividades">Atividades</a><span></span></li>
           <li class="tvcoco"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a><a href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó">TV Cocoricó</a><span></span></li>
+          <li class="brincadeiras"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/paiol" title="Paiol"></a><a href="<?php echo $site->retriveUrl() ?>/paiol" title="Paio">Paiol</a><span></span></li>
           <!--li class="diario"><a class="icon"  href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio"></a><a href="<?php echo $site->retriveUrl() ?>/diario-do-julio" title="Diário do Júlio">Diário do Júlio</a><span></span></li-->
           <li class="familia"><a href="#myModal" data-toggle="modal" title="Em família">Em família</a></li>
         </ul>
