@@ -148,9 +148,9 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* /radio */
 
 /* scrollbar p/ chome*/
-#jp_playlist_1::-webkit-scrollbar { height: 12px; width: 25px; background:none; }
-#jp_playlist_1::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
-#jp_playlist_1::-webkit-scrollbar-corner { background: #fff;}
+::-webkit-scrollbar { height: 12px; width: 25px; background:none; }
+::-webkit-scrollbar-thumb { background: #f2722f; -webkit-border-radius: 3px;}
+::-webkit-scrollbar-corner { background: #fff;}
 
 /* /BRINCADEIRAS */
 
