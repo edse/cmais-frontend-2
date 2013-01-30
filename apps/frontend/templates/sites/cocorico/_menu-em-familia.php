@@ -3,7 +3,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav span12">
-          <li class="familia"><a  href="<?php echo $site->retriveUrl() ?>/em-familia" title="Em família">Em família</a>
+          <li class="familia"><a  href="<?php echo $site->retriveUrl() ?>/emfamilia" title="Em família">Em família</a>
             <ul class="nav" id="menu-familia">
               <li><a<?php if($s == 'natv') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
               <li><a<?php if($s == 'naslojas') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
