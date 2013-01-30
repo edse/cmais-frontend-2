@@ -2,7 +2,7 @@
 @media (min-width: 1200px) { ... }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 981px) { 
   .conteudo { margin:120px;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
    }
