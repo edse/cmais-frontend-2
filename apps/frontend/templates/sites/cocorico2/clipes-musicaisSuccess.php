@@ -68,8 +68,10 @@
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
-  <p>
-    Confira mais clipes:
+  <p> 
+    
+   
+   <div class="tit imprima"> Confira mais clipes:</div>
     <p/>
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
