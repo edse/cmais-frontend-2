@@ -88,10 +88,10 @@
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
             $valorr1 = intval(floatval($results[$k][1]["votes"]));
             ?>
-            <div class="resultado <?php if($valorr0 > $valorr1) echo "verde"; ?>"><?php echo $valor0; ?> - <?php echo $results[$k][0]["answer"]?></div>
+            <div class="resultado <?php if($valorr0 > $valorr1) echo "verde"; ?>"><?php echo $valorr0; ?> - <?php echo $results[$k][0]["answer"]?></div>
             <i class="ico-versus-enquete"></i>
             <?php /* <div class="resultado"><?php echo $respostas[1]->Asset->AssetAnswer->getAnswer()?> - 00% </div> */ ?>
-            <div class="resultado <?php if($valorr0 > $valorr1) echo "verde"; ?>"><?php echo $valor1; ?> - <?php echo $results[$k][1]["answer"]?></div>
+            <div class="resultado <?php if($valorr0 < $valorr1) echo "verde"; ?>"><?php echo $valorr1; ?> - <?php echo $results[$k][1]["answer"]?></div>
           </li>
             <!-- pontilhado -->
             <li><hr></li>
