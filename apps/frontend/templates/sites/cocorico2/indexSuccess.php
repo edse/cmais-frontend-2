@@ -14,8 +14,7 @@
     alert ($(window).width()
     );
   })
-  */
-  
+*/ 
 </script>
 
 <!-- container-->
