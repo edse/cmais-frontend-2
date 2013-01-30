@@ -71,7 +71,7 @@
   <p> 
     
    
-   <div class="tit imprima"> Confira mais clipes:</div>
+   Confira mais clipes:
     <p/>
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
