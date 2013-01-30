@@ -105,31 +105,29 @@
 		                $('#slideTvCocorico li a')
 		                  .addClass('fancybox-media')
 		                  .attr('rel','instagram')
-		                  .each( $('#slideTvCocorico a'), function( key, value ) {
-                        alert( key + ": " + value );
-                        });
-		                  }
+		                
+		                $('#slideTvCocorico a img').each(function(index) {
+                      var titulo = $(this).attr('title');
+                      $(this).parent().attr('title', titulo)
+                      });
+		                }
 		        });
 		        
 		        $('.fancybox-media').fancybox({
 		          beforeShow: function () {
                 /* Disable right click */
                 $.fancybox.wrap.bind("contextmenu", function (e) {
-                        return false; 
+                  return false; 
                 });
               },
               openEffect  : 'none',
               closeEffect : 'none',
               nextEffect  : 'none',
-              prevEffect  : 'none',
-              //padding : 0,
-              afterShow: function() {
-                // Render tweet button
-                twttr.widgets.load();
-              },
+              prevEffect  : 'none', 
+              padding : 0,
               helpers : {
                 title : {
-                  type : 'inside'
+                  type : 'float'
                 },
                 media : {}
               }
@@ -138,6 +136,7 @@
 		    </script>
 		    <style>
 		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
+		    .fancybox-opened .fancybox-title {margin-bottom: -35px;} 
 		    </style>
 		    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->

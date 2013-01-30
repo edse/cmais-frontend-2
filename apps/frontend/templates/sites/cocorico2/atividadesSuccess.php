@@ -130,7 +130,27 @@
         <a href="<?php echo $displays['destaque-series'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][2]->getTitle() ?>">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/>
+                <!--img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/-->
+                <!--embedagram-->
+                 <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+                 <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('#slideTvCocorico').embedagram({
+                      instagram_id: 290753701,
+                      limit:1,
+                      thumb_width:140,
+                      link_type:'img',
+                      success:function(){
+                        $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
+                      }
+                        });
+                      });
+                  </script>
+                  <style>
+                  #slideTvCocorico li{width:141px;} 
+                  </style>
+                  <ul id="slideTvCocorico"></ul>
+                 <!--/embedagram-->
             </div>
             <span><?php echo $displays['destaque-series'][2]->getTitle() ?></span>
           </div>

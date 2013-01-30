@@ -16,7 +16,7 @@
         <?php if(($imgs)&&(count($imgs)>0)):?>
 
         <a href="<?php echo $d->retriveUrl()?>">
-          <img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('image-4-b') ?>">
+          <img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('image-6-b') ?>">
         </a>
 
         <?php endif; ?>
