@@ -28,9 +28,7 @@
   <!-- /breadcrumb-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina span3">
-    <h2>rádio cocórico</h2>
-  </div>
+  <h2 class="tit-pagina">rádio cocórico</h2>
   <!-- titulo da pagina -->
   
   <!-- row conteudo radio -->
@@ -376,18 +374,20 @@
         <?php if(count($displays['destaque-clipes']) > 0): ?> 
           
        <!-- clipe --> 
-
+      <div class="span4 destaque-2 conteudo-diverso">
       <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="span4 clipe">
-        <div class="destaque-2 conteudo-diverso">
+        
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
           <img alt="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
           <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
           <p>
              <?php echo $displays['destaque-clipes'][0]->getDescription() ?>
-            <i class="ico-mais"></i>
+            
           </p> 
-        </div>
-      </a> 
+        
+      </a>
+      <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
+      </div> 
        <!-- /clipe -->
        
        <!-- clipe --> 
