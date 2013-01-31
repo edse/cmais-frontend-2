@@ -393,32 +393,13 @@
          <?php endif; ?>
        <?php endif; ?>
        <!-- /convidado especial -->
-       
       
-      <!-- receitinhas -->
-      <!--
-      <?php if(isset($displays['receitinhas'])):?>
-        <?php if(count($displays['receitinhas']) > 0): ?>  
-          <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="span6 destaque2"> 
-        <div class="destaque-2 conteudo-diverso ytb">
-          <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
-          <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
-          <p>
-            <?php echo $displays['receitinhas'][0]->getDescription() ?>
-            <i class="ico-mais"></i>
-          </p>
-        </div>
-      </a>  
-      <?php endif; ?>
-     <?php endif; ?>
-     -->
      
      <?php if(isset($displays['receitinhas'])):?>
         <?php if(count($displays['receitinhas']) > 0): ?>  
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <div class="span6 destaque-2 conteudo-diverso ytb">
-            <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="destaque2"> 
+            <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="destaque1"> 
               <h3><?php $tam=26; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
               <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
               <p>

@@ -310,7 +310,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .ytb #convidados a p { background:#1DB186; color: #FFFFFF; position: relative; z-index: 100; height:20px; overflow:hidden; }
 .ytb .destaques-small li a p { background: #1DB186; color:#fff; }
 .destaque-2.ytb { max-height: 240px; overflow: hidden; position: relative;}
-.destaque-2.ytb h3 { background: #F2722F; height: 30px; overflow: hidden; position: relative; z-index: 100; }
+.destaque-2.ytb h3 { background: #F2722F; height: 34px; line-height:34px; overflow: hidden; position: relative; z-index: 100; }
 .col-esq .span6 .destaque-2 img { margin: -28px -1px; max-width: 320px; border-radius:45px; -moz-border-radius: 45px; -webkit-border-radius: 45px;}
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
