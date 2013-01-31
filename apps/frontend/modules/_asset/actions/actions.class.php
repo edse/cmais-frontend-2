@@ -660,9 +660,22 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cinemapost';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cinemapost');
       }
-	   elseif($this->section->slug == "erros-de-gravacao") {
+      elseif($this->section->slug == "erros-de-gravacao") {
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/erros-de-gravacao';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/erros-de-gravacao');
+      }
+      elseif($this->section->slug == "bastidores") {
+        $this->assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, AssetVideo av, SectionAsset sa')
+          ->where('sa.section_id = ?', $this->section->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('av.youtube_id IS NOT NULL')
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('a.created_at desc');
+        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/bastidores';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/bastidores');
       }
       elseif($this->section->slug == "para-colorir") {
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna';

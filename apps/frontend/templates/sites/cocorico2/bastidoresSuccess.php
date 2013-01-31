@@ -1,5 +1,7 @@
 <?php 
-$assets = $pager->getResults();
+if(!isset($assets)){
+  $assets = $pager->getResults();  
+}
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
