@@ -62,7 +62,7 @@ if(isset($pager)){
       </ul>
     </div>
     <!-- /paginacao -->
-    <?php endif; ?>
+    <?php endif; ?> 
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
