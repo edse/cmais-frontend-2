@@ -665,7 +665,7 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/erros-de-gravacao');
       }
       elseif($this->section->slug == "bastidores") {
-        $this->assets = Doctrine_Query::create()
+        $this->assetsQuery = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, AssetVideo av, SectionAsset sa')
           ->where('sa.section_id = ?', $this->section->id)
@@ -674,6 +674,13 @@ class _assetActions extends sfActions
           ->andWhere('av.youtube_id IS NOT NULL')
           ->andWhere('a.is_active = ?', 1)
           ->orderBy('a.created_at desc');
+        $pagelimit = 12;
+        $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+        $this->pager->setQuery($this->assetsQuery);
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+        $this->page = $request->getParameter('page');
+          
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/bastidores';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/bastidores');
       }
