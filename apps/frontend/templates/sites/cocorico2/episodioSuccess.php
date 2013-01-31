@@ -26,7 +26,7 @@
   <!--btn voltar-->
   <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
-  <h2 class="tit-pagina episodio"><?php echo $asset->getTitle() ?></h2>
+  <h2 class="tit-pagina episodio"><?php $tam=36; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
   <!--row-->
   <div class="row-fluid conteudo">
@@ -71,7 +71,7 @@
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <p><?php echo $d->getTitle() ?></p>          
+          <p><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>          
         </a>
      </li>
      <?php endforeach; ?>
