@@ -164,6 +164,5 @@ $('.fancybox-media').fancybox({
     media : {}
   }
 });
-
 </script>
 <!--/embedagram-->
