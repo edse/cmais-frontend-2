@@ -77,7 +77,7 @@
           <div class="bac-blue">
             <h3>
               <i class="ico-naweb ico-cinema"></i>
-              em cartaz
+              Acontece
               <i class="ico-seta-titulo seta-acontece"></i>
            </h3>
          </div>
