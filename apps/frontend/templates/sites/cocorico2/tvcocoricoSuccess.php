@@ -380,10 +380,10 @@
           <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <div class="span6 destaque-1 conteudo-tv">
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
-              <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
+              <h3><?php $tam=10; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
               <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <p>
-                <?php echo $displays['convidado-especial'][0]->getDescription() ?>
+                <?php $tam=10; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </p>
             </a>
            <a href="/cocorico2/convidados" class="btn-ico-mais" title="CONVIDADOS">
