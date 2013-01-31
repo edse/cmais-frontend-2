@@ -49,7 +49,7 @@
       
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
-        <h2><?php $tam=45; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
+        <h2><?php $tam=45; $str=$asset->getTitle();mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
       <!-- /titulo post -->     
