@@ -39,10 +39,8 @@ if(isset($pager)){
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
     <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
-  </div>
-  
-  
-  
+  </div>  
+
   <div class="row-fluid">
   	 <!-- PAGINACAO -->  	
      <?php if(isset($pager)): ?>
@@ -82,7 +80,9 @@ if(isset($pager)){
    <span class="data"><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
    <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
    <div class="span6">
+   	 <?php if ($asset->AssetContent->getHeadline()): ?>
      <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?> <span class="last"></span></p>
+     <?php endif; ?>
      <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
    </div>
    
