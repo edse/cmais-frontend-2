@@ -127,45 +127,43 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <!--embedagram-->
 <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-   <script type="text/javascript">
-$(document).ready(function() {
-    
-	$('#slideTvCocorico').embedagram({
-	    instagram_id: 290753701,
-	    limit:4,
-	    link_type:'img',
-	    thumb_width:140,
-	    success: function (){ 
-	        $('#slideTvCocorico li a')
-	          .addClass('fancybox-media')
-	          .attr('rel','instagram')
-	        
-	        $('#slideTvCocorico a img').each(function(index) {
-	      var titulo = $(this).attr('title');
-	      $(this).parent().attr('title', titulo)
-	      });
-	   }
-	});
-    
-    $('.fancybox-media').fancybox({
-      beforeShow: function () {
-	    /* Disable right click */
-	    $.fancybox.wrap.bind("contextmenu", function (e) {
-	      return false; 
-	    });
-	  },
-	  openEffect  : 'none',
-	  closeEffect : 'none',
-	  nextEffect  : 'none',
-	  prevEffect  : 'none', 
-	  padding : 0,
-	  helpers : {
-	    title : {
-	      type : 'float'
-	    },
-	    media : {}
-	  }
-	});
+<script type="text/javascript">
+$('#slideTvCocorico').embedagram({
+    instagram_id: 290753701,
+    limit:4,
+    link_type:'img',
+    thumb_width:140,
+    success: function (){ 
+        $('#slideTvCocorico li a')
+          .addClass('fancybox-media')
+          .attr('rel','instagram')
+        
+        $('#slideTvCocorico a img').each(function(index) {
+      var titulo = $(this).attr('title');
+      $(this).parent().attr('title', titulo)
+      });
+   }
 });
+
+$('.fancybox-media').fancybox({
+  beforeShow: function () {
+    /* Disable right click */
+    $.fancybox.wrap.bind("contextmenu", function (e) {
+      return false; 
+    });
+  },
+  openEffect  : 'none',
+  closeEffect : 'none',
+  nextEffect  : 'none',
+  prevEffect  : 'none', 
+  padding : 0,
+  helpers : {
+    title : {
+      type : 'float'
+    },
+    media : {}
+  }
+});
+
 </script>
 <!--/embedagram-->
