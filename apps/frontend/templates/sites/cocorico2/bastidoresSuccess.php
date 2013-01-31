@@ -1,5 +1,5 @@
 <?php 
-if(!isset($assets)){
+if(isset($pager)){
   $assets = $pager->getResults();  
 }
 ?>
