@@ -26,7 +26,7 @@
   <!--btn voltar-->
   <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
-  <h2 class="tit-pagina episodio"><?php echo $asset->getTitle() ?></h2>
+  <h2 class="tit-pagina episodio"><?php $tam=36; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
   <!--row-->
   <div class="row-fluid conteudo">
