@@ -1,3 +1,7 @@
+<?php 
+$assets = $pager->getResults();
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->
@@ -5,70 +9,107 @@
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
   <!--/topo coco-->
+  
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-       <!--menu principal-->
+      <div class="navbar-inner">
+      <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       <!--/menu personagens -->
+      </div>
     </div>
   </div>
-  <!-- /row-->
+  <!-- /row--> 
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-    <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico">Bastidores</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Erros de gravação</li>
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/tvcocorico">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Erros de gravação</h2>
-
-  <!--row-->
-  <div class="row-fluid conteudo">  	
-  <p>ferfre</p>
-  <iframe width="940" height="529" src="http://www.youtube.com/embed/ferfre?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <!-- /row-->
-  <!--row-->
-  <!--row-->
   
-  <?php
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s')
-      ->where('a.id = sa.asset_id')
-      ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = "erros-de-gravacao"')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 6')
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-      ->groupBy('sa.asset_id')
-      ->orderBy('a.id desc')
-      ->limit(6)
-      ->execute();
-  ?> 
-  <?php if (count($assets) > 0): ?>
-  <div class="row-fluid relacionados">
-    <div class="tit imprima"><span class="mais"></span><a href="/cocorico/joguinhos">Erros de gravação</a><span></span></div>
-    <ul class="destaques-small">
-    	<?php if(count($assets) > 0): ?>
-        <?php foreach($assets as $k=>$d): ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
-        <?php endforeach; ?>
-      <?php endif; ?>
+  <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
+  
+  <?php if(count($pager) > 0): ?>
+
+    <!--row-->
+    <div class="row-fluid conteudo">    
+      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- /row-->
+
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
+    <?php endif; ?>
+
+  <!--row-->
+  <div class="row-fluid conteudo destaques ytb">
+    <ul id="convidados">
+      <?php foreach($pager->getResults() as $d): ?>
+        <li class="span4">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <p><?php echo $d->getTitle() ?></p>
+          </a>
+        </li>
+      <?php endforeach; ?>
     </ul>
-    
   </div>
-  <?php endif; ?>
   <!-- /row-->
-  
-  <!-- rodape-->
+  <?php if(count($pager) > 0): ?>
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
+    <?php endif; ?>
+   <?php endif; ?> 
+      <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+  <?php endif;?>
+ 
+  <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-  <!-- /rodape-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'section'=>$section, 'uri'=>$uri)) ?>
+  <!--/rodapé-->
 </div>
 <!-- /container-->
