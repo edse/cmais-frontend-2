@@ -66,6 +66,7 @@ if(isset($pager)){
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
+    <div class="row-fluid relacionados">
   <div class="row-fluid conteudo ytb"> 
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
@@ -78,6 +79,7 @@ if(isset($pager)){
     <?php endforeach; ?>
     </ul>
   </div>
+   </div>
   <?php endif; ?>
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
