@@ -377,6 +377,9 @@ bold,
 /* /topo coco*/
 
 /* botao mais todos*/
-.mais-todos { bottom: 0; height: 37px; position: absolute; right: 0;  width: 37px; }
-.mais-todos i { background-position:0 0; }
+.btn-ico-mais { bottom: 26px;  position: absolute;  right: 0;}
 /* /botao mais todos*/
+.conteudo .destaque-2 h3,
+.conteudo .destaque-1 h3 { line-height: 34px; } 
+.conteudo .destaque-2 a:hover,
+.conteudo .destaque-1 a:hover { text-decoration:none; }
