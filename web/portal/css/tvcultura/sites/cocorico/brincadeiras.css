@@ -224,6 +224,4 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .box-papel-parede ul li .icon-celular { background-position:0 -14px; }
 
 .destaque-1 p, 
-.destaque-2 p { background:#F2722F; }
-.destaque-1 h3 { line-height: 34px; } 
-.destaque-1 a:hover { text-decoration:none; }
+.destaque-2 p { background:#F2722F; 
