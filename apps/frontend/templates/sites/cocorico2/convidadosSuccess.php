@@ -168,7 +168,10 @@ $assets = $pager->getResults();
 		<?php foreach($pager->getResults() as $d): ?>
     	  
       <li class="span4">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a>  
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" />
+          <?php $tam=34; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+        </a>  
       </li>
       	
         <?php endforeach; ?>
