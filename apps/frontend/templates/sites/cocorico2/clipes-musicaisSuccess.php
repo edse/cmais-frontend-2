@@ -46,8 +46,10 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle() ?></h2>
-    <span></span>
+
+    <h2><?php $tam=10; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
+
+     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
     <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
@@ -77,7 +79,7 @@
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
             <p><?php echo $d->getTitle() ?></p></a>
           </li>
         <?php endforeach; ?>

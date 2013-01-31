@@ -20,14 +20,16 @@
     </div>
   </div>
   <!-- /row--> 
-  <!-- breadcrumb-->
-  <ul class="breadcrumb"> 
-    <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico">Bastidores</a><span class="divider">&rsaquo;</span></li> 
-    <li class="active">Tour virtual</li>
+  
+    <!-- breadcrumb-->
+  <ul class="breadcrumb personagem">
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/tvcocorico">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Tour virtual</h2>
+
+  <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
   
   <!--row-->
   <?php if(isset($displays['tour-virtual'])):?>
@@ -49,7 +51,7 @@
       <a class="span4 destaque1" title="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
        <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-1'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-1'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
      </a>
@@ -64,7 +66,7 @@
       <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
     </a> 
@@ -79,7 +81,7 @@
       <a class="span4 destaque1 last" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-3'][0]->AssetVideo->getYoutubeId()?>/0.jpg">
+        <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-3'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
         <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
       </div>
     </a> 

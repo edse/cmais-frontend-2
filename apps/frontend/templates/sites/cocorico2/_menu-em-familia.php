@@ -2,7 +2,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav span12">
-          <li class="familia"><a  href="/cocorico2/em-familia" title="Em família">Em família</a>
+          <li class="familia"><a  href="/cocorico2/emfamilia" title="Em família">Em família</a>
             <ul class="nav" id="menu-familia">
               <li><a class="active" href="/cocorico2/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
               <li><a href="/cocorico2/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
