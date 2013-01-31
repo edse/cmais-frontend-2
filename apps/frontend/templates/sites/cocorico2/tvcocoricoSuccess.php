@@ -340,7 +340,7 @@
             <div class="img-bast">
                 <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['bastidores'][0]->getTitle() ?></span>
+            <span><?php $tam=15; $str=$displays['bastidores'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
           </div>
         </a>
        
@@ -352,7 +352,7 @@
             <div class="img-bast">
                 <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['bastidores'][1]->getTitle() ?></span>
+            <span><?php $tam=15; $str=$displays['bastidores'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
           </div>
         </a>
        
@@ -364,7 +364,7 @@
             <div class="img-bast">
                 <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['bastidores'][2]->getTitle() ?></span>
+            <span><?php $tam=15; $str=$displays['bastidores'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
           </div>
         </a>
         <!-- /item -->
