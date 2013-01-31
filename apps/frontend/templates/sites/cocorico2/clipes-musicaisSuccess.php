@@ -46,8 +46,10 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle() ?></h2>
-    <span></span>
+
+    <h2><?php $tam=10; $str=$asset->getTitle(); if(count($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
+
+     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
     <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
