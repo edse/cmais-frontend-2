@@ -359,6 +359,7 @@ bold,
 /* ytb*/
 .bastidores.ytb .item,
 .ytb .span4 a { overflow:hidden;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
+.ytb .destaque1 img,
 .ytb .span4 a img { margin:-26px 0 !important;  }
 .ytb .span4 .btn { border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;}
 .ytb .destaques-small li a { overflow:hidden; } 
@@ -367,6 +368,7 @@ bold,
 .ytb .destaques-small li a p { background: #F2722F; color:#fff; height: 20px; position: relative; z-index: 100; overflow:hidden; margin:0; float:left; width: 100% }
 .bastidores.ytb .item img { margin:-11px 0 !important; }
 .bastidores.ytb .item span { background:none; }
+
 /* ytb*/
 
 /* topo coco*/
