@@ -62,24 +62,25 @@ if(isset($pager)){
       </ul>
     </div>
     <!-- /paginacao -->
-    <?php endif; ?>
+    <?php endif; ?> 
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
-  <div class="row-fluid conteudo ytb">
+    <div class="row-fluid relacionados">
+  <div class="row-fluid conteudo ytb"> 
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <p><?php echo $d->getTitle() ?></p>
+          <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+          <p><?php $tam=14; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p> 
         </a>
       </li>
     <?php endforeach; ?>
     </ul>
   </div>
-  <!-- /row-->
+   </div>
+  <?php endif; ?>
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->

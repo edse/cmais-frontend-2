@@ -194,6 +194,8 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .asset img{margin: 10px auto;}
 #agenda .asset iframe{width:620px; height:350px; margin:10px auto;}
 #agenda .asset p { margin-bottom:20px; }
+#agenda .asset p a:hover,
+#agenda .asset p a { color:#70AAB1; font-weight:bold; }
 #agenda .anterior.cinema, 
 #agenda .proximo.cinema{margin:0; line-height: 40px;}
 /*#blocoCarrossel .texto,

@@ -24,9 +24,9 @@
   <!-- /row-->
   <!-- breadcrumb--> 
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li> 
-     <li><a href="/cocorico/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li> 
+     <li><a href="<?php echo $site->retriveUrl(); ?>/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul> 
   <!-- /breadcrumb-->
@@ -47,7 +47,7 @@
       
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
-        <h2><?php echo $asset->getTitle() ?></h2>
+        <h2><?php $tam=45; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
       <!-- /titulo post -->     

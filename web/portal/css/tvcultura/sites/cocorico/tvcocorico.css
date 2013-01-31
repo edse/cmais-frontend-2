@@ -236,7 +236,6 @@ input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20
 p.frase { color: #6B757D; font-weight: bold; text-align: center; text-transform: uppercase; padding:10px 20px 10px 20px; background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin-bottom: 20px; }
 p.frase span { background:url("/portal/images/capaPrograma/cocorico/aspas.png") no-repeat; display:block; width:25px; height:18px; float:left; margin:-10px 0 0 -20px;}
 p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 0 0; }
-.conteudo .tit { text-transform:uppercase; font-weight:bold; margin-bottom:5px; }
 #convidados li { height:200px; }
 /* /convidado*/
 .form-horizontal .g-autografo a { display:block; height:40px; line-height:40px; }
@@ -315,3 +314,5 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .col-esq .span6 .destaque-2 img { margin: -28px -1px; max-width: 320px; border-radius:45px; -moz-border-radius: 45px; -webkit-border-radius: 45px;}
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
+
+.instagram h2 { width: 100%; }
