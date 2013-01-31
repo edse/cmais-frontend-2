@@ -65,7 +65,7 @@
   <div class="row-fluid conteudo" id="videos">
     <p class="span12"><?php echo $asset->getDescription()?></p>
     <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-    <p class="tit"> Confira mais clipes:</p><br>
+    <p class="tit"> Confira mais clipes:</p>
   </div>
   <!--/row-->
   
