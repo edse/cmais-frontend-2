@@ -70,12 +70,9 @@ if(isset($pager)){
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
       <li class="span2">
-        <?php
-        mb_internal_encoding("UTF-8");
-        ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <p><?php $tam=5; $str=$d->getTitle(); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
+          <p><?php $tam=5; $str=$d->getTitle(); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p> 
         </a>
       </li>
     <?php endforeach; ?>
