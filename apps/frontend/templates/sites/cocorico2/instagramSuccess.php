@@ -56,7 +56,7 @@
 <script type="text/javascript">
 $('#slideTvCocorico').embedagram({
     instagram_id: 290753701,
-    limit:4,
+    //limit:4,
     link_type:'img',
     thumb_width:300,
     success: function (){ 
