@@ -371,55 +371,32 @@
       </div>
       
       <!-- /bastidores -->
-       <?php endif; ?>
+      <?php endif; ?>
       <?php endif; ?>
             
-       <!-- convidado especial -->
-       <!--
-       <?php if(isset($displays['convidado-especial'])):?>
+      <!-- convidado especial -->
+      <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
           <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="span6 destaque1">
-        <div class="destaque-1 conteudo-tv">
-          <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
-          <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
-          <p>
-            <?php echo $displays['convidado-especial'][0]->getDescription() ?>
-            <i class="ico-mais"></i>
-          </p>
+          <div class="span6 destaque-1 conteudo-tv">
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
+              <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+              <p>
+                <?php echo $displays['convidado-especial'][0]->getDescription() ?>
+              </p>
+            </a>
+           <a href="/cocorico2/convidados" class="btn-ico-mais" title="CONVIDADOS">
+             <i class="ico-mais"></i>
+           </a>        
          </div>
-       </a>  
+         <?php endif; ?>
        <?php endif; ?>
-     <?php endif; ?>
-     -->
-     
-     <?php if(isset($displays['convidado-especial'])):?>
-        <?php if(count($displays['convidado-especial']) > 0): ?>
-          <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-      <div class="span6 destaque-1 conteudo-tv">
-        <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
-          <h3><?php echo $displays['convidado-especial'][0]->getTitle() ?></h3>
-          <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
-          <p>
-            <?php echo $displays['convidado-especial'][0]->getDescription() ?>
-          </p>
-         </a>
-         <a href="/cocorico2/convidados" class="btn-ico-mais" title="Convidados">
-           <i class="ico-mais"></i>
-         </a>        
-       </div>
-        
-       <?php endif; ?>
-     <?php endif; ?>
-      <!-- /convidado especial -->
-      
+       <!-- /convidado especial -->
        
       
-      
-      
-      
-      
       <!-- receitinhas -->
+      <!--
       <?php if(isset($displays['receitinhas'])):?>
         <?php if(count($displays['receitinhas']) > 0): ?>  
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -435,7 +412,27 @@
       </a>  
       <?php endif; ?>
      <?php endif; ?>
+     -->
+     
+     <?php if(isset($displays['receitinhas'])):?>
+        <?php if(count($displays['receitinhas']) > 0): ?>  
+          <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          <div class="span6 destaque-2 conteudo-diverso ytb">
+            <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>" class="destaque2"> 
+              <h3><?php echo $displays['receitinhas'][0]->getTitle() ?></h3>
+              <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+              <p>
+                <?php echo $displays['receitinhas'][0]->getDescription() ?>
+              </p>
+            </a>  
+            <a href="/cocorico2/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
+              <i class="ico-mais"></i>  
+            </a>
+          </div>       
+      <?php endif; ?>
+     <?php endif; ?>
       <!-- /receitinhas -->
+      
       
     </div>
     <!-- /col esquerda -->      
