@@ -315,3 +315,5 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .col-esq .span6 .destaque-2 img { margin: -28px -1px; max-width: 320px; border-radius:45px; -moz-border-radius: 45px; -webkit-border-radius: 45px;}
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
+
+.instagram h2 { width: 100%; }

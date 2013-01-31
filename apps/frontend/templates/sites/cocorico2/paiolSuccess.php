@@ -176,13 +176,15 @@
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
       <p>
         <?php echo $displays['destaque-imprima'][0]->getDescription() ?> 
-        <a href= "<?php echo $site->retriveUrl() ?>/paiol"><i class="ico-mais"></i></a>
-      </a> 
+        <a class="mais-todos" href="/cocorico2/imprima-e-brinque"><i class="ico-mais"></i></a>
+     
       </p>
-    </div>  
+    </div>
+    </a>  
    <?php endif; ?>
     <?php endif; ?>  
     <!-- /Imprima e brinque -->
+    
     <!-- Papel de parede -->
     <?php if(isset($displays['destaque-papel-de-parede'])): ?>
       <?php if(count($displays['destaque-papel-de-parede']) > 0): ?>
@@ -194,7 +196,7 @@
       <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
       <p>
         <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
-        <i class="ico-mais"></i>
+        <a class="mais-todos" href="/cocorico2/papel-de-parede"><i class="ico-mais"></i></a>
       </p>
     </div> </a>
     <?php endif; ?>
