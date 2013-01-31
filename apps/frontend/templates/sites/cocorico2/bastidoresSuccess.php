@@ -1,3 +1,7 @@
+<?php 
+$assets = $pager->getResults();
+?>
+
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->
@@ -20,114 +24,92 @@
     </div>
   </div>
   <!-- /row--> 
+  
   <!-- breadcrumb-->
-  <ul class="breadcrumb"> 
-    <li><a href="/cocorico">TV Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico">Bastidores</a><span class="divider">&rsaquo;</span></li> 
-    <li class="active">Tour virtual</li>
+  <ul class="breadcrumb">
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/tvcocorico">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle() ?></li>
   </ul>
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">Tour virtual</h2>
   
+  <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
+  
+  <?php if(count($pager) > 0): ?>
+
+    <!--row-->
+    <div class="row-fluid conteudo">    
+      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- /row-->
+
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
+    <?php endif; ?>
+
   <!--row-->
-  <?php if(isset($displays['tour-virtual'])):?>
-  <?php if(count($displays['tour-virtual']) > 0): ?>
-  <div class="row-fluid conteudo">    
-  <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
-   </div>
-  <?php endif; ?>
-   <?php endif; ?>
-  <!-- /row-->
-  
-  
-  <?php
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s')
-      ->where('a.id = sa.asset_id')
-      ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = "bastidores"')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 1')
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-      ->groupBy('sa.asset_id')
-      ->orderBy('a.id desc')
-      ->limit(6)
-      ->execute();
-  ?>
-  <?php if (count($assets) > 0): ?>
-  <!--row-->
-  <div class="row-fluid relacionados ytb">
-    <div class="tit"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a><span></span></div>
-    <ul class="destaques-small">
-      <?php foreach($assets as $d): ?>
-        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <li class="span2">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <p><?php echo $d->getTitle() ?></p>
-        </a>
-      </li>
+  <div class="row-fluid conteudo destaques ytb">
+    <ul id="convidados">
+      <?php foreach($pager->getResults() as $d): ?>
+        <li class="span4">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <p><?php echo $d->getTitle() ?></p>
+          </a>
+        </li>
       <?php endforeach; ?>
     </ul>
   </div>
   <!-- /row-->
-  <?php endif; ?>
-  
-  
-  <!--row-->
-  <div class="row-fluid conteudo erros">
-    <p class="tit"></p>
-   
-  <?php if(isset($displays['destaque-1'])):?>
-    <?php if(count($displays['destaque-1']) > 0): ?>
-   
-      <a class="span4 destaque1" title="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
-       <div class="destaque-1 conteudo-tv">
-        <h3><?php echo $displays['destaque-1'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-1'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
-        <p><?php echo $displays['destaque-1'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
-      </div>
-     </a>
+  <?php if(count($pager) > 0): ?>
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- paginacao -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach;?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <!-- /paginacao -->
     <?php endif; ?>
-   <?php endif; ?>
-     
-  <!-- ** DESTAQUE 2 **-->
-    
-   <?php if(isset($displays['destaque-2'])):?>
-    <?php if(count($displays['destaque-2']) > 0): ?>
-     
-      <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
-      <div class="destaque-1 conteudo-tv">
-        <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-2'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
-        <p><?php echo $displays['destaque-2'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
-      </div>
-    </a> 
-    <?php endif; ?>
-   <?php endif; ?>
-   
-     <!-- ** DESTAQUE 3 **-->
-    
-   <?php if(isset($displays['destaque-3'])):?>
-    <?php if(count($displays['destaque-3']) > 0): ?>
-     
-      <a class="span4 destaque1 last" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"> 
-      <div class="destaque-1 conteudo-tv">
-        <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
-        <img alt="<?php echo $displays['destaque-3'][0]->Asset->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-3'][0]->Asset->AssetVideo->getYoutubeId()?>/1.jpg">
-        <p><?php echo $displays['destaque-3'][0]->Asset->getDescription() ?><i class="ico-mais"></i></p>
-      </div>
-    </a> 
-    <?php endif; ?>
-   <?php endif; ?>
-    
-   </div>  
-  
-  <!-- /row-->
+   <?php endif; ?> 
+      <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+  <?php endif;?>
+ 
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
 <!-- /container-->
