@@ -82,7 +82,7 @@
     <div class="instagram span4">
       <div class="topo">
           <div class="bac-blue">
-          	<a href="/instagram" title="Instagram @TVCOCORICO" target="_self">
+          	<a href="<?php $site->retriveUrl();?>/instagram" title="Instagram @TVCOCORICO" target="_self">
 	            <h3>
 	              <i class="ico-naweb ico-instagram"></i>
 	              instagram<span>@tvcocorico</span>
