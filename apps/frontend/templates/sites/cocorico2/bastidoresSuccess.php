@@ -66,7 +66,7 @@ if(isset($pager)){
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
-  <div class="row-fluid conteudo ytb">
+  <div class="row-fluid conteudo ytb"> 
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
