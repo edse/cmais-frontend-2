@@ -178,7 +178,7 @@
     	        <?php echo $displays['destaque-imprima'][0]->getDescription() ?> 
     		    </p>
   	      </a>
-  	      <a href="teste" class="btn-ico-mais" title="titulo">
+  	      <a href="/cocorico2/imprima-e-brinque" class="btn-ico-mais" title="titulo">
   	      	<i class="ico-mais"></i>
   	      </a> 
   	    </div>
@@ -198,7 +198,7 @@
               <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
             </p>
           </a>
-          <a href="teste" class="btn-ico-mais" title="titulo">
+          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="titulo">
             <i class="ico-mais"></i>
           </a>  
         </div> 
