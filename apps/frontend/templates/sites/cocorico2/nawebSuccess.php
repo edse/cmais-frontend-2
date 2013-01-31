@@ -82,11 +82,13 @@
     <div class="instagram span4">
       <div class="topo">
           <div class="bac-blue">
-            <h3>
-              <i class="ico-naweb ico-instagram"></i>
-              instagram<span>@tvcocorico</span>
-              <i class="ico-seta-titulo"></i>
-           </h3>
+          	<a href="<?php echo $site->retriveUrl();?>/instagram" title="Instagram @TVCOCORICO" target="_self">
+	            <h3>
+	              <i class="ico-naweb ico-instagram"></i>
+	              instagram<span>@tvcocorico</span>
+	              <i class="ico-seta-titulo"></i>
+	           </h3>
+           </a>
          </div>
        </div>
        <div class="box-instagram">
@@ -146,12 +148,6 @@ $('#slideTvCocorico').embedagram({
 });
 
 $('.fancybox-media').fancybox({
-  beforeShow: function () {
-    /* Disable right click */
-    $.fancybox.wrap.bind("contextmenu", function (e) {
-      return false; 
-    });
-  },
   openEffect  : 'none',
   closeEffect : 'none',
   nextEffect  : 'none',

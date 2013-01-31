@@ -5,7 +5,7 @@
         <li><a href="http://cmais.com.br/cocorico2/personagens" title="Personagens">Personagens</a></li>
         <li><a href="http://cmais.com.br/cocorico2/personagens" title="Autógrafos">Autógrafos</a></li>
         <li><a href="http://cmais.com.br/cocorico2/clipes-musicais" title="Receitinhas">Clipes</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/videos" title="Receitinhas">Séries Especiais</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/series" title="Receitinhas">Séries Especiais</a></li>
         <li><a href="http://cmais.com.br/cocorico2/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
       </ul>
     </div>
@@ -33,16 +33,16 @@
     </div>
     
     
-    <div class="span2 joguinhos"> <a href="#" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
+    <div class="span2 joguinhos"> <a href="http://cmais.com.br/cocorico2/paiol" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
       <ul>
         <li><a href="http://cmais.com.br/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/atividades" title="Atividades">Atividades</a></li>
+        <li><a href="http://cmais.com.br/cocorico2/paiol" title="Atividades">Atividades</a></li>
         <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Receitinhas">Receitinhas</a></li>
         <li><a href="http://cmais.com.br/cocorico2/imprima-e-brinque" title="Receitinhas">Imprima e Brinque</a></li>
         <li><a href="http://cmais.com.br/cocorico2/para-colorir" title="Receitinhas">Para Colorir</a></li>
         <li><a href="http://cmais.com.br/cocorico2/papel-de-parede" title="Receitinhas">Papel de Parede</a></li>
         </ul></div>
-    <div class="span3 sites"> <a href="#" class="bold" title="Sites Relacionados">Sites Relacionados</a>
+    <div class="span3 sites"> <p class="bold">Sites Relacionados</p>
       <ul>
         <li><a href="http://cmais.com.br/quintaldacultura" class="quintal" title="Quintal da Cultura">Quintal da Cultura</a></li>
         <li><a href="http://tvratimbum.cmais.com.br/" class="tvrtb" title="TV Rá Tim Bum!">TV Rá Tim Bum!</a></li>

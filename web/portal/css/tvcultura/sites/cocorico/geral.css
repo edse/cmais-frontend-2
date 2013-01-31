@@ -250,6 +250,7 @@ bold,
 .curtir.disabled { display:none; }
 
 .conteudo p { clear:both; margin-bottom:0;}
+.conteudo .tit {  font-weight: bold; margin-bottom: 5px; text-transform: uppercase; margin:20px 0;}
 .destaques.joguinho { background: #1893cf; color:#fff; float:right; }
 
 .destaques a { color:#fff; text-align:center; display: block; border-radius:0 0 10px 10px; -moz-border-radius:0 0 10px 10px; -webkit-border-radius:0 0 10px 10px;  }
@@ -374,3 +375,8 @@ bold,
 .topo-coco .fb-like { clear:both; display: block; }
 .box-publicidade.span9 { max-width: 620px; height:90px; background:#c1c1c1; float:left; margin-left:0; }
 /* /topo coco*/
+
+/* botao mais todos*/
+.mais-todos { bottom: 0; height: 37px; position: absolute; right: 0;  width: 37px; }
+.mais-todos i { background-position:0 0; }
+/* /botao mais todos*/

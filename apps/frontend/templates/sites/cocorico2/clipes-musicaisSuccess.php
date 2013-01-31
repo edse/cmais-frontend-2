@@ -65,14 +65,17 @@
   <div class="row-fluid conteudo" id="videos">
     <p class="span12"><?php echo $asset->getDescription()?></p>
     <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-    <p class="tit"> Confira mais clipes:</p><br>
+    <p class="tit"> Confira mais clipes:</p>
   </div>
   <!--/row-->
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
+<<<<<<< HEAD
    <p> 
     <p/>
+=======
+>>>>>>> ac7baafba4bd272e14044280a75c080dfae2de9d
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>

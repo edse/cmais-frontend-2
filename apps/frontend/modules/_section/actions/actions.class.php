@@ -635,17 +635,7 @@ class _sectionActions extends sfActions
                 ->orderBy('a.created_at DESC');
                 
             }
-            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && $this->section->getSlug() == "episodios") {
-              $this->assetsQuery = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, AssetVideo av')
-                ->where('av.asset_id = a.id')
-                ->andWhere('a.is_active = ?', 1)
-                ->andWhere('av.youtube_id != ""')
-                ->andWhere('a.site_id = ?', $this->site->getId())
-                ->orderBy('a.created_at desc');
-            }
-            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && $this->section->getSlug() == "bastidores") {
+            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores"))) {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av, SectionAsset sa')
