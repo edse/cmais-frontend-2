@@ -80,7 +80,7 @@
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="NA TV" href="/cocorico2/natv" class="video-ytb destaques span6">
             <h2>Na TV</h2>
-            <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg">
+            <img alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
             <p class="bold"><?php $tam=33; $str=$displays['destaque-1'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
             <!--p><?php echo $displays['destaque-1'][0]->getDescription() ?></p-->
           </a>
