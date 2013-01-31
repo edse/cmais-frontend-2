@@ -71,6 +71,7 @@
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
+
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
