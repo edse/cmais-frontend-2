@@ -38,22 +38,8 @@
   
   <!--row-->
   <div class="row-fluid">
-    <!--embedagram-->
-    <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('#slideTvCocorico').embedagram({
-        instagram_id: 290753701,
-        link_type:'web',
-        thumb_width:300
-      });
-    });
-    </script>
-    <style>
-    #slideTvCocorico { margin:0; }
-    #slideTvCocorico li {width: 300px; float: left; margin: 0 0 2% 2%;} 
-    </style>
-    <ul id="slideTvCocorico"></ul>
+  <!--embedagram-->
+  <ul id="slideTvCocorico"></ul>
   <!--/embedagram-->
   </div>
   <!-- /row-->
@@ -65,3 +51,44 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+<!--embedagram-->
+<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+<script type="text/javascript">
+$('#slideTvCocorico').embedagram({
+    instagram_id: 290753701,
+    limit:4,
+    link_type:'img',
+    thumb_width:300,
+    success: function (){ 
+        $('#slideTvCocorico li a')
+          .addClass('fancybox-media')
+          .attr('rel','instagram');
+        $('#slideTvCocorico li').addClass('tela');
+        $('#slideTvCocorico a img').each(function(index) {
+      var titulo = $(this).attr('title');
+      $(this).parent().attr('title', titulo)
+      });
+   }
+});
+
+$('.fancybox-media').fancybox({
+  beforeShow: function () {
+    /* Disable right click */
+    $.fancybox.wrap.bind("contextmenu", function (e) {
+      return false; 
+    });
+  },
+  openEffect  : 'none',
+  closeEffect : 'none',
+  nextEffect  : 'none',
+  prevEffect  : 'none', 
+  padding : 0,
+  helpers : {
+    title : {
+      type : 'float'
+    },
+    media : {}
+  }
+});
+</script>
+<!--/embedagram-->
