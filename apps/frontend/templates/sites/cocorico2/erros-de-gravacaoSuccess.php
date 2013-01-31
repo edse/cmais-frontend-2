@@ -63,19 +63,24 @@ $assets = $pager->getResults();
     <?php endif; ?>
 
   <!--row-->
-  <div class="row-fluid conteudo destaques ytb">
-    <ul id="convidados">
-      <?php foreach($pager->getResults() as $d): ?>
-        <li class="span4">
-          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php echo $d->getTitle() ?></p>
-          </a>
-        </li>
-      <?php endforeach; ?>
+  <?php if(count($pager) > 0): ?>
+    <div class="row-fluid relacionados">
+  <div class="row-fluid conteudo ytb"> 
+    <ul class="destaques-small">
+    <?php foreach($pager->getResults() as $d): ?>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+          <p><?php echo $d->getTitle() ?></p>
+        </a>
+      </li>
+    <?php endforeach; ?>
     </ul>
   </div>
+   </div>
+  <?php endif; ?>
   <!-- /row-->
+  
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->
