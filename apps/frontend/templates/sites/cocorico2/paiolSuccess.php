@@ -170,18 +170,20 @@
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-	    <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>" class="span4 destaque2">
-	    <div class="destaque-2 conteudo-diverso">
-	      <h3>Imprima e brinque</h3>
-	      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
-	      <p>
-	        <?php echo $displays['destaque-imprima'][0]->getDescription() ?> 
-	        <a href="teste">
-	        <i class="ico-mais"></i>
-	     	</a>
-	      </p>
+	    
+	    <div class="span4 destaque-2 conteudo-diverso">
+	      <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
+  	      <h3>Imprima e brinque</h3>
+  	      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
+  	      <p>
+  	        <?php echo $displays['destaque-imprima'][0]->getDescription() ?> 
+  		    </p>
+	      </a>
+	      <a href="teste">
+	      	<i class="ico-mais"></i>
+	      </a> 
 	    </div>
-	    </a>  
+	     
    	 <?php endif; ?>
    <?php endif; ?>  
     <!-- /Imprima e brinque -->
