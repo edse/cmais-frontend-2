@@ -71,12 +71,6 @@ $('#slideTvCocorico').embedagram({
 });
 
 $('.fancybox-media').fancybox({
-  beforeShow: function () {
-    /* Disable right click */
-    $.fancybox.wrap.bind("contextmenu", function (e) {
-      return false; 
-    });
-  },
   openEffect  : 'none',
   closeEffect : 'none',
   nextEffect  : 'none',
