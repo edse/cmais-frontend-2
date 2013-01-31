@@ -380,7 +380,7 @@ bold,
 /* /topo coco*/
 
 /* botao mais todos*/
-.btn-ico-mais { bottom: 26px;  position: absolute;  right: 0;}
+.btn-ico-mais { bottom: 26px;  position: absolute;  right: 0; z-index: 100;}
 /* /botao mais todos*/
 .conteudo .destaque-2 h3,
 .conteudo .destaque-1 h3 { line-height: 34px !important; } 
