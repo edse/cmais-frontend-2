@@ -47,7 +47,7 @@
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
 
-    <h2><?php $tam=40; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <h2><?php $tam=20; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
 
      <span></span>
     <!-- RANKING -->
