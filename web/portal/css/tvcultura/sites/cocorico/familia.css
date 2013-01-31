@@ -150,9 +150,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #naweb .box-instagram { background: none repeat scroll 0 0 #F3F7F7; border: 2px solid #FFFFFF; border-radius: 0 0 5px 5px; height: 290px; margin-top: -3px; padding: 4px 0 0 4px; }
 #naweb .box-instagram iframe { border-bottom: 1px dashed #fff !important; height: 287px !important; width: 286px !important;}
 #naweb .box-youtube { height:288px; overflow:hidden; float:left; }
-#slideTvCocorico { margin:0; }
 #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;}
-#slideTvCocorico li.tela {width: 300px; float: left; margin: 0 0 2% 2%;} 
 .fancybox-opened .fancybox-title {margin-bottom: -35px;} 
 /* /naweb */
 

@@ -63,7 +63,6 @@ $('#slideTvCocorico').embedagram({
         $('#slideTvCocorico li a')
           .addClass('fancybox-media')
           .attr('rel','instagram');
-        $('#slideTvCocorico li').addClass('tela');
         $('#slideTvCocorico a img').each(function(index) {
       var titulo = $(this).attr('title');
       $(this).parent().attr('title', titulo)
