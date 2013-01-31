@@ -90,56 +90,8 @@
          </div>
        </div>
        <div class="box-instagram">
-       <!-- SnapWidget -->
-       <!--<iframe src="http://snapwidget.com/in/?u=dHZjb2Nvcmljb3xpbnwxMzh8MnwyfHxub3w1fG5vbmU=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:286px; height: 286px" ></iframe>-->
        <!--embedagram-->
-       <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-       <script type="text/javascript">
-		    $(document).ready(function() {
-		        
-		        $('#slideTvCocorico').embedagram({
-		            instagram_id: 290753701,
-		            limit:4,
-		            link_type:'img',
-		            thumb_width:140,
-		            success: function (){ 
-		                $('#slideTvCocorico li a')
-		                  .addClass('fancybox-media')
-		                  .attr('rel','instagram')
-		                
-		                $('#slideTvCocorico a img').each(function(index) {
-                      var titulo = $(this).attr('title');
-                      $(this).parent().attr('title', titulo)
-                      });
-		                }
-		        });
-		        
-		        $('.fancybox-media').fancybox({
-		          beforeShow: function () {
-                /* Disable right click */
-                $.fancybox.wrap.bind("contextmenu", function (e) {
-                  return false; 
-                });
-              },
-              openEffect  : 'none',
-              closeEffect : 'none',
-              nextEffect  : 'none',
-              prevEffect  : 'none', 
-              padding : 0,
-              helpers : {
-                title : {
-                  type : 'float'
-                },
-                media : {}
-              }
-            });
-		    });
-		    </script>
-		    <style>
-		    #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;} 
-		    .fancybox-opened .fancybox-title {margin-bottom: -35px;} 
-		    </style>
-		    <ul id="slideTvCocorico"></ul>
+	    <ul id="slideTvCocorico"></ul>
        <!--/embedagram-->
        </div> 
      </div>   
@@ -173,3 +125,47 @@
   js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=418273974898589";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!--embedagram-->
+<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+   <script type="text/javascript">
+$(document).ready(function() {
+    
+	$('#slideTvCocorico').embedagram({
+	    instagram_id: 290753701,
+	    limit:4,
+	    link_type:'img',
+	    thumb_width:140,
+	    success: function (){ 
+	        $('#slideTvCocorico li a')
+	          .addClass('fancybox-media')
+	          .attr('rel','instagram')
+	        
+	        $('#slideTvCocorico a img').each(function(index) {
+	      var titulo = $(this).attr('title');
+	      $(this).parent().attr('title', titulo)
+	      });
+	   }
+	});
+    
+    $('.fancybox-media').fancybox({
+      beforeShow: function () {
+	    /* Disable right click */
+	    $.fancybox.wrap.bind("contextmenu", function (e) {
+	      return false; 
+	    });
+	  },
+	  openEffect  : 'none',
+	  closeEffect : 'none',
+	  nextEffect  : 'none',
+	  prevEffect  : 'none', 
+	  padding : 0,
+	  helpers : {
+	    title : {
+	      type : 'float'
+	    },
+	    media : {}
+	  }
+	});
+});
+</script>
+<!--/embedagram-->
