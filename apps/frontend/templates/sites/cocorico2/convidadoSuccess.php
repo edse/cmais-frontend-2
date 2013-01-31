@@ -41,6 +41,42 @@ if(isset($pager)){
     <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>
   
+  <div class="pagination" id="alfabeto">
+    <ul>
+      <li class="active"><a href="#" title="1">A</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">B</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">C</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">D</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">E</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">F</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">G</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">H</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">I</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">J</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">K</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">L</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">M</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">N</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">O</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">P</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">Q</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">R</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">S</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">T</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">U</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">V</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">W</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">X</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">Y</a><span class="divider">|</span></li>
+      <li><a href="#" title="1">Z</a></li>
+    </ul>
+    <span class="divider last">|</span>
+    <form class="form-search">
+      <input type="text" class="input-medium search-query">
+      <button type="submit" class="btn"><i class="icon-search"></i></button>
+    </form>
+  </div>  
+  
   
   
   <div class="row-fluid">
@@ -82,7 +118,9 @@ if(isset($pager)){
    <span class="data"><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
    <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
    <div class="span6">
+   	 <?php if ($asset->AssetContent->getHeadline()): ?>
      <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?> <span class="last"></span></p>
+     <?php endif; ?>
      <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
    </div>
    
