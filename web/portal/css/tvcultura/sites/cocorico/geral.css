@@ -379,3 +379,7 @@ bold,
 /* botao mais todos*/
 .btn-ico-mais { bottom: 26px;  position: absolute;  right: 0;}
 /* /botao mais todos*/
+.destaque-2 h3,
+.destaque-1 h3 { line-height: 34px; } 
+.destaque-2 a:hover,
+.destaque-1 a:hover { text-decoration:none; }
