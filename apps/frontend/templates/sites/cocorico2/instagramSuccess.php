@@ -56,14 +56,13 @@
 <script type="text/javascript">
 $('#slideTvCocorico').embedagram({
     instagram_id: 290753701,
-    //limit:4,
+    limit:30,
     link_type:'img',
     thumb_width:300,
     success: function (){ 
         $('#slideTvCocorico li a')
           .addClass('fancybox-media')
           .attr('rel','instagram');
-        $('#slideTvCocorico li').addClass('tela');
         $('#slideTvCocorico a img').each(function(index) {
       var titulo = $(this).attr('title');
       $(this).parent().attr('title', titulo)

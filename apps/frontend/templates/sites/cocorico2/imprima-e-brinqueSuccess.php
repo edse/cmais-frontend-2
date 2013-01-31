@@ -75,7 +75,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <?php if($k > 2): ?>
             <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
             <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-              <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" />
+              <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7-b') ?>" alt="<?php echo $d->getTitle() ?>" />
               <?php echo $d->getTitle() ?></a>
             </li>
           <?php endif; ?>
