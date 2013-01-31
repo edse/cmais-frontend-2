@@ -79,7 +79,6 @@ if(isset($pager)){
     <?php endforeach; ?>
     </ul>
   </div>
-  <!-- /row-->
   <?php if(count($pager) > 0): ?>
     <?php if($pager->haveToPaginate()): ?>
     <!-- paginacao -->
