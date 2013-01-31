@@ -157,7 +157,6 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 /* /BRINCADEIRAS */
 
 /* home brincadeiras */
-.btn-ico-mais{position: absolute;bottom: 26px;right: 0;}
 .tvcoco.span12 { margin-top:0; padding-top:0; background:#F2722F; }
 .destaque-home-tv h2,
 .tvcoco h2 { font-size:20px; text-transform:uppercase; font-weight:normal; margin-top:10px;}
