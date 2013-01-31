@@ -228,3 +228,4 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque-2 p { background:#F2722F; }
 
 .conteudo .conteudo-diverso h3 { line-height: 34px; } 
+.conteudo .conteudo-diverso a:hover { text-decoration:none; }
