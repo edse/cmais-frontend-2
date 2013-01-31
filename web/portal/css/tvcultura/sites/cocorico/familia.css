@@ -151,7 +151,8 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #naweb .box-instagram iframe { border-bottom: 1px dashed #fff !important; height: 287px !important; width: 286px !important;}
 #naweb .box-youtube { height:288px; overflow:hidden; float:left; }
 #slideTvCocorico li{width: 140px;float: left;margin: 0 4px 4px 0;}
-.fancybox-opened .fancybox-title {margin-bottom: -35px;} 
+.fancybox-opened .fancybox-title {margin-bottom: -35px;}
+.instagram .bac-blue a{text-decoration:none;} 
 /* /naweb */
 
 /* agenda, cinema e post */
