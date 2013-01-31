@@ -71,6 +71,11 @@
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
+<<<<<<< HEAD
+   <p> 
+    <p/>
+=======
+>>>>>>> ac7baafba4bd272e14044280a75c080dfae2de9d
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
