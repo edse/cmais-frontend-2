@@ -16,7 +16,7 @@ if($_FILES["arquivo"]){
       echo "Size: " . ($_FILES["arquivo"]["size"] / 1024) . " kB<br>";
       echo "Temp file: " . $_FILES["arquivo"]["tmp_name"] . "<br>";
       if(is_file($_FILES["arquivo"]["tmp_name"])){
-        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]). $_POST, "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
           echo ">>>>OK!";
         }else{
