@@ -61,7 +61,7 @@ $assets = $pager->getResults();
    <div class="pagination" id="alfabeto">
     <ul>
       <?php foreach($letras as $k=>$d): ?>
-      <li><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><?php if($k < 26): ?><span class="divider">|</span><?php endif; ?></li>
+      <li<?php if($_REQUEST['letra-cocorico'] == $d): ?> class="active"<?php endif; ?>><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><?php if($k < 26): ?><span class="divider">|</span><?php endif; ?></li>
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
