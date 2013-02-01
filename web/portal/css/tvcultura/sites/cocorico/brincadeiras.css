@@ -36,6 +36,7 @@
 .receita p,
 .receita p strong { font-family:Arial, Helvetica, sans-serif !important;  }
 .tit .mais { background-position:-109px;  }
+.tit p,
 .tit a { background-image:url("/portal/images/capaPrograma/cocorico/bg-laranja.jpg"); }
 .tit span { background-position:-10px 0;  }
 .relacionados .tit { /*max-width:150px; */}
