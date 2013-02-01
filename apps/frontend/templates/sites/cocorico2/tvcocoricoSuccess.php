@@ -63,7 +63,7 @@
         <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" />
           <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>
         </a>
-        <a href="<?php echo $site->retrieveUrl(); ?>/convidados" title="convidados">
+        <a href="<?php echo $site->retriveUrl(); ?>/convidados" title="convidados">
           <span class="mais"></span>
         </a>
           <?php endif; ?>
