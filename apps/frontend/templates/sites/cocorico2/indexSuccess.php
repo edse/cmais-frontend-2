@@ -266,14 +266,15 @@
               </label>
             </div>
             <?php endfor; ?>
-            <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
             <div class="votar span12">
+              <div class="ajax-loader">
+               <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+              </div>
               <span></span>
               <input id="votar-input" class="span11" type="submit" value="votar" />
               <span class="last"></span>
             </div>
           </form>
-          
           <!--/Pergunta-->
           <!--Resposta FORM INATIVA-->
           <form class="navbar-form pull-left inativo span12" style="display: none;">
@@ -286,7 +287,7 @@
               <p class="resposta-<?php echo $i?>">50%</p>
             </div>
             <?php endfor;?>
-            <a href="<?php echo $site->retriveUrl() ?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
+            <a href="<?php echo $site->retriveUrl();?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
           <!--/Resposta-->
         </div>
