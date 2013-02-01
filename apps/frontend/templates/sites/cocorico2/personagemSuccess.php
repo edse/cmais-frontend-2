@@ -152,7 +152,7 @@
       });
     </script>
     <?php endif; ?>
-    <?php if($displays["autografo"][0] = 0): ?>
+    <?php if(count($displays['autografo']) == 0): ?>
     <!-- banner -->
     <div class="span4" style="float:right;">
       <!-- portal-cocorico-300x250 -->
