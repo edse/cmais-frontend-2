@@ -39,35 +39,28 @@ $assets = $pager->getResults();
   
   <!-- titulo da pagina -->
   <h2 class="tit-pagina">Convidados</h2>
-  
+   <script>
+   	$(function() {
+      $('#alfabeto a').click(function(){
+      	var letra = $(this).attr('title');
+      	alert(letra);
+      });
+   	});
+   </script>
+   
+   <?php
+     $letra = 'A';
+     for ($i=0; $i < 26; $i++) {
+       $letras[] = $letra;
+       $letra++;
+     }
+   ?>
+   
    <div class="pagination" id="alfabeto">
     <ul>
-      <li class="active"><a href="#" title="1">A</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">B</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">C</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">D</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">E</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">F</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">G</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">H</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">I</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">J</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">K</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">L</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">M</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">N</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">O</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">P</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Q</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">R</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">S</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">T</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">U</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">V</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">W</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">X</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Y</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Z</a></li>
+      <?php foreach($letras as $d): ?>
+      <li><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><span class="divider">|</span></li>
+      <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
     <form class="form-search">
