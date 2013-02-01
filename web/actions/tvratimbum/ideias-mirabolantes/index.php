@@ -16,7 +16,7 @@ if($_FILES["arquivo"]){
       echo "Size: " . ($_FILES["arquivo"]["size"] / 1024) . " kB<br>";
       echo "Temp file: " . $_FILES["arquivo"]["tmp_name"] . "<br>";
       if(is_file($_FILES["arquivo"]["tmp_name"])){
-        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, $_FILES["arquivo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
           echo ">>>>OK!";
         }else{
@@ -34,7 +34,7 @@ if($_FILES["arquivo"]){
   die();
 }
 
-function multi_attach_mail($to, $files, $form_data, $sendermail) {
+function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   // email fields: to, from, subject, and so on
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
@@ -62,7 +62,8 @@ function multi_attach_mail($to, $files, $form_data, $sendermail) {
       $data = @fread($fp, filesize($files[$i]));
       @fclose($fp);
       $data = chunk_split(base64_encode($data));
-      $message .= "Content-Type: application/octet-stream; name=\"" . basename($files[$i]) . "\"\n" . "Content-Description: " . basename($files[$i]) . "\n" . "Content-Disposition: attachment;\n" . " filename=\"" . basename($files[$i]) . "\"; size=" . filesize($files[$i]) . ";\n" . "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+      //$message .= "Content-Type: application/octet-stream; name=\"" . basename($files[$i]) . "\"\n" . "Content-Description: " . basename($files[$i]) . "\n" . "Content-Disposition: attachment;\n" . " filename=\"" . basename($files[$i]) . "\"; size=" . filesize($files[$i]) . ";\n" . "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+      $message .= "Content-Type: application/octet-stream; name=\"" . basename($files[$i]) . "\"\n" . "Content-Description: " . basename($files[$i]) . "\n" . "Content-Disposition: attachment;\n" . " filename=\"" . basename($file_name) . "\"; size=" . filesize($files[$i]) . ";\n" . "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
     }
   }
   $message .= "--{$mime_boundary}--";
