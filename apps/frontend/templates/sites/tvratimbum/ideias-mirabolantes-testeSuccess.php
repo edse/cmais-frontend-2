@@ -96,6 +96,7 @@
                   submitHandler: function(form){
                    $.ajax({
                       type: "POST",
+                      enctype: "multipart/form-data",
                       dataType: "text",
                       data: $("#form-contato").serialize(),
                       beforeSend: function(){
@@ -105,7 +106,7 @@
                         $(".msgErro").hide();
                       },
                       success: function(data){
-        
+                        alert(data);
                         window.location.href="javascript:;";
                         if(data == "1"){
                           $(".msgAcerto").show();
