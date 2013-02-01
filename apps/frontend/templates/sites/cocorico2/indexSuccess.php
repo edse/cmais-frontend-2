@@ -88,7 +88,9 @@
           
       <div class="destaque-home joguinhos span12">
         <?php if(count($related) > 0): ?>
-        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>">
+          <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" />
+        </a>
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
@@ -96,11 +98,23 @@
           <ul>
             <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?></a></li>
+            <li>
+              <a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>">
+                <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>" />
+                <?php //echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>
+                <?php $tam=18; $str=$displays['destaque-principal-joguinhos'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+              </a>
+            </li>
             <?php endif; ?>
             <?php $related = $displays['destaque-principal-joguinhos'][2]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             <?php if(count($related) > 0): ?>
-            <li><a href="<?php echo $displays['destaque-principal-joguinhos'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>" /><?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?></a></li>
+            <li>
+              <a href="<?php echo $displays['destaque-principal-joguinhos'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>">
+                <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>" />
+                <?php //echo $displays['destaque-principal-joguinhos'][2]->getTitle() ?>
+                <?php $tam=18; $str=$displays['destaque-principal-joguinhos'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+             </a>
+            </li>
             <?php endif; ?>
           </ul>
         </div>
@@ -153,7 +167,9 @@
               }
             ?>
             <?php if($display_img_src != ''): ?>
-            <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /><?php echo $displays['destaque-2'][0]->getTitle() ?>
+            <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+            <?php //echo $displays['destaque-2'][0]->getTitle() ?>
+            <?php $tam=22; $str=$displays['destaque-2'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
             <i class="ico-mais"></i>
             <?php endif; ?>
             
@@ -175,7 +191,9 @@
             }
           ?>
           <?php if($display_img_src != ''): ?>
-          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" /><?php echo $displays['destaque-3'][0]->getTitle() ?>
+          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" />
+          <?php //echo $displays['destaque-3'][0]->getTitle() ?>
+          <?php $tam=22; $str=$displays['destaque-3'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           <i class="ico-mais"></i> 
           <?php endif; ?>
         </a>
