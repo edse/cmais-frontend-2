@@ -36,7 +36,7 @@
   <?php if(count($displays['tour-virtual']) > 0): ?>
   <div class="row-fluid conteudo">  	
   <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
-  <p class="tit">Assista também:</p>
+  
    </div>
   <?php endif; ?>
    <?php endif; ?>
@@ -44,7 +44,7 @@
   <!--row-->
    
   <div class="row-fluid conteudo erros">
-    <p class="tit"></p>
+    <p class="tit">Assista também:</p>
    
   <?php if(isset($displays['destaque-1'])):?>
     <?php if(count($displays['destaque-1']) > 0): ?>
