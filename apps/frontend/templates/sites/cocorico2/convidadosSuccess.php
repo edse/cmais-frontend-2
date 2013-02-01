@@ -173,7 +173,7 @@ $assets = $pager->getResults();
       <?php endforeach; ?>
     </ul>
     <?php else: ?>
-    <p>Nenhum resultado encontrado para a sua busca.</p>
+    <p style="margin-top: 20px;">Nenhum resultado encontrado para a sua busca.</p>
     <?php endif; ?>  
   </div>
   
