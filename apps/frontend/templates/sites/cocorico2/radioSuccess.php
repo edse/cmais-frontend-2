@@ -400,7 +400,7 @@
        <!-- /clipe -->
        
        <!-- clipe --> 
-       <div class="span6 destaque-2 conteudo-diverso">
+       <div class="span4 destaque-2 conteudo-diverso">
          <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="clipe">
            <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
            <img alt="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
