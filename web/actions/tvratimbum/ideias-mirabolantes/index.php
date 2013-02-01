@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors','On');
+
 $allowedExts = array("jpg", "jpeg", "gif", "png");
 
 if($_FILES["arquivo"]){
@@ -13,7 +16,7 @@ if($_FILES["arquivo"]){
       echo "Size: " . ($_FILES["arquivo"]["size"] / 1024) . " kB<br>";
       echo "Temp file: " . $_FILES["arquivo"]["tmp_name"] . "<br>";
       if(is_file($_FILES["arquivo"]["tmp_name"])){
-        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]). $_POST, "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
           echo ">>>>OK!";
         }else{
@@ -31,13 +34,13 @@ if($_FILES["arquivo"]){
   die();
 }
 
-function multi_attach_mail($to, $files, $data, $sendermail) {
+function multi_attach_mail($to, $files, $form_data, $sendermail) {
   // email fields: to, from, subject, and so on
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
   $headers = "From: $from";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
-  foreach($data as $k=>$v){
+  foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
   }
 
