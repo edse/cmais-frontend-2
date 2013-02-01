@@ -66,7 +66,7 @@
     
     <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     <p class="span12"><?php echo $asset->getDescription()?></p>
-    <p class="tit"> Confira mais clipes:</p>
+    <p class="tit"> Assista + clipes!</p>
   </div>
   <!--/row-->
   
@@ -78,7 +78,7 @@
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php echo $d->getTitle() ?></p></a>
+            <p><?php echo $d->getHeadline() ?></p></a>
           </li>
         <?php endforeach; ?>
       <?php endif; ?>
