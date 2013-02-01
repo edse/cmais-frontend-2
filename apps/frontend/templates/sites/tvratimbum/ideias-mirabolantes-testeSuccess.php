@@ -243,7 +243,7 @@
               
               <div class="linha t3">
                 <label>Sua Fantasia Maluca</label>
-                <input type="file" nome="arquivo" id="arquivo" class="required" />
+                <input type="file" name="arquivo" id="arquivo" class="required" />
                 
                 <?php /*
                 <textarea name="ideia" id="ideia" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
