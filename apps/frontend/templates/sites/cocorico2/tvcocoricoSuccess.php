@@ -323,7 +323,7 @@
         <?php if(count($displays['bastidores']) > 0): ?>
                     
        <!-- bastidores -->
-      <div class="bastidores fonte span3 ytb"> 
+      <div class="bastidores fonte span3"> 
         <div class="topo">
           <div class="bac-yellow">
             <h3>
@@ -335,36 +335,36 @@
        </div>
         
         <!-- item -->
-        <a href="<?php echo $displays['bastidores'][0]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][0]->getTitle() ?>">
+        <a href="/cocorico2/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][0]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
             </div>
-            <span><?php $tam=15; $str=$displays['bastidores'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
+            <span>Tour Virtual</span>
           </div>
         </a>
        
         <!-- /item -->
          
         <!-- item -->
-        <a href="<?php echo $displays['bastidores'][1]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][1]->getTitle() ?>">
+        <a href="/cocorico2/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][1]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
             </div>
-            <span><?php $tam=15; $str=$displays['bastidores'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
+            <span>Erros de Gravação</span>
           </div>
         </a>
        
         <!-- /item -->
         
         <!-- item -->
-        <a href="<?php echo $displays['bastidores'][2]->retriveUrl() ?>" title="<?php echo $displays['bastidores'][2]->getTitle() ?>">
+        <a href="/cocorico2/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['bastidores'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['bastidores'][2]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
             </div>
-            <span><?php $tam=15; $str=$displays['bastidores'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></span>
+            <span>Instagram</span>
           </div>
         </a>
         <!-- /item -->

@@ -1,5 +1,6 @@
 <?php
 $d['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176)->retriveDisplays();
+$d['texto'] = Doctrine::getTable('Block')->findOneById(1666)->retriveDisplays();
 $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays();
 ?>
 
@@ -61,8 +62,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             </div>  
             <!--/TITULO-->
         
-            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'section'=>$section )) ?>
-            
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'displays2'=>$d['texto'],'section'=>$section )) ?>
                        
             <hr />
             
