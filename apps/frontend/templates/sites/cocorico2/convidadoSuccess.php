@@ -89,7 +89,7 @@ if(isset($pager)){
   </div>
   <!-- /row-->
   <!--row-->
-  <div class="row-fluid conteudo">
+  <div class="row-fluid conteudo convidado">
   	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
     	<?php if (count($related) > 0): ?>
     		<p class="tit">Assista à participação na íntegra:</p>
