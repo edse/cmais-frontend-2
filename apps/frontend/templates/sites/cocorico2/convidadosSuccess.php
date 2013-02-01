@@ -171,7 +171,7 @@ $assets = $pager->getResults();
       <?php endforeach; ?>
     </ul>
     <?php else: ?>
-    <p>Nenhum convidado encontrado com a letra "<?php echo $_REQUEST['letra-cocorico'] ?>"!</p>
+    <p>Nenhum resultado encontrado para a sua busca.</p>
     <?php endif; ?>  
   </div>
   
