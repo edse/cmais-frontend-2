@@ -29,6 +29,7 @@ $assets = $pager->getResults();
   <!-- /row-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+          <li><a href="<?php echo $site->retriveUrl(); ?>/tvcocorico">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $section->getTitle()?></li>
   </ul>
   <!-- /breadcrumb-->
