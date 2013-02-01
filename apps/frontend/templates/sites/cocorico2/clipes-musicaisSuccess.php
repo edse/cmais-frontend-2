@@ -64,7 +64,7 @@
   <!--row-->
   <div class="row-fluid conteudo" id="videos">
     
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="940" height="529" style="margin-bottom: 20px;" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     <p class="span12"><?php echo $asset->getDescription()?></p>
     
   </div>
