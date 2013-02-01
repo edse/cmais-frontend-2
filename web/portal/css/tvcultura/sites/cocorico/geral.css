@@ -47,6 +47,7 @@ ul li { list-style:none; }
 #agenda .titulo-post{font-family: 'Ubuntu', sans-serif; }
 
 /*border-radius 10px*/
+#convidados li a,
 #myModal.alerta,
 .destaque-1,
 .destaque-2,
