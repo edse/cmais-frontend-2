@@ -1,3 +1,8 @@
+<?php
+$displays['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176);
+$displays['videos'] = Doctrine::getTable('Block')->findOneById(1177);
+?>
+
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
