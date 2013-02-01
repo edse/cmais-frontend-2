@@ -249,6 +249,10 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
               <div class="linha t3">
                 <label>Sua Fantasia Maluca</label>
                 <input type="file" name="arquivo" id="arquivo" class="required" />
+                <ul>
+                  <li>Apenas imagens nos formatos: jpg, gif e png são aceitos</li>
+                  <li>Arquivos com no máximo 20mb</li>
+                </ul>
                 
                 <?php /*
                 <textarea name="ideia" id="ideia" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>
