@@ -44,7 +44,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
         <!--/TRILHA-->
         
         <!--BOX-ESPECIAL-INTERNA-->
-        <div id="box-especial-interna">
+        <div id="box-especial-interna" style="display: none;">
           <!--WRAPPER-->
           <div class="wrapper">
             
