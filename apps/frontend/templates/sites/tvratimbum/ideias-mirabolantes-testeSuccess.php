@@ -1,7 +1,7 @@
 <?php
 $d['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176)->retriveDisplays();
-$d['texto'] = Doctrine::getTable('Block')->findOneById(1176)->retriveDisplays();
-$d['videos'] = Doctrine::getTable('Block')->findOneById(1666)->retriveDisplays();
+$d['texto'] = Doctrine::getTable('Block')->findOneById(1666)->retriveDisplays();
+$d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays();
 ?>
 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
