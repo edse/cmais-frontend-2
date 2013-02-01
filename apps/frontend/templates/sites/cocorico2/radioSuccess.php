@@ -380,7 +380,7 @@
           <img alt="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
           <p>
             <?php //echo $displays['destaque-clipes'][0]->getDescription() ?>
-            <?php $tam=32; $str=$displays['destaque-clipes'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            <?php $tam=38; $str=$displays['destaque-clipes'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </p> 
         </a>
         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
@@ -394,7 +394,7 @@
            <img alt="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
            <p>
              <?php //echo $displays['destaque-clipes'][1]->getDescription() ?>
-             <?php $tam=32; $str=$displays['destaque-clipes'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+             <?php $tam=38; $str=$displays['destaque-clipes'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
            </p>       
          </a>
          <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
@@ -410,7 +410,7 @@
            <img alt="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
            <p>
              <?php //echo $displays['destaque-clipes'][2]->getDescription() ?>
-             <?php $tam=32; $str=$displays['destaque-clipes'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+             <?php $tam=38; $str=$displays['destaque-clipes'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
            </p>
          </a> 
          <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
