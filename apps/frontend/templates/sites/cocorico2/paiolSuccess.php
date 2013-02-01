@@ -46,12 +46,17 @@
         <h2>Cozinha da amiga zazá</h2> 
         <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/receitinhas" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
-          <p><?php echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
+          <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
+          <p><?php $tam=28; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
           <span class="mais"></span>
         </a>
         <div class="enquete span12">
-          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][1]->getTitle() ?></p></a>
-          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" /><p><?php echo $displays['destaque-receitinhas'][2]->getTitle() ?></p></a>
+          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
+            <p><?php $tam=18; $str=$displays['destaque-receitinhas'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
+          </a>
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
+            <p><?php $tam=18; $str=$displays['destaque-receitinhas'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
+          </a>
         </div>  
       </div>  
     <?php endif; ?>
@@ -105,7 +110,10 @@
             <div class="img-bast">
                 <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['destaque-series'][0]->getTitle() ?></span>
+            <span>
+              <?php //echo $displays['destaque-series'][0]->getTitle() ?>
+              <?php $tam=18; $str=$displays['destaque-series'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>           
+            </span>
           </div>
         </a>
         <hr/>
@@ -117,7 +125,10 @@
             <div class="img-bast">
                 <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
             </div>
-            <span><?php echo $displays['destaque-series'][1]->getTitle() ?></span>
+            <span>
+              <?php //echo $displays['destaque-series'][1]->getTitle() ?>
+              <?php $tam=18; $str=$displays['destaque-series'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            </span>
           </div>
         </a>
         <hr/>
@@ -149,7 +160,10 @@
                   <ul id="slideTvCocorico"></ul>
                  <!--/embedagram-->
             </div>
-            <span><?php echo $displays['destaque-series'][2]->getTitle() ?></span>
+            <span>
+              <?php //echo $displays['destaque-series'][2]->getTitle() ?>
+              <?php $tam=18; $str=$displays['destaque-series'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            </span>
           </div>
         </a>
         <hr/>
@@ -175,7 +189,8 @@
     	      <h3>Imprima e brinque</h3>
     	      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
     	      <p>
-    	        <?php echo $displays['destaque-imprima'][0]->getDescription() ?> 
+    	        <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+    	        <?php $tam=28; $str=$displays['destaque-imprima'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
     		    </p>
   	      </a>
   	      <a href="/cocorico2/imprima-e-brinque" class="btn-ico-mais" title="IMPRIMA E BRINQUE">
@@ -195,7 +210,8 @@
             <h3>Papel de parede</h3>
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
             <p>
-              <?php echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
+              <?php //echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
+              <?php $tam=28; $str=$displays['destaque-papel-de-parede'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
             </p>
           </a>
           <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="PAPEL DE PAREDE">
@@ -228,11 +244,13 @@
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
-            <?php echo $displays['destaque-para-colorir'][0]->getTitle() ?>
+            <?php //echo $displays['destaque-para-colorir'][0]->getTitle() ?>
+            <?php $tam=28; $str=$displays['destaque-para-colorir'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
             <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
-            <?php echo $displays['destaque-para-colorir'][1]->getTitle() ?> 
+            <?php //echo $displays['destaque-para-colorir'][1]->getTitle() ?> 
+            <?php $tam=28; $str=$displays['destaque-para-colorir'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </a>
         </div>        
       </div> 
