@@ -47,7 +47,7 @@
         <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/receitinhas" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
-          <p><?php $tam=28; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
+          <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
           <span class="mais"></span>
         </a>
         <div class="enquete span12">
@@ -245,12 +245,12 @@
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
             <?php //echo $displays['destaque-para-colorir'][0]->getTitle() ?>
-            <?php $tam=28; $str=$displays['destaque-para-colorir'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            <?php $tam=18; $str=$displays['destaque-para-colorir'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </a>
           <a href="<?php echo $displays['destaque-para-colorir'][1]->retriveUrl() ?>" title="" class="span6 last">
             <img src="<?php echo $related1[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
             <?php //echo $displays['destaque-para-colorir'][1]->getTitle() ?> 
-            <?php $tam=28; $str=$displays['destaque-para-colorir'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            <?php $tam=18; $str=$displays['destaque-para-colorir'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </a>
         </div>        
       </div> 
