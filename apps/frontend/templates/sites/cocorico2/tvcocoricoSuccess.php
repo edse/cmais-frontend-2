@@ -31,7 +31,7 @@
       <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
       <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
-       Confira os horários da programação
+       Confira os horários da programação 
       </a>
       <!-- tv cocorico -->
       
