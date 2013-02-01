@@ -14,7 +14,8 @@
 #ferias #box-especial-interna #destaque-ferias{width:640px; height:390px;overflow: hidden; border:1px solid #ccc; float: left;margin:0 20px 0 0px; position: relative; }
 
 #ferias #box-especial-interna #destaque-texto-ferias{width:100%;}
-#ferias #box-especial-interna #destaque-texto-ferias p{color:#6b6b6b; font-size: 14px; padding:108px 10px 0 10px;}
+#ferias #box-especial-interna #destaque-texto-ferias p{color:#6b6b6b; font-size: 14px; padding:48px 10px 0 10px;}
+
 /*BOX-DESTAQUE*/
 
 /* CARRROSSEL VIDEOS */

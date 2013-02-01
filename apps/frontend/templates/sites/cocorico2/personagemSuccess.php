@@ -134,10 +134,7 @@
       <form class="form-horizontal">
         <h2>Autografo</h2>
         <div class="divisao"></div>
-        <p>Escreva seu nome no campo abaixo e clique no botão
-        <bold>
-          <?php echo $section->getTitle() ?>
-        </bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
+        
         <p>Escreva seu nome no campo abaixo e clique no botão<bold>BAIXAR</bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
         <div class="control-group g-nome">
           <label class="control-label nome" for="nome"></label> 

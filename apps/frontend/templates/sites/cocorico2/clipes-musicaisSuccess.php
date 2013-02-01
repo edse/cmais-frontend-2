@@ -54,7 +54,7 @@
     <?php $section = $asset->getSections(); ?>
     <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
     <!--/RANKING -->
-  </div>
+  </div> 
   
   <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
@@ -78,7 +78,7 @@
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php echo $d->getHeadline() ?></p></a>
+            <p><?php echo $d->getTitle() ?></p></a>
           </li>
         <?php endforeach; ?>
       <?php endif; ?>
