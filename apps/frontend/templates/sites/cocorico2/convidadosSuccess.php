@@ -156,22 +156,27 @@ $assets = $pager->getResults();
   <!-- /paginacao -->
   <!--row-->
   
-  <?php if(count($pager) > 0): ?>
+  
   <div class="row-fluid conteudo destaques">
+    <?php if(count($pager) > 0): ?>
+      
   	<ul id="convidados">
-		<?php foreach($pager->getResults() as $d): ?>
-    	  
+		  <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" />
           <?php $tam=23; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
         </a>  
       </li>
-      	
-        <?php endforeach; ?>
-       </ul>
-     <?php endif; ?> 
+      <?php endforeach; ?>
+    </ul>
+    <?php else: ?>
+    <p>Nenhum convidado encontrado com a letra "<?php echo $_REQUEST['letra-cocorico'] ?>"!</p>
+    <?php endif; ?>  
   </div>
+  
+    
+  
   <!-- /row-->
  <!-- paginacao -->
   <!--<div class="pagination pagination-centered">
