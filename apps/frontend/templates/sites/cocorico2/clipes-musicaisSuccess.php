@@ -73,7 +73,7 @@
   <!--row-->
   <div class="row-fluid relacionados ytb">
     <div class="tit"><span class="mais"></span><p>Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p><span></span></div>
-    <ul class="destaques-small top">
+    <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
