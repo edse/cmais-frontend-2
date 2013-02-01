@@ -199,7 +199,7 @@ a.destaque2:hover{text-decoration: none}
 #alfabeto ul { margin:0 5px 0 20px; float:left }
 #alfabeto ul > li > a { color:#747b3a; width: 15px; text-align:center;}
 #alfabeto ul > li > .divider { color:#bfd540; padding:0 5px; }
-#alfabeto .divider.last { background: none repeat scroll 0 0 transparent; border: medium none; display: block; float: left; font-size: 26px; height: 40px; line-height: 40px; margin-right: 10px; padding: 0;}
+#alfabeto .divider.last { background: none repeat scroll 0 0 transparent; border: medium none; display: block; float: left; font-size: 26px; height: 40px; line-height: 40px; margin-right: 10px; padding: 0; color:#8dd4ba;}
 #alfabeto ul,
 #alfabeto ul > li,
 #alfabeto ul > li a,
