@@ -5,16 +5,16 @@ ini_set('display_errors','On');
 $allowedExts = array("jpg", "jpeg", "gif", "png");
 
 if($_FILES["arquivo"]){
+  echo "Upload: " . $_FILES["arquivo"]["name"] . "<br>";
+  echo "Type: " . $_FILES["arquivo"]["type"] . "<br>";
+  echo "Size: " . ($_FILES["arquivo"]["size"] / 1024) . " kB<br>";
+  echo "Temp file: " . $_FILES["arquivo"]["tmp_name"] . "<br>";
   $extension = end(explode(".", $_FILES["arquivo"]["name"]));
   if((($_FILES["arquivo"]["type"] == "image/gif") || ($_FILES["arquivo"]["type"] == "image/jpeg") || ($_FILES["arquivo"]["type"] == "image/png") || ($_FILES["arquivo"]["type"] == "image/pjpeg")) && ($_FILES["arquivo"]["size"] < 20000) && in_array($extension, $allowedExts)){
     if($_FILES["arquivo"]["error"] > 0){
       die("Return Code: " . $_FILES["file"]["error"] . "<br>");
     }
     else{
-      echo "Upload: " . $_FILES["arquivo"]["name"] . "<br>";
-      echo "Type: " . $_FILES["arquivo"]["type"] . "<br>";
-      echo "Size: " . ($_FILES["arquivo"]["size"] / 1024) . " kB<br>";
-      echo "Temp file: " . $_FILES["arquivo"]["tmp_name"] . "<br>";
       if(is_file($_FILES["arquivo"]["tmp_name"])){
         if(multi_attach_mail("emerson.estrella@gmail.com, ideiasmirabolantestvrtb@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, $_FILES["arquivo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
