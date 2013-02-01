@@ -23,7 +23,7 @@
 <?php if(count($displays2) > 0):?>
 <!--TEXTO-->
 <div id="destaque-texto-ferias">
-	<p><?php echo html_entity_decode($displays2[0]->Asset->AssetContent->render()) ?></p>
+	<?php echo html_entity_decode($displays2[0]->Asset->AssetContent->render()) ?>
 </div>
 <?php endif;?>
 <?php endif;?>
