@@ -35,7 +35,7 @@
 .destaque-home.receitinhas .box .tit span { background-position:-10px 0; }
 .destaque-home.receitinhas .box ul a { background:#F2722F; }
 /* /destaque home */
-
+.tvcoco #ajax-loader{margin: 5px auto;}
 .tvcoco.span12  { background:#1db186; overflow:hidden; margin:-50px 0 0 0; padding-top:50px; }
 .logo { display: block; position:relative; z-index: 10; }
 .tvcoco .btn-programacao{width: 100%;display: block;font-size: 14px;text-align: center; background: url(/portal/images/capaPrograma/cocorico/tvcocorico-btn-confira.jpg) no-repeat;line-height: 28px;text-decoration: none;padding-left: 13px;color: #747a39;}
