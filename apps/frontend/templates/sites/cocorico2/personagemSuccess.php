@@ -152,6 +152,7 @@
       });
     </script>
     <?php endif; ?>
+    <?php if($displays["autografo"][0] = 0): ?>
     <!-- banner -->
     <div class="span4" style="float:right;">
       <!-- portal-cocorico-300x250 -->
@@ -160,6 +161,7 @@
       </script>
     </div>
     <!-- banner -->
+    <?php endif; ?>
   </div>
   <!--/row-->
   
