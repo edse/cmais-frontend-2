@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors','On');
+//error_reporting(E_ALL);
+//ini_set('display_errors','On');
 
 $allowedExts = array("jpg", "jpeg", "gif", "png");
 
@@ -18,19 +18,26 @@ if($_FILES["arquivo"]){
       if(is_file($_FILES["arquivo"]["tmp_name"])){
         if(multi_attach_mail("emerson.estrella@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, $_FILES["arquivo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
+          header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-sucesso");
+          die();
           echo ">>>>OK!";
         }else{
+          unlink($_FILES["arquivo"]["tmp_name"]);
+          header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-erro");
+          die();
           echo ">>>>ERRO!";
         }
       }
     }
   }
   else{
+    header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-erro");
+    die();
     echo "Invalid file";
   }
   die();
 }else{
-  header("Location: http://tvratimbum.cmais.com.br");
+  header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes");
   die();
 }
 

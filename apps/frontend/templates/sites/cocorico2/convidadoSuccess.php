@@ -84,6 +84,7 @@ if(isset($pager)){
      <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?> <span class="last"></span></p>
      <?php endif; ?>
      <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+     <p class="tit">Assista à participação na íntegra:</p>
    </div>
    
   </div>
@@ -92,9 +93,8 @@ if(isset($pager)){
   <div class="row-fluid conteudo">
   	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
     	<?php if (count($related) > 0): ?>
-    		<p class="tit">Assista à participação na íntegra:</p>
-    			<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
-   		 <?php endif; ?>
+    	  <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+   		<?php endif; ?>
   </div>
   <!-- /row-->
 

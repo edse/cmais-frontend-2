@@ -38,9 +38,7 @@ $assets = $pager->getResults();
   <!-- /breadcrumb-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina">
-    <h2>Convidados</h2>
-  </div>
+  <h2 class="tit-pagina">Convidados</h2>
   
    <div class="pagination" id="alfabeto">
     <ul>
