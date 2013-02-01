@@ -32,7 +32,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getTitle() ?></h2>
+    <h2><?php $tam=28; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     <ul class="likes">
       <li class="ativo"></li>
@@ -70,18 +70,10 @@
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
       <?php endif; ?>
        <?php endif; ?>     
-       
-       
-        
-        
-        
-      
-       <ul class="imprimir"> 
+        <ul class="imprimir"> 
         <!-- figura -->
-        
-        
           <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-         <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
+          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
             
       <?php $counter = 0 ?>
       <?php $counter_div = 1 ?>
@@ -134,7 +126,11 @@
     <ul class="destaques-small">
       <?php foreach($assets as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+          <?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+        </a>
+      </li>
       <?php endforeach; ?>
     </ul>
   </div>
