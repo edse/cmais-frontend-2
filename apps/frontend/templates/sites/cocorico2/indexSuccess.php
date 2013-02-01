@@ -94,7 +94,7 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <?php $tit_destaque1 = $displays['destaque-principal-joguinhos'][0]->Asset->getSections() ?>
+          <?php $tit_destaque1 = $displays['destaque-principal-joguinhos']->Asset->getSections() ?>
           <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/joguinhos"><?php echo $tit_destaque1[0] ?></a><span></span></div>
           <ul>
             <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
