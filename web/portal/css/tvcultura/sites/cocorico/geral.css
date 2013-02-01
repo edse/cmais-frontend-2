@@ -72,7 +72,6 @@ ul li { list-style:none; }
 .lista-produtos a {  border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; }
 
 /*border-radius 5px*/
-.destaques-small li a p,
 #myModal.alerta a span,
 .box-papel-parede ul li a,
 .convidados a,
@@ -221,6 +220,7 @@ bold,
 .destaques-small { margin:0; }
 .destaques-small a { max-height:104px; color:#fff; display: block; text-align:center; overflow:hidden; font-weight:normal; text-decoration:none; }
 .destaques-small li a { display:block;color:#fff; } .destaques-small a:hover { text-decoration:none; }
+.destaques-small li a p { border-radius:0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px;  }
 .destaques-small li { margin-bottom:10px;  overflow:hidden; max-height:122px; }
 
 .voltar { margin-left:20px !important; margin:0 20px 10px 20px; display:block; font-size:14px; font-weight:bold; text-transform:uppercase; padding-left:25px;  height:30px; line-height: 30px; }
