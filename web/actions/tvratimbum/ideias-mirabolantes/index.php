@@ -31,9 +31,9 @@ if($_FILES["arquivo"]){
     }
   }
   else{
-    header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-erro");
-    die();
+    //header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-erro");
     echo "Invalid file";
+    die();
   }
   die();
 }else{
