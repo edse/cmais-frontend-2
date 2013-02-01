@@ -34,9 +34,7 @@ $assets = $pager->getResults();
   </ul>
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
-  <div class="tit-pagina">
-    <h2>Episódios completos</h2>
-  </div>
+  <h2 class="tit-pagina">Episódios completos</h2>
   <!-- titulo da pagina -->
   <!--
   <form class="form-search form-episodio">
