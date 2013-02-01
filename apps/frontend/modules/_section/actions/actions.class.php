@@ -635,32 +635,30 @@ class _sectionActions extends sfActions
                 ->orderBy('a.created_at DESC');
                 
             }
-            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2"))) {
-              if(in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
-	              $this->assetsQuery = Doctrine_Query::create()
-	                ->select('a.*')
-	                ->from('Asset a, AssetVideo av, SectionAsset sa')
-	                ->where('sa.section_id = ?', $this->section->id)
-	                ->andWhere('sa.asset_id = a.id')
-	                ->andWhere('av.asset_id = a.id')
-	                ->andWhere('av.youtube_id != ""')
-	                ->andWhere('a.is_active = ?', 1)
-	                ->orderBy('a.created_at desc');
-			  }
-              if($this->section->getSlug() == "convidados") {
-	              $this->assetsQuery = Doctrine_Query::create()
-	                ->select('a.*')
-	                ->from('Asset a, SectionAsset sa')
-	                ->where('sa.section_id = ?', $this->section->id)
-	                ->andWhere('sa.asset_id = a.id')
-	                ->andWhere('a.is_active = ?', 1);
-	              if($request->getParameter('busca') != '')
-	                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-	              if($request->getParameter('letra') != '')
-	                $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra')."%'");               
-	              $this->assetsQuery->orderBy('a.created_at desc');
-			  }
+            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, AssetVideo av, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhere('av.asset_id = a.id')
+                ->andWhere('av.youtube_id != ""')
+                ->andWhere('a.is_active = ?', 1)
+                ->orderBy('a.created_at desc');
             }
+            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("convidados"))) {
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhere('a.is_active = ?', 1);
+              if($request->getParameter('busca') != '')
+                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+              if($request->getParameter('letra') != '')
+                $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra')."%'");               
+              $this->assetsQuery->orderBy('a.created_at desc');
+			      }
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
