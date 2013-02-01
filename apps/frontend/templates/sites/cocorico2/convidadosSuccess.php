@@ -43,7 +43,7 @@ $assets = $pager->getResults();
    	$(function() {
       $('#alfabeto a').click(function(){
       	var letra = $(this).attr('title');
-      	alert(letra);
+      	//alert(letra);
       });
    	});
    </script>
@@ -58,13 +58,13 @@ $assets = $pager->getResults();
    
    <div class="pagination" id="alfabeto">
     <ul>
-      <?php foreach($letras as $d): ?>
-      <li><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><span class="divider">|</span></li>
+      <?php foreach($letras as $k=>$d): ?>
+      <li><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><?php if($k < 26): ?><span class="divider">|</span><?php endif; ?></li>
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
-    <form class="form-search">
-      <input type="text" class="input-medium search-query">
+    <form class="form-search" action="">
+      <input type="text" class="input-medium search-query" name="busca" id="busca">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
   </div>  

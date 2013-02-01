@@ -206,7 +206,7 @@ a.destaque2:hover{text-decoration: none}
 #alfabeto ul > li span,
 #alfabeto { min-height:40px; line-height:40px; }
 input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20px;    max-width: 120px;    padding: 0 10px;}
-.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 10px 8px;    padding: 0;} 
+.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0;    padding: 0;} 
 .form-search .icon-search {    background: url("/portal/images/capaPrograma/cocorico/ico-busca.png") no-repeat scroll 0 0 transparent;    height: 21px;    margin: 0;    width: 21px;}
 .pagination { margin:10px 0; clear:both; }
 .pagination .anterior:hover a,
