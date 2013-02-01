@@ -1,5 +1,6 @@
 <?php
 $d['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176)->retriveDisplays();
+$d['texto'] = Doctrine::getTable('Block')->findOneById(1666)->retriveDisplays();
 $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays();
 ?>
 
@@ -61,8 +62,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             </div>  
             <!--/TITULO-->
         
-            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'section'=>$section )) ?>
-            
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'displays2'=>$d['texto'],'section'=>$section )) ?>
                        
             <hr />
             
@@ -185,6 +185,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             <!--/MSG ERRO-->
             
             <form id="form-contato" action="http://cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="MAX_FILE_SIZE" value="20554432" />
               
                 <span class="titulo">
                   PARA PARTICIPAR, PREENCHA CORRETAMENTE OS CAMPOS ABAIXO:
@@ -249,6 +250,10 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
               <div class="linha t3">
                 <label>Sua Fantasia Maluca</label>
                 <input type="file" name="arquivo" id="arquivo" class="required" />
+                <ul>
+                  <li>Apenas imagens nos formatos: jpg, gif e png são aceitos</li>
+                  <li>Arquivos com no máximo 20mb</li>
+                </ul>
                 
                 <?php /*
                 <textarea name="ideia" id="ideia" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>

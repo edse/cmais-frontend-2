@@ -378,8 +378,10 @@
         <a href="<?php echo $displays['destaque-clipes'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaque-clipes'][0]->getTitle() ?></h3>
           <img alt="<?php echo $displays['destaque-clipes'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
-          <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
-          <p><?php echo $displays['destaque-clipes'][0]->getDescription() ?></p> 
+          <p>
+            <?php //echo $displays['destaque-clipes'][0]->getDescription() ?>
+            <?php $tam=38; $str=$displays['destaque-clipes'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+          </p> 
         </a>
         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
       </div> 
@@ -390,8 +392,10 @@
          <a href="<?php echo $displays['destaque-clipes'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" class="clipe">
            <h3><?php echo $displays['destaque-clipes'][1]->getTitle() ?></h3>
            <img alt="<?php echo $displays['destaque-clipes'][1]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
-           <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
-           <p><?php echo $displays['destaque-clipes'][1]->getDescription() ?></p>       
+           <p>
+             <?php //echo $displays['destaque-clipes'][1]->getDescription() ?>
+             <?php $tam=38; $str=$displays['destaque-clipes'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+           </p>       
          </a>
          <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
            <i class="ico-mais"></i>
@@ -404,8 +408,10 @@
          <a href="<?php echo $displays['destaque-clipes'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" class="clipe">
            <h3><?php echo $displays['destaque-clipes'][2]->getTitle() ?></h3>
            <img alt="<?php echo $displays['destaque-clipes'][2]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
-           <!--<iframe width="100%" height="180" src="http://img.youtube.com/vi/<?php echo $displays['destaque-clipes'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" frameborder="0" allowfullscreen></iframe>-->
-           <p><?php echo $displays['destaque-clipes'][2]->getDescription() ?></p>
+           <p>
+             <?php //echo $displays['destaque-clipes'][2]->getDescription() ?>
+             <?php $tam=38; $str=$displays['destaque-clipes'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+           </p>
          </a> 
          <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
            <i class="ico-mais"></i>

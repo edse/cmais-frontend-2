@@ -136,9 +136,9 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #naweb .destaque{background-color:#f3f7f7;border-radius:8px;}
 #naweb .destaque h2{font-size: 14px;color: #77838B;font-weight: bold;line-height: 17px;padding: 10px;margin: 0; text-transform: uppercase;}
 #naweb .destaque .btn-inscreva-se {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
-#naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width:269px;height: 42px;float: left;background: url(/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
+#naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width:270px;height: 42px;float: left;background: url(/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
 #naweb .destaque .btn-inscreva-se .btn-destaque:hover{text-decoration: none;}
-#naweb .destaque span{display:block; float:left;width:14px;height:42px; background:url(/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
+#naweb .destaque span{display:block; float:left;width:13px;height:42px; background:url(/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
 #naweb .destaque span.last{background-position: right 0;}
 #naweb .instagram .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height:43px;}
 #naweb .instagram .bac-blue{background-color: #f3f7f7; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}

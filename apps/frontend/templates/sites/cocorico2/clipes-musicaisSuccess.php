@@ -54,7 +54,7 @@
     <?php $section = $asset->getSections(); ?>
     <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
     <!--/RANKING -->
-  </div>
+  </div> 
   
   <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
@@ -63,9 +63,10 @@
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo" id="videos">
-    <p class="span12"><?php echo $asset->getDescription()?></p>
+    
     <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-    <p class="tit"> Confira mais clipes:</p>
+    <p class="span12"><?php echo $asset->getDescription()?></p>
+    <p class="tit">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p>
   </div>
   <!--/row-->
   
