@@ -388,3 +388,5 @@ bold,
 .conteudo .destaque-1 h3 { line-height: 34px !important; } 
 .conteudo .destaque-2 a:hover,
 .conteudo .destaque-1 a:hover { text-decoration:none; }
+
+.relacionados .destaques-small.top { padding-top:10px; }
