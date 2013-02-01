@@ -238,6 +238,7 @@ p.frase span { background:url("/portal/images/capaPrograma/cocorico/aspas.png") 
 p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 0 0; }
 #convidados li { height:200px; }
 .conteudo.convidado iframe { margin-top:0; }
+#convidados li a p {  border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; }
 /* /convidado*/
 .form-horizontal .g-autografo a { display:block; height:40px; line-height:40px; }
 .autografo .g-autografo .capa-btn a,
