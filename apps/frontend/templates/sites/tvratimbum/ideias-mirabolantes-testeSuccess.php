@@ -94,6 +94,8 @@
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
+                    form.submit();
+                   /*
                    $.ajax({
                       type: "POST",
                       enctype: "multipart/form-data",
@@ -118,13 +120,13 @@
                         }
                       }
                     });         
+                  */
                   },
                   rules:{
                     regulamento:{
                       required: true
                     }
                   },
-                  
                   success: function(label){
                     // set &nbsp; as text for IE
                     label.html("&nbsp;").addClass("checked");
