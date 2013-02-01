@@ -163,7 +163,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
               </p>
               <div class="btn-barra">
                 <span class="pontaBarra"></span>
-                <a href="javascript:;" id="enviar-outra">enviar outra idéia mirabolante</a>
+                <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes-sucesso" id="tentar-enviar">enviar outra idéia mirabolante</a>
                 <span class="caudaBarra"></span>
               </div>  
               
@@ -184,7 +184,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             </div> 
             <!--/MSG ERRO-->
             
-            <form id="form-contato" action="http://cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data"></form>
+            <form id="form-contato" action="" method="post" enctype="multipart/form-data"></form>
             <!--form-contato-->
             
           <span class="picote"></span>  
