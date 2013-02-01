@@ -1,7 +1,7 @@
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <style type="text/css">
 /* tooltip*/
-.tooltip-inner { background:#747a3a; padding:3px 10px; font-size: 13px; line-height:15px; }
+.tooltip-inner { background:#747a3a; padding:3px 10px; font-size: 13px; line-height:15px; margin-top:-20px; }
 .tooltip.in,
 .tooltip { opacity: 1; filter: alpha(opacity=100);}
 .tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
