@@ -94,9 +94,9 @@
         <?php endif; ?>
         <div class="box span3">
           <span class="mais"></span>
-          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a><span></span></div>
+          <div class="tit"><a href="<?php echo $site->retriveUrl() ?>/joguinhos"><?php $displays['destaque-principal-joguinhos'][0]->Section->getTitle() ?></a><span></span></div>
           <ul>
-            <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <?php $related = $displays['destaque-principal-joguinhos'][1]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?> 
             <?php if(count($related) > 0): ?>
             <li>
               <a href="<?php echo $displays['destaque-principal-joguinhos'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal-joguinhos'][1]->getTitle() ?>">
