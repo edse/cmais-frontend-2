@@ -38,12 +38,12 @@ $assets = $pager->getResults();
   <?php if(isset($displays['descricao'])):?>
     <?php if(count($displays['descricao']) > 0): ?>     
   	  <?php foreach($displays['descricao'] as $k=>$d):?>   
-  <div class="row-fluid conteudo ">
-    <p><?php echo $d->getDescription() ?></p>
-    </div>
-  <?php endforeach; ?>   
-   <?php endif; ?>
+      <div class="row-fluid conteudo ">
+        <p><?php echo $d->getDescription() ?></p>
+      </div>
+      <?php endforeach; ?>   
     <?php endif; ?>
+  <?php endif; ?>
     
   <!--/row-->
   <!--row-->
@@ -51,11 +51,17 @@ $assets = $pager->getResults();
     <div class="span12">
     	<?php if(count($assets) > 0): ?>
  	      <ul class="lista-produtos">
-      	 	  <?php foreach($assets as $k=>$d): ?>
-      	 	  	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-				 <li class="span4"><a class="span12" href="<?php echo $d->retriveUrl() ?>" title=""><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" /><?php echo $d->getTitle() ?></a></li>
-              <?php endforeach; ?>
-          </ul>                   
+    	 	  <?php foreach($assets as $k=>$d): ?>
+    	 	  	<?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+		        <li class="span4">
+		          <a class="span12" href="<?php echo $d->retriveUrl() ?>" title="">
+		            <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
+		            <?php //echo $d->getTitle() ?>
+		            <?php $tam=32; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+		          </a>
+		        </li>
+          <?php endforeach; ?>
+        </ul>                   
       <?php endif; ?>
     </div>
        <?php if($pager->haveToPaginate()): ?>
