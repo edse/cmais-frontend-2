@@ -1,3 +1,8 @@
+<?php
+$d['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176)->retriveDisplays();
+$d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays();
+?>
+
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
@@ -56,7 +61,7 @@
             </div>  
             <!--/TITULO-->
         
-            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section )) ?>
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'section'=>$section )) ?>
             
                        
             <hr />
@@ -76,7 +81,75 @@
           
           <!--CONTATO-->
           <div class="contato">
-
+            
+            <!--SCRIPT-->
+            <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+            <script type="text/javascript">
+              $(document).ready(function(){
+                
+                $('.carrossel').jcarousel({
+                  wrap: "both"
+                });
+                
+                $('#enviar-outra, #tentar-enviar').click(function(){
+                  $("#form-contato").show();
+                  $('#envia-ideia.btn-barra').show();
+                  $('.msgAcerto,.msgErro,#enviando').hide();
+                  $('#nomeDaCrianca, #nomePais, #cidade, #estado, #email, #ideia').val('');
+                });
+                var validator = $('#form-contato').validate({
+                  submitHandler: function(form){
+                    form.submit();
+                   /*
+                   $.ajax({
+                      type: "POST",
+                      enctype: "multipart/form-data",
+                      dataType: "text",
+                      data: $("#form-contato").serialize(),
+                      beforeSend: function(){
+                        $('#envia-ideia.btn-barra,.msgAcerto, .msgErro').hide();
+                        $('img#ajax-loader, #enviando').show();
+                        $(".msgAcerto").hide();
+                        $(".msgErro").hide();
+                      },
+                      success: function(data){
+                        alert(data);
+                        window.location.href="javascript:;";
+                        if(data == "1"){
+                          $(".msgAcerto").show();
+                          $('img#ajax-loader, #form-contato').hide();
+                        }
+                        else {
+                          $(".msgErro").show();
+                          $('img#ajax-loader,  #form-contato').hide();
+                        }
+                      }
+                    });         
+                  */
+                  },
+                  rules:{
+                    regulamento:{
+                      required: true
+                    }
+                  },
+                  success: function(label){
+                    // set &nbsp; as text for IE
+                    label.html("&nbsp;").addClass("checked");
+                  }
+                });
+              });
+            
+            // Contador de Caracters
+              function limitText (limitField, limitNum, textCounter)
+              {
+              if (limitField.value.length > limitNum)
+                limitField.value = limitField.value.substring(0, limitNum);
+              else
+                $(textCounter).html(limitNum - limitField.value.length);
+              }
+            </script>
+            <!--SCRIPT-->
+            
             <!--MSG ACERTO-->
             <div class="msgAcerto" style="display:block">
               <p>
@@ -90,12 +163,29 @@
               </p>
               <div class="btn-barra">
                 <span class="pontaBarra"></span>
-                <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes" id="enviar-outra">enviar outra idéia mirabolante</a>
+                <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes" id="tentar-enviar">enviar outra idéia mirabolante</a>
                 <span class="caudaBarra"></span>
               </div>  
               
             </div>  
             <!--/MSG ACERTO-->
+            <!--MSG ERRO-->
+            <div class="msgErro" style="display:none">
+              <p>
+                Sua idéia foi não foi enviada com sucesso<br/>
+                Por favor, tente novamente
+              </p>
+              <div class="btn-barra">
+                <span class="pontaBarra"></span>
+                <a href="javascript:;" id="tentar-enviar">tentar enviar novamente</a>
+                <span class="caudaBarra"></span>
+              </div>  
+              
+            </div> 
+            <!--/MSG ERRO-->
+            
+            <form id="form-contato" action="" method="post" enctype="multipart/form-data"></form>
+            <!--form-contato-->
             
           <span class="picote"></span>  
           
@@ -107,8 +197,8 @@
         
         <!--VIDEOS-->
         <?php 
-          if(isset($displays["videos"])):
-            if(count($displays["videos"]) > 0):
+          if(isset($d["videos"])):
+            if(count($d["videos"]) > 0):
          ?>
               <div class="galeriaVideos">
                 <div class="enunciado">
@@ -119,7 +209,7 @@
                 <div class="listaGaleria">
                   <div class="wrappperlistaGaleria">
                       <ul>
-                        <?php foreach($displays["videos"] as $a): ?>
+                        <?php foreach($d["videos"] as $a): ?>
                         <li>
                           <a class="aImg" href="<?php echo $a->retriveUrl()?>">
                             <img src="<?php echo $a->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $a->getTitle()?>" />
@@ -139,6 +229,10 @@
            endif;?>
         <!--VIDEOS-->
         
+        
+        <!--VIDEOS-ESPECIAL-->
+        <?php //include_partial_from_folder('tvratimbum','global/videos-especial-ferias',array('displays' => $displays["videos"])) ?>
+        <!--/VIDEOS-ESPECIAL-->
             
             
       </div>
