@@ -635,7 +635,7 @@ class _sectionActions extends sfActions
                 ->orderBy('a.created_at DESC');
                 
             }
-            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores"))) {
+            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av, SectionAsset sa')
