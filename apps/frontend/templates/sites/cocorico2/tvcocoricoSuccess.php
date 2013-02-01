@@ -30,6 +30,7 @@
     <div class="span4 col-dir">
       <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
+      
       <!-- tv cocorico -->
       
       <?php
@@ -50,6 +51,9 @@
 
       <div class="tvcoco span12">
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
+        <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
+         Confira os horários da programação 
+        </a>
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
             <?php
