@@ -1,6 +1,8 @@
 <?php
 $allowedExts = array("jpg", "jpeg", "gif", "png");
 
+die(">>>>".$_FILES["arquivo"]["name"]);
+
 if($_FILES["arquivo"]){
   $extension = end(explode(".", $_FILES["arquivo"]["name"]));
   if((($_FILES["arquivo"]["type"] == "image/gif") || ($_FILES["arquivo"]["type"] == "image/jpeg") || ($_FILES["arquivo"]["type"] == "image/png") || ($_FILES["arquivo"]["type"] == "image/pjpeg")) && ($_FILES["arquivo"]["size"] < 20000) && in_array($extension, $allowedExts)){
