@@ -179,7 +179,7 @@
             </div> 
             <!--/MSG ERRO-->
             
-            <form id="form-contato" action="http://tvratimbum.cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data">
+            <form id="form-contato" action="http://cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data">
               
                 <span class="titulo">
                   PARA PARTICIPAR, PREENCHA CORRETAMENTE OS CAMPOS ABAIXO:
