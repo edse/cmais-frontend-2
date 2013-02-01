@@ -251,7 +251,7 @@ bold,
 .curtir.disabled { display:none; }
 
 .conteudo p { clear:both; margin-bottom:0;}
-.conteudo .tit {  font-weight: bold; margin-bottom: 5px; text-transform: uppercase; margin:20px 0;}
+.conteudo .tit {  font-weight: bold; margin-bottom: 5px; text-transform: uppercase; margin:0 0 10px 0;}
 .destaques.joguinho { background: #1893cf; color:#fff; float:right; }
 
 .destaques a { color:#fff; text-align:center; display: block; border-radius:0 0 10px 10px; -moz-border-radius:0 0 10px 10px; -webkit-border-radius:0 0 10px 10px;  }

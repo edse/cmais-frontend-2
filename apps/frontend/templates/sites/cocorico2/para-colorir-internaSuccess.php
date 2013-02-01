@@ -34,7 +34,7 @@ $download = $asset->retriveRelatedAssetsByRelationType('Download');
   <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   <div class="tit-pagina">
-    <h2><?php echo $asset->getTitle() ?></h2>
+    <h2><?php $tam=32; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
@@ -83,7 +83,8 @@ $download = $asset->retriveRelatedAssetsByRelationType('Download');
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>">
-          <?php echo $d->getTitle() ?> 
+          <?php //echo $d->getTitle() ?> 
+          <?php $tam=18; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
         </a>
       </li>
       <?php endforeach; ?>
