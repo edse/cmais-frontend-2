@@ -323,7 +323,7 @@
         <?php if(count($displays['bastidores']) > 0): ?>
                     
        <!-- bastidores -->
-      <div class="bastidores fonte span3 ytb"> 
+      <div class="bastidores fonte span3"> 
         <div class="topo">
           <div class="bac-yellow">
             <h3>
