@@ -50,10 +50,12 @@
 ?>
 
       <div class="tvcoco span12">
-        <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
-        <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
-         Confira os horários da programação 
-        </a>
+        <h2>
+          <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
+           Confira os horários da programação 
+          </a>
+          <i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i>
+        </h2>
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
             <?php
