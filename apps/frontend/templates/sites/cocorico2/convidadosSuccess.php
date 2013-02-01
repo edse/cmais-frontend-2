@@ -65,7 +65,7 @@ $assets = $pager->getResults();
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
-    <form class="form-search" action="" name="frmBusca" id="frmBusca">
+    <form class="form-search" action="" name="frmBusca" id="frmBusca" method="post">
       <input type="hidden" name="letra" id="letra" value="">
       <input type="text" class="input-medium search-query" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
