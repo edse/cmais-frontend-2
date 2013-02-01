@@ -172,7 +172,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             <!--MSG ERRO-->
             <div class="msgErro" style="display:block">
               <p>
-                Sua idéia foi não foi enviada com sucesso<br/>
+                Sua idéia foi <span style="color: red;"><strong>não</strong></span> foi enviada com sucesso<br/>
                 Por favor, tente novamente
               </p>
               <div class="btn-barra">
