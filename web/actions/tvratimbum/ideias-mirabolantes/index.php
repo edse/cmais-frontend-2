@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors','On');
+
 $allowedExts = array("jpg", "jpeg", "gif", "png");
 
 if($_FILES["arquivo"]){
