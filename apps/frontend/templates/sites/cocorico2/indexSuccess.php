@@ -169,7 +169,7 @@
             <?php if($display_img_src != ''): ?>
             <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
             <?php //echo $displays['destaque-2'][0]->getTitle() ?>
-            <?php $tam=30; $str=$displays['destaque-2'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+            <?php $tam=33; $str=$displays['destaque-2'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
             <i class="ico-mais"></i>
             <?php endif; ?>
             
@@ -193,7 +193,7 @@
           <?php if($display_img_src != ''): ?>
           <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" />
           <?php //echo $displays['destaque-3'][0]->getTitle() ?>
-          <?php $tam=30; $str=$displays['destaque-3'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+          <?php $tam=33; $str=$displays['destaque-3'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           <i class="ico-mais"></i> 
           <?php endif; ?>
         </a>
