@@ -196,7 +196,7 @@ a.destaque2:hover{text-decoration: none}
 #alfabeto,
 .row-fluid { clear:both; }
 #alfabeto {  background:url("/portal/images/capaPrograma/cocorico/bg-container.png") repeat; margin:0 10px;}
-#alfabeto ul { margin:0 5px 0 20px; float:left }
+#alfabeto ul { margin:0 5px 0 10px; float:left }
 #alfabeto ul > li > a { color:#747b3a; width: 15px; text-align:center;}
 #alfabeto ul > li > .divider { color:#bfd540; padding:0 5px; }
 #alfabeto .divider.last { background: none repeat scroll 0 0 transparent; border: medium none; display: block; float: left; font-size: 26px; height: 40px; line-height: 40px; margin-right: 10px; padding: 0; color:#8dd4ba;}
@@ -206,7 +206,7 @@ a.destaque2:hover{text-decoration: none}
 #alfabeto ul > li span,
 #alfabeto { min-height:40px; line-height:40px; }
 input.search-query {    font-size: 14px;    line-height: 20px;    min-height: 20px;    max-width: 120px;    padding: 0 10px;}
-.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0;    padding: 0;} 
+.form-search button:hover, .form-search button {    background: none repeat scroll 0 0 transparent;    box-shadow: none;    margin: 0 0 0 1px;    padding: 0;} 
 .form-search .icon-search {    background: url("/portal/images/capaPrograma/cocorico/ico-busca.png") no-repeat scroll 0 0 transparent;    height: 21px;    margin: 0;    width: 21px;}
 .pagination { margin:10px 0; clear:both; }
 .pagination .anterior:hover a,
