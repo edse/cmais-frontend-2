@@ -38,7 +38,7 @@
 
 .tvcoco.span12  { background:#1db186; overflow:hidden; margin:-50px 0 0 0; padding-top:50px; }
 .logo { display: block; position:relative; z-index: 10; }
-.tvcoco .btn-programacao{background: red;}
+.tvcoco .btn-programacao{width: 100%;display: block;font-size: 14px;text-align: center; background: url(/portal/images/capaPrograma/cocorico/tvcocorico-btn-confira) no-repeat;}
 .tvcoco { position:relative; }
 .tvcoco h2 { font-size:14px; text-transform:uppercase; text-align:center; margin-top:0; line-height: 20px; }
 .tvcoco h2 i { margin:0 10px; }
