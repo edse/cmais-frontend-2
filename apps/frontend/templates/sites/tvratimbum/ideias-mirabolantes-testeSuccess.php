@@ -185,6 +185,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             <!--/MSG ERRO-->
             
             <form id="form-contato" action="http://cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="MAX_FILE_SIZE" value="20554432" />
               
                 <span class="titulo">
                   PARA PARTICIPAR, PREENCHA CORRETAMENTE OS CAMPOS ABAIXO:
