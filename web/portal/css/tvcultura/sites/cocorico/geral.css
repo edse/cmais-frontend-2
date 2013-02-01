@@ -72,7 +72,7 @@ ul li { list-style:none; }
 .lista-produtos a {  border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; }
 
 /*border-radius 5px*/
-.destaques-small li a,
+.destaques-small li a p,
 #myModal.alerta a span,
 .box-papel-parede ul li a,
 .convidados a,
