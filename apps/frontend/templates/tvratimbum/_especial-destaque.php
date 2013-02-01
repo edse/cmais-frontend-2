@@ -1,8 +1,5 @@
-
-<?php if(isset($displays)):
-?>
-<?php if(count($displays) > 0):
-?>
+<?php if(isset($displays)):?>
+<?php if(count($displays) > 0):?>
 <!--DESTAQUE-->
 <div id="destaque-ferias">
 	<?php if($displays[0]->Asset->AssetType->getSlug() == "image"):
@@ -28,11 +25,11 @@
 		<?php echo $displays[0] -> getDescription();?>
 	</p>
 </div>
-<?php if(isset($section)):?>
+<?php /* if(isset($section)):?>
 	<?php if($section->getSlug()=="ideias-mirabolantes"):?>
-	        <a class="btn-ideias" href="/lista-ideias" title="lista completa de ideias">...ler todas as ideias :)</a>
+	        <a class="btn-ideias" href="/lista-ideias" title="lista completa de ideias">...ver todas as ideias :)</a>
 	<?php endif; ?>
-<?php endif; ?>	
+<?php endif; */ ?>	
 <!--/TEXTO-->
 <?php endif;?>
 <?php endif;?>
