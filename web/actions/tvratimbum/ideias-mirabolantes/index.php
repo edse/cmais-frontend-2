@@ -26,9 +26,10 @@ if($_FILES["arquivo"]){
     echo "Invalid file";
   }
   die();
+}else{
+  header("Location: http://tvratimbum.cmais.com.br");
+  die();
 }
-
-
 
 function multi_attach_mail($to, $files, $data, $sendermail) {
   // email fields: to, from, subject, and so on
@@ -71,3 +72,4 @@ function multi_attach_mail($to, $files, $data, $sendermail) {
   }
 }
 
+die();
