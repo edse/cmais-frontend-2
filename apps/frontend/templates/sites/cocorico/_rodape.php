@@ -1,5 +1,5 @@
 <div class="row-fluid rodape" >
-    <h3>2013 &copy; tv cultura - fpa</h3>
+    <h3>2013 &copy; tv cultura - fundação padre anchieta</h3>
     <div class="span2"> <a href="http://cmais.com.br/cocorico2" class="bold" title="Cocoricó">Cocoricó</a>
       <ul>
         <li><a href="http://cmais.com.br/cocorico2/personagens" title="Personagens">Personagens</a></li>
