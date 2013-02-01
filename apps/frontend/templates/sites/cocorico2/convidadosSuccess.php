@@ -41,9 +41,11 @@ $assets = $pager->getResults();
   <h2 class="tit-pagina">Convidados</h2>
    <script>
    	$(function() {
-      $('#alfabeto a').click(function(){
-      	var letra = $(this).attr('title');
-      	//alert(letra);
+      $('#alfabeto ul li a').click(function(){
+        var letra = $(this).attr('title');
+        $('#frmBusca #busca').val('');
+        $('#frmBusca #letra').val(letra);
+      	$('#frmBusca').submit();
       });
    	});
    </script>
@@ -63,8 +65,9 @@ $assets = $pager->getResults();
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
-    <form class="form-search" action="">
-      <input type="text" class="input-medium search-query" name="busca" id="busca">
+    <form class="form-search" action="" name="frmBusca" id="frmBusca">
+      <input type="hidden" name="letra" id="letra" value="">
+      <input type="text" class="input-medium search-query" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
   </div>  
