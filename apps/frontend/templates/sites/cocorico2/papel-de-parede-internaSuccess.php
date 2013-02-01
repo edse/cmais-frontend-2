@@ -41,7 +41,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php echo $asset->getDescription() ?></h2>
+    <h2><?php $tam=32; $str=$asset->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
@@ -115,7 +115,7 @@
         <li class="span2">
           <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('default') ?>"> 
-            <?php echo $d->getTitle() ?> 
+            <?php $tam=18; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
           </a>
         </li>
       <?php endforeach; ?>
