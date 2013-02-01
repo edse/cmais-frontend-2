@@ -257,21 +257,20 @@
                   <ul>
                     <li class="bold">Regulamento IDEIAS MIRABOLANTES</li>
                     <li class="bold">Participação:</li>
-                    <li>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta à crianças representadas por seus pais ou responsáveis legais.</li>
-                    <li>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto com sua idéia. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</li>
-                    <li><span class="bold">1.1</span> Os textos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email, website (opcional), título da ideia, endereço.</li>
+                    <li>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</li>
+                    <li>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho com sua ideia. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</li>
+                    <li><span class="bold">1.1</span> Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email, website (opcional), título da ideia, endereço.</li>
                     <li class="bold">2. Critérios de Seleção:</li>
-                    <li><span class="bold">2.1</span> A seleção dos textos serão feita pela equipe de Produção da TV RÁ TIM BUM! e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</li>                 
-                    <li><span class="bold">2.2</span> Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</li>
+                    <li><span class="bold">2.1</span> A seleção dos desenhos serão feita pela equipe de Produção da TV RÁ TIM BUM! e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</li>                 
+                    <li><span class="bold">2.2</span> Serão desconsiderados os desenhos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</li>
                     <li><span class="bold">2.3</span> Cada criança poderá participar enviando quantas ideias desejar.</li>
                     <li class="bold">3. Considerações Gerais:</li>                    
                     <li><span class="bold">3.1</span> Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV RÁ TIM BUM! intitulada IDEIAS MIRABOLANTES e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</li>
-                    <li><span class="bold">3.2</span> A FPA não aceitará qualquer texto que contenha exposição de nomes de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</li>
+                    <li><span class="bold">3.2</span> A FPA não aceitará qualquer desenho que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</li>
                     <li><span class="bold">3.3</span> Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV RÁ TIM BUM! referida no item 2.1 deste Regulamento.</li>
                     <li><span class="bold">3.4</span> A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</li>
-                    <li><span class="bold">3.5</span> Os textos serão publicados no site tvratimbum.com.br e os melhores poderão ser exibidos na programação da TV RÁ TIM BUM!</li>
+                    <li><span class="bold">3.5</span> Os desenhos serão publicados no site tvratimbum.com.br e os melhores poderão ser exibidos na programação da TV RÁ TIM BUM!</li>
                  </ul>
-      
               </div>
               
               <div class="linha t5">
