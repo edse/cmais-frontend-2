@@ -1,6 +1,6 @@
 <?php
-$displays['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176);
-$displays['videos'] = Doctrine::getTable('Block')->findOneById(1177);
+$d['destaque-principal'] = Doctrine::getTable('Block')->findOneById(1176);
+$d['videos'] = Doctrine::getTable('Block')->findOneById(1177);
 ?>
 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -61,7 +61,7 @@ $displays['videos'] = Doctrine::getTable('Block')->findOneById(1177);
             </div>  
             <!--/TITULO-->
         
-            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section )) ?>
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$d['destaque-principal'],'section'=>$section )) ?>
             
                        
             <hr />
@@ -306,8 +306,8 @@ $displays['videos'] = Doctrine::getTable('Block')->findOneById(1177);
         
         <!--VIDEOS-->
         <?php 
-          if(isset($displays["videos"])):
-            if(count($displays["videos"]) > 0):
+          if(isset($d["videos"])):
+            if(count($["videos"]) > 0):
          ?>
               <div class="galeriaVideos">
                 <div class="enunciado">
@@ -318,7 +318,7 @@ $displays['videos'] = Doctrine::getTable('Block')->findOneById(1177);
                 <div class="listaGaleria">
                   <div class="wrappperlistaGaleria">
                       <ul>
-                        <?php foreach($displays["videos"] as $a): ?>
+                        <?php foreach($d["videos"] as $a): ?>
                         <li>
                           <a class="aImg" href="<?php echo $a->retriveUrl()?>">
                             <img src="<?php echo $a->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $a->getTitle()?>" />
