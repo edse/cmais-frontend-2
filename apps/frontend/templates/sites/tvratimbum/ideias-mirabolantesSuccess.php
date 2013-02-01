@@ -252,8 +252,8 @@
                 
                 <input type="file" name="arquivo" id="arquivo" class="required" />
                 
-                <label>Apenas imagens nos formatos: jpg, gif e png são aceitos</label>
-                <label>Arquivos com no máximo 20mb</label>
+                <label style="font-size: 10px;">Apenas imagens nos formatos: jpg, gif e png são aceitos</label>
+                <label style="font-size: 10px;">Arquivos com no máximo 20mb</label>
                 
                 <?php /*
                 <textarea name="ideia" id="ideia" class="required" onKeyDown="limitText(this,400,'#textCounter');"></textarea>

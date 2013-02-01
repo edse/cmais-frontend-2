@@ -8,7 +8,7 @@
 .box .tit span { width:9px; height:40px; float:left;  background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat; margin:0; position:relative; right:0; }
 .box ul a,
 .box ul a img { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;  text-transform:none; text-align:center; background-image:none; border:none; margin:0; padding:0; background:#1893cf; font-size:14px; font-weight:normal; line-height: 20px;  }
-.box ul li { margin-top:14px; }
+.box ul li { margin-top:11px; }
 .box ul { margin:0px; }
 
 /*.destaques {position:relative; background:#f2722f; border-radius:10px; text-align:center; display:block; line-height:25px; margin:0 0 30px 0;  }
@@ -24,7 +24,7 @@
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
 .destaque-home .box img,
-.destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+.destaque-home .span9 img {  border-radius:8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; }
 .destaque-home .box .mais { margin-left:-30px; }
 
 .destaque-home.joguinhos .span9 { border:2px solid #1793ce; }
@@ -38,13 +38,13 @@
 
 .tvcoco.span12  { background:#1db186; overflow:hidden; margin:-50px 0 0 0; padding-top:50px; }
 .logo { display: block; position:relative; z-index: 10; }
-
+.tvcoco .btn-programacao{width: 100%;display: block;font-size: 14px;text-align: center; background: url(/portal/images/capaPrograma/cocorico/tvcocorico-btn-confira.jpg) no-repeat;line-height: 28px;text-decoration: none;padding-left: 13px;color: #747a39;}
 .tvcoco { position:relative; }
 .tvcoco h2 { font-size:14px; text-transform:uppercase; text-align:center; margin-top:0; line-height: 20px; }
 .tvcoco h2 i { margin:0 10px; }
 .convidado.span12 { background:#bfd540; color:#747b3a; display: block; margin:0; text-align:center;  }
 .convidado.span12:hover { text-decoration:none; }
-.tvcoco .mais { background:red; width: 36px; height:36px; position:absolute; top:235px; right:0;  background:url(/portal/images/capaPrograma/cocorico/mais.png) -72px 0 no-repeat; }
+.tvcoco .mais { background:red; width: 36px; height:36px; position:absolute; top:246px; right:0;  background:url(/portal/images/capaPrograma/cocorico/mais.png) -72px 0 no-repeat; }
 .icon-star-empty { background: url(/portal/images/capaPrograma/cocorico/ico-estrela.png) no-repeat; }
 
 
