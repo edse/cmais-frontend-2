@@ -56,7 +56,7 @@
             </div>  
             <!--/TITULO-->
         
-            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'section'=>$section )) ?>
+            <?php include_partial_from_folder('tvratimbum','global/especial-destaque', array('displays'=>$displays['destaque-principal'],'displays2'=>$displays['texto'],'section'=>$section )) ?>
             
                        
             <hr />

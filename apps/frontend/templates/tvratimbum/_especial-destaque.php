@@ -18,13 +18,16 @@
 <?php endif;?>
 </div>
 <!--/DESTAQUE-->
+
+<?php if(isset($displays2)):?>
+<?php if(count($displays2) > 0):?>
 <!--TEXTO-->
 <div id="destaque-texto-ferias">
-	
-	<p>
-		<?php echo $displays[0] -> getDescription();?>
-	</p>
+	<p><?php echo html_entity_decode($displays2[0]->AssetContent->render()) ?></p>
 </div>
+<?php endif;?>
+<?php endif;?>
+
 <?php /* if(isset($section)):?>
 	<?php if($section->getSlug()=="ideias-mirabolantes"):?>
 	        <a class="btn-ideias" href="/lista-ideias" title="lista completa de ideias">...ver todas as ideias :)</a>
