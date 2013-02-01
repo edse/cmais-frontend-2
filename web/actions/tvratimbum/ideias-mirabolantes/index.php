@@ -31,13 +31,13 @@ if($_FILES["arquivo"]){
   die();
 }
 
-function multi_attach_mail($to, $files, $data, $sendermail) {
+function multi_attach_mail($to, $files, $form_data, $sendermail) {
   // email fields: to, from, subject, and so on
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
   $headers = "From: $from";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
-  foreach($data as $k=>$v){
+  foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
   }
 
