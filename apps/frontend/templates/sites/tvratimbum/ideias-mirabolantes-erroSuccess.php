@@ -177,7 +177,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
               </p>
               <div class="btn-barra">
                 <span class="pontaBarra"></span>
-                <a href="javascript:;" id="tentar-enviar">tentar enviar novamente</a>
+                <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes" id="tentar-enviar">tentar enviar novamente</a>
                 <span class="caudaBarra"></span>
               </div>  
               
