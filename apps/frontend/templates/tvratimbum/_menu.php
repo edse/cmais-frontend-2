@@ -21,7 +21,6 @@
               <ul>
               <?php foreach($programs as $p): ?>
                 <?php if($p->Site->id > 0): ?>
-
                 <li>
                   <div class="boxPersonagens-tip">
                     <a href="<?php echo $p->retriveUrl()?>">
@@ -51,7 +50,9 @@
             </ul>
           </div>
         </div>
-        <img class="destaqueTopo" src="/portal/tvratimbum/image/banner-0412.png" alt="TV Rá Tim Bum! 8 anos crescendo com você!" /> 
+        
+        <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes"><img class="destaqueTopo" src="/portal/tvratimbum/image/faixa-home-ideiasmirabolantes.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
+        
         <!--
         <div id="destaque-ferias">
           <ul>
