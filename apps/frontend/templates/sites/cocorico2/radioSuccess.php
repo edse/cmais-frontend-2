@@ -365,7 +365,8 @@
         </div>
       </div>
       <!-- player -->  
-      <img src="/portal/images/capaPrograma/cocorico/bg-radio.jpg" />      
+      <img src="/portal/images/capaPrograma/cocorico/bg-radio.jpg" />     
+      <p class="tit" style="margin: 20px 0 -20px 0">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p> 
     </div>
     <!-- row clipes relacionados -->
     <div class="row-fluid relacionados">
