@@ -307,7 +307,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
         <!--VIDEOS-->
         <?php 
           if(isset($d["videos"])):
-            if(count($["videos"]) > 0):
+            if(count($d["videos"]) > 0):
          ?>
               <div class="galeriaVideos">
                 <div class="enunciado">
