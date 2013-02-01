@@ -64,7 +64,7 @@ $assets = $pager->getResults();
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
-    <div class="row-fluid relacionados">
+    <div class="row-fluid relacionados ytb">
     <ul class="destaques-small top">
     <?php foreach($pager->getResults() as $d): ?>
       <li class="span2">
