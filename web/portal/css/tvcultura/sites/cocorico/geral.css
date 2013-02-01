@@ -150,7 +150,7 @@ bold,
 .menu .lista-personagens a { display: block; border:4px solid #c0d541;  border-radius:50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; }
 .menu .lista-personagens a:hover { border-color:#fdf035; }
 .menu .lista-personagens h3 { text-indent: -9999px; background:url(/portal/images/capaPrograma/cocorico/tit-turma.png) no-repeat; width:14px; height:73px; margin:16px 0 16px 16px; float:left;}
-.menu .lista-personagens li { list-style:none; float:left; margin:5px 0 5px 16px; }
+.menu .lista-personagens li { list-style:none; float:left; margin:5px 0 20px 30px; }
 .conteudo { clear:both; margin:2%; max-width:940px;}
 .conteudo .span7 { margin-left:0; /*min-width:620px;*/ }
 .conteudo .span3 { margin-left:20px; /*min-width:300px;*/ }
@@ -388,3 +388,5 @@ bold,
 .conteudo .destaque-1 h3 { line-height: 34px !important; } 
 .conteudo .destaque-2 a:hover,
 .conteudo .destaque-1 a:hover { text-decoration:none; }
+
+.relacionados .destaques-small.top { padding-top:10px; }
