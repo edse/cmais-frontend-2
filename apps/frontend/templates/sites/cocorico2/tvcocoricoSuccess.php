@@ -94,8 +94,8 @@
         ->execute(); 
      
      echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>><br/>";
-     echo $respostas[0]->AssetAnswer->getAnswer()."<br>";
-     echo $respostas[1]->AssetAnswer->getAnswer()."<br>";  
+     echo $respostas[0]->Assset->AssetAnswer->getAnswer()."<br>";
+     echo $respostas[1]->Assset->AssetAnswer->getAnswer()."<br>";  
          
  		 $displays_home = array();
  		 $blocks = Doctrine_Query::create()
