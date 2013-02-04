@@ -36,7 +36,7 @@
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li><a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle() ?></li>
+     <li class="active"><?php $tam=32; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></li>
   </ul>
   <!-- /breadcrumb-->
   
@@ -47,7 +47,7 @@
   <!-- titulo da pagina -->
   <div class="tit-pagina">
 
-    <h2><?php $tam=20; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <h2><?php $tam=32; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
 
      <span></span>
     <!-- RANKING -->
@@ -78,7 +78,7 @@
         <?php foreach($assets as $k=>$d): ?>
           <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php echo $d->getTitle() ?></p></a>
+            <p><?php $tam=18; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p></a>
           </li>
         <?php endforeach; ?>
       <?php endif; ?>
