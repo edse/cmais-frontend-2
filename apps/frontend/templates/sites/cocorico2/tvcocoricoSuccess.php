@@ -119,13 +119,13 @@
         ->execute();
         
          //pergunta bloco enquete - 1º destaque
-        $q = $assets->Asset->AssetQuestion->getQuestion();
+        $q = $assets->AssetQuestion->getQuestion();
         
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
           ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$assets[0]->Asset->AssetQuestion->id)
+          ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
           ->execute();
           
         //imagens respectivas das respostas
