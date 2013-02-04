@@ -42,7 +42,7 @@
   </div>
   <!--/row-->
   <!--row--> 
-   
+    
    <?php if(isset($displays['destaque'])):?>
         <?php if(count($displays['destaque']) > 0): ?> 
         	
@@ -51,8 +51,8 @@
    	
    	<?php
    	$horarios = html_entity_decode($d->Asset->AssetContent->getHeadline());
-	$horario = explode (";", $horarios);
-	?>
+	  $horario = explode (";", $horarios);
+	  ?>
    	   	
     <ul>
       <li>
