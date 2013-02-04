@@ -41,7 +41,7 @@
     </div>
   </div>
   <!--/row-->
-  <!--row-->
+  <!--row--> 
   
    <?php if(isset($displays['destaque'])):?>
         <?php if(count($displays['destaque']) > 0): ?> 
