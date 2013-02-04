@@ -75,7 +75,25 @@
           <?php endif; ?>
         <?php endif; ?>
         <!-- enquete -->
-        <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site)) ?>
+        <?php
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, Section s')
+          ->where('a.id = sa.asset_id')
+          ->andWhere('s.id = sa.section_id')
+          ->andWhere('s.slug = "enquetes"')
+          ->andWhere('a.site_id = ?', (int)$site->id)
+          ->andWhere('a.asset_type_id = 10')
+          ->limit(1)
+          ->execute();
+         //doctrine para respostas
+          $respostas = Doctrine_Query::create()
+            ->select('aa.*')
+            ->from('AssetAnswer aa')
+            ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
+            ->execute();
+          ?>  
+        <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)) ?>
         <!-- /enquete -->
         <!-- fale conosco cr-->
       </div>
