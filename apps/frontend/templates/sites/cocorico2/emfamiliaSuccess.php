@@ -86,7 +86,7 @@
           </a>
         <?php endif; ?>
      <?php endif; ?>
-     
+      
      <?php endif; ?>
      
      <?php if(isset($displays['destaque-2'])):?>
