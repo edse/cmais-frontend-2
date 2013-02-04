@@ -118,25 +118,14 @@
         ->limit(1)
         ->execute();
         
-         //pergunta bloco enquete - 1º destaque
-        $q = $assets->AssetQuestion->getQuestion();
-        
-        //doctrine para respostas
-        $respostas = Doctrine_Query::create()
-          ->select('aa.*')
-          ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
-          ->execute();
-          
-        //imagens respectivas das respostas
-        $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
-        $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
+        echo $assets[0]->Asset->AssetQuestion->getQuestion();
+         
         ?>
          <div class="enquete span12">
          	 
           <h3>enquete do dia</h3>
+          <?php
+          /*
           <p><?php echo $q;?></p>
           <!--Pergunta-->
           <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" style="min-width:296px; ">
@@ -183,6 +172,8 @@
             <a href="<?php echo $site->retriveUrl();?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
           <!--/Resposta-->
+          */
+          ?>
         </div>
         <!-- /enquete -->
         <!-- fale conosco cr-->
