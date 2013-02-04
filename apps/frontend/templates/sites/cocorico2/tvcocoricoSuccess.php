@@ -76,66 +76,32 @@
         <?php endif; ?>
         <!-- enquete -->
         <?php
-     $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s')
-      ->where('a.id = sa.asset_id')
-      ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = "enquetes"')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 10')
-      ->limit(1)
-      ->execute();
-     //doctrine para respostas
-      $respostas = Doctrine_Query::create()
-        ->select('aa.*')
-        ->from('AssetAnswer aa')
-        ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
-        ->execute(); 
-     
-     $q = $assets[0]->AssetQuestion->getQuestion()."<br/>";
-     echo $respostas[0]->Asset->AssetAnswer->getAnswer()."<br>";
-     echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>"; 
-     
-     //imagens respectivas das respostas
-      $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-      $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
-      $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-      $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; 
-      echo $img_0."<br>";
-      echo $img_1."<br>";
-     /*    
- 		 $displays_home = array();
- 		 $blocks = Doctrine_Query::create()
-  		 ->select('b.*')
-  		 ->from('Block b, Section s') 
-    	 ->where('b.section_id = s.id')
-    	 ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-      	 ->andWhere('b.slug = ?', 'enquete') 
-     	 ->andWhere('s.site_id = ?', $site->id)
-     	 ->execute();
-
-  		if(count($blocks) > 0){
-    	$displays_home['enquete'] = $blocks[0]->retriveDisplays();
-  }
-
-        //pergunta bloco enquete - 1º destaque
-        $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
-
-        //doctrine para respostas
-        $respostas = Doctrine_Query::create()
-          ->select('aa.*')
-          ->from('AssetAnswer aa')
-          ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][0]->Asset->AssetQuestion->id)
+         $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, Section s')
+          ->where('a.id = sa.asset_id')
+          ->andWhere('s.id = sa.section_id')
+          ->andWhere('s.slug = "enquetes"')
+          ->andWhere('a.site_id = ?', (int)$site->id)
+          ->andWhere('a.asset_type_id = 10')
+          ->limit(1)
           ->execute();
-          
-        //imagens respectivas das respostas
-        $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
-        $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-        $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
-        */
-        ?>
+         //doctrine para respostas
+          $respostas = Doctrine_Query::create()
+            ->select('aa.*')
+            ->from('AssetAnswer aa')
+            ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
+            ->execute(); 
+         
+         $q = $assets[0]->AssetQuestion->getQuestion()."<br/>";
+         
+         //imagens respectivas das respostas
+          $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+          $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
+          $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+          $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; 
+      
+         ?>
          <div class="enquete span12">
          	 
           <h3>enquete do dia</h3>
