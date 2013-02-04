@@ -88,9 +88,7 @@
       <?php endif; ?>
       
       <div class="span12">
-        <?php
-        echo $displays["conteudos"][0]->getTitle();
-        /*
+     
         <?php if(isset($displays["conteudos"][0])): ?>
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
@@ -122,8 +120,6 @@
           
          </a>
         <?php endif; ?>
-        */
-        ?>
       </div>
     </div>
     
