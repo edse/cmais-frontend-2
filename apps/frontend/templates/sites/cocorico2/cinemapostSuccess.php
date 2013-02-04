@@ -22,7 +22,7 @@
   </div>
   <!-- /row-->
   <!-- row-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('site'=>$site)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'nocinema', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
@@ -32,7 +32,7 @@
      <li class="active"></li>
   </ul> 
   <!-- /breadcrumb-->
-  <h2 class="tit-pagina">agenda</h2>
+  <h2 class="tit-pagina">no cinema</h2>
   <!--row post-->
   <div id="agenda" class="row-fluid conteudo ">
     <!--coluna esquerda -->
