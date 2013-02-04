@@ -42,7 +42,68 @@
    <?php endif; ?>
   <!-- /row-->
   <!--row-->
-   
+
+    <div class="row-fluid relacionados">
+      
+       <?php if(isset($displays['destaques'])):?>
+        <?php if(count($displays['destaques']) > 0): ?> 
+          
+       <!-- clipe --> 
+      <div class="span4 destaque-2 conteudo-diverso">
+        <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
+          <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
+          <img alt="<?php echo $displays['destaques'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaques'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
+          <p>
+            <?php //echo $displays['destaques'][0]->getDescription() ?>
+            <?php $tam=38; $str=$displays['destaques'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+          </p> 
+        </a>
+        <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
+      </div> 
+      <!-- /clipe -->
+       
+       <!-- clipe --> 
+       <div class="span4 destaque-2 conteudo-diverso">
+         <a href="<?php echo $displays['destaques'][1]->retriveUrl() ?>" title="<?php echo $displays['destaques'][1]->getTitle() ?>" class="clipe">
+           <h3><?php echo $displays['destaques'][1]->getTitle() ?></h3>
+           <img alt="<?php echo $displays['destaques'][1]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaques'][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
+           <p>
+             <?php //echo $displays['destaques'][1]->getDescription() ?>
+             <?php $tam=38; $str=$displays['destaques'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+           </p>       
+         </a>
+         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+           <i class="ico-mais"></i>
+         </a>
+       </div> 
+       <!-- /clipe -->
+       
+       <!-- clipe --> 
+       <div class="span4 destaque-2 conteudo-diverso">
+         <a href="<?php echo $displays['destaques'][2]->retriveUrl() ?>" title="<?php echo $displays['destaques'][2]->getTitle() ?>" class="clipe">
+           <h3><?php echo $displays['destaques'][2]->getTitle() ?></h3>
+           <img alt="<?php echo $displays['destaques'][2]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaques'][2]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
+           <p>
+             <?php //echo $displays['destaques'][2]->getDescription() ?>
+             <?php $tam=38; $str=$displays['destaques'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+           </p>
+         </a> 
+         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+           <i class="ico-mais"></i>
+         </a>
+       </div> 
+       <!-- /clipe -->
+       
+       <?php endif; ?>
+     <?php endif; ?> 
+             
+    </div>
+    <!-- /row clipes relacionados -->
+
+
+
+
+   <?php /*
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
    
@@ -90,6 +151,8 @@
    <?php endif; ?>
     
    </div>  
+    * 
+    */ ?>
   
   <!-- /row-->
   <!-- rodapé-->
