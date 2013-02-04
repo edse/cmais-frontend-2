@@ -66,7 +66,7 @@
     
     <iframe width="940" height="529" style="margin-bottom: 20px;" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     <p class="span12"><?php echo $asset->getDescription()?></p>
-    <p class="tit">Assista + Clipes!</p>
+    <p class="tit">Assista mais Clipes!</p>
   </div>
   <!--/row-->
   
