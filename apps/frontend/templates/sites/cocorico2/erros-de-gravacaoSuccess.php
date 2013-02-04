@@ -41,7 +41,7 @@ $assets = $pager->getResults();
     <div class="row-fluid conteudo">    
       <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-      
+      <p class="tit">Assista também:</p>
     </div>
     <!-- /row-->
 
@@ -66,7 +66,6 @@ $assets = $pager->getResults();
   <!--row-->
   <?php if(count($pager) > 0): ?>
   <div class="row-fluid relacionados">
-    <p class="tit">Assista também:</p>
     <div class="row-fluid conteudo ytb"> 
       <ul class="destaques-small top">
       <?php foreach($pager->getResults() as $d): ?>
