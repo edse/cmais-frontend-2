@@ -151,7 +151,7 @@ bold,
 .menu .lista-personagens a:hover { border-color:#fdf035; }
 .menu .lista-personagens h3 { text-indent: -9999px; background:url(/portal/images/capaPrograma/cocorico/tit-turma.png) no-repeat; width:14px; height:73px; margin:16px 0 16px 16px; float:left;}
 .lista-personagens li { margin-bottom:20px; }
-.menu .lista-personagens li { list-style:none; float:left; margin:4px 0 0 3%; }
+.menu .lista-personagens li { list-style:none; float:left; margin:4px 0 0 3.3%; }
 .conteudo { clear:both; margin:2%; max-width:940px;}
 .conteudo .span7 { margin-left:0; /*min-width:620px;*/ }
 .conteudo .span3 { margin-left:20px; /*min-width:300px;*/ }
