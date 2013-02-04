@@ -61,14 +61,14 @@
           <p><?php echo $d->getHtml() ?></p>
         </div>
         <div class="hora span2">
-        <a href="#" title=""><?php if(isset($horario[0])) echo $horario[0]; ?><br><?php if(isset($horario[1])) echo $horario[1]; ?></a>
+        <a href="#" title=""><?php if(isset($horario[0])): echo $horario[0]; endif; ?><br><?php if(isset($horario[1])): echo $horario[1]; endif; ?></a>
           <span class=""></span>
-          <a href="#" title=""><?php if(isset($horario[2])) echo $horario[2]; ?><br><?php if(isset($horario[3])) echo $horario[3]; ?></a>
+          <a href="#" title=""><?php if(isset($horario[2])): echo $horario[2]; endif; ?><br><?php if(isset($horario[3])): echo $horario[3]; endif; ?></a>
         </div>
         <div class="hora span2">
-          <a href="#" title=""><?php if(isset($horario[4])) echo $horario[4]; ?><br><?php if(isset($horario[5])) echo $horario[5]; ?></a>
+          <a href="#" title=""><?php if(isset($horario[4])): echo $horario[4]; endif; ?><br><?php if(isset($horario[5])): echo $horario[5]; endif; ?></a>
           <span class=""></span>
-          <a href="#" title=""><?php if(isset($horario[6])) echo $horario[6]; ?><br><?php if(isset($horario[7])) echo $horario[7]; ?></a>
+          <a href="#" title=""><?php if(isset($horario[6])): echo $horario[6]; endif; ?><br><?php if(isset($horario[7])): echo $horario[7]; endif; ?></a>
         </div>
         
       </li>
