@@ -93,9 +93,17 @@
         ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
         ->execute(); 
      
-     echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>><br/>";
+     echo $assets[0]->AssetQuestion->getQuestion()."<br/>";
      echo $respostas[0]->Asset->AssetAnswer->getAnswer()."<br>";
-     echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>";  
+     echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>"; 
+     
+     //imagens respectivas das respostas
+      $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+      $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
+      $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+      $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; 
+      echo $img_0."<br>";
+      echo $img_1."<br>";
          
  		 $displays_home = array();
  		 $blocks = Doctrine_Query::create()
