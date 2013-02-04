@@ -76,20 +76,19 @@
         <?php endif; ?>
         <!-- enquete -->
         <?php
-        /*
-   		 $displays_home = array();
-   		 $blocks = Doctrine_Query::create()
-    		 ->select('b.*')
-    		 ->from('Block b, Section s') 
-      	 ->where('b.section_id = s.id')
-      	 ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-        	 ->andWhere('b.slug = ?', 'enquete') 
-       	 ->andWhere('s.site_id = ?', $site->id)
-       	 ->execute();
-  
-    		if(count($blocks) > 0){
-      	 $displays_home['enquete'] = $blocks[0]->retriveDisplays();
-        }
+ 		 $displays_home = array();
+ 		 $blocks = Doctrine_Query::create()
+  		 ->select('b.*')
+  		 ->from('Block b, Section s') 
+    	 ->where('b.section_id = s.id')
+    	 ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+      	 ->andWhere('b.slug = ?', 'enquete') 
+     	 ->andWhere('s.site_id = ?', $site->id)
+     	 ->execute();
+
+  		if(count($blocks) > 0){
+    	$displays_home['enquete'] = $blocks[0]->retriveDisplays();
+  }
 
         //pergunta bloco enquete - 1º destaque
         $q = $displays_home['enquete'][0]->Asset->AssetQuestion->getQuestion();
@@ -106,25 +105,11 @@
         $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
         $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
         $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
-        */
-        $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa, Section s')
-        ->where('a.id = sa.asset_id')
-        ->andWhere('s.id = sa.section_id')
-        ->andWhere('s.slug = "enquetes"')
-        ->andWhere('a.site_id = ?', (int)$site->id)
-        ->limit(1)
-        ->execute();
-        
-        echo $assets[0]->getTitle();
-         
+    
         ?>
          <div class="enquete span12">
          	 
           <h3>enquete do dia</h3>
-          <?php
-          /*
           <p><?php echo $q;?></p>
           <!--Pergunta-->
           <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" style="min-width:296px; ">
@@ -171,8 +156,6 @@
             <a href="<?php echo $site->retriveUrl();?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
           </form>
           <!--/Resposta-->
-          */
-          ?>
         </div>
         <!-- /enquete -->
         <!-- fale conosco cr-->
