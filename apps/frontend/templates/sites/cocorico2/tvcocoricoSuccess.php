@@ -86,8 +86,16 @@
       ->andWhere('a.asset_type_id = 10')
       ->limit(1)
       ->execute();
+     //doctrine para respostas
+      $respostas = Doctrine_Query::create()
+        ->select('aa.*')
+        ->from('AssetAnswer aa')
+        ->where('aa.asset_question_id = ?', (int)$assets[0]->Asset->AssetQuestion->id)
+        ->execute(); 
      
-     echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>>teste2";  
+     echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>><br/>";
+     echo $respostas[0]->Asset->AssetAnswer->getAnswer()."<br>";
+     echo $respostas[1]->Asset->AssetAnswer->getAnswer()."<br>";  
          
  		 $displays_home = array();
  		 $blocks = Doctrine_Query::create()
