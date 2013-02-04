@@ -114,7 +114,6 @@
         ->andWhere('s.id = sa.section_id')
         ->andWhere('s.slug = "enquetes"')
         ->andWhere('a.site_id = ?', (int)$site->id)
-        ->andWhere('a.asset_type_id = 10')
         ->limit(1)
         ->execute();
         
