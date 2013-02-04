@@ -50,7 +50,7 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-	    $horario = explode(";", htmlentities($d->getHeadline()));
+	    $horario = explode(";", urlencode($d->getHeadline()));
 	  ?>
    	   	
     <ul>
