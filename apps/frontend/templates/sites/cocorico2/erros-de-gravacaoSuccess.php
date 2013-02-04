@@ -41,7 +41,7 @@ $assets = $pager->getResults();
     <div class="row-fluid conteudo">    
       <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-      <p class="tit">Assista também:</p>
+      <p class="tit" style="margin:20px 0 -20px 0">Assista também:</p>
     </div>
     <!-- /row-->
 
@@ -65,20 +65,20 @@ $assets = $pager->getResults();
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
-    <div class="row-fluid relacionados">
-  <div class="row-fluid conteudo ytb"> 
-    <ul class="destaques-small top">
-    <?php foreach($pager->getResults() as $d): ?>
-      <li class="span2">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-          <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-          <p><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p> 
-        </a>
-      </li>
-    <?php endforeach; ?>
-    </ul>
+  <div class="row-fluid relacionados">
+    <div class="row-fluid conteudo ytb"> 
+      <ul class="destaques-small top">
+      <?php foreach($pager->getResults() as $d): ?>
+        <li class="span2">
+          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <p><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p> 
+          </a>
+        </li>
+      <?php endforeach; ?>
+      </ul>
+    </div>
   </div>
-   </div>
   <?php endif; ?>
   <!-- /row-->
   
