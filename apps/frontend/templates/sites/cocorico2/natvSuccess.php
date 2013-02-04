@@ -50,7 +50,7 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-	    $horario = explode(";", $d->getHeadline());
+	    $horario = explode("|", $d->getHeadline());
 	  ?>
    	<?php /*   	
     <ul>
@@ -84,10 +84,10 @@
           <p><?php echo $d->getHtml() ?></p>
         </div>
         <div class="hora span2">
-          <?php if(isset($horario[0])): echo $horario[0]; endif; ?>
+          <?php if(isset($horario[0])): echo html_entity_decode($horario[0]); endif; ?>
         </div>
         <div class="hora span2">
-          <?php if(isset($horario[1])): echo $horario[1]; endif; ?>
+          <?php if(isset($horario[1])): echo html_entity_decode($horario[1]); endif; ?>
         </div>
       </li>
     </ul>
