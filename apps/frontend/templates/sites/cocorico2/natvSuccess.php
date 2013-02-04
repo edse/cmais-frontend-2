@@ -50,9 +50,9 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-	    $horario = explode(";", $d->getHeadline());
+	    $horario = explode("|", $d->getHeadline());
 	  ?>
-   	   	
+   	<?php /*   	
     <ul>
       <li>
         <div class="span8">
@@ -74,6 +74,24 @@
       </li>
        
     </ul>
+     */
+    ?>
+    <ul>
+      <li>
+        <div class="span8">
+          <img class="span6" src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" />
+          <bold><?php echo $d->getTitle() ?></bold>
+          <p><?php echo $d->getHtml() ?></p>
+        </div>
+        <div class="hora span2">
+          <?php if(isset($horario[0])): echo html_entity_decode($horario[0]); endif; ?>
+        </div>
+        <div class="hora span2">
+          <?php if(isset($horario[1])): echo html_entity_decode($horario[1]); endif; ?>
+        </div>
+      </li>
+    </ul>
+    
     <?php endforeach; ?>
   </div>  
    <?php endif; ?>
