@@ -15,7 +15,7 @@
   <div class="row-fluid">
   	 <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
-      <div class="span12">
+      <div class="span12"> 
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner"> 
