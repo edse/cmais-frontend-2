@@ -41,7 +41,7 @@
     </div>
   </div>
   <!--/row-->
-  <!--row-->
+  <!--row--> 
   
    <?php if(isset($displays['destaque'])):?>
         <?php if(count($displays['destaque']) > 0): ?> 
@@ -50,7 +50,7 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-   	$horarios = $d->getHeadline();
+   	$horarios = $d-> html_entity_decode($d->Asset->AssetContent->getHeadline()) ?>;
 	$horario = explode (";", $horarios);
 	?>
    	   	
