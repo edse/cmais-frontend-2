@@ -41,6 +41,7 @@
   body { background:red; }
   .conteudo { margin:0;}
   .topo-coco h1 { margin:0; }
+  .topo-coco { margin:10px 0; }
   .menu .navbar .nav > li { margin-right:2%; }
   .rodape .span2 { margin-left:1%;}
   .voltar .divisao { min-width:790px; }
