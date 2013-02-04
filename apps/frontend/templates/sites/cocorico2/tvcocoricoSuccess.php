@@ -118,6 +118,9 @@
         ->limit(1)
         ->execute();
         
+         //pergunta bloco enquete - 1º destaque
+        $q = $assets->Asset->AssetQuestion->getQuestion();
+        
         //doctrine para respostas
         $respostas = Doctrine_Query::create()
           ->select('aa.*')
