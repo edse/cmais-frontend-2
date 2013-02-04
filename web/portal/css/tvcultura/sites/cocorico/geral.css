@@ -376,7 +376,7 @@ bold,
 /* ytb*/
 
 /* topo coco*/
-.topo-coco { margin:10px 20px; }
+.topo-coco { margin:10px 20px; overflow:hidden; }
 .topo-coco h1 { min-width:300px; float:left; margin:0 2% 0 0; }
 .topo-coco .fb-like { clear:both; display: block; }
 .box-publicidade.span9 { max-width: 620px; height:90px; background:#c1c1c1; float:left; margin-left:0; }
