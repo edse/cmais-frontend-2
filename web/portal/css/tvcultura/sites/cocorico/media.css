@@ -1,8 +1,15 @@
 @media (min-width: 1200px) { ... }
  
 @media (min-width: 768px) and (max-width: 1024px) { 
+  /*
   .conteudo { margin:0;}
   .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
+  */
+ .conteudo { margin:0;}
+  .navbar-inverse .nav > li > a { text-indent:0; background:none; width:auto; }
+  .menu .navbar .nav > li span,
+  .menu .navbar .nav > li a { display:none !important; }
+  .menu .navbar .nav > li a.icon { display:block !important; }
   body { background:red; }
    }
  
