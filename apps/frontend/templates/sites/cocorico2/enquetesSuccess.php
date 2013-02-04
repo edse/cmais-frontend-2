@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults();
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -41,6 +44,7 @@
     <ul class="lista">
       
       <?php
+      /*
       //puxando bloco home
        $displays_home = array();
        $blocks = Doctrine_Query::create()
@@ -55,10 +59,12 @@
         if(count($blocks) > 0):
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         endif;
+        */
         
-        foreach($displays_home['enquete'] as $k=>$d):
           
-          $filename = "/var/frontend/web/uploads/assets/question/".$displays_home["enquete"][$k]->Asset->AssetQuestion->id.".txt";
+        foreach($pager->getResults() as $k=>$d):
+          
+          $filename = "/var/frontend/web/uploads/assets/question/".$asset[$k]->Asset->AssetQuestion->id.".txt";
           $lines = file($filename);
           $total = count($lines);
           for($i=$total;$i>=0;$i--){
@@ -67,7 +73,7 @@
               @$votes[$vote] += 1;
             }
           }
-          foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
+          foreach($asset[$k]->Asset->AssetQuestion->Answers as $a){
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
           /*
@@ -81,8 +87,8 @@
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
-            <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
+            <h4><?php echo $asset[$k]->getHeadline();?></h4>
+            <h3><?php echo $asset[$k]->Asset->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
