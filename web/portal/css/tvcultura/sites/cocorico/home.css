@@ -24,7 +24,7 @@
 .destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
 .destaque-home .box img,
-.destaque-home .span9 img {  border-radius:8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; }
+.destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; }
 .destaque-home .box .mais { margin-left:-30px; }
 
 .destaque-home.joguinhos .span9 { border:2px solid #1793ce; }
