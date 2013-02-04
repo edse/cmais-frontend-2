@@ -76,17 +76,17 @@
      <?php endif; ?>
     
     <?php else: ?>
-      <?php if(isset($displays['destaque-1'])):?>
+       <?php if(isset($displays['destaque-1'])):?>
         <?php if(count($displays['destaque-1']) > 0): ?>   
           <a title="NA TV" href="/cocorico2/natv" class="destaques span6 web">
-           <h2>Na Web</h2>
+            <h2>Na TV</h2>
             <img alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" src="<?php echo $displays['destaque-1'][0]->Asset->retriveImageUrlByImageUsage('original') ?>">
             <p class="bold"><?php $tam=30; $str=$displays['destaque-1'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
-            <!--p><?php echo $displays['destaque-1'][0]->getDescription() ?></p-->
+            <!--p><?php echo $displays['destaque-2'][0]->getDescription() ?></p-->
           </a>
         <?php endif; ?>
      <?php endif; ?>
-     
+      
      <?php endif; ?>
      
      <?php if(isset($displays['destaque-2'])):?>
