@@ -83,7 +83,7 @@
 
         <div class="destaque span12">
           <span></span>
-          <a href="/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
+          <a href="/cocorico2/clipes-musicais" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
           <span class="last"></span>
         </div>
     <?php endforeach; ?>   
