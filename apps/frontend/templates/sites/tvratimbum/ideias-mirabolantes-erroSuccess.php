@@ -44,7 +44,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
         <!--/TRILHA-->
         
         <!--BOX-ESPECIAL-INTERNA-->
-        <div id="box-especial-interna">
+        <div id="box-especial-interna" style="display: none;">
           <!--WRAPPER-->
           <div class="wrapper">
             
@@ -172,7 +172,7 @@ $d['videos'] = Doctrine::getTable('Block')->findOneById(1177)->retriveDisplays()
             <!--MSG ERRO-->
             <div class="msgErro" style="display:block">
               <p>
-                Sua idéia foi não foi enviada com sucesso<br/>
+                Sua idéia <span style="color: red;"><strong>não</strong></span> foi enviada!<br/>
                 Por favor, tente novamente
               </p>
               <div class="btn-barra">

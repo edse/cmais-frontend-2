@@ -45,7 +45,7 @@
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
+  <div class="tit-pagina">
 
     <h2><?php $tam=20; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
 
@@ -64,15 +64,15 @@
   <!--row-->
   <div class="row-fluid conteudo" id="videos">
     
-    <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="940" height="529" style="margin-bottom: 20px;" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     <p class="span12"><?php echo $asset->getDescription()?></p>
-    <p class="tit">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p>
+    
   </div>
   <!--/row-->
   
   <!--row-->
   <div class="row-fluid relacionados ytb">
-
+    <div class="tit"><span class="mais"></span><p>Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p><span></span></div>
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>

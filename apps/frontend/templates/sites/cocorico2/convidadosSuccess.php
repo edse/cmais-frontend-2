@@ -41,9 +41,11 @@ $assets = $pager->getResults();
   <h2 class="tit-pagina">Convidados</h2>
    <script>
    	$(function() {
-      $('#alfabeto a').click(function(){
-      	var letra = $(this).attr('title');
-      	alert(letra);
+      $('#alfabeto ul li a').click(function(){
+        var letra = $(this).attr('title');
+        $('#frmBusca #busca').val('');
+        $('#frmBusca #letra').val(letra);
+      	$('#frmBusca').submit();
       });
    	});
    </script>
@@ -58,13 +60,14 @@ $assets = $pager->getResults();
    
    <div class="pagination" id="alfabeto">
     <ul>
-      <?php foreach($letras as $d): ?>
-      <li><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><span class="divider">|</span></li>
+      <?php foreach($letras as $k=>$d): ?>
+      <li<?php if($_REQUEST['letra-cocorico'] == $d): ?> class="active"<?php endif; ?>><a href="javascript:;" title="<?php echo $d ?>"><?php echo $d ?></a><?php if($k < 26): ?><span class="divider">|</span><?php endif; ?></li>
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
-    <form class="form-search">
-      <input type="text" class="input-medium search-query">
+    <form class="form-search" action="" name="frmBusca" id="frmBusca" method="post">
+      <input type="hidden" name="letra-cocorico" id="letra" value="">
+      <input type="text" class="input-medium search-query" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
   </div>  
@@ -86,6 +89,8 @@ $assets = $pager->getResults();
       </ul>
     </div>
     <form id="page_form" action="" method="post">
+      <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
+      <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
       <input type="hidden" name="page" id="page" value="" />
     </form>
@@ -153,22 +158,27 @@ $assets = $pager->getResults();
   <!-- /paginacao -->
   <!--row-->
   
-  <?php if(count($pager) > 0): ?>
+  
   <div class="row-fluid conteudo destaques">
+    <?php if(count($pager) > 0): ?>
+      
   	<ul id="convidados">
-		<?php foreach($pager->getResults() as $d): ?>
-    	  
+		  <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" />
           <?php $tam=23; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
         </a>  
       </li>
-      	
-        <?php endforeach; ?>
-       </ul>
-     <?php endif; ?> 
+      <?php endforeach; ?>
+    </ul>
+    <?php else: ?>
+    <p style="margin-top: 20px;">Nenhum resultado encontrado para a sua busca.</p>
+    <?php endif; ?>  
   </div>
+  
+    
+  
   <!-- /row-->
  <!-- paginacao -->
   <!--<div class="pagination pagination-centered">

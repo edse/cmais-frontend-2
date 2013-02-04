@@ -21,7 +21,7 @@ if($_FILES["arquivo"]){
     }
     else{
       if(is_file($_FILES["arquivo"]["tmp_name"])){
-        if(multi_attach_mail("emerson.estrella@gmail.com, ideiasmirabolantestvrtb@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, $_FILES["arquivo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("ideiasmirabolantestvrtb@gmail.com", array($_FILES["arquivo"]["tmp_name"]), $_POST, $_FILES["arquivo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["arquivo"]["tmp_name"]);
           header("Location: http://tvratimbum.cmais.com.br/ideias-mirabolantes-sucesso");
           //echo ">>>>OK!";

@@ -53,10 +53,12 @@
           <span class="mais"></span>
         </a>
         <div class="enquete span12">
-          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
+          <a href="<?php echo $displays['destaque-receitinhas'][1]->retriveUrl() ?>" title="" class="span6">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related1[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
             <p><?php $tam=18; $str=$displays['destaque-receitinhas'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
           </a>
-          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last"> <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
+          <a href="<?php echo $displays['destaque-receitinhas'][2]->retriveUrl() ?>" title="" class="span6 last">
+            <img class="span12" src="http://img.youtube.com/vi/<?php echo $related2[0]->AssetVideo->getYoutubeId()?>/1.jpg" alt="" />
             <p><?php $tam=18; $str=$displays['destaque-receitinhas'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
           </a>
         </div>  

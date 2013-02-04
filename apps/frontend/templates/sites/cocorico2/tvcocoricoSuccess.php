@@ -30,6 +30,7 @@
     <div class="span4 col-dir">
       <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
+      
       <!-- tv cocorico -->
       
       <?php
@@ -49,7 +50,12 @@
 ?>
 
       <div class="tvcoco span12">
-        <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
+        <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
+         Confira os horários da programação 
+        </a>
+        <h2>
+          <i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i>
+        </h2>
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
             <?php
@@ -60,7 +66,12 @@
               }
             ?>
             
-        <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" /><?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?><span class="mais"></span></a>
+        <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" />
+          <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>
+        </a>
+        <a href="<?php echo $site->retriveUrl(); ?>/convidados" title="Convidados">
+          <span class="mais"></span>
+        </a>
           <?php endif; ?>
         <?php endif; ?>
         <!-- enquete -->
@@ -119,8 +130,10 @@
               
             </div>
             <?php endfor; ?>
-            <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
             <div class="votar span12">
+              <div class="ajax-loader">
+               <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+              </div>
               <span></span>
               <input id="votar-input" class="span11" type="submit" value="votar" />
               <span class="last"></span>

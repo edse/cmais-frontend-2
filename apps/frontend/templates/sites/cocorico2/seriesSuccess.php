@@ -64,9 +64,8 @@ $assets = $pager->getResults();
 
   <!--row-->
   <?php if(count($pager) > 0): ?>
-    <div class="row-fluid relacionados">
-  <div class="row-fluid conteudo ytb"> 
-    <ul class="destaques-small">
+    <div class="row-fluid relacionados ytb">
+    <ul class="destaques-small top">
     <?php foreach($pager->getResults() as $d): ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -76,7 +75,7 @@ $assets = $pager->getResults();
       </li>
     <?php endforeach; ?>
     </ul>
-  </div>
+
    </div>
   <?php endif; ?>
   <!-- /row-->
