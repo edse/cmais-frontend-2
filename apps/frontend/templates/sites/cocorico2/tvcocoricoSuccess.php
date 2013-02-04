@@ -87,7 +87,7 @@
       ->limit(1)
       ->execute();
      
-     echo $assets[0]->getTitle().">>>>>>>>>>>>>>>>>teste";  
+     echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>>teste2";  
          
  		 $displays_home = array();
  		 $blocks = Doctrine_Query::create()
