@@ -118,7 +118,7 @@
         ->limit(1)
         ->execute();
         
-        echo $assets[0]->Asset->AssetQuestion->getQuestion();
+        echo $assets[0]->getTitle();
          
         ?>
          <div class="enquete span12">
