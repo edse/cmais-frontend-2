@@ -90,7 +90,7 @@
       $respostas = Doctrine_Query::create()
         ->select('aa.*')
         ->from('AssetAnswer aa')
-        ->where('aa.asset_question_id = ?', (int)$assets[0]->Asset->AssetQuestion->id)
+        ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
         ->execute(); 
      
      echo $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>>>>>><br/>";
