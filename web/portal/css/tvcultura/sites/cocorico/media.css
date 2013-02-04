@@ -38,7 +38,7 @@
 */
 
 @media (min-width: 768px) and (max-width: 981px) { 
-  body { background:green; }
+  body { background:red; }
   .conteudo { margin:0;}
   .topo-coco h1 { margin:0; }
   .menu .navbar .nav > li { margin-right:2%; }
