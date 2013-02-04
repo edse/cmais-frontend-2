@@ -22,7 +22,7 @@
   </div>
   <!-- /row-->
   <!-- row-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'cinema', 'site'=>$site)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'nocinema', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
