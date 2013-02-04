@@ -319,4 +319,4 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .conteudo a.destaque2  { margin-left:15px; }
 
 .instagram h2 { width: 100%; }
-.conteudo .tit { color:#1DB186; }
+.conteudo .tit { color:#1DB186; border-color:#1DB186; }
