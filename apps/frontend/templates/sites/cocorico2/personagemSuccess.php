@@ -93,7 +93,7 @@
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           <p class="bold">
-            <?php echo $se[0]->getTitle() ?>
+            <?php echo $se->getTitle() ?>
           </p>
           <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
           <?php echo $displays["conteudos"][0]->getTitle() ?>
@@ -109,7 +109,7 @@
           <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
         <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
           <p class="bold">
-            <?php echo $se[0]->getTitle() ?>
+            <?php echo $se->getTitle() ?>
           </p>
           <img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>" name="<?php echo $displays["conteudos"][1]->getTitle() ?>" />
           <?php echo $displays["conteudos"][1]->getTitle() ?>
