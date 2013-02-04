@@ -17,6 +17,7 @@
 .pagination ul > li > a:hover, .pagination ul > .active > a, .pagination ul > .active > span {color:#f2722f; }
 .receitinhas .tit-pagina { position:absolute; }
 .zaza { max-width:980px; position:relative; bottom:0; background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.png) repeat-x 0 40px; height:44px; }
+.zaza p,
 .zaza a { text-indent:-9999px; background:url(/portal/images/capaPrograma/cocorico/cozinha-da-zaza.png) no-repeat; width:131px; height:45px; display: block; margin-right:20px; position:absolute; right:0; bottom:2px; }
 
 .voltar {    background: url("/portal/images/capaPrograma/cocorico/voltar-laranja.png") no-repeat scroll 0 0 transparent;    color: #f2722f;}

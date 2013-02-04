@@ -32,7 +32,7 @@ $assets = $pager->getResults();
   
   <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="tit-pagina">Receitinhas</a>
   <div class="zaza">
-    <a href="/cocorico2/receitinhas">zaza</a>
+    <p>Cozinha da Amiga Zazá</p>
   </div>
 
   <?php if(count($favoritos) > 0): ?>
