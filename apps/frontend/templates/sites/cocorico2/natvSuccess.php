@@ -50,8 +50,7 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-   	  $horarios = $d->Asset->AssetContent->getHeadline();
-	    $horario = explode(";", $horarios);
+	    $horario = explode(";", $d->Asset->AssetContent->getHeadline());
 	  ?>
    	   	
     <ul>
