@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults();
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -57,7 +60,9 @@
           $displays_home['enquete'] = $blocks[0]->retriveDisplays();
         endif;
         */
-        foreach($asset as $k=>$d):
+        
+          
+        foreach($pager->getResults() as $k=>$d):
           
           $filename = "/var/frontend/web/uploads/assets/question/".$asset[$k]->Asset->AssetQuestion->id.".txt";
           $lines = file($filename);
