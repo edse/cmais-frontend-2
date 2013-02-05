@@ -78,7 +78,7 @@ $assets = $pager->getResults();
       echo count($pager);
         if(count($pager) > 0):
           foreach($pager->getResults() as $d):
-            $d->getTitle().">>>>>>>>>>>><br>";
+            $d->AssetQuestion->getQuestion().">>>>>>>>>>>>teste<br>";
           endforeach;
         endif;    
       ?>
