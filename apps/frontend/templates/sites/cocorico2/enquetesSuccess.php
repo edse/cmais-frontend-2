@@ -75,7 +75,7 @@ $assets = $pager->getResults();
           }
       ?>
       <?php
-      $assets[0]->AssetQuestion->getQuestion().">>>>>>>>>>>>teste<br>";
+      $assets[0]->getTitle().">>>>>>>>>>>>teste<br>";
       ?>
           <!-- item -->
           <li class="item-lista">
