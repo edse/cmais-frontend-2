@@ -38,7 +38,7 @@
 */
 
 @media (min-width: 768px) and (max-width: 981px) { 
-  body { background:yellow; }
+  body { background:green; }
   .conteudo { margin:0 0 20px 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
   .topo-coco { margin:10px 0; }
@@ -50,5 +50,5 @@
   #slideTvCocorico li { margin: 0 0 1.2% 1.2% !important; }
   #menu-familia { background:#e1edec !important;  opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
   .relacionados .destaques-small {background: #fff;}
-  #menu-familia li .divider { padding:0 5px !important; }
+  #menu-familia li .divider { padding:0 6px !important; }
    }
