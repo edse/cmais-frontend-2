@@ -39,7 +39,7 @@ $assets = $pager->getResults();
   <!-- titulo da pagina -->
   <?php
   count($assets);
-  $assets[0]->getTitle().">>>>>>>>>>>>teste2<br>";
+  $assets[0]->getTitle().">>>>>>>>>>>>MERDA2<br>";
   ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
