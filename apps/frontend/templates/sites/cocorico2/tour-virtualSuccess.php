@@ -36,14 +36,7 @@
   <?php if(count($displays['tour-virtual']) > 0): ?>
   <div id="box-destaque" class="row-fluid conteudo">  	
   <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
-  
-   </div>
-  <?php endif; ?>
-   <?php endif; ?>
-  <!-- /row-->
-  <!--row-->
-
-    <div class="row-fluid relacionados">
+   <div class="row-fluid relacionados">
       
        <?php if(isset($displays['destaques'])):?>
         <?php if(count($displays['destaques']) > 0): ?> 
@@ -99,6 +92,14 @@
              
     </div>
     <!-- /row clipes relacionados -->
+  
+   </div>
+  <?php endif; ?>
+   <?php endif; ?>
+  <!-- /row-->
+  <!--row-->
+
+   
 
 
 
