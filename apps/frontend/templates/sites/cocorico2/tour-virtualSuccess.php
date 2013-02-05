@@ -34,7 +34,7 @@
   <!--row-->
   <?php if(isset($displays['tour-virtual'])):?>
   <?php if(count($displays['tour-virtual']) > 0): ?>
-  <div class="row-fluid conteudo">  	
+  <div id="box-destaque" class="row-fluid conteudo">  	
   <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
   
    </div>
