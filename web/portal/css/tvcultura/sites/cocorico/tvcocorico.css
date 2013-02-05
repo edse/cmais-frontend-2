@@ -325,12 +325,14 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #box-destaque #container.playlist{position: absolute; right: 20px; top: 20px;}
 #box-destaque .playlist div.jp-playlist ul {height: 397px;overflow: auto}
 #box-destaque .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat 0 bottom; width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-17px;}
-#box-destaque .conteudo-diverso{background-color: #f2722f;}
+#box-destaque .conteudo-diverso{background-color: #1DB186;}
 #box-destaque .conteudo-diverso p{color:#fdf035; position: relative;}
 #box-destaque .destaque-2{border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin-top:30px;position:relative; padding-top:1px; overflow:hidden; max-height: 240px;}
-#box-destaque .destaque-2 h3 {border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; background: #F2722F; color: #FDF035 !important; font-size: 20px !important; font-weight: bold; height: 40px; line-height: 40px; margin: 0; overflow: hidden;  padding: 0;  position: relative; text-align: center; }
-#box-destaque .destaque-2 p { background:#F2722F; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;  bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px;}
+#box-destaque .destaque-2 h3 {border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; background: #1DB186; color: #FDF035 !important; font-size: 20px !important; height: 40px; line-height: 40px; margin: 0; overflow: hidden;  padding: 0;  position: relative; text-align: center; }
+#box-destaque .destaque-2 p { background:#BFD540; color:#747B3A; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;  bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px;}
 #box-destaque .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-22px;}
-#box-destaque .conteudo-diverso .ico-mais{background-position:0 top;}
+#box-destaque .conteudo-diverso .ico-mais{background-position:0 -38px;}
 #box-destaque a.clipe:hover{text-decoration: none}
 #box-destaque .destaque-2 img { margin: -29px 0; max-width: 304px; border-radius:30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;  }
+#box-destaque .destaque-1 p, 
+#box-destaque .destaque-2 p { width: 97%; }
