@@ -99,8 +99,8 @@
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
-                    form.submit();
-                   /*
+                    //form.submit();
+                   
                    $.ajax({
                       type: "POST",
                       enctype: "multipart/form-data",
@@ -125,7 +125,7 @@
                         }
                       }
                     });         
-                  */
+                  
                   },
                   rules:{
                     regulamento:{

@@ -75,12 +75,7 @@ $assets = $pager->getResults();
           }
       ?>
       <?php
-      echo count($pager);
-        if(count($pager) > 0):
-          foreach($pager->getResults() as $d):
-            $d->getTitle().">>>>>>>>>>>><br>";
-          endforeach;
-        endif;    
+      $assets[0]->getTitle().">>>>>>>>>>>>teste<br>";
       ?>
           <!-- item -->
           <li class="item-lista">
