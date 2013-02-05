@@ -142,7 +142,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 #radio .conteudo-diverso{background-color: #f2722f;}
 #radio .conteudo-diverso p{color:#fdf035; position: relative;}
 #radio .destaque-2{border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin-top:30px;position:relative; padding-top:1px; overflow:hidden; max-height: 240px;}
-#radio .destaque-2 h3 {border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; background: #F2722F; color: #FDF035 !important; font-size: 20px !important; height: 40px; line-height: 40px; margin: 0; overflow: hidden;  padding: 0;  position: relative; text-align: center; }
+#radio .destaque-2 h3 {border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; background: #F2722F; color: #FDF035 !important; font-size: 20px !important; height:30px; line-height: 30px; margin: 0; overflow: hidden;  padding: 0;  position: relative; text-align: center; font-weight:normal; }
 #radio .destaque-2 p { background:#F2722F; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;  bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px;}
 #radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-22px;}
 #radio .conteudo-diverso .ico-mais{background-position:0 top;}
