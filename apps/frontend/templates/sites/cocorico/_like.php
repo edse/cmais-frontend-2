@@ -12,7 +12,7 @@
 <!-- like -->
 <div class="redes">
   <!--face-->
-  <div id="rede-face">
+  <div id="rede-face"> 
 
 <fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
 </div>

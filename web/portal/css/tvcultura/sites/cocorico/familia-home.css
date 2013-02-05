@@ -18,10 +18,11 @@
 .destaques.web img { height:180px; }
 
 .cr { background-position:0 -40px; }
-#blocoCarrossel .texto { position:relative;min-width:594px;  }
+#blocoCarrossel .texto { position:relative;  }
 #blocoCarrossel .texto h3 { color:#6B757D; }
 #blocoCarrossel .texto { background: none; }
 .carousel-inner .item { height:335px; overflow:hidden; }
+#myCarousel .texto {  min-width:594px; }
 
 
 .destaques.video-ytb .bold { padding-top:5px; }

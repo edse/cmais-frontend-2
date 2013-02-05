@@ -47,6 +47,7 @@ class AssetContent extends BaseAssetContent
       supplied: "mp3",
       wmode: "window",
       cssSelectorAncestor: "#jp_container_\\2"
+    });
   });
   </script>
   <div id="jquery_jplayer_\\2" class="jp-jplayer"></div>
