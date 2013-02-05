@@ -83,12 +83,12 @@
           <bold><?php echo $d->getTitle() ?></bold>
           <p><?php echo $d->getHtml() ?></p>
         </div>
-        <div class="hora span2">
+        <p class="hora span2">
           <?php if(isset($horario[0])): echo html_entity_decode($horario[0]); endif; ?>
-        </div>
-        <div class="hora span2">
+        </p>
+        <p class="hora span2">
           <?php if(isset($horario[1])): echo html_entity_decode($horario[1]); endif; ?>
-        </div>
+        </p>
       </li>
     </ul>
     
