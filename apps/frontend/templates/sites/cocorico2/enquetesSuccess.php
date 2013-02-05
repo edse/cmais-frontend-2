@@ -38,8 +38,9 @@ $assets = $pager->getResults();
   </div>
   <!-- titulo da pagina -->
   <?php
-  echo count($assets)."testejefferson;";
-  echo $assets[0]->getTitle().">>>>>>>>>>>>2<br>";
+  foreach($assets as $d):
+    echo $d[0]->getTitle()."<br>";
+  endforeach;
   ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
