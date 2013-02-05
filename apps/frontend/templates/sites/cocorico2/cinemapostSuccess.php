@@ -54,7 +54,7 @@
       </div>
       <!-- /titulo post -->    
     
-          <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
+          <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site, 'uri'=>$uri)) ?>
       
       <!-- asset -->
       <div class="row-fuid asset">
