@@ -38,7 +38,7 @@
 */
 
 @media (min-width: 768px) and (max-width: 981px) { 
-  body { background:red; }
+  body { background:blue; }
   .conteudo { margin:0 0 20px 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
   .topo-coco { margin:10px 0; }
@@ -47,5 +47,5 @@
   .voltar .divisao { min-width:790px; }
   #videos {margin:0 !important; }
   .menu.listao .lista-personagens li { margin-right:2%; }
-  #slideTvCocorico li { margin: 0 0 0 0.5% !important; }
+  #slideTvCocorico li { margin: 0 0 0 0.7% !important; }
    }
