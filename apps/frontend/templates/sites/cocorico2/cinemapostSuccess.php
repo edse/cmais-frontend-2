@@ -54,7 +54,20 @@
       </div>
       <!-- /titulo post -->     
       <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-      <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
+      
+      <!-- google+-->
+      
+       <script type="text/javascript">
+       window.___gcfg = {lang: 'pt-BR'};
+       (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+       })();
+      </script>
+          
+          <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
+      
       <!-- asset -->
       <div class="row-fuid asset">
         <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
