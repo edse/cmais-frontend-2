@@ -1,5 +1,5 @@
 /* menu familia */
-.topo-familia .navbar .nav > li.familia { margin:5px 10px 0 20px; float:left; width: auto; }
+.topo-familia .navbar .nav > li.familia { margin:5px 1% 0 20px; float:left; width: auto; }
 .topo-familia .navbar .nav > li { margin-top:5px; margin-right:10px; }
 .topo-familia .navbar .nav > li.familia a { width: 167px; margin:0; padding:0; }
 
@@ -16,7 +16,7 @@
 #menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
 #menu-familia li a.active,
 #menu-familia li a:hover { color:#6a747d; }
-#menu-familia li .divider { color: #fff; padding: 0 15px; background:none; line-height:40px; width: auto; }
+#menu-familia li .divider { color: #fff; padding: 0 12px; background:none; line-height:40px; width: auto; }
 /* /menu familia */
 
 .breadcrumb .divider,
@@ -201,7 +201,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /*#blocoCarrossel .texto,
 #blocoCarrossel .base-btns*/
 .carousel { background: url(/portal/images/capaPrograma/cocorico/agenda-pattern-bloco.png); border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;}
-#blocoCarrossel .texto { margin:10px; display: block;} 
+#blocoCarrossel .texto { margin:10px; display: block; min-width:594px; } 
 #blocoCarrossel .texto:hover { text-decoration:none; }
 #blocoCarrossel .texto h3{margin-top:2px;}
 #blocoCarrossel .base-btns{position:relative; padding: 30px 0 5px 0; }

@@ -52,8 +52,10 @@
         <h2><?php $tam=45; $str=$asset->getTitle();mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
-      <!-- /titulo post -->     
-      <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
+      <!-- /titulo post -->    
+    
+          <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site, 'uri'=>$uri)) ?>
+      
       <!-- asset -->
       <div class="row-fuid asset">
         <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  

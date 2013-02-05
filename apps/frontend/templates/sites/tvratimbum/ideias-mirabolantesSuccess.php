@@ -99,8 +99,8 @@
                 });
                 var validator = $('#form-contato').validate({
                   submitHandler: function(form){
-                    form.submit();
-                   /*
+                    //form.submit();
+                   
                    $.ajax({
                       type: "POST",
                       enctype: "multipart/form-data",
@@ -125,7 +125,7 @@
                         }
                       }
                     });         
-                  */
+                  
                   },
                   rules:{
                     regulamento:{
@@ -184,7 +184,7 @@
             </div> 
             <!--/MSG ERRO-->
             
-            <form id="form-contato" action="http://cmais.com.br/actions/tvratimbum/ideias-mirabolantes/index.php" method="post" enctype="multipart/form-data">
+            <form id="form-contato" action="" method="" enctype="multipart/form-data">
               <input type="hidden" name="MAX_FILE_SIZE" value="20554432" />
               
                 <span class="titulo">
