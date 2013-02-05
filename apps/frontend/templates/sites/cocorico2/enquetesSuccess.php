@@ -1,3 +1,6 @@
+<?php 
+$assets = $pager->getResults();
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -70,13 +73,13 @@
           foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
-          /*
-          $respostas = Doctrine_Query::create()
-            ->select('aa.*')
-            ->from('AssetAnswer aa')
-            ->where('aa.asset_question_id = ?', (int)$displays_home["enquete"][$k]->Asset->AssetQuestion->id)
-            ->execute();
-          */
+      ?>
+      <?php
+        if(count($pager) > 0):
+          foreach($pager->getResults() as $d):
+            $d->getTitle()."<br>";
+          endforeach;
+        endif;    
       ?>
           <!-- item -->
           <li class="item-lista">
