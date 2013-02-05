@@ -50,9 +50,9 @@
    <?php foreach($displays['destaque'] as $k=>$d):?>
    	
    	<?php
-	    $horario = explode(";", $d->Asset->AssetContent->getHeadline());
+	    $horario = explode("|", $d->getHeadline());
 	  ?>
-   	   	
+   	<?php /*   	
     <ul>
       <li>
         <div class="span8">
@@ -61,19 +61,37 @@
           <p><?php echo $d->getHtml() ?></p>
         </div>
         <div class="hora span2">
-        <a href="#" title=""><?php if(isset($horario[0])) echo html_entity_decode($horario[0]); ?><br><?php if(isset($horario[1])) echo html_entity_decode($horario[1]); ?></a>
+        <a href="#" title=""><?php if(isset($horario[0])): echo $horario[0]; endif; ?><br><?php if(isset($horario[1])): echo $horario[1]; endif; ?></a>
           <span class=""></span>
-          <a href="#" title=""><?php if(isset($horario[2])) echo html_entity_decode($horario[2]); ?><br><?php if(isset($horario[3])) echo html_entity_decode($horario[3]); ?></a>
+          <a href="#" title=""><?php if(isset($horario[2])): echo $horario[2]; endif; ?><br><?php if(isset($horario[3])): echo $horario[3]; endif; ?></a>
         </div>
         <div class="hora span2">
-          <a href="#" title=""><?php if(isset($horario[4])) echo html_entity_decode($horario[4]); ?><br><?php if(isset($horario[5])) echo html_entity_decode($horario[5]); ?></a>
+          <a href="#" title=""><?php if(isset($horario[4])): echo $horario[4]; endif; ?><br><?php if(isset($horario[5])): echo $horario[5]; endif; ?></a>
           <span class=""></span>
-          <a href="#" title=""><?php if(isset($horario[6])) echo html_entity_decode($horario[6]); ?><br><?php if(isset($horario[7])) echo html_entity_decode($horario[7]); ?></a>
+          <a href="#" title=""><?php if(isset($horario[6])): echo $horario[6]; endif; ?><br><?php if(isset($horario[7])): echo $horario[7]; endif; ?></a>
         </div>
         
       </li>
        
     </ul>
+     */
+    ?>
+    <ul>
+      <li>
+        <div class="span8">
+          <img class="span6" src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" />
+          <bold><?php echo $d->getTitle() ?></bold>
+          <p><?php echo $d->getHtml() ?></p>
+        </div>
+        <div class="hora span2">
+          <?php if(isset($horario[0])): echo html_entity_decode($horario[0]); endif; ?>
+        </div>
+        <div class="hora span2">
+          <?php if(isset($horario[1])): echo html_entity_decode($horario[1]); endif; ?>
+        </div>
+      </li>
+    </ul>
+    
     <?php endforeach; ?>
   </div>  
    <?php endif; ?>

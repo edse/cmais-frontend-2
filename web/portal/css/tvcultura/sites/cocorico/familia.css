@@ -16,7 +16,7 @@
 #menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
 #menu-familia li a.active,
 #menu-familia li a:hover { color:#6a747d; }
-#menu-familia li .divider { color: #fff; padding: 0 15px; background:none; line-height:40px; width: auto; }
+#menu-familia li .divider { color: #fff; padding: 0 12px; background:none; line-height:40px; width: auto; }
 /* /menu familia */
 
 .breadcrumb .divider,
