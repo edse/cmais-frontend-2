@@ -38,8 +38,8 @@ $assets = $pager->getResults();
   </div>
   <!-- titulo da pagina -->
   <?php
-  foreach($assets as $d):
-    echo $d[0]->getTitle()."<br>";
+  foreach($assets as $k=>$d):
+    echo $d[$k]->getTitle()."<br>";
   endforeach;
   ?>
   <!--row lista-enquetes-->
