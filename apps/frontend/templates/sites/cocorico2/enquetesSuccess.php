@@ -38,7 +38,7 @@ $assets = $pager->getResults();
   </div>
   <!-- titulo da pagina -->
   <?php
-  count($assets);
+  count($assets)."testejefferson;";
   $assets[0]->getTitle().">>>>>>>>>>>>MERDA2<br>";
   ?>
   <!--row lista-enquetes-->
