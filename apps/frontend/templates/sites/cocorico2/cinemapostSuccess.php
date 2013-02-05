@@ -52,19 +52,34 @@
         <h2><?php $tam=45; $str=$asset->getTitle();mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
-      <!-- /titulo post -->     
-      <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-      
-      <!-- google+-->
-      
-       <script type="text/javascript">
-       window.___gcfg = {lang: 'pt-BR'};
-       (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-       })();
-      </script>
+      <!-- /titulo post -->    
+       
+              <!-- face -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=418273974898589";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+        <!-- tweet -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+        <!-- google+-->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'pt-BR'};
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <!-- pinterest -->
+        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
           
           <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       
