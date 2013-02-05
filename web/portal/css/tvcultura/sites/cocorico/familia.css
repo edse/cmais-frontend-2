@@ -201,7 +201,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /*#blocoCarrossel .texto,
 #blocoCarrossel .base-btns*/
 .carousel { background: url(/portal/images/capaPrograma/cocorico/agenda-pattern-bloco.png); border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;}
-#blocoCarrossel .texto { margin:10px; display: block;} 
+#blocoCarrossel .texto { margin:10px; display: block; min-width:594px; } 
 #blocoCarrossel .texto:hover { text-decoration:none; }
 #blocoCarrossel .texto h3{margin-top:2px;}
 #blocoCarrossel .base-btns{position:relative; padding: 30px 0 5px 0; }
