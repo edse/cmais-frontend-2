@@ -32,15 +32,13 @@ $assets = $pager->getResults();
   </ul>
   <!-- /breadcrumb-->
   
-  <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
+  <h2 class="tit-pagina"><?php echo $assets[0]->getTitle() ?></h2>
   
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
     <div class="row-fluid conteudo">    
-      <h2 class="tit-pagina"><?php echo $assets[0]->getTitle() ?></h2>
-      
-      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?><p>
+     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?><p>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
