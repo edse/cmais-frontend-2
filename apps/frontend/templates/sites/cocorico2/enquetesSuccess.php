@@ -77,7 +77,7 @@ $assets = $pager->getResults();
       <?php
         if(count($pager) > 0):
           foreach($pager->getResults() as $d):
-            $d->getTitle()."<br>";
+            $d->getTitle().">>>>>>>>>>>><br>";
           endforeach;
         endif;    
       ?>
