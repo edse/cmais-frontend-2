@@ -53,6 +53,7 @@
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
       <!-- /titulo post -->     
+      <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
       <?php include_partial_from_folder('sites/cocorico', 'global/like', array('site'=>$site)) ?>
       <!-- asset -->
       <div class="row-fuid asset">
