@@ -127,17 +127,17 @@ bold,
 .menu .navbar .nav > li.personagens {  margin:0 20px; background:#eaefb2 url(/portal/images/capaPrograma/cocorico/pontilhado-verde.jpg) repeat-x ; height:60px; width: 48px; }
 .menu .navbar .nav > li.personagens a { background:url(/portal/images/capaPrograma/cocorico/mais-amarelo.png) no-repeat; padding:0; margin:5px 0 0 4px; display:block;  width: 48px; height:50px;border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; border:none; }
 
-.menu .navbar .nav > li.joguinhos .icon { background-position:0 0;} 
+.menu .navbar .nav > li.joguinhos .icon { background-position:0 0; width: 48px; height:41px;} 
 
-.menu .navbar .nav > li.brincadeiras .icon { background-position:0 -38px;} 
+.menu .navbar .nav > li.brincadeiras .icon { background-position:0 -38px; width: 53px; height:40px;} 
 .menu .navbar .nav > li.brincadeiras a { background:url(/portal/images/capaPrograma/cocorico/bg-laranja.jpg) repeat-x;}
 .menu .navbar .nav > li.brincadeiras span { background-position:-10px 0; }
 
-.menu .navbar .nav > li.tvcoco .icon {  background-position:0 -76px;} 
+.menu .navbar .nav > li.tvcoco .icon {  background-position:0 -76px; width:50px; height:40px;} 
 .menu .navbar .nav > li.tvcoco a { background:url(/portal/images/capaPrograma/cocorico/bg-verde.jpg) repeat-x;}
 .menu .navbar .nav > li.tvcoco span { background-position:-20px 0; }
 
-.menu .navbar .nav > li.diario .icon { background-position:0 -115px;} 
+.menu .navbar .nav > li.diario .icon { background-position:0 -115px; width:44px; height:40px;} 
 .menu .navbar .nav > li.diario a {background:url(/portal/images/capaPrograma/cocorico/bg-roxo.jpg) repeat-x;}
 .menu .navbar .nav > li.diario span { background-position:-30px 0; }
 
