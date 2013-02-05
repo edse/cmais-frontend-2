@@ -4,7 +4,7 @@ ul li { list-style:none; }
 .navbar-inner .container { max-width:980px;}
 .tudo { margin-top:44px; max-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
 .carousel { margin-bottom:0; }
-.carousel-control { background:url(/portal/images/capaPrograma/cocorico/setas.png) no-repeat; width: 41px; height:69px; text-indent:-9999px;  border:none;    border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;   line-height: 30px;   opacity: none;    position: absolute;    text-align: center;    top: 40%;   }
+.carousel-control { background:url(/portal/images/capaPrograma/cocorico/setas.png) no-repeat; width: 41px; height:69px; text-indent:-9999px;  border:none;    border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;   line-height: 30px;   opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;    position: absolute;    text-align: center;    top: 40%;   }
 .carousel-control.right { background-position:-41px 0; }
 .row-fluid .divisoria { background:url(/portal/images/capaPrograma/cocorico/divisoria-azul.png) repeat-x; margin:0; padding:0; height:4px; min-height: 4px; }
 .menu .navbar,
@@ -264,7 +264,7 @@ bold,
 /* tooltip*/
 .tooltip-inner { background:#747a3a; padding:3px 10px; font-size: 13px; line-height:15px; }
 .tooltip.in,
-.tooltip { opacity: 1; filter: alpha(opacity=100);}
+.tooltip {  opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
 .tooltip.bottom .tooltip-arrow {  border-bottom-color: #747a3a;}
 /* tooltip*/
 
@@ -312,7 +312,7 @@ bold,
 .destaques a.span12 { *width:265px; }
 /* /IE8*/
 
-.carousel-control { opacity: 1; }
+.carousel-control { opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
 .ico-seta-titulo{background: url(/portal/images/capaPrograma/cocorico/seta-titulo.png) no-repeat; width:19px; height:10px; position:absolute; top:24px;}
 
 .destaques {position:relative; border-radius:10px; text-align:center; display:block; line-height:25px;}
