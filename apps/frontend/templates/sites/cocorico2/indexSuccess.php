@@ -14,7 +14,7 @@
     alert("teste"+$(window).width()+"/"+$('body').width());
   })
 </script>
-
+<div class="row-fluid">
 <!-- container-->
 <div class="container tudo">
   <!-- row carrossel-->
@@ -268,6 +268,7 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+</div>
 <!-- script enquete -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
