@@ -720,7 +720,7 @@ function isDevice(OSName)
                   <div id="dialogaAnchieta" class="window" style="top: 310px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width:20px !important;height:20px !important" alt="Anchieta" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
+                      <img alt="Anchieta" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
                       <h4>Anchieta</h4>
                       <form id="opcoes-anchieta" action="" method="post" style="float: left;">
                         <select id="anchieta" class="required">
