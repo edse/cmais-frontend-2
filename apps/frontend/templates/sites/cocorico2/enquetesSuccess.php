@@ -88,13 +88,14 @@ $assets = $pager->getResults();
           foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
+       * */
       ?>
       
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
-            <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
+            <h4><?php echo $d->getHeadline();?></h4>
+            <h3><?php echo $d->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
