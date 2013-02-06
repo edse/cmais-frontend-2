@@ -39,7 +39,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) { 
   body { background:blue; }
-  .conteudo { margin:0 0 20px 0;}
+  .conteudo { margin:2% 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
   .topo-coco { margin:10px 0; }
   .menu .navbar .nav > li { margin-right:2%; }
