@@ -11,7 +11,7 @@ $assets = Doctrine_Query::create()
   //->limit(1)
   ->execute();
 ?>
-teste >>>>>>>>>>>>
+
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -49,6 +49,30 @@ teste >>>>>>>>>>>>
   </div>
   <!-- titulo da pagina -->
   
+  <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
+      <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
+    
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
@@ -68,38 +92,7 @@ teste >>>>>>>>>>>>
           $results[$k][] = @array("answer"=>$a->Asset->AssetAnswer->getAnswer() , "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
         }
       ?>
-      <?php
-      /*
-      //puxando bloco home
-       $displays_home = array();
-       $blocks = Doctrine_Query::create()
-         ->select('b.*')
-         ->from('Block b, Section s') 
-         ->where('b.section_id = s.id')
-         ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
-         ->andWhere('b.slug = ?', 'enquete') 
-         ->andWhere('s.site_id = ?', $site->id)
-         ->execute();
-      
-        if(count($blocks) > 0):
-          $displays_home['enquete'] = $blocks[0]->retriveDisplays();
-        endif;
-        
-        foreach($displays_home['enquete'] as $k=>$d):
-          
-          $filename = "/var/frontend/web/uploads/assets/question/".$displays_home["enquete"][$k]->Asset->AssetQuestion->id.".txt";
-          $lines = file($filename);
-          $total = count($lines);
-          for($i=$total;$i>=0;$i--){
-            $vote = trim(@end(explode("\t", $lines[$i])));
-            if(intVal($vote)>0){
-              @$votes[$vote] += 1;
-            }
-          }
-          foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
-            $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
-          }*/
-      ?>
+
       
           <!-- item -->
           <li class="item-lista">
@@ -127,19 +120,36 @@ teste >>>>>>>>>>>>
     <!-- /lista -->
   </div>
   <!-- /row lista-enquetes-->
-  <!-- paginacao 
-  <div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a ></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
+  
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
+      <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
