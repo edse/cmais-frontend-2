@@ -84,7 +84,7 @@
           ->andWhere('s.slug = "enquetes"')
           ->andWhere('a.site_id = ?', (int)$site->id)
           ->andWhere('a.asset_type_id = 10')
-          //->orderBy('sa.display_order desc')
+          ->orderBy('sa.display_order desc')
           //->limit(1)
           ->execute();
          //doctrine para respostas
