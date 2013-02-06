@@ -610,14 +610,14 @@ tr:nth-child(odd) {background: #cbabb7}
   top:15% !important;
 }
 
-#dialogBelenzinho, #dialogTiradentes, #dialogSantana,#dialogMarginalPinheiros,#dialogaAnchieta,#dialogMarginalPinheiros2, #dialogPompeia, #dialogRadial{
+#dialogBelenzinho, #dialogTiradentes, #dialogSantana,#dialogMarginalPinheiros,#dialogaAnchieta,#dialogMarginalPinheiros2,#dialogRadial{
   width:456px; 
   height:auto;
   left:251px !important; 
   top:15% !important;
 }
 
-#dialogaAnchieta img,#dialogPompeia img, #dialogRadial img{
+#dialogaAnchieta img, #dialogRadial img{
   width:auto !important; 
   height:300px !important;
   left:251px !important; 
@@ -707,6 +707,7 @@ tr:nth-child(odd) {background: #cbabb7}
 #dialogMarginalPinheiros2,
 #dialogaMarginalTiete,
 #dialogSantana,
+#dialogPompeia,
 #dialogTiradentes{left: 15% !important; width: 733px;top: 5%!important;}
 #dialogaSenna,
 #dialogaImigrantes{width: 719px;height: auto;left: 120px !important;top: 15% !important;}
