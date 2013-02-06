@@ -3,6 +3,7 @@ $assets = Doctrine_Query::create()
   ->orderBy('sa.display_order asc')
   ->execute();
 ?>
+teste >>>>>>>>>>>>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
