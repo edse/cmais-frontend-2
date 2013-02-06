@@ -11,7 +11,7 @@ $assets = Doctrine_Query::create()
   //->limit(1)
   ->execute();
 ?>
-teste final 
+teste final 2 >>>>>>>>>>>>>> 
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
