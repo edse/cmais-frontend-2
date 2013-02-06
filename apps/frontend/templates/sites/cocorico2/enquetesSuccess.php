@@ -1,5 +1,15 @@
 <?php 
-$assets = $pager->getResults();
+$assets = Doctrine_Query::create()
+  ->select('a.*')
+  ->from('Asset a, SectionAsset sa, Section s')
+  ->where('a.id = sa.asset_id')
+  ->andWhere('s.id = sa.section_id')
+  ->andWhere('s.slug = "enquetes"')
+  ->andWhere('a.site_id = ?', (int)$site->id)
+  ->andWhere('a.asset_type_id = 10')
+  ->orderBy('sa.display_order asc')
+  //->limit(1)
+  ->execute();
 ?>
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
