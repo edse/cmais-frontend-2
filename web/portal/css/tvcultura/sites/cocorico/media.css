@@ -56,3 +56,7 @@
   .menu .navbar .nav > li.personagens { margin:0 2%; }
   input.search-query { max-width:80px; width:80px; }
    }
+   
+@media only screen and (device-width: 768px) {
+  .menu .navbar .nav > li { margin-right:0; }
+}
