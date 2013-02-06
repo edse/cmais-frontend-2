@@ -603,7 +603,7 @@ tr:nth-child(odd) {background: #cbabb7}
 }
 
 
-.verde #dialog, .azul #dialoga, #dialogLapa,  #dialogaSenna, #dialogaImigrantes, #dialogaAnhanguera, #dialogaBandeirantes,#dialogaRaposo{
+.verde #dialog, .azul #dialoga, #dialogLapa, #dialogaImigrantes, #dialogaAnhanguera, #dialogaBandeirantes,#dialogaRaposo{
   width:328px; 
   height:auto;
   left:298px !important;
