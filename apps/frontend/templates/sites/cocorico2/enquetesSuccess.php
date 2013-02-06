@@ -54,7 +54,7 @@ $assets = $pager->getResults();
           }
         }
         foreach($d->AssetQuestion->Answers as $a){
-          $results[$k][] = @array("answer"=>$a->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+          $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
         }
       ?>
       <?php
@@ -88,7 +88,6 @@ $assets = $pager->getResults();
           foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
-       * 
       ?>
       
           <!-- item -->
