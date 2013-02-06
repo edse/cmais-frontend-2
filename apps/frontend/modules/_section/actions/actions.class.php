@@ -659,13 +659,6 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra-cocorico')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
 			      }
-            else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("enquetes"))) {
-              $this->assetsQuery = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, SectionAsset sa')
-                ->andWhere('sa.asset_id = a.id')
-                ->orderBy('a.id desc');
-            }
             else if($this->site->getSlug() == "jornaldacultura" && $this->section->getSlug() == "videos") {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
