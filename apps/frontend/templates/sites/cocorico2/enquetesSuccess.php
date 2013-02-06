@@ -93,8 +93,8 @@ $assets = $pager->getResults();
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $d[$k]->getHeadline();?></h4>
-            <h3><?php echo $d[$k]->Asset->AssetQuestion->getQuestion();?></h3>
+            <h4><?php echo $d->getHeadline();?></h4>
+            <h3><?php echo $d->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
