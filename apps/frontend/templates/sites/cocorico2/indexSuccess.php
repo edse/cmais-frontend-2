@@ -9,6 +9,12 @@
 /* tooltip*/
 </style>
 
+<script>
+  $(document).ready(function(){
+    alert($(window).width());
+  })
+</script>
+
 <!-- container-->
 <div class="container tudo">
   <!-- row carrossel-->
