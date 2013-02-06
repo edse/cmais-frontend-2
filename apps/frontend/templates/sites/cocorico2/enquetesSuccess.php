@@ -37,17 +37,28 @@ $assets = $pager->getResults();
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
-  <?php
-  foreach($assets as $k=>$d):
-    echo $d->getTitle()."<br>";
-  endforeach;
-  ?>
+  
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
     <ul class="lista">
-      
       <?php
+      foreach($assets as $k=>$d):
+        $filename = "/var/frontend/web/uploads/assets/question/".$d->AssetQuestion->id.".txt";
+        $lines = file($filename);
+        $total = count($lines);
+        for($i=$total;$i>=0;$i--){
+          $vote = trim(@end(explode("\t", $lines[$i])));
+          if(intVal($vote)>0){
+            @$votes[$vote] += 1;
+          }
+        }
+        foreach($d->AssetQuestion->Answers as $a){
+          $results[$k][] = @array("answer"=>$a->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+        }
+      ?>
+      <?php
+      /*
       //puxando bloco home
        $displays_home = array();
        $blocks = Doctrine_Query::create()
@@ -77,13 +88,14 @@ $assets = $pager->getResults();
           foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
+       * */
       ?>
       
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
-            <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
+            <h4><?php echo $d->getHeadline();?></h4>
+            <h3><?php echo $d->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
