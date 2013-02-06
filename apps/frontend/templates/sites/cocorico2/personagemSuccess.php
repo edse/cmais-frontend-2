@@ -146,7 +146,7 @@
           <div class="capa-btn">
             <span></span>
             <!-- <a id="getimage" class="btn">baixar</a> -->
-            <input type="submit" id="getimage" class="btn">baixar</input>
+            <input type="submit" id="getimage" class="btn" value="baixar"></input>
             <span class="last"></span>
           </div>
         </div>
