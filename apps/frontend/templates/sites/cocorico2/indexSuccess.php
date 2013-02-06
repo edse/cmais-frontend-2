@@ -14,9 +14,9 @@
     alert("teste"+$(window).width()+"/"+$('body').width()+"/"+$(document).width());
   })
 </script>
-<div class="row-fluid">
+
 <!-- container-->
-<div class="container tudo">
+<div class="">
   <!-- row carrossel-->
   <div class="row-fluid">
   	 <?php if(isset($displays['destaque-topo'])): ?>
@@ -268,7 +268,7 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-</div>
+
 <!-- script enquete -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
