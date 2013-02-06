@@ -58,5 +58,6 @@
    }
    
 @media only screen and (device-width: 768px) {
+  body { background:red; }
   .menu .navbar .nav > li { margin-right:0; }
 }
