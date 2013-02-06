@@ -11,7 +11,7 @@
 
 <script>
   $(document).ready(function(){
-    alert("teste"+$(window).width()+"/"+$('body').width());
+    alert("teste"+$(window).width()+"/"+$('body').width()+"/"+$(document).width());
   })
 </script>
 <div class="row-fluid">
