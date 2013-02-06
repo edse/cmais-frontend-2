@@ -54,16 +54,48 @@ $assets = $pager->getResults();
           }
         }
         foreach($d->AssetQuestion->Answers as $a){
-          $results[$k][] = @array("answer"=>$a->getRespostas(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+          $results[$k][] = @array("answer"=>$a->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
         }
       ?>
+      <?php
+      /*
+      //puxando bloco home
+       $displays_home = array();
+       $blocks = Doctrine_Query::create()
+         ->select('b.*')
+         ->from('Block b, Section s') 
+         ->where('b.section_id = s.id')
+         ->andWhere('s.slug = ?', "home")//mudar para home quando for no ar
+         ->andWhere('b.slug = ?', 'enquete') 
+         ->andWhere('s.site_id = ?', $site->id)
+         ->execute();
       
+        if(count($blocks) > 0):
+          $displays_home['enquete'] = $blocks[0]->retriveDisplays();
+        endif;
+        
+        foreach($displays_home['enquete'] as $k=>$d):
+          
+          $filename = "/var/frontend/web/uploads/assets/question/".$displays_home["enquete"][$k]->Asset->AssetQuestion->id.".txt";
+          $lines = file($filename);
+          $total = count($lines);
+          for($i=$total;$i>=0;$i--){
+            $vote = trim(@end(explode("\t", $lines[$i])));
+            if(intVal($vote)>0){
+              @$votes[$vote] += 1;
+            }
+          }
+          foreach($displays_home["enquete"][$k]->Asset->AssetQuestion->Answers as $a){
+            $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+          }
+       * 
+      ?>
       
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $d[$k]->getHeadline();?></h4>
-            <h3><?php echo $d[$k]->AssetQuestion->getQuestion();?></h3>
+            <h4><?php echo $displays_home["enquete"][$k]->getHeadline();?></h4>
+            <h3><?php echo $displays_home["enquete"][$k]->Asset->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
             $valorr0 = intval(floatval($results[$k][0]["votes"]));
