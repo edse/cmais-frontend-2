@@ -1,4 +1,6 @@
-
+<?php
+$assets = $pager->getResults();
+?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
