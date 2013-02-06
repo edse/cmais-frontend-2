@@ -60,7 +60,7 @@
 @media only screen and (device-width: 768px) {
   body { background:red; }
   .menu .navbar .nav > li { margin-right:0; }
-  .menu .navbar .nav > li > a { padding:0 0 0 30px; }
+  .menu .navbar .nav > li > a { padding:0 0 0 0px; font-size:14px; }
   .menu .navbar .nav > li.familia { margin-right:0; }
   .menu .navbar .nav > li.personagens { margin:0; }
 }
