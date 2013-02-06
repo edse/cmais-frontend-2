@@ -44,7 +44,7 @@ $assets = $pager->getResults();
     <ul class="lista">
       <?php
       foreach($assets as $k=>$d):
-        $filename = "/var/frontend/web/uploads/assets/question/".$d->Asset->AssetQuestion->id.".txt";
+        $filename = "/var/frontend/web/uploads/assets/question/".$d->AssetQuestion->id.".txt";
         $lines = file($filename);
         $total = count($lines);
         for($i=$total;$i>=0;$i--){
