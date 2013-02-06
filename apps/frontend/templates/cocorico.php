@@ -2,7 +2,7 @@
 <html lang="en">
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
