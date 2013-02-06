@@ -80,6 +80,6 @@
   .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
   .menu .navbar .nav > li.familia { margin-right:0; }
   .menu .navbar .nav > li.personagens { margin:0 5px 0 0; }
-  .box .tit a { padding:0 0 0 10% !important; width:auto; float:left }
+  .box .tit a { padding:0 0 0 15% !important; width:auto; float:left }
   .box .tit span { float: left; }
 }
