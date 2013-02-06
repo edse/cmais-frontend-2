@@ -16,7 +16,7 @@
 </script>
 
 <!-- container-->
-<div class="">
+<div class="container tudo">
   <!-- row carrossel-->
   <div class="row-fluid">
   	 <?php if(isset($displays['destaque-topo'])): ?>
