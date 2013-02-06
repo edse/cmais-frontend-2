@@ -20,7 +20,7 @@ function isDevice(OSName)
     window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
   }
 </script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=0000" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <style>
 .azul .window { background-color: #6AACD2; }
 .verde .window { background-color: #136F13; }
@@ -54,7 +54,6 @@ function isDevice(OSName)
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <div class="fundo-topo"></div>
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>"> 
@@ -308,15 +307,15 @@ function isDevice(OSName)
                 
                 $('.btn-cameras-ao-vivo').click(function(){
                   $('.conteudo-mapa-sao-paulo').hide();
-                  //$('.conteudo-portal-de-videos').hide();
-                  $('.conteudo-camera-ao-vivo, .cont-direita').fadeIn('slow');
+                  $('.conteudo-portal-de-videos').hide();
+                  $('.conteudo-camera-ao-vivo').fadeIn('slow');
                   $('.btn-mapa-sao-paulo, .btn-portal-de-videos').removeClass('ativo');
                   $(this).addClass('ativo');
                 }); 
                 
                 $('.btn-mapa-sao-paulo').click(function(){
-                  $('.conteudo-camera-ao-vivo, .cont-direita').hide();
-                  //$('.conteudo-portal-de-videos').hide();
+                  $('.conteudo-camera-ao-vivo').hide();
+                  $('.conteudo-portal-de-videos').hide();
                   $('.conteudo-mapa-sao-paulo').fadeIn('slow');
                   $('.btn-cameras-ao-vivo, .btn-portal-de-videos').removeClass('ativo');
                   $(this).addClass('ativo');
@@ -325,7 +324,7 @@ function isDevice(OSName)
                 $('.btn-portal-de-videos').click(function(){
                   $('.conteudo-camera-ao-vivo').hide();
                   $('.conteudo-mapa-sao-paulo').hide();
-                  //$('.conteudo-portal-de-videos').fadeIn('slow');
+                  $('.conteudo-portal-de-videos').fadeIn('slow');
                   $('.btn-cameras-ao-vivo, .btn-mapa-sao-paulo').removeClass('ativo');
                   $(this).addClass('ativo');
                 });
@@ -367,43 +366,14 @@ function isDevice(OSName)
                   </ul>
                   
                   <!--CONTEUDOS -->
-                  <ul class="conteudos" >
+                  <ul class="conteudos" style="height: 730px;">
 
                      <!--CAMERA AO VIVO-->
                      <li class="conteudo-camera-ao-vivo" >
                        
                        <!--Mapa-->
-                       <div class="container-camera">
-                         
-                       <div class="conteudo-camera-ao-vivo"> 
-                          
                        <div id="rodovias">
-                          
-                          <!--facebook--> 
-                          <div class="cont-direita">
-                            <script>
-                              function updateTweets(){
-                                $.ajax({
-                                  url: "/index.php/ajax/tweetmonitor",
-                                  data: "monitor_id=11",
-                                  success: function(data) {
-                                    $('#twitter').html(data);
-                                  }
-                                });
-                              }
-                              $(function(){ //onready
-                                updateTweets();
-                                var t=setTimeout("updateTweets()",10000);
-                              });
-                            </script>  
-                            <!-- BOX TWITTER -->
-                            
-                              <div id="twitter"></div>
-                           
-                            <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
-                            <!-- /BOX TWITTER -->   
-                          </div>
-                          <!--/facebook-->  
+                         
                           <div id="legendas-ruas"></div>
                           
                           <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
@@ -446,16 +416,16 @@ function isDevice(OSName)
                               <!--/cameras mapa-->
                            <div id="cameras">
                              <!-- <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Viaduto Nossa Senhora da Lapa"></a> -->
-                             <!--a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Marginal Tietê"></a-->
+                             <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Marginal Tietê"></a>
                              <!--a href="#dialog" name="modal" id="camera02" class="fundo pos02" title="Avenida Sumare/ Dr Arnaldo"></a-->
-                             <!--a href="#dialogBelenzinho" name="modal" id="camera03" class="fundo pos03" title="Radial Leste X Salim Farah Maluf"></a-->
-                             <!--a href="#dialogRadial" name="modal" id="camera04" class="fundo pos04" title="Radial Leste"></a-->
-                             <!--a href="#dialogTiradentes" name="modal" id="camera05" class="fundo pos05" title="Avenida Tiradentes"></a-->
+                             <a href="#dialogBelenzinho" name="modal" id="camera03" class="fundo pos03" title="Radial Leste X Salim Farah Maluf"></a>
+                             <a href="#dialogRadial" name="modal" id="camera04" class="fundo pos04" title="Radial Leste"></a>
+                             <a href="#dialogTiradentes" name="modal" id="camera05" class="fundo pos05" title="Avenida Tiradentes"></a>
                              <!--a href="#dialog" name="modal" id="camera06" class="fundo pos06" title="Rubem Beta / 23 de Maio"></a-->
                              <!--a href="#dialog" name="modal" id="camera07" class="fundo pos07" title="Bandeirantes"></a-->
-                             <!--a href="#dialogMarginalPinheiros" name="modal" id="camera08" class="fundo pos08" title="Marginal Pinheiros - Jockey Club"></a-->
-                             <!--a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a-->
-                             <!--a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a-->
+                             <a href="#dialogMarginalPinheiros" name="modal" id="camera08" class="fundo pos08" title="Marginal Pinheiros - Jockey Club"></a>
+                             <a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a>
+                             <a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a>
                              
                              <a href="#dialogaSenna" name="modal" id="camera11" class="fundo pos11" title="Ayrton Senna"></a>
                              <a href="#dialogaImigrantes" name="modal" id="camera12" class="fundo pos12" title="Imigrantes"></a>
@@ -464,7 +434,7 @@ function isDevice(OSName)
                              <a href="#dialogaAnhanguera" name="modal" id="camera15" class="fundo pos15" title="Anhanguera"></a>
                              <a href="#dialogaBandeirantes" name="modal" id="camera16" class="fundo pos16" title="Bandeirantes"></a>
                              <a href="#dialogaRaposo" name="modal" id="camera17" class="fundo pos17" title="Raposo Tavares"></a>
-                             <!--a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></>
+                             <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
                            </div>
                            <!--/cameras mapa-->
                            <!--MODAIS-->
@@ -904,17 +874,13 @@ function isDevice(OSName)
                       
                     </div>
                   </div>
-                  <!--facebook-->
                   
                   <!-- Máscara para cobrir a tela -->
                     <div id="mask"></div>
                  
                  </div>
-                 
                            <!--/MODAl CAMERA Corre-->                          <!--/MODAIS--> 
                           
-                       </div>
-                       </div>
                        </div>
                        <!--Mapa-->
                        
@@ -924,25 +890,22 @@ function isDevice(OSName)
                      
                      <!--MAPA SAO PAULO-->
                      <li class="conteudo-mapa-sao-paulo" style="display:block">
-                       <iframe width="970" height="880" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 0px solid gray; width: 964px;height:880px;"></iframe>
+                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 0px solid gray; width: 964px;"></iframe>
                      </li>
                      <!--MAPA SAO PAULO--> 
-                     
 
                   </ul>
-                  <!--CONTEUDOS --> 
-                  
-                       
+                  <!--CONTEUDOS -->         
               </div>
               <!-- MENU E OPÇÕES--> 
             
               <!-- BOX PUBLICIDADE 2 -->
-              <!--div class="box-publicidade pub-grd grid3"-->
+              <div class="box-publicidade pub-grd grid3">
                 <!-- cmais-assets-728x90 -->
-                <!--script type='text/javascript'>
+                <script type='text/javascript'>
                 GA_googleFillSlot("cmais-assets-728x90");
-                </script-->
-              <!--/div-->
+                </script>
+              </div>
               <!-- / BOX PUBLICIDADE 2 -->
 
             </div>

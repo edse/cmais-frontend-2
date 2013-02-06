@@ -445,26 +445,27 @@ function isDevice(OSName)
                               
                               <!--/cameras mapa-->
                            <div id="cameras">
-                             <!-- <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Viaduto Nossa Senhora da Lapa"></a> -->
-                             <!--a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Marginal Tietê"></a-->
-                             <!--a href="#dialog" name="modal" id="camera02" class="fundo pos02" title="Avenida Sumare/ Dr Arnaldo"></a-->
-                             <!--a href="#dialogBelenzinho" name="modal" id="camera03" class="fundo pos03" title="Radial Leste X Salim Farah Maluf"></a-->
-                             <!--a href="#dialogRadial" name="modal" id="camera04" class="fundo pos04" title="Radial Leste"></a-->
-                             <!--a href="#dialogTiradentes" name="modal" id="camera05" class="fundo pos05" title="Avenida Tiradentes"></a-->
-                             <!--a href="#dialog" name="modal" id="camera06" class="fundo pos06" title="Rubem Beta / 23 de Maio"></a-->
-                             <!--a href="#dialog" name="modal" id="camera07" class="fundo pos07" title="Bandeirantes"></a-->
-                             <!--a href="#dialogMarginalPinheiros" name="modal" id="camera08" class="fundo pos08" title="Marginal Pinheiros - Jockey Club"></a-->
-                             <!--a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a-->
-                             <!--a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a-->
+                             <!-- <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Viaduto Nossa Senhora da Lapa"></a>-->
+                             <!-- <a href="#dialog" name="modal" id="camera02" class="fundo pos02" title="Avenida Sumare/ Dr Arnaldo"></a>-->
+                             <a href="#dialogBelenzinho" name="modal" id="camera03" class="fundo pos03" title="Radial Leste X Salim Farah Maluf"></a>
+                             <!-- <a href="#dialogRadial" name="modal" id="camera04" class="fundo pos04" title="Radial Leste"></a>-->
+                             <a href="#dialogTiradentes" name="modal" id="camera05" class="fundo pos05" title="Avenida Tiradentes"></a>
+                             
+                             <!--<a href="#dialog" name="modal" id="camera07" class="fundo pos07" title="Bandeirantes"></a>-->
+                             <a href="#dialogMarginalPinheiros" name="modal" id="camera08" class="fundo pos08" title="Marginal Pinheiros - Jockey Club"></a>
+                             <a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a>
+                             <a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a>
                              
                              <a href="#dialogaSenna" name="modal" id="camera11" class="fundo pos11" title="Ayrton Senna"></a>
                              <a href="#dialogaImigrantes" name="modal" id="camera12" class="fundo pos12" title="Imigrantes"></a>
                              <a href="#dialogaAnchieta" name="modal" id="camera13" class="fundo pos13" title="Anchieta"></a>
-                             <!-- <a href="#dialogaMarginalTiete" name="modal" id="camera14" class="fundo pos14" title="Marginal Tietê"></a> -->
-                             <a href="#dialogaAnhanguera" name="modal" id="camera15" class="fundo pos15" title="Anhanguera"></a>
-                             <a href="#dialogaBandeirantes" name="modal" id="camera16" class="fundo pos16" title="Bandeirantes"></a>
+                             <a href="#dialogaMarginalTiete" name="modal" id="camera14" class="fundo pos14" title="Marginal Tietê"></a> 
+                             <!-- <a href="#dialogaAnhanguera" name="modal" id="camera15" class="fundo pos15" title="Anhanguera"></a>-->
+                             <!--<a href="#dialogaBandeirantes" name="modal" id="camera16" class="fundo pos16" title="Bandeirantes"></a>-->
                              <a href="#dialogaRaposo" name="modal" id="camera17" class="fundo pos17" title="Raposo Tavares"></a>
-                             <!--a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></>
+                             <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
+                             <a href="#dialogAricanduva" name="modal" id="camera19" class="fundo pos19" title="Aricanduva"></a>
+                             <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
                            </div>
                            <!--/cameras mapa-->
                            <!--MODAIS-->
@@ -516,8 +517,7 @@ function isDevice(OSName)
                   <div id="dialogLapa" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <embed id="mpl" width="310" height="240" flashvars="controlbar=over&autostart=true&streamer=rtmp://200.136.27.12/live&file=camera&type=video" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" name="mpl" style="undefined" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" type="application/x-shockwave-flash">
-                      <h4>Marginal Tietê</h4>  
+                        
                       <p></p>
                     </div>
                   </div>
@@ -531,7 +531,7 @@ function isDevice(OSName)
                   <div id="dialogTiradentes" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_tiradentes.php" alt="Avenida Tiradentes">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=tiradentes" alt="Avenida Tiradentes">
                       <h4>Avenida Tiradentes</h4>  
                       <p></p>
                     </div>
@@ -540,13 +540,44 @@ function isDevice(OSName)
                   <div id="mask"></div>
                  </div>
                  <!--/MODAl CAMERA verde-->
+                 
+                 <!--MODAl CAMERA verde-->
+                <div class="verde">
+                  <div id="dialogFreguesia" class="window">
+                    <a href="#" class="close"></a><br />
+                    <div class="textoModal">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=freguesia" alt="Freguesia do Ó">
+                      <h4>Freguesia do Ó</h4>  
+                      <p></p>
+                    </div>
+                  </div>
+                  <!-- Máscara para cobrir a tela -->
+                  <div id="mask"></div>
+                 </div>
+                 <!--/MODAl CAMERA verde-->
+                 
+                  <!--MODAl CAMERA verde-->
+                <div class="verde">
+                  <div id="dialogAricanduva" class="window">
+                    <a href="#" class="close"></a><br />
+                    <div class="textoModal">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=aricanduva" alt="Aricanduva">
+                      <h4>Aricanduva</h4>  
+                      <p></p>
+                    </div>
+                  </div>
+                  <!-- Máscara para cobrir a tela -->
+                  <div id="mask"></div>
+                 </div>
+                 <!--/MODAl CAMERA verde-->
+                
 
                 <!--MODAl CAMERA verde-->
                 <div class="verde">
                   <div id="dialogMarginalPinheiros" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_pinheironeto.php" alt="Marginal Pinheiros - Jockey Club">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=mpinheiros" alt="Marginal Pinheiros - Jockey Club">
                       <h4>Marginal Pinheiros - Jockey Club</h4>
                       <p></p>
                     </div>
@@ -576,7 +607,7 @@ function isDevice(OSName)
                   <div id="dialogPompeia" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_pompeia.php" alt="Avenida Pompéia">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=pompeia" alt="Avenida Pompéia">
                       <h4>Avenida Pompéia</h4>
                       <p></p>
                     </div>
@@ -591,7 +622,7 @@ function isDevice(OSName)
                   <div id="dialogMarginalPinheiros2" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_somar.php" alt="Marginal Pinheiros - Est. Pinheiros">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=somar" alt="Marginal Pinheiros - Est. Pinheiros">
                       <h4>Marginal Pinheiros - Est. Pinheiros</h4>
                       <p></p>
                     </div>
@@ -603,10 +634,10 @@ function isDevice(OSName)
                  
                 <!--MODAl CAMERA verde-->
                 <div class="verde">
-                  <div id="dialogMarginalTiete" class="window">
+                  <div id="dialogaMarginalTiete" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <?php echo $imgMarginalTiete; ?>
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=mtiete" alt="Marginal Tietê">
                       <h4>Marginal Tietê</h4>
                       <p></p>
                     </div>
@@ -621,7 +652,7 @@ function isDevice(OSName)
                   <div id="dialogBelenzinho" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_belenzinho.php" alt="Belenzinho">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=belenzinho" alt="Belenzinho">
                       <h4>Radial Leste X Salim Farah Maluf</h4>  
                       <p></p>
                     </div>
@@ -636,7 +667,7 @@ function isDevice(OSName)
                   <div id="dialogSantana" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_santana.php"  alt="SESC Santana">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=santana"  alt="SESC Santana">
                       <h4>Avenida Dummont Villares</h4>  
                       <p></p>
                     </div>
@@ -651,7 +682,7 @@ function isDevice(OSName)
                   <div id="dialogaSenna" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Ayrton Senna" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-ayrtonsenna">
+                      <img  alt="Ayrton Senna" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-ayrtonsenna">
                       <h4>Ayrton Senna</h4>
                       <form id="opcoes-ayrton-senna" action="" method="post" style="float: left;">
                         <select id="ayrton-senna" class="required">
@@ -670,7 +701,7 @@ function isDevice(OSName)
                   <div id="dialogaImigrantes" class="window" style="top: 195px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Imigrantes" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-imigrantes">
+                      <img alt="Imigrantes" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-imigrantes">
                       <h4>Imigrantes</h4>
                       <form id="opcoes-imigrantes" action="" method="post" style="float: left;">
                         <select id="imigrantes" class="required">
@@ -689,13 +720,12 @@ function isDevice(OSName)
                   <div id="dialogaAnchieta" class="window" style="top: 310px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Anchieta" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
+                      <img alt="Anchieta" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
                       <h4>Anchieta</h4>
                       <form id="opcoes-anchieta" action="" method="post" style="float: left;">
                         <select id="anchieta" class="required">
                         </select>
                       </form> 
-                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
                     </div>
                   </div>
                   <!-- Máscara para cobrir a tela -->

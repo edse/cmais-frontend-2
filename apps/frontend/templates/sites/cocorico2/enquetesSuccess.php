@@ -37,7 +37,11 @@ $assets = $pager->getResults();
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
-  
+  <?php
+  foreach($assets as $k=>$d):
+    echo $d->getTitle()."<br>";
+  endforeach;
+  ?>
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
@@ -74,9 +78,7 @@ $assets = $pager->getResults();
             $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
           }
       ?>
-      <?php
-      $assets[0]->getTitle().">>>>>>>>>>>>teste<br>";
-      ?>
+      
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>

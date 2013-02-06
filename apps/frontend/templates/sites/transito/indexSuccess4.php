@@ -15,7 +15,7 @@ function isDevice(OSName)
       return false;
   }
   
-  if (isDevice('iphone') || isDevice('ipod') || isDevice('Android'))
+  if (isDevice('iphone') || isDevice('ipod') || isDevice('android'))
   {
     window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
   }
@@ -114,18 +114,18 @@ function isDevice(OSName)
                 <p>CÂMERAS DE SÃO PAULO</p>
                 <form id="opcoes-livestream" action="" method="post">
                   <select id="opcao-livestream-1" class="required">
-                    <option value="6">Av. Dummont Villares</option>
-                    <option value="8">Av. Pompéia</option>
+                    <option value="8" selected="selected">Av. Pompéia</option>
                     <option value="3">Av. Tiradentes</option> 
                     <option value="5">Marginal Pinheiros - Estação Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
-                    <option value="1" selected="selected">Marginal Tietê</option>
+                    <option value="1">Marginal Tietê</option>
                     <option value="2">Radial Leste X Salim Farah Maluf</option>
                     <option value="7">Radial Leste - Metrô Tatuapé</option>
+                    <option value="6">Santana</option>
                   </select> 
                 </form>
 
-                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
+                <div id="livestream"><img src="http://200.136.27.15/cameras/img_pompeia.php"  style="width: 310px; height: 240px;" alt="Av. Pompéia"></div>
                 
                 <script>
                     $(document).ready(function() {
@@ -261,7 +261,7 @@ function isDevice(OSName)
               function interior(){
                 var ayrtonsenna = 0;
                 $.ajax({
-                  url: "/portal/cams.php?fpa=1&s=ecopistas",
+                  url: "/portal/cams.php?s=ecopistas",
                   dataType: "json",
                   success: function(data){
                     $.each(data, function(i,data){
@@ -366,15 +366,15 @@ function isDevice(OSName)
                         <a href="#telas" title="Mapa de São Paulo" class="m_mapa_sao_paulo btn-menu">Mapa de São Paulo</a>
                         <span class="decoracao"></span>
                       </li>
-                      <!--li class="btn-portal-de-videos  btn-li ">
+                      <li class="btn-portal-de-videos  btn-li ">
                         <a href="#telas" title="Portal de vídeo" class="m_portal_de_video btn-menu">Portal de vídeo</a>
                         <span class="decoracao"></span>
-                      </li-->
+                      </li>
                   </ul>
                   
                   <!--CONTEUDOS -->
                   <ul class="conteudos" style="height: 730px;">
-
+                    
                      <!--CAMERA AO VIVO-->
                      <li class="conteudo-camera-ao-vivo" >
                        
@@ -383,7 +383,7 @@ function isDevice(OSName)
                          
                           <div id="legendas-ruas"></div>
                           
-                          <!-- <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div> -->
+                          <div style="display: block;z-index: 1000;color: black;position: absolute;top: 5px;left: 640px;">Fonte: CET</div>
                           
                           <!--topo mapa-->
                           <div class="topo-mapa">
@@ -614,7 +614,7 @@ function isDevice(OSName)
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
                       <img src="http://200.136.27.15/cameras/img_santana.php"  alt="SESC Santana">
-                      <h4>Avenida Dummont Villares</h4>  
+                      <h4>Santana</h4>  
                       <p></p>
                     </div>
                   </div>
@@ -746,6 +746,7 @@ function isDevice(OSName)
                 </div> 
                 <!--/MODAl CAMERA azul-->
 
+                <?php /*
                 <!--MODAl CAMERA Eixo-->
                 <div id="eixo">
                   <div id="dialogEixo" class="window">
@@ -842,6 +843,7 @@ function isDevice(OSName)
                  
                  </div>
                            <!--/MODAl CAMERA Eixo-->
+                  */ ?>                         
                 
                 <!--MODAl CAMERA corre-->
                 <div id="corre">
@@ -893,14 +895,72 @@ function isDevice(OSName)
                        
                        
                      </li>
-                     <!--CAMERA AO VIVO-->
+                     <!--CAMERA AO VIVO--> 
                      
                      <!--MAPA SAO PAULO-->
-                     <li class="conteudo-mapa-sao-paulo" style="display:block">
-                       <iframe width="970" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maplink.com.br/transitoonline/tvcultura_2" style="border: 0px solid gray; width: 964px;"></iframe>
+                     <li class="conteudo-mapa-sao-paulo" style="display:none">
+                        <iframe width="970" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=d&amp;source=s_d&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=d&amp;source=embed&amp;saddr=S%C3%A3o+Paulo&amp;daddr=S%C3%A3o+Paulo&amp;hl=pt-BR&amp;geocode=FfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw%3BFfGrmP4dHlk4_SnRYaSDgUTOlDGuWzP_CEupmw&amp;aq=&amp;sll=-14.239424,-53.186502&amp;sspn=56.185679,93.076172&amp;mra=ls&amp;ie=UTF8&amp;ll=-23.54894,-46.63882&amp;spn=0,0&amp;t=m" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
                      </li>
                      <!--MAPA SAO PAULO--> 
-
+                     
+                     <!--PORTAL DE VIDEOS-->
+                     <li class="conteudo-portal-de-videos" style="display:none">
+                     <!--
+                      <a name="ytd" />
+                      -->
+                      <!-- Youtube Direct embed - start --> 
+                      <!--
+                      <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
+                      <script type="text/javascript">
+                      var ytdInitFunction = function() {
+                        var ytd = new Ytd();
+                        ytd.setAssignmentId("1001");
+                        ytd.setCallToAction("callToActionId-1001");
+                        var containerWidth = 350;
+                        var containerHeight = 550;
+                        ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+                        ytd.ready();
+                      };
+                      if (window.addEventListener) {
+                        window.addEventListener("load", ytdInitFunction, false);
+                      } else if (window.attachEvent) {
+                        window.attachEvent("onload", ytdInitFunction);
+                      }
+                      </script>
+                      <a id="callToActionId-1001" href="javascript:void(0);"><img src="https://cmais-tvcultura.appspot.com/images/calltoaction.png"></a>
+                      <div id="ytdContainer-1001"></div>
+                      -->
+                      <!-- Youtube Direct embed - end --> 
+                      <a name="ytd" />
+                      <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
+                      <script type="text/javascript">
+                      var ytdInitFunction = function() {
+                        var ytd = new Ytd();
+                        ytd.setAssignmentId("1001");
+                        ytd.setCallToAction("callToActionId-1001");
+                        var containerWidth = 350;
+                        var containerHeight = 550;
+                        ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+                        ytd.ready();
+                      };
+                      if (window.addEventListener) {
+                        window.addEventListener("load", ytdInitFunction, false);
+                      } else if (window.attachEvent) {
+                        window.attachEvent("onload", ytdInitFunction);
+                      }
+                      </script>
+                      <div class="youtube">
+                      	<a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
+                      	<div id="ytdContainer-1001"></div>
+                      	
+                      </div>
+                      <div class="participe">
+                      	<div class="img-enviar"></div>
+                      	<a href="#" class="titulos">Participe! Envie seu vídeo.</a>
+                      	<!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
+                      </div>
+                     </li>
+                     <!--PORTAL DE VIDEOS-->      
                   </ul>
                   <!--CONTEUDOS -->         
               </div>

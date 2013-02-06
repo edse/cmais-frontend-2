@@ -32,7 +32,7 @@ $assets = $pager->getResults();
   </ul>
   <!-- /breadcrumb-->
   
-  <h2 class="tit-pagina"><?php echo $assets[0]->getTitle() ?></h2>
+  <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
   <?php if(count($pager) > 0): ?>
 

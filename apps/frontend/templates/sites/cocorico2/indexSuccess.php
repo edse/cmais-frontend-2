@@ -9,6 +9,12 @@
 /* tooltip*/
 </style>
 
+<script>
+  $(document).ready(function(){
+    alert("teste"+$(window).width()+"/"+$('body').width());
+  })
+</script>
+
 <!-- container-->
 <div class="container tudo">
   <!-- row carrossel-->
@@ -262,6 +268,7 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+
 <!-- script enquete -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
