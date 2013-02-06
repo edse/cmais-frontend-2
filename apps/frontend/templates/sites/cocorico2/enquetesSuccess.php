@@ -1,3 +1,5 @@
+
+
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript">
   $(document).ready(function() {
@@ -82,19 +84,33 @@
     <!-- /lista -->
   </div>
   <!-- /row lista-enquetes-->
-  <!-- paginacao -->
-  <div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a ></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
+   <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
