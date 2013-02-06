@@ -662,7 +662,7 @@ class _sectionActions extends sfActions
             else if($this->site->getSlug() == "jornaldacultura" && $this->section->getSlug() == "videos") {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
-                ->from('Asset a, AssetVideo av')
+                ->from('Asset a, AssetVideo av, SectionAsset sa')
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
                 ->andWhere('av.asset_id = a.id')
