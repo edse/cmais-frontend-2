@@ -60,6 +60,23 @@
    
 @media (max-width: 768px)  {
    body { background:red; }
+   .conteudo { margin:2% 0;}
+  .topo-coco h1 { margin:0 1% 0 0 ; }
+  .topo-coco { margin:10px 0; }
+  .menu .lista-personagens li { margin-left:3%; }
+  .menu .navbar .nav > li { margin-right:2%; }
+  .rodape .span2 { margin-left:1%;}
+  .voltar .divisao { min-width:790px; }
+  #videos {margin:0 !important; }
+  .menu.listao .lista-personagens li { margin-right:2%; }
+  #slideTvCocorico li { margin: 0 0 1.2% 1.2% !important; }
+  .carousel,
+  #menu-familia { background:#e1edec !important;  opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
+  .relacionados .destaques-small {background: #fff;}
+  #menu-familia li .divider { padding:0 6px !important; }
+  .menu .navbar .nav > li.personagens { margin:0 2%; }
+  input.search-query { max-width:80px; width:80px; }
+     
   .menu .navbar .nav > li { float:left; }
   .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
   .menu .navbar .nav > li { margin-right:0; float:left; }
