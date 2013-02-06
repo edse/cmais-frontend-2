@@ -54,5 +54,5 @@
   .relacionados .destaques-small {background: #fff;}
   #menu-familia li .divider { padding:0 6px !important; }
   .menu .navbar .nav > li.personagens { margin:0 2%; }
-  input.search-query { max-width:80px; }
+  input.search-query { max-width:50px; }
    }
