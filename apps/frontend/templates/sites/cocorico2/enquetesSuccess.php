@@ -37,17 +37,28 @@ $assets = $pager->getResults();
     <h2><?php echo $section->getTitle(); ?></h2>
   </div>
   <!-- titulo da pagina -->
-  <?php
-  foreach($assets as $k=>$d):
-    echo $d->getTitle()."<br>";
-  endforeach;
-  ?>
+  
   <!--row lista-enquetes-->
   <div id="lista-enquetes" class="row-fluid conteudo destaques">
     <!-- lista -->
     <ul class="lista">
-      
       <?php
+      foreach($assets as $k=>$d):
+        $filename = "/var/frontend/web/uploads/assets/question/".$d->Asset->AssetQuestion->id.".txt";
+        $lines = file($filename);
+        $total = count($lines);
+        for($i=$total;$i>=0;$i--){
+          $vote = trim(@end(explode("\t", $lines[$i])));
+          if(intVal($vote)>0){
+            @$votes[$vote] += 1;
+          }
+        }
+        foreach($d->Asset->AssetQuestion->Answers as $a){
+          $results[$k][] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+        }
+      ?>
+      <?php
+      /*
       //puxando bloco home
        $displays_home = array();
        $blocks = Doctrine_Query::create()
