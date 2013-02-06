@@ -11,7 +11,7 @@
 
 <script>
   $(document).ready(function(){
-    alert("teste"+$(window).width());
+    alert("teste"+$(window).width()+"/"+$('body').width());
   })
 </script>
 
