@@ -37,7 +37,7 @@
 }
 */
 
-@media (min-width: 768px) and (max-width: 1024px) { 
+@media (max-width: 1024px) { 
   body { background:blue; }
   .conteudo { margin:2% 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
@@ -55,16 +55,16 @@
   #menu-familia li .divider { padding:0 6px !important; }
   .menu .navbar .nav > li.personagens { margin:0 2%; }
   input.search-query { max-width:80px; width:80px; }
-  .menu .navbar .nav > li { float:left; }
-  .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
+  
    }
    
-@media only screen and (device-width: 768px) {
-  /*
-  body { background:red; }
+@media (max-width: 768px)  {
+   body { background:red; }
+  .menu .navbar .nav > li { float:left; }
+  .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
   .menu .navbar .nav > li { margin-right:0; float:left; }
   .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
   .menu .navbar .nav > li.familia { margin-right:0; }
   .menu .navbar .nav > li.personagens { margin:0; }
-*/
+
 }
