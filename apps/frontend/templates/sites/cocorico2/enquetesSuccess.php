@@ -54,7 +54,7 @@ $assets = $pager->getResults();
           }
         }
         foreach($d->AssetQuestion->Answers as $a){
-          $results[$k][] = @array("answer"=>$a->getAswer(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+          $results[$k][] = @array("answer"=>$a->getRespostas(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
         }
       ?>
       
