@@ -85,7 +85,7 @@
           ->andWhere('a.site_id = ?', (int)$site->id)
           ->andWhere('a.asset_type_id = 10')
           //->orderBy('a.id desc')
-          ->limit(1)
+          //->limit(1)
           ->execute();
          //doctrine para respostas
           $respostas = Doctrine_Query::create()

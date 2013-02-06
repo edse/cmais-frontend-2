@@ -13,7 +13,10 @@
 .textoVerde select{width:310px;}
 .textoAzul select{width:290px;}
 /* estruturas */
-
+/*portal*/
+#videoApre{width:420px;float:left;}
+#youtube{width:420px; overflow: hidden; height:auto; float:right;}
+/*portal*/
 /*TOPO GUIA*/
 
 .box-transito .textoVerde form, .box-transito .textoAzul form{
@@ -38,9 +41,11 @@
 .box-transito .box-publicidade{
   margin-top:36px;
 }
+#barra-site .topo-programa .fundo-topo{position:absolute;top:-10px;right:0px;width:484px; height:145px;background: url(/portal/images/capaPrograma/transito/fundo-topo.png) no-repeat 0 0}
+#barra-site .redes {width: 470px !important;}
 #barra-site .topo-programa {
     min-height: 100px !important;
-    width: 928px !important;
+    width: 928px !important; 
 }
 
 #barra-site .redes {
@@ -94,37 +99,64 @@
 
 .abas li .decoracao {
     left: 48% !important;
+}    
+/* TWITTER */
+#twitter {border:1px solid #666}
+#twitter .topo-fb { background-color:#666; overflow:hidden; padding:10px; text-align:left;}
+#twitter .avatar { margin-right:10px; float:left; }
+#twitter .topo-fb img { width:31px; margin-bottom:0; }
+#twitter .topo-fb h3 {font-size:11px; color:#fff; margin:0;}
+#twitter .topo-fb h4 a {font-size:14px; color:#fff; font-weight:bold;}
+#twitter ul {background:#fff; height:360px; overflow:hidden; overflow-y: scroll;}
+#twitter ul img {width:30px;}
+#twitter ul li {border-bottom:1px dotted #ddd; padding-top:5px; text-align:left; overflow:hidden; margin-top:0; padding-bottom:0;}
+#twitter ul .avatar {margin: 10px;}
+#twitter ul li a { color:#ff6633;}
+#twitter ul li a,
+#twitter ul li p {font-size:12px; line-height:16px; margin-bottom:5px;/*margin-left:50px; padding-right:20px;*/}
+#twitter ul li p {width:290px;}
+#twitter ul li:last-child {border:none; margin-bottom:10px;}
+#twitter .respiro {background:#ffffff; height:20px; display:none;}
+#twitter ul em a {margin:0; padding:0;}
+/* /TWITTER */
     /*background: url(/portal/images/capaPrograma/transito/setinha-decoracao.png);*/
-}
 
-.mapa-sao-paulo .conteudos li{
-  position:relative;
-  margin-top:20px;
-  width: 972px;
-  height:100%;
-}
 
+.mapa-sao-paulo .conteudos #mapa-sp-legenda li{
+  position:absolute;
+  margin-top:5px;
+  width: 640px;
+  height:880px;
+}
 .conteudo-camera-ao-vivo{
   height: 1344px !important;
   width: 970px;
   background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo.png) no-repeat 0 0;
 }
+
+.container-camera{
+  background: #FFF;
+  width: 970px;
+  height: 880px;
+}
 .conteudo-portal-de-videos{
     background: #F2F2F2;
     min-height: 200px;
     padding: 20px;
+    overflow:hidden;
 }
 
 #rodovias{
-  width:100%;
+  width:640px;
   height:100%;
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-rodovias.png) no-repeat 0 0;
+  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-rodovias.png) no-repeat -100px -72px;
+  position: relative;
 }
 
 #rodovias #legendas-ruas{
-  width:100%;
+  width:640px;
   height:100%;
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-legendas.png) no-repeat 0 0;
+  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-legendas.png) no-repeat -99px -68px;
 }
 
 #rodovias .topo-mapa{
@@ -151,33 +183,34 @@
 #rodovias #mapa-sp-legenda{
   display:block;
   width:215px;
-  height:408px;
+  height:314px;
   position:absolute;
-  right:0;
-  top:0;
+  right:2px;
+  bottom: 467px;
+  background: #dfdfdf;
 }
 
 #rodovias #mapa-sp-legenda li{
-    height: 48px;
+    height: 42px;
     padding-top: 3px;
     width: 162px; 
     border-radius: 2px;
     text-align:left;
-    margin-left: 0px;
+    margin-left: 23px;
     padding-left: 15px
 }
-#rodovias #mapa-sp-legenda .norte{background-color: #fc724b !important;}
-#rodovias #mapa-sp-legenda .leste{background-color: #237876 !important;}
-#rodovias #mapa-sp-legenda .centro{background-color: #4b9af4 !important;}
-#rodovias #mapa-sp-legenda .oeste{background-color: #712378 !important;}
-#rodovias #mapa-sp-legenda .sul{background-color: #85a32c !important;}
+#rodovias #mapa-sp-legenda .norte{background-color: #fc724b !important; top:114px;}
+#rodovias #mapa-sp-legenda .leste{background-color: #237876 !important;top: 216px;}
+#rodovias #mapa-sp-legenda .centro{background-color: #4b9af4 !important; margin-top: 16px}
+#rodovias #mapa-sp-legenda .oeste{background-color: #712378 !important;top:165px;}
+#rodovias #mapa-sp-legenda .sul{background-color: #85a32c !important;top: 63px;}
 
 
 #rodovias #mapa-sp-legenda .alta{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;
+  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0;
 }
 #rodovias #mapa-sp-legenda .baixa{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-down.png) no-repeat 0 0;
+  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;
 }
 #rodovias #mapa-sp-legenda .estavel{
   background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0;
@@ -246,10 +279,10 @@
 }
 #rodovias #mapa-sp-legenda a.pos02{
   bottom:16px;
-  right:37px;
+  right:17px;
   z-index:11;
   text-align:left;
-  padding-left:15px;
+  padding-left:12px;
 }
 #rodovias #mapa-sp-legenda p{
   color:#FFF !important;
@@ -361,9 +394,9 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera11{
   background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -321px transparent;
     height: 39px;
-    left: 630px;
+    left: 523px;
     position: absolute;
-    top: 296px;
+    top: 233px;
     width: 30px;
     }
     
@@ -372,9 +405,9 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera12{
   background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -47px -287px transparent;
     height: 29px;
-    left: 372px;
+    left: 275px;
     position: absolute;
-    top: 599px;
+    top: 527px;
     width: 43px;
     }
     
@@ -383,9 +416,9 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera13{
    background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -247px transparent;
     height: 39px;
-    left: 484px;
+    left: 381px;
     position: absolute;
-    top: 537px;
+    top: 462px;
     width: 30px;
     }
     
@@ -405,9 +438,9 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera15{
  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
-    left: 220px;
+    left: 113px;
     position: absolute;
-    top: 289px;
+    top: 218px;
     width: 30px;
     }
     
@@ -417,9 +450,9 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera16{
 background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
-    left: 256px;
+    left: 149px;
     position: absolute;
-    top: 280px;
+    top: 206px;
     width: 30px;
     }
     
@@ -429,11 +462,17 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 #rodovias #cameras #camera17{
   background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
-    left: 190px;
+    left: 93px;
     position: absolute;
-    top: 436px;
+    top: 367px;
     width: 30px;
     }
+.cont-direita{
+  position:absolute;
+  right: -329px;
+  top: -1px;
+  z-index:10;
+}
     
 #rodovias #cameras #camera17.pos17:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
 
@@ -510,6 +549,7 @@ tr:nth-child(odd) {background: #cbabb7}
 
 /* MODAIS */
 #mask {
+
   position:absolute;
   left:0;
   top:0;
@@ -621,6 +661,14 @@ tr:nth-child(odd) {background: #cbabb7}
 /* MODAIS */
 
 /* ABA VIDEOS */
+.conteudos{
+
+  position:relative;
+  overflow: hidden;
+  height: 880px;
+}
+.conteudo-mapa-de-sao-paulo2{position:absolute;z-index:-1000;display:none ;}
+.conteudo-camera-ao-vivo{position:absolute;z-index:1;}
 .conteudo-portal-de-videos .youtube { width:488px; float:left; margin-top:60px; }
 .conteudo-portal-de-videos .youtube .upload { width:284px; height:188px; background:url(/portal/images/capaPrograma/transito/seta.png) no-repeat; display:block; margin:0 auto; }
 .conteudo-portal-de-videos .youtube .enviar { width:285px; height:44px; line-height:44px; background:url(/portal/images/capaPrograma/transito/youtube.jpg) no-repeat right; display:block; margin:0 auto; color:#006600; font-size:14px; font-weight:bold; margin-top:50px; }
@@ -628,3 +676,6 @@ tr:nth-child(odd) {background: #cbabb7}
 .conteudo-portal-de-videos .participe .img-enviar {width:425px; height:282px; margin-bottom:20px; background:url(/portal/images/capaPrograma/transito/enviar-foto.jpg) no-repeat; }
 .conteudo-portal-de-videos .participe a { clear:both; display: block; margin-bottom:20px; }
 /* /ABA VIDEOS */
+/*map link*/
+
+#esquerda{width:640px;}

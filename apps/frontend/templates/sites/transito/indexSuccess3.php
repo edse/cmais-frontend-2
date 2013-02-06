@@ -1,47 +1,42 @@
-<script>
-function isDevice(OSName)
-  {
-  var system = navigator.appVersion.toLowerCase(); // get local system values
-  var OSName = OSName.toLowerCase(); // put parameter value to lowecase
-   
-  // put some parameters value in standard names
-  if (OSName == "macos") OSName = "mac";
-  if (OSName == "windows") OSName = "win";
-  if (OSName == "unix") OSName = "x11";
-     
-  if (system.indexOf(OSName) != -1)
-      return true;
-    else
-      return false;
-  }
-  
-  if (isDevice('iphone') || isDevice('ipod') || isDevice('android'))
-  {
-    window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
-  }
-</script>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <style>
 .azul .window { background-color: #6AACD2; }
 .verde .window { background-color: #136F13; }
 </style>
+<script>
+function isDevice(OSName) {
+  //var system = navigator.userAgent.toLowerCase(); // get local system values
+  var system = navigator.appVersion.toLowerCase(); // get local system values
+  var OSName = OSName.toLowerCase(); // put parameter value to lowecase
+  // put some parameters value in standard names
+  if (OSName == "macos") OSName = "mac";
+  if (OSName == "windows") OSName = "win";
+  if (OSName == "unix") OSName = "x11";
+  if (OSName == "blackberry") OSName = "BlackBerry";
+  if (system.indexOf(OSName) != -1)
+    return true;
+  else
+    return false;
+}
+if(isDevice('iphone') || isDevice('ipod') || isDevice('BlackBerry') || isDevice('Android')){
+  self.location.href='http://tvcultura.cmais.com.br/transito2/mobile/index.php'
+}
+</script>
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
-
 <?php
   $xmlTransitoAgoraCET = file_get_contents('http://cetsp1.cetsp.com.br/monitransmapa/xmltransitoagora.asp');
-  try {
-    $transitoagora = new SimpleXMLElement($xmlTransitoAgoraCET);
-  } catch (Exception $e) {}
-  
+  $transitoagora = new SimpleXMLElement($xmlTransitoAgoraCET);
   $xmlCorredoresCET = file_get_contents('http://cetsp1.cetsp.com.br/monitransmapa/xmlcorredores.asp');
 
   try {
     $corredores = new SimpleXMLElement($xmlCorredoresCET);
   } catch (Exception $e) {}
   
-  //$imgMarginalPinheiros = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/pinheironeto.php")).'" style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Jockey Club">';
-  //$imgMarginalPinheiros2 = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/somar.php")).'" style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Estação Pinheiros">';
-  //imgSantana = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/santana.php")).'" style="width: 310px; height: 240px;" alt="Santana">';
+  $imgBelenzinho = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/belenzinho.php")).'" style="width: 310px; height: 240px;" alt="Belenzinho">'; 
+  $imgTiradentes = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/tiradentes.php")).'" style="width: 310px; height: 240px;" alt="Av. Tiradentes">';
+  $imgMarginalPinheiros = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/pinheironeto.php")).'" style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Jockey Club">';
+  $imgMarginalPinheiros2 = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/somar.php")).'" style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Estação Pinheiros">';
+  $imgSantana = '<img src="'.trim(file_get_contents("http://200.136.27.15/cameras/santana.php")).'" style="width: 310px; height: 240px;" alt="Santana">';
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -113,19 +108,17 @@ function isDevice(OSName)
 
                 <p>CÂMERAS DE SÃO PAULO</p>
                 <form id="opcoes-livestream" action="" method="post">
-                  <select id="opcao-livestream-1" class="required">
-                    <option value="8" selected="selected">Av. Pompéia</option>
-                    <option value="3">Av. Tiradentes</option> 
+                  <select id="opcao-livestream-1" class="required"> 
                     <option value="5">Marginal Pinheiros - Estação Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
-                    <option value="1">Marginal Tietê</option>
+                    <option value="3">Av. Tiradentes</option>
                     <option value="2">Radial Leste X Salim Farah Maluf</option>
-                    <option value="7">Radial Leste - Metrô Tatuapé</option>
+                    <option value="1" selected="selected">Marginal Tietê</option>
                     <option value="6">Santana</option>
-                  </select> 
+                  </select>
                 </form>
 
-                <div id="livestream"><img src="http://200.136.27.15/cameras/img_pompeia.php"  style="width: 310px; height: 240px;" alt="Av. Pompéia"></div>
+                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
                 
                 <script>
                     $(document).ready(function() {
@@ -174,22 +167,18 @@ function isDevice(OSName)
                        
                       $("#opcao-livestream-1").change(function () {
                         $("#opcao-livestream-1 option:selected").each(function () {
-                          if ($(this).val() == "8")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_pompeia.php"  style="width: 310px; height: 240px;" alt="Av. Pompéia">');
+                          if ($(this).val() == "1")
+                            $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">'); 
                           else if ($(this).val() == "2")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_belenzinho.php" style="width: 310px; height: 240px;" alt="Belenzinho">'); 
+                            $("#livestream").html('<?php echo $imgBelenzinho; ?>'); 
                           else if ($(this).val() == "3")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_tiradentes.php"  style="width: 310px; height: 240px;" alt="Avenida Tiradentes">'); 
+                            $("#livestream").html('<?php echo $imgTiradentes; ?>'); 
                           else if ($(this).val() == "4")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_pinheironeto.php"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Jockey Club">'); 
+                              $("#livestream").html('<?php echo $imgMarginalPinheiros; ?>'); 
                           else if ($(this).val() == "5")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_somar.php"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Est. Pinheiros">'); 
+                              $("#livestream").html('<?php echo $imgMarginalPinheiros2; ?>'); 
                           else if ($(this).val() == "6")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_santana.php"  style="width: 310px; height: 240px;" alt="SESC Santana">');
-                          else if ($(this).val() == "7")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_radial.php"  style="width: 310px; height: 240px;" alt="Radial Leste - Metrô Tatuapé">');
-                          else if ($(this).val() == "1")
-                              $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">');         
+                              $("#livestream").html('<?php echo $imgSantana; ?>'); 
                         });
                       });
                       
@@ -267,7 +256,7 @@ function isDevice(OSName)
                     $.each(data, function(i,data){
                       var a = data.title.substring(5,data.title.length);
                       //Ayrton Senna
-                      if(a.indexOf("Ayrton Senna")>=0){
+                      //if(a.indexOf("Ayrton Senna")>=0){
                         if(ayrtonsenna==0){
                           $("#img-ayrtonsenna").attr('src', data.src);
                           $('#ayrton-senna').append('<option value="'+data.src+'" selected="selected">'+a+'</option>');
@@ -275,7 +264,7 @@ function isDevice(OSName)
                         else
                           $('#ayrton-senna').append('<option value="'+data.src+'">'+a+'</option>');
                         ayrtonsenna++;
-                      }
+                      //}
 
                       $('#opcao-via-1').append('<option value="'+data.src+'">'+a+'</option>');
                     });
@@ -423,10 +412,10 @@ function isDevice(OSName)
                               <!--/cameras mapa-->
                            <div id="cameras">
                              <!-- <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Viaduto Nossa Senhora da Lapa"></a> -->
-                             <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Marginal Tietê"></a>
+                             <a href="#dialogLapa" name="modal" id="camera01" class="fundo pos01" title="Margina Tietê"></a>
                              <!--a href="#dialog" name="modal" id="camera02" class="fundo pos02" title="Avenida Sumare/ Dr Arnaldo"></a-->
                              <a href="#dialogBelenzinho" name="modal" id="camera03" class="fundo pos03" title="Radial Leste X Salim Farah Maluf"></a>
-                             <a href="#dialogRadial" name="modal" id="camera04" class="fundo pos04" title="Radial Leste"></a>
+                             <!--a href="#dialog" name="modal" id="camera04" class="fundo pos04" title="Avenida Salim Farah Maluf / Radial Leste"--></a>
                              <a href="#dialogTiradentes" name="modal" id="camera05" class="fundo pos05" title="Avenida Tiradentes"></a>
                              <!--a href="#dialog" name="modal" id="camera06" class="fundo pos06" title="Rubem Beta / 23 de Maio"></a-->
                              <!--a href="#dialog" name="modal" id="camera07" class="fundo pos07" title="Bandeirantes"></a-->
@@ -441,7 +430,7 @@ function isDevice(OSName)
                              <a href="#dialogaAnhanguera" name="modal" id="camera15" class="fundo pos15" title="Anhanguera"></a>
                              <a href="#dialogaBandeirantes" name="modal" id="camera16" class="fundo pos16" title="Bandeirantes"></a>
                              <a href="#dialogaRaposo" name="modal" id="camera17" class="fundo pos17" title="Raposo Tavares"></a>
-                             <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
+                             
                            </div>
                            <!--/cameras mapa-->
                            <!--MODAIS-->
@@ -508,7 +497,7 @@ function isDevice(OSName)
                   <div id="dialogTiradentes" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_tiradentes.php" alt="Avenida Tiradentes">
+                      <?php echo $imgTiradentes; ?>
                       <h4>Avenida Tiradentes</h4>  
                       <p></p>
                     </div>
@@ -523,38 +512,8 @@ function isDevice(OSName)
                   <div id="dialogMarginalPinheiros" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_pinheironeto.php" alt="Marginal Pinheiros - Jockey Club">
+                      <?php echo $imgMarginalPinheiros; ?>
                       <h4>Marginal Pinheiros - Jockey Club</h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <!-- Máscara para cobrir a tela -->
-                  <div id="mask"></div>
-                 </div>
-                 <!--/MODAl CAMERA verde-->
-                 
-                 <!--MODAl CAMERA verde-->
-                <div class="verde">
-                  <div id="dialogRadial" class="window">
-                    <a href="#" class="close"></a><br />
-                    <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_radial.php" alt="Radial Leste - Metrô Tatuapé">
-                      <h4>Radial Leste - Metrô Tatuapé</h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <!-- Máscara para cobrir a tela -->
-                  <div id="mask"></div>
-                 </div>
-                 <!--/MODAl CAMERA verde-->
-                 
-                 <!--MODAl CAMERA verde-->
-                <div class="verde">
-                  <div id="dialogPompeia" class="window">
-                    <a href="#" class="close"></a><br />
-                    <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_pompeia.php" alt="Avenida Pompéia">
-                      <h4>Avenida Pompéia</h4>
                       <p></p>
                     </div>
                   </div>
@@ -568,7 +527,7 @@ function isDevice(OSName)
                   <div id="dialogMarginalPinheiros2" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_somar.php" alt="Marginal Pinheiros - Est. Pinheiros">
+                      <?php echo $imgMarginalPinheiros2; ?>
                       <h4>Marginal Pinheiros - Est. Pinheiros</h4>
                       <p></p>
                     </div>
@@ -584,7 +543,7 @@ function isDevice(OSName)
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
                       <?php echo $imgMarginalTiete; ?>
-                      <h4>Marginal Tietê</h4>
+                      <h4>Marginal Teitê</h4>
                       <p></p>
                     </div>
                   </div>
@@ -598,7 +557,7 @@ function isDevice(OSName)
                   <div id="dialogBelenzinho" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_belenzinho.php" alt="Belenzinho">
+                      <?php echo $imgBelenzinho; ?>
                       <h4>Radial Leste X Salim Farah Maluf</h4>  
                       <p></p>
                     </div>
@@ -613,7 +572,7 @@ function isDevice(OSName)
                   <div id="dialogSantana" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img src="http://200.136.27.15/cameras/img_santana.php"  alt="SESC Santana">
+                      <?php echo $imgSantana; ?>
                       <h4>Santana</h4>  
                       <p></p>
                     </div>
@@ -905,11 +864,8 @@ function isDevice(OSName)
                      
                      <!--PORTAL DE VIDEOS-->
                      <li class="conteudo-portal-de-videos" style="display:none">
-                     <!--
                       <a name="ytd" />
-                      -->
                       <!-- Youtube Direct embed - start --> 
-                      <!--
                       <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
                       <script type="text/javascript">
                       var ytdInitFunction = function() {
@@ -929,36 +885,8 @@ function isDevice(OSName)
                       </script>
                       <a id="callToActionId-1001" href="javascript:void(0);"><img src="https://cmais-tvcultura.appspot.com/images/calltoaction.png"></a>
                       <div id="ytdContainer-1001"></div>
-                      -->
                       <!-- Youtube Direct embed - end --> 
-                      <a name="ytd" />
-                      <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
-                      <script type="text/javascript">
-                      var ytdInitFunction = function() {
-                        var ytd = new Ytd();
-                        ytd.setAssignmentId("1001");
-                        ytd.setCallToAction("callToActionId-1001");
-                        var containerWidth = 350;
-                        var containerHeight = 550;
-                        ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
-                        ytd.ready();
-                      };
-                      if (window.addEventListener) {
-                        window.addEventListener("load", ytdInitFunction, false);
-                      } else if (window.attachEvent) {
-                        window.attachEvent("onload", ytdInitFunction);
-                      }
-                      </script>
-                      <div class="youtube">
-                      	<a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
-                      	<div id="ytdContainer-1001"></div>
-                      	
-                      </div>
-                      <div class="participe">
-                      	<div class="img-enviar"></div>
-                      	<a href="#" class="titulos">Participe! Envie seu vídeo.</a>
-                      	<!--a href="#">Duis lectus nibh, venenatis sed consectetur id, interdum vel ante. Nam suscipit, massa hendrerit consectetur auctor, erat quam tempor quam, eget aliquam diam metus eget lorem. Cras id arcu nisi, eget lobortis urna. Aenean consectetur mattis iaculis. Maecenas euismod massa eget dui tincidunt viverra. </a-->
-                      </div>
+                      
                      </li>
                      <!--PORTAL DE VIDEOS-->      
                   </ul>
