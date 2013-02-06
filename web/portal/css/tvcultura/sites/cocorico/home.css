@@ -21,7 +21,7 @@
 
 /* destaque home */
 .col-esq .destaque-home.span12 { margin-bottom: 20px; float: left; }
-.destaque-home .box .tit { margin-left:-34px; overflow:hidden;  }
+.destaque-home .box .tit { margin-left:-34px; overflow:hidden; border:none; }
 .destaque-home .span9 {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display:block; }
 .destaque-home .box img,
 .destaque-home .span9 img {  border-radius:8px; -moz-border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; }
