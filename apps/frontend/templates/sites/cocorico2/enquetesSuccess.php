@@ -93,7 +93,7 @@ $assets = $pager->getResults();
           <!-- item -->
           <li class="item-lista">
             <i class="ico-confirma"></i>
-            <h4><?php echo $d->getHeadline();?></h4>
+            <h4><?php echo $d->Asset->getHeadline();?></h4>
             <h3><?php echo $d->AssetQuestion->getQuestion();?></h3>
             <?php /* <div class="resultado verde">00% - <?php echo $respostas[0]->Asset->AssetAnswer->getAnswer()?></div> */ ?>
             <?php 
