@@ -603,7 +603,7 @@ tr:nth-child(odd) {background: #cbabb7}
 }
 
 
-.verde #dialog, .azul #dialoga, #dialogLapa, #dialogaImigrantes, #dialogaAnhanguera, #dialogaBandeirantes,#dialogaRaposo{
+.verde #dialog, .azul #dialoga, #dialogLapa, #dialogaAnhanguera, #dialogaBandeirantes,#dialogaRaposo{
   width:328px; 
   height:auto;
   left:298px !important;
@@ -708,4 +708,5 @@ tr:nth-child(odd) {background: #cbabb7}
 #dialogaMarginalTiete,
 #dialogSantana,
 #dialogTiradentes{left: 15% !important; width: 733px;top: 5%!important;}
-#dialogaSenna{width: 719px;height: auto;left: 120px !important;top: 15% !important;}
+#dialogaSenna,
+#dialogaImigrantes{width: 719px;height: auto;left: 120px !important;top: 15% !important;}
