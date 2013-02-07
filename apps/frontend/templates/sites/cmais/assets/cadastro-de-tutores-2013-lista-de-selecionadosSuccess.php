@@ -27,13 +27,14 @@
                 <div class="contatoWrapper">
                   <h3 class="tit-pagina grid3">Cadastro para processo seletivo de tutoria - Curso de inglês a distância</h3>
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
-                  
+                  <h4>Lista de candidatos selecionados para participar da prova</h4>
+                  <p>Clique em seu nome para escolher o local da prova.</p>
                   <div class="texto">
 
-                      <table>
+                      <table style="border: 1px solid #eee">
                         <tr>
-                          <th>Nome</th>
-                          <th>Modalidade</th>
+                          <th style="font-weight: bold; margin-bottom: 20px">Nome</th>
+                          <th style="font-weight: bold; margin-bottom: 20px">Modalidade</th>
                         </tr>
                         <tr>
                           <td><a href="http://cmais.com.br/cadastro-de-tutores-2013-local-de-prova?nome=Adalberto+Mesaque+Rodrigues" title="Adalberto Mesaque Rodrigues">Adalberto Mesaque Rodrigues</a></td>
