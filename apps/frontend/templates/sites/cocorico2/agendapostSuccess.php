@@ -23,7 +23,10 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'agenda', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb--> 
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
+  <!-- voltar -->
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /voltar --> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">agenda</h2>
   <!--row post-->
@@ -39,7 +42,7 @@
         </div>
       </div>
       <!-- /paginacao --> 
-      
+
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
         <h2><?php echo $asset->getTitle(); ?></h2>
@@ -61,6 +64,7 @@
         </div>
       </div>
       <!-- paginacao --> 
+      
     </div>
     <!--/coluna esquerda -->
     <!--coluna direita -->

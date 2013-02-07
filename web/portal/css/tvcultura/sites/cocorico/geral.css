@@ -144,7 +144,7 @@ bold,
 .menu .navbar .nav > li.familia { float: right; margin: 12px 20px 0 0; padding: 0; width: 160px;}
 .menu .navbar .nav > li.familia a {background:url(/portal/images/capaPrograma/cocorico/ico-familia.png) no-repeat; text-indent:-9999px; width:122px; border: none; margin:0; height:40px; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; z-index: 10; position:relative;}
 
-.menu .navbar .nav > li span { width:9px; height:40px; float:left; background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat;  }
+.menu .navbar .nav > li span { width:9px; height:40px; float:left; background:url(/portal/images/capaPrograma/cocorico/borda-menu2.png) no-repeat;  }
 
 .menu .lista-personagens { background:#eaefb2; clear:both; margin:0 20px;  max-height:105px; overflow:hidden;}
 .menu .lista-personagens a { display: block; border:4px solid #c0d541;  border-radius:50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; }
@@ -198,7 +198,7 @@ bold,
 .tit { position:relative; }
 .tit p,
 .tit a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; line-height: 40px; height:40px; width: auto; margin-left:20px; font-size:15px; padding:0 15px 0 25px; display:block; color:#fff !important; text-shadow:none; text-transform:uppercase; font-weight:normal; border-radius:10px ; -moz-border-radius:10px ; -webkit-border-radius: 10px ;  }
-.tit span { width:9px; height:40px; background:url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat; margin:0; position:absolute; right:0; top:0; }
+.tit span { width:9px; height:40px; background:url(/portal/images/capaPrograma/cocorico/borda-menu2.png) no-repeat; margin:0; position:absolute; right:0; top:0; }
 .tit .mais { background:url(/portal/images/capaPrograma/cocorico/mais.png) no-repeat; width:36px; height:36px; display: block; position:absolute; left:5px; top:2px;}
 
 /*joguinhos*/

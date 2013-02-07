@@ -25,8 +25,11 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'nocinema', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section)) ?> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
+  <!-- voltar -->
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /voltar --> 
   <h2 class="tit-pagina">no cinema</h2>
   <!--row post-->
   <div id="agenda" class="row-fluid conteudo ">
@@ -40,7 +43,9 @@
           <a href="#" class="proximo" title="Próximo Event">Próximo Evento<span></span></a>
         </div>
       </div>
-      <!-- /paginacao --> 
+      <!-- /paginacao -->
+      
+      
       
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
@@ -66,7 +71,7 @@
       </div>
       <!-- paginacao --> 
     </div>
-    <!--/coluna esquerda -->
+    <!--/coluna esquerda --> 
     <!--coluna direita -->
     <div class="span4 acontece">
       <!-- topo acontece -->
