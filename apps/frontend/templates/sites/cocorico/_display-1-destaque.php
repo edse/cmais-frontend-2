@@ -10,7 +10,7 @@
     <!-- Carousel items -->
     <div class="carousel-inner"> 
     <?php foreach($displays as $k=>$d): ?>
-      <?php $imgs = $d->Asset->retriveAssetsByAssetRelationType('preview'); ?>
+      <?php $imgs = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
       <!-- item -->
       <div class="<?php if($k==0) echo "active";?> item bloco" name="<?php echo $k?>">
         <?php if(($imgs)&&(count($imgs)>0)):?>
