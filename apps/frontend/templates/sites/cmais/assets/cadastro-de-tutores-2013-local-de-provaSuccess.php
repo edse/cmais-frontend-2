@@ -26,7 +26,7 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   
-                  <?php if(date('Y-m-d') > "2013-01-14"): ?>
+                  <?php /*if(date('Y-m-d') > "2013-01-14"): ?>
                     
                   <h3 class="tit-pagina grid3">Encerradas as inscrições para Tutor de Inglês</h3>
                   <p class="titu">O cadastramento realizado pela Fundação Padre Anchieta terminou no dia 14</p>
@@ -36,7 +36,7 @@
                   <br />
                   <p>Os classificados concorrerão a vagas de tutor para os cursos a serem oferecidos nos dois semestres de 2013. Ou seja, eles poderão ser selecionados/convocados para atuar no curso do primeiro OU do segundo semestre. Em ambos os casos, pelo período de três meses.</p>
         
-                  <?php else: ?>
+                  <?php else: */ ?>
                     
                   <h3 class="tit-pagina grid3">Cadastro para processo seletivo de tutoria - Curso de inglês a distância</h3>
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
@@ -297,7 +297,7 @@
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     </div>
                   </form>
-                <?php endif; ?>
+                <?php // endif; ?>
                 </div>
               </div>
             </div>
