@@ -32,8 +32,19 @@ $assets = $pager->getResults();
   </ul>
   <!-- /breadcrumb-->
   
-  <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
-  
+  <!-- titulo da pagina -->
+  <div class="tit-pagina span7">
+    <h2><?php $tam=32; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <span></span>
+      <!-- RANKING -->
+      <?php $section = $asset->getSections(); ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
+      <!--/RANKING -->
+  </div>
+  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
+  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
+  <!-- titulo da pagina -->
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
