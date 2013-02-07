@@ -37,7 +37,8 @@ $assets = $pager->getResults();
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
-    <div class="row-fluid conteudo">    
+    <div class="row-fluid conteudo">  
+     <h3 class="episodio"><?php echo $asset->getHeadline()?></h3>  
      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
