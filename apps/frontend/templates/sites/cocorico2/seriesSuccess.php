@@ -1,5 +1,6 @@
 <?php 
-$assets = $pager->getResults();
+if(isset($pager)){
+  $assets[0] = $pager->getResults();  
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -44,7 +45,7 @@ $assets = $pager->getResults();
     <!--/RANKING -->
   </div>
   
-  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
+  <a id="btn_1" href="javascript: vote('<?php echo $section->getId()?>');" class="curtir" title="Curtir">curtir</a>
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
   <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
 
