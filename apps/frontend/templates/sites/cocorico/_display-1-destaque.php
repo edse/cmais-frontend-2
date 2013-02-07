@@ -10,7 +10,7 @@
     <!-- Carousel items -->
     <div class="carousel-inner"> 
     <?php foreach($displays as $k=>$d): ?>
-      <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+      <?php $imgs = $d->Asset->retriveRelatedAssetsByAssetRelationType('preview'); ?>
       <!-- item -->
       <div class="<?php if($k==0) echo "active";?> item bloco" name="<?php echo $k?>">
         <?php if(($imgs)&&(count($imgs)>0)):?>
@@ -18,7 +18,7 @@
         <a href="<?php echo $d->retriveUrl()?>">
           <img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('image-6-b') ?>">
         </a>
-
+ 
         <?php endif; ?>
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
           <h3><?php echo $d->getTitle()?></h3>
