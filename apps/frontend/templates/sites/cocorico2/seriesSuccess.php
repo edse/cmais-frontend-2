@@ -44,25 +44,7 @@ $assets = $pager->getResults();
     </div>
     <!-- /row-->
 
-    <?php if($pager->haveToPaginate()): ?>
-    <!-- paginacao -->
-    <div class="pagination pagination-centered">
-      <ul>
-        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
-        <?php foreach ($pager->getLinks() as $page): ?>
-          <?php if ($page == $pager->getPage()): ?>
-            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php else: ?>
-            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php endif; ?>
-        <?php endforeach;?>
-        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
-      </ul>
-    </div>
-    <!-- /paginacao -->
-    <?php endif; ?>
-
-  <!--row-->
+    <!--row-->
   <?php if(count($pager) > 0): ?>
     <div class="row-fluid relacionados ytb">
     <ul class="destaques-small top">
