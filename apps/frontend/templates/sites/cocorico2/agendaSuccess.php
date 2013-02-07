@@ -32,8 +32,8 @@ if(isset($pager)){
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $section->retriveUrl(); ?>/<?php echo $section->Parent->getSlug(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
      <li class="active">Agenda</li>
   </ul>
   <!-- /breadcrumb-->
