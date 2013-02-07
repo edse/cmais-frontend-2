@@ -25,7 +25,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'nocinema', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section)) ?> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">no cinema</h2>
   <!--row post-->
