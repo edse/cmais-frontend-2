@@ -30,7 +30,7 @@
   
   <!--row-->
   <?php if(count($favoritos) > 0): ?>
-  <div class="row-fluid conteudo destaques papel-parede">
+  <div class="row-fluid conteudo destaques">
     <?php if(isset($favoritos[0])): ?>
       <?php $related = $favoritos[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
