@@ -11,7 +11,7 @@
 
 <script>
   $(document).ready(function(){
-    alert("teste"+$(window).width()+"/"+$('body').width());
+    alert("teste"+$(window).width()+"/"+$('body').width()+"/"+$(document).width());
   })
 </script>
 
@@ -19,13 +19,13 @@
 <div class="container tudo">
   <!-- row carrossel-->
   <div class="row-fluid">
-  	 <?php if(isset($displays['destaque-topo'])): ?>
+     <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
       <div class="span12"> 
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner"> 
-          	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
+            <?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
               <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12" alt="<?php echo $d->getTitle() ?>"/></a>
             </div>
@@ -58,20 +58,20 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
-    	<?php /*
-    	<!--joguinhos e receitinhas-->
-    	<?php if(isset($displays['destaque-principal'])):?>
-        <?php if(count($displays['destaque-principal']) > 0): ?> 	
+      <?php /*
+      <!--joguinhos e receitinhas-->
+      <?php if(isset($displays['destaque-principal'])):?>
+        <?php if(count($displays['destaque-principal']) > 0): ?>  
           
           <?php 
           $secao = $displays['destaque-principal'][0]->Asset->getSections();
           $secao_destaque = $secao[0]; 
           ?>
           
-         	 <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-          	<?php if(count($related) > 0): ?>
-          			
-      		<div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+           <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <?php if(count($related) > 0): ?>
+                
+          <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
               <a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
               <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
                 <span class="mais"></span>
@@ -246,7 +246,8 @@
           ->andWhere('s.slug = "enquetes"')
           ->andWhere('a.site_id = ?', (int)$site->id)
           ->andWhere('a.asset_type_id = 10')
-          ->orderBy('a.id desc')
+          //->orderBy('a.id desc')
+          ->limit(1)
           ->execute();
          //doctrine para respostas
           $respostas = Doctrine_Query::create()

@@ -659,6 +659,19 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra-cocorico')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
 			      }
+            else if($this->site->getSlug() == "jornaldacultura" && $this->section->getSlug() == "videos") {
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, AssetVideo av, SectionAsset sa')
+                ->where('sa.section_id = ?', $this->section->id)
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhere('av.asset_id = a.id')
+                ->andWhere('av.youtube_id != ""')
+                ->andWhere('a.is_active = ?', 1);
+              if($request->getParameter('busca') != '')
+                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
+              $this->assetsQuery->orderBy('av.bitrate desc');
+            }
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
@@ -672,8 +685,8 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 282)&&($this->section->id == 778))
                 $this->assetsQuery->orderBy('sa.display_order');
-              else if(($this->site->getId() == 108)&&($this->section->id == 850))
-                $this->assetsQuery->orderBy('sa.display_order');
+              else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
+                $this->assetsQuery->orderBy('a.id desc');
               else if ($this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else

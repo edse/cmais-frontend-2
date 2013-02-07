@@ -63,8 +63,8 @@
    .conteudo { margin:2% 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
   .topo-coco { margin:10px 0; }
-  .menu .lista-personagens li { margin-left:3%; }
-  .menu .navbar .nav > li { margin-right:2%; }
+  .menu .lista-personagens li { margin-left:1%; }
+  .menu .navbar .nav > li { margin-right:1%; }
   .rodape .span2 { margin-left:1%;}
   .voltar .divisao { min-width:790px; }
   #videos {margin:0 !important; }
@@ -76,10 +76,11 @@
   #menu-familia li .divider { padding:0 6px !important; }
   .menu .navbar .nav > li.personagens { margin:0 2%; }
   input.search-query { max-width:80px; width:80px; }
-     
   .menu .navbar .nav > li { float:left; }
   .menu .navbar .nav > li > a { padding:0 0 0 30px;  }
   .menu .navbar .nav > li.familia { margin-right:0; }
-  .menu .navbar .nav > li.personagens { margin:0; }
-
+  .menu .navbar .nav > li.personagens { margin:0 5px 0 0; }
+  .box .tit a { padding:0 0 0 15% !important; width:auto; float:left }
+  .box .tit span { float: left; }
+  .box ul a { font-size: 12px !important; line-height: 14px !important; }
 }

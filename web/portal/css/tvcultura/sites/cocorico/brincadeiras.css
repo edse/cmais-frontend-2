@@ -123,7 +123,7 @@ p.span12 { margin-bottom:20px; }
 
 /* videos*/
 #videos { margin:10px 20px -10px 20px; float:left; }
-h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0 0 10px 0; line-height:32px; }
+h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0 0 10px 0; line-height:32px; font-weight:normal; }
 #videos p { margin-left:0; }
 /* /videos*/
 
@@ -143,7 +143,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 #radio .conteudo-diverso p{color:#fdf035; position: relative;}
 #radio .destaque-2{border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin-top:30px;position:relative; padding-top:1px; overflow:hidden; max-height: 240px;}
 #radio .destaque-2 h3 {border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; background: #F2722F; color: #FDF035 !important; font-size: 20px !important; height:30px; line-height: 30px; margin: 0; overflow: hidden;  padding: 0 10px;  position: relative; text-align: center; font-weight:normal; }
-#radio .destaque-2 p { background:#F2722F; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;  bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px;}
+#radio .destaque-2 p { background:#F2722F; border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;  bottom: 0; height: 30px; line-height: 30px;  padding: 0 5px; text-align:center;}
 #radio .ico-mais{background: url(/portal/images/capaPrograma/cocorico/ico-mais-home.png) no-repeat;width: 36px;height: 36px;display: block; position:absolute; right:1px; top:-22px;}
 #radio .conteudo-diverso .ico-mais{background-position:0 top;}
 #radio a.clipe:hover{text-decoration: none}
@@ -202,7 +202,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .bastidores .topo .ico-seta-titulo { right:42%; }
 .bastidores.span4 .topo h3 { color:#F2722F; text-align:left; margin:0 0 0 5px; height:26px;}
 .conteudo .bastidores.span4 img { border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
-.bastidores.span4 a { color:#fff; margin:15px 11px 0 2px; max-width:140px; max-height:105px; }
+.bastidores.span4 a { color:#fff; margin:15px 11px 0 2px; max-width:140px; max-height:105px; text-align:center; }
 .bastidores.span4 a:hover {text-decoration:none;  }
 .bastidores.span4 a.last { margin:15px 0 0; }
 /* /home brincadeiras */
