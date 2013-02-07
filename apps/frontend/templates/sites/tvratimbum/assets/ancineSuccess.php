@@ -96,6 +96,9 @@
                 
                 <!--explicacao--> 
                 <div class="explicacao"> 
+                  <p><b>> Fevereiro/2013</b></p>
+                  <p>Listagem Completa (Anexo I)<a href= "portal/tvratimbum/arquivos_ancine/02-2013/61914891000186_tvratimbum_112530001_201301_20130206.CSV"> 61914891000186_tvratimbum_112530001_201301_20130206.CSV</a></p>
+                  <p>Acesso Público (Anexo II)<a href= "portal/tvratimbum/arquivos_ancine/02-2013/PUB_61914891000186_TVRATIMBUM_112530001_201302_20130118.xlsx"> PUB_61914891000186_TVRATIMBUM_112530001_201302_20130118.xlsx</a></p>
                   <p><b>> Janeiro/2013</b></p>
                   <p>Listagem Completa (Anexo I)<a href= "portal/tvratimbum/arquivos_ancine/01-2013/61914891000186_TVRATIMBUM_112530001_201212_20130107.csv"> 61914891000186_TVRATIMBUM_112530001_201212_20130107.csv</a></p>
                   <p>Acesso Público (Anexo II)<a href= "portal/tvratimbum/arquivos_ancine/01-2013/PUB_61914891000186_TVRATIMBUM_112530001_201301_20130107.xlsx"> PUB_61914891000186_TVRATIMBUM_112530001_201301_20130107.xlsx</a></p>
