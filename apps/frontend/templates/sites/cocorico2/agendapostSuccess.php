@@ -39,7 +39,9 @@
         </div>
       </div>
       <!-- /paginacao --> 
-      
+      <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
         <h2><?php echo $asset->getTitle(); ?></h2>
