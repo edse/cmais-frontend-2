@@ -92,9 +92,7 @@
       </div>
       <!-- /destaque-home -->
 
-      <?php if(isset($displays['destaque-series'])):?> 
-        <?php if(count($displays['destaque-series']) > 0): ?>
-                    
+      
        <!-- bastidores -->
       <div class="bastidores fonte span3">
        
@@ -145,8 +143,7 @@
         <!-- /item -->
       </div>
       <!-- /bastidores -->
-       <?php endif; ?>
-      <?php endif; ?>
+      
             
 
     </div>
