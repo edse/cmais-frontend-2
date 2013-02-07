@@ -14,7 +14,7 @@ if(isset($pager)){
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <div class="navbar-inner">
+      <div class="navbar-inner"> 
       <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
