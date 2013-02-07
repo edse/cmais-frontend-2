@@ -35,6 +35,8 @@
                           <td><a href="http://cmais.com.br/cadastro-de-tutores-2013-local-de-prova?nome=Adalberto+Mesaque+Rodrigues" title="Adalberto Mesaque Rodrigues">Adalberto Mesaque Rodrigues</a></td>
                           <td>online</td>
                         </tr>
+                      </table>
+                      <table>
                         <tr>
                           <td><a href="http://cmais.com.br/cadastro-de-tutores-2013-local-de-prova?nome=Ad%C3%A3o+Jos%C3%A9+Lopes" title="Adão José Lopes">Adão José Lopes</a></td>
                           <td>presencial</td>
