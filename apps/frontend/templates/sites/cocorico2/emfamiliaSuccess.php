@@ -24,10 +24,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'emfamilia', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li><a href="/cocorico">Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Em Família</li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
   <!-- /breadcrumb-->
   
     <!--row-->
