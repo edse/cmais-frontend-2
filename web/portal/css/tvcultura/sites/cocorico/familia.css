@@ -156,6 +156,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /* /naweb */
 
 /* agenda, cinema e post */
+#agenda .voltar .divisao {min-width: 483px;}
 #agenda .lista {position: relative;}
 #agenda .lista .item-lista{position: relative;}
 #agenda .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0;color:#6b757d;}
