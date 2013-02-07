@@ -1,6 +1,5 @@
 <?php 
-if(isset($pager)){
-  $assets[0] = $pager->getResults();  
+$assets = $pager->getResults();
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -14,7 +13,7 @@ if(isset($pager)){
   <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
-      <div class="navbar-inner"> 
+      <div class="navbar-inner">
       <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
@@ -33,28 +32,13 @@ if(isset($pager)){
   </ul>
   <!-- /breadcrumb-->
   
-
-  
-  <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
-    <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
-    <span></span>
-    
-    <!-- RANKING -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
-    <!--/RANKING -->
-  </div>
-  
-  <a id="btn_1" href="javascript: vote('<?php echo $section->getId()?>');" class="curtir" title="Curtir">curtir</a>
-  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
-  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
-
+  <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
-    <div class="row-fluid conteudo">    
-     <h3 class="episodio"><?php echo $asset->getHeadline()?></h3>
+    <div class="row-fluid conteudo">  
+     <h3 class="episodio"><?php echo $asset->getHeadline()?></h3>  
      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
