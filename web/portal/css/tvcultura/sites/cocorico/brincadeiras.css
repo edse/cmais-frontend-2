@@ -195,7 +195,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque2 .radio a { background:url(/portal/images/capaPrograma/cocorico/bg-laranja-laranja.jpg) repeat-x; height:40px; line-height:40px; font-size:16px; text-transform:uppercase; color:#fff;  display: block;  -moz-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px;  border-radius:10px 0 0 10px;  float:left; margin-left:-28px; padding:0 8px 0 35px; z-index: 0; position:relative; }
 .destaque2 .radio a:hover { text-decoration:none; }
 .destaque2 .radio a span { color:#FDF035; margin-left:3px; }
-.destaque2 .radio .borda { background: url(/portal/images/capaPrograma/cocorico/borda-menu.png) no-repeat -78px 0; width:10px; height:40px; display:block; float:left; }
+.destaque2 .radio .borda { background: url(/portal/images/capaPrograma/cocorico/borda-menu2.png) no-repeat -78px 0; width:10px; height:40px; display:block; float:left; }
 .bastidores.span4 { margin-left:auto; float: right; margin-top:/*30px*/10px; border: none; }
 .bastidores.span4 .topo h3 i.ico-colorir {  background: url(/portal/images/capaPrograma/cocorico/ico-colorir.png) no-repeat; width: 20px; height: 17px; display: block; float: left; margin-top:2px; margin:5px 5px 0 0; }
 .bastidores .topo h3 { color:#F2722F; }
