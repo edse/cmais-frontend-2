@@ -94,7 +94,7 @@
           
       <div class="destaque-home joguinhos span12">
         <?php if(count($related) > 0): ?>
-        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>">
+        <a href="<?php echo $displays['destaque-principal-joguinhos'][0]->retriveUrl() ?>" class="span9" title="<?php echo $displays['destaque-principal-joguinhos'][0]->getDescription() ?>">
           <img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-principal-joguinhos'][0]->getTitle() ?>" />
         </a>
         <?php endif; ?>
