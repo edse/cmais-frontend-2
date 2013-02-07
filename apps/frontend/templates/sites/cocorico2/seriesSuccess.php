@@ -38,31 +38,13 @@ $assets = $pager->getResults();
 
     <!--row-->
     <div class="row-fluid conteudo">  
-     <h3 class="episodio"><?php echo $asset->getHeadline()?></h3>  
-     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
+     <h3 class="episodio"><?php echo $assets[0]->AssetVideo->getHeadline()?></h3>  
+     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?> <p>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
 
-    <?php if($pager->haveToPaginate()): ?>
-    <!-- paginacao -->
-    <div class="pagination pagination-centered">
-      <ul>
-        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
-        <?php foreach ($pager->getLinks() as $page): ?>
-          <?php if ($page == $pager->getPage()): ?>
-            <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php else: ?>
-            <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php endif; ?>
-        <?php endforeach;?>
-        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
-      </ul>
-    </div>
-    <!-- /paginacao -->
-    <?php endif; ?>
-
-  <!--row-->
+    <!--row-->
   <?php if(count($pager) > 0): ?>
     <div class="row-fluid relacionados ytb">
     <ul class="destaques-small top">
