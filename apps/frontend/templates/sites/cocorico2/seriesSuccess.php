@@ -1,6 +1,6 @@
 <?php 
 if(isset($pager)){
-  $assets[0] = $pager->getResults();  
+  $assets = $pager->getResults();  
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -33,16 +33,17 @@ if(isset($pager)){
   </ul>
   <!-- /breadcrumb-->
   
-
-  
+ 
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
     <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     
     <!-- RANKING -->
+      <?php $section = $assets[0]->getSections(); ?>
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
     <!--/RANKING -->
+    
   </div>
   
   <a id="btn_1" href="javascript: vote('<?php echo $section->getId()?>');" class="curtir" title="Curtir">curtir</a>
