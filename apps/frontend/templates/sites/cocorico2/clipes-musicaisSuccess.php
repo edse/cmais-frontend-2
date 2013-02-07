@@ -33,7 +33,7 @@
   <!-- /row-->
 
   <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section)) ?>
   <!-- /breadcrumb-->
   
   <!--btn voltar
