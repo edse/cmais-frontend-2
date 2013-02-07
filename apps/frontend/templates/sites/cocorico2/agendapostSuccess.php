@@ -67,9 +67,6 @@
       
     </div>
     <!--/coluna esquerda -->
-    <!-- voltar -->
-    <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
-    <!-- /voltar --> 
     <!--coluna direita -->
     <div class="span4 acontece">
       <!-- topo acontece -->
