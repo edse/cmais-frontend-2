@@ -123,7 +123,7 @@ p.span12 { margin-bottom:20px; }
 
 /* videos*/
 #videos { margin:10px 20px -10px 20px; float:left; }
-h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0 0 10px 0; line-height:32px; }
+h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0 0 10px 0; line-height:32px; font-weight:normal; }
 #videos p { margin-left:0; }
 /* /videos*/
 
