@@ -40,9 +40,9 @@ if(isset($pager)){
     <span></span>
     
     <!-- RANKING -->
-      <?php $section = $assets[0]->getSections(); ?>
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
-    <!--/RANKING -->
+      <?php $section = $asset->getSections(); ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
+      <!--/RANKING -->
     
   </div>
   
