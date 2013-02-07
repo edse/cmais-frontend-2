@@ -37,8 +37,8 @@
                       <table>
                         <thead>
                           <tr>
-                            <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
-                            <th style="font-weight: bold; margin-bottom: 20px">Modalidade<br /></th>
+                            <th style="font-weight: bold; margin-bottom: 20px">Nome<br /><br /><br /></th>
+                            <th style="font-weight: bold; margin-bottom: 20px">Modalidade<br /><br /><br /></th>
                           </tr>
                         </thead>
                         <tbody>
