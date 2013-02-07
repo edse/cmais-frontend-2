@@ -25,8 +25,8 @@
   <!-- breadcrumb--> 
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl(); ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl(); ?>/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li> 
-     <li><a href="<?php echo $site->retriveUrl(); ?>/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>/<?php echo $section->Parent->getSlug() ?>">Em família</a> <span class="divider">&rsaquo;</span></li> 
+     <li><a href="<?php echo $site->retriveUrl(); ?>/<?php echo $section->getSlug() ?>">Agenda</a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $asset->getTitle() ?></li>
   </ul> 
   <!-- /breadcrumb-->
