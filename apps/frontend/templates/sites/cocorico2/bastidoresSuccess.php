@@ -20,7 +20,7 @@ if(isset($pager)){
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
-      
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       <!--/menu personagens -->
       </div>
     </div>
