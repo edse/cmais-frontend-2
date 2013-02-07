@@ -27,6 +27,9 @@
   <!-- breadcrumb-->
   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
+  <!-- voltar -->
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /voltar --> 
   <h2 class="tit-pagina">no cinema</h2>
   <!--row post-->
   <div id="agenda" class="row-fluid conteudo ">
@@ -42,9 +45,7 @@
       </div>
       <!-- /paginacao -->
       
-      <!-- voltar -->
-      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
-      <!-- /voltar --> 
+      
       
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
@@ -71,6 +72,9 @@
       <!-- paginacao --> 
     </div>
     <!--/coluna esquerda -->
+    <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
     <!--coluna direita -->
     <div class="span4 acontece">
       <!-- topo acontece -->
