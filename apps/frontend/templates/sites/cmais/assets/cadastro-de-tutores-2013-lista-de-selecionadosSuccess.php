@@ -18,7 +18,7 @@
         <!-- BOX LATERAL -->
 
         <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina">
+        <div id="conteudo-pagina"> 
           <!-- CAPA -->
           <div class="capa grid3">
             <!-- ESQUERDA -->
