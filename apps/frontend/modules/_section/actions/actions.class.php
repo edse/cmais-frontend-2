@@ -685,6 +685,8 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 282)&&($this->section->id == 778))
                 $this->assetsQuery->orderBy('sa.display_order');
+              else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
+                $this->assetsQuery->orderBy('a.id desc');
               else if ($this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else

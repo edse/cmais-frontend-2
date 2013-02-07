@@ -10,7 +10,7 @@
 .texto { max-height:57px; border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; position:absolute; display:block; bottom: 0;  background:url("/portal/images/capaPrograma/cocorico/bg-azul-transparente.png") repeat; padding:5px 10px; color:#fff; }
 .texto:hover { text-decoration:none; }
 .texto h3 { color:#fff; margin:0; }
-.destaques.span6 { margin-left:0; background:#c6e1e4; text-align:left; color:#6b757d; line-height:18px;}
+.destaques.span6 { margin-left:0; background:#c6e1e4; text-align:left; color:#6b757d; line-height:18px; text-align:center;}
 .destaques h2 { background: none repeat scroll 0 0 #C6E1E4; color: #6B757D; font-size: 20px; height: 30px; line-height: 30px;  margin: 0; overflow: hidden;  position: relative; text-align: center; text-transform: uppercase; z-index: 100; }
 .destaques .bold { text-transform:uppercase; margin:5px 10px;  }
 .destaques p { margin:5px 10px 10px; }
