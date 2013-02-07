@@ -43,7 +43,7 @@
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
-        <h2>Cozinha da amiga zazá</h2> 
+        <h2>Cozinha da amiga da zazá</h2> 
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->Asset->retriveUrl() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
