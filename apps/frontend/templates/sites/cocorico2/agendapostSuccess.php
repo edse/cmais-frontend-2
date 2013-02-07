@@ -61,6 +61,9 @@
         </div>
       </div>
       <!-- paginacao --> 
+      <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
     </div>
     <!--/coluna esquerda -->
     <!--coluna direita -->
