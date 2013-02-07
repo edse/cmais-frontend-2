@@ -31,10 +31,7 @@ if(isset($pager)){
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li><a href="<?php echo $site->retriveUrl() ?>">Home</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Convidado do dia</li>
-  </ul> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
