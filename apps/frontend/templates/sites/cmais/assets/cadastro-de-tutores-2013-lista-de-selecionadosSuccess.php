@@ -30,15 +30,7 @@
                   
                   <div class="texto">
 
-                    <table>
-                      <thead>
-                      <tr>
-                        
-                        <th>Nome</th>
-                        <th>Modalidade</th>
-                      </tr>
-                      </thead>
-                      <tbody>
+                      <table>
                         <tr>
                           <td><a href="http://cmais.com.br/cadastro-de-tutores-2013-local-de-prova?nome=Adalberto+Mesaque+Rodrigues" title="Adalberto Mesaque Rodrigues">Adalberto Mesaque Rodrigues</a></td>
                           <td>online</td>
@@ -8595,7 +8587,6 @@
                           <td><a href="http://cmais.com.br/cadastro-de-tutores-2013-local-de-prova?nome=Zuleini+Aparecida+Sabatin+do+Carmo" title="Zuleini Aparecida Sabatin do Carmo">Zuleini Aparecida Sabatin do Carmo</a></td>
                           <td>online</td>
                         </tr>
-                      </tbody>
                     </table>
                     
                   </div>
