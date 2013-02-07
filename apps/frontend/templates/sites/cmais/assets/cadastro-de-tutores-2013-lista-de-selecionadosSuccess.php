@@ -26,10 +26,13 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   <h3 class="tit-pagina grid3">Cadastro para processo seletivo de tutoria - Curso de inglês a distância</h3>
-                  <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
-                  <h4 style="color:#000">Lista de candidatos selecionados para participar da prova</h4>
+                  <p class="titu" style="margin-bottom:60px">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
+                  <br />
+                  <br />
+                  <h4 style="color:#333; margin-bottom:5px">Lista de candidatos selecionados para participar da prova</h4>
                   <p>Clique em seu nome para escolher o local da prova.</p>
-                  <div class="texto">
+                  
+                  <div class="texto" style="margin-top:30px">
 
                       <table>
                         <thead>
