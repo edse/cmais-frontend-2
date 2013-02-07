@@ -23,12 +23,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'agenda', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb--> 
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $section->Parent->retriveUrl(); ?>"><?php echo $section->Parent->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle();?></a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle() ?></li>
-  </ul> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">agenda</h2>
   <!--row post-->
@@ -44,7 +39,9 @@
         </div>
       </div>
       <!-- /paginacao --> 
-      
+      <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
         <h2><?php echo $asset->getTitle(); ?></h2>
@@ -66,6 +63,9 @@
         </div>
       </div>
       <!-- paginacao --> 
+      <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
     </div>
     <!--/coluna esquerda -->
     <!--coluna direita -->

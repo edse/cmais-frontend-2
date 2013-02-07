@@ -9,7 +9,7 @@
 
   <!-- row-->
   <div class="row-fluid menu">
-    <div class="navbar">
+    <div class="navbar"> 
        <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
@@ -19,6 +19,7 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
     <li>
@@ -35,17 +36,17 @@
     <!-- col direita -->
     <div class="span4 col-dir">
 
-      <?php if(isset($displays['destaque-receitinhas'])):?> 
+      <?php if(isset($displays['destaque-receitinhas'])):?>  
         <?php if(count($displays['destaque-receitinhas']) > 0): ?>
  
-  <?php $related0 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+ <?php $related0 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?> 
    <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>    
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
         <h2>Cozinha da amiga da zazá</h2> 
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->Asset->retriveUrl() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
-          <img src="http://img.youtube.com/vi/<?php echo $related0[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
+          <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
           <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
         </a>

@@ -25,12 +25,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'nocinema', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl(); ?>/cocorico2/agenda">Agenda</a> <span class="divider">&rsaquo;</span></li>
-     <li><?php echo $asset->getTitle(); ?></li>
-     <li class="active"></li>
-  </ul> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">no cinema</h2>
   <!--row post-->
@@ -45,11 +40,15 @@
           <a href="#" class="proximo" title="Próximo Event">Próximo Evento<span></span></a>
         </div>
       </div>
-      <!-- /paginacao --> 
+      <!-- /paginacao -->
+      
+      <!-- voltar -->
+      <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+      <!-- /voltar --> 
       
       <!-- titulo post -->  
       <div class="row-fluid titulo-post">
-        <h2><?php $tam=45; $str=$asset->getTitle();mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+        <h2><?php echo $asset->getTitle(); ?></h2>
         <span><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
       </div>
       <!-- /titulo post -->    
