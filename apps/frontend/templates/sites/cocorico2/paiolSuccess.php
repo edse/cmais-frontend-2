@@ -9,7 +9,7 @@
 
   <!-- row-->
   <div class="row-fluid menu">
-    <div class="navbar">
+    <div class="navbar"> 
        <!--menu principal-->
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
@@ -19,6 +19,7 @@
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <ul class="breadcrumb">
     <li>
@@ -35,10 +36,10 @@
     <!-- col direita -->
     <div class="span4 col-dir">
 
-      <?php if(isset($displays['destaque-receitinhas'])):?> 
+      <?php if(isset($displays['destaque-receitinhas'])):?>  
         <?php if(count($displays['destaque-receitinhas']) > 0): ?>
  
- <?php $related1 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?> 
+ <?php $related0 = $displays['destaque-receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?> 
    <?php $related1 = $displays['destaque-receitinhas'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>    
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
