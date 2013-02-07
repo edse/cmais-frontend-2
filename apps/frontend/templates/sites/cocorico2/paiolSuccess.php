@@ -109,65 +109,36 @@
        </div>
         
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][0]->getTitle() ?>">
+        <a href="/cocorico2/series/cocorico-na-franca" title="Cocoricó na França">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
             </div>
-            <span>
-              <?php //echo $displays['destaque-series'][0]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>           
-            </span>
+            <span>Cocoricó na França</span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
          
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][1]->getTitle() ?>">
+        <a href="/cocorico2/series/toda-crianca-tem-direito" title="Toda criança tem direito<">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/toda-crianca-tem-direito.jpg" alt="Toda criança tem direito<"/>
             </div>
-            <span>
-              <?php //echo $displays['destaque-series'][1]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-            </span>
+            <span>Toda criança tem direito</span>
           </div>
         </a>
         <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][2]->getTitle() ?>">
+        <a href="/cocorico2/series/se-ligue-no-perigo" title="Se ligue no perigo">
           <div class="item">
             <div class="img-bast">
-                <!--img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/-->
-                <!--embedagram-->
-                 <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-                 <script type="text/javascript">
-                  $(document).ready(function() {
-                    $('#slideTvCocorico').embedagram({
-                      instagram_id: 290753701,
-                      limit:1,
-                      thumb_width:140,
-                      link_type:'img',
-                      success:function(){
-                        $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
-                      }
-                        });
-                      });
-                  </script>
-                  <style>
-                  #slideTvCocorico li{width:141px;} 
-                  </style>
-                  <ul id="slideTvCocorico"></ul>
-                 <!--/embedagram-->
+                <img src="/portal/images/capaPrograma/cocorico/se-ligue-no-perigo.jpg" alt="Se ligue no perigo"/>
             </div>
-            <span>
-              <?php //echo $displays['destaque-series'][2]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-            </span>
+            <span>Se ligue no perigo</span>
           </div>
         </a>
         <hr/>
