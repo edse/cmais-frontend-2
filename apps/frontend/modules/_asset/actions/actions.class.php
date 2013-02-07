@@ -691,6 +691,21 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna');
       }
       elseif($this->section->slug == "series") {
+        $this->assetsQuery = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, AssetVideo av, SectionAsset sa')
+          ->where('sa.section_id = ?', $this->section->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('av.youtube_id IS NOT NULL')
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('a.created_at desc');
+        $pagelimit = 12;
+        $this->pager = new sfDoctrinePager('Asset', $pagelimit);
+        $this->pager->setQuery($this->assetsQuery);
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+        $this->page = $request->getParameter('page');
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series'); 
       }
