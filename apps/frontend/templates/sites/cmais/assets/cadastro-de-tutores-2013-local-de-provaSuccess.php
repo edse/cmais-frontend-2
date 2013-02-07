@@ -63,38 +63,8 @@
                   <form id="form-contato" method="post" action="">
                     <input type="hidden" name="cadastro-tutoria" id="cadastro-tutoria" value="true">
                     <input type="hidden" name="section_id" id="section_id" value="2106">
-                    <p class="enun">Atividade pretendida</p>
-                    <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida1" id="presencial" value="presencial" class="atividade_pretendida" />
-                      <label>Tutor presencial</label>
-                    </div>
-                    <div class="linha t11">
-                      <input type="checkbox" name="atividade_pretendida2" id="online" value="online" class="atividade_pretendida" />
-                      <label>Tutor online</label>
-                    </div>
-                    
-                    <!--
-                    <div class="linha t1">
-                      <label>cidade</label>
-                      <select name="cidade" id="cidade">
-                        <option value="">---</option>
-                        <option value="Araçatuba">Araçatuba</option>
-                        <option value="Bauru">Bauru</option>
-                        <option value="Campinas">Campinas</option>
-                        <option value="Franca">Franca</option>
-                        <option value="Presidente Prudente">Presidente Prudente</option>
-                        <option value="Santos">Santos</option>
-                        <option value="São José do Rio Preto">São José do Rio Preto</option>
-                        <option value="São José dos Campos">São José dos Campos</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Sorocaba">Sorocaba</option>
-                      </select>
-                    </div>
-                    -->
-                    
                     
                     <span class="linhaFundo"></span> 
-                    
                     
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
