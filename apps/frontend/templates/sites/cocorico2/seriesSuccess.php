@@ -1,5 +1,6 @@
 <?php 
 $assets = $pager->getResults();
+$asset = $assets[0];
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -34,14 +35,14 @@ $assets = $pager->getResults();
   
   <!-- titulo da pagina -->
   <div class="tit-pagina span7">
-    <h2><?php $tam=32; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <h2><?php $tam=32; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
       <!-- RANKING -->
-      <?php $section = $assets[0]->getSections(); ?>
+      <?php $section = $asset->getSections(); ?>
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
       <!--/RANKING -->
   </div>
-  <a id="btn_1" href="javascript: vote('<?php echo $assets[0]->getId()?>');" class="curtir" title="Curtir">curtir</a>
+  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
   <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
@@ -49,8 +50,8 @@ $assets = $pager->getResults();
 
     <!--row-->
     <div class="row-fluid conteudo">    
-     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+     <?php if($asset->getDescription()!="") echo "<p>".$asset->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
 
