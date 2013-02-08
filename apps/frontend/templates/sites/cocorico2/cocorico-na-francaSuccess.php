@@ -1,7 +1,9 @@
-<?php 
-$assets = $pager->getResults();
-?>
-
+  <?php
+  if(!isset($asset)){
+    $assets = $pager->getResults();
+    $asset = $assets[0];
+  }
+  ?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
@@ -32,15 +34,15 @@ $assets = $pager->getResults();
   </ul>
   <!-- /breadcrumb-->
   
-  <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+  <h2 class="tit-pagina"><?php $tam=46; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
     <div class="row-fluid conteudo">  
-     <h3 class="episodio"><?php echo $assets[0]->AssetVideo->getHeadline()?></h3>  
-     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?> <p>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+     <h3 class="episodio"><?php echo $asset->AssetVideo->getHeadline()?></h3>  
+     <?php if($asset->getDescription()!="") echo "<p>".$asset->getDescription()."</p>"; ?> <p>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
 
