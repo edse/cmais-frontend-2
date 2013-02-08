@@ -13,7 +13,7 @@
   $(document).ready(function(){
     alert("teste"+$(window).width()+"/"+$('body').width());
     $('#myCarousel').carousel({
-    interval: 500
+    interval: 3000
     })
   })
 </script>
