@@ -25,10 +25,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!-- /row-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Joguinhos</li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
   <!-- /breadcrumb-->
   
   <h2 class="tit-pagina">Joguinhos</h2>

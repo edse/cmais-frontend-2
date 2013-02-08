@@ -41,7 +41,7 @@
 .bastidores .item hr{border-bottom: 1px dashed #bfd540; border-top: 1px dashed #37a16f; margin:0;}
 .bastidores .item hr.last{display:none;}
 .interatividade .item span,
-.bastidores .item span{color: #FFFFFF; display: block; max-height: 18px; line-height:18px; overflow: hidden; text-align: center;}
+.bastidores .item span{color: #FFFFFF; display: block; max-height: 16px; line-height:16px; overflow: hidden; text-align: center;}
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
 .interatividade p {color:#FFF;}

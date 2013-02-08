@@ -10,7 +10,8 @@
 .row-fluid .topo-coco { *margin-top:45px; *clear: both; }
 .relacionados .tit  {*max-width:300px; background:none !important;} 
 .tit a { padding-right:0; margin-right:9px; text-align:center; }
-/*.menu .lista-personagens { min-height:105px; }*/
+.menu .lista-personagens { min-height:95px; height:95px;}
+.menu.listao .lista-personagens { *height:600px;  }
 #convidados .span4 { margin-left:10px; }
 .paginacao .proximo { *padding-right:25px;}
 .conteudo .span3.bastidores { margin-left:10px; float:left; }
@@ -31,6 +32,7 @@
 #naweb .twitter { *margin-left:5px; }
 #agenda .acontece,
 .emfamilia .acontece { *margin-left:0px; }
-
 .modal-backdrop,
 .modal-backdrop.fade.in { opacity: 0; }
+.menu { *margin-top:-50px;}
+#radio .destaque-2 { *margin:30px 0 0 1%; background:red; }
