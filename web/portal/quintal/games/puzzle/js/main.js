@@ -85,10 +85,10 @@ init = function() {
       slideTile(emptyLoc, clickLoc);
       drawTiles();
     }
-    if (solved) {
-      setTimeout(function() {
+    if(solved) {
+      //setTimeout(function() {
         alert("Huhu! Você resolveu! Tente um nível mais difícil.");
-      }, 500);
+      //}, 500);
     }
   };
 
