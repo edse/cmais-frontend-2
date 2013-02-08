@@ -1,12 +1,4 @@
-<?php if($request->getParameter('test')): ?>
-<?php
-if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
-} 
-?>
+<?php if($_REQUEST['test']): ?>
 
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
