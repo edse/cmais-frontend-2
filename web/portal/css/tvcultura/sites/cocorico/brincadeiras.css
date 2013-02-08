@@ -162,7 +162,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .destaque-home-tv h2,
 .tvcoco h2 { font-size:20px; text-transform:uppercase; font-weight:normal; margin-top:10px;}
 .convidado.span12 { background:#dd582a; color:#f8b145; overflow:hidden; }
-.convidado.span12 img { margin:-25px 0;}
+/*.convidado.span12 img { margin:-25px 0;}*/
 .convidado.span12 p { background:#DD582A; color: #F8B145; position: relative; z-index: 100;}
 .enquete.span12 { background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x top ;}
 .tvcoco .mais { top:195px; background-position:-36px; z-index: 200; }
