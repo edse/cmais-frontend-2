@@ -375,58 +375,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
-<!-- /container-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script>
-$(document).ready(function(){
-      /* form tv cocorico */
-  $('.btn-form').click(function(){
-   $('.destaque-home-tv').hide();
-   $('.interatividade').fadeIn("fast"); 
-  })
-  $('#votar-input').click(function(){
-    $('label.error').css('display','none');
-  });
-  //valida form
-  var validator = $('.form-voto').validate({
-    submitHandler: function(form){
-      sendAnswer()
-    },
-    rules:{
-        opcao:{
-          required: true
-        }
-      },
-      messages:{
-        opcao: ""
-      }
-    });
-});
-//enviar voto
-function sendAnswer(){
-  $.ajax({
-    type: "POST",
-    dataType: "json",
-    data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
-    url: "<?php echo url_for('homepage')?>ajax/enquetes",
-    beforeSend: function(){
-      $('.votar').hide();
-      $('#ajax-loader').show();
-    },
-    success: function(data){
-      $(".form-voto").hide();
-      $("form.inativo").fadeIn("fast");
-      var i=0;
-      $.each(data, function(key, val) {
-        
-        $('.resposta-'+i).html(parseInt(parseFloat(val.votes))+"%");
-        i++;
-      });
-    }
-  });
-  
-}
-</script>
+
 <!--form-->
 <script type="text/javascript">
   $(document).ready(function(){
