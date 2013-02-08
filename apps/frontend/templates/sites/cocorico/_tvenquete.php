@@ -11,7 +11,7 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
   <h3>enquete do dia</h3>
   <p><?php echo $q;?></p>
   <!--Pergunta-->
-  <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" style="min-width:296px; ">
+  <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" style="min-width:296px;min-height: 200px; ">
     <?php 
     $form = new BaseForm();
     echo $form->renderHiddenFields();
