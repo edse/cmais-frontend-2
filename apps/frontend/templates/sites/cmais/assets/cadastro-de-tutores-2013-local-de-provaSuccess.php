@@ -1,3 +1,4 @@
+<?php if($_REQUEST['test']): ?>
 
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
@@ -200,3 +201,8 @@
           $(textCounter).html(limitNum - limitField.value.length);
       }
     </script>
+    
+<?php else: ?>
+  <?php header("Location: http://cmais.com.br"); ?>
+  <?php die(); ?>
+<?php endif; ?>
