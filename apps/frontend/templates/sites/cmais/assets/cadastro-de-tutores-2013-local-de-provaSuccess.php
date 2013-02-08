@@ -150,7 +150,7 @@
           submitHandler: function(form){
             $.ajax({
               type: "POST",
-              dataType: "text",
+              dataType: "json",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
@@ -159,8 +159,8 @@
                 $('img#ajax-loader').show();
               },
               success: function(data){
-                alert(data);
-              $('input#enviar').removeAttr('disabled');
+                //alert(data);
+                $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
                 if(data == "0"){
                   $("#form-contato").clearForm();
