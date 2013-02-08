@@ -175,6 +175,9 @@
                   $(".msgErroCPF").show();
                   $('img#ajax-loader').hide();
                 }
+                else {
+                  alert('Erro inesperado!');
+                }
               }
             });         
           },
