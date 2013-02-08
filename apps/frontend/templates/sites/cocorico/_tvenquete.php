@@ -28,8 +28,8 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
     </div>
     <?php endfor; ?>
     <div class="votar span12">
-      <div class="ajax-loader">
-       <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+      <div class="ajax-loader" style="height:20px;display:none;">
+       <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader"/>
       </div>
       <span></span>
       <input id="votar-input" class="span11" type="submit" value="votar" />
@@ -87,7 +87,7 @@ function sendAnswer(){
     url: "<?php echo url_for('homepage')?>ajax/enquetes",
     beforeSend: function(){
       $('.votar').hide();
-      $('#ajax-loader').show();
+      $('.ajax-loader').show();
     },
     success: function(data){
       $(".form-voto").hide();
