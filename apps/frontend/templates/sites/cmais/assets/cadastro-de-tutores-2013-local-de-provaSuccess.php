@@ -70,7 +70,7 @@
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="http://cmais.com.br/actions/cadastro-de-tutores/action.php">
+                  <form id="form-contato" method="post" action="">
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
@@ -152,6 +152,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
