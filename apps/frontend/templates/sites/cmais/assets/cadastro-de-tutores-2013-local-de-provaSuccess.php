@@ -53,11 +53,19 @@
                     </div>
                     <hr />
                   </div>
+                  <div class="msgErroCPF" style="display:none">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">CPF Inválido! Sua mensagem não pôde ser enviada.</p>
+                      <p>Confirme se você preencheu o CPF corretamente e tente novamente.</p>
+                    </div>
+                    <hr />
+                  </div>
                   <div class="msgAcerto" style="display:none">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p class="aviso">Segunda etapa do processo enviada com sucesso!</p>
+                      <p></p>
                     </div>
                     <hr />
                   </div>
@@ -153,14 +161,18 @@
               success: function(data){
               $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
-                if(data == "1"){
+                if(data == "0"){
                   $("#form-contato").clearForm();
                   $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
-                else {
+                else if (data == "1") {
                   $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if (data == "2") {
+                  $(".msgErroCPF").show();
                   $('img#ajax-loader').hide();
                 }
               }

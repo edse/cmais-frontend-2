@@ -12,27 +12,28 @@ if($campos['captcha']) {
       $content = $campos['nome'] . ", " . $campos['cpf'] . ", " . $campos['cidade'] . "\n";
       $fp = fopen($filename, 'a+');
       if(fwrite($fp, $content)){
-        header("location: http://cmais.com.br/cadastro-de-tutores-2013-sucesso");
-        die();
+        //header("location: http://cmais.com.br/cadastro-de-tutores-2013-sucesso");
+        //die();
+        die("0");
       }
       else{
-        header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro");
-        die();
+        //header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro");
+        die("1");
       }
     }
     else{
-      header("location: http://cmais.com.br/cadastro-de-tutores-2013-cpf-invalido");
-      die();
+      //header("location: http://cmais.com.br/cadastro-de-tutores-2013-cpf-invalido");
+      die("2");
     } 
   }
   else {
-    header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro.php");
-    die();
+    //header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro.php");
+    die("1");
   }
 }
 else{
-  header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro");
-  die();
+  //header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro");
+  die("0");
 }
 
 ?>
