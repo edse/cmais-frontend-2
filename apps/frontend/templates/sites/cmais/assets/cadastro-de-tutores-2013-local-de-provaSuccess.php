@@ -1,4 +1,5 @@
 <?php if($_REQUEST['test']): ?>
+  <?php if($_REQUEST['nome']): ?>
 
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
@@ -70,7 +71,7 @@
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
-                      <input type="text" name="nome" id="nome" style="width:626px" value="<?php echo urldecode($_REQUEST['nome']) ?>" />
+                      <input type="text" name="nome" id="nome" style="width:626px" value="<?php if (isset($_REQUEST['nome'])): ?><?php echo urldecode($_REQUEST['nome']) ?><?php endif; ?>" />
                     </div>
                     
                     <div class="linha t2">
@@ -135,6 +136,8 @@
     <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
     
     <script type="text/javascript">
+    
+      $(document).ready(function(){
     
         $("#cpf").mask("999.999.999-99");
         
@@ -201,7 +204,10 @@
           $(textCounter).html(limitNum - limitField.value.length);
       }
     </script>
-    
+  <?php else: ?>
+    <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
+    <?php die(); ?>
+  <?php endif; ?>
 <?php else: ?>
   <?php header("Location: http://cmais.com.br"); ?>
   <?php die(); ?>
