@@ -53,11 +53,7 @@
   <!-- /row-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb personagem">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/personagens">Personagens</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $section->getTitle() ?></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
 
   <!--btn voltar-->
