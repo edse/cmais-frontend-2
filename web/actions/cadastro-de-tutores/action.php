@@ -1,5 +1,5 @@
 <?php
-
+die("2");
 $campos["nome"] = $_REQUEST["nome"];
 $campos["cpf"] = $_REQUEST["cpf"];
 $campos["cidade"] = $_REQUEST["cidade"];
