@@ -23,7 +23,7 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
     <li>
-      <a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->retriveUrl(); ?></a><span class="divider">&rsaquo;</span>
+      <a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a><span class="divider">&rsaquo;</span>
     </li>
      <li class="active">
       <?php echo $section->getTitle(); ?>

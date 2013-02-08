@@ -20,11 +20,7 @@
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/joguinhos">Joguinhos</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle() ?></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-asset', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?>
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
