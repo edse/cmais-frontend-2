@@ -104,7 +104,7 @@
        
          
         <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/brincadeiras-francesas-cocorico-na-franca" title="Cocoricó na França">
+        <a href="http://cmais.com.br/cocorico2/series/cocorico-na-franca" title="Cocoricó na França">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
@@ -117,7 +117,7 @@
         <!-- /item -->
         
         <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito-a-perguntar-o-que-quiser-cocorico">
+        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Toda Criança tem Direito"/>
@@ -130,7 +130,7 @@
         <!-- /item -->
         
          <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito-a-perguntar-o-que-quiser-cocorico">
+        <a href="http://cmais.com.br/cocorico2/series/se-liga-no-perigo">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>

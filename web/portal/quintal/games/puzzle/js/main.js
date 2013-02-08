@@ -1,18 +1,3 @@
-init = function () {
-	
-    var canvas = document.getElementById("puzzle");
-    var context = canvas.getContext("2d");
-
-var boardSize = document.getElementById('puzzle').width;
-var tileCount = 2;
-
-var tileSize = boardSize / tileCount;
-
-
-var img = new Image();
-img.src = 'cocorico-pascoa-quadrado.jpg';
-img.addEventListener('load', drawTiles, false);
-
 var clickLoc = new Object;
 clickLoc.x = 0;
 clickLoc.y = 0;
@@ -24,147 +9,167 @@ emptyLoc.y = 0;
 var solved = false;
 
 var boardParts = new Object;
-setBoard();
 
-function clickplay(){
-  if(this.click.currentTime)
+init = function() {
+
+  var canvas = document.getElementById("puzzle");
+  var context = canvas.getContext("2d");
+
+  var boardSize = document.getElementById('puzzle').width;
+  var tileCount = 2;
+
+  var tileSize = boardSize / tileCount;
+
+  var img = new Image();
+  img.src = './img/cocorico-pascoa-quadrado.jpg';
+  img.addEventListener('load', drawTiles, false);
+
+  setBoard();
+
+  bgplay();
+
+  document.getElementById('musica').onclick = function() {
+    if (this.value == "Sem música") {
+      this.value = "Com música";
+      $("#ovo").animate({
+        top : 200,
+        height : 450
+      });
+      bgstop();
+    } else {
+      this.value = "Sem música";
+      bgplay();
+    }
+  };
+
+  document.getElementById('scale2').onclick = function() {
+    tileCount = this.value;
+    tileSize = boardSize / tileCount;
+    setBoard();
+    drawTiles();
+  };
+  document.getElementById('scale3').onclick = function() {
+    tileCount = this.value;
+    tileSize = boardSize / tileCount;
+    setBoard();
+    drawTiles();
+  };
+  document.getElementById('scale4').onclick = function() {
+    tileCount = this.value;
+    tileSize = boardSize / tileCount;
+    setBoard();
+    drawTiles();
+  };
+  document.getElementById('scale5').onclick = function() {
+    tileCount = this.value;
+    tileSize = boardSize / tileCount;
+    setBoard();
+    drawTiles();
+  };
+  document.getElementById('scale6').onclick = function() {
+    tileCount = this.value;
+    tileSize = boardSize / tileCount;
+    setBoard();
+    drawTiles();
+  };
+
+  document.getElementById('puzzle').onmousemove = function(e) {
+    clickLoc.x = Math.floor((e.pageX - this.offsetLeft) / tileSize);
+    clickLoc.y = Math.floor((e.pageY - this.offsetTop) / tileSize);
+  };
+
+  document.getElementById('puzzle').onclick = function() {
+    console.log(distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y));
+    if (distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
+      clickplay();
+      slideTile(emptyLoc, clickLoc);
+      drawTiles();
+    }
+    if (solved) {
+      setTimeout(function() {
+        alert("Huhu! Você resolveu! Tente um nível mais difícil.");
+      }, 500);
+    }
+  };
+
+  function setBoard() {
+    boardParts = new Array(tileCount);
+    for (var i = 0; i < tileCount; ++i) {
+      boardParts[i] = new Array(tileCount);
+      for (var j = 0; j < tileCount; ++j) {
+        boardParts[i][j] = new Object;
+        boardParts[i][j].x = (tileCount - 1) - i;
+        boardParts[i][j].y = (tileCount - 1) - j;
+      }
+    }
+    emptyLoc.x = boardParts[tileCount - 1][tileCount - 1].x;
+    emptyLoc.y = boardParts[tileCount - 1][tileCount - 1].y;
+    solved = false;
+  }
+
+  function drawTiles() {
+    context.clearRect(0, 0, boardSize, boardSize);
+    for (var i = 0; i < tileCount; ++i) {
+      for (var j = 0; j < tileCount; ++j) {
+        var x = boardParts[i][j].x;
+        var y = boardParts[i][j].y;
+        if (i != emptyLoc.x || j != emptyLoc.y || solved == true) {
+          context.drawImage(img, x * tileSize, y * tileSize, tileSize, tileSize, i * tileSize, j * tileSize, tileSize, tileSize);
+        }
+      }
+    }
+  }
+
+  function distance(x1, y1, x2, y2) {
+    return Math.abs(x1 - x2) + Math.abs(y1 - y2);
+  }
+
+  function slideTile(toLoc, fromLoc) {
+    if (!solved) {
+      boardParts[toLoc.x][toLoc.y].x = boardParts[fromLoc.x][fromLoc.y].x;
+      boardParts[toLoc.x][toLoc.y].y = boardParts[fromLoc.x][fromLoc.y].y;
+      boardParts[fromLoc.x][fromLoc.y].x = tileCount - 1;
+      boardParts[fromLoc.x][fromLoc.y].y = tileCount - 1;
+      toLoc.x = fromLoc.x;
+      toLoc.y = fromLoc.y;
+      checkSolved();
+    }
+  }
+
+  function checkSolved() {
+    var flag = true;
+    for (var i = 0; i < tileCount; ++i) {
+      for (var j = 0; j < tileCount; ++j) {
+        if (boardParts[i][j].x != i || boardParts[i][j].y != j) {
+          flag = false;
+        }
+      }
+    }
+    solved = flag;
+  }
+
+}
+
+window.onload = function() {
+  init();
+}
+
+
+function clickplay() {
+  if (this.click.currentTime)
     this.click.currentTime = 0;
   this.click.play();
 }
-function bgplay(){
-  if(this.bg.currentTime)
+
+function bgplay() {
+  if (this.bg.currentTime)
     this.bg.currentTime = 0;
   this.bg.play();
 }
-function bgstop(){
+
+function bgstop() {
   this.bg.pause();
-  if(this.bg.currentTime)
+  if (this.bg.currentTime)
     this.bg.currentTime = 0;
 }
 
-bgplay();
-
-/*
-
-document.getElementById('musica').onclick = function() {
-  if(this.value == "Sem música"){
-    this.value = "Com música";$("#ovo").animate({ top: 200, height: 450 });
-    bgstop();
-  }
-  else{
-    this.value = "Sem música";
-    bgplay();
-  }
-};
-
-document.getElementById('scale2').onclick = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-document.getElementById('scale3').onclick = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-document.getElementById('scale4').onclick = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-document.getElementById('scale5').onclick = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-document.getElementById('scale6').onclick = function() {
-  tileCount = this.value;
-  tileSize = boardSize / tileCount;
-  setBoard();
-  drawTiles();
-};
-
-*/
-
-document.getElementById('puzzle').onmousemove = function(e) {
-  clickLoc.x = Math.floor((e.pageX - this.offsetLeft) / tileSize);
-  clickLoc.y = Math.floor((e.pageY - this.offsetTop) / tileSize);
-};
-
-document.getElementById('puzzle').onclick = function() {
-  if(distance(clickLoc.x, clickLoc.y, emptyLoc.x, emptyLoc.y) == 1) {
-    clickplay();
-    slideTile(emptyLoc, clickLoc);
-    drawTiles();
-  }
-  if(solved) {
-    setTimeout(function() {alert("Huhu! Você resolveu! Tente um nível mais difícil.");}, 500);
-  }
-};
-
-function setBoard() {
-  boardParts = new Array(tileCount);
-  for (var i = 0; i < tileCount; ++i) {
-    boardParts[i] = new Array(tileCount);
-    for (var j = 0; j < tileCount; ++j) {
-      boardParts[i][j] = new Object;
-      boardParts[i][j].x = (tileCount - 1) - i;
-      boardParts[i][j].y = (tileCount - 1) - j;
-    }
-  }
-  emptyLoc.x = boardParts[tileCount - 1][tileCount - 1].x;
-  emptyLoc.y = boardParts[tileCount - 1][tileCount - 1].y;
-  solved = false;
-}
-
-function drawTiles() {
-  context.clearRect ( 0 , 0 , boardSize , boardSize );
-  for (var i = 0; i < tileCount; ++i) {
-    for (var j = 0; j < tileCount; ++j) {
-      var x = boardParts[i][j].x;
-      var y = boardParts[i][j].y;
-      if(i != emptyLoc.x || j != emptyLoc.y || solved == true) {
-        context.drawImage(img, x * tileSize, y * tileSize, tileSize, tileSize,
-            i * tileSize, j * tileSize, tileSize, tileSize);
-      }
-    }
-  }
-}
-
-function distance(x1, y1, x2, y2) {
-  return Math.abs(x1 - x2) + Math.abs(y1 - y2);
-}
-
-function slideTile(toLoc, fromLoc) {
-  if (!solved) {
-    boardParts[toLoc.x][toLoc.y].x = boardParts[fromLoc.x][fromLoc.y].x;
-    boardParts[toLoc.x][toLoc.y].y = boardParts[fromLoc.x][fromLoc.y].y;
-    boardParts[fromLoc.x][fromLoc.y].x = tileCount - 1;
-    boardParts[fromLoc.x][fromLoc.y].y = tileCount - 1;
-    toLoc.x = fromLoc.x;
-    toLoc.y = fromLoc.y;
-    checkSolved();
-  }
-}
-
-function checkSolved() {
-  var flag = true;
-  for (var i = 0; i < tileCount; ++i) {
-    for (var j = 0; j < tileCount; ++j) {
-      if (boardParts[i][j].x != i || boardParts[i][j].y != j) {
-        flag = false;
-      }
-    }
-  }
-  solved = flag;
-}
-
-}
-
-window.onload = function () {
-	init();
-}

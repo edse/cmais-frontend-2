@@ -41,6 +41,12 @@ class _siteActions extends sfActions
       		die();
       	}
       }
+      elseif($this->site->slug == "cocorico2"){
+        if(!$request->getParameter('test')){
+          header("Location: http://www3.tvcultura.com.br/cocorico");
+          die();
+        }
+      }
       elseif($this->site->slug == "doctv"){
       	if(!$request->getParameter('test')){
       		header("Location: http://www3.tvcultura.com.br/doctv");

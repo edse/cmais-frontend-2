@@ -1,7 +1,6 @@
-<?php if($_REQUEST['test']): ?>
   <?php if($_REQUEST['nome']): ?>
 
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+    <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
     <?php use_helper('I18N', 'Date') ?>
@@ -45,7 +44,7 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
         
-                  <div class="msgErro" style="display:none">
+                  <div class="msgErro" style="display:none; min-height: 80px  ">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -53,19 +52,24 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgAcerto" style="display:none">
+                  <div class="msgErro" style="display:none; min-height: 80px" id="msgErroCPF">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">CPF Inválido! Sua mensagem não pôde ser enviada.</p>
+                      <p>Confirme se você preencheu o CPF corretamente e tente novamente.</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgAcerto" style="display:none; min-height: 80px">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p>Dados da segunda etapa do processo foram enviados.</p>
                     </div>
                     <hr />
                   </div>
                   
                   <form id="form-contato" method="post" action="">
-                    <input type="hidden" name="cadastro-tutoria" id="cadastro-tutoria" value="true">
-                    <input type="hidden" name="section_id" id="section_id" value="2106">
-                    
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
@@ -139,7 +143,7 @@
     
       $(document).ready(function(){
     
-        $("#cpf").mask("999.999.999-99");
+        //$("#cpf").mask("999.999.999-99");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
@@ -147,6 +151,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
@@ -154,17 +159,24 @@
                 $('img#ajax-loader').show();
               },
               success: function(data){
-              $('input#enviar').removeAttr('disabled');
+                $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
-                if(data == "1"){
+                if(data == "0"){
                   $("#form-contato").clearForm();
                   $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
-                else {
+                else if (data == "1") {
                   $(".msgErro").show();
                   $('img#ajax-loader').hide();
+                }
+                else if (data == "2") {
+                  $("#msgErroCPF").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  alert('Erro inesperado!');
                 }
               }
             });         
@@ -176,7 +188,7 @@
             },
             cpf:{
               required: true,
-              minlength: 11
+              minlength: 9
             },
             cidade:{
               required: true
@@ -195,20 +207,8 @@
         });
       });
       
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
-      }
     </script>
   <?php else: ?>
     <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
     <?php die(); ?>
   <?php endif; ?>
-<?php else: ?>
-  <?php header("Location: http://cmais.com.br"); ?>
-  <?php die(); ?>
-<?php endif; ?>
