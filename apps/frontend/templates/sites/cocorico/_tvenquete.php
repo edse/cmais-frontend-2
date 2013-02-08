@@ -86,7 +86,7 @@ function sendAnswer(){
     data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
     url: "<?php echo url_for('homepage')?>ajax/enquetes",
     beforeSend: function(){
-      $('.votar').hide();
+      $('#votar-input').hide();
       $('#ajax-loader').show();
     },
     success: function(data){
