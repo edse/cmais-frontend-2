@@ -63,4 +63,7 @@ if(isset($pager)){
     </div>
     <!-- / CAPA SITE -->
     
+<?php else: ?>
+  <?php header("Location: http://cmais.com.br"); ?>
+  <?php die(); ?>
 <?php endif; ?>
