@@ -1,7 +1,7 @@
 <?php if($_REQUEST['test']): ?>
   <?php if($_REQUEST['nome']): ?>
 
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+    <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
     <?php use_helper('I18N', 'Date') ?>
