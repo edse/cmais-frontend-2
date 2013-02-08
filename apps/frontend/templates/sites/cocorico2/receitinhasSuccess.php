@@ -21,14 +21,14 @@
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       <!--/menu personagens -->
     </div>
-  </div>
+  </div> 
   <!-- /row-->
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle() ?></li>
+     <li class="active">Receitinhas</li>
   </ul>
   <!-- /breadcrumb-->
   
