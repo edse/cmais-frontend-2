@@ -1,4 +1,8 @@
 <ul class="breadcrumb">
+   <?php
+   $parent = $section->Parent->getParentSectionId();
+   echo $parent . ">>>>>>>>>>>";
+   ?>
    <li><a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
    
    <?php if (isset($asset)):?>
