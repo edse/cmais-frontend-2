@@ -82,7 +82,7 @@ var validator = $('.form-voto').validate({
 function sendAnswer(){
   $.ajax({
     type: "POST",
-    dataType: "json",
+    dataType: "json", 
     data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
     url: "<?php echo url_for('homepage')?>ajax/enquetes",
     beforeSend: function(){
