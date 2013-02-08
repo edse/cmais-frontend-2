@@ -12,9 +12,9 @@
 <script>
   $(document).ready(function(){
     //alert("teste"+$(window).width()+"/"+$('body').width());
-    $('#myCarousel').carousel({
-    interval: 3000
-    })
+    //$('#myCarousel').carousel({
+    //interval: 3000
+    //})
   })
 </script>
 
