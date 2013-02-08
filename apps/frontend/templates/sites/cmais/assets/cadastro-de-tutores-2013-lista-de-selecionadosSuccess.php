@@ -6,6 +6,10 @@
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+    <style type="text/css">
+    table a { color:#ff6633; } 
+    table tr { margin-bottom:5px; display:block; }               
+    </style>
     <!-- CAPA SITE -->
     <div id="capa-site">
 
@@ -32,7 +36,7 @@
                   <br />
                   <h4 style="color:#333; margin-bottom:10px">Lista em ordem alfabética de candidatos selecionados para participar da prova</h4>
                   <p>Clique em seu nome para escolher o local da prova.</p>
-                  
+                 
                   <div class="texto" style="margin-top:30px">
 
                       <table>

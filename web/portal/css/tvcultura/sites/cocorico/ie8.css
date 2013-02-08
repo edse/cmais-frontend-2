@@ -35,4 +35,6 @@
 .modal-backdrop,
 .modal-backdrop.fade.in { opacity: 0; }
 .menu { *margin-top:-50px;}
-#radio .destaque-2 { *margin:30px 0 0 1.5%; background:red; }
+#box-destaque .destaque-2,
+#radio .destaque-2 { *margin:30px 0 0 1.5%;}
+.tit-pagina.instagram { *width:500px;  background:red; }

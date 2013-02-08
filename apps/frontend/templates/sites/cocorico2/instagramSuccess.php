@@ -4,6 +4,7 @@
 <script type="text/javascript" src="/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript" src="/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
 <link rel="stylesheet" href="/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
 <!--/FANCYBOX-->
 
 <!-- container-->
@@ -48,7 +49,7 @@
 </div>
 <!-- /container-->
 <!--embedagram-->
-<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+
 <script type="text/javascript">
 $('#slideTvCocorico').embedagram({
     instagram_id: 290753701,
@@ -56,9 +57,7 @@ $('#slideTvCocorico').embedagram({
     link_type:'img',
     thumb_width:300,
     success: function (){ 
-        $('#slideTvCocorico li a')
-          .addClass('fancybox-media')
-          .attr('rel','instagram');
+        $('#slideTvCocorico li a').addClass('fancybox-media').attr('rel','instagram');
         $('#slideTvCocorico a img').each(function(index) {
       var titulo = $(this).attr('title');
       $(this).parent().attr('title', titulo)
