@@ -144,7 +144,7 @@
     
       $(document).ready(function(){
     
-        $("#cpf").mask("999.999.999-99");
+        //$("#cpf").mask("999.999.999-99");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
@@ -161,17 +161,17 @@
               success: function(data){
                 $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
-                if(data == 0){
+                if(data == "0){
                   $("#form-contato").clearForm();
                   $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
-                else if (data == 1) {
+                else if (data == "1") {
                   $(".msgErro").show();
                   $('img#ajax-loader').hide();
                 }
-                else if (data == 2) {
+                else if (data == "2") {
                   $(".msgErroCPF").show();
                   $('img#ajax-loader').hide();
                 }
@@ -188,7 +188,7 @@
             },
             cpf:{
               required: true,
-              minlength: 14
+              minlength: 9
             },
             cidade:{
               required: true
