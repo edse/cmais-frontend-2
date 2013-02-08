@@ -11,9 +11,9 @@
 
 <script>
   $(document).ready(function(){
-    
+    //alert("teste"+$(window).width()+"/"+$('body').width());
     $('#myCarousel').carousel({
-    interval: 5000
+    interval: 3000
     })
   })
 </script>
