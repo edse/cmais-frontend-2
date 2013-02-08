@@ -160,7 +160,7 @@
               },
               success: function(data){
                 //alert(data);
-              $('input#enviar').removeAttr('disabled');
+                $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
                 if(data == "0"){
                   $("#form-contato").clearForm();
