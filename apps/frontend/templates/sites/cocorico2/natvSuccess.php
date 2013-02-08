@@ -24,11 +24,7 @@
   <!-- /menu-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Na TV</li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
     
   <h2 class="tit-pagina">na tv</h2>

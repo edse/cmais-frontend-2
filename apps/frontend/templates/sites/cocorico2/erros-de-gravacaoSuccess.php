@@ -18,7 +18,7 @@ $assets = $pager->getResults();
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?> 
       <!--/menu personagens -->
       </div>
     </div>
@@ -26,11 +26,7 @@ $assets = $pager->getResults();
   <!-- /row--> 
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/tvcocorico">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $section->getTitle() ?></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   
   <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
