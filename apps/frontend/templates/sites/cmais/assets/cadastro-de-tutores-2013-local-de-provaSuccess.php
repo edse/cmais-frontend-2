@@ -1,4 +1,3 @@
-<?php if($_REQUEST['test']): ?>
   <?php if($_REQUEST['nome']): ?>
 
     <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
@@ -213,7 +212,3 @@
     <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
     <?php die(); ?>
   <?php endif; ?>
-<?php else: ?>
-  <?php header("Location: http://cmais.com.br"); ?>
-  <?php die(); ?>
-<?php endif; ?>
