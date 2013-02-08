@@ -67,6 +67,7 @@ class _sectionActions extends sfActions
 
       // current site
       $this->site = $this->section->Site;
+      
 	    /*
   	  if($this->site->getSlug() == "cocorico2") {
           $this->setLayout('cocorico');
