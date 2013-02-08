@@ -45,7 +45,7 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
         
-                  <div class="msgErro" style="display:none">
+                  <div class="msgErro" style="display:none; min-height: 80px">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -53,7 +53,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErroCPF" style="display:none">
+                  <div class="msgErroCPF" style="display:none; min-height: 80px">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">CPF Inválido! Sua mensagem não pôde ser enviada.</p>
@@ -61,16 +61,16 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgAcerto" style="display:none">
+                  <div class="msgAcerto" style="display:none; min-height: 80px">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Segunda etapa do processo enviada com sucesso!</p>
-                      <p></p>
+                      <p class="aviso">Mensagem enviada com sucesso!</p>
+                      <p>Dados da segunda etapa do processo foram enviados.</p>
                     </div>
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="http://cmais.com.br/actions/cadastro-de-tutores/action.php">
+                  <form id="form-contato" method="post" action="">
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
@@ -152,6 +152,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
@@ -207,14 +208,6 @@
         });
       });
       
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
-      }
     </script>
   <?php else: ?>
     <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
