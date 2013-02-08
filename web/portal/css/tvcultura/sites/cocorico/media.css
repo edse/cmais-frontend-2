@@ -38,7 +38,7 @@
 */
 @media (max-width: 964px),
 @media (max-width: 1200px) { 
-  body { background:blue; }
+  body { background:red; }
   .conteudo { margin:2% 0;}
   .topo-coco h1 { margin:0 1% 0 0 ; }
   .topo-coco { margin:10px 0; }
