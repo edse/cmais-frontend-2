@@ -725,8 +725,8 @@ class _assetActions extends sfActions
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
         $this->page = $request->getParameter('page');
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series'); 
+        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/toda-crianca-tem-direito';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/toda-crianca-tem-direito'); 
       }
       elseif($this->section->slug == "cocorico-na-franca") {
         $this->assetsQuery = Doctrine_Query::create()
@@ -744,8 +744,8 @@ class _assetActions extends sfActions
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
         $this->page = $request->getParameter('page');
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series'); 
+        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca'); 
       }
       elseif($this->section->slug == "se-liga-no-perigo") {
         $this->assetsQuery = Doctrine_Query::create()
@@ -763,8 +763,8 @@ class _assetActions extends sfActions
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
         $this->page = $request->getParameter('page');
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/series'); 
+        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/se-liga-no-perigo';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/se-liga-no-perigo'); 
       }
        elseif($this->section->slug == "imprima-e-brinque") {
         if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/imprima-e-brinque-interna';

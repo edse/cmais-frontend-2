@@ -21,14 +21,7 @@
   <!-- /row-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li>
-      <a href="/cocorico">Cocoricó</a><span class="divider">&rsaquo;</span>
-    </li>
-     <li class="active">
-      Paiol
-    </li>
-  </ul>
+   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Paiol</h2>
   <!--row conteudo -->
@@ -44,7 +37,7 @@
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
-        <h2>Cozinha da amiga da zazá</h2> 
+        <h2>Receitinhas</h2> 
         <a class="convidado span12" href="<?php echo $displays['destaque-receitinhas'][0]->Asset->retriveUrl() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
@@ -93,8 +86,7 @@
       </div>
       <!-- /destaque-home -->
 
-      <?php if(isset($displays['destaque-series'])):?> 
-        <?php if(count($displays['destaque-series']) > 0): ?>
+     
                     
        <!-- bastidores -->
       <div class="bastidores fonte span3">
@@ -109,74 +101,49 @@
          </div>
        </div>
         
-        <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][0]->getTitle() ?>">
-          <div class="item">
-            <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][0]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][0]->getTitle() ?>"/>
-            </div>
-            <span>
-              <?php //echo $displays['destaque-series'][0]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>           
-            </span>
-          </div>
-        </a>
-        <hr/>
-        <!-- /item -->
+       
          
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][1]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][1]->getTitle() ?>">
+        <a href="http://cmais.com.br/cocorico2/series/brincadeiras-francesas-cocorico-na-franca" title="Cocoricó na França">
           <div class="item">
             <div class="img-bast">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][1]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][1]->getTitle() ?>"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
             </div>
             <span>
-              <?php //echo $displays['destaque-series'][1]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+              Cocoricó na França
             </span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
         
         <!-- item -->
-        <a href="<?php echo $displays['destaque-series'][2]->retriveUrl() ?>" title="<?php echo $displays['destaque-series'][2]->getTitle() ?>">
+        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito-a-perguntar-o-que-quiser-cocorico">
           <div class="item">
             <div class="img-bast">
-                <!--img src="http://img.youtube.com/vi/<?php echo $displays['destaque-series'][2]->Asset->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['destaque-series'][2]->getTitle() ?>"/-->
-                <!--embedagram-->
-                 <script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-                 <script type="text/javascript">
-                  $(document).ready(function() {
-                    $('#slideTvCocorico').embedagram({
-                      instagram_id: 290753701,
-                      limit:1,
-                      thumb_width:140,
-                      link_type:'img',
-                      success:function(){
-                        $('#slideTvCocorico li a').attr('href', '/instagram').attr('target', '_self');
-                      }
-                        });
-                      });
-                  </script>
-                  <style>
-                  #slideTvCocorico li{width:141px;} 
-                  </style>
-                  <ul id="slideTvCocorico"></ul>
-                 <!--/embedagram-->
+                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Toda Criança tem Direito"/>
             </div>
             <span>
-              <?php //echo $displays['destaque-series'][2]->getTitle() ?>
-              <?php $tam=18; $str=$displays['destaque-series'][2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+              Toda Criança tem Direito
             </span>
           </div>
         </a>
-        <hr/>
+        <!-- /item -->
+        
+         <!-- item -->
+        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito-a-perguntar-o-que-quiser-cocorico">
+          <div class="item">
+            <div class="img-bast">
+                <img src="/portal/images/capaPrograma/cocorico/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
+            </div>
+            <span>
+              Se Liga no Perigo
+            </span>
+          </div>
+        </a>
         <!-- /item -->
       </div>
       <!-- /bastidores -->
-       <?php endif; ?>
-      <?php endif; ?>
+  
             
 
     </div>
