@@ -185,10 +185,10 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .bastidores .topo .bac-yellow { border:2px solid #f8b145; }
 .ico-seta-titulo {right: 40%; top:26px; background-position:0 -13px;}
 .bastidores .topo { background-image:url(/portal/images/capaPrograma/cocorico/atividades-pattern.jpg);  }
-.bastidores .item {  background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x bottom; height:104px; }
-.bastidores .item span { margin-top:-1px; display:block; }
-.bastidores .img-bast { /*margin-bottom:2px; */ margin:0;}
-.bastidores .img-bast img { margin: -6px 0; min-width: 136px;}
+.bastidores .item {  background:url(/portal/images/capaPrograma/cocorico/pontilhado-laranja.jpg) repeat-x bottom; height:102px; }
+.bastidores .item span { display:block; }
+.bastidores .img-bast { margin:0;}
+.bastidores .img-bast img { min-width: 136px;}
 .destaque-home-tv .btn-destaque:hover { color:#fff; }
 .destaque2 .radio .icon-music {  background:url(/portal/images/capaPrograma/cocorico/ico-musica.png) no-repeat; width:38px; height:38px; float:left; z-index: 100; position: relative }
 .destaque2 .radio { padding:0; }
