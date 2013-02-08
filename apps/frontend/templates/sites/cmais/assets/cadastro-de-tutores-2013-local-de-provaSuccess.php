@@ -62,10 +62,7 @@
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="">
-                    <input type="hidden" name="cadastro-tutoria" id="cadastro-tutoria" value="true">
-                    <input type="hidden" name="section_id" id="section_id" value="2106">
-                    
+                  <form id="form-contato" method="post" action="/actions/cadastro-de-tutores/action.php">
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
