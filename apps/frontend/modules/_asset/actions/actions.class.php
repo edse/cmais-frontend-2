@@ -31,7 +31,16 @@ class _assetActions extends sfActions
 				die();
 			}
       
+      if($this->site->getSlug() == "cocorico2") {
+          if(!$request->getParameter('test')){
+            header("Location: http://www3.tvcultura.com.br/cocorico");
+            die();
+          }
+      }      
+      
       $this->setLayout('layout_asset');
+      
+      
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
