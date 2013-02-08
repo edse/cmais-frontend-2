@@ -153,8 +153,6 @@ init = function() {
 window.onload = function() {
   init();
 }
-
-
 function clickplay() {
   if (this.click.currentTime)
     this.click.currentTime = 0;
@@ -173,3 +171,11 @@ function bgstop() {
     this.bg.currentTime = 0;
 }
 
+function getPos(el) {
+  // yay readability
+  for (var lx = 0, ly = 0; el != null; lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+  return {
+    x : lx,
+    y : ly
+  };
+}
