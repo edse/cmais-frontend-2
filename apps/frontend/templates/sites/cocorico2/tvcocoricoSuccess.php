@@ -20,7 +20,7 @@
   <!-- /row-->
   <!-- breadcrumb-->
   <ul class="breadcrumb bread-tv">
-     <li><a href="<?php echo $site->retriveUrl(); ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
      <li class="active"><?php echo $section->getTitle(); ?></li>
   </ul>
   <!-- /breadcrumb--> 
