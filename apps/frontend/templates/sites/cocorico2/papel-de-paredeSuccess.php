@@ -76,14 +76,14 @@
   <!-- /row--> 
   <?php endif; ?>
 
-  <!--row-->
+  <!--row--> 
   <?php if(count($pager) > 0): ?>
   <div class="row-fluid conteudo">
     <ul class="destaques-small">
     <?php foreach($pager->getResults() as $d): ?>
       <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
       <li class="span2">
-        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-2') ?>" alt="<?php echo $d->getTitle() ?>" />
           <?php $tam=18; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
         </a>
       </li>
