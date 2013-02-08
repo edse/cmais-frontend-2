@@ -26,11 +26,7 @@ $assets = $pager->getResults();
      <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'naslojas', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li><a href="/cocorico2">Cocoricó</a><span class="divider">&rsaquo;</span></li>
-    <li><a href="/cocorico2/emfamilia">Em Família</a><span class="divider">&rsaquo;</span></li>
-    <li class="active">Nas Lojas</li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">nas lojas</h2> 
   <!--row-->

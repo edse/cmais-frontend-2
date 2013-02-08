@@ -17,11 +17,8 @@
     </div>
   </div>
   <!-- /row-->
-<ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/episodios">episódios</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle()?></li>
-  </ul>
+  <!--breadcrumb-->
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   <!--btn voltar-->
   <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
