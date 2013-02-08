@@ -173,7 +173,7 @@
             },
             cpf:{
               required: true,
-              minlength: 11
+              minlength: 14
             },
             cidade:{
               required: true
