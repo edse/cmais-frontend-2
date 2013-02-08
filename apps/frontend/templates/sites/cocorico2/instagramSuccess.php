@@ -52,7 +52,7 @@
 </div>
 <!-- /container-->
 <!--embedagram-->
-<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+
 <script type="text/javascript">
 $('#slideTvCocorico').embedagram({
     instagram_id: 290753701,
