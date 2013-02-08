@@ -21,7 +21,7 @@
   <!-- /row-->
   
   <!-- breadcrumb-->
-   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?>
+   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Paiol</h2>
   <!--row conteudo -->
