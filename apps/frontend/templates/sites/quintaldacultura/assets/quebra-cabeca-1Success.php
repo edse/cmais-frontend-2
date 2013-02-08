@@ -97,7 +97,7 @@
     </audio>
   </form>
 </div>
-<script src="./js/main.js"></script>
+<script src="/portal/quintal/games/puzzle/js/main.js"></script>
 <div class="main" id="main">
     <canvas height="600px" id="puzzle" width="600px"></canvas>
 </div>
