@@ -121,7 +121,6 @@
             </span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
         
         <!-- item -->
@@ -135,7 +134,6 @@
             </span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
         
          <!-- item -->
@@ -149,7 +147,6 @@
             </span>
           </div>
         </a>
-        <hr/>
         <!-- /item -->
       </div>
       <!-- /bastidores -->
