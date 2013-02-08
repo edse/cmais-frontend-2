@@ -45,7 +45,7 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
         
-                  <div class="msgErro" style="display:none; min-height: 80px">
+                  <div class="msgErro" style="display:none; min-height: 80px  ">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -53,7 +53,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErroCPF" style="display:none; min-height: 80px">
+                  <div class="msgErro" style="display:none; min-height: 80px" id="msgErroCPF">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">CPF Inválido! Sua mensagem não pôde ser enviada.</p>
@@ -173,7 +173,7 @@
                   $('img#ajax-loader').hide();
                 }
                 else if (data == "2") {
-                  $(".msgErroCPF").show();
+                  $("#msgErroCPF").show();
                   $('img#ajax-loader').hide();
                 }
                 else {
