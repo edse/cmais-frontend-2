@@ -150,7 +150,7 @@
           submitHandler: function(form){
             $.ajax({
               type: "POST",
-              dataType: "json",
+              dataType: "text",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');

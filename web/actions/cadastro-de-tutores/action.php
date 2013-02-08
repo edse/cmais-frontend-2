@@ -11,22 +11,22 @@ if($campos['captcha']) {
       $content = $campos['nome'] . ", " . $campos['cpf'] . ", " . $campos['cidade'] . "\n";
       $fp = fopen($filename, 'a+');
       if(fwrite($fp, $content)){
-        die(json_encode("0"));
+        die("0");
       }
       else{
-        die(json_encode("1"));
+        die("1");
       }
     }
     else{
-      die(json_encode("2"));
+      die("2");
     } 
   }
   else {
-    die(json_encode("1"));
+    die("1");
   }
 }
 else{
-  die(json_encode("1"));
+  die("1");
 }
 
 ?>
