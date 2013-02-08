@@ -69,7 +69,7 @@
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
-                      <input type="text" name="nome" id="nome" style="width:626px" />
+                      <input type="text" name="nome" id="nome" style="width:626px" value="<?php echo urldecode($_REQUEST['nome']) ?>" />
                     </div>
                     
                     <div class="linha t2">
