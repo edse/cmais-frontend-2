@@ -21,14 +21,7 @@
   <!-- /row-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-    <li>
-      <a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a><span class="divider">&rsaquo;</span>
-    </li>
-     <li class="active">
-      <?php echo $section->getTitle(); ?>
-    </li>
-  </ul>
+   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?>
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">Paiol</h2>
   <!--row conteudo -->
