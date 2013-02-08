@@ -21,7 +21,7 @@ init = function() {
   var tileSize = boardSize / tileCount;
 
   var img = new Image();
-  img.src = './img/cocorico-pascoa-quadrado.jpg';
+  img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
   img.addEventListener('load', drawTiles, false);
 
   setBoard();
@@ -85,10 +85,10 @@ init = function() {
       slideTile(emptyLoc, clickLoc);
       drawTiles();
     }
-    if (solved) {
-      setTimeout(function() {
+    if(solved) {
+      //setTimeout(function() {
         alert("Huhu! Você resolveu! Tente um nível mais difícil.");
-      }, 500);
+      //}, 500);
     }
   };
 
@@ -153,8 +153,6 @@ init = function() {
 window.onload = function() {
   init();
 }
-
-
 function clickplay() {
   if (this.click.currentTime)
     this.click.currentTime = 0;
@@ -173,3 +171,11 @@ function bgstop() {
     this.bg.currentTime = 0;
 }
 
+function getPos(el) {
+  // yay readability
+  for (var lx = 0, ly = 0; el != null; lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+  return {
+    x : lx,
+    y : ly
+  };
+}
