@@ -2,6 +2,7 @@
 //die("2");
 $campos["nome"] = $_REQUEST["nome"];
 $campos["cpf"] = $_REQUEST["cpf"];
+die($campos["cpf"]);
 $campos["cidade"] = $_REQUEST["cidade"];
 $campos["captcha"] = $_REQUEST["captcha"];
 

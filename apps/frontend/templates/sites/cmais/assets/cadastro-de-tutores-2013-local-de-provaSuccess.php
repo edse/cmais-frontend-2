@@ -159,6 +159,7 @@
                 $('img#ajax-loader').show();
               },
               success: function(data){
+                alert(data);
               $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
                 if(data == "0"){
