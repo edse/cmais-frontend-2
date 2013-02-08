@@ -1,4 +1,4 @@
-<?php if($request->getParameter('test')): ?>
+<?php if($_REQUEST['test']): ?>
 <?php
 if(isset($pager)){
   if($pager->count() == 1){
