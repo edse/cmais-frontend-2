@@ -75,7 +75,7 @@ class _sectionActions extends sfActions
             header("Location: http://www3.tvcultura.com.br/cocorico");
             die();
           }
-      } */     
+      } */    
     
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
