@@ -4,7 +4,7 @@
     <li><a href="<?php echo $section->Parent->retriveUrl(); ?>"><?php echo $section->Parent->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
    <?php endif;?>
    
-   <?php if($section->Parent->getTitle() != ""):?>
+   <?php if(isset($section->Parent->getTitle()) != ""):?>
     <li><a href="<?php echo $section->Parent->retriveUrl(); ?>"><?php echo $section->Parent->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li> 
    <?php endif;?>  
    
