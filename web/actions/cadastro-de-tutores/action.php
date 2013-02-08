@@ -30,4 +30,9 @@ if($campos['captcha']) {
     die();
   }
 }
+else{
+  header("location: http://cmais.com.br/cadastro-de-tutores-2013-erro");
+  die();
+}
+
 ?>
