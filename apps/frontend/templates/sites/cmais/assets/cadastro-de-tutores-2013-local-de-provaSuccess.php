@@ -187,8 +187,7 @@
               minlength: 2
             },
             cpf:{
-              required: true,
-              minlength: 9
+              required: true
             },
             cidade:{
               required: true
