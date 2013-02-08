@@ -70,7 +70,7 @@
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="/actions/cadastro-de-tutores/action.php">
+                  <form id="form-contato" method="post" action="http://cmais.com.br/actions/cadastro-de-tutores/action.php">
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
