@@ -29,11 +29,7 @@
   <!-- /row-->
   
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico/emfamilia">Em família</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Na Web </li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   
   <h2 class="tit-pagina clearfix">na web</h2>

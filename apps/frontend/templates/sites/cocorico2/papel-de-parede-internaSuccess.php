@@ -28,11 +28,7 @@
   </div>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/papel-de-parede">papel de parede</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $asset->getTitle()?></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   
   <!--btn voltar-->

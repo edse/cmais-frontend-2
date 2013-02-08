@@ -24,11 +24,7 @@
     </div>
   </div>
   <!-- /row-->
-<ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">TV Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="<?php echo $site->retriveUrl() ?>/bastidores">bastidores</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active"><?php echo $section->getTitle()?></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
   <div class="tit-pagina instagram">

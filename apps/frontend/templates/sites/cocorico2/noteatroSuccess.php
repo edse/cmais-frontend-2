@@ -31,12 +31,7 @@ if(isset($pager)){
   <?php include_partial_from_folder('sites/cocorico', 'global/menu-em-familia', array('s'=>'noteatro', 'site'=>$site)) ?>
   <!-- /row-->
   <!-- breadcrumb-->
-  <ul class="breadcrumb">
-     <li><a href="/cocorico">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
-     <li><a href="/cocorico">Em família</a> <span class="divider">&rsaquo;</span></li>
-     <li>No Teatro</li>
-     <li class="active"></li>
-  </ul>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   <h2 class="tit-pagina">No Teatro</h2>
   
