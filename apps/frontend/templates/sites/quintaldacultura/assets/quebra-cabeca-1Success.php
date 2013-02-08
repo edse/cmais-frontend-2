@@ -99,6 +99,13 @@
   </form>
 </div>
 <div class="main" id="main">
+  <script>
+  $(document).ready(function(){
+    $('canvas').click(function(){
+      alert('true')
+    })
+  })
+  </script>
   <canvas height="600px" id="puzzle" width="600px"></canvas></div>
 <script src="/portal/quintal/games/puzzle/js/main.js"></script>                              </div>
                                 <span class="palhaco"></span> 
