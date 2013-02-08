@@ -1,7 +1,7 @@
 <?php if($_REQUEST['test']): ?>
   <?php if($_REQUEST['nome']): ?>
 
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+    <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
     <?php use_helper('I18N', 'Date') ?>
@@ -53,19 +53,24 @@
                     </div>
                     <hr />
                   </div>
+                  <div class="msgErroCPF" style="display:none">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">CPF Inválido! Sua mensagem não pôde ser enviada.</p>
+                      <p>Confirme se você preencheu o CPF corretamente e tente novamente.</p>
+                    </div>
+                    <hr />
+                  </div>
                   <div class="msgAcerto" style="display:none">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p class="aviso">Segunda etapa do processo enviada com sucesso!</p>
+                      <p></p>
                     </div>
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="">
-                    <input type="hidden" name="cadastro-tutoria" id="cadastro-tutoria" value="true">
-                    <input type="hidden" name="section_id" id="section_id" value="2106">
-                    
+                  <form id="form-contato" method="post" action="http://cmais.com.br/actions/cadastro-de-tutores/action.php">
                     <span class="linhaFundo"></span> 
                     
                     <p class="enun">Dados de identificação</p>
@@ -154,17 +159,25 @@
                 $('img#ajax-loader').show();
               },
               success: function(data){
+                alert(data);
               $('input#enviar').removeAttr('disabled');
                 window.location.href="#";
-                if(data == "1"){
+                if(data == "0"){
                   $("#form-contato").clearForm();
                   $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
-                else {
+                else if (data == "1") {
                   $(".msgErro").show();
                   $('img#ajax-loader').hide();
+                }
+                else if (data == "2") {
+                  $(".msgErroCPF").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  alert('Erro inesperado!');
                 }
               }
             });         
@@ -176,7 +189,7 @@
             },
             cpf:{
               required: true,
-              minlength: 11
+              minlength: 14
             },
             cidade:{
               required: true
