@@ -88,12 +88,12 @@
     <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label>
     <input type="button" id="musica" value="Sem música" style="margin-left: 25px;" />
     <audio id="bg">
-      <source src="./audio/bg1.mp3" />
-      <source src="./audio/bg1.ogg" />
+      <source src="/portal/quintal/games/puzzle/audio/bg1.mp3" />
+      <source src="/portal/quintal/games/puzzle/audio/bg1.ogg" />
     </audio>
     <audio id="click">
-      <source src="./audio/click.mp3" />
-      <source src="./audio/click.ogg" />
+      <source src="/portal/quintal/games/puzzle/audio/click.mp3" />
+      <source src="/portal/quintal/games/puzzle/audio/click.ogg" />
     </audio>
   </form>
 </div>
