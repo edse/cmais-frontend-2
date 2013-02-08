@@ -142,7 +142,7 @@
         <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito-a-perguntar-o-que-quiser-cocorico">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-se-liga-no-perigo.jpg" alt="Se Liga no Perigo"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
             </div>
             <span>
               Se Liga no Perigo
