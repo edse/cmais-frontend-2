@@ -23,12 +23,12 @@
     </div>
   </div> 
   <!-- /row-->
-  
+   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
      <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
      <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Receitinhas</li>
+     <li class="active"><?php echo $section->retriveUrl() ?></li>
   </ul>
   <!-- /breadcrumb-->
   
