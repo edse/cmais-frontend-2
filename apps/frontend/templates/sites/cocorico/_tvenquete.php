@@ -73,10 +73,10 @@ var validator = $('.form-voto').validate({
         required: true
       }
     },
-    messages:{
-      opcao: ""
-    }
-  });
+  messages:{
+    opcao: ""
+  }
+});
 
 //enviar voto
 function sendAnswer(){
