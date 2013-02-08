@@ -207,14 +207,6 @@
         });
       });
       
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
-      }
     </script>
   <?php else: ?>
     <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
