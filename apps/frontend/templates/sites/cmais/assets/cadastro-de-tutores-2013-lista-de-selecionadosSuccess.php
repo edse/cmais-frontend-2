@@ -7,8 +7,8 @@
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
     <style type="text/css">
-    table a { color:#ff6633; } 
-    table tr { margin-bottom:5px; display:block; }               
+    table a { color:#ff6633;margin-bottom:5px; display: block; } 
+                  
     </style>
     <!-- CAPA SITE -->
     <div id="capa-site">
