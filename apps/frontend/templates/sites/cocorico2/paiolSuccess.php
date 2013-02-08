@@ -23,10 +23,10 @@
   <!-- breadcrumb-->
   <ul class="breadcrumb">
     <li>
-      <a href="/cocorico">Cocoricó</a><span class="divider">&rsaquo;</span>
+      <a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->retriveUrl(); ?></a><span class="divider">&rsaquo;</span>
     </li>
      <li class="active">
-      Paiol
+      <?php echo $section->getTitle(); ?>
     </li>
   </ul>
   <!-- /breadcrumb-->

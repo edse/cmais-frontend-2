@@ -26,8 +26,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   
   <!-- breadcrumb-->
   <ul class="breadcrumb">
-     <li><a href="<?php echo $site->retriveUrl() ?>">Home</a> <span class="divider">&rsaquo;</span></li>
-     <li class="active">Joguinhos</li>
+     <li><a href="<?php echo $site->retriveUrl(); ?>"><?php echo $site->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->getTitle(); ?></li>
   </ul>
   <!-- /breadcrumb-->
   
