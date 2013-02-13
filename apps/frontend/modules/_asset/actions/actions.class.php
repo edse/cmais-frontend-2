@@ -33,18 +33,9 @@ class _assetActions extends sfActions
       
       $this->setLayout('layout_asset');
       
-      if($this->asset->Site->getSlug() == "cocorico2") {
+      if($this->asset->Site->getSlug() == "cocorico2")
         $this->setLayout('cocorico');
-          /*if(!$request->getParameter('test')){
-            header("Location: http://www3.tvcultura.com.br/cocorico");
-            die();
-          }*/
-      }
            
-      
-      
-      
-      
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
