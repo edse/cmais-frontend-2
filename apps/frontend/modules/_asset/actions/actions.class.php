@@ -31,11 +31,8 @@ class _assetActions extends sfActions
 				die();
 			}
       
-      $this->setLayout('layout_asset');
-      
       if($this->asset->Site->getSlug() == "cocorico2")
         $this->setLayout('cocorico');
-           
 
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
