@@ -75,6 +75,7 @@ class _sectionActions extends sfActions
             die();
           }
       } */  
+      $this->setLayout('cocorico');
     
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
