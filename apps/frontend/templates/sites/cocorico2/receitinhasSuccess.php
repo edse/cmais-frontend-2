@@ -38,7 +38,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina">
-    <h2><?php $tam=32; $str=$section->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <h2><?php $tam=32; $str=$section->getSlug(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     <!-- RANKING -->
     <?php $section = $asset->getSections(); ?>
