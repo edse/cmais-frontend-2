@@ -1,6 +1,6 @@
 <?php
 $campos["nome"] = $_REQUEST["nome"];
-$campos["cpf"] = $_REQUEST["cpf"];
+$campos["cpf"] = str_replace(array('.','-'),"",$_REQUEST["cpf"]);
 $campos["cidade"] = $_REQUEST["cidade"];
 $campos["captcha"] = $_REQUEST["captcha"];
 

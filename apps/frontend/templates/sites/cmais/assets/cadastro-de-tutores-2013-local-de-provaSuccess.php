@@ -1,4 +1,3 @@
-<?php if($_REQUEST['test']): ?>
   <?php if($_REQUEST['nome']): ?>
 
     <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
@@ -144,7 +143,7 @@
     
       $(document).ready(function(){
     
-        //$("#cpf").mask("999.999.999-99");
+        $("#cpf").mask("999.999.999-?99");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
@@ -188,8 +187,7 @@
               minlength: 2
             },
             cpf:{
-              required: true,
-              minlength: 9
+              required: true
             },
             cidade:{
               required: true
@@ -213,7 +211,3 @@
     <?php header("Location: http://cmais.com.br/cadastro-de-tutores-2013-segunda-etapa"); ?>
     <?php die(); ?>
   <?php endif; ?>
-<?php else: ?>
-  <?php header("Location: http://cmais.com.br"); ?>
-  <?php die(); ?>
-<?php endif; ?>

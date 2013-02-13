@@ -1,16 +1,17 @@
-<?php 
-$assets = $pager->getResults();
-?>
+<?php use_helper('I18N', 'Date') ?>
 
+<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
-<div class="container tudo receitinhas">
+<div class="container tudo">
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
   <!--/topo coco-->
   
-  <!-- row-->
+ <!-- row-->
+  <div class="row-fluid menu">
+    <!-- row-->
   <div class="row-fluid menu">
     <div class="navbar">
       <!--menu principal-->
@@ -20,121 +21,121 @@ $assets = $pager->getResults();
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       <!--/menu personagens -->
     </div>
-  </div>
+  </div> 
   <!-- /row-->
-  
+   
   <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
+  <ul class="breadcrumb">
+     <li><a href="<?php echo $site->retriveUrl() ?>">Cocoricó</a> <span class="divider">&rsaquo;</span></li>
+     <li><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a> <span class="divider">&rsaquo;</span></li>
+     <li class="active"><?php echo $section->retriveUrl() ?></li>
+  </ul>
   <!-- /breadcrumb-->
   
-  <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="tit-pagina">Receitinhas</a>
-  <div class="zaza">
-    <p>Cozinha da Amiga Zazá</p>
+  <!--btn voltar-->
+  <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /btn voltar-->
+  
+  <!-- titulo da pagina -->
+  <div class="tit-pagina">
+    <h2><?php $tam=32; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <span></span>
+    <!-- RANKING -->
+    <?php $section = $asset->getSections(); ?>
+    <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
+    <!--/RANKING -->
   </div>
-
-  <?php if(count($favoritos) > 0): ?>
-  <div class="row-fluid conteudo destaques ytb">
-    <?php if(isset($favoritos[0])): ?>
-      <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
-    <div class="span4">
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[0]->getTitle() ?>">
-        <span class=""></span>
-        <?php //echo $favoritos[0]->getTitle() ?>
-        <?php $tam=32; $str=$favoritos[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-      </a>
-      <!-- RANKING -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
-      <!--/RANKING -->
-  	</div>
-    <?php endif; ?>
-    
-    <?php if(isset($favoritos[1])): ?>
-      <?php $related = $favoritos[1]->retriveRelatedAssetsByAssetTypeId(6); ?>
-    <div class="span4">
-      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" title="<?php echo $favoritos[1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[1]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[1]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" >
-        <span class=""></span>
-        <?php //echo $favoritos[1]->getTitle() ?>
-        <?php $tam=32; $str=$favoritos[1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-      </a>
-      <!-- RANKING -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
-      <!--/RANKING -->
-    </div>
-    <?php endif; ?>
-    
-    <?php if(isset($favoritos[2])): ?>
-      <?php $related = $favoritos[2]->retriveRelatedAssetsByAssetTypeId(6); ?>
-    <div class="span4">
-      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" title="<?php echo $favoritos[2]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[2]->getTitle() ?>" /></a>
-      <a href="<?php echo $favoritos[2]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[2]->getTitle() ?>" >
-        <span class=""></span>
-        <?php //echo $favoritos[2]->getTitle() ?>
-         <?php $tam=32; $str=$favoritos[2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-      </a>
-      <!-- RANKING -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>
-      <!--/RANKING -->
-    </div>
-    <?php endif; ?>
-  </div>
-  <!-- /row--> 
-  <?php endif; ?>
+  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId() ?>');" class="curtir" title="Curtir">curtir</a>
+  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
+  <!-- titulo da pagina -->
   
   <!--row-->
-  <?php if(count($pager) > 0): ?>
-  <div class="row-fluid conteudo ytb">
+  <div class="row-fluid conteudo">
+    <div class="span6 receita">
+    <p class="alerta"><span></span>Na cozinha, Sempre peça ajuda a um adulto!</p>
+    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+    </div>
+    <div class="span6">
+      <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php 
+      if (count($related_video) > 0):
+        $offset = "0m0s";
+        if($related_video[0]->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+          $offset = $p[0]."m".$p[1]."s";
+        }
+      ?>
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      <?php endif; ?>
+    </div>
+  </div>
+  <!--/row-->
+  
+  <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "receitinhas"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id desc')
+      ->limit(6)
+      ->execute();
+  ?>
+  <?php if (count($assets) > 0): ?>
+  <!--row-->
+  <div class="row-fluid relacionados ytb">
+    <div class="tit"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/receitinhas">Receitinhas</a><span></span></div>
     <ul class="destaques-small">
-    <?php foreach($pager->getResults() as $d): ?>
-      <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
       <li class="span2">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
           <p><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
         </a>
       </li>
-    <?php endforeach; ?>
+      <?php endforeach; ?>
     </ul>
   </div>
-
-    <?php if($pager->haveToPaginate()): ?>
-    <!-- PAGINACAO -->
-    <div class="pagination pagination-centered">
-      <ul>
-        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
-        <?php foreach ($pager->getLinks() as $page): ?>
-          <?php if ($page == $pager->getPage()): ?>
-        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php else: ?>
-        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-          <?php endif; ?>
-        <?php endforeach; ?>
-        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
-      </ul>
-    </div>
-    <form id="page_form" action="" method="post">
-      <input type="hidden" name="return_url" value="<?php echo $url?>" />
-      <input type="hidden" name="page" id="page" value="" />
-    </form>
-    <script>
-      function goToPage(i){
-        $("#page").val(i);
-        $("#page_form").submit();
-      }
-    </script>
-    <!--// PAGINACAO -->
-    <?php endif; ?>
-
-  <?php else: ?>
-    <p>Nenhuma receitinha encontrada.</p> 
+  <!-- /row-->
   <?php endif; ?>
-  
-  <!-- rodapé-->
+
+  <!-- rodapé--> 
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
-  
-  <!-- /rodape-->
 </div>
 <!-- /container-->
+
+<script>
+function vote(id){
+  $.ajax({
+    type: "GET",
+    dataType: "text",
+    data: "asset_id="+id,
+    url: "/ajax/ranking",
+    beforeSend: function(){
+      $('#btn_1').hide();
+      $('#btn_2').show();
+      $('#v_load').show();
+    },
+    success: function(data){
+      if(data == 1){
+        $('#btn_1').hide();
+        $('#btn_2').show();
+      }else{
+        alert('Erro!');
+        $('#btn_1').show();
+        $('#btn_2').hide();
+      }
+      $('#v_load').hide();
+    }
+  });
+}
+</script>
