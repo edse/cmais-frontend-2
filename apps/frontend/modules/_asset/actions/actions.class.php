@@ -39,7 +39,7 @@ class _assetActions extends sfActions
       }
        * */     
       
-      $this->setLayout('layout_asset');
+      //$this->setLayout('layout_asset');
       
       
 
