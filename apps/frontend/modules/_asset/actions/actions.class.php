@@ -31,7 +31,7 @@ class _assetActions extends sfActions
 				die();
 			}
       
-      $this->setLayout('layout_asset');
+      //$this->setLayout('layout_asset');
       
       if($this->asset->Site->getSlug() == "cocorico2")
         $this->setLayout('cocorico');
