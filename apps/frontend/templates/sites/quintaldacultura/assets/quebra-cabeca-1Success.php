@@ -79,10 +79,10 @@
                 <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
             </div>
             <hr />
+            <h3 style="text-align: left;font-size: 18;background-color: whitesmoke;padding: 10px;">Clique nas peças para montar a imagem. Mude a dificuldade escolhendo o número de peças e veja a mensagem que a turma do Cocoricó tem pra você!</h3>
 
-                            <div class="jogosBox interna2">
-                              <div class="game" style="border:none; height: 650px;">
-                              <div id="slider">
+
+<div id="slider">
   <form style="margin:10px;">
     <label>F&aacute;cil</label> <input type="hidden" id="scale" value="3" /> <input type="button" id="scale2" value="2" /> <input type="button" id="scale3" value="3" /> <input type="button" id="scale4" value="4" /> <input type="button" id="scale5" value="5" /> <input type="button" id="scale6" value="6" /> 
     <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label>
@@ -95,14 +95,18 @@
       <source src="/portal/quintal/games/puzzle/audio/click.mp3" />
       <source src="/portal/quintal/games/puzzle/audio/click.ogg" />
     </audio>
-
   </form>
 </div>
+<script src="/portal/quintal/games/puzzle/js/main.js"></script>
 <div class="main" id="main">
+    <canvas height="600px" id="puzzle" width="600px"></canvas>
+</div>
+            
 
-  <canvas height="600px" id="puzzle" width="600px"></canvas></div>
-<script src="/portal/quintal/games/puzzle/js/main.js"></script>                              </div>
-                                <span class="palhaco"></span> 
+
+                            <div class="jogosBox interna2">
+                              <div class="game" style="border:none; height: 650px;"></div>
+                                <!--<span class="palhaco"></span>--> 
                             </div>
                       </div>
                         <div class="allpages">
