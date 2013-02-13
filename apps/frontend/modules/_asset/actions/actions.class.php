@@ -30,15 +30,16 @@ class _assetActions extends sfActions
 				header("Location: ".$this->asset->Site->retriveUrl());
 				die();
 			}
-      
+      /*
       if($this->asset->Site->getSlug() == "cocorico2") {
           if(!$request->getParameter('test')){
             header("Location: http://www3.tvcultura.com.br/cocorico");
             die();
           }
-      }      
+      }
+       * */     
       
-      //$this->setLayout('layout_asset');
+      $this->setLayout('layout_asset');
       
       
 
