@@ -148,7 +148,7 @@
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-              <?php echo $displays['destaque-seu-video'][0]->getHeadline(); ?>
+              <?php echo $displays['destaque-seu-video'][0]->getTitle(); ?>
               <i class="ico-seta-titulo video"></i>
             </h3>
           </div>
@@ -162,10 +162,19 @@
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-responsavel"></i>
+              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-contato"></i>
+              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
+              
               <div class="span9">
                 <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
@@ -202,9 +211,13 @@
                 </select>
               </div>
             </div>
-            <div class="row-fluid">
+            <!--div class="row-fluid">
               <i class="ico-tv ico-link"></i>
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
+            </div-->
+            <div class="row-fluid">
+              <i class="ico-tv ico-bike"></i>
+              <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
             </div>
             <div class="row-fluid" style="position: relative;">
               <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
@@ -442,7 +455,13 @@ $(document).ready(function(){
           required: true,
           minlength: 3
         },
-        link:{
+        email:{
+          required:true
+        },
+        nome_resp:{
+          required:true
+        },
+        destino:{
           required:true
         },
         concorda:{
