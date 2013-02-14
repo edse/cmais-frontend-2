@@ -48,8 +48,7 @@
 .interatividade form {padding:10px;}
 .interatividade .form-campos{padding:10px 0;position: relative;}
 .interatividade .form-campos input,
-.interatividade .form-campos select{border-radius:5px}
-.interatividade .form-campos input { padding:0 5px; height: 20px; line-height:20px; }
+.interatividade .form-campos select{border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; }
 .interatividade .form-campos input.error { background:#ef372d; color:#fff;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
