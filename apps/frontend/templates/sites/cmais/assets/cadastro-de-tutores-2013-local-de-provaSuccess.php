@@ -64,7 +64,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Dados da segunda etapa do processo foram enviados.</p>
+                      
                     </div>
                     <hr />
                   </div>

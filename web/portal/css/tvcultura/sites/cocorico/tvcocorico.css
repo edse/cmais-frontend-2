@@ -291,9 +291,10 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /enquete */
 
 /* instagram*/
-.instagram span { background: none;  position: inherit; width: auto; color:#fdf035; }
-.instagram h2 { margin:0; }
-.instagram .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
+.tit-extra span { background: none;  position: inherit; width: auto; color:#fdf035; margin-left:10px; }
+.tit-extra h2 { margin:0; }
+.tit-extra .ico-bike,
+.tit-extra .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
 #box-instagram { margin-left:5px;}
 .instagram-placeholder {  float: left;  margin:0 13px 13px 0; width: 300px; height:300px;}
 .instagram-image { width:300px; }
@@ -318,7 +319,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
 
-.instagram h2 { width: 100%; }
+.tit-extra h2 { width: 100%; }
 .conteudo .tit { color:#1DB186; border-color:#1DB186; }
 
 #box-destaque .radio-cocorico{position:relative;}
@@ -336,3 +337,15 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #box-destaque .destaque-2 img { margin: -29px 0; max-width: 304px; border-radius:30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;  }
 #box-destaque .destaque-1 p, 
 #box-destaque .destaque-2 p { width: 97%; }
+
+/* concurso cultural*/
+.tit-extra .ico-bike { background-image: url("/portal/images/capaPrograma/cocorico/ico-bike.png"); height: 21px; width: 33px; }
+.conteudo .grd { font-size: 20px; text-align:center; text-transform:uppercase; margin-top:20px; font-weight:bold; }
+.conteudo .grd span { color:#1db186 }
+#myModal2 .modal, 
+#myModal2 .modal-footer, 
+#myModal2 .modal-header { background:#1db186;}
+#myModal2 #myModalLabel { color:#fdf035; text-align:left; height:auto; }
+#myModal2 #myModalLabel span { font-size:14px;  background: none;  bottom: 0;  height: auto;  left: 0;   position: relative;   width: auto;}
+#myModal2 img {border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;} 
+/* /concurso cultural*/

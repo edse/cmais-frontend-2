@@ -68,8 +68,12 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
       
-      if($this->section->Site->getSlug() == "cocorico2")
+      if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
+        
+        //if (!in_array(@$_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1', '172.20.18.133', '172.20.18.103')))
+        //  header("location: http://www3.tvcultura.com.br/cocorico");
+      }
     
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
