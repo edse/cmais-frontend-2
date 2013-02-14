@@ -372,6 +372,34 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+      /* form tv cocorico */
+  $('.btn-form').click(function(){
+   $('.destaque-home-tv').hide();
+   $('.interatividade').fadeIn("fast"); 
+  })
+  $('#votar-input').click(function(){
+    $('label.error').css('display','none');
+  });
+  //valida form
+  var validator = $('.form-voto').validate({
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
+        }
+      },
+      messages:{
+        opcao: ""
+      }
+    });
+});
+
+</script>
 
 <!--form-->
 <script type="text/javascript">
