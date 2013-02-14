@@ -120,7 +120,7 @@ if(isset($pager)){
                     <?php if(isset($displays["destaque-principal"][0]->AssetContent)): ?>
                       <p><?php echo $displays["destaque-principal"][0]->AssetContent->getHeadlineLong() ?></p>
                     <?php endif; ?>
-                  </div>
+                  </div> 
                 </div>
                 <!-- /NOTICIA INTERNA -->
               <?php endif; ?>
@@ -129,15 +129,15 @@ if(isset($pager)){
             <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
               <div class="box-listao grid2">
-                <?php if(isset($date)): ?>
+                <?php if(isset($date)): ?>`
                 <h3><?php echo format_date(strtotime($date),"D") ?></h3>
                 <?php endif ?>
                 <ul>
                   <?php foreach($pager->getResults() as $d): ?>
                     <li>
-                      <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
+                      <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
                       <a class="img" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
+                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
                       </a>
                       <?php endif; ?>
                       <div class="box-texto grid2">
