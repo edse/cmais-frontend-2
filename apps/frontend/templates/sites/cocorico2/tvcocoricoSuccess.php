@@ -148,7 +148,7 @@
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-              <?php echo $displays['destaque-seu-video'][0]->getHeadline(); ?>
+              <?php echo $displays['destaque-seu-video'][0]->getTitle(); ?>
               <i class="ico-seta-titulo video"></i>
             </h3>
           </div>
@@ -162,7 +162,15 @@
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
+              <input type="text" class="span11 pull-right" name="Seu nome" placeholder="Seu nome"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-responsavel"></i>
+              <input type="text" class="span11 pull-right" name="Nome do responsável" placeholder="Nome do responsável"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-contato"></i>
+              <input type="text" class="span11 pull-right" name="E-mail para contato" placeholder="Nome do responsável"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
