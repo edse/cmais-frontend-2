@@ -29,7 +29,7 @@
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
   <div class="tit-pagina tit-extra">
-    <h2><i class="ico-bike"></i>Instagram <span>@TVCOCORICÓ</span></h2>
+    <h2><i class="ico-bike"></i><?php echo $section->getTitle() ?><span><?php echo $section->getDescription() ?></span></h2>
   </div>
   <!-- titulo da pagina -->
   
