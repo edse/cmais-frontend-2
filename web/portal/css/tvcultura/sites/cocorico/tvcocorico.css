@@ -291,7 +291,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /enquete */
 
 /* instagram*/
-.tit-extra span { background: none;  position: inherit; width: auto; color:#fdf035; }
+.tit-extra span { background: none;  position: inherit; width: auto; color:#fdf035; margin-left:10px; }
 .tit-extra h2 { margin:0; }
 .tit-extra .ico-bike,
 .tit-extra .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
