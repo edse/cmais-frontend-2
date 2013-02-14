@@ -217,7 +217,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
+              <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
             </div>
             <div class="row-fluid">
               <label class="radio" for="concorda">
@@ -464,7 +464,7 @@ $(document).ready(function(){
         nome_resp:{
           required:true
         },
-        destino:{
+        desenho:{
           required:true
         },
         concorda:{
