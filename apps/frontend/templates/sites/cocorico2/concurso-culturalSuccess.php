@@ -39,7 +39,9 @@
     <div class="span6">
       <p>Hélio Ziskind nasceu em 1955, é músico e compositor. Na TV Cultura compôs temas para os programas como Rá-tim-bum, Castelo Rá-tim-bum, X-Tudo e Cocoricó, entre outros. Em 1997, lançou o álbum Meu Pé Meu Querido Pé, reunindo temas de programas Cocoricó, Castelo Rá-Tim-Bum, Banho de Aventura, Glub-Glub e X-Tudo, além de incluir uma versão musicalizada do poema "Plutão", do escritor Olavo Bilac. Conheça mais sobre Hélio Ziskind através da entrevista que Júlio fez neste episódio da TV Cocoricó!</p>
       <p class="grd">Parabéns ao vencedor</p>
-      <p class="grd"><span>Parabéns ao vencedor</span></p>
+      <p class="grd"><span>NOME completo DA CRIANÇA <br/>
+        Cidade - UF</span>
+      </p>
     </div>
   </div>
   <!--/row-->
