@@ -104,7 +104,6 @@
           </a>
         </a>
         <? $related_image = 0; ?>
-        <? $related_video = 0; ?>
         <?php endif; ?>
         
         
@@ -120,7 +119,6 @@
           <span> </span>
           </a>
         </a>
-        <? $related_image = 0; ?>
         <? $related_video = 0; ?>
         <?php endif; ?>
         
