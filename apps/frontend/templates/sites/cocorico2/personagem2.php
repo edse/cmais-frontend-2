@@ -70,49 +70,29 @@
         <?php if(isset($displays["conteudos"][0])): ?>
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
           
-          <?php if($displays['conteudos'][0]->Asset->AssetType->getSlug() == "video"): ?>
+          <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          
+          <?php if(count($related_image) > 0): ?> 
             <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
               <p class="bold">
                 <?php echo $se[0]->getTitle() ?>
               </p>
-              <img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" />
+              <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
+              <?php echo $displays["conteudos"][0]->getTitle() ?>
+              <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede"><span> </span></a>
+            </a>                  
+          <?php elseif(count($related_video) > 0): ?> 
+            <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+              <p class="bold">
+                <?php echo $se[0]->getTitle() ?>
+              </p>
+              <img src="http://img.youtube.com/vi/ZPP0FeoxHoM/0.jpg" alt="asdfg" name="asdf" />
+              <img src="http://img2.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" />
               <?php echo $displays["conteudos"][0]->getTitle() ?>
               <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
             </a>
-          <?php elseif($displays['conteudos'][0]->Asset->AssetType->getSlug() == "content"): ?>
-            <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-            <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-            
-            <?php if(count($related_image) > 0): ?> 
-              <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
-                <p class="bold">
-                  <?php echo $se[0]->getTitle() ?>
-                </p>
-                <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
-                <?php echo $displays["conteudos"][0]->getTitle() ?>
-                <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede"><span> </span></a>
-              </a>                  
-            <?php elseif(count($related_video) > 0): ?> 
-              <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
-                <p class="bold">
-                  <?php echo $se[0]->getTitle() ?>
-                </p>
-                <img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" />
-                <?php echo $displays["conteudos"][0]->getTitle() ?>
-                <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
-              </a>
-            <?php endif; ?>
           <?php endif; ?>
-          
-<<<<<<< HEAD
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"> 
-          <span> </span>
-          </a>
-        </a>
-        <? $related_video = 0; ?>
-        <?php endif; ?>
-=======
->>>>>>> 126fb5792e5b9e6c34aa0f8c5fd522131115a026
         
         <?php endif; ?>
         
