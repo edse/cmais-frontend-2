@@ -123,7 +123,6 @@ function isDevice(OSName)
                     <option value="5">Marginal Pinheiros - Est. Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
                     <option value="1" selected="selected">Marginal Tietê - 1</option>
-                    <option value="4">Marginal Tietê - 2</option>
                     <option value="2">Radial Leste x Salim Farah Maluf</option>
                   </select> 
                 </form>
