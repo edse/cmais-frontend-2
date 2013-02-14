@@ -346,7 +346,7 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
-          
+          <?php echo rafa ?>
           <div class="span6 destaque-1 conteudo-tv">
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
               <h3><?php $tam=20; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
