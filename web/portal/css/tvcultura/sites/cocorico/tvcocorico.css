@@ -50,6 +50,7 @@
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
 .interatividade .form-campos select.error, 
+.interatividade .form-campos label.error,
 .interatividade .form-campos input.error { background:#ef372d; color:#fff;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
