@@ -1,15 +1,3 @@
-<?php
-if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
-} 
-?>
-
-<?php use_helper('I18N', 'Date') ?>
-
-<!-- Le styles--> 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
  
