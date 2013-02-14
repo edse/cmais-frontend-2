@@ -135,9 +135,9 @@ if(isset($pager)){
                 <ul>
                   <?php foreach($pager->getResults() as $d): ?>
                     <li>
-                      <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
+                      <?php if($d->retriveImageUrlByImageUsage("image-1-b") != ""): ?>
                       <a class="img" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
+                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
                       </a>
                       <?php endif; ?>
                       <div class="box-texto grid2">

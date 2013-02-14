@@ -1,5 +1,6 @@
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <!-- container-->
 <div class="container tudo">
   <!--topo coco-->
@@ -222,16 +223,10 @@
             
             <div class="fileupload fileupload-new" data-provides="fileupload">
               <div class="input-append">
-                <div class="uneditable-input span3">
-                  <i class="icon-file fileupload-exists"></i>
-                  <span class="fileupload-preview"></span>
-                </div>
                 <span class="btn btn-file">
-                  <span class="fileupload-new">Seu desenho de bicicleta</span>
-                  <span class="fileupload-exists">Change</span>
-                  <input type="file" /></span>
-                  <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-              </div>
+                  <i class="ico-tv ico-bike"></i>
+                  <input type="file" name="desenho" placeholder="Seu desenho de bicicleta" /></span>
+               </div>
             </div>
             
             
