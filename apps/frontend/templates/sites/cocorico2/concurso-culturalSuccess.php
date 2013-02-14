@@ -60,14 +60,78 @@
   <!--row-->
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
-      <?php foreach($pager->getResults() as $d): ?>
-        <li class="span4">
-          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php $tam=33; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
-          </a>
-        </li>
-      <?php endforeach; ?>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
     </ul>
   </div>
   <!-- /row-->
