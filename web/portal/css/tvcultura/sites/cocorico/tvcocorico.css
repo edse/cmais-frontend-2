@@ -57,7 +57,9 @@
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 center; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
-.interatividade .form-campos .ico-responsavel {background-position: 0 -40px; }
+.interatividade .form-campos .ico-responsavel {background-position: 0 -82px; }
+.interatividade .form-campos .ico-email {background-position: 0 -109px; }
+.interatividade .form-campos .ico-email {background-position: 0 -133px; }
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
 .interatividade #msgErro p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
