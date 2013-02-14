@@ -65,6 +65,8 @@
 .interatividade .form-campos .ico-email {background-position: 0 -109px; }
 .interatividade .form-campos .ico-bike {background-position: 0 -133px; }
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
+.interatividade .form-campos .radio { color:#fff; }
+.interatividade .form-campos .radio input { margin-top:0; }
 .interatividade #msgErro p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
 .interatividade #msgErro hr,
