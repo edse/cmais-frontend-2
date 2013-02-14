@@ -71,8 +71,7 @@
       <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-          <h3 id="myModalLabel"> Cocoricó – Um amigo especial</h3>
-          <p>Editora Melhoramentos</p>
+          <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
         </div>
         <div class="modal-body">
           <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
