@@ -24,6 +24,19 @@
           
           <?php echo "img: ".count($related_image)."<br>video: ".count($related_video);?>
           
+        <?php endif; ?>
+     
+        <?php if(isset($displays["conteudos"][1])): ?>
+          
+          <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
+          
+          <?php $related_image = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          
+          <?php echo "img: ".count($related_image)."<br>video: ".count($related_video);?>
+          
+        <?php endif; ?>
+          
           <?php /*
           <?php if(count($related_image) > 0): ?> 
             <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
@@ -65,5 +78,4 @@
         <?php endif; ?>
            * 
            */?>
-        <?php endif; ?>
       </div>
