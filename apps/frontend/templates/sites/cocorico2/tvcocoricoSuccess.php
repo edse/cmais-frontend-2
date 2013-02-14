@@ -216,7 +216,7 @@
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div-->
             <div class="row-fluid">
-              <i class="ico-tv ico-destino"></i>
+              <i class="ico-tv ico-bike"></i>
               <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
             </div>
             <div class="row-fluid" style="position: relative;">
