@@ -106,7 +106,7 @@
         <? $related_image = 0; ?>
         <?php endif; ?>
         
-        
+         
         <?php if(count($related_video) > 0): ?> 
           <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           <p class="bold">
