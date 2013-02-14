@@ -28,7 +28,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?> 
   <!-- /breadcrumb-->
   <!-- titulo da pagina -->
-  <div class="tit-pagina instagram">
+  <div class="tit-pagina especial">
     <h2><i class="ico-instagram"></i>Instagram <span>@TVCOCORICÓ</span></h2>
   </div>
   <!-- titulo da pagina -->
