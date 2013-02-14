@@ -76,6 +76,72 @@
         </div>
       </div>
       <!-- /Modal -->
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
+      <li class="span4">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
+          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
+          <p>TV Cocoricó com Valéria Zopello …</p>
+        </a>
+      </li>
       
     </ul>
   </div>
