@@ -75,17 +75,7 @@
           <p>Editora Melhoramentos</p>
         </div>
         <div class="modal-body">
-          <img src=" " alt="teste" />
-        </div>
-        <div class="modal-footer">
-          <ul>
-                          <li class="span2">
-                <a href="javascript:;" class="btn-modal-prod" title="Ampliar imagem" name="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" >
-                  <img src="http://midia.cmais.com.br/assets/image/original/01e41e374a2890cdcfabda414eac558c1556c839.jpg" />
-                </a>
-              </li>
-                        
-          </ul>
+          <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
         </div>
       </div>
       <!-- /Modal -->
