@@ -293,7 +293,7 @@
        </div>
         
         <!-- item -->
-        <a href="/cocorico2/tour-virtual" title="Tour Virtual">
+        <a href="<?php echo $site->retriveUrl(); ?>/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
@@ -305,7 +305,7 @@
         <!-- /item -->
          
         <!-- item -->
-        <a href="/cocorico2/erros-de-gravacao" title="Erros de Gravação">
+        <a href="<?php echo $site->retriveUrl(); ?>/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
@@ -317,7 +317,7 @@
         <!-- /item -->
         
         <!-- item -->
-        <a href="/cocorico2/instagram" title="Instagram">
+        <a href="<?php echo $site->retriveUrl(); ?>/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
@@ -344,7 +344,7 @@
                 <?php $tam=26; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </p>
             </a>
-           <a href="/cocorico2/convidados" class="btn-ico-mais" title="CONVIDADOS">
+           <a href="<?php echo $site->retriveUrl(); ?>/convidados" class="btn-ico-mais" title="CONVIDADOS">
              <i class="ico-mais"></i>
            </a>        
          </div>
@@ -364,7 +364,7 @@
                 <?php $tam=26; $str=$displays['receitinhas'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </p>
             </a>  
-            <a href="/cocorico2/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
+            <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
               <i class="ico-mais"></i>  
             </a>
           </div>       
