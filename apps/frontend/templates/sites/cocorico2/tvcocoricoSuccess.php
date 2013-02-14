@@ -223,12 +223,9 @@
             
             <div class="fileupload fileupload-new" data-provides="fileupload">
               <div class="input-append">
-                <div class="uneditable-input span3">
-                  <i class="icon-file fileupload-exists"></i>
-                </div>
                 <span class="btn btn-file">
-                  <span class="fileupload-new">Arquivo</span>
-                  <input type="file" /></span>
+                  <i class="ico-tv ico-bike"></i>
+                  <input type="file" name="desenho" placeholder="Seu desenho de bicicleta" /></span>
                </div>
             </div>
             
