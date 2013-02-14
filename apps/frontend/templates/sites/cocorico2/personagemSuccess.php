@@ -87,7 +87,7 @@
      
         <?php if(isset($displays["conteudos"][0])): ?>
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
-        <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+        <a class="span6 destaque-2 conteudo-diverso ytb" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
           </p>
@@ -103,7 +103,7 @@
         
         <?php if(isset($displays["conteudos"][1])): ?>
           <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
-        <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
+        <a class="span6 destaque-2 conteudo-diverso ytb" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
           </p>
