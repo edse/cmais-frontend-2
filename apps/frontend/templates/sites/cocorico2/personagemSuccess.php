@@ -102,6 +102,9 @@
                 <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
               </a>
             <?php endif; ?>
+            <?php endif; ?>
+            <?php endif; ?>
+      
           
           
 
@@ -137,7 +140,8 @@
                 <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
               </a>
             <?php endif; ?>
-      <?php endif; ?>
+         <?php endif; ?>
+
 
      </div>
     </div>
