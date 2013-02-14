@@ -162,15 +162,15 @@
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-right" name="Seu nome" placeholder="Seu nome"/>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-responsavel"></i>
-              <input type="text" class="span11 pull-right" name="Nome do responsável" placeholder="Nome do responsável"/>
+              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
-              <input type="text" class="span11 pull-right" name="E-mail para contato" placeholder="Nome do responsável"/>
+              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
@@ -210,9 +210,13 @@
                 </select>
               </div>
             </div>
-            <div class="row-fluid">
+            <!--div class="row-fluid">
               <i class="ico-tv ico-link"></i>
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
+            </div-->
+            <div class="row-fluid">
+              <i class="ico-tv ico-destino"></i>
+              <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
             </div>
             <div class="row-fluid" style="position: relative;">
               <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
