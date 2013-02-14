@@ -32,6 +32,20 @@
     <h2><i class="ico-bike"></i><?php echo $section->getTitle() ?><span><?php echo $section->getDescription() ?></span></h2>
   </div>
   <!-- titulo da pagina -->
+  <!-- /row-->
+  <div class="row-fluid conteudo">
+   <h3><?php echo $asset->getTitle() ?></h3>
+   <span class="data"><?php echo $asset->AssetContent->getHeadlineShort() ?></span>
+   <a class="span6"><img src="<?php echo $asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $asset->getTitle() ?>" /></a>
+   <div class="span6">
+     <?php if ($asset->AssetContent->getHeadline()): ?>
+     <p class="frase"><span></span><?php echo $asset->AssetContent->getHeadline() ?> <span class="last"></span></p>
+     <?php endif; ?>
+     <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+   </div>
+   
+  </div>
+  <!-- /row-->
   
  
   
