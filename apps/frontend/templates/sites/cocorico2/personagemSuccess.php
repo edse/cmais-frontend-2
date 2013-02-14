@@ -105,11 +105,8 @@
           <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede">
           <span> </span>
           </a>
-        </a>
-        <? $related_image = 0; ?>
-        <?php endif; ?>
-                  
-        <?php if(count($related_video) > 0): ?> 
+        </a>                  
+        <?php elseif(count($related_video) > 0): ?> 
           <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
@@ -122,7 +119,6 @@
           <span> </span>
           </a>
         </a>
-        <? $related_video = 0; ?>
         <?php endif; ?>
         
         <?php endif; ?>
