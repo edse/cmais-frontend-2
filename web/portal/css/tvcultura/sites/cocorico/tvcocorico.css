@@ -342,6 +342,8 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .tit-extra .ico-bike { background-image: url("/portal/images/capaPrograma/cocorico/ico-bike.png"); height: 21px; width: 33px; }
 .conteudo .grd { font-size: 20px; text-align:center; text-transform:uppercase; margin-top:20px; font-weight:bold; }
 .conteudo .grd span { color:#1db186 }
-#myModal2 { background:#1db186;}
+#myModal2 .modal, 
+#myModal2 .modal-footer, 
+#myModal2 .modal-header { background:#1db186;}
 #myModal2 #myModalLabel { color:#fdf035; }
 /* /concurso cultural*/
