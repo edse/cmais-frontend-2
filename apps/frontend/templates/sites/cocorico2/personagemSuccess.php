@@ -102,7 +102,7 @@
                 <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
               </a>
             <?php endif; ?>
-          <?php endif; ?>
+          
           
 
           <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
@@ -137,7 +137,7 @@
                 <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
               </a>
             <?php endif; ?>
-        
+          <?php endif; ?>
 
      </div>
     </div>
