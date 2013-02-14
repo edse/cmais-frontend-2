@@ -28,28 +28,7 @@
       <?php include_partial_from_folder('sites/cocorico', 'global/menu', array('site'=>$site)) ?>
       <!--/menu principal-->
       <!--menu personagens -->
-      
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
-      <!--
-      <div class="lista-personagens carrossel">
-        <ul class="thumbnails">
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip" ><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip" ><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-          <li><a href="#"  class="btn-tooltip" data-original-title="nome personagem" data-placement="bottom" rel="tooltip"><img src="/portal/images/capaPrograma/cocorico/menu-astolfo.png" /></a></li>
-        </ul>
-       </div>
-       -->
       <!--/menu personagens -->
     </div>
   </div>
@@ -94,32 +73,26 @@
           <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           
-         <?php if(count($related_image) > 0): ?> 
-          <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
-          <p class="bold">
-            <?php echo $se[0]->getTitle() ?>
-          </p>
-          <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
-          <?php echo $displays["conteudos"][0]->getTitle() ?>
-          
-          <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede">
-          <span> </span>
-          </a>
-        </a>                  
-        <?php elseif(count($related_video) > 0): ?> 
-          <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
-          <p class="bold">
-            <?php echo $se[0]->getTitle() ?>
-          </p>
-          <img src="http://img.youtube.com/vi/ZPP0FeoxHoM/0.jpg" alt="asdfg" name="asdf" />
-          <img src="http://img2.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
-          <?php echo $displays["conteudos"][0]->getTitle() ?>
-          
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede">
-          <span> </span>
-          </a>
-        </a>
-        <?php endif; ?>
+          <?php if(count($related_image) > 0): ?> 
+            <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+              <p class="bold">
+                <?php echo $se[0]->getTitle() ?>
+              </p>
+              <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
+              <?php echo $displays["conteudos"][0]->getTitle() ?>
+              <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede"><span> </span></a>
+            </a>                  
+          <?php elseif(count($related_video) > 0): ?> 
+            <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+              <p class="bold">
+                <?php echo $se[0]->getTitle() ?>
+              </p>
+              <img src="http://img.youtube.com/vi/ZPP0FeoxHoM/0.jpg" alt="asdfg" name="asdf" />
+              <img src="http://img2.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" />
+              <?php echo $displays["conteudos"][0]->getTitle() ?>
+              <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
+            </a>
+          <?php endif; ?>
         
         <?php endif; ?>
         
