@@ -398,7 +398,30 @@ $(document).ready(function(){
       }
     });
 });
-
+//enviar voto
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('.votar').hide();
+      $('#ajax-loader').show();
+    },
+    success: function(data){
+      $(".form-voto").hide();
+      $("form.inativo").fadeIn("fast");
+      var i=0;
+      $.each(data, function(key, val) {
+        
+        $('.resposta-'+i).html(val.votes);
+        i++;
+      });
+    }
+  });
+  
+}
 </script>
 
 <!--form-->
