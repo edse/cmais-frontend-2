@@ -345,6 +345,6 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #myModal2 .modal, 
 #myModal2 .modal-footer, 
 #myModal2 .modal-header { background:#1db186;}
-#myModal2 #myModalLabel { color:#fdf035; text-align:left; }
+#myModal2 #myModalLabel { color:#fdf035; text-align:left; height:auto; }
 #myModal2 #myModalLabel span { font-size:14px;  background: none;  bottom: 0;  height: auto;  left: 0;   position: relative;   width: auto;}
 /* /concurso cultural*/
