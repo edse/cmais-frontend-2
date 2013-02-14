@@ -1,4 +1,5 @@
 <h1>1234</h1>
+<img src="http://img.youtube.com/vi/ZPP0FeoxHoM/0.jpg" alt="asdfg" name="asdf" />
 
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
@@ -16,7 +17,7 @@
 </script>
 <!-- container-->
 <div class="container tudo">
-  <!--topo coco-->
+  <!--topo coco-->  
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
   <!--/topo coco-->
   
