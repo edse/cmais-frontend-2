@@ -43,6 +43,7 @@
         Cidade - UF</span>
       </p>
     </div>
+    <p class="tit">conheça os desenhos participantes:</p>
   </div>
   <!--/row-->
   <!-- paginacao -->
