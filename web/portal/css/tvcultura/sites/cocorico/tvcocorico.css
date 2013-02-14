@@ -53,9 +53,9 @@
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
-.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:5px 0 0 5px;}
+.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:5px 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
-.interatividade .form-campos .ico-cidade{background-position: 0 center; }
+.interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
 .interatividade .form-campos .ico-responsavel {background-position: 0 -82px; }
 .interatividade .form-campos .ico-email {background-position: 0 -109px; }
