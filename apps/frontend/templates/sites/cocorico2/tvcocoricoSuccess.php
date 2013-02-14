@@ -174,6 +174,7 @@
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
+              
               <div class="span9">
                 <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
