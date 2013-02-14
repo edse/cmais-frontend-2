@@ -49,6 +49,7 @@
 .interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
+.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; }
 .interatividade .form-campos select.error, 
 .interatividade label.error,
 .interatividade .form-campos input.error { background:#ef372d; color:#fff;}
