@@ -105,6 +105,7 @@
     <div class="span8 col-esq">
       
       <!-- destaque-home-simples -->
+      <!--
       <div class="destaque-home-tv span9">
         <?php if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
@@ -122,16 +123,15 @@
       </div>
       <!-- /destaque-home-simples -->
       
-      <?php
-      /* FORM PARA QUANDO TIVE PARTICIPAÇÃO
-      <!-- form interatividade -->
+      
+      <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       <div class="destaque-home-tv span9">
     	
           	
       	<?php if(isset($displays['destaque-seu-video'])): ?>
       	<?php if(count($displays['destaque-seu-video']) > 0): ?> 	
       			
-        <h2>Seu vídeo na TV Cocoricó “Ao vivoooo!”</h2>
+        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
         
         <?php endif; ?>
@@ -139,25 +139,23 @@
         
         <div class="destaque span12">
           <span></span>
-          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participe</a> 
+          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
           <span class="last"></span>
         </div>
       </div>
-       
+      <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-              <i class="ico-camera"></i>
-              Seu vídeo na TV Cocoricó “Ao vivoooo!”
+              <?php echo $displays['destaque-seu-video'][0]->getHeadline(); ?>
               <i class="ico-seta-titulo video"></i>
             </h3>
           </div>
         </div>
         <form id="form-contato" method="post" action="">
           <p>
-            Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!<br/>
-            Grave você sozinho, com seus amigos, em casa ou no seu lugar preferido!  Mas não esqueça da empolgação hein?<br/>
+            <?php echo $displays['destaque-seu-video'][0]->getDescription(); ?>
           </p>
           <div class="row-fluid form-campos">
             
@@ -264,8 +262,8 @@
  
       </div>
       <!-- form interatividade -->
-      */
-     ?>
+      <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
+      
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
@@ -372,6 +370,34 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+      /* form tv cocorico */
+  $('.btn-form').click(function(){
+   $('.destaque-home-tv').hide();
+   $('.interatividade').fadeIn("fast"); 
+  })
+  $('#votar-input').click(function(){
+    $('label.error').css('display','none');
+  });
+  //valida form
+  var validator = $('.form-voto').validate({
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
+        }
+      },
+      messages:{
+        opcao: ""
+      }
+    });
+});
+
+</script>
 
 <!--form-->
 <script type="text/javascript">
