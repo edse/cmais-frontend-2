@@ -148,16 +148,14 @@
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-              <i class="ico-camera"></i>
-              Seu vídeo na TV Cocoricó “Ao vivoooo!”
+              <?php echo $displays['destaque-seu-video'][0]->getHeadline(); ?>
               <i class="ico-seta-titulo video"></i>
             </h3>
           </div>
         </div>
         <form id="form-contato" method="post" action="">
           <p>
-            Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!<br/>
-            Grave você sozinho, com seus amigos, em casa ou no seu lugar preferido!  Mas não esqueça da empolgação hein?<br/>
+            <?php echo $displays['destaque-seu-video'][0]->getDescription(); ?>
           </p>
           <div class="row-fluid form-campos">
             
