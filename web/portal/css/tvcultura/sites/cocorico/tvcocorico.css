@@ -45,8 +45,8 @@
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
 .interatividade p {color:#FFF;}
-.interatividade form {padding:10px;}
-.interatividade .form-campos{padding:5px 0 0 0;position: relative;}
+.interatividade form {padding:5px 10px;}
+.interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
 .interatividade .form-campos select.error, 
@@ -67,7 +67,7 @@
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
 .interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
 .interatividade .form-campos .radio input { margin-top:0; }
-.interatividade .form-campos .last .span11 { margin-bottom:0; }
+.interatividade .form-campos .last .span11 { margin-bottom:5px; }
 
 .interatividade #msgErro p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
