@@ -49,7 +49,7 @@
 .interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
-.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:5px; }
+.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
 .interatividade .form-campos select.error, 
 .interatividade label.error,
 .interatividade .form-campos input.error { background:#ef372d; color:#fff;}
@@ -76,7 +76,7 @@
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
-.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
+.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:45px; overflow:auto; color:#747b3a;padding:10px;}
 
 .conteudo-tv{background-color: #1db186;}
