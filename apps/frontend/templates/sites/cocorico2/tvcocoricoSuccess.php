@@ -220,12 +220,15 @@
               <i class="ico-tv ico-bike"></i>
               <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
             </div>
+            <div class="row-fluid last">
+              <i class="ico-tv ico-bike"></i>              
+              <input type="file" placeholder="Seu desenho de bicicleta" name="desenho">
+            </div>
             
             <div data-provides="fileupload" class="fileupload fileupload-new">
               <i class="ico-tv ico-bike"></i>              
-              <div class="input-append">
-                <input type="file" placeholder="Seu desenho de bicicleta" name="desenho">
-              </div>
+              <input type="file" placeholder="Seu desenho de bicicleta" name="desenho">
+             
             </div>
             
             
