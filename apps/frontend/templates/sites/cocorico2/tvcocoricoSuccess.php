@@ -56,13 +56,7 @@
         </h2>
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
-            <?php
-              $display_img_src = $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('imaf');
-              if ($display_img_src == '') {
-                $related = $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-4-b');
-              }
-            ?>
+          <?php $related = $displays['destaque-tv-cocorico'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
             
         <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" />
           <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>
@@ -347,6 +341,8 @@
       <!-- /bastidores -->
       <?php endif; ?>
       <?php endif; ?>
+      
+      
             
       <!-- convidado especial -->
       <?php if(isset($displays['convidado-especial'])):?>
@@ -358,7 +354,7 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
-          <?php echo rafa ?>
+
           <div class="span6 destaque-1 conteudo-tv">
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
               <h3><?php $tam=20; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
