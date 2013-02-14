@@ -220,8 +220,9 @@
               <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
             </div>
             <div class="row-fluid">
-              <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"><input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:</label>
-              
+              <label class="radio" for="concorda">
+                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
+              </label>             
             </div>
           </div>
           
