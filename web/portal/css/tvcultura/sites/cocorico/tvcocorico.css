@@ -45,17 +45,20 @@
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
 .interatividade p {color:#FFF;}
-.interatividade form {padding:10px;}
-.interatividade .form-campos{padding:10px 0;position: relative;}
+.interatividade form {padding:5px 10px;}
+.interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos input,
-.interatividade .form-campos select{border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; }
+.interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
+.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
+.interatividade .form-campos select.error, 
+.interatividade label.error,
 .interatividade .form-campos input.error { background:#ef372d; color:#fff;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
 .interatividade .form-campos label.error { display: none !important ; }
-.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:5px 10px 0 0;}
+.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:0 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
@@ -63,14 +66,18 @@
 .interatividade .form-campos .ico-email {background-position: 0 -109px; }
 .interatividade .form-campos .ico-bike {background-position: 0 -133px; }
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
+.interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
+.interatividade .form-campos .radio input { margin-top:0; }
+.interatividade .form-campos .last .span11 { margin-bottom:5px; }
+
 .interatividade #msgErro p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
 .interatividade #msgErro hr,
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
-.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
-.interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:70px; overflow:auto; color:#747b3a;padding:10px;}
+.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
+.interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:61px; overflow:auto; color:#747b3a;padding:5px 10px;}
 
 .conteudo-tv{background-color: #1db186;}
 .conteudo-tv p{color: #747B3A; background-color:#bfd540;}

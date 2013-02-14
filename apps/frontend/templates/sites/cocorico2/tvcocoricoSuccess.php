@@ -215,13 +215,14 @@
               <i class="ico-tv ico-link"></i>
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
             </div-->
-            <div class="row-fluid">
+            <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
               <input type="text" class="span11 pull-left" name="destino" placeholder="Seu destino de bicicleta"/>
             </div>
-            <div class="row-fluid" style="position: relative;">
-              <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
-              <input type="radio" name="concorda" id="concorda" value="aceite" style="position: absolute;top: 0px;left: 10px;">
+            <div class="row-fluid">
+              <label class="radio" for="concorda">
+                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
+              </label>             
             </div>
           </div>
           
@@ -259,15 +260,17 @@
 
            </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          
+          <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
+          
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <div id="msgAcerto" style="display:none;">
-          <p>Seu vídeo foi enviado com sucesso! :)</p>
-          <hr>
-          <p>Para assistir ao vivo, continue ligado na TV Cocórico!</p>          
+          <p>Seu desenho foi enviado com sucesso! Obrigada por participar! :)</p>
+                   
         </div>
         <div id="msgErro" style="display:none;">
-          <p> Puxa, puxa que puxa... seu vídeo não foi enviado! :(<br/> 
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
