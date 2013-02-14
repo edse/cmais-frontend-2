@@ -221,12 +221,11 @@
               <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
             </div>
             
-            <div class="fileupload fileupload-new" data-provides="fileupload">
+            <div data-provides="fileupload" class="fileupload fileupload-new">
+              <i class="ico-tv ico-bike"></i>              
               <div class="input-append">
-                <span class="btn btn-file">
-                  <i class="ico-tv ico-bike"></i>
-                  <input type="file" name="desenho" placeholder="Seu desenho de bicicleta" /></span>
-               </div>
+                <input type="file" placeholder="Seu desenho de bicicleta" name="desenho">
+              </div>
             </div>
             
             
