@@ -117,7 +117,8 @@
           <?php elseif($displays['conteudos'][1]->Asset->AssetType->getSlug() == "content"): ?>
             <?php $related_image = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-            
+           <?php endif; ?> 
+           
             <?php if(count($related_image) > 0): ?> 
               <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
                 <p class="bold">
