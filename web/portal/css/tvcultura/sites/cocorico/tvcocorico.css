@@ -291,10 +291,10 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /enquete */
 
 /* instagram*/
-.tit-especial span { background: none;  position: inherit; width: auto; color:#fdf035; }
-.tit-especial h2 { margin:0; }
-.tit-especial .ico-bike,
-.tit-especial .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
+.tit-extra span { background: none;  position: inherit; width: auto; color:#fdf035; }
+.tit-extra h2 { margin:0; }
+.tit-extra .ico-bike,
+.tit-extra .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
 #box-instagram { margin-left:5px;}
 .instagram-placeholder {  float: left;  margin:0 13px 13px 0; width: 300px; height:300px;}
 .instagram-image { width:300px; }
@@ -319,7 +319,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
 
-.tit-especial h2 { width: 100%; }
+.tit-extra h2 { width: 100%; }
 .conteudo .tit { color:#1DB186; border-color:#1DB186; }
 
 #box-destaque .radio-cocorico{position:relative;}
@@ -339,5 +339,5 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #box-destaque .destaque-2 p { width: 97%; }
 
 /* concurso cultural*/
-.tit-especial .ico-bike { background-image: url("/portal/images/capaPrograma/cocorico/ico-bike.png"); height: 21px; width: 33px; }
+.tit-extra .ico-bike { background-image: url("/portal/images/capaPrograma/cocorico/ico-bike.png"); height: 21px; width: 33px; }
 /* /concurso cultural*/
