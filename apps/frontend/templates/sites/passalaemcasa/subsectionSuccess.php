@@ -120,7 +120,7 @@ if(isset($pager)){
                     <?php if(isset($displays["destaque-principal"][0]->AssetContent)): ?>
                       <p><?php echo $displays["destaque-principal"][0]->AssetContent->getHeadlineLong() ?></p>
                     <?php endif; ?>
-                  </div>
+                  </div> 
                 </div>
                 <!-- /NOTICIA INTERNA -->
               <?php endif; ?>
@@ -129,7 +129,7 @@ if(isset($pager)){
             <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
               <div class="box-listao grid2">
-                <?php if(isset($date)): ?>
+                <?php if(isset($date)): ?>`
                 <h3><?php echo format_date(strtotime($date),"D") ?></h3>
                 <?php endif ?>
                 <ul>
