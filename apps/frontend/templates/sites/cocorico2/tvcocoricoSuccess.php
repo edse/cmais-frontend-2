@@ -105,6 +105,7 @@
     <div class="span8 col-esq">
       
       <!-- destaque-home-simples -->
+      <!--
       <div class="destaque-home-tv span9">
         <?php if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
@@ -122,9 +123,8 @@
       </div>
       <!-- /destaque-home-simples -->
       
-      <?php
-      /* FORM PARA QUANDO TIVE PARTICIPAÇÃO
-      <!-- form interatividade -->
+      
+      <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       <div class="destaque-home-tv span9">
     	
           	
@@ -143,7 +143,7 @@
           <span class="last"></span>
         </div>
       </div>
-       
+      <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
         <div class="topo">
           <div class="bac-yellow">
@@ -264,8 +264,8 @@
  
       </div>
       <!-- form interatividade -->
-      */
-     ?>
+      <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
+      
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
