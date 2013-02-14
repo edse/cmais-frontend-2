@@ -36,8 +36,8 @@ class _siteActions extends sfActions
         }
       }
       elseif($this->site->slug == "cocorico2"){
-        if(!$request->getParameter('test')){
-          header("Location: http://www3.tvcultura.com.br/cocorico");
+        if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
+          header("location: http://www3.tvcultura.com.br/cocorico");
           die();
         }
       }

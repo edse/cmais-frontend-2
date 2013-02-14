@@ -40,7 +40,7 @@
 .natv ul li p { overflow:hidden; }
 .natv ul li bold { text-transform:uppercase; font-weight:bold;display: block; margin-top:5px; }
 .natv ul li img { margin-right:20px; }
-.natv .hora { padding:10px; background: #e9f3f4;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px; margin:10px 0 10px 20px;  }
+.natv .hora { padding:10px; background: #e9f3f4;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px; margin:10px 0 10px 20px; text-align:center;  }
 .natv .hora span { background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; min-height:1px; margin:0; padding:0; display: block; }
 .natv .hora a { margin:20px 0; display:block; text-align:center; }
 /* /natv */

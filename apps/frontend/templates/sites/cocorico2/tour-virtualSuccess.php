@@ -1,3 +1,11 @@
+<?php 
+if(isset($pager)){
+  $assets = $pager->getResults();
+}
+if(!isset($asset))
+  $asset = $assets[0];
+
+?>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->

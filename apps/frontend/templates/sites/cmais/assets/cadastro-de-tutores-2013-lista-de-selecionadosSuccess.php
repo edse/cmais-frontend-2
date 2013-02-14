@@ -29,7 +29,7 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
                 <div class="contatoWrapper">
-                  <h3 class="tit-pagina grid3">Cadastro para processo seletivo de tutoria - Curso de inglês a distância</h3>
+                  <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Curso inglês Online</h3>
                   <p class="titu" style="margin-bottom:60px">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   <br />
                   <br />

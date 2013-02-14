@@ -45,27 +45,40 @@
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
 .interatividade p {color:#FFF;}
-.interatividade form {padding:10px;}
-.interatividade .form-campos{padding:10px 0;position: relative;}
+.interatividade form {padding:5px 10px;}
+.interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos input,
-.interatividade .form-campos select{border-radius:5px}
+.interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
+.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
+.interatividade .form-campos select.error, 
+.interatividade label.error,
+.interatividade .form-campos input.error { background:#ef372d; color:#fff !important;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
-.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:21px; height:21px; display: block; float:left;margin:5px 0 0 5px;}
+.interatividade .form-campos label.error { display: none !important ; }
+.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:0 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
-.interatividade .form-campos .ico-cidade{background-position: 0 center; }
+.interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
+.interatividade .form-campos .ico-responsavel {background-position: 0 -82px; }
+.interatividade .form-campos .ico-email {background-position: 0 -109px; }
+.interatividade .form-campos .ico-bike {background-position: 0 -133px; }
+.interatividade .form-campos .row-fluid .span9 { margin-left:0; }
+.interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
+.interatividade .form-campos .radio input { margin-top:0; }
+.interatividade .form-campos .last .span11 { margin-bottom:5px; }
+
 .interatividade #msgErro p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
 .interatividade #msgErro hr,
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
-.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 10px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
-.interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:70px; overflow:auto; color:#747b3a;padding:10px;}
-
+.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
+.interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:61px; overflow:auto; color:#747b3a;padding:5px 10px;}
+.interatividade .regras p { color:#747b35;}
 .conteudo-tv{background-color: #1db186;}
 .conteudo-tv p{color: #747B3A; background-color:#bfd540;}
 
@@ -291,9 +304,10 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 /* /enquete */
 
 /* instagram*/
-.instagram span { background: none;  position: inherit; width: auto; color:#fdf035; }
-.instagram h2 { margin:0; }
-.instagram .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
+.tit-extra span { background: none;  position: inherit; width: auto; color:#fdf035; margin-left:10px; }
+.tit-extra h2 { margin:0; }
+.tit-extra .ico-bike,
+.tit-extra .ico-instagram { background: url("/portal/images/capaPrograma/cocorico/ico-instagram.png") no-repeat; display: block; float: left; height: 24px; margin: 8px 10px 0 0; width: 24px; }
 #box-instagram { margin-left:5px;}
 .instagram-placeholder {  float: left;  margin:0 13px 13px 0; width: 300px; height:300px;}
 .instagram-image { width:300px; }
@@ -318,7 +332,7 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 .destaque-2.ytb p { background:#F2722F; bottom: 0; position: relative; width: 94%; z-index: 100;}
 .conteudo a.destaque2  { margin-left:15px; }
 
-.instagram h2 { width: 100%; }
+.tit-extra h2 { width: 100%; }
 .conteudo .tit { color:#1DB186; border-color:#1DB186; }
 
 #box-destaque .radio-cocorico{position:relative;}
@@ -336,3 +350,15 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #box-destaque .destaque-2 img { margin: -29px 0; max-width: 304px; border-radius:30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;  }
 #box-destaque .destaque-1 p, 
 #box-destaque .destaque-2 p { width: 97%; }
+
+/* concurso cultural*/
+.tit-extra .ico-bike { background-image: url("/portal/images/capaPrograma/cocorico/ico-bike.png"); height: 21px; width: 33px; }
+.conteudo .grd { font-size: 20px; text-align:center; text-transform:uppercase; margin-top:20px; font-weight:bold; }
+.conteudo .grd span { color:#1db186 }
+#myModal2 .modal, 
+#myModal2 .modal-footer, 
+#myModal2 .modal-header { background:#1db186;}
+#myModal2 #myModalLabel { color:#fdf035; text-align:left; height:auto; }
+#myModal2 #myModalLabel span { font-size:14px;  background: none;  bottom: 0;  height: auto;  left: 0;   position: relative;   width: auto;}
+#myModal2 img {border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;} 
+/* /concurso cultural*/

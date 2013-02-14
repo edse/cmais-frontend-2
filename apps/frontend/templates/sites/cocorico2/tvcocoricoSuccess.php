@@ -1,5 +1,6 @@
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <!-- container-->
 <div class="container tudo">
   <!--topo coco-->
@@ -105,6 +106,7 @@
     <div class="span8 col-esq">
       
       <!-- destaque-home-simples -->
+      <!--
       <div class="destaque-home-tv span9">
         <?php if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
@@ -122,16 +124,15 @@
       </div>
       <!-- /destaque-home-simples -->
       
-      <?php
-      /* FORM PARA QUANDO TIVE PARTICIPAÇÃO
-      <!-- form interatividade -->
+      
+      <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       <div class="destaque-home-tv span9">
     	
           	
       	<?php if(isset($displays['destaque-seu-video'])): ?>
       	<?php if(count($displays['destaque-seu-video']) > 0): ?> 	
       			
-        <h2>Seu vídeo na TV Cocoricó “Ao vivoooo!”</h2>
+        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
         
         <?php endif; ?>
@@ -139,35 +140,42 @@
         
         <div class="destaque span12">
           <span></span>
-          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participe</a> 
+          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
           <span class="last"></span>
         </div>
       </div>
-       
+      <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
         <div class="topo">
           <div class="bac-yellow">
             <h3>
-              <i class="ico-camera"></i>
-              Seu vídeo na TV Cocoricó “Ao vivoooo!”
+              <?php echo $displays['destaque-seu-video'][0]->getTitle(); ?>
               <i class="ico-seta-titulo video"></i>
             </h3>
           </div>
         </div>
         <form id="form-contato" method="post" action="">
           <p>
-            Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!<br/>
-            Grave você sozinho, com seus amigos, em casa ou no seu lugar preferido!  Mas não esqueça da empolgação hein?<br/>
+            <?php echo $displays['destaque-seu-video'][0]->getDescription(); ?>
           </p>
           <div class="row-fluid form-campos">
             
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-right" name="nome" placeholder="Seu nome"/>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-responsavel"></i>
+              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-contato"></i>
+              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
+              
               <div class="span9">
                 <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
@@ -204,13 +212,28 @@
                 </select>
               </div>
             </div>
-            <div class="row-fluid">
+            <!--div class="row-fluid">
               <i class="ico-tv ico-link"></i>
               <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
+            </div-->
+            <div class="row-fluid last">
+              <i class="ico-tv ico-bike"></i>
+              <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
             </div>
-            <div class="row-fluid" style="position: relative;">
-              <label class="radio" for="concorda" style="clear: both; color:#FFF;padding-left: 35px"> Estou ciente e de acordo com os Termos e Condições abaixo:</label>
-              <input type="radio" name="concorda" id="concorda" value="aceite" style="position: absolute;top: 0px;left: 10px;">
+            
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+              <div class="input-append">
+                <span class="btn btn-file">
+                  <i class="ico-tv ico-bike"></i>
+                  <input type="file" name="desenho" placeholder="Seu desenho de bicicleta" /></span>
+               </div>
+            </div>
+            
+            
+            <div class="row-fluid">
+              <label class="radio" for="concorda">
+                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
+              </label>             
             </div>
           </div>
           
@@ -248,15 +271,17 @@
 
            </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          
+          <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
+          
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <div id="msgAcerto" style="display:none;">
-          <p>Seu vídeo foi enviado com sucesso! :)</p>
-          <hr>
-          <p>Para assistir ao vivo, continue ligado na TV Cocórico!</p>          
+          <p>Seu desenho foi enviado com sucesso! Obrigada por participar! :)</p>
+                   
         </div>
         <div id="msgErro" style="display:none;">
-          <p> Puxa, puxa que puxa... seu vídeo não foi enviado! :(<br/> 
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
@@ -264,8 +289,8 @@
  
       </div>
       <!-- form interatividade -->
-      */
-     ?>
+      <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
+      
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
@@ -282,7 +307,7 @@
        </div>
         
         <!-- item -->
-        <a href="/cocorico2/tour-virtual" title="Tour Virtual">
+        <a href="<?php echo $site->retriveUrl(); ?>/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
@@ -294,7 +319,7 @@
         <!-- /item -->
          
         <!-- item -->
-        <a href="/cocorico2/erros-de-gravacao" title="Erros de Gravação">
+        <a href="<?php echo $site->retriveUrl(); ?>/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
@@ -306,7 +331,7 @@
         <!-- /item -->
         
         <!-- item -->
-        <a href="/cocorico2/instagram" title="Instagram">
+        <a href="<?php echo $site->retriveUrl(); ?>/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
                 <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
@@ -324,16 +349,23 @@
       <!-- convidado especial -->
       <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
-          <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+           <?php
+              $display_img_src = $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+            ?>
+          
           <div class="span6 destaque-1 conteudo-tv">
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
               <h3><?php $tam=20; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-4-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+              <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <p>
                 <?php $tam=26; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </p>
             </a>
-           <a href="/cocorico2/convidados" class="btn-ico-mais" title="CONVIDADOS">
+           <a href="<?php echo $site->retriveUrl(); ?>/convidados" class="btn-ico-mais" title="CONVIDADOS">
              <i class="ico-mais"></i>
            </a>        
          </div>
@@ -353,7 +385,7 @@
                 <?php $tam=26; $str=$displays['receitinhas'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </p>
             </a>  
-            <a href="/cocorico2/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
+            <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
               <i class="ico-mais"></i>  
             </a>
           </div>       
@@ -372,6 +404,34 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+      /* form tv cocorico */
+  $('.btn-form').click(function(){
+   $('.destaque-home-tv').hide();
+   $('.interatividade').fadeIn("fast"); 
+  })
+  $('#votar-input').click(function(){
+    $('label.error').css('display','none');
+  });
+  //valida form
+  var validator = $('.form-voto').validate({
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
+        }
+      },
+      messages:{
+        opcao: ""
+      }
+    });
+});
+
+</script>
 
 <!--form-->
 <script type="text/javascript">
@@ -416,7 +476,13 @@
           required: true,
           minlength: 3
         },
-        link:{
+        email:{
+          required:true
+        },
+        nome_resp:{
+          required:true
+        },
+        desenho:{
           required:true
         },
         concorda:{
