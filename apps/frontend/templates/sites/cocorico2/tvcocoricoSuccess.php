@@ -455,7 +455,13 @@ $(document).ready(function(){
           required: true,
           minlength: 3
         },
-        link:{
+        email:{
+          required:true
+        },
+        nome_resp:{
+          required:true
+        },
+        destino:{
           required:true
         },
         concorda:{
