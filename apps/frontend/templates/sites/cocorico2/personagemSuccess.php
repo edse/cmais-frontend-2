@@ -87,30 +87,57 @@
      
         <?php if(isset($displays["conteudos"][0])): ?>
           <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
-        <a class="span6 destaque-2 conteudo-diverso ytb" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+          
+          <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          
+         <?php if(count($related_image) > 0): ?> 
+          <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
           </p>
           <img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
           <?php echo $displays["conteudos"][0]->getTitle() ?>
           
+          <a href="/cocorico2/<?php echo $se[0]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede">
+          <span> </span>
+          </a>
+        </a>
+        <? $related_image = 0; ?>
+        <? $related_video = 0; ?>
+        <?php endif; ?>
+        
+        <?php if(count($related_video) > 0): ?> 
+          <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+          <p class="bold">
+            <?php echo $se[0]->getTitle() ?>
+          </p>
+          <img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
+          <?php echo $displays["conteudos"][0]->getTitle() ?>
+          
           <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede">
           <span> </span>
           </a>
-
         </a>
+        <? $related_image = 0; ?>
+        <? $related_video = 0; ?>
+        <?php endif; ?>
+        
+        
+        
+        
         <?php endif; ?>
         
         <?php if(isset($displays["conteudos"][1])): ?>
           <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
-        <a class="span6 destaque-2 conteudo-diverso ytb" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
+        <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
           <p class="bold">
             <?php echo $se[0]->getTitle() ?>
           </p>
           <img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>" name="<?php echo $displays["conteudos"][1]->getTitle() ?>" />
           <?php echo $displays["conteudos"][1]->getTitle() ?>
           
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede">
+          <a href="/cocorico2/<?php echo $se[0]->getSlug() ?>" class="btn-ico-mais" title="Papel de Parede">
           <span> </span>
           </a>
           
