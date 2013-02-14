@@ -56,7 +56,7 @@
         </h2>
         <?php if(isset($displays_tv_cocorico['destaque-tv-cocorico'])):?>
           <?php if(count($displays_tv_cocorico['destaque-tv-cocorico']) > 0): ?>
-      
+       
           <?php
               $display_img_src = $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveImageUrlByImageUsage('image-5-b');
               if ($display_img_src == '') {
