@@ -114,7 +114,7 @@
           <img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>" name="<?php echo $displays["conteudos"][0]->getTitle() ?>" />
           <?php echo $displays["conteudos"][0]->getTitle() ?>
           
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede">
+          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"> 
           <span> </span>
           </a>
         </a>
