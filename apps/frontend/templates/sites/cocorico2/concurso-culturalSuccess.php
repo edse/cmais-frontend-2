@@ -62,13 +62,13 @@
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
       <li class="span4">
-        <a class="btn-produto" href="#myModal" data-toggle="modal"  name=""  title="">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
           <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
           <p>TV Cocoricó com Valéria Zopello …</p>
         </a>
       </li>
       <!-- Modal -->
-      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
           <h3 id="myModalLabel"> Cocoricó – Um amigo especial</h3>
