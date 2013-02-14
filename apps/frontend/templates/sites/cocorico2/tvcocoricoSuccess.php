@@ -260,7 +260,9 @@
 
            </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-          <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
+          
+          <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
+          
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <div id="msgAcerto" style="display:none;">
