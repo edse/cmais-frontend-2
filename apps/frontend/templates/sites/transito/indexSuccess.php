@@ -115,7 +115,16 @@ function isDevice(OSName)
                 <p>CÂMERAS DE SÃO PAULO</p>
                 <form id="opcoes-livestream" action="" method="post">
                   <select id="opcao-livestream-1" class="required">
-                    <option value="1" selected="selected">Marginal Tietê</option>
+                    <option value="9">Avenida Aricanduva</option>
+                    <option value="6">Avenida Dummont Villares</option>
+                    <option value="8">Avenida Pompéia</option>
+                    <option value="3">Avenida Tiradentes</option>
+                    <option value="7">Freguesia do Ó</option>
+                    <option value="5">Marginal Pinheiros - Est. Pinheiros</option>
+                    <option value="4">Marginal Pinheiros - Jockey Club</option>
+                    <option value="1" selected="selected">Marginal Tietê - 1</option>
+                    <option value="4">Marginal Tietê - 2</option>
+                    <option value="2">Radial Leste x Salim Farah Maluf</option>
                   </select> 
                 </form>
 
@@ -168,22 +177,26 @@ function isDevice(OSName)
                        
                       $("#opcao-livestream-1").change(function () {
                         $("#opcao-livestream-1 option:selected").each(function () {
-                          if ($(this).val() == "8")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_pompeia.php"  style="width: 310px; height: 240px;" alt="Av. Pompéia">');
+                          
+                          if ($(this).val() == "1")
+                            $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">');
                           else if ($(this).val() == "2")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_belenzinho.php" style="width: 310px; height: 240px;" alt="Belenzinho">'); 
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=belenzinho" style="width: 310px; height: 240px;" alt="Radial Leste x Salim Farah Maluf">'); 
                           else if ($(this).val() == "3")
-                            $("#livestream").html('<img src="http://200.136.27.15/cameras/img_tiradentes.php"  style="width: 310px; height: 240px;" alt="Avenida Tiradentes">'); 
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=tiradentes"  style="width: 310px; height: 240px;" alt="Av. Tiradentes">'); 
                           else if ($(this).val() == "4")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_pinheironeto.php"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Jockey Club">'); 
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=mpinheiros"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Jockey Club">'); 
                           else if ($(this).val() == "5")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_somar.php"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Est. Pinheiros">'); 
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=somar"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Est. Pinheiros">'); 
                           else if ($(this).val() == "6")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_santana.php"  style="width: 310px; height: 240px;" alt="SESC Santana">');
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=santana"  style="width: 310px; height: 240px;" alt="Av. Dummont Villares">');
                           else if ($(this).val() == "7")
-                              $("#livestream").html('<img src="http://200.136.27.15/cameras/img_radial.php"  style="width: 310px; height: 240px;" alt="Radial Leste - Metrô Tatuapé">');
-                          else if ($(this).val() == "1")
-                              $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">');         
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=freguesia"  style="width: 310px; height: 240px;" alt="Freguesia do Ó">');
+                          else if ($(this).val() == "8")
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=pompeia"  style="width: 310px; height: 240px;" alt="Av. Pompéia">');
+                          else if ($(this).val() == "9")
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=aricanduva"  style="width: 310px; height: 240px;" alt="Av. Aricanduva">');
+                                   
                         });
                       });
                       
