@@ -212,22 +212,13 @@
                 </select>
               </div>
             </div>
-            <!--div class="row-fluid">
-              <i class="ico-tv ico-link"></i>
-              <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
-            </div-->
+                 
             <div class="row-fluid last">
-              <i class="ico-tv ico-bike"></i>
-              <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
+              <i class="ico-tv ico-bike"></i>  
+              <label>Seu desenho de bicicleta</label>            
+              <input type="file" name="desenho">
             </div>
-            
-            <div data-provides="fileupload" class="fileupload fileupload-new">
-              <i class="ico-tv ico-bike"></i>              
-              <div class="input-append">
-                <input type="file" placeholder="Seu desenho de bicicleta" name="desenho">
-              </div>
-            </div>
-            
+           
             
             <div class="row-fluid">
               <label class="radio" for="concorda">
@@ -355,7 +346,7 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
-          
+          <?php echo rafa ?>
           <div class="span6 destaque-1 conteudo-tv">
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
               <h3><?php $tam=20; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
