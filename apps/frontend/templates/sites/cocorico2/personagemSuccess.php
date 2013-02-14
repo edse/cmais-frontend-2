@@ -81,7 +81,7 @@
         </div>
         <p><?php echo html_entity_decode($displays["texto"][0]->Asset->AssetContent->render()) ?></p>
       </div>
-      <?php endif; ?>
+      <?php endif; ?> 
       
       <div class="span12">
      
