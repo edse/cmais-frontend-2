@@ -67,15 +67,6 @@
           <p>TV Cocoricó com Valéria Zopello …</p>
         </a>
       </li>
-      <!-- Modal -->
-      <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-          <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
-          <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
-        </div>
-      </div>
-      <!-- /Modal -->
       <li class="span4">
         <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
           <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
@@ -144,6 +135,15 @@
       </li>
       
     </ul>
+    <!-- Modal -->
+      <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+          <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
+          <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
+        </div>
+      </div>
+      <!-- /Modal -->
   </div>
   <!-- /row-->
   <!-- paginacao -->
