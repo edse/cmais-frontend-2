@@ -4,7 +4,6 @@
 <script type="text/javascript" src="/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript" src="/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
 <link rel="stylesheet" href="/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
 <!--/FANCYBOX-->
 
 <!-- container-->
