@@ -52,7 +52,7 @@
 .interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
 .interatividade .form-campos select.error, 
 .interatividade label.error,
-.interatividade .form-campos input.error { background:#ef372d; color:#fff;}
+.interatividade .form-campos input.error { background:#ef372d; color:#fff !important;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}

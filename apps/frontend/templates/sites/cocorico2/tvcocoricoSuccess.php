@@ -219,6 +219,22 @@
               <i class="ico-tv ico-bike"></i>
               <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
             </div>
+            
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+              <div class="input-append">
+                <div class="uneditable-input span3">
+                  <i class="icon-file fileupload-exists"></i>
+                  <span class="fileupload-preview"></span>
+                </div>
+                <span class="btn btn-file">
+                  <span class="fileupload-new">Seu desenho de bicicleta</span>
+                  <span class="fileupload-exists">Change</span>
+                  <input type="file" /></span>
+                  <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+              </div>
+            </div>
+            
+            
             <div class="row-fluid">
               <label class="radio" for="concorda">
                 <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
