@@ -121,9 +121,6 @@
         <? $related_video = 0; ?>
         <?php endif; ?>
         
-        
-        
-        
         <?php endif; ?>
         
         <?php if(isset($displays["conteudos"][1])): ?>
