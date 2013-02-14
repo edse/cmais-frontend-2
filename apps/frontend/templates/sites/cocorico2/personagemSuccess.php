@@ -77,7 +77,7 @@
               </p>
               <img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" />
               <?php echo $displays["conteudos"][0]->getTitle() ?>
-              <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
+              <a href="<?php echo $site->retriveUrl().$displays['conteudos'][0]->Asset->Section->getSlug() ?>" class="btn-ico-mais" title="<?php echo $displays['conteudos'][0]->Asset->Section->getSlug() ?>"><span></span></a>
             </a>
           <?php elseif($displays['conteudos'][0]->Asset->AssetType->getSlug() == "content"): ?>
             <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
@@ -104,34 +104,42 @@
             <?php endif; ?>
           <?php endif; ?>
           
-<<<<<<< HEAD
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"> 
-          <span> </span>
-          </a>
-        </a>
-        <? $related_video = 0; ?>
-        <?php endif; ?>
-=======
->>>>>>> 126fb5792e5b9e6c34aa0f8c5fd522131115a026
-        
-        <?php endif; ?>
-        
-        <?php if(isset($displays["conteudos"][1])): ?>
-          <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
-        <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
-          <p class="bold">
-            <?php echo $se[0]->getTitle() ?>
-          </p>
-          <img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>" name="<?php echo $displays["conteudos"][1]->getTitle() ?>" />
-          <?php echo $displays["conteudos"][1]->getTitle() ?>
-          
-          <a href="/cocorico2/<?php echo $se[0]->getSlug() ?>" class="btn-ico-mais" title="Papel de Parede">
-          <span> </span>
-          </a>
-          
-         </a>
-        <?php endif; ?>
-      </div>
+
+          <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
+            <a class="box destaques span6" style="float: right;" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
+              <p class="bold">
+                <?php echo $se[1]->getTitle() ?>
+              </p>
+              <img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" />
+              <?php echo $displays["conteudos"][1]->getTitle() ?>
+              <a href="<?php echo $site->retriveUrl().$displays['conteudos'][1]->Asset->Section->getSlug() ?>" class="btn-ico-mais" title="<?php echo $displays['conteudos'][0]->Asset->Section->getSlug() ?>"><span></span></a>
+            </a>
+          <?php elseif($displays['conteudos'][1]->Asset->AssetType->getSlug() == "content"): ?>
+            <?php $related_image = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+            <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+            
+            <?php if(count($related_image) > 0): ?> 
+              <a class="box destaques span6" href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+                <p class="bold">
+                  <?php echo $se[1]->getTitle() ?>
+                </p>
+                <img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>" name="<?php echo $displays["conteudos"][1]->getTitle() ?>" />
+                <?php echo $displays["conteudos"][1]->getTitle() ?>
+                <a href="/cocorico2/<?php echo $se[1]->getTitle() ?>" class="btn-ico-mais" title="Papel de Parede"><span> </span></a>
+              </a>                  
+            <?php elseif(count($related_video) > 0): ?> 
+              <a class="box destaques span6" href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>" title="<?php echo $displays["conteudos"][1]->getTitle() ?>">
+                <p class="bold">
+                  <?php echo $se[1]->getTitle() ?>
+                </p>
+                <img src="http://img.youtube.com/vi/<?php echo $related_video[1]->AssetVideo->getYoutubeId()?>/0.jpg" />
+                <?php echo $displays["conteudos"][1]->getTitle() ?>
+                <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="Papel de Parede"><span></span></a>
+              </a>
+            <?php endif; ?>
+          <?php endif; ?>
+
+     </div>
     </div>
     
 
