@@ -62,11 +62,33 @@
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
       <li class="span4">
-        <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
+        <a class="btn-produto" href="#myModal" data-toggle="modal"  name=""  title="">
           <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
           <p>TV Cocoricó com Valéria Zopello …</p>
         </a>
       </li>
+      <!-- Modal -->
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+          <h3 id="myModalLabel"> Cocoricó – Um amigo especial</h3>
+          <p>Editora Melhoramentos</p>
+        </div>
+        <div class="modal-body">
+          <img src=" " alt="teste" />
+        </div>
+        <div class="modal-footer">
+          <ul>
+                          <li class="span2">
+                <a href="javascript:;" class="btn-modal-prod" title="Ampliar imagem" name="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" >
+                  <img src="http://midia.cmais.com.br/assets/image/original/01e41e374a2890cdcfabda414eac558c1556c839.jpg" />
+                </a>
+              </li>
+                        
+          </ul>
+        </div>
+      </div>
+      <!-- /Modal -->
       <li class="span4">
         <a title="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " href="http://cmais.com.br/cocorico2/tvcocorico/episodios/tv-cocorico-com-valeria-zopello-30-01-13-parte-3">
           <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
@@ -156,3 +178,18 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+
+<!--modal produto-->
+<script>
+//chamando modal
+$('.btn-produto').click(function(){
+  var img_ampl = $(this).attr('name');
+  $('.modal-body img').attr('src', img_ampl); 
+});
+$('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
+  var img_ampl_modal = $(this).attr('name');
+  $('.modal-body img').hide().attr('src', img_ampl_modal).show();
+});
+
+</script>
+<!--/modal produto-->
