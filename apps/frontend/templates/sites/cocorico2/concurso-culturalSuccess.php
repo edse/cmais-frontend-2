@@ -34,14 +34,10 @@
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo">
-    <h3>Hélio Ziskind</h3>
-    <span class="data">31/08/12</span>
-    <a class="span6"><img alt="Hélio Ziskind" src="http://midia.cmais.com.br/assets/image/original/41566c83254338a9def287f94f71fd20e113fc00.jpg"></a>
+    
+    <a class="span6"><img alt="" src="http://midia.cmais.com.br/assets/image/original/41566c83254338a9def287f94f71fd20e113fc00.jpg"></a>
     <div class="span6">
-      <p class="frase"><span></span>eu comecei a fazer música infantil quando eu vim trabalhar na tv cultura <span class="last"></span></p>
-      <p></p>
       <p>Hélio Ziskind nasceu em 1955, é músico e compositor. Na TV Cultura compôs temas para os programas como Rá-tim-bum, Castelo Rá-tim-bum, X-Tudo e Cocoricó, entre outros. Em 1997, lançou o álbum Meu Pé Meu Querido Pé, reunindo temas de programas Cocoricó, Castelo Rá-Tim-Bum, Banho de Aventura, Glub-Glub e X-Tudo, além de incluir uma versão musicalizada do poema "Plutão", do escritor Olavo Bilac. Conheça mais sobre Hélio Ziskind através da entrevista que Júlio fez neste episódio da TV Cocoricó!</p>
-      <p></p>
     </div>
   </div>
   <!--/row-->
