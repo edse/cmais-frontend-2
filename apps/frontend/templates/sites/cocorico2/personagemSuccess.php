@@ -64,7 +64,7 @@
       <div class="span12">
      
       <?php if(isset($displays["conteudos"][0])): ?> 
-        <?php $se = $displays["conteudos"][0]->Asset->getSection(); ?>
+        <?php $se = $displays["conteudos"][0]->Asset->getSections(); ?>
         <!-- box-destaque-0 -->
       
         <div class="span6 box-destaque"> 
@@ -97,7 +97,7 @@
             
             <!-- box-destaque-1 -->
        <?php if(isset($displays["conteudos"][1])): ?> 
-        <?php $se = $displays["conteudos"][1]->Asset->getSection(); ?>
+        <?php $se = $displays["conteudos"][1]->Asset->getSections(); ?>
  
       <div class="span6 box-destaque"> 
         
