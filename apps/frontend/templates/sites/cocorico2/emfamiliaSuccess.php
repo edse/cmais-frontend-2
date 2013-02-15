@@ -110,14 +110,14 @@
            </h3>
          </div>
        </div>
-       <?php
-        
-        $blocks = Doctrine_Query::create()
+      <?php
+       
+       $blocks = Doctrine_Query::create()
           ->select('b.*')
           ->from('Block b, Section s')
           ->where('b.section_id = s.id')
           ->andWhere('s.slug = ?', "agenda")
-          ->andWhere('b.slug = ?', 'acontece') 
+          ->andWhere('b.slug = ?', "acontece") 
           ->andWhere('s.site_id = ?', $site->id)
           ->execute();
         
@@ -132,9 +132,7 @@
             include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays_acontece['acontece']));
           endif;
         endif;
-         
-        ?>
-                <!-- destaque -->
+        ?>    <!-- destaque -->
       <!-- fale conosco cr-->
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
