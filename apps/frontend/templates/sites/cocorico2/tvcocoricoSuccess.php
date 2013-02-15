@@ -220,10 +220,11 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
+              <input type="text" class="span9 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
               <div class="fileupload fileupload-new" data-provides="fileupload">
-                <span class="btn btn-file"><span class="fileupload-new">Select file</span>
-                        
+                <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+                <span class="fileupload-preview"></span>
+                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
               </div>
             </div>
          
@@ -393,6 +394,25 @@
       <?php endif; ?>
      <?php endif; ?>
       <!-- /receitinhas -->
+    <div class="span12">  
+    <!-- box-destaque -->
+    <div class="span6 box-destaque tvcocorico">
+      <h3><a href="#">Convidado especial</a></h3>
+      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
+      <a href="#">texto corrido</a>
+      <a href="#" class="ico-mais"></a>
+    </div>
+    <!-- box-destaque -->
+    
+    <!-- box-destaque -->
+    <div class="span6 box-destaque">
+      <h3><a href="#">Receitinhas</a></h3>
+      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
+      <a href="#">texto corrido</a>
+      <a href="#" class="ico-mais"></a>
+    </div>
+    <!-- box-destaque -->
+    </div>
       
       
     </div>

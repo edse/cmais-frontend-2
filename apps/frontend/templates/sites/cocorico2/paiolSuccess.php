@@ -38,7 +38,7 @@
            
       <div class="tvcoco span12">    
         <h2>Receitinhas</h2> 
-        <a class="convidado span12" href="<?php echo $site->retriveUrl().$displays['destaque-receitinhas'][0]->Asset->Section->getSlug() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
+        <a class="convidado span12" href="<?php echo $site->retriveUrl().$displays['destaque-receitinhas'][0]->Asset->Sections[0]->getTitle() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
           <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
@@ -120,7 +120,7 @@
         <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Toda Criança tem Direito"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
             </div>
             <span>
               Toda Criança tem Direito
@@ -193,6 +193,23 @@
       <?php endif; ?>
     <?php endif; ?>
     <!-- /Papel de parede -->
+    
+    <!-- box-destaque -->
+    <div class="span4 box-destaque">
+      <h3><a href="#">Imprima e brinque</a></h3>
+      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
+      <a href="#">texto corrido</a>
+      <a href="#" class="ico-mais"></a>
+    </div>
+    <!-- box-destaque -->
+    <!-- box-destaque -->
+    <div class="span4 box-destaque">
+      <h3><a href="#">Papel de parede</a></h3>
+      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
+      <a href="#">texto corrido</a>
+      <a href="#" class="ico-mais"></a>
+    </div>
+    <!-- box-destaque -->
     
     <div class="span4 destaque2 box-radio">
       <!-- radio -->
