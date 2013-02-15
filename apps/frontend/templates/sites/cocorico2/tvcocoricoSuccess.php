@@ -220,8 +220,11 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input type="text" class="span9 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
-              <span class="btn btn-file"><span class="fileupload-new">Arquivo</span>
+              <input type="text" class="span11 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+                <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                        
+              </div>
             </div>
          
            
