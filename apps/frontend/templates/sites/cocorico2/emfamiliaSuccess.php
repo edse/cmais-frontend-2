@@ -118,7 +118,7 @@
           ->where('b.section_id = s.id')
           ->andWhere('s.slug = ?', "agenda")
           ->andWhere('b.slug = ?', "acontece") 
-          ->andWhere('s.site_id = ?', $site->id)
+          ->andWhere('s.site_id = ?', 1149)
           ->execute();
         
         //echo count($blocks)."<br>";
