@@ -402,3 +402,7 @@ bold,
 .box-destaque a { color: #FDF035; text-align:center; display: block;}
 .box-destaque a:hover { text-decoration:none; }
 .box-destaque .ico-mais { background: url("/portal/images/capaPrograma/cocorico/ico-mais-home.png") no-repeat 0 top ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
+
+.box-destaque.joguinhos {  background:#1893CF;  }
+.box-destaque.joguinhos a { color:#fff; }
+.box-destaque .ico-mais { background-position:0 0; }
