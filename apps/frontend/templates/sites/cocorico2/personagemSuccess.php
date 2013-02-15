@@ -102,7 +102,7 @@
       <div class="span6 box-destaque"> 
         <?php $se = $displays["conteudos"][1]->Asset->Sections; ?>
         <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
-          <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[1]->getTitle() ?></a></h3>
+          <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se->getTitle() ?></a></h3>
           <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
           <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
           <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
