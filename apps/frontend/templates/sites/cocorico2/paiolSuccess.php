@@ -38,7 +38,7 @@
            
       <div class="tvcoco span12">    
         <h2>Receitinhas</h2> 
-        <a class="convidado span12" href="<?php echo $site->retriveUrl().$displays['destaque-receitinhas'][0]->Asset->Section->getSlug() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
+        <a class="convidado span12" href="<?php echo $site->retriveUrl().$displays['destaque-receitinhas'][0]->Section->getSlug() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
           <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
