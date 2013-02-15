@@ -401,8 +401,13 @@ bold,
 .box-destaque h3 a,
 .box-destaque a { color: #FDF035; text-align:center; display: block;}
 .box-destaque a:hover { text-decoration:none; }
-.box-destaque .ico-mais { background: url("/portal/images/capaPrograma/cocorico/ico-mais-home.png") no-repeat 0 top ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
+.box-destaque .ico-mais { background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -36px 0 ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
 
 .box-destaque.joguinhos {  background:#1893CF;  }
 .box-destaque.joguinhos a { color:#fff; }
-.box-destaque .ico-mais { background-position:0 0; }
+.box-destaque.joguinhos .ico-mais { background-position:0 0; }
+
+.box-destaque.tvcocorico {  background:#1DB186;  }
+.box-destaque.tvcocorico h3 a { background:#1DB186; color:#FDF035; }
+.box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
+.box-destaque.tvcocorico .ico-mais { background-position:-73px 0; }
