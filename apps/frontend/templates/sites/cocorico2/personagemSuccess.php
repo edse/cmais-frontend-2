@@ -104,7 +104,7 @@
         <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
           <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se ?></a></h3>
           <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
-          <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $displays["conteudos"][1]->Asset->getTitle() ?></a>
+          <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
           <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
 
         <?php elseif($displays['conteudos'][1]->Asset->AssetType->getSlug() == "content"): ?>
