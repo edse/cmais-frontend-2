@@ -393,7 +393,7 @@
       <?php endif; ?>
      <?php endif; ?>
       <!-- /receitinhas -->
-      
+    <div class="span12">  
     <!-- box-destaque -->
     <div class="span6 box-destaque tvcocorico">
       <h3><a href="#">Convidado especial</a></h3>
@@ -411,6 +411,7 @@
       <a href="#" class="ico-mais"></a>
     </div>
     <!-- box-destaque -->
+    </div>
       
       
     </div>
