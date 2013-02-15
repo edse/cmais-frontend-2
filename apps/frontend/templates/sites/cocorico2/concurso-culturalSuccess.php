@@ -61,94 +61,32 @@
     </ul>
   </div>
   <!-- paginacao -->
+  
+  <?php if(count($pager->getResults() > 0)): ?>
   <!--row-->
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
+      <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
+        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name="<?php echo $d->getTitle(); ?>"  title="<?php echo $d->getTitle(); ?>">
+          <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->Asset->retriveImageUrlByImageUsage("image-13-b") ?>" class="span12">
+          <p><?php echo $d->getTitle(); ?></p>
         </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name=""  title="">
-          <img alt="TV Cocoricó com Valéria Zopello  - 30/01/13 Parte 3 " src="http://img.youtube.com/vi/VKKss7wXY5Q/0.jpg" class="span12">
-          <p>TV Cocoricó com Valéria Zopello …</p>
-        </a>
-      </li>
-      
+      </li> 
+      <?php endforeach; ?>
     </ul>
     <!-- Modal -->
-      <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-          <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
-          <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
-        </div>
+    <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
+        <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
       </div>
-      <!-- /Modal -->
+    </div>
+    <!-- /Modal -->
   </div>
   <!-- /row-->
+  <?php endif; ?>
   <!-- paginacao -->
   <div class="pagination pagination-centered">
     <ul>
