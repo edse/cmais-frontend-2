@@ -1,6 +1,3 @@
-<h1>1234</h1>
-<img src="http://img.youtube.com/vi/ZPP0FeoxHoM/0.jpg" alt="asdfg" name="asdf" />
-
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
@@ -41,7 +38,6 @@
   <!--btn voltar-->
   <a href="../personagens" class="voltar personagem">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
-
 
   <!--row-->
   <div class="row-fluid conteudo">
@@ -96,15 +92,39 @@
           <?php endif; ?>
         <?php endif; ?>
       </div>
-      <?php endif; ?>
-
+    
             <!-- box-destaque-0 -->
             
             <!-- box-destaque-1 -->
            
+      <div class="span6 box-destaque"> 
+        <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
+          <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[1]->getTitle() ?></a></h3>
+          <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
+          <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
+          <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
+
+        <?php elseif($displays['conteudos'][1]->Asset->AssetType->getSlug() == "content"): ?>
+          <?php $related_image = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+          <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          <?php if(count($related_image) > 0): ?> 
+            <h3><a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a></h3>
+            <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
+            <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[1]->getTitle() ?></a>
+            <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
+       
+          <?php elseif(count($related_video) > 0): ?> 
+            <h3><a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a></h3>
+            <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
+            <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[1]->getTitle() ?></a>
+            <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
+ 
+          <?php endif; ?>
+        <?php endif; ?>
+      </div>
+      <?php endif; ?>
+           
             <!-- box-destaque-1 -->
-
-
      </div>
     </div>
     
