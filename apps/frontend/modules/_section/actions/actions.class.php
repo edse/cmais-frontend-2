@@ -1531,7 +1531,7 @@ class _sectionActions extends sfActions
       }
       else{
         if(in_array($this->site->getSlug(), array("cocorico","cocorico2"))){
-          if ($this->section->Parent->getSlug() == "concurso-cultural") {
+          if ($this->section->Parent->slug == "concurso-cultural") {
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
           }
