@@ -506,15 +506,16 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     }
 #rodovias #cameras #camera20.pos20:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
 
-#rodovias #cameras #camera21{
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -176px transparent;
+#rodovias #cameras #camera21 {
+  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
   height: 31px;
-  left: 120px;
+  left: 169px;
   position: absolute;
-  top: 299px;
-  width: 43px
-    }
-#rodovias #cameras #camera20.pos20:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
+  top: 427px;
+  width: 43px;
+}
+
+#rodovias #cameras #camera21.pos21:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
 
 
 /* MENU MAPA */
