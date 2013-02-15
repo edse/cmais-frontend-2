@@ -122,6 +122,7 @@ function isDevice(OSName)
                     <option value="7">Freguesia do Ó</option>
                     <option value="5">Marginal Pinheiros - Est. Pinheiros</option>
                     <option value="4">Marginal Pinheiros - Jockey Club</option>
+                    <option value="11">Marginal Pinheiros - Ponte Ari Torres</option>
                     <option value="1" selected="selected">Marginal Tietê - 1</option>
                     <option value="10">Marginal Tietê - 2</option>
                     <option value="2">Radial Leste x Salim Farah Maluf</option>
@@ -198,6 +199,8 @@ function isDevice(OSName)
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=aricanduva"  style="width: 310px; height: 240px;" alt="Av. Aricanduva">');
                           else if ($(this).val() == "10")
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=mtiete"  style="width: 310px; height: 240px;" alt="Marginal Tietê - 2">');
+                          else if ($(this).val() == "11")
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=emae"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Ponte Ari Torres">');
                                    
                         });
                       });
