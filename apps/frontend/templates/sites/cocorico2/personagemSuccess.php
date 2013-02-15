@@ -80,8 +80,8 @@
           <?php if(count($related_image) > 0): ?> 
             <h3><a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a></h3>
             <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
-            <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se?></a>
-            <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
+            <a href="<?php echo $site->retriveUrl()?>/<?php echo $se ?>"><?php echo $se ?></a>
+            <a href="<?php echo $site->retriveUrl()?>/<?php echo $se ?>" class="ico-mais"></a>
        
           <?php elseif(count($related_video) > 0): ?> 
             <h3><a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a></h3>
