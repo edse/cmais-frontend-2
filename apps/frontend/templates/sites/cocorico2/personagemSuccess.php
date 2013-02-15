@@ -82,7 +82,7 @@
           <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php if(count($related_image) > 0): ?> 
             <h3><a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a></h3>
-            <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
+            <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
             <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[0]->getTitle() ?></a>
             <a href="<?php echo $site->retriveUrl().$se ?>" class="ico-mais"></a>
             <?php echo fj32 ?>
