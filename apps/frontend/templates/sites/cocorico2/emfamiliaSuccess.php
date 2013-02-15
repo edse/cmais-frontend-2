@@ -110,29 +110,7 @@
            </h3>
          </div>
        </div>
-       <?php
-       
-       $blocks = Doctrine_Query::create()
-          ->select('b.*')
-          ->from('Block b, Section s')
-          ->where('b.section_id = s.id')
-          ->andWhere('s.slug = ?', "agenda")
-          ->andWhere('b.slug = ?', 'acontece') 
-          ->andWhere('s.site_id = ?', $site->id)
-          ->execute();
-        
-        //echo count($blocks)."<br>";
-        
-        if(count($blocks) > 0){
-          $displays_acontece['acontece'] = $blocks[0]->retriveDisplays();
-        }
-       
-        if(isset($displays_acontece['acontece'])): 
-          if(count($displays_acontece['acontece']) > 0): 
-            include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays_acontece['acontece']));
-          endif;
-        endif;
-        ?>
+        <?php include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays['acontece'])) ?>
                 <!-- destaque -->
       <!-- fale conosco cr-->
       <div class="cr">
