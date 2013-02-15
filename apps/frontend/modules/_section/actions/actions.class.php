@@ -1530,8 +1530,20 @@ class _sectionActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaSimples/'.$sectionSlug);
       }
       else{
-        if($debug) print "<br>8>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
+        if(in_array($this->site->getSlug(), array("cocorico","cocorico2"))){
+          if ($this->section->Parent->slug == "concurso-cultural") {
+            if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
+          }
+          else {
+            if($debug) print "<br>8-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
+          }
+        }
+        else {
+          if($debug) print "<br>8>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
+        }
       }
     }
     else{
