@@ -124,7 +124,7 @@
           <?php endif; ?>
         <?php endif; ?>
       </div>
-      <?php endif; ?>
+    
            
             <!-- box-destaque-1 -->
      </div>
