@@ -1,0 +1,18 @@
+body {  background:#018dc4 url(/portal/images/capaPrograma/seminario2013/bg.jpg) repeat-x;  }
+.topo-programa { background:url(/portal/images/capaPrograma/seminario2013/bg-topo.jpg) no-repeat; height:160px; }
+#capa-site { margin-top:-102px !important; }
+#barra-site { min-height:160px; }
+.bg-chamada { margin-bottom:100px; }
+#barra-site h2 { margin:20px 30px 0 30px; }
+#miolo { margin-top:0; }
+.capa { background:#fff; }
+.box-interna { padding:20px 10px; }
+#esquerda { width:630px; margin-bottom:100px;}
+#esquerda .titulos { margin-bottom:20px; }
+p bold { font-weight:bold; }
+p i { text-decoration:italic; }
+#direita { margin:20px 10px; }
+#rodape-portal { margin-top:-25px; }
+#barra-site #horario { float:left; margin-top:65px; }
+#barra-site #horario p { color:#fff; text-transform: uppercase; text-align:left; text-indent:-9999px; background:url(/portal/images/capaPrograma/seminario2013/horario.png) no-repeat; width:326px; height:16px;}
+.box-interna .texto p a { color:#0091c8 }
