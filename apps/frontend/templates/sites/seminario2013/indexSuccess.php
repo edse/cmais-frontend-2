@@ -66,7 +66,7 @@
               <p>Aos que assistirem ao seminário pela internet e quiserem enviar um comentário sobre os temas em exposição e debate, pedimos que o encaminhem para a organização do evento pelo email <a  href="mailto:seminario@tvcultura.com.br" target="_blank">seminario@tvcultura.com.br</a>. Esse endereço ficará disponível para envio de comentários entre os dias 25 de fevereiro e 4 de março.</p>
               <p>Contamos com a sua audiência e com seu interesse em refletir conosco.</p>
               <p>Abraços fraternos.</p>
-              <p><bold>João Sayad</bold><br/><i>Presidente Executivo da TV Cultura</i></p>
+              <p><i><bold>João Sayad</bold><br/>Presidente Executivo da TV Cultura</i></p>
               <p></p>
               <p></p>
               <p></p>
