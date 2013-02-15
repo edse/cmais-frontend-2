@@ -69,7 +69,7 @@
       <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
         <a class="btn-produto" href="#myModal2" data-toggle="modal"  name="<?php echo $d->getTitle(); ?>"  title="<?php echo $d->getTitle(); ?>">
-          <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->Asset->retriveImageUrlByImageUsage("image-13-b") ?>" class="span12">
+          <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" class="span12">
           <p><?php echo $d->getTitle(); ?></p>
         </a>
       </li> 
