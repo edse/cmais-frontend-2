@@ -186,37 +186,34 @@
           <?php endif; ?>
         <?php endif; ?>
         
-        <?php if(isset($displays['destaque-3'])):?>
-          <?php if(count($displays['destaque-3']) > 0): ?>
-        <a class="box destaques span6" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-3'][0]->getTitle() ?>">
-          <p class="bold">
-            <?php echo $displays['destaque-3'][0]->Asset->Sections[0]->getTitle() ?>
-          </p>
-          <?php
-            $display_img_src = $displays['destaque-3'][0]->retriveImageUrlByImageUsage('image-5-b');
-            if ($display_img_src == '') {
-              $related = $displays['destaque-3'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-              $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
-            }
-          ?>
-          <?php if($display_img_src != ''): ?>
-          <img class="span12" src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-3'][0]->getTitle() ?>" />
-          <?php //echo $displays['destaque-3'][0]->getTitle() ?>
-          <?php $tam=33; $str=$displays['destaque-3'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-          <i class="ico-mais"></i> 
-          <?php endif; ?>
-        </a>
+      
+      
+      
+      
+      <div class="span12">
+        <?php if(isset($displays['destaque-2'])):?>
+          <?php if(count($displays['destaque-2']) > 0): ?>
+             
+          <?php $se = $displays["destaque-2"][0]->Asset->Sections[0]->getTitle(); ?>
+            <?php $se_link = $displays["destaque-2"][0]->Asset->Sections[0]->getSlug(); ?>
+            
+            <?php
+              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+            ?>
+           
+           <!-- box-destaque -->
+            <div class="span6 box-destaque">
+              <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+              <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
+              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
+             </div>
+            <!-- box-destaque -->
           <?php endif; ?>
         <?php endif; ?>
-      </div>
-      <div class="span12">
-       <!-- box-destaque -->
-        <div class="span6 box-destaque">
-          <h3><a href="#">Imprima e brinque</a></h3>
-          <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
-          <a href="#">texto corrido</a>
-         </div>
-        <!-- box-destaque -->
         
         <!-- box-destaque -->
         <div class="span6 box-destaque">
