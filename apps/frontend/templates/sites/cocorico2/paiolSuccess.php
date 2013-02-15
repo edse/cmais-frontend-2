@@ -120,7 +120,7 @@
         <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Toda Criança tem Direito"/>
+                <img src="/portal/images/capaPrograma/cocorico/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
             </div>
             <span>
               Toda Criança tem Direito
