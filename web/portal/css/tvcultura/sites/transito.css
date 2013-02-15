@@ -658,7 +658,7 @@ tr:nth-child(odd) {background: #cbabb7}
   text-align:left; 
 }
 
-#dialogTiradentes h4, #dialogaImigrantes h4, #dialogSantana h4, #dialogBelenzinho h4, #dialogMarginalPinheiros h4, #dialogMarginalPinheiros2 h4, #dialogAnchieta h4{
+#dialogTiradentes h4, #dialogaImigrantes h4, #dialogSantana h4, #dialogBelenzinho h4, #dialogMarginalPinheiros h4, #dialogMarginalPinheiros2 h4, #dialogMarginalPinheiros3 h4, #dialogAnchieta h4{
   width: 441px;
 }
 
@@ -716,6 +716,7 @@ tr:nth-child(odd) {background: #cbabb7}
 #dialogFreguesia,
 #dialogMarginalPinheiros,
 #dialogMarginalPinheiros2,
+#dialogMarginalPinheiros3,
 #dialogaMarginalTiete,
 #dialogSantana,
 #dialogPompeia,
