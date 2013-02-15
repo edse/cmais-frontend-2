@@ -67,7 +67,7 @@
       
       <div class="span12">
      
-      <?php if(isset($displays["conteudos"][0])): ?>
+      <?php if(isset($displays["conteudos"][0])): ?> 
         <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <!-- box-destaque-0 -->
         <div class="span6 box-destaque"> 
