@@ -62,7 +62,7 @@
   </div>
   <!-- paginacao -->
   
-  <?php if(count($pager->getResults() > 0)): ?>
+  <?php if(count($pager > 0)): ?>
   <!--row-->
   <div class="row-fluid conteudo destaques ytb">
     <ul id="convidados">
