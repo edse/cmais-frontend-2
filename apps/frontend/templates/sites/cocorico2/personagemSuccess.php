@@ -114,7 +114,7 @@
           <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php if(count($related_image) > 0): ?> 
             <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-            <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
+            <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
             <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
             <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
        
