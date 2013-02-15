@@ -66,7 +66,7 @@
       <?php if(isset($displays["conteudos"][0])): ?> 
         <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <!-- box-destaque-0 -->
-        
+        <?php echo $displays["conteudos"][0]->getTitle() ?>
         <div class="span6 box-destaque"> 
         <?php if($displays['conteudos'][0]->Asset->AssetType->getSlug() == "video"): ?>
           <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se ?></a></h3>
