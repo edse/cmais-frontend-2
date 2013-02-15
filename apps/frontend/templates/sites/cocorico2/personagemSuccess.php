@@ -70,7 +70,7 @@
       <?php if(isset($displays["conteudos"][0])): ?>
         <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <!-- box-destaque-0 -->
-        <div class="span6 box-destaque">
+        <div class="span6 box-destaque"> 
         <?php if($displays['conteudos'][0]->Asset->AssetType->getSlug() == "video"): ?>
           <h3><a href="<?php echo $site->retriveUrl().$displays['conteudos'][0]->Asset->Section->getSlug() ?>"><?php echo $se[0]->getTitle() ?></a></h3>
           <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
