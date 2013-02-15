@@ -395,7 +395,7 @@
       <!-- /receitinhas -->
       
     <!-- box-destaque -->
-    <div class="span4 box-destaque tvcocorico">
+    <div class="span6 box-destaque tvcocorico">
       <h3><a href="#">Convidado especial</a></h3>
       <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
       <a href="#">texto corrido</a>
@@ -404,7 +404,7 @@
     <!-- box-destaque -->
     
     <!-- box-destaque -->
-    <div class="span4 box-destaque">
+    <div class="span6 box-destaque">
       <h3><a href="#">Receitinhas</a></h3>
       <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
       <a href="#">texto corrido</a>
