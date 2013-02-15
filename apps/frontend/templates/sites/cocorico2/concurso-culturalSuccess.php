@@ -38,10 +38,10 @@
       <?php if(count($displays["destaque-principal"]) > 0): ?> 
     <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("original") ?>"></a>
     <div class="span6">
-      <?php echo $displays["destaque-principal"][0]->getDescription() ?></p>
+      <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
       <p class="grd">Parabéns ao vencedor</p>
-      <p class="grd"><span>NOME completo DA CRIANÇA <br/>
-        Cidade - UF</span>
+      <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
+        <?php echo $displays["destaque-principal"][0]->getHeadline() ?></span>
       </p>
     </div>
       <?php endif; ?>
