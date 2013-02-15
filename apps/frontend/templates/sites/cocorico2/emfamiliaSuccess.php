@@ -111,8 +111,8 @@
          </div>
        </div>
        <?php
-        
-        $blocks = Doctrine_Query::create()
+       
+       $blocks = Doctrine_Query::create()
           ->select('b.*')
           ->from('Block b, Section s')
           ->where('b.section_id = s.id')
@@ -132,7 +132,6 @@
             include_partial_from_folder('sites/cocorico', 'global/display-1-destaque', array('displays' => $displays_acontece['acontece']));
           endif;
         endif;
-         
         ?>
                 <!-- destaque -->
       <!-- fale conosco cr-->
