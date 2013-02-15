@@ -16,7 +16,7 @@
 .destaque-home-tv{margin-left: 0 !important;}
 .conteudo .destaque-home-tv iframe {margin-top: 0}
 
-.destaque-home-tv h2{overflow: hidden;height: 30px; line-height:30px; font-size:20px; color:#FFF; font-weight:bold; text-align:center;margin:0; text-transform:uppercase;}
+.destaque-home-tv h2{overflow: hidden;height: 30px; line-height:30px; font-size:20px; color:#FFF; font-weight:normal; text-align:center;margin:0; text-transform:uppercase;}
 .destaque-home-tv .btn-destaque{border: none;float: left;height: 40px;margin-top: 0px;text-align: center;background: url(/portal/images/capaPrograma/cocorico/bg-amarelo.jpg) repeat-x;/*font-weight: bold;*/text-transform: uppercase;color: #747A3A;display: block;text-align: center;font-size: 16px;width: 95%;line-height: 42px;}
 .destaque-home-tv .btn-destaque:hover{text-decoration: none; color:#747A3A}
 .destaque-home-tv .destaque span{background: url(/portal/images/capaPrograma/cocorico/borda-menu2.png) no-repeat -50px 0;width: 9px;height: 40px;display: block;float: left;}
@@ -47,6 +47,7 @@
 .interatividade p {color:#FFF;}
 .interatividade form {padding:5px 10px;}
 .interatividade .form-campos{padding:5px 0;position: relative;}
+.interatividade .form-campos .btn-file,
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
 .interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
@@ -76,6 +77,7 @@
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
+.interatividade .form-campos .btn-file,
 .interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:61px; overflow:auto; color:#747b3a;padding:5px 10px;}
 .interatividade .regras p { color:#747b35;}
