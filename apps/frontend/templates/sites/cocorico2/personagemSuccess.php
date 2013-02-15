@@ -71,7 +71,7 @@
         <?php $se = $displays["conteudos"][0]->Asset->Sections; ?>
         <!-- box-destaque-0 -->
         <div class="span6 box-destaque"> 
-        <?php if($displays['conteudos'][0]->retriveRelatedAssetsByAssetTypeId(6) > 0): ?>
+        <?php if($displays['conteudos'][0]->Asset->AssetType->getSlug() == "video"): ?>
           <h3><a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $se[0]->getTitle() ?></a></h3>
           <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
           <a href="<?php echo $site->retriveUrl().$se ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a>
