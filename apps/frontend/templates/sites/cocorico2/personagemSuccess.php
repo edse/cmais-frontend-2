@@ -92,7 +92,7 @@
           <?php endif; ?>
         <?php endif; ?>
       </div>
-    
+    <?php endif; ?>
             <!-- box-destaque-0 -->
             
             <!-- box-destaque-1 -->
