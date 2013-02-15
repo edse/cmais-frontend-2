@@ -410,4 +410,4 @@ bold,
 .box-destaque.tvcocorico {  background:#1DB186;  }
 .box-destaque.tvcocorico h3 a { background:#1DB186; color:#FDF035; }
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
-.box-destaque.tvcocorico .ico-mais { background-position:-73px 0; }
+.box-destaque.tvcocorico .ico-mais { background-position:-73px 0; background-color:none; }
