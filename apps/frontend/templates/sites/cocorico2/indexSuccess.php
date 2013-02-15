@@ -180,7 +180,7 @@
             <div class="span6 box-destaque">
               <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
               <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
-              <a href="<?php echo $displays["destaque-3"][0]->Asset->retriveUrl() ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
+              <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
              </div>
             <!-- box-destaque -->
             </div>
@@ -214,7 +214,7 @@
         <?php endif; ?>
       </div>
     </div>
-    
+    </div>
     <div class="span4 col-dir">
       <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico">
         <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
