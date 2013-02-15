@@ -394,3 +394,10 @@ bold,
 .conteudo .destaque-1 a:hover { text-decoration:none; }
 
 .relacionados .destaques-small.top { padding-top:10px; }
+
+.box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
+.box-destaque h3 { margin:0; height: 30px !important; overflow:hidden;}
+.box-destaque h3 a { height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
+.box-destaque h3 a,
+.box-destaque a { color: #FDF035; text-align:center; display: block;}
+.box-destaque .ico-mais { background: url("/portal/images/capaPrograma/cocorico/ico-mais-home.png") no-repeat 0 top ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
