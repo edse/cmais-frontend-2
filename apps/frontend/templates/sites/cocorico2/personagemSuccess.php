@@ -97,7 +97,7 @@
             
             <!-- box-destaque-1 -->
        <?php if(isset($displays["conteudos"][1])): ?> 
-        <?php $se = $displays["conteudos"][0]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se = $displays["conteudos"][1]->Asset->Sections[0]->getTitle(); ?>
  
       <div class="span6 box-destaque"> 
         
