@@ -117,7 +117,7 @@
           ->from('Block b, Section s')
           ->where('b.section_id = s.id')
           ->andWhere('s.slug = ?', "agenda")
-          ->andWhere('b.slug = ?', 'acontece') 
+          ->andWhere('b.slug = ?', "acontece") 
           ->andWhere('s.site_id = ?', $site->id)
           ->execute();
         
