@@ -472,7 +472,7 @@ function isDevice(OSName)
                              <!--<a href="#dialog" name="modal" id="camera07" class="fundo pos07" title="Bandeirantes"></a>-->
                              <a href="#dialogMarginalPinheiros" name="modal" id="camera08" class="fundo pos08" title="Marginal Pinheiros - Jockey Club"></a>
                              <a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a>
-                             <a href="#dialogMarginalPinheiros3" name="modal" id="camera21" class="fundo pos08" title="Marginal Pinheiros - Av. dos Bandeirantes"></a>
+                             <a href="#dialogMarginalPinheiros3" name="modal" id="camera21" class="fundo pos21" title="Marginal Pinheiros - Av. dos Bandeirantes"></a>
                              <a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a>
                              
                              <a href="#dialogaSenna" name="modal" id="camera11" class="fundo pos11" title="Ayrton Senna"></a>
