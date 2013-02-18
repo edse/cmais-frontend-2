@@ -112,6 +112,7 @@
               <li class="culturafm">
                 <a href="http://www.culturafm.com.br" title="Cultura FM" target="_blank">Cultura FM</a>
               </li>
+              <!--
               <li class="itunes">
                 <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" title="Itunes" target="_blank">Itunes</a>
               </li>
@@ -133,6 +134,7 @@
               <li class="feed">
                 <a href="http://tvcultura.cmais.com.br/feed" title="Feed" target="_blank">Feed</a>
               </li>
+              -->
             </ul>
           </div>
         </div>
