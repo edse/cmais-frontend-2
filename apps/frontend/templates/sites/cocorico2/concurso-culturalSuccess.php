@@ -118,7 +118,7 @@ $('.btn-produto').click(function(){
   var nome = $(this).attr('title');
   var cidade = $(this).children('input#cidade').val();
   $('.modal-header img').attr('src', imagem); 
-  $('.modal-header h3 span').insertBefore(nome); 
+  $('.modal-header h3 span').before(nome); 
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
