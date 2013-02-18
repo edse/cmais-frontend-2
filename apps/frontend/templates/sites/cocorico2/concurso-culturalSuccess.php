@@ -64,9 +64,10 @@
   
   <?php if(count($pager) > 0): ?>
   <!--row-->
-  <div class="row-fluid conteudo destaques ytb">
+  <div class="row-fluid conteudo destaques">
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
+        <?php if($d->AssetType->getSlug() == "image"): ?>
       <li class="span4">
         <a class="btn-produto" href="#myModal2" data-toggle="modal" title="<?php echo $d->getTitle(); ?>">
           <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" class="span12">
@@ -74,7 +75,8 @@
           <input type="hidden" id="cidade-link" value="<?php echo $d->AssetImage->getHeadline() ?>" />
           <input type="hidden" id="imagem-link" value="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" />
         </a>
-      </li> 
+      </li>
+        <?php endif; ?>
       <?php endforeach; ?>
     </ul>
     <!-- Modal -->
