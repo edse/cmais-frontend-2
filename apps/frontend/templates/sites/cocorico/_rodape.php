@@ -1,8 +1,8 @@
 <script>
     function modalGoTo(url) {
       alert(url);
-      //$('#myModal a.adulto').attr('href', url);
-      //window.location.href="#myModal";
+      $('#myModal a.adulto').attr('href', url);
+      window.location.href="#myModal";
     }    
 </script>
 <div class="row-fluid rodape" >
@@ -29,13 +29,13 @@
     <div class="span2">
       <a href="#myModal" class="bold" title="Em família">em família</a>
       <ul>
-        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/natv');" data-toggle="modal"  title="Na TV">Na TV</a></li>
-        <li><a href="javascript:modalGoTo('http://cmais.com.br/cocorico2/naslojas');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="javascript:modalGoTo('http://cocoricoshow.com.br/');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
-        <li><a href="javascript:modalGoTo('http://cmais.com.br/cocorico2/nocinema');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
-        <li><a href="javascript:modalGoTo('http://cmais.com.br/cocorico2/naweb');" data-toggle="modal" title="Na Web">Na Web</a></li>
-        <li><a href="javascript:modalGoTo('http://cmais.com.br/cocorico2/agenda');" data-toggle="modal" title="Agenda">Agenda</a></li>
-        <li><a href="javascript:modalGoTo('http://www2.tvcultura.com.br/faleconosco/');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo(http://cmais.com.br/cocorico2/natv');" data-toggle="modal"  title="Na TV">Na TV</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/naslojas');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cocoricoshow.com.br/');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/nocinema');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/naweb');" data-toggle="modal" title="Na Web">Na Web</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/agenda');" data-toggle="modal" title="Agenda">Agenda</a></li>
+        <li><a href="javascript:;" onclick="javascript:modalGoTo('http://www2.tvcultura.com.br/faleconosco/');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li>
       </ul>
     </div>
     
