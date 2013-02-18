@@ -122,6 +122,7 @@ if (navigator.appName == 'Microsoft Internet Explorer'){
 }
 
 function modalGoTo(url) {
+  alert(url);
   $('#myModal a.adulto').attr('href', url);
   document.href="#myModal";
 }
