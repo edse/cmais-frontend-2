@@ -20,7 +20,7 @@
       </ul>
     </div>
     <div class="span2">
-      <a href="#myModal" onclick="javascript:changeUrl('<?php echo $section->Site->retriveUrl() ?>/emfamilia', '#myModal a.adulto');" class="bold" title="Em família">em família</a>
+      <a href="#myModal" onclick="javascript:changeUrl('<?php echo $section->Site->retriveUrl() ?>/emfamilia', '#myModal a.adulto');" class="bold" data-toggle="modal" title="Em família">em família</a>
       <ul>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $section->Site->retriveUrl() ?>/natv', '#myModal a.adulto');" data-toggle="modal"  title="Na TV">Na TV</a></li>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $section->Site->retriveUrl() ?>/naslojas', '#myModal a.adulto');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
