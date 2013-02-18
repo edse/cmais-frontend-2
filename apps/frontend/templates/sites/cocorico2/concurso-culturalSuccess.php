@@ -71,7 +71,7 @@
         <a class="btn-produto" href="#myModal2" data-toggle="modal" title="<?php echo $d->getTitle(); ?>">
           <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" class="span12">
           <p><?php echo $d->getTitle(); ?></p>
-          <input type="hidden" name="cidade" id="cidade" value="<?php echo $d->getHeadline() ?>" />
+          <input type="hidden" name="cidade" id="cidade" value="<?php echo $d->AssetImage->getHeadline() ?>" />
           <input type="hidden" name="imagem" id="imagem" value="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" />
         </a>
       </li> 
