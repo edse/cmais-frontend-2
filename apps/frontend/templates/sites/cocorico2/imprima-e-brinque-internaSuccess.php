@@ -56,25 +56,7 @@
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       
       <?php if(count($related_video)==0): ?>
-      <ul class="imprimir"> 
-        <!-- figura -->
-          <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
-            
-          <li class="span4">
-          
-          <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
-            alt="nome brincadeira" /><span></span></a>
-          <div id="div0" style="display: none;page-break-after:always;">
-            <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
-          </div>
-        </li>
-
-      </ul>
-      
-      <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
-      <!--/IFRAME PARA IMPRESSAO EM IE -->
+      <iframe width="460" height="259" src="<?php echo $related_video[0]->retriveImageUrlByImageUsage("original") ?></iframe>
       <?php else: ?>
       <?php 
       if (count($related_video) > 0):
@@ -85,10 +67,10 @@
         }
       ?>
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      <?php endif; ?>
      
-              
-         
-        <ul class="imprimir"> 
+       
+       <ul class="imprimir"> 
         <!-- figura -->
           <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
           <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
@@ -109,8 +91,8 @@
         <?php $counter_div ++ ?>
         <?php endforeach; ?>
         <?php endif; ?>
-        <?php endif; ?>    
-        <?php endif; ?>
+          <?php endif; ?>   
+        
         
       </ul>
       
