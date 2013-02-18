@@ -46,12 +46,12 @@
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
                   -->
                   
-                  <div style="border:2px solid #ff6633; clear:both; padding-bottom:50px; margin-top:20px; float:left">
+                  <div style="border:2px solid #ff6633; clear:both; padding-bottom:50px; margin-top:20px; float:left; padding:20px;">
                     <!--
                     <h3 class="titulos" style="text-align: center">Inscrições encerradas.</h3>
                     <a href="http://cmais.com.br/cadastro-de-tutores-2013-lista-de-selecionados" title="Voltar" style="color:#ff6633; text-align: center; display: block">Voltar para listade candidatos selecionados.</p>
                     -->
-                    <p>Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a></p>
+                    <p>Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a style="color:#ff6633;" href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a></p>
                     <p>Com os dados abaixo:</p>
                     <ul>
                       <li>Nome completo:</li>
