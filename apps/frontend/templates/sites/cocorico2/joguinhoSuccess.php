@@ -24,7 +24,8 @@
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="<?php echo $site->retriveUrl() ?>/joguinhos" class="voltar">voltar<span class="divisao"></span></a>
+  <?php $se_link = $asset->Sections[0]->getSlug(); ?>
+  <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
