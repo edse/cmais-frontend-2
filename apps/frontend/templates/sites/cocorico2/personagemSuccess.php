@@ -101,7 +101,7 @@
         <?php $se = $displays["conteudos"][1]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays["conteudos"][1]->Asset->Sections[0]->getSlug(); ?>
         
-      <div class="span6 box-destaque"> 
+      <div class="span6 box-destaque ytb"> 
 
         <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
           <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
@@ -140,7 +140,7 @@
 
     <div class="span4 autografo">
       <form class="form-horizontal">
-        <h2>Autografo</h2>
+        <h2>Autógrafo</h2>
         <div class="divisao"></div>
         
         <p>Escreva seu nome no campo abaixo e clique no botão<bold>BAIXAR</bold> para ter seu autógrafo personalizado do seu personagem favorito!</p>
