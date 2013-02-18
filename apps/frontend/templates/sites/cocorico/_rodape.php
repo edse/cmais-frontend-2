@@ -54,6 +54,7 @@
   </div>
   
 <script>
+modalGoTo('teste');
     function modalGoTo(url) {
       alert(url);
       //$('#myModal a.adulto').attr('href', url);
