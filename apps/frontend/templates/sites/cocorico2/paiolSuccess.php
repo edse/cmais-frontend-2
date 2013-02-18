@@ -177,7 +177,8 @@
     <!-- /Papel de parede -->
     
     <!-- box-destaque -->
-     <!-- Imprima e brinque -->
+    
+     <!-- Imprima e Brinque -->
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
@@ -192,7 +193,10 @@
           </a>
         <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
       </div>
-    <!-- box-destaque -->
+    <!-- Imprima e Brinque -->
+     <?php endif; ?>
+    <?php endif; ?>
+    
     <!-- box-destaque -->
     <div class="span4 box-destaque">
       <h3><a href="#">Papel de parede</a></h3>
