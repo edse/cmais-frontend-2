@@ -37,10 +37,10 @@
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
-        <h2>Receitinhas</h2> 
-        <a class="convidado span12" href="<?php echo $site->retriveUrl().$displays['destaque-receitinhas'][0]->Asset->Sections[0]->getTitle() ?>" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
+        <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" ?><h2>Receitinhas</h2></a>
+        <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/receitinhas" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
-          <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
+          <p></p>
           <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
         </a>
         <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" title="receitinhas" >
@@ -152,64 +152,44 @@
   <!-- /row conteudo -->
   <!--row conteudo -->
   <div class="row-fluid conteudo">
-    <!-- Imprima e brinque -->
+     
+    <!-- Imprima e Brinque -->
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-  	    <div class="span4 destaque-2 conteudo-diverso"> 
-  	      <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
-    	      <h3>Imprima e brinque</h3>
-    	      <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>">
-    	      <p>
-    	        <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-    	        <?php $tam=28; $str=$displays['destaque-imprima'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-    		    </p>
-  	      </a>
-  	      <a href="/cocorico2/imprima-e-brinque" class="btn-ico-mais" title="IMPRIMA E BRINQUE">
-  	      	<i class="ico-mais"></i>
-  	      </a> 
-  	    </div>
-   	 <?php endif; ?>
-   <?php endif; ?>  
-    <!-- /Imprima e brinque -->
+        <?php $se = $displays['destaque-imprima'][0]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se_link = $displays['destaque-imprima'][0]->Asset->Sections[0]->getSlug(); ?>
+      <div class="span4 box-destaque">
+        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+        <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>"></a>
+          <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"> 
+            <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+            <?php $tam=28; $str=$displays['destaque-imprima'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          </a>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+      </div>
+    <!-- Imprima e Brinque -->
+     <?php endif; ?>
+    <?php endif; ?>
     
     <!-- Papel de parede -->
     <?php if(isset($displays['destaque-papel-de-parede'])): ?>
       <?php if(count($displays['destaque-papel-de-parede']) > 0): ?>
         <?php $related = $displays['destaque-papel-de-parede'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <div class="span4 destaque-2 conteudo-diverso">
-          <a href="<?php echo $displays['destaque-papel-de-parede'][0]->retriveUrl() ?>" title="   <?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
-            <h3>Papel de parede</h3>
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>">
-            <p>
-              <?php //echo $displays['destaque-papel-de-parede'][0]->getDescription() ?>
-              <?php $tam=28; $str=$displays['destaque-papel-de-parede'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-            </p>
+        <?php $se = $displays['destaque-papel-de-parede'][0]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se_link = $displays['destaque-papel-de-parede'][0]->Asset->Sections[0]->getSlug(); ?>
+      <div class="span4 box-destaque">
+        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+        <a href="<?php echo $displays['destaque-papel-de-parede'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-papel-de-parede'][0]->getTitle() ?>"></a>
+          <a href="<?php echo $displays['destaque-papel-de-parede'][0]->retriveUrl() ?>"> 
+            <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+            <?php $tam=28; $str=$displays['destaque-papel-de-parede'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
           </a>
-          <a href="/cocorico2/papel-de-parede" class="btn-ico-mais" title="PAPEL DE PAREDE">
-            <i class="ico-mais"></i>
-          </a>  
-        </div> 
-      <?php endif; ?>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+      </div>
+    <!-- /Papel de parede-->
+     <?php endif; ?>
     <?php endif; ?>
-    <!-- /Papel de parede -->
-    
-    <!-- box-destaque -->
-    <div class="span4 box-destaque">
-      <h3><a href="#">Imprima e brinque</a></h3>
-      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
-      <a href="#">texto corrido</a>
-      <a href="#" class="ico-mais"></a>
-    </div>
-    <!-- box-destaque -->
-    <!-- box-destaque -->
-    <div class="span4 box-destaque">
-      <h3><a href="#">Papel de parede</a></h3>
-      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
-      <a href="#">texto corrido</a>
-      <a href="#" class="ico-mais"></a>
-    </div>
-    <!-- box-destaque -->
     
     <div class="span4 destaque2 box-radio">
       <!-- radio -->

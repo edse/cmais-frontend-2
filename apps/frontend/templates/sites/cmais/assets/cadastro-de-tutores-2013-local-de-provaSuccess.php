@@ -41,9 +41,38 @@
                     
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Curso inglês Online</h3>
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
+                  <!--
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
-        
+                  -->
+                  
+                  <div style="border:2px solid #ff6633; clear:both; padding-bottom:50px; margin-top:20px; float:left; padding:20px;">
+                    <!--
+                    <h3 class="titulos" style="text-align: center">Inscrições encerradas.</h3>
+                    <a href="http://cmais.com.br/cadastro-de-tutores-2013-lista-de-selecionados" title="Voltar" style="color:#ff6633; text-align: center; display: block">Voltar para listade candidatos selecionados.</p>
+                    -->
+                    <p style="text-align: center"><bold style="font-weight: bold;">Atenção:</bold> Caso ainda não tenha efetuado sua escolha envie email para <a style="color:#ff6633;" href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a>, com os dados abaixo:</p>
+                    <p>Nome completo:</li>
+                    <p>CPF:</p>
+                    <p>Email:</p>
+                    <hr>
+                    <p>Local escolhido para a prova:</p>
+                    <hr>
+                    <p>Opções para realização da prova:</p>
+                    <p>Araçatuba</p>
+                    <p>Bauru</p>
+                    <p>Campinas</p>
+                    <p>Franca</p>
+                    <p>Prudente Prudente</p>
+                    <p>Santos</p>
+                    <p>São José dos Campos</p>
+                    <p>São Paulo</p>
+                    <p>Sorocaba</p>
+                    <hr>
+                    <p>Att</p>
+                    <p>Tutoria Online</p>
+                  </div>
+                  <!--
                   <div class="msgErro" style="display:none; min-height: 80px  ">
                     <span class="alerta"></span>
                     <div class="boxMsg">
@@ -114,6 +143,7 @@
                     </div>
                   </form>
                 <?php // endif; ?>
+                -->
                 </div>
               </div>
             </div>
