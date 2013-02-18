@@ -1,12 +1,7 @@
 <script>
-    function modalGoTo(url) {
-      //alert(url);
-      $('#myModal a.adulto').attr('href', url);
-      //window.navigate(url);
-      self.location=url;
-      //top.location=url;
-
-    }    
+    function changeUrl(url, target) {
+      $(target).attr('href', url);
+    }
 </script>
 <div class="row-fluid rodape" >
     <h3>2013 &copy; tv cultura - fundação padre anchieta</h3>
@@ -30,15 +25,15 @@
       </ul>
     </div>
     <div class="span2">
-      <a href="#myModal" class="bold" title="Em família">em família</a>
+      <a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/emfamilia', '#myModal a.adulto');" class="bold" title="Em família">em família</a>
       <ul>
-        <li><a href="#myModal" onclick="javascript:modalGoTo(http://cmais.com.br/cocorico2/natv');" data-toggle="modal"  title="Na TV">Na TV</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/naslojas');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://cocoricoshow.com.br/');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/nocinema');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/naweb');" data-toggle="modal" title="Na Web">Na Web</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://cmais.com.br/cocorico2/agenda');" data-toggle="modal" title="Agenda">Agenda</a></li>
-        <li><a href="#myModal" onclick="javascript:modalGoTo('http://www2.tvcultura.com.br/faleconosco/');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/natv', '#myModal a.adulto');" data-toggle="modal"  title="Na TV">Na TV</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/naslojas', '#myModal a.adulto');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cocoricoshow.com.br/', '#myModal a.adulto');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/nocinema', '#myModal a.adulto');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/naweb', '#myModal a.adulto');" data-toggle="modal" title="Na Web">Na Web</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://cmais.com.br/<?php echo $section->Site->retriveUrl() ?>/agenda', '#myModal a.adulto');" data-toggle="modal" title="Agenda">Agenda</a></li>
+        <li><a href="#myModal" onclick="javascript:changeUrl('http://www2.tvcultura.com.br/faleconosco/', '#myModal a.adulto');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li>
       </ul>
     </div>
     
