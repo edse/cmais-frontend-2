@@ -81,7 +81,7 @@
     <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-        <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
+        <h3 id="myModalLabel">Nome da criança<br/><span id="cidade">cidade - uf</span></h3>
         <img src="" alt="" />
       </div>
     </div>
@@ -116,7 +116,6 @@
 $('.btn-produto').click(function(){
   var imagem = $(this).children('input#imagem').val();
   var cidade = $(this).children('input#cidade').val();
-  var texto = $(this).attr('title') + '<br/><span>' + cidade + '</span>';
   $('.modal-header img').attr('src', imagem); 
   $('.modal-header h3').text(texto); 
 });
