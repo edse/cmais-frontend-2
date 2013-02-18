@@ -57,7 +57,9 @@
       
       <?php if(count($related_video)==0): ?>
       <iframe width="460" height="259" src="<?php echo $related_video[0]->retriveImageUrlByImageUsage("original") ?></iframe>
-      <?php else: ?>
+      <?php endif; ?>
+        
+      <?php if(count($related_video)>0): ?>
       <?php 
       if (count($related_video) > 0):
         $offset = "0m0s";
@@ -68,9 +70,12 @@
       ?>
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
       <?php endif; ?>
-     
+       <?php endif; ?>   
        
-       <ul class="imprimir"> 
+       
+       
+         
+        <ul class="imprimir"> 
         <!-- figura -->
           <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
           <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
@@ -91,7 +96,7 @@
         <?php $counter_div ++ ?>
         <?php endforeach; ?>
         <?php endif; ?>
-          <?php endif; ?>   
+        
         
         
       </ul>
