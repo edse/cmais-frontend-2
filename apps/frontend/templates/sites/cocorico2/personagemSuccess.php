@@ -168,7 +168,7 @@
       $(document).ready(function() { 
         $("#getimage").click(function() {
           if($('#nome').val())
-            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+encodeURI($('#nome').val())+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
+            self.open('http://cmais.com.br/actions/cocorico/image.php?n='+escape($('#nome').val())+'&u=http://midia.cmais.com.br/assets/image/original/<?php echo $related_download[0]->AssetImage->getFile().".".$related_download[0]->AssetImage->getExtension() ?>');
           else
             $('#nome').focus();
         });

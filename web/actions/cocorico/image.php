@@ -14,7 +14,7 @@ $height = imagesy($im);
 $fontSize = 5; 
 $text = "Emerson Estrella";
 if($_REQUEST["n"]!="")
-  $text = $_REQUEST["n"];  
+  $text = urldecode($_REQUEST["n"]);  
 
 // Calculate the left position of the text
 //$leftTextPos = ($width - imagefontwidth($fontSize)*strlen($text)) / 2;
