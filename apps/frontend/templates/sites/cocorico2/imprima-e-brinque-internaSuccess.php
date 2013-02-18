@@ -44,7 +44,7 @@
   
   <!--row-->
   <div class="row-fluid conteudo">
-    <p class="span12"><?php echo $asset->getDescription() ?></p>
+    <p class="span12"></p>
     <div class="span6 esq">
     <p class="alerta"><span></span>tenha Cuidado! peça ajuda a um adulto!</p>
     
