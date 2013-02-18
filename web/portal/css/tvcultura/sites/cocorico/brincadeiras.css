@@ -159,6 +159,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 
 /* home brincadeiras */
 .tvcoco.span12 { margin-top:0; padding-top:0; background:#F2722F; }
+.tvcoco.span12 a:hover { text-decoration:none; }
 .destaque-home-tv h2,
 .tvcoco h2 { font-size:20px; text-transform:uppercase; font-weight:normal; margin-top:10px;}
 .convidado.span12 { background:#dd582a; color:#f8b145; overflow:hidden; }
