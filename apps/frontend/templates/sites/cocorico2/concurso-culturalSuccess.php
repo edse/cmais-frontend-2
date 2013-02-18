@@ -49,18 +49,25 @@
     <p class="tit" style="margin-top:30px;">conheça os desenhos participantes:</p>
   </div>
   <!--/row-->
+  <?php if(isset($pager)): ?>
+    <?php if($pager->haveToPaginate()): ?>  
   <!-- paginacao -->
   <div class="pagination pagination-centered">
     <ul>
-      <li class="anterior"><a title="Anterior" href="javascript: goToPage(1);"></a></li>
-      <li class="active"><a href="javascript: goToPage(1);">1</a></li>
-      <li><a href="javascript: goToPage(2);">2</a></li>
-      <li><a href="javascript: goToPage(3);">3</a></li>
-      <li><a href="javascript: goToPage(4);">4</a></li>
-      <li title="Próximo" class="proximo"><a href="javascript: goToPage(2);"></a></li>
+      <li class="anterior"><a title="Anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);"></a></li>
+      <?php foreach ($pager->getLinks() as $page): ?>
+        <?php if ($page == $pager->getPage()): ?>
+      <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <?php else: ?>
+      <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <?php endif; ?>
+      <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- paginacao -->
+    <?php endif; ?>
+  <?php endif; ?>
   
   <?php if(count($pager) > 0): ?>
   <!--row-->
@@ -91,19 +98,25 @@
   </div>
   <!-- /row-->
   <?php endif; ?>
+  <?php if(isset($pager)): ?>
+    <?php if($pager->haveToPaginate()): ?>  
   <!-- paginacao -->
   <div class="pagination pagination-centered">
     <ul>
-      <li class="anterior"><a title="Anterior" href="javascript: goToPage(1);"></a></li>
-      <li class="active"><a href="javascript: goToPage(1);">1</a></li>
-      <li><a href="javascript: goToPage(2);">2</a></li>
-      <li><a href="javascript: goToPage(3);">3</a></li>
-      <li><a href="javascript: goToPage(4);">4</a></li>
-      <li title="Próximo" class="proximo"><a href="javascript: goToPage(2);"></a></li>
+      <li class="anterior"><a title="Anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);"></a></li>
+      <?php foreach ($pager->getLinks() as $page): ?>
+        <?php if ($page == $pager->getPage()): ?>
+      <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <?php else: ?>
+      <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <?php endif; ?>
+      <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- paginacao -->
-  
+    <?php endif; ?>
+  <?php endif; ?>
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
@@ -123,10 +136,12 @@ $('.btn-produto').click(function(){
   $('.modal-header h3 span#nome').text(nome); 
   $('.modal-header h3 span#cidade').text(cidade); 
 });
+/*
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
   $('.modal-body img').hide().attr('src', img_ampl_modal).show();
 });
+*/
 
 </script>
 <!--/modal produto-->
