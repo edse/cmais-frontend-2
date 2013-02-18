@@ -2,8 +2,8 @@
     function modalGoTo(url) {
       //alert(url);
       $('#myModal a.adulto').attr('href', url);
-      window.navigate(url);
-      //self.location=url;
+      //window.navigate(url);
+      self.location=url;
       //top.location=url;
 
     }    
