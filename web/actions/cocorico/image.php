@@ -6,7 +6,7 @@ if($_REQUEST["u"]!="")
 
 $im = imagecreatefrompng($url);
 
-//$textColor = imagecolorallocate($im, 0, 0, 0);
+$textColor = imagecolorallocate($im, 0, 0, 0);
 
 $width = imagesx($im);
 $height = imagesy($im);
@@ -14,14 +14,14 @@ $height = imagesy($im);
 $fontSize = 5; 
 $text = "Emerson Estrella";
 if($_REQUEST["n"]!="")
-  $text = urldecode($_REQUEST["n"]);  
+  $text = urldecode($_REQUEST["n"]);
 
 // Calculate the left position of the text
 //$leftTextPos = ($width - imagefontwidth($fontSize)*strlen($text)) / 2;
 // Write the string
 //imagestring($im, $fontSize, $leftTextPos, $height-28, $text, $textColor);
-//imagestring($im, $fontSize, 18, 150, $text, $textColor);
-imagettftext($im, 80, 0, 340, 485, $black, '/var/frontend/web/actions/cocorico/EmileeHandwriting.ttf', $text);
+imagestring($im, 80, 18, 150, $text, $textColor);
+//imagettftext($im, 80, 0, 340, 485, $black, '/var/frontend/web/actions/cocorico/EmileeHandwriting.ttf', $text);
 // Output the image
 header('Content-type: image/png');
 imagepng($im);
