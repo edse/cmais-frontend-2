@@ -54,7 +54,9 @@ if(!isset($asset))
             <?php $tam=38; $str=$displays['destaques'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </p> 
         </a>
-        <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
+        <?php $se = $displays["destaques"][0]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se_link = $displays["destaques"][0]->Asset->Sections[0]->getSlug(); ?>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se_link ?>"><i class="ico-mais"></i></a>
       </div> 
       <!-- /clipe -->
        
@@ -68,7 +70,9 @@ if(!isset($asset))
             <?php $tam=38; $str=$displays['destaques'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </p>       
         </a>
-        <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+        <?php $se = $displays["destaques"][2]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se_link = $displays["destaques"][2]->Asset->Sections[0]->getSlug(); ?>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se ?>">
           <i class="ico-mais"></i>
         </a>
       </div> 
@@ -84,7 +88,9 @@ if(!isset($asset))
             <?php $tam=38; $str=$displays['destaques'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </p>
         </a> 
-        <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+        <?php $se = $displays["destaques"][2]->Asset->Sections[0]->getTitle(); ?>
+        <?php $se_link = $displays["destaques"][2]->Asset->Sections[0]->getSlug(); ?>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se ?>">
           <i class="ico-mais"></i>
         </a>
       </div> 
