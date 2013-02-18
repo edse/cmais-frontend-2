@@ -115,9 +115,10 @@
 //chamando modal
 $('.btn-produto').click(function(){
   var imagem = $(this).children('input#imagem').val();
+  var nome = $(this).attr('title');
   var cidade = $(this).children('input#cidade').val();
   $('.modal-header img').attr('src', imagem); 
-  $('.modal-header h3').text(texto); 
+  $('.modal-header h3 span').insertBefore(nome); 
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
