@@ -64,24 +64,26 @@
   
   <?php if(count($pager) > 0): ?>
   <!--row-->
-  <div class="row-fluid conteudo destaques ytb">
+  <div class="row-fluid conteudo destaques">
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
+        <?php if($d->AssetType->getSlug() == "image"): ?>
       <li class="span4">
         <a class="btn-produto" href="#myModal2" data-toggle="modal" title="<?php echo $d->getTitle(); ?>">
           <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" class="span12">
           <p><?php echo $d->getTitle(); ?></p>
-          <input type="hidden" name="cidade" id="cidade" value="<?php echo $d->AssetImage->getHeadline() ?>" />
-          <input type="hidden" name="imagem" id="imagem" value="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" />
+          <input type="hidden" id="cidade-link" value="<?php echo $d->AssetImage->getHeadline() ?>" />
+          <input type="hidden" id="imagem-link" value="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" />
         </a>
-      </li> 
+      </li>
+        <?php endif; ?>
       <?php endforeach; ?>
     </ul>
     <!-- Modal -->
     <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-        <h3 id="myModalLabel">Nome da criança<br/><span id="cidade">cidade - uf</span></h3>
+        <h3 id="myModalLabel"><span id="nome">Nome da criança</span><span id="cidade">cidade - uf</span></h3>
         <img src="" alt="" />
       </div>
     </div>
@@ -114,10 +116,12 @@
       <script>
 //chamando modal
 $('.btn-produto').click(function(){
-  var imagem = $(this).children('input#imagem').val();
-  var cidade = $(this).children('input#cidade').val();
+  var imagem = $(this).children('input#imagem-link').val();
+  var nome = $(this).attr('title');
+  var cidade = $(this).children('input#cidade-link').val();
   $('.modal-header img').attr('src', imagem); 
-  $('.modal-header h3').text(texto); 
+  $('.modal-header h3 span#nome').text(nome); 
+  $('.modal-header h3 span#cidade').text(cidade); 
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
