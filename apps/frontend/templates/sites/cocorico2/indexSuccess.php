@@ -220,7 +220,7 @@
         <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
-        <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
+        <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv#myModal" title="">
          Confira os horários da programação 
         </a>
         <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
