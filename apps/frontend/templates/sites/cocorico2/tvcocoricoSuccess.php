@@ -373,7 +373,14 @@
       <!-- Convidado Especial -->
       <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
-          
+           <?php
+              $display_img_src = $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+            ?>
+      
     <div class="span12">  
       
     <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
@@ -382,7 +389,7 @@
     
     <div class="span6 box-destaque tvcocorico">
       <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
         <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
           <?php $tam=28; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
