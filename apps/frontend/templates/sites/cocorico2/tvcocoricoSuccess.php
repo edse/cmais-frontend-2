@@ -370,17 +370,7 @@
      <?php endif; ?>
       <!-- /receitinhas -->
       
-      <!-- Convidado Especial -->
-      <?php if(isset($displays['convidado-especial'])):?>
-        <?php if(count($displays['convidado-especial']) > 0): ?>
-           <?php
-              $display_img_src = $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b');
-              if ($display_img_src == '') {
-                $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
-              }
-            ?>
-      
+     
     <div class="span12">  
       
     <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
