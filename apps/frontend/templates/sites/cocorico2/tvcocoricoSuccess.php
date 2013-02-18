@@ -224,12 +224,6 @@
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
               <label>Seu desenho de bicicleta<input type="file" name="datafile" size="40"></label>  
-              <input type="text" class="span9 pull-left" name="desenho" placeholder="Seu desenho de bicicleta"/>
-              <div class="fileupload fileupload-new" data-provides="fileupload">
-                <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
-                <span class="fileupload-preview"></span>
-                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-              </div>
             </div>
          
            
