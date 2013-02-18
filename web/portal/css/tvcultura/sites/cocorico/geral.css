@@ -395,6 +395,10 @@ bold,
 
 .relacionados .destaques-small.top { padding-top:10px; }
 
+.box-destaque.ytb img { margin: -20px 0;    position: relative;    z-index: 0; }
+.box-destaque.ytb h3 { position: relative;    z-index: 2000; }
+.box-destaque.ytb a { position: relative; z-index: 1000; }
+
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
 .box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden;}
 .box-destaque h3 a { background:#F2722F; height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
@@ -417,6 +421,4 @@ bold,
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
 
-.box-destaque.ytb img { margin: -20px 0;    position: relative;    z-index: 0; }
-.box-destaque.ytb h3 { position: relative;    z-index: 1000; }
-.box-destaque.ytb a { position: relative; z-index: 1000; }
+
