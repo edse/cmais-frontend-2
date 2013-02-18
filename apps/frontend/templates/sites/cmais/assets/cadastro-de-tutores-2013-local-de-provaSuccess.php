@@ -47,8 +47,34 @@
                   -->
                   
                   <div style="border:2px solid #ff6633; clear:both; padding-bottom:50px; margin-top:20px; float:left">
+                    <!--
                     <h3 class="titulos" style="text-align: center">Inscrições encerradas.</h3>
                     <a href="http://cmais.com.br/cadastro-de-tutores-2013-lista-de-selecionados" title="Voltar" style="color:#ff6633; text-align: center; display: block">Voltar para listade candidatos selecionados.</p>
+                    -->
+                    <p>Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a></p>
+                    <p>Com os dados abaixo:</p>
+                    <ul>
+                      <li>Nome completo:</li>
+                      <li>CPF:</li>
+                      <li>Email:</li>
+                    </ul>
+                    <p>Local escolhido para a prova:</p>
+                    <hr>
+                    <p>Opções para realização da prova:</p>
+                    <ul>
+                      <li>Araçatuba</li>
+                      <li>Bauru</li>
+                      <li>Campinas</li>
+                      <li>Franca</li>
+                      <li>Prudente Prudente</li>
+                      <li>Santos</li>
+                      <li>São José dos Campos</li>
+                      <li>São Paulo</li>
+                      <li>Sorocaba</li>
+                    </ul>
+                    <hr>
+                    <p>Att</p>
+                    <p>Tutoria Online</p>
                   </div>
                   <!--
                   <div class="msgErro" style="display:none; min-height: 80px  ">
