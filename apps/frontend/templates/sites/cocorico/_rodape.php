@@ -1,8 +1,11 @@
 <script>
     function modalGoTo(url) {
-      alert(url);
+      //alert(url);
       $('#myModal a.adulto').attr('href', url);
-      window.location.href="#myModal";
+      window.navigate(url);
+      //self.location=url;
+      //top.location=url;
+
     }    
 </script>
 <div class="row-fluid rodape" >
