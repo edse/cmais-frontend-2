@@ -135,7 +135,7 @@
       ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
       ->groupBy('sa.asset_id')
       ->orderBy('a.id desc')
-      ->limit(24)
+      ->limit(6)
       ->execute();
   ?>
   <?php if (count($assets) > 0): ?>
