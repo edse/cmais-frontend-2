@@ -730,7 +730,7 @@ class _assetActions extends sfActions
           ->andWhere('av.youtube_id IS NOT NULL')
           ->andWhere('a.is_active = ?', 1)
           ->orderBy('a.created_at desc');
-        $pagelimit = 12;
+        $pagelimit = 24;
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
@@ -769,7 +769,7 @@ class _assetActions extends sfActions
           ->andWhere('av.youtube_id IS NOT NULL')
           ->andWhere('a.is_active = ?', 1)
           ->orderBy('a.created_at desc');
-        $pagelimit = 12;
+        $pagelimit = 24;
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
