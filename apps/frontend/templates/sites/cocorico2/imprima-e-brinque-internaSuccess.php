@@ -85,9 +85,8 @@
         }
       ?>
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
-      <?php endif; ?>
-          
-       
+     
+              
          
         <ul class="imprimir"> 
         <!-- figura -->
@@ -111,7 +110,7 @@
         <?php endforeach; ?>
         <?php endif; ?>
         <?php endif; ?>    
-        
+        <?php endif; ?>
         
       </ul>
       
