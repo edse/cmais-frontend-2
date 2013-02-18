@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  
+
+    function changeUrl(url, target) {
+      $(target).attr('href', url);
+      return false;
+    }
+    
    /*
     * 
     * PRINT JPGS
