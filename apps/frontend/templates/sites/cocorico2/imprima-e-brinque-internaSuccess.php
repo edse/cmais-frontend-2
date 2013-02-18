@@ -63,8 +63,7 @@
        <ul class="imprimir"> 
        <!-- figura -->
  
-      <?php if(count($related_preview)>0): ?>
- 
+      
         <li class="span4">
           
           <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
@@ -74,8 +73,7 @@
           </div>
           
         </li>
-        <?php endif; ?>
-               
+                  
       </ul>
       
        <?php else: ?>
