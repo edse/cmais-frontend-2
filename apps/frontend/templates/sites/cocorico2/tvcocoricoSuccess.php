@@ -352,7 +352,7 @@
       <?php endif; ?>
      <br>
      <br>
-     <div class="span12">  
+     <div class="span12" style="margin-top:20px;">  
         
       <!-- Convidado Especial -->
       <?php if(isset($displays['convidado-especial'])):?>
