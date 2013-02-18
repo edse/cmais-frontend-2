@@ -390,7 +390,7 @@
           <?php $se = $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>
           <?php $se_link = $displays['receitinhas'][0]->Asset->Sections[0]->getSlug(); ?> 
          
-    <div class="span6 box-destaque">
+    <div class="span6 box-destaque ytb">
       <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>">
