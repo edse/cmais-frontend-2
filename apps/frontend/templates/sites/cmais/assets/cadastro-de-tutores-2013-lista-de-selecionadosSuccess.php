@@ -34,8 +34,8 @@
                   <br />
                   <br />
                   <h4 style="color:#333; margin-bottom:10px">Lista em ordem alfabética de candidatos selecionados para participar da prova</h4>
-                  <p>Clique em seu nome para escolher o local da prova.</p>
-                 
+                  <!--p>Clique em seu nome para escolher o local da prova.</p-->
+                  <p>Inscrições encerradas.</p>
                   <div class="texto" style="margin-top:30px">
 
                       <table>
