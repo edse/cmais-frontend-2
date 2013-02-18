@@ -126,9 +126,10 @@
       </div>
       <!-- /destaque-home-simples -->
       
-      
+       <?php
+     /*
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-      <? /*php>
+    
       <div class="destaque-home-tv span9">
     	
           	
@@ -290,8 +291,10 @@
  
       </div>
       <!-- form interatividade -->
-      */
+      
       <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
+      */
+      ?>
       
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
