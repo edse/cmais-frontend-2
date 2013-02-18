@@ -40,7 +40,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" ?><h2>Receitinhas</h2></a>
         <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/receitinhas" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
-          <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
+          <p></p>
           <p><?php $tam=32; $str=$displays['destaque-receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p>
         </a>
         <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" title="receitinhas" >
