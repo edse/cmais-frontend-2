@@ -52,25 +52,22 @@
                     <a href="http://cmais.com.br/cadastro-de-tutores-2013-lista-de-selecionados" title="Voltar" style="color:#ff6633; text-align: center; display: block">Voltar para listade candidatos selecionados.</p>
                     -->
                     <p style="text-align: center">Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a style="color:#ff6633;" href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a>, com os dados abaixo:</p>
-                    <ul>
-                      <li>Nome completo:</li>
-                      <li>CPF:</li>
-                      <li>Email:</li>
-                    </ul>
+                    <p>Nome completo:</li>
+                    <p>CPF:</p>
+                    <p>Email:</p>
+                    <hr>
                     <p>Local escolhido para a prova:</p>
                     <hr>
                     <p>Opções para realização da prova:</p>
-                    <ul>
-                      <li>Araçatuba</li>
-                      <li>Bauru</li>
-                      <li>Campinas</li>
-                      <li>Franca</li>
-                      <li>Prudente Prudente</li>
-                      <li>Santos</li>
-                      <li>São José dos Campos</li>
-                      <li>São Paulo</li>
-                      <li>Sorocaba</li>
-                    </ul>
+                    <p>Araçatuba</p>
+                    <p>Bauru</p>
+                    <p>Campinas</p>
+                    <p>Franca</p>
+                    <p>Prudente Prudente</p>
+                    <p>Santos</p>
+                    <p>São José dos Campos</p>
+                    <p>>São Paulo<</p>
+                    <p>Sorocaba</p>
                     <hr>
                     <p>Att</p>
                     <p>Tutoria Online</p>
