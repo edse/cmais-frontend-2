@@ -1,7 +1,6 @@
 <script>
     function changeUrl(url, target) {
       $(target).attr('href', url);
-      //return false;
     }
 </script>
 <div class="row-fluid rodape" >
