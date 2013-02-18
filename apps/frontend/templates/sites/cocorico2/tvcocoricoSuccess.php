@@ -398,6 +398,8 @@
     </div>
     
     <!-- /Convidado Especial -->
+    <?php endif; ?>
+     <?php endif; ?>
     
     <!-- box-destaque -->
     <div class="span6 box-destaque">
