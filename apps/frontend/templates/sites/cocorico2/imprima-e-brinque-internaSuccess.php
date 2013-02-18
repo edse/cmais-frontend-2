@@ -58,7 +58,7 @@
       <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
       <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
       
-      <?php if(count($related_video)==0): ?>
+      <?php if(count($related_video)>1): ?>
        
        <ul class="imprimir"> 
        <!-- figura -->
@@ -108,6 +108,7 @@
         <?php $counter_div ++ ?>
         <?php endforeach; ?>
         </ul>
+        <?php endif; ?>
         <?php endif; ?>
         <?php endif; ?>
        
