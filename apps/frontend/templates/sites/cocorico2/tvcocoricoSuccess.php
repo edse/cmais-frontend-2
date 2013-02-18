@@ -345,7 +345,8 @@
       <!-- /bastidores -->
       <?php endif; ?>
       <?php endif; ?>
-     
+     <br>
+     <br>
      <div class="span12">  
         
       <!-- Convidado Especial -->
