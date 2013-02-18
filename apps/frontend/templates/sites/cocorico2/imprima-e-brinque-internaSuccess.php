@@ -78,7 +78,7 @@
       
        <?php else: ?>
         
-      <?php if(count($related_video)>0): ?>
+      
       <?php 
       if (count($related_video) > 0):
         $offset = "0m0s";
@@ -108,6 +108,7 @@
         <?php $counter_div ++ ?>
         <?php endforeach; ?>
         </ul>
+        <?php endif; ?>
         <?php endif; ?>
        
       <!--IFRAME PARA IMPRESSAO EM IE -->
