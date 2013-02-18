@@ -1,22 +1,22 @@
 <div class="row-fluid rodape" >
     <h3>2013 &copy; tv cultura - fundação padre anchieta</h3>
-    <div class="span2"> <a href="http://cmais.com.br/cocorico2" class="bold" title="Cocoricó">Cocoricó</a>
+    <div class="span2"> <a href="<?php echo $section->Site->retriveUrl() ?>" class="bold" title="Cocoricó">Cocoricó</a>
       <ul>
-        <li><a href="http://cmais.com.br/cocorico2/personagens" title="Personagens">Personagens</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/personagens" title="Autógrafos">Autógrafos</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/clipes-musicais" title="Receitinhas">Clipes</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/series" title="Receitinhas">Séries Especiais</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/personagens" title="Personagens">Personagens</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/personagens" title="Autógrafos">Autógrafos</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/clipes-musicais" title="Receitinhas">Clipes</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/series" title="Receitinhas">Séries Especiais</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
       </ul>
     </div>
-    <div class="span2 tvcoco"> <a href="http://cmais.com.br/cocorico2/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
+    <div class="span2 tvcoco"> <a href="<?php echo $section->Site->retriveUrl() ?>/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
       <ul>
-        <li><a href="http://cmais.com.br/cocorico2/episodios" title="Episódios">Episódios</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/convidados" title="Convidado do dia">Convidado do dia</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/erros-de-gravacao" title="Erros de gravação">Erros de gravação</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/instagram" title="Instagram">Instagram @TVCocoricó</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/episodios" title="Episódios">Episódios</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/convidados" title="Convidado do dia">Convidado do dia</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/erros-de-gravacao" title="Erros de gravação">Erros de gravação</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/instagram" title="Instagram">Instagram @TVCocoricó</a></li>
       </ul>
     </div>
     <div class="span2">
@@ -33,14 +33,14 @@
     </div>
     
     
-    <div class="span2 joguinhos"> <a href="http://cmais.com.br/cocorico2/paiol" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
+    <div class="span2 joguinhos"> <a href="<?php echo $section->Site->retriveUrl() ?>/paiol" class="bold" title="Jogos e Brincadeiras">Jogos e Atividades</a>
       <ul>
-        <li><a href="http://cmais.com.br/cocorico2/joguinhos" title="Joguinhos">Joguinhos</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/paiol" title="Atividades">Atividades</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/receitinhas" title="Receitinhas">Receitinhas</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/imprima-e-brinque" title="Receitinhas">Imprima e Brinque</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/para-colorir" title="Receitinhas">Para Colorir</a></li>
-        <li><a href="http://cmais.com.br/cocorico2/papel-de-parede" title="Receitinhas">Papel de Parede</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/joguinhos" title="Joguinhos">Joguinhos</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/paiol" title="Atividades">Atividades</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/receitinhas" title="Receitinhas">Receitinhas</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/imprima-e-brinque" title="Receitinhas">Imprima e Brinque</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/para-colorir" title="Receitinhas">Para Colorir</a></li>
+        <li><a href="<?php echo $section->Site->retriveUrl() ?>/papel-de-parede" title="Receitinhas">Papel de Parede</a></li>
         </ul></div>
     <div class="span3 sites"> <p class="bold">Sites Relacionados</p>
       <ul>
