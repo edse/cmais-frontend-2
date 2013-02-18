@@ -348,7 +348,29 @@
       
       
             
-      <!-- convidado especial -->
+   
+               
+     
+     <?php if(isset($displays['receitinhas'])):?>
+        <?php if(count($displays['receitinhas']) > 0): ?>  
+          <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+          <div class="span6 destaque-2 conteudo-diverso ytb">
+            <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" title="<?php echo $se ?>" class="destaque1"> 
+              <h3><?php $tam=26; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
+              <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+              <p>
+                <?php $tam=26; $str=$displays['receitinhas'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+              </p>
+            </a>  
+            <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" class="btn-ico-mais" title="RECEITINHAS">
+              <i class="ico-mais"></i>  
+            </a>
+          </div>       
+      <?php endif; ?>
+     <?php endif; ?>
+      <!-- /receitinhas -->
+      
+      <!-- Convidado Especial -->
       <?php if(isset($displays['convidado-especial'])):?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
            <?php
@@ -358,62 +380,34 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
-
-          <div class="span6 destaque-1 conteudo-tv">
-            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>" class="destaque1">
-              <h3><?php $tam=20; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h3>
-              <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
-              <p>
-                <?php $tam=26; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-              </p>
-            </a>
-           <a href="<?php echo $site->retriveUrl(); ?>/convidados" class="btn-ico-mais" title="CONVIDADOS">
-             <i class="ico-mais"></i>
-           </a>        
-         </div>
-         <?php endif; ?>
-       <?php endif; ?>
-       <!-- /convidado especial -->
-
+      
     <div class="span12">  
-        
-    <!-- Convidado Especial -->
-    <?php if(isset($displays['convidado-especial'])): ?>
-      <?php if(count($displays['convidado-especial']) > 0): ?>
-        <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
-        <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?>
-      <div class="span6 box-destaque tvcocorico">
-        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-        <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
-          <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"> 
-            <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-            <?php $tam=28; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-          </a>
-        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
-      </div>
-   <!-- /Convidado Especial -->
-     <?php endif; ?>
-    <?php endif; ?> 
+      
+    <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+    <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
+    <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
     
-    <!-- Receitinhas -->
-    <?php if(isset($displays['receitinhas'])): ?>
-      <?php if(count($displays['receitinhas']) > 0): ?>
-        <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $se = $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>
-        <?php $se_link = $displays['receitinhas'][0]->Asset->Sections[0]->getSlug(); ?>
-      <div class="span6 box-destaque">
-        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
-          <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>"> 
-            <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-            <?php $tam=28; $str=$displays['receitinhas'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-          </a>
-        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
-      </div>
-   <!-- /Receitinhas -->
-     <?php endif; ?>
-    <?php endif; ?>
+    <div class="span6 box-destaque tvcocorico">
+      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
+        <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
+          <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+          <?php $tam=28; $str=$displays['convidado-especial'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+        </a>
+      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+    </div>
+    
+    <!-- /Convidado Especial -->
+    
+    <!-- box-destaque -->
+    <div class="span6 box-destaque">
+      <h3><a href="#">Receitinhas</a></h3>
+      <a href="#"><img src="http://midia.cmais.com.br/assets/image/image-6-b/6e0eb40f1da6a84a757b5545ac86e871d0da9ff5.jpg" alt="Convidado"></a>
+      <a href="#">texto corrido</a>
+      <a href="#" class="ico-mais"></a>
+    </div>
+    <!-- box-destaque -->
+    </div>
       
       
     </div>
