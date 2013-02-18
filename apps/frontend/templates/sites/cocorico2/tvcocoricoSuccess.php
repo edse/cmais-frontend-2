@@ -370,7 +370,10 @@
      <?php endif; ?>
       <!-- /receitinhas -->
       
-     
+      <!-- Convidado Especial -->
+      <?php if(isset($displays['convidado-especial'])):?>
+        <?php if(count($displays['convidado-especial']) > 0): ?>
+          
     <div class="span12">  
       
     <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
