@@ -286,6 +286,7 @@ bold,
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
+.navbar-fixed-top .container { width:414px }
 /* /topo*/
 
 /* IE*/
