@@ -120,3 +120,8 @@ if (navigator.appName == 'Microsoft Internet Explorer'){
     window.frames["print_frame"].window.print();
   }
 }
+
+function modalGoTo(url) {
+  $('#myModal a.adulto').attr('href', url);
+  document.href="#myModal";
+}
