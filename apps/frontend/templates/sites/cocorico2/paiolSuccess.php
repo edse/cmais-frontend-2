@@ -185,7 +185,7 @@
         <?php $se = $displays['destaque-imprima'][0]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays['destaque-imprima'][0]->Asset->Sections[0]->getSlug(); ?>
       <div class="span4 box-destaque">
-        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $displays['destaque-imprima'][0]->getTitle() ?></a></h3>
+        <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
         <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>"></a>
           <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"> 
             <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
