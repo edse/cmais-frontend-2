@@ -37,7 +37,7 @@
     <?php $related2 = $displays['destaque-receitinhas'][2]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
            
       <div class="tvcoco span12">    
-        <h2>Receitinhas</h2> 
+        <a href="<?php echo $site->retriveUrl(); ?>/receitinhas" ?><h2>Receitinhas</h2></a>
         <a class="convidado span12" href="<?php echo $site->retriveUrl() ?>/receitinhas" title="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>">
           <img src="<?php echo $related0[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-receitinhas'][0]->getTitle() ?>" />
           <p><?php //echo $displays['destaque-receitinhas'][0]->getTitle() ?></p>
