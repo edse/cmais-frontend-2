@@ -66,7 +66,7 @@
                     <p>Prudente Prudente</p>
                     <p>Santos</p>
                     <p>São José dos Campos</p>
-                    <p>>São Paulo<</p>
+                    <p>São Paulo</p>
                     <p>Sorocaba</p>
                     <hr>
                     <p>Att</p>
