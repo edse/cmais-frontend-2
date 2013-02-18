@@ -757,26 +757,7 @@ class _assetActions extends sfActions
         $this->page = $request->getParameter('page');
         if ($debug) print "<br>cocorico-13 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca'); 
-      }
-      elseif($this->section->slug == "clipes-musicais") {
-        $this->assetsQuery = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, AssetVideo av, SectionAsset sa')
-          ->where('sa.section_id = ?', $this->section->id)
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhere('av.asset_id = a.id')
-          ->andWhere('av.youtube_id IS NOT NULL')
-          ->andWhere('a.is_active = ?', 1)
-          ->orderBy('a.created_at desc');
-        $pagelimit = 12;
-        $this->pager = new sfDoctrinePager('Asset', $pagelimit);
-        $this->pager->setQuery($this->assetsQuery);
-        $this->pager->setPage($request->getParameter('page', 1));
-        $this->pager->init();
-        $this->page = $request->getParameter('page');
-        if ($debug) print "<br>cocorico-13 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais'); 
-      
+        
       }
       elseif($this->section->slug == "se-liga-no-perigo") {
         $this->assetsQuery = Doctrine_Query::create()
