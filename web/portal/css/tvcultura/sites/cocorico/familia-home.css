@@ -21,9 +21,8 @@
 #blocoCarrossel .texto { position:relative;  }
 #blocoCarrossel .texto h3 { color:#6B757D; }
 #blocoCarrossel .texto { background: none; }
-.carousel-inner .item { height:335px; overflow:hidden; }
+#myCarousel .carousel-inner .item { height:335px; overflow:hidden; }
 #myCarousel .texto {  min-width:594px; }
-
 
 .destaques.video-ytb .bold { padding-top:5px; }
 .destaques.video-ytb p { background:#C6E1E4; display: block; margin: 0; overflow: hidden; padding: 0 0 5px 10px; position: relative; width: 97.1%; }

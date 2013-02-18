@@ -36,7 +36,7 @@
   <div class="row-fluid conteudo">
     <?php if(isset($displays["destaque-principal"])): ?>
       <?php if(count($displays["destaque-principal"]) > 0): ?> 
-    <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("original") ?>"></a>
+    <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>"></a>
     <div class="span6">
       <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
       <p class="grd">Parabéns ao vencedor</p>
@@ -68,8 +68,8 @@
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal"  name="<?php echo $d->getTitle(); ?>"  title="<?php echo $d->getTitle(); ?>">
-          <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" class="span12">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal" name="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>"  title="<?php echo $d->getTitle(); ?>">
+          <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" class="span12">
           <p><?php echo $d->getTitle(); ?></p>
         </a>
       </li> 
@@ -108,12 +108,12 @@
 </div>
 <!-- /container-->
 
-<!--modal produto-->
-<script>
+<!--modal produto-->   
+      <script>
 //chamando modal
 $('.btn-produto').click(function(){
   var img_ampl = $(this).attr('name');
-  $('.modal-body img').attr('src', img_ampl); 
+  $('.modal-header img').attr('src', img_ampl); 
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
