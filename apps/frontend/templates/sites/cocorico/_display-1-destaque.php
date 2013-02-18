@@ -19,7 +19,6 @@
           <img src="<?php echo $imgs[0]->retriveImageUrlByImageUsage('image-6-b') ?>">
         </a>
  
-        
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
           <h3><?php echo $d->Asset->getTitle()?></h3>
           <p><?php echo $d->Asset->getDescription()?></p>
