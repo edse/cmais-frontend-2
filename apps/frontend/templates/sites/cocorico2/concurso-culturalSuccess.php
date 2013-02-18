@@ -68,9 +68,11 @@
     <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
-        <a class="btn-produto" href="#myModal2" data-toggle="modal" name="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>"  title="<?php echo $d->getTitle(); ?>">
+        <a class="btn-produto" href="#myModal2" data-toggle="modal" title="<?php echo $d->getTitle(); ?>">
           <img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" class="span12">
           <p><?php echo $d->getTitle(); ?></p>
+          <input type="hidden" name="cidade" id="cidade" value="<?php echo $d->AssetImage->getHeadline() ?>" />
+          <input type="hidden" name="imagem" id="imagem" value="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" />
         </a>
       </li> 
       <?php endforeach; ?>
@@ -80,7 +82,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
         <h3 id="myModalLabel">Nome da criança<br/><span>cidade - uf</span></h3>
-        <img src="http://midia.cmais.com.br/assets/image/original/9e40581961a9755d026176cef5169f4a36a03147.jpg" alt="" />
+        <img src="" alt="" />
       </div>
     </div>
     <!-- /Modal -->
@@ -112,8 +114,11 @@
       <script>
 //chamando modal
 $('.btn-produto').click(function(){
-  var img_ampl = $(this).attr('name');
-  $('.modal-header img').attr('src', img_ampl); 
+  var imagem = $(this).children('input#imagem').val();
+  var cidade = $(this).children('input#cidade').val();
+  var texto = $(this).attr('title') + '<br/><span>' + cidade + '</span>';
+  $('.modal-header img').attr('src', imagem); 
+  $('.modal-header h3').text(texto); 
 });
 $('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
   var img_ampl_modal = $(this).attr('name');
