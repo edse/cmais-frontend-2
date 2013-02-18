@@ -22,7 +22,7 @@
     <div class="span2">
       <a href="#myModal" class="bold" title="Em família">em família</a>
       <ul>
-        <li><a href="javascript:;" onclick="modalGoTo('http://cmais.com.br/cocorico2/natv');" data-toggle="modal"  title="Na TV">Na TV</a></li>
+        <li><a href="javascript:;" onclick="modalGoTo('http://cmais.com.br/cocorico2/natv');"  title="Na TV">Na TV</a></li>
         <li><a href="javascript:;" onclick="modalGoTo('http://cmais.com.br/cocorico2/naslojas');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
         <li><a href="javascript:;" onclick="modalGoTo('http://cocoricoshow.com.br/');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
         <li><a href="javascript:;" onclick="modalGoTo('http://cmais.com.br/cocorico2/nocinema');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
