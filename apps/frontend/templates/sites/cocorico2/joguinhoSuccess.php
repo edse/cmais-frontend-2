@@ -24,7 +24,7 @@
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="<?php echo $site->retriveUrl() ?>/joguinhos ?>" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="<?php echo $site->retriveUrl() ?>/joguinhos" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
@@ -35,7 +35,6 @@
       <?php $section = $asset->getSections(); ?>
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section[0])) ?>
       <!--/RANKING -->
-      
   </div>
   <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
   <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
