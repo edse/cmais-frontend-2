@@ -1,8 +1,3 @@
-<script>
-    function changeUrl(url, target) {
-      $(target).attr('href', url);
-    }
-</script>
 <div class="row-fluid rodape" >
     <h3>2013 &copy; tv cultura - fundação padre anchieta</h3>
     <div class="span2"> <a href="http://cmais.com.br/cocorico2" class="bold" title="Cocoricó">Cocoricó</a>
