@@ -386,7 +386,7 @@
          
     <div class="span6 box-destaque">
       <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">"></a>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>">
         <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
         <?php $tam=28; $str=$displays['receitinhas'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
