@@ -401,7 +401,7 @@ bold,
 .box-destaque.ytb a { position: relative; z-index: 1000; }
 
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
-.box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden;}
+.box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .box-destaque h3 a { background:#F2722F; height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
 .box-destaque h3 a,
 .box-destaque img { min-height: 180px; }
