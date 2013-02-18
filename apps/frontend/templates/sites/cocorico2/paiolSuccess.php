@@ -182,7 +182,7 @@
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-        <?php $se = $displays['destaque-imprima'][0]->Asset->Sections[0]->gconteudosetTitle(); ?>
+        <?php $se = $displays['destaque-imprima'][0]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays['destaque-imprima'][0]->Asset->Sections[0]->getSlug(); ?>
       <div class="span4 box-destaque">
         <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $displays['destaque-imprima'][0]->getTitle() ?></a></h3>
