@@ -1,12 +1,5 @@
 $(document).ready(function() {
   
-  
-  function modalGoTo(url) {
-    window.alert(url);
-    $('#myModal a.adulto').attr('href', url);
-    window.location.href="#myModal";
-  }
-  
    /*
     * 
     * PRINT JPGS
