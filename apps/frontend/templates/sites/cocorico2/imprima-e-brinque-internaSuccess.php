@@ -75,9 +75,7 @@
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
-      <?php endif; ?>
-        
-      <?php if(count($related_video)>0): ?>
+      <?php else: ?>
       <?php 
       if (count($related_video) > 0):
         $offset = "0m0s";
