@@ -57,9 +57,7 @@
       
       <?php if(count($related_video)==0): ?>
       <iframe width="460" height="259" src="<?php echo $related_video[0]->retriveImageUrlByImageUsage("original") ?></iframe>
-      <?php endif; ?>
-        
-      <?php if(count($related_video)>0): ?>
+      <?php else: ?>
       <?php 
       if (count($related_video) > 0):
         $offset = "0m0s";
