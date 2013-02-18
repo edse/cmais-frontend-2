@@ -51,7 +51,7 @@
                     <h3 class="titulos" style="text-align: center">Inscrições encerradas.</h3>
                     <a href="http://cmais.com.br/cadastro-de-tutores-2013-lista-de-selecionados" title="Voltar" style="color:#ff6633; text-align: center; display: block">Voltar para listade candidatos selecionados.</p>
                     -->
-                    <p style="font-size: 16px;">Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a style="color:#ff6633; font-size: 16px;" href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a>, com os dados abaixo:</p>
+                    <p style="text-align: center">Atenção: Caso ainda não tenha efetuado sua escolha envie email para <a style="color:#ff6633;" href="mailto:tutoriaingles@tvcultura.com.br" title="tutoriaingles@tvcultura.com.br">tutoriaingles@tvcultura.com.br</a>, com os dados abaixo:</p>
                     <ul>
                       <li>Nome completo:</li>
                       <li>CPF:</li>
