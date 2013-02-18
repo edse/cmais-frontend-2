@@ -16,7 +16,7 @@
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site'=>$site)) ?>
       <!--/menu personagens -->
     </div>
-  </div>
+  </div> 
   <!-- /row-->
   <!-- breadcrumb-->
   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
