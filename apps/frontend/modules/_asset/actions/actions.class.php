@@ -757,6 +757,7 @@ class _assetActions extends sfActions
         $this->page = $request->getParameter('page');
         if ($debug) print "<br>cocorico-13 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/cocorico-na-franca'); 
+        
       }
       elseif($this->section->slug == "se-liga-no-perigo") {
         $this->assetsQuery = Doctrine_Query::create()
