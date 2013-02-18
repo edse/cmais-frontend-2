@@ -1,18 +1,5 @@
-<?php
-  if(!isset($asset)){
-    $assets = $pager->getResults();
-    $asset = $assets[0];
-  }
-  ?>
-
+<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
-  });
-</script>
 
 <!-- container-->
 <div class="container tudo">
@@ -31,56 +18,121 @@
     </div>
   </div>
   <!-- /row-->
-
   <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   
-  <!--btn voltar
+  <!--btn voltar-->
   <a href="#" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina">
-
-    <h2><?php $tam=32; $str=$asset->getTitle(); if(strlen($str) <= $tam) echo $str; else echo substr($str, 0, $tam-1)."&hellip;" ?></h2>
-
-     <span></span>
-    <!-- RANKING -->
-    <?php $section = $asset->getSections(); ?>
-    <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('asset'=>$asset,'section'=>$section)) ?>
-    <!--/RANKING -->
-  </div> 
-  
-  <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
-  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
-  <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
-
-  <!-- titulo da pagina -->
-  <!--row-->
-  <div class="row-fluid conteudo" id="videos">
-    
-    <iframe width="940" height="529" style="margin-bottom: 20px;" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-    <p class="span12"><?php echo $asset->getDescription()?></p>
-    <p class="tit">Assista mais Clipes!</p>
-  </div>
-  <!--/row-->
-  
-  <!--row-->
-  <div class="row-fluid relacionados ytb">
-    
-    <ul class="destaques-small top">
-      <?php if(count($assets) > 0): ?>
-        <?php foreach($assets as $k=>$d): ?>
-          <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <p><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></p></a>
-          </li>
-        <?php endforeach; ?>
-      <?php endif; ?>
+  <div class="tit-pagina span7">
+    <h2><?php $tam=28; $str=$asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+    <span></span>
+    <ul class="likes">
+      <li class="ativo"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
+  <a href="#" class="curtir" title="Curtir">curtir</a>
+  <a href="#" class="curtir disabled" title="Curtir">curtir</a>
+  <!-- titulo da pagina -->
+  
+  <!--row-->
+  <div class="row-fluid conteudo">
+    <p class="span12"><?php echo $asset->getDescription() ?></p>
+    <div class="span6 esq">
+    <p class="alerta"><span></span>tenha Cuidado! peça ajuda a um adulto!</p>
+    
+    <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+
+
+  </div>
+    <div class="span6">
+      <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+       <?php if(count($related_video)>0): ?>
+      <?php 
+      if (count($related_video) > 0):
+        $offset = "0m0s";
+        if($related_video[0]->AssetVideo->getStartFrom() != ""){
+          $p = explode(":",$related_video[0]->AssetVideo->getStartFrom());
+          $offset = $p[0]."m".$p[1]."s";
+        }
+      ?>
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      <?php endif; ?>
+       <?php endif; ?>     
+        <ul class="imprimir"> 
+        <!-- figura -->
+          <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
+          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
+            
+      <?php $counter = 0 ?>
+      <?php $counter_div = 1 ?>
+      <?php if(count($related_preview)>0): ?>
+      <?php foreach($related_preview as $k=>$d): ?>  
+        <li class="span4">
+          
+          <a href="javascript:printDiv('div<?php $counter_div ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$counter]->retriveImageUrlByImageUsage("original") ?>" 
+            alt="nome brincadeira" /><span></span></a>
+          <div id="div<?php $counter_div ?>" style="display: none;page-break-after:always;">
+            <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+          </div>
+        </li>
+        <?php $counter ++ ?>
+        <?php $counter_div ++ ?>
+        <?php endforeach; ?>
+        <?php endif; ?>
+        
+        
+        
+      </ul>
+      
+      <!--IFRAME PARA IMPRESSAO EM IE -->
+      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
+      <!--/IFRAME PARA IMPRESSAO EM IE -->
+       
+    </div>
+  </div>
+  <!--/row--> 
+  
+    <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "imprima-e-brinque"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id desc')
+      ->limit(6)
+      ->execute();
+  ?>
+  <?php if (count($assets) > 0): ?>
+  <!--row-->
+  <div class="row-fluid relacionados">
+    <div class="tit imprima"><span class="mais"></span><a href="<?php echo $site->retriveUrl() ?>/imprima-e-brinque">Imprima e brinque</a><span></span></div>
+    <ul class="destaques-small">
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+      <li class="span2">
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-7-b') ?>" alt="<?php echo $d->getTitle() ?>" />
+          <?php $tam=17; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+        </a>
+      </li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+  <?php endif; ?>
   <!-- /row-->
+ 
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
@@ -89,30 +141,12 @@
 </div>
 <!-- /container-->
 
-<script>
-function vote(id){
-  $.ajax({
-    type: "GET",
-    dataType: "text",
-    data: "asset_id="+id,
-    url: "/ajax/ranking",
-    beforeSend: function(){
-      $('#btn_1').hide();
-      $('#btn_2').show();
-      $('#v_load').show();
-    },
-    success: function(data){
-      if(data == 1){
-        //alert('Voto realizado com sucesso!');
-        $('#btn_1').hide();
-        $('#btn_2').show();
-      }else{
-        alert('Erro!');
-        $('#btn_1').show();
-        $('#btn_2').hide();
-      }
-      $('#v_load').hide();
-    }
-  });
-}
+<!--tooltip estilizado-->
+<!--
+<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
+<script type="text/javascript">
+$('.conteudo').tooltip({ 
+    extraClass:"tp-imprimir"
+}); 
+-->
 </script>
