@@ -395,19 +395,30 @@ bold,
 
 .relacionados .destaques-small.top { padding-top:10px; }
 
+.box-destaque.ytb img { margin: -20px 0;    position: relative;    z-index: 0; }
+.box-destaque.ytb h3 { position: relative;    z-index: 2000; }
+.box-destaque.ytb a { position: relative; z-index: 1000; }
+
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
-.box-destaque h3 { margin:0; height: 30px !important; overflow:hidden;}
-.box-destaque h3 a { height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
+.box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden;}
+.box-destaque h3 a { background:#F2722F; height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
 .box-destaque h3 a,
 .box-destaque a { color: #FDF035; text-align:center; display: block;}
 .box-destaque a:hover { text-decoration:none; }
-.box-destaque .ico-mais { background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -36px 0 ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
+.box-destaque .ico-mais { background:transparent url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -36px 0 ; position: absolute;   right: 1px;   top:193px;   width: 36px; height: 36px;}
 
+.box-destaque.joguinhos h3,
+.box-destaque.joguinhos a,
 .box-destaque.joguinhos {  background:#1893CF;  }
+.box-destaque.joguinhos h3
 .box-destaque.joguinhos a { color:#fff; }
-.box-destaque.joguinhos .ico-mais { background-position:0 0; }
+.box-destaque.joguinhos .ico-mais { background-position:0 0; background-color:transparent; }
 
+.box-destaque.tvcocorico h3,
+.box-destaque.tvcocorico a,
 .box-destaque.tvcocorico {  background:#1DB186;  }
 .box-destaque.tvcocorico h3 a { background:#1DB186; color:#FDF035; }
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
+
+
