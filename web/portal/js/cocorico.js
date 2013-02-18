@@ -121,3 +121,7 @@ if (navigator.appName == 'Microsoft Internet Explorer'){
     window.frames["print_frame"].window.print();
   }
 }
+
+function changeUrl(url, target) {
+  $(target).attr('href', url);
+}
