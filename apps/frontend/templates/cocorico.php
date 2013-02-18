@@ -38,6 +38,7 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
     GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico");
     GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-familia");
 
     </script>
     <script type='text/javascript'>
