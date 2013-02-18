@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  
+  
+  function modalGoTo(url) {
+    window.alert(url);
+    $('#myModal a.adulto').attr('href', url);
+    window.location.href="#myModal";
+  }
+  
    /*
     * 
     * PRINT JPGS
@@ -119,10 +127,4 @@ if (navigator.appName == 'Microsoft Internet Explorer'){
     window.frames["print_frame"].window.focus();
     window.frames["print_frame"].window.print();
   }
-}
-
-function modalGoTo(url) {
-  window.alert(url);
-  $('#myModal a.adulto').attr('href', url);
-  window.location.href="#myModal";
 }
