@@ -404,6 +404,7 @@ bold,
 .box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden;}
 .box-destaque h3 a { background:#F2722F; height: 30px; line-height: 30px; width: 100%; font-size: 14px; text-transform: uppercase; overflow: hidden; font-size: 20px; font-weight: normal; }
 .box-destaque h3 a,
+.box-destaque img { min-height: 180px; }
 .box-destaque a { color: #FDF035; background:#F2722F; text-align:center; display: block;}
 .box-destaque a:hover { text-decoration:none; }
 .box-destaque .ico-mais { background:transparent url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -36px 0 ; position: absolute !important;   right: 1px;   top:193px;   width: 36px; height: 36px;}
