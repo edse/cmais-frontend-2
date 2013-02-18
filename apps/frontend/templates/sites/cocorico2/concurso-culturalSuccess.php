@@ -81,7 +81,7 @@
     <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
-        <h3 id="myModalLabel"><span id="nome">Nome da criança</span><br/><span id="cidade">cidade - uf</span></h3>
+        <h3 id="myModalLabel"><span id="nome">Nome da criança</span><span id="cidade">cidade - uf</span></h3>
         <img src="" alt="" />
       </div>
     </div>
