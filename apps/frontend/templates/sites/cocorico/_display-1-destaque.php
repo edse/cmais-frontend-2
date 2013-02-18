@@ -21,8 +21,8 @@
  
         
         <a class="texto" href="<?php echo $d->retriveUrl()?>">
-          <h3><?php echo $d->getTitle()?></h3>
-          <p><?php echo $d->getDescription()?></p>
+          <h3><?php echo $d->Asset->getTitle()?></h3>
+          <p><?php echo $d->Asset->getDescription()?></p>
        </a>
        <?php endif; ?>
       </div>
