@@ -52,12 +52,33 @@
 
 
   </div>
+  
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
+      <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
       
       <?php if(count($related_video)==0): ?>
-      <iframe width="460" height="259" src="<?php echo $related_video[0]->retriveImageUrlByImageUsage("original") ?></iframe>
-      <?php endif; ?>
+       
+       <ul class="imprimir"> 
+       <!-- figura -->
+ 
+      <?php if(count($related_preview)>0): ?>
+ 
+        <li class="span4">
+          
+          <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
+            alt="nome brincadeira" /><span></span></a>
+          <div id="div0" ?>" style="display: none;page-break-after:always;">
+            <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+          </div>
+          
+        </li>
+        <?php endif; ?>
+               
+      </ul>
+      
+       <?php else: ?>
         
       <?php if(count($related_video)>0): ?>
       <?php 
@@ -69,17 +90,10 @@
         }
       ?>
       <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
-      <?php endif; ?>
-       <?php endif; ?>   
-       
-       
-       
          
         <ul class="imprimir"> 
         <!-- figura -->
-          <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-          <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
-            
+              
       <?php $counter = 0 ?>
       <?php $counter_div = 1 ?>
       <?php if(count($related_preview)>0): ?>
@@ -95,12 +109,9 @@
         <?php $counter ++ ?>
         <?php $counter_div ++ ?>
         <?php endforeach; ?>
+        </ul>
         <?php endif; ?>
-        
-        
-        
-      </ul>
-      
+       
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
