@@ -1,5 +1,6 @@
 body { background:url(/portal/images/capaPrograma/cocorico/background.jpg) repeat; font-family:Arial, Helvetica, sans-serif;  }
 ul li { list-style:none; }
+.conteudo p a { color:#F2722F; font-weight:bold; }
 /*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; }*/
 .navbar-inner .container { max-width:980px;}
 .tudo { margin-top:44px; max-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
@@ -423,5 +424,6 @@ bold,
 .box-destaque.tvcocorico h3 a { background:#1DB186; color:#FDF035; }
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
+
 
 

@@ -1,4 +1,5 @@
 /* menu familia */
+.conteudo p a { color:#70AAB1; }
 .topo-familia .navbar .nav > li.familia { margin:5px 1% 0 20px; float:left; width: auto; }
 .topo-familia .navbar .nav > li { margin-top:5px; margin-right:10px; }
 .topo-familia .navbar .nav > li.familia a { width: 167px; margin:0; padding:0; }
@@ -106,7 +107,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .voltar {    background: url("/portal/images/capaPrograma/cocorico/voltar-familia.png") no-repeat scroll 0 0 transparent;    color: #6b757d; }
 .divisao {    background: url("/portal/images/capaPrograma/cocorico/pontilhado-familia2.png") repeat-x center center;}
 
-.tit-pagina.interna { color:#fff; background:#70aab1; width:92%; margin:0 20px 20px;  }
+.tit-pagina.interna { color:#fff; background:#70aab1; width:auto; margin:0 20px 20px;  }
 .tit-pagina.interna:hover {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .conteudo .alerta { color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
 .conteudo .alerta span { width:23px; height:19px; background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 40px; }
