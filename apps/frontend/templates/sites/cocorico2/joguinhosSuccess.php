@@ -115,6 +115,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!--/RANKING -->
     </div>
     <?php endif; ?>
+    <?php endif; ?>
   </div>
   <!-- /row-->
   <?php /* ?>
