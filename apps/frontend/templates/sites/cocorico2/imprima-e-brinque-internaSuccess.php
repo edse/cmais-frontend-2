@@ -115,7 +115,7 @@
             <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
-        <?php $counter ++ ?>
+        
         
         <?php $counter_div = (int)(count($counter_div)) ?>
         <?php $counter_down = (int)(count($related_download)) ?>
@@ -125,6 +125,7 @@
         <?php if($counter_div == $counter_down_): ?>
         <?php ?>
         <?php else: ?>
+        <?php $counter ++ ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
         
