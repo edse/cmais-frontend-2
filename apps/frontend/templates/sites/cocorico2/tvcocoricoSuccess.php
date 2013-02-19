@@ -97,7 +97,7 @@
         <!-- /enquete -->
         <!-- fale conosco cr-->
       </div>
-      <!-- /tv cocorico -->
+      <!-- /tv cocorico --> 
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
