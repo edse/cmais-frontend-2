@@ -1,5 +1,5 @@
 <?php
-$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+$assets = $pager->getResults();
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
@@ -68,7 +68,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <ul class="destaques-small">
       <?php if(count($assets) > 0): ?>
         <?php foreach($assets as $k=>$d): ?>
-          <?php if($k > 2): ?>
+          <?php //if($k > 2): ?>
             <?php $related = $d->retriveRelatedAssetsByRelationType('Preview') ?>
             <li class="span2">
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -76,7 +76,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
                 <?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
               </a>
             </li>
-          <?php endif; ?>
+          <?php //endif; ?>
         <?php endforeach; ?>
       <?php endif; ?>
     </ul>
