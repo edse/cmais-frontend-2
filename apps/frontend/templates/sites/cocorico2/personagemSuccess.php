@@ -78,8 +78,6 @@
   
         <?php elseif($displays['conteudos'][0]->Asset->AssetType->getSlug() == "content"): ?>
           <div class="span6 box-destaque"> 
-          <?php $se = $displays["conteudos"][0]->Asset->Sections[0]->getTitle(); ?>
-          <?php $se_link = $displays["conteudos"][0]->Asset->Sections[0]->getSlug(); ?> 
           <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php $related_video = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php if(count($related_image) > 0): ?> 
