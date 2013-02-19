@@ -121,7 +121,7 @@
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif; ?>
+        <?php endif; ?> 
       </div>
       <!-- /destaque-home-simples -->
       
