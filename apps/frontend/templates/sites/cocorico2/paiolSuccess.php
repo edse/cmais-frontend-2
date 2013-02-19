@@ -71,7 +71,9 @@
       <?php foreach($displays['videos'] as $k=>$d):?>  
        <div class="destaque-home-tv span9">
           <?php $related = $displays['videos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <h2><?php echo $displays['videos'][0]->Asset->getTitle() ?></h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
+        <h2>
+         <?php $tam=28; $str= $displays['videos'][0]->Asset->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+        </h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
 
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
 
