@@ -39,7 +39,7 @@
                   <div class="texto" style="margin-top:30px">
                     <h5>Araçatuba</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada</p> 
-                    <table>
+                    <table style="width: 100%">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
