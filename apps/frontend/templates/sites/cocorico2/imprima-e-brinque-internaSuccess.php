@@ -97,14 +97,14 @@
               
       <?php if(count($related_preview)>0): ?>
        
-       <a href="javascript:printDiv('div0')" class="print grd" 
+       <a href="javascript:printDiv('div1')" class="print grd" 
        datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>"
        data-original-title="imprimir">
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
       <ul class="imprimir"> 
       <?php $counter = 1 ?>
-      <?php $counter_div = 1 ?>
+      <?php $counter_div = 2 ?>
       <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         <li class="span4">
@@ -117,17 +117,7 @@
         </li>
         
         
-        <?php $counter_div = (int)(count($counter_div)) ?>
-        <?php $counter_down = (int)(count($related_download)) ?>
-        <?php $counter_down_ = $counter_down - (int)1 ?>
-          
         
-        <?php if($counter_div == $counter_down_): ?>
-        <?php ?>
-        <?php else: ?>
-        <?php $counter ++ ?>
-        <?php $counter_div ++ ?>
-        <?php endif; ?>
         
         <?php endforeach; ?>
 
