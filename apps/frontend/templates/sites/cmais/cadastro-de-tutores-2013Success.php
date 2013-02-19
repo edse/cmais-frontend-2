@@ -1,9 +1,9 @@
 <?php
 if(isset($pager)){
-  if($pager->count() == 1){
+  //if($pager->count() == 1){
     header("Location: ".$pager->getCurrent()->retriveUrl());
     die();
-  }  
+  //}  
 } 
 ?>
 
