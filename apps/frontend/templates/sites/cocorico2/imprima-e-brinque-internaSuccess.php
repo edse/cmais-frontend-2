@@ -115,11 +115,13 @@
             <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
-        
+      <?php $counter ++ ?>
+      <?php $counter_div ++ ?>
       <?php endforeach; ?>
 
       <?php endif; ?>
-        </ul>
+      
+      </ul>
          
       <?php endif; ?>
       <?php endif; ?>
