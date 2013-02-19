@@ -134,16 +134,17 @@
       	<?php if(isset($displays['destaque-principal'])): ?>
       	<?php if(count($displays['destaque-principal']) > 0): ?> 	
       	  
-      	   <div class="destaque-home-tv span9">  
+      	   
       	  
       	  <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
       		
-           
+             <div class="destaque-home-tv span9"> 
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
             <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
             
           <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
             
+             <div class="destaque-home-tv span9"> 
             <?php $related_image = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php if(count($related_image) > 0): ?> 
           
