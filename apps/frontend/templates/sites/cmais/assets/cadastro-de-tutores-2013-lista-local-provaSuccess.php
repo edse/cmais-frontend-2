@@ -33,11 +33,12 @@
                   <p class="titu" style="margin-bottom:60px">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   <br />
                   <br />
-                  <h4 style="color:#333; margin-bottom:10px">Lista em ordem alfabética de candidatos selecionados para participar da prova</h4>
+                  <h4 style="color:#333; margin-bottom:10px">Lista em ordem alfabética de candidatos selecionados para participar da prova escrita</h4>
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
-                  <p>Inscrições encerradas.</p>
+                  <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    <html>
+                    <h2>Araçatuba</h2>
+                    <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada</p> 
                     <table>
                       <thead>
                         <tr>
@@ -437,13 +438,11 @@
                           <td>Campinas</td>
                           <td>online</td>
                         </tr>
-                                  <tr><td><h1>L</h1></td></tr>
                             <tr>
-                          <td>len Cristina Ferreira</td>
+                          <td>Élen Cristina Ferreira</td>
                           <td>Campinas</td>
                           <td>presencial</td>
                         </tr>
-                                  <tr><td><h1>E</h1></td></tr>
                             <tr>
                           <td>Eli Junior Santiago de Lima</td>
                           <td>Campinas</td>
@@ -499,13 +498,11 @@
                           <td>Campinas</td>
                           <td>online</td>
                         </tr>
-                                  <tr><td><h1>R</h1></td></tr>
                             <tr>
-                          <td>rika Liberato de Macedo Godoy</td>
+                          <td>Érika Liberato de Macedo Godoy</td>
                           <td>Campinas</td>
                           <td>online</td>
                         </tr>
-                                  <tr><td><h1>E</h1></td></tr>
                             <tr>
                           <td>Estela Fátima Silva Martins Mendes</td>
                           <td>Campinas</td>
@@ -1466,7 +1463,6 @@
                         </tr>
                       </tbody>
                     </table>
-                    </html>
 
                     
                   </div>
