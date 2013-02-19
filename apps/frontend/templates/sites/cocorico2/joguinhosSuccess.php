@@ -73,8 +73,51 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!--/RANKING -->
     </div>
     <?php endif; ?>
+    <?php if(isset($assets[3])): ?>
+      <?php $related = $assets[3]->retriveRelatedAssetsByRelationType('Preview') ?>
+    <div class="span4">
+      <a href="<?php echo $assets[3]->retriveUrl() ?>" title="<?php echo $assets[3]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[3]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[3]->getDescription() ?>" data-original-title="<?php echo $assets[3]->getTitle() ?>">
+        <span></span>
+        <?php //echo $assets[2]->getTitle() ?>
+        <?php $tam=18; $str=$assets[3]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+      </a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[3])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
+        <?php if(isset($assets[4])): ?>
+      <?php $related = $assets[4]->retriveRelatedAssetsByRelationType('Preview') ?>
+    <div class="span4">
+      <a href="<?php echo $assets[4]->retriveUrl() ?>" title="<?php echo $assets[3]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[4]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[4]->getDescription() ?>" data-original-title="<?php echo $assets[4]->getTitle() ?>">
+        <span></span>
+        <?php //echo $assets[2]->getTitle() ?>
+        <?php $tam=18; $str=$assets[4]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+      </a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[4])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
+        <?php if(isset($assets[5])): ?>
+      <?php $related = $assets[5]->retriveRelatedAssetsByRelationType('Preview') ?>
+    <div class="span4">
+      <a href="<?php echo $assets[5]->retriveUrl() ?>" title="<?php echo $assets[5]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[5]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[5]->getDescription() ?>" data-original-title="<?php echo $assets[5]->getTitle() ?>">
+        <span></span>
+        <?php //echo $assets[2]->getTitle() ?>
+        <?php $tam=18; $str=$assets[5]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+      </a>
+      <!-- RANKING -->
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[5])) ?>
+      <!--/RANKING -->
+    </div>
+    <?php endif; ?>
   </div>
   <!-- /row-->
+  <?php /* ?>
   <!--row-->
   <div class="row-fluid conteudo destaques">
     <ul class="destaques-small">
@@ -98,6 +141,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <?php else: ?>
     <p>Nenhum joguinho encontrado.</p>
   <?php endif; ?>
+   
+   */ ?>
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
