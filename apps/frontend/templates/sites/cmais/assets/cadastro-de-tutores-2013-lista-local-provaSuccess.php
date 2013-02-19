@@ -37,7 +37,7 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    <h2>Araçatuba</h2>
+                    <h5>Araçatuba</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada</p> 
                     <table>
                       <thead>
