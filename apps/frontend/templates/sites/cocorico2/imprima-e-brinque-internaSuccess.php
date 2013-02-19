@@ -126,12 +126,13 @@
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
-        <?php echo $counter_preview_?>
+        
         <?php endforeach; ?>
 
         <?php endif; ?>
          </ul>
-         teste 2
+         teste 23 |
+         <?php echo $counter_preview_?>
         <?php endif; ?>
         <?php endif; ?>
 
