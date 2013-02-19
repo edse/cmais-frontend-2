@@ -87,7 +87,7 @@
             <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
        
           <?php elseif(count($related_video) > 0): ?> 
-            <div class="span6 box-destaque"> 
+            <div class="span6 box-destaque ytb"> 
             <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>>"><?php echo $se ?></a></h3>
             <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related_video[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
             <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a>
@@ -104,9 +104,9 @@
         <?php $se = $displays["conteudos"][1]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays["conteudos"][1]->Asset->Sections[0]->getSlug(); ?>
         
-      <div class="span6 box-destaque ytb"> 
 
         <?php if($displays['conteudos'][1]->Asset->AssetType->getSlug() == "video"): ?>
+          <div class="span6 box-destaque ytb"> 
           <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
           <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][1]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
           <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
@@ -116,12 +116,14 @@
           <?php $related_image = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php $related_video = $displays['conteudos'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php if(count($related_image) > 0): ?> 
+            <div class="span6 box-destaque"> 
             <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
             <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["conteudos"][1]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
             <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
             <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
        
           <?php elseif(count($related_video) > 0): ?> 
+            <div class="span6 box-destaque ytb"> 
             <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
             <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related_video[1]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][1]->getTitle() ?>"></a>
             <a href="<?php echo $displays["conteudos"][1]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][1]->getTitle() ?></a>
