@@ -5,7 +5,7 @@
   <!-- row-->
   <div class="row-fluid">
     <div class="topo-coco">
-      <h1 class="span3"><a href="<?php echo $site->retriveUrl()?>" title="cocorico2"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
+      <h1 class="span3"><a href="<?php echo $site->retriveUrl() ?>" title="<?php echo $site->getTitle() ?>"><img src="/portal/images/capaPrograma/cocorico/logo-coco.png" alt="Cocoricó" /></a></h1>
       <!-- BOX PUBLICIDADE 2 -->
       <div class="box-publicidade span9">
         <!-- portal-cocorico2 -->
