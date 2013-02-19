@@ -1,9 +1,13 @@
 <?php
+header("Location: http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutores-2013-segunda-etapa");
+die();
+
+
 if(isset($pager)){
-  //if($pager->count() == 1){
+  if($pager->count() == 1){
     header("Location: ".$pager->getCurrent()->retriveUrl());
     die();
-  //}  
+  }  
 } 
 ?>
 
