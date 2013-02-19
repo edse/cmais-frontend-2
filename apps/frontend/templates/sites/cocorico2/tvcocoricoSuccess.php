@@ -153,8 +153,7 @@
             <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>">
           
         <?php endif; ?>
-        <?php endif; ?>
-        <?php endif; ?>
+        
          
          <div class="destaque span12">
           <span></span>
@@ -283,7 +282,8 @@
  
       </div>
       <!-- form interatividade -->
-      
+      <?php endif; ?>
+        <?php endif; ?>
       <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       
       
