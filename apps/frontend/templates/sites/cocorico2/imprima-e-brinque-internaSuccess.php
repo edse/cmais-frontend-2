@@ -104,7 +104,7 @@
        alt="Imprimir" /><span></span></a>
       <ul class="imprimir"> 
       <?php $counter = 1 ?>
-      <?php $counter_div = 2 ?>
+      <?php $counter_div = 1 ?>
       <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         <li class="span4">
