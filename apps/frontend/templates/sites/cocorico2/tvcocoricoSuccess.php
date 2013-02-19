@@ -134,7 +134,7 @@
       	<?php if(isset($displays['destaque-principal'])): ?>
       	<?php if(count($displays['destaque-principal']) > 0): ?> 	
       	  
-      	   <div class="destaque-home-tv span9"> 
+      	   <div class="destaque-home-tv span9">  
       	  
       	  <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
       		
