@@ -217,7 +217,7 @@
     
     <div class="span4 col-dir">
       <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico">
-        <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
+        <img class="span12" src="/portal/images/capaPrograma/<?php echo $site-> getSlug(); ?>/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
         <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
