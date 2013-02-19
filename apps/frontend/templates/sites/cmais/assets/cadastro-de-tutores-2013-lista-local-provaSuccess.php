@@ -37,8 +37,8 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    <h5>Araçatuba</h5>
-                    <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada</p> 
+                    <h5>Campinas</h5>
+                    <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Dr. Manoel Afonso Ferreira, 245, Parque Nova Campinas</p> 
                     <table style="width: 100%">
                       <thead>
                         <tr>
