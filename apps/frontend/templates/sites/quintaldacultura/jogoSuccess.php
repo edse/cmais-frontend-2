@@ -50,7 +50,7 @@
   <body>
 
   <div class="allWrapper">
-
+      
       <?php
       // section assets
       if(isset($pager))
@@ -59,7 +59,7 @@
         $assets = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
-          ->whereIn('sa.section_id',  array(92, 98, 99, 100, 101))
+          ->whereIn('sa.section_id',  array(92, 98, 99, 100, 101, 102,2236))
           ->andWhere('sa.asset_id = a.id')
           ->orderBy('a.id desc')
           ->execute();
