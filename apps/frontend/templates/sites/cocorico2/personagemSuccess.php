@@ -75,9 +75,9 @@
           <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $displays["conteudos"][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>"></a>
           <a href="<?php echo $displays["conteudos"][0]->Asset->retriveUrl() ?>"><?php echo $displays["conteudos"][0]->getTitle() ?></a>
           <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
-
+  
         <?php elseif($displays['conteudos'][0]->Asset->AssetType->getSlug() == "content"): ?>
-          <div class="span6 box-destaque">
+          <div class="span6 box-destaque"> 
           <?php $se = $displays["conteudos"][0]->Asset->Sections[0]->getTitle(); ?>
           <?php $se_link = $displays["conteudos"][0]->Asset->Sections[0]->getSlug(); ?> 
           <?php $related_image = $displays['conteudos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
