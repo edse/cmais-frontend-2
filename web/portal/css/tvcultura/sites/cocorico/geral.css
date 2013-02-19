@@ -1,5 +1,6 @@
 body { background:url(/portal/images/capaPrograma/cocorico/background.jpg) repeat; font-family:Arial, Helvetica, sans-serif;  }
 ul li { list-style:none; }
+.conteudo p a { color:#F2722F; font-weight:bold; }
 /*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; }*/
 .navbar-inner .container { max-width:980px;}
 .tudo { margin-top:44px; max-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
@@ -121,7 +122,7 @@ bold,
 .menu .navbar .nav > li > a { color:#fff;  }
 .menu .navbar .nav > li > a { font-size:20px; padding:0 22px 0 50px;  height:40px; line-height: 40px; color:#fff; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase;}
 .menu .navbar-inner { padding:0; }
-.menu .navbar .nav > li { overflow:hidden; margin-right:3.5%; margin-top:12px;}
+.menu .navbar .nav > li {/* overflow:hidden;*/ margin-right:3.5%; margin-top:12px;}
 .menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;  }
 .menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;}
 
@@ -220,7 +221,7 @@ bold,
 .popover-content p {line-height:18px; }
 /*.likes { position:absolute; bottom:7px; right:7px; margin:0;  }*/
 .likes { background: #F2722F; bottom: 3px;  height: 20px;  margin-bottom: 0; margin-left: 0; margin-right: 0; overflow: hidden; position: absolute; right: 7px; width:95px;}
-.likes li { background:url(/portal/images/capaPrograma/cocorico/estrela.png) no-repeat; width:14px; height:14px; float:left; margin-right:5px; margin-top:3px;  }
+.likes li { background:url(/portal/images/capaPrograma/cocorico/ranking-estrela.png) no-repeat; width:14px; height:14px; float:left; margin-right:5px; margin-top:3px;  }
 .likes li.ativo {  background-image:url(/portal/images/capaPrograma/cocorico/estrela-ativa.png); }
 
 .destaques-small { margin:0; }
@@ -423,5 +424,6 @@ bold,
 .box-destaque.tvcocorico h3 a { background:#1DB186; color:#FDF035; }
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
+
 
 

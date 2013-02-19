@@ -1,4 +1,5 @@
 /* joguinhos */
+.conteudo p a { color:#1893CF; }
 .destaques .btn,
 .destaques-small a,
 .tit-pagina { background:#1893cf; }
@@ -12,7 +13,7 @@
 
 .popover.bottom {border-color:#1893cf;  }
 .popover-content p {color:#0e6b99; font-size:13px; line-height: 15px; }
-.likes li { background:url(/portal/images/capaPrograma/cocorico/estrela-azul.png) no-repeat;  }
+/*.likes li {background:url(/portal/images/capaPrograma/cocorico/estrela-azul.png) no-repeat;  }*/
 .voltar { background:url(/portal/images/capaPrograma/cocorico/seta-azul.png) no-repeat; color:#1893cf; }
 .voltar:hover { color:#1893cf; }
 .divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-azul.png) repeat-x center; }
