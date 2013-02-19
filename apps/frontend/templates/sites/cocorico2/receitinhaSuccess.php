@@ -29,7 +29,7 @@
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="<?php echo $site->retriveUrl() ?>/receitinhas" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
