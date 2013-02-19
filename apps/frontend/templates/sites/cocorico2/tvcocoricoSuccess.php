@@ -144,7 +144,6 @@
             
           <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
             
-            <div class="promocao"> 
             <?php $related_image = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
             <?php if(count($related_image) > 0): ?> 
           
