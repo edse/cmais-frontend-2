@@ -71,7 +71,7 @@
       <?php foreach($displays['videos'] as $k=>$d):?>  
        <div class="destaque-home-tv span9">
           <?php $related = $displays['videos'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-        <h2>Clipes</h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
+        <h2><?php echo $displays['videos'][0]->Asset->getTitle() ?></h2> <?php echo $related[0]->AssetVideo->getYoutubeId() ?>
 
         <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['videos'][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -209,7 +209,7 @@
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
-            <h3><a href="<?php echo $site->retriveUrl() ?>/para-colorir"><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></a></h3>
+            <h3><a href= "<?php echo $site->retriveUrl() ?>/para-colorir"><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></a></h3>
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
