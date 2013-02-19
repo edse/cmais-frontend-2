@@ -14,7 +14,7 @@
           </li>
           <li class="joguinhos"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Joguinhos" href="<?php echo $site->retriveUrl() ?>/joguinhos" title="Joguinhos"></a></li>
           <li class="brincadeiras"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Atividades"  href="<?php echo $site->retriveUrl() ?>/brincadeiras" title="Atividades"></a></li>
-          <li class="tvcoco"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="TV Cocoricó"  href="<?php echo $site->retriveUrl() ?>/tvcocorico2" title="TV Cocoricó"></a></li>
+          <li class="tvcoco"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="TV Cocoricó"  href="<?php echo $site->retriveUrl() ?>/tvcocorico" title="TV Cocoricó"></a></li>
           <!--li class="diario"><a class="icon btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="Diário do Júlio"  href="/cocorico2/diario-do-julio" title="Diário do Júlio"></a></li-->
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
         </ul>

@@ -108,7 +108,7 @@
     <div class="span8 col-esq">
       
       <!-- destaque-home-simples -->
-      <div class="destaque-home-tv span9">
+      <!--div class="destaque-home-tv span9">
         <?php if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
             <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
@@ -117,16 +117,17 @@
             
             <div class="destaque span12">
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <a href="<?php $site->retriveUrl()?>/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif; ?>
-      </div>
+        <?php endif; ?> 
+      </div-->
       <!-- /destaque-home-simples -->
       
        <?php 
-       /*
+       /**/
+      ?>
        
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
     
@@ -271,8 +272,7 @@
       <!-- form interatividade -->
       
       <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-      */
-      ?>
+      
       
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>

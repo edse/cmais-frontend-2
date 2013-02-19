@@ -381,7 +381,7 @@
             <?php $tam=38; $str=$displays['destaque-clipes'][0]->getDescription() ; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
           </p> 
         </a>
-        <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
+        <a href="<?php $site->retriveUrl() ?>/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS"><i class="ico-mais"></i></a>
       </div> 
       <!-- /clipe -->
        
@@ -395,7 +395,7 @@
              <?php $tam=38; $str=$displays['destaque-clipes'][1]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
            </p>       
          </a>
-         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+         <a href="<?php $site->retriveUrl() ?>/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
            <i class="ico-mais"></i>
          </a>
        </div> 
@@ -411,7 +411,7 @@
              <?php $tam=38; $str=$displays['destaque-clipes'][2]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
            </p>
          </a> 
-         <a href="/cocorico2/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
+         <a href="<?php $site->retriveUrl() ?>/clipes-musicais" class="btn-ico-mais" title="CLIPES MUSICAIS">
            <i class="ico-mais"></i>
          </a>
        </div> 
