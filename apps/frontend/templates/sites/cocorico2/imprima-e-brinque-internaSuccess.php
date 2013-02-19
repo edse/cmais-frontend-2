@@ -116,7 +116,12 @@
           </div>
         </li>
         <?php $counter ++ ?>
+        
+        <?php if((count($counter_div))==(count($related_preview -1))): ?>
+        <?php else: ?>
         <?php $counter_div ++ ?>
+        <?php endif; ?>
+        
         <?php endforeach; ?>
 
         <?php endif; ?>
