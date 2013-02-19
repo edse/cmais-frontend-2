@@ -117,7 +117,12 @@
         </li>
         <?php $counter ++ ?>
         
-        <?php if((count($counter_div))==(count($related_preview -1))): ?>
+        <?php $counter_div = (int)(count($counter_div)) ?>
+        <?php $counter_preview = (int)(count($related_preview)) ?>
+        <?php $counter_preview_ = $counter_preview - 1 ?>
+          
+        
+        <?php if((count($counter_div))==(count($related_preview_))): ?>
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
