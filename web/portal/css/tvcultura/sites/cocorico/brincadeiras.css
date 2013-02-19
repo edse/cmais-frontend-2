@@ -7,7 +7,7 @@
 .tit-pagina span { background-position:-20px 0;}
 .tit-pagina .likes { background:#f9b236;  }
 
-.likes li { /*background:url(/portal/images/capaPrograma/cocorico/estrela-laranja.png) no-repeat; */float:right; }
+.likes li { /*background:url(/portal/images/capaPrograma/cocorico/estrela-laranja.png) no-repeat; float:right;*/ }
 .destaques .btn span { display:none; }
 .destaques a.span12 { padding-left:10px; height:24px; line-height: 24px; }
 .pagination .anterior:hover a,
