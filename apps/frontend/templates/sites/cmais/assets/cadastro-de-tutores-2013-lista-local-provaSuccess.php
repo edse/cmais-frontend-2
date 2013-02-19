@@ -7,7 +7,8 @@
 
     <style type="text/css">
     table a { color:#ff6633;margin-bottom:5px; display: block; } 
-    table h1 { font-size:20px; margin-top: 10px; }               
+    table h1 { font-size:20px; margin-top: 10px; }
+    table {margin-bottom:30px}               
     </style>
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -37,9 +38,11 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    
-                    
-                    <h5 style="margin-bottom: 10px;font-size:28px"><a name="aracatuba">Araçatuba</a></h5>
+                    <ul>
+                      <li><a href="aracatuba">Araçatuba</a></li>
+                    </ul>
+                    <a name="aracatuba"></a>
+                    <h5 style="margin-bottom: 10px;font-size:28px">Araçatuba</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada </p> 
                     <table style="width: 100%; margin-top:15px">
                       <thead>
