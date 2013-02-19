@@ -103,7 +103,7 @@
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
       <ul class="imprimir"> 
-      <?php $counter = 0 ?>
+      <?php $counter = 1 ?>
       <?php $counter_div = 1 ?>
       <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
