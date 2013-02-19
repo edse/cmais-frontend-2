@@ -100,10 +100,10 @@
       <?php if(count($related_preview)>0): ?>
        
         <li class="span4">                 
-          <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
+          <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
           <div id="div0" style="display: none;page-break-after:always;">
-            <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+            <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>  
         </li>
           
