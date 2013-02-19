@@ -122,7 +122,7 @@
         <?php $counter_preview_ = $counter_preview - 1 ?>
           
         
-        <?php if((count($counter_div))==(count($related_preview_))): ?>
+        <?php if((count($counter_div))==(count($counter_preview_))): ?>
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
@@ -131,6 +131,7 @@
 
         <?php endif; ?>
          </ul>
+         teste
         <?php endif; ?>
         <?php endif; ?>
 
