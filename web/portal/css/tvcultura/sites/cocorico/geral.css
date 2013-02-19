@@ -221,7 +221,7 @@ bold,
 .popover-content p {line-height:18px; }
 /*.likes { position:absolute; bottom:7px; right:7px; margin:0;  }*/
 .likes { background: #F2722F; bottom: 3px;  height: 20px;  margin-bottom: 0; margin-left: 0; margin-right: 0; overflow: hidden; position: absolute; right: 7px; width:95px;}
-.likes li { background:url(/portal/images/capaPrograma/cocorico/estrela.png) no-repeat; width:14px; height:14px; float:left; margin-right:5px; margin-top:3px;  }
+.likes li { background:url(/portal/images/capaPrograma/cocorico/ranking-estrela.png) no-repeat; width:14px; height:14px; float:left; margin-right:5px; margin-top:3px;  }
 .likes li.ativo {  background-image:url(/portal/images/capaPrograma/cocorico/estrela-ativa.png); }
 
 .destaques-small { margin:0; }
