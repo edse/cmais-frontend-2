@@ -230,3 +230,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .conteudo .tit { color:#F2722F; }
 
 .destaque2.box-radio { margin-bottom:10px; }
+
+.print.grd { max-width: 460px; max-height:259px; overflow:hidden; position:relative; display: block; }
+.print.grd img { max-width:460px; }
+.print.grd span {background: url("/portal/images/capaPrograma/cocorico/ico-imprimir.png") no-repeat scroll 0 0 transparent;    bottom: 5px;    display: block;    height: 14px;    position: absolute;    right: 5px;    width: 14px;}

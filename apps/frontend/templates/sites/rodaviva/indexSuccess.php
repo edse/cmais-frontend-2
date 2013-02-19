@@ -16,7 +16,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 
 <script type="text/javascript">
-/*
+
   //TIMER TRANSMISSAO
   function timer1(){
     var request = $.ajax({
@@ -31,6 +31,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
       url: '/ajax/timer'
     });
   }
+  /*
   function timer2(){
     var request = $.ajax({
       data: {
@@ -44,12 +45,13 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
       url: '/ajax/timer'
     });
   }
+  */
   $(window).load(function(){
     var t=setInterval("timer1()",60000);
-    var t=setInterval("timer2()",60000);
+    //var t=setInterval("timer2()",60000);
   });
   
-  */
+
   $(function(){
   
     // destaque principal
@@ -207,10 +209,10 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
           						<div class="ao-vivo">
           							<div id="aovivo"><img src="/portal/images/capaPrograma/rodaviva/img-transmissao-02.jpg" alt="Fique ligado!"></div>
           					   </div>
-          					   <!--script type="text/javascript">
+          					   <script type="text/javascript">
           					     timer1();
-          					     timer2();
-          					   </script-->
+          					     //timer2();
+          					   </script>
           						<?php /* 
           						<div class="ao-vivo">
                                   <?php if(date('H:i:s') >= '22:00:00' and date('H:i:s') <= '23:35:00'): ?>
