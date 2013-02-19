@@ -14,7 +14,7 @@
         </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->
-       <fb:like href="http://www3.tvcultura.com.br/cocorico2/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
+       <fb:like href="<?php echo $site->retriveUrl() ?>" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
     </div>
     <div class="divisoria span12"></div>
   </div>
