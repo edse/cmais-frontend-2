@@ -31,7 +31,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
 
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 <script>
-/*
+
   //TIMER TRANSMISSAO
   function timer1(){
     var request = $.ajax({
@@ -49,7 +49,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
   $(window).load(function(){
     var t=setInterval("timer1()",60000);
   });
-*/
+
   function stream1() {
     var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
     so.addVariable('controlbar', 'bottom');
