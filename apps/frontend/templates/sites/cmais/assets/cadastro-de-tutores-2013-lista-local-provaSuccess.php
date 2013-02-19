@@ -37,9 +37,9 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    <h5>Campinas</h5>
+                    <h5 style="margin-bottom: 10px;font-size:28px">Campinas</h5>
                     <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Dr. Manoel Afonso Ferreira, 245, Parque Nova Campinas</p> 
-                    <table style="width: 100%">
+                    <table style="width: 100%; margin-top:15px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
