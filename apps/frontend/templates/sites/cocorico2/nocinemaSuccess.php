@@ -22,7 +22,7 @@ if(isset($pager)){
         </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->
-       <fb:like href="http://www3.tvcultura.com.br/cocorico/" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
+       <fb:like href="<?php echo $site->retriveUrl() ?>" send="true" layout="button_count" width="450" show_faces="false" font="arial"></fb:like>
     </div>
     <div class="divisoria span12"></div>
   </div>
@@ -37,7 +37,7 @@ if(isset($pager)){
   
   <!--row lista-->
   <div id="agenda" class="row-fluid conteudo ">
-  <?php if(count($pager) > 0): ?>
+  <?php if(count($pager) > 0): ?> 
     <div class="span8">
       <!-- lista -->
       <ul class="lista">

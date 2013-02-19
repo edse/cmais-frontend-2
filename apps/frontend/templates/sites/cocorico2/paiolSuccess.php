@@ -77,7 +77,7 @@
 
         <div class="destaque span12">
           <span></span>
-          <a href="/cocorico2/clipes-musicais" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
+          <a href="<?php echo $site->retriveUrl() ?>/clipes-musicais" class="btn-destaque" title="Ver mais episódios completos">Assistir mais clipes</a>
           <span class="last"></span>
         </div>
     <?php endforeach; ?>   
@@ -104,10 +104,10 @@
        
          
         <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/cocorico-na-franca" title="Cocoricó na França">
+        <a href="<?php echo $site->retriveUrl() ?>/series/cocorico-na-franca" title="Cocoricó na França">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
+                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
             </div>
             <span>
               Cocoricó na França
@@ -117,10 +117,10 @@
         <!-- /item -->
         
         <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/toda-crianca-tem-direito">
+        <a href="<?php echo $site->retriveUrl() ?>/series/toda-crianca-tem-direito">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
+                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
             </div>
             <span>
               Toda Criança tem Direito
@@ -130,10 +130,10 @@
         <!-- /item -->
         
          <!-- item -->
-        <a href="http://cmais.com.br/cocorico2/series/se-liga-no-perigo">
+        <a href="<?php echo $site->retriveUrl() ?>/series/se-liga-no-perigo">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
+                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
             </div>
             <span>
               Se Liga no Perigo
@@ -195,7 +195,7 @@
       <!-- radio -->
       <div class="radio">
         <i class="icon-music"></i>
-        <a href="http://cmais.com.br/cocorico2/radio" title="Está no ar: rádio cocoricó!">Está no ar:<span>rádio cocoricó!</span></a>
+        <a href="<?php echo $site->retriveUrl() ?>/radio" title="Está no ar: rádio cocoricó!">Está no ar:<span>rádio cocoricó!</span></a>
         <span class="borda"></span>
       </div>
       <!-- /radio -->
