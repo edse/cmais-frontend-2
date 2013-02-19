@@ -102,11 +102,11 @@
        data-original-title="imprimir">
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
-      <ul class="imprimir"> 
+       <ul class="imprimir"> 
      
       <?php if(count($related_preview)>1): ?>
       <?php $counter = 1 ?>
-      <?php $counter_div = 0 ?>
+      <?php $counter_div = 2 ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         
         <li class="span4">
