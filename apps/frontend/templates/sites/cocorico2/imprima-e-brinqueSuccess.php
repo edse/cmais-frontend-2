@@ -1,5 +1,5 @@
 <?php
-$assets = $pager->getResults(); //depois tem de ordenar por ranking...
+$assets = $pager->getResults();
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>

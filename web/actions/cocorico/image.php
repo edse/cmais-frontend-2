@@ -20,8 +20,8 @@ if($_REQUEST["n"]!="")
 //$leftTextPos = ($width - imagefontwidth($fontSize)*strlen($text)) / 2;
 // Write the string
 //imagestring($im, $fontSize, $leftTextPos, $height-28, $text, $textColor);
-imagestring($im, 80, 18, 150, $text, $textColor);
-//imagettftext($im, 80, 0, 340, 485, $black, '/var/frontend/web/actions/cocorico/EmileeHandwriting.ttf', $text);
+//imagestring($im, 80, 18, 150, $text, $textColor);
+imagettftext($im, 40, 0, 340, 485, $black, '/var/frontend/web/actions/cocorico/handsean.ttf', $text);
 // Output the image
 header('Content-type: image/png');
 imagepng($im);

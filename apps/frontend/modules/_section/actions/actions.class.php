@@ -1386,9 +1386,10 @@ class _sectionActions extends sfActions
         //die('test');
         $pagelimit = 12;
         
-        if ($this->section->getSlug() == "receitinhas")
-          $pagelimit = 72;
         
+        if (in_array($this->section->getSlug(), array("receitinhas","imprima-e-brinque")))
+          $pagelimit = 72;
+
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);
         $this->pager->setPage($request->getParameter('page', 1));
