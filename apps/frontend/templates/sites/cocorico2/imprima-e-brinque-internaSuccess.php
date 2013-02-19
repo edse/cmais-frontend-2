@@ -106,7 +106,7 @@
      
       <?php if(count($related_preview)>1): ?>
       <?php $counter = 1 ?>
-      <?php $counter_div = 1 ?>
+      <?php $counter_div = 0 ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         
         <li class="span4">
