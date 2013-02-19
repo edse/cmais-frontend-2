@@ -39,7 +39,7 @@
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
                     <ul>
-                      <li><a href="aracatuba">Araçatuba</a></li>
+                      <li><a href="#aracatuba">Araçatuba</a></li>
                     </ul>
                     <a name="aracatuba"></a>
                     <h5 style="margin-bottom: 10px;font-size:28px">Araçatuba</h5>
