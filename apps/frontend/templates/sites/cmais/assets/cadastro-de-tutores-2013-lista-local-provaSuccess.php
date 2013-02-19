@@ -30,6 +30,7 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
                 <div class="contatoWrapper">
+                  <a name="topo"></a>
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Curso inglês Online</h3>
                   <p class="titu" style="margin-bottom:60px">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   <br />
@@ -43,6 +44,7 @@
                     </ul>
                     <a name="aracatuba"></a>
                     <h5 style="margin-bottom: 10px;font-size:28px">Araçatuba</h5>
+                    <a href="#topo" class="topo">Voltar ao topo</a>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada </p> 
                     <table style="width: 100%; margin-top:15px">
                       <thead>
