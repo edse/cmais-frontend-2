@@ -1,4 +1,5 @@
 /* menu familia */
+p a { color:#70AAB1; }
 .topo-familia .navbar .nav > li.familia { margin:5px 1% 0 20px; float:left; width: auto; }
 .topo-familia .navbar .nav > li { margin-top:5px; margin-right:10px; }
 .topo-familia .navbar .nav > li.familia a { width: 167px; margin:0; padding:0; }
