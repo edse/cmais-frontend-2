@@ -130,33 +130,20 @@
       ?>
        
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-           	
-      	<?php if(isset($displays['destaque-principal'])): ?>
-      	<?php if(count($displays['destaque-principal']) > 0): ?> 	
-      	  
-      	   
-      	  
-      	  <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
-      		
-             <div class="destaque-home-tv span9"> 
-            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
-            
-          <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
-            
-             <div class="destaque-home-tv span9"> 
-            <?php $related_image = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-            <?php if(count($related_image) > 0): ?> 
-          
-            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <img src="<?php echo $displays['destaque-principal'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>" class="promocao" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>">
-            
-            <?php endif; ?>
-            
+    
+      <div class="destaque-home-tv span9">
+    	
+          	
+      	<?php if(isset($displays['destaque-seu-video'])): ?>
+      	<?php if(count($displays['destaque-seu-video']) > 0): ?> 	
+      			
+        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
+        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
+        
+        <?php endif; ?>
         <?php endif; ?>
         
-         
-         <div class="destaque span12">
+        <div class="destaque span12">
           <span></span>
           <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
           <span class="last"></span>
@@ -283,8 +270,7 @@
  
       </div>
       <!-- form interatividade -->
-      <?php endif; ?>
-        <?php endif; ?>
+      
       <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       
       
