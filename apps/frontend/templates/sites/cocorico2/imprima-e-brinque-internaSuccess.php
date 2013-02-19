@@ -126,7 +126,7 @@
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
-        
+        <?php echo $counter_preview_?>
         <?php endforeach; ?>
 
         <?php endif; ?>
