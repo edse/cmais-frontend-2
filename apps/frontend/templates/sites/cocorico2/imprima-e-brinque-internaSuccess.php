@@ -118,7 +118,7 @@
         <?php $counter ++ ?>
         
         <?php $counter_div = (int)(count($counter_div)) ?>
-        <?php $counter_preview = (int)(count($d)) ?>
+        <?php $counter_preview = (int)(count($k)) ?>
         <?php $counter_preview_ = $counter_preview - 1 ?>
           
         
