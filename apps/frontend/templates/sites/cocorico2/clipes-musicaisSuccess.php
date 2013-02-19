@@ -10,7 +10,7 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('.destaques-small li:nth-child(6)').css('margin-right', '0');
-    $('.destaques-small li:nth-child(12)').css('margin-right', '0');
+    $('.destaques-small li:nth-child(36)').css('margin-right', '0');
   });
 </script>
 
