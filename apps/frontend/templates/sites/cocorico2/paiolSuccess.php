@@ -209,7 +209,7 @@
       <div class="bastidores span4">
         <div class="topo">
           <div class="bac-yellow">
-            <h3><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></h3>
+            <h3><a href= ""<?php echo $site->retrieveUrl() ?>/para-colorir"><i class="ico-colorir"></i> Para colorir <i class="ico-seta-titulo"></i></a></h3>
           </div>
           <a  href="<?php echo $displays['destaque-para-colorir'][0]->retriveUrl() ?>" title="" class="span6">
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-2-b') ?>" />
