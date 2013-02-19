@@ -62,8 +62,11 @@
             <div class="texto">
               <p>Neste mês de fevereiro, haverá uma reunião especial do Conselho Curador da Fundação Padre Anchieta. Durante dois dias, os conselheiros irão se reunir em um seminário com o objetivo de ampliar e aprofundar sua reflexão acerca dos desafios e rumos da radiodifusão pública. Para tanto, o Conselho Curador convidou pesquisadores, especialistas e gestores de instituições públicas e privadas das áreas de cultura, educação e comunicação para expor suas visões, trocar informações, debater cenários e ideias.</p>
               <p>Por se tratar de um encontro de trabalho, planejado de forma a permitir que os conselheiros disponham de tempo para debater, com cada palestrante, as questões que considerem mais relevantes, o evento não será aberto. Mas, para que todos os interessados possam acompanhar o evento, ele será transmitido em tempo real, pela internet.</p>
+              <!--
               <p>Para assistir ao seminário, bastará acessar <a href="http://cmais.com.br/seminario2013" alt="cmais.com.br/seminario2013">cmais.com.br/seminario2013</a>, nos próximos dias 25 e 26, das 9h às 18h.</p>
               <p>Aos que assistirem ao seminário pela internet e quiserem enviar um comentário sobre os temas em exposição e debate, pedimos que o encaminhem para a organização do evento pelo email <a  href="mailto:seminario@tvcultura.com.br" target="_blank">seminario@tvcultura.com.br</a>. Esse endereço ficará disponível para envio de comentários entre os dias 25 de fevereiro e 4 de março.</p>
+              -->
+              <p>Para assistir ao seminário, bastará acessar <a href="http://cmais.com.br/seminario2013" alt="cmais.com.br/seminario2013">cmais.com.br/seminario2013</a>, nos próximos dias 25 e 26, das 9h às 18h.</p>
               <p>Contamos com a sua audiência e com seu interesse em refletir conosco.</p>
               <p>Abraços fraternos.</p>
               <p><i><bold>João Sayad</bold><br/>Presidente Executivo da TV Cultura</i></p>
