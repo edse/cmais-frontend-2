@@ -119,10 +119,11 @@
         
         <?php $counter_div = (int)(count($counter_div)) ?>
         <?php $counter_down = (int)(count($related_download)) ?>
-        <?php $counter_down_ = $related_download - (int)1 ?>
+        <?php $counter_down_ = $counter_down - (int)1 ?>
           
         
         <?php if($counter_div == $counter_down_): ?>
+        <?php ?>
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
