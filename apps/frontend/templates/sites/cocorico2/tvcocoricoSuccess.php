@@ -140,7 +140,7 @@
       		
            
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
+            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
             
           <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
             
@@ -149,7 +149,7 @@
             <?php if(count($related_image) > 0): ?> 
           
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <img src="<?php echo $related_image ?>" class="promocao" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+            <img src="<?php echo $related_image ?>" class="promocao" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>">
             
             <?php endif; ?>
             
