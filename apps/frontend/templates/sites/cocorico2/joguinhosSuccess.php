@@ -74,6 +74,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     </div>
     <?php endif; ?>
   </div>
+  
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo destaques">
@@ -124,7 +125,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php endif; ?>
   </div>
   <!-- /row-->
-
+</div>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
