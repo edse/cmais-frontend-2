@@ -107,8 +107,8 @@
       <?php $counter_div = 2 ?>
       <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
+        
         <li class="span4">
-          
           <a href="javascript:printDiv('div<?php $counter_div ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$counter]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
           <div id="div<?php $counter_div ?>" style="display: none;page-break-after:always;">
@@ -116,17 +116,13 @@
           </div>
         </li>
         
-        
-        
-        
-        <?php endforeach; ?>
+      <?php endforeach; ?>
 
-        <?php endif; ?>
-         </ul>
-         teste 23 |
-         <?php echo $counter_down_?>
-        <?php endif; ?>
-        <?php endif; ?>
+      <?php endif; ?>
+        </ul>
+         
+      <?php endif; ?>
+      <?php endif; ?>
 
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
