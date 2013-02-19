@@ -97,7 +97,7 @@
         <!-- /enquete -->
         <!-- fale conosco cr-->
       </div>
-      <!-- /tv cocorico -->
+      <!-- /tv cocorico --> 
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
@@ -109,7 +109,22 @@
       
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
-        <?php if(isset($displays['destaque-seu-video'])): ?>
+        
+            <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
+            <h2>Concurso Cultural</h2>
+            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
+           
+            <div class="destaque span12">
+              <span></span>
+              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
+              <span class="last"></span>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        
+        <?php /*if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
             <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
             
@@ -121,7 +136,8 @@
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif; ?>
+        <?php endif;*/ ?>
+        
       </div>
       <!-- /destaque-home-simples -->
       
@@ -348,13 +364,13 @@
     <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
     
     <div class="span6 box-destaque tvcocorico">
-      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
-        <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
+      <h3><a href="<?php echo $site->retriveUrl() ?>/convidados">Convidados</a></h3>
+      <a href="<?php echo $site->retriveUrl() ?>/convidados"><img src="<?php echo $display_img_src ?>" alt="Convidados"></a>
+        <a href="<?php echo $site->retriveUrl() ?>/convidados">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-          <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          <?php $tam=32; $str="Veja quem já passou por aqui!"; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
         </a>
-      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+      <a href="<?php echo $site->retriveUrl() ?>/convidados" class="ico-mais"></a>
     </div>
     
     <!-- /Convidado Especial -->
