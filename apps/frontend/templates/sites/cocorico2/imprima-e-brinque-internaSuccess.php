@@ -118,11 +118,11 @@
         <?php $counter ++ ?>
         
         <?php $counter_div = (int)(count($counter_div)) ?>
-        <?php $counter_preview = (int)(count($related_preview)) ?>
-        <?php $counter_preview_ = $counter_preview - (int)1 ?>
+        <?php $counter_down = (int)(count($related_download)) ?>
+        <?php $counter_down_ = $related_download - (int)1 ?>
           
         
-        <?php if($counter_div == $counter_preview_): ?>
+        <?php if($counter_div == $counter_down_): ?>
         <?php else: ?>
         <?php $counter_div ++ ?>
         <?php endif; ?>
@@ -132,7 +132,7 @@
         <?php endif; ?>
          </ul>
          teste 23 |
-         <?php echo $counter_preview_?>
+         <?php echo $counter_down_?>
         <?php endif; ?>
         <?php endif; ?>
 
