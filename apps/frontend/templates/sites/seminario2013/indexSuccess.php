@@ -46,18 +46,17 @@
   <!-- /BARRA SITE -->
   <!-- MIOLO -->
   <div id="miolo">
-    <?php include_partial_from_folder('blocks','global/shortcuts')
-    ?>
+    <?php include_partial_from_folder('blocks','global/shortcuts')?>
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
       <!-- CAPA -->
       <div class="capa grid3">
         <!-- ESQUERDA -->
-        <div class="grid2" id="esquerda">
+        <div class="grid2" id="esquerda" style="width: 100%; margin-right: 15px;">
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
-            <p class="titulos">Conselho Curador convida especialistas para debater os desafios e rumos da radiodifusão pública </p>
+            <p class="titulos">Conselho Curador convida especialistas para debater os desafios e rumos da radiodifusão pública</p>
          
             <div class="texto">
               <p>Neste mês de fevereiro, haverá uma reunião especial do Conselho Curador da Fundação Padre Anchieta. Durante dois dias, os conselheiros irão se reunir em um seminário com o objetivo de ampliar e aprofundar sua reflexão acerca dos desafios e rumos da radiodifusão pública. Para tanto, o Conselho Curador convidou pesquisadores, especialistas e gestores de instituições públicas e privadas das áreas de cultura, educação e comunicação para expor suas visões, trocar informações, debater cenários e ideias.</p>
@@ -66,14 +65,8 @@
               <p>Para assistir ao seminário, bastará acessar <a href="http://cmais.com.br/seminario2013" alt="cmais.com.br/seminario2013">cmais.com.br/seminario2013</a>, nos próximos dias 25 e 26, das 9h às 18h.</p>
               <p>Aos que assistirem ao seminário pela internet e quiserem enviar um comentário sobre os temas em exposição e debate, pedimos que o encaminhem para a organização do evento pelo email <a  href="mailto:seminario@tvcultura.com.br" target="_blank">seminario@tvcultura.com.br</a>. Esse endereço ficará disponível para envio de comentários entre os dias 25 de fevereiro e 4 de março.</p>
               -->
-              <p>Para assistir ao seminário, bastará acessar <a href="http://cmais.com.br/seminario2013" alt="cmais.com.br/seminario2013">cmais.com.br/seminario2013</a>, nos próximos dias 25 e 26, das 9h às 18h.</p>
-              <p>Contamos com a sua audiência e com seu interesse em refletir conosco.</p>
-              <p>Abraços fraternos.</p>
-              <p><i><bold>João Sayad</bold><br/>Presidente Executivo da TV Cultura</i></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+              <p>Para assistir ao seminário, bastará acessar <a href="/seminario2013" alt="seminario2013">cmais.com.br/seminario2013</a>, nos próximos dias 25 e 26, das 9h às 18h.</p>
+              <p><a href="/seminario2013/programacao" alt="programação">Veja aqui a programação do Seminário TV Cultura 2013</a></p>
             </div>
           </div>
           <!-- /NOTICIA INTERNA -->
