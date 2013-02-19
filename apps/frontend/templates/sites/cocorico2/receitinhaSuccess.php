@@ -126,7 +126,7 @@ function vote(id){
         $('#btn_1').hide();
         $('#btn_2').show();
       }else{
-        alert('Erro!');
+        //alert('Erro!');
         $('#btn_1').show();
         $('#btn_2').hide();
       }
