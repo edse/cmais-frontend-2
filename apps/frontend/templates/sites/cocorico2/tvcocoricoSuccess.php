@@ -130,16 +130,15 @@
       ?>
        
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-    
-      
-    	
-          	
+           	
       	<?php if(isset($displays['destaque-principal'])): ?>
       	<?php if(count($displays['destaque-principal']) > 0): ?> 	
       	  
+      	   <div class="destaque-home-tv span9"> 
+      	  
       	  <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
       		
-            <div class="destaque-home-tv span9">
+           
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
             <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
             
@@ -150,9 +149,12 @@
             <?php if(count($related_image) > 0): ?> 
           
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>">
-          
+            <img src="<?php echo $related_image ?>" class="promocao" alt="<?php echo $displays["conteudos"][0]->getTitle() ?>">
+            
+            <?php endif; ?>
+            
         <?php endif; ?>
+        
          
          <div class="destaque span12">
           <span></span>
@@ -281,7 +283,8 @@
  
       </div>
       <!-- form interatividade -->
-      
+      <?php endif; ?>
+        <?php endif; ?>
       <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
       
       
