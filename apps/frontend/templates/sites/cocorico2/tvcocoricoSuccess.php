@@ -117,7 +117,7 @@
            
             <div class="destaque span12">
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
+              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
@@ -368,7 +368,7 @@
       <a href="<?php echo $site->retriveUrl() ?>/convidados"><img src="<?php echo $display_img_src ?>" alt="Convidados"></a>
         <a href="<?php echo $site->retriveUrl() ?>/convidados">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-          <?php $tam=28; $str="Veja quem já passou por aqui!"; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          <?php $tam=32; $str="Veja quem já passou por aqui!"; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
         </a>
       <a href="<?php echo $site->retriveUrl() ?>/convidados" class="ico-mais"></a>
     </div>
