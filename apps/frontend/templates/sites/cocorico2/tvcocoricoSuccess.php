@@ -148,7 +148,7 @@
             <?php if(count($related_image) > 0): ?> 
           
             <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
-            <img src="<?php echo $related_image->retriveImageUrlByImageUsage('image-5-b') ?>" class="promocao" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>">
+            <img src="<?php echo $displays['destaque-principal'][0]->Asset->retriveImageUrlByImageUsage('image-5-b') ?>" class="promocao" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>">
             
             <?php endif; ?>
             
