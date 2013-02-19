@@ -109,7 +109,22 @@
       
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
-        <?php if(isset($displays['destaque-seu-video'])): ?>
+        
+            <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
+            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
+            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
+           
+            <div class="destaque span12">
+              <span></span>
+              <a href="<?php $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
+              <span class="last"></span>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        
+        <?php /*if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
             <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
             
@@ -121,7 +136,8 @@
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif; ?>
+        <?php endif;*/ ?>
+        
       </div>
       <!-- /destaque-home-simples -->
       
