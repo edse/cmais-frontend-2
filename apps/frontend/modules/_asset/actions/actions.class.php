@@ -794,6 +794,7 @@ class _assetActions extends sfActions
           ->andWhere('a.is_active = ?', 1)
           ->orderBy('sa.display_order')
           ->execute();
+        $pagelimit = 36;
       }
       elseif($this->section->slug == "para-colorir") {
         if ($debug) print "<br>cocorico-17 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna';

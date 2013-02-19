@@ -41,7 +41,7 @@ $assets = $pager->getResults();
       <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[0]->getTitle() ?>">
         <span class=""></span>
         <?php //echo $favoritos[0]->getTitle() ?>
-        <?php $tam=32; $str=$favoritos[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+        <?php $tam=22; $str=$favoritos[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
       </a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $favoritos[0])) ?>
@@ -56,12 +56,12 @@ $assets = $pager->getResults();
       <a href="<?php echo $favoritos[1]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[1]->getTitle() ?>" >
         <span class=""></span>
         <?php //echo $favoritos[1]->getTitle() ?>
-        <?php $tam=32; $str=$favoritos[1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+        <?php $tam=22; $str=$favoritos[1]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
       </a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[1])) ?>
       <!--/RANKING -->
-    </div>
+    </div>    
     <?php endif; ?>
     
     <?php if(isset($favoritos[2])): ?>
@@ -71,7 +71,7 @@ $assets = $pager->getResults();
       <a href="<?php echo $favoritos[2]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[2]->getTitle() ?>" >
         <span class=""></span>
         <?php //echo $favoritos[2]->getTitle() ?>
-         <?php $tam=32; $str=$favoritos[2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
+         <?php $tam=22; $str=$favoritos[2]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
       </a>
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$favoritos[2])) ?>

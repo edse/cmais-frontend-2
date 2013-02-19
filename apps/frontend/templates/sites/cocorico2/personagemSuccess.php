@@ -36,7 +36,7 @@
   <!-- /breadcrumb-->
 
   <!--btn voltar-->
-  <a href="../personagens" class="voltar personagem">voltar<span class="divisao"></span></a>
+  <a href="javascript:window.history.go(-1)" class="voltar personagem">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
 
   <!--row-->

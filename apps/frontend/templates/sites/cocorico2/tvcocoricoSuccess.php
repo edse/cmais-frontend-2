@@ -348,11 +348,11 @@
     <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
     
     <div class="span6 box-destaque tvcocorico">
-      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
-        <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
+      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">Todos os Convidados</a></h3>
+      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $display_img_src ?>" alt="Veja quem já passou por aqui!"></a>
+        <a href=<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-          <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          <?php $tam=28; $str="Veja quem já passou por aqui!"; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
         </a>
       <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
     </div>
