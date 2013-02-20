@@ -206,6 +206,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .bastidores.span4 a { color:#fff; margin:15px 11px 0 2px; max-width:140px; max-height:105px; text-align:center; }
 .bastidores.span4 a:hover {text-decoration:none;  }
 .bastidores.span4 a.last { margin:15px 0 0; }
+.bastidores.span4 h3 a { color:#F2722F; }
 /* /home brincadeiras */
 
 /* ie*/
