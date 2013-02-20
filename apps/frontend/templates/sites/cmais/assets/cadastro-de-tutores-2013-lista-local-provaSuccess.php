@@ -39,14 +39,25 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
+                    
                     <ul>
                       <li><a href="#aracatuba">Araçatuba</a></li>
+                      <li><a href="#bauru">Bauru</a></li>
+                      <li><a href="#campinas">Campinas</a></li>
+                      <li><a href="#franca">Franca</a></li>
+                      <li><a href="#santos">Santos</a></li>
+                      <li><a href="#saojosedoriopreto">São José do Rio Preto</a></li>
+                      <li><a href="#saojosedoscampos">São José dos Campos</a></li>
+                      <li><a href="#saopaulo">São Paulo</a></li>
+                      <li><a href="#sorocaba">Sorocaba</a></li>
                     </ul>
+                    
+                    
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="aracatuba"></a>
-                    <h5 style="margin-bottom: 10px;font-size:28px">Araçatuba</h5>
-                    <a href="#topo" class="topo">Voltar ao topo</a>
+                    <h5 style="font-size:28px">Araçatuba</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada </p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -332,9 +343,11 @@
                     
                     
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">Bauru</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="bauru"></a>
+                    <h5 style="font-size:28px">Bauru</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Rua Luiz Levorato, 2-140 (acesso pela Rodovia Marechal Rondon, km 335), Chácaras Bauruenses</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -991,9 +1004,11 @@
                     </table>
                     
                     
-                    <h5 style="margin-bottom: 10px;font-size:28px">Campinas</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="campinas"></a>
+                    <h5 style="font-size:28px">Campinas</h5>
                     <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Dr. Manoel Afonso Ferreira, 245, Parque Nova Campinas</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -2420,9 +2435,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">Franca</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="franca"></a>
+                    <h5 style="font-size:28px">Franca</h5>
                     <p><strong>Local: </strong>FACULDADE DE DIREITO DE FRANCA<br />Avenida Major Nicácio, 2377, Bairro São José </p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -3077,9 +3094,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">Presidente Prudente</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="presidenteprudente"></a>
+                    <h5 style="font-size:28px">Presidente Prudente</h5>
                     <p><strong>Local: </strong>UNITOLEDO<br />Praça Raul Furquim, 09, Vila Furquim</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -3378,9 +3397,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">Santos</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="santos"></a>
+                    <h5 style="font-size:28px">Santos</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA) CAMPUS II – RANGEL<br />Avenida Francisco Manoel s/n. Vila Mathias</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -3786,9 +3807,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">São Jose do Rio Preto</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="saojosedoriopreto"></a>
+                    <h5 style="font-size:28px">São Jose do Rio Preto</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Av. Pres. Juscelino Kubitschek de Oliveira - Jardim Tarraf II</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -4378,9 +4401,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">São Jose dos Campos</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="saojosedoscampos"></a>
+                    <h5 style="font-size:28px">São Jose dos Campos</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Rodovia Presidente Dutra, km 157,5, Pista Sul</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -4863,9 +4888,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">São Paulo</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="saopaulo"></a>
+                    <h5 style="font-size:28px">São Paulo</h5>
                     <p><strong>Local: </strong>PUC-SP<br />Rua Ministro de Godoy, 969, Perdizes</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -10524,9 +10551,11 @@
 
 
 
-                    <h5 style="margin-bottom: 10px;font-size:28px">Sorocaba</h5>
+                    <a href="#" class="topo">Voltar ao topo</a>
+                    <a name="sorocaba"></a>
+                    <h5 style="font-size:28px">Sorocaba</h5>
                     <p><strong>Local: </strong>PUC-SP<br />Rua Joubert Wey, 290, Jardim Vergueiro</p> 
-                    <table style="width: 100%; margin-top:15px">
+                    <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
