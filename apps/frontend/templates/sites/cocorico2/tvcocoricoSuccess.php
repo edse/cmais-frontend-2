@@ -600,7 +600,7 @@ $(document).ready(function(){
           minlength: 3
         },
         nome_resp:{
-          required:true
+          required:true,
           minlength: 3
         },
         arquivo:{
