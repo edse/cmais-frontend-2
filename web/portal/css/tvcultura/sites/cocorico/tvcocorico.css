@@ -50,7 +50,7 @@
 .interatividade .form-campos{padding:5px 0;position: relative;}
 .interatividade .form-campos #file,
 .interatividade .form-campos input,
-.interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
+.interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 18px; line-height:18px; height:18px !important; margin-bottom:5px }
 .interatividade #form-contato label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
 .interatividade #form-contato select.error, 
 .interatividade #form-contato label.error,
