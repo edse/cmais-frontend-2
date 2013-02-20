@@ -103,7 +103,7 @@
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
        <ul class="imprimir"> 
-     
+     <?php echo count($related_preview) ?>
       <?php if(count($related_preview)>1): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>  
         
