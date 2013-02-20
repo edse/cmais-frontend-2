@@ -46,8 +46,8 @@ if(!isset($asset))
       <?php if(count($displays['destaques']) > 0): ?>  
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
-        
-         <center></center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
+         <center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
+       </div> 
         <?php /*
         <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
@@ -109,7 +109,7 @@ if(!isset($asset))
   <?php endif; ?>
   <!-- /row-->
   
-  <?php */ ?>
+  
 </div>
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
@@ -156,11 +156,13 @@ if(!isset($asset))
     </a> 
     <?php endif; ?>
    <?php endif; ?>
+    <?php */ ?>
     
-   </div>  
-    * 
-    */ ?>
-  
+ <?php endif; ?>
+ <?php endif; ?>
+ <?php endif; ?>
+ <?php endif; ?>
+ </div> 
   <!-- /row-->
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
