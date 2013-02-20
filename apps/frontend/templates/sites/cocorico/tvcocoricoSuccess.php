@@ -248,7 +248,7 @@
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <div id="msgAcerto" style="display:none;">
-          <p>Seu desenho foi enviado com sucesso! Obrigada por participar! :)</p>
+          <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
                    
         </div>
         <div id="msgErro" style="display:none;">
