@@ -212,7 +212,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="file" type="file" name="datafile" size="25">
+              <input id="file" type="file" name="arquivo" size="25">
             </div>
          
            
@@ -609,6 +609,9 @@ $(document).ready(function(){
           required:true
         },
         concorda:{
+          required: true
+        }
+        arquivo:{
           required: true
         }
       },
