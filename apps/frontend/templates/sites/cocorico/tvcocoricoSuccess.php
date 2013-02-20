@@ -149,9 +149,10 @@
           </div>
         </div>
         <form id="form-contato" method="post" action="">
-          <p>
+          <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
-          </p>
+          </p-->
+          <p>Solte sua imaginação e desenhe sua magrela. Você pode ganhar uma bicicleta do Júlio!</p>
           <div class="row-fluid form-campos">
             
             
