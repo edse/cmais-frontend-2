@@ -46,7 +46,6 @@ if(!isset($asset))
       <?php if(count($displays['destaques']) > 0): ?>  
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
-        
          <center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
        </div> 
         <?php /*
