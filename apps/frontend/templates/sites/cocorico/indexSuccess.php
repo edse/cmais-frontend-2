@@ -16,14 +16,14 @@
       interval : 3000
     });
     $("button#fechar , body").click(function() {
-      $('#myModal').hide();
+      $('#modal-video').hide();
       $('.modal-backdrop').hide();
     });
   })
   
 </script>
 <!-- Modal -->
-<div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="modal-video" class="modal fade in" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
