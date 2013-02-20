@@ -72,8 +72,9 @@ if(!isset($asset))
         </a>
         <?php $se = $displays["destaques"][1]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays["destaques"][1]->Asset->Sections[0]->getSlug(); ?>
-        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se_link ?>"><i class="ico-mais"></i></a>
-      </div> 
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se ?>">
+          <i class="ico-mais"></i>
+        </a>
       </div> 
       <!-- /clipe -->
        
@@ -88,7 +89,10 @@ if(!isset($asset))
           </p>
         </a> 
         <?php $se = $displays["destaques"][2]->Asset->Sections[0]->getTitle(); ?>
-        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se_link ?>"><i class="ico-mais"></i></a>
+        <?php $se_link = $displays["destaques"][2]->Asset->Sections[0]->getSlug(); ?>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="btn-ico-mais" title="<?php echo $se ?>">
+          <i class="ico-mais"></i>
+        </a>
       </div> 
       <!-- /clipe -->
        
