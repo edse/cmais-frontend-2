@@ -53,8 +53,8 @@
                     </ul>
                     
                     
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="aracatuba"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Araçatuba</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada </p> 
                     <table style="width: 100%; margin-top:35px">
@@ -343,8 +343,8 @@
                     
                     
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="bauru"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Bauru</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Rua Luiz Levorato, 2-140 (acesso pela Rodovia Marechal Rondon, km 335), Chácaras Bauruenses</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -1004,8 +1004,8 @@
                     </table>
                     
                     
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="campinas"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Campinas</h5>
                     <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Dr. Manoel Afonso Ferreira, 245, Parque Nova Campinas</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -2435,8 +2435,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="franca"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Franca</h5>
                     <p><strong>Local: </strong>FACULDADE DE DIREITO DE FRANCA<br />Avenida Major Nicácio, 2377, Bairro São José </p> 
                     <table style="width: 100%; margin-top:35px">
@@ -3094,8 +3094,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="presidenteprudente"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Presidente Prudente</h5>
                     <p><strong>Local: </strong>UNITOLEDO<br />Praça Raul Furquim, 09, Vila Furquim</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -3397,8 +3397,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="santos"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Santos</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA) CAMPUS II – RANGEL<br />Avenida Francisco Manoel s/n. Vila Mathias</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -3807,8 +3807,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="saojosedoriopreto"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São Jose do Rio Preto</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Av. Pres. Juscelino Kubitschek de Oliveira - Jardim Tarraf II</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -4401,8 +4401,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="saojosedoscampos"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São Jose dos Campos</h5>
                     <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Rodovia Presidente Dutra, km 157,5, Pista Sul</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -4888,8 +4888,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="saopaulo"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São Paulo</h5>
                     <p><strong>Local: </strong>PUC-SP<br />Rua Ministro de Godoy, 969, Perdizes</p> 
                     <table style="width: 100%; margin-top:35px">
@@ -10551,8 +10551,8 @@
 
 
 
-                    <a href="#" class="topo">Voltar ao topo</a>
                     <a name="sorocaba"></a>
+                    <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Sorocaba</h5>
                     <p><strong>Local: </strong>PUC-SP<br />Rua Joubert Wey, 290, Jardim Vergueiro</p> 
                     <table style="width: 100%; margin-top:35px">
