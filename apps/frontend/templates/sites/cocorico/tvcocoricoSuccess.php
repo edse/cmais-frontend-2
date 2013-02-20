@@ -213,7 +213,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="file" type="file" name="datafile" size="25">
+              <input id="datafile" type="file" name="datafile" size="25">
             </div>
          
            
@@ -397,7 +397,10 @@ $(document).ready(function(){
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({
+      
       submitHandler: function(form){
+        form.submit();
+        /*
         $.ajax({
           type: "POST",
           dataType: "text",
@@ -421,7 +424,8 @@ $(document).ready(function(){
               $("#msgErro").show();
             }
           }
-        });         
+        });
+        */         
       },
       rules:{
         nome:{
