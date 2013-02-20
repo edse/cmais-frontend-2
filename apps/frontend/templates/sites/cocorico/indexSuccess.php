@@ -28,7 +28,7 @@
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
     </button>
-    <iframe width="853" height="480" src="http://www.youtube.com/embed/_SpdG5nkNds?rel=0?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="http://www.youtube.com/embed/_SpdG5nkNds?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 <!-- /Modal -->
