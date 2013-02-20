@@ -106,7 +106,7 @@
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
-      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>  
+      <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>  
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
         
@@ -157,8 +157,7 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
-          <?php if($_REQUEST['success'] == "1" || $_REQUEST['erro'] == "1"): ?>
+        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -258,7 +257,6 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-          <?php endif; ?>
         <?php endif; ?>
         
         <?php if(isset($_REQUEST['success'])): ?>
