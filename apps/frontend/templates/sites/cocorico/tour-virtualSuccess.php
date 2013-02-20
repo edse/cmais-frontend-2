@@ -1,3 +1,4 @@
+
 <?php 
 if(isset($pager)){
   $assets = $pager->getResults();
@@ -38,17 +39,14 @@ if(!isset($asset))
   <!--row-->
   <?php if(isset($displays['tour-virtual'])):?>
   <?php if(count($displays['tour-virtual']) > 0): ?>
-  <div id="box-destaque" class="row-fluid conteudo">  	
+  <div id="box-destaque" class="row-fluid conteudo">    
     <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
-    <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p>
+    <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do CocoricÃ³! Confira mais clipes aqui:</p>
     <div class="row-fluid relacionados">
     <?php if(isset($displays['destaques'])):?>
-      <?php if(count($displays['destaques']) > 0): ?>  
+      <?php if(count($displays['destaques']) > 0): ?> 
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
-         <center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
-       </div> 
-        <?php /*
         <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
           <img alt="<?php echo $displays['destaques'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaques'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
@@ -101,18 +99,23 @@ if(!isset($asset))
        
       <?php endif; ?>
     <?php endif; ?> 
-     ?>
     </div>
     <!-- /row clipes relacionados -->
   </div>
   <?php endif; ?>
+  <?php else: ?>
+  <div id="box-destaque" class="row-fluid conteudo">    
+    <p>
+      <iframe allowfullscreen="" frameborder="0" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0#t=0m0s" title="<?php echo $asset->getTitle()?>" width="940"></iframe>
+    </p>
+  </div>
   <?php endif; ?>
+
   <!-- /row-->
   
-  
-</div>
+  <?php /*
   <div class="row-fluid conteudo erros">
-    <p class="tit">Assista também:</p>
+    <p class="tit">Assista tambÃ©m:</p>
    
   <?php if(isset($displays['destaque-1'])):?>
     <?php if(count($displays['destaque-1']) > 0): ?>
@@ -130,8 +133,8 @@ if(!isset($asset))
   <!-- ** DESTAQUE 2 **-->
     
    <?php if(isset($displays['destaque-2'])):?>
-  	<?php if(count($displays['destaque-2']) > 0): ?>
-  	 
+    <?php if(count($displays['destaque-2']) > 0): ?>
+     
       <a class="span4 destaque1" title="titulo" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-2'][0]->Asset->getTitle() ?></h3>
@@ -145,8 +148,8 @@ if(!isset($asset))
      <!-- ** DESTAQUE 3 **-->
     
    <?php if(isset($displays['destaque-3'])):?>
-  	<?php if(count($displays['destaque-3']) > 0): ?>
-  	 
+    <?php if(count($displays['destaque-3']) > 0): ?>
+     
       <a class="span4 destaque1 last" title="titulo" href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"> 
       <div class="destaque-1 conteudo-tv">
         <h3><?php echo $displays['destaque-3'][0]->Asset->getTitle() ?></h3>
@@ -156,18 +159,15 @@ if(!isset($asset))
     </a> 
     <?php endif; ?>
    <?php endif; ?>
-    <?php */ ?>
     
- <?php endif; ?>
- <?php endif; ?>
- <?php endif; ?>
- <?php endif; ?>
- </div> 
- </div> 
+   </div>  
+    * 
+    */ ?>
+  
   <!-- /row-->
-  <!-- rodapé-->
+  <!-- rodapÃ©-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-  <!--/rodapé-->
+  <!--/rodapÃ©-->
 </div>
 <!-- /container-->
