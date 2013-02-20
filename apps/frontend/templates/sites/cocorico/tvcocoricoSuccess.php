@@ -115,9 +115,10 @@
             <h2>Concurso Cultural</h2>
             <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
            
-            <div class="destaque span12">
+            <div class="destaque span12" style="position:relative; display: none;">
               <span></span>
-              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
+              <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
+              <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
               <span class="last"></span>
             </div>
           <?php endif; ?>
@@ -140,43 +141,16 @@
         
       </div>
       <!-- /destaque-home-simples -->
-      
-       <?php 
-       /*
-       
-      <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-    
-      <div class="destaque-home-tv span9">
-      
-            
-        <?php if(isset($displays['destaque-seu-video'])): ?>
-        <?php if(count($displays['destaque-seu-video']) > 0): ?>  
-            
-        <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
-        <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>" frameborder="0" allowfullscreen></iframe>
-        
-        <?php endif; ?>
-        <?php endif; ?>
-        
-        <div class="destaque span12">
-          <span></span>
-          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
-          <span class="last"></span>
-        </div>
-      </div>
       <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
         <div class="topo">
           <div class="bac-yellow">
-            <h3>
-              <?php echo $displays['destaque-seu-video'][0]->getTitle(); ?>
-              <i class="ico-seta-titulo video"></i>
-            </h3>
+            <h2>Concurso Cultural</h2>
           </div>
         </div>
         <form id="form-contato" method="post" action="">
           <p>
-            <?php echo $displays['destaque-seu-video'][0]->getDescription(); ?>
+            <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p>
           <div class="row-fluid form-campos">
             
@@ -238,7 +212,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <label>Seu desenho de bicicleta<input type="file" name="datafile" size="40"></label>  
+              <input id="file" type="file" name="datafile" size="25">
             </div>
          
            
@@ -268,7 +242,7 @@
           </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
-          <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
+          <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
@@ -284,11 +258,6 @@
         </div>  
  
       </div>
-      <!-- form interatividade -->
-      
-      <!--  /FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-      */
-      ?>
       
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
@@ -419,20 +388,6 @@ $(document).ready(function(){
   $('#votar-input').click(function(){
     $('label.error').css('display','none');
   });
-  //valida form
-  var validator = $('.form-voto').validate({
-    submitHandler: function(form){
-      sendAnswer()
-    },
-    rules:{
-        opcao:{
-          required: true
-        }
-      },
-      messages:{
-        opcao: ""
-      }
-    });
 });
 
 </script>
@@ -480,18 +435,17 @@ $(document).ready(function(){
           required: true,
           minlength: 3
         },
-        email:{
-          required:true
-        },
         nome_resp:{
-          required:true
+          required:true,
+          minlength: 3
         },
-        desenho:{
+        arquivo:{
           required:true
         },
         concorda:{
           required: true
         }
+        
       },
       messages:{
         nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
