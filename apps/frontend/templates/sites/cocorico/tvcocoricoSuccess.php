@@ -144,7 +144,7 @@
       <!-- form interatividade --> 
       
       <div class="destaque-home-tv interatividade span9"<?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?> style="display: none;"<?php endif; ?>>
-        <div class="topo">
+        <div class="topo"><!-- 1 -->
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
