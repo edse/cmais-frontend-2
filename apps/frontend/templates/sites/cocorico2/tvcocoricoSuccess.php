@@ -599,11 +599,9 @@ $(document).ready(function(){
           required: true,
           minlength: 3
         },
-        email:{
-          required:true
-        },
         nome_resp:{
           required:true
+          minlength: 3
         },
         arquivo:{
           required:true
