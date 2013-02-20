@@ -28,7 +28,7 @@
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Curso inglês Online</h3>
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   
-                  <div class="msgErro" style="display:none; min-height: 80px  ">
+                  <div class="msgErro" style="min-height: 80px  ">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Atenção – Leia as orientações para a realização da prova escrita!</p>
