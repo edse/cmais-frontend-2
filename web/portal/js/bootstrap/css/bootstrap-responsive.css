@@ -58,6 +58,7 @@
 .hidden-desktop {
   display: none;
 }
+/*
 @media (max-width: 767px) {
   .visible-phone {
     display: block;
@@ -171,7 +172,7 @@
     /* Make inputs at least the height of their button counterpart */
   
     /* Makes inputs behave like true block-level elements */
-  
+ /* 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -684,3 +685,4 @@
     margin-left: 30px;
   }
 }
+*/
