@@ -102,32 +102,34 @@
        data-original-title="imprimir">
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
-      <ul class="imprimir"> 
+       <ul class="imprimir"> 
+     
+      <?php if(count($related_preview)>1): ?>
       <?php $counter = 1 ?>
       <?php $counter_div = 2 ?>
-      <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
-        <li class="span4">
-          
+        
+        <li class="span4"> 
           <a href="javascript:printDiv('div<?php $counter_div ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$counter]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
           <div id="div<?php $counter_div ?>" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
-        
-        
-        
-        
-        <?php endforeach; ?>
+      <?php $counter ++ ?>
+      <?php if((count($counter_div))==(count($related_preview))): ?>
+      <?php else: ?>
+      <?php $counter_div ++ ?>
+      <?php endif; ?>
+      <?php endforeach; ?>
 
-        <?php endif; ?>
-         </ul>
-         teste 23 |
-         <?php echo $counter_down_?>
-        <?php endif; ?>
-        <?php endif; ?>
-
+      <?php endif; ?>
+      
+      </ul>
+         
+      <?php endif; ?>
+      <?php endif; ?>
+teste
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
