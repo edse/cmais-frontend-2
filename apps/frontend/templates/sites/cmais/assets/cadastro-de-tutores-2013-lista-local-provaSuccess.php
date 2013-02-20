@@ -9,9 +9,9 @@
     table a { color:#ff6633;margin-bottom:5px; display: block; } 
     table h1 { font-size:20px; margin-top: 10px; }
     table {margin-bottom:50px}
-    .topo {float:right; color:#f90}
+    .topo {float:right; color:#f60}
     .locais {margin-bottom:50px}
-    .locais a {color:#f90}               
+    .locais a {color:#f60}               
     </style>
     <!-- CAPA SITE -->
     <div id="capa-site">
