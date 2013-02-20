@@ -10,7 +10,7 @@
  */
 class _sectionActions extends sfActions
 {
-  /**
+  /** 
   * Executes index action
   *
   * @param sfRequest $request A request object
