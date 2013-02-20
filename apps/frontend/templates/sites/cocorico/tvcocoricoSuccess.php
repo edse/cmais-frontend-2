@@ -148,7 +148,8 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="">
+        <?php if(!$_REQUEST['success'] && !$_REQUEST['erro']): ?>
+        <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
@@ -213,7 +214,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="file" type="file" name="datafile" size="25">
+              <input id="datafile" type="file" name="datafile" size="25">
             </div>
          
            
@@ -247,16 +248,21 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <div id="msgAcerto" style="display:none;">
+        <?php endif; ?>
+        <?php if($_REQUEST['success']): ?>
+        <div id="msgAcerto">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
                    
         </div>
-        <div id="msgErro" style="display:none;">
+        <?php endif; ?>
+        <?php if($_REQUEST['erro']): ?>
+        <div id="msgErro">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
         </div>  
+        <?php endif; ?>
  
       </div>
       
@@ -397,7 +403,10 @@ $(document).ready(function(){
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({
+      
       submitHandler: function(form){
+        form.submit();
+        /*
         $.ajax({
           type: "POST",
           dataType: "text",
@@ -421,7 +430,8 @@ $(document).ready(function(){
               $("#msgErro").show();
             }
           }
-        });         
+        });
+        */         
       },
       rules:{
         nome:{

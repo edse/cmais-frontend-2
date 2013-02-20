@@ -17,7 +17,7 @@
     });
     $("button#fechar , body").click(function() {
       $('#modal-video').remove();
-      $('.modal-backdrop').remove();
+      $('.modal-backdrop.bg-video').remove();
     });
 
     openModal();
@@ -27,7 +27,7 @@
       console.log(value);
       if(!value){
         setCookie('modalcocorico', 1);
-        $('.modal-backdrop').fadeIn('fast');
+        $('.modal-backdrop.bg-video').fadeIn('fast');
         $('#modal-video').fadeIn('fast');
       }
     }
@@ -54,7 +54,7 @@
   })
 </script>
 <!-- Modal -->
-<div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="modal-video" class="modal" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
   <div class="modal-header">
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
@@ -63,6 +63,7 @@
   </div>
 </div>
 <!-- /Modal -->
+
 
 <!-- container-->
 <div class="container tudo">
@@ -321,4 +322,4 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-<div class="modal-backdrop hide"></div>
+<div class="modal-backdrop bg-video"></div>

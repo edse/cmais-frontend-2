@@ -26,15 +26,15 @@
       </ul>
     </div>
     <div class="span2">
-      <a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/emfamilia', '#myModal a.adulto');" class="bold" data-toggle="modal" title="Em família">em família</a>
+      <a href="<?php echo $siteUrl ?>/emfamilia" class="bold" title="Em família">em família</a>
       <ul>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/natv', '#myModal a.adulto');" data-toggle="modal"  title="Na TV">Na TV</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/naslojas', '#myModal a.adulto');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('http://cocoricoshow.com.br/', '#myModal a.adulto');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/nocinema', '#myModal a.adulto');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/naweb', '#myModal a.adulto');" data-toggle="modal" title="Na Web">Na Web</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/agenda', '#myModal a.adulto');" data-toggle="modal" title="Agenda">Agenda</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('http://www2.tvcultura.com.br/faleconosco/', '#myModal a.adulto');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li>
+        <li><a href="<?php echo $siteUrl ?>/natv" title="Na TV">Na TV</a></li>
+        <li><a href="<?php echo $siteUrl ?>/naslojas" title="Nas lojas">Nas lojas</a></li>
+        <li><a href="http://cocoricoshow.com.br/" title="No Teatro" target="_blank">No Teatro</a></li>
+        <li><a href="<?php echo $siteUrl ?>/nocinema" title="Nos Cinemas">No Cinema</a></li>
+        <li><a href="<?php echo $siteUrl ?>/naweb" title="Na Web">Na Web</a></li>
+        <li><a href="<?php echo $siteUrl ?>/agenda" title="Agenda">Agenda</a></li>
+        <li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
       </ul>
     </div>
     

@@ -20,7 +20,7 @@
           <li class="personagens"><a href="<?php echo $site->retriveUrl() ?>/personagens" class="btn-tooltip" rel="tooltip" data-placement="bottom" data-original-title="ver todos"></a></li>
         </ul>
       </div>
-     
+      
     </div>
   </div>
   <!-- /menu em familia -->
