@@ -74,8 +74,7 @@
             
       <?php $counter = 0 ?>
       <?php $counter_div = 1 ?>
-      <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
-      <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
+
       <?php if(count($related_preview)>0): ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         <li class="span4">
