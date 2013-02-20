@@ -71,7 +71,7 @@ class _assetActions extends sfActions
         ->orderby('s.parent_section_id desc')
         ->fetchOne();
 
-			if(in_array($this->site->getSlug(), array("radarcultura","culturafm","cocorico2"))) {
+			if(in_array($this->site->getSlug(), array("radarcultura","culturafm","cocorico"))) {
         $this->setLayout('radarcultura');
         if(!$this->section){
           $se = $this->asset->Sections;
@@ -641,7 +641,7 @@ class _assetActions extends sfActions
 	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
 			}
     }
-    elseif($this->site->getSlug() == "cocorico2") {
+    elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
       
       if($this->section->slug == "joguinhos") {
