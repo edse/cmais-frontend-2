@@ -17,7 +17,7 @@
     });
     $("button#fechar , body").click(function() {
       $('#modal-video').remove();
-      $('.modal-backdrop').remove();
+      $('.modal-backdrop.bg-video').remove();
     });
 
     openModal();
@@ -27,7 +27,7 @@
       console.log(value);
       if(!value){
         setCookie('modalcocorico', 1);
-        $('.modal-backdrop').fadeIn('fast');
+        $('.modal-backdrop.bg-video').fadeIn('fast');
         $('#modal-video').fadeIn('fast');
       }
     }
@@ -321,4 +321,4 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-<div class="modal-backdrop hide"></div>
+<div class="modal-backdrop bg-video hide"></div>
