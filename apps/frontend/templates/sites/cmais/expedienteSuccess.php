@@ -65,7 +65,6 @@
               <h2>Design e Criação</h2>
               <p>
                 Ariane Corniani<br/>
-                Caroline Malinowski<br/>
                 Debora Soares<br/>
                 Giuliana Xavier<br/>
               </p><br/>  
@@ -79,6 +78,7 @@
                 Pedro Nakano<br/>
                 Priscila Lima<br/>
                 Thábata Mondoni<br/>
+                Mariana Amorim<br/>
               </p><br/>  
 
               <h2>Desenvolvimento e Programação</h2>
