@@ -1,5 +1,5 @@
 <?php
-header("Location: http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutores-2013-segunda-etapa");
+header("Location: http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutores-2013-orientacao-prova-escrita");
 die();
 
 

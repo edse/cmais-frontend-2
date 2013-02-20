@@ -28,6 +28,7 @@
 .bastidores .topo{background: url(/portal/images/capaPrograma/cocorico/divisoria-tvcoco.png) repeat-x 0 bottom;height: 40px;}
 .interatividade .topo .bac-yellow,
 .bastidores .topo .bac-yellow{background-color:#fdf035;border-top-right-radius: 8px;border-top-left-radius: 8px;}
+.interatividade .topo .bac-yellow h2 { color:#1DB186}
 .interatividade .topo span,
 .bastidores .topo span{width:100%; background-color:#fdf035;}
 .bastidores .topo h3 i.ico-camera{background: url(/portal/images/capaPrograma/cocorico/topo-bastidores.png) no-repeat 0px -2px;width: 25px;height: 23px;display: block;float: left;}
@@ -47,13 +48,13 @@
 .interatividade p {color:#FFF;}
 .interatividade form {padding:5px 10px;}
 .interatividade .form-campos{padding:5px 0;position: relative;}
-.interatividade .form-campos .btn-file,
+.interatividade .form-campos #file,
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
-.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
-.interatividade .form-campos select.error, 
-.interatividade label.error,
-.interatividade .form-campos input.error { background:#ef372d; color:#fff !important;}
+.interatividade #form-contato label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
+.interatividade #form-contato select.error, 
+.interatividade #form-contato label.error,
+.interatividade #form-contato input.error { border:2px solid #ef372d; color:#ef372d;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
@@ -77,8 +78,9 @@
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
-.interatividade .form-campos .btn-file,
-.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
+.interatividade .form-campos .file { color:#747B3A; text-transform:uppercase }
+.interatividade #file,
+.interatividade #enviar {background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:61px; overflow:auto; color:#747b3a;padding:5px 10px;}
 .interatividade .regras p { color:#747b35;}
 .interatividade .form-campos .btn-file { margin:0; float:left; }
