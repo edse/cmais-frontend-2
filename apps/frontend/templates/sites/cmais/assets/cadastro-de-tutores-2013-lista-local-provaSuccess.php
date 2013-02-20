@@ -1010,7 +1010,7 @@
                     <a name="campinas"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Campinas</h5>
-                    <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Dr. Manoel Afonso Ferreira, 245, Parque Nova Campinas</p> 
+                    <p><strong>Local: </strong>COLÉGIO SAGRADO CORAÇÃO DE JESUS<br />Rua Madre Maria Santa Margarida, 270, bairro Nova Campinas</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -2441,7 +2441,7 @@
                     <a name="franca"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Franca</h5>
-                    <p><strong>Local: </strong>FACULDADE DE DIREITO DE FRANCA<br />Avenida Major Nicácio, 2377, Bairro São José </p> 
+                    <p><strong>Local: </strong>FACULDADE DE DIREITO DE FRANCA<br />Avenida Major Nicácio, 2377, bairro São José </p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -4894,7 +4894,7 @@
                     <a name="saopaulo"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São Paulo</h5>
-                    <p><strong>Local: </strong>PUC-SP<br />Rua Ministro de Godoy, 969, Perdizes</p> 
+                    <p><strong>Local: </strong>PUC-SP (PONTÍFICA UNIVERSIDADE CATÓLICA DE SÃO PAULO)<br />Rua Ministro de Godoy, 969, Perdizes</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -10557,7 +10557,7 @@
                     <a name="sorocaba"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Sorocaba</h5>
-                    <p><strong>Local: </strong>PUC-SP<br />Rua Joubert Wey, 290, Jardim Vergueiro</p> 
+                    <p><strong>Local: </strong>PUC-SP (PONTÍFICA UNIVERSIDADE CATÓLICA DE SÃO PAULO)<br />Rua Joubert Wey, 290, bairro Lajeado</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
