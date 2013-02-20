@@ -212,7 +212,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input class="file" type="file" name="datafile" size="25">
+              <input id="file" type="file" name="datafile" size="25">
             </div>
          
            
