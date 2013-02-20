@@ -48,6 +48,7 @@
 .interatividade p {color:#FFF;}
 .interatividade form {padding:5px 10px;}
 .interatividade .form-campos{padding:5px 0;position: relative;}
+.interatividade .form-campos #file { margin:0; }
 .interatividade .form-campos #file,
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 18px; line-height:18px; height:18px !important; margin-bottom:5px }
