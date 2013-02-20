@@ -106,9 +106,12 @@
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
+      <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>  
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
         
+            <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
             <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
            
@@ -118,6 +121,8 @@
               <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
               <span class="last"></span>
             </div>
+          <?php endif; ?>
+        <?php endif; ?>
         
         
         <?php /*if(isset($displays['destaque-seu-video'])): ?>
@@ -136,22 +141,16 @@
         
       </div>
       <!-- /destaque-home-simples -->
-      <!-- form interatividade --> 
-      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
-        <?php if($_REQUEST['success'] == "1" || $_REQUEST['erro'] == "1"): ?>      
-      <div class="destaque-home-tv interatividade span9" style="display: none;">
-        <?php else: ?>
-      <div class="destaque-home-tv interatividade span9">    
-        <?php endif; ?>
-      <?php else: ?>
-      <div class="destaque-home-tv interatividade span9">
       <?php endif; ?>
+      <!-- form interatividade --> 
+      <div class="destaque-home-tv interatividade span9" style="display: none;">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
         <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>
+          <?php if($_REQUEST['success'] == "1" || $_REQUEST['erro'] == "1"): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -251,6 +250,7 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
+          <?php endif; ?>
         <?php endif; ?>
         
         <?php if(isset($_REQUEST['success'])): ?>
