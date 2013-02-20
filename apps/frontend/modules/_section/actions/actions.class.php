@@ -70,11 +70,12 @@ class _sectionActions extends sfActions
       
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
-        
+        /*
         if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
           header("location: http://www3.tvcultura.com.br/cocorico");
           die();
         }
+        */
       }
     
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
