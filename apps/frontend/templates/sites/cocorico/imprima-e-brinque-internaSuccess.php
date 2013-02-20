@@ -97,9 +97,9 @@
       <!-- figura -->
               
       <?php if(count($related_preview)>0): ?>
-       <div class="span6">
+       
        <a href="javascript:printDiv('div1')" class="print grd" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir"><img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" /><span></span></a>
-       </div>
+       
        
        <ul class="imprimir"> 
          
