@@ -108,7 +108,7 @@
     <div class="span8 col-esq">
       
       <!-- destaque-home-simples -->
-      <div class="destaque-home-tv span9">
+      <!--div class="destaque-home-tv span9">
         
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
@@ -138,16 +138,29 @@
           <?php endif; ?>
         <?php endif;*/ ?>
         
-      </div>
+      </div-->
       <!-- /destaque-home-simples -->
       
-       <?php 
-       /*
+      
        
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
     
       <div class="destaque-home-tv span9">
-      
+        
+         <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
+            <h2>Concurso Cultural</h2>
+            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
+           
+             <div class="destaque span12">
+               <span></span>
+               <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
+               <span class="last"></span>
+             </div>
+          <?php endif; ?>
+        <?php endif; ?>
+       <?php 
+       /*
             
         <?php if(isset($displays['destaque-seu-video'])): ?>
         <?php if(count($displays['destaque-seu-video']) > 0): ?>  
@@ -163,6 +176,8 @@
           <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
           <span class="last"></span>
         </div>
+        */ ?>
+        
       </div>
       <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
@@ -238,7 +253,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <label>Seu desenho de bicicleta<input type="file" name="datafile" size="40"></label>  
+              <label class="texto-file">Seu desenho de bicicleta<input class="btn-file" type="file" name="datafile" size="40"></label>  
             </div>
          
            
