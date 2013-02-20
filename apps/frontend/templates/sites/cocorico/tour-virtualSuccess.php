@@ -43,11 +43,11 @@ if(!isset($asset))
     <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p>
     <div class="row-fluid relacionados">
     <?php if(isset($displays['destaques'])):?>
-      <?php if(count($displays['destaques']) > 0): ?> 
+      <?php if(count($displays['destaques']) > 0): ?>  
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
         
-         <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+         <center></center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
         <?php /*
         <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
@@ -110,6 +110,7 @@ if(!isset($asset))
   <!-- /row-->
   
   <?php */ ?>
+</div>
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
    
