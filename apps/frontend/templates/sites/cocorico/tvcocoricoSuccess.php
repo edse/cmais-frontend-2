@@ -6,7 +6,7 @@ var success = getParameterByName('success');
 $(function(){
   if (error == "1" || success == "1")
   {
-    $("#destaqueForm").hide();
+    $("#div1").show();
     $("#form-contato").hide();
     
     if (success == "1")
@@ -132,7 +132,7 @@ $(function(){
     <!-- col esquerda --> 
     <div class="span8 col-esq">
       <!-- destaque-home-simples -->
-      <div class="destaque-home-tv span9" id="destaqueForm">
+      <div class="destaque-home-tv span9">
         
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
@@ -166,7 +166,7 @@ $(function(){
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
-      <div class="destaque-home-tv interatividade span9" style="display: none;">
+      <div class="destaque-home-tv interatividade span9" id="div1" style="display: none;">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
