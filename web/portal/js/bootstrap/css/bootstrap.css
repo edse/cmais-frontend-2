@@ -3493,6 +3493,7 @@ input[type="submit"].btn.btn-mini {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
   border-color: #252525;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 }
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
