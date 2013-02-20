@@ -124,5 +124,4 @@ if (navigator.appName == 'Microsoft Internet Explorer'){
 
 function changeUrl(url, target) {
   $(target).attr('href', url);
-  alert(' ');
 }
