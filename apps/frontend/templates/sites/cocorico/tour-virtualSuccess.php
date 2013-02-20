@@ -110,6 +110,7 @@ if(!isset($asset))
   <!-- /row-->
   
   <?php */ ?>
+</div>
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
    
