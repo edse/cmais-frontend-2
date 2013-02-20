@@ -143,7 +143,7 @@
       <!-- /destaque-home-simples -->
       <?php endif; ?>
       <!-- form interatividade --> 
-      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
+      <?php if((isset($_REQUEST['success']) || isset($_REQUEST['erro'])) && ($_REQUEST['success'] == 1 || $_REQUEST['erro'] == 1)): ?>
       <div class="destaque-home-tv interatividade span9">
       <?php else: ?>
       <div class="destaque-home-tv interatividade span9" style="display: none;">
