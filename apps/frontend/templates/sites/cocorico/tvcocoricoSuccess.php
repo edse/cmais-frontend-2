@@ -148,7 +148,7 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="">
+        <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
