@@ -140,6 +140,124 @@
         
       </div>
       <!-- /destaque-home-simples -->
+      <!-- form interatividade --> 
+      <div class="destaque-home-tv interatividade span9" style=" display: none;">
+        <div class="topo">
+          <div class="bac-yellow">
+            <h2>Concurso Cultural</h2>
+          </div>
+        </div>
+        <form id="form-contato" method="post" action="">
+          <p>
+            <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
+          </p>
+          <div class="row-fluid form-campos">
+            
+            
+            <div class="row-fluid">
+              <i class="ico-tv ico-pessoa"></i>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-responsavel"></i>
+              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável"/>
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-contato"></i>
+              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
+            </div>
+            <div class="row-fluid cidade">
+              <i class="ico-tv ico-cidade"></i>
+              
+              <div class="span9">
+                <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
+              </div>
+              <div class="span2 estado">
+                <select id="estado" name="estado" class="span12 required">
+                    <option value="" selected="selected">UF</option>
+                    <option value="Acre">AC</option>
+                    <option value="Alagoas">AL</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="Amap&aacute;">AP</option>
+                    <option value="Bahia">BA</option>
+                    <option value="Cear&aacute;">CE</option>
+                    <option value="Distrito Federal">DF</option>
+                    <option value="Espirito Santo">ES</option>
+                    <option value="Goi&aacute;s">GO</option>
+                    <option value="Maranh&atilde;o">MA</option>
+                    <option value="Minas Gerais">MG</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Par&aacute;">PA</option>
+                    <option value="Para&iacute;ba">PB</option>
+                    <option value="Pernambuco">PE</option>
+                    <option value="Piau&iacute;">PI</option>
+                    <option value="Paran&aacute;">PR</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Rio Grande do Norte">RN</option>
+                    <option value="Rond&ocirc;nia">RO</option>
+                    <option value="Roraima">RR</option> 
+                    <option value="Rio Grande do Sul">RS</option>
+                    <option value="Santa Catarina">SC</option>
+                    <option value="Sergipe">SE</option>
+                    <option value="S&atilde;o Paulo">SP</option>
+                    <option value="Tocantins">TO</option>
+                </select>
+              </div>
+            </div>
+            <!--div class="row-fluid">
+              <i class="ico-tv ico-link"></i>
+              <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
+            </div-->
+            <div class="row-fluid last">
+              <i class="ico-tv ico-bike"></i>
+              <label>Seu desenho de bicicleta<input type="file" name="datafile" size="40"></label>  
+            </div>
+         
+           
+            
+            <div class="row-fluid">
+              <label class="radio" for="concorda">
+                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
+              </label>             
+            </div>
+          </div>
+          
+          <div class="regras">
+            <p> 1. Participação:</p> <br>
+            <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
+            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho com uma bicicleta. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
+            <p>1.1 Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email e endereço.</p>
+            <p> 2. Critérios de Seleção:</p> <br>
+            <p>2.1 A seleção dos desenhos serão feita pela equipe de Produção do Cocoricó e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p>
+            <p>2.2 Serão desconsiderados os desenhos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p>
+            <p>2.3 Cada criança poderá participar enviando quantos desenhos desejar.</p>
+            <p>  3. Considerações Gerais:</p> <br>
+            <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p> 
+            <p>3.2 A FPA não aceitará qualquer desenho que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p>
+            <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção do Cocoricó referida no item 2.1 deste Regulamento.</p>
+            <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
+            <p>3.5 Os desenhos serão publicados no site <a href="http://cocorico.com.br">cocorico.com.br</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
+          </div> 
+          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          
+          <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
+          
+          <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
+        </form>
+        <div id="msgAcerto" style="display:none;">
+          <p>Seu desenho foi enviado com sucesso! Obrigada por participar! :)</p>
+                   
+        </div>
+        <div id="msgErro" style="display:none;">
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
+            <hr>
+            Tente novamente mais tarde.
+          </p>
+        </div>  
+ 
+      </div>
+      <!-- form interatividade -->
       
        <?php 
        /*
