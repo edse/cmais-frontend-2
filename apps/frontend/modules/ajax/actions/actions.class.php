@@ -1514,13 +1514,13 @@ EOT;
     $a = Doctrine::getTable('Asset')->findOneById($request->getParameter('asset_id'));
     if($a->getId()>0){
       $s = $a->Sections;
-      $filename = "/var/frontend/web/cocorico/ranking/".$s[0]->getSlug()."/".$request->getParameter('asset_id');
+      $filename = "/var/frontend/web/cocorico-ranking/ranking/".$s[0]->getSlug()."/".$request->getParameter('asset_id');
       $votes = intval(@file_get_contents($filename))+1;
       $fp = fopen($filename,'w+');
       fwrite($fp, $votes);
       fclose($fp);
 
-      $filename = "/var/frontend/web/cocorico/ranking/".$s[0]->getSlug()."/total";
+      $filename = "/var/frontend/web/cocorico-ranking/ranking/".$s[0]->getSlug()."/total";
       $votes = intval(@file_get_contents($filename))+1;
       $fp = fopen($filename,'w+');
       fwrite($fp, $votes);
