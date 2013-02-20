@@ -51,10 +51,10 @@
 .interatividade .form-campos .btn-file,
 .interatividade .form-campos input,
 .interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 20px; line-height:20px; height:20px !important; }
-.interatividade label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
-.interatividade .form-campos select.error, 
-.interatividade label.error,
-.interatividade .form-campos input.error { background:#ef372d; color:#fff !important;}
+.interatividade #form-contato label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
+.interatividade #form-contato select.error, 
+.interatividade #form-contato label.error,
+.interatividade #form-contato input.error { background:#ef372d; color:#fff !important;}
 .interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
