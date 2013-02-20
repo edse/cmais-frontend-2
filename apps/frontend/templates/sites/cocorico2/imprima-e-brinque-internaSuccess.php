@@ -103,7 +103,6 @@
        <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" 
        alt="Imprimir" /><span></span></a>
        <ul class="imprimir"> 
-     <?php echo count($related_preview) ?>
       <?php if(count($related_preview)>1): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>  
         
@@ -122,7 +121,6 @@
          
       <?php endif; ?>
       <?php endif; ?>
-teste
       <!--IFRAME PARA IMPRESSAO EM IE -->
       <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
