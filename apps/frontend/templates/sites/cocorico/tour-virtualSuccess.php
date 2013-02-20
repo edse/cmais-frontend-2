@@ -46,6 +46,9 @@ if(!isset($asset))
       <?php if(count($displays['destaques']) > 0): ?> 
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
+        
+         <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+        <?php /*
         <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
           <img alt="<?php echo $displays['destaques'][0]->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $displays['destaques'][0]->Asset->AssetVideo->getYoutubeId()?>/0.jpg">
@@ -98,6 +101,7 @@ if(!isset($asset))
        
       <?php endif; ?>
     <?php endif; ?> 
+     ?>
     </div>
     <!-- /row clipes relacionados -->
   </div>
@@ -105,7 +109,7 @@ if(!isset($asset))
   <?php endif; ?>
   <!-- /row-->
   
-  <?php /*
+  <?php */ ?>
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
    
