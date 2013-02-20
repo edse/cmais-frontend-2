@@ -47,7 +47,8 @@ if(!isset($asset))
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
         
-         <center></center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
+         <center><a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a></center>
+       </div> 
         <?php /*
         <a href="<?php echo $displays['destaques'][0]->retriveUrl() ?>" title="<?php echo $displays['destaques'][0]->getTitle() ?>" class="clipe">
           <h3><?php echo $displays['destaques'][0]->getTitle() ?></h3>
@@ -157,7 +158,7 @@ if(!isset($asset))
     <?php endif; ?>
    <?php endif; ?>
     <?php */ ?>
-   </div>  
+    
  <?php endif; ?>
  <?php endif; ?>
  <?php endif; ?>
