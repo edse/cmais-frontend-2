@@ -212,7 +212,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <label>Seu desenho de bicicleta<input type="file" name="datafile" size="40"></label>  
+              <input class="file" type="file" name="datafile" size="40">
             </div>
          
            
