@@ -162,7 +162,7 @@ if(!isset($asset))
  <?php endif; ?>
  <?php endif; ?>
  <?php endif; ?>
-  
+ </div> 
   <!-- /row-->
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
