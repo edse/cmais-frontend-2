@@ -161,4 +161,7 @@
   .enquete form .span6 img { max-width:100% !important; }
   .enquete form .versus { left:48%; }
 }
-   
+@media (min-width:768px) and (max-width:979px) {
+  .navbar-fixed-top .nav > li > a { background:none; text-indent:0;  width: auto; height:auto; text-align:center;}
+  .navbar-fixed-top .nav > li { float:left; }
+}
