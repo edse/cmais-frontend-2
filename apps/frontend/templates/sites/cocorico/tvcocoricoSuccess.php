@@ -106,7 +106,7 @@
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
-      
+      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>  
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
         
@@ -141,14 +141,24 @@
         
       </div>
       <!-- /destaque-home-simples -->
+      <?php endif; ?>
       <!-- form interatividade --> 
-      
-      <div class="destaque-home-tv interatividade span9"<?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?> style="display: none;"<?php endif; ?>>
+      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
+        <?php if($_REQUEST['success'] == "1" || $_REQUEST['erro'] == "1"): ?>      
+      <div class="destaque-home-tv interatividade span9" style="display: none;">
+        <?php else: ?>
+      <div class="destaque-home-tv interatividade span9">    
+        <?php endif; ?>
+      <?php else: ?>
+      <div class="destaque-home-tv interatividade span9">
+      <?php endif; ?>
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
+        <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
+          <?php if($_REQUEST['success'] == "1" || $_REQUEST['erro'] == "1"): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -248,16 +258,27 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <div id="msgAcerto" style="display: none">
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($_REQUEST['success'])): ?>
+          <?php if($_REQUEST['success'] == "1"): ?>
+        <div id="msgAcerto">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
-                   
         </div>
-        <div id="msgErro" style="display: none">
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($_REQUEST['erro'])): ?>
+          <?php if($_REQUEST['erro'] == "1"): ?>
+        <div id="msgErro">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
-        </div>  
+        </div>
+          <?php endif; ?>
+        <?php endif; ?> 
  
       </div>
       
