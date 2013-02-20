@@ -90,7 +90,7 @@ if(isset($pager)){
   	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
     	<?php if (count($related) > 0): ?>
     		<p class="tit">Assista à participação na íntegra:</p>
-    			<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+    			<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
    		 <?php endif; ?>
   </div>
   <!-- /row-->
