@@ -16,8 +16,8 @@
       interval : 3000
     });
     $("button#fechar , body").click(function() {
-      $('#modal-video').hide();
-      $('.modal-backdrop').hide();
+      $('#modal-video').remove();
+      $('.modal-backdrop').remove();
     });
   })
   
