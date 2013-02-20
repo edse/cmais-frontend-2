@@ -109,7 +109,7 @@ if(!isset($asset))
   <?php endif; ?>
   <!-- /row-->
   
-  <?php */ ?>
+  
 </div>
   <div class="row-fluid conteudo erros">
     <p class="tit">Assista também:</p>
@@ -156,10 +156,9 @@ if(!isset($asset))
     </a> 
     <?php endif; ?>
    <?php endif; ?>
-    
+    <?php */ ?>
    </div>  
-    * 
-    */ ?>
+ 
   
   <!-- /row-->
   <!-- rodapé-->
