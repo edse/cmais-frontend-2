@@ -212,7 +212,7 @@
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="file" type="file" name="arquivo" size="25">
+              <input id="file" type="file" name="datafile" size="25">
             </div>
          
            
@@ -605,15 +605,13 @@ $(document).ready(function(){
         nome_resp:{
           required:true
         },
-        desenho:{
+        arquivo:{
           required:true
         },
         concorda:{
           required: true
         }
-        arquivo:{
-          required: true
-        }
+        
       },
       messages:{
         nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
