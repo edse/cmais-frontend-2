@@ -29,7 +29,7 @@
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   
                   <div style="border:2px solid #ff6633; clear:both; padding-bottom:50px; margin-top:20px; float:left; padding:20px;">
-                    <strong>Atenção – Leia as orientações para a realização da prova escrita!</strong>
+                    <strong style="font-size:14px; color:#333; font-weight: bold">Atenção – Leia as orientações para a realização da prova escrita!</strong>
                     <p>Compareça ao local munido dos seguintes documentos: Documento de Identidade – RG, Habilitação e o CPF originais. (o documento de identidade deverá ter foto). Sem estes documentos, o candidato será impedido de fazer a prova.</p>
                   </div>
                   
