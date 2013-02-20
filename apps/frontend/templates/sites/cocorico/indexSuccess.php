@@ -321,4 +321,4 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-<div class="modal-backdrop"></div>
+<div class="modal-backdrop bg-video"></div>
