@@ -78,8 +78,8 @@
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
-/*.interatividade .form-campos .file,*/
-.interatividade #enviar{background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
+.interatividade input[type="file"] { color:#747B3A; text-transform:uppercase }
+.interatividade #enviar {background: #fdf035; border: 2px solid #bfd540; margin: 5px 0; color: #747b3a; border-radius: 5px; font-weight:bold;}
 .interatividade .regras{border: 3px solid #BFD540;background: #bfd540; border-radius:5px; height:61px; overflow:auto; color:#747b3a;padding:5px 10px;}
 .interatividade .regras p { color:#747b35;}
 .interatividade .form-campos .btn-file { margin:0; float:left; }
