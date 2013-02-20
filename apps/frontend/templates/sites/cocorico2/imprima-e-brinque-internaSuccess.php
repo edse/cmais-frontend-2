@@ -80,7 +80,7 @@
           
           <a href="javascript:printDiv('div<?php $counter_div ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$counter]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
-          <div id="div<?php $counter_div ?>" style="display: none;page-break-after:always;">
+          <div id="div<?php echo $counter_div ?>" style="display: none;page-break-after:always;">
             <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
@@ -105,20 +105,16 @@
        <ul class="imprimir"> 
      
       <?php if(count($related_preview)>1): ?>
-      <?php $counter = 1 ?>
-      <?php $counter_div = 1 ?>
-      <?php foreach($related_preview as $k=>$d): ?>  
+      <?php for($i=1; $i < count($related_preview); $i++): ?>  
         
         <li class="span4"> 
-          <a href="javascript:printDiv('div<?php $counter_div ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$counter]->retriveImageUrlByImageUsage("original") ?>" 
+          <a href="javascript:printDiv('div<?php echo $i ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
-          <div id="div<?php $counter_div ?>" style="display: none;page-break-after:always;">
-            <img src="<?php echo $related_download[$counter]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+          <div id="div<?php echo $i ?>" style="display: none;page-break-after:always;">
+            <img src="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
           </div>
         </li>
-      <?php $counter ++ ?>
-      <?php $counter_div ++ ?>
-          <?php endforeach; ?>
+          <?php endfor; ?>
 
       <?php endif; ?>
       
