@@ -7,17 +7,18 @@ $(function(){
   if (error == "1" || success == "1")
   {
     $("#destaqueForm").hide();
+    $("#formWrapper").show();
     $("#form-contato").hide();
     
     if (success == "1")
     {
-      $("#msgAcerto").show();
-      $("#msgErro").hide();
+      $("#formWrapper #msgAcerto").show();
+      $("#formWrapper #msgErro").hide();
     }
     if (error == "1")
     {
-      $("#msgErro").show();
-      $("#msgAcerto").hide();
+      $("#formWrapper #msgErro").show();
+      $("#formWrapper #msgAcerto").hide();
     }  
   }
 });
@@ -166,7 +167,7 @@ $(function(){
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
-      <div class="destaque-home-tv interatividade span9">
+      <div class="destaque-home-tv interatividade span9" id="formWrapper" style="display:none">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
