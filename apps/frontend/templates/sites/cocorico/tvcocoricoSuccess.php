@@ -148,7 +148,7 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(!$_REQUEST['success'] && !$_REQUEST['erro']): ?>
+        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -249,13 +249,13 @@
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
         <?php endif; ?>
-        <?php if($_REQUEST['success']): ?>
+        <?php if(isset($_REQUEST['success'])): ?>
         <div id="msgAcerto">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
                    
         </div>
         <?php endif; ?>
-        <?php if($_REQUEST['erro']): ?>
+        <?php if(isset($_REQUEST['erro'])): ?>
         <div id="msgErro">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
