@@ -54,7 +54,7 @@
   })
 </script>
 <!-- Modal -->
-<div id="modal-video" class="modal" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+<div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
   <div class="modal-header">
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
