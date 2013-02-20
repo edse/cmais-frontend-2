@@ -19,11 +19,42 @@
       $('#modal-video').remove();
       $('.modal-backdrop').remove();
     });
+
+    openModal();
+    
+    function openModal(){
+      var value = getCookie('modalcocorico')
+      console.log(value);
+      if(!value){
+        setCookie('modalcocorico', 1);
+        $('.modal-backdrop').fadeIn('fast');
+        $('#modal-video').fadeIn('fast');
+      }
+    }
+    
+    function setCookie(c_name,value){
+      var exdate=new Date();
+      exdate.setDate(exdate.getDate() + 7);
+      var c_value=escape(value) + ((7==null) ? "" : "; expires="+exdate.toUTCString());
+      document.cookie=c_name + "=" + c_value;
+    }
+    
+    function getCookie(c_name){
+      var i,x,y,ARRcookies=document.cookie.split(";");
+      for (i=0;i<ARRcookies.length;i++){
+        x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+        y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+        x=x.replace(/^\s+|\s+$/g,"");
+        if (x==c_name){
+          return unescape(y);
+        }
+      }
+    }
+    
   })
-  
 </script>
 <!-- Modal -->
-<div id="modal-video" class="modal fade in" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
@@ -37,13 +68,13 @@
 <div class="container tudo">
   <!-- row carrossel-->
   <div class="row-fluid">
-  	 <?php if(isset($displays['destaque-topo'])): ?>
+     <?php if(isset($displays['destaque-topo'])): ?>
       <?php if(count($displays['destaque-topo']) > 0): ?>
       <div class="span12"> 
         <div id="myCarousel" class="carousel slide span12">
           <!-- Carousel items -->
           <div class="carousel-inner"> 
-          	<?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
+            <?php foreach($displays['destaque-topo'] as $k=>$d): ?>  
             <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
               <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12" alt="<?php echo $d->getTitle() ?>"/></a>
             </div>
@@ -76,20 +107,20 @@
   <!--row-->
   <div class="row-fluid conteudo">
     <div class="span8 col-esq">
-    	<?php /*
-    	<!--joguinhos e receitinhas-->
-    	<?php if(isset($displays['destaque-principal'])):?>
-        <?php if(count($displays['destaque-principal']) > 0): ?> 	
+      <?php /*
+      <!--joguinhos e receitinhas-->
+      <?php if(isset($displays['destaque-principal'])):?>
+        <?php if(count($displays['destaque-principal']) > 0): ?>  
           
           <?php 
           $secao = $displays['destaque-principal'][0]->Asset->getSections();
           $secao_destaque = $secao[0]; 
           ?>
           
-         	 <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-          	<?php if(count($related) > 0): ?>
-          			
-      		<div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
+           <?php $related = $d->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+            <?php if(count($related) > 0): ?>
+                
+          <div class="destaque-home <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
               <a href="/cocorico2/<?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>" class="span9"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" /></a>
               <div class="box span3 <?php if($secao_destaque=='joguinhos'): ?>joguinhos<?php endif; ?><?php if($secao_destaque=='receitinhas'): ?>receitinhas<?php endif; ?>">
                 <span class="mais"></span>
@@ -290,4 +321,4 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
-<div class="modal-backdrop fade in"></div>
+<div class="modal-backdrop hide"></div>
