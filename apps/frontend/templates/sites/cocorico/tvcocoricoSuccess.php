@@ -7,7 +7,7 @@ $(function(){
   if (error == "1" || success == "1")
   {
     $("#div1").show();
-    $("$form-contato").hide();
+    $("#form-contato").hide();
     
     if (success == "1")
     {
