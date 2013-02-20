@@ -167,5 +167,5 @@
 
 @media (max-width: 979px) {
   .menu .navbar .nav > li { float:left;}
-  .col-esq .bastidores.span3 { margin-left:0; }
+  .conteudo .col-esq .bastidores.span3 { margin-left:0; }
 } 
