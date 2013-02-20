@@ -1,12 +1,18 @@
 <script type="text/javascript">
-    function $_GET(q,s) { 
-        s = s ? s : window.location.search; 
-        var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i'); 
-        return (s=s.replace('/^?/','&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined; 
-    } 
-    var error = $_GET('error');
-    var success = $_GET('success');
-    alert("error: "+error+"\n"+"success: "+success);
+function getParameterByName(name)
+{
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regexS = "[\\?&]" + name + "=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.search);
+  if(results == null)
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+alert("error: "+error+"\n"+"success: "+success);
     
 </script>
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
