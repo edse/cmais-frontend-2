@@ -10,7 +10,7 @@
     table h1 { font-size:20px; margin-top: 10px; }
     table {margin-bottom:50px}
     .topo {float:right; color:#f90}
-    .locais {margin-bottom:30px}
+    .locais {margin-bottom:50px}
     .locais a {color:#f90}               
     </style>
     <!-- CAPA SITE -->
