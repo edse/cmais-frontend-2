@@ -117,8 +117,7 @@
            
             <div class="destaque span12">
               <span></span>
-              <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
-              <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
+              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
@@ -142,11 +141,11 @@
       </div>
       <!-- /destaque-home-simples -->
       
-       
+       <?php 
+       /*
        
       <!--  FORM PARA QUANDO TIVE PARTICIPAÇÃO -->
-    <?php 
-       /*
+    
       <div class="destaque-home-tv span9">
       
             
@@ -165,7 +164,6 @@
           <span class="last"></span>
         </div>
       </div>
-      */ ?>
       <!-- form interatividade --> 
       <div class="destaque-home-tv interatividade span9" style=" display: none;">
         <div class="topo">
