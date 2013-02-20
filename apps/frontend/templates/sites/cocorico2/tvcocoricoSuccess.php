@@ -115,7 +115,7 @@
             <h2>Concurso Cultural</h2>
             <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
            
-            <div class="destaque span12" style="position:relative;">
+            <div class="destaque span12" style="position:relative; display: none;">
               <span></span>
               <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
               <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
