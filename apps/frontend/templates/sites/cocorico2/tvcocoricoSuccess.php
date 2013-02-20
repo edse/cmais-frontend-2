@@ -117,7 +117,8 @@
            
             <div class="destaque span12">
               <span></span>
-              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a>
+              <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
+              <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
               <span class="last"></span>
             </div>
           <?php endif; ?>
