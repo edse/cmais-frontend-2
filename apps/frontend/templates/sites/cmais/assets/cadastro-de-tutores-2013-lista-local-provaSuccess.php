@@ -8,7 +8,10 @@
     <style type="text/css">
     table a { color:#ff6633;margin-bottom:5px; display: block; } 
     table h1 { font-size:20px; margin-top: 10px; }
-    table {margin-bottom:30px}               
+    table {margin-bottom:50px}
+    .topo {float:right; color:#f90}
+    .locais {margin-bottom:30px}
+    .locais a {color:#f90}               
     </style>
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -39,8 +42,8 @@
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
                   <div class="texto" style="margin-top:30px">
-                    
-                    <ul>
+                    <p>Cidades onde serão realizadas as provas:</p>
+                    <ul class="locais">
                       <li><a href="#aracatuba">Araçatuba</a></li>
                       <li><a href="#bauru">Bauru</a></li>
                       <li><a href="#campinas">Campinas</a></li>
