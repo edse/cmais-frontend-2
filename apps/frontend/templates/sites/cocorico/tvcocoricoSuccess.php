@@ -143,7 +143,11 @@
       <!-- /destaque-home-simples -->
       <?php endif; ?>
       <!-- form interatividade --> 
+      <?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?>
+      <div class="destaque-home-tv interatividade span9">
+      <?php else: ?>
       <div class="destaque-home-tv interatividade span9" style="display: none;">
+      <?php endif; ?>
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
