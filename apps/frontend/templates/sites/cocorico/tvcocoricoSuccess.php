@@ -1,20 +1,28 @@
 <script type="text/javascript">
-function getParameterByName(name)
-{
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
-}
 var error = getParameterByName('error');
 var success = getParameterByName('success');
-alert("error: "+error+"\n"+"success: "+success);
+//alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error == "1" || success == "1")
+  {
+    $("#div1").show();
+    $("$form-contato").hide();
     
+    if (success == "1")
+    {
+      $("#msgAcerto").show();
+      $("#msgErro").hide();
+    }
+    if (error == "1")
+    {
+      $("#msgErro").show();
+      $("#msgAcerto").hide();
+    }  
+  }
+});
 </script>
+
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
@@ -123,7 +131,6 @@ alert("error: "+error+"\n"+"success: "+success);
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
-      <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['error'])): ?>  
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
         
@@ -158,19 +165,13 @@ alert("error: "+error+"\n"+"success: "+success);
         
       </div>
       <!-- /destaque-home-simples -->
-      <?php endif; ?>
       <!-- form interatividade --> 
-      <?php if((isset($_REQUEST['success']) || isset($_REQUEST['error'])) && ($_REQUEST['success'] == 1 || $_REQUEST['error'] == 1)): ?>
-      <div class="destaque-home-tv interatividade span9">
-      <?php else: ?>
-      <div class="destaque-home-tv interatividade span9" style="display: none;">
-      <?php endif; ?>
+      <div class="destaque-home-tv interatividade span9" id="div1" style="display: none;">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['error'])): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -270,26 +271,17 @@ alert("error: "+error+"\n"+"success: "+success);
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <?php endif; ?>
         
-        <?php if(isset($_REQUEST['success'])): ?>
-          <?php if($_REQUEST['success'] == "1"): ?>
-        <div id="msgAcerto">
+        <div id="msgAcerto" style="display:none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
         </div>
-          <?php endif; ?>
-        <?php endif; ?>
         
-        <?php if(isset($_REQUEST['error'])): ?>
-          <?php if($_REQUEST['error'] == "1"): ?>
-        <div id="msgErro">
+        <div id="msgErro" style="display:none">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
         </div>
-          <?php endif; ?>
-        <?php endif; ?> 
  
       </div>
       
