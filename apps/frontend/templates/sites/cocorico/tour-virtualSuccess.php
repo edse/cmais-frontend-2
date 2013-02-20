@@ -41,7 +41,7 @@ if(!isset($asset))
   <?php if(count($displays['tour-virtual']) > 0): ?>
   <div id="box-destaque" class="row-fluid conteudo">    
     <p><?php echo html_entity_decode($displays['tour-virtual'][0]->Asset->AssetContent->render()) ?></p>
-    <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do CocoricÃ³! Confira mais clipes aqui:</p>
+    <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do Cocoricó Confira mais clipes aqui:</p>
     <div class="row-fluid relacionados">
     <?php if(isset($displays['destaques'])):?>
       <?php if(count($displays['destaques']) > 0): ?> 
