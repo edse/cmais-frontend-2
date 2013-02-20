@@ -1,3 +1,14 @@
+<script type="text/javascript">
+    function $_GET(q,s) { 
+        s = s ? s : window.location.search; 
+        var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i'); 
+        return (s=s.replace(/^?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined; 
+    } 
+    var error = $_GET('error');
+    var success = $_GET('success');
+    alert("error: "+error+"\n"+"success: "+success);
+    
+</script>
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
@@ -106,7 +117,7 @@
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
-      <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>  
+      <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['error'])): ?>  
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9">
         
@@ -143,7 +154,7 @@
       <!-- /destaque-home-simples -->
       <?php endif; ?>
       <!-- form interatividade --> 
-      <?php if((isset($_REQUEST['success']) || isset($_REQUEST['erro'])) && ($_REQUEST['success'] == 1 || $_REQUEST['erro'] == 1)): ?>
+      <?php if((isset($_REQUEST['success']) || isset($_REQUEST['error'])) && ($_REQUEST['success'] == 1 || $_REQUEST['error'] == 1)): ?>
       <div class="destaque-home-tv interatividade span9">
       <?php else: ?>
       <div class="destaque-home-tv interatividade span9" style="display: none;">
@@ -153,7 +164,7 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>
+        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['error'])): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -263,8 +274,8 @@
           <?php endif; ?>
         <?php endif; ?>
         
-        <?php if(isset($_REQUEST['erro'])): ?>
-          <?php if($_REQUEST['erro'] == "1"): ?>
+        <?php if(isset($_REQUEST['error'])): ?>
+          <?php if($_REQUEST['error'] == "1"): ?>
         <div id="msgErro">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
