@@ -9,14 +9,29 @@
 /* tooltip*/
 </style>
 
+
 <script>
-  $(document).ready(function(){
-    //alert("teste"+$(window).width()+"/"+$('body').width());
+  $(document).ready(function() {
     $('#myCarousel').carousel({
-    //interval: 3000
-    })
+      interval : 3000
+    });
+    $("button#fechar , body").click(function() {
+      $('#myModal').hide();
+      $('.modal-backdrop').hide();
+    });
   })
+  
 </script>
+<!-- Modal -->
+<div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
+      Fechar
+    </button>
+    <iframe width="853" height="480" src="http://www.youtube.com/embed/_SpdG5nkNds?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<!-- /Modal -->
 
 <!-- container-->
 <div class="container tudo">
@@ -275,3 +290,4 @@
   <!--/rodapé-->
 </div>
 <!-- /container-->
+<div class="modal-backdrop fade in"></div>
