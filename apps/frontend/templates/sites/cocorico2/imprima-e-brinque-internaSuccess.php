@@ -106,7 +106,7 @@
      
       <?php if(count($related_preview)>1): ?>
       <?php $counter = 1 ?>
-      <?php $counter_div = 2 ?>
+      <?php $counter_div = 1 ?>
       <?php foreach($related_preview as $k=>$d): ?>  
         
         <li class="span4"> 
@@ -117,11 +117,8 @@
           </div>
         </li>
       <?php $counter ++ ?>
-      <?php if((count($counter_div))==(count($related_preview))): ?>
-      <?php else: ?>
       <?php $counter_div ++ ?>
-      <?php endif; ?>
-      <?php endforeach; ?>
+          <?php endforeach; ?>
 
       <?php endif; ?>
       
