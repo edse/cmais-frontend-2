@@ -144,12 +144,11 @@
       <!-- form interatividade --> 
       
       <div class="destaque-home-tv interatividade span9"<?php if(isset($_REQUEST['success']) || isset($_REQUEST['erro'])): ?> style="display: none;"<?php endif; ?>>
-        <div class="topo"><!-- 1 -->
+        <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(!isset($_REQUEST['success']) && !isset($_REQUEST['erro'])): ?>
         <form id="form-contato" method="post" action="" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -249,21 +248,16 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <?php endif; ?>
-        <?php if(isset($_REQUEST['success'])): ?>
-        <div id="msgAcerto">
+        <div id="msgAcerto" style="display: none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
                    
         </div>
-        <?php endif; ?>
-        <?php if(isset($_REQUEST['erro'])): ?>
-        <div id="msgErro">
+        <div id="msgErro" style="display: none">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
         </div>  
-        <?php endif; ?>
  
       </div>
       
