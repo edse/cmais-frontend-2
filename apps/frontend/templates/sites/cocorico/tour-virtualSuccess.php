@@ -43,7 +43,7 @@ if(!isset($asset))
     <p style="margin: 20px 0 -20px 0" class="tit">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p>
     <div class="row-fluid relacionados">
     <?php if(isset($displays['destaques'])):?>
-      <?php if(count($displays['destaques']) > 0): ?> 
+      <?php if(count($displays['destaques']) > 0): ?>  
       <!-- clipe --> 
       <div class="span4 destaque-2 conteudo-diverso">
         
