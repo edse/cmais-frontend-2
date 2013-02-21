@@ -401,7 +401,7 @@ bold,
 .box-destaque.ytb img { margin: -23px 0;    position: relative;    z-index: 0; }
 .box-destaque.ytb h3 a,
 .box-destaque.ytb h3 { position: relative;    z-index: 1001; border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
-.box-destaque.ytb a { position: relative; z-index: 1001; }
+.box-destaque.ytb a { position: relative; }
 
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
 .box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden; border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
