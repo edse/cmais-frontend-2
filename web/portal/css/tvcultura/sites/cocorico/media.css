@@ -164,7 +164,7 @@
 }
 @media (min-width:768px) and (max-width:979px) {
   .navbar-fixed-top .nav > li > a { background:none; text-indent:0;  width: auto; height:auto; text-align:center;}
-  .interatividade .topo h3, .bastidores .topo h3 { font-size:12px; width: auto; }
+  
 }
 
 @media (max-width: 979px) {
@@ -181,6 +181,6 @@
   .enquete form .votar .last { display:none; }
   .box .tit a { text-align:right }
   .destaque-home-tv .btn-destaque { width: 94%; }
-  
+  .interatividade .topo h3, .bastidores .topo h3 { font-size:12px; width: auto; }
    
 } 
