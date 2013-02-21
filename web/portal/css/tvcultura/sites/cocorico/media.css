@@ -164,7 +164,7 @@
 }
 @media (min-width:768px) and (max-width:979px) {
   .navbar-fixed-top .nav > li > a { background:none; text-indent:0;  width: auto; height:auto; text-align:center;}
-  .topo-familia .navbar .nav > li.familia { margin-left:5px; width:100%; }
+  .topo-familia .navbar .nav > li.familia { margin-left:5px; width:100% !important; }
 }
 
 @media (max-width: 979px) {
@@ -183,6 +183,6 @@
   .destaque-home-tv .btn-destaque { width: 94%; }
   .interatividade .topo h3,
   .bastidores .topo h3 { font-size:12px; width: 104px; }
-  
+  .topo-familia .navbar .nav > li.familia { margin-left:5px; width:100% !important; }
   
 } 
