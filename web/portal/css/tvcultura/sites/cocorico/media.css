@@ -176,6 +176,6 @@
   .rodape .span3 { max-width:150px; }
   .rodape .sites .last,
   .rodape .sites li { margin:0 10% 5% 0; }
-  #votar-input { min-width:10%; }
+  #votar-input { min-width:10% !mportant; }
  
 } 
