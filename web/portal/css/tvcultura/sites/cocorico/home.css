@@ -55,8 +55,8 @@
 .enquete form .versus { width:27px; height:30px; position:absolute; background:url(/portal/images/capaPrograma/cocorico/versus.png) no-repeat; bottom:50%; left:46%;  }
 .enquete form .span6 { margin:0 1px; }
 .enquete .inativo .span6 .capa-img,
-.enquete form .span6 .capa-img {  width:140px; height:84px; overflow:hidden; margin-left:-23px; border:2px solid transparent; }
-.enquete form .span6 img {  cursor:pointer;  margin:0; max-width:144px;  }
+.enquete form .span6 .capa-img { /* width:140px; height:84px;*/ overflow:hidden; margin-left:-23px; border:2px solid transparent; }
+.enquete form .span6 img {  cursor:pointer;  margin:0; /*max-width:144px;*/  }
 .enquete form .last { margin-left:3px; float:right; }
 .enquete form .span6:hover .capa-img { border:2px solid #fdf035; }
 .enquete form .radio { color:#fff; clear:both; margin-left:5px;  }
