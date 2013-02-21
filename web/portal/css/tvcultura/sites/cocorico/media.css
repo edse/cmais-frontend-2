@@ -174,4 +174,5 @@
   .rodape ul { margin-left:0; }
   .rodape .span3,
   .rodape .span2 { margin-left:0;}
+  .rodape .span3 { max-width:100px; }
 } 
