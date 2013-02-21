@@ -92,7 +92,8 @@
   .topo-coco { margin:10px 0; }
   /*.menu .lista-personagens li { margin-left:3%; }
   .menu .navbar .nav > li { margin-right:2%; }*/
-  .rodape .span2 { margin-left:0;}
+  .rodape .span3,
+  .rodape .span2 { margin-left:1%;}
   .voltar .divisao { min-width:790px; }
   #videos {margin:0 !important; }
   .menu.listao .lista-personagens li { margin-right:2%; }
