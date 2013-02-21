@@ -186,4 +186,5 @@
   .interatividade .topo h3,
   .bastidores .topo h3 { font-size:12px; width: 104px; }
   .topo-familia .navbar .nav > li.familia { margin-left:5px; width:100% !important; }
+   #menu-familia li .divider { padding:0 20%; }
   } 
