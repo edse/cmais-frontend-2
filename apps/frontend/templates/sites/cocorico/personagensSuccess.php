@@ -26,7 +26,7 @@ $destaque_topo = $bloco->retriveDisplays('destaque-topo');
         <div class="carousel-inner"> 
           <?php foreach($destaque_topo as $k=>$d): ?>  
           <div class="<?php if($k==0): ?>active <?php endif; ?>item ">
-            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
+            <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $d->Asset->retriveImageUrlByImageUsage('original') ?>" class="span12"/></a>
           </div>
            <?php endforeach; ?>       
         </div>
@@ -35,7 +35,7 @@ $destaque_topo = $bloco->retriveDisplays('destaque-topo');
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
-    <?php endif; ?>
+      <?php endif; ?>
     <?php endif; ?>
     <div class="divisoria span12"></div>
   </div>
