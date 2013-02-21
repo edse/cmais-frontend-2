@@ -170,4 +170,5 @@
   .menu .navbar .nav > li { float:left;}
   .conteudo .col-esq .bastidores.span3 { margin-left:0; }
   .rodape a { font-size:12px; }
+  .rodape ul { margin-left:0; }
 } 
