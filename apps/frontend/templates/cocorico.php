@@ -61,7 +61,7 @@
     <!-- /scripts -->
     <!-- Le styles -->
     <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <!--link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
     
     <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
