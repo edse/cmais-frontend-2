@@ -399,7 +399,7 @@ bold,
 .relacionados .destaques-small.top { padding-top:10px; }
 
 .box-destaque.ytb img { margin: -23px 0;    position: relative;    z-index: 0; }
-.box-destaque.ytb h3 { position: relative;    z-index: 2000; }
+.box-destaque.ytb h3 { position: relative;    z-index: 100; }
 .box-destaque.ytb a { position: relative; z-index: 1000; }
 
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
