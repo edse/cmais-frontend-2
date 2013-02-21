@@ -56,7 +56,7 @@
         <div class="grid2" id="esquerda" style="width: 100%; margin-right: 15px;">
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
-            <p class="titulos">Conselho Curador convida especialistas para debater os desafios e rumos da radiodifusão pública</p>
+            <p class="titulos">A Fundação Padre Anchieta promove Seminário sobre os rumos e desafios da comunicação pública</p>
          
             <div class="texto">
               <p>Neste mês de fevereiro, haverá uma reunião especial do Conselho Curador da Fundação Padre Anchieta. Durante dois dias, os conselheiros irão se reunir em um seminário com o objetivo de ampliar e aprofundar sua reflexão acerca dos desafios e rumos da radiodifusão pública. Para tanto, o Conselho Curador convidou pesquisadores, especialistas e gestores de instituições públicas e privadas das áreas de cultura, educação e comunicação para expor suas visões, trocar informações, debater cenários e ideias.</p>
