@@ -1,5 +1,7 @@
 <?php
-$assets = $pager->getResults();
+if(count($pager) > 0) {
+  $assets = $pager->getResults();
+}
 ?>
 
 <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
