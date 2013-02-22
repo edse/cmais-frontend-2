@@ -15,7 +15,7 @@
       <div class="box-publicidade span9">
         <!-- portal-cocorico -->
         <script type='text/javascript'>
-        GA_googleFillSlot("portal-cocorico");
+        GA_googleFillSlot("portal-cocorico-familia");
         </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->
