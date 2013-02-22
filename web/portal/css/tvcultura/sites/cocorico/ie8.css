@@ -10,12 +10,14 @@
 .row-fluid .topo-coco { *margin-top:45px; *clear: both; }
 .relacionados .tit  {*max-width:300px; background:none !important;} 
 .tit a { padding-right:0; margin-right:9px; text-align:center; }
-.menu .lista-personagens { min-height:95px; height:95px;}
+/*.menu .lista-personagens { min-height:95px; height:95px;}*/
 .menu.listao .lista-personagens { *height:600px;  }
 #convidados .span4 { margin-left:10px; }
 .paginacao .proximo { *padding-right:25px;}
+/*
 .conteudo .span3.bastidores { margin-left:10px; float:left; }
 .conteudo .span3.bastidores { *margin-left:9px; }
+*/
 .conteudo .col-esq.span8 { *margin-left:3px; }
 .conteudo .box-radio { *margin-left:5px; }
 .box-radio .destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
@@ -27,7 +29,7 @@
 .imprimir li.span4 { margin-left:5px !important; height:87px; overflow:hidden; }
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
-.bastidores.span4 { min-height: 150px; }
+.bastidores.span4 { height: 300px; }
 .conteudo a.destaque2  { margin-left:10px !important; }
 #naweb .twitter { *margin-left:5px; }
 #agenda .acontece,
@@ -41,7 +43,9 @@
 .topo-familia .navbar .nav > li.familia { *margin:5px 0 0 0; }
 .topo-familia .navbar .nav > li { *margin-right:0; }
 .votar.span12 { margin:0; }
-.tudo #myCarousel { margin-top:44px; }
+/*.tudo #myCarousel { margin-top:44px; }*/
 
 .box-destaque.span4,
 .box-destaque.span6 { margin-left:5px; }
+.modal {z-index: 2000;}
+.modal-backdrop.fade.in { display:none; }

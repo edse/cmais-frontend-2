@@ -10,7 +10,7 @@
       <div class="box-publicidade span9">
         <!-- portal-cocorico2 -->
         <script type='text/javascript'>
-        GA_googleFillSlot("portal-cocorico2");
+        GA_googleFillSlot("portal-cocorico-familia");
         </script>
       </div>
       <!-- / BOX PUBLICIDADE 2 -->

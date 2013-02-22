@@ -60,7 +60,8 @@
     </script>
     <!-- /scripts -->
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/cocorico/bootstrap.css" rel="stylesheet">
+    <!--link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
     <!--link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
     
     <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
@@ -85,7 +86,7 @@
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container" style="width: 414px;">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
