@@ -291,34 +291,6 @@ bold,
 .navbar-fixed-top .container { width:414px }
 /* /topo*/
 
-/* IE*/
-/*
-.menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
-.menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
-*/
-/*
-
-.menu .navbar .nav > li .icon { margin:1px\9; }
-.menu .navbar .nav > li.personagens { margin-right:5px\9; }
-.menu .navbar .nav,
-.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
-*/
-.container, 
-.navbar-static-top .container, 
-.navbar-fixed-top .container, 
-.navbar-fixed-bottom .container { width:1190px\9;  }
-
-.destaques-small li.span2 a {  *margin-bottom:10px;}
-.conteudo .destaques-small { *margin-left:4px; }
-/*
-.tit-pagina,
-.tit-especial { min-width:700px\9; }
-*/
-.voltar .divisao {  *display:none; }
-.destaques.span6 .bold { min-width: 300px\9; }
-.destaques a.span12 { *width:265px; }
-/* /IE8*/
-
 .carousel-control { opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
 .ico-seta-titulo{background: url(/portal/images/capaPrograma/cocorico/seta-titulo.png) no-repeat; width:19px; height:10px; position:absolute; top:24px;}
 
@@ -428,5 +400,37 @@ bold,
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
 
+/* IE*/
+/*
+.menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
+.menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
+*/
+/*
+
+.menu .navbar .nav > li .icon { margin:1px\9; }
+.menu .navbar .nav > li.personagens { margin-right:5px\9; }
+.menu .navbar .nav,
+.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
+*/
+/*
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container { width:1190px\9;  }
+
+.destaques-small li.span2 a {  *margin-bottom:10px;}
+.conteudo .destaques-small { *margin-left:4px; }
+*/
+/*
+.tit-pagina,
+.tit-especial { min-width:700px\9; }
+*/
+/*
+.voltar .divisao {  *display:none; }
+.destaques.span6 .bold { min-width: 300px\9; }
+.destaques a.span12 { *width:265px; }
+
+*/
+/* /IE8*/
 
 
