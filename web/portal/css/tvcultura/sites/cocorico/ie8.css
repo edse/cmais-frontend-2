@@ -27,7 +27,9 @@
 .imprimir li.span4 { margin-left:5px !important; height:87px; overflow:hidden; }
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
+/*
 .bastidores.span4 { min-height: 150px; }
+*/
 .conteudo a.destaque2  { margin-left:10px !important; }
 #naweb .twitter { *margin-left:5px; }
 #agenda .acontece,
