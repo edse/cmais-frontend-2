@@ -48,3 +48,4 @@
 .box-destaque.span4,
 .box-destaque.span6 { margin-left:5px; }
 .modal {z-index: 2000;}
+.modal-backdrop.fade.in { display:none; }
