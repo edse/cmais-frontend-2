@@ -1530,6 +1530,58 @@ EOT;
     }
     die("0");
   }
+  
+  public function executeScheduledDisplays(sfWebRequest $request){
+    $this->setLayout(false);
+    $return = "";
+    $section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($request->getParameter('site_id'), $request->getParameter('section_slug'));
+    
+    $paramDays = $request->getParameter('days');
+    $days = explode(",", $paramDays);
+    $block_slug = "";
+    if(is_array($days)) {
+      foreach($days as $day) {
+        if($day == date('Y-m-d', time())) {
+          $block_slug = $day;
+          break;        
+        }
+      }
+      if ($block_slug == "") {
+        if ($days[0] > date('Y-m-d', time()))
+          $block_slug = $days[0];
+        else
+          $block_slug = end($days);
+      }
+    }
+    $block = $section->retriveBlockBySlug($block_slug);
+    
+    $limit = $request->getParameter('limit');
+    $orderby = $request->getParameter('orderby');
+    
+    $displays = Doctrine_Query::create()
+      ->select('d.*')
+      ->from('Display d')
+      ->where('d.block_id = ?', $block->id)
+      ->andWhere('d.is_active = ?', 1)
+      ->andWhere('date_end IS NULL OR d.date_end >= ?', date('Y-m-d H:i:s', time()))
+      ->orderBy($orderby)
+      ->limit($limit)
+      ->execute();
+      
+    $return .= '<p class="titulos" id="dia">'.$block->getTitle().'</p>';
+    $headline = $displays[0]->getHeadline();
+    foreach($displays as $d) {
+      if ($headline != $d->getHeadline()) {
+        $headline = $d->getHeadline();
+        $return .= '<p class="titulos" id="assunto">'.$headline.'</p>';
+      }
+      $return .= '<p class="azul">'.$d->getTitle().'</p>';
+      $return .= '<p>' . ($d->getDescription() ? $d->getDescription() : $d->gethtml()) . '</p>';  
+    }
+    echo $return;
+    die();
+  }
+  
 
 }
 

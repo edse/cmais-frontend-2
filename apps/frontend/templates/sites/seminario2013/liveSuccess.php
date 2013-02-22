@@ -101,19 +101,40 @@
           <!-- /NOTICIA INTERNA -->
         </div>
         <!-- ESQUERDA -->
+        <script>
+          $(function(){
+            //TIMER TRANSMISSAO
+            function timer1(){
+              var request = $.ajax({
+                data: {
+                  site_id: <?php echo $site->id ?>,
+                  section_slug: 'live',
+                  limit: '3',
+                  orderby: 'date_start asc',
+                  days: '2013-02-25, 2013-02-26'
+                },
+                dataType: 'html',
+                success: function(data) {
+                  $('#programacao').html(data);
+                },
+                url: '/ajax/scheduleddisplays'
+              });
+            }
+            
+            $(window).load(function(){
+              var t=setInterval("timer1()",300000); // a cada 5 minutos
+            });          
+          });
+        </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
           <div class="box-seminario">
             <h3>Programação</h3>
             <div class="content">
-            <p class="titulos">25 DE FEVEREIRO</p>
-            <p class="titulos">Radiodifusão pública para quê?</p>
-            <p class="azul">9h00 – Abertura</p>
-            <p class="azul">9h10 - Palestra</p>
-            <p>Muniz Sodré (professor emérito da Universidade Federal do Rio de Janeiro, autor de cerca de 30 livros nas áreas de Comunicação e Cultura) + 30 minutos de debate</p>
-            <p class="azul">10h00 – Palestra</p>
-            <p>Jorge da Cunha Lima (escritor e jornalista; presidente do Conselho Diretor da Associação de Televisões Educativas e Culturais Ibero-Americanas (ATEI); presidiu a TV Cultura, o Conselho Curador da FPA, a TV Gazeta e a ABEPEC) + 30 minutos de debate</p>
-            <a class="veja" href="http://www.cmais.com.br/seminario2013/programacao">veja a programação completa</a>
+              <div id="programacao">
+                ...
+              </div>
+              <a class="veja" href="http://www.cmais.com.br/seminario2013/programacao">veja a programação completa</a>
            </div>
           </div>
           
