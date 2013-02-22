@@ -102,7 +102,6 @@
         </div>
         <!-- ESQUERDA -->
         <script>
-          $(function(){
             //TIMER TRANSMISSAO
             function timer(){
               var request = $.ajax({
@@ -121,12 +120,13 @@
               });
             }
             
-            $(window).load(function(){
-              var t=setInterval("timer()",300000); // a cada 5 minutos
-            }); 
+            $(function() {
+              $(window).load(function(){
+                var t=setInterval("timer()",300000); // a cada 5 minutos
+              }); 
+            });
             
-            $timer();         
-          });
+            timer();
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
