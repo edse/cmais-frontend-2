@@ -288,7 +288,7 @@ bold,
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-.navbar-fixed-top .navbar-inner .container { width:414px }
+.navbar-fixed-top .navbar-inner .container { width:414px important; }
 /* /topo*/
 
 .carousel-control { opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
