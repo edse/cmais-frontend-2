@@ -22,6 +22,7 @@
 .conteudo .span3.bastidores { margin-left:10px; float:left; }
 .conteudo .span3.bastidores { *margin-left:9px; }
 */
+.conteudo .span3.bastidores a { float:left; }
 .conteudo .col-esq.span8 { *margin-left:3px; }
 .conteudo .box-radio { *margin-left:5px; }
 .box-radio .destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
