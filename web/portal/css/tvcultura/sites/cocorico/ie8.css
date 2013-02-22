@@ -1,13 +1,10 @@
 .destaques-small li.span2 { margin:0 16px 10px 0; } 
-/*
 .destaques a.span12 { width: 290px; }
-*/
 .conteudo .destaques-small { margin-left:15px; }
 .menu .lista-personagens a { border:none; }
-/*
+
 .destaques a.span12 { width:300px; }
 .destaques .span4 { width: 300px; overflow:hidden; }
-*/
 .tit-pagina .likes { width: 95px; }
 #menu-familia li a { font-weight:normal; }
 .row-fluid .navbar,
@@ -22,7 +19,6 @@
 .conteudo .span3.bastidores { margin-left:10px; float:left; }
 .conteudo .span3.bastidores { *margin-left:9px; }
 */
-.conteudo .span3.bastidores a { float:left; }
 .conteudo .col-esq.span8 { *margin-left:3px; }
 .conteudo .box-radio { *margin-left:5px; }
 .box-radio .destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
