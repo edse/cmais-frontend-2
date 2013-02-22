@@ -104,7 +104,7 @@
         <script>
           $(function(){
             //TIMER TRANSMISSAO
-            function timer1(){
+            function timer(){
               var request = $.ajax({
                 data: {
                   site_id: <?php echo $site->id ?>,
@@ -122,9 +122,12 @@
             }
             
             $(window).load(function(){
-              var t=setInterval("timer1()",300000); // a cada 5 minutos
+              var t=setInterval("timer()",300000); // a cada 5 minutos
             });          
           });
+        </script>
+        <script>
+          timer();
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
