@@ -48,4 +48,4 @@
 .box-destaque.span4,
 .box-destaque.span6 { margin-left:5px; }
 #myModal.modal {z-index: 5000;}
-.modal-backdrop.fade.in { z-index: -100; }
+.modal-backdrop.fade.in { *display:none; }
