@@ -9,10 +9,6 @@
 <div class="bg-chamada">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
   ?>
-
-  <!--div id="chamada" class="grid3">
-    <span>teste</span><a href="#" target="fdsfds">fsdfdsfsdf fsdf sdfsd fds</a>
-  </div-->
 </div>
 <!-- CAPA SITE -->
 <div id="capa-site">
@@ -56,14 +52,20 @@
       <div class="capa grid3 home">
         <!-- ESQUERDA -->
         <div class="grid2" id="esquerda">
+        
+          
           
            <script>
       $(function(){
         $('.btn-port').click(function(){
+          $('#video-port').show();
+          $('#video-esp').hide();
           $(this).addClass('ativo');
           $('.btn-esp').removeClass('ativo');
         });
         $('.btn-esp').click(function(){
+          $('#video-esp').show();
+          $('#video-port').hide();
           $(this).addClass('ativo');
           $('.btn-port').removeClass('ativo');
         });
@@ -74,39 +76,18 @@
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript: stream1();" class="ativo btn-port">Português</a>
-              <!--a class="btn-esp" href="javascript: stream2();">español</a-->
+              <a href="javascript:;" class="ativo btn-port">Português</a>
+              <!--a class="btn-esp" href="javascript:;">español</a-->
             </div>
-            <div id="live"></div>
-            <script>
-              jQuery(document).ready(function(){
-                stream1();
-              });
-              function stream1(){
-                var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','630','358','9');
-                so.addVariable('controlbar', 'bottom');
-                so.addVariable('autostart', 'true');
-                so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-                so.addVariable('file', 'tv');
-                so.addVariable('type', 'video');
-                so.addParam('allowscriptaccess','always');
-                so.addParam('allowfullscreen','true');
-                so.addParam('wmode','transparent');
-                so.write('live');
-              }
-              function stream2(){
-                var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','630','358','9');
-                so.addVariable('controlbar', 'bottom');
-                so.addVariable('autostart', 'true');
-                so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-                so.addVariable('file', 'tv');
-                so.addVariable('type', 'video');
-                so.addParam('allowscriptaccess','always');
-                so.addParam('allowfullscreen','true');
-                so.addParam('wmode','transparent');
-                so.write('live');
-              }
-            </script>
+            
+            <div id="video-port" style="display:block;">
+              <iframe width="630" height="358" src="http://www.youtube.com/embed/87pjsODqbNA?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div id="video-esp" style="display:none;">
+              <iframe width="630" height="358" src="http://www.youtube.com/embed/iLaCwy-xgYs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
             <p><?php echo $section->getDescription() ?></p>  
             <!--div class="box-seminario">
               <h3>Participe</h3>
