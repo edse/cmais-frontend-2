@@ -1536,8 +1536,8 @@ EOT;
     
     $this->setLayout(false);
     $return = "";
-    //$section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($request->getParameter('site_id'), $request->getParameter('section_slug'));
-    die('1');
+    $section = Doctrine::getTable('Section')->findOneById($request->getParameter('section_id'));
+    die($section->slug);
     /*
     $paramDays = $request->getParameter('days');
     $days = explode(",", $paramDays);
