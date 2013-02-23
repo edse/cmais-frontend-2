@@ -1556,7 +1556,7 @@ EOT;
     }
     $block = $section->retriveBlockBySlug($block_slug);
     
-    $limit = $request->getParameter('limit');
+    $limit = $request->getParameter('limit'); 
     $orderby = $request->getParameter('orderby');
     
     $displays = Doctrine_Query::create()
