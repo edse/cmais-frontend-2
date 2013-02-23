@@ -1537,8 +1537,6 @@ EOT;
     $this->setLayout(false);
     $return = "";
     $section = Doctrine::getTable('Section')->findOneById($request->getParameter('section_id'));
-    die($section->slug);
-    /*
     $paramDays = $request->getParameter('days');
     $days = explode(",", $paramDays);
     $block_slug = "";
@@ -1582,8 +1580,6 @@ EOT;
       $return .= '<p>' . ($d->getDescription() ? $d->getDescription() : $d->gethtml()) . '</p>';  
     }
     echo $return;
-     * 
-     */
     die();
   }
   
