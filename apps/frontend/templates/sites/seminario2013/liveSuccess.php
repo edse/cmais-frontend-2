@@ -111,7 +111,7 @@
               }/*,
               url: '/ajax/scheduledisplays'
               */
-            });
+            }); 
           }
           
           jQuery(window).load(function() {
