@@ -94,8 +94,8 @@
         </div>
         <!-- ESQUERDA -->
         <script>
-          function timer1(){
-            var request = $.ajax({
+          function timer1() {
+            var request = jQuery.ajax({
               data: {
                 site_id: <?php echo $site->id ?>,
                 section_slug: 'live',
@@ -105,14 +105,13 @@
               },
               dataType: 'html',
               success: function(data) {
-                $('#programacao').html(data);
+                jQuery('#programacao').html(data);
               },
               url: '/ajax/scheduleddisplays'
             });
           }
-          timer();
           
-          $(window).load(function(){
+          jQuery(window).load(function(){
             var t=setInterval("timer1()",4000);
           });
         </script>
