@@ -94,6 +94,7 @@
         </div>
         <!-- ESQUERDA -->
         <script>
+        jQuery(document).ready(function(){
           function timer1() {
             var request = jQuery.ajax({
               data: {
@@ -114,6 +115,7 @@
           jQuery(window).load(function(){
             var t=setInterval("timer1()",4000);
           });
+        });
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
