@@ -69,7 +69,7 @@
           <div class="box-interna ">
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
               <a href="javascript:;" class="ativo btn-port">Português</a>
-              <!--a class="btn-esp" href="javascript:;">español</a-->
+              <a class="btn-esp" href="javascript:;">español</a>
             </div>
             
             <div id="video-port" style="display:block;">
@@ -115,7 +115,7 @@
           jQuery(window).load(function() {
             var t=setInterval("timer1()",300000);
           });
-          timer1();
+          timer1(); 
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
