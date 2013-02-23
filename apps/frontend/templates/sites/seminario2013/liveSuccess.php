@@ -110,6 +110,7 @@
               url: '/ajax/scheduleddisplays'
             });
           }
+          timer();
             /*
           $(window).load(function(){
             var t=setInterval("timer()",5000); // a cada 5 minutos
