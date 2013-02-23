@@ -107,7 +107,7 @@
               success: function(data) {
                 jQuery('#programacao').html(data);
               },
-              url: '/ajax/scheduledDisplays'
+              url: '/ajax/scheduleddisplays'
             });
           }
           
