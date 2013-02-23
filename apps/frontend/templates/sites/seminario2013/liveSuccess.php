@@ -114,7 +114,7 @@
                 },
                 dataType: 'html',
                 success: function(data) {
-                  //$('#programacao').html(data);
+                  $('#programacao').html(data);
                 },
                 url: '/ajax/scheduleddisplays'
               });
