@@ -114,19 +114,21 @@
                 },
                 dataType: 'html',
                 success: function(data) {
-                  $('#programacao').html(data);
+                  //$('#programacao').html(data);
                 },
                 url: '/ajax/scheduleddisplays'
               });
             }
             
-            $(function() {
-              $(window).load(function(){
-                var t=setInterval("timer()",300000); // a cada 5 minutos
-              }); 
-            });
+            $(window).load(function(){
+              var t=setInterval("timer()",300000); // a cada 5 minutos
+            }); 
             
-            timer();
+            
+            
+            jQuery(document).ready(function() {
+              timer();
+            }
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
