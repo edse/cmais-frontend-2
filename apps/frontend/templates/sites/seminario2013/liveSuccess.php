@@ -102,13 +102,15 @@
                 section_slug: 'live',
                 limit: '3',
                 orderby: 'date_start asc',
-                days: '2013-02-25, 2013-02-26'
+                days: '2013-02-25, 2013-02-26',
+                action: 'scheduledDisplays'
               },
               dataType: 'html',
               success: function(data) {
                 jQuery('#programacao').html(data);
-              },
+              }/*,
               url: '/ajax/scheduledisplays'
+              */
             });
           }
           
