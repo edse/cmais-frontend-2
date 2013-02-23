@@ -1570,8 +1570,7 @@ EOT;
       ->execute();
       
     $return .= '<p class="titulos" id="dia">'.$block->getTitle().'</p>';
-    if(isset($displays[0]->getHeadline()))
-      $headline = $displays[0]->getHeadline();
+    $headline = $displays[0]->getHeadline();
     foreach($displays as $d) {
       if ($headline != $d->getHeadline()) {
         $headline = $d->getHeadline();
