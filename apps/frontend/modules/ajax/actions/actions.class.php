@@ -1533,6 +1533,7 @@ EOT;
   
   public function executeScheduledisplays(sfWebRequest $request)
   {
+    /*
     $this->setLayout(false);
     $return = "";
     $section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($request->getParameter('site_id'), $request->getParameter('section_slug'));
@@ -1580,6 +1581,8 @@ EOT;
       $return .= '<p>' . ($d->getDescription() ? $d->getDescription() : $d->gethtml()) . '</p>';  
     }
     echo $return;
+     * 
+     */
     die();
   }
   
