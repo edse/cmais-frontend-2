@@ -113,7 +113,7 @@
           }
           
           jQuery(window).load(function() {
-            var t=setInterval("timer1()",300000);
+            var t=setInterval("timer1()",7000);
           });
           timer1(); 
         </script>
