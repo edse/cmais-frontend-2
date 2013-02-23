@@ -1571,6 +1571,7 @@ EOT;
       
     $return .= '<p class="titulos" id="dia">'.$block->getTitle().'</p>';
     $headline = $displays[0]->getHeadline();
+    $return .= '<p class="titulos" id="assunto">'.$headline.'</p>';
     foreach($displays as $d) {
       if ($headline != $d->getHeadline()) {
         $headline = $d->getHeadline();
