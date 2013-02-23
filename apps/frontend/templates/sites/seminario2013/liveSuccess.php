@@ -115,6 +115,7 @@
           jQuery(window).load(function(){
             var t=setInterval("timer1()",4000);
           });
+           window['timer1'] = timer1;
         });
         </script>
         <!-- DIREITA -->
