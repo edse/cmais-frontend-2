@@ -102,21 +102,20 @@
                 section_slug: 'live',
                 limit: '3',
                 orderby: 'date_start asc',
-                days: '2013-02-25, 2013-02-26',
-                action: 'scheduledDisplays'
+                days: '2013-02-25, 2013-02-26'
               },
               dataType: 'html',
               success: function(data) {
                 jQuery('#programacao').html(data);
-              }/*,
+              },
               url: '/ajax/scheduledisplays'
-              */
             }); 
           }
           
           jQuery(window).load(function() {
-            var t=setInterval("timer1()",4000);
+            var t=setInterval("timer1()",300000);
           });
+          timer1();
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
