@@ -94,8 +94,8 @@
         </div>
         <!-- ESQUERDA -->
         <script>
-        jQuery(document).ready(function(){
-          function timer1() {
+          function timer1()
+          {
             var request = jQuery.ajax({
               data: {
                 site_id: <?php echo $site->id ?>,
@@ -108,15 +108,13 @@
               success: function(data) {
                 jQuery('#programacao').html(data);
               },
-              url: '/ajax/scheduleddisplays'
+              url: '/ajax/scheduledisplays'
             });
           }
           
-          jQuery(window).load(function(){
+          jQuery(window).load(function() {
             var t=setInterval("timer1()",4000);
           });
-           window['timer1'] = timer1;
-        });
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
