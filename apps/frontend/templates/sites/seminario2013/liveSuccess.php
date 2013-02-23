@@ -94,7 +94,7 @@
         </div>
         <!-- ESQUERDA -->
         <script>
-          function timer(){
+          function timer1(){
             var request = $.ajax({
               data: {
                 site_id: <?php echo $site->id ?>,
@@ -111,10 +111,10 @@
             });
           }
           timer();
-            /*
+          
           $(window).load(function(){
-            var t=setInterval("timer()",5000); // a cada 5 minutos
-          }); */
+            var t=setInterval("timer1()",4000);
+          });
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
