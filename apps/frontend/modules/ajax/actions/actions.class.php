@@ -1532,7 +1532,7 @@ EOT;
   }
   
   public function executeScheduledDisplays(sfWebRequest $request){
-    //$this->setLayout(false);
+    $this->setLayout(false);
     $return = "";
     $section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($request->getParameter('site_id'), $request->getParameter('section_slug'));
     
