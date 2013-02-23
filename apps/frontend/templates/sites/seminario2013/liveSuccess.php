@@ -102,33 +102,26 @@
         </div>
         <!-- ESQUERDA -->
         <script>
-            //TIMER TRANSMISSAO
-            function timer(){
-              var request = $.ajax({
-                data: {
-                  site_id: <?php echo $site->id ?>,
-                  section_slug: 'live',
-                  limit: '3',
-                  orderby: 'date_start asc',
-                  days: '2013-02-25, 2013-02-26'
-                },
-                dataType: 'html',
-                success: function(data) {
-                  $('#programacao').html(data);
-                },
-                url: '/ajax/scheduleddisplays'
-              });
-            }
+          function timer(){
+            var request = $.ajax({
+              data: {
+                site_id: <?php echo $site->id ?>,
+                section_slug: 'live',
+                limit: '3',
+                orderby: 'date_start asc',
+                days: '2013-02-25, 2013-02-26'
+              },
+              dataType: 'html',
+              success: function(data) {
+                $('#programacao').html(data);
+              },
+              url: '/ajax/scheduleddisplays'
+            });
+          }
             
-            $(window).load(function(){
-              var t=setInterval("timer()",300000); // a cada 5 minutos
-            }); 
-            
-            
-            
-            jQuery(document).ready(function() {
-              timer();
-            }
+          $(window).load(function(){
+            var t=setInterval("timer()",5000); // a cada 5 minutos
+          }); 
         </script>
         <!-- DIREITA -->
         <div id="direita" class="grid1">
