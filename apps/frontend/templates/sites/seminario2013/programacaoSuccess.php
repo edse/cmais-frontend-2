@@ -121,7 +121,7 @@
                 <div id="dia2" style="display: none;">
                   <p class="titulos">O cenário institucional da televisão 1</p>
                   <p class="azul">9h00 - Palestra</p>
-                  <p>Hollman Morris (jornalista colombiano, adquiriu prestígio internacional com reportagens televisivas sobre os paramilitares colombianos; atual diretor da emissora pública Canal Capital, de Bogotá)</p>
+                  <p>Hollman Morris (jornalista colombiano, adquiriu prestígio internacional com reportagens televisavas sobre os paramilitares colombianos; atual diretor da emissora pública Canal Capital, de Bogotá)</p>
                   <p>+ 30 minutos de debate</p>
                   
                   <p class="azul">9h45 – Palestra</p>
@@ -133,10 +133,10 @@
                   <p class="titulos">Financiamento e sustentabilidade</p>
                   
                   <p class="azul">10h45</p>
-                  <p>Yacoff Sarkovas (CEO da Edelman Significa, especialista em construção de marcas)</p>
+                  <p>Carlos Antonio Luque (economista, professor titular da FEA-USP, diretor-presidente da Fundação Instituto de Pesquisas Econômica – FIPE) </p>
                   
                   <p class="azul">11h00</p>
-                  <p>Carlos Antonio Luque (economista, professor titular da FEA-USP, diretor-presidente da Fundação Instituto de Pesquisas Econômica – FIPE) </p>
+                  <p>Yacoff Sarkovas (CEO da Edelman Significa, especialista em construção de marcas)</p>
                   
                   <p class="azul">11h15</p>
                   <p>Paulo Nassar (jornalista, professor  ECA/USP e diretor-geral da Associação Brasileira de Comunicação Empresarial – Aberje)</p>
