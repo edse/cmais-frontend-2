@@ -118,7 +118,7 @@
           timer1(); 
         </script>
         <!-- DIREITA -->
-        <div id="direita" class="grid1">
+        <div id="direita" class="grid1" style="margin-top: 0px;">
           <div class="box-seminario">
             <h3>Programação</h3>
             <div class="content">
