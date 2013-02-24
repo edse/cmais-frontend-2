@@ -98,8 +98,8 @@
           {
             var request = jQuery.ajax({
               data: {
-                site_id: <?php echo $site->id ?>,
-                section_id: '<?php echo $section->id ?>',
+                site_id: '1174',
+                section_id: '2240',
                 limit: '3',
                 orderby: 'date_start asc',
                 days: '2013-02-25, 2013-02-26'
