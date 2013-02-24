@@ -67,21 +67,21 @@
     
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
+            <!--
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
               <a href="javascript:;" class="ativo btn-port">Português</a>
               <a class="btn-esp" href="javascript:;">español</a>
             </div>
-            
+            -->
             <div id="video-port" style="display:block;">
-              <iframe width="630" height="358" src="http://www.youtube.com/embed/BOU_EJ1GHSk?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="630" height="358" src="http://www.youtube.com/embed/JxMjFHoApxs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
               <!-- este entra na terça-feira e o anterior sai -->
               <!--iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
             </div>
             
             <div id="video-esp" style="display:none;">
               <iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
+            </div>            
            
             
             <p><?php echo $section->getDescription() ?></p>  
