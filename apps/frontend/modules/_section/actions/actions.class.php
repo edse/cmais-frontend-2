@@ -1205,7 +1205,7 @@ class _sectionActions extends sfActions
             if (in_array($this->section->getSlug(), array("tvcocorico"))) {
               $boundary = md5(date('r', time()));
               $msg = "\r\n\r\n--" . $boundary . "\r\n";
-              $msg .= "Content-type: text/html; charset=\"iso-8859-1\"\r\n";
+              $msg .= "Content-type: text/html; charset=\"utf-8\"\r\n";
               $msg .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
               $msg .= "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
@@ -1215,7 +1215,7 @@ class _sectionActions extends sfActions
               $msg .= "\r\n\r\n--" . $boundary . "\r\n"; // <- This idicates that I'm going to start 
               $msg .= "Content-type: image/jpeg\r\n"; // <- Here I'm saying that this Content Type is for a JPEG image
               $msg .= "Content-Transfer-Encoding: base64\r\n"; // <- this is saying that this section's content will be base64 Encoded
-              $msg .= "Content-Disposition: attachment; filename=\"Image.jpg\"\r\n"; // <- This is saying the content below should be an attachment and gives it a file name
+              $msg .= "Content-Disposition: attachment; filename=\"".$_FILES["datafile"]["tmp_name"]."\"\r\n"; // <- This is saying the content below should be an attachment and gives it a file name
               $msg .= base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"]));
               $msg .= "\r\n\r\n--" . $boundary . "--"; // <- This indicates the end of the boundries. Notice the additional "--" after the boundry's value.              
             }
