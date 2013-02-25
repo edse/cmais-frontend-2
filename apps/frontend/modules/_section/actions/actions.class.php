@@ -1206,11 +1206,7 @@ class _sectionActions extends sfActions
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
               }
-              $msg .= "\r\n\r\n--" . $boundary . "\r\n"; 
-              $msg .= "Content-type: image/jpeg\r\n";
-              $msg .= "Content-Disposition: attachment; filename=\"".$_FILES["datafile"]["tmp_name"]."\"\r\n";
               $msg .= base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"]));
-              $msg .= "\r\n\r\n--" . $boundary . "--";              
             }
             else {
               $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
