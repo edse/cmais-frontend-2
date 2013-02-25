@@ -26,9 +26,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "Content-Transfer-Encoding: base64";
     $headers[] = "Content-Disposition: attachment; filename=\"{$file_name}\"";
     $headers[] = $file_contents;
-    $headers[] = "--{$uid}";
     $headers[] = "Content-type:text/html; charset=utf-8";
-    $headers[] = "Content-Transfer-Encoding: 8bit";
+    $headers[] = "Content-Transfer-Encoding: 7bit";
+    $headers[] = $body;
     $headers[] = "--{$uid}--";
 
     $body = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
