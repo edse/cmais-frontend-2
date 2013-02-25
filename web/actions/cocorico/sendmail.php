@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
     while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-        $msg .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
+        $body .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
     $body = stripslashes(nl2br($body));
     
