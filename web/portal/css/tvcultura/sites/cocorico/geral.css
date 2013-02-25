@@ -59,7 +59,7 @@ ul li { list-style:none; }
 #naweb .instagram h3,
 #agenda .lista h3,
 #agenda .lista span,
-#agenda .titulo-post{font-family: 'ubunturegular', sans-serif; }
+#agenda .titulo-post{font-family: 'ubuntu', sans-serif; }
 
 /*border-radius 10px*/
 #convidados li a,

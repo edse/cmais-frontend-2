@@ -145,7 +145,7 @@
     <?php echo $sf_content ?>
     
     <div id="fb-root"></div> 
- <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+ <!--link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'-->
  
   </body>
 </html>
