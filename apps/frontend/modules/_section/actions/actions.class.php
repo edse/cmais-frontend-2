@@ -1197,29 +1197,23 @@ class _sectionActions extends sfActions
             $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
-            if (in_array($this->section->getSlug(), array("tvcocorico")))
-              $cabecalho .= 'Content-Type: multipart/mixed; boundary="PHP-mixed-'.md5(date('r', time())).'"';
-            else
-              $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
             
             if (in_array($this->section->getSlug(), array("tvcocorico"))) {
               $boundary = md5(date('r', time()));
-              $msg = "\r\n\r\n--" . $boundary . "\r\n";
-              $msg .= "Content-type: text/html; charset=\"utf-8\"\r\n";
-              $msg .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+              $cabecalho .= 'Content-Type: multipart/mixed; boundary="PHP-mixed-'.$boundary.'"';
               $msg .= "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
               }
-              $msg .= "\r\n\r\n--" . $boundary . "\r\n"; // <- This idicates that I'm going to start 
-              $msg .= "Content-type: image/jpeg\r\n"; // <- Here I'm saying that this Content Type is for a JPEG image
-              $msg .= "Content-Transfer-Encoding: base64\r\n"; // <- this is saying that this section's content will be base64 Encoded
-              $msg .= "Content-Disposition: attachment; filename=\"".$_FILES["datafile"]["tmp_name"]."\"\r\n"; // <- This is saying the content below should be an attachment and gives it a file name
+              $msg .= "\r\n\r\n--" . $boundary . "\r\n"; 
+              $msg .= "Content-type: image/jpeg\r\n";
+              $msg .= "Content-Disposition: attachment; filename=\"".$_FILES["datafile"]["tmp_name"]."\"\r\n";
               $msg .= base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"]));
-              $msg .= "\r\n\r\n--" . $boundary . "--"; // <- This indicates the end of the boundries. Notice the additional "--" after the boundry's value.              
+              $msg .= "\r\n\r\n--" . $boundary . "--";              
             }
             else {
+              $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
               $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
