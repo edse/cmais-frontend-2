@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $body = stripslashes(nl2br($body));
     
-    $file_name = basename($_FILES['datafile']['tmp_name']); // Get file name
+    $file_name = basename($_FILES['datafile']['name']); // Get file name
     $data = file_get_contents($_FILES['datafile']['tmp_name']); // Read file contents 
     $file_contents = chunk_split(base64_encode($data)); // Encode file data into base64
     $uid = md5(time()); // Create unique boundary from timestamps 
@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "X-Mailer: Formmail [version 1.0]";
     $headers[] = "--{$uid}";
     $headers[] = "Content-type:text/html; charset=utf-8"; // Set message content type
-    $headers[] = "Content-Transfer-Encoding: 8bit";
+    $headers[] = "Content-Transfer-Encoding: 7bit";
     $headers[] = $body; // Dump message
     $headers[] = "--{$uid}";
     $headers[] = "Content-Type: image/jpeg; name=\"{$file_name}\""; // Set content type and file name
