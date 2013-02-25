@@ -121,7 +121,7 @@
                 <div id="dia2" style="display: none;">
                   <p class="titulos">O cenário institucional da televisão 1</p>
                   <p class="azul">9h00 - Palestra</p>
-                  <p>Hollman Morris (jornalista colombiano, adquiriu prestígio internacional com reportagens televisavas sobre os paramilitares colombianos; atual diretor da emissora pública Canal Capital, de Bogotá)</p>
+                  <p>Hollman Morris (jornalista colombiano, adquiriu prestígio internacional com reportagens televisivas sobre os paramilitares colombianos; atual diretor da emissora pública Canal Capital, de Bogotá)</p>
                   <p>+ 30 minutos de debate</p>
                   
                   <p class="azul">9h45 – Palestra</p>
