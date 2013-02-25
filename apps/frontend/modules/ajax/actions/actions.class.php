@@ -1544,7 +1544,7 @@ EOT;
       foreach($days as $day) {
         if($day == date('Y-m-d', time())) {
           $block_slug = $day;
-          break;        
+          break;
         }
       }
       $block_slug = '2013-02-26';
