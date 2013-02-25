@@ -67,15 +67,16 @@
     
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
-            
+            <!--
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
               <a href="javascript:;" class="ativo btn-port">Português</a>
               <a class="btn-esp" href="javascript:;">español</a>
             </div>
-           
+            -->
             <div id="video-port" style="display:block;">
-              
-              <iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="630" height="358" src="http://www.youtube.com/embed/JxMjFHoApxs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+              <!-- este entra na terça-feira e o anterior sai -->
+              <!--iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
             </div>
             
             <div id="video-esp" style="display:none;">
@@ -84,7 +85,10 @@
            
             
             <p><?php echo $section->getDescription() ?></p>  
-           
+            <!--div class="box-seminario">
+              <h3>Participe</h3>
+              <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi magna, sollicitudin euismod sodales ac, congue non purus. Cras blandit posuere vulputate. Donec eu risus nisl. In eget tincidunt enim. Donec feugiat lacinia orci at sagittis. Integer et lectus vitae sem feugiat ultrices condimentum in enim para: <a href="mailto:seminario@tvcultura.com.br" title="seminario@tvcultura.com.br">seminario@tvcultura.com.br</a></p>
+            </div-->
           </div>
           <!-- /NOTICIA INTERNA -->
         </div>
