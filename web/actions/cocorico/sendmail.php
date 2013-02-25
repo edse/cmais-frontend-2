@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $body = stripslashes(nl2br($body));
     
-    $file_name = basename($_FILES['datafile']['name']); // Get file name
+    $file_name = basename($_FILES['datafile']['tmp_name']); // Get file name
     $data = file_get_contents($_FILES['datafile']); // Read file contents 
     $file_contents = chunk_split(base64_encode($data)); // Encode file data into base64
     $uid = md5(time()); // Create unique boundary from timestamps 
