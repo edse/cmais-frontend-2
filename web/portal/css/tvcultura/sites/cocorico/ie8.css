@@ -31,6 +31,7 @@
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
 .bastidores.span4 { height: 300px; }
+.bastidores a { *clear:both; }
 .conteudo a.destaque2  { margin-left:10px !important; }
 #naweb .twitter { *margin-left:5px; }
 #agenda .acontece,
