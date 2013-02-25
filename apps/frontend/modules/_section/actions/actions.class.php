@@ -1203,14 +1203,18 @@ class _sectionActions extends sfActions
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-              if($this->section->getSlug() == "tvcocorico")
+              if($this->section->getSlug() == "tvcocorico") {
                 header('location: http://cmais.com.br/cocorico/tvcocorico?success=1');
+                die();
+              }
               else
                 die("1");
             }
             else {
-              if($this->section->getSlug() == "tvcocorico")
+              if($this->section->getSlug() == "tvcocorico") {
                 header('location: http://cmais.com.br/cocorico/tvcocorico?error=1');
+                die();
+              }
               else
                 die("0");
             }
