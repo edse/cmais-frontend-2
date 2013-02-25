@@ -50,3 +50,4 @@
 .box-destaque.span6 { margin-left:5px; }
 #myModal.modal {z-index: 5000;}
 .modal-backdrop.fade.in { *display:none; }
+.menu .navbar .nav > li { *margin-right:2%; }
