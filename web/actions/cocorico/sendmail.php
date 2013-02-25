@@ -12,16 +12,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
-    $uid = md5(time());  
+    $uid = md5(time());
+    
+    $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
+    $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
+    $cabecalho .= "X-Priority: 3\r\n";
+    $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
+    $cabecalho .= "MIME-Version: 1.0\r\n";
+    $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
+    $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+    /*
     $headers = array();
-    $headers[] = "MIME-Version: 1.0";
     $headers[] = "Return-Path: " . $name . " <" . $email . ">";
     $headers[] = "From: " . $name . " <" . $email . ">";
+    $headers[] = "MIME-Version: 1.0";
     $headers[] = "Content-Type: multipart/mixed; boundary=\"{$uid}\"";
     $headers[] = "This is a multi-part message in MIME format.";
     $headers[] = "X-Priority: 3";
     $headers[] = "X-Mailer: Formmail [version 1.0]";
-    /*
     $headers[] = "--{$uid}";
     $headers[] = "Content-type:text/html; charset=utf-8";
     $headers[] = "Content-Transfer-Encoding: 8bit";
@@ -32,9 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "Content-Disposition: attachment; filename=\"{$file_name}\"";
     $headers[] = $file_contents;
     $headers[] = "--{$uid}--";
-     * 
-     */
-
+*/
     $body = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
     while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
@@ -42,9 +48,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $body = stripslashes(nl2br($body));
     
-
-    
-    if(mail($to, $subject, $body, implode("\r\n", $headers))){
+    //if(mail($to, $subject, $body, implode("\r\n", $headers))){
+    if(mail($to, $subject, $body, $cabecalho)){
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
       die();
     }
