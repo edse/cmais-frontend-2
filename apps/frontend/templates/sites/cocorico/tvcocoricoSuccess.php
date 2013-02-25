@@ -173,7 +173,7 @@ $(function(){
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="" enctype="multipart/form-data">
+        <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
