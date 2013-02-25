@@ -173,7 +173,10 @@ $(function(){
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="" enctype="multipart/form-data">
+        <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+          <?php if($_REQUEST['test']): ?>
+          <input type="hidden" name="test" value="1" />
+          <?php endif; ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
