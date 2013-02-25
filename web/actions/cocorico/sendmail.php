@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "X-Priority: 3";
     $headers[] = "X-Mailer: Formmail [version 1.0]";
     $headers[] = "--{$uid}";
-    $headers[] = "Content-type:text/html; charset=utf-8"; // Set message content type
+    $headers[] = "Content-type:text/plain; charset=utf-8"; // Set message content type
     $headers[] = "Content-Transfer-Encoding: 7bit";
     $headers[] = $body; // Dump message
     $headers[] = "--{$uid}";
