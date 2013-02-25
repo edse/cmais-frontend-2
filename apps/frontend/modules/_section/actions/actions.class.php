@@ -1201,8 +1201,6 @@ class _sectionActions extends sfActions
               $boundary = sha1(date('r', time()));
               $cabecalho .= 'Content-Type: multipart/mixed; boundary="PHP-mixed-'.$boundary.'"';
               $msg = "--".$boundary."\r\n";
-              $msg .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-              $msg .= "--".$boundary."\r\n";
               $msg .= 'Content-Type: text/html; charset="utf-8"'."\r\n";
               $msg .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
               $msg .= "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
@@ -1212,7 +1210,7 @@ class _sectionActions extends sfActions
               }
               $attachment = chunk_split(base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"])));
               $msg .= "--".$boundary."\r\n";
-              $msg .= "Content-Type: image/jpeg; name=\"".$attachment."\""."\r\n"; 
+              $msg .= "Content-Type: image/jpeg; name=\"".$_FILES["datafile"]["name"]."\""."\r\n"; 
               $msg .= "Content-Transfer-Encoding: base64"."\r\n";
               $msg .= "Content-Disposition: attachment"."\r\n\r\n";
               $msg .= $attachment."\r\n";
