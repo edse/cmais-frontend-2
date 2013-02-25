@@ -1213,7 +1213,7 @@ class _sectionActions extends sfActions
               $msg .= "Content-Type: image/jpeg; name=\"".$_FILES["datafile"]["name"]."\""."\r\n"; 
               $msg .= "Content-Transfer-Encoding: base64"."\r\n";
               $msg .= "Content-Disposition: attachment"."\r\n\r\n";
-              $msg .= "<img src=\"cid:PHP-CID-{$boundary}\">";
+              $msg .= "<img src=\"$attachment\">";
               //$msg .= $attachment."\r\n";
               $msg .= "--".$boundary."\r\n";              
               
