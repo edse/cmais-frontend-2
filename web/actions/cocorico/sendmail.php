@@ -21,12 +21,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "This is a multi-part message in MIME format.";
     $headers[] = "X-Priority: 3";
     $headers[] = "X-Mailer: Formmail [version 1.0]";
+    /*
+    $headers[] = "--{$uid}";
+    $headers[] = "Content-type:text/html; charset=utf-8";
+    $headers[] = "Content-Transfer-Encoding: 8bit";
+    $headers[] = $body; // Dump message
     $headers[] = "--{$uid}";
     $headers[] = "Content-Type: image/jpeg; name=\"{$file_name}\"";
     $headers[] = "Content-Transfer-Encoding: base64";
     $headers[] = "Content-Disposition: attachment; filename=\"{$file_name}\"";
     $headers[] = $file_contents;
     $headers[] = "--{$uid}--";
+     * 
+     */
 
     $body = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
     while(list($field, $value) = each($_REQUEST)) {
@@ -34,6 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $body .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
     $body = stripslashes(nl2br($body));
+    
 
     
     if(mail($to, $subject, $body, implode("\r\n", $headers))){
