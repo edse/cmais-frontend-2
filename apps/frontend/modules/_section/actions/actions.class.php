@@ -1196,21 +1196,34 @@ class _sectionActions extends sfActions
             $cabecalho .= "X-Priority: 3\r\n";
             $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
             $cabecalho .= "MIME-Version: 1.0\r\n";
-            $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             
             if (in_array($this->section->getSlug(), array("tvcocorico"))) {
               $boundary = sha1(date('r', time()));
               $cabecalho .= 'Content-Type: multipart/mixed; boundary="PHP-mixed-'.$boundary.'"';
+              $msg = "--".$boundary."\r\n";
+              $msg .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+              $msg .= "--".$boundary."\r\n";
+              $msg .= 'Content-Type: text/html; charset="utf-8"'."\r\n";
+              $msg .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
               $msg .= "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
               }
-              $attachment .= chunk_split(base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"])));
-              $msg .= "<img src=\"cid:PHP-CID-{$boundary}\">";
+              $attachment = chunk_split(base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"])));
+              $msg .= "--".$boundary."\r\n";
+              $msg .= "Content-Type: image/jpeg; name=\"".$attachment."\""."\r\n"; 
+              $msg .= "Content-Transfer-Encoding: base64"."\r\n";
+              $msg .= "Content-Disposition: attachment"."\r\n\r\n";
+              $msg .= $attachment."\r\n";
+              $msg .= "--".$boundary."\r\n";              
+              //$attachment .= 
+              //$msg .= "<img src=\"cid:PHP-CID-{$boundary}\">";
             }
             else {
+              $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
               $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+              
               $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
