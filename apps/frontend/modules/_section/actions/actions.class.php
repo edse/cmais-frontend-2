@@ -1199,14 +1199,15 @@ class _sectionActions extends sfActions
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             
             if (in_array($this->section->getSlug(), array("tvcocorico"))) {
-              $boundary = md5(date('r', time()));
+              $boundary = sha1(date('r', time()));
               $cabecalho .= 'Content-Type: multipart/mixed; boundary="PHP-mixed-'.$boundary.'"';
               $msg .= "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
               while(list($campo, $valor) = each($_REQUEST)) {
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
               }
-              $msg .= base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"]));
+              $attachment .= chunk_split(base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"])));
+              $msg .= "<img src=\"cid:PHP-CID-{$boundary}\">";
             }
             else {
               $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
