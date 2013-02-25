@@ -29,11 +29,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = "X-Priority: 3";
     $headers[] = "X-Mailer: Formmail [version 1.0]";
     $headers[] = "--{$uid}";
-    $headers[] = "Content-type:text/plain; charset=utf-8"; // Set message content type
+    $headers[] = "Content-type:text/html; charset=utf-8"; // Set message content type
     $headers[] = "Content-Transfer-Encoding: 8bit";
     $headers[] = $body; // Dump message
     $headers[] = "--{$uid}";
-    $headers[] = "Content-Type: application/octet-stream; name=\"{$file_name}\""; // Set content type and file name
+    $headers[] = "Content-Type: image/jpeg; name=\"{$file_name}\""; // Set content type and file name
     $headers[] = "Content-Transfer-Encoding: base64"; // Set file encoding base
     $headers[] = "Content-Disposition: attachment; filename=\"{$file_name}\""; // Set file Disposition
     $headers[] = $file_contents; // Dump file
