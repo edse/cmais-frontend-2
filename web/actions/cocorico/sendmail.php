@@ -3,6 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if($_REQUEST['test'] == "1") {
     
+    ini_set('sendmail_from', $email_site);
     //$to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com";
     $to = "cristovamruizjr@gmail.com";
     $email = strip_tags($_REQUEST['email']);
