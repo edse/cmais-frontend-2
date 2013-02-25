@@ -36,4 +36,4 @@ p i { font-style:italic; }
 .box-topo { display:none; }
 .home .box-interna { padding:20px 0 0 10px; }
 .box-seminario .veja { float: right; text-decoration:underline; color:#000; margin:20px 0; color:#0091c8; }
-.capa { *height:800px; }
+.capa { *min-height:1500px; }
