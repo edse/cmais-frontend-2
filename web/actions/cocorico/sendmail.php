@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = $file_contents; // Dump file
     $headers[] = "--{$uid}--"; //End boundary
     
-    if(mail($to, $subject, $body, $header)){
+    if(mail($to, $subject, $body, implode("\r\n", $headers))){
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
       die();
     }
