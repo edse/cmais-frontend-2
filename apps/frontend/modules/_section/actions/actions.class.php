@@ -1208,7 +1208,7 @@ class _sectionActions extends sfActions
                 if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                   $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
               }
-              $attachment = chunk_split(base64_encode($_FILES["datafile"]["tmp_name"]));
+              $attachment = chunk_split(base64_encode($_FILES["datafile"]["name"]));
               $msg .= "--".$boundary."\r\n";
               $msg .= "Content-Type: image/jpeg; name=\"".$_FILES["datafile"]["name"]."\""."\r\n"; 
               $msg .= "Content-Transfer-Encoding: base64"."\r\n";
