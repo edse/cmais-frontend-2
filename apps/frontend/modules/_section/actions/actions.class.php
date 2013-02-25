@@ -1195,18 +1195,37 @@ class _sectionActions extends sfActions
               if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
                 $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
             }
+            if ($this->section->getSlug() == "tvcocorico")
+              $msg .= base64_encode(file_get_contents($_FILES["datafile"]["tmp_name"]));
+                         
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "X-Priority: 3\r\n";
             $cabecalho .= "X-Mailer: Formmail [version 1.0]\r\n";
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
-            $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+            if ($this->section->getSlug() == "tvcocorico")
+              $cabecalho .= "Content-Type: multipart/mixed; boundary=\"PHP-mixed-".md5(date('r', time()))."\"";
+            else 
+              $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+            //define th e body of the message. 
+            ob_start(); //Turn on output buffering
+                         
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-              die("1");
+              if($this->section->getSlug() == "tvcocorico") {
+                header('location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1');
+                die();
+              }
+              else
+                die("1");
             }
             else {
-              die("0");
+              if($this->section->getSlug() == "tvcocorico") {
+                header('location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1');
+                die();
+              }
+              else
+                die("0");
             }
           }
           else {
