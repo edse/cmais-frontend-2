@@ -1,10 +1,5 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if($_REQUEST['test'] == "1") {
-
-$attach = array();
-
 // will contain data for attachments
 function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
  // Send mail with Attachments, and HTML tags ( http://coursesweb.net/ )
@@ -47,43 +42,49 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
 
   // sends data to mail server.
   // Returns TRUE if the mail was successfully accepted for delivery, FALSE otherwise
-  if(mail($to, $sub, $msg, $headers)) return true;
-  else return false;
+  if(mail($to, $sub, $msg, $headers))
+    return true;
+  else
+    return false;
 }
 
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+
+    $attach = array();
+
     /* Using sendMailAtt() */
-// Define variable with data to pass to sendMailAtt()
+    // Define variable with data to pass to sendMailAtt()
     $to = "cristovamruizjr@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $from = "{$name} <{$email}>";
     $subject = '[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
     $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
-    
     while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
         $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
 
-// Attach two files: an image and a zip archive
-// - Each element contains: "file path", "file mime type"
+    // Attach two files: an image and a zip archive
+    // - Each element contains: "file path", "file mime type"
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
 
-$attach[] = array($_FILES['datafile']['tmp_name'], 'image/jpeg');
+    $attach[] = array($_FILES['datafile']['tmp_name'], 'image/jpeg');
 
-// Calls the sendMailAtt() to send mail, outputs message if the mail was accepted for delivery or not
-if(sendMailAtt($to, $from, $subject, $message, $attach)) {
+    // Calls the sendMailAtt() to send mail, outputs message if the mail was accepted for delivery or not
+    if(sendMailAtt($to, $from, $subject, $message, $attach)) {
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
       die();
-}
-else{
-        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
+    }
+    else{
+      header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
       die();
-   
-}
-
+    }
 
 
     
@@ -194,10 +195,6 @@ else{
     }
      * 
      */
-  }
-  else {
-    header('Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1');
-    die();
   }
 }
 
