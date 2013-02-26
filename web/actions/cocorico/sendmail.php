@@ -20,13 +20,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $bound_last = "--{$bound_text}--\r\n";
       
     // header info                            
-    $header = "From: " . $name . " <" . $email . ">\r\n";
-    $header .= "Return-Path: " . $name . " <" . $email . ">\r\n";
+    $header = "From: {$name} <{$email}>\r\n";
+    $header .= "Return-Path: {$name} <{$email}>\r\n";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
     $header .= "X-Priority: 3\r\n";
     $header .= "X-Mailer: Formmail [version 1.0]\r\n";
-    
+
+    $body = "Multi-part message in MIME format.\n\n".$bound."\n";
+    $body .= "Content-Type:text/html; charset=\"utf-8\"\n";
+    $body .= "Content-Transfer-Encoding: 7bit\n\n";
+    $body .= "testão\n\n";
+    /*
     // body text & html
     $body = "{$bound}";
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
