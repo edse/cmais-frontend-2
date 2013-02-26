@@ -49,6 +49,7 @@
           
           
           <script>
+          /*
             $(function(){
               $('.btn-port').click(function(){
                 $('#video-port').show();
@@ -62,33 +63,41 @@
                 $(this).addClass('ativo');
                 $('.btn-port').removeClass('ativo');
               });
-            });
+            });*/
+           
+           function stream1() {
+    $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
+    $('.idioma .btn-esp').removeClass('ativo');
+    $('.idioma .btn-port').addClass('ativo');      
+  }
+
+  function stream2() {
+    $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
+    $('.idioma .btn-port').removeClass('ativo');
+    $('.idioma .btn-esp').addClass('ativo');   
+  }
           </script>
     
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
-            <!--
+            
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript:;" class="ativo btn-port">Português</a>
-              <a class="btn-esp" href="javascript:;">español</a>
+              <a class="ativo btn-esp" href="javascript: stream2();">áudio original</a>
+              <a href="javascript: stream1();" class="btn-port">áudio dublado</a>
+              
             </div>
-            -->
+           
             <div id="video-port" style="display:block;">
-              <iframe width="630" height="358" src="http://www.youtube.com/embed/JxMjFHoApxs?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-              <!-- este entra na terça-feira e o anterior sai -->
-              <!--iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
+              <iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             
-            <div id="video-esp" style="display:none;">
+            <!--div id="video-esp" style="display:none;">
               <iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>            
+            </div-->            
            
             
             <p><?php echo $section->getDescription() ?></p>  
-            <!--div class="box-seminario">
-              <h3>Participe</h3>
-              <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi magna, sollicitudin euismod sodales ac, congue non purus. Cras blandit posuere vulputate. Donec eu risus nisl. In eget tincidunt enim. Donec feugiat lacinia orci at sagittis. Integer et lectus vitae sem feugiat ultrices condimentum in enim para: <a href="mailto:seminario@tvcultura.com.br" title="seminario@tvcultura.com.br">seminario@tvcultura.com.br</a></p>
-            </div-->
+           
           </div>
           <!-- /NOTICIA INTERNA -->
         </div>

@@ -25,7 +25,7 @@
   <!-- /breadcrumb-->
   
   <!-- titulo da pagina -->
-  <h2 class="tit-pagina">rádio cocórico</h2>
+  <h2 class="tit-pagina">rádio cocoricó</h2>
   <!-- titulo da pagina -->
   
   <!-- row conteudo radio -->
