@@ -49,37 +49,50 @@
           
           
           <script>
+          /*
             $(function(){
               $('.btn-port').click(function(){
                 $('#video-port').show();
-                $('#video-esp').remove();
+                $('#video-esp').hide();
                 $(this).addClass('ativo');
                 $('.btn-esp').removeClass('ativo');
               });
               $('.btn-esp').click(function(){
                 $('#video-esp').show();
-                $('#video-port').remove();
+                $('#video-port').hide();
                 $(this).addClass('ativo');
                 $('.btn-port').removeClass('ativo');
               });
-            });
+            });*/
+           
+           function stream1() {
+    $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
+    //$('.idioma a').removeClass('ativo');
+    //$('#stream_livestream').addClass('ativo');      
+  }
+
+  function stream2() {
+    $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
+    //$('.transmissaoH li a').removeClass('ativo');
+    //$('#stream_youtube').addClass('ativo');  
+  }
           </script>
     
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
             
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript:;" class="ativo btn-port">áudio dublado</a>
-              <a class="btn-esp" href="javascript:;">áudio original</a>
+              <a href="javascript: stream4();" class="ativo btn-port">áudio dublado</a>
+              <a class="btn-esp" href="javascript: stream4();">áudio original</a>
             </div>
            
             <div id="video-port" style="display:block;">
               <iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             
-            <div id="video-esp" style="display:none;">
+            <!--div id="video-esp" style="display:none;">
               <iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>            
+            </div-->            
            
             
             <p><?php echo $section->getDescription() ?></p>  
