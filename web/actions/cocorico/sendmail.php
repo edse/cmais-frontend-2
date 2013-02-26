@@ -24,7 +24,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
     $header .= "X-Priority: 3\r\n";
-    $header .= "X-Mailer: Formmail [version 1.0]\r\n";
+    //$header .= "X-Mailer: Formmail [version 1.0]\r\n";
+    $header .= "X-Mailer: PHP/" . phpversion();
     
     // body text & html
     $body .= "{$bound}";
@@ -43,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body .= "Content-Type: image/jpeg; name=\"{$file_name}\"\r\n";
     $body .= "Content-Transfer-Encoding: base64\r\n";
     $body .= "Content-Disposition: attachment; filename=\"{$file_name}\"\r\n";
-    $body .= "{$file_contents}\r\n";
+    //$body .= "{$file_contents}\r\n";
     $body .= "{$bound_last}";
     
     // php mail function
