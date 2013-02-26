@@ -41,8 +41,7 @@ $message .= "Content-Type: image/jpeg; name=\"".$file_name."\"\r\n"
 ."Content-Transfer-Encoding: base64\r\n"
 ."Content-disposition: attachment; filename=\"".$file_name."\"\r\n"
 ."\r\n"
-.$file_contents
-.$bound_last;
+.$file_contents;
 
 //**  Send Email  **//
 
