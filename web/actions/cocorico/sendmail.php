@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
     $header .= "X-Priority: 3\r\n";
-    //$header .= "X-Mailer: Formmail [version 1.0]\r\n";
-    $header .= "X-Mailer: PHP/" . phpversion();
+    $header .= "X-Mailer: Formmail [version 1.0]\r\n";
+    //$header .= "X-Mailer: PHP/" . phpversion();
     
     // body text & html
     $body .= "{$bound}";
