@@ -69,8 +69,8 @@
           <div class="box-interna ">
             
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript:;" class="ativo btn-port">Português</a>
-              <a class="btn-esp" href="javascript:;">español</a>
+              <a href="javascript:;" class="ativo btn-port">áudio dublado</a>
+              <a class="btn-esp" href="javascript:;">áudio original</a>
             </div>
            
             <div id="video-port" style="display:block;">
