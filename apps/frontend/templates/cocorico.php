@@ -2,7 +2,7 @@
 <html lang="en">
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
@@ -60,14 +60,15 @@
     </script>
     <!-- /scripts -->
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/css/tvcultura/sites/cocorico/bootstrap.css" rel="stylesheet">
+    <!--link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
+    <!--link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
     
     <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
     <script type="text/javascript" src="/portal/js/cocorico.js"></script>
     <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet">
+    <!--link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet"-->
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -85,7 +86,7 @@
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container" style="width: 414px;">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -144,7 +145,7 @@
     <?php echo $sf_content ?>
     
     <div id="fb-root"></div> 
- <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+ <!--link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'-->
  
   </body>
 </html>

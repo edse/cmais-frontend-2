@@ -1,3 +1,29 @@
+<script type="text/javascript">
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+ //alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error == "1" || success == "1")
+  {
+    $("#destaqueForm").hide();
+    $("#formWrapper").show();
+    $("#form-contato").hide();
+    
+    if (success == "1")
+    {
+      $("#formWrapper #msgAcerto").show();
+      $("#formWrapper #msgErro").hide();
+    }
+    if (error == "1")
+    {
+      $("#formWrapper #msgErro").show();
+      $("#formWrapper #msgAcerto").hide();
+    }  
+  }
+});
+</script>
+
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
@@ -106,9 +132,8 @@
     <!-- /col direita -->
     <!-- col esquerda --> 
     <div class="span8 col-esq">
-      
       <!-- destaque-home-simples -->
-      <div class="destaque-home-tv span9">
+      <div class="destaque-home-tv span9" id="destaqueForm">
         
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
@@ -142,14 +167,16 @@
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
-      <div class="destaque-home-tv interatividade span9" style=" display: none;">
+      <div class="destaque-home-tv interatividade span9" id="formWrapper" style="display:none">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php if(!$_REQUEST['success'] && !$_REQUEST['erro']): ?>
-        <form id="form-contato" method="post" action="" enctype="multipart/form-data">
+        <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+          <?php if($_REQUEST['test']): ?>
+          <input type="hidden" name="test" value="1" />
+          <?php endif; ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
@@ -248,21 +275,17 @@
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-        <?php endif; ?>
-        <?php if($_REQUEST['success']): ?>
-        <div id="msgAcerto">
+        
+        <div id="msgAcerto" style="display:none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
-                   
         </div>
-        <?php endif; ?>
-        <?php if($_REQUEST['erro']): ?>
-        <div id="msgErro">
+        
+        <div id="msgErro" style="display:none">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
-        </div>  
-        <?php endif; ?>
+        </div>
  
       </div>
       

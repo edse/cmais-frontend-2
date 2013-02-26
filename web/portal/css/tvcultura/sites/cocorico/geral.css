@@ -1,9 +1,22 @@
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('ubuntu-regular-webfont.eot');
+    src: url('ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-regular-webfont.woff') format('woff'),
+         url('ubuntu-regular-webfont.ttf') format('truetype'),
+         url('ubuntu-regular-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body { background:url(/portal/images/capaPrograma/cocorico/background.jpg) repeat; font-family:Arial, Helvetica, sans-serif;  }
 ul li { list-style:none; }
 .conteudo p a { color:#F2722F; font-weight:bold; }
 /*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; }*/
-.navbar-inner .container { max-width:980px;}
-.tudo { margin-top:44px; max-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
+.navbar-inner .container { min-width:980px;}
+.tudo { margin-top:44px; min-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
 .carousel { margin-bottom:0; }
 .carousel-control { background:url(/portal/images/capaPrograma/cocorico/setas.png) no-repeat; width: 41px; height:69px; text-indent:-9999px;  border:none;    border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;   line-height: 30px;   opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;    position: absolute;    text-align: center;    top: 40%;   }
 .carousel-control.right { background-position:-41px 0; }
@@ -46,7 +59,7 @@ ul li { list-style:none; }
 #naweb .instagram h3,
 #agenda .lista h3,
 #agenda .lista span,
-#agenda .titulo-post{font-family: 'Ubuntu', sans-serif; }
+#agenda .titulo-post{font-family: 'ubuntu', sans-serif; }
 
 /*border-radius 10px*/
 #convidados li a,
@@ -122,7 +135,7 @@ bold,
 .menu .navbar .nav > li > a { color:#fff;  }
 .menu .navbar .nav > li > a { font-size:20px; padding:0 22px 0 50px;  height:40px; line-height: 40px; color:#fff; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase;}
 .menu .navbar-inner { padding:0; }
-.menu .navbar .nav > li {/* overflow:hidden;*/ margin-right:3.5%; margin-top:12px;}
+.menu .navbar .nav > li {/* overflow:hidden;*/ margin-right:3%; margin-top:12px;}
 .menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;  }
 .menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;}
 
@@ -143,8 +156,8 @@ bold,
 .menu .navbar .nav > li.diario a {background:url(/portal/images/capaPrograma/cocorico/bg-roxo.jpg) repeat-x;}
 .menu .navbar .nav > li.diario span { background-position:-30px 0; }
 
-.menu .navbar .nav > li.familia { float: right; margin: 12px 20px 0 0; padding: 0; width: 160px;}
-.menu .navbar .nav > li.familia a {background:url(/portal/images/capaPrograma/cocorico/ico-familia.png) no-repeat; text-indent:-9999px; width:122px; border: none; margin:0; height:40px; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; z-index: 10; position:relative;}
+.menu .navbar .nav > li.familia { float: right; margin: 12px 2% 0 0; padding: 0; width: 160px;}
+.menu .navbar .nav > li.familia a {background:url(/portal/images/capaPrograma/cocorico/ico-familia.png) no-repeat; text-indent:-9999px; width:158px; padding:0;  border: none; margin:0; height:40px; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; z-index: 10; position:relative;}
 
 .menu .navbar .nav > li span { width:9px; height:40px; float:left; background:url(/portal/images/capaPrograma/cocorico/borda-menu2.png) no-repeat;  }
 
@@ -168,6 +181,7 @@ bold,
 .rodape .span2 { margin-left:2%;}
 .rodape .tvcoco { width:180px; }
 .rodape .joguinhos { width:175px; }
+.rodape .sites { margin-left:0; }
 .rodape .sites ul { margin:0; }
 .rodape .sites li { width: auto; float:left; margin:30px 20px 0 0; }
 .rodape .sites .last { margin-right:0; }
@@ -287,35 +301,8 @@ bold,
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-.navbar-fixed-top .container { width:414px }
+.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
 /* /topo*/
-
-/* IE*/
-
-.menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
-.menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
-/*
-
-.menu .navbar .nav > li .icon { margin:1px\9; }
-.menu .navbar .nav > li.personagens { margin-right:5px\9; }
-.menu .navbar .nav,
-.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
-*/
-.container, 
-.navbar-static-top .container, 
-.navbar-fixed-top .container, 
-.navbar-fixed-bottom .container { width:1190px\9;  }
-
-.destaques-small li.span2 a {  *margin-bottom:10px;}
-.conteudo .destaques-small { *margin-left:4px; }
-/*
-.tit-pagina,
-.tit-especial { min-width:700px\9; }
-*/
-.voltar .divisao {  *display:none; }
-.destaques.span6 .bold { min-width: 300px\9; }
-.destaques a.span12 { *width:265px; }
-/* /IE8*/
 
 .carousel-control { opacity:1; filter: alpha(opacity=100); -moz-opacity:1; }
 .ico-seta-titulo{background: url(/portal/images/capaPrograma/cocorico/seta-titulo.png) no-repeat; width:19px; height:10px; position:absolute; top:24px;}
@@ -399,8 +386,9 @@ bold,
 .relacionados .destaques-small.top { padding-top:10px; }
 
 .box-destaque.ytb img { margin: -23px 0;    position: relative;    z-index: 0; }
-.box-destaque.ytb h3 { position: relative;    z-index: 2000; }
-.box-destaque.ytb a { position: relative; z-index: 1000; }
+.box-destaque.ytb h3 a,
+.box-destaque.ytb h3 { position: relative;    z-index: 1001; border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
+.box-destaque.ytb a { position: relative; }
 
 .box-destaque { background:#F2722F; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow:hidden; position:relative;  }
 .box-destaque h3 { background:#F2722F; margin:0; height: 30px !important; overflow:hidden; border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
@@ -425,5 +413,37 @@ bold,
 .box-destaque.tvcocorico a { background:#BFD540; color:#747B3A; }
 .box-destaque.tvcocorico .ico-mais {  background: url("/portal/images/capaPrograma/cocorico/mais.png") no-repeat -73px 0 transparent; }
 
+/* IE*/
+/*
+.menu .navbar .nav > li a { *margin-left:-30px; *padding-left:35px; }
+.menu .navbar .nav > li a { margin-left:-20px\9; padding-left:25px\9; }
+*/
+/*
+
+.menu .navbar .nav > li .icon { margin:1px\9; }
+.menu .navbar .nav > li.personagens { margin-right:5px\9; }
+.menu .navbar .nav,
+.menu .navbar .nav > li { margin-left:0\9; margin-right:5px\9; }
+*/
+/*
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container { width:1190px\9;  }
+
+.destaques-small li.span2 a {  *margin-bottom:10px;}
+.conteudo .destaques-small { *margin-left:4px; }
+*/
+/*
+.tit-pagina,
+.tit-especial { min-width:700px\9; }
+*/
+/*
+.voltar .divisao {  *display:none; }
+.destaques.span6 .bold { min-width: 300px\9; }
+.destaques a.span12 { *width:265px; }
+
+*/
+/* /IE8*/
 
 

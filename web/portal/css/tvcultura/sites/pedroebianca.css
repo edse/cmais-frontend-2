@@ -2068,4 +2068,23 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 
 .box-listao ul .video { width:20px; margin:0; }
 #barra-site h2 { margin-top:17px; }
+
+.submenu-interna ul li,
+.submenu-interna { background:#F0F0F0 url("/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat scroll 0 0;}
+.submenu-interna ul li:hover,
+.submenu-interna ul li { background:none; height: auto; }
+.menu-interna li.ativo .submenu-interna ul li a, 
+.menu-interna li:hover .submenu-interna ul li a,
+.submenu-interna ul li a:hover,
+.submenu-interna ul li a { color:#333; }
+.submenu-interna ul li { padding:0 10px; border-radius:0; width:100%;  }
+.submenu-interna { padding:0 }
+.submenu-interna ul li:hover { background:url("/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x scroll 0 0 transparent; }
+.menu-interna li .submenu-interna ul li:hover a,
+.menu-interna li:hover .submenu-interna ul li:hover a,
+.menu-interna li.ativo .submenu-interna ul li:hover a { color:#fff; text-decoration:none; }
+.submenu-interna, .submenu-interna ul {/* width:100%;*/ overflow:hidden; }
+.menu-interna li .submenu-interna ul li a { height:24px; line-height:24px; }
+.submenu-interna, .submenu-interna ul { min-width:120px; }
+.menu-interna li .submenu-interna { right:0; }
 /** /pedroebianca **/

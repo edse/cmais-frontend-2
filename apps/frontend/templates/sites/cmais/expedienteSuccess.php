@@ -60,7 +60,7 @@
               <h1>Equipe Cmais+</h1><br/>
               
               <h2>Gerência de Multiplataforma</h2>
-              <p>Eduardo Brandini</p><br/>
+              <p>Paulo Garcia</p><br/>
  
               <h2>Design e Criação</h2>
               <p>
@@ -78,7 +78,6 @@
                 Pedro Nakano<br/>
                 Priscila Lima<br/>
                 Thábata Mondoni<br/>
-                Mariana Amorim<br/>
               </p><br/>  
 
               <h2>Desenvolvimento e Programação</h2>
@@ -90,8 +89,10 @@
                 Renata Noronha<br/>
               </p><br/>   
 
-              <h2>Estagiária</h2>
-              <p>Bárbara Dantine</p><br/>
+              <h2>Estagiárias</h2>
+              <p>Josilene Veloso</p><br/>
+              <p>Mariana Amorim</p><br/>
+              <p>Nádia Atie</p><br/>
               
               <h2>Fundação Padre Anchieta</h2><br/>
 
@@ -99,10 +100,10 @@
               <p>João Sayad</p><br/>
  
               <h2>Vice Presidente de Conteúdo</h2>
-              <p>Fernando Vieira De Mello</p><br/>
+              <p>Eduardo Brandini</p><br/>
  
               <h2>Vice Presidente de Gestão</h2>
-              <p>André Mantovani</p>
+              <p>Neide Saraceni Hahn</p>
 
               <!--/Expediente-->
             </div>
