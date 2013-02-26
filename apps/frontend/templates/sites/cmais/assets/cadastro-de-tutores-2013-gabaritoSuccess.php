@@ -29,7 +29,10 @@
                   <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
                   
                   <p class="titu">Gabarito da prova Curso de inglês online, que aconteceu no dia 24/02/2013</p>
-                                   
+                  <style type="text/css">
+                    .texto img { margin-bottom:40px; }
+                    .texto p a { color:#ff6633; font-weight:bold; }
+                  </style>                 
                   <div class="texto">
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   </div>
