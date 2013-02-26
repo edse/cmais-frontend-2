@@ -53,7 +53,7 @@
     <?php if($pager->haveToPaginate()): ?>  
   <!-- paginacao -->
   <div class="pagination pagination-centered">
-    <ul>
+    <ul> 
       <li class="anterior"><a title="Anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);"></a></li>
       <?php foreach ($pager->getLinks() as $page): ?>
         <?php if ($page == $pager->getPage()): ?>
@@ -61,8 +61,9 @@
         <?php else: ?>
       <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
         <?php endif; ?>
-      <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+     
       <?php endforeach; ?>
+       <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
     </ul>
   </div>
   <!-- paginacao -->
