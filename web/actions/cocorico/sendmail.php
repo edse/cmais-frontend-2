@@ -56,7 +56,9 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
     $to = "cristovamruizjr@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
+    $from = "{$name} <{$email}>";
     $subject = '[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
+    $message = "<b>testão</b>";
 
 // Attach two files: an image and a zip archive
 // - Each element contains: "file path", "file mime type"
@@ -64,7 +66,7 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
 
-$attach[] = array($_FILES['datafile'], 'image/jpeg');
+$attach[] = array($_FILES['datafile']['tmp_name'], 'image/jpeg');
 
 // Calls the sendMailAtt() to send mail, outputs message if the mail was accepted for delivery or not
 if(sendMailAtt($to, $from, $subject, $message, $attach)) {
