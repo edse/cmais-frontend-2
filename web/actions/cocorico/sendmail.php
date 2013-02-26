@@ -37,7 +37,7 @@ $message = "For best user experience please enable HTML to see this email. \r\n"
 
 $message .=
 'Content-Type: text/html; charset=UTF-8'."\r\n".
-'Content-Transfer-Encoding: 7bit'."\r\n\r\n".$bound;
+'Content-Transfer-Encoding: 8bit'."\r\n\r\n".$bound;
 
 $message .= "Content-Type: image/jpeg; name=\"".$file_name."\"\r\n"
 ."Content-Transfer-Encoding: base64\r\n"
