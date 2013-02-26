@@ -111,8 +111,9 @@
         <?php else: ?>
       <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
         <?php endif; ?>
+        <?php endforeach; ?>
       <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
-      <?php endforeach; ?>
+      
     </ul>
   </div>
   <!-- paginacao -->
