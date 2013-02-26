@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body .= "{$bound_last}";
     
     // php mail function
-    if(mail($to, $subject, $body, $header)){
+    if(mail($to, $subject, stripslashes(nl2br($body)), $header)){
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
       die();
     }
