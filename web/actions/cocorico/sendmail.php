@@ -15,8 +15,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
     $bound_text = md5(time());
-    $bound = "--{$bound_text}"; 
-    $bound_last = "--{$bound_text}--";
+    $bound = "--{$bound_text}\r\n"; 
+    $bound_last = "--{$bound_text}--\r\n";
       
     // header info                            
     $header = "From: " . $name . " <" . $email . ">\r\n";
