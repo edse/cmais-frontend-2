@@ -4,60 +4,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if($_REQUEST['test'] == "1") {
     
     
-//**  Defining Recipient and Subject  **//
-
-$to="cristovamruizjr@gmail.com";
-$email = strip_tags($_REQUEST['email']);
-$name = strip_tags($_REQUEST['nome']);
-$subject='[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
-
-//**  Defining Attachment Image **//
-$file_name = basename($_FILES['datafile']['name']);
-$data = file_get_contents($_FILES['datafile']['tmp_name']); 
-$file_contents = chunk_split(base64_encode($data));
-
-
-//**  Defining Boundary Text  **//
-$bound_text = "—-*%$!$%*"; //Starting bound text
-$bound = "–".$bound_text."\r\n"; //Inner bound text
-$bound_last = "–".$bound_text."–\r\n"; //final bound text
-
-//**  Defining Headers  **//
-$headers = "From: {$name} <{$email}>\r\n";
-$headers .= "MIME-Version: 1.0\r\n" .
-"Content-Type: multipart/mixed; boundary=\"".$bound_text."\""."\r\n";
-$headers .='Reply-To: mymail@mysite.com' . "\r\n" .
-                                'X-Mailer: PHP/' . phpversion();
-
-//**  Defining Message to show if HTML is not enabled  **//
-
-//**  Defining Message  **//
-/*
-$message .=
-'Content-Type: text/html; charset=UTF-8'."\r\n".
-'Content-Transfer-Encoding: 7bit'."\r\n\r\n".$bound;
-*/
-$message .= "Content-Type: image/jpeg; name=\"".$file_name."\"\r\n"
-."Content-Transfer-Encoding: base64\r\n"
-."Content-disposition: attachment; filename=\"".$file_name."\"\r\n"
-."\r\n"
-.$file_contents;
-
-//**  Send Email  **//
-
-if(mail($to, $subject, $message, $headers)){
-  header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
-  die();
-}
-else {
-  header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
-  die();
-}
-
-    
-    
-    
-    /*
     // email main info 
     //$to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com";
     $to = "cristovamruizjr@gmail.com";
@@ -80,14 +26,10 @@ else {
     $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
     $header .= "X-Priority: 3\r\n";
     $header .= "X-Mailer: Formmail [version 1.0]\r\n";
-    //$header .= "X-Mailer: PHP/" . phpversion();
     
     // body text & html
-    $body = "For best user experience please enable HTML to see this email. \r\n";
-    $body .= "{$bound}";
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
     $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $body .= "{$bound}";
     $body .= stripslashes(nl2br("Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:\r\n"));
     /*
     while(list($field, $value) = each($_REQUEST)) {
@@ -95,7 +37,6 @@ else {
         $body .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
      */
-    /*
     $body .= "{$bound}";
     
     // image/jpeg attachment 
