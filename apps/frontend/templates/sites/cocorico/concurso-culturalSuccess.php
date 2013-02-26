@@ -99,6 +99,7 @@
   </div>
   <!-- /row-->
   <?php endif; ?>
+  
   <?php if(isset($pager)): ?>
     <?php if($pager->haveToPaginate()): ?>  
   <!-- paginacao -->
@@ -112,9 +113,14 @@
       <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
         <?php endif; ?>
         <?php endforeach; ?>
-      <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
-      
+      <li title="Próximo" class="proximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>   
     </ul>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
   </div>
   <!-- paginacao -->
     <?php endif; ?>
