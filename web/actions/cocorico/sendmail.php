@@ -3,7 +3,9 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if($_REQUEST['test'] == "1") {
 
-$attach = array();              // will contain data for attachments
+$attach = array();
+
+// will contain data for attachments
 function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
  // Send mail with Attachments, and HTML tags ( http://coursesweb.net/ )
   // Define the headers
