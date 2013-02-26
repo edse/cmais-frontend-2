@@ -82,8 +82,9 @@
           <div class="box-interna ">
             
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript: stream1();" class="ativo btn-port">áudio dublado</a>
-              <a class="btn-esp" href="javascript: stream2();">áudio original</a>
+              <a class="ativo btn-esp" href="javascript: stream2();">áudio original</a>
+              <a href="javascript: stream1();" class="btn-port">áudio dublado</a>
+              
             </div>
            
             <div id="video-port" style="display:block;">
