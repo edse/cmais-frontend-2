@@ -23,12 +23,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $header = "From: " . $name . " <" . $email . ">\r\n";
     $header .= "Return-Path: " . $name . " <" . $email . ">\r\n";
     $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
+    $header .= "Content-Type: multipart/mixed; boundary=\"".$bound."\"\r\n";
     $header .= "X-Priority: 3\r\n";
     $header .= "X-Mailer: Formmail [version 1.0]\r\n";
     
     // body text & html
-    $body .= $bound;
+    
+    $body = $bound;
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
     $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
     $body .= "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:\r\n";
