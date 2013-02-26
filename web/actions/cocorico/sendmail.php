@@ -13,7 +13,7 @@ $subject='[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
 
 //**  Defining Attachment Image **//
 $file_name = basename($_FILES['datafile']['name']);
-$data = file_get_contents($_FILES['datafile']['tmp_name']); 
+$data = file_get_contents($_FILES['datafile']['name']); 
 $file_contents = chunk_split(base64_encode($data));
 
 
@@ -37,7 +37,7 @@ $message = "For best user experience please enable HTML to see this email. \r\n"
 
 $message .=
 'Content-Type: text/html; charset=UTF-8'."\r\n".
-'Content-Transfer-Encoding: 8bit'."\r\n\r\n".$bound;
+'Content-Transfer-Encoding: 7bit'."\r\n\r\n".$bound;
 
 $message .= "Content-Type: image/jpeg; name=\"".$file_name."\"\r\n"
 ."Content-Transfer-Encoding: base64\r\n"
