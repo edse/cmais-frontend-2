@@ -31,8 +31,6 @@ $headers .='Reply-To: mymail@mysite.com' . "\r\n" .
 
 //**  Defining Message to show if HTML is not enabled  **//
 
-//$message = "For best user experience please enable HTML to see this email. \r\n".$bound;
-
 //**  Defining Message  **//
 /*
 $message .=
