@@ -67,14 +67,14 @@
            
            function stream1() {
     $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/8tOELd0XXjM?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
-    //$('.idioma a').removeClass('ativo');
-    //$('#stream_livestream').addClass('ativo');      
+    $('.idioma .btn-esp').removeClass('ativo');
+    $('.idioma .btn-port').addClass('ativo');      
   }
 
   function stream2() {
     $('#video-port').html('<iframe width="630" height="358" src="http://www.youtube.com/embed/0xGI5HoLLus?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
-    //$('.transmissaoH li a').removeClass('ativo');
-    //$('#stream_youtube').addClass('ativo');  
+    $('.idioma .btn-port').removeClass('ativo');
+    $('.idioma .btn-esp').addClass('ativo');   
   }
           </script>
     
@@ -82,8 +82,8 @@
           <div class="box-interna ">
             
             <div class="idioma">Selecione o idioma/ Elige tu idioma:
-              <a href="javascript: stream4();" class="ativo btn-port">áudio dublado</a>
-              <a class="btn-esp" href="javascript: stream4();">áudio original</a>
+              <a href="javascript: stream1();" class="ativo btn-port">áudio dublado</a>
+              <a class="btn-esp" href="javascript: stream2();">áudio original</a>
             </div>
            
             <div id="video-port" style="display:block;">
