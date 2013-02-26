@@ -31,7 +31,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = "{$bound}";
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
     $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $body .= "{$bound}";
     $body .= "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:\r\n";
     /*
     while(list($field, $value) = each($_REQUEST)) {
@@ -39,14 +38,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $body .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
      */
-    $body .= "{$bound}";
+    $body .= "{$bound_last}";
     
     // image/jpeg attachment 
     $body .= "Content-Type: image/jpeg; name=\"{$file_name}\"\r\n";
     $body .= "Content-Transfer-Encoding: base64\r\n";
     $body .= "Content-Disposition: attachment; filename=\"{$file_name}\"\r\n";
     $body .= "{$file_contents}\r\n";
-    $body .= "{$bound_last}";
     
     // php mail function
     if(mail($to, $subject, $body, $header)){
