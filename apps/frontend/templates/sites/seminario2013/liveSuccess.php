@@ -52,13 +52,13 @@
             $(function(){
               $('.btn-port').click(function(){
                 $('#video-port').show();
-                $('#video-esp').hide();
+                $('#video-esp').remove();
                 $(this).addClass('ativo');
                 $('.btn-esp').removeClass('ativo');
               });
               $('.btn-esp').click(function(){
                 $('#video-esp').show();
-                $('#video-port').hide();
+                $('#video-port').remove();
                 $(this).addClass('ativo');
                 $('.btn-port').removeClass('ativo');
               });
