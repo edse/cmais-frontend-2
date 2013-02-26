@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = $bound;
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
     $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $body .= "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:\r\n";
+    //$body .= "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
     /*
     while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
