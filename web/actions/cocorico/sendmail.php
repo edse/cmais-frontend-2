@@ -57,7 +57,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     /* Using sendMailAtt() */
     // Define variable with data to pass to sendMailAtt()
-    $to = "cristovamruizjr@gmail.com";
+    //$to = "cristovamruizjr@gmail.com";
+    $to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $from = "{$name} <{$email}>";
