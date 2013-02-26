@@ -58,7 +58,12 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array()) {
     $name = strip_tags($_REQUEST['nome']);
     $from = "{$name} <{$email}>";
     $subject = '[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
-    $message = "<b>testão</b>";
+    $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
+    
+    while(list($field, $value) = each($_REQUEST)) {
+      if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+        $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
+    }
 
 // Attach two files: an image and a zip archive
 // - Each element contains: "file path", "file mime type"
