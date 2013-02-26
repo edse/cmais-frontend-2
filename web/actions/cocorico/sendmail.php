@@ -27,9 +27,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $header .= "X-Mailer: Formmail [version 1.0]\r\n";
     
     // body text & html
-    $body .= "{$bound}";
-    //$body .= "Content-Type: text/html; charset=UTF-8\r\n";
-    //$body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $body .= "Content-Type: text/html; charset=UTF-8\r\n";
+    $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
     $body .= "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
     /*
     while(list($field, $value) = each($_REQUEST)) {
