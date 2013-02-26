@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-Type: multipart/mixed; boundary=\"{$bound}\"\r\n";
     $header .= "X-Priority: 3\r\n";
-    $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-    
+    $header .= "X-Mailer: Formmail [version 1.0]\r\n";
+    /*
     // body text & html
     $body = "{$bound}";
     $body .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -36,6 +36,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $body .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
     $body .= "{$bound}";
+     * 
+     */
     
     // image/jpeg attachment 
     $body .= "Content-Type: image/jpeg; name=\"{$file_name}\"\r\n";
