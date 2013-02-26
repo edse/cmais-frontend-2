@@ -31,7 +31,6 @@
                   <p class="titu">Gabarito da prova Curso de inglês online, que aconteceu no dia 24/02/2013</p>
                                    
                   <div class="texto">
-                    <img src="/portal/images/gabarito-evesp13.jpg" alt="Gabarito da prova Curso de inglês online, que aconteceu no dia 24/02/2013" />
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   </div>
                   
