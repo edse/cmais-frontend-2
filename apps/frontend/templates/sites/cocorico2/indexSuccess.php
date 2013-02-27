@@ -167,7 +167,7 @@
              
           <?php $se = $displays["destaque-2"][0]->Asset->Sections[0]->getTitle(); ?>
             <?php $se_link = $displays["destaque-2"][0]->Asset->Sections[0]->getSlug(); ?>
-            
+             
             <?php
               $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-5-b');
               if ($display_img_src == '') {

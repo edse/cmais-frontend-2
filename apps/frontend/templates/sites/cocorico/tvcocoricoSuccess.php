@@ -366,16 +366,29 @@ $(function(){
     <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
     <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
     
+    <?php if($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "content"): ?>
     <div class="span6 box-destaque tvcocorico">
-      <h3><a href="<?php echo $site->retriveUrl() ?>/convidados">Convidados</a></h3>
-      <a href="<?php echo $site->retriveUrl() ?>/convidados"><img src="<?php echo $display_img_src ?>" alt="Convidados"></a>
-        <a href="<?php echo $site->retriveUrl() ?>/convidados">
+      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $se ?>"></a>
+        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-          <?php $tam=32; $str="Veja quem já passou por aqui!"; mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          <?php $tam=32; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
         </a>
-      <a href="<?php echo $site->retriveUrl() ?>/convidados" class="ico-mais"></a>
+      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
     </div>
     
+    <?php elseif($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "video"): ?>
+     <div class="span6 box-destaque ytb">
+      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
+      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
+        <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+        <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+      </a>
+      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+    </div>
+    
+    <?php endif; ?>
     <!-- /Convidado Especial -->
     <?php endif; ?>
      <?php endif; ?>

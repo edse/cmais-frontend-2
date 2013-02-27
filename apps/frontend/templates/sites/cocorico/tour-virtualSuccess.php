@@ -31,8 +31,12 @@ if(!isset($asset))
   <!-- /row--> 
   
     <!-- breadcrumb-->
-  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section)) ?>
+  <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?>
   <!-- /breadcrumb-->
+  
+   <!--btn voltar-->
+  <a href="javascript:window.history.go(-1)" class="voltar personagem">voltar<span class="divisao"></span></a>
+  <!-- /btn voltar-->
 
   <h2 class="tit-pagina"><?php echo $section->getTitle() ?></h2>
   
