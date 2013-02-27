@@ -233,8 +233,7 @@
           
           <?php endif; ?>
         <?php endif; ?>
-        
-        
+                
         <?php if(isset($displays['destaque-3'])):?>
           <?php if(count($displays['destaque-3']) > 0): ?>
              
