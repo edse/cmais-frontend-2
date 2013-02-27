@@ -20,7 +20,7 @@
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
-    <meta property="fb:app_id" content="222430124549926"/>
+    <meta property="fb:app_id" content="498504570187162"/>
 
     <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
 
@@ -82,7 +82,7 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '222430124549926', // App ID
+          appId      : '498504570187162', // App ID
           status     : true, // check login status
           cookie     : true, // enable cookies to allow the server to access the session
           xfbml      : true  // parse XFBML
