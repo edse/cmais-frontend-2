@@ -487,7 +487,7 @@ function isDevice(OSName)
                              <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
                              <a href="#dialogAricanduva" name="modal" id="camera19" class="fundo pos19" title="Aricanduva"></a>
                              <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
-                             <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
+                             <a href="#dialogaRubemBerta" name="modal" id="camera22" class="fundo pos22" title="Avenida Rubem Berta"></a> 
                            </div>
                            <!--/cameras mapa-->
                            <!--MODAIS-->

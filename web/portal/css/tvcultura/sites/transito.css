@@ -517,6 +517,16 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 
 #rodovias #cameras #camera21.pos21:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
 
+#rodovias #cameras #camera22 {
+  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
+  height: 31px;
+  left: 169px;
+  position: absolute;
+  top: 427px;
+  width: 43px;
+}
+
+#rodovias #cameras #camera22.pos22:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
 
 /* MENU MAPA */
 
@@ -718,6 +728,7 @@ tr:nth-child(odd) {background: #cbabb7}
 #dialogMarginalPinheiros2,
 #dialogMarginalPinheiros3,
 #dialogaMarginalTiete,
+#dialogaRubemberta,
 #dialogSantana,
 #dialogPompeia,
 #dialogTiradentes{left: 15% !important; width: 733px;top: 5%!important;}
