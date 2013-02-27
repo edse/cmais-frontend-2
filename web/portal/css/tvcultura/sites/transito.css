@@ -631,7 +631,7 @@ tr:nth-child(odd) {background: #cbabb7}
   top:15% !important;
 }
 
-#dialogBelenzinho, #dialogTiradentes, #dialogSantana,#dialogMarginalPinheiros,#dialogaAnchieta,#dialogMarginalPinheiros2,#dialogRadial,#dialogMarginalPinheiros3{
+#dialogBelenzinho, #dialogTiradentes, #dialogSantana,#dialogMarginalPinheiros,#dialogaAnchieta,#dialogMarginalPinheiros2,#dialogRadial,#dialogMarginalPinheiros3, #dialogRubemBerta{
   width:456px; 
   height:auto;
   left:251px !important; 
@@ -668,7 +668,7 @@ tr:nth-child(odd) {background: #cbabb7}
   text-align:left; 
 }
 
-#dialogTiradentes h4, #dialogaImigrantes h4, #dialogSantana h4, #dialogBelenzinho h4, #dialogMarginalPinheiros h4, #dialogMarginalPinheiros2 h4, #dialogMarginalPinheiros3 h4, #dialogAnchieta h4{
+#dialogTiradentes h4, #dialogaImigrantes h4, #dialogSantana h4, #dialogBelenzinho h4, #dialogMarginalPinheiros h4, #dialogMarginalPinheiros2 h4, #dialogMarginalPinheiros3 h4, #dialogAnchieta h4, #dialogRubemBerta h4{
   width: 441px;
 }
 
