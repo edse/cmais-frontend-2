@@ -1362,6 +1362,10 @@ class _sectionActions extends sfActions
       else if($this->section->getSlug() == "musicas")
         $pagelimit = 20;
     }
+    if($this->section->Site->getSlug() == "quintaldacultura") {
+      if($this->section->getSlug() == "todos")
+        $pagelimit = 72;
+    }
     if(!isset($pagelimit))
       $pagelimit = 9;
 
