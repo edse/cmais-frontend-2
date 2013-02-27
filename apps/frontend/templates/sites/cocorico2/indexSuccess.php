@@ -179,8 +179,8 @@
            <!-- box-destaque -->
             <div class="span6 box-destaque">
               <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-              <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
-              <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
+              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
+              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
              </div>
             <!-- box-destaque -->
           
