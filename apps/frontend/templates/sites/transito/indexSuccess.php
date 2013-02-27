@@ -713,6 +713,21 @@ function isDevice(OSName)
                   <div id="mask"></div>
                  </div>
                  <!--/MODAl CAMERA verde-->
+
+                <!--MODAl CAMERA verde-->
+                <div class="verde">
+                  <div id="dialogRubemBerta" class="window">
+                    <a href="#" class="close"></a><br />
+                    <div class="textoModal">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=rberta"  alt="Avenida Rubem Berta">
+                      <h4>Avenida Rubem Berta</h4>  
+                      <p></p>
+                    </div>
+                  </div>
+                  <!-- Máscara para cobrir a tela -->
+                  <div id="mask"></div>
+                 </div>
+                 <!--/MODAl CAMERA verde-->
                  
                          
                 <!--MODAl CAMERA azul-->
