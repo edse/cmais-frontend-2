@@ -174,9 +174,13 @@ $(function(){
           </div>
         </div>
         <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+          <?php
+          /*
           <?php if($_REQUEST['test']): ?>
           <input type="hidden" name="test" value="1" />
           <?php endif; ?>
+           */
+          ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
