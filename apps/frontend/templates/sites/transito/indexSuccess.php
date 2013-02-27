@@ -569,7 +569,7 @@ function isDevice(OSName)
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
                       <img src="http://200.136.27.15/cameras/imagem.php?cam=freguesia" alt="Freguesia do Ó">
-                      <h4>Freguesia do Ó</h4>  
+                      <h4>Freguesia do Ó</h4> 
                       <p></p>
                     </div>
                   </div>
