@@ -126,6 +126,7 @@ function isDevice(OSName)
                     <option value="1" selected="selected">Marginal Tietê - 1</option>
                     <option value="10">Marginal Tietê - 2</option>
                     <option value="2">Radial Leste x Salim Farah Maluf</option>
+                    <option value="12">Avenida Rubem Berta</option>
                   </select> 
                 </form>
 
@@ -201,6 +202,8 @@ function isDevice(OSName)
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=mtiete"  style="width: 310px; height: 240px;" alt="Marginal Tietê - 2">');
                           else if ($(this).val() == "11")
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=emae"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Av. dos Bandeirantes">');
+                          else if ($(this).val() == "12")
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=rberta"  style="width: 310px; height: 240px;" alt="Avenida Rubem Berta">');
                                    
                         });
                       });
@@ -474,7 +477,6 @@ function isDevice(OSName)
                              <a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a>
                              <a href="#dialogMarginalPinheiros3" name="modal" id="camera21" class="fundo pos21" title="Marginal Pinheiros - Av. dos Bandeirantes"></a>
                              <a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a>
-                             
                              <a href="#dialogaSenna" name="modal" id="camera11" class="fundo pos11" title="Ayrton Senna"></a>
                              <a href="#dialogaImigrantes" name="modal" id="camera12" class="fundo pos12" title="Imigrantes"></a>
                              <a href="#dialogaAnchieta" name="modal" id="camera13" class="fundo pos13" title="Anchieta"></a>
@@ -484,6 +486,7 @@ function isDevice(OSName)
                              <a href="#dialogaRaposo" name="modal" id="camera17" class="fundo pos17" title="Raposo Tavares"></a>
                              <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
                              <a href="#dialogAricanduva" name="modal" id="camera19" class="fundo pos19" title="Aricanduva"></a>
+                             <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
                              <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
                            </div>
                            <!--/cameras mapa-->
