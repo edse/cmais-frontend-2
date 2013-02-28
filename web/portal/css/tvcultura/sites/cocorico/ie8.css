@@ -31,7 +31,7 @@
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
 
-.bastidores.span4 { min-height: 180px; }
+.bastidores.span4 { min-height: 150px; }
 
 .bastidores a { *clear:both; }
 .bastidores a.span6 { *clear:none; }
