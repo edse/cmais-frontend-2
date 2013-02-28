@@ -299,10 +299,16 @@ $(function(){
         <div id="msgErro2" style="display:none">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
-            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG; e menor que 1MB.
+            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.
           </p>
         </div>
  
+        <div id="msgErro3" style="display:none">
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
+            <hr>
+            Verifique se o arquivo que você tentou enviar é menor que 15MB.
+          </p>
+        </div>
       </div>
       
       <?php if(isset($displays['bastidores'])):?> 
@@ -479,8 +485,8 @@ $(document).ready(function(){
         },
         datafile:{
           required: true,
-          accept: "png|jpe?g|gif",
-          filesize: 1048576
+          accept: "png|jpe?g|gif"/*,
+          filesize: 15728640*/
         },
         concorda:{
           required: true
@@ -494,7 +500,7 @@ $(document).ready(function(){
         link: "Este campo &eacute; Obrigat&oacute;rio.",
         datafile: {
           accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
-          filesize: "O arquivo precisa ser menor que 1MB"
+          filesize: "O arquivo não pode ser maior que 15MB"
         },
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
