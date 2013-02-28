@@ -493,4 +493,6 @@ div.jp-playlist, div.jp-interface { border:none !important; }
 .assinatura .btn-compartilhar { width: 405px; }
 
 h3.tit-pagina { margin-bottom:0; }
+
+.uma-coluna p { max-height: auto; }
 /** /RADIO FM  **/
