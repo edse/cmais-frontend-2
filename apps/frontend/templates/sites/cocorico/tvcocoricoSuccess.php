@@ -492,7 +492,10 @@ $(document).ready(function(){
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         link: "Este campo &eacute; Obrigat&oacute;rio.",
-        datafile: "O arquivo precisa estar no formato JPG, GIF ou PNG; e menor que 1MB",
+        datafile: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo precisa ser menor que 1MB"
+        },
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
