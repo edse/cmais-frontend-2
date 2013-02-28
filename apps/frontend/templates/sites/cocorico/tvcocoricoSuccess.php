@@ -4,7 +4,7 @@ var success = getParameterByName('success');
  //alert("error: "+error+"\n"+"success: "+success);
 
 $(function(){
-  if (error == "1" || success == "1")
+  if (error == "1" || error == "2" || success == "1")
   {
     $("#destaqueForm").hide();
     $("#formWrapper").show();
