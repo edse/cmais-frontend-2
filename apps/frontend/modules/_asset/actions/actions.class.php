@@ -41,6 +41,15 @@ class _assetActions extends sfActions
         */
       }
 
+      if(in_array($this->asset->Site->getSlug(), array("cedoc","cedoc2"))) {
+        $this->setLayout('cedoc');   
+        /*
+        if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
+          header("location: http://www3.tvcultura.com.br/cocorico");
+          die();
+        }
+        */
+      }
       // related assets
       $this->relatedAssets = Doctrine_Query::create()
         ->select('a.*, ra.id related_asset_id, ra.type related_asset_type, ra.description related_asset_description')
