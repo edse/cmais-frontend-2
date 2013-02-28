@@ -21,14 +21,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_contents = chunk_split(base64_encode($data));
     $file_mime_type = getMimeType($_FILES['datafile']['name']);
     $attach = array();
-    $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
+    $attach[] = array($_FILES['datafile']['tmp_name'], "image/jpg");
     $allowed_mime_types = array(
       "image/gif",
       "image/png",
       "image/jpg"
     );
     
-    if (in_array($file_mime_type, $allowed_mime_types)) {
+    //if (in_array($file_mime_type, $allowed_mime_types)) {
       
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
         header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
@@ -38,11 +38,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
         die();
       }
-    }
+    //}
+/*
     else {
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
       die();
     }
+ * 
+ */
   }
 }
 
