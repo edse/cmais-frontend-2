@@ -21,12 +21,12 @@
 */
 .conteudo .col-esq.span8 { *margin-left:3px; }
 .conteudo .box-radio { *margin-left:5px; }
-.box-radio.destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
-.box-radio.destaque2 .radio .borda { float:left;  }
+.box-radio .destaque2 .radio a { width:10px; float: left; display: block; padding:0; margin:0; }
+.box-radio .destaque2 .radio .borda { float:left;  }
 .box .tit a { padding:0; margin:0 0 0 15px; }
 .box .tit span { *display:none; }
 .destaque-home .box .mais { margin-left:20px; }
-.destaque2 .radio a { padding:0; margin-left:-40px; }
+.destaque2 .radio a { padding:0; margin-left:-40px;display: block;  }
 .imprimir li.span4 { margin-left:5px !important; height:87px; overflow:hidden; }
 /*.menu .lista-personagens li img { width: 89px; }*/
 /*.destaque2 .radio .borda { display:none !important; }*/
