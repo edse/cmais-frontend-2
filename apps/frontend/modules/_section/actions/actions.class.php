@@ -78,8 +78,8 @@ class _sectionActions extends sfActions
         */
       }
       
-      if(in_array($this->section->Site->getSlug(), array("belezadigital"))) {
-        $this->setLayout('belezadigital');   
+      if(in_array($this->section->Site->getSlug(), array("cedoc","cedoc2"))) {
+        $this->setLayout('cedoc');   
         /*
         if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
           header("location: http://www3.tvcultura.com.br/cocorico");
