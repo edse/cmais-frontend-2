@@ -478,8 +478,8 @@ $(document).ready(function(){
           minlength: 3
         },
         datafile:{
-          required: true//,
-          //accept: "png|jpe?g|gif"
+          required: true,
+          accept: "png|jpe?g|gif"
           //filesize: 1048576
         },
         concorda:{
