@@ -55,3 +55,5 @@
 #myModal.modal {z-index: 5000;}
 .modal-backdrop.fade.in { *display:none; }
 .menu .navbar .nav > li { *margin-right:2%; }
+
+.interatividade .form-campos .row-fluid i { *margin:0; }
