@@ -479,8 +479,8 @@ $(document).ready(function(){
         },
         datafile:{
           required: true,
-          accept: "png|jpe?g|gif"
-          //filesize: 1048576
+          accept: "png|jpe?g|gif",
+          filesize: 1048576
         },
         concorda:{
           required: true
