@@ -370,6 +370,6 @@ p.frase span.last { background-position:-25px 0; float:right; margin:10px -20px 
 #myModal2 #myModalLabel span { font-size:14px;  background: none;  bottom: 0;  height: auto;  left: 0;   position: relative;   width: auto;}
 #myModal2 img {border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;} 
 .destaque-home-tv .promocao { min-width:460px; }
-.interatividade .form-campos #file { font-size:11px; }
+.interatividade .form-campos #datafile { font-size:11px; }
 
 /* /concurso cultural*/
