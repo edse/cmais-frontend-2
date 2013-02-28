@@ -190,7 +190,7 @@ $(function(){
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome" value="Seu nome"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-responsavel"></i>
