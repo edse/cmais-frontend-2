@@ -30,7 +30,9 @@
 .imprimir li.span4 { margin-left:5px !important; height:87px; overflow:hidden; }
 /*.menu .lista-personagens li img { width: 89px; }*/
 .destaque2 .radio .borda { display:none !important; }
-.bastidores.span4 { height: 300px; }
+
+.bastidores.span4 { min-height: 150px; }
+
 .bastidores a { *clear:both; }
 .bastidores a.span6 { *clear:none; }
 .conteudo a.destaque2  { margin-left:10px !important; }
@@ -53,3 +55,9 @@
 #myModal.modal {z-index: 5000;}
 .modal-backdrop.fade.in { *display:none; }
 .menu .navbar .nav > li { *margin-right:2%; }
+
+.interatividade .form-campos .row-fluid .span9 { *max-width: 60%; }
+.interatividade .form-campos .row-fluid .span11 { *max-width: 380px; }
+.interatividade #form-contato { *padding:0; margin:0; }
+.conteudo { *margin-left:0; }
+.destaque-home-tv.interatividade.span9 { *width:450px; }
