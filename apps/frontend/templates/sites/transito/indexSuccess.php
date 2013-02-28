@@ -20,7 +20,7 @@ function isDevice(OSName)
     window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
   }
 </script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=0000" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=1234" type="text/css" />
 <style>
 .azul .window { background-color: #6AACD2; }
 .verde .window { background-color: #136F13; }
@@ -126,6 +126,7 @@ function isDevice(OSName)
                     <option value="1" selected="selected">Marginal Tietê - 1</option>
                     <option value="10">Marginal Tietê - 2</option>
                     <option value="2">Radial Leste x Salim Farah Maluf</option>
+                    <option value="12">Avenida Rubem Berta</option>
                   </select> 
                 </form>
 
@@ -201,6 +202,8 @@ function isDevice(OSName)
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=mtiete"  style="width: 310px; height: 240px;" alt="Marginal Tietê - 2">');
                           else if ($(this).val() == "11")
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=emae"  style="width: 310px; height: 240px;" alt="Marginal Pinheiros - Av. dos Bandeirantes">');
+                          else if ($(this).val() == "12")
+                            $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=rberta"  style="width: 310px; height: 240px;" alt="Avenida Rubem Berta">');
                                    
                         });
                       });
@@ -474,7 +477,6 @@ function isDevice(OSName)
                              <a href="#dialogMarginalPinheiros2" name="modal" id="camera09" class="fundo pos09" title="Marginal Pinheiros - Est. Pinheiros"></a>
                              <a href="#dialogMarginalPinheiros3" name="modal" id="camera21" class="fundo pos21" title="Marginal Pinheiros - Av. dos Bandeirantes"></a>
                              <a href="#dialogSantana" name="modal" id="camera10" class="fundo pos10" title="SESC Santana"></a>
-                             
                              <a href="#dialogaSenna" name="modal" id="camera11" class="fundo pos11" title="Ayrton Senna"></a>
                              <a href="#dialogaImigrantes" name="modal" id="camera12" class="fundo pos12" title="Imigrantes"></a>
                              <a href="#dialogaAnchieta" name="modal" id="camera13" class="fundo pos13" title="Anchieta"></a>
@@ -485,6 +487,7 @@ function isDevice(OSName)
                              <a href="#dialogPompeia" name="modal" id="camera18" class="fundo pos18" title="Avenida Pompéia"></a>
                              <a href="#dialogAricanduva" name="modal" id="camera19" class="fundo pos19" title="Aricanduva"></a>
                              <a href="#dialogFreguesia" name="modal" id="camera20" class="fundo pos20" title="Freguesia"></a>
+                             <a href="#dialogRubemBerta" name="modal" id="camera22" class="fundo pos22" title="Avenida Rubem Berta"></a> 
                            </div>
                            <!--/cameras mapa-->
                            <!--MODAIS-->
@@ -566,7 +569,7 @@ function isDevice(OSName)
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
                       <img src="http://200.136.27.15/cameras/imagem.php?cam=freguesia" alt="Freguesia do Ó">
-                      <h4>Freguesia do Ó</h4>  
+                      <h4>Freguesia do Ó</h4> 
                       <p></p>
                     </div>
                   </div>
@@ -703,6 +706,21 @@ function isDevice(OSName)
                     <div class="textoModal">
                       <img src="http://200.136.27.15/cameras/imagem.php?cam=emae"  alt="Marginal Pinheiros - Av. dos Bandeirantes">
                       <h4>Marginal Pinheiros - Av. dos Bandeirantes</h4>  
+                      <p></p>
+                    </div>
+                  </div>
+                  <!-- Máscara para cobrir a tela -->
+                  <div id="mask"></div>
+                 </div>
+                 <!--/MODAl CAMERA verde-->
+
+                <!--MODAl CAMERA verde-->
+                <div class="verde">
+                  <div id="dialogRubemBerta" class="window">
+                    <a href="#" class="close"></a><br />
+                    <div class="textoModal">
+                      <img src="http://200.136.27.15/cameras/imagem.php?cam=rberta"  alt="Avenida Rubem Berta">
+                      <h4>Avenida Rubem Berta</h4>  
                       <p></p>
                     </div>
                   </div>
