@@ -20,6 +20,11 @@ $(function(){
       $("#formWrapper #msgErro").show();
       $("#formWrapper #msgAcerto").hide();
     }  
+    if (error == "2")
+    {
+      $("#formWrapper #msgErro2").show();
+      $("#formWrapper #msgAcerto").hide();
+    }  
   }
 });
 </script>
@@ -290,6 +295,13 @@ $(function(){
             Tente novamente mais tarde.
           </p>
         </div>
+
+        <div id="msgErro2" style="display:none">
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
+            <hr>
+            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG; e menor que 1MB.
+          </p>
+        </div>
  
       </div>
       
@@ -446,32 +458,6 @@ $(document).ready(function(){
       
       submitHandler: function(form){
         form.submit();
-        /*
-        $.ajax({
-          type: "POST",
-          dataType: "text",
-          data: $("#form-contato").serialize(),
-          beforeSend: function(){
-            $('input#enviar').hide()
-            $('img#ajax-loader').show();
-          },
-          success: function(data){
-            //window.location.href="#";
-            if(data == "1"){
-              $('input#enviar').show()
-              $('img#ajax-loader').hide();
-              $('#form-contato').hide(); 
-              $('#msgAcerto').show();           
-            }
-            else {
-              $('img#ajax-loader').hide();
-              $('input#enviar').show()
-              $('#form-contato').hide();
-              $("#msgErro").show();
-            }
-          }
-        });
-        */         
       },
       rules:{
         nome:{
@@ -491,7 +477,9 @@ $(document).ready(function(){
           minlength: 3
         },
         arquivo:{
-          required:true
+          required:true,
+          accept: "png|jpe?g|gif",
+          filesize: 1048576
         },
         concorda:{
           required: true
@@ -503,6 +491,7 @@ $(document).ready(function(){
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         link: "Este campo &eacute; Obrigat&oacute;rio.",
+        arquivo: "O arquivo precisa estar no formato JPG, GIF ou PNG; e menor que 1MB",
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
