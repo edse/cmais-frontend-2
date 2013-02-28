@@ -61,7 +61,7 @@
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
 .interatividade .form-campos label.error { display: none !important ; }
-.interatividade .form-campos label[for=datafile].error { display: block ; }
+.interatividade .form-campos label[for="datafile"].error { display: block !important; }
 .interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:0 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
