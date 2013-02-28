@@ -245,7 +245,7 @@ $(function(){
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="datafile" type="file" name="datafile" size="25" value="Seu desenho de bicicleta">
+              <input id="datafile" type="file" name="datafile" size="37" value="Seu desenho de bicicleta">
             </div>
          
            
