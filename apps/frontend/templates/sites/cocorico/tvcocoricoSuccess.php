@@ -30,7 +30,7 @@ $(function(){
 </script>
 
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <!-- container-->
 <div class="container tudo">
