@@ -494,5 +494,5 @@ div.jp-playlist, div.jp-interface { border:none !important; }
 
 h3.tit-pagina { margin-bottom:0; }
 
-#destaque.uma-coluna p { max-height:auto; }
+#destaque.uma-coluna p { max-height:100%; }
 /** /RADIO FM  **/
