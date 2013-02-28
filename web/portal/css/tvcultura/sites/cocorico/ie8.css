@@ -58,4 +58,5 @@
 
 .interatividade .form-campos .row-fluid .span9 { *width: 200px; }
 .interatividade .form-campos .row-fluid .span11 { *width: 350px; }
+.interatividade form { *width:400px; }
 .conteudo { *margin-left:0; }
