@@ -27,26 +27,31 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
-      @unlink($_FILES['datafile']['tmp_name']);
-      header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
-      die();
+      
+      if (unlink($_FILES['datafile']['tmp_name'])) {
+        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
+        die();
+      }
     }
     else if ($file_size > 15728640) { // 15MB
-      @unlink($_FILES['datafile']['tmp_name']);
-      header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
-      die();
+      if (unlink($_FILES['datafile']['tmp_name'])) {
+        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
+        die();
+      }
     }
     else {
       
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-        @unlink($_FILES['datafile']['tmp_name']);
-        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
-        die();
+        if (unlink($_FILES['datafile']['tmp_name'])) {
+          header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
+          die();
+        }
       }
       else{
-        @unlink($_FILES['datafile']['tmp_name']);
-        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
-        die();
+        if (unlink($_FILES['datafile']['tmp_name'])) {
+          header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
+          die();
+        }
       }
     }
   }
