@@ -477,7 +477,7 @@ $(document).ready(function(){
           required:true,
           minlength: 3
         },
-        arquivo:{
+        datafile:{
           required: true,
           accept: "png|jpe?g|gif",
           filesize: 1048576
@@ -492,7 +492,7 @@ $(document).ready(function(){
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         link: "Este campo &eacute; Obrigat&oacute;rio.",
-        arquivo: "O arquivo precisa estar no formato JPG, GIF ou PNG; e menor que 1MB",
+        datafile: "O arquivo precisa estar no formato JPG, GIF ou PNG; e menor que 1MB",
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){
