@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
       die();
     }
-    else if ($file_size > 1048576) { // 15MB
+    else if ($file_size > 15728640) { // 15MB
       header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
       die();
     }
