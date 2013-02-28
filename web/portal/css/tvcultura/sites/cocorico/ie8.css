@@ -56,7 +56,7 @@
 .modal-backdrop.fade.in { *display:none; }
 .menu .navbar .nav > li { *margin-right:2%; }
 
-.interatividade .form-campos .row-fluid .span9 { *width: 200px; }
-.interatividade .form-campos .row-fluid .span11 { *width: 350px; }
+.interatividade .form-campos .row-fluid .span9 { *max-width: 200px; }
+.interatividade .form-campos .row-fluid .span11 { *max-width: 350px; }
 .interatividade #form-contato { *padding:0; margin:0; }
 .conteudo { *margin-left:0; }
