@@ -195,21 +195,21 @@ $(function(){
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome" value="Seu nome"/>
+              <input type="text" class="span11 pull-left" name="nome" placeholder="Seu nome"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-responsavel"></i>
-              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável" value="Nome do responsável"/>
+              <input type="text" class="span11 pull-left" name="nome_resp" placeholder="Nome do responsável"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
-              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato" value="E-mail para contato"/>
+              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               
               <div class="span9">
-                <input type="text" name="cidade" class="span12" placeholder="Sua cidade" value="Sua cidade"/>
+                <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
               </div>
               <div class="span2 estado">
                 <select id="estado" name="estado" class="span12 required">
@@ -250,7 +250,7 @@ $(function(){
             </div-->
             <div class="row-fluid last">
               <i class="ico-tv ico-bike"></i>
-              <input id="datafile" type="file" name="datafile" size="37" value="Seu desenho de bicicleta">
+              <input id="datafile" type="file" name="datafile" size="25">
             </div>
          
            
@@ -437,6 +437,7 @@ $(function(){
   <!--/rodapé-->
 </div>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
       /* form tv cocorico */
@@ -477,7 +478,7 @@ $(document).ready(function(){
           minlength: 3
         },
         arquivo:{
-          required:true,
+          required: true,
           accept: "png|jpe?g|gif",
           filesize: 1048576
         },
