@@ -30,6 +30,11 @@ $(function(){
       $("#formWrapper #msgErro3").show();
       $("#formWrapper #msgAcerto").hide();
     }  
+    if (error == "4")
+    {
+      $("#formWrapper #msgErro4").show();
+      $("#formWrapper #msgAcerto").hide();
+    }  
   }
 });
 </script>
