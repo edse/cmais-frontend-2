@@ -35,7 +35,7 @@
             
        <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
         <div class="span8">
-          <iframe width="620" height="465" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="620" height="384" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
        
         <div class="span4">
@@ -52,9 +52,15 @@
         <?php if(isset($displays['destaque-1'])):?>
           <?php if(count($displays['destaque-1']) > 0): ?>
                        
-        <?php $related_image = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-4-b'); ?>
+        <?php
+              $display_img_src = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-4-b');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-4-b');
+              }
+            ?>
          <div class="span6">
-          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $related_image ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
+          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
@@ -67,7 +73,7 @@
        <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
                        
-        <?php $related_image = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-4-b'); ?>
+        <?php $related_image = $displays["destaque-2"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
          <div class="span6">
           <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><img src="<?php echo $related_image ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
