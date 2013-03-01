@@ -63,7 +63,7 @@
           <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
-          <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+          <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
         
           <?php endif; ?>
