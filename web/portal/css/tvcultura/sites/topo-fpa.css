@@ -1,0 +1,123 @@
+/* GERAL */
+.container.principal {width:980px; margin-top:3px;*position:relative;}
+/* /GERAL */
+
+/* ESTRUTURAS BÁSICAS */
+.margin-0{margin:0 !important;}
+.float-right{float:right;}
+
+/* /ESTRUTURAS BÁSICAS*/
+
+/* TOPO FPA */
+.seta-hover{z-index:10000;background: url("/portal/images/capaPrograma/fpa/ico-menu-seta_hover.png") no-repeat; width:6px; height:5px; display: block; position:absolute; bottom:-5px; left:50%; display: none;}
+.seta-hover.active{display:block !important;}
+.caret{position:absolute; bottom:8px; left: 48%; margin:0!important;  background: url("/portal/images/capaPrograma/fpa/ico-seta-down.gif") no-repeat; width: 10px; height: 4px; border:none;}
+.caret.active{display:none;}
+.logo-fpa{*top:3px; z-index: 5000; margin:0 0 0 10px;}
+#fundo-topo{width:100%;position:relative;top:0px;left:0;z-index:1000;background-color: #ffffff;border-top:3px solid #696969;border-bottom:none;border-bottom:1px solid #d5d5d5;height: 50px;/*box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc*/;}
+.fixed{position:fixed;}
+#topo-fpa{position:relative; z-index:30}
+#topo-fpa li {position:relative; z-index:5000;}
+#topo-fpa li.active a{z-index:30;background-color: #f7f7f7; border-top:3px solid #1863b7; border-bottom:1px solid #1863b7; }
+#topo-fpa li.active a.active {color:#1863b7 !important;border-top:3px solid #1863b7;}
+#topo-fpa #emissoras .dropdown-menu{left:-38px !important; }
+#topo-fpa #portais .dropdown-menu{left:-45px !important;}
+#topo-fpa .dropdown-menu{z-index: 5000;position:absolute;min-width:150px;left: -40px;margin:0;border-top:none;text-align:left;border-color:#cccccc;border-radius:0;padding: 15px 6px 15px 6px;}
+#topo-fpa .dropdown-menu li:first-child{border-top:1px dotted #5c5c5c;}
+#topo-fpa .dropdown-menu li{margin:0;border-bottom:1px dotted #5c5c5c; }
+#topo-fpa .dropdown-menu a{background-color:#fff !important;border:none !important;padding: 8px 5px 8px 5px; color:#5c5c5c!important; font-family: Arial, Helvetica, sans-serif; font-size:1em; font-weight: bold; *height:20px; *width:150px; *margin:0;*padding: 8px 5px }
+#topo-fpa .dropdown-menu a:hover{color:#FFF !important; background-color: #1863b7 !important;}
+#topo-fpa .font-btn{font-weight:bolder; font-family:Arial, Helvetica, sans-serif; color:#6d6b6b;}
+
+#topo-fpa.nav{position:absolute;margin:-3px 0 0 124px;width:900px;*top:-3px;*left:0;} 
+#topo-fpa.nav > li{margin-top:-3px; *margin-top:0;}
+#topo-fpa.nav > li > a {font-weight: bold;color:#8c8c8c;text-transform:uppercase;border-top:3px solid #626262; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; padding: 18px 8px 18px 8px!important;margin: 0px 0 0 10px; font-size:12px;}
+#topo-fpa.nav > li:hover > a {*padding: 18px 8px 18px 8px !important;padding: 18px 8px 18px 8px!important;text-decoration: none; background-color: #f7f7f7!important; color:#1863b7; border-top:3px solid #1863b7; border-bottom:1px solid #1863b7; }
+#topo-fpa.nav-tabs .dropdown-toggle .caret,
+#topo-fpa.nav .dropdown-toggle .caret {position:absolute;left:0;top:0;}
+/* /TOPO FPA */
+
+/* LINHA DO TEMPO */
+#linha-do-tempo {margin-top:170px; text-align:left;}
+#linha-do-tempo .navbar-fixed-top{background: #f1f1f1;margin-top:53px;height: 100px;z-index:0;}
+#linha-do-tempo .navbar-fixed-top .container{position:relative;width: 980px;height:96px;}
+#linha-do-tempo .navbar-fixed-top h1,
+#linha-do-tempo .navbar-fixed-top a.decadas{font-family:"gotham_lightregular"; font-size:36px;color:#333;font-weight: normal;}
+#linha-do-tempo .navbar-fixed-top a.decadas{float: right;color: #666;background: url(/portal/images/capaPrograma/fpa/btn-fundo-anos.png) no-repeat;line-height: 57px;width: 55px;text-align: center;margin: 17px 20px 0 0;background-position: 0 -56px;}
+#linha-do-tempo .navbar-fixed-top a.decadas.active{background-position: 0 0;color:#FFF;background-position: 0 0;}
+#linha-do-tempo .navbar-fixed-top a.decadas:hover{color:#FFF; text-decoration: none; background-position: 0 0px; }
+/*#linha-do-tempo .navbar-fixed-top a.decadas.first{margin-right: 55px;padding: 0 0 0 3px;}*/
+#linha-do-tempo .redes {float: left;width: 368px !important;margin-top: 6px;}
+#linha-do-tempo .redes .curtir {width: 202px;float: left;margin-left: 0;text-align: left;}
+#linha-do-tempo .titulo{margin:25px 0 0 6px; float:left;}
+#linha-do-tempo ul li{color: #FFF; font-size: 14px; font-family: Arial, Helvetica, sans-serif;margin:20px 9.2pt;}
+#linha-do-tempo ul li p{margin-left:9.2pt;}
+#linha-do-tempo h2{font-family:"gotham_lightregular"; font-size:42px;color:#FFF;font-weight: normal;margin:0 0 20px 8px;}
+#linha-do-tempo img,
+#linha-do-tempo iframe{width:100%;height:549px;}
+/* /LINHA DO TEMPO */
+
+/* QUEMSOMOS */
+.container.quem-somos{margin-top:30px;}
+.col-esquerda{text-align: left;}
+.col-esquerda h1{font-size:36px; font-family:Arial, Helvetica, sans-serif; color:#5c5c5c; margin:0 0 20px 0;}
+.col-esquerda p{margin-bottom:20px;font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#333333;}
+.col-esquerda a{margin: 20px 0 8px 0;color: #FFF; text-transform: uppercase; font-weight: bold;}
+.col-esquerda a:hover{text-decoration:none;}
+.col-esquerda a.acrobat{color:#1863b7 !important; font-size:14px; font-weight: bold;}
+
+.col-direita a.inscricao{padding:  20px;min-width:352px;}
+.col-direita a.conheca {padding:20px 0 0 0;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;}
+.col-direita{text-align:left;}
+.col-direita a.inscricao p{margin:10px 0 0 0; text-align:left; color:#fff !important; font-size: 24px;}
+.col-direita a.inscricao p:first-child{font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important;}
+.col-direita a.inscricao p:last-child{font-size: 14px; margin:4px 0 0 0; color:#fff !important;}
+.col-direita a.inscricao .btn-primary,.col-direita a.inscricao hr {margin:4px 0; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);border-top-color: #124a89; border-bottom-color: #739ecd;}
+.col-direita a.conheca {margin:20px 0; overflow:hidden; min-width:394px;} 
+.col-direita a.conheca p:first-child{ text-align:left; color:#fff !important; font-size: 24px;padding:0 20px 0 20px; margin:0;}
+.col-direita a.conheca p{text-align:left;font-size: 14px; margin:4px 0 20px 0; color:#fff !important;padding:0 20px;}
+.col-direita a.conheca div:last-child{background-color: #ffb027;height: 15px;}
+/* /QUEMSOMOS */
+
+/* TRABALHE-CONOSCO */
+.col-esquerda .accordion-group,
+.accordion-inner{border:none;}
+.accordion-inner{padding-bottom:0px;}
+.accordion-inner ul{margin-bottom:20px;}
+.accordion-inner strong{font-weight:bold;color: #1863B7;}
+.accordion-inner a{font-weight:normal; color:#1863B7; text-decoration: underline; text-transform: none;}
+.col-esquerda .tipo-de-emprego{font-size:14px; font-family: Arial, Helvetica, sans-serif; font-weight:bold; color:#5c5c5c;margin: 0;padding-left: 5px;}
+.col-esquerda hr.tipo{margin: 0;border-top-color: #c0c0c0;border-bottom-color:#fcfcfc;}
+.col-esquerda hr.tipo.inscricao{margin: 10px 0;}
+.col-esquerda hr.vaga{margin: 0 auto;padding: 0;width: 99%;border-top: none;border-bottom-style: dotted;border-bottom-color: #A8A8A8;}
+.col-esquerda hr.vaga.desc.active{margin: 0 0 0 -16px;width: 110%;}
+.col-esquerda hr.vaga.hide{display:none;}
+.col-esquerda .vaga-aberta{font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#4c4c4c;margin: 0;padding:15px; text-transform: none; font-weight:normal;}
+.col-esquerda .vaga-aberta .ico-trabalho{margin-right:10px;background: url(/portal/images/capaPrograma/fpa/icone-trabalhe-vaga.png) no-repeat 0 top; width:16px; height: 16px;display: block;float: left;}
+.col-esquerda .vaga-aberta .ico-trabalho.ico-active{background-position: 0 bottom;}
+.col-esquerda .vaga-aberta .badge.vaga{background:#ffffff;color: #5C5C5C;text-shadow: none;}
+.col-esquerda .tit-desc{font-weight: bold;color: #1863B7; list-style: none !important;}
+.col-esquerda .accordion-inner li{list-style: inside;}
+.col-esquerda a.realizar{color:#FFF; text-decoration: none;}
+.col-direita a.trabalhe{padding:20px 25px;min-width:393px;margin-bottom: 20px;}
+.col-direita a.trabalhe p{text-align:left; color:#fff !important;}
+.col-direita a.trabalhe p:first-child{letter-spacing:0.075em;font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important; text-transform: uppercase;}
+.col-direita a.trabalhe p:last-child{font-size: 24px; margin:14px 0 0 0; color:#fff !important;}
+.col-direita a.trabalhe .btn-primary{margin:4px 0; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);border-top-color: #124a89; border-bottom-color: #739ecd;}
+
+.col-esquerda .box-cadastro{border-radius:5px; background-color: #fdfdfd; padding:20px;}
+.col-esquerda .input {margin-left:0px!important;}
+#row1 h2, #row2 h2, #row3 h2, #row4 h2{font-size: 14px;color: #1863B7;margin: 0;line-height:11px;text-transform: uppercase;}
+#row1 hr, #row2 hr, #row3 hr, #row4 hr{margin:10px 0 20px 0; border-bottom: none; border-top-color: #1863B7; border-top-style:dotted; }
+#row1 .cancel,#row2 .cancel,#row3 .cancel, #row4 .cancel{color:#333;margin-right:10px;}
+#row3 .erase,#row4 .erase{margin-right:10px;}
+.tit-cadastro{margin:20px 0 0 0 !important;}
+.tit-cadastro p{font-size: 12px; color:#333;}
+.tit-cadastro p strong{font-weight: bold;}
+/* /TRABALHE-CONOSCO */
+
+/* RODAPÉ PORTAL */
+#rodape-portal {margin-top: 150px; position:relative; z-index:0;}
+#rodape-portal .voltar-topo{*float: left; z-index: 0;}
+/* /RODAPÉ PORTAL */
+
