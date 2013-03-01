@@ -54,31 +54,34 @@
                        
         <?php $related_image = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-4-b'); ?>
          <div class="span6">
-          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
-          <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
+          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $related_image ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
+          <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
-          <a class="mais" href="#" title="+leia mais">+leia mais</a>
+          <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
         
           <?php endif; ?>
         <?php endif; ?>
        
        
+       <?php if(isset($displays['destaque-2'])):?>
+          <?php if(count($displays['destaque-2']) > 0): ?>
+                       
+        <?php $related_image = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-4-b'); ?>
          <div class="span6">
-          <a href="#" title=""><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
-          <h2><a href="#" title="">Quem somos</a></h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <a class="mais" href="#" title="+leia mais">+leia mais</a>
+          <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><img src="<?php echo $related_image ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
+          <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
+          <p><?php echo $displays["destaque-2"][0]->Asset->getDescription() ?></p>
+          <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
       </div>
       <div class="row-fluid">
         <div class="span4 apoio"> 
           <h2>Realização:</h2>
           <ul>
-            <li class="cultura"><a href="#">Cultura</a></li>
-            <li class="ministerio"><a href="#">Ministério da Cultura</a></li>
-            <li class="governo"><a href="#">Governo Federal</a></li>
+            <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
+            <li class="ministerio"><a href="#">http://www.cultura.gov.br</a></li>
+            <li class="governo"><a href="#">http://www.brasil.gov.br</a></li>
           </ul>
         </div>
       </div>
