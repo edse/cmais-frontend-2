@@ -1,76 +1,81 @@
-/* css */
+body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 
-body {
-  text-align:left;
-}
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
+    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-#menu-portal-2 h1{margin:0;}
-#menu-portal-2 .abas{margin:0;}
-#menu-portal-2 .busca-portal .ipt-txt {border-radius: 0;height: 14px;}
-#topo-cmais {left: -22px;}
-td h4{color:#333;}
-/* Custom container */
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px;
-}
-.container-narrow > hr {
-  margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  margin: 60px 0;
-  text-align: center;
-}
-.jumbotron h1 {
-  font-size: 72px;
-  line-height: 1;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner,
+.navbar-fixed-top .navbar-inner, 
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus,
+.navbar-static-top .navbar-inner { box-shadow: none !important; }
+/* topo */
+/*
+.navbar .nav li a,
+.navbar-fixed-top { border-top:3px solid #5c5c5c; }
+.navbar { color:#626262; }
+.navbar-inner { background:#fff; }
+.navbar .nav > li:hover a,
+.navbar .nav > li:focus a,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus { border-color:#2a63a2; background:#f7f7f7; color:#2a63a2; border-bottom:1px solid #2a63a2;   }
+.navbar .nav { margin-top:-3px; position:relative; }
+.navbar .brand { text-indent:-9999px; background:url(/portal/images/capaPrograma/cedoc/logo-fpa.jpg) no-repeat; width:64px; height:46px; margin:3px 20px; padding:0; }
+.navbar .nav > li > a { text-transform:uppercase; font-weight:bold; font-size:12px; padding:0 23px; text-shadow:0; height:52px; line-height:52px; }
+.navbar .nav li.dropdown > .dropdown-toggle .caret { bottom: 20px; clear: both; display: block; left: 42%; position:relative; }
+*/
+/* /topo */
 
-/* Supporting marketing content */
-.marketing {
-  margin: 60px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
+/* container */
+.container { background:#fff; }
+#geral { margin-top:0; }
+h2,
+.hero-unit ul {font-family: 'source_sans_proregular';}
+.form-search .input-append .btn,
+.hero-unit .search-query.input-medium { border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;}
+/* /container */
 
-.container-narrow {
-  max-width: 980px;
-  margin-top:30px;  
-}
+/* home */
+.hero-unit { padding:0; position:relative; margin:0; }
+.hero-unit ul h3 { margin:0; font-size:32px; color:#fff; text-transform:uppercase; padding-left:20px; height:60px; line-height:60px;}
+.hero-unit ul { position:absolute; top:85px; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; }
+.hero-unit ul li { list-style:none; margin-left:-20px; padding-left:20px; position:relative; }
+.hero-unit ul li a { padding:0 20px; height:48px; line-height: 48px; color:#fff; text-decoration:none; text-transform:uppercase; font-size:22px; font-weight:bold; display: block; background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  }
+.hero-unit ul li.ativo a,
+.hero-unit ul li:hover a { background:url(/portal/images/capaPrograma/cedoc/bg-lista-hover.jpg) repeat-x; color:#c2f263; }
+.hero-unit ul li span { width:20px; height:68px; display: block; position:absolute; left:0;}
+.hero-unit ul li.ativo span,
+.hero-unit ul li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
+.hero-unit .search-query.input-medium,
+.hero-unit .btn { height:20px; line-height:20px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
+.hero-unit .search-query.input-medium { max-width:125px; border-left:none;  }
+.hero-unit .btn { border-right:0; height:24px;  border-left:2px solid #535352; }
+.hero-unit form i { margin:0 3px; }
+.hero-unit form { margin:20px 15px 20px 0; }
 
-.container-narrow > div:nth-child(2) {
-  margin-bottom:50px;  
-}
+.row-fluid { margin:20px 20px 0 20px; width: 96%; }
+h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; height:20px; line-height:20px;  }
+.row-fluid a { display:block; text-decoration:underline; color:#000; }
+.row-fluid h2 a  { text-decoration:none; color:#666666;}
+.row-fluid .mais { float:right; }
 
-.footer {
-  margin-top:70px;
-  /*text-align:center;*/
-}
-
-.btnFilme {
-  min-width: 80px;
-}
-
-.btnPesquisar {
-  min-width: 67px;
-}
-
-.docDescription {
-  color: #666;
-}
-
-.total {
- margin-top:50px;
- color:#999
-}
-
-h1 small {
-  font-size:22px;
-}
+.apoio.span4 { float: right; }
+.apoio h2 { text-transform:none; }
+.apoio li { list-style:none; float:left; }
+.apoio li a { display:block; text-indent:-9999px; }
+.apoio .cultura a { width: 77px; height:67px; background:url(/portal/images/capaPrograma/cedoc/logo-cultura.jpg) no-repeat;}
+.apoio .ministerio { margin: 0 20px; }
+.apoio .ministerio a { width: 53px; height:18px; background:url(/portal/images/capaPrograma/cedoc/logo-ministerio.jpg) no-repeat;}
+.apoio .governo a { width: 114px; height:36px; background:url(/portal/images/capaPrograma/cedoc/logo-governo.jpg) no-repeat; }
+/* /home */
