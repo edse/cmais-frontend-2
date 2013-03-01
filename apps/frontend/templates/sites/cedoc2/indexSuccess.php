@@ -83,8 +83,8 @@
           <h2>Realização:</h2>
           <ul>
             <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
-            <li class="ministerio"><a href="#">http://www.cultura.gov.br</a></li>
-            <li class="governo"><a href="#">http://www.brasil.gov.br</a></li>
+            <li class="ministerio"><a href="http://www.cultura.gov.br">Ministério da Cultura</a></li>
+            <li class="governo"><a href="http://www.brasil.gov.br">Governo Federal</a></li>
           </ul>
         </div>
       </div>
