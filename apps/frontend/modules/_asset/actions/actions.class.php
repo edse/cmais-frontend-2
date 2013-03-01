@@ -538,7 +538,10 @@ class _assetActions extends sfActions
 				
 
     //metas
-    $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
+    if($this->asset->Site->getSlug()!="cmais")
+      $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
+    else
+      $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' O portal de conteúdo da Cultura';
     $this->getResponse()->setTitle($title, false);
     $this->getResponse()->addMeta('description', $this->asset->getDescription());
     $tags = "";    
