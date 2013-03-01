@@ -586,10 +586,13 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:video:height', '390');
           $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$related->AssetVideo->getYoutubeId().'/default.jpg');
         }elseif($related->AssetType->getSlug() == "audio"){
+          /*
           $this->getResponse()->addMetaProp('og:type', 'audio');
           $this->getResponse()->addMetaProp('og:audio', 'http://midia.cmais.com.br/assets/audio/default/'.$related->AssetAudio->getFile().'.mp3');
           $this->getResponse()->addMetaProp('og:audio:title', $related->getTitle());
           $this->getResponse()->addMetaProp('og:audio:type', 'application/mp3');
+          */
+          $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
         }elseif($related->AssetType->getSlug() == "image"){
           $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/default/'.$related->AssetImage->getFile().'.jpg');
         }
