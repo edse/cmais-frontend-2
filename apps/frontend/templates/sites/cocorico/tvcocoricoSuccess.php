@@ -4,7 +4,7 @@ var success = getParameterByName('success');
  //alert("error: "+error+"\n"+"success: "+success);
 
 $(function(){
-  if (error == "1" || error == "2" || success == "1")
+  if (error || success)
   {
     $("#destaqueForm").hide();
     $("#formWrapper").show();
@@ -25,12 +25,17 @@ $(function(){
       $("#formWrapper #msgErro2").show();
       $("#formWrapper #msgAcerto").hide();
     }  
+    if (error == "3")
+    {
+      $("#formWrapper #msgErro3").show();
+      $("#formWrapper #msgAcerto").hide();
+    }  
   }
 });
 </script>
 
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet">
 <script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <!-- container-->
 <div class="container tudo">
@@ -299,10 +304,16 @@ $(function(){
         <div id="msgErro2" style="display:none">
           <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
             <hr>
-            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG; e menor que 1MB.
+            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.
           </p>
         </div>
  
+        <div id="msgErro3" style="display:none">
+          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
+            <hr>
+            Verifique se o arquivo que você tentou enviar é menor que 15MB.
+          </p>
+        </div>
       </div>
       
       <?php if(isset($displays['bastidores'])):?> 
@@ -477,10 +488,10 @@ $(document).ready(function(){
           required:true,
           minlength: 3
         },
-        arquivo:{
+        datafile:{
           required: true,
           accept: "png|jpe?g|gif",
-          filesize: 1048576
+          filesize: 15728640
         },
         concorda:{
           required: true
@@ -492,7 +503,10 @@ $(document).ready(function(){
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         link: "Este campo &eacute; Obrigat&oacute;rio.",
-        arquivo: "O arquivo precisa estar no formato JPG, GIF ou PNG; e menor que 1MB",
+        datafile: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
       },
       success: function(label){

@@ -61,6 +61,7 @@
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
 .interatividade .form-campos label.error { display: none !important ; }
+.interatividade .form-campos label[for="datafile"].error { display: block !important; }
 .interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:0 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
@@ -75,12 +76,15 @@
 
 .interatividade #msgErro p,
 .interatividade #msgErro2 p,
+.interatividade #msgErro3 p,
 .interatividade #msgAcerto p{color:yellow; text-transform:uppercase;}
 .interatividade #msgErro hr,
 .interatividade #msgErro2 hr,
+.interatividade #msgErro3 hr,
 .interatividade #msgAcerto hr{border-top: none;border-bottom: 1px dashed yellow;margin: 10px 55px;}  
 .interatividade #msgErro,
 .interatividade #msgErro2,
+.interatividade #msgErro3,
 .interatividade #msgAcerto{text-align: center; margin: 0 30px; font-weight: bold; height: 205px; padding-top: 105px;} 
 .interatividade .form-campos .file { color:#747B3A; text-transform:uppercase }
 .interatividade #file,
