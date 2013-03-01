@@ -69,7 +69,7 @@
           <?php endif; ?>
         <?php endif; ?>
        
-       
+        
        <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
                        
