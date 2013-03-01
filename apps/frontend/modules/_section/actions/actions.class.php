@@ -1510,7 +1510,7 @@ class _sectionActions extends sfActions
         if($debug) print "<br>3-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists');
       }
-      if($this->site->getSlug() == "cocorico" && $this->section->slug == "tvcocorico" && date('Y-m-d H:i:s',time()) > "2013-03-01 00:00:00") {
+      if($this->site->getSlug() == "cocorico" && $this->section->slug == "tvcocorico" && date('Y-m-d H:i:s',time()) > "2013-03-02 00:00:00") {
         if($debug) print "<br>3-1-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/tvcocorico-concurso-encerrado';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/tvcocorico-concurso-encerrado');
       }
