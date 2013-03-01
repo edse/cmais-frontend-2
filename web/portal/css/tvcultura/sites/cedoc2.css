@@ -39,7 +39,7 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 
 /* container */
 .container { background:#fff; }
-#geral { margin-top:0; }
+#geral { margin-top:0; max-width:980px; }
 h2,
 .hero-unit ul {font-family: 'source_sans_proregular';}
 .form-search .input-append .btn,
