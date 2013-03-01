@@ -391,7 +391,7 @@ $(function(){
     
     <?php if($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "content"): ?>
     <div class="span6 box-destaque tvcocorico">
-      <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $se ?></a></h3>
+      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
       <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $se ?>"></a>
         <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
