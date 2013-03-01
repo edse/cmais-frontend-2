@@ -19,9 +19,15 @@
                 </form>
               </div>
               <div class="imgNoar">
+                <?php if ($live->Program->Site->id > 0): ?>
                 <a href="<?php echo $live->Program->retriveUrl() ?>" title="<?php echo $live->getTitle() ?>">
                   <img src="http://midia.cmais.com.br/programs/<?php echo $live->Program->getImageLive() ?>" alt="<?php echo $live->Program->getTitle() ?>" />
                 </a>
+                <?php else: ?>
+                <a href="/grade" title="<?php echo $live->getTitle() ?>">
+                  <img src="http://midia.cmais.com.br/programs/<?php echo $live->Program->getImageLive() ?>" alt="<?php echo $live->Program->getTitle() ?>" />
+                </a>
+                <?php endif; ?>
               </div>
             </div>
           </div>
