@@ -385,8 +385,8 @@ $(function(){
      <div class="span12" style="margin-top:20px;">  
       
       <!-- Destaque Secundário -->
-      <?php if(isset($displays['destaque-secundario'])):?>
-        <?php if(count($displays['destaque-secundario']) > 0): ?>
+      <?php if(isset($displays['convidado-especial'])):?>
+        <?php if(count($displays['convidado-especial']) > 0): ?>
           <?php
           /*  NÃO APAGAR, AINDA ESTOU MEXENDO NISSO
            * 
