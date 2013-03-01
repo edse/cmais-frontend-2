@@ -74,6 +74,9 @@
           <p><?php echo $displays["destaque-2"][0]->Asset->getDescription() ?></p>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
+        <?php endif; ?>
+      <?php endif; ?>
+        
       </div>
       <div class="row-fluid">
         <div class="span4 apoio"> 
