@@ -49,13 +49,20 @@
       </div>
 
      <div class="row-fluid">
+        <?php if(isset($displays['destaque-1'])):?>
+          <?php if(count($displays['destaque-1']) > 0): ?>
+                       
+        <?php $related_image = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-4-b'); ?>
          <div class="span6">
-          <a href="#" title=""><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
-          <h2><a href="#" title="">O Acervo</a></h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
+          <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
+          <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
           <a class="mais" href="#" title="+leia mais">+leia mais</a>
         </div>
+        
+          <?php endif; ?>
+        <?php endif; ?>
+       
        
          <div class="span6">
           <a href="#" title=""><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
