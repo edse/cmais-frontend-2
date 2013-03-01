@@ -397,7 +397,7 @@ $(function(){
           <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
           <?php $tam=32; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
         </a>
-      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+      <a href="<?php echo $site->retriveUrl() ?>/concurso-cultural/pedalando-com-o-julio" class="ico-mais"></a>
     </div>
     
     <?php elseif($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "video"): ?>
@@ -408,7 +408,7 @@ $(function(){
         <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
         <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
       </a>
-      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+      <a href="<?php echo $site->retriveUrl() ?>/concurso-cultural/pedalando-com-o-julio" class="ico-mais"></a>
     </div>
     
     <?php endif; ?>
