@@ -186,14 +186,9 @@ $(function(){
             <h2>Concurso Cultural</h2>
           </div>
         </div>
+        <?php
+        /*
         <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
-          <?php
-          /*
-          <?php if($_REQUEST['test']): ?>
-          <input type="hidden" name="test" value="1" />
-          <?php endif; ?>
-           */
-          ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
@@ -292,6 +287,8 @@ $(function(){
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
+         */
+        ?>
         
         <div id="msgAcerto" style="display:none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
@@ -487,11 +484,12 @@ $(function(){
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
+<?php
+/*
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
-      /* form tv cocorico */
   $('.btn-form').click(function(){
    $('.destaque-home-tv').hide();
    $('.interatividade').fadeIn("fast"); 
@@ -504,6 +502,7 @@ $(document).ready(function(){
 </script>
 
 <!--form-->
+
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({
@@ -558,3 +557,5 @@ $(document).ready(function(){
     });
   });
 </script>
+ */
+?>
