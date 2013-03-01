@@ -12,9 +12,9 @@
       <?php endif; ?>
         <ul>
           <li><h3>Cedoc</h3></li>
-          <li class="ativo"><span></span><a href="#" title="Quem Somos">quem somos</a></li>
-          <li><span></span><a href="#" title="Acerto">acervo</a></li>
-          <li><span></span><a href="#" title="Contato">contato</a></li>
+          <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acerto">acervo</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
           <li>
             <form class="form-search pull-right" action="busca.php">
               <div class="input-append">
@@ -36,7 +36,7 @@
        
         <div class="span4">
           <h2>O Cedoc</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum i#d ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <a class="mais" href="#" title="+leia mais">+leia mais</a>
         </div>
