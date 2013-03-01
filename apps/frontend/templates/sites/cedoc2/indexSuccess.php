@@ -33,7 +33,7 @@
         <?php if(isset($displays['destaque-principal'])):?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
             
-       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
+       <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
         <div class="span8">
           <iframe width="620" height="465" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
