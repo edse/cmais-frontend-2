@@ -437,11 +437,7 @@ $(function(){
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
             </a>
-            <?php if($displays['convidado-especial'][0]->Asset->Sections[0]): ?>
-            <a href="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
-            <?php else: ?>
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" class="ico-mais" title="<?php echo $displays['convidado-especial'][0]->getTitle(); ?>"></a>
-            <?php endif; ?>
           </div>
           
        <?php endif; ?>
