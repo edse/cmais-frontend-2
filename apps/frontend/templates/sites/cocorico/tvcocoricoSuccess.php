@@ -430,7 +430,7 @@ $(function(){
           ?>
           
           <div class="span6 box-destaque ytb">
-            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Blocks->getTitle() ?></a></h3>
+            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Blocks->getTitle() ?></a></h3><!-- teste -->
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <img src="<?php echo $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
             </a>
