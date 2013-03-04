@@ -153,14 +153,17 @@ $(function(){
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
-            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
-           
+            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-concurso-encerrado.jpg" />
+            <?php
+            /*
             <div class="destaque span12" style="position:relative;">
               <span></span>
               <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
               <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
               <span class="last"></span>
             </div>
+             */
+            ?>
           <?php endif; ?>
         <?php endif; ?>
         
@@ -188,14 +191,9 @@ $(function(){
             <h2>Concurso Cultural</h2>
           </div>
         </div>
+        <?php
+        /*
         <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
-          <?php
-          /*
-          <?php if($_REQUEST['test']): ?>
-          <input type="hidden" name="test" value="1" />
-          <?php endif; ?>
-           */
-          ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
@@ -294,6 +292,8 @@ $(function(){
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
+         */
+        ?>
         
         <div id="msgAcerto" style="display:none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
@@ -387,38 +387,10 @@ $(function(){
      <div class="span12" style="margin-top:20px;">  
       
       <!-- Destaque Secundário -->
-      <?php if(isset($displays['convidado-especial'])):?>
+      <?php if(isset($displays['convidado-especial'])): ?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
           <?php
-          /*  NÃO APAGAR, AINDA ESTOU MEXENDO NISSO
-           * 
-           * 
-          <?php
-            $display_url = $displays['destaque-secundario'][0]->retriveUrl();
-            
-            $display_section = $disays['destaque-secundario'][0]->Asset->getSections();
-            if (is_array($display_section)) {
-              $display_section = $section[0];
-              $display_section_url = $display_section->retriveUrl();              
-            }
-            
-            if ($display_section->getParent()) {
-              $parent_section = $display_section->getParent();
-              $display_url = $display_section_url = $parent_section->retriveUrl();
-            }  
-          ?>
-        <div class="span6 box-destaque tvcocorico">
-          <h3><a href="<?php echo $display_section_url ?>"><?php echo $displays['destaque-secundario'][0]->Block->getTitle(); ?></a></h3>
-          <a href="<?php echo $display_url ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $se ?>"></a>
-            <a href="<?php echo $display_url ?>">
-              <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-              <?php $tam=32; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-            </a>
-          <a href="<?php echo $display_section_url ?>" class="ico-mais"></a>
-        </div>
-           */
-          ?>
-          
+           /*
            <?php
               $display_img_src = $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b');
               if ($display_img_src == '') {
@@ -427,40 +399,56 @@ $(function(){
               }
             ?>
         
-    <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-    <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
-    <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
-    
-    <?php if($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "content"): ?>
-    <div class="span6 box-destaque tvcocorico">
-      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $se ?>"></a>
-        <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">
-          <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-          <?php $tam=32; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-        </a>
-      <a href="<?php echo $site->retriveUrl() ?>/concurso-cultural/pedalando-com-o-julio" class="ico-mais"></a>
-    </div>
-    
-    <?php elseif($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "video"): ?>
-     <div class="span6 box-destaque ytb">
-      <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
-      <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
-        <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
-        <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
-      </a>
-      <a href="<?php echo $site->retriveUrl() ?>/concurso-cultural/pedalando-com-o-julio" class="ico-mais"></a>
-    </div>
-    
-    <?php endif; ?>
-    <!-- /Convidado Especial -->
-    <?php endif; ?>
+          <?php $related = $displays['convidado-especial'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+          <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
+          <?php $se_link = $displays['convidado-especial'][0]->Asset->Sections[0]->getSlug(); ?> 
+          
+          <?php if($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "content"): ?>
+          <div class="span6 box-destaque tvcocorico">
+            <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+            <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $se ?>"></a>
+              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>">
+                <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+                <?php $tam=32; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+              </a>
+            <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+          </div>
+          
+          <?php elseif($displays['convidado-especial'][0]->Asset->AssetType->getSlug() == "video"): ?>
+           <div class="span6 box-destaque ytb">
+            <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>"></a>
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>">
+              <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
+              <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+            </a>
+            <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
+          </div>
+          
+          <?php endif; ?>
+           */
+          ?>
+          
+          <div class="span6 box-destaque ytb">
+            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a></h3><!-- teste 2 /-->
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+              <img src="<?php echo $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+            </a>
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
+              <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+            </a>
+            <?php if(is_array($displays['convidado-especial'][0]->Asset->Sections)): ?>  
+            <a href="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
+            <?php endif; ?>
+          </div>
+          
+       <?php endif; ?>
      <?php endif; ?>
     
     <!-- Receitinhas -->
      <?php if(isset($displays['receitinhas'])):?>
-       <?php if(count($displays['receitinhas']) > 0): ?>  
+       <?php if(count($displays['receitinhas']) > 0): ?>
+         <?php /* 
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php $se = $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>
           <?php $se_link = $displays['receitinhas'][0]->Asset->Sections[0]->getSlug(); ?> 
@@ -476,7 +464,29 @@ $(function(){
     </div>
     <!-- / Receitinhas -->
     </div>
-    <?php endif; ?>
+          */
+         ?>
+         
+    <div class="span6 box-destaque ytb">
+      <h3>
+        <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?>  
+        <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <?php else: ?>
+        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <?php endif; ?>
+      </h3>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+        <?php $tam=28; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+      </a>
+      <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?>  
+      <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
+      <?php endif; ?>
+    </div>
+    <!-- / Receitinhas -->
+    </div>
+         
+      <?php endif; ?>
     <?php endif; ?> 
       
     </div>
@@ -489,11 +499,12 @@ $(function(){
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
+<?php
+/*
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
-      /* form tv cocorico */
   $('.btn-form').click(function(){
    $('.destaque-home-tv').hide();
    $('.interatividade').fadeIn("fast"); 
@@ -506,6 +517,7 @@ $(document).ready(function(){
 </script>
 
 <!--form-->
+
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({
@@ -560,3 +572,5 @@ $(document).ready(function(){
     });
   });
 </script>
+ */
+?>
