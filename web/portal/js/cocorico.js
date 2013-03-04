@@ -142,6 +142,7 @@ function getParameterByName(name) {
 /* 
  * Cookies Functionalities: Get, Set and Print Cookies
  */
+/*
 function getCookie(w)
 {
   cName = "";
@@ -193,3 +194,4 @@ function setExpiration(cookieLife)
   }
   return expires.toUTCString(); 
 }
+*/
