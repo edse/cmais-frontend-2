@@ -2721,7 +2721,7 @@ z-index: 503;
 .tags li { background:#ffb912; color:#323232; font-size:15px; width:90px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 .tags li a { line-height:20px; height: 20px; text-align:center; display:block; font-size:15px; }
 .tags li a:hover { text-decoration:none; }
-.destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; }
+.destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; }
 .destaque-promocao:hover { text-decoration:none; }
 .destaque-promocao p { text-transform:uppercase; color:#fff; font-weight:bold; position:relative; width: 250px; top:65px; left:270px; }
 .destaque-promocao strong { clear:both; color:#bdda28; font-size:27px; display: block; margin:30px 0 10px 0;  }
