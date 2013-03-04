@@ -469,10 +469,10 @@ $(function(){
          
     <div class="span6 box-destaque ytb">
       <h3>
-        <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?>  
-        <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?> 
+        <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->Block->getTitle() ?>"><?php echo $displays['receitinhas'][0]->Block->getTitle() ?></a>
         <?php else: ?>
-        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->Block->getTitle() ?>"><?php echo $displays['receitinhas'][0]->Block->getTitle() ?></a>
         <?php endif; ?>
       </h3>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
