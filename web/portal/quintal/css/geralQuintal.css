@@ -808,7 +808,7 @@ width: 680px;
   position: absolute;
   width: 378px;
   height: 381px;
-  left: 165px;
+  right: 0;
 }
 .rodaGigante a.todosJogos{
   background: url(../images/btn-bola.png) no-repeat;
