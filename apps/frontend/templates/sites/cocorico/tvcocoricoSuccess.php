@@ -308,11 +308,11 @@ $(function(){
             <hr>
             Este concurso foi encerrado dia 02/03/2013, à meia-noite!
           </p>
-        </div>
+       
+      </div>
          * */
         ?>
       </div>
-      
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
