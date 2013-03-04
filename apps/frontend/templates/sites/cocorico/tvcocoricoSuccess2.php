@@ -386,7 +386,7 @@ $(function(){
      <br>
      <div class="span12" style="margin-top:20px;">  
       
-      <!-- Destaque Secundário --><!-- teste 2 /-->
+      <!-- Destaque Secundário -->
       <?php if(isset($displays['convidado-especial'])): ?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
           <?php
@@ -430,7 +430,7 @@ $(function(){
           ?>
           
           <div class="span6 box-destaque ytb">
-            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Blocks->getTitle() ?></a></h3><!-- teste 2 /-->
+            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a></h3><!-- teste 2 /-->
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <img src="<?php echo $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
             </a>
