@@ -477,7 +477,7 @@ $(function(){
       </h3>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
         <!--img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"-->
-        <img src="<?php echo $displays['receitinhas'][0]->retriveImageUrlByImageUsage(image-3) ?>" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+        <img src="<?php echo $displays['receitinhas'][0]->retriveImageUrlByImageUsage('image-3') ?>" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
       </a>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
         <?php $tam=28; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
