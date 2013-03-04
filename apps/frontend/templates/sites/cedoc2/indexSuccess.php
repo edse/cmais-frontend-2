@@ -41,7 +41,7 @@
         <div class="span4">
           <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
           <p><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
-          <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+          <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->AssetContent->getContent() ?>" title="+leia mais">+leia mais</a>
         </div>
         
          <?php endif; ?>
