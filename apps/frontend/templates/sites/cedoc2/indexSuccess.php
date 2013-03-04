@@ -34,18 +34,42 @@
           <?php if(count($displays['destaque-principal']) > 0): ?>
             
        <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
-        <div class="span8">
-          <iframe width="620" height="384" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
        
-        <div class="span4">
-          <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
-
+       <?php
+              $display_img_src = $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');   
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+            ?>
+            
+        <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>    
+        
+          <div class="span8">
+            <iframe width="620" height="384" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+         
+          <div class="span4">
+            <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+  
+            <div class="texto">
+              <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+            </div>
+            <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+          </div>
+        
+        <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
+        
+         <div class="span4">
+          <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
+          <h2><a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></a></h2>
           <div class="texto">
             <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
-        </div>
+         </div>
+        
+        <?php endif; ?>
         
          <?php endif; ?>
         <?php endif; ?>
