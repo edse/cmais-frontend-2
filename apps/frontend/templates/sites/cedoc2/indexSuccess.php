@@ -42,7 +42,7 @@
           <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
 
           <div class="texto">
-            <p><?php echo $displays["destaque-principal"][0]->Asset->AssetContent->getContent() ?></p>
+            <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
