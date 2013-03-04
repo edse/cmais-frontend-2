@@ -538,7 +538,10 @@ class _assetActions extends sfActions
 				
 
     //metas
-    $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
+    if($this->asset->Site->getSlug()!="cmais")
+      $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
+    else
+      $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' O portal de conteúdo da Cultura';
     $this->getResponse()->setTitle($title, false);
     $this->getResponse()->addMeta('description', $this->asset->getDescription());
     $tags = "";    
@@ -578,6 +581,25 @@ class _assetActions extends sfActions
     elseif($this->asset->AssetType->getSlug() == "content"){
       $rel = $this->asset->retriveRelatedAssets();
       if(count($rel)>0){
+        if($rel[0]->AssetType->getSlug() == "video"){
+          $this->getResponse()->addMetaProp('og:type', 'video');
+          $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$rel[0]->AssetVideo->getYoutubeId().'?version=3&amp;autohide=1');
+          $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
+          $this->getResponse()->addMetaProp('og:video:width', '640');
+          $this->getResponse()->addMetaProp('og:video:height', '390');
+          $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/default.jpg');
+        }elseif($rel[0]->AssetType->getSlug() == "audio"){
+          /*
+          $this->getResponse()->addMetaProp('og:type', 'audio');
+          $this->getResponse()->addMetaProp('og:audio', 'http://midia.cmais.com.br/assets/audio/default/'.$related->AssetAudio->getFile().'.mp3');
+          $this->getResponse()->addMetaProp('og:audio:title', $related->getTitle());
+          $this->getResponse()->addMetaProp('og:audio:type', 'application/mp3');
+          */
+          $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+        }elseif($rel[0]->AssetType->getSlug() == "image"){
+          $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/default/'.$rel[0]->AssetImage->getFile().'.jpg');
+        }
+        /*
         foreach($rel as $related){
           if($related->AssetType->getSlug() == "video"){
             $this->getResponse()->addMetaProp('og:type', 'video');
@@ -597,6 +619,7 @@ class _assetActions extends sfActions
             $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/default/'.$related->AssetImage->getFile().'.jpg');
           }
         }
+        */
       }
     }
     else{

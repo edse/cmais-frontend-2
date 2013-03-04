@@ -13,11 +13,13 @@
           <div class="proximo">
             <p>Daqui a pouco:</p>
             <ul>
-              <li><a href="<?php echo $coming[0]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[0]->getDateStart(), "t") ?></span> - <?php echo $coming[0]->Program->getTitle() ?></a></li>
-              <li><a href="<?php echo $coming[1]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[1]->getDateStart(), "t") ?></span> - <?php echo $coming[1]->Program->getTitle() ?></a></li>
-              <li><a href="<?php echo $coming[2]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[2]->getDateStart(), "t") ?></span> - <?php echo $coming[2]->Program->getTitle() ?></a></li>
-              <li><a href="<?php echo $coming[3]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[3]->getDateStart(), "t") ?></span> - <?php echo $coming[3]->Program->getTitle() ?></a></li>
-              <li><a href="<?php echo $coming[4]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[4]->getDateStart(), "t") ?></span> - <?php echo $coming[4]->Program->getTitle() ?></a></li>
+              <?php for($i=0; $i<5; $i++): ?>
+                <?php if($coming[$i]->Program->Site->id > 0): ?>
+              <li><a href="<?php echo $coming[$i]->Program->retriveUrl() ?>"><span><?php echo format_date($coming[$i]->getDateStart(), "t") ?></span> - <?php echo $coming[$i]->Program->getTitle() ?></a></li>
+                <?php else: ?>
+              <li><a href="/grade"><span><?php echo format_date($coming[$i]->getDateStart(), "t") ?></span> - <?php echo $coming[$i]->Program->getTitle() ?></a></li>
+                <?php endif; ?>
+              <?php endfor; ?>
             </ul>
             <div class="btn-barra">
               <span class="pontaBarra"></span>

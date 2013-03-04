@@ -125,16 +125,6 @@
         <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
       </ul>
     </div>
-    <form id="page_form" action="" method="post">
-      <input type="hidden" name="return_url" value="<?php echo $url?>" />
-      <input type="hidden" name="page" id="page" value="" />
-    </form>
-    <script>
-      function goToPage(i){
-        $("#page").val(i);
-        $("#page_form").submit();
-      }
-    </script>
     <!--// PAGINACAO -->
     <?php endif; ?>
   <?php endif; ?>

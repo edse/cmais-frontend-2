@@ -1401,9 +1401,7 @@ class _sectionActions extends sfActions
         $this->page = $request->getParameter('page');
       }
       else if(($this->site->getSlug() == "cocorico2")||($this->site->getSlug() == "cocorico")){
-        //die('test');
         $pagelimit = 12;
-        
         
         if (in_array($this->section->getSlug(), array("receitinhas","imprima-e-brinque")))
           $pagelimit = 72;
@@ -1480,7 +1478,7 @@ class _sectionActions extends sfActions
       $this->ipad = true;
     }
     
-    if(isset($this->category) && ($this->section->Parent->id > 0)){ 
+    if(isset($this->category) && ($this->section->Parent->id > 0)){
       
       if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
         if($debug) print "<br1>>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
@@ -1506,12 +1504,16 @@ class _sectionActions extends sfActions
       }
     }
     elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
-      if ($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlist") {
-        if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists';
+      if($this->site->getSlug() == "radarcultura" && $this->section->slug == "playlist") {
+        if($debug) print "<br>3-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlists');
       }
+      if($this->site->getSlug() == "cocorico" && $this->section->slug == "tvcocorico" && date('Y-m-d H:i:s',time()) > "2013-03-02 00:00:00") {
+        if($debug) print "<br>3-1-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/tvcocorico-concurso-encerrado';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/tvcocorico-concurso-encerrado');
+      }
       else {
-        if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
+        if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
       }
     }

@@ -39,7 +39,7 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 
 /* container */
 .container { background:#fff; }
-#geral { margin-top:0; max-width:980px; }
+#geral { margin-top:0; max-width:980px; padding-bottom:40px }
 h2,
 .hero-unit ul {font-family: 'source_sans_proregular';}
 .form-search .input-append .btn,
@@ -49,7 +49,7 @@ h2,
 /* home */
 .hero-unit { padding:0; position:relative; margin:0; }
 .hero-unit ul h3 { margin:0; font-size:32px; color:#fff; text-transform:uppercase; padding-left:20px; height:60px; line-height:60px;}
-.hero-unit ul { position:absolute; top:85px; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; }
+.hero-unit ul { position:absolute; top:85px; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; box-shadow: 0 3px 8px #000; }
 .hero-unit ul li { list-style:none; margin-left:-20px; padding-left:20px; position:relative; }
 .hero-unit ul li a { padding:0 20px; height:48px; line-height: 48px; color:#fff; text-decoration:none; text-transform:uppercase; font-size:22px; font-weight:bold; display: block; background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  }
 .hero-unit ul li.ativo a,
@@ -59,7 +59,7 @@ h2,
 .hero-unit ul li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
 .hero-unit .search-query.input-medium,
 .hero-unit .btn { height:20px; line-height:20px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
-.hero-unit .search-query.input-medium { max-width:125px; border-left:none;  }
+.hero-unit .search-query.input-medium { max-width:125px; border-left:none; font-size:12px; color:#666;  }
 .hero-unit .btn { border-right:0; height:24px;  border-left:2px solid #535352; }
 .hero-unit form i { margin:0 3px; }
 .hero-unit form { margin:20px 15px 20px 0; }
@@ -68,9 +68,9 @@ h2,
 h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; height:20px; line-height:20px;  }
 .row-fluid a { display:block; text-decoration:underline; color:#000; }
 .row-fluid h2 a  { text-decoration:none; color:#666666;}
-.row-fluid .mais { float:right; }
+.row-fluid .mais { float:right; margin-top:20px; }
 
-.apoio.span4 { float: right; }
+.apoio.span5 { float: right;}
 .apoio h2 { text-transform:none; }
 .apoio li { list-style:none; float:left; }
 .apoio li a { display:block; text-indent:-9999px; }
@@ -78,4 +78,28 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .apoio .ministerio { margin: 0 20px; }
 .apoio .ministerio a { width: 53px; height:18px; background:url(/portal/images/capaPrograma/cedoc/logo-ministerio.jpg) no-repeat;}
 .apoio .governo a { width: 114px; height:36px; background:url(/portal/images/capaPrograma/cedoc/logo-governo.jpg) no-repeat; }
+.txt { max-height:230px; overflow:hidden; }
+
 /* /home */
+
+/* rodape*/
+#footer { width: 100%; position:relative; }
+#footer,
+#footer .container { background:#333; }
+#footer .container { max-width:980px; }
+#footer .voltar-topo {  background:#333 url(/portal/images/voltar-topo.png) no-repeat 5px; color:#fff; height:30px; line-height: 30px; padding:0 10px 0 30px; font-size:10px; margin:-30px 0 0 10px; display: block; width:62px;  }
+#footer .logo-fpa { background:url(/portal/images/capaPrograma/cedoc/logo-fpa-branco.png) no-repeat; text-indent:-9999px; display:block; width: 64px; height:46px; margin:30px 0 20px 20px; }
+#footer ul { border-right:1px dotted #fff; min-height:200px; }
+#footer p,
+#footer ul a { color:#fff; font-weight:normal; font-size:12px; }
+#footer ul p { margin-bottom:0;}
+#footer ul .tit { margin-bottom:20px; }
+#footer ul .tit p,
+#footer ul .tit a { font-weight:bold; }
+#footer ul .tit.mg { margin-bottom:0; }
+#footer ul.span3 { max-width:216px;  }
+#footer ul.span3.last { border:none; }
+#footer ul.span3.first { margin-left: 20px; }
+#footer ul .sic { margin-top:20px; }
+#footer .copyright { text-align:center; font-size:10px;}
+/* rodape*/

@@ -40,8 +40,15 @@
        
         <div class="span4">
           <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+<<<<<<< HEAD
           <p><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->AssetContent->getContent() ?>" title="+leia mais">+leia mais</a>
+=======
+          <div class="texto">
+            <p><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
+          </div>
+          <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+>>>>>>> 3e33b3672fd7d20bfeb6b7e9bbe6c221e1b7710d
         </div>
         
          <?php endif; ?>
@@ -62,7 +69,9 @@
          <div class="span6">
           <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
-          <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
+          <div class="texto">
+            <p><?php echo $displays["destaque-1"][0]->Asset->getDescription() ?></p>
+          </div>
           <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
         
@@ -83,7 +92,9 @@
          <div class="span6">
           <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-2"][0]->Asset->getTitle() ?></a></h2>
-          <p><?php echo $displays["destaque-2"][0]->Asset->getDescription() ?></p>
+          <div class="texto">
+            <p><?php echo $displays["destaque-2"][0]->Asset->getDescription() ?></p>
+          </div>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
         <?php endif; ?>
@@ -91,7 +102,7 @@
         
       </div>
       <div class="row-fluid">
-        <div class="span4 apoio"> 
+        <div class="span5 apoio"> 
           <h2>Realização:</h2>
           <ul>
             <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
