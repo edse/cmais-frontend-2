@@ -184,6 +184,7 @@ $(function(){
         <?php endif; ?>
         
       </div>
+      </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
       <?php
