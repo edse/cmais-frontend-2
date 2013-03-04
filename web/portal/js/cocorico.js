@@ -138,3 +138,58 @@ function getParameterByName(name) {
   else
     return decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
+/* 
+ * Cookies Functionalities: Get, Set and Print Cookies
+ */
+function getCookie(w)
+{
+  cName = "";
+  pCOOKIES = new Array();
+  //document.cookie = unescape(document.cookie); 
+  pCOOKIES = document.cookie.split('; ');
+  for(bb = 0; bb < pCOOKIES.length; bb++)
+  {
+    NmeVal  = new Array();
+    NmeVal  = pCOOKIES[bb].split('=');
+    if(NmeVal[0] == w)
+    {
+      cName = unescape(NmeVal[1]);
+    }
+  }
+  return cName;
+}
+
+function printCookies(w)
+{
+  cStr = "";
+  pCOOKIES = new Array();
+  pCOOKIES = document.cookie.split('; ');
+  for(bb = 0; bb < pCOOKIES.length; bb++)
+  {
+    NmeVal  = new Array();
+    NmeVal  = pCOOKIES[bb].split('=');
+    if(NmeVal[0])
+    {
+      cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
+    }
+  }
+  return cStr;
+}
+
+function setCookie (name,value,expires,path,domain,secure) {
+  var curCookie = name + "=" + escape (value) +
+    ((expires > 0) ? "; expires=" + setExpiration(expires) : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+function setExpiration(cookieLife)
+{
+  if ('number' === typeof expires) {
+    expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
+  }
+  return expires.toUTCString(); 
+}
