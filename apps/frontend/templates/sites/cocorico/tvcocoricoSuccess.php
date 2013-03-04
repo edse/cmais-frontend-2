@@ -175,9 +175,9 @@ $(function(){
             
             <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             
-            <div class="destaque span12">
+            <div class="destaque span12"> 
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <a href="<?php $site->retriveUrl()?>/cocorico/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
