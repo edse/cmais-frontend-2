@@ -467,7 +467,7 @@ $(function(){
     </div>
           */
          ?>
-         
+    <!-- 1 -->     
     <div class="span6 box-destaque ytb">
       <h3>
         <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?> 
