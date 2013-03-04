@@ -932,7 +932,7 @@ width: 680px;
   border: 1px solid #000;
   float: left;
   width: 640px;
-  height: 384px;
+  min-height: 384px;
 }
 .interna{
   position: relative;
