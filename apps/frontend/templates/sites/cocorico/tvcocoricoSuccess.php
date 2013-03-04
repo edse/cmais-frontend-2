@@ -447,7 +447,8 @@ $(function(){
     
     <!-- Receitinhas -->
      <?php if(isset($displays['receitinhas'])):?>
-       <?php if(count($displays['receitinhas']) > 0): ?>  
+       <?php if(count($displays['receitinhas']) > 0): ?>
+         <?php /* 
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php $se = $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>
           <?php $se_link = $displays['receitinhas'][0]->Asset->Sections[0]->getSlug(); ?> 
@@ -463,7 +464,29 @@ $(function(){
     </div>
     <!-- / Receitinhas -->
     </div>
-    <?php endif; ?>
+          */
+         ?>
+         
+    <div class="span6 box-destaque ytb">
+      <h3>
+        <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?>  
+        <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <?php else: ?>
+        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->Block->getTitle() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a>
+        <?php endif; ?>
+      </h3>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"></a>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+        <?php $tam=28; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+      </a>
+      <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?>  
+      <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
+      <?php endif; ?>
+    </div>
+    <!-- / Receitinhas -->
+    </div>
+         
+      <?php endif; ?>
     <?php endif; ?> 
       
     </div>
