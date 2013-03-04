@@ -386,7 +386,7 @@ $(function(){
      <br>
      <div class="span12" style="margin-top:20px;">  
       
-      <!-- Destaque Secundário --><!-- teste 2 /-->1
+      <!-- Destaque Secundário --><!-- teste 2 /-->
       <?php if(isset($displays['convidado-especial'])): ?>
         <?php if(count($displays['convidado-especial']) > 0): ?>
           <?php
