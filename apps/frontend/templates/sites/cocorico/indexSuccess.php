@@ -250,13 +250,13 @@
             ?>
               */ ?>
            
-           <!-- box-destaque 2-->
+           <!-- box-destaque 2 -->
             <div class="span6 box-destaque">
               <h3><a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays['destaque-3'][0]->Block->getTitle() ?></a></h3>
               <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><img src="<?php echo $displays["destaque-3"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-3"][0]->getTitle() ?>"></a>
               <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays["destaque-3"][0]->getTitle() ?></a>
              </div>
-            <!--/box-destaque 2-->
+            <!--/box-destaque 2 -->
             
           <?php endif; ?>
         <?php endif; ?>
