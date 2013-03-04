@@ -1401,9 +1401,7 @@ class _sectionActions extends sfActions
         $this->page = $request->getParameter('page');
       }
       else if(($this->site->getSlug() == "cocorico2")||($this->site->getSlug() == "cocorico")){
-        //die('test');
         $pagelimit = 12;
-        
         
         if (in_array($this->section->getSlug(), array("receitinhas","imprima-e-brinque")))
           $pagelimit = 72;
