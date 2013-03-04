@@ -237,7 +237,7 @@
                 
         <?php if(isset($displays['destaque-3'])):?>
           <?php if(count($displays['destaque-3']) > 0): ?>
-             
+             <?php /*
           <?php $se = $displays["destaque-3"][0]->Asset->Sections[0]->getTitle(); ?>
             <?php $se_link = $displays["destaque-3"][0]->Asset->Sections[0]->getSlug(); ?>
             
@@ -248,12 +248,13 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
+              */ ?>
            
            <!-- box-destaque 2-->
             <div class="span6 box-destaque">
-              <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-              <a href="<?php echo $displays["destaque-3"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["destaque-3"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-3"][0]->getTitle() ?>"></a>
-              <a href="<?php echo $displays["destaque-3"][0]->Asset->retriveUrl() ?>"><?php echo $displays["destaque-3"][0]->getTitle() ?></a>
+              <h3><a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays['destaque-3'][0]->Block->getTitle() ?></a></h3>
+              <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><img src="<?php echo $displays["destaque-3"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-3"][0]->getTitle() ?>"></a>
+              <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays["destaque-3"][0]->getTitle() ?></a>
              </div>
             <!--/box-destaque 2-->
             
