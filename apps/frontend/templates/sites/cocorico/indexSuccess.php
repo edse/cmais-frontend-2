@@ -26,13 +26,11 @@
       var value = getCookie('modalcocorico')
       console.log(value);
       if(!value){
-        setCookie('modalcocorico', 1);
-        //setCookie('modalcororico','yes',365,'/','.tvcultura.cmais.com.br');
+        setCookie('modalcocorico', 1000);
         $('.modal-backdrop.bg-video').fadeIn('fast');
         $('#modal-video').fadeIn('fast');
       }
     }
-    
     
     function setCookie(c_name,value){
       var exdate=new Date();
@@ -52,8 +50,6 @@
         }
       }
     }
-    
-    
   })
 </script>
 <!-- Modal -->
