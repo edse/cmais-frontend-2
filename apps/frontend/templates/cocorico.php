@@ -66,7 +66,7 @@
     
     <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-    <script type="text/javascript" src="/portal/js/cocorico.js"></script>
+    <script type="text/javascript" src="/portal/js/cocorico.js?nocache=<?php echo rand(); ?>"></script>
     <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
     <!--link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet"-->
     

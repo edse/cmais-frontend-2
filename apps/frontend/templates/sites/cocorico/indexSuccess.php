@@ -26,14 +26,12 @@
       var value = getCookie('modalcocorico')
       console.log(value);
       if(!value){
-        //setCookie('modalcocorico', 1);
-        setCookie('modalcororico','yes',365,'/','.tvcultura.cmais.com.br');
+        setCookie('modalcocorico', 1000);
         $('.modal-backdrop.bg-video').fadeIn('fast');
         $('#modal-video').fadeIn('fast');
       }
     }
     
-    /*
     function setCookie(c_name,value){
       var exdate=new Date();
       exdate.setDate(exdate.getDate() + 7);
@@ -52,8 +50,6 @@
         }
       }
     }
-    */
-    
   })
 </script>
 <!-- Modal -->
@@ -214,7 +210,7 @@
        <div class="span12">
         <?php if(isset($displays['destaque-2'])):?>
           <?php if(count($displays['destaque-2']) > 0): ?>
-             
+            <?php /*   
           <?php $se = $displays["destaque-2"][0]->Asset->Sections[0]->getTitle(); ?>
             <?php $se_link = $displays["destaque-2"][0]->Asset->Sections[0]->getSlug(); ?>
             
@@ -225,23 +221,23 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
-           
-           <!-- box-destaque -->
+           */
+          ?>
+           <!-- box-destaque 1 -->
             <div class="span6 box-destaque">
               
-              <?php /* <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3> */ ?>
-              <h3><a href="/cocorico/pedalando-com-o-julio">Pedalando com o Júlio</a></h3>
-              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
-              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
+              <h3><a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"><?php echo $displays['destaque-2'][0]->Block->getTitle() ?></a></h3>
+              <a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"><img src="<?php echo $displays["destaque-2"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-2"][0]->getTitle() ?>"></a>
+              <a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>"><?php echo $displays["destaque-2"][0]->getTitle() ?></a>
              </div>
-            <!-- /box-destaque -->
+            <!-- /box-destaque 1 -->
           
           <?php endif; ?>
         <?php endif; ?>
                 
         <?php if(isset($displays['destaque-3'])):?>
           <?php if(count($displays['destaque-3']) > 0): ?>
-             
+             <?php /*
           <?php $se = $displays["destaque-3"][0]->Asset->Sections[0]->getTitle(); ?>
             <?php $se_link = $displays["destaque-3"][0]->Asset->Sections[0]->getSlug(); ?>
             
@@ -252,14 +248,15 @@
                 $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
               }
             ?>
+              */ ?>
            
-           <!-- box-destaque -->
+           <!-- box-destaque 2 -->
             <div class="span6 box-destaque">
-              <h3><a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>"><?php echo $se ?></a></h3>
-              <a href="<?php echo $displays["destaque-3"][0]->Asset->retriveUrl() ?>"><img src="<?php echo $displays["destaque-3"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-3"][0]->getTitle() ?>"></a>
-              <a href="<?php echo $displays["destaque-3"][0]->Asset->retriveUrl() ?>"><?php echo $displays["destaque-3"][0]->getTitle() ?></a>
+              <h3><a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays['destaque-3'][0]->Block->getTitle() ?></a></h3>
+              <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><img src="<?php echo $displays["destaque-3"][0]->retriveImageUrlByImageUsage('image-3-b') ?>" alt="<?php echo $displays["destaque-3"][0]->getTitle() ?>"></a>
+              <a href="<?php echo $displays['destaque-3'][0]->retriveUrl() ?>"><?php echo $displays["destaque-3"][0]->getTitle() ?></a>
              </div>
-            <!-- box-destaque -->
+            <!--/box-destaque 2 -->
             
           <?php endif; ?>
         <?php endif; ?>
