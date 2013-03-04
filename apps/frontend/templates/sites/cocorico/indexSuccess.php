@@ -26,7 +26,7 @@
       var value = getCookie('modalcocorico')
       console.log(value);
       if(!value){
-        setCookie('modalcocorico', 1);
+        setCookie('modalcocorico', 1000);
         $('.modal-backdrop.bg-video').fadeIn('fast');
         $('#modal-video').fadeIn('fast');
       }
@@ -50,7 +50,6 @@
         }
       }
     }
-    
   })
 </script>
 <!-- Modal -->

@@ -43,7 +43,7 @@
               }
             ?>
             
-        <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>    
+        <?php if(count($related_video) > 0): ?>    
         
           <div class="span8">
             <iframe width="620" height="384" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -57,8 +57,10 @@
             </div>
             <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
           </div>
+          
+        <?php endif; ?>
         
-        <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content"): ?>
+        <?php if(count($display_img_src) > 0): ?> 
         
          <div class="span4">
           <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
