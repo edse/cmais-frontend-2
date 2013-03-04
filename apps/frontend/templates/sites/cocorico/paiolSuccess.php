@@ -158,6 +158,7 @@
     <!-- Imprima e Brinque -->
     <?php if(isset($displays['destaque-imprima'])): ?>
       <?php if(count($displays['destaque-imprima']) > 0): ?>
+        <?php /*
         <?php $related = $displays['destaque-imprima'][0]->Asset->retriveRelatedAssetsByRelationType('Preview'); ?>
         <?php $se = $displays['destaque-imprima'][0]->Asset->Sections[0]->getTitle(); ?>
         <?php $se_link = $displays['destaque-imprima'][0]->Asset->Sections[0]->getSlug(); ?>
@@ -171,6 +172,18 @@
         <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
       </div>
     <!-- Imprima e Brinque -->
+         */ ?> 
+      <div class="span4 box-destaque">
+        <h3><a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"><?php echo $displays['destaque-imprima'][0]->Block->getTitle() ?></a></h3>
+        <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['destaque-imprima'][0]->getTitle() ?>"></a>
+          <a href="<?php echo $displays['destaque-imprima'][0]->retriveUrl() ?>"> 
+            <?php $tam=28; $str=$displays['destaque-imprima'][0]->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+          </a>
+        <?php if ($displays['destaque-imprima'][0]->Asset->Sections[0]): ?>
+        <a href="<?php echo $displays['destaque-imprima'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['destaque-imprima'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
+        <?php endif; ?>
+      </div>
+         
      <?php endif; ?>
     <?php endif; ?>
     
