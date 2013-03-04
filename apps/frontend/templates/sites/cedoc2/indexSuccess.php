@@ -40,15 +40,11 @@
        
         <div class="span4">
           <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
-<<<<<<< HEAD
-          <p><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
-          <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->AssetContent->getContent() ?>" title="+leia mais">+leia mais</a>
-=======
+
           <div class="texto">
-            <p><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
+            <p><?php echo $displays["destaque-principal"][0]->Asset->AssetContent->getContent() ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
->>>>>>> 3e33b3672fd7d20bfeb6b7e9bbe6c221e1b7710d
         </div>
         
          <?php endif; ?>
