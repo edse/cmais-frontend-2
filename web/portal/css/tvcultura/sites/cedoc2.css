@@ -41,34 +41,38 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 .container { background:#fff; }
 #geral { margin-top:0; max-width:980px; padding-bottom:40px }
 h2,
-.hero-unit ul {font-family: 'source_sans_proregular';}
+.menu {font-family: 'source_sans_proregular';}
 .form-search .input-append .btn,
-.hero-unit .search-query.input-medium { border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;}
+.conteudo .search-query.input-medium { border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;}
 /* /container */
 
 /* home */
-.hero-unit { padding:0; position:relative; margin:0; }
-.hero-unit ul h3 { margin:0; font-size:32px; color:#fff; text-transform:uppercase; padding-left:20px; height:60px; line-height:60px;}
-.hero-unit ul { position:absolute; top:85px; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; box-shadow: 0 3px 8px #000; }
-.hero-unit ul li { list-style:none; margin-left:-20px; padding-left:20px; position:relative; }
-.hero-unit ul li a { padding:0 20px; height:48px; line-height: 48px; color:#fff; text-decoration:none; text-transform:uppercase; font-size:22px; font-weight:bold; display: block; background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  }
-.hero-unit ul li.ativo a,
-.hero-unit ul li:hover a { background:url(/portal/images/capaPrograma/cedoc/bg-lista-hover.jpg) repeat-x; color:#c2f263; }
-.hero-unit ul li span { width:20px; height:68px; display: block; position:absolute; left:0;}
-.hero-unit ul li.ativo span,
-.hero-unit ul li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
-.hero-unit .search-query.input-medium,
-.hero-unit .btn { height:20px; line-height:20px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
-.hero-unit .search-query.input-medium { max-width:125px; border-left:none; font-size:12px; color:#666;  }
-.hero-unit .btn { border-right:0; height:24px;  border-left:2px solid #535352; }
-.hero-unit form i { margin:0 3px; }
-.hero-unit form { margin:20px 15px 20px 0; }
+.conteudo { padding:0; position:relative; margin:0; }
+.menu h3 { margin:0; font-size:32px; color:#fff; text-transform:uppercase; padding-left:20px; height:60px; line-height:60px;}
+.home .menu {  top:85px; } 
+.menu { position:absolute; top:0; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; box-shadow: 0 3px 8px #000; }
+.menu li { list-style:none; margin-left:-20px; padding-left:20px; position:relative; }
+.menu li a { padding:0 20px; height:48px; line-height: 48px; color:#fff; text-decoration:none; text-transform:uppercase; font-size:22px; font-weight:bold; display: block; background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  }
+.menu li.ativo a,
+.menu li:hover a { background:url(/portal/images/capaPrograma/cedoc/bg-lista-hover.jpg) repeat-x; color:#c2f263; }
+.menu li span { width:20px; height:68px; display: block; position:absolute; left:0;}
+.menu li.ativo span,
+.menu li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
+.conteudo .search-query.input-medium,
+.conteudo .btn { height:20px; line-height:20px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
+.conteudo .search-query.input-medium { max-width:125px; border-left:none; font-size:12px; color:#666;  }
+.conteudo .btn { border-right:0; height:24px;  border-left:2px solid #535352; }
+.conteudo form i { margin:0 3px; }
+.conteudo form { margin:20px 15px 20px 0; }
 
 .row-fluid { margin:20px 20px 0 20px; width: 96%; }
+.home .span8 img { min-width:620px; }
 h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; height:20px; line-height:20px;  }
 .row-fluid a { display:block; text-decoration:underline; color:#000; }
 .row-fluid h2 a  { text-decoration:none; color:#666666;}
-.row-fluid .mais { float:right; margin-top:20px; }
+.mais:hover,
+.mais { float:right; margin-top:20px; color:#000; }
+
 
 .apoio.span5 { float: right;}
 .apoio h2 { text-transform:none; }
@@ -103,3 +107,8 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 #footer ul .sic { margin-top:20px; }
 #footer .copyright { text-align:center; font-size:10px;}
 /* rodape*/
+
+/* content */
+.conteudo .span8 { float:right; margin:20px 20px 0 0; max-width:700px; }
+.conteudo .span8 img { min-width:700px; }
+/* /content */
