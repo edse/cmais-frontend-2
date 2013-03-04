@@ -38,7 +38,7 @@
           <span class="alcaB"></span>
           <div class="menu-secoes">
             <ul>
-              <li><a class="mt-programas <?php if($site->getType() == 'Programa TVRTB' || $section->getSlug() == 'programas'): ?>sel-programas<?php endif; ?>" href="/programas" title="Programas">Programas</a></li>
+              <li><a class="mt-programas <?php if($site->getType() == 'Programa TVRTB' || $section->getSlug() == 'programas'): ?>sel-programas<?php endif; ?>" href="/programas" title="Programa&ccedil;&atilde;o">Programa&ccedil;&atilde;o</a></li>
               <li><a class="mt-jogos <?php if($section->getSlug() == 'jogos'): ?>sel-jogos<?php endif; ?>" href="/jogos" title="Jogos">Jogos</a></li>
               <li><a class="mt-videos <?php if($section->getSlug() == 'videos'): ?>sel-videos<?php endif; ?>" href="/videos" title="Vídeos">V&iacute;deos</a></li>
               <li><a class="mt-imagens <?php if($section->getSlug() == 'imagens'): ?>sel-imagens<?php endif; ?>" href="/imagens" title="Imagens">Imagens</a></li>
