@@ -168,14 +168,15 @@ $(function(){
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
+      <?php
+        /*
       <div class="destaque-home-tv interatividade span9" id="formWrapper" style="display:none">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <?php
-        /*
+        
         <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
@@ -275,8 +276,7 @@ $(function(){
           
           <input type="submit" id="enviar" class="pull-right" value="ENVIAR" /> 
         </form>
-         */
-        ?>
+         
         
         <div id="msgAcerto" style="display:none">
           <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
@@ -309,6 +309,8 @@ $(function(){
             Este concurso foi encerrado dia 02/03/2013, à meia-noite!
           </p>
         </div>
+         * */
+        ?>
       </div>
       
       <?php if(isset($displays['bastidores'])):?> 
