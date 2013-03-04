@@ -475,7 +475,6 @@ $(function(){
         <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->Block->getTitle() ?>"><?php echo $displays['receitinhas'][0]->Block->getTitle() ?></a>
         <?php endif; ?>
       </h3>
-      <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
         <!--img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId()?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>"-->
         <img src="<?php echo $displays['receitinhas'][0]->retriveImageUrlByImageUsage(image-3) ?>" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
