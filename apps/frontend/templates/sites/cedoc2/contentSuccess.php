@@ -6,10 +6,10 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo">
         <ul class="menu">
-          <li><h3>Cedoc</h3></li>
-          <li class="ativo"><span></span><a href="#" title="Quem Somos">quem somos</a></li>
-          <li><span></span><a href="#" title="Acerto">acervo</a></li>
-          <li><span></span><a href="#" title="Contato">contato</a></li>
+          <li><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acervo">acervo</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
           <li>
             <form class="form-search pull-right" action="busca.php">
               <div class="input-append">
@@ -22,33 +22,58 @@
           </li>
         </ul>
         <div class="span8">
-          
-          <a href="#"><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
-          <!--iframe width="700" height="433" src="http://www.youtube.com/embed/ZqZyNkhJw88?rel=0" frameborder="0" allowfullscreen></iframe-->
-          <h2>O Cedoc</h2>
-          <div class="txt">
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          </div>
+                       
+              <!-- Verifica vídeo relacionado -->
+              <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
+       
+              <!-- Verifica imagem relacionada -->
+              <?php
+              $display_img_src = $asset->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $asset->retriveRelatedAssetsByRelationType('Preview');   
+                $display_img_src = $asset->retriveImageUrlByImageUsage('image-5-b');
+              }
+              ?>
+            
+              <!-- Exibe destaque com vídeo -->
+              <?php if(count($related_video) > 0): ?>
+                
+               <!--<img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
+                <iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+              
+                <h2><?php echo $asset->getTitle(); ?></h2>
+                <div class="txt">
+                <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+                </div>
+                
+              <?php endif; ?>
+              
+              <!-- Exibe destaque com imagem -->
+              <?php if(count($display_img_src) > 0): ?> 
+              
+                <img src="<?php echo $display_img_src ?>" alt="<?php echo $asset->getTitle(); ?>" />
+                <!--<iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe-->
+              
+                <h2><?php echo $asset->getTitle(); ?></h2>
+                <div class="txt">
+                <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+                </div>
+                
+              <?php endif; ?>
           
         </div>
-        
+         
       </div>
 
-    
-
-     
       <div class="row-fluid">
         <div class="span5 apoio"> 
           <h2>Realização:</h2>
           <ul>
-            <li class="cultura"><a href="#">Cultura</a></li>
-            <li class="ministerio"><a href="#">Ministério da Cultura</a></li>
-            <li class="governo"><a href="#">Governo Federal</a></li>
+            <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
+            <li class="ministerio"><a href="http://www.cultura.gov.br">Ministério da Cultura</a></li>
+            <li class="governo"><a href="http://www.brasil.gov.br">Governo Federal</a></li>
           </ul>
         </div>
       </div>
-
-    
 
     </div> <!-- /container -->
