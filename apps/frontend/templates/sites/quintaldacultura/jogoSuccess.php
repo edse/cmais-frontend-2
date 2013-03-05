@@ -94,11 +94,16 @@
               <div class="game" style="border:none;">
               <?php echo html_entity_decode($asset->AssetContent->getContent()) ?>
               </div>
-              <!--
-              <span class="palhaca"></span>
-              <span class="palhaco"></span>
-              -->
-              <span class="ludovico jogo"></span>
+              
+              <?php $tags = $asset->getTags() ?>
+              <?php if(count($tags) > 0): ?>
+              <ul class="tags">
+              	<?php foreach($tags as $t): ?>
+                <li><?php echo $t; ?></li>
+                <?php endforeach; ?>
+              </ul>
+              <?php endif; ?>
+              
             </div>
                             
           </div>
