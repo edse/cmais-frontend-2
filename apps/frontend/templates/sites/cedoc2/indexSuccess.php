@@ -12,7 +12,7 @@
       <?php endif; ?>
         <ul class="menu">
           <li></li>
-          <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">cedoc</a></li>
+          <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc"><h3>cedoc</h3></a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acerto">acervo</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
@@ -22,8 +22,7 @@
                 <input type="hidden" name="output" value="search">
                 <button type="submit" class="btn"><i class="icon-search"></i></button>
                 <input type="text" name="q" class="search-query input-medium" value="buscar imagens" placeholder="buscar imagens">
-                
-              </div>
+                </div>
             </form>
           </li>
         </ul>
