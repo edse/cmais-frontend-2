@@ -22,7 +22,7 @@
           </li>
         </ul>
         <div class="span8">
-                       
+                        
               <!-- Verifica vídeo relacionado -->
               <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
        
@@ -35,10 +35,9 @@
               }
               ?>
             
-              <!-- Exibe destaque com vídeo -->
+              <!-- Exibe asset com vídeo -->
               <?php if(count($related_video) > 0): ?>
                 
-               <!--<img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
                 <iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
               
                 <h2><?php echo $asset->getTitle(); ?></h2>
@@ -48,12 +47,11 @@
                 
               <?php endif; ?>
               
-              <!-- Exibe destaque com imagem -->
+              <!-- Exibe asset com imagem -->
               <?php if(count($display_img_src) > 0): ?> 
               
                 <img src="<?php echo $display_img_src ?>" alt="<?php echo $asset->getTitle(); ?>" />
-                <!--<iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe-->
-              
+                              
                 <h2><?php echo $asset->getTitle(); ?></h2>
                 <div class="txt">
                 <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
