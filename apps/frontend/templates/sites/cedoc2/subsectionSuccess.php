@@ -22,22 +22,54 @@
           </li>
         </ul>
         <div class="span8">
-          
-          <a href="#"><img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="" /></a>
-          <!--iframe width="700" height="433" src="http://www.youtube.com/embed/ZqZyNkhJw88?rel=0" frameborder="0" allowfullscreen></iframe-->
-          <h2>O Cedoc</h2>
-          <div class="txt">
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          </div>
+          <?php if(isset($displays['destaque-principal'])):?>
+            <?php if(count($displays['destaque-principal']) > 0): ?>
+              
+              <!-- Verifica vídeo relacionado -->
+              <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
+       
+              <!-- Verifica imagem relacionada -->
+              <?php
+              $display_img_src = $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');   
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+              ?>
+            
+              <!-- Exibe destaque com vídeo -->
+              <?php if(count($related_video) > 0): ?>
+                
+             <!--<img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
+              <iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+            
+              <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+              <div class="txt">
+              <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+              </div>
+              
+              <?php endif; ?>
+              
+              <!-- Exibe destaque com imagem -->
+              <?php if(count($display_img_src) > 0): ?> 
+              
+              <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />
+              <!--<iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe-->
+            
+              <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+              <div class="txt">
+              <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+              </div>
+              
+              <?php endif; ?>
+              
+            <?php endif; ?>
+          <?php endif; ?>    
           
         </div>
-        
+         
       </div>
 
-    
-
-     
       <div class="row-fluid">
         <div class="span5 apoio"> 
           <h2>Realização:</h2>
@@ -48,7 +80,5 @@
           </ul>
         </div>
       </div>
-
-    
 
     </div> <!-- /container -->
