@@ -60,6 +60,7 @@ h2,
 .menu li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
 .menu .search-query.input-medium,
 .menu .btn { height:24px; line-height:24px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
+.home .menu .search-query.input-medium { height:20px; line-height: 20px; }
 .menu .search-query.input-medium { max-width:125px; border-left:none; font-size:12px; color:#666;  }
 .menu .btn { border-right:0;  border-left:2px solid #535352; }
 .menu form i { margin:0 3px; }
