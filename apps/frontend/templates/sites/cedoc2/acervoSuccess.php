@@ -1,0 +1,84 @@
+<?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>    
+
+    
+    <div class="container" id="geral">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="conteudo">
+        <ul class="menu">
+          <li><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
+          <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acervo">acervo</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
+          <li>
+            <form class="form-search pull-right" action="busca.php">
+              <div class="input-append">
+                <input type="hidden" name="output" value="search">
+                <button type="submit" class="btn"><i class="icon-search"></i></button>
+                <input type="text" name="q" class="search-query input-medium" value="buscar imagens" placeholder="buscar imagens">
+                
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="span8">
+          <?php if(isset($displays['destaque-principal'])):?>
+            <?php if(count($displays['destaque-principal']) > 0): ?>
+              
+              <!-- Verifica vídeo relacionado -->
+              <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
+       
+              <!-- Verifica imagem relacionada -->
+              <?php
+              $display_img_src = $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-5-b');
+              if ($display_img_src == '') {
+                $related = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');   
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+              }
+              ?>
+            
+              <!-- Exibe destaque com vídeo -->
+              <?php if(count($related_video) > 0): ?>
+                
+               <!--<img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
+                <iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+              
+                <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+                <div class="txt">
+                <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+                </div>
+                
+              <?php endif; ?>
+              
+              <!-- Exibe destaque com imagem -->
+              <?php if(count($display_img_src) > 0): ?> 
+              
+                <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />
+                <!--<iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe-->
+              
+                <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
+                <div class="txt">
+                <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+                </div>
+                
+              <?php endif; ?>
+              
+            <?php endif; ?>
+          <?php endif; ?>    
+          
+        </div>
+         
+      </div>
+
+      <div class="row-fluid">
+        <div class="span5 apoio"> 
+          <h2>Realização:</h2>
+          <ul>
+            <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
+            <li class="ministerio"><a href="http://www.cultura.gov.br">Ministério da Cultura</a></li>
+            <li class="governo"><a href="http://www.brasil.gov.br">Governo Federal</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
