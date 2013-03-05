@@ -1,17 +1,17 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>    
 
     
-    <div class="container" id="geral">
+    <div class="container home" id="geral">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
+      <div class="conteudo">
       <?php if(isset($displays['destaque-topo'])): ?>
         <?php if(count($displays['destaque-topo']) > 0): ?>
         <a href="#"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
         <?php endif; ?>
       <?php endif; ?>
-        <ul>
-          <li><h3>Cedoc</h3></li>
+        <ul class="menu">
+          <li><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
           <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acerto">acervo</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
@@ -20,9 +20,8 @@
               <div class="input-append">
                 <input type="hidden" name="output" value="search">
                 <button type="submit" class="btn"><i class="icon-search"></i></button>
-                <input type="text" name="q" class="search-query input-medium">
-                
-              </div>
+                <input type="text" name="q" class="search-query input-medium" value="buscar imagens" placeholder="buscar imagens">
+                </div>
             </form>
           </li>
         </ul>
@@ -52,7 +51,7 @@
           <div class="span4">
             <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
   
-            <div class="texto">
+            <div class="txt">
               <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
             </div>
             <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
@@ -65,7 +64,7 @@
          <div class="span4">
           <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></a></h2>
-          <div class="texto">
+          <div class="txt">
             <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
@@ -91,7 +90,7 @@
          <div class="span6">
           <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
-          <div class="texto">
+          <div class="txt">
             <p><?php echo html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
@@ -114,7 +113,7 @@
          <div class="span6">
           <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-2"][0]->Asset->getTitle() ?></a></h2>
-          <div class="texto">
+          <div class="txt">
             <p><?php echo html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>

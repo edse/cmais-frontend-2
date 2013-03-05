@@ -37,7 +37,7 @@ $asset = $assets[0];
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina span7 tit-especial">
+  <div class="tit-pagina tit-especial">
     <h2><?php echo $asset->getTitle() ?></h2>
     <span></span>
     <!-- RANKING -->

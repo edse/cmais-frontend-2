@@ -36,7 +36,7 @@
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
+  <div class="tit-pagina">
     <h2><?php $tam=32; $str=$asset->getDescription(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
     <span></span>
     <!-- RANKING -->
@@ -52,11 +52,11 @@
   <!--row-->
   <div class="row-fluid conteudo box-papel-parede" id="videos">
     <!--<p class="span12"><?php // echo $asset->getDescription(); ?></p>-->
-    <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-     <?php if(count($preview) > 0): ?>
-       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
-     <?php endif; ?>
     <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
+    <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
+     <?php if(count($download) > 0): ?>
+       <img src="<?php echo $download[4]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $download[4]->getTitle() ?>" />
+     <?php endif; ?>
     <ul>
       <?php foreach($download as $k=>$d): ?>
         <?php if($k==0):?>
@@ -74,14 +74,13 @@
         <?php elseif($k==3):?>
           <li>
             <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x1024</a>
-          </li>  
+          </li>
+        <?php elseif($k==4):?>
+          <li>
+            <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
+          </li>    
         <?php endif; ?>
       <?php endforeach; ?>
-      <?php if(count($preview) > 0): ?>
-        <li class="last">
-          <a href="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" target="_blank"><i class="icon-monitor"></i>1280x768</a>
-        </li>
-      <?php endif; ?>
     </ul>
     
     

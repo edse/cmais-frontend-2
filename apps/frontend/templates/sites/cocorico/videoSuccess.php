@@ -42,7 +42,7 @@ if(!isset($asset)){
   <!-- /btn voltar-->
   
   <!-- titulo da pagina -->
-  <div class="tit-pagina span7">
+  <div class="tit-pagina">
     <h2><?php echo $asset->getTitle() ?></h2>
     <span></span>
     <!-- RANKING -->
