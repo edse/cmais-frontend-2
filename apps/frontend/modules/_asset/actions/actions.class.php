@@ -43,6 +43,15 @@ class _assetActions extends sfActions
 
       if(in_array($this->asset->Site->getSlug(), array("cedoc","cedoc2"))) {
         $this->setLayout('cedoc');   
+        
+        if($this->section->slug == "quem-somos") {
+        if ($debug) print "<br>cedoc-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+      }
+      elseif($this->section->slug == "acervo") {
+        if ($debug) print "<br>cedoc-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+      }
         /*
         if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
           header("location: http://www3.tvcultura.com.br/cocorico");
