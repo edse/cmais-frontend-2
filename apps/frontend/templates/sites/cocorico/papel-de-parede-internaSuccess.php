@@ -54,8 +54,8 @@
     <!--<p class="span12"><?php // echo $asset->getDescription(); ?></p>-->
     <?php $download = $asset->retriveRelatedAssetsByRelationType('Download'); ?>
     <?php $preview = $asset->retriveRelatedAssetsByRelationType('Preview'); ?>
-     <?php if(count($preview) > 0): ?>
-       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $preview[0]->getTitle() ?>" />
+     <?php if(count($download) > 0): ?>
+       <img src="<?php echo $download[4]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $download[4]->getTitle() ?>" />
      <?php endif; ?>
     <ul>
       <?php foreach($download as $k=>$d): ?>
