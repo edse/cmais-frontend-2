@@ -6,10 +6,10 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo">
         <ul class="menu">
-          <li><h3>Cedoc</h3></li>
-          <li class="ativo"><span></span><a href="#" title="Quem Somos">quem somos</a></li>
-          <li><span></span><a href="#" title="Acerto">acervo</a></li>
-          <li><span></span><a href="#" title="Contato">contato</a></li>
+          <li><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
+          <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acerto">acervo</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
           <li>
             <form class="form-search pull-right" action="busca.php">
               <div class="input-append">
@@ -74,9 +74,9 @@
         <div class="span5 apoio"> 
           <h2>Realização:</h2>
           <ul>
-            <li class="cultura"><a href="#">Cultura</a></li>
-            <li class="ministerio"><a href="#">Ministério da Cultura</a></li>
-            <li class="governo"><a href="#">Governo Federal</a></li>
+            <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
+            <li class="ministerio"><a href="http://www.cultura.gov.br">Ministério da Cultura</a></li>
+            <li class="governo"><a href="http://www.brasil.gov.br">Governo Federal</a></li>
           </ul>
         </div>
       </div>
