@@ -117,7 +117,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 
 /* content */
 .conteudo .span8 { float:right; margin:20px 20px 0 0; max-width:700px; min-height:400px; }
-.conteudo .span8 img { min-width:700px; }
+.conteudo .span8 img { max-width:700px; width:100%; }
 .conteudo .span8 .txt { margin-top:10px; }
 /* /content */
 
