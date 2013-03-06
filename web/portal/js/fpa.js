@@ -29,9 +29,10 @@ $(document).ready(function(){
 
   });
   $('.nav li').mouseleave(function(){
-    $(this).find('.seta-hover').hide()
+    $(this).find('.seta-hover').hide();
     $(this).find('.dropdown-menu').hide();
     $(decoracoes).not(ativos).removeClass('active');
+    $(this).find('.seta-hover.active').removeClass('active');
     $('.li-dropdown.active').removeClass('active'); 
   });
 
