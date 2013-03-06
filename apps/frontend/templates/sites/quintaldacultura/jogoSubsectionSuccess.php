@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/jogoSu.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/quintal/css/jogos.css" type="text/css" />
     
     <!-- scripts -->
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
@@ -62,7 +62,7 @@
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
         <hr />
 
-        <div class="conteudo" id="jogoSubsection">
+        <div class="conteudo" id="jogos">
 
           <div class="conteudoWrapper">
             
