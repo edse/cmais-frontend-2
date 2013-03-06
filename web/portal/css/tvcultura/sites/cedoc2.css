@@ -112,7 +112,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 #footer ul.span3.last { border:none; }
 #footer ul.span3.first { margin-left: 20px; }
 #footer ul .sic { margin-top:20px; }
-#footer .copyright { text-align:center; font-size:10px;}
+#footer .copyright { text-align:center; font-size:10px; clear:both;}
 /* rodape*/
 
 /* content */
