@@ -30,9 +30,15 @@ if(isset($pager)){
     </div>
   </div>
   <!-- /row-->
+  
   <!-- breadcrumb-->
   <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section,'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
+  
+  <!--btn voltar-->
+  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <!-- /btn voltar-->
+  
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
     <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
