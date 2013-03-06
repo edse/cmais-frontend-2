@@ -14,7 +14,7 @@
           <li class="cedoc"><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acervo">acervo</a></li>
-          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
+          <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contact" title="Contato">contato</a></li>
           <li>
             <form class="form-search pull-right" action="busca.php">
               <div class="input-append">
