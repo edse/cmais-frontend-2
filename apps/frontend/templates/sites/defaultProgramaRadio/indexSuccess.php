@@ -4,7 +4,7 @@
     ->from('Asset a, SectionAsset sa')
     ->where('a.site_id = ?', (int)$site->getId())
     ->andWhere('sa.asset_id = a.id')
-    ->andWhere('sa.section_id = ?', $section->id)
+    ->andWhere('sa.section_id = ?', (int)$section->getId())
     ->andWhere('a.asset_type_id = ?', 5)
     ->orderBy('sa.display_order')
     ->execute();
