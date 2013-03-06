@@ -3,7 +3,7 @@
     ->select('a.*')
     ->from('Asset a, SectionAsset sa')
     ->where('a.site_id = ?', (int)$site->getId())
-    ->andWhere('sa.asset_id = a.site_id')
+    ->andWhere('sa.asset_id = a.id')
     ->andWhere('sa.section_id = ?', $section->id)
     ->andWhere('a.asset_type_id = ?', 5)
     ->orderBy('sa.display_order')
