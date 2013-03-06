@@ -4,7 +4,7 @@
     ->from('Asset a')
     ->where('a.site_id = ?', (int)$site->getId())
     ->andWhere('a.asset_type_id = ?', 5)
-    ->orderBy('a.id')
+    ->orderBy('a.display_order')
     ->execute();
   if(count($assets) >= 1)
     $asset = $assets[0];
