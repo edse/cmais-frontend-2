@@ -551,6 +551,7 @@ class _assetActions extends sfActions
     }
     $tags .= "cultura, educacao, infantil, jornalismo";
     $this->getResponse()->addMeta('keywords', $tags);
+    $this->getResponse()->addMeta('keywords', $tags);
 
     $this->getResponse()->addMetaProp('og:title', $title);
     $this->getResponse()->addMetaProp('og:type', 'article');
@@ -566,7 +567,7 @@ class _assetActions extends sfActions
       $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
       $this->getResponse()->addMetaProp('og:video:width', '640');
       $this->getResponse()->addMetaProp('og:video:height', '390');
-      $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/default.jpg');
+      $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/0.jpg');
     }
     elseif($this->asset->AssetType->getSlug() == "audio"){
       $this->getResponse()->addMetaProp('og:type', 'audio');
