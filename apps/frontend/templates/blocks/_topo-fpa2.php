@@ -25,7 +25,7 @@
 
       <?php if(substr($section->getSlug(), 0, 6)=="decada"){$ativo="active";}else{$ativo="";} ?>
       <li class="dropdown <?php echo $ativo?>" id="acervo">
-        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#emissoras" title="Acervo">
+        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#acervo" title="Acervo">
           Acervo
           <b class="caret"></b>
         </a>
