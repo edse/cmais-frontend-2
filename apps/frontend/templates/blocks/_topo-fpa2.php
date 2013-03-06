@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
+<script type="text/javascript" src="/portal/js/fpa.js"></script>
 
 <!--FUNDO-TOPO-->
 <?php if ($site->getSlug()=="fpa" && $slug == "decada"):?>
@@ -25,7 +26,7 @@
 
       <?php if(substr($section->getSlug(), 0, 6)=="decada"){$ativo="active";}else{$ativo="";} ?>
       <li class="dropdown <?php echo $ativo?>" id="acervo">
-        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#emissoras" title="Acervo">
+        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#acervo" title="Acervo">
           Acervo
           <b class="caret"></b>
         </a>

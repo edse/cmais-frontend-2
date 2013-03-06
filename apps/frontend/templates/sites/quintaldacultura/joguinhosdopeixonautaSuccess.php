@@ -72,12 +72,12 @@
                 <p class="titulo"><span class="ico-voltar"></span><?php echo $section->getTitle()?></p>
             </div>
             <div class="listao">
-              <p><?php echo $section->getDescription()?></p>
+
+           	<p><?php echo $section->getDescription()?></p>
               
-           <?php if(count($pager) > 0): ?>
+           	<?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
           
-              
                 <ul>
                   <?php foreach($pager->getResults() as $d): ?>
                     <?php $related = $d->retriveRelatedAssetsByRelationType('preview'); ?>
