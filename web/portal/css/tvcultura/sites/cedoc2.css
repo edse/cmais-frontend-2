@@ -39,8 +39,10 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 
 /* container */
 .container { background:#fff; }
-#geral { margin-top:0; max-width:980px; padding-bottom:40px }
+#geral { margin-top:0; max-width:980px; padding-bottom:40px; margin-top:2px; }
+
 h2,
+.conteudo form .linha .enviar,
 .menu {font-family: 'source_sans_proregular';}
 .form-search .input-append .btn,
 .conteudo .search-query.input-medium { border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;}
@@ -48,9 +50,14 @@ h2,
 
 /* home */
 .conteudo { padding:0; position:relative; margin:0; }
-.menu h3 { margin:0; font-size:32px; color:#fff; text-transform:uppercase; padding-left:20px; height:60px; line-height:60px;}
-.home .menu {  top:85px; } 
-.menu { position:absolute; top:0; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; box-shadow: 0 3px 8px #000; }
+.menu li h3 a,
+.menu li h3 { margin:0; font-size:32px !important; color:#fff; text-transform:uppercase; height:60px; line-height:60px; display: block; }
+.menu li.ativo.cedoc a, 
+.menu li.cedoc:hover a {  background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  color:#c2f263 !important;   }
+.home .menu li.ativo.cedoc a, 
+.home .menu li.cedoc:hover a {color:#fff !important;  background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom; }
+.home .menu {  top:85px;  box-shadow: 0 3px 8px #000; } 
+.menu { position:absolute; top:0; background:url(/portal/images/capaPrograma/cedoc/bg-menu.png) repeat; margin-left:0; left: 0; box-shadow: 0 3px 8px #999; width: 200px; }
 .menu li { list-style:none; margin-left:-20px; padding-left:20px; position:relative; }
 .menu li a { padding:0 20px; height:48px; line-height: 48px; color:#fff; text-decoration:none; text-transform:uppercase; font-size:22px; font-weight:bold; display: block; background:url(/portal/images/capaPrograma/cedoc/bg-lista.png) repeat-x bottom;  }
 .menu li.ativo a,
@@ -59,13 +66,12 @@ h2,
 .menu li.ativo span,
 .menu li:hover span { background:url(/portal/images/capaPrograma/cedoc/aba-menu.png) no-repeat; }
 .menu .search-query.input-medium,
-.menu .btn { height:24px; line-height:24px;  border:2px solid #535352; border-left:none; padding:0; margin:0; background:#fff; }
-.home .menu .search-query.input-medium { height:20px; line-height: 20px; }
-.menu .search-query.input-medium { max-width:125px; border-left:none; font-size:12px; color:#666;  }
-.menu .btn { border-right:0;  border-left:2px solid #535352; }
+.menu .btn { height:20px; line-height:20px;  border:2px solid #535352; padding:0; margin:0; background:#fff; }
+.menu .search-query.input-medium { width:125px;  font-size:12px; color:#666;  }
 .menu form i { margin:0 3px; }
-.menu form { margin:20px 15px 20px 0; }
-
+.menu form { margin:20px 15px; float:right; }
+.menu .btn { height:24px; line-height: 24px; border-right:none; }
+.menu .search-query.input-medium  { border-left:none; }
 .row-fluid { margin:20px 20px 0 20px; width: 96%; }
 .home .span8 img { min-width:620px; }
 h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; height:20px; line-height:20px;  }
@@ -73,7 +79,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .row-fluid h2 a  { text-decoration:none; color:#666666;}
 .mais:hover,
 .mais { float:right; margin-top:20px; color:#000; }
-
+.row-fluid .span8 { min-width:619px; }
 
 .apoio.span5 { float: right;}
 .apoio h2 { text-transform:none; }
@@ -83,7 +89,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .apoio .ministerio { margin: 0 20px; }
 .apoio .ministerio a { width: 53px; height:18px; background:url(/portal/images/capaPrograma/cedoc/logo-ministerio.jpg) no-repeat;}
 .apoio .governo a { width: 114px; height:36px; background:url(/portal/images/capaPrograma/cedoc/logo-governo.jpg) no-repeat; }
-.txt { max-height:230px; overflow:hidden; }
+.home .txt { max-height:230px; overflow:hidden; }
 
 /* /home */
 
@@ -110,6 +116,71 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 /* rodape*/
 
 /* content */
-.conteudo .span8 { float:right; margin:20px 20px 0 0; max-width:700px; }
+.conteudo .span8 { float:right; margin:20px 20px 0 0; max-width:700px; min-height:400px; }
 .conteudo .span8 img { min-width:700px; }
+.conteudo .span8 .txt { margin-top:10px; }
 /* /content */
+
+/* contato*/
+.conteudo form .linha { float:left; margin-bottom:10px }
+.conteudo form .linha label { text-transform:uppercase; font-size:12px; font-weight:bold; text-align:left; float:left;   }
+.conteudo form .linha select,
+.conteudo form .linha input { height:26px; line-height:26px; background:#fff; border:1px solid #bfbfbf; padding-left:2px; font-size:12px; color:#333;  }
+.conteudo form .linha select {height:28px; line-height:28px; margin:0; padding:0;}
+.conteudo form .t1 { width:570px; margin-right:10px; }
+.conteudo .codigo .msg,
+.conteudo form .t1 label,
+.conteudo form .t1 input { width:566px; margin-right:10px; }
+.conteudo form .t2 { width:60px; }
+.conteudo form .linha select,
+.conteudo form .t2 label,
+.conteudo form .t2 input { width:50px; }
+.conteudo form .t3 { width:636px; }
+.conteudo form textarea,
+.conteudo form .t3 label,
+.conteudo form .t3 input { width:630px; }
+.conteudo form .t4 { width:322px; }
+.conteudo form .t4.assunto { margin-right:10px; }
+.conteudo form .t4 label,
+.conteudo form .t4 input { width:302px; }
+.conteudo form .t5 { width:580px; }
+.conteudo form .t5 label,
+.conteudo form .t5 input { width:566px; }
+.conteudo form .t6 { width:150px; }
+.conteudo form .interprete {margin-right:10px;}
+.conteudo form textarea { height:209px; border:1px solid #bfbfbf; padding:2px; font-size:12px; color:#333; /*overflow-y:scroll;*/ }
+.conteudo form .txt-10 { float:right; }
+.btn.contato,
+.conteudo form .linha .enviar { background:#666; color:#c2f263; text-transform:uppercase; height:30px; line-height:30px; border:none; float:right; font-weight:bold; width:auto; clear:both; margin-top:10px; padding:0 10px; font-size: 14px; font-weight:normal; }
+.conteudo .codigo .msg { width:350px; font-weight:normal; font-size:12px; float:left; text-transform:none;}
+.conteudo .codigo .img {clear:both; display:block; width:132px; height:46px; float:left; margin-right:10px; border:2px solid #d2d2d2;}
+.conteudo .codigo .caracteres {width:340px; float:left;}
+
+#form-contato label.error{ background-color: #f46346; color: #fff; display: none; font-size: 12px; font-weight: normal; margin-top: 4px; padding-left: 3px; text-transform: none;}
+#form-contato .erro{  border: 1px solid #f5d6cc;}
+#form-contato label.checked{  background: none;  height: 0px; }
+.msgErro{  background-color: #ff6633;  margin: 20px 0 0 105px;  width: 420px;}
+.msgErro .alerta{  background: url(../../../images/ico-erro.png) no-repeat;  display: block;  float: left;  margin: 20px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px;}
+.msgAcerto{ overflow:hidden; background-color: #666;  margin: 20px 0 0 105px;  width: 410px;}
+.msgAcerto .alerta{  background: url(../../../images/ico-acerto.png) no-repeat;  display: block;  float: left;  margin: 13px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px;}
+.boxMsg{  float: left;  margin: 5px 0 5px 10px;  width: 355px;}
+.boxMsg p{  color: #fff;  font-size: 12px;  line-height: 15px;}
+.boxMsg p.aviso{  font-weight: bold; margin-bottom:5px; color:#C2F263;}
+.conteudo form select.estado {width:56px;}
+
+.conteudo form input { padding:0; margin-bottom:0; box-shadow:0 !important; }
+.conteudo form label { margin:0; }
+/* /contato*/
+
+/* resultado busca*/
+.btn.contato { text-shadow:none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; margin-top:0; }
+/*
+.busca h2 { color:#000; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;  }
+.table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th { background-color:#ccc !important; }
+.busca .table td { padding:0 10px; } 
+.busca .table td strong { float:left; margin-right:5px; }
+*/
+.busca .voltar { color:#000; text-decoration:underline; }
+/* /resultado busca*/
+
+
