@@ -18,9 +18,9 @@
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/jogos.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=<?php echo rand(); ?>" type="text/css" />
+    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css?nocache=<?php echo rand(); ?>" type="text/css" />
+    <link rel="stylesheet" href="/portal/quintal/css/jogos.css?nocache=<?php echo rand(); ?>" type="text/css" />
     
     <!-- scripts -->
     <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
