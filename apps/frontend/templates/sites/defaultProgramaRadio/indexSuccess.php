@@ -1,10 +1,12 @@
 <?php
   $assets = Doctrine_Query::create()
     ->select('a.*')
-    ->from('Asset a')
+    ->from('Asset a, SectionAsset sa')
     ->where('a.site_id = ?', (int)$site->getId())
+    ->andWhere('sa.asset_id = a.site_id')
+    ->andWhere('sa.section_id = ?', $section->id)
     ->andWhere('a.asset_type_id = ?', 5)
-    ->orderBy('a.display_order')
+    ->orderBy('sa.display_order')
     ->execute();
   if(count($assets) >= 1)
     $asset = $assets[0];
