@@ -108,7 +108,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 #footer ul .tit p,
 #footer ul .tit a { font-weight:bold; }
 #footer ul .tit.mg { margin-bottom:0; }
-#footer ul.span3 { max-width:216px; margin-left:3%;  }
+#footer ul.span3 { float: left; margin-left: 3%; max-width: 22%;  }
 #footer ul.span3.last { border:none; }
 #footer ul.span3.first { margin-left: 2%; }
 #footer ul .sic { margin-top:20px; }
