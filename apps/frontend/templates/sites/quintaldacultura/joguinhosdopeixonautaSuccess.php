@@ -77,7 +77,6 @@
            <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
           
-              
                 <ul>
                   <?php foreach($pager->getResults() as $d): ?>
                     <?php $related = $d->retriveRelatedAssetsByRelationType('preview'); ?>
