@@ -38,7 +38,7 @@
         </div>
        
       </div>
-      <div class="msgAcerto" style="display:block">
+      <div class="msgAcerto" style="display:none">
         <span class="alerta"></span>
         <div class="boxMsg">
           <p class="aviso">Mensagem enviada com sucesso!</p>
