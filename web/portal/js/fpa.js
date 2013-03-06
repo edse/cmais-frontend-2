@@ -32,7 +32,8 @@ $(document).ready(function(){
     $(this).find('.seta-hover').hide();
     $(this).find('.dropdown-menu').hide();
     $(decoracoes).not(ativos).removeClass('active');
-    $(this).find('.seta-hover.active, caret.active').removeClass('active');
+    $(this).find('.seta-hover.active').removeClass('active');
+    $('.caret.active').removeClass('active');
     $('.li-dropdown.active').removeClass('active'); 
   });
 
