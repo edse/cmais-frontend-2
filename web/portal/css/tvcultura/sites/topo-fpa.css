@@ -1,5 +1,5 @@
 /* GERAL */
-.container.principal {width:980px; margin-top:3px;*position:relative;}
+.container.principal {max-width:980px; margin-top:3px;*position:relative;}
 /* /GERAL */
 
 /* ESTRUTURAS BÁSICAS */
@@ -29,7 +29,7 @@
 #topo-fpa .dropdown-menu a:hover{color:#FFF !important; background-color: #1863b7 !important;}
 #topo-fpa .font-btn{font-weight:bolder; font-family:Arial, Helvetica, sans-serif; color:#6d6b6b;}
 
-#topo-fpa.nav{position:absolute;margin:-3px 0 0 124px;width:900px;*top:-3px;*left:0;} 
+#topo-fpa.nav{position:absolute;margin:-3px 0 0 124px;max-width:900px;*top:-3px;*left:0;} 
 #topo-fpa.nav > li{margin-top:-3px; *margin-top:0;}
 #topo-fpa.nav > li > a {font-weight: bold;color:#8c8c8c;text-transform:uppercase;border-top:3px solid #626262; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; padding: 18px 8px 18px 8px!important;margin: 0px 0 0 10px; font-size:12px;}
 #topo-fpa.nav > li:hover > a {*padding: 18px 8px 18px 8px !important;padding: 18px 8px 18px 8px!important;text-decoration: none; background-color: #f7f7f7!important; color:#1863b7; border-top:3px solid #1863b7; border-bottom:1px solid #1863b7; }
