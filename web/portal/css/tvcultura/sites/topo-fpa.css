@@ -1,5 +1,5 @@
 /* GERAL */
-.container.principal {width:980px; margin-top:3px;*position:relative;}
+.container.principal {max-width:980px; margin-top:3px;*position:relative;}
 /* /GERAL */
 
 /* ESTRUTURAS BÁSICAS */
