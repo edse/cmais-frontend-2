@@ -189,7 +189,11 @@ class ajaxActions extends sfActions
         ->execute();
 
       if((isset($schedules)) && (count($schedules) > 0)){
-
+        
+        if($schedules[0]->getUrl()!=""){
+          die("self.location.href='".$schedules[0]->getUrl()."'");
+        }
+        
         if($schedules[0]->program_id == 542){
           die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
         }
@@ -209,29 +213,14 @@ class ajaxActions extends sfActions
       		geoip_close($gi);
       	}
 
-        if($schedules[0]->program_id == 542){
-          die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
-        }
-       
-	/*        
-	if($schedules[0]->program_id == 2){
-          die("self.location.href='http://tvcultura.cmais.com.br/jornaldacultura/ao-vivo'");
-        }
-	*/
-       
         if($schedules[0]->program_id == 77){
           die("self.location.href='http://tvcultura.cmais.com.br/cartaoverde/aovivo'");
-        }
-        
+        }        
                
         if($schedules[0]->program_id == 75){
         	if (date('w') != "5") { // se dia diferente de sexta, redireciona...
 	          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
 					}
-        }
-               
-        if($schedules[0]->program_id == 547){
-          die("self.location.href='http://cmais.com.br/carnaval2012'");
         }
        
         $next = Doctrine_Query::create()
