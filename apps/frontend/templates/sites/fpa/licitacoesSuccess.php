@@ -19,8 +19,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <li>
             <a href="<?php echo $s->retriveUrl() ?>" title="titulo">
               <i class="icon-chevron-right"></i>
-              <?php echo $s->getTitle() . "<br>"?>
-              <span class="badge vaga">1 vaga</span>
+              <?php echo $s->getTitle()?>
+              <span class="badge vaga pull-right">1 vaga</span>
             </a>
           </li>
           <?php endforeach?>
