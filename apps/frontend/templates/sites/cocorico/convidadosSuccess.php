@@ -37,14 +37,14 @@ $assets = $pager->getResults();
   <!-- titulo da pagina -->
   <h2 class="tit-pagina">Convidados</h2>
    <script>
-   	$(function() {
+    $(function() {
       $('#alfabeto ul li a').click(function(){
         var letra = $(this).attr('title');
         $('#frmBusca #busca').val('');
         $('#frmBusca #letra').val(letra);
-      	$('#frmBusca').submit();
+        $('#frmBusca').submit();
       });
-   	});
+    });
    </script>
    
    <?php
@@ -85,7 +85,7 @@ $assets = $pager->getResults();
         <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
       </ul>
     </div>
-    <form id="page_form" action="" method="get">
+    <form id="page_form" action="" method="post">
       <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
@@ -159,8 +159,8 @@ $assets = $pager->getResults();
   <div class="row-fluid conteudo destaques">
     <?php if(count($pager) > 0): ?>
       
-  	<ul id="convidados">
-		  <?php foreach($pager->getResults() as $d): ?>
+    <ul id="convidados">
+      <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
           <img class="span12" src="<?php echo $d->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $d->getTitle() ?>" />
@@ -189,7 +189,7 @@ $assets = $pager->getResults();
         <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
       </ul>
     </div>
-    <form id="page_form" action="" method="get">
+    <form id="page_form" action="" method="post">
       <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
