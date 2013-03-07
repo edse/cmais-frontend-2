@@ -38,9 +38,9 @@
         </div>
        
       </div>
-      <div class="msgAcerto" style="display:block">
+      <div class="msgAcerto" style="display:none">
         <span class="alerta"></span>
-        <div class="boxMsg">
+        <div class="boxMsg"> 
           <p class="aviso">Mensagem enviada com sucesso!</p>
           <p>Obrigado por entrar em conosco. Em breve retornaremos sua mensagem.</p>
         </div>
@@ -95,7 +95,7 @@
           </select>
         </div>
         <div class="linha t4 assunto">
-          <label>assunto</label>
+          <label>assunto</label> 
           <br />
           <select style="width:322px;" id="assunto" name="assunto" class="required">
             <option value="">- Selecione -</option>
@@ -111,7 +111,12 @@
         </div>
         <div class="linha t4">
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" />
+          <input type="text" name="referencia" id="referencia" value="
+            <?php if(isset($_GET["ref"])): ?>
+              <?php $ref = $_GET["ref"] ?>
+              <?php echo $ref ?>
+            <?php endif; ?> 
+          " />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
@@ -162,7 +167,7 @@
           },
           success : function(data) {
             $('input#enviar').removeAttr('disabled');
-            window.location.href = "#";
+            window.location.href = "javascript:;";
             if(data == "1") {
               $("#form-contato").clearForm();
               $(".msgAcerto").show();
