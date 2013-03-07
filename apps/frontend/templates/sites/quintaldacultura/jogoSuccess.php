@@ -52,6 +52,7 @@
   <div class="allWrapper">
       
       <?php
+      /*
       // section assets
       if(isset($pager))
         $assets = $pager->getResults();
@@ -67,6 +68,19 @@
       if(!$asset){
         $asset = $assets[0];
       }
+       */
+      
+      if(isset($asset)) {
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $asset->Sections[0]->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->orderBy('a.id desc')
+          ->execute();
+      }
+      if(!isset($section))
+        $section = $asset->Sections[0]
       ?>
     
       <?php use_helper('I18N', 'Date') ?>
@@ -85,6 +99,7 @@
             <div class="menuVoltar">
               <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
               <a href="/quintaldacultura/jogos" class="voltarBig"><span class="ico-voltar"></span><span class="tit">Jogos</span></a>
+              <a href="/quintaldacultura/jogos/<?php echo $section->getSlug() ?>" class="voltarBig"><span class="ico-voltar"></span><span class="tit"><?php echo $section->getTitle() ?></span></a>
               <p><?php echo $asset->getTitle() ?></p>
                 
             </div>
@@ -190,7 +205,7 @@
                   <hr />
                 </div-->
                 <!--QUINTAL PERGUNTE FILOMENA-->
-                <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+                <?php /* include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') */  ?>
                 <!--/QUINTAL PERGUNTE--> 
 
           </div>

@@ -2723,7 +2723,7 @@ z-index: 503;
 
 /* jogo novo */
 .tags { margin-top:230px; float:right; }
-.tags li { background:#ffb912; color:#323232; font-size:15px; width:90px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; line-height:20px; height: 20px; text-align:center; display:block; font-size:15px;}
+.tags li { background:#ffb912; color:#323232; font-size:15px; /* width:90px ;*/padding:5px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; line-height:20px; height: 20px; text-align:center; display:block; font-size:15px;}
 .tags li a { line-height:20px; height: 20px; text-align:center; display:block; font-size:15px; }
 .tags li a:hover { text-decoration:none; }
 .destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; }
