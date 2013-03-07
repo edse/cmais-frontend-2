@@ -111,12 +111,7 @@
         </div>
         <div class="linha t4">
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="
-            <?php if(isset($_GET["ref"])): ?>
-              <?php $ref = $_GET["ref"] ?>
-              <?php echo $ref ?>
-            <?php endif; ?> 
-          " />
+          <input type="text" name="referencia" id="referencia" value="<?php if(isset($_REQUEST["ref"])) echo $_REQUEST["ref"]; ?>" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
