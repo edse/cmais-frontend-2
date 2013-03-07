@@ -88,7 +88,7 @@
                       
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4") ?>" alt="<?php echo $d->getTitle() ?>" style="width:404px"/>
             </a>
-            <?php echo $d->getDescription() ?>
+            <p><?php echo $d->getDescription() ?></p>
                        <a class="jogar" href="<?php echo $d->retriveUrl() ?>" title="Jogar">Jogar</a>
                     </li>
                     
