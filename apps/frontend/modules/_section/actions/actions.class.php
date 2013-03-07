@@ -1374,7 +1374,7 @@ class _sectionActions extends sfActions
         $pagelimit = 20;
     }
     if($this->section->Site->getSlug() == "quintaldacultura") {
-      if($this->section->getSlug() == "todos")
+      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos")
         $pagelimit = 72;
     }
     if(!isset($pagelimit))
