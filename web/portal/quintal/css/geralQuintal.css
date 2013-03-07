@@ -808,7 +808,7 @@ width: 680px;
   position: absolute;
   width: 378px;
   height: 381px;
-  right: 0;
+  right:0;
 }
 .rodaGigante a.todosJogos{
   background: url(../images/btn-bola.png) no-repeat;
@@ -840,28 +840,28 @@ width: 680px;
 }
 .rodaGigante a.vila{
   background-position: 0 -1610px;
-  top: -27px;
-  left: 129px;
+  right: 60px;
+  top: 225px;
   height:84px !important;
 }
 .rodaGigante a.desafio{
   background-position: 0 -911px;
-  top: 55px;
+  top: 45px;
   left: 8px;
 }
 .rodaGigante a.habilidade{
   background-position: 0 -987px;
-  top: 160px;
-  left: 18px;
+  top: 135px;
+  left: 5px;
 }
 .rodaGigante a.aventura{
   background-position: 0 -1063px;
   top: 225px;
-  left: 145px;
+  left: 60px;
 }
 .rodaGigante a.educativo{
   background-position: 0 -1139px;
-  top: 144px;
+  top: 135px;
   left: 270px;
 }
 .rodaGigante a.esporte{
@@ -869,7 +869,10 @@ width: 680px;
   left: 254px;
   top: 35px;
 }
+.rodaGigante a.peixonauta { background-position:0px -1696px;   top: -27px;  left: 129px; width: 124px; height:97px; }
+
 .rodaGigante a.vila span{ float: left;margin: 61px 0 0 8px;}
+.rodaGigante a.peixonauta span,
 .rodaGigante a.desafio span,
 .rodaGigante a.habilidade span,
 .rodaGigante a.aventura span,
@@ -878,6 +881,8 @@ width: 680px;
   float: left;
   margin: 50px 0 0 8px;
 }
+.rodaGigante a.peixonauta span{  margin-left: 17px; margin-top:70px;}
+
 .rodaGigante a.desafio span{
   margin-left: 22px;
 }
@@ -2718,7 +2723,7 @@ z-index: 503;
 
 /* jogo novo */
 .tags { margin-top:230px; float:right; }
-.tags li { background:#ffb912; color:#323232; font-size:15px; width:90px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.tags li { background:#ffb912; color:#323232; font-size:15px; width:90px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; line-height:20px; height: 20px; text-align:center; display:block; font-size:15px;}
 .tags li a { line-height:20px; height: 20px; text-align:center; display:block; font-size:15px; }
 .tags li a:hover { text-decoration:none; }
 .destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; }
@@ -2726,4 +2731,5 @@ z-index: 503;
 .destaque-promocao p { text-transform:uppercase; color:#fff; font-weight:bold; position:relative; width: 250px; top:65px; left:270px; }
 .destaque-promocao strong { clear:both; color:#bdda28; font-size:27px; display: block; margin:30px 0 10px 0;  }
 .destaque-promocao span { color:#cfecf7; }
+
 /* /jogo novo */

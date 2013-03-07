@@ -14,7 +14,7 @@
 /* GERAL */
 body.linha-do-tempo{background: #000 !important;}
 body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0\9;}
-.container{width:980px; margin-top:3px;*position:relative;}
+.container{max-width:980px; margin-top:3px;*position:relative;}
 
 .row{margin-left:0px}
 /* /GERAL */

@@ -1,0 +1,22 @@
+#jogos .titulo { font-size:25px; margin-top:0;}
+#jogos .titulo .ico-voltar { background: url("../images/ico-setaVoltar.png") no-repeat scroll 0 0 transparent; display: block;  float: left;  height: 18px;  margin: 0 10px 0 0; width: 15px; }
+.content,
+.contentWrapper { height:auto; }
+.contentWrapper { background:#189a12 url("../images/img-pattern-topo-jogos-quintaldacultura.jpg") repeat-x; }
+#jogos .listao { clear: both; margin-top:40px; float:left; }
+#jogos .listao p,
+#jogos .listao a { font-size:15px; }
+#jogos .listao p b,
+#jogos .listao p strong,
+#jogos .listao ul li a span,
+#jogos .listao ul li a strong,
+#jogos .listao ul li a b,
+#jogos .listao p a { font-weight:bold; }
+#jogos .listao ul { margin-top:20px; }
+#jogos .listao ul li { background:#f5e700; padding:15px 20px; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; max-width:403px; float:left; margin:0 20px 20px 20px;  }
+#jogos .listao ul li a { display: block; clear:both;}
+#jogos .listao ul li a:hover { text-decoration:none; }
+#jogos .listao ul li a span { display: block; text-align:center; text-transform:uppercase; margin-bottom:10px; }
+#jogos .listao ul li a img { clear:both;}
+#jogos .listao ul li .jogar { background:url("../images/btn-jogar.png") no-repeat; width:116px; height:46px; line-height: 46px; font-size:24px; float:right; text-align:center; text-transform:uppercase; font-weight:bold; }
+.rodape { margin-top:0; }

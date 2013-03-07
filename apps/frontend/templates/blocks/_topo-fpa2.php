@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
+<script type="text/javascript" src="/portal/js/fpa.js"></script>
 
 <!--FUNDO-TOPO-->
 <?php if ($site->getSlug()=="fpa" && $slug == "decada"):?>

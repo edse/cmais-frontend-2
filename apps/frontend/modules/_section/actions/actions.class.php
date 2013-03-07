@@ -1161,8 +1161,9 @@ class _sectionActions extends sfActions
         else
           $sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
       }else{
-        if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
-          $sectionSlug = 'jogo';
+        //if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
+        if($this->section->Parent->slug == "jogos")
+          $sectionSlug = 'jogosSubsection';
         elseif(in_array($sectionSlug, array('artes','brincadeiras','receitas','experiencia')))
           $sectionSlug = 'atividade';
         elseif(in_array($sectionSlug, array('paracolorir','para-colorir','colorir')))
