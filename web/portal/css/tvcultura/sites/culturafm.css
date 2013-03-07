@@ -497,7 +497,7 @@ h3.tit-pagina { margin-bottom:0; }
 #destaque.uma-coluna p { max-height:100%; }
 
 .btn-feedback { background: url("/portal/images/capaPrograma/culturafm/btns.gif") repeat scroll 0 0 transparent !important;   float: left;   height: 135px;   width: 36px; z-index: 0;}
-.btn-feedback:hover { background-position: -36px; 0 }
+.btn-feedback:hover { background-position: -36px !important; }
 #rodape-portal { position:relative; }
 
 /** /RADIO FM  **/
