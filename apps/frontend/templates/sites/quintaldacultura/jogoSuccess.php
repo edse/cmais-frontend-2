@@ -190,7 +190,7 @@
                   <hr />
                 </div-->
                 <!--QUINTAL PERGUNTE FILOMENA-->
-                <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
+                <?php /* include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') */  ?>
                 <!--/QUINTAL PERGUNTE--> 
 
           </div>
