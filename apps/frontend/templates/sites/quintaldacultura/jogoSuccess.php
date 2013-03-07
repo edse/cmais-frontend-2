@@ -69,19 +69,30 @@
         $asset = $assets[0];
       }
        */
-      
-      if(isset($asset)) {
+      if ($jogoSubsection->id > 0) {
         $assets = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
-          ->where('sa.section_id = ?', $asset->Sections[0]->id)
+          ->where('sa.section_id = ?', $jogoSubsection->id)
           ->andWhere('sa.asset_id = a.id')
           ->orderBy('a.id desc')
           ->execute();
       }
-      if(!isset($section))
-        $section = $asset->Sections[0]
+      else {
+        $jogoSubsection = Doctrine::getTable('Section')->findOneBySlug('todos');
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->whereIn('sa.section_id', $jogoSubsection->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->orderBy('a.id desc')
+          ->execute();
+      }
+      $section = $jogoSubsection;
+      if(!isset($asset))
+        $asset = $assets[0];
       ?>
+
     
       <?php use_helper('I18N', 'Date') ?>
       <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -129,7 +140,7 @@
                 <div class="categorias">
                   
                   <a class="mais" href="/quintaldacultura/jogos"><span class="icoBtn"></span><span class="tit">Jogos</span></a>
-                  <p class="categoriaSelecionada"><?php if($section) echo $section->getTitle(); else echo "Todos";?></p>
+                  <p class="categoriaSelecionada"><?php if($section) echo $section->getTitle(); ?></p>
                   </div>
                   
                   <div class="carrossel">
