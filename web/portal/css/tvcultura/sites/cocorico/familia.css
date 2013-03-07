@@ -12,7 +12,7 @@
 
 .topo-familia .navbar .nav > li.personagens { margin-right:0; margin-left:0; height:50px;  }
 .topo-familia .navbar .nav { margin:0;}
-#menu-familia { width:auto; background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 0 0 -5px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
+#menu-familia { width:auto; background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 0 0 -5px;  padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
 #menu-familia li { margin:0; }
 #menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
 #menu-familia li a.active,
