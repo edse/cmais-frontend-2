@@ -40,7 +40,7 @@
       </div>
       <div class="msgAcerto" style="display:none">
         <span class="alerta"></span>
-        <div class="boxMsg">
+        <div class="boxMsg"> 
           <p class="aviso">Mensagem enviada com sucesso!</p>
           <p>Obrigado por entrar em conosco. Em breve retornaremos sua mensagem.</p>
         </div>
