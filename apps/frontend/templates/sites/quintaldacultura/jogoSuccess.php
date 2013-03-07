@@ -52,6 +52,7 @@
   <div class="allWrapper">
       
       <?php
+      /*
       // section assets
       if(isset($pager))
         $assets = $pager->getResults();
@@ -66,6 +67,17 @@
       }
       if(!$asset){
         $asset = $assets[0];
+      }
+       */
+      
+      if(isset($asset)) {
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id', $asset->Sections[0]->id)
+          ->andWhere('sa.asset_id = a.id')
+          ->orderBy('a.id desc')
+          ->execute();
       }
       ?>
     
