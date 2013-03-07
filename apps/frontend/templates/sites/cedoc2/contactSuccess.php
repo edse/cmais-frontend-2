@@ -167,7 +167,7 @@
           },
           success : function(data) {
             $('input#enviar').removeAttr('disabled');
-            window.location.href = "#";
+            window.location.href = "javascript:;";
             if(data == "1") {
               $("#form-contato").clearForm();
               $(".msgAcerto").show();
