@@ -35,6 +35,10 @@
     
 </script>
 
+<a href="http://culturafm.cmais.com.br/contato" class="position" title="Dê sua opinião">
+  <div style="position: fixed;top:247px; left:0;" class="btn-feedback"></div>
+</a>
+
 <div id="bg-site"></div>
 <!-- CAPA SITE -->
 <div id="capa-site">
