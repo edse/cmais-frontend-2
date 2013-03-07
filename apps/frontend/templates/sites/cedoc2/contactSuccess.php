@@ -143,6 +143,7 @@
 </div>
 <!-- /container -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {
