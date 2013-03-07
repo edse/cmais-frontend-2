@@ -121,6 +121,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .licitacoes-subsecoes .pagination .active{color:#2a578c;text-decoration:underline;}
 .licitacoes-subsecoes .pagination .prev{border-right:1px solid #000;border-radius:0;}
 .licitacoes-subsecoes .pagination .next{border-left:1px solid #000;border-radius:0;}
+.licitacoes-sucsecoes .pagination .badge{background: red; font-size: 11px;}
 /* /LICITACOES */
 
 /* TRABALHE-CONOSCO */

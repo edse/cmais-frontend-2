@@ -20,7 +20,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a href="<?php echo $s->retriveUrl() ?>" title="titulo">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle()?>
-              <span class="badge vaga pull-right">1 vaga</span>
+              <span class="badge vaga pull-right">1</span>
             </a>
           </li>
           <?php endforeach?>
