@@ -691,15 +691,6 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('av.bitrate desc');
             }
-            else if($this->site->getSlug() == "quintaldacultura" && $this->section->getSlug() == "joguinhosdopeixonauta") {
-              $this->assetsQuery = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, SectionAsset sa')
-                ->where('sa.section_id = ?', 2236)
-                ->andWhere('sa.asset_id = a.id')
-                ->andWhere('a.is_active = ?', 1)
-                ->orderBy('sa.display_order');
-            }
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
