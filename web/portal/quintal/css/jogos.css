@@ -20,4 +20,4 @@
 #jogos .listao ul li a img { clear:both;}
 #jogos .listao ul li .jogar { background:url("../images/btn-jogar.png") no-repeat; width:116px; height:46px; line-height: 46px; font-size:24px; float:right; text-align:center; text-transform:uppercase; font-weight:bold; }
 .rodape { margin-top:0; }
-#jogos .listao ul li a p { height:80px; }
+#jogos .listao ul li p { height:80px; }
