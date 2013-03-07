@@ -79,6 +79,8 @@
           ->orderBy('a.id desc')
           ->execute();
       }
+      if(!isset($section))
+        $section = $asset->Sections[0]
       ?>
     
       <?php use_helper('I18N', 'Date') ?>
@@ -97,6 +99,7 @@
             <div class="menuVoltar">
               <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
               <a href="/quintaldacultura/jogos" class="voltarBig"><span class="ico-voltar"></span><span class="tit">Jogos</span></a>
+              <a href="/quintaldacultura/jogos/<?php echo $section->getSlug() ?>" class="voltarBig"><span class="ico-voltar"></span><span class="tit"><?php echo $section->getTitle() ?></span></a>
               <p><?php echo $asset->getTitle() ?></p>
                 
             </div>
