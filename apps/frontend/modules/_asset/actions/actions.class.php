@@ -852,8 +852,13 @@ class _assetActions extends sfActions
 		elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
       foreach($this->asset->Sections as $s){
-        if(in_array($s->id, array('92','98','99','100','101'))){
+        //if(in_array($s->id, array('92','98','99','100','101'))){
+        if($s->Parent->slug == "jogos") {
           $slug = "jogo";
+          if ($request->getParameter('param3'))
+            $this->jogoSubsection = Doctrine::getTable('Section')->findOneBySlug($request->getParameter('param3'));
+          else
+            $this->jogoSubsection = Doctrine::getTable('Section')->findOneBySlug('todos');
         }
         elseif(in_array($s->id, array('94', '103', '106', '104', '105', '127'))){
           $this->section = Doctrine::getTable('Section')->findOneById($s->id);
