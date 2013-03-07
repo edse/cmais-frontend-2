@@ -1,5 +1,5 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section))?>
-
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/portal.js"></script>
 
 <div class="container" id="geral">
