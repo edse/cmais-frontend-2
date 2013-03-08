@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
 <script type="text/javascript">
   //TIMER TRANSMISSAO
-  /*
   function timer1(){
     var request = $.ajax({
       data: {
@@ -17,7 +16,6 @@
       url: '/ajax/timer'
     });
   }
-  */
   /*
   function broadcastEnd(){
     var request = $.ajax({
@@ -33,12 +31,11 @@
       url: '/ajax/broadcastend'
     });
   }
-  
-  $(window).load(function(){
-    broadcastEnd();
-    var t=setInterval("broadcastEnd()", 60000);
-  });
   */
+  $(window).load(function(){
+    timer1();
+    var t=setInterval("timer1()", 60000);
+  });
 </script>
 
 
