@@ -56,13 +56,30 @@ $apresentador = Doctrine_Query::create()
           <?php endif; ?>
 		</div>
 		<div class="box-topo grid3">
+          <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
-          <ul class="menu">
+          <!-- menu interna -->
+          <ul class="menu-interna">
             <?php foreach($siteSections as $s): ?>
-				<li><a href="<?php echo $s->retriveUrl() ?>" title="<?php echo $s->getTitle() ?>" <?php if($s->getId() == $section->getId()):?>class="ativo"<?php endif; ?>><span><?php echo $s->getTitle() ?></span></a></li>
-			<?php endforeach; ?>
+              <?php $subsections = $s->subsections(); ?>
+              <?php if(count($subsections) > 0): ?>
+                <li class="m-<?php echo $s->getSlug() ?> span"><a href="#" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
+                  <div class="submenu-interna toggle-menu" style="display:none;">
+                    <ul style="display:block;">
+                    <?php foreach($subsections as $s): ?>
+                      <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+                    <?php endforeach; ?>
+                    </ul>
+                  </div>
+                </li>
+              <?php else: ?>
+                <li class="m-<?php echo $s->getSlug() ?>"><a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a></li>
+              <?php endif; ?>
+            <?php endforeach; ?>
           </ul>
+          <!-- /menu interna -->
           <?php endif; ?>
+          <!-- /menu -->
 		</div>
 		<!-- /box-topo -->
 	</div>
