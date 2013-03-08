@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
 <script type="text/javascript">
   //TIMER TRANSMISSAO
+  /*
   function timer1(){
     var request = $.ajax({
       data: {
@@ -16,13 +17,19 @@
       url: '/ajax/timer'
     });
   }
-  /*
+  
+  $(window).load(function(){
+    timer1();
+    var t=setInterval("timer1()", 60000);
+  });  
+  */
+ 
   function broadcastEnd(){
     var request = $.ajax({
       data: {
-        channel_id: 1,
-        program_id: 510,
-        url_out: 'http://tvcultura.cmais.com.br/prontoatendimento'
+        channel_id: <?php echo $site->Program->Channel->id ?>,
+        program_id: <?php echo $site->Program->id ?>,
+        url_out: '<?php echo $site->retriveUrl() ?>'
       },
       dataType: 'jsonp',
       success: function(data) {
@@ -31,10 +38,10 @@
       url: '/ajax/broadcastend'
     });
   }
-  */
+ 
   $(window).load(function(){
     timer1();
-    var t=setInterval("timer1()", 60000);
+    var t=setInterval("boradcastEnd()", 60000);
   });
 </script>
 
