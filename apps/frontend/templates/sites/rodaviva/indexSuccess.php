@@ -120,7 +120,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
 		</div>
 		
 		<div class="box-topo grid3">
-          <!-- menu --> 
+        <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
           <ul class="menu-interna">
