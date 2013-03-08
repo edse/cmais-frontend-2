@@ -32,7 +32,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <div id="collapse<?php echo $k ?>" class="accordion-body collapse"x>
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
-              <?php $download = $d->AssetContent->retriveRelatedAssetsByRelationType('Download');?>
+              <?php $download = $related->retriveRelatedAssetsByRelationType('Download');?>
               <?php 
               echo count($download);
               echo $download[0]->retriveImageUrlByImageUsage('original');
