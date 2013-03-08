@@ -24,7 +24,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- titulo -->
           <div class="accordion-heading">
             <a class="accordion-toggle licitacoes" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
-              <?php echo $related->getTitle() ?>
+              <?php echo $related[0]->getTitle() ?>
             </a>
           </div>
           <!-- /titulo -->
