@@ -15,15 +15,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!-- links subsecoes -->
       <div class="span12" style="margin:0">
         <ul>
-          <?php foreach ($section->subsections() as $s): ?>
+          <?php foreach($section->subsections() as $s): ?>
           <li>
-            <a href="<?php echo $s->retriveUrl() ?>" title="titulo">
+            <a href="<?php echo if($s->getAssets()<=0){echo "javascript:;"}else{echo $s->retriveUrl();} ?>" data-toggle="tooltip" data-placement="right" title="" data-original-title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>0){echo "itens";}else{ echo "item";} ?>">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle() ?>
               <span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>
             </a>
           </li>
-          <?php endforeach?>
+          <?php endforeach ?>
         </ul>  
       </div>
       <!-- /links subsecoes -->
