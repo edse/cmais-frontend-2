@@ -60,7 +60,7 @@
           <!-- /horario -->
         <?php endif;?>
       </div>
-      <!-- box-topo -->
+      <!-- box-topo --> 
       <div class="box-topo grid3">
         <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
