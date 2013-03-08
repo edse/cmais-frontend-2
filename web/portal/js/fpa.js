@@ -67,6 +67,6 @@ $(document).ready(function(){
   
   //licitacoes
   $('.licitacoes .btn-cat').tooltip({
-    placement: "left"
+    placement: "right"
   })
 });
