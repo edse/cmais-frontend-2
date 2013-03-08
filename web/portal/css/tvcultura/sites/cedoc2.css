@@ -19,24 +19,6 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 .navbar .nav > .active > a:hover, 
 .navbar .nav > .active > a:focus,
 .navbar-static-top .navbar-inner { box-shadow: none !important; }
-/* topo */
-/*
-.navbar .nav li a,
-.navbar-fixed-top { border-top:3px solid #5c5c5c; }
-.navbar { color:#626262; }
-.navbar-inner { background:#fff; }
-.navbar .nav > li:hover a,
-.navbar .nav > li:focus a,
-.navbar .nav > .active > a, 
-.navbar .nav > .active > a:hover, 
-.navbar .nav > .active > a:focus { border-color:#2a63a2; background:#f7f7f7; color:#2a63a2; border-bottom:1px solid #2a63a2;   }
-.navbar .nav { margin-top:-3px; position:relative; }
-.navbar .brand { text-indent:-9999px; background:url(/portal/images/capaPrograma/cedoc/logo-fpa.jpg) no-repeat; width:64px; height:46px; margin:3px 20px; padding:0; }
-.navbar .nav > li > a { text-transform:uppercase; font-weight:bold; font-size:12px; padding:0 23px; text-shadow:0; height:52px; line-height:52px; }
-.navbar .nav li.dropdown > .dropdown-toggle .caret { bottom: 20px; clear: both; display: block; left: 42%; position:relative; }
-*/
-/* /topo */
-
 /* container */
 .container { background:#fff; }
 #geral { margin-top:0; max-width:980px; padding-bottom:40px; margin-top:2px; }
@@ -185,6 +167,11 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 
 .row-fluid .span4 { width: 29%; }
 
+/* excecoes */
 @media (max-width: 1200px)  { 
   .row-fluid .span4 { width:90%; }
 }
+
+.home .txt { *max-height:240px; }
+.menu .search-query.input-medium  { *border:none; }
+/* /excecoes*/
