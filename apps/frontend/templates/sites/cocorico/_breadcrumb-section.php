@@ -9,9 +9,9 @@
    <?php else:?>
      <?php if($parent != ""):?>
        <?php if($section->Parent->slug == "concurso-cultural"): ?> 
-      <li><a href="<?php echo $section->Parent->retriveUrl(); ?>"><?php echo $section->Parent->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
-       <?php else: ?>
       <li><?php echo $section->Parent->getTitle(); ?> <span class="divider">&rsaquo;</span></li>
+       <?php else: ?>
+      <li><a href="<?php echo $section->Parent->retriveUrl(); ?>"><?php echo $section->Parent->getTitle(); ?></a> <span class="divider">&rsaquo;</span></li>
        <?php endif; ?> 
      <?php endif;?>
     <li class="active"><?php echo $section->getTitle(); ?></li>
