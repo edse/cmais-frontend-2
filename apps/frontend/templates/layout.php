@@ -27,6 +27,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
     
     <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
+    <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
     <!--link rel="shortcut icon" href="/portal/images/favicon.ico" type="image/x-icon" /-->
     
 
