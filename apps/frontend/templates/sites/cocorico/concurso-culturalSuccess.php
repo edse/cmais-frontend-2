@@ -39,7 +39,7 @@
     <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>"></a>
     <div class="span6">
       <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
-      <p class="grd">Parabéns ao vencedor</p>
+      <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
         <?php echo $displays["destaque-principal"][0]->getHeadline() ?></span>
       </p>
