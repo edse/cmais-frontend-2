@@ -16,24 +16,30 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!-- p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p -->
       <!--/texto subseção-->
       <!-- assets relacionados a subseção -->
-      <div class="span12" style="margin:0">
-        <?php foreach($pager->getResults() as $d): ?>
-          <div class="item">
-            <?php $related = $d->retriveRelatedAssetsByAssetTypeId(1); ?>
-            <h5><?php echo $d->getTitle() ?></h5>
-            <?php echo html_entity_decode($d->AssetContent->render()) ?>
+      <div class="accordion" id="accordion2">
+        <?php foreach($pager->getResults() as $k=>$d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(1); ?>
+        <!-- item -->  
+        <div class="accordion-group item">
+          <!-- titulo -->
+          <div class="accordion-heading">
+            <a class="accordion-toggle licitacoes" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
+              <?php echo $d->getTitle() ?>
+            </a>
           </div>
-        <?php endforeach; ?> 
+          <!-- /titulo -->
+          <!-- corpo -->
+          <div id="collapse<?php echo $k ?>" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <?php echo html_entity_decode($d->AssetContent->render()) ?>
+            </div>
+          </div>
+          <!-- /corpo -->
+        </div>
+        <!-- item -->
+        <?php endforeach; ?>
       </div>
       <!-- /assets relacionados a subseção -->
-      <!-- voltar historico -->
-      <div class="span3">
-        <a class="voltar" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->Parent->getTitle(); ?>">
-          <i class="icon-circle-arrow-left"></i>
-          Voltar
-        </a>
-      </div>
-      <!--voltar historico-->
       <!-- paginacao -->
       <?php if($pager->haveToPaginate()): ?>
       <div class="pagination pagination-centered">
@@ -85,6 +91,14 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       </script>
       <?php endif; ?>
       <!-- /paginacao -->
+      <!-- voltar historico -->
+      <div class="span3">
+        <a class="voltar" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->Parent->getTitle(); ?>">
+          <i class="icon-circle-arrow-left"></i>
+          Voltar
+        </a>
+      </div>
+      <!--voltar historico-->
 
       
         

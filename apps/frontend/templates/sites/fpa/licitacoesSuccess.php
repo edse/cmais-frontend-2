@@ -19,7 +19,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <li>
             <a href="<?php echo $s->retriveUrl() ?>" title="titulo">
               <i class="icon-chevron-right"></i>
-              <?php echo $s->getTitle()?>
+              <?php echo $s->getTitle() ?>
               <span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>
             </a>
           </li>
@@ -47,4 +47,3 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
 </div>
 <!--CONTAINER-->
-<?php include_partial_from_folder('blocks', 'global/footer') ?>
