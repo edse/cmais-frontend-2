@@ -34,15 +34,15 @@ function updateTweets() {
 function broadcastEnd(){
   var request = $.ajax({
     data: {
-      channel_id: 1,
-      program_id: 77,
-      url_out: 'http://tvcultura.cmais.com.br/cartaoverde'
+      channel_id: <?php echo $site->Program->Channel->id ?>,
+      program_id: <?php echo $site->Program->id ?>,
+      url_out: '<?php echo $site->retriveUrl() ?>'
     },
     dataType: 'jsonp',
     success: function(data) {
       eval(data);
     },
-    url: '/frontend_dev.php/ajax/broadcastend'
+    url: '/ajax/broadcastend'
   });
 }
   
