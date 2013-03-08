@@ -35,7 +35,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
               <?php 
               echo count($download);
-              echo $download[0]->retriveImageUrlByImageUsage('original');
+              echo $download[0]->retriveImageUrlByImageUsage('original')."/teste";
               ?>
             </div>
           </div>
