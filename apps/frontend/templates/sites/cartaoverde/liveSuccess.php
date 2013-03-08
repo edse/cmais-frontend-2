@@ -42,7 +42,7 @@ function broadcastEnd(){
     success: function(data) {
       eval(data);
     },
-    url: '/ajax/broadcastend'
+    url: '/frontend_dev.php/ajax/broadcastend'
   });
 }
   
