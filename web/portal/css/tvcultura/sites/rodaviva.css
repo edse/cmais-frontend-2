@@ -2115,4 +2115,11 @@ a.memRoda img{
 
 .transmissaoH ul li { margin-right:118px; }
 .transmissaoH ul li.ytb { margin-right:0; }
+
+.menu-interna { float:right; }
+.menu-interna li { background: url("../../../images/capaPrograma/rodaviva/bg-menuRV.png") repeat-x; margin:0 0 0 10px; height:24px; line-height:24px; }
+.submenu-interna,
+.menu-interna li:hover { background:#5b5a50 }
+.submenu-interna a { color:#fff; }
+.menu-interna li a { color:#5b5a50; font-size: 12px; font-weight: bold; }
 /** /RODA VIVA **/
