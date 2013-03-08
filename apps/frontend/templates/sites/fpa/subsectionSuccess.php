@@ -1,6 +1,5 @@
 <?php 
 $assets = $pager->getResults();
-$download = $asset->retriveRelatedAssetsByRelationType('Download');
 ?>
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 <style>
@@ -33,6 +32,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <div id="collapse<?php echo $k ?>" class="accordion-body collapse"x>
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
+              <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
               <?php echo $download[0]->retriveImageUrlByImageUsage('original') ?>
             </div>
           </div>
