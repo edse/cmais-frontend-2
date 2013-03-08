@@ -27,10 +27,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cmais.com.br/portal/images/icon/cmais-favico_114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
-    -->
-    
     <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
-    <!--link rel="shortcut icon" href="/portal/images/favicon.ico" type="image/x-icon" /-->
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico" type="image/x-icon" />
+    -->
+    <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
+    
+    
     
 
     <!-- scripts -->
