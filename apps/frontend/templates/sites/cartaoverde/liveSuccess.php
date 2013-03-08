@@ -46,7 +46,7 @@ function broadcastEnd(){
   });
 }
   
-$(window).load(function(){
+jQuery(document).ready(function() {
   updateTweets();
   var t=setInterval("updateTweets()",60000);
   stream1();
