@@ -24,7 +24,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- titulo -->
           <div class="accordion-heading">
             <a class="accordion-toggle licitacoes" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
-              <?php echo $related[0]->getTitle() ?>
+              <?php echo $d->getTitle() ?>
             </a>
           </div>
           <!-- /titulo -->
@@ -32,7 +32,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <div id="collapse<?php echo $k ?>" class="accordion-body collapse"x>
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
-              <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
+              <?php $download = $related->retriveRelatedAssetsByRelationType('Download');?>
               <?php 
               echo count($download);
 
