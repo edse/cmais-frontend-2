@@ -185,6 +185,10 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 
 .row-fluid .span4 { width: 29%; }
 
+/* excecoes */
 @media (max-width: 1200px)  { 
   .row-fluid .span4 { width:90%; }
 }
+
+.home .txt { *max-height:240px; }
+/* /excecoes*/
