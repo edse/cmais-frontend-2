@@ -17,7 +17,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <ul>
           <?php foreach($section->subsections() as $s): ?>
           <li>
-            <a href="<?php echo if($s->getAssets()<=0){echo "javascript:;"}else{echo $s->retriveUrl();} ?>" data-toggle="tooltip" data-placement="right" title="" data-original-title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>0){echo "itens";}else{ echo "item";} ?>">
+            <a href="<?php if($s->getAssets()<=0){echo "javascript:;";}else{echo $s->retriveUrl();} ?>" data-toggle="tooltip" data-placement="right" title="" data-original-title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>0){echo "itens";}else{ echo "item";} ?>">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle() ?>
               <span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>
