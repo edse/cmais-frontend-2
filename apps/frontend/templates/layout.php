@@ -20,8 +20,14 @@
 
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
-
-    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/favicon.ico" />
+    
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/portal/images/icon/cmais-favico_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/portal/images/icon/cmais-favico_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/portal/images/icon/cmais-favico_72.png">
+    
+    <link rel="shortcut icon" href="/portal/images/icon/cmais-favico_72.png">
+    <!--link rel="shortcut icon" href="/portal/images/favicon.ico" type="image/x-icon" /-->
     
 
     <!-- scripts -->
