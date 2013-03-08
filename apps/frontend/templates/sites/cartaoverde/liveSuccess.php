@@ -31,10 +31,29 @@ function updateTweets() {
   });
 }
 
+function broadcastEnd(){
+  var request = $.ajax({
+    data: {
+      channel_id: 1,
+      program_id: 77,
+      url_out: 'http://tvcultura.cmais.com.br/cartaoverde'
+    },
+    dataType: 'jsonp',
+    success: function(data) {
+      eval(data);
+    },
+    url: '/frontend_dev.php/ajax/broadcastend'
+  });
+}
+  
 jQuery(document).ready(function() {
   updateTweets();
   var t=setInterval("updateTweets()",60000);
   stream1();
+  
+  // broadcast
+  broadcastEnd();
+  var t2=setInterval("broadcastEnd()", 60000);
 });
 </script>
 
