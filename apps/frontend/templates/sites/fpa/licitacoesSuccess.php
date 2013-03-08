@@ -47,8 +47,3 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
 </div>
 <!--CONTAINER-->
-<script>
-  $('.btn-cat').tooltip({
-    
-  })
-</script>  
