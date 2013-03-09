@@ -40,8 +40,8 @@
   }
  
   $(window).load(function(){
-    timer1();
-    var t=setInterval("boradcastEnd()", 60000);
+    broadcastEnd();
+    var t=setInterval("broadcastEnd()", 60000);
   });
 </script>
 
