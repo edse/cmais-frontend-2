@@ -123,7 +123,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <li></li>
         </ul>      
       </div>
-      
+       
         <?php endif; ?>
       <?php endif; ?>
       
