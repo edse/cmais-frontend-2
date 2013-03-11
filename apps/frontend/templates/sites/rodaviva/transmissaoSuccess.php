@@ -52,7 +52,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/broadcastend'
+      url: '/frontend_dev.php/ajax/broadcastend'
     });
   }
   
@@ -130,11 +130,14 @@
     	return false;
   }
   
+  $(window).load(function(){
+    broadcastEnd();
+    var t2=setInterval("broadcastEnd()", 60000);
+  }  
+  
   jQuery(document).ready(function() {
     updateTweets();
     var t=setInterval("updateTweets()",60000);
-    broadcastEnd();
-    var t2=setInterval("broadcastEnd()", 60000);
     
     if (isDevice('ipad') || isDevice('iphone') || isDevice('ipod') || isDevice('Android'))
       stream3();
@@ -177,7 +180,7 @@
           <?php endif; ?>
 		</div>
 		<div class="box-topo grid3">
-          <<!-- menu --> 
+          <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
           <ul class="menu-interna">
@@ -229,7 +232,7 @@
           				</ul>
           				<div class="boxVideo">
           					<script type="text/javascript">
-          						timer1();
+          						//timer1();
           					</script>
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
