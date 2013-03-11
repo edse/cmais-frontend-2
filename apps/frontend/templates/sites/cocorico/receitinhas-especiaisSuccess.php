@@ -43,8 +43,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
-        <h2><?php echo $displays['receitinhas-especiais']->getTitle() ?></h2>
-        <p><?php echo $displays['receitinhas-especiais']->getDescription() ?></p>
+        <h2><?php echo $displays['receitinhas-especiais'][0]->Block->getTitle() ?></h2>
+        <p><?php echo $displays['receitinhas-especiais'][0]->Block->getDescription() ?></p>
         <div class="divisao"></div>
         <form class="form-horizontal">
           <h2>Envie sua receitinha:</h2>
