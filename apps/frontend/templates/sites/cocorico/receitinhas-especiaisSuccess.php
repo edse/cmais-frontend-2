@@ -16,7 +16,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       
       <!-- PERSONAGENS -->
       <?php include_partial_from_folder('sites/cocorico', 'global/personagens', array('site' => $site)) ?>
-      <!--/PERSONAGENS -->
+      <!--/PERSONAGENS --> 
     </div>
   </div>
   <!-- /row-->
@@ -32,10 +32,9 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
   
   <!--row-->
-  <?php if(count($assets) > 0): ?>
+
   <div class="row-fluid conteudo destaques especial">
     <?php if(isset($assets[0])): ?>
-      <?php $related = $assets[0]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
