@@ -111,9 +111,9 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       
        <?php if(isset($displays['receitinhas-especiais'])):?>
     <?php if(count($displays['receitinhas-especiais']) > 1): ?>
-      <?php $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related = $displays['receitinhas-especiais'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="span6">
-        <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>"><img class="span12" src="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" alt="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>" /></a>
         <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" class="span12 btn" title=""><?php echo $displays['receitinhas-especiais'][0]->getTitle() ?></a>
         <ul class="likes">
           <li class="ativo"></li>
