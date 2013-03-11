@@ -124,7 +124,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/alert.js"></script>
+    <!--<script type="text/javascript" src="/portal/js/bootstrap/alert.js"></script>-->
     <script type="text/javascript" src="/portal/js/bootstrap/modal.js"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/dropdown.js"></script>
     <script type="text/javascript" src="/portal/js/bootstrap/scrollspy.js"></script>
