@@ -195,7 +195,7 @@
           required : true,
         },
         referencia : {
-          required : true,
+          required : false,
           minlength : 2
         },
         mensagem : {
