@@ -33,10 +33,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
+              <?php if($download>0): ?>
+                <?php if(isset($download)):?>
+                  <a href="<?php echo $download[0]->AssetFile->getSource(); ?>" title="<?php echo $download[0]->AssetFile->getAsset();?>" target="_blank"><?php echo $download[0]->AssetFile->getAsset(); ?></a>
+                <?php endif; ?>
+              <?php endif; ?>
               <?php 
-              echo $download[0]->AssetFile->getAsset();
+              
               echo $download[0]->AssetFile->getFile();
-              echo $download[0]->AssetFile->getSource();
+              
               ?>
             </div>
           </div>
