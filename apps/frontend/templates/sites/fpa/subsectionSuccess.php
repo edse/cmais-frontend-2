@@ -35,13 +35,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
               <?php echo count($download) ?>
               <?php if(count($download)>0): ?>
-                <?php foreach($download as $f):?>
-                  <?php if(isset($f)):?>
-                    <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $f[0]->AssetFile->getFile(); ?>" title="<?php echo $f[0]->AssetFile->getAsset();?>" target="_blank">
-                      <?php echo $f[0]->AssetFile->getAsset(); ?>
-                    </a>
-                  <?php endif; ?>
-                <?php endforeach; ?>
+                <?php if(isset($download)): ?>
+                  <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile(); ?>" title="<?php echo $download[0]->AssetFile->getAsset();?>" target="_blank"><?php echo $download[0]->AssetFile->getAsset(); ?></a>
+                <?php endif; ?>
               <?php endif; ?>
             </div>
           </div>
