@@ -162,6 +162,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
       ->groupBy('sa.asset_id')
       ->orderBy('a.id desc')
+      ->pagelimit(24)
       ->execute();
   ?>
  
