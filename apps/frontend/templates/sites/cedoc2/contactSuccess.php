@@ -203,7 +203,7 @@
           required : true,
         },
         captcha : {
-          required : true
+          required : true,
           remote : "/portal/js/validate/demo/captcha/process.php"
         }
       },
