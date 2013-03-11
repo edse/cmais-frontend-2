@@ -27,6 +27,22 @@ function stream2() {
   so.addParam('wmode','transparent');
   so.write('live');
 }
+
+function broadcastEnd(){
+  var request = $.ajax({
+    data: {
+      channel_id: <?php echo $site->Program->Channel->id ?>,
+      program_id: <?php echo $site->Program->id ?>,
+      url_out: '<?php echo $site->retriveUrl() ?>'
+    },
+    dataType: 'jsonp',
+    success: function(data) {
+      eval(data);
+    },
+    url: '/ajax/broadcastend'
+  });
+}
+
 $(function(){
   /*
   var request = $.ajax({
@@ -40,6 +56,9 @@ $(function(){
   });
   */
   stream1();
+  
+  broadcastEnd();
+  var t2=setInterval("broadcastEnd()", 60000);
 });
 
       
