@@ -1,8 +1,7 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section))?>
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="conteudo">
@@ -143,7 +142,8 @@
   </div>
 </div>
 <!-- /container -->
-
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {
