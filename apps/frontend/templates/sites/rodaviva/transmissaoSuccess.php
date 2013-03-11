@@ -1,14 +1,3 @@
-<?php
-/*
-header("Location: http://tvcultura.cmais.com.br/rodaviva");
-die();
-
-if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
-  header('Location: http://tvcultura.cmais.com.br/rodaviva/bastidores');
-  die();
-}
- */
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
@@ -63,7 +52,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/broadcastend'
+      url: '/frontend_dev.php/ajax/broadcastend'
     });
   }
   
@@ -141,6 +130,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
     	return false;
   }
   
+  
   jQuery(document).ready(function() {
     updateTweets();
     var t=setInterval("updateTweets()",60000);
@@ -188,7 +178,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
           <?php endif; ?>
 		</div>
 		<div class="box-topo grid3">
-          <<!-- menu --> 
+          <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
           <ul class="menu-interna">
@@ -240,7 +230,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
           				</ul>
           				<div class="boxVideo">
           					<script type="text/javascript">
-          						timer1();
+          						//timer1();
           					</script>
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>

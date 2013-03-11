@@ -2,6 +2,7 @@
 
 <script type="text/javascript">
   //TIMER TRANSMISSAO
+  /*
   function timer1(){
     var request = $.ajax({
       data: {
@@ -19,6 +20,7 @@
     timer1();
     var t=setInterval("timer1()",60000);
   });
+  */
 </script>
 
 <?php use_helper('I18N', 'Date') ?>
