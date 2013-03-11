@@ -32,17 +32,18 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
   
   <!--row-->
-
+  <?php if(isset($displays['receitinhas-especiais'])):?>
+    <?php if(count($displays['receitinhas-especiais']) > 0): ?>
+  
   <div class="row-fluid conteudo destaques especial">
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
-        <h2>Dias quentes de verão</h2>
-        <p>Que tal uma receita rápida e fácil de fazer para se deliciar e refrescar? Nesta seleção você encontra XX receitas testadas pela mini chef Rebeca Chamma e aprovadas pela turma do paiol.</p>
-        <p>Boa diversão e bom apetite!</p>  
+        <h2><?php echo $displays['receitinhas-especiais']->getTitle() ?></h2>
+        <p><?php echo $displays['receitinhas-especiais']->getDescription() ?></p>
         <div class="divisao"></div>
         <form class="form-horizontal">
-          <h2>Envie sua receitinha de verão:</h2>
+          <h2>Envie sua receitinha:</h2>
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
             <div class="controls">
@@ -98,8 +99,14 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
         </form>
       </div>
     </div>
-    
+   
+    <?php endif; ?>
+      <?php endif; ?>
+      
     <div class="span8">
+      
+       <?php if(isset($displays['receitinhas-especiais'])):?>
+    <?php if(count($displays['receitinhas-especiais']) > 1): ?>
       <div class="span6">
         <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
         <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
@@ -112,6 +119,12 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
         </ul>      
       </div>
       
+        <?php endif; ?>
+      <?php endif; ?>
+      
+      <?php if(isset($displays['receitinhas-especiais'])):?>
+    <?php if(count($displays['receitinhas-especiais']) > 2): ?>
+      
       <div class="span6">
         <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
         <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
@@ -123,48 +136,30 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <li></li>
         </ul>     
       </div>
-    </div>
-    <div class="span8">
-      <ul class="destaques-small destaque-especial ">
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
       
-    </ul>
+         <?php endif; ?>
+      <?php endif; ?>
+      
     </div>
     
-    
+      <?php if(isset($displays['receitinhas-especiais'])):?>
+    <?php if(count($displays['receitinhas-especiais']) > 3): ?>
+          
+    <div class="span8">
+      
+      <ul class="destaques-small destaque-especial ">
+       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <li class="span3"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
+        <?php endforeach; ?>
+      </ul>
+      
+    </div>
+    <?php endif; ?>
+    <?php endif; ?>
   </div>
   <!-- /row-->
   
-  <?php
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa, Section s')
-      ->where('a.id = sa.asset_id')
-      ->andWhere('s.id = sa.section_id')
-      ->andWhere('s.slug = "receitinhas"')
-      ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 1')
-      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-      ->groupBy('sa.asset_id')
-      ->orderBy('a.id desc')
-      ->limit(24)
-      ->execute();
-  ?>
  
  <?php if (count($assets) > 0): ?>
  <!--row-->
