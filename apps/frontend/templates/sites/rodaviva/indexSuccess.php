@@ -1,11 +1,3 @@
-<?php
-/*
-if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
-  header('Location: http://tvcultura.cmais.com.br/rodaviva/bastidores');
-  die();
-}
-*/
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
@@ -18,6 +10,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
 <script type="text/javascript">
 
   //TIMER TRANSMISSAO
+  /*
   function timer1(){
     var request = $.ajax({
       data: {
@@ -31,7 +24,6 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
       url: '/ajax/timer'
     });
   }
-  /*
   function timer2(){
     var request = $.ajax({
       data: {
@@ -45,12 +37,12 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
       url: '/ajax/timer'
     });
   }
-  */
+  
   $(window).load(function(){
     var t=setInterval("timer1()",60000);
     //var t=setInterval("timer2()",60000);
   });
-  
+  */
 
   $(function(){
   
@@ -227,7 +219,7 @@ if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
           							<div id="aovivo"><img src="/portal/images/capaPrograma/rodaviva/img-transmissao-02.jpg" alt="Fique ligado!"></div>
           					   </div>
           					   <script type="text/javascript">
-          					     timer1();
+          					     //timer1();
           					     //timer2();
           					   </script>
           						<?php /* 

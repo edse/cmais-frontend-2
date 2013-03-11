@@ -1,14 +1,3 @@
-<?php
-/*
-header("Location: http://tvcultura.cmais.com.br/rodaviva");
-die();
-
-if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
-  header('Location: http://tvcultura.cmais.com.br/rodaviva/bastidores');
-  die();
-}
- */
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
