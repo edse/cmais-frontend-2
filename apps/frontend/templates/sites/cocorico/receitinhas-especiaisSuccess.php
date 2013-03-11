@@ -110,10 +110,10 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <div class="span8">
       
        <?php if(isset($displays['receitinhas-especiais'])):?>
-    <?php if(count($displays['receitinhas-especiais']) > 1): ?>
+    <?php if(count($displays['receitinhas-especiais']) > 0): ?>
       <?php $related = $displays['receitinhas-especiais'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="span6">
-        <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['receitinhas-especiais'][0]->getTitle() ?>" /></a>
         <a href="<?php echo $displays['receitinhas-especiais'][0]->retriveUrl() ?>" class="span12 btn" title=""><?php echo $displays['receitinhas-especiais'][0]->getTitle() ?></a>
         <ul class="likes">
           <li class="ativo"></li>
@@ -123,24 +123,23 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <li></li>
         </ul>      
       </div>
-      
+       
         <?php endif; ?>
       <?php endif; ?>
       
       <?php if(isset($displays['receitinhas-especiais'])):?>
-    <?php if(count($displays['receitinhas-especiais']) > 2): ?>
-
+    <?php if(count($displays['receitinhas-especiais']) > 1): ?>
+      <?php $related = $displays['receitinhas-especiais'][1]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
       <div class="span6">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
-        <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
-        
+        <a href="<?php echo $displays['receitinhas-especiais'][1]->retriveUrl() ?>" title="<?php echo $displays['receitinhas-especiais'][1]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[1]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['receitinhas-especiais'][1]->getTitle() ?>" /></a>
+        <a href="<?php echo $displays['receitinhas-especiais'][1]->retriveUrl() ?>" class="span12 btn" title=""><?php echo $displays['receitinhas-especiais'][1]->getTitle() ?></a>
         <ul class="likes">
           <li class="ativo"></li>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
-        </ul>     
+        </ul>      
       </div>
       
          <?php endif; ?>
@@ -149,7 +148,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     </div>
     
       <?php if(isset($displays['receitinhas-especiais'])):?>
-    <?php if(count($displays['receitinhas-especiais']) > 3): ?>
+    <?php if(count($displays['receitinhas-especiais']) > 2): ?>
           
     <div class="span8">
       
