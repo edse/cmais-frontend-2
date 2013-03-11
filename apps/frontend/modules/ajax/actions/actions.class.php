@@ -1629,19 +1629,19 @@ EOT;
 
 
   public function executePodcastsprograms(sfWebRequest $request){
-    
-    //todos sites dos programs do canal x que tenham asset de audio
-    $this->sites = Doctrine_Query::create()
-      ->select('s.*')
-      ->from('Site s, Program p, ChannelProgram cp')
-      ->where('cp.channel_id = ?', (int)6)
-      ->andWhere('p.id = cp.program_id')
-      ->andWhere('p.is_active = ?', 1)
-      ->andWhere('p.site_id = s.id')
-      ->execute(); 
+    if($request->getParameter('channel_id')>0){
+      //todos sites dos programs do canal x que tenham asset de audio
+      $this->sites = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Site s, Program p, ChannelProgram cp')
+        ->where('cp.channel_id = ?', (int)$request->getParameter('channel_id'))
+        ->andWhere('p.id = cp.program_id')
+        ->andWhere('p.is_active = ?', 1)
+        ->andWhere('p.site_id = s.id')
+        ->execute(); 
       $this->setLayout(false);    
-      
- }
+    }      
+  }
 
 
 }
