@@ -151,8 +151,29 @@
     });
     var validator = $('#form-contato').validate({
       submitHandler : function(form) {
-        
-
+        $.ajax({
+          type : "POST",
+          dataType : "text",
+          data : $("#form-contato").serialize(),
+          beforeSend : function() {
+            $('input#enviar').attr('disabled', 'disabled');
+            $(".msgAcerto").hide();
+            $(".msgErro").hide();
+            $('img#ajax-loader').show();
+          },
+          success : function(data) {
+            $('input#enviar').removeAttr('disabled');
+            window.location.href = "javascript:;";
+            if(data == "1") {
+              $("#form-contato").clearForm();
+              $(".msgAcerto").show();
+              $('img#ajax-loader').hide();
+            } else {
+              $(".msgErro").show();
+              $('img#ajax-loader').hide();
+            }
+          }
+        });
       },
       rules : {
         nome : {
@@ -172,17 +193,17 @@
           minlength : 2
         },
         assunto : {
-          required : true
+          required : true,
         },
         referencia : {
           required : true,
           minlength : 2
         },
         mensagem : {
-          required : true
+          required : true,
         },
         captcha : {
-          required : true,
+          required : true
           remote : "/portal/js/validate/demo/captcha/process.php"
         }
       },
