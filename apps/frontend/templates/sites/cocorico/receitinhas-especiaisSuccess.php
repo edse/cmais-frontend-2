@@ -149,53 +149,69 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     
   </div>
   <!-- /row-->
+  
+  <?php
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "receitinhas"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
+      ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id desc')
+      ->limit(24)
+      ->execute();
+  ?>
+ 
+ <?php if (count($assets) > 0): ?>
  <!--row-->
   <div class="row-fluid conteudo">
     <ul class="destaques-small destaque2">
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
+      <?php endforeach; ?>
     </ul>
   </div>
   <!-- /row-->
-  <!-- paginacao -->
-  <div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
+ <?php endif; ?>
+  
+    <?php if($pager->haveToPaginate()): ?>
+    <!-- PAGINACAO -->
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
+        <?php foreach ($pager->getLinks() as $page): ?>
+          <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php else: ?>
+        <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
+      </ul>
+    </div>
+    <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="<?php echo $url?>" />
+      <input type="hidden" name="page" id="page" value="" />
+    </form>
+    <script>
+      function goToPage(i){
+        $("#page").val(i);
+        $("#page_form").submit();
+      }
+    </script>
+    <!--// PAGINACAO -->
+    <?php endif; ?>
+
+
   <!-- rodape-->
   <div class="row-fluid  border-top"></div>
   <div class="row-fluid rodape" >
-    <h3>2012 &copy; tv cultura - fpa</h3>
+    <h3>2013 &copy; fundação padre anchieta - tv cultura</h3>
     <div class="span2">
       <a href="#" class="bold" title="Em família">em família</a>
       <ul>
