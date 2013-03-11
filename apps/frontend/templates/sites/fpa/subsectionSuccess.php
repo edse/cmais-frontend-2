@@ -36,7 +36,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <?php echo count($download) ?>
               <?php if(count($download)>0): ?>
                 <?php if(isset($download)): ?>
-                  <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile(); ?>" title="<?php echo $download[0]->AssetFile->getAsset();?>" target="_blank"><?php echo $download[0]->AssetFile->getAsset(); ?></a>
+                  <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" title="" target="_blank">teste</a>
                 <?php endif; ?>
               <?php endif; ?>
             </div>
