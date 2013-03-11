@@ -229,7 +229,7 @@
           				</ul>
           				<div class="boxVideo">
           					<script type="text/javascript">
-          						timer1();
+          						//timer1();
           					</script>
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
