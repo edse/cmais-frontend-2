@@ -143,13 +143,11 @@
 </div>
 <!-- /container -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-
 <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {
       $(".msgAcerto, .msgErro").hide();
     });
-    $('#form-contato').hide();
     var validator = $('#form-contato').validate({
       submitHandler : function(form) {
         $.ajax({
@@ -164,7 +162,7 @@
           },
           success : function(data) {
             $('input#enviar').removeAttr('disabled');
-            window.location.href = "javascript:;";
+            window.location.href = "#";
             if(data == "1") {
               $("#form-contato").clearForm();
               $(".msgAcerto").show();
