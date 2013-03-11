@@ -128,6 +128,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <div class="span6">
         <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
         <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
+        
         <ul class="likes">
           <li class="ativo"></li>
           <li></li>
@@ -149,7 +150,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       
       <ul class="destaques-small destaque-especial ">
        <?php foreach($displays['receitinhas-especiais'] as $d): ?>
-        <li class="span3"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
+         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <li class="span3"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" />" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
         <?php endforeach; ?>
       </ul>
       
@@ -165,7 +167,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <div class="row-fluid conteudo">
     <ul class="destaques-small destaque2">
       <?php foreach($assets as $d): ?>
-      <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+          <li class="span2"><a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /><?php $tam=16; $str=$d->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></a></li>
       <?php endforeach; ?>
     </ul>
   </div>
