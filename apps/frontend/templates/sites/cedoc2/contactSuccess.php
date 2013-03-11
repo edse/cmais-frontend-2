@@ -149,6 +149,7 @@
     $('input#enviar').click(function() {
       $(".msgAcerto, .msgErro").hide();
     });
+    $('#form-contato').hide();
     var validator = $('#form-contato').validate({
       submitHandler : function(form) {
         $.ajax({
