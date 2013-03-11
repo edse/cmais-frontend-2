@@ -34,7 +34,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
               <?php 
-              echo $download[0]->AssetFile->getTitle(). "<br>teste<br>";
+              echo $download[0]->AssetFile->getAsset(). "<br>teste<br>";
               echo $download[0]->AssetFile->getFile(). "<br>teste<br>";
               echo $download[0]->AssetFile->getSource();
               ?>
