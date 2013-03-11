@@ -34,7 +34,6 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!--row-->
 
   <div class="row-fluid conteudo destaques especial">
-    <?php if(isset($assets[0])): ?>
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
