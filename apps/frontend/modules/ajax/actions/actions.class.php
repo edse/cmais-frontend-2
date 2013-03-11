@@ -514,7 +514,7 @@ class ajaxActions extends sfActions
         $return .= '</ul><ul class="lista">';
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
-        $return .= '</ul><div class="botoes"><a href="http://multicultura.cmais.com.br/grade?c=multicultura">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
+        $return .= '</ul><div class="botoes"><a href="http://cmais.com.br/grade?c=multicultura">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
       }
       elseif($request->getParameter('content') == "tvrtb"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
@@ -1574,6 +1574,32 @@ EOT;
     die();
   }
   
+  public function executeBroadcastend(sfWebRequest $request){
+    $this->setLayout(false);
+    $return = "";
+    $url_out = $request->getParameter('url_out');
+    $program_id = $request->getParameter('program_id');
+    $channel_id = $request->getParameter('channel_id');
+    if($channel_id <= 0)
+      $channel_id = 1;
+    $schedules = Doctrine_Query::create()
+      ->select('s.*')
+      ->from('Schedule s')
+      ->where('s.is_live = ?', 1)
+      ->andWhere('s.date_start <= ?', date('Y-m-d H:i:s'))
+      ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+      ->andWhere('s.channel_id = ?', (int)$channel_id)
+      ->andWhere('s.program_id = ?', (int)$program_id)
+      ->orderBy('s.date_start asc')
+      ->limit('1')
+      ->execute();
+    if((isset($schedules)) && (count($schedules) > 0)){
+      $return .= "";
+    }else{
+      $return .= "self.location.href='".$url_out."'";
+    }
+    die($return);
+  }
 
 }
 

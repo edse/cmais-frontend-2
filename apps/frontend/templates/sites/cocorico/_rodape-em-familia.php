@@ -34,7 +34,7 @@
         <li><a href="<?php echo $siteUrl ?>/nocinema" title="Nos Cinemas">No Cinema</a></li>
         <li><a href="<?php echo $siteUrl ?>/naweb" title="Na Web">Na Web</a></li>
         <li><a href="<?php echo $siteUrl ?>/agenda" title="Agenda">Agenda</a></li>
-        <li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
+        <!--li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li-->
       </ul>
     </div>
     

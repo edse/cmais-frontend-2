@@ -134,9 +134,9 @@
         endif;
         ?>    <!-- destaque -->
       <!-- fale conosco cr-->
-      <div class="cr">
+      <!--div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
-      </div>
+      </div-->
       <!-- /fale conosco cr-->
     </div>
     <!-- /coluna da direita-->

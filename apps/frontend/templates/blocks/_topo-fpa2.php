@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/fpa.js"></script>
 
 <!--FUNDO-TOPO-->
