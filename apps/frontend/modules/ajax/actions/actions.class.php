@@ -514,7 +514,7 @@ class ajaxActions extends sfActions
         $return .= '</ul><ul class="lista">';
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
-        $return .= '</ul><div class="botoes"><a href="http://cmais.com.br/grade?c=multicultura">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
+        $return .= '</ul><div class="botoes"><a href="http://multicultura.cmais.com.br/programacao">Grade completa</a><!--<a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a>--></div>';
       }
       elseif($request->getParameter('content') == "tvrtb"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
@@ -800,7 +800,7 @@ class ajaxActions extends sfActions
           $return .= '<p class="titulos hora">'.format_date($important->getDateStart(), "t").'</p></div>';
         }
         unset($important); unset($coming); unset($live);
-        $return .= '<div class="botoes"><a href="/grade?c=multicultura">Grade completa</a></div>';
+        $return .= '<div class="botoes"><a href="http://multicultura.cmais.com.br/programacao">Grade completa</a></div>';
       }
       elseif($request->getParameter('content') == "no-ar-tvrtb"){
         $live = Doctrine_Query::create()
@@ -1600,6 +1600,49 @@ EOT;
     }
     die($return);
   }
+
+
+  public function executePodcasts(sfWebRequest $request){
+    //Chega Slug x 404
+    if(!$request->getParameter('slug'))
+      $this->forward404();
+    //Consulta Slug x 404
+    $this->site = Doctrine::getTable('Site')->findOneBySlug($request->getParameter('slug'));
+    if(!$this->site)
+      $this->forward404();
+    $this->setLayout(false);   
+    // Consulta a lista de audios do site
+    //$this->audios = Doctrine::getTable('Asset')->findBySiteIdAndAssetTypeId($this->site->getId(), 4);
+    $this->audios = Doctrine_Query::create()
+    ->select('a,*')
+    ->from('Asset a')
+    ->where('a.site_id= ?', (int)$this->site->getId())
+    ->andwhere('a.asset_type_id = ?', (int)4)
+    ->orderBy('a.created_at desc')
+    ->limit(100)
+    ->execute();
+    //echo count($this->audios);
+    
+    //findBySiteIdAndAssetTypeId($this->site->getId(), 4, 100);
+    //die('xml');
+  }
+
+
+  public function executePodcastsprograms(sfWebRequest $request){
+    if($request->getParameter('channel_id')>0){
+      //todos sites dos programs do canal x que tenham asset de audio
+      $this->sites = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Site s, Program p, ChannelProgram cp')
+        ->where('cp.channel_id = ?', (int)$request->getParameter('channel_id'))
+        ->andWhere('p.id = cp.program_id')
+        ->andWhere('p.is_active = ?', 1)
+        ->andWhere('p.site_id = s.id')
+        ->execute(); 
+      $this->setLayout(false);    
+    }      
+  }
+
 
 }
 

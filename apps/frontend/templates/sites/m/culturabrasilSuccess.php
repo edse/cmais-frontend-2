@@ -3,7 +3,8 @@
 <!--/header-->
 
 <?php
-$xml = file_get_contents("http://cmais.com.br/webservice/culturabrasil");
+//$xml = file_get_contents("http://cmais.com.br/webservice/culturabrasil");
+$xml = file_get_contents("http://cmais.com.br/ajax/podcastsprograms?channel_id=5");
 $podcasts = new SimpleXMLElement($xml);
 ?>
 
