@@ -177,7 +177,7 @@
           <?php endif; ?>
 		</div>
 		<div class="box-topo grid3">
-          <<!-- menu --> 
+          <!-- menu --> 
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
           <ul class="menu-interna">
