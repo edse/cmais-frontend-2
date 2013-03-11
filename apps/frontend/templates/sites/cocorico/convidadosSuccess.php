@@ -189,7 +189,7 @@ $assets = $pager->getResults();
         <li class="proximo" title="Próximo"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);"></a></li>
       </ul>
     </div>
-    <form id="page_form" action="" method="post">
+    <form id="page_form" action="" method="get">
       <input type="hidden" name="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
       <input type="hidden" name="letra-cocorico" value="<?php if(isset($_REQUEST['letra-cocorico'])) echo $_REQUEST['letra-cocorico'] ?>">
       <input type="hidden" name="return_url" value="<?php echo $url?>" />
