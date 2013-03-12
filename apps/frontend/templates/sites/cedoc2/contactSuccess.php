@@ -237,7 +237,7 @@
    ref = getParameterByName('ref');
    //alert(ref.charAt(0))
    if(ref.charAt(0) == " "){
-    $("#referencia").attr("display","none");
+    $("#referencia").css("display","none");
    }
    else{
     $("#referencia").attr("value",ref);
