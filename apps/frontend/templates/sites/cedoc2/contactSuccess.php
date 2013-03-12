@@ -233,14 +233,14 @@
 
 <script language="javascript">
   
-   var ref = "-";
-   ref = getParameterByName('ref');
+   var ref1 = "";
+   ref1 = getParameterByName('ref');
    //alert(ref.charAt(0))
-   if(ref == "-"){
+   if(ref1 == ""){
    $("#t4ref").css("display","none");
    }
    else{
-   $("#referencia").attr("value",ref);
+   $("#referencia").attr("value",ref1);
    }
 
 
