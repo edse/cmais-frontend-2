@@ -136,12 +136,14 @@ $(function(){
           ?>  
         <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)) ?>
         <!-- /enquete -->
-        <!-- fale conosco cr-->
       </div>
-      <!-- /tv cocorico --> 
+      <!-- /tv cocorico -->
+      <!-- fale conosco cr--> 
+      <!--
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
+      -->
       <!-- /fale conosco cr-->
     </div>
     <!-- /col direita -->
