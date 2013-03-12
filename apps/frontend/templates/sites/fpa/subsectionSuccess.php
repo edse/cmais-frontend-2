@@ -33,12 +33,27 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
-              <?php echo count($download) ?>
-              <?php if(count($download)>0): ?>
-                <?php if(isset($download)): ?>
-                  <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile(); ?>" title="<?php echo $download[0]->AssetFile->getAsset();?>" target="_blank"><?php echo $download[0]->AssetFile->getAsset(); ?></a>
-                <?php endif; ?>
-              <?php endif; ?>
+              <?php
+               if(count($download)>0):
+                 if(isset($download)): 
+                  for($i=0; $i<count($download); $i++):
+                    if($download[$i]->asset_type_id==8):
+                      ?>
+                      <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[$i]->AssetFile->getFile(); ?>" title="<?php echo $download[$i]->AssetFile->getAsset();?>" target="_blank">
+                        <i class="icon-file icon-blue"></i> <?php echo $download[$i]->AssetFile->getAsset(); ?>
+                      </a>  
+                      <?php
+                    elseif($download[$i]->asset_type_id==2):
+                      ?>
+                      <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[$i]->AssetImage->getOriginalFile() ?>" target="_blank">
+                        <i class="icon-file icon-blue"></i> <?php echo $download[$i]->AssetImage->getAsset(); ?>
+                      </a>
+                      <?php
+                    endif;
+                  endfor;
+                 endif;
+               endif; 
+               ?>
             </div>
           </div>
           <!-- /corpo -->
