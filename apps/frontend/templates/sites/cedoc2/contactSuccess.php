@@ -2,15 +2,6 @@
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
 
-<script language="javascript">
-
-$(document).ready(function(){
- var ref = getParameterByName('ref');
- $("#referencia").attr("value",ref);
-})
-
-</script>
-
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="conteudo">
@@ -238,4 +229,13 @@ $(document).ready(function(){
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
+</script>
+
+<script language="javascript">
+  
+
+   var ref = getParameterByName('ref');
+   $("#referencia").attr("value",ref);
+
+
 </script>
