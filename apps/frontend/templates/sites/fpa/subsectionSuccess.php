@@ -115,7 +115,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!-- /paginacao -->
       <!-- voltar historico -->
       <div class="span3">
-        <a class="voltar" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->Parent->getTitle(); ?>">
+        <a class="voltar" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->Parent->getSlug(); ?>">
           <i class="icon-circle-arrow-left"></i>
           Voltar
         </a>

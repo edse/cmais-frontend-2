@@ -1,10 +1,3 @@
-<?php /*
- if((date('H:i:s') >= '18:00:00') && (date('w') == 1))  {
- header('Location: http://tvcultura.cmais.com.br/metropolis/bastidores');
- die();
- }
- */
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
