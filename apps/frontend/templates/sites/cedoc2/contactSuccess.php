@@ -236,7 +236,13 @@
 
    var ref = getParameterByName('ref');
    alert(ref.charAt(0))
-   $("#referencia").attr("value",ref);
+   if(ref = ""){
+     alert("1")
+   }
+   else{
+    $("#referencia").attr("value",ref);
+   }
+
    
     
 
