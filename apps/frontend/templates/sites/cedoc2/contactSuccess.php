@@ -1,10 +1,6 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section))?>
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
-<script>
-  var ref = getParameterByName('ref');
-</script>
-  
 
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
@@ -115,7 +111,7 @@
         </div>
         <div class="linha t4"> 
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="javascript:document.write(ref);" />
+          <input type="text" name="referencia" id="referencia" value="" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
@@ -233,4 +229,13 @@
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
+</script>
+
+<script language="javascript">
+  
+
+   var ref = getParameterByName('ref');
+   $("#referencia").attr("value",ref);
+
+
 </script>
