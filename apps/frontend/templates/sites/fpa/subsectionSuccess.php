@@ -33,7 +33,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-inner">
               <?php echo html_entity_decode($d->AssetContent->render()) ?>
               <?php $download = $d->retriveRelatedAssetsByRelationType('Download');?>
-              <?php for($i=0; $i<count($dowload); $i++):?>
+              <?php for($i=0; $i<count($download); $i++):?>
                <?php echo $i . "<br>"?> 
               <?php endfor;?>
               <?php if(count($download)>0): ?>
