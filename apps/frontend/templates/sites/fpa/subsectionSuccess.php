@@ -41,13 +41,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                       ?>
                       <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[$i]->AssetFile->getFile(); ?>" title="<?php echo $download[$i]->AssetFile->getAsset();?>" target="_blank">
                         <i class="icon-file"></i> <?php echo $download[$i]->AssetFile->getAsset(); ?>
-                      </a><br>  
+                      </a>  
                       <?php
                     elseif($download[$i]->asset_type_id==2):
                       ?>
                       <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[$i]->AssetImage->getOriginalFile() ?>" target="_blank">
                         <i class="icon-file"></i> <?php echo $download[$i]->AssetImage->getAsset(); ?>
-                      </a><br>
+                      </a>
                       <?php
                     endif;
                   endfor;
