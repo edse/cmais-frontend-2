@@ -108,7 +108,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .tooltip-inner { background:#1863b7 !important; color:#fff;}
 .tooltip.in,
 .tooltip {opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
-.tooltip.bottom .tooltip-arrow {border-bottom-color: #1863b7;}
+.tooltip.bottom .tooltip-arrow {border-bottom-color: #1863b7 !important;}
 .container.licitacoes,
 .container.licitacoes-subsecoes{margin-top:30px;}
 .licitacoes .col-esquerda a{margin: 3px 0 5px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
