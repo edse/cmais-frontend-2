@@ -240,7 +240,7 @@
  
    }
    else{
-        $("#t4ref").parent().css("display","none");
+        $("#t4ref").css("display","none");
     $("#referencia").attr("value",ref);
    }
 
