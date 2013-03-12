@@ -160,7 +160,7 @@
           
 
           <!--DESTAQUE JOGUINHOS -->
-          <?php include_partial_from_folder('sites/quintaldacultura', 'global/novos-joguinhos-peixonauta') ?>
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/novosjoguinhospeixonauta') ?>
           <!--DESTAQUE JOGUINHOS -->
 
            
