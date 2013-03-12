@@ -105,7 +105,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
    -khtml-opacity: 0.7;/* Safari 1.x */
    opacity: 0.7; /* Navegadores Modernos*/ 
 }
-.tooltip-inner { background:#1863b7; color:#fff;}
+.tooltip-inner { background:#1863b7 !important; color:#fff;}
 .tooltip.in,
 .tooltip {opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
 .tooltip.bottom .tooltip-arrow {border-bottom-color: #1863b7;}
