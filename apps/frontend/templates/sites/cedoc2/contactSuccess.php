@@ -2,6 +2,10 @@
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
 
+<script language= "javascript"> 
+ref = 02514; 
+</script>   
+
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="conteudo">
@@ -111,7 +115,7 @@
         </div>
         <div class="linha t4">
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="<?php if(isset($_REQUEST["ref"])) echo $_REQUEST["ref"]; ?>" />
+          <input type="text" name="referencia" id="referencia" value= <script type="text/javascript"> document.write(ref); </script> />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
