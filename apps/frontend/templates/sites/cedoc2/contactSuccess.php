@@ -113,7 +113,7 @@
             <?php endif;?> 
           </select>
         </div>
-        <div class="linha t4">
+        <div class="linha t4"> 
           <label>referência de imagem</label>
           <input type="text" name="referencia" id="referencia" value="javascript: document.write(ref);" />
         </div>
