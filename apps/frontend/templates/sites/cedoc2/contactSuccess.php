@@ -1,9 +1,6 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section))?>
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
-<script>
-  var ref = getParameterByName('ref');
-</script>
 
 <script language="javascript">
 
@@ -16,7 +13,7 @@ function referencia() {
 //document.write(ref);
 alert("funconeeei");
 }
-</SCRIPT>
+</script>
   
 
 <div class="container" id="geral">
