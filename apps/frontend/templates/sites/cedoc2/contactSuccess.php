@@ -8,7 +8,8 @@
 <script language="javascript">
 
 function referencia() {
-document.write(ref);
+//document.write(ref);
+alert("funconeeei");
 }
 </SCRIPT>
   
@@ -122,7 +123,7 @@ document.write(ref);
         </div>
         <div class="linha t4"> 
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="javascript:referencia()" />
+          <input type="text" name="referencia" id="referencia" value="" onload="javascript:referencia()" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
