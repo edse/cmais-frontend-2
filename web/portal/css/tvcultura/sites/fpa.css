@@ -109,12 +109,13 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .container.licitacoes-subsecoes{margin-top:30px;}
 .licitacoes .col-esquerda a{margin: 3px 0 5px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
 .licitacoes .col-esquerda a:hover{color:#000; background: #f1f1f1;}
+.licitacoes .tooltip {background-color:#1863B7;}
 .licitacoes-subsecoes .col-esquerda p {margin-bottom: 6px;}
 .licitacoes-subsecoes .col-esquerda .item{*display:block;*overflow:hidden; overflow:hidden;background: #f8f8f8;margin: -5px 0 20px 0;padding: 5px 8px 5px 8px;border-radius: 8px;}
 .licitacoes-subsecoes .col-esquerda a{color:#2a578c; text-decoration:underline; margin: 10px 0; padding:0;} 
 .licitacoes-subsecoes .col-esquerda a.voltar{color: #333;text-decoration: none;font-size: 13px;text-transform:none}
 .licitacoes-subsecoes .accordion-group.item a{text-decoration:none;}
-.licitacoes-subsecoes .accordion-inner a{background: #ccc;padding: 5px;border-radius: 5px;margin: 5px 5px;color: #333; float:left;}
+.licitacoes-subsecoes .accordion-inner a{background: #ccc;padding: 5px;border-radius: 5px;margin: 5px 5px;color: #1863b7; float:left;}
 .licitacoes-subsecoes .pagination{clear: both;}
 .licitacoes-subsecoes .pagination ul>li>span{border:none; background:none;margin: 19px 0 0 0; font-size: 13px; font-weight: bold; text-transform: uppercase; color: #ccc;}
 .licitacoes-subsecoes .pagination ul>li>a{padding:9px;border:none;background:none;text-decoration:none; color: #333;}
