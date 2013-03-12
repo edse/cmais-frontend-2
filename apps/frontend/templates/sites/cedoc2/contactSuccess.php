@@ -236,7 +236,7 @@
    var ref = " ";
    ref = getParameterByName('ref');
    //alert(ref.charAt(0))
-   if(ref.charAt(0) = ""){
+   if(ref.charAt(0) == " "){
      alert("1")
    }
    else{
