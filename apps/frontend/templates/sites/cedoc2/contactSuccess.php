@@ -109,7 +109,7 @@
             <?php endif;?> 
           </select>
         </div>
-        <div class="linha t4"> 
+        <div class="linha t4" id="t4ref"> 
           <label>referência de imagem</label>
           <input type="text" name="referencia" id="referencia" value="" />
         </div>
@@ -240,7 +240,7 @@
  
    }
    else{
-        $("#referencia").parent().css("display","none");
+        $("#t4ref").parent().css("display","none");
     $("#referencia").attr("value",ref);
    }
 
