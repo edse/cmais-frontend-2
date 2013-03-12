@@ -8,7 +8,8 @@
 <script language="javascript">
 
 $(document).ready(function(){
-  alert("funcionei");
+ var ref = getParameterByName('ref');
+ alert(ref);
 })
 
 function referencia() {
