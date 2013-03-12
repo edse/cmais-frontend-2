@@ -235,7 +235,10 @@
   
 
    var ref = getParameterByName('ref');
+   alert($(ref).length)
    $("#referencia").attr("value",ref);
+   
+    
 
 
 </script>
