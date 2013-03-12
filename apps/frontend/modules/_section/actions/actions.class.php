@@ -1149,6 +1149,8 @@ class _sectionActions extends sfActions
           $sectionSlug = "imagem";
         elseif($this->section->Parent->getSlug() == "baixar")
           $sectionSlug = "baixar-content";
+       elseif($this->section->Parent->getSlug() == "jogos")
+          $sectionSlug = "jogosSubsection";
         else
           $sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
       }else{
