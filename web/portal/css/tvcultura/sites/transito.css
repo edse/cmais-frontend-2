@@ -41,7 +41,7 @@
 .box-transito .box-publicidade{
   margin-top:36px;
 }
-#barra-site .topo-programa .fundo-topo{position:absolute;top:-10px;right:0px;width:484px; height:145px;background: url(/portal/images/capaPrograma/transito/fundo-topo.png) no-repeat 0 0}
+#barra-site .topo-programa .fundo-topo{position:absolute;top:-10px;right:0px;width:484px; height:145px;background: url(/portal/images/capaPrograma/transito/fundo-topo.png) no-repeat 0 0;z-index: 1}
 #barra-site .redes {width: 470px !important;}
 #barra-site .topo-programa {
     min-height: 100px !important;
@@ -51,6 +51,8 @@
 #barra-site .redes {
     float: right !important;
     margin: 0 0 0 30px !important;
+    z-index: 2;
+    position: relative;
 } 
 
 #barra-site #horario {
