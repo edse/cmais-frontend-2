@@ -23,7 +23,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           </a>
           <hr class="tipo"/>
           <!--vagas relacionadas-->
-            <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==1){echo "in";}else{echo "on";};  ?>">
+            <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
               <!--emprego aberto-->
               <div class="accordion-group">
