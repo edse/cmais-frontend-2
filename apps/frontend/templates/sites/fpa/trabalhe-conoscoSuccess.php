@@ -9,12 +9,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span6">
       <!--texto-->
-      <h1>Trabalhe Conosco</h1>
-      <p>A Fundação Padre Anchieta - Centro Paulista de Rádio e Televisão Educativas
-      está aberta a quem considera a cultura como fator primordial à formação e desenvolvimento
-      do cidadão e que esteja em busca de uma colocação profissional.</p>
-      <p>Sempre que houver oportunidades de trabalho divulgaremos abaixo
-      as informações sobre os Processos Seletivos</p>
+      <h1><?php echo $section->getTitle();?></h1>
+      <p><?php echo html_entity_decode($diplays['destaque-principal']->AssetContent->render()) ?></p>
      <!--/texto-->
      <!--descricao vagas-->
      <div class="accordion" id="accordion2">
