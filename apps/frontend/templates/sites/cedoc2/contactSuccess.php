@@ -120,7 +120,7 @@ $(document).ready(function(){
         </div>
         <div class="linha t4"> 
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="" onload="javascript:referencia()" />
+          <input type="text" name="referencia" id="referencia" value="" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
