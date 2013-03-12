@@ -237,9 +237,10 @@
    ref = getParameterByName('ref');
    //alert(ref.charAt(0))
    if(ref.charAt(0) == " "){
-    $("#referencia").parent().css("display","none");
+ 
    }
    else{
+        $("#referencia").parent().css("display","none");
     $("#referencia").attr("value",ref);
    }
 
