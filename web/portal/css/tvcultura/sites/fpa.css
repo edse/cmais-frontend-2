@@ -113,6 +113,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .licitacoes-subsecoes .col-esquerda a{color:#2a578c; text-decoration:underline; margin: 10px 0; padding:0;} 
 .licitacoes-subsecoes .col-esquerda a.voltar{color: #333;text-decoration: none;font-size: 13px;text-transform:none}
 .licitacoes-subsecoes .accordion-group.item a{text-decoration:none;}
+.licitacoes-subsecoes .accordion-inner a{background: #ccc;padding: 5px;border-radius: 5px;margin: 5px 0px;color: #333;}
 .licitacoes-subsecoes .pagination{clear: both;}
 .licitacoes-subsecoes .pagination ul>li>span{border:none; background:none;margin: 19px 0 0 0; font-size: 13px; font-weight: bold; text-transform: uppercase; color: #ccc;}
 .licitacoes-subsecoes .pagination ul>li>a{padding:9px;border:none;background:none;text-decoration:none; color: #333;}
