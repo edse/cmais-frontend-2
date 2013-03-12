@@ -77,7 +77,7 @@ function isDevice(OSName)
         </div>
 
         <!-- box-topo -->
-        <div class="box-topo grid3" style="z-index: 2">
+        <div class="box-topo grid3" style="z-index: 3">
 
           <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
