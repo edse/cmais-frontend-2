@@ -6,15 +6,10 @@
 
 $(document).ready(function(){
  var ref = getParameterByName('ref');
- alert(ref);
+ $("#referencia").attr("value",ref);
 })
 
-function referencia() {
-//document.write(ref);
-alert("funconeeei");
-}
 </script>
-  
 
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
