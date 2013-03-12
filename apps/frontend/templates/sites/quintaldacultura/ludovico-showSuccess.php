@@ -317,9 +317,10 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
             </div>  
             <!--/LUDOVICO PALCO-->
             
-          <!--QUINTAL NOVOS JOGUINHOS DO PEIXONAUTA-->
-          <?php  include_partial_from_folder('sites/quintaldacultura', 'global/novos-joguinhos-peixonauta') ?>
-          <!--/QUINTAL NOVOS JOGUINHOS DO PEIXONAUTA-->
+            <!--DESTAQUE JOGUINHOS -->
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos') ?>
+            <!--DESTAQUE JOGUINHOS -->
+            
           </div>
           <!--CONTEUDO WRAPPER-->
           
