@@ -37,10 +37,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                if(count($download)>0):
                  if(isset($download)): 
                   for($i=0; $i<count($download); $i++):
-                    if(isset($download[$i]->AssetFile)):
+                    if(isset($download[$i]->asset_type_id)):
                       ?>
                       <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[$i]->AssetFile->getFile(); ?>" title="<?php echo $download[$i]->AssetFile->getAsset();?>" target="_blank">
-                        <?php echo $download[$i]->AssetFile->getAsset(); ?>
+                        <?php //echo $download[$i]->AssetFile->getAsset(); ?>
+                        <?php echo $download[$i]->asset_type_id; ?>
                       </a>  
                       <?php
                     endif;
