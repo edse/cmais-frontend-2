@@ -109,7 +109,7 @@
             <?php endif;?> 
           </select>
         </div>
-        <div class="linha t4"> 
+        <div class="linha t4" id="t4ref"> 
           <label>referência de imagem</label>
           <input type="text" name="referencia" id="referencia" value="" />
         </div>
@@ -221,7 +221,7 @@
         label.html("&nbsp;").addClass("checked");
       }
     });
-  });
+  }); 
   // Contador de Caracters
   function limitText(limitField, limitNum, textCounter) {
     if(limitField.value.length > limitNum)
@@ -233,9 +233,15 @@
 
 <script language="javascript">
   
-
-   var ref = getParameterByName('ref');
+   var ref = "-";
+   ref = getParameterByName('ref');
+   //alert(ref.charAt(0))
+   if(ref == "-"){
+   $("#t4ref").css("display","none");
+   }
+   else{
    $("#referencia").attr("value",ref);
+   }
 
 
 </script>
