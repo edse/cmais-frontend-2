@@ -7,6 +7,10 @@
 
 <script language="javascript">
 
+$(document).ready(function(){
+  alert("funcionei");
+})
+
 function referencia() {
 //document.write(ref);
 alert("funconeeei");
