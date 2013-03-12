@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
+    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultura/bg-jc.jpg) repeat-x; color:#000; }
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 970px; }
+.nav-tabs > li > a,
+.hero-unit .fechar,
+.hero-unit  {  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
+
+.nav-tabs > li > a,
+.accordion-heading .accordion-toggle,
+.conteudo h2,
+.hero-unit .col-esq p,
+.hero-unit .fechar { font-family: 'source_sans_proregular'; }
+
+.hero-unit { padding:0; margin:0; background:#eee; height:200px; overflow:hidden; padding-right: 10px;}
+.hero-unit .bgtopo { width: 260px; height:200px; background:url(/portal/images/capaPrograma/segundatela/jornaldacultura/bg-topo-jc.jpg) no-repeat; float:left; margin-right:10px; }
+.hero-unit .col-esq { min-width: 30%; float:left; }
+.hero-unit .col-esq h1 { margin:30px 0 0 0; padding:0; text-indent:-9999px; background:url(/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc.png) no-repeat; width: 176px; height:71px;}
+.hero-unit .col-esq p {  font-size:14px; line-height: 18px; text-align: left; margin:20px 0 10px 0;  }
+.hero-unit .redes { text-align:left; }
+.hero-unit .col-dir {  float:right; width: 40%; }
+.hero-unit .fechar { background:#666; text-transform:uppercase; color:#fff; margin-top:20px; border:none; text-shadow:none; padding:0 5px; font-weight:bold; float:right;   }
+.hero-unit .menu-jc {clear: both; margin-top:60px; float: right;  }
+.hero-unit .menu-jc a { text-transform:uppercase; color:#666; font-weight:bold; float:left; }
+.hero-unit .menu-jc a:hover { text-decoration:none; }
+.hero-unit .menu-jc .como { background:#fff; padding:0 5px;}
+.hero-unit .menu-jc .como:hover { background:#666; color:#fff; }
+.hero-unit .menu-jc span { margin:0 10px; float:left; color:#c4c4c4; font-size: 18px; margin-top:-2px; }
+.hero-unit .menu-jc .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; }
+.hero-unit .menu-jc .seta { border:5px solid transparent;  border-left-color: #666; width: 0; height:0; margin:0; padding:0; display:block; float:left; margin-top:5px; }
+
+.conteudo h2 { font-size:24px; color:#666; text-transform:uppercase; }
+.accordion-heading .accordion-toggle { background:#666; color:#fff; font-size:18px; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dashed #fff; }
+.accordion-heading .accordion-toggle:hover,
+.accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none; }
+.accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
+.accordion-inner img { max-width: 140px; float:left;  margin-right:10px;}
+.accordion-inner a { color:#000; text-decoration:underline; }
+
+.nav-tabs > li { margin-bottom:0; }
+.nav-tabs { background:#666; border:none; border-left: 1px dashed #fff;  }
+.nav-tabs > li { border-right: 1px dashed #fff; }
+.nav-tabs > li > a { font-weight:bold; text-transform:uppercase;color:#fff; background:#666;border:none; padding:0 20px; height:30px; line-height: 30px; margin:0; }
+.nav-tabs > li:hover > a,
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {  background:#333; color:#fff; border:none; }

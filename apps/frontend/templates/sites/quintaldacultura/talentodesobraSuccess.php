@@ -316,9 +316,9 @@ if($imgs)
             </div>  
             <!--/talentodesobra PALCO-->
             
-            <!--QUINTAL PERGUNTE FILOMENA-->
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') ?>
-            <!--/QUINTAL PERGUNTE-->
+            <!--QUINTAL NOVOS JOGUINHOS DO PEIXONAUTA-->
+            <?php  include_partial_from_folder('sites/quintaldacultura', 'global/novos-joguinhos-peixonauta') ?>
+            <!--/QUINTAL NOVOS JOGUINHOS DO PEIXONAUTA-->
           </div>
           <!--CONTEUDO WRAPPER-->
           
