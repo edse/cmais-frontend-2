@@ -46,7 +46,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                     elseif($download[$i]->asset_type_id==2):
                       ?>
                       <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[$i]->AssetImage->getOriginalFile() ?>" target="_blank">
-                        <i class="icon-file"></i> <?php echo $download[$i]->AssetImage->getAsset(); ?>
+                        <i class="icon-file icon-white"></i> <?php echo $download[$i]->AssetImage->getAsset(); ?>
                       </a>
                       <?php
                     endif;
