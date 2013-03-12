@@ -16,24 +16,24 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <div class="accordion" id="accordion2">
       <!--tipo da vaga-->
       <div class="accordion-group">
-        <?php foreach($section->subsections() as $s):?> 
+        <?php foreach($section->subsections() as $k=>$s):?> 
         <div class="accordion-heading">
-          <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
+          <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
             <?php echo $s->getTitle(); ?>
           </a>
           <hr class="tipo"/>
           <!--vagas relacionadas-->
-            <div id="emprego1" class="accordion-body collapse in">
+            <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==1){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga1">
+                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k?>">
                     <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
                   </a>
                 </div>
                 <hr class="vaga"/>
-                <div id="vaga1" class="accordion-body collapse vagas-exi">
+                <div id="vaga<?php echo $k?>" class="accordion-body collapse vagas-exi">
                   <div class="accordion-inner">
                     <!--descriçao vaga-->
                     <ul>
