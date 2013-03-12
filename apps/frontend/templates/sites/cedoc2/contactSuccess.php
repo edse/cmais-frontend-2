@@ -221,7 +221,7 @@
         label.html("&nbsp;").addClass("checked");
       }
     });
-  });
+  }); 
   // Contador de Caracters
   function limitText(limitField, limitNum, textCounter) {
     if(limitField.value.length > limitNum)
