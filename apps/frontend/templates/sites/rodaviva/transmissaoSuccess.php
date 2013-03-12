@@ -52,7 +52,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/frontend_dev.php/ajax/broadcastend'
+      url: '/ajax/broadcastend'
     });
   }
   
