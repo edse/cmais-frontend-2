@@ -201,4 +201,3 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
 </div>
 <!--CONTAINER-->
-<?php include_partial_from_folder('blocks', 'global/footer') ?>
