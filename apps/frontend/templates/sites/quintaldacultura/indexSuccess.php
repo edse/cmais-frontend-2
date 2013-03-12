@@ -179,7 +179,7 @@
 
       <!--FOOTER QUINTAL-->
 
-      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
+      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
 
       <!--/FOOTER QUINTAL-->
 
