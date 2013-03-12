@@ -14,6 +14,24 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <!--/texto-->
      <!--descricao vagas-->
      <div class="accordion" id="accordion2">
+      <!--tipo da vaga-->
+      <div class="accordion-group">
+        <?php foreach($section->subsections() as $s):?> 
+        <div class="accordion-heading">
+          <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
+            <?php echo $s->getTitle(); ?>
+          </a>
+          <hr class="tipo"/>
+        </div>
+        <?php endforeach; ?>
+      </div>
+      <!--/tipo da vaga-->
+     </div>
+     <!--/descricao vagas-->
+     <?php
+     /*
+     <!--descricao vagas-->
+     <div class="accordion" id="accordion2">
         <!--tipo da vaga-->
         <div class="accordion-group">
           <div class="accordion-heading">
@@ -175,6 +193,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
        <!--/tipo da vaga-->
       </div>
       <!--/descricao vagas-->
+    -->
+      * 
+      */
+      ?>
     </div>
     <!-- /ESQUERDA-->
     <!--DIREITA-->
