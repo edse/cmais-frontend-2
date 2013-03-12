@@ -9,8 +9,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span6">
       <!--texto-->
-      <h1><?php echo $section->getTitle();?></h1>
-      <p><?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?></p>
+     <h1><?php echo $section->getTitle();?></h1>
+     <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
      <!--/texto-->
      <!--descricao vagas-->
      <div class="accordion" id="accordion2">
