@@ -243,8 +243,5 @@
    $("#referencia").attr("value",ref);
    }
 
-   
-    
-
 
 </script>
