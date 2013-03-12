@@ -1,14 +1,3 @@
-<?php
-/*
-header("Location: http://tvcultura.cmais.com.br/metropolis");
-die();
-
-if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
-  header('Location: http://tvcultura.cmais.com.br/metropolis/bastidores');
-  die();
-}
- */
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
@@ -33,6 +22,7 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
 <script>
 
   //TIMER TRANSMISSAO
+  /*
   function timer1(){
     var request = $.ajax({
       data: {
@@ -49,6 +39,22 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
   $(window).load(function(){
     var t=setInterval("timer1()",60000);
   });
+  */
+ 
+  function broadcastEnd(){
+    var request = $.ajax({
+      data: {
+        channel_id: <?php echo $site->Program->Channel->id ?>,
+        program_id: <?php echo $site->Program->id ?>,
+        url_out: '<?php echo $site->retriveUrl() ?>'
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        eval(data);
+      },
+      url: '/ajax/broadcastend'
+    });
+  }
 
   function stream1() {
     var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
@@ -133,6 +139,8 @@ if((date('H:i:s') < '22:00:00') && (date('w') == 1))  {
     else
       stream1();
 
+    broadcastEnd();
+    var t2=setInterval("broadcastEnd()", 60000);
   });
 </script>
 
