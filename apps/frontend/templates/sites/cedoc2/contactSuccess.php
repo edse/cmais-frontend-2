@@ -1,10 +1,10 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section))?>
 
 <script type="text/javascript" src="/portal/js/portal.js"></script>
-
-<script language= "javascript"> 
-ref = 02514; 
-</script>   
+<script>
+  var ref = getParameterByName('ref');
+</script>
+  
 
 <div class="container" id="geral">
   <!-- Main hero unit for a primary marketing message or call to action -->
@@ -76,7 +76,7 @@ ref = 02514;
             <option value="Bahia">BA</option>
             <option value="Cear&aacute;">CE</option>
             <option value="Distrito Federal">DF</option>
-            <option value="Espirito Santo">ES</option>
+            <option valvar error = getParameterByName('error');ue="Espirito Santo">ES</option>
             <option value="Goi&aacute;s">GO</option>
             <option value="Maranh&atilde;o">MA</option>
             <option value="Minas Gerais">MG</option>
@@ -110,12 +110,12 @@ ref = 02514;
             <option value="Pedido de Informação">Pedido de Informação</option>
             <?php if(in_array($site->getSlug(), array('jornaldacultura','jornaldacultura','reportereco'))):           ?>
             <option value="Compra de DVD">Compra de DVD</option>
-            <?php endif;?>
+            <?php endif;?> 
           </select>
         </div>
         <div class="linha t4">
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value="<script type="text/javascript"> document.write(ref); </script>" />
+          <input type="text" name="referencia" id="referencia" value="javascript: document.write(ref);" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
