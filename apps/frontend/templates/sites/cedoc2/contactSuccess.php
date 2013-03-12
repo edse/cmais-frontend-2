@@ -237,11 +237,10 @@
    ref = getParameterByName('ref');
    //alert(ref.charAt(0))
    if(ref.charAt(0) == " "){
- 
+   $("#t4ref").css("display","none");
    }
    else{
-        $("#t4ref").css("display","none");
-    $("#referencia").attr("value",ref);
+   $("#referencia").attr("value",ref);
    }
 
    
