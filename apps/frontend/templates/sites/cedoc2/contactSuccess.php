@@ -115,7 +115,7 @@ ref = 02514;
         </div>
         <div class="linha t4">
           <label>referência de imagem</label>
-          <input type="text" name="referencia" id="referencia" value= <script type="text/javascript"> document.write(ref); </script> />
+          <input type="text" name="referencia" id="referencia" value="<script type="text/javascript"> document.write(ref); </script>" />
         </div>
         <div class="linha t3">
           <label>mensagem</label>
