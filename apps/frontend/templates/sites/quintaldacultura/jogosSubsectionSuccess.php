@@ -72,8 +72,11 @@
                 <p class="titulo"><span class="ico-voltar"></span><?php echo $section->getTitle()?></p>
             </div>
             <div class="listao">
-
+            <?php if($section->slug == "joguinhosdopeixonauta"): ?>
+            <p>Um dos desenhos preferidos da criançada acaba de chegar na tela do seu computador! São 14 novos joguinhos divertidos e educativos com o peixe agente secreto que, ao lado de seus melhores amigos, Marina e Zico, desvenda mistérios ecológicos. O que você está esperando para clicar no primeiro jogo? É diversão garantida!</p>
+            <?php else: ?>
             <p><?php echo $section->getDescription()?></p>
+            <?php endif; ?>
               
             <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
