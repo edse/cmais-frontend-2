@@ -15,9 +15,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <!--descricao vagas-->
      <div class="accordion" id="accordion2">
       <!--tipo da vaga-->
-      <div class="accordion-group">
-        <?php foreach($section->subsections() as $k=>$s):?>
-          <?php if(count($s->getAssets())>0):?>
+      <?php foreach($section->subsections() as $k=>$s):?>
+        <?php if(count($s->getAssets())>0):?>
+          <div class="accordion-group">
             <span class="tipo-de-emprego">
               Não há vagas no momento.
             </span>
@@ -113,9 +113,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!--/vagas relacionadas-->
-          
-          <?php endif; ?>
           </div>
+          <?php endif; ?>
         <?php endforeach; ?>
       </div>
       <!--/tipo da vaga-->
