@@ -73,7 +73,7 @@
     <div class="span12">
       <div class="interna">
         <form class="form-horizontal">
-          <h2>Envie sua receitinha de verão:</h2>
+          <h2>Envie sua receitinha:</h2>
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
             <div class="controls">
