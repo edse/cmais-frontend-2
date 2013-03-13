@@ -1,4 +1,4 @@
-            <form class="form-search pull-right" action="/cedoc2/busca.php">
+            <form class="form-search pull-right" action="/cedoc2/busca/">
               <div class="input-append">
                 <input type="hidden" name="output" value="search">
                 <button type="submit" class="btn"><i class="icon-search"></i></button>
