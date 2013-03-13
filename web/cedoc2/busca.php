@@ -190,7 +190,7 @@
       <div class="conteudo">
         <ul class="menu">
           <li class="cedoc"><h3><a href="/cedoc2" title="Cedoc">Cedoc</a></h3></li>
-          <li class="ativo"><span></span><a href="/cedoc2/quem-somos" title="Quem Somos">quem somos</a></li>
+          <li><span></span><a href="/cedoc2/quem-somos" title="Quem Somos">quem somos</a></li>
           <li><span></span><a href="/cedoc2/acervo" title="Acerto">acervo</a></li>
           <li><span></span><a href="/cedoc2/contato" title="Contato">contato</a></li>
           <li>
