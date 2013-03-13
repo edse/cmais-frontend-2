@@ -17,7 +17,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--tipo da vaga-->
       <div class="accordion-group">
         <?php foreach($section->subsections() as $k=>$s):?>
-          <?php if(count($s->getAssets())>0):?> 
+          <?php if(count($s->getAssets())>0):?>
+            <span class="tipo-de-emprego">
+              Não há vagas no momento.
+            </span>
+          <?php else: ?>
           <div class="accordion-heading">
             <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
               <?php echo $s->getTitle(); ?>
