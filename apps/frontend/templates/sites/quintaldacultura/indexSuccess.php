@@ -160,7 +160,7 @@
           
 
           <!--DESTAQUE JOGUINHOS -->
-          <?php include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos') ?>
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/novosjoguinhospeixonauta') ?>
           <!--DESTAQUE JOGUINHOS -->
 
            
@@ -179,7 +179,7 @@
 
       <!--FOOTER QUINTAL-->
 
-      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
+      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
 
       <!--/FOOTER QUINTAL-->
 
