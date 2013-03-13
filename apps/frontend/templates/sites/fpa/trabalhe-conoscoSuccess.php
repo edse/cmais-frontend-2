@@ -13,7 +13,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
      <!--/texto-->
      <!--descricao vagas-->
-     <div class="accordion" id="accordion2">
+     <div class="accordion trabalhe-conosco" id="accordion2">
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
@@ -119,7 +119,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
             <div class="accordion-heading">
-            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+            <a class="" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
