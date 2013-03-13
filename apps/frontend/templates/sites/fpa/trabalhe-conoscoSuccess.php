@@ -16,19 +16,21 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <div class="accordion" id="accordion2">
       <!--tipo da vaga-->
       <div class="accordion-group">
-        <?php foreach($section->subsections() as $k=>$s):?> 
-        <div class="accordion-heading">
-          <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
-            <?php echo $s->getTitle(); ?>
-          </a>
-          <hr class="tipo"/>
+        <?php foreach($section->subsections() as $k=>$s):?>
+          <?php if(count($s->getAssets())>0):?> 
+          <div class="accordion-heading">
+            <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+              <?php echo $s->getTitle(); ?>
+            </a>
+            <hr class="tipo"/>
+          </div>  
           <!--vagas relacionadas-->
             <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k?>">
+                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k?>" title="<?php echo count($s->getAssets()); ?>">
                     <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
                   </a>
                 </div>
@@ -107,6 +109,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!--/vagas relacionadas-->
+            <?php endif; ?>
         </div>
         <?php endforeach; ?>
       </div>
