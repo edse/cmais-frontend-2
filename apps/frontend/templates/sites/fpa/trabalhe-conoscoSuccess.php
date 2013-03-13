@@ -7,13 +7,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
-    <div class="col-esquerda span6">
+    <div class="col-esquerda span7">
       <!--texto-->
      <h1><?php echo $section->getTitle();?></h1>
      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
      <!--/texto-->
      <!--descricao vagas-->
-     <div class="accordion" id="accordion2">
+     <div class="accordion trabalhe-conosco" id="accordion2">
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
@@ -23,7 +23,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </span>
           <?php else: ?>
           <div class="accordion-heading">
-            <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
@@ -118,34 +118,18 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/tipo da vaga-->
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
-            <div class="accordion-heading">
-            <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+            <div class="accordion-heading trabalhe-conosco">
+            <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+              <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
           </div>  
           <!--vagas relacionadas-->
-            <div id="emprego<?php echo $k?>" class="accordion-body collapse in">
-              <div class="accordion" id="vagas-relacionadas">
-              <!--emprego aberto-->
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k?>" title="<?php echo count($s->getAssets()); ?>">
-                    <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
-                  </a>
-                </div>
-                <hr class="vaga"/>
-                <div id="vaga<?php echo $k?>" class="accordion-body collapse vagas-exi">
-                  <div class="accordion-inner">
-                     
-                  </div>
-                </div>
-              </div>
-              <!--/emprego aberto-->  
-              </div>
-              <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
-            </div>
-            <!--/vagas relacionadas-->
+          <div id="emprego<?php echo $k?>" class="accordion-body collapse in">
+            <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+          </div>
+          <!--/vagas relacionadas-->
           <?php endif;?>
         <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
@@ -154,7 +138,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     </div>
     <!-- /ESQUERDA-->
     <!--DIREITA-->
-    <div class="col-direita span5">
+    <div class="col-direita span4">
       <!--CONFIRA-->  
       <a href="/fpa/resultados" class="trabalhe btn btn-primary" title="Confira aqui nossas vagas e prazos.">
         <p>Processos seletivos anteriores</p>
