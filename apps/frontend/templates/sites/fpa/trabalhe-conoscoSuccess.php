@@ -21,7 +21,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
-          <?php else: ?>
+          <?php elseif($s->id!=2287): ?>
           <div class="accordion-heading">
             <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <?php echo $s->getTitle(); ?>
