@@ -18,7 +18,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php foreach($section->subsections() as $s): ?>
             <?php if(count($s->getAssets())>0):?>
               <li>
-                <a href="<?php if(count($s->getAssets())<=0){echo "#";}else{echo $s->retriveUrl();} ?>" class="btn-cat"title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>1){echo " itens";}else{ echo " item";} ?>">
+                <a href="<?php if(count($s->getAssets())<=0){echo "#";}else{echo $s->retriveUrl();} ?>" class="btn-cat" title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>1){echo " itens";}else{ echo " item";} ?>">
                   <i class="icon-chevron-right"></i>
                   <?php echo $s->getTitle() ?>
                   <!--<span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>-->  
