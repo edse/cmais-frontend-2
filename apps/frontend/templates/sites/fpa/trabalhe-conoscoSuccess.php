@@ -120,6 +120,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php if($s->id==2287): ?>
             <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+              <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
