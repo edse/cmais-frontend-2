@@ -219,7 +219,7 @@
             <!--DESTAQUE JOGUINHOS -->
             <?php //include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos') ?>
             <!--DESTAQUE JOGUINHOS -->
-
+ 
           </div>
             
           </div>
