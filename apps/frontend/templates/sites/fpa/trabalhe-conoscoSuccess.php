@@ -7,7 +7,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
-    <div class="col-esquerda span6">
+    <div class="col-esquerda span7">
       <!--texto-->
      <h1><?php echo $section->getTitle();?></h1>
      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
@@ -137,7 +137,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     </div>
     <!-- /ESQUERDA-->
     <!--DIREITA-->
-    <div class="col-direita span5">
+    <div class="col-direita span4">
       <!--CONFIRA-->  
       <a href="/fpa/resultados" class="trabalhe btn btn-primary" title="Confira aqui nossas vagas e prazos.">
         <p>Processos seletivos anteriores</p>
