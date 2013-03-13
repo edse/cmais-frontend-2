@@ -113,8 +113,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!--/vagas relacionadas-->
-          </div>
+          
           <?php endif; ?>
+          </div>
         <?php endforeach; ?>
       </div>
       <!--/tipo da vaga-->
