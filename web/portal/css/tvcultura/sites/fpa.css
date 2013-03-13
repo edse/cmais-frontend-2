@@ -132,6 +132,8 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 /* /LICITACOES */
 
 /* TRABALHE-CONOSCO */
+.col-esquerda a{margin: 3px 0 5px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
+.col-esquerda a:hover{color:#000; background: #f1f1f1;}
 .col-esquerda .accordion-group,
 .accordion-inner{border:none;}
 .accordion-inner{padding-bottom:0px;}
