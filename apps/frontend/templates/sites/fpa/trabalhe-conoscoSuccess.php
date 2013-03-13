@@ -17,7 +17,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
-          <?php if(count($s->getAssets())<=0):?>
+          <?php if(count($s->getAssets())<=0 && $s->id!=2287):?>
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
