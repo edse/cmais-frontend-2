@@ -11,15 +11,8 @@
       <li><span></span><a href="/cedoc/resultado-busca" title="Acervo">acervo</a></li>
       <li class="ativo"><span></span><a href="/cedoc/contato" title="Contato">contato</a></li>
       <li>
-      <form class="form-search pull-right" action="busca.php">
-        <div class="input-append">
-          <input type="hidden" name="output" value="search">
-          <button type="submit" class="btn">
-            <i class="icon-search"></i>
-          </button>
-          <input type="text" name="q" class="search-query input-medium" value="buscar imagens" placeholder="buscar imagens" onfocus="this.value='';">
-        </div>
-      </form></li>
+        <?php include_partial_from_folder('sites/cedoc2', 'global/formBusca') ?>
+      </li>
     </ul>
     <div class="span8 row-fluid contato">
       <h2>Contato</h2>
@@ -237,10 +230,10 @@
    ref1 = getParameterByName('ref');
    //alert(ref.charAt(0))
    if(ref1 == ""){
-   $("#t4ref").css("display","none");
+    $("#t4ref").css("display","none");
    }
    else{
-   $("#referencia").attr("value",ref1);
+    $("#referencia").attr("value",ref1);
    }
 
 
