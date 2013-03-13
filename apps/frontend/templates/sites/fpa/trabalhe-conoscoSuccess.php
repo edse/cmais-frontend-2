@@ -17,13 +17,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
-          <?php if(count($s->getAssets())<=0):?>
+          <?php if(count($s->getAssets())<=0 && $s->id!=2287):?>
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
-          <?php else: ?>
+          <?php elseif($s->id!=2287): ?>
           <div class="accordion-heading">
-            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
@@ -119,7 +119,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
             <div class="accordion-heading trabalhe-conosco">
-            <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>">
+            <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
             </a>
@@ -139,12 +139,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!-- /ESQUERDA-->
     <!--DIREITA-->
     <div class="col-direita span4">
-      <!--CONFIRA-->  
-      <a href="/fpa/resultados" class="trabalhe btn btn-primary" title="Confira aqui nossas vagas e prazos.">
-        <p>Processos seletivos anteriores</p>
-        <p>Confira os Resultados</p>
-      </a>
-      <!--/CONFIRA-->
       <!--CONFIRA-->  
       <a href="http://www2.tvcultura.com.br/selecao/vagas/FPAREPRSE001.pdf" class="trabalhe btn btn-primary" target="_blank" title="Confira aqui nossas vagas e prazos.">
         <p>Regulamento Interno de Processo Seletivo</p>
