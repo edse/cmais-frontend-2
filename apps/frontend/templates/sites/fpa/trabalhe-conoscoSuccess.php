@@ -145,10 +145,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!--/vagas relacionadas-->
+            <!--descriçao vaga-->
+            <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+            <!--/descriçao vaga-->
           <?php endif;?>
-          <!--descriçao vaga-->
-          <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
-          <!--/descriçao vaga-->
         <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
      </div>
