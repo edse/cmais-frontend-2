@@ -678,7 +678,7 @@ class _assetActions extends sfActions
       $this->setLayout('cocorico');
       
       if($request->getParameter("teste")) {
-        die($request->getParameter("param3"));
+        die($request->getParameter("param2"));
       }
       if($this->section->slug == "joguinhos") {
         if ($debug) print "<br>cocorico-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho';
