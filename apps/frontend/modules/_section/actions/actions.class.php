@@ -76,6 +76,17 @@ class _sectionActions extends sfActions
           die();
         }
         */
+       
+        if($this->section->getSlug() == "receitinhas" && $request->getParameter('test')){
+          $subsections = $this->section->subsections();
+          
+          foreach($subsections as $s){
+            if($s->isActive()){
+              header("Location: ".$s->retriveUrl());
+              die();
+            }
+          }
+        }
       }
       
       if(in_array($this->section->Site->getSlug(), array("cedoc","cedoc2"))) {
@@ -119,7 +130,7 @@ class _sectionActions extends sfActions
         if (date('w H:i') > "1 22:00" && date('w H:i') < "1 23:35") {
           if ($this->section->getSlug() == "home") {
             header("Location: http://tvcultura.cmais.com.br/rodaviva/transmissao");
-            die();
+            die(); //aí tem gato.
           }
         }
         else {
@@ -152,6 +163,7 @@ class _sectionActions extends sfActions
                   ->limit(80)
                   ->execute();
               }
+             
               else{
                 $this->schedules = Doctrine_Query::create()
                   ->select('s.*')
