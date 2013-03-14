@@ -77,7 +77,7 @@ class _sectionActions extends sfActions
         }
         */
        
-        if($this->section->getSlug() == "receitinhas"){
+        if($this->section->getSlug() == "receitinhas" && $request->getParameter('teste')){
           $subsections = $this->section->subsections();
           
           if(count($subsections) > 0){
@@ -1566,6 +1566,10 @@ class _sectionActions extends sfActions
           if ($this->section->Parent->slug == "concurso-cultural") {
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
+          }
+          if ($this->section->Parent->slug == "receitinhas") {
+            if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais');
           }
           else {
             if($debug) print "<br>8-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
