@@ -681,7 +681,7 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho');
       }
       elseif($this->section->slug == "receitinhas") {
-        if($request->getParameter("teste") == 1) {
+        if($request->getParameter("teste") == "1") {
           die($this->section->slug);
         }
         
