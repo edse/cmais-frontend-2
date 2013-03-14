@@ -77,14 +77,12 @@ class _sectionActions extends sfActions
         }
         */
        
-        if($this->section->getSlug() == "receitinhas"){
+        if($this->section->getSlug() == "receitinhas" && $request->getParameter('teste')){
           $subsections = $this->section->subsections();
           
-          foreach($subsections as $s){
-            if($s->isActive()){
-              header("Location: ".$s->retriveUrl());
-              die();
-            }
+          if(count($subsections) > 0){
+            header("Location: ".$subsections[0]->retriveUrl());
+            die();
           }
         }
       }
