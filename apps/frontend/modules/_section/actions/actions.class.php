@@ -77,7 +77,7 @@ class _sectionActions extends sfActions
         }
         */
        
-        if($this->section->getSlug() == "receitinhas" && $request->getParameter('teste')){
+        if($this->section->getSlug() == "receitinhas"){
           $subsections = $this->section->subsections();
           
           if(count($subsections) > 0){
