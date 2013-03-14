@@ -676,6 +676,7 @@ class _assetActions extends sfActions
     }
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
+      
       if($request->getParameter("teste")) {
         if($request->getParameter("param2") == "receitinhas") {
           die($request->getParameter("param4"));
