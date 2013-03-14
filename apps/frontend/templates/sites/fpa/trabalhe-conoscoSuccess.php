@@ -118,10 +118,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/tipo da vaga-->
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
+            <hr class="linha">
             <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
+              <?php echo html_entity_decode($s->AssetContent->render()); ?>
             </a>
             <hr class="tipo"/>
           </div>  
