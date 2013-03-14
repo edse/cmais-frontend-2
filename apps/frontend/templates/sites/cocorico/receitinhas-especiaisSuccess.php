@@ -36,15 +36,13 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <div class="zaza"><a href="<?php echo $site->retriveUrl() ?>/cozinha-da-zaza">zaza</a></div>
   
   <!--row-->
-  <?php if(isset($displays['receitinhas-especiais'])):?>
-    <?php if(count($displays['receitinhas-especiais']) > 0): ?>
   
   <div class="row-fluid conteudo destaques especial">
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
-        <h2><?php echo $displays['receitinhas-especiais'][0]->Block->getTitle() ?></h2>
-        <p><?php echo $displays['receitinhas-especiais'][0]->Block->getDescription() ?></p>
+        <h2><?php echo $section->getTitle(); ?></h2>
+        <p><?php echo $section->getDescription(); ?></p>
         <div class="divisao"></div>
         <form class="form-horizontal">
           <h2>Envie sua receitinha:</h2>
@@ -104,8 +102,6 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       </div>
     </div>
    
-    <?php endif; ?>
-      <?php endif; ?>
 
     <?php if(count($pager) > 0): ?>
     <div class="span8">
