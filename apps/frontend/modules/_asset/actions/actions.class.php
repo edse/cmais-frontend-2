@@ -681,11 +681,19 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho');
       }
       elseif($this->section->slug == "receitinhas") {
-        if($request->getParameter("teste") == "1") {
-          die($this->section->slug);
+        $subsections = $this->section->subsections();
+        foreach($subsections as $s) {
+          if($s->getIsActive()) {
+            if ($debug) print "<br>cocorico-2-a >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial');
+            break;
+          }
+          else {
+            if ($debug) print "<br>cocorico-2-b >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
+          }
         }
-        
-        if ($debug) print "<br>cocorico-2-b >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
+        if ($debug) print "<br>cocorico-2-a >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
       }
       elseif($this->section->slug == "tour-virtual") {
