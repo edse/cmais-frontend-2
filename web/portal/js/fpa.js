@@ -64,6 +64,9 @@ $(document).ready(function(){
         scrollTop: $('#'+$(this).attr('id')).offset().top
       }, "slow");
   });
+  $('.trabalhe-conosco .btn-cat').tooltip({
+    placement: "right"
+  })
   
   //licitacoes
   $('.licitacoes .btn-cat').tooltip({

@@ -56,7 +56,7 @@ h2,
 .menu .search-query.input-medium  { border-left:none; }
 .row-fluid { margin:20px 20px 0 20px; width: 96%; }
 .home .span8 img { min-width:620px; }
-h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; height:20px; line-height:20px;  }
+h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal; line-height:20px;  }
 .row-fluid a { display:block; text-decoration:underline; color:#000; }
 .row-fluid h2 a  { text-decoration:none; color:#666666;}
 .mais:hover,

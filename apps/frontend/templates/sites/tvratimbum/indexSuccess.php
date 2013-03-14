@@ -49,9 +49,10 @@
       <div class="coluna">
         <?php if(isset($displays["videos"])) include_partial_from_folder('tvratimbum','global/display-1c-video', array('displays' => $displays["videos"])) ?>        
         <hr />
-        <?php if(isset($displays["baixar"])) include_partial_from_folder('tvratimbum','global/display-1c-baixar', array('displays' => $displays["baixar"])) ?>
-        <hr />
         <?php if(isset($displays["imagens"])) include_partial_from_folder('tvratimbum','global/display-1c-imagens', array('displays' => $displays["imagens"])) ?>
+        <hr />
+        <?php if(isset($displays["baixar"])) include_partial_from_folder('tvratimbum','global/display-1c-baixar', array('displays' => $displays["baixar"])) ?>
+        
         <!--hr /-->
         <?php //if(isset($displays["ta-sabendo"])) include_partial_from_folder('tvratimbum','global/display-1c-tasabendo', array('displays' => $displays["ta-sabendo"])) ?>
       </div>

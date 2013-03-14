@@ -23,6 +23,20 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 /* ESTRUTURAS BÁSICAS */
 .margin-0{margin:0 !important;}
 .float-right{float:right;}
+.col-esquerda i{
+  filter: alpha(opacity=70);/* IE 5-7 */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";  /* IE 8 */
+   -moz-opacity: 0.7;/* Netscape */
+   -khtml-opacity: 0.7;/* Safari 1.x */
+   opacity: 0.7; /* Navegadores Modernos*/ 
+}
+.tooltip-inner { background:#1863b7 !important; color:#fff;}
+.tooltip.in,
+.tooltip {opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
+.tooltip.bottom .tooltip-arrow{border-bottom-color: #1863b7 !important;}
+.tooltip.left .tooltip-arrow{border-left-color: #1863b7 !important;}
+.tooltip.top .tooltip-arrow{border-top-color: #1863b7 !important;}
+.tooltip.right .tooltip-arrow {border-right-color: #1863b7 !important;}
 
 /* /ESTRUTURAS BÁSICAS*/
 
@@ -97,18 +111,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .col-direita a.conheca div:last-child{background-color: #ffb027;height: 15px;}
 /* /QUEMSOMOS */
 
-/* LICITACOES */
-.licitacoes .col-esquerda i{
-  filter: alpha(opacity=70);/* IE 5-7 */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";  /* IE 8 */
-   -moz-opacity: 0.7;/* Netscape */
-   -khtml-opacity: 0.7;/* Safari 1.x */
-   opacity: 0.7; /* Navegadores Modernos*/ 
-}
-.tooltip-inner { background:#1863b7 !important; color:#fff;}
-.tooltip.in,
-.tooltip {opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;}
-.tooltip.bottom .tooltip-arrow {border-bottom-color: #1863b7 !important;} 
+ /* LICITACOES */
 .container.licitacoes,
 .container.licitacoes-subsecoes{margin-top:30px;}
 .licitacoes .col-esquerda a{margin: 3px 0 5px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
@@ -132,6 +135,8 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 /* /LICITACOES */
 
 /* TRABALHE-CONOSCO */
+.trabalhe-conosco a.btn-cat{margin: 3px 0 5px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
+.trabalhe-conosco a.btn-cat:hover{color:#000; background: #f1f1f1;}
 .col-esquerda .accordion-group,
 .accordion-inner{border:none;}
 .accordion-inner{padding-bottom:0px;}
