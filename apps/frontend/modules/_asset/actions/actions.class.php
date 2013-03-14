@@ -683,7 +683,7 @@ class _assetActions extends sfActions
       }
       elseif($this->section->slug == "receitinhas") {
         $sections = $this->asset->getSections();
-        foreach($section as $s) {
+        foreach($sections as $s) {
           if($s->Parent->slug == "receitinhas") {
             if($s->getIsActive()) {
               if ($debug) print "<br>cocorico-2-a >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial';
