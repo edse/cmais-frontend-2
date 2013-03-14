@@ -76,6 +76,15 @@ class _sectionActions extends sfActions
           die();
         }
         */
+       
+        if($this->section->getSlug() == "receitinhas" && $request->getParameter('teste')){
+          $subsections = $this->section->subsections();
+          
+          if(count($subsections) > 0){
+            header("Location: ".$subsections[0]->retriveUrl());
+            die();
+          }
+        }
       }
       
       if(in_array($this->section->Site->getSlug(), array("cedoc","cedoc2"))) {
@@ -119,7 +128,7 @@ class _sectionActions extends sfActions
         if (date('w H:i') > "1 22:00" && date('w H:i') < "1 23:35") {
           if ($this->section->getSlug() == "home") {
             header("Location: http://tvcultura.cmais.com.br/rodaviva/transmissao");
-            die();
+            die(); //aí tem gato.
           }
         }
         else {
@@ -152,6 +161,7 @@ class _sectionActions extends sfActions
                   ->limit(80)
                   ->execute();
               }
+             
               else{
                 $this->schedules = Doctrine_Query::create()
                   ->select('s.*')
@@ -1556,6 +1566,10 @@ class _sectionActions extends sfActions
           if ($this->section->Parent->slug == "concurso-cultural") {
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
+          }
+          if ($this->section->Parent->slug == "receitinhas") {
+            if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais');
           }
           else {
             if($debug) print "<br>8-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';

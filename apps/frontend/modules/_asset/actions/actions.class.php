@@ -676,14 +676,27 @@ class _assetActions extends sfActions
     }
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
-      
+       
       if($this->section->slug == "joguinhos") {
         if ($debug) print "<br>cocorico-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho');
       }
       elseif($this->section->slug == "receitinhas") {
-        if ($debug) print "<br>cocorico-2 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
+        $sections = $this->asset->getSections();
+        foreach($section as $s) {
+          if($s->Parent->slug == "receitinhas") {
+            if($s->getIsActive()) {
+              if ($debug) print "<br>cocorico-2-a >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial');
+              break;
+            }
+          }
+          else {
+            if ($debug) print "<br>cocorico-2-b >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
+            break;
+          }
+        }
       }
       elseif($this->section->slug == "tour-virtual") {
         if ($debug) print "<br>cocorico-3 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/tour-virtual';
@@ -760,7 +773,11 @@ class _assetActions extends sfActions
           ->from('Asset a, AssetVideo av, SectionAsset sa')
           ->where('sa.section_id = ?', $this->section->id)
           ->andWhere('sa.asset_id = a.id')
-          ->andWhere('av.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')}
+       elseif($this->section->slug == "receitinhas-especiais") {
+        if ($debug) print "<br>cocorico-15 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial');
+     
           ->andWhere('av.youtube_id IS NOT NULL')
           ->andWhere('a.is_active = ?', 1)
           ->orderBy('a.created_at desc');
@@ -816,11 +833,6 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-15 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/imprima-e-brinque-interna';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/imprima-e-brinque-interna');
       }
-       elseif($this->section->slug == "receitinhas-especiais") {
-        if ($debug) print "<br>cocorico-15 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha-especial');
-     
-       }
       elseif($this->section->slug == "clipes-musicais") {
         if ($debug) print "<br>cocorico-16 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/clipes-musicais');
