@@ -677,14 +677,16 @@ class _assetActions extends sfActions
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
       
-      if($request->getParameter("teste")) {
-        die($request->getParameter("param2"));
-      }
       if($this->section->slug == "joguinhos") {
         if ($debug) print "<br>cocorico-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/joguinho');
       }
       elseif($this->section->slug == "receitinhas") {
+        
+        if($request->getParameter("teste")) {
+          die($request->getParameter("param2"));
+        }
+        
         if ($debug) print "<br>cocorico-2-b >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
       }
