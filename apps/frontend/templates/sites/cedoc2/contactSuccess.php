@@ -6,10 +6,10 @@
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="conteudo">
     <ul class="menu">
-      <li class="cedoc"><h3><a href="/cedoc/" title="Cedoc">Cedoc</a></h3></li>
-      <li><span></span><a href="/cedoc/content" title="Quem Somos">quem somos</a></li>
-      <li><span></span><a href="/cedoc/resultado-busca" title="Acervo">acervo</a></li>
-      <li class="ativo"><span></span><a href="/cedoc/contato" title="Contato">contato</a></li>
+      <li class="cedoc"><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
+      <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
+      <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acervo">acervo</a></li>
+      <li class="ativo"><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
       <li>
         <?php include_partial_from_folder('sites/cedoc2', 'global/formBusca') ?>
       </li>
