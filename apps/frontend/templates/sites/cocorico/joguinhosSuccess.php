@@ -140,13 +140,13 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[3])) ?>
       <!--/RANKING -->
     </div>
-    <?php endif; ?>
+     <?php endif; ?>
    <?php endif; ?> 
-   
   
-  
-  <?php endif; ?>
+     <?php endif; ?>
     <?php endif; ?>
+   
+   <p>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
