@@ -89,7 +89,7 @@
                         
                       <span><?php echo $d->getTitle() ?></span>
                       
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4") ?>" alt="<?php echo $d->getTitle() ?>" style="width:404px"/>
+            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" style="width:404px"/>
             </a>
             <p><?php echo $d->getDescription() ?></p>
                        <a class="jogar" href="/quintaldacultura/jogos/<?php echo $section->slug ?>/<?php echo $d->slug ?>" title="Jogar">Jogar</a>
