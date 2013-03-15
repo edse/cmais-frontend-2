@@ -45,34 +45,50 @@
 .bastidores .item span{color: #FFFFFF; display: block; max-height: 16px; line-height:16px; overflow: hidden; text-align: center;}
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; max-width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
-.interatividade p {color:#FFF;}
+/* .interatividade p {color:#FFF;} */
 .interatividade form {padding:5px 10px;}
-.interatividade .form-campos{padding:5px 0;position: relative;}
+.interatividade .form-campos{padding-top:5px;position: relative;}
 .interatividade .form-campos #file { margin:0; }
 .interatividade .form-campos #file,
 .interatividade .form-campos input,
-.interatividade .form-campos select {border-radius:5px; padding:0 5px; min-height: 18px; line-height:18px; height:18px !important; margin-bottom:5px }
-.interatividade #form-contato label.error { width:80%; float:left;  border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align:center; margin-top:6px; }
+.interatividade .form-campos select {border-radius:5px; padding:12px 5px; min-height: 18px; line-height:18px; height:18px !important; margin-bottom:6px }
+.interatividade .form-campos textarea{min-width: 387px;}
+.interatividade .form-campos a{color: #FFF;text-decoration: underline; }
+.interatividade #form-contato label.error { width: 74%;float: left;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;text-align: left;padding: 0px 9px;font-size: 14px; font-weight:normal; }
 .interatividade #form-contato select.error, 
 .interatividade #form-contato label.error,
-.interatividade #form-contato input.error { border:2px solid #ef372d; color:#ef372d;}
-.interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 38px;}
+.interatividade #form-contato input.error,
+.interatividade #form-contato textarea.error{background:#ef372d; color:#FFF;}
+.interatividade #form-contato input{color:#333;}
+.interatividade .form-campos label.error{background: yellow;clear: both;text-align: center;font-size: 10px;font-weight: bold;color: red;margin: 0 0 11px 0px;}
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
-.interatividade .form-campos label.error { display: none !important ; }
-.interatividade .form-campos label[for="datafile"].error { display: block !important; }
-.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:0 10px 0 0;}
+.interatividade .form-campos label.error { position: absolute;bottom: -40px;left: 0; }
+.interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:4px 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
 .interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
 .interatividade .form-campos .ico-responsavel {background-position: 0 -82px; }
 .interatividade .form-campos .ico-email {background-position: 0 -109px; }
 .interatividade .form-campos .ico-bike {background-position: 0 -133px; }
+.interatividade .form-campos .ico-coracao {background-position: 0 -155px;}
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
 .interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
 .interatividade .form-campos .radio input { margin-top:0; }
 .interatividade .form-campos .last .span9 { margin-bottom:5px; float:left; }
+.interatividade input::-moz-placeholder,
+.interatividade textarea::-moz-placeholder,
+.interatividade input:-moz-placeholder,
+.interatividade textarea:-moz-placeholder{color:#333!important;}
+.interatividade input.error::-webkit-input-placeholder,
+.interatividade textarea.error::-webkit-input-placeholder,
+.interatividade input.error:-moz-placeholder,
+.interatividade textarea.error:-moz-placeholder
+.interatividade input.error::-moz-placeholder,
+.interatividade textarea.error::-moz-placeholder,
+.interatividade input.error:-ms-input-placeholder,
+.interatividade textarea.error:-ms-input-placeholder{color: #FFF;}
 
 .interatividade #msgErro p,
 .interatividade #msgErro2 p,
