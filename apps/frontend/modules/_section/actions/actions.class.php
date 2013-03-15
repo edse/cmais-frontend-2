@@ -68,6 +68,10 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
       
+      if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
+        $this->setLayout('segundatela');   
+      }
+      
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
         /*
