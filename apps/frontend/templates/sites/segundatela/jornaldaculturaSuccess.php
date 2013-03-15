@@ -172,4 +172,10 @@ $('#myTab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
+$('.accordion-body').on('hidden', function(){
+  $(this).prev().find('a').removeClass('ativo');
+});
+$('.accordion-body').on('show', function(){
+  $(this).prev().find('a').addClass('ativo');
+});
 </script>
