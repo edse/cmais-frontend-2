@@ -38,9 +38,9 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .hero-unit .menu-jc span { margin:-6px 10px 0 10px; float:left; color:#c4c4c4; font-size: 18px; }
 .hero-unit .menu-jc .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; }
 .hero-unit .menu-jc .seta { border:5px solid transparent;  border-left-color: #666; width: 0; height:0; margin:0; padding:0; display:block; float:left; margin-top:5px; }
-
+.hero-unit .menu-jc .offline { color:#ce0002;}
 .conteudo h2 { font-size:22px; line-height:24px; margin:20px 0 5px 0; color:#666; text-transform:uppercase; }
-.accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; }
+.accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; position:relative; }
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
@@ -76,7 +76,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .accordion-inner #mais li i { margin-right:5px;} 
 .accordion-inner #mais li a { text-decoration:none;}
 .accordion-inner #mais li a:hover { text-decoration:underline ;} 
-.accordion-heading .loader { float:right; margin-top:2px; } 
+.accordion-heading .loader { position:absolute; right:10px; top:7px; } 
 
 
 
@@ -121,18 +121,24 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   body { background-color:#a4050d; }
   .conteudo { background:#fff; overflow:hidden; }
   .accordion-inner iframe { width:100%; height:auto; }
-  .hero-unit { padding:2%; }
-  .hero-unit .col-esq { min-width:100%; margin-left:0; }
-  .hero-unit .col-dir { min-width:100%; clear:both; float:left; }
+  .hero-unit { padding:1%; }
+  .hero-unit .col-esq { width:50%; margin-left:0; }
+  .hero-unit .col-dir { min-width:50%; float:left; }
   .hero-unit {  height:auto;}
   .hero-unit .col-esq p { text-align:center; }
   .hero-unit .col-esq h1 { margin:2% auto; }
   .hero-unit .redes { min-width:350px; margin:0 auto; }
-  .hero-unit .menu-jc { margin-top:5px; float:left; }
+  .hero-unit .menu-jc { margin-top:5px; float:right; }
   .hero-unit .col-dir span { display:none; }
   .hero-unit .col-dir .numero,
   .hero-unit .col-dir .seta { display:block; }
-  .hero-unit .col-dir a { display:block; float: left; }
-  .hero-unit .col-dir .online [ margin-top:5px; clear:both; }
-  .hero-unit .col-dir .fechar { float:right;  }
+  .hero-unit .col-dir a { display:block;  }
+  .hero-unit .col-dir .online { margin-top:5px; }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width : 480px)  {
+  .hero-unit .col-esq p { margin:4px 0 0; }
+  .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
+  .hero-unit .col-dir a { float:right; }
 }
