@@ -19,9 +19,9 @@
                         <div class="capa-video" onclick="play()" style="left: auto"></div>
                       <?php endif; ?>
                     <?php else: ?>
-                      <?php if($d->Asset->AssetVideo->getYoutubeId() != ""): ?>
+                      <?php if($d->Asset->AssetVideo->getYoutubeId() != " "): ?>
                       <iframe title="<?php echo $d->getTitle() ?>" width="310" height="206" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                      <?php elseif($d->Asset->AssetVideoGallery->getYoutubeId() != ""): ?>
+                      <?php elseif($d->Asset->AssetVideoGallery->getYoutubeId() != " "): ?>
                       <iframe title="<?php echo $d->getTitle() ?>" width="310" height="206" src="http://www.youtube.com/embed/p/<?php echo $d->Asset->AssetVideoGallery->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                       <?php endif; ?>
                       <div class="capa-video" onclick="play()" style="left: auto"></div>
