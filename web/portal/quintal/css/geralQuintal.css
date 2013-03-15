@@ -860,9 +860,11 @@ width: 680px;
   left: 60px;
 }
 .rodaGigante a.educativo{
-  background-position: 0 -1139px;
-  top: 135px;
-  left: 270px;
+  background-position: 0 -1793px;
+  top: 122px;
+  left: 272px;
+  width: 124px;
+  height: 110px;
 }
 .rodaGigante a.esporte{
   background-position: 0 -1215px;
@@ -876,11 +878,11 @@ width: 680px;
 .rodaGigante a.desafio span,
 .rodaGigante a.habilidade span,
 .rodaGigante a.aventura span,
-.rodaGigante a.educativo span,
 .rodaGigante a.esporte span{
   float: left;
   margin: 50px 0 0 8px;
 }
+a.educativo span{float: left;margin: 74px 0 0 10px;}
 .rodaGigante a.peixonauta span{  margin-left: 17px; margin-top:70px;}
 
 .rodaGigante a.desafio span{
