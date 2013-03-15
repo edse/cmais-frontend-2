@@ -119,10 +119,9 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!-- RANKING -->
       <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section'=>$site, 'asset'=>$assets[5])) ?>
       <!--/RANKING -->
-  
+     </div>
     <?php endif; ?>
-    
-  </div>
+   </div>
   <!-- /row-->
   <!--row-->
   <div class="row-fluid conteudo destaques">
@@ -144,7 +143,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     <?php endif; ?>
    <?php endif; ?> 
    
-  </div>
+  
   
   <?php endif; ?>
     <?php endif; ?>
