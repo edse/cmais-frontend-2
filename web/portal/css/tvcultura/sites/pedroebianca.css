@@ -2041,8 +2041,7 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 
 #barra-site #horario p { font-size:14px; color:#5b5a50; }
 .centro .esq .chapeu { font-size:16px; color:#333; font-weight: normal; text-transform:uppercase; margin-left:0; }
-#barra-site .redes { /*margin-top:6px;*/ }
-#barra-site #horario { width:188px; /*margin-top:0;*/ }
+#barra-site #horario { width:auto;  }
 
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover,
