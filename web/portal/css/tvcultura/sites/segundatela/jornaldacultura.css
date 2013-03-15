@@ -128,11 +128,17 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-esq p { text-align:center; }
   .hero-unit .col-esq h1 { margin:2% auto; }
   .hero-unit .redes { min-width:350px; margin:0 auto; }
-  .hero-unit .menu-jc { margin-top:5px; float:left; }
+  .hero-unit .menu-jc { margin-top:5px; float:right; }
   .hero-unit .col-dir span { display:none; }
   .hero-unit .col-dir .numero,
   .hero-unit .col-dir .seta { display:block; }
-  .hero-unit .col-dir a { display:block; float:right; }
-  .hero-unit .col-dir .online [ margin-top:5px; clear:both; }
-  .hero-unit .col-dir a { float:right !important;  }
+  .hero-unit .col-dir a { display:block;  }
+  .hero-unit .col-dir .online { margin-top:5px; }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width : 480px)  {
+  .hero-unit .col-esq p { margin:4px 0 0; }
+  .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
+  .hero-unit .col-dir a { float:right; }
 }
