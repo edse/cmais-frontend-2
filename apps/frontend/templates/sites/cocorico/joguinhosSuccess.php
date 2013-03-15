@@ -79,7 +79,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   <!--row-->
   <div class="row-fluid conteudo destaques">
     
-    <?php if(count($assets) > 0): ?>
+    <?php if(count($assets) > 3): ?>
 
     <?php if(isset($assets[3])): ?>
       <?php $related = $assets[3]->retriveRelatedAssetsByRelationType('Preview') ?>
@@ -121,33 +121,29 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       <!--/RANKING -->
   
     <?php endif; ?>
-    
-     <!--row-->
+    <?php endif; ?>
+    <?php endif; ?>
+  </div>
+  <!-- /row-->
+  <!--row-->
   <div class="row-fluid conteudo destaques">
     
-    <?php if(count($assets) > 0): ?>
-
-    <?php if(isset($assets[6])): ?>
-      <?php $related = $assets[6]->retriveRelatedAssetsByRelationType('Preview') ?>
+    <?php if(count($assets) > 3): ?>
+      
+      <?php if(isset($assets[3])): ?>
+      <?php $related = $assets[3]->retriveRelatedAssetsByRelationType('Preview') ?>
     <div class="span4">
-      <a href="<?php echo $assets[6]->retriveUrl() ?>" title="<?php echo $assets[6]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[6]->getTitle() ?>" /></a>
-      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[6]->getDescription() ?>" data-original-title="<?php echo $assets[6]->getTitle() ?>">
+      <a href="<?php echo $assets[3]->retriveUrl() ?>" title="<?php echo $assets[3]->getTitle() ?>"><img class="span12" src="<?php echo $related[0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $assets[3]->getTitle() ?>" /></a>
+      <a href="#" class="span12 btn btn-popover" title="abre tooltip" rel="popover" data-placement="bottom" data-trigger="click" data-content="<?php echo $assets[3]->getDescription() ?>" data-original-title="<?php echo $assets[3]->getTitle() ?>">
         <span></span>
-        <?php echo $assets[6]->getTitle() ?>
+        <?php echo $assets[3]->getTitle() ?>
       </a>
       <!-- RANKING -->
-      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[6])) ?>
+      <?php include_partial_from_folder('sites/cocorico', 'global/ranking', array('section' => $section, 'asset' => $assets[3])) ?>
       <!--/RANKING -->
     </div>
     <?php endif; ?>
-    </div>
-    
-    
-    <?php endif; ?>
-    <?php endif; ?>
-    <?php endif; ?>
-  
-  <!-- /row-->
+   <?php endif; ?> 
 </div>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
