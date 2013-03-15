@@ -80,7 +80,7 @@
                   <a class="desafio" href="/quintaldacultura/jogos/desafio"><span>Desafio</span></a>
                   <a class="habilidade" href="/quintaldacultura/jogos/habilidade"><span>Habilidade</span></a>
                   <a class="aventura" href="/quintaldacultura/jogos/aventura"><span>Aventura</span></a>
-                  <a class="educativo" href="/quintaldacultura/jogos/gui-e-estopa"><span>Gui e Estopa</span></a>
+                  <a class="educativo" href="/quintaldacultura/jogos/gui-e-estopa"><span>Gui e Estopa <span></a>
                   <a class="esporte" href="/quintaldacultura/jogos/esportes"><span>Esportes</span></a>
                   <a class="peixonauta" href="/quintaldacultura/jogos/joguinhosdopeixonauta"><span>Peixonauta</span></a>
                 </div>
