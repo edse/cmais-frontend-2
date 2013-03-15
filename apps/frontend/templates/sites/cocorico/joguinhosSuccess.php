@@ -145,7 +145,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
   
      <?php endif; ?>
     <?php endif; ?>
-   
+   </div>
    <p>
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
