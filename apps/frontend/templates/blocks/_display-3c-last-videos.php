@@ -12,6 +12,7 @@
                 <div class="carrossel" id="carrossel4">
                   <ul class="jornalismo">
                     <?php foreach($displays as $k => $d): ?>
+                      <?php if($d->Asset->AssetVideo->getYoutubeId() != ""): ?> 
                     <li>
                       <div class="conteudo-lista">
                         <a href="<?php echo $d->retriveUrl() ?>" class="bg">
@@ -21,6 +22,7 @@
                         <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><?php echo $d->getTitle() ?></a>
                       </div>
                     </li>
+                      <?php endif; ?>
                     <?php endforeach; ?>
                   </ul>
                 </div>
