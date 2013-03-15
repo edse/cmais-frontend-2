@@ -40,7 +40,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .hero-unit .menu-jc .seta { border:5px solid transparent;  border-left-color: #666; width: 0; height:0; margin:0; padding:0; display:block; float:left; margin-top:5px; }
 .hero-unit .menu-jc .offline { color:#ce0002;}
 .conteudo h2 { font-size:22px; line-height:24px; margin:20px 0 5px 0; color:#666; text-transform:uppercase; }
-.accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; }
+.accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; position:relative; }
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
@@ -76,7 +76,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .accordion-inner #mais li i { margin-right:5px;} 
 .accordion-inner #mais li a { text-decoration:none;}
 .accordion-inner #mais li a:hover { text-decoration:underline ;} 
-.accordion-heading .loader { float:right; margin-top:2px; } 
+.accordion-heading .loader { position:absolute; right:10px; top:7px; } 
 
 
 
