@@ -59,8 +59,9 @@
           google.load('search', '1', {language: 'pt', style: google.loader.themes.MINIMALIST});
           google.setOnLoadCallback(function() {
             var customSearchOptions = {};
-            var customSearchControl =   new google.search.CustomSearchControl('014171385304484677642:rn0zsdt5eig', customSearchOptions);
+            var customSearchControl = new google.search.CustomSearchControl('014171385304484677642:rn0zsdt5eig', customSearchOptions);
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
             var options = new google.search.DrawOptions();
             options.enableSearchResultsOnly();
             customSearchControl.draw('cse', options);
