@@ -65,7 +65,6 @@
             var options = new google.search.DrawOptions();
             options.enableSearchResultsOnly();
             customSearchControl.draw('cse', options);
-            customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
             function parseParamsFromUrl() {
               var params = {};
               var parts = window.location.search.substr(1).split('&');
