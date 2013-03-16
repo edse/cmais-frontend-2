@@ -18,29 +18,39 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
-
-    <?php include_title() ?>
-    <?php include_metas() ?>
-    <?php include_meta_props() ?>
-
+   
+    <!-- estatico -->
+    <title>Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:type" content="website" /> 
+    <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://tvcultura.cmais.com.br/segundatela/jornaldacultura" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/segundatela/jornaldacultura/fb.jpg" />
+    <!-- estatico -->
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
     
     <!-- Fav and touch icons -->
-    <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico" type="image/x-icon">
-    <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://cmais.com.br/portal/images/icon/cmais-favico_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cmais.com.br/portal/images/icon/cmais-favico_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
+    
+    <link rel="apple-touch-icon" href="http://h.imguol.com/icon-touch.png" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
+    <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
+       
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    
-
-    
-
-    
-
   </head>
   <body>
     <?php echo $sf_content ?>
@@ -72,6 +82,10 @@
       }());
     </script>
     
- 
+    <script type="text/javascript" src="/ss/js/websocket-js/swfobject.js"></script>
+    <script type="text/javascript" src="/ss/js/websocket-js/web_socket.js"></script>
+    <script type="text/javascript" src="/ss/js/json2.js"></script>
+    <script type="text/javascript" src="/ss/js/app.js"></script>
+
   </body>
 </html>

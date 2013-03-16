@@ -153,7 +153,7 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div id="facebook" class="tab-pane fade active in">
-                <div class="fb-comments" data-href="http://cmais.com.br" data-width="300px" data-num-posts="10"></div>
+                <div class="fb-comments" data-href="<?php echo $uri ?>" data-width="300px" data-num-posts="10"></div>
               </div>
               <div id="twitter" class="tab-pane fade">
                 <a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="311256597148073986">Tweets de @jornal_cultura</a>
@@ -171,5 +171,11 @@
 $('#myTab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
+});
+$('.accordion-body').on('hidden', function(){
+  $(this).prev().find('a').removeClass('ativo');
+});
+$('.accordion-body').on('show', function(){
+  $(this).prev().find('a').addClass('ativo');
 });
 </script>
