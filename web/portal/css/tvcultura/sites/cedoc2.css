@@ -71,7 +71,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .apoio .ministerio { margin: 0 20px; }
 .apoio .ministerio a { width: 53px; height:18px; background:url(/portal/images/capaPrograma/cedoc/logo-ministerio.jpg) no-repeat;}
 .apoio .governo a { width: 114px; height:36px; background:url(/portal/images/capaPrograma/cedoc/logo-governo.jpg) no-repeat; }
-.home .txt { max-height:230px; overflow:hidden; }
+.home .txt { /*max-height:230px;*/ overflow:hidden; }
 
 /* /home */
 
@@ -168,7 +168,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .row-fluid .span4 { width: 29%; }
 
 /* excecoes */
-@media (max-width: 1200px)  { 
+@media (max-width: 980px)  { 
   .row-fluid .span4 { width:90%; }
 }
 
