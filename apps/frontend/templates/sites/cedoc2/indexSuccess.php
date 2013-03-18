@@ -1,16 +1,5 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
     
-    <script src="/portal/js/jquery.summarize.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-    
-      $('div.txt').summarize({
-        summaryElements: 2,
-        expandText: "+leia mais"
-      }); 
-        
-    });
     </script>
     
     <div class="container home" id="geral">
@@ -60,7 +49,7 @@
             <div class="txt">
               <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
             </div>
-            <?php /*<a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a> */ ?>
+            <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
           </div>
           
         <?php endif; ?>
