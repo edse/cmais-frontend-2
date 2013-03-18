@@ -2,8 +2,8 @@
           <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contador.css" type="text/css" />
           <script language="Javascript" type="text/javascript" src="/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
           <?php
-            //if($channel_id <= 0)
-             // $channel_id = 1;
+            if($channel_id <= 0)
+            $channel_id = 1;
             $displays = Doctrine_Query::create()
               ->select('s.*')
               ->from('Schedule s')
@@ -14,7 +14,7 @@
               ->orderBy('s.date_start asc')
               ->limit('5')
               ->execute();
-          ?> 
+          ?>
           <?php if(isset($displays)): ?>
             <?php if(count($displays) > 0): ?>
               <?php if(strtotime($displays[0]->getDateStart()) >= strtotime(date('Y-m-d H:i:s'))): ?>
@@ -70,6 +70,7 @@
                     <p class="bold"><?php echo $d->retriveTitle() ?></p>
                     <p><?php echo $d->retriveDescription3() ?></p>
                     <a href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
+                    teste
                     <?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis\Z') ?>
                     <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php echo urlencode($d->getTitle()) ?>&dates=<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis\Z') ?>/<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis\Z') ?>&details=&location=<?php echo urlencode($d->Program->getTitle()) ?>&trp=false&sprop=http%3A%2F%2Fcmais.com.br&sprop=name:TV%20Cultura" target="_blank" class="google-agenda"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0 style="width:100px;height:25px;" /></a>
                   </div>
