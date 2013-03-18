@@ -88,7 +88,7 @@
 .interatividade input.error::-moz-placeholder,
 .interatividade textarea.error::-moz-placeholder,
 .interatividade input.error:-ms-input-placeholder,
-.interatividade textarea.error:-ms-input-placeholder{color: #FFF;}
+.interatividade textarea.error:-ms-input-placeholder{color: #FFF!important;}
 
 #modalTermos .modal-header{padding-bottom:10px;}
 #modalTermos .modal-header h4{font-family:'ubunturegular',Arial;color: #fdf035;font-size: 15px;line-height: 22px;margin: 0;font-weight: bold; text-transform:uppercase;}
