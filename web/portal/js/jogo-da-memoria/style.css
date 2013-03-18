@@ -283,7 +283,7 @@ body {
 }
 
 #gameComplete {
-  /*background: url(portal/images/capaPrograma/cocorico/memoria/end.jpg) center 0 no-repeat;*/
+  background: url(portal/images/capaPrograma/cocorico/memoria/end.jpg) center 0 no-repeat;
   text-align: center;
   position: absolute;
   top: 0;
@@ -345,11 +345,11 @@ body {
 
 #result {
   background: white;
-  margin: 290px auto 0;
+  margin: 100px auto 50px;
   width: 60%;
   border-radius: 5px;
   font-size: 20px;
-  border: 8px solid #DA4930;
+  border: none;
   padding: 20px 0;
   position: relative;
 }
@@ -361,8 +361,8 @@ body {
   height: 0;
   left: 140px;
   top: -50px;
-  border: 25px solid;
-  border-color: transparent #DA4930 #DA4930 transparent;
+  border: 0 solid;
+  border-color: transparent;
 }
 
 #result:after {
@@ -373,7 +373,7 @@ body {
   left: 142px;
   top: -30px;
   border: 20px solid;
-  border-color: transparent #fff #fff transparent;
+  border-color: transparent;
 }
 
 .face {
@@ -777,3 +777,5 @@ body.appcache-allinfo #appcache_info.appcache-error,
 #click { margin-right:20px; }
 #gamePlay { text-transform:uppercase; font-size:30px; border-radius:20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; width:110px; height:30px; line-height:30px; text-align:center;  }
 #playground { margin-top:23px; clear:both; }
+#gameComplete a.button { border:8px solid #1EB9E2; background:#1893CF; color:#fff; border-radius: 20px;    font-size: 30px;  height: 30px;  line-height: 30px; text-transform: uppercase; width: 305px; }
+#result p { color:#1893cf; text-transform:uppercase; font-size:18px; font-family: 'ubuntu', sans-serif; margin:40px 0; line-height: 24px; }
