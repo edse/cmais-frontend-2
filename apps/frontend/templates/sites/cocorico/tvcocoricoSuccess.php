@@ -111,6 +111,8 @@
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9" id="destaqueForm" style="display:block;">
         
+        <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
             <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso.jpg" />
            
@@ -120,7 +122,8 @@
               <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
               <span class="last"></span>
             </div>
-
+          <?php endif; ?>
+        <?php endif; ?>
         
         
         <?php /*if(isset($displays['destaque-seu-video'])): ?>
