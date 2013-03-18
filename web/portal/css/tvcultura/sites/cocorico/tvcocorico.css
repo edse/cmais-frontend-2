@@ -51,7 +51,7 @@
 .interatividade .form-campos #file { margin:0; }
 .interatividade .form-campos #file,
 .interatividade .form-campos input,
-.interatividade .form-campos select {border-radius:5px; padding:12px 5px; min-height: 18px; line-height:18px; height:18px !important; margin-bottom:6px }
+.interatividade .form-campos select {border-radius:5px; padding:12px 5px; min-height: 18px; line-height:18px; margin-bottom:6px }
 .interatividade .form-campos textarea{min-width: 387px;}
 .interatividade .form-campos a{color: #FFF;text-decoration: underline; }
 .interatividade #form-contato label.error { width: 74%;float: left;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;text-align: left;padding: 0px 9px;font-size: 14px; font-weight:normal; }
