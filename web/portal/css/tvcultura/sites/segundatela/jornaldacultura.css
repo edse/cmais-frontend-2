@@ -142,3 +142,5 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
   .hero-unit .col-dir a { float:right; }
 }
+.accordion-body table,
+.accordion-body img { padding:15px; float:left; }
