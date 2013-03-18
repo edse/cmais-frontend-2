@@ -44,8 +44,8 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
-.accordion-inner img { max-width: 140px; float:left;  margin-right:10px;}
-.accordion-inner a { color:#000; text-decoration:underline; }
+.accordion-body img { max-width: 140px; float:left;  margin-right:10px;}
+.accordion-body a { color:#000; text-decoration:underline; }
 
 .nav-tabs > li { margin-bottom:0; }
 .nav-tabs { background:#666; border:none; border-left: 1px dotted #fff;  }
@@ -59,23 +59,20 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .conteudo { margin-bottom:50px; }
 #twitter-widget-1 { min-height:600px; }
 .accordion-group { border:none; }
+.accordion-body,
 .accordion-inner { border:none; background:#eee; overflow:hidden; }
 .redes .fb {margin:-4px 10px 0 10px;  }
 .redes .twt,
 .redes .fb,
 .redes .gplus {  display: block; float:left; }
-.accordion-inner .redes { margin-top:10px; clear:both; float:left; }
-.accordion-inner .redes .fb { margin-top:0; }
-.accordion-inner { padding:8px 0;}
-.accordion-inner .redes,
-.accordion-inner p,
-.accordion-inner img { padding:0 15px;} 
-.accordion-inner #mais h3 { background:#333; color:#fff; padding:2px 5px; font-size:14px; height:18px; line-height:18px; float: left; text-transform:uppercase; margin:0 15px 10px 15px; font-weight:normal;}   
-.accordion-inner #mais ul { clear:both; margin-left:20px; } 
-.accordion-inner #mais li { list-style:none;} 
-.accordion-inner #mais li i { margin-right:5px;} 
-.accordion-inner #mais li a { text-decoration:none;}
-.accordion-inner #mais li a:hover { text-decoration:underline ;} 
+.accordion-body p,
+.accordion-body img { padding:0 15px;} 
+.accordion-body #mais h3 { background:#333; color:#fff; padding:2px 5px; font-size:14px; height:18px; line-height:18px; float: left; text-transform:uppercase; margin:0 15px 10px 15px; font-weight:normal;}   
+.accordion-body #mais ul { clear:both; margin-left:20px; } 
+.accordion-body #mais li { list-style:none;} 
+.accordion-body #mais li i { margin-right:5px;} 
+.accordion-body #mais li a { text-decoration:none;}
+.accordion-body #mais li a:hover { text-decoration:underline ;} 
 .accordion-heading .loader { position:absolute; right:10px; top:7px; } 
 
 
