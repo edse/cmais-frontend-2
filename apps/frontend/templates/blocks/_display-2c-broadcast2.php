@@ -2,8 +2,8 @@
           <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contador.css" type="text/css" />
           <script language="Javascript" type="text/javascript" src="/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
           <?php
-            //if($channel_id <= 0)
-             // $channel_id = 1;
+            if($channel_id <= 0)
+            $channel_id = 1;
             $displays = Doctrine_Query::create()
               ->select('s.*')
               ->from('Schedule s')
