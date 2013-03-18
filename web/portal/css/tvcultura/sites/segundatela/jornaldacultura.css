@@ -140,16 +140,16 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-dir a { float:right; }
 }
 
-.accordion-body ul { margin:0; padding:0 15px;}
+.accordion-body ul { margin:0; padding:15px;}
 .accordion-body table,
-.accordion-body img { padding:15px 15px 15px 0; float:left; }
+.accordion-body img { padding:15px 15px 0 0;  float:left; margin-right:0;  }
 .accordion-body { padding:0 15px; background:#eee; }
-.accordion-inner { padding:0; }
-.accordion-inner p { padding:0; }
-.accordion-inner img { padding:15px 15px 0 0; margin-right:0; }
-.accordion-inner #mais ul,
-.accordion-inner #mais h3 { margin-left:0; }
-.accordion-inner #mais h3 { margin-top:15px; }
+.accordion-inner,
+.accordion-body p { padding:0; }
+.accordion-body #mais ul,
+.accordion-body #mais h3 { margin-left:0; }
+.accordion-body #mais h3 { margin-top:15px; }
+.accordion-body #mais ul { padding:0 0 15px 0; }
 .accordion-heading { margin-bottom:0; } 
 .accordion-body p { margin:10px 0 0 0; }
 .logo-link img { padding:0 0 15px 0; }
