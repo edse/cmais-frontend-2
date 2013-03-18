@@ -77,14 +77,11 @@
 .interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
 .interatividade .form-campos .radio input { margin-top:0; }
 .interatividade .form-campos .last .span9 { margin-bottom:5px; float:left; }
-.interatividade input::-moz-placeholder,
-.interatividade textarea::-moz-placeholder,
-.interatividade input:-moz-placeholder,
-.interatividade textarea:-moz-placeholder{color:#333;}
+.interatividade .form-campos{color:#333;}
 .interatividade input.error::-webkit-input-placeholder,
 .interatividade textarea.error::-webkit-input-placeholder,
 .interatividade input.error:-moz-placeholder,
-.interatividade textarea.error:-moz-placeholder
+.interatividade textarea.error:-moz-placeholder,
 .interatividade input.error::-moz-placeholder,
 .interatividade textarea.error::-moz-placeholder,
 .interatividade input.error:-ms-input-placeholder,
