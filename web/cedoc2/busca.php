@@ -24,187 +24,66 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
     -->
-    <script>
-      (function() {
-        var cx = '014171385304484677642:rn0zsdt5eig';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
   </head>
 
   <body>
 
-    <!--div class="navbar navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Fundação Padre Anchieta</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Quem Somos</a></li>
-              <li><a href="#">Acervo</a></li>
-              <li><a href="#">Central de Relacionamento</a></li>
-              <li><a href="#">Licitações</a></li>
-              <li><a href="#">Trabalhe Conosco</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Emissoras <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portais <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Sic</a></li>
-            </ul>
-            <!--form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div-->
     
      <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
 <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/fpa.js"></script>
 
-<!--FUNDO-TOPO-->
-<div id="fundo-topo" class="">
-  
-  <!--CONTAINER-->
-  <div class="container principal">
-
-    <!--LOGO CULTURA-->
-    <a href="/fpa" title="Fundação Padre Anchieta" class="pull-left">
-      <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
-    </a>
-    <!--/LOGO CULTURA-->
-
-    <!--LISTA DE BOTOES-->
-    <ul id="topo-fpa" class="nav-pills font-btn nav">
-            <li class="">
-        <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="link margin-0 " title="Quem Somos">Quem Somos</a>
-        <b class="seta-hover "></b>
-      </li>
-
-            <li class="dropdown " id="acervo">
-        <a class="link " data-toggle="dropdown" href="#acervo" title="Acervo">
-          Acervo
-          <b class="caret"></b>
-        </a>
-        <b class="seta-hover "></b>
-        <ul class="dropdown-menu ">
-         <!--<li><a href="#" title="Pesquisa Audiovisual" target="_blank">Pesquisa Audiovisual</a></li>-->
-         <li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li>
-        </ul>
-      </li>
-            <li class="">
-        <a href="/central-de-relacionamento" class="link " title="Linha do Tempo">Central de Relacionamento</a>
-        <b class="seta-hover "></b>
-      </li>
-      
-      <li class="">
-        <a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" class="link" title="Licitações">Licitações</a>
-        <b class="seta-hover"></b>
-      </li>
-            <li class="">
-        <a href="http://www2.tvcultura.com.br/selecao/" class="link " title="Trabalhe Conosco">Trabalhe Conosco</a>
-        <b class="seta-hover "></b>
-      </li>
-      
-      <li class="dropdown " id="emissoras">
-        <a class="margin-0" class="link" data-toggle="dropdown" href="#emissoras" title="Emissoras">
-          Emissoras
-          <b class="caret"></b>
-        </a>
-        <b class="seta-hover"></b>
-        <ul class="dropdown-menu ">
-         <li><a href="http://tvcultura.cmais.com.br/" title="Tv Cultura" target="_blank">TV Cultura</a></li>
-         <li><a href="http://univesptv.cmais.com.br/" title="Univesp TV" target="_blank">Univesp TV</a></li>
-         <li><a href="http://multicultura.cmais.com.br/" title="multiCultura" target="_blank">multiCultura</a></li>
-         <li><a href="http://tvratimbum.cmais.com.br/" title="TV Rá Tim Bum!" target="_blank">TV Rá Tim Bum!</a></li>
-         <li><a href="http://www.culturabrasil.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
-         <li><a href="http://culturafm.cmais.com.br/" title="Cultura Fm" target="_blank">Cultura Fm</a></li>
-         <!-- <li><a href="http://tvratimbum.cmais.com.br/radio" title="Rádio Rá Tim Bum" target="_blank">Rádio Rá Tim Bum</a></li> -->
-         <!-- <li><a href="http://www3.tvcultura.com.br/cocorico/radio" title="Rádio Cocoricó" target="_blank">Rádio Cocoricó</a></li> -->
-        </ul>
-      </li>
-      
-      <li class="dropdown " id="portais">
-        <a class="margin-0" class="link" data-toggle="dropdown" href="portais" title="Portais">
-          Portais
-          <b class="caret"></b>
-        </a>
-        <b class="seta-hover"></b>
-        <ul class="dropdown-menu">
-         <li><a href="http://cmais.com.br/" title="CMAIS+" target="_blank">CMAIS+</a></li>
-         <li><a href="http://www.culturabrasil.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
-        </ul>
-      </li>
-      
-            <li class="">
-        <a href="http://fpa.com.br/sic/" class="link " title="SiC">SiC</a>
-        <b class="seta-hover "></b>
-      </li>
-    </ul>
-    <!--/LISTA DE BOTOES-->
-     
-  </div>
-  <!--/CONTAINER-->
-
-</div>
-<!-- /FUNDO-TOPO-->    
+<script>
+  $.post('http://cmais.com.br/cedoc2/includes/topo.inc.html', function(data) {
+    $('#cedocTopo').html(data);
+  });
+</script>
+<div id="cedocTopo"></div>
 
     
     <div class="container" id="geral">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo">
-        <ul class="menu">
-          <li class="cedoc"><h3><a href="/cedoc2" title="Cedoc">Cedoc</a></h3></li>
-          <li><span></span><a href="/cedoc2/quem-somos" title="Quem Somos">quem somos</a></li>
-          <li><span></span><a href="/cedoc2/acervo" title="Acerto">acervo</a></li>
-          <li><span></span><a href="/cedoc2/contato" title="Contato">contato</a></li>
-          <li>
-            <form class="form-search pull-right" action="/cedoc2/busca.php">
-              <div class="input-append">
-                <input type="hidden" name="output" value="search">
-                <button type="submit" class="btn"><i class="icon-search"></i></button>
-                <input type="text" name="q" class="search-query input-medium" value="buscar imagens" placeholder="buscar imagens" onfocus="this.value='';">
-              </div>
-            </form>
-          </li>
-        </ul>
+        <script>
+          $.post('http://cmais.com.br/cedoc2/includes/menu.inc.html', function(data) {
+            $('#cedocMenu').html(data);
+          });
+        </script>
+        <div id="cedocMenu"></div>
+        
         <div class="span8">
-          <gcse:searchresults-only>Buscando...</gcse:searchresults-only>    
+          <div id='cse' style='width: 100%;'>Procurando...</div>
+          <script src='//www.google.com/jsapi' type='text/javascript'></script>
+          <script type='text/javascript'>
+          google.load('search', '1', {language: 'pt', style: google.loader.themes.MINIMALIST});
+          google.setOnLoadCallback(function() {
+            var customSearchOptions = {};
+            var customSearchControl = new google.search.CustomSearchControl('014171385304484677642:rn0zsdt5eig', customSearchOptions);
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+            var options = new google.search.DrawOptions();
+            options.enableSearchResultsOnly();
+            customSearchControl.draw('cse', options);
+            function parseParamsFromUrl() {
+              var params = {};
+              var parts = window.location.search.substr(1).split('&');
+              for (var i = 0; i < parts.length; i++) {
+                var keyValuePair = parts[i].split('=');
+                var key = decodeURIComponent(keyValuePair[0]);
+                params[key] = keyValuePair[1] ?
+                    decodeURIComponent(keyValuePair[1].replace(/\+/g, ' ')) :
+                    keyValuePair[1];
+              }
+              return params;
+            }
+            var urlParams = parseParamsFromUrl();
+            var queryParamName = 'q';
+            if (urlParams[queryParamName]) {
+              customSearchControl.execute(urlParams[queryParamName]);
+            }
+          }, true);
+          </script>
         </div>
          
       </div>
