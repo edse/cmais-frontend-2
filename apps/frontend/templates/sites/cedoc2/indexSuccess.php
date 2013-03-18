@@ -1,7 +1,23 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
-    
-    </script>
-    
+<?php
+function word_limiter($str,$limit=10)
+{
+  $str_s = "";
+  if(stripos($str," ")){
+    $ex_str = explode(" ",$str);
+    if(count($ex_str)>$limit){
+      for($i=0;$i<$limit;$i++){
+        $str_s.=$ex_str[$i]." ";
+      }
+      return $str_s;
+    }else{
+      return $str;
+    }
+  }else{
+    return $str;
+  }
+}
+?>
     <div class="container home" id="geral">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
@@ -47,7 +63,7 @@
             <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
   
             <div class="txt">
-              <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+              <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
             </div>
             <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
           </div>
@@ -60,7 +76,7 @@
           <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
+            <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
          </div>
@@ -86,7 +102,7 @@
           <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <p><?php echo html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()) ?></p>
+            <?php echo word_limiter(html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()), 75)."..." ?>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
@@ -109,7 +125,7 @@
           <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-2"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <p><?php echo html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()) ?></p>
+            <p><?php echo word_limiter(html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
