@@ -80,7 +80,7 @@
 .interatividade input::-moz-placeholder,
 .interatividade textarea::-moz-placeholder,
 .interatividade input:-moz-placeholder,
-.interatividade textarea:-moz-placeholder{color:#333!important;}
+.interatividade textarea:-moz-placeholder{color:#333;}
 .interatividade input.error::-webkit-input-placeholder,
 .interatividade textarea.error::-webkit-input-placeholder,
 .interatividade input.error:-moz-placeholder,
