@@ -157,7 +157,7 @@
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left required" name="nome" id="nome" data-default="Seu nome" placeholder="Seu nome">Seu nome</input>
+              <input type="text" class="span11 pull-left required" name="nome" id="nome" data-default="Seu nome" value="Seu nome" placeholder="Seu nome">
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-responsavel"></i>
