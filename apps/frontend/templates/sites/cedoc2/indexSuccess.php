@@ -63,7 +63,7 @@ function word_limiter($str,$limit=10)
             <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
   
             <div class="txt">
-              <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 80)."..." ?></p>
+              <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
             </div>
             <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
           </div>
@@ -76,7 +76,7 @@ function word_limiter($str,$limit=10)
           <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 80)."..." ?></p>
+            <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
          </div>
@@ -102,9 +102,9 @@ function word_limiter($str,$limit=10)
           <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <?php echo word_limiter(html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()), 80)."..." ?>
+            <?php echo word_limiter(html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()), 75)."..." ?>
           </div>
-          <?php /*<a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a> */ ?>
+          <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
         
           <?php endif; ?>
@@ -125,7 +125,7 @@ function word_limiter($str,$limit=10)
           <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-2"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
-            <p><?php echo word_limiter(html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()), 80)."..." ?></p>
+            <p><?php echo word_limiter(html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
           </div>
           <a class="mais" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
         </div>
