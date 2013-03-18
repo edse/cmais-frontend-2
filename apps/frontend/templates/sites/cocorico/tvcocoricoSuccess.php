@@ -1,7 +1,7 @@
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet">
 <!--TESTE JE-->
-<!-- container-->
+<!-- container--> 
 <div class="container tudo">
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
