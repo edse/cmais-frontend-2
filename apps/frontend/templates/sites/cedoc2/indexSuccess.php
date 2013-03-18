@@ -6,7 +6,7 @@
     $(document).ready(function() {
     
       $('div.txt').summarize({
-        summaryElements: 1,
+        summaryElements: 2,
         expandText: "+leia mais"
       }); 
         
