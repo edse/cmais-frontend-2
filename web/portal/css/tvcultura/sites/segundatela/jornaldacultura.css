@@ -142,5 +142,17 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
   .hero-unit .col-dir a { float:right; }
 }
+
+.accordion-body ul { margin:0; padding:0 15px;}
 .accordion-body table,
-.accordion-body img { padding:15px; float:left; }
+.accordion-body img { padding:15px 15px 15px 0; float:left; }
+.accordion-body { padding:0 15px; background:#eee; }
+.accordion-inner { padding:0; }
+.accordion-inner p { padding:0; }
+.accordion-inner img { padding:15px 15px 0 0; margin-right:0; }
+.accordion-inner #mais ul,
+.accordion-inner #mais h3 { margin-left:0; }
+.accordion-inner #mais h3 { margin-top:15px; }
+.accordion-heading { margin-bottom:0; } 
+.accordion-body p { margin:10px 0 0 0; }
+.logo-link img { padding:0 0 15px 0; }
