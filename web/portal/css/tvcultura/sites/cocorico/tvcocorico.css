@@ -45,7 +45,7 @@
 .bastidores .item span{color: #FFFFFF; display: block; max-height: 16px; line-height:16px; overflow: hidden; text-align: center;}
 .bastidores .img-bast{border-radius: 5px;overflow: hidden; margin:0; max-width: 140px; max-height: 86px;}
 .bastidores.ytb .img-bast img { margin:-6px 0;  min-width: 136px;}
-/* .interatividade p {color:#FFF;} */
+.interatividade p {color:#FFF;}
 .interatividade form {padding:5px 10px;}
 .interatividade .form-campos{padding-top:5px;position: relative;}
 .interatividade .form-campos #file { margin:0; }
@@ -89,6 +89,17 @@
 .interatividade textarea.error::-moz-placeholder,
 .interatividade input.error:-ms-input-placeholder,
 .interatividade textarea.error:-ms-input-placeholder{color: #FFF;}
+
+#modalTermos .modal-header{padding-bottom:10px;}
+#modalTermos .modal-header h4{font-family:'ubunturegular',Arial;color: #fdf035;font-size: 15px;line-height: 22px;margin: 0;font-weight: bold; text-transform:uppercase;}
+#modalTermos .modal-header h4{color:#fdf035;}
+#modalTermos .modal-header h3{font-family:'ubunturegular',Arial;color: #fdf035;font-size: 18px;line-height: 22px;margin: 0;font-weight: lighter;text-transform:uppercase;}
+#modalTermos ,
+#modalTermos .modal-header{background: #1db186; text-align:left!important; color:#FFF;}
+#modalTermos .modal-body{text-align:left; margin-bottom:10px;} 
+#modalTermos ::-webkit-scrollbar {height: 12px; width: 23px; background: #1db186;}
+#modalTermos ::-webkit-scrollbar-thumb {background: #bfd540; -webkit-border-radius: 1ex;}
+#modalTermos ::-webkit-scrollbar-corner { background: #bfd540;}
 
 .interatividade #msgErro p,
 .interatividade #msgErro2 p,
