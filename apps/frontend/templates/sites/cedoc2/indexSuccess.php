@@ -6,7 +6,10 @@ $(document).ready(function() {
 
   // simple example, using all default options
   /***** apply the summarize() method to the "containing" element ****/
-  $('div.txt').summarize(); 
+  $('div.txt').summarize({
+    summaryElements: 1,
+    expandText: "+leia mais"
+  }); 
     
 });
 </script>
@@ -58,7 +61,7 @@ $(document).ready(function() {
             <div class="txt">
               <p><?php echo html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()) ?></p>
             </div>
-            <a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+            <?php /*<a class="mais" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a> */ ?>
           </div>
           
         <?php endif; ?>
