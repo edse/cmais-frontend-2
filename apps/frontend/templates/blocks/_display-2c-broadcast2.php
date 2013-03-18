@@ -53,7 +53,7 @@
                
               </div>
               <!-- /contador -->
-
+ 
               <ul class="lista-calendario grid2">
               <?php foreach($displays as $k=>$d): ?>
                 <li>
