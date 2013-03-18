@@ -92,7 +92,7 @@
           <div class="txt">
             <p><?php echo html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()) ?></p>
           </div>
-          <a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a>
+          <?php /*<a class="mais" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="+leia mais">+leia mais</a> */ ?>
         </div>
         
           <?php endif; ?>
