@@ -1,18 +1,16 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>    
 <script src="/portal/js/jquery.summarize.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-$(document).ready(function() {
-
-  // simple example, using all default options
-  /***** apply the summarize() method to the "containing" element ****/
-  $('div.txt').summarize({
-    summaryElements: 1,
-    expandText: "+leia mais"
-  }); 
+    <script type="text/javascript">
+    $(document).ready(function() {
     
-});
-</script>
+      $('div.txt').summarize({
+        summaryElements: 1,
+        expandText: "+leia mais"
+      }); 
+        
+    });
+    </script>
     
     <div class="container home" id="geral">
 
