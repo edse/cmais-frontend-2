@@ -1,6 +1,5 @@
 <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet">
-<!--TESTE JE--> 
+<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet"> 
 <!-- container--> 
 <div class="container tudo">
   <!--topo coco-->
@@ -158,21 +157,21 @@
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left required" name="nome" id="nome" data-default="Seu nome" value="Seu nome" / >
+              <input type="text" class="span11 pull-left required" name="nome" id="nome" data-default="Seu nome" value="Seu nome" placeholder="Seu nome">
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-responsavel"></i>
-              <input type="text" class="span11 pull-left" name="nome_resp" id="nome_resp" data-default="Nome do responsável" value="Nome do responsável"/>
+              <input type="text" class="span11 pull-left" name="nome_resp" id="nome_resp" data-default="Nome do responsável" value="Nome do responsável" placeholder="Nome do responsável"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
-              <input type="text" class="span11 pull-left" name="email" id="email" data-default="E-mail para contato" value="E-mail para contato" />
+              <input type="text" class="span11 pull-left" name="email" id="email" data-default="E-mail para contato" value="E-mail para contato" placeholder="E-mail para contato" />
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               
               <div class="span9">
-                <input type="text" name="cidade" class="span12" id="cidade" data-default="Sua cidade" value="Sua cidade">
+                <input type="text" name="cidade" class="span12" id="cidade" data-default="Sua cidade" value="Sua cidade" placeholder="Sua cidade" >
               </div>
               
               <div class="span2 estado">
