@@ -1,5 +1,6 @@
-<?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>    
-<script src="/portal/js/jquery.summarize.js" type="text/javascript"></script>
+<?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
+    
+    <script src="/portal/js/jquery.summarize.js" type="text/javascript"></script>
 
     <script type="text/javascript">
     $(document).ready(function() {
