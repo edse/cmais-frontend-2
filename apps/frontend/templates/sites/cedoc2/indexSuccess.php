@@ -2,19 +2,19 @@
 <?php
 function word_limiter($str,$limit=10)
 {
-    if(stripos($str," ")){
+  if(stripos($str," ")){
     $ex_str = explode(" ",$str);
-        if(count($ex_str)>$limit){
-            for($i=0;$i<$limit;$i++){
-            $str_s.=$ex_str[$i]." ";
-            }
-        return $str_s;
-        }else{
-        return $str;
-        }
+    if(count($ex_str)>$limit){
+      for($i=0;$i<$limit;$i++){
+        $str_s.=$ex_str[$i]." ";
+      }
+      return $str_s;
     }else{
-    return $str;
+      return $str;
     }
+  }else{
+    return $str;
+  }
 }
 ?>
     <div class="container home" id="geral">
