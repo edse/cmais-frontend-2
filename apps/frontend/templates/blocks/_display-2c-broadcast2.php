@@ -14,7 +14,7 @@
               ->orderBy('s.date_start asc')
               ->limit('5')
               ->execute();
-          ?>
+          ?> 
           <?php if(isset($displays)): ?>
             <?php if(count($displays) > 0): ?>
               <?php if(strtotime($displays[0]->getDateStart()) >= strtotime(date('Y-m-d H:i:s'))): ?>
