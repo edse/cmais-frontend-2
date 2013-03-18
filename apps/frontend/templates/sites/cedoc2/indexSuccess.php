@@ -29,10 +29,10 @@
        <?php $related_video = $displays["destaque-principal"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?> 
        
        <?php
-              $display_img_src = $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-5-b');
+              $display_img_src = $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-5');
               if ($display_img_src == '') {
                 $related = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');   
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5');
               }
             ?>
             
