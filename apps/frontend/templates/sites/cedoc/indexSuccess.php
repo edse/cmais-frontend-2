@@ -24,7 +24,7 @@ function word_limiter($str,$limit=10)
       <div class="conteudo"> 
       <?php if(isset($displays['destaque-topo'])): ?>
         <?php if(count($displays['destaque-topo']) > 0): ?>
-        <a href="#"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
+        <a href="#" id="imagem-destacada"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
         <?php endif; ?>
       <?php endif; ?>
         <ul class="menu">
@@ -73,7 +73,7 @@ function word_limiter($str,$limit=10)
         <?php if(count($display_img_src) > 0): ?> 
         
          <div class="span4">
-          <a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
+          <a class="imagem-destaque" href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-principal"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
             <p><?php echo word_limiter(html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
