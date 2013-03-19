@@ -123,9 +123,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
-              <?php $related = $s->retriveRelatedAssetsByAssetTypeId(1); ?>
-              <?php echo count($related)?>
-              <?php //echo html_entity_decode($displays[0]->Asset->AssetContent->render()); ?>
+              <?php //echo html_entity_decode($s->Asset->AssetContent->render()); ?>
             </a>
             <hr class="tipo"/>
           </div>  
