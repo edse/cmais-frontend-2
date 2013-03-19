@@ -54,37 +54,19 @@
         <div id="cedocMenu"></div>
         
         <div class="span8">
-          <div id='cse' style='width: 100%;'>Procurando...</div>
-          <script src='//www.google.com/jsapi' type='text/javascript'></script>
-          <script type='text/javascript'>
-          google.load('search', '1', {language: 'pt', style: google.loader.themes.MINIMALIST});
-          google.setOnLoadCallback(function() {
-            var customSearchOptions = {};
-            var customSearchControl = new google.search.CustomSearchControl('014171385304484677642:rn0zsdt5eig', customSearchOptions);
-            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-            customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
-            var options = new google.search.DrawOptions();
-            options.enableSearchResultsOnly();
-            customSearchControl.draw('cse', options);
-            function parseParamsFromUrl() {
-              var params = {};
-              var parts = window.location.search.substr(1).split('&');
-              for (var i = 0; i < parts.length; i++) {
-                var keyValuePair = parts[i].split('=');
-                var key = decodeURIComponent(keyValuePair[0]);
-                params[key] = keyValuePair[1] ?
-                    decodeURIComponent(keyValuePair[1].replace(/\+/g, ' ')) :
-                    keyValuePair[1];
-              }
-              return params;
-            }
-            var urlParams = parseParamsFromUrl();
-            var queryParamName = 'q';
-            if (urlParams[queryParamName]) {
-              customSearchControl.execute(urlParams[queryParamName]);
-            }
-          }, true);
+          <script>
+            (function() {
+              var cx = '014171385304484677642:rn0zsdt5eig';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+                  '//www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
           </script>
+          <gcse:searchresults-only linkTarget="_self">Buscando...</gcse:searchresults-only>
         </div>
          
       </div>
