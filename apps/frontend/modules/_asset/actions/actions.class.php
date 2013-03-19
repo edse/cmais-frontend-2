@@ -18,7 +18,7 @@ class _assetActions extends sfActions
   public function executeIndex(sfWebRequest $request){
     if($request->getParameter('object')){
       // URI
-      $this->uri = $request->getUri();
+      $this->uri = str_replace('/index.php', '', $request->getUri());
       // URL
       $this->url = @current(explode('?',$this->uri));
       // main site
