@@ -92,10 +92,10 @@ function word_limiter($str,$limit=10)
           <?php if(count($displays['destaque-1']) > 0): ?>
                        
         <?php
-              $display_img_src = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-5-b');
+              $display_img_src = $displays['destaque-1'][0]->retriveImageUrlByImageUsage('image-5');
               if ($display_img_src == '') {
                 $related = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');   
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5');
               }
             ?>
          <div class="span6">
@@ -115,10 +115,10 @@ function word_limiter($str,$limit=10)
           <?php if(count($displays['destaque-2']) > 0): ?>
                        
          <?php
-              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-5-b');
+              $display_img_src = $displays['destaque-2'][0]->retriveImageUrlByImageUsage('image-5');
               if ($display_img_src == '') {
                 $related = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType('Preview');
-                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5-b');
+                $display_img_src = $related[0]->retriveImageUrlByImageUsage('image-5');
               }
             ?>
          <div class="span6">
