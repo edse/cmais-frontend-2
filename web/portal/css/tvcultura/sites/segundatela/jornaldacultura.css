@@ -113,7 +113,6 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 768px)  {
   .hero-unit .bgtopo { display:none; }
-  body { background-color:#a4050d; }
   .conteudo { background:#fff; overflow:hidden; }
   .accordion-inner iframe { width:100%; height:auto; }
   .hero-unit { padding:1%; }
@@ -131,6 +130,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 480px)  {
+  body { background-color:#a4050d; }
   .hero-unit .col-dir,
   .hero-unit .col-esq { max-width: 100%; width:100%;}  
   .hero-unit .col-dir .fechar { display:none; }

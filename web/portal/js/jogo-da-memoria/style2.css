@@ -747,7 +747,7 @@ body.appcache-allinfo #appcache_info.appcache-error,
   content: 'Download complete. Ready to be accessed offline.';
 }
 
-#game { margin-top:40px; }
+#game { margin-top:40px; margin-left:110px; }
 #gameStats { background:none; box-shadow: none; padding:0; height:auto; margin-bottom:23px; }
 #reset { background:#1db9e2; color:#fff; }
 #gameScore, #reset { padding:0; text-align:center;  }
@@ -757,7 +757,7 @@ body.appcache-allinfo #appcache_info.appcache-error,
 #click { margin-right:20px; }
 #gamePlay { text-transform:uppercase; font-size:30px; border-radius:20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; width:110px; height:30px; line-height:30px; text-align:center;  }
 #playground { margin-top:55px; }
-#gameComplete a.button { border:8px solid #1EB9E2; background:#1893CF; color:#fff; border-radius: 20px;    font-size: 30px;  height: 30px;  line-height: 30px; text-transform: uppercase; width: 305px; }
+#gameComplete a.button { border:8px solid #1EB9E2; background:#1893CF; color:#fff; border-radius: 20px;    font-size: 30px;  height: 30px;  line-height: 30px; text-transform: uppercase; width: 315px; }
 #result p { color:#1893cf; text-transform:uppercase; font-size:18px; font-family: 'ubuntu', sans-serif; margin:40px 0; line-height: 24px; }
 #game.open #gameIntro { margin-top:-35px; }
 #game.play #gameIntro, #game.end #gameIntro { z-index: -10; }

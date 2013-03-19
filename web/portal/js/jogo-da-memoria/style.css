@@ -32,7 +32,7 @@ a{outline:none;text-decoration:none;color:#DA4930}
 #gameComplete a.facebook-share-button{background:#369;border:1px solid #036}
 #gameComplete a.plurk-share-button{background:#C63;border:1px solid #930}
 #gameComplete .twitter-share-button{vertical-align:middle;display:inline-block;font-size:11px}
-#gameComplete a.button{display:block;text-decoration:none;border:8px solid #1EB9E2;background:#1893CF;color:#fff;border-radius:20px;font-size:30px;height:30px;line-height:30px;text-transform:uppercase;width:305px;margin:8px auto 0;padding:10px}
+#gameComplete a.button{display:block;text-decoration:none;border:8px solid #1EB9E2;background:#1893CF;color:#fff;border-radius:20px;font-size:30px;height:30px;line-height:30px;text-transform:uppercase;width:315px;margin:8px auto 0;padding:10px}
 #result{background:#FFF;width:60%;border-radius:5px;font-size:20px;border:none;position:relative;margin:100px auto 50px;padding:20px 0}
 #result:before{content:' ';position:absolute;width:0;height:0;left:140px;top:-50px;border:0 solid;border-color:transparent}
 #result:after{content:' ';position:absolute;width:0;height:0;left:142px;top:-30px;border:20px solid;border-color:transparent}
