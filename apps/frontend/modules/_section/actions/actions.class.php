@@ -48,8 +48,7 @@ class _sectionActions extends sfActions
         $this->site_id = $request->getParameter('site_id');
       
       // URI
-      $this->uri = $request->getUri();
-      $this->uri = str_replace('/index.php', '', $this->uri);
+      $this->uri = str_replace('/index.php', '', $request->getUri());
 
       // URL
       $this->url = @current(explode('?',$this->uri));
