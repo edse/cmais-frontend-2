@@ -23,6 +23,7 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 .container { background:#fff; }
 #geral { margin-top:0; max-width:980px; padding-bottom:40px; margin-top:2px; }
 
+.form-search .input-append .btn.ok,
 h2,
 .conteudo form .linha .enviar,
 .menu {font-family: 'source_sans_proregular';}
@@ -175,3 +176,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .home .txt { *max-height:240px; }
 .menu .search-query.input-medium  { *border:none; }
 /* /excecoes*/
+
+.form-search .input-append .btn.ok { background:#666; color:#fff; font-size:14px; font-weight:bold; box-shadow:none; text-shadow:none; padding:0 5px; border:0; }
+.menu .search-query.input-medium { border-right: none; }
+.icon-search { background:url(/portal/images/capaPrograma/cedoc/lupa.jpg) no-repeat; width:16px; height:16px; display:block;}
