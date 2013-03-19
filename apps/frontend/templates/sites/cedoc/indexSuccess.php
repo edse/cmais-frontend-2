@@ -1,4 +1,4 @@
-<?php include_partial_from_folder('blocks', 'global/topo-fpa2', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
+<?php include_partial_from_folder('blocks', 'global/topo-cmais-mini', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 <?php
 function word_limiter($str,$limit=10)
 {
