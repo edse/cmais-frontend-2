@@ -747,7 +747,7 @@ body.appcache-allinfo #appcache_info.appcache-error,
   content: 'Download complete. Ready to be accessed offline.';
 }
 
-#game { margin-top:40px; }
+#game { margin-top:40px; margin-left:110px; }
 #gameStats { background:none; box-shadow: none; padding:0; height:auto; margin-bottom:23px; }
 #reset { background:#1db9e2; color:#fff; }
 #gameScore, #reset { padding:0; text-align:center;  }
