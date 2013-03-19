@@ -44,8 +44,8 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 $(function(){
   var loader = new PxLoader();
 
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/start.jpg');
-  //loader.addImage('/portal/images/capaPrograma/cocorico/memoria/end.jpg');
+  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/start2.jpg');
+  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/end.jpg');
   loader.addImage('/portal/images/capaPrograma/cocorico/memoria/card.jpg');
   loader.addImage('/portal/images/capaPrograma/cocorico/memoria/left.png');
   loader.addImage('/portal/images/capaPrograma/cocorico/memoria/right.png');
@@ -255,7 +255,7 @@ function EndGame() {
   playSound('applause');
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Seus pontos ' + total_score + '<br>(' + clicks + ' cliques em ' + score + ' segundos)');
+  $('#score').html('Sua pontuação ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   $('.twitter-share-button').remove();
   $('.facebook-share-button').off('click');
