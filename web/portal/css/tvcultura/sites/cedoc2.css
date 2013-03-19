@@ -178,8 +178,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 /* /excecoes*/
 
 .form-search .input-append .btn.ok { background:#666; color:#fff; font-size:14px; font-weight:bold; box-shadow:none; text-shadow:none; padding:0 5px; border:0; }
-.menu .search-query.input-medium { border-right: none; }
-.icon-search { background:url(/portal/images/capaPrograma/cedoc/lupa.jpg) no-repeat; width:16px; height:16px; display:block;}
+.menu .search-query.input-medium { border-right: none; background:#fff url(/portal/images/capaPrograma/cedoc/lupa.jpg) no-repeat 2px; padding:0 0 0 20px; }
 
 /* topo*/
 .navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
