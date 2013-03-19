@@ -23,6 +23,7 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 .container { background:#fff; }
 #geral { margin-top:0; max-width:980px; padding-bottom:40px; margin-top:2px; }
 
+.form-search .input-append .btn.ok,
 h2,
 .conteudo form .linha .enviar,
 .menu {font-family: 'source_sans_proregular';}
@@ -175,3 +176,26 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .home .txt { *max-height:240px; }
 .menu .search-query.input-medium  { *border:none; }
 /* /excecoes*/
+
+.form-search .input-append .btn.ok { background:#666; color:#fff; font-size:14px; font-weight:bold; box-shadow:none; text-shadow:none; padding:0 5px; border:0; }
+.menu .search-query.input-medium { border-right: none; }
+.icon-search { background:url(/portal/images/capaPrograma/cedoc/lupa.jpg) no-repeat; width:16px; height:16px; display:block;}
+
+/* topo*/
+.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
+.navbar-fixed-top .nav > li > a { display: block;    height: 34px;    margin-top: 6px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
+.navbar-fixed-top .nav > .tvratimbum > a { background-position:0 -34px; }
+.navbar-fixed-top .nav > .multicultura > a { background-position:0 -68px; }
+.navbar-fixed-top .nav > .univesp > a { background-position:0 -102px; }
+.navbar-fixed-top .nav > .culturabrasil > a { background-position:0 -136px; }
+.navbar-fixed-top .nav > .culturafm > a { background-position:0 -170px; }
+.navbar-fixed-top .nav > .itunes > a { background-position:0 -306px; }
+.navbar-fixed-top .nav > .facebook > a { background-position:0 -339px; }
+.navbar-fixed-top .nav > .google > a { background-position:0 -272px; }
+.navbar-fixed-top .nav > .instagram > a { background-position:0 -238px; }
+.navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
+.navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
+.navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
+.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; background-color: #1B1B1B;    background-image: -moz-linear-gradient(center top , #222222, #111111);    background-repeat: repeat-x;    border-color: #252525;    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5); }
+#geral { margin-top:45px; }
+/* /topo*/
