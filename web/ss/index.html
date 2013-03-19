@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title> Quiz Musical · Cultura Brasil </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz Musical · Cultura Brasil">
+    <meta name="author" content="Cultura Brasil">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/bootstrap.css?NOCACHE" rel="stylesheet">
+    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="docs/assets/css/docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="img/ico.png">
+  </head>
+  <body>
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+
+        <div class="container">
+          
+          <div class="nav-collapse">
+            <a class="brand" style="float: left; margin-left: 10px; margin-right: 20px;" href="./">Quiz Musical · RadarCultura</a>
+          </div>
+
+          <div class="btn-group pull-right" style="margin-left: 5px">
+            <a href="#regras" role="button" class="btn" data-toggle="modal" style="opacity: .9">Regras</a>
+          </div>
+          
+          <div id="status-players" class="pull-right" style="margin-left: 5px">
+            <a class="btn btn-primary disabled" style="opacity: 1">
+              Jogadores: <span class="players">-</span>
+            </a>
+          </div>
+
+          <div id="status-points" class="pull-right hide" style="margin-left: 5px">
+            <a class="btn btn-warning disabled" style="opacity: 1">
+              Pontos: <span class="points">0</span>
+            </a>
+          </div>
+
+          <div id="status" class="pull-right hide" style="margin-left: 5px">
+            <a class="btn btn-danger disabled" style="opacity: 1">
+              Offline
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="regras" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <h3 id="myModalLabel">Quiz Musical – Regras</h3>
+      </div>
+      <div class="modal-body">
+        <h4>O que é?</h4>
+        <p>O “Quiz Musical – Especial Dia das Mulheres”, realizado pela Cultura Brasil, é um concurso cultural com 10 questões de múltipla escolha. O Quiz será realizado ao longo do programa RadarCultura, das 15 às 17 horas, no dia 08 de março de 2013. O vencedor do Quiz será premiado com um kit contendo 1 DVD “Maria Rita – Redescobrir”, 1 DVD “Isaura Garcia - MPB Especial”, 1 “CD Aline Muniz – Onde Tudo Faz Sentido”, 1 CD “Izzy Gordon – Negro Azul da Noite” e 1 “CD Ana Cañas – Volta”.</p>
+        <h4>Como funciona?</h4>
+        <p>Os participantes devem realizar um cadastro com nome e email de contato e aguardar as perguntas. Cada pergunta tem um tempo determinado para resposta e uma pontuação. O participante com maior quantidade de pontos é o vencedor.</p>
+        <h4>Regras do jogo</h4>
+        <ol>
+          <li>As perguntas 1, 2 e 3 valem 10 pontos cada. As perguntas 4, 5 e 6 valem 20 pontos cada. As perguntas 7, 8 e 9 valem 30 pontos cada. A pergunta 10 vale 40 pontos. Respostas erradas não subtraem pontos.</li>
+          <li>Em caso de empate na pontuação final, será vencedor o participante que tiver respondido a todas as perguntas em menor tempo.</li>
+          <li>Os participantes tem tempo determinado para responder a cada pergunta.</li>
+          <li>O cadastro pode ser efetuado ao longo do programa, mas os participantes que ingressarem após o início do Quiz não poderão responder as perguntas enviadas antes do cadastro.</li>
+          <li>Os participantes que fecharem o navegador ou a janela do Quiz automaticamente perderão seus pontos e deverão efetuar um novo cadastro para participar do concurso.</li>
+          <li>Caso o e-mail de contato não exista, o participante será desqualificado.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Concordo com as regras do jogo</button>
+      </div>
+    </div>
+
+    <!-- Start
+    ================================================== -->
+    <div id="start" class="container">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Carregando...</h1>
+        </div>
+        <p class="lead">Quiz Musical Cultura Brasil</p>
+      </div>
+    </div>
+
+    <!-- Flash
+    ================================================== -->
+    <div id="flash-needed" class="container hide">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Você precisa ter o plugin Flash Player versão 10</h1>
+        </div>
+        <p class="lead">Seu navegador não suporta todos os recursos do HTML5.</p>
+        <p>Temos uma implementação em Flash, mas seu navegador não possui o plugin.</p>
+        <p>Para jogar você precisará atualizar seu navegador ou instalar o plugin Flash.</p>
+      </div>
+    </div>
+
+    <!-- Server Down
+    ================================================== -->
+    <div id="server-down" class="container hide">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Você não está conectado <br /><small>tente novamente mais tarde</small></h1>
+        </div>
+        <p class="lead">Verifique se a sua conexão com a Internet está disponível.</p>
+      </div>
+    </div>
+
+    <!-- User name
+    ================================================== -->
+    <div id="user-name" class="container hide" style="min-height: 375px;">
+      <div class="row-fluid">
+        <!--
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Quiz Musical <br /><small>RadarCultura</small></h1>
+        </div>
+        -->
+        <p style="margin-top: 35px; font-size: 18px; line-height: 25px;">Participe do Quiz do programa RadarCultura e concorra a prêmios. As perguntas do Quiz serão disponibilizadas ao longo do programa, das 15 às 17 horas, e terão tempo determinado para a resposta. Fique ligado!</p>
+
+        <div class="page-header">
+          <h3 style="margin-top: 40px;">Entre com seu nome e email</h3>
+        </div>
+
+        <div class="span6">
+          <form class="form-inline" style="margin-top: 10px;" onsubmit="return false">
+            <input type="text" id="name" name="name" placeholder="Nome" class="span4" style="margin-bottom: 5px;">
+            <input type="text" id="email" name="email" placeholder="Email" class="span6" style="margin-bottom: 5px;">
+            <button id="send-name" type="button" class="btn btn-inverse" style="margin-bottom: 5px;">Enviar</button>
+            <label class="checkbox">
+              <input id="agree" type="checkbox"> Concordo com as <a href="#regras" data-toggle="modal">regras</a> do jogo
+            </label>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <!-- Game
+    ================================================== -->
+    <div id="game" class="container hide">
+      
+      <!--
+      <audio id="audio_tictac" loop>
+        <source src="audio/tictac.mp3" />
+        <source src="audio/tictac.ogg" />
+      </audio>
+      <audio id="audio_correct">
+        <source src="audio/correct.mp3" />
+        <source src="audio/correct.ogg" />
+      </audio>
+      <audio id="audio_wrong">
+        <source src="audio/wrong.mp3" />
+        <source src="audio/wrong.ogg" />
+      </audio>
+      -->
+
+      <div class="row-fluid">
+
+        <!-- Question list
+        ================================================== -->
+        <div class="span3">
+          <ul class="questions nav nav-list bs-docs-sidenav">
+            <!-- filled by websocket -->
+          </ul>
+        </div>
+          
+        <!-- Question view
+        ================================================== -->
+        <div id="questions-view">
+          <!-- filled by websocket -->
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Next question
+    ================================================== -->
+    <div id="first" class="container hide" style="margin-bottom: 0px;">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Prepare-se! <br /><small id="wait">aguarde a primeira pergunta do Quiz Musical</small></h1>
+        </div>
+        <div class="progress progress-striped active">
+          <div class="bar" style="width: 100%;"></div>
+        </div>
+        
+        <div class="alert alert-block alert-danger fade in">
+          <h4 class="alert-heading">ATENÇÃO!</h4>
+          <p>Não feche essa janela durante a participação no Quiz Musical - RadarCultura</p>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Next question
+    ================================================== -->
+    <div id="next" class="container hide" style="margin-bottom: 0px;">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Aguarde a próxima pergunta! <br /><small id="wait">lembre-se que o critério de desempate é menor tempo de resposta das perguntas</small></h1>
+        </div>
+        <div class="progress progress-striped active">
+          <div class="bar" style="width: 100%;"></div>
+        </div>
+        
+        <div class="alert alert-block alert-danger fade in">
+          <h4 class="alert-heading">ATENÇÃO!</h4>
+          <p>Não feche essa janela durante a participação no Quiz Musical - RadarCultura</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- game over
+    ================================================== -->
+    <div id="gameover" class="container hide" style="margin-bottom: 0px;">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Game Over <br /><small>Obrigado por participar</small></h1>
+        </div>
+        <!-- <p class="lead" style="clear: both; padding-top: 10px">Obrigado por participar.</p> -->
+      </div>
+    </div>
+
+    <!-- Ranking
+    ================================================== -->
+    <div id="ranking" class="container hide" style="margin-bottom: 0px;">
+      <div class="row-fluid">
+        <div class="page-header">
+          <h1 style="margin-top: 40px;">Ranking <br /><small id="top">top players</small></h1>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Nome</th>
+              <th>Pontos</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <span>Copyright © 2013 Fundação Padre Anchieta.</span>
+      </div>
+    </footer>
+
+    <!-- Le javascripts
+    ================================================== -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="js/quiz.js?NOCACHE=2"></script>
+    <script type="text/javascript" src="js/websocket-js/swfobject.js"></script>
+    <script type="text/javascript" src="js/websocket-js/web_socket.js"></script>
+
+  </body>
+</html>
