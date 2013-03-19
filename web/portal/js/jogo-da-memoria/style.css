@@ -115,3 +115,5 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
 #credit,#game.play #gameScore,#game.play #reset,#mute.music,#fullscreen.support,#game.play #cards,#appcache_info.appcache-updateready a,#appcache_info.appcache-obsolete a{display:block}
 #loading.loaded,#splash.disable{display:none}
 .card-removed,#splash span.matched:after{opacity:0}
+#cards { *margin-left:-760px; *margin-top:10px;}
+#game.play #gameIntro, #game.end #gameIntro { *display:none; }
