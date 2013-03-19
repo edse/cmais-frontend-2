@@ -196,5 +196,5 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; background:#000; }
+.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; background-color: #1B1B1B;    background-image: -moz-linear-gradient(center top , #222222, #111111);    background-repeat: repeat-x;    border-color: #252525;    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5); }
 /* /topo*/
