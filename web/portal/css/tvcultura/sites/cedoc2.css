@@ -196,5 +196,5 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
+.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; background:#000; }
 /* /topo*/
