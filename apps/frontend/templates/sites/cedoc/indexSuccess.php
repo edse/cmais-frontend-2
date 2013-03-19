@@ -24,7 +24,7 @@ function word_limiter($str,$limit=10)
       <div class="conteudo">
       <?php if(isset($displays['destaque-topo'])): ?>
         <?php if(count($displays['destaque-topo']) > 0): ?>
-        <a href="#"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
+        <a href="#" id="imagem-destacada"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
         <?php endif; ?>
       <?php endif; ?>
         <ul class="menu">
