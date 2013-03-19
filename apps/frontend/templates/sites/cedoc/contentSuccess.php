@@ -11,7 +11,7 @@
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/acervo" title="Acervo">acervo</a></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/contato" title="Contato">contato</a></li>
           <li>
-            <?php include_partial_from_folder('sites/cedoc2', 'global/formBusca') ?>
+            <?php include_partial_from_folder('sites/cedoc', 'global/formBusca') ?>
           </li>
         </ul>
         <div class="span8">
