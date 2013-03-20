@@ -13,7 +13,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--descricao vagas-->
       <div class="accordion trabalhe-conosco" id="accordion2">
         <?php foreach($section->subsections() as $k=>$s):?>
-          <?php echo $s->getAssets(); ?>
+          <?php echo $s->getTitle(); ?>
         <?php endforeach;?>
       </div>
       <!--descricao vagas-->    
