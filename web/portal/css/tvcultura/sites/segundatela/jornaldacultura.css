@@ -36,7 +36,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .hero-unit .menu-jc .como { background:#fff; padding:0 5px;}
 .hero-unit .menu-jc .como:hover { background:#666; color:#fff; }
 .hero-unit .menu-jc span { margin:-6px 10px 0 10px; float:left; color:#c4c4c4; font-size: 18px; }
-.hero-unit .menu-jc .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; }
+.hero-unit .menu-jc .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; min-width:20px; text-align:center;  }
 .hero-unit .menu-jc .seta { border:5px solid transparent;  border-left-color: #666; width: 0; height:0; margin:0; padding:0; display:block; float:left; margin-top:5px; }
 .hero-unit .menu-jc .offline { color:#ce0002;}
 .conteudo h2 { font-size:22px; line-height:24px; margin:20px 0 5px 0; color:#666; text-transform:uppercase; }
