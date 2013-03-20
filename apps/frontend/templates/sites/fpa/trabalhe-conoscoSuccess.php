@@ -129,7 +129,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- estagios -->
           <?php
             $related = $s->getAssets();
-            echo count($s->getAssets())
+            foreach($related as $d):
+              $download = $related[0]->retriveRelatedAssetsByAssetTypeId(8);
+              echo count($download);
+            endforeach;
+              
+            
           ?>
           <!-- estagios -->  
           <!--cadastro estagio-->
