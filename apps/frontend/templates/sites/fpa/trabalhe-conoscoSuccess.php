@@ -27,10 +27,19 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id!=2287 && $s->id!=2296):
         ?>  
           <!-- Vagas de emprego -->
-          <div class="accordion-group">
-          <?php echo $s->getTitle(); ?>
-          </div>
-          <!-- /Vagas de emprego -->
+          <div class="accordion-group">  
+            <div class="accordion-heading">
+              <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
+                <?php echo $s->getTitle(); ?>
+              </a>
+            </div>  
+            <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
+              <div class="accordion" id="vagas-relacionadas">
+                teste
+              </div>
+            </div>
+           </div>
+           <!-- /Vagas de emprego -->     
         <?php 
           elseif($s->id==2287): 
         ?>
@@ -90,6 +99,16 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--descricao vagas-->    
     </div>
     <!--/ESQUERDA-->
+    <!--DIREITA-->
+    <div class="col-direita span4">
+      <!--CONFIRA-->  
+      <a href="http://www2.tvcultura.com.br/selecao/vagas/FPAREPRSE001.pdf" class="trabalhe btn btn-primary" target="_blank" title="Confira aqui nossas vagas e prazos.">
+        <p>Regulamento Interno de Processo Seletivo</p>
+        <p>Leia antes da Inscrição</p>
+      </a>
+      <!--/CONFIRA-->
+    </div>
+    <!-- /DIREITA-->
   </div>
   <!--/colunas-->
 </div>  
