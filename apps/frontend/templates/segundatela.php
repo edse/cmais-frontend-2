@@ -152,6 +152,11 @@ $('.accordion-body').on('shown', function(){
   }, "fast");
 });
 
+// padding ultimo conteudo
+$('.accordion-body').each(function() {
+    $(this).find('p:last').css('padding-bottom', '15px');
+  });
+
 </script>
 
   </body>
