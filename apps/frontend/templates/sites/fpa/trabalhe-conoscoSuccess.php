@@ -27,7 +27,17 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id!=2287 && $s->id!=2296):
         ?>  
           <!-- Vagas de emprego -->
-          <div class="accordion" id="vagas-relacionadas">
+          <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
+              Processo Seletivo
+            </a>
+            <hr class="tipo"/>
+          </div>
+          
+            <!--vagas relacionadas-->
+            <div id="emprego1" class="accordion-body collapse in">
+              <div class="accordion" id="vagas-relacionadas">
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
@@ -126,6 +136,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <!--/emprego aberto-->
             </div>
+          </div>
+          <!--vagas relacionadas-->
+        </div>
            <!-- /Vagas de emprego -->     
         <?php 
           elseif($s->id==2287): 
