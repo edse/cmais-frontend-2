@@ -66,6 +66,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
             </div>
+            <div class="span12">
             <?php
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
@@ -77,7 +78,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <?php     
               endif;
             endforeach;  
-            ?> 
+            ?>
+            </div> 
           </div>
           <!-- /Resultado --> 
         <?php   
