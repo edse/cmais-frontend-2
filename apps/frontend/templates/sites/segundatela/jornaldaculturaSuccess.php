@@ -12,19 +12,7 @@
   </div>
 </div>
 <!-- /modal -->
-<!-- modal-->
-<div id="myModallink" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-      ×
-    </button>
-    <h3 id="myModalLabel">Modal do link</h3>
-  </div>
-  <div class="modal-body">
-    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-  </div>
-</div>
-<!-- /modal -->
+
 <div class="container">
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="hero-unit">
@@ -37,7 +25,7 @@
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
         <div class="fb">
-          <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
@@ -58,6 +46,7 @@
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2">
+        <!--
         <div id="ancora1" class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle ativo" data-toggle="collapse" data-parent="#accordion2"  href="#collapse1" > <i class="icon-user icon-white"></i>Collapsible Group Item #1 <img class="loader"  src="/portal/images/capaPrograma/segundatela/jornaldacultura/ajax-loader.gif" alt="carregando" /> </a>
@@ -216,6 +205,7 @@
             </div>  
           </div>
         </div>
+        -->
       </div>
       <!-- /accordion -->
     </div>
