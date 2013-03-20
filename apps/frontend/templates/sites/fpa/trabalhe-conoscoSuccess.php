@@ -45,8 +45,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             foreach($related as $d):;
               if($d->asset_type_id==8):
             ?>
-              <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-                <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+              <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[0]->AssetFile->getFile(); ?>" title="<?php echo $related[0]->AssetFile->getAsset();?>" target="_blank">
+                <i class="icon-file icon-blue"></i> <?php echo $related[0]->AssetFile->getAsset(); ?>
               </a>
             <?php     
               endif;
