@@ -23,7 +23,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </span>
           <?php elseif($s->id!=2287): ?>
           <div class="accordion-heading">
-            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
+            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
@@ -118,30 +118,32 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/tipo da vaga-->
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
-            <hr class="linha">
+            <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
-            <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
-              <i class="icon-chevron-right"></i>
+            <a class="btn-cat" title="">
+              <i class="icon-chevron-down"></i>
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
           </div>
-          <!-- estagios -->
           <?php
             $related = $s->getAssets();
-            foreach($related as $d):
-              $download = $related[0]->AssetFile->getFile();;
-              echo $download;
-            endforeach;
-              
-            
+            foreach($related as $k=>$d):;
+              if($related[$k]->asset_type_id==8):
           ?>
-          <!-- estagios -->  
           <!--cadastro estagio-->
-          <div id="emprego<?php echo $k?>" class="accordion-body collapse in">
-            <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+          <div id="estagio<?php echo $k?>">
+            <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+              <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+            </a>
           </div>
+          <?php     
+              endif;
+            endforeach;
+          ?>
+          <br>
           <!--/cadastro estagio-->
+          <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
           <?php endif;?>
         <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
