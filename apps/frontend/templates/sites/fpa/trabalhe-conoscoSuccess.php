@@ -17,6 +17,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <div class="accordion-group">
                 <?php echo $s->getTitle(); ?>
                 </div>
+                <?php elseif($s->id==2287): ?>
+                <?php echo $s->getTitle(); ?>
+                <?php elseif($s->id==2296): ?>
+                <?php echo $s->getTitle(); ?>  
         <?php   endif;
             endforeach;?>
       </div>
