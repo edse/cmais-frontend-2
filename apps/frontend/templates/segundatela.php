@@ -18,21 +18,11 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
    
-    <!-- estatico -->
-    <title>Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
-    <meta name="title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
-    <meta name="language" content="pt_BR" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:type" content="website" /> 
-    <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:url" content="http://tvcultura.cmais.com.br/segundatela/jornaldacultura" />
-    <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/segundatela/fbsegundatela.jpg" />
-    <!-- estatico -->
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
@@ -82,10 +72,85 @@
       }());
     </script>
     
-    <script type="text/javascript" src="/ss/js/websocket-js/swfobject.js"></script>
-    <script type="text/javascript" src="/ss/js/websocket-js/web_socket.js"></script>
-    <script type="text/javascript" src="/ss/js/json2.js"></script>
-    <script type="text/javascript" src="/ss/js/app.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
+    
+    <script type="text/javascript">
+    /*
+    //yotube API
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    //arrays para players multiplos
+    var player = new Array();
+    var cont = 0;
+    var players = new Array();
+    var playing = false; 
+
+    $('.accordion-body').on('show', function() {
+      console.log(playing);
+      if(playing)
+        playing.pauseVideo();
+    });
+
+    function checkState(res){
+      if(res.data==1){
+        playing=players[i].attr("id");
+      }
+    }
+
+    function onYouTubeIframeAPIReady() {
+    
+      $('.accordion-body iframe').each(function(i){
+        $(this).attr("id","player"+i);
+        players[i] = $("#player"+i);
+      })
+    
+      for(var i=0; i < players.length; i++){
+        player[i] = new YT.Player(players[i].attr("id"));
+        player[i].addEventListener("onStateChange", function(res){
+          if(res.data == 1){
+            var i = res.target.a.id.substring(6,7);
+            playing = player[i];
+          }
+        });
+      }
+    }  
+
+    $('#myTab a').click(function(e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+
+    // colocando e tirando ativo
+    $('.accordion-body').on('hidden', function() {
+      //remove barra ativa
+      $(this).prev().find('a').removeClass('ativo');
+    });
+
+    $('.accordion-body').on('show', function() {
+      //remove barra ativa
+      $(this).prev().find('a').addClass('ativo');
+    });
+
+    //subindo pro topo
+    $('.accordion-body').on('shown', function(){
+      var el = $(this).parent();
+      $('html, body').animate({
+        scrollTop: el.offset().top
+      }, "fast");
+    });
+
+// padding ultimo conteudo
+$('.accordion-body').each(function() {
+    $(this).find('p:last').css('padding-bottom', '15px');
+  });
+*/
+</script>
 
   </body>
 </html>

@@ -32,16 +32,16 @@
       <div class="hero-unit">
         <div class="bgtopo"><h1><img src="/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" /></h1></div>
         <div class="col-dir">
-          <a href="#" class="btn btn-primary fechar">Fechar janela <i class="icon-remove-sign icon-white"></i></a>
+          <a href="#" class="btn btn-primary fechar">Fechar<i class="icon-remove-sign icon-white"></i></a>
           <div class="menu-topo">
-            <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><span class="barra">|</span><a class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</a><a class="offline">Desconectado</a>
+            <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><span class="barra">|</span><p class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</p><p class="offline">Desconectado</p>
           </div>
           <div class="redes">
             <div class="twt">
               <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
             </div>
             <div class="fb">
-              <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+              <fb:like href="tvcultura.cmais.com.br/segundatela/grade2013" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
             </div>
             <div class="gplus">
               <g:plusone size="medium" count="false"></g:plusone>
@@ -169,20 +169,4 @@
        <!-- /direita -->
         
       </div>
-      
-<script type="text/javascript">
-$('#myTab a').click(function (e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
-$('.accordion-body').on('hidden', function(){
-  $(this).prev().find('a').removeClass('ativo');
-});
-$('.accordion-body').on('show', function(){
-  $(this).prev().find('a').addClass('ativo');
-});
-
-$('.accordion-body').each(function() {
-  $(this).find('p:last').css('padding-bottom', '15px');
-});
-</script>
+     
