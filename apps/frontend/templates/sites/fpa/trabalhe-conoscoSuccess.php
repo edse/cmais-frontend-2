@@ -52,7 +52,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               endif;
             endforeach;
             ?>
-            <div>
+            <div class="span12">
               <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
             </div>
           </div>
@@ -60,9 +60,26 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <?php 
           elseif($s->id==2296):
         ?>
+          <!-- Resultado -->
           <div class="accordion-group">
-          <?php echo $s->getTitle(); ?>
-          </div> 
+            <div class="linha"></div>
+            <div class="accordion-heading trabalhe-conosco">
+              <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+            </div>
+            <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($d->asset_type_id==8):
+            ?>
+              <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+                <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+              </a>
+            <?php     
+              endif;
+            endforeach;  
+            ?> 
+          </div>
+          <!-- /Resultado --> 
         <?php   
           endif;
          endforeach;
