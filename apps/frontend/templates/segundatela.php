@@ -23,22 +23,6 @@
     <?php include_metas() ?>
     <?php include_meta_props() ?>
    
-    <!-- estatico -->
-    <!--
-    <title>Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
-    <meta name="title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
-    <meta name="language" content="pt_BR" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:type" content="website" /> 
-    <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:url" content="http://tvcultura.cmais.com.br/segundatela/jornaldacultura" />
-    <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/segundatela/fbsegundatela.jpg" />
-    -->
-    <!-- estatico -->
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
