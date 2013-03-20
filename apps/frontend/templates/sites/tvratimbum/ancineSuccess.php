@@ -96,6 +96,15 @@
                 
                 <!--explicacao--> 
                 <div class="explicacao"> 
+                  <?php
+                  $displays = Doctrine_Query::create()
+                    ->select('a.*')
+                    ->from('Section s')
+                    ->andWhere('a.site_id = ?', (int)$site->id)
+                    ->orderBy('d.id desc')
+                    ->execute();
+                ?>
+            
                 
                 <?php foreach($displays as $b): ?>  
                   
