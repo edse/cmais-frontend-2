@@ -1651,7 +1651,7 @@ EOT;
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a')
-        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6')
+        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
         ->andWhere('a.title LIKE ?', '%'.$query.'%')
         ->limit(5)
         ->execute();
@@ -1694,8 +1694,11 @@ EOT;
       $asset = Doctrine::getTable('Asset')->findOneById($id);
       if($asset->AssetType->getSlug() == "content")
         $content = "<p>".$asset->AssetContent->render()."</p>";
-      else
+      else if($asset->AssetType->getSlug() == "video")
         $content = '<p><iframe width="100%" height="390" src="http://www.youtube.com/embed/'.$asset->AssetVideo->getYoutubeId().'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe></p>';
+      else
+        $content = $this->getPartial('enquete', array('asset' => $asset));
+      
       if($save){
         if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
           mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
