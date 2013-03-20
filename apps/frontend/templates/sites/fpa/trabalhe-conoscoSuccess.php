@@ -17,7 +17,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
-          <?php if(count($s->getAssets())<=0 && $s->id!=2287):?>
+          <?php if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):?>
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
@@ -116,10 +116,21 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php endif; ?>
           </div>
           <!--/tipo da vaga-->
+          <?php if($s->id==2296): ?>
+          <!--resultados anteriores -->
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
+            <a class="btn-cat" title="">
+              <i class="icon-chevron-down"></i>
+              <?php echo $s->getTitle(); ?>
+            </a>
+            <hr class="tipo"/>
+          </div> 
+          <!--/resultados anteriores -->
+          <?php elseif($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
-          <?php if($s->id==2287): ?>
-            <div class="linha"></div>
-            <div class="accordion-heading trabalhe-conosco">
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" title="">
               <i class="icon-chevron-down"></i>
               <?php echo $s->getTitle(); ?>
