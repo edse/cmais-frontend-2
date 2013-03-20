@@ -19,7 +19,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       
           <?php if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):?>
           <div class="accordion-group">
-            <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
+            <span class="tipo-de-emprego" <?php //if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
           </div>
@@ -34,6 +34,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $d):?>
+                teste
                 <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
