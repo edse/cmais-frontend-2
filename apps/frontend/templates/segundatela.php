@@ -44,8 +44,8 @@
   </head>
   <body>
     <?php echo $sf_content ?>
-    <!-- scripts -->
     
+    <!-- scripts -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
@@ -60,6 +60,7 @@
     </script>
     <!-- /scripts -->
     <div id="fb-root"></div>
+    
     <script>
       window.fbAsyncInit = function() {
         FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
@@ -76,81 +77,6 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
-    
-    <script type="text/javascript">
-    /*
-    //yotube API
-    var tag = document.createElement('script');
-    tag.src = "//www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    //arrays para players multiplos
-    var player = new Array();
-    var cont = 0;
-    var players = new Array();
-    var playing = false; 
-
-    $('.accordion-body').on('show', function() {
-      console.log(playing);
-      if(playing)
-        playing.pauseVideo();
-    });
-
-    function checkState(res){
-      if(res.data==1){
-        playing=players[i].attr("id");
-      }
-    }
-
-    function onYouTubeIframeAPIReady() {
-    
-      $('.accordion-body iframe').each(function(i){
-        $(this).attr("id","player"+i);
-        players[i] = $("#player"+i);
-      })
-    
-      for(var i=0; i < players.length; i++){
-        player[i] = new YT.Player(players[i].attr("id"));
-        player[i].addEventListener("onStateChange", function(res){
-          if(res.data == 1){
-            var i = res.target.a.id.substring(6,7);
-            playing = player[i];
-          }
-        });
-      }
-    }  
-
-    $('#myTab a').click(function(e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-
-    // colocando e tirando ativo
-    $('.accordion-body').on('hidden', function() {
-      //remove barra ativa
-      $(this).prev().find('a').removeClass('ativo');
-    });
-
-    $('.accordion-body').on('show', function() {
-      //remove barra ativa
-      $(this).prev().find('a').addClass('ativo');
-    });
-
-    //subindo pro topo
-    $('.accordion-body').on('shown', function(){
-      var el = $(this).parent();
-      $('html, body').animate({
-        scrollTop: el.offset().top
-      }, "fast");
-    });
-
-// padding ultimo conteudo
-$('.accordion-body').each(function() {
-    $(this).find('p:last').css('padding-bottom', '15px');
-  });
-*/
-</script>
 
   </body>
 </html>
