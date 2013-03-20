@@ -2739,5 +2739,5 @@ z-index: 503;
 body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important; }
 #guia-topo { background:none; }
 .content { width:990px; }
-.contentWrapper { overflow:visible; background:none; display:block; }
+.contentWrapper { background:none; display:block; }
 /* ajuste bg ipad */
