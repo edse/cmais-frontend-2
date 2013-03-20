@@ -35,7 +35,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id==2287): 
         ?>
           <!-- Estagio -->
-          <div class="accordion-group">  
+          <div class="accordion-group span12">  
             <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
@@ -61,7 +61,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id==2296):
         ?>
           <!-- Resultado -->
-          <div class="accordion-group">
+          <div class="accordion-group span12">
             <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
