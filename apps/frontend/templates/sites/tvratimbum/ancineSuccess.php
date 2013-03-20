@@ -93,10 +93,28 @@
                   <a class="enunciado" href="">ANCINE</a>
                 </div>
                 <!--topo-->
-                
+                <?php
+                $displays = array();
+         
+                $blocks = Doctrine_Query::create()
+                 ->select('b.*')
+                 ->from('Block b, Section s')
+                 ->where('b.section_id = s.id')
+                 ->andWhere('s.slug = ?', 'ancine')
+                 ->andWhere('s.site_id = ?', $site->id)
+                 ->orderBy('b.id desc')
+                 ->execute();
+                                                     
+                           if(count($blocks) > 0){
+                             foreach($blocks as $b){
+                               $displays[$b->getSlug()] = $b->retriveDisplays();
+                             }
+                           }
+                            ?>
+
                 <!--explicacao--> 
-                <div class="explicacao"> 
-                         
+                <div class="explicacao">  
+        
                 <?php foreach($displays as $b): ?>  
                   
                  <p><b><?php echo $b[0]->Block->getTitle() ?></b></p>

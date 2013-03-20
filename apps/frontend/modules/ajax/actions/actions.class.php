@@ -1651,7 +1651,7 @@ EOT;
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a')
-        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6')
+        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
         ->andWhere('a.title LIKE ?', '%'.$query.'%')
         ->limit(5)
         ->execute();
@@ -1694,8 +1694,11 @@ EOT;
       $asset = Doctrine::getTable('Asset')->findOneById($id);
       if($asset->AssetType->getSlug() == "content")
         $content = "<p>".$asset->AssetContent->render()."</p>";
-      else
+      else if($asset->AssetType->getSlug() == "video")
         $content = '<p><iframe width="100%" height="390" src="http://www.youtube.com/embed/'.$asset->AssetVideo->getYoutubeId().'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe></p>';
+      else
+        $content = $this->getPartial('enquete', array('asset' => $asset));
+      
       if($save){
         if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
           mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
@@ -1703,7 +1706,8 @@ EOT;
         $url = "cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
         $file = fopen("/var/frontend/web/cache/".$url, "w");
         fwrite($file, $content);
-        $w = '<br /><br /><p>O <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> é o portal de conteúdo da Cultura e reúne os canais <a href="http://tvcultura.cmais.com.br?origem=http://cmais.com.br/jornaldacultura/segundatela" title="TV Cultura">TV Cultura</a>, <a href="http://univesptv.cmais.com.br?origem=http://cmais.com.br/segundatela" title="UnivespTV">UnivespTV</a>, <a href="http://multicultura.cmais.com.br?origem=http://cmais.com.br/segundatela" title="MultiCultura">MultiCultura</a>,<a href="http://tvratimbum.cmais.com.br?origem=http://cmais.com.br/segundatela" title="TV Rá-Tim-Bum!">TV Rá-Tim-Bum!</a> e as rádios <a href="http://www.culturabrasil.com.br?origem=http://cmais.com.br/egundatela" title="Cultura Brasil">Cultura Brasil</a> e <a href="http://culturafm.cmais.com.br?origem=http://cmais.com.br/segundatela" title="Cultura FM">Cultura FM</a>.<br><br>Visite o <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> e navegue por nossos conteúdos.</p><br />';
+        //$w = '<br /><br /><p>O <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> é o portal de conteúdo da Cultura e reúne os canais <a href="http://tvcultura.cmais.com.br?origem=http://cmais.com.br/jornaldacultura/segundatela" title="TV Cultura">TV Cultura</a>, <a href="http://univesptv.cmais.com.br?origem=http://cmais.com.br/segundatela" title="UnivespTV">UnivespTV</a>, <a href="http://multicultura.cmais.com.br?origem=http://cmais.com.br/segundatela" title="MultiCultura">MultiCultura</a>,<a href="http://tvratimbum.cmais.com.br?origem=http://cmais.com.br/segundatela" title="TV Rá-Tim-Bum!">TV Rá-Tim-Bum!</a> e as rádios <a href="http://www.culturabrasil.com.br?origem=http://cmais.com.br/egundatela" title="Cultura Brasil">Cultura Brasil</a> e <a href="http://culturafm.cmais.com.br?origem=http://cmais.com.br/segundatela" title="Cultura FM">Cultura FM</a>.<br><br>Visite o <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> e navegue por nossos conteúdos.</p><br />';
+        $w = '<br /><a class="logo-link" href="http://cmais.com.br" target="_blank"><img class="cmais-logo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png"></a>';
         fwrite($file, $w);  
         fclose($file);
         die("http://cmais.com.br/cache/".$url);
