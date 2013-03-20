@@ -137,7 +137,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $d[$k]->AssetFile->getFile(); ?>" title="<?php echo $d[$k]->AssetFile->getAsset();?>" target="_blank">
               <i class="icon-file icon-blue"></i> <?php echo $d[$k]->AssetFile->getAsset(); ?>
             </a><br> 
-               
+           */    
               //endif;
             endforeach;
           ?>
