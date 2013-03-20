@@ -161,7 +161,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
-              if($d[$k]->asset_type_id==8):
+              if($d->asset_type_id==8):
           ?>
           <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
             <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
