@@ -98,7 +98,7 @@
                 <div class="explicacao"> 
                  
                 <?php $count = 0 ?>
-                <?php $slug = $sections[$count]->getSlug() ?>
+                <?php $slug = $blocks[$count]->getSlug() ?>
                 
                 <?php foreach($displays['$slug'] as $k=>$d): ?>  
                   
