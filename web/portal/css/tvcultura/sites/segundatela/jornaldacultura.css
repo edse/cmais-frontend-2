@@ -103,6 +103,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-esq { max-width:60%; margin-left:0; }
   .hero-unit .menu-jc { margin-top:20px; }
   .hero-unit .menu-jc .como { margin-bottom:10px; }
+  .hero-unit .menu-jc p,
   .hero-unit .menu-jc a { font-size:12px; }
   .hero-unit .menu-jc span { margin-top:-6px;} 
   .conteudo .span8 { width:100% }
