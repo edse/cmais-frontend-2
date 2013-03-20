@@ -12,19 +12,7 @@
   </div>
 </div>
 <!-- /modal -->
-<!-- modal-->
-<div id="myModallink" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-      ×
-    </button>
-    <h3 id="myModalLabel">Modal do link</h3>
-  </div>
-  <div class="modal-body">
-    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-  </div>
-</div>
-<!-- /modal -->
+
 <div class="container">
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="hero-unit">
@@ -37,7 +25,7 @@
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
         <div class="fb">
-          <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
@@ -58,6 +46,7 @@
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2">
+        <!--
         <div id="ancora1" class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle ativo" data-toggle="collapse" data-parent="#accordion2"  href="#collapse1" > <i class="icon-user icon-white"></i>Collapsible Group Item #1 <img class="loader"  src="/portal/images/capaPrograma/segundatela/jornaldacultura/ajax-loader.gif" alt="carregando" /> </a>
@@ -216,7 +205,7 @@
             </div>  
           </div>
         </div>
-        <div class="accordion-group">
+          <div class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle four" data-toggle="collapse" data-parent="#accordion2" href="#collapse8"> <i class="icon-map-marker icon-white"></i>Collapsible Group Item #7</a>
           </div>
@@ -230,6 +219,11 @@
             </div>  
           </div>
         </div>
+
+        -->
+
+      
+
       </div>
       <!-- /accordion -->
     </div>
@@ -268,79 +262,4 @@
     </div>
     <!-- /direita -->
   </div>
-<script type="text/javascript">
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//arrays para players multiplos
-var player = new Array();
-var cont = 0;
-var players = new Array();
-var playing = false; 
-
-//aplica id para os iframes e carrega o primeiro array
-$('.accordion-body').on('show', function() {
-  console.log(playing);
-  if(playing)
-    playing.pauseVideo();
-});
-
-function checkState(res){
-  console.log('>>>'+players[i].attr("id"));
-  console.log(res);
-  if(res.data==1){
-    playing=players[i].attr("id");
-  }
-}
-
-function onYouTubeIframeAPIReady() {
-
-  $('.accordion-body iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  })
-
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
-    player[i].addEventListener("onStateChange", function(res){
-      if(res.data == 1){
-        var i = res.target.a.id.substring(6,7);
-        playing = player[i];
-        //playing.pauseVideo();
-        //console.log('>>>'+res.target.a.id.substring(6,7));
-        //console.log(playing);
-      }
-    });
-  }
-}
-//funcao para pausar todos os videos   
-
-
-$('#myTab a').click(function(e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
-
-// colocando e tirando ativo
-$('.accordion-body').on('hidden', function() {
-  //remove barra ativa
-  $(this).prev().find('a').removeClass('ativo');
-});
-
-$('.accordion-body').on('show', function() {
-  //remove barra ativa
-  $(this).prev().find('a').addClass('ativo');
-});
-
-//subindo pro topo
-$('.accordion-body').on('shown', function(){
-  var el = $(this).parent();
-  $('html, body').animate({
-    scrollTop: el.offset().top
-  }, "fast");
-});
-
-</script>
