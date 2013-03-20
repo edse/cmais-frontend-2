@@ -12,9 +12,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <!--descricao vagas-->
       <div class="accordion trabalhe-conosco" id="accordion2">
-        <?php foreach($section->subsections() as $k=>$s):?>
-          <?php echo $s->getTitle(); ?>
-        <?php endforeach;?>
+        <?php foreach($section->subsections() as $k=>$s):
+                if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296): ?>
+                <div class="accordion-group">
+                <?php echo $s->getTitle(); ?>
+                </div>
+        <?php   endif;
+            endforeach;?>
       </div>
       <!--descricao vagas-->    
     </div>
