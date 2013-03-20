@@ -95,7 +95,7 @@
                 <!--topo-->
                 
                 <!--explicacao--> 
-                <div class="explicacao"> 
+                <div class="explicacao">  
                 <?php $displays = array_reverse($displays); ?>         
                 <?php foreach($displays as $b): ?>  
                   
