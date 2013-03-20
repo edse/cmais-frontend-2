@@ -8,7 +8,7 @@ Code licensed under the BSD License:
 http://developer.yahoo.com/yui/license.html
 version: 2.8.2r1
 */
-html{color:#000;background:#FFF;}
+html{color:#000;/*background:#FFF;*/}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
@@ -2733,5 +2733,11 @@ z-index: 503;
 .destaque-promocao p { text-transform:uppercase; color:#fff; font-weight:bold; position:relative; width: 250px; top:65px; left:270px; }
 .destaque-promocao strong { clear:both; color:#bdda28; font-size:27px; display: block; margin:30px 0 10px 0;  }
 .destaque-promocao span { color:#cfecf7; }
-
 /* /jogo novo */
+
+/* ajuste bg ipad */
+body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important; }
+#guia-topo { background:none; }
+.content { width:990px; }
+.contentWrapper { overflow:visible; background:none; display:block; }
+/* ajuste bg ipad */
