@@ -41,7 +41,7 @@
               <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
             </div>
             <div class="fb">
-              <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+              <fb:like href="tvcultura.cmais.com.br/segundatela/grade2013" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
             </div>
             <div class="gplus">
               <g:plusone size="medium" count="false"></g:plusone>
@@ -169,20 +169,4 @@
        <!-- /direita -->
         
       </div>
-      
-<script type="text/javascript">
-$('#myTab a').click(function (e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
-$('.accordion-body').on('hidden', function(){
-  $(this).prev().find('a').removeClass('ativo');
-});
-$('.accordion-body').on('show', function(){
-  $(this).prev().find('a').addClass('ativo');
-});
-
-$('.accordion-body').each(function() {
-  $(this).find('p:last').css('padding-bottom', '15px');
-});
-</script>
+     
