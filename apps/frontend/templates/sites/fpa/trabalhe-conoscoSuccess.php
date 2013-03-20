@@ -12,17 +12,203 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <!--descricao vagas-->
       <div class="accordion trabalhe-conosco" id="accordion2">
-        <?php foreach($section->subsections() as $k=>$s):
-                if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296): ?>
-                <div class="accordion-group">
-                <?php echo $s->getTitle(); ?>
+        <?php 
+        foreach($section->subsections() as $k=>$s):
+          if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296): 
+        ?>
+          <!-- Sem Vagas -->
+          <div class="accordion-group">
+            <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
+              Não há vagas no momento.
+            </span>
+          </div>
+          <!-- /Sem Vagas -->
+        <?php
+          elseif($s->id!=2287 && $s->id!=2296):
+        ?>  
+          <!-- Vagas de emprego -->
+          <div class="accordion-group">
+          <div class="accordion-heading">
+            <div class="accordion-heading trabalhe-conosco">
+              <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1"><i class="icon-chevron-right"></i><?php echo $s->getTitle(); ?></a>
+            </div>
+            <hr class="tipo"/>
+          </div>
+          
+            <!--vagas relacionadas-->
+            <div id="emprego1" class="accordion-body collapse in">
+              <div class="accordion" id="vagas-relacionadas">
+              <!--emprego aberto-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga1">
+                    <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
+                  </a>
                 </div>
-        <?php   endif;
-            endforeach;?>
+                <hr class="vaga"/>
+                <div id="vaga1" class="accordion-body collapse vagas-exi">
+                  <div class="accordion-inner">
+                    <!--descriçao vaga-->
+                    <ul>
+                      <li class="tit-desc">Principais Atribuições</li>
+                      <ul>
+                        <li>Coordenar equipe de diagramadores (internos e externos) e organizar o fluxo de trabalho entre eles para que se cumpra o cronograma;</li>
+                        <li>Trabalhar a colocação dos textos nas  páginas, seguindo um projeto gráfico previamente aprovado;</li>
+                        <li>Elaborar projetos gráficos;</li>
+                        <li>Analisar a melhor maneira de posicionar as fotografias / ilustrações nas páginas;</li>
+                        <li>Inserir as correções realizadas pelos revisores nos textos;</li>
+                        <li>Prezar pela qualidade das ilustrações e imagens e todos os livros;</li>
+                        <li>Manter contato com ilustradores, designers e fotógrafos para adequar o trabalho ao nível de qualidade e identidade esperada;</li>
+                        <li>Manter contato com a gráfica no que diz respeito a envio e fechamento de arquivos;</li>
+                        <li>Desenvolver layouts para conteúdo digital.</li>
+                      </ul>  
+                      <li class="tit-desc">Requisitos</li>
+                        <ul>
+                          <li>Experiência nas atividades descritas acima;</li>
+                          <li>Conhecimento em Photoshop , InDesign e iMac;</li>
+                          <li>Conhecimento de ferramentas de design de conteúdo digital como Adobe Digital ● Publishing Suíte, In Design avançado para publicação em tablets, ou similares.</li>
+                        </ul>
+                      <li class="tit-desc">Idioma</li>
+                        <ul>
+                          <li>Inglês nível básico.</li>
+                        </ul>
+                      <li class="tit-desc">Formação</li>
+                        <ul>
+                          <li>Superior completo em Design, Produção Editorial, Editoração ou Áreas correlatas.</li>
+                        </ul>                   
+                      <li class="tit-desc">Carga Horária</li>
+                        <ul>
+                          <li>44 horas semanais</li>
+                        </ul>
+                      <li class="tit-desc">Regime de Trabalho</li>
+                        <ul>
+                          <li>CLT</li>
+                        </ul>
+                      <li class="tit-desc">Local de Trabalho</li>
+                        <ul>
+                          <li>São Paulo</li>
+                        </ul>
+                      <li class="tit-desc">Inscrições</li>
+                        <p>
+                          Cadastre seu currículo até o dia <strong>29/07/2012</strong>. No campo Departamento opte por <strong>Projetos Educacionais</strong> e no campo Cargo opte por <strong>Assistente de Arte I</strong>.
+                          Caso o cadastro não seja efetuado conforme indicado acima, seu currículo não será considerado para o processo seletivo.
+                        </p>
+                      <li class="tit-desc">Processo Seletivo</li>
+                        <p>
+                          A seleção será feita de acordo com as seguintes etapas, em datas a serem agendadas e comunicadas previamente aos candidatos pela área de RH:
+                          </p>
+                          <ul>
+                            <li>Triagem dos currículos cadastrados;</li>
+                            <li>Realização de provas de conteúdo geral e específico, testes Psicológicos;</li>
+                            <li>Realização de entrevistas técnicas e/ou comportamentais.</li>
+                          </ul>
+  
+                        <p>A realização das provas e entrevistas ocorrerá na sede da Fundação Padre Anchieta, Rua Cenno Sbrighi, 378 – Água Branca.</p>
+                        <p>Fica eleito o foro da Comarca da Capital para dirimir toda e qualquer questão inerente ao presente Processo Seletivo. Confira na íntegra o Regulamento Interno de Processo Seletivo da Fundação Padre Anchieta, no site <a href="#">www.tvcultura.com.br/trabalheconosco</a></p>
+                        <br>
+                        <p>São Paulo, 20 de julho de 2012.</p>
+                        <p>Fundação Padre Anchieta</p>
+                      
+                    </ul>
+                    <a href="/fpa/realizar-cadastro?vaga=vagaEscolhida&quant=1" class="btn btn-primary large-button pull-right realizar" title="Realizar Inscrição">Realizar Inscrição</a>
+                    <!--/descriçao vaga-->
+                    <hr class="vaga desc"/>  
+                  </div>
+                </div>
+              </div>
+              <!--/emprego aberto-->
+              <!--emprego aberto-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a id="teste2" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga2">
+                    <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
+                  </a>
+                </div>
+                <hr class="vaga"/>
+                <div id="vaga2" class="accordion-body collapse vagas-exi">
+                  <div class="accordion-inner">
+                    <!--descriçao vaga-->
+                    teste
+                    <!--/descriçao vaga-->
+                    <hr class="vaga desc"/>  
+                  </div>
+                </div>
+              </div>
+              <!--/emprego aberto-->
+            </div>
+          </div>
+          <!--vagas relacionadas-->
+        </div>
+           <!-- /Vagas de emprego -->     
+        <?php 
+          elseif($s->id==2287): 
+        ?>
+          <!-- Estagio -->
+          <div class="accordion-group span12">  
+            <div class="linha"></div>
+            <div class="accordion-heading trabalhe-conosco">
+              <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+            </div>
+            <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($d->asset_type_id==8):
+            ?>
+              <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+                <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+              </a>
+            <?php     
+              endif;
+            endforeach;
+            ?>
+            <div class="span12">
+              <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+            </div>
+          </div>
+          <!-- /Estagio -->
+        <?php 
+          elseif($s->id==2296):
+        ?>
+          <!-- Resultado -->
+          <div class="accordion-group span12">
+            <div class="linha"></div>
+            <div class="accordion-heading trabalhe-conosco">
+              <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+            </div>
+            <div class="span12" style="margin-top:15px;">
+            <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($d->asset_type_id==8):
+            ?>
+              <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+                <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+              </a>
+            <?php     
+              endif;
+            endforeach;  
+            ?>
+            </div> 
+          </div>
+          <!-- /Resultado --> 
+        <?php   
+          endif;
+         endforeach;
+        ?>
       </div>
       <!--descricao vagas-->    
     </div>
     <!--/ESQUERDA-->
+    <!--DIREITA-->
+    <div class="col-direita span4">
+      <!--CONFIRA-->  
+      <a href="http://www2.tvcultura.com.br/selecao/vagas/FPAREPRSE001.pdf" class="trabalhe btn btn-primary" target="_blank" title="Confira aqui nossas vagas e prazos.">
+        <p>Regulamento Interno de Processo Seletivo</p>
+        <p>Leia antes da Inscrição</p>
+      </a>
+      <!--/CONFIRA-->
+    </div>
+    <!-- /DIREITA-->
   </div>
   <!--/colunas-->
 </div>  
