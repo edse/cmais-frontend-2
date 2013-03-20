@@ -37,7 +37,8 @@ function word_limiter($str,$limit=10)
           </li>
         </ul>
       </div>
-
+      
+      <?php /*
       <!-- Example row of columns -->
       <div class="row-fluid">
         <?php if(isset($displays['destaque-principal'])):?>
@@ -86,7 +87,7 @@ function word_limiter($str,$limit=10)
          <?php endif; ?>
         <?php endif; ?>
       </div>
-
+      */ ?>
      <div class="row-fluid">
         <?php if(isset($displays['destaque-1'])):?>
           <?php if(count($displays['destaque-1']) > 0): ?>
