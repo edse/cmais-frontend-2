@@ -26,7 +26,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
             </a>
-            <hr class="tipo"/>
           </div>  
           <!--vagas relacionadas-->
             <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
@@ -162,7 +161,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
-              if($related[$k]->asset_type_id==8):
+              if($d[$k]->asset_type_id==8):
           ?>
           <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
             <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
