@@ -97,7 +97,7 @@
                 <!--explicacao--> 
                 <div class="explicacao"> 
                  
-                <?php if(count($display > 0)): ?> 
+                <?php if(count($displays > 0)): ?> 
                   <?php foreach($display as $d): ?> 
                   
                   <p><b>> <?php echo $d->getTitle() ?></b></p>
