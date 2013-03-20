@@ -29,10 +29,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- Vagas de emprego -->
           <div class="accordion-group">
           <div class="accordion-heading">
-            <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
-              Processo Seletivo
-            </a>
-            <hr class="tipo"/>
+            <div class="accordion-heading trabalhe-conosco">
+              <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+            </div>
           </div>
           
             <!--vagas relacionadas-->
