@@ -78,79 +78,71 @@
     <script type="text/javascript" src="/ss/js/app.js"></script>
     
     <script type="text/javascript">
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    //yotube API
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//arrays para players multiplos
-var player = new Array();
-var cont = 0;
-var players = new Array();
-var playing = false; 
+    //arrays para players multiplos
+    var player = new Array();
+    var cont = 0;
+    var players = new Array();
+    var playing = false; 
 
-//aplica id para os iframes e carrega o primeiro array
-$('.accordion-body').on('show', function() {
-  console.log(playing);
-  if(playing)
-    playing.pauseVideo();
-});
-
-function checkState(res){
-  console.log('>>>'+players[i].attr("id"));
-  console.log(res);
-  if(res.data==1){
-    playing=players[i].attr("id");
-  }
-}
-
-function onYouTubeIframeAPIReady() {
-
-  $('.accordion-body iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  })
-
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
-    player[i].addEventListener("onStateChange", function(res){
-      if(res.data == 1){
-        var i = res.target.a.id.substring(6,7);
-        playing = player[i];
-        //playing.pauseVideo();
-        //console.log('>>>'+res.target.a.id.substring(6,7));
-        //console.log(playing);
-      }
+    $('.accordion-body').on('show', function() {
+      console.log(playing);
+      if(playing)
+        playing.pauseVideo();
     });
-  }
-}
-//funcao para pausar todos os videos   
 
+    function checkState(res){
+      if(res.data==1){
+        playing=players[i].attr("id");
+      }
+    }
 
-$('#myTab a').click(function(e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
+    function onYouTubeIframeAPIReady() {
+    
+      $('.accordion-body iframe').each(function(i){
+        $(this).attr("id","player"+i);
+        players[i] = $("#player"+i);
+      })
+    
+      for(var i=0; i < players.length; i++){
+        player[i] = new YT.Player(players[i].attr("id"));
+        player[i].addEventListener("onStateChange", function(res){
+          if(res.data == 1){
+            var i = res.target.a.id.substring(6,7);
+            playing = player[i];
+          }
+        });
+      }
+    }  
 
-// colocando e tirando ativo
-$('.accordion-body').on('hidden', function() {
-  //remove barra ativa
-  $(this).prev().find('a').removeClass('ativo');
-});
+    $('#myTab a').click(function(e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
 
-$('.accordion-body').on('show', function() {
-  //remove barra ativa
-  $(this).prev().find('a').addClass('ativo');
-});
+    // colocando e tirando ativo
+    $('.accordion-body').on('hidden', function() {
+      //remove barra ativa
+      $(this).prev().find('a').removeClass('ativo');
+    });
 
-//subindo pro topo
-$('.accordion-body').on('shown', function(){
-  var el = $(this).parent();
-  $('html, body').animate({
-    scrollTop: el.offset().top
-  }, "fast");
-});
+    $('.accordion-body').on('show', function() {
+      //remove barra ativa
+      $(this).prev().find('a').addClass('ativo');
+    });
+
+    //subindo pro topo
+    $('.accordion-body').on('shown', function(){
+      var el = $(this).parent();
+      $('html, body').animate({
+        scrollTop: el.offset().top
+      }, "fast");
+    });
 
 </script>
 
