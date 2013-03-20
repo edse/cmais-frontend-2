@@ -10,6 +10,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <div class="col-esquerda span7">
       <h1><?php echo $section->getTitle();?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
+      <!--descricao vagas-->
+      <div class="accordion trabalhe-conosco" id="accordion2">
+        <?php foreach($section->subsections() as $k=>$s):?>
+          <?php echo $s->getAssets(); ?>
+        <?php endforeach;?>
+      </div>
+      <!--descricao vagas-->    
     </div>
     <!--/ESQUERDA-->
   </div>
