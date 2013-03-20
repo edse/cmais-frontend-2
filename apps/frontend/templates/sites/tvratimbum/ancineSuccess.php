@@ -97,10 +97,10 @@
                 <!--explicacao--> 
                 <div class="explicacao"> 
                  
-                <?php if(count($displays > 0)): ?> 
-                  <?php foreach($displays as $d): ?> 
+                <?php if(count($display > 0)): ?> 
+                  <?php foreach($display as $d): ?> 
                   
-                  <p><b>> <?php echo $d->Display->getTitle() ?></b></p>
+                  <p><b>> <?php echo $d->getTitle() ?></b></p>
                   <?php foreach($d->Assets as $a): ?>
                   <p><?php echo $a->getTitle() ?><a href= "<?php echo $a->retriveUrl() ?>"><?php echo $a->getDescription() ?></a></p>
                 
