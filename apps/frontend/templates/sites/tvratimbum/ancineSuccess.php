@@ -102,7 +102,7 @@
                   
                   <p><b>> <?php echo $d->Block->getTitle() ?></b></p>
                   <?php foreach($d->Assets as $a): ?>
-                  <p><?php echo $a->getTitle() ?><a href= "<?php echo $a->retriveUrl() ?>"><?php echo $a->getDescription() ?></a></p>
+                  <p><?php echo $a->Asset->getTitle() ?><a href= "<?php echo $a->Asset->retriveUrl() ?>"><?php echo $a->Asset->getDescription() ?></a></p>
                 
                   <?php endforeach; ?>
                   <?php endforeach; ?>
