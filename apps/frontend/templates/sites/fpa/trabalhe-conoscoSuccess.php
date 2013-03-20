@@ -130,8 +130,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php
             $related = $s->getAssets();
             foreach($related as $d):
-              $download = $related[0]->AssetFile->getFile();;
-              echo $download;
+              echo "titulo: ".$related[0]->getTitle()."<br>";
+              echo "arquivo: ".$related[0]->AssetFile->getFile()."<br>";
+              echo "source: ".$related[0]->AssetFile->getSource()."<br>";
+              echo "source: ".$related[0]->AssetFile->getGenre()."<br>";
+              echo "Asset: ".$related[0]->AssetFile->getAsset()."<br><br>";
             endforeach;
               
             
