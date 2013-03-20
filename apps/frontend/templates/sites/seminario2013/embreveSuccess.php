@@ -60,13 +60,17 @@
        </style>
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
+            
+            <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL0Qz-covvhxSzQaY2cuxWcwekgje5UcDd" frameborder="0" allowfullscreen></iframe>
+            
+            <!--
             <p class="titulos">O Seminário Cultura 2013 já foi encerrado.</p>
-         
             <div class="texto">
               <p> Obrigado por assistir.</p>
               <p><a href="http://cmais.com.br/seminario2013/programacao" alt="Programação">Veja aqui como foi a programação do evento</a></p>
-              
             </div>
+            -->
+            
           </div>
           <!-- /NOTICIA INTERNA -->
      
