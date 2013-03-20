@@ -128,16 +128,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           </div>
           <!-- estagios -->
           <?php
-            foreach($s->getAssets() as $k=>$d):
-              echo "titulo: ".$d[0]->getTitle()."<br>";
-              echo "arquivo: ".$d[0]->AssetFile->getFile()."<br>";
-              //if($d[$k]->asset_type_id==8):
-          /*
-            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $d[$k]->AssetFile->getFile(); ?>" title="<?php echo $d[$k]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-file icon-blue"></i> <?php echo $d[$k]->AssetFile->getAsset(); ?>
-            </a><br> 
-           */    
-              //endif;
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):
+              echo "titulo: ".$related[$k]->getTitle()."<br>";
+              echo "arquivo: ".$related[$k]->AssetFile->getFile()."<br>";
+              
             endforeach;
           ?>
           <!-- estagios -->  
