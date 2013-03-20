@@ -23,7 +23,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </span>
           <?php elseif($s->id!=2287): ?>
           <div class="accordion-heading">
-            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
+            <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
@@ -120,7 +120,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php if($s->id==2287): ?>
             <hr class="linha">
             <div class="accordion-heading trabalhe-conosco">
-            <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
+            <a class="btn-cat" title="">
               <i class="icon-chevron-down"></i>
               <?php echo $s->getTitle(); ?>
             </a>
