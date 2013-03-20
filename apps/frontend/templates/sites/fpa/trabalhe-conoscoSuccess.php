@@ -16,12 +16,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
      <div class="accordion trabalhe-conosco" id="accordion2">
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
-          <div class="accordion-group">
+      
           <?php if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):?>
+          <div class="accordion-group">
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
+          </div>
           <?php elseif($s->id!=2287 && $s->id!=2296): ?>
+          <div class="accordion-group">  
           <div class="accordion-heading">
             <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
@@ -30,6 +33,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--vagas relacionadas-->
             <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
+              <?php foreach($s->getAssets() as $d)?>  
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
@@ -112,11 +116,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!--/vagas relacionadas-->
+            </div>
           <?php endif; ?>
-          </div>
+          
           <!--/tipo da vaga-->
-          <div class="accordion-group">
+          
           <?php if($s->id==2287): ?>
+          <div class="accordion-group">  
           <!-- vagas para estágiarios sempre aparece -->
           <div class="linha"></div>
           <div class="accordion-heading trabalhe-conosco">
@@ -144,11 +150,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/cadastro estagio-->
           <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
           <!-- vagas para estágiarios sempre aparece --> 
-          
-          <?php endif;?>
           </div>
-          <div class="accordion-group">
+          <?php endif;?>
+          
+          
           <?php if($s->id==2296): ?>
+          <div class="accordion-group">
           <!--resultados anteriores -->
           <div class="linha"></div>
           <div class="accordion-heading trabalhe-conosco">
@@ -171,10 +178,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               endif;
             endforeach;  
           ?> 
+          </div>
         <?php 
           endif;
         ?>
-        </div>
+        
         <?php  
         endforeach;
          ?>
