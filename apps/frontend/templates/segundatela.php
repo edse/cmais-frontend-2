@@ -72,12 +72,13 @@
       }());
     </script>
     
-    <script type="text/javascript" src="/ss/js/websocket-js/swfobject.js"></script>
-    <script type="text/javascript" src="/ss/js/websocket-js/web_socket.js"></script>
-    <script type="text/javascript" src="/ss/js/json2.js"></script>
-    <script type="text/javascript" src="/ss/js/app.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
     
     <script type="text/javascript">
+    /*
     //yotube API
     var tag = document.createElement('script');
     tag.src = "//www.youtube.com/iframe_api";
@@ -148,7 +149,7 @@
 $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
-
+*/
 </script>
 
   </body>
