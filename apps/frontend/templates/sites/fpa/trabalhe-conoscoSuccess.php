@@ -116,6 +116,36 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php endif; ?>
           </div>
           <!--/tipo da vaga-->
+          
+          <?php if($s->id==2287): ?>
+          <!-- vagas para estágiarios sempre aparece -->
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
+            <a class="btn-cat" title="">
+              <i class="icon-chevron-down"></i>
+              <?php echo $s->getTitle(); ?>
+            </a>
+            <hr class="tipo"/>
+          </div>
+          <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($related[$k]->asset_type_id==8):
+          ?>
+          <!--cadastro estagio-->
+          <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+            <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+          </a>
+          <?php     
+              endif;
+            endforeach;
+          ?>
+          testet
+          <br>
+          <!--/cadastro estagio-->
+          <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+          <!-- vagas para estágiarios sempre aparece --> 
+          <?php endif;?>
           <?php if($s->id==2296): ?>
           <!--resultados anteriores -->
           <div class="linha"></div>
@@ -139,35 +169,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               endif;
             endforeach;  
           ?> 
-          <?php elseif($s->id==2287): ?>
-          <!-- vagas para estágiarios sempre aparece -->
-          <div class="linha"></div>
-          <div class="accordion-heading trabalhe-conosco">
-            <a class="btn-cat" title="">
-              <i class="icon-chevron-down"></i>
-              <?php echo $s->getTitle(); ?>
-            </a>
-            <hr class="tipo"/>
-          </div>
-          <?php
-            $related = $s->getAssets();
-            foreach($related as $k=>$d):;
-              if($related[$k]->asset_type_id==8):
-          ?>
-          <!--cadastro estagio-->
-          <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-            <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
-          </a>
-          <?php     
-              endif;
-            endforeach;
-          ?>
-          <br>
-          <!--/cadastro estagio-->
-          <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
-          <!-- vagas para estágiarios sempre aparece --> 
-          <?php endif;?>
-        <?php endforeach; ?>
+        <?php 
+          endif;
+        endforeach;
+         ?>
      </div>
      <!--/descricao vagas-->
     </div>
