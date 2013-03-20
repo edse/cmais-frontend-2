@@ -98,7 +98,7 @@
                 <div class="explicacao"> 
                  
                 <?php if(count($displays > 0)): ?> 
-                  <?php $k = 0 ?> 
+                  <?php $count = 0 ?> 
                   <?php foreach($displays as $count): ?> 
                   <?php $slug = $displays[$count]->$display->getSlug() ?>
                   <?php foreach($displays[$slug] as $k=>$d): ?> 
