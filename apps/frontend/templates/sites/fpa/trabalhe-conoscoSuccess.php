@@ -33,8 +33,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--vagas relacionadas-->
             <div id="emprego<?php echo $k?>" class="accordion-body collapse <?php  if($k==0){echo "in";}else{echo "on";};  ?>">
               <div class="accordion" id="vagas-relacionadas">
-              <?php foreach($s->getAssets() as $d)?>  
-              <!--emprego aberto-->
+              <?php foreach($s->getAssets() as $d):?>
+                <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a id="teste1" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k?>" title="<?php echo count($s->getAssets()); ?>">
@@ -113,6 +113,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 </div>
               </div>
               <!--/emprego aberto-->  
+              <?php endforeach?>
               </div>
             </div>
             <!--/vagas relacionadas-->
