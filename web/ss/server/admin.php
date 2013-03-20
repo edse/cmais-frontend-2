@@ -4,7 +4,8 @@ error_reporting(E_ALL);
 
 if(isset($_REQUEST["start"])){
   //$h = isset($_REQUEST["host"])?$_REQUEST["host"]:"200.136.27.32";
-  $h = isset($_REQUEST["host"])?$_REQUEST["host"]:"172.20.18.133";
+  //$h = isset($_REQUEST["host"])?$_REQUEST["host"]:"172.20.18.133";
+  $h = isset($_REQUEST["host"])?$_REQUEST["host"]:"cmais.com.br";
   //$p = isset($_REQUEST["port"])?$_REQUEST["port"]:"443";
   $p = isset($_REQUEST["port"])?$_REQUEST["port"]:"4442";
   $c = isset($_REQUEST["clients"])?$_REQUEST["clients"]:"2000";

@@ -127,9 +127,9 @@
     <div class="span5 apoio">
       <h2>Realização:</h2>
       <ul>
-        <li class="cultura"><a href="#">Cultura</a></li>
-        <li class="ministerio"><a href="#">Ministério da Cultura</a></li>
-        <li class="governo"><a href="#">Governo Federal</a></li>
+        <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
+        <li class="ministerio"><a href="http://www.cultura.gov.br" target="_blank">Ministério da Cultura</a></li>
+        <li class="governo"><a href="http://www.brasil.gov.br" target="_blank">Governo Federal</a></li>
       </ul>
     </div>
   </div>
