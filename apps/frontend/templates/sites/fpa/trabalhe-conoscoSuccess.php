@@ -134,14 +134,14 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--cadastro estagio-->
           <div id="resultado<?php echo $k?>">
             <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+              <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
             </a>
           </div>
+          <!--/resultados anteriores -->
           <?php     
               endif;
             endforeach;  
           ?> 
-          <!--/resultados anteriores -->
           <?php elseif($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
           <div class="linha"></div>
@@ -170,8 +170,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <br>
           <!--/cadastro estagio-->
           <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+          <!-- vagas para estágiarios sempre aparece --> 
           <?php endif;?>
-        <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
      </div>
      <!--/descricao vagas-->
