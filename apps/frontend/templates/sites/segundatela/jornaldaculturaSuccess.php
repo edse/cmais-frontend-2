@@ -205,7 +205,25 @@
             </div>  
           </div>
         </div>
+          <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle four" data-toggle="collapse" data-parent="#accordion2" href="#collapse8"> <i class="icon-map-marker icon-white"></i>Collapsible Group Item #7</a>
+          </div>
+          <div id="collapse8" class="accordion-body collapse on">
+            <div class="accordion-inner">
+              <img src="http://midia.cmais.com.br/displays/fc9db8fee2a4dc7cd74264b79b6eab3345f38209.jpg" alt="teste" />
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+            </div>  
+          </div>
+        </div>
+
         -->
+
+      
+
       </div>
       <!-- /accordion -->
     </div>
@@ -244,70 +262,4 @@
     </div>
     <!-- /direita -->
   </div>
-<script type="text/javascript">
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//arrays para players multiplos
-var players = new Array();
-var player = new Array();
-var cont = 0
-//aplica id para os iframes e carrega o primeiro array
-$('.accordion-body iframe').each(function(i){
-  $(this).attr("id","player"+i);
-  players[i] = $("#player"+i);
-  //alert(players[i].attr("id"))
-})
-
-
-//fucao quando carrega o API do youtube
-function onYouTubeIframeAPIReady() {
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
-  }
-}
-
-//funcao para pausar todos os videos   
-function pauseVideo() {
-  for(var i=0; i < players.length; i++){
-    player[i].pauseVideo();
-  }    
-}
-
-$('#myTab a').click(function(e) {
-  e.preventDefault();
-  $(this).tab('show');
-});
-
-// colocando e tirando ativo
-$('.accordion-body').on('hidden', function() {
-  //remove barra ativa
-  $(this).prev().find('a').removeClass('ativo');
-  
-  //verifica se existe iframe de video e pausa
-  $("#"+$(this).attr('id')+" iframe").each(function(i){
-    i++;
-    if(i>0){
-      pauseVideo();  
-    }
-  });
-});
-
-$('.accordion-body').on('show', function() {
-  //remove barra ativa
-  $(this).prev().find('a').addClass('ativo');
-});
-
-//subindo pro topo
-$('.accordion-body').on('shown', function(){
-  //alert($(this).parent().attr('id'))
-  var ancora = $(this).parent().attr('id')
-  $('html, body').animate({
-    scrollTop: $("#"+ ancora).offset().top
-  }, "fast");
-});
-
-</script>

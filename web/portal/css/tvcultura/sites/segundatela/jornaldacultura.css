@@ -43,7 +43,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; position:relative; }
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
-.accordion-heading .accordion-toggle{position:relative; z-index:50000;}
+.accordion-heading .accordion-toggle{position:relative; }
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
 .accordion-body img { max-width: 140px; float:left;  margin-right:10px;}
 .accordion-body a { color:#000; text-decoration:underline; }
