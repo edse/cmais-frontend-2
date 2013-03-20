@@ -18,8 +18,13 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
    
     <!-- estatico -->
+    <!--
     <title>Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
     <meta name="title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
     <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
@@ -32,6 +37,7 @@
     <meta property="og:url" content="http://tvcultura.cmais.com.br/segundatela/jornaldacultura" />
     <meta property="og:site_name" content="cmais+" />
     <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/segundatela/fbsegundatela.jpg" />
+    -->
     <!-- estatico -->
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
