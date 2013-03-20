@@ -121,7 +121,6 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .licitacoes-subsecoes .col-esquerda a{color:#2a578c; text-decoration:underline; margin: 10px 0; padding:0;} 
 .licitacoes-subsecoes .col-esquerda a.voltar{color: #333;text-decoration: none;font-size: 13px;text-transform:none}
 .licitacoes-subsecoes .accordion-group.item a{text-decoration:none;}
-.trabalhe-conosco .btn-estagio,
 .licitacoes-subsecoes .accordion-inner a{background: #ccc;padding: 5px;border-radius: 5px;margin: 5px 5px;color: #1863b7; float:left;}
 .licitacoes-subsecoes .pagination{clear: both;}
 .licitacoes-subsecoes .pagination ul>li>span{border:none; background:none;margin: 19px 0 0 0; font-size: 13px; font-weight: bold; text-transform: uppercase; color: #ccc;}
@@ -162,7 +161,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .col-direita a.trabalhe p:first-child{letter-spacing:0.075em;font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important; text-transform: uppercase;}
 .col-direita a.trabalhe p:last-child{font-size: 24px; margin:14px 0 0 0; color:#fff !important;}
 .col-direita a.trabalhe .btn-primary{margin:4px 0; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);border-top-color: #124a89; border-bottom-color: #739ecd;}
-
+.trabalhe-conosco .btn-estagio{background: #ccc;padding: 5px;border-radius: 5px;margin: 5px 5px;color: #1863b7;}
 .col-esquerda .box-cadastro{border-radius:5px; background-color: #fdfdfd; padding:20px;}
 .col-esquerda .input {margin-left:0px!important;}
 #row1 h2, #row2 h2, #row3 h2, #row4 h2{font-size: 14px;color: #1863B7;margin: 0;line-height:11px;text-transform: uppercase;}
