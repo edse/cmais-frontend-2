@@ -128,8 +128,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           </div>
           <!-- estagios -->
           <?php
-            $related = $s->getAssets();
-            foreach($related as $k=>$d):
+            foreach($s->getAssets() as $k=>$d):
               echo "titulo: ".$d[0]->getTitle()."<br>";
               echo "arquivo: ".$d[0]->AssetFile->getFile()."<br>";
               //if($d[$k]->asset_type_id==8):
