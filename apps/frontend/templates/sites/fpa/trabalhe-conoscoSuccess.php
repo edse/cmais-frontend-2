@@ -123,16 +123,20 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a class="btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="quantidade">
               <i class="icon-chevron-right"></i>
               <?php echo $s->getTitle(); ?>
-              <?php $related = $s->getAssets(); ?>
-              <?php echo count($related) ?>
             </a>
             <hr class="tipo"/>
-          </div>  
-          <!--vagas relacionadas-->
+          </div>
+          <!-- estagios -->
+          <?php
+            $related = $s->getAssets();
+            echo count($s->getAssets())
+          ?>
+          <!-- estagios -->  
+          <!--cadastro estagio-->
           <div id="emprego<?php echo $k?>" class="accordion-body collapse in">
             <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
           </div>
-          <!--/vagas relacionadas-->
+          <!--/cadastro estagio-->
           <?php endif;?>
         <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
