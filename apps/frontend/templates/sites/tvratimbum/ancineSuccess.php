@@ -99,13 +99,11 @@
                 
                 <?php foreach($displays as $b): ?>  
                   
-                 <p><b>> <?php echo $b[0]->Block->getTitle() ?></b></p>
+                 <p><b><?php echo $b[0]->Block->getTitle() ?></b></p>
                       
                     <?php foreach($b as $d): ?> 
                        <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><br><?php echo $d->getDescription() ?></a></p>
                     <?php endforeach; ?>
-                 
-                <?php $count ++ ?>
                  
                 <?php endforeach; ?>
                         
