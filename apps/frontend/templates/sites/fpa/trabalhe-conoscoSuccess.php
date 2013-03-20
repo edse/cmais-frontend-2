@@ -144,6 +144,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <div id="emprego<?php echo $k?>" class="accordion-body collapse in">
             <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
           </div>
+          <br>
           <!--/cadastro estagio-->
           <?php endif;?>
         <!-- vagas para estágiarios sempre aparece --> 
