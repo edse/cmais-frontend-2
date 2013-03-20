@@ -165,9 +165,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/resultados anteriores -->
           <?php     
               endif;
-            endforeach;  
-          ?>
-        <?php endforeach; ?>
+           endforeach;
+           ?>
      </div>
      <!--/descricao vagas-->
     </div>
