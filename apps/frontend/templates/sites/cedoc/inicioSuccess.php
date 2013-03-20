@@ -18,13 +18,29 @@ function word_limiter($str,$limit=10)
   }
 }
 ?>
+
+  <script>
+    
+    var imageUrl = new Array(
+      <?php foreach($displays['destaque-topo'] as $d): ?>
+      "<?php echo $d->retriveImageUrlByImageUsage('original') ?>",
+      <?php endforeach; ?>
+    );
+    var currentImageUrl = images[Math.floor(Math.random() * imageUrl.length)];
+    
+    $(function(){
+      $('#destaque').attr('src', currentImageUrl);
+    });
+  
+  </script> 
+  
     <div class="container home" id="geral">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo"> 
       <?php if(isset($displays['destaque-topo'])): ?>
         <?php if(count($displays['destaque-topo']) > 0): ?>
-        <a href="#" id="imagem-destacada"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
+        <a href="#" id="imagem-destacada"><img id="destaque" src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
         <?php endif; ?>
       <?php endif; ?>
         <ul class="menu">
