@@ -30,8 +30,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <div class="accordion-group">
           <div class="accordion-heading">
             <div class="accordion-heading trabalhe-conosco">
-              <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+              <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1"><i class="icon-chevron-right"></i><?php echo $s->getTitle(); ?></a>
             </div>
+            <hr class="tipo"/>
           </div>
           
             <!--vagas relacionadas-->
