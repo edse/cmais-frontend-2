@@ -28,6 +28,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/grade2013/bg.
 .hero-unit .col-dir {  float:right; width: 58%; background:#eee; height:100%; padding:0 10px; overflow: hidden; }
 .hero-unit .fechar { background:#666; text-transform:uppercase; color:#fff; margin-top:20px; border:none; text-shadow:none; padding:0 5px; font-weight:bold; float:right; font-size:12px;  }
 .hero-unit .menu-topo {clear: both; margin-top:60px; float: right;  }
+.hero-unit .menu-topo p,
 .hero-unit .menu-topo a { text-transform:uppercase; color:#666; font-weight:bold; float:left; text-align:right; font-size:14px; height:20px; line-height:20px; }
 .hero-unit .menu-topo a:hover { text-decoration:none; }
 .hero-unit .menu-topo .como { background:#fff; padding:0 5px; text-decoration:none;}
