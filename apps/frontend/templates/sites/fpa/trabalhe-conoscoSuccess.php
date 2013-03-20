@@ -17,11 +17,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
-          <?php if(count($s->getAssets())<=0 && $s->id!=2287):?>
+          <?php if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):?>
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
-          <?php elseif($s->id!=2287): ?>
+          <?php elseif($s->id!=2287 && $s->id!=2296): ?>
           <div class="accordion-heading">
             <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
@@ -116,10 +116,21 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php endif; ?>
           </div>
           <!--/tipo da vaga-->
+          <?php if($s->id==2296): ?>
+          <!--resultados anteriores -->
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
+            <a class="btn-cat" title="">
+              <i class="icon-chevron-down"></i>
+              <?php echo $s->getTitle(); ?>
+            </a>
+            <hr class="tipo"/>
+          </div> 
+          <!--/resultados anteriores -->
+          <?php elseif($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
-          <?php if($s->id==2287): ?>
-            <div class="linha"></div>
-            <div class="accordion-heading trabalhe-conosco">
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" title="">
               <i class="icon-chevron-down"></i>
               <?php echo $s->getTitle(); ?>
