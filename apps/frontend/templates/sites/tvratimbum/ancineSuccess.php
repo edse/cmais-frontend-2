@@ -98,12 +98,12 @@
                 <div class="explicacao"> 
                   <?php
                   $displays = Doctrine_Query::create()
-                    ->select('a.*')
+                    ->select('d.*')
                     ->from('Section s')
-                    ->andWhere('a.site_id = ?', (int)$site->id)
+                    ->andWhere('d.site_id = ?', (int)$site->id)
                     ->orderBy('d.id desc')
                     ->execute();
-                ?>
+                  ?>
             
                 
                 <?php foreach($displays as $b): ?>  
