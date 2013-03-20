@@ -17,11 +17,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php foreach($section->subsections() as $k=>$s):?>
         <!--tipo da vaga-->
           <div class="accordion-group">
-          <?php if(count($s->getAssets())<=0 && $s->id!=2287):?>
+          <?php if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):?>
             <span class="tipo-de-emprego" <?php if($k>0) echo "style=display:none;"?>>
               Não há vagas no momento.
             </span>
-          <?php elseif($s->id!=2287): ?>
+          <?php elseif($s->id!=2287 && $s->id!=2296): ?>
           <div class="accordion-heading">
             <a class="accordion-toggle btn-cat" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k?>" title="<?php if(count($s->getAssets())>1){$vaga="vagas";}else{$vaga="vaga";}; echo count($s->getAssets()).$vaga ?>">
               <?php echo $s->getTitle(); ?>
@@ -116,10 +116,33 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php endif; ?>
           </div>
           <!--/tipo da vaga-->
+          <?php if($s->id==2296): ?>
+          <!--resultados anteriores -->
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
+            <a class="btn-cat" title="">
+              <i class="icon-chevron-down"></i>
+              <?php echo $s->getTitle(); ?>
+            </a>
+            <hr class="tipo"/>
+          </div>
+          <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($related[$k]->asset_type_id==8):
+          ?>
+          <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+            <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+          </a>
+          <!--/resultados anteriores -->
+          <?php     
+              endif;
+            endforeach;  
+          ?> 
+          <?php elseif($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
-          <?php if($s->id==2287): ?>
-            <div class="linha"></div>
-            <div class="accordion-heading trabalhe-conosco">
+          <div class="linha"></div>
+          <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" title="">
               <i class="icon-chevron-down"></i>
               <?php echo $s->getTitle(); ?>
@@ -132,11 +155,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               if($related[$k]->asset_type_id==8):
           ?>
           <!--cadastro estagio-->
-          <div id="estagio<?php echo $k?>">
-            <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
-            </a>
-          </div>
+          <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+            <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+          </a>
           <?php     
               endif;
             endforeach;
@@ -144,8 +165,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <br>
           <!--/cadastro estagio-->
           <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+          <!-- vagas para estágiarios sempre aparece --> 
           <?php endif;?>
-        <!-- vagas para estágiarios sempre aparece --> 
         <?php endforeach; ?>
      </div>
      <!--/descricao vagas-->
