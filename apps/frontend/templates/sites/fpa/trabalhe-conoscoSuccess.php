@@ -118,7 +118,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/tipo da vaga-->
           <!-- vagas para estágiarios sempre aparece -->
           <?php if($s->id==2287): ?>
-            <hr class="linha">
+            <div class="linha">
             <div class="accordion-heading trabalhe-conosco">
             <a class="btn-cat" title="">
               <i class="icon-chevron-down"></i>
