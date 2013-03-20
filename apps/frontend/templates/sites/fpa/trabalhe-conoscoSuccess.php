@@ -129,9 +129,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- estagios -->
           <?php
             $related = $s->getAssets();
-            foreach($related as $k=>$d):
-              echo "titulo: ".$related[$k]->getTitle()."<br>";
-              echo "arquivo: ".$related[$k]->AssetFile->getFile()."<br>";
+            foreach($related as $k=>$file):
+              echo "titulo: ".$file[$k]->getTitle()."<br>";
+              echo "arquivo: ".$file[$k]->AssetFile->getFile()."<br>";
               
             endforeach;
           ?>
