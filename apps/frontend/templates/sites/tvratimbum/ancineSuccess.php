@@ -95,8 +95,8 @@
                 <!--topo-->
                 
                 <!--explicacao--> 
-                <div class="explicacao"> 
-                         
+                <div class="explicacao">  
+                <?php $displays = array_reverse($displays, true); ?>         
                 <?php foreach($displays as $b): ?>  
                   
                  <p><b><?php echo $b[0]->Block->getTitle() ?></b></p>
