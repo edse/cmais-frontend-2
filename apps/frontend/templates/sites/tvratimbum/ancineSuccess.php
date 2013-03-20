@@ -98,20 +98,22 @@
                 <div class="explicacao"> 
                  
                 <?php if(count($displays > 0)): ?> 
+                  
                   <?php $count = 0 ?> 
                   <?php foreach($displays as $count): ?> 
                   <?php $slug = $displays[$count]->$display->getSlug() ?>
                   <?php foreach($displays[$slug] as $k=>$d): ?> 
                   
                   <p><b>> <?php echo $d->getTitle() ?></b></p>
-                  <?php foreach($d as $a): ?>
-                  <p><?php echo $a->getTitle() ?><a href= "<?php echo $a->retriveUrl() ?>"><?php echo $a->getDescription() ?></a></p>
-                  <?php endforeach; ?>
+                  
+                  <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><?php echo $d->getDescription() ?></a></p>
+                 
                   
                   <?php $count ++ ?> 
                   
                   <?php endforeach; ?>
                   <?php endforeach; ?>
+                  
                 <?php endif; ?>
                         
                 </div>
