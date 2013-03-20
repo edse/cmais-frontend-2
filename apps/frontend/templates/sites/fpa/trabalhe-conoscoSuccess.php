@@ -129,7 +129,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
-              if($related[$k]->asset_type_id==8):
+              if($d->asset_type_id==8):
           ?>
           <!--cadastro estagio-->
           <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
