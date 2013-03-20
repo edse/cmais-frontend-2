@@ -106,7 +106,7 @@
                   
                   <p><b>> <?php echo $d->getTitle() ?></b></p>
                   
-                  <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><?php echo $d->getDescription() ?></a></p>
+                  <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><br><?php echo $d->getDescription() ?></a></p>
                  
        
                   <?php endforeach; ?>
