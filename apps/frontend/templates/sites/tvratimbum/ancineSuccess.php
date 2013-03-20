@@ -97,24 +97,21 @@
                 <!--explicacao--> 
                 <div class="explicacao"> 
                  
-                <?php if(count($displays > 0)): ?> 
+            
                   
-                  <?php $count = 0 ?> 
-                  <?php foreach($displays as $count): ?> 
-                  <?php $slug = $displays[$count]->$display->getSlug() ?>
-                  <?php foreach($displays[$slug] as $k=>$d): ?> 
+                
+              
+                  
+                  <?php foreach($displays['fevereiro-2013'] as $k=>$d): ?> 
                   
                   <p><b>> <?php echo $d->getTitle() ?></b></p>
                   
                   <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><?php echo $d->getDescription() ?></a></p>
                  
-                  
-                  <?php $count ++ ?> 
-                  
+       
                   <?php endforeach; ?>
-                  <?php endforeach; ?>
-                  
-                <?php endif; ?>
+               
+           
                         
                 </div>
                 <!--explicacao--> 
