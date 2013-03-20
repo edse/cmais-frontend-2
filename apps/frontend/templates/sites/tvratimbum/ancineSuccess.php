@@ -98,7 +98,7 @@
                 <div class="explicacao"> 
                  
                 <?php if(count($displays > 0)): ?> 
-                  <?php foreach($display as $d): ?> 
+                  <?php foreach($displays as $d): ?> 
                   
                   <p><b>> <?php echo $d->getTitle() ?></b></p>
                   <?php foreach($d->Assets as $a): ?>
