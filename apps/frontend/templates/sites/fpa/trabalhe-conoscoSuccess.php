@@ -125,7 +125,22 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <?php echo $s->getTitle(); ?>
             </a>
             <hr class="tipo"/>
-          </div> 
+          </div>
+          <?php
+            $related = $s->getAssets();
+            foreach($related as $k=>$d):;
+              if($related[$k]->asset_type_id==8):
+          ?>
+          <!--cadastro estagio-->
+          <div id="resultado<?php echo $k?>">
+            <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+              <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+            </a>
+          </div>
+          <?php     
+              endif;
+            endforeach;  
+          ?> 
           <!--/resultados anteriores -->
           <?php elseif($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
