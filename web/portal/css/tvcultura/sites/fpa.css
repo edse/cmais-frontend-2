@@ -161,7 +161,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .col-direita a.trabalhe p:first-child{letter-spacing:0.075em;font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important; text-transform: uppercase;}
 .col-direita a.trabalhe p:last-child{font-size: 24px; margin:14px 0 0 0; color:#fff !important;}
 .col-direita a.trabalhe .btn-primary{margin:4px 0; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);border-top-color: #124a89; border-bottom-color: #739ecd;}
-.trabalhe-conosco .btn-estagio{background: #ccc;padding: 5px;border-radius: 5px;margin: 15px 5px;color: #1863b7;float:left;clear: both;}
+.trabalhe-conosco .btn-estagio{background: #ccc;padding: 5px;border-radius: 5px;margin: 4px 5px;color: #1863b7;float:left;clear: both;}
 .col-esquerda .box-cadastro{border-radius:5px; background-color: #fdfdfd; padding:20px;}
 .col-esquerda .input {margin-left:0px!important;}
 #row1 h2, #row2 h2, #row3 h2, #row4 h2{font-size: 14px;color: #1863B7;margin: 0;line-height:11px;text-transform: uppercase;}
