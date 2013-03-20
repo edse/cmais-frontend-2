@@ -116,7 +116,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <?php endif; ?>
           </div>
           <!--/tipo da vaga-->
-          
+          <div class="accordion-group">
           <?php if($s->id==2287): ?>
           <!-- vagas para estágiarios sempre aparece -->
           <div class="linha"></div>
@@ -140,12 +140,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               endif;
             endforeach;
           ?>
-          testet
+          
           <br>
           <!--/cadastro estagio-->
           <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
           <!-- vagas para estágiarios sempre aparece --> 
+          
           <?php endif;?>
+          </div>
+          <div class="accordion-group">
           <?php if($s->id==2296): ?>
           <!--resultados anteriores -->
           <div class="linha"></div>
@@ -171,6 +174,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           ?> 
         <?php 
           endif;
+        ?>
+        </div>
+        <?php  
         endforeach;
          ?>
      </div>
