@@ -61,9 +61,10 @@
           <!-- NOTICIA INTERNA -->
           <div class="box-interna ">
             
+            <p class="titulos">Assista todas as palestras e debates nos vídeos abaixo.</p>
+
             <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL0Qz-covvhxSzQaY2cuxWcwekgje5UcDd" frameborder="0" allowfullscreen></iframe>
             
-            <p class="titulos">Assista todas as palestras e debates nos vídeos abaixo.</p>
             <!--
             <div class="texto">
               <p> Obrigado por assistir.</p>
