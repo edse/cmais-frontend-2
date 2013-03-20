@@ -109,8 +109,8 @@
                     <?php foreach($assets as $k=>$d): ?>
                       <li>
                         <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
-                        <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                          <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
+                        <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
+                          <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
                         <?php endif; ?><span class="bottom"><span class="text2">brincar</span></span></a>
                       </li>
                     <?php endforeach; ?>

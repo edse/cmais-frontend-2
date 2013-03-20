@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet"-->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet"-->
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+    
     
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
@@ -18,21 +18,11 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
    
-    <!-- estatico -->
-    <title>Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura</title>
-    <meta name="title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
-    <meta name="language" content="pt_BR" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Segunda Tela - Jornal da Cultura - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:type" content="website" /> 
-    <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
-    <meta property="og:url" content="http://tvcultura.cmais.com.br/segundatela/jornaldacultura" />
-    <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/segundatela/jornaldacultura/fb.jpg" />
-    <!-- estatico -->
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
