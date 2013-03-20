@@ -132,10 +132,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             foreach($related as $k=>$d):
               echo "titulo: ".$related[$k]->getTitle()."<br>";
               echo "arquivo: ".$related[$k]->AssetFile->getFile()."<br>";
-              if($related[$i]->asset_type_id==8):
+              if($d[$k]->asset_type_id==8):
           ?>
-            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$i]->AssetFile->getFile(); ?>" title="<?php echo $related[$i]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-file icon-blue"></i> <?php echo $related[$i]->AssetFile->getAsset(); ?>
+            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $d[$k]->AssetFile->getFile(); ?>" title="<?php echo $d[$k]->AssetFile->getAsset();?>" target="_blank">
+              <i class="icon-file icon-blue"></i> <?php echo $d[$k]->AssetFile->getAsset(); ?>
             </a><br> 
           <?php     
               endif;
