@@ -156,4 +156,6 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .accordion-heading { margin-bottom:0; } 
 .accordion-body p { margin:10px 0 0 0; }
 .logo-link img { padding:0 0 15px 0; }
+.modal-backdrop.fade.in { z-index: 100000; }
+.modal.hide.fade.in { z-index: 1000000; }
 
