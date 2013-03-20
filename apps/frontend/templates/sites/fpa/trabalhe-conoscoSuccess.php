@@ -131,12 +131,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             foreach($related as $k=>$d):;
               if($related[$k]->asset_type_id==8):
           ?>
-          <!--cadastro estagio-->
-          <div id="resultado<?php echo $k?>">
-            <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
-            </a>
-          </div>
+          <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+            <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+          </a>
           <!--/resultados anteriores -->
           <?php     
               endif;
@@ -158,11 +155,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               if($related[$k]->asset_type_id==8):
           ?>
           <!--cadastro estagio-->
-          <div id="estagio<?php echo $k?>">
-            <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-              <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
-            </a>
-          </div>
+          <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+            <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+          </a>
           <?php     
               endif;
             endforeach;
