@@ -58,7 +58,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
 
 .juiza { position:absolute; top:230px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:199px; height:330px; }
-.juiza:hover { background-position:-199px 0; }
+.juiza:hover { background-position:-201px 0; }
 
 .redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
 .redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
