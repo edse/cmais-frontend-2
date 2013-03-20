@@ -25,26 +25,6 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
     -->
-    <script>
-      $.ajax({
-        url: "http://cmais.com.br/cedoc/includes/topo.inc.html",
-        dataType: 'html'
-      }).done(function(data) {
-        $('#cedocTopo').html(data);
-      });
-      $.ajax({
-        url: "http://cmais.com.br/cedoc/includes/menu.inc.html",
-        dataType: 'html'
-      }).done(function(data) {
-        $('#cedocMenu').html(data);
-      });
-      $.ajax({
-        url: "http://cmais.com.br/cedoc/includes/footer.inc.html",
-        dataType: 'html'
-      }).done(function(data) {
-        $('#cedocFooter').html(data);
-      });
-    </script>    
   </head>
 
   <body>
@@ -53,6 +33,28 @@
      <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
 <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/fpa.js"></script>
+
+<script>
+  $.ajax({
+    url: "http://cmais.com.br/cedoc/includes/topo.inc.html",
+    dataType: 'html'
+  }).done(function(data) {
+    $('#cedocTopo').html(data);
+  });
+  $.ajax({
+    url: "http://cmais.com.br/cedoc/includes/menu.inc.html",
+    dataType: 'html'
+  }).done(function(data) {
+    $('#cedocMenu').html(data);
+  });
+  $.ajax({
+    url: "http://cmais.com.br/cedoc/includes/footer.inc.html",
+    dataType: 'html'
+  }).done(function(data) {
+    $('#cedocFooter').html(data);
+  });
+</script>    
+
 
 <div id="cedocTopo"></div>
 
