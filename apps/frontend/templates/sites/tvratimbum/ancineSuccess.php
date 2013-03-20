@@ -100,8 +100,8 @@
                 <?php if(count($displays > 0)): ?> 
                   <?php foreach($displays as $d): ?> 
                   
-                  <p><b>> <?php echo $d->getTitle() ?></b></p>
-                  <?php foreach($d->$assets as $a): ?>
+                  <p><b>> <?php echo $d->Block->getTitle() ?></b></p>
+                  <?php foreach($d->Assets as $a): ?>
                   <p><?php echo $a->getTitle() ?><a href= "<?php echo $a->retriveUrl() ?>"><?php echo $a->getDescription() ?></a></p>
                 
                   <?php endforeach; ?>
