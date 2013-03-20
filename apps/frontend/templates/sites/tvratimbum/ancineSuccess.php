@@ -102,7 +102,7 @@
                  <p><b><?php echo $b[0]->Block->getTitle() ?></b></p>
                       
                     <?php foreach($b as $d): ?> 
-                       <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><br><?php echo $d->getDescription() ?></a></p>
+                       <p><?php echo $d->getTitle() ?><a href= "http://midia.cmais.com.br/assets/file/original/<?php echo $d->AssetFile->getFile() ?>" target="_blank"><br><?php echo $d->getDescription() ?></a></p>
                     <?php endforeach; ?>
                  
                 <?php endforeach; ?>
