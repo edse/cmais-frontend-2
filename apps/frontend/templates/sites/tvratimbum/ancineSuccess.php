@@ -97,7 +97,7 @@
                 <!--explicacao--> 
                 <div class="explicacao"> 
                  
-                <?php if(count($displays > 0)): ?> 
+            
                   
                 
               
@@ -111,7 +111,7 @@
        
                   <?php endforeach; ?>
                
-                <?php endif; ?>
+           
                         
                 </div>
                 <!--explicacao--> 
