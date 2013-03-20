@@ -35,9 +35,23 @@
 <script type="text/javascript" src="/portal/js/fpa.js"></script>
 
 <script>
+$.ajax({
+  url: "http://cmais.com.br/cedoc/includes/topo.inc.html",
+  dataType: 'html'
+}).done(function(data) {
+  $('#cedocTopo').html(data);
+});
+$.ajax({
+  url: "http://cmais.com.br/cedoc/includes/menu.inc.html",
+  dataType: 'html'
+}).done(function(data) {
+  $('#cedocMenu').html(data);
+});
+/*
   $.post('http://cmais.com.br/cedoc/includes/topo.inc.html', function(data) {
     $('#cedocTopo').html(data);
   });
+*/
 </script>
 <div id="cedocTopo"></div>
 
@@ -46,11 +60,7 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo">
-        <script>
-          $.post('http://cmais.com.br/cedoc/includes/menu.inc.html', function(data) {
-            $('#cedocMenu').html(data);
-          });
-        </script>
+        
         <div id="cedocMenu"></div>
         
         <div class="span8">
