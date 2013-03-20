@@ -96,15 +96,12 @@
                 
                 <!--explicacao--> 
                 <div class="explicacao"> 
-                 
-                <?php $count = 0 ?>
-                <?php $slug = $displays[$count]->getSlug() ?>
                 
-                <?php foreach($displays['$slug'] as $k=>$d): ?>  
+                <?php foreach($displays as $b): ?>  
                   
-                      <p><b>> <?php echo $displays['$slug']->getTitle() ?></b></p>
+                 <p><b>> <?php echo $b[0]->Block->getTitle() ?></b></p>
                       
-                    <?php foreach($displays['$slug'] as $k=>$d): ?> 
+                    <?php foreach($b as $d): ?> 
                        <p><?php echo $d->getTitle() ?><a href= "<?php echo $d->retriveUrl() ?>"><br><?php echo $d->getDescription() ?></a></p>
                     <?php endforeach; ?>
                  
