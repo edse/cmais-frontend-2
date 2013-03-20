@@ -61,12 +61,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id==2296):
         ?>
           <!-- Resultado -->
-          <div class="accordion-group span12" style="margin-top:15px;">
+          <div class="accordion-group span12">
             <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
             </div>
-            <div class="span12">
+            <div class="span12" style="margin-top:15px;">
             <?php
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
