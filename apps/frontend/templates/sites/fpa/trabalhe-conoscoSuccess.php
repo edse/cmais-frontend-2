@@ -25,7 +25,31 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
-              echo "vagas de estagio<br>";
+            ?>
+            <!-- Estagio -->
+            <div class="accordion-group">  
+              <div class="linha"></div>
+              <div class="accordion-heading trabalhe-conosco">
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+              </div>
+              <?php
+              
+              foreach($sub_assets as $k=>$sa):;
+                if($sa->asset_type_id==8):
+              ?>
+                <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
+                  <i class="icon-file icon-blue"></i> <?php echo $sa->AssetFile->getAsset(); ?>
+                </a>
+              <?php
+                endif;
+              endforeach;
+              ?>
+              <div class="span12">
+                <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+              </div>
+            </div>
+            <!-- /Estagio -->
+            <?php
             elseif($sub->getSlug() == "resultados-processos"):
               echo "resultados<br>";
             else:
