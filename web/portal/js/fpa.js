@@ -63,7 +63,7 @@ $(document).ready(function(){
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
       $('html, body').animate({
-          scrollTop: $('#'+$(this).prev()).offset().top
+          scrollTop: $($(this).prev()).offset().top
         }, "slow");
     });
   });
