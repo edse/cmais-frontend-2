@@ -375,8 +375,19 @@ $(function(){
                 if($asset) {
                   $section = $asset->getSections();
                   $recentes = $section[0]->getAssets();
-                  $recentes = array_reverse($recentes);
-                }
+                  //$recentes = array_reverse($recentes);
+                  
+                  
+                  $recentes = Doctrine_Query::create()
+                    ->select('a,*')
+                    ->from('Asset a, SectionAsset sa')
+                    ->where('a.id = sa.asset_di')
+                    ->andWhere('sa.section_id= ?', 1394)
+                    ->andWhere('a.site_id= ?', 903)
+                    ->orderBy('a.created_at desc')
+                    ->limit(6)
+                    ->execute();
+                   }
               ?>
               <?php if(count($recentes) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
