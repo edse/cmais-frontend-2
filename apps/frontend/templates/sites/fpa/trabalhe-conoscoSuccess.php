@@ -80,13 +80,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ?>
             <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
-                Processo Seletivo
+              <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>">
+                <?php echo $sub->getTitle(); ?>
               </a>
               <hr class="tipo"/>
             </div>
             <!--vagas relacionadas-->
-            <div id="emprego1" class="accordion-body collapse in">
+            <div id="<?php echo $sub->id ?>" class="accordion-body collapse in">
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
