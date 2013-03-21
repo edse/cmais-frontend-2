@@ -51,7 +51,7 @@
           </div>
         </div>
         
-        <a style="cursor:none;"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
+        <a style="cursor:pointer;"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
         
         <!--
         <div id="destaque-ferias"> 
