@@ -14,7 +14,8 @@
     //serverUrl = 'ws://200.136.27.32:4443/secondscreen';
     //serverUrl = 'ws://200.136.27.32:443/secondscreen';
     //serverUrl = 'ws://172.20.18.133:4442/secondscreen';
-    serverUrl = 'ws://cmais.com.br:4442/secondscreen';
+    //serverUrl = 'ws://cmais.com.br:4442/secondscreen';
+    serverUrl = 'ws://200.136.27.32:443/secondscreen';
     if (window.MozWebSocket) {
       socket = new MozWebSocket(serverUrl);
     } else if (window.WebSocket) {
@@ -92,6 +93,8 @@
         c = 'icon-user';
       if(data.type == 'place')
         c = 'icon-map-marker';
+      if(data.type == 'poll')
+        c = 'icon-enquete';
       var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
       html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
       html += "";
