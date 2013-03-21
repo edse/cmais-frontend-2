@@ -56,13 +56,14 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
       }, "fast");
-    })
+    });
+    
     $(this).parent().next().on('show', function () {
       $(this).find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
       $('html, body').animate({
-          scrollTop: $('#'+$(this).attr('id')).offset().top
+          scrollTop: $('#'+$(this).prev().attr('id')).offset().top
         }, "slow");
     });
   });
