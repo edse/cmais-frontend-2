@@ -16,7 +16,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           
           $sub_assets = Doctrine_Query::create()
             ->select('a.*')
-            ->from('Asset a, SectionAssets sa')
+            ->from('Asset a, SectionAsset sa')
             ->where('sa.asset_id = a.id')
             ->andWhere('sa.section_id = ?', (int)$sub->id)
             ->andWhere('a.is_active = ?', 1) 
