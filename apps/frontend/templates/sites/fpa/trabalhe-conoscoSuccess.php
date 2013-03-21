@@ -93,7 +93,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
-                      <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->getHeadline(); ?></span>
+                      <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
                     </a>
                   </div>
                   <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
