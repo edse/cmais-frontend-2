@@ -16,15 +16,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           $sub_assets = $sub->getAssets();
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
-              echo "teste estagio";
+              echo "vagas de estagio<br>";
             elseif($sub->getSlug() == "resultados-processos"):
-              echo "teste resultados";
+              echo "resultados<br>";
             else:
-              echo "processo seletivo";
+              echo "processo seletivo<br>";
             endif;
           else:
             if($sub->getSlug() == "processo-seletivo"):
-              echo "nao tem vagas";
+              echo "nao há vagas";
             endif;    
           endif;
         endforeach;  
