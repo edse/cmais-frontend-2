@@ -13,7 +13,18 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php
       if(count($section->subsections()) > 0):
         foreach($section->subsections() as $sub):
-          echo $sub->getSlug()."<br>";
+          $sub_assets = $sub->getAssets();
+          if(count($sub_assets > 0)): 
+            if($sub->getSlug == "vagas-de-estagio"):
+              echo "teste estagio";
+            elseif($sub->getSlug() == "resultados-processos"):
+              echo "teste resultados";
+            else:
+              if($sub->getSlug() == "processo-seletivo"):
+                echo "teste processo";
+              endif;
+            endif;      
+          endif;
         endforeach;  
       endif;
       ?>   
