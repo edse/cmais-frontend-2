@@ -143,7 +143,6 @@
                     <option value="content">Conteúdo</option>
                     <option value="people">Pessoa</option>
                     <option value="place">Lugar</option>
-                    <option value="poll">Enquete</option>
                   </select>
                   <input type="text" id="new-content-tag" class="input-xlarge typeahead" placeholder="tag or slug" autocomplete="off" />
                 </div>
@@ -185,8 +184,7 @@
         //serverUrl2 = 'ws://172.20.18.133:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
-        //serverUrl2 = 'ws://172.20.18.133:4442/secondscreen';
-        serverUrl2 = 'ws://cmais.com.br:4442/secondscreen';
+        serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
         if (window.MozWebSocket) {
           socket2 = new MozWebSocket(serverUrl2);
         } else if (window.WebSocket) {
