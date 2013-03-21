@@ -32,7 +32,6 @@
       <div class="hero-unit">
         <div class="bgtopo"><h1><img src="/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" /></h1></div>
         <div class="col-dir">
-          <a href="#" class="btn btn-primary fechar">Fechar<i class="icon-remove-sign icon-white"></i></a>
           <div class="menu-topo">
             <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><span class="barra">|</span><p class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</p><p class="offline">Desconectado</p>
           </div>
