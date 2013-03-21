@@ -48,8 +48,7 @@ class _sectionActions extends sfActions
         $this->site_id = $request->getParameter('site_id');
       
       // URI
-      $this->uri = str_replace('/index.php', '', $request->getUri());
-
+      $this->uri = $request->getUri();
       // URL
       $this->url = @current(explode('?',$this->uri));
 
@@ -666,7 +665,7 @@ class _sectionActions extends sfActions
                 ->where('a.site_id = ?', $this->site->getId())
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhere('a.asset_type_id = ?', 1)
-                ->orderBy('a.created_at DESC');
+                ->orderBy('a.created_at ASC');
                 
             }
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
