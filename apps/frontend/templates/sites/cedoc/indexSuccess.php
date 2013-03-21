@@ -18,13 +18,29 @@ function word_limiter($str,$limit=10)
   }
 }
 ?>
+
+  <script>
+    
+    var imageUrl = new Array(
+      <?php foreach($displays['destaque-topo'] as $d): ?>
+      "<?php echo $d->retriveImageUrlByImageUsage('original') ?>",
+      <?php endforeach; ?>
+    );
+    var currentImageUrl = images[Math.floor(Math.random() * imageUrl.length)];
+    
+    $(function(){
+      $('#destaque').attr('src', currentImageUrl);
+    });
+  
+  </script> 
+  
     <div class="container home" id="geral">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo"> 
       <?php if(isset($displays['destaque-topo'])): ?>
         <?php if(count($displays['destaque-topo']) > 0): ?>
-        <a href="#" id="imagem-destacada"><img src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
+        <a href="#" id="imagem-destacada"><img id="destaque" src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
         <?php endif; ?>
       <?php endif; ?>
         <ul class="menu">
@@ -37,7 +53,8 @@ function word_limiter($str,$limit=10)
           </li>
         </ul>
       </div>
-
+      
+      <?php /*
       <!-- Example row of columns -->
       <div class="row-fluid">
         <?php if(isset($displays['destaque-principal'])):?>
@@ -86,7 +103,7 @@ function word_limiter($str,$limit=10)
          <?php endif; ?>
         <?php endif; ?>
       </div>
-
+      */ ?>
      <div class="row-fluid">
         <?php if(isset($displays['destaque-1'])):?>
           <?php if(count($displays['destaque-1']) > 0): ?>
@@ -99,7 +116,7 @@ function word_limiter($str,$limit=10)
               }
             ?>
          <div class="span6">
-          <a class="img-destaque" href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
+          <a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title=""><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-1"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-1"][0]->Asset->getTitle() ?>"><?php echo $displays["destaque-1"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
             <?php echo word_limiter(html_entity_decode($displays["destaque-1"][0]->Asset->AssetContent->getContent()), 75)."..." ?>
@@ -122,7 +139,7 @@ function word_limiter($str,$limit=10)
               }
             ?>
          <div class="span6">
-          <a class="img-destaque" href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
+          <a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays["destaque-2"][0]->Asset->getTitle() ?>" /></a>
           <h2><a href="<?php echo $displays["destaque-2"][0]->Asset->retriveUrl() ?>" title=""><?php echo $displays["destaque-2"][0]->Asset->getTitle() ?></a></h2>
           <div class="txt">
             <p><?php echo word_limiter(html_entity_decode($displays["destaque-2"][0]->Asset->AssetContent->getContent()), 75)."..." ?></p>
