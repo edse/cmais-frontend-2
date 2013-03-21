@@ -94,7 +94,7 @@ class ajaxActions extends sfActions
             ->andWhere('ca.asset_id = a.id')
             ->andWhere('a.is_active = ?', 1)
             ->andWhere('a.created_at >= ? AND a.created_at < ?', array($year.'-'.$month.'-01 00:00:00', $year.'-'.$month2.'-01 00:00:00'))
-            ->execute();            
+            ->execute();
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->created_at, 8,2);
@@ -1658,7 +1658,7 @@ EOT;
       $this->setLayout(false);
       if($assets){
         foreach($assets as $a){
-          $result[] = array("value"=>$a->getTitle(), "data"=>array("source"=>"Astolfo", "id"=>$a->getId()));
+          $result[] = array("value"=>"Astolfo: ".$a->getTitle(), "data"=>array("source"=>"Astolfo", "id"=>$a->getId()));
         }
       }
       
@@ -1670,7 +1670,7 @@ EOT;
       if($wiki_results->query->allpages){
         foreach ($wiki_results->query->allpages as $key => $value) {
           //$result[] = array("title"=>$value->title, "id"=>$value->pageid, "source"=>"Wikipedia");
-          $result[] = array("value"=>$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
+          $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
       
