@@ -14,7 +14,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <div class="accordion trabalhe-conosco" id="accordion2">
         <?php 
         foreach($section->subsections() as $k=>$s):
-          if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296): 
+          if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):  
         ?>
           <!-- Sem Vagas -->
           <div class="accordion-group">
@@ -39,7 +39,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
               <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $aj):?> 
-                <?php if($aj->is_active):?>
                 <!--emprego aberto-->
                 <div class="accordion-group">
                   <div class="accordion-heading">
@@ -58,7 +57,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                   </div>
                 </div>
                 <!--/emprego aberto-->
-                <?php endif; ?>
               <?php endforeach;?> 
             </div>
           </div>
