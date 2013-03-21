@@ -1710,7 +1710,7 @@ EOT;
         $w = '<br /><a class="logo-link" href="http://cmais.com.br" target="_blank"><img class="cmais-logo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png"></a>';
         fwrite($file, $w);  
         fclose($file);
-        die("http://cmais.com.br/cache/".$url);
+        die("http://".$url);
       }else{
         echo $content;
         die();
@@ -1835,7 +1835,7 @@ EOT;
           fwrite($file, $w);
     
           fclose($file);
-          die("http://cmais.com.br/cache/".$url);
+          die("http://".$url);
         }else{
           echo $info;
           echo $images;
