@@ -375,10 +375,8 @@ $(function(){
                 if($asset) {
                   $section = $asset->getSections();
                   
-                  $recentes = $section[0]->getAssets();
-                  //$recentes = array_reverse($recentes);
-                  
-                  
+                  //$recentes = $section[0]->getAssets();
+
                   $recentes = Doctrine_Query::create()
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
