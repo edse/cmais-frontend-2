@@ -117,7 +117,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ?>
             <!-- Sem Vagas -->
           <div class="accordion-group">
-            <span class="tipo-de-emprego">
+            <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;">
               Não há vagas no momento.
             </span>
           </div>
