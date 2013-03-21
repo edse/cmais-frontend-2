@@ -39,6 +39,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
               <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $aj):?> 
+                <?php echo count($aj->is_active)?>
                 <?php if($aj->is_active):?>
                 <!--emprego aberto-->
                 <div class="accordion-group">
