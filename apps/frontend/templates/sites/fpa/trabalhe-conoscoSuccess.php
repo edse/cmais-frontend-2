@@ -78,14 +78,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <?php
             else:
             ?>
-            <!-- Vagas de emprego -->
             <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
-                  Processo Seletivo
-                </a>
-                <hr class="tipo"/>
-              </div>
+            <div class="accordion-heading">
+              <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
+                Processo Seletivo
+              </a>
+              <hr class="tipo"/>
+            </div>
+            <!--vagas relacionadas-->
+            <div id="emprego1" class="accordion-body collapse in">
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
