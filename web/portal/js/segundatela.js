@@ -15,7 +15,7 @@
     //serverUrl = 'ws://200.136.27.32:443/secondscreen';
     //serverUrl = 'ws://172.20.18.133:4442/secondscreen';
     //serverUrl = 'ws://cmais.com.br:4442/secondscreen';
-    serverUrl = 'ws://200.136.27.32:4443/secondscreen';
+    serverUrl = 'ws://200.136.27.32:443/secondscreen';
     if (window.MozWebSocket) {
       socket = new MozWebSocket(serverUrl);
     } else if (window.WebSocket) {
