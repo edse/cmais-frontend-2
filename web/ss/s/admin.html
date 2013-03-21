@@ -157,6 +157,7 @@
                 </div>
               </form>
               <div class="controls" style="clear: both;">
+                <img id="fetching" src="../img/loading6.gif" alt="loading" class="hide" />
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
@@ -429,7 +430,7 @@
               html += '</ul><hr />';
               $('#content-list').append(html);
             }
-          }          
+          }
           return;
         };
         return clientActivity = function(port) {
@@ -448,6 +449,7 @@
           serviceUrl: '/ajax/search',
           onSelect: function (suggestion) {
             $('#new-content-save').addClass('disabled');
+            $('#fetching').show();
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
             $('#new-content-source').val(suggestion.data.source);
             $('#new-content-id').val(suggestion.data.id);
@@ -455,11 +457,13 @@
               //$('#preview').load("/ajax/preview?id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
+                $('#fetching').hide();
               });
             }else{
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
+                $('#fetching').hide();
               });
             }
             /*
