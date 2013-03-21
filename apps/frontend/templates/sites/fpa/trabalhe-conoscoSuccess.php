@@ -25,9 +25,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- /Sem Vagas -->
         <?php
           elseif($s->id!=2287 && $s->id!=2296):
-            foreach($s->Assets as $aj):
-              echo count($aj);
-            endforeach;   
+            count($s->Assets);
+               
         ?>  
           <!-- Vagas de emprego -->
           <div class="accordion-group">
