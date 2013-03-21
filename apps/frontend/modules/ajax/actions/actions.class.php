@@ -1639,7 +1639,7 @@ EOT;
         ->andWhere('p.is_active = ?', 1)
         ->andWhere('p.site_id = s.id')
         ->execute(); 
-      $this->setLayout(false);    
+      $this->setLayout(false);
     }      
   }
 

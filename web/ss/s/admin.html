@@ -295,6 +295,9 @@
         saveContent = function(){
           if($('#preview').html()!=""){
             //save to cache
+            var tag = $('#new-content-tag').val();
+            tag = tag.replace('Astolfo: ', '');
+            tag = tag.replace('Wikipedia: ', '');
             $.ajax({
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id);
               //url: "fetch.php",
@@ -443,8 +446,6 @@
         $('#new-content-tag').autocomplete({
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
-          search  : function(){ $('.typeahead').addClass('loading'); console.log(1); },
-          open    : function(){ $('.typeahead').removeClass('loading'); console.log(2); },
           onSelect: function (suggestion) {
             $('#new-content-save').addClass('disabled');
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
