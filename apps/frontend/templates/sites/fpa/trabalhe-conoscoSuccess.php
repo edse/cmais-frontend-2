@@ -25,7 +25,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- /Sem Vagas -->
         <?php
           elseif($s->id!=2287 && $s->id!=2296):
-            echo ">>>>>>>>>>>>>>>>>>>>>>".count($s->Assets->is_active)  
+            if(count($s->Assets->is_active)>0):
+              echo "true";
+            else: 
+              echo "false";
+            endif;    
         ?>  
           <!-- Vagas de emprego -->
           <div class="accordion-group">
