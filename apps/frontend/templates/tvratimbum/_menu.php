@@ -49,12 +49,13 @@
               <li><a class="mt-especial <?php if($section->getSlug() == 'especial'): ?>sel-especial<?php endif; ?>" href="/especial" title="Especial">Especial</a></li>
             </ul>
           </div>
-        </div>
+        </div> 
         
         <img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Quarteto />
         
-        <!--
-        <div id="destaque-ferias">
+       
+         <!--
+           <div id="destaque-ferias">
           <ul>
             <li>
               <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
@@ -81,6 +82,6 @@
               </map>
             </li>
           </ul>
-        </div>
-        --> 
+        </div>  --> 
+      
         
