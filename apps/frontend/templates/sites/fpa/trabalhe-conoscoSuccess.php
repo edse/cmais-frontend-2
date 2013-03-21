@@ -25,11 +25,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- /Sem Vagas -->
         <?php
           elseif($s->id!=2287 && $s->id!=2296):
-            if(count($s->Assets->is_active)<=0):
-              echo "true";
-            else: 
-              echo "false";
-            endif;    
+            foreach($s->Assets as $aj):
+              count($aj);
+            endforeach;   
         ?>  
           <!-- Vagas de emprego -->
           <div class="accordion-group">
@@ -74,7 +72,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id==2287): 
         ?>
           <!-- Estagio -->
-          <div class="accordion-group span12">  
+          <div class="accordion-group">  
             <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
@@ -102,7 +100,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           elseif($s->id==2296):
         ?>
           <!-- Resultado -->
-          <div class="accordion-group span12">
+          <div class="accordion-group">
             <div class="linha"></div>
             <div class="accordion-heading trabalhe-conosco">
               <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
