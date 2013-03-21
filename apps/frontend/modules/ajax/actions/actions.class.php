@@ -1787,6 +1787,8 @@ EOT;
             $text .= $m;
           }
         }
+        
+        $text = preg_replace('/ \(<span\s*class="dablink"[^>]*>(.*?)<\/span>\)/s', '', $text);
         $text = preg_replace('/ \(<font\s*class="metadata"[^>]*>(.*?)<\/font>\)/s', '', $text);
         $text = preg_replace('/ \(<small>(.*?)\)/s', '', $text);
         $text = preg_replace('/<strong\s*class="error"[^>]*>(.*?)<\/strong>/s', '', $text);
