@@ -393,6 +393,7 @@
         },
 
         getSuggestions: function (q) {
+            $('.typeahead').addClass('loading');
             var response,
                 that = this,
                 options = that.options;
@@ -458,6 +459,8 @@
 
             container.html(html).show();
             that.visible = true;
+            
+            $('.typeahead').removeClass('loading');
 
             // Select first value by default:
             if (that.options.autoSelectFirst) {

@@ -6,6 +6,7 @@
     <!-- Le styles -->
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
     
     
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
