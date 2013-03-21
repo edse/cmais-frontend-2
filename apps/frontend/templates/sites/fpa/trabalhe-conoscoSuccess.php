@@ -36,7 +36,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <?php
               
-              foreach($sub_assets as $k=>$sa):;
+              foreach($sub_assets as $sa):;
                 if($sa->asset_type_id==8):
               ?>
                 <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
@@ -62,16 +62,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <div class="span12" style="margin-top:15px;">
               <?php
-              $related = $s->getAssets();
-              foreach($related as $k=>$d):;
-                if($d->asset_type_id==8):
-                  if($d->is_active):
+              foreach($sub_assets as $sa):;
+                if($sa->asset_type_id==8):
               ?>
-                <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
-                  <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+                <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
+                  <i class="icon-align-left icon-white"></i> <?php echo $sa->AssetFile->getAsset(); ?>
                 </a>
-              <?php
-                  endif;    
+              <?php  
                 endif;
               endforeach;  
               ?>
