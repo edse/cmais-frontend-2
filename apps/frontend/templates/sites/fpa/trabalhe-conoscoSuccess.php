@@ -25,7 +25,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- /Sem Vagas -->
         <?php
           elseif($s->id!=2287 && $s->id!=2296):
-            if(count($s->Assets->is_active)>0):
+            if(count($s->getIsActive())>0):
               echo "true";
             else: 
               echo "false";
