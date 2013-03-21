@@ -15,7 +15,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <?php 
         foreach($section->subsections() as $k=>$s):
           if(count($s->getAssets())<=0 && $s->id!=2287 && $s->id!=2296):
-           echo count($s->Assets->is_active)  
+           echo ">>>>>>>>>>>>>>>>>>>>>>".count($s->Assets->is_active)  
         ?>
           <!-- Sem Vagas -->
           <div class="accordion-group">
