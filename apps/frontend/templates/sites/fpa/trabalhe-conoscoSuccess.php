@@ -39,17 +39,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
               <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $aj):?> 
-              <?php  echo count($aj)."<br>";
-                     echo $aj->getTitle();
-              ?>
-              <?php
-              /*
+              
               
               <!--emprego aberto-->
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
-                    <i class="ico-trabalho"></i><?php echo $aj->Asset->getTitle(); ?><span class="badge vaga"><?php $aj->Asset->getHeadline(); ?></span>
+                    <i class="ico-trabalho"></i><?php echo $aj->getTitle(); ?><span class="badge vaga"><?php $aj->getHeadline(); ?></span>
                   </a>
                 </div>
                 <hr class="vaga"/>
@@ -63,9 +59,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 </div>
               </div>
               <!--/emprego aberto-->
-               * 
-               */
-               ?>
               <?php endforeach;?> 
             </div>
           </div>
