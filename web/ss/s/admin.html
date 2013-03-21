@@ -33,6 +33,12 @@
         float: left;
         margin-right: 13px;
       }
+      #new-content-tag{
+        padding-right: 35px;
+        /* background-image: url('../img/loading6.gif'); */
+        background-repeat: no-repeat;
+        background-position: right;
+      }
       .autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; }
       .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
       .autocomplete-selected { background: #F0F0F0; }
@@ -435,6 +441,12 @@
         $('.typeahead').autocomplete({
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
+          search: function( event, ui ) {
+            $('#new-content-tag').css("background-image", "url('../img/loading6.gif')");
+          },
+          response: function( event, ui ) {
+            $('#new-content-tag').css("background-image", "none");
+          },
           onSelect: function (suggestion) {
             $('#new-content-save').addClass('disabled');
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
