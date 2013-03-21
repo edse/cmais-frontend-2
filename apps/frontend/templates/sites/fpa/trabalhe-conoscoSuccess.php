@@ -87,24 +87,26 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             <!--vagas relacionadas-->
             <div id="<?php echo $sub->id ?>" class="accordion-body collapse in">
-              <?php foreach($sub_assets as $sa):?>
-              <!--emprego aberto-->
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
-                    <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
-                  </a>
-                </div>
-                <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
-                  <div class="accordion-inner">
-                  <!--descriçao vaga-->
-                  <?php echo html_entity_decode($sa->AssetContent->render()) ?>
-                  <!--/descriçao vaga-->
+              <div class="accordion" id="vagas-relacionadas">
+                <?php foreach($sub_assets as $sa):?>
+                <!--emprego aberto-->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
+                      <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->getHeadline(); ?></span>
+                    </a>
+                  </div>
+                  <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
+                    <div class="accordion-inner">
+                    <!--descriçao vaga-->
+                    <?php echo html_entity_decode($sa->AssetContent->render()) ?>
+                    <!--/descriçao vaga-->
+                    </div>
                   </div>
                 </div>
+                <!--/emprego aberto-->
+                <?php endforeach; ?>
               </div>
-              <!--/emprego aberto-->
-              <?php endforeach; ?>
             </div>
           </div>
           <!-- /Vagas de emprego -->      
