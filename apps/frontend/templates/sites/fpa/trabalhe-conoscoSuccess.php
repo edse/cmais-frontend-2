@@ -11,7 +11,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <h1><?php echo $section->getTitle();?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <?php
-      if(count($section->subsections() > 0)):
+      if(count($section->subsections()) > 0):
         foreach($section->subsections() as $sub):
           echo $sub->getSlug()."<br>";
         endforeach;  
