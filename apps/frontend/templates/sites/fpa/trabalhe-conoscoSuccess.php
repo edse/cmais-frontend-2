@@ -25,8 +25,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!-- /Sem Vagas -->
         <?php
           elseif($s->id!=2287 && $s->id!=2296):
-            echo count($s->Assets->getIsActive());
-               
         ?>  
           <!-- Vagas de emprego -->
           <div class="accordion-group">
@@ -39,30 +37,30 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           
             <!--vagas relacionadas-->
             <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
-              <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $aj):?> 
                 <?php if($aj->is_active):?>
-                <!--emprego aberto-->
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
-                      <i class="ico-trabalho"></i><?php echo $aj->getTitle(); ?><span class="badge vaga"><?php echo $aj->AssetContent->getHeadline(); ?></span>
-                    </a>
-                  </div>
-                  <hr class="vaga"/>
-                  <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
-                    <div class="accordion-inner">
-                      <!--descriçao vaga-->
-                      <?php echo html_entity_decode($aj->AssetContent->render()); ?>
-                      <!--/descriçao vaga-->
-                      <hr class="vaga desc"/>  
+                  <div class="accordion" id="vagas-relacionadas">
+                    <!--emprego aberto-->
+                    <div class="accordion-group">
+                      <div class="accordion-heading">
+                        <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
+                          <i class="ico-trabalho"></i><?php echo $aj->getTitle(); ?><span class="badge vaga"><?php echo $aj->AssetContent->getHeadline(); ?></span>
+                        </a>
+                      </div>
+                      <hr class="vaga"/>
+                      <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
+                        <div class="accordion-inner">
+                          <!--descriçao vaga-->
+                          <?php echo html_entity_decode($aj->AssetContent->render()); ?>
+                          <!--/descriçao vaga-->
+                          <hr class="vaga desc"/>  
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <!--/emprego aberto-->
                 </div>
-                <!--/emprego aberto-->
-                <?php endif; ?>
-              <?php endforeach;?> 
-            </div>
+              <?php endif; ?>
+            <?php endforeach;?>    
           </div>
           <!--vagas relacionadas-->
         </div>
