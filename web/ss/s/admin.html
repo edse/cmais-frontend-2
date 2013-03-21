@@ -312,7 +312,7 @@
                   payload.action = "addcontent";
                   var data = new Object();
                   data.type = $('#new-content-type option:selected').val();
-                  data.tag = $('#new-content-tag').val();
+                  data.tag = tag;
                   data.source = $('#new-content-source').val();
                   data.id = $('#new-content-id').val();
                   //data.html = $('#preview').html();
@@ -448,6 +448,11 @@
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
           onSelect: function (suggestion) {
+            var tag = $('#new-content-tag').val();
+            tag = tag.replace('Astolfo: ', '');
+            tag = tag.replace('Wikipedia: ', '');
+            $('#new-content-tag').val(tag);
+
             $('#new-content-save').addClass('disabled');
             $('#fetching').show();
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);

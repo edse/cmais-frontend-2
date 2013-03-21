@@ -52,11 +52,11 @@
         <div id="box-programas-programaEscolhido">
           <div class="wrapper">
             <div class="topo-esq"></div>
-            <div class="topo">
+            <div class="topo"> 
               <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
             </div>
             <div class="programaEscolhido-info">
-              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
+              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageThumb() ?>" />teste
               <div class="box-infos">
                 <?php /*
                 <div class="horario">
