@@ -52,7 +52,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
                   <div class="accordion-inner">
                     <!--descriçao vaga-->
-                    <?php echo html_entity_decode($d->AssetContent->render()); ?>
+                    <?php echo html_entity_decode($aj->AssetContent->render()); ?>
                     <!--/descriçao vaga-->
                     <hr class="vaga desc"/>  
                   </div>
