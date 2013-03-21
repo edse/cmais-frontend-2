@@ -1,4 +1,4 @@
-        <?php
+<?php
           $programs = Doctrine_Query::create()
             ->select('p.*')
             ->from('Program p, ChannelProgram cp')
@@ -49,7 +49,37 @@
               <li><a class="mt-especial <?php if($section->getSlug() == 'especial'): ?>sel-especial<?php endif; ?>" href="/especial" title="Especial">Especial</a></li>
             </ul>
           </div>
-        </div> 
+        </div>
         
-        <img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Quarteto />
+        <a href=""><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
         
+        <!--
+        <div id="destaque-ferias">
+          <ul>
+            <li>
+              <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
+              <map name="missao" id="missao">
+                <area title="Missão Minuto Rá Tim Bum" alt="Missão Minuto Rá Tim Bum" shape="circle" coords="109,110,99" href="/missao-minuto" />
+              </map>
+            </li>
+            <li>
+              <img src="/portal/tvratimbum/image/btn-seupedido.png" usemap="#speuo"/>
+              <map name="speuo" id="speuo">
+                <area title="Seu pedido é uma ordem" alt="Seu pedido é uma ordem" shape="circle" coords="109,110,99" href="/seu-pedido-e-uma-ordem" />
+              </map>
+            </li>
+            <li>
+              <img src="/portal/tvratimbum/image/btn-ideiasmirabolantes.png" usemap="#ideia"/>
+              <map name="ideia" id="ideia">
+                <area title="Ideias mirabolantes para melhorar o mundo" alt="Ideias mirabolantes para melhorar o mundo" shape="circle" coords="109,110,99" href="/ideias-mirabolantes" />
+              </map>
+            </li>
+            <li>
+              <img src="/portal/tvratimbum/image/btn-sessaopiada.png" usemap="#piada"/>
+              <map name="piada" id="piada">
+                <area title="Sessão Piada Rá Tim Bum" alt="Sessão Piada Rá Tim Bum" shape="circle" coords="109,110,99" href="/piadas" />
+              </map>
+            </li>
+          </ul>
+        </div>
+        --> 
