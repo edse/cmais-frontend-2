@@ -88,17 +88,17 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <!--vagas relacionadas-->
               <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
-                <?php foreach($sub_assets as $sa):?> 
+                <?php foreach($sub_assets as $sa):?>
                     <div class="accordion" id="vagas-relacionadas">
                       <!--emprego aberto-->
                       <div class="accordion-group">
                         <div class="accordion-heading">
-                          <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
+                          <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
                             <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
                           </a>
                         </div>
                         <hr class="vaga"/>
-                        <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
+                        <div id="#<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
                           <div class="accordion-inner">
                             <!--descriçao vaga-->
                             <?php echo html_entity_decode($sa->AssetContent->render()); ?>
