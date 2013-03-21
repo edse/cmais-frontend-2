@@ -23,7 +23,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               if($sub->getSlug() == "processo-seletivo"):
                 if(count($sub_assets->is_active) > 0):
                   echo "tem";
-                  count($sub_assets->is_active);
+                  echo count($sub_assets->is_active);
                 else:
                   echo "nao tem";
                 endif;    
