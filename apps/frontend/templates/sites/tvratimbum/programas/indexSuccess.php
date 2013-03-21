@@ -56,7 +56,7 @@
               <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
             </div>
             <div class="programaEscolhido-info">
-              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getSiteThumb() ?>" />
+              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageThumb() ?>" />
               <div class="box-infos">
                 <?php /*
                 <div class="horario">
