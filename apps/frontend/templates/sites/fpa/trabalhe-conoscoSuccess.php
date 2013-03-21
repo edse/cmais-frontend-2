@@ -62,7 +62,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <div class="span12" style="margin-top:15px;">
               <?php
-              foreach($sub_assets as $sa):;
+              foreach($sub_assets as $sa):
                 if($sa->asset_type_id==8):
               ?>
                 <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
@@ -78,27 +78,43 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <?php
             else:
             ?>
-            <div class="accordion" id="vagas-relacionadas">
-              <!--emprego aberto-->
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
-                    <i class="ico-trabalho"></i><?php echo $sub->getTitle(); ?><span class="badge vaga"><?php echo $sub->AssetContent->getHeadline(); ?></span>
-                  </a>
+            <!-- Vagas de emprego -->
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <div class="accordion-heading trabalhe-conosco">
+                  <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k; ?>"><i class="icon-chevron-right"></i><?php echo $sub->getTitle(); ?></a>
                 </div>
-                <hr class="vaga"/>
-                <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
-                  <div class="accordion-inner">
-                    <!--descriçao vaga-->
-                    <?php echo html_entity_decode($sub->AssetContent->render()); ?>
-                    <!--/descriçao vaga-->
-                    <hr class="vaga desc"/>  
-                  </div>
-                </div>
+                <hr class="tipo"/>
               </div>
-              <!--/emprego aberto-->
-            </div>  
-            <?php
+              <!--vagas relacionadas-->
+              <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
+                <?php foreach($sub_assets as $sa):?> 
+                    <div class="accordion" id="vagas-relacionadas">
+                      <!--emprego aberto-->
+                      <div class="accordion-group">
+                        <div class="accordion-heading">
+                          <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
+                            <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
+                          </a>
+                        </div>
+                        <hr class="vaga"/>
+                        <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
+                          <div class="accordion-inner">
+                            <!--descriçao vaga-->
+                            <?php echo html_entity_decode($sa->AssetContent->render()); ?>
+                            <!--/descriçao vaga-->
+                            <hr class="vaga desc"/>  
+                          </div>
+                        </div>
+                      </div>
+                      <!--/emprego aberto-->
+                  </div>
+              <?php endforeach;?>    
+            </div>
+            <!--vagas relacionadas-->
+          </div>
+          <!-- /Vagas de emprego -->      
+          <?php
             endif;
           else:
             if($sub->getSlug() == "processo-seletivo"):
