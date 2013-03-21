@@ -21,7 +21,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               echo "teste resultados";
             else:
               if($sub->getSlug() == "processo-seletivo"):
-                echo "teste processo";
+                if(count($sub_assets) > 0):
+                  echo "tem";
+                else:
+                  echo "nao tem";
+                endif;    
               endif;
             endif;      
           endif;
