@@ -81,37 +81,29 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <!-- Vagas de emprego -->
             <div class="accordion-group">
               <div class="accordion-heading">
-                <div class="accordion-heading trabalhe-conosco">
-                  <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego<?php echo $k; ?>"><i class="icon-chevron-right"></i><?php echo $sub->getTitle(); ?></a>
-                </div>
+                <a class="accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#emprego1">
+                  Processo Seletivo
+                </a>
                 <hr class="tipo"/>
               </div>
-              <!--vagas relacionadas-->
-              <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
-                <div class="accordion" id="vagas-relacionadas">
-                  <?php foreach($sub_assets as $sa):?>
-                    <!--emprego aberto-->
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
-                          <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
-                        </a>
-                      </div>
-                      <hr class="vaga"/>
-                      <div id="#<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
-                        <div class="accordion-inner">
-                          <!--descriçao vaga-->
-                          <?php echo html_entity_decode($sa->AssetContent->render()); ?>
-                          <!--/descriçao vaga-->
-                          <hr class="vaga desc"/>  
-                        </div>
-                      </div>
-                    </div>
-                    <!--/emprego aberto-->
-                  <?php endforeach;?>  
-              </div>  
-            </div>
-            <!--vagas relacionadas-->
+              <!--emprego aberto-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a id="teste2" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga2">
+                    <i class="ico-trabalho"></i> Assistente de Arte I <span class="badge vaga">1 vaga</span>
+                  </a>
+                </div>
+                <hr class="vaga"/>
+                <div id="vaga2" class="accordion-body collapse vagas-exi">
+                  <div class="accordion-inner">
+                    <!--descriçao vaga-->
+                    teste
+                    <!--/descriçao vaga-->
+                    <hr class="vaga desc"/>  
+                  </div>
+                </div>
+              </div>
+              <!--/emprego aberto-->
           </div>
           <!-- /Vagas de emprego -->      
           <?php
