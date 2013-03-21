@@ -1,7 +1,7 @@
               <?php if(isset($displays)): ?>
                 <?php if(count($displays) > 0): ?>
                 <ul class="conteudo">
-                  <?php print_r($display)?>
+                  <?php print_r($displays)?>
                   <?php foreach($displays as $k=>$d): ?>
                      <?php if($k<1):?>
                   <li><a class="titulos" href="/<?php echo $site->getSlug() ?>/<?php echo $d->getSlug() ?>"><?php echo $d->getTitle() ?></a>
