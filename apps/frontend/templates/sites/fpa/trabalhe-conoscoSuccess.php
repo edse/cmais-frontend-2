@@ -10,29 +10,87 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <div class="col-esquerda span7">
       <h1><?php echo $section->getTitle();?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
+      <!--descricao vagas-->
+      <div class="accordion trabalhe-conosco" id="accordion2">
       <?php
       if(count($section->subsections()) > 0):
         foreach($section->subsections() as $sub):
-          $sub_assets = $sub->getAssets();
+          
+          $sub_assets = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.asset_id = a.id')
+            ->andWhere('sa.section_id = ?', (int)$sub->id)
+            ->andWhere('a.is_active = ?', 1) 
+            ->andWhere('a.site_id = ?', (int)$site->id)
+            ->execute();
+          
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
-              echo "teste estagio";
+            ?>
+            <!-- Estagio -->
+            <div class="accordion-group">  
+              <div class="linha"></div>
+              <div class="accordion-heading trabalhe-conosco">
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+              </div>
+              <?php
+              
+              foreach($sub_assets as $k=>$sa):;
+                if($sa->asset_type_id==8):
+              ?>
+                <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
+                  <i class="icon-file icon-blue"></i> <?php echo $sa->AssetFile->getAsset(); ?>
+                </a>
+              <?php
+                endif;
+              endforeach;
+              ?>
+              <div class="span12">
+                <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
+              </div>
+            </div>
+            <!-- /Estagio -->
+            <?php
             elseif($sub->getSlug() == "resultados-processos"):
-              echo "teste resultados";
+            ?>
+            <!-- Resultado -->
+            <div class="accordion-group">
+              <div class="linha"></div>
+              <div class="accordion-heading trabalhe-conosco">
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $s->getTitle(); ?></a>
+              </div>
+              <div class="span12" style="margin-top:15px;">
+              <?php
+              $related = $s->getAssets();
+              foreach($related as $k=>$d):;
+                if($d->asset_type_id==8):
+                  if($d->is_active):
+              ?>
+                <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
+                  <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
+                </a>
+              <?php
+                  endif;    
+                endif;
+              endforeach;  
+              ?>
+              </div> 
+            </div>
+            <!-- /Resultado -->
+            <?php
             else:
-              if($sub->getSlug() == "processo-seletivo"):
-                if(count($sub_assets->is_active) > 0):
-                  echo "tem";
-                  echo count($sub_assets->is_active);
-                else:
-                  echo "nao tem";
-                endif;    
-              endif;
-            endif;      
+              echo "processo seletivo<br>";
+            endif;
+          else:
+            if($sub->getSlug() == "processo-seletivo"):
+              echo "nao há vagas";
+            endif;    
           endif;
         endforeach;  
       endif;
-      ?>   
+      ?>
+      </div>   
     </div>
     <!--/ESQUERDA-->
     <!--DIREITA-->

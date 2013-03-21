@@ -17,7 +17,7 @@
     </div>
     <div class="span2 tvcoco"> <a href="<?php echo $siteUrl ?>/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
       <ul>
-        <li><a href="<?php echo $siteUrl ?>/episodios" title="Episódios">Episódios</a></li>
+        <li><a href="<?php echo $siteUrl ?>/tvcocorico/episodios" title="Episódios">Episódios</a></li>
         <li><a href="<?php echo $siteUrl ?>/tvcocorico/convidados" title="Convidado do dia">Convidado do dia</a></li>
         <li><a href="<?php echo $siteUrl ?>/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
         <li><a href="<?php echo $siteUrl ?>/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
