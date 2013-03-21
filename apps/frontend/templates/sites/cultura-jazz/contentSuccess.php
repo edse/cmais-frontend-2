@@ -375,6 +375,7 @@ $(function(){
                 if($asset) {
                   $section = $asset->getSections();
                   $recentes = $section[0]->getAssets();
+                  $recentes = array_reverse($recentes);
                 }
               ?>
               <?php if(count($recentes) > 0): ?>
