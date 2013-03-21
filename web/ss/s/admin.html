@@ -39,9 +39,8 @@
         background-repeat: no-repeat;
         background-position: right;
       }
-      .ui-autocomplete-loading {
-        background: white url('../img/loading6.gif') right center no-repeat;
-      }
+      .ui-autocomplete-loading { background: white url('../img/loading6.gif') right center no-repeat; }
+      .loading { background: white url('../img/loading6.gif') right center no-repeat; }
       .autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; }
       .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
       .autocomplete-selected { background: #F0F0F0; }
@@ -441,9 +440,11 @@
       
       $(document).ready(function() {
 
-        $('.typeahead').autocomplete({
+        $('#new-content-tag').autocomplete({
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
+          search  : function(){$(this).addClass('loading');},
+          open    : function(){$(this).removeClass('loading');},
           onSelect: function (suggestion) {
             $('#new-content-save').addClass('disabled');
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
