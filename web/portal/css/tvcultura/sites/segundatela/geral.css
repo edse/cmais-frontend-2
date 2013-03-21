@@ -90,3 +90,5 @@
 .hero-unit .col-dir span { *margin:-6px 0 0 0;}  
 .row-fluid .span4 { *margin-left:0} 
 /* /ie */
+
+.progress .bar { color:#333; }
