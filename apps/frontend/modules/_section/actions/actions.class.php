@@ -665,7 +665,7 @@ class _sectionActions extends sfActions
                 ->where('a.site_id = ?', $this->site->getId())
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhere('a.asset_type_id = ?', 1)
-                ->orderBy('a.created_at ASC');
+                ->orderBy('a.created_at DESC');
                 
             }
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
