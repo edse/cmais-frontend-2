@@ -13,7 +13,16 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php
       if(count($section->subsections()) > 0):
         foreach($section->subsections() as $sub):
-          $sub_assets = $sub->getAssets();
+          
+          $sub_assets = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAssets sa')
+            ->where('sa.asset_id = a.id')
+            ->andWhere('sa.section_id = ?', (int)$sub->id)
+            ->andWhere('a.is_active = ?', 1) 
+            ->andWhere('a.site_id = ?', (int)$site->id)
+            ->execute();
+          
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
               echo "vagas de estagio<br>";
