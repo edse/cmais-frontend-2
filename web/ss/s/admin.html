@@ -448,7 +448,11 @@
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
           onSelect: function (suggestion) {
-            $('#new-content-tag').val($('#new-content-tag').val().replace('Astolfo: ', '').replace('Wikipedia: ', '');
+            var tag = $('#new-content-tag').val();
+            tag = tag.replace('Astolfo: ', '');
+            tag = tag.replace('Wikipedia: ', '');
+            $('#new-content-tag').val(tag);
+
             $('#new-content-save').addClass('disabled');
             $('#fetching').show();
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
