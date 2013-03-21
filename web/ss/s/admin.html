@@ -39,7 +39,7 @@
         background-repeat: no-repeat;
         background-position: right;
       }
-      .ui-autocomplete-loading {
+      .loading {
         background: white url('../img/loading6.gif') right center no-repeat;
       }
       .autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; }
@@ -444,6 +444,8 @@
         $('.typeahead').autocomplete({
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
+          search  : function(){$(this).addClass('loading');},
+          open    : function(){$(this).removeClass('loading');},
           onSelect: function (suggestion) {
             $('#new-content-save').addClass('disabled');
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
