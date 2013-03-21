@@ -1,25 +1,4 @@
-@font-face {
-    font-family: 'source_sans_proregular';
-    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
-    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body { background:#fff url(/portal/images/capaPrograma/segundatela/grade2013/bg.jpg) repeat-x; color:#000; }
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 970px; }
-.nav-tabs > li > a,
-.hero-unit .fechar,
-.hero-unit  {  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
-
-.nav-tabs > li > a,
-.accordion-heading .accordion-toggle,
-.conteudo h2,
-.hero-unit .col-esq p,
-.hero-unit .fechar { font-family: 'source_sans_proregular'; }
 
 .hero-unit { padding:0; margin:0; background:none; height:200px; overflow:hidden; }
 .hero-unit .bgtopo h1 {/*background:url(/portal/images/capaPrograma/segundatela/grade2013/logo.png) no-repeat;*/ float:left; margin:0; padding:0 4% 0 0; text-indent:-9999px;  }
@@ -34,68 +13,19 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/grade2013/bg.
 .hero-unit .menu-topo .como { background:#fff; padding:0 5px; text-decoration:none;}
 .hero-unit .menu-topo .como:hover { background:#666; color:#fff;  text-decoration:none;}
 .hero-unit .menu-topo span { margin:-6px 10px 0 10px; float:left; color:#c4c4c4; font-size: 18px; }
-.hero-unit .menu-topo .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; min-width:20px; text-align:center;  }
+.hero-unit .menu-topo .numero { background:#666; color:#ccff33; padding:0 5px; margin:0; font-size:14px; min-width:20px; text-align:center; }
 .hero-unit .menu-topo .seta { border:5px solid transparent;  border-left-color: #666; width: 0; height:0; margin:0; padding:0; display:block; float:left; margin-top:5px; }
 .hero-unit .menu-topo .offline { color:#ce0002;}
-.conteudo h2 { font-size:22px; line-height:24px; margin:20px 0 5px 0; color:#666; text-transform:uppercase; }
-.accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; position:relative; }
-.accordion-heading .accordion-toggle:hover,
-.accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
-.accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
-.accordion-inner img { max-width: 140px; float:left;  margin-right:10px;}
-.accordion-body a { color:#000; text-decoration:underline; } 
 
-.nav-tabs > li { margin-bottom:0; }
-.nav-tabs { background:#666; border:none; border-left: 1px dotted #fff;  }
-.nav-tabs > li { border-right: 1px dotted #fff; }
-.nav-tabs > li > a { font-weight:bold; text-transform:uppercase;color:#fff; background:#666;border:none; padding:0; height:30px; line-height: 30px; margin:0; font-size:16px; min-width:100px; text-align:center; }
-.nav-tabs > li:hover > a,
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {  background:#333; color:#fff; border:none; }
-
-.modal a { color:#000; text-decoration:underline; }
-.conteudo { margin-bottom:50px; }
-#twitter-widget-1 { min-height:600px; }
-.accordion-group { border:none; }
-.accordion-inner { border:none; overflow:hidden; }
-.redes .fb {margin:-4px 10px 0 10px;  }
 .redes .twt,
 .redes .fb,
-.redes .gplus {  display: block; float:right; }
-.accordion-body #mais h3 { background:#333; color:#fff; padding:2px 5px; font-size:14px; height:18px; line-height:18px; float: left; text-transform:uppercase; margin:0 15px 10px 15px; font-weight:normal;}   
-.accordion-body #mais ul { clear:both; margin-left:20px; } 
-.accordion-body #mais li { list-style:none;} 
-.accordion-body #mais li i { margin-right:5px;} 
-.accordion-body #mais li a { text-decoration:none;}
-.accordion-body #mais li a:hover { text-decoration:underline ;} 
-.accordion-heading .loader { position:absolute; right:10px; top:7px; } 
-.accordion-body ul {margin:0; padding:15px; }
-.accordion-body table,
-.accordion-body img { padding:15px 15px 0 0; float:left; margin-right:0;   }
-.accordion-body { padding:0 15px; background:#eee; }
-.accordion-inner,
-.accordion-body p { padding:0; }
-.accordion-body #mais ul,
-.accordion-body #mais h3 { margin-left:0; }
-.accordion-body #mais ul { padding:0 0 15px 0; }
-.accordion-body #mais { clear:both;  }
-.accordion-heading { margin-bottom:0; } 
-.accordion-body p { margin:10px 0 0 0; }
-.logo-link img { padding:0 0 15px 0; }
+.redes .gplus {  float:right; }
 
 .tab-content ul { margin-left:0; }
 .tab-content ul li { list-style:none; margin-bottom:10px; }
 .tab-content ul li .download { width: 12px; height:12px; background:url(/portal/images/capaPrograma/segundatela/grade2013/download.jpg) no-repeat; display: block;float:left; margin:5px 3px 0 0; }
 .tab-content ul li a { color:#000; text-decoration:underline; }
 
-/* ie */
-.hero-unit .col-dir { width/*\**/:37%\9; }
-.hero-unit .col-esq { *width:310px; } 
-.hero-unit .col-dir { *width:360px;  }
-.hero-unit .menu-topo { *width: 350px;} 
-.hero-unit .col-dir span { *margin:-6px 0 0 0;}  
-.row-fluid .span4 { *margin-left:0} 
-/* /ie */
 
 /* media screen*/
 @media screen and (max-width: 1200px){
