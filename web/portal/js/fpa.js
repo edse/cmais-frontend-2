@@ -51,7 +51,7 @@ $(document).ready(function(){
   
   //trabalheconosco
   $('.vaga-aberta').click(function(){
-    $(this).parent().next().on('hidden', function () {
+    $(this).parent().next().on('hide', function () {
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
