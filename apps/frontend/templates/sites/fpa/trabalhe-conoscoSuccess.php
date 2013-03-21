@@ -39,26 +39,26 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div id="emprego<?php echo $k; ?>" class="accordion-body collapse in">
               <div class="accordion" id="vagas-relacionadas">
               <?php foreach($s->getAssets() as $aj):?> 
-              
-              
-              <!--emprego aberto-->
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
-                    <i class="ico-trabalho"></i><?php echo $aj->getTitle(); ?><span class="badge vaga"><?php echo $aj->AssetContent->getHeadline(); ?></span>
-                  </a>
-                </div>
-                <hr class="vaga"/>
-                <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
-                  <div class="accordion-inner">
-                    <!--descriçao vaga-->
-                    <?php echo html_entity_decode($aj->AssetContent->render()); ?>
-                    <!--/descriçao vaga-->
-                    <hr class="vaga desc"/>  
+                <?php if($aj->is_active):?>
+                <!--emprego aberto-->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
+                      <i class="ico-trabalho"></i><?php echo $aj->getTitle(); ?><span class="badge vaga"><?php echo $aj->AssetContent->getHeadline(); ?></span>
+                    </a>
+                  </div>
+                  <hr class="vaga"/>
+                  <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
+                    <div class="accordion-inner">
+                      <!--descriçao vaga-->
+                      <?php echo html_entity_decode($aj->AssetContent->render()); ?>
+                      <!--/descriçao vaga-->
+                      <hr class="vaga desc"/>  
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--/emprego aberto-->
+                <!--/emprego aberto-->
+                <?php endif; ?>
               <?php endforeach;?> 
             </div>
           </div>
@@ -78,11 +78,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
               if($d->asset_type_id==8):
+                if($d->is_active):
             ?>
               <a class="btn-estagio" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
                 <i class="icon-file icon-blue"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
               </a>
-            <?php     
+            <?php
+                endif;     
               endif;
             endforeach;
             ?>
@@ -105,11 +107,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             $related = $s->getAssets();
             foreach($related as $k=>$d):;
               if($d->asset_type_id==8):
+                if($d->is_active):
             ?>
               <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[$k]->AssetFile->getFile(); ?>" title="<?php echo $related[$k]->AssetFile->getAsset();?>" target="_blank">
                 <i class="icon-align-left icon-white"></i> <?php echo $related[$k]->AssetFile->getAsset(); ?>
               </a>
-            <?php     
+            <?php
+                endif;    
               endif;
             endforeach;  
             ?>
