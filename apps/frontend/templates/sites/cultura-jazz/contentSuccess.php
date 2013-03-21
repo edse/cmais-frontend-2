@@ -380,7 +380,7 @@ $(function(){
                   $recentes = Doctrine_Query::create()
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
-                    ->where('a.id = sa.asset_di')
+                    ->where('a.id = sa.asset_id')
                     ->andWhere('sa.section_id= ?', 1394)
                     ->andWhere('a.site_id= ?', 903)
                     ->orderBy('a.created_at desc')
