@@ -47,6 +47,12 @@ $.ajax({
 }).done(function(data) {
   $('#cedocMenu').html(data);
 });
+$.ajax({
+  url: "http://cmais.com.br/cedoc/includes/footer.inc.html",
+  dataType: 'html'
+}).done(function(data) {
+  $('#cedocFooter').html(data);
+});
 </script>
 
 <div id="cedocTopo"></div>
@@ -77,73 +83,6 @@ $.ajax({
          
       </div>
 
-      <div class="row-fluid">
-        <div class="span5 apoio"> 
-          <h2>Realização:</h2>
-          <ul>
-            <li class="cultura"><a href="http://www.cmais.com.br">Cultura</a></li>
-            <li class="ministerio"><a href="http://www.cultura.gov.br">Ministério da Cultura</a></li>
-            <li class="governo"><a href="http://www.brasil.gov.br">Governo Federal</a></li>
-          </ul>
-        </div>
-      </div>
-
-    </div> <!-- /container -->    
-    <div id="footer">
-      <div class="container">
-        <a class="voltar-topo" href="#geral">Voltar ao topo</a>
-        <a href="http://tvcultura.cmais.com.br/" class="logo-fpa" title="Fundação Padre Anchieta">Fundação Padre Anchieta</a>
-        <ul class="span3 first">
-          <li class="tit"><a href="/cedoc/quem-somos" title="Quem Somos">Quem Somos</a></li>
-          <li class="tit mg"><a href="/cedoc/acervo" title="Acervo">Acervo</a></li>
-          <li><a href="/cedoc/pesquisa-audiovisual"title="Pesquisa Audiovisual">Pesquisa Audiovisual</a></li>
-          <li><a href="/cedoc/linha-do-tempo" title="Linha do Tempo">Linha do Tempo</a></li>
-          <li><a href="#" title="Memória Oral">Memória Oral</a></li>
-        </ul>  
-        <ul class="span3">
-          <li class="tit"><a href="/cedoc/central-de-relacionamento" title="Central de Relacionamento ">Central de Relacionamento </a></li>
-          <li class="tit"><a href="/cedoc/licitacoes" title="Licitações ">Licitações </a></li>
-          <li class="tit"><a href="/cedoc/pesquisa-trabalhe-conosco"title="Trabalhe Conosco">Trabalhe Conosco</a></li>
-        </ul>  
-        <ul class="span3">
-          <li class="tit mg"><a href="/cedoc/emissoras" title="Emissoras">Emissoras</a></li>
-          <li><a href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a></li>
-          <li><a href="http://univesptv.cmais.com.br/"title="Univesp TV">Univesp TV</a></li>
-          <li><a href="http://multicultura.cmais.com.br/" title="multiCultura">multiCultura</a></li>
-          <li><a href="http://tvratimbum.cmais.com.br/" title="TV Rá Tim Bum">TV Rá Tim Bum</a></li>
-          <li><a href="http://www.culturabrasil.com.br/" title="Cultura Brasil">Cultura Brasil</a></li>
-          <li><a href="http://culturafm.cmais.com.br/" title="Cultura FM">Cultura FM</a></li>
-          <li><a href="http://tvratimbum.cmais.com.br/radio" title="Rádio Rá Tim Bum">Rádio Rá Tim Bum</a></li>
-          <li><a href="http://tvcultura.cmais.com.br/cocorico/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
-        </ul>  
-        <ul class="span3 last">
-          <li class="tit mg"><p>Portais</p></li>
-          <li><a href="http://cmais.com.br/" title="cmais +">cmais +</a></li>
-          <li><a href="http://www.culturabrasil.com.br/"title="Cultura Brasil">Cultura Brasil</a></li>
-          <li class="tit sic"><a href="http://fpa.com.br/sic/" title="SIC">SIC</a></li>
-        </ul> 
-        <p class="copyright">Copyright © 2013 Fundação Padre Anchieta</p>     
-      </div>
-    </div>
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script> -->
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    <!--<script type="text/javascript" src="/portal/js/bootstrap/alert.js"></script>-->
-    <script type="text/javascript" src="/portal/js/bootstrap/modal.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/dropdown.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/scrollspy.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/button.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/collapse.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/carousel.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/typeahead.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    
+      <div id="cedocFooter"></div>    
    </body>
 </html>
