@@ -51,7 +51,7 @@
           </div>
         </div>
         
-        <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes"><img class="destaqueTopo" src="/portal/tvratimbum/image/faixa-home-ideiasmirabolantes.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
+        <img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Quarteto />
         
         <!--
         <div id="destaque-ferias">
