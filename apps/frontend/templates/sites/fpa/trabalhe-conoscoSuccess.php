@@ -46,7 +46,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 endif;
               endforeach;
               ?>
-              <div class="span12">
+              <div class="span12" style="margin:0 0 10px 0">
                 <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
               </div>
             </div>
@@ -77,11 +77,40 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <!-- /Resultado -->
             <?php
             else:
-              echo "processo seletivo<br>";
+            ?>
+            <div class="accordion" id="vagas-relacionadas">
+              <!--emprego aberto-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a id="vaga-aberta<?php echo $k; ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#vaga<?php echo $k; ?>">
+                    <i class="ico-trabalho"></i><?php echo $sub->getTitle(); ?><span class="badge vaga"><?php echo $sub->AssetContent->getHeadline(); ?></span>
+                  </a>
+                </div>
+                <hr class="vaga"/>
+                <div id="vaga<?php echo $k; ?>" class="accordion-body collapse vagas-exi">
+                  <div class="accordion-inner">
+                    <!--descriçao vaga-->
+                    <?php echo html_entity_decode($sub->AssetContent->render()); ?>
+                    <!--/descriçao vaga-->
+                    <hr class="vaga desc"/>  
+                  </div>
+                </div>
+              </div>
+              <!--/emprego aberto-->
+            </div>  
+            <?php
             endif;
           else:
             if($sub->getSlug() == "processo-seletivo"):
-              echo "nao há vagas";
+            ?>
+            <!-- Sem Vagas -->
+          <div class="accordion-group">
+            <span class="tipo-de-emprego">
+              Não há vagas no momento.
+            </span>
+          </div>
+          <!-- /Sem Vagas -->
+            <?php
             endif;    
           endif;
         endforeach;  
