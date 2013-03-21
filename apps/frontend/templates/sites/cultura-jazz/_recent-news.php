@@ -1,8 +1,9 @@
               <?php if(isset($displays)): ?>
                 <?php if(count($displays) > 0): ?>
                 <ul class="conteudo">
+                  <?php print_r($displays)?>
                   <?php foreach($displays as $k=>$d): ?>
-                     <?php if($k<6):?>
+                     <?php if($k<2):?>
                   <li><a class="titulos" href="/<?php echo $site->getSlug() ?>/<?php echo $d->getSlug() ?>"><?php echo $d->getTitle() ?></a>
                     <?php if($d->retriveImageUrlByImageUsage("image-3") != ""): ?>
                       <a href="/<?php echo $site->getSlug() ?>/<?php echo $d->getSlug() ?>" class="img-90x54" style="width: auto">
