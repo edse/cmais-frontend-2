@@ -51,12 +51,12 @@ $(document).ready(function(){
   
   //trabalheconosco
   $('.vaga-aberta').click(function(){
-    if($(this).parent().next().is(':hidden')){
-      console.log("hide");
-    }else{
-      console.log("show");
-    }
     $(this).parent().next().on('hidden', function () {
+      if($(this).is(':hidden')){
+        console.log("hide");
+      }else{
+        console.log("show");
+      }
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
