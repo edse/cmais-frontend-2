@@ -117,9 +117,9 @@
                     </div>
                     <div class="linha t2">
                       <label>E-mail</label>
-                      <input type="text" name="email" id="email" />
+                      <input type="text" name="email" id="email"  />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="clear:left">
                       <label>Telefone residencial</label>
                       <input type="text" name="telefone" id="telefone" />
                     </div>
@@ -175,7 +175,7 @@
                     <span class="linhaFundo"></span>
 
                     <p class="enun">Local de Prova</p>
-                    <div class="linha t10">
+                    <div class="linha t7">
                       <label>Cidade</label>
                       <select name="localdeprova" id="localdeprova" style="width:170px">
                         <option value="">---</option>
