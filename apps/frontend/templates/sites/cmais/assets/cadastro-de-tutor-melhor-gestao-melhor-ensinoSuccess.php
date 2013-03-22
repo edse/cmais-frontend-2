@@ -239,6 +239,7 @@
       $(document).ready(function(){
         
         $("#cpf").mask("999.999.999-99");
+        $("#rg").mask("999999999");
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
         
