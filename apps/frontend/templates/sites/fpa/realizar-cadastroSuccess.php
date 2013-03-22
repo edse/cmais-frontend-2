@@ -1,6 +1,6 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 
-<script src="trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
+<script src="/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
 
 <style>
 body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
