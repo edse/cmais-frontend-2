@@ -53,10 +53,8 @@ $(document).ready(function(){
   $('.vaga-aberta').click(function(){
     $(this).parent().next().on('hidden', function () {
       var i = 0;
-      $('#vagas-relacionadas .accordion-body').each(function(){
-        if($(this).is(':hidden')){
-          i++;
-        }
+      $('#vagas-relacionadas .accordion-body:hidden').each(function(){
+        i++;
       });
       console.log(i);
       $(this).prev().find('i').removeClass('ico-active');
