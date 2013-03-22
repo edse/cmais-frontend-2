@@ -18,7 +18,7 @@ function word_limiter($str,$limit=10)
   }
 }
 ?>
-
+ 
   <script>
     <?php
       $images = "";
