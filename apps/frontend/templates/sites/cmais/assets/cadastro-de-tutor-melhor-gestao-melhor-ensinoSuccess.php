@@ -384,7 +384,7 @@
             captcha: "Digite corretamente o código que está ao lado.",
             rg: {
               minlength: jQuery.format("O RG precisa ter {0} dígitos")
-            }
+            },
             disciplina1: "É necessária a escolha de pelo menos uma disciplina.",
             disciplina2: "É necessária a escolha de pelo menos uma disciplina.",
             disciplina3: "É necessária a escolha de pelo menos uma disciplina.",
