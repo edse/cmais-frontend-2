@@ -27,7 +27,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
-              echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());
             ?>
             <!-- Estagio -->
             <div class="accordion-group">  
@@ -36,7 +35,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
               </div>
               <?php
-              
+              echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());
               foreach($sub_assets as $sa):;
                 if($sa->asset_type_id==8):
               ?>
