@@ -54,7 +54,7 @@ $(document).ready(function(){
     $(this).parent().next().on('hidden', function () {
       $('#vagas-relacionadas .accordion-body').each(function(){
         var i = 0;
-        if($(this)).is(':hidden'){
+        if($(this).is(':hidden')){
           i++;
         }
         console.log(i);
