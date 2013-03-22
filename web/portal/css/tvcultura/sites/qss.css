@@ -10,3 +10,4 @@ body {background: black;}
 #capa-site p{font-size:20px; color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; text-align:left; margin:20px 0 0 0;}
 #enviar{cursor: pointer;background: red;border: none;padding: 6px;float: left;font-size: 14px;color: #FFF;margin: 10px}
 #input{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
+label.error{display:none;}
