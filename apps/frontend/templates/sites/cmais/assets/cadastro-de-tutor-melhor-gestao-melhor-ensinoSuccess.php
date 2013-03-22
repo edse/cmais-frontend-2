@@ -1,0 +1,327 @@
+    <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
+    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+
+    <?php use_helper('I18N', 'Date') ?>
+    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+
+    <!-- CAPA SITE -->
+    <div id="capa-site">
+
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        <!-- BOX LATERAL -->
+        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <!-- BOX LATERAL -->
+
+        <!-- CONTEUDO PAGINA -->
+        <div id="conteudo-pagina">
+          <!-- CAPA -->
+          <div class="capa grid3">
+            <!-- ESQUERDA -->
+            <div id="esquerda" class="grid2">
+              <div class="contato grid2">
+                <div class="contatoWrapper">
+                  
+                  <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
+                  <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
+                  <!--
+                  <p>Prezado Professor,</p>
+                  <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
+                  -->
+                  
+                  
+                  <!-- mensagens de status -->
+                  <div class="msgAcerto" style="display:none; min-height: 80px" id="statusMsg_0">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Obrigado! Seu cadastro foi efetuado com sucesso.</p>
+                      <p>Esta tela é a confirmação de que seu cadastro foi efetuado, não será enviado e-mail de confirmação.<p>
+                      <p>Por favor, não é necessário mandar e-mail e fazer contato por telefone, seu cadastro já está confirmado. </p>
+                      <p>Aguarde que em breve entraremos em contato para maiores informações!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_1">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
+                      <p>Por favor, verifique se você preencheu todos os campos corretamente.</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_2">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
+                      <p>Você possui inscrição ativa como aluno em nosso banco de dados, não é possível atuar como tutor!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_3">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Cadastro existente.</p>
+                      <p>Já consta em nosso banco de dados sua inscrição, aguarde que em breve faremos contato!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_4">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Erro interno.</p>
+                      <p>Por favor, tente novamente mais tarde ou entre em contato por telefone ou e-mail.</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <!--/mensagens de status -->
+                  
+                  
+                  <!-- formulario -->
+                  <form id="form-contato" method="post" action="">
+                    
+                    <span class="linhaFundo"></span>
+                     
+                    <p class="enun">Disciplina</p>
+                    <div id="pcnpWrapper" style="display:none">
+                      <div class="linha t11">
+                        <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" />
+                        <label>Língua Portuguesa</label>
+                      </div>
+                      <div class="linha t11">
+                        <input type="checkbox" name="disciplina2" id="disciplina2" value="Matemática" />
+                        <label>Matemática</label>
+                      </div>
+                      <div class="linha t11">
+                        <input type="checkbox" name="disciplina3" id="disciplina3" value="Gestão Escolar" />
+                        <label>Gestão Escolar</label>
+                      </div>
+                    </div>
+                    
+                    <span class="linhaFundo"></span>
+                    
+                    <p class="enun">Dados de identificação</p>
+                    <div class="linha t1 exc">
+                      <label>Nome completo (sem abreviações)</label>
+                      <input type="text" name="nome" id="nome" style="width:626px" value="<?php if (isset($_REQUEST['nome'])): ?><?php echo urldecode($_REQUEST['nome']) ?><?php endif; ?>" />
+                    </div>
+                    <div class="linha t2">
+                      <label>CPF</label>
+                      <input type="text" name="cpf" id="cpf" />
+                    </div>
+                    <div class="linha t2">
+                      <label>RG</label>
+                      <input type="text" name="rg" id="rg" />
+                    </div>
+                    <div class="linha t2">
+                      <label>E-mail</label>
+                      <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="linha t2">
+                      <label>Telefone residencial</label>
+                      <input type="text" name="telefone" id="telefone" />
+                    </div>
+                    <div class="linha t2">
+                      <label>Telefone Celular</label>
+                      <input type="text" name="celular" id="celular" />
+                    </div>
+
+                    <span class="linhaFundo"></span>
+                    
+                    <p class="enun">Formação Acadêmica</p>
+                    <div id="pcnpWrapper" style="display:none">
+                      <div class="linha t11">
+                        <input type="checkbox" name="formacao1" id="formacao1" value="Licenciado em Letras / Português" />
+                        <label>Licenciado em Letras / Português</label>
+                      </div>
+                      <div class="linha t11">
+                        <input type="checkbox" name="formacao2" id="formacao2" value="Licenciado em Matemática" />
+                        <label>Licenciado em Matemática</label>
+                      </div>
+                      <div class="linha t11">
+                        <input type="checkbox" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar" />
+                        <label>Licenciado em Gestão Escolar</label>
+                      </div>
+                    </div>
+
+                    <span class="linhaFundo"></span>
+
+                    <p class="enun">Participou como professor tutor em algum curso a distância?</p>
+                    <div class="linha t10">
+                      <input type="radio" name="participou" id="sim1" value="sim" />
+                      <label>Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      <input type="radio" name="participou" id="nao1" value="nao" />
+                      <label>Não</label>
+                    </div>
+                    
+                    <span class="linhaFundo"></span>
+                    
+                    <p class="enun">Teve vinculo empregatício com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
+                    <div class="linha t10">
+                      <input type="radio" name="fpavinculo" id="sim2" value="sim" />
+                      <label>Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      <input type="radio" name="fpavinculo" id="nao2" value="nao" />
+                      <label>Não</label>
+                    </div>
+
+                    <span class="linhaFundo"></span>
+
+                    <p class="enun">Cidade (Local de Prova)</p>
+                    <div class="linha t1">
+                      <label>Escolha</label>
+                      <select name="localdeprova" id="localdeprova">
+                        <option value="">---</option>
+                        <option value="Araçatuba">Araçatuba</option>
+                        <option value="Bauru">Bauru</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="Franca">Franca</option>
+                        <option value="Presidente Prudente">Presidente Prudente</option>
+                        <option value="Santos">Santos</option>
+                        <option value="São José do Rio Preto">São José do Rio Preto</option>
+                        <option value="São José dos Campos">São José dos Campos</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                      </select>
+                    </div>
+                    
+                    <div class="linha t3 codigo" id="captchaimage">
+                      <label for="captcha">Confirma&ccedil;&atilde;o</label>
+                      <br />
+                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                        <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                      </a>
+                      <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
+                      <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                      <br />
+                      <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" />
+                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                    </div>
+                  </form>
+                  <!--/formulario -->
+                  
+                </div>
+              </div>
+            </div>
+            <!-- /ESQUERDA -->
+            
+            <!-- DIREITA -->
+            <div id="direita" class="grid1">
+            </div>
+            <!-- /DIREITA -->
+            
+          </div>
+          <!-- /CAPA -->
+          
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+        
+      </div>
+      <!-- /MIOLO -->
+
+    </div>
+    <!-- / CAPA SITE -->
+
+
+    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        
+        $("#cpf").mask("999.999.999-9??");
+        $("#rg").mask("99.999.999-9?");
+        $("#celular").mask("(99) 9?9999-9999");
+        $("#telefone").mask("(99) 9999-9999");
+        
+        var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              data: $("#form-contato").serialize(),
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/action.php",
+              beforeSend: function(){
+                $('input#enviar').attr('disabled','disabled');
+                $(".msgAcerto").hide();
+                $(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+                $('input#enviar').removeAttr('disabled');
+                window.location.href="#";
+                if(data == "0"){
+                  $("#form-contato").clearForm();
+                  $("#form-contato").hide();
+                  $(".msgAcerto").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if (data == "1") {
+                  $(".msgErro").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if (data == "2") {
+                  $("#msgErroCPF").show();
+                  $('img#ajax-loader').hide();
+                }
+                else {
+                  alert('Erro inesperado!');
+                }
+              }
+            });         
+          },
+          rules:{
+            disciplina:{
+              required: true
+            },
+            nome:{
+              required: true,
+              minlength: 2
+            },
+            cpf:{
+              required: true
+            },
+            rg:{
+              required: true
+            },
+            email:{
+              required: true,
+              email: true
+            },
+            telefone:{
+              required: true
+            },
+            celular:{
+              required: true
+            },
+            formacao:{
+              required: true
+            },
+            participou:{
+              required: true
+            },
+            fpavinculo:{
+              required: true
+            },
+            localdeprova:{
+              required: true
+            },
+            captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
+          },
+          messages:{
+            nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            cpf: "Este campo &eacute; Obrigat&oacute;rio.",
+            cidade: "Este campo &eacute; Obrigat&oacute;rio.",
+            captcha: "Digite corretamente o código que está ao lado."
+          }
+        });
+      });
+    </script>

@@ -5,5 +5,5 @@ body {background: black;}
 #capa-site{position:relative;overflow: visible; min-height:422px;}
 #capa-site .logo{position: absolute;top: 70px;left:0px;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
-#capa-site .redes {position: absolute;bottom: 140px;left: 43px;}
+#capa-site .redes {position: absolute;bottom: 140px;left: 97px;}
 #capa-site .redes .curtir {width: 218px;float: left;margin-left: 0;text-align: left;}
