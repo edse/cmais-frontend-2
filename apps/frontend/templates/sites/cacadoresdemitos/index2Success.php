@@ -16,6 +16,6 @@
       </div>
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>--->
     </div>
-    <!-- /curtir -->
+    <!-- /curtir --> 
   </div>
   <!-- /CAPA SITE -->  
