@@ -58,7 +58,7 @@ $(document).ready(function(){
       $(this).prev().find('i').addClass('icon-chevron-down');
       $('html, body').animate({
         scrollTop: $($(this)).offset().top
-      },
+      }, "slow");
     });
   });
   $('.vaga-aberta').click(function(){
