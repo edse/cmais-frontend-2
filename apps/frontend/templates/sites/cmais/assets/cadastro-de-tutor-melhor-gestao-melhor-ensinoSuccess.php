@@ -84,7 +84,7 @@
                     
                     <span class="linhaFundo"></span>
                      
-                    <p class="enun">Disciplina</p>
+                    <p class="enun">Escolha da Disciplina</p>
                     <div>
                       <div class="linha t11">
                         <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" />
@@ -131,7 +131,7 @@
                     <span class="linhaFundo"></span>
                     
                     <p class="enun">Formação Acadêmica</p>
-                    <div id="pcnpWrapper" style="display:none">
+                    <div id="pcnpWrapper">
                       <div class="linha t11">
                         <input type="checkbox" name="formacao1" id="formacao1" value="Licenciado em Letras / Português" />
                         <label>Licenciado em Letras / Português</label>
@@ -147,8 +147,10 @@
                     </div>
 
                     <span class="linhaFundo"></span>
+                    
+                    <p class="enun">Outras informações</p>
 
-                    <p class="enun">Participou como professor tutor em algum curso a distância?</p>
+                    <p class="pergunta">Participou como professor tutor em algum curso a distância?</p>
                     <div class="linha t10">
                       <input type="radio" name="participou" id="sim1" value="sim" />
                       <label>Sim</label>
@@ -160,7 +162,7 @@
                     
                     <span class="linhaFundo"></span>
                     
-                    <p class="enun">Teve vinculo empregatício com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
+                    <p class="pergunta">Teve vinculo empregatício com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
                     <div class="linha t10">
                       <input type="radio" name="fpavinculo" id="sim2" value="sim" />
                       <label>Sim</label>
@@ -173,7 +175,7 @@
                     <span class="linhaFundo"></span>
 
                     <p class="enun">Cidade (Local de Prova)</p>
-                    <div class="linha t1">
+                    <div class="linha t10">
                       <label>Escolha</label>
                       <select name="localdeprova" id="localdeprova">
                         <option value="">---</option>
@@ -189,6 +191,8 @@
                         <option value="Sorocaba">Sorocaba</option>
                       </select>
                     </div>
+                    
+                    <span class="linhaFundo"></span>
                     
                     <div class="linha t3 codigo" id="captchaimage">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
@@ -234,10 +238,9 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
-        $("#cpf").mask("999.999.999-?99");
-        $("#rg").mask("99.999.999-?99");
-        $("#celular").mask("(99) ?999999999");
-        $("#telefone").mask("(99) ?99999999");
+        $("#cpf").mask("999.999.999-99");
+        $("#celular").mask("(99) 99999999?9");
+        $("#telefone").mask("(99) 99999999");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
@@ -311,13 +314,14 @@
             },
             nome:{
               required: true,
-              minlength: 2
+              minlength: 5
             },
             cpf:{
               required: true
             },
             rg:{
-              required: true
+              required: true,
+              minlength: 10
             },
             email:{
               required: true,
@@ -378,6 +382,15 @@
           },
           messages:{
             captcha: "Digite corretamente o código que está ao lado."
+            rg: {
+              minlength: jQuery.format("O RG precisa ter {0} dígitos")
+            }
+            disciplina1: "É necessária a escolha de pelo menos uma disciplina.",
+            disciplina2: "É necessária a escolha de pelo menos uma disciplina.",
+            disciplina3: "É necessária a escolha de pelo menos uma disciplina.",
+            formacao1: "É necessária a escolha de pelo menos uma formação acadêmica.",
+            formacao2: "É necessária a escolha de pelo menos uma formação acadêmica.",
+            formacao3: "É necessária a escolha de pelo menos uma formação acadêmica."
           }
         });
       });
