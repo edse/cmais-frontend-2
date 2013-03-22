@@ -54,7 +54,7 @@ $(document).ready(function(){
     $(this).parent().next().on('hide', function(){
       $(this).prev().find('i').removeClass('icon-chevron-down');
     });
-    $(this).parent().next().on('shown', function(){
+    $(this).parent().next().on('show', function(){
       $(this).prev().find('i').addClass('icon-chevron-down');
     });
   });
