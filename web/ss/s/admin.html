@@ -33,6 +33,14 @@
         float: left;
         margin-right: 13px;
       }
+      #new-content-tag{
+        padding-right: 35px;
+        /* background-image: url('../img/loading6.gif'); */
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+      .ui-autocomplete-loading { background: white url('../img/loading6.gif') right center no-repeat; }
+      .loading { background: white url('../img/loading6.gif') right center no-repeat; }
       .autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; }
       .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
       .autocomplete-selected { background: #F0F0F0; }
@@ -143,11 +151,13 @@
                     <option value="content">Conteúdo</option>
                     <option value="people">Pessoa</option>
                     <option value="place">Lugar</option>
+                    <option value="poll">Enquete</option>
                   </select>
                   <input type="text" id="new-content-tag" class="input-xlarge typeahead" placeholder="tag or slug" autocomplete="off" />
                 </div>
               </form>
               <div class="controls" style="clear: both;">
+                <img id="fetching" src="../img/loading6.gif" alt="loading" class="hide" />
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
@@ -184,7 +194,7 @@
         //serverUrl2 = 'ws://172.20.18.133:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
-        serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
+        serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
         if (window.MozWebSocket) {
           socket2 = new MozWebSocket(serverUrl2);
         } else if (window.WebSocket) {
@@ -286,6 +296,9 @@
         saveContent = function(){
           if($('#preview').html()!=""){
             //save to cache
+            var tag = $('#new-content-tag').val();
+            tag = tag.replace('Astolfo: ', '');
+            tag = tag.replace('Wikipedia: ', '');
             $.ajax({
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id);
               //url: "fetch.php",
@@ -299,7 +312,7 @@
                   payload.action = "addcontent";
                   var data = new Object();
                   data.type = $('#new-content-type option:selected').val();
-                  data.tag = $('#new-content-tag').val();
+                  data.tag = tag;
                   data.source = $('#new-content-source').val();
                   data.id = $('#new-content-id').val();
                   //data.html = $('#preview').html();
@@ -417,7 +430,7 @@
               html += '</ul><hr />';
               $('#content-list').append(html);
             }
-          }          
+          }
           return;
         };
         return clientActivity = function(port) {
@@ -431,11 +444,17 @@
       
       $(document).ready(function() {
 
-        $('.typeahead').autocomplete({
+        $('#new-content-tag').autocomplete({
           //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
           onSelect: function (suggestion) {
+            var tag = $('#new-content-tag').val();
+            tag = tag.replace('Astolfo: ', '');
+            tag = tag.replace('Wikipedia: ', '');
+            $('#new-content-tag').val(tag);
+
             $('#new-content-save').addClass('disabled');
+            $('#fetching').show();
             //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
             $('#new-content-source').val(suggestion.data.source);
             $('#new-content-id').val(suggestion.data.id);
@@ -443,11 +462,13 @@
               //$('#preview').load("/ajax/preview?id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
+                $('#fetching').hide();
               });
             }else{
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
+                $('#fetching').hide();
               });
             }
             /*

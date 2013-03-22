@@ -1,4 +1,4 @@
-        <?php
+<?php
           $programs = Doctrine_Query::create()
             ->select('p.*')
             ->from('Program p, ChannelProgram cp')
@@ -51,10 +51,10 @@
           </div>
         </div>
         
-        <a href="http://tvratimbum.cmais.com.br/ideias-mirabolantes"><img class="destaqueTopo" src="/portal/tvratimbum/image/faixa-home-ideiasmirabolantes.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
+        <a href="http://tvratimbum.cmais.com.br/eu-e-o-quarteto-apavorante" title="+ detalhes!"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
         
         <!--
-        <div id="destaque-ferias">
+        <div id="destaque-ferias"> 
           <ul>
             <li>
               <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
@@ -83,4 +83,3 @@
           </ul>
         </div>
         --> 
-        

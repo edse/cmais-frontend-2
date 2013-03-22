@@ -75,7 +75,6 @@
               
             </div>
           </div>
-
             <?php if(isset($pager)): ?>
               <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
