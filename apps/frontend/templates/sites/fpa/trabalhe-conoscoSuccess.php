@@ -34,6 +34,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
+                <br>
                 <?php echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());?>
                 <?php
                 foreach($sub_assets as $sa):;
@@ -65,6 +66,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
+              <br>
               <?php
               foreach($sub_assets as $sa):
                 if($sa->asset_type_id==8):
