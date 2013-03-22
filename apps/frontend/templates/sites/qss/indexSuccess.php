@@ -34,10 +34,45 @@
     </div>
     <form id="form-contato" method="post" action="">
       <p>Cadastre o seu e-mail para ser informado sobre a data de início das inscrições:</p>
-      <input type="text" name="cadastro" id="input" />
+      <input type="text" name="cadastro" id="input" class="required" />
       <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
     </form>  
 </div> 
 <!-- /capa site-->
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var validator = $('#form-contato').validate({
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          beforeSend: function(){
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+          $('input#enviar').removeAttr('disabled');
+            window.location.href="#";
+            if(data == "1"){
+              
+            }
+            else {
+              
+            }
+          }
+        });         
+      },
+      messages:{
+        nome: " Este campo &eacute; Obrigat&oacute;rio.",
+
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
+      }
+    });
+  });
+</script>
  
