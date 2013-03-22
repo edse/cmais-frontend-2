@@ -76,7 +76,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
             <!-- /Resultado -->
             <?php
-            else:
+            elseif($sub->getSlug() != "vagas-de-estagio"):
             ?>
             <div class="accordion-group">
               <div class="accordion-heading">
