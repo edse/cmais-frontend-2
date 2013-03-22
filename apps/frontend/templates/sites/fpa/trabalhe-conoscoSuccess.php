@@ -102,7 +102,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                     <?php echo utf8_encode(html_entity_decode($sa->AssetContent->render())) ?>
                     <!--/descriçao vaga-->
                     </div>
-                    <div class="linha-dashed">
+                    <div class="linha-dashed"></div>
                   </div>
                 </div>
                 <!--/emprego aberto-->
