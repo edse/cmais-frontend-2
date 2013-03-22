@@ -99,7 +99,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                   <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
                     <div class="accordion-inner">
                     <!--descriçao vaga-->
-                    <?php echo html_entity_decode($sa->AssetContent->render()) ?>
+                    <?php echo html_entity_decode(urlencode($sa->AssetContent->render())) ?>
                     <!--/descriçao vaga-->
                     </div>
                   </div>
