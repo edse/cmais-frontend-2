@@ -56,10 +56,10 @@
           $('input#enviar').removeAttr('disabled');
             window.location.href="#";
             if(data == "1"){
-              
+              alert("foi")
             }
             else {
-              
+              alert("nao foi")
             }
           }
         });         
