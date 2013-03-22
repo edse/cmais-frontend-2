@@ -24,9 +24,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ->andWhere('a.is_active = ?', 1) 
             ->andWhere('a.site_id = ?', (int)$site->id)
             ->execute();
-          echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());
+
           if(count($sub_assets) > 0): 
             if($sub->getSlug() == "vagas-de-estagio"):
+              echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());
             ?>
             <!-- Estagio -->
             <div class="accordion-group">  
