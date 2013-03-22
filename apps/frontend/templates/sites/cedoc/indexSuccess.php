@@ -22,10 +22,10 @@ function word_limiter($str,$limit=10)
   <script>
     <?php
       $images = "";
-      foreach($displays['destaque-topo'] as $d) {
+      foreach ($displays['destaque-topo'] as $d) {
         $images .= '"'.$d->retriveImageUrlByImageUsage('original').'",';       
       }
-      $images=substr($images, -1);
+      $images = substr($images, 0, -1);
     ?>
     
             

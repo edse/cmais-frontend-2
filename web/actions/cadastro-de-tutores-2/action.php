@@ -18,13 +18,11 @@ if($_REQUEST["captcha"]) {
           $csvContent .= $valor . ",";
       }
       $csvContent .= "\n";
-      $csvFp = fopen($csvFilename, 'a+');
+      $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
         $txtFile = "/var/frontend/web/actions/cadastro-de-tutores-2/cpf-tutores.txt";
-        $txtFp = fopen($filename, 'a+');
-        if(fwrite($fp, $content)){
-          $filename = "/var/frontend/web/actions/cadastro-de-tutores-2/cpf-tutores.txt";
-         
+        $txtFp = fopen($txtFile, 'a+');
+        fwrite($txtFp, $txtContent);
         die("0");
       }
       else{
