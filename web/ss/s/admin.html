@@ -557,6 +557,12 @@
 
         initClient();
       });
+
+      window.onload=function(){
+        window.onbeforeunload = function(){
+          return "NÃO FECHE ESTA JANELA!!!!!!!";
+        }
+      }
       </script>
 
       <hr />
