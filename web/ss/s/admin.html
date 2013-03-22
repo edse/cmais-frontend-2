@@ -164,7 +164,7 @@
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
-              <div id="title" class="hide"><input type="text" id="new-content-title" class="input-xxxlarge typeahead" autocomplete="off" /></div>
+              <div id="title" class="hide"><input type="text" id="new-content-title" class="input-xxxlarge" autocomplete="off" /></div>
               <div id="preview"></div>
               <hr />
             </div>
@@ -286,6 +286,7 @@
           if($(this).hasClass("disabled")) return false;
           $(this).addClass("disabled");
           $('#new-content').show();
+          $('#title').hide();
           $('#new-content-tag').focus();
         });
 
@@ -557,6 +558,12 @@
 
         initClient();
       });
+
+      window.onload=function(){
+        window.onbeforeunload = function(){
+          return "NÃO FECHE ESTA JANELA!!!!!!!";
+        }
+      }
       </script>
 
       <hr />
