@@ -60,7 +60,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <div class="accordion-heading trabalhe-conosco">
                 <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
               </div>
-              <div class="span12" style="margin-top:15px;">
+              <div class="span12" style="margin-top:5px;">
               <?php
               foreach($sub_assets as $sa):
                 if($sa->asset_type_id==8):
