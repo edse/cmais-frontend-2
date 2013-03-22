@@ -32,8 +32,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <div class="accordion-heading trabalhe-conosco">
                 <a class="btn-cat"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title=""><i class="icon-chevron-down"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
-              <?php echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());?>
               <div id="#<?php echo $sub->id ?>" class="accordion-body collapse on">
+              <?php echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());?>
               <?php
               foreach($sub_assets as $sa):;
                 if($sa->asset_type_id==8):
