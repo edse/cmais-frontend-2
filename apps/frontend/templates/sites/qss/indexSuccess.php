@@ -35,7 +35,7 @@
     <form id="form-contato" method="post" action="">
       <p>Cadastre o seu e-mail para ser informado sobre a data de início das inscrições:</p>
       <input type="text" name="cadastro" id="input" class="required" />
-      <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+      <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
     </form>  
 </div> 
