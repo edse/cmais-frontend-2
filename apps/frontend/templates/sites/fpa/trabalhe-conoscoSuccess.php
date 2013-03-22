@@ -102,7 +102,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                       <i class="ico-trabalho"></i><?php echo $sa->getTitle()." "; ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
                     </a>
                   </div>
-                  <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
+                  <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi" style="overflow: hidden; clear: both;">
                     <div class="linha-dashed"></div>
                     <div class="accordion-inner">
                     <!--descriçao vaga-->
