@@ -51,26 +51,26 @@ $(document).ready(function(){
   
   //trabalheconosco
   $('.vaga-aberta').click(function(){
+    if($(this).parent().next().is(':hidden')){
+      console.log("hide");
+    }else{
+      console.log("show");
+    }
     $(this).parent().next().on('hidden', function () {
       $(this).prev().find('i').removeClass('ico-active');
-      
-      if($(this).parent().next()).is(':visible')){
-        $(this).parent().next().on('shown', function () {
-          $(this).find('i').addClass('ico-active');
-          $('hr.vaga').toggleClass('hide');
-          $('hr.vaga.desc').toggleClass('active');
-          $('html, body').animate({
-              scrollTop: $($(this).prev()).offset().top
-            }, "slow");
-        });
-      }else{
-        $('html, body').animate({
-          scrollTop: $('#fundo-topo').offset().top
-        }, "fast");
-      }
+      $('html, body').animate({
+        scrollTop: $('#fundo-topo').offset().top
+      }, "fast");
     });
     
-    
+    $(this).parent().next().on('shown', function () {
+      $(this).find('i').addClass('ico-active');
+      $('hr.vaga').toggleClass('hide');
+      $('hr.vaga.desc').toggleClass('active');
+      $('html, body').animate({
+          scrollTop: $($(this).prev()).offset().top
+        }, "slow");
+    });
   });
   $('.trabalhe-conosco .btn-cat').tooltip({
     placement: "right"
