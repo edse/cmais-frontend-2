@@ -51,13 +51,8 @@ $(document).ready(function(){
   
   //trabalheconosco
   $('.vaga-aberta').click(function(){
-    $(this).parent().next().on('hidden', function () {
-      var i = 0;
-      $('#vagas-relacionadas .accordion-body:hidden').each(function(){
-        i++;
-      });
-      console.log(i);
-      $(this).prev().find('i').removeClass('ico-active');
+    $(this).parent().next().on('hiden', function () {
+      $(this).find('i').removeClass('ico-active');
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
       }, "fast");
@@ -67,6 +62,7 @@ $(document).ready(function(){
       $(this).find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
+      
       $('html, body').animate({
           scrollTop: $($(this).prev()).offset().top
         }, "slow");
