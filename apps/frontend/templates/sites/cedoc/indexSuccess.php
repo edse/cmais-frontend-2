@@ -20,14 +20,15 @@ function word_limiter($str,$limit=10)
 ?>
 
   <script>
+    <?php
+      foreach($displays['destaque-topo'] as $d) {
+        $images = '"'.$d->retriveImageUrlByImageUsage('original').'",';       
+      }
+      $images=substr($images, -1);
+    ?>
+            
+    var imageUrl = new Array(<?php echo $images ?>);
     
-    var imageUrl = new Array(
-      <?php foreach($displays['destaque-topo'] as $d): ?>
-      <?php implode(",", $d); ?>
-      "<?php echo $d->retriveImageUrlByImageUsage('original') ?>",
-      <?php endforeach; ?>
-      
-    );
     var currentImageUrl = imageUrl[Math.floor(Math.random() * imageUrl.length)];
     
     $(function(){
