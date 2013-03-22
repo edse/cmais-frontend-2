@@ -52,10 +52,10 @@ $(document).ready(function(){
   //trabalheconosco
   $('.tipo-de-emprego').click(function(){
     $(this).parent().next().on('hide', function(){
-      alert("esconde");
+      $(this).prev().find('a').removeClass('icon-chevron-down');
     });
     $(this).parent().next().on('show', function(){
-      alert("aparece");
+      $(this).prev().find('a').addClass('icon-chevron-down');
     });
   });
   $('.vaga-aberta').click(function(){
