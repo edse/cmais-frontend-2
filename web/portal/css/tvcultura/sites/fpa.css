@@ -176,6 +176,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .tit-cadastro p strong{font-weight: bold;}
 #vagas-relacionadas .accordion-inner{padding:0 0 0 20px;}
 #vagas-relacionadas .accordion-inner h5{color:#1863b7;}
+#vagas-relacionadas .accordion-inner p{text-indent:10px;}
 #vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px;}
 /* /TRABALHE-CONOSCO */
 
