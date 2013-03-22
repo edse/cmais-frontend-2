@@ -25,6 +25,9 @@
     <link rel="shortcut icon" href="../img/favicon.png">
 
     <style type="text/css">
+      #title { 
+        margin-top: 13px;
+      }
       #preview { 
         margin-top: 13px;
       }
@@ -161,6 +164,7 @@
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
+              <div id="title" class="hide"><input type="text" id="new-content-title" class="input-xxxlarge typeahead" autocomplete="off" /></div>
               <div id="preview"></div>
               <hr />
             </div>
@@ -194,7 +198,7 @@
         //serverUrl2 = 'ws://172.20.18.133:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
         //serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
-        serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
+        serverUrl2 = 'ws://200.136.27.32:80/secondscreen';
         if (window.MozWebSocket) {
           socket2 = new MozWebSocket(serverUrl2);
         } else if (window.WebSocket) {
@@ -296,9 +300,12 @@
         saveContent = function(){
           if($('#preview').html()!=""){
             //save to cache
+            /*
             var tag = $('#new-content-tag').val();
             tag = tag.replace('Astolfo: ', '');
             tag = tag.replace('Wikipedia: ', '');
+            */
+            var tag = $('#new-content-title').val();
             $.ajax({
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id);
               //url: "fetch.php",
@@ -452,6 +459,7 @@
             tag = tag.replace('Astolfo: ', '');
             tag = tag.replace('Wikipedia: ', '');
             $('#new-content-tag').val(tag);
+            $('#new-content-title').val(tag);
 
             $('#new-content-save').addClass('disabled');
             $('#fetching').show();
@@ -463,12 +471,14 @@
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
                 $('#fetching').hide();
+                $('#title').show();
               });
             }else{
               //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
                 $('#fetching').hide();
+                $('#title').show();
               });
             }
             /*

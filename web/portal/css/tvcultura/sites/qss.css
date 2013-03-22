@@ -1,0 +1,9 @@
+body {background: black;}
+#capa-site{min-height: 522px;*margin-top: -50px !important}
+#rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
+.voltar-topo{*margin-left:-350px !important;}
+#capa-site{position:relative;overflow: visible; min-height:422px;}
+#capa-site .logo{position: absolute;top: 70px;left:0px;}
+#capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
+#capa-site .redes {position: absolute;bottom: 140px;left: 97px;}
+#capa-site .redes .curtir {width: 218px;float: left;margin-left: 0;text-align: left;}
