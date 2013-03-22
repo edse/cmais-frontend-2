@@ -381,7 +381,7 @@
             }
           },
           messages:{
-            captcha: "Digite corretamente o código que está ao lado."
+            captcha: "Digite corretamente o código que está ao lado.",
             rg: {
               minlength: jQuery.format("O RG precisa ter {0} dígitos")
             }
