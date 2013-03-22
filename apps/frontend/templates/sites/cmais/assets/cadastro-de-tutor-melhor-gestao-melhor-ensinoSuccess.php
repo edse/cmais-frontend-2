@@ -85,7 +85,7 @@
                     <span class="linhaFundo"></span>
                      
                     <p class="enun">Disciplina</p>
-                    <div id="pcnpWrapper" style="display:none">
+                    <div>
                       <div class="linha t11">
                         <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" />
                         <label>Língua Portuguesa</label>
@@ -234,10 +234,10 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
-        $("#cpf").mask("999.999.999-9??");
-        $("#rg").mask("99.999.999-9?");
-        $("#celular").mask("(99) 9?9999-9999");
-        $("#telefone").mask("(99) 9999-9999");
+        $("#cpf").mask("999.999.999-?99");
+        $("#rg").mask("99.999.999-?99");
+        $("#celular").mask("(99) ?999999999");
+        $("#telefone").mask("(99) ?99999999");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
