@@ -50,6 +50,14 @@ $(document).ready(function(){
   });
   
   //trabalheconosco
+  $('.tipo-de-emprego').click(function(){
+    $(this).parent().next().on('hide', function(){
+      alert("esconde");
+    });
+    $(this).parent().next().on('show', function(){
+      alert("aparece");
+    });
+  });
   $('.vaga-aberta').click(function(){
     $(this).parent().next().on('hide', function () {
       $(this).prev().find('i').removeClass('ico-active');
