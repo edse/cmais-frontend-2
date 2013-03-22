@@ -52,13 +52,13 @@ $(document).ready(function(){
   //trabalheconosco
   $('.vaga-aberta').click(function(){
     $(this).parent().next().on('hidden', function () {
+      var i = 0;
       $('#vagas-relacionadas .accordion-body').each(function(){
-        var i = 0;
         if($(this).is(':hidden')){
           i++;
         }
-        console.log(i);
       });
+      console.log(i);
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
