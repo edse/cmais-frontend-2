@@ -51,14 +51,14 @@ $(document).ready(function(){
   
   //trabalheconosco
   $('.vaga-aberta').click(function(){
-    $(this).parent().next().on('hidden', function () {
+    $(this).parent().next().on('hide', function () {
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
         scrollTop: $($(this).prev()).offset().top
       }, "fast");
     });
     
-    $(this).parent().next().on('shown', function () {
+    $(this).parent().next().on('show', function () {
       $(this).prev().find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
