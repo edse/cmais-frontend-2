@@ -26,7 +26,7 @@ if($_REQUEST["captcha"]) {
         die("0");
       }
       else{
-        die("1");
+        die("4");
       }
     } 
   }
