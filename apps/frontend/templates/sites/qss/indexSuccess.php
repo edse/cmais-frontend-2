@@ -40,10 +40,12 @@
           $('input#enviar').removeAttr('disabled');
             window.location.href="#";
             if(data == "1"){
-              alert("Seu cadastro foi enviado com sucesso!")
+              alert("Seu cadastro foi enviado com sucesso!");
+               $('img#ajax-loader').hide();
             }
             else {
-              alert("Sua mensagem não pode ser enviada. Tente novamente.")
+              alert("Sua mensagem não pode ser enviada. Tente novamente.");
+               $('img#ajax-loader').hide();
             }
           }
         });         
