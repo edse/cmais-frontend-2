@@ -33,7 +33,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <a class="btn-cat accordion-toggle  tipo-de-emprego"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " vaga";}else{ echo count($sub_assets) . " vagas";} ?>">
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
-              <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
+              <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="overflow: hidden; clear: both;">
                 <br>
                 <?php echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());?>
                 <?php
@@ -65,7 +65,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <a class="btn-cat accordion-toggle  tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>"  title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " arquivo";}else{ echo count($sub_assets) . " arquivos";} ?>">
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
-              <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
+              <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="overflow: hidden; clear: both;">
               <br>
               <?php
               foreach($sub_assets as $sa):
@@ -92,7 +92,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <hr class="tipo"/>
               </div>
             <!--vagas relacionadas-->
-            <div id="<?php echo $sub->id ?>" class="accordion-body collapse on">
+            <div id="<?php echo $sub->id ?>" class="accordion-body collapse on" style="overflow: hidden; clear: both;">
               <div class="accordion" id="vagas-relacionadas">
                 <?php foreach($sub_assets as $sa):?>
                 <!--emprego aberto-->
