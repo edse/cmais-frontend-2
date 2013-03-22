@@ -57,7 +57,7 @@ $(document).ready(function(){
         scrollTop: $('#fundo-topo').offset().top
       }, "fast");
     });
-    if('accordion-body').is(':hidden'){
+    if($('accordion-body')).is(':hidden'){
       console.log('true');
     }else{
       console.log('false');
