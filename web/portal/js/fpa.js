@@ -56,7 +56,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $('#fundo-topo').offset().top
       }, "fast");
-      if($('.accordion-body').is(':hidden')){
+      if($('.accordion-body').is(':visible')){
         console.log('true');
       }else{
         console.log('false');
