@@ -108,6 +108,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                     <!--descriçao vaga-->
                     <?php echo utf8_encode(html_entity_decode($sa->AssetContent->render())) ?>
                     <!--/descriçao vaga-->
+                    <a href="/fpa/realizar-cadastro" class="btn btn-primary large-button pull-right realizar" title="Realizar Inscrição">Realizar Inscrição</a>
                     </div>
                     <div class="linha-dashed"></div>
                   </div>
