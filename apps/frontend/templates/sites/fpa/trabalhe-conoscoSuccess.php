@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-group">  
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " vaga";}else{ echo count($sub_assets) . " vagas";} ?>">
+                <a class="btn-cat accordion-toggle  tipo-de-emprego"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " vaga";}else{ echo count($sub_assets) . " vagas";} ?>">
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
@@ -61,7 +61,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-group">
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>"  title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " arquivo";}else{ echo count($sub_assets) . " arquivos";} ?>">
+                <a class="btn-cat accordion-toggle  tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>"  title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " arquivo";}else{ echo count($sub_assets) . " arquivos";} ?>">
                   <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="clear:both;">
