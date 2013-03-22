@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     $.ajax({
     type: "GET",
-    url: "actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
+    url: "/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
     error: function(retorno){
         alert("erro xml");
     }, 
@@ -63,7 +63,7 @@ $(document).ready(function() {
           //CARREGA OS DEPARTAMENTOS
           $.ajax({
               type: "GET",
-              url: "actions/trabalhe-conosco/cargos.php?departamento="+departamento,
+              url: "/actions/trabalhe-conosco/cargos.php?departamento="+departamento,
               error: function(retorno){
                 alert("Erro xml");
               }, 
@@ -196,7 +196,7 @@ $(document).ready(function() {
       
           $.ajax({
             type: "GET",
-            url: "actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
+            url: "/actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
             error: function(retorno){
               alert("Erro xml");
             }, 
@@ -233,7 +233,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: "GET",
-        url: "actions/trabalhe-conosco/altera_curriculo.php?"+valores,
+        url: "/actions/trabalhe-conosco/altera_curriculo.php?"+valores,
         error: function(retorno){
           alert("Erro xml");
         }, 
@@ -266,7 +266,7 @@ $(document).ready(function() {
       
       $.ajax({
         type: "GET",
-        url: "actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
+        url: "/actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
         error: function(retorno){
           alert("Erro xml");
         }, 
@@ -331,7 +331,7 @@ $(document).ready(function() {
       
     $.ajax({
       type: "GET",
-      url: "actions/trabalhe-conosco/seleciona_historico.php?codigo="+codigo,
+      url: "/actions/trabalhe-conosco/seleciona_historico.php?codigo="+codigo,
       error: function(retorno){
         alert("Erro xml");
       }, 
@@ -399,7 +399,7 @@ $(document).ready(function() {
           codigo = $("#ql_codigo").val();
           $.ajax({
             type: "GET",
-            url: "actions/trabalhe-conosco/deleta_historico.php?codigo="+codigo,
+            url: "/actions/trabalhe-conosco/deleta_historico.php?codigo="+codigo,
             error: function(retorno){
               alert("Erro xml");
             }, 
@@ -427,7 +427,7 @@ $(document).ready(function() {
                   
                   $.ajax({
                   type: "GET",
-                  url: "actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
+                  url: "/actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
                   error: function(retorno){
                     alert("Erro xml");
                   }, 
@@ -484,7 +484,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: "GET",
-        url: "actions/trabalhe-conosco/insere_historico.php?"+valores,
+        url: "/actions/trabalhe-conosco/insere_historico.php?"+valores,
         error: function(retorno){
           alert("Erro xml");
         }, 
@@ -510,7 +510,7 @@ $(document).ready(function() {
                   
                   $.ajax({
                   type: "GET",
-                  url: "actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
+                  url: "/actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
                   error: function(retorno){
                     alert("Erro xml");
                   }, 
@@ -567,7 +567,7 @@ $(document).ready(function() {
     alert(valor);
     $.ajax({
         type: "GET",
-        url: "actions/trabalhe-conosco/cargos.php?departamento="+valor,
+        url: "/actions/trabalhe-conosco/cargos.php?departamento="+valor,
         error: function(retorno){
           alert("Erro xml");
         }, 
