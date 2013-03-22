@@ -66,7 +66,7 @@
       },
       messages:{
         nome: " Este campo &eacute; Obrigat&oacute;rio.",
-
+ 
       },
       success: function(label){
         // set &nbsp; as text for IE
