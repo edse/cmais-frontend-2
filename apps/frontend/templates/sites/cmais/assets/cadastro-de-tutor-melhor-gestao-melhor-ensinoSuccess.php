@@ -276,8 +276,38 @@
             });         
           },
           rules:{
-            disciplina:{
-              required: true
+            disciplina1:{
+              required: function() {
+                if ($('#disciplina2').is(':checked') || $('#disciplina3').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
+            },
+            disciplina2:{
+              required: function() {
+                if ($('#disciplina1').is(':checked') || $('#disciplina3').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
+            },
+            disciplina3:{
+              required: function() {
+                if ($('#disciplina1').is(':checked') || $('#disciplina2').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
             },
             nome:{
               required: true,
@@ -299,8 +329,38 @@
             celular:{
               required: true
             },
-            formacao:{
-              required: true
+            formacao1:{
+              required: function() {
+                if ($('#formacao2').is(':checked') || $('#formacao3').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
+            },
+            formacao2:{
+              required: function() {
+                if ($('#formacao1').is(':checked') || $('#formacao3').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
+            },
+            formacao3:{
+              required: function() {
+                if ($('#formacao1').is(':checked') || $('#formacao2').is(':checked')) {
+                  return false;
+                }
+                else {
+                  return true;
+                } 
+                
+              }
             },
             participou:{
               required: true
@@ -317,9 +377,6 @@
             }
           },
           messages:{
-            nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-            cpf: "Este campo &eacute; Obrigat&oacute;rio.",
-            cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
           }
         });
