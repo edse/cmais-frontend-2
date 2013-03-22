@@ -85,7 +85,7 @@
                     <span class="linhaFundo"></span>
                      
                     <p class="enun">Disciplina</p>
-                    <div id="pcnpWrapper" style="display:none">
+                    <div>
                       <div class="linha t11">
                         <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" />
                         <label>Língua Portuguesa</label>
