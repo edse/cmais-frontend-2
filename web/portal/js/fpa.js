@@ -58,7 +58,7 @@ $(document).ready(function(){
       }, "fast");
     });
     
-    $(this).parent().next().on('show', function () {
+    $(this).parent().next().on('shown', function () {
       $(this).prev().find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
