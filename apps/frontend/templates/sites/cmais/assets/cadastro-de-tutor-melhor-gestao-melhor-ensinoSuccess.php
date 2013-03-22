@@ -321,7 +321,8 @@
             },
             rg:{
               required: true,
-              minlength: 10
+              minlength: 10,
+              number: true
             },
             email:{
               required: true,
