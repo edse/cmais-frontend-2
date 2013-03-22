@@ -57,8 +57,12 @@ $(document).ready(function(){
         scrollTop: $('#fundo-topo').offset().top
       }, "fast");
     });
-    
-    $(this).parent().next().on('show', function () {
+    if('accordion-body').is('hidden'){
+      console.log('true');
+    }else{
+      console.log('false');
+    }
+    $(this).parent().next().on('shown', function () {
       $(this).find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
