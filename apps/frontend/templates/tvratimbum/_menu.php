@@ -51,7 +51,7 @@
           </div>
         </div>
         
-        <a style="cursor:false;"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
+        <a href="http://tvratimbum.cmais.com.br/eu-e-o-quarteto-apavorante" title="+ detalhes!"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! Ideias Mirabolantes" /></a> 
         
         <!--
         <div id="destaque-ferias"> 

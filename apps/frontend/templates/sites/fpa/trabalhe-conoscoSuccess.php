@@ -24,18 +24,17 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ->andWhere('a.is_active = ?', 1) 
             ->andWhere('a.site_id = ?', (int)$site->id)
             ->execute();
-          
-          if(count($sub_assets) > 0): 
-            if($sub->getSlug() == "vagas-de-estagio"):
+          if($sub->getSlug() == "vagas-de-estagio"):
             ?>
             <!-- Estagio -->
             <div class="accordion-group">  
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+                <a class="btn-cat accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title=""><i class="icon-chevron-down"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
+              <div id="#<?php echo $sub->id ?>" class="accordion-body collapse on">
+              <?php echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());?>
               <?php
-              
               foreach($sub_assets as $sa):;
                 if($sa->asset_type_id==8):
               ?>
@@ -49,18 +48,21 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <div class="span12" style="margin:0 0 10px 0">
                 <a href="/cadastrodeestagiario" class="btn btn-primary large-button pull-right realizar" title="Cadastro para estágio">Cadastro para estágio</a>
               </div>
+              </div>
             </div>
             <!-- /Estagio -->
-            <?php
-            elseif($sub->getSlug() == "resultados-processos"):
+           <?php
+          endif; 
+          if(count($sub_assets) > 0): 
+            if($sub->getSlug() == "resultados-processos"):
             ?>
             <!-- Resultado -->
             <div class="accordion-group">
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
-              <div class="span12" style="margin-top:15px;">
+              <div class="span12" style="margin-top:5px;">
               <?php
               foreach($sub_assets as $sa):
                 if($sa->asset_type_id==8):
@@ -76,32 +78,34 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
             <!-- /Resultado -->
             <?php
-            else:
+            elseif($sub->getSlug() != "vagas-de-estagio"):
             ?>
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>">
-                  <?php echo $sub->getTitle(); ?>
+                <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " processo";}else{ echo count($sub_assets) . " processos";} ?>">
+                  <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?>
                 </a>
                 <hr class="tipo"/>
               </div>
             <!--vagas relacionadas-->
-            <div id="<?php echo $sub->id ?>" class="accordion-body collapse in">
+            <div id="<?php echo $sub->id ?>" class="accordion-body collapse on">
               <div class="accordion" id="vagas-relacionadas">
                 <?php foreach($sub_assets as $sa):?>
                 <!--emprego aberto-->
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
-                      <i class="ico-trabalho"></i><?php echo $sa->getTitle(); ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
+                      <i class="ico-trabalho"></i><?php echo $sa->getTitle()." "; ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
                     </a>
                   </div>
                   <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi">
+                    <div class="linha-dashed"></div>
                     <div class="accordion-inner">
                     <!--descriçao vaga-->
-                    <?php echo html_entity_decode($sa->AssetContent->render()) ?>
+                    <?php echo utf8_encode(html_entity_decode($sa->AssetContent->render())) ?>
                     <!--/descriçao vaga-->
                     </div>
+                    <div class="linha-dashed"></div>
                   </div>
                 </div>
                 <!--/emprego aberto-->
@@ -116,13 +120,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             if($sub->getSlug() == "processo-seletivo"):
             ?>
             <!-- Sem Vagas -->
-          <div class="accordion-group">
-            <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;">
-              Não há vagas no momento.
-            </span>
-          </div>
-          <!-- /Sem Vagas -->
-            <?php
+            <div class="accordion-group">
+              <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;">
+                Não há vagas no momento.
+              </span>
+            </div>
+            <!-- /Sem Vagas -->
+              <?php
             endif;    
           endif;
         endforeach;  

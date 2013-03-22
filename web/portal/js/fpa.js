@@ -54,14 +54,15 @@ $(document).ready(function(){
     $(this).parent().next().on('hide', function () {
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
-        scrollTop: $('#fundo-topo').offset().top
+        scrollTop: $($(this).prev()).offset().top
       }, "fast");
     });
     
-    $(this).parent().next().on('show', function () {
-      $(this).find('i').addClass('ico-active');
+    $(this).parent().next().on('shown', function () {
+      $(this).prev().find('i').addClass('ico-active');
       $('hr.vaga').toggleClass('hide');
       $('hr.vaga.desc').toggleClass('active');
+      
       $('html, body').animate({
           scrollTop: $($(this).prev()).offset().top
         }, "slow");

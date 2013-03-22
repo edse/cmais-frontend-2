@@ -136,9 +136,10 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 
 /* TRABALHE-CONOSCO */
 .linha{width: 100%;border-top: 1px solid #ccc;border-bottom: 1px solid #fff;margin: 10px 5px;clear:both;}
+.linha-dashed{width: 100%;border-top: 1px dashed #ccc;border-bottom: 1px dashed #fff;margin: 10px 5px;clear:both;}
 .trabalhe-conosco a.btn-cat{margin: 3px 0 10px 0; color: #626262; text-transform: uppercase; background: #f8f8f8; width: 100%; float: left; font-weight: normal; padding: 6px;border-radius:5px;}
 .trabalhe-conosco a.btn-cat:hover{color:#000; background: #f1f1f1;}
-.btn-resultado{margin: 20px 0 8px 10px !important; background: #1863b7; text-transform: uppercase; font-weight: bold; padding: 5px; border-radius: 7px;}
+.btn-resultado{margin: 0px 0 8px -10px !important; background: #1863b7; text-transform: uppercase; font-weight: bold; padding: 5px; border-radius: 7px; float:left;clear:both;}
 .col-esquerda .accordion-group,
 .accordion-inner{border:none;}
 .accordion-inner{padding-bottom:0px;}
@@ -173,6 +174,10 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .tit-cadastro{margin:20px 0 0 0 !important;}
 .tit-cadastro p{font-size: 12px; color:#333;}
 .tit-cadastro p strong{font-weight: bold;}
+#vagas-relacionadas .accordion-inner{padding:0 0 0 20px;}
+#vagas-relacionadas .accordion-inner h5{color:#1863b7;}
+#vagas-relacionadas .accordion-inner p{text-indent:10px;margin-top:10px;}
+#vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px; margin-bottom:5px;}
 /* /TRABALHE-CONOSCO */
 
 /* RODAPÉ PORTAL */
