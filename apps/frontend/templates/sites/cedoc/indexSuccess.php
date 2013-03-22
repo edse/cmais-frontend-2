@@ -43,7 +43,7 @@ function word_limiter($str,$limit=10)
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo"> 
-        <a href="#" id="imagem-destacada"><img id="destaque" src="" alt="" ></a>
+        <a href="#" id="imagem-destacada" style="min-height:438px"><img id="destaque" src="" style="min-height:438px"></a>
         <ul class="menu">
           <li class="cedoc"><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>
