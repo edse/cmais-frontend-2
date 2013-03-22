@@ -322,7 +322,7 @@
             },
             rg:{
               required: true,
-              minlength: 10,
+              minlength: 9,
               number: true
             },
             email:{
