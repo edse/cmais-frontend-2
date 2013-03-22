@@ -7102,3 +7102,10 @@ span.bold{
 #destaque-ferias .m90{margin:0 90px}
 #destaque-ferias .m22{margin:0 22px}
 #destaque-ferias .m80{margin:0 0 0 80px}
+
+/* ajuste texto*/
+#box-programas-programaEscolhido .programaEscolhido-info .box-infos { float:none; width: auto; }
+#box-programas-programaEscolhido .programaEscolhido-info .box-infos p.breve { width: auto; }
+#box-programas-programaEscolhido .programaEscolhido-info img { margin-right:10px; }
+#box-programas-programaEscolhido .programaEscolhido-info .box-infos .btn-diario { width:47%; }
+/*ajuste texto*/
