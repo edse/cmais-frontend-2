@@ -54,7 +54,7 @@ $(document).ready(function(){
     $(this).parent().next().on('hidden', function () {
       $(this).prev().find('i').removeClass('ico-active');
       
-      if($('.accordion-body').is(':visible')){
+      if($(this).parent().next()).is(':visible')){
         $(this).parent().next().on('shown', function () {
           $(this).find('i').addClass('ico-active');
           $('hr.vaga').toggleClass('hide');
