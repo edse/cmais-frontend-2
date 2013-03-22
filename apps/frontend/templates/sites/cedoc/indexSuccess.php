@@ -26,6 +26,7 @@ function word_limiter($str,$limit=10)
       }
       $images=substr($images, -1);
     ?>
+    
             
     var imageUrl = new Array(<?php echo $images ?>);
     
