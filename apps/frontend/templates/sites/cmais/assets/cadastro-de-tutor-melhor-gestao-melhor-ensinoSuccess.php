@@ -117,15 +117,15 @@
                     </div>
                     <div class="linha t2">
                       <label>E-mail</label>
-                      <input type="text" name="email" id="email"  />
+                      <input type="text" name="email" id="email" style="width:308px" />
                     </div>
                     <div class="linha t2" style="clear:left">
                       <label>Telefone residencial</label>
-                      <input type="text" name="telefone" id="telefone" />
+                      <input type="text" name="telefone" id="telefone" style="width:150px" />
                     </div>
                     <div class="linha t2">
                       <label>Telefone Celular</label>
-                      <input type="text" name="celular" id="celular" />
+                      <input type="text" name="celular" id="celular" style="width:150px" />
                     </div>
 
                     <span class="linhaFundo"></span>
