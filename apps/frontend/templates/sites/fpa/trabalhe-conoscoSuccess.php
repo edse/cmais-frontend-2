@@ -80,7 +80,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ?>
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>">
+                <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php echo count($sub_assets);?>">
                   <?php echo $sub->getTitle(); ?>
                 </a>
                 <hr class="tipo"/>
