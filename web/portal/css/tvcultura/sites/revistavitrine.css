@@ -1,0 +1,6 @@
+body { background:#fff url("/portal/images/capaPrograma/revistavitrine/bg-vitrine.jpg") repeat-x; }
+#barra-site h2 { float:none; margin-top:20px; }
+#barra-site .descricao { margin-top:15px; display:block; }
+#barra-site .redes ul { display: none; }
+#barra-site .redes {    float: none;    margin: 20px auto;    width: 350px !important;}
+.capa-revista { margin:10px 0 20px 0; }
