@@ -75,8 +75,8 @@
               
             </div>
           </div>
-
-            <?php if(count($pager) > 0): ?>
+            <?php if(isset($pager)): ?>
+              <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
               <div class="box-listao grid2">
                 <?php if(isset($date)): ?>
@@ -100,6 +100,7 @@
                 </ul>
               </div>
               <!-- /BOX LISTAO -->
+              <?php endif; ?>
             <?php endif; ?>
 
             <?php if(isset($pager)): ?>
