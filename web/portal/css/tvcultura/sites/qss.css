@@ -7,3 +7,4 @@ body {background: black;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
 #capa-site .redes {position: absolute;bottom: 140px;left: 97px;}
 #capa-site .redes .curtir {width: 218px;float: left;margin-left: 0;text-align: left;}
+#capa-site p{font-size:20px; color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; text-align:left;}
