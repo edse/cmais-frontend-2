@@ -54,7 +54,7 @@ $(document).ready(function(){
     $(this).parent().next().on('hidden', function () {
       $(this).prev().find('i').removeClass('ico-active');
       $('html, body').animate({
-        scrollTop: $('#fundo-topo').offset().top
+        scrollTop: $($(this).prev()).offset().top
       }, "fast");
     });
     
