@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-group">  
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <?php
               echo html_entity_decode($displays['destaque-estagio'][0]->Asset->AssetContent->render());
@@ -58,7 +58,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-group">
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
-                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo $sub->getTitle(); ?></a>
+                <a class="btn-cat" title=""><i class="icon-chevron-down"></i><?php echo " ".$sub->getTitle(); ?></a>
               </div>
               <div class="span12" style="margin-top:5px;">
               <?php
@@ -81,12 +81,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " processo";}else{ echo count($sub_assets) . " processos";} ?>">
-                  <i class="icon-chevron-left"></i><?php echo $sub->getTitle(); ?>
+                  <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?>
                 </a>
                 <hr class="tipo"/>
               </div>
             <!--vagas relacionadas-->
-            <div id="<?php echo $sub->id ?>" class="accordion-body collapse in">
+            <div id="<?php echo $sub->id ?>" class="accordion-body collapse on">
               <div class="accordion" id="vagas-relacionadas">
                 <?php foreach($sub_assets as $sa):?>
                 <!--emprego aberto-->
