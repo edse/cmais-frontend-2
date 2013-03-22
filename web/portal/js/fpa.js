@@ -53,24 +53,24 @@ $(document).ready(function(){
   $('.vaga-aberta').click(function(){
     $(this).parent().next().on('hidden', function () {
       $(this).prev().find('i').removeClass('ico-active');
-      $('html, body').animate({
-        scrollTop: $('#fundo-topo').offset().top
-      }, "fast");
+      
       if($('.accordion-body').is(':visible')){
-        console.log('true');
+        $(this).parent().next().on('shown', function () {
+          $(this).find('i').addClass('ico-active');
+          $('hr.vaga').toggleClass('hide');
+          $('hr.vaga.desc').toggleClass('active');
+          $('html, body').animate({
+              scrollTop: $($(this).prev()).offset().top
+            }, "slow");
+        });
       }else{
-        console.log('false');
+        $('html, body').animate({
+          scrollTop: $('#fundo-topo').offset().top
+        }, "fast");
       }
     });
     
-    $(this).parent().next().on('shown', function () {
-      $(this).find('i').addClass('ico-active');
-      $('hr.vaga').toggleClass('hide');
-      $('hr.vaga.desc').toggleClass('active');
-      $('html, body').animate({
-          scrollTop: $($(this).prev()).offset().top
-        }, "slow");
-    });
+    
   });
   $('.trabalhe-conosco .btn-cat').tooltip({
     placement: "right"
