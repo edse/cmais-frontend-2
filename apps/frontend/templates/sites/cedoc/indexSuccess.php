@@ -21,8 +21,9 @@ function word_limiter($str,$limit=10)
 
   <script>
     <?php
+      $images = "";
       foreach($displays['destaque-topo'] as $d) {
-        $images = '"'.$d->retriveImageUrlByImageUsage('original').'",';       
+        $images .= '"'.$d->retriveImageUrlByImageUsage('original').'",';       
       }
       $images=substr($images, -1);
     ?>
