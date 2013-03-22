@@ -86,17 +86,17 @@
                      
                     <p class="enun">Escolha da Disciplina</p>
                     <div>
-                      <div class="linha t11">
-                        <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" />
-                        <label>Língua Portuguesa</label>
+                      <div class="linha t7">
+                        <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" style="float:left; margin-right:10px" />
+                        <label style="margin-top:4px">Língua Portuguesa</label>
                       </div>
-                      <div class="linha t11">
-                        <input type="checkbox" name="disciplina2" id="disciplina2" value="Matemática" />
-                        <label>Matemática</label>
+                      <div class="linha t7">
+                        <input type="checkbox" name="disciplina2" id="disciplina2" value="Matemática" style="float:left; margin-right:10px" />
+                        <label style="margin-top:4px">Matemática</label>
                       </div>
-                      <div class="linha t11">
-                        <input type="checkbox" name="disciplina3" id="disciplina3" value="Gestão Escolar" />
-                        <label>Gestão Escolar</label>
+                      <div class="linha t7">
+                        <input type="checkbox" name="disciplina3" id="disciplina3" value="Gestão Escolar" style="float:left; margin-right:10px" />
+                        <label style="margin-top:4px">Gestão Escolar</label>
                       </div>
                     </div>
                     
@@ -131,18 +131,18 @@
                     <span class="linhaFundo"></span>
                     
                     <p class="enun">Formação Acadêmica</p>
-                    <div id="pcnpWrapper">
-                      <div class="linha t11">
-                        <input type="checkbox" name="formacao1" id="formacao1" value="Licenciado em Letras / Português" />
-                        <label>Licenciado em Letras / Português</label>
+                    <div>
+                      <div class="linha t7">
+                        <input type="checkbox" name="formacao1" id="formacao1" value="Licenciado em Letras / Português"  style="float:left; margin-right:10px"/>
+                        <label style="margin-top:4px">Licenciado em Letras / Português</label>
                       </div>
-                      <div class="linha t11">
-                        <input type="checkbox" name="formacao2" id="formacao2" value="Licenciado em Matemática" />
-                        <label>Licenciado em Matemática</label>
+                      <div class="linha t7">
+                        <input type="checkbox" name="formacao2" id="formacao2" value="Licenciado em Matemática"  style="float:left; margin-right:10px"/>
+                        <label style="margin-top:4px">Licenciado em Matemática</label>
                       </div>
-                      <div class="linha t11">
-                        <input type="checkbox" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar" />
-                        <label>Licenciado em Gestão Escolar</label>
+                      <div class="linha t7">
+                        <input type="checkbox" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar"  style="float:left; margin-right:10px"/>
+                        <label style="margin-top:4px">Licenciado em Gestão Escolar</label>
                       </div>
                     </div>
 
@@ -174,10 +174,10 @@
 
                     <span class="linhaFundo"></span>
 
-                    <p class="enun">Cidade (Local de Prova)</p>
+                    <p class="enun">Local de Prova</p>
                     <div class="linha t10">
-                      <label>Escolha</label>
-                      <select name="localdeprova" id="localdeprova">
+                      <label>Cidade</label>
+                      <select name="localdeprova" id="localdeprova" style="width:170px">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
                         <option value="Bauru">Bauru</option>
