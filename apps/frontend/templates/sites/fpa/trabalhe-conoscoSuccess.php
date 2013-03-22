@@ -24,9 +24,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ->andWhere('a.is_active = ?', 1) 
             ->andWhere('a.site_id = ?', (int)$site->id)
             ->execute();
-
-          if(count($sub_assets) > 0): 
-            if($sub->getSlug() == "vagas-de-estagio"):
+          if($sub->getSlug() == "vagas-de-estagio"):
             ?>
             <!-- Estagio -->
             <div class="accordion-group">  
@@ -51,8 +49,10 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!-- /Estagio -->
-            <?php
-            elseif($sub->getSlug() == "resultados-processos"):
+           <?php
+          endif; 
+          if(count($sub_assets) > 0): 
+            if($sub->getSlug() == "resultados-processos"):
             ?>
             <!-- Resultado -->
             <div class="accordion-group">
