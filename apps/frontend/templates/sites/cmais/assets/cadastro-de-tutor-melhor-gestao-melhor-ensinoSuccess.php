@@ -80,7 +80,7 @@
                   
                   
                   <!-- formulario -->
-                  <form id="form-contato" method="post" action="">
+                  <form id="form-contato" method="post" action="actions/cadastro-de-tutores-2/action.php">
                     
                     <span class="linhaFundo"></span>
                      
