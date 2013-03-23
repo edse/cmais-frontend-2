@@ -1700,14 +1700,13 @@ EOT;
         $content = $this->getPartial('enquete', array('asset' => $asset));
       
       if($save){
-        if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
-          mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
+        if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id))){
+          mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id));
         }
-        $url = "cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
+        $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
         $file = fopen("/var/frontend/web/cache/".$url, "w");
         fwrite($file, $content);
-        //$w = '<br /><br /><p>O <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> é o portal de conteúdo da Cultura e reúne os canais <a href="http://tvcultura.cmais.com.br?origem=http://cmais.com.br/jornaldacultura/segundatela" title="TV Cultura">TV Cultura</a>, <a href="http://univesptv.cmais.com.br?origem=http://cmais.com.br/segundatela" title="UnivespTV">UnivespTV</a>, <a href="http://multicultura.cmais.com.br?origem=http://cmais.com.br/segundatela" title="MultiCultura">MultiCultura</a>,<a href="http://tvratimbum.cmais.com.br?origem=http://cmais.com.br/segundatela" title="TV Rá-Tim-Bum!">TV Rá-Tim-Bum!</a> e as rádios <a href="http://www.culturabrasil.com.br?origem=http://cmais.com.br/egundatela" title="Cultura Brasil">Cultura Brasil</a> e <a href="http://culturafm.cmais.com.br?origem=http://cmais.com.br/segundatela" title="Cultura FM">Cultura FM</a>.<br><br>Visite o <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> e navegue por nossos conteúdos.</p><br />';
-        $w = '<br /><a class="logo-link" href="http://cmais.com.br" target="_blank"><img class="cmais-logo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png"></a>';
+        $w = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" /></a>';
         fwrite($file, $w);  
         fclose($file);
         die("http://".$url);
@@ -1824,16 +1823,16 @@ EOT;
           }      
         }
         if($save){
-          if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
-            mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
+          if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id))){
+            mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id));
           }
-          $url = "cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
+          $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
           $file = fopen("/var/frontend/web/cache/".$url, "w");
           fwrite($file, $info);
           fwrite($file, $images);
           fwrite($file, $text);
     
-          $w = '<br /><a class="logo-link" href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="/ss/img/wikipedia_logo.png" style="visibility: visible;"></a>';
+          $w = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="/ss/img/logowikipedia.png" /></a>';
           fwrite($file, $w);
     
           fclose($file);
