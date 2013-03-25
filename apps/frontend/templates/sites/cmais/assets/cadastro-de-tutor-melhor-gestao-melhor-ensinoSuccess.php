@@ -329,9 +329,7 @@
               required: true
             },
             rg:{
-              required: true,
-              minlength: 7,
-              number: true
+              required: true
             },
             email:{
               required: true,
