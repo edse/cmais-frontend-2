@@ -1,5 +1,5 @@
 body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segundatela/bg-aovivo.jpg) repeat-x;}
 .hero-unit { margin-bottom:60px; }
-.col-dir2 { width: 640px; margin:40px auto; clear:both; }
+.col-dir2 { width: 640px; margin:40px auto; }
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { margin:0 auto;} }
 .hero-unit .bgtopo h1 { margin-top:7px;} 
