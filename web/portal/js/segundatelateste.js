@@ -172,7 +172,7 @@ $(document).ready(function() {
     $(this).prev().find('a').removeClass('ativo');
   });
 
-  $(".accordion-body").live("show", function(){
+  $(".accordion-body").live("shown", function(){
     //player stop
     if(playing)
       playing.pauseVideo();
