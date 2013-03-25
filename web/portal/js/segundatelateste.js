@@ -130,10 +130,10 @@
 }).call(this);
 
 
-$(document).ready(function() {
+
   //yotube API
   var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/iframe_api";
+  tag.src = "http://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   //arrays para players multiplos
@@ -147,6 +147,7 @@ $(document).ready(function() {
     }
   }
   function onYouTubeIframeAPIReady() {
+    console.log("startei");
     $('.accordion-body iframe').each(function(i){
       $(this).attr("id","player"+i);
       players[i] = $("#player"+i);
@@ -161,7 +162,7 @@ $(document).ready(function() {
       });
     }
   }  
-
+$(document).ready(function() {
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
@@ -180,7 +181,7 @@ $(document).ready(function() {
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
-    var el = $(this);
+    var el = $(this).parent();
     $('html, body').animate({
       scrollTop: el.offset().top
     }, "fast");
