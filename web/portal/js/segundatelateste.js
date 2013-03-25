@@ -172,6 +172,20 @@ $(document).ready(function() {
     $(this).prev().find('a').removeClass('ativo');
   });
 
+  $(".accordion-body").live("show", function(){
+    //player stop
+    if(playing)
+      playing.pauseVideo();
+    //remove barra ativa
+    $(this).prev().find('a').addClass('ativo');
+    //scroll
+    var el = $(this).parent();
+    $('html, body').animate({
+      scrollTop: el.offset().top
+    }, "fast");
+  });  
+  
+  /*
   $('.accordion-body').on('show', function() {
     //player stop
     if(playing)
@@ -184,6 +198,7 @@ $(document).ready(function() {
       scrollTop: el.offset().top
     }, "fast");
   });
+  */
 
   // padding ultimo conteudo
   $('.accordion-body').each(function() {
