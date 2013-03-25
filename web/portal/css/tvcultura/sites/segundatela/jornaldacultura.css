@@ -97,11 +97,9 @@ and (orientation : portrait) {
   .hero-unit .col-dir .fechar { display:none; }
   .hero-unit .col-esq p { margin:4px 0 0; text-align:left; }
   .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
-  /*.hero-unit .col-dir span.barra { display:none;}*/
   .hero-unit .menu-jc { float:left; margin-left:1%; margin-top:9px; }
-  .hero-unit .menu-jc .offline,
-  .hero-unit .menu-jc .online { /*clear:both;*/ }
   .conteudo .span8 { min-height:500px; }
+  .hero-unit .col-esq p { text-align:center; }
   
   
 }
