@@ -1682,9 +1682,9 @@ EOT;
   public function executeFetch(sfWebRequest $request){
     $this->setLayout(false);
 
-    $contents_folder = "/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents";
+    $contents_folder = "/var/frontend/web/cache/cmais.com.br/segundatela/contents";
     //$contents_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache/contents";
-    $contents_url = "cmais.com.br/segundatela/jornaldacultura/contents";
+    $contents_url = "cmais.com.br/segundatela/contents";
     //$contents_url = "ss/cache/contents";
     $cache_folder = "/var/frontend/web/cache";
     //$cache_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache";
