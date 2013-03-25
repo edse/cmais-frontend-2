@@ -7,8 +7,7 @@
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
-    
-    
+
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -34,14 +33,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cmais.com.br/portal/images/icon/cmais-favico_114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
     
-    <link rel="apple-touch-icon" href="http://h.imguol.com/icon-touch.png" />
+    <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
-       
+    <!--
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
+    -->
   </head>
   <body>
     <?php echo $sf_content ?>
@@ -60,8 +60,9 @@
       })();
     </script>
     <!-- /scripts -->
-    <div id="fb-root"></div>
     
+    <!--
+    <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
@@ -73,6 +74,7 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
+    -->
     
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
