@@ -144,6 +144,7 @@ function checkState(res){
   }
 }
 function onYouTubeIframeAPIReady() {
+  console.log("start");
   $('.accordion-body iframe').each(function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
