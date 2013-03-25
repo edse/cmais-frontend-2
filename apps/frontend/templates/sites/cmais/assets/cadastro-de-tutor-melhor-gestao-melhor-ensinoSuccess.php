@@ -247,7 +247,7 @@
         
         
         $("#cpf").mask("999.999.999-99");
-        //$("#rg").mask("999999999");
+        $("#rg").mask("9999999?999999");
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
         
@@ -330,6 +330,7 @@
             },
             rg:{
               required: true,
+              minlength: 7,
               number: true
             },
             email:{
