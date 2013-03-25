@@ -29,7 +29,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <a class="accordion-toggle vaga-aberta" href="#">
             Assistente de Arte I <span class="badge vaga">1 vaga</span>
           </a>
-        </div>
+        </div> 
       </div>
       <!--/emprego aberto-->
       <!--FORMULARIO-->
