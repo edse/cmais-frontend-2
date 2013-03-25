@@ -129,7 +129,7 @@
 }).call(this);
 
 
-$(document).live(function() {
+$(document).ready(function() {
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
@@ -174,6 +174,7 @@ $(document).live(function() {
 
   $('.accordion-body').live('show', function() { 
     //player stop
+    console.log(playing.getPlayerState());
     if(playing)
       playing.pauseVideo();
     //remove barra ativa
