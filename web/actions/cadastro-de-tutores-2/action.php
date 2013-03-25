@@ -12,15 +12,25 @@ if($_REQUEST["captcha"]) {
     }
     else{
       $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino.csv";
-      $csvContent = "";
-      while(list($campo, $valor) = each($_REQUEST)) {
-        if(!in_array($campo, array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-          $csvContent .= $valor . ",";
-      }
-      $csvContent .= "\n";
+      $csvContent = $_REQUEST["disciplina1"] . "," .
+                    $_REQUEST["disciplina2"] . "," .
+                    $_REQUEST["disciplina3"] . "," .
+                    $_REQUEST["nome"] . "," .
+                    $_REQUEST["cpf"] . "," .
+                    $_REQUEST["rg"] . "," .
+                    $_REQUEST["email"] . "," .
+                    $_REQUEST["telefone"] . "," .
+                    $_REQUEST["celular"] . "," .
+                    $_REQUEST["formacao1"] . "," .
+                    $_REQUEST["formacao2"] . "," .
+                    $_REQUEST["formacao3"] . "," .
+                    $_REQUEST["participou"] . "," .
+                    $_REQUEST["fpavinculo"] . "," .
+                    $_REQUEST["localdeprova"] . ",\n";
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
         $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt";
+        $txtContent = $_REQUEST["cpf"] . "\n";
         $txtFp = fopen($txtFile, 'a+');
         fwrite($txtFp, $txtContent);
         die("0");
