@@ -22,7 +22,7 @@ if($_REQUEST["captcha"]) {
                     $_REQUEST["formacao"] . "," .
                     $_REQUEST["participou"] . "," .
                     $_REQUEST["fpavinculo"] . "," .
-                    $_REQUEST["localdeprova"] . ",\n";
+                    $_REQUEST["localdeprova"] . "\n";
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
         $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt";
