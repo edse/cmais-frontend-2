@@ -87,5 +87,8 @@ a.outras:hover{text-decoration:none; background-color:#6d6969;}
 .escSolista:hover, .escConjunto:hover{background-color: #f09c80;}
 /* /form */
 
+.contato form .linha label { float:none; }
+.contato form .linha .w240 { margin-left:10px; }
+
 /** /PRE ESTREIA **/
   
