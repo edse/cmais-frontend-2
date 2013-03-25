@@ -69,7 +69,8 @@ class _sectionActions extends sfActions
       $this->site = $this->section->Site;
       
       if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
-        $this->setLayout('segundatela');   
+        if($this->section->getSlug() != "aovivo")
+          $this->setLayout('segundatela');
       }
       
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
