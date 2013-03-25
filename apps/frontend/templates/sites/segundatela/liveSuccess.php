@@ -22,26 +22,26 @@
       <div class="download">
         <h3>Downloads</h3>
         <ul>
-          <li><a href="#" title="">teste</a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
-          <li><a href="#" title=""></a></li>
+          <li><a href="#" title="" target="_blank">teste</a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
+          <li><a href="#" title="" target="_blank"></a></li>
         </ul>
       </div>
       
