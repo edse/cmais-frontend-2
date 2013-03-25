@@ -68,5 +68,5 @@ body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segund
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 480px)  {
   .hero-unit .bgtopo h1 { margin-top:15%; width: 100% }
-  .col-dir { display: none; }
+  /*.col-dir { display: none; }*/
 }
