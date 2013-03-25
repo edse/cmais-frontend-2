@@ -297,6 +297,7 @@
                   $('img#ajax-loader').hide();
                 }
                 else if(data > 0) {
+                  $(".msgErro").hide();
                   $("#statusMsg_"+data).show();
                   $('img#ajax-loader').hide();
                 }
