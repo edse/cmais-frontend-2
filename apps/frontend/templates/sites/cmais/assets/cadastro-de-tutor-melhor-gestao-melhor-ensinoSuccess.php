@@ -133,15 +133,15 @@
                     <p class="enun">Formação Acadêmica</p>
                     <div>
                       <div class="linha t7" style="clear:both">
-                        <input type="checkbox" name="formacao1" id="formacao1" value="Licenciado em Letras / Português"  style="float:left; margin-right:10px"/>
+                        <input type="checkbox" class="formacao" name="formacao1" id="formacao1" value="Licenciado em Letras / Português"  style="float:left; margin-right:10px"/>
                         <label style="margin-top:4px">Licenciado em Letras / Português</label>
                       </div>
                       <div class="linha t7" style="clear:both">
-                        <input type="checkbox" name="formacao2" id="formacao2" value="Licenciado em Matemática"  style="float:left; margin-right:10px"/>
+                        <input type="checkbox" class="formacao" name="formacao2" id="formacao2" value="Licenciado em Matemática"  style="float:left; margin-right:10px"/>
                         <label style="margin-top:4px">Licenciado em Matemática</label>
                       </div>
                       <div class="linha t7" style="clear:both">
-                        <input type="checkbox" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar"  style="float:left; margin-right:10px"/>
+                        <input type="checkbox" class="formacao" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar"  style="float:left; margin-right:10px"/>
                         <label style="margin-top:4px">Licenciado em Gestão Escolar</label>
                       </div>
                     </div>
@@ -240,6 +240,9 @@
         
         $('.disciplina').click(function() {
           $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
+        });
+        $('.formacao').click(function() {
+          $("label[for='formacao1'], label[for='formacao2'], label[for='formacao3']").hide();
         });
         
         
