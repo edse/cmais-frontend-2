@@ -80,7 +80,7 @@
                   
                   
                   <!-- formulario -->
-                  <form id="form-contato" method="post" action="/portal/actions/cadastro-de-tutores-2/action.php">
+                  <form id="form-contato" method="post" action="">
                     
                     <span class="linhaFundo"></span>
                      
@@ -257,7 +257,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/actions/cadastro-de-tutores/action.php",
+              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
@@ -270,15 +270,23 @@
                 if(data == "0"){
                   $("#form-contato").clearForm();
                   $("#form-contato").hide();
-                  $(".msgAcerto").show();
+                  $("#statusMsg_0").show();
                   $('img#ajax-loader').hide();
                 }
                 else if (data == "1") {
-                  $(".msgErro").show();
+                  $("#statusMsg_1").show();
                   $('img#ajax-loader').hide();
                 }
                 else if (data == "2") {
-                  $("#msgErroCPF").show();
+                  $("#statusMsg_2").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if (data == "3") {
+                  $("#statusMsg_2").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if (data == "4") {
+                  $("#statusMsg_2").show();
                   $('img#ajax-loader').hide();
                 }
                 else {
