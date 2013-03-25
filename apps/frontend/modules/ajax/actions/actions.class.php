@@ -1895,8 +1895,9 @@ EOT;
     }
     elseif($html){
       $id = time();
-      if(!$source)  $source = "mannual";
-      if($source == "mannual" || $source == "astolfo")
+      if(!$source)
+        $source = "mannual";
+      if($source != "wikipedia")
         $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
       else
         $footer = '<br /><a href="http://pt.wikipedia.org" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
