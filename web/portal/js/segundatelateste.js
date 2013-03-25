@@ -179,7 +179,7 @@ $(document).ready(function() {
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
-    var el = $(this).find('.accordion-heading');
+    var el = $(this);
     $('html, body').animate({
       scrollTop: el.offset().top
     }, "fast");
