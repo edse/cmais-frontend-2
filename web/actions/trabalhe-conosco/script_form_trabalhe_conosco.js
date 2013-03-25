@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#passo-valida-usuario").click(function(){
     var cpf = $("#fpa_cpf").val();
     var data = $("#fpa_data").val();
-
+ 
     /************* LOADING DO AJAX *************/
     var loading = $('<img id="loading" alt="Carregando" title="Carregando" src="http://www.rendezvousdufutur.com/img/loading.gif" />').prependTo('#row1').hide()
     //http://storage.ansys.com/staticfiles/ansys/img/interface/loading.gif
