@@ -238,6 +238,11 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
+        $('#disciplina1, #disciplina2, #disciplina3').click(function() {
+          $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
+        });
+        
+        
         $("#cpf").mask("999.999.999-99");
         $("#rg").mask("999999999");
         $("#celular").mask("(99) 99999999?9");
