@@ -1711,7 +1711,8 @@ EOT;
         ->select('a.*')
         ->from('Asset a')
         ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
-        ->andWhere('a.title LIKE ?', '%'.$query.'%')
+        ->andWhere('a.is_active = 1')
+        ->andWhere('a.title LIKE ?', $query.'%')
         ->limit(5)
         ->execute();
       if($assets){
