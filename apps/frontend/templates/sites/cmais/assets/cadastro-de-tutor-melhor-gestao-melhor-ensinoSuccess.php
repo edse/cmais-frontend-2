@@ -87,15 +87,15 @@
                     <p class="enun">Escolha da Disciplina</p>
                     <div>
                       <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" name="disciplina1" id="disciplina1" value="Língua Portuguesa" style="float:left; margin-right:10px" />
+                        <input type="checkbox" class="disciplina" name="disciplina1" id="disciplina1" value="Língua Portuguesa" style="float:left; margin-right:10px" />
                         <label style="margin-top:4px">Língua Portuguesa</label>
                       </div>
                       <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" name="disciplina2" id="disciplina2" value="Matemática" style="float:left; margin-right:10px" />
+                        <input type="checkbox" class="disciplina" name="disciplina2" id="disciplina2" value="Matemática" style="float:left; margin-right:10px" />
                         <label style="margin-top:4px">Matemática</label>
                       </div>
                       <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" name="disciplina3" id="disciplina3" value="Gestão Escolar" style="float:left; margin-right:10px" />
+                        <input type="checkbox" class="disciplina" name="disciplina3" id="disciplina3" value="Gestão Escolar" style="float:left; margin-right:10px" />
                         <label style="margin-top:4px">Gestão Escolar</label>
                       </div>
                     </div>
@@ -238,7 +238,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
-        $('#disciplina1, #disciplina2, #disciplina3').click(function() {
+        $('.disciplina').click(function() {
           $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
         });
         
