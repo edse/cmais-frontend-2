@@ -80,7 +80,7 @@
                   
                   
                   <!-- formulario -->
-                  <form id="form-contato" method="post" action="actions/cadastro-de-tutores-2/action.php">
+                  <form id="form-contato" method="post" action="/portal/actions/cadastro-de-tutores-2/action.php">
                     
                     <span class="linhaFundo"></span>
                      
@@ -247,7 +247,7 @@
         
         
         $("#cpf").mask("999.999.999-99");
-        $("#rg").mask("999999999");
+        $("#rg").mask("9999999?999999");
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
         
@@ -330,7 +330,7 @@
             },
             rg:{
               required: true,
-              minlength: 9,
+              minlength: 7,
               number: true
             },
             email:{
