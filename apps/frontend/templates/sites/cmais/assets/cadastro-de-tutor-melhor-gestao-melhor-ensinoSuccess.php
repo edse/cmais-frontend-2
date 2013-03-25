@@ -282,11 +282,11 @@
                   $('img#ajax-loader').hide();
                 }
                 else if (data == "3") {
-                  $("#statusMsg_2").show();
+                  $("#statusMsg_3").show();
                   $('img#ajax-loader').hide();
                 }
                 else if (data == "4") {
-                  $("#statusMsg_2").show();
+                  $("#statusMsg_4").show();
                   $('img#ajax-loader').hide();
                 }
                 else {
