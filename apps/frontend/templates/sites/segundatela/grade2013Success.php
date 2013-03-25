@@ -23,7 +23,7 @@
             <br />
             <!-- <span class="barra">|</span> --><p class="online hide" style="float: right;"><span class="numero"></span><span class="seta"></span>pessoas online</p>
             <p class="offline" style="float: right;">Desconectado</p>
-            <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 115px;" class="hide">reconectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
+            <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 95px;" class="hide">reconectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
             <!--
             <a href="http://cmais.com.br/segundatela/grade2013/aovivo" target="_blank" class="como" style="margin-top: 15px; clear: both; float: right;">Ao Vivo</a>
             -->
