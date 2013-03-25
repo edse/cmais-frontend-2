@@ -7108,4 +7108,5 @@ span.bold{
 #box-programas-programaEscolhido .programaEscolhido-info .box-infos p.breve { width: auto; }
 #box-programas-programaEscolhido .programaEscolhido-info img { margin-right:10px; }
 #box-programas-programaEscolhido .programaEscolhido-info .box-infos .btn-diario { width:47%; }
+#box-programas-programaEscolhido .programaEscolhido-info .box-infos hr { height:1px; visibility: inherit; }
 /*ajuste texto*/
