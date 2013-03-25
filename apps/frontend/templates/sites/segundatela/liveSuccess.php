@@ -20,7 +20,7 @@
        <a href="http://midia.cmais.com.br/assets/file/original/bb304856eeeb8f784472dcf45959af6e7da6fe3c.pdf" title="Press Kit" target="_blank"><i class="download"></i>Faça o download do press kit</a>
       </div>
       <div class="download">
-        <h3>Downloads</h3>
+        <h3>Releases</h3>
         <ul>
           <li><a href="#" title="" target="_blank">teste</a></li>
           <li><a href="#" title="" target="_blank"></a></li>
