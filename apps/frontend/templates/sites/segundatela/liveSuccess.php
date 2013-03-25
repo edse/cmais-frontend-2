@@ -11,7 +11,7 @@
         <div class="bgtopo"><h1><img src="/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" style="width: auto;" /></h1></div>
        
       </div>
-      <div class="col-dir2" style="width: 66%; float: left; padding: 10px; min-width: 640px; margin-top:40px;" >
+      <div class="col-dir2" >
         <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL0Qz-covvhxSzQaY2cuxWcwekgje5UcDd" frameborder="0" allowfullscreen></iframe>
       </div>
       
