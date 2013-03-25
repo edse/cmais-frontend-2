@@ -161,11 +161,13 @@ function onYouTubeIframeAPIReady() {
 
 // colocando e tirando ativo
 $('.accordion-body').on('hidden', function() {
+  console.log("fechado");
   //remove barra ativa
   $(this).prev().find('a').removeClass('ativo');
 });
 
 $('.accordion-body').on('show', function() {
+  console.log("aberto");
   //player stop
   if(playing)
     playing.pauseVideo();
