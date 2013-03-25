@@ -70,3 +70,5 @@ body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segund
   .hero-unit .bgtopo h1 { margin-top:15%; width: 100% }
   /*.col-dir { display: none; }*/
 }
+
+.hero-unit .col-dir { *width:40%; }
