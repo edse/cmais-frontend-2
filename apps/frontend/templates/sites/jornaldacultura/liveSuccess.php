@@ -34,7 +34,7 @@
       },
       dataType: 'jsonp',
       success: function(data) {
-        eval(data);
+        //eval(data);
       },
       url: '/ajax/broadcastend'
     });
@@ -139,7 +139,7 @@
           <div class="capa grid3">
 
             <div id="esquerda" class="grid2">
-            	
+              
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
 
@@ -149,7 +149,9 @@
                 <div style="position: absolute; top: 253px; right: 334px; color: black;">AO VIVO</div>
                 <div style="position: absolute; top: 254px; right: 335px; color: white;">AO VIVO</div>
                 <div style="position: absolute; top: 270px; right: 330px;"><img style="" src="http://midia.cmais.com.br/programs/f37ca62623a12e323f1b20b5d7c26ba0a6fbba84.png"></div>
-
+                
+                <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
+                <?php /*
                 <div id="live"></div>
                 <script>
                 //self.location.href='http://cmais.com.br/aovivo';
@@ -166,6 +168,7 @@
                   so.write('live');
                 });
                 </script>
+                */ ?>
 
                 <p><?php echo $section->getDescription() ?></p>
 
@@ -176,10 +179,25 @@
               
             </div>
             
-            <div id="direita" class="grid1" style="margin-top:0;">
+            <div id="direita" class="grid1" style="margin-top:0; text-align: left;">
 
               <!--iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=d41fb385ab/height=490/width=310" scrolling="no" height="490px" width="310px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=d41fb385ab" >Pronto Atendimento - Previdência</a></iframe-->
 
+              <a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;">Acesse o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</a><br /><br />
+              <a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="311256597148073986">Tweets de @jornal_cultura</a>
+              <script>
+                ! function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if(!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }
+                }(document, "script", "twitter-wjs");
+              </script>
+              
+              <?php /*
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
                 <!-- programas-homepage-300x250 -->
@@ -188,7 +206,7 @@
                 </script>
               </div>                                        
               <!-- / BOX PUBLICIDADE -->
-
+               */ ?>
             </div>
 
           </div>
