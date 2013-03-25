@@ -1,10 +1,10 @@
 body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segundatela/bg-aovivo.jpg) repeat-x;}
 .hero-unit { margin-bottom:60px; }
-.col-esq2 { width: 640px; margin-bottom:40px; float: left; }
+.col-esq2 { width: 640px; margin-bottom:20px; float: left; }
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { margin:0 auto;} }
 .hero-unit .bgtopo h1 { margin-top:7px;} 
 .col-dir2 { width:300px; float:left; margin-left:20px; text-align:left;}
 .col-dir2 a { margin:20px 0; text-decoration:underline; display:block; }   
 .download { clear:both; text-align:left; }
-.download li { list-style: disc; }
+.download li { list-style: disc; margin-bottom:10px; }
  
