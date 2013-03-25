@@ -1,5 +1,9 @@
     <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+    
+    <style type="text/css">
+      .contatoWrapper #form-contato .t10 input { margin-top:-3px; }
+    </style>
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -174,12 +178,12 @@
 
                     <p class="pergunta">Participou como professor tutor em algum curso a distância?</p>
                     <div class="linha t10">
-                      <input type="radio" name="participou" id="sim1" value="sim" />
-                      <label>Sim</label>
+                      
+                      <label><input type="radio" name="participou" id="sim1" value="sim" />Sim</label>
                     </div>
                     <div class="linha t10">
-                      <input type="radio" name="participou" id="nao1" value="nao" />
-                      <label>Não</label>
+                      
+                      <label><input type="radio" name="participou" id="nao1" value="nao" />Não</label>
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
