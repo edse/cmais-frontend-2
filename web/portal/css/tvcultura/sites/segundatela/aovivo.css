@@ -8,4 +8,4 @@ body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segund
 .download { clear:both; text-align:left; }
 .download ul { margin:20px 0 0 15px;}
 .download li { list-style: disc; margin-bottom:10px; }
- 
+h2 {font-size: 24px;    margin-bottom: 20px;    text-align: left;    text-transform: uppercase;}
