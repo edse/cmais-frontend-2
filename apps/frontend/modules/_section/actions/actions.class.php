@@ -69,7 +69,8 @@ class _sectionActions extends sfActions
       $this->site = $this->section->Site;
       
       if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
-        $this->setLayout('segundatela');   
+        if($this->section->getSlug() != "aovivo")
+          $this->setLayout('segundatela');
       }
       
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
@@ -1208,7 +1209,7 @@ class _sectionActions extends sfActions
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")){
+      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home")){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
           $email_site = $this->section->getContactEmail();

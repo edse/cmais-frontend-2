@@ -22,10 +22,10 @@ function word_limiter($str,$limit=10)
   <script>
     <?php
       $images = "";
-      foreach($displays['destaque-topo'] as $d) {
+      foreach ($displays['destaque-topo'] as $d) {
         $images .= '"'.$d->retriveImageUrlByImageUsage('original').'",';       
       }
-      $images=substr($images, -1);
+      $images = substr($images, 0, -1);
     ?>
     
             
@@ -33,7 +33,7 @@ function word_limiter($str,$limit=10)
     
     var currentImageUrl = imageUrl[Math.floor(Math.random() * imageUrl.length)];
     
-    $(function(){
+    $(window).load(function(){
       $('#destaque').attr('src', currentImageUrl);
     });
   
@@ -43,11 +43,7 @@ function word_limiter($str,$limit=10)
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="conteudo"> 
-      <?php if(isset($displays['destaque-topo'])): ?>
-        <?php if(count($displays['destaque-topo']) > 0): ?>
-        <a href="#" id="imagem-destacada"><img id="destaque" src="<?php echo $displays['destaque-topo'][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays['destaque-topo'][0]->Asset->getTitle() ?>" ></a>
-        <?php endif; ?>
-      <?php endif; ?>
+        <a href="#" id="imagem-destacada" style="min-height:438px; background-color: #000"><img id="destaque" src="" style="min-height:438px; background-color: #000"></a>
         <ul class="menu">
           <li class="cedoc"><h3><a href="<?php echo $site->retriveUrl() ?>" title="Cedoc">Cedoc</a></h3></li>
           <li><span></span><a href="<?php echo $site->retriveUrl() ?>/quem-somos" title="Quem Somos">quem somos</a></li>

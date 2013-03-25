@@ -1680,171 +1680,237 @@ EOT;
   }
 
   public function executeFetch(sfWebRequest $request){
-    $source = "Astolfo";
-    $id = 107258;
+    $this->setLayout(false);
+
+    $contents_folder = "/var/frontend/web/cache/cmais.com.br/segundatela/contents";
+    //$contents_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache/contents";
+    $contents_url = "cmais.com.br/segundatela/contents";
+    //$contents_url = "ss/cache/contents";
+    $cache_folder = "/var/frontend/web/cache";
+    //$cache_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache";
+    
     $save = false;
-    if($request->getParameter('id'))
-      $id = $request->getParameter('id');
-    if($request->getParameter('source'))
-      $source = $request->getParameter('source');
     if($request->getParameter('save'))
       $save = $request->getParameter('save');
-
-    if($source == "Astolfo"){
-      $asset = Doctrine::getTable('Asset')->findOneById($id);
-      if($asset->AssetType->getSlug() == "content")
-        $content = "<p>".$asset->AssetContent->render()."</p>";
-      else if($asset->AssetType->getSlug() == "video")
-        $content = '<p><iframe width="100%" height="390" src="http://www.youtube.com/embed/'.$asset->AssetVideo->getYoutubeId().'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe></p>';
-      else
-        $content = $this->getPartial('enquete', array('asset' => $asset));
+    $query = false;
+    if($request->getParameter('query'))
+      $query = $request->getParameter('query');
+    $id = false;
+    if($request->getParameter('id'))
+      $id = $request->getParameter('id');
+    $html = false;
+    if($request->getParameter('html'))
+      $html = $request->getParameter('html');
+    $source = false;
+    if($request->getParameter('source'))
+      $source = $request->getParameter('source');
       
-      if($save){
-        if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
-          mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
+    if(($query)&&(!$save)){
+      //Astolfo
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a')
+        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
+        ->andWhere('a.is_active = 1')
+        ->andWhere('a.title LIKE ?', $query.'%')
+        ->limit(5)
+        ->execute();
+      if($assets){
+        foreach($assets as $a){
+          $result[] = array("value"=>"Astolfo: ".$a->getTitle(), "data"=>array("source"=>"Astolfo", "id"=>$a->getId()));
         }
-        $url = "cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
-        $file = fopen("/var/frontend/web/cache/".$url, "w");
-        fwrite($file, $content);
-        //$w = '<br /><br /><p>O <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> é o portal de conteúdo da Cultura e reúne os canais <a href="http://tvcultura.cmais.com.br?origem=http://cmais.com.br/jornaldacultura/segundatela" title="TV Cultura">TV Cultura</a>, <a href="http://univesptv.cmais.com.br?origem=http://cmais.com.br/segundatela" title="UnivespTV">UnivespTV</a>, <a href="http://multicultura.cmais.com.br?origem=http://cmais.com.br/segundatela" title="MultiCultura">MultiCultura</a>,<a href="http://tvratimbum.cmais.com.br?origem=http://cmais.com.br/segundatela" title="TV Rá-Tim-Bum!">TV Rá-Tim-Bum!</a> e as rádios <a href="http://www.culturabrasil.com.br?origem=http://cmais.com.br/egundatela" title="Cultura Brasil">Cultura Brasil</a> e <a href="http://culturafm.cmais.com.br?origem=http://cmais.com.br/segundatela" title="Cultura FM">Cultura FM</a>.<br><br>Visite o <a href="http://cmais.com.br?origem=http://cmais.com.br/segundatela" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> e navegue por nossos conteúdos.</p><br />';
-        $w = '<br /><a class="logo-link" href="http://cmais.com.br" target="_blank"><img class="cmais-logo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png"></a>';
-        fwrite($file, $w);  
-        fclose($file);
-        die("http://".$url);
-      }else{
-        echo $content;
-        die();
       }
-      die();
-    }
-    if($source == "Wikipedia"){
-      //Wikipedia search
+
+      //Wikipedia
       $opts = array('http' => array('user_agent' => 'Astolfo/1.0 (http://cmais.com.br)'));
       $context = stream_context_create($opts);
-      //$url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&pageid='.$id.'&section=0&contentformat=text%2Fplain&prop=text%7Cimages';
-      $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&pageid='.$id.'&prop=text%7Cimages';
-      $wiki_results = json_decode(file_get_contents($url, FALSE, $context), TRUE);
-    
-      $data = $wiki_results["parse"]["text"]["*"];
-    
-      //var_dump($wiki_results);
-    
-      //<li>REDIRECT <a href="/wiki/Luiz_In%C3%A1cio_Lula_da_Silva" title="Luiz Inácio Lula da Silva">Luiz Inácio Lula da Silva</a></li>
-    
-      preg_match('/<li>REDIRECT <a href="(.*?)" title="(.*?)"/si', $data, $match);
-      if(!isset($match[2])){
-        preg_match('/<li>Redirecionamento <a href="(.*?)" title="(.*?)"/si', $data, $match);
-        //print_r($match);
-        //die("1");
-      }
-      if(isset($match[2])){
-        //print_r($match);
-        //die("2");
-        $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&page='.urlencode($match[2]).'&prop=text%7Cimages';
-        $wiki_results = json_decode(file_get_contents($url, FALSE, $context), TRUE);
-        //var_dump($wiki_results);
-        $data = $wiki_results["parse"]["text"]["*"];
+      $url = 'http://pt.wikipedia.org/w/api.php?action=query&list=allpages&format=json&apprefix='.urlencode($query).'&aplimit=5';
+      $wiki_results = json_decode(file_get_contents($url, FALSE, $context));
+      if($wiki_results->query->allpages){
+        foreach ($wiki_results->query->allpages as $key => $value) {
+          $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
+        }
       }
     
-      if($wiki_results["parse"]["title"]){
-        $text = "";
-        $info = "";
-        $images = "";
+      echo json_encode(array("suggestions"=>$result));
+      die();
+      
+    }elseif(!$html){ 
+      //Astolfo, Wikipedia or Mannual
+      if($id){
+        if($source){
+          //Astolfo
+          if($source == "Astolfo"){
+            $asset = Doctrine::getTable('Asset')->findOneById($id);
+            if($asset->AssetType->getSlug() == "content")
+              $content = "<p>".$asset->AssetContent->render()."</p>";
+            else if($asset->AssetType->getSlug() == "video")
+              $content = '<p><iframe width="100%" height="390" src="http://www.youtube.com/embed/'.$asset->AssetVideo->getYoutubeId().'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe></p>';
+            else
+              $content = $this->getPartial('enquete', array('asset' => $asset));
+
+            if($save){
+              
+              if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
+                mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
+              }
+              $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
+              $file = fopen($cache_folder."/".$url, "w");
+              /*
+              if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id))){
+                mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id));
+              }
+              $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
+              $file = fopen("/var/frontend/web/cache/".$url, "w");
+              */
+              fwrite($file, $content);
+              $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
+              fwrite($file, $footer);
+              fclose($file);
+              die("http://".$url);
+            }else{
+              die($content);
+            }
+            die();
+            
+          }
+          elseif($source == "Wikipedia"){
+            $opts = array('http' => array('user_agent' => 'Astolfo/1.0 (http://cmais.com.br)'));
+            $context = stream_context_create($opts);
+            $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&pageid='.$id.'&prop=text%7Cimages';
+            $wiki_results = json_decode(file_get_contents($url, FALSE, $context), TRUE);
+            $data = $wiki_results["parse"]["text"]["*"];
+            //REDIRECTS
+            preg_match('/<li>REDIRECT <a href="(.*?)" title="(.*?)"/si', $data, $match);
+            if(!isset($match[2])){
+              preg_match('/<li>Redirecionamento <a href="(.*?)" title="(.*?)"/si', $data, $match);
+            }
+            if(isset($match[2])){
+              $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&page='.urlencode($match[2]).'&prop=text%7Cimages';
+              $wiki_results = json_decode(file_get_contents($url, FALSE, $context), TRUE);
+              $data = $wiki_results["parse"]["text"]["*"];
+            }
+            if($wiki_results["parse"]["title"]){
+              $text = "";
+              $info = "";
+              $images = "";
+              $footer = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
         
-        //Infobox
-        /*
-        preg_match('/<table\s*class="infobox"[^>]*>(.*?)<\/table>/si', $data, $match);
-        if(count($match)<=0){
-          preg_match('/<table\s*class="infobox_v2"[^>]*>(.*?)<\/table>/si', $data, $match);
-          //print_r($match);
-          //die();
-          if(@$match[0]!=""){
-            //$t = strip_tags($match[0], '<table><tr><td><img><a>');
-            $info = @str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $match[0]);
-          }
-        }
-        else{
-          //$t = strip_tags($match[0], '<table><tr><td><img><a>');
-          $info = @str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $match[0]);
-        }
-        */
+              //Infobox
+              /*
+              preg_match('/<table\s*class="infobox"[^>]*>(.*?)<\/table>/si', $data, $match);
+              if(count($match)<=0){
+                preg_match('/<table\s*class="infobox_v2"[^>]*>(.*?)<\/table>/si', $data, $match);
+                //print_r($match);
+                //die();
+                if(@$match[0]!=""){
+                  //$t = strip_tags($match[0], '<table><tr><td><img><a>');
+                  $info = @str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $match[0]);
+                }
+              }
+              else{
+                //$t = strip_tags($match[0], '<table><tr><td><img><a>');
+                $info = @str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $match[0]);
+              }
+              */
     
-        //Text    
-        preg_match_all('/<p>(.*?)<\/p>/s', $data, $match);
-        $text="";
-        $i=0;
-        foreach ($match[0] as $m) {
-          if((($m != "<p><br></p>")&&($m != "<p><br /></p>"))&&($i<5)){
-            $i++;
-            $text .= $m;
-          }
-        }
-        //Desambiguação
-        $pos = strrpos($data, "Desambiguação");
-        if($pos !== false){
-          preg_match_all('/<ul>(.*?)<\/ul>/s', $data, $match);
-          foreach ($match[0] as $m) {
-            $text .= $m;
-          }
-        }
-        
-        $text = preg_replace('/<p><span\s*class="dablink"[^>]*>(.*?)<\/span><\/p>/s', '', $text);
-        $text = preg_replace('/ \(<font\s*class="metadata"[^>]*>(.*?)<\/font>\)/s', '', $text);
-        $text = preg_replace('/ \(<small>(.*?)\)/s', '', $text);
-        $text = preg_replace('/<strong\s*class="error"[^>]*>(.*?)<\/strong>/s', '', $text);
-        $text = preg_replace('/<sup\s*[^>]*>(.*?)<\/sup>/s', '', $text);
-        $text = preg_replace('/<table\s*class="noprint"[^>]*>(.*?)<\/table>\)/s', '', $text);
-        $text = preg_replace('/<ul\s*class="noprint"[^>]*>(.*?)<\/ul>\)/s', '', $text);
-        $text = str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $text);
-        //$text = strip_tags($text, '<p><a><img>');
+              //Text    
+              preg_match_all('/<p>(.*?)<\/p>/s', $data, $match);
+              $text="";
+              $i=0;
+              foreach ($match[0] as $m) {
+                if((($m != "<p><br></p>")&&($m != "<p><br /></p>"))&&($i<5)){
+                  $i++;
+                  $text .= $m;
+                }
+              }
+              //Desambiguação
+              $pos = strrpos($data, "Desambiguação");
+              if($pos !== false){
+                preg_match_all('/<ul>(.*?)<\/ul>/s', $data, $match);
+                foreach ($match[0] as $m) {
+                  $text .= $m;
+                }
+              }
+              //Special Occurrences    
+              $text = preg_replace('/<p><span\s*class="dablink"[^>]*>(.*?)<\/span><\/p>/s', '', $text);
+              $text = preg_replace('/ \(<font\s*class="metadata"[^>]*>(.*?)<\/font>\)/s', '', $text);
+              $text = preg_replace('/ \(<small>(.*?)\)/s', '', $text);
+              $text = preg_replace('/<strong\s*class="error"[^>]*>(.*?)<\/strong>/s', '', $text);
+              $text = preg_replace('/<sup\s*[^>]*>(.*?)<\/sup>/s', '', $text);
+              $text = preg_replace('/<table\s*class="noprint"[^>]*>(.*?)<\/table>\)/s', '', $text);
+              $text = preg_replace('/<ul\s*class="noprint"[^>]*>(.*?)<\/ul>\)/s', '', $text);
+              $text = str_replace('<a href="/', '<a target=\"_blank\" href="http://pt.wikipedia.org/', $text);
+              //$text = strip_tags($text, '<p><a><img>');
     
-        if($info==""){
-          //Images
-          $values = $wiki_results["parse"]["images"];
-          $i=0;
-          foreach($values as $key => $value) {
-            $pos = strrpos($value, ".jpg");
-            if($pos === false) $pos = strrpos($value, ".gif");
-            if($pos === false) $pos = strrpos($value, ".png");
-            if($pos !== false && substr($value, 0, 4)!="Kit_" && substr($value, 0, 8)!="Crystal_" && substr($value, 0, 6)!="Fleche") {
-              if(!in_array($value, array(
-                "Flags_of_the_Union_of_South_American_Nations.gif",
-                ))){
-                $i++;
-                if($i<=1){
-                  $url2 = 'http://pt.wikipedia.org/w/api.php?action=query&titles=File:'.urlencode($value).'&prop=imageinfo&iiprop=url&format=json&iiurlwidth=200';
-                  $wiki_images = @json_decode(file_get_contents($url2, FALSE, $context));
-                  foreach(@$wiki_images->query->pages as $img){
-                    $images = "<img src=\"".$img->imageinfo[0]->thumburl."\" alt=\"".$img->title."\" />";
-                    //$images .= "<img src=\"".$img->imageinfo[0]->url."\" alt=\"".$img->title."\" />";
+              if($info==""){
+                //Images
+                $values = $wiki_results["parse"]["images"];
+                $i=0;
+                foreach($values as $key => $value) {
+                  $pos = strrpos($value, ".jpg");
+                  if($pos === false) $pos = strrpos($value, ".gif");
+                  if($pos === false) $pos = strrpos($value, ".png");
+                  if($pos !== false && substr($value, 0, 4)!="Kit_" && substr($value, 0, 8)!="Crystal_" && substr($value, 0, 6)!="Fleche") {
+                    if(!in_array($value, array(
+                      "Flags_of_the_Union_of_South_American_Nations.gif",
+                      ))){
+                      $i++;
+                      if($i<=1){
+                        $url2 = 'http://pt.wikipedia.org/w/api.php?action=query&titles=File:'.urlencode($value).'&prop=imageinfo&iiprop=url&format=json&iiurlwidth=200';
+                        $wiki_images = @json_decode(file_get_contents($url2, FALSE, $context));
+                        foreach(@$wiki_images->query->pages as $img){
+                          $images = "<img src=\"".$img->imageinfo[0]->thumburl."\" alt=\"".$img->title."\" />";
+                        }
+                      }
+                    }
                   }
                 }
               }
+    
+              if($save){
+                if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
+                  mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
+                }
+                $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
+                $file = fopen($cache_folder."/".$url, "w");
+                //$file = fopen($folder."/".$url, "w+");
+                fwrite($file, $info);
+                fwrite($file, $images);
+                fwrite($file, $text);
+                fwrite($file, $footer);
+                fclose($file);
+                die("http://".$url);
+              }else{
+                echo $info;
+                echo $images;
+                echo $text;
+                die();
+              }
             }
-          }      
-        }
-        if($save){
-          if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id))){
-            mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id));
+            die();
           }
-          $url = "cmais.com.br/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
-          $file = fopen("/var/frontend/web/cache/".$url, "w");
-          fwrite($file, $info);
-          fwrite($file, $images);
-          fwrite($file, $text);
-    
-          $w = '<br /><a class="logo-link" href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="/ss/img/wikipedia_logo.png" style="visibility: visible;"></a>';
-          fwrite($file, $w);
-    
-          fclose($file);
-          die("http://".$url);
-        }else{
-          echo $info;
-          echo $images;
-          echo $text;
         }
-        die();
-      } 
+      }
+    }
+    elseif($html){
+      $id = time();
+      if(!$source)
+        $source = "mannual";
+      if(strtolower($source) != "wikipedia")
+        $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
+      else
+        $footer = '<br /><a href="http://pt.wikipedia.org" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
+      if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
+        mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
+      }
+      $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
+      $file = fopen($cache_folder."/".$url, "w");
+      //$file = fopen($folder."/".$url, "w+");
+      fwrite($file, $html);
+      fwrite($file, $footer);
+      fclose($file);
+      die("http://".$url);
     }
 
   }

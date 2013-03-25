@@ -41,7 +41,7 @@ if(isset($pager)){
   
   <h2 class="tit-pagina">Convidado do Dia</h2>
   <div class="convidados">
-    <a href="<?php echo $site->retriveUrl() ?>/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
+    <a href="<?php echo $site->retriveUrl() ?>/tvcocorico/convidados" title="Quem já passou por aqui?">Quem já passou por aqui?</a>
   </div>  
 
   <div class="row-fluid">
