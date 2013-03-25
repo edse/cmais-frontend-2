@@ -84,7 +84,17 @@
                     
                     <span class="linhaFundo"></span>
                      
-                    <p class="enun">Escolha da Disciplina</p>
+                    <p class="enun">Disciplina</p>
+                    <div class="linha t2">
+                      <label>Escolha</label>
+                      <select name="disciplina" id="disciplina" style="width:200px">
+                        <option value="">---</option>
+                        <option value="Língua Portuguesa">Língua Portuguesa</option>
+                        <option value="Matemática">Matemática</option>
+                        <option value="Gestão Escolar">Gestão Escolar</option>
+                      </select>
+                    </div>
+                    <!--
                     <div>
                       <div class="linha t7" style="margin-right: 30px">
                         <input type="checkbox" class="disciplina" name="disciplina1" id="disciplina1" value="Língua Portuguesa" style="float:left; margin-right:10px" />
@@ -99,6 +109,7 @@
                         <label style="margin-top:4px">Gestão Escolar</label>
                       </div>
                     </div>
+                    -->
                     
                     <span class="linhaFundo"></span>
                     
@@ -131,6 +142,16 @@
                     <span class="linhaFundo"></span>
                     
                     <p class="enun">Formação Acadêmica</p>
+                    <div class="linha t2">
+                      <label>Escolha</label>
+                      <select name="formacao" id="formacao" style="width:200px">
+                        <option value="">---</option>
+                        <option value="Licenciado em Letras / Português">Licenciado em Letras / Português</option>
+                        <option value="Licenciado em Matemática">Licenciado em Matemática</option>
+                        <option value="Licenciado em Gestão Escolar">Licenciado em Gestão Escolar</option>
+                      </select>
+                    </div>
+                    <!--
                     <div>
                       <div class="linha t7" style="clear:both">
                         <input type="checkbox" class="formacao" name="formacao1" id="formacao1" value="Licenciado em Letras / Português"  style="float:left; margin-right:10px"/>
@@ -145,6 +166,7 @@
                         <label style="margin-top:4px">Licenciado em Gestão Escolar</label>
                       </div>
                     </div>
+                    -->
 
                     <span class="linhaFundo"></span>
                     
@@ -237,13 +259,14 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        
+        /*
         $('.disciplina').click(function() {
           $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
         });
         $('.formacao').click(function() {
           $("label[for='formacao1'], label[for='formacao2'], label[for='formacao3']").hide();
         });
+        */
         
         
         $("#cpf").mask("999.999.999-99");
@@ -273,20 +296,8 @@
                   $("#statusMsg_0").show();
                   $('img#ajax-loader').hide();
                 }
-                else if (data == "1") {
-                  $("#statusMsg_1").show();
-                  $('img#ajax-loader').hide();
-                }
-                else if (data == "2") {
-                  $("#statusMsg_2").show();
-                  $('img#ajax-loader').hide();
-                }
-                else if (data == "3") {
-                  $("#statusMsg_3").show();
-                  $('img#ajax-loader').hide();
-                }
-                else if (data == "4") {
-                  $("#statusMsg_4").show();
+                else if(data > 0) {
+                  $("#statusMsg_"+data).show();
                   $('img#ajax-loader').hide();
                 }
                 else {
@@ -296,7 +307,8 @@
             });         
           },
           rules:{
-            disciplina1:{
+            /*
+            disciplina:{
               required: function() {
                 if ($('#disciplina2').is(':checked') || $('#disciplina3').is(':checked')) {
                   return false;
@@ -329,6 +341,10 @@
                 
               }
             },
+            */
+            disciplina: {
+              required: true
+            },
             nome:{
               required: true,
               minlength: 5
@@ -349,6 +365,7 @@
             celular:{
               required: true
             },
+            /*
             formacao1:{
               required: function() {
                 if ($('#formacao2').is(':checked') || $('#formacao3').is(':checked')) {
@@ -382,6 +399,10 @@
                 
               }
             },
+            */
+            formacao: {
+              required: true
+            },
             participou:{
               required: true
             },
@@ -397,16 +418,7 @@
             }
           },
           messages:{
-            captcha: "Digite corretamente o código que está ao lado.",
-            rg: {
-              minlength: jQuery.format("O RG precisa ter no mínimo {0} dígitos")
-            },
-            disciplina1: "É necessária a escolha de pelo menos uma disciplina.",
-            disciplina2: "É necessária a escolha de pelo menos uma disciplina.",
-            disciplina3: "É necessária a escolha de pelo menos uma disciplina.",
-            formacao1: "É necessária a escolha de pelo menos uma formação acadêmica.",
-            formacao2: "É necessária a escolha de pelo menos uma formação acadêmica.",
-            formacao3: "É necessária a escolha de pelo menos uma formação acadêmica."
+            captcha: "Digite corretamente o código que está ao lado."
           }
         });
       });
