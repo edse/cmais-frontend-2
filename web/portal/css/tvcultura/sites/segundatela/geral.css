@@ -93,7 +93,6 @@
 
 .progress .bar { color:#333; }
 
-.accordion p iframe { width:610px; height:371px; }
 @media (max-width : 480px)  {
   .accordion p iframe { width:436px; height:265px; }
 }
