@@ -50,6 +50,7 @@
 .redes .gplus {  display: block; float:left; }
 .accordion-body p,
 .accordion-body img { padding:0 15px;} 
+.accordion-body p img { padding-top:0 !important; }
 
 .accordion-body #mais h3 { background:#333; color:#fff; padding:2px 5px; font-size:14px; height:18px; line-height:18px; float: left; text-transform:uppercase; margin:0 15px 10px 15px; font-weight:normal;}   
 .accordion-body #mais ul { clear:both; margin-left:20px; } 
