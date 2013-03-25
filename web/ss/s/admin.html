@@ -302,7 +302,10 @@
             $.ajax({
               //url: "/ajax/fetch.php",
               url: "/ajax/fetch",
-              data: "save=1&html="+editor.getData(),
+              data: {
+                save: 1,
+                html: editor.getData()
+              },
               type: "POST",
               dataType: "text",
               async: false,
