@@ -88,7 +88,8 @@ a.outras:hover{text-decoration:none; background-color:#6d6969;}
 /* /form */
 
 #form-contato-solista .linha label { float:none !important; }
-#form-contato-solista .linha.w240 { margin-left:10px !important; }
+#form-contato-solista .linha.t8.w204 { margin-left:10px !important; }
+#form-contato-solista .linha.t9 input { clear:none; display:block; }
 
 /** /PRE ESTREIA **/
   
