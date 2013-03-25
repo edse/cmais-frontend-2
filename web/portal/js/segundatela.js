@@ -20,7 +20,7 @@
           $('#tryin-v').html(tryin);
         }else{
           clearInterval(interval);
-          if(mult<10){
+          if(mult<100){
             mult++;
             $('#tryin-v').html("0");
             tryToConnect();
