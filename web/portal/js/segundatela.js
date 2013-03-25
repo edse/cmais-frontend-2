@@ -167,12 +167,12 @@ $(document).ready(function() {
   });
 
   // colocando e tirando ativo
-  $('.accordion-body').on('hidden', function() {
+  $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
   });
 
-  $('.accordion-body').on('show', function() {
+  $('.accordion-body').live('show', function() {
     //player stop
     if(playing)
       playing.pauseVideo();
