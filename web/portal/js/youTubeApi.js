@@ -28,6 +28,26 @@ $(document).ready(function() {
         }
       });
     }
+    // colocando e tirando ativo
+    $('.accordion-body').on('hidden', function() {
+      console.log("fechei");
+      //remove barra ativa
+      $(this).prev().find('a').removeClass('ativo');
+    });
+  
+    $('.accordion-body').on('show', function() {
+      console.log("abri");
+      //player stop
+      if(playing)
+        playing.pauseVideo();
+      //remove barra ativa
+      $(this).prev().find('a').addClass('ativo');
+      //scroll
+      var el = $(this).parent();
+      $('html, body').animate({
+        scrollTop: el.offset().top
+      }, "fast");
+    });
   }  
 
   $('#myTab a').click(function(e) {
@@ -35,26 +55,7 @@ $(document).ready(function() {
     $(this).tab('show');
   });
 
-  // colocando e tirando ativo
-  $('.accordion-body').on('hidden', function() {
-    console.log("fechei");
-    //remove barra ativa
-    $(this).prev().find('a').removeClass('ativo');
-  });
-
-  $('.accordion-body').on('show', function() {
-    console.log("abri");
-    //player stop
-    if(playing)
-      playing.pauseVideo();
-    //remove barra ativa
-    $(this).prev().find('a').addClass('ativo');
-    //scroll
-    var el = $(this).parent();
-    $('html, body').animate({
-      scrollTop: el.offset().top
-    }, "fast");
-  });
+  
 
   // padding ultimo conteudo
   $('.accordion-body').each(function() {
