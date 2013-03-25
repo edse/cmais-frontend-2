@@ -129,7 +129,7 @@
 }).call(this);
 
 
-$(document).ready(function() {
+$(document).live(function() {
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
