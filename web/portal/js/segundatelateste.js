@@ -167,7 +167,7 @@ $(document).ready(function() {
   });
 
   // colocando e tirando ativo
-  $('.accordion-body').on('hidden', function() {
+  $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
   });
@@ -179,13 +179,20 @@ $(document).ready(function() {
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
-    var el = $(this).parent();
+    var el = $(this).find('.accordion-heading');
     $('html, body').animate({
       scrollTop: el.offset().top
     }, "fast");
-  });  
+  });
+  
+    
   
   /*
+  $('.accordion-body').on('hidden', function() {
+    //remove barra ativa
+    $(this).prev().find('a').removeClass('ativo');
+  });
+  
   $('.accordion-body').on('show', function() {
     //player stop
     if(playing)
