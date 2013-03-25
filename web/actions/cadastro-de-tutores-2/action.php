@@ -4,14 +4,14 @@ $_REQUEST["rg"] = str_replace(array('.','-'),"",$_REQUEST["rg"]);
 
 if($_REQUEST["captcha"]) {
   if($_REQUEST["cpf"]){
-    if(exec('grep "^'.$_REQUEST["cpf"].'$" cpf-alunos.txt')){
+    if(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-alunos.txt')){
       die("2");
     }
-    elseif(exec('grep "^'.$_REQUEST["cpf"].'$" cpf-tutores.txt')){
+    elseif(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt')){
       die("3");
     }
     else{
-      $csvFile = "/var/frontend/web/actions/cadastro-de-tutores-2/cadastro-de-tutores.csv";
+      $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino.csv";
       $csvContent = "";
       while(list($campo, $valor) = each($_REQUEST)) {
         if(!in_array($campo, array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
@@ -20,7 +20,7 @@ if($_REQUEST["captcha"]) {
       $csvContent .= "\n";
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
-        $txtFile = "/var/frontend/web/actions/cadastro-de-tutores-2/cpf-tutores.txt";
+        $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt";
         $txtFp = fopen($txtFile, 'a+');
         fwrite($txtFp, $txtContent);
         die("0");
