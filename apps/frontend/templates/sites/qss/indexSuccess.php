@@ -60,7 +60,7 @@
         }
       },
       messages:{
-        nome: " Este campo &eacute; Obrigat&oacute;rio.",
+        email: "Digite um e-mail válido.",
  
       },
       success: function(label){
