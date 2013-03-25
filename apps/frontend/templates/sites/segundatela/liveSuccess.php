@@ -12,6 +12,7 @@
         <div class="bgtopo"><h1><img src="/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" style="width: auto;" /></h1></div>
        
       </div>
+      <h2>Uma grade para os novos tempos</h2>
       <div class="col-esq2" >
         <iframe width="640" height="390" src="http://www.youtube.com/embed/BSLg7RjX-ns" frameborder="0" allowfullscreen></iframe>
       </div>
