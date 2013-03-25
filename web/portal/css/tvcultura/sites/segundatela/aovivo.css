@@ -6,5 +6,6 @@ body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segund
 .col-dir2 { width:300px; float:left; margin-left:20px; text-align:left;}
 .col-dir2 a { margin:20px 0; text-decoration:underline; display:block; }   
 .download { clear:both; text-align:left; }
+.download ul { margin:20px 0;}
 .download li { list-style: disc; margin-bottom:10px; }
  
