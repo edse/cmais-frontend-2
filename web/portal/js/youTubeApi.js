@@ -37,11 +37,13 @@ $(document).ready(function() {
 
   // colocando e tirando ativo
   $('.accordion-body').on('hidden', function() {
+    console.log("fechei");
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
   });
 
   $('.accordion-body').on('show', function() {
+    console.log("abri");
     //player stop
     if(playing)
       playing.pauseVideo();
