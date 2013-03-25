@@ -24,7 +24,7 @@
     timer1();
     var t=setInterval("timer1()",60000);
   });
-  */
+
   function broadcastEnd(){
     var request = $.ajax({
       data: {
@@ -41,9 +41,11 @@
   }
   
   jQuery(document).ready(function() {
-    //broadcastEnd();
+    broadcastEnd();
     var t2=setInterval("broadcastEnd()", 60000);
   }); 
+
+  */
 </script>
     
     <!-- scripts -->
