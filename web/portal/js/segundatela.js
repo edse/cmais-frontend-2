@@ -174,6 +174,7 @@ $(document).ready(function() {
 
   $('.accordion-body').live('show', function() { 
     //player stop
+    //console.log(playing.getPlayerState());
     if(playing)
       playing.pauseVideo();
     //remove barra ativa
