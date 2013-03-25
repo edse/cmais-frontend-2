@@ -8,7 +8,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
 .hero-unit .redes { text-align:left; }
 .hero-unit .col-dir {  float:right; width: 39%; }
 
-.hero-unit .menu-jc {clear: both; margin-top:60px; float: right; width:100%;  }
+.hero-unit .menu-jc {clear: both; margin-top:60px; float: right; }
 .hero-unit .menu-jc p,
 .hero-unit .menu-jc a { text-transform:uppercase; color:#666; font-weight:bold; float:left; text-align:right; font-size:14px; height:20px; line-height:20px; }
 .hero-unit .menu-jc a:hover { text-decoration:none; }
