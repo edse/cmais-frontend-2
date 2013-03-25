@@ -2,7 +2,7 @@ body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segund
 
 .hero-unit { padding:0; margin:0; background:none; height:200px; overflow:hidden; }
 .hero-unit .bgtopo h1 {/*background:url(/portal/images/capaPrograma/segundatela/grade2013/logo.png) no-repeat;*/ float:left; margin:0; padding:0 4% 0 0; /*text-indent:-9999px;*/  }
-.hero-unit .bgtopo h1 img { display:block; width: 341px;   }
+.hero-unit .bgtopo h1 img { display:block; width: 341px; height:172px;  }
 .hero-unit .redes { clear:both; float:right; margin-top:20px; }
 .hero-unit .col-dir {  float:right; width: 58%; background:#eee; height:100%; padding:0 10px; overflow: hidden; }
 .hero-unit .fechar { background:#666; text-transform:uppercase; color:#fff; margin-top:20px; border:none; text-shadow:none; padding:0 5px; font-weight:bold; float:right; font-size:12px;  }
