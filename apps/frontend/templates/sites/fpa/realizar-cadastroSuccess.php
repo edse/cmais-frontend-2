@@ -41,12 +41,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <form id="form1" method="post" action="">
             <div class="span6" style="margin:0;">
               <label>Cadastre seu CPF</label>
-              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="34078146821">
+              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="">
               <span class="help-block">(Somente números)</span>
             </div>
             <div class="span6">
               <label>Data de nascimento</label>
-              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="04/02/1987">
+              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="">
               <span class="help-block">(DD/MM/AAAA)</span>
             </div>
             <div class="row-fluid">
