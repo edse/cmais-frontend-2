@@ -47,7 +47,7 @@
             else {
               alert("Sua mensagem não pode ser enviada. Tente novamente.");
                $('img#ajax-loader').hide();
-               $("#input").val(" ");
+               $("#email").val(" ");
                
             }
           }
