@@ -41,7 +41,7 @@
   }
   
   jQuery(document).ready(function() {
-    broadcastEnd();
+    //broadcastEnd();
     var t2=setInterval("broadcastEnd()", 60000);
   }); 
 </script>
