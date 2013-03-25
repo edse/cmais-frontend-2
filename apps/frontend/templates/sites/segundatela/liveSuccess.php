@@ -13,7 +13,7 @@
        
       </div>
       <div class="col-dir2" >
-        <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL0Qz-covvhxSzQaY2cuxWcwekgje5UcDd" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="390" src="http://www.youtube.com/embed/BSLg7RjX-ns" frameborder="0" allowfullscreen></iframe>
       </div>
       
     </div>
