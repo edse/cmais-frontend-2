@@ -92,3 +92,7 @@
 /* /ie */
 
 .progress .bar { color:#333; }
+
+@media (max-width : 480px)  {
+  .accordion p iframe { width:436px; height:265px; }
+}

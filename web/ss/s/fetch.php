@@ -146,20 +146,20 @@ if($source == "astolfo"){
         }      
       }
       if($save){
-        if(!is_dir("/var/frontend/web/cache/172.20.18.133/segundatela/contents/".strtolower($source)."-".strtolower($id))){
-          mkdir("/var/frontend/web/cache/172.20.18.133/segundatela/contents/".strtolower($source)."-".strtolower($id));
+        if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id))){
+          mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id));
         }
-        $url = "172.20.18.133/segundatela/contents/".strtolower($source)."-".strtolower($id)."/index.html";
+        $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
         $file = fopen("/var/frontend/web/cache/".$url, "w");
         fwrite($file, $info);
         fwrite($file, $images);
         fwrite($file, $text);
   
-        $w = '<br /><a class="logo-link" href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="/ss/img/wikipedia_logo.png" style="visibility: visible;"></a>';
+        $w = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img src="/ss/img/logowikipedia.png" /></a>';
         fwrite($file, $w);
   
         fclose($file);
-        die("http://172.20.18.133/cache/".$url);
+        die("http://cmais.com.br/cache/".$url);
       }else{
         echo $info;
         echo $images;

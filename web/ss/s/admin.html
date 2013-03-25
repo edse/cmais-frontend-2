@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Jornal da Cultura · Segunda Tela</title>
+    <title> · Segunda Tela · </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="../docs/assets/css/bootstrap.css" rel="stylesheet">
     <link href="../docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
     <link href="../docs/assets/css/docs.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -18,10 +19,6 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../docs/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../docs/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../docs/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../docs/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../img/favicon.png">
 
     <style type="text/css">
@@ -55,7 +52,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/backend.php/" style="float: left; margin-top: 5px;">Jornal da Cultura · Segunda Tela</a>
+          <a class="brand" href="/" style="float: left; margin-top: 5px;"> · Segunda Tela · </a>
 
           <div id="status" class="pull-right" style="margin-left: 5px; margin-top: 5px">
             <a class="btn btn-danger disabled">
@@ -67,7 +64,7 @@
             <div class="btn-group">
               <a id="admin" class="btn btn-warning btn-mini"><i class="icon-refresh icon-white"></i> Refresh</a>
             </div>
-            <div class="btn-group">
+            <div class="btn-group hide">
               <a id="restart" class="btn btn-primary btn-mini"><i class="icon-refresh icon-white"></i> Restart</a>
               <a id="stop" class="btn btn-primary btn-mini"><i class="icon-stop icon-white"></i> Stop</a>
               <a id="start" class="btn btn-primary btn-mini"><i class="icon-play icon-white"></i> Start</a>
@@ -87,7 +84,7 @@
         
         <div class="span3">
           <div class="page-header">
-            <h2>Server Info <!--<small> Características do servidor</small>--></h2>
+            <h2>Server Info</h2>
           </div>
           <div id="serverInfo" class="pull-left2">
             <p>Host: <span id="host">astolfo</span></p>
@@ -115,67 +112,100 @@
           </table>
         </div>
         
-        
         <div class="span5">
           <div class="page-header">
-            <h2>Messages <!--<small>Mensagens trafegando pelo server</small>  <span id="status2" class="offline" style="display: none; font-size: 20px; line-height: 35px;">disconnected</span>--></h2>
+            <h2>Messages</h2>
           </div>
           <div id="log2" style="margin: 6px 0 10px 0; padding: 5px; border: 1px solid red; height: 215px; overflow: auto; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;"></div>
-          <!--    
-          <form class="form-inline">
-            <input type="text" id="title" class="input-small" placeholder="Title" />
-            <input type="text" id="description" class="input-medium" placeholder="Description" />
-            <input type="text" id="url" class="input-large" placeholder="URL" />
-            <button id="send" type="button" class="btn btn-inverse">Send</button>
-          </form>
-          -->
-
         </div>
-                    
 
       </div>
 
       <div class="row-fluid contents">
         <div class="span12">
-          <div class="page-header">
-            <h2>Content <!--<small>Mensagens trafegando pelo server</small>  <span id="status2" class="offline" style="display: none; font-size: 20px; line-height: 35px;">disconnected</span>--></h2>
-          </div>
+
           <div style="display: block;">
-            <a id="new-content-btn" class="btn btn-mini btn-primary"><i class="icon-plus icon-white"></i> Add New Content</a>
-            <div id="new-content" class="hide" style="display: none; margin-bottom: 100px;">
-              <div class="page-header">
-                <h4>New Content</h4>
-              </div>
+            <a id="new-content-btn" class="btn btn-mini btn-primary pull-right"><i class="icon-plus icon-white"></i> Add New Content</a>
+
+            <div id="new-content" class="hide" style="display: none; margin-bottom: 100px; margin-top: 10px;">
               <form class="form-inline" onsubmit="return false">
+                <input type="hidden" id="new-content-mode" value="search" />
+                <input type="hidden" id="new-content-source" value="" />
+                <input type="hidden" id="new-content-id" value="" />
+                
+                <ul id="form-tab" class="nav nav-tabs">
+                  <li class="active"><a href="#search" data-toggle="tab">Search</a></li>
+                  <li><a href="#create" data-toggle="tab">Create</a></li>
+                </ul>
+
                 <div class="controls">
-                  <input type="hidden" id="new-content-source" value="" />
-                  <input type="hidden" id="new-content-id" value="" />
                   <select id="new-content-type" class="input-medium">
                     <option value="content">Conteúdo</option>
                     <option value="people">Pessoa</option>
                     <option value="place">Lugar</option>
                     <option value="poll">Enquete</option>
                   </select>
-                  <input type="text" id="new-content-tag" class="input-xlarge typeahead" placeholder="tag or slug" autocomplete="off" />
+                </div>
+                <a id="preview-a"></a>
+                <div id="preview-w" class="hide">
+                  <div class="page-header">
+                    <h3>Preview</h3>
+                  </div>
+                  <div id="title" class="hide"><input type="text" id="new-content-title" class="input-xxxlarge" autocomplete="off" /></div>
+                  <div id="preview" style="display: inline-block;"></div>
+              </div>
+
+  
+                <div class="tab-content">
+                  <div class="tab-pane active" id="search">
+                    <input type="text" id="new-content-tag" class="input-xxlarge typeahead" placeholder="tag or slug" autocomplete="off" />
+                  </div>
+                  <div class="tab-pane" id="create">
+                    <div class="controls">
+                      <input type="text" id="new-content-tag-c" class="input-xxlarge" placeholder="Title" autocomplete="on" style="margin-top: 2px;margin-bottom: 2px;" />
+                      <textarea id="new-content-html-c" class="ckeditor" style="width: 100%; height: 350px;"></textarea>
+                    </div>
+                  </div>
                 </div>
               </form>
+
+              <hr />
               <div class="controls" style="clear: both;">
                 <img id="fetching" src="../img/loading6.gif" alt="loading" class="hide" />
+                <a href="#preview-a" id="new-content-preview" class="btn btn-mini btn-primary disabled" style="display: none;"><i class="icon-check icon-white"></i> Preview</a>
+                <a id="new-content-edit" class="btn btn-mini btn-warning" style="display: none;"><i class="icon-pencil icon-white"></i> Edit</a>
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
-              <div id="title" class="hide"><input type="text" id="new-content-title" class="input-xxxlarge" autocomplete="off" /></div>
-              <div id="preview"></div>
-              <hr />
+              
             </div>
-            <div id="content-list" style="margin-top: 25px;"></div>
+
+            <div class="page-header">
+              <h3>Content List</h3>
+            </div>
+
+            <table class="table table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Source</th>
+                  <th>Type</th>
+                  <th>Title</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="content-list"></tbody>
+            </table>
+
+            <!--<div id="content-list" style="margin-top: 25px;"></div>-->
+
           </div>
 
         </div>
       </div>
       
       <script src="../docs/assets/js/jquery.js"></script>
-      <script src="../docs/assets/js/bootstrap-typeahead.js"></script>
+      <script src="../docs/assets/js/bootstrap-tab.js"></script>
       <script src="../js/jquery.autocomplete.js"></script>
       <script src="../js/json2.js"></script>
 
@@ -193,12 +223,8 @@
           return true;
         };
         
-        //serverUrl2 = 'ws://172.20.1.79:4443/quiz';
-        //serverUrl2 = 'ws://200.136.27.32:443/quiz';
-        //serverUrl2 = 'ws://172.20.18.133:4443/secondscreen';
-        //serverUrl2 = 'ws://200.136.27.32:4443/secondscreen';
-        //serverUrl2 = 'ws://200.136.27.32:443/secondscreen';
         serverUrl2 = 'ws://200.136.27.32:80/secondscreen';
+        //serverUrl2 = 'ws://ss:8080/secondscreen';
         if (window.MozWebSocket) {
           socket2 = new MozWebSocket(serverUrl2);
         } else if (window.WebSocket) {
@@ -243,34 +269,6 @@
           return $('#status a').removeClass("btn-success").addClass('btn-danger').html('disconnected');
         };
 
-        function send(){
-          var payload = new Object();
-          payload.action = "echo";
-          payload.title = $('#title').val();
-          payload.description = $('#description').val();
-          payload.url = $('#url').val();
-          payload.data = $('#title').val()+" | "+$('#description').val()+" | "+$('#url').val()/*+" | "+$('#duration').val()*/;
-          return socket2.send(JSON.stringify(payload));
-        }
-
-        function startgame(){
-          var payload = new Object();
-          payload.action = "start";
-          payload.data = 1;
-          $('#start-game').addClass('disabled');
-          $('#stop-game').removeClass('disabled');
-          return socket2.send(JSON.stringify(payload));
-        }
-
-        function stopgame(){
-          var payload = new Object();
-          payload.action = "stop";
-          payload.data = 1;
-          $('#stop-game').addClass('disabled');
-          $('#start-game').removeClass('disabled');
-          return socket2.send(JSON.stringify(payload));
-        }
-
         $('#data').bind('keypress', function(e) {
           var code = (e.keyCode ? e.keyCode : e.which);
           if(code == 13 && this.value) {
@@ -278,10 +276,6 @@
           }
         });
       
-        $('#send').click(function() {
-          send();
-        });
-
         $('#new-content-btn').click(function() {
           if($(this).hasClass("disabled")) return false;
           $(this).addClass("disabled");
@@ -294,24 +288,25 @@
           if($(this).hasClass("disabled")) return false;
           $("#new-content-type:selected").removeAttr("selected");
           $('#new-content-tag').val("");
+          $('#new-content-tag').show();
           $('#new-content-btn').removeClass("disabled")
           $('#new-content').hide();
         });
 
         saveContent = function(){
-          if($('#preview').html()!=""){
-            //save to cache
-            /*
-            var tag = $('#new-content-tag').val();
-            tag = tag.replace('Astolfo: ', '');
-            tag = tag.replace('Wikipedia: ', '');
-            */
-            var tag = $('#new-content-title').val();
+          //console.log(editor.getData());
+
+          if($('#new-content-mode').val() == "create"){
+
+            var tag = $('#new-content-tag-c').val();
             $.ajax({
-              //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id);
-              //url: "fetch.php",
+              //url: "/ajax/fetch.php",
               url: "/ajax/fetch",
-              data: "save=1&source="+$('#new-content-source').val()+"&id="+$('#new-content-id').val(),
+              data: {
+                save: 1,
+                html: editor.getData()
+              },
+              type: "POST",
               dataType: "text",
               async: false,
               success: function(url){
@@ -338,13 +333,50 @@
                 }
               }
             });
+
+          }else if($('#new-content-mode').val() == "search"){
+            if($('#preview').html()!=""){
+              editor.setData($('#preview').html());
+              var tag = $('#new-content-title').val();
+              //save to cache
+              $.ajax({
+                url: "/ajax/fetch",
+                //url: "/ajax/fetch.php",
+                data: {
+                  save: 1,
+                  source: $('#new-content-source').val(),
+                  html: editor.getData()
+                },
+                type: "POST",
+                dataType: "text",
+                async: false,
+                success: function(url){
+                  if(url != ""){
+                    var payload = new Object();
+                    payload.action = "addcontent";
+                    var data = new Object();
+                    data.type = $('#new-content-type option:selected').val();
+                    data.tag = tag;
+                    data.source = $('#new-content-source').val();
+                    data.id = $('#new-content-id').val();
+                    data.url = url;
+                    payload.data = data;
+                    $("#new-content-type:selected").removeAttr("selected");
+                    $('#new-content-tag').val("");
+                    $('#new-content-source').val("")
+                    $('#new-content-id').val("");
+                    $('#new-content-btn').removeClass("disabled")
+                    $('#preview').html("");
+                    $('#new-content').hide();
+                    //console.log(payload);
+                    return socket2.send(JSON.stringify(payload));
+                  }
+                }
+              });
+              
+            }
           }
         }
-
-        $('#new-content-save').click(function() {
-          if($(this).hasClass("disabled")) return false;
-          saveContent();
-        });
 
         $(".sendcontent").live('click', function(){
           if($(this).hasClass("disabled")) return false;
@@ -352,6 +384,7 @@
           payload.action = "sendcontent";
           payload.data = $(this).attr('rel');
           $(this).addClass("disabled");
+          $(this).prev().show();
           return socket2.send(JSON.stringify(payload));
         });
 
@@ -359,6 +392,15 @@
           if($(this).hasClass("disabled")) return false;
           var payload = new Object();
           payload.action = "removecontent";
+          payload.data = $(this).attr('rel');
+          $(this).addClass("disabled");
+          return socket2.send(JSON.stringify(payload));
+        });
+
+        $(".bancontent").live('click', function(){
+          if($(this).hasClass("disabled")) return false;
+          var payload = new Object();
+          payload.action = "bancontent";
           payload.data = $(this).attr('rel');
           $(this).addClass("disabled");
           return socket2.send(JSON.stringify(payload));
@@ -424,18 +466,31 @@
           //for(var j=serverinfo.contents.length-1; j>=0; j--){
           for(var j=0; j<serverinfo.contents.length; j++){
             if(serverinfo.contents[j]){
+              var dis2 = ' disabled';
               var dis = ' disabled';
+              var vis = ' inline-block';
               //console.log(serverinfo.contents[j])
-              if(!serverinfo.contents[j].sent)
+              if(!serverinfo.contents[j].sent){
                 dis = '';
-              var html = '<a class="btn btn-mini btn-danger pull-right removecontent" style="margin-left: 5px;" rel="'+j+'"><i class="icon-remove icon-white"></i> Delete</a>';
+                vis = ' none';
+              }
+              if(!serverinfo.contents[j].banned)
+                dis2 = '';
+              var html = '<tr><td>'+serverinfo.contents[j].id+'</td>';
+              html += '<td>'+serverinfo.contents[j].source+'</td>';
+              html += '<td>'+serverinfo.contents[j].type+'</td>';
+              html += '<td>'+serverinfo.contents[j].tag+'</td>';
+              html += '<td><a class="btn btn-mini btn-danger removecontent" style="margin-right: 5px;" rel="'+j+'"><i class="icon-remove icon-white"></i> Delete</a>';
               //html += '<a class="btn btn-mini btn-warning pull-right editcontent" style="margin-left: 5px;" rel="'+j+'"><i class="icon-edit icon-white"></i> Edit</a>';
-              html += '<a class="btn btn-mini btn-success pull-right sendcontent'+dis+'" rel="'+j+'"><i class="icon-play icon-white"></i> Send</a>';
-              html += '<ul><li>'+serverinfo.contents[j].tag+'</li>';
-              html += '<li>type: '+serverinfo.contents[j].type+'</li>';
-              html += '<li>source: '+serverinfo.contents[j].source+'</li>';
-              html += '<li>id: '+serverinfo.contents[j].id+'</li>';
-              html += '</ul><hr />';
+              html += '<a class="btn btn-mini btn-danger bancontent'+dis2+'" style="margin-right: 5px; display: '+vis+';" rel="'+j+'"><i class="icon-ban-circle icon-white"></i> Ban</a>';
+              html += '<a class="btn btn-mini btn-success sendcontent'+dis+'" rel="'+j+'"><i class="icon-play icon-white"></i> Send</a></td></tr>';
+
+              //html += '<ul><li>'+serverinfo.contents[j].tag+'</li>';
+              //html += '<li>type: '+serverinfo.contents[j].type+'</li>';
+              //html += '<li>source: '+serverinfo.contents[j].source+'</li>';
+              //html += '<li>id: '+serverinfo.contents[j].id+'</li>';
+              //html += '</ul><hr />';
+
               $('#content-list').append(html);
             }
           }
@@ -452,89 +507,84 @@
       
       $(document).ready(function() {
 
+        $('#form-tab a').click(function(e) {
+          e.preventDefault();
+          $('#preview').html('');
+          $('#new-content-html-c').val("");
+          $(this).tab('show');
+          if($(this).attr('href') == "#search"){
+            $('#new-content-mode').val("search");
+            $('#new-content-tag').val("");
+            $('#preview').html("");
+            $('#new-content-save').show();
+            $('#new-content-save').addClass('disabled');
+            $('#new-content-edit').hide();
+            $('#preview-w').hide();
+            $('#cke_new-content-html-c').hide();
+            $('#new-content-tag-c').hide();
+            $('#new-content-preview').hide();
+            $('#new-content-save').show();
+            $('#new-content-tag').focus();
+          }else{
+            $('#new-content-mode').val("create");
+            $('#new-content-tag-c').val("");
+            editor.setData("");
+            $('#preview').html("");
+            $('#cke_new-content-html-c').show();
+            $('#new-content-tag-c').show();
+            $('#preview-w').hide();
+            $('#new-content-preview').show();
+            $('#new-content-save').hide();
+            $('#new-content-tag-c').focus();
+          }
+        });
+
+        $('#new-content-tag-c').bind('keypress', function(e) {
+          if($('#new-content-tag-c').val() != "")
+            $('#new-content-preview').removeClass('disabled');
+          else
+            $('#new-content-preview').addClass('disabled');
+        });
+
         $('#new-content-tag').autocomplete({
-          //serviceUrl: '/ss/server/search.php',
           serviceUrl: '/ajax/search',
+          //serviceUrl: '/ajax/fetch.php',
           onSelect: function (suggestion) {
+            self.location.hash = "#preview-a";
+            $('#new-content-save').show();
+            $('#new-content-preview').hide();
             var tag = $('#new-content-tag').val();
             tag = tag.replace('Astolfo: ', '');
             tag = tag.replace('Wikipedia: ', '');
             $('#new-content-tag').val(tag);
+            $('#new-content-tag').hide();
             $('#new-content-title').val(tag);
 
             $('#new-content-save').addClass('disabled');
             $('#fetching').show();
-            //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+
             $('#new-content-source').val(suggestion.data.source);
             $('#new-content-id').val(suggestion.data.id);
             if(suggestion.data.source == "Astolfo"){
-              //$('#preview').load("/ajax/preview?id="+suggestion.data.id, function(){
+              //$('#preview').load("/ajax/fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
                 $('#fetching').hide();
                 $('#title').show();
+                $('#preview-w').show();
               });
             }else{
-              //$('#preview').load("fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
+              //$('#preview').load("/ajax/fetch.php?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
               $('#preview').load("/ajax/fetch?source="+suggestion.data.source+"&id="+suggestion.data.id, function(){
                 $('#new-content-save').removeClass('disabled');
                 $('#fetching').hide();
                 $('#title').show();
+                $('#preview-w').show();
               });
             }
-            /*
-            $.ajax({
-              url: "fetch.php",
-              data: "source="+suggestion.data.source+"&id="+suggestion.data.id,
-              dataType: "json",
-              async: false,
-              success: function(data){
-                $('#preview').html(data.html);
-              }
-            });
-            */
           }
         });
-        /*
-        $('.typeahead').typeahead({
-          source: function (typeahead, query) {
-            //console.log(query.length);
-            var return_list = [];
-            //if(query.length > 7){
-              $.ajax({
-                url: "search.php",
-                data: "query="+typeahead.query,
-                dataType: "json",
-                async: false,
-                success: function(data){
-                  $.each(data, function(i, data){
-                    return_list.push(data);
-                  });
-                }
-              });
-            //}
-            // here I'm just returning a list of strings
-            return return_list
-          },
-          // typeahead calls this function when a object is selected, and
-          // passes an object or string depending on what you processed, in this case a string
-          onselect: function (obj) {
-            //console.log(obj)
-            $('#new-content-source').val(obj.source);
-            $('#new-content-id').val(obj.id);
-            $.ajax({
-              url: "fetch.php",
-              data: "source="+obj.source+"&id="+obj.id,
-              dataType: "json",
-              async: false,
-              success: function(data){
-                $('#preview').html(data.html);
-              }
-            });
-          }
-        });
-        */
-       
+        
         $('#start').click(function() {
           if($(this).hasClass("disabled")) return false;
           self.location.href='admin.php?start';
@@ -564,6 +614,62 @@
           return "NÃO FECHE ESTA JANELA!!!!!!!";
         }
       }
+      </script>
+
+      <!-- CKEDITOR -->
+      <script src="ckeditor/ckeditor.js"></script>
+      <script type="text/javascript">
+      var editor = CKEDITOR.replace( 'new-content-html-c', {
+        toolbar: [
+          { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source' ] },
+          { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
+          { name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Scayt' ] },
+          '/',
+          { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+          { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+          { name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
+          { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] },
+          '/',
+          { name: 'styles', items: [ 'Styles', 'Format' ] },
+          { name: 'tools', items: [ 'Maximize' ] }
+        ]
+      });
+
+      $('#new-content-preview').click(function() {
+        if($(this).hasClass("disabled")) return false;
+        if(editor.getData()!=""){
+          $('#preview').html( editor.getData() );
+          $('#preview-w').show();
+          $('#new-content-tag-c').hide();
+          $('#new-content-preview').hide();
+          $('#new-content-edit').show();
+          $('#new-content-save').removeClass('disabled').show();
+          $('#cke_new-content-html-c').hide();
+        }
+      });
+
+      $('#new-content-edit').click(function() {
+        $('#preview').html("");
+        $('#preview-w').hide();
+        $('#new-content-tag-c').show();
+        $('#new-content-preview').show();
+        $('#new-content-edit').hide();
+        $('#new-content-save').addClass('disabled').hide();
+        $('#cke_new-content-html-c').show();
+      });
+
+      $('#new-content-save').click(function() {
+        if($(this).hasClass("disabled")) return false;
+        $('#preview-w').hide();
+        $('#new-content-tag-c').show();
+        $('#new-content-tag').show();
+        $('#new-content-preview').show();
+        $('#new-content-edit').hide();
+        $('#new-content-save').addClass('disabled').hide();
+        $('#cke_new-content-html-c').show();
+        saveContent();
+      });
+
       </script>
 
       <hr />
