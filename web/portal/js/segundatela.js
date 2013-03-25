@@ -160,28 +160,28 @@ function onYouTubeIframeAPIReady() {
   }
 }
 
-// colocando e tirando ativo
-$('.accordion-body').on('hidden', function() {
-  console.log("fechado");
-  //remove barra ativa
-  $(this).prev().find('a').removeClass('ativo');
-});
-
-$('.accordion-body').on('show', function() {
-  console.log("aberto");
-  //player stop
-  if(playing)
-    playing.pauseVideo();
-  //remove barra ativa
-  $(this).prev().find('a').addClass('ativo');
-  //scroll
-  var el = $(this).parent();
-  $('html, body').animate({
-    scrollTop: el.offset().top
-  }, "fast");
-});
-  
 $(document).ready(function() {
+  // colocando e tirando ativo
+  $('.accordion-body').on('hidden', function() {
+    console.log("fechado");
+    //remove barra ativa
+    $(this).prev().find('a').removeClass('ativo');
+  });
+  
+  $('.accordion-body').on('show', function() {
+    console.log("aberto");
+    //player stop
+    if(playing)
+      playing.pauseVideo();
+    //remove barra ativa
+    $(this).prev().find('a').addClass('ativo');
+    //scroll
+    var el = $(this).parent();
+    $('html, body').animate({
+      scrollTop: el.offset().top
+    }, "fast");
+  });
+  
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
