@@ -175,8 +175,8 @@
                     <span class="linhaFundo"></span>
 
                     <p class="enun">Local de Prova</p>
-                    <div class="linha t7">
-                      <label style="clear:both">Cidade</label>
+                    <div class="linha t2">
+                      <label>Cidade</label>
                       <select name="localdeprova" id="localdeprova" style="width:170px">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
