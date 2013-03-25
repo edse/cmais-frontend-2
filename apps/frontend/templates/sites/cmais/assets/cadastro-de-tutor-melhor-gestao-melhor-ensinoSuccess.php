@@ -34,7 +34,7 @@
                   
                   
                   <!-- mensagens de status -->
-                  <div class="msgAcerto" style="display:none; min-height: 80px" id="statusMsg_0">
+                  <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Obrigado! Seu cadastro foi efetuado com sucesso.</p>
@@ -44,7 +44,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_1">
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_1">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
@@ -52,7 +52,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_2">
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_2">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
@@ -60,7 +60,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_3">
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_3">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Cadastro existente.</p>
@@ -68,7 +68,7 @@
                     </div>
                     <hr />
                   </div>
-                  <div class="msgErro" style="display:none; min-height: 80px" id="statusMsg_4">
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_4">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Erro interno.</p>
