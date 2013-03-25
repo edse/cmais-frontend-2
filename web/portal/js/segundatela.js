@@ -192,9 +192,10 @@ $(document).ready(function() {
 
 });
 
-
+/*
 window.onload=function(){
   window.onbeforeunload = function(){        
     return "Atenção: Ao fechar essa janela você perderá as interações automaticas do programa.";        
   }
 }
+*/
