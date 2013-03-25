@@ -30,6 +30,7 @@ if($_REQUEST["captcha"]) {
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
         $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt";
+        $txtContent = $_REQUEST["cpf"] . "\n";
         $txtFp = fopen($txtFile, 'a+');
         fwrite($txtFp, $txtContent);
         die("0");
