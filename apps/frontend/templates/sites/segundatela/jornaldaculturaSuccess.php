@@ -34,7 +34,9 @@
     </div>
     <div class="col-dir">
       <div class="menu-jc">
-        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><span class="barra">|</span><p class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</p><p class="offline">Desconectado</p>
+        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
+        <br/>
+        <p class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</p><p class="offline">Desconectado</p>
       </div>
     </div>
   </div>
