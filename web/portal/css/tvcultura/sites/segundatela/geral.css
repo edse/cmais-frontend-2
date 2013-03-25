@@ -27,7 +27,7 @@
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
 .accordion-heading .accordion-toggle{position:relative; z-index:50000;}
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
-.accordion-body img { max-width: 360px; float:left;  margin-right:10px;}
+.accordion-body img { /*max-width: 360px;*/ float:left;  margin-right:10px;}
 .accordion-body a { color:#000; text-decoration:underline; }
 
 .nav-tabs > li { margin-bottom:0; }
