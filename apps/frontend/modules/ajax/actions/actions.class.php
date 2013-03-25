@@ -1750,11 +1750,19 @@ EOT;
               $content = $this->getPartial('enquete', array('asset' => $asset));
 
             if($save){
+              
+              if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
+                mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
+              }
+              $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
+              $file = fopen($cache_folder."/".$url, "w");
+              /*
               if(!is_dir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id))){
                 mkdir("/var/frontend/web/cache/cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id));
               }
               $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
               $file = fopen("/var/frontend/web/cache/".$url, "w");
+              */
               fwrite($file, $content);
               $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
               fwrite($file, $footer);
@@ -1887,19 +1895,18 @@ EOT;
     }
     elseif($html){
       $id = time();
+      if(!$source)  $source = "mannual";
       if($source == "mannual" || $source == "astolfo")
         $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
       else
         $footer = '<br /><a href="http://pt.wikipedia.org" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
       if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
-        //die($contents_folder."/".strtolower($source)."-".strtolower($id));
         mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
       }
       $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
-      //die(str_replace(" ", "\ ", $folder."/".$url));
       $file = fopen($cache_folder."/".$url, "w");
       //$file = fopen($folder."/".$url, "w+");
-      fwrite($file, $_REQUEST["html"]);
+      fwrite($file, $html);
       fwrite($file, $footer);
       fclose($file);
       die("http://".$url);
