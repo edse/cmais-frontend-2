@@ -18,7 +18,7 @@
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
       <p>Cadastre o seu e-mail para ser informado sobre a data de início das inscrições:</p>
-      <input type="text" name="cadastro" id="input" class="required" />
+      <input type="text" name="email" id="email" class="required" />
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
     </form>  
@@ -42,13 +42,22 @@
             if(data == "1"){
               alert("Seu cadastro foi enviado com sucesso!");
                $('img#ajax-loader').hide();
+               $('#form-contato').hide();
             }
             else {
               alert("Sua mensagem não pode ser enviada. Tente novamente.");
                $('img#ajax-loader').hide();
+               $("#input").val(" "),
+               
             }
           }
         });         
+      },
+      rules:{
+        email:{
+          required:true,
+          email: true
+        }
       },
       messages:{
         nome: " Este campo &eacute; Obrigat&oacute;rio.",
