@@ -93,8 +93,9 @@
 /* /ie */
 
 .progress .bar { color:#333; }
+.accordion-body p img,
 .accordion-body p iframe { width:100% !important; }
 
 @media (max-width : 480px)  {
-  .accordion p iframe { width:436px; height:265px; }
+  /*.accordion p iframe { width:436px; height:265px; }*/
 }
