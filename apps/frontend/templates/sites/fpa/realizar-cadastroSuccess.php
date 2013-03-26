@@ -23,10 +23,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form1" method="post" action="">
-            <div class="span6" style="margin:0;">
-              <label>Cadastre seu CPF</label>
-              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="">
-              <span class="help-block">(Somente números)</span>
+            <div class="control-group span6" style="margin:0;">
+              <label class="control-label" for="fpa_cpf">Cadastre seu CPF</label>
+              <div class="controls">
+                <input type="text" id="fpa_cpf" name="fpa_cpf" placeholder="99.999.999-99"  value="">
+                <p class="help-block">(Somente números)</p>
+              </div>
             </div>
             <div class="span6">
               <label>Data de nascimento</label>
@@ -688,7 +690,7 @@ $('#form1').validate({
         minlength: 11
       },
       fpa_data: {
-        required: true ,
+        required: true,
         minlength: 8      
       }
     },
