@@ -36,7 +36,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <span class="help-block">(DD/MM/AAAA)</span>
             </div>
             <div class="row-fluid">
-              <a type="type" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
+              <a type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
               <a type="reset" class="btn btn-default pull-right cancel">CANCELAR</a>
             </div>  
         </form>
