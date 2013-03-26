@@ -704,7 +704,14 @@ $('#form1').validate({
     },
     submitHandler: function(form){
       $.ajax({
-          alert("ok")
+          type: "GET",
+          url: //"/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
+          error: function(){
+              alert("Erro na validação do usuário!");
+          }, 
+          success: function() {
+            alert(data + cpf);
+          }
       });
     }
   });
