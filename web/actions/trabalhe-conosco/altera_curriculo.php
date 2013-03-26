@@ -19,6 +19,16 @@
            
   if(!empty($_GET['qg_curric']) && !empty($_GET['data']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'])){
     $qg_curric   =  $_GET['qg_curric'];
+    
+    if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabat'])){
+      $trabalhou_fpa_de = $_GET['qg_trabde'];
+      $trabalhou_fpa_ate =$_GET['qg_trabat'];
+    }else{
+      //DEFAULT
+      $trabalhou_fpa_de   = '01/01/1900';
+      $trabalhou_fpa_ate  = '01/01/1900';
+    }
+    
     $arguments = array('altera_curriculo' 
                     => array('cod_curriculo' => $qg_curric,
                             'deficiente' => $_GET['qg_defic'],  
@@ -49,8 +59,8 @@
                             'pis' => $_GET['qg_pis'], 
                             'habilitacao' => $_GET['qg_habilit'], 
                             'habilitacao_categoria' => $_GET['qg_cathab'],
-                            'reservista' => $_GET['qg_tituloe'], 
-                            'titulo_eleitor' => $_GET['qg_reserv'], 
+                            'reservista' => $_GET['qg_reserv'], 
+                            'titulo_eleitor' => $_GET['qg_tituloe'], 
                             'titulo_zona' => $_GET['qg_zonasec'],
                              
                             'area' => $_GET['qg_are'], 
@@ -60,8 +70,10 @@
                             'experiencia' => $_GET['qg_memo2'], 
                             'parentes' => $_GET['qg_tempar'],
                             'trabalhou_fpa' => $_GET['qg_trabal'], 
-                            'trabalhou_fpa_de' => "01/01/1900",
-                            'trabalhou_fpa_ate' => "01/01/1900",
+                            
+                            
+                            'trabalhou_fpa_de' => $trabalhou_fpa_de,
+                            'trabalhou_fpa_ate' => $trabalhou_fpa_ate,
 
                             'motivo_saida' => $_GET['qg_motsai'], 
                             'grupo' => $_GET['qg_grupo'])

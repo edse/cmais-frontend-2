@@ -1,5 +1,9 @@
     <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+    
+    <style type="text/css">
+      .contatoWrapper #form-contato .t10 input { margin-top:-3px; }
+    </style>
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -82,7 +86,7 @@
                   <!-- formulario -->
                   <form id="form-contato" method="post" action="">
                     
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                      
                     <p class="enun">Disciplina</p>
                     <div class="linha t2">
@@ -111,7 +115,7 @@
                     </div>
                     -->
                     
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                     
                     <p class="enun">Dados de identificação</p>
                     <div class="linha t1 exc">
@@ -139,7 +143,7 @@
                       <input type="text" name="celular" id="celular" style="width:150px" />
                     </div>
 
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                     
                     <p class="enun">Formação Acadêmica</p>
                     <div class="linha t2">
@@ -168,33 +172,33 @@
                     </div>
                     -->
 
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                     
                     <p class="enun">Outras informações</p>
 
                     <p class="pergunta">Participou como professor tutor em algum curso a distância?</p>
                     <div class="linha t10">
-                      <input type="radio" name="participou" id="sim1" value="sim" />
-                      <label>Sim</label>
+                      
+                      <label><input type="radio" name="participou" id="sim1" value="sim" />Sim</label>
                     </div>
                     <div class="linha t10">
-                      <input type="radio" name="participou" id="nao1" value="nao" />
-                      <label>Não</label>
+                      
+                      <label><input type="radio" name="participou" id="nao1" value="nao" />Não</label>
                     </div>
                     
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                     
                     <p class="pergunta">Teve vinculo empregatício com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
                     <div class="linha t10">
-                      <input type="radio" name="fpavinculo" id="sim2" value="sim" />
-                      <label>Sim</label>
+                      
+                      <label><input type="radio" name="fpavinculo" id="sim2" value="sim" />Sim</label>
                     </div>
                     <div class="linha t10">
-                      <input type="radio" name="fpavinculo" id="nao2" value="nao" />
-                      <label>Não</label>
+                      
+                      <label><input type="radio" name="fpavinculo" id="nao2" value="nao" />Não</label>
                     </div>
 
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
 
                     <p class="enun">Local de Prova</p>
                     <div class="linha t2">
@@ -214,7 +218,7 @@
                       </select>
                     </div>
                     
-                    <span class="linhaFundo"></span>
+                    <!--span class="linhaFundo"></span-->
                     
                     <div class="linha t3 codigo" id="captchaimage">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>

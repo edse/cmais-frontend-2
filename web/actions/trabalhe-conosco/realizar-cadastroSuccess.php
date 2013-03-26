@@ -1,7 +1,8 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
- 
+
 <script src="http://172.20.18.133/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
- 
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.js" ></script>
+
 <style>
 body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
 </style>
@@ -12,8 +13,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span6">
       <!--texto-->
-      <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
-      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
+      <h1>Cadastre seu currículo</h1>
+      <p>Prezado usuário, este cadastro é o único
+      caminho para que seu currículo chegue à área de Seleção de Pessoal da Fundação Padre Anchieta.</p>
+      <p>É importante saber que cada página de formulário deverá ser preenchida em 20 minutos no máximo,
+      tempo padrão de cada sessão.</p>
       <div class="tipo-de-emprego">
         INSCRIÇÃO
       </div>
@@ -25,7 +29,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <a class="accordion-toggle vaga-aberta" href="#">
             Assistente de Arte I <span class="badge vaga">1 vaga</span>
           </a>
-        </div> 
+        </div>
       </div>
       <!--/emprego aberto-->
       <!--FORMULARIO-->
@@ -37,12 +41,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <form id="form1" method="post" action="">
             <div class="span6" style="margin:0;">
               <label>Cadastre seu CPF</label>
-              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="">
+              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="34078146821">
               <span class="help-block">(Somente números)</span>
             </div>
             <div class="span6">
               <label>Data de nascimento</label>
-              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="">
+              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="04/02/1987">
               <span class="help-block">(DD/MM/AAAA)</span>
             </div>
             <div class="row-fluid">
