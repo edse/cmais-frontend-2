@@ -1920,7 +1920,11 @@ EOT;
       $this->setLayout(false);
       header("content-type: application/json");
       $res = array();
-      $res["html"] = file_get_contents($request->getParameter('url'));
+      if($request->getParameter('url')=="http://200.136.27.32:8080/log/contents.json"){
+        $res = json_decode(file_get_contents($request->getParameter('url')));
+      }else{
+        $res["html"] = file_get_contents($request->getParameter('url'));
+      }
       die($request->getParameter('callback')."(".json_encode($res).")");
     }
   }
