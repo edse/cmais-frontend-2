@@ -6,6 +6,8 @@
 
     var log, serverUrl, socket;
 
+    var interval = 0;
+    var fakeInterval = 0;
     var timeout = 0;
     var tryin   = 3;
     var mult    = 0;
@@ -20,11 +22,12 @@
           $('#tryin-v').html(tryin);
         }else{
           clearInterval(interval);
-          if(mult<100){
+          if(mult<3){
             mult++;
             $('#tryin-v').html("0");
             tryToConnect();
           }else{
+            fakeService();
             $('#tryin-p').hide();
           }
         }
@@ -109,6 +112,9 @@
     };
 
     contentInfo = function(data) {
+      
+      console.log("<<<<<");
+      
       var c = 'icon-align-left';
       if(data.type == 'people')
         c = 'icon-user';
@@ -121,9 +127,87 @@
       html += "";
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
-      $('#id'+data.handler).load(data.url);
+      console.log(data.url);
+      //$('#id'+data.handler).load(data.url);
+
+      $.ajax({
+        url:"http://cmais.com.br/ajax/fetchurl",
+        data: {url: data.url},
+        dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+        success:function(json){
+          // do stuff with json (in this case an array)
+          //alert(json);
+          $('#id'+data.handler).html(json.html);
+        },
+        error:function(){
+          alert("Error");
+        },
+      });
+
+      /*
+      $.ajax({
+        url: "http://cmais.com.br/frontend_dev.php/ajax/fetchurl",
+        data: {url: data.url},
+        dataType: "jsonp",
+        jsonp : "callback",
+        jsonpCallback: "jsonpcallback"
+      });
+      
+      function jsonpcallback(rtndata) {
+        console.log(">>>>");
+        console.log(rtndata);
+        $('#id'+data.handler).html(rtndata.html);
+      }
+      */ 
+      
       return;
     };
+    
+    // retrive sent contents by ajax
+    $.ajax({
+      url:"http://cmais.com.br/ajax/fetchurl",
+      data: {url: "http://200.136.27.32:8080/log/contents.json"},
+      dataType: 'jsonp',
+      success:function(json){
+        //console.log(json);
+        $.each(json, function( key, value ) {
+          //console.log(value)
+          contentInfo(value);
+        });
+      }
+    });
+    
+    
+    window.fakeService = function(){
+      clearInterval(interval);
+      $('.offline').hide();
+      $('.online').show();
+      fakeInterval = setInterval(function(){
+        // 30 em 30
+        $.ajax({
+          url:"http://cmais.com.br/ajax/fetchurl",
+          data: {url: "http://200.136.27.32:8080/log/last-content.json"},
+          dataType: 'jsonp',
+          success:function(json){
+            //console.log(json);
+            console.log('1:');
+            console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
+            console.log('2:');
+            console.log(json.handler);
+            add = false;
+            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
+              add = true;
+            }
+            if(add)
+              contentInfo(json);
+          }
+        });
+        
+      }, 30000);
+    }
+
+    
+    
 
   });
 }).call(this);
@@ -175,7 +259,7 @@ $(document).ready(function() {
       playing.pauseVideo();
   });
 
-  $('.accordion-body').live('show', function() { 
+  $('.accordion-body').live('shown', function() { 
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
