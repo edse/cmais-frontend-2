@@ -22,7 +22,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
-          <form id="form1" method="post">
+          <form id="form1" class="realizar-marcador" method="post">
             <div class="control-group span6" style="margin:0;">
               <label class="control-label" for="fpa_cpf">Cadastre seu CPF</label>
               <div class="controls">
