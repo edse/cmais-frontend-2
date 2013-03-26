@@ -679,9 +679,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 <script>
 function blankInput(el){
   if($(el).val() == ""){
-    $(this).removeClass('valid');
-    $(this).next().remove();
-    $(this).parent().parent().removeClass('error').removeClass('success');
+    $(el).removeClass('valid');
+    $(el).next().remove();
+    $(el).parent().parent().removeClass('error').removeClass('success');
   }
 }
 
