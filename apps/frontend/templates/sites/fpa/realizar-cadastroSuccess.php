@@ -14,13 +14,14 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--texto-->
       <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
-      <div class="tipo-de-emprego">
-        INSCRIÇÃO
-      </div> 
+      <!--/texto-->
       <!--FORMULARIO-->
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
         <div class="row-fluid" id="row1">
+          <div class="linha-cadastro">
+            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
+          </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form1" method="post" action="">
