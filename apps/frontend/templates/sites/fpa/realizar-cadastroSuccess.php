@@ -678,7 +678,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script>
 function blankInput(el){
-  if(el.val() == ""){
+  if($(el).val() == ""){
     $(this).removeClass('valid');
     $(this).next().remove();
     $(this).parent().parent().removeClass('error').removeClass('success');
