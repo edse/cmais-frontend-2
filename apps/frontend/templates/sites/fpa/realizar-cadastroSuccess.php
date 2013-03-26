@@ -12,11 +12,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span6">
       <!--texto-->
-      <h1>Cadastre seu currículo</h1>
-      <p>Prezado usuário, este cadastro é o único
-      caminho para que seu currículo chegue à área de Seleção de Pessoal da Fundação Padre Anchieta.</p>
-      <p>É importante saber que cada página de formulário deverá ser preenchida em 20 minutos no máximo,
-      tempo padrão de cada sessão.</p>
+      <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
+      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <div class="tipo-de-emprego">
         INSCRIÇÃO
       </div>
