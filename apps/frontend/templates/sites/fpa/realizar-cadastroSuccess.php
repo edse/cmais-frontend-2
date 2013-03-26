@@ -16,7 +16,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <div class="tipo-de-emprego">
         INSCRIÇÃO
-      </div>
+      </div> 
       <!--FORMULARIO-->
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
