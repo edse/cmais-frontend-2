@@ -678,7 +678,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script>
 function blankInput(el){
-  if(el == ""){
+  if(el.val() == ""){
     $(this).removeClass('valid');
     $(this).next().remove();
     $(this).parent().parent().removeClass('error').removeClass('success');
@@ -691,8 +691,8 @@ $("#fpa_data").mask("99/99/9999");
 $("#passo-valida-usuario").click(function(){
   var cpf = $("#fpa_cpf").val();
   var data = $("#fpa_data").val();
-  blankInput(cpf);
-  blankInput(data);
+  blankInput('#fpa_cpf');
+  blankInput('#fpa_data');
 });
 
 $('#form1').validate({
