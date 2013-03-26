@@ -12,7 +12,7 @@
     var tryin   = 3;
     var mult    = 0;
     
-    serverUrl = 'ws://200.136.27.32:81/secondscreen';
+    serverUrl = 'ws://200.136.27.32:80/secondscreen';
     
     startClock = function(){
       tryin = (tryin+mult)*3;
