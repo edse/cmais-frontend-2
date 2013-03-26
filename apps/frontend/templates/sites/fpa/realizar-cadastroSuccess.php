@@ -30,14 +30,16 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <p class="help-block">(Somente números)</p>
               </div>
             </div>
-            <div class="span6">
-              <label>Data de nascimento</label>
-              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="">
-              <span class="help-block">(DD/MM/AAAA)</span>
+            <div class="control-group span6">
+              <label class="control-label" for="fpa_data">Data de nascimento</label>
+              <div class="controls">
+                <input type="text" id="fpa_data" name="fpa_data" placeholder="99/99/9999"  value="">
+                <p class="help-block">dd/mm/aaaa</p>
+              </div>
             </div>
             <div class="row-fluid">
-              <input type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
-              <a class="btn btn-default pull-right cancel">VOLTAR</a>
+              <input type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario" value="CONTINUAR">
+              <a href="/fpa/trabalhe-conosco" class="btn btn-default pull-right cancel">VOLTAR</a>
             </div>  
         </form>
         </div>
