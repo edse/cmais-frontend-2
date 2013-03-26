@@ -693,8 +693,8 @@ $('#form1').validate({
       }
     },
     messages:{
-      fpa_cpf:"teste1";
-      fpa_data:"teste2";
+      fpa_cpf:"teste1",
+      fpa_data:"teste2"
     },
     highlight: function(label) {
       $(label).closest('.control-group').addClass('error');
