@@ -78,7 +78,7 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
 
   </body>
 </html>
