@@ -673,7 +673,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 <script src="/portal/js/validate/jquery.validate.min.js"></script>
 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script>
-$("#fpa_cpf").mask("999.999.999-28");
+$("#fpa_cpf").mask("999.999.999-99");
 $("#fpa_data").mask("99/99/9999");
 
 $("#passo-valida-usuario").click(function(){
