@@ -1,9 +1,3 @@
-    <script>
-      var test = teste = getParameterByName('test'); 
-      if (test != "1") {
-        window.location.href="http://cmais.com.br";
-      }
-    </script>  
     <!--link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
     
