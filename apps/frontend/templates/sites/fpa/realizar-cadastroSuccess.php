@@ -22,7 +22,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
-          <form id="form1" method="post" action="">
+          <form id="form1" method="post">
             <div class="control-group span6" style="margin:0;">
               <label class="control-label" for="fpa_cpf">Cadastre seu CPF</label>
               <div class="controls">
@@ -36,8 +36,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <span class="help-block">(DD/MM/AAAA)</span>
             </div>
             <div class="row-fluid">
-              <a type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
-              <a type="reset" class="btn btn-default pull-right cancel">CANCELAR</a>
+              <input type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
+              <a class="btn btn-default pull-right cancel">VOLTAR</a>
             </div>  
         </form>
         </div>
