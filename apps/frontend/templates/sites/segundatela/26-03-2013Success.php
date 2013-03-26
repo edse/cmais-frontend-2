@@ -37,6 +37,7 @@
         <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
         <br/>
         <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
       </div>
     </div>
   </div>
