@@ -1,8 +1,7 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
  
 <script src="http://172.20.18.133/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.js" ></script>
-
+ 
 <style>
 body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
 </style>
@@ -13,29 +12,16 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span6">
       <!--texto-->
-      <h1>Cadastre seu currículo</h1>
-      <p>Prezado usuário, este cadastro é o único
-      caminho para que seu currículo chegue à área de Seleção de Pessoal da Fundação Padre Anchieta.</p>
-      <p>É importante saber que cada página de formulário deverá ser preenchida em 20 minutos no máximo,
-      tempo padrão de cada sessão.</p>
-      <div class="tipo-de-emprego">
-        INSCRIÇÃO
-      </div>
-      <hr class="tipo inscricao"/>
-      <span>Você está se candidatando para a vaga:</span>
-      <!--emprego aberto-->
-      <div class="accordion-group">
-        <div class="accordion-heading">
-          <a class="accordion-toggle vaga-aberta" href="#">
-            Assistente de Arte I <span class="badge vaga">1 vaga</span>
-          </a>
-        </div> 
-      </div>
-      <!--/emprego aberto-->
+      <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
+      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
+      <!--/texto-->
       <!--FORMULARIO-->
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
         <div class="row-fluid" id="row1">
+          <div class="linha-cadastro">
+            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
+          </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form1" method="post" action="">
