@@ -44,7 +44,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--/row1 - dados de entrada-->
         
         <!--row2 - informacoes pessoais-->
-        <div class="row-fluid" id="row2">
+        <div class="row-fluid" id="row2" style="display:none;">
           <div class="linha-cadastro">
             <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
           </div>
@@ -470,7 +470,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         
         
         <!--row3 - empregos de carteira-->
-        <div class="row-fluid" id="row3">
+        <div class="row-fluid" id="row3" style="display:none;">
           <!--historico profissional-->
           <div class="span12 tit-cadastro">
             <h2>Histórico Profissional</h2>
@@ -557,7 +557,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--/row3 - empregos de carteira-->
           
           <!--formacao escolar-->
-         <div class="row-fluid" id="row4">
+         <div class="row-fluid" id="row4" style="display:none;">
           <form id="form4" method="post" action="">
             <input type="hidden" value="" name="ql_codigo_curso" id="ql_codigo_curso">
             <div class="span12 tit-cadastro">
@@ -639,7 +639,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--/row4 - empregos de carteira-->
         
         
-         <div class="row-fluid" id="row5">
+         <div class="row-fluid" id="row5" style="display:none;">
            <h1> Dados cadastrados com sucesso!</h1> 
           <p> Você poderá editá-lo ou atualizá-lo retornando à página
           TRABALHE CONOSCO com seu número de CPF e data de nascimento. </p>
