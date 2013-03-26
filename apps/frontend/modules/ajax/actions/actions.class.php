@@ -1915,6 +1915,15 @@ EOT;
 
   }
 
+  public function executeFetchurl(sfWebRequest $request){
+    if(($request->getParameter('url')!="")&&($request->getParameter('callback'))){
+      $this->setLayout(false);
+      header("content-type: application/json");
+      $res = array();
+      $res["html"] = file_get_contents($request->getParameter('url'));
+      die($request->getParameter('callback')."(".json_encode($res).")");
+    }
+  }
+
 
 }
-
