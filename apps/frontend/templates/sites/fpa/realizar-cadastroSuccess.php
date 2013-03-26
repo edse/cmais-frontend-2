@@ -705,7 +705,7 @@ $('#form1').validate({
     submitHandler: function(form){
       $.ajax({
           type: "GET",
-          url: //"/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
+          //url: "/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
           error: function(){
               alert("Erro na validação do usuário!");
           }, 
