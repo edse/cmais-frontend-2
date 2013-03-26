@@ -683,12 +683,17 @@ function blankInput(el){
     $(el).next('label').remove();
     $(el).parent().parent().removeClass('error').removeClass('success');
   }
+  $(el).focus(function(){
+    $(el).removeClass('valid');
+    $(el).next('label').remove();
+    $(el).parent().parent().removeClass('error').removeClass('success');
+  });
 }
 
 $("#fpa_cpf").mask("999.999.999-99");
 $("#fpa_data").mask("99/99/9999");
 
-$("#passo-valida-usuario").click(function(){
+$("#passo-valida-usuario").mousedown(function(){
   var cpf = $("#fpa_cpf").val();
   var data = $("#fpa_data").val();
   blankInput('#fpa_cpf');
