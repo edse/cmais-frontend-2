@@ -9,16 +9,16 @@ $(document).ready(function() {
   
   /************* VALIDA USUÁRIO *************/
   $("#passo-valida-usuario").click(function(){
-    var cpf = $("#fpa_cpf").val();
-    var data = $("#fpa_data").val();
+    //var cpf = $("#fpa_cpf").val(); 
+    //var data = $("#fpa_data").val();
 
     /************* LOADING DO AJAX *************/
-    var loading = $('<img id="loading" alt="Carregando" title="Carregando" src="http://www.rendezvousdufutur.com/img/loading.gif" />').prependTo('#row1').hide()
+    //var loading = $('<img id="loading" alt="Carregando" title="Carregando" src="http://www.rendezvousdufutur.com/img/loading.gif" />').prependTo('#row1').hide()
     //http://storage.ansys.com/staticfiles/ansys/img/interface/loading.gif
-    loading.ajaxStart(function(){  $(this).show();});
-    loading.ajaxStop(function(){$(this).hide();});
+    //loading.ajaxStart(function(){  $(this).show();});
+    //loading.ajaxStop(function(){$(this).hide();});
     /************* LOADING DO AJAX *************/
-
+    /*
     $.ajax({
     type: "GET",
     url: "/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
@@ -40,12 +40,12 @@ $(document).ready(function() {
             //$("#"+$(this).attr('id')).val($(this).find($(xml).attr('id')).text());
             //$("#"+$(index).attr('id')).val($(xml).find($(this).attr('id')).text());
           });
-          */
+          
           $("#qg_curric").val($(this).find('qg_curric').text());
           $("#fpa_cpf_cadastro").val(cpf);
           $("#fpa_data_nascimento").val(data);
           
-       /************* DADOS PESSOAIS *************/
+       /************* DADOS PESSOAIS ************
           //PREENCHIMENTO DE COMBOS
           $("#DropDown_qg_grupo option[value='"+$(this).find('qg_grupo').text()+"']").attr('selected', 'selected');
           $("#DropDown_qg_sexo option[value='"+$(this).find('qg_sexo').text()+"']").attr('selected', 'selected');
@@ -136,7 +136,7 @@ $(document).ready(function() {
        }
      }
     });
-
+    */
    });
 
   $("#cadastra-curriculo").click(function(){

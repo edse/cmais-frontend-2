@@ -1,6 +1,6 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
  
-<script src="http://172.20.18.133/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
+<!--script src="http://172.20.18.133/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script-->
  
 <style>
 body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
@@ -10,7 +10,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
-    <div class="col-esquerda span6">
+    <div class="col-esquerda span7">
       <!--texto-->
       <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
@@ -19,32 +19,37 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
         <div class="row-fluid" id="row1">
-          <div class="linha-cadastro">
-            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
-          </div>
+          
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
-          <form id="form1" method="post" action="">
-            <div class="span6" style="margin:0;">
-              <label>Cadastre seu CPF</label>
-              <input class="span11" name="fpa_cpf" id="fpa_cpf" type="text" maxlength="11" placeholder="99.999.999-99" value="">
-              <span class="help-block">(Somente números)</span>
+          <form id="form1" method="post">
+            <div class="control-group span6" style="margin:0;">
+              <label class="control-label" for="fpa_cpf">Cadastre seu CPF</label>
+              <div class="controls">
+                <input type="text" id="fpa_cpf" name="fpa_cpf" placeholder="99.999.999-99"  value="">
+                <p class="help-block">(Somente números)</p>
+              </div>
             </div>
-            <div class="span6">
-              <label>Data de nascimento</label>
-              <input name="fpa_data" maxlength="10" id="fpa_data" class="" type="text" placeholder="00/00/0000" value="">
-              <span class="help-block">(DD/MM/AAAA)</span>
+            <div class="control-group span6">
+              <label class="control-label" for="fpa_data">Data de nascimento</label>
+              <div class="controls">
+                <input type="text" id="fpa_data" name="fpa_data" placeholder="99/99/9999"  value="">
+                <p class="help-block">dd/mm/aaaa</p>
+              </div>
             </div>
             <div class="row-fluid">
-              <a type="type" class="btn btn-primary pull-right" id="passo-valida-usuario">CONTINUAR INSCRIÇÃO</a>
-              <a type="reset" class="btn btn-default pull-right cancel">CANCELAR</a>
+              <input type="submit" class="btn btn-primary pull-right" id="passo-valida-usuario" value="CONTINUAR">
+              <a href="/fpa/trabalhe-conosco" class="btn btn-default pull-right cancel">VOLTAR</a>
             </div>  
         </form>
         </div>
         <!--/row1 - dados de entrada-->
         
         <!--row2 - informacoes pessoais-->
-        <div class="row-fluid" id="row2">
+        <div class="row-fluid" id="row2" style="display:none;">
+          <div class="linha-cadastro">
+            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
+          </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form2" method="post" action="">
@@ -467,7 +472,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         
         
         <!--row3 - empregos de carteira-->
-        <div class="row-fluid" id="row3">
+        <div class="row-fluid" id="row3" style="display:none;">
           <!--historico profissional-->
           <div class="span12 tit-cadastro">
             <h2>Histórico Profissional</h2>
@@ -554,7 +559,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--/row3 - empregos de carteira-->
           
           <!--formacao escolar-->
-         <div class="row-fluid" id="row4">
+         <div class="row-fluid" id="row4" style="display:none;">
           <form id="form4" method="post" action="">
             <input type="hidden" value="" name="ql_codigo_curso" id="ql_codigo_curso">
             <div class="span12 tit-cadastro">
@@ -636,7 +641,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--/row4 - empregos de carteira-->
         
         
-         <div class="row-fluid" id="row5">
+         <div class="row-fluid" id="row5" style="display:none;">
            <h1> Dados cadastrados com sucesso!</h1> 
           <p> Você poderá editá-lo ou atualizá-lo retornando à página
           TRABALHE CONOSCO com seu número de CPF e data de nascimento. </p>
@@ -668,4 +673,50 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   </div>
   <!--colunas-->
 </div>
-<!--CONTAINER-->  
+<!--CONTAINER-->
+<script src="/portal/js/validate/jquery.validate.min.js"></script>
+<script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
+<script>
+$("#fpa_cpf").mask("999.999.999-99");
+$("#fpa_data").mask("99/99/9999");
+
+$("#passo-valida-usuario").click(function(){
+  var cpf = $("#fpa_cpf").val();
+  var data = $("#fpa_data").val();
+});
+
+$('#form1').validate({
+    rules: {
+      fpa_cpf: {
+        required: true,
+        minlength: 11
+      },
+      fpa_data: {
+        required: true,
+        minlength: 8      
+      }
+    },
+    messages:{
+      fpa_cpf:"teste1",
+      fpa_data:"teste2"
+    },
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+    },
+    success: function(label) {
+      label.addClass('valid').closest('.control-group').addClass('success');
+    },
+    submitHandler: function(form){
+      $.ajax({
+          type: "POST",
+          //url: "/actions/trabalhe-conosco/action.php?cpf="+cpf+"&data="+data+"&service=valida_usuario",
+          error: function(){
+              alert("Erro na validação do usuário!");
+          }, 
+          success: function() {
+            alert(data + cpf);
+          }
+      });
+    }
+  });
+</script>  
