@@ -17,17 +17,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <div class="tipo-de-emprego">
         INSCRIÇÃO
       </div>
-      <hr class="tipo inscricao"/>
-      <span>Você está se candidatando para a vaga:</span>
-      <!--emprego aberto-->
-      <div class="accordion-group">
-        <div class="accordion-heading">
-          <a class="accordion-toggle vaga-aberta" href="#">
-            Assistente de Arte I <span class="badge vaga">1 vaga</span>
-          </a>
-        </div> 
-      </div>
-      <!--/emprego aberto-->
       <!--FORMULARIO-->
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
