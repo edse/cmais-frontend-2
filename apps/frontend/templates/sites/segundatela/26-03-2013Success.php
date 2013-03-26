@@ -61,7 +61,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="http://cmais.com.br/segundatela/jornaldacultura/26-03-2013" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/26-03-2013" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
