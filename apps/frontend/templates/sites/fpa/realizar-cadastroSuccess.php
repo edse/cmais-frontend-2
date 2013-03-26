@@ -693,7 +693,7 @@ function blankInput(el){
 $("#fpa_cpf").mask("999.999.999-99");
 $("#fpa_data").mask("99/99/9999");
 
-$("#passo-valida-usuario").click(function(){
+$("#passo-valida-usuario").mousedown(function(){
   var cpf = $("#fpa_cpf").val();
   var data = $("#fpa_data").val();
   blankInput('#fpa_cpf');
