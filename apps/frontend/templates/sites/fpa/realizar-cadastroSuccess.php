@@ -683,6 +683,11 @@ function blankInput(el){
     $(el).next('label').remove();
     $(el).parent().parent().removeClass('error').removeClass('success');
   }
+  $(el).focus(function(){
+    $(el).removeClass('valid');
+    $(el).next('label').remove();
+    $(el).parent().parent().removeClass('error').removeClass('success');
+  });
 }
 
 $("#fpa_cpf").mask("999.999.999-99");
