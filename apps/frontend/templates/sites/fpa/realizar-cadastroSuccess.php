@@ -680,7 +680,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 function blankInput(el){
   if($(el).val() == ""){
     $(el).removeClass('valid');
-    $(el).next().remove();
+    $(el).next('label').remove();
     $(el).parent().parent().removeClass('error').removeClass('success');
   }
 }
