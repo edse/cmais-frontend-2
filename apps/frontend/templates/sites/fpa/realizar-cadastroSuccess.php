@@ -10,7 +10,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
-    <div class="col-esquerda span6">
+    <div class="col-esquerda span7">
       <!--texto-->
       <h1><?php echo $displays['destaque-principal'][0]->Asset->getTitle(); ?></h1>
       <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
