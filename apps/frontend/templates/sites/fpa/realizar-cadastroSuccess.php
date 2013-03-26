@@ -19,9 +19,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <div class="box-cadastro">
         <!--row1 - dados de entrada-->
         <div class="row-fluid" id="row1">
-          <div class="linha-cadastro">
-            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
-          </div>
+          
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form1" method="post" action="">
@@ -45,6 +43,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         
         <!--row2 - informacoes pessoais-->
         <div class="row-fluid" id="row2">
+          <div class="linha-cadastro">
+            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
+          </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form2" method="post" action="">
@@ -668,4 +669,43 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   </div>
   <!--colunas-->
 </div>
-<!--CONTAINER-->  
+<!--CONTAINER-->
+<script src="/portal/js/validate/jquery.validate.min.js"></script>
+<script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
+<script>
+$("#fpa_cpf").mask("999.999.999-28");
+$("#fpa_data").mask("99/99/9999");
+
+$("#passo-valida-usuario").click(function(){
+  var cpf = $("#fpa_cpf").val();
+  var data = $("#fpa_data").val();
+});
+
+$('#form1').validate({
+    rules: {
+      fpa_cpf: {
+        required: true,
+        minlength: 11
+      },
+      fpa_data: {
+        required: true ,
+        minlength: 8      
+      }
+    },
+    messages:{
+      fpa_cpf:"teste1";
+      fpa_data:"teste2";
+    },
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+    },
+    success: function(label) {
+      label.addClass('valid').closest('.control-group').addClass('success');
+    },
+    submitHandler: function(form){
+      $.ajax({
+          alert("ok")
+      });
+    }
+  });
+</script>  

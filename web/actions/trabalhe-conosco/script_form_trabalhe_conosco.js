@@ -9,8 +9,8 @@ $(document).ready(function() {
   
   /************* VALIDA USUÁRIO *************/
   $("#passo-valida-usuario").click(function(){
-    var cpf = $("#fpa_cpf").val();
-    var data = $("#fpa_data").val();
+    //var cpf = $("#fpa_cpf").val(); 
+    //var data = $("#fpa_data").val();
 
     /************* LOADING DO AJAX *************/
     var loading = $('<img id="loading" alt="Carregando" title="Carregando" src="http://www.rendezvousdufutur.com/img/loading.gif" />').prependTo('#row1').hide()
