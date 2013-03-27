@@ -5,13 +5,13 @@ $rg = str_replace(array('.','-'),"",$_REQUEST["rg"]);
 
 if($_REQUEST["captcha"]) {
   if($cpf){
-    if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-alunos.txt')){
+    if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-alunos.csv')){
       die("2");
     }
-    elseif(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-tutores.txt')){
+    else if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-tutores.txt')){
       die("3");
     }
-    else{
+    else {
       $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino.csv";
       $csvContent = $_REQUEST["disciplina"] . "," .
                     $_REQUEST["nome"] . "," .
