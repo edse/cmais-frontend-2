@@ -247,7 +247,7 @@ function onYouTubeIframeAPIReady2() {
       }
     });
   }
-  
+  return true;
 } 
  
 $(document).ready(function() {
