@@ -243,12 +243,14 @@ function onYouTubeIframeAPIReady() {
     });
   }
 }
- $('.accordion-body').find('iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  }); 
+ 
  
 $(document).ready(function() {
+   $('.accordion-body').find('iframe').each(function(i){
+    $(this).attr("id","player"+i);
+    players[i] = $("#player"+i);
+  });
+  
   $("iframe").each(function(i){
     alert($(this).attr('src'));
   })
