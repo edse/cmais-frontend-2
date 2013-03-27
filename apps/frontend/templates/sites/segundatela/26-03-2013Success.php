@@ -79,9 +79,13 @@
   <script>
   // retrive sent contents by ajax
   $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-2013-03-26.json",
+    url:"http://cmais.com.br/ajax/fetchurl",
+    data: {url: "/portal/js/segundatela/log/jornaldacultura-2013-03-26.json"},
+    dataType: 'jsonp',
     success:function(json){
+      //console.log(json);
       $.each(json, function( key, value ) {
+        //console.log(value)
         contentInfo(value);
       });
     }
