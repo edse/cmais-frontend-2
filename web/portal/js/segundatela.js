@@ -239,8 +239,8 @@ function onYouTubeIframeAPIReady2() {
       console.log($(this).attr('src').indexOf("youtube"))
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
-      //console.log('players_id['+i+']:');
-      //console.log(players_ids[i]);
+      console.log('players_id['+i+']:');
+      console.log(players_ids[i]);
     }
   });
   for(var i=0; i < players_ids.length; i++){
