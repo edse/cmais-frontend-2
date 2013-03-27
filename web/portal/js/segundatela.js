@@ -160,7 +160,7 @@
       }
       */ 
       
-      return onYouTubeIframeAPIReady2();
+      return;
     };
     
     // retrive sent contents by ajax
@@ -173,6 +173,7 @@
         $.each(json, function( key, value ) {
           //console.log(value)
           contentInfo(value);
+          onYouTubeIframeAPIReady2()
         });
       }
     });
