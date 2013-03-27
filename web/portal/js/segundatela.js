@@ -229,13 +229,11 @@ function checkState(res){
     playing=players[i].attr("id");
   }
 }
-function onYouTubeIframeAPIReady() {
-  console.log("started");
-  $('.accordion-body iframe').live('each',function(i){
+$('.accordion-body iframe').live('each',function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
-    alert(players[i]);
   });
+function onYouTubeIframeAPIReady() {
   for(var i=0; i < players.length; i++){
     player[i] = new YT.Player(players[i].attr("id"));
     player[i].addEventListener("onStateChange", function(res){
