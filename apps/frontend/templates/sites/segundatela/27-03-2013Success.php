@@ -75,4 +75,4 @@
     <!-- /direita -->
   </div>
   
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/app.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/segundatela.js?nocache=<?php echo time()?>"></script>
