@@ -119,9 +119,8 @@ and (orientation : landscape) {
 
 @media screen and (max-device-width: 1024px){
   .accordion-heading .accordion-toggle { padding:10px 20px; }
-  .accordion-heading { margin-bottom:5px; }
 }
-
+.accordion-heading { margin-bottom:5px; }
 
 
 
