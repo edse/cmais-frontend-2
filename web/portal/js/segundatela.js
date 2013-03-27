@@ -231,7 +231,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady() {
   console.log("startei de novo");
-  $("accordion-body iframe").each(function(i){
+  $(".accordion-body iframe").each(function(i){
     console.log($(this).attr('src'));
   })
   $('.accordion-body iframe').live("each", function(i){
