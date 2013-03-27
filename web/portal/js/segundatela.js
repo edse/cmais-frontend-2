@@ -234,6 +234,11 @@ $('.accordion-body iframe').live('each',function(i){
     players[i] = $("#player"+i);
   });
 function onYouTubeIframeAPIReady() {
+  $('.accordion-body iframe').each(function(i){
+    $(this).attr("id","player"+i);
+    players[i] = $("#player"+i);
+    alert(players[i])
+  });
   for(var i=0; i < players.length; i++){
     player[i] = new YT.Player(players[i].attr("id"));
     player[i].addEventListener("onStateChange", function(res){
