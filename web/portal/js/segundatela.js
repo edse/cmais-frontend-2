@@ -173,7 +173,6 @@
         $.each(json, function( key, value ) {
           //console.log(value)
           contentInfo(value);
-          onYouTubeIframeAPIReady2()
         });
       }
     });
@@ -198,6 +197,7 @@
             add = false;
             if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
               add = true;
+              onYouTubeIframeAPIReady2()
             }
             if(add)
               contentInfo(json);
