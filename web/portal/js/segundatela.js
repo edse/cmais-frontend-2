@@ -230,9 +230,9 @@ function checkState(res){
   }
 }
 function onYouTubeIframeAPIReady() {
-  console.log("start");
+  console.log("start2");
 
-  $('.accordion-body iframe').live("each", function(i){
+  $('.accordion-body').find('iframe').each(function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
   });
