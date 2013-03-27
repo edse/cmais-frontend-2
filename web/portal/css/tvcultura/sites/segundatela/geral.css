@@ -108,6 +108,14 @@
   .accordion-body iframe { min-height:220px; height:220px; }
 }
 
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .conteudo .span8 { width:60% !important; }
+  .conteudo .span4 { width:38% !important; margin-left:2% !important; }
+}
 
 
 
