@@ -97,7 +97,7 @@
 .accordion-body iframe { width:100% !important; }
 .accordion-body iframe { min-height:390px; }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1024px){
   .accordion-body iframe {  min-height:515px; }
 }
 
