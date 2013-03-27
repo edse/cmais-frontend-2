@@ -37,12 +37,12 @@
     <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
-    <!--
+
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    -->
+
   </head>
   <body>
     <?php echo $sf_content ?>
@@ -62,7 +62,6 @@
     </script>
     <!-- /scripts -->
     
-    <!--
     <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
@@ -75,12 +74,11 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-    -->
     
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
 
   </body>
 </html>

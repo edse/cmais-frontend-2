@@ -13,6 +13,7 @@
 .nav-tabs > li > a,
 .hero-unit .fechar,
 .hero-unit  {  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
+.hero-unit { padding:0; margin:0; background:#eee; min-height:217px;  }
 
 .nav-tabs > li > a,
 .accordion-heading .accordion-toggle,
@@ -25,7 +26,7 @@
 .accordion-heading .accordion-toggle { background:#666; color:#fff; text-transform:uppercase; font-weight:bold; padding:4px 20px; border:1px dotted #fff; font-size:16px; text-decoration:none; position:relative; }
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.ativo { background:#333; text-decoration:none !important; }
-.accordion-heading .accordion-toggle{position:relative; z-index:50000;}
+.accordion-heading .accordion-toggle{position:relative; /*z-index:50000;*/}
 .accordion-heading .accordion-toggle i { margin:4px 10px 0 0; }
 .accordion-body img { /*max-width: 360px;*/ float:left;  margin-right:10px;}
 .accordion-body a { color:#000; text-decoration:underline; }
@@ -63,7 +64,7 @@
 .accordion-body ul { margin:0; padding:15px;}
 .accordion-body table,
 .accordion-body img { padding:15px 15px 0 0;  float:left; margin-right:0;  }
-.accordion-body { padding:0 15px; background:#eee; position: relative; z-index:10;}
+.accordion-body { padding:0 15px; background:#eee; position: relative; /*z-index:10;*/}
 .accordion-inner{ padding:0;position: relative; z-index: 10 }
 .accordion-body p { padding:0; }
 .accordion-body #mais ul,
@@ -91,11 +92,24 @@
 .hero-unit .col-dir span { *margin:-6px 0 0 0;}  
 .row-fluid .span4 { *margin-left:0} 
 /* /ie */
-
 .progress .bar { color:#333; }
 .accordion-body p img,
-.accordion-body p iframe { width:100% !important; }
+.accordion-body iframe { width:100% !important; }
+.accordion-body iframe { min-height:390px; }
+.accordion-body a img { width:auto !important; }
 
-@media (max-width : 480px)  {
-  /*.accordion p iframe { width:436px; height:265px; }*/
+@media screen and (max-width: 1024px){
+  .accordion-body iframe {  min-height:515px; }
 }
+
+@media screen and (max-width: 480px){
+  .accordion-body img,
+  .accordion-body p img { min-width:310px; }
+  .accordion-body iframe { min-height:220px; height:220px; }
+}
+
+
+
+
+
+
