@@ -233,7 +233,7 @@ function onYouTubeIframeAPIReady2() {
   console.log("start2");
 
   $('iframe').each(function(i){
-    alert($(this).attr("id","player"+i));
+    $('iframe').attr("id","player"+i);
     //players[i] = $("#player"+i);
     console.log(i);
   });
