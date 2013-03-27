@@ -270,7 +270,7 @@ $(document).ready(function() {
     $(this).prev().find('a').removeClass('ativo');
     console.log(playing)
     if(playing)
-      playing.pauseVideo();
+     $('#player1').pauseVideo();
   });
 
   $('.accordion-body').live('shown', function() { 
