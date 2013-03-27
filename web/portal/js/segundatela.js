@@ -233,7 +233,7 @@ function checkState(res){
 function onYouTubeIframeAPIReady2() {
   console.log("start2");
 
-  $('.span8 iframe').each(function(i){
+  $('.accordion-body iframe').each(function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
     console.log(i);
