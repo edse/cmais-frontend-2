@@ -127,6 +127,7 @@
       html += "";
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
+      onYouTubeIframeAPIReady2()
       console.log(data.url);
       //$('#id'+data.handler).load(data.url);
 
@@ -198,10 +199,8 @@
             if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
               add = true;
             }
-            if(add){
+            if(add)
               contentInfo(json);
-              onYouTubeIframeAPIReady2()
-            }
           }
         });
         
