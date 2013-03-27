@@ -80,7 +80,7 @@
   // retrive sent contents by ajax
   $.ajax({
     url:"http://cmais.com.br/ajax/fetchurl",
-    data: {url: "/portal/js/segundatela/log/jornaldacultura-2013-03-26.json"},
+    data: {url: "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-2013-03-26.json"},
     dataType: 'jsonp',
     success:function(json){
       //console.log(json);
