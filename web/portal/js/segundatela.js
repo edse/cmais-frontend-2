@@ -257,7 +257,7 @@ $(document).ready(function() {
   });
 
   $('.accordion-body').live('shown', function() { 
-    $('.accordion-body iframe').live("each",function(i){
+    $('.accordion-body iframe').each(function(i){
       alert("teste");
       $(this).attr("id","player"+i);
       players[i] = $("#player"+i);
