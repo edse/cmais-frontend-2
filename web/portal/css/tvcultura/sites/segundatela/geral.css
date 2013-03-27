@@ -106,7 +106,7 @@
 
 .progress .bar { color:#333; }
 .accordion-body p img,
-.accordion-body p iframe { width:100% !important; min-height:auto !important;}
+.accordion-body p iframe { width:100% !important; }
 
 
 
