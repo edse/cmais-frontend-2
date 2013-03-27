@@ -223,11 +223,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //arrays para players multiplos
 var player = new Array();
 var cont = 0;
-var players = new Array();
-var playing = false; 
+var players_ids = new Array();
+var playing_id = false; 
 function checkState(res){
   if(res.data==1){
-    playing=players[i].attr("id");
+    playing_id=players_ids[i];
   }
 }
 function onYouTubeIframeAPIReady2() {
@@ -235,16 +235,21 @@ function onYouTubeIframeAPIReady2() {
 
   $('.accordion-body iframe').each(function(i){
     $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-    //console.log(i);
+    players_ids[i] = "player"+i;
+    console.log('players_id['+i+']:');
+    console.log(players_ids[i]);
   });
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
+  for(var i=0; i < players_ids.length; i++){
+    player[i] = new YT.Player(players_ids[i]);
     player[i].addEventListener("onStateChange", function(res){
       if(res.data == 1){
-        var i = res.target.a.id.substring(6,7);
-        playing = player[i];
-        console.log(playing)
+        var id = res.target.a.id.substring(6,res.target.a.id.length);
+        console.log('state changed id:');
+        console.log(id);
+        //playing = player[i];
+        playing = res.target;
+        console.log('playing:');
+        console.log(playing);
       }
     });
   }
