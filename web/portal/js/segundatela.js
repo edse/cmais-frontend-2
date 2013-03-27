@@ -230,29 +230,26 @@ function checkState(res){
   }
 }
 
-function onYouTubeIframeAPIReady() {
-  $('.accordion-body iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-    alert(players[i])
-  });
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
-    player[i].addEventListener("onStateChange", function(res){
-      if(res.data == 1){
-        var i = res.target.a.id.substring(6,7);
-        playing = player[i];
-      }
-    });
-  }
-} 
+
  
 $(document).ready(function() {
-  $('.accordion-body iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-    alert(players[i])
-  });
+  function onYouTubeIframeAPIReady() {
+    console.log("start")
+    $('.accordion-body iframe').each(function(i){
+      $(this).attr("id","player"+i);
+      players[i] = $("#player"+i);
+      alert(players[i])
+    });
+    for(var i=0; i < players.length; i++){
+      player[i] = new YT.Player(players[i].attr("id"));
+      player[i].addEventListener("onStateChange", function(res){
+        if(res.data == 1){
+          var i = res.target.a.id.substring(6,7);
+          playing = player[i];
+        }
+      });
+    }
+  } 
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
