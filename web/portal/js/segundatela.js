@@ -249,7 +249,7 @@ function onYouTubeIframeAPIReady2() {
         console.log('state changed id:');
         console.log(id);
         //playing = player[i];
-        playing = res.target.a.id;
+        playing = res;
         console.log('playing:');
         console.log(playing);
       }
@@ -270,7 +270,7 @@ $(document).ready(function() {
     $(this).prev().find('a').removeClass('ativo');
     console.log(playing)
     if(playing)
-     $('#player1').pauseVideo();
+      playing.pauseVideo();
   });
 
   $('.accordion-body').live('shown', function() { 
