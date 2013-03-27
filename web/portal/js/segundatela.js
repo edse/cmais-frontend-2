@@ -244,10 +244,10 @@ function onYouTubeIframeAPIReady() {
 } 
  
 $(document).ready(function() {
-  $('.accordion-body iframe').each(function(i){
+  $('.accordion-body iframe').each(function(){
     console.log("startei");
   $(this).attr("id","player"+i);
-  players[i] = $("#player"+i);
+  //players[i] = $("#player"+i);
 });
   $('#myTab a').click(function(e) {
     e.preventDefault();
