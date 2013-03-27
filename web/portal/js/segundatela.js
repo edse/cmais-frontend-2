@@ -127,7 +127,6 @@
       html += "";
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
-      onYouTubeIframeAPIReady2()
       console.log(data.url);
       //$('#id'+data.handler).load(data.url);
 
@@ -139,6 +138,7 @@
           // do stuff with json (in this case an array)
           //alert(json);
           $('#id'+data.handler).html(json.html);
+          onYouTubeIframeAPIReady2();
         },
         error:function(){
           alert("Error");
