@@ -19,50 +19,8 @@
       $('#modal-video').remove();
       $('.modal-backdrop.bg-video').remove();
     });
-
-    openModal();
-    
-    function openModal(){
-      var value = getCookie('modalcocorico')
-      console.log(value);
-      if(!value){
-        setCookie('modalcocorico', 1000);
-        $('.modal-backdrop.bg-video').fadeIn('fast');
-        $('#modal-video').fadeIn('fast');
-      }
-    }
-    
-    function setCookie(c_name,value){
-      var exdate=new Date();
-      exdate.setDate(exdate.getDate() + 7);
-      var c_value=escape(value) + ((7==null) ? "" : "; expires="+exdate.toUTCString());
-      document.cookie=c_name + "=" + c_value;
-    }
-    
-    function getCookie(c_name){
-      var i,x,y,ARRcookies=document.cookie.split(";");
-      for (i=0;i<ARRcookies.length;i++){
-        x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-        y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-        x=x.replace(/^\s+|\s+$/g,"");
-        if (x==c_name){
-          return unescape(y);
-        }
-      }
-    }
   })
 </script>
-<!-- Modal -->
-<div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
-      Fechar
-    </button>
-    <iframe width="853" height="480" src="http://www.youtube.com/embed/_SpdG5nkNds?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-<!-- /Modal -->
-
 
 <!-- container-->
 <div class="container tudo">
