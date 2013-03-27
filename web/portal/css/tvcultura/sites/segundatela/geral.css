@@ -97,13 +97,17 @@
   .accordion-body p iframe {  min-height:515px; }
 }
 
+@media screen and (max-width: 480px){
+  .accordion-body img,
+  .accordion-body p img { min-width:310px; }
+  .accordion-body a img { min-width:120px; }
+  .accordion-body p iframe { min-height:390px; }
+}
+
 .progress .bar { color:#333; }
 .accordion-body p img,
 .accordion-body p iframe { width:100% !important; height:auto !important;}
-.accordion-body img,
-.accordion-body p img { min-width:310px; }
-.accordion-body a img { min-width:120px; }
-.accordion-body p iframe { min-height:390px; }
+
 
 
 
