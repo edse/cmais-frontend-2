@@ -79,7 +79,7 @@
   <script>
   // retrive sent contents by ajax
   $.ajax({
-    url:"/js/segundatela/log/jornaldacultura-2013-03-26.json",
+    url:"/portal/js/segundatela/log/jornaldacultura-2013-03-26.json",
     success:function(json){
       $.each(json, function( key, value ) {
         contentInfo(value);
