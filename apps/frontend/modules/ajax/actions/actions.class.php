@@ -1915,6 +1915,19 @@ EOT;
 
   }
 
+  public function executeFetchurl(sfWebRequest $request){
+    if(($request->getParameter('url')!="")&&($request->getParameter('callback'))){
+      $this->setLayout(false);
+      header("content-type: application/json");
+      $res = array();
+      if(($request->getParameter('url')=="http://200.136.27.32:8080/log/contents.json")||($request->getParameter('url')=="http://200.136.27.32:8080/log/last-content.json")){
+        $res = json_decode(file_get_contents($request->getParameter('url')));
+      }else{
+        $res["html"] = file_get_contents($request->getParameter('url'));
+      }
+      die($request->getParameter('callback')."(".json_encode($res).")");
+    }
+  }
+
 
 }
-

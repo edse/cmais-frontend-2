@@ -37,6 +37,7 @@
         <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
         <br/>
         <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
       </div>
     </div>
   </div>
@@ -61,7 +62,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="tvcultura.cmais.com.br/segundatela/jornaldacultura" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/26-03-2013" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>

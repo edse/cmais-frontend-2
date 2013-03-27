@@ -6,11 +6,13 @@
 
     var log, serverUrl, socket;
 
+    var interval = 0;
+    var fakeInterval = 0;
     var timeout = 0;
     var tryin   = 3;
     var mult    = 0;
     
-    //serverUrl = 'ws://200.136.27.32:80/secondscreen';
+    serverUrl = 'ws://200.136.27.32:80/secondscreen';
     
     startClock = function(){
       tryin = (tryin+mult)*3;
@@ -20,11 +22,12 @@
           $('#tryin-v').html(tryin);
         }else{
           clearInterval(interval);
-          if(mult<100){
+          if(mult<3){
             mult++;
             $('#tryin-v').html("0");
             tryToConnect();
           }else{
+            fakeService();
             $('#tryin-p').hide();
           }
         }
@@ -109,6 +112,9 @@
     };
 
     contentInfo = function(data) {
+      
+      console.log("<<<<<");
+      
       var c = 'icon-align-left';
       if(data.type == 'people')
         c = 'icon-user';
@@ -121,9 +127,88 @@
       html += "";
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
-      $('#id'+data.handler).load(data.url);
+      console.log(data.url);
+      //$('#id'+data.handler).load(data.url);
+
+      $.ajax({
+        url:"http://cmais.com.br/ajax/fetchurl",
+        data: {url: data.url},
+        dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+        success:function(json){
+          // do stuff with json (in this case an array)
+          //alert(json);
+          $('#id'+data.handler).html(json.html);
+          onYouTubeIframeAPIReady2();
+        },
+        error:function(){
+          alert("Error");
+        },
+      });
+
+      /*
+      $.ajax({
+        url: "http://cmais.com.br/frontend_dev.php/ajax/fetchurl",
+        data: {url: data.url},
+        dataType: "jsonp",
+        jsonp : "callback",
+        jsonpCallback: "jsonpcallback"
+      });
+      
+      function jsonpcallback(rtndata) {
+        console.log(">>>>");
+        console.log(rtndata);
+        $('#id'+data.handler).html(rtndata.html);
+      }
+      */ 
+      
       return;
     };
+    
+    // retrive sent contents by ajax
+    $.ajax({
+      url:"http://cmais.com.br/ajax/fetchurl",
+      data: {url: "http://200.136.27.32:8080/log/contents.json"},
+      dataType: 'jsonp',
+      success:function(json){
+        //console.log(json);
+        $.each(json, function( key, value ) {
+          //console.log(value)
+          contentInfo(value);
+        });
+      }
+    });
+    
+    
+    window.fakeService = function(){
+      clearInterval(interval);
+      $('.offline').hide();
+      $('.online').show();
+      fakeInterval = setInterval(function(){
+        // 30 em 30
+        $.ajax({
+          url:"http://cmais.com.br/ajax/fetchurl",
+          data: {url: "http://200.136.27.32:8080/log/last-content.json"},
+          dataType: 'jsonp',
+          success:function(json){
+            //console.log(json);
+            console.log('1:');
+            console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
+            console.log('2:');
+            console.log(json.handler);
+            add = false;
+            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
+              add = true;
+            }
+            if(add)
+              contentInfo(json);
+          }
+        });
+        
+      }, 30000);
+    }
+
+    
+    
 
   });
 }).call(this);
@@ -138,27 +223,39 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //arrays para players multiplos
 var player = new Array();
 var cont = 0;
-var players = new Array();
-var playing = false; 
+var players_ids = new Array();
+var playing_id = false; 
 function checkState(res){
   if(res.data==1){
-    playing=players[i].attr("id");
+    playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady2() {
+  console.log("start2");
+
   $('.accordion-body iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  })
-  for(var i=0; i < players.length; i++){
-    player[i] = new YT.Player(players[i].attr("id"));
+    if($(this).attr('src').indexOf("youtube")!= -1){
+      $(this).attr("id","player"+i);
+      players_ids[i] = "player"+i;
+      console.log('players_id['+i+']:');
+      console.log(players_ids[i]);
+    }
+  });
+  for(var i=0; i < players_ids.length; i++){
+    player[i] = new YT.Player(players_ids[i]);
     player[i].addEventListener("onStateChange", function(res){
       if(res.data == 1){
-        var i = res.target.a.id.substring(6,7);
-        playing = player[i];
+        var id = res.target.a.id.substring(6,res.target.a.id.length);
+        console.log('state changed id:');
+        console.log(id);
+        //playing = player[i];
+        playing = res;
+        console.log('playing:');
+        console.log(playing);
       }
     });
   }
+  
 } 
  
 $(document).ready(function() {
@@ -171,11 +268,12 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    console.log(playing)
     if(playing)
       playing.pauseVideo();
   });
 
-  $('.accordion-body').live('show', function() { 
+  $('.accordion-body').live('shown', function() { 
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
