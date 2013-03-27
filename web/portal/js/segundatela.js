@@ -232,12 +232,13 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady2() {
   console.log("start2");
-
+  var cont =  0;
   $('.accordion-body iframe').each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
+      cont++;
       console.log($(this).attr('src').indexOf("youtube"))
-      $(this).attr("id","player"+i);
-      players_ids[i] = "player"+i;
+      $(this).attr("id","player"+cont);
+      players_ids[i] = "player"+cont;
       //console.log('players_id['+i+']:');
       //console.log(players_ids[i]);
     }
@@ -250,7 +251,7 @@ function onYouTubeIframeAPIReady2() {
         console.log('state changed id:');
         console.log(id);
         //playing = player[i];
-        playing = "player";
+        playing = player[i];
         console.log('playing:');
         console.log(playing);
       }
