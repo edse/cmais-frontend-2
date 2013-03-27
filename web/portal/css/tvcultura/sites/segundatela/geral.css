@@ -92,6 +92,10 @@
 .hero-unit .col-dir span { *margin:-6px 0 0 0;}  
 .row-fluid .span4 { *margin-left:0} 
 /* /ie */
+.progress .bar { color:#333; }
+.accordion-body p img,
+.accordion-body iframe { width:100% !important; }
+.accordion-body iframe { min-height:390px; }
 
 @media screen and (max-width: 980px){
   .accordion-body p iframe {  min-height:515px; }
@@ -101,12 +105,10 @@
   .accordion-body img,
   .accordion-body p img { min-width:310px; }
   .accordion-body a img { min-width:120px; }
-  .accordion-body p iframe { min-height:220px; height:220px; }
+  .accordion-body iframe { min-height:220px; height:220px; }
 }
 
-.progress .bar { color:#333; }
-.accordion-body p img,
-.accordion-body p iframe { width:100% !important; }
+
 
 
 
