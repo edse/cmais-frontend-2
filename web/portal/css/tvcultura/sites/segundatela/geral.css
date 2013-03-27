@@ -101,7 +101,7 @@
   .accordion-body img,
   .accordion-body p img { min-width:310px; }
   .accordion-body a img { min-width:120px; }
-  .accordion-body p iframe { min-height:390px; }
+  .accordion-body p iframe { min-height:220px; height:220px; }
 }
 
 .progress .bar { color:#333; }
