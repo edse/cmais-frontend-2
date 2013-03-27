@@ -160,7 +160,7 @@
       }
       */ 
       
-      return;
+      return onYouTubeIframeAPIReady2();
     };
     
     // retrive sent contents by ajax
@@ -229,10 +229,10 @@ function checkState(res){
     playing=players[i].attr("id");
   }
 }
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady2() {
   console.log("start2");
 
-  $('.accordion-body iframe').live("each",function(i){
+  $('.accordion-body iframe').each(function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
   });
