@@ -249,9 +249,6 @@ function onYouTubeIframeAPIReady2() {
 } 
  
 $(document).ready(function() {
-  $("iframe").each(function(){
-    alert($(this).attr('src'));
-  })
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
