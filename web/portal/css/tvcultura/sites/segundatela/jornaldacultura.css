@@ -1,6 +1,6 @@
 body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultura/bg-jc.jpg) repeat-x; color:#000; }
 
-.hero-unit { padding:0; margin:0; background:#eee; height:200px; overflow:hidden; padding-right: 10px;}
+.hero-unit { padding-right: 10px;}
 .hero-unit .bgtopo { width: 260px; height:200px; background:url(/portal/images/capaPrograma/segundatela/jornaldacultura/bg-topo-jc.jpg) no-repeat; float:left; margin-right:10px; }
 .hero-unit .col-esq { max-width: 40%; float:left; }
 .hero-unit .col-esq h1 { margin:30px 0 0 0; padding:0; text-indent:-9999px; background:url(/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc.png) no-repeat; width: 176px; height:71px;}

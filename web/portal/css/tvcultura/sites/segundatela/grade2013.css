@@ -1,6 +1,6 @@
 body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segundatela/grade2013/bg.jpg) repeat-x; color:#000; }
 
-.hero-unit { padding:0; margin:0; background:none; height:200px; overflow:hidden; }
+.hero-unit { background:none; }
 .hero-unit .bgtopo { }
 .hero-unit .bgtopo h1 {/*background:url(/portal/images/capaPrograma/segundatela/grade2013/logo.png) no-repeat;*/ float:left; margin:0; padding:0 4% 0 0; /*text-indent:-9999px;*/  }
 .hero-unit .bgtopo h1 img { display:block; width: 341px !important; max-width: 341px; }
