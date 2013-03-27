@@ -19,7 +19,7 @@
       $('#modal-video').remove();
       $('.modal-backdrop.bg-video').remove();
     });
-
+/*
     openModal();
     
     function openModal(){
@@ -49,18 +49,18 @@
           return unescape(y);
         }
       }
-    }
+    }*/
   })
 </script>
 <!-- Modal -->
-<div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+<!--div id="modal-video" class="modal hide" style="top:40%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
   <div class="modal-header">
     <button type="button" id="fechar" class="close" data-dismiss="modal" aria-hidden="true" style="margin-bottom: 20px;">
       Fechar
     </button>
     <iframe width="853" height="480" src="http://www.youtube.com/embed/_SpdG5nkNds?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
-</div>
+</div-->
 <!-- /Modal -->
 
 
