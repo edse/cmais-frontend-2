@@ -229,10 +229,7 @@ function checkState(res){
     playing=players[i].attr("id");
   }
 }
-$('.accordion-body iframe').live('each',function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  });
+
 function onYouTubeIframeAPIReady() {
   $('.accordion-body iframe').each(function(i){
     $(this).attr("id","player"+i);
@@ -251,6 +248,11 @@ function onYouTubeIframeAPIReady() {
 } 
  
 $(document).ready(function() {
+  $('.accordion-body iframe').each(function(i){
+    $(this).attr("id","player"+i);
+    players[i] = $("#player"+i);
+    alert(players[i])
+  });
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
