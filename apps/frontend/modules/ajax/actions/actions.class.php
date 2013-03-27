@@ -1763,7 +1763,7 @@ EOT;
               $url = "cmais.com.br/segundatela/jornaldacultura/contents/".strtolower($source)."-".strtolower($id)."/index.html";
               $file = fopen("/var/frontend/web/cache/".$url, "w");
               */
-              fwrite($file, urldecode($content));
+              fwrite($file, $content);
               $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
               fwrite($file, $footer);
               fclose($file);
