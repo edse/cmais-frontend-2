@@ -230,10 +230,12 @@ function checkState(res){
   }
 }
 function onYouTubeIframeAPIReady() {
-  $('.accordion-body iframe').each(function(i){
+  console.log("start");
+
+  $('.accordion-body iframe').live("each", function(i){
     $(this).attr("id","player"+i);
     players[i] = $("#player"+i);
-  })
+  });
   for(var i=0; i < players.length; i++){
     player[i] = new YT.Player(players[i].attr("id"));
     player[i].addEventListener("onStateChange", function(res){
@@ -246,6 +248,9 @@ function onYouTubeIframeAPIReady() {
 } 
  
 $(document).ready(function() {
+  $("iframe").each(function(i){
+    alert($(this).attr('src'));
+  })
   $('#myTab a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
