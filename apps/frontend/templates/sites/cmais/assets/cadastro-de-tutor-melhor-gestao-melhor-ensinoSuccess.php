@@ -32,7 +32,7 @@
                 <div class="contatoWrapper">
                   
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
-                  <p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p>
+                  <!--p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p-->
                   <!--
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
@@ -154,7 +154,7 @@
                         <option value="">---</option>
                         <option value="Licenciado em Letras / Português">Licenciado em Letras / Português</option>
                         <option value="Licenciado em Matemática">Licenciado em Matemática</option>
-                        <option value="Licenciado em Gestão Escolar">Licenciado em Gestão Escolar</option>
+                        <option value="Gestão Escolar">Gestão Escolar</option>
                       </select>
                     </div>
                     <!--
@@ -190,7 +190,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                    <p class="pergunta">Teve vinculo empregatício com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
+                    <p class="pergunta">Teve contrato ou carteira assinada com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="fpavinculo" id="sim2" value="sim" />Sim</label>
