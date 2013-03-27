@@ -224,6 +224,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player = new Array();
 var cont = 0;
 var players_ids = new Array();
+var playing=null;
 var playing_id = false; 
 function checkState(res){
   if(res.data==1){
@@ -232,6 +233,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady2() {
   console.log("start2");
+  /*
   var cont =  0;
   $('.accordion-body iframe').each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
@@ -256,6 +258,7 @@ function onYouTubeIframeAPIReady2() {
         console.log(playing);
       }
     });
+    */
   }
   
 } 
