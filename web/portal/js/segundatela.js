@@ -232,9 +232,9 @@ function checkState(res){
 function onYouTubeIframeAPIReady2() {
   console.log("start2");
 
-  $('#accordion2 iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
+  $('iframe').each(function(i){
+    alert($(this).attr("id","player"+i));
+    //players[i] = $("#player"+i);
     console.log(i);
   });
   for(var i=0; i < players.length; i++){
