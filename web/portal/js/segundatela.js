@@ -249,7 +249,7 @@ function onYouTubeIframeAPIReady2() {
         console.log('state changed id:');
         console.log(id);
         //playing = player[i];
-        playing = player[i];
+        playing = res.target.a;
         console.log('playing:');
         console.log(playing);
       }
