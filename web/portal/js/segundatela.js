@@ -230,11 +230,7 @@ function checkState(res){
   }
 }
 function onYouTubeIframeAPIReady() {
-  $('.accordion-body iframe').live("each",function(i){
-    alert("teste");
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  });
+  console.log("teste");
   for(var i=0; i < players.length; i++){
     player[i] = new YT.Player(players[i].attr("id"));
     player[i].addEventListener("onStateChange", function(res){
@@ -261,6 +257,11 @@ $(document).ready(function() {
   });
 
   $('.accordion-body').live('shown', function() { 
+    $('.accordion-body iframe').live("each",function(i){
+      alert("teste");
+      $(this).attr("id","player"+i);
+      players[i] = $("#player"+i);
+    });
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
