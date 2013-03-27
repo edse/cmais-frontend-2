@@ -232,10 +232,7 @@ function checkState(res){
 function onYouTubeIframeAPIReady() {
   console.log("start2");
 
-  $('.accordion-body').find('iframe').each(function(i){
-    $(this).attr("id","player"+i);
-    players[i] = $("#player"+i);
-  });
+  
   for(var i=0; i < players.length; i++){
     player[i] = new YT.Player(players[i].attr("id"));
     player[i].addEventListener("onStateChange", function(res){
@@ -245,7 +242,11 @@ function onYouTubeIframeAPIReady() {
       }
     });
   }
-} 
+}
+ $('.accordion-body').find('iframe').each(function(i){
+    $(this).attr("id","player"+i);
+    players[i] = $("#player"+i);
+  }); 
  
 $(document).ready(function() {
   $("iframe").each(function(i){
