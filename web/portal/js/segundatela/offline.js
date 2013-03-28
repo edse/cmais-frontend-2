@@ -64,7 +64,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReady2() {
+function onYouTubeIframeAPIReady() {
   console.log("start2");
   /*
   var cont =  0;
