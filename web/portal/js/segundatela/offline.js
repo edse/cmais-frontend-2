@@ -71,9 +71,9 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
   //console.log(domElem);
-  $(document).ready(){
+  $(document).ready(function(){
     domElem.hide();
-  }
+  })
   
   domElem.each(function(i){
     console.log("fui");
