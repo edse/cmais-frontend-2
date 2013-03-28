@@ -90,7 +90,7 @@ function onYouTubeIframeAPIReady() {
       //console.log(res);
       if(res.data == 1){
         console.log(res.target.a.id)
-        playing = player[i];
+        playing = "#"+res.target.a.id;
         console.log('playing:');
         console.log(playing);
       }
