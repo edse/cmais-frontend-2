@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    //console.log(data.handler)
+    console.log(data)
     var domElem = '#id'+data.handler;
     onYouTubeIframeAPIReadyPlayer(domElem);
     return;
