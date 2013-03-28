@@ -82,6 +82,7 @@ function onYouTubeIframeAPIReady(domElem) {
     }
   });
   for(var i=0; i < players_ids.length; i++){
+    console.log(players_ids[i]);
     player[i] = new YT.Player(players_ids[i]);
     console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
@@ -91,7 +92,7 @@ function onYouTubeIframeAPIReady(domElem) {
         //var id = res.target.a.id.substring(6,res.target.a.id.length);
         //console.log('state changed id:');
         //console.log(id);
-        console.log(player[i])
+        console.log(this)
         playing = player[i];
         console.log('playing:');
         console.log(playing);
