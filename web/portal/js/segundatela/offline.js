@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('#id'+data.handler).load(data.url);
     //console.log(data)
     //var domElem = '#id'+data.handler+".accordion-body iframe";
-    //onYouTubeIframeAPIReadyPlayer(domElem);
+    //onYouTubeIframeAPIReady(domElem);
     return;
   };  
   
@@ -71,11 +71,11 @@ function checkState(res){
 function onYouTubeIframeAPIReady(domElem) {
   console.log("start");
   console.log(domElem);
-  /*
+  
   $(".accordion-body iframe").each(function(i){
     console.log("fui");
 
-    
+    /*
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
@@ -84,9 +84,9 @@ function onYouTubeIframeAPIReady(domElem) {
       //console.log('players_id['+i+']:');
       console.log(players_ids[cont]);
     }
-
+    */
   });
- 
+  /*
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
     player[i].addEventListener("onStateChange", function(res){
