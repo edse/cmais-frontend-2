@@ -19,8 +19,8 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     //console.log(data)
-    var domElem = '#id'+data.handler+".accordion-body iframe";
-    onYouTubeIframeAPIReadyPlayer(domElem);
+    //var domElem = '#id'+data.handler+".accordion-body iframe";
+    //onYouTubeIframeAPIReadyPlayer(domElem);
     return;
   };  
   
