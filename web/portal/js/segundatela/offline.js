@@ -70,7 +70,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady(domElem) {
   console.log("start");
-  console.log(domElem);
+  //console.log(domElem);
   
   $(".accordion-body iframe").each(function(i){
     console.log("fui");
