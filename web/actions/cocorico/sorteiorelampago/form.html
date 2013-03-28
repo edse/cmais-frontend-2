@@ -177,12 +177,32 @@
                 },
                 minlength: 2
               },
+              nome_resp:{
+                required:function(){
+                  validate('#nome_resp');
+                  return true
+                },
+                minlength: 2
+              },
               email:{
                 required:function(){
                   validate('#email');
                   return true
                 },
                 email: true
+              },
+              endereco:{
+                required:function(){
+                  validate('#endereco');
+                  return true
+                },
+                minlength: 3
+              },
+              numero:{
+                required:function(){
+                  validate('#numero');
+                  return true
+                }
               },
               cidade:{
                 required:function(){
@@ -191,30 +211,30 @@
                 },
                 minlength: 3
               },
-              nome_resp:{
+              estado:{
                 required:function(){
-                  validate('#nome_resp');
+                  validate('#estado');
                   return true
-                },
-                minlength: 3
+                }
+              },
+              bairro:{
+                required:function(){
+                  validate('#bairro');
+                  return true
+                }
+              },
+              cep:{
+                required:function(){
+                  validate('#cep');
+                  return true
+                }
               },
               concorda:{
                 required: true
-              },
-              resposta_concurso:{
-                required:function(){
-                  validate('#resposta_concurso');
-                  return true
-                }
               }
             },
             messages:{
-              nome: "*Preencha corretamente os campos em vermelho.",
-              email: "*Preencha corretamente os campos em vermelho.",
-              cidade: "*Preencha corretamente os campos em vermelho.",
-              link: "*Preencha corretamente os campos em vermelho.",
-              concorda: "*Preencha corretamente os campos em vermelho.",
-              resposta_concurso:"*Preencha corretamente os campos em vermelho."
+              required: "Preencha corretamente os campos em vermelho."
             },
             success: function(label){
               // set &nbsp; as text for IE
