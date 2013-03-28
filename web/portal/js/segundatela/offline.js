@@ -70,17 +70,18 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
-  console.log(domElem);
+  //console.log(domElem);
+  domElem.hide();
   domElem.each(function(i){
     console.log("fui");
-    //if($(this).attr('src').indexOf("youtube") != -1){
+    if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       console.log($(this).attr('src').indexOf("youtube"))
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
       //console.log('players_id['+i+']:');
       console.log(players_ids[cont]);
-    //}
+    }
   });
   /*
   for(var i=0; i < players_ids.length; i++){
