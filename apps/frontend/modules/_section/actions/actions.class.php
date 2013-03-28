@@ -372,7 +372,8 @@ class _sectionActions extends sfActions
               ->select('s.*')
               ->from('Schedule s')
               ->where('s.channel_id = ?', $this->sChannel->id)
-              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+              //->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $start.' 23:59:59'))
               ->orderBy('s.date_start asc')
               ->limit(80)
               ->execute();
