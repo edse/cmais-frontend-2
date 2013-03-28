@@ -19,7 +19,7 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     
-    return;
+    return onYouTubeIframeAPIReady();
   };  
   
   $('#myTab a').click(function(e) {
