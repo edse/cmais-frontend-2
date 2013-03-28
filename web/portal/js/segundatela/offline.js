@@ -85,18 +85,17 @@ function onYouTubeIframeAPIReady(domElem) {
     player[i] = new YT.Player(players_ids[i]);
     console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
-      console.log(res);
-      /*
+      //console.log(res);
+  
       if(res.data == 1){
-        var id = res.target.a.id.substring(6,res.target.a.id.length);
+        //var id = res.target.a.id.substring(6,res.target.a.id.length);
         console.log('state changed id:');
-        console.log(id);
+        //console.log(id);
         //playing = player[i];
         playing = player[i];
         console.log('playing:');
         console.log(playing);
       }
-      */
     });
     
   }
