@@ -23,7 +23,7 @@
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="/actions/cocorico/sorteiorelampago/action.php">
+        <form id="form-contato" method="POST" action="">
          
           <input type="hidden" name="test" value="1">
          
@@ -142,6 +142,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
+                url: "http://cmais.com.br/actions/cocorico/sorteiorelampago/action.php",
                 data: $("#form-contato").serialize(),
                 beforeSend: function(){
                   $('input#enviar').hide();
