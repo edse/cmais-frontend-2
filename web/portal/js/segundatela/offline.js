@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    console.log(data)
+    console.log(data.handler)
     //onYouTubeIframeAPIReadyPlayer(.accordion-body iframe);
     return;
   };  
