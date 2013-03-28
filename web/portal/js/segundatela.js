@@ -125,6 +125,10 @@ $(document).ready(function() {
     
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
+    
+    if((data.id == "116131")||(data.id == "116224")){
+      $('#box-clock').fadeIn('slow');
+    }
 
     /*
     $.ajax({
