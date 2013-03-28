@@ -148,15 +148,16 @@ $(document).ready(function() {
   
   // retrive sent contents by ajax
   $.ajax({
-    url:"/portal/js/segundatela/log/contents.json",
-    dataType: "json",
+    url:"http://cmais.com.br/ajax/fetchurl",
+    data: {url: "http://200.136.27.32:8080/log/contents.json"},
+    dataType: 'jsonp',
     success:function(json){
       $.each(json, function( key, value ) {
-        //console.log(value)
-        contentInfo(value);
+        if(!value.banned)
+          contentInfo(value);
       });
     }
-  });
+  });  
   
   window.fakeService = function(){
     clearInterval(interval);
