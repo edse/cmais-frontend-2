@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "GothamMediumRegular"; 
+  src: url("/portal/css/fontes/gotham/gotham-medium-webfont.eot");
+  src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), 
+       url("/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'),
+       url("/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), 
+       url("/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");
+  font-weight: bold;
+  font-style: bold;       
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width:980px; }
+
+.topo { background:#fff url(/portal/images/capaPrograma/novostempos/bg.gif) repeat;    color: #FFFFFF;    min-height: 420px;    position: relative; }
+.topo .container { margin-top:45px; }
+.topo .container h1 { margin-top:20px;  }
+.redes { margin-top:30px; }
+.redes .fb {margin:0 10px 0 10px;  }
+.redes .twt,
+.redes .fb,
+.redes .gplus {  display: block; float:left; }
+.topo .nav.nav-pills { clear:both; margin-top:20px; float:left; text-align:left !important; }
+.topo .nav > li > a:hover,
+.topo .nav > li > a:focus,
+.topo .nav-tabs .open .dropdown-toggle, 
+.topo .nav-pills .open .dropdown-toggle, 
+.topo .nav > li.dropdown.open.active > a:hover, 
+.topo .nav > li.dropdown.open.active > a:focus,
+.topo .dropdown-toggle { background:#13294a; color:#fff; font-weight:bold;  }
+
+.row-fluid { text-align:justify; }
+.row-fluid a,
+.row-fluid h2,
+.topo .dropdown-toggle {font-family: 'GothamMediumRegular';}
+.row-fluid h2 { text-align:left; }
+.topo .nav .dropdown-toggle .caret { margin-left:10px; margin-top:4px; border-bottom-color: #8bd1d2; border-top-color: #8bd1d2; }
+.topo .dropdown-menu { margin-top:0; width: 98%; }
+.topo .nav-pills > li > a { margin-bottom:0; }
+.topo .dropdown-menu > li > a:hover, 
+.topo .dropdown-menu > li > a:focus, 
+.topo .dropdown-submenu:hover > a, 
+.topo .dropdown-submenu:focus > a { background:#8bd1d2; color:#333; }
+.topo .span4 { margin-left:0; }
+.topo .span6 { margin-top:3%; }
+.topo .span6 iframe { width:100% !important; }
+
+.row-fluid a,
+.row-fluid h2 { color:#1b4a87; font-size:24px; line-height:26px; }
+.row-fluid img { margin:40px 0 20px 0; }
+i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:9px 5px 0 0; }
+.row-fluid a { font-weight: bold; float:right; margin:10px 0;  }
+.row-fluid p a { font-weight:normal; float:none; margin:0; color:#333; font-size:14px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; text-decoration:underline; }
+.row-fluid p span { font-weight: bold; margin-bottom: 10px; display:block; }
+.row-fluid .link p { clear:both; }
+.estreia { background:#1b4a87; color:#fff; padding:0 5px; line-height: 23px; float:left; }
+.tudo { margin-bottom:200px; }
+
+@media screen and (max-width: 980px){
+  .topo .span4 { min-width:315px; }
+}
+
+@media screen and (max-width: 768px){
+  .topo .span4 { min-width:100%; text-align:center; }
+  .redes { margin-left:20px; }
+  .redes,
+  .nav.nav-pills { max-width:45%; float:left; clear:none !important; margin:20px !important;}
+  .nav.nav-pills { float:right !important;  max-width:41%; }
+}
+
+@media screen and (max-width: 480px){
+  .topo .span4 { min-width:100%; text-align:center; }
+  .redes,
+  .nav.nav-pills { max-width:100%; float:left !important; margin:0 0 10px 20px !important; }
+  
+}
