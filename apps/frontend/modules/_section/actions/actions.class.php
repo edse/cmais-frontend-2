@@ -362,13 +362,23 @@ class _sectionActions extends sfActions
               ->limit(80)
               ->execute();
             }
-            else{
+            else if($this->section->slug == "tvratimbum"){
               $this->schedules = Doctrine_Query::create()
               ->select('s.*')
               ->from('Schedule s')
               ->where('s.channel_id = ?', $this->sChannel->id)
               //->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
               ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $start.' 23:59:59'))
+              ->orderBy('s.date_start asc')
+              ->limit(80)
+              ->execute();
+            }
+            else{
+              $this->schedules = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Schedule s')
+              ->where('s.channel_id = ?', $this->sChannel->id)
+              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
               ->orderBy('s.date_start asc')
               ->limit(80)
               ->execute();
