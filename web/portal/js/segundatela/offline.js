@@ -18,8 +18,6 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    //console.log(data)
-    //var domElem = '#id'+data.handler+".accordion-body iframe";
     return;
   };  
   
@@ -71,24 +69,17 @@ function checkState(res){
 function onYouTubeIframeAPIReady() {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
-    //console.log("rodei each");
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
-      //console.log($(this).attr('src').indexOf("youtube"))
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
-      //console.log('players_id['+i+']:');
-      //console.log(players_ids[i]);
     }
   });
   for(var i=0; i < players_ids.length; i++){
-    //console.log(players_ids[i]);
     player[i] = new YT.Player(players_ids[i]);
     console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
-      //console.log(res);
       if(res.data == 1){
-        //console.log(res.target.a.id)
         playing = res.target;
         console.log('playing:');
         console.log(playing);
