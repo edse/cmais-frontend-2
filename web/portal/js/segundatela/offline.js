@@ -19,7 +19,8 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     //console.log(data.handler)
-    onYouTubeIframeAPIReadyPlayer($('/"#id'+data.handler+' iframe/"'));
+    var domElem = '#id'+data.handler+' iframe';
+    onYouTubeIframeAPIReadyPlayer($(domElem));
     return;
   };  
   
@@ -69,7 +70,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
-  //console.log(domElem);
+  console.log(domElem);
   domElem.each(function(i){
     console.log("fui");
     //if($(this).attr('src').indexOf("youtube") != -1){
