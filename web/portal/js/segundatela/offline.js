@@ -68,13 +68,14 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReadyPlayer(domElem) {
+function onYouTubeIframeAPIReady(domElem) {
   console.log("start");
   console.log(domElem);
+  /*
   $(".accordion-body iframe").each(function(i){
     console.log("fui");
 
-    /*
+    
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
@@ -83,9 +84,9 @@ function onYouTubeIframeAPIReadyPlayer(domElem) {
       //console.log('players_id['+i+']:');
       console.log(players_ids[cont]);
     }
-    */
+
   });
-  /*
+ 
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
     player[i].addEventListener("onStateChange", function(res){
