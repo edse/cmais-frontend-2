@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('#id'+data.handler).load(data.url);
     //console.log(data)
     //var domElem = '#id'+data.handler+".accordion-body iframe";
-    //onYouTubeIframeAPIReady(domElem);
+    onYouTubeIframeAPIReady();
     return;
   };  
   
