@@ -71,14 +71,14 @@ function checkState(res){
 function onYouTubeIframeAPIReady() {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
-    console.log("rodei each");
+    //console.log("rodei each");
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
-      console.log('players_id['+i+']:');
-      console.log(players_ids[i]);
+      //console.log('players_id['+i+']:');
+      //console.log(players_ids[i]);
     }
   });
   for(var i=0; i < players_ids.length; i++){
@@ -88,8 +88,8 @@ function onYouTubeIframeAPIReady() {
     player[i].addEventListener("onStateChange", function(res){
       //console.log(res);
       if(res.data == 1){
-        console.log(res.target.a.id)
-        playing = "#"+res.target.a.id;
+        //console.log(res.target.a.id)
+        playing = player[i];
         console.log('playing:');
         console.log(playing);
       }
