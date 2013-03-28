@@ -101,6 +101,11 @@ class _sectionActions extends sfActions
         }
         */
       }
+
+     if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
+        $this->setLayout('responsivo');   
+       
+      }
       
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
