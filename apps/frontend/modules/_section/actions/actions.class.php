@@ -68,7 +68,7 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
       
-      if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
+      if($this->section->Site->getSlug() == "segundatela") {
         if($this->section->getSlug() != "aovivo")
           $this->setLayout('segundatela');
       }
@@ -1157,6 +1157,15 @@ class _sectionActions extends sfActions
 
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);
+
+    if($this->site->slug == 'segundatela'){
+      if($sectionSlug != 'jornaldacultura'){
+        $sectionSlug = "offline";
+        $this->date = @end(explode("/", $this->url));
+      }else{
+        $sectionSlug = "jornaldacultura";
+      }
+    }
 
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){

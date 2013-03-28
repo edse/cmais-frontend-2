@@ -9,8 +9,13 @@
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
 
+    <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+        
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
+    
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -74,11 +79,6 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-    
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
 
   </body>
 </html>

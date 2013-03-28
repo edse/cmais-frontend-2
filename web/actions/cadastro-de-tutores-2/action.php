@@ -1,21 +1,22 @@
 <?php
-$_REQUEST["cpf"] = str_replace(array('.','-'),"",$_REQUEST["cpf"]);
-$_REQUEST["rg"] = str_replace(array('.','-'),"",$_REQUEST["rg"]);
+$cpf = str_replace(array('.','-'),"",$_REQUEST["cpf"]);
+$cpf = ltrim($cpf, "0");
+$rg = str_replace(array('.','-'),"",$_REQUEST["rg"]);
 
 if($_REQUEST["captcha"]) {
-  if($_REQUEST["cpf"]){
-    if(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-alunos.txt')){
+  if($cpf){
+    if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-alunos.txt')){
       die("2");
     }
-    elseif(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt')){
+    else if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-tutores.txt')){
       die("3");
     }
-    else{
+    else {
       $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino.csv";
       $csvContent = $_REQUEST["disciplina"] . "," .
                     $_REQUEST["nome"] . "," .
-                    $_REQUEST["cpf"] . "," .
-                    $_REQUEST["rg"] . "," .
+                    $cpf . "," .
+                    $rg . "," .
                     $_REQUEST["email"] . "," .
                     $_REQUEST["telefone"] . "," .
                     $_REQUEST["celular"] . "," .
@@ -25,8 +26,8 @@ if($_REQUEST["captcha"]) {
                     $_REQUEST["localdeprova"] . "\n";
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
-        $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cpf-tutores.txt";
-        $txtContent = $_REQUEST["cpf"] . "\n";
+        $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-tutores.txt";
+        $txtContent = $cpf . "\n";
         $txtFp = fopen($txtFile, 'a+');
         fwrite($txtFp, $txtContent);
         die("0");
