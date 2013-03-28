@@ -70,12 +70,8 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady(domElem) {
   console.log("start");
-  //console.log(domElem);
-  
   $(".accordion-body iframe").each(function(i){
-    console.log("fui");
-
-    
+    console.log("rodei each");
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
