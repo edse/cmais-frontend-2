@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 480px){
   .accordion-body img,
-  .accordion-body p img { min-width:310px; }
+  .accordion-body p img { width: 310px !important; }
   .accordion-body iframe { min-height:220px; height:220px; }
   .accordion-body a img { max-width:120px; }
 }
