@@ -79,7 +79,7 @@
   <script>
   // retrive sent contents by ajax
   $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo end(explode("/", $url)); ?>.json"},
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json"},
     success:function(json){
       //console.log(json);
       $.each(json, function( key, value ) {

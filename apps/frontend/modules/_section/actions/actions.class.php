@@ -1161,6 +1161,7 @@ class _sectionActions extends sfActions
     if($this->site->slug == 'segundatela'){
       if($sectionSlug != 'online'){
         $sectionSlug = "offline";
+        $this->date = @end(explode("/", $this->url));
       }elseif($sectionSlug == 'online'){
         $sectionSlug = "jornaldacultura";
       }
