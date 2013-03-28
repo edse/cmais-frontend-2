@@ -75,7 +75,7 @@ function onYouTubeIframeAPIReady(domElem) {
   $(".accordion-body iframe").each(function(i){
     console.log("fui");
 
-    /*
+    
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
@@ -84,7 +84,7 @@ function onYouTubeIframeAPIReady(domElem) {
       //console.log('players_id['+i+']:');
       console.log(players_ids[cont]);
     }
-    */
+    
   });
   /*
   for(var i=0; i < players_ids.length; i++){
