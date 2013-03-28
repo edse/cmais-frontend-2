@@ -62,7 +62,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/26-03-2013" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo end(explode("/", $url)); ?>" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
@@ -75,4 +75,17 @@
     <!-- /direita -->
   </div>
   
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/app.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+  <script>
+  // retrive sent contents by ajax
+  $.ajax({
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+    dataType: "json",
+    success:function(json){
+      $.each(json, function( key, value ) {
+        //console.log(value)
+        contentInfo(value);
+      });
+    }
+  });
+  </script>
