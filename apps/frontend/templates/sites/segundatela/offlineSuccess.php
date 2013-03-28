@@ -79,9 +79,7 @@
   <script>
   // retrive sent contents by ajax
   $.ajax({
-    url:"http://cmais.com.br/ajax/fetchurl",
-    data: {url: "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-<?php echo end(explode("/", $url)); ?>.json"},
-    dataType: 'jsonp',
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo end(explode("/", $url)); ?>.json"},
     success:function(json){
       //console.log(json);
       $.each(json, function( key, value ) {
