@@ -96,7 +96,7 @@
 .accordion-body p img,
 .accordion-body iframe { width:100% !important; }
 .accordion-body iframe { min-height:390px; }
-.accordion-body a img { width:auto !important; }
+.accordion-body p a img { width:auto !important; }
 
 @media screen and (max-width: 1024px){
   .accordion-body iframe {  min-height:515px; }
@@ -106,7 +106,7 @@
   .accordion-body img,
   .accordion-body p img { min-width:310px; }
   .accordion-body iframe { min-height:220px; height:220px; }
-  .accordion-body p a img { min-width:120px; }
+  .accordion-body a img { max-width:120px; }
 }
 
 /* iPads (landscape) ----------- */
