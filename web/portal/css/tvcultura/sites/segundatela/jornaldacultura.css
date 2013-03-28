@@ -88,11 +88,12 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .hero-unit .col-dir { max-width:100%; width:48%; }
   .hero-unit .col-esq p { text-align:center; }
   .hero-unit .col-esq h1 { margin:2% auto; }
-  .hero-unit .redes { min-width:350px; margin:0 auto; }
+  .hero-unit .redes { min-width:350px; margin-left:30px; }
   .hero-unit .menu-jc { /*margin-top:5px;*/ float:right; }
   .hero-unit .col-dir span.barra { display:block; }
   .hero-unit .col-dir a { display:block;  }
   .hero-unit .col-esq p { margin-bottom:6px; }
+  #box-clock {margin-top:130px;}
 }
 
 /* iPads (portrait) ----------- */
@@ -103,6 +104,7 @@ and (orientation : portrait) {
   .hero-unit .col-esq p { margin:22px 0; }
   .hero-unit { padding-right: 10px; min-height:200px;}
     .hero-unit .menu-jc { float:left; margin-top:140px; }
+    .hero-unit .redes { min-width:350px; margin-left:30px; }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -117,7 +119,7 @@ and (orientation : portrait) {
   .conteudo .span8 { min-height:500px; }
   .hero-unit .col-esq p { text-align:center; }
 
-  
+  #box-clock {margin:170px 30px;}
   
 }
 
