@@ -82,7 +82,7 @@ function onYouTubeIframeAPIReady(domElem) {
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
       console.log('players_id['+i+']:');
-      console.log(players_ids[cont]);
+      console.log(players_ids[i]);
     }
     
   });
