@@ -81,11 +81,13 @@
   $.ajax({
     url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
     success:function(json){
-      //console.log(json);
+      console.log(json);
+      /*
       $.each(json, function( key, value ) {
         //console.log(value)
         contentInfo(value);
       });
+      */
     }
   });
   </script>
