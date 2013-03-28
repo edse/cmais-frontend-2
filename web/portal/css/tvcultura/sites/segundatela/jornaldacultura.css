@@ -68,7 +68,7 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/jornaldacultu
   .conteudo { background:#fff; overflow:hidden; }
   .accordion-group .conteudo { background:#eee; }
   .accordion-inner iframe { width:100%; height:410px; }
-  .hero-unit { padding:1%; min-height:186px; }
+  .hero-unit { padding:1%; min-height:215px; }
   .hero-unit .col-esq { max-width: 100%; width:40%; margin-left:0; }
   .hero-unit .col-dir { max-width:100%; width:48%; }
   .hero-unit .col-esq p { text-align:center; }
