@@ -69,6 +69,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
+  sonsole.log(domElem);
   $(domElem).each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
