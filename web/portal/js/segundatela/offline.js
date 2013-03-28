@@ -89,9 +89,9 @@ function onYouTubeIframeAPIReady(domElem) {
   
       if(res.data == 1){
         //var id = res.target.a.id.substring(6,res.target.a.id.length);
-        console.log('state changed id:');
+        //console.log('state changed id:');
         //console.log(id);
-        //playing = player[i];
+        playing = player[i];
         playing = player[i];
         console.log('playing:');
         console.log(playing);
