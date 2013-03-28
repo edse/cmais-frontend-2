@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('#id'+data.handler).load(data.url);
     //console.log(data.handler)
     var domElem = '#id'+data.handler;
-    onYouTubeIframeAPIReadyPlayer($(domElem));
+    onYouTubeIframeAPIReadyPlayer(domElem);
     return;
   };  
   
@@ -71,9 +71,10 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
   console.log(domElem);
-  $(domElem).hide();
   domElem.each(function(i){
     console.log("fui");
+
+    /*
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       //console.log($(this).attr('src').indexOf("youtube"))
@@ -82,6 +83,7 @@ function onYouTubeIframeAPIReadyPlayer(domElem) {
       //console.log('players_id['+i+']:');
       console.log(players_ids[cont]);
     }
+    */
   });
   /*
   for(var i=0; i < players_ids.length; i++){
