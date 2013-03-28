@@ -19,7 +19,7 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     
-    return onYouTubeIframeAPIReadyPlayer();
+    return;
   };  
   
   $('#myTab a').click(function(e) {
@@ -67,7 +67,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReadyPlayer(obj) {
+function onYouTubeIframeAPIReady(obj) {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
