@@ -83,6 +83,7 @@ function onYouTubeIframeAPIReady(domElem) {
   });
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
+    console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
       console.log(res);
       /*
