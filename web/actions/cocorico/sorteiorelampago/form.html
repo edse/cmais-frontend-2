@@ -13,11 +13,6 @@
     <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
     <link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
-    <style>
-      .span9 {
-        width: inherit !important;
-      }
-    </style>
   </head>  
   
   <body>
@@ -153,7 +148,6 @@
                   $('img#ajax-loader').show();
                 },
                 success: function(data){
-                  //window.location.href="#";
                   if(data == "1"){
                     $('input#enviar').show()
                     $('img#ajax-loader').hide();

@@ -5,7 +5,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com, rhcsousa@gmail.com"; 
     ini_set('sendmail_from', $email_site);
-    //$to = "maiscriancatvcultura@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $subject = '[Cocoricó][TV Cocoricó][Páscoa Cocoricó] '.$name.' <'.$email.'>';
