@@ -153,8 +153,7 @@ $(document).ready(function() {
     dataType: 'jsonp',
     success:function(json){
       $.each(json, function( key, value ) {
-        if(!value.banned)
-          contentInfo(value);
+        contentInfo(value);
       });
     }
   });  
