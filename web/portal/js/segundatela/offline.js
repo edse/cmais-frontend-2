@@ -19,7 +19,7 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     //console.log(data.handler)
-    var domElem = '#id'+data.handler+' iframe';
+    var domElem = '#id'+data.handler;
     onYouTubeIframeAPIReadyPlayer(domElem);
     return;
   };  
@@ -71,7 +71,7 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
   console.log(domElem);
-  $(domElem).each(function(i){
+  $(domElem).find('iframe').each(function(i){
     console.log("fui");
 
     /*
