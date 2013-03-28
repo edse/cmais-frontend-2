@@ -71,7 +71,10 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
   //console.log(domElem);
-  domElem.hide();
+  $(document).ready(){
+    domElem.hide();
+  }
+  
   domElem.each(function(i){
     console.log("fui");
     if($(this).attr('src').indexOf("youtube") != -1){
