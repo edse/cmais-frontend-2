@@ -91,7 +91,7 @@ function onYouTubeIframeAPIReady2() {
         console.log(playing);
       }
     });
-    */
+    
   }
-  
+  */
 } 
