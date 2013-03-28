@@ -18,8 +18,8 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    onYouTubeIframeAPIReadyPlayer($(".accordion-body iframe"));
-    return;
+    
+    return onYouTubeIframeAPIReadyPlayer($(".accordion-body iframe"));
   };  
   
   $('#myTab a').click(function(e) {
