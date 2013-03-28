@@ -19,7 +19,7 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     //console.log(data.handler)
-    onYouTubeIframeAPIReadyPlayer("#"+data.handler+" iframe");
+    onYouTubeIframeAPIReadyPlayer("#id"+data.handler+" iframe");
     return;
   };  
   
