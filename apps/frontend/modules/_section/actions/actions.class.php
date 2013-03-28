@@ -68,7 +68,7 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
       
-      if($this->section->Site->getSlug() == "segundatela") {
+      if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
         if($this->section->getSlug() != "aovivo")
           $this->setLayout('segundatela');
       }
@@ -100,11 +100,6 @@ class _sectionActions extends sfActions
           die();
         }
         */
-      }
-
-     if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
-        $this->setLayout('responsivo');   
-       
       }
       
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
@@ -166,7 +161,7 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.program_id = ?', $this->site->Program->id)
                   ->andWhere('s.channel_id = ?', 1)
-                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  ->andWhere('s.date_start >= ? AND s.date_start <= ?',  array($start.' 00:00:00', $start.' 23:59:59'))
                   ->orderBy('s.date_start asc')
                   ->limit(80)
                   ->execute();
@@ -178,7 +173,7 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.channel_id = ?', $this->site->Program->getChannelId())
                   ->andWhere('s.program_id = ?', $this->site->Program->id)
-                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  ->andWhere('s.date_start >= ? AND s.date_start <= ?',  array($start.' 00:00:00', $start.' 23:59:59'))
                   ->orderBy('s.date_start asc')
                   ->limit(80)
                   ->execute();
@@ -373,7 +368,7 @@ class _sectionActions extends sfActions
               ->from('Schedule s')
               ->where('s.channel_id = ?', $this->sChannel->id)
               //->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
-              ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $start.' 23:59:59'))
+              ->andWhere('s.date_start >= ? AND s.date_start <= ?',  array($start.' 00:00:00', $start.' 23:59:59'))
               ->orderBy('s.date_start asc')
               ->limit(80)
               ->execute();
@@ -1163,15 +1158,6 @@ class _sectionActions extends sfActions
 
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);
-
-    if($this->site->slug == 'segundatela'){
-      if($sectionSlug != 'jornaldacultura'){
-        $sectionSlug = "offline";
-        $this->date = @end(explode("/", $this->url));
-      }else{
-        $sectionSlug = "jornaldacultura";
-      }
-    }
 
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
