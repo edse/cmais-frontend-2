@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
+    onYouTubeIframeAPIReadyPlayer();
     return;
   };  
   
@@ -64,7 +65,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReadyPlayer() {
   console.log("start2");
   /*
   var cont =  0;
