@@ -362,7 +362,7 @@ class _sectionActions extends sfActions
               ->limit(80)
               ->execute();
             }
-            else if($this->site->getSlug() == "tvratimbum"){
+            else if($this->site->getSlug() == "tvratimbum"){ 
               $this->schedules = Doctrine_Query::create()
               ->select('s.*')
               ->from('Schedule s')
