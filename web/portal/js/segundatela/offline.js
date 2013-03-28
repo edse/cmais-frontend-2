@@ -18,8 +18,8 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    console.log(data.handler)
-    //onYouTubeIframeAPIReadyPlayer(.accordion-body iframe);
+    //console.log(data.handler)
+    onYouTubeIframeAPIReadyPlayer("#"+data.handler+" iframe");
     return;
   };  
   
@@ -60,7 +60,8 @@ var player = new Array();
 var cont = 0;
 var players_ids = new Array();
 var playing=null;
-var playing_id = false; 
+var playing_id = false;
+var cont =  0; 
 function checkState(res){
   if(res.data==1){
     playing_id=players_ids[i];
@@ -68,15 +69,14 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReadyPlayer(domElem) {
   console.log("start");
-  var cont =  0;
   $(domElem).each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       console.log($(this).attr('src').indexOf("youtube"))
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
-      console.log('players_id['+i+']:');
-      console.log(players_ids[i]);
+      //console.log('players_id['+i+']:');
+      console.log(players_ids[cont]);
     }
   });
   /*
