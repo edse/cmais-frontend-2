@@ -69,7 +69,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReady(domElem) {
+function onYouTubeIframeAPIReady() {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
     console.log("rodei each");
@@ -90,7 +90,7 @@ function onYouTubeIframeAPIReady(domElem) {
       //console.log(res);
       if(res.data == 1){
         console.log(res.target.a.id)
-        playing = res.target.a.id;
+        playing = player[i];
         console.log('playing:');
         console.log(playing);
       }
