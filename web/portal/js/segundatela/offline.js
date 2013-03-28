@@ -33,6 +33,7 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
@@ -87,12 +88,8 @@ function onYouTubeIframeAPIReady(domElem) {
     console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
       //console.log(res);
-  
       if(res.data == 1){
-        //var id = res.target.a.id.substring(6,res.target.a.id.length);
-        //console.log('state changed id:');
-        //console.log(id);
-        console.log()
+        console.log(res.target.a.id)
         playing = res.target.a;
         console.log('playing:');
         console.log(playing);
