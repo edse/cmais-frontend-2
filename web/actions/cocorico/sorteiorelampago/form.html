@@ -17,7 +17,7 @@
   
   <body>
 
-    <div class="destaque-home-tv interatividade span9" id="formWrapper">
+    <div class="destaque-home-tv interatividade" id="formWrapper">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
@@ -105,11 +105,11 @@
                 <input type="text" name="cep" class="span12" id="cep" data-default="Sua cidade" value="CEP" placeholder="CEP">
               </div>
             
-            <div class="row-fluid">
+            <!--div class="row-fluid">
               <label class="radio" for="concorda">
                 <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os <a href="#modalTermos" role="button" data-toggle="modal">Termos e Condições</a>.
               </label>             
-            </div>
+            </div-->
           </div>
           
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader">
@@ -222,10 +222,10 @@
                   validate('#cep');
                   return true
                 }
-              },
+              }/*,
               concorda:{
                 required: true
-              }
+              }*/
             },
             messages:{
               required: "Preencha corretamente os campos em vermelho."
