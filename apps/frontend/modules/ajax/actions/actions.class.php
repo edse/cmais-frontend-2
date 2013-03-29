@@ -1673,8 +1673,10 @@ EOT;
           $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
-      
-      echo json_encode(array("suggestions"=>$result));
+      if($request->getParameter('featureClass')!="")
+        echo $request->getParameter('featureClass')."(".json_encode($res).")";
+      else
+        echo json_encode(array("suggestions"=>$result));
       die();
     }
   }
