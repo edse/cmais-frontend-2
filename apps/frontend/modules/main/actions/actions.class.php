@@ -252,6 +252,9 @@ class mainActions extends sfActions
       header("Location: http://tvcultura.com.br/aoponto");
       die();
     }
+    elseif(($param1 == "segundatela")&&($param2 == "jornaldacultura")&&($param3 != "")){
+      $this->forwardObject(Doctrine::getTable('Section')->findOne(2330));
+    }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
