@@ -1686,6 +1686,7 @@ EOT;
 
   public function executeFetch(sfWebRequest $request){
     $this->setLayout(false);
+    header("content-type: application/json");
 
     $contents_folder = "/var/frontend/web/cache/cmais.com.br/segundatela/contents";
     //$contents_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache/contents";
