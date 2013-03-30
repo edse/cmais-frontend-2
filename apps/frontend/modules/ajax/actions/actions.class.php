@@ -1676,8 +1676,8 @@ EOT;
         }
       }
         //echo $request->getParameter('featureClass')."(".json_encode($result).")";
-      if($request->getParameter('featureClass')!="")
-        echo "[".json_encode($result)."]";
+      if($request->getParameter('callback')!="")
+        echo $request->getParameter('callback')."(".json_encode($result).")";
       else
         echo json_encode(array("suggestions"=>$result));
       die();
