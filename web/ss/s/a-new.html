@@ -308,6 +308,41 @@
           return socket2.send(JSON.stringify(payload));
         });
 
+        saveContent = function(){
+          $.ajax({
+            url: "/ajax/fetch",
+            data: {
+              save: 1,
+              html: editor.getData()
+            },
+            type: "POST",
+            dataType: "text",
+            async: false,
+            success: function(url){
+              if(url != ""){
+                var payload = new Object();
+                payload.action = "addcontent";
+                var data = new Object();
+                data.type = $('#new-content-type option:selected').val();
+                data.tag = $('#new-content-tag').val();
+                data.source = $('#new-content-source').val();
+                data.id = $('#new-content-id').val();
+                data.url = url;
+                payload.data = data;
+                $("#new-content-type:selected").removeAttr("selected");
+                $('#new-content-tag').val("");
+                $('#new-content-source').val("")
+                $('#new-content-id').val("");
+                $('#new-content-btn').removeClass("disabled")
+                $('#new-content').hide();
+                editor.setData("");
+                //console.log(payload);
+                return socket2.send(JSON.stringify(payload));
+              }
+            }
+          });
+        }
+        
         log = function(msg) {
           return $('#log').prepend("" + msg + "<br />");
         };
@@ -497,41 +532,6 @@
         $('#search-content-btn').click(function(){
           $("#new-content-tag").autocomplete("enable");
         });
-
-        saveContent = function(){
-          $.ajax({
-            url: "/ajax/fetch",
-            data: {
-              save: 1,
-              html: editor.getData()
-            },
-            type: "POST",
-            dataType: "text",
-            async: false,
-            success: function(url){
-              if(url != ""){
-                var payload = new Object();
-                payload.action = "addcontent";
-                var data = new Object();
-                data.type = $('#new-content-type option:selected').val();
-                data.tag = $('#new-content-tag').val();
-                data.source = $('#new-content-source').val();
-                data.id = $('#new-content-id').val();
-                data.url = url;
-                payload.data = data;
-                $("#new-content-type:selected").removeAttr("selected");
-                $('#new-content-tag').val("");
-                $('#new-content-source').val("")
-                $('#new-content-id').val("");
-                $('#new-content-btn').removeClass("disabled")
-                $('#new-content').hide();
-                editor.setData("");
-                //console.log(payload);
-                return socket2.send(JSON.stringify(payload));
-              }
-            }
-          });
-        }
 
         //CKEDITOR
         var editor = CKEDITOR.replace( 'new-content-html-c', {
