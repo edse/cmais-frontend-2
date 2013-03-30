@@ -256,21 +256,6 @@
             send();
           }
         });
-      
-        $('#new-content-btn').click(function() {
-          if($(this).hasClass("disabled")) return false;
-          $(this).addClass("disabled");
-          $('#new-content').show();
-          $('#new-content-tag').focus();
-        });
-
-        $('#new-content-cancel').click(function() {
-          if($(this).hasClass("disabled")) return false;
-          $("#new-content-type:selected").removeAttr("selected");
-          $('#new-content-tag').val("");
-          $('#new-content-btn').removeClass("disabled")
-          $('#new-content').hide();
-        });
 
         $(".sendcontent").live('click', function(){
           if($(this).hasClass("disabled")) return false;
@@ -393,34 +378,36 @@
           
           $('#content-list').html("");
           //for(var j=serverinfo.contents.length-1; j>=0; j--){
-          for(var j=0; j<serverinfo.contents.length; j++){
-            if(serverinfo.contents[j]){
-              var dis2 = ' disabled';
-              var dis = ' disabled';
-              var vis = ' inline-block';
-              //console.log(serverinfo.contents[j])
-              if(!serverinfo.contents[j].sent){
-                dis = '';
-                vis = ' none';
+          if(serverinfo.contents){
+            for(var j=0; j<serverinfo.contents.length; j++){
+              if(serverinfo.contents[j]){
+                var dis2 = ' disabled';
+                var dis = ' disabled';
+                var vis = ' inline-block';
+                //console.log(serverinfo.contents[j])
+                if(!serverinfo.contents[j].sent){
+                  dis = '';
+                  vis = ' none';
+                }
+                if(!serverinfo.contents[j].banned)
+                  dis2 = '';
+                var html = '<tr><td>'+serverinfo.contents[j].id+'</td>';
+                html += '<td>'+serverinfo.contents[j].source+'</td>';
+                html += '<td>'+serverinfo.contents[j].type+'</td>';
+                html += '<td>'+serverinfo.contents[j].tag+'</td>';
+                html += '<td><a class="btn btn-mini btn-danger removecontent" style="margin-right: 5px;" rel="'+j+'"><i class="icon-remove icon-white"></i> Delete</a>';
+                //html += '<a class="btn btn-mini btn-warning pull-right editcontent" style="margin-left: 5px;" rel="'+j+'"><i class="icon-edit icon-white"></i> Edit</a>';
+                html += '<a class="btn btn-mini btn-danger bancontent'+dis2+'" style="margin-right: 5px; display: '+vis+';" rel="'+j+'"><i class="icon-ban-circle icon-white"></i> Ban</a>';
+                html += '<a class="btn btn-mini btn-success sendcontent'+dis+'" rel="'+j+'"><i class="icon-play icon-white"></i> Send</a></td></tr>';
+  
+                //html += '<ul><li>'+serverinfo.contents[j].tag+'</li>';
+                //html += '<li>type: '+serverinfo.contents[j].type+'</li>';
+                //html += '<li>source: '+serverinfo.contents[j].source+'</li>';
+                //html += '<li>id: '+serverinfo.contents[j].id+'</li>';
+                //html += '</ul><hr />';
+  
+                $('#content-list').append(html);
               }
-              if(!serverinfo.contents[j].banned)
-                dis2 = '';
-              var html = '<tr><td>'+serverinfo.contents[j].id+'</td>';
-              html += '<td>'+serverinfo.contents[j].source+'</td>';
-              html += '<td>'+serverinfo.contents[j].type+'</td>';
-              html += '<td>'+serverinfo.contents[j].tag+'</td>';
-              html += '<td><a class="btn btn-mini btn-danger removecontent" style="margin-right: 5px;" rel="'+j+'"><i class="icon-remove icon-white"></i> Delete</a>';
-              //html += '<a class="btn btn-mini btn-warning pull-right editcontent" style="margin-left: 5px;" rel="'+j+'"><i class="icon-edit icon-white"></i> Edit</a>';
-              html += '<a class="btn btn-mini btn-danger bancontent'+dis2+'" style="margin-right: 5px; display: '+vis+';" rel="'+j+'"><i class="icon-ban-circle icon-white"></i> Ban</a>';
-              html += '<a class="btn btn-mini btn-success sendcontent'+dis+'" rel="'+j+'"><i class="icon-play icon-white"></i> Send</a></td></tr>';
-
-              //html += '<ul><li>'+serverinfo.contents[j].tag+'</li>';
-              //html += '<li>type: '+serverinfo.contents[j].type+'</li>';
-              //html += '<li>source: '+serverinfo.contents[j].source+'</li>';
-              //html += '<li>id: '+serverinfo.contents[j].id+'</li>';
-              //html += '</ul><hr />';
-
-              $('#content-list').append(html);
             }
           }
           return;
@@ -483,17 +470,13 @@
             });
           },
           select: function( event, ui ) {
-            console.log( ui.item ?
-              "Selected: " + ui.item.label :
-              "Nothing selected, input was " + this.value);
-
+            console.log( ui.item ? "Selected: " + ui.item.label : "Nothing selected, input was " + this.value);
             editor.setData(null);
             $('#new-content-save').show();
             $('#new-content-save').addClass('disabled');
             $("#new-content-tag").addClass('ui-autocomplete-loading');
             $('#new-content-source').val(ui.item.data.source);
             $('#new-content-id').val(ui.item.data.id);
-            
             $.ajax({
               url: "http://cmais.com.br/ajax/fetch",
               dataType: "jsonp",
@@ -552,11 +535,22 @@
           saveContent();
         });
         
-        $('#search-content-btn').click(function(){
-          $("#new-content-tag").autocomplete("enable");
+        $('#new-content-btn').click(function() {
+          if($(this).hasClass("disabled")) return false;
+          $(this).addClass("disabled");
+          $('#new-content-save').removeClass('disabled').show();
+          $('#new-content').show();
+          $('#new-content-tag').focus();
         });
 
-        //initClient();
+        $('#new-content-cancel').click(function() {
+          if($(this).hasClass("disabled")) return false;
+          $("#new-content-type:selected").removeAttr("selected");
+          $('#new-content-tag').val("");
+          $('#new-content-btn').removeClass("disabled")
+          $('#new-content').hide();
+        });
+
       });
       </script>
 
