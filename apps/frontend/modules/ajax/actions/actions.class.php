@@ -1740,8 +1740,11 @@ EOT;
           $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
-    
-      echo json_encode(array("suggestions"=>$result));
+
+      if($request->getParameter('callback')!="")
+        echo $request->getParameter('callback')."(".json_encode(array("suggestions"=>$result)).")";
+      else
+        echo json_encode(array("suggestions"=>$result));
       die();
       
     }elseif(!$html){ 
