@@ -1645,6 +1645,8 @@ EOT;
 
 
   public function executeSearch(sfWebRequest $request){
+    $this->setLayout(false);
+    header("content-type: application/json");
     if($request->getParameter('query')!=""){
       $query = $request->getParameter('query');
       //Astolfo
@@ -1673,8 +1675,9 @@ EOT;
           $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
+        //echo $request->getParameter('featureClass')."(".json_encode($result).")";
       if($request->getParameter('featureClass')!="")
-        echo $request->getParameter('featureClass')."(".json_encode($result).")";
+        echo "[".json_encode($result)."]";
       else
         echo json_encode(array("suggestions"=>$result));
       die();
