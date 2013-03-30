@@ -1750,6 +1750,7 @@ EOT;
         if($source){
           //Astolfo
           if($source == "Astolfo"){
+            $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
             $asset = Doctrine::getTable('Asset')->findOneById($id);
             if($asset->AssetType->getSlug() == "content")
               $content = "<p>".$asset->AssetContent->render()."</p>";
@@ -1773,20 +1774,20 @@ EOT;
               $file = fopen("/var/frontend/web/cache/".$url, "w");
               */
               fwrite($file, $content);
-              $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
               fwrite($file, $footer);
               fclose($file);
               die("http://".$url);
             }else{
               if(!$callback)
-                die($content);
+                die($content.$footer);
               else
-                die($request->getParameter('callback')."(".json_encode(array("html"=>$content)).")");
+                die($request->getParameter('callback')."(".json_encode(array("html"=>$content.$footer)).")");
             }
             die();
             
           }
           elseif($source == "Wikipedia"){
+            $footer = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
             $opts = array('http' => array('user_agent' => 'Astolfo/1.0 (http://cmais.com.br)'));
             $context = stream_context_create($opts);
             $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&pageid='.$id.'&prop=text%7Cimages';
@@ -1806,7 +1807,6 @@ EOT;
               $text = "";
               $info = "";
               $images = "";
-              $footer = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
         
               //Infobox
               /*
@@ -1895,9 +1895,9 @@ EOT;
                 die("http://".$url);
               }else{
                 if(!$callback)
-                  die($info.$images.$text);
+                  die($info.$images.$text.$footer);
                 else
-                  die($request->getParameter('callback')."(".json_encode(array("html"=>$info.$images.$text)).")");
+                  die($request->getParameter('callback')."(".json_encode(array("html"=>$info.$images.$text.$footer)).")");
               }
             }
             die();
@@ -1907,12 +1907,14 @@ EOT;
     }
     elseif($html){
       $id = time();
+      /*
       if(!$source)
         $source = "mannual";
       if(strtolower($source) != "wikipedia")
         $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
       else
         $footer = '<br /><a href="http://pt.wikipedia.org" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
+     */
       if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
         mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
       }
@@ -1920,7 +1922,6 @@ EOT;
       $file = fopen($cache_folder."/".$url, "w");
       //$file = fopen($folder."/".$url, "w+");
       fwrite($file, $html);
-      fwrite($file, $footer);
       fclose($file);
       die("http://".$url);
     }
