@@ -455,10 +455,7 @@
           ],
           height: 550,
         });
-      }
-
-      $(document).ready(function() {
-
+        
         $("#new-content-tag").autocomplete({
           source: function( request, response ) {
             $.ajax({
@@ -516,6 +513,10 @@
             $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
           }
         });
+
+      }
+
+      $(document).ready(function() {
 
         $('#start').click(function() {
           if($(this).hasClass("disabled")) return false;
