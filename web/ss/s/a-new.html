@@ -191,8 +191,9 @@
 
       <!-- CLIENT -->
       <script>
+      window.editor = null;
       function initClient(){
-        var log2, serverUrl2, socket2, autoinput, editor;
+        var log2, serverUrl2, socket2, autoinput;
         log2 = function(msg) {
           //$('#log2').append("" + msg + "<br />");
           $log2 = $('#log2');
@@ -313,7 +314,7 @@
             url: "/ajax/fetch",
             data: {
               save: 1,
-              html: editor.getData()
+              html: window.editor.getData()
             },
             type: "POST",
             dataType: "text",
@@ -335,7 +336,7 @@
                 $('#new-content-id').val("");
                 $('#new-content-btn').removeClass("disabled")
                 $('#new-content').hide();
-                editor.setData("");
+                window.editor.setData("");
                 //console.log(payload);
                 return socket2.send(JSON.stringify(payload));
               }
@@ -433,7 +434,7 @@
         };
         
         //CKEDITOR
-        editor = CKEDITOR.replace( 'new-content-html-c', {
+        window.editor = CKEDITOR.replace( 'new-content-html-c', {
           toolbar: [
             { name: 'document', items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
             { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
@@ -455,7 +456,10 @@
           ],
           height: 550,
         });
-        
+      }
+
+      $(document).ready(function() {
+
         $("#new-content-tag").autocomplete({
           source: function( request, response ) {
             $.ajax({
@@ -485,7 +489,7 @@
               "Selected: " + ui.item.label :
               "Nothing selected, input was " + this.value);
 
-            editor.setData(null);
+            window.editor.setData(null);
             $('#new-content-save').show();
             $('#new-content-save').addClass('disabled');
             $("#new-content-tag").addClass('ui-autocomplete-loading');
@@ -500,7 +504,7 @@
                 id: ui.item.data.id
               },
               success: function( data ) {
-                editor.setData(data.html);
+                window.editor.setData(data.html);
                 $('#new-content-save').removeClass('disabled');
                 $("#new-content-tag").removeClass('ui-autocomplete-loading');
               }
@@ -513,10 +517,6 @@
             $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
           }
         });
-
-      }
-
-      $(document).ready(function() {
 
         $('#start').click(function() {
           if($(this).hasClass("disabled")) return false;
