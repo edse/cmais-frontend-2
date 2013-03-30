@@ -191,9 +191,9 @@
 
       <!-- CLIENT -->
       <script>
-      window.editor = null;
-      function initClient(){
-        var log2, serverUrl2, socket2, autoinput;
+      $(document).ready(function() {
+      //function initClient(){
+        var log2, serverUrl2, socket2, autoinput, editor;
         log2 = function(msg) {
           //$('#log2').append("" + msg + "<br />");
           $log2 = $('#log2');
@@ -314,7 +314,7 @@
             url: "/ajax/fetch",
             data: {
               save: 1,
-              html: window.editor.getData()
+              html: editor.getData()
             },
             type: "POST",
             dataType: "text",
@@ -336,7 +336,7 @@
                 $('#new-content-id').val("");
                 $('#new-content-btn').removeClass("disabled")
                 $('#new-content').hide();
-                window.editor.setData("");
+                editor.setData("");
                 //console.log(payload);
                 return socket2.send(JSON.stringify(payload));
               }
@@ -425,7 +425,8 @@
           }
           return;
         };
-        return clientActivity = function(port) {
+        
+        clientActivity = function(port) {
           return $("#clientListSelect option[value='" + port + "']").css("color", "red").animate({
             opacity: 100
           }, 600, function() {
@@ -434,7 +435,7 @@
         };
         
         //CKEDITOR
-        window.editor = CKEDITOR.replace( 'new-content-html-c', {
+        editor = CKEDITOR.replace( 'new-content-html-c', {
           toolbar: [
             { name: 'document', items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
             { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
@@ -456,9 +457,6 @@
           ],
           height: 550,
         });
-      }
-
-      $(document).ready(function() {
 
         $("#new-content-tag").autocomplete({
           source: function( request, response ) {
@@ -489,7 +487,7 @@
               "Selected: " + ui.item.label :
               "Nothing selected, input was " + this.value);
 
-            window.editor.setData(null);
+            editor.setData(null);
             $('#new-content-save').show();
             $('#new-content-save').addClass('disabled');
             $("#new-content-tag").addClass('ui-autocomplete-loading');
@@ -504,7 +502,7 @@
                 id: ui.item.data.id
               },
               success: function( data ) {
-                window.editor.setData(data.html);
+                editor.setData(data.html);
                 $('#new-content-save').removeClass('disabled');
                 $("#new-content-tag").removeClass('ui-autocomplete-loading');
               }
@@ -558,7 +556,7 @@
           $("#new-content-tag").autocomplete("enable");
         });
 
-        initClient();
+        //initClient();
       });
       </script>
 
