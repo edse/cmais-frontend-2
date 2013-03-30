@@ -1709,6 +1709,9 @@ EOT;
     $source = false;
     if($request->getParameter('source'))
       $source = $request->getParameter('source');
+    $callback = false;
+    if($request->getParameter('callback'))
+      $callback = $request->getParameter('callback');
       
     if(($query)&&(!$save)){
       //Astolfo
@@ -1774,7 +1777,10 @@ EOT;
               fclose($file);
               die("http://".$url);
             }else{
-              die($content);
+              if(!$callback)
+                die($content);
+              else
+                die($request->getParameter('callback')."(".json_encode(array("html"=>$content)).")");
             }
             die();
             
@@ -1887,10 +1893,10 @@ EOT;
                 fclose($file);
                 die("http://".$url);
               }else{
-                echo $info;
-                echo $images;
-                echo $text;
-                die();
+                if(!$callback)
+                  die($info.$images.$text);
+                else
+                  die($request->getParameter('callback')."(".json_encode(array("html"=>$info.$images.$text)).")");
               }
             }
             die();
