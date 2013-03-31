@@ -1922,6 +1922,10 @@ EOT;
       $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
       $file = fopen($cache_folder."/".$url, "w");
       fwrite($file, $html);
+      if($source == "mannual"){
+        $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
+        fwrite($file, $footer);
+      }
       fclose($file);
       die("http://".$url);
     }
