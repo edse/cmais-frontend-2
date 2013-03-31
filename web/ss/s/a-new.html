@@ -147,7 +147,6 @@
 
               <hr />
               <div class="controls" style="clear: both;">
-                <a id="new-content-edit" class="btn btn-mini btn-warning" style="display: none;"><i class="icon-pencil icon-white"></i> Edit</a>
                 <a id="new-content-save" class="btn btn-mini btn-success disabled"><i class="icon-ok icon-white"></i> Save</a>
                 <a id="new-content-cancel" class="btn btn-mini btn-danger"><i class="icon-remove icon-white"></i> Cancel</a>
               </div>
@@ -310,13 +309,13 @@
                 payload.action = "addcontent";
                 var data = new Object();
                 data.type = $('#new-content-type option:selected').val();
-                data.tag = $('#new-content-tag').val();
+                data.tag = $("#new-content-tag").val();
                 data.source = $('#new-content-source').val();
                 data.id = $('#new-content-id').val();
                 data.url = url;
                 payload.data = data;
                 $("#new-content-type:selected").removeAttr("selected");
-                $('#new-content-tag').val("");
+                $("#new-content-tag").val("");
                 $('#new-content-source').val("")
                 $('#new-content-id').val("");
                 $('#new-content-btn').removeClass("disabled")
@@ -396,7 +395,7 @@
                 html += '<td>'+serverinfo.contents[j].type+'</td>';
                 html += '<td>'+serverinfo.contents[j].tag+'</td>';
                 html += '<td><a class="btn btn-mini btn-danger removecontent" style="margin-right: 5px;" rel="'+j+'"><i class="icon-remove icon-white"></i> Delete</a>';
-                //html += '<a class="btn btn-mini btn-warning pull-right editcontent" style="margin-left: 5px;" rel="'+j+'"><i class="icon-edit icon-white"></i> Edit</a>';
+                //html += '<a class="btn btn-mini btn-warning editcontent" style="margin-left: 5px; display: '+vis+';" rel="'+j+'"><i class="icon-edit icon-white"></i> Edit</a>';
                 html += '<a class="btn btn-mini btn-danger bancontent'+dis2+'" style="margin-right: 5px; display: '+vis+';" rel="'+j+'"><i class="icon-ban-circle icon-white"></i> Ban</a>';
                 html += '<a class="btn btn-mini btn-success sendcontent'+dis+'" rel="'+j+'"><i class="icon-play icon-white"></i> Send</a></td></tr>';
   
@@ -455,17 +454,22 @@
                 query: request.term
               },
               success: function( data ) {
-                response( $.map( data.suggestions, function( item ) {
-                  var tag = item.value;
-                  tag = tag.replace('Astolfo: ', '');
-                  tag = tag.replace('Wikipedia: ', '');
-                  
-                  return {
-                    label: item.value,
-                    value: tag,
-                    data: item.data
-                  }
-                }));
+                console.log(data);
+                if(data.suggestions!=null){
+                  response( $.map( data.suggestions, function( item ) {
+                    var tag = item.value;
+                    tag = tag.replace('Astolfo: ', '');
+                    tag = tag.replace('Wikipedia: ', '');
+                    
+                    return {
+                      label: item.value,
+                      value: tag,
+                      data: item.data
+                    }
+                  }));
+                }else{
+                  $("#new-content-tag").removeClass('ui-autocomplete-loading');
+                }
               }
             });
           },
@@ -512,24 +516,13 @@
           self.location.href='a.php?restart';
         });
 
-        $('#new-content-tag').bind('keypress', function(e) {
-          var code = (e.keyCode ? e.keyCode : e.which);
-          if(code == 13 && this.value) {
-            saveContent();
-            return false;
-          }
-        });
-  
-        $('#new-content-edit').click(function() {
-          $('#new-content-edit').hide();
-          $('#new-content-save').addClass('disabled').hide();
-          $('#cke_new-content-html-c').show();
+        $("#new-content-tag").focus(function() {
+          $("#new-content-tag").removeClass('ui-autocomplete-loading');
         });
 
         $('#new-content-save').click(function() {
           if($(this).hasClass("disabled")) return false;
-          $('#new-content-tag').show();
-          $('#new-content-edit').hide();
+          $("#new-content-tag").show();
           $('#new-content-save').addClass('disabled').hide();
           $('#cke_new-content-html-c').show();
           saveContent();
@@ -538,15 +531,17 @@
         $('#new-content-btn').click(function() {
           if($(this).hasClass("disabled")) return false;
           $(this).addClass("disabled");
+          $("#new-content-tag").removeClass('ui-autocomplete-loading');
           $('#new-content-save').removeClass('disabled').show();
           $('#new-content').show();
-          $('#new-content-tag').focus();
+          $("#new-content-tag").focus();
         });
 
         $('#new-content-cancel').click(function() {
           if($(this).hasClass("disabled")) return false;
           $("#new-content-type:selected").removeAttr("selected");
-          $('#new-content-tag').val("");
+          $("#new-content-tag").removeClass('ui-autocomplete-loading');
+          $("#new-content-tag").val("");
           $('#new-content-btn').removeClass("disabled")
           $('#new-content').hide();
         });
