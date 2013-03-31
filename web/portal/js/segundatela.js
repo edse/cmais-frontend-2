@@ -129,24 +129,6 @@ $(document).ready(function() {
     if(data.id == "116131"){
       $('#box-clock').fadeIn('slow');
     }
-
-    /*
-    $.ajax({
-      url:"http://cmais.com.br/ajax/fetchurl",
-      data: {url: data.url},
-      dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-      success:function(json){
-        // do stuff with json (in this case an array)
-        //alert(json);
-        $('#id'+data.handler).html(json.html);
-        onYouTubeIframeAPIReady2();
-      },
-      error:function(){
-        alert("Error");
-      },
-    });
-    */
-    
     return;
   };
   
@@ -156,9 +138,11 @@ $(document).ready(function() {
     data: {url: "http://200.136.27.32:8080/log/contents.json"},
     dataType: 'jsonp',
     success:function(json){
-      $.each(json, function( key, value ) {
-        contentInfo(value);
-      });
+      if(json!=null){
+        $.each(json, function( key, value ) {
+          contentInfo(value);
+        });
+      }
     }
   });  
   
