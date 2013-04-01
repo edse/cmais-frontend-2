@@ -51,7 +51,8 @@
     var t=setInterval("timer2()",60000);
   });
 
-  function updateTweets() {
+  /*
+   function updateTweets() {
     $.ajax({
       url: "/ajax/tweetmonitor",
       data: "monitor_id=4",
@@ -66,6 +67,7 @@
     var t=setInterval("updateTweets()",10000);
     
   });
+  */
 </script>
 
 
@@ -192,7 +194,9 @@
           				<div class="repercussao">
           					<h2><span>Repercussão</span></h2>
           					<div class="grid1">
-			                  <div id="twitter"></div>
+			                  <!--div id="twitter"></div-->
+                        <a class="twitter-timeline" href="https://twitter.com/search?q=%23rodaviva" data-widget-id="317371676063039488">Tweets sobre "#rodaviva"</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			              </div>
           				</div>
           			</div>
