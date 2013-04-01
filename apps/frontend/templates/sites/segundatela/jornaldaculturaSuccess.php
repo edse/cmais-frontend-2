@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="col-dir">
-      <div id="box-clock">
+      <div id="box-clock" style="display: none;">
         <div id="no-ar">
          <p>no ar</p>
          <ul style="width: 47px;">
@@ -78,7 +78,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="tvcultura.cmais.com.br/segundatela/jornaldacultura" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
@@ -94,7 +94,7 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>    
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
   <script>
     $(document).ready(function() {
     // Create two variable with the names of the months and days in an array

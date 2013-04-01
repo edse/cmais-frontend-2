@@ -1645,17 +1645,20 @@ EOT;
 
 
   public function executeSearch(sfWebRequest $request){
+    $this->setLayout(false);
+    header("content-type: application/json");
     if($request->getParameter('query')!=""){
       $query = $request->getParameter('query');
       //Astolfo
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a')
+        ->andWhere('a.id > 103221')
+        ->andWhere('a.is_active = 1')
         ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
-        ->andWhere('a.title LIKE ?', '%'.$query.'%')
-        ->limit(5)
+        ->andWhere('a.title LIKE ?', $query.'%')
+        ->limit(20)
         ->execute();
-      $this->setLayout(false);
       if($assets){
         foreach($assets as $a){
           $result[] = array("value"=>"Astolfo: ".$a->getTitle(), "data"=>array("source"=>"Astolfo", "id"=>$a->getId()));
@@ -1673,14 +1676,18 @@ EOT;
           $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
-      
-      echo json_encode(array("suggestions"=>$result));
+        //echo $request->getParameter('featureClass')."(".json_encode($result).")";
+      if($request->getParameter('callback')!="")
+        echo $request->getParameter('callback')."(".json_encode(array("suggestions"=>$result)).")";
+      else
+        echo json_encode(array("suggestions"=>$result));
       die();
     }
   }
 
   public function executeFetch(sfWebRequest $request){
     $this->setLayout(false);
+    header("content-type: application/json");
 
     $contents_folder = "/var/frontend/web/cache/cmais.com.br/segundatela/contents";
     //$contents_folder = "/Users/emersonestrella/Documents/Aptana Studio 3 Workspace/ss/cache/contents";
@@ -1704,16 +1711,20 @@ EOT;
     $source = false;
     if($request->getParameter('source'))
       $source = $request->getParameter('source');
+    $callback = false;
+    if($request->getParameter('callback'))
+      $callback = $request->getParameter('callback');
       
     if(($query)&&(!$save)){
       //Astolfo
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a')
-        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
+        ->andWhere('a.id > 103221')
         ->andWhere('a.is_active = 1')
+        ->where('a.asset_type_id = 1 OR a.asset_type_id = 6 OR a.asset_type_id = 10')
         ->andWhere('a.title LIKE ?', $query.'%')
-        ->limit(5)
+        ->limit(20)
         ->execute();
       if($assets){
         foreach($assets as $a){
@@ -1724,23 +1735,27 @@ EOT;
       //Wikipedia
       $opts = array('http' => array('user_agent' => 'Astolfo/1.0 (http://cmais.com.br)'));
       $context = stream_context_create($opts);
-      $url = 'http://pt.wikipedia.org/w/api.php?action=query&list=allpages&format=json&apprefix='.urlencode($query).'&aplimit=5';
+      $url = 'http://pt.wikipedia.org/w/api.php?action=query&list=allpages&format=json&apprefix='.urlencode($query).'&aplimit=20';
       $wiki_results = json_decode(file_get_contents($url, FALSE, $context));
       if($wiki_results->query->allpages){
         foreach ($wiki_results->query->allpages as $key => $value) {
           $result[] = array("value"=>"Wikipedia: ".$value->title, "data"=>array("source"=>"Wikipedia", "id"=>$value->pageid));
         }
       }
-    
-      echo json_encode(array("suggestions"=>$result));
+
+      if($request->getParameter('callback')!="")
+        echo $request->getParameter('callback')."(".json_encode(array("suggestions"=>$result)).")";
+      else
+        echo json_encode(array("suggestions"=>$result));
       die();
       
-    }elseif(!$html){ 
+    }elseif(!$html){
       //Astolfo, Wikipedia or Mannual
       if($id){
         if($source){
           //Astolfo
           if($source == "Astolfo"){
+            $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
             $asset = Doctrine::getTable('Asset')->findOneById($id);
             if($asset->AssetType->getSlug() == "content")
               $content = "<p>".$asset->AssetContent->render()."</p>";
@@ -1764,17 +1779,20 @@ EOT;
               $file = fopen("/var/frontend/web/cache/".$url, "w");
               */
               fwrite($file, $content);
-              $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
               fwrite($file, $footer);
               fclose($file);
               die("http://".$url);
             }else{
-              die($content);
+              if(!$callback)
+                die($content.$footer);
+              else
+                die($request->getParameter('callback')."(".json_encode(array("html"=>$content.$footer)).")");
             }
             die();
             
           }
           elseif($source == "Wikipedia"){
+            $footer = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
             $opts = array('http' => array('user_agent' => 'Astolfo/1.0 (http://cmais.com.br)'));
             $context = stream_context_create($opts);
             $url = 'http://pt.wikipedia.org/w/api.php?action=parse&format=json&pageid='.$id.'&prop=text%7Cimages';
@@ -1794,7 +1812,6 @@ EOT;
               $text = "";
               $info = "";
               $images = "";
-              $footer = '<br /><a href="http://pt.wikipedia.org/wiki/'.$wiki_results["parse"]["title"].'" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
         
               //Infobox
               /*
@@ -1882,10 +1899,10 @@ EOT;
                 fclose($file);
                 die("http://".$url);
               }else{
-                echo $info;
-                echo $images;
-                echo $text;
-                die();
+                if(!$callback)
+                  die($info.$images.$text.$footer);
+                else
+                  die($request->getParameter('callback')."(".json_encode(array("html"=>$info.$images.$text.$footer)).")");
               }
             }
             die();
@@ -1897,18 +1914,18 @@ EOT;
       $id = time();
       if(!$source)
         $source = "mannual";
-      if(strtolower($source) != "wikipedia")
-        $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
       else
-        $footer = '<br /><a href="http://pt.wikipedia.org" target="_blank"><img class="wiki-logo" src="http://cmais.com.br/portal/images/logowikipedia.png" style="margin-bottom:15px;" /></a>';
+        $source = strtolower($source);
       if(!is_dir($contents_folder."/".strtolower($source)."-".strtolower($id))){
         mkdir($contents_folder."/".strtolower($source)."-".strtolower($id));
       }
       $url = $contents_url."/".strtolower($source)."-".strtolower($id)."/index.html";
       $file = fopen($cache_folder."/".$url, "w");
-      //$file = fopen($folder."/".$url, "w+");
       fwrite($file, $html);
-      fwrite($file, $footer);
+      if($source == "mannual"){
+        $footer = '<br /><a href="http://cmais.com.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png" style="margin-bottom:15px;" /></a>';
+        fwrite($file, $footer);
+      }
       fclose($file);
       die("http://".$url);
     }
@@ -1920,7 +1937,7 @@ EOT;
       $this->setLayout(false);
       header("content-type: application/json");
       $res = array();
-      if(($request->getParameter('url')=="http://200.136.27.32:8080/log/contents.json")||($request->getParameter('url')=="http://200.136.27.32:8080/log/last-content.json")||($request->getParameter('url')=="http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-2013-03-26.json")){
+      if(($request->getParameter('url')=="http://200.136.27.32:8080/log/contents.json")||($request->getParameter('url')=="http://200.136.27.32:8080/log/last-content.json")){
         $res = json_decode(file_get_contents($request->getParameter('url')));
       }else{
         $res["html"] = file_get_contents($request->getParameter('url'));
