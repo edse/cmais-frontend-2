@@ -56,7 +56,7 @@
             <div class="btn-group">
               <a id="admin" class="btn btn-primary btn-mini"><i class="icon-refresh icon-white"></i> Refresh</a>
             </div>
-            <div class="btn-group">
+            <div class="btn-group hide">
               <a id="restart" class="btn btn-danger btn-mini disabled"><i class="icon-refresh icon-white"></i> Restart</a>
               <a id="stop" class="btn btn-danger btn-mini disabled"><i class="icon-stop icon-white"></i> Stop</a>
               <a id="start" class="btn btn-danger btn-mini disabled"><i class="icon-play icon-white"></i> Start</a>
@@ -69,7 +69,8 @@
       
     </div>
     
-    <div class="container-fluid" style="padding-top: 15px;">
+    
+    <div class="container-fluid" style="margin-top: 15px;">
       
       <div class="row-fluid server-status hide">
         
@@ -156,7 +157,7 @@
               <h4>Content List</h4>
             </div>
 
-            <table class="table table-hover table-condensed">
+            <table class="table table-striped table-hover table-condensed">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -212,9 +213,9 @@
         
         socket2.binaryType = 'blob';
         socket2.onopen = function(msg) {
-          //$('#start').addClass('disabled');
-          //$('#stop').removeClass('disabled');
-          //$('#restart').removeClass('disabled');
+          $('#start').addClass('disabled');
+          $('#stop').removeClass('disabled');
+          $('#restart').removeClass('disabled');
           $('.server-status').show();
           $('.game-questions').show();
           return $('#status a').removeClass("btn-danger").addClass('btn-success').html('connected');
@@ -473,7 +474,7 @@
             });
           },
           select: function( event, ui ) {
-            console.log( ui.item ? "Selected: " + ui.item.label : "Nothing selected, input was " + this.value);
+            //console.log( ui.item ? "Selected: " + ui.item.label : "Nothing selected, input was " + this.value);
             editor.setData(null);
             $('#new-content-save').show();
             $('#new-content-save').addClass('disabled');
