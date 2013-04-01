@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -33,10 +33,27 @@
       </div>
     </div>
     <div class="col-dir">
+      <div id="box-clock" style="display: none;">
+        <div id="no-ar">
+         <p>no ar</p>
+         <ul style="width: 47px;">
+          <li id="hours"> </li>
+          <li id="point">:</li>
+          <li id="min"> </li>
+          <!--
+          <li id="point">:</li>
+          <li id="sec"> </li>
+          -->
+        </ul>
+        </div>
+
+      </div>  
       <div class="menu-jc">
-        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
-        <br/>
-        <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <ul>
+          <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><li><!--span class="barra">|</span-->
+          <li><p class="online hide" style="color: green">Conectado</p></li>
+          <li><p class="offline">Desconectado</p></li>
+          </ul>
       </div>
     </div>
   </div>
@@ -61,7 +78,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="tvcultura.cmais.com.br/segundatela/jornaldacultura" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
@@ -77,4 +94,40 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>    
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
+  <script>
+    $(document).ready(function() {
+    // Create two variable with the names of the months and days in an array
+    var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+    var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    
+    // Create a newDate() object
+    var newDate = new Date();
+    // Extract the current date from Date object
+    newDate.setDate(newDate.getDate());
+    // Output the day, date, month and year    
+    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+    
+    setInterval( function() {
+      // Create a newDate() object and extract the seconds of the current time on the visitor's
+      var seconds = new Date().getSeconds();
+      // Add a leading zero to seconds value
+      $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+      },1000);
+      
+    setInterval( function() {
+      // Create a newDate() object and extract the minutes of the current time on the visitor's
+      var minutes = new Date().getMinutes();
+      // Add a leading zero to the minutes value
+      $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+        },1000);
+      
+    setInterval( function() {
+      // Create a newDate() object and extract the hours of the current time on the visitor's
+      var hours = new Date().getHours();
+      // Add a leading zero to the hours value
+      $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+        }, 1000);
+      
+    });
+      </script>

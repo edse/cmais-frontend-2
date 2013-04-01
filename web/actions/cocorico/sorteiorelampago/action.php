@@ -3,9 +3,9 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     
-    $to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com, rhcsousa@gmail.com"; 
-    ini_set('sendmail_from', $email_site);
-    //$to = "maiscriancatvcultura@gmail.com";
+    //$to = "maiscriancatvcultura@gmail.com, cristovamruizjr@gmail.com, rhcsousa@gmail.com";
+    $to = "maiscriancatvcultura@gmail.com, rhcsousa@gmail.com"; 
+    //ini_set('sendmail_from', $to);
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $subject = '[Cocoricó][TV Cocoricó][Páscoa Cocoricó] '.$name.' <'.$email.'>';

@@ -68,7 +68,7 @@ class _sectionActions extends sfActions
       // current site
       $this->site = $this->section->Site;
       
-      if(in_array($this->section->Site->getSlug(), array("segundatela"))) {
+      if($this->section->Site->getSlug() == "segundatela") {
         if($this->section->getSlug() != "aovivo")
           $this->setLayout('segundatela');
       }
@@ -1108,6 +1108,16 @@ class _sectionActions extends sfActions
       $this->site_id = $request->getParameter('site_id');
 
     $sectionSlug = $this->section->getSlug();
+    
+    if($this->section->Site->getSlug() == "segundatela") {
+      //if($this->section->getSlug() != "29-03-2013" && $this->section->getSlug() != "jornaldacultura")
+      if($this->section->getSlug() != "jornaldacultura")
+        $sectionSlug = 'offline';
+      else
+        $sectionSlug = 'jornaldacultura';
+      $this->date = @end(explode("/", $this->url)); 
+    }
+    
     
     if($this->site->slug == 'culturafm'){
       if(in_array($sectionSlug, array('fale-conosco','faleconosco','contato')))
