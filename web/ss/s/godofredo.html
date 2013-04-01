@@ -297,6 +297,7 @@
           $.ajax({
             url: "/ajax/fetch",
             data: {
+              source: $('#new-content-source').val(),
               save: 1,
               html: editor.getData()
             },
@@ -460,7 +461,6 @@
                     var tag = item.value;
                     tag = tag.replace('Astolfo: ', '');
                     tag = tag.replace('Wikipedia: ', '');
-                    
                     return {
                       label: item.value,
                       value: tag,
@@ -475,7 +475,7 @@
           },
           select: function( event, ui ) {
             //console.log( ui.item ? "Selected: " + ui.item.label : "Nothing selected, input was " + this.value);
-            editor.setData(null);
+            editor.setData("");
             $('#new-content-save').show();
             $('#new-content-save').addClass('disabled');
             $("#new-content-tag").addClass('ui-autocomplete-loading');
