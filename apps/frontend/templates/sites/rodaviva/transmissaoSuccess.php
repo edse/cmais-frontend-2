@@ -40,13 +40,15 @@
     var t=setInterval("timer1()",60000);
   });
   */
- 
+  var test = getParameterByName('test');
+  
   function broadcastEnd(){
     var request = $.ajax({
       data: {
         channel_id: <?php echo $site->Program->Channel->id ?>,
         program_id: <?php echo $site->Program->id ?>,
-        url_out: '<?php echo $site->retriveUrl() ?>'
+        url_out: '<?php echo $site->retriveUrl() ?>',
+        test: test
       },
       dataType: 'jsonp',
       success: function(data) {
