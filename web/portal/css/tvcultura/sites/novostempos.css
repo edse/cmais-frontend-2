@@ -57,7 +57,14 @@ i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-rep
 
 
 @media screen and (max-width: 768px){
+  .row-fluid a { font-size: 18px; line-height: 20px;  }
+  i.seta { margin-top:6px; }
   .topo .nav > li > a { font-size: 12px; padding:8px 5px; }
+  
+}
+
+@media screen and (max-width: 760px){
+  .row-fluid .span6 { clear:both; }
 }
 
 @media screen and (max-width: 480px){
@@ -65,4 +72,7 @@ i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-rep
   .topo .span4 { min-width:100%; text-align:center; }
   .redes,
   .nav.nav-pills { max-width:100%; float:left !important; margin:0 0 10px 20px !important; }
+  .row-fluid a { font-size: 14px; line-height: 16px;  }
+  i.seta { margin-top:2px; }
+
 }
