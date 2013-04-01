@@ -49,17 +49,21 @@
 .row-fluid img { margin:40px 0 20px 0; }
 i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:12px 5px 0 0; }
 .row-fluid a { font-weight: bold; float:right; margin:10px 0;  }
+.row-fluid ul a,
+.row-fluid a.btn-voltar,
 .row-fluid p a { font-weight:normal; float:none; margin:0; color:#333; font-size:14px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; text-decoration:underline; }
 .row-fluid p span { font-weight: bold; margin-bottom: 10px; display:block; }
 .row-fluid .span6.link { float:right; width: auto; display:block; }
 .estreia { background:#1b4a87; color:#fff; padding:0 5px; line-height: 23px; float:left; }
 .tudo { margin-bottom:200px; }
-
+.row-fluid ul a { text-decoration:none; }
+.row-fluid ul a:hover { text-decoration:underline; }
 
 @media screen and (max-width: 768px){
   .row-fluid a { font-size: 18px; line-height: 20px;  }
   i.seta { margin-top:6px; }
   .topo .nav > li > a { font-size: 12px; padding:8px 5px; }
+  
   
 }
 
@@ -76,3 +80,8 @@ i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-rep
   i.seta { margin-top:2px; }
 
 }
+
+.row-fluid a { font-size: 20px\9; line-height: 22px\9;  }
+i.seta { margin-top:6px\9; }
+
+.row-fluid a.btn-voltar { float:left; text-decoration:none;  background:url(/portal/images/capaPrograma/novostempos/voltar.png) no-repeat left center; padding-left:17px; }

@@ -1580,6 +1580,8 @@ EOT;
     $url_out = $request->getParameter('url_out');
     $program_id = $request->getParameter('program_id');
     $channel_id = $request->getParameter('channel_id');
+    $test = $request->getParameter('test');
+    
     if($channel_id <= 0)
       $channel_id = 1;
     $schedules = Doctrine_Query::create()
@@ -1593,7 +1595,7 @@ EOT;
       ->orderBy('s.date_start asc')
       ->limit('1')
       ->execute();
-    if((isset($schedules)) && (count($schedules) > 0)){
+    if((isset($schedules) && count($schedules) > 0) || $test == "1"){
       $return .= "";
     }else{
       $return .= "self.location.href='".$url_out."'";

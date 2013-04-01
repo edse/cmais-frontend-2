@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/deupaulanatv.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
+/*
 function updateTweets(){
   $.ajax({
     url: "/index.php/ajax/tweetmonitor",
@@ -14,6 +15,7 @@ $(function(){ //onready
   updateTweets();
   var t=setTimeout("updateTweets()",10000);
 });
+*/
 </script>
 
 <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
@@ -106,6 +108,7 @@ $(function(){ //onready
                 <div class="grid1">
                   <a href="http://twitter.com/deupaulanatv" class="twitter-follow-button" target="_blank">Siga @deupaulanatv</a>
                   <style>
+                    /*
                     #twitter {border:1px solid #666}
                     #twitter .topo-fb { background-color:#666; overflow:hidden; padding:10px;}
                     #twitter .avatar { margin-right:10px; float:left; }
@@ -122,8 +125,11 @@ $(function(){ //onready
                     #twitter ul li p {margin-left:50px; padding-right:10px;}
                     #twitter ul li:last-child {border:none; margin-bottom:10px;}
                     #twitter .respiro {background:#ffffff; height:20px; display:none;}
+                    */
                   </style>
-                  <div id="twitter"></div>
+                  <!-- <div id="twitter"></div> -->
+                  <a class="twitter-timeline" href="https://twitter.com/deupaulanatv" data-widget-id="317383631679127552">Tweets de @deupaulanatv</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   <hr />
                 </div>
               <!-- /BOX TWITTER -->

@@ -139,12 +139,12 @@
       <div class="span2">
         <ul>
           <li class="tit">Pela Web</li>
-          <li><a title="Facebook" href="http://www.facebook.com/tvcultura">Facebook</a></li>
-          <li><a title="Flickr" href="http://www.flickr.com/photos/televisaocultura">Flickr</a></li>
-          <li><a title="Google+" href="https://google.com/+tvcultura">Google+</a></li>
-          <li><a title="Instagram" href="http://statigr.am/tvcultura">Instagram</a></li>
-          <li><a title="Twitter" href="http://twitter.com/#!/tvcultura">Twitter</a></li>
-          <li><a title="Youtube" href="http://www.youtube.com/cultura">Youtube</a></li>
+          <li><a title="Facebook" href="http://www.facebook.com/tvcultura" target="_blank">Facebook</a></li>
+          <li><a title="Flickr" href="http://www.flickr.com/photos/televisaocultura" target="_blank">Flickr</a></li>
+          <li><a title="Google+" href="https://google.com/+tvcultura" target="_blank">Google+</a></li>
+          <li><a title="Instagram" href="http://statigr.am/tvcultura" target="_blank">Instagram</a></li>
+          <li><a title="Twitter" href="http://twitter.com/#!/tvcultura" target="_blank">Twitter</a></li>
+          <li><a title="Youtube" href="http://www.youtube.com/cultura" target="_blank">Youtube</a></li>
         </ul>
         <ul>
           <li><a class="tit" href="http://www2.tvcultura.com.br/fpa/">Fundação Padre Anchieta</a></li>

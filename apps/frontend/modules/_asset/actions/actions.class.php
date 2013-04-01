@@ -576,6 +576,17 @@ class _assetActions extends sfActions
       $this->getResponse()->addMetaProp('og:video:height', '390');
       $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/0.jpg');
     }
+    elseif($this->asset->AssetType->getSlug() == "video-gallery"){
+      $rel = $this->asset->retriveRelatedAssetsByAssetTypeId(6);
+      if(count($rel)>0){
+        $this->getResponse()->addMetaProp('og:type', 'video');
+        $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$rel[0]->AssetVideo->getYoutubeId().'?version=3&amp;autohide=1');
+        $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
+        $this->getResponse()->addMetaProp('og:video:width', '640');
+        $this->getResponse()->addMetaProp('og:video:height', '390');
+        $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/default.jpg');
+      }
+    }
     elseif($this->asset->AssetType->getSlug() == "audio"){
       $this->getResponse()->addMetaProp('og:type', 'audio');
       $this->getResponse()->addMetaProp('og:audio', 'http://midia.cmais.com.br/assets/audio/default/'.$this->asset->AssetAudio->getFile().'.mp3');
@@ -598,12 +609,15 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/0.jpg');
         }
         elseif($rel[0]->AssetType->getSlug() == "video-gallery"){
+          $relatedVideos = $rel[0]->retriveRelatedAssetsByAssetTypeId(6);
+          if(count($relatedVideos)>0){
             $this->getResponse()->addMetaProp('og:type', 'video');
-            $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$related->AssetVideoGallery->getYoutubeId().'?version=3&amp;autohide=1');
+            $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$relatedVideos[0]->AssetVideo->getYoutubeId().'?version=3&amp;autohide=1');
             $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
             $this->getResponse()->addMetaProp('og:video:width', '640');
             $this->getResponse()->addMetaProp('og:video:height', '390');
-            $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$related->AssetVideoGallery->getYoutubeId().'/default.jpg');
+            $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$relatedVideos[0]->AssetVideo->getYoutubeId().'/0.jpg');
+          }
         }
         elseif($rel[0]->AssetType->getSlug() == "audio"){
           /*

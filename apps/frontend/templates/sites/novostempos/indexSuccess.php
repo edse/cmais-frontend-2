@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/novostempos.css" type="text/css" />
 <!-- topo -->
 <div class="topo">
-  <div class="container">
+  <div class="container" id="voltar">
     <div class="span4">
       <h1><a href="http://tvcultura.cmais.com.br/novostempos" title="Novos Tempos"><img src="/portal/images/capaPrograma/novostempos/logo.png" alt="Novos Tempos" /></a></h1>
       <div class="redes">
@@ -52,7 +52,7 @@
 <!-- /topo -->
 <!-- tudo -->
 <div class="container tudo">
-  <!-- Example row of columns -->
+  <!-- row of columns -->
   <div class="row-fluid">
     <h2>Uma grade para os novos tempos</h2>
     <div class="row-fluid">
@@ -84,6 +84,7 @@
         </p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /qss -->
   
@@ -106,6 +107,7 @@
         <p>Cocoricó Conta Clássicos pretende fazer a criança refletir sobre os valores apresentados nos contos de fadas. Alguns dos títulos desta temporada são: Cocoricunda; Rapunzilica; Os Cigarras e as Formigas; João e Mariba; e Dita de Neve e os Sete Anões. O programa é dirigido por Fernando Gomes.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /cocorico -->
   
@@ -126,6 +128,7 @@
         <p>A série é uma realização da TV Pinguim, com direção de Kiko Mistrorigo, criador da animação Peixonauta e vai misturar os personagens do desenho com crianças de verdade.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /peixonauticos -->
   
@@ -140,14 +143,15 @@
         
         <p>A nave S.S. Geniwald pousa na Lua Ervilha mas precisa voltar à Terra. Só que o capitão é o garoto Nilba, que não é lá muito sabido como a tripulação pensava que fosse.</p>
         
-        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30; e 
-          <br/>à tarde, a partir das 14h30</p>
+        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30;  
+          <br/>e à tarde, a partir das 14h30</p>
       </div>
       <div class="span6">
         <p>A série Nilba e os Desastronautas, uma coprodução entre a 44 Toons e a Fundação Padre Anchieta, chega à tela da TV Cultura no dia 1º de abril. No mesmo mês, estreia no canal pago americano Starz, nos Estados Unidos, que comprou a série coproduzida pela TV Rá Tim Bum!.</p>
         <p>Muitas aventuras esperam pelo comandante Nilba, um garoto de oito anos, e pela tripulação da S.S. Geniwald quando precisam pousar a nave em um ponto remoto na galáxia chamado Lua Ervilha, um minúsculo astro celeste. Para conseguir retornar à Terra todos terão que confiar nas inadequadas estratégias traçadas pelo inexperiente e divertido capitão Nilba.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /nilba -->
   
@@ -161,13 +165,14 @@
       <div class="span6">
         <p>Um robô atrapalhado, que faz muita confusão para conseguir concluir sua tarefa no nosso Planeta. E ainda encontra um vilão, o robô T.A.T.U.</p>
         <p>Em uma galáxia muito distante, uma civilização avançada prepara uma expedição para investigar a Terra. A missão será executada pelo robô</p>
-        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30; e 
-          <br/>à tarde, a partir das 14h30</p>
+        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30;  
+          <br/>e à tarde, a partir das 14h30</p>
       </div>
       <div class="span6">
         <p>T.R.EX.C.I., que deve armazenar e transmitir todas as informações sobre a vida em nosso planeta e suas transformações. Esse conhecimento será utilizado para a proteção da natureza e dos próprios humanos. Meio atrapalhado, T.R.EX.C.I. procura cumprir bem sua tarefa, mas se depara com um vilão. É o terrível robô alienígena T.A.T.U., que cria planos mirabolantes para roubar as informações coletadas pelo rival. A ideia da animação, produzida pela TV Rá Tim Bum!, é despertar a curiosidade sobre a evolução da vida e da tecnologia na Terra.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /trexci -->
   
@@ -188,6 +193,7 @@
         <p>A série se passa em um mundo fantástico onde a vida é um café da manhã: as caixas de cereais são prédios, colheres são postes e as ruas são toalhas de mesa. Entristecido, Osmar vai consultar o psicólogo Pierre Croix Saint e tenta se transformar em um cara popular e admirado , mas acaba se envolvendo em muitas confusões. Osmar, a primeira fatia do pão de forma conta com 11 episódios de 26 minutos. A série, produzida pela 44 Toons com direção de Alê McHaddo, é mais uma parceria da Fundação Padre Anchieta com a produtora.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /osmar -->
   
@@ -210,6 +216,7 @@
         <p>Com 14 episódios de 11 minutos cada, a série foi produzida pela Glaz Entretenimento, com direção de Victor-Hugo Borges, um dos mais premiados diretores de filmes de animação do país.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /historietas -->
   
@@ -232,6 +239,7 @@
         <p> Crema, são-paulino também de 9; o palmeirense Eric Lanfredi, 12; e o santista Matheus Ribeiro, 10), a partir do dia 30 de março o programa terá meia hora no ar e passará a contar com uma nova apresentadora, Paula Vilhena. A atração ainda será exibida ao vivo, sempre aos sábados, às 16h30.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /cartaozinho -->
   
@@ -257,6 +265,7 @@
         <p>Os personagens principais são vividos por Giovanni Gallo, como Pedro, e Heslaine Vieira, a Bianca. O elenco conta com a participação de Gorete Milagres, como a mãe, Zuzu, e de Thogun Teixeira, no papel do pai, Edison. A série é um projeto Escola 2.0, produzido pela TV Cultura em parceria com a Secretaria da Educação do Estado de São Paulo por meio da Fundação para o Desenvolvimento da Educação.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /pedroebianca -->
   
@@ -284,6 +293,7 @@
          Maria Cristina Poli é apresentadora do Jornal da Cultura desde 2010. Vencedora do Troféu Mulher Imprensa 2012 na categoria Âncora de Telejornal, a jornalista começou na TV em 1979, no Programa Hebe Camargo, na TV Bandeirantes. Nos anos 90, na TV Cultura, apresentou o programa Vitrine e fez reportagens internacionais. Na TV Globo, foi repórter especial, com participação em eventos internacionais, e repórter exclusiva do programa Fantástico. Poli ainda soma em sua trajetória importantes trabalhos como âncora e editora-chefe no Jornal da Noite, na TV Bandeirantes.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /poli -->
   
@@ -309,6 +319,7 @@
         <p>O Guia do Dia será veiculado em multiplataforma. Transmitido pela Rádio Cultura Brasil (AM 1200), também vai interagir com as redes sociais (Twitter, Facebook etc).</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /guiadodia -->
   
@@ -332,6 +343,7 @@
         <p>Com realismo, Mad Men mostra como eram tratados no mundo da publicidade americana – e fora dele também – temas como tabagismo, alcoolismo, adultério, homofobia, racismo, sexo e antissemitismo.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /madmen -->
   
@@ -357,6 +369,7 @@
         <p><span>Uma série premiada</span>A atração recebeu o reconhecimento da crítica e do público como um dos melhores programas de televisão do Reino Unido. É citada no Guiness Book como a mais longa série de ficção científica do mundo. Sua primeira versão estreou em 1963.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /doctorwho -->
   
@@ -382,10 +395,12 @@
         <a href="http://cmais.com.br/culturadocumentarios" title="Cultura Documentários"><i class="seta"></i>cmais.com.br/culturadocumentarios</a>
         <a href="http://cmais.com.br/cinebrasil" title="Cinebrasil"><i class="seta"></i>cmais.com.br/cinebrasil</a>
         <a href="http://cmais.com.br/mostra" title="cmais.com.br/mostra"><i class="seta"></i>cmais.com.br/mostra</a>
-        <p class="estreia">
+        <p style="float:right;" class="estreia">
           Clube do Filme | Quinta, às 22h
           <br/>
-          Cultura Documentários | Segunda, terça e sexta-feira, à 00h, e domingo, às 15h
+          Cultura Documentários | Segunda, terça e sexta-feira, à 00h, 
+          <br/>
+          e domingo, às 15h
           <br/>
           Cine Brasil | Sábado, às 23h
           <br/>
@@ -394,6 +409,7 @@
         
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /mostra -->
   
@@ -416,6 +432,7 @@
         <p>As obras foram selecionadas e financiadas pela SEC por meio do edital do ProAC (Programação de Ação Cultural) e cada produção recebeu R$ 600 mil. A TV Cultura  forneceu estúdios e equipamentos e abriu uma janela para a exibição dos filmes selecionados.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /telefilmes -->
   
@@ -437,6 +454,7 @@
         <p>A estreia está prevista para dia 21 de abril. A exibição será semanal, sempre aos domingos, às 23h.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /etudoverdade -->
   
@@ -461,6 +479,7 @@
         </p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /classicos -->
   
@@ -468,42 +487,43 @@
   <div class="row-fluid" id="gradeatual">
     <img src="/portal/images/capaPrograma/novostempos/gradeatual.jpg" alt="Grade Atual" />
     <div class="row-fluid">
-      <h2 class="span6">As novidades se somam às atrações atuais</h2>
+      <h2 class="span6">As novidades se somam às <br/>atrações atuais</h2>
     </div>
     <div class="row-fluid">
       <div class="span6">
       <ul>
-        <li>Metrópolis</li>
-        <li>Roda Viva</li>
-        <li>Cartão Verde</li>
-        <li>Provocações</li>
-        <li>Pronto Atendimento</li>
-        <li>Jornal da Cultura</li>
-        <li>Repórter Eco</li>
-        <li>Matéria de Capa</li>
-        <li>Legião Estrangeira</li>
-        <li>Caçadores de Mitos</li>
-        <li>Mestres do Riso</li>
-        <li>Matinê Cultura</li>
+        <li><a href="http://tvcultura.cmais.com.br/metropolis" alt="Metrópolis" target="_blank">Metrópolis</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/rodaviva" alt="Roda Viva" target="_blank">Roda Viva</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/cartaoverde" alt="Cartão Verde" target="_blank">Cartão Verde</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/provocacoes" alt="Provocações" target="_blank">Provocações</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/prontoatendimento" alt="Pronto Atendimento" target="_blank">Pronto Atendimento</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/jornaldacultura" alt="Jornal da Cultura" target="_blank">Jornal da Cultura</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/reportereco" alt="Repórter Eco" target="_blank">Repórter Eco</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/materiadecapa" alt="Matéria de Capa" target="_blank">Matéria de Capa</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/legiaoestrangeira" alt="Legião Estrangeira" target="_blank">Legião Estrangeira</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/cacadoresdemitos" alt="Caçadores de Mitos" target="_blank">Caçadores de Mitos</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/mestresdoriso" alt="Mestres do Riso" target="_blank">Mestres do Riso</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/matinecultura" alt="Matinê Cultura" target="_blank">Matinê Cultura</a></li>
       </ul>
       </div>
       <div class="span6">
         <ul>
-          <li>Café Filosófico</li>
-          <li>Invenção do Contemporâneo</li>
-          <li>TV Folha</li>
-          <li>Planeta Terra</li>
-          <li>Quintal da Cultura</li>
-          <li>TV Cocricó</li>
-          <li>Viola, Minha Viola</li>
-          <li>Sr. Brasil</li>
-          <li>Cultura Livre</li>
-          <li>Ensaio</li>
-          <li>Manos e Minas</li>
-          <li>Vila Sésamo</li>
+          <li><a href="http://tvcultura.cmais.com.br/cafefilosofico" alt="Café Filosófico" target="_blank">Café Filosófico</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/invencaodocontemporaneo" alt="Invenção do Contemporâneo" target="_blank">Invenção do Contemporâneo</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/tvfolha" alt="TV Folha" target="_blank">TV Folha</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/planetaterra" alt="Planeta Terra" target="_blank">Planeta Terra</li>
+          <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" alt="Quintal da Cultura" target="_blank">Quintal da Cultura</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/tvcocorico" alt="TV Cocricó" target="_blank">TV Cocricó</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/viola" alt="Viola, Minha Viola" target="_blank">Viola, Minha Viola</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/srbrasil" alt="Sr. Brasil" target="_blank">Sr. Brasil</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/culturalivre" alt="Cultura Livre" target="_blank">Cultura Livre</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/ensaio" alt="Ensaio" target="_blank">Ensaio</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/manoseminas" alt="Manos e Minas" target="_blank">Manos e Minas</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/vilasesamo" alt="Vila Sésamo" target="_blank">Vila Sésamo</a></li>
         </ul>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /grade -->
   
@@ -525,6 +545,7 @@
         <p>O JC é o primeiro jornal da TV brasileira que trabalha com conteúdo paralelo e em tempo real. O webapp foi feito em linguagem HTML5 e usa a ferramenta WebSockets, que permite maior otimização e interação entre a emissora e o servidor. Com isso, a equipe de conteúdo pode trabalhar com outros formatos além do texto, como vídeos e arquivos de áudio. O jornalístico vai ao ar de segunda a sexta-feira às 21h, e aos sábados às 21h15.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /segundatela -->
   
@@ -546,6 +567,7 @@
         <p>A primeira edição da Vitrine publica, entre outras pautas, uma entrevista com a âncora do Jornal da Cultura, Maria Cristina Poli, que acabou de receber o prêmio Troféu Mulher Imprensa; uma reportagem especial sobre o novo game show e carro-chefe da programação deste ano, Quem Sabe, Sabe!; e uma entrevista com a escritora Lygia Fagundes Telles que, em abril, completa 90 anos.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /vitrine -->
   
@@ -567,6 +589,7 @@
         <p>A trilha sonora da série conta com as participações de Ivete Sangalo, que interpreta a música-tema de Narizinho; Carlinhos Brown, que canta o tema do Saci; e Lenine, a versão de Visconde de Sabugosa. Gilberto Gil assina e canta a música de abertura do Sitio do Picapau Amarelo. O tema de Pedrinho fica por conta de Jota Quest. Max Vianna interpreta a melodia do Tio Barnabé; o Cidade Negra, a de Quindim; Paulo Ricardo, a de Rabicó; e Cássia Eller dá voz à Cuca te Pega, música-tema da malvada Cuca. Pato Fu e Jorge Vercilo também marcam presença na trilha.</p>
       </div>
     </div>
+    <a class="btn-voltar" href="#voltar" title="voltar">voltar</a>
   </div>
   <!-- /sitio -->
 

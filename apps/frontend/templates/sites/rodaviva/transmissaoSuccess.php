@@ -40,13 +40,15 @@
     var t=setInterval("timer1()",60000);
   });
   */
- 
+  var test = getParameterByName('test');
+  
   function broadcastEnd(){
     var request = $.ajax({
       data: {
         channel_id: <?php echo $site->Program->Channel->id ?>,
         program_id: <?php echo $site->Program->id ?>,
-        url_out: '<?php echo $site->retriveUrl() ?>'
+        url_out: '<?php echo $site->retriveUrl() ?>',
+        test: test
       },
       dataType: 'jsonp',
       success: function(data) {
@@ -224,11 +226,11 @@
           		<div class="centroRV">
           			<div class="transmissaoH">
           				<ul>
+          				  <li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
           					<li><a href="javascript: stream1();" id="stream_tv" title="TV Cultura"><span>TV Cultura</span></a></li>
           					<li><a href="javascript: stream2();" id="stream_exclusiva" title="Câmera exclusiva"><span>Câmera exclusiva</span></a></li>
           					<!--li><a href="javascript: stream3();" id="stream_ustream" title="UStream"><span></span></a></li>
           					<li><a href="javascript: stream4();" id="stream_livestream" title="LiveStream"><span></span></a></li-->
-          					<li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
           				</ul>
           				<div class="boxVideo">
           					<script type="text/javascript">
