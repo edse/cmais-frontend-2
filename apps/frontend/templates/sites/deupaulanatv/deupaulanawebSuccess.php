@@ -5,6 +5,7 @@
 <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
 
 <script>
+/*
 function updateTweets(){
   $.ajax({
     url: "/index.php/ajax/tweetmonitor",
@@ -18,6 +19,7 @@ $(function(){ //onready
   updateTweets();
   var t=setTimeout("updateTweets()",10000);
 });
+*/
 </script>
 
 <?php use_helper('I18N', 'Date') ?>
@@ -309,7 +311,9 @@ $(function(){ //onready
                     #twitter .respiro {background:#ffffff; height:20px;}
                     */
                   </style>
-                  <div id="twitter"></div>
+                  <!-- <div id="twitter"></div> -->
+                  <a class="twitter-timeline" href="https://twitter.com/deupaulanatv" data-widget-id="317383631679127552">Tweets de @deupaulanatv</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   <hr />
             </div>
             <!-- /BOX TWITTER -->
