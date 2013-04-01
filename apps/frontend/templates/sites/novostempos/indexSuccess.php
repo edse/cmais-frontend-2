@@ -140,8 +140,8 @@
         
         <p>A nave S.S. Geniwald pousa na Lua Ervilha mas precisa voltar à Terra. Só que o capitão é o garoto Nilba, que não é lá muito sabido como a tripulação pensava que fosse.</p>
         
-        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30; e 
-          <br/>à tarde, a partir das 14h30</p>
+        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30;  
+          <br/>e à tarde, a partir das 14h30</p>
       </div>
       <div class="span6">
         <p>A série Nilba e os Desastronautas, uma coprodução entre a 44 Toons e a Fundação Padre Anchieta, chega à tela da TV Cultura no dia 1º de abril. No mesmo mês, estreia no canal pago americano Starz, nos Estados Unidos, que comprou a série coproduzida pela TV Rá Tim Bum!.</p>
@@ -161,8 +161,8 @@
       <div class="span6">
         <p>Um robô atrapalhado, que faz muita confusão para conseguir concluir sua tarefa no nosso Planeta. E ainda encontra um vilão, o robô T.A.T.U.</p>
         <p>Em uma galáxia muito distante, uma civilização avançada prepara uma expedição para investigar a Terra. A missão será executada pelo robô</p>
-        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30; e 
-          <br/>à tarde, a partir das 14h30</p>
+        <p class="estreia">Estreia: 1º de abril | Dentro do Quintal da Cultura, a partir das 9h30;  
+          <br/>e à tarde, a partir das 14h30</p>
       </div>
       <div class="span6">
         <p>T.R.EX.C.I., que deve armazenar e transmitir todas as informações sobre a vida em nosso planeta e suas transformações. Esse conhecimento será utilizado para a proteção da natureza e dos próprios humanos. Meio atrapalhado, T.R.EX.C.I. procura cumprir bem sua tarefa, mas se depara com um vilão. É o terrível robô alienígena T.A.T.U., que cria planos mirabolantes para roubar as informações coletadas pelo rival. A ideia da animação, produzida pela TV Rá Tim Bum!, é despertar a curiosidade sobre a evolução da vida e da tecnologia na Terra.</p>
@@ -385,7 +385,9 @@
         <p class="estreia">
           Clube do Filme | Quinta, às 22h
           <br/>
-          Cultura Documentários | Segunda, terça e sexta-feira, à 00h, e domingo, às 15h
+          Cultura Documentários | Segunda, terça e sexta-feira, à 00h, 
+          <br/>
+          e domingo, às 15h
           <br/>
           Cine Brasil | Sábado, às 23h
           <br/>
@@ -468,39 +470,39 @@
   <div class="row-fluid" id="gradeatual">
     <img src="/portal/images/capaPrograma/novostempos/gradeatual.jpg" alt="Grade Atual" />
     <div class="row-fluid">
-      <h2 class="span6">As novidades se somam às atrações atuais</h2>
+      <h2 class="span6">As novidades se somam às <br/>atrações atuais</h2>
     </div>
     <div class="row-fluid">
       <div class="span6">
       <ul>
-        <li>Metrópolis</li>
-        <li>Roda Viva</li>
-        <li>Cartão Verde</li>
-        <li>Provocações</li>
-        <li>Pronto Atendimento</li>
-        <li>Jornal da Cultura</li>
-        <li>Repórter Eco</li>
-        <li>Matéria de Capa</li>
-        <li>Legião Estrangeira</li>
-        <li>Caçadores de Mitos</li>
-        <li>Mestres do Riso</li>
-        <li>Matinê Cultura</li>
+        <li><a href="http://tvcultura.cmais.com.br/metropolis" alt="Metrópolis" target="_blank">Metrópolis</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/rodaviva" alt="Roda Viva" target="_blank">Roda Viva</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/cartaoverde" alt="Cartão Verde" target="_blank">Cartão Verde</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/provocacoes" alt="Provocações" target="_blank">Provocações</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/prontoatendimento" alt="Pronto Atendimento" target="_blank">Pronto Atendimento</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/jornaldacultura" alt="Jornal da Cultura" target="_blank">Jornal da Cultura</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/reportereco" alt="Repórter Eco" target="_blank">Repórter Eco</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/materiadecapa" alt="Matéria de Capa" target="_blank">Matéria de Capa</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/legiaoestrangeira" alt="Legião Estrangeira" target="_blank">Legião Estrangeira</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/cacadoresdemitos" alt="Caçadores de Mitos" target="_blank">Caçadores de Mitos</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/mestresdoriso" alt="Mestres do Riso" target="_blank">Mestres do Riso</a></li>
+        <li><a href="http://tvcultura.cmais.com.br/matinecultura" alt="Matinê Cultura" target="_blank">Matinê Cultura</a></li>
       </ul>
       </div>
       <div class="span6">
         <ul>
-          <li>Café Filosófico</li>
-          <li>Invenção do Contemporâneo</li>
-          <li>TV Folha</li>
-          <li>Planeta Terra</li>
-          <li>Quintal da Cultura</li>
-          <li>TV Cocricó</li>
-          <li>Viola, Minha Viola</li>
-          <li>Sr. Brasil</li>
-          <li>Cultura Livre</li>
-          <li>Ensaio</li>
-          <li>Manos e Minas</li>
-          <li>Vila Sésamo</li>
+          <li><a href="http://tvcultura.cmais.com.br/cafefilosofico" alt="Café Filosófico" target="_blank">Café Filosófico</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/invencaodocontemporaneo" alt="Invenção do Contemporâneo" target="_blank">Invenção do Contemporâneo</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/tvfolha" alt="TV Folha" target="_blank">TV Folha</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/planetaterra" alt="Planeta Terra" target="_blank">Planeta Terra</li>
+          <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" alt="Quintal da Cultura" target="_blank">Quintal da Cultura</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/tvcocorico" alt="TV Cocricó" target="_blank">TV Cocricó</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/viola" alt="Viola, Minha Viola" target="_blank">Viola, Minha Viola</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/srbrasil" alt="Sr. Brasil" target="_blank">Sr. Brasil</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/culturalivre" alt="Cultura Livre" target="_blank">Cultura Livre</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/ensaio" alt="Ensaio" target="_blank">Ensaio</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/manoseminas" alt="Manos e Minas" target="_blank">Manos e Minas</a></li>
+          <li><a href="http://tvcultura.cmais.com.br/vilasesamo" alt="Vila Sésamo" target="_blank">Vila Sésamo</a></li>
         </ul>
       </div>
     </div>
