@@ -104,6 +104,7 @@
     $('#stream_youtube').addClass('ativo');  
   }
 
+  /*
   function updateTweets() {
     $.ajax({
       url: "/ajax/tweetmonitor",
@@ -113,6 +114,7 @@
       }
     });
   }
+  */
   
   function isDevice(OSName)
   {
@@ -132,8 +134,8 @@
   
   
   jQuery(document).ready(function() {
-    updateTweets();
-    var t=setInterval("updateTweets()",60000);
+    //updateTweets();
+    //var t=setInterval("updateTweets()",60000);
     broadcastEnd();
     var t2=setInterval("broadcastEnd()", 60000);
     
@@ -251,29 +253,29 @@
           				<div class="repercussao">
           					<h2><span>Repercussão</span></h2>
           					<div class="grid1">
-			                  <div id="twitter">
-								<!--
-								<div class="topo-fb"><h3>#rodaviva</h3></div>
-								<ul style="overflow-x: hidden; overflow-y: auto;">
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
-								</ul>
-								<div class="respiro"></div>
-								-->
-			                  </div>
+                      <a class="twitter-timeline" href="https://twitter.com/search?q=%23rodaviva" data-widget-id="317371676063039488">Tweets sobre "#rodaviva"</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			                 <!-- <div id="twitter">
+          								<div class="topo-fb"><h3>#rodaviva</h3></div>
+          								<ul style="overflow-x: hidden; overflow-y: auto;">
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          									<li><a class="avatar" href="#"><img alt="profile" class="twtr-profile-img" src="#"></a><p>Content sdfg sdfg sdfg sdf gsdf gdsf gsdf gsdf gsd gsd fg</p></li>
+          								</ul>
+          								<div class="respiro"></div>
+			                  </div>-->
 			            	</div>
           				</div>
           			</div>
