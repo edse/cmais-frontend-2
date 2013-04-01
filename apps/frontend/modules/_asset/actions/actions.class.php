@@ -568,13 +568,21 @@ class _assetActions extends sfActions
     $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
     
     //ogp
-    if($this->asset->AssetType->getSlug() == "video"){
+    if($related->AssetType->getSlug() == "video"){
       $this->getResponse()->addMetaProp('og:type', 'video');
       $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$this->asset->AssetVideo->getYoutubeId().'?version=3&amp;autohide=1');
       $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
       $this->getResponse()->addMetaProp('og:video:width', '640');
       $this->getResponse()->addMetaProp('og:video:height', '390');
       $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/0.jpg');
+    }
+    elseif($related->AssetType->getSlug() == "video-gallery"){
+      $this->getResponse()->addMetaProp('og:type', 'video');
+      $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$related->AssetVideoGallery->getYoutubeId().'?version=3&amp;autohide=1');
+      $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
+      $this->getResponse()->addMetaProp('og:video:width', '640');
+      $this->getResponse()->addMetaProp('og:video:height', '390');
+      $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$related->AssetVideoGallery->getYoutubeId().'/default.jpg');
     }
     elseif($this->asset->AssetType->getSlug() == "audio"){
       $this->getResponse()->addMetaProp('og:type', 'audio');
