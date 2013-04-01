@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="col-dir">
-      <div id="box-clock">
+      <div id="box-clock" style="display: none;">
         <div id="no-ar">
          <p>no ar</p>
          <ul style="width: 47px;">

@@ -40,36 +40,39 @@
 .topo .dropdown-menu > li > a:focus, 
 .topo .dropdown-submenu:hover > a, 
 .topo .dropdown-submenu:focus > a { background:#8bd1d2; color:#333; }
-.topo .span4 { margin-left:0; }
-.topo .span6 { margin-top:3%; }
+.topo .span4 {    margin-left: 0;    width: 35%; float:left;}
+.topo .span6 {    float: right;    margin-left: 0;    margin-top: 3%;    width: 63%;}
 .topo .span6 iframe { width:100% !important; }
 
 .row-fluid a,
-.row-fluid h2 { color:#1b4a87; font-size:24px; line-height:26px; }
+.row-fluid h2 { color:#1b4a87; font-size:24px; line-height:30px; }
 .row-fluid img { margin:40px 0 20px 0; }
-i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:9px 5px 0 0; }
+i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:12px 5px 0 0; }
 .row-fluid a { font-weight: bold; float:right; margin:10px 0;  }
 .row-fluid p a { font-weight:normal; float:none; margin:0; color:#333; font-size:14px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; text-decoration:underline; }
 .row-fluid p span { font-weight: bold; margin-bottom: 10px; display:block; }
-.row-fluid .link p { clear:both; }
+.row-fluid .span6.link { float:right; width: auto; display:block; }
 .estreia { background:#1b4a87; color:#fff; padding:0 5px; line-height: 23px; float:left; }
 .tudo { margin-bottom:200px; }
 
-@media screen and (max-width: 980px){
-  .topo .span4 { min-width:315px; }
-}
 
 @media screen and (max-width: 768px){
-  .topo .span4 { min-width:100%; text-align:center; }
-  .redes { margin-left:20px; }
-  .redes,
-  .nav.nav-pills { max-width:45%; float:left; clear:none !important; margin:20px !important;}
-  .nav.nav-pills { float:right !important;  max-width:41%; }
+  .row-fluid a { font-size: 18px; line-height: 20px;  }
+  i.seta { margin-top:6px; }
+  .topo .nav > li > a { font-size: 12px; padding:8px 5px; }
+  
+}
+
+@media screen and (max-width: 760px){
+  .row-fluid .span6 { clear:both; }
 }
 
 @media screen and (max-width: 480px){
+  .topo .span6,
   .topo .span4 { min-width:100%; text-align:center; }
   .redes,
   .nav.nav-pills { max-width:100%; float:left !important; margin:0 0 10px 20px !important; }
-  
+  .row-fluid a { font-size: 14px; line-height: 16px;  }
+  i.seta { margin-top:2px; }
+
 }
