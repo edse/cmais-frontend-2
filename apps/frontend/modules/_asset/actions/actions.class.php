@@ -609,7 +609,7 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/0.jpg');
         }
         elseif($rel[0]->AssetType->getSlug() == "video-gallery"){
-          $relatedVideos = $this->asset->retriveRelatedAssetsByAssetTypeId(6);
+          $relatedVideos = $rel[0]->retriveRelatedAssetsByAssetTypeId(6);
           if(count($relatedVideos)>0){
             $this->getResponse()->addMetaProp('og:type', 'video');
             $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$relatedVideos[0]->AssetVideo->getYoutubeId().'?version=3&amp;autohide=1');
