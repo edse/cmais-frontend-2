@@ -224,11 +224,11 @@
           		<div class="centroRV">
           			<div class="transmissaoH">
           				<ul>
+          				  <li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
           					<li><a href="javascript: stream1();" id="stream_tv" title="TV Cultura"><span>TV Cultura</span></a></li>
           					<li><a href="javascript: stream2();" id="stream_exclusiva" title="Câmera exclusiva"><span>Câmera exclusiva</span></a></li>
           					<!--li><a href="javascript: stream3();" id="stream_ustream" title="UStream"><span></span></a></li>
           					<li><a href="javascript: stream4();" id="stream_livestream" title="LiveStream"><span></span></a></li-->
-          					<li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
           				</ul>
           				<div class="boxVideo">
           					<script type="text/javascript">
