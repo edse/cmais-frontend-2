@@ -136,8 +136,8 @@
   jQuery(document).ready(function() {
     //updateTweets();
     //var t=setInterval("updateTweets()",60000);
-    //broadcastEnd();
-    //var t2=setInterval("broadcastEnd()", 60000);
+    broadcastEnd();
+    var t2=setInterval("broadcastEnd()", 60000);
     
     if (isDevice('ipad') || isDevice('iphone') || isDevice('ipod') || isDevice('Android'))
       stream3();
