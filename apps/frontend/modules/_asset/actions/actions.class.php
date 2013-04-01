@@ -597,7 +597,7 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:video:height', '390');
           $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/0.jpg');
         }
-        elseif($related->AssetType->getSlug() == "video-gallery"){
+        elseif($rel[0]->AssetType->getSlug() == "video-gallery"){
             $this->getResponse()->addMetaProp('og:type', 'video');
             $this->getResponse()->addMetaProp('og:video', 'http://www.youtube.com/v/'.$related->AssetVideoGallery->getYoutubeId().'?version=3&amp;autohide=1');
             $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
