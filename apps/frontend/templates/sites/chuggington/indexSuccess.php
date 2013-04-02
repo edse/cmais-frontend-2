@@ -220,7 +220,7 @@
                       <h3 class="chapeu"><?php // echo $d->retriveLabel() ?></h3>
                       <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->title ?></a>
                       <p><?php echo $d->getDescription() ?></p>
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-4-b'); ?>"/>
+                      <!--img src="<?php //echo $d->retriveImageUrlByImageUsage('image-4-b'); ?>"/-->
                     </li>
                   <?php endforeach; ?>
                 </ul>
