@@ -93,7 +93,7 @@
 .row-fluid .span4 { *margin-left:0} 
 /* /ie */
 .progress .bar { color:#333; }
-.accordion-body p img,
+/*.accordion-body p img,*/
 .accordion-body iframe { width:100% !important; }
 .accordion-body iframe { min-height:390px; }
 .accordion-body p a img { width:auto !important; }
