@@ -52,6 +52,7 @@ $(document).ready(function() {
     };
 
     socket.onopen = function(msg) {
+      clearInterval(fakeInterval);
       $('#tryin-p').hide();
       $('.offline').hide();
       $('.online').show();
@@ -110,8 +111,10 @@ $(document).ready(function() {
   };
 
   contentInfo = function(data) {
+    console.log(data);
     if(data.type == 'script'){
       eval(data.script);
+      console.log(data.type);
     }else{
       var c = 'icon-align-left';
       if(data.type == 'people')
@@ -157,10 +160,10 @@ $(document).ready(function() {
         dataType: 'jsonp',
         success:function(json){
           //console.log(json);
-          console.log('1:');
+          //console.log('1:');
           console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
-          console.log('2:');
-          console.log(json.handler);
+          //console.log('2:');
+          //console.log(json.handler);
           add = false;
           if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
             add = true;
