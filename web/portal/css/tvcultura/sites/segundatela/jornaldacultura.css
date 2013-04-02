@@ -121,7 +121,7 @@ and (orientation : portrait) {
   .hero-unit .col-esq p { text-align:center; }
   .hero-unit { min-height:260px; }
   /*#box-clock {margin:170px 30px;}*/
- #box-clock { float:left; left:30px; right:0; top:0; }
+ #box-clock { float:left; left:30px; top:0; }
   
 }
 
