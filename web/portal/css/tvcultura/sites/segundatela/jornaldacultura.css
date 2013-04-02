@@ -132,16 +132,13 @@ and (orientation : portrait) {
 #box-clock #no-ar ul{position: absolute;top: 5px;right: 5px;background: #333333;padding: 0 3px; width: 45px; font-size:16px;}
 #hours{padding-left: 2px;}
 #point {position: relative;-moz-animation: mymove 1s ease infinite;-webkit-animation: mymove 1s ease infinite;padding:0 3px;}
-@-webkit-keyframes mymove 
-{
+@-webkit-keyframes mymove { 
 0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
 50% {opacity:0; text-shadow:none; }
 100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }  
 }
 
-
-@-moz-keyframes mymove 
-{
+@-moz-keyframes mymove {
 0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
 50% {opacity:0; text-shadow:none; }
 100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }  
