@@ -1,8 +1,4 @@
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 //arrays para players multiplos
 var cont = 0;
 var player = new Array();
@@ -73,6 +69,11 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
+//yotube API
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReadyPlayer(obj, cont) {
   console.log("start");
   console.log("obj:"+obj);
