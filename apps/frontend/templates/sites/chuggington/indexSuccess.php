@@ -200,8 +200,8 @@
             <?php else: ?>
             <ul class="lista-calendario grid2">
               <li>
-                <div class="barra-grade"><?php echo $site->title ?></div>
-                <div class="grade toggle" style="display:none; width:100%; padding-bottom:25px;"> </div>
+                <div class="barra-grade"></div>
+                <div class="grade toggle" style="display:none; width:100%; padding-bottom:25px;"><?php echo $site->title ?></div>
               </li>
             </ul>
             
