@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    //onYouTubeIframeAPIReady("#id"+data.handler)
+    onYouTubeIframeAPIReadyPlayer();
   };  
   
   $('#myTab a').click(function(e) {
@@ -48,15 +48,7 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-  $(".accordion iframe").each(function(i){
-    if($(this).attr('src').indexOf("youtube") != -1){
-      console.log("start each");
-      console.log($(this).attr('src'))
-      cont++;
-      $(this).attr("id","player"+cont);
-      players_ids[i] = "player"+cont;
-    }
-  });
+
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -75,7 +67,17 @@ function checkState(res){
   }
 }
 
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReadyPlayer() {
+
+  $(".accordion iframe").each(function(i){
+    if($(this).attr('src').indexOf("youtube") != -1){
+      console.log("start each");
+      console.log($(this).attr('src'))
+      cont++;
+      $(this).attr("id","player"+cont);
+      players_ids[i] = "player"+cont;
+    }
+  });
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
     console.log(player[i]);
