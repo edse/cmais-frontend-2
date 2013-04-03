@@ -165,7 +165,7 @@
                   <a href="/<?php echo $site->getSlug()?>?d=<?php echo $prevDate ?>" class="btn anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
-                  <li class="filho ativo"><?php //echo format_date($date, 'P') ?></li>
+                  <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>
                 </ul>
               </div>
             </div>
@@ -200,9 +200,8 @@
             <?php else: ?>
             <ul class="lista-calendario grid2">
               <li>
-                <div class="barra-grade"></div>
-                <!--div class="grade toggle" style="display:none; width:100%; padding-bottom:25px;"></div-->
-                <a href="#" class="btn-toggle"><?php echo $site->title ?></a>
+                <div class="barra-grade"> </div>
+                <div class="grade toggle" style="display:none; width:100%; padding-bottom:25px;"> </div>
               </li>
             </ul>
             
@@ -221,7 +220,7 @@
                       <h3 class="chapeu"><?php // echo $d->retriveLabel() ?></h3>
                       <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->title ?></a>
                       <p><?php echo $d->getDescription() ?></p>
-                      <!--img src="<?php //echo $d->retriveImageUrlByImageUsage('image-4-b'); ?>"/-->
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-4-b'); ?>">
                     </li>
                   <?php endforeach; ?>
                 </ul>
