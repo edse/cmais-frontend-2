@@ -18,8 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    
-    onYouTubeIframeAPIReady();
+    onYouTubeIframeAPIReadyPlayer();
   };  
   
   $('#myTab a').click(function(e) {
@@ -51,7 +50,6 @@ $(document).ready(function() {
 
 
   var tag = document.createElement('script');
-  console.log("fui");
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -69,11 +67,12 @@ function checkState(res){
   }
 }
 
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReadyPlayer() {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       console.log("start each");
+      console.log($(this).attr('src'))
       cont++;
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
