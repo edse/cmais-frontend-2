@@ -33,7 +33,7 @@ $(document).ready(function() {
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
           $(this).attr("id","player"+cont);
-          onYouTubeIframeAPIReadyPlayer("player"+cont, cont)
+          onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
           cont++;
         }
       });      
@@ -76,7 +76,8 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(obj, cont) {
   console.log("start");
   console.log("obj:"+obj);
-  player[cont] = new YT.Player("'"+obj+"'");
+  console.log("contador:"+cont);
+  player[cont] = new YT.Player(obj);
   console.log("player:"+player[cont]);
   player[cont].addEventListener("onStateChange", function(res){
     if(res.data == 1){
