@@ -111,9 +111,9 @@ var players = {};
 //Define a player storage object, to enable later function calls,
 //  without having to create a new class instance again.
 YT_ready(function() {
-    console.log(identifier)
     $(".accordion-body + iframe[id]").each(function() {
         var identifier = this.id;
+        console.log(identifier)
         var frameID = getFrameID(identifier);
         if (frameID) { //If the frame exists
             players[frameID] = new YT.Player(frameID, {
