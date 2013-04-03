@@ -35,7 +35,7 @@ $(document).ready(function() {
           $(this).attr("id","player"+cont);
           players_ids[i] = "player"+cont;
           cont++;
-          onYouTubeIframeAPIReady()
+          onYouTubeIframeAPIReadyPlayer()
         }
       });      
   });  
@@ -74,7 +74,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReadyPlayer() {
   console.log("start");
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
