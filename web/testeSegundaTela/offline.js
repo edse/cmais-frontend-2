@@ -52,10 +52,13 @@ $(document).ready(function() {
 });
 //yotube API
 var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-//arrays para players multiplos
+document.ready(function(){
+  console.log("fui");
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  //arrays para players multiplos
+})
 var cont = 0;
 var player = new Array();
 var players_ids = new Array();
@@ -67,6 +70,7 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
+
 function onYouTubeIframeAPIReady() {
   console.log("start b");
   $(".accordion-body iframe").each(function(i){
