@@ -35,9 +35,9 @@ $(document).ready(function() {
           $(this).attr("id","player"+cont);
           players_ids[i] = "player"+cont;
           cont++;
+          onYouTubeIframeAPIReady()
         }
-      });
-      onYouTubeIframeAPIReady()
+      });      
   });  
   
   $('#myTab a').click(function(e) {
