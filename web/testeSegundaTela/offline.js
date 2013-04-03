@@ -68,10 +68,11 @@ function checkState(res){
 }
 
 function onYouTubeIframeAPIReady(el) {
-  console.log(el);
-  $("iframe").each(function(i){
+
+  $(".accordion iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       console.log("start each");
+      console.log($(this).attr('src'))
       cont++;
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
