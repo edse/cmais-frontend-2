@@ -116,13 +116,15 @@ $(document).ready(function() {
 
   onAir = function(data) {
     if(data){
-      $('#box-clock').show();
+      if(data.script) eval(data.script);
+      else $('#box-clock').show();
     }
   }
 
   offAir = function(data) {
     if(data){
-      $('#box-clock').hide();
+      if(data.script) eval(data.script);
+      else $('#box-clock').hide();
     }
   }
 
