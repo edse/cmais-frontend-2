@@ -68,7 +68,7 @@ function checkState(res){
 }
 
 function onYouTubeIframeAPIReadyPlayer() {
-
+  console.log("start");
   $(".accordion iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       console.log("start each");
