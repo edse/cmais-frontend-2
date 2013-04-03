@@ -75,14 +75,13 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReadyPlayer(obj, cont) {
   console.log("start");
-  console.log("obj:"obj);
+  console.log("obj:"+obj);
   player[cont] = new YT.Player(obj);
-  console.log("player":player[cont]);
+  console.log("player"+:player[cont]);
   player[cont].addEventListener("onStateChange", function(res){
     if(res.data == 1){
       playing = res.target;
-      console.log('playing:');
-      console.log(playing);
+      console.log('playing:'+playing);
     }
   });
 } 
