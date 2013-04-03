@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url, function(){
-      $('#id'+data.handler+'.accordion-body iframe').each(function(){
+      $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
           $(this).attr("id","player"+cont);
           players_ids[i] = "player"+cont;
