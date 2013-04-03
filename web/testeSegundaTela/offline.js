@@ -76,7 +76,7 @@ function checkState(res){
 function onYouTubeIframeAPIReadyPlayer(obj, cont) {
   console.log("start");
   console.log("obj:"+obj);
-  player[cont] = new YT.Player(obj);
+  player[cont] = new YT.Player("'"+obj+"'");
   console.log("player:"+player[cont]);
   player[cont].addEventListener("onStateChange", function(res){
     if(res.data == 1){
