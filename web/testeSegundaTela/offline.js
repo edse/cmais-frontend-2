@@ -67,7 +67,7 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-});
+}});
  
 function checkState(res){
   if(res.data==1){
