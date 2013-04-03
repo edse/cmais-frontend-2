@@ -85,6 +85,7 @@ function onYouTubeIframeAPIReady() {
         console.log('playing:');
         console.log(playing);
       }
+      players_ids[i].die()
     });
     
   }
