@@ -129,7 +129,7 @@ $(document).ready(function() {
     if(data){
       if(data.script){
         eval(data.script);
-      } 
+      }
       else {
         $('#box-clock').hide(); 
       }
@@ -137,8 +137,8 @@ $(document).ready(function() {
   }
 
   contentInfo = function(data) {
-    //console.log(data);
     if(data.type == 'script'){
+      console.log(data);
       eval(data.script);
       //console.log(data.type);
     }else{
