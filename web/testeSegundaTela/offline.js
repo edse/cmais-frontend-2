@@ -71,6 +71,7 @@ function onYouTubeIframeAPIReady() {
   console.log("start");
   $(".accordion-body iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
+      console.log("start each");
       cont++;
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
@@ -79,6 +80,7 @@ function onYouTubeIframeAPIReady() {
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
     console.log(player[i]);
+    console.log("start for");
     player[i].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
