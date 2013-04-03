@@ -35,7 +35,7 @@ $(document).ready(function() {
           $(this).attr("id","player"+cont);
           players_ids[i] = "player"+cont;
           cont++;
-          onYouTubeIframeAPIReadyPlayer()
+          onYouTubeIframeAPIReadyPlayer(players_ids[i]);
         }
       });      
   });  
@@ -74,10 +74,10 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-function onYouTubeIframeAPIReadyPlayer() {
+function onYouTubeIframeAPIReadyPlayer(obj) {
   console.log("start");
   for(var i=0; i < players_ids.length; i++){
-    player[i] = new YT.Player(players_ids[i]);
+    player[i] = new YT.Player(obj);
     console.log(player[i]);
     player[i].addEventListener("onStateChange", function(res){
       if(res.data == 1){
