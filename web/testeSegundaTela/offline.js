@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
+    onYouTubeIframeAPIReady("#id"+data.handler)
   };  
   
   $('#myTab a').click(function(e) {
@@ -49,7 +50,6 @@ $(document).ready(function() {
 
 
   var tag = document.createElement('script');
-  console.log("fui");
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
