@@ -69,7 +69,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady() {
   console.log("start");
-  $(".accordion-body iframe").each(function(i){
+  $($(this)+" iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       $(this).attr("id","player"+cont);
@@ -85,7 +85,6 @@ function onYouTubeIframeAPIReady() {
         console.log('playing:');
         console.log(playing);
       }
-      players_ids[i].die()
     });
     
   }
