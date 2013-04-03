@@ -69,7 +69,7 @@ function checkState(res){
 
 function onYouTubeIframeAPIReady(el) {
   console.log(el);
-  $(".accordion-body iframe").live("each", function(i){
+  $("iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       console.log("start each");
       cont++;
