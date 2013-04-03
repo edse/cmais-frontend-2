@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#accordion2').prepend(html);
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
-    $('#id'+data.handler+' iframe').each(function(){
+    $('.accordion-body iframe').each(function(){
       console.log("fui");
     })
   };  
