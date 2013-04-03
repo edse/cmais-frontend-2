@@ -19,7 +19,6 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url);
     
-    //onYouTubeIframeAPIReady();
   };  
   
   $('#myTab a').click(function(e) {
@@ -51,6 +50,7 @@ $(document).ready(function() {
 
 });
 function getFrameID(id) {
+    console.log("getFrameId")
     var elem = document.getElementById(id);
     if (elem) {
         if (/^iframe$/i.test(elem.tagName)) return id; //Frame, OK
@@ -105,7 +105,7 @@ var players = {};
 //Define a player storage object, to enable later function calls,
 //  without having to create a new class instance again.
 YT_ready(function() {
-    $(".thumb + iframe[id]").each(function() {
+    $(".accordion-body + iframe[id]").each(function() {
         var identifier = this.id;
         var frameID = getFrameID(identifier);
         if (frameID) { //If the frame exists
