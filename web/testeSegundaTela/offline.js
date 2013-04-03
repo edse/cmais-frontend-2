@@ -37,7 +37,7 @@ $(document).ready(function() {
           cont++;
         }
       });
-    
+      onYouTubeIframeAPIReady()
   });  
   
   $('#myTab a').click(function(e) {
