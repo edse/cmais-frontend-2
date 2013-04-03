@@ -49,10 +49,8 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-});
-//yotube API
-var tag = document.createElement('script');
-document.ready(function(){
+
+  var tag = document.createElement('script');
   console.log("fui");
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
