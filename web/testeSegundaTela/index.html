@@ -10,8 +10,13 @@
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
 
+    <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+        
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
+    
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -21,16 +26,16 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     
-    <title>Segunda Tela - Grade 2013 - cmais+ O portal de conteúdo da Cultura</title>
-    <meta name="title" content="Segunda Tela - Grade 2013 - cmais+ O portal de conteúdo da Cultura" />
-<meta name="description" content="Descrição grade 2013 - cmais+ O portal de conteúdo da Cultura" />
+    <title>Segunda Tela - 02-04-2013 - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Segunda Tela - 02-04-2013 - cmais+ O portal de conteúdo da Cultura" />
+<meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
 <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
 <meta name="language" content="pt_BR" />
 <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Segunda Tela - Grade 2013 - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:title" content="Segunda Tela - 02-04-2013 - cmais+ O portal de conteúdo da Cultura" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="Descrição grade 2013 - cmais+ O portal de conteúdo da Cultura" />
-<meta property="og:url" content="http://cmais.com.br/frontend_dev.php/segundatela/grade2013" />
+<meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
+<meta property="og:url" content="http://cmais.com.br/segundatela/jornaldacultura/02-04-2013" />
 <meta property="og:site_name" content="cmais+" />
 <meta property="og:image" content="http://midia.cmais.com.br/programs/a563b968c8ed54cce2bb3d83f9ddc948a0597d7b.jpg" />
    
@@ -47,182 +52,106 @@
     <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
-    <!--
+
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    -->
+
   </head>
   <body>
-        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/grade2013.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+<!-- modal-->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+      ×
+    </button>
+    <h3 id="myModalLabel">Como funciona</h3>
+  </div>
+  <div class="modal-body">
+    <p>A Segunda Tela (ou Second Screen) é um complemento em tempo real à televisão (a primeira tela). Ao utilizá-la, seja em computadores, smartphones ou tablets, o “teleinternauta” recebe informações extras e pontos importantes sobre o assunto que está sendo tratado no programa que está no ar no momento. Por exemplo, se o Jornal da Cultura veicula uma matéria sobre o mercado imobiliário, o usuário recebe em sua Segunda Tela, simultaneamente, conteúdos e dicas complementares à reportagem, como um histórico dos preços de imóveis nos últimos meses e telefones úteis para obter mais informações sobre o assunto. E essa é apenas uma das muitas possibilidades que a Segunda Tela oferece! Fique ligado no cmais+ e na programação da TV Cultura para descobrir as próximas novidades que surgirão com o uso desta nova ferramenta de interatividade!</p>
+  </div>
+</div>
+<!-- /modal -->
 
-    <!-- modal-->
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Como funciona</h3>
-      </div>
-      <div class="modal-body">
-        <p>A Segunda Tela (ou Second Screen) é um complemento em tempo real à televisão (a primeira tela). Ao utilizá-la, seja em computadores, smartphones ou tablets, o “teleinternauta” recebe informações extras e pontos importantes sobre o assunto que está sendo tratado no programa que está no ar no momento. Por exemplo, se o Jornal da Cultura veicula uma matéria sobre o mercado imobiliário, o usuário recebe em sua Segunda Tela, simultaneamente, conteúdos e dicas complementares à reportagem, como um histórico dos preços de imóveis nos últimos meses e telefones úteis para obter mais informações sobre o assunto. E essa é apenas uma das muitas possibilidades que a Segunda Tela oferece! Fique ligado no cmais+ e na programação da TV Cultura para descobrir as próximas novidades que surgirão com o uso desta nova ferramenta de interatividade!</p>
-      </div>
-    </div>
-    <!-- /modal -->
-
-    <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <div class="bgtopo"><h1><img src="http://cmais.com.br/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" /></h1></div>
-        <div class="col-dir">
-          <div class="menu-topo" style="width: 100%;">
-            <a href="#myModal" role="button" data-toggle="modal" class="como" style="float: right;">como funciona</a>
-            <br />
-            <!-- <span class="barra">|</span> --><p class="online hide" style="float: right;"><span class="numero"></span><span class="seta"></span>pessoas online</p>
-            <p class="offline" style="float: right;">Desconectado</p>
-            <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
-            <!--
-            <a href="http://cmais.com.br/segundatela/grade2013/aovivo" target="_blank" class="como" style="margin-top: 15px; clear: both; float: right;">Ao Vivo</a>
-            -->
-          </div>
-          <!--
-          <div class="redes">
-            <div class="twt">
-              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
-            </div>
-            <div class="fb">
-              <fb:like href="http://tvcultura.cmais.com.br/segundatela/grade2013" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
-            </div>
-            <div class="gplus">
-              <g:plusone size="medium" count="false"></g:plusone>
-            </div>
-          </div>
-          -->
+<div class="container">
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="hero-unit">
+    <div class="bgtopo"></div>
+    <div class="col-esq">
+      <h1>Jornal da Cultura</h1>
+      <p>Mais que um jornal, uma tradução das notícias.</br>Segunda a sábado, às 21:00</p>
+      <div class="redes">
+        <div class="gplus">
+          <g:plusone size="medium" count="false"></g:plusone>
+        </div>
+        <div class="fb">
+          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+        </div>
+        <div class="twt">
+          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
         </div>
       </div>
-
-      <!--  row -->
-      <div class="row-fluid conteudo">
-        <!-- esquerda -->
-        <div class="span8">
-          <h2>segunda tela</h2>
-          
-          <!-- accordion -->
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle ativo" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  <i class="icon-user icon-white"></i>Collapsible Group Item #1 <img class="loader" src="/portal/images/capaPrograma/segundatela/jornaldacultura/ajax-loader.gif" alt="carregando">
-                </a>
-              </div>
-              <div id="collapseOne" class="accordion-body collapse in" name="collapseOne">
-        
-                  <img src="http://midia.cmais.com.br/displays/fc9db8fee2a4dc7cd74264b79b6eab3345f38209.jpg" alt="teste">
-                  <p style="padding-bottom: 15px;">Lorem Ipsum é <a href="#myModallink" role="button" data-toggle="modal">simplesmente uma simulação</a> de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <div id="mais">
-                    <h3>Leia mais</h3>
-                    <ul>
-                      <li><i class="icon-share-alt"></i><a href="#" title="">indústria tipográfica e de impressos</a></li>
-                      <li><i class="icon-share-alt"></i><a href="#" title="">indústria tipográfica e de impressos</a></li>
-                      <li><i class="icon-share-alt"></i><a href="#" title="">indústria tipográfica e de impressos</a></li>
-                    </ul>
-                  </div>
-        
-              </div>
-            </div>
-            
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  <i class="icon-align-left icon-white"></i>Collapsible Group Item #2
-                </a>
-              </div>
-              <div id="collapseTwo" class="accordion-body collapse" name="collapseTwo">
-            
-                  <p>Lorem Ipsum é simplesmente uma <a href="http://cmais.com.br" title="simulacao" target="_blank">simulação</a> de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p style="padding-bottom: 15px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-         
-              </div>
-            </div>
-            
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                  <i class="icon-map-marker icon-white"></i>Collapsible Group Item #3
-                </a>
-              </div>
-              <div id="collapseThree" class="accordion-body collapse" name="collapseThree">
-                
-                  <img src="http://midia.cmais.com.br/displays/fc9db8fee2a4dc7cd74264b79b6eab3345f38209.jpg" alt="teste">
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p style="padding-bottom: 15px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                    
-               
-              </div>
-            </div>
-            
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle four" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                  <i class="icon-map-marker icon-white"></i>Collapsible Group Item #4
-                </a>
-              </div>
-              <div id="collapseFour" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <img src="http://midia.cmais.com.br/displays/fc9db8fee2a4dc7cd74264b79b6eab3345f38209.jpg" alt="teste">
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  <p style="padding-bottom: 15px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-                  
-                </div>
-              </div>
-            </div>
-            
-            
-          </div>
-          <!-- /accordion -->
-
-        </div>
-        <!-- /esquerda -->
-
-        <!-- direita -->
-        <div class="span4">
-          <h2>Imprensa</h2>
-          <!-- abas -->
-          <div class="">
-            <ul class="nav nav-tabs" id="myTab">
-              <li class="active"><a data-toggle="tab" href="#release">Release</a></li>
-              <li class=""><a data-toggle="tab" href="#presskit">Press kit</a></li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div id="release" class="tab-pane fade active in">
-                <p>Atenta às mudanças na forma de se transmitir e de se consumir mídia com os novos meios de tráfego de informações ou entretenimento, a TV Cultura apresenta sua grade de programação para 2013. Projetada para oferecer programas ao vivo, interativos e exclusivos, marcados antes de tudo pela qualidade, a TV Cultura compõe sua nova programação com atrações únicas, muitas das quais ao vivo e que permitem a participação interativa do público.</p>
-                <p>Os arquivos estarão disponíveis para download após as 12:00</p>
-              </div>
-              <div id="presskit" class="tab-pane fade">
-                <p>O press kit estará disponível para download após as 12:00</p>
-                <!--
-                <ul>
-                  <li><a href="http://midia.cmais.com.br/assets/file/original/bb304856eeeb8f784472dcf45959af6e7da6fe3c.pdf" title="Press Kit" target="_blank"><i class="download"></i>Faça o download do press kit</a></li>
-                </ul>
-                -->         
-              </div>
-            </div>
-          </div>
-          <!-- /abas -->
-      </div>
-      <!-- /direita -->
-        
     </div>
-
-  </div>    
+    <div class="col-dir">
+      <div class="menu-jc">
+        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
+        <br/>
+        <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
+      </div>
+    </div>
+  </div>
+  <!-- Example row of columns -->
+  <div class="row-fluid conteudo">
+    <!-- esquerda -->
+    <div class="span8">
+      <h2>segunda tela</h2>
+      <!-- accordion -->
+      <div class="accordion" id="accordion2"></div>
+      <!-- /accordion -->
+    </div>
+    <!-- /esquerda -->
+    <!-- direita -->
+    <div class="span4">
+      <h2>Redes Sociais</h2>
+      <!-- abas -->
+      <div class="">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
+          <li class=""><a data-toggle="tab" href="#twitter">Twitter</a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div id="facebook" class="tab-pane fade active in">
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/02-04-2013" data-width="300px" data-num-posts="10"></div>
+          </div>
+          <div id="twitter" class="tab-pane fade">
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+      </div>
+      <!-- /abas -->
+    </div>
+    <!-- /direita -->
+  </div>
+  
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=1364995299"></script>
+  <script>
+  // retrive sent contents by ajax
+  $.ajax({
+    url:"/portal/js/segundatela/log/jornaldacultura-02-04-2013.json",
+    dataType: "json",
+    success:function(json){
+      $.each(json, function( key, value ) {
+        //console.log(value)
+        contentInfo(value);
+      });
+    }
+  });
+  </script>
+    
     <!-- scripts -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -238,7 +167,6 @@
     </script>
     <!-- /scripts -->
     
-    <!--
     <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
@@ -251,12 +179,6 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-    -->
-    
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js"></script>
 
   </body>
 </html>
