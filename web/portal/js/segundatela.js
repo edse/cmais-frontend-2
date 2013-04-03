@@ -71,6 +71,10 @@ $(document).ready(function() {
             return clientConnected(response.data);
           case "contentBan":
             return contentBan(response.data);
+          case "onAir":
+            return onAir(response.data);
+          case "offAir":
+            return offAir(response.data);
         }
       }
       return;
@@ -110,11 +114,23 @@ $(document).ready(function() {
     return;
   };
 
+  onAir = function(data) {
+    if(data){
+      $('#box-clock').show();
+    }
+  }
+
+  offAir = function(data) {
+    if(data){
+      $('#box-clock').hide();
+    }
+  }
+
   contentInfo = function(data) {
-    console.log(data);
+    //console.log(data);
     if(data.type == 'script'){
       eval(data.script);
-      console.log(data.type);
+      //console.log(data.type);
     }else{
       var c = 'icon-align-left';
       if(data.type == 'people')
