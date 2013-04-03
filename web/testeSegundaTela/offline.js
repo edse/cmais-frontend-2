@@ -1,3 +1,4 @@
+var cont=0;
 $(document).ready(function() {
 
   $('#status').fadeIn('slow');
@@ -19,7 +20,8 @@ $(document).ready(function() {
     //console.log(data.url);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(){
-        $(this).attr("id", "player"+cont)
+        $(this).attr("id", "player"+cont);
+        cont++;
       })
     });
     
