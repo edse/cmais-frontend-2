@@ -52,6 +52,7 @@ $(document).ready(function() {
     };
 
     socket.onopen = function(msg) {
+      clearInterval(fakeInterval);
       $('#tryin-p').hide();
       $('.offline').hide();
       $('.online').show();
@@ -70,6 +71,10 @@ $(document).ready(function() {
             return clientConnected(response.data);
           case "contentBan":
             return contentBan(response.data);
+          case "onAir":
+            return onAir(response.data);
+          case "offAir":
+            return offAir(response.data);
         }
       }
       return;
@@ -109,9 +114,33 @@ $(document).ready(function() {
     return;
   };
 
+  onAir = function(data) {
+    if(data){
+      if(data.script){
+        eval(data.script); 
+      }
+      else {
+        $('#box-clock').show();
+      }
+    }
+  }
+
+  offAir = function(data) {
+    if(data){
+      if(data.script){
+        eval(data.script);
+      }
+      else {
+        $('#box-clock').hide(); 
+      }
+    }
+  }
+
   contentInfo = function(data) {
     if(data.type == 'script'){
+      console.log(data);
       eval(data.script);
+      //console.log(data.type);
     }else{
       var c = 'icon-align-left';
       if(data.type == 'people')
@@ -157,10 +186,10 @@ $(document).ready(function() {
         dataType: 'jsonp',
         success:function(json){
           //console.log(json);
-          console.log('1:');
+          //console.log('1:');
           console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
-          console.log('2:');
-          console.log(json.handler);
+          //console.log('2:');
+          //console.log(json.handler);
           add = false;
           if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
             add = true;
