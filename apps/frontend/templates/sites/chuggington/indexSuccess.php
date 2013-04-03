@@ -209,7 +209,7 @@
               <!-- BOX LISTAO -->
               <div class="box-listao grid2">
                 <?php if(isset($date)): ?>
-                <h3><?php echo format_date(strtotime($date),"D") ?></h3>
+                <h3><?php //echo format_date(strtotime($date),"D") ?></h3>
                 <?php endif ?>
                 <ul>
                   <?php foreach($pager->getResults() as $d): ?>
@@ -217,7 +217,7 @@
                       <?php if(isset($date)): ?>
                       <p class="titulos"><?php //echo format_date(strtotime($d->getCreatedAt()),"t") ?></p>
                       <?php endif ?>
-                      <h3 class="chapeu"><?php // echo $d->retriveLabel() ?></h3>
+                      <h3 class="chapeu"><?php echo $d->retriveLabel() ?></h3>
                       <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="texto"></span><?php echo $d->title ?></a>
                       <p><?php echo $d->getDescription() ?></p>
                       <img src="<?php echo $d->retriveImageUrlByImageUsage('image-4-b'); ?>">
