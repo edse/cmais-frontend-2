@@ -79,16 +79,15 @@ function onYouTubeIframeAPIReadyPlayer() {
     }
   });
   for(var i=0; i < players_ids.length; i++){
-    player[i] = new YT.Player(players_ids[i]);
-    console.log(player[i]);
-    console.log("start for");
-    player[i].addEventListener("onStateChange", function(res){
-      if(res.data == 1){
-        playing = res.target;
-        console.log('playing:');
-        console.log(playing);
+    player[i] = new YT.Player(players_ids[i], {
+      events: {
+        //'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
       }
     });
+    console.log(player[i]);
+    console.log("start for");
+   
     
   }
 } 
