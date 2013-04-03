@@ -69,12 +69,12 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady() {
   console.log("start");
-  $("iframe").each(function(i){
-    //if($(this).attr('src').indexOf("youtube") != -1){
+  $(".accordion-body iframe").each(function(i){
+    if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       $(this).attr("id","player"+cont);
       players_ids[i] = "player"+cont;
-    //}
+    }
   });
   for(var i=0; i < players_ids.length; i++){
     player[i] = new YT.Player(players_ids[i]);
