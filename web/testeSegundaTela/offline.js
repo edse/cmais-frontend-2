@@ -69,7 +69,7 @@ function checkState(res){
 }
 function onYouTubeIframeAPIReady() {
   console.log("start");
-  $($(this)+" iframe").each(function(i){
+  $("iframe").each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;
       $(this).attr("id","player"+cont);
