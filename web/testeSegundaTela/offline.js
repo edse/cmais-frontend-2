@@ -50,42 +50,93 @@ $(document).ready(function() {
   });
 
 });
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-//arrays para players multiplos
-var cont = 0;
-var player = new Array();
-var players_ids = new Array();
-var playing=null;
-var playing_id = false;
-var cont =  0; 
-function checkState(res){
-  if(res.data==1){
-    playing_id=players_ids[i];
-  }
-}
-function onYouTubeIframeAPIReady() {
-  console.log("start");
-  $(".accordion-body iframe").each(function(i){
-    if($(this).attr('src').indexOf("youtube") != -1){
-      cont++;
-      $(this).attr("id","player"+cont);
-      players_ids[i] = "player"+cont;
+function getFrameID(id) {
+    var elem = document.getElementById(id);
+    if (elem) {
+        if (/^iframe$/i.test(elem.tagName)) return id; //Frame, OK
+        // else: Look for frame
+        var elems = elem.getElementsByTagName("iframe");
+        if (!elems.length) return null; //No iframe found, FAILURE
+        for (var i = 0; i < elems.length; i++) {
+            if (/^https?:\/\/(?:www\.)?youtube(?:-nocookie)?\.com(\/|$)/i.test(elems[i].src)) break;
+        }
+        elem = elems[i]; //The only, or the best iFrame
+        if (elem.id) return elem.id; //Existing ID, return it
+        // else: Create a new ID
+        do { //Keep postfixing `-frame` until the ID is unique
+            id += "-frame";
+        } while (document.getElementById(id));
+        elem.id = id;
+        return id;
     }
-  });
-  for(var i=0; i < players_ids.length; i++){
-    player[i] = new YT.Player(players_ids[i]);
-    console.log(player[i]);
-    player[i].addEventListener("onStateChange", function(res){
-      if(res.data == 1){
-        playing = res.target;
-        console.log('playing:');
-        console.log(playing);
-      }
+    // If no element, return null.
+    return null;
+}
+
+// Define YT_ready function.
+var YT_ready = (function() {
+    var onReady_funcs = [],
+        api_isReady = false;
+/* @param func function     Function to execute on ready
+         * @param func Boolean      If true, all qeued functions are executed
+         * @param b_before Boolean  If true, the func will added to the first
+                                     position in the queue*/
+    return function(func, b_before) {
+        if (func === true) {
+            api_isReady = true;
+            for (var i = 0; i < onReady_funcs.length; i++) {
+                // Removes the first func from the array, and execute func
+                onReady_funcs.shift()();
+            }
+        }
+        else if (typeof func == "function") {
+            if (api_isReady) func();
+            else onReady_funcs[b_before ? "unshift" : "push"](func);
+        }
+    }
+})();
+// This function will be called when the API is fully loaded
+
+function onYouTubePlayerAPIReady() {
+    YT_ready(true)
+}
+
+var players = {};
+//Define a player storage object, to enable later function calls,
+//  without having to create a new class instance again.
+YT_ready(function() {
+    $(".thumb + iframe[id]").each(function() {
+        var identifier = this.id;
+        var frameID = getFrameID(identifier);
+        if (frameID) { //If the frame exists
+            players[frameID] = new YT.Player(frameID, {
+                events: {
+                    "onReady": createYTEvent(frameID, identifier)
+                }
+            });
+        }
     });
-    
-  }
-} 
+});
+
+
+// Returns a function to enable multiple events
+function createYTEvent(frameID, identifier) {
+    return function (event) {
+        var player = players[frameID]; // player object
+        var the_div = $('#'+identifier).parent();
+        the_div.children('.thumb').click(function() {
+            var $this = $(this);
+            $this.fadeOut().next().addClass('play');
+            if ($this.next().hasClass('play')) {
+                player.playVideo();
+            }
+        });
+    }
+}
+// Load YouTube Frame API
+(function(){ //Closure, to not leak to the scope
+  var s = document.createElement("script");
+  s.src = "http://www.youtube.com/player_api"; /* Load Player API*/
+  var before = document.getElementsByTagName("script")[0];
+  before.parentNode.insertBefore(s, before);
+})();
