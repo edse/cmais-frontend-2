@@ -60,7 +60,7 @@ $(document).ready(function() {
       scrollTop: el.offset().top
     }, "slow");
     
-    return null;
+    $('.accordion-body').die();
   });
   
   // padding ultimo conteudo
