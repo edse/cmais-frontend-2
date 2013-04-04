@@ -19,16 +19,13 @@
       <div id="barra-site">
         <div class="topo-programa">
           <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo.png"></h2>
-          <p class="descricao"><img alt="A revista eletrônica da Cultura Disponível para iPad gratuitamente na App Store" src="/portal/images/capaPrograma/revistavitrine/descricao.png" /></p>
+          <p class="descricao"><img alt="A revista eletrônica da Cultura Disponível para iPad gratuitamente na App Store" src="/portal/images/capaPrograma/revistavitrine/descricao2.png" /></p>
           
           <?php if(isset($program) && $program->id > 0): ?>
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-                    
-        
-        </div>
 
-       
+        </div>
         
       </div>
       <!-- /BARRA SITE -->
@@ -40,17 +37,18 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          
+
+         <div class="baixar">
+           <a href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/bt-app_store.png" /></a>
+         </div>
+
          <div class="capa-revista">
            <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
          </div>
-         <!--div class="baixar">
-           <a href="#" alt="Baixe agora"><img src="/portal/images/capaPrograma/revistavitrine/baixar.png" /></a>
-           <a href="#" alt="App Store" ><img src="/portal/images/capaPrograma/revistavitrine/bt-app_store.png" /></a>
-           
-         </div-->
-          
-					
+
+         <div class="baixar">
+           <a href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/bt-app_store.png" /></a>
+         </div>
                   
         </div>
         <!-- /CONTEUDO PAGINA -->
