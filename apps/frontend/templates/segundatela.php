@@ -7,7 +7,7 @@
     <!-- Le styles -->
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css?nocache=<?php echo time()?>" type="text/css" />
 
     <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
         
