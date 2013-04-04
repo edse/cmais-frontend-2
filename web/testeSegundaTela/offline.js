@@ -1,10 +1,12 @@
+
+//arrays para players multiplos
+var cont = 0;
+var player = new Array();
+var players_ids = new Array();
+var playing=null;
+var playing_id = false;
+var cont =  0;
 $(document).ready(function() {
-  //arrays para players multiplos
-  var cont = 0;
-  var player = new Array();
-  var players_ids = new Array();
-  var playing;
-  var cont =  0;
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
@@ -47,9 +49,7 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    console.log(playing.data)
-    if(playing.data==1)
-      playing.pauseVideo();
+    playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
