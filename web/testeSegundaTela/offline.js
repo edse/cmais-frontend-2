@@ -1,16 +1,16 @@
+
+//arrays para players multiplos
+var cont = 0;
+var player = new Array();
+var players_ids = new Array();
+var playing=null;
+var playing_id = false;
 $(document).ready(function() {
-  
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  
-  //arrays para players multiplos
-  var cont = 0;
-  var player = new Array();
-  var playing;
-  var cont =  0;
 
   $('#status').fadeIn('slow');
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
-    //console.log(data);
+    //console.log(data.url);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
@@ -37,8 +37,7 @@ $(document).ready(function() {
           cont++;
         }
       });      
-    });
-  }  
+  });  
   
   $('#myTab a').click(function(e) {
     e.preventDefault();
@@ -46,21 +45,20 @@ $(document).ready(function() {
   });
   
   // colocando e tirando ativo
-  $('.accordion-body').live('hidden', function() {
+  $('.accordion-body').on('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    if(playing.data==1)
-      playing.pauseVideo();
+    playing.pauseVideo();
   });
   
-  $('.accordion-body').live('shown', function() { 
+  $('.accordion-body').on('shown', function() { 
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
     var el = $(this).parent();
     $('html, body').animate({
       scrollTop: el.offset().top
-    }, "fast");
+    }, "slow");
   });
   
   // padding ultimo conteudo
@@ -82,6 +80,6 @@ $(document).ready(function() {
     });
   }
   
-});
+}});
  
  
