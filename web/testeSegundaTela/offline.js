@@ -1,12 +1,11 @@
-
-//arrays para players multiplos
-var cont = 0;
-var player = new Array();
-var players_ids = new Array();
-var playing=null;
-var playing_id = false;
-var cont =  0;
 $(document).ready(function() {
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing=null;
+  var playing_id = false;
+  var cont =  0;
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
