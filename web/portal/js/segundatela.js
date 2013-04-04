@@ -1,3 +1,8 @@
+//yotube API
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function() {
   //arrays para players multiplos
   var cont = 0;
@@ -5,11 +10,7 @@ $(document).ready(function() {
   var players_ids = new Array();
   var playing;
   var playing_id = false;
-  //yotube API
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
   
   $('#status').fadeIn('slow');
 
