@@ -57,10 +57,10 @@ $(document).ready(function() {
     //scroll
     var el = $(this).parent();
     $('html, body').animate({
+      duraton:400,
       scrollTop: el.offset().top
-    }, "slow");
+    });
     
-    $('.accordion-body').die();
   });
   
   // padding ultimo conteudo
