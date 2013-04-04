@@ -1,12 +1,16 @@
-
-//arrays para players multiplos
-var cont = 0;
-var player = new Array();
-var players_ids = new Array();
-var playing=null;
-var playing_id = false;
-var cont =  0;
 $(document).ready(function() {
+  
+  //yotube API
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var playing;
+  var cont =  0;
 
   $('#status').fadeIn('slow');
 
@@ -24,7 +28,7 @@ $(document).ready(function() {
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
-    //console.log(data.url);
+    //console.log(data);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
@@ -33,7 +37,8 @@ $(document).ready(function() {
           cont++;
         }
       });      
-  });  
+    });
+  }  
   
   $('#myTab a').click(function(e) {
     e.preventDefault();
@@ -44,7 +49,8 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    playing.pauseVideo();
+    if(playing.data==1)
+      playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
@@ -62,28 +68,20 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-}});
- 
-function checkState(res){
-  if(res.data==1){
-    playing_id=players_ids[i];
+  function onYouTubeIframeAPIReadyPlayer(obj, cont) {
+    console.log("start");
+    console.log("obj:"+obj);
+    console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        playing = res.target;
+        console.log('playing:'+playing);
+      }
+    });
   }
-}
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-function onYouTubeIframeAPIReadyPlayer(obj, cont) {
-  console.log("start");
-  console.log("obj:"+obj);
-  console.log("contador:"+cont);
-  player[cont] = new YT.Player(obj);
-  console.log("player:"+player[cont]);
-  player[cont].addEventListener("onStateChange", function(res){
-    if(res.data == 1){
-      playing = res.target;
-      console.log('playing:'+playing);
-    }
-  });
-} 
+  
+});
+ 
+ 
