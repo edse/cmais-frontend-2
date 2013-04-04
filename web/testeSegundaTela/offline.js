@@ -78,6 +78,7 @@ $(document).ready(function() {
       if(res.data == 1){
         playing = res.target;
         console.log('playing:'+playing);
+        console.log('status:'+playing.data);
       }
     });
   }
