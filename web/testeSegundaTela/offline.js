@@ -2,9 +2,7 @@ $(document).ready(function() {
   //arrays para players multiplos
   var cont = 0;
   var player = new Array();
-  var players_ids = new Array();
-  var playing=null;
-  var playing_id = false;
+  var playing;
   var cont =  0;
   //yotube API
   var tag = document.createElement('script');
@@ -28,7 +26,7 @@ $(document).ready(function() {
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
-    //console.log(data.url);
+    console.log(data);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
