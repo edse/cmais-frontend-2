@@ -49,7 +49,8 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    playing.pauseVideo();
+    if(playing.data==1)
+      playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
@@ -67,23 +68,20 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
+  function onYouTubeIframeAPIReadyPlayer(obj, cont) {
+    console.log("start");
+    console.log("obj:"+obj);
+    console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        playing = res.target;
+        console.log('playing:'+playing);
+      }
+    });
+  }
+  
 }});
  
-function checkState(res){
-  if(res.data==1){
-    playing_id=players_ids[i];
-  }
-}
-function onYouTubeIframeAPIReadyPlayer(obj, cont) {
-  console.log("start");
-  console.log("obj:"+obj);
-  console.log("contador:"+cont);
-  player[cont] = new YT.Player(obj);
-  console.log("player:"+player[cont]);
-  player[cont].addEventListener("onStateChange", function(res){
-    if(res.data == 1){
-      playing = res.target;
-      console.log('playing:'+playing);
-    }
-  });
-} 
+ 
