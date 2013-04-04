@@ -3,7 +3,7 @@
 var cont = 0;
 var player = new Array();
 var players_ids = new Array();
-var playing=null;
+var playing;
 var playing_id = false;
 $(document).ready(function() {
   //yotube API
@@ -69,11 +69,11 @@ $(document).ready(function() {
   });
 
   function onYouTubeIframeAPIReadyPlayer(obj, cont) {
-    console.log("start");
-    console.log("obj:"+obj);
-    console.log("contador:"+cont);
+    console.log("start"+cont);
+    //console.log("obj:"+obj);
+    //console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
-    console.log("player:"+player[cont]);
+    //console.log("player:"+player[cont]);
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
