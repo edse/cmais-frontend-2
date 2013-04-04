@@ -18,7 +18,15 @@ $(document).ready(function() {
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
       //console.log(data.url);
-      $('#id'+data.handler).load(data.url);
+      $('#id'+data.handler).load(data.url, function(){
+      $('#id'+data.handler+'.accordion-body iframe').each(function(i){
+        if($(this).attr('src').indexOf("youtube") != -1){
+          $(this).attr("id","player"+cont);
+          onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+          cont++;
+        }
+      });      
+    });
     }    
   }
 
@@ -47,5 +55,18 @@ $(document).ready(function() {
   $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
-
+  function onYouTubeIframeAPIReadyPlayer(obj, cont) {
+    console.log("start"+cont);
+    //console.log("obj:"+obj);
+    //console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    //console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        playing = res.target;
+        console.log('playing:'+playing);
+        console.log('status:'+playing.data);
+      }
+    });
+  }
 });
