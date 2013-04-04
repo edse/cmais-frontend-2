@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  
+  //yotube API
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
   //arrays para players multiplos
   var cont = 0;
   var player = new Array();
@@ -75,14 +82,7 @@ $(document).ready(function() {
       }
     });
   }
-  function Ytplayer(){
-    //yotube API
-    var tag = document.createElement('script');
-    tag.src = "//www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
   
-}});
+});
  
  
