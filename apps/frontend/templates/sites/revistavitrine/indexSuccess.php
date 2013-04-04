@@ -44,6 +44,7 @@
          <div class="capa-revista">
            <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
          </div>
+
          <div class="baixar">
            <a href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/bt-app_store.png" /></a>
          </div>
