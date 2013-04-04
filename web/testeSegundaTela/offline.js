@@ -58,7 +58,7 @@ $(document).ready(function() {
     var el = $(this).parent();
     $('html, body').animate({
       scrollTop: el.offset().top
-    }, "fast");
+    }, "slow");
   });
   
   // padding ultimo conteudo
