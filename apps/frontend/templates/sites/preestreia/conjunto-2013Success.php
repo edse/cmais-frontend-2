@@ -11,16 +11,16 @@
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
   <!-- BARRA SITE -->
-  <div id="barra-site">
+  <div id="barra-site">                                                                   
     <div class="topo-programa">
       <?php if(isset($program) && $program->id > 0): ?>
       <h2>
         <a href="<?php echo $program->retriveUrl() ?>">
           <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-        </a>
+        </a> 
       </h2>
       <?php endif; ?>
-
+ 
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
       <?php endif; ?>
