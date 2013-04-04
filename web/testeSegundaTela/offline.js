@@ -4,14 +4,11 @@ $(document).ready(function() {
   var player = new Array();
   var playing;
   var cont =  0;
-  //yotube API
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
 
   $('#status').fadeIn('slow');
-
+  
+  Ytplayer()
   contentInfo = function(data) {
     //console.log("<<<<<");
     var c = 'icon-align-left';
@@ -26,7 +23,7 @@ $(document).ready(function() {
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
-    console.log(data);
+    //console.log(data);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
@@ -77,6 +74,13 @@ $(document).ready(function() {
         console.log('playing:'+playing);
       }
     });
+  }
+  function Ytplayer(){
+    //yotube API
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   }
   
 }});
