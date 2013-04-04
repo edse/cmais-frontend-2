@@ -5,7 +5,6 @@ var player = new Array();
 var players_ids = new Array();
 var playing=null;
 var playing_id = false;
-var cont =  0;
 $(document).ready(function() {
   //yotube API
   var tag = document.createElement('script');
