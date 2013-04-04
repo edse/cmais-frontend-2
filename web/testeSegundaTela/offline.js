@@ -7,6 +7,11 @@ var playing=null;
 var playing_id = false;
 var cont =  0;
 $(document).ready(function() {
+  //yotube API
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   $('#status').fadeIn('slow');
 
@@ -69,11 +74,6 @@ function checkState(res){
     playing_id=players_ids[i];
   }
 }
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReadyPlayer(obj, cont) {
   console.log("start");
   console.log("obj:"+obj);
