@@ -1,17 +1,16 @@
-//arrays para players multiplos
-var cont = 0;
-var player = new Array();
-var players_ids = new Array();
-var playing;
-var playing_id = false;
-//yotube API
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 $(document).ready(function() {
-
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing;
+  var playing_id = false;
+  //yotube API
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
   $('#status').fadeIn('slow');
 
   var log, serverUrl, socket;
@@ -182,15 +181,15 @@ $(document).ready(function() {
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
     console.log("start"+cont);
-    //console.log("obj:"+obj);
-    //console.log("contador:"+cont);
+    console.log("obj:"+obj);
+    console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
-    //console.log("player:"+player[cont]);
+    console.log("player:"+player[cont]);
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
-        //console.log('playing:'+playing);
-        //console.log('status:'+playing.data);
+        console.log('playing:'+playing);
+        console.log('status:'+playing.data);
       }
     });
   }
@@ -248,6 +247,7 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
