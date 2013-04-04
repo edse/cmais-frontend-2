@@ -2338,7 +2338,7 @@
             opcao_correspondente4: "Campo obrigat&oacute;rio",
         
         anexofoto: "Este campo &eacute; Obrigat&oacute;rio.",
-        curriculo: "Este campo &eacute; Obrigat&oacute;rio.",
+        curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
         regulamento: "Este campo &eacute; Obrigat&oacute;rio."
       }, 
