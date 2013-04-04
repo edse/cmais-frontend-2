@@ -1,16 +1,15 @@
 $(document).ready(function() {
-  
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing=null;
+  var cont =  0;
   //yotube API
   var tag = document.createElement('script');
   tag.src = "//www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  
-  //arrays para players multiplos
-  var cont = 0;
-  var player = new Array();
-  var playing;
-  var cont =  0;
 
   $('#status').fadeIn('slow');
 
@@ -28,7 +27,7 @@ $(document).ready(function() {
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
-    //console.log(data);
+    //console.log(data.url);
     $('#id'+data.handler).load(data.url, function(){
       $('#id'+data.handler+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
@@ -37,8 +36,7 @@ $(document).ready(function() {
           cont++;
         }
       });      
-    });
-  }  
+  });  
   
   $('#myTab a').click(function(e) {
     e.preventDefault();
@@ -82,6 +80,6 @@ $(document).ready(function() {
     });
   }
   
-});
+}});
  
  
