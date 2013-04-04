@@ -245,7 +245,8 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    playing.pauseVideo();
+    if(playing)
+      playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
