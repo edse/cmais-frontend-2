@@ -99,10 +99,6 @@
   <script>
     $(document).ready(function() {
       setInterval( function() {
-        var seconds = new Date().getSeconds();
-        $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
-        },1000);
-      setInterval( function() {
         var minutes = new Date().getMinutes();
         $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
           },1000);
