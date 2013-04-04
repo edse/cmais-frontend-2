@@ -172,7 +172,7 @@ $(document).ready(function() {
         });
       }
     }
-  });  
+  });
   
   window.fakeService = function(){
     clearInterval(interval);
@@ -187,12 +187,14 @@ $(document).ready(function() {
         success:function(json){
           //console.log(json);
           //console.log('1:');
-          console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
+          //console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
           //console.log('2:');
           //console.log(json.handler);
           add = false;
-          if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
-            add = true;
+          if(json.handler){
+            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
+              add = true;
+            }
           }
           if(add)
             contentInfo(json);
