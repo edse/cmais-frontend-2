@@ -170,10 +170,10 @@ $(document).ready(function() {
       $('#id'+data.handler).load(data.url, function(){
         $('#id'+data.handler+'.accordion-body iframe').each(function(i){
           if($(this).attr('src').indexOf("youtube") != -1){
-            $(this).attr("id","player"+cont);
-            onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
             cont++;
             console.log(cont);
+            $(this).attr("id","player"+cont);
+            onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
           }
         });      
       });
