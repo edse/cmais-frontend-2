@@ -153,7 +153,7 @@ and (orientation : landscape) {
   .hero-unit .col-dir { max-width: 36%; }
   .hero-unit .col-esq { max-width:60%; margin-left:0; }
   .hero-unit .menu-jc .como { margin-bottom:10px; }
-  .hero-unit .menu-jc a,
+  .hero-unit .menu-jc p,
   .hero-unit .menu-jc a { font-size:12px; }
   .hero-unit .menu-jc span { margin-top:-6px;} 
 }
