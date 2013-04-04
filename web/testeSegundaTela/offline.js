@@ -57,7 +57,7 @@ $(document).ready(function() {
     //scroll
     var el = $(this).parent();
     $('html, body').animate({
-      duraton:400,
+      duraton:0,
       scrollTop: el.offset().top
     });
     
