@@ -1,3 +1,15 @@
+//arrays para players multiplos
+var cont = 0;
+var player = new Array();
+var players_ids = new Array();
+var playing;
+var playing_id = false;
+//yotube API
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 $(document).ready(function() {
 
   $('#status').fadeIn('slow');
@@ -155,10 +167,33 @@ $(document).ready(function() {
       html += '</div></div></div>';
       $('#accordion2').prepend(html);
       //console.log(data.url);
-      $('#id'+data.handler).load(data.url);
+      $('#id'+data.handler).load(data.url, function(){
+        $('#id'+data.handler+'.accordion-body iframe').each(function(i){
+          if($(this).attr('src').indexOf("youtube") != -1){
+            $(this).attr("id","player"+cont);
+            onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+            cont++;
+          }
+        });      
+      });
     }
     return;
   };
+  
+  onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
+    console.log("start"+cont);
+    //console.log("obj:"+obj);
+    //console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    //console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        playing = res.target;
+        //console.log('playing:'+playing);
+        //console.log('status:'+playing.data);
+      }
+    });
+  }
   
   // retrive sent contents by ajax
   $.ajax({
