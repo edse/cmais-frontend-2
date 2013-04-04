@@ -196,7 +196,7 @@ function dateLoading(date) {
                     <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php echo urlencode($d->Program->getTitle()) ?>&dates=<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>/<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>&details=<?php echo urlencode($d->Program->getDescription()) ?>&location=<?php echo "culturafm.cmais.com.br" ?>&trp=false&showTz=0&sprop=http%3A%2F%2Fcmais.com.br&sprop=name:TV%20Cultura" target="_blank" class="google-agenda"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0 style="width:100px;height:25px;" /></a>
                   </div>
                   
-                </li>
+                </li> 
               </ul>
                 <?php endforeach; ?>
                 
