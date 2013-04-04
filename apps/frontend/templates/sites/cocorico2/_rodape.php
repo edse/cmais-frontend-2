@@ -2,11 +2,13 @@
     <h3>2013 &copy; tv cultura - fpa</h3>
     <div class="span2"> <a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>" class="bold" title="Cocoricó">Cocoricó</a>
       <ul>
+      	
         <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/personagens" title="Personagens">Personagens</a></li>
         <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/personagens" title="Autógrafos">Autógrafos</a></li>
         <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/clipes-musicais" title="Receitinhas">Clipes</a></li>
-        <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/series" title="Receitinhas">Séries Especiais</a></li>
+        <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/series" title="Receitinhas Especiais">Séries Especiais</a></li>
         <li><a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
+      
       </ul>
     </div>
     <div class="span2 tvcoco"> <a href="http://cmais.com.br/<?php echo $site->retriveUrl() ?>/tvcocorico" class="bold" title="TV Cocoricó">tv cocoricó</a>
