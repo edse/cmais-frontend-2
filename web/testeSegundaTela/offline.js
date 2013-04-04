@@ -3,7 +3,7 @@ $(document).ready(function() {
   var cont = 0;
   var player = new Array();
   var players_ids = new Array();
-  var playing=null;
+  var playing;
   var cont =  0;
   //yotube API
   var tag = document.createElement('script');
