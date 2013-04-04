@@ -45,13 +45,13 @@ $(document).ready(function() {
   });
   
   // colocando e tirando ativo
-  $('.accordion-body').live('hidden', function() {
+  $('.accordion-body').on('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
     playing.pauseVideo();
   });
   
-  $('.accordion-body').live('shown', function() { 
+  $('.accordion-body').on('shown', function() { 
     //remove barra ativa
     $(this).prev().find('a').addClass('ativo');
     //scroll
