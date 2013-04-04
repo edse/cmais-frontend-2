@@ -200,7 +200,6 @@ $(document).ready(function() {
             contentInfo(json);
         }
       });
-      
     }, 30000);
   }
     
