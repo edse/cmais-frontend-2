@@ -168,7 +168,8 @@ $(document).ready(function() {
     success:function(json){
       if(json!=null){
         $.each(json, function( key, value ) {
-          contentInfo(value);
+          if(!value.banned)
+            contentInfo(value);
         });
       }
     }
