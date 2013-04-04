@@ -1,17 +1,17 @@
-//arrays para players multiplos
-var cont = 0;
-var player = new Array();
-var players_ids = new Array();
-var playing;
-var playing_id = false;
 //yotube API
 var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
+tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 $(document).ready(function() {
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing;
+  var playing_id = false;
 
+  
   $('#status').fadeIn('slow');
 
   var log, serverUrl, socket;
@@ -170,9 +170,10 @@ $(document).ready(function() {
       $('#id'+data.handler).load(data.url, function(){
         $('#id'+data.handler+'.accordion-body iframe').each(function(i){
           if($(this).attr('src').indexOf("youtube") != -1){
+            cont++;
+            //console.log(cont);
             $(this).attr("id","player"+cont);
             onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-            cont++;
           }
         });      
       });
@@ -181,7 +182,7 @@ $(document).ready(function() {
   };
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-    console.log("start"+cont);
+    //console.log("start"+cont);
     //console.log("obj:"+obj);
     //console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
@@ -190,7 +191,6 @@ $(document).ready(function() {
       if(res.data == 1){
         playing = res.target;
         //console.log('playing:'+playing);
-        //console.log('status:'+playing.data);
       }
     });
   }
@@ -248,6 +248,7 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 
