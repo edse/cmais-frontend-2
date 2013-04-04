@@ -1,3 +1,8 @@
+//yotube API
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function() {
   //arrays para players multiplos
   var cont = 0;
@@ -5,11 +10,7 @@ $(document).ready(function() {
   var players_ids = new Array();
   var playing;
   var playing_id = false;
-  //yotube API
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
   
   $('#status').fadeIn('slow');
 
@@ -169,9 +170,10 @@ $(document).ready(function() {
       $('#id'+data.handler).load(data.url, function(){
         $('#id'+data.handler+'.accordion-body iframe').each(function(i){
           if($(this).attr('src').indexOf("youtube") != -1){
+            cont++;
+            console.log(cont);
             $(this).attr("id","player"+cont);
             onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-            cont++;
           }
         });      
       });
