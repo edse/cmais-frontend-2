@@ -11,11 +11,9 @@ $(document).ready(function() {
   var player = new Array();
   var playing;
   var cont =  0;
-  
 
   $('#status').fadeIn('slow');
-  
-  Ytplayer()
+
   contentInfo = function(data) {
     //console.log("<<<<<");
     var c = 'icon-align-left';
@@ -39,7 +37,8 @@ $(document).ready(function() {
           cont++;
         }
       });      
-  });  
+    });
+  }  
   
   $('#myTab a').click(function(e) {
     e.preventDefault();
