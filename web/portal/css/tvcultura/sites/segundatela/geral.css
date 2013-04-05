@@ -125,7 +125,7 @@
 
 /*medias */
 @media screen and (max-width: 1024px){
-  .accordion-body iframe {  min-height:515px; }
+  /*.accordion-body iframe {  min-height:515px; }*/
 }
 
 @media screen and (max-width: 480px){
@@ -202,14 +202,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
   .hero-unit .col-esq p { margin:22px 0; }
   .hero-unit .redes { min-width:350px; margin-left:30px; }
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  .accordion-inner iframe { max-height:410px !important; height:410px !important;} 
 }
 
 /* Smartphones (portrait and landscape) ----------- */
