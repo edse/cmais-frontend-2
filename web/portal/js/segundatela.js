@@ -1,5 +1,14 @@
-$(document).ready(function() {
 
+
+$(document).ready(function() {
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing;
+  var playing_id = false;
+
+  
   $('#status').fadeIn('slow');
 
   var log, serverUrl, socket;
@@ -52,6 +61,7 @@ $(document).ready(function() {
     };
 
     socket.onopen = function(msg) {
+      clearInterval(fakeInterval);
       $('#tryin-p').hide();
       $('.offline').hide();
       $('.online').show();
@@ -70,6 +80,10 @@ $(document).ready(function() {
             return clientConnected(response.data);
           case "contentBan":
             return contentBan(response.data);
+          case "onAir":
+            return onAir(response.data);
+          case "offAir":
+            return offAir(response.data);
         }
       }
       return;
@@ -109,28 +123,74 @@ $(document).ready(function() {
     return;
   };
 
+  onAir = function(data) {
+    if(data){
+      if(data.script){
+        eval(data.script); 
+      }
+      else {
+        $('#box-clock').show();
+      }
+    }
+  }
+
+  offAir = function(data) {
+    if(data){
+      if(data.script){
+        eval(data.script);
+      }
+      else {
+        $('#box-clock').hide(); 
+      }
+    }
+  }
+
   contentInfo = function(data) {
-    var c = 'icon-align-left';
-    if(data.type == 'people')
-      c = 'icon-user';
-    if(data.type == 'place')
-      c = 'icon-map-marker';
-    if(data.type == 'poll')
-      c = 'icon-enquete';
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-    html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
-    html += "";
-    html += '</div></div></div>';
-    $('#accordion2').prepend(html);
-    
-    //console.log(data.url);
-    $('#id'+data.handler).load(data.url);
-    
-    if(data.id == "116131"){
-      $('#box-clock').fadeIn('slow');
+    if(data.type == 'script'){
+      console.log(data);
+      eval(data.script);
+      //console.log(data.type);
+    }else{
+      var c = 'icon-align-left';
+      if(data.type == 'people')
+        c = 'icon-user';
+      if(data.type == 'place')
+        c = 'icon-map-marker';
+      if(data.type == 'poll')
+        c = 'icon-enquete';
+      var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
+      html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
+      html += "";
+      html += '</div></div></div>';
+      $('#accordion2').prepend(html);
+      //console.log(data.url);
+      $('#id'+data.handler).load(data.url, function(){
+        $('#id'+data.handler+'.accordion-body iframe').each(function(i){
+          if($(this).attr('src').indexOf("youtube") != -1){
+            cont++;
+            //console.log(cont);
+            $(this).attr("id","player"+cont);
+            onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+          }
+        });      
+      });
     }
     return;
   };
+  
+  onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
+    console.log("start"+cont);
+    console.log("obj:"+obj);
+    console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        playing = res.target;
+        console.log('playing:'+playing);
+      }
+    });
+  }
   
   // retrive sent contents by ajax
   $.ajax({
@@ -140,11 +200,12 @@ $(document).ready(function() {
     success:function(json){
       if(json!=null){
         $.each(json, function( key, value ) {
-          contentInfo(value);
+          if(!value.banned)
+            contentInfo(value);
         });
       }
     }
-  });  
+  });
   
   window.fakeService = function(){
     clearInterval(interval);
@@ -158,19 +219,20 @@ $(document).ready(function() {
         dataType: 'jsonp',
         success:function(json){
           //console.log(json);
-          console.log('1:');
-          console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
-          console.log('2:');
-          console.log(json.handler);
+          //console.log('1:');
+          //console.log($('#accordion2 .accordion-group:first').find('.collapse').attr("id"))
+          //console.log('2:');
+          //console.log(json.handler);
           add = false;
-          if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
-            add = true;
+          if(json.handler){
+            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
+              add = true;
+            }
           }
           if(add)
             contentInfo(json);
         }
       });
-      
     }, 30000);
   }
     
@@ -183,6 +245,8 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    if(playing)
+      playing.pauseVideo();
   });
   
   $('.accordion-body').live('shown', function() { 

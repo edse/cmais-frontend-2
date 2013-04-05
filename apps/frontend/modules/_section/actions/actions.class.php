@@ -1119,6 +1119,10 @@ class _sectionActions extends sfActions
         $sectionSlug = 'offline';
       else
         $sectionSlug = 'jornaldacultura';
+      
+      if($this->section->getSlug() == "05-04-2013")
+        $sectionSlug = 'jornaldacultura';
+      
       $this->date = @end(explode("/", $this->url)); 
     }
     
@@ -1420,6 +1424,10 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos")
         $pagelimit = 72;
     }
+	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
+      if($this->section->getSlug() == "homepage")
+        $pagelimit = 1;
+	}
     if(!isset($pagelimit))
       $pagelimit = 9;
 

@@ -7,7 +7,7 @@
     <!-- Le styles -->
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/geral.css?nocache=<?php echo time()?>" type="text/css" />
 
     <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
         
@@ -43,11 +43,6 @@
     <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
-      {lang: 'pt-BR'}
-    </script>
-
   </head>
   <body>
     <?php echo $sf_content ?>
@@ -78,6 +73,11 @@
           '//connect.facebook.net/pt_BR/all.js';
         document.getElementById('fb-root').appendChild(e);
       }());
+    </script>
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+      {lang: 'pt-BR'}
     </script>
 
   </body>

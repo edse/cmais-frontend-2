@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/rodaviva.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -18,14 +18,14 @@
   <div class="hero-unit">
     <div class="bgtopo"></div>
     <div class="col-esq">
-      <h1>Jornal da Cultura</h1>
-      <p>Mais que um jornal, uma tradução das notícias.</br>Segunda a sábado, às 21:00</p>
+      <h1><?php echo $section->getTitle()?></h1>
+      <p><?php echo $section->getDescription()?></p>
       <div class="redes">
         <div class="gplus">
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
         <div class="fb">
-          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          <fb:like href="http://cmais.com.br/segundatela/rodaviva" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="col-dir">
-      <div id="box-clock" style="display: none;">
+      <div id="box-clock" style="display: block;">
         <div id="no-ar">
          <p>no ar</p>
          <ul style="width: 47px;">
@@ -69,24 +69,30 @@
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-      <h2>Redes Sociais</h2>
-      <!-- abas -->
-      <div class="">
-        <ul class="nav nav-tabs" id="myTab">
-          <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
-          <li class=""><a data-toggle="tab" href="#twitter">Twitter</a></li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
-          </div>
-          <div id="twitter" class="tab-pane fade">
-            <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="box first">
+          <h2>Câmera do Caruso</h2>
+          <iframe width="300" height="213" src="http://www.youtube.com/embed/cJ2ne2qUTww?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="box">
+        <h2>Redes Sociais</h2>
+        <!-- abas -->
+        <div class="">
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
+            <li class=""><a data-toggle="tab" href="#twitter">Twitter</a></li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div id="facebook" class="tab-pane fade active in">
+              <div class="fb-comments" data-href="cmais.com.br/segundatela/rodaviva/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
+            </div>
+            <div id="twitter" class="tab-pane fade">
+              <a class="twitter-timeline" href="https://twitter.com/search?q=%23rodaviva" data-widget-id="317371676063039488">Tweets sobre "#rodaviva"</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
           </div>
         </div>
+        <!-- /abas -->
       </div>
-      <!-- /abas -->
     </div>
     <!-- /direita -->
   </div>
