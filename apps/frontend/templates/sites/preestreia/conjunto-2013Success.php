@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -1620,11 +1620,12 @@
     $('a.repertorio').click(function(){
       $('.sugestao-repertorio').toggle();    
     });
+    $('.sugestao-repertorio input').attr("style","color:#ccc");
     $('input').focusin(function(){
-      $(this).val('')
+      $(this).val('').attr("style","color:#000");;
       if($(this).val()==''){
         $(this).focusout(function(){
-          $(this).val($(this).attr('data-default'))  
+          $(this).val($(this).attr('data-default')).attr("style","color:#ccc");;  
         });
       }
     });

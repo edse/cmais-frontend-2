@@ -1,4 +1,5 @@
 /* form */
+.t12{width:142px}
 .form { background:#fff; }
 .form .box-padrao {margin:5px;}
 .form .box-padrao .titulos {margin-bottom:0;}
@@ -15,7 +16,7 @@
 .contato .codigo .msg { width: 294px;}
 .contato .codigo{ width: 130px !important;} 
 .contato form .t1 label, 
-.contato form .t1 input { width:224px; }
+.contato form .t1 input { width:232px; }
 .contato form .t3 { width:292px;}
 .m10{margin-left:10px}
 .m14{margin-left:14px}
@@ -24,6 +25,8 @@
 .contato form .linha select {width:60px;}
 .contato form .t2 label, 
 .contato form .t2 input {width:56px;}
+.contato form .t12 label,
+.contato form .t12 input {width: 136px;}
 .contato form .concordo .check { width:15px; float:left; border:none; }
 .contato form .concordo label { text-transform:none; font-size:12px; font-weight:normal; width:270px; margin:2px 0 0 5px; float:left; }
 .contato form .concordo a {font-size:12px; text-decoration:underline;}
@@ -37,19 +40,23 @@
 .boxMsg { width: 228px;}
 .titulo {background-color:#333333 ;color: #FFFFFF;float: left;font-size: 14px;font-weight: bold;padding: 5px;text-align: center;width: 100%; margin:10px 0px 20px 0px}
 .w204{width: 204px;}
+.w136{width: 136px !important;}
 a.laranja{background-color:#ff6633 ; text-align:left; color:#FFF; margin:0 0 2px; font-weight:normal;}
 a.laranja:hover{text-decoration:none; background-color:#f09c80;}
-a.menor:hover{text-decoration:none; background-color:#6d6969;}
-a.outras:hover{text-decoration:none; background-color:#6d6969;}
+a.cinza-claro{ color:#cccccc !important;}
+a.menor:hover,
+a.outras:hover,
+a.repertorio:hover{text-decoration:none; background-color:#6d6969;}
 .mb30{margin-bottom: 30px !important;}
-.outras{margin-top:-15px;}
+.outras,
+.repertorio{margin-top:-15px;}
 .apoio {margin:20px 0;}
 .contato form textarea {height: 150px;width: 100%;}
 #captcha .error{width: 292px}
 #captchaimage label{width: 135px !important; margin-top:20px;}
 .acordo { background-color: #333333; font-size:12px; float: left;padding: 10px;width: 620px;}
 .branco{color: #FFFFFF !important;}
-.contato form .linha .enviar {text-align:center;padding: 3px; line-height: 15px !important;}    
+.contato form .linha .enviar {text-align:center;padding: 3px; line-height: 22px}    
 .contato .codigo .caracteres, .contato .codigo .msg {width: 292px;}
 .contato form .t2 .sexo input, .contato form .t2 .sexo label {width: 5px;float: left;}
 .contato form .t2 .sexo input {margin-right: 5px;}
@@ -62,7 +69,7 @@ a.outras:hover{text-decoration:none; background-color:#6d6969;}
 .contato form #captchaimage .linha.t9 {width: 480px;}
 .contato form .t5 .check {height: 15px; position: absolute;width: 15px !important;}
 .contato form .t5 .declaracao {float: left;margin-right: 5px;}
-
+.contato form .link{width:570px; margin-left:10px;}
 #form-contato-solista label.error{background-color: #f5d6cc;color: #863f27;display: none;font-size: 12px;font-weight: normal;margin-top: 4px;padding-left: 3px; text-transform: none;}
 #form-contato-solista .erro{border: 1px solid #f5d6cc;}
 #form-contato-solista label.checked{background: none;height: 0px;}
