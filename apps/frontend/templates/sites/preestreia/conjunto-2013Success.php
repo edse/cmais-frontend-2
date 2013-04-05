@@ -1070,7 +1070,7 @@
               </div>
               
               <!--Sugestoes-->
-              <a class="t7 titulo laranja" >1ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >1ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1092,7 +1092,7 @@
                   <input type="text" name="duracao1" data-default="4:27" value="4:27" id="duracao-1" />
                 </div>
               
-              <a class="t7 titulo laranja" >2ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >2ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1114,7 +1114,7 @@
                   <input type="text" name="duracao2" data-default="4:27" value="4:27" id="duracao-2" />
                 </div>
                 
-              <a class="t7 titulo laranja" >3ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >3ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1136,7 +1136,7 @@
                   <input type="text" name="duracao3" data-default="4:27" value="4:27" id="duracao-3" />
                 </div>
                 
-              <a class="t7 titulo laranja" >4ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >4ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1158,7 +1158,7 @@
                   <input type="text" name="duracao4" data-default="4:27" value="4:27" id="duracao-4" />
                 </div>
                 
-              <a class="t7 titulo laranja" >5ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >5ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1180,7 +1180,7 @@
                   <input type="text" name="duracao5" data-default="4:27" value="4:27" id="duracao-5" />
                 </div>
                 
-              <a class="t7 titulo laranja" >6ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >6ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1203,7 +1203,7 @@
                 </div>
                 
                 
-              <a class="t7 titulo laranja" >7ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >7ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1225,7 +1225,7 @@
                   <input type="text" name="duracao7" data-default="4:27" value="4:27" id="duracao-7" />
                 </div> 
                        
-              <a class="t7 titulo laranja" >8ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >8ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1254,7 +1254,7 @@
                 <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
-              <a class="t7 titulo laranja" >9ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >9ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1276,7 +1276,7 @@
                   <input type="text" name="duracao9" data-default="9:58" value="9:58" id="duracao-9" />
                 </div>
               
-              <a class="t7 titulo laranja" >10ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >10ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1298,7 +1298,7 @@
                   <input type="text" name="duracao10" data-default="9:58" value="9:58" id="duracao-10" />
                 </div>
               
-              <a class="t7 titulo laranja" >11ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >11ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1320,7 +1320,7 @@
                   <input type="text" name="duracao11" data-default="9:58" value="9:58" id="duracao-11" />
                 </div>
               
-              <a class="t7 titulo laranja" >12ª Opção</a>
+              <a class="t7 titulo laranja cinza-claro" >12ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
