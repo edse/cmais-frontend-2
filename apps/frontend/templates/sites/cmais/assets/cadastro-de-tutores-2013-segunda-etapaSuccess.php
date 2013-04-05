@@ -42,7 +42,7 @@
             </div>
             <!-- /DIREITA -->
             
-            <?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) ?>
+            <?php /*include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url)) */?>
           </div>
           <!-- /CAPA -->
           
