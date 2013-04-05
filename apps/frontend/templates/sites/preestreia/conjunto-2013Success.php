@@ -15,7 +15,7 @@
     <div class="topo-programa">
       <?php if(isset($program) && $program->id > 0): ?>
       <h2>
-        <a href="<?php echo $program->retriveUrl() ?>">
+        <a href="<?php echo $program->retriveUrl() ?>"> 
           <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
         </a>  
       </h2> 
@@ -32,7 +32,7 @@
       </div>
       <!-- /horario -->
       
-      <?php endif; ?> 
+      <?php endif; ?>  
     </div>
 
     <!-- box-topo -->
