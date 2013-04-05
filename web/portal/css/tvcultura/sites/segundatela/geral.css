@@ -209,7 +209,7 @@ and (orientation : portrait) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-  .accordion-inner iframe { max-height:410px; height:410px;} 
+  .accordion-inner iframe { max-height:410px !important; height:410px !important;} 
 }
 
 /* Smartphones (portrait and landscape) ----------- */
