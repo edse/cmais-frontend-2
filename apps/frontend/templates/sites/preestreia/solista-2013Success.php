@@ -1016,12 +1016,12 @@ $(document).ready(function(){
     $(".msgAcerto, .msgErro").hide();
     $(".menorForm, .outrasinfo, .sugestao-repertorio").show();
   });
-  $('.sugestao-repertorio input').addClass('cinza-claro');
+  $('.sugestao-repertorio input').attr("style","color:#ccc");
   $('input').focusin(function(){
-    $(this).val('').removeClass('cinza-claro');
+    $(this).val('').attr("style","color:#000");
     if($(this).val()==''){
       $(this).focusout(function(){
-        $(this).val($(this).attr('data-default')).addClass('cinza-claro'); 
+        $(this).val($(this).attr('data-default')).attr("style","color:#ccc"); 
       });
     }
   });
