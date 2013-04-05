@@ -185,7 +185,7 @@
 
               <!--iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=d41fb385ab/height=490/width=310" scrolling="no" height="490px" width="310px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=d41fb385ab" >Pronto Atendimento - Previdência</a></iframe-->
 
-              <a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;">Acesse o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</a><br /><br />
+              <a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br />
               <!--a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="311256597148073986">Tweets de @jornal_cultura</a-->
               <a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="316640392126808065">Tweets de @jornal_cultura</a>
               <script>
