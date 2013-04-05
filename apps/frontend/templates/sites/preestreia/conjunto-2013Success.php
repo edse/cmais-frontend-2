@@ -18,9 +18,9 @@
         <a href="<?php echo $program->retriveUrl() ?>">
           <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
         </a> 
-      </h2>
+      </h2> 
       <?php endif; ?>
- 
+      
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
       <?php endif; ?>
@@ -31,7 +31,8 @@
         <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
       </div>
       <!-- /horario -->
-      <?php endif; ?>
+      
+      <?php endif; ?> 
     </div>
 
     <!-- box-topo -->
