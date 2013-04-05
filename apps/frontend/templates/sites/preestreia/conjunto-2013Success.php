@@ -26,7 +26,7 @@
       <?php endif; ?>
 
       <?php if(isset($program) && $program->id > 0): ?>
-      <!-- horario -->
+      <!-- horario --> 
       <div id="horario">
         <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
       </div>
