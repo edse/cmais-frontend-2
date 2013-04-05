@@ -196,7 +196,7 @@ and (orientation : landscape) {
 }
 
 /* iPads (portrait) ----------- */
-@media screen and (max-device-width: 980px){
+@media screen and (max-device-width: 1024px){
   .accordion-inner iframe { width: 100%; height:390px !important;} 
 }
 
