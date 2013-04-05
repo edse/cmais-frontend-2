@@ -2362,4 +2362,4 @@
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
-</script>
+</script>  
