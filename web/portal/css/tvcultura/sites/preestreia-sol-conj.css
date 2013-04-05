@@ -43,7 +43,7 @@
 .w136{width: 136px !important;}
 a.laranja{background-color:#ff6633 ; text-align:left; color:#FFF; margin:0 0 2px; font-weight:normal;}
 a.laranja:hover{text-decoration:none; background-color:#f09c80;}
-a.cinza-claro{background: #cccccc!important; color:#000;}
+a.cinza-claro{ color:#cccccc !important;}
 a.menor:hover,
 a.outras:hover,
 a.repertorio:hover{text-decoration:none; background-color:#6d6969;}
