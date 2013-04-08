@@ -279,7 +279,7 @@
               <!--Campo Menor de Idade-->
  
               <a href="javascript:;"class="t7 titulo menor">
-                Para candidatos menores de 18 anos favor preencher:
+                Para candidatos menores de 18 anos favor preencher: [Clique aqui]
               </a>
     
               <!--/Campo Menor de Idade-->
@@ -329,7 +329,7 @@
               
               <!--Outras Informaçoes-->
               <a href="javascript:;"class="t7 titulo outras">
-                Outras informações
+                Formação Musical [Clique aqui]
               </a>
 
               
@@ -432,7 +432,7 @@
               
               <!--Sugestoes-->
               <a href="javascript:;"class="t7 titulo repertorio">
-                Repertório
+                Repertório [Clique aqui]
               </a>
               
               <div class="sugestao-repertorio"  style="display:none;">
@@ -455,7 +455,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos1" data-default="Minueto" value="Minueto" id="movimentos-1" />
+                  <input type="text" name="movimentos1" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-1" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -477,7 +477,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos2" data-default="Minueto" value="Minueto" id="movimentos-2" />
+                  <input type="text" name="movimentos2" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-2" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -499,7 +499,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos3" data-default="Minueto" value="Minueto" id="movimentos-3" />
+                  <input type="text" name="movimentos3" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-3" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -521,7 +521,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos4" data-default="Minueto" value="Minueto" id="movimentos-4" />
+                  <input type="text" name="movimentos4" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-4" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -543,7 +543,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos5" data-default="Minueto" value="Minueto" id="movimentos-5" />
+                  <input type="text" name="movimentos5" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-5" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -565,7 +565,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos6" data-default="Minueto" value="Minueto" id="movimentos-6" />
+                  <input type="text" name="movimentos6" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-6" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -588,7 +588,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos7" data-default="Minueto" value="Minueto" id="movimentos-7" />
+                  <input type="text" name="movimentos7" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-7" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -610,7 +610,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos8" data-default="Minueto" value="Minueto" id="movimentos-8" />
+                  <input type="text" name="movimentos8" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-8" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -639,7 +639,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="Minueto" value="Minueto" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-9" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -661,7 +661,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="Minueto" value="Minueto" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-10" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -683,7 +683,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="Minueto" value="Minueto" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-11" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -705,7 +705,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="Minueto" value="Minueto" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-12" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -991,7 +991,7 @@
   //$('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
-  $('.tel').mask("(99)9999-9999");
+  $('.tel').mask("(99)999999999");
   $('.cel').mask("(99) ?999999999");
   $('.nasc').mask("99/99/9999");
   
