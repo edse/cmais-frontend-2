@@ -1621,13 +1621,15 @@
       $('.sugestao-repertorio').toggle();    
     });
     $('.sugestao-repertorio input').attr("style","color:#ccc");
-    $('input').focusin(function(){
-      $(this).val('').attr("style","color:#000");;
+    $('.sugestao-repertorio input').focusin(function(){
+      $(this).val('').attr("style","color:#000");
+      /*
       if($(this).val()==''){
         $(this).focusout(function(){
           $(this).val($(this).attr('data-default')).attr("style","color:#ccc");;  
         });
       }
+      */
     });
     
     var validator = $('#form-contato-conjunto').validate({
