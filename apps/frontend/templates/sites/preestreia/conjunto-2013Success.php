@@ -1095,7 +1095,7 @@
   
            <!--Sugestoes-->
               <a href="javascript:;"class="t7 titulo repertorio">
-                Repertório
+                Repertório [Clique aqui]
               </a>
               
               <div class="sugestao-repertorio"  style="display:none;">
