@@ -1019,11 +1019,13 @@ $(document).ready(function(){
   $('.sugestao-repertorio input').attr("style","color:#ccc");
   $('.sugestao-repertorio input').focusin(function(){
     $(this).val('').attr("style","color:#000");
+    /*
     if($(this).val()==''){
       $(this).focusout(function(){
         $(this).val($(this).attr('data-default')).attr("style","color:#ccc"); 
       });
     }
+    */
   });
   //validacao solista
   var validator = $('#form-contato-solista').validate({
