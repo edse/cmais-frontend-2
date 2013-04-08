@@ -345,7 +345,7 @@
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="new_photo" id="anexofoto" />
+               	<input type="file" name="new_photo_1" id="anexofoto_1" />
                </div>
                <!--/Anexar RG--->
               
@@ -560,7 +560,7 @@
                   <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo" id="anexofoto" />
+               <input type="file" name="new_photo_2" id="anexofoto_2" />
                </div>
                <!--/Anexar RG--->
 
@@ -772,7 +772,7 @@
                <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo" id="anexofoto" />
+               <input type="file" name="new_photo_3" id="anexofoto_3" />
                </div>
                <!--/Anexar RG--->
 
@@ -1014,7 +1014,7 @@
                                         
                     new_field += '<!--Anexar RG-'+i+'-->';
                     new_field += '<div class="linha t5">';
-                    new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável) de cada integrante:</label>';
+                    new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>';
                     new_field += '<input type="file" name="new_photo_'+i+'" id="anexofoto_'+i+'" />';
                     new_field += '</div>';
                     new_field += '<!--/Anexar RG-'+i+'-->';
