@@ -46,7 +46,11 @@
     </div>
       <?php endif; ?>
     <?php endif; ?>
+    <?php if(isset($pager)): ?>
+      <?php if($pager->haveToPaginate()): ?>
     <p class="tit" style="margin-top:30px;">conheça os desenhos participantes:</p>
+      <?php endif; ?>
+    <?php endif; ?>
   </div>
   <!--/row-->
   <?php if(isset($pager)): ?>
