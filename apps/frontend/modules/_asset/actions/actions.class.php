@@ -895,7 +895,7 @@ class _assetActions extends sfActions
       elseif($this->section->slug == "video") {
         if ($debug) print "<br>cocorico-20 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
-      } 
+      }  
       
     }
 		elseif($this->site->getSlug() == "quintaldacultura"){
