@@ -248,9 +248,26 @@ class mainActions extends sfActions
       header("Location: http://cmais.com.br/quintaldacultura");
       die();
     }
-    elseif(($param1 == "aoponto")||($param1 == "ao-ponto")){
-      header("Location: http://tvcultura.com.br/aoponto");
+    elseif(($param1 == "cmais")&&($param2 == "segundatela")&&($param3 == "jornaldacultura")&&($param4 != "")){
+      $date = date("d-m-Y");
+      if($param4 == $date){
+        $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "online");
+      }else{
+        $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "offline");
+      }
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
       die();
+      /*
+      $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, $param4);
+      if($section){
+        $this->getRequest()->setParameter('object', $section);
+        $this->forward('_section', 'index');
+      }else{
+        die(date("d-m-Y"));
+        $this->forward404();
+      }
+      */
     }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
