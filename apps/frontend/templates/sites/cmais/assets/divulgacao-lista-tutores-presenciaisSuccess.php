@@ -93,7 +93,7 @@
                 
                 <div class="texto">
                   <?php echo html_entity_decode($asset->AssetContent->render()) ?> 
-                </div>
+                </div> 
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
