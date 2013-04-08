@@ -887,11 +887,7 @@ class _assetActions extends sfActions
       elseif($this->section->slug == "episodios"||$this->site->getSlug() == "tvcocorico") {
         if ($debug) print "<br>cocorico-19 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
-      }
-	  elseif($this->section->Parent->slug == "concurso-cultural") {
-        if ($debug) print "<br>cocorico-19-b >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural'); 
-      }
+     }
       elseif($this->section->slug == "video") {
         if ($debug) print "<br>cocorico-20 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
