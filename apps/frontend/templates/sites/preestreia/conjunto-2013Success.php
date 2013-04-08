@@ -1100,7 +1100,7 @@
               
               <div class="sugestao-repertorio"  style="display:none;">
               <div class="linha t7">
-                <label>Indique abaixo 8 opções de obras contrastantes a serem executadas nas eliminatórias e na semifinal do concurso. Essas obras devem ter a duração mínima de 3 minutos e máxima de 5 minutos. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Indique abaixo 8 opções de obras contrastantes a serem executadas nas eliminatórias do concurso. Essas obras devem ter a duração mínima de 3 minutos e máxima de 5 minutos. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
               <!--Sugestoes-->
@@ -1285,7 +1285,7 @@
               
               <!--Sugestões Final-->
               <div class="linha t7">
-                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas  acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
               <a class="t7 titulo laranja" >9ª Opção</a>
