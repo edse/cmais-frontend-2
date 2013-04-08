@@ -79,6 +79,7 @@
     <?php endif; ?>
   <?php endif; ?>
   
+   <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
   <!--row-->
   <div class="row-fluid conteudo destaques">
@@ -107,6 +108,7 @@
     <!-- /Modal -->
   </div>
   <!-- /row-->
+  <?php endif; ?>
   <?php endif; ?>
   
   <?php if(isset($pager)): ?>
