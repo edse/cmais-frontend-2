@@ -1606,7 +1606,7 @@ class _sectionActions extends sfActions
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
           }
-          if ($this->section->Parent->slug == "receitinhas") {
+          elseif ($this->section->Parent->slug == "receitinhas") {
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais');
           }
