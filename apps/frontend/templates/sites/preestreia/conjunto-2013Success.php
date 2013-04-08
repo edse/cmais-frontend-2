@@ -341,7 +341,13 @@
                   <input type="text" name="regular_1" id="regular_1" />
                 </div>
                 <!--/cursa-1-->
-
+				
+			   <!--Anexar RG--->
+               <div class="linha t5">
+               	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
+               	<input type="file" name="new_photo_1" id="anexofoto_1" />
+               </div>
+               <!--/Anexar RG--->
               
                 
                 <p class="linha t7 titulo">Para candidatos menores de 18 anos favor preencher:</p>
@@ -385,6 +391,13 @@
                 <div class="linha t5">
                   <label>Nome integrante</label>
                   <input type="text" name="nome_2" id="nome_2" class="required" />
+                </div>
+                <!--/Nome-2-->
+                
+                <!--Nome-2-->
+                <div class="linha t4">
+                  <label>Nome artístico</label><br>
+                  <input type="text" name="nomeartistico_2" id="nomeartistico_2" class="required" />
                 </div>
                 <!--/Nome-2-->
                 
@@ -543,6 +556,13 @@
                   <input type="text" name="regular_2" id="regular_2" />
                 </div>
                 <!--/cursa-2-->
+                
+                  <!--Anexar RG--->
+               <div class="linha t5">
+               <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
+               <input type="file" name="new_photo_2" id="anexofoto_2" />
+               </div>
+               <!--/Anexar RG--->
 
               
                 
@@ -581,6 +601,13 @@
                 <div class="linha t5">
                   <label>Nome integrante</label>
                   <input type="text" name="nome_3" id="nome_3" class="required" />
+                </div>
+                <!--/Nome-3-->
+                
+                <!--Nome-3-->
+                <div class="linha t4">
+                  <label>Nome artístico</label><br>
+                  <input type="text" name="nomeartistico_3" id="nomeartistico_3" class="required" />
                 </div>
                 <!--/Nome-3-->
                 
@@ -744,8 +771,8 @@
                                     
                <!--Anexar RG--->
                <div class="linha t5">
-               <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável) de cada integrante:</label>
-               <input type="file" name="new_photo" id="anexofoto" />
+               <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
+               <input type="file" name="new_photo_3" id="anexofoto_3" />
                </div>
                <!--/Anexar RG--->
 
@@ -817,6 +844,13 @@
                     new_field += '<div class="linha t5">';
                     new_field += '  <label>Nome integrante:</label>';
                     new_field += '  <input type="text" name="nome_'+i+'" id="nome_'+i+'" class="required" />';
+                    new_field += '</div>';
+                    new_field += '<!--/Nome-'+i+'-->';
+                    
+                    new_field += '<!--Nome Artistico-'+i+'-->';
+                    new_field += '<div class="linha t5">';
+                    new_field += '  <label>Nome artístico</label>';
+                    new_field += '  <input type="text" name="nomeartistico_'+i+'" id="nome_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome-'+i+'-->';
                       
@@ -980,7 +1014,7 @@
                                         
                     new_field += '<!--Anexar RG-'+i+'-->';
                     new_field += '<div class="linha t5">';
-                    new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável) de cada integrante:</label>';
+                    new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>';
                     new_field += '<input type="file" name="new_photo_'+i+'" id="anexofoto_'+i+'" />';
                     new_field += '</div>';
                     new_field += '<!--/Anexar RG-'+i+'-->';
@@ -1061,7 +1095,7 @@
   
            <!--Sugestoes-->
               <a href="javascript:;"class="t7 titulo repertorio">
-                Repertório
+                Repertório [Clique aqui]
               </a>
               
               <div class="sugestao-repertorio"  style="display:none;">
@@ -1251,7 +1285,7 @@
               
               <!--Sugestões Final-->
               <div class="linha t7">
-                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas  acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
               <a class="t7 titulo laranja" >9ª Opção</a>
