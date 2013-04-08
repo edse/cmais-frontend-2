@@ -118,7 +118,7 @@ $assets = $pager->getResults();
 		?>
                   
         <div class="assets">
-        <?php if(count($pager) > 0): ?>
+        <?php if(count($pager) > 1): ?>
         
         <?php foreach($pager->getResults() as $d): ?>	
 	       <h3><?php echo $d->getTitle() ?></h3>
