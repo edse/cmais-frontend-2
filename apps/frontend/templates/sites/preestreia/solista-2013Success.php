@@ -1017,7 +1017,7 @@ $(document).ready(function(){
     $(".menorForm, .outrasinfo, .sugestao-repertorio").show();
   });
   $('.sugestao-repertorio input').attr("style","color:#ccc");
-  $('input').focusin(function(){
+  $('.sugestao-repertorio input').focusin(function(){
     $(this).val('').attr("style","color:#000");
     if($(this).val()==''){
       $(this).focusout(function(){
