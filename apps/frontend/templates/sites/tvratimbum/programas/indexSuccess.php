@@ -124,9 +124,9 @@ $assets = $pager->getResults();
 	       <h3><?php echo $d->getTitle() ?></h3>
 	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
         <?php endforeach; ?> 
-         
+        <?php endif; ?> 
          <span class="picote"></span>
-         <?php endif; ?>
+         
         </div>
        
        
