@@ -1114,15 +1114,14 @@ class _sectionActions extends sfActions
     $sectionSlug = $this->section->getSlug();
     
     if($this->section->Site->getSlug() == "segundatela") {
-      //if($this->section->getSlug() != "29-03-2013" && $this->section->getSlug() != "jornaldacultura")
+      /*
       if($this->section->getSlug() != "jornaldacultura")
         $sectionSlug = 'offline';
       else
         $sectionSlug = 'jornaldacultura';
-      
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
-      
+      */
       $this->date = @end(explode("/", $this->url)); 
     }
     
@@ -1606,7 +1605,7 @@ class _sectionActions extends sfActions
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/concurso-cultural');
           }
-          if ($this->section->Parent->slug == "receitinhas") {
+          elseif ($this->section->Parent->slug == "receitinhas") { 
             if($debug) print "<br>8-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinhas-especiais');
           }
