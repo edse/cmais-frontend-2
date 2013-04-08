@@ -125,7 +125,7 @@
 
 /*medias */
 @media screen and (max-width: 1024px){
-  .accordion-body iframe {  min-height:515px; }
+  /*.accordion-body iframe {  min-height:515px; }*/
 }
 
 @media screen and (max-width: 480px){

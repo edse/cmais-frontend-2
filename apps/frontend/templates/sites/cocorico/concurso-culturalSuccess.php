@@ -38,7 +38,8 @@
       <?php if(count($displays["destaque-principal"]) > 0): ?> 
     <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>"></a>
     <div class="span6">
-      <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p>
+      <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p><br><br>
+      <?php echo (html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent())) ?>
       <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
         <?php echo $displays["destaque-principal"][0]->getHeadline() ?></span>
@@ -46,7 +47,11 @@
     </div>
       <?php endif; ?>
     <?php endif; ?>
+    <?php if(isset($pager)): ?>
+      <?php if($pager->haveToPaginate()): ?>
     <p class="tit" style="margin-top:30px;">conheça os desenhos participantes:</p>
+      <?php endif; ?>
+    <?php endif; ?>
   </div>
   <!--/row-->
   <?php if(isset($pager)): ?>
@@ -79,6 +84,7 @@
     <?php endif; ?>
   <?php endif; ?>
   
+   <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
   <!--row-->
   <div class="row-fluid conteudo destaques">
@@ -107,6 +113,7 @@
     <!-- /Modal -->
   </div>
   <!-- /row-->
+  <?php endif; ?>
   <?php endif; ?>
   
   <?php if(isset($pager)): ?>
