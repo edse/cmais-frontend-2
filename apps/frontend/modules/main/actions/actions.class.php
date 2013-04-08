@@ -248,8 +248,14 @@ class mainActions extends sfActions
       header("Location: http://cmais.com.br/quintaldacultura");
       die();
     }
-    elseif(($param1 == "aoponto")||($param1 == "ao-ponto")){
-      header("Location: http://tvcultura.com.br/aoponto");
+    elseif(($param1 == "cmais")&&($param2 == "segundatela")&&($param3 == "jornaldacultura")&&($param4 != "")){
+      $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, $param4);
+      if($section){
+        $this->getRequest()->setParameter('object', $section);
+        $this->forward('_section', 'index');
+      }else{
+        $this->forward404();
+      }
       die();
     }
 
