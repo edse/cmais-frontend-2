@@ -701,13 +701,13 @@
                 <div class="linha t9">  
                   <label>Obra</label><br/>
                   <input type="text" name="obra12" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-12" />
-                </div>
+                </div> 
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
                   <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" />
                 </div>
-                
+                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
                   <input type="text" name="duracao12" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-12" />
@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1">
+                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option(this)">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1625,7 +1625,13 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       });
-  
-  
+  	  
+  	  var numeros = new Array ("1","2","3","4","5","6","7","8");
+
+  	  function option(el){
+  	  	$(el).focusin(function(){
+  	  		console.log($(el).attr('id'))
+  	  	})  	  	
+  	  }
   </script>
   <!-- script validacao solista-->
