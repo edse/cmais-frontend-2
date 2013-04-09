@@ -1625,11 +1625,16 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-      function validate(opcao1){
-        if("#opcao_correspondente1").val()==("#opcao_correspondente2").val())
-          $("#opcao_correspondente1").val('');
-      }
-  });
+      
+      if(opcao_correspondente1 == opcao_correspondente2){
+$(opcao_correspondente1).val('');
+	}
+	
+	if(opcao_correspondente2 == opcao_correspondente3){
+$(opcao_correspondente2).val('');
+	}
+	
+	);
   
   
   </script>
