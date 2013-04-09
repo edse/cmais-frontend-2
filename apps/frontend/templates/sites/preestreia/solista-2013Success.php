@@ -1629,9 +1629,7 @@ $(document).ready(function(){
   	  var numeros = new Array ("1","2","3","4","5","6","7","8");
 
   	  function option(el){
-  	  	$(el).focusin(function(){
-  	  		console.log($(el).attr('id'))
-  	  	})  	  	
+  	  		alert("teste")
   	  }
   </script>
   <!-- script validacao solista-->
