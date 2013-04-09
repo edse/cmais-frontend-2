@@ -42,9 +42,17 @@
            <a href="/revistavitrine/online" alt="Leia agora online" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
          </div>
          
-          <?php if(isset($program) && $program->id > 0): ?>
-            <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+          <!-- curtir -->
+          <div class="redes">
+            <div class="curtir">
+              <div style="display:block; float: left; margin-right:10px;">
+              <g:plusone size="medium" count="false"></g:plusone>
+              <fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>
+              </div>
+            </div>
+          </div>
+          <!-- /curtir -->
 
          <div class="capa-revista">
            <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
