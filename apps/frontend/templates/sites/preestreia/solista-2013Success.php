@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option(this)">
+                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option(this)" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1624,7 +1624,7 @@ $(document).ready(function(){
       function validate(obj){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
-      });
+      }
   	  
   	  var numeros = new Array ("1","2","3","4","5","6","7","8");
 
