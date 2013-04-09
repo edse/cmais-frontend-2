@@ -1,7 +1,7 @@
 <?php
 
         $block = false;
-        /*if($schedules->getIsGeoblocked()){
+     if($schedules->getIsGeoblocked()){
           error_reporting(E_ALL);
           ini_set('display_errors', '1');
           require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
@@ -12,7 +12,7 @@
           }
           geoip_close($gi);
         }
-        */
+       
         if($block == true){
           echo "IP de fora do brasil";
         }else{
