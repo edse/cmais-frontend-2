@@ -1626,8 +1626,8 @@ $(document).ready(function(){
           $(obj).val('');
       }
       function validate(opcao1){
-        if(opcao_correspondente1).val()==(opcao_correspondente2).val())
-          $(opcao_correspondente1).val('');
+        if("opcao_correspondente1").val()==("opcao_correspondente2").val())
+          $("opcao_correspondente1").val('');
       }
   });
   
