@@ -1631,5 +1631,6 @@ $(document).ready(function(){
   	  function option(el){
   	  		alert("teste")
   	  }
+  });
   </script>
   <!-- script validacao solista-->
