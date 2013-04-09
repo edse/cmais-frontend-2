@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="javascript:option(this);" >
+                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option()" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
