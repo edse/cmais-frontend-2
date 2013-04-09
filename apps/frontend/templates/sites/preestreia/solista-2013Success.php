@@ -1624,12 +1624,7 @@ $(document).ready(function(){
       function validate(obj){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
-      }
-		if(opcao_correspondente1 == opcao_correspondente2){
-	 	 (opcao_correspondente1).val('');
-	  }      
-
-	);
+      });
   
   
   </script>
