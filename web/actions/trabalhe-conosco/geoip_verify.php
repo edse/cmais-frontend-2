@@ -1,5 +1,5 @@
 <?php
-
+      echo "1";
      $block = false;
      if($block){
         $myip = "66.249.76.32";
