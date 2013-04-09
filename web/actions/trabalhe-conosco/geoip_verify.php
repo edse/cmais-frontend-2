@@ -8,15 +8,17 @@
           require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
           $gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
           //if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
-            if(geoip_country_code_by_addr($gi, $myip) != "BR"){
+            $country = geoip_country_code_by_addr($gi, $myip);
+            echo $country;
+            if($country != "BR"){
             $block = true;
           }
           geoip_close($gi);
       }
        
-        if($block == true){
-          echo "IP de fora do brasil";
-        }else{
-          echo "IP Permitido";
-        }
+      if($block == true){
+        echo "IP de fora do brasil";
+      }else{
+        echo "IP Permitido";
+      }
 ?>        
