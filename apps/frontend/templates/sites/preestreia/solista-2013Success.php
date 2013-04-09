@@ -1624,7 +1624,7 @@ $(document).ready(function(){
       function validate(obj){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
-      });
+      }
   	  
   	  var numeros = new Array ("1","2","3","4","5","6","7","8");
 
