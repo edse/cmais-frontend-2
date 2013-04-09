@@ -335,12 +335,7 @@
                 </div>
                 <!--/ano-1-->
                 
-                <!--cursa-1-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label><br>
-                  <input type="text" name="regular_1" id="regular_1" />
-                </div>
-                <!--/cursa-1-->
+                
 				
 			   <!--Anexar RG--->
                <div class="linha t5">
@@ -389,7 +384,7 @@
               <input type="hidden" name="integrante-2" value="integrante-2" />  
                 <!--Nome-2-->
                 <div class="linha t5">
-                  <label>Nome integrante</label>
+                  <label>Nome completo</label>
                   <input type="text" name="nome_2" id="nome_2" class="required" />
                 </div>
                 <!--/Nome-2-->
@@ -550,12 +545,7 @@
                 </div>
                 <!--/ano-2-->
                 
-                <!--cursa-2-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>
-                  <input type="text" name="regular_2" id="regular_2" />
-                </div>
-                <!--/cursa-2-->
+               
                 
                   <!--Anexar RG--->
                <div class="linha t5">
@@ -599,7 +589,7 @@
                
                 <!--Nome-3-->
                 <div class="linha t5">
-                  <label>Nome integrante</label>
+                  <label>Nome completo</label>
                   <input type="text" name="nome_3" id="nome_3" class="required" />
                 </div>
                 <!--/Nome-3-->
@@ -761,12 +751,7 @@
                 </div>
                 <!--/ano-3-->
                 
-                <!--cursa-3-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>
-                  <input type="text" name="regular_3" id="regular_3" />
-                </div>
-                <!--/cursa-3-->
+               
                 
                                     
                <!--Anexar RG--->
@@ -842,7 +827,7 @@
                       
                     new_field += '<!--Nome-'+i+'-->';
                     new_field += '<div class="linha t5">';
-                    new_field += '  <label>Nome integrante:</label>';
+                    new_field += '  <label>Nome completo:</label>';
                     new_field += '  <input type="text" name="nome_'+i+'" id="nome_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome-'+i+'-->';
@@ -1004,12 +989,6 @@
                     new_field += '</div>';
                     new_field += '<!--/ano-'+i+'-->';
                       
-                    new_field += '<!--cursa-'+i+'-->';
-                    new_field += '<div class="linha t5">';
-                    new_field += '  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>';
-                    new_field += '  <input type="text" name="regular_'+i+'" id="regular_'+i+'" class="required" />';
-                    new_field += '</div>';
-                    new_field += '<!--/cursa-'+i+'-->';
                     
                                         
                     new_field += '<!--Anexar RG-'+i+'-->';
@@ -1285,7 +1264,7 @@
               
               <!--Sugestões Final-->
               <div class="linha t7">
-                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas sem acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
               <a class="t7 titulo laranja" >9ª Opção</a>
