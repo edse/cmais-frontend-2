@@ -707,7 +707,7 @@
                   <label>Movimentos</label><br/>
                   <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" />
                 </div>
-                
+                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
                   <input type="text" name="duracao12" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-12" />
