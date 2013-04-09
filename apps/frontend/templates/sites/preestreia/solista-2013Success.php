@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option(this)" >
+                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1" onclick="option()" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1629,9 +1629,8 @@ $(document).ready(function(){
   	  var numeros = new Array ("1","2","3","4","5","6","7","8");
 
   	  function option(el){
-  	  	$(el).focusin(function(){
-  	  		console.log($(el).attr('id'))
-  	  	})  	  	
+  	  		alert("teste")
   	  }
+  });
   </script>
   <!-- script validacao solista-->
