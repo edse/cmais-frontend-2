@@ -1628,9 +1628,10 @@ $(document).ready(function(){
   	  
   	  var numeros = new Array ("1","2","3","4","5","6","7","8");
 
-  	  function option(el){
+  	  
+  });
+  function option(el){
   	  		alert("teste")
   	  }
-  });
   </script>
   <!-- script validacao solista-->
