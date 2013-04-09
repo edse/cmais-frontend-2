@@ -2,7 +2,7 @@
 
      $block = false;
      if($block){
-        $myip = "178.88.173.162";
+        $myip = "66.249.76.32";
           //error_reporting(E_ALL);
           //ini_set('display_errors', '1');
           require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
