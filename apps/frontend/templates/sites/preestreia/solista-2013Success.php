@@ -1625,13 +1625,17 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-  	  
-  	  var numeros = new Array ("1","2","3","4","5","6","7","8");
-
-  	  
+      //var numeros = new Array ("1","2","3","4","5","6","7","8");
+  	//function option(el){
+  	//alert("teste")
+  	//}
+  	$("#opcao_correspondente1, #opcao_correspondente2, #opcao_correspondente3").change(function(){
+  		alert($(this).attr("id"))
+  	});
+  		
+  	
   });
-  function option(el){
-  	  		alert("teste")
-  	  }
+  
+  
   </script>
   <!-- script validacao solista-->
