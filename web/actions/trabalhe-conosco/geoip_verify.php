@@ -9,7 +9,7 @@
           $gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
           //if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
             $country = geoip_country_code_by_addr($gi, $myip);
-            echo $country;
+            echo 'Country: '.$country;
             if($country != "BR"){
             $block = true;
           }
