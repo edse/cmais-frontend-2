@@ -39,7 +39,7 @@
 
          <div class="baixar">
            <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
-           <a href="/revistavitrine/online" alt="Leia agora online" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
+           <a href="/revistavitrine/online" alt="Leia agora online"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
          </div>
          
           <?php if(isset($program) && $program->id > 0): ?>
