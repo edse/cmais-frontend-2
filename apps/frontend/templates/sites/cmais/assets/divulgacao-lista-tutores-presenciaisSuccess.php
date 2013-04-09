@@ -94,7 +94,7 @@
                 <div class="texto">
                   <?php echo html_entity_decode($asset->AssetContent->render()) ?> 
                 </div> 
-                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
                   <!-- SAIBA MAIS -->
