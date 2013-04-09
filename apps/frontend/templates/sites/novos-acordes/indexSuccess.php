@@ -55,7 +55,7 @@
   <!-- /BARRA SITE -->
   <!-- MIOLO -->
   <div id="miolo">
-
+    
     <?php include_partial_from_folder('blocks','global/shortcuts') ?>
 
     <!-- CONTEUDO PAGINA -->
@@ -65,7 +65,7 @@
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
           <h3 class="tit-pagina grid2"><?php echo $site->getTitle()?></h3>
-          
+          <?php echo "123"; ?>
             
 
           <div class="box-interna grid2">
