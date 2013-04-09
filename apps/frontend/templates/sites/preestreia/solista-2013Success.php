@@ -744,7 +744,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente2" name="opcao_corespondente2">
+                  <select class="estado required" id="opcao_correspondente2" name="opcao_correspondente2">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -765,7 +765,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente3" name="opcao_corespondente3">
+                  <select class="estado required" id="opcao_correspondente3" name="opcao_correspondente3">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
