@@ -98,7 +98,7 @@
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
                   <!-- SAIBA MAIS -->
-                  
+                  <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
                  
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
                     <div id="saibamais">                                                            
