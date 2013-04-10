@@ -1625,14 +1625,15 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-      //var numeros = new Array ("1","2","3","4","5","6","7","8");
-  	//function option(el){
-  	//alert("teste")
-  	//}
-  	$(".opcao_correspondente").change(function(){
-  		alert($("#"+$(this).attr("id")).find("option").val());
+    $('.opcao_correspondente').click(function(){
+       var valores = $(this).serialize();
+       alert(valores);
+    });
+    
+  	//$(".opcao_correspondente").change(function(){
+  		//alert($("#"+$(this).attr("id")).find("option").val());
   		
-  	});
+  	//});
   		
   	
   });
