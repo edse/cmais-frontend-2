@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_correspondente1" name="opcao_correspondente1" >
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -744,7 +744,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_correspondente2" name="opcao_correspondente2">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -765,7 +765,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_correspondente3" name="opcao_correspondente3">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1625,13 +1625,12 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-      //var numeros = new Array ("1","2","3","4","5","6","7","8");
-  	//function option(el){
-  	//alert("teste")
-  	//}
-  	$("#opcao_correspondente1, #opcao_correspondente2, #opcao_correspondente3").change(function(){
-  		console.log($(this).attr("id"))
-  		
+    
+  	$(".opcao_correspondente").change(function(){
+      $(".opcao_correspondente").each(function(){
+        //$("#"+$(this).attr("id")+" option:selected").attr("value");
+        $(this).remove();        
+      });
   	});
   		
   	
