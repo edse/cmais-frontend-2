@@ -1,18 +1,3 @@
-<?php
-  $assets = Doctrine_Query::create()
-    ->select('a.*')
-    ->from('Asset a, SectionAsset sa')
-    ->where('a.site_id = ?', (int)$site->getId())
-    ->andWhere('sa.asset_id = a.id')
-    ->andWhere('sa.section_id = ?', (int)$section->getId())
-    ->andWhere('a.asset_type_id = ?', 5)
-    ->orderBy('sa.display_order')
-    ->execute();
-  if(count($assets) >= 1)
-    $asset = $assets[0];
-?>
-
-
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
 <script type="text/javascript">
