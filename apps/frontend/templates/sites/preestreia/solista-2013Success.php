@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" >
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -744,7 +744,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -765,7 +765,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1027,6 +1027,24 @@ $(document).ready(function(){
     }
     */
   });
+  
+  var selected = new Array(0,0,0);
+  $(".opcao_correspondente").change(function(){
+    var optionSelected = $("#"+$(this).attr("id")+" option:selected").attr("value");
+    var number = $(this).attr("data-order");
+    selected[number]=optionSelected;
+    
+    $(".opcao_correspondente").not($(this)).each(function(){
+      $(this).find("option").each(function(){
+        $(this).removeAttr("disabled")
+        for(var i=0;i<selected.length; i++){
+          if($(this).attr("value") == selected[i])
+            $(this).attr("disabled","disabled");
+        }
+      });
+    });
+  });
+      
   //validacao solista
   var validator = $('#form-contato-solista').validate({
     /*
@@ -1625,15 +1643,7 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-    
-  	$(".opcao_correspondente").change(function(){
-      $(".opcao_correspondente").each(function(){
-        //$("#"+$(this).attr("id")+" option:selected").attr("value");
-        $(this).remove();        
-      });
-  	});
   		
-  	
   });
   
   
