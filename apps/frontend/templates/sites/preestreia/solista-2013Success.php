@@ -1631,7 +1631,7 @@ $(document).ready(function(){
     //});
     
   	$(".opcao_correspondente").change(function(){
-  		alert($("#"+$(this).attr("id")).find("option").val());
+  		alert($("#"+$(this).attr("id")+" option:selected").attr("value"));
   		
   	});
   		
