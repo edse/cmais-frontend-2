@@ -1627,7 +1627,7 @@ $(document).ready(function(){
       }
     
   	$(".opcao_correspondente").change(function(){
-      $(this).each(function(){
+      $(".opcao_correspondente").each(function(){
         //$("#"+$(this).attr("id")+" option:selected").attr("value");
         $(this).remove();        
       });
