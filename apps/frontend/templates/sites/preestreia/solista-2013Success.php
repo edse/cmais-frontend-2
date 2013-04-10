@@ -1630,7 +1630,7 @@ $(document).ready(function(){
   	//alert("teste")
   	//}
   	$(".opcao_correspondente").change(function(){
-  		console.log($($(this).attr("id")+" option").attr("value"))
+  		console.log("#"+$($(this).attr("id")+" option").attr("value"))
   		
   	});
   		
