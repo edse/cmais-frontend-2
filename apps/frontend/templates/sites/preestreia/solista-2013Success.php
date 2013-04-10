@@ -225,7 +225,7 @@
                   <option value="Roraima">RR</option>
                   <option value="Rio Grande do Sul">RS</option>
                   <option value="Santa Catarina">SC</option>
-                  <option value="Sergipe">SE</option>
+                  <option value="Sergipe">SE</option> 
                   <option value="S&atilde;o Paulo">SP</option>
                   <option value="Tocantins">TO</option>
                 </select>
