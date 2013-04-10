@@ -1625,15 +1625,15 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-    $('.opcao_correspondente').click(function(){
-       var valores = $(this).serialize();
-       alert(valores);
-    });
+    //$('.opcao_correspondente').click(function(){
+       //var valores = $(this).serialize();
+       //alert(valores);
+    //});
     
-  	//$(".opcao_correspondente").change(function(){
-  		//alert($("#"+$(this).attr("id")).find("option").val());
+  	$(".opcao_correspondente").change(function(){
+  		alert($("#"+$(this).attr("id")).find("option").val());
   		
-  	//});
+  	});
   		
   	
   });
