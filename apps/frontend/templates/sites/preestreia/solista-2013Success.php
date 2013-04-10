@@ -1625,12 +1625,11 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
-    //$('.opcao_correspondente').click(function(){
-       //var valores = $(this).serialize();
-       //alert(valores);
-    //});
     
   	$(".opcao_correspondente").change(function(){
+  	  $(".opcao_corresponte").not($("#"+$(this).attr("id"))).each(function(){
+  	   alert("#"+$(this).attr("id")); 
+  	  })
   		alert($("#"+$(this).attr("id")+" option:selected").attr("value"));
   		
   	});
