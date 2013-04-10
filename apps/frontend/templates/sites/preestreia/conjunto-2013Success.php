@@ -1262,12 +1262,12 @@
                   
               <!--/Sugestões-->
               
-              <!--Sugestões Final-->
+              <!--Sugestões Final--> 
               <div class="linha t7">
                 <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas sem acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
-              <a class="t7 titulo laranja" >9ª Opção</a>
+              <a class="t7 titulo laranja" >9ª Opção</a> 
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>

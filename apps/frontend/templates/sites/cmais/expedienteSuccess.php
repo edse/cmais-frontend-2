@@ -71,7 +71,6 @@
  
               <h2>Conteúdo</h2>
               <p>
-                Camila Mesquita<br/>
                 Débora Centoamore<br/>
                 Juliano Nunes<br/>
                 Maria Montesanti<br/>
@@ -82,7 +81,7 @@
 
               <h2>Desenvolvimento e Programação</h2>
               <p>
-                Cristovam Ruiz Jr<br/>
+                Cristovam Ruiz Jr.<br/>
                 Emerson Estrella<br/>
                 Jefferson M. Doljak<br/>
                 Rafael Cruz<br/> 
@@ -90,9 +89,11 @@
               </p><br/>   
 
               <h2>Estagiárias</h2>
-              <p>Josilene Veloso</p><br/>
-              <p>Mariana Amorim</p><br/>
-              <p>Nádia Atie</p><br/>
+              <p>
+				Josilene Veloso<br/>
+              	Mariana Amorim<br/>
+              	Nádia Atie<br/>
+              </p><br/>
               
               <h2>Fundação Padre Anchieta</h2><br/>
 
