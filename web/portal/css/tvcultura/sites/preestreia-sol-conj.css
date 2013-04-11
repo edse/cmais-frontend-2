@@ -73,7 +73,7 @@ a.repertorio:hover{text-decoration:none; background-color:#6d6969;}
 #form-contato-solista label.error{background-color: #f5d6cc;color: #863f27;display: none;font-size: 12px;font-weight: normal;margin-top: 4px;padding-left: 3px; text-transform: none;}
 #form-contato-solista .erro{border: 1px solid #f5d6cc;}
 #form-contato-solista label.checked{background: none;height: 0px;}
-
+#form-contato-solista .mov{font-size:9px !important;width: 126px;}
 #form-contato-conjunto label.error{background-color: #f5d6cc;color: #863f27;display: none;font-size: 12px;font-weight: normal;margin-top: 4px;padding-left: 3px; text-transform: none;}
 #form-contato-conjunto .erro{border: 1px solid #f5d6cc;}
 #form-contato-conjunto label.checked{background: none;height: 0px;}

@@ -1,55 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Ajax Loading XML</title>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript">
+<?php
 
-   $(function() {
-     $.ajax({
-     type: "GET",
-     url: "sites.xml",
-     dataType: "xml",
-
-     success: function(xml) {
-
-       $(xml).find('site').each(function() {
-
-                    var nome = $(this).find('nome').text();
-
-                    var data = $(this).find('data').text();
-
-                    //$('<p></p>').html(nome+'<br />'+url).appendTo('#wrap');
-
-                    $("#nome").val(nome);
-
-                    $("#data").val(data);
-
-                     });
-
-                   }
-
-     });
-
-   });
-
- </script>
-
-</head>
-
-<body>
-
- <div id="wrap"></div>
-
- <form action="" method="GET">
-
-   CPF: <input type="text" id="nome" value="nome"/><br><br>
-
-   Data de Nascimento: <input type="text" id="data" value="d"/><br><br>
-
- </form>
-
-</body>
-
-</html>
+        $block = false;
+        /*if($schedules->getIsGeoblocked()){
+          error_reporting(E_ALL);
+          ini_set('display_errors', '1');
+          require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
+          $gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
+          //"este conteúdo não está liberado para sua região"
+          if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
+            $block = true;
+          }
+          geoip_close($gi);
+        }
+        */
+        if($block == true){
+          echo "IP de fora do brasil";
+        }else{
+          echo "IP Permitido";
+        }
+?>        

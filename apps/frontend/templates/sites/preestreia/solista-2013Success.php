@@ -225,7 +225,7 @@
                   <option value="Roraima">RR</option>
                   <option value="Rio Grande do Sul">RS</option>
                   <option value="Santa Catarina">SC</option>
-                  <option value="Sergipe">SE</option>
+                  <option value="Sergipe">SE</option> 
                   <option value="S&atilde;o Paulo">SP</option>
                   <option value="Tocantins">TO</option>
                 </select>
@@ -271,7 +271,7 @@
               <div class="linha t9 m10">
               
                 <label>Telefone Celular</label>
-                <input type="text" name="telcelular" id="telcelular" class="tel" />
+                <input type="text" name="telcelular" id="telcelular" class="cel" />
               
               </div>
               <!--Campo Telefone Celular-->
@@ -450,17 +450,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra1" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
+                  <input type="text" name="obra1" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos1" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-1" />
+                  <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao1" data-default="4:07" value="4:07" id="duracao-1" />
+                  <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
                 </div>
               
               <a class="t7 titulo laranja" >2ª Opção</a>
@@ -472,17 +472,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra2" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
+                  <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos2" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-2" />
+                  <input type="text" name="movimentos2" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-2" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao2" data-default="4:07" value="4:07" id="duracao-2" />
+                  <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
                 </div>
                 
               <a class="t7 titulo laranja" >3ª Opção</a>
@@ -494,17 +494,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra3" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-3" />
+                  <input type="text" name="obra3" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-3" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos3" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-3" />
+                  <input type="text" name="movimentos3" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-3" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao3" data-default="4:07" value="4:07" id="duracao-3" />
+                  <input type="text" name="duracao3" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-3" />
                 </div>
                 
               <a class="t7 titulo laranja" >4ª Opção</a>
@@ -516,17 +516,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra4" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-4" />
+                  <input type="text" name="obra4" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-4" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos4" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-4" />
+                  <input type="text" name="movimentos4" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-4" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao4" data-default="4:07" value="4:07" id="duracao-4" />
+                  <input type="text" name="duracao4" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-4" />
                 </div>
                 
               <a class="t7 titulo laranja" >5ª Opção</a>
@@ -538,17 +538,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra5" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-5" />
+                  <input type="text" name="obra5" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-5" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos5" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-5" />
+                  <input type="text" name="movimentos5" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-5" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao5" data-default="4:07" value="4:07" id="duracao-5" />
+                  <input type="text" name="duracao5" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-5" />
                 </div>
                 
               <a class="t7 titulo laranja" >6ª Opção</a>
@@ -560,17 +560,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra6" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-6" />
+                  <input type="text" name="obra6" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-6" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos6" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-6" />
+                  <input type="text" name="movimentos6" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-6" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao6" data-default="4:07" value="4:07" id="duracao-6" />
+                  <input type="text" name="duracao6" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-6" />
                 </div>
                 
                 
@@ -583,17 +583,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra7" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-7" />
+                  <input type="text" name="obra7" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-7" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos7" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-7" />
+                  <input type="text" name="movimentos7" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-7" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao7" data-default="4:07" value="4:07" id="duracao-7" />
+                  <input type="text" name="duracao7" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-7" />
                 </div> 
                        
               <a class="t7 titulo laranja" >8ª Opção</a>
@@ -605,17 +605,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra8" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-8" />
+                  <input type="text" name="obra8" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-8" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos8" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-8" />
+                  <input type="text" name="movimentos8" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-8" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao8" data-default="4:07" value="4:07" id="duracao-8" />
+                  <input type="text" name="duracao8" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-8" />
                 </div>
                   
               <!--/Sugestões-->
@@ -629,88 +629,88 @@
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
-                  <input type="text" name="compositor9" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-9" />
+                  <input type="text" name="compositor9" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-9" />
                 </div>
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-9" />
+                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" class="mov" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao9" data-default="4:07" value="4:07" id="duracao-9" />
+                  <input type="text" name="duracao9" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-9" />
                 </div>
               
               <a class="t7 titulo laranja" >10ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
-                  <input type="text" name="compositor10" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-10" />
+                  <input type="text" name="compositor10" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-10" />
                 </div>
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra10" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-10" />
+                  <input type="text" name="obra10" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-10" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao10" data-default="4:07" value="4:07" id="duracao-10" />
+                  <input type="text" name="duracao10" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-10" />
                 </div>
               
               <a class="t7 titulo laranja" >11ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
-                  <input type="text" name="compositor11" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-11" />
+                  <input type="text" name="compositor11" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-11" />
                 </div>
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra11" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-11" />
+                  <input type="text" name="obra11" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-11" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao11" data-default="4:07" value="4:07" id="duracao-11" />
+                  <input type="text" name="duracao11" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-11" />
                 </div>
               
               <a class="t7 titulo laranja" >12ª Opção</a>
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
-                  <input type="text" name="compositor12" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-12" />
+                  <input type="text" name="compositor12" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-12" />
                 </div>
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra12" data-default="Partita No. 3 em Mi Maior - BWV: 1006" value="Partita No. 3 em Mi Maior - BWV: 1006" id="obra-12" />
-                </div>
+                  <input type="text" name="obra12" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-12" />
+                </div> 
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="IV - Minueto" value="IV - Minueto" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" class="mov"/>
                 </div>
-                
+                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao12" data-default="4:07" value="4:07" id="duracao-12" />
+                  <input type="text" name="duracao12" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-12" />
                 </div>
               <!--/Sugestões Final-->
               
@@ -723,7 +723,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -744,7 +744,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente2" name="opcao_corespondente2">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -765,7 +765,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente3" name="opcao_corespondente3">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2">
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -991,8 +991,8 @@
   //$('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
-  $('.tel').mask("(99)999999999");
-  $('.cel').mask("(99) ?999999999");
+  $('.tel').mask("(99)99999999");
+  $('.cel').mask("(99)?999999999");
   $('.nasc').mask("99/99/9999");
   
   });
@@ -1027,6 +1027,24 @@ $(document).ready(function(){
     }
     */
   });
+  
+  var selected = new Array(0,0,0);
+  $(".opcao_correspondente").change(function(){
+    var optionSelected = $("#"+$(this).attr("id")+" option:selected").attr("value");
+    var number = $(this).attr("data-order");
+    selected[number]=optionSelected;
+    
+    $(".opcao_correspondente").not($(this)).each(function(){
+      $(this).find("option").each(function(){
+        $(this).removeAttr("disabled")
+        for(var i=0;i<selected.length; i++){
+          if($(this).attr("value") == selected[i])
+            $(this).attr("disabled","disabled");
+        }
+      });
+    });
+  });
+      
   //validacao solista
   var validator = $('#form-contato-solista').validate({
     /*
@@ -1067,7 +1085,6 @@ $(document).ready(function(){
             },
             rg:{
               required: true,
-              minlength: 9
             },
             cpf:{
               required: true,
@@ -1328,66 +1345,6 @@ $(document).ready(function(){
                 validate('#obra-12');
               }
             },
-            movimentos1:{
-              required:function(){
-                validate('#movimentos-1');
-              }
-            },
-            movimentos2:{
-              required:function(){
-                validate('#movimentos-2');
-              }
-            },
-            movimentos3:{
-              required:function(){
-                validate('#movimentos-3');
-              }
-            },
-            movimentos4:{
-             required:function(){
-                validate('#movimentos-4');
-              }
-            },
-            movimentos5:{
-              required:function(){
-                validate('#movimentos-5');
-              }
-            },
-            movimentos6:{
-              required:function(){
-                validate('#movimentos-6');
-              }
-            },
-            movimentos7:{
-            required:function(){
-                validate('#movimentos-7');
-              }
-            },
-            movimentos8:{
-              required:function(){
-                validate('#movimentos-8');
-              }
-            },
-            movimentos9:{
-              required:function(){
-                validate('#movimentos-9');
-              }
-            },
-            movimentos10:{
-              required:function(){
-                validate('#movimentos-10');
-              }
-            },
-            movimentos11:{
-              required:function(){
-                validate('#movimentos-11');
-              }
-            },
-            movimentos12:{
-              required:function(){
-                validate('#movimentos-12');
-              }
-            },
             duracao1:{
               required:function(){
                 validate('#duracao-1');
@@ -1625,6 +1582,7 @@ $(document).ready(function(){
         if($(obj).val()==$(obj).attr("data-default"))
           $(obj).val('');
       }
+  		
   });
   
   

@@ -201,7 +201,7 @@
                 <!--idade-1-->
                 <div class="linha t1 m14">
                   <label>Nascimento</label><br>
-                  <input type="text" maxlength="idade_1" name="idade_1" id="idade_1" class="nasc" />
+                  <input type="text" name="idade_1" id="idade_1" class="nasc" />
                 </div>
                 <!--/idade-1-->
                 
@@ -335,12 +335,7 @@
                 </div>
                 <!--/ano-1-->
                 
-                <!--cursa-1-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label><br>
-                  <input type="text" name="regular_1" id="regular_1" />
-                </div>
-                <!--/cursa-1-->
+                
 				
 			   <!--Anexar RG--->
                <div class="linha t5">
@@ -389,7 +384,7 @@
               <input type="hidden" name="integrante-2" value="integrante-2" />  
                 <!--Nome-2-->
                 <div class="linha t5">
-                  <label>Nome integrante</label>
+                  <label>Nome completo</label>
                   <input type="text" name="nome_2" id="nome_2" class="required" />
                 </div>
                 <!--/Nome-2-->
@@ -417,7 +412,7 @@
                 <!--idade-2-->
                 <div class="linha t9">
                   <label>Nascimento</label>
-                  <input type="text" maxlength="idade_2" name="idade_2" id="idade_2" class="nasc"  />
+                  <input type="text" name="idade_2" id="idade_2" class="nasc"  />
                 </div>
                 <!--/idade-2-->
                 
@@ -550,12 +545,7 @@
                 </div>
                 <!--/ano-2-->
                 
-                <!--cursa-2-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>
-                  <input type="text" name="regular_2" id="regular_2" />
-                </div>
-                <!--/cursa-2-->
+               
                 
                   <!--Anexar RG--->
                <div class="linha t5">
@@ -599,7 +589,7 @@
                
                 <!--Nome-3-->
                 <div class="linha t5">
-                  <label>Nome integrante</label>
+                  <label>Nome completo</label>
                   <input type="text" name="nome_3" id="nome_3" class="required" />
                 </div>
                 <!--/Nome-3-->
@@ -627,7 +617,7 @@
                 <!--idade-3-->
                 <div class="linha t9">
                   <label>Nascimento</label>
-                  <input type="text" maxlength="idade_3" name="idade_3" id="idade_3" class="nasc"  />
+                  <input type="text" name="idade_3" id="idade_3" class="nasc"  />
                 </div>
                 <!--/idade-3-->
                 
@@ -761,12 +751,7 @@
                 </div>
                 <!--/ano-3-->
                 
-                <!--cursa-3-->
-                <div class="linha t5">
-                  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>
-                  <input type="text" name="regular_3" id="regular_3" />
-                </div>
-                <!--/cursa-3-->
+               
                 
                                     
                <!--Anexar RG--->
@@ -842,7 +827,7 @@
                       
                     new_field += '<!--Nome-'+i+'-->';
                     new_field += '<div class="linha t5">';
-                    new_field += '  <label>Nome integrante:</label>';
+                    new_field += '  <label>Nome completo:</label>';
                     new_field += '  <input type="text" name="nome_'+i+'" id="nome_'+i+'" class="required" />';
                     new_field += '</div>';
                     new_field += '<!--/Nome-'+i+'-->';
@@ -870,7 +855,7 @@
                     new_field += '<!--idade-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Nascimento</label>';
-                    new_field += '  <input type="text" maxlength="idade_'+i+'" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+' required" />';
+                    new_field += '  <input type="text" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+' required" />';
                     new_field += '</div>';
                     new_field += '<!--/idade-'+i+'-->';
                       
@@ -993,23 +978,17 @@
                     new_field += '<!--escola-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Qual sua escola de música?</label>';
-                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'" class="required" />';
+                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'"  />';
                     new_field += '</div>';                  
                     new_field += '<!--/escola-'+i+'-->';
                       
                     new_field += '<!--ano-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Em que ano você está?</label>';
-                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'" class="required" />';
+                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'"  />';
                     new_field += '</div>';
                     new_field += '<!--/ano-'+i+'-->';
                       
-                    new_field += '<!--cursa-'+i+'-->';
-                    new_field += '<div class="linha t5">';
-                    new_field += '  <label>Você cursa escola regular? Em caso afirmativo, quais?</label>';
-                    new_field += '  <input type="text" name="regular_'+i+'" id="regular_'+i+'" class="required" />';
-                    new_field += '</div>';
-                    new_field += '<!--/cursa-'+i+'-->';
                     
                                         
                     new_field += '<!--Anexar RG-'+i+'-->';
@@ -1113,17 +1092,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra1" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-1" />
+                  <input type="text" name="obra1" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-1" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos1" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-1" />
+                  <input type="text" name="movimentos1" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-1" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao1" data-default="4:27" value="4:27" id="duracao-1" />
+                  <input type="text" name="duracao1" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-1" />
                 </div>
               
               <a class="t7 titulo laranja" >2ª Opção</a>
@@ -1135,17 +1114,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra2" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-2" />
+                  <input type="text" name="obra2" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-2" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos2" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-2" />
+                  <input type="text" name="movimentos2" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-2" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao2" data-default="4:27" value="4:27" id="duracao-2" />
+                  <input type="text" name="duracao2" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-2" />
                 </div>
                 
               <a class="t7 titulo laranja" >3ª Opção</a>
@@ -1157,17 +1136,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra3" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-3" />
+                  <input type="text" name="obra3" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-3" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos3" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-3" />
+                  <input type="text" name="movimentos3" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-3" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao3" data-default="4:27" value="4:27" id="duracao-3" />
+                  <input type="text" name="duracao3" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-3" />
                 </div>
                 
               <a class="t7 titulo laranja" >4ª Opção</a>
@@ -1179,17 +1158,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra4" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-4" />
+                  <input type="text" name="obra4" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-4" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos4" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-4" />
+                  <input type="text" name="movimentos4" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-4" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao4" data-default="4:27" value="4:27" id="duracao-4" />
+                  <input type="text" name="duracao4" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-4" />
                 </div>
                 
               <a class="t7 titulo laranja" >5ª Opção</a>
@@ -1201,17 +1180,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra5" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-5" />
+                  <input type="text" name="obra5" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-5" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos5" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-5" />
+                  <input type="text" name="movimentos5" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-5" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao5" data-default="4:27" value="4:27" id="duracao-5" />
+                  <input type="text" name="duracao5" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-5" />
                 </div>
                 
               <a class="t7 titulo laranja" >6ª Opção</a>
@@ -1223,17 +1202,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra6" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-6" />
+                  <input type="text" name="obra6" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-6" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos6" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-6" />
+                  <input type="text" name="movimentos6" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-6" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao6" data-default="4:27" value="4:27" id="duracao-6" />
+                  <input type="text" name="duracao6" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-6" />
                 </div>
                 
                 
@@ -1246,17 +1225,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra7" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-7" />
+                  <input type="text" name="obra7" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-7" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos7" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-7" />
+                  <input type="text" name="movimentos7" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-7" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao7" data-default="4:27" value="4:27" id="duracao-7" />
+                  <input type="text" name="duracao7" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-7" />
                 </div> 
                        
               <a class="t7 titulo laranja" >8ª Opção</a>
@@ -1268,27 +1247,27 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra8" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-8" />
+                  <input type="text" name="obra8" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-8" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos8" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-8" />
+                  <input type="text" name="movimentos8" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-8" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao8" data-default="4:27" value="4:27" id="duracao-8" />
+                  <input type="text" name="duracao8" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-8" />
                 </div>
                   
               <!--/Sugestões-->
               
-              <!--Sugestões Final-->
+              <!--Sugestões Final--> 
               <div class="linha t7">
-                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas sem acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
               </div>
               
-              <a class="t7 titulo laranja" >9ª Opção</a>
+              <a class="t7 titulo laranja" >9ª Opção</a> 
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
@@ -1297,17 +1276,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-9" />
+                  <input type="text" name="obra9" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-9" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-9" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao9" data-default="9:58" value="9:58" id="duracao-9" />
+                  <input type="text" name="duracao9" data-default="Ex.: 9:58" value="9:58" id="Ex.: duracao-9" />
                 </div>
               
               <a class="t7 titulo laranja" >10ª Opção</a>
@@ -1319,17 +1298,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra10" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-10" />
+                  <input type="text" name="obra10" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-10" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-10" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao10" data-default="9:58" value="9:58" id="duracao-10" />
+                  <input type="text" name="duracao10" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-10" />
                 </div>
               
               <a class="t7 titulo laranja" >11ª Opção</a>
@@ -1341,17 +1320,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra11" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-11" />
+                  <input type="text" name="obra11" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-11" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-11" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao11" data-default="9:58" value="9:58" id="duracao-11" />
+                  <input type="text" name="duracao11" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-11" />
                 </div>
               
               <a class="t7 titulo laranja" >12ª Opção</a>
@@ -1363,17 +1342,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra12" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-12" />
+                  <input type="text" name="obra12" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-12" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-12" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao12" data-default="9:58" value="9:58" id="duracao-12" />
+                  <input type="text" name="duracao12" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-12" />
                 </div>
               <!--/Sugestões Final-->
               
@@ -1386,7 +1365,8 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente1" name="opcao_corespondente1">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
+
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1407,7 +1387,7 @@
               <div class="linha">
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente2" name="opcao_corespondente2">
+					<select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1428,7 +1408,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required" id="opcao_corespondente3" name="opcao_corespondente3">
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="2" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1666,6 +1646,23 @@
       */
     });
     
+    var selected = new Array(0,0,0);
+  $(".opcao_correspondente").change(function(){
+    var optionSelected = $("#"+$(this).attr("id")+" option:selected").attr("value");
+    var number = $(this).attr("data-order");
+    selected[number]=optionSelected;
+    
+    $(".opcao_correspondente").not($(this)).each(function(){
+      $(this).find("option").each(function(){
+        $(this).removeAttr("disabled")
+        for(var i=0;i<selected.length; i++){
+          if($(this).attr("value") == selected[i])
+            $(this).attr("disabled","disabled");
+        }
+      });
+    });
+  });
+    
     var validator = $('#form-contato-conjunto').validate({
       /*
       submitHandler: function(form){
@@ -1732,22 +1729,22 @@
           required: true,
           minlength: 2
         },
-        
+         
         sexo_1:{
           required: true,
           minlength: 1
         },
         idade_1:{
-          required: true,
-          minlength: 2
+          required: true
+          //minlength: 2
         },
         instrumento_1:{
           required: true,
           minlength: 2
         },
         rg_1:{
-          required: true,
-          minlength: 9
+         required: true
+         // minlength: 9
         },
         
         telresi_1:{
@@ -1785,11 +1782,7 @@
         tempo_1:{
           required: true
         },
-        escolamusica_1:{
-          required: true
-        },
-        
-        professor_1:{
+          professor_1:{
           required: true,
           minlength: 8
         },
@@ -1800,15 +1793,15 @@
         },
         idade_2:{
           required: true,
-          minlength: 2
+          minlength:8
         },
         instrumento_2:{
           required: true,
           minlength: 2
         },
         rg_2:{
-          required: true,
-          minlength: 9
+          required: true
+          //minlength: 9
         },
         
         telresi_2:{
@@ -1845,10 +1838,7 @@
         tempo_2:{
           required: true
         },
-        escolamusica_2:{
-          required: true
-        },
-        
+               
         professor_2:{
           required: true
         },
@@ -1860,15 +1850,15 @@
         },
         idade_3:{
           required: true,
-          minlength: 2
+          minlength: 8
         },
         instrumento_3:{
           required: true,
           minlength: 2
         },
         rg_3:{
-          required: true,
-          minlength: 9
+          required: true
+          //minlength: 9
         },
         
         telresi_3:{
@@ -1905,9 +1895,7 @@
         tempo_3:{
           required: true
         },
-        escolamusica_3:{
-          required: true
-        },
+        
         
         professor_3:{
           required: true
@@ -1966,277 +1954,277 @@
           required: true
         },
         compositor1:{
-              required:function(){
-                validate('#compositor-1');
-                },
+          required:function(){
+            validate('#compositor-1');
             },
-            compositor2:{
-               required:function(){
-                validate('#compositor-2');
-                },
+        },
+        compositor2:{
+           required:function(){
+            validate('#compositor-2');
             },
-            compositor3:{
-               required:function(){
-                validate('#compositor-3');
-                },
+        },
+        compositor3:{
+           required:function(){
+            validate('#compositor-3');
             },
-            compositor4:{
-               required:function(){
-                validate('#compositor-4');
-                },
+        },
+        compositor4:{
+           required:function(){
+            validate('#compositor-4');
             },
-            compositor5:{
-               required:function(){
-                validate('#compositor-5');
-                },
+        },
+        compositor5:{
+           required:function(){
+            validate('#compositor-5');
             },
-            compositor6:{
-               required:function(){
-                validate('#compositor-6');
-                },
+        },
+        compositor6:{
+           required:function(){
+            validate('#compositor-6');
             },
-            compositor7:{
-               required:function(){
-                validate('#compositor-7');
-                },
+        },
+        compositor7:{
+           required:function(){
+            validate('#compositor-7');
             },
-            compositor8:{
-               required:function(){
-                validate('#compositor-8');
-                },
+        },
+        compositor8:{
+           required:function(){
+            validate('#compositor-8');
             },
-            compositor9:{
-               required:function(){
-                validate('#compositor-9');
-                },
+        },
+        compositor9:{
+           required:function(){
+            validate('#compositor-9');
             },
-            compositor10:{
-               required:function(){
-                validate('#compositor-10');
-                },
+        },
+        compositor10:{
+           required:function(){
+            validate('#compositor-10');
             },
-            compositor11:{
-               required:function(){
-                validate('#compositor-11');
-                },
+        },
+        compositor11:{
+           required:function(){
+            validate('#compositor-11');
             },
-            compositor12:{
-               required:function(){
-                validate('#compositor-12');
-                },
+        },
+        compositor12:{
+           required:function(){
+            validate('#compositor-12');
             },
-            obra1:{
-               required:function(){
-                validate('#obra-1');
-                },
+        },
+        obra1:{
+           required:function(){
+            validate('#obra-1');
             },
-            obra2:{
-              required:function(){
-                validate('#obra-2');
-                },
+        },
+        obra2:{
+          required:function(){
+            validate('#obra-2');
             },
-            obra3:{
-              required:function(){
-                validate('#obra-3');
-                },
+        },
+        obra3:{
+          required:function(){
+            validate('#obra-3');
             },
-            obra4:{
-              required:function(){
-                validate('#obra-4');
-                },
+        },
+        obra4:{
+          required:function(){
+            validate('#obra-4');
             },
-            obra5:{
-              required:function(){
-                validate('#obra-5');
-                },
+        },
+        obra5:{
+          required:function(){
+            validate('#obra-5');
             },
-            obra6:{
-              required:function(){
-                validate('#obra-6');
-                },
+        },
+        obra6:{
+          required:function(){
+            validate('#obra-6');
             },
-            obra7:{
-              required:function(){
-                validate('#obra-7');
-                },
+        },
+        obra7:{
+          required:function(){
+            validate('#obra-7');
             },
-            obra8:{
-              required:function(){
-                validate('#obra-8');
-                },
+        },
+        obra8:{
+          required:function(){
+            validate('#obra-8');
             },
-            obra9:{
-              required:function(){
-                validate('#obra-9');
-                },
+        },
+        obra9:{
+          required:function(){
+            validate('#obra-9');
             },
-            obra10:{
-              required:function(){
-                validate('#obra-10');
-                },
+        },
+        obra10:{
+          required:function(){
+            validate('#obra-10');
             },
-            obra11:{
-              required:function(){
-                validate('#obra-11');
-                },
+        },
+        obra11:{
+          required:function(){
+            validate('#obra-11');
             },
-            obra12:{
-             required:function(){
-                validate('#obra-12');
-                },
+        },
+        obra12:{
+         required:function(){
+            validate('#obra-12');
             },
-            movimentos1:{
-              required:function(){
-                validate('#movimentos-1');
-                },
+        },
+        movimentos1:{
+          required:function(){
+            validate('#movimentos-1');
             },
-            movimentos2:{
-              required:function(){
-                validate('#movimentos-2');
-                },
+        },
+        movimentos2:{
+          required:function(){
+            validate('#movimentos-2');
             },
-            movimentos3:{
-              required:function(){
-                validate('#movimentos-3');
-                },
+        },
+        movimentos3:{
+          required:function(){
+            validate('#movimentos-3');
             },
-            movimentos4:{
-              required:function(){
-                validate('#movimentos-4');
-                },
+        },
+        movimentos4:{
+          required:function(){
+            validate('#movimentos-4');
             },
-            movimentos5:{
-              required:function(){
-                validate('#movimentos-5');
-                },
+        },
+        movimentos5:{
+          required:function(){
+            validate('#movimentos-5');
             },
-            movimentos6:{
-              required:function(){
-                validate('#movimentos-6');
-                },
+        },
+        movimentos6:{
+          required:function(){
+            validate('#movimentos-6');
             },
-            movimentos7:{
-              required:function(){
-                validate('#movimentos-7');
-                },
+        },
+        movimentos7:{
+          required:function(){
+            validate('#movimentos-7');
             },
-            movimentos8:{
-              required:function(){
-                validate('#movimentos-8');
-                },
+        },
+        movimentos8:{
+          required:function(){
+            validate('#movimentos-8');
             },
-            movimentos9:{
-              required:function(){
-                validate('#movimentos-9');
-                },
+        },
+        movimentos9:{
+          required:function(){
+            validate('#movimentos-9');
             },
-            movimentos10:{
-              required:function(){
-                validate('#movimentos-10');
-                },
+        },
+        movimentos10:{
+          required:function(){
+            validate('#movimentos-10');
             },
-            movimentos11:{
-             required:function(){
-                validate('#movimentos-11');
-                },
+        },
+        movimentos11:{
+         required:function(){
+            validate('#movimentos-11');
             },
-            movimentos12:{
-              required:function(){
-                validate('#movimentos-12');
-                },
+        },
+        movimentos12:{
+          required:function(){
+            validate('#movimentos-12');
             },
-            duracao1:{
-              required:function(){
-                validate('#duracao-1');
-                },
+        },
+        duracao1:{
+          required:function(){
+            validate('#duracao-1');
             },
-            duracao2:{
-              required:function(){
-                validate('#duracao-2');
-                },
+        },
+        duracao2:{
+          required:function(){
+            validate('#duracao-2');
             },
-            duracao3:{
-              required:function(){
-                validate('#duracao-3');
-                },
+        },
+        duracao3:{
+          required:function(){
+            validate('#duracao-3');
             },
-            duracao4:{
-              required:function(){
-                validate('#duracao-4');
-                },
+        },
+        duracao4:{
+          required:function(){
+            validate('#duracao-4');
             },
-            duracao5:{
-              required:function(){
-                validate('#duracao-5');
-                },
+        },
+        duracao5:{
+          required:function(){
+            validate('#duracao-5');
             },
-            duracao6:{
-              required:function(){
-                validate('#duracao-6');
-                },
+        },
+        duracao6:{
+          required:function(){
+            validate('#duracao-6');
             },
-            duracao7:{
-              required:function(){
-                validate('#duracao-7');
-                },
+        },
+        duracao7:{
+          required:function(){
+            validate('#duracao-7');
             },
-            duracao8:{
-             required:function(){
-                validate('#duracao-8');
-                },
+        },
+        duracao8:{
+         required:function(){
+            validate('#duracao-8');
             },
-            duracao9:{
-              required:function(){
-                validate('#duracao-9');
-                },
+        },
+        duracao9:{
+          required:function(){
+            validate('#duracao-9');
             },
-            duracao10:{
-              required:function(){
-                validate('#duracao-10');
-                },
+        },
+        duracao10:{
+          required:function(){
+            validate('#duracao-10');
             },
-            duracao11:{
-              required:function(){
-                validate('#duracao-11');
-                },
+        },
+        duracao11:{
+          required:function(){
+            validate('#duracao-11');
             },
-            duracao12:{
-              required:function(){
-                validate('#duracao-12');
-                },
+        },
+        duracao12:{
+          required:function(){
+            validate('#duracao-12');
             },
-            opcao_correspondente1:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente2:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente3:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente4:{
-              required: true,
-              minlength: 1
-            },
-            link1:{
-              required: true,
-              minlength: 2
-            },
-            link2:{
-              required: true,
-              minlength: 2
-            },
-            link3:{
-              required: true,
-              minlength: 2
-            },
-            link4:{
-              required: true,
-              minlength: 2
-            },
+        },
+        opcao_correspondente1:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente2:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente3:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente4:{
+          required: true,
+          minlength: 1
+        },
+        link1:{
+          required: true,
+          minlength: 2
+        },
+        link2:{
+          required: true,
+          minlength: 2
+        },
+        link3:{
+          required: true,
+          minlength: 2
+        },
+        link4:{
+          required: true,
+          minlength: 2
+        },
         new_photo:{
           required: true
         }

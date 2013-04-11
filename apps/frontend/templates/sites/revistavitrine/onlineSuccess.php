@@ -13,16 +13,16 @@
 </div>
 
     <!-- CAPA SITE -->
-    <div id="capa-site"  >      
+    <div id="capa-site">      
 
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
           <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
           <p class="descricao">Disponível para iPad gratuitamente na <b>App Store</b></p>
-          <p class="baixar"><b>BAIXE AGORA!</b></p>
+          <p class="online"><b>VERSÃO ONLINE | LEIA GRATUITAMENTE</b></p>
           
-         
+          
 
         </div>
         
@@ -35,20 +35,20 @@
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
 
         <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina">
+        <div id="conteudo-pagina" class="conteudo-online">
 
-         <div class="baixar">
-           <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
-           <a href="/revistavitrine/online" alt="Leia agora online"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
-         </div>
          
-          <?php if(isset($program) && $program->id > 0): ?>
+         <?php if(isset($program) && $program->id > 0): ?>
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-
-         <div class="capa-revista">
-           <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
+         
+         <div class="capa-revista online">
+             <div data-configid="0/2005502" style="width: 720px; height: 471px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
          </div>
+         
+          <div class="baixar">
+           <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
+          </div>
 
          
                   

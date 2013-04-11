@@ -115,7 +115,7 @@ $(function(){
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
 				<script type='text/javascript'>
-				GA_googleFillSlot("cmais-assets-250x250");
+				GA_googleFillSlot("maiscrianca");
 				</script>
 		      </div>
           	  
@@ -185,7 +185,7 @@ $(function(){
 		  <div class="box-publicidade pub-grd grid3">
 		    <!-- programas-assets-728x90 -->
 		    <script type='text/javascript'>
-		      GA_googleFillSlot("cmais-assets-728x90");
+		      GA_googleFillSlot("maiscrianca");
 		    </script>
 		  </div>
 		  <!-- / BOX PUBLICIDADE 2 -->
