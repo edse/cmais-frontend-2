@@ -1735,16 +1735,16 @@
           minlength: 1
         },
         idade_1:{
-          required: true,
-          minlength: 2
+          required: true
+          //minlength: 2
         },
         instrumento_1:{
           required: true,
           minlength: 2
         },
         rg_1:{
-          required: true,
-          minlength: 9
+         required: true
+         // minlength: 9
         },
         
         telresi_1:{
@@ -1796,16 +1796,16 @@
           minlength: 1
         },
         idade_2:{
-          required: true,
-          minlength: 2
+          required: true
+          //minlength: 2
         },
         instrumento_2:{
           required: true,
           minlength: 2
         },
         rg_2:{
-          required: true,
-          minlength: 9
+          required: true
+          //minlength: 9
         },
         
         telresi_2:{
@@ -1856,16 +1856,16 @@
           minlength: 1
         },
         idade_3:{
-          required: true,
-          minlength: 2
+          required: true
+          //minlength: 2
         },
         instrumento_3:{
           required: true,
           minlength: 2
         },
         rg_3:{
-          required: true,
-          minlength: 9
+          required: true
+          //minlength: 9
         },
         
         telresi_3:{
