@@ -1735,8 +1735,8 @@
           minlength: 1
         },
         idade_1:{
-          required: true,
-          minlength: 8
+          required: true
+          //minlength: 8
         },
         instrumento_1:{
           required: true,
@@ -1963,277 +1963,277 @@
           required: true
         },
         compositor1:{
-              required:function(){
-                validate('#compositor-1');
-                },
+          required:function(){
+            validate('#compositor-1');
             },
-            compositor2:{
-               required:function(){
-                validate('#compositor-2');
-                },
+        },
+        compositor2:{
+           required:function(){
+            validate('#compositor-2');
             },
-            compositor3:{
-               required:function(){
-                validate('#compositor-3');
-                },
+        },
+        compositor3:{
+           required:function(){
+            validate('#compositor-3');
             },
-            compositor4:{
-               required:function(){
-                validate('#compositor-4');
-                },
+        },
+        compositor4:{
+           required:function(){
+            validate('#compositor-4');
             },
-            compositor5:{
-               required:function(){
-                validate('#compositor-5');
-                },
+        },
+        compositor5:{
+           required:function(){
+            validate('#compositor-5');
             },
-            compositor6:{
-               required:function(){
-                validate('#compositor-6');
-                },
+        },
+        compositor6:{
+           required:function(){
+            validate('#compositor-6');
             },
-            compositor7:{
-               required:function(){
-                validate('#compositor-7');
-                },
+        },
+        compositor7:{
+           required:function(){
+            validate('#compositor-7');
             },
-            compositor8:{
-               required:function(){
-                validate('#compositor-8');
-                },
+        },
+        compositor8:{
+           required:function(){
+            validate('#compositor-8');
             },
-            compositor9:{
-               required:function(){
-                validate('#compositor-9');
-                },
+        },
+        compositor9:{
+           required:function(){
+            validate('#compositor-9');
             },
-            compositor10:{
-               required:function(){
-                validate('#compositor-10');
-                },
+        },
+        compositor10:{
+           required:function(){
+            validate('#compositor-10');
             },
-            compositor11:{
-               required:function(){
-                validate('#compositor-11');
-                },
+        },
+        compositor11:{
+           required:function(){
+            validate('#compositor-11');
             },
-            compositor12:{
-               required:function(){
-                validate('#compositor-12');
-                },
+        },
+        compositor12:{
+           required:function(){
+            validate('#compositor-12');
             },
-            obra1:{
-               required:function(){
-                validate('#obra-1');
-                },
+        },
+        obra1:{
+           required:function(){
+            validate('#obra-1');
             },
-            obra2:{
-              required:function(){
-                validate('#obra-2');
-                },
+        },
+        obra2:{
+          required:function(){
+            validate('#obra-2');
             },
-            obra3:{
-              required:function(){
-                validate('#obra-3');
-                },
+        },
+        obra3:{
+          required:function(){
+            validate('#obra-3');
             },
-            obra4:{
-              required:function(){
-                validate('#obra-4');
-                },
+        },
+        obra4:{
+          required:function(){
+            validate('#obra-4');
             },
-            obra5:{
-              required:function(){
-                validate('#obra-5');
-                },
+        },
+        obra5:{
+          required:function(){
+            validate('#obra-5');
             },
-            obra6:{
-              required:function(){
-                validate('#obra-6');
-                },
+        },
+        obra6:{
+          required:function(){
+            validate('#obra-6');
             },
-            obra7:{
-              required:function(){
-                validate('#obra-7');
-                },
+        },
+        obra7:{
+          required:function(){
+            validate('#obra-7');
             },
-            obra8:{
-              required:function(){
-                validate('#obra-8');
-                },
+        },
+        obra8:{
+          required:function(){
+            validate('#obra-8');
             },
-            obra9:{
-              required:function(){
-                validate('#obra-9');
-                },
+        },
+        obra9:{
+          required:function(){
+            validate('#obra-9');
             },
-            obra10:{
-              required:function(){
-                validate('#obra-10');
-                },
+        },
+        obra10:{
+          required:function(){
+            validate('#obra-10');
             },
-            obra11:{
-              required:function(){
-                validate('#obra-11');
-                },
+        },
+        obra11:{
+          required:function(){
+            validate('#obra-11');
             },
-            obra12:{
-             required:function(){
-                validate('#obra-12');
-                },
+        },
+        obra12:{
+         required:function(){
+            validate('#obra-12');
             },
-            movimentos1:{
-              required:function(){
-                validate('#movimentos-1');
-                },
+        },
+        movimentos1:{
+          required:function(){
+            validate('#movimentos-1');
             },
-            movimentos2:{
-              required:function(){
-                validate('#movimentos-2');
-                },
+        },
+        movimentos2:{
+          required:function(){
+            validate('#movimentos-2');
             },
-            movimentos3:{
-              required:function(){
-                validate('#movimentos-3');
-                },
+        },
+        movimentos3:{
+          required:function(){
+            validate('#movimentos-3');
             },
-            movimentos4:{
-              required:function(){
-                validate('#movimentos-4');
-                },
+        },
+        movimentos4:{
+          required:function(){
+            validate('#movimentos-4');
             },
-            movimentos5:{
-              required:function(){
-                validate('#movimentos-5');
-                },
+        },
+        movimentos5:{
+          required:function(){
+            validate('#movimentos-5');
             },
-            movimentos6:{
-              required:function(){
-                validate('#movimentos-6');
-                },
+        },
+        movimentos6:{
+          required:function(){
+            validate('#movimentos-6');
             },
-            movimentos7:{
-              required:function(){
-                validate('#movimentos-7');
-                },
+        },
+        movimentos7:{
+          required:function(){
+            validate('#movimentos-7');
             },
-            movimentos8:{
-              required:function(){
-                validate('#movimentos-8');
-                },
+        },
+        movimentos8:{
+          required:function(){
+            validate('#movimentos-8');
             },
-            movimentos9:{
-              required:function(){
-                validate('#movimentos-9');
-                },
+        },
+        movimentos9:{
+          required:function(){
+            validate('#movimentos-9');
             },
-            movimentos10:{
-              required:function(){
-                validate('#movimentos-10');
-                },
+        },
+        movimentos10:{
+          required:function(){
+            validate('#movimentos-10');
             },
-            movimentos11:{
-             required:function(){
-                validate('#movimentos-11');
-                },
+        },
+        movimentos11:{
+         required:function(){
+            validate('#movimentos-11');
             },
-            movimentos12:{
-              required:function(){
-                validate('#movimentos-12');
-                },
+        },
+        movimentos12:{
+          required:function(){
+            validate('#movimentos-12');
             },
-            duracao1:{
-              required:function(){
-                validate('#duracao-1');
-                },
+        },
+        duracao1:{
+          required:function(){
+            validate('#duracao-1');
             },
-            duracao2:{
-              required:function(){
-                validate('#duracao-2');
-                },
+        },
+        duracao2:{
+          required:function(){
+            validate('#duracao-2');
             },
-            duracao3:{
-              required:function(){
-                validate('#duracao-3');
-                },
+        },
+        duracao3:{
+          required:function(){
+            validate('#duracao-3');
             },
-            duracao4:{
-              required:function(){
-                validate('#duracao-4');
-                },
+        },
+        duracao4:{
+          required:function(){
+            validate('#duracao-4');
             },
-            duracao5:{
-              required:function(){
-                validate('#duracao-5');
-                },
+        },
+        duracao5:{
+          required:function(){
+            validate('#duracao-5');
             },
-            duracao6:{
-              required:function(){
-                validate('#duracao-6');
-                },
+        },
+        duracao6:{
+          required:function(){
+            validate('#duracao-6');
             },
-            duracao7:{
-              required:function(){
-                validate('#duracao-7');
-                },
+        },
+        duracao7:{
+          required:function(){
+            validate('#duracao-7');
             },
-            duracao8:{
-             required:function(){
-                validate('#duracao-8');
-                },
+        },
+        duracao8:{
+         required:function(){
+            validate('#duracao-8');
             },
-            duracao9:{
-              required:function(){
-                validate('#duracao-9');
-                },
+        },
+        duracao9:{
+          required:function(){
+            validate('#duracao-9');
             },
-            duracao10:{
-              required:function(){
-                validate('#duracao-10');
-                },
+        },
+        duracao10:{
+          required:function(){
+            validate('#duracao-10');
             },
-            duracao11:{
-              required:function(){
-                validate('#duracao-11');
-                },
+        },
+        duracao11:{
+          required:function(){
+            validate('#duracao-11');
             },
-            duracao12:{
-              required:function(){
-                validate('#duracao-12');
-                },
+        },
+        duracao12:{
+          required:function(){
+            validate('#duracao-12');
             },
-            opcao_correspondente1:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente2:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente3:{
-              required: true,
-              minlength: 1
-            },
-            opcao_correspondente4:{
-              required: true,
-              minlength: 1
-            },
-            link1:{
-              required: true,
-              minlength: 2
-            },
-            link2:{
-              required: true,
-              minlength: 2
-            },
-            link3:{
-              required: true,
-              minlength: 2
-            },
-            link4:{
-              required: true,
-              minlength: 2
-            },
+        },
+        opcao_correspondente1:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente2:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente3:{
+          required: true,
+          minlength: 1
+        },
+        opcao_correspondente4:{
+          required: true,
+          minlength: 1
+        },
+        link1:{
+          required: true,
+          minlength: 2
+        },
+        link2:{
+          required: true,
+          minlength: 2
+        },
+        link3:{
+          required: true,
+          minlength: 2
+        },
+        link4:{
+          required: true,
+          minlength: 2
+        },
         new_photo:{
           required: true
         }
