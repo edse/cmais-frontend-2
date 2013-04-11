@@ -201,7 +201,8 @@
                 <!--idade-1-->
                 <div class="linha t1 m14">
                   <label>Nascimento</label><br>
-                  <input type="text" maxlength="8" name="idade_1" id="idade_1" class="nasc" />
+                  <input type="text" name="nascimento" id="nascimento" class="nasc" />
+                  <input type="text" name="idade_1" id="idade_1" class="nasc" />
                 </div>
                 <!--/idade-1-->
                 
