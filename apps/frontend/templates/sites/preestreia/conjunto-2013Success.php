@@ -1735,8 +1735,8 @@
           minlength: 1
         },
         idade_1:{
-          required: true
-          //minlength: 8
+          required: true,
+          minlength: 2
         },
         instrumento_1:{
           required: true,
