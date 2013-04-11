@@ -639,7 +639,7 @@
                 
                 <div class="linha t10 m14 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" class="mov" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -661,7 +661,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -683,7 +683,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -705,7 +705,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" class="mov"/>
                 </div>
                  
                 <div class="linha t2 m10">  
