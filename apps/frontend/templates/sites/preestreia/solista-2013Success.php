@@ -634,10 +634,10 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" />
+                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" style="width: 279px;"/>
                 </div>
                 
-                <div class="linha t10 m10 w136">
+                <div class="linha t10 m14 w136">
                   <label>Movimentos</label><br/>
                   <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" />
                 </div>
