@@ -978,14 +978,14 @@
                     new_field += '<!--escola-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Qual sua escola de música?</label>';
-                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'" class="required" />';
+                    new_field += '  <input type="text" name="escolamusica_'+i+'" id="escolamusica_'+i+'"  />';
                     new_field += '</div>';                  
                     new_field += '<!--/escola-'+i+'-->';
                       
                     new_field += '<!--ano-'+i+'-->';
                     new_field += '<div class="linha t9 m10">';
                     new_field += '  <label>Em que ano você está?</label>';
-                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'" class="required" />';
+                    new_field += '  <input type="text" name="escola_'+i+'" id="escola_'+i+'"  />';
                     new_field += '</div>';
                     new_field += '<!--/ano-'+i+'-->';
                       
@@ -1782,11 +1782,7 @@
         tempo_1:{
           required: true
         },
-        escolamusica_1:{
-          required: true
-        },
-        
-        professor_1:{
+          professor_1:{
           required: true,
           minlength: 8
         },
@@ -1842,10 +1838,7 @@
         tempo_2:{
           required: true
         },
-        escolamusica_2:{
-          required: true
-        },
-        
+               
         professor_2:{
           required: true
         },
@@ -1902,9 +1895,7 @@
         tempo_3:{
           required: true
         },
-        escolamusica_3:{
-          required: true
-        },
+        
         
         professor_3:{
           required: true
