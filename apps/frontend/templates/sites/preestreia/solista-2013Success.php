@@ -992,7 +992,7 @@
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
   $('.tel').mask("(99)99999999");
-  $('.cel').mask("(99) ?999999999");
+  $('.cel').mask("(99)?999999999");
   $('.nasc').mask("99/99/9999");
   
   });
@@ -1085,7 +1085,6 @@ $(document).ready(function(){
             },
             rg:{
               required: true,
-              minlength: 9
             },
             cpf:{
               required: true,
