@@ -402,21 +402,12 @@ function isDevice(OSName)
                           
                           <!--facebook--> 
                           <div class="cont-direita">
-                            <script>
-                              function updateTweets(){
-                                $.ajax({
-                                  url: "/index.php/ajax/tweetmonitor",
-                                  data: "monitor_id=11",
-                                  success: function(data) {
-                                    $('#twitter').html(data);
-                                  }
-                                });
-                              }
-                              $(function(){ //onready
-                                updateTweets();
-                                var t=setTimeout("updateTweets()",10000);
-                              });
-                            </script>  
+                           
+                              <a class="twitter-timeline" href="https://twitter.com/search?q=%40Guia_Dia" data-widget-id="322465702533537792">Tweets sobre "@Guia_Dia"</a>
+                              <script>
+                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                              </script>
+                      
                             <!-- BOX TWITTER -->
                             
                               <div id="twitter"></div>
