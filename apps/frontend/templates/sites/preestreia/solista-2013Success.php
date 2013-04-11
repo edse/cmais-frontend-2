@@ -271,7 +271,7 @@
               <div class="linha t9 m10">
               
                 <label>Telefone Celular</label>
-                <input type="text" name="telcelular" id="telcelular" class="tel" />
+                <input type="text" name="telcelular" id="telcelular" class="cel" />
               
               </div>
               <!--Campo Telefone Celular-->
