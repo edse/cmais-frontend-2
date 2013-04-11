@@ -201,7 +201,6 @@
                 <!--idade-1-->
                 <div class="linha t1 m14">
                   <label>Nascimento</label><br>
-                  <input type="text" name="nascimento" id="nascimento" class="nasc" />
                   <input type="text" name="idade_1" id="idade_1" class="nasc" />
                 </div>
                 <!--/idade-1-->
@@ -413,7 +412,7 @@
                 <!--idade-2-->
                 <div class="linha t9">
                   <label>Nascimento</label>
-                  <input type="text" maxlength="8" name="idade_2" id="idade_2" class="nasc"  />
+                  <input type="text" name="idade_2" id="idade_2" class="nasc"  />
                 </div>
                 <!--/idade-2-->
                 
@@ -618,7 +617,7 @@
                 <!--idade-3-->
                 <div class="linha t9">
                   <label>Nascimento</label>
-                  <input type="text" maxlength="8" name="idade_3" id="idade_3" class="nasc"  />
+                  <input type="text" name="idade_3" id="idade_3" class="nasc"  />
                 </div>
                 <!--/idade-3-->
                 
@@ -856,7 +855,7 @@
                     new_field += '<!--idade-'+i+'-->';
                     new_field += '<div class="linha t9">';
                     new_field += '  <label>Nascimento</label>';
-                    new_field += '  <input type="text" maxlength="8" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+' required" />';
+                    new_field += '  <input type="text" name="idade_'+i+'" id="idade_'+i+'" class="nasc'+i+' required" />';
                     new_field += '</div>';
                     new_field += '<!--/idade-'+i+'-->';
                       
