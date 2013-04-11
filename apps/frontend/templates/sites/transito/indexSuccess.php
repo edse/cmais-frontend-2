@@ -402,15 +402,13 @@ function isDevice(OSName)
                           
                           <!--facebook--> 
                           <div class="cont-direita">
-                           
-                              <a class="twitter-timeline" href="https://twitter.com/search?q=%40Guia_Dia" data-widget-id="322465702533537792">Tweets sobre "@Guia_Dia"</a>
-                              <script>
-                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                              </script>
-                      
                             <!-- BOX TWITTER -->
-                            
-                              <div id="twitter"></div>
+                              <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/search?q=%40Guia_Dia" data-widget-id="322465702533537792">Tweets sobre "@Guia_Dia"</a>
+                                <script>
+                                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                                </script>
+                              </div>
                            
                             <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
                             <!-- /BOX TWITTER -->   
