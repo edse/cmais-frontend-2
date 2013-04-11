@@ -1092,17 +1092,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra1" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-1" />
+                  <input type="text" name="obra1" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-1" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos1" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-1" />
+                  <input type="text" name="movimentos1" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-1" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao1" data-default="4:27" value="4:27" id="duracao-1" />
+                  <input type="text" name="duracao1" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-1" />
                 </div>
               
               <a class="t7 titulo laranja" >2ª Opção</a>
@@ -1114,17 +1114,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra2" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-2" />
+                  <input type="text" name="obra2" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-2" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos2" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-2" />
+                  <input type="text" name="movimentos2" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-2" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao2" data-default="4:27" value="4:27" id="duracao-2" />
+                  <input type="text" name="duracao2" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-2" />
                 </div>
                 
               <a class="t7 titulo laranja" >3ª Opção</a>
@@ -1136,17 +1136,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra3" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-3" />
+                  <input type="text" name="obra3" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-3" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos3" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-3" />
+                  <input type="text" name="movimentos3" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-3" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao3" data-default="4:27" value="4:27" id="duracao-3" />
+                  <input type="text" name="duracao3" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-3" />
                 </div>
                 
               <a class="t7 titulo laranja" >4ª Opção</a>
@@ -1158,17 +1158,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra4" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-4" />
+                  <input type="text" name="obra4" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-4" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos4" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-4" />
+                  <input type="text" name="movimentos4" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-4" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao4" data-default="4:27" value="4:27" id="duracao-4" />
+                  <input type="text" name="duracao4" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-4" />
                 </div>
                 
               <a class="t7 titulo laranja" >5ª Opção</a>
@@ -1180,17 +1180,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra5" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-5" />
+                  <input type="text" name="obra5" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-5" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos5" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-5" />
+                  <input type="text" name="movimentos5" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-5" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao5" data-default="4:27" value="4:27" id="duracao-5" />
+                  <input type="text" name="duracao5" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-5" />
                 </div>
                 
               <a class="t7 titulo laranja" >6ª Opção</a>
@@ -1202,17 +1202,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra6" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-6" />
+                  <input type="text" name="obra6" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-6" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos6" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-6" />
+                  <input type="text" name="movimentos6" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-6" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao6" data-default="4:27" value="4:27" id="duracao-6" />
+                  <input type="text" name="duracao6" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-6" />
                 </div>
                 
                 
@@ -1225,17 +1225,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra7" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-7" />
+                  <input type="text" name="obra7" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-7" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos7" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-7" />
+                  <input type="text" name="movimentos7" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-7" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao7" data-default="4:27" value="4:27" id="duracao-7" />
+                  <input type="text" name="duracao7" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-7" />
                 </div> 
                        
               <a class="t7 titulo laranja" >8ª Opção</a>
@@ -1247,17 +1247,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra8" data-default="Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-8" />
+                  <input type="text" name="obra8" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-8" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos8" data-default="III- Andantino Grazioso" value="III- Andantino Grazioso" id="movimentos-8" />
+                  <input type="text" name="movimentos8" data-default="Ex.: III- Andantino Grazioso" value="Ex.: III- Andantino Grazioso" id="movimentos-8" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao8" data-default="4:27" value="4:27" id="duracao-8" />
+                  <input type="text" name="duracao8" data-default="Ex.: 4:27" value="Ex.: 4:27" id="duracao-8" />
                 </div>
                   
               <!--/Sugestões-->
@@ -1276,17 +1276,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-9" />
+                  <input type="text" name="obra9" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-9" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-9" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao9" data-default="9:58" value="9:58" id="duracao-9" />
+                  <input type="text" name="duracao9" data-default="Ex.: 9:58" value="9:58" id="Ex.: duracao-9" />
                 </div>
               
               <a class="t7 titulo laranja" >10ª Opção</a>
@@ -1298,17 +1298,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra10" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-10" />
+                  <input type="text" name="obra10" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-10" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-10" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao10" data-default="9:58" value="9:58" id="duracao-10" />
+                  <input type="text" name="duracao10" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-10" />
                 </div>
               
               <a class="t7 titulo laranja" >11ª Opção</a>
@@ -1320,17 +1320,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra11" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-11" />
+                  <input type="text" name="obra11" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-11" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-11" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao11" data-default="9:58" value="9:58" id="duracao-11" />
+                  <input type="text" name="duracao11" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-11" />
                 </div>
               
               <a class="t7 titulo laranja" >12ª Opção</a>
@@ -1342,17 +1342,17 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra12" data-default="Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-12" />
+                  <input type="text" name="obra12" data-default="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" value="Ex.: Quarteto de Cordas No. 19 em Dó Maior KV. 465" id="obra-12" />
                 </div>
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="I - Adagio-Allegro" value="I - Adagio-Allegro" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="Ex.: I - Adagio-Allegro" value="Ex.: I - Adagio-Allegro" id="movimentos-12" />
                 </div>
                 
                 <div class="linha t2 m10">  
                   <label>Duração</label><br/>
-                  <input type="text" name="duracao12" data-default="9:58" value="9:58" id="duracao-12" />
+                  <input type="text" name="duracao12" data-default="Ex.: 9:58" value="Ex.: 9:58" id="duracao-12" />
                 </div>
               <!--/Sugestões Final-->
               
