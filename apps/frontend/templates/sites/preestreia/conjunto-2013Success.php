@@ -1729,7 +1729,7 @@
           required: true,
           minlength: 2
         },
-        
+         
         sexo_1:{
           required: true,
           minlength: 1
