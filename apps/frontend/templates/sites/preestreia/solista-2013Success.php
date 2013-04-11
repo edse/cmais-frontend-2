@@ -271,7 +271,7 @@
               <div class="linha t9 m10">
               
                 <label>Telefone Celular</label>
-                <input type="text" name="telcelular" id="telcelular" class="tel" />
+                <input type="text" name="telcelular" id="telcelular" class="cel" />
               
               </div>
               <!--Campo Telefone Celular-->
@@ -991,8 +991,8 @@
   //$('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
-  $('.tel').mask("(99)999999999");
-  $('.cel').mask("(99) ?999999999");
+  $('.tel').mask("(99)99999999");
+  $('.cel').mask("(99)?999999999");
   $('.nasc').mask("99/99/9999");
   
   });
@@ -1085,7 +1085,6 @@ $(document).ready(function(){
             },
             rg:{
               required: true,
-              minlength: 9
             },
             cpf:{
               required: true,

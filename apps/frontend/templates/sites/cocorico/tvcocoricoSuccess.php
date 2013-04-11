@@ -109,19 +109,19 @@
     <div class="span8 col-esq">
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9" id="destaqueForm" style="display:block;">
-
+        
         <h2>Concurso Cultural</h2>
-        <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso.jpg" />
+        <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso-resultado.jpg" />
        
         <div class="destaque span12" style="position:relative;">
           <span></span>
-          <!--a href="<?php echo $site->retriveUrl()?>/concurso-cultural" class="btn-destaque" title="Participe!">Participe!</a-->
-          <a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a> 
+          <a href="<?php echo $site->retriveUrl()?>/concurso-cultural/meu-convidado-favorito" class="btn-destaque" title="Conheça os ganhadores!">Conheça os ganhadores!</a>
+          <!--<a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a>--> 
           <span class="last"></span>
         </div>
+        <?php /*
         
-        
-        <?php /*if(isset($displays['destaque-seu-video'])): ?>
+        if(isset($displays['destaque-seu-video'])): ?>
           <?php if(count($displays['destaque-seu-video']) > 0): ?>
             <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
             
@@ -133,7 +133,7 @@
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif;*/ ?>
+        <?php endif;
         
       </div>
       <!-- /destaque-home-simples -->
@@ -237,9 +237,10 @@
             Tente novamente mais tarde.
           </p>
         </div>
- 
+        */ ?>
       </div>
       <!-- /form interatividade -->
+      
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
                     
