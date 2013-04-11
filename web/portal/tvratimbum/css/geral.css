@@ -7110,3 +7110,67 @@ span.bold{
 #box-programas-programaEscolhido .programaEscolhido-info .box-infos .btn-diario { width:47%; }
 #box-programas-programaEscolhido .programaEscolhido-info .box-infos hr { height:1px; visibility: inherit; }
 /*ajuste texto*/
+
+.conteudo .colunaMaior { background:url("../image/bg-transparente-branco.png") repeat;  }
+.ganchos { background:url(../image/ganchos.png) no-repeat; width:641px; height:33px; margin:-7px 0 12px 0; }
+.box-carrossel { margin-bottom:0; }
+.box-carrossel {  border-right:2px solid #fdeced; border-left:2px solid #fdeced;}
+.assets { background:#fff; margin-top:20px; overflow:hidden; border:2px solid #fdeced;   }
+.assets {border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+.assets h3  { background: url("../image/bg-SpriteEscolhido.png") repeat-x scroll 0 -102px transparent;    color: #ED1700;    font-size: 16px;    font-weight: bold;    height: 50px; line-height:50px;  text-transform:uppercase; padding:0 10px;}
+.assets p { margin-bottom:20px; padding:0 10px; }
+.assets p img { float:left; margin-right:10px; margin-bottom:0; }
+.assets img,
+.assets iframe,
+.assets embed { margin-bottom:20px; }
+.assets .picote { background: url("../image/bg-picote.png") repeat-x scroll 0 0 transparent;    border: medium none;    display: block;    height: 3px; }
+.paginacao-programa { background:#fff; margin-top:20px; padding:5px 10px; overflow:hidden; }
+.paginacao-programa .btn {  display:block;  float:left; color:#6b6b6b; font-size:15px; text-transform:uppercase; }
+.paginacao-programa .btn:hover { text-decoration:none; }
+.paginacao-programa .paginas .btn,
+.paginacao-programa .btn span { width:21px; height:18px; background: url("../image/seta-paginacao.png") no-repeat; display:block;  float:left; margin-right:10px; }
+.paginacao-programa .ultima { float:right;  }
+.paginacao-programa .ultima span { background-position:-21px 0; float:right; margin:0 0 0 10px;  }
+.paginacao-programa .paginas { width:120px; margin:0 auto; }
+.paginacao-programa .paginas p { float:left; }
+.paginacao-programa .paginas .btn { width:12px; margin:0 10px; background-position:0 -18px; } 
+.paginacao-programa .paginas .proxima {  background-position:-12px -18px; }
+.paginacao-programa .anterior {  background-position:0 -18px; }
+
+.menu-secao { clear:both; margin-top:20px; float:left; width: 100%; }
+.menu-secao li { background:url("../image/bg-menu-interna.png") no-repeat; height:44px; }
+.menu-secao li a { font-size:23px; font-weight: bold; color:#fff; text-align:center; line-height: 44px; height:44px; display:block; text-transform:uppercase; text-decoration:none; }
+.menu-secao li.jogos { background-position:0 -44px; }
+.menu-secao li.atividades { background-position:0 -89px; }
+.menu-secao li.imagens { background-position:0 -138px; }
+.menu-secao li.baixar { background-position:0 -184px; }
+.menu-secao li.especial { background-position:0 -229px; }
+
+#concurso-cultural { clear:both; width:290px; margin-top:20px; float:left; background: #fff; position:relative;  }
+#concurso-cultural h3 { text-align:center; }
+#concurso-cultural form textarea,
+#concurso-cultural form a,
+#concurso-cultural form label,
+#concurso-cultural p { color:#6b6b6b; }
+#concurso-cultural form { margin:0 10px; padding-bottom:35px; }
+#concurso-cultural form .termos,
+#concurso-cultural form textarea,
+#concurso-cultural form input { clear:both; width:100%; border:1px solid #dddfe0; text-align:left; background:#f0f3f3; height:22px; line-height:22px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin-bottom:0; margin-left:0 !important; }
+#concurso-cultural form .cidade,
+#concurso-cultural form .estado { float:left;  }
+#concurso-cultural form .cidade { width:80%; margin-right:10px; }
+#concurso-cultural form .estado { width:16%; }
+#concurso-cultural form textarea { height:100px; padding:0 5px; }
+#concurso-cultural form .termos { height:165px; overflow-y:scroll; }
+#concurso-cultural form .bold { margin-bottom:0 }
+#concurso-cultural form .radio { height:auto; width: auto; margin-right:5px; margin-bottom:0;}
+#concurso-cultural form a { font-weight:bold; }
+#concurso-cultural form .btn-enviar { width:288px; height:24px; margin:0; padding:0; background:url(../image/btn-enviar-form.png) no-repeat; position:absolute; left:1px; bottom:5px; border:1px solid #dddfe0; font-weight:bold; text-transform:uppercase; text-align:center; }
+#concurso-cultural form label { margin-top:10px; display:block; }
+#concurso-cultural form label a { padding-left:20px; }
+#concurso-cultural .msgErro,
+#concurso-cultural .msgAcerto { text-align:center; font-weight:bold; }
+#concurso-cultural .msgErro p,
+#concurso-cultural .msgAcerto p {  color:#ED1700; }
+#concurso-cultural form label.error {  color: #ED1700 !important;    display: block !important; font-size:10px; margin:0;}
+#concurso-cultural .txt-10 { float:right; }
