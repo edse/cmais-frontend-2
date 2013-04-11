@@ -634,7 +634,7 @@
                
                 <div class="linha t9">  
                   <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" style="width: 279px;"/>
+                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" />
                 </div>
                 
                 <div class="linha t10 m14 w136">
