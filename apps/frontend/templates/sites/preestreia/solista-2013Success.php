@@ -90,7 +90,7 @@
             <!--/Mensagem Acerto-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/solista-submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="/actions/preestreia2013/solista-submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
