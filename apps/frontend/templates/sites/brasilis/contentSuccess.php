@@ -376,7 +376,9 @@ $(function(){
                   $section = $asset->getSections();
                   
                   //$recentes = $section[0]->getAssets();
-
+                  echo $section->id;
+                  echo $site->id;
+                  
                   $recentes = Doctrine_Query::create()
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
