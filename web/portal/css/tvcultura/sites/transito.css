@@ -472,7 +472,7 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 .cont-direita{
   position:absolute;
   right: -329px;
-  top: -1px;
+  top: 0px;
   z-index:10;
 }
     
@@ -709,7 +709,7 @@ tr:nth-child(odd) {background: #cbabb7}
 
   position:relative;
   overflow: hidden;
-  height: 880px;
+  height: 990px;
 }
 .conteudo-mapa-de-sao-paulo2{position:absolute;z-index:-1000;display:none ;}
 .conteudo-camera-ao-vivo{position:absolute;z-index:1;}
