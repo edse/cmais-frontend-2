@@ -130,7 +130,7 @@ function isDevice(OSName)
                   </select> 
                 </form>
 
-                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=false&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
+                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
                 
                 <script>
                     $(document).ready(function() {
@@ -295,8 +295,6 @@ function isDevice(OSName)
                       $('#opcao-via-1').append('<option value="'+data.src+'">'+a+'</option>');
                     });
                     
-                    
-                    /* CAMERAS DA BANDEIRANTES E ANHANGUERA - OFF
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam01.jpg">Bandeirantes - Km 13</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam02.jpg">Bandeirantes - Km 21</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam03.jpg">Bandeirantes - Km 27</option>');
@@ -306,7 +304,6 @@ function isDevice(OSName)
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam20.jpg">Anhanguera - Km 22</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam21.jpg">Anhanguera - Km 26</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam23.jpg">Anhanguera - Km 52</option>');
-                    */
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</option>');
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name8.jpg">Raposo Tavares - Km 17</option>');
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name30.jpg">Raposo Tavares - Km 20</option>');
@@ -405,13 +402,24 @@ function isDevice(OSName)
                           
                           <!--facebook--> 
                           <div class="cont-direita">
+                            <script>
+                              function updateTweets(){
+                                $.ajax({
+                                  url: "/index.php/ajax/tweetmonitor",
+                                  data: "monitor_id=11",
+                                  success: function(data) {
+                                    $('#twitter').html(data);
+                                  }
+                                });
+                              }
+                              $(function(){ //onready
+                                updateTweets();
+                                var t=setTimeout("updateTweets()",10000);
+                              });
+                            </script>  
                             <!-- BOX TWITTER -->
-                              <div id="twitter" style="border:0">
-                                <a class="twitter-timeline" href="https://twitter.com/search?q=%40Guia_Dia" data-widget-id="322465702533537792">Tweets sobre "@Guia_Dia"</a>
-                                <script>
-                                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                                </script>
-                              </div>
+                            
+                              <div id="twitter"></div>
                            
                             <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
                             <!-- /BOX TWITTER -->   
@@ -783,13 +791,11 @@ function isDevice(OSName)
                   <div id="dialogaBandeirantes" class="window" style="top: 80px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <!--img style="width: 310px; height: 240px;" alt="Bandeirantes" src="http://200.246.17.101/cameras/cam01.jpg" id="img-bandeirantes"-->
-                      <img style="width: 310px; height: 240px;" alt="Bandeirantes" src="" id="img-bandeirantes">
+                      <img style="width: 310px; height: 240px;" alt="Bandeirantes" src="http://200.246.17.101/cameras/cam01.jpg" id="img-bandeirantes">
                       <h4>Bandeirantes</h4>
                       <form id="opcoes-bandeirantes" action="" method="post">
                         <select id="bandeirantes" class="required">
-                          <option value="" selected="selected"></option>
-                          <option value="http://200.246.17.101/cameras/cam01.jpg">Bandeirantes - Km 13</option>
+                          <option value="http://200.246.17.101/cameras/cam01.jpg" selected="selected">Bandeirantes - Km 13</option>
                           <option value="http://200.246.17.101/cameras/cam02.jpg">Bandeirantes - Km 21</option>
                           <option value="http://200.246.17.101/cameras/cam03.jpg">Bandeirantes - Km 27</option>
                           <option value="http://200.246.17.101/cameras/cam05.jpg">Bandeirantes - Km 38</option>
@@ -808,13 +814,11 @@ function isDevice(OSName)
                   <div id="dialogaAnhanguera" class="window" style="top: 80px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <!--img style="width: 310px; height: 240px;" alt="Anhanguera" src="http://200.246.17.101/cameras/cam18.jpg" id="img-anhanguera"-->
-                      <img style="width: 310px; height: 240px;" alt="Anhanguera" src="" id="img-anhanguera">
+                      <img style="width: 310px; height: 240px;" alt="Anhanguera" src="http://200.246.17.101/cameras/cam18.jpg" id="img-anhanguera">
                       <h4>Anhanguera</h4>
                       <form id="opcoes-anhanguera" action="" method="post">
                         <select id="anhanguera" class="required">
-                          <option value="" selected="selected"></option>
-                          <option value="http://200.246.17.101/cameras/cam18.jpg">Anhanguera - Km 13</option>
+                          <option value="http://200.246.17.101/cameras/cam18.jpg" selected="selected">Anhanguera - Km 13</option>
                           <option value="http://200.246.17.101/cameras/cam20.jpg">Anhanguera - Km 22</option>
                           <option value="http://200.246.17.101/cameras/cam21.jpg">Anhanguera - Km 26</option>
                           <option value="http://200.246.17.101/cameras/cam23.jpg">Anhanguera - Km 52</option>
