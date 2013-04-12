@@ -101,7 +101,7 @@
             
             <!--form-->  
             <form id="form-contato-conjunto" method="post" action="/actions/preestreia2013/conjunto-submit.php" enctype="multipart/form-data">
-              <input type="hidden" name="qtdeIntegrantes" value="3" />
+              <input type="hidden" name="qtdeIntegrantes" id="qtdeIntegrantes" value="3" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               <input type="hidden" name="tipo" value="Conjunto" />
               
@@ -827,7 +827,7 @@
                     if(i==max){
                       $("#adicionar").hide();
                     }
-                    $('#qtdeIntegrante').val(i);
+                    $('#qtdeIntegrantes').val(i);
                     
                     var new_field = '<div id="container-'+i+'">';
                     new_field += '<!--Integrante-'+i+'-->';
@@ -1066,7 +1066,7 @@
                     }
 
                     i--;
-                    $('#qtdeIntegrante').val(i);
+                    $('#qtdeIntegrantes').val(i);
                     
                     if(i < max){
                       $("#adicionar").show();
