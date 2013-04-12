@@ -9,7 +9,7 @@ $mimeTypeAllowed = array("image/gif", "image/png", "image/jpg");
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
-    
+     
       $to = "preestreia2012@gmail.com, rhcsousa@gmail.com"; 
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
