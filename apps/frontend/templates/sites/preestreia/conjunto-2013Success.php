@@ -114,6 +114,15 @@
               </div>
               <!--/Nome Conjunto-->
               
+              <!--Nome Conjunto-->
+              <div class="linha t7">
+                
+                <label>E-mail do responsável:</label>
+                <input type="text" name="email" id="email" />
+              
+              </div>
+              <!--/Nome Conjunto-->
+              
               <!--Como souberam-->
               <div class="linha t7">
                 <label>Como souberam do Pré-estreia?</label>
@@ -340,7 +349,7 @@
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="new_photo_1" id="anexofoto_1" />
+               	<input type="file" name="new_photo" id="anexofoto" />
                </div>
                <!--/Anexar RG--->
               
@@ -1408,7 +1417,7 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="2" >
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2" >
                     <option value="" selected="selected">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1772,6 +1781,10 @@
           required: true
         },
         email_1:{
+          required: true,
+          email: true
+        },
+         email:{
           required: true,
           email: true
         },
