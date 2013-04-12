@@ -788,7 +788,8 @@ function isDevice(OSName)
                       <h4>Bandeirantes</h4>
                       <form id="opcoes-bandeirantes" action="" method="post">
                         <select id="bandeirantes" class="required">
-                          <option value="http://200.246.17.101/cameras/cam01.jpg" selected="selected">Bandeirantes - Km 13</option>
+                          <option value="" selected="selected"></option>
+                          <option value="http://200.246.17.101/cameras/cam01.jpg">Bandeirantes - Km 13</option>
                           <option value="http://200.246.17.101/cameras/cam02.jpg">Bandeirantes - Km 21</option>
                           <option value="http://200.246.17.101/cameras/cam03.jpg">Bandeirantes - Km 27</option>
                           <option value="http://200.246.17.101/cameras/cam05.jpg">Bandeirantes - Km 38</option>
@@ -812,7 +813,8 @@ function isDevice(OSName)
                       <h4>Anhanguera</h4>
                       <form id="opcoes-anhanguera" action="" method="post">
                         <select id="anhanguera" class="required">
-                          <option value="http://200.246.17.101/cameras/cam18.jpg" selected="selected">Anhanguera - Km 13</option>
+                          <option value="" selected="selected"></option>
+                          <option value="http://200.246.17.101/cameras/cam18.jpg">Anhanguera - Km 13</option>
                           <option value="http://200.246.17.101/cameras/cam20.jpg">Anhanguera - Km 22</option>
                           <option value="http://200.246.17.101/cameras/cam21.jpg">Anhanguera - Km 26</option>
                           <option value="http://200.246.17.101/cameras/cam23.jpg">Anhanguera - Km 52</option>
