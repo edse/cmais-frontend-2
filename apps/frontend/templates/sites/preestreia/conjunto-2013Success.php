@@ -1673,6 +1673,7 @@
       });
     });
   });
+  /*
     
     var validator = $('#form-contato-conjunto').validate({
       /*
@@ -1702,7 +1703,7 @@
           }
         });         
       },
-      */
+      
       rules:{
         /*
         conjuntonome:{
@@ -2184,7 +2185,7 @@
         new_photo:{
           required: true
         }
-        */
+        
       },
       messages:{
         /*
@@ -2325,7 +2326,7 @@
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
         regulamento: "Este campo &eacute; Obrigat&oacute;rio."
-        */
+        
       }, 
       
       success: function(label){
@@ -2338,6 +2339,7 @@
           $(obj).val('');
       }
   });
+  */
   
   // Contador de Caracters
   function limitText (limitField, limitNum, textCounter)
