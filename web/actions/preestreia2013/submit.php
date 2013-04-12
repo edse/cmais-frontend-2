@@ -41,13 +41,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       if (!in_array($file_mime_type1, $mimeTypeAllowed) && !in_array($file_mime_type2, $mimeTypeAllowed)) {
         
         if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
-          header("Location: http://tvcultura.cmais.com.br/preestreia/solista?error=2");
+          header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?error=2");
           die();
         }
       }
       else if ($file_size1 > $maxfilesize || $file_size2 > $maxfilesize) { // 15MB
         if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
-          header("Location: http://tvcultura.cmais.com.br/preestreia/solista?error=3");
+          header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?error=3");
           die();
         }
       }
@@ -55,13 +55,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/preestreia/solista?success=1");
+            header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?success=1");
             die();
           }
         }
         else{
           if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/preestreia/solista?error=1");
+            header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?error=1");
             die();
           }
         }
@@ -69,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/preestreia/solista?error=4");
+        header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?error=4");
         die();
       }
     }
