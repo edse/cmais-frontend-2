@@ -783,7 +783,7 @@ function isDevice(OSName)
                   <div id="dialogaBandeirantes" class="window" style="top: 80px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Bandeirantes" src="http://200.246.17.101/cameras/cam01.jpg" id="img-bandeirantes">
+                      <!--img style="width: 310px; height: 240px;" alt="Bandeirantes" src="http://200.246.17.101/cameras/cam01.jpg" id="img-bandeirantes"-->
                       <h4>Bandeirantes</h4>
                       <form id="opcoes-bandeirantes" action="" method="post">
                         <select id="bandeirantes" class="required">
@@ -806,7 +806,7 @@ function isDevice(OSName)
                   <div id="dialogaAnhanguera" class="window" style="top: 80px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Anhanguera" src="http://200.246.17.101/cameras/cam18.jpg" id="img-anhanguera">
+                      <!--img style="width: 310px; height: 240px;" alt="Anhanguera" src="http://200.246.17.101/cameras/cam18.jpg" id="img-anhanguera"-->
                       <h4>Anhanguera</h4>
                       <form id="opcoes-anhanguera" action="" method="post">
                         <select id="anhanguera" class="required">
