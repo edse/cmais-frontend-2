@@ -263,5 +263,7 @@ $(document).ready(function() {
   $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
+  
+  $("a[href^='http']").attr('target','_blank');
 
 });
