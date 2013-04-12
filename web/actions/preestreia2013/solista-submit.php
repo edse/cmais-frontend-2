@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
         if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-          $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
+          $message .= ucwords($field) . ": " . strip_tags($value) . "<br>";
       }
       
       $file_name1 = basename($_FILES['datafile1']['name']);
