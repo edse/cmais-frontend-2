@@ -472,7 +472,7 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 .cont-direita{
   position:absolute;
   right: -329px;
-  top: -1px;
+  top: 0px;
   z-index:10;
 }
     
