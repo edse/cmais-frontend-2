@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
      
       $to = "preestreia2012@gmail.com, rhcsousa@gmail.com"; 
       //$to = "maiscriancatvcultura@gmail.com";
-      $email = strip_tags($_REQUEST['email']);
+      $email = strip_tags($_REQUEST['email']); 
       $name = strip_tags($_REQUEST['nome']);
       $from = "{$name} <{$email}>";
       $subject = '[Pré Estreia][Inscrição][Conjunto] ' .$name.' <'.$email.'>';
