@@ -1082,7 +1082,7 @@
 
   
            <!--Sugestoes-->
-              <a href="javascript:;"class="t7 titulo repertorio">
+              <a href="javascript:;"class="t7 titulo repertorio conj-repertorio">
                 Repertório [Clique aqui]
               </a>
               
