@@ -2187,6 +2187,7 @@
         */
       },
       messages:{
+        /*
         conjuntonome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         conjuntoformacao: "Este campo &eacute; Obrigat&oacute;rio.",
         conjuntotempo: "Este campo &eacute; Obrigat&oacute;rio.", 
@@ -2324,7 +2325,9 @@
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
         regulamento: "Este campo &eacute; Obrigat&oacute;rio."
+        */
       }, 
+      
       success: function(label){
         // set &nbsp; as text for IE
         label.html("&nbsp;").addClass("checked");
