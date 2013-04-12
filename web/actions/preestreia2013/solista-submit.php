@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
       $from = "{$name} <{$email}>";
-      $subject = '[Pré Estreia][Inscrição]['.$section.'] ' .$name.' <'.$email.'>';
+      $subject = '[Pré Estreia][Inscrição][Solista] ' .$name.' <'.$email.'>';
       
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {

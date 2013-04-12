@@ -90,7 +90,7 @@
             <!--/Mensagem Acerto-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="/actions/preestreia/solista-submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
@@ -789,7 +789,7 @@
               <div class="linha t7">
                 
                 <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG):</label>
-                <input type="file" name="new_photo" id="anexofoto" />
+                <input type="file" name="datafile1" id="anexofoto" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -798,7 +798,7 @@
               <div class="linha t7">
                 
                 <label>Anexar foto(max 5mb)(Formato JPG):</label>
-                <input type="file" name="new_photo" id="anexofoto1" />
+                <input type="file" name="datafile2" id="anexofoto1" />
                 
               </div>
               <!--/Anexar Foto-->
