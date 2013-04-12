@@ -381,8 +381,8 @@ $(function(){
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
                     ->where('a.id = sa.asset_id')
-                    ->andWhere('sa.section_id= ?', (int)$section->getId())
-                    ->andWhere('a.site_id= ?', (int)$site->getId())
+                    ->andWhere('sa.section_id= ?', 2323)
+                    ->andWhere('a.site_id= ?', 1193)
                     ->orderBy('a.created_at desc')
                     ->limit(6)
                     ->execute();
@@ -398,7 +398,7 @@ $(function(){
                     <a href="#" class="rss" title="rss"></a>
                   </div>
                 </div>
-                <?php if(count($recentes) > 0) include_partial_from_folder('sites/cultura-jazz','global/recent-news', array('displays' => $recentes, 'site' => $site)) ?>
+                <?php if(count($recentes) > 0) include_partial_from_folder('sites/brasilis','global/recent-news', array('displays' => $recentes, 'site' => $site)) ?>
               </div>
               <!-- BOX PADRAO Mais recentes -->
               <?php endif; ?>
