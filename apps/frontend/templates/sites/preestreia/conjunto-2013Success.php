@@ -100,7 +100,7 @@
               <!--/mensagem Acerto-->
             
             <!--form-->  
-            <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-conjunto" method="post" action="/actions/preestreia2013/solista-submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               <input type="hidden" name="tipo" value="Conjunto" />
