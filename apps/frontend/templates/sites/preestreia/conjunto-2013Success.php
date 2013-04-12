@@ -2073,66 +2073,6 @@
             validate('#obra-12');
             },
         },
-        movimentos1:{
-          required:function(){
-            validate('#movimentos-1');
-            },
-        },
-        movimentos2:{
-          required:function(){
-            validate('#movimentos-2');
-            },
-        },
-        movimentos3:{
-          required:function(){
-            validate('#movimentos-3');
-            },
-        },
-        movimentos4:{
-          required:function(){
-            validate('#movimentos-4');
-            },
-        },
-        movimentos5:{
-          required:function(){
-            validate('#movimentos-5');
-            },
-        },
-        movimentos6:{
-          required:function(){
-            validate('#movimentos-6');
-            },
-        },
-        movimentos7:{
-          required:function(){
-            validate('#movimentos-7');
-            },
-        },
-        movimentos8:{
-          required:function(){
-            validate('#movimentos-8');
-            },
-        },
-        movimentos9:{
-          required:function(){
-            validate('#movimentos-9');
-            },
-        },
-        movimentos10:{
-          required:function(){
-            validate('#movimentos-10');
-            },
-        },
-        movimentos11:{
-         required:function(){
-            validate('#movimentos-11');
-            },
-        },
-        movimentos12:{
-          required:function(){
-            validate('#movimentos-12');
-            },
-        },
         duracao1:{
           required:function(){
             validate('#duracao-1');
