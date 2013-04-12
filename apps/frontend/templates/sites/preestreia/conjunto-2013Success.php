@@ -349,7 +349,7 @@
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="new_photo" id="anexofoto" />
+               	<input type="file" name="datafile1" id="anexofoto" />
                </div>
                <!--/Anexar RG--->
               
@@ -559,7 +559,7 @@
                   <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo_2" id="anexofoto_2" />
+               <input type="file" name="datafile2" id="anexofoto_2" />
                </div>
                <!--/Anexar RG--->
 
@@ -766,7 +766,7 @@
                <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo_3" id="anexofoto_3" />
+               <input type="file" name="datafile3" id="anexofoto_3" />
                </div>
                <!--/Anexar RG--->
 
@@ -1003,7 +1003,7 @@
                     new_field += '<!--Anexar RG-'+i+'-->';
                     new_field += '<div class="linha t5">';
                     new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>';
-                    new_field += '<input type="file" name="new_photo_'+i+'" id="anexofoto_'+i+'" />';
+                    new_field += '<input type="file" name="datafile'+i+'" id="anexofoto_'+i+'" />';
                     new_field += '</div>';
                     new_field += '<!--/Anexar RG-'+i+'-->';
     
@@ -1444,7 +1444,7 @@
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="new_photo" id="anexofoto" />
+            <input type="file" name="datafile9" id="anexofoto" />
             
           </div>
           <!--/Anexar Foto-->
