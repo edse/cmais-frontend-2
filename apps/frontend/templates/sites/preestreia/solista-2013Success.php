@@ -271,7 +271,7 @@
               <div class="linha t9 m10">
               
                 <label>Telefone Celular</label>
-                <input type="text" name="telcelular" id="telcelular" class="tel" />
+                <input type="text" name="telcelular" id="telcelular" class="cel" />
               
               </div>
               <!--Campo Telefone Celular-->
@@ -629,7 +629,7 @@
                            
                 <div class="linha t6" >
                   <label>Compositor</label><br/>
-                  <input type="text" name="compositor9" data-default="Ex.: F. Liszt" value="Ex.: J.S. Bach" id="compositor-9" />
+                  <input type="text" name="compositor9" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-9" />
                 </div>
                
                 <div class="linha t9">  
@@ -639,7 +639,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" />
+                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" class="mov" />
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -661,7 +661,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" />
+                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -683,7 +683,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" />
+                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" class="mov"/>
                 </div>
                 
                 <div class="linha t2 m10">  
@@ -705,7 +705,7 @@
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" />
+                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" class="mov"/>
                 </div>
                  
                 <div class="linha t2 m10">  
@@ -991,8 +991,8 @@
   //$('.rg').mask("99.999.999-9");
   $('.cpf').mask("999.999.999-99");
   $('.cep').mask("99999-999");
-  $('.tel').mask("(99)999999999");
-  $('.cel').mask("(99) ?999999999");
+  $('.tel').mask("(99)99999999");
+  $('.cel').mask("(99)?999999999");
   $('.nasc').mask("99/99/9999");
   
   });
@@ -1085,7 +1085,6 @@ $(document).ready(function(){
             },
             rg:{
               required: true,
-              minlength: 9
             },
             cpf:{
               required: true,
@@ -1344,66 +1343,6 @@ $(document).ready(function(){
             obra12:{
               required:function(){
                 validate('#obra-12');
-              }
-            },
-            movimentos1:{
-              required:function(){
-                validate('#movimentos-1');
-              }
-            },
-            movimentos2:{
-              required:function(){
-                validate('#movimentos-2');
-              }
-            },
-            movimentos3:{
-              required:function(){
-                validate('#movimentos-3');
-              }
-            },
-            movimentos4:{
-             required:function(){
-                validate('#movimentos-4');
-              }
-            },
-            movimentos5:{
-              required:function(){
-                validate('#movimentos-5');
-              }
-            },
-            movimentos6:{
-              required:function(){
-                validate('#movimentos-6');
-              }
-            },
-            movimentos7:{
-            required:function(){
-                validate('#movimentos-7');
-              }
-            },
-            movimentos8:{
-              required:function(){
-                validate('#movimentos-8');
-              }
-            },
-            movimentos9:{
-              required:function(){
-                validate('#movimentos-9');
-              }
-            },
-            movimentos10:{
-              required:function(){
-                validate('#movimentos-10');
-              }
-            },
-            movimentos11:{
-              required:function(){
-                validate('#movimentos-11');
-              }
-            },
-            movimentos12:{
-              required:function(){
-                validate('#movimentos-12');
               }
             },
             duracao1:{

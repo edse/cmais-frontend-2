@@ -175,7 +175,7 @@ $assets = $pager->getResults();
         </div>
        
        
-        <?php if($pager->haveToPaginate()): ?>
+       
         	 
         <ul class="menu-secao">
           <li class="videos"><a href="http://tvratimbum.cmais.com.br/videos" title="Vídeos" >Vídeos</a></li>
@@ -186,7 +186,7 @@ $assets = $pager->getResults();
           <li class="especial"><a href="http://tvratimbum.cmais.com.br/especial" title="Especial">Especial</a></li>
         </ul>
         
-        <?php endif; ?>
+       
 
         
         <?php if(isset($displays['concurso-cultural'])):?> 

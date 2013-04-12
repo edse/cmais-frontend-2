@@ -130,7 +130,7 @@ function isDevice(OSName)
                   </select> 
                 </form>
 
-                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
+                <div id="livestream"><embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=false&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video"></div>
                 
                 <script>
                     $(document).ready(function() {
@@ -402,24 +402,13 @@ function isDevice(OSName)
                           
                           <!--facebook--> 
                           <div class="cont-direita">
-                            <script>
-                              function updateTweets(){
-                                $.ajax({
-                                  url: "/index.php/ajax/tweetmonitor",
-                                  data: "monitor_id=11",
-                                  success: function(data) {
-                                    $('#twitter').html(data);
-                                  }
-                                });
-                              }
-                              $(function(){ //onready
-                                updateTweets();
-                                var t=setTimeout("updateTweets()",10000);
-                              });
-                            </script>  
                             <!-- BOX TWITTER -->
-                            
-                              <div id="twitter"></div>
+                              <div id="twitter" style="border:0">
+                                <a class="twitter-timeline" href="https://twitter.com/search?q=%40Guia_Dia" data-widget-id="322465702533537792">Tweets sobre "@Guia_Dia"</a>
+                                <script>
+                                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                                </script>
+                              </div>
                            
                             <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
                             <!-- /BOX TWITTER -->   
