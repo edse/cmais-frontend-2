@@ -381,8 +381,8 @@ $(function(){
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
                     ->where('a.id = sa.asset_id')
-                    ->andWhere('sa.section_id= ?', 1394)
-                    ->andWhere('a.site_id= ?', 903)
+                    ->andWhere('sa.section_id= ?', 2320)
+                    ->andWhere('a.site_id= ?', 1209)
                     ->orderBy('a.created_at desc')
                     ->limit(6)
                     ->execute();
