@@ -399,6 +399,7 @@ $(function(){
                   </div>
                 </div>
                 <?php if(count($recentes) > 0) include_partial_from_folder('sites/novos-acordes','global/recent-news', array('displays' => $recentes, 'site' => $site)) ?>
+                <!-- teste -->
               </div>
               <!-- BOX PADRAO Mais recentes -->
               <?php endif; ?>
