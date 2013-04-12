@@ -181,7 +181,7 @@ function isDevice(OSName)
                         $("#opcao-livestream-1 option:selected").each(function () {
                           
                           if ($(this).val() == "1")
-                            $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=false&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">');
+                            $("#livestream").html('<embed type="application/x-shockwave-flash" src="http://www.cmais.com.br/portal/js/mediaplayer/player.swf" width="310" height="240" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=camera&amp;type=video">');
                           else if ($(this).val() == "2")
                             $("#livestream").html('<img src="http://200.136.27.15/cameras/imagem.php?cam=belenzinho" style="width: 310px; height: 240px;" alt="Radial Leste x Salim Farah Maluf">'); 
                           else if ($(this).val() == "3")
@@ -295,6 +295,8 @@ function isDevice(OSName)
                       $('#opcao-via-1').append('<option value="'+data.src+'">'+a+'</option>');
                     });
                     
+                    
+                    /* CAMERAS DA BANDEIRANTES E ANHANGUERA - OFF
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam01.jpg">Bandeirantes - Km 13</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam02.jpg">Bandeirantes - Km 21</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam03.jpg">Bandeirantes - Km 27</option>');
@@ -304,6 +306,7 @@ function isDevice(OSName)
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam20.jpg">Anhanguera - Km 22</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam21.jpg">Anhanguera - Km 26</option>');
                     $('#opcao-via-1').append('<option value="http://200.246.17.101/cameras/cam23.jpg">Anhanguera - Km 52</option>');
+                    */
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</option>');
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name8.jpg">Raposo Tavares - Km 17</option>');
                     $('#opcao-via-1').append('<option value="http://www.der.sp.gov.br/img_cameras/name30.jpg">Raposo Tavares - Km 20</option>');
