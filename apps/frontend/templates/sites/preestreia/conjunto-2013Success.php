@@ -1704,6 +1704,7 @@
       },
       */
       rules:{
+        /*
         conjuntonome:{
           required: true,
           minlength: 2
@@ -2183,6 +2184,7 @@
         new_photo:{
           required: true
         }
+        */
       },
       messages:{
         conjuntonome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
