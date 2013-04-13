@@ -3,7 +3,7 @@ include("../includes/functions.php");
 
 $current_time = date("Y-m-d H:i:s", time()); 
 $expiration_time = "2013-08-30 00:00:00";
-$maxfilesize = 15728640;
+$maxFileSize = 15728640; // 15MB
 $mimeTypeAllowed = array("image/gif", "image/png", "image/jpg");
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           die();
         }
       }
-      else if ($file_size1 > $maxfilesize || $file_size2 > $maxfilesize) { // 15MB
+      else if ($file_size1 > $maxFileSize || $file_size2 > $maxFileSize) { // 15MB
         if (unlink($_FILES['datafile1']['tmp_name']) && unlink($_FILES['datafile2']['tmp_name'])) {
           header("Location: http://tvcultura.cmais.com.br/preestreia/solista-2013?error=3");
           die();
