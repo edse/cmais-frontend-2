@@ -1,3 +1,41 @@
+<script type="text/javascript">
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+ //alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error || success)
+  {
+    $("#form-contato-conjunto").hide();
+    
+    if (success == "1")
+    {
+      $("#msgAcerto").show();
+      $("#msgErro").hide();
+    }
+    if (error == "1")
+    {
+      $("#msgErro").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "2")
+    {
+      $("#msgErro2").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "3")
+    {
+      $("#msgErro3").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "4")
+    {
+      $("#msgErro4").show();
+      $("#msgAcerto").hide();
+    }  
+  }
+});
+</script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
@@ -77,27 +115,63 @@
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
             <p><?php echo $section->getDescription()?></p>
 
-              <!--Memsagem Erro-->
-              <div class="msgErro" style="display:none">
-                <span class="alerta"></span>
-                <div class="boxMsg">
-                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-                </div>
-                <hr />
-              </div>
-              <!--/mensagem Erro-->
-              
               <!--mensagem Acerto-->
               <div class="msgAcerto" style="display:none">
                 <span class="alerta"></span>
                 <div class="boxMsg">
-                  <p class="aviso">Mensagem enviada com sucesso!</p>
-                  <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                  <p class="aviso">Formulário enviado com sucesso!</p>
+                  <p>Obrigado por participar! Aguarde a seleção.</p>
                 </div>
                 <hr />
               </div>
               <!--/mensagem Acerto-->
+
+              <!--Mensagem Erro-->
+              <div id="msgErro" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Tente novamente mais tarde.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro-->
+
+              <!--Mensagem Erro2-->
+              <div id="msgErro2" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro2-->
+              
+              <!--Mensagem Erro3-->
+              <div id="msgErro3" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar é menor que 15MB.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro3-->
+              
+              <!--Mensagem Erro4-->
+              <div id="msgErro4" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Esta inscrição já foi encerrada.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro4-->
+              
+              
+
             
             <!--form-->  
             <form id="form-contato-conjunto" method="post" action="/actions/preestreia2013/conjunto-submit.php" enctype="multipart/form-data">
