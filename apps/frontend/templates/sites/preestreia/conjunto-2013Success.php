@@ -1699,6 +1699,7 @@ $(function(){
 <!-- / CAPA SITE -->
 
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script type="text/javascript">
   $(document).ready(function(){
