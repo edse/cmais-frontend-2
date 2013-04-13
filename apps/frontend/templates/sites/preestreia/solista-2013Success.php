@@ -1648,7 +1648,7 @@ $(document).ready(function(){
             cpf: "Campo obrigat&oacute;rio",
             new_rg: "Campo obrigat&oacute;rio",
             new_foto: "Campo obrigat&oacute;rio",
-            concursos: "Campo obrigat&oacute;rio"
+            concursos: "Campo obrigat&oacute;rio",
             datafile1: {
               accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
               filesize: "O arquivo não pode ser maior que 15MB"
