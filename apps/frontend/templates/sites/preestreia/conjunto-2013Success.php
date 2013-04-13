@@ -1747,7 +1747,7 @@ $(function(){
       });
     });
   });
-  /*
+  
     
     var validator = $('#form-contato-conjunto').validate({
       /*
@@ -1777,9 +1777,8 @@ $(function(){
           }
         });         
       },
-      
+      */
       rules:{
-        /*
         conjuntonome:{
           required: true,
           minlength: 2
@@ -2256,13 +2255,24 @@ $(function(){
           required: true,
           minlength: 2
         },
-        new_photo:{
-          required: true
+        datafile1:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        datafile2:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        datafile3:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
         }
         
       },
       messages:{
-        /*
         conjuntonome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         conjuntoformacao: "Este campo &eacute; Obrigat&oacute;rio.",
         conjuntotempo: "Este campo &eacute; Obrigat&oacute;rio.", 
@@ -2399,8 +2409,19 @@ $(function(){
         anexofoto: "Este campo &eacute; Obrigat&oacute;rio.",
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
-        regulamento: "Este campo &eacute; Obrigat&oacute;rio."
-        
+        regulamento: "Este campo &eacute; Obrigat&oacute;rio.",
+        datafile1: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
+        datafile2: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
+        datafile3: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        }
       }, 
       
       success: function(label){
@@ -2413,7 +2434,6 @@ $(function(){
           $(obj).val('');
       }
   });
-  */
   
   // Contador de Caracters
   function limitText (limitField, limitNum, textCounter)
