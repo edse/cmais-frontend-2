@@ -1,7 +1,7 @@
 <script type="text/javascript">
 var error = getParameterByName('error');
 var success = getParameterByName('success');
- alert("error: "+error+"\n"+"success: "+success);
+//alert("error: "+error+"\n"+"success: "+success);
 
 $(function(){
   if (error || success)
@@ -116,7 +116,7 @@ $(function(){
             <p><?php echo $section->getDescription()?></p>
 
               <!--mensagem Acerto-->
-              <div class="msgAcerto" style="display:none">
+              <div id="msgAcerto" class="msgAcerto" style="display:none">
                 <span class="alerta"></span>
                 <div class="boxMsg">
                   <p class="aviso">Formulário enviado com sucesso!</p>
