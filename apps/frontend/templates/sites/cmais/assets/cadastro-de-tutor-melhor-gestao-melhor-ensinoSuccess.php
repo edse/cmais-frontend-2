@@ -200,7 +200,7 @@
                       <label><input type="radio" name="fpavinculo" id="nao2" value="nao" />Não</label>
                     </div>
 
-                    <!--span class="linhaFundo"></span-->
+                    <!--span class="linhaFundo"></span--> 
                     
                     <p class="pergunta">Possui experiência com coordenação de tutoria online?</p>
                     <div class="linha t10">
@@ -209,7 +209,7 @@
                     </div>
                     <div class="linha t10">
                       
-                      <label><input type="radio" name="exp_coord_tutoriao" id="nao3" value="nao" />Não</label>
+                      <label><input type="radio" name="exp_coord_tutoria" id="nao3" value="nao" />Não</label>
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
