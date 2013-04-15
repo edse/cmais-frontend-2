@@ -42,9 +42,9 @@
                     <!--span class="linhaFundo"></span-->
                     <!-- asset -->
                       <p>
-                      <div class="row-fluid asset">
-                        <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
-                      </div>
+                        <div class="row-fluid asset">
+                          <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
+                        </div>
                       </p>
                       <!-- /asset -->
                                     
