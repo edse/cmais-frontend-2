@@ -120,7 +120,7 @@
           
               success: function(data){
                 
-                window.location.href="http://cmais.com.br/frontend_dev.php/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino";
+                window.location.href="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino";
               
               }
             });         
