@@ -1043,6 +1043,13 @@ $(document).ready(function(){
         }
       });
     });
+    
+    $(this).find("option").each(function(){
+      for(var i=0;i<selected.length; i++){
+          if($(this).attr("value") == selected[i])
+            $(this).removeAttr("disabled","disabled").attr('selected','selected');
+        }
+    });
   });
       
   //validacao solista
