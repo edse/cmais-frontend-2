@@ -1,3 +1,42 @@
+<script type="text/javascript">
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+//alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error || success)
+  {
+    $("#form-contato-solista").hide();
+    
+    if (success == "1")
+    {
+      $("#msgAcerto").show();
+      $("#msgErro").hide();
+    }
+    if (error == "1")
+    {
+      $("#msgErro").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "2")
+    {
+      $("#msgErro2").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "3")
+    {
+      $("#msgErro3").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "4")
+    {
+      $("#msgErro4").show();
+      $("#msgAcerto").hide();
+    }  
+  }
+});
+</script>
+
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
@@ -67,30 +106,63 @@
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle()?></h3>
             <p><?php echo $section->getDescription()?></p>
                         
-            <!--Mensagem Erro-->
-            <div class="msgErro" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+              <!--mensagem Acerto-->
+              <div id="msgAcerto" class="msgAcerto" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Formulário enviado com sucesso!</p>
+                  <p>Obrigado por participar! Aguarde a seleção.</p>
+                </div>
+                <hr />
               </div>
-              <hr />
-            </div>
-            <!--/Mensagem Erro-->
-            
-            <!--Mensagem Acerto-->
-            <div class="msgAcerto" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Mensagem enviada com sucesso!</p>
-                <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+              <!--/mensagem Acerto-->
+
+              <!--Mensagem Erro-->
+              <div id="msgErro" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Tente novamente mais tarde.</p>
+                </div>
+                <hr />
               </div>
-              <hr />
-            </div>
-            <!--/Mensagem Acerto-->
+              <!--/mensagem Erro-->
+
+              <!--Mensagem Erro2-->
+              <div id="msgErro2" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro2-->
+              
+              <!--Mensagem Erro3-->
+              <div id="msgErro3" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar é menor que 15MB.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro3-->
+              
+              <!--Mensagem Erro4-->
+              <div id="msgErro4" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Esta inscrição já foi encerrada.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro4-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="/actions/preestreia2013/solista-submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
@@ -789,7 +861,7 @@
               <div class="linha t7">
                 
                 <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG):</label>
-                <input type="file" name="new_photo" id="anexofoto" />
+                <input type="file" name="datafile1" id="anexofoto" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -798,7 +870,7 @@
               <div class="linha t7">
                 
                 <label>Anexar foto(max 5mb)(Formato JPG):</label>
-                <input type="file" name="new_photo" id="anexofoto" />
+                <input type="file" name="datafile2" id="anexofoto1" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -972,6 +1044,7 @@
 </div>
 <!-- / CAPA SITE -->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 
 <!--script diversos-->
@@ -1472,10 +1545,15 @@ $(document).ready(function(){
                 validate('#concursos');
               }
             },
-            new_photo:{
-              required:function(){
-                validate('#anexo_foto');
-              } 
+            datafile1:{
+              required: true,
+              accept: "png|jpe?g|gif",
+              filesize: 15728640
+            },
+            datafile2:{
+              required: true,
+              accept: "png|jpe?g|gif",
+              filesize: 15728640
             }
           },
           
@@ -1577,7 +1655,15 @@ $(document).ready(function(){
             cpf: "Campo obrigat&oacute;rio",
             new_rg: "Campo obrigat&oacute;rio",
             new_foto: "Campo obrigat&oacute;rio",
-            concursos: "Campo obrigat&oacute;rio"
+            concursos: "Campo obrigat&oacute;rio",
+            datafile1: {
+              accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+              filesize: "O arquivo não pode ser maior que 15MB"
+            },
+            datafile2: {
+              accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+              filesize: "O arquivo não pode ser maior que 15MB"
+            }
           },
           success: function(label){
             // set &nbsp; as text for IE

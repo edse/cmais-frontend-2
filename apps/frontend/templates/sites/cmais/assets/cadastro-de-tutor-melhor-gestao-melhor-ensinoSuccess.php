@@ -261,6 +261,7 @@
 
 
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
     <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
     
     <script type="text/javascript">
@@ -357,7 +358,8 @@
               minlength: 5
             },
             cpf:{
-              required: true
+              required: true,
+              verificaCPF: true
             },
             rg:{
               required: true
