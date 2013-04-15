@@ -1449,7 +1449,7 @@ $(function(){
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
 
-                    <option value="" selected="selected">--</option>
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -1470,7 +1470,7 @@ $(function(){
                 <div class="linha t2">
                   <label>Opção:</label><br />
 					<select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1" >
-                    <option value="" selected="selected">--</option>
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -1491,14 +1491,14 @@ $(function(){
                 <div class="linha t2">
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2" >
-                    <option value="" selected="selected">--</option>
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                    <option value="7">7</option>
+                    <option value="7">7</option> 
                     <option value="8">8</option>
                   </select>
                 </div>
