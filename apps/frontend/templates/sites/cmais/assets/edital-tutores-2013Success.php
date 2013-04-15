@@ -29,6 +29,7 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
+               <form action="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino" method="post">
                 <div class="contatoWrapper">
                   
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
@@ -51,7 +52,7 @@
                     <div class="linha t10">
                       <label><input type="checkbox" name="concorda_sim" id="concorda_sim" value="sim" />Declaro estar ciente das condições acima.</label>
                     </div>
-                    
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="Acessar inscrição" />
                     </div>
                   </form>
                   <!--/formulario -->
