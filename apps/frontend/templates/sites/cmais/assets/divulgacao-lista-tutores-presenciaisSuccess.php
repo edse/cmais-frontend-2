@@ -98,7 +98,7 @@
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
                   <!-- SAIBA MAIS -->
-                  
+                   
                  
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
                     <div id="saibamais">                                                            
