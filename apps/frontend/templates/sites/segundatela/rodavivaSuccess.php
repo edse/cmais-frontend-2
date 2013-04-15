@@ -101,7 +101,7 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js?a"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/rodavivaonline.js?nocache=<?php echo time()?>"></script>
   <script>
     $(document).ready(function() {
       setInterval( function() {
