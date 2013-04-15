@@ -103,30 +103,11 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino",
-              beforeSend: function(){
-                $('input#enviar').attr('disabled','disabled');
-                $(".msgAcerto").hide();
-                $(".msgErro").hide();
-                $('img#ajax-loader').show();
-              },
+          
               success: function(data){
-                $('input#enviar').removeAttr('disabled');
-                window.location.href="#";
-                if(data == "0"){
-                  $("#form-contato").clearForm();
-                  $("#form-contato").hide();
-                  $("#statusMsg_0").show();
-                  $('img#ajax-loader').hide();
-                }
-                else if(data > 0) {
-                  $(".msgErro").hide();
-                  $("#statusMsg_"+data).show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  alert('Erro inesperado!');
-                }
+                
+                window.location.href="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino";
+              
               }
             });         
           },
