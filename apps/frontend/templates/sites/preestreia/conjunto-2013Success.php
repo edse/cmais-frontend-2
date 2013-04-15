@@ -1743,6 +1743,7 @@ $(function(){
             $(this).attr("disabled","disabled");
         }
       });
+      $("#opcao_correspondente1").find("option:disabled")
     });
   });
   
