@@ -29,7 +29,7 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
-               <form action="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino" method="post">
+               <form id="form-contato" action="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino" method="post">
                 <div class="contatoWrapper">
                   
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
@@ -96,13 +96,9 @@
         */
         
         
-        $("#cpf").mask("999.999.999-99");
-        $("#rg").mask("9999999?9999");
-        $("#celular").mask("(99) 99999999?9");
-        $("#telefone").mask("(99) 99999999");
-        
+       
         var validator = $('#form-contato').validate({
-          submitHandler: function(form){
+          /*submitHandler: function(form){
             $.ajax({
               type: "POST",
               dataType: "text",
@@ -133,85 +129,16 @@
                 }
               }
             });         
-          },
+          },*/
           rules:{
-            /*
-            disciplina:{
-              required: function() {
-                if ($('#disciplina2').is(':checked') || $('#disciplina3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            disciplina2:{
-              required: function() {
-                if ($('#disciplina1').is(':checked') || $('#disciplina3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            disciplina3:{
-              required: function() {
-                if ($('#disciplina1').is(':checked') || $('#disciplina2').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            */
+          
             concorda_sim: {
               required: true
             }
-         
-            /*
-            formacao1:{
-              required: function() {
-                if ($('#formacao2').is(':checked') || $('#formacao3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            formacao2:{
-              required: function() {
-                if ($('#formacao1').is(':checked') || $('#formacao3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            formacao3:{
-              required: function() {
-                if ($('#formacao1').is(':checked') || $('#formacao2').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-             }
-            },
-            */
+            
           },
-          concordo:{
-            captcha: "Para prosseguir é necessário concordar com os termos acima."
+        messages:{
+            concorda_sim: "Para prosseguir é necessário concordar com os termos acima."
           }
         });
       });
