@@ -1124,7 +1124,10 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
       */
-      $this->date = @end(explode("/", $this->url)); 
+      if($this->section->getSlug() != "rodavivaoffline")
+        $sectionSlug = 'rodavivaoffline';
+      else  
+        $this->date = @end(explode("/", $this->url)); 
     }
     
     
