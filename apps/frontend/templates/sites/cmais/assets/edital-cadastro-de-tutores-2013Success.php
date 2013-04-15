@@ -41,13 +41,13 @@
                   
                     <!--span class="linhaFundo"></span-->
                     <!-- asset -->
-      <p>
-      <div class="row-fuid asset">
-        <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
-      </div>
-      </p>
-      <!-- /asset -->
-                    
+                      <p>
+                      <div class="row-fuid asset">
+                        <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>  
+                      </div>
+                      </p>
+                      <!-- /asset -->
+                                    
                     <div class="linha t10">
                       <label><input type="radio" name="concorda_sim" id="concorda_sim" value="sim" />Declaro estar ciente das condições acima.</label>
                     </div>
