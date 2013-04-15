@@ -1124,7 +1124,7 @@ $(document).ready(function(){
         }
     });
   });
-       
+        
   //validacao solista
   var validator = $('#form-contato-solista').validate({
     /*
