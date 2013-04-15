@@ -47,9 +47,9 @@
                         </div>
                       </p>
                       <!-- /asset -->
-                                    
+                      <p></p>              
                     <div class="linha t10">
-                      <label><input type="radio" name="concorda_sim" id="concorda_sim" value="sim" />Declaro estar ciente das condições acima.</label>
+                      <label><input type="checkbox" name="concorda_sim" id="concorda_sim" value="sim" />Declaro estar ciente das condições acima.</label>
                     </div>
                     
                     </div>
