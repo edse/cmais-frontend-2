@@ -51,9 +51,14 @@
                       <p></p>              
                     <div class="linha t10">
                       <label><input type="checkbox" name="concorda_sim" id="concorda_sim" value="sim" />Declaro estar ciente das condições acima.</label>
-                    </div>
+                    </div><br>
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="Acessar inscrição" />
                     </div>
+                    <style>
+                      .error{
+                        clear:both;
+                      }
+                    </style>
                   </form>
                   <!--/formulario -->
                   
