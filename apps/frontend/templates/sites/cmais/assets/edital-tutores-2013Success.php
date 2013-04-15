@@ -61,7 +61,7 @@
                         clear:both;
                         position:absolute;
                         bottom:0;
-                        left:0;
+                        left:200px;
                       }
                       .linha.t10{
                         position:relative;
