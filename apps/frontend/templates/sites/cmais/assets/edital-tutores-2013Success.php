@@ -56,12 +56,13 @@
                       <input class="enviar" type="submit" name="enviar" id="enviar" value="Acessar inscrição" />
                     </p>
                     </div>
+                    <p></p>
                     <style>
                       .error{
                         clear:both;
-                        position:absolute;
-                        bottom:0;
-                        left:200px;
+                        position:relative;
+                        bottom:0px;
+                        left:0px;
                       }
                       .linha.t10{
                         position:relative;
