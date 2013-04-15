@@ -29,7 +29,7 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
-               <form id="form-contato" action="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino" method="post">
+               <form id="form-contato" method="post">
                 <div class="contatoWrapper">
                   
                   <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
@@ -98,12 +98,12 @@
         
        
         var validator = $('#form-contato').validate({
-          /*submitHandler: function(form){
+          submitHandler: function(form){
             $.ajax({
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action.php",
+              url: "http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
@@ -129,7 +129,7 @@
                 }
               }
             });         
-          },*/
+          },
           rules:{
           
             concorda_sim: {
