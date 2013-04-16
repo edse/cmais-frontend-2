@@ -17,6 +17,8 @@
     </div>
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
+      <p>Faça um vídeo de no máximo 1 minuto, contando um pouco de você.</p>
+      
       <p>Nome completo:</p>
       <input type="text" name="nome" id="nome" class="required" />
 
