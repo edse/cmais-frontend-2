@@ -114,12 +114,13 @@
         <div id="direita" class="grid1">
           <?php if(isset($displays['bate-papo'])):?> 
           <?php if(count($displays['bate-papo']) > 0): ?>
-          <h3><?php echo $displays['bate-papo']->Block->getTitle() ?></h3>
+          <h3><?php echo $displays['bate-papo'][0]->Block->getTitle() ?></h3>
           <div class="box">
             <?php echo html_entity_decode($displays['bate-papo'][0]->Asset->AssetContent->getContent()) ?>
           </div>
           <?php endif; ?>
           <?php endif; ?>
+          <p></p>
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1">
             <!-- programas-homepage-300x250 -->
