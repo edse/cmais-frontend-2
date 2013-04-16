@@ -20,45 +20,19 @@
       <p>Participante para Vídeoconferência:</p>
       
       <label>Nome completo:<input type="text" name="nome" id="nome" class="required" /></label>
-      
-
-      <label>Idade:</label>
-      <input type="text" name="idade" id="idade" class="required" />
-
-      <label>Endereço:</label>
-      <input type="text" name="endereco" id="endereco" class="required" />
-
-      <label>Bairro:</label>
-      <input type="text" name="bairro" id="bairro" class="required" />
-      
-      <label>CEP:</label>
-      <input type="text" name="cep" id="cep" class="required" />
-      
-      <label>Cidade:</label>
-      <input type="text" name="cidade" id="cidade" class="required" />
-      
-      <label>RG:</label>
-      <input type="text" name="rg" id="rg" class="required" />
-      
-      <label>CPF:</label>
-      <input type="text" name="cpf" id="cpf" class="required" />
-      
-      <label>Data de nascimento:</label>
-      <input type="text" name="nascimento" id="nascimento" class="required" />
-
-      <label>Telefone para contato:</label>
-      <input type="text" name="telefone" id="telefone" class="required" />
-
-      <label>Nome da mãe:</label>
-      <input type="text" name="nomemae" id="nomemae" class="required" />
-
-      <label>Você tem todas as condições de saúde para participar do programa?</label>
-      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />
-      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />
-
-      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?</label>
-      <input type="text" name="sauderestricao" id="sauderestricao" class="required" />
-            
+      <label>Idade: <input type="text" name="idade" id="idade" class="required" /></label>
+      <label>Endereço: <input type="text" name="endereco" id="endereco" class="required" /></label>
+      <label>Bairro: <input type="text" name="bairro" id="bairro" class="required" /></label>
+      <label>CEP: <input type="text" name="cep" id="cep" class="required" /></label>
+      <label>Cidade: <input type="text" name="cidade" id="cidade" class="required" /></label>
+      <label>RG: <input type="text" name="rg" id="rg" class="required" /></label>
+      <label>CPF: <input type="text" name="cpf" id="cpf" class="required" /></label>
+      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" class="required" /></label>
+      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" class="required" /></label>
+      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" class="required" /></label>
+      <label>Você tem todas as condições de saúde para participar do programa?  <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />
+      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" /></label>
+      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricao" id="sauderestricao" class="required" /></label>
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
       
