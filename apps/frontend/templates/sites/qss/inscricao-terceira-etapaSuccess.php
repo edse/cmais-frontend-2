@@ -17,7 +17,7 @@
     </div>
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
-      <p>Faça um vídeo de no máximo 1 minuto, contando um pouco de você.</p>
+      <p>Participante para Vídeoconferência:</p>
       
       <label>Nome completo:</label>
       <input type="text" name="nome" id="nome" class="required" />
@@ -52,11 +52,12 @@
       <label>Nome da mãe:</label>
       <input type="text" name="nomemae" id="nomemae" class="required" />
 
-      <label>Profissão:</label>
-      <input type="text" name="profissao" id="profissao" class="required" />
+      <label>Você tem todas as condições de saúde para participar do programa?</label>
+      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />
+      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />
 
-      <label>Grau de escolaridade:</label>
-      <input type="text" name="escolaridade" id="escolaridade" class="required" /> 
+      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?</label>
+      <input type="text" name="sauderestricao" id="sauderestricao" class="required" />
             
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
