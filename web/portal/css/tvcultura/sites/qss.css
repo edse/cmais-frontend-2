@@ -25,3 +25,5 @@ body {background: black;}
 label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { clear:both; display:block; }
 #capa-site label input { margin-left:10px; }
+#form-contato { float:left; }
+#enviar { float:right; }

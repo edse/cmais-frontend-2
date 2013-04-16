@@ -19,44 +19,20 @@
     <form id="form-contato" method="post" action="">
       <p>Faça um vídeo de no máximo 1 minuto, contando um pouco de você.</p>
       
-      <label>Nome completo:</label>
-      <input type="text" name="nome" id="nome" class="required" />
-
-      <label>Idade:</label>
-      <input type="text" name="idade" id="idade" class="required" />
-
-      <label>Endereço:</label>
-      <input type="text" name="endereco" id="endereco" class="required" />
-
-      <label>Bairro:</label>
-      <input type="text" name="bairro" id="bairro" class="required" />
+      <label>Nome completo:  <input type="text" name="nome" id="nome" class="required" /></label>
+      <label>Idade: <input type="text" name="idade" id="idade" class="required" /></label>
+      <label>Endereço:  <input type="text" name="endereco" id="endereco" class="required" /></label>
+      <label>Bairro: <input type="text" name="bairro" id="bairro" class="required" /></label>
+      <label>CEP: <input type="text" name="cep" id="cep" class="required" /></label>
+      <label>Cidade: <input type="text" name="cidade" id="cidade" class="required" /></label>
+      <label>RG: <input type="text" name="rg" id="rg" class="required" /></label>
+      <label>CPF: <input type="text" name="cpf" id="cpf" class="required" /></label>
+      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" class="required" /></label>
+      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" class="required" /></label>
+      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" class="required" /></label>
+      <label>Profissão: <input type="text" name="profissao" id="profissao" class="required" /></label>
+      <label>Grau de escolaridade: <input type="text" name="escolaridade" id="escolaridade" class="required" /> </label>
       
-      <label>CEP:</label>
-      <input type="text" name="cep" id="cep" class="required" />
-      
-      <label>Cidade:</label>
-      <input type="text" name="cidade" id="cidade" class="required" />
-      
-      <label>RG:</label>
-      <input type="text" name="rg" id="rg" class="required" />
-      
-      <label>CPF:</label>
-      <input type="text" name="cpf" id="cpf" class="required" />
-      
-      <label>Data de nascimento:</label>
-      <input type="text" name="nascimento" id="nascimento" class="required" />
-
-      <label>Telefone para contato:</label>
-      <input type="text" name="telefone" id="telefone" class="required" />
-
-      <label>Nome da mãe:</label>
-      <input type="text" name="nomemae" id="nomemae" class="required" />
-
-      <label>Profissão:</label>
-      <input type="text" name="profissao" id="profissao" class="required" />
-
-      <label>Grau de escolaridade:</label>
-      <input type="text" name="escolaridade" id="escolaridade" class="required" /> 
             
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
