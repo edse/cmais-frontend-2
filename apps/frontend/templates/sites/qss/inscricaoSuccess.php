@@ -21,7 +21,7 @@
       <input type="text" name="nome" id="nome" class="required" />
       <input type="text" name="idade" id="idade" class="required" />
       <input type="text" name="endereco" id="endereco" class="required" />
-      <input type="text" name="bairro" id="bairro" class="required" />
+      <input type="text" name="bairro" id="bairro" class="required" /> 
       <input type="text" name="cep" id="cep" class="required" />
       
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
