@@ -120,6 +120,7 @@
           </div>
           <?php endif; ?>
           <?php endif; ?>
+          <p>
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1">
             <!-- programas-homepage-300x250 -->
