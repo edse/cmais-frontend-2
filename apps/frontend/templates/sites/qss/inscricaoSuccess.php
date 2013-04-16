@@ -54,7 +54,7 @@
       <input type="text" name="profissao" id="profissao" class="required" />
 
       <p>Grau de escolaridade:</p>
-      <input type="text" name="escolaridade" id="escolaridade" class="required" />
+      <input type="text" name="escolaridade" id="escolaridade" class="required" /> 
       
             
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
