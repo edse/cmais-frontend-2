@@ -19,20 +19,32 @@
     <form id="form-contato" method="post" action="">
       <p>Faça um vídeo de no máximo 1 minuto, contando um pouco de você.</p>
       
-      <label>Nome completo:  <input type="text" name="nome" id="nome" class="required" /></label>
-      <label>Idade: <input type="text" name="idade" id="idade" class="required" /></label>
-      <label>Endereço:  <input type="text" name="endereco" id="endereco" class="required" /></label>
-      <label>Bairro: <input type="text" name="bairro" id="bairro" class="required" /></label>
-      <label>CEP: <input type="text" name="cep" id="cep" class="required" /></label>
-      <label>Cidade: <input type="text" name="cidade" id="cidade" class="required" /></label>
-      <label>RG: <input type="text" name="rg" id="rg" class="required" /></label>
-      <label>CPF: <input type="text" name="cpf" id="cpf" class="required" /></label>
-      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" class="required" /></label>
-      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" class="required" /></label>
-      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" class="required" /></label>
-      <label>Profissão: <input type="text" name="profissao" id="profissao" class="required" /></label>
-      <label>Grau de escolaridade: <input type="text" name="escolaridade" id="escolaridade" class="required" /> </label>
-      
+      <div id="youtube">
+        <a name="ytd">
+        <script type="text/javascript" src="https://cmais-tvcultura.appspot.com/js/ytd-embed.js"></script>
+        <script type="text/javascript">
+        var ytdInitFunction = function() {
+          var ytd = new Ytd();
+          ytd.setAssignmentId("1001");
+          ytd.setCallToAction("callToActionId-1001");
+          var containerWidth = 350;
+          var containerHeight = 550;
+          ytd.setYtdContainer("ytdContainer-1001", containerWidth, containerHeight);
+          ytd.ready();
+        };
+        if (window.addEventListener) {
+          window.addEventListener("load", ytdInitFunction, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onload", ytdInitFunction);
+        }
+        </script>
+        </a>
+        <div class="youtube">
+          <a name="ytd"></a>
+          <a id="callToActionId-1001" href="javascript:void(0);" class="upload"></a>
+          <div id="ytdContainer-1001"></div>
+        </div> 
+      </div>      
             
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
