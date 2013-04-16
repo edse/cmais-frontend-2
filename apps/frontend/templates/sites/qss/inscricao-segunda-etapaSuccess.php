@@ -19,8 +19,8 @@
     <form id="form-contato" method="post" action="">
       <p>Participante para Vídeoconferência:</p>
       
-      <label>Nome completo:</label>
-      <input type="text" name="nome" id="nome" class="required" />
+      <label>Nome completo:<input type="text" name="nome" id="nome" class="required" /></label>
+      
 
       <label>Idade:</label>
       <input type="text" name="idade" id="idade" class="required" />
