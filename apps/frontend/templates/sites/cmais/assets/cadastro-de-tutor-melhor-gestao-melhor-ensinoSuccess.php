@@ -200,6 +200,18 @@
                       <label><input type="radio" name="fpavinculo" id="nao2" value="nao" />Não</label>
                     </div>
 
+                    <!--span class="linhaFundo"></span--> 
+                    
+                    <p class="pergunta">Possui experiência com coordenação de tutoria online?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="exp_coord_tutoria" id="sim3" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="exp_coord_tutoria" id="nao3" value="nao" />Não</label>
+                    </div>
+                    
                     <!--span class="linhaFundo"></span-->
 
                     <p class="enun">Local de Prova</p>
@@ -416,6 +428,9 @@
               required: true
             },
             fpavinculo:{
+              required: true
+            },
+            exp_coord_tutoria:{
               required: true
             },
             localdeprova:{
