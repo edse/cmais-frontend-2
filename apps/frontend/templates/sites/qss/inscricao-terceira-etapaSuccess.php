@@ -19,22 +19,22 @@
     <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
       <p>Participante para Videoconferência:</p>
       
-      <label>Nome completo:<input type="text" name="nome" id="nome" /></label>
-      <label>Idade: <input type="text" name="idade" id="idade" /></label>
-      <label>Endereço: <input type="text" name="endereco" id="endereco" /></label>
-      <label>Bairro: <input type="text" name="bairro" id="bairro" /></label>
-      <label>CEP: <input type="text" name="cep" id="cep" /></label>
-      <label>Cidade: <input type="text" name="cidade" id="cidade" /></label>
-      <label>RG: <input type="text" name="rg" id="rg" /></label>
-      <label>CPF: <input type="text" name="cpf" id="cpf" /></label>
-      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
-      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
-      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
-      <label>Você tem todas as condições de saúde para participar do programa?
+      <label class="span6">Nome completo:<input type="text" name="nome" id="nome" /></label>
+      <label class="span2">Idade: <input type="text" name="idade" id="idade" /></label>
+      <label class="span8">Endereço: <input type="text" name="endereco" id="endereco" /></label>
+      <label class="span6">Bairro: <input type="text" name="bairro" id="bairro" /></label>
+      <label class="span2">CEP: <input type="text" name="cep" id="cep" /></label>
+      <label class="span6">Cidade: <input type="text" name="cidade" id="cidade" /></label>
+      <label class="span2">RG: <input type="text" name="rg" id="rg" /></label>
+      <label class="span3">CPF: <input type="text" name="cpf" id="cpf" /></label>
+      <label class="span3">Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
+      <label class="span3">Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
+      <label class="span8">Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
+      <label class="span8">Você tem todas as condições de saúde para participar do programa?
         <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />Sim
         <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />Não
       </label>
-      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricoes" id="sauderestricoes" /></label>
+      <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricoes" id="sauderestricoes" /></label>
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
     </form>  
