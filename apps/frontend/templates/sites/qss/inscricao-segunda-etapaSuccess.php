@@ -30,11 +30,8 @@
       <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
       <label>Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
       <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
-      <label>Você tem todas as condições de saúde para participar do programa?
-        <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />Sim
-        <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />Não
-      </label>
-      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricoes" id="sauderestricoes" /></label>
+      <label>Profissão: <input type="text" name="profissao" id="profissao" /></label>
+      <label>Grau de escolaridade: <input type="text" name="escolaridade" id="escolaridade" /></label>
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
     </form>  
@@ -85,10 +82,10 @@
         nomemae:{
           required:true
         },
-        saudecondicoes:{
+        profissao:{
           required:true
         },
-        sauderestricoes:{
+        escolaridade:{
           required:true
         }
       },
