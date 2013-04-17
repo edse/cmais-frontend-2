@@ -1,7 +1,7 @@
 .rodape .menuRodape {margin-top: 74px;}
 .conteudoWrapper {height: auto;}
 
-#menu-quintal-principal{position:relative;width:100%;min-height:700px;z-index:3000;}
+#menu-quintal-principal{position:relative;width:100%;min-height:600px;z-index:3000;}
 .over{position:absolute;z-index:5000;}
 
 #over-teobaldo{top: -16px;left: 107px;}
