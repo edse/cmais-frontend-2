@@ -25,9 +25,9 @@ body {background: black;}
 label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { display:block; float: left; margin-right:20px; }
 #capa-site label input { width:100%; margin-top:5px;  }
-#form-contato { float:left; margin-bottom:50px; }
+#form-contato { float:left; margin-bottom:50px; width: 800px; }
 #enviar {clear: both;    float: right;    margin: 2% 17.3%; }
-.span8 { width: 82% }
+.span8 { width: 100% }
 .span6 { width: 58% }
 .span4 { width: 40% }
 .span2 { width: 22% }
