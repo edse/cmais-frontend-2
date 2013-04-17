@@ -16,7 +16,7 @@ header("Content-Type: text/xml;charset=utf8");
       setcookie('time_to_view'.$num_episodio, $num_episodio, time()+10);
       echo "<resultado>SIM</resultado>";
     }
-  }else{
+  }else{ 
     //echo "Informe o Episodio!";
   }
   echo "
