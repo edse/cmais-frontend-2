@@ -8,16 +8,16 @@
 
     <?php include_title() ?>
     <?php include_metas() ?>
-    <?php include_meta_props() ?>
+    <!-- <?php include_meta_props() ?> -->
     <!-- og:image estatico -->
-    <!--  
+   
     <meta property="og:title" content="Quintal da Cultura - cmais+ O portal de conteúdo da Cultura" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="homepage - cmais+ O portal de conteúdo da Cultura" />
     <meta property="og:url" content="http://cmais.com.br/quintaldacultura" />
     <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="" />
-    -->
+    <meta property="og:image" content="http://astolfo.tvcultura.com.br/uploads/assets/image/default/7c22dadf8a4fc4325f70c449cbdffe0071abc151.jpg" />
+   
     
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
