@@ -33,4 +33,4 @@ label.error{position: absolute;bottom: -10px;color: red;}
 .span2 { width: 22% }
 .span3 { width: 26.1% }
 .span5 { width: 7%; float:left; display:block; }
-.span5 input { display: block;    float: right;    width: 50%; }
+.span5 input { display: block;    float: right;    width: 50% !important; }
