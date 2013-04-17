@@ -10,3 +10,16 @@
 #over-osorio{left: 292px;top: -59px;}
 #over-doroteia{right: 149px;top: -25px;}
 #over-ludovico{right: 16px;bottom: 30px;}
+
+/* aniversario */
+#anos{position: absolute;width: 523px;height: 204px;background: url(/portal/quintal/images/aniversario2anos/img_anos.png) no-repeat;z-index: 0;left: 265px;top: 15px;}
+#niver-principal{top: 228px;position: relative;width:950px; height:320px; background: url(/portal/quintal/images/aniversario2anos/img_box.png) no-repeat;}
+.niver-esquerda{width:440px;height:320px; display:block; float:left;}
+.niver-direita{width:500px; height:320px;display:block;float:right;}
+.niver-direita iframe{border:#e4f527 4px solid; margin:15px}
+.niver-esquerda span.vela{width: 249px;height: 445px;display: block;background: url(/portal/quintal/images/aniversario2anos/img_vela.png) no-repeat;top: -298px;left: 54px;position: absolute;}
+.niver-esquerda span.niver-combinado{font-size: 30px;color: #cb35a4;background: #e4f527;padding: 2px; text-align: center;font-weight: bold;position: absolute;bottom: 10px !important;left: 90px !important;width: 260px;height: 40px;line-height: 43px;}
+.niver-esquerda span.niver-texto{background: #cb35a4;line-height: 28px;color: #fff;padding: 0px 7px 4px 7px;}
+.niver-esquerda p{color: #fff;font-size: 24px;position: absolute;z-index: 2;display: block;width: 435px;top: 80px;left: 15px;text-align: center;}
+
+
