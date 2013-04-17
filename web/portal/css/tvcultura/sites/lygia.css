@@ -1,7 +1,8 @@
 body { background:#fff url(/portal/images/capaPrograma/lygia/bg.jpg) repeat-x; }
 #barra-site .redes { float: right; }
-#barra-site h2 {margin-top:30px;}
+#barra-site .redes,
+#barra-site h2 {margin-top:40px;}
 .bg-site { display: none; }
-#barra-site { margin-top:50px; }
 #miolo { margin-top:30px; }
-
+#barra-site .topo-programa { margin-top:60px; }
+#capa-site { margin-top:0 !important; }
