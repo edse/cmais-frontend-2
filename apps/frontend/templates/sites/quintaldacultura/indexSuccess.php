@@ -9,6 +9,16 @@
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
+    <!-- og:image estatico -->
+    <!--  
+    <meta property="og:title" content="Quintal da Cultura - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="homepage - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://cmais.com.br/quintaldacultura" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="" />
+    -->
+    
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
