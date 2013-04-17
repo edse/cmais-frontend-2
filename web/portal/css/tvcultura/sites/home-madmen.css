@@ -88,13 +88,16 @@ body { background:url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; 
 .abas li:hover a { background:#c3262d !important;  }
 #menu-rodape .conteudo-lista p a { color:#000 !important; font-weight:normal; font-size: 14px; }
 #box-infantil { margin-bottom:0; }
+/*
 #v2 img { 
   -webkit-filter: sepia(0.7); 
   -webkit-filter: sepia(70%); 
   -moz-filter: sepia(70%); 
   -ms-filter: sepia(70%); 
   -o-filter: sepia(70%); filter: sepia(70%); }
-#v2 img {-webkit-filter: saturate(2) sepia(0.7) hue-rotate(30deg); }
-
+  */
+#menu-rodape,
+.capa img,
+#v2 img {-webkit-filter: saturate(2) sepia(0.7) hue-rotate(10deg); }
 #guia-topo { *margin-bottom:-53px; }
 #menuFloat { *display:none; }

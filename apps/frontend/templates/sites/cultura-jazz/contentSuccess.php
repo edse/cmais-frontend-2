@@ -362,7 +362,7 @@ $(function(){
           <?php endif; ?>
               
               <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
+              <div class="box-publicidade grid1" style="margin-top:20px;">
                 <!-- cmais-assets-300x250 -->
                 <script type='text/javascript'>
                 GA_googleFillSlot("culturafm-300x250");

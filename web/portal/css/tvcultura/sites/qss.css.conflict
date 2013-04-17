@@ -34,5 +34,9 @@ label.error{position: absolute;bottom: -10px;color: red;}
 .span3 { width: 30.8% }
 .span5 { width: 9%; float:left; display:block; margin-top:5px !important; }
 .span5 input { display: block;    float: right;    width: 50% !important; }
+<<<<<<< HEAD
+.error .checked { display: none}
+=======
 label.error { color:red !important; font-size: 12px !important;    margin-top: 5px !important;    position: relative; padding:0 2px; width: 100%; bottom:0; }
 #rodape-portal { *margin-top:50px; }
+>>>>>>> 31b654b810ca32f31eb744bf18f42094c9e38557
