@@ -16,26 +16,27 @@
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>-->
     </div>
     <!-- /curtir -->
-    <form id="form-contato" method="post" action="">
+    <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
       <p>Participante para Vídeoconferência:</p>
       
-      <label>Nome completo:<input type="text" name="nome" id="nome" class="required" /></label>
-      <label>Idade: <input type="text" name="idade" id="idade" class="required" /></label>
-      <label>Endereço: <input type="text" name="endereco" id="endereco" class="required" /></label>
-      <label>Bairro: <input type="text" name="bairro" id="bairro" class="required" /></label>
-      <label>CEP: <input type="text" name="cep" id="cep" class="required" /></label>
-      <label>Cidade: <input type="text" name="cidade" id="cidade" class="required" /></label>
-      <label>RG: <input type="text" name="rg" id="rg" class="required" /></label>
-      <label>CPF: <input type="text" name="cpf" id="cpf" class="required" /></label>
-      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" class="required" /></label>
-      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" class="required" /></label>
-      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" class="required" /></label>
-      <label>Você tem todas as condições de saúde para participar do programa?  <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />
-      <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" /></label>
-      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricao" id="sauderestricao" class="required" /></label>
+      <label>Nome completo:<input type="text" name="nome" id="nome" /></label>
+      <label>Idade: <input type="text" name="idade" id="idade" /></label>
+      <label>Endereço: <input type="text" name="endereco" id="endereco" /></label>
+      <label>Bairro: <input type="text" name="bairro" id="bairro" /></label>
+      <label>CEP: <input type="text" name="cep" id="cep" /></label>
+      <label>Cidade: <input type="text" name="cidade" id="cidade" /></label>
+      <label>RG: <input type="text" name="rg" id="rg" /></label>
+      <label>CPF: <input type="text" name="cpf" id="cpf" /></label>
+      <label>Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
+      <label>Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
+      <label>Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
+      <label>Você tem todas as condições de saúde para participar do programa?
+        <input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />Sim
+        <input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />Não
+      </label>
+      <label>Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricoes" id="sauderestricoes" /></label>
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-      
     </form>  
 </div> 
 <!-- /capa site-->
@@ -43,40 +44,51 @@
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({
-      submitHandler: function(form){
-        $.ajax({
-          type: "POST",
-          dataType: "text",
-          data: $("#form-contato").serialize(),
-          beforeSend: function(){
-            $('img#ajax-loader').show();
-          },
-          success: function(data){
-          $('input#enviar').removeAttr('disabled');
-            window.location.href="#";
-            if(data == "1"){
-              alert("Seu cadastro foi enviado com sucesso!");
-               $('img#ajax-loader').hide();
-               $('#form-contato').hide();
-            }
-            else {
-              alert("Sua mensagem não pode ser enviada. Tente novamente.");
-               $('img#ajax-loader').hide();
-               $("#email").val(" ");
-               
-            }
-          }
-        });         
-      },
       rules:{
-        email:{
+        nome:{
+          required:true
+        },
+        idade:{
           required:true,
-          email: true
+          number: true
+        },
+        endereco:{
+          required:true
+        },
+        bairro:{
+          required:true
+        },
+        cep:{
+          required:true
+        },
+        cidade:{
+          required:true
+        },
+        rg:{
+          required:true
+        },
+        cpf:{
+          required:true
+        },
+        nascimento:{
+          required:true
+        },
+        telefone:{
+          required:true
+        },
+        nomemae:{
+          required:true
+        },
+        saudecondicoes:{
+          required:true
+        },
+        sauderestricoes:{
+          required:true
         }
       },
       messages:{
         email: "Digite um e-mail válido.",
- 
+        idade: "Idade precisa ser números."
       },
       success: function(label){
         // set &nbsp; as text for IE
