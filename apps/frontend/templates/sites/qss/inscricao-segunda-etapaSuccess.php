@@ -17,7 +17,7 @@
     </div>
     <!-- /curtir -->
     <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
-      <p>Participante para Vídeoconferência:</p>
+      <p>Participante:</p>
       
       <label>Nome completo:<input type="text" name="nome" id="nome" /></label>
       <label>Idade: <input type="text" name="idade" id="idade" /></label>
