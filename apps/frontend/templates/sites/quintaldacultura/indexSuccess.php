@@ -97,7 +97,7 @@
                 <div class="niver-esquerda">
                   <p>
                     <span class="niver-texto">O <span style="color:yellow">Quintal da Cultura</span>  já vai fazer</span><br> 
-                    <span class="niver-texto">2 anos,da pra acreditar? E nessa</span>
+                    <span class="niver-texto">2 anos, da pra acreditar? E nessa</span>
                     <span class="niver-texto">Quinta-feira, dia 18 de Março,</span><br>
                     <span class="niver-texto">tem festa pra comemorar!</span><br>
                     <span class="niver-texto">Mas é surpresa, então não conta</span><br>
