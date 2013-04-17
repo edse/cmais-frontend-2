@@ -96,6 +96,7 @@ body { background:url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; 
   -ms-filter: sepia(70%); 
   -o-filter: sepia(70%); filter: sepia(70%); }
   */
+#menu-rodape,
 .capa img,
 #v2 img {-webkit-filter: saturate(2) sepia(0.7) hue-rotate(10deg); }
 #guia-topo { *margin-bottom:-53px; }
