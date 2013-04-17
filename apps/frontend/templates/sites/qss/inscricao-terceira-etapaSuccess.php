@@ -31,8 +31,8 @@
       <label class="span3">Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
       <label class="span8">Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
       <label class="span8">Você tem todas as condições de saúde para participar do programa?</label>
-      <label class="span4"><input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />Sim</label>
-      <label class="span4"><input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />Não</label>
+      <label class="span5"><input type="radio" id="saudecondicoes" name="saudecondicoes" value="sim" />Sim</label>
+      <label class="span5"><input type="radio" id="saudecondicoes" name="saudecondicoes" value="não" />Não</label>
       </label>
       <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?  <input type="text" name="sauderestricoes" id="sauderestricoes" /></label>
       <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
