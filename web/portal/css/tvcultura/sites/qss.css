@@ -23,11 +23,12 @@ body {background: black;}
 #enviar{cursor: pointer;background: red;border: none;padding: 6px;float: left;font-size: 14px;color: #FFF;margin: 10px}
 #email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
 label.error{position: absolute;bottom: -10px;color: red;}
-#capa-site label { display:block; float: left; margin-right:10px; }
-#capa-site label input { margin-left:10px; width:100%;  }
-#form-contato { float:left; }
-#enviar { float:right; }
-.span8 { width: 80% }
+#capa-site label { display:block; float: left; margin-right:20px; }
+#capa-site label input { width:100%; margin-top:5px;  }
+#form-contato { float:left; margin-bottom:50px; }
+#enviar {clear: both;    float: right;    margin: 2% 17.3%; }
+.span8 { width: 82% }
 .span6 { width: 58% }
 .span4 { width: 40% }
 .span2 { width: 22% }
+.span3 { width: 26.1% }

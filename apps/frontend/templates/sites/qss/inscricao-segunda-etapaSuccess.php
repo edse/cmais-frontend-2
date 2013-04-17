@@ -26,9 +26,9 @@
       <label class="span2">CEP: <input type="text" name="cep" id="cep" /></label>
       <label class="span6">Cidade: <input type="text" name="cidade" id="cidade" /></label>
       <label class="span2">RG: <input type="text" name="rg" id="rg" /></label>
-      <label class="span2">CPF: <input type="text" name="cpf" id="cpf" /></label>
-      <label class="span2">Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
-      <label class="span2">Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
+      <label class="span3">CPF: <input type="text" name="cpf" id="cpf" /></label>
+      <label class="span3">Data de nascimento: <input type="text" name="nascimento" id="nascimento" /></label>
+      <label class="span3">Telefone para contato: <input type="text" name="telefone" id="telefone" /></label>
       <label class="span8">Nome da mãe: <input type="text" name="nomemae" id="nomemae" /></label>
       <label class="span4">Profissão: <input type="text" name="profissao" id="profissao" /></label>
       <label class="span4">Grau de escolaridade: <input type="text" name="escolaridade" id="escolaridade" /></label>
