@@ -41,8 +41,14 @@
 </div> 
 <!-- /capa site-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    $('#cpf').mask("999.999.999-99");
+    $('#cep').mask("99999-999");
+    $('#telefone').mask("(99) 9999-9999");
+    $('#nascimento').mask("99/99/9999");
+    
     var validator = $('#form-contato').validate({
       rules:{
         nome:{
