@@ -181,7 +181,7 @@ A direção do programa “Quem sabe, sabe!” reserva-se ao direito de, a qualq
 Os(As) candidatos(as) isentam a TV Cultura de qualquer responsabilidade sobre promessas não cumpridas, feitas por terceiros, durante o programa.
 O presente Regulamento será regido e interpretado pelas leis brasileiras, ficando eleito o Foro Central de São Paulo, para dirimir eventuais dúvidas oriundas do presente, com renúncia de qualquer outro, por mais privilegiado que venha a ser.
     </textarea>
-    <button>
+    <button id="enviar">
       Concordo
     </button>
   </form>

@@ -38,5 +38,6 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 #rodape-portal { *margin-top:50px; }
 .checked { display:none !important; }
 .regulamento { float:left; }
-.regulamento h1 { font-size:24px; color:#fff; }
-.regulamento textarea { width:970px; height: 600px; margin-top:20px; }
+.regulamento h1 { font-size:24px; color:#fff; text-align:left; }
+.regulamento textarea { width:970px; height: 600px; margin-top:20px; padding:10px; }
+.regulamento button { float: right;    margin: 2%;   }
