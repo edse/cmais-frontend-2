@@ -12,7 +12,7 @@ if($_REQUEST["captcha"]) {
       die("3");
     }
     else {
-      $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino.csv";
+      $csvFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino2.csv";
       $csvContent = $_REQUEST["disciplina"] . "," .
                     $_REQUEST["nome"] . "," .
                     $cpf . "," .
@@ -23,7 +23,10 @@ if($_REQUEST["captcha"]) {
                     $_REQUEST["formacao"] . "," .
                     $_REQUEST["participou"] . "," .
                     $_REQUEST["fpavinculo"] . "," .
-                    $_REQUEST["localdeprova"] . "\n";
+                    $_REQUEST["localdeprova"] . "," .
+                    $_REQUEST["exp_coord_tutoria"] . "," .
+                    $_REQUEST["atuacao_sup"] . "," .
+                    $_REQUEST["part_encontro"] . "\n";
       $csvFp = fopen($csvFile, 'a+');
       if(fwrite($csvFp, $csvContent)){
         $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-tutores.txt";
