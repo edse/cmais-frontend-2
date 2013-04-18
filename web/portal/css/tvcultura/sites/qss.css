@@ -39,5 +39,5 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .checked { display:none !important; }
 .regulamento { float:left; margin-top:20px; }
 .regulamento h1 { font-size:24px; color:#fff; text-align:left; margin-left:20px; }
-.regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; font-size:14px; line-height:24px; color: #333; }
+.regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; font-size:14px; line-height:24px; color: #fff; background:#000; }
 .regulamento button { float: right;    margin: 2%;   }
