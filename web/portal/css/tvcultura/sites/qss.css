@@ -43,5 +43,5 @@ h1,
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
 #loginInstruction a,
-#loginInstruction { color:#fff; }
+#loginInstruction { color:#fff !important; }
 .span6.concordo input { width:15px !important; margin-right:5px; }
