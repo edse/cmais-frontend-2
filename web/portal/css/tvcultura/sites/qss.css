@@ -13,7 +13,7 @@ body {background: black;}
 #capa-site{min-height: 522px;*margin-top: -50px !important}
 #rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
 .voltar-topo{*margin-left:-350px !important;}
-#capa-site{position:relative;overflow: visible; min-height:433px;}
+#capa-site{position:relative;overflow: visible; min-height:833px;}
 #capa-site .logo{position: absolute;top: 70px;left:0px;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
 #capa-site .redes {position: relative;bottom: 40px;left: 97px;}
@@ -24,7 +24,7 @@ body {background: black;}
 #email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
 label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { display:block; float: left; margin-right:20px; }
-#capa-site label input { width:100%; margin-top:5px;  }
+#capa-site label input { width:100%; margin-top:2px;  }
 #form-contato { float:left; margin-bottom:50px; width: 800px; }
 #enviar {clear: both;    float: right;    margin: 2%; }
 .span8 { width: 97% }
@@ -38,9 +38,11 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 #rodape-portal { *margin-top:50px; }
 .checked { display:none !important; }
 .regulamento { float:left; margin-top:20px; }
-.regulamento h1 { font-size:24px; color:#fff; text-align:left; margin-left:20px; }
+h1,
+.regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left;  }
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
-#loginInstruction a,
-#loginInstruction { color:#fff; }
 .span6.concordo input { width:15px !important; margin-right:5px; }
+#ytdContainer-2001 iframe { background:#fbfbfb; margin:20px 0 50px 0; }
+
+

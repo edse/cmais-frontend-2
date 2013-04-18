@@ -213,6 +213,31 @@
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
+                    
+                    <p class="pergunta">Esta atuando como Supervisor de Ensino da rede pública estadual de São Paulo?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="atuacao_sup" id="sim4" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="atuacao_sup" id="nao4" value="nao" />Não</label>
+                    </div>
+                    
+                    <!--span class="linhaFundo"></span-->
+                    
+                     <p class="pergunta">Participou como cursista no encontro presencial realizado pela EFAP/CEGEB no Curso de Supervisores, de 01 a 04 de abril do ano de 2013, em Águas de Lindóia?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="part_encontro" id="sim5" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="part_encontro" id="nao5" value="nao" />Não</label>
+                    </div>
+                    
+                    <!--span class="linhaFundo"></span-->
+
 
                     <p class="enun">Local de Prova</p>
                     <div class="linha t2">
@@ -434,6 +459,15 @@
               required: true
             },
             localdeprova:{
+              required: true
+            },
+            exp_coord_tutoria: {
+              required: true
+            },
+            atuacao_sup: {
+              required: true
+            },
+            part_encontro: {
               required: true
             },
             captcha: {
