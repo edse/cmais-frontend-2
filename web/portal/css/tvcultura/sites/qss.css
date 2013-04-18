@@ -39,4 +39,4 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .checked { display:none !important; }
 .regulamento { float:left; }
 .regulamento h1 { font-size:24px; color:#fff; }
-.regulamento textarea { width:970px; height: 600px; }
+.regulamento textarea { width:970px; height: 600px; margin-top:20px; }
