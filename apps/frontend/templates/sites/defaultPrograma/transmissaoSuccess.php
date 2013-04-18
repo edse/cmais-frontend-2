@@ -66,9 +66,7 @@
         <div id="esquerda" class="grid2">
           <h3><?php echo $section->getTitle() ?></h3>
           
-          <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
-         
-         
+          <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
 
           <!-- barra compartilhar -->
           <div class="box-compartilhar grid2">
@@ -112,11 +110,11 @@
         <!-- DIREITA -->
         
         <div id="direita" class="grid1">
-          <?php if(isset($displays['bate-papo'])):?> 
-          <?php if(count($displays['bate-papo']) > 0): ?>
-          <h3><?php echo $displays['bate-papo'][0]->Block->getTitle() ?></h3>
+          <?php if(isset($displays['chat'])):?> 
+          <?php if(count($displays['chat']) > 0): ?>
+          <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
           <div class="box">
-            <?php echo html_entity_decode($displays['bate-papo'][0]->Asset->AssetContent->getContent()) ?>
+            <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
           </div>
           <?php endif; ?>
           <?php endif; ?>
