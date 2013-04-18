@@ -39,7 +39,7 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .checked { display:none !important; }
 .regulamento { float:left; margin-top:20px; }
 h1,
-.regulamento h1 { font-size:24px; color:#fff; text-align:left;  }
+.regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left;  }
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
 #loginInstruction a,
