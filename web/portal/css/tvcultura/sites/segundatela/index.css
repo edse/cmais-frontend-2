@@ -1,0 +1,101 @@
+@import url("geral.css");
+#menu-portal-2 {top: -11px;}
+.navbar-fixed-top{position:relative}
+ul.nav{margin-left: 23%!important;}
+.ipt-txt{border-radius: 0px!important;width: 70px!important;height: 15px!important;}
+.bgtopo2{background:url(/portal/images/capaPrograma/segundatela/index/bg-segundatela.png) repeat-x;}
+.bgtopo3{background:url(/portal/images/capaPrograma/segundatela/index/bg-segundatela2.png) repeat-x; position:absolute;top:0; width:100%; height:154px;right:100%;}
+.container{max-width:980px;margin:0 auto;position:relative;}
+.hero-unit{background:none;min-height: 155px; overflow: hidden;}
+.hero-unit .col-esq h1 {font-size: 22px;line-height: 24px;text-transform: uppercase;margin: 34px 0 0 0;padding: 0;text-indent: 0px; font-family:'source_sans_proregular'; color:#ff6833; text-align:left;}
+.hero-unit .col-esq p {margin: 10px 0; color:#FFF; text-align:left; font-size:13px; font-family:'source_sans_proregular';}
+.hero-unit .bgtopo { width: 221px; height:156px; background:url(/portal/images/capaPrograma/segundatela/index/segundaTelaLogo.jpg) no-repeat; float:left; margin-right:10px;}
+.item{ padding:5px; background-color:#e1e1e1;border:1px solid white;}
+.item:hover{border:1px solid #ff6833;}
+.item p{text-align: left;padding-top:10px;margin-bottom:0px;}
+.item .logo-programa{width:193px;height:80px;margin:0 auto;}
+.item .live-image{position:relative;}
+.item .live-image span{bottom: -1px;left: 0;width: 100%;text-align: center;background: #ff6833;padding: 3px 0px;font-family: 'source_sans_proregular';font-size: 18px;color: #FFF;letter-spacing: 0.15em;}
+.item a{color:#333333;}
+.span8 h2{font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;font-size: 18px;color: #FFF;background: #333333;text-align: left;padding: 5px;display: block;line-height: 18px;float: left;}
+.span8 p{clear:both;text-align:left;}
+.row-fluid{margin-top:20px;}
+#rodape-portal {margin-top: 200px;}
+#footer{margin-top: 60px;}
+.fb, .gplus, .twt{overflow:hidden;}
+/* Large desktop */
+@media  (min-width: 1200px) {
+  .item .live-image span{position:absolute;}
+  .span3.item{min-height:320px!important;}
+  .span4.item{min-height:350px!important;}
+  #double-click{display:block!important;} 
+  #footer{display:block!important;}
+}
+
+@media (min-width: 1024px) { 
+  .item .live-image span{position:absolute;}
+  .span3.item{min-height:320px!important;}
+  .span4.item{min-height:350px!important;}
+  #footer{display:none;}
+  ul.nav{margin-left: 22%!important;}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .item .live-image span{position:absolute;}
+  .span3.item{min-height:300px!important;}
+  .span4.item{min-height:310px!important;}
+  .hero-unit .bgtopo{display:block;margin-left:-10px;}
+  .bgtopo2{margin-top:-20px;}
+  #footer{display:none;}
+ .hero-unit h1{margin-left:8%!important;margin-top:10%!important }
+ .hero-unit p{display:block!important;margin-left:8%!important; width:100%;}
+ .hero-unit .redes{display:block!important;margin-left:8%!important}
+ .item .logo-programa{ width:100%; margin-top:2%; }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+ {
+  .item .live-image span{}
+  #footer{display:none;}
+}
+
+@media (min-width: 481px) and (max-width: 766px){
+  
+ .span3.item, .span4.item{min-height:250px!important;} 
+ .bgtopo{display:block!important;}
+ .bgtopo3{display:none;}
+ .hero-unit{background:none!important;position:relative;}
+ .hero-unit h1{margin-left:2%!important;margin-top:10%!important }
+ .hero-unit p{display:block!important;margin-left:2%!important; width:100%;}
+ .hero-unit .redes{display:block!important;margin-left:2%!important}
+ .item{margin-bottom:5%;overflow: hidden;position:relative;}
+ .item .live-image img{float:right; width:55%;}
+ .item p{width:100%;text-align:center;background:#333;color:#FFF;padding:1%;float:right;position: absolute;bottom:0; left: 0;}
+ .item .logo-programa{ float:right!important;margin:5% 2% }
+ .span8 h2{font-size:17px;width:280px}
+}
+
+ 
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .nav li{text-align: left;}
+  .hero-unit {height: auto!important}
+  .hero-unit h1{margin-left:10%!important;margin-top:5%!important }
+  .hero-unit p{display:block!important;margin-left:10%!important}
+  .hero-unit .redes{display:block!important;margin-left:10%!important}
+  .bgtopo3{display:none;}
+  .item{margin-bottom:5%!important;}
+  .span8 h2{font-size:17px}
+  .item .live-image{clear:both;display:block;overflow: hidden;width:100%;height:30px;}
+  .item .live-image img{display: none!important;}
+  .item .logo-programa{width:193px;height:80px;margin:3px auto;clear:both;}
+  .item p{text-align:center;padding:3px; background:#333333;color:#FFF;}
+  body{padding:0 15px}
+  .span8 h2{font-size:17px;width:280px}
+  #footer{display:none;}
+}
