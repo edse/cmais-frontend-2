@@ -43,4 +43,4 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .regulamento button { float: right;    margin: 2%;   }
 #loginInstruction a,
 #loginInstruction { color:#fff; }
-.span6.concordo input { width:15px; margin-right:5px; }
+.span6.concordo input { width:15px !important; margin-right:5px; }
