@@ -72,7 +72,10 @@ class _sectionActions extends sfActions
         if($this->section->getSlug() != "aovivo")
           $this->setLayout('segundatela');
       }
-      
+      if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home2") {
+        $this->setLayout('responsivo');   
+       
+      }
       if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');   
        
