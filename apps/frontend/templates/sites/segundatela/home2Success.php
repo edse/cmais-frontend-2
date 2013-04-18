@@ -46,7 +46,7 @@
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
 
-          <?php if ($live->Program->Site->id == "786" ): ?>  
+          <?php if ($live->Program->Site->id == 786 ): ?>  
             <span>NO AR</span>
           <?php endif; ?>
 
