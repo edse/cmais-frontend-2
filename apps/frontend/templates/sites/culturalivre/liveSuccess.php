@@ -118,7 +118,7 @@
           </div>
           <?php endif; ?>
           <?php endif; ?>
-          <p></p>
+          <p></p> 
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1" style="margin-top:20px;">
             <!-- programas-homepage-300x250 -->
