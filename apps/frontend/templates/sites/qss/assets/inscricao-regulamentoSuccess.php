@@ -103,16 +103,12 @@ TERCEIRA FASE DO JOGO:
 
 - As respostas agora têm o seguinte valor:
   a) 200 (duzentas) “EUREKAS” na primeira rodada de perguntas.
-
   b) 400 (quatrocentas) “EUREKAS” na segunda rodada de perguntas.
-
   c) 700 (setecentas) “EUREKAS” na terceira rodada de perguntas.
 
 - Em caso de o participante errar a resposta ou não responder dentro do tempo determinado, o participante perde metade dos pontos do valor da pergunta, ou seja:
   a) 100 (cem) “EUREKAS” na primeira rodada de perguntas.
-
   b) 200 (duzentas) “EUREKAS” na segunda rodada de perguntas.
-
   c) 350 (trezentas) “EUREKAS” na terceira rodada de perguntas.
 
 - Vence o jogo aquele participante que, entre os dois finalistas, acumular o maior número de “EUREKAS” após as 3 (três) rodadas de perguntas.
@@ -127,21 +123,13 @@ DEFINIÇÕES:
 - Dos temas do programa:
   Na primeira e segunda fase, os participantes respondem sobre 09 (nove) temas a saber:
     a) Ciências (CIÊ) - (física, química, biologia, astronomia e áreas afins)
-
     b) Mundo (MUN) -  (geografia, geologia, geopolítica e áreas afins)
-
     c) Cultura POP  (POP) - ( histórias em quadrinhos, vídeo game, tecnologia e culturas juvenis)
-
     d) História (HIS) - (história do Brasil, história geral, Mitologia, Arqueologia e áreas afins)
-
     e) Música (MUS) - (cantores, compositores, bandas, conjuntos, música popular brasileira, música estrangeira, música erudita, movimentos artísticos, entre outros)
-
     f) Literatura (LIT) - (brasileira, estrangeira, obras, autores, premiações, eventos, entre outros)
-
     g) Cinema e Televisão (CTV) – (filmes, atores, atrizes, diretores, séries, novelas, premiações, entre outros)
-
     h) Esportes (ESP) – (Copa do Mundo, Olimpíadas, torneios, atletas, dirigentes, modalidades esportivas, times, narradores, entre outros)
-
     i) Dicionário (DIC) – (verbetes e termos populares da língua portuguesa, entre outros).
 
 - Das “Casas de Sorte ou Azar”:
@@ -156,13 +144,11 @@ DEFINIÇÕES:
 
   Os produtos (ajudas) possíveis de serem adquiridos na “Lojinha do Quem Sabe, Sabe” são os seguintes:
     a) Trocar a pergunta: o participante fica no mesmo tema e responde uma outra pergunta;
-
     b) Eliminar 2 (duas) das 4 (quatro) alternativas: o participante terá a opção de escolher entre somente as duas alternativas restantes.
-
     c) Jogar de novo: o participante terá o direito de jogar novamente o dado digital e responder a uma nova pergunta de uma nova editoria.
 
 - Do “Arrisca Tudo”:
-  a) O “Arrisca Tudo” é uma pergunta máster, formulada pela produção, cujo acerto vale 500 pontos (eurekas),  o erro implica na perda dos pontos acumulados pelo participante.
+  O “Arrisca Tudo” é uma pergunta máster, formulada pela produção, cujo acerto vale 500 pontos (eurekas),  o erro implica na perda dos pontos acumulados pelo participante.
 
 - Da “Vídeo Conferência”:
   Os dois participantes da terceira fase (“Duelo de Titãs”), poderão contar com a ajuda da pessoa indicada por eles para participar do programa, na resposta das perguntas.
@@ -185,17 +171,11 @@ Eventuais faltas e atrasos do Participante nas gravações do Programa e demais 
 
 São também razões para a desclassificação do Participante no Programa:
 (i) o desrespeito às regras do Programa:
-
 (ii) qualquer tipo de agressão física e/ou verbal com os demais participantes e/ou com os membros da produção;
-
 (iii) recusa de uso de materiais ou produtos fornecidos pela Produção;
-
 (iv) recusa de participar de quaisquer atividades propostas pela Produção;
-
 (v) no caso de abordagem de temas que não estejam diretamente ligados ao Programa;
-
 (vi) no caso de fazer comentários racistas ou que possam denegrir qualquer religião e/ou etnia; e,
-
 (vii) no caso de violação de Lei.
 
 
