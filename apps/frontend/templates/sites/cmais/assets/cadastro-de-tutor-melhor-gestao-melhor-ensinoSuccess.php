@@ -214,7 +214,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                    <p class="pergunta">Esta atuando como Supervisor de Ensino da rede pública estadual de São Paulo? Sim ou Não.</p>
+                    <p class="pergunta">Esta atuando como Supervisor de Ensino da rede pública estadual de São Paulo?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="atuacao_sup" id="sim4" value="sim" />Sim</label>
