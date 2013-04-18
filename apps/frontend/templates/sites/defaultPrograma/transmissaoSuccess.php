@@ -122,7 +122,7 @@
           <?php endif; ?>
           <p></p>
           <!-- BOX PUBLICIDADE -->
-          <div class="box-publicidade grid1">
+          <div class="box-publicidade grid1" style="margin-top:20px;">
             <!-- programas-homepage-300x250 -->
             <script type='text/javascript'>
               GA_googleFillSlot("cmais-assets-300x250");
