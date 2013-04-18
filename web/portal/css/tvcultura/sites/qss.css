@@ -24,7 +24,7 @@ body {background: black;}
 #email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
 label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { display:block; float: left; margin-right:20px; }
-#capa-site label input { width:100%; margin-top:5px;  }
+#capa-site label input { width:100%; margin-top:2px;  }
 #form-contato { float:left; margin-bottom:50px; width: 800px; }
 #enviar {clear: both;    float: right;    margin: 2%; }
 .span8 { width: 97% }
