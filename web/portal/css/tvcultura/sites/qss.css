@@ -42,4 +42,7 @@ h1,
 .regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left;  }
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
+.span6.concordo input { width:15px !important; margin-right:5px; }
 #ytdContainer-2001 iframe { background:#fbfbfb; margin:20px 0 50px 0; }
+
+
