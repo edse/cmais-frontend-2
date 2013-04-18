@@ -5,7 +5,7 @@
       $live = Doctrine_Query::create()
       ->select('s.*')
       ->from('Schedule s')
-      ->where('s.channel_id = ?', (int)2)
+      ->where('s.channel_id = ?', (int)1)
       ->andWhere('s.date_start <= ? AND s.date_end > ?', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
       ->fetchOne();
     ?>
