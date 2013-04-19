@@ -1,6 +1,6 @@
 @import url("geral.css");
 #menu-portal-2 {top: -11px;}
-.navbar-fixed-top{position:relative}
+.navbar-fixed-top{position:relative;}
 ul.nav{margin-left: 23%!important;}
 .ipt-txt{border-radius: 0px!important;width: 70px!important;height: 15px!important;}
 .bgtopo2{background:url(/portal/images/capaPrograma/segundatela/index/bg-segundatela.png) repeat-x;}
@@ -84,7 +84,7 @@ ul.nav{margin-left: 23%!important;}
 
 /* celular */
 @media (max-width: 480px) {
-  
+  .nav{width:10px}
   .nav li{text-align: left;}
   .hero-unit {height: auto!important; overflow: hidden;}
   .hero-unit h1{margin-left:10%!important;margin-top:5%!important }
