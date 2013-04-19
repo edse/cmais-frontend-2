@@ -54,6 +54,7 @@
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus { background:none !important;  }
   .navbar-inverse .nav-collapse .nav > li > a:hover { text-decoration: underline; }
+  .nav-collapse .nav > li > a{text-align:right}
 }
 
 @media screen and (max-width: 768px){
