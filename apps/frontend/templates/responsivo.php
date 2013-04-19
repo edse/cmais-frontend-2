@@ -70,30 +70,7 @@
 
   </head>
   <body>
-  <!-- menu cmais -->  
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="http://cmais.com.br/" class="brand">Cmais</a>
-        <div class="nav-collapse collapse"  >
-          <ul class="nav">
-            <li class="tvcultura"><a target="_blank" title="TV Cultura" href="http://tvcultura.com.br">TV Cultura</a></li>
-            <li class="tvratimbum"><a target="_blank" title="TV Rá Tim Bum" href="http://tvratimbum.com.br">TV Rá Tim Bum</a></li>
-            <li class="multicultura"><a target="_blank" title="Multicultura" href="http://multicultura.com.br">Multicultura</a></li>
-            <li class="univesp"><a target="_blank" title="Univesp TV" href="http://univesp.tv.br">Univesp TV</a></li>
-            <li class="active culturabrasil"><a target="_blank" title="Cultura Brasil" href="http://culturabrasil.com.br">Cultura Brasil</a></li>
-            <li class="culturafm"><a target="_blank" title="Cultura FM" href="http://www.culturafm.com.br">Cultura FM</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /menu cmais -->
+  
   <!-- conteudo -->
   <?php echo $sf_content ?>
   <!-- /conteudo -->
