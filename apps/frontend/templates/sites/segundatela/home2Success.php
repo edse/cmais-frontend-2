@@ -138,4 +138,20 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
 
   </div>
   <!--/container-->
+  <!--BUBBLE BOOKMARK-->
+  <link rel="stylesheet" href="/portal/js/bubblemark/css/add2home.css">
+  <LINK REL="apple-touch-icon" HREF="/portal/js/bubblemark/css/ico-transito-final.png" />
+  <script type="text/javascript">
+  var addToHomeConfig = {
+    autostart:true,
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:20000,
+    expire:0,
+    arrow:true,
+    message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+  };
+  </script>
+  <script type="application/javascript" src="/portal/js/bubblemark/add2home.js"></script>
+  <!--BUBBLE BOOKMARK-->
 </div>
