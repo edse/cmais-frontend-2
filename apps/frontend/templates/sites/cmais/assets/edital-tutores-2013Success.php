@@ -58,7 +58,7 @@
                     </div>
                     <p></p>
                     <style>
-                      .error{
+                      .error{ 
                         clear:both;
                         position:relative;
                         bottom:0px;
