@@ -84,7 +84,7 @@ ul.nav{margin-left: 23%!important;}
 
 /* celular */
 @media (max-width: 480px) {
-  .nav{width:10px}
+  .nav{display:none}
   .nav li{text-align: left;}
   .hero-unit {height: auto!important; overflow: hidden;}
   .hero-unit h1{margin-left:10%!important;margin-top:5%!important }
