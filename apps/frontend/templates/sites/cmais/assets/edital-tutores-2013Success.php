@@ -100,39 +100,16 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        /*
-        $('.disciplina').click(function() {
-          $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
-        });
-        $('.formacao').click(function() {
-          $("label[for='formacao1'], label[for='formacao2'], label[for='formacao3']").hide();
-        });
-        */
-        
-        
-       
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-          
-              success: function(data){
-                
-                window.location.href="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino";
-              
-              }
-            });         
+            window.location.href="http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino";
           },
           rules:{
-          
             concorda_sim: {
               required: true
             }
-            
           },
-        messages:{
+          messages:{
             concorda_sim: "Para prosseguir é necessário concordar com os termos acima."
           }
         });
