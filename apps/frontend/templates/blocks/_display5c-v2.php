@@ -30,7 +30,9 @@
 					        </div>
               			<div class="logo">
               				<a href="<?php echo $d->retriveUrl() ?>">
-              					<img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" />
+              				  <?php echo $d->Asset->Site->Program->getTitle() ?>
+              				  <!-- voltar somente imagem quando acabar promocao madmen-->
+              					<!--img title="<?php echo $d->Asset->Site->Program->getTitle() ?>" alt="<?php echo $d->Asset->Site->Program->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $d->Asset->Site->getImageIcon() ?>" /-->
               				</a>              				
               			</div>
               			<a class="foto" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
