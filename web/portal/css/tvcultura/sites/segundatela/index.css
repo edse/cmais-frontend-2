@@ -86,10 +86,10 @@ ul.nav{margin-left: 23%!important;}
 @media (max-width: 480px) {
   
   .nav li{text-align: left;}
-  .hero-unit {height: auto!important}
+  .hero-unit {height: auto!important; overflow: hidden;}
   .hero-unit h1{margin-left:10%!important;margin-top:5%!important }
   .hero-unit p{display:block!important;margin-left:10%!important}
-  .hero-unit .redes{display:block!important;margin-left:10%!important; background-color:red!important;}
+  .hero-unit .redes{display:block!important;margin-left:10%!important; }
   .bgtopo3{display:none;}
   .item{margin-bottom:5%!important;}
   .span8 h2{font-size:17px}
