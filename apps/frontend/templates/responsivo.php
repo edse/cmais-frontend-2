@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet"-->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet"-->
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/portal/css/tvcultura/responsivo.css" type="text/css" />
     
     
@@ -44,19 +44,43 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
+    <!-- DFP -->
+    <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+    <script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-6681834746443470");
+    GS_googleEnableAllServices();
+    </script>
+    
+    <script type='text/javascript'>
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
+    GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-300x250");
+    </script>
+    <script type='text/javascript'>
+    GA_googleFetchAds();
+    </script>
+    <!-- /DFP -->
+
   </head>
   <body>
   <!-- menu cmais -->  
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
-      <div style="width: 414px;" class="container">
+      <div class="container">
         <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a href="http://cmais.com.br/" class="brand">Cmais</a>
-        <div class="nav-collapse collapse">
+        <div class="nav-collapse collapse"  >
           <ul class="nav">
             <li class="tvcultura"><a target="_blank" title="TV Cultura" href="http://tvcultura.com.br">TV Cultura</a></li>
             <li class="tvratimbum"><a target="_blank" title="TV Rá Tim Bum" href="http://tvratimbum.com.br">TV Rá Tim Bum</a></li>
@@ -73,11 +97,11 @@
   <!-- conteudo -->
   <?php echo $sf_content ?>
   <!-- /conteudo -->
-    
+ 
   <!-- footer -->
   <div id="footer">
     <div class="container">
-      <a href="#geral" class="voltar-topo">Voltar ao topo</a>
+      <a href="#geral" class="voltar-topo row-fluid">Voltar ao topo</a>
       <div class="span2">
         <ul class="">
           <li class="tit">Portal</li>
