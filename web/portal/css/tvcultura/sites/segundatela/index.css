@@ -6,7 +6,7 @@ ul.nav{margin-left: 23%!important;}
 .bgtopo2{background:url(/portal/images/capaPrograma/segundatela/index/bg-segundatela.png) repeat-x;}
 .bgtopo3{background:url(/portal/images/capaPrograma/segundatela/index/bg-segundatela2.png) repeat-x; position:absolute;top:0; width:100%; height:154px;right:100%;}
 .container{max-width:980px;margin:0 auto;position:relative;}
-.hero-unit{background:none;min-height: 155px; overflow: hidden;}
+.hero-unit{background:none;min-height: 155px; overflow: hidden!important;}
 .hero-unit .col-esq h1 {font-size: 22px;line-height: 24px;text-transform: uppercase;margin: 34px 0 0 0;padding: 0;text-indent: 0px; font-family:'source_sans_proregular'; color:#ff6833; text-align:left;}
 .hero-unit .col-esq p {margin: 10px 0; color:#FFF; text-align:left; font-size:13px; font-family:'source_sans_proregular';}
 .hero-unit .bgtopo { width: 221px; height:156px; background:url(/portal/images/capaPrograma/segundatela/index/segundaTelaLogo.jpg) no-repeat; float:left; margin-right:10px;}
@@ -23,7 +23,7 @@ ul.nav{margin-left: 23%!important;}
 #rodape-portal {margin-top: 200px;}
 #footer{margin-top: 60px;}
 .fb, .gplus, .twt{overflow:hidden;}
-/* Large desktop */
+/* Desktop */
 @media  (min-width: 1200px) {
   .item .live-image span{position:absolute;}
   .span3.item{min-height:320px!important;}
@@ -31,7 +31,7 @@ ul.nav{margin-left: 23%!important;}
   #double-click{display:block!important;} 
   #footer{display:block!important;}
 }
-
+/* tablet de pé */
 @media (min-width: 1024px) { 
   .item .live-image span{position:absolute;}
   .span3.item{min-height:320px!important;}
@@ -40,7 +40,7 @@ ul.nav{margin-left: 23%!important;}
   ul.nav{margin-left: 22%!important;}
 }
 
-/* Portrait tablet to landscape and desktop */
+/* tablet to landscape */
 @media (min-width: 768px) and (max-width: 979px) {
   .item .live-image span{position:absolute;}
   .span3.item{min-height:300px!important;}
@@ -55,16 +55,15 @@ ul.nav{margin-left: 23%!important;}
 
 }
 
-/* Landscape phone to portrait tablet */
+/* tablet landscape */
 @media (max-width: 767px)
  {
   .item .live-image span{}
   #footer{display:none;}
 }
-
-@media (min-width: 481px) and (max-width: 766px){
-  
- .span3.item, .span4.item{min-height:250px!important;} 
+/* tablet e celular */
+@media (min-width: 481px) and (max-width: 766px){ 
+ .span3.item, .span4.item{min-height:200px!important; width:50%; float:left;margin-bottom:0px} 
  .bgtopo{display:block!important;}
  .bgtopo3{display:none;}
  .hero-unit{background:none!important;position:relative;}
@@ -72,17 +71,20 @@ ul.nav{margin-left: 23%!important;}
  .hero-unit p{display:block!important;margin-left:2%!important; width:100%;}
  .hero-unit .redes{display:block!important;margin-left:2%!important}
  .item{margin-bottom:5%;overflow: hidden;position:relative;}
- .item .live-image img{float:right; width:55%;}
- .item p{width:100%;text-align:center;background:#333;color:#FFF;padding:1%;float:right;position: absolute;bottom:0; left: 0;}
- .item .logo-programa{ float:right!important;margin:5% 2% }
+ .item .live-image{overflow:hidden;height:30px}
+ .item .live-image span{position:absolute; bottom:0;right:0;width:100%;clear:both;}
+ .item .live-image img{float:right;display:none}
+ .item p{text-align:center!important;background: #333; color:#FFF; min-height:70px;}
+ .item .logo-programa{margin:1% auto }
+ .item .logo-programa img{float:right;}
  .span8 h2{font-size:17px;width:280px}
 }
 
  
 
-/* Landscape phones and down */
+/* celular */
 @media (max-width: 480px) {
-
+  
   .nav li{text-align: left;}
   .hero-unit {height: auto!important}
   .hero-unit h1{margin-left:10%!important;margin-top:5%!important }
@@ -91,8 +93,9 @@ ul.nav{margin-left: 23%!important;}
   .bgtopo3{display:none;}
   .item{margin-bottom:5%!important;}
   .span8 h2{font-size:17px}
-  .item .live-image{clear:both;display:block;overflow: hidden;width:100%;height:30px;}
+  .item .live-image{width:100%; height:25px;}
   .item .live-image img{display: none!important;}
+  .item .live-image span{width:100%; display:block;}
   .item .logo-programa{width:193px;height:80px;margin:3px auto;clear:both;}
   .item p{text-align:center;padding:3px; background:#333333;color:#FFF;}
   body{padding:0 15px}

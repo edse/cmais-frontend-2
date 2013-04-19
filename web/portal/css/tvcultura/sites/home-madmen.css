@@ -24,8 +24,8 @@ body { background:url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; 
 }
 #menu-rodape .abas li a,
 #conteudo-pagina { font-family: 'daisywheelregular' !important;}
-/*#v2 .logo a { font-family: 'impact_labelregular'; }*/
-.proximasAtracoes .enunciado h2 { font-family: 'impact_label_reversedregular'; } 
+/*#v2 .logo a { font-family: 'impact_labelregular'; }
+.proximasAtracoes .enunciado h2 { font-family: 'impact_label_reversedregular'; } */
 #v2 .logo a { color:#000; }
 #v2 .logo a:hover { text-decoration:none; }
 .box-padrao .topo h4,
@@ -96,8 +96,9 @@ body { background:url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; 
   -ms-filter: sepia(70%); 
   -o-filter: sepia(70%); filter: sepia(70%); }
   */
-#menu-rodape,
+#menu-rodape .bg img,
 .capa img,
 #v2 img {-webkit-filter: saturate(2) sepia(0.7) hue-rotate(10deg); }
 #guia-topo { *margin-bottom:-53px; }
 #menuFloat { *display:none; }
+.blocos li a.bg:hover { border-color:#C3262D !important; }
