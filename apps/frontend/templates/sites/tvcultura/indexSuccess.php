@@ -32,6 +32,9 @@
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
+      <link rel="stylesheet" href="/portal/css/tvcultura/sites/home-madmen.css" type="text/css" />
+      <div class="detalhe esq"></div>
+      <div class="detalhe dir"></div>
       <?php
   if ((isset($displays["destaque-principal"])) && (count($displays["destaque-principal"]) > 0))
     include_partial_from_folder('blocks', 'global/display3c', array('displays' => $displays["destaque-principal"]));

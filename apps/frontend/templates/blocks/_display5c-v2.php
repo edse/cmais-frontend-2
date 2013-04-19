@@ -2,6 +2,15 @@
           <?php if(count($displays) > 0): ?>
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
+              <!-- remover quando acabar promocao madmen-->
+              <div id="topo-destaque">
+                <a class="banner-topo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/img-topo.jpg" alt="Mad Men" /></a>
+                <div class="logo">
+                  <a class="logo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/logomadmen.png" alt="Mad Men" /></a>
+                  <p>estreia 24 de abril | Quarta, às 22h</p>
+                </div>
+              </div>
+              <!-- /remover quando acabar promocao madmen-->
               <div class="enunciado">
                 <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>
                 <span></span>
