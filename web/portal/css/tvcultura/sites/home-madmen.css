@@ -101,3 +101,4 @@ body { background:url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; 
 #v2 img {-webkit-filter: saturate(2) sepia(0.7) hue-rotate(10deg); }
 #guia-topo { *margin-bottom:-53px; }
 #menuFloat { *display:none; }
+.blocos li a.bg:hover { border-color:#C3262D !important; }
