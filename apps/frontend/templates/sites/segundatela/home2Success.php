@@ -10,7 +10,13 @@
       ->fetchOne();
     ?>
   
-            
+  <script>
+     $(document).ready(function() {
+     $('h1').hide();
+     });  
+  </script>
+    
+        
 <div class="bgtopo2">
   <!--container-->
   <div class="container">
