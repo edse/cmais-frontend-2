@@ -1,5 +1,16 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
 
+    <?php
+      // live
+      $live = Doctrine_Query::create()
+      ->select('s.*')
+      ->from('Schedule s')
+      ->where('s.channel_id = ?', (int)1)
+      ->andWhere('s.date_start <= ? AND s.date_end > ?', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
+      ->fetchOne();
+    ?>
+  
+            
 <div class="bgtopo2">
   <!--container-->
   <div class="container">
@@ -34,7 +45,11 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
+
+          <?php if ($live->Program->id == "787" ): ?>  
             <span>NO AR</span>
+          <?php endif; ?>
+
           </div>
           <p>
             Os principais fatos do <br>dia no Brasil e no mundo.
