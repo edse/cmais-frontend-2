@@ -140,7 +140,7 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
   <!--/container-->
   <!--BUBBLE BOOKMARK-->
   <link rel="stylesheet" href="/portal/js/bubblemark/css/add2home.css">
-  <LINK REL="apple-touch-icon" HREF="/portal/js/bubblemark/css/ico-transito-final.png" />
+  <LINK REL="apple-touch-icon" HREF="/portal/images/capaPrograma/segundatela/index/FavIcon/48by48.ico" />
   <script type="text/javascript">
   var addToHomeConfig = {
     autostart:true,
