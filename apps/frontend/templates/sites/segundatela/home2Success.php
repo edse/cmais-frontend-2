@@ -1,3 +1,4 @@
+<meta http-equiv="pragma" content="no-cache" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
 
     <?php
@@ -10,13 +11,7 @@
       ->fetchOne();
     ?>
   
-  <script>
-     $(document).ready(function() {
-     $('h1').hide();
-     });  
-  </script>
-    
-        
+       
 <div class="bgtopo2">
   <!--container-->
   <div class="container">
@@ -73,7 +68,9 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
+            <?php if ($live->Program->id == "787" ): ?>  
             <span>NO AR</span>
+            <?php endif; ?>
           </div>
           <p>
             O Brasil passa por aqui.
@@ -91,7 +88,9 @@
           </div>
           <div class="live-image">
            <img src="http://midia.cmais.com.br/programs/6c50d7937cd92a91939f94c3ef10aee1b2e06e47.jpg" alt="Cartão Verde">
+           <?php if ($live->Program->id == "787" ): ?>  
            <span>NO AR</span>
+           <?php endif; ?>
           </div>
           <p>
             Futebol discutido com inteligência<br> e bom humor.
