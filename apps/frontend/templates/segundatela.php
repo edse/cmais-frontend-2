@@ -12,7 +12,7 @@
     <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
         
     <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap-2.min.js" type="text/javascript"></script>
     
     <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
     
