@@ -97,6 +97,11 @@
     <!-- /direita -->
   </div>
 
+  <audio id="audio-ping">
+    <source src="audio/ping.mp3" />
+    <source src="audio/ping.ogg" />
+  </audio>
+
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
   <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
   <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
