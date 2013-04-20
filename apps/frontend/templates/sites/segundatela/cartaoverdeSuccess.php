@@ -34,10 +34,6 @@
       </div>
     </div>
     
-   
-    
-    
-    
     <div class="col-dir">
       <div id="box-clock" style="display: block;">
         <div id="no-ar">
@@ -97,45 +93,25 @@
     <!-- /direita -->
   </div>
 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js?a"></script>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>    
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela.js?nocache=<?php echo time()?>"></script>
+  <audio id="audio-ping">
+    <source src="/portal/audio/ping.mp3" />
+    <source src="/portal/audio/ping.ogg" />
+  </audio>
+
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
+  <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
+  <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
+  <script type="text/javascript" src="/portal/js/json2.js"></script>
+  <script type="text/javascript" src="/portal/js/segundatela/secondscreenjornaldacultura/app.js?nocache=<?php echo time()?>"></script>
   <script>
     $(document).ready(function() {
-    // Create two variable with the names of the months and days in an array
-    var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
-    var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-    
-    // Create a newDate() object
-    var newDate = new Date();
-    // Extract the current date from Date object
-    newDate.setDate(newDate.getDate());
-    // Output the day, date, month and year    
-    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
-    
-    setInterval( function() {
-      // Create a newDate() object and extract the seconds of the current time on the visitor's
-      var seconds = new Date().getSeconds();
-      // Add a leading zero to seconds value
-      $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
-      },1000);
-      
-    setInterval( function() {
-      // Create a newDate() object and extract the minutes of the current time on the visitor's
-      var minutes = new Date().getMinutes();
-      // Add a leading zero to the minutes value
-      $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
-        },1000);
-      
-    setInterval( function() {
-      // Create a newDate() object and extract the hours of the current time on the visitor's
-      var hours = new Date().getHours();
-      // Add a leading zero to the hours value
-      $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
-        }, 1000);
-      
+      setInterval( function() {
+        var minutes = new Date().getMinutes();
+        $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+          },1000);
+      setInterval( function() {
+        var hours = new Date().getHours();
+        $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+          }, 1000);
     });
-      </script>
-      
-      
+ </script>
