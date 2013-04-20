@@ -36,6 +36,10 @@ $(document).ready(function() {
       $('#tryin-p').show();
       startClock();
       $('#users').hide();
+      
+      $('.offline').show();
+      $('.online').css('display', 'none');
+      
       return $('#status a').removeClass("btn-success").addClass('btn-danger').html('disconnected');
     };
 
@@ -43,6 +47,8 @@ $(document).ready(function() {
       clearInterval(fakeInterval);
       $('#tryin-p').hide();
       $('#users').show();
+      $('.offline').hide();
+      $('.online').show();
       return $('#status a').removeClass("btn-danger").addClass('btn-success').html('connected');
     };
     
