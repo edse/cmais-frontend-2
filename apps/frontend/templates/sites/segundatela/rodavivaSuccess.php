@@ -98,8 +98,8 @@
   </div>
 
   <audio id="audio-ping">
-    <source src="audio/ping.mp3" />
-    <source src="audio/ping.ogg" />
+    <source src="/portal/audio/ping.mp3" />
+    <source src="/portal/audio/ping.ogg" />
   </audio>
 
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
