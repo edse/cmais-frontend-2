@@ -345,7 +345,7 @@
       </div>
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura">Tweet</a>-->
     </div>
-    <!-- /curtir -->
+    <!-- /curtir --> 
     <p>
     <legend>
     Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!
