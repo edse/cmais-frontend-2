@@ -79,7 +79,7 @@
         </a>
       </div>
       <!--/item-->
-      <!--item-->
+      <!--item--> 
       <div class="span4 item">
         <a href="http://cmais.com.br/segundatela/cartaoverde" target="_blank>
           <div class="logo-programa">
