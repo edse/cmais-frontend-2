@@ -37,7 +37,7 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
                   -->
-                  
+                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px">Atenção: as incrições vão até o dis 23/04/2013</div>
                   
                   <!-- mensagens de status -->
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
@@ -62,7 +62,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Você possui inscrição ativa como aluno em nosso banco de dados, não é possível atuar como tutor!</p>
+                      <p>Não é possível atuar como tutor se você possuir inscrição ativa como aluno em nosso banco de dados, ou se estiver atualmente em exercício como professor de sala de aula na disciplina de Língua Portuguesa ou de Matemática no Ensino Fundamental dos Anos Finais da Rede Estadual de Ensino de São Paulo.</p>
                     </div>
                     <hr />
                   </div>

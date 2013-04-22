@@ -6,22 +6,11 @@ body { background:#fff; }
 #menu-portal-2 .busca-portal .ipt-submit { width:23px; }
 ul, ol {  margin:0;}
 p { font-size: 14px; }
-@font-face {
-    font-family: 'InterstateRegular';
-    src: url('/portal/css/fontes/interstate/interstate-extralight-webfont.eot');
-    src: url('/portal/css/fontes/interstate/interstate-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/interstate/interstate-extralight-webfont.woff') format('woff'),
-         url('/portal/css/fontes/interstate/interstate-extralight-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/interstate/interstate-extralight-webfont.svg#InterstateRegular') format('svg');
-    font-weight: bold;
-    font-style: bold;
-
-}
 a:hover,
 a { color:#333; }
 
 .cursos-livres,
-.titulos {font-family:"InterstateRegular", Arial, Helvetica, sans-serif; color:#686868;}
+.titulos {font-family:'Roboto', sans-serif; color:#686868;}
 .titulos.grd { font-size:32px; line-height:32px; margin-bottom:15px; }
 .span10 { width:970px; }
 .input-xlarge { width:300px; }
@@ -36,8 +25,8 @@ input, textarea, select, .uneditable-input { border-radius:0; }
 
 .capa { margin-top:70px; }
 .bg-site { background:url(/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; margin-top:3px; }
-#barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left;  }
-.titulos { font-size:22px; margin-bottom:10px; text-align:left;}
+#barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left; font-weight:normal;  }
+.titulos { font-size:22px; margin-bottom:10px; text-align:left; font-weight:normal;}
 #capa-site { margin-top:-586px !important; }
 .box-destaque { margin:45px 0; border: solid 5px #ccc; width:955px; clear:both; }
 .carrossel { margin:0; clear: both; text-align:left; width:970px;}

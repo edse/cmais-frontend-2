@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link rel="stylesheet" href="/portal/univesptv/css/cursos.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <!-- /BOOTSTRAP CSS -->
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 <script src="/portal/js/bootstrap/bootstrap.min.js"></script>

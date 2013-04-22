@@ -251,23 +251,41 @@ class mainActions extends sfActions
     elseif(($param1 == "cmais")&&($param2 == "segundatela")&&($param3 == "jornaldacultura")&&($param4 != "")){
       $date = date("d-m-Y");
       if($param4 == $date){
-        $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "online");
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "online");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2331);
       }else{
-        $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "offline");
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "offline");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2330);
       }
       $this->getRequest()->setParameter('object', $section);
       $this->forward('_section', 'index');
       die();
-      /*
-      $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, $param4);
-      if($section){
-        $this->getRequest()->setParameter('object', $section);
-        $this->forward('_section', 'index');
+    }
+    elseif(($param1 == "cmais")&&($param2 == "segundatela")&&($param3 == "rodaviva")&&($param4 != "")){
+      $date = date("d-m-Y");
+      if($param4 == $date){
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "online");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2371);
       }else{
-        die(date("d-m-Y"));
-        $this->forward404();
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "offline");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2373);
       }
-      */
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
+      die();
+    }
+    elseif(($param1 == "cmais")&&($param2 == "segundatela")&&($param3 == "cartaoverde")&&($param4 != "")){
+      $date = date("d-m-Y");
+      if($param4 == $date){
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "online");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2374);
+      }else{
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1188, "offline");
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2375);
+      }
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
+      die();
     }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){

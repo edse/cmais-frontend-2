@@ -13,7 +13,7 @@
 .navbar-fixed-top .nav > .twitter > a { background-position:0 -372px; }
 .navbar-fixed-top .nav > .youtube > a { background-position:0 -405px; }
 .navbar-fixed-top .nav > .feed > a { background-position:0 -472px; }
-.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
+/*.navbar.navbar-fixed-top .navbar-inner .container { min-width:320px; }*/
 .navbar.navbar-fixed-top .navbar-inner .container,
 .navbar.navbar-fixed-top .navbar-inner {    background-color: #1B1B1B;    background-image: -moz-linear-gradient(center top , #222222, #111111);    background-repeat: repeat-x;    border-color: #252525;   }
 /* /topo*/
@@ -42,6 +42,11 @@
   #footer .span2.logo { width:7%; }
   #footer .container { padding:0 2%; }
 }
+/*
+@media screen and (max-width: 980px){
+  .nav-collapse{width: 174px;margin: 0 auto;}
+  .navbar-inverse .nav > li > a {float:left;}
+}
 
 @media screen and (max-width: 980px){
   #footer .span2 { width:19%;  }
@@ -54,9 +59,13 @@
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus { background:none !important;  }
   .navbar-inverse .nav-collapse .nav > li > a:hover { text-decoration: underline; }
+  .nav-collapse .nav > li > a{text-align:right}
 }
+*/
 
 @media screen and (max-width: 768px){
+ .nav-collapse{width: 174px;margin: 0 auto;}
+ .navbar-inverse .nav > li > a {float:left;} 
  #footer .span2 { width:33%;  } 
 }
 /* rodape*/

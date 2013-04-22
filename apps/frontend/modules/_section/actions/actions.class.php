@@ -73,12 +73,10 @@ class _sectionActions extends sfActions
           $this->setLayout('segundatela');
       }
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home2") {
-        $this->setLayout('responsivo');   
-       
+        $this->setLayout('responsivo');
       }
       if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
-        $this->setLayout('responsivo');   
-       
+        $this->setLayout('responsivo');
       }
       
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
@@ -678,7 +676,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a')
@@ -1127,7 +1125,6 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
       */
- 
       $this->date = @end(explode("/", $this->url)); 
     }
     

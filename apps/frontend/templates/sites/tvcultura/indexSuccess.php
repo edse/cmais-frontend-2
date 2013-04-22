@@ -32,11 +32,14 @@
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
+      <link rel="stylesheet" href="/portal/css/tvcultura/sites/home-madmen.css" type="text/css" />
+      <div class="detalhe esq"></div>
+      <div class="detalhe dir"></div>
       <?php
-	if ((isset($displays["destaque-principal"])) && (count($displays["destaque-principal"]) > 0))
-		include_partial_from_folder('blocks', 'global/display3c', array('displays' => $displays["destaque-principal"]));
-	else
-		include_partial_from_folder('blocks', 'global/display5c-v2', array('displays' => $displays["destaque-principal-2"]));
+  if ((isset($displays["destaque-principal"])) && (count($displays["destaque-principal"]) > 0))
+    include_partial_from_folder('blocks', 'global/display3c', array('displays' => $displays["destaque-principal"]));
+  else
+    include_partial_from_folder('blocks', 'global/display5c-v2', array('displays' => $displays["destaque-principal-2"]));
       ?>
 
       <!-- CAPA -->
@@ -87,7 +90,7 @@
           <div class="box-publicidade grid1">
             <!-- home-geral300x250 -->
             <script type='text/javascript'>
-				GA_googleFillSlot("tvcultura-homepage-300x250");
+        GA_googleFillSlot("tvcultura-homepage-300x250");
 
             </script>
           </div>
@@ -112,19 +115,19 @@
           </div>
           <!-- /BOX PADRAO Noticia -->
           <?php /*
-			 <!-- BOX PADRAO + Visitados -->
-			 <div class="box-padrao mais-visitados grid1">
-			 <div class="topo">
-			 <span></span>
-			 <div class="capa-titulo">
-			 <h4>+ visitados</h4>
-			 </div>
-			 </div>
-			 <?php // if(isset($displays["destaque-mais-visitados"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-mais-visitados"]))
-			 ?>
-			 </div>
-			 <!-- /BOX PADRAO + Visitados -->
-			 */
+       <!-- BOX PADRAO + Visitados -->
+       <div class="box-padrao mais-visitados grid1">
+       <div class="topo">
+       <span></span>
+       <div class="capa-titulo">
+       <h4>+ visitados</h4>
+       </div>
+       </div>
+       <?php // if(isset($displays["destaque-mais-visitados"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-mais-visitados"]))
+       ?>
+       </div>
+       <!-- /BOX PADRAO + Visitados -->
+       */
  ?> <?php if(isset($displays["destaque-para-ouvir"])):
         ?>
         <?php if(count($displays["destaque-para-ouvir"]) > 0 ):

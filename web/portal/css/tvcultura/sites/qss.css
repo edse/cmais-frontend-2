@@ -20,6 +20,7 @@ body {background: black;}
 #capa-site .redes .curtir {width: 218px;float: left;margin-left: 0;text-align: left;}
 #capa-site label,
 #capa-site p{font-size:20px; color:#FFFFFF; font-family:'source_sans_proregular', Arial, Helvetica, sans-serif; text-align:left; margin:20px 0 0 0;}
+#capa-site p { float:left; }
 #enviar{cursor: pointer;background: red;border: none;padding: 6px;float: left;font-size: 14px;color: #FFF;margin: 10px}
 #email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
 label.error{position: absolute;bottom: -10px;color: red;}
@@ -28,7 +29,7 @@ label.error{position: absolute;bottom: -10px;color: red;}
 #form-contato { float:left; margin-bottom:50px; width: 800px; }
 #enviar {clear: both;    float: right;    margin: 2%; }
 .span8 { width: 97% }
-.span6 { width: 73% }
+.span6 { width: 72% }
 .span4 { width: 47% }
 .span2 { width: 22% }
 .span3 { width: 30.8% }
@@ -40,9 +41,10 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .regulamento { float:left; margin-top:20px; }
 h1,
 .regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left;  }
+#form-contato textarea { margin-top:5px; }
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
 .span6.concordo input { width:15px !important; margin-right:5px; }
 #ytdContainer-2001 iframe { background:#fbfbfb; margin:20px 0 50px 0; }
-
+#form-contato fieldset { border: 1px solid #fff; padding:20px; }
 
