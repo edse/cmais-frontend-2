@@ -71,7 +71,7 @@
             <span>NO AR</span>
             <?php endif; ?>
           </div>
-          <p>
+          <p> 
             O Brasil passa por aqui.
             <br>
             Segunda às 22h 
