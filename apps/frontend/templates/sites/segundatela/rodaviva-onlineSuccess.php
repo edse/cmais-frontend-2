@@ -55,7 +55,7 @@
           <li><p class="offline">Desconectado</p></li>
           </ul>
       </div>
-    </div>
+    </div> 
   </div>
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
@@ -69,10 +69,14 @@
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-      <div class="box first">
-          <h2>Câmera do Caruso</h2>
-          <iframe width="300" height="213" src="http://www.youtube.com/embed/cJ2ne2qUTww?rel=0" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <?php if(isset($displays['camera-caruso'])):?> 
+          <?php if(count($displays['camera-caruso']) > 0): ?>
+            <div class="box first">
+                <h2><?php echo $displays['camera-caruso'][0]->Block->getTitle() ?></h2>
+                <iframe width="300" height="213" src="http://www.youtube.com/embed/<?php echo html_entity_decode($displays['camera-caruso'][0]->getHtml()); ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+         <?php endif; ?>
+      <?php endif; ?>
       <div class="box">
         <h2>Redes Sociais</h2>
         <!-- abas -->

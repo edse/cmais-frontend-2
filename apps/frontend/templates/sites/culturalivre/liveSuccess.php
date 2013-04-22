@@ -68,7 +68,7 @@
           
           <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
  
-          <!-- barra compartilhar -->
+          <!-- barra compartilhar --> 
           <div class="box-compartilhar grid2">
             <a href="javascript:;" class="comentar" style="display:block"><span></span>Comentários</a>
             <div class="btn-compartilhar" style="width: auto;">
