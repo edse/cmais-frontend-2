@@ -62,7 +62,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Você possui inscrição ativa como aluno em nosso banco de dados, não é possível atuar como tutor!</p>
+                      <p>Não é possível atuar como tutor se você possuir inscrição ativa como aluno em nosso banco de dados, ou se estiver atualmente em exercício como professor de sala de aula na disciplina de Língua Portuguesa ou de Matemática no Ensino Fundamental dos Anos Finais da Rede Estadual de Ensino de São Paulo.</p>
                     </div>
                     <hr />
                   </div>

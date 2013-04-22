@@ -15,7 +15,7 @@
                       <g:plusone size="medium" count="false"></g:plusone>
                     </div>
                     <div style="display:block; float: left; margin-right: 0px;">
-                      <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+                      <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="120"></fb:like>
                     </div>
                     <div style="display:block; float: left; text-align: left; margin-left: 10px;">
                       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>

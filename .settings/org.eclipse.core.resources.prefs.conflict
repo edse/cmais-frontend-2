@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+#Thu Apr 18 19:55:34 BRT 2013
+eclipse.preferences.version=1
+encoding//apps/frontend/templates/sites/cacadoresdemitos/index2Success.php=UTF-8
+encoding//apps/frontend/templates/sites/cocorico/tvcocoricoSuccess2.php=UTF-8
+encoding//apps/frontend/templates/sites/qss/inscricao-segunda-etapaSuccess.php.old=UTF-8
+=======
+eclipse.preferences.version=1
+encoding//apps/frontend/templates/sites/cacadoresdemitos/index2Success.php=UTF-8
+encoding//apps/frontend/templates/sites/cocorico/tvcocoricoSuccess2.php=UTF-8
+>>>>>>> 120dec16699af1a05388dd7c1e03ca1e62918fbd
+encoding//apps/frontend/templates/sites/quintaldacultura/jogoSuccess.php=UTF-8
+encoding//apps/frontend/templates/sites/sic/indexSuccess.php=UTF-8
+encoding//apps/frontend/templates/sites/univesptv/indexSuccess.php=UTF-8
+encoding//web/portal/css/tvcultura/sites/qss.css=UTF-8

@@ -1,3 +1,8 @@
+.accordion{
+  height: auto !important;
+  overflow: visible;
+}
+
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
