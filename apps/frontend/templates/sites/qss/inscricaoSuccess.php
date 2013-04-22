@@ -347,13 +347,13 @@
     </div>
     <!-- /curtir --> 
     <p>
-    <legend>
-    Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!
-    Com João Victor e Gabriela França no comando, o programa de perguntas e respostas foi criado para despertar o interesse e a participação do público. O vencedor dependerá de conhecimento, estratégia e da sorte para acertar as questões de múltipla escolha e levar os prêmios para casa!
-    Quem participar do programa irá se enfrentar em três fases distintas: na 1ª e 2ª fases, serão perguntas sobre diversos temas (Ciências, Cinema e TV, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Ao fim dessa etapa, dois participantes são eliminados e dois seguem para o duelo final.
-    Aí, eles respondem, cada um, a três perguntas sobre temas relacionados a programas da TV Cultura. Vence quem acumular a maior quantidade Eurekas, os pontos do jogo.
+    <class style="font-color: #000000;">
+    Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!<br>
+    Com João Victor e Gabriela França no comando, o programa de perguntas e respostas foi criado para despertar o interesse e a participação do público. O vencedor dependerá de conhecimento, estratégia e da sorte para acertar as questões de múltipla escolha e levar os prêmios para casa!<br>
+    Quem participar do programa irá se enfrentar em três fases distintas: na 1ª e 2ª fases, serão perguntas sobre diversos temas (Ciências, Cinema e TV, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Ao fim dessa etapa, dois participantes são eliminados e dois seguem para o duelo final.<br>
+    Aí, eles respondem, cada um, a três perguntas sobre temas relacionados a programas da TV Cultura. Vence quem acumular a maior quantidade Eurekas, os pontos do jogo.<br>
     E você pode ser um desses participantes! Basta preencher o formulário abaixo e, se quiser, enviar um vídeo para a gente contando porque você quer participar do QSS!
-    </legend>
+    </style>
     </p>
     
       
