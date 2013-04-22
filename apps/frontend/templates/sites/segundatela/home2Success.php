@@ -47,7 +47,7 @@
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
 
-          <?php if ($live->Program->id == "787" ): ?>  
+          <?php if ($live->Program->id == "2" ): ?>  
             <span>NO AR</span>
           <?php endif; ?>
 
@@ -68,7 +68,7 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
-            <?php if ($live->Program->id == "787" ): ?>  
+            <?php if ($live->Program->id == "75" ): ?>  
             <span>NO AR</span>
             <?php endif; ?>
           </div>
@@ -88,7 +88,7 @@
           </div>
           <div class="live-image">
            <img src="http://midia.cmais.com.br/programs/6c50d7937cd92a91939f94c3ef10aee1b2e06e47.jpg" alt="Cartão Verde">
-           <?php if ($live->Program->id == "787" ): ?>  
+           <?php if ($live->Program->id == "77" ): ?>  
            <span>NO AR</span>
            <?php endif; ?>
           </div>
