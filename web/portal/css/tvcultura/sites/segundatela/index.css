@@ -33,6 +33,7 @@ ul.nav{margin-left: 23%!important;}
 }
 /* tablet de pé */
 @media (min-width: 1024px) { 
+  .nav-collapse .nav > li{float:left;}
   .item .live-image span{position:absolute;}
   .span3.item{min-height:320px!important;}
   .span4.item{min-height:350px!important;}
@@ -42,6 +43,8 @@ ul.nav{margin-left: 23%!important;}
 
 /* tablet to landscape */
 @media (min-width: 768px) and (max-width: 979px) {
+  .nav-collapse .nav {margin:0 auto!important; width:174px!important;}
+  .nav-collapse .nav > li{float:left;}
   .item .live-image span{position:absolute;}
   .span3.item{min-height:300px!important;}
   .span4.item{min-height:310px!important;}
