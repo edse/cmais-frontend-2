@@ -55,7 +55,7 @@
           <li><p class="offline">Desconectado</p></li>
           </ul>
       </div>
-    </div> 
+    </div>
   </div>
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
