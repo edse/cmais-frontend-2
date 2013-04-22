@@ -17,7 +17,7 @@
     <div class="bgtopo3"></div> 
     <!-- topo-pg -->
     <div class="hero-unit">
-      <div class="bgtopo"></div>
+      <div class="bgtopo"></div>     
       <div class="col-esq">
         <h1>SEGUNDA TELA</h1>
         <p>Informações extras e pontos importantes,<br> em tempo real na programação da Cultura</p>
