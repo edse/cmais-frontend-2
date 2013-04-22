@@ -402,7 +402,7 @@
       
       <label class="span8 concordo">Regulamento:<br>
         <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px; display: none;" /><?php include('regulamento.txt'); ?></textarea>
-        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javacript;" id="btn-regulamento">regulamento</a>
+        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javacript:;" id="btn-regulamento">regulamento</a>
       </label>
       <hr>
       <div id="captchaimage">
