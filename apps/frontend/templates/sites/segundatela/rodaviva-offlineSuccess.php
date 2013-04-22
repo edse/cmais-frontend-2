@@ -69,10 +69,7 @@
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-      <div class="box first">
-          <h2>Câmera do Caruso</h2>
-          <iframe width="300" height="213" src="http://www.youtube.com/embed/cJ2ne2qUTww?rel=0" frameborder="0" allowfullscreen></iframe>
-      </div>
+      
       <div class="box">
         <h2>Redes Sociais</h2>
         <!-- abas -->
