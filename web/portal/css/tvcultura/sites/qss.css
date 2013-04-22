@@ -52,4 +52,4 @@ h1,
 .concordo a { text-decoration:underline; }
 #form-contato legend,
 #form-contato legend h1 { margin-bottom:0; }
-
+#form-contato legend { overflow:hidden; }
