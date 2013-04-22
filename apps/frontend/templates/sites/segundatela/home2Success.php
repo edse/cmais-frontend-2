@@ -46,7 +46,7 @@
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
 
-          <?php if ($live->Program->id == "67" ): ?>  
+          <?php if ($live->Program->id == "2" ): ?>  
             <span>NO AR</span>
           <?php endif; ?>
 
@@ -61,7 +61,7 @@
       <!--/item--> 
       <!--item-->
       <div class="span4 item">
-        <a href="http://cmais.com.br/segundatela/rodaviva">
+        <a href="http://cmais.com.br/segundatela/rodaviva" target="_blank>
           <div class="logo-programa">
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
           </div>
@@ -81,7 +81,7 @@
       <!--/item-->
       <!--item-->
       <div class="span4 item">
-        <a href="http://cmais.com.br/segundatela/cartaoverde">
+        <a href="http://cmais.com.br/segundatela/cartaoverde" target="_blank>
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/fb83d5f012d0b874aaa1fa535b9317d3e3131848.png">
           </div>
