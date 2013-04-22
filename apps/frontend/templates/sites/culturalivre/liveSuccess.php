@@ -65,7 +65,7 @@
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
           <h3><?php echo $section->getTitle() ?></h3>
-          
+           
           <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
  
           <!-- barra compartilhar --> 
