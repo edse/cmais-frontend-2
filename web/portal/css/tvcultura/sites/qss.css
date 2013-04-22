@@ -18,6 +18,7 @@ body {background: black;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
 #capa-site .redes {position: relative;bottom: 40px;left: 97px;}
 #capa-site .redes .curtir {width: 218px;float: left;margin-left: 0;text-align: left;}
+.concordo a,
 #capa-site label,
 #capa-site p{font-size:20px; line-height:26px; color:#FFFFFF; font-family:'source_sans_proregular', Arial, Helvetica, sans-serif; text-align:left; margin:20px 0 0 0;}
 #capa-site p { float:left; }
@@ -40,7 +41,7 @@ label.error { color:red !important; font-size: 12px !important;    margin-top: 5
 .checked { display:none !important; }
 .regulamento { float:left; margin-top:20px; }
 h1,
-.regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left;  }
+.regulamento h1 { font-size:24px; color:#fff; text-align:left; float:left; margin-bottom:20px;  }
 #form-contato textarea { margin-top:5px; }
 .regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
 .regulamento button { float: right;    margin: 2%;   }
