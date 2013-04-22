@@ -58,7 +58,7 @@
             Segunda a sábado, às 21h
           </p>
         </a>
-      </div>
+      </div> 
       <!--/item--> 
       <!--item-->
       <div class="span4 item">
