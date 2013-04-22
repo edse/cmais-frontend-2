@@ -20,7 +20,7 @@
     <div class="hero-unit">
       <div class="bgtopo"></div>
       <div class="col-esq">
-        <h1>SEGUNDA TELA</h1>
+        <h1>SEGUNDA TELA - 2T</h1>
         <p>Informações extras e pontos importantes,<br> em tempo real na programação da Cultura</p>
         <div class="redes">
           <div class="gplus">
@@ -33,7 +33,7 @@
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
     <!--/topo-pg-->
     <!--corpo-->
@@ -58,7 +58,7 @@
             Segunda a sábado, às 21h
           </p>
         </a>
-      </div>
+      </div> 
       <!--/item--> 
       <!--item-->
       <div class="span4 item">
