@@ -347,63 +347,59 @@
     </div>
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
-      <br>
       <h1>Quer participar do QSS?</h1>
-      <!--h1>2º Passo: Preencha o formulário abaixo com os seus dados.</h1-->
-      <br>
-      <br>
-      <br>
-      <p>Preencha os seus dados:</p>
-      <br>      
-      <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
-      <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
-      <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="<?php echo $_REQUEST['participanteEndereco'] ?>" /></label>
-      <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="<?php echo $_REQUEST['participanteBairro'] ?>" /></label>
-      <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
-      <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
-      <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
-      <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf /></label>
-      <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento /></label>
-      <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone /></label>
-      <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
-      <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
-      <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
-      <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
-      <label class="span8">Você tem todas as condições de saúde para participar do programa?</label>
-      <br />
-      <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
-      <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
-      </label>
-      <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?
-        <input type="text" name="participanteSaudeRestricoes" id="participanteSaudeRestricoes" />
-      </label>
-      <br>
-      <br>
-      <p>Na 3ª fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
-      <br>
-      <br>
-      <p>Preencha os dados do seu amigo:</p>
-      <br>
-      <br>
-      <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
-      <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
-      <label class="span8">Endereço: <input type="text" name="videoconferenciaEndereco" id="videoconferenciaEndereco" /></label>
-      <label class="span6">Bairro: <input type="text" name="videoconferenciaBairro" id="videoconferenciaBairro" /></label>
-      <label class="span2">CEP: <input type="text" name="videoconferenciaCep" id="videoconferenciaCep" class="cep" /></label>
-      <label class="span6">Cidade: <input type="text" name="videoconferenciaCidade" id="videoconferenciaCidade" /></label>
-      <label class="span2">RG: <input type="text" maxlength="20" name="videoconferenciaRg" id="videoconferenciaRg" /></label>
-      <label class="span4">CPF: <input type="text" name="videoconferenciaCpf" id="videoconferenciaCpf" class="cpf" /></label>
-      <label class="span4">Data de nascimento: <input type="text" name="videoconferenciaNascimento" id="videoconferenciaNascimento" class="nascimento" /></label>
-      <label class="span4">Telefone para contato: <input type="text" name="videoconferenciaTelefone" id="videoconferenciaTelefone" class="telefone" /></label>
-      <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
-      <br>
-      <br>
-      <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS! (Opcional)</p>
-      
-      <a id="callToActionId-2001" href="javascript:void(0);">
+      <fieldset>
+        <legend>Participante</legend>
+        <p>Preencha os seus dados:</p>
+        <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
+        <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
+        <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="<?php echo $_REQUEST['participanteEndereco'] ?>" /></label>
+        <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="<?php echo $_REQUEST['participanteBairro'] ?>" /></label>
+        <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
+        <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
+        <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
+        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf /></label>
+        <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento /></label>
+        <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone /></label>
+        <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
+        <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
+        <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
+        <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
+        <label class="span8">Você tem todas as condições de saúde para participar do programa?</label>
+        <br />
+        <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
+        <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
+        </label>
+        <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?
+          <input type="text" name="participanteSaudeRestricoes" id="participanteSaudeRestricoes" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>3ª fase</legend>
+        <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
+        <p>Preencha os dados do seu amigo:</p>
+        <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
+        <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
+        <label class="span8">Endereço: <input type="text" name="videoconferenciaEndereco" id="videoconferenciaEndereco" /></label>
+        <label class="span6">Bairro: <input type="text" name="videoconferenciaBairro" id="videoconferenciaBairro" /></label>
+        <label class="span2">CEP: <input type="text" name="videoconferenciaCep" id="videoconferenciaCep" class="cep" /></label>
+        <label class="span6">Cidade: <input type="text" name="videoconferenciaCidade" id="videoconferenciaCidade" /></label>
+        <label class="span2">RG: <input type="text" maxlength="20" name="videoconferenciaRg" id="videoconferenciaRg" /></label>
+        <label class="span4">CPF: <input type="text" name="videoconferenciaCpf" id="videoconferenciaCpf" class="cpf" /></label>
+        <label class="span4">Data de nascimento: <input type="text" name="videoconferenciaNascimento" id="videoconferenciaNascimento" class="nascimento" /></label>
+        <label class="span4">Telefone para contato: <input type="text" name="videoconferenciaTelefone" id="videoconferenciaTelefone" class="telefone" /></label>
+        <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Vídeo (opcional)</legend>
+        <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS! (Opcional)</p>
+        <a id="callToActionId-2001" href="javascript:void(0);">
         <p id="enviar">Fazer upload (opcional)</p>
+        <div id="ytdContainer-2001"></div> 
       </a>
-      <div id="ytdContainer-2001"></div> 
+      </fieldset>
+      
+      
       
       <label class="span8">Regulamento:<br>
         <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px" /><?php include('regulamento.txt'); ?></textarea>
