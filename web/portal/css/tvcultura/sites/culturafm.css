@@ -502,3 +502,4 @@ h3.tit-pagina { margin-bottom:0; }
 
 /** /RADIO FM  **/
 em{font-style:oblique !important;}
+#menuFloat { *display:none; }

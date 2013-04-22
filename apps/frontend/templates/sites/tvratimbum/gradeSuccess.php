@@ -152,7 +152,7 @@
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="" class="enunciado">Folhinha 2012</a>
+              <a href="" class="enunciado">Calendário</a>
             </div>
             <div id="datepicker"></div>
             <!--<span class="picote"></span>

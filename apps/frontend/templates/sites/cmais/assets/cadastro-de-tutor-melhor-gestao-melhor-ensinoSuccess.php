@@ -62,7 +62,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Você possui inscrição ativa como aluno em nosso banco de dados, não é possível atuar como tutor!</p>
+                      <p>Não é possível atuar como tutor se você possuir inscrição ativa como aluno em nosso banco de dados, ou se estiver atualmente em exercício como professor de sala de aula na disciplina de Língua Portuguesa ou de Matemática no Ensino Fundamental dos Anos Finais da Rede Estadual de Ensino de São Paulo.</p>
                     </div>
                     <hr />
                   </div>
@@ -200,7 +200,44 @@
                       <label><input type="radio" name="fpavinculo" id="nao2" value="nao" />Não</label>
                     </div>
 
+                    <!--span class="linhaFundo"></span--> 
+                    
+                    <p class="pergunta">Possui experiência com coordenação de tutoria online?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="exp_coord_tutoria" id="sim3" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="exp_coord_tutoria" id="nao3" value="nao" />Não</label>
+                    </div>
+                    
                     <!--span class="linhaFundo"></span-->
+                    
+                    <p class="pergunta">Esta atuando como Supervisor de Ensino da rede pública estadual de São Paulo?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="atuacao_sup" id="sim4" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="atuacao_sup" id="nao4" value="nao" />Não</label>
+                    </div>
+                    
+                    <!--span class="linhaFundo"></span-->
+                    
+                     <p class="pergunta">Participou como cursista no encontro presencial realizado pela EFAP/CEGEB no Curso de Supervisores, de 01 a 04 de abril do ano de 2013, em Águas de Lindóia?</p>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="part_encontro" id="sim5" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      
+                      <label><input type="radio" name="part_encontro" id="nao5" value="nao" />Não</label>
+                    </div>
+                    
+                    <!--span class="linhaFundo"></span-->
+
 
                     <p class="enun">Local de Prova</p>
                     <div class="linha t2">
@@ -261,6 +298,7 @@
 
 
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
     <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
     
     <script type="text/javascript">
@@ -357,7 +395,8 @@
               minlength: 5
             },
             cpf:{
-              required: true
+              required: true,
+              verificaCPF: true
             },
             rg:{
               required: true
@@ -416,7 +455,19 @@
             fpavinculo:{
               required: true
             },
+            exp_coord_tutoria:{
+              required: true
+            },
             localdeprova:{
+              required: true
+            },
+            exp_coord_tutoria: {
+              required: true
+            },
+            atuacao_sup: {
+              required: true
+            },
+            part_encontro: {
               required: true
             },
             captcha: {

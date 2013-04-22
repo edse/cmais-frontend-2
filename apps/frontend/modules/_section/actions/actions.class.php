@@ -72,7 +72,10 @@ class _sectionActions extends sfActions
         if($this->section->getSlug() != "aovivo")
           $this->setLayout('segundatela');
       }
-      
+      if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home2") {
+        $this->setLayout('responsivo');   
+       
+      }
       if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');   
        
@@ -737,6 +740,8 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
                 $this->assetsQuery->orderBy('a.id desc');
+              else if(($this->site->getId() == 1135)&&($this->section->id == 2355))
+                $this->assetsQuery->orderBy('a.title asc');
               else if ($this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else
@@ -1122,6 +1127,7 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
       */
+ 
       $this->date = @end(explode("/", $this->url)); 
     }
     

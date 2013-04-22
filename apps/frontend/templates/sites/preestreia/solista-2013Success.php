@@ -724,7 +724,7 @@
                 <div class="linha t2">
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
-                    <option value="" selected="selected">--</option>
+                    <option value="">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -745,7 +745,7 @@
                 <div class="linha t2">
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1">
-                    <option value="" selected="selected">--</option>
+                    <option value="">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -766,7 +766,7 @@
                 <div class="linha t2">
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2">
-                    <option value="" selected="selected">--</option>
+                    <option value="">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -788,8 +788,8 @@
                             <!--Anexar Foto-->
               <div class="linha t7">
                 
-                <label>Anexar RG (se for menor de idade anexar o RG do responsável):</label>
-                <input type="file" name="new_rg" id="anexorg" />
+                <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG):</label>
+                <input type="file" name="new_photo" id="anexofoto" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -797,7 +797,7 @@
               <!--Anexar Foto-->
               <div class="linha t7">
                 
-                <label>Anexar foto(max 5mb)</label>
+                <label>Anexar foto(max 5mb)(Formato JPG):</label>
                 <input type="file" name="new_photo" id="anexofoto" />
                 
               </div>
@@ -1042,6 +1042,7 @@ $(document).ready(function(){
             $(this).attr("disabled","disabled");
         }
       });
+      $(this).find("option:selected").removeAttr('disabled', 'disabled')
     });
   });
       

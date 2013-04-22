@@ -1,3 +1,41 @@
+<script type="text/javascript">
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+//alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error || success)
+  {
+    $("#form-contato-conjunto").hide();
+    
+    if (success == "1")
+    {
+      $("#msgAcerto").show();
+      $("#msgErro").hide();
+    }
+    if (error == "1")
+    {
+      $("#msgErro").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "2")
+    {
+      $("#msgErro2").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "3")
+    {
+      $("#msgErro3").show();
+      $("#msgAcerto").hide();
+    }  
+    if (error == "4")
+    {
+      $("#msgErro4").show();
+      $("#msgAcerto").hide();
+    }  
+  }
+});
+</script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
@@ -77,31 +115,64 @@
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
             <p><?php echo $section->getDescription()?></p>
 
-              <!--Memsagem Erro-->
-              <div class="msgErro" style="display:none">
-                <span class="alerta"></span>
-                <div class="boxMsg">
-                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-                </div>
-                <hr />
-              </div>
-              <!--/mensagem Erro-->
-              
               <!--mensagem Acerto-->
-              <div class="msgAcerto" style="display:none">
+              <div id="msgAcerto" class="msgAcerto" style="display:none">
                 <span class="alerta"></span>
                 <div class="boxMsg">
-                  <p class="aviso">Mensagem enviada com sucesso!</p>
-                  <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                  <p class="aviso">Formulário enviado com sucesso!</p>
+                  <p>Obrigado por participar! Aguarde a seleção.</p>
                 </div>
                 <hr />
               </div>
               <!--/mensagem Acerto-->
+
+              <!--Mensagem Erro-->
+              <div id="msgErro" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Tente novamente mais tarde.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro-->
+
+              <!--Mensagem Erro2-->
+              <div id="msgErro2" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro2-->
+              
+              <!--Mensagem Erro3-->
+              <div id="msgErro3" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Verifique se o arquivo que você tentou enviar é menor que 15MB.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro3-->
+              
+              <!--Mensagem Erro4-->
+              <div id="msgErro4" class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">O formulário não pôde ser enviado.</p>
+                  <p>Esta inscrição já foi encerrada.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/mensagem Erro4-->
             
             <!--form-->  
-            <form id="form-contato-conjunto" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
-              
+            <form id="form-contato-conjunto" method="post" action="/actions/preestreia2013/conjunto-submit.php" enctype="multipart/form-data">
+              <input type="hidden" name="qtdeIntegrantes" id="qtdeIntegrantes" value="3" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               <input type="hidden" name="tipo" value="Conjunto" />
               
@@ -110,6 +181,15 @@
                 
                 <label>Nome do conjunto</label>
                 <input type="text" name="conjuntonome" id="conjuntonome" />
+              
+              </div>
+              <!--/Nome Conjunto-->
+              
+              <!--Nome Conjunto-->
+              <div class="linha t7">
+                
+                <label>E-mail do responsável:</label>
+                <input type="text" name="email" id="email" />
               
               </div>
               <!--/Nome Conjunto-->
@@ -340,7 +420,7 @@
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="new_photo_1" id="anexofoto_1" />
+               	<input type="file" name="datafile1" id="anexofoto" />
                </div>
                <!--/Anexar RG--->
               
@@ -550,7 +630,7 @@
                   <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo_2" id="anexofoto_2" />
+               <input type="file" name="datafile2" id="anexofoto_2" />
                </div>
                <!--/Anexar RG--->
 
@@ -757,7 +837,7 @@
                <!--Anexar RG--->
                <div class="linha t5">
                <label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               <input type="file" name="new_photo_3" id="anexofoto_3" />
+               <input type="file" name="datafile3" id="anexofoto_3" />
                </div>
                <!--/Anexar RG--->
 
@@ -818,6 +898,7 @@
                     if(i==max){
                       $("#adicionar").hide();
                     }
+                    $('#qtdeIntegrantes').val(i);
                     
                     var new_field = '<div id="container-'+i+'">';
                     new_field += '<!--Integrante-'+i+'-->';
@@ -994,7 +1075,7 @@
                     new_field += '<!--Anexar RG-'+i+'-->';
                     new_field += '<div class="linha t5">';
                     new_field += '<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>';
-                    new_field += '<input type="file" name="new_photo_'+i+'" id="anexofoto_'+i+'" />';
+                    new_field += '<input type="file" name="datafile'+i+'" id="anexofoto_'+i+'" />';
                     new_field += '</div>';
                     new_field += '<!--/Anexar RG-'+i+'-->';
     
@@ -1056,6 +1137,7 @@
                     }
 
                     i--;
+                    $('#qtdeIntegrantes').val(i);
                     
                     if(i < max){
                       $("#adicionar").show();
@@ -1073,7 +1155,7 @@
 
   
            <!--Sugestoes-->
-              <a href="javascript:;"class="t7 titulo repertorio">
+              <a href="javascript:;"class="t7 titulo repertorio conj-repertorio">
                 Repertório [Clique aqui]
               </a>
               
@@ -1367,7 +1449,7 @@
                   <label>Opção:</label><br />
                   <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
 
-                    <option value="" selected="selected">--</option>
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -1388,7 +1470,7 @@
                 <div class="linha t2">
                   <label>Opção:</label><br />
 					<select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1" >
-                    <option value="" selected="selected">--</option>
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -1408,15 +1490,15 @@
               <div class="linha">  
                 <div class="linha t2">
                   <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="2" >
-                    <option value="" selected="selected">--</option>
+                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2" >
+                    <option value="" >--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                    <option value="7">7</option>
+                    <option value="7">7</option> 
                     <option value="8">8</option>
                   </select>
                 </div>
@@ -1435,7 +1517,7 @@
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="new_photo" id="anexofoto" />
+            <input type="file" name="datafile9" id="anexofoto" />
             
           </div>
           <!--/Anexar Foto-->
@@ -1614,6 +1696,7 @@
 <!-- / CAPA SITE -->
 
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script type="text/javascript">
   $(document).ready(function(){
@@ -1660,8 +1743,10 @@
             $(this).attr("disabled","disabled");
         }
       });
+      $(this).find("option:selected").removeAttr('disabled', 'disabled');
     });
   });
+  
     
     var validator = $('#form-contato-conjunto').validate({
       /*
@@ -1772,6 +1857,10 @@
           required: true
         },
         email_1:{
+          required: true,
+          email: true
+        },
+         email:{
           required: true,
           email: true
         },
@@ -2165,9 +2254,22 @@
           required: true,
           minlength: 2
         },
-        new_photo:{
-          required: true
+        datafile1:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        datafile2:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        datafile3:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
         }
+        
       },
       messages:{
         conjuntonome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
@@ -2306,8 +2408,21 @@
         anexofoto: "Este campo &eacute; Obrigat&oacute;rio.",
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
-        regulamento: "Este campo &eacute; Obrigat&oacute;rio."
+        regulamento: "Este campo &eacute; Obrigat&oacute;rio.",
+        datafile1: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
+        datafile2: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
+        datafile3: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        }
       }, 
+      
       success: function(label){
         // set &nbsp; as text for IE
         label.html("&nbsp;").addClass("checked");

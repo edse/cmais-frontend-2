@@ -74,4 +74,30 @@ function getMimeType($file)
   return $mime_types[$extension];
 }
 
+function mimeTypeDenied ($fileMimeType,$mimeTypesAllowed) {
+  foreach($fileMimeType as $f) {
+    if(!in_array($f, $mimeTypesAllowed))
+      return true;
+  }
+  return false;
+}
+
+function fileSizeDenied ($fileSize,$maxFileSize) {
+  foreach($fileSize as $f) {
+    if($f > $maxFileSize)
+      return true;
+  }
+  return false;
+}
+
+
+function deleteAllFiles ($inputName,$qty) {
+  for($i=1; $i <= $qty; $i++) {
+    if(!unlink($_FILES[$inputName.$i]['tmp_name']))
+      return false;
+  }
+  return true;
+}
+
+
 ?>
