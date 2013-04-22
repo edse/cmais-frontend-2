@@ -19,7 +19,7 @@
     <div class="hero-unit">
       <div class="bgtopo"></div>
       <div class="col-esq">
-        <h1>SEGUNDA TELA - 2T</h1>
+        <h1>SEGUNDA TELA</h1>
         <p>Informações extras e pontos importantes,<br> em tempo real na programação da Cultura</p>
         <div class="redes">
           <div class="gplus">
@@ -39,7 +39,7 @@
     <div class="row-fluid">
       <!--item-->
       <div class="span4 item" style="margin-left:0px;">
-        <a href="http://cmais.com.br/segundatela/jornaldacultura">
+        <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
           </div>
