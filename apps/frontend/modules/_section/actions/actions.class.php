@@ -73,12 +73,10 @@ class _sectionActions extends sfActions
           $this->setLayout('segundatela');
       }
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home2") {
-        $this->setLayout('responsivo');   
-       
+        $this->setLayout('responsivo');
       }
       if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
-        $this->setLayout('responsivo');   
-       
+        $this->setLayout('responsivo');
       }
       
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
@@ -1127,7 +1125,6 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
       */
- 
       $this->date = @end(explode("/", $this->url)); 
     }
     
