@@ -150,7 +150,7 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
     expire:0,
     arrow:true,
     touchIcon: false,
-    message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+    message:'Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
   };
   </script>
   <script type="application/javascript" src="/portal/js/bubblemark/add2home.js"></script>
