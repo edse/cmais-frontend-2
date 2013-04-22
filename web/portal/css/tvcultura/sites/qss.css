@@ -50,5 +50,6 @@ h1,
 #ytdContainer-2001 iframe { background:#fbfbfb; margin:20px 0 50px 0; }
 #form-contato fieldset { border: 1px solid #fff; padding:20px; clear:both; margin-bottom:20px; }
 .concordo a { text-decoration:none; }
+#form-contato legend,
 #form-contato legend h1 { margin-bottom:0; }
 
