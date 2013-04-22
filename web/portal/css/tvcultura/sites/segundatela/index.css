@@ -15,7 +15,7 @@ ul.nav{margin-left: 23%!important;}
 .item p{text-align: left;padding-top:10px;margin-bottom:0px;}
 .item .logo-programa{width:193px;height:80px;margin:0 auto;}
 .item .live-image{position:relative;}
-.item .live-image span{bottom: -1px;left: 0;width: 100%;text-align: center;background: #ff6833;padding: 3px 0px;font-family: 'source_sans_proregular';font-size: 18px;color: #FFF;letter-spacing: 0.15em;}
+.item .live-image span{position:absolute;bottom: -1px;left: 0;width: 100%;text-align: center;background: #ff6833;padding: 3px 0px;font-family: 'source_sans_proregular';font-size: 18px;color: #FFF;letter-spacing: 0.15em;}
 .item a{color:#333333;}
 .span8 h2{font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;font-size: 18px;color: #FFF;background: #333333;text-align: left;padding: 5px;display: block;line-height: 18px;float: left;}
 .span8 p{clear:both;text-align:left;}
@@ -36,7 +36,7 @@ ul.nav{margin-left: 23%!important;}
   .nav-collapse .nav > li{float:left;}
   .item .live-image span{position:absolute;}
   .span3.item{min-height:320px!important;}
-  .span4.item{min-height:350px!important;}
+  .span4.item{min-height:350px!important;*height:350px!important}
   #footer{display:none;}
   ul.nav{margin-left: 22%!important;}
 }
