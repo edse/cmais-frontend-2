@@ -348,7 +348,6 @@
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
       <h1>Quer participar do QSS?</h1>
-      
       <fieldset>
         <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
@@ -359,7 +358,7 @@
         <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
         <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
         <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
-        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf /></label>
+        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf" /></label>
         <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento" /></label>
         <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone" /></label>
         <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
@@ -376,7 +375,7 @@
         </label>
       </fieldset>
       <fieldset>
-        <legend><h1>3ª fase</h1></legend>
+        <legend><h1>Indique um amigo</h1></legend>
         <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
         <p>Preencha os dados do seu amigo:</p>
         <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
@@ -392,21 +391,19 @@
         <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
       </fieldset>
       <fieldset>
-        <legend><h1>Vídeo (opcional)</h1></legend>
-        <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS! (Opcional)</p>
+        <legend><h1>Vídeo</h1></legend>
+        <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS!</p>
         <a id="callToActionId-2001" href="javascript:void(0);">
-        <p id="enviar">Fazer upload (opcional)</p>
+        <p id="enviar">Fazer upload</p>
         <div id="ytdContainer-2001"></div> 
       </a>
       </fieldset>
       
       
       
-      <label class="span8">Regulamento:<br>
+      <label class="span8 concordo">Regulamento:<br>
         <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px" /><?php include('regulamento.txt'); ?></textarea>
-      </label>
-      <label class="span6 concordo">
-        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o regulamento
+        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javacript;">regulamento</a>
       </label>
       <hr>
       <div id="captchaimage">
