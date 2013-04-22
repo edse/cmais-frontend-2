@@ -348,6 +348,7 @@
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
       <h1>Quer participar do QSS?</h1>
+      
       <fieldset>
         <legend>Participante</legend>
         <p>Preencha os seus dados:</p>
