@@ -348,8 +348,9 @@
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
       <h1>Quer participar do QSS?</h1>
+      
       <fieldset>
-        <legend>Participante</legend>
+        <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
         <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
         <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
@@ -375,7 +376,7 @@
         </label>
       </fieldset>
       <fieldset>
-        <legend>3ª fase</legend>
+        <legend><h1>3ª fase</h1></legend>
         <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
         <p>Preencha os dados do seu amigo:</p>
         <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
@@ -391,7 +392,7 @@
         <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
       </fieldset>
       <fieldset>
-        <legend>Vídeo (opcional)</legend>
+        <legend><h1>Vídeo (opcional)</h1></legend>
         <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS! (Opcional)</p>
         <a id="callToActionId-2001" href="javascript:void(0);">
         <p id="enviar">Fazer upload (opcional)</p>
