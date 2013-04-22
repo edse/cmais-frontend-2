@@ -1,3 +1,4 @@
+<meta http-equiv="pragma" content="no-cache" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
 
     <?php
@@ -10,8 +11,7 @@
       ->fetchOne();
     ?>
   
-            
-<div class="bgtopo2">
+  <div class="bgtopo2">
   <!--container-->
   <div class="container">
     <div class="bgtopo3"></div>
@@ -19,7 +19,7 @@
     <div class="hero-unit">
       <div class="bgtopo"></div>
       <div class="col-esq">
-        <h1>SEGUNDA TELA</h1>
+        <h1>SEGUNDA TELA - 2T</h1>
         <p>Informações extras e pontos importantes,<br> em tempo real na programação da Cultura</p>
         <div class="redes">
           <div class="gplus">
@@ -32,7 +32,7 @@
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
     <!--/topo-pg-->
     <!--corpo-->
@@ -46,7 +46,7 @@
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
 
-          <?php if ($live->Program->id == "787" ): ?>  
+          <?php if ($live->Program->id == "67" ): ?>  
             <span>NO AR</span>
           <?php endif; ?>
 
@@ -57,7 +57,7 @@
             Segunda a sábado, às 21h
           </p>
         </a>
-      </div>
+      </div> 
       <!--/item--> 
       <!--item-->
       <div class="span4 item">
@@ -67,12 +67,14 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
+            <?php if ($live->Program->id == "75" ): ?>  
             <span>NO AR</span>
+            <?php endif; ?>
           </div>
           <p>
             O Brasil passa por aqui.
             <br>
-            Segunda às 22h
+            Segunda às 22h 
           </p>
         </a>
       </div>
@@ -85,7 +87,9 @@
           </div>
           <div class="live-image">
            <img src="http://midia.cmais.com.br/programs/6c50d7937cd92a91939f94c3ef10aee1b2e06e47.jpg" alt="Cartão Verde">
+           <?php if ($live->Program->id == "77" ): ?>  
            <span>NO AR</span>
+           <?php endif; ?>
           </div>
           <p>
             Futebol discutido com inteligência<br> e bom humor.

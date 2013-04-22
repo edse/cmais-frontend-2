@@ -347,69 +347,62 @@
     </div>
     <!-- /curtir -->
     <form id="form-contato" method="post" action="">
-      <br>
       <h1>Quer participar do QSS?</h1>
-      <!--h1>2º Passo: Preencha o formulário abaixo com os seus dados.</h1-->
-      <br>
-      <br>
-      <br>
-      <p>Preencha os seus dados:</p>
-      <br>      
-      <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
-      <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
-      <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="<?php echo $_REQUEST['participanteEndereco'] ?>" /></label>
-      <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="<?php echo $_REQUEST['participanteBairro'] ?>" /></label>
-      <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
-      <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
-      <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
-      <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf /></label>
-      <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento /></label>
-      <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone /></label>
-      <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
-      <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
-      <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
-      <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
-      <label class="span8">Você tem todas as condições de saúde para participar do programa?</label>
-      <br />
-      <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
-      <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
-      </label>
-      <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?
-        <input type="text" name="participanteSaudeRestricoes" id="participanteSaudeRestricoes" />
-      </label>
-      <br>
-      <br>
-      <p>Na 3ª fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
-      <br>
-      <br>
-      <p>Preencha os dados do seu amigo:</p>
-      <br>
-      <br>
-      <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
-      <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
-      <label class="span8">Endereço: <input type="text" name="videoconferenciaEndereco" id="videoconferenciaEndereco" /></label>
-      <label class="span6">Bairro: <input type="text" name="videoconferenciaBairro" id="videoconferenciaBairro" /></label>
-      <label class="span2">CEP: <input type="text" name="videoconferenciaCep" id="videoconferenciaCep" class="cep" /></label>
-      <label class="span6">Cidade: <input type="text" name="videoconferenciaCidade" id="videoconferenciaCidade" /></label>
-      <label class="span2">RG: <input type="text" maxlength="20" name="videoconferenciaRg" id="videoconferenciaRg" /></label>
-      <label class="span4">CPF: <input type="text" name="videoconferenciaCpf" id="videoconferenciaCpf" class="cpf" /></label>
-      <label class="span4">Data de nascimento: <input type="text" name="videoconferenciaNascimento" id="videoconferenciaNascimento" class="nascimento" /></label>
-      <label class="span4">Telefone para contato: <input type="text" name="videoconferenciaTelefone" id="videoconferenciaTelefone" class="telefone" /></label>
-      <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
-      <br>
-      <br>
-      <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS! (Opcional)</p>
-      
-      <a id="callToActionId-2001" href="javascript:void(0);">
-        <p id="enviar">Fazer upload (opcional)</p>
+      <fieldset>
+        <legend><h1>Participante</h1></legend>
+        <p>Preencha os seus dados:</p>
+        <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
+        <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
+        <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="<?php echo $_REQUEST['participanteEndereco'] ?>" /></label>
+        <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="<?php echo $_REQUEST['participanteBairro'] ?>" /></label>
+        <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
+        <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
+        <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
+        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf" /></label>
+        <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento" /></label>
+        <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone" /></label>
+        <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
+        <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
+        <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
+        <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
+        <label class="span8" style="margin-bottom: 0;">Você tem todas as condições de saúde para participar do programa?</label>
+        <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
+        <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
+        </label>
+        <label class="span8">Você tem alguma restrição de saúde que a produção precise saber (ex.: diabetes, trombose, marcapasso, restrição alimentar, etc...) ?
+          <input type="text" name="participanteSaudeRestricoes" id="participanteSaudeRestricoes" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend><h1>Indique um amigo</h1></legend>
+        <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
+        <p>Preencha os dados do seu amigo:</p>
+        <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
+        <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
+        <label class="span8">Endereço: <input type="text" name="videoconferenciaEndereco" id="videoconferenciaEndereco" /></label>
+        <label class="span6">Bairro: <input type="text" name="videoconferenciaBairro" id="videoconferenciaBairro" /></label>
+        <label class="span2">CEP: <input type="text" name="videoconferenciaCep" id="videoconferenciaCep" class="cep" /></label>
+        <label class="span6">Cidade: <input type="text" name="videoconferenciaCidade" id="videoconferenciaCidade" /></label>
+        <label class="span2">RG: <input type="text" maxlength="20" name="videoconferenciaRg" id="videoconferenciaRg" /></label>
+        <label class="span4">CPF: <input type="text" name="videoconferenciaCpf" id="videoconferenciaCpf" class="cpf" /></label>
+        <label class="span4">Data de nascimento: <input type="text" name="videoconferenciaNascimento" id="videoconferenciaNascimento" class="nascimento" /></label>
+        <label class="span4">Telefone para contato: <input type="text" name="videoconferenciaTelefone" id="videoconferenciaTelefone" class="telefone" /></label>
+        <label class="span4">Email: <input type="text" name="videoconferenciaEmail" id="videoconferenciaEmail" /></label>
+      </fieldset>
+      <fieldset>
+        <legend><h1>Vídeo</h1></legend>
+        <p>Faça um vídeo de no máximo 1 minuto contando por que você quer participar do QSS!</p>
+        <a id="callToActionId-2001" href="javascript:void(0);">
+        <p id="enviar">Fazer upload</p>
+        <div id="ytdContainer-2001"></div> 
       </a>
-      <div id="ytdContainer-2001"></div> 
+      </fieldset>
       
-      <label class="span8">Regulamento:<br>
-        <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px" /><?php include('regulamento.txt'); ?></textarea>
-      </label>
-      <label class="span6 concordo">
-        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o regulamento
+      
+      
+      <label class="span8 concordo">Regulamento:<br>
+        <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px; display: none;" /><?php include('regulamento.txt'); ?></textarea>
+        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javascript:;" id="btn-regulamento">regulamento</a>
       </label>
       <hr>
       <div id="captchaimage">
@@ -437,6 +430,10 @@
     $('.telefone').mask("(99) 99999999?9");
     $('.nascimento').mask("99/99/9999");
     
+    $("#btn-regulamento").click(function(){
+      $("#regulamento").toggle();
+    });
+        
     
     var validator = $('#form-contato').validate({
       rules:{
@@ -565,131 +562,4 @@
       }
       </script>
 
-     <!-- RODAPE -->
-    <div id="rodape-portal">
-      <div class="capa-voltar-topo">
-        <a class="voltar-topo" href="#"><span></span>voltar ao topo</a>
-      </div>
-      <div class="capa-rodape">
-        <div class="box-rodape">
-          <div class="col-esq">
-            <ul>
-              <li class="tit">Portal</li>
-              <li><a href="http://www.cmais.com.br" title="Home">Home</a></li>
-              <li><a href="http://www.cmais.com.br/videos" title="V&iacute;deos">V&iacute;deos</a></li>
-              <li><a href="http://www.cmais.com.br/aovivo" title="Home">Ao Vivo</a></li>
-              <li><a href="http://www.cmais.com.br/expediente" title="Expediente">Expediente</a></li>
-            </ul>
-            <ul>
-              <li class="tit">Editorias</li>
-              <li><a href="http://www.cmais.com.br/arte-e-cultura" title="Arte &amp; Cultura">Arte &amp; Cultura</a></li>
-              <li><a href="http://www.cmais.com.br/educacao" title="Educa&ccedil;&atilde;o">Educa&ccedil;&atilde;o</a></li>
-              <li><a href="http://www.cmais.com.br/infantil" title="+ Crian&ccedil;a">+ Crian&ccedil;a</a></li>
-              <li><a href="http://www.cmais.com.br/jornalismo" title="Jornalismo">Jornalismo</a></li>
-              <li><a href="http://www.cmais.com.br/musica" title="M&uacute;sica">M&uacute;sica</a></li>
-            </ul>
-          </div>
-          <div class="col-central">
-            <div class="posicao">
-              <p class="tit">+Populares</p>
-              <ul>
-                <li><a href="http://tvcultura.cmais.com.br" class="tit">TV Cultura</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/transito" title="Guia do Trânsito">Guia do Trânsito</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/jornaldacultura" title="Jornal da Cultura">Jornal da Cultura</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/metropolis" title="Metr&oacute;polis">Metr&oacute;polis</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/provocacoes" title="Provoca&ccedil;&otilde;es">Provoca&ccedil;&otilde;es</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/reportereco" title="Reporter Eco">Repórter Eco</a></li>
-                <li><a href="http://tvcultura.cmais.com.br/rodaviva" title="Roda Viva">Roda Viva</a></li>
-              </ul>
-              <ul>
-                <li><a href="http://www.culturabrasil.com.br/" class="tit" title="R&aacute;dio Cultura Brasil">R&aacute;dio Cultura Brasil</a></li>
-                <li><a href="http://www.culturabrasil.com.br/especiais" title="Especiais">Especiais</a></li>
-                <li><a href="http://www.culturabrasil.com.br/entrevistas" title="Entrevistas">Entrevistas</a></li>
-                <li><a href="http://www.culturabrasil.com.br/radarcultura" title="RadarCultura">RadarCultura</a></li>
-                <li><a href="http://www.culturabrasil.com.br/playlists" title="Playlists">Playlists</a></li>
-                <li><a href="http://www.culturabrasil.com.br/podcasts" title="Podcasts">Podcasts</a></li>
-              </ul>
-              <ul>
-                <li><a href="http://culturafm.cmais.com.br" class="tit" title="R&aacute;dio Cultura FM">R&aacute;dio Cultura FM</a></li>
-                <li><a href="http://culturafm.cmais.com.br/selecao-do-ouvinte" title="Sele&ccedil;&atilde;o do Ouvinte">Sele&ccedil;&atilde;o do Ouvinte</a></li>
-                <li><a href="http://culturafm.cmais.com.br/guia-do-ouvinte" title="Grade de Programa&ccedil;&atilde;o">Grade de Programa&ccedil;&atilde;o</a></li>
-                <li><a href="http://culturafm.cmais.com.br/para-ouvir" title="Podcasts">Podcasts</a></li>
-              </ul>
-            </div>
-            <div class="posicao">
-              <ul>
-                <li><a href="http://univesp.tv.br/" class="tit">Univesp TV</a></li>
-                <li><a href="http://univesptv.cmais.com.br/inglescommusica" title="Ingl&ecirc;s Com M&uacute;sica">Ingl&ecirc;s Com M&uacute;sica</a></li>
-                <li><a href="http://univesptv.cmais.com.br/pedagogia-unesp" title="Pedagogia Unesp">Pedagogia Unesp</a></li>
-                <li><a href="http://univesptv.cmais.com.br/cursos" title="Cursos Livres">Cursos Livres</a></li>
-                <li><a href="http://univesptv.cmais.com.br/licenciatura-em-ciencias" title="Licenciatura em
-ciências">Licenciatura em
-ciências</a></li>
-              </ul>
-              <ul>
-                <li><a href="http://www.multicultura.com.br/" class="tit">multiCULTURA</a></li>
-                <li><a href="http://multicultura.cmais.com.br/o-que-e-1" title="O que &eacute;">O que &eacute;</a></li>
-                <li><a href="http://multicultura.cmais.com.br/como-assistir-o-multicultura" title="Como Assistir">Como Assistir</a></li>
-                <li><a href=" http://multicultura.cmais.com.br/programacao" title="Programa&ccedil;&atilde;o">Programa&ccedil;&atilde;o</a></li>
-              </ul>
-              <ul>
-                <li><a href="http://www.tvratimbum.com.br/" class="tit">TV R&aacute; Tim Bum</a></li>
-                <li><a href="http://tvratimbum.cmais.com.br/xtudo" title="X-Tudo ">X-Tudo </a></li>
-                <li><a href="http://www.tvcultura.com.br/cocorico" title="Cocoric&oacute;">Cocoric&oacute;</a></li>
-                <li><a href="http://tvratimbum.cmais.com.br/baudehistorias" title="Ba&uacute; de Hist&oacute;rias">Ba&uacute; de Hist&oacute;rias</a></li>
-                <li><a href="http://tvratimbum.cmais.com.br/mundodalua" title="Mundo da Lua">Mundo da Lua</a></li>
-              </ul>
-            </div>
-            <div class="posicao">
-              <ul>
-                <li class="tit">Pela Web</li>
-                <li><a href="http://www.facebook.com/tvcultura" title="Facebook">Facebook</a></li>
-                <li><a href="http://www.flickr.com/photos/televisaocultura" title="Flickr">Flickr</a></li>
-                <li><a href="https://google.com/+tvcultura" title="Google+">Google+</a></li>
-                <li><a href="http://statigr.am/tvcultura" title="Instagram">Instagram</a></li>
-                <li><a href="http://twitter.com/#!/tvcultura" title="Twitter">Twitter</a></li>
-                <li><a href="http://www.youtube.com/cultura" title="Youtube">Youtube</a></li>
-              </ul>
-              <ul>
-                <li><a href="http://www2.tvcultura.com.br/fpa/" class="tit">Funda&ccedil;&atilde;o Padre Anchieta</a></li>
-                <li><a href="http://fpa.com.br/sic" title="SiC - Serviço de Informações ao Cidadão">SiC</a></li>
-                <li><a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" title="Licitações">Licitações</a></li>
-                <li><a href="http://cmais.com.br/captacao" title="Captacao">Capta&ccedil;&atilde;o</a></li>
-                <li><a href="http://cmais.com.br/imprensa" title="Assessoria de Imprensa">Assessoria de Imprensa</a></li>
-                <li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
-                <li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
-              </ul>
-              
-              <a href="http://cmais.com.br/programas-de-a-z" class="tit todos">Todos os sites</a>
-              <a href="http://cmais.com.br/busca?term=ver+todo+o+conte%C3%BAdo" class="tit todos">Todo o conteúdo</a>
-
-            </div>
-          </div>
-          <div class="col-dir">
-            <!-- a class="fpa" href="http://www2.tvcultura.com.br/fpa/" title="Funda&ccedil;&atilde;o Padre Anchieta">Funda&ccedil;&atilde;o Padre Anchieta</a-->
-            <a class="cultura" href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a>
-          </div>
-          <div class="copyright">
-            <p>Copyright &copy; 1996 - 2013 Funda&ccedil;&atilde;o Padre Anchieta</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <!-- /RODAPE -->    
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
-      };
-      (function() {
-        var e = document.createElement('script'); e.async = true;
-        e.src = document.location.protocol +
-          '//connect.facebook.net/pt_BR/all.js';
-        document.getElementById('fb-root').appendChild(e);
-      }());
-    </script>
-
-  </body>
-</html>
+   
