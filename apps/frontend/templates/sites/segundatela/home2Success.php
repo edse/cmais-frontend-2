@@ -149,6 +149,7 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
     lifespan:20000,
     expire:0,
     arrow:true,
+    touchIcon: true,
     message:'. Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
   };
   </script>
