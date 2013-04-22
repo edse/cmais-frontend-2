@@ -62,6 +62,7 @@
     <!-- esquerda -->
     <div class="span8">
       <h2>segunda tela</h2>
+      
       <!-- accordion -->
       <div class="accordion" id="accordion2"></div>
       <!-- /accordion -->
