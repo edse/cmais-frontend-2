@@ -11,8 +11,7 @@
       ->fetchOne();
     ?>
   
-       
-<div class="bgtopo2">
+  <div class="bgtopo2">
   <!--container-->
   <div class="container">
     <div class="bgtopo3"></div>
