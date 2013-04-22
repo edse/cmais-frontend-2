@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/cartaoverde.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -18,48 +18,29 @@
   <div class="hero-unit">
     <div class="bgtopo"></div>
     <div class="col-esq">
-      <h1>Cartão Verde</h1>
-      <p>20 anos. Porque a bola não para.
-        </br>Terça às 22h</p>
+      <h1>Jornal da Cultura</h1>
+      <p>Mais que um jornal, uma tradução das notícias.</br>Segunda a sábado, às 21:00</p>
       <div class="redes">
         <div class="gplus">
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
         <div class="fb">
-          <fb:like href="http://cmais.com.br/segundatela/cartaoverde" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
         </div>
       </div>
     </div>
-    
     <div class="col-dir">
-      <div id="box-clock" style="display: none;">
-        <div id="no-ar">
-         <p>no ar</p>
-         <ul style="width: 47px;">
-          <li id="hours"> </li>
-          <li id="point">:</li>
-          <li id="min"> </li>
-          <!--
-          <li id="point">:</li>
-          <li id="sec"> </li>
-          -->
-        </ul>
-        </div>
-
-      </div>  
       <div class="menu-jc">
-        <ul>
-          <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><li><!--span class="barra">|</span-->
-          <li><p class="online hide" style="color: green">Conectado</p></li>
-          <li><p class="offline">Desconectado</p></li>
-          </ul>
+        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><!--span class="barra">|</span-->
+        <br/>
+        <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
       </div>
     </div>
   </div>
-
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
@@ -98,7 +79,7 @@
   <script>
   // retrive sent contents by ajax
   $.ajax({
-    url:"/portal/js/segundatela/log/cartaoverde-<?php echo $date; ?>.json",
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
     dataType: "json",
     success:function(json){
       $.each(json, function( key, value ) {
