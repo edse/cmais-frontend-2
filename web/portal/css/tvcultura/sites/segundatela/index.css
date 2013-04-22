@@ -36,7 +36,7 @@ ul.nav{margin-left: 23%!important;}
   .nav-collapse .nav > li{float:left;}
   .item .live-image span{position:absolute;}
   .span3.item{min-height:320px!important;}
-  .span4.item{min-height:350px!important;}
+  .span4.item{min-height:350px!important;*min-height:350px!important}
   #footer{display:none;}
   ul.nav{margin-left: 22%!important;}
 }
