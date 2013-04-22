@@ -42,6 +42,11 @@
   #footer .span2.logo { width:7%; }
   #footer .container { padding:0 2%; }
 }
+/*
+@media screen and (max-width: 980px){
+  .nav-collapse{width: 174px;margin: 0 auto;}
+  .navbar-inverse .nav > li > a {float:left;}
+}
 
 @media screen and (max-width: 980px){
   #footer .span2 { width:19%;  }
@@ -54,9 +59,13 @@
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus { background:none !important;  }
   .navbar-inverse .nav-collapse .nav > li > a:hover { text-decoration: underline; }
+  .nav-collapse .nav > li > a{text-align:right}
 }
+*/
 
 @media screen and (max-width: 768px){
+ .nav-collapse{width: 174px;margin: 0 auto;}
+ .navbar-inverse .nav > li > a {float:left;} 
  #footer .span2 { width:33%;  } 
 }
 /* rodape*/

@@ -138,4 +138,21 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
 
   </div>
   <!--/container-->
+  <!--BUBBLE BOOKMARK-->
+  <link rel="stylesheet" href="/portal/js/bubblemark/css/add2home.css">
+  <LINK REL="apple-touch-icon" HREF="/portal/images/capaPrograma/segundatela/index/FavIcon/48by48.ico" />
+  <script type="text/javascript">
+  var addToHomeConfig = {
+    autostart:true,
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:20000,
+    expire:0,
+    arrow:true,
+    touchIcon: false,
+    message:'Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
+  };
+  </script>
+  <script type="application/javascript" src="/portal/js/bubblemark/add2home.js"></script>
+  <!--BUBBLE BOOKMARK-->
 </div>
