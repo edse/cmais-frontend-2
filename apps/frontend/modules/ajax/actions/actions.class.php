@@ -222,12 +222,6 @@ class ajaxActions extends sfActions
 	          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
 					}
         }
-        
-        if($schedules[0]->program_id == 2){
-          if (date('w') != "6") { // se dia diferente de sábado, redireciona...
-            die("self.location.href='http://tvcultura.cmais.com.br/jornaldacultura/aovivo'");
-          }
-        }
        
         $next = Doctrine_Query::create()
           ->select('s.*')
