@@ -365,8 +365,7 @@
         <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
         <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
         <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
-        <label class="span8">Você tem todas as condições de saúde para participar do programa?</label>
-        <br />
+        <label class="span8" style="margin-bottom: 0;">Você tem todas as condições de saúde para participar do programa?</label>
         <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
         <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
         </label>
@@ -403,7 +402,7 @@
       
       <label class="span8 concordo">Regulamento:<br>
         <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px; display: none;" /><?php include('regulamento.txt'); ?></textarea>
-        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javacript;" id="btn-regulamento">regulamento</a>
+        <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javascript:;" id="btn-regulamento">regulamento</a>
       </label>
       <hr>
       <div id="captchaimage">
