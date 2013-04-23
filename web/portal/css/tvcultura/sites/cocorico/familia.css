@@ -3,7 +3,7 @@
 .topo-familia .navbar .nav > li.familia { margin:5px 1% 0 20px; float:left; width: auto; }
 .topo-familia .navbar .nav > li { margin-top:5px; margin-right:10px; }
 .topo-familia .navbar .nav > li.familia a { width: 159px; margin:0; padding:0; }
-
+.topo-familia .joguinhos{margin-left: 100px;}
 
 .tooltip-inner { background:#76b0b7; color:#fff; text-align:left; font-size: 13px; line-height:15px; }
 .tooltip.in,
