@@ -82,6 +82,15 @@
                     </div>
                     <hr />
                   </div>
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_5">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
+                      <p>Encerrado o prazo (23/04) para as incrições!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  
                   <!--/mensagens de status -->
                   
                   
