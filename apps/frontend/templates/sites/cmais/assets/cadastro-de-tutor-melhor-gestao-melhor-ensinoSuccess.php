@@ -86,7 +86,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Encerrado o prazo (23/04) para as incrições!</p>
+                      <p>Encerrado o prazo para as incrições!</p>
                     </div>
                     <hr />
                   </div>
