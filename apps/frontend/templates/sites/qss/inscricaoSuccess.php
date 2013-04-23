@@ -386,7 +386,7 @@
       </fieldset>
       <fieldset>
         <legend><h1>Indique um amigo</h1></legend>
-        <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
+        <p>Na 3ª fase do programa, você poderá utilizar a ajuda do HANGOUT (vídeo-conferência) na resposta das perguntas. Para isso é necessário a indicação de um amigo ou parente, que deverá comparecer a Emissora, junto com você no dia da gravação.</p>
         <p>Preencha os dados do seu amigo:</p>
         <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
         <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
