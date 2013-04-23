@@ -1948,5 +1948,25 @@ EOT;
     }
   }
 
-
+  public function executeIslive(sfWebRequest $request){
+    $this->setLayout(false);
+    $return = "0";
+    $id = $request->getParameter('program_id');
+    if($id > 0){
+      $schedules = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Schedule s')
+        ->where('s.program_id = ?', $id)
+        ->andWhere('s.date_start <= ?', date('Y-m-d H:i:s'))
+        ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+        ->andWhere('s.channel_id = ?', 1)
+        ->orderBy('s.date_start asc')
+        ->limit('1')
+        ->execute();
+      if((isset($schedules)) && (count($schedules) > 0)){
+        $return = "1";
+      }
+    }
+    die($return);
+  }
 }
