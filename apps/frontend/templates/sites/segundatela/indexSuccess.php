@@ -121,7 +121,7 @@
     <!--corpo-->
     <div class="row-fluid" style="margin-top:20px;clear:both;">
       <div class="span8" style="margin-left:0px;">
-        <h2>COMO FUNCIONA O SEGUNDA TELA</h2>
+        <h2>COMO FUNCIONA A SEGUNDA TELA</h2>
         <p>
          A Segunda Tela (ou Second Screen) é um complemento em tempo real à televisão (a primeira tela). 
 Ao utilizá-la, seja em computadores, smartphones ou tablets, o “teleinternauta” recebe informações extras e pontos importantes sobre o assunto que está sendo tratado no programa que está no ar no momento. 
