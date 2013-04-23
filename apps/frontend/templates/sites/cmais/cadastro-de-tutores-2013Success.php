@@ -4,10 +4,9 @@
 
 
 if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
+  $assets = $pager->getResults();
+  header("Location: ".$assets[0]->retriveUrl());
+  die();
 } 
 ?>
 
