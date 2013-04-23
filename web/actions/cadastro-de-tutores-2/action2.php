@@ -39,6 +39,7 @@ if($_REQUEST["captcha"]) {
                            $_REQUEST["exp_coord_tutoria"] . "," .
                            $_REQUEST["atuacao_sup"] . "," .
                            $_REQUEST["part_encontro"] . "\n";
+                           
           $file2_csvFp = fopen($file2_csv,'r+');
           if ($file2_csvFp) {
             while(true) {
