@@ -12,14 +12,14 @@
     ?>
   
   <div class="bgtopo2">
-  <!--container-->
+  <!--container--> 
   <div class="container">
-    <div class="bgtopo3"></div>
+    <div class="bgtopo3"></div> 
     <!-- topo-pg -->
     <div class="hero-unit">
-      <div class="bgtopo"></div>
+      <div class="bgtopo"></div>     
       <div class="col-esq">
-        <h1>SEGUNDA TELA - 2T</h1>
+        <h1>SEGUNDA TELA</h1>
         <p>Informações extras e pontos importantes,<br> em tempo real na programação da Cultura</p>
         <div class="redes">
           <div class="gplus">
@@ -39,14 +39,14 @@
     <div class="row-fluid">
       <!--item-->
       <div class="span4 item" style="margin-left:0px;">
-        <a href="http://cmais.com.br/segundatela/jornaldacultura">
+        <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
 
-          <?php if ($live->Program->id == "67" ): ?>  
+          <?php if ($live->Program->id == "2" ): ?>  
             <span>NO AR</span>
           <?php endif; ?>
 
@@ -61,7 +61,7 @@
       <!--/item--> 
       <!--item-->
       <div class="span4 item">
-        <a href="http://cmais.com.br/segundatela/rodaviva">
+        <a href="http://cmais.com.br/segundatela/rodaviva" target="_blank">
           <div class="logo-programa">
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
           </div>
@@ -71,7 +71,7 @@
             <span>NO AR</span>
             <?php endif; ?>
           </div>
-          <p>
+          <p> 
             O Brasil passa por aqui.
             <br>
             Segunda às 22h 
@@ -79,9 +79,9 @@
         </a>
       </div>
       <!--/item-->
-      <!--item-->
+      <!--item--> 
       <div class="span4 item">
-        <a href="http://cmais.com.br/segundatela/cartaoverde">
+        <a href="http://cmais.com.br/segundatela/cartaoverde" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/fb83d5f012d0b874aaa1fa535b9317d3e3131848.png">
           </div>
@@ -121,7 +121,7 @@
     <!--corpo-->
     <div class="row-fluid" style="margin-top:20px;clear:both;">
       <div class="span8" style="margin-left:0px;">
-        <h2>COMO FUNCIONA O SEGUNDA TELA</h2>
+        <h2>COMO FUNCIONA A SEGUNDA TELA</h2>
         <p>
          A Segunda Tela (ou Second Screen) é um complemento em tempo real à televisão (a primeira tela). 
 Ao utilizá-la, seja em computadores, smartphones ou tablets, o “teleinternauta” recebe informações extras e pontos importantes sobre o assunto que está sendo tratado no programa que está no ar no momento. 
