@@ -47,7 +47,7 @@ if($_REQUEST["captcha"]) {
               if ($line==null) break;
               
               if(preg_match("/$email/", $line)) {
-                $string .= substr($line, -1) . $file2_newData;
+                $string .= substr($line, 0, -1) . $file2_newData;
               } else {
                 $string.= $line;
               }
