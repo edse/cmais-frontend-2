@@ -359,7 +359,7 @@
     -->
       
     <form id="form-contato" method="post" action="">
-      <!--h1>Quer participar do QSS?</h1-->
+      <!--<h1>Quer participar do QSS?</h1>-->
       <fieldset>
         <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
