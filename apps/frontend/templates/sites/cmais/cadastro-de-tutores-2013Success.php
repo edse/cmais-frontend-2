@@ -1,5 +1,5 @@
 <?php
-header("Location: http://cmais.com.br/cadastro-de-tutores-2013/melhor-gestao-melhor-ensino-cadastro-complementar");
+header("Location: http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013");
 die();
 
 /*
