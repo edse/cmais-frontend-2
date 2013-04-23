@@ -37,7 +37,9 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
                   -->
-                  <!--div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px">Atenção: as incrições vão até o dia 23/04/2013</div-->
+                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px">
+                    ATENÇÃO: Esta é uma solicitação de atualização dos dados cadastrados no formulário de inscrição "Melhor Gestão Melhor Ensino", este formulário serve apenas para aqueles que efetuaram o cadastro mas as questões abaixo não foram respondidas, se você recebeu este link por email (oficial) preencha os dados e clique em enviar.
+                  </div>
                   
                   <!-- mensagens de status -->
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
