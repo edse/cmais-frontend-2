@@ -1,14 +1,14 @@
 <?php
-//header("Location: http://cmais.com.br/cadastro-de-tutores-2013/cadastro-de-tutores-2013-orientacao-prova-escrita");
-//die();
+header("Location: http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013");
+die();
 
-
+/*
 if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
+  $assets = $pager->getResults();
+  header("Location: ".$assets[0]->retriveUrl());
+  die();
 } 
+ */
 ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/geral.css" />  

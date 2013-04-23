@@ -16,13 +16,12 @@
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($site->getTwitterAccount()): ?><?php echo $site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>-->
     </div>
     <!-- /curtir -->
-    <div style="float:left;">
-      <p>O ”QUEM SABE, SABE” é um jogo diário, destinado aos participantes a partir dos 18 anos de idade, com perguntas e respostas de múltiplas escolhas. Ele é baseado no conhecimento, estratégia e sorte dos competidores.</p>
-      <p>Gravado nos estúdios da emissora e jogado a partir de uma arena tecnológica, 4 participantes, representados por avatares de cores diferente, se enfrentam em 3 fases distintas durante 1 hora de programa, sempre de segunda a sexta-feira.</p>
-      <p>Na 1ª e 2ª fase os participantes respondem sobre 09 temas (Ciências, Cinema e Tv, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Dois deles passam para a 3ª fase onde responderão sobre temas relacionados a programas da TV CULTURA.</p>
-      <p>Ao final, o grande vencedor é aquele que acumular a maior quantidade de “EUREKAS” (sistema de pontuação do jogo).</p>
-      <a id="enviar" class="btn-home" href="http://tvcultura.cmais.com.br/qss/inscricao" >INSCREVA-SE JÁ</a>
-    </div>  
+    <form id="form-contato" method="post" action="">
+      <p>Cadastre o seu e-mail para ser informado sobre a data de início das inscrições:</p>
+      <input type="text" name="email" id="email" class="required" />
+      <input class="enviar" type="submit" name="enviar" id="enviar" value="ENVIAR" style="cursor:pointer" />
+      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+    </form>  
 </div> 
 <!-- /capa site-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>

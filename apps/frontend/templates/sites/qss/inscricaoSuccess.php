@@ -346,6 +346,7 @@
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura">Tweet</a>-->
     </div>
     <!-- /curtir --> 
+    <!--
     <p>
     <class style="font-color: #000000;">
     Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!<br>
@@ -355,10 +356,10 @@
     E você pode ser um desses participantes! Basta preencher o formulário abaixo e, se quiser, enviar um vídeo para a gente contando porque você quer participar do QSS!
     </style>
     </p>
-    
+    -->
       
     <form id="form-contato" method="post" action="">
-      <h1>Quer participar do QSS?</h1>
+      <!--<h1>Quer participar do QSS?</h1>-->
       <fieldset>
         <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
@@ -386,7 +387,7 @@
       </fieldset>
       <fieldset>
         <legend><h1>Indique um amigo</h1></legend>
-        <p>Nesta fase do programa, o participante poderá contar com a ajuda de um amigo. Para mais detalhes, veja o regulamento logo abaixo.</p>
+        <p>Na 3ª fase do programa, você poderá utilizar a ajuda do HANGOUT (vídeo-conferência) na resposta das perguntas. Para isso é necessário a indicação de um amigo ou parente, que deverá comparecer a Emissora, junto com você no dia da gravação.</p>
         <p>Preencha os dados do seu amigo:</p>
         <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
         <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>

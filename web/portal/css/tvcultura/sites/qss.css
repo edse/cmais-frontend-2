@@ -29,7 +29,9 @@ label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { display:block; float: left; margin-right:20px; }
 #capa-site label input { width:100%; margin-top:2px;  }
 #form-contato { float:left; margin-bottom:50px; width: 800px; }
-#enviar {clear: both;    float: right;    margin: 2%; }
+/*#enviar {clear: both;    float: right;    margin: 2%; }*/
+#enviar{float: right;margin: 0 auto;font-size: 20px;line-height: 26px;color: #FFFFFF;font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;text-align: center;margin-bottom: 20px;}
+#enviar:hover{text-decoration:none;}
 .span8 { width: 97% }
 .span6 { width: 72% }
 .span4 { width: 47% }
@@ -53,3 +55,4 @@ h1,
 #form-contato legend,
 #form-contato legend h1 { margin-bottom:0; }
 #form-contato legend { overflow:hidden; }
+.btn-home { float:none; width:200px; margin:0 auto; font-weight: bold; }
