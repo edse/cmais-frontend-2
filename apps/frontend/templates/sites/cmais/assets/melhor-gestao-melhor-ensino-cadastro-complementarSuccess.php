@@ -73,7 +73,8 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">O complemento do seu cadastro não pôde ser efetuado.</p>
-                      <p>Por favor, recarregue a página e digite o mesmo e-mail que você utilizou no cadastro anterior.</p>
+                      <p>O e-mail digitado não consta em nosso banco de dados.</p>
+                      <p>Por favor, recarregue a página e digite o mesmo e-mail que você utilizou anteriormente.</p>
                     </div>
                     <hr />
                   </div>
