@@ -69,6 +69,14 @@
                     </div>
                     <hr />
                   </div>
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_3">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">O complemento do seu cadastro não pôde ser efetuado.</p>
+                      <p>Por favor, recarregue a página e digite o mesmo e-mail que você utilizou no cadastro anterior.</p>
+                    </div>
+                    <hr />
+                  </div>
                   <!--/mensagens de status -->
                   
                   
@@ -185,7 +193,12 @@
                   $("#statusMsg_1").show();
                   $('img#ajax-loader').hide();
                 }
-                else if(data == "3" || data == "4" || data == "5") {
+                else if(data == "3") {
+                  $(".msgErro").hide();
+                  $("#statusMsg_3").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if(data == "4" || data == "5") {
                   $(".msgErro").hide();
                   $("#statusMsg_2").show();
                   $('img#ajax-loader').hide();
