@@ -37,7 +37,7 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
                   -->
-                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px">Atenção: as incrições vão até o dis 23/04/2013</div>
+                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px; float:left; color: red">Atenção: as incrições vão até o dia 23/04/2013</div>
                   
                   <!-- mensagens de status -->
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
@@ -82,6 +82,15 @@
                     </div>
                     <hr />
                   </div>
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_5">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
+                      <p>Encerrado o prazo para as incrições!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  
                   <!--/mensagens de status -->
                   
                   
