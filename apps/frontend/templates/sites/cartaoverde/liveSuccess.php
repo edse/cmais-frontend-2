@@ -17,7 +17,7 @@ function stream1() {
   so.addParam('allowfullscreen','true');
   so.addParam('wmode','transparent');
   so.write('boxVideoWrapper');
-  $('.transmissaoH li a').removeClass('ativo');
+  $('.transmissaoH li a').removeClass('ativo'); 
   $('#stream_tv').addClass('ativo');
 }
 
