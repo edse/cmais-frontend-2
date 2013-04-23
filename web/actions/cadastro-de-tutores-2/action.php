@@ -5,7 +5,7 @@ $rg = str_replace(array('.','-'),"",$_REQUEST["rg"]);
 
 if($_REQUEST["captcha"]) {
   if($cpf){
-    if(date("Y-m-d H:i:s") < "2013-04-24 00:00:00") {
+    if(date("Y-m-d H:i:s") < "2013-04-24 00:10:00") {
       if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/control/cpf-alunos.txt')){
         die("2");
       }
