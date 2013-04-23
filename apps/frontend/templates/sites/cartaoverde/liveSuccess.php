@@ -49,7 +49,7 @@ function broadcastEnd(){
 jQuery(document).ready(function() {
   updateTweets();
   var t=setInterval("updateTweets()",60000);
-  stream1();
+//  stream1();
   
   // broadcast
   //broadcastEnd();
