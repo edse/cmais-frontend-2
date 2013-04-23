@@ -52,8 +52,8 @@ jQuery(document).ready(function() {
   stream1();
   
   // broadcast
-  broadcastEnd();
-  var t2=setInterval("broadcastEnd()", 60000);
+  //broadcastEnd();
+ // var t2=setInterval("broadcastEnd()", 60000);
 });
 </script>
 
