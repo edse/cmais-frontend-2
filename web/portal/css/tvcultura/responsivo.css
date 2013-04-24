@@ -68,10 +68,12 @@
 
 @media screen and (max-width: 768px){
  .navbar.navbar-fixed-top .container { width:100%; }
- .nav-collapse{width: 174px;margin: 0 auto !important;}
+ .nav-collapse{width: 132px; margin: 0 auto !important;}
  .navbar-inverse .nav > li > a {float:left;} 
  #footer .span2 { width:33%;  } 
 }
+
+
 /* rodape*/
 
 
