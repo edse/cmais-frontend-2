@@ -12,9 +12,9 @@ ul.nav{margin-left: 23%!important;}
 .hero-unit .col-esq p {margin: 10px 0; color:#FFF; text-align:left; font-size:13px; font-family:'source_sans_proregular';}
 .hero-unit .bgtopo { width: 221px; height:156px; background:url(/portal/images/capaPrograma/segundatela/index/segundaTelaLogo.jpg) no-repeat; float:left; margin-right:10px;}
 .item{ padding:5px; background-color:#e1e1e1;border:1px solid white;}
-.item:hover{border:1px solid #ff6833; text-decoration:none;}
+.item:hover{border:1px solid #ff6833;}
 .item p{text-align: left;padding-top:10px;margin-bottom:0px;font-family:'source_sans_proregular';}
-.item p:hover{text-decoration:none;}
+.item a:hover{text-decoration:none;}
 .item .logo-programa{width:193px;height:80px;margin:0 auto;}
 .item .live-image{position:relative;}
 .item .live-image span{position:absolute;bottom: -1px;left: 0;width: 100%;text-align: center;background: #ff6833;padding: 3px 0px;font-family: 'source_sans_proregular';font-size: 18px;color: #FFF;letter-spacing: 0.15em;}
