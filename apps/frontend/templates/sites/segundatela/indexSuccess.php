@@ -133,21 +133,21 @@ jQuery(document).ready(function() {
     data: "program_id=2",
     success: function(data) {
       if(data==1)
-        $('#jornaldacultura').show();
+        $('#jornaldacultura').fadeIn('slow');
       else{
         $.ajax({
           url: "/ajax/islive",
           data: "program_id=75",
           success: function(data) {
             if(data==1)
-              $('#rodaviva').show();
+              $('#rodaviva').fadeIn('slow');
             else{
               $.ajax({
                 url: "/ajax/islive",
                 data: "program_id=77",
                 success: function(data) {
                   if(data==1)
-                    $('#cartaoverde').show();
+                    $('#cartaoverde').fadeIn('slow');
                 }
               });
             }
