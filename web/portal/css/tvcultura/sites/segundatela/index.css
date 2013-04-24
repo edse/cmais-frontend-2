@@ -85,7 +85,14 @@ ul.nav{margin-left: 23%!important;}
  .span8 h2{font-size:17px;width:280px}
 }
 
- 
+/* iPads (landscape) ----------- */
+/*
+@media only screen 
+and (min-device-width : 768px) 
+and (orientation : landscape) {
+.span3.item, .span4.item{ width:50% !important;} 
+} 
+*/ 
 
 /* celular */
 @media (max-width: 480px) {
