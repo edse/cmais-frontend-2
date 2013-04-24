@@ -55,294 +55,237 @@
                       <li><a href="#sorocaba">Sorocaba</a></li>
                     </ul>
                     
-                    
+
                     <a name="aracatuba"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Araçatuba</h5>
-                    <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Avenida Baguaçu, 1939, Jardim Alvorada </p> 
+                    <p><strong>Local: </strong>---<br />--- </p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
+                          <th style="font-weight: bold; margin-bottom: 20px">Disciplina<br /></th>
                           <th style="font-weight: bold; margin-bottom: 20px">Cidade<br /></th>
-                          <th style="font-weight: bold; margin-bottom: 20px">Modalidade<br /></th>
                         </tr>
                       </thead>
                       <tbody>
-
                         <tr><td><h1>A</h1></td></tr>
                         <tr>
-                          <td>Aline Aparecida da Silva Blasioli</td>
+                          <td>Ana Maria De Deus Jacob</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Almir Pires</td>
+                          <td>Anderson Cangane Pinheiro</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
+                        <tr><td><h1>N</h1></td></tr>
                         <tr>
-                          <td>Andréa Ricci</td>
+                          <td>ngela Maria De Oliveira Barbosa Nunes</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
+                        <tr><td><h1>A</h1></td></tr>
                         <tr>
-                          <td>Andrea Thomaz Alves</td>
+                          <td>Aparecida Odete Thomé Borges Mariano</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Andreia Spegiorin Gardete Vieira</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Audrey Kelly Alves Martinez</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>B</h1></td></tr>
                         <tr>
                           <td>Bruna Morales</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr><td><h1>C</h1></td></tr>
                         <tr>
-                          <td>Claudinéia Vanessa dos Santos</td>
+                          <td>César Paes</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Cristiane Maria Maschio</td>
+                          <td>Cláudia Márcia De Souza Oliveira</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>D</h1></td></tr>
                         <tr>
-                          <td>Débora Lopes de Oliveira</td>
+                          <td>Danilo Jordão Zerlotti</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>E</h1></td></tr>
                         <tr>
-                          <td>Eleni Solange Lima</td>
+                          <td>Edilene Bachega Rodrigues De Viveiros</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Ellen Regina Gusman Gonçalves</td>
+                          <td>Eliane Cristina Do Nascimento</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Ester Maria de Alcântara Martins</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>F</h1></td></tr>
                         <tr>
-                          <td>Fabiana Sanches de Pieri</td>
+                          <td>Flaviana Gonçalves Viani</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
-                        </tr>
-                        <tr>
-                          <td>Fabiane Delamura Galvi Custódio</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Fernanda Maria Fiori Cantóia Hernandes</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr><td><h1>H</h1></td></tr>
-                        <tr>
-                          <td>Heide Danelutti Takeda</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr><td><h1>I</h1></td></tr>
-                        <tr>
-                          <td>Idalice Lima</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Inês Beatriz Bonadio Furtado</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Isabel dos Santos Soares Moura</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>J</h1></td></tr>
                         <tr>
-                          <td>Jacqueline Mariani Pereira</td>
+                          <td>Jose Carlos Munarin</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Janaína Lorenço Rovina Vaz</td>
+                          <td>Jussara De Souza Cortez</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
-                        </tr>
-                        <tr>
-                          <td>Joana Dark Izaias Ramos</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Joselilian Lopes Miralha</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Josinete Silverio de Souza</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Juliana Carvalho Ferreira Martins</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>L</h1></td></tr>
                         <tr>
-                          <td>Lara Silvia Bertelli de Queiroz</td>
+                          <td>Lara Silvia Bertelli De Queiroz</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Leticia Angelo Colabono</td>
+                          <td>Leandro Ramiro</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
+                        </tr>
+                        <tr>
+                          <td>Lidiane Eiko Hoshika Fogaça</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
+                          <td>Luciana Vanessa De Almeida Buranello</td>
+                          <td>Matemática</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
+                          <td>Luis Antonio Guimarães Ficoto</td>
+                          <td>Matemática</td>
+                          <td>Araçatuba</td>
                         </tr>
                         <tr><td><h1>M</h1></td></tr>
                         <tr>
-                          <td>Marcelo Mendes da Silva Donda</td>
+                          <td>Marcelo Bevilaqua</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Maria Adriana Silva Moncinhatto</td>
+                          <td>Marcia Clara Zolin De Almeida</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Mariângela do Nascimento Sant`Ana da Costa</td>
+                          <td>Maria De Fátima Moises Tobal</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Marilza Rosene de Souza</td>
+                          <td>Maria Dolores Cereijido Bersani</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Maristela Salata Mmartins Bortolotti</td>
+                          <td>Maria Duarte Da Silva Kataoka</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Mauro Celso Souza</td>
+                          <td>Marilza Rosene De Souza</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Micheli Cristina Balduino dos Santos Camargo</td>
+                          <td>Marli Francisca Rossi Souto Da Silva</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Moisés da Silva</td>
+                          <td>Mirella Fernanda Basaglia Pietro</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Monica Menezes Arantes</td>
+                          <td>Moacir Martins Gonçalez</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
+                        </tr>
+                        <tr><td><h1>N</h1></td></tr>
+                        <tr>
+                          <td>Nadia Marques Ikeda Pereira</td>
+                          <td>Matemática</td>
+                          <td>Araçatuba</td>
                         </tr>
                         <tr><td><h1>P</h1></td></tr>
                         <tr>
-                          <td>Paulo Alberto dos Santos Buttignon</td>
+                          <td>Paula Cristina De Faria Veronese</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
-                        </tr>
-                        <tr>
-                          <td>Priscila Ferreira Porfirio</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>R</h1></td></tr>
                         <tr>
-                          <td>Regina Celia Minari Sbizera</td>
+                          <td>Reginaldo Inocenti</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Roldão Antonio da Silva Neto</td>
+                          <td>Renata Valéria Vilela De Oliveira</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr>
-                          <td>Roseli Tadeu Rocha do Amaral</td>
+                          <td>Ricardo Alexandre Verni</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                         <tr>
-                          <td>Rosemara Ferreira Talon Nalon</td>
+                          <td>Rosana Fernandes Costa</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>S</h1></td></tr>
                         <tr>
-                          <td>Sueli Nascimento Campagnoli</td>
+                          <td>Silvania Cintra</td>
+                          <td>Matemática</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
+                        </tr>
+                        <tr>
+                          <td>Silvia Cristina Meneguetti Berti</td>
+                          <td>Matemática</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
+                          <td>Sonia Marta Dantas Dos Santos</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
+                          <td>Sueli Nascimento Campagnoli</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Araçatuba</td>
                         </tr>
                         <tr><td><h1>T</h1></td></tr>
                         <tr>
-                          <td>Tálita Aparecida Ali Rodrigues</td>
+                          <td>Telma Regina Fagundes Da Silva</td>
+                          <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
-                          <td>presencial</td>
-                        </tr>
-                        <tr>
-                          <td>Telma Regina Fagundes da Silva</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
                         </tr>
                         <tr><td><h1>V</h1></td></tr>
                         <tr>
-                          <td>Valdelice Pereira de Souza Constantino</td>
+                          <td>Vânia Maria Soares</td>
+                          <td>Gestão Escolar</td>
                           <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Valeria Moraes Cavalcante Dourado</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Vanda Renata Simões Pessoa Rosa</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>Vilma Machado Barboza</td>
-                          <td>Araçatuba</td>
-                          <td>online</td>
-                        </tr>
-                        <tr>
-                          <td>VinÍcio Manoel Dos Santos Lima</td>
-                          <td>Araçatuba</td>
-                          <td>presencial</td>
                         </tr>
                       </tbody>
                     </table>
+
+
+                    
                   </div>
                   
                 </div>
