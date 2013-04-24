@@ -130,7 +130,9 @@ jQuery(document).ready(function() {
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
 		                    <h3><?php //echo $asset->getTitle() ?></h3>
-		                    <p><iframe width="640" height="390" src="http://www.youtube.com/embed/amIbtrPq5aE" frameborder="0" allowfullscreen></iframe></p>
+		                    <?php if(isset($displays['yt-live'])): ?>
+		                      <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
+		                    <?php endif; ?>
 		                    <br />
 		                    <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
           				</div>
