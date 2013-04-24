@@ -145,13 +145,14 @@
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
 
-                <div style="position: absolute; top: 323px; left: 46px; color: black;"><a href="http://twitter.com/jornal_cultura" target="_blank" style="color: black;">@jornal_cultura</a></div>
+                
+                <!--<div style="position: absolute; top: 323px; left: 46px; color: black;"><a href="http://twitter.com/jornal_cultura" target="_blank" style="color: black;">@jornal_cultura</a></div>
                 <div style="position: absolute; top: 324px; left: 45px; color: white;"><a href="http://twitter.com/jornal_cultura" target="_blank" style="color: white;">@jornal_cultura</a></div>
 
                 <div style="position: absolute; top: 253px; right: 334px; color: black;">AO VIVO</div>
                 <div style="position: absolute; top: 254px; right: 335px; color: white;">AO VIVO</div>
-                <div style="position: absolute; top: 270px; right: 330px;"><img style="" src="http://midia.cmais.com.br/programs/f37ca62623a12e323f1b20b5d7c26ba0a6fbba84.png"></div>
-                
+                <div style="position: absolute; top: 270px; right: 330px;"><img style="" src="http://midia.cmais.com.br/programs/f37ca62623a12e323f1b20b5d7c26ba0a6fbba84.png"></div>-->
+               
                 <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
                 <?php /*
                 <div id="live"></div>

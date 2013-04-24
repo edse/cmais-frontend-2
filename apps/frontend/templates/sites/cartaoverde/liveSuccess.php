@@ -17,10 +17,11 @@ function stream1() {
   so.addParam('allowfullscreen','true');
   so.addParam('wmode','transparent');
   so.write('boxVideoWrapper');
-  $('.transmissaoH li a').removeClass('ativo');
+  $('.transmissaoH li a').removeClass('ativo'); 
   $('#stream_tv').addClass('ativo');
 }
 
+/*
 function updateTweets() {
   $.ajax({
     url: "/ajax/tweetmonitor",
@@ -30,7 +31,7 @@ function updateTweets() {
     }
   });
 }
-
+*/
 function broadcastEnd(){
   var request = $.ajax({
     data: {
@@ -46,15 +47,15 @@ function broadcastEnd(){
   });
 }
   
-jQuery(document).ready(function() {
-  updateTweets();
-  var t=setInterval("updateTweets()",60000);
-  stream1();
+//jQuery(document).ready(function() {
+  //updateTweets();
+  //var t=setInterval("updateTweets()",60000);
+//  stream1();
   
   // broadcast
-  broadcastEnd();
-  var t2=setInterval("broadcastEnd()", 60000);
-});
+  //broadcastEnd();
+ // var t2=setInterval("broadcastEnd()", 60000);
+//});
 </script>
 
     
@@ -130,7 +131,9 @@ jQuery(document).ready(function() {
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
 		                    <h3><?php //echo $asset->getTitle() ?></h3>
-		                    <p><?php //echo $asset->getDescription() ?></p>
+		                    <?php if(isset($displays['yt-live'])): ?>
+		                      <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
+		                    <?php endif; ?>
 		                    <br />
 		                    <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
           				</div>
@@ -140,7 +143,9 @@ jQuery(document).ready(function() {
           				<div class="repercussao">
           					<div class="grid1">
           					  <a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>	
-			                  <div id="twitter"></div>
+			                  <!--div id="twitter"></div-->
+                         <a class="twitter-timeline" href="https://twitter.com/search?q=%40cartaoverde" data-widget-id="317362402159108096">Tweets about "@cartaoverde"</a>
+                          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>			                  
 			            	</div>
           				</div>
           				<style type="text/css">

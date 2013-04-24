@@ -30,7 +30,7 @@
       <ul>
         <li><a href="<?php echo $siteUrl ?>/natv" title="Na TV">Na TV</a></li>
         <li><a href="<?php echo $siteUrl ?>/naslojas" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="http://cocoricoshow.com.br/" title="No Teatro" target="_blank">No Teatro</a></li>
+        <!--li><a href="http://cocoricoshow.com.br/" title="No Teatro" target="_blank">No Teatro</a></li-->
         <li><a href="<?php echo $siteUrl ?>/nocinema" title="Nos Cinemas">No Cinema</a></li>
         <li><a href="<?php echo $siteUrl ?>/naweb" title="Na Web">Na Web</a></li>
         <li><a href="<?php echo $siteUrl ?>/agenda" title="Agenda">Agenda</a></li>

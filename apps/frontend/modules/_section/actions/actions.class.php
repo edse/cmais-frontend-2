@@ -794,8 +794,7 @@ class _sectionActions extends sfActions
   
           $this->letter = $request->getParameter('letter');
           
-          if($this->letter == "#"){
-            
+          if($this->letter == "#"){  
           
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.title')
@@ -804,7 +803,8 @@ class _sectionActions extends sfActions
               ->andWhere('sa.section_id = ?', $this->section->id)
               ->andWhere('sa.asset_id = a.id')
               ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.description');
+              ->orderBy('a.title');
+              //->orderBy('a.description');
 
             $countQuery = Doctrine_Query::create()
               ->select('COUNT(DISTINCT description) as description')
@@ -813,7 +813,8 @@ class _sectionActions extends sfActions
               ->andWhere('sa.section_id = ?', $this->section->id)
               ->andWhere('sa.asset_id = a.id')
               ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.description');
+              ->orderBy('a.title');
+              //->orderBy('a.description');
 
             /*
             $this->assetsQuery = Doctrine_Query::create()
@@ -842,7 +843,8 @@ class _sectionActions extends sfActions
               ->where('sa.section_id = ?', $this->section->id)
               ->andWhere('sa.asset_id = a.id')
               ->andWhere('a.is_active = ?', 1)
-              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%')
+              ->orderBy('a.title');
   
             $countQuery = Doctrine_Query::create()
               ->select('COUNT(DISTINCT description) as description')
@@ -850,7 +852,8 @@ class _sectionActions extends sfActions
               ->where('sa.section_id = ?', $this->section->id)
               ->andWhere('sa.asset_id = a.id')
               ->andWhere('a.is_active = ?', 1)
-              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%');
+              ->andWhere('slug LIKE ?', $request->getParameter('letter').'%-por-%')
+              ->orderBy('a.title');
               
             /*
             $this->assetsQuery = Doctrine_Query::create()

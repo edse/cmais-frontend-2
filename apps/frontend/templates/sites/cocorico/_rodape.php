@@ -30,7 +30,7 @@
       <ul>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/natv', '#myModal a.adulto');" data-toggle="modal"  title="Na TV">Na TV</a></li>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/naslojas', '#myModal a.adulto');" data-toggle="modal" title="Nas lojas">Nas lojas</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('http://cocoricoshow.com.br/', '#myModal a.adulto');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li>
+        <!--li><a href="#myModal" onclick="javascript:changeUrl('http://cocoricoshow.com.br/', '#myModal a.adulto');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li-->
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/nocinema', '#myModal a.adulto');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/naweb', '#myModal a.adulto');" data-toggle="modal" title="Na Web">Na Web</a></li>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/agenda', '#myModal a.adulto');" data-toggle="modal" title="Agenda">Agenda</a></li>
