@@ -59,7 +59,7 @@
                     <a name="aracatuba"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Araçatuba</h5>
-                    <p><strong>Local: </strong>---<br />--- </p> 
+                    <p><strong>Local: </strong>UNIP (UNIVERSIDADE PAULISTA)<br />Av. Baguaçu, 1939, Jardim Alvorada<br>CEP 16018-555 - Araçatuba/SP</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
