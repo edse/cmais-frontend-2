@@ -17,7 +17,7 @@ function stream1() {
   so.addParam('allowfullscreen','true');
   so.addParam('wmode','transparent');
   so.write('boxVideoWrapper');
-  $('.transmissaoH li a').removeClass('ativo');
+  $('.transmissaoH li a').removeClass('ativo'); 
   $('#stream_tv').addClass('ativo');
 }
 
@@ -49,11 +49,11 @@ function broadcastEnd(){
 jQuery(document).ready(function() {
   updateTweets();
   var t=setInterval("updateTweets()",60000);
-  stream1();
+//  stream1();
   
   // broadcast
-  broadcastEnd();
-  var t2=setInterval("broadcastEnd()", 60000);
+  //broadcastEnd();
+ // var t2=setInterval("broadcastEnd()", 60000);
 });
 </script>
 
@@ -130,7 +130,9 @@ jQuery(document).ready(function() {
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
 		                    <h3><?php //echo $asset->getTitle() ?></h3>
-		                    <p><?php //echo $asset->getDescription() ?></p>
+		                    <?php if(isset($displays['yt-live'])): ?>
+		                      <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
+		                    <?php endif; ?>
 		                    <br />
 		                    <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
           				</div>

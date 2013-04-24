@@ -1,16 +1,6 @@
 <meta http-equiv="pragma" content="no-cache" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
 
-    <?php
-      // live
-      $live = Doctrine_Query::create()
-      ->select('s.*')
-      ->from('Schedule s')
-      ->where('s.channel_id = ?', (int)1)
-      ->andWhere('s.date_start <= ? AND s.date_end > ?', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
-      ->fetchOne();
-    ?>
-  
   <div class="bgtopo2">
   <!--container--> 
   <div class="container">
@@ -45,16 +35,12 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
-
-          <?php if ($live->Program->id == "2" ): ?>  
-            <span>NO AR</span>
-          <?php endif; ?>
-
+            <span id="jornaldacultura" style="display: none;">NO AR</span>
           </div>
           <p>
             Os principais fatos do <br>dia no Brasil e no mundo.
             <br>
-            Segunda a sábado, às 21h
+            Segunda a sábado, às 21h.
           </p>
         </a>
       </div> 
@@ -67,14 +53,12 @@
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
-            <?php if ($live->Program->id == "75" ): ?>  
-            <span>NO AR</span>
-            <?php endif; ?>
+            <span id="rodaviva" style="display: none;">NO AR</span>
           </div>
           <p> 
             O Brasil passa por aqui.
             <br>
-            Segunda às 22h 
+            Segunda às 22h.
           </p>
         </a>
       </div>
@@ -87,14 +71,12 @@
           </div>
           <div class="live-image">
            <img src="http://midia.cmais.com.br/programs/6c50d7937cd92a91939f94c3ef10aee1b2e06e47.jpg" alt="Cartão Verde">
-           <?php if ($live->Program->id == "77" ): ?>  
-           <span>NO AR</span>
-           <?php endif; ?>
+           <span id="cartaoverde" style="display: none;">NO AR</span>
           </div>
           <p>
             Futebol discutido com inteligência<br> e bom humor.
             <br>
-            Terça, às 22h
+            Terça, às 22h.
           </p>
         </a>
       </div>
@@ -142,21 +124,37 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
 
   </div>
   <!--/container-->
-  <!--BUBBLE BOOKMARK-->
-  <link rel="stylesheet" href="/portal/js/bubblemark/css/add2home.css">
-  <LINK REL="apple-touch-icon" HREF="/portal/images/capaPrograma/segundatela/index/FavIcon/48by48.ico" />
-  <script type="text/javascript">
-  var addToHomeConfig = {
-    autostart:true,
-    animationIn: 'bubble',
-    animationOut: 'drop',
-    lifespan:20000,
-    expire:0,
-    arrow:true,
-    touchIcon: false,
-    message:'Instale esta Web App no seu <strong>%device</strong>. Clique em %icon e <strong>Adicionar à Tela Início</strong> .'
-  };
-  </script>
-  <script type="application/javascript" src="/portal/js/bubblemark/add2home.js"></script>
-  <!--BUBBLE BOOKMARK-->
 </div>
+
+<script>
+jQuery(document).ready(function() {
+  $.ajax({
+    url: "/ajax/islive",
+    data: "program_id=2",
+    success: function(data) {
+      if(data==1)
+        $('#jornaldacultura').fadeIn('slow');
+      else{
+        $.ajax({
+          url: "/ajax/islive",
+          data: "program_id=75",
+          success: function(data) {
+            if(data==1)
+              $('#rodaviva').fadeIn('slow');
+            else{
+              $.ajax({
+                url: "/ajax/islive",
+                data: "program_id=77",
+                success: function(data) {
+                  if(data==1)
+                    $('#cartaoverde').fadeIn('slow');
+                }
+              });
+            }
+          }
+        });
+      }
+    }
+  });
+});
+</script>
