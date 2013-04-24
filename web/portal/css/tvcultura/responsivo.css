@@ -37,6 +37,9 @@
 #footer .span2 { width:18%; }
 #footer .span2.logo { width:7%; }
 
+.navbar.navbar-fixed-top .container { width:26%; }
+.navbar.navbar-fixed-top .container .nav { margin-left:0 !important; }
+
 @media screen and (max-width: 1024px){
   #footer .span2 { width:18%; float:left; }
   #footer .span2.logo { width:7%; }
@@ -64,6 +67,7 @@
 */
 
 @media screen and (max-width: 768px){
+ .navbar.navbar-fixed-top .container { width:100%; }
  .nav-collapse{width: 174px;margin: 0 auto;}
  .navbar-inverse .nav > li > a {float:left;} 
  #footer .span2 { width:33%;  } 
