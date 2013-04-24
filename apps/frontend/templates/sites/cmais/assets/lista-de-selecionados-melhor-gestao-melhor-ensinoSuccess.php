@@ -80,13 +80,11 @@
                           <td>Matemática</td>
                           <td>Araçatuba</td>
                         </tr>
-                        <tr><td><h1>N</h1></td></tr>
                         <tr>
-                          <td>ngela Maria De Oliveira Barbosa Nunes</td>
+                          <td>Ângela Maria De Oliveira Barbosa Nunes</td>
                           <td>Matemática</td>
                           <td>Araçatuba</td>
                         </tr>
-                        <tr><td><h1>A</h1></td></tr>
                         <tr>
                           <td>Aparecida Odete Thomé Borges Mariano</td>
                           <td>Língua Portuguesa</td>
