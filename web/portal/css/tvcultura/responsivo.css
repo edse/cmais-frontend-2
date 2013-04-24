@@ -37,10 +37,11 @@
 #footer .span2 { width:18%; }
 #footer .span2.logo { width:7%; }
 
-.navbar.navbar-fixed-top .container { width:26%; }
+.navbar.navbar-fixed-top .container { width:531px; }
 .navbar.navbar-fixed-top .container .nav { margin-left:0 !important; }
 
 @media screen and (max-width: 1024px){
+  .navbar.navbar-fixed-top .container  { width: 100%; }
   #footer .span2 { width:18%; float:left; }
   #footer .span2.logo { width:7%; }
   #footer .container { padding:0 2%; }
