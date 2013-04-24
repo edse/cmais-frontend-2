@@ -21,6 +21,7 @@ function stream1() {
   $('#stream_tv').addClass('ativo');
 }
 
+/*
 function updateTweets() {
   $.ajax({
     url: "/ajax/tweetmonitor",
@@ -30,7 +31,7 @@ function updateTweets() {
     }
   });
 }
-
+*/
 function broadcastEnd(){
   var request = $.ajax({
     data: {
@@ -46,15 +47,15 @@ function broadcastEnd(){
   });
 }
   
-jQuery(document).ready(function() {
-  updateTweets();
-  var t=setInterval("updateTweets()",60000);
+//jQuery(document).ready(function() {
+  //updateTweets();
+  //var t=setInterval("updateTweets()",60000);
 //  stream1();
   
   // broadcast
   //broadcastEnd();
  // var t2=setInterval("broadcastEnd()", 60000);
-});
+//});
 </script>
 
     
@@ -143,6 +144,8 @@ jQuery(document).ready(function() {
           					<div class="grid1">
           					  <a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>	
 			                  <div id="twitter"></div>
+                         <a class="twitter-timeline" href="https://twitter.com/search?q=%40cartaoverde" data-widget-id="317362402159108096">Tweets about "@cartaoverde"</a>
+                          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>			                  
 			            	</div>
           				</div>
           				<style type="text/css">
