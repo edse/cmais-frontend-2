@@ -58,7 +58,7 @@
                     <a name="aracatuba"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Araçatuba</h5>
-                    <p><strong>Local: UNIP</strong> - Av. Baguaçu, 1939 - Jardim Alvorada - Araçatuba - SP - CEP 16018-555</p> 
+                    <p><strong>Local:</strong> UNIP - Av. Baguaçu, 1939 - Jardim Alvorada - Araçatuba - SP - CEP 16018-555</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -285,7 +285,7 @@
                     <a name="bauru"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Bauru</h5>
-                    <p><strong>Local: UNIP</strong> - Rua Luiz Levorato, 2-140 - Chácaras Bauruenses Rod. Marechal Rondon, km 335 - Bauru - SP - CEP 17048-290</p> 
+                    <p><strong>Local:</strong> UNIP - Rua Luiz Levorato, 2-140 - Chácaras Bauruenses Rod. Marechal Rondon, km 335 - Bauru - SP - CEP 17048-290</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -934,7 +934,7 @@
                     <a name="campinas"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Campinas</h5>
-                    <p><strong>Local: UNIP CAMPINAS CAMPUS II</strong> - Av. Comendador Enzo Ferrari, 280 – Swift - Campinas – SP - CEP 13045-770</p> 
+                    <p><strong>Local:</strong> UNIP CAMPINAS CAMPUS II - Av. Comendador Enzo Ferrari, 280 – Swift - Campinas – SP - CEP 13045-770</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -1876,7 +1876,7 @@
                     <a name="franca"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Franca</h5>
-                    <p><strong>Local: FACULDADE DE DIREITO DE FRANCA</strong> - Avenida Major Nicacio, 2377  - Bairro São José - Franca - SP - CEP 14401-135</p> 
+                    <p><strong>Local:</strong> FACULDADE DE DIREITO DE FRANCA - Avenida Major Nicacio, 2377  - Bairro São José - Franca - SP - CEP 14401-135</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -2184,7 +2184,7 @@
                     <a name="presidenteprudente"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Presidente Prudente</h5>
-                    <p><strong>Local: UNITOLEDO FACULDADE INTEGRADA ANTÔNIO EUFRÁSIO DE TOLEDO</strong> - Praça Raul Furquim, 09 - Bairro Vila Furquim - Presidente Prudente - SP - CEP 19030-430</p> 
+                    <p><strong>Local:</strong> UNITOLEDO FACULDADE INTEGRADA ANTÔNIO EUFRÁSIO DE TOLEDO - Praça Raul Furquim, 09 - Bairro Vila Furquim - Presidente Prudente - SP - CEP 19030-430</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -2522,7 +2522,7 @@
                     <a name="santos"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Santos</h5>
-                    <p><strong>Local: UNIP SANTOS - CAMPUS II – RANGEL</strong> - Av. Francisco Manoel, s/nº - Vila Mathias - Santos – SP – CEP 11045-300</p> 
+                    <p><strong>Local:</strong> UNIP SANTOS - CAMPUS II – RANGEL - Av. Francisco Manoel, s/nº - Vila Mathias - Santos – SP – CEP 11045-300</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -2812,7 +2812,7 @@
                     <a name="saojosedoriopreto"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São José do Rio Preto</h5>
-                    <p><strong>Local: UNIP</strong> - Av. Pres. Juscelino Kubitschek de Oliveira, s/nº - Jardim Tarraf II - São José do Rio Preto – SP - CEP 15091-450</p> 
+                    <p><strong>Local:</strong> UNIP - Av. Pres. Juscelino Kubitschek de Oliveira, s/nº - Jardim Tarraf II - São José do Rio Preto – SP - CEP 15091-450</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -3292,7 +3292,7 @@
                     <a name="saojosedoscampos"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São José dos Campos</h5>
-                    <p><strong>Local: UNIP</strong> - Rod. Presidente Dutra, km 157,5 - Pista Sul - São José dos Campos – SP - CEP 12240-420</p> 
+                    <p><strong>Local:</strong> UNIP - Rod. Presidente Dutra, km 157,5 - Pista Sul - São José dos Campos – SP - CEP 12240-420</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -3884,7 +3884,7 @@
                     <a name="saopaulo"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">São Paulo</h5>
-                    <p><strong>Local: PUC-SP</strong> - Rua Ministro Godoy, 969 - Perdizes - São Paulo - SP - CEP 05014-901</p> 
+                    <p><strong>Local:</strong> PUC-SP - Rua Ministro Godoy, 969 - Perdizes - São Paulo - SP - CEP 05014-901</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
@@ -8417,7 +8417,7 @@
                     <a name="sorocaba"></a>
                     <a href="#" class="topo">Voltar ao topo</a>
                     <h5 style="font-size:28px">Sorocaba</h5>
-                    <p><strong>Local: PUC-SP</strong> - Rua Joubert Wey, 290 - Sorocaba – SP - CEP 18030-070</p> 
+                    <p><strong>Local:</strong> PUC-SP - Rua Joubert Wey, 290 - Sorocaba – SP - CEP 18030-070</p> 
                     <table style="width: 100%; margin-top:35px">
                       <thead>
                         <tr>
