@@ -197,30 +197,30 @@ class ajaxActions extends sfActions
         if($schedules[0]->program_id == 542){
           die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
         }
-				
+        
         if($schedules[0]->program_id == 788){
           die("self.location.href='http://tvcultura.cmais.com.br/sarahjane/aovivo'");
         }
         
-      	$block = false;
-      	if($schedules[0]->getIsGeoblocked()){
-      		require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
-      		$gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
-      		//"este conteúdo não está liberado para sua região"
-      		if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
-      			$block = true;
-      		}
-      		geoip_close($gi);
-      	}
+        $block = false;
+        if($schedules[0]->getIsGeoblocked()){
+          require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
+          $gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
+          //"este conteúdo não está liberado para sua região"
+          if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
+            $block = true;
+          }
+          geoip_close($gi);
+        }
 
         if($schedules[0]->program_id == 77){
           die("self.location.href='http://tvcultura.cmais.com.br/cartaoverde/aovivo'");
         }        
                
         if($schedules[0]->program_id == 75){
-        	if (date('w') != "5") { // se dia diferente de sexta, redireciona...
-	          die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
-					}
+          if (date('w') != "5") { // se dia diferente de sexta, redireciona...
+            die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
+          }
         }
        
         $next = Doctrine_Query::create()
@@ -236,7 +236,7 @@ class ajaxActions extends sfActions
 
         $offset = $this->datediff($next[0]->getDateStart(), "NOW");
         if($offset){
-        	$return .= "
+          $return .= "
                   $('#countdown_dashboard').countDown({
                     targetOffset: {
                       'day':    ".$offset->d.",
@@ -251,26 +251,26 @@ class ajaxActions extends sfActions
         }
         
         if($block){
-        	$return .= "
+          $return .= "
           $('#livestream2').html('Este conteúdo não está liberado para sua região');
           $('#livestream2').show();
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
         }else{
-        	$return .= "
-        	var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
-        	so.addVariable('controlbar', 'over');
-        	so.addVariable('autostart', 'true');
-        	so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-        	so.addVariable('file', '".$streaming."');
-        	so.addVariable('type', 'video');
-        	so.addParam('allowscriptaccess','always');
-        	so.addParam('allowfullscreen','true');
-        	so.addParam('wmode','transparent');
-        	so.write('livestream2');
-        	$('#livestream2').show();
-        	var interval=self.setInterval('checkStreamingEnd()', 60000);
-        	";
+          $return .= "
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+          so.addVariable('controlbar', 'over');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', '".$streaming."');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','true');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+          $('#livestream2').show();
+          var interval=self.setInterval('checkStreamingEnd()', 60000);
+          ";
         }
       }else{
         $next = Doctrine_Query::create()
@@ -917,78 +917,78 @@ class ajaxActions extends sfActions
         $q->orderBy('a.id desc');
         $q->limit($items);
         $q->offset($start);
-      	$assets = $q->execute();
+        $assets = $q->execute();
       }
       elseif($asset_id > 0){
-      	$asset = Doctrine::getTable('Asset')->findOneById($asset_id);
-      	$q = Doctrine_Query::create()
-	      	->select('a.*, ra.id related_asset_id, ra.type related_asset_type, ra.description related_asset_description')
-	      	->from('Asset a, RelatedAsset ra')
-	      	->where('a.id = ra.asset_id')
-	      	->andWhere('ra.parent_asset_id = ?', (int)$asset_id)
-	      	->groupBy('ra.id')
-        	->orderBy('a.id')
-        	->limit($items)
-        	->offset($start);
-      	$assets = $q->execute();
+        $asset = Doctrine::getTable('Asset')->findOneById($asset_id);
+        $q = Doctrine_Query::create()
+          ->select('a.*, ra.id related_asset_id, ra.type related_asset_type, ra.description related_asset_description')
+          ->from('Asset a, RelatedAsset ra')
+          ->where('a.id = ra.asset_id')
+          ->andWhere('ra.parent_asset_id = ?', (int)$asset_id)
+          ->groupBy('ra.id')
+          ->orderBy('a.id')
+          ->limit($items)
+          ->offset($start);
+        $assets = $q->execute();
       }
       if($assets){
-      	/*
+        /*
         // Album de natal Quintaldacultura
         if($asset->Site->getSlug() == "quintaldacultura"){
-        	foreach($assets as $k=>$d){
-        		if($k%3 == 0){
-        			$return .= '<div class="albumBox">';
-        			$return .= '<span class="luzVer"></span>';
-        			$return .= '<div class="albumFoto">';
-        		}
-						$return .= '<div class="foto ';
-						if($k%3 == 0) $return .= 'amarelo';
-						elseif($k%3 == 1) $return .= 'verde';
-						elseif($k%3 == 2) $return .= 'vermelho';
-						$return .= '">';
-						$return .= '<a href="javascript:;">';
-						$return .= '<img src="'.$d->retriveImageUrlByImageUsage('image-6-b').'" title="'.$d->getTitle().'" alt="'.$d->getTitle().'" />';
-						if($d->AssetImage->getHeadline() != ""){
-							$return .= '<span class="legenda">';
-							$return .= '<p style="width:200px;">'.$d->AssetImage->getHeadline().'</p>';
-							$return .= '</span>';
-						}
-						
-						$return .= '</a>';
-						$return .= '<div class="box-info">';
-						$return .= '<h3 class="nome">'.$d->getTitle().'</h3>';
-						$return .= '<p class="local">'.$d->getDescription().'</p>';
-						$return .= '</div></div>';
-            if($k%3 == 2){
-							$return .= '</div></div>';
+          foreach($assets as $k=>$d){
+            if($k%3 == 0){
+              $return .= '<div class="albumBox">';
+              $return .= '<span class="luzVer"></span>';
+              $return .= '<div class="albumFoto">';
             }
-	        }
+            $return .= '<div class="foto ';
+            if($k%3 == 0) $return .= 'amarelo';
+            elseif($k%3 == 1) $return .= 'verde';
+            elseif($k%3 == 2) $return .= 'vermelho';
+            $return .= '">';
+            $return .= '<a href="javascript:;">';
+            $return .= '<img src="'.$d->retriveImageUrlByImageUsage('image-6-b').'" title="'.$d->getTitle().'" alt="'.$d->getTitle().'" />';
+            if($d->AssetImage->getHeadline() != ""){
+              $return .= '<span class="legenda">';
+              $return .= '<p style="width:200px;">'.$d->AssetImage->getHeadline().'</p>';
+              $return .= '</span>';
+            }
+            
+            $return .= '</a>';
+            $return .= '<div class="box-info">';
+            $return .= '<h3 class="nome">'.$d->getTitle().'</h3>';
+            $return .= '<p class="local">'.$d->getDescription().'</p>';
+            $return .= '</div></div>';
+            if($k%3 == 2){
+              $return .= '</div></div>';
+            }
+          }
         }
         else{
         */
-	        foreach($assets as $a){
-	          if($request->getParameter('piadas')==1){
-	            ?>
+          foreach($assets as $a){
+            if($request->getParameter('piadas')==1){
+              ?>
               <li>
                 <p><?php echo $a->AssetContent->getContent()?></p>
                 <span><?php echo $a->getDescription()?></span>
               </li>
               <span class="picote"></span>
-	            <?php
-	          }else{
+              <?php
+            }else{
               $return .= '<li><a href="'.$a->retriveUrl().'" class="aImg" title="'.$a->getDescription().'">';
               $return .= '<img alt="'.$a->getTitle().'" src="'.$a->retriveImageUrlByImageUsage("image-3-b").'"></a>';
               //$return .= '<a href="/'.$a->getSlug().'" class="aTxt"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
               $return .= '<a href="/'.$a->getSlug().'" class="aTxt" title="'.$a->Site->getTitle().'"><span class="nomeRlacionado">'.$a->getTitle().'</span>';
               //<span class="nomeItem">'.$a->getDescription().'</span>
               $return .= '</a></li>';
-	          }
+            }
             
-	        }
-					
-					$return .= '<script>$(document).ready(function(){ $(".loading.inicial").remove(); });</script>';
-					
+          }
+          
+          $return .= '<script>$(document).ready(function(){ $(".loading.inicial").remove(); });</script>';
+          
         //}
       }
       echo $return;
@@ -997,55 +997,55 @@ class ajaxActions extends sfActions
   }
   
   public function executeMobilegetvideos(sfWebRequest $request){
-  	
-   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
-		
+    
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+    
     if($request->isXmlHttpRequest()){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
       $page = intval($request->getParameter('page'));
-			
+      
       if($page >= 1)
         $start = ($page * $items)-$items;
-			
+      
       if($site > 0){
         $assets = Doctrine_Query::create()
-					->select('a.*')
-					->from('Asset a, AssetVideo av')
-					->where('a.asset_type_id = 6')
-					->andWhere('av.asset_id = a.id')
-					->andWhere('a.is_active = ?', 1)
-					->andWhere('a.site_id = ?',$site)
-					->andWhere('av.youtube_id != ""')
-        	->orderBy('a.id desc')
-        	->limit($items)
-        	->offset($start)
-        	->execute();
-					
+          ->select('a.*')
+          ->from('Asset a, AssetVideo av')
+          ->where('a.asset_type_id = 6')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.site_id = ?',$site)
+          ->andWhere('av.youtube_id != ""')
+          ->orderBy('a.id desc')
+          ->limit($items)
+          ->offset($start)
+          ->execute();
+          
         foreach($assets as $d){
-					$return .= '							<!--VIDEO ITEM-->';
-					$return .= '							<li>';
-					$return .= '								<a href="http://www.youtube.com/embed/' . $d->AssetVideo->getYoutubeId() . '?rel=0">';
-					$return .= '									<fieldset class="ui-grid-a">';
-					$return .= '										<div class="ui-block-a">';
-					$return .= '											<div class="fotinho">';
-					$return .= '												<img class="" src="http://img.youtube.com/vi/' . $d->AssetVideo->getYoutubeId() .'/0.jpg" alt="' . $d->getTitle() . '" width="100%">';
-					$return .= '											</div>';
-					$return .= '										</div>';
-					$return .= '										<div class="ui-block-b video">';
-					$return .= '											<h4>' . $d->getTitle() . '</h4>';
-					if($d->getCreatedAt() != "")
-						$return .= '											<p class="data">' . format_datetime($d->getCreatedAt(),"dd/MM/yyyy HH:mm:ss") . '</p>';
-					if ($d->AssetVideo->getDuration() != "")
-						$return .= '											<p class="duracao">Duração: ' . format_datetime($d->AssetVideo->getDuration(),"HH:mm:ss") . '</p>';
- 					$return .= '										</div>';
-					$return .= '									</fieldset>';
-					$return .= '								</a>';
-					$return .= '                <div class="linha2"></div>';
-					$return .= '							</li>';
-					$return .= '							<!--/VIDEO ITEM-->';
+          $return .= '              <!--VIDEO ITEM-->';
+          $return .= '              <li>';
+          $return .= '                <a href="http://www.youtube.com/embed/' . $d->AssetVideo->getYoutubeId() . '?rel=0">';
+          $return .= '                  <fieldset class="ui-grid-a">';
+          $return .= '                    <div class="ui-block-a">';
+          $return .= '                      <div class="fotinho">';
+          $return .= '                        <img class="" src="http://img.youtube.com/vi/' . $d->AssetVideo->getYoutubeId() .'/0.jpg" alt="' . $d->getTitle() . '" width="100%">';
+          $return .= '                      </div>';
+          $return .= '                    </div>';
+          $return .= '                    <div class="ui-block-b video">';
+          $return .= '                      <h4>' . $d->getTitle() . '</h4>';
+          if($d->getCreatedAt() != "")
+            $return .= '                      <p class="data">' . format_datetime($d->getCreatedAt(),"dd/MM/yyyy HH:mm:ss") . '</p>';
+          if ($d->AssetVideo->getDuration() != "")
+            $return .= '                      <p class="duracao">Duração: ' . format_datetime($d->AssetVideo->getDuration(),"HH:mm:ss") . '</p>';
+          $return .= '                    </div>';
+          $return .= '                  </fieldset>';
+          $return .= '                </a>';
+          $return .= '                <div class="linha2"></div>';
+          $return .= '              </li>';
+          $return .= '              <!--/VIDEO ITEM-->';
         }
       }
       echo $return;
@@ -1054,60 +1054,60 @@ class ajaxActions extends sfActions
   }
 
   public function executeMobilegetcontents(sfWebRequest $request){
-   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
-   	require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
-		
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
+    
     if($request->isXmlHttpRequest()){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
       $page = intval($request->getParameter('page'));
-			
+      
       if($page >= 1)
         $start = ($page * $items)-$items;
-			
+      
       if( $site > 0 && !in_array($site,array('67','267','976','19')) ){
         $assets = Doctrine_Query::create()
-					->select('a.*')
-					->from('Asset a, AssetContent ac')
-					->where('a.asset_type_id = 1')
-					->andWhere('ac.asset_id = a.id')
-					->andWhere('a.is_active = ?', 1)
-					->andWhere('a.site_id = ?',$site)
-        	->orderBy('a.id desc')
-        	->limit($items)
-        	->offset($start)
-        	->execute();
-					
+          ->select('a.*')
+          ->from('Asset a, AssetContent ac')
+          ->where('a.asset_type_id = 1')
+          ->andWhere('ac.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.site_id = ?',$site)
+          ->orderBy('a.id desc')
+          ->limit($items)
+          ->offset($start)
+          ->execute();
+          
         foreach($assets as $d){
-					$return .= '							<!--ITEM NOTICIA-->';
-					$return .= '							<li>';
-					$return .= '								<a href="/'. $d->getSlug() . '" data-rel="external" teste>';
-					$return .= '									<fieldset class="ui-grid-a">';
-					if ($d->retriveImageUrlByImageUsage("image-1-b")) {
-						$return .= '										<!--FOTO-->';
-						$return .= '										<div class="ui-block-a">';
-						$return .= '											<div class="fotinho">';
-						$return .= '												<img src="' . $d->retriveImageUrlByImageUsage("image-1-b") .'" alt="' . $d->getTitle() . '" width="100%">';
-						$return .= '											</div>';
-						$return .= '										</div>';
-						$return .= '										<!--/FOTO-->';
-						$return .= '										<!--MANCHETE-->';
-						$return .= '										<div class="ui-block-b">';
-					}
-					else {
-						$return .= '										<!--MANCHETE-->';
-						$return .= '										<div class="ui-block-b sfoto">';
-					}
-					$return .= '											<p class="foto">' . $d->getTitle() . '</p>';
-					$return .= '										</div>';
-					$return .= '										<!--/MANCHETE-->';   
-					$return .= '									</fieldset>';
-					$return .= '									<div class="linha2"></div>';
-					$return .= '								</a>';
-					$return .= '							</li>';
-					$return .= '							<!--/ITEM NOTICIA-->';
+          $return .= '              <!--ITEM NOTICIA-->';
+          $return .= '              <li>';
+          $return .= '                <a href="/'. $d->getSlug() . '" data-rel="external" teste>';
+          $return .= '                  <fieldset class="ui-grid-a">';
+          if ($d->retriveImageUrlByImageUsage("image-1-b")) {
+            $return .= '                    <!--FOTO-->';
+            $return .= '                    <div class="ui-block-a">';
+            $return .= '                      <div class="fotinho">';
+            $return .= '                        <img src="' . $d->retriveImageUrlByImageUsage("image-1-b") .'" alt="' . $d->getTitle() . '" width="100%">';
+            $return .= '                      </div>';
+            $return .= '                    </div>';
+            $return .= '                    <!--/FOTO-->';
+            $return .= '                    <!--MANCHETE-->';
+            $return .= '                    <div class="ui-block-b">';
+          }
+          else {
+            $return .= '                    <!--MANCHETE-->';
+            $return .= '                    <div class="ui-block-b sfoto">';
+          }
+          $return .= '                      <p class="foto">' . $d->getTitle() . '</p>';
+          $return .= '                    </div>';
+          $return .= '                    <!--/MANCHETE-->';   
+          $return .= '                  </fieldset>';
+          $return .= '                  <div class="linha2"></div>';
+          $return .= '                </a>';
+          $return .= '              </li>';
+          $return .= '              <!--/ITEM NOTICIA-->';
         }
       }
       echo $return;
@@ -1135,42 +1135,42 @@ class ajaxActions extends sfActions
         ->fetchOne();
 
       if($schedules){
-      	$block = false;
-      	if($schedules->getIsGeoblocked()){
-					error_reporting(E_ALL);
-					ini_set('display_errors', '1');
-      		require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
-      		$gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
-      		//"este conteúdo não está liberado para sua região"
-      		if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
-      			$block = true;
-      		}
-      		geoip_close($gi);
-      	}
-      	
-      	if($block){
-      		$return = "
-     			$('#livestream2').html('Este conteúdo não está liberado para sua região');
-	        $('#livestream2').show();
-	        var interval=self.setInterval('checkStreamingEnd()', 60000);
-	        ";
-      	}
-      	else{
-      		$return = "
-	        var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
-	        so.addVariable('controlbar', 'over');
-	        so.addVariable('autostart', 'true');
-	        so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-	        so.addVariable('file', '".$streaming."');
-	        so.addVariable('type', 'video');
-	        so.addParam('allowscriptaccess','always');
-        	so.addParam('allowfullscreen','true');
-      		so.addParam('wmode','transparent');
-      		so.write('livestream2');
-      		$('#livestream2').show();
-      		var interval=self.setInterval('checkStreamingEnd()', 60000);
-      		";
-      	}
+        $block = false;
+        if($schedules->getIsGeoblocked()){
+          error_reporting(E_ALL);
+          ini_set('display_errors', '1');
+          require_once sfConfig::get('sf_lib_dir').'/vendor/geoip/geoip.inc';
+          $gi = geoip_open(sfConfig::get('sf_lib_dir').'/vendor/geoip/GeoIP.dat',GEOIP_STANDARD);
+          //"este conteúdo não está liberado para sua região"
+          if(geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']) != "BR"){
+            $block = true;
+          }
+          geoip_close($gi);
+        }
+        
+        if($block){
+          $return = "
+          $('#livestream2').html('Este conteúdo não está liberado para sua região');
+          $('#livestream2').show();
+          var interval=self.setInterval('checkStreamingEnd()', 60000);
+          ";
+        }
+        else{
+          $return = "
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+          so.addVariable('controlbar', 'over');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', '".$streaming."');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','true');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+          $('#livestream2').show();
+          var interval=self.setInterval('checkStreamingEnd()', 60000);
+          ";
+        }
       }
     //}
     echo $return;
@@ -1205,25 +1205,25 @@ class ajaxActions extends sfActions
   }
 
   public function executeEpg(sfWebRequest $request){
-	 date_default_timezone_set('Brazil/East');
+   date_default_timezone_set('Brazil/East');
 
-  	$date = date('Ymd');
+    $date = date('Ymd');
     $time = strtotime(date('Ymd'))+(24*60*60*7);
     //$time = strtotime(date('Ymd'));
-  	$end = date("Y-m-d 23:59:59", $time);
-  	$start = date('Y-m-d 00:00:00');
-  	$channels = array(1,3,4);
-  	
-  	$schedules = Doctrine_Query::create()
-  		->select('s.*')
-	  	->from('Schedule s')
-		  ->whereIn('s.channel_id', $channels)
-  		->andWhere('s.date_start > ?', $start)
-  		->andWhere('s.date_start < ?', $end)
-	  	->orderBy('s.date_start asc')
-  		->execute();
+    $end = date("Y-m-d 23:59:59", $time);
+    $start = date('Y-m-d 00:00:00');
+    $channels = array(1,3,4);
+    
+    $schedules = Doctrine_Query::create()
+      ->select('s.*')
+      ->from('Schedule s')
+      ->whereIn('s.channel_id', $channels)
+      ->andWhere('s.date_start > ?', $start)
+      ->andWhere('s.date_start < ?', $end)
+      ->orderBy('s.date_start asc')
+      ->execute();
   
-  	$content = <<<EOT
+    $content = <<<EOT
 <?xml version="1.0" encoding="utf-8"?>
   <tv date="{$date}000000" generator_info_name="cmais.com.br" generator_info_url="http://cmais.com.br" source_info_name="cmais+ O portal de conteúdo da Cultura" source_info_url="http://cmais.com.br">
     <channel id="59232">
@@ -1241,35 +1241,35 @@ class ajaxActions extends sfActions
 
 EOT;
   
-  	foreach($schedules as $s){
-  		$t = explode(" ",$s->date_start);
-  		$cid = 59232;
-  		if($s->getChannelId() == 3)
-  		$cid = 59233;
-  		elseif($s->getChannelId() == 4)
-  		$cid = 59234;
+    foreach($schedules as $s){
+      $t = explode(" ",$s->date_start);
+      $cid = 59232;
+      if($s->getChannelId() == 3)
+      $cid = 59233;
+      elseif($s->getChannelId() == 4)
+      $cid = 59234;
   
-  		$desc = strip_tags($s->retriveDescription());
-			if($s->getTitle() != $s->Program->getTitle())
-  			$tit = $s->Program->getTitle()." - ".$s->getTitle();
-			else
-  			$tit = $s->Program->getTitle();
-			
-			if(substr($tit, strlen($tit)-3, 3) == " - ")
-				$tit = $s->Program->getTitle();
-			else if(substr($tit, strlen($tit)-3, 3) == "-  ")
-				$tit = $s->Program->getTitle();
-			
-			$dad = str_replace("-","",$s->getDateStart());
-  		$dad = str_replace(":","",$dad);
-  		$dad = str_replace(" ","",$dad);
+      $desc = strip_tags($s->retriveDescription());
+      if($s->getTitle() != $s->Program->getTitle())
+        $tit = $s->Program->getTitle()." - ".$s->getTitle();
+      else
+        $tit = $s->Program->getTitle();
+      
+      if(substr($tit, strlen($tit)-3, 3) == " - ")
+        $tit = $s->Program->getTitle();
+      else if(substr($tit, strlen($tit)-3, 3) == "-  ")
+        $tit = $s->Program->getTitle();
+      
+      $dad = str_replace("-","",$s->getDateStart());
+      $dad = str_replace(":","",$dad);
+      $dad = str_replace(" ","",$dad);
   
-  		$gmt = strtotime($s->getDateStart());
-  		//$gmt += 60*60*3;
-  		//$gmt2 = date("YmdHis", $gmt);
-		$gmt2 = $dad;
+      $gmt = strtotime($s->getDateStart());
+      //$gmt += 60*60*3;
+      //$gmt2 = date("YmdHis", $gmt);
+    $gmt2 = $dad;
   
-  		$content .= <<<EOT
+      $content .= <<<EOT
     <programme channel="{$cid}" start="{$gmt2}">
       <title>{$tit}</title>
       <desc>{$desc}</desc>
@@ -1289,8 +1289,8 @@ EOT;
 
 EOT;
 
-  		if($cid == 59232){
-  			$content .= <<<EOT
+      if($cid == 59232){
+        $content .= <<<EOT
     <programme channel="59256" start="{$gmt2}">
       <title>{$tit}</title>
       <desc>{$desc}</desc>
@@ -1309,20 +1309,20 @@ EOT;
     </programme>
 
 EOT;
-			}
-  		
-  	}
+      }
+      
+    }
 
-  	$content .= <<<EOT
+    $content .= <<<EOT
   </tv>
 EOT;
 
-  	die(str_replace("&","",$content));
+    die(str_replace("&","",$content));
   }  
 
 
   public function executeEnquetes(sfWebRequest $request){
-  	/*
+    /*
     $request->checkCSRFProtection();
     //if(!$request->isXmlHttpRequest()) die();
 
@@ -1393,57 +1393,57 @@ EOT;
       }
 
     }
-		 * 
-		 */
- 		if($request->getParameter('opcao') > 0){
+     * 
+     */
+    if($request->getParameter('opcao') > 0){
 
-			$aa = Doctrine::getTable('AssetAnswer')->findOneById($request->getParameter('opcao'));
-			$aq = Doctrine::getTable('AssetQuestion')->findOneById($aa->AssetQuestion->id);
-	
-			$filename = "/var/frontend/web/uploads/assets/question/".$aa->AssetQuestion->id.".txt";
-			$vote = date("d/m/Y H:i:s")."\t".time()."\t".$request->getParameter('opcao')."\n";
-			$fp = fopen($filename,'a');
-			fwrite($fp, $vote);
-			fclose($fp); 
-	
-			$lines = file($filename);
-			$total = count($lines);
-			for($i=$total;$i>=0;$i--){
-	  		$vote = trim(@end(explode("\t", $lines[$i])));
-	  		if(intVal($vote)>0){
-	    		@$votes[$vote] += 1;
-	  		}
-			}
-	
-			/*
-			$file = fopen($filename, "r") or exit("Unable to open file!");
-			$results = null;
-			$votes = null;
-			$total = 0;
-			for($i=1;$i<10;$i++){
-			  $vote = trim(@end(explode("\t", fgets($file))));
-			  if(intVal($vote)>0){
-			    @$votes[$vote] += 1;
-			    $total++;
-			  }
-			}
-			
-			
-			while(!feof($file)){
-			  $vote = trim(@end(explode("\t", fgets($file))));
-			}
-			
-			
-			fclose($file);
-			
-			//var_dump($votes);
-			*/
-			foreach($aq->Answers as $a){
-			  $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
-			}
-			
-			//echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
-			die(json_encode($results));
+      $aa = Doctrine::getTable('AssetAnswer')->findOneById($request->getParameter('opcao'));
+      $aq = Doctrine::getTable('AssetQuestion')->findOneById($aa->AssetQuestion->id);
+  
+      $filename = "/var/frontend/web/uploads/assets/question/".$aa->AssetQuestion->id.".txt";
+      $vote = date("d/m/Y H:i:s")."\t".time()."\t".$request->getParameter('opcao')."\n";
+      $fp = fopen($filename,'a');
+      fwrite($fp, $vote);
+      fclose($fp); 
+  
+      $lines = file($filename);
+      $total = count($lines);
+      for($i=$total;$i>=0;$i--){
+        $vote = trim(@end(explode("\t", $lines[$i])));
+        if(intVal($vote)>0){
+          @$votes[$vote] += 1;
+        }
+      }
+  
+      /*
+      $file = fopen($filename, "r") or exit("Unable to open file!");
+      $results = null;
+      $votes = null;
+      $total = 0;
+      for($i=1;$i<10;$i++){
+        $vote = trim(@end(explode("\t", fgets($file))));
+        if(intVal($vote)>0){
+          @$votes[$vote] += 1;
+          $total++;
+        }
+      }
+      
+      
+      while(!feof($file)){
+        $vote = trim(@end(explode("\t", fgets($file))));
+      }
+      
+      
+      fclose($file);
+      
+      //var_dump($votes);
+      */
+      foreach($aq->Answers as $a){
+        $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
+      }
+      
+      //echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
+      die(json_encode($results));
     }
     elseif($request->getParameter('asset_id') > 0){
 
@@ -1465,19 +1465,19 @@ EOT;
       }
       die(json_encode($results));
     }else{
-	    header("Location: http://cmais.com.br");
-	    die();
-	  }
-	}  		
+      header("Location: http://cmais.com.br");
+      die();
+    }
+  }     
 
   public function executeMensagem(sfWebRequest $request){
     //$request->checkCSRFProtection();
     $email_site = "quintal.tv@gmail.com";
-		$subject = "[Quintal da Cultura][Pergunta para Filomena] ";
-		if ($request->getParameter('formSection') == "chaComCharadas") {
-			$email_site = "chacomcharadas@gmail.com";
-			$subject = "[Quintal da Cultura][Chá com charadas] ";
-		}
+    $subject = "[Quintal da Cultura][Pergunta para Filomena] ";
+    if ($request->getParameter('formSection') == "chaComCharadas") {
+      $email_site = "chacomcharadas@gmail.com";
+      $subject = "[Quintal da Cultura][Chá com charadas] ";
+    }
     $email_user = strip_tags($request->getParameter('email'));
     $nome_user = strip_tags($request->getParameter('nome'));
     ini_set('sendmail_from', $email_site);
@@ -1897,7 +1897,7 @@ EOT;
                 fwrite($file, $info);
                 fwrite($file, $images);
                 fwrite($file, $text);
-                fwrite($file, $footer);
+                //fwrite($file, $footer);
                 fclose($file);
                 die("http://".$url);
               }else{
@@ -1948,5 +1948,26 @@ EOT;
     }
   }
 
+  public function executeIslive(sfWebRequest $request){
+    $this->setLayout(false);
+    $return = "0";
+    $id = $request->getParameter('program_id');
+    if($id > 0){
+      $schedules = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Schedule s')
+        ->where('s.program_id = ?', $id)
+        ->andWhere('s.date_start <= ?', date('Y-m-d H:i:s'))
+        ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+        ->andWhere('s.channel_id = ?', 1)
+        ->orderBy('s.date_start asc')
+        ->limit('1')
+        ->execute();
+      if((isset($schedules)) && (count($schedules) > 0)){
+        $return = "1";
+      }
+    }
+    die($return);
+  }
 
 }

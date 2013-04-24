@@ -37,7 +37,9 @@
                   <p>Prezado Professor,</p>
                   <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
                   -->
-                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px">Atenção: as incrições vão até o dia 23/04/2013</div>
+                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px; float:left; color: red">
+                    ATENÇÃO: Esta é uma solicitação de atualização dos dados cadastrados no formulário de inscrição "Melhor Gestão Melhor Ensino", este formulário serve apenas para aqueles que efetuaram o cadastro mas as questões abaixo não foram respondidas, se você recebeu este link por email (oficial) preencha os dados e clique em enviar.
+                  </div>
                   
                   <!-- mensagens de status -->
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
@@ -64,6 +66,15 @@
                       <p class="aviso">Seu cadastro não precisa ser complementado.</p>
                       <p>Já consta em nosso banco de dados as informações complementares de sua inscrição.</p>
                       <p>Aguarde que em breve entraremos em contato para maiores informações!</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_3">
+                    <span class="alerta"></span>
+                    <div class="boxMsg">
+                      <p class="aviso">O complemento do seu cadastro não pôde ser efetuado.</p>
+                      <p>O e-mail digitado não consta em nosso banco de dados.</p>
+                      <p>Por favor, recarregue a página e digite o mesmo e-mail que você utilizou anteriormente.</p>
                     </div>
                     <hr />
                   </div>
@@ -162,7 +173,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action.php",
+              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action2.php", 
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
@@ -183,7 +194,12 @@
                   $("#statusMsg_1").show();
                   $('img#ajax-loader').hide();
                 }
-                else if(data == "3" || data == "4" || data == "5") {
+                else if(data == "3") {
+                  $(".msgErro").hide();
+                  $("#statusMsg_3").show();
+                  $('img#ajax-loader').hide();
+                }
+                else if(data == "4" || data == "5") {
                   $(".msgErro").hide();
                   $("#statusMsg_2").show();
                   $('img#ajax-loader').hide();

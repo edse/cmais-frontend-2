@@ -35,9 +35,11 @@ if($_REQUEST["captcha"]) {
           
           // Até esse ponto o objetivo já foi atingido. A partir daqui é uma tentativa de resolver tudo sem precisar consolidar posteriormente os arquivos
           $file2_csv = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino/cadastro-melhor-gestao-melhor-ensino-consolidado.csv";
-          $file2_newData = $_REQUEST["exp_coord_tutoria"] . "," .
+          $file2_newData = "," .
+                           $_REQUEST["exp_coord_tutoria"] . "," .
                            $_REQUEST["atuacao_sup"] . "," .
-                           $_REQUEST["part_encontro"];
+                           $_REQUEST["part_encontro"] . "\n";
+                           
           $file2_csvFp = fopen($file2_csv,'r+');
           if ($file2_csvFp) {
             while(true) {
@@ -45,7 +47,7 @@ if($_REQUEST["captcha"]) {
               if ($line==null) break;
               
               if(preg_match("/$email/", $line)) {
-                $string .= $line . $newData;
+                $string .= substr($line, 0, -1) . $file2_newData;
               } else {
                 $string.= $line;
               }

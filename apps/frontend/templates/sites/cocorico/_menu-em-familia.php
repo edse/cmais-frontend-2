@@ -7,7 +7,7 @@
             <ul class="nav" id="menu-familia">
               <li><a<?php if($s == 'natv') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/natv" title="Na Tv">na tv</a><span class="divider">|</span></li>
               <li><a<?php if($s == 'naslojas') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/naslojas" title="Nas Lojas">nas lojas</a><span class="divider">|</span></li>
-              <li><a<?php if($s == 'noteatro') echo ' class="active"'?> href="http://cocoricoshow.com.br/" target="_blank" title="No Teatro">no teatro</a><span class="divider">|</span></li>
+              <!--<li><a<?php if($s == 'noteatro') echo ' class="active"'?> href="http://cocoricoshow.com.br/" target="_blank" title="No Teatro">no teatro</a><span class="divider">|</span></li>-->
               <li><a<?php if($s == 'nocinema') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/nocinema" title="No Cinema">no cinema</a><span class="divider">|</span></li>
               <li><a<?php if($s == 'naweb') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/naweb" title="Na Web">na web</a><span class="divider">|</span></li>
               <li><a<?php if($s == 'agenda') echo ' class="active"'?> href="<?php echo $site->retriveUrl() ?>/emfamilia/agenda" title="Agenda">agenda</a></li>
