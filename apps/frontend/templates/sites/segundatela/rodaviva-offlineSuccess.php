@@ -33,21 +33,7 @@
       </div>
     </div>
     <div class="col-dir">
-      <div id="box-clock" style="display: none;">
-        <div id="no-ar">
-         <p>no ar</p>
-         <ul style="width: 47px;">
-          <li id="hours"> </li>
-          <li id="point">:</li>
-          <li id="min"> </li>
-          <!--
-          <li id="point">:</li>
-          <li id="sec"> </li>
-          -->
-        </ul>
-        </div>
-
-      </div>  
+        
       <div class="menu-jc">
         <ul>
           <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><li><!--span class="barra">|</span-->
