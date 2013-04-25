@@ -7,7 +7,7 @@
                 <a class="banner-topo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/img-topo.jpg" alt="Mad Men" /></a>
                 <div class="logo">
                   <a class="logo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/logomadmen.png" alt="Mad Men" /></a>
-                  <p>Quartas, às 22h</p>
+                  <p>Quartas, às 22h </p>
                 </div>
               </div>
               <!-- /remover quando acabar promocao madmen-->
