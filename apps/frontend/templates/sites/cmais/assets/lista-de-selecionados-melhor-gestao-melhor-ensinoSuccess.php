@@ -8803,7 +8803,7 @@
                           <td>Sorocaba</td>
                         </tr>
                         <tr>
-                          <td>Maria  De Lourdes  Almeida</td>
+                          <td>Maria De Lourdes  Almeida</td>
                           <td>Matemática</td>
                           <td>Sorocaba</td>
                         </tr>
@@ -8825,6 +8825,11 @@
                         <tr>
                           <td>Maria Fernanda De Souza Navas</td>
                           <td>Língua Portuguesa</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
+                          <td>Maria Gonçalves da Luz Souza</td>
+                          <td>Gestão Escolar</td>
                           <td>Sorocaba</td>
                         </tr>
                         <tr>
