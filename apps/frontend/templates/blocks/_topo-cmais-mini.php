@@ -42,7 +42,7 @@
                 <a href="https://google.com/+tvcultura" title="Google+" target="_blank">Google+</a>
               </li>
               <li class="instagram">
-                <a href="http://statigr.am/tvcultura" title="Instagram" target="_blank">Instagram</a>
+                <a href="http://instagram.com/tvcultura" title="Instagram" target="_blank">Instagram</a>
               </li>
               <li class="twitter">
                 <a href="http://twitter.com/tvcultura" title="Twitter" target="_blank">Twitter</a>

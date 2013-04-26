@@ -160,7 +160,7 @@ z-index: 10000;
 #menu-portal-1{width:892px; height:34px;position:absolute;top: 37px;left: 81px;z-index:2000;}
 #menu-portal-1 .fb-like{float:left;}
 #menu-portal-1 .fb-like iframe{margin:6px 0 0 4px;}
-
+#menu-portal-1 .fb_iframe_widget iframe {position:relative}
 #menu-portal-1  #redesnovo{width:207px; height: 32px; float:right;}
   #redesnovo .redesA{width:24px; height:30px; display:block; float:left;background:url(../images/redes-topo.png) no-repeat;margin:0 0 0 3px;}
   #redesnovo .redesB{width:17px; height:30px; display:block; float:left;background:url(../images/redes-topo.png) no-repeat;}

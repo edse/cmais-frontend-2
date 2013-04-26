@@ -27,8 +27,8 @@
 
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
-    <meta property="fb:admins" content="100000889563712"/>
-    <meta property="fb:app_id" content="124792594261614"/>
+    <meta property="fb:admins" content="100000889563712" />
+    <meta property="fb:app_id" content="124792594261614" />
     
     <!-- Fav and touch icons -->
     <!--
@@ -315,7 +315,7 @@
         <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
         <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" id="apple" class="redesA" title="Apple store" target="_blank"></a>
         <a href="https://google.com/+tvcultura" id="google" class="redesA" title="Google+" target="_blank"></a>
-        <a href="http://statigr.am/tvcultura" id="instangram" class="redesA" title="Instagram" target="_blank"></a>
+        <a href="http://instagram.com/tvcultura" id="instangram" class="redesA" title="Instagram" target="_blank"></a>
         <a href="http://facebook.com/tvcultura" id="face" class="redesA" title="Facebook" target="_blank"></a>
         <a href="http://twitter.com/tvcultura" id="twit" class="redesA" title="Twitter" target="_blank"></a>
         <a href="http://youtube.com/cultura" id="youtube" class="redesA" title="Youtube " target="_blank"></a>
