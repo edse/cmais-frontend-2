@@ -71,7 +71,7 @@
         </div>
       </div>
       <!-- /abas -->
-    </div>
+    </div> 
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
