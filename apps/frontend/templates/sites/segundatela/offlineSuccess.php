@@ -67,25 +67,33 @@
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
+          </div> 
         </div>
       </div>
       <!-- /abas -->
-    </div>
+    </div> 
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <script>
+  
   // retrive sent contents by ajax
   $.ajax({
     url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
     dataType: "json",
     success:function(json){
-      $.each(json, function( key, value ) {
+      $.each(json_decode(json, function( key, value )) {
         //console.log(value)
+
         contentInfo(value);
       });
     }
   });
   </script>
+  
+<?php
+$json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+
+
+?>
