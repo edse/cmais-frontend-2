@@ -71,7 +71,7 @@
         </div>
       </div>
       <!-- /abas -->
-    </div> 
+    </div>
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
@@ -91,8 +91,4 @@
   });
   </script>
   
-<?php
-$json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
-
-
-?>
+  
