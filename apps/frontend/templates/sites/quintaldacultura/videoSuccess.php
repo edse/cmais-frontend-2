@@ -86,7 +86,6 @@
       ->orderBy('sa.display_order')
       ->limit(160)
       ->execute();
-      echo "1"; 
     /*
     $assets = Doctrine_Query::create()
       ->select('a.*')
@@ -112,9 +111,6 @@
           ->orderBy('sa.display_order')
           ->limit(160)
           ->execute();
-          
-          echo "2"; 
-          
 
          /*
 		    $assets = Doctrine_Query::create()
@@ -141,9 +137,6 @@
           ->limit(160)
           ->execute();
           
-        echo "3"; 
-          
-          
         /*
 		    $assets = Doctrine_Query::create()
 		      ->select('a.*')
@@ -158,8 +151,6 @@
 			}
 		}
 		else {
-		        echo "4"; 
-      
 		  /*
 	    $assets = Doctrine_Query::create()
 	      ->select('a.*')
@@ -188,8 +179,6 @@
   }
   if(!isset($asset)){
     $asset = $assets[0];
-          echo "5"; 
-    
   }
   ?>
 
