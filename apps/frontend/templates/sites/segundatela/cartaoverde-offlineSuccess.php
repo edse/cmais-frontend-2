@@ -35,24 +35,11 @@
     </div>
     
     <div class="col-dir">
-      <div id="box-clock" style="display: none;">
-        <div id="no-ar">
-         <p>no ar</p>
-         <ul style="width: 47px;">
-          <li id="hours"> </li>
-          <li id="point">:</li>
-          <li id="min"> </li>
-          <!--
-          <li id="point">:</li>
-          <li id="sec"> </li>
-          -->
-        </ul>
-        </div>
-
-      </div>  
+       
       <div class="menu-jc">
         <ul>
-          <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><li><!--span class="barra">|</span-->
+          <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><li>
+          <li><span class="barra">|</span></li>
           <li><p class="online hide" style="color: green">Conectado</p></li>
           <li><p class="offline">Desconectado</p></li>
           </ul>
@@ -81,7 +68,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/cartaoverde/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>

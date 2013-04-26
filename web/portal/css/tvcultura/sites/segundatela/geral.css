@@ -236,4 +236,5 @@ and (orientation : portrait) {
 .row-fluid .span4 { *margin-left:0} 
 /* /ie */
 
-
+.hero-unit .menu-jc .como { margin:0; }
+.hero-unit .col-dir span.barra { font-size:21px; }
