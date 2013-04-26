@@ -166,7 +166,7 @@
           <li><a title="Facebook" href="http://www.facebook.com/tvcultura" target="_blank">Facebook</a></li>
           <li><a title="Flickr" href="http://www.flickr.com/photos/televisaocultura" target="_blank">Flickr</a></li>
           <li><a title="Google+" href="https://google.com/+tvcultura" target="_blank">Google+</a></li>
-          <li><a title="Instagram" href="http://statigr.am/tvcultura" target="_blank">Instagram</a></li>
+          <li><a title="Instagram" href="http://instagram.com/tvcultura" target="_blank">Instagram</a></li>
           <li><a title="Twitter" href="http://twitter.com/#!/tvcultura" target="_blank">Twitter</a></li>
           <li><a title="Youtube" href="http://www.youtube.com/cultura" target="_blank">Youtube</a></li>
         </ul>
