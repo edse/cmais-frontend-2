@@ -35,7 +35,7 @@
                 <div class="contatoWrapper">
                   <a name="topo"></a>
                   <h3 class="tit-pagina grid3">PROCESSO SELETIVO TUTORIA ONLINE PARA GESTÃO ESCOLAR,LÍNGUA PORTUGUESA, MATEMÁTICA</h3>
-                  <p class="titu" style="margin-bottom:60px">2ª ETAPA – Lista em ordem alfabética dos aprovados para realização das provas</p>
+                  <p class="titu" style="margin-bottom:60px">2ª ETAPA – Lista consolidada e em ordem alfabética dos aprovados para realização das provas</p>
                   <br />
                   <br />
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
@@ -198,12 +198,22 @@
                           <td>Araçatuba</td>
                         </tr>
                         <tr>
+                          <td>Mariângela do Nascimento Sant' Ana da Costa </td>
+                          <td>Língua Portuguesa</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
                           <td>Marilza Rosene De Souza</td>
                           <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
                         </tr>
                         <tr>
                           <td>Marli Francisca Rossi Souto Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Araçatuba</td>
+                        </tr>
+                        <tr>
+                          <td>Mauro Celso Souza</td>
                           <td>Língua Portuguesa</td>
                           <td>Araçatuba</td>
                         </tr>
@@ -377,6 +387,11 @@
                           <td>Bauru</td>
                         </tr>
                         <tr>
+                          <td>Antonio Rogério Bueno</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
                           <td>Aparecido De Oliveira</td>
                           <td>Gestão Escolar</td>
                           <td>Bauru</td>
@@ -399,6 +414,11 @@
                         </tr>
                         <tr>
                           <td>Carlos Eduardo Dos Santos Zago</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
+                          <td>Cibele Tucunduva Alves Scacheti</td>
                           <td>Língua Portuguesa</td>
                           <td>Bauru</td>
                         </tr>
@@ -446,6 +466,11 @@
                         <tr>
                           <td>Debora Aparecida Verde De Andrade</td>
                           <td>Matemática</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
+                          <td>Deborah Cristina Simões Balestrini</td>
+                          <td>Língua Portuguesa</td>
                           <td>Bauru</td>
                         </tr>
                         <tr>
@@ -599,6 +624,11 @@
                           <td>Bauru</td>
                         </tr>
                         <tr>
+                          <td>Jansen Gil Lera</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
                           <td>Jonas Eduardo Carraschi</td>
                           <td>Matemática</td>
                           <td>Bauru</td>
@@ -613,13 +643,24 @@
                           <td>Gestão Escolar</td>
                           <td>Bauru</td>
                         </tr>
+                        
                         <tr>
                           <td>Juliana Leite Boranelli</td>
                           <td>Matemática</td>
                           <td>Bauru</td>
                         </tr>
                         <tr>
+                          <td>Juliana Zanucoli Gonçalves Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
                           <td>Juliane Fernanda Moreno</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
+                        <tr>
+                          <td>Juliano De Oliveira Ramos</td>
                           <td>Língua Portuguesa</td>
                           <td>Bauru</td>
                         </tr>
@@ -863,6 +904,11 @@
                           <td>Língua Portuguesa</td>
                           <td>Bauru</td>
                         </tr>
+                        <tr>
+                          <td>Paulo De Tarso Cabrini Júnior</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Bauru</td>
+                        </tr>
                         <tr><td><h1>R</h1></td></tr>
                         <tr>
                           <td>Rafael Trigo Veiga</td>
@@ -1047,6 +1093,16 @@
                       <tbody>
                         <tr><td><h1>A</h1></td></tr>
                         <tr>
+                          <td>Adão José Lopes</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
+                          <td>Adriana Terezinha Dantas Moreira De Souza</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>                        
+                        <tr>
                           <td>Airton Clementino</td>
                           <td>Matemática</td>
                           <td>Campinas</td>
@@ -1219,6 +1275,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Claudia Affonso</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Claudia Cortez Campos</td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
@@ -1301,6 +1362,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Edna Maria Aparecida Gonçalves</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Elaine Aparecida Campideli Hoyos</td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
@@ -1346,6 +1412,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Erika Cristina Mashorca Fiorelli</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Érika Jacqueline Da Silveira</td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
@@ -1378,6 +1449,11 @@
                         </tr>
                         <tr>
                           <td>Fátima Lucy Bizigatto</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
+                          <td>Fátima Salete Dias Vasconcellos</td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
                         </tr>
@@ -1511,6 +1587,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Jesiel Eliezer Zerbo</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Joao Manoel De Campos</td>
                           <td>Matemática</td>
                           <td>Campinas</td>
@@ -1596,6 +1677,16 @@
                           <td>Gestão Escolar</td>
                           <td>Campinas</td>
                         </tr>
+                        <tr>
+                          <td>Kelly Cristina Rufino</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
+                          <td>Kenia Cristiane Zucaratto Martins Fernandes</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
                         <tr><td><h1>L</h1></td></tr>
                         <tr>
                           <td>Lara Priscila De Campos</td>
@@ -1632,6 +1723,7 @@
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
                         </tr>
+                        
                         <tr>
                           <td>Luciana Aleva Cressoni</td>
                           <td>Língua Portuguesa</td>
@@ -1794,6 +1886,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Maristela Mazi Dacome</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Marlon Alves Garcia</td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
@@ -1830,6 +1927,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Neize Ribeiro Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Neuza Aparecida Moro Prado</td>
                           <td>Gestão Escolar</td>
                           <td>Campinas</td>
@@ -1851,6 +1953,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr><td><h1>P</h1></td></tr>
+                        <tr>
+                          <td>Paulo Roberto Do Nascimento</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
                         <tr>
                           <td>Patricia Marcela Polidoro</td>
                           <td>Língua Portuguesa</td>
@@ -1885,6 +1992,11 @@
                         <tr>
                           <td>Regis Forner</td>
                           <td>Matemática</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
+                          <td>Rosana Betim Maudonnet De Souza.</td>
+                          <td>Língua Portuguesa</td>
                           <td>Campinas</td>
                         </tr>
                         <tr>
@@ -2031,6 +2143,11 @@
                           <td>Campinas</td>
                         </tr>
                         <tr>
+                          <td>Valeria Hilario Dos Santos</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Campinas</td>
+                        </tr>
+                        <tr>
                           <td>Valeria Leão </td>
                           <td>Língua Portuguesa</td>
                           <td>Campinas</td>
@@ -2156,6 +2273,11 @@
                           <td>Franca</td>
                         </tr>
                         <tr>
+                          <td>Danilo Cesar De Matos Lopes</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Franca</td>
+                        </tr>
+                        <tr>
                           <td>Denisdea Battigaglia Guilherme</td>
                           <td>Gestão Escolar</td>
                           <td>Franca</td>
@@ -2198,6 +2320,11 @@
                         </tr>
                         <tr>
                           <td>Elenice Batista Alves Cruz Freire</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Franca</td>
+                        </tr>
+                        <tr>
+                          <td>Eliane De Moura Guerreiro Brandi</td>
                           <td>Língua Portuguesa</td>
                           <td>Franca</td>
                         </tr>
@@ -2600,6 +2727,11 @@
                           <td>Presidente Prudente</td>
                         </tr>
                         <tr>
+                          <td>Luciene Pereira Barreto</td>
+                          <td>Gestão Escolar</td>
+                          <td>Presidente Prudente</td>
+                        </tr>
+                        <tr>
                           <td>Lucimar Manzoli De Albuquerque Lima</td>
                           <td>Gestão Escolar</td>
                           <td>Presidente Prudente</td>
@@ -2715,8 +2847,24 @@
                           <td>Presidente Prudente</td>
                         </tr>
                         <tr>
+                          <td>Renata Andréia Plaça Orosco de Souza</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Presidente Prudente</td>
+                        </tr>
+                        
+                        <tr>
                           <td>Renata Leandro Terrengue</td>
                           <td>Matemática</td>
+                          <td>Presidente Prudente</td>
+                        </tr>
+                        <tr>
+                          <td>Renata Motta Chicoli Belchior</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Presidente Prudente</td>
+                        </tr>
+                        <tr>
+                          <td>Renata Patricia Lins de Queiroz</td>
+                          <td>Língua Portuguesa</td>
                           <td>Presidente Prudente</td>
                         </tr>
                         <tr>
@@ -2839,9 +2987,15 @@
                           <td>Matemática</td>
                           <td>Santos</td>
                         </tr>
+                        
                         <tr>
                           <td>Andrea Rodrigues De Lima Lanças</td>
                           <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
+                          <td>Andréa Mariano Da Silva</td>
+                          <td>Matemática</td>
                           <td>Santos</td>
                         </tr>
                         <tr><td><h1>C</h1></td></tr>
@@ -2856,6 +3010,11 @@
                           <td>Santos</td>
                         </tr>
                         <tr>
+                          <td>Célio Alexandre Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
                           <td>Cristina Cecília Ribeiro Do Valle De Oliveira</td>
                           <td>Língua Portuguesa</td>
                           <td>Santos</td>
@@ -2866,6 +3025,11 @@
                           <td>Santos</td>
                         </tr>
                         <tr><td><h1>D</h1></td></tr>
+                        <tr>
+                          <td>Dagmar Trajano Pereira Ribeiro</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
                         <tr>
                           <td>Debora Cintia Rabello</td>
                           <td>Matemática</td>
@@ -2887,9 +3051,19 @@
                           <td>Matemática</td>
                           <td>Santos</td>
                         </tr>
+                        <tr>
+                          <td>Eveline Katia De Souza Pontual Cavalcante</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
                         <tr><td><h1>F</h1></td></tr>
                         <tr>
                           <td>Fabiana De Almeida Pereira</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
+                          <td>Fabiana De Fatima Augusto Murad</td>
                           <td>Língua Portuguesa</td>
                           <td>Santos</td>
                         </tr>
@@ -2968,6 +3142,11 @@
                         </tr>
                         <tr><td><h1>M</h1></td></tr>
                         <tr>
+                          <td>Marcos Antonio Aparecido Dias</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
                           <td>Maria Aparecida Fernandes Ursini</td>
                           <td>Língua Portuguesa</td>
                           <td>Santos</td>
@@ -2988,12 +3167,22 @@
                           <td>Santos</td>
                         </tr>
                         <tr>
+                          <td>Maria José Póvoa Martucci</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
                           <td>Maria Rita Paixão</td>
                           <td>Matemática</td>
                           <td>Santos</td>
                         </tr>
                         <tr>
                           <td>Matheus De Almeida Salgado</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
+                          <td>Merieli De Jong</td>
                           <td>Língua Portuguesa</td>
                           <td>Santos</td>
                         </tr>
@@ -3011,6 +3200,11 @@
                         <tr><td><h1>P</h1></td></tr>
                         <tr>
                           <td>Paulo Rosano Rodrigues Rodrigues</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Santos</td>
+                        </tr>
+                        <tr>
+                          <td>Pepita De Souza Figueredo</td>
                           <td>Língua Portuguesa</td>
                           <td>Santos</td>
                         </tr>
@@ -3203,6 +3397,11 @@
                         <tr>
                           <td>Clarice Pereira</td>
                           <td>Matemática</td>
+                          <td>São José do Rio Preto</td>
+                        </tr>
+                        <tr>
+                          <td>Cristiane Aparecida Bonamin Boaretto</td>
+                          <td>Língua Portuguesa</td>
                           <td>São José do Rio Preto</td>
                         </tr>
                         <tr><td><h1>D</h1></td></tr>
@@ -3531,6 +3730,11 @@
                         </tr>
                         <tr><td><h1>O</h1></td></tr>
                         <tr>
+                          <td>Odair Benedito Francisco</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São José do Rio Preto</td>
+                        </tr>
+                        <tr>
                           <td>Odair Dutra Santana Júnior</td>
                           <td>Língua Portuguesa</td>
                           <td>São José do Rio Preto</td>
@@ -3594,6 +3798,11 @@
                           <td>São José do Rio Preto</td>
                         </tr>
                         <tr>
+                          <td>Sandra Maria Rosselli Barreira</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São José do Rio Preto</td>
+                        </tr>
+                        <tr>
                           <td>Sandra Regina Pereira</td>
                           <td>Língua Portuguesa</td>
                           <td>São José do Rio Preto</td>
@@ -3601,6 +3810,11 @@
                         <tr>
                           <td>Sandra Sueli De Castro</td>
                           <td>Gestão Escolar</td>
+                          <td>São José do Rio Preto</td>
+                        </tr>
+                        <tr>
+                          <td>Silvia Regina Rodrigues</td>
+                          <td>Língua Portuguesa</td>
                           <td>São José do Rio Preto</td>
                         </tr>
                         <tr>
@@ -3818,6 +4032,11 @@
                           <td>São José dos Campos</td>
                         </tr>
                         <tr>
+                          <td>Danilo Jose Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São José dos Campos</td>
+                        </tr>
+                        <tr>
                           <td>Deise Helena Massa Domingues</td>
                           <td>Língua Portuguesa</td>
                           <td>São José dos Campos</td>
@@ -3830,6 +4049,11 @@
                         <tr>
                           <td>Delmo Fortes</td>
                           <td>Matemática</td>
+                          <td>São José dos Campos</td>
+                        </tr>
+                        <tr>
+                          <td>Dilza Mari De Mira</td>
+                          <td>Língua Portuguesa</td>
                           <td>São José dos Campos</td>
                         </tr>
                         <tr><td><h1>E</h1></td></tr>
@@ -3850,6 +4074,11 @@
                         </tr>
                         <tr>
                           <td>Eliana Torres Tedesco Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São José dos Campos</td>
+                        </tr>
+                        <tr>
+                          <td>Eliane Nunes Pereira Fujarra</td>
                           <td>Língua Portuguesa</td>
                           <td>São José dos Campos</td>
                         </tr>
@@ -3919,6 +4148,11 @@
                         <tr>
                           <td>Helez C  Merlin</td>
                           <td>Matemática</td>
+                          <td>São José dos Campos</td>
+                        </tr>
+                        <tr>
+                          <td>Herbet Luis Tirelli Pinto Cardoso</td>
+                          <td>Língua Portuguesa</td>
                           <td>São José dos Campos</td>
                         </tr>
                         <tr>
@@ -4104,6 +4338,11 @@
                         <tr>
                           <td>Marcos De Moura Albertim</td>
                           <td>Língua Portuguesa</td>
+                          <td>São José dos Campos</td>
+                        </tr>
+                        <tr>
+                          <td>Maria Aparecida dos Santos Sarraipo</td>
+                          <td>Gestão Escolar</td>
                           <td>São José dos Campos</td>
                         </tr>
                         <tr>
@@ -4442,6 +4681,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Aglae Cecilia Toledo Dias Porto Alves</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Agnaldo Da Conceição Esquincalha</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -4467,6 +4711,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Aldine Nogueira Da Silva</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Alesandra Do Vale Castro</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -4488,6 +4737,11 @@
                         </tr>
                         <tr>
                           <td>Alessandra Da Silva Guedes</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Alessandra Fabiana Cavalcante</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -4594,6 +4848,11 @@
                         <tr>
                           <td>Amilcar Ribeiro Cassimiro Junior </td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Ana Beatriz Pereira Franco</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -4737,6 +4996,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>André Dos Santos Bachiega</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Andre Ferreira Da Silva</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -4787,6 +5051,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Angela Kovachich De Oliveira Reis</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Angela Maria Baltieri Souza</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -4829,6 +5098,11 @@
                         <tr>
                           <td>Antônio Sérgio Dos Santos Gutierrez </td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Aparecida De Fátima Torres</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -4914,6 +5188,11 @@
                         </tr>
                         <tr>
                           <td>Bernardino Junior Barreto De Oliveira</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Bianca Dos Santos Torres</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -5004,6 +5283,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Carmen Cecília De  Menezes Corrêa</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Carmen Lucia Faustino</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -5019,12 +5303,22 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Carolina De Castro Nyerges</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Caroline Costa Nunes Lima</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
                           <td>Cássia Guimarães</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Cássia Regina Ferreira De Abreu </td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -5060,6 +5354,11 @@
                         </tr>
                         <tr>
                           <td>Cecília Rodrigues Da Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Célia Cristina De Figueiredo Cassiano</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -5134,6 +5433,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Cintia Kaori Yokota</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Cintia Mara Souza De Oliveira Lima</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -5189,8 +5493,18 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Cláudia Lúcia Ferigato Bueno De Almeida</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Claudia Rodrigues </td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Claudia Saes Da Silva</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -5385,6 +5699,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Daniela De Lima Solla</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Daniela Ferreira De  Matos</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -5397,6 +5716,11 @@
                         <tr>
                           <td>Daniela Garcia Da Cruz</td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Daniela Gonçalves De Oliveira</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -5507,6 +5831,11 @@
                         <tr>
                           <td>Deuslene Gomes Mello Assuncao</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Dilma Terezinha Rodrigues Franchi</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -5741,8 +6070,13 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
-                          <td>Elaine Cristina Diegues</td>
+                          <td>Elaine Cristina Dieguestd>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Elaine Cristine Fernandes Da Silva</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -5812,6 +6146,11 @@
                         </tr>
                         <tr>
                           <td>Eliane Azevedo Da Costa</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Eliane Feitoza Oliveira</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -5902,6 +6241,11 @@
                         </tr>
                         <tr>
                           <td>Elvis Lima De Araujo</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Elzi De Sousa Braga Bastos</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -5997,6 +6341,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Fabiane De Almeida Vilela</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Fábio Aparecido Moreira</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -6014,6 +6363,11 @@
                         <tr>
                           <td>Fabio Henrique Patriarca</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Fabio Rodrigues Lemes</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -6062,6 +6416,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Fatima Rogerio</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Fátima Rosangela Gebim</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -6073,6 +6432,11 @@
                         </tr>
                         <tr>
                           <td>Fernanda Carvalho Dos Reis</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Fernanda Cristina De Lima</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -6089,6 +6453,11 @@
                         <tr>
                           <td>Fernanda Oliveira Damacena</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Fernanda Roque Monteiro Do Amaral Prado</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -6117,6 +6486,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Flavia Maria Inacio</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Flávia Odete Greghi</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -6129,6 +6503,11 @@
                         <tr>
                           <td>Flavio Dos Santos Sapucaia</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Flor De Maria Dos Santos </td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -6208,12 +6587,22 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Gisele Maia Russel</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Gisele Szabó Despézio Ghetti </td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
                           <td>Gisleine Silvana Gasparotto</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Gisleni Bertoni De Almeida</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -6330,6 +6719,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Ieda Maria Ferreira Nogueira Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Ilkêmia Lenartevitz Ferreira</td>
                           <td>Gestão Escolar</td>
                           <td>São Paulo</td>
@@ -6372,6 +6766,11 @@
                         <tr>
                           <td>Irene Rio Stéfani</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Iria Regina Do Nascimento Soares</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -6486,6 +6885,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Jacy Do Nascimento Floriano</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Janaina Aparecida De Souza</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -6511,8 +6915,23 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Jayson Magno Da Silva</td>
+                          <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Jayson Magno Da Silva</td>
+                          <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Jean Corino Teodoro Da Silva</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Jeanne Barros Antunes</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -6666,6 +7085,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Judith Camargo Curiel De Braga</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Juliana Cammarosano</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -6677,6 +7101,16 @@
                         </tr>
                         <tr>
                           <td>Juliana Ernica Ledesma</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Juliana Nazaré Alves</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Juliana Pontes Viana Clemente</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -6796,6 +7230,11 @@
                           <td>Matemática</td>
                           <td>São Paulo</td>
                         </tr>
+                        <tr>
+                          <td>Kenya Paula Gonsalves Da Silva</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
                         <tr><td><h1>L</h1></td></tr>
                         <tr>
                           <td>Laércio De Oliveira Araújo</td>
@@ -6893,6 +7332,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Lidia Ramos Aleixo De Souza</td>
+                          <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Ligia Fabiana De Souza Silva</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -6983,6 +7427,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Luciana Zambel</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Luciane Dos Passos Pires</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -7030,6 +7479,11 @@
                         <tr>
                           <td>Lucilia De Souza</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Lucimara Batista Freire</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -7129,6 +7583,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Marcelo Angelo Coura</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Marcelo Boaventura </td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -7185,6 +7644,11 @@
                         </tr>
                         <tr>
                           <td>Marcia De Lourdes Nuto Loiola</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Marcia De Mattos Sanches</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -7299,6 +7763,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Maria Adriana Nóbrega Silva</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Maria Angélica Batista</td>
                           <td>Gestão Escolar</td>
                           <td>São Paulo</td>
@@ -7359,6 +7828,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Maria Claudia Bontempi Pizzi</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Maria Cristina Hueb</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -7366,6 +7840,11 @@
                         <tr>
                           <td>Maria Cristina Leite Rosa Da Silva</td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Maria Cristina Longuini Alves</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -7444,6 +7923,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Maria Elisa Curti Salome</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Maria Elizabeth Candio</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -7456,6 +7940,11 @@
                         <tr>
                           <td>Maria Goreth Miranda Dorigheto</td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Maria Helena Costa</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -7584,6 +8073,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Mariane Cassia De Padua</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Marianka De Souza Goncalves Santa Barbara</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -7659,6 +8153,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Marisa Gallo Da Silva Munia</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Marisa Milano Beserra Do Nascimento</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -7681,6 +8180,11 @@
                         <tr>
                           <td>Marli Do Carmo Pereira Dos Santos</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Marta Camila Mendes De Oliveira Carneiro</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -7709,8 +8213,18 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Mauricia Antonia De Andrade Maciel</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Maurício Catureba Lima</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Mauricio Pires De Araujo</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -7982,6 +8496,16 @@
                         </tr>
                         <tr><td><h1>P</h1></td></tr>
                         <tr>
+                          <td>Palma Simone Tonel</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Pamela Yvelise Santos Amaral</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Pasqualina Ana D'agostino Ribeiro Dos Santos</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -8019,6 +8543,11 @@
                         <tr>
                           <td>Patrícia Ferreira</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Patricia Helena Passos Bonafe</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8082,6 +8611,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Paula Raquel Gonçalves De Sousa</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Paula Regina Carvalho Da Silva</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -8112,7 +8646,17 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Persio Nakamoto</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Petruciany Simone Ribeiro</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Priscila Cristina Ribeiro Sarmento</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -8234,6 +8778,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Renata Augusto De Carvalho</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Renata Carvalho Dos Santos Fernandes</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -8321,6 +8870,11 @@
                         <tr>
                           <td>Ricardo Ramos Silva</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Rita De Cassia Barreto De Oliveira</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8509,6 +9063,16 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Rosangela Dos Santos</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Rosangela Leite De Oliveira Ramos</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Rosangela Novaes Martins</td>
                           <td>Gestão Escolar</td>
                           <td>São Paulo</td>
@@ -8516,6 +9080,11 @@
                         <tr>
                           <td>Rosangela Oliveira Silva</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Roselaine Batalha Silva</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8531,6 +9100,11 @@
                         <tr>
                           <td>Roseli Gomes De Araujo Da Silva</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Roseli Moura Da Silva</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8685,6 +9259,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Sandra Regina Ceolim</td>
+                          <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Sandra Regina Correa Amorim</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -8715,6 +9294,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Saulo De Oliveira Pena</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Sebastião Aparecido Dos Santos</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -8727,6 +9311,11 @@
                         <tr>
                           <td>Selma Denise Gaspar</td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Selma Pugliesi</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8800,12 +9389,27 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Silvana Nogueira Da Rocha</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Silvana Tavares Nagem</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Silvana Vieira Elias Satyro</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Silvana Zajac</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Silvia Cristina Gomes Nogueira</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -8865,6 +9469,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Solange Bento Gomes</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Solange Maris Lessa Yonamine</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -8872,6 +9481,11 @@
                         <tr>
                           <td>Solange Rogato Barbosa</td>
                           <td>Gestão Escolar</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Sonia Campos Vieira De Oliveira</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -8886,6 +9500,11 @@
                         </tr>
                         <tr>
                           <td>Sonia Maria Velloso Nobre Marafante</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Sonia Regina Moussalli</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -9016,6 +9635,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Tânia Sandroni</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Tânia Souza De Luna</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -9027,6 +9651,11 @@
                         </tr>
                         <tr>
                           <td>Tatiana Aparecida De Mello Callil Rocha </td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Tatiana Ferreira Costa Carvalho</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
@@ -9223,6 +9852,16 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Vânia Ferreira Da Silva Caneki</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Vânia Maria Silva Gomes De Oliveira</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Vanilda Da Silva Riedel Alves</td>
                           <td>Matemática</td>
                           <td>São Paulo</td>
@@ -9275,6 +9914,11 @@
                         <tr>
                           <td>Vicente Romeu Cianciarulo Longo</td>
                           <td>Matemática</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Victor Hugo Da Silva Vasconcellos</td>
+                          <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
                         </tr>
                         <tr>
@@ -9344,6 +9988,11 @@
                           <td>São Paulo</td>
                         </tr>
                         <tr>
+                          <td>Wellington Migliari</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Wellington Santos Costa</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -9360,6 +10009,11 @@
                         </tr>
                         <tr><td><h1>Y</h1></td></tr>
                         <tr>
+                          <td>Yara Marisol Contipelli</td>
+                          <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
                           <td>Yoko Rosana De Matos</td>
                           <td>Língua Portuguesa</td>
                           <td>São Paulo</td>
@@ -9373,6 +10027,11 @@
                         <tr>
                           <td>Zélia Emília De Souza</td>
                           <td>Língua Portuguesa</td>
+                          <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                          <td>Zilene Moreira Pereira</td>
+                          <td>Gestão Escolar</td>
                           <td>São Paulo</td>
                         </tr>
                       </tbody>
@@ -9420,6 +10079,11 @@
                         </tr>
                         <tr>
                           <td>Alzira Maria Ponciano Gonçalves</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
+                          <td>Amanda Arruda De Araujo</td>
                           <td>Língua Portuguesa</td>
                           <td>Sorocaba</td>
                         </tr>
@@ -9495,6 +10159,11 @@
                           <td>Sorocaba</td>
                         </tr>
                         <tr>
+                          <td>Carla Ceriani</td>
+                          <td>Gestão Escolar</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
                           <td>Carlos Eduardo Anhaia Carriel</td>
                           <td>Língua Portuguesa</td>
                           <td>Sorocaba</td>
@@ -9507,6 +10176,11 @@
                         <tr>
                           <td>Catia Aparecida Da Silva</td>
                           <td>Matemática</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
+                          <td>Cecília Squarzini</td>
+                          <td>Língua Portuguesa</td>
                           <td>Sorocaba</td>
                         </tr>
                         <tr>
@@ -9573,6 +10247,11 @@
                         <tr><td><h1>E</h1></td></tr>
                         <tr>
                           <td>Edna Régio De Castro França</td>
+                          <td>Língua Portuguesa</td>
+                          <td>Sorocaba</td>
+                        </tr>
+                        <tr>
+                          <td>Edney Couto De Souza</td>
                           <td>Língua Portuguesa</td>
                           <td>Sorocaba</td>
                         </tr>
