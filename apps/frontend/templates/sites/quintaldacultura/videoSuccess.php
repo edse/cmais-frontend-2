@@ -107,7 +107,7 @@
           ->andWhere('sa.asset_id = a.id')
           ->andWhere('av.asset_id = a.id')
           ->andWhere('a.is_active = ?', 1)
-          ->andWhere('av.youtube_id IS NOT NULL')
+          ->andWhere('av.youtube_id != ""')
           ->orderBy('a.id desc')
           ->limit(160)
           ->execute();
@@ -132,7 +132,7 @@
           ->andWhere('sa.asset_id = a.id')
           ->andWhere('av.asset_id = a.id')
           ->andWhere('a.is_active = ?', 1)
-          ->andWhere('av.youtube_id IS NOT NULL')
+          ->andWhere('av.youtube_id != ""')
           ->orderBy('a.id desc')
           ->limit(160)
           ->execute();
@@ -170,7 +170,7 @@
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('av.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
-        ->andWhere('av.youtube_id IS NOT NULL')
+        ->andWhere('av.youtube_id != ""')
         ->orderBy('a.id desc')
         ->limit(160)
         ->execute();
