@@ -135,7 +135,7 @@
           Oriba
         </a>
        </li>
-       <li class="span2">
+       <li class="span2" style="margin-left:20px;">
         <a href="javascript:;" title="Astolfo" class="btn-desenho zaza" data-source="/portal/images/capaPrograma/cocorico/para-colorir/zaza-transparente.png">
           <img alt="Astolfo" src="/portal/images/capaPrograma/cocorico/para-colorir/zaza_preview.jpg" class="span12">
           Zaza
