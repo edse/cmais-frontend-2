@@ -20,7 +20,7 @@ function isDevice(OSName)
     window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
   }
 </script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=1234" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/transito.css?a=1234" type="text/css" />
 <style>
 .azul .window { background-color: #6AACD2; }
 .verde .window { background-color: #136F13; }
@@ -1038,5 +1038,3 @@ function isDevice(OSName)
 
     </div>
     <!-- / CAPA SITE -->
-
-
