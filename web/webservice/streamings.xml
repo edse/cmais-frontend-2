@@ -2,12 +2,12 @@
   <stream id="1">
     <title>Cultura Brasil</title>
     <url>http://midiaserver.tvcultura.com.br:8001</url>
-    <ad url="http://tvcultura.com.br" image="http://cmais.com.br/pub/300x50_guia_transito-1.gif"></ad>
+    <ad url="http://tvcultura.com.br" image="http://cmais.com.br/images/segunda_tela_600x100.gif"></ad>
   </stream>
   <stream id="2">
     <title>Cultura FM</title>
     <url>http://midiaserver.tvcultura.com.br:8003</url>
-    <ad url="http://tvcultura.com.br" image="http://cmais.com.br/pub/300x50_guia_transito-1.gif"></ad>
+    <ad url="http://tvcultura.com.br" image="http://cmais.com.br/images/segunda_tela_600x100.gif"></ad>
   </stream>
 </streamings>
 
