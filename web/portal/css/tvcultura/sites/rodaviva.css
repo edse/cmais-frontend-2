@@ -480,6 +480,8 @@ body{
 	padding-left: 0;
 	width:310px;
 }
+.boxRedes li a.facebook { padding-top:0; }
+
 .boxRedes li a:hover{
 	text-decoration: none;
 }
