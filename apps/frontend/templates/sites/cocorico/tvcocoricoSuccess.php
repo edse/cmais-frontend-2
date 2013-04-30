@@ -129,7 +129,7 @@
             
             <div class="destaque span12">
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <a href="<?php $site->retriveUrl()?>/cocorico/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
