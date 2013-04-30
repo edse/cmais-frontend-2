@@ -121,11 +121,11 @@
         </div>
         */?>
         
-       <?php if(isset($displays['destaque-seu-video'])): ?>
-          <?php if(count($displays['destaque-seu-video']) > 0): ?>
-            <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
+       <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
+            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
             
-            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             
             <div class="destaque span12">
               <span></span>
