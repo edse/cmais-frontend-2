@@ -21,22 +21,28 @@ $(document).ready(function() {
         
     /*tooltip*/
     $('.btn-tooltip').tooltip();
-
     
+    var url = window.location;
+    var urlString = url.toString();
+    var urlArray= new Array();
+    urlArray= urlString.split("/");
+    console.log(urlArray[urlArray.length -1])
+    if(urlArray[urlArray.length -1] != "jogo-de-pintar"){
     /*lista icone imprimir*/
-    $('.imprimir li.span4:nth-child(4)').css('margin-left', '0');
-    $('.imprimir li.span4:nth-child(7)').css('margin-left', '0');
-    $('.imprimir li.span4:nth-child(10)').css('margin-left', '0');
+      $('.imprimir li.span4:nth-child(4)').css('margin-left', '0');
+      $('.imprimir li.span4:nth-child(7)').css('margin-left', '0');
+      $('.imprimir li.span4:nth-child(10)').css('margin-left', '0');
+      
+      /*lista destaque small*/
+      $('.destaques-small li:nth-child(7)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(13)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(19)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(25)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(31)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(37)').css('margin-left', '0');
+      $('.destaques-small li:nth-child(43)').css('margin-left', '0');
+    }
     
-    /*lista destaque small*/
-    $('.destaques-small li:nth-child(7)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(13)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(19)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(25)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(31)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(37)').css('margin-left', '0');
-    $('.destaques-small li:nth-child(43)').css('margin-left', '0');
-   
     /* popover joguinhos*/
     $('.btn-popover').popover();
 
