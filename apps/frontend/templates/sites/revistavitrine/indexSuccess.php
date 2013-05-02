@@ -54,7 +54,7 @@
          
           <div class="capa-revista">
             <?php if(isset($displays["destaque-principal"])): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="Revista Vitrine" />
+              <img src="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" alt="Revista Vitrine" />
             <?php endif ?>
          </div>
 
