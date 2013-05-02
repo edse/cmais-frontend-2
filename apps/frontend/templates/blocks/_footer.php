@@ -92,6 +92,7 @@ ciências</a></li>
 						    <li><a href="http://cmais.com.br/imprensa" title="Assessoria de Imprensa">Assessoria de Imprensa</a></li>
 	      				<li><a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco">Fale Conosco</a></li>
 								<li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
+								<li><a href="http://cmais.com.br/cedoc/" title="Cedoc">Cedoc</a></li>
 							</ul>
 							
               <a href="http://cmais.com.br/programas-de-a-z" class="tit todos">Todos os sites</a>
