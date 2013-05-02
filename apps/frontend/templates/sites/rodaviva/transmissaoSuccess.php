@@ -226,9 +226,10 @@
           		<div class="centroRV">
           			<div class="transmissaoH">
           				<ul>
-          				  <li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li>
-          					<li><a href="javascript: stream1();" id="stream_tv" title="TV Cultura"><span>TV Cultura</span></a></li>
-          					<li><a href="javascript: stream2();" id="stream_exclusiva" title="Câmera exclusiva"><span>Câmera exclusiva</span></a></li>
+          				  <li><a href="javascript: stream5();" id="stream_youtube" title="TV Cultura"><span>TV Cultura</span></a></li>
+                    <li><a href="javascript: stream2();" id="stream_exclusiva" title="Câmera exclusiva"><span>Câmera exclusiva</span></a></li>
+          				  <!--li><a href="javascript: stream5();" id="stream_youtube" title="YoutTube"><span></span></a></li-->
+          					<!--li><a href="javascript: stream1();" id="stream_tv" title="TV Cultura"><span>TV Cultura</span></a></li-->
           					<!--li><a href="javascript: stream3();" id="stream_ustream" title="UStream"><span></span></a></li>
           					<li><a href="javascript: stream4();" id="stream_livestream" title="LiveStream"><span></span></a></li-->
           				</ul>
@@ -236,7 +237,11 @@
           					<script type="text/javascript">
           						//timer1();
           					</script>
-          					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
+          					<div class="boxVideoWrapper" id="boxVideoWrapper">
+          					   <?php if(isset($displays['yt-live'])): ?>
+                          <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
+                        <?php endif; ?>
+          					</div>
 		                    <span class="faixa"></span>
 		                    <h3><?php echo $asset->getTitle() ?></h3>
 		                    <p><?php echo $asset->getDescription() ?></p>
