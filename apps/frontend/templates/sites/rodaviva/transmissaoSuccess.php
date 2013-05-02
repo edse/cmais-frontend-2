@@ -58,7 +58,7 @@
     });
   }
   
-  function stream1() {
+  /*function stream1() {
     var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
     so.addVariable('controlbar', 'bottom');
     so.addVariable('autostart', 'true');
@@ -72,6 +72,7 @@
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_tv').addClass('ativo');
   }
+  */
 
   function stream2() {
     var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
