@@ -749,11 +749,11 @@ body{
 	background: url("../../../images/capaPrograma/rodaviva/bg-cameraRVOver.png") repeat-x;
 	text-decoration: none;
 }
-.transmissaoH li a#stream_youtube span {
+/*.transmissaoH li a#stream_youtube span {
 	background: url("../../../images/capaPrograma/rodaviva/bt-youtube.png") no-repeat 50% 50% transparent;
 	width:82px;
 	height:20px;
-}
+}*/
 .transmissaoH li a#stream_ustream span {
 	background: url("../../../images/capaPrograma/rodaviva/bt-ustream.png") no-repeat 50% 50% transparent;
 	width:82px;
