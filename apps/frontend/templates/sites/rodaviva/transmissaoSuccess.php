@@ -245,6 +245,7 @@
           				</div>
           			</div>
           			
+          			
           			<div class="chat">
           				<?php if(isset($displays['chat'])): ?>
           				<p class="btn-chat"><span>Chat</span></p>
