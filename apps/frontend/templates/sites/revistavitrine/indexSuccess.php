@@ -46,8 +46,16 @@
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
 
+         <!--
          <div class="capa-revista">
            <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
+         </div>
+         -->
+         
+          <div class="capa-revista">
+            <?php if(isset($displays["destaque-principal"])): ?>
+              <img src="<?php echo $displays["destaque-principal"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="Revista Vitrine" />
+            <?php endif ?>
          </div>
 
          
