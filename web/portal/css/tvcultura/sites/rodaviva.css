@@ -480,6 +480,8 @@ body{
 	padding-left: 0;
 	width:310px;
 }
+.boxRedes li a.facebook { padding-top:0; }
+
 .boxRedes li a:hover{
 	text-decoration: none;
 }
@@ -747,11 +749,11 @@ body{
 	background: url("../../../images/capaPrograma/rodaviva/bg-cameraRVOver.png") repeat-x;
 	text-decoration: none;
 }
-.transmissaoH li a#stream_youtube span {
+/*.transmissaoH li a#stream_youtube span {
 	background: url("../../../images/capaPrograma/rodaviva/bt-youtube.png") no-repeat 50% 50% transparent;
 	width:82px;
 	height:20px;
-}
+}*/
 .transmissaoH li a#stream_ustream span {
 	background: url("../../../images/capaPrograma/rodaviva/bt-ustream.png") no-repeat 50% 50% transparent;
 	width:82px;
@@ -2114,7 +2116,7 @@ a.memRoda img{
 }
 
 /*.transmissaoH ul li { margin-right:118px; }*/
-.transmissaoH ul li { margin-right:18px; }
+.transmissaoH ul li { margin-right:10px; }
 .transmissaoH ul li.ytb { margin-right:0; }
 
 .menu-interna { float:right; }

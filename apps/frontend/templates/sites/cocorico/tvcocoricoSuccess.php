@@ -109,7 +109,7 @@
     <div class="span8 col-esq">
       <!-- destaque-home-simples -->
       <div class="destaque-home-tv span9" id="destaqueForm" style="display:block;">
-        
+        <?php /*
         <h2>Concurso Cultural</h2>
         <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso-resultado.jpg" />
        
@@ -119,22 +119,22 @@
           <!--<a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a>--> 
           <span class="last"></span>
         </div>
-        <?php /*
+        */?>
         
-        if(isset($displays['destaque-seu-video'])): ?>
-          <?php if(count($displays['destaque-seu-video']) > 0): ?>
-            <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
+       <?php if(isset($displays['destaque-principal'])): ?>
+          <?php if(count($displays['destaque-principal']) > 0): ?>
+            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
             
-            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             
             <div class="destaque span12">
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <a href="<?php $site->retriveUrl()?>/cocorico/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
         <?php endif;
-        
+      /*  
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 

@@ -25,7 +25,7 @@
           <g:plusone size="medium" count="false"></g:plusone>
         </div>
         <div class="fb">
-          <fb:like href="http://cmais.com.br/segundatela/jornaldacultura" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
+          <fb:like href="http://cmais.com.br/segundatela" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
@@ -62,7 +62,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div> 
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
