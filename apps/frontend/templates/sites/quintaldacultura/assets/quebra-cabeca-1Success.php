@@ -299,6 +299,7 @@ ciências</a></li>
                 <li><a href="http://www2.tvcultura.com.br/captacao/" title="Captacao">Capta&ccedil;&atilde;o</a></li>
                 <!-- <li><a href="http://www2.tvcultura.com.br/imprensa/" title="Imprensa">Imprensa</a></li> -->
                 <li><a href="http://www2.tvcultura.com.br/selecao/" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
+                <li><a href="http://cmais.com.br/cedoc/" title="Cedoc">Cedoc</a></li>
               </ul>
               
               <a href="http://cmais.com.br/programas-de-a-z" class="tit todos">Todos os sites</a>
