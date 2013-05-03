@@ -31,7 +31,7 @@
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
         </div>
       </div>
-    </div>
+    </div> 
     <div class="col-dir">
       <div id="box-clock" style="display: none;">
         <div id="no-ar">
