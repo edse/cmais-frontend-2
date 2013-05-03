@@ -239,7 +239,7 @@
               }
             ?>
             
-        <a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/convidados/<?php echo $displays['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>">
+        <a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/tvcocorico/convidados/<?php echo $displays['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>">
           <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" />
           <?php //echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>
           <?php $tam=35; $str=$displays['destaque-tv-cocorico'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
