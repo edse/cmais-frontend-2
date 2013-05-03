@@ -45,7 +45,7 @@
          <div class="capa-revista online">
             
             <?php if(isset($displays["destaque-revista"])): ?>
-               <?php echo html_entity_decode($displays["destaque-revista"][0]->AssetContent->render()) ?>
+               <?php echo html_entity_decode($displays["destaque-revista"][0]->Asset->AssetContent->render()) ?>
             <?php endif ?>
          </div>
        
