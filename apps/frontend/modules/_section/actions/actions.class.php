@@ -708,7 +708,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
               else if($request->getParameter('letra-cocorico') != '')
                 $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra-cocorico')."%'");               
-              $this->assetsQuery->orderBy('a.created_at desc');
+              //$this->assetsQuery->orderBy('a.created_at desc');
 			      }
             else if($this->site->getSlug() == "jornaldacultura" && $this->section->getSlug() == "videos") {
               $this->assetsQuery = Doctrine_Query::create()
