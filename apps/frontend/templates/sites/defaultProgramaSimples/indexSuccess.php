@@ -31,7 +31,7 @@
 </script>
 <script type="text/javascript">
   function redirect(d){
-    self.location.href = '<?php echo $url ?>?d='+d;
+    self.location.href = '<?php echo $url ?>?d='d;
   }
 
   //cache the days and months
