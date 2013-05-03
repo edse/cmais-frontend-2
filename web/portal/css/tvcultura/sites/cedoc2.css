@@ -203,7 +203,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 .span6 .img-destaque { max-height:275px; overflow:hidden; }
 
 /******** RODAPE-PORTAL ********/
-#rodape-portal { margin-top:50px;clear:both; }
+#rodape-portal { margin-top: -27px;clear:both; }
 .capa-voltar-topo {  width:970px; margin:0 auto; position:relative; z-index:10; margin-bottom:-15px; }
 .voltar-topo { display:block; overflow:hidden; width:96px; background:url(/portal/images/bg-voltar-topo.jpg) repeat-x; height:36px; padding:4px 0 0 10px; font-size:10px; color:#fff; line-height:16px; text-indent: 7px;}
 .voltar-topo:hover {color:#FFFFFF; text-decoration:none;}
