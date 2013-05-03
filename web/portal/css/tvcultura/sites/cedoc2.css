@@ -222,7 +222,7 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 #rodape-portal .col-dir { width:120px; float:left; margin-top:20px; }
 #rodape-portal .col-dir a { text-indent:-9999px; display:block; }
 #rodape-portal .col-dir .fpa {  background:url(../images/logo-fpa.png) no-repeat; width:105px; height:63px; margin-bottom:30px; }
-#rodape-portal .col-dir .cultura {  background:url(../images/logo-cultura.png) no-repeat; width:61px ; height:61px; margin-left:17px; }
+#rodape-portal .col-dir .cultura {  background:url(/portal/images/logo-cultura.png) no-repeat; width:61px ; height:61px; margin-left:17px; }
 /*fxdfdsfd*/
 #rodape-portal .copyright {  margin:50px 0 20px 0; margin:0 auto; clear:both;position:absolute; right:400px; bottom:10px; }
 #rodape-portal .copyright p { font-size:10px; text-align:center; color:#fff !important; width:250px; margin:0 auto;  }
