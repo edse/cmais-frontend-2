@@ -8,7 +8,7 @@ $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; 
 ?>
 <div class="enquete span12">
-  <h3>enquete do dia</h3>
+  <h3>enquete da semana</h3>
   <p><?php echo $q;?></p>
   <!--Pergunta-->
   <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>" class="form-voto navbar-form pull-left span12" <!--style="min-width:296px;--> ">

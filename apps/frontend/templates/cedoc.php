@@ -30,7 +30,8 @@
   <body>
 
     <?php echo $sf_content ?>
-    
+    <?php include_partial_from_folder('blocks', 'global/footer') ?>
+    <!--
     <div id="footer">
       <div class="container">
         <a class="voltar-topo" href="#geral">Voltar ao topo</a>
@@ -48,7 +49,7 @@
           <li class="tit"><a href="/cedoc/pesquisa-trabalhe-conosco"title="Trabalhe Conosco">Trabalhe Conosco</a></li>
         </ul>  
         <ul class="span3">
-          <li class="tit mg"><a href="/cedoc/emissoras" title="Emissoras">Emissoras</a></li>
+          <li class="tit mg">Emissoras</li>
           <li><a href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a></li>
           <li><a href="http://univesptv.cmais.com.br/"title="Univesp TV">Univesp TV</a></li>
           <li><a href="http://multicultura.cmais.com.br/" title="multiCultura">multiCultura</a></li>
@@ -67,7 +68,7 @@
         <p class="copyright">Copyright © 2013 Fundação Padre Anchieta</p>     
       </div>
     </div>
-
+    -->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
