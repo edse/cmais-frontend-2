@@ -227,4 +227,5 @@ h2 { text-transform:uppercase; font-size:18px; color:#666666; font-weight:normal
 #rodape-portal .copyright {  margin:50px 0 20px 0; margin:0 auto; clear:both;position:absolute; right:400px; bottom:10px; }
 #rodape-portal .copyright p { font-size:10px; text-align:center; color:#fff !important; width:250px; margin:0 auto;  }
 #rodape-portal .posicao { width:200px; float:left; text-align:left; }
+.voltar-topo span {background: url(/portal/images/voltar-topo.png) no-repeat;width: 16px;height: 16px;display: block;float: left;}
 /******** /RODAPE-PORTAL *********/
