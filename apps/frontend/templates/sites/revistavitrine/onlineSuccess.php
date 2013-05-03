@@ -43,8 +43,12 @@
           <?php endif; ?>
          
          <div class="capa-revista online">
-             <div data-configid="0/2005502" style="width: 720px; height: 471px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+            
+            <?php if(isset($displays["destaque-revista"])): ?>
+               <?php echo html_entity_decode($displays["destaque-revista"][0]->AssetContent->render()) ?>
+            <?php endif ?>
          </div>
+       
          
           <div class="baixar">
            <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
