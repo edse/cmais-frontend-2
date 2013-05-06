@@ -35,8 +35,9 @@
                 <div class="contatoWrapper">
                   <a name="topo"></a>
                   <h3 class="tit-pagina grid3">PROCESSO SELETIVO TUTORIA ONLINE PARA GESTÃO ESCOLAR,LÍNGUA PORTUGUESA, MATEMÁTICA</h3>
-                  <p style="font-size: 16px; font-weight: bold">Lista de Aprovados</p>
-                  <br />
+                  <br>
+                  <br>
+                  <p style="font-size: 20px; font-weight: bold">Lista de Aprovados</p>
                   <br />
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
