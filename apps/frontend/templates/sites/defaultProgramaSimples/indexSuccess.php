@@ -43,7 +43,6 @@
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    
     <?php if((format_datetime($program->getDateStart(), "HH:mm") > "04:59") || (format_datetime($program->getDateStart(), "HH:mm") < "00:01")): ?>
     var year_month_day = ""+ year_month+"-"+ (date.getDate()-1)+"";
     <?php else: ?>
@@ -55,7 +54,6 @@
     i = 0;
     ret = false;
 
-<?php if((format_datetime($d->getDateStart(), "HH:mm") > "04:59") && (format_datetime($d->getDateStart(), "HH:mm") < "00:01")): ?>defaultDate: new Date(date.getDay()-1);,<?php endif; ?>
 
     for (i in cached_months) {
       if (cached_months[i] == year_month){
