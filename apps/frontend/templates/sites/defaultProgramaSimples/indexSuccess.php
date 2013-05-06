@@ -22,7 +22,7 @@
       altFormat: 'yy-mm-dd',
 
 	  <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
-	  <?php if((format_datetime($d->getDateStart(), "HH:mm") > "04:59") && (format_datetime($d->getDateStart(), "HH:mm") < "00:01")): ?>defaultDate: new Date("<?php echo ($date-1) ?>"),<?php endif; ?>
+	  <?php if((format_datetime($d->getDateStart(), "HH:mm") > "04:59") && (format_datetime($d->getDateStart(), "HH:mm") < "00:01")): ?>defaultDate: new Date(date.getDay()-1);,<?php endif; ?> 
       inline: true
     });
     //hover states on the static widgets
