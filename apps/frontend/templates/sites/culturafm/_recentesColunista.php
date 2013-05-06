@@ -14,7 +14,7 @@
 							}
 							if (isset($section))
 								$assets = $section->getAssets();
-              $assets = array_reverse($assets);
+              
 						?>
 						<?php if(isset($assets)): ?>
 							<?php if(count($assets) >= 1): ?>
