@@ -13,7 +13,7 @@
                 <!-- BOX PADRAO Proximas Atrações -->
                 <div class="box-padrao proximasAtracoes grid1">
                   <div class="enunciado">
-                    <h2>***Próximas Atrações***</h2>
+                    <h2>Próximas Atrações</h2>
                   </div>
                   <div class="proximasAtracoes-box">
                     <p><span><?php echo format_date($coming[0]->getDateStart(), "t") ?></span><a href="<?php echo $coming[0]->Program->retriveUrl() ?>" title="<?php echo $coming[0]->Program->getTitle() ?>"><?php echo $coming[0]->Program->getTitle() ?></a></p>
