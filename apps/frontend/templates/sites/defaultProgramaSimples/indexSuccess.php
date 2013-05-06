@@ -5,10 +5,12 @@
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 <?php
-	$start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
-	$end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
-	$this->nextDate = $end;
-	$this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
+	$this->date = date("Y/m/d");
+ 
+            $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
+            $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
+            $this->nextDate = $end;
+            $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
 ?>
 
 <script type="text/javascript">
