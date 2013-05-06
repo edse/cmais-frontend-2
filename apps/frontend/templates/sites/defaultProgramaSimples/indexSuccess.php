@@ -1,5 +1,5 @@
 <!--<script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>-->
-<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<!--<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>-->
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programas.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
