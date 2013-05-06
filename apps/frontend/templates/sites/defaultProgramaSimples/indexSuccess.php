@@ -188,10 +188,11 @@
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>
                     <h5><?php echo $d->retriveTitle() ?></h5>
+                    <br><?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
                     <p><?php echo html_entity_decode($d->retriveDescription3()) ?></p>
                     <?php if($d->url != ""): ?>
                     <a class="mais" href="<?php echo $d->url ?>">saiba mais...</a>
-                    <br><?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
+
                     <?php endif; ?>
                   </div>
                 </li>
