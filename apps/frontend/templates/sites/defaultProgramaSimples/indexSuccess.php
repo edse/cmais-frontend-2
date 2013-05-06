@@ -191,6 +191,7 @@
                     <p><?php echo html_entity_decode($d->retriveDescription3()) ?></p>
                     <?php if($d->url != ""): ?>
                     <a class="mais" href="<?php echo $d->url ?>">saiba mais...</a>
+                    <br><?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
                     <?php endif; ?>
                   </div>
                 </li>
@@ -220,7 +221,7 @@
               <script type='text/javascript'>
               GA_googleFillSlot("cmais-assets-300x250");
               </script>
-              <br><?php echo format_datetime($date->getDateStart(), "HH:mm") ?>
+              
             </div>    
             <!-- / BOX PUBLICIDADE -->
 
