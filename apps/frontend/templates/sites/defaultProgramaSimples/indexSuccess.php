@@ -5,25 +5,24 @@
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
-  <?php if((format_datetime($date, "HH:mm") < "04:59") && (format_datetime($date, "HH:mm") > "00:01")): ?><?php echo "faixa-madrugada" ?><?php endif; ?>
 <script type="text/javascript">
-	
-  $(function(){
-    // comportamento inicial da grade
-    $('.btn-toggle:first').parent().addClass('escura');
-    $('.btn-toggle:first').parent().next().slideDown(400);
-  });
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
+  jQuery(function(a){a.datepicker.regional["pt-BR"]={closeText:"Fechar",prevText:"&#x3c;Anterior",nextText:"Pr&oacute;ximo&#x3e;",currentText:"Hoje",monthNames:["Janeiro","Fevereiro","Mar&ccedil;o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],monthNamesShort:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],dayNames:["Domingo","Segunda-feira","Ter&ccedil;a-feira","Quarta-feira","Quinta-feira","Sexta-feira","S&aacute;bado"],dayNamesShort:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],dayNamesMin:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],weekHeader:"Sm",dateFormat:"dd/mm/yy",firstDay:0,isRTL:false,showMonthAfterYear:false,yearSuffix:""};a.datepicker.setDefaults(a.datepicker.regional["pt-BR"])});
+  
+  $(function(){
+    // comportamento inicial da grade
+    $('.now').parent().addClass('escura');
+    $('.now').parent().next().slideDown(400);
+  });
 
-	  
-      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      //beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),
       inline: true
     });
     //hover states on the static widgets
@@ -32,10 +31,10 @@
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
-</script>
-<script type="text/javascript">
+
   function redirect(d){
-    self.location.href = '<?php echo $url ?>?d='+d;
+    //self.location.href = './grade?c=<?php echo $sChannel->getSlug() ?>&d='+d;
+	  send('<?php echo $sChannel->getSlug() ?>',d);
   }
 
   //cache the days and months
@@ -64,7 +63,7 @@
       //  load the month via .ajax
       opts= "month="+ (date.getMonth()+1);
       opts=opts +"&year="+ (date.getFullYear());
-      opts=opts +"&program_id=<?php echo $site->Program->id ?>";
+      opts=opts +"&channel_id=<?php if($sChannel->id): ?><?php echo $sChannel->id ?><?php endif; ?>";
       // opts=opts +"&day="+ (date.getDate());
       // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
 
