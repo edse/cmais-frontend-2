@@ -5,7 +5,9 @@
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
+  <?php if((format_datetime($date, "HH:mm") < "04:59") && (format_datetime($date, "HH:mm") > "00:01")): ?><?php echo "faixa-madrugada" ?><?php endif; ?>
 <script type="text/javascript">
+	
   $(function(){
     // comportamento inicial da grade
     $('.btn-toggle:first').parent().addClass('escura');
@@ -19,6 +21,8 @@
       onSelect: redirect,
       dateFormat: 'yy/mm/dd',
       altFormat: 'yy-mm-dd',
+
+	  
       <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
@@ -188,7 +192,6 @@
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>
                     <h5><?php echo $d->retriveTitle() ?></h5>
-                    <br><?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
                     <p><?php echo html_entity_decode($d->retriveDescription3()) ?></p>
                     <?php if($d->url != ""): ?>
                     <a class="mais" href="<?php echo $d->url ?>">saiba mais...</a>
