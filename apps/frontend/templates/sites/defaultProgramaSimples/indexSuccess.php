@@ -4,14 +4,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<?php
-	$this->date = date("Y/m/d");
- 
-            $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
-            $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
-            $this->nextDate = $end;
-            $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
-?>
 
 <script type="text/javascript">
 	
@@ -30,6 +22,7 @@
       altFormat: 'yy-mm-dd',
 
 	  <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+	  <?php if((format_datetime($d->getDateStart(), "HH:mm") > "04:59") && (format_datetime($d->getDateStart(), "HH:mm") < "00:01")): ?>defaultDate: new Date("<?php echo ($date->getDay()-1) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
