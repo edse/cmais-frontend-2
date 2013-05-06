@@ -6,20 +6,20 @@
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
 <script type="text/javascript">
-  $(function(){
-    // comportamento inicial da grade
-    $('.btn-toggle:first').parent().addClass('escura');
-    $('.btn-toggle:first').parent().next().slideDown(400);
-  });
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
-      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+  $(function(){
+    // comportamento inicial da grade
+    $('.btn-toggle:first').parent().addClass('escura');
+    $('.btn-toggle:first').parent().next().slideDown(400);
+  });
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
@@ -31,7 +31,7 @@
 </script>
 <script type="text/javascript">
   function redirect(d){
-    self.location.href = '<?php echo $url ?>?d='+d;
+    self.location.href = '<?php echo $url ?>?d=';
   }
 
   //cache the days and months
@@ -119,15 +119,7 @@
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
-            <p><?php echo html_entity_decode($program->getSchedul
-Segue o feedback do pessoal do YouTube.
-
-Precisaremos processar esses vídeos novamente.
-
-Basta dar um "reprocess" do dropbox do Astolfo.
-
-Abs,
--Ee()) ?></p>
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
           </div>
           <!-- /horario -->
           <?php endif; ?>
@@ -254,4 +246,3 @@ Abs,
       
     </div>
     <!-- / CAPA SITE -->
-
