@@ -178,7 +178,7 @@
                 <li>
                   <div class="barra-grade">
                     <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></p>
-                    <a href="#" class="btn-toggle"><?php echo $d->Program->getTitle() ?></a>
+                    <a href="#" class="btn-toggle"><?php echo $d->Program->getTitle() ?><br><?php echo format_datetime($d->Program->getDateStart(), "HH:mm") ?></a>
                     <a href="#" class="botao btn-toggle"></a>
                   </div>
                   <div style="display:none; width:619px; padding-bottom:25px;" class="grade toggle">
