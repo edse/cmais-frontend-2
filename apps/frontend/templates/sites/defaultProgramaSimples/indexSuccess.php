@@ -43,7 +43,7 @@
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    <?php if((format_datetime($program->getDateStart(), "HH:mm") > "04:59") || ((format_datetime($program->getDateStart(), "HH:mm")) < "00:01")): ?>
+    <?php if((format_datetime($site->$program->getDateStart(), "HH:mm") > "04:59") || ((format_datetime($site->$program->getDateStart(), "HH:mm")) < "00:01")): ?>
     var year_month_day = ""+ year_month+"-"+ (date.getDate()-1)+"";
     <?php else: ?>
     var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
