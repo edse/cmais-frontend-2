@@ -6,23 +6,20 @@
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
 <script type="text/javascript">
-	
-  $(function(){
-    // comportamento inicial da grade
-    $('.btn-toggle:first').parent().addClass('escura');
-    $('.btn-toggle:first').parent().next().slideDown(400);
-  });
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
-
-	  <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
-	   
+  $(function(){
+    // comportamento inicial da grade
+    $('.btn-toggle:first').parent().addClass('escura');
+    $('.btn-toggle:first').parent().next().slideDown(400);
+  });
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
@@ -31,6 +28,7 @@
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
+</script>
 
 <script type="text/javascript">
   function redirect(d){
@@ -43,13 +41,12 @@
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
- 	var year_month_day = ""+ year_month+"-"+ (date.getDate())+"";
- 	var opts = "";
+    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
+    var opts = "";
     var i = 0;
     var ret = false;
-    i = 0; 
+    i = 0;
     ret = false;
-
 
     for (i in cached_months) {
       if (cached_months[i] == year_month){
@@ -195,7 +192,6 @@
                     <p><?php echo html_entity_decode($d->retriveDescription3()) ?></p>
                     <?php if($d->url != ""): ?>
                     <a class="mais" href="<?php echo $d->url ?>">saiba mais...</a>
-
                     <?php endif; ?>
                   </div>
                 </li>
@@ -225,7 +221,6 @@
               <script type='text/javascript'>
               GA_googleFillSlot("cmais-assets-300x250");
               </script>
-              
             </div>    
             <!-- / BOX PUBLICIDADE -->
 
