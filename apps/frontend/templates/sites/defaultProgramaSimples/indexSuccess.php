@@ -41,7 +41,7 @@
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    var year_month_day = ""+ year_month+"-"+ (date.getDate()-1)+"";
+    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
     var opts = "";
     var i = 0;
     var ret = false;
