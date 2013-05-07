@@ -29,7 +29,7 @@
     );
   });
 </script>
-
+<?php echo format_datetime($program->getDateStart(), "HH:mm"); ?>
 <script type="text/javascript">
   function redirect(d){
      self.location.href = '<?php echo $url ?>?d='+d;
