@@ -22,7 +22,7 @@
       <p>Na 1ª e 2ª fase os participantes respondem sobre 09 temas (Ciências, Cinema e Tv, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Dois deles passam para a 3ª fase onde responderão sobre temas relacionados a programas da TV CULTURA.</p>
       <p>Ao final, o grande vencedor é aquele que acumular a maior quantidade de “EUREKAS” (sistema de pontuação do jogo).</p>
 
-      <a id="enviar" class="btn-home" href="http://tvcultura.cmais.com.br/qss/inscricao" >INSCREVA-SE JÁ</a>
+      <a id="enviar" class="btn-home" href="http://tvcultura.cmais.com.br/qss-fb/inscricao" >INSCREVA-SE JÁ</a>
 
     </div>  
 </div> 
