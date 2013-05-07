@@ -34,15 +34,7 @@
 
 <script type="text/javascript">
   function redirect(d){
-  	
-  <?php
-  $this->date = $request->getParameter('d');
-            $this->start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
-            $this->end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
-            $this->nextDate = $this->end;
-            $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
-  ?>
-    self.location.href = '<?php echo $url ?>?d='+d;
+     self.location.href = '<?php echo $url ?>?d='+d;
   }
 
   //cache the days and months
