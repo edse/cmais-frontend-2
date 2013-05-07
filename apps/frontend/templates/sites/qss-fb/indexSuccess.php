@@ -54,7 +54,7 @@
           email: true
         }
       },
-      messages:{
+      messages:{/qss
         email: "Digite um e-mail válido.",
  
       },
