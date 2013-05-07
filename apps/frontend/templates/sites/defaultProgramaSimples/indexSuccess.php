@@ -97,14 +97,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
-<?php
-	$this->date = $request->getParameter('d');
-    $this->start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
-    $this->end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
-    $this->nextDate = $this->end;
-    $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
-?>         
-    <!-- CAPA SITE -->
+   <!-- CAPA SITE -->
     <div id="capa-site">
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
@@ -167,6 +160,13 @@
           <div id="esquerda" class="grid2">
             
             <!-- menu-calendario -->
+            <?php
+	$this->date = $request->getParameter('d');
+    $this->start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
+    $this->end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
+    $this->nextDate = $this->end;
+    $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
+?>   
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
