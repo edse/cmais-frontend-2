@@ -6,20 +6,20 @@
 <link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
 <script type="text/javascript">
-  $(function(){
-    // comportamento inicial da grade
-    $('.btn-toggle:first').parent().addClass('escura');
-    $('.btn-toggle:first').parent().next().slideDown(400);
-  });
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
-      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+  $(function(){
+    // comportamento inicial da grade
+    $('.btn-toggle:first').parent().addClass('escura');
+    $('.btn-toggle:first').parent().next().slideDown(400);
+  });
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
@@ -29,9 +29,10 @@
     );
   });
 </script>
+
 <script type="text/javascript">
   function redirect(d){
-    self.location.href = '<?php echo $url ?>?d='+d;
+     self.location.href = '<?php echo $url ?>?d='+d;
   }
 
   //cache the days and months
@@ -96,7 +97,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
-    <!-- CAPA SITE -->
+   <!-- CAPA SITE -->
     <div id="capa-site">
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
@@ -123,6 +124,7 @@
           </div>
           <!-- /horario -->
           <?php endif; ?>
+         
         </div>
 
         <?php if(isset($siteSections)): ?>
@@ -158,6 +160,7 @@
           <div id="esquerda" class="grid2">
             
             <!-- menu-calendario -->
+         
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
@@ -188,11 +191,9 @@
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>
                     <h5><?php echo $d->retriveTitle() ?></h5>
-                    <br><?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
                     <p><?php echo html_entity_decode($d->retriveDescription3()) ?></p>
                     <?php if($d->url != ""): ?>
                     <a class="mais" href="<?php echo $d->url ?>">saiba mais...</a>
-
                     <?php endif; ?>
                   </div>
                 </li>
@@ -222,7 +223,6 @@
               <script type='text/javascript'>
               GA_googleFillSlot("cmais-assets-300x250");
               </script>
-              
             </div>    
             <!-- / BOX PUBLICIDADE -->
 

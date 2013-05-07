@@ -57,3 +57,7 @@ h1,
 #form-contato legend { overflow:hidden; }
 .btn-home { float:none; width:200px; margin:0 auto; font-weight: bold; }
 .btn-home:hover { text-decoration:none; }
+
+/*face*/
+#capa-site { max-width: 810px; }
+
