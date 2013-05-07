@@ -4,7 +4,7 @@
 
 <!-- CAPA SITE -->
 <div id="capa-site">
-  <img src="/portal/images/capaPrograma/qss/background-qss.jpg" alt="Quem Sabe Sabe">    
+  <img src="/portal/images/capaPrograma/qss/background-qss.jpg" alt="Quem Sabe Sabe" style="max-width: 810px;">    
   <!-- curtir -->
     <div class="redes">
       <div class="curtir">
