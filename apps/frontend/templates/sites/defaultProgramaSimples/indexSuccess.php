@@ -124,7 +124,7 @@
           </div>
           <!-- /horario -->
           <?php endif; ?>
-          <?php echo format_datetime($program->getDateStart(), "HH:mm"); ?>
+         
         </div>
 
         <?php if(isset($siteSections)): ?>
