@@ -81,7 +81,9 @@ class _sectionActions extends sfActions
 	  if(in_array($this->section->Site->getSlug(), array("qss-fb"))) {
         $this->setLayout(false);
       }
-      
+      if(in_array($this->section->Site->getSlug(), array("qss-fb"))&& $this->section->getSlug()=="inscricao") {
+        $this->setLayout(false);
+      }
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
         /*
