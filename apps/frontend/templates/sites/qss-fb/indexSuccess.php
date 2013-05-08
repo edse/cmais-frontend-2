@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
 <style type="text/css">
-#page{width:300px!important;}
 #capa-site { max-width: 780px; min-height:530px; height:1600px; overflow:scroll;}
 </style>
 <?php use_helper('I18N', 'Date') ?>
