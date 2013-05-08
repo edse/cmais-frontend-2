@@ -9,7 +9,7 @@
     font-style: normal;
 
 }
-body {background: black; width:792px; overflow:scroll;}
+body {background: black; width:792px;  *width:792px; overflow:scroll;}
 #capa-site{min-height: 522px;*margin-top: -50px !important}
 #rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
 .voltar-topo{*margin-left:-350px !important;}
