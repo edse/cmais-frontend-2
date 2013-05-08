@@ -240,7 +240,9 @@
     });
 </script>
 <!--/CONTROLE REMOTO-->
-
+<style type="text/css">
+#capa-site { max-width: 750px; }
+</style>
 
 <!-- CAPA SITE -->
 <div id="capa-site" style="float:left;">
