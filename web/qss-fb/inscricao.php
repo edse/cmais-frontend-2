@@ -243,7 +243,7 @@
 
 
 <!-- CAPA SITE -->
-<div id="capa-site">
+<div id="capa-site" style="float:left;">
  
   <!-- curtir -->
     <div class="redes">
