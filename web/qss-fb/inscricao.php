@@ -241,7 +241,7 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#page{width:400px!important}
+iframe{width:400px!important}
 /*#capa-site { max-width: 750px; min-height:2100px; margin-left:20px; height:2100px; }*/
 #form-contato { max-width:750px; }
 
