@@ -10,10 +10,10 @@
 
 }
 body {}
-#capa-site{min-height: 522px;*margin-top: -50px !important}
+/*#capa-site{min-height: 522px;*margin-top: -50px !important}*/
 #rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
 .voltar-topo{*margin-left:-350px !important;}
-#capa-site{background:black;width: 780px; height:500px!important; overflow-y:scroll; }
+#capa-site{background:black;width: 780px; height:500px!important; overflow-y:scroll;*overflow-y:scroll;}
 /*#capa-site{position:relative;overflow: visible; min-height:833px;}*/
 #capa-site .logo{position: absolute;top: 70px;left:0px;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
