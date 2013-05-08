@@ -241,7 +241,8 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#capa-site { max-width: 750px; }
+#capa-site { max-width: 750px; min-height:auto; }
+
 </style>
 
 <!-- CAPA SITE -->
