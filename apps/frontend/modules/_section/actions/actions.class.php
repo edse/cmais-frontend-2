@@ -75,7 +75,7 @@ class _sectionActions extends sfActions
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home") {
         $this->setLayout('responsivo');
 	  }
-      if($this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="home") {
+      if($this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="home" || $this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="inscricao" ) {
         $this->setLayout(false);
       }
 	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
