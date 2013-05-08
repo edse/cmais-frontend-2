@@ -241,36 +241,15 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#capa-site { max-width: 750px; min-height:0; margin-left:20px; }
+#capa-site { max-width: 750px; min-height:2100px; margin-left:20px; height:2100px; }
 #form-contato { max-width:750px; }
 
 </style>
 
 <!-- CAPA SITE -->
-<div id="capa-site" style="float:left;">
+<div id="capa-site">
  
-  <!-- curtir -->
-    <div class="redes">
-      <div class="curtir">
-        <div style="display:block; float: left; margin-right:10px;">
-        <g:plusone size="medium" count="false"></g:plusone>
-        </div>
-        <fb:like href="https://www.facebook.com/pages/Quem-Sabe-Sabe/458726357528906" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
-      </div>
-      <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura">Tweet</a>-->
-    </div>
-    <!-- /curtir --> 
-    <!--
-    <p>
-    <class style="font-color: #000000;">
-    Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!<br>
-    Com João Victor e Gabriela França no comando, o programa de perguntas e respostas foi criado para despertar o interesse e a participação do público. O vencedor dependerá de conhecimento, estratégia e da sorte para acertar as questões de múltipla escolha e levar os prêmios para casa!<br>
-    Quem participar do programa irá se enfrentar em três fases distintas: na 1ª e 2ª fases, serão perguntas sobre diversos temas (Ciências, Cinema e TV, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Ao fim dessa etapa, dois participantes são eliminados e dois seguem para o duelo final.<br>
-    Aí, eles respondem, cada um, a três perguntas sobre temas relacionados a programas da TV Cultura. Vence quem acumular a maior quantidade Eurekas, os pontos do jogo.<br>
-    E você pode ser um desses participantes! Basta preencher o formulário abaixo e, se quiser, enviar um vídeo para a gente contando porque você quer participar do QSS!
-    </style>
-    </p>
-    -->
+  
     <form id="form-contato" method="post" action="">
       <!--<h1>Quer participar do QSS?</h1>-->
       <fieldset>
