@@ -6,11 +6,6 @@
 
 <!-- CAPA SITE --> 
 <div id="capa-site">
-
-  <!-- curtir -->
-    <div class="redes">
-    </div>
-    <!-- /curtir -->
     <div style="float:left;">
       <p>O ”QUEM SABE, SABE” é um jogo diário, destinado aos participantes a partir dos 18 anos de idade, com perguntas e respostas de múltiplas escolhas. Ele é baseado no conhecimento, estratégia e sorte dos competidores.</p>
       <p>Gravado nos estúdios da emissora e jogado a partir de uma arena tecnológica, 4 participantes, representados por avatares de cores diferente, se enfrentam em 3 fases distintas durante 1 hora de programa, sempre de segunda a sexta-feira.</p>
