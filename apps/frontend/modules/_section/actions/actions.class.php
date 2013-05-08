@@ -74,11 +74,13 @@ class _sectionActions extends sfActions
       }
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home") {
         $this->setLayout('responsivo');
+	  }
+      if($this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="home") {
+        $this->setLayout(false);
       }
-      if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
+	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
-      
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
         /*
