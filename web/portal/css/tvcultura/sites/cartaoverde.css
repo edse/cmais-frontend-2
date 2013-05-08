@@ -1,7 +1,7 @@
 @import url("../geral.css");
 
 /** CARTAO VERDE **/
-body {background: none;}
+body {background: none!important;}
 #barra-site { background:url(../../../images/capaPrograma/bg-cartaoVerde.png) no-repeat right 1px; margin-top:0; min-height:166px; }
 #barra-site {_background-image:url(../../../images/capaPrograma/bg-cartaoVerde.gif);}
 .submenu-interna {width:116px;}
