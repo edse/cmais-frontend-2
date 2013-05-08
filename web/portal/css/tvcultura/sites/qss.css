@@ -9,11 +9,11 @@
     font-style: normal;
 
 }
-body {background: black; width:100px!important;}
+body {background: black;}
 #capa-site{min-height: 522px;*margin-top: -50px !important}
 #rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
 .voltar-topo{*margin-left:-350px !important;}
-#capa-site{ background:yellow; width: 850px; height:300px!important; overflow:scroll;}
+#capa-site{width: 810px; height:1600px!important; overflow:scroll;}
 /*#capa-site{position:relative;overflow: visible; min-height:833px;}*/
 #capa-site .logo{position: absolute;top: 70px;left:0px;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
