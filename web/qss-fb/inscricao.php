@@ -74,13 +74,177 @@
     
 ?>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
-<?php use_helper('I18N', 'Date') ?>
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
+  <head>
+    <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <link rel="stylesheet" href="/portal/css/geral.css?nocache=54321" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=131325" type="text/css" />
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+    <![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+
+    <title>Quem sabe sabe - Inscrição Segunda Etapa - cmais+ O portal de conteúdo da Cultura</title>
+    <meta name="title" content="Quem sabe sabe - Inscrição Segunda Etapa - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="description" content=" - cmais+ O portal de conteúdo da Cultura" />
+    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
+    <meta name="language" content="pt_BR" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Quem sabe sabe - Inscrição Segunda Etapa - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:type" content="tv_show" />
+    <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
+    <meta property="og:url" content="http://tvcultura.cmais.com.br/frontend_dev.php/qss/inscricao-segunda-etapa" />
+    <meta property="og:site_name" content="cmais+" />
+    <meta property="og:image" content="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
+
+    <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
+
+    <meta property="fb:admins" content="100000889563712" />
+    <meta property="fb:app_id" content="124792594261614" />
+    
+    <!-- Fav and touch icons -->
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://cmais.com.br/portal/images/icon/cmais-favico_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cmais.com.br/portal/images/icon/cmais-favico_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
+    <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
+    <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico" type="image/x-icon" />
+    <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
+    -->
+    <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
+ 
+    
+    
+
+    <!-- scripts -->
+    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!--script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script-->
+    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+      {lang: 'pt-BR'}
+    </script>
+
+    <!-- DFP -->
+    <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+    <script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-6681834746443470");
+    GS_googleEnableAllServices();
+    </script>
+    <script type='text/javascript'>
+    /*
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-aovivo-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-aovivo-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-arteecultura-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-educacao-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-grade-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250-2");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-jornalismo-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-musica-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cultura360-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "jornaldacultura-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "metropolis-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "nossalingua-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "preestreia-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "programas-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "programas-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "programas-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "srbrasil-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "CartaoVerde728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "provocacoes-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "reisdarua-728x90");
+    */
+    GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "multicultura-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "deupaulanatv-125x125");
+    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "culturafm-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-geral2-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-728x90");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-homepage-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
+    GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-300x250");
+
+    </script>
+    <script type='text/javascript'>
+    GA_googleFetchAds();
+    </script>
+    <!-- /DFP -->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- /scripts -->
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
+<!--Controle-Remoto-->
+<script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
+
+<script src="http://www.culturabrasil.com.br/js/jquery.xmldom.min.js" type="text/javascript"></script>
+<script src="http://www.culturabrasil.com.br/js/Menu.class.js" type="text/javascript"></script>
+<script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var Menu    = new Menu(); 
+    var User    = new User(); 
+
+    $(function(){
+      $('#logo').click(function(){
+        location.href=URL;
+      });
+      Menu.initHandler();
+      User.initHandler();
+
+      var controle = null;
+
+      $('#controle-remoto, #ouca').click(function(){
+        if(controle == null || controle.closed){
+          controle = window.open('http://www.culturabrasil.com.br/controle-remoto?start=am','controle','width=300,height=600,scrollbars=no');
+        } else {
+          controle.focus();
+        }
+      });
+    });
+</script>
+<!--/CONTROLE REMOTO-->
 
 
 <!-- CAPA SITE -->
 <div id="capa-site">
-  <img src="/portal/images/capaPrograma/qss/background-qss.jpg" alt="Quem Sabe Sabe">    
+ 
   <!-- curtir -->
     <div class="redes">
       <div class="curtir">
@@ -92,7 +256,17 @@
       <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura">Tweet</a>-->
     </div>
     <!-- /curtir --> 
-   
+    <!--
+    <p>
+    <class style="font-color: #000000;">
+    Quatro participantes, roleta digital e um tabuleiro interativo. Esse é o cenário do Quem Sabe, Sabe!, novo game show da TV Cultura que estreia em maio!<br>
+    Com João Victor e Gabriela França no comando, o programa de perguntas e respostas foi criado para despertar o interesse e a participação do público. O vencedor dependerá de conhecimento, estratégia e da sorte para acertar as questões de múltipla escolha e levar os prêmios para casa!<br>
+    Quem participar do programa irá se enfrentar em três fases distintas: na 1ª e 2ª fases, serão perguntas sobre diversos temas (Ciências, Cinema e TV, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Ao fim dessa etapa, dois participantes são eliminados e dois seguem para o duelo final.<br>
+    Aí, eles respondem, cada um, a três perguntas sobre temas relacionados a programas da TV Cultura. Vence quem acumular a maior quantidade Eurekas, os pontos do jogo.<br>
+    E você pode ser um desses participantes! Basta preencher o formulário abaixo e, se quiser, enviar um vídeo para a gente contando porque você quer participar do QSS!
+    </style>
+    </p>
+    -->
     <form id="form-contato" method="post" action="">
       <!--<h1>Quer participar do QSS?</h1>-->
       <fieldset>
