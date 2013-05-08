@@ -58,5 +58,7 @@ h1,
 .btn-home { float:none; width:200px; margin:0 auto; font-weight: bold; }
 .btn-home:hover { text-decoration:none; }
 
+iframe#page{width:300px!important; height:300px!important;}
+
 
 
