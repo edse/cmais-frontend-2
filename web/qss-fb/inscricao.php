@@ -241,7 +241,7 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#capa-site { max-width: 750px; min-height:auto; }
+#capa-site { max-width: 750px; min-height:0; margin-left:20px; }
 #form-contato { max-width:750px; }
 
 </style>
