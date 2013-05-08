@@ -1,8 +1,7 @@
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/rodaviva.css?nocache=<?php echo time(); ?>" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/cartaoverde.css?nocache=<?php echo time(); ?>" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?nocache=<?php echo time(); ?>" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/cartaoverde.css?nocache=<?php echo time(); ?>" type="text/css" />
     
 
     <?php use_helper('I18N', 'Date') ?>
