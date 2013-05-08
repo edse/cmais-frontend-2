@@ -242,7 +242,7 @@
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
 
-#capa-site {*height:500px; margin-left:20px; height:2100px; }
+#capa-site {*height:500px; margin-left:20px; }
 /*#form-contato { max-width:750px; }*/
 
 </style>
