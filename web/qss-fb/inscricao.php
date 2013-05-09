@@ -241,10 +241,7 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#capa-site {max-width: 770px; height:1600px!important;}
-/*#capa-site {height:500px; overflow-y:scroll }*/
-/*#form-contato { max-width:750px; }*/
-
+  #capa-site {max-width: 770px; height:1600px!important;}
 </style>
 
 <!-- CAPA SITE -->
