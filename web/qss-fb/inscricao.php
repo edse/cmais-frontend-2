@@ -344,6 +344,8 @@
       <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar" style="cursor:pointer" />
     </form>  
 </div> 
+</table>
+</body>
 <!-- /capa site-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
@@ -471,6 +473,5 @@
 <?php
   }
 ?>
-</table>
-</body>
+
 </html>
