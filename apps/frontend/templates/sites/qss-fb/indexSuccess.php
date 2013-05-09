@@ -1,11 +1,9 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
-<style type="text/css">
-#capa-site { max-width: 750px; min-height:530px; height:530px;  }
-</style>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- CAPA SITE --> 
-<div id="capa-site">
+<div id="capa-site" style="width:780px!important;padding:10px">
 
     <div>
       <p>O ”QUEM SABE, SABE” é um jogo diário, destinado aos participantes a partir dos 18 anos de idade, com perguntas e respostas de múltiplas escolhas. Ele é baseado no conhecimento, estratégia e sorte dos competidores.</p>
