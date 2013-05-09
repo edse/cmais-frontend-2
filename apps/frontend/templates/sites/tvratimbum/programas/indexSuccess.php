@@ -151,7 +151,7 @@ $assets = $pager->getResults();
           <a class="btn primeira" href="javascript: goToPage(1);" title="Primeira"><span></span>Primeira</a>
           <div class="paginas">
             <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a>
-            <p><span><?php echo $pager_blog->getPage() ?></span> de <span><?php echo $pager->getLastPage() ?></span></p>
+            <p><span><?php echo $pager->getPage() ?></span> de <span><?php echo $pager->getLastPage() ?></span></p>
             <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima"></a>
           </div>
           <a class="btn ultima" href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" title="Última"><span></span>Última</a>
