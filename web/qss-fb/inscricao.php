@@ -390,6 +390,7 @@
           required:true
         },
         participanteEmail:{
+</html>
           required:true,
           email: true
         },
@@ -465,8 +466,6 @@
     });
   });
 </script>
-</body>
-</html>
 <?php
   }
 ?>
