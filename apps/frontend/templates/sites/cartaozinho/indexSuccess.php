@@ -49,7 +49,7 @@
         <!-- CAPA -->
         <div class="capa grid3">
           <div class="destaque-video">
-            <!--a href="/portal/cartaozinho/boladopaulistao" style="margin-bottom: 100px; display: block;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a-->
+            <!--a href="/cartaozinho/bola-do-paulistao" style="margin-bottom: 100px; display: block;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a-->
             <!-- DESTAQUE 2 COLUNAS -->
             <?php $displays = $displays["destaque-principal"]; if(isset($displays)): ?>
             <div class="duas-colunas destaque grid2">
