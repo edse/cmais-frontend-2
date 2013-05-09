@@ -10,10 +10,11 @@
 
 }
 body {background: black;}
-#capa-site{min-height: 522px;*margin-top: -50px !important}
+/*#capa-site{min-height: 522px;*margin-top: -50px !important}*/
 #rodape-portal {margin-top: -28px;*z-index:1000;*margin-top:23px !important;}
 .voltar-topo{*margin-left:-350px !important;}
-#capa-site{position:relative;overflow: visible; min-height:833px;}
+#capa-site{background:black;max-width: 770px; height:1600px!important; overflow-y:scroll;*overflow-y:scroll;}
+/*#capa-site{position:relative;overflow: visible; min-height:833px;}*/
 #capa-site .logo{position: absolute;top: 70px;left:0px;}
 #capa-site .logo{*position: absolute;*top: 62px; *left:0px;}
 #capa-site .redes {position: relative;bottom: 40px;left: 97px;}
@@ -28,7 +29,7 @@ body {background: black;}
 label.error{position: absolute;bottom: -10px;color: red;}
 #capa-site label { display:block; float: left; margin-right:20px; }
 #capa-site label input { width:100%; margin-top:2px;  }
-#form-contato { float:left; margin-bottom:50px; width: 800px; }
+#form-contato { float:left; margin-bottom:50px; width: 710px;margin: 18px }
 /*#enviar {clear: both;    float: right;    margin: 2%; }*/
 #enviar{float: right;margin: 0 auto;font-size: 20px;line-height: 26px;color: #FFFFFF;font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;text-align: center;margin-bottom: 20px;}
 #enviar:hover{text-decoration:none;}
@@ -58,6 +59,6 @@ h1,
 .btn-home { float:none; width:200px; margin:0 auto; font-weight: bold; }
 .btn-home:hover { text-decoration:none; }
 
-/*face*/
-#capa-site { max-width: 810px; }
+
+
 

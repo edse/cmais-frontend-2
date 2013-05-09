@@ -1,14 +1,11 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- CAPA SITE --> 
-<div id="capa-site">
+<div id="capa-site" style="width:780px!important;padding:10px">
 
-  <!-- curtir -->
-    <div class="redes">
-    </div>
-    <!-- /curtir -->
-    <div style="float:left;">
+    <div>
       <p>O ”QUEM SABE, SABE” é um jogo diário, destinado aos participantes a partir dos 18 anos de idade, com perguntas e respostas de múltiplas escolhas. Ele é baseado no conhecimento, estratégia e sorte dos competidores.</p>
       <p>Gravado nos estúdios da emissora e jogado a partir de uma arena tecnológica, 4 participantes, representados por avatares de cores diferente, se enfrentam em 3 fases distintas durante 1 hora de programa, sempre de segunda a sexta-feira.</p>
       <p>Na 1ª e 2ª fase os participantes respondem sobre 09 temas (Ciências, Cinema e Tv, Cultura Pop, Esportes, História, Literatura, Dicionário, Música e Mundo, que engloba perguntas de Geografia, Geologia e Geopolítica). Dois deles passam para a 3ª fase onde responderão sobre temas relacionados a programas da TV CULTURA.</p>
@@ -54,7 +51,7 @@
           email: true
         }
       },
-      messages:{
+      messages:{/qss
         email: "Digite um e-mail válido.",
  
       },

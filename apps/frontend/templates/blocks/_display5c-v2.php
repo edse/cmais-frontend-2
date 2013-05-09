@@ -11,7 +11,7 @@
                   <p>Quartas, às 22h </p>
                 </div>
               </div>
-              --
+              -->
               <!-- /banner promo-->
               <div class="enunciado">
                 <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>
