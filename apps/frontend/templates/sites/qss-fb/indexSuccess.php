@@ -3,7 +3,7 @@
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- CAPA SITE --> 
-<div id="capa-site" style="max-width:780px!important;">
+<div id="capa-site" style="*max-width:780px!important;">
 
     <div>
       <p>O ”QUEM SABE, SABE” é um jogo diário, destinado aos participantes a partir dos 18 anos de idade, com perguntas e respostas de múltiplas escolhas. Ele é baseado no conhecimento, estratégia e sorte dos competidores.</p>
