@@ -128,33 +128,20 @@ $assets = $pager->getResults();
          <span class="picote"></span>
          
         </div>
-       <?php
-            $assets_blog = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, Section s')
-              ->where('a.site_id = ?', $site->getId())
-			  ->where('s.slug = ?', "blog")
-              ->andWhere('a.asset_type_id = ?', 20)
-              ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.title')
-              ->execute();
-          ?>
-          <?php 
-			$pager_blog = $assets_blog->getResults();
-		?>
        
-        <?php if($pager_blog->haveToPaginate()): ?> 
+       
+        <?php if($pager->haveToPaginate()): ?> 
 
         <!-- PAGINACAO -->
         
         <div class="paginacao-programa">
           <a class="btn primeira" href="javascript: goToPage(1);" title="Primeira"><span></span>Primeira</a>
           <div class="paginas">
-            <a class="btn anterior" href="javascript: goToPage(<?php echo $pager_blog->getPreviousPage() ?>);" title="Anterior"></a>
-            <p><span><?php echo $pager_blog->getPage() ?></span> de <span><?php echo $pager_blog->getLastPage() ?></span></p>
-            <a class="btn proxima" href="javascript: goToPage(<?php echo $pager_blog->getNextPage() ?>);" title="Próxima"></a>
+            <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a>
+            <p><span><?php echo $pager->getPage() ?></span> de <span><?php echo $pager->getLastPage() ?></span></p>
+            <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" title="Próxima"></a>
           </div>
-          <a class="btn ultima" href="javascript: goToPage(<?php echo $pager_blog->getLastPage() ?>);" title="Última"><span></span>Última</a>
+          <a class="btn ultima" href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" title="Última"><span></span>Última</a>
         </div>    
         
          <form id="page_form" action="" method="post">
