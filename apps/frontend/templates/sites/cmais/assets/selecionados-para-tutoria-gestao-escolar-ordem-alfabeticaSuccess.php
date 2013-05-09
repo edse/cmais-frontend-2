@@ -922,6 +922,14 @@
                       </tbody>
                     </table>
                     
+                    <h5>CRITÉRIOS DE CLASSIFICAÇÃO</h5>
+                    <p>A classificação dos candidatos levou em consideração a nota da prova e o atendimento aos requisitos básicos exigidos nos itens II, VI e VII do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013" target="_blank">edital da prova escrita</a> reaizada em 28/04/13 (<a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013" target="_blank">http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013</a>.</p>
+
+                    <h5>NOTA DE CORTE</h5>
+                    <p>Tendo em vista que a maior parte dos professores presentes à prova escrita atende todos os requisitos básicos para participar do curso de tutoria, bem como a existência de vagas, foi considerada como nota de corte o desempenho igual ou superior a 50% de aproveitamento na prova objetiva. Dessa forma, o número de habilitados para exercer a função de tutor foi ampliado, seguindo rigorosamente a classificação obtida na prova, sem prejuízo das normas publicadas no edital e ou de qualquer professor participante.</p>
+                    
+                    <h5>BOLETIM DE DESEMPENHO NA PROVA</h5>
+                    <p>O boletim de desempenho do candidado na prova poderá ser consultado neste <a href="http://vestibular3.pucsp.br/2013efap50/boletimgestao50/" target="_blank">link</a> (<a href="http://vestibular3.pucsp.br/2013efap50/boletimgestao50/" target="_blank">http://vestibular3.pucsp.br/2013efap50/boletimgestao50/</a>) do site da Fundação São Paulo (PUC), que organizou o processo seletivo; elaborou, aplicou e corrigu as provas e processou a classificação.</p>
                   </div>
                   
                 </div>
