@@ -1,3 +1,6 @@
+<html>
+<body>
+<table>
 <?php
   if ($_REQUEST['enviar']) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {      
@@ -470,3 +473,6 @@
 <?php
   }
 ?>
+</table>
+</body>
+</html>
