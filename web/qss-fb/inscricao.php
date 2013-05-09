@@ -208,7 +208,7 @@
     <!-- /scripts -->
 
   </head>
-  <body style="width:600px">
+  <body>
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
 <!--Controle-Remoto-->
 <script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
