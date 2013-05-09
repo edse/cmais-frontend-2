@@ -3,15 +3,24 @@
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
               <!-- banner promo-->
-              <!--
+              
               <div id="topo-destaque">
-                <a class="banner-topo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/img-topo.jpg" alt="Mad Men" /></a>
-                <div class="logo">
-                  <a class="logo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/logomadmen.png" alt="Mad Men" /></a>
-                  <p>Quartas, às 22h </p>
+                <img src="/portal/images/hometv/qss/apresentadores.png" alt="Quem Sabe Sabe" />
+                <a class="banner-topo" href="http://tvcultura.cmais.com.br/qss" title="Quem Sabe Sabe"><img src="/portal/images/hometv/qss/logoqss.png" alt="Quem Sabe Sabe" /></a>
+                <h2>vem jogar com a gente! ESTREIA 13 DE MAIO, 19H20</h2>
+                <div class="redes">
+                  <div class="t">
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+                  </div> 
+                   <div class="f">
+                    <fb:like href="http://facebook.com/qss" layout="button_count" show_faces="false" send="true" width="auto"></fb:like>
+                  </div>
+                  <div class="g">
+                    <g:plusone size="medium" count="false"></g:plusone>
+                  </div>
                 </div>
               </div>
-              -->
+              
               <!-- /banner promo-->
               <div class="enunciado">
                 <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>

@@ -244,9 +244,7 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-#capa-site { max-width: 750px; min-height:2100px; margin-left:20px; height:2100px; }
-#form-contato { max-width:750px; }
-
+  #capa-site {max-width: 770px; height:1600px!important;}
 </style>
 
 <!-- CAPA SITE -->
@@ -470,6 +468,8 @@
     });
   });
 </script>
+</body>
+</html>
 <?php
   }
 ?>
