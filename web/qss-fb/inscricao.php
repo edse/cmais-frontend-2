@@ -468,8 +468,6 @@
     });
   });
 </script>
-</body>
-</html>
 <?php
   }
 ?>
