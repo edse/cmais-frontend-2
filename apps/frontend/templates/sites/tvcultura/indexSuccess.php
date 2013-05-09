@@ -1,7 +1,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <script type="text/javascript" src="/portal/js/redirect_mobile.js"></script>
-<!--link rel="stylesheet" href="/portal/css/tvcultura/hometv/qss.css" type="text/css" /-->
+<link rel="stylesheet" href="/portal/css/tvcultura/hometv/qss.css" type="text/css" />
 
 <!-- CAPA SITE -->
 <div id="capa-site">
