@@ -49,8 +49,9 @@
         <!-- CAPA -->
         <div class="capa grid3">
           <div class="destaque-video">
-            <!--a href="/cartaozinho/bola-do-paulistao" style="margin-bottom: 100px; display: block;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a-->
+            <a href="/cartaozinho/bola-do-paulistao" style="margin-bottom: 100px; display: block;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a>
             <!-- DESTAQUE 2 COLUNAS -->
+            <!--
             <?php $displays = $displays["destaque-principal"]; if(isset($displays)): ?>
             <div class="duas-colunas destaque grid2">
               <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
@@ -60,10 +61,13 @@
               <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
             </div>
             <?php endif;?>
+            -->
             <!-- /DESTAQUE 2 COLUNAS -->
           </div>
+          <!--
           <a href="/cartaozinho/mande-seu-video" title="Mande seu vídeo" class="mande-seu-video">
-            <p>entre em campo no cartãozinho:</p>
+          <p>entre em campo no cartãozinho:</p>
+          -->
           </a>
           <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!"></a>
           <div class="juiza"></div>
