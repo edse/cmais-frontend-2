@@ -34,8 +34,8 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   <a name="topo"></a>
-                  <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA GESTÃO ESCOLAR</h3>
-                  <p class="titu" style="margin-bottom:20px">Selecionados para Tutoria de Gestão Escolar (ordem alfabética)</p>
+                  <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA GESTÃO ESCOLAR (ORDEM ALFABÉTICA)</h3>
+                  <p class="titu" style="margin-bottom:20px">Todos os classificados serão convocados.</p>
                   
                   <!--p>Clique em seu nome para escolher o local da prova.</p-->
                   <!--p>Inscrições encerradas.</p-->
