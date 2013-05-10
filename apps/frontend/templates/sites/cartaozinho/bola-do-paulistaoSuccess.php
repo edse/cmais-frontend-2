@@ -294,8 +294,8 @@
               minlength: 2
             },
             cpf:{
-              url:true,
-              required: true
+              required: true,
+              minlength: 11
             },
             reposta:{
               url:true,
