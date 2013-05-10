@@ -148,7 +148,7 @@ $(function(){
       </fieldset>
       <fieldset>
         <legend><h1>Indique um amigo</h1></legend>
-        <p>Na 3ª fase do programa, você poderá contar com a ajuda de um HANGOUT (videoconferência) para responder às perguntas. Para isso, é necessária a indicação de um amigo ou parente, que deverá comparecer à emissora junto com você no dia da gravação.</p>
+        <p>Na 3ª fase do programa, você poderá contar com a ajuda de uma videoconferência para responder às perguntas. Para isso, é necessária a indicação de um amigo ou parente, que deverá comparecer à emissora junto com você no dia da gravação.</p>
         <p>Preencha os dados do seu amigo:</p>
         <label class="span6">Nome completo:<input type="text" name="videoconferenciaNome" id="videoconferenciaNome" /></label>
         <label class="span2">Idade: <input type="text" maxlength="3" name="videoconferenciaIdade" id="videoconferenciaIdade" /></label>
