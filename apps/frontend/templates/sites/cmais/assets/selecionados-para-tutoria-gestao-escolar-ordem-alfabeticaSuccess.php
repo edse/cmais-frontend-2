@@ -933,6 +933,10 @@
                     
                     <h5>BOLETIM DE DESEMPENHO NA PROVA</h5>
                     <br /><p>O boletim de desempenho do candidado na prova poderá ser consultado neste <a href="http://vestibular3.pucsp.br/2013efap50/boletimgestao50/" target="_blank">link</a> (<a href="http://vestibular3.pucsp.br/2013efap50/boletimgestao50/" target="_blank">http://vestibular3.pucsp.br/2013efap50/boletimgestao50/</a>) do site da Fundação São Paulo (PUC), que organizou o processo seletivo; elaborou, aplicou e corrigu as provas e processou a classificação.</p>
+                    
+                    <h5>RECURSO</h5>
+                    <br /><p>O professor candidato a tutor de Gestão Escolar poderá enviar recurso até dia 10.05.2013. O recurso deve ser encaminhado para o email <a href="mailto:tutoria@tvcultura.com.br">tutoria@tvcultura.com.br</a> e conter de modo objetivo a solicitação e a respectiva justificativa do professor. A resposta será definida em 13.05.2013 e divulgada publicamente apenas na eventualidade de haver alteração no cumprimento às normas previstas no edital.</p>
+                  
                   </div>
                   
                 </div>
