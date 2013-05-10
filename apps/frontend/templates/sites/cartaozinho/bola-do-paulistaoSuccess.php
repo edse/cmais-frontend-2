@@ -151,7 +151,7 @@
                   
                   <div class="linha t3">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf"/>
+                    <input type="text" name="cpf" id="cpf" class="cpf"/>
                   </div>
                  
                   
@@ -239,7 +239,7 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#cpf').mask("999.999.999-99"); 
+        $('.cpf').mask("999.999.999-99"); 
         
         $('input#enviar').click(function(){
           $(".msgAcerto, .msgErro").hide();
