@@ -1,6 +1,6 @@
-  <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     
 
     <?php use_helper('I18N', 'Date') ?>
@@ -93,7 +93,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p>Obrigado por participar. Em breve divulgaremos o resultado.</p>
                     </div>
                     <hr />
                   </div>
@@ -148,11 +148,16 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
+                  
+                  <div class="linha t3">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="cpf"/>
+                  </div>
                  
                   
                    <div class="linha t3">
                     <label for="resposta">Resposta</label>
-                    <input type="text" name="resposta" id="resposta" maxlength="200" />
+                    <textarea name="resposta" id="resposta" maxlength="200" style="height:40px; font-size:14px; padding:5px; width:98%" /></textarea>
                       
                   </div>
                   <div class="linha t3">
@@ -161,19 +166,19 @@
                         <ul>
                           <li><p class="bold">1. Participação:</p>
                             <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
-                            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto de no máximo 200 caracteres dizendo porque merece ganhar a bola oficial do Campeonato Paulista. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil. O texto deve ser encaminhado pelo site: <a href="http://tvcultura.cmais.com.br/cartaozinho" title="Cartãozinho">http://tvcultura.cmais.com.br/cartaozinho</a></p>
-                            <p>1.1 - Os textos deverão ser enviadas até o dia 17/05/2013, acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos, deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais: nome, email, website (opcional), endereço. Cada pessoa pode participar com quantos textos desejar.</p>
-                            <p>1.2 - A Fundação Padre Anchieta não se responsabiliza por eventuais falhas no envio do material.</p>
+                            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto de no máximo 200 caracteres dizendo por que merece ganhar a bola oficial do Campeonato Paulista. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil. O texto deve ser encaminhado pelo site: <a href="http://tvcultura.cmais.com.br/cartaozinho" title="Cartãozinho">http://tvcultura.cmais.com.br/cartaozinho</a></p>
+                            
+                            <p>1.1 Os textos deverão ser enviados até o dia 17/05/2013, acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos, deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais: nome, email, endereço e CPF. Cada pessoa pode participar com quantos textos desejar.</p>
+                            <p>1.2 A Fundação Padre Anchieta não se responsabiliza por eventuais falhas no envio do material.</p>
                           </li>
                           <li><p class="bold">2. Critérios de Seleção:</p>
-                            <p>2.1 - A seleção dos textos será feita pela equipe de Produção da TV Cultura e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p> 
-                            <p>2.2 Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p> 
-                            <p>2.3 Cada criança poderá participar enviando quantos textos desejar.</p>                                         
+                            <p>2.1 A seleção dos textos será feita pela equipe de Produção da TV Cultura e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p> 
+                            <p>2.2 Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); os que tenham conteúdo inadequado.</p> 
                           </li>
                           <li><p class="bold">3. Considerações Gerais:</p>
                             <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p>
                             <p>3.2 A FPA não aceitará qualquer texto que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p> 
-                            <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV Cultura referida no item 2.1 deste Regulamento.</p>
+                            <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV Cultura, referida no item 2.1 deste Regulamento.</p>
                             <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
                             <p>3.5 Os textos poderão ser publicados no site <a href="http://tvcultura.cmais.com.br/cartaozinho" alt="Cartãozinho">http://tvcultura.cmais.com.br/cartaozinho</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
                           </li>
@@ -230,8 +235,12 @@
   
 
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
+    
     <script type="text/javascript">
       $(document).ready(function(){
+        $('.cpf').mask("999.999.999-99"); 
+        
         $('input#enviar').click(function(){
           $(".msgAcerto, .msgErro").hide();
         });
@@ -284,6 +293,10 @@
               required: true,
               minlength: 2
             },
+            cpf:{
+              required: true,
+              minlength: 11
+            },
             reposta:{
               url:true,
               required: true
@@ -302,6 +315,7 @@
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
+            cpf: "Digite um CPF v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             resposta: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
