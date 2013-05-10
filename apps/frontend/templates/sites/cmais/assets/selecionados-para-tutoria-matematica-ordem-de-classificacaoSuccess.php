@@ -35,14 +35,13 @@
                 <div class="contatoWrapper">
                   <a name="topo"></a>
                   <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA MATEMÁTICA EM ORDEM DE CLASSIFICAÇÃO</h3>
-                  <p class="titu" style="margin-bottom:60px">Serão ofertadas 201 vagas por ordem de classificação.</p>
-                  <br />
-                  <br />
-                  <div class="texto" style="margin-top:30px">
+                  <p class="titu" style="margin-bottom:20px">Serão ofertadas 201 vagas por ordem de classificação.</p>
+                  
+                  <div class="texto">
 
 
 
-                    <table style="width: 100%; margin-top:35px">
+                    <table style="width: 100%; float:left;">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
