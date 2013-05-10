@@ -298,7 +298,7 @@
               minlength: 11
             },
             resposta:{
-              required: true
+              required: true 
             },
             concordo:{
               required: true
