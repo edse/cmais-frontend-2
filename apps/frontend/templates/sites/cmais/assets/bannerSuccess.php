@@ -27,9 +27,12 @@ function detectMobile() {
 	return $mobile;
 }
  
-if(detectMobile()) {
-	echo "Mobile!";
-} else {
-	echo "Not mobile... :(";
+if(detectMobile()) { ?>
+	<script type='text/javascript'>
+GA_googleFillSlot("Ipad-300x250");
+</script>;
+<?php } else { ?>
+<p></p><p></p><p></p><p></p><h1>Desktop</h1>
+<?
 }
- 
+?>
