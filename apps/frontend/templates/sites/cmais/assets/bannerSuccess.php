@@ -26,8 +26,9 @@ function detectMobile() {
  
 	return $mobile;
 }
+?>
  
-if(detectMobile()): ?>
+<?php if(detectMobile()): ?>
 	<script type='text/javascript'>
 GA_googleFillSlot("Ipad-300x250");
 </script>;
