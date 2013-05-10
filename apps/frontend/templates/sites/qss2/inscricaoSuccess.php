@@ -1,4 +1,28 @@
-  <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<script>
+var error = getParameterByName('error');
+var success = getParameterByName('success');
+ //alert("error: "+error+"\n"+"success: "+success);
+
+$(function(){
+  if (error || success)
+  {
+    $("#form-contato").hide();
+    
+    if (success == "1")
+    {
+      $("#msgSuccess").show();
+      $("#msgError").hide();
+    }
+    if (error == "1")
+    {
+      $("#msgError").show();
+      $("#msgSuccess").hide();
+    }  
+  }
+});
+</script>
+
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
     
@@ -83,23 +107,17 @@
 
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
+                <div id="msgSuccess" style="display:none">
+                  <p><strong>Inscrição enviada com sucesso!</strong></p>
+                  <p>Atenção:</p>
+                  <p>No dia do programa, o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
+                  <p>No caso de impossibilidade da participação do amigo, a produção do programa deverá ser avisada.</p>
+                </div>
+                <div id="msgError" style="display:none">
+                  <p><strong>Não foi possível enviar a inscrição.</strong></p>
+                  <p>Por favor, tente novamente mais tarde!</p>
+                </div>
 
-                  <div class="msgErro" style="display:none">
-                    <span class="alerta"></span>
-                    <div class="boxMsg">
-                      <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                      <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-                    </div>
-                    <hr />
-                  </div>
-                  <div class="msgAcerto" style="display:none">
-                    <span class="alerta"></span>
-                    <div class="boxMsg">
-                      <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
-                    </div>
-                    <hr />
-                  </div>
                 <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
       <fieldset>
         <legend><h1>Participante</h1></legend>

@@ -54,18 +54,22 @@ if ($_REQUEST['enviar']) {
 
       
       if(mail($to, $subject, $message, $header)) {
-        die("0");
+        header("Location: http://tvcultura.cmais.com.br/qss/inscricao?success=1");
+        die();
       }
     }
     else {
+      header("Location: http://tvcultura.cmais.com.br/qss/inscricao?error=1");
       die("1");
     }
 
   }
   else {
-    die("1");
+    header("Location: http://tvcultura.cmais.com.br/qss/inscricao?error=1");
+    die();
   }
 }
 else {
-  die("1");
+  header("Location: http://tvcultura.cmais.com.br/qss/inscricao?error=1");
+  die();
 }
