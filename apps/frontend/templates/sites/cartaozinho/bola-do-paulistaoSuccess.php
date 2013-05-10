@@ -297,7 +297,7 @@
               required: true,
               minlength: 11
             },
-            reposta:{
+            resposta:{
               required: true
             },
             concordo:{
