@@ -1,0 +1,79 @@
+body { background:#efc32f url(/portal/images/capaPrograma/qss/bg.jpg) repeat-x; }
+#topo-destaque { background: url(/portal/images/capaPrograma/qss/bg-topo.jpg) no-repeat; height:144px; overflow:hidden; text-align:left; padding:0 20px; }
+#topo-destaque img { float:left; }
+#topo-destaque .banner-topo { display:block; width:171px; height:74px; float:left; margin:45px 0 0 15px; }
+#miolo { margin-top:0 !important; }
+#topo-destaque h2 { font-family: 'Source Sans Pro', sans-serif; text-transform:uppercase; font-size:20px; color:#fff; font-weight:normal; margin-top:60px; float:right;}
+#topo-destaque .redes { float:right; margin-top:10px; }
+#topo-destaque .redes div { float:right; margin-right:10px; }
+#topo-destaque .redes div.t { margin-right:0; }
+#miolo,
+#capa-site { width:1032px; }
+#conteudo-pagina { float:left; width: 990px; padding:10px; background: url(/portal/images/capaPrograma/qss/bg-conteudo.png) repeat;}
+#conteudo-pagina { *background: url(/portal/images/capaPrograma/qss/bg-conteudo.gif) repeat;}
+
+.contato form .linha label,
+.contato p,
+.contato h3,
+#barra-site .box-topo .navegacao a, 
+#barra-site .box-topo .navegacao span,
+.duas-colunas .titulos,
+.duas-colunas p,
+.conteudo a,
+.box-padrao .titulos,
+.noticia p,
+.noticia .titulos,
+.box-padrao .chapeu { color:#fff; }
+
+.uma-coluna .titulos,
+.uma-coluna p,
+.novoNoAr .noAr-box .chapeu { color:#333; }
+
+#form-contato legend,
+.concordo a,
+#capa-site label,
+#capa-site p{font-size:14px; line-height:26px; color:#FFFFFF; font-family:'source_sans_proregular', Arial, Helvetica, sans-serif; text-align:left; margin-bottom:10px;}
+#capa-site p { float:left; }
+#enviar{cursor: pointer;background: #333;border: none;padding: 0 6px;float: left;font-size: 14px;color: #FFF;margin: 10px}
+#email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
+label.error{position: absolute;bottom: -10px;color: #333;}
+#capa-site label { display:block; float: left; margin-right:20px; }
+#capa-site label input { width:100%; margin-top:2px;  }
+#enviar{float: right;margin: 0 auto;font-size: 14px; padding:0 6px;line-height: 26px; height:26px; color: #FFFFFF;font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;text-align: center;margin-bottom: 20px;}
+#enviar:hover{text-decoration:none;}
+.span8 { width: 95% }
+.span6 { width: 70%; clear:both; }
+.span4 { width: 46% }
+.span2 { width: 22% }
+.span3 { width: 30.8% }
+.span5 { width: 9%; float:left; display:block; margin-top:5px !important; }
+.span5 input { display: block;    float: right;    width: 50% !important; }
+label.error { color:#333 !important; font-size: 12px !important;    margin-top: 5px !important;    position: relative; padding:0 2px; width: 100%; bottom:0; }
+#rodape-portal { *margin-top:50px; }
+.checked { display:none !important; }
+.regulamento { float:left; margin-top:20px; }
+h1,
+.regulamento h1 { font-size:18px; color:#fff; text-align:left; float:left; margin-bottom:20px;  }
+#form-contato textarea { margin-top:5px; }
+.regulamento textarea { width:930px; height: 600px; margin-top:20px; padding:20px; color: #fff; background:#000; line-height:22px; font-size:14px; }
+.regulamento button { float: right;    margin: 2%;   }
+.concordo input { width:15px !important; margin-right:5px; }
+#ytdContainer-2001 iframe { background:#fbfbfb; margin:20px 0 50px 0; }
+#form-contato fieldset { border: 1px solid #fff; padding:20px; clear:both; margin-bottom:20px; }
+.concordo a { text-decoration:underline; }
+#form-contato legend,
+#form-contato legend h1 { margin-bottom:0; }
+#form-contato legend { overflow:hidden; }
+.btn-home { float:none; width:200px; margin:0 auto; font-weight: bold; }
+.btn-home:hover { text-decoration:none; }
+
+#barra-site .topo-programa { background: url(/portal/images/capaPrograma/qss/bg-topo-qss.jpg) no-repeat; height:173px; width:990px; }
+#capa-site { margin-top: -102px !important; }
+.box-topo {    margin:-53px 0 0 52px;}
+#barra-site h2 { margin:40px 0 0 20px }
+/*
+#barra-site #horario { width:auto; margin-right:20px; }
+#barra-site #horario p { font-family: 'Source Sans Pro', sans-serif; color:#fff; text-transform:uppercase; font-weight:normal; font-size:20px; }
+*/
+#barra-site .redes .curtir { width: auto; }
+#barra-site .redes { float:right; margin:0 20px 0 0; clear:both; }
