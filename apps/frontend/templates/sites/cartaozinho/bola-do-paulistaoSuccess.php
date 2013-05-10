@@ -157,7 +157,7 @@
                   
                    <div class="linha t3">
                     <label for="resposta">Resposta</label>
-                    <input type="text" name="resposta" id="resposta" maxlength="200" />
+                    <textarea name="resposta" id="resposta" maxlength="200" style="height:40px; font-size:14px; padding:5px; width:98%" /></textarea>
                       
                   </div>
                   <div class="linha t3">
@@ -315,7 +315,7 @@
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
-            cpf: "Digite uma CPF v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
+            cpf: "Digite um CPF v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
             resposta: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
