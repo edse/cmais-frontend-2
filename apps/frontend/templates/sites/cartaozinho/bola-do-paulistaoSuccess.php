@@ -93,7 +93,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p>Obrigado por participar. Em breve divulgaremos o resultado.</p>
                     </div>
                     <hr />
                   </div>
@@ -315,7 +315,7 @@
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
-            cpf: "Digite um CPF v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
+            cpf: "Digite um CPF v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             resposta: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
