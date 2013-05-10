@@ -173,7 +173,7 @@
       
       
       <label class="span8 concordo">Regulamento:<br>
-        <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px; display: none;" /><?php include('regulamento.txt'); ?></textarea>
+        <textarea readonly name="regulamento" id="regulamento" style="width: 100%; height: 200px; font-size: 14px; padding:15px; display: none;" /><?php include_partial_from_folder('sites/qss','global/regulamento') ?></textarea>
         <input type="checkbox" name="concordo" id="concordo" />Declaro que li e concordo com o <a href="javascript:;" id="btn-regulamento">regulamento</a>
       </label>
       <hr>
