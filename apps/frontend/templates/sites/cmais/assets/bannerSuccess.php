@@ -1,12 +1,4 @@
-<?php
- 
-/**
- * detectMobile
- * 
- * Detects if the current user is a mobile user
- * 
- * @return mixed Returns either the detected device name, or false if it's not a mobile device
- */
+<?php 
 function detectMobile() {
 	$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
  
@@ -26,15 +18,16 @@ function detectMobile() {
  
 	return $mobile;
 }
+ 
+if(detectMobile()) {
 ?>
-
-<?php if(detectMobile()):?>
-
 <script type='text/javascript'>
 GA_googleFillSlot("Ipad-300x250");
 </script>
-<?php else: ?>
-	<P></P><h1>Desktop</h1>
 <?php
-endif;
+} else {
+?>
+	<p><h1>Desktop</h1></p>
+<?php	
+}
 ?>
