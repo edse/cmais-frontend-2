@@ -78,7 +78,7 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2 video">
 
-                <h3 class="tit-pagina grid2">Entre em campo no cartãozinho: mande seu vídeo!</h3>  
+                <h3 class="tit-pagina grid2">POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?</h3>  
                 <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!</p>
 
                   <div class="msgErro" style="display:none">
@@ -151,9 +151,9 @@
                  
                   
                    <div class="linha t3">
-                    <label>url do vídeo</label>
-                    <input type="text" name="url" id="url" />
-                    <p class="txt-10" style="float:left; margin:0 0 0 5px;">Ex: http://youtu.be/fg1_i8bpZ9c</p>  
+                    <label for="resposta">Resposta</label>
+                    <input type="text" name="resposta" id="resposta" />
+                      
                   </div>
                   <div class="linha t3">
                       <label>Regulamento</label>
@@ -227,7 +227,7 @@
               <div class="box-publicidade grid1">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("maiscrianca");
+                GA_googleFillSlot("cmais-assets-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
@@ -303,7 +303,7 @@
               required: true,
               minlength: 2
             },
-            url:{
+            reposta:{
               url:true,
               required: true
             },
@@ -321,7 +321,7 @@
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
-            url: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
+            resposta: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
           },

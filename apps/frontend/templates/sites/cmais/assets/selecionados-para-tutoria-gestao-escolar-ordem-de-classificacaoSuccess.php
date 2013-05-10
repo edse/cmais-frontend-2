@@ -35,13 +35,12 @@
                 <div class="contatoWrapper">
                   <a name="topo"></a>
                   <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA GESTÃO ESCOLAR</h3>
-                  <p class="titu" style="margin-bottom:60px">Selecionados para Tutoria de Gestão Escolar (ordem de classificação)</p>
-                  <br />
-                  <br />
-                  <div class="texto" style="margin-top:30px">
+                  <p class="titu" style="margin-bottom:20px">Selecionados para Tutoria de Gestão Escolar (ordem de classificação)</p>
+                  
+                  <div class="texto">
 
 
-                    <table style="width: 100%; margin-top:35px">
+                    <table style="width: 100%; margin-top:35px; float:left;">
                       <thead>
                         <tr>
                           <th style="font-weight: bold; margin-bottom: 20px">Nome<br /></th>
@@ -926,7 +925,7 @@
                     <br />
                     
                     <h5>NOTA DE CORTE</h5>
-                    <br /><p>Tendo em vista que a maior parte dos professores presentes à prova escrita atende todos os requisitos básicos para participar do curso de tutoria, bem como a existência de vagas, foi considerada como nota de corte o desempenho igual ou superior a 50% de aproveitamento na prova objetiva. Dessa forma, o número de habilitados para exercer a função de tutor foi ampliado, seguindo rigorosamente a classificação obtida na prova, sem prejuízo das normas publicadas no edital e ou de qualquer professor participante.</p>
+                    <br /><p>Tendo em vista que a maior parte dos professores presentes à prova escrita atende todos os requisitos básicos para participar do curso de tutoria, bem como a existência de vagas, foi considerada como nota de corte o desempenho igual ou inferior a 50% de aproveitamento na prova objetiva. Dessa forma, o número de habilitados para exercer a função de tutor foi ampliado, seguindo rigorosamente a classificação obtida na prova, sem prejuízo das normas publicadas no edital e ou de qualquer professor participante.</p>
                     <br />
                     <br />
                     

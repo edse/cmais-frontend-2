@@ -208,7 +208,7 @@
     <!-- /scripts -->
 
   </head>
-  <body style="width:600px">
+  <body>
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
 <!--Controle-Remoto-->
 <script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
@@ -241,10 +241,7 @@
 </script>
 <!--/CONTROLE REMOTO-->
 <style type="text/css">
-
-/*#capa-site {height:500px; overflow-y:scroll }*/
-/*#form-contato { max-width:750px; }*/
-
+  #capa-site {max-width: 770px; height:2700px!important;}
 </style>
 
 <!-- CAPA SITE -->
@@ -393,6 +390,7 @@
           required:true
         },
         participanteEmail:{
+</html>
           required:true,
           email: true
         },
@@ -468,8 +466,6 @@
     });
   });
 </script>
-</body>
-</html>
 <?php
   }
 ?>

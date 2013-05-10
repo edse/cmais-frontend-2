@@ -180,7 +180,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .mande-seu-video { background:url(/portal/images/capaPrograma/cartaozinho/mande-seu-video.png) no-repeat; width:520px; height:156px; margin:-62px auto 0; display: block;}
 .mande-seu-video p { padding-top:30px; text-transform:uppercase; color:#fafa88; font-weight:bold;  }
 .mande-seu-video:hover { text-decoration:none; }
-.contato.video h3 { background:#2B8DB2 url(/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }
+/*.contato.video h3 { background:#2B8DB2 url(/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }*/
 .regulamento {    border: 1px solid #DFDFDF;    float: left;    height: 206px;    overflow-x: hidden;    overflow-y: scroll;    padding: 10px 0; background:#fff; }
 .rodape-cmais { background:#86D5F3; padding:10px; }
 .regulamento li ul { margin:-20px 0 20px 20px; }
@@ -188,3 +188,13 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .regulamento li a { color:#2B8DB2; }
 .contato form .concordo { clear: both;}
 .contato form .concordo .check { width: 15px; }
+
+.contato h3 {
+    background: none repeat scroll 0 0 #2B8DB2;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 4px 10px;
+    text-indent: 0;
+    text-transform: uppercase;
+    width: 620px;
+}

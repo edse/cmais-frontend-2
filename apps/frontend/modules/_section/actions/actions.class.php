@@ -699,6 +699,8 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
+			
+            
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("convidados"))) {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
