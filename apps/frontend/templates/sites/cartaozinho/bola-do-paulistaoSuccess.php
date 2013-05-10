@@ -152,7 +152,7 @@
                   
                    <div class="linha t3">
                     <label for="resposta">Resposta</label>
-                    <input type="text" name="resposta" id="resposta" />
+                    <input type="text" name="resposta" id="resposta" maxlength="200" />
                       
                   </div>
                   <div class="linha t3">
