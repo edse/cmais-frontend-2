@@ -16,4 +16,6 @@ body { background:#efc32f url(/portal/images/hometv/qss/bg.jpg) repeat-x; }
 .noticia p,
 .noticia .titulos,
 .box-padrao .chapeu { color:#fff; }
+.novoNoAr .noAr-box a.titulos, 
+.novoNoAr .noAr-box p,
 .novoNoAr .noAr-box .chapeu { color:#333; }
