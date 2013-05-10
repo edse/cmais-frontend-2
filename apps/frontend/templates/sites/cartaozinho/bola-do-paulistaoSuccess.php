@@ -151,7 +151,7 @@
                   
                   <div class="linha t3">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf" class="required" />
+                    <input type="text" name="cpf" id="cpf"/>
                   </div>
                  
                   
