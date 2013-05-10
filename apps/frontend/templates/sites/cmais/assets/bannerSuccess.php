@@ -28,15 +28,13 @@ function detectMobile() {
 }
 ?>
 
-<?php if(detectMobile()) { ?>
-	<!-- Ipad-300x250 -->
+<?php if(detectMobile()):?>
+
 <script type='text/javascript'>
 GA_googleFillSlot("Ipad-300x250");
 </script>
-
-
-<?php } else { ?>
+<?php else: ?>
 	<P></P><h1>Desktop</h1>
 <?php
-}
+endif;
 ?>
