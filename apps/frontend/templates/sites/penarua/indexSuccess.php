@@ -77,7 +77,7 @@ $(function() {
             <?php endif; ?>
             <a href="/penarua/videos">+ v&iacute;deos</a> 
           </div>          
-          <div class="horario"></div>
+          <!--div class="horario"></div-->
           <div class="carro">
           	<a class="dica" href="/penarua/dica-de-hoje"></a>
           	<a class="blog" href="/penarua/blog"></a>

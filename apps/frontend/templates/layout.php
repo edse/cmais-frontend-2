@@ -101,6 +101,8 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "cmais-assets-250x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "maiscrianca");
     GA_googleAddSlot("ca-pub-6681834746443470", "portal-cocorico-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "Ipad-300x250");
+    GA_googleAddSlot("ca-pub-6681834746443470", "Ipad-728x90");
 
     </script>
     <script type='text/javascript'>
