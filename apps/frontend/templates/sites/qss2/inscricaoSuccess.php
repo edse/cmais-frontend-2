@@ -107,10 +107,12 @@ $(function(){
 
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
+                <p>&nbsp;</p>
                 <div id="msgSuccess" style="display:none">
                   <p><strong>Inscrição enviada com sucesso!</strong></p>
+                  <p>&nbsp;</p>
                   <p>Atenção:</p>
-                  <p>No dia do programa, o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
+                  <p>No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
                   <p>No caso de impossibilidade da participação do amigo, a produção do programa deverá ser avisada.</p>
                 </div>
                 <div id="msgError" style="display:none">
