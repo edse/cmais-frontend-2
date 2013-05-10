@@ -79,7 +79,7 @@
               <div class="contato grid2 video">
 
                 <h3 class="tit-pagina grid2">POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?</h3>  
-                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!</p>
+                <p style="margin: 0 10px 20px;">Responda e concorra à bola oficial da grande final. A frase mais criativa será escolhida pela produção do programa.</p>
 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
@@ -152,52 +152,33 @@
                   
                    <div class="linha t3">
                     <label for="resposta">Resposta</label>
-                    <input type="text" name="resposta" id="resposta" />
+                    <input type="text" name="resposta" id="resposta" maxlength="200" />
                       
                   </div>
                   <div class="linha t3">
                       <label>Regulamento</label>
                       <div class="regulamento">
-
                         <ul>
-                      <li><p class="bold">1. Participação:</p>
-                        <p>Esta é uma ação de caráter exclusivamente cultural que visa estimular a interação do participante com o programa de televisão Cartãozinho Verde, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. Esta ação destina-se ao público em geral, sem qualquer limitação, e está devidamente regulada conforme às disposições do Código Civil (10.406/02) e Lei de Direitos Autorais (9.610/98).</p>
-                        <p>Para participar, o interessado deve enviar o vídeo (ou mais de um vídeo) relacionado à temática solicitada que será definida no site cmais.com.br/cartaozinho. O vídeo deve ser baixado para inserção no site <a href="cmais.com.br/cartaozinho/mande-seu-video" title="cmais.com.br/cartaozinho/mande-seu-video">cmais.com.br/cartaozinho/mande-seu-video</a> à partir do dia 12/11/2012.</p>
-                        <p>1.1 O vídeo deverá ser enviado acompanhado dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais.</p>
-                        <p>1.2. A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas não se responsabiliza por eventuais falhas causadas no envio do material.</p>
-                        <p>1.3. Ao encaminhar o vídeo, o participante e seus representantes legais declaram ter lido, compreendido e concordado em cumprir com estes termos. Será do participante única e exclusivamente a responsabilidade sobre todo conteúdo encaminhado, sendo que seus responsáveis legais responderão solidariamente, e ainda, tanto o participante, como seus representantes legais, deverão eximir quaisquer terceiros e a Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas sobre eventuais transtornos ou danos causados e/ou pela conduta do participante e ou conteúdo disponibilizado.</p>
-                      </li>
-                      <li><p class="bold">2. Critérios de Seleção:</p>
-                        <p>2.1 A seleção dos vídeos será feita por uma equipe de produção, composta pelo diretor e assistente de produção, baseada na observação dos seguintes critérios e pela ordem: originalidade e adequação ao tema. Serão selecionados diversos vídeos, segundo os mencionados critérios, que atenderem os padrões de qualidade das emissoras da Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas.</p> 
-                        <p>2.2 Serão desconsiderados os vídeos com dados incorretos e de menores sem autorização dos seus responsáveis legais; os que fujam da temática descrita; que não sejam de autoria própria; que desrespeitem as leis relacionadas a direitos autorais ou direitos de personalidade e que tenham conteúdo inadequado.</p> 
-                        <p>2.3. As inscrições que não estiverem de acordo com as condições deste Regulamento, quando identificadas, também serão invalidadas imediatamente.</p>                                         
-                        <p>2.4. Serão automaticamente excluídos os participantes que tentarem fraudar ou burlar as regras estabelecidas neste regulamento ou ainda que não cederem os direitos previstos na Cláusula 3.1 abaixo. </p>
-                      </li>
-                      <li><p class="bold">3. Considerações Gerais:</p>
-                        <p>3.1 Os participantes maiores e menores (representados por seus pais ou responsáveis legais quando menores), declaram, desde já, serem de sua única e exclusiva autoria os vídeos encaminhados ao site do programa e que os mesmos não constituem plágio de espécie alguma, ao mesmo tempo em que cedem e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo no Brasil e/ou Exterior sem quaisquer limitações, de forma plena e total, todos os direitos autorais, conexos e personalíssimos sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado, tanto no Brasil, como para o Exterior.</p>
-                        <p>3.2 A Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas não aceitará qualquer vídeo que contenha imagens que exponham as pessoas a situações vexatórias, incitem ao preconceito, violência, contenham apelo sexual ou ao consumismo exacerbado.</p> 
-                        <p>3.3. O vídeo deve ter o tempo máximo de 1 (um) minuto de duração. O autor do vídeo declara que o conteúdo gravado é dotado de caráter de originalidade, não constuindo em ofensa a direitos de terceiros, pelo que também se responsabiliza pela obtenção das necessárias autorizações ou licença de utilização de imagem e som de voz das pessoas eventualmente retratadas nas reproduções, bem como pelos instrumentos de licença de direitos autorais relativos a eventuais obras de arte, trilhas sonoras, eventuais marcas ou elementos protegidos por propriedade intelectual ou qualquer violação de direitos autorais e imagens de terceiros retratados.</p>
-                        <p>3.4 Eventuais críticas e/ou sátiras relacionadas a eventos públicos de entretenimento não terão conteúdo ofensivo ou depreciativo e serão admitidas, a único e exclusivo critério da Fundação Padre Anchieta, nos estritos limites do exercício de tais direitos, nos termos do artigo 48 da Lei de Direitos Autorais, respeitados a honra, a imagem e os direitos de personalidade de terceiros envolvidos. Se a Fundação Padre Anchieta tiver qualquer restrição a tal conteúdo poderá desclassificar a participação de tal vídeo, a seu livre e exclusivo critério, sem qualquer reclamação do participante.</p>
-                        <p>3.5 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela equipe de produção referida no item 2.1 deste Regulamento.</p>
-                        <p>3.6 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento. Os vídeos recebidos não serão devolvidos e poderão permanecer arquivados pela Promotora.</p>
-                        <p>3.7 Os vídeos poderão, a exclusivo critério da FPA, serem exibidos no canal de televisão aberto intitulado TV Cultura de São Paulo e demais emissoras afiliadas/licenciadas, no canal de televisão fechado denominado TV Rá Tim Bum, bem como nas Rádios Cultura AM/FM, para exibição no Brasil e no exterior, e também poderão ser publicados no site <a href="cmais.com.br/cartaozinho" title="cmais.com.br/cartaozinho">cmais.com.br/cartaozinho</a>.</p>                                                   
-                        <p>3.8. A ação objeto do presente regulamento poderá ser encerrada a qualquer tempo, a único e exclusivo critério da Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, desobrigando a mesma de exibir os vídeos escolhidos nesta hipótese.</p>
-                        <p>3.9. A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas terá o direito de editar e alterar o vídeo encaminhado pelo Participante que, com o aceite do presente Regulamento, consente com referida edição. A edição será feita visando adequar aos critérios de exigência do tema e aos padrões de qualidade da programação da Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas.</p>                      
-                        <p>3.10 O Conteúdo a ser encaminhado pelo participante em audiovisual não poderá:</p>
-                        <ul>
-                          <li>(i) - Infringir e ou violar direitos de terceiros;</li>
-                          <li>(ii) - conter qualquer disposição que viole Leis, Estatutos, Normas, Portarias;</li>
-                          <li>(iii) - incitar práticas de crimes e ou contravenções penais;</li>
-                          <li>(iv) - promover atividades ilegais;</li>
-                          <li>(v) - conter fatos caluniosos, difamatórios, ameaçadores, abusivos, violentos, mal-intencionados;</li>
-                          <li>(vi) - incitar ao ódio ou à discriminação de raça, cor, gênero, religião, nacionalidade, etnia ou origem nacional, estado civil, deficiência;</li>
-                          <li>(vii) - expor qualquer terceiro em situação constrangedora</li>
-                        </ul>
-                        <p>3.11. A participação nesta ação interativa não acarretará ao participante nenhum outro direito e/ou vantagem que não esteja expressamente prevista neste Regulamento.</p>
-                      </li>
-                      
-                    </ul>    
-                         </div>
+                          <li><p class="bold">1. Participação:</p>
+                            <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
+                            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto de no máximo 200 caracteres dizendo porque merece ganhar a bola oficial do Campeonato Paulista. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil. O texto deve ser encaminhado pelo site: <a href="http://tvcultura.cmais.com.br/cartaozinho" title="Cartãozinho">http://tvcultura.cmais.com.br/cartaozinho</a></p>
+                            <p>1.1 - Os textos deverão ser enviadas até o dia 17/05/2013, acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos, deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais: nome, email, website (opcional), endereço. Cada pessoa pode participar com quantos textos desejar.</p>
+                            <p>1.2 - A Fundação Padre Anchieta não se responsabiliza por eventuais falhas no envio do material.</p>
+                          </li>
+                          <li><p class="bold">2. Critérios de Seleção:</p>
+                            <p>2.1 - A seleção dos textos será feita pela equipe de Produção da TV Cultura e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p> 
+                            <p>2.2 Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p> 
+                            <p>2.3 Cada criança poderá participar enviando quantos textos desejar.</p>                                         
+                          </li>
+                          <li><p class="bold">3. Considerações Gerais:</p>
+                            <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p>
+                            <p>3.2 A FPA não aceitará qualquer texto que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p> 
+                            <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV Cultura referida no item 2.1 deste Regulamento.</p>
+                            <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
+                            <p>3.5 Os textos poderão ser publicados no site <a href="http://tvcultura.cmais.com.br/cartaozinho" alt="Cartãozinho">http://tvcultura.cmais.com.br/cartaozinho</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
+                          </li>
+                        </ul>    
+                      </div>
                     </div>
                     <div class="t3 concordo">
                       <input type="checkbox" class="check" name="concordo" id="concordo">
