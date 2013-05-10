@@ -34,7 +34,7 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   <a name="topo"></a>
-                  <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA MATEMÁTICA (ORDEM ALFABÉTICA)</h3>
+                  <h3 class="tit-pagina grid3">RESULTADO PROCESSO SELETIVO TUTORIA ONLINE PARA MATEMÁTICA EM ORDEM ALFABÉTICA</h3>
                   <p class="titu" style="margin-bottom:60px">Serão ofertadas 201 vagas por ordem de classificação. O quadro disposto em ordem alfabética é apenas para facilitar a sua pesquisa.</p>
                   <br />
                   <br />
