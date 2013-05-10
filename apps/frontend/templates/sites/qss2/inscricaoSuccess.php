@@ -100,24 +100,24 @@
                     </div>
                     <hr />
                   </div>
-                <form id="form-contato" method="post" action="">
+                <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
       <fieldset>
         <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
-        <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="<?php echo $_REQUEST['participanteNome'] ?>" /></label>
-        <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="<?php echo $_REQUEST['participanteIdade'] ?>" /></label>
-        <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="<?php echo $_REQUEST['participanteEndereco'] ?>" /></label>
-        <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="<?php echo $_REQUEST['participanteBairro'] ?>" /></label>
-        <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="<?php echo $_REQUEST['participanteCep'] ?>" class="cep" /></label>
-        <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="<?php echo $_REQUEST['participanteCidade'] ?>" /></label>
-        <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="<?php echo $_REQUEST['participanteRg'] ?>" /></label>
-        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="<?php echo $_REQUEST['participanteCpf'] ?>" class="cpf" /></label>
-        <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="<?php echo $_REQUEST['participanteNascimento'] ?>" class="nascimento" /></label>
-        <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="<?php echo $_REQUEST['participanteTelefone'] ?>" class="telefone" /></label>
-        <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="<?php echo $_REQUEST['participanteEmail'] ?>" /></label>
-        <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="<?php echo $_REQUEST['participanteNomeMae'] ?>" /></label>
-        <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="<?php echo $_REQUEST['participanteProfissao'] ?>" /></label>
-        <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="<?php echo $_REQUEST['participanteEscolaridade'] ?>" /></label>
+        <label class="span6">Nome completo:<input type="text" name="participanteNome" id="participanteNome" value="" /></label>
+        <label class="span2">Idade: <input type="text" maxlength="3" name="participanteIdade" id="participanteIdade" value="" /></label>
+        <label class="span8">Endereço: <input type="text" name="participanteEndereco" id="participanteEndereco" value="" /></label>
+        <label class="span6">Bairro: <input type="text" name="participanteBairro" id="participanteBairro" value="" /></label>
+        <label class="span2">CEP: <input type="text" name="participanteCep" id="participanteCep" value="" class="cep" /></label>
+        <label class="span6">Cidade: <input type="text" name="participanteCidade" id="participanteCidade" value="" /></label>
+        <label class="span2">RG: <input type="text" maxlength="20" name="participanteRg" id="participanteRg" value="" /></label>
+        <label class="span4">CPF: <input type="text" name="participanteCpf" id="participanteCpf" value="" class="cpf" /></label>
+        <label class="span4">Data de nascimento: <input type="text" name="participanteNascimento" id="participanteNascimento" value="" class="nascimento" /></label>
+        <label class="span4">Telefone para contato: <input type="text" name="participanteTelefone" id="participanteTelefone" value="" class="telefone" /></label>
+        <label class="span4">Email: <input type="text" name="participanteEmail" id="participanteEmail" value="" /></label>
+        <label class="span8">Nome da mãe: <input type="text" name="participanteNomeMae" id="participanteNomeMae" value="" /></label>
+        <label class="span4">Profissão: <input type="text" name="participanteProfissao" id="participanteProfissao" value="" /></label>
+        <label class="span4">Grau de escolaridade: <input type="text" name="participanteEscolaridade" id="participanteEscolaridade" value="" /></label>
         <label class="span8" style="margin-bottom: 0;">Você tem todas as condições de saúde para participar do programa?</label>
         <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="sim" />Sim</label>
         <label class="span5"><input type="radio" id="participanteSaudeCondicoes" name="participanteSaudeCondicoes" value="não" />Não</label>
