@@ -1218,7 +1218,7 @@
                     </table>
 
                     <h5>CRITÉRIOS ADOTADOS PARA CLASSIFICAÇÃO E CONTRATAÇÃO DOS PROFESSORES TUTORES</h5>
-                    <br /><p>A classificação dos candidatos obedeceu ao previsto nos itens VI e VII do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013">edital da prova escrita</a> realizada em 28/04/13 (<a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013">http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013</a>), A contratação está condicionada ao atendimento dos requisitos básicos mencionados no item III do mesmo edital.</p>
+                    <br /><p>A classificação dos candidatos obedeceu ao previsto nos itens VI e VII do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013" target="_blank">edital da prova escrita</a> realizada em 28/04/13 (<a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013" target="_blank">http://cmais.com.br/cadastro-de-tutores-2013/edital-tutores-2013</a>), A contratação está condicionada ao atendimento dos requisitos básicos mencionados no item III do mesmo edital.</p>
                     <br />
                     <br />
                     
