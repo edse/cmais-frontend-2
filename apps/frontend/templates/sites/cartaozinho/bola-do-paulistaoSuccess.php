@@ -298,7 +298,6 @@
               minlength: 11
             },
             reposta:{
-              url:true,
               required: true
             },
             concordo:{
@@ -316,7 +315,7 @@
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
             cpf: "Digite um CPF v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-            resposta: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
+            resposta: "Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Este campo &eacute; obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
           },
