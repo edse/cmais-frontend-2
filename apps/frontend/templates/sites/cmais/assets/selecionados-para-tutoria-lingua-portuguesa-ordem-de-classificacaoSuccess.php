@@ -1910,7 +1910,19 @@
                         </tr>
                       </tbody>
                     </table>
-
+                    <br />
+                    <br />
+                    <h5>IMPORTANTE:  CURSO DE FORMAÇÃO DOS TUTORES DE LÍNGUA PORTUGUESA E MATEMÁTICA</h5>
+                    <p>O curso de formação presencial  para os tutores de Lingua Portuguesa e Matemática –  previsto no edital do processo seletivo – será realizado dia 18 de maio (sábado), das 8h30 às 17h.</p>
+                    <p>Local: FGV (Fundação Getúlio Vargas)<br/>
+                      Rua Itapeva, 432<br/>
+                      São Paulo - Capital <br/>
+                      Metrô próximo: Trianon-Masp
+                    </p>
+                    <p><a href="http://www.metro.sp.gov.br/sua-viagem/linha-2-verde/estacao-trianon-masp.aspx" title="Estação Trianon Masp">(http://www.metro.sp.gov.br/sua-viagem/linha-2-verde/estacao-trianon-masp.aspx)</a></p>
+                    <p>O(a) professor(a) deverá levar levar um documento de identificação.</p>
+                    <br />
+                    <br />
 
 
                     <h5>CRITÉRIOS ADOTADOS PARA CLASSIFICAÇÃO E CONTRATAÇÃO DOS PROFESSORES TUTORES</h5>

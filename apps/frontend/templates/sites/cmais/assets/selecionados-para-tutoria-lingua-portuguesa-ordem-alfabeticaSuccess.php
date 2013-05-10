@@ -1922,6 +1922,8 @@
                     </p>
                     <p><a href="http://www.metro.sp.gov.br/sua-viagem/linha-2-verde/estacao-trianon-masp.aspx" title="Estação Trianon Masp">(http://www.metro.sp.gov.br/sua-viagem/linha-2-verde/estacao-trianon-masp.aspx)</a></p>
                     <p>O(a) professor(a) deverá levar levar um documento de identificação.</p>
+                    <br />
+                    <br />
                   
  
                     <h5>CRITÉRIOS ADOTADOS PARA CLASSIFICAÇÃO E CONTRATAÇÃO DOS PROFESSORES TUTORES</h5>
