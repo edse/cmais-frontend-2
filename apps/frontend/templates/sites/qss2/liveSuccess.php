@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 
 <style type="text/css">
@@ -26,7 +26,11 @@
         </a>
       </h2>
       <?php endif;?>
-      
+
+      <?php if(isset($program) && $program->id > 0): ?>
+      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+      <?php endif;?>
+
       <?php if(isset($program) && $program->id > 0): ?>
       <!-- horario -->
       <div id="horario">
@@ -34,12 +38,6 @@
       </div>
       <!-- /horario -->
       <?php endif;?>
-
-      <?php if(isset($program) && $program->id > 0): ?>
-      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-      <?php endif;?>
-
-      
     </div>
     <!-- box-topo -->
     <div class="box-topo grid3">
