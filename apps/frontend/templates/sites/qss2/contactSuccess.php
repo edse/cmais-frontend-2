@@ -2,6 +2,12 @@
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
     
+    <style type="text/css">
+      #email { margin:0; width:630px; padding:0 0 0 2px;  }
+      .contato .codigo .caracteres { width:630px; margin-top:10px; }
+      #enviar { width:160px;  }
+    </style>
+    
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
