@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 
 <style type="text/css">
