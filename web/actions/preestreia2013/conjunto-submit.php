@@ -25,35 +25,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           $message .= ucwords($field) . ": " . strip_tags($value) . "<br>";
       }
       
-
-	$attach = array();
 	
-	 $file_name9 = basename($_FILES['datafile9']['name']);      
-      $data9 = file_get_contents($_FILES['datafile9']['tmp_name']);       
-      $file_contents9 = chunk_split(base64_encode($data9));
-      $file_size9 = $_FILES['datafile9']['size'];
-      $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
-	
-      for($i=1; $i <= $qtdeIntegrantes; $i++) {
-        $file_name[$i] = basename($_FILES['datafile'.$i]['name']);
-		$file_name[$i] = basename($_FILES['datafile'.$i]['name']);
-        $data[$i] = file_get_contents($_FILES['datafile'.$i]['tmp_name']); 
-        $file_contents[$i] = chunk_split(base64_encode($data[$i]));
-        $file_size[$i] = $_FILES['datafile'.$i]['size'];
-        $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
-		$attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+		  $attach = array();
 		
- }
-	 $attach[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
-      
-	 
-      
-      
-	 
+		  $file_name9 = basename($_FILES['datafile9']['name']);      
+	      $data9 = file_get_contents($_FILES['datafile9']['tmp_name']);       
+	      $file_contents9 = chunk_split(base64_encode($data9));
+	      $file_size9 = $_FILES['datafile9']['size'];
+	      $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
+		
+	      for($i=1; $i <= $qtdeIntegrantes; $i++) {
+	        $file_name[$i] = basename($_FILES['datafile'.$i]['name']);
+			$file_name[$i] = basename($_FILES['datafile'.$i]['name']);
+	        $data[$i] = file_get_contents($_FILES['datafile'.$i]['tmp_name']); 
+	        $file_contents[$i] = chunk_split(base64_encode($data[$i]));
+	        $file_size[$i] = $_FILES['datafile'.$i]['size'];
+	        $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
+			$attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+			
+			}
 
- 	  
-	  	  
-      if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
+		 	$attach[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
+	      
+	     if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
         
         if (deleteAllFiles('datafile',$qtdeIntegrantes)) {
           header("Location: http://tvcultura.cmais.com.br/preestreia/conjunto-2013?error=2");
