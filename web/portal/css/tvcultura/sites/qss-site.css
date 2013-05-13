@@ -83,6 +83,8 @@ h1,
 .uma-coluna p, 
 .novoNoAr .noAr-box .chapeu { color:#333 !important; }
 .box-topo .navegacao { margin-bottom:0; }
+
+.assinatura .sup span,
 #box-videos .conteudo-lista h3,
 .box-interna h3,
 #box-videos .conteudo-lista a { color:#fff !important; }
@@ -96,6 +98,8 @@ p#enviar { margin:0; }
 
 .box-padrao p { width:100%; }
 #esquerda h4 { text-align:left; }
+.box-padrao.facebook { width:290px !important; }
+
  
 
 /* IE*/
