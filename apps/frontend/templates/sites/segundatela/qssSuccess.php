@@ -277,6 +277,10 @@ $(document).ready(function(){
         email:true
       }
     },
+    messages:{
+      email_esqueceu:"Insira um e-mail válido"
+    },
+    
     success: function(label){
       // set &nbsp; as text for IE
       label.html("&nbsp;").addClass("checked");
