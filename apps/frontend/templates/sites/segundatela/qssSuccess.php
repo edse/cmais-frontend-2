@@ -265,6 +265,36 @@ $(document).ready(function(){
     }
   });
   
+  
+  function login(data){
+    $.ajax({
+      url: "/segundatela-qss/site/sign-in/sign-in.php",
+      data: data,
+      type: "POST",
+      dataType: "json",
+      success:function(json){
+        $('.alert').hide();
+        if(json.status == "success"){
+          self.location.href="../?token="+json.token;
+          /*
+          var form = $('<form action="http://qss/site/" method="post">'+
+          '<input type="text" name="token" value="' + json.token + '" />'+
+          '<input type="text" name="name" value="' + json.name + '" />'+
+          '<input type="text" name="email" value="' + json.email + '" />'+
+          '<input type="text" name="avatar" value="' + json.avatar + '" />'+
+          '</form>');
+          $('body').append(form);
+          $(form).submit();
+          */
+        }
+        else{
+          $('#login-alert-error').fadeIn('slow');
+          $('#login-alert-message').html(json.message);
+        }
+        console.log(json);
+      }
+    });
+  }
   //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
