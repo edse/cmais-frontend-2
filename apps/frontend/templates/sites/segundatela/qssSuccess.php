@@ -214,6 +214,63 @@
 <script>
 $(document).ready(function(){
   
+  //lcadastro
+  var validator = $('#signup-form-btn').validate({
+    submitHandler: function(form){
+     $.ajax({
+    url: "/segundatela-qss/site/sign-up/sign-up.php",
+    data: {
+      name: $('#signup_name').val(),
+      email: $('#signup_email').val(),
+      password: $('#signup_password').val(),
+      avatar: $('#signup_avatar').val(),
+      app: "secondscreenqss"
+    },
+    type: "POST",
+    dataType: "json",
+    success:function(json){
+      $('.alert').hide();
+      if(json.status == "success"){
+        $('#alert-success').fadeIn('slow');
+        login({
+          email: $('#signup_email').val(),
+          password: $('#signup_password').val(),
+          app: "secondscreenqss"
+        });
+      }
+      else if(json.status == "taken"){
+        $('#alert-email-taken').fadeIn('slow');
+        $('#alert-message').html(json.message);
+        $('#signup_email').select();
+      }
+      else
+        $('#alert-error').fadeIn('slow');
+      console.log(json);
+    }
+  });        
+  
+    },
+    rules:{
+      signup_name:{
+        required: true
+      },
+      signup_email:{
+        required:true,
+        email:true
+      },
+      signup_password:{
+        required:true
+      },
+      signup_avatar:{
+        required:true
+      }
+    },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+  
   //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
