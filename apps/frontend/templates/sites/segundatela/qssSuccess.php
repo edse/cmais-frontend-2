@@ -218,7 +218,7 @@ $(document).ready(function(){
   var validator = $('#signup-form-btn').validate({
     submitHandler: function(form){
      $.ajax({
-    url: "/segundatela-qss/site/sign-up/sign-up.php",
+    url: "/segundatela-qss/site/sign-in/sign-up.php",
     data: {
       name: $('#signup_name').val(),
       email: $('#signup_email').val(),
