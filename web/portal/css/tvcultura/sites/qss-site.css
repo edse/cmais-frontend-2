@@ -34,6 +34,7 @@ body { background:#efc32f url(/portal/images/capaPrograma/qss/bg.jpg) repeat-x; 
 #capa-site label,
 #capa-site p{font-size:14px; line-height:20px; color:#FFFFFF; font-family:'source_sans_proregular', Arial, Helvetica, sans-serif; text-align:left; margin-bottom:10px;}
 #capa-site p { float:left; }
+#capa-site p.chapeu { font-size:10px; }
 #enviar{cursor: pointer;background: #333;border: none;padding: 0 6px;float: left;font-size: 14px;color: #FFF;margin: 10px}
 #email{float: left;margin: 10px 0 200px 0px;padding: 4px;width: 621px;}
 label.error{position: absolute;bottom: -10px;color: #333;}
