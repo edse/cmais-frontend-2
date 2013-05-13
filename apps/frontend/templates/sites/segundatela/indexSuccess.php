@@ -81,7 +81,7 @@
       <!-- /item-->
       <!--item -->
       <div class="span3 item jornal">
-        <a href="http://cmais.com.br/segundatela/qss">
+        <a href="http://cmais.com.br/segundatela/qss" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
           </div>
