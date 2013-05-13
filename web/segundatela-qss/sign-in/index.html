@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>· Quem Sabe, Sabe · Jogo de perguntas baseado em conhecimento, estratégia e sorte · TV Cultura · cmais+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This application allows you to receive extra information synchronized with the content you're watching on television.">
+    <meta name="author" content="Emerson Estrella">
+
+    <!-- Le styles -->
+    <link href="../../docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="../css/qss.css" rel="stylesheet">
+    <link href="../../docs/assets/css/docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/ico.png">
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <a class="brand pull-left" href="http://cmais.com.br/qss" target="_blank">
+          <div style="text-align: center;">
+          <img src="../img/logo2.png" alt="Quem Sabe, Sabe - TV Cultura - cmais+" />
+          <div>Quem Sabe, Sabe</div>
+          </div>
+        </a>
+
+        <div class="container">  
+          <div class="btn-toolbar pull-right" style="margin-right: 15px;">
+            <div id="status" class="btn-group pull-left">
+              <a class="btn btn-large btn-success disabled" title="Entrar no jogo" style="opacity: 1;">Entrar no Jogo</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hr-logo"></div>
+
+      </div><!-- /navbar-inner -->
+      
+    </div>
+    
+    
+    <div class="container-fluid">
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="page-header">
+            <h4>Participe <small> utilizando sua rede social favorita...</small></h4>
+          </div>
+  
+          <div class="well">
+            <p class="lead">Escolha sua rede: Facebook, Twitter ou Google+</p>
+            <div id="social-login">
+              <div class="inset" style="width: 200px;">
+                <a class="fb login_button span2" href="facebook.php">
+                  <div class="logo_wrapper"><span class="logo"></span></div>
+                  <span>Entrar com Facebook</span>
+                </a>
+              </div>
+              <div class="inset" style="width: 200px;">
+                <a class="tw login_button" href="twitter.php">
+                  <div class="logo_wrapper"><span class="logo"></span></div>
+                  <span>Entrar com Twitter</span>
+                </a>
+              </div>
+              <div class="inset" style="width: 200px;">
+                <a id="customBtn" class="gp login_button customGPlusSignIn" href="javascript:;">
+                  <div class="logo_wrapper"><span class="logo"></span></div>
+                  <span>Entrar com Google</span>
+                </a>
+              </div>
+            </div>
+            <div style="clear: both; padding-top: 25px"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="page-header">
+            <h4>Participe <small> utilizando seu login e senha</small></h4>
+          </div>
+          <div class="well">
+            <div class="span6">
+              <p class="lead">Entre com seu email e senha</p>
+              
+              <div id="login-alert-error" class="alert alert-block alert-error hide">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+                <p id="login-alert-message"></p>
+                <p>Certifique-se de que você preencheu seu email e senha corretamente e tente novamente.</p>
+              </div>
+
+              <form id="login-form" class="form-inline" style="margin-top: 10px;" onsubmit="return false">
+                <div class="controls" style="margin-bottom: 10px;">
+                  <input type="email" id="login_email" name="login_email" placeholder="Email" style="margin-bottom: 5px;">
+                </div>
+                <div class="controls" style="margin-bottom: 10px;">
+                  <input type="password" id="login_password" name="login_password" placeholder="Senha" style="margin-bottom: 5px;">
+                </div>
+                <input id="login-btn" type="button" name="Entrar" value="Entrar" class="btn btn-inverse" style="margin-bottom: 5px;">
+              </form>
+              <label style="clear: both; margin-bottom: 15px;">
+                <a href="#">Clique aqui</a>, se você esqueceu sua senha. 
+              </label>
+            </div>
+            <div class="span6">
+              <p class="lead">Se você ainda não se cadastrou</p>
+              <a class="btn btn-primary" title="Cadastre-se" id="signup-btn">Cadastre-se</a>
+
+              <div id="signup-form" class="hide">
+                <p class="lead">Preencha o formulário</p>
+                
+                <div id="alert-success" class="alert alert-block alert-success hide">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <h4 class="alert-heading">Seu cadastro foi efetuado com sucesso</h4>
+                  <!--<p>Para ativar seu cadastro você precisa clicar no link que foi enviado para o seu email.</p>-->
+                  <p>Para participar entre com seu email e senha nos campos ao lado.</p>
+                </div>
+
+                <div id="alert-error" class="alert alert-block alert-error hide">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+                  <p>Ocorreu um erro durante o seu cadastro. Preencha todos os campos e tente novamente.</p>
+                </div>
+
+                <div id="alert-email-taken" class="alert alert-block alert-error hide">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+                  <p id="alert-message"></p>
+                </div>
+
+                <form id="signup-form">
+                  <div class="control-group">
+                    <div class="controls">
+                      <input type="text" id="signup_name" name="signup_name" placeholder="Nome">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <input type="email" id="signup_email" name="signup_email" placeholder="Email"><span class="help-inline"><small>Precisa ser um email válido</small></span>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <input type="password" id="signup_password" name="signup_password" placeholder="Senha">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="avatar">Avatar</label>
+                    <div class="controls">
+                      <label class="radio inline">
+                        <input type="radio" id="avatar1" name="signup_avatar" value="avatar-1" checked="checked" /> 1
+                      </label>
+                      <label class="radio inline">
+                        <input type="radio" id="avatar2" name="signup_avatar" value="avatar-2" /> 2
+                      </label>
+                      <label class="radio inline">
+                        <input type="radio" id="avatar3" name="signup_avatar" value="avatar-3" /> 3
+                      </label>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <label class="checkbox">
+                        <input type="checkbox"> Concordo com os <a href="http://cmais.com.br/qss" target="_blank">termos</a> do jogo
+                      </label>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <input id="signup-form-btn" type="button" name="Cadastrar" value="Cadastrar" class="btn btn-primary" style="margin-bottom: 5px;">
+                      <input id="signup-cancel-btn" type="button" name="Cancelar" value="Cancelar" class="btn" style="margin-bottom: 5px;">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div style="clear: both;"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row-fluid">
+        
+        <div class="span7">
+          <div class="page-header">
+            <h4>Quem Sabe, Sabe <small> jogo de perguntas baseado em conhecimento, estratégia e sorte</small></h4>
+          </div>
+          <div class="well">
+            
+            <img src="http://tvcultura.cmais.com.br/portal/images/capaPrograma/qss/background-qss.jpg" style="width: 100%; border-radius: 5px;" />
+            <br /><br />
+            <h5>Quem Sabe, Sabe</h5>
+            <p>O “Quiz Musical - RadarCultura”, realizado pela Rádio Cultura Brasil, é um concurso cultural com questões de múltipla escolha. O Quiz acontece ao longo do programa RadarCultura, das 15 às 17 horas, e o vencedor é premiado com 1 kit cultural escolhido pela produção do programa.</p>
+            <h5>Como funciona?</h5>
+            <p>Os participantes devem realizar um cadastro com nome e email de contato e aguardar as perguntas. Cada pergunta tem um tempo determinado para resposta e uma pontuação definida. O participante com maior quantidade de pontos é o vencedor.</p>
+            <h5>Regras do jogo</h5>
+            <ol>
+              <li>As perguntas tem pontuação variada. Conforme a dificuldade aumenta, as perguntas valem mais pontos. Respostas erradas não subtraem pontos.</li>
+              <li>Em caso de empate na pontuação final, será vencedor o participante que tiver respondido a todas as perguntas em menor tempo.</li>
+              <li>Os participantes tem tempo determinado para responder a cada pergunta.</li>
+              <li>O cadastro pode ser efetuado ao longo do programa, mas os participantes que ingressarem após o início do Quiz não poderão responder as perguntas enviadas antes do cadastro.</li>
+              <li>Os participantes que fecharem o navegador ou a janela do Quiz automaticamente perderão seus pontos e deverão efetuar um novo cadastro para participar do concurso.</li>
+              <li>Caso o e-mail de contato não exista, o participante será desqualificado.</li>
+              <li>Funcionários e prestadores de serviço da Fundação Padre Anchieta não podem participar do Quiz.</li>
+            </ol>
+
+          </div>
+
+        </div>
+        
+        <div class="span5">
+          <div class="page-header">
+            <h4>Top 20 <small> os melhores jogadores</small></h4>
+          </div>
+          <table class="table table-striped table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Nome</th>
+                <th>Eurekas</th>
+              </tr>
+            </thead>
+            <tbody id="rankingTable">
+              <tr>
+                <td>1</td>
+                <td>Fulano</td>
+                <td>1800</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Beltrano</td>
+                <td>800</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ciclano</td>
+                <td>300</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+
+    </div>
+    
+  </div>
+
+  <hr class="soften">
+  
+  <!--
+  <footer style="margin-top: 15px; text-align: center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a><br /><a href="http://second-screen.appengine.com">Second Screen Application</span> developed by <a href="http://emersonestrella.appspot.com">Emerson Estrella</a>.<br />Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+  </footer>
+  -->
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap-v2.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Place this asynchronous JavaScript just before your </body> tag
+  <script type="text/javascript">
+    (function() {
+     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+     po.src = 'https://apis.google.com/js/client:plusone.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+   })();
+  </script>  
+  -->
+
+  <script src="../js/signin.js"></script>
+  <!--
+  <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/client:plusone.js?onload=render';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+  
+  function render() {
+    gapi.signin.render('customBtn', {
+      'callback': 'socialGoogleplusCallback',
+      'clientid': '1048152165463.apps.googleusercontent.com',
+      'cookiepolicy': 'single_host_origin',
+      'requestvisibleactions': 'http://schemas.google.com/AddActivity',
+      'scope': 'https://www.googleapis.com/auth/plus.login'
+    });
+  }
+  socialGoogleplusCallback = function(data) {
+    console.log(data);
+    /*
+    {
+      "id_token": the user ID,
+      "access_token": the access token,
+      "expires_in": the validity of the tokens, in seconds,
+      "error": The OAuth2 error type if problems occurred,
+      "error_description": an error message if problems occurred
+    }
+    */
+  }
+  </script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  -->
+
+</body>
+</html>

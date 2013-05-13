@@ -1,0 +1,95 @@
+body {
+  background: rgb(76,76,76); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGM0YzRjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjNTk1OTU5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjNjY2NjY2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzklIiBzdG9wLWNvbG9yPSIjNDc0NzQ3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMmMyYzJjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSIjMTExMTExIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzYlIiBzdG9wLWNvbG9yPSIjMmIyYjJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTElIiBzdG9wLWNvbG9yPSIjMWMxYzFjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEzMTMxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(25%,rgba(102,102,102,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  background-attachment: fixed;
+}
+
+body > .navbar .brand:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,.4);
+  color: white;
+}
+
+.navbar-inner {
+  background: rgb(0,0,0) !important;
+}
+
+.in {
+  padding-top: 10px;
+}
+
+.weel {
+  opacity: 0.95;
+}
+
+.social_buttons{position:relative;height:50px}
+.inset{/*position:absolute;top:0;left:50%;*/float: left;margin:0 0 0 10px;padding:5px;height:40px;min-width:200px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:inset 0px 1px 2px rgba(50,50,50,0.5);-moz-box-shadow:inset 0px 1px 2px rgba(50,50,50,0.5);-webkit-box-shadow:inset 0px 1px 2px rgba(50,50,50,0.5)} */
+.inset:first-child{left:auto;right:50%;margin:0 10px 0 0}
+.login_button{display:block;min-width:200px;height:37px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;-webkit-user-select:none}
+.login_button:hover{text-decoration:none;cursor:pointer}
+.login_button:active{height:38px;margin-top:2px}
+.login_button>span{float:left;min-height:20px;margin-top:7px;padding:3px 12px;font-size:14px;/*font-weight:500;*/color:#fff}
+.login_button .logo_wrapper{float:left;margin-top:7px;padding:3px 12px}
+.fb{background:#3b5998;background:-moz-linear-gradient(top, #3b5998 0%, #3b5998 50%, #325190 50%, #325190 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b5998), color-stop(50%, #3b5998), color-stop(50%, #325190), color-stop(100%, #325190));background:-webkit-linear-gradient(top, #3b5998 0%, #3b5998 50%, #325190 50%, #325190 100%);background:-o-linear-gradient(top, #3b5998 0%, #3b5998 50%, #325190 50%, #325190 100%);background:-ms-linear-gradient(top, #3b5998 0%, #3b5998 50%, #325190 50%, #325190 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b5998', endColorstr='#325190',GradientType=0 );background:linear-gradient(top, #3b5998 0%,#3b5998 50%,#325190 50%,#325190 100%);box-shadow:0px 3px 0px #213b6d;-moz-box-shadow:0px 3px 0px #213b6d;-webkit-box-shadow:0px 3px 0px #213b6d}
+.fb:hover{background:#2b4582;background:-moz-linear-gradient(top, #2b4582 0%, #2b4582 49%, #243d79 49%, #2b4582 100%, #243d79 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b4582), color-stop(49%, #2b4582), color-stop(49%, #243d79), color-stop(100%, #2b4582), color-stop(100%, #243d79));background:-webkit-linear-gradient(top, #2b4582 0%, #2b4582 49%, #243d79 49%, #2b4582 100%, #243d79 100%);background:-o-linear-gradient(top, #2b4582 0%, #2b4582 49%, #243d79 49%, #2b4582 100%, #243d79 100%);background:-ms-linear-gradient(top, #2b4582 0%, #2b4582 49%, #243d79 49%, #2b4582 100%, #243d79 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b4582', endColorstr='#243d79',GradientType=0 );background:linear-gradient(top, #2b4582 0%,#2b4582 49%,#243d79 49%,#2b4582 100%,#243d79 100%);box-shadow:0px 3px 0px #172d59;-moz-box-shadow:0px 3px 0px #172d59;-webkit-box-shadow:0px 3px 0px #172d59}
+.fb:active{background-color:#243d79;background-image:none;box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-moz-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-webkit-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4)}
+.fb .logo_wrapper{border-right:1px solid #2f4f85}
+.fb:hover .logo_wrapper{border-right:1px solid #284473}
+.fb:active .logo_wrapper{border-right-color:#21386e}
+.fb .logo{float:left;width:11px;height:20px;background:url("../../../img/login_icons2.png") -258px 0 no-repeat}
+.fb:hover>span{border-left:1px solid #51668c}
+.fb:active>span{border-left-color:#2c4b94}
+.fb>span{border-left:1px solid #627ba8}
+.tw{background:#32c1f0;background:-moz-linear-gradient(top, #32c1f0 0%, #32c1f0 49%, #30bbe9 49%, #30bbe9 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #32c1f0), color-stop(49%, #32c1f0), color-stop(49%, #30bbe9), color-stop(100%, #30bbe9));background:-webkit-linear-gradient(top, #32c1f0 0%, #32c1f0 49%, #30bbe9 49%, #30bbe9 100%);background:-o-linear-gradient(top, #32c1f0 0%, #32c1f0 49%, #30bbe9 49%, #30bbe9 100%);background:-ms-linear-gradient(top, #32c1f0 0%, #32c1f0 49%, #30bbe9 49%, #30bbe9 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32c1f0', endColorstr='#30bbe9',GradientType=0 );background:linear-gradient(top, #32c1f0 0%,#32c1f0 49%,#30bbe9 49%,#30bbe9 100%);box-shadow:0px 3px 0px #249bc4;-moz-box-shadow:0px 3px 0px #249bc4;-webkit-box-shadow:0px 3px 0px #249bc4}
+.tw:hover{background:#18b8ee;background:-moz-linear-gradient(top, #18b8ee 0%, #18b8ee 49%, #18b2e6 49%, #18b2e6 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #18b8ee), color-stop(49%, #18b8ee), color-stop(49%, #18b2e6), color-stop(100%, #18b2e6));background:-webkit-linear-gradient(top, #18b8ee 0%, #18b8ee 49%, #18b2e6 49%, #18b2e6 100%);background:-o-linear-gradient(top, #18b8ee 0%, #18b8ee 49%, #18b2e6 49%, #18b2e6 100%);background:-ms-linear-gradient(top, #18b8ee 0%, #18b8ee 49%, #18b2e6 49%, #18b2e6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#18b8ee', endColorstr='#18b2e6',GradientType=0 );background:linear-gradient(top, #18b8ee 0%,#18b8ee 49%,#18b2e6 49%,#18b2e6 100%);box-shadow:0px 3px 0px #1d82a5;-moz-box-shadow:0px 3px 0px #1d82a5;-webkit-box-shadow:0px 3px 0px #1d82a5}
+.tw:active{height:38px;background-color:#2088B4;background-image:none;box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-moz-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-webkit-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4)}
+.tw .logo_wrapper{padding-top:5px;padding-right:8px;padding-left:8px;border-right:1px solid #12abdd}
+.tw:active .logo_wrapper{border-right-color:#1f83ad}
+.tw .logo{float:left;width:21px;height:17px;margin-top:1px;background:url("../../../img/login_icons2.png") -269px 0 no-repeat}
+.tw>span{border-left:1px solid #59c9ed}
+.tw:active>span{border-left-color:#2392c2}
+
+.gp{background:#dd4b39;background:-moz-linear-gradient(top, #dd4b39 0%, #dd4b39 49%, #e74b37 49%, #e74b37 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #dd4b39), color-stop(49%, #dd4b39), color-stop(49%, #e74b37), color-stop(100%, #e74b37));background:-webkit-linear-gradient(top, #dd4b39 0%, #dd4b39 49%, #e74b37 49%, #e74b37 100%);background:-o-linear-gradient(top, #dd4b39 0%, #dd4b39 49%, #e74b37 49%, #e74b37 100%);background:-ms-linear-gradient(top, #dd4b39 0%, #dd4b39 49%, #e74b37 49%, #e74b37 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#e74b37',GradientType=0 );background:linear-gradient(top, #dd4b39 0%,#dd4b39 49%,#e74b37 49%,#e74b37 100%);box-shadow:0px 3px 0px #ac4b4b;-moz-box-shadow:0px 3px 0px #ac4b4b;-webkit-box-shadow:0px 3px 0px #ac4b4b}
+.gp:hover{background:#e74b37;background:-moz-linear-gradient(top, #e74b37 0%, #e74b37 49%, #dd4b39 49%, #dd4b39 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #dd4b39), color-stop(49%, #dd4b39), color-stop(49%, #dd4b39), color-stop(100%, #dd4b39));background:-webkit-linear-gradient(top, #e74b37 0%, #e74b37 49%, #dd4b39 49%, #dd4b39 100%);background:-o-linear-gradient(top, #e74b37 0%, #e74b37 49%, #dd4b39 49%, #dd4b39 100%);background:-ms-linear-gradient(top, #e74b37 0%, #e74b37 49%, #dd4b39 49%, #dd4b39 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e74b37', endColorstr='#dd4b39',GradientType=0 );background:linear-gradient(top, #e74b37 0%,#e74b37 49%,#dd4b39 49%,#dd4b39 100%);box-shadow:0px 3px 0px #912929;-moz-box-shadow:0px 3px 0px #912929;-webkit-box-shadow:0px 3px 0px #912929}
+.gp:active{height:38px;background-color:#be3e2e;background-image:none;box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-moz-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-webkit-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4)}
+.gp .logo_wrapper{padding-top:0px;padding-right:8px;padding-left:8px;border-right:1px solid #be3e2e}
+.gp:active .logo_wrapper{border-right-color:#bb3f30}
+.gp .logo{float:left;width:23px;height:23px;margin-top:1px;background:url("../../../img/login_icons2.png") -267px -46px no-repeat}
+.gb>span{border-left:1px solid #C98B83}
+.gp:active>span{border-left-color:#CA2B17}
+
+#customBtn {
+  display: inline-block;
+  background: #cc3732;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+}
+#customBtn:hover {
+  background: #e74b37;
+  cursor: hand;
+}
+span.label {
+  font-weight: bold;
+}
+span.icon {
+  background: url('../../../img/btn_red_32.png') transparent 10px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 40px;
+  padding-right: 40px;
+}
