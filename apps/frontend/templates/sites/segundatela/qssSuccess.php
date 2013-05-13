@@ -105,11 +105,13 @@
   </div>
 </div>
 <!--/login-->
-<div id="login-alert-error" class="alert alert-block alert-error hide">
-  <button type="button" class="close fechar" data-dismiss="alert">×</button>
-  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-  <p id="login-alert-message"></p>
-  <p>Acesse a conta que foi criada com este e-mail, clicando no link "Esqueci minha senha", ou cadastre outro e-mail.</p>
+<div class="container">
+  <div id="login-alert-error" class="alert alert-block alert-error hide">
+    <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p id="login-alert-message"></p>
+    <p>Acesse a conta que foi criada com este e-mail, clicando no link "Esqueci minha senha", ou cadastre outro e-mail.</p>
+  </div>
 </div>
 <!--cadastro-->
 <div class="section-cadastro">
