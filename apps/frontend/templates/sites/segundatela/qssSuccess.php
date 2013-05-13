@@ -107,7 +107,7 @@
 <!--/login-->
 <div id="alert-email-taken" class="alert alert-block alert-error hide">
   <div class="container">
-    <button type="button" class="close" data-dismiss="alert">×</button>
+    <button type="button" class="fechar" data-dismiss="alert">×</button>
     <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
     <p id="alert-message"></p>
   </div>
@@ -185,7 +185,7 @@
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
         }, 1000);
      //close
-     $('.close').click(function(){
+     $('.fechar').click(function(){
        $(this).parent().parent().hide();
      });
         
