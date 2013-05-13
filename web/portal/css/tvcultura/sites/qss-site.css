@@ -40,7 +40,7 @@ body { background:#efc32f url(/portal/images/capaPrograma/qss/bg.jpg) repeat-x; 
 label.error{position: absolute;bottom: -10px;color: #333;}
 #capa-site label { display:block; float: left; margin-right:20px; }
 #capa-site label input { width:100%; margin-top:2px;  }
-#enviar{float: right;margin: 0 auto;font-size: 14px; padding:0 6px;line-height: 26px; height:26px; color: #FFFFFF;font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;text-align: center;margin-bottom: 20px;}
+#enviar{float: right;margin:20px 0 0 0;font-size: 14px; padding:3px 6px; color: #FFFFFF;font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;text-align: center;}
 #enviar:hover{text-decoration:none;}
 .span8 { width: 95% }
 .span6 { width: 70%; clear:both; }
@@ -86,4 +86,5 @@ h1,
 #box-videos .conteudo-lista h3,
 #box-videos .conteudo-lista a { color:#fff !important; }
 .btn-compartilhar p { width:auto;  }
+p#enviar { margin-bottom:0; }
 
