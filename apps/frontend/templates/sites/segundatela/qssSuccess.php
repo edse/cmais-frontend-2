@@ -184,7 +184,7 @@
       $(this).addClass('selected');
       
       var avatar = $(this).attr('data-source');
-      $('#id_avatar').attr('value', avatar);
+      $('#signup_avatar').attr('value', avatar);
     });
     
     $('.esqueci').click(function(){
@@ -250,6 +250,9 @@ $(document).ready(function(){
         email:true
       },
       signup_password:{
+        required:true
+      },
+      signup_avatar:{
         required:true
       }
     },
