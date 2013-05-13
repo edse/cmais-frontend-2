@@ -72,7 +72,7 @@
           
           <?php if($displays["yt-live"]): ?>
             <?php if(count($displays["yt-live"]) > 0): ?>
-              <?php if($displays["yt-live"]->Asset->AssetType->getSlug() == "video"): ?>
+              <?php if($displays["yt-live"][0]->Asset->AssetType->getSlug() == "video"): ?>
                 
           <iframe width="640" height="364" src="http://www.youtube.com/embed/<?php if($displays["yt-live"][0]) echo $displays["yt-live"][0]->Asset->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
           
