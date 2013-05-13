@@ -77,7 +77,7 @@
         <label>Email</label> 
         <input type="text" name="email_login" id="email_login" />
         <label class="checkbox" for="manter_conectado" id="conectado">
-          <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span>Mantenha-me conectado</span>
+          <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
         </label>
       </div>
       <div class="span3">
