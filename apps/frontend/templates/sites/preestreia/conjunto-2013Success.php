@@ -1517,7 +1517,7 @@ $(function(){
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="datafile9" id="anexofoto" />
+            <input type="file" name="datafile9" id="anexofotoconjunto" />
             
           </div>
           <!--/Anexar Foto-->
@@ -2027,7 +2027,11 @@ $(function(){
           minlength: 2
         },
 
-        anexofoto:{
+        anexofotoconjunto:{
+          required: true,
+          file:true
+        },
+         anexofotorg:{
           required: true,
           file:true
         },
@@ -2406,6 +2410,8 @@ $(function(){
             opcao_correspondente4: "Campo obrigat&oacute;rio",
         
         anexofoto: "Este campo &eacute; Obrigat&oacute;rio.",
+        anexofotorg: "Este campo &eacute; Obrigat&oacute;rio.",
+        anexofotoconjunto: "Este campo &eacute; Obrigat&oacute;rio.",
         curriculo: "Este campo &eacute; Obrigat&oacute;rio.", 
         conjuntoprofessor: "Este campo &eacute; Obrigat&oacute;rio.",
         regulamento: "Este campo &eacute; Obrigat&oacute;rio.",
