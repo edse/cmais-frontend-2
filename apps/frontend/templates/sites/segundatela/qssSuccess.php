@@ -243,8 +243,8 @@ $(document).ready(function(){
             });
           }
           else if(json.status == "taken"){
-            $('#login-alert-message').fadeIn('slow');
-            $('#alert-message').html(json.message);
+            $('#login-alert-error').fadeIn('slow');
+            $('#login-alert-message').html(json.message);
             $('#signup_email').select();
           }
           else
