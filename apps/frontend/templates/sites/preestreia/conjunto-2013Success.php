@@ -1517,7 +1517,7 @@ $(function(){
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="datafile9" id="anexofoto" />
+            <input type="file" name="datafile9" id="anexofoto_9" />
             
           </div>
           <!--/Anexar Foto-->
