@@ -282,7 +282,7 @@ $(document).ready(function(){
     submitHandler: function(form){
        $.ajax({
         url: "/segundatela-qss/site/sign-in/sign-in.php",
-        data: data,
+        //data: data,
         type: "POST",
         dataType: "json",
         success:function(json){
