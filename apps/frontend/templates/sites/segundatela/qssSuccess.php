@@ -90,6 +90,17 @@
         <input id="enviar" type="submit" class="logar" value="ENTRAR">
       </div>   
     </form>
+    
+    <form action="" method="POST" id="form-esqueceu" style="display:none;">
+      <div class="span3">
+        <label>Email</label> 
+        <input type="email" name="email_esqueceu" id="email_esqueceu" />
+      </div>
+      <div class="span3">
+        <label style="margin-bottom: 8px;">&nbsp;</label>
+        <input id="recuperar" type="submit" class="logar" value="ENVIAR">
+      </div>   
+    </form>
   </div>
 </div>
 <!--/login-->
@@ -182,13 +193,21 @@
       
       var avatar = $(this).attr('data-source');
       $('#id_avatar').attr('value', avatar);
-      });
+    });
+    
+    $('.esqueci').click(function(){
+      $('#form-login').hide();
+      $('#form-esqueceu').fadeIn('fast');
+    })  
+      
     });
  </script>
  <!--SCRIPT-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
+  
+  //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
      $.ajax({
@@ -223,6 +242,45 @@ $(document).ready(function(){
         required:true
       },
     },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+  
+  //Recupera senha
+  var validator = $('#form-esqueceu').validate({
+    submitHandler: function(form){
+     $.ajax({
+        type: "POST",
+        dataType: "text",
+        data: $("#form-esqueceu").serialize(),
+        beforeSend: function(){
+
+        },
+        success: function(data){
+          alert(data);
+          window.location.href="javascript:;";
+          if(data == "1"){
+
+          }
+          else {
+
+          }
+        }
+      });         
+  
+    },
+    rules:{
+      email_esqueceu:{
+        required: true,
+        email:true
+      }
+    },
+    messages:{
+      email_esqueceu:"Insira um e-mail válido"
+    },
+    
     success: function(label){
       // set &nbsp; as text for IE
       label.html("&nbsp;").addClass("checked");
