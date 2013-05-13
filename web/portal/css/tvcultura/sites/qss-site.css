@@ -100,6 +100,6 @@ p#enviar { margin:0; }
 #menuFloat { *display:none; }
 #barra-site .topo-programa { *margin-left:32px; }
 .box-compartilhar { *margin-top:20px; }
-#destaque p  { width:100%; }
+#destaque p  { *width:100%; }
 /* IE*/
 
