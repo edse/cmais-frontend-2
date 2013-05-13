@@ -69,7 +69,7 @@
   <div class="container">
     <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
     <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-    <p>E-mail ou senha estão incorretos.</p>
+    <p id="login-alert-message"></p>
   </div>
 </div>
 <!--Login-->
@@ -302,7 +302,7 @@ $(document).ready(function(){
   
           }
           else{
-            $('#login-alert-error').fadeIn('slow');
+            $('#login-alert-error-login').fadeIn('slow');
             $('#login-alert-message').html(json.message);
           }
           console.log(json);
