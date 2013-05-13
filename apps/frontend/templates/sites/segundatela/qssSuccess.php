@@ -91,7 +91,7 @@
       </div>   
     </form>
     
-    <form action="" method="POST" id="form-esqueceu">
+    <form action="" method="POST" id="form-esqueceu" style="display:none;">
       <div class="span3">
         <label>Email</label> 
         <input type="email" name="email_esqueceu" id="email_esqueceu" />
