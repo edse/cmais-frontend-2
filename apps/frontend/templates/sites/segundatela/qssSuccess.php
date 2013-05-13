@@ -105,12 +105,15 @@
   </div>
 </div>
 <!--/login-->
+
 <div id="login-alert-error" class="alert alert-block alert-error hide">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-                <p id="login-alert-message"></p>
-                <p>Certifique-se de que você preencheu seu email e senha corretamente e tente novamente.</p>
-              </div>
+  <div class="container">
+    <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p id="login-alert-message"></p>
+    <p>Acesse a conta que foi criada com este e-mail, clicando no link "Esqueci minha senha", ou cadastre outro e-mail.</p>
+  </div>
+</div>
 <!--cadastro-->
 <div class="section-cadastro">
   <div class="container">
@@ -185,7 +188,7 @@
         }, 1000);
      //close
      $('.fechar').click(function(){
-       $(this).parent().parent().hide();
+       $(this).parent().hide();
      });
         
     //val avatar
@@ -240,8 +243,8 @@ $(document).ready(function(){
             });
           }
           else if(json.status == "taken"){
-            $('#alert-email-taken').fadeIn('slow');
-            $('#alert-message').html(json.message);
+            $('#login-alert-error').fadeIn('slow');
+            $('#login-alert-message').html(json.message);
             $('#signup_email').select();
           }
           else
@@ -275,6 +278,51 @@ $(document).ready(function(){
     }
   });
   
+   var validator = $('#form-login').validate({
+    submitHandler: function(form){
+     $.ajax({
+      url: "/segundatela-qss/site/sign-in/sign-in.php",
+      data: data,
+      type: "POST",
+      dataType: "json",
+      success:function(json){
+        //$('.alert').hide();
+        if(json.status == "success"){
+          self.location.href="../?token="+json.token;
+
+        }
+        else{
+          $('#login-alert-error').fadeIn('slow');
+          $('#login-alert-message').html(json.message);
+        }
+        console.log(json);
+      }
+    });        
+  
+    },
+    rules:{
+      signup_name:{
+        required: true
+      },
+      signup_email:{
+        required:true,
+        email:true
+      },
+      signup_password:{
+        required:true
+      },
+      signup_avatar:{
+        required:true
+      }
+    },
+    messages:{
+      signup_avatar:"Selecione um avatar."
+    },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
   
   function login(data){
     $.ajax({
@@ -283,7 +331,7 @@ $(document).ready(function(){
       type: "POST",
       dataType: "json",
       success:function(json){
-        $('.alert').hide();
+        //$('.alert').hide();
         if(json.status == "success"){
           self.location.href="../?token="+json.token;
 
@@ -296,43 +344,7 @@ $(document).ready(function(){
       }
     });
   }
-  //login
-  var validator = $('#form-login').validate({
-    submitHandler: function(form){
-     $.ajax({
-        type: "POST",
-        dataType: "text",
-        data: $("#form-login").serialize(),
-        beforeSend: function(){
-
-        },
-        success: function(data){
-          alert(data);
-          window.location.href="javascript:;";
-          if(data == "1"){
-
-          }
-          else {
-
-          }
-        }
-      });         
-  
-    },
-    rules:{
-      email_login:{
-        required: true,
-        email:true
-      },
-      senha_login:{
-        required:true
-      }
-    },
-    success: function(label){
-      // set &nbsp; as text for IE
-      label.html("&nbsp;").addClass("checked");
-    }
-  });
+ 
   
   //Recupera senha
   var validator = $('#form-esqueceu').validate({
