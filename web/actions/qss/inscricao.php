@@ -2,8 +2,8 @@
 if ($_REQUEST['enviar']) {
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
-      $to = "cristovamruizjr@gmail.com";
-      //$to = "inscricoesqss@tvcultura.com.br, cristovamruizjr@gmail.com";
+      //$to = "cristovamruizjr@gmail.com";
+      $to = "inscricoesqss@tvcultura.com.br, cristovamruizjr@gmail.com";
       ini_set('sendmail_from', $to);
       $email = strip_tags($_REQUEST['participanteEmail']);
       $name = strip_tags($_REQUEST['participanteNome']);

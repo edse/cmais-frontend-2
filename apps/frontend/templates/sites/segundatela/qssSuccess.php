@@ -112,14 +112,14 @@
       <h3>AINDA NÃO SOU CADASTRADO</h3>
     </div>
     <!-- esquerda -->
-    <form action="" method="POST" id="form-cadastro">
+    <form action="" method="POST" id="signup-form">
       <div class="span3">
         <label>Nome/Apelido</label> 
-        <input type="text" name="nome_cadastro" id="nome_cadastro" />
+        <input type="text" name="signup_name" id="signup_name" />
         <label>E-mail</label> 
-        <input type="text" name="email_cadastro" id="email_cadastro" />
+        <input type="text" name="signup_email" id="signup_email" />
         <label>Senha</label> 
-        <input type="text" name="senha_cadastro" id="senha_cadastro" />  
+        <input type="password" name="signup_password" id="signup_password" />  
       </div>
       <div class="span4">
       <label>Escolha seu avatar:</label>
@@ -156,7 +156,7 @@
           </li>
         </ul>
         
-        <input id="id_avatar" type="hidden" name="avatar" value="">
+        <input id="signup_avatar" type="hidden" name="signup_avatar" value="">
         
       </div>
       <div class="span4">
@@ -166,16 +166,7 @@
    <!-- /esquerda -->
   </div>
 </div>
-<!--cadastro-->
-<!--audio id="audio-ping">
-  <source src="/portal/audio/ping.mp3" />
-  <source src="/portal/audio/ping.ogg" />
-</audio-->
-<!--script type="text/javascript" src="/portal/js/json2.js"></script-->
-<!--script type="text/javascript" src="/portal/js/segundatela/secondscreencartaoverde/app.js?nocache=<?php echo time()?>"></script-->
-<!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script-->    
-<!--script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script-->
-<!--script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script-->
+
 <script>
   $(document).ready(function() {
     setInterval( function() {
@@ -214,6 +205,63 @@
 <script>
 $(document).ready(function(){
   
+  //lcadastro
+  var validator = $('#signup-form').validate({
+    submitHandler: function(form){
+     $.ajax({
+        url: "/segundatela-qss/site/sign-in/sign-up.php",
+        data: {
+          name: $('#signup_name').val(),
+          email: $('#signup_email').val(),
+          password: $('#signup_password').val(),
+          avatar: $('#signup_avatar').val(),
+          app: "secondscreenqss"
+        },
+        type: "POST",
+        dataType: "json",
+        success:function(json){
+          //$('.alert').hide();
+          if(json.status == "success"){
+            //$('#alert-success').fadeIn('slow');
+            login({
+              email: $('#signup_email').val(),
+              password: $('#signup_password').val(),
+              app: "secondscreenqss"
+            });
+          }
+          else if(json.status == "taken"){
+            $('#alert-email-taken').fadeIn('slow');
+            $('#alert-message').html(json.message);
+            $('#signup_email').select();
+          }
+          else
+            $('#alert-error').fadeIn('slow');
+          console.log(json);
+        }
+      });        
+  
+    },
+    rules:{
+      signup_name:{
+        required: true
+      },
+      signup_email:{
+        required:true,
+        email:true
+      },
+      signup_password:{
+        required:true
+      }
+    },
+    messages:{
+      signup_avatar:"Selecione um avatar."
+    },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+  
   //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
@@ -244,10 +292,7 @@ $(document).ready(function(){
       },
       senha_login:{
         required:true
-      },
-      manter_conectado:{
-        required:true
-      },
+      }
     },
     success: function(label){
       // set &nbsp; as text for IE

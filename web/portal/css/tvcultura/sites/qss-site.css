@@ -90,4 +90,17 @@ p#enviar { margin:0; }
 #msgSuccess { float:left; margin-bottom:20px; }
 #msgSuccess p { margin-bottom:0; }
 #msgSuccess .bg { background:#ff6633; padding:5px; width:628px; float:left; margin-top:10px; }
+.contato form .txt-10 span,
+.contato form .txt-10 { font-size:10px !important; color:#fff !important; text-transform:uppercase; }
+
+.box-padrao p { width:100%; }
+#esquerda h4 { text-align:left; }
+
+/* IE*/
+#conteudo-pagina { *background:#67170a; }
+#menuFloat { *display:none; }
+#barra-site .topo-programa { *margin-left:32px; }
+.box-compartilhar { *margin-top:20px; }
+#destaque p  { *width:100%; }
+/* IE*/
 
