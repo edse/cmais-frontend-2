@@ -112,14 +112,14 @@
       <h3>AINDA NÃO SOU CADASTRADO</h3>
     </div>
     <!-- esquerda -->
-    <form action="" method="POST" id="signup-form-btn">
+    <form action="" method="POST" id="signup-form">
       <div class="span3">
         <label>Nome/Apelido</label> 
         <input type="text" name="signup_name" id="signup_name" />
         <label>E-mail</label> 
         <input type="text" name="signup_email" id="signup_email" />
         <label>Senha</label> 
-        <input type="text" name="signup_password" id="signup_password" />  
+        <input type="password" name="signup_password" id="signup_password" />  
       </div>
       <div class="span4">
       <label>Escolha seu avatar:</label>
@@ -156,7 +156,7 @@
           </li>
         </ul>
         
-        <input id="id_avatar" type="hidden" name="signup_avatar" value="">
+        <input id="signup_avatar" type="hidden" name="signup_avatar" value="">
         
       </div>
       <div class="span4">
@@ -215,7 +215,7 @@
 $(document).ready(function(){
   
   //lcadastro
-  var validator = $('#signup-form-btn').validate({
+  var validator = $('#signup-form').validate({
     submitHandler: function(form){
      $.ajax({
     url: "/segundatela-qss/site/sign-in/sign-up.php",
@@ -264,6 +264,9 @@ $(document).ready(function(){
       signup_avatar:{
         required:true
       }
+    },
+    messages:{
+      signup_avatar:"Selecione um avatar."
     },
     success: function(label){
       // set &nbsp; as text for IE
