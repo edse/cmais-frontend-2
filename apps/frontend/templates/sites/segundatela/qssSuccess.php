@@ -65,7 +65,13 @@
   </div>
 </div>
 <!--/header-->
-
+<div id="login-alert-error-login" class="alert alert-block alert-error hide">
+  <div class="container">
+    <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p>E-mail ou senha estão incorretos.</p>
+  </div>
+</div>
 <!--Login-->
 <div class="section-login">
   <div class="container">
