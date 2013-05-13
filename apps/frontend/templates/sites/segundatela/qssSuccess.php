@@ -244,10 +244,7 @@ $(document).ready(function(){
       },
       senha_login:{
         required:true
-      },
-      manter_conectado:{
-        required:true
-      },
+      }
     },
     success: function(label){
       // set &nbsp; as text for IE
