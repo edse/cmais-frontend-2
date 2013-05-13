@@ -75,14 +75,14 @@
     <form action="" method="POST" id="form-login">
       <div class="span3">
         <label>Email</label> 
-        <input type="email" name="login_email" id="signup_email" />
+        <input type="email" name="login_email" id="login_email" />
         <label class="checkbox" for="manter_conectado" id="conectado">
           <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
         </label>
       </div>
       <div class="span3">
         <label>Senha</label> 
-        <input type="password" name="login_password" id="signup_password" />
+        <input type="password" name="login_password" id="login_password" />
         <a href="#" class="esqueci" >Esqueci minha senha</a>
       </div>
       <div class="span3">
