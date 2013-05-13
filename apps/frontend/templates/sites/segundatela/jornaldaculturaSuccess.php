@@ -19,7 +19,7 @@
     <div class="bgtopo"></div>
     <div class="col-esq">
       <h1>Jornal da Cultura</h1>
-      <p>Mais que um jornal, uma tradução das notícias.</br>Segunda a sábado, às 21:00</p>
+      <p>Mais que um jornal, uma tradução das notícias.</br>Segunda a sábado, às 21h</p>
       <div class="redes">
         <div class="gplus">
           <g:plusone size="medium" count="false"></g:plusone>
