@@ -106,11 +106,11 @@
 </div>
 <!--/login-->
 <div id="login-alert-error" class="alert alert-block alert-error hide">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-                <p id="login-alert-message"></p>
-                <p>Certifique-se de que você preencheu seu email e senha corretamente e tente novamente.</p>
-              </div>
+  <button type="button" class="close fechar" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+  <p id="login-alert-message"></p>
+  <p>Acesse a conta que foi criada com este e-mail, clicando no link "Esqueci minha senha", ou cadastre outro e-mail.</p>
+</div>
 <!--cadastro-->
 <div class="section-cadastro">
   <div class="container">
@@ -185,7 +185,7 @@
         }, 1000);
      //close
      $('.fechar').click(function(){
-       $(this).parent().parent().hide();
+       $(this).parent().hide();
      });
         
     //val avatar
@@ -240,7 +240,7 @@ $(document).ready(function(){
             });
           }
           else if(json.status == "taken"){
-            $('#alert-email-taken').fadeIn('slow');
+            $('#login-alert-message').fadeIn('slow');
             $('#alert-message').html(json.message);
             $('#signup_email').select();
           }
