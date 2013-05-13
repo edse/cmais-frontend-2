@@ -70,7 +70,7 @@ h1,
 
 #barra-site .topo-programa { background: url(/portal/images/capaPrograma/qss/bg-topo-qss.jpg) no-repeat; height:173px; width:990px; }
 #capa-site { margin-top: -102px !important; }
-.box-topo {    margin:-53px 0 0 52px;}
+.box-topo {    margin:-45px 0 0 52px;}
 #barra-site h2 { margin:40px 0 0 20px }
 
 #barra-site #horario { width:auto; margin-right:20px; }
@@ -82,3 +82,4 @@ h1,
 .uma-coluna .titulos, 
 .uma-coluna p, 
 .novoNoAr .noAr-box .chapeu { color:#333 !important; }
+.box-topo .navegacao { margin-bottom:0; }
