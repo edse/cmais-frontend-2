@@ -93,3 +93,8 @@ p#enviar { margin:0; }
 .contato form .txt-10 span,
 .contato form .txt-10 { font-size:10px !important; color:#fff !important; text-transform:uppercase; }
 
+/* IE*/
+#conteudo-pagina { *background:#67170a; }
+#menuFloat { *display: none; }
+/* IE*/
+
