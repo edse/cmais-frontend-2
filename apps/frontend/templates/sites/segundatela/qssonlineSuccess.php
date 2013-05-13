@@ -523,8 +523,8 @@
      
     });
 </script>
-<script src="/portal/js/segundarela/secondscreenqss/json2.js"></script>
-<script src="/portal/js/segundarela/secondscreenqss/app.js"></script>
+<script src="/portal/js/segundatela/secondscreenqss/json2.js"></script>
+<script src="/portal/js/segundatela/secondscreenqss/app.js"></script>
 
 <audio id="audio-ping">
   <source src="/portal/audio/ping.mp3" />
