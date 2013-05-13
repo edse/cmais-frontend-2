@@ -3,6 +3,10 @@
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
 
 <style type="text/css">
+  #esquerda h3 { text-align:left; color:#fff; }
+</style>
+
+<style type="text/css">
   #esquerda .titulos { display: none; }
 </style>
 <?php use_helper('I18N', 'Date')?>
