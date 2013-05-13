@@ -125,6 +125,11 @@
         <!-- DIREITA -->
         
         <div id="direita" class="grid1">
+          
+          <a class="twitter-timeline" href="https://twitter.com/search?q=%23QSS" data-widget-id="334007660250800128">Tweets about "#QSS"</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
           <?php if(isset($displays['chat'])):?> 
           <?php if(count($displays['chat']) > 0): ?>
           <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
