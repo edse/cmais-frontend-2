@@ -268,7 +268,7 @@ $(function(){
           type: "POST",
           dataType: "text",
           data: $("#form-contato").serialize(),
-          url: "http://cmais.com.br/actions/qss/inscricao.php",
+          url: "/actions/qss/inscricao.php",
           beforeSend: function(){
             $('input#enviar').attr('disabled','disabled');
             $("#msgSuccess").hide();
