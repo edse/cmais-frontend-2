@@ -159,6 +159,9 @@
         <input id="signup_avatar" type="hidden" name="signup_avatar" value="">
         
       </div>
+      <label class="checkbox">
+        <input type="checkbox"> Concordo com os <a href="http://cmais.com.br/qss" target="_blank">termos</a> do jogo
+      </label>
       <div class="span4">
         <input type="submit" class="cadastrar" value="CADASTRAR">
       </div>
@@ -250,6 +253,9 @@ $(document).ready(function(){
         email:true
       },
       signup_password:{
+        required:true
+      },
+      signup_avatar:{
         required:true
       }
     },
