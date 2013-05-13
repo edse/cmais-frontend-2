@@ -25,24 +25,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           $message .= ucwords($field) . ": " . strip_tags($value) . "<br>";
       }
       
-      $attach = array();
+
+
       for($i=1; $i <= $qtdeIntegrantes; $i++) {
         $file_name[$i] = basename($_FILES['datafile'.$i]['name']);
+		$file_name[$i] = basename($_FILES['datafile'.$i]['name']);
         $data[$i] = file_get_contents($_FILES['datafile'.$i]['tmp_name']); 
         $file_contents[$i] = chunk_split(base64_encode($data[$i]));
         $file_size[$i] = $_FILES['datafile'.$i]['size'];
         $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
-        $attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+
+	  $file_name9 = basename($_FILES['datafile9']['name']);      
+      $data9 = file_get_contents($_FILES['datafile9']['tmp_name']);       
+      $file_contents9 = chunk_split(base64_encode($data9));
+      $file_size9 = $_FILES['datafile9']['size'];
+      $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
+      $attach = array();
+	  $attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+      $attach[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
       
 	  }
-	  $attach1 = array();
-	  	$file_name9 = basename($_FILES['datafile9']['name']);
-        $data9 = file_get_contents($_FILES['datafile9']['tmp_name']); 
-        $file_contents9 = chunk_split(base64_encode($data9));
-        $file_size9 = $_FILES['datafile9']['size'];
-        $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
-        $attach1[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
-	  
+
+ 	  
+	  	  
       if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
         
         if (deleteAllFiles('datafile',$qtdeIntegrantes)) {
@@ -58,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       else {
         
-        if(sendMailAtt($to, $from, $subject, $message, $attach, $attach1)) {
+        if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (deleteAllFiles('datafile',$qtdeIntegrantes)) {
             header("Location: http://tvcultura.cmais.com.br/preestreia/conjunto-2013?success=1");
             die();
