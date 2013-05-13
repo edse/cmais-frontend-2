@@ -75,14 +75,14 @@
     <form action="" method="POST" id="form-login">
       <div class="span3">
         <label>Email</label> 
-        <input type="email" name="signup_email" id="signup_email" />
+        <input type="email" name="login_email" id="signup_email" />
         <label class="checkbox" for="manter_conectado" id="conectado">
           <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
         </label>
       </div>
       <div class="span3">
         <label>Senha</label> 
-        <input type="password" name="signup_password" id="signup_password" />
+        <input type="password" name="login_password" id="signup_password" />
         <a href="#" class="esqueci" >Esqueci minha senha</a>
       </div>
       <div class="span3">
@@ -282,7 +282,11 @@ $(document).ready(function(){
     submitHandler: function(form){
        $.ajax({
         url: "/segundatela-qss/site/sign-in/sign-in.php",
-        //data: data,
+        data: {
+          email: $('#login_email').val(),
+          password: $('#login_password').val(),
+          app: "secondscreenqss"
+        },
         type: "POST",
         dataType: "json",
         success:function(json){
@@ -301,11 +305,11 @@ $(document).ready(function(){
   
     },
     rules:{
-      signup_email:{
+      login_email:{
         required:true,
         email:true
       },
-      signup_password:{
+      login_password:{
         required:true
       }
     },
