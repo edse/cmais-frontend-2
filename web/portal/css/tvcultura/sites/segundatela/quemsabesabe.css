@@ -18,7 +18,7 @@
 .section-cadastro input[type="text"]{width:100%;}
 .section-login .esqueci{color: red;text-decoration: underline;}
 .section-login .logar{color: #fff;padding: 3px;background: #000; font-family:'source_sans_proregular'; border: 0;width: 65px;}
-.section-login .voltar{padding: 4px;border-radius: 3px;}
+.section-login .voltar{padding: 4px 8px;border-radius: 3px;}
 .section-login input[type="checkbox"]{width: 30px;}
 
 .section-cadastro ul{margin:0;}
