@@ -105,15 +105,13 @@ $(function(){
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
 
-                <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
-                <p><?php echo $section->getDescription()?></p>
+               
                 
                 <div id="msgSuccess" style="display:none">
-                  <p><strong>Inscrição enviada com sucesso!</strong></p>
+                  <p>Inscrição realizada com sucesso!</p>
                   <p>&nbsp;</p>
-                  <p>Atenção:</p>
-                  <p>No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
-                  <p>No caso de impossibilidade da participação do amigo, a produção do programa deverá ser avisada.</p>
+                  <p class="bg">Atenção:No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
+                  <p class="bg">No caso de impossibilidade da participação do amigo, a produção do programa deverá ser avisada.</p>
                 </div>
                 <div id="msgError" style="display:none">
                   <p><strong>Não foi possível enviar a inscrição.</strong></p>
@@ -121,6 +119,8 @@ $(function(){
                 </div>
 
                 <form id="form-contato" method="post" action="/actions/qss/inscricao.php">
+                   <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
+                <p><?php echo $section->getDescription()?></p>
       <fieldset>
         <legend><h1>Participante</h1></legend>
         <p>Preencha os seus dados:</p>
