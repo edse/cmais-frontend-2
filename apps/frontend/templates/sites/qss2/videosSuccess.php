@@ -108,6 +108,10 @@ $(function(){
                       <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
                     </li>
                     <?php endforeach; ?>
+                  <?php else: ?>
+                    <li>
+                      Nenhum resultado encontrado para a sua busca!
+                    </li>
                   <?php endif; ?>
                   </ul>
                 </div>
