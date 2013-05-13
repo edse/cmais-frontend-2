@@ -105,8 +105,9 @@
   </div>
 </div>
 <!--/login-->
-<div class="container">
-  <div id="login-alert-error" class="alert alert-block alert-error hide">
+
+<div id="login-alert-error" class="alert alert-block alert-error hide">
+  <div class="container">
     <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
     <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
     <p id="login-alert-message"></p>
@@ -242,7 +243,7 @@ $(document).ready(function(){
             });
           }
           else if(json.status == "taken"){
-            $('#login-alert-error').fadeIn('slow');
+            $('#login-alert-message').fadeIn('slow');
             $('#alert-message').html(json.message);
             $('#signup_email').select();
           }
