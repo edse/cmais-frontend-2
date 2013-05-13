@@ -78,9 +78,6 @@
       <div class="span8">
         <h2>SEGUNDA TELA</h2>
         
-          
-          <!--h2>PERGUNTAS PASSADAS</h2-->
-          
         <!--perguntas-->
         <div class="accordion" id="accordion2">
           
@@ -97,7 +94,65 @@
               <span class="cantoneira cant-perg-dir-inf"></span>
               
               
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#seis">
+              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="javascript:;">
+                <p>Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme?</p>
+
+              </a>
+
+            </div>
+            <!--resposta-->
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="accordion-inner">
+                <ul>
+                  <li>
+                    <span class="cantoneira-b cant-item-esq letra">A</span>
+                    <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
+                    <span class="cantoneira-b cant-item-dir"></span>
+                  </li>
+                  <li>
+                    <span class="cantoneira-b cant-item-esq letra">B</span>
+                    <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre</p> </a>
+                    <span class="cantoneira-b cant-item-dir"></span>
+                  </li>
+                  <li class="correct">
+                    <span class="cantoneira-b cant-item-esq letra">C</span>
+                    <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
+                    <span class="cantoneira-b cant-item-dir"></span>
+                  </li>
+                  <li>
+                    <span class="cantoneira-b cant-item-esq letra">D</span>
+                    <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
+                    <span class="cantoneira-b cant-item-dir"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--resposta-->
+            
+          </div>
+          <!--/pergunta chamada-->
+        </div>
+        <!--/perguntas-->  
+          
+          <!--h2>PERGUNTAS PASSADAS</h2-->
+          
+        <!--perguntas-->
+        <div class="accordion" id="accordion3">
+          
+          <!--pergunta chamada-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <span class="cantoneira cant-perg-esq-sup"></span>
+              <span class="cantoneira cant-perg-dir-sup"></span>
+              
+              <span class="cantoneira-esq-meio cant-perg-esq-meio"></span>
+              <span class="cantoneira-dir-meio cant-perg-dir-meio"></span>
+              
+              <span class="cantoneira cant-perg-esq-inf"></span>
+              <span class="cantoneira cant-perg-dir-inf"></span>
+              
+              
+              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion3" href="#seis">
                 <p>Steven Spielberg conquistou seu primeiro Oscar?</p>
 
               </a>
@@ -150,7 +205,7 @@
               <span class="cantoneira cant-perg-dir-inf"></span>
               
               
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#sete">
+              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion3" href="#sete">
                 <p>Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme?</p>
 
               </a>
@@ -200,7 +255,7 @@
               <span class="cantoneira cant-perg-dir-inf"></span>
               
               
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#oito">
+              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion3" href="#oito">
                 <p>Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme?</p>
 
               </a>
