@@ -34,7 +34,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
         $attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
       }
-      
+       $file_name[9] = basename($_FILES['datafile9']['name']);
+        $data[$i] = file_get_contents($_FILES['datafile9']['tmp_name']); 
+        $file_contents[9] = chunk_split(base64_encode($data[9]));
+        $file_size[9] = $_FILES['datafile9']['size'];
+        $file_mime_type[9] = getMimeType($_FILES['datafile9']['name']);
+        $attach[9] = array($_FILES['datafile9']['tmp_name'], $file_mime_type[9]);
       
       if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
         
