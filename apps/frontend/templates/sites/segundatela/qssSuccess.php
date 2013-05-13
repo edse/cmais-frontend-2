@@ -75,19 +75,31 @@
     <form action="" method="POST" id="form-login">
       <div class="span3">
         <label>Email</label> 
-        <input type="text" name="email_login" id="email_login" />
+        <input type="email" name="email_login" id="email_login" />
         <label class="checkbox" for="manter_conectado" id="conectado">
-          <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span>Mantenha-me conectado</span>
+          <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
         </label>
       </div>
       <div class="span3">
         <label>Senha</label> 
-        <input type="text" name="senha_login" id="senha_login" />
+        <input type="password" name="senha_login" id="senha_login" />
         <a href="#" class="esqueci" >Esqueci minha senha</a>
       </div>
       <div class="span3">
         <label style="margin-bottom: 8px;">&nbsp;</label>
         <input id="enviar" type="submit" class="logar" value="ENTRAR">
+      </div>   
+    </form>
+    
+    <form action="" method="POST" id="form-esqueceu" style="display:none;">
+      <div class="span3">
+        <label>Email</label> 
+        <input type="email" name="email_esqueceu" id="email_esqueceu" />
+      </div>
+      <div class="span3">
+        <label style="margin-bottom: 8px;">&nbsp;</label>
+        <input id="recuperar" type="submit" class="logar" value="ENVIAR">
+        <a href="javascript:;" type="submit" class="voltar logar">VOLTAR</a>
       </div>   
     </form>
   </div>
@@ -182,13 +194,27 @@
       
       var avatar = $(this).attr('data-source');
       $('#id_avatar').attr('value', avatar);
-      });
     });
+    
+    $('.esqueci').click(function(){
+      $('#form-login').hide();
+      $('#form-esqueceu').fadeIn('fast');
+    }); 
+    
+    $('.voltar').click(function(){
+      $('#form-esqueceu').hide();
+      $('#form-login').fadeIn('fast');
+    });  
+       
+      
+ });
  </script>
  <!--SCRIPT-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
+  
+  //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
      $.ajax({
@@ -223,6 +249,45 @@ $(document).ready(function(){
         required:true
       },
     },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+  
+  //Recupera senha
+  var validator = $('#form-esqueceu').validate({
+    submitHandler: function(form){
+     $.ajax({
+        type: "POST",
+        dataType: "text",
+        data: $("#form-esqueceu").serialize(),
+        beforeSend: function(){
+
+        },
+        success: function(data){
+          alert(data);
+          window.location.href="javascript:;";
+          if(data == "1"){
+
+          }
+          else {
+
+          }
+        }
+      });         
+  
+    },
+    rules:{
+      email_esqueceu:{
+        required: true,
+        email:true
+      }
+    },
+    messages:{
+      email_esqueceu:"Insira um e-mail válido"
+    },
+    
     success: function(label){
       // set &nbsp; as text for IE
       label.html("&nbsp;").addClass("checked");
