@@ -99,6 +99,7 @@
       <div class="span3">
         <label style="margin-bottom: 8px;">&nbsp;</label>
         <input id="recuperar" type="submit" class="logar" value="ENVIAR">
+        <a href="javascript:;" type="submit" class="voltar logar">VOLTAR</a>
       </div>   
     </form>
   </div>
@@ -198,9 +199,15 @@
     $('.esqueci').click(function(){
       $('#form-login').hide();
       $('#form-esqueceu').fadeIn('fast');
-    })  
+    }); 
+    
+    $('.voltar').click(function(){
+      $('#form-esqueceu').hide();
+      $('#form-login').fadeIn('fast');
+    });  
+       
       
-    });
+ });
  </script>
  <!--SCRIPT-->
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
