@@ -79,6 +79,22 @@
         </a>
       </div>
       <!-- /item-->
+      <!--item -->
+      <div class="span3 item jornal" style="display:none">
+        <a href="http://cmais.com.br/segundatela/qss">
+          <div class="logo-programa">
+            <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
+          </div>
+          <div class="live-image">
+           <img src="http://midia.cmais.com.br/programs/ab852a1d4260b94f0c055eb2957f512205aa3c26.jpg" alt="Quem sabe, sabe!">
+          </div>
+          <p>
+            Um game show de conhecimento,<br> estratégia e sorte<br>
+            Segunda a sexta, às 19h20
+          </p>
+        </a>
+      </div>
+      <!--item -->
       <!--item>
       <div class="span3 item">
         <a href="#">
@@ -95,7 +111,7 @@
           </p>
         </a>
       </div>
-      <!item -->
+      <!--item -->
       
     </div>  
     <!--corpo-->
