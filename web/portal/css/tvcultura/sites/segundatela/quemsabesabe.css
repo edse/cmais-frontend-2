@@ -15,7 +15,8 @@
 .section-login h3, .section-cadastro h3{font-family:'source_sans_proregular';color:#666;}
 .section-cadastro h3{color:red;}
 .section-login input,
-.section-cadastro input[type="text"]{width:100%;}
+.section-cadastro input[type="text"],
+.section-cadastro input[type="password"]{width:100%;}
 .section-login .esqueci{color: red;text-decoration: underline;}
 .section-login .logar{color: #fff;padding: 3px;background: #000; font-family:'source_sans_proregular'; border: 0;width: 65px;}
 .section-login .voltar{padding: 4px 8px;border-radius: 3px;}
@@ -149,7 +150,8 @@
   .section-cadastro .span4{padding-left:13%;}
   .section-cadastro .span4 ul{width:80%;}
   .section-login input,
-  .section-cadastro input[type="text"]{width:88%;}
+  .section-cadastro input[type="text"],
+  .section-cadastro input[type="password"]{width:88%;}
   .section-cadastro .cadastrar{clear:both; float:left;margin-bottom:10%;}
 }
 
@@ -173,7 +175,8 @@
  .section-cadastro .span3{padding-left:8%;}
  .section-cadastro .span4{padding-left:8%;}
  .section-login input,
- .section-cadastro input[type="text"]{width:82%;}
+ .section-cadastro input[type="text"],
+ .section-cadastro input[type="password"]{width:82%;}
  .section-cadastro .cadastrar{clear:both; float:left;margin-bottom:10%;}
  
 }

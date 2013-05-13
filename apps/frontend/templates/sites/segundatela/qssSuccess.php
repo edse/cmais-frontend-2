@@ -166,16 +166,7 @@
    <!-- /esquerda -->
   </div>
 </div>
-<!--cadastro-->
-<!--audio id="audio-ping">
-  <source src="/portal/audio/ping.mp3" />
-  <source src="/portal/audio/ping.ogg" />
-</audio-->
-<!--script type="text/javascript" src="/portal/js/json2.js"></script-->
-<!--script type="text/javascript" src="/portal/js/segundatela/secondscreencartaoverde/app.js?nocache=<?php echo time()?>"></script-->
-<!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script-->    
-<!--script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script-->
-<!--script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script-->
+
 <script>
   $(document).ready(function() {
     setInterval( function() {
@@ -231,7 +222,7 @@ $(document).ready(function(){
     success:function(json){
       $('.alert').hide();
       if(json.status == "success"){
-        $('#alert-success').fadeIn('slow');
+        //$('#alert-success').fadeIn('slow');
         login({
           email: $('#signup_email').val(),
           password: $('#signup_password').val(),
