@@ -105,6 +105,13 @@
   </div>
 </div>
 <!--/login-->
+<div id="alert-email-taken" class="alert alert-block alert-error hide">
+  <div class="container">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p id="alert-message"></p>
+  </div>
+</div>
 <!--cadastro-->
 <div class="section-cadastro">
   <div class="container">
@@ -177,6 +184,10 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
         }, 1000);
+     //close
+     $('.close').click(function(){
+       $(this).parent().parent().hide();
+     });
         
     //val avatar
     $('.avatar').click(function(){
@@ -265,6 +276,27 @@ $(document).ready(function(){
     }
   });
   
+  
+  function login(data){
+    $.ajax({
+      url: "/segundatela-qss/site/sign-in/sign-in.php",
+      data: data,
+      type: "POST",
+      dataType: "json",
+      success:function(json){
+        $('.alert').hide();
+        if(json.status == "success"){
+          self.location.href="../?token="+json.token;
+
+        }
+        else{
+          $('#login-alert-error').fadeIn('slow');
+          $('#login-alert-message').html(json.message);
+        }
+        console.log(json);
+      }
+    });
+  }
   //login
   var validator = $('#form-login').validate({
     submitHandler: function(form){
