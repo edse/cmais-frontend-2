@@ -1,15 +1,181 @@
-/* cartaoverde*/
+@import url("geral.css");
+/* quem sabe sabe */
 
-body { background:#fff url(/portal/images/capaPrograma/segundatela/cartaoverde/pattern.jpg) repeat-x; color:#000; }
-.hero-unit .bgtopo { width: 104px; height:200px; background:url(/portal/images/capaPrograma/segundatela/cartaoverde/bola.jpg) no-repeat; float:left; margin-right:10px; }
-.hero-unit .col-esq h1 {  background:url(/portal/images/capaPrograma/segundatela/cartaoverde/logocv.png) no-repeat; width: 200px; height:76px;}
+.hero-unit {background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg_topo_qss.jpg) no-repeat; text-align:left;}
+.hero-unit .bgtopo { width: 240px; height:200px; background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/apresentadores_qss.png) no-repeat; float:left; margin-right:10px; }
+.hero-unit .col-esq {margin-left: 2%;max-width: 38%;}
+.hero-unit .col-esq h1 {  background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/logo_qss.png) no-repeat; width: 200px; height:82px; margin: 10% 0 0 0;}
+.hero-unit .col-esq p {margin: 4px 0 3px 0; color:#FFF;}
+.hero-unit .col-dir {width: 37%;}
 
-/* Smartphones (portrait and landscape) ----------- */
-/*
-@media (max-width : 480px)  {
-  .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
+.section-header{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-qss.jpg) repeat center;}
+
+.section-login{background:#eeeeee;}
+.section-login .container{padding-bottom:20px;}
+.section-login h3, .section-cadastro h3{font-family:'source_sans_proregular';color:#666;}
+.section-cadastro h3{color:red;}
+.section-login input,
+.section-cadastro input[type="text"]{width:100%;}
+.section-login .esqueci{color: red;text-decoration: underline;}
+.section-login .logar{color: #fff;padding: 3px;background: #000; font-family:'source_sans_proregular'; border: 0;width: 65px;}
+.section-login .voltar{padding:5px}
+.section-login input[type="checkbox"]{width: 30px;}
+
+.section-cadastro ul{margin:0;}
+.section-cadastro ul li{list-style: none; margin:0 0 10px 10px; float: left;}
+.section-cadastro .cadastrar{color: #fff;padding: 3px;background: #000; font-family:'source_sans_proregular'; margin-left: 14px;border: 0;width: 90px;float:right;margin-right: 40px;}
+
+.section-login .logar:hover,
+.section-cadastro .cadastrar{text-decoration:none;}
+.redes .fb {margin: 0px 10px 0 10px;}/*linha 54 geral.css */
+
+.navbar{position:absolute; top:1000px; display:none;}
+#footer{margin-top:100px;}
+
+.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat; width:56px; height:56px;display: block;float:left}
+.av1{background-position:-8px -5px!important;}
+.av2{background-position:-70px -5px!important;}
+.av3{background-position:-132px -5px!important;}
+.av4{background-position:-193px -5px!important;}
+.av5{background-position:-254px -5px!important;}
+.av6{background-position:-8px -74px!important;}
+.av7{background-position:-70px -74px!important;}
+.av8{background-position:-132px -74px!important;}
+.av9{background-position:-194px -74px!important;}
+.av10{background-position:-256px -74px!important;}
+
+.av1.selected{background-position:-9px -139px!important;}
+.av2.selected{background-position:-71px -139px!important;}
+.av3.selected{background-position:-133px -139px!important;}
+.av4.selected{background-position:-194px -139px!important;}
+.av5.selected{background-position:-255px -139px!important;}
+.av6.selected{background-position:-9px -208px!important;}
+.av7.selected{background-position:-71px -208px!important;}
+.av8.selected{background-position:-133px -208px!important;}
+.av9.selected{background-position:-195px -208px!important;}
+.av10.selected{background-position:-257px -208px!important;}
+
+.section-login label.checkbox{position:relative;}
+.section-login #manter_conectado{position: absolute;top: 0;}
+.section-login .txt_manterconectado{position: absolute;top: 0px;}
+.section-login label.checkbox .error{position:absolute;top:10px;}
+.section-login .error{font-size: 12px; color: red; margin-top: -5px; margin-bottom:5%;}
+
+.section-body .colocacao{min-width: 60px;height: 65px;display: block;background: #eeeeee;float: left;font-family: 'source_sans_probold';color: #cc0000;text-align: center;line-height: 65px;padding: 0 10px;font-size: 3em;}
+.section-body .user{color:#fff; background:#b30003;}
+.section-body .nome_colocacao{padding-top: 11px; display: block; text-overflow:ellipsis; overflow: hidden;}
+.section-body .eurekas{text-overflow:ellipsis; overflow: hidden; font-weight:bold;}
+
+.section-body ul{margin:0;}
+.section-body .tab-content ul li{list-style: none;height: 66px; border-bottom:1px solid #eeeeee;}
+.section-body .avatar{margin: 5px;}
+
+.section-body .nav-tabs{border:none;background-color:#6c0206; margin-bottom:10px;}
+.section-body .nav-tabs > li{border:none}
+.section-body .nav-tabs > li > a {height:33px;line-height: 36px;background-color:#6c0206;}
+.section-body .nav-tabs > .active > a,
+.section-body .nav-tabs > li > a:hover {background-color:#d48520;}
+
+.section-body .accordion-toggle{ border:2px solid #fff;position:relative; z-index:10;margin:0 auto;min-height:68px;background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-boxpergunta.jpg)!important;}
+.section-body .accordion-body{ background:none!important;margin-bottom:20px;}
+.section-body .accordion-inner{background:none!important;}
+.accordion-inner ul {padding: 0px 18px}
+.accordion-inner ul li{ height: 33px; background: #6c0205; list-style: none; margin-bottom: 5px;}
+.section-body .resposta{width: 90%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
+.section-body .resposta p{overflow: hidden; text-overflow: ellipsis; margin:0;height:20px; }
+.section-body .correct{background:#2db91f!important;}
+.section-body .selected{background:#d48520;}
+
+.section-body .accordion-heading{position:relative;border:none}
+.section-body .accordion-heading p{padding:8px 23px;margin:0;}
+
+.section-body .letra{text-align: center;line-height: 32px;color: #fbdc01;font-weight: bold;font-size: 18px;}
+.section-body .cantoneira{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras_b.png) no-repeat; display:block; float:left;width:39px; height:38px;}
+.section-body .cantoneira-b{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras.png) no-repeat; display:block; float:left;}
+.section-body .cantoneira-esq-meio{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 8px; display:block; float:left;}
+.section-body .cantoneira-dir-meio{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 2px; display:block; float:left;}
+.section-body .accordion-heading{position:relative}
+.section-body .cant-perg-esq{width:34px; height:64px;background-position: 3px top; position: absolute; z-index:20;top:0; left:0} 
+.section-body .cant-perg-dir{width:34px; height:64px;background-position: -36px top;  position: absolute; z-index:20;top:0; right:0}
+.section-body .cant-item-esq{width:25px; height:33px;background-position: -7px bottom; background-color:#FFF;}
+.section-body .cant-item-dir{width:11px;height:33px;background-position: -36px bottom; background-color:#FFF; float: right;}
+
+.section-body .cant-perg-esq-sup{position:absolute; top:-1px; left:-1px; background-position:top left;z-index: 30;}
+.section-body .cant-perg-dir-sup{position:absolute; top:-1px; right:-1px; background-position:top right;z-index: 30;}
+.section-body .cant-perg-esq-meio{position:absolute; top:0; left:-1px;z-index: 20;height:100%;width:23px;}
+.section-body .cant-perg-dir-meio{position:absolute; top:0; right:-1px;z-index: 20;height:100%;width:23px;}
+.section-body .cant-perg-esq-inf{position:absolute; bottom:0; left:-1px; background-position:bottom left;z-index: 30;}
+.section-body .cant-perg-dir-inf{position:absolute; bottom:0; right:-1px; background-position:bottom right;z-index: 30;}
+
+/* tablet to landscape */
+@media (min-width: 768px) and (max-width: 979px) {
+   #footer{display:none;}
+  .hero-unit .bgtopo{display:block;margin:0}
+  .hero-unit .col-dir{width:20%}
+  .hero-unit .col-dir #box-clock{margin:16% 0 0 0;}
+  .hero-unit .col-dir .barra{display:none!important;}
+  .hero-unit .col-esq {margin-left: 0;max-width: 35%;}
+  .hero-unit .col-esq h1{margin-left:14%;}
+  .hero-unit .col-esq p{text-align:left;margin-left:14%;}
+  .section-body .tab-content li{width:50%; float:left;}
+  .section-body .nome_colocacao{line-height: 18px;padding: 0 5px;font-size:1em;margin:2% 0 0 2%}
+  .section-body .eurekas{line-height: 18px;font-size:1em; margin:0; margin-left:2%;}
 }
-*/
 
-/* /cartaoverde*/
+@media (min-width: 481px) and (max-width: 766px){
+   #footer{display:none;} 
+  .section-body .tab-content li{width:50%; float:left;}
+}
+/* celular */
+@media (min-width: 321px) and (max-width: 480px) {
+   #footer{display:none;}
+  .hero-unit{overflow:hidden;background-color:#4b135f;}
+  .hero-unit .col-esq h1 {margin: 15% 0 20% 30% ;} 
+  .hero-unit .col-dir .barra{display:none!important;}
+  .hero-unit .col-dir #box-clock{margin:30% 20% 0 0;} 
+  .hero-unit .menu-jc li {list-style: none;float: right;margin-right:18%;}
+  .section-body{padding: 0 2%;}
+  .section-body .resposta{width: 86%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
+  .section-body .accordion-toggle{ background:#6c0205!important;}
+  .section-body .tab-content li{width:50%; float:left;}
+  .section-body .nome_colocacao{line-height: 12px;padding: 0 5px;font-size: 0.7em;margin:2% 0 0 2%}
+  .section-body .eurekas{line-height: 12px;font-size:0.7em; margin:0; margin-left:2%;}
+  
+
+  .section-login h3, 
+  .section-cadastro h3{ padding:0 0 0 8%; margin:0 0 5% 0; font-size:1.3em; background-color:#ccc;}
+  .section-login .span3,
+  .section-cadastro .span3{padding-left:8%;}
+  .section-cadastro .span4{padding-left:13%;}
+  .section-cadastro .span4 ul{width:80%;}
+  .section-login input,
+  .section-cadastro input[type="text"]{width:88%;}
+  .section-cadastro .cadastrar{clear:both; float:left;margin-bottom:10%;}
+}
+
+@media (max-width: 320px) { 
+ #footer{display:none;}
+ .hero-unit{overflow:hidden;background-color:#4b135f;}
+ .hero-unit .col-esq h1 {margin: 5% auto 2% ;}
+ .hero-unit .col-esq {margin-left: 2%;max-width: 100%;}
+ .hero-unit .col-dir{margin-top:2%;width: 100%;}
+ .hero-unit .col-dir #box-clock{margin:3% 0 5% 20%;}
+ 
+ .section-body{padding: 0 2%;}
+ .section-body .resposta {width: 78%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
+ .section-body .accordion-toggle{background:#6c0205!important; }
+ .section-body .nome_colocacao{line-height: 17px;padding: 0 5px;margin:2% 0 0 2%}
+ .section-body .eurekas{line-height: 15px; margin:0; margin-left:2%;}
+ 
+ .section-login h3, 
+ .section-cadastro h3{ padding:0 0 0 8%; margin:0 0 5% 0; font-size:1.3em; background-color:#ccc;}
+ .section-login .span3,
+ .section-cadastro .span3{padding-left:8%;}
+ .section-cadastro .span4{padding-left:8%;}
+ .section-login input,
+ .section-cadastro input[type="text"]{width:82%;}
+ .section-cadastro .cadastrar{clear:both; float:left;margin-bottom:10%;}
+ 
+}
+/* /quem sabe sabe*/
 
