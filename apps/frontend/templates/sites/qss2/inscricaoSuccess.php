@@ -107,7 +107,7 @@ $(function(){
 
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
-                <p>&nbsp;</p>
+                
                 <div id="msgSuccess" style="display:none">
                   <p><strong>Inscrição enviada com sucesso!</strong></p>
                   <p>&nbsp;</p>
