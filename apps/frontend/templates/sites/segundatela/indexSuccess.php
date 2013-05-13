@@ -39,7 +39,7 @@
           </div>
           <p>
             Mais que um jornal,<br> uma tradução das notícias.<br>
-            Segunda a sábado, às 21:00
+            Segunda a sábado, às 21h
           </p>
         </a>
       </div> 
@@ -57,7 +57,7 @@
           <p> 
             O Brasil passa por aqui.
             <br>
-            Segunda às 22h.
+            Segunda às 22h
           </p>
         </a>
       </div>
@@ -74,7 +74,7 @@
           </div>
           <p>
             20 anos. Porque a bola não para.<br>
-            Terça, às 22h.
+            Terça às 22h
           </p>
         </a>
       </div>

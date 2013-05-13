@@ -280,14 +280,14 @@ $(function(){
             window.location.href="#";
             if(data == "0"){
               $("#form-contato").clearForm();
-              //$("#form-contato").hide();
+              $("#form-contato").hide();
               $("#msgSuccess").show();
               $('img#ajax-loader').hide();
             }
             else {
               $("#msgError").show();
               $('img#ajax-loader').hide();
-              //$("#form-contato").hide();
+              $("#form-contato").hide();
             }
           }
         });         
