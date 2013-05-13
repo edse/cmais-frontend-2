@@ -115,11 +115,11 @@
     <form action="" method="POST" id="form-cadastro">
       <div class="span3">
         <label>Nome/Apelido</label> 
-        <input type="text" name="nome_cadastro" id="nome_cadastro" />
+        <input type="text" name="signup_name" id="signup_name" />
         <label>E-mail</label> 
-        <input type="text" name="email_cadastro" id="email_cadastro" />
+        <input type="text" name="signup_email" id="signup_email" />
         <label>Senha</label> 
-        <input type="text" name="senha_cadastro" id="senha_cadastro" />  
+        <input type="text" name="signup_password" id="signup_password" />  
       </div>
       <div class="span4">
       <label>Escolha seu avatar:</label>
@@ -156,7 +156,7 @@
           </li>
         </ul>
         
-        <input id="id_avatar" type="hidden" name="avatar" value="">
+        <input id="id_avatar" type="hidden" name="signup_avatar" value="">
         
       </div>
       <div class="span4">
