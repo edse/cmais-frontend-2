@@ -209,36 +209,36 @@ $(document).ready(function(){
   var validator = $('#signup-form').validate({
     submitHandler: function(form){
      $.ajax({
-    url: "/segundatela-qss/site/sign-in/sign-up.php",
-    data: {
-      name: $('#signup_name').val(),
-      email: $('#signup_email').val(),
-      password: $('#signup_password').val(),
-      avatar: $('#signup_avatar').val(),
-      app: "secondscreenqss"
-    },
-    type: "POST",
-    dataType: "json",
-    success:function(json){
-      $('.alert').hide();
-      if(json.status == "success"){
-        //$('#alert-success').fadeIn('slow');
-        login({
+        url: "/segundatela-qss/site/sign-in/sign-up.php",
+        data: {
+          name: $('#signup_name').val(),
           email: $('#signup_email').val(),
           password: $('#signup_password').val(),
+          avatar: $('#signup_avatar').val(),
           app: "secondscreenqss"
-        });
-      }
-      else if(json.status == "taken"){
-        $('#alert-email-taken').fadeIn('slow');
-        $('#alert-message').html(json.message);
-        $('#signup_email').select();
-      }
-      else
-        $('#alert-error').fadeIn('slow');
-      console.log(json);
-    }
-  });        
+        },
+        type: "POST",
+        dataType: "json",
+        success:function(json){
+          //$('.alert').hide();
+          if(json.status == "success"){
+            //$('#alert-success').fadeIn('slow');
+            login({
+              email: $('#signup_email').val(),
+              password: $('#signup_password').val(),
+              app: "secondscreenqss"
+            });
+          }
+          else if(json.status == "taken"){
+            $('#alert-email-taken').fadeIn('slow');
+            $('#alert-message').html(json.message);
+            $('#signup_email').select();
+          }
+          else
+            $('#alert-error').fadeIn('slow');
+          console.log(json);
+        }
+      });        
   
     },
     rules:{
@@ -250,9 +250,6 @@ $(document).ready(function(){
         email:true
       },
       signup_password:{
-        required:true
-      },
-      signup_avatar:{
         required:true
       }
     },
