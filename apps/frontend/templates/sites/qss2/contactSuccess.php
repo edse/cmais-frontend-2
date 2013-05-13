@@ -5,7 +5,7 @@
     <style type="text/css">
       #email { margin:0; width:630px; padding:0 0 0 2px;  }
       .contato .codigo .caracteres { width:630px; margin-top:10px; }
-      #enviar { width:160px;  }
+      #enviar { width:160px; padding:0 6px; }
       
     </style>
     
