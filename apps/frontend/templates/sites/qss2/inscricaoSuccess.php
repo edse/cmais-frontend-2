@@ -108,7 +108,8 @@ $(function(){
                 <div id="msgSuccess" style="display:none">
                   <p>Inscrição realizada com sucesso!</p>
                   <p>&nbsp;</p>
-                  <p class="bg">Atenção: No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
+                  <p class="bg"><strong>Atenção:</strong></p>
+                  <p class="bg">No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
                   <p class="bg">No caso de impossibilidade da participação do amigo, a produção do programa deverá ser avisada.</p>
                 </div>
                 <div id="msgError" style="display:none">
