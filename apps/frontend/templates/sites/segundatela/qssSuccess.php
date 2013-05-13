@@ -65,7 +65,13 @@
   </div>
 </div>
 <!--/header-->
-
+<div id="login-alert-error-login" class="alert alert-block alert-error hide" style="margin: 0;">
+  <div class="container">
+    <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p id="login-alert-message"></p>
+  </div>
+</div>
 <!--Login-->
 <div class="section-login">
   <div class="container">
@@ -75,14 +81,14 @@
     <form action="" method="POST" id="form-login">
       <div class="span3">
         <label>Email</label> 
-        <input type="email" name="email_login" id="email_login" />
+        <input type="email" name="login_email" id="login_email" />
         <label class="checkbox" for="manter_conectado" id="conectado">
           <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
         </label>
       </div>
       <div class="span3">
         <label>Senha</label> 
-        <input type="password" name="senha_login" id="senha_login" />
+        <input type="password" name="login_password" id="login_password" />
         <a href="#" class="esqueci" >Esqueci minha senha</a>
       </div>
       <div class="span3">
@@ -280,43 +286,39 @@ $(document).ready(function(){
   
    var validator = $('#form-login').validate({
     submitHandler: function(form){
-     $.ajax({
-      url: "/segundatela-qss/site/sign-in/sign-in.php",
-      data: data,
-      type: "POST",
-      dataType: "json",
-      success:function(json){
-        //$('.alert').hide();
-        if(json.status == "success"){
-          self.location.href="../?token="+json.token;
-
+       $.ajax({
+        url: "/segundatela-qss/site/sign-in/sign-in.php",
+        data: {
+          email: $('#login_email').val(),
+          password: $('#login_password').val(),
+          app: "secondscreenqss"
+        },
+        type: "POST",
+        dataType: "json",
+        success:function(json){
+          $('#login-alert-error-login').hide();
+          //$('.alert').hide();
+          if(json.status == "success"){
+            $('#login-alert-error-login').hide();
+            self.location.href="./qssonline/?token="+json.token;
+          }
+          else{
+            $('#login-alert-error-login').fadeIn('slow');
+            $('#login-alert-message').html(json.message);
+          }
+          console.log(json);
         }
-        else{
-          $('#login-alert-error').fadeIn('slow');
-          $('#login-alert-message').html(json.message);
-        }
-        console.log(json);
-      }
-    });        
+      });        
   
     },
     rules:{
-      signup_name:{
-        required: true
-      },
-      signup_email:{
+      login_email:{
         required:true,
         email:true
       },
-      signup_password:{
-        required:true
-      },
-      signup_avatar:{
+      login_password:{
         required:true
       }
-    },
-    messages:{
-      signup_avatar:"Selecione um avatar."
     },
     success: function(label){
       // set &nbsp; as text for IE
@@ -333,7 +335,7 @@ $(document).ready(function(){
       success:function(json){
         //$('.alert').hide();
         if(json.status == "success"){
-          self.location.href="../?token="+json.token;
+          self.location.href="./qssonline/?token="+json.token;
 
         }
         else{
