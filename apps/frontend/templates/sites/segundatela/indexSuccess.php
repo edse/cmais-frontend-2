@@ -38,15 +38,14 @@
             <span id="jornaldacultura" style="display: none;">NO AR</span>
           </div>
           <p>
-            Os principais fatos do <br>dia no Brasil e no mundo.
-            <br>
-            Segunda a sábado, às 21h.
+            Mais que um jornal,<br> uma tradução das notícias.<br>
+            Segunda a sábado, às 21:00
           </p>
         </a>
       </div> 
       <!--/item--> 
       <!--item-->
-      <div class="span4 item roda">
+      <div class="span4 item">
         <a href="http://cmais.com.br/segundatela/rodaviva" target="_blank">
           <div class="logo-programa">
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
@@ -64,7 +63,7 @@
       </div>
       <!--/item-->
       <!--item--> 
-      <div class="span4 item cartao">
+      <div class="span4 item">
         <a href="http://cmais.com.br/segundatela/cartaoverde" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/fb83d5f012d0b874aaa1fa535b9317d3e3131848.png">
@@ -74,8 +73,7 @@
            <span id="cartaoverde" style="display: none;">NO AR</span>
           </div>
           <p>
-            Futebol discutido com inteligência<br> e bom humor.
-            <br>
+            20 anos. Porque a bola não para.<br>
             Terça, às 22h.
           </p>
         </a>
