@@ -26,7 +26,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       
 
-
+	$attach = array();
+	
       for($i=1; $i <= $qtdeIntegrantes; $i++) {
         $file_name[$i] = basename($_FILES['datafile'.$i]['name']);
 		$file_name[$i] = basename($_FILES['datafile'.$i]['name']);
@@ -34,14 +35,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $file_contents[$i] = chunk_split(base64_encode($data[$i]));
         $file_size[$i] = $_FILES['datafile'.$i]['size'];
         $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
+		$attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
  }
 	  $file_name9 = basename($_FILES['datafile9']['name']);      
       $data9 = file_get_contents($_FILES['datafile9']['tmp_name']);       
       $file_contents9 = chunk_split(base64_encode($data9));
       $file_size9 = $_FILES['datafile9']['size'];
       $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
-      $attach = array();
-	  $attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+      
+	 
       $attach[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
       
 	 
