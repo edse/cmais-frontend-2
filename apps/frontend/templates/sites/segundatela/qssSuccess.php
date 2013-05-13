@@ -119,7 +119,7 @@
         <label>E-mail</label> 
         <input type="text" name="signup_email" id="signup_email" />
         <label>Senha</label> 
-        <input type="text" name="signup_password" id="signup_password" />  
+        <input type="password" name="signup_password" id="signup_password" />  
       </div>
       <div class="span4">
       <label>Escolha seu avatar:</label>
