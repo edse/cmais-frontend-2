@@ -105,6 +105,11 @@
   </div>
 </div>
 <!--/login-->
+<div id="alert-email-taken" class="alert alert-block alert-error hide">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+  <p id="alert-message"></p>
+</div>
 <!--cadastro-->
 <div class="section-cadastro">
   <div class="container">
@@ -276,16 +281,7 @@ $(document).ready(function(){
         $('.alert').hide();
         if(json.status == "success"){
           self.location.href="../?token="+json.token;
-          /*
-          var form = $('<form action="http://qss/site/" method="post">'+
-          '<input type="text" name="token" value="' + json.token + '" />'+
-          '<input type="text" name="name" value="' + json.name + '" />'+
-          '<input type="text" name="email" value="' + json.email + '" />'+
-          '<input type="text" name="avatar" value="' + json.avatar + '" />'+
-          '</form>');
-          $('body').append(form);
-          $(form).submit();
-          */
+
         }
         else{
           $('#login-alert-error').fadeIn('slow');
