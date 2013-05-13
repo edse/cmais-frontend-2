@@ -86,7 +86,7 @@
             <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
           </div>
           <div class="live-image">
-           <img src="http://midia.cmais.com.br/programs/ab852a1d4260b94f0c055eb2957f512205aa3c26.jpg" alt="Quem sabe, sabe!">
+           <img src="http://midia.cmais.com.br/programs/6808396803e029296b6a6e8f9ab1879938cfc0a0.jpg" alt="Quem sabe, sabe!">
           </div>
           <p>
             Um game show de conhecimento,<br> estratégia e sorte<br>
