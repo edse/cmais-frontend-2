@@ -278,6 +278,51 @@ $(document).ready(function(){
     }
   });
   
+   var validator = $('#form-login').validate({
+    submitHandler: function(form){
+     $.ajax({
+      url: "/segundatela-qss/site/sign-in/sign-in.php",
+      data: data,
+      type: "POST",
+      dataType: "json",
+      success:function(json){
+        //$('.alert').hide();
+        if(json.status == "success"){
+          self.location.href="../?token="+json.token;
+
+        }
+        else{
+          $('#login-alert-error').fadeIn('slow');
+          $('#login-alert-message').html(json.message);
+        }
+        console.log(json);
+      }
+    });        
+  
+    },
+    rules:{
+      signup_name:{
+        required: true
+      },
+      signup_email:{
+        required:true,
+        email:true
+      },
+      signup_password:{
+        required:true
+      },
+      signup_avatar:{
+        required:true
+      }
+    },
+    messages:{
+      signup_avatar:"Selecione um avatar."
+    },
+    success: function(label){
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
   
   function login(data){
     $.ajax({
@@ -299,43 +344,7 @@ $(document).ready(function(){
       }
     });
   }
-  //login
-  var validator = $('#form-login').validate({
-    submitHandler: function(form){
-     $.ajax({
-        type: "POST",
-        dataType: "text",
-        data: $("#form-login").serialize(),
-        beforeSend: function(){
-
-        },
-        success: function(data){
-          alert(data);
-          window.location.href="javascript:;";
-          if(data == "1"){
-
-          }
-          else {
-
-          }
-        }
-      });         
-  
-    },
-    rules:{
-      email_login:{
-        required: true,
-        email:true
-      },
-      senha_login:{
-        required:true
-      }
-    },
-    success: function(label){
-      // set &nbsp; as text for IE
-      label.html("&nbsp;").addClass("checked");
-    }
-  });
+ 
   
   //Recupera senha
   var validator = $('#form-esqueceu').validate({
