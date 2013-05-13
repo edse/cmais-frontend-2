@@ -98,5 +98,6 @@ p#enviar { margin:0; }
 #conteudo-pagina { *background:#67170a; }
 #menuFloat { *display:none; }
 #barra-site .topo-programa { *margin-left:32px; }
+.box-compartilhar { *margin-top:20px; }
 /* IE*/
 
