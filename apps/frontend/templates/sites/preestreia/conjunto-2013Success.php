@@ -1242,6 +1242,7 @@ $(function(){
                   <label>Obra</label><br/>
                   <input type="text" name="obra4" data-default="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" value="Ex.: Trio em lá menor para Clarinete, Cello e Piano Op. 114" id="obra-4" />
                 </div>
+            <input type="file" name="datafile9" id
                 
                 <div class="linha t10 m10 w136">
                   <label>Movimentos</label><br/>
@@ -1517,10 +1518,10 @@ $(function(){
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="datafile9" id="anexofoto" />
-            
+            <input type="file" name="datafile12" id="anexofoto" />
           </div>
           <!--/Anexar Foto-->
+          
           
                       
         <!--Regulamento-->
