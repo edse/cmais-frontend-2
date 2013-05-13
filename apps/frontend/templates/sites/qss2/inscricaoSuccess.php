@@ -209,6 +209,7 @@ $(function(){
           <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
         </label>
       </div>
+      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
       <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar" style="cursor:pointer" />
     </form>  
               </div>
@@ -261,6 +262,36 @@ $(function(){
         
     
     var validator = $('#form-contato').validate({
+      
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          url: "http://cmais.com.br/actions/qss/inscricao.php",
+          beforeSend: function(){
+            $('input#enviar').attr('disabled','disabled');
+            $("#msgSuccess").hide();
+            $("#msgError").hide();
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+            $('input#enviar').removeAttr('disabled');
+            window.location.href="#";
+            if(data == "0"){
+              $("#form-contato").clearForm();
+              //$("#form-contato").hide();
+              $("#msgSuccess").show();
+              $('img#ajax-loader').hide();
+            }
+            else {
+              $("#msgError").show();
+              $('img#ajax-loader').hide();
+              //$("#form-contato").hide();
+            }
+          }
+        });         
+      },
       rules:{
         participanteNome:{
           required:true
