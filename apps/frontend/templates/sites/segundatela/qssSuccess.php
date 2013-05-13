@@ -184,6 +184,10 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
         }, 1000);
+     //close
+     $('.close').click(function(){
+       $(this).parent().parent().hide();
+     });
         
     //val avatar
     $('.avatar').click(function(){
