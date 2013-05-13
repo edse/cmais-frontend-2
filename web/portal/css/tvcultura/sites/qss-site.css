@@ -87,4 +87,7 @@ h1,
 #box-videos .conteudo-lista a { color:#fff !important; }
 .btn-compartilhar p { width:auto;  }
 p#enviar { margin:0; }
+#msgSuccess { float:left; margin-bottom:20px; }
+#msgSuccess p { margin-bottom:0; }
+#msgSuccess .bg { background:#ff6633; display:inline; padding:0 5px; }
 
