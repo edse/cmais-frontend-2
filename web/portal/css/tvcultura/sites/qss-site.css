@@ -98,6 +98,7 @@ p#enviar { margin:0; }
 
 .box-padrao p { width:100%; }
 #esquerda h4 { text-align:left; }
+.box-padrao.facebook { width:290px !important; }
 
  
 
