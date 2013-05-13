@@ -240,7 +240,7 @@ $(document).ready(function(){
             });
           }
           else if(json.status == "taken"){
-            $('#login-alert-message').fadeIn('slow');
+            $('#login-alert-error').fadeIn('slow');
             $('#alert-message').html(json.message);
             $('#signup_email').select();
           }
@@ -283,7 +283,7 @@ $(document).ready(function(){
       type: "POST",
       dataType: "json",
       success:function(json){
-        $('.alert').hide();
+        //$('.alert').hide();
         if(json.status == "success"){
           self.location.href="../?token="+json.token;
 
