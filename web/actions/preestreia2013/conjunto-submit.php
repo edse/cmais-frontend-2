@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       
 
-	$attach = array();
+	$attach_tudo1 = array();
 	
 
 	
@@ -37,25 +37,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $file_contents[$i] = chunk_split(base64_encode($data[$i]));
         $file_size[$i] = $_FILES['datafile'.$i]['size'];
         $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
-		
-			 $file_name9 = basename($_FILES['datafile9']['name']);      
+		$attach_tudo[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
+	}
+
+	$attach_tudo2 = array();
+	  $file_name9 = basename($_FILES['datafile9']['name']);      
       $data9 = file_get_contents($_FILES['datafile9']['tmp_name']);       
       $file_contents9 = chunk_split(base64_encode($data9));
       $file_size9 = $_FILES['datafile9']['size'];
       $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
 		
 		
-		$attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
-		$attach[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
- }
-	 
-      
-	 
-      
-      
-	 
+		$attach_tudo2[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
 
- 	  
+	 $attach = $attach_tudo1.$attach_tudo2;
+      
 	  	  
       if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
         
