@@ -57,7 +57,7 @@
 .section-login label.checkbox{position:relative;}
 .section-login #manter_conectado{position: absolute;top: 0;}
 .section-login .txt_manterconectado{position: absolute;top: -9px;}
-.section-login label.checkbox .error{position:absolute;top:30%;}
+.section-login label.checkbox .error{position:absolute;top:60%;}
 .section-login .error{font-size: 12px; color: red; margin-top: -5px; margin-bottom:5%;}
 
 .section-body .colocacao{min-width: 60px;height: 65px;display: block;background: #eeeeee;float: left;font-family: 'source_sans_probold';color: #cc0000;text-align: center;line-height: 65px;padding: 0 10px;font-size: 3em;}
