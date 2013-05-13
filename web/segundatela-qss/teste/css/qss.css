@@ -44,7 +44,7 @@ body > .navbar .brand:hover {
 .fb .logo_wrapper{border-right:1px solid #2f4f85}
 .fb:hover .logo_wrapper{border-right:1px solid #284473}
 .fb:active .logo_wrapper{border-right-color:#21386e}
-.fb .logo{float:left;width:11px;height:20px;background:url("../../../img/login_icons2.png") -258px 0 no-repeat}
+.fb .logo{float:left;width:11px;height:20px;background:url("../../img/login_icons2.png") -258px 0 no-repeat}
 .fb:hover>span{border-left:1px solid #51668c}
 .fb:active>span{border-left-color:#2c4b94}
 .fb>span{border-left:1px solid #627ba8}
@@ -53,7 +53,7 @@ body > .navbar .brand:hover {
 .tw:active{height:38px;background-color:#2088B4;background-image:none;box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-moz-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-webkit-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4)}
 .tw .logo_wrapper{padding-top:5px;padding-right:8px;padding-left:8px;border-right:1px solid #12abdd}
 .tw:active .logo_wrapper{border-right-color:#1f83ad}
-.tw .logo{float:left;width:21px;height:17px;margin-top:1px;background:url("../../../img/login_icons2.png") -269px 0 no-repeat}
+.tw .logo{float:left;width:21px;height:17px;margin-top:1px;background:url("../../img/login_icons2.png") -269px 0 no-repeat}
 .tw>span{border-left:1px solid #59c9ed}
 .tw:active>span{border-left-color:#2392c2}
 
@@ -62,7 +62,7 @@ body > .navbar .brand:hover {
 .gp:active{height:38px;background-color:#be3e2e;background-image:none;box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-moz-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4);-webkit-box-shadow:inset 0px 1px 0px rgba(50,50,50,0.4)}
 .gp .logo_wrapper{padding-top:0px;padding-right:8px;padding-left:8px;border-right:1px solid #be3e2e}
 .gp:active .logo_wrapper{border-right-color:#bb3f30}
-.gp .logo{float:left;width:23px;height:23px;margin-top:1px;background:url("../../../img/login_icons2.png") -267px -46px no-repeat}
+.gp .logo{float:left;width:23px;height:23px;margin-top:1px;background:url("../../img/login_icons2.png") -267px -46px no-repeat}
 .gb>span{border-left:1px solid #C98B83}
 .gp:active>span{border-left-color:#CA2B17}
 
@@ -81,7 +81,7 @@ span.label {
   font-weight: bold;
 }
 span.icon {
-  background: url('../../../img/btn_red_32.png') transparent 10px 50% no-repeat;
+  background: url('../../img/btn_red_32.png') transparent 10px 50% no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 40px;
