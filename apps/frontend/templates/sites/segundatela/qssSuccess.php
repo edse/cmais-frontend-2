@@ -106,9 +106,11 @@
 </div>
 <!--/login-->
 <div id="alert-email-taken" class="alert alert-block alert-error hide">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-  <p id="alert-message"></p>
+  <div class="container">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+    <p id="alert-message"></p>
+  </div>
 </div>
 <!--cadastro-->
 <div class="section-cadastro">
