@@ -523,3 +523,22 @@
      
     });
 </script>
+<script src="/portal/js/segundarela/secondscreenqss/json2.js"></script>
+<script src="/portal/js/segundarela/secondscreenqss/app.js"></script>
+
+<audio id="audio-ping">
+  <source src="/portal/audio/ping.mp3" />
+  <source src="/portal/audio/ping.ogg" />
+</audio>
+<audio id="audio_tictac" loop>
+  <source src="/portal/audio/tictac.mp3" />
+  <source src="/portal/audio/tictac.ogg" />
+</audio>
+<audio id="audio_correct">
+  <source src="/portal/audio/correct.mp3" />
+  <source src="/portal/audio/correct.ogg" />
+</audio>
+<audio id="audio_wrong">
+  <source src="/portal/audio/wrong.mp3" />
+  <source src="/portal/audio/wrong.ogg" />
+</audio>
