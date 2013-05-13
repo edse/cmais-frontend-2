@@ -51,18 +51,10 @@ $(document).ready(function() {
   var tryin   = 3;
   var mult    = 2;
   
-  //serverUrl = 'ws://200.136.27.7:80/secondscreenqss';
-  //serverUrl = 'ws://172.20.1.79:80/secondscreenqss';
-  serverUrl = 'ws://qss:7777/secondscreenqss';
+  serverUrl = 'ws://200.136.27.7:80/secondscreenqss';
   
-  //var content_url = "/cache_master/cmais.com.br/segundatela/secondscreenapp/contents.json";
-  //var last_content_url = "/cache_master/cmais.com.br/segundatela/secondscreenapp/last-content.json";
-
-  //var content_url = "/segundatela-qss/log/cache1/secondscreenqss/contents.json";
-  //var last_content_url = "/segundatela-qss/log/cache1/secondscreenqss/last-content.json";
-
-  var content_url   = "../log/cache1/secondscreenqss/contents.json";
-  var question_url  = "../log/cache1/secondscreenqss/questions.json";
+  var content_url   = "/segundatela/secondscreenqss/contents.json";
+  var question_url  = "/segundatela/secondscreenqss/questions.json";
   //var last_content_url = "../log/cache1/secondscreenqss/last-content.json";
   
   tryToConnect = function() {
