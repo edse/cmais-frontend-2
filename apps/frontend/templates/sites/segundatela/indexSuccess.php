@@ -28,7 +28,7 @@
     <!--corpo-->
     <div class="row-fluid">
       <!--item-->
-      <div class="span4 item jornal" style="margin-left:0px;">
+      <div class="span3 item jornal" style="margin-left:0px;">
         <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
@@ -45,7 +45,7 @@
       </div> 
       <!--/item--> 
       <!--item-->
-      <div class="span4 item jornal">
+      <div class="span3 item jornal">
         <a href="http://cmais.com.br/segundatela/rodaviva" target="_blank">
           <div class="logo-programa">
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
@@ -63,7 +63,7 @@
       </div>
       <!--/item-->
       <!--item--> 
-      <div class="span4 item jornal">
+      <div class="span3 item jornal">
         <a href="http://cmais.com.br/segundatela/cartaoverde" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/fb83d5f012d0b874aaa1fa535b9317d3e3131848.png">
@@ -80,7 +80,7 @@
       </div>
       <!-- /item-->
       <!--item -->
-      <div class="span3 item jornal" style="display:none">
+      <div class="span3 item jornal">
         <a href="http://cmais.com.br/segundatela/qss">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
