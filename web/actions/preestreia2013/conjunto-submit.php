@@ -34,13 +34,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $file_mime_type[$i] = getMimeType($_FILES['datafile'.$i]['name']);
         $attach[] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i]);
       
-        $file_name9 = basename($_FILES['datafile9']['name']);
+	  }
+	  $attach1 = array();
+	  	$file_name9 = basename($_FILES['datafile9']['name']);
         $data9 = file_get_contents($_FILES['datafile9']['tmp_name']); 
         $file_contents9 = chunk_split(base64_encode($data9));
         $file_size9 = $_FILES['datafile9']['size'];
         $file_mime_type9 = getMimeType($_FILES['datafile9']['name']);
-        $attach[9] = array($_FILES['datafile'.$i]['tmp_name'], $file_mime_type[$i].$_FILES['datafile9']['tmp_name'], $file_mime_type9);
-	  }
+        $attach1[] = array($_FILES['datafile9']['tmp_name'], $file_mime_type9);
+	  
       if (mimeTypeDenied($file_mime_type, $mimeTypesAllowed)) {
         
         if (deleteAllFiles('datafile',$qtdeIntegrantes)) {
@@ -56,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       else {
         
-        if(sendMailAtt($to, $from, $subject, $message)) {
+        if(sendMailAtt($to, $from, $subject, $message, $attach, $attach1)) {
           if (deleteAllFiles('datafile',$qtdeIntegrantes)) {
             header("Location: http://tvcultura.cmais.com.br/preestreia/conjunto-2013?success=1");
             die();
