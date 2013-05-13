@@ -89,5 +89,5 @@ h1,
 p#enviar { margin:0; }
 #msgSuccess { float:left; margin-bottom:20px; }
 #msgSuccess p { margin-bottom:0; }
-#msgSuccess .bg { background:#ff6633; padding:10px; width:90% }
+#msgSuccess .bg { background:#ff6633; padding:5px; width:628px; float:left; margin-top:10px; }
 

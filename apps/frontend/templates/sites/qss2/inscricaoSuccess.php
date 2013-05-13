@@ -107,7 +107,6 @@ $(function(){
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>
                 <div id="msgSuccess" style="display:none">
                   <p>Inscrição realizada com sucesso!</p>
-                  <p>&nbsp;</p>
                   <div class="bg">
                     <p><strong>Atenção:</strong></p>
                     <p>No dia do programa o participante deverá, obrigatoriamente, trazer um documento original com foto.</p>
