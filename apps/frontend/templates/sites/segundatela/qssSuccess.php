@@ -267,7 +267,7 @@ $(document).ready(function(){
     },
     messages:{
       signup_avatar:"Selecione um avatar."
-    }
+    },
     success: function(label){
       // set &nbsp; as text for IE
       label.html("&nbsp;").addClass("checked");
