@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       
       $attach = array();
-      for($i=1; $i <= $qtdeIntegrantes; $i <= $i++) {
+      for($i=1; $i <= $qtdeIntegrantes; $i++) {
         $file_name[$i] = basename($_FILES['datafile'.$i]['name']);
         $data[$i] = file_get_contents($_FILES['datafile'.$i]['tmp_name']); 
         $file_contents[$i] = chunk_split(base64_encode($data[$i]));
