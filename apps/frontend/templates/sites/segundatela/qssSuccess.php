@@ -105,13 +105,12 @@
   </div>
 </div>
 <!--/login-->
-<div id="alert-email-taken" class="alert alert-block alert-error hide">
-  <div class="container">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
-    <p id="alert-message"></p>
-  </div>
-</div>
+<div id="login-alert-error" class="alert alert-block alert-error hide">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
+                <p id="login-alert-message"></p>
+                <p>Certifique-se de que você preencheu seu email e senha corretamente e tente novamente.</p>
+              </div>
 <!--cadastro-->
 <div class="section-cadastro">
   <div class="container">
@@ -185,7 +184,7 @@
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
         }, 1000);
      //close
-     $('.close').click(function(){
+     $('.fechar').click(function(){
        $(this).parent().parent().hide();
      });
         
