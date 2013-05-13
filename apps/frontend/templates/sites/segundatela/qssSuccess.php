@@ -112,7 +112,7 @@
       <h3>AINDA NÃO SOU CADASTRADO</h3>
     </div>
     <!-- esquerda -->
-    <form action="" method="POST" id="form-cadastro">
+    <form action="" method="POST" id="signup-form-btn">
       <div class="span3">
         <label>Nome/Apelido</label> 
         <input type="text" name="signup_name" id="signup_name" />
