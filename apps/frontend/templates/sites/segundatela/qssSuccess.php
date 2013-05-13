@@ -65,7 +65,7 @@
   </div>
 </div>
 <!--/header-->
-<div id="login-alert-error-login" class="alert alert-block alert-error hide">
+<div id="login-alert-error-login" class="alert alert-block alert-error hide" style="margin: 0;">
   <div class="container">
     <!--button type="button" class="close fechar" data-dismiss="alert">×</button-->
     <h4 class="alert-heading">Puxa, puxa, que puxa!</h4>
@@ -296,10 +296,11 @@ $(document).ready(function(){
         type: "POST",
         dataType: "json",
         success:function(json){
+          $('#login-alert-error-login').hide();
           //$('.alert').hide();
           if(json.status == "success"){
+            $('#login-alert-error-login').hide();
             self.location.href="../?token="+json.token;
-  
           }
           else{
             $('#login-alert-error-login').fadeIn('slow');
