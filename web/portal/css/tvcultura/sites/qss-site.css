@@ -83,3 +83,5 @@ h1,
 .uma-coluna p, 
 .novoNoAr .noAr-box .chapeu { color:#333 !important; }
 .box-topo .navegacao { margin-bottom:0; }
+#box-videos .conteudo-lista h3,
+#box-videos .conteudo-lista a { color:#fff !important; }
