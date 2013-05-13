@@ -420,7 +420,7 @@ $(function(){
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="datafile1" id="anexofotorg" />
+               	<input type="file" name="datafile1" id="anexofotorg_1" />
                </div>
                <!--/Anexar RG--->
               
@@ -1517,7 +1517,7 @@ $(function(){
           <div class="linha t7">
             
             <label>Anexar foto do conjunto</label>
-            <input type="file" name="datafile9" id="anexofoto" />
+            <input type="file" name="datafile9" id="anexofoto_9" />
             
           </div>
           <!--/Anexar Foto-->
