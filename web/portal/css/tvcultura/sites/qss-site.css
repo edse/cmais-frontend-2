@@ -71,9 +71,10 @@ h1,
 #capa-site { margin-top: -102px !important; }
 .box-topo {    margin:-53px 0 0 52px;}
 #barra-site h2 { margin:40px 0 0 20px }
-/*
+
 #barra-site #horario { width:auto; margin-right:20px; }
-#barra-site #horario p { font-family: 'Source Sans Pro', sans-serif; color:#fff; text-transform:uppercase; font-weight:normal; font-size:20px; }
-*/
+#barra-site #horario p { /*font-family: 'Source Sans Pro', sans-serif; text-transform:uppercase; font-weight:normal; font-size:20px; */ color:#fff; }
+
 #barra-site .redes .curtir { width: auto; }
-#barra-site .redes { float:right; margin:0 20px 0 0; clear:both; }
+#barra-site .redes {  margin:40px 70px 0 0; float:right;  }
+#barra-site .redes
