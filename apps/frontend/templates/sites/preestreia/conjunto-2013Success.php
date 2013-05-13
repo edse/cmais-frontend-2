@@ -420,7 +420,7 @@ $(function(){
 			   <!--Anexar RG--->
                <div class="linha t5">
                	<label>Anexar cópia do RG (se for menor de idade, anexar o RG do responsável):</label>
-               	<input type="file" name="datafile1" id="anexofoto" />
+               	<input type="file" name="datafile1" id="anexofotorg" />
                </div>
                <!--/Anexar RG--->
               
