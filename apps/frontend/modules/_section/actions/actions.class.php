@@ -472,7 +472,7 @@ class _sectionActions extends sfActions
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.'04:59:59', $end.' 05:00:00'))
+                ->andWhere('a.created_at >= ? AND a.created_at <= ?', array($this->date.' 00:00:00', $this->date.' 23:59:59'))
                 ->orderBy('a.id desc');
             }
             else{
@@ -1433,7 +1433,7 @@ class _sectionActions extends sfActions
         $pagelimit = 20;
     }
     if($this->section->Site->getSlug() == "quintaldacultura") {
-      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos")
+      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
         $pagelimit = 72;
     }
 	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
