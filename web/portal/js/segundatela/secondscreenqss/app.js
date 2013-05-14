@@ -144,22 +144,32 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    console.log(data.ranking.name);
-
+ 
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
-      $('#eurekas').html(data.userRanking);
+      //$('#eurekas').html(data.userRanking);
       var info = data.ranking;
       var c = 0;
-      $('#rankingTable').html(null);
+      $('#ranking-diario').html(null);
       for(id in info) {
         c++;
         name = info[id][0];
         points = info[id][1];
-        $('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        
+        var html_rank = '<!--posicao-->'
+        html_rank +='<li style="border-bottom: none;">'
+        html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>
+        html_rank +=  '<span class="avatar av3"></span>'
+        html_rank +=  '<span class="nome_colocacao">Fulano Beltrano silcrano</span> '
+        html_rank +=  '<span class="eurekas">999 eurekas</span>'
+        html_rank += '</li>'
+        html_rank += '<!--/posicao-->'
+        
+        $('#ranking-diario').prepend(html_rank);
+        //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
       }
-      $('#ranking').fadeIn('slow');
+      //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }
   }

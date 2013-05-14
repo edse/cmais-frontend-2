@@ -102,7 +102,7 @@
             <li class="active"><a data-toggle="tab" href="#diaria">DIÁRIA</a></li>
             <!--li class=""><a data-toggle="tab" href="#semanal">SEMANAL</a></li-->
             <li style="float:right;border:none;"><span class="cantoneira-b cant-item-dir"></span></li>
-          </ul>
+          </ul>  
           <!--botoes abas-->
           
           <!--lista classificacao-->
