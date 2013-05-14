@@ -153,23 +153,22 @@ $(document).ready(function() {
       var c = 0;
       $('#ranking-diario').html(null);
       for(id in info) {
-        c++;
-        
         name = info[id][0];
         points = info[id][1];
         avatar = info[id][2];
-        
-        var html_rank = '<!--posicao-->'
-        html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee">'
-        html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>'
-        html_rank +=  '<span class="avatar av1"></span>'
-        html_rank +=  '<span class="nome_colocacao">'+name+'</span> '
-        html_rank +=  '<span class="eurekas">999 eurekas</span>'
-        html_rank += '</li>'
-        html_rank += '<!--/posicao-->'
-        
-        $('#ranking-diario').prepend(html_rank);
-        //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        if(name){
+          c++;
+          var html_rank = '<!--posicao-->'
+          html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left">'
+          html_rank +=  '<span class="colocacao" style="margin-left: 0;">'+c+'º</span>'
+          html_rank +=  '<span class="avatar '+avatar+'"></span>'
+          html_rank +=  '<span class="nome_colocacao">'+name+'</span> '
+          html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
+          html_rank += '</li>'
+          html_rank += '<!--/posicao-->'
+          $('#ranking-diario').append(html_rank);
+          //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        }        
       }
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
