@@ -41,11 +41,7 @@ $(function() {
      <!-- MIOLO -->
       <div id="miolo">
      
-      	  <?php //include_partial_from_folder('blocks','global/shortcuts') ?>
-   
-		  <div class="fale-conosco">
-          	<a href="/penarua/fale-conosco" title="Fale Conosco" name="Fale Conosco">Fale Conosco</a>
-          </div>          
+      	  <div class="fale-conosco"></div>          
           <div class="relogio">
           	<a href="/penarua/sobre-o-programa" title="Apresentadores" name="Apresentadores"><img src="/portal/images/capaPrograma/penarua/fotoApresentadores.jpg" alt="Apresentadores" /></a>
           	<script type="text/javascript">
@@ -55,7 +51,6 @@ $(function() {
 			</script>
 			<div id="changeDisplay">				
 			  <div class="jclock"></div>
-			  <!--div id='weather_widget'></div-->
 			</div>
 		  </div>
           <div class="placas">
