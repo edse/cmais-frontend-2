@@ -181,14 +181,14 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-esq-inf"></span>'
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
               
-    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#seis">'
-    html +=       '<p>Steven Spielberg conquistou seu primeiro Oscar?</p>'
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#' + data.handler + '">'
+    html +=       '<p>'+ data.question +</p>'
     html +=     '</a>'
 
     html +=   '</div>'
     
     html +=   '<!--resposta-->'
-    html +=   '<div id="seis" class="accordion-body collapse">'
+    html +=   '<div id="' data.handler '" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
     if(clock){
       console.log(data)
