@@ -190,12 +190,18 @@ $(document).ready(function() {
     html +=     '<div class="accordion-inner">' 
     if(!clock){
       //console.log(data)
-      html += '<ul class="answers media-list">';
+      html +=      '<ul>'
+      
       for(var i=0; i<data.answers.length; i++){
-        html += '<li class="answer" id="q'+data.uid+'a'+i+'" style="margin-top: 25px;"><a class="btn'+btn_style+'" rel="'+data.uid+'">';
-        html += '<span>'+data.answers[i].text+'</span></a></li>';
+        html +=         '<li>'
+        html +           '<span class="cantoneira-b cant-item-esq letra">A</span>'
+        html +=          '<a href="javascript:;" id="q'+data.uid+'a'+i+' rel="'+data.uid+' class="resposta"><p>' + data.answers[i].text + '</p></a>'
+        html +=          '<span class="cantoneira-b cant-item-dir"></span>'
+        html +=        '</li>'
       }
-      html += '</ul>';
+      html +=      '</ul>'      
+    
+      
     }
     html +=      '</div>'
     html +=    '</div>'
