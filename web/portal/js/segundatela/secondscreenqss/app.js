@@ -289,7 +289,9 @@ $(document).ready(function() {
           $(this).removeClass('btn-primary').addClass("disabled");
         });
         */
-       $(".accordion-inner ul li").css('background', '#ccc');
+       $('#uid' + data.uid + ' ul li').css('background', '#ccc');
+       $('#uid' + data.uid + ' ul li').css('color', '#333');
+       $('#uid'+data.question+' .answers .resposta').die('click');
         /*
         $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
           $(this).parent().addClass("disabled");
