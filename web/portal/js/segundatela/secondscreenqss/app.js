@@ -153,15 +153,12 @@ $(document).ready(function() {
       var c = 0;
       $('#ranking-diario').html(null);
       
+       
+          
       for(id in info) {
         name = info[id][0];
         points = info[id][1];
-        if(info[id][2] == null){
-          avatar = "av1";
-        }else{
-          avatar = info[id][2];
-        }
-        
+        avatar = info[id][2];
         if(name){
           c++;
           var html_rank = '<!--posicao-->'
@@ -176,6 +173,15 @@ $(document).ready(function() {
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
+      var html_rankUser = '<!--posicao-->'
+       html_rankUser +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
+       html_rankUser +=  '<span class="colocacao user" style="margin-left: 0;"></span>'
+       html_rankUser +=  '<span class="avatar '+data.avatar+'"></span>'
+       html_rankUser +=  '<span class="nome_colocacao">'+data.name+'</span> '
+       html_rankUser +=  '<span class="eurekas">'+data.points+' eurekas</span>'
+       html_rankUser += '</li>'
+       html_rankUser += '<!--/posicao-->'
+       $('#ranking-diario').append(html_rankUser);
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }
