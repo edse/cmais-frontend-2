@@ -163,7 +163,6 @@ $(document).ready(function() {
 
 
   questionInfo = function(data, json, clock) {
-    console.log(data.answers);
     var btn_style = " disabled";
     if(clock)
       btn_style = " btn-primary";
@@ -189,15 +188,15 @@ $(document).ready(function() {
     html +=   '<!--resposta-->'
     html +=   '<div id="' + data.handler + '" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
-    if(clock){
-      console.log(data)
+    //if(clock){
+      //console.log(data)
       html += '<ul class="answers media-list">';
       for(var i=0; i<data.answers.length; i++){
         html += '<li class="answer" id="q'+data.uid+'a'+i+'" style="margin-top: 25px;"><a class="btn'+btn_style+'" rel="'+data.uid+'">';
         html += '<span>'+data.answers[i].text+'</span></a></li>';
       }
       html += '</ul>';
-    }
+    //}
     html +=      '</div>'
     html +=    '</div>'
     html +=    '<!--resposta-->'
