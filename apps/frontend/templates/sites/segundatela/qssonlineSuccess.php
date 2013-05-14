@@ -362,6 +362,7 @@
           }, 1000);
      
      $(".accordion-inner a").not('.accordion-inner.arquivo a').click(function(){
+       alert('oi')
        $(".accordion-inner li").removeClass('selected');
        $(this).parent().addClass('selected');
      });
