@@ -383,7 +383,8 @@ $(document).ready(function() {
   //
 
   // Send Answer
-  $(".answer .resposta").live('click', function(){
+  $(".answers .resposta").live('click', function(){
+    console.log('---'+$(this).find('p').html());
     if(!$(this).parent().hasClass('disabled')){
       $(this).parent().parent().find('li').each(function(index){
         $(this).css("background","#ccc");
