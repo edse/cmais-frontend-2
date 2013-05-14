@@ -7,7 +7,7 @@
               <div id="topo-destaque">
                 <img src="/portal/images/hometv/qss/apresentadores.png" alt="Quem Sabe Sabe" />
                 <a class="banner-topo" href="http://tvcultura.cmais.com.br/qss" title="Quem Sabe Sabe"><img src="/portal/images/hometv/qss/logoqss.png" alt="Quem Sabe Sabe" /></a>
-                <h2>vem jogar com a gente! ESTREIA HOJE ÀS 19H20</h2>
+                <h2>vem jogar com a gente! de segunda a sexta, às 19h20</h2>
                 <div class="redes">
                   <div class="t">
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>

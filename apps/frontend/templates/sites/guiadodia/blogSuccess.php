@@ -1,11 +1,3 @@
-<?php
-if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
-} 
-?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
@@ -214,25 +206,9 @@ $(function(){
             <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
               <div class="box-listao grid2">
-                <?php if(isset($date)): ?>
-                <h3><?php echo format_date(strtotime($date),"D") ?></h3>
-                <?php endif ?>
-                <ul>
-                  <?php foreach($pager->getResults() as $d): ?>
-                    <li>
-                      <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
-                      <a class="img" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
-                      </a>
-                      <?php endif; ?>
-                      <div class="box-texto grid2">
-                        <a href="<?php echo $d->retriveUrl() ?>" class="titulos"><span class="<?php echo $d->AssetType->getSlug() ?>"></span><?php echo $d->getTitle() ?></a>
-                        <p><?php echo $d->getDescription() ?></p>
-                        <p class="fonte"><a href="#"><?php echo $d->retriveLabel() ?></a> | <?php echo format_datetime($d->getCreatedAt(),"P") ?> | <?php echo format_datetime($d->getCreatedAt(),"t") ?></p>
-                      </div>
-                    </li>
-                  <?php endforeach; ?>
-                </ul>
+                <?php foreach($pager->getResults() as $d): ?>
+                  <?php echo html_entity_decode($d->AssetContent->render()) ?>
+                <?php endforeach; ?>
               </div>
               <!-- /BOX LISTAO -->
             <?php endif; ?>
