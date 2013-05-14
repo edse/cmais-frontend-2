@@ -289,9 +289,9 @@ $(document).ready(function() {
           $(this).removeClass('btn-primary').addClass("disabled");
         });
         */
-       $('#uid' + data.uid + ' ul li').css('background', '#ccc');
-       $('#uid' + data.uid + ' ul li').css('color', '#333');
-       $('#uid'+data.question+' .answers .resposta').die('click');
+        $('#uid' + data.uid + ' ul li').css('background', '#666');
+        $('#uid' + data.uid + ' ul li p').css('color', '#333');
+        $('#uid' +data.uid+ ' .answers .resposta').die('click');
         /*
         $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
           $(this).parent().addClass("disabled");
