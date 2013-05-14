@@ -106,7 +106,7 @@ $(document).ready(function() {
           //case "contentInfo":
             //return contentInfo(response.data, false);
           case "questionInfo":
-            return questionInfo(response.data, false, false);
+            return questionInfo(response.data, false, true);
           case "contentBan":
             return contentBan(response.data);
           case "questionBan":
@@ -187,6 +187,7 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->'
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">'
+    html += '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
     html +=     '<div class="accordion-inner">' 
     if(clock){
       //console.log(data)
