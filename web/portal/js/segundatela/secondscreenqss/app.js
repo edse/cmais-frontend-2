@@ -144,12 +144,11 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    console.log(data.ranking.name);
-
+ 
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
-      $('#eurekas').html(data.userRanking);
+      //$('#eurekas').html(data.userRanking);
       var info = data.ranking;
       var c = 0;
       $('#rankingTable').html(null);
@@ -157,7 +156,18 @@ $(document).ready(function() {
         c++;
         name = info[id][0];
         points = info[id][1];
-        $('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        
+        var html_rank = '<!--posicao-->'
+        var html_rank +='<li style="border-bottom: none;">'
+        var html_rank +=  '<span class="colocacao user" style="margin-left: 0;">23º</span>'
+        var html_rank +=  '<span class="avatar av1"></span>'
+        var html_rank +=  '<span class="nome_colocacao">Fulano Beltrano</span>' 
+        var html_rank +=  '<span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>'
+        var html_rank += '</li>'
+        var html_rank += '<!--/posicao-->'
+        
+        $('#rankingTable').append(html_rank);
+        //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
       }
       $('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
