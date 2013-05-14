@@ -74,9 +74,7 @@ $(document).ready(function() {
       startClock();
       $('#users').hide();
       $('#points').hide();
-      //return $('#status a').removeClass("btn-success").addClass('btn-danger').css('opacity', 1).html('desconectado');
-      //return $('#status a').css('opacity', 1).html('desconectado');
-      return $('#status').addClass('offline').html('desconectado');
+      return $('#status').removeClass('online').addClass('offline').html('desconectado');
     };
 
     socket.onopen = function(msg) {
@@ -89,7 +87,7 @@ $(document).ready(function() {
       $('#points a').css('opacity', 1);
       $('#points').show();
       //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
-      return $('#status').addClass('online').html('conectado');
+      return $('#status').removeClass('offline').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
@@ -169,7 +167,67 @@ $(document).ready(function() {
     var btn_style = " disabled";
     if(clock)
       btn_style = " btn-primary";
+      
+    var html =  '<!--pergunta chamada-->'
+    html += '<div class="accordion-group">'
+    html +=   '<div class="accordion-heading">'
+    html +=     '<span class="cantoneira cant-perg-esq-sup"></span>'
+    html +=     '<span class="cantoneira cant-perg-dir-sup"></span>'
+              
+    html +=     '<span class="cantoneira-esq-meio cant-perg-esq-meio"></span>'
+    html +=     '<span class="cantoneira-dir-meio cant-perg-dir-meio"></span>'
+              
+    html +=     '<span class="cantoneira cant-perg-esq-inf"></span>'
+    html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
+              
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#seis">'
+    html +=       '<p>Steven Spielberg conquistou seu primeiro Oscar?</p>'
+    html +=     '</a>'
 
+    html +=   '</div>'
+    
+    html +=   '<!--resposta-->'
+    html +=   '<div id="seis" class="accordion-body collapse">'
+    html +=     '<div class="accordion-inner">' 
+    if(clock){
+      html += '<ul class="answers media-list">';
+      for(var i=0; i<data.answers.length; i++){
+        html += '<li class="answer" id="q'+data.uid+'a'+i+'" style="margin-top: 25px;"><a class="btn'+btn_style+'" rel="'+data.uid+'">';
+        html += '<span>'+data.answers[i].text+'</span></a></li>';
+      }
+      html += '</ul>';
+    }
+    /*
+    html +=       <ul>
+    html +=         <li>
+    html +=                <span class="cantoneira-b cant-item-esq letra">A</span>
+    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
+    html +=                <span class="cantoneira-b cant-item-dir"></span>
+    html +=               </li>
+    html +=              <li>
+    html +=                <span class="cantoneira-b cant-item-esq letra">B</span>
+    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre</p> </a>
+    html +=                 <span class="cantoneira-b cant-item-dir"></span>
+    html +=              </li>
+    html +=              <li class="correct">
+    html +=                <span class="cantoneira-b cant-item-esq letra">C</span>
+    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
+    html +=                <span class="cantoneira-b cant-item-dir"></span>
+    html +=              </li>
+    html +=              <li>
+    html +=                <span class="cantoneira-b cant-item-esq letra">D</span>
+    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
+    html +=                <span class="cantoneira-b cant-item-dir"></span>
+    html +=              </li>
+    html +=            </ul>
+    */
+    html +=      '</div>'
+    html +=    '</div>
+    html +=    '<!--resposta-->'
+    html +=  '</div>'
+    html +=  '<!--/pergunta chamada-->'
+  
+    
     var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
     html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += '<div class="question-info" style="float: right;">';
