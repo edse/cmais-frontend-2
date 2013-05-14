@@ -162,7 +162,7 @@ $(document).ready(function() {
         var html_rank = '<!--posicao-->'
         html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee">'
         html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>'
-        html_rank +=  '<span class="avatar '++'"></span>'
+        html_rank +=  '<span class="avatar av1"></span>'
         html_rank +=  '<span class="nome_colocacao">'+name+'</span> '
         html_rank +=  '<span class="eurekas">999 eurekas</span>'
         html_rank += '</li>'
