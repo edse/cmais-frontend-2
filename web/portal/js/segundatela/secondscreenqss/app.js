@@ -253,7 +253,7 @@ $(document).ready(function() {
         window.audio_tictac.pause();
         var payload = new Object();
         var data = new Object();
-        payload.action = "wrongAnswer";
+        payload.action = "answer";
         data.answer = $(this).find('p').html();
         data.question = $(this).attr('rel');
         data.time = time;
