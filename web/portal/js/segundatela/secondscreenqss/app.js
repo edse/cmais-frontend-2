@@ -233,6 +233,34 @@ $(document).ready(function() {
     html += '</div></div></div>';
     */
     $('#accordion2').prepend(html);
+    // Send Answer
+    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
+    //$(".answers .resposta").live('click', function(){
+      console.log('---'+$(this).attr('rel'));
+      if(!$(this).parent().hasClass('disabled')){
+        $(this).parent().parent().find('li').each(function(index){
+          $(this).css("background","#ccc");
+        });
+        
+        //$(this).removeClass('btn-primary').addClass('btn-warning');
+        //remaining time
+        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+        //var p = t.split('tempo: ');
+        //var time = parseInt(p[1]);
+        var time = 0;
+        //send answer
+        window.clearInterval(window.interval);
+        window.audio_tictac.pause();
+        var payload = new Object();
+        var data = new Object();
+        payload.action = "wrongAnswer";
+        data.answer = $(this).find('p').html();
+        data.question = $(this).attr('rel');
+        data.time = time;
+        payload.data = data;
+        return socket.send(JSON.stringify(payload)); 
+      }
+    });
       
     if(!json)
       document.getElementById('audio-ping').play();
@@ -381,9 +409,10 @@ $(document).ready(function() {
   });
 
   //
-
+  /*
   // Send Answer
-  $(".answers .resposta").live('click', function(){
+  $('.answers .resposta').live('click', function(){
+  //$(".answers .resposta").live('click', function(){
     console.log('---'+$(this).attr('rel'));
     if(!$(this).parent().hasClass('disabled')){
       $(this).parent().parent().find('li').each(function(index){
@@ -408,7 +437,7 @@ $(document).ready(function() {
       return socket.send(JSON.stringify(payload));
     }
   });
-
+  */
   wrongAnswer = function(data) {
     window.audio_tictac.pause();
     window.audio_wrong.currentTime = 0;
@@ -417,7 +446,7 @@ $(document).ready(function() {
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green')
     $('#eurekas').html(data.points);
-    $(".answers .resposta").die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     //$('#uid'+data.question+' .resposta').removeAttr('href');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
@@ -435,7 +464,7 @@ $(document).ready(function() {
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
-        $(".answers .resposta").die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
       $('#points').fadeTo('fast', 1);
