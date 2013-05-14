@@ -208,7 +208,7 @@ $(function(){
               <div class="box-listao grid2">
                 <?php foreach($pager->getResults() as $k->$d): ?>
                   <?php echo html_entity_decode($d->AssetContent->render()) ?>
-                  <?php echo $k ?>
+                  <?php echo "test: $k" ?>
                 <?php endforeach; ?>
               </div>
               <!-- /BOX LISTAO -->
