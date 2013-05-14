@@ -240,6 +240,7 @@ $(document).ready(function() {
       if(!$(this).parent().hasClass('disabled')){
         $(this).parent().parent().find('li').each(function(index){
           $(this).css("background","#ccc");
+          $(this).die('click');
         });
         
         //$(this).removeClass('btn-primary').addClass('btn-warning');
