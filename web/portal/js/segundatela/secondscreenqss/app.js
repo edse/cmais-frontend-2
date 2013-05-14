@@ -155,7 +155,12 @@ $(document).ready(function() {
       for(id in info) {
         name = info[id][0];
         points = info[id][1];
-        avatar = info[id][2];
+        if(info[id][2] == null){
+          avatar = "av1";
+        }else{
+          avatar = info[id][2];
+        }
+        
         if(name){
           c++;
           var html_rank = '<!--posicao-->'
