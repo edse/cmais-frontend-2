@@ -147,7 +147,7 @@ $(document).ready(function() {
     console.log(data);
     
     if(data){
-      $('.ajax-loader-qss').hide();
+      $('.ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
       $('#eurekas').html(data.userRanking);
       var info = data.ranking;
