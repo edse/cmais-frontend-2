@@ -118,7 +118,7 @@
                     <span class="colocacao user" style="margin-left: 0;">23º</span>
                     <span class="avatar av1"></span>
                     <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span id="eurekas" class="eurekas">-- </span><span>eurekas</span>
+                    <span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>
                   </li>
                   <!--/posicao-->
                   <li>
