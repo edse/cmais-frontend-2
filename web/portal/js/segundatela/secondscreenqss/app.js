@@ -163,7 +163,7 @@ $(document).ready(function() {
 
 
   questionInfo = function(data, json, clock) {
-    console.log(data.answers.length);
+    console.log(data.answers);
     var btn_style = " disabled";
     if(clock)
       btn_style = " btn-primary";
