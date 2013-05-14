@@ -384,7 +384,7 @@ $(document).ready(function() {
 
   // Send Answer
   $(".answers .resposta").live('click', function(){
-    console.log('---'+$(this).parent().attr('rel'));
+    console.log('---'+$(this).attr('rel'));
     if(!$(this).parent().hasClass('disabled')){
       $(this).parent().parent().find('li').each(function(index){
         $(this).css("background","#ccc");
