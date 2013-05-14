@@ -36,7 +36,7 @@
 .navbar{position:absolute; top:1000px; display:none;}
 #footer{margin-top:100px;}
 
-.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px 4px; width:56px; height:56px;display: block;float:left}
+.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left}
 .av1{background-position:-8px -5px!important;}
 .av2{background-position:-70px -5px!important;}
 .av3{background-position:-132px -5px!important;}
@@ -67,7 +67,7 @@
 
 .section-body .colocacao{min-width: 60px;height: 65px;display: block;background: #eeeeee;float: left;font-family: 'source_sans_probold';color: #cc0000;text-align: center;line-height: 65px;padding: 0 10px;font-size: 3em;}
 .section-body .user{color:#fff; background:#b30003;}
-.section-body .nome_colocacao{padding-top: 11px; display: block; text-overflow:ellipsis; overflow: hidden;}
+.section-body .nome_colocacao{padding-top: 11px; display: block; text-overflow:ellipsis; overflow: hidden;line-height: 17px;}
 .section-body .eurekas{text-overflow:ellipsis; overflow: hidden; font-weight:bold;}
 
 .section-body ul{margin:0;}
