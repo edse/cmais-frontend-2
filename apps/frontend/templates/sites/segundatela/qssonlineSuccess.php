@@ -110,7 +110,9 @@
             
             <!--item lista-->
             <div id="diaria" class="tab-pane fade active in">
-              <div class="row-fluid">
+              
+              <div id="ranking-diario"class="row-fluid">
+                <img id="ajax-loader-qss" src="/portal/images/ajax-loader-qss.gif" style="margin: 5%">
                 <ul>
                   <!--posicao-->
                   <!--posicao-->
