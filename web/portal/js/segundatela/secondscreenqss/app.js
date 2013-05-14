@@ -106,8 +106,8 @@ $(document).ready(function() {
         switch (response.action) {
           case "ping":
             return ping(response.data);
-          case "contentInfo":
-            return contentInfo(response.data, false);
+          //case "contentInfo":
+            //return contentInfo(response.data, false);
           case "questionInfo":
             return questionInfo(response.data, false, true);
           case "contentBan":
@@ -164,34 +164,6 @@ $(document).ready(function() {
     }
   }
 
-  contentInfo = function(data, json) {
-    var c = 'icon-align-left';
-    if(data.type == 'people')
-      c = 'icon-user';
-    if(data.type == 'place')
-      c = 'icon-map-marker';
-    if(data.type == 'poll')
-      c = 'icon-enquete';
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-    html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
-    html += "";
-    html += '</div></div></div>';
-    $('#accordion2').prepend(html);
-    if(!json)
-      document.getElementById('audio-ping').play();
-    //console.log(data.url);
-    $('#uid'+data.uid).load(data.url, function(){
-      $('#uid'+data.handler+'.accordion-body iframe').each(function(i){
-        if($(this).attr('src').indexOf("youtube") != -1){
-          cont++;
-          //console.log(cont);
-          $(this).attr("id","player"+cont);
-          onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-        }
-      });
-    });
-    return;
-  };
 
   questionInfo = function(data, json, clock) {
     var btn_style = " disabled";

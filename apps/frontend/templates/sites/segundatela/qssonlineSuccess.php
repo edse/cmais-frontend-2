@@ -56,7 +56,7 @@
           <ul>
             <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a></li>
             <li><span class="barra">|</span></li>  
-            <li><p id="status" class="online">Desconectado</p></li>
+            <li><p id="status" class="online">--</p></li>
             </ul>
         </div>
       </div>
