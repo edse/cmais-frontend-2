@@ -239,7 +239,7 @@ $(document).ready(function() {
       console.log('---'+$(this).attr('rel'));
       if(!$(this).parent().hasClass('disabled')){
         $(this).parent().find('li').each(function(index){
-          $(this).css("background","#ccc");
+          $(this).css("background","#000");
         });
         //$(this).removeClass('btn-primary').addClass('btn-warning');
         //remaining time
@@ -289,7 +289,9 @@ $(document).ready(function() {
           $(this).removeClass('btn-primary').addClass("disabled");
         });
         */
-       $(".accordion-inner ul li").css('background', '#ccc');
+        $('#uid' + data.uid + ' ul li').css('background', '#666');
+        $('#uid' + data.uid + ' ul li p').css('color', '#333');
+        $('#uid' +data.uid+ ' .answers .resposta').die('click');
         /*
         $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
           $(this).parent().addClass("disabled");
