@@ -52,10 +52,9 @@ $(document).ready(function() {
   var mult    = 2;
   
   serverUrl = 'ws://200.136.27.7:80/secondscreenqss';
-  
-  var content_url   = "/segundatela/secondscreenqss/contents.json";
+
   var question_url  = "/segundatela/secondscreenqss/questions.json";
-  //var last_content_url = "../log/cache1/secondscreenqss/last-content.json";
+
   
   tryToConnect = function() {
     if (window.MozWebSocket) {
@@ -74,8 +73,7 @@ $(document).ready(function() {
       startClock();
       $('#users').hide();
       $('#points').hide();
-      return $('#status a').removeClass("btn-success").addClass('btn-danger').css('opacity', 1).html('desconectado');
-      //return $('#status a').css('opacity', 1).html('desconectado');
+      return $('#status').removeClass('online').addClass('offline').html('desconectado');
     };
 
     socket.onopen = function(msg) {
@@ -87,7 +85,8 @@ $(document).ready(function() {
       $('#users').show()
       $('#points a').css('opacity', 1);
       $('#points').show();
-      $('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
+      //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
+      return $('#status').removeClass('offline').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
@@ -104,10 +103,10 @@ $(document).ready(function() {
         switch (response.action) {
           case "ping":
             return ping(response.data);
-          case "contentInfo":
-            return contentInfo(response.data, false);
+          //case "contentInfo":
+            //return contentInfo(response.data, false);
           case "questionInfo":
-            return questionInfo(response.data, false, true);
+            return questionInfo(response.data, false, false);
           case "contentBan":
             return contentBan(response.data);
           case "questionBan":
@@ -162,41 +161,57 @@ $(document).ready(function() {
     }
   }
 
-  contentInfo = function(data, json) {
-    var c = 'icon-align-left';
-    if(data.type == 'people')
-      c = 'icon-user';
-    if(data.type == 'place')
-      c = 'icon-map-marker';
-    if(data.type == 'poll')
-      c = 'icon-enquete';
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-    html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
-    html += "";
-    html += '</div></div></div>';
-    $('#accordion2').prepend(html);
-    if(!json)
-      document.getElementById('audio-ping').play();
-    //console.log(data.url);
-    $('#uid'+data.uid).load(data.url, function(){
-      $('#uid'+data.handler+'.accordion-body iframe').each(function(i){
-        if($(this).attr('src').indexOf("youtube") != -1){
-          cont++;
-          //console.log(cont);
-          $(this).attr("id","player"+cont);
-          onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-        }
-      });
-    });
-    return;
-  };
 
   questionInfo = function(data, json, clock) {
     var btn_style = " disabled";
     if(clock)
       btn_style = " btn-primary";
+      
+    var html =  '<!--pergunta chamada-->'
+    html += '<div class="accordion-group">'
+    html +=   '<div class="accordion-heading">'
+    html +=     '<span class="cantoneira cant-perg-esq-sup"></span>'
+    html +=     '<span class="cantoneira cant-perg-dir-sup"></span>'
+              
+    html +=     '<span class="cantoneira-esq-meio cant-perg-esq-meio"></span>'
+    html +=     '<span class="cantoneira-dir-meio cant-perg-dir-meio"></span>'
+              
+    html +=     '<span class="cantoneira cant-perg-esq-inf"></span>'
+    html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
+              
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#' + data.handler + '">'
+    html +=       '<p>'+ data.question + '</p>'
+    html +=     '</a>'
 
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
+    html +=   '</div>'
+    
+    html +=   '<!--resposta-->'
+    html +=   '<div id="' + data.handler + '" class="accordion-body collapse">'
+    html +=     '<div class="accordion-inner">' 
+    if(!clock){
+      //console.log(data)
+      html +=      '<ul>'
+      
+      var letras = new Array("A", "B", "C", "D");
+      for(var i=0; i<data.answers.length; i++){
+        html +=         '<li>' 
+        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
+        html +=          '<a href="javascript:;" id="q'+data.uid+'a'+i+' rel="'+data.uid+' class="resposta"><p>' + data.answers[i].text + '</p></a>'
+        html +=          '<span class="cantoneira-b cant-item-dir"></span>'
+        html +=        '</li>'
+      }
+      html +=      '</ul>'      
+    }
+    html +=      '</div>'
+    html +=    '</div>'
+    html +=    '<!--resposta-->'
+    html +=  '</div>'
+    html +=  '<!--/pergunta chamada-->'
+    
+    
+  
+    /*
+    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
     html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += '<div class="question-info" style="float: right;">';
     html += '<span class="level label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
@@ -215,8 +230,9 @@ $(document).ready(function() {
     }
     html += '</div>';
     html += '</div></div></div>';
-    $('#accordion3').prepend(html);
-    
+    */
+    $('#accordion2').prepend(html);
+      
     if(!json)
       document.getElementById('audio-ping').play();
         
@@ -276,7 +292,7 @@ $(document).ready(function() {
     });
   }
   
-  // retrive sent contents by ajax
+  /* retrive sent contents by ajax
   $.ajax({
     url: content_url,
     dataType: 'json',
@@ -290,13 +306,13 @@ $(document).ready(function() {
       }
     }
   });
-  
+  */
   // retrive sent questions by ajax
   $.ajax({
     url: question_url,
     dataType: 'json',
     success:function(json){
-      //console.log(json);
+      console.log(json);
       if(json!=null){
         $.each(json, function( key, value ) {
           if(!value.banned)

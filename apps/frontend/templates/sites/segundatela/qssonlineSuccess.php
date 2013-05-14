@@ -56,8 +56,7 @@
           <ul>
             <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a></li>
             <li><span class="barra">|</span></li>  
-            <li><p class="online hide" style="color: green">Conectado</p></li>
-            <li><p class="offline">Desconectado</p></li>
+            <li><p id="status" class="online">--</p></li>
             </ul>
         </div>
       </div>
@@ -84,160 +83,6 @@
         <!--perguntas-->
         <div class="accordion" id="accordion2">
           
-          <!--pergunta chamada-->
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <span class="cantoneira cant-perg-esq-sup"></span>
-              <span class="cantoneira cant-perg-dir-sup"></span>
-              
-              <span class="cantoneira-esq-meio cant-perg-esq-meio"></span>
-              <span class="cantoneira-dir-meio cant-perg-dir-meio"></span>
-              
-              <span class="cantoneira cant-perg-esq-inf"></span>
-              <span class="cantoneira cant-perg-dir-inf"></span>
-              
-              
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#seis">
-                <p>Steven Spielberg conquistou seu primeiro Oscar?</p>
-
-              </a>
-
-            </div>
-            <!--resposta-->
-            <div id="seis" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <ul>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">A</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">B</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre</p> </a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li class="correct">
-                    <span class="cantoneira-b cant-item-esq letra">C</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">D</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--resposta-->
-          </div>
-          <!--/pergunta chamada-->
-          
-          
-
-          
-          <!--pergunta chamada-->
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <span class="cantoneira cant-perg-esq-sup"></span>
-              <span class="cantoneira cant-perg-dir-sup"></span>
-              
-              <span class="cantoneira-esq-meio cant-perg-esq-meio"></span>
-              <span class="cantoneira-dir-meio cant-perg-dir-meio"></span>
-              
-              <span class="cantoneira cant-perg-esq-inf"></span>
-              <span class="cantoneira cant-perg-dir-inf"></span>
-              
-              
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#sete">
-                <p>Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme?</p>
-
-              </a>
-
-            </div>
-            <!--resposta-->
-            <div id="sete" class="accordion-body collapse">
-              <div class="accordion-inner arquivo">
-                <ul>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">A</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">B</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre </p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li class="correct">
-                    <span class="cantoneira-b cant-item-esq letra">C</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">D</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--resposta-->
-          </div>
-          <!--/pergunta chamada-->
-
-          <!--pergunta chamada-->
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <span class="cantoneira cant-perg-esq-sup"></span>
-              <span class="cantoneira cant-perg-dir-sup"></span>
-              
-              <span class="cantoneira-esq-meio cant-perg-esq-meio"></span>
-              <span class="cantoneira-dir-meio cant-perg-dir-meio"></span>
-              
-              <span class="cantoneira cant-perg-esq-inf"></span>
-              <span class="cantoneira cant-perg-dir-inf"></span>
-              
-              
-              <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#oito">
-                <p>Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme? Steven Spielberg conquistou seu primeiro Oscar de melhor diretor, com qual filme?</p>
-
-              </a>
-
-            </div>
-            <!--resposta-->
-            <div id="oito" class="accordion-body collapse">
-              <div class="accordion-inner arquivo">
-                <ul>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">A</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">B</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre</p> </a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li class="correct">
-                    <span class="cantoneira-b cant-item-esq letra">C</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                  <li>
-                    <span class="cantoneira-b cant-item-esq letra">D</span>
-                    <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
-                    <span class="cantoneira-b cant-item-dir"></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--resposta-->
-          </div>
-          <!--/pergunta chamada-->
-          
-         
           
         </div>
         <!--/perguntas-->
@@ -494,15 +339,6 @@
 <!--/section-body-->
 
 
-<!--
-<audio id="audio-ping">
-  <source src="/portal/audio/ping.mp3" />
-  <source src="/portal/audio/ping.ogg" />
-</audio>
--->
-<!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script-->    
-<!--script type="text/javascript" src="/portal/js/json2.js"></script-->
-<!--script type="text/javascript" src="/portal/js/segundatela/secondscreencartaoverde/app.js?nocache=<?php echo time()?>"></script-->
 <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
 <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
 <script>
@@ -515,11 +351,11 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
           }, 1000);
-     
-     $(".accordion-inner a").not('.accordion-inner.arquivo a').click(function(){
-       $(".accordion-inner li").removeClass('selected');
-       $(this).parent().addClass('selected');
-     });
+    $(".accordion-inner a").live("click", function(){
+      $(".accordion-inner li").removeClass('selected');
+      $(this).parent().addClass('selected');
+    });
+  
      
     });
 </script>
