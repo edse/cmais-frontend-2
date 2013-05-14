@@ -144,7 +144,7 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    console.log(data.ranking);
+    console.log(data);
     
     if(data){
       $('.ajax-loader-qss').hide(); 
