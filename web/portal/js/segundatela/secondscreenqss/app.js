@@ -241,7 +241,6 @@ $(document).ready(function() {
         $(this).parent().parent().find('li').each(function(index){
           $(this).css("background","#ccc");
         });
-        
         //$(this).removeClass('btn-primary').addClass('btn-warning');
         //remaining time
         //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
@@ -253,12 +252,12 @@ $(document).ready(function() {
         window.audio_tictac.pause();
         var payload = new Object();
         var data = new Object();
-        payload.action = "wrongAnswer";
+        payload.action = "answer";
         data.answer = $(this).find('p').html();
         data.question = $(this).attr('rel');
         data.time = time;
         payload.data = data;
-        return socket.send(JSON.stringify(payload)); 
+        return socket.send(JSON.stringify(payload));
       }
     });
       
