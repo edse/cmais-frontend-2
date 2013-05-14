@@ -1,3 +1,11 @@
+<?php
+if(isset($pager)){
+  if($pager->count() == 1){
+    header("Location: ".$pager->getCurrent()->retriveUrl());
+    die();
+  }  
+} 
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
@@ -179,40 +187,59 @@ $(function(){
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
 
-            <?php if(isset($displays["destaque-principal"])): ?>
-              <?php if($displays["destaque-principal"][0]->id > 0): ?>
-                <!-- NOTICIA INTERNA -->
-                <div class="box-interna grid2">
-                  <h3><a href="<?php echo $displays["destaque-principal"][0]->retriveUrl() ?>"><?php echo $displays["destaque-principal"][0]->getTitle() ?></a></h3>
-                  <a href="<?php echo $displays["destaque-principal"][0]->retriveUrl() ?>" class="txt-16"><?php echo $displays["destaque-principal"][0]->getDescription() ?></a>
-                  <div class="assinatura grid2"><p class="sup"></p></div>
-                  <div class="texto">
-                    <div class="box-relacionados grid1">
-                      <?php if($displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
-                      <a href="<?php echo $displays["destaque-principal"][0]->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>">
-                        <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" name="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" style="width: 300px;" class="310x186" />
-                      </a>
-                      <?php endif; ?>
-                    </div>
-                    <?php if(isset($displays["destaque-principal"][0]->AssetContent)): ?>
-                      <p><?php echo $displays["destaque-principal"][0]->AssetContent->getHeadlineLong() ?></p>
-                    <?php endif; ?>
-                  </div>
-                </div>
-                <!-- /NOTICIA INTERNA -->
-              <?php endif; ?>
-            <?php endif; ?>
-
-            <?php if(count($pager) > 0): ?>
-              <!-- BOX LISTAO -->
-              <div class="box-listao grid2">
+              <?php if(count($pager) > 0): ?>        
                 <?php foreach($pager->getResults() as $k=>$d): ?>
+                     
+              <!-- NOTICIA INTERNA -->
+              <div class="box-interna grid2">
+                <h3><?php echo $d->getTitle() ?></h3>
+                <p><?php echo $d->getDescription() ?></p>
+                <div class="assinatura grid2">
+                  <p class="sup"><?php echo $d->AssetContent->getAuthor() ?> <span><?php echo $d->retriveLabel() ?></span></p>
+                  <p class="inf"><?php echo format_date($d->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($d->getUpdatedAt(), "g") ?></p>
+
+                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $d->retriveUrl())) ?>
+
+                </div>
+                
+                <div class="texto">
                   <?php echo html_entity_decode($d->AssetContent->render()) ?>
-                  <?php echo "test: $k" ?>
-                <?php endforeach; ?>
+                </div>
+                
+                <?php $relacionados = $d->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
+                <?php if(count($relacionados) > 0): ?>
+                  
+                  
+                  <!-- SAIBA MAIS -->
+                  <div class="box-padrao grid2" style="margin-bottom: 20px;">
+                    <div id="saibamais">                                                            
+                    <h4>saiba +</h4>                                                            
+                    <ul class="conteudo">
+                      <?php foreach($relacionados as $k2=>$d2): ?>
+                        <li style="width: auto;">
+                          <a class="titulos" href="<?php echo $d2->retriveUrl()?>" style="width: auto;"><?php echo $d2->getTitle()?></a>
+                          <!--
+                          <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
+                            <a href="<?php echo $d->retriveUrl()?>" class="img-90x54" style="width: auto">
+                              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
+                            </a>
+                          <?php endif; ?>
+                          -->
+                          <!--p><?php echo $d->getDescription()?></p-->
+                        </li>
+                      <?php endforeach; ?>
+                    </ul>
+                   </div>
+                  </div>
+                  <!-- SAIBA MAIS -->
+                <?php endif; ?>
+                
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $d->retriveUrl())) ?>
+
               </div>
-              <!-- /BOX LISTAO -->
-            <?php endif; ?>
+              <!-- /NOTICIA INTERNA -->
+                <?php endforeach; ?>
+              <?php endif; ?>
 
             <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
