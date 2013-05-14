@@ -238,7 +238,7 @@ $(document).ready(function() {
     //$(".answers .resposta").live('click', function(){
       console.log('---'+$(this).attr('rel'));
       if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().parent().find('li').each(function(index){
+        $(this).parent().find('li').each(function(index){
           $(this).css("background","#ccc");
         });
         //$(this).removeClass('btn-primary').addClass('btn-warning');
