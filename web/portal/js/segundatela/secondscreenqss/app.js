@@ -227,7 +227,7 @@ $(document).ready(function() {
     html +=  '</div>'
     html +=  '<!--/pergunta chamada-->'
   
-    
+    /*
     var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
     html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += '<div class="question-info" style="float: right;">';
@@ -247,6 +247,7 @@ $(document).ready(function() {
     }
     html += '</div>';
     html += '</div></div></div>';
+    */
     $('#accordion2').prepend(html);
     
     if(!json)
