@@ -309,7 +309,7 @@ $(document).ready(function() {
     });
   }
   
-  // retrive sent contents by ajax
+  /* retrive sent contents by ajax
   $.ajax({
     url: content_url,
     dataType: 'json',
@@ -323,7 +323,7 @@ $(document).ready(function() {
       }
     }
   });
-  
+  */
   // retrive sent questions by ajax
   $.ajax({
     url: question_url,
