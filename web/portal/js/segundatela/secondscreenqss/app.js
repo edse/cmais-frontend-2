@@ -191,9 +191,11 @@ $(document).ready(function() {
     if(!clock){
       //console.log(data)
       html +=      '<ul>'
+      
+      var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
         html +=         '<li>' 
-        html +=          '<span class="cantoneira-b cant-item-esq letra">A</span>'
+        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
         html +=          '<a href="javascript:;" id="q'+data.uid+'a'+i+' rel="'+data.uid+' class="resposta"><p>' + data.answers[i].text + '</p></a>'
         html +=          '<span class="cantoneira-b cant-item-dir"></span>'
         html +=        '</li>'
@@ -205,30 +207,7 @@ $(document).ready(function() {
     html +=    '<!--resposta-->'
     html +=  '</div>'
     html +=  '<!--/pergunta chamada-->'
-    /*
-    html +=       <ul>
-    html +=         <li>
-    html +=                <span class="cantoneira-b cant-item-esq letra">A</span>
-    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>O Resgate do Soldado Ryan</p></a>
-    html +=                <span class="cantoneira-b cant-item-dir"></span>
-    html +=               </li>
-    html +=              <li>
-    html +=                <span class="cantoneira-b cant-item-esq letra">B</span>
-    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>ET - O Extraterrestre</p> </a>
-    html +=                 <span class="cantoneira-b cant-item-dir"></span>
-    html +=              </li>
-    html +=              <li class="correct">
-    html +=                <span class="cantoneira-b cant-item-esq letra">C</span>
-    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>Tubarão</p></a>
-    html +=                <span class="cantoneira-b cant-item-dir"></span>
-    html +=              </li>
-    html +=              <li>
-    html +=                <span class="cantoneira-b cant-item-esq letra">D</span>
-    html +=                <a href="javascript:;" title="resposta A" class="resposta"><p>A Lista de Schindler</p></a>
-    html +=                <span class="cantoneira-b cant-item-dir"></span>
-    html +=              </li>
-    html +=            </ul>
-    */
+    
     
   
     /*
