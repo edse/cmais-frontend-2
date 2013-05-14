@@ -144,10 +144,11 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    console.log(data);
+    console.log(data.name);
+    console.log(data.avatar);
     
     if(data){
-      $('.ajax-loader-qss').hide(); 
+      $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
       $('#eurekas').html(data.userRanking);
       var info = data.ranking;
