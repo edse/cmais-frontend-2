@@ -170,7 +170,7 @@ $(document).ready(function() {
     if(clock)
       btn_style = " btn-primary";
 
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
+    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
     html += '<div id="uid'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += '<div class="question-info" style="float: right;">';
     html += '<span class="level label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
@@ -189,7 +189,7 @@ $(document).ready(function() {
     }
     html += '</div>';
     html += '</div></div></div>';
-    $('#accordion3').prepend(html);
+    $('#accordion2').prepend(html);
     
     if(!json)
       document.getElementById('audio-ping').play();
