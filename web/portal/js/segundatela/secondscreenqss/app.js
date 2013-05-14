@@ -241,7 +241,7 @@ $(document).ready(function() {
         $(this).parent().parent().find('li').each(function(index){
           $(this).css("background","#ccc");
         });
-        $('#uid'+data.uid+' .answers .resposta').die('click');
+        $(this).die('click');
         //$(this).removeClass('btn-primary').addClass('btn-warning');
         //remaining time
         //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
