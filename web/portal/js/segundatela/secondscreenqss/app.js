@@ -239,7 +239,7 @@ $(document).ready(function() {
       console.log('---'+$(this).attr('rel'));
       if(!$(this).parent().hasClass('disabled')){
         $(this).parent().find('li').each(function(index){
-          $(this).css("background","#ccc");
+          $(this).css("background","#000");
         });
         //$(this).removeClass('btn-primary').addClass('btn-warning');
         //remaining time
