@@ -87,7 +87,7 @@
 .section-body .resposta{width: 90%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
 .section-body .resposta p{overflow: hidden; text-overflow: ellipsis; margin:0;height:20px; }
 .section-body .correct{background:#2db91f!important;}
-.section-body .selected{background:#d48520;}
+/*.section-body .selected{background:#d48520;}*/
 
 .section-body .accordion-heading{position:relative;border:none}
 .section-body .accordion-heading p{padding:8px 23px;margin:0;}
