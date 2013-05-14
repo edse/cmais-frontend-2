@@ -2,3 +2,4 @@
 .paginacao .centraliza { float:right; margin:0; width:auto !important; }
 #esquerda hr { visibility:visible; margin-bottom:40px; }
 .box-interna p a { color:#ff6633; }
+.box-interna h3 a:hover { text-decoration:none; color:#ff6633; }
