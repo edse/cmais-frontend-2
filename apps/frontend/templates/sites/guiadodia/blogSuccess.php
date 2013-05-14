@@ -191,8 +191,8 @@ $(function(){
                 <?php foreach($pager->getResults() as $k=>$d): ?>
                      
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
-                <h3><?php echo $d->getTitle() ?></h3>
+              <div class="box-interna grid2" style="margin-top:35px;">
+                <h4><?php echo $d->getTitle() ?></h4>
                 <p><?php echo $d->getDescription() ?></p>
                 <div class="assinatura grid2">
                   <p class="sup"><?php echo $d->AssetContent->getAuthor() ?> <span><?php echo $d->retriveLabel() ?></span></p>
