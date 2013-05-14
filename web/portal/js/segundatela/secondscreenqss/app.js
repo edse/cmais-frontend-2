@@ -166,10 +166,10 @@ $(document).ready(function() {
         html_rank += '</li>'
         html_rank += '<!--/posicao-->'
         
-        $('#rankingTable').append(html_rank);
+        $('#rankingTable').prepend(html_rank);
         //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
       }
-      $('#ranking').fadeIn('slow');
+      //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }
   }
