@@ -1433,7 +1433,7 @@ class _sectionActions extends sfActions
         $pagelimit = 20;
     }
     if($this->section->Site->getSlug() == "quintaldacultura") {
-      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "atividades")
+      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
         $pagelimit = 72;
     }
 	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
