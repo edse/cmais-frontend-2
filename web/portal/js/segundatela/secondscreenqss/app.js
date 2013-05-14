@@ -154,13 +154,15 @@ $(document).ready(function() {
       $('#ranking-diario').html(null);
       for(id in info) {
         c++;
+        
         name = info[id][0];
         points = info[id][1];
+        avatar = info[id][2];
         
         var html_rank = '<!--posicao-->'
-        html_rank +='<li style="list-style:none">'
+        html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee">'
         html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>'
-        html_rank +=  '<span class="avatar av3"></span>'
+        html_rank +=  '<span class="avatar '++'"></span>'
         html_rank +=  '<span class="nome_colocacao">Fulano Beltrano silcrano</span> '
         html_rank +=  '<span class="eurekas">999 eurekas</span>'
         html_rank += '</li>'
