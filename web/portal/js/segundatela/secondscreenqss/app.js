@@ -188,7 +188,7 @@ $(document).ready(function() {
     html +=   '<!--resposta-->'
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
-    if(!clock){
+    if(clock){
       //console.log(data)
       html +=      '<ul class="answers">'
       
