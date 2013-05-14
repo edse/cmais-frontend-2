@@ -188,7 +188,7 @@ $(document).ready(function() {
     html +=   '</div>'
     
     html +=   '<!--resposta-->'
-    html +=   '<div id="' data.handler '" class="accordion-body collapse">'
+    html +=   '<div id="' + data.handler + '" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
     if(clock){
       console.log(data)
