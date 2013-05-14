@@ -408,7 +408,7 @@ $(document).ready(function() {
   });
 
   //
-
+  /*
   // Send Answer
   $('.answers .resposta').live('click', function(){
   //$(".answers .resposta").live('click', function(){
@@ -436,7 +436,7 @@ $(document).ready(function() {
       return socket.send(JSON.stringify(payload));
     }
   });
-
+  */
   wrongAnswer = function(data) {
     window.audio_tictac.pause();
     window.audio_wrong.currentTime = 0;
