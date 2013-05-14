@@ -106,7 +106,7 @@ $(document).ready(function() {
           //case "contentInfo":
             //return contentInfo(response.data, false);
           case "questionInfo":
-            return questionInfo(response.data, false, false);
+            return questionInfo(response.data, false, true);
           case "contentBan":
             return contentBan(response.data);
           case "questionBan":
