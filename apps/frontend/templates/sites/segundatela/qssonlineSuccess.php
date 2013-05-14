@@ -352,10 +352,6 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
           }, 1000);
-    $(".accordion-inner a").live("click", function(){
-      $(".accordion-inner li").removeClass('selected');
-      $(this).parent().addClass('selected');
-    });
   
      
     });
