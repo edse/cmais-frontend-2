@@ -159,10 +159,10 @@ $(document).ready(function() {
         
         var html_rank = '<!--posicao-->'
         html_rank +='<li style="border-bottom: none;">'
-        html_rank +=  '<span class="colocacao user" style="margin-left: 0;">23º</span>'
-        html_rank +=  '<span class="avatar av1"></span>'
-        html_rank +=  '<span class="nome_colocacao">Fulano Beltrano</span>' 
-        html_rank +=  '<span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>'
+        html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>
+        html_rank +=  '<span class="avatar av3"></span>'
+        html_rank +=  '<span class="nome_colocacao">Fulano Beltrano silcrano</span> '
+        html_rank +=  '<span class="eurekas">999 eurekas</span>'
         html_rank += '</li>'
         html_rank += '<!--/posicao-->'
         
