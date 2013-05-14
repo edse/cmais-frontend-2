@@ -179,18 +179,18 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-esq-inf"></span>'
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
               
-    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#' + data.handler + '">'
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="uid'+data.uid+'">'
     html +=       '<p>'+ data.question + '</p>'
     html +=     '</a>'
 
     html +=   '</div>'
     
     html +=   '<!--resposta-->'
-    html +=   '<div id="' + data.handler + '" class="accordion-body collapse">'
+    html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
-    if(!clock){
+    if(clock){
       //console.log(data)
-      html +=      '<ul>'
+      html +=      '<ul class="answers">'
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
@@ -256,8 +256,13 @@ $(document).ready(function() {
       if(time<1){
         window.audio_tictac.pause();
         window.audio_wrong.play();
+        /*
         $('#uid'+data.uid+' .answers').find('.btn').each(function(index){
           $(this).removeClass('btn-primary').addClass("disabled");
+        });
+        */
+        $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
+          $(this).attr("disabled", "disabled");
         });
         window.clearInterval(window.interval);
         //send empty answer
