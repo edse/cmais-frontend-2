@@ -262,9 +262,12 @@ $(document).ready(function() {
           $(this).removeClass('btn-primary').addClass("disabled");
         });
         */
+       $(".accordion-inner ul li").css('background', '#ccc');
+        /*
         $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
           $(this).parent().addClass("disabled");
         });
+        */
         window.clearInterval(window.interval);
         //send empty answer
         var payload;
@@ -380,23 +383,24 @@ $(document).ready(function() {
   //
 
   // Send Answer
-  $(".answer .btn").live('click', function(){
-    if(!$(this).hasClass('disabled')){
-      $(this).parent().parent().find('.btn').each(function(index){
-        $(this).removeClass('btn-primary').addClass("disabled");
+  $(".answer .resposta").live('click', function(){
+    if(!$(this).parent().hasClass('disabled')){
+      $(this).parent().parent().find('li').each(function(index){
+        $(this).css("background","#ccc");
       });
-      $(this).removeClass('btn-primary').addClass('btn-warning');
+      //$(this).removeClass('btn-primary').addClass('btn-warning');
       //remaining time
-      var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
-      var p = t.split('tempo: ');
-      var time = parseInt(p[1]);
+      //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+      //var p = t.split('tempo: ');
+      //var time = parseInt(p[1]);
+      var time = 0;
       //send answer
       window.clearInterval(window.interval);
       window.audio_tictac.pause();
       var payload = new Object();
       var data = new Object();
       payload.action = "answer";
-      data.answer = $(this).find('span').html();
+      data.answer = $(this).find('p').html();
       data.question = $(this).attr('rel');
       data.time = time;
       payload.data = data;
