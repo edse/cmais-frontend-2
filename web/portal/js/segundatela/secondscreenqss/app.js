@@ -383,7 +383,8 @@ $(document).ready(function() {
   //
 
   // Send Answer
-  $(".answers .resposta").live('click', function(){
+  $('#uid'+data.question+' .answers .resposta').live('click', function(){
+  //$(".answers .resposta").live('click', function(){
     console.log('---'+$(this).attr('rel'));
     if(!$(this).parent().hasClass('disabled')){
       $(this).parent().parent().find('li').each(function(index){
@@ -417,7 +418,7 @@ $(document).ready(function() {
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green')
     $('#eurekas').html(data.points);
-    $(".answers .resposta").die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     //$('#uid'+data.question+' .resposta').removeAttr('href');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
@@ -435,7 +436,7 @@ $(document).ready(function() {
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
-        $(".answers .resposta").die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
       $('#points').fadeTo('fast', 1);
