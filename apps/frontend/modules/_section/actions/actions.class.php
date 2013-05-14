@@ -1384,6 +1384,8 @@ class _sectionActions extends sfActions
       $pagelimit = 12;
     elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="cartaoverde"))
       $pagelimit = 1;
+    elseif(($sectionSlug == 'blog')&&($this->site->getSlug()=="guiadodia"))
+      $pagelimit = 3;
     elseif(($this->site->Program->Channel->getSlug()=="univesptv" || $this->site->Program->Channel->getSlug()=="univesp-tv-copy")&&($this->site->getType() != "Portal")){
       if($this->section->getSlug() != "home"){
         if($request->getParameter('debug') != "")

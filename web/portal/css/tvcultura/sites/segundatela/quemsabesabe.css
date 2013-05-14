@@ -2,6 +2,7 @@
 /* quem sabe sabe */
 .offline{color:red!important;}
 .online{color:#006600!important;}
+.disabled{background:#ccc!important;}
 .hero-unit {background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg_topo_qss.jpg) no-repeat; text-align:left;}
 .hero-unit .bgtopo { width: 240px; height:200px; background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/apresentadores_qss.png) no-repeat; float:left; margin-right:10px; }
 .hero-unit .col-esq {margin-left: 2%;max-width: 38%;}
@@ -83,10 +84,10 @@
 .section-body .accordion-inner{background:none!important;}
 .accordion-inner ul {padding: 0px 18px}
 .accordion-inner ul li{ height: 33px; background: #6c0205; list-style: none; margin-bottom: 5px;}
-.section-body .resposta{width: 90%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
+.section-body .resposta{width: 90%;display: block;float: left;padding: 7px;color: white;text-decoration: none; cursor:pointer;;}
 .section-body .resposta p{overflow: hidden; text-overflow: ellipsis; margin:0;height:20px; }
 .section-body .correct{background:#2db91f!important;}
-.section-body .selected{background:#d48520;}
+/*.section-body .selected{background:#d48520;}*/
 
 .section-body .accordion-heading{position:relative;border:none}
 .section-body .accordion-heading p{padding:8px 23px;margin:0;}

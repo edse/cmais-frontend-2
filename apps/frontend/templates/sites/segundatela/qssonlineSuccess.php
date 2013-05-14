@@ -113,6 +113,14 @@
               <div class="row-fluid">
                 <ul>
                   <!--posicao-->
+                  <!--posicao-->
+                  <li style="border-bottom: none;">
+                    <span class="colocacao user" style="margin-left: 0;">23º</span>
+                    <span class="avatar av1"></span>
+                    <span class="nome_colocacao">Fulano Beltrano</span> 
+                    <span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>
+                  </li>
+                  <!--/posicao-->
                   <li>
                     <span class="colocacao" style="margin-left: 0;">1º</span>
                     <span class="avatar av3"></span>
@@ -202,14 +210,7 @@
                   </li>
                   <!--/posicao-->
                   
-                  <!--posicao-->
-                  <li style="border-bottom: none;">
-                    <span class="colocacao user" style="margin-left: 0;">23º</span>
-                    <span class="avatar av1"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
+                  
                 </ul>
               </div>  
             </div>
@@ -351,10 +352,6 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
           }, 1000);
-    $(".accordion-inner a").live("click", function(){
-      $(".accordion-inner li").removeClass('selected');
-      $(this).parent().addClass('selected');
-    });
   
      
     });
