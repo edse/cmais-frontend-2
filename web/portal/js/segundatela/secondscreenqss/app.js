@@ -158,13 +158,13 @@ $(document).ready(function() {
         points = info[id][1];
         
         var html_rank = '<!--posicao-->'
-        var html_rank +='<li style="border-bottom: none;">'
-        var html_rank +=  '<span class="colocacao user" style="margin-left: 0;">23º</span>'
-        var html_rank +=  '<span class="avatar av1"></span>'
-        var html_rank +=  '<span class="nome_colocacao">Fulano Beltrano</span>' 
-        var html_rank +=  '<span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>'
-        var html_rank += '</li>'
-        var html_rank += '<!--/posicao-->'
+        html_rank +='<li style="border-bottom: none;">'
+        html_rank +=  '<span class="colocacao user" style="margin-left: 0;">23º</span>'
+        html_rank +=  '<span class="avatar av1"></span>'
+        html_rank +=  '<span class="nome_colocacao">Fulano Beltrano</span>' 
+        html_rank +=  '<span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>'
+        html_rank += '</li>'
+        html_rank += '<!--/posicao-->'
         
         $('#rankingTable').append(html_rank);
         //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
