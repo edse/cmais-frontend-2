@@ -417,6 +417,8 @@ $(document).ready(function() {
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' ul:nth-child('+data.correct_index+')').css('background','green!important')
     $('#eurekas').html(data.points);
+    $('#uid'+data.question+' .resposta').attr('disabled','disabled');
+    $('#uid'+data.question+' .resposta').css('cursor', 'not-allowed')
     /*
     $('#points').fadeTo('fast', 0.1, function() {
       $('#points').fadeTo('fast', 1);
