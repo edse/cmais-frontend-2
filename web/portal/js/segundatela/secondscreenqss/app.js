@@ -197,7 +197,7 @@ $(document).ready(function() {
       for(var i=0; i<data.answers.length; i++){
         html +=         '<li>' 
         html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
-        html +=          '<a href="javascript:;" id="q'+data.uid+'a'+i+' rel="'+data.uid+' class="resposta"><p>' + data.answers[i].text + '</p></a>'
+        html +=          '<a href="javascript:;" id="q'+data.uid+'a'+i+' rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></a>'
         html +=          '<span class="cantoneira-b cant-item-dir"></span>'
         html +=        '</li>'
       }
