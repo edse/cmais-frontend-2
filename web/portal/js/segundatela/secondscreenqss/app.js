@@ -106,7 +106,7 @@ $(document).ready(function() {
           //case "contentInfo":
             //return contentInfo(response.data, false);
           case "questionInfo":
-            return questionInfo(response.data, false, true);
+            return questionInfo(response.data, false, false);
           case "contentBan":
             return contentBan(response.data);
           case "questionBan":
@@ -188,7 +188,7 @@ $(document).ready(function() {
     html +=   '<!--resposta-->'
     html +=   '<div id="' + data.handler + '" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
-    //if(clock){
+    if(!clock){
       //console.log(data)
       html += '<ul class="answers media-list">';
       for(var i=0; i<data.answers.length; i++){
@@ -196,7 +196,7 @@ $(document).ready(function() {
         html += '<span>'+data.answers[i].text+'</span></a></li>';
       }
       html += '</ul>';
-    //}
+    }
     html +=      '</div>'
     html +=    '</div>'
     html +=    '<!--resposta-->'
