@@ -1,5 +1,6 @@
 @import url("geral.css");
 /* quem sabe sabe */
+.time{margin: 0% 0 1% 7%}
 .offline{color:red!important;}
 .online{color:#006600!important;}
 .disabled{background:#ccc!important;}

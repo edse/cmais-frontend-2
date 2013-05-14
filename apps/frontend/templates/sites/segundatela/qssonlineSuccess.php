@@ -102,7 +102,7 @@
             <li class="active"><a data-toggle="tab" href="#diaria">DIÁRIA</a></li>
             <!--li class=""><a data-toggle="tab" href="#semanal">SEMANAL</a></li-->
             <li style="float:right;border:none;"><span class="cantoneira-b cant-item-dir"></span></li>
-          </ul>
+          </ul>  
           <!--botoes abas-->
           
           <!--lista classificacao-->
@@ -110,108 +110,10 @@
             
             <!--item lista-->
             <div id="diaria" class="tab-pane fade active in">
-              <div class="row-fluid">
-                <ul>
-                  <!--posicao-->
-                  <!--posicao-->
-                  <li style="border-bottom: none;">
-                    <span class="colocacao user" style="margin-left: 0;">23º</span>
-                    <span class="avatar av1"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span id="eurekas" class="eurekas">-- </span><span class="eurekas">&nbsp;eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">1º</span>
-                    <span class="avatar av3"></span>
-                    <span class="nome_colocacao">Fulano Beltrano silcrano</span> 
-                    <span class="eurekas">999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">2º</span>
-                    <span class="avatar av1"></span>
-                    <span class="nome_colocacao">Fulano Beltrano silcrano da silva sauro</span> 
-                    <span class="eurekas">99 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">3º</span>
-                    <span class="avatar av2"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">99999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">4º</span>
-                    <span class="avatar av4"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">9999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">5º</span>
-                    <span class="avatar av5"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">6º</span>
-                    <span class="avatar av6"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">7º</span>
-                    <span class="avatar av8"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">8º</span>
-                    <span class="avatar av7"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">9º</span>
-                    <span class="avatar av10"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  <!--posicao-->
-                  <li>
-                    <span class="colocacao" style="margin-left: 0;">10º</span>
-                    <span class="avatar av9"></span>
-                    <span class="nome_colocacao">Fulano Beltrano</span> 
-                    <span class="eurekas">999999 eurekas</span>
-                  </li>
-                  <!--/posicao-->
-                  
-                  
-                </ul>
+              
+              <div id="ranking-diario"class="row-fluid">
+                <img id="ajax-loader-qss" src="/portal/images/ajax-loader-qss.gif" style="margin: 5%">
+                
               </div>  
             </div>
             <!--item lista-->

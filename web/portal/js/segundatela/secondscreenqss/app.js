@@ -144,19 +144,38 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
+ 
     if(data){
-      $('#watching').html(data.users);
-      $('#eurekas').html(data.userRanking);
+      $('#ajax-loader-qss').hide(); 
+      //$('#watching').html(data.users);
+      //$('#eurekas').html(data.userRanking);
       var info = data.ranking;
       var c = 0;
-      $('#rankingTable').html(null);
+      $('#ranking-diario').html(null);
       for(id in info) {
-        c++;
         name = info[id][0];
         points = info[id][1];
-        $('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        if(info[id][2] == null){
+          avatar = "av1";
+        }else{
+          avatar = info[id][2];
+        }
+        
+        if(name){
+          c++;
+          var html_rank = '<!--posicao-->'
+          html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
+          html_rank +=  '<span class="colocacao" style="margin-left: 0;">'+c+'º</span>'
+          html_rank +=  '<span class="avatar '+avatar+'"></span>'
+          html_rank +=  '<span class="nome_colocacao">'+name+'</span> '
+          html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
+          html_rank += '</li>'
+          html_rank += '<!--/posicao-->'
+          $('#ranking-diario').append(html_rank);
+          //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
+        }        
       }
-      $('#ranking').fadeIn('slow');
+      //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }
   }
