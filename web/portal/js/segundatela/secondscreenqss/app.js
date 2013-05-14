@@ -240,7 +240,6 @@ $(document).ready(function() {
       if(!$(this).parent().hasClass('disabled')){
         $(this).parent().parent().find('li').each(function(index){
           $(this).css("background","#ccc");
-          $(this).die('click');
         });
         
         //$(this).removeClass('btn-primary').addClass('btn-warning');
@@ -254,7 +253,7 @@ $(document).ready(function() {
         window.audio_tictac.pause();
         var payload = new Object();
         var data = new Object();
-        payload.action = "wrongAnswer";
+        payload.action = "answer";
         data.answer = $(this).find('p').html();
         data.question = $(this).attr('rel');
         data.time = time;
