@@ -144,8 +144,9 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
+    console.log(data);
     if(data){
-      $('#watching').html(data.users);
+      //$('#watching').html(data.users);
       $('#eurekas').html(data.userRanking);
       var info = data.ranking;
       var c = 0;
