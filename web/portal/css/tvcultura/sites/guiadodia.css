@@ -1,2 +1,2 @@
 .box-interna { margin-bottom:40px; }
-.paginacao .centraliza { float:right; margin:0; width:auto; }
+.paginacao .centraliza { float:right; margin:0; width:auto !important; }
