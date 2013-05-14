@@ -81,7 +81,7 @@
           <!--h2>PERGUNTAS PASSADAS</h2-->
           
         <!--perguntas-->
-        <div class="accordion" id="accordion2">
+        <div class="accordion" id="accordion3">
           
           <!--pergunta chamada-->
           <div class="accordion-group">
