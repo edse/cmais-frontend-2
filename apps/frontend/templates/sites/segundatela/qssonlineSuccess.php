@@ -351,7 +351,7 @@
       var hours = new Date().getHours();
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
           }, 1000);
-    $(".accordion-inner a").not('.accordion-inner.arquivo a').live("click", function(){
+    $(".accordion-inner a").live("click", function(){
       alert('oi')
       $(".accordion-inner li").removeClass('selected');
       $(this).parent().addClass('selected');
