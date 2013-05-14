@@ -103,7 +103,6 @@
             <!--li class=""><a data-toggle="tab" href="#semanal">SEMANAL</a></li-->
             <li style="float:right;border:none;"><span class="cantoneira-b cant-item-dir"></span></li>
           </ul>  
-          <ul id="rankingTable"></ul>
           <!--botoes abas-->
           
           <!--lista classificacao-->

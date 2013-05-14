@@ -151,7 +151,7 @@ $(document).ready(function() {
       //$('#eurekas').html(data.userRanking);
       var info = data.ranking;
       var c = 0;
-      $('#rankingTable').html(null);
+      $('#ranking-diario').html(null);
       for(id in info) {
         c++;
         name = info[id][0];
@@ -166,7 +166,7 @@ $(document).ready(function() {
         html_rank += '</li>'
         html_rank += '<!--/posicao-->'
         
-        $('#rankingTable').prepend(html_rank);
+        $('#ranking-diario').prepend(html_rank);
         //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
       }
       //$('#ranking').fadeIn('slow');
