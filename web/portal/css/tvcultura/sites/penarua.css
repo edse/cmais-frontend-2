@@ -49,8 +49,6 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 .home .placas a {text-indent:-9999px; display:block;}
 .home .relogio a:hover { opacity:0.8; -moz-opacity: 0.8; filter: alpha(opacity=80);}
 .home .fale-conosco { width:92px; height:189px; background:url(/portal/images/capaPrograma/penarua/fale-conosco.png) no-repeat; bottom:340px; left:0; }
-.home .fale-conosco a { width:95px; height:100px; }
-.home .fale-conosco:hover {  background-image:url(/portal/images/capaPrograma/penarua/fale-conoscoHover.png); }
 .home .relogio { width:144px; height:363px; background:url(/portal/images/capaPrograma/penarua/relogio2.png) no-repeat; bottom:379px; left:72px; }
 .home .relogio .jclock { color:#fff; width:107px; height:44px; line-height:44px; margin:-2px 0 0 8px; }
 
