@@ -182,7 +182,7 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
               
     html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#' + data.handler + '">'
-    html +=       '<p>'+ data.question +</p>'
+    html +=       '<p>'+ data.question + '</p>'
     html +=     '</a>'
 
     html +=   '</div>'
