@@ -253,6 +253,11 @@ $(document).ready(function() {
     html += '</div></div></div>';
     */
     $('#accordion2').prepend(html);
+    $(".accordion-inner .resposta").not('.accordion-inner.arquivo a').click(function(){
+      alert('oi')
+      $(".accordion-inner li").removeClass('selected');
+      $(this).parent().addClass('selected');
+    });
     
     if(!json)
       document.getElementById('audio-ping').play();

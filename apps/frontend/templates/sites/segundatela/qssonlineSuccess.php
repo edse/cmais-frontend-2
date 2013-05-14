@@ -339,15 +339,6 @@
 <!--/section-body-->
 
 
-<!--
-<audio id="audio-ping">
-  <source src="/portal/audio/ping.mp3" />
-  <source src="/portal/audio/ping.ogg" />
-</audio>
--->
-<!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script-->    
-<!--script type="text/javascript" src="/portal/js/json2.js"></script-->
-<!--script type="text/javascript" src="/portal/js/segundatela/secondscreencartaoverde/app.js?nocache=<?php echo time()?>"></script-->
 <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
 <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
 <script>
@@ -361,11 +352,6 @@
       $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
           }, 1000);
      
-     $(".accordion-inner a").not('.accordion-inner.arquivo a').click(function(){
-       alert('oi')
-       $(".accordion-inner li").removeClass('selected');
-       $(this).parent().addClass('selected');
-     });
      
     });
 </script>
