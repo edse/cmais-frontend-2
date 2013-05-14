@@ -190,6 +190,7 @@ $(document).ready(function() {
     html +=   '<div id="seis" class="accordion-body collapse">'
     html +=     '<div class="accordion-inner">' 
     if(clock){
+      console.log(data)
       html += '<ul class="answers media-list">';
       for(var i=0; i<data.answers.length; i++){
         html += '<li class="answer" id="q'+data.uid+'a'+i+'" style="margin-top: 25px;"><a class="btn'+btn_style+'" rel="'+data.uid+'">';
@@ -197,6 +198,11 @@ $(document).ready(function() {
       }
       html += '</ul>';
     }
+    html +=      '</div>'
+    html +=    '</div>'
+    html +=    '<!--resposta-->'
+    html +=  '</div>'
+    html +=  '<!--/pergunta chamada-->'
     /*
     html +=       <ul>
     html +=         <li>
@@ -221,11 +227,7 @@ $(document).ready(function() {
     html +=              </li>
     html +=            </ul>
     */
-    html +=      '</div>'
-    html +=    '</div>'
-    html +=    '<!--resposta-->'
-    html +=  '</div>'
-    html +=  '<!--/pergunta chamada-->'
+    
   
     /*
     var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#uid'+data.uid+'"><i class="icon-question-sign icon-white"></i> '+data.question+'</a></div>';
