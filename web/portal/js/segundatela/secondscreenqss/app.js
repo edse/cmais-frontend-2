@@ -158,7 +158,7 @@ $(document).ready(function() {
         points = info[id][1];
         
         var html_rank = '<!--posicao-->'
-        html_rank +='<li style="border-bottom: none;">'
+        html_rank +='<li style="list-style:none">'
         html_rank +=  '<span class="colocacao" style="margin-left: 0;">1º</span>'
         html_rank +=  '<span class="avatar av3"></span>'
         html_rank +=  '<span class="nome_colocacao">Fulano Beltrano silcrano</span> '
