@@ -52,10 +52,9 @@ $(document).ready(function() {
   var mult    = 2;
   
   serverUrl = 'ws://200.136.27.7:80/secondscreenqss';
-  
-  var content_url   = "/segundatela/secondscreenqss/contents.json";
+
   var question_url  = "/segundatela/secondscreenqss/questions.json";
-  //var last_content_url = "../log/cache1/secondscreenqss/last-content.json";
+
   
   tryToConnect = function() {
     if (window.MozWebSocket) {
@@ -331,7 +330,7 @@ $(document).ready(function() {
     url: question_url,
     dataType: 'json',
     success:function(json){
-      //console.log(json);
+      console.log(json);
       if(json!=null){
         $.each(json, function( key, value ) {
           if(!value.banned)
