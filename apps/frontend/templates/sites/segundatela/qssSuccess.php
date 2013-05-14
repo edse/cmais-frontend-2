@@ -300,7 +300,8 @@ $(document).ready(function(){
           //$('.alert').hide();
           if(json.status == "success"){
             $('#login-alert-error-login').hide();
-            self.location.href="./qssonline/?token="+json.token;
+            //self.location.href="./qssonline/?token="+json.token;
+            self.location.href="/segundatela-qss/site/index2.php?token="+json.token;
           }
           else{
             $('#login-alert-error-login').fadeIn('slow');
