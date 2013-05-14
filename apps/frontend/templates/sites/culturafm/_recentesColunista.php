@@ -27,7 +27,7 @@
 							</div>
 
 							<ul class="recentes">
-								<?php for($k=count($assets); $k<=0; $k--): ?>
+								<?php for($k=count($assets); $k>=0; $k--): ?>
                 <li><a href="<?php echo 'http://culturafm.cmais.com.br/colunistas/' . $section->getSlug() . '/' . $assets[$k]->getSlug() ?>" name="<?php echo $assets[$k]->getTitle() ?>" title="<?php echo $assets[$k]->getTitle() ?>"><?php echo $assets[$k]->getTitle() ?></a></li>
 								<?php endfor; ?>
 							</ul>
