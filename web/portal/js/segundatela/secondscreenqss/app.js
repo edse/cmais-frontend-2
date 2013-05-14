@@ -415,7 +415,7 @@ $(document).ready(function() {
     window.audio_wrong.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     $('#uid'+data.question+' ul li').css('background', 'red');
-    $('#uid'+data.question+' ul li:nth-child('+data.correct_index+')').css('background','green!important')
+    $('#uid'+data.question+' ul:nth-child('+data.correct_index+')').css('background','green!important')
     $('#eurekas').html(data.points);
     /*
     $('#points').fadeTo('fast', 0.1, function() {
