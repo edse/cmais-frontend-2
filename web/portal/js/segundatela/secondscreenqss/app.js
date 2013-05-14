@@ -74,8 +74,9 @@ $(document).ready(function() {
       startClock();
       $('#users').hide();
       $('#points').hide();
-      return $('#status a').removeClass("btn-success").addClass('btn-danger').css('opacity', 1).html('desconectado');
+      //return $('#status a').removeClass("btn-success").addClass('btn-danger').css('opacity', 1).html('desconectado');
       //return $('#status a').css('opacity', 1).html('desconectado');
+      return $('#status').addClass('offline').html('desconectado');
     };
 
     socket.onopen = function(msg) {
@@ -87,7 +88,8 @@ $(document).ready(function() {
       $('#users').show()
       $('#points a').css('opacity', 1);
       $('#points').show();
-      $('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
+      //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
+      return $('#status').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
