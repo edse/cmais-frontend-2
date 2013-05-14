@@ -263,7 +263,7 @@ $(document).ready(function() {
         });
         */
         $('#uid'+data.uid+' .answers').find('.resposta').each(function(index){
-          $(this).attr("disabled", "disabled");
+          $(this).parent()addClass("disabled");
         });
         window.clearInterval(window.interval);
         //send empty answer
