@@ -144,9 +144,8 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    console.log(data.name);
-    console.log(data.avatar);
-    
+    console.log(data.ranking.name);
+
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
