@@ -187,6 +187,7 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->'
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">'
+    html += '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
     html +=     '<div class="accordion-inner">' 
     if(clock){
       //console.log(data)
