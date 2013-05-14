@@ -238,10 +238,9 @@ $(document).ready(function() {
     //$(".answers .resposta").live('click', function(){
       console.log('---'+$(this).attr('rel'));
       if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().parent().find('li').each(function(index){
+        $(this).parent().find('li').each(function(index){
           $(this).css("background","#ccc");
         });
-        
         //$(this).removeClass('btn-primary').addClass('btn-warning');
         //remaining time
         //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
@@ -258,7 +257,7 @@ $(document).ready(function() {
         data.question = $(this).attr('rel');
         data.time = time;
         payload.data = data;
-        return socket.send(JSON.stringify(payload)); 
+        return socket.send(JSON.stringify(payload));
       }
     });
       
