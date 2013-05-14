@@ -159,7 +159,7 @@ $(document).ready(function() {
         if(name){
           c++;
           var html_rank = '<!--posicao-->'
-          html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left">'
+          html_rank +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
           html_rank +=  '<span class="colocacao" style="margin-left: 0;">'+c+'º</span>'
           html_rank +=  '<span class="avatar '+avatar+'"></span>'
           html_rank +=  '<span class="nome_colocacao">'+name+'</span> '
