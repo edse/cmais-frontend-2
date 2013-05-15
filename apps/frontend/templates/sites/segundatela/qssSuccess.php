@@ -140,34 +140,34 @@
       <label>Escolha seu avatar:</label>
         <ul>
           <li>
-            <a href="javascript:;" class="avatar av1" data-source="av1"></a>
+            <a href="javascript:;" class="avatar avatar-1" data-source="avatar-1"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av2" data-source="av2"></a>
+            <a href="javascript:;" class="avatar avatar-2" data-source="avatar-2"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av3" data-source="av3"></a>
+            <a href="javascript:;" class="avatar avatar-3" data-source="avatar-3"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av4" data-source="av4"></a>
+            <a href="javascript:;" class="avatar avatar-4" data-source="avatar-4"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av5" data-source="av5"></a>
+            <a href="javascript:;" class="avatar avatar-5" data-source="avatar-5"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av6" data-source="av6"></a>
+            <a href="javascript:;" class="avatar avatar-6" data-source="avatar-6"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av7" data-source="av7"></a>
+            <a href="javascript:;" class="avatar avatar-7" data-source="avatar-7"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av8" data-source="av8"></a>
+            <a href="javascript:;" class="avatar avatar-8" data-source="avatar-8"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av9" data-source="av9"></a>
+            <a href="javascript:;" class="avatar avatar-9" data-source="avatar-9"></a>
           </li>
           <li>
-            <a href="javascript:;" class="avatar av10" data-source="av10"></a>
+            <a href="javascript:;" class="avatar avatar-10" data-source="avatar-10"></a>
           </li>
         </ul>
         
