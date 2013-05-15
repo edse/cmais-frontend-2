@@ -1,6 +1,4 @@
-<?php 
-$assets = $pager->getResults();
-?>
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
@@ -48,71 +46,17 @@ $assets = $pager->getResults();
     <?php include_partial_from_folder('tvratimbum','global/top', array('site'=> $site,'section'=>$section)) ?>
     
     <div class="conteudo internas">
+    	
       <div class="colunaMaior">
-        <div class="trilha">
-          <p><a href="/">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/programas">Programas</a><span>&gt;&gt;</span><a href="<?php $site->retriveUrl()?>"><?php echo $site->getTitle()?></a>
-        </div>
         <div id="box-programas-programaEscolhido">
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
-            </div>
-            <div class="programaEscolhido-info">
-              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
-              <div class="box-infos">
-                <?php /*
-                <div class="horario">
-                  <p><?php echo html_entity_decode($site->Program->getSchedule())?></p>
-                </div>
-                 */ ?>
-                <?php /*
-                <div class="btn-episodeo">
-                  <span class="picote"></span>
-                  <a href="<?php echo $site->retriveUrl()?>/episodios">Episódios</a>
-                </div>
-                */ ?>
-                <?php
-                  $sec = Doctrine_Query::create()
-                    ->select('s.*')
-                    ->from('Section s')
-                    ->where('s.slug = ?', "programacao")
-                    ->andWhere('s.site_id = ?', $site->getId())
-                    ->fetchOne();
-                  if($sec):
-                ?>
-                <div class="btn-diario">
-                  <span class="picote"></span>
-                  <a href="http://tvratimbum.cmais.com.br/grade">Diário de programação</a>
-                </div>
-                
-                <?php endif; ?>
-                <p class="breve"><?php if($site->Program->getLongDescription()!=""):?><?php echo html_entity_decode($site->Program->getLongDescription())?><?php else:?><?php echo html_entity_decode($site->Program->getDescription())?><?php endif;?></p>
-              </div>
-            </div>
-            <hr />
-           
-          </div>
-         
-          <div class="ganchos"></div>
-         
-         
-          <?php
-            $assets = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a')
-              ->where('a.site_id = ?', $site->getId())
-              ->andWhere('a.asset_type_id = ?', 20)
-              ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.title')
-              ->execute();
-          ?>
-          <?php if($assets): ?> 
-          <?php include_partial_from_folder('tvratimbum','global/personagens-carrossel', array('displays' => $assets)) ?>
-          <span class="picote"></span>
-          <?php endif; ?>
-        </div>       
-          
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog do Geninho</a>
+            </div>      
+            </div> 
+            </div> 
+            
 		<?php 
 			$assets = $pager->getResults();
 		?>
