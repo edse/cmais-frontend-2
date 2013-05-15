@@ -1,6 +1,4 @@
-<?php 
-$assets = $pager->getResults();
-?>
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
