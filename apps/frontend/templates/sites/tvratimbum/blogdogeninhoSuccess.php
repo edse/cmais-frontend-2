@@ -48,9 +48,15 @@
     <div class="conteudo internas">
     	
       <div class="colunaMaior">
-         <div class="topo">
+        <div id="box-programas-programaEscolhido">
+          <div class="wrapper">
+            <div class="topo-esq"></div>
+            <div class="topo">
               <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog do Geninho</a>
-            </div>         
+            </div>      
+            </div> 
+            </div> 
+            
 		<?php 
 			$assets = $pager->getResults();
 		?>
