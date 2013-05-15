@@ -25,26 +25,8 @@
     var t=setInterval("timer1()",60000);
   });
   */
-
-  function broadcastEnd(){
-    var request = $.ajax({
-      data: {
-        channel_id: <?php echo $site->Program->Channel->id ?>,
-        program_id: <?php echo $site->Program->id ?>,
-        url_out: '<?php echo $site->retriveUrl() ?>'
-      },
-      dataType: 'jsonp',
-      success: function(data) {
-        //eval(data);
-      },
-      url: '/ajax/broadcastend'
-    });
-  }
   
-  jQuery(document).ready(function() {
-    broadcastEnd();
-    var t2=setInterval("broadcastEnd()", 60000);
-  }); 
+  
 
 </script>
     
@@ -186,7 +168,16 @@
 
               <!--iframe src="http://www.coveritlive.com/index2.php/option=com_altcaster/task=viewaltcast/altcast_code=d41fb385ab/height=490/width=310" scrolling="no" height="490px" width="310px" frameBorder ="0" allowTransparency="true"  ><a href="http://www.coveritlive.com/mobile.php/option=com_mobile/task=viewaltcast/altcast_code=d41fb385ab" >Pronto Atendimento - Previdência</a></iframe-->
 
-              <a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br />
+              <!--a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br /-->
+
+              <?php if($displays["segunda-tela"]): ?>
+                <?php if(count($displays["segunda-tela"]) > 0): ?>
+                  <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
+              <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-top:30px; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
+                  <?php endif; ?> 
+                <?php endif; ?>
+              <?php endif; ?>
+              
               <!--a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="311256597148073986">Tweets de @jornal_cultura</a-->
               <a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="316640392126808065">Tweets de @jornal_cultura</a>
               <script>
