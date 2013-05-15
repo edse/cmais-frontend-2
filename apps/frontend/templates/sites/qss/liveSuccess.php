@@ -126,6 +126,14 @@
         
         <div id="direita" class="grid1">
           
+          <?php if($displays["segunda-tela"]): ?>
+            <?php if(count($displays["segunda-tela"]) > 0): ?>
+              <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
+          <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('originais') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
+              <?php endif; ?> 
+            <?php endif; ?>
+          <?php endif; ?>
+          
           <a class="twitter-timeline" href="https://twitter.com/search?q=%23QSS" data-widget-id="334007660250800128">Tweets about "#QSS"</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
