@@ -1,3 +1,6 @@
+<?php
+include_once '/var/frontend/web/segundatela-qss/sign-in/check.php';
+?>
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
