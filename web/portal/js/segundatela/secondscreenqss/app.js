@@ -267,7 +267,7 @@ $(document).ready(function() {
         var time = 0;
         //send answer
         window.clearInterval(window.interval);
-        //window.audio_tictac.pause();
+        window.audio_tictac.pause();
         var payload = new Object();
         var data = new Object();
         payload.action = "answer";
@@ -462,10 +462,10 @@ $(document).ready(function() {
     window.audio_wrong.currentTime = 0;
     window.audio_wrong.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
-    $('#uid'+data.uid+' ul li').css('background', 'red');
-    //$('#uid'+data.uid+' li:nth-child('+data.correct_index+')').css('background','green');
+    $('#uid'+data.question+' ul li').css('background', 'red');
+    $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
-    $('#uid'+data.uid+' .answers .resposta').die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     //$('#uid'+data.question+' .resposta').removeAttr('href');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
@@ -480,10 +480,10 @@ $(document).ready(function() {
     window.audio_correct.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     //$('#uid'+data.question+' .answer:nth-child('+data.correct_index+') a').removeClass('btn-primary').removeClass('btn-warning').addClass('btn-success');
-    $('#uid'+data.uid+' ul li').css('background', 'red');
-    $('#uid'+data.uid+' li:nth-child('+data.correct_index+')').css('background','green');
+    $('#uid'+data.question+' ul li').css('background', 'red');
+    //$('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
-    $('#uid'+data.uid+' .answers .resposta').die('click');
+    $('#uid'+data.question+' .answers .resposta').die('click');
     /*
     $('#points').fadeTo('fast', 0.1, function() {
       $('#points').fadeTo('fast', 1);
