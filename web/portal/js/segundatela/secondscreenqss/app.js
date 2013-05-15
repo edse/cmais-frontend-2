@@ -252,7 +252,7 @@ $(document).ready(function() {
     */
     $('#accordion2').prepend(html);
     // Send Answer
-    $('#uid'+data.uid+' .answers .resposta').click( function(){
+    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
     //$(".answers .resposta").live('click', function(){
       console.log('---'+$(this).attr('rel'));
       if(!$(this).parent().hasClass('disabled')){
