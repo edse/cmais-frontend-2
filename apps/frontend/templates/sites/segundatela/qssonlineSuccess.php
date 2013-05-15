@@ -111,115 +111,14 @@
             <!--item lista-->
             <div id="diaria" class="tab-pane fade active in">
               
-              <div id="ranking-diario"class="row-fluid">
-                <img id="ajax-loader-qss" src="/portal/images/ajax-loader-qss.gif" style="margin: 5%">
-                
-              </div>  
-            </div>
-            <!--item lista-->
+              <div id="ranking-user"class="row-fluid"></div>  
+              <div id="ranking-diario"class="row-fluid"></div>  
+                 <img id="ajax-loader-qss" src="/portal/images/ajax-loader-qss.gif" style="margin: 5% auto; display:block;">
+              </div>
+              <!--item lista-->
             
             <!--item lista-->
             <div id="semanal" class="tab-pane fade">
-              <ul>
-               <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">1º</span>
-                  <span class="avatar av2"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">2º</span>
-                  <span class="avatar av3"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">3º</span>
-                  <span class="avatar av1"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">4º</span>
-                  <span class="avatar av7"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">5º</span>
-                  <span class="avatar av5"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">6º</span>
-                  <span class="avatar av8"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">7º</span>
-                  <span class="avatar av6"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">8º</span>
-                  <span class="avatar av4"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">9º</span>
-                  <span class="avatar av9"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li>
-                  <span class="colocacao" style="margin-left: 0;">10º</span>
-                  <span class="avatar av10"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-                
-                <!--posicao-->
-                <li style="border-bottom: none;">
-                  <span class="colocacao user" style="margin-left: 0;">23º</span>
-                  <span class="avatar av1"></span>
-                  <span class="nome_colocacao">Fulano Beltrano</span> 
-                  <span class="eurekas">999999 eurekas</span>
-                </li>
-                <!--/posicao-->
-              </ul>
             </div>
             <!--item lista-->
             
@@ -257,6 +156,23 @@
   
      
     });
+</script>
+<script>
+ var client_token  = '<?php echo $_REQUEST['token']?>';
+ var client_name   = '<?php echo $_REQUEST['name']?>';
+ var client_email  = '<?php echo $_REQUEST['email']?>';
+ var client_avatar = '<?php echo $_REQUEST['avatar']?>';
+ var client_eurekas = '<?php echo $_REQUEST['eurekas']?>';
+ 
+ var html_rankUser = '<!--posicao-->'
+ html_rankUser +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
+ html_rankUser +=  '<span class="colocacao user" style="margin-left: 0;"></span>'
+ html_rankUser +=  '<span class="avatar '+client_avatar+'"></span>'
+ html_rankUser +=  '<span class="nome_colocacao">'+client_name+'</span> '
+ html_rankUser +=  '<span id="eurekas" class="eurekas">'+client_eurekas+' eurekas</span>'
+ html_rankUser += '</li>'
+ html_rankUser += '<!--/posicao-->'
+ $('#ranking-user').append(html_rankUser);
 </script>
 <script src="/portal/js/segundatela/secondscreenqss/json2.js"></script>
 <script src="/portal/js/segundatela/secondscreenqss/app.js"></script>

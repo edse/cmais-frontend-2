@@ -152,15 +152,13 @@ $(document).ready(function() {
       var info = data.ranking;
       var c = 0;
       $('#ranking-diario').html(null);
+      
+       
+          
       for(id in info) {
         name = info[id][0];
         points = info[id][1];
-        if(info[id][2] == null){
-          avatar = "av1";
-        }else{
-          avatar = info[id][2];
-        }
-        
+        avatar = info[id][2];
         if(name){
           c++;
           var html_rank = '<!--posicao-->'
@@ -175,6 +173,7 @@ $(document).ready(function() {
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
+     
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }

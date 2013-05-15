@@ -36,28 +36,28 @@
 .navbar{position:absolute; top:1000px; display:none;}
 #footer{margin-top:100px;}
 
-.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat; width:56px; height:56px;display: block;float:left}
-.av1{background-position:-8px -5px!important;}
-.av2{background-position:-70px -5px!important;}
-.av3{background-position:-132px -5px!important;}
-.av4{background-position:-193px -5px!important;}
-.av5{background-position:-254px -5px!important;}
-.av6{background-position:-8px -74px!important;}
-.av7{background-position:-70px -74px!important;}
-.av8{background-position:-132px -74px!important;}
-.av9{background-position:-194px -74px!important;}
-.av10{background-position:-256px -74px!important;}
+.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left}
+.avatar-1{background-position:-8px -5px!important;}
+.avatar-2{background-position:-70px -5px!important;}
+.avatar-3{background-position:-132px -5px!important;}
+.avatar-4{background-position:-193px -5px!important;}
+.avatar-5{background-position:-254px -5px!important;}
+.avatar-6{background-position:-8px -74px!important;}
+.avatar-7{background-position:-70px -74px!important;}
+.avatar-8{background-position:-132px -74px!important;}
+.avatar-9{background-position:-194px -74px!important;}
+.avatar-10{background-position:-256px -74px!important;}
 
-.av1.selected{background-position:-9px -139px!important;}
-.av2.selected{background-position:-71px -139px!important;}
-.av3.selected{background-position:-133px -139px!important;}
-.av4.selected{background-position:-194px -139px!important;}
-.av5.selected{background-position:-255px -139px!important;}
-.av6.selected{background-position:-9px -208px!important;}
-.av7.selected{background-position:-71px -208px!important;}
-.av8.selected{background-position:-133px -208px!important;}
-.av9.selected{background-position:-195px -208px!important;}
-.av10.selected{background-position:-257px -208px!important;}
+.avatar-1.selected{background-position:-9px -139px!important;}
+.avatar-2.selected{background-position:-71px -139px!important;}
+.avatar-3.selected{background-position:-133px -139px!important;}
+.avatar-4.selected{background-position:-194px -139px!important;}
+.avatar-5.selected{background-position:-255px -139px!important;}
+.avatar-6.selected{background-position:-9px -208px!important;}
+.avatar-7.selected{background-position:-71px -208px!important;}
+.avatar-8.selected{background-position:-133px -208px!important;}
+.avatar-9.selected{background-position:-195px -208px!important;}
+.avatar-10.selected{background-position:-257px -208px!important;}
 
 .section-login label.checkbox{position:relative;}
 .section-login #manter_conectado{position: absolute;top: 0;}
@@ -67,7 +67,7 @@
 
 .section-body .colocacao{min-width: 60px;height: 65px;display: block;background: #eeeeee;float: left;font-family: 'source_sans_probold';color: #cc0000;text-align: center;line-height: 65px;padding: 0 10px;font-size: 3em;}
 .section-body .user{color:#fff; background:#b30003;}
-.section-body .nome_colocacao{padding-top: 11px; display: block; text-overflow:ellipsis; overflow: hidden;}
+.section-body .nome_colocacao{padding-top: 11px; display: block; text-overflow:ellipsis; overflow: hidden;line-height: 17px;}
 .section-body .eurekas{text-overflow:ellipsis; overflow: hidden; font-weight:bold;}
 
 .section-body ul{margin:0;}
