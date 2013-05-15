@@ -158,25 +158,22 @@
     });
 </script>
 <script>
-<?php
-/*
+
  var client_token  = '<?php echo $_REQUEST['token']?>';
  var client_name   = '<?php echo $_REQUEST['name']?>';
  var client_email  = '<?php echo $_REQUEST['email']?>';
  var client_avatar = '<?php echo $_REQUEST['avatar']?>';
- var client_eurekas = '<?php echo $_REQUEST['eurekas']?>';
+
  
  var html_rankUser = '<!--posicao-->'
  html_rankUser +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
  html_rankUser +=  '<span class="colocacao user" style="margin-left: 0;"></span>'
  html_rankUser +=  '<span class="avatar '+client_avatar+'"></span>'
  html_rankUser +=  '<span class="nome_colocacao">'+client_name+'</span> '
- html_rankUser +=  '<span id="eurekas" class="eurekas">'+client_eurekas+' eurekas</span>'
+ html_rankUser +=  '<span id="eurekas" class="eurekas">-- eurekas</span>'
  html_rankUser += '</li>'
  html_rankUser += '<!--/posicao-->'
  $('#ranking-user').append(html_rankUser);
- * */
- ?>
 </script>
 <script src="/portal/js/segundatela/secondscreenqss/json2.js"></script>
 <script src="/portal/js/segundatela/secondscreenqss/app.js"></script>
