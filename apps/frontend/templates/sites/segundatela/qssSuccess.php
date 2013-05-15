@@ -337,7 +337,7 @@ $(document).ready(function(){
         //$('.alert').hide();
         if(json.status == "success"){
           self.location.href="./qssonline/?token="+json.token;
-          //self.location.href="/segundatela-qss/site/?token="+json.token;
+          //self.location.href="/segundatela-qss/site/?token="+json.token; 
         }
         else{
           $('#login-alert-error').fadeIn('slow');
