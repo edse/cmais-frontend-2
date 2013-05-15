@@ -463,7 +463,7 @@ $(document).ready(function() {
     window.audio_wrong.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     $('#uid'+data.uid+' ul li').css('background', 'red');
-    $('#uid'+data.uid+' li:nth-child('+data.correct_index+')').css('background','green');
+    //$('#uid'+data.uid+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
     $('#uid'+data.uid+' .answers .resposta').die('click');
     //$('#uid'+data.question+' .resposta').removeAttr('href');
