@@ -46,8 +46,11 @@
     <?php include_partial_from_folder('tvratimbum','global/top', array('site'=> $site,'section'=>$section)) ?>
     
     <div class="conteudo internas">
+    	
       <div class="colunaMaior">
-                  
+         <div class="topo">
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog do Geninho</a>
+            </div>         
 		<?php 
 			$assets = $pager->getResults();
 		?>
