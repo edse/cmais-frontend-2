@@ -897,7 +897,10 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-20 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
       }  
-      
+      elseif($this->site->getSlug() == "blogdogeninho") {
+        if ($debug) print "<br>cocorico-10 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/blogdogeninho';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/blogdogeninho');
+      }
     }
 		elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
