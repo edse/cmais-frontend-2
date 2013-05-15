@@ -481,7 +481,7 @@ $(document).ready(function() {
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     //$('#uid'+data.question+' .answer:nth-child('+data.correct_index+') a').removeClass('btn-primary').removeClass('btn-warning').addClass('btn-success');
     $('#uid'+data.question+' ul li').css('background', 'red');
-    //$('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
+    $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
     $('#uid'+data.question+' .answers .resposta').die('click');
     /*
