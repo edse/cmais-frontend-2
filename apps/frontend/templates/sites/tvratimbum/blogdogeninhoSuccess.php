@@ -50,7 +50,7 @@ $assets = $pager->getResults();
     <div class="conteudo internas">
       <div class="colunaMaior">
         <div class="trilha">
-          <p><a href="/">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/programas">Programas</a><span>&gt;&gt;</span><a href="<?php $site->retriveUrl()?>"><?php echo $site->getTitle()?></a>
+          <p><a href="/">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/programas">Programas</a><span>&gt;&gt;</span><<?php echo $section->getTitle()?>
         </div>
         <div id="box-programas-programaEscolhido">
           <div class="wrapper">
