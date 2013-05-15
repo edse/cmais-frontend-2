@@ -25,7 +25,29 @@
     var t=setInterval("timer1()",60000);
   });
   */
+ 
+ var test = getParameterByName('test');
+
+  function broadcastEnd(){
+    var request = $.ajax({
+      data: {
+        channel_id: <?php echo $site->Program->Channel->id ?>,
+        program_id: <?php echo $site->Program->id ?>,
+        url_out: '<?php echo $site->retriveUrl() ?>',
+        test: test
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        //eval(data);
+      },
+      url: '/ajax/broadcastend'
+    });
+  }
   
+  jQuery(document).ready(function() {
+    broadcastEnd();
+    var t2=setInterval("broadcastEnd()", 60000);
+  });   
   
 
 </script>
@@ -170,10 +192,10 @@
 
               <!--a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br /-->
 
-              <?php if($displays["segunda-tela"]): ?>
+              <?php if(isset($displays["segunda-tela"])): ?>
                 <?php if(count($displays["segunda-tela"]) > 0): ?>
                   <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
-              <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-top:30px; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
+              <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
                   <?php endif; ?> 
                 <?php endif; ?>
               <?php endif; ?>

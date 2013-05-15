@@ -130,7 +130,6 @@ function broadcastEnd(){
           				<div class="boxVideo">
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
-		                    <h3><?php //echo $asset->getTitle() ?></h3>
 		                    <?php if(isset($displays['yt-live'])): ?>
 		                      <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
 		                    <?php endif; ?>
@@ -138,6 +137,15 @@ function broadcastEnd(){
 		                    <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
           				</div>
           			</div>
+          			
+                <?php if(isset($displays["segunda-tela"])): ?>
+                  <?php if(count($displays["segunda-tela"]) > 0): ?>
+                    <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
+                <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-top: 20px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
+                    <?php endif; ?> 
+                  <?php endif; ?>
+                <?php endif; ?>
+          			
           			
           			<div class="chat">
           				<div class="repercussao">

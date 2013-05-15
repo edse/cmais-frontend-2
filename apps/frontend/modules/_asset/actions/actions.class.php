@@ -897,7 +897,10 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-20 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodio'); 
       }  
-      
+      elseif($this->section->slug == "para-colorir") {
+        if ($debug) print "<br>cocorico-10 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna');
+      }
     }
 		elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
@@ -1062,7 +1065,8 @@ class _assetActions extends sfActions
           }elseif(($this->asset->AssetType->getSlug()!="content")&&($this->asset->AssetType->getSlug()!="video")&&($this->asset->AssetType->getSlug()!="person")){
             if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug());
-          }else{
+          
+		  }else{
             $sec = $this->asset->Sections[0];
 
             //echo ">>>>>".$sec->getSlug();

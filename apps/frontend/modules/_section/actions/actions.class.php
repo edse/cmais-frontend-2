@@ -67,6 +67,19 @@ class _sectionActions extends sfActions
 
       // current site
       $this->site = $this->section->Site;
+
+      if($this->section->getSlug() == "qssonline") {
+        session_start();
+        if(is_array($_SESSION[$_REQUEST['token']])){
+          $request->setParameter('name', $_SESSION[$_REQUEST['token']]["name"]);
+          $request->setParameter('email', $_SESSION[$_REQUEST['token']]["email"]);
+          $request->setParameter('avatar', $_SESSION[$_REQUEST['token']]["avatar"]);
+        }
+        if(!$_REQUEST["token"]){
+          header("Location: /segundatela/qss");
+          die();
+        }
+      }
       
       if($this->section->Site->getSlug() == "segundatela") {
         if($this->section->getSlug() != "aovivo")
@@ -74,11 +87,11 @@ class _sectionActions extends sfActions
       }
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home" || $this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="qss") {
         $this->setLayout('responsivo');
-	  }
+      }
       if($this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="home") {
         $this->setLayout(false);
       }
-	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
+      if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
