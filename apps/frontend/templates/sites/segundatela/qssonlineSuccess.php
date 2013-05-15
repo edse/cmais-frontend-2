@@ -1,5 +1,5 @@
 <?php
-//include_once '/var/frontend/web/segundatela-qss/site/sign-in/check.php';
+include_once '/var/frontend/web/segundatela-qss/site/sign-in/check.php';
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
