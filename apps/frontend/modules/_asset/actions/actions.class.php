@@ -1062,7 +1062,11 @@ class _assetActions extends sfActions
           }elseif(($this->asset->AssetType->getSlug()!="content")&&($this->asset->AssetType->getSlug()!="video")&&($this->asset->AssetType->getSlug()!="person")){
             if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug());
-          }else{
+          }elseif(($this->site->getType() == "Programa TVRTB")||($this->site->getSlug() == "blogdogeninho")){
+            if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/blogdogeninho';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/blogdogeninho');
+         
+		  }else{
             $sec = $this->asset->Sections[0];
 
             //echo ">>>>>".$sec->getSlug();
