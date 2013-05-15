@@ -25,7 +25,26 @@
     var t=setInterval("timer1()",60000);
   });
   */
+
+  function broadcastEnd(){
+    var request = $.ajax({
+      data: {
+        channel_id: <?php echo $site->Program->Channel->id ?>,
+        program_id: <?php echo $site->Program->id ?>,
+        url_out: '<?php echo $site->retriveUrl() ?>'
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        //eval(data);
+      },
+      url: '/ajax/broadcastend'
+    });
+  }
   
+  jQuery(document).ready(function() {
+    broadcastEnd();
+    var t2=setInterval("broadcastEnd()", 60000);
+  });   
   
 
 </script>
