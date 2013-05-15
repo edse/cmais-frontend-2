@@ -1,3 +1,6 @@
+<?php
+include_once '/var/frontend/web/segundatela-qss/sign-in/check.php';
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -158,18 +161,19 @@
     });
 </script>
 <script>
+
  var client_token  = '<?php echo $_REQUEST['token']?>';
  var client_name   = '<?php echo $_REQUEST['name']?>';
  var client_email  = '<?php echo $_REQUEST['email']?>';
  var client_avatar = '<?php echo $_REQUEST['avatar']?>';
- //var client_eurekas = '<?php //echo $_REQUEST['eurekas']?>';
+
  
  var html_rankUser = '<!--posicao-->'
  html_rankUser +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
  html_rankUser +=  '<span class="colocacao user" style="margin-left: 0;"></span>'
  html_rankUser +=  '<span class="avatar '+client_avatar+'"></span>'
  html_rankUser +=  '<span class="nome_colocacao">'+client_name+'</span> '
- html_rankUser +=  '<span id="eurekas" class="eurekas">'+client_eurekas+' eurekas</span>'
+ html_rankUser +=  '<span id="eurekas" class="eurekas">-- eurekas</span>'
  html_rankUser += '</li>'
  html_rankUser += '<!--/posicao-->'
  $('#ranking-user').append(html_rankUser);
