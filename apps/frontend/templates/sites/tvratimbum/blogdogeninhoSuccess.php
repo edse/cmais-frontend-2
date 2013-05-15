@@ -56,10 +56,11 @@ $assets = $pager->getResults();
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $section->getTitle()?></a>
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
             </div>
             <div class="programaEscolhido-info">
-             <div class="box-infos">
+              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
+              <div class="box-infos">
                 <?php /*
                 <div class="horario">
                   <p><?php echo html_entity_decode($site->Program->getSchedule())?></p>
@@ -93,7 +94,9 @@ $assets = $pager->getResults();
            
           </div>
          
-             
+          <div class="ganchos"></div>
+
+        </div>       
           
 		<?php 
 			$assets = $pager->getResults();
