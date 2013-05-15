@@ -189,7 +189,7 @@
 
               <!--a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br /-->
 
-              <?php if($displays["segunda-tela"]): ?>
+              <?php if(isset($displays["segunda-tela"])): ?>
                 <?php if(count($displays["segunda-tela"]) > 0): ?>
                   <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
               <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>

@@ -126,7 +126,7 @@
         
         <div id="direita" class="grid1">
           
-          <?php if($displays["segunda-tela"]): ?>
+          <?php if(isset($displays["segunda-tela"])): ?>
             <?php if(count($displays["segunda-tela"]) > 0): ?>
               <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
           <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" style="display:block; margin-top:30px; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
