@@ -130,7 +130,6 @@ function broadcastEnd(){
           				<div class="boxVideo">
           					<div class="boxVideoWrapper" id="boxVideoWrapper"></div>
 		                    <span class="faixa"></span>
-		                    <h3><?php //echo $asset->getTitle() ?></h3>
 		                    <?php if(isset($displays['yt-live'])): ?>
 		                      <p><iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe></p>
 		                    <?php endif; ?>
