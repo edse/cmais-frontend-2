@@ -169,7 +169,7 @@ $(document).ready(function() {
           html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
           html_rank += '</li>'
           html_rank += '<!--/posicao-->'
-          $('#ranking-diario').append(html_rank);
+          //$('#ranking-diario').append(html_rank);
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
