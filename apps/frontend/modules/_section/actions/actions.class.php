@@ -71,10 +71,13 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "qssonline") {
         session_start();
         if(is_array($_SESSION[$_REQUEST['token']])){
-          $_REQUEST["name"]   = $_SESSION[$_REQUEST['token']]["name"];
-          $_REQUEST["email"]  = $_SESSION[$_REQUEST['token']]["email"];
-          $_REQUEST["avatar"] = $_SESSION[$_REQUEST['token']]["avatar"];
-          $_REQUEST["points"] = 0;
+          $request->setParameter('name', $_SESSION[$_REQUEST['token']]["name"]);
+          $request->setParameter('email', $_SESSION[$_REQUEST['token']]["email"]);
+          $request->setParameter('avatar', $_SESSION[$_REQUEST['token']]["avatar"]);
+        }
+        if(!$_REQUEST["token"]){
+          header("Location: /segundatela/qss");
+          die();
         }
       }
       
