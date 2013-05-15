@@ -185,28 +185,28 @@ $(document).ready(function() {
     if(clock)
       btn_style = " btn-primary";
       
-    var html =  '<!--pergunta chamada-->'
-    html += '<div class="accordion-group">'
-    html +=   '<div class="accordion-heading">'
-    html +=     '<span class="cantoneira cant-perg-esq-sup"></span>'
-    html +=     '<span class="cantoneira cant-perg-dir-sup"></span>'
+    var html =  '<!--pergunta chamada-->';
+    html += '<div class="accordion-group">';
+    html +=   '<div class="accordion-heading">';
+    html +=     '<span class="cantoneira cant-perg-esq-sup"></span>';
+    html +=     '<span class="cantoneira cant-perg-dir-sup"></span>';
               
-    html +=     '<span class="cantoneira-esq-meio cant-perg-esq-meio"></span>'
-    html +=     '<span class="cantoneira-dir-meio cant-perg-dir-meio"></span>'
+    html +=     '<span class="cantoneira-esq-meio cant-perg-esq-meio"></span>';
+    html +=     '<span class="cantoneira-dir-meio cant-perg-dir-meio"></span>';
               
-    html +=     '<span class="cantoneira cant-perg-esq-inf"></span>'
-    html +=     '<span class="cantoneira cant-perg-dir-inf"></span>'
+    html +=     '<span class="cantoneira cant-perg-esq-inf"></span>';
+    html +=     '<span class="cantoneira cant-perg-dir-inf"></span>';
               
-    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="uid'+data.uid+'">'
-    html +=       '<p>'+ data.question + '</p>'
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="uid'+data.uid+'">';
+    html +=       '<p>'+ data.question + '</p>';
     html +=     '</a>'
 
     html +=   '</div>'
     
-    html +=   '<!--resposta-->'
-    html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">'
+    html +=   '<!--resposta-->';
+    html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
     html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
-    html +=     '<div class="accordion-inner">' 
+    html +=     '<div class="accordion-inner">';
     if(clock){
       //console.log(data)
       html +=      '<ul class="answers">'
@@ -463,7 +463,7 @@ $(document).ready(function() {
     window.audio_wrong.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     $('#uid'+data.question+' ul li').css('background', 'red');
-    $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green')
+    $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
     $('#eurekas').html(data.points);
     $('#uid'+data.question+' .answers .resposta').die('click');
     //$('#uid'+data.question+' .resposta').removeAttr('href');
