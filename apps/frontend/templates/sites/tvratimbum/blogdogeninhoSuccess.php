@@ -1,4 +1,3 @@
-         Teste
 <?php 
 $assets = $pager->getResults();
 ?>
@@ -57,11 +56,10 @@ $assets = $pager->getResults();
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $section->getTitle()?></a>
             </div>
             <div class="programaEscolhido-info">
-              <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
-              <div class="box-infos">
+             <div class="box-infos">
                 <?php /*
                 <div class="horario">
                   <p><?php echo html_entity_decode($site->Program->getSchedule())?></p>
@@ -95,24 +93,7 @@ $assets = $pager->getResults();
            
           </div>
          
-          <div class="ganchos"></div>
-         
-         
-          <?php
-            $assets = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a')
-              ->where('a.site_id = ?', $site->getId())
-              ->andWhere('a.asset_type_id = ?', 20)
-              ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.title')
-              ->execute();
-          ?>
-          <?php if($assets): ?> 
-          <?php include_partial_from_folder('tvratimbum','global/personagens-carrossel', array('displays' => $assets)) ?>
-          <span class="picote"></span>
-          <?php endif; ?>
-        </div>       
+             
           
 		<?php 
 			$assets = $pager->getResults();
