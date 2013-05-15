@@ -50,13 +50,13 @@ $assets = $pager->getResults();
     <div class="conteudo internas">
       <div class="colunaMaior">
         <div class="trilha">
-          <p><a href="/">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/programas">Programas</a><span>&gt;&gt;</span><<?php echo $section->getTitle()?>
+          <p><a href="/">TV Rá Tim Bum</a></p><span>&gt;&gt;</span><a href="/programas">Programas</a><span>&gt;&gt;</span><<?php echo $section->getTitle()?></a>
         </div>
         <div id="box-programas-programaEscolhido">
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado"><?php echo $site->getTitle()?></a>
+              <a href="<?php echo $section->retriveUrl()?>" class="enunciado"><?php echo $section->getTitle()?></a>
             </div>
             <div class="programaEscolhido-info">
               <img alt="<?php echo $site->retriveUrl()?>" src="http://midia.cmais.com.br/programs/<?php echo $site->Program->getImageLive() ?>" />
