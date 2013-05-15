@@ -267,7 +267,7 @@ $(document).ready(function() {
         var time = 0;
         //send answer
         window.clearInterval(window.interval);
-        window.audio_tictac.pause();
+        //window.audio_tictac.pause();
         var payload = new Object();
         var data = new Object();
         payload.action = "answer";
