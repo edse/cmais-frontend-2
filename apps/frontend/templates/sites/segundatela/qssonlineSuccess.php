@@ -162,7 +162,7 @@
  var client_name   = '<?php echo $_REQUEST['name']?>';
  var client_email  = '<?php echo $_REQUEST['email']?>';
  var client_avatar = '<?php echo $_REQUEST['avatar']?>';
- var client_eurekas = '<?php echo $_REQUEST['eurekas']?>';
+ //var client_eurekas = '<?php //echo $_REQUEST['eurekas']?>';
  
  var html_rankUser = '<!--posicao-->'
  html_rankUser +='<li style="list-style:none; border-bottom:1px solid #eeeeee; float:left; width:100%">'
