@@ -1,3 +1,6 @@
+<?php
+include_once '/var/frontend/web/segundatela-qss/sign-in/check.php';
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
