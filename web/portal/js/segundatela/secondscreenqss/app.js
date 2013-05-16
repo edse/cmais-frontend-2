@@ -1,4 +1,4 @@
-var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false ),
+var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 $(document).ready(function() {
   $('#ranking-user').append(teste);
