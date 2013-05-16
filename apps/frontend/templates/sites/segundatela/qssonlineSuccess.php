@@ -91,19 +91,20 @@
       
       <!-- direita -->
       <div class="span4">
-        <h2>CLASSIFICAÇÃO</h2>
+        <h2>PONTUAÇÃO</h2>
         
         <!-- abas -->
         <div class="">
-          
-          <!--botoes abas-->
+          <!--
+          <!--botoes abas
           <ul class="nav nav-tabs" id="myTab">
             <li><span class="cantoneira-b cant-item-esq"></span></li>
             <li class="active"><a data-toggle="tab" href="#diaria">DIÁRIA</a></li>
-            <!--li class=""><a data-toggle="tab" href="#semanal">SEMANAL</a></li-->
+            <li class=""><a data-toggle="tab" href="#semanal">SEMANAL</a></li>
             <li style="float:right;border:none;"><span class="cantoneira-b cant-item-dir"></span></li>
           </ul>  
-          <!--botoes abas-->
+          <!--botoes abas
+          -->
           
           <!--lista classificacao-->
           <div class="tab-content" id="myTabContent">
