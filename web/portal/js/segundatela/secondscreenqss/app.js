@@ -1,9 +1,5 @@
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false ),
-    iOSversion = false;
 
-if( !iOS ){
-  var teste = "nao sou ipad iphone"
-}
 $(document).ready(function() {
   $('#ranking-user').append(teste);
   $('.accordion-body').collapse('show');
@@ -138,8 +134,11 @@ $(document).ready(function() {
 
   questionBan = function(data) {
     if(data){
-      window.audio_tictac.pause();
-      window.audio_wrong.play();
+      if( !iOS ){
+        window.audio_tictac.pause();
+        window.audio_wrong.play();
+      }
+     
       $('#uid'+data.uid+' .answers').find('.btn').each(function(index){
         $(this).removeClass('btn-primary').addClass("disabled");
       });
@@ -213,7 +212,7 @@ $(document).ready(function() {
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
     html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
     html +=     '<div class="accordion-inner">';
-    if(clock){
+    //if(clock){
       //console.log(data)
       html +=      '<ul class="answers">'
       
@@ -226,7 +225,7 @@ $(document).ready(function() {
         html +=        '</li>'
       }
       html +=      '</ul>'      
-    }
+    //}
     html +=      '</div>'
     html +=    '</div>'
     html +=    '<!--resposta-->'
@@ -272,8 +271,11 @@ $(document).ready(function() {
         //var time = parseInt(p[1]);
         var time = 0;
         //send answer
+        
         window.clearInterval(window.interval);
-        window.audio_tictac.pause();
+        if( !iOS ){
+          window.audio_tictac.pause();
+        };
         var payload = new Object();
         var data = new Object();
         payload.action = "answer";
@@ -285,18 +287,22 @@ $(document).ready(function() {
       }
     });
       
-    if(!json)
+    if(!json && !iOS)
       document.getElementById('audio-ping').play();
         
     if(clock){
       //$('.accordion-body').collapse('hide');
       $('#uid'+data.uid).collapse('show');
       if(window.interval){
-        window.audio_tictac.pause();
+        if( !iOS ){
+          window.audio_tictac.pause();
+        }
         window.clearInterval(window.interval);
       }
       window.interval = window.setInterval('tick()', 1000);
-      window.audio_tictac.play();
+      if( !iOS ){
+        window.audio_tictac.play();
+      }
     }
 
     tick = function(){
@@ -306,8 +312,10 @@ $(document).ready(function() {
       time--;
       $('#uid'+data.uid+' .time').html('tempo: '+time+'s');
       if(time<1){
-        window.audio_tictac.pause();
-        window.audio_wrong.play();
+        if( !iOS ){
+          window.audio_tictac.pause();
+          window.audio_wrong.play();
+        }
         /*
         $('#uid'+data.uid+' .answers').find('.btn').each(function(index){
           $(this).removeClass('btn-primary').addClass("disabled");
@@ -464,9 +472,11 @@ $(document).ready(function() {
   });
   */
   wrongAnswer = function(data) {
-    window.audio_tictac.pause();
-    window.audio_wrong.currentTime = 0;
-    window.audio_wrong.play();
+    if( !iOS ){
+      window.audio_tictac.pause();
+      window.audio_wrong.currentTime = 0;
+      window.audio_wrong.play();
+    }
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
@@ -481,9 +491,11 @@ $(document).ready(function() {
   };
 
   correctAnswer = function(data) {
-    window.audio_tictac.pause();
-    window.audio_correct.currentTime = 0;
-    window.audio_correct.play();
+    if( !iOS ){
+      window.audio_tictac.pause();
+      window.audio_correct.currentTime = 0;
+      window.audio_correct.play();
+    }
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     //$('#uid'+data.question+' .answer:nth-child('+data.correct_index+') a').removeClass('btn-primary').removeClass('btn-warning').addClass('btn-success');
     $('#uid'+data.question+' ul li').css('background', 'red');
