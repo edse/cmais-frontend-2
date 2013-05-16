@@ -37,8 +37,8 @@
 
     <!--row-->
     <div class="row-fluid conteudo">    
-      <?php if($asset->getDescription()!="") echo "<p>".$asset->getDescription()."</p>"; ?>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <?php if($asset[0]->getDescription()!="") echo "<p>".$asset[0]->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
       <p class="tit" style="margin:20px 0 -20px 0">Assista também:</p>
     </div>
     <!-- /row-->
