@@ -436,7 +436,7 @@ $(document).ready(function() {
     }
     else{
       $('html, body').animate({
-          scrollTop: el.offset().top-100
+          scrollTop: el.offset().top-50
       }, "fast");
     }
   });
