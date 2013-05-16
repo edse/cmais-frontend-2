@@ -185,36 +185,6 @@ $(document).ready(function() {
 
 
   questionInfo = function(data, json, clock) {
-    // Send Answer
-    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
-    //$(".answers .resposta").live('click', function(){
-      console.log('---'+$(this).attr('rel'));
-      if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().find('li').each(function(index){
-          $(this).css("background","#000");
-        });
-        //$(this).removeClass('btn-primary').addClass('btn-warning');
-        //remaining time
-        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
-        //var p = t.split('tempo: ');
-        //var time = parseInt(p[1]);
-        var time = 0;
-        //send answer
-        
-        window.clearInterval(window.interval);
-        if( !iOS ){
-          window.audio_tictac.pause();
-        };
-        var payload = new Object();
-        var data = new Object();
-        payload.action = "answer";
-        data.answer = $(this).find('p').html();
-        data.question = $(this).attr('rel');
-        data.time = time;
-        payload.data = data;
-        return socket.send(JSON.stringify(payload));
-      }
-    });
     //var btn_style = " disabled";
     if(clock)
       //btn_style = " btn-primary";
@@ -290,7 +260,39 @@ $(document).ready(function() {
     */
     $('#accordion2').prepend(html);
     
-      
+    if(!json){
+      // Send Answer
+      $('#uid'+data.uid+' .answers .resposta').live('click', function(){
+      //$(".answers .resposta").live('click', function(){
+        console.log('---'+$(this).attr('rel'));
+        if(!$(this).parent().hasClass('disabled')){
+          $(this).parent().find('li').each(function(index){
+            $(this).css("background","#000");
+          });
+          //$(this).removeClass('btn-primary').addClass('btn-warning');
+          //remaining time
+          //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+          //var p = t.split('tempo: ');
+          //var time = parseInt(p[1]);
+          var time = 0;
+          //send answer
+          
+          window.clearInterval(window.interval);
+          if( !iOS ){
+            window.audio_tictac.pause();
+          };
+          var payload = new Object();
+          var data = new Object();
+          payload.action = "answer";
+          data.answer = $(this).find('p').html();
+          data.question = $(this).attr('rel');
+          data.time = time;
+          payload.data = data;
+          return socket.send(JSON.stringify(payload));
+        }
+      });
+    } 
+     
     if(!json && !iOS)
       document.getElementById('audio-ping').play();
         
