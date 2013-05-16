@@ -211,8 +211,8 @@ $(document).ready(function() {
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
     html +=       '<div style="display:block; margin:0 auto; width:320px;">';
     html +=         '<span class="time label" style="margin: 3% 0;" >tempo: '+data.time+'s</span>';
-    html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.level+'</span>';
-    html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
+    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.level+'</span>';
+    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
     html +=       '</div>';
     html +=     '<div class="accordion-inner">';
     //if(clock){
