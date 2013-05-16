@@ -7,7 +7,7 @@ if( iOS ){
   var teste = "não sou ipad iphone"
 }
 $(document).ready(function() {
-  $('#rankingTable').append(teste);
+  $('#ranking-user').append(teste);
   $('.accordion-body').collapse('show');
   $('.accordion-body').collapse('hide');
 
