@@ -209,9 +209,11 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
-    html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
-    html +=     '<span class="points label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
-    html +=     '<span class="points label label-info" style="margin-left: 5px;">'+data.level+'</span>';
+    html +=       '<div style="display:block; margin:0 auto">';
+    html +=         '<span class="time label">tempo: '+data.time+'s</span>';
+    html +=         '<span class="points label label-warning" style="margin-left: 5px;">'+data.level+'</span>';
+    html +=         '<span class="points label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
+    html +=       '</div>';
     html +=     '<div class="accordion-inner">';
     //if(clock){
       //console.log(data)
@@ -219,7 +221,7 @@ $(document).ready(function() {
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
-        html +=         '<li">'; 
+        html +=         '<li>'; 
         html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>';
         html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>';
         html +=          '<span class="cantoneira-b cant-item-dir"></span>';
