@@ -1,7 +1,6 @@
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 $(document).ready(function() {
-  $('#ranking-user').append(teste);
   $('.accordion-body').collapse('show');
   $('.accordion-body').collapse('hide');
 
