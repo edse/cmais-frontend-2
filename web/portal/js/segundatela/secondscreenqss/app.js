@@ -188,7 +188,6 @@ $(document).ready(function() {
     var btn_style = " disabled";
     if(clock){
       btn_style = " btn-primary";
-      $("#time").remove()
     }
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
@@ -531,9 +530,5 @@ $(document).ready(function() {
     payload.data = data;
     return socket.send(JSON.stringify(payload));
   }
-  window.onload=function(){
-   window.onbeforeunload = function(){        
-     return "Atenção: Ao fechar essa janela você perderá automaticamente seus pontos.";        
-   }
-  }
+
 });
