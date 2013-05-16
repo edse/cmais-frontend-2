@@ -52,7 +52,7 @@
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog do Geninho</a>
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog Missão Minuto</a>
             </div>      
             </div> 
             </div> 
