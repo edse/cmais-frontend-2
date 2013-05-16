@@ -1,9 +1,9 @@
 <?php 
 if(!$asset){
-  //$assets = $pager->getResults();
-  $assets = $asset[0];
+  $assets = $pager->getResults();
+  //$assets = $asset[0];
 }else {
-	$assets = $asset[0];
+	$assets = $asset;
 }
 ?>
 
