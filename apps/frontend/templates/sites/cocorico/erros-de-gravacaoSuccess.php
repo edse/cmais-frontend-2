@@ -1,9 +1,7 @@
 <?php 
-if(!$asset){
+
   $assets = $pager->getResults();
-}else {
-	$assets = $asset;
-}
+
 ?>
 
 <link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -39,8 +37,8 @@ if(!$asset){
 
     <!--row-->
     <div class="row-fluid conteudo">    
-      <?php if($assets->getDescription()!="") echo "<p>".$assets->getDescription()."</p>"; ?>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <?php if($asset->getDescription()!="") echo "<p>".$asset->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
       <p class="tit" style="margin:20px 0 -20px 0">Assista também:</p>
     </div>
     <!-- /row-->
