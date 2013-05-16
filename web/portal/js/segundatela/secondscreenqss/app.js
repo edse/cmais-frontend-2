@@ -427,10 +427,12 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     if(playing)
       playing.pauseVideo();
+    $(this).prev().find('.seta').removeClass('seta-hide');  
   });
   
   $('.accordion-body').live('shown', function() { 
     //scroll
+    $(this).prev().find('.seta').addClass('seta-hide'); 
     var el = $(this).parent();
     if($('.navbar-fixed-top').css('position') == "static"){
       $('html, body').animate({
