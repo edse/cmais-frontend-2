@@ -35,8 +35,8 @@ $assets = $pager->getResults();
 
     <!--row-->
     <div class="row-fluid conteudo">    
-      <?php if($assets->getDescription()!="") echo "<p>".$assets->getDescription()."</p>"; ?>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
       <p class="tit" style="margin:20px 0 -20px 0">Assista também:</p>
     </div>
     <!-- /row-->
