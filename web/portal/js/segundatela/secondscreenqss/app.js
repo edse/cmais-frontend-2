@@ -83,7 +83,7 @@ $(document).ready(function() {
       //$('#tryin-p').hide();
       //$('#users a').addClass('btn-success').css('opacity', 1);
       $('#users a').css('opacity', 1);
-      $('#users').show()
+      $('#users').show();
       $('#points a').css('opacity', 1);
       $('#points').show();
       //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
@@ -210,30 +210,28 @@ $(document).ready(function() {
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
     html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
+    html +=     '<span class="points label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
+    html +=     '<span class="points label label-info" style="margin-left: 5px;">'+data.level+'</span>';
     html +=     '<div class="accordion-inner">';
     //if(clock){
-      console.log(data)
-      html +=      '<ul class="answers">'
+      //console.log(data)
+      html +=      '<ul class="answers">';
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
-        //console.log(data.correct_index);
-        if(data.correct_index == i);
-          var correct = "correct";
-          
-        html +=         '<li class="'+correct+'">' 
-        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
-        html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>'
-        html +=          '<span class="cantoneira-b cant-item-dir"></span>'
-        html +=        '</li>'
+        html +=         '<li">'; 
+        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>';
+        html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>';
+        html +=          '<span class="cantoneira-b cant-item-dir"></span>';
+        html +=        '</li>';
       }
-      html +=      '</ul>'      
+      html +=      '</ul>';      
     //}
-    html +=      '</div>'
-    html +=    '</div>'
-    html +=    '<!--resposta-->'
-    html +=  '</div>'
-    html +=  '<!--/pergunta chamada-->'
+    html +=      '</div>';
+    html +=    '</div>';
+    html +=    '<!--resposta-->';
+    html +=  '</div>';
+    html +=  '<!--/pergunta chamada-->';
     
     
   
