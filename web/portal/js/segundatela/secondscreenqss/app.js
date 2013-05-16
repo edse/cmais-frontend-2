@@ -185,9 +185,39 @@ $(document).ready(function() {
 
 
   questionInfo = function(data, json, clock) {
-    var btn_style = " disabled";
+    // Send Answer
+    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
+    //$(".answers .resposta").live('click', function(){
+      console.log('---'+$(this).attr('rel'));
+      if(!$(this).parent().hasClass('disabled')){
+        $(this).parent().find('li').each(function(index){
+          $(this).css("background","#000");
+        });
+        //$(this).removeClass('btn-primary').addClass('btn-warning');
+        //remaining time
+        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+        //var p = t.split('tempo: ');
+        //var time = parseInt(p[1]);
+        var time = 0;
+        //send answer
+        
+        window.clearInterval(window.interval);
+        if( !iOS ){
+          window.audio_tictac.pause();
+        };
+        var payload = new Object();
+        var data = new Object();
+        payload.action = "answer";
+        data.answer = $(this).find('p').html();
+        data.question = $(this).attr('rel');
+        data.time = time;
+        payload.data = data;
+        return socket.send(JSON.stringify(payload));
+      }
+    });
+    //var btn_style = " disabled";
     if(clock)
-      btn_style = " btn-primary";
+      //btn_style = " btn-primary";
       
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
@@ -209,8 +239,8 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
-    html +=       '<div style="display:block; margin:0 auto">';
-    html +=         '<span class="time label">tempo: '+data.time+'s</span>';
+    html +=       '<div style="display:block; margin:0 auto; width:212px;">';
+    html +=         '<span class="time label" style="margin: 3% 0;" >tempo: '+data.time+'s</span>';
     html +=         '<span class="points label label-warning" style="margin-left: 5px;">'+data.level+'</span>';
     html +=         '<span class="points label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
     html +=       '</div>';
@@ -259,36 +289,7 @@ $(document).ready(function() {
     html += '</div></div></div>';
     */
     $('#accordion2').prepend(html);
-    // Send Answer
-    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
-    //$(".answers .resposta").live('click', function(){
-      console.log('---'+$(this).attr('rel'));
-      if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().find('li').each(function(index){
-          $(this).css("background","#000");
-        });
-        //$(this).removeClass('btn-primary').addClass('btn-warning');
-        //remaining time
-        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
-        //var p = t.split('tempo: ');
-        //var time = parseInt(p[1]);
-        var time = 0;
-        //send answer
-        
-        window.clearInterval(window.interval);
-        if( !iOS ){
-          window.audio_tictac.pause();
-        };
-        var payload = new Object();
-        var data = new Object();
-        payload.action = "answer";
-        data.answer = $(this).find('p').html();
-        data.question = $(this).attr('rel');
-        data.time = time;
-        payload.data = data;
-        return socket.send(JSON.stringify(payload));
-      }
-    });
+    
       
     if(!json && !iOS)
       document.getElementById('audio-ping').play();
