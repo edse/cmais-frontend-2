@@ -158,7 +158,8 @@
     });
 </script>
 <script>
-
+<?php
+ /*
  var client_token  = '<?php echo $_REQUEST['token']?>';
  var client_name   = '<?php echo $_REQUEST['name']?>';
  var client_email  = '<?php echo $_REQUEST['email']?>';
@@ -174,6 +175,8 @@
  html_rankUser += '</li>'
  html_rankUser += '<!--/posicao-->'
  $('#ranking-user').append(html_rankUser);
+ */
+ ?>
 </script>
 <script src="/portal/js/segundatela/secondscreenqss/json2.js"></script>
 <script src="/portal/js/segundatela/secondscreenqss/app.js"></script>
