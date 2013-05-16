@@ -202,6 +202,7 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>';
               
     html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#uid'+data.uid+'">';
+    html +=     '<span class="seta"></span>';
     html +=       '<p>'+ data.question + '</p>';
     html +=     '</a>'
 
