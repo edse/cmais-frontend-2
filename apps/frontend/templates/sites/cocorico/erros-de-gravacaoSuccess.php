@@ -2,7 +2,7 @@
 if(!$asset){
   $assets = $pager->getResults();
 }else {
-	$assets = $asset;
+	$assets = $asset[0];
 }
 ?>
 
