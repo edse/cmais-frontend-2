@@ -1,10 +1,8 @@
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false ),
     iOSversion = false;
 
-if( iOS ){
-  var teste = "sou ipad iphone"
-}else{
-  var teste = "não sou ipad iphone"
+if( !iOS ){
+  var teste = "nao sou ipad iphone"
 }
 $(document).ready(function() {
   $('#ranking-user').append(teste);
