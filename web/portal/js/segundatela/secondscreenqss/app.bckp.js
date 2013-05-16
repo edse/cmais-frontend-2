@@ -1,9 +1,3 @@
-var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false ),
-    iOSversion = false;
-
-if( iOS ){
-  var teste = "sou ipad iphone"
-}
 $(document).ready(function() {
   
   $('.accordion-body').collapse('show');
