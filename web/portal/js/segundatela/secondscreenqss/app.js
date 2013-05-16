@@ -212,12 +212,13 @@ $(document).ready(function() {
     html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
     html +=     '<div class="accordion-inner">';
     //if(clock){
-      console.log(data)
+      //console.log(data)
       html +=      '<ul class="answers">'
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
-        if(data.correct_index == i)
+        console.log(data.correct_index);
+        if(data.correct_index == i);
           var correct = "correct";
           
         html +=         '<li class="'+correct+'">' 
