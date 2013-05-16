@@ -185,9 +185,9 @@ $(document).ready(function() {
 
 
   questionInfo = function(data, json, clock) {
-    //var btn_style = " disabled";
+    var btn_style = " disabled";
     if(clock)
-      //btn_style = " btn-primary";
+      btn_style = " btn-primary";
       
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
