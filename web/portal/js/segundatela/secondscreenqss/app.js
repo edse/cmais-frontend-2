@@ -188,7 +188,7 @@ $(document).ready(function() {
     var btn_style = " disabled";
     if(clock)
       btn_style = " btn-primary";
-      
+ 
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
     html +=   '<div class="accordion-heading">';
@@ -210,7 +210,7 @@ $(document).ready(function() {
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
     html +=       '<div style="display:block; margin:0 auto; width:320px;">';
-    if(json){
+    if(!json){
     html +=         '<span class="time label" style="margin: 3% 0;" >tempo: '+data.time+'s</span>';
     }
     //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.level+'</span>';
