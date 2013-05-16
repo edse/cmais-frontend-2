@@ -3,6 +3,8 @@ var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false ),
 
 if( iOS ){
   var teste = "sou ipad iphone"
+}else{
+  var teste = "não sou ipad iphone"
 }
 $(document).ready(function() {
   $('#rankingTable').append(teste);
