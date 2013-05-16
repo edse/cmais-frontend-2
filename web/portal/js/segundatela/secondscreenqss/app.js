@@ -148,7 +148,7 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
- 
+    /*
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
@@ -177,7 +177,7 @@ $(document).ready(function() {
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
-     
+      */
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
     }
