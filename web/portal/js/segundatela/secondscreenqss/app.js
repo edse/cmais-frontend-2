@@ -148,7 +148,7 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
- /*
+ 
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
@@ -173,22 +173,23 @@ $(document).ready(function() {
           html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
           html_rank += '</li>'
           html_rank += '<!--/posicao-->'
-          //$('#ranking-diario').append(html_rank);
+          $('#ranking-diario').append(html_rank);
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
      
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
-    }*/
+    }
   }
 
 
   questionInfo = function(data, json, clock) {
     var btn_style = " disabled";
-    if(clock)
+    if(clock){
       btn_style = " btn-primary";
- 
+      $("#time").remove()
+    }
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
     html +=   '<div class="accordion-heading">';
@@ -530,5 +531,9 @@ $(document).ready(function() {
     payload.data = data;
     return socket.send(JSON.stringify(payload));
   }
-
+  window.onload=function(){
+   window.onbeforeunload = function(){        
+     return "Atenção: Ao fechar essa janela você perderá automaticamente seus pontos.";        
+   }
+  }
 });
