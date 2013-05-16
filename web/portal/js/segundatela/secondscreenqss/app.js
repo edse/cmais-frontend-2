@@ -87,7 +87,7 @@ $(document).ready(function() {
       $('#points a').css('opacity', 1);
       $('#points').show();
       //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
-      return $('#status').removeClass('offline').addClass('online').html('conectado');
+      //return $('#status').removeClass('offline').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
