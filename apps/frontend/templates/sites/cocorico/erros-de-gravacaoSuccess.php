@@ -1,6 +1,7 @@
 <?php 
 if(!$asset){
-  $assets = $pager->getResults();
+  //$assets = $pager->getResults();
+  $assets = $asset[0];
 }else {
 	$assets = $asset[0];
 }
