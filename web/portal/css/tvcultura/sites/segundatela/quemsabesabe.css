@@ -1,7 +1,8 @@
 @import url("geral.css");
 /* quem sabe sabe */
 .time{margin: 3% 0 10% 0;background: #5b2561;border-radius: 0;padding: 5px;text-shadow: none;font-family: arial;font-weight: lighter;}
-.seta{width: 20px;height: 20px;background: url(/portal/images/capaPrograma/segundatela/quemsabesabe/setinha.png) no-repeat;display: block;position: absolute;right: 37px;top: 11px;}
+.seta{width: 20px;height: 20px;background: url(/portal/images/capaPrograma/segundatela/quemsabesabe/setinha.png) no-repeat top;display: block;position: absolute;right: 37px;top: 11px;}
+.seta-hide{background-position:bottom}
 .offline{color:red!important;}
 .online{color:#006600!important;}
 .disabled{background:#ccc!important;}
