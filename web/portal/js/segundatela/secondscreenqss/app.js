@@ -201,7 +201,7 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-esq-inf"></span>';
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>';
               
-    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="uid'+data.uid+'">';
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#uid'+data.uid+'">';
     html +=       '<p>'+ data.question + '</p>';
     html +=     '</a>'
 
