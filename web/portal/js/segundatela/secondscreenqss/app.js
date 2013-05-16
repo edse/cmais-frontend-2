@@ -217,7 +217,10 @@ $(document).ready(function() {
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
-        html +=         '<li>' 
+        if(data.correct_index == i)
+          correct = "correct";
+          
+        html +=         '<li class="'+correct+'">' 
         html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
         html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>'
         html +=          '<span class="cantoneira-b cant-item-dir"></span>'
