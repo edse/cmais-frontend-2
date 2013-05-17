@@ -57,6 +57,11 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
          <h2 class="grid3"><img style="float:left;" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="Univesp TV" title="Univesp TV" /></h2>
+         
+        <?php if(isset($program) && $program->id > 0): ?>
+        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+        <?php endif; ?>
+         
 
         <!-- box-topo -->
         <div class="box-topo grid3">
