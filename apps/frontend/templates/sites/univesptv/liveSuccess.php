@@ -1,20 +1,10 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
 <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>  
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
 <style>
 #direita { margin-top:0;}
 #esquerda .stream {float: left; margin-top: 5px;}
 #esquerda .stream a {background: none repeat scroll 0 0 #FF6633; clear: none;color: #FFFFFF; float: left;margin-right: 5px; padding: 0 3px; width: auto; }
 #esquerda .stream a.ativo, #esquerda .stream a:hover { background: none repeat scroll 0 0 #333333;text-decoration: none;}
-
-.nav-tabs > li { margin-bottom:0; }
-.nav-tabs { background:#666; border:none; border-left: 1px dotted #fff;  }
-.nav-tabs > li { border-right: 1px dotted #fff; }
-.nav-tabs > li > a { font-weight:bold; text-transform:uppercase;color:#fff; background:#666;border:none; padding:0; height:30px; line-height: 30px; margin:0; font-size:16px; min-width:100px; text-align:center; }
-.nav-tabs > li:hover > a,
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {  background:#333; color:#fff; border:none; }
 </style>
 
 <script type="text/javascript">
