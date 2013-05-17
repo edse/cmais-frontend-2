@@ -4,7 +4,7 @@
     <contributor>
       <author>centesimo2</author>
       <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.3.1;  Revision: 847M;  Platform: Win32;  Configuration: Release_Max2011_static</authoring_tool>
-      <source_data>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/RaTimBum_LowPoly_FINAL_2011.max</source_data>
+      <source_data>../3D/RaTimBum_LowPoly_FINAL_2011.max</source_data>
     </contributor>
     <created>2012-07-15T12:33:22</created>
     <modified>2012-07-15T12:33:22</modified>
@@ -3994,61 +3994,61 @@
   </library_lights>
   <library_images>
     <image id="bartolomeu_frente_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/bartolomeu_frente.png</init_from>
+      <init_from>../3D/bartolomeu_frente.png</init_from>
     </image>
     <image id="bartolomeu_tras_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/bartolomeu_tras.png</init_from>
+      <init_from>../3D/bartolomeu_tras.png</init_from>
     </image>
     <image id="drraioxBack_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/drraioxBack.png</init_from>
+      <init_from>../3D/drraioxBack.png</init_from>
     </image>
     <image id="drraioxFront_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/drraioxFront.png</init_from>
+      <init_from>../3D/drraioxFront.png</init_from>
     </image>
     <image id="jean_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/jean.jpg</init_from>
+      <init_from>../3D/jean.jpg</init_from>
     </image>
     <image id="jucaBaratao_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/jucaBaratao.png</init_from>
+      <init_from>../3D/jucaBaratao.png</init_from>
     </image>
     <image id="mapXray_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/mapXray.png</init_from>
+      <init_from>../3D/mapXray.png</init_from>
     </image>
     <image id="maquina_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/maquina.png</init_from>
+      <init_from>../3D/maquina.png</init_from>
     </image>
     <image id="sidney_frente_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/sidney_frente.png</init_from>
+      <init_from>../3D/sidney_frente.png</init_from>
     </image>
     <image id="sidney_tras_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/sidney_tras.png</init_from>
+      <init_from>../3D/sidney_tras.png</init_from>
     </image>
     <image id="simao_frente_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/simao_frente.png</init_from>
+      <init_from>../3D/simao_frente.png</init_from>
     </image>
     <image id="simao_tras_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/simao_tras.png</init_from>
+      <init_from>../3D/simao_tras.png</init_from>
     </image>
     <image id="textDJCao_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/textDJCao.jpg</init_from>
+      <init_from>../3D/textDJCao.jpg</init_from>
     </image>
     <image id="textGENINHO_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/textGENINHO.jpg</init_from>
+      <init_from>../3D/textGENINHO.jpg</init_from>
     </image>
     <image id="textNILO_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/textNILO.jpg</init_from>
+      <init_from>../3D/textNILO.jpg</init_from>
     </image>
     <image id="textTILA_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/textTILA.jpg</init_from>
+      <init_from>../3D/textTILA.jpg</init_from>
     </image>
     <image id="tracio_jpg">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/tracio.jpg</init_from>
+      <init_from>../3D/tracio.jpg</init_from>
     </image>
     <image id="zezinhoCaveira_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/zezinhoCaveira.png</init_from>
+      <init_from>../3D/zezinhoCaveira.png</init_from>
     </image>
     <image id="zezinhoNormal_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/zezinhoNormal.png</init_from>
+      <init_from>../3D/zezinhoNormal.png</init_from>
     </image>
   </library_images>
   <library_visual_scenes>
