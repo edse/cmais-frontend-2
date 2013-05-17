@@ -444,8 +444,9 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: el.offset().top-30
       }, "fast");
+       $(this).parent().next().find('.accordion-body:first').collapse('toggle');
     }
-    $(this).parent().next().find('.accordion-body:first').collapse('toggle');
+   
    
   });
   
