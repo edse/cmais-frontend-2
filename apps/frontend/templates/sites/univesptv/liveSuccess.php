@@ -99,7 +99,7 @@
               <?php include_partial_from_folder('blocks','global/display-2c-broadcast2', array('live_id' => $schedules[0]->id, 'channel_id'=>3)) ?>
               <!-- /lista calendario -->
 
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php /*include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) */ ?>
               
             </div>
             <!-- /ESQUERDA -->
@@ -131,6 +131,31 @@
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                   <div id="email" class="tab-pane fade">
+                    <form id="form-contato" method="post" action="">
+                      <div class="linha t1">
+                        <label>nome</label>
+                        <input type="text" name="nome" id="nome" />
+                      </div>
+                      <div class="linha t3">
+                        <label>email</label>
+                        <input type="text" name="email" id="email" />
+                      </div>
+                      <div class="linha t3">
+                        <label>mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                      </div>
+                      <div class="linha t3 codigo" id="captchaimage">
+                        <label for="captcha">Confirma&ccedil;&atilde;o</label>
+                        <br />
+                        <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                          <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                        </a>
+                        <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
+                        <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                        <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -143,6 +168,60 @@
                     $(target).addClass("active");
                     return false;
                   });
+                  
+                  var validator = $('#form-contato').validate({
+                    submitHandler: function(form){
+                      $.ajax({
+                        type: "POST",
+                        dataType: "text",
+                        data: $("#form-contato").serialize(),
+                        beforeSend: function(){
+                          $('input#enviar').attr('disabled','disabled');
+                          $(".msgAcerto").hide();
+                          $(".msgErro").hide();
+                          $('img#ajax-loader').show();
+                        },
+                        success: function(data){
+                        $('input#enviar').removeAttr('disabled');
+                          window.location.href="#";
+                          if(data == "1"){
+                            $("#form-contato").clearForm();
+                            $(".msgAcerto").show();
+                            $('img#ajax-loader').hide();
+                          }
+                          else {
+                            $(".msgErro").show();
+                            $('img#ajax-loader').hide();
+                          }
+                        }
+                      });         
+                    },
+                    rules:{
+                      nome:{
+                        required: true,
+                        minlength: 2
+                      },
+                      email:{
+                        required: true,
+                        email: true
+                      },
+                      mensagem:{
+                        required: true
+                      },
+                      captcha: {
+                        required: true,
+                        remote: "/portal/js/validate/demo/captcha/process.php"
+                      }
+                    },
+                    messages:{
+                      captcha: "Digite corretamente o código que está ao lado."
+                    },
+                    success: function(label){
+                      // set &nbsp; as text for IE
+                      label.html("&nbsp;").addClass("checked");
+                    }
+                  });
+                  
                 });
               </script>
 
