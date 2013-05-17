@@ -442,9 +442,10 @@ $(document).ready(function() {
     }
     else{
       $('html, body').animate({
-          scrollTop: el.offset().top-50
+          scrollTop: el.offset().top-30
       }, "fast");
     }
+    $(this).parent().next().find('.seta').hide();
   });
   
   //$(".accordion").collapse();
