@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
 <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
 <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>  
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-tab.js"></script>  
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
 <style>
 #direita { margin-top:0;}
 #esquerda .stream {float: left; margin-top: 5px;}
