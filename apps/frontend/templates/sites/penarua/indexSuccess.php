@@ -41,7 +41,7 @@ $(function() {
      <!-- MIOLO -->
       <div id="miolo">
      
-      	  <div class="fale-conosco"></div>          
+      	         
           <div class="relogio">
           	<a href="/penarua/sobre-o-programa" title="Apresentadores" name="Apresentadores"><img src="/portal/images/capaPrograma/penarua/fotoApresentadores.jpg" alt="Apresentadores" /></a>
           	<script type="text/javascript">
