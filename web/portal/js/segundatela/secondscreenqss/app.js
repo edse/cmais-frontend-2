@@ -444,9 +444,10 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: el.offset().top-30
       }, "fast");
-       $('#uid' +data.uid).parent().next(':first').find('.accordion-body:first').collapse('toggle');
     }
-   
+    if($(this).parent().next().find('.accordion-body').is(':visible')){
+       $(this).parent().next().find('.accordion-body').collapse('hide');
+     }
    
   });
   
