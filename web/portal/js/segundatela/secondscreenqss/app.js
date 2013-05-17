@@ -444,7 +444,7 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: el.offset().top-30
       }, "fast");
-       $(this).parent().next(':first').find('.accordion-body:first').collapse('toggle');
+       $('#uid' +data.uid).parent().next(':first').find('.accordion-body:first').collapse('toggle');
     }
    
    
