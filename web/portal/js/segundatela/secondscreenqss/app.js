@@ -2,7 +2,7 @@ var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 $(document).ready(function() {
   $('.accordion-body').collapse('show');
-  $('.accordion-body').collapse('hide');
+  //$('.accordion-body').collapse('hide');
 
   getParameter = function (name) {
     return decodeURI((RegExp(name + '=' + '(.+?)(&amp;|$)').exec(location.search)||[,null])[1]);
