@@ -131,6 +131,22 @@
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                   <div id="email" class="tab-pane fade">
+                    <div class="msgErro" style="display:none">
+                      <span class="alerta"></span>
+                      <div class="boxMsg">
+                        <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                        <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+                      </div>
+                      <hr />
+                    </div>
+                    <div class="msgAcerto" style="display:none">
+                      <span class="alerta"></span>
+                      <div class="boxMsg">
+                        <p class="aviso">Mensagem enviada com sucesso!</p>
+                        <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      </div>
+                      <hr />
+                    </div>
                     <form id="form-contato" method="post" action="">
                       <div class="linha t1">
                         <label>nome</label>
