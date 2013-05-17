@@ -2,7 +2,7 @@ var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 $(document).ready(function() {
   $('.accordion-body').collapse('show');
-  //$('.accordion-body').collapse('hide');
+  $('.accordion-body').collapse('hide');
 
   getParameter = function (name) {
     return decodeURI((RegExp(name + '=' + '(.+?)(&amp;|$)').exec(location.search)||[,null])[1]);
@@ -445,7 +445,9 @@ $(document).ready(function() {
           scrollTop: el.offset().top-30
       }, "fast");
     }
-    $(this).parent().next().find('.accordion-body:first').collapse('hide');
+    if($(this).parent().next().find('.accordion-body').is(':visible')){
+       $(this).parent().next().find('.accordion-body').collapse('hide');
+     }
    
   });
   
