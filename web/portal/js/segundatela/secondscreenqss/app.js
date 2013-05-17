@@ -445,7 +445,7 @@ $(document).ready(function() {
           scrollTop: el.offset().top-30
       }, "fast");
     }
-    $(this).parent().next().find('.accordion-body').collapse('hide');
+    $(this).parent().next().find('.accordion-body').collapse('toggle');
    
   });
   
