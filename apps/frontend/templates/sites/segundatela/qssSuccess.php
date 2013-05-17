@@ -82,14 +82,12 @@
       <div class="span3">
         <label>Email</label> 
         <input type="email" name="login_email" id="login_email" />
-        <label class="checkbox" for="manter_conectado" id="conectado">
-          <input type="checkbox" name="manter_conectado" id="manter_conectado" ><span class="txt_manterconectado">Mantenha-me conectado</span>
-        </label>
+        
       </div>
       <div class="span3">
         <label>Senha</label> 
         <input type="password" name="login_password" id="login_password" />
-        <a href="#" class="esqueci" >Esqueci minha senha</a>
+        
       </div>
       <div class="span3">
         <label style="margin-bottom: 8px;">&nbsp;</label>
@@ -300,8 +298,8 @@ $(document).ready(function(){
           //$('.alert').hide();
           if(json.status == "success"){
             $('#login-alert-error-login').hide();
-            self.location.href="./qssonline/?token="+json.token;
-            //self.location.href="/segundatela-qss/site/?token="+json.token;
+            //self.location.href="./qssonline/?token="+json.token;
+            self.location.href="/segundatela-qss/site/?token="+json.token;
           }
           else{
             $('#login-alert-error-login').fadeIn('slow');
@@ -336,8 +334,8 @@ $(document).ready(function(){
       success:function(json){
         //$('.alert').hide();
         if(json.status == "success"){
-          self.location.href="./qssonline/?token="+json.token;
-          //self.location.href="/segundatela-qss/site/?token="+json.token;  
+          //self.location.href="./qssonline/?token="+json.token;
+          self.location.href="/segundatela-qss/site/?token="+json.token;  
         }
         else{
           $('#login-alert-error').fadeIn('slow');

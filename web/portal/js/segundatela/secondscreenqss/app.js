@@ -87,7 +87,7 @@ $(document).ready(function() {
       $('#points a').css('opacity', 1);
       $('#points').show();
       //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
-      return $('#status').removeClass('offline').addClass('online').html('conectado');
+      $('#status').removeClass('offline').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
@@ -148,7 +148,7 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
- /*
+    /*
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
@@ -173,22 +173,23 @@ $(document).ready(function() {
           html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
           html_rank += '</li>'
           html_rank += '<!--/posicao-->'
-          //$('#ranking-diario').append(html_rank);
+          $('#ranking-diario').append(html_rank);
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
-     
+      
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
-    }*/
+    }
+    */
   }
 
 
   questionInfo = function(data, json, clock) {
     var btn_style = " disabled";
-    if(clock)
+    if(clock){
       btn_style = " btn-primary";
-      
+    }
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
     html +=   '<div class="accordion-heading">';
@@ -202,6 +203,7 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>';
               
     html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#uid'+data.uid+'">';
+    html +=     '<span class="seta"></span>';
     html +=       '<p>'+ data.question + '</p>';
     html +=     '</a>'
 
@@ -209,10 +211,12 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
-    html +=       '<div style="display:block; margin:0 auto">';
-    html +=         '<span class="time label">tempo: '+data.time+'s</span>';
-    html +=         '<span class="points label label-warning" style="margin-left: 5px;">'+data.level+'</span>';
-    html +=         '<span class="points label label-success" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
+    html +=       '<div style="display:block; margin:0 auto; width:100px;">';
+    if(!json){
+    html +=         '<span class="time label" >tempo: '+data.time+'s</span>';
+    }
+    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.level+'</span>';
+    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
     html +=       '</div>';
     html +=     '<div class="accordion-inner">';
     //if(clock){
@@ -259,37 +263,40 @@ $(document).ready(function() {
     html += '</div></div></div>';
     */
     $('#accordion2').prepend(html);
-    // Send Answer
-    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
-    //$(".answers .resposta").live('click', function(){
-      console.log('---'+$(this).attr('rel'));
-      if(!$(this).parent().hasClass('disabled')){
-        $(this).parent().find('li').each(function(index){
-          $(this).css("background","#000");
-        });
-        //$(this).removeClass('btn-primary').addClass('btn-warning');
-        //remaining time
-        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
-        //var p = t.split('tempo: ');
-        //var time = parseInt(p[1]);
-        var time = 0;
-        //send answer
-        
-        window.clearInterval(window.interval);
-        if( !iOS ){
-          window.audio_tictac.pause();
-        };
-        var payload = new Object();
-        var data = new Object();
-        payload.action = "answer";
-        data.answer = $(this).find('p').html();
-        data.question = $(this).attr('rel');
-        data.time = time;
-        payload.data = data;
-        return socket.send(JSON.stringify(payload));
-      }
-    });
-      
+    
+    if(!json){
+      // Send Answer
+      $('#uid'+data.uid+' .answers .resposta').live('click', function(){
+      //$(".answers .resposta").live('click', function(){
+        console.log('---'+$(this).attr('rel'));
+        if(!$(this).parent().hasClass('disabled')){
+          $(this).parent().find('li').each(function(index){
+            $(this).css("background","#000");
+          });
+          //$(this).removeClass('btn-primary').addClass('btn-warning');
+          //remaining time
+          //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+          //var p = t.split('tempo: ');
+          //var time = parseInt(p[1]);
+          var time = 0;
+          //send answer
+          
+          window.clearInterval(window.interval);
+          if( !iOS ){
+            window.audio_tictac.pause();
+          };
+          var payload = new Object();
+          var data = new Object();
+          payload.action = "answer";
+          data.answer = $(this).find('p').html();
+          data.question = $(this).attr('rel');
+          data.time = time;
+          payload.data = data;
+          return socket.send(JSON.stringify(payload));
+        }
+      });
+    } 
+     
     if(!json && !iOS)
       document.getElementById('audio-ping').play();
         
@@ -421,10 +428,12 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     if(playing)
       playing.pauseVideo();
+    $(this).prev().find('.seta').removeClass('seta-hide');  
   });
   
   $('.accordion-body').live('shown', function() { 
     //scroll
+    $(this).prev().find('.seta').addClass('seta-hide'); 
     var el = $(this).parent();
     if($('.navbar-fixed-top').css('position') == "static"){
       $('html, body').animate({
@@ -433,7 +442,7 @@ $(document).ready(function() {
     }
     else{
       $('html, body').animate({
-          scrollTop: el.offset().top-100
+          scrollTop: el.offset().top-50
       }, "fast");
     }
   });

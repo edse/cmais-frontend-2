@@ -1,6 +1,8 @@
 @import url("geral.css");
 /* quem sabe sabe */
-.time{margin: 0% 0 1% 7%}
+.time{margin: 3% 0 10% 0;background: #5b2561;border-radius: 0;padding: 5px;text-shadow: none;font-family: arial;font-weight: lighter;}
+.seta{width: 20px;height: 20px;background: url(/portal/images/capaPrograma/segundatela/quemsabesabe/setinha.png) no-repeat top;display: block;position: absolute;right: 37px;top: 11px;}
+.seta-hide{background-position:0px -20px;}
 .offline{color:red!important;}
 .online{color:#006600!important;}
 .disabled{background:#ccc!important;}
@@ -36,7 +38,7 @@
 .navbar{position:absolute; top:1000px; display:none;}
 #footer{margin-top:100px;}
 
-.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left}
+.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left;}
 .avatar-1{background-position:-8px -5px!important;}
 .avatar-2{background-position:-70px -5px!important;}
 .avatar-3{background-position:-132px -5px!important;}
@@ -91,7 +93,7 @@
 /*.section-body .selected{background:#d48520;}*/
 
 .section-body .accordion-heading{position:relative;border:none}
-.section-body .accordion-heading p{padding:8px 23px;margin:0;}
+.section-body .accordion-heading p{padding:8px 39px;margin:0;}
 
 .section-body .letra{text-align: center;line-height: 32px;color: #fbdc01;font-weight: bold;font-size: 18px;}
 .section-body .cantoneira{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras_b.png) no-repeat; display:block; float:left;width:39px; height:38px;}
