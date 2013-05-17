@@ -107,10 +107,10 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">                         
               <style>
-                #myTabContent div {
+                #myTabContent > div {
                   display:none
                 }
-                #myTabContent div.active {
+                #myTabContent > div.active {
                   display:block
                 }
               </style>
@@ -138,7 +138,8 @@
               <script>
                 $(function() {
                   $("#myTab li a").click(function(){
-                    alert($(this).attr('href'));
+                    var target = $(this).attr('href');
+                    $(target).toggle();
                   });
                 });
               </script>
