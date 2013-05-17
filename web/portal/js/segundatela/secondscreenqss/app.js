@@ -268,7 +268,7 @@ $(document).ready(function() {
       // Send Answer
       $('#uid'+data.uid+' .answers .resposta').live('click', function(){
       //$(".answers .resposta").live('click', function(){
-        console.log('---'+$(this).attr('rel'));
+        //console.log('---'+$(this).attr('rel'));
         if(!$(this).parent().hasClass('disabled')){
           $(this).parent().find('li').each(function(index){
             $(this).css("background","#000");
@@ -392,7 +392,7 @@ $(document).ready(function() {
     url: question_url,
     dataType: 'json',
     success:function(json){
-      console.log(json);
+      //console.log(json);
       if(json!=null){
         $.each(json, function( key, value ) {
           if(!value.banned)
