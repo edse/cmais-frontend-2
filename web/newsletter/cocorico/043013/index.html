@@ -18,8 +18,8 @@
       .box ul a,
       .box p { color:#fff;}
       .box p { margin:10px 0; font-size:15px;}
-      .box .grade p { float:left; width:475px !important;  }
-      .box .grade p img { float:left; width:89px; }
+      .box .grade { float:left; width:475px !important;  }
+      .box .grade img { float:left; width:89px; }
       .box img { float:left; margin-right:10px; }
       .box img { width:100px; }
       .globo { margin-top:230px; margin-left:85px; }
@@ -47,26 +47,34 @@
       .abrin { margin:138px 0 0 47px;    padding: 0;    width: 230px; float:left; }
       .abrin td,
       .abrin span { width:230px; }
-      .telinha { width: 600px; height:591px; margin-top:400px;  }
+      .telinha { width: 600px; height:591px; margin-top:100px; float:left;  }
       .rodape { background:url(http://cmais.com.br/newsletter/cocorico/043013/img/bg-rodape.jpg) repeat-x; width: 600px; height:125px; float:left; }
       .rodape a,
       .rodape p { color:#fff; font-size:14px; }
       .rodape p { margin:20px 0 0 20px; width:330px; float:left; }
       .rodape .bold { font-size:10px; font-weight:bold; text-transform:uppercase; }
       .rodape .tv { width:87px; height:76px; display:block; float:right; margin:20px 20px 0 0; }
-      td { float:left; }
       .box ul p { margin:0; }
-      
-      table { *background-position: 40px 190px; }
+      table { *background-position: 40px 150px; }
       .box span { *margin-left:100px; }
-      .visualizar { *margin-bottom:-30px; }
-      .box { *margin-top:-20px !important; *height:440px; }
-      .box .grade p { *margin-left:60px !important; *float:left; }
+      .box { *margin-top:-100px !important;  }
+      .box .grade { *margin-left:60px !important; *float:left; }
       .globo { *height:200px; *margin-top:100px !important; }
       .globo h2 { *margin:50px 0 0 80px !important; }
       .globo p { *margin-left:90px; }
+      .box.box { *position:relative; }
+      .box.programacao { *top:20px; }
+      .topo { *width:600px; *height:234px; *margin-bottom:-100px; *float:left;}
+      .box.globo { *top:170px; }
+      .box.classicos { *top:195px; *right:80px; }
+      .box.classicos span { *margin:0; }
+      .box.classicos h2 { *margin:0 }
+      .box.paiol { *top:600px; }
+      .box.licenciado { *top:800px; }
+      .box.abrin { *top:1000px; }
+      .box.telinha { *top:1200px; }
       
-      
+   
     </style>
   </head>
   <body>
@@ -74,14 +82,14 @@
       <p class="visualizar">Caso não consiga visualizar este email, <a href="http://cmais.com.br/newsletter/cocorico/043013/index.html" title="clique aqui">clique aqui.</a></p>
       <table border="0" cellspacing="0" cellpadding="0">
         <tbody>
-          <tr>
+          <tr class="topo">
             <td><img src="http://cmais.com.br/newsletter/cocorico/043013/img/topo.png" border="0"/></td>
           </tr>
-          <tr class="box grade">
+          <tr class="box programacao">
             <td>
               <h2>grade de Programação tv cultura 2013</h2>
               <span></span>
-              <p><img src="http://cmais.com.br/newsletter/cocorico/043013/img/logotv.png" alt="TV Cultura" />Saiu a grade de programação 2013 da TV Cultura e a criançada ganhou atenção especial. São quatro atrações especialmente para o público infantil, além de uma série para adolescentes. A nova grade conta agora com:</p>
+              <p class="grade"><img src="http://cmais.com.br/newsletter/cocorico/043013/img/logotv.png" alt="TV Cultura" />Saiu a grade de programação 2013 da TV Cultura e a criançada ganhou atenção especial. São quatro atrações especialmente para o público infantil, além de uma série para adolescentes. A nova grade conta agora com:</p>
               
             </td>
           </tr>
@@ -125,7 +133,7 @@
             </td>
           </tr>
           <tr class="telinha">
-            <td><img src="http://cmais.com.br/newsletter/cocorico/043013/img/telinha.png" alt="Cocoricó sempre na telinha!" /></td>
+            <td><img src="http://cmais.com.br/newsletter/cocorico/043013/img/telinha.png" alt="Cocoricó sempre na telinha!" border="0" usemap="#Map"  /></td>
           </tr>
           <tr class="rodape">
             <td>
@@ -137,7 +145,12 @@
           </tr>
         </tbody>
       </table>
+      <map name="Map">
+        <area shape="rect" coords="532,498,585,537" href="https://twitter.com/tvcultura" title="Twitter">
+        <area shape="rect" coords="533,454,586,493" href="http://www.facebook.com/cocoricooficial?fref=ts" title="Facebook">
+      </map>
     </div>
+    
     
    
   </body>
