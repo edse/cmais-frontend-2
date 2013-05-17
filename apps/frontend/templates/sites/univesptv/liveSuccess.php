@@ -141,6 +141,7 @@
                     var target = $(this).attr('href');
                     $("#myTabContent > div").removeClass("active");
                     $(target).addClass("active");
+                    return false;
                   });
                 });
               </script>
