@@ -131,7 +131,7 @@
 @media (min-width: 481px) and (max-width: 766px){
    #footer{display:none;} 
   .section-body .tab-content li{width:50%; float:left;}
-  .accordion-inner ul li{ height: 33px; background: #6c0205; list-style: none; margin-bottom: 5px; width:47%; float:left;margin-left:2%;}
+  
 }
 /* celular */
 @media (min-width: 321px) and (max-width: 480px) {
