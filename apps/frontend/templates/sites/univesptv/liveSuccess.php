@@ -139,8 +139,8 @@
                 $(function() {
                   $("#myTab li a").click(function(){
                     var target = $(this).attr('href');
-                    $("#myTabContent").hide();
-                    $(target).show();
+                    $("#myTabContent > div").removeClass("active");
+                    $(target).addClass("active");
                   });
                 });
               </script>
