@@ -160,7 +160,8 @@
                 </div>
               </div>
               <!-- /abas -->
-              <script>
+              <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+              <script type="text/javascript">
                 $(function() {
                   $("#myTab li a").click(function(){
                     var target = $(this).attr('href');
