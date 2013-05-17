@@ -107,10 +107,10 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">                         
               <style>
-                #myTab li, #myTabContent div {
+                #myTabContent div {
                   display:none
                 }
-                #myTab li.active, #myTabContent div.active {
+                #myTabContent div.active {
                   display:block
                 }
               </style>
