@@ -99,7 +99,7 @@
               <?php include_partial_from_folder('blocks','global/display-2c-broadcast2', array('live_id' => $schedules[0]->id, 'channel_id'=>3)) ?>
               <!-- /lista calendario -->
 
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php /*include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) */ ?>
               
             </div>
             <!-- /ESQUERDA -->
