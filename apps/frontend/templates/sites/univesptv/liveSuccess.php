@@ -107,7 +107,7 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">                         
 
-              <h2>Redes Sociais</h2>
+              <h3>Redes Sociais</h3>
               <!-- abas -->
               <div class="">
                 <ul class="nav nav-tabs" id="myTab">
@@ -119,8 +119,8 @@
                     <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div> 
                   </div>
                   <div id="twitter" class="tab-pane fade">
-                    <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <a class="twitter-timeline" href="https://twitter.com/search?q=%40UnivespTV" data-widget-id="335472165468114944">Tweets sobre "@UnivespTV"</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                 </div>
               </div>
