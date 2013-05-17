@@ -446,6 +446,7 @@ $(document).ready(function() {
       }, "fast");
     }
     $(this).parent().next().find('.accordion-body').find('accordion-heading').hide();
+    alert('oi')
   });
   
   //$(".accordion").collapse();
