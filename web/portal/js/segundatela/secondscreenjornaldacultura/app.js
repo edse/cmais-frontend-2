@@ -124,8 +124,8 @@ $(document).ready(function() {
       c = 'icon-map-marker';
     if(data.type == 'poll')
       c = 'icon-enquete';
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-    html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
+    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.id+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
+    html += '<div id="id'+data.id+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);

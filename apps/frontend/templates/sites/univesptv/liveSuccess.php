@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
 <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>  
 <style>
 #direita { margin-top:0;}
 #esquerda .stream {float: left; margin-top: 5px;}
@@ -107,6 +106,47 @@
 
             <!-- DIREITA -->
             <div id="direita" class="grid1">                         
+              <style>
+                #myTabContent > div {
+                  display:none
+                }
+                #myTabContent > div.active {
+                  display:block
+                }
+              </style>
+              <h3>Redes Sociais</h3>
+              <!-- abas -->
+              <div class="">
+                <ul class="nav nav-tabs" id="myTab">
+                  <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
+                  <li class=""><a data-toggle="tab" href="#twitter">Twitter</a></li>
+                  <li class=""><a data-toggle="tab" href="#email">E-mail</a></li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div id="facebook" class="tab-pane fade active in">
+                    <div class="fb-comments" data-href="univesptv.cmais.com.br/aovivo" data-width="300px" data-num-posts="10"></div> 
+                  </div>
+                  <div id="twitter" class="tab-pane fade">
+                    <a class="twitter-timeline" href="https://twitter.com/search?q=%40UnivespTV" data-widget-id="335472165468114944">Tweets sobre "@UnivespTV"</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                  <div id="email" class="tab-pane fade">
+                  </div>
+                </div>
+              </div>
+              <!-- /abas -->
+              <script>
+                $(function() {
+                  $("#myTab li a").click(function(){
+                    var target = $(this).attr('href');
+                    $("#myTabContent > div").removeClass("active");
+                    $(target).addClass("active");
+                    return false;
+                  });
+                });
+              </script>
+
+
 
               <!-- publicidade -->
               <div class="box-publicidade grid1">

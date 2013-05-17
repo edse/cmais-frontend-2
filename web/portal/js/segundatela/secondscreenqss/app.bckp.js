@@ -1,6 +1,5 @@
-var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
-
 $(document).ready(function() {
+  
   $('.accordion-body').collapse('show');
   $('.accordion-body').collapse('hide');
 
@@ -83,11 +82,11 @@ $(document).ready(function() {
       //$('#tryin-p').hide();
       //$('#users a').addClass('btn-success').css('opacity', 1);
       $('#users a').css('opacity', 1);
-      $('#users').show();
+      $('#users').show()
       $('#points a').css('opacity', 1);
       $('#points').show();
       //$('#status a').removeClass("btn-danger").addClass('btn-success').css('opacity', 1).html('conectado');
-      $('#status').removeClass('offline').addClass('online').html('conectado');
+      return $('#status').removeClass('offline').addClass('online').html('conectado');
       return sendToken({
         "token":  client_token,
         "name":  client_name,
@@ -133,11 +132,8 @@ $(document).ready(function() {
 
   questionBan = function(data) {
     if(data){
-      if( !iOS ){
-        window.audio_tictac.pause();
-        window.audio_wrong.play();
-      }
-     
+      window.audio_tictac.pause();
+      window.audio_wrong.play();
       $('#uid'+data.uid+' .answers').find('.btn').each(function(index){
         $(this).removeClass('btn-primary').addClass("disabled");
       });
@@ -148,7 +144,7 @@ $(document).ready(function() {
   };
 
   ping = function(data) {
-    /*
+ /*
     if(data){
       $('#ajax-loader-qss').hide(); 
       //$('#watching').html(data.users);
@@ -173,23 +169,22 @@ $(document).ready(function() {
           html_rank +=  '<span class="eurekas">'+points+' eurekas</span>'
           html_rank += '</li>'
           html_rank += '<!--/posicao-->'
-          $('#ranking-diario').append(html_rank);
+          //$('#ranking-diario').append(html_rank);
           //$('#rankingTable').append('<tr><td>'+c+'</td><td>'+info[id][2]+'</td><td>'+info[id][0]+'</td><td>'+info[id][1]+'</td></tr>');
         }        
       }
-      
+     
       //$('#ranking').fadeIn('slow');
       //$('#rankingTable').html(data.users);
-    }
-    */
+    }*/
   }
 
 
   questionInfo = function(data, json, clock) {
     var btn_style = " disabled";
-    if(clock){
+    if(clock)
       btn_style = " btn-primary";
-    }
+      
     var html =  '<!--pergunta chamada-->';
     html += '<div class="accordion-group">';
     html +=   '<div class="accordion-heading">';
@@ -202,8 +197,7 @@ $(document).ready(function() {
     html +=     '<span class="cantoneira cant-perg-esq-inf"></span>';
     html +=     '<span class="cantoneira cant-perg-dir-inf"></span>';
               
-    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="#uid'+data.uid+'">';
-    html +=     '<span class="seta"></span>';
+    html +=     '<a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion2" href="uid'+data.uid+'">';
     html +=       '<p>'+ data.question + '</p>';
     html +=     '</a>'
 
@@ -211,33 +205,27 @@ $(document).ready(function() {
     
     html +=   '<!--resposta-->';
     html +=   '<div id="uid'+data.uid+'" class="accordion-body collapse">';
-    html +=       '<div style="display:block; margin:0 auto; width:100px;">';
-    if(!json){
-    html +=         '<span class="time label" >tempo: '+data.time+'s</span>';
-    }
-    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.level+'</span>';
-    //html +=         '<span class="points label label-important" style="margin-left: 5px;">'+data.points+' Eurekas!</span>';
-    html +=       '</div>';
+    html +=     '<span class="time label" style="margin-left: 5px;">tempo: '+data.time+'s</span>';
     html +=     '<div class="accordion-inner">';
-    //if(clock){
+    if(clock){
       //console.log(data)
-      html +=      '<ul class="answers">';
+      html +=      '<ul class="answers">'
       
       var letras = new Array("A", "B", "C", "D");
       for(var i=0; i<data.answers.length; i++){
-        html +=         '<li>'; 
-        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>';
-        html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>';
-        html +=          '<span class="cantoneira-b cant-item-dir"></span>';
-        html +=        '</li>';
+        html +=         '<li>' 
+        html +=          '<span class="cantoneira-b cant-item-esq letra">'+letras[i]+'</span>'
+        html +=          '<span id="q'+data.uid+'a'+i+'" rel="'+data.uid+'" class="resposta"><p>' + data.answers[i].text + '</p></span>'
+        html +=          '<span class="cantoneira-b cant-item-dir"></span>'
+        html +=        '</li>'
       }
-      html +=      '</ul>';      
-    //}
-    html +=      '</div>';
-    html +=    '</div>';
-    html +=    '<!--resposta-->';
-    html +=  '</div>';
-    html +=  '<!--/pergunta chamada-->';
+      html +=      '</ul>'      
+    }
+    html +=      '</div>'
+    html +=    '</div>'
+    html +=    '<!--resposta-->'
+    html +=  '</div>'
+    html +=  '<!--/pergunta chamada-->'
     
     
   
@@ -263,56 +251,46 @@ $(document).ready(function() {
     html += '</div></div></div>';
     */
     $('#accordion2').prepend(html);
-    
-    if(!json){
-      // Send Answer
-      $('#uid'+data.uid+' .answers .resposta').live('click', function(){
-      //$(".answers .resposta").live('click', function(){
-        //console.log('---'+$(this).attr('rel'));
-        if(!$(this).parent().hasClass('disabled')){
-          $(this).parent().find('li').each(function(index){
-            $(this).css("background","#000");
-          });
-          //$(this).removeClass('btn-primary').addClass('btn-warning');
-          //remaining time
-          //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
-          //var p = t.split('tempo: ');
-          //var time = parseInt(p[1]);
-          var time = 0;
-          //send answer
-          
-          window.clearInterval(window.interval);
-          if( !iOS ){
-            window.audio_tictac.pause();
-          };
-          var payload = new Object();
-          var data = new Object();
-          payload.action = "answer";
-          data.answer = $(this).find('p').html();
-          data.question = $(this).attr('rel');
-          data.time = time;
-          payload.data = data;
-          return socket.send(JSON.stringify(payload));
-        }
-      });
-    } 
-     
-    if(!json && !iOS)
+    // Send Answer
+    $('#uid'+data.uid+' .answers .resposta').live('click', function(){
+    //$(".answers .resposta").live('click', function(){
+      console.log('---'+$(this).attr('rel'));
+      if(!$(this).parent().hasClass('disabled')){
+        $(this).parent().find('li').each(function(index){
+          $(this).css("background","#000");
+        });
+        //$(this).removeClass('btn-primary').addClass('btn-warning');
+        //remaining time
+        //var t = $(this).parent().parent().parent().parent().parent().find('.accordion-body .time').html();
+        //var p = t.split('tempo: ');
+        //var time = parseInt(p[1]);
+        var time = 0;
+        //send answer
+        window.clearInterval(window.interval);
+        window.audio_tictac.pause();
+        var payload = new Object();
+        var data = new Object();
+        payload.action = "answer";
+        data.answer = $(this).find('p').html();
+        data.question = $(this).attr('rel');
+        data.time = time;
+        payload.data = data;
+        return socket.send(JSON.stringify(payload));
+      }
+    });
+      
+    if(!json)
       document.getElementById('audio-ping').play();
         
     if(clock){
       //$('.accordion-body').collapse('hide');
       $('#uid'+data.uid).collapse('show');
       if(window.interval){
-        if( !iOS ){
-          window.audio_tictac.pause();
-        }
+        window.audio_tictac.pause();
         window.clearInterval(window.interval);
       }
       window.interval = window.setInterval('tick()', 1000);
-      if( !iOS ){
-        window.audio_tictac.play();
-      }
+      window.audio_tictac.play();
     }
 
     tick = function(){
@@ -322,10 +300,8 @@ $(document).ready(function() {
       time--;
       $('#uid'+data.uid+' .time').html('tempo: '+time+'s');
       if(time<1){
-        if( !iOS ){
-          window.audio_tictac.pause();
-          window.audio_wrong.play();
-        }
+        window.audio_tictac.pause();
+        window.audio_wrong.play();
         /*
         $('#uid'+data.uid+' .answers').find('.btn').each(function(index){
           $(this).removeClass('btn-primary').addClass("disabled");
@@ -392,7 +368,7 @@ $(document).ready(function() {
     url: question_url,
     dataType: 'json',
     success:function(json){
-      //console.log(json);
+      console.log(json);
       if(json!=null){
         $.each(json, function( key, value ) {
           if(!value.banned)
@@ -428,12 +404,10 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     if(playing)
       playing.pauseVideo();
-    $(this).prev().find('.seta').removeClass('seta-hide');  
   });
   
   $('.accordion-body').live('shown', function() { 
     //scroll
-    $(this).prev().find('.seta').addClass('seta-hide'); 
     var el = $(this).parent();
     if($('.navbar-fixed-top').css('position') == "static"){
       $('html, body').animate({
@@ -442,11 +416,9 @@ $(document).ready(function() {
     }
     else{
       $('html, body').animate({
-          scrollTop: el.offset().top-30
+          scrollTop: el.offset().top-100
       }, "fast");
     }
-
-   
   });
   
   //$(".accordion").collapse();
@@ -486,11 +458,9 @@ $(document).ready(function() {
   });
   */
   wrongAnswer = function(data) {
-    if( !iOS ){
-      window.audio_tictac.pause();
-      window.audio_wrong.currentTime = 0;
-      window.audio_wrong.play();
-    }
+    window.audio_tictac.pause();
+    window.audio_wrong.currentTime = 0;
+    window.audio_wrong.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     $('#uid'+data.question+' ul li').css('background', 'red');
     $('#uid'+data.question+' li:nth-child('+data.correct_index+')').css('background','green');
@@ -505,11 +475,9 @@ $(document).ready(function() {
   };
 
   correctAnswer = function(data) {
-    if( !iOS ){
-      window.audio_tictac.pause();
-      window.audio_correct.currentTime = 0;
-      window.audio_correct.play();
-    }
+    window.audio_tictac.pause();
+    window.audio_correct.currentTime = 0;
+    window.audio_correct.play();
     //$('#uid'+data.question+' .answer a').removeClass('btn-primary').addClass('btn-danger');
     //$('#uid'+data.question+' .answer:nth-child('+data.correct_index+') a').removeClass('btn-primary').removeClass('btn-warning').addClass('btn-success');
     $('#uid'+data.question+' ul li').css('background', 'red');
