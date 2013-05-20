@@ -179,6 +179,7 @@
 .nav-tabs > li > a { display: block; background: none repeat scroll 0 0 #666666;    border: medium none;    color: #FFFFFF;    font-size: 16px;    font-weight: bold;    height: 30px; line-height: 30px;    margin: 0;    min-width: 100px;    padding: 0;    text-align: center;    text-transform: uppercase;}
 .nav-tabs > li:hover > a, 
 .nav-tabs > .active > a, 
-.nav-tabs > .active > a:hover {    background: none repeat scroll 0 0 #333333;    border: medium none;    color: #FFFFFF;}
+.nav-tabs > .active > a:hover {    background: none repeat scroll 0 0 #333333;    border: medium none;    color: #FFFFFF; text-decoration:none;}
+#form-contato { clear:both; margin-top:10px; text-align:left; }
 
 /** /UNIVESPTV  **/
