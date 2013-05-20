@@ -118,10 +118,14 @@
                 #myTabContent > div.active {
                   display:block
                 }
-                #form-contato { clear:both; margin-top:10px; text-align:left; }
-                #form-contato div { clear:both; }
-                #form-contato label { width:25%; display: block; float:left; text-transform:uppercase; font-size:10px; font-weight:bold; }
-                #form-contato input { width:70%; float:right;  }
+                #form-contato { clear:both; margin-top:10px; text-align:left; float:left; }
+                #form-contato div { clear:both; margin-top: 10px; float:left; width: 100%; }
+                #form-contato label { width:30%; display: block; float:left; text-transform:uppercase; font-size:12px; font-weight:bold; }
+                #form-contato textarea,
+                #form-contato input { width:65%; float:left;  }
+                #form-contato label.msg { width:65%; }
+                #form-contato input#captcha { width: 30%; }
+                #form-contato #enviar { background:#333; color:#fff; float:right; width: auto; text-transform:uppercase; }
               </style>
               <h3 class="tit-pagina">Redes Sociais</h3>
               <!-- abas -->
