@@ -121,7 +121,7 @@
                 #form-contato input { width:65%; float:left;  }
                 #form-contato label.msg { width:65%; }
                 #form-contato input#captcha { width: 30%; }
-                #form-contato #enviar { background:#333; color:#fff; float:right; width: auto; text-transform:uppercase; }
+                #form-contato #enviar { background:#ff6633; color:#fff; float:right; width: auto; text-transform:uppercase; border:none; padding:2px 5px; }
               </style>
               <h3 class="tit-pagina">Redes Sociais</h3>
               <!-- abas -->
