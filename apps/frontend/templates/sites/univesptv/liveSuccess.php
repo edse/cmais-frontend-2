@@ -112,12 +112,8 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">                         
               <style>
-                #myTabContent > div {
-                  display:none
-                }
-                #myTabContent > div.active {
-                  display:block
-                }
+                #myTabContent > div { display:none; }
+                #myTabContent > div.active { display:block; }
                 #form-contato { clear:both; margin-top:10px; text-align:left; float:left; }
                 #form-contato div { clear:both; margin-top: 10px; float:left; width: 100%; }
                 #form-contato label { width:30%; display: block; float:left; text-transform:uppercase; font-size:12px; font-weight:bold; }
