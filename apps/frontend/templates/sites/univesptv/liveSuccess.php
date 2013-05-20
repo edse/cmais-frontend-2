@@ -119,7 +119,7 @@
                   display:block
                 }
               </style>
-              <h3>Redes Sociais</h3>
+              <h3 class="tit-pagina">Redes Sociais</h3>
               <!-- abas -->
               <div class="">
                 <ul class="nav nav-tabs" id="myTab">

@@ -174,7 +174,7 @@
 #menu-portal-2 li:hover a { background:#ff6633; }
 #barra-site h2 { margin-top:34px; }
 
-.nav-tabs {    -moz-border-bottom-colors: none;    -moz-border-image: none;    -moz-border-left-colors: none;    -moz-border-right-colors: none;    -moz-border-top-colors: none;    background: none repeat scroll 0 0 #666666;    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #FFFFFF;    border-style: none none none dotted;    border-width: medium medium medium 1px;}
+.nav-tabs { clear:both;   -moz-border-bottom-colors: none;    -moz-border-image: none;    -moz-border-left-colors: none;    -moz-border-right-colors: none;    -moz-border-top-colors: none;    background: none repeat scroll 0 0 #666666;    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #FFFFFF;    border-style: none none none dotted;    border-width: medium medium medium 1px;}
 .nav-tabs > li { border-right:1px dotted #FFFFFF; margin-bottom: 0; float:left;  }
 .nav-tabs > li > a { display: block; background: none repeat scroll 0 0 #666666;    border: medium none;    color: #FFFFFF;    font-size: 16px;    font-weight: bold;    height: 30px; line-height: 30px;    margin: 0;    min-width: 100px;    padding: 0;    text-align: center;    text-transform: uppercase;}
 .nav-tabs > li:hover > a, 
