@@ -15,7 +15,7 @@
 .icon-blue{background-image: url("/portal/js/bootstrap/img/glyphicons-halflings-blue.png");}
 body.linha-do-tempo{background: #000 !important;}
 body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0\9;}
-.container{max-width:980px; min-height:400px;margin-top:3px;*position:relative; z-index: 9999999}
+.container{max-width:980px; min-height:400px;margin-top:3px;position:relative; *position:relative; z-index: 9999999}
 
 .row{margin-left:0px}
 /* /GERAL */
