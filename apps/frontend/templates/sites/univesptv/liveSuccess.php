@@ -118,6 +118,10 @@
                 #myTabContent > div.active {
                   display:block
                 }
+                #form-contato { clear:both; margin-top:10px; text-align:left; }
+                #form-contato div { clear:both; }
+                #form-contato label { width:25%; display: block; float:left; text-transform:uppercase; font-size:10px; font-weight:bold; }
+                #form-contato input { width:70%; float:right;  }
               </style>
               <h3 class="tit-pagina">Redes Sociais</h3>
               <!-- abas -->
