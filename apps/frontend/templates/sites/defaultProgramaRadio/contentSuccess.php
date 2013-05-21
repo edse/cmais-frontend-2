@@ -367,7 +367,7 @@ $(function(){
                     ->select('a,*')
                     ->from('Asset a, SectionAsset sa')
                     ->where('a.id = sa.asset_id')
-                    ->andWhere('sa.section_id in ?', array("home", "home-page", "homepage"))
+                    ->andWhereIn('sa.section_id', array("home", "home-page", "homepage"))
                     ->andWhere('a.site_id= ?', (int)$site->id)
                     ->orderBy('a.created_at desc')
                     ->limit(6)
