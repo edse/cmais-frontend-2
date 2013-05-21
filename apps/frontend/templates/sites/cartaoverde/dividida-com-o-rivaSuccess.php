@@ -148,7 +148,7 @@
                   </div>
                   <div class="linha t3">
                     <label>Pergunta</label>
-                    <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
+                    <textarea name="pergunta" id="pergunta" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                   </div>
                   <div class="linha t3 codigo" id="captchaimage">
@@ -253,7 +253,7 @@
             assunto:{
               required: true
             },
-            mensagem:{
+            pergunta:{
               required: true
             },
             captcha: {
@@ -267,7 +267,7 @@
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-            mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
+            pergunta: "Este campo &eacute; Obrigat&oacute;rio.",
             captcha: "Digite corretamente o código que está ao lado."
           },
           success: function(label){
