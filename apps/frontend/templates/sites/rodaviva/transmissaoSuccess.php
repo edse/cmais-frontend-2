@@ -74,7 +74,7 @@
   }
   */
 
-  function stream2() {
+  /*function stream2() {
     var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
     so.addVariable('controlbar', 'bottom');
     so.addVariable('autostart', 'true');
@@ -87,8 +87,13 @@
     so.write('boxVideoWrapper');
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_exclusiva').addClass('ativo');
+  }*/
+  function stream2() {
+    $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["camera-exclusiva"][0]->getTitle() ?>" frameborder="0" rel="0" allowfullscreen></iframe>');
+    $('.transmissaoH li a').removeClass('ativo');
+    $('#stream_youtube').addClass('ativo');  
   }
-
+ 
   function stream3() {
     $('#boxVideoWrapper').html('<iframe src="http://www.ustream.tv/embed/9564814" width="640" height="364" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>');
     $('.transmissaoH li a').removeClass('ativo');
