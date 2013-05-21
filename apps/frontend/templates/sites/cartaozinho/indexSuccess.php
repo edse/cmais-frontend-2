@@ -105,7 +105,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
                   <p>Nome: <span>João Braga</span></p>
-                  <p>Idade: <span>8 anos</span></p>
+                  <p>Idade: <span>9 anos</span></p>
                   <p>Que time torce: <span>Corinthians</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Messi</span></p>
@@ -131,7 +131,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric.png" /></p>
                   <p>Nome: <span>Eric Lanfredi</span></p>
-                  <p>Idade: <span>11 anos</span></p>
+                  <p>Idade: <span>13 anos</span></p>
                   <p>Que time torce: <span>Palmeiras</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Marcos</span></p>
@@ -157,7 +157,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro.png" /></p>
                   <p>Nome: <span>Pedro Crema</span></p>
-                  <p>Idade: <span>8 anos</span></p>
+                  <p>Idade: <span>9 anos</span></p>
                   <p>Que time torce: <span>São Paulo</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Messi</span></p>
@@ -183,7 +183,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-matheus.png" /></p>
                   <p>Nome: <span>Matheus Ribeiro </span></p>
-                  <p>Idade: <span>9 anos</span></p>
+                  <p>Idade: <span>10 anos</span></p>
                   <p>Que time torce: <span>Santos</span></p>
                   <p>Time estrangeiro preferido? <span>Manchester United</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Neymar</span></p>
