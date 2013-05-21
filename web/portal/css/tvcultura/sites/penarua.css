@@ -18,7 +18,7 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 #horario { display:none; }
 #barra-site .redes { float:left; margin-top:76px; }
 #capa-site {  margin-bottom:50px !important;  }
-#barra-site { background:url(/portal/images/capaPrograma/penarua/bg-horario.png) no-repeat right -20px; height:160px; margin-top:0;  } 
+/*#barra-site { background:url(/portal/images/capaPrograma/penarua/bg-horario.png) no-repeat right -20px; height:160px; margin-top:0;  }*/ 
 .contato form .linha select, 
 .contato form textarea,
 .contato form .linha input {border-color:#0c55bb !important;}
