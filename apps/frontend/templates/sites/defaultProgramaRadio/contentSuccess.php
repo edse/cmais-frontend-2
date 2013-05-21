@@ -359,15 +359,16 @@ $(function(){
               <?php
                 $recentes = array();
                 if($asset) {
-                  $section = $asset->getSections();
+                  //$section = $asset->getSections();
                   
                   //$recentes = $section[0]->getAssets();
 
                   $recentes = Doctrine_Query::create()
                     ->select('a,*')
-                    ->from('Asset a, SectionAsset sa')
+                    ->from('Asset a, SectionAsset sa, Section s')
                     ->where('a.id = sa.asset_id')
-                    ->andWhereIn('sa.section_id', array("home", "home-page", "homepage"))
+                    ->andWhere('sa.section_id = s.id')
+                    ->andWhereIn('s.slug', array("home", "home-page", "homepage"))
                     ->andWhere('a.site_id= ?', (int)$site->id)
                     ->orderBy('a.created_at desc')
                     ->limit(6)
