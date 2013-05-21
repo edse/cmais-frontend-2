@@ -142,10 +142,10 @@ $(function(){
               <!-- BOX PADRAO -->
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
-                        
-            <?php $relacionados_audio = $asset->retriveRelatedAssetsByAssetTypeId(5); ?>
-              <?php if(count($relacionados_audio) > 0): ?>
-            
+            <?php //$relacionados_audio = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
+              <?php //if(count($relacionados_audio) > 0): ?>
+            <?php $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
+              <?php if(count($related_audios) > 0): ?>
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
@@ -276,17 +276,19 @@ $(function(){
                 }
               };
               
-              <?php
+              <?php /*
                 $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
                 $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+               * 
+               */
               ?>
               var audioPlaylist = new Playlist("1",
               [
-                <?php foreach($audios as $k=>$d): ?>
+                <?php foreach($related_audios as $k=>$d): ?>
                 {
                   name:"<?php echo $d->getTitle(); ?>",
                   mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-                }<?php if($k < (count($audios) - 1)): ?>,<?php endif;?>
+                }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
                 <?php endforeach; ?>
               ],
