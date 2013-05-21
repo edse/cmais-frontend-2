@@ -94,8 +94,8 @@
                   <div class="msgAcerto" style="display:none">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Mensagem enviada com sucesso!</p>
-                      <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                      <p class="aviso">Pergunta enviada com sucesso!</p>
+                      <p>Obrigado por entrar em contato com nosso programa.</p>
                     </div>
                     <hr />
                   </div>
@@ -222,6 +222,7 @@
                 window.location.href="#";
                 if(data == "1"){
                   $("#form-contato").clearForm();
+                  $("#form-contato").hide();
                   $(".msgAcerto").show();
                   $('img#ajax-loader').hide();
                 }
