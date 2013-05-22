@@ -435,7 +435,7 @@ $(document).ready(function() {
     //scroll
     $(this).prev().find('.seta').addClass('seta-hide'); 
     //var el = $(this).parent();
-    var el = $('.hero-unit')
+    var el = $('.hero-unit');
     if($('.navbar-fixed-top').css('position') == "static"){
       $('html, body').animate({
           scrollTop: el.offset().top
