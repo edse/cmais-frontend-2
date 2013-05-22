@@ -154,7 +154,7 @@
 						          ->where('sa.section_id = ?', (int)$section->getId())
 						          ->andWhere('sa.asset_id = a.id')
 						          ->orderBy('sa.display_order')
-	                  	->limit(60)
+	                  	->limit(200)
 	                  	->execute();
 						      }
 						      else{
@@ -165,7 +165,7 @@
 						            ->where('sa.section_id = ?', (int)$section->getId())
 						            ->andWhere('sa.asset_id = a.id')
 						            ->orderBy('sa.display_order')
-						            ->limit(60)
+						            ->limit(200)
 												->execute();
 						        }else{
 						          $assets = Doctrine_Query::create()
@@ -173,7 +173,7 @@
 						            ->from('Asset a')
 						            ->where('a.site_id = ?', (int)$site->getId())
 						            ->orderBy('a.created_at asc')
-						            ->limit(60)
+						            ->limit(200)
 												->execute();
 						        }
 						      }

@@ -131,7 +131,7 @@
 @media (min-width: 481px) and (max-width: 766px){
    #footer{display:none;} 
   .section-body .tab-content li{width:50%; float:left;}
-  .accordion-inner ul li{ height: 33px; background: #6c0205; list-style: none; margin-bottom: 5px; width:47%; float:left;margin-left:2%;}
+  
 }
 /* celular */
 @media (min-width: 321px) and (max-width: 480px) {
@@ -142,7 +142,7 @@
   .hero-unit .col-dir #box-clock{margin:30% 20% 0 0;} 
   .hero-unit .menu-jc li {list-style: none;float: right;margin-right:18%;}
   .section-body{padding: 0 2%;}
-  .section-body .resposta{width: 86%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
+  .section-body .resposta{width: 80%;display: block;float: left;padding: 7px;color: white;text-decoration: none;}
   .section-body .accordion-toggle{ background:#6c0205!important;}
   .section-body .tab-content li{width:50%; float:left;}
   .section-body .nome_colocacao{line-height: 12px;padding: 0 5px;font-size: 0.7em;margin:2% 0 0 2%}

@@ -49,9 +49,9 @@
         <!-- CAPA -->
         <div class="capa grid3">
           <div class="destaque-video">
-            <a href="/cartaozinho/bola-do-paulistao" style="margin:0 140px 100px 0; display: block; float:right;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a>
+            <!--a href="/cartaozinho/bola-do-paulistao" style="margin:0 140px 100px 0; display: block; float:right;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a-->
             <!-- DESTAQUE 2 COLUNAS -->
-            <!--
+      
             <?php $displays = $displays["destaque-principal"]; if(isset($displays)): ?>
             <div class="duas-colunas destaque grid2">
               <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
@@ -61,13 +61,13 @@
               <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
             </div>
             <?php endif;?>
-            -->
+           
             <!-- /DESTAQUE 2 COLUNAS -->
           </div>
-          <!--
+      
           <a href="/cartaozinho/mande-seu-video" title="Mande seu vídeo" class="mande-seu-video">
           <p>entre em campo no cartãozinho:</p>
-          -->
+        
           </a>
           <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!"></a>
           <div class="juiza"></div>
@@ -105,7 +105,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
                   <p>Nome: <span>João Braga</span></p>
-                  <p>Idade: <span>8 anos</span></p>
+                  <p>Idade: <span>9 anos</span></p>
                   <p>Que time torce: <span>Corinthians</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Messi</span></p>
@@ -131,7 +131,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric.png" /></p>
                   <p>Nome: <span>Eric Lanfredi</span></p>
-                  <p>Idade: <span>11 anos</span></p>
+                  <p>Idade: <span>13 anos</span></p>
                   <p>Que time torce: <span>Palmeiras</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Marcos</span></p>
@@ -157,7 +157,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro.png" /></p>
                   <p>Nome: <span>Pedro Crema</span></p>
-                  <p>Idade: <span>8 anos</span></p>
+                  <p>Idade: <span>9 anos</span></p>
                   <p>Que time torce: <span>São Paulo</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Messi</span></p>
@@ -183,7 +183,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-matheus.png" /></p>
                   <p>Nome: <span>Matheus Ribeiro </span></p>
-                  <p>Idade: <span>9 anos</span></p>
+                  <p>Idade: <span>10 anos</span></p>
                   <p>Que time torce: <span>Santos</span></p>
                   <p>Time estrangeiro preferido? <span>Manchester United</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Neymar</span></p>
