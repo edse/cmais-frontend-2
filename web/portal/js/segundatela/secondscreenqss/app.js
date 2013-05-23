@@ -434,7 +434,8 @@ $(document).ready(function() {
   $('.accordion-body').live('shown', function() { 
     //scroll
     $(this).prev().find('.seta').addClass('seta-hide'); 
-    var el = $(this).parent();
+    //var el = $(this).parent();
+    var el = $('.hero-unit');
     if($('.navbar-fixed-top').css('position') == "static"){
       $('html, body').animate({
           scrollTop: el.offset().top
@@ -442,7 +443,7 @@ $(document).ready(function() {
     }
     else{
       $('html, body').animate({
-          scrollTop: el.offset().top-30
+          scrollTop: el.offset().top
       }, "fast");
     }
 
