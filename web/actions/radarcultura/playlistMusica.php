@@ -5,7 +5,8 @@ header("content-type: application/json");
 //ini_set('display_errors','On');
 
 // mail sender
-$email_site = "radar.facebook@tvcultura.com.br";
+//$email_site = "radar.facebook@tvcultura.com.br";
+$email_site = "cristovamruizjr@gmail.com";
 if($_REQUEST["post_id"]){
   $email_user = "radar.facebook@tvcultura.com.br";
   $nome_user = "RadarCultura - Facebook";
