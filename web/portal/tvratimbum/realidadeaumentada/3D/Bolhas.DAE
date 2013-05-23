@@ -4,7 +4,7 @@
     <contributor>
       <author>centesimo2</author>
       <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.3.1;  Revision: 847M;  Platform: Win32;  Configuration: Release_Max2011_static</authoring_tool>
-      <source_data>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/RaTimBum_LowPoly_FINAL_2011.max</source_data>
+      <source_data>file:///3D/RaTimBum_LowPoly_FINAL_2011.max</source_data>
     </contributor>
     <created>2012-07-16T13:55:05</created>
     <modified>2012-07-16T13:55:05</modified>
@@ -1330,10 +1330,10 @@
   </library_lights>
   <library_images>
     <image id="mapaBolha_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RTB/3D/mapaBolha.png</init_from>
+      <init_from>file:///3D/mapaBolha.png</init_from>
     </image>
     <image id="bolhasBack_png">
-      <init_from>file:///C:/Users/centesimo2/Desktop/AR_RaTimBumFinal/FLARToolKit_ver2_5_4/src/3D/bolhasBack.png</init_from>
+      <init_from>file:///3D/bolhasBack.png</init_from>
     </image>
   </library_images>
   <library_visual_scenes>
