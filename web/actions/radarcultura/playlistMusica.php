@@ -1,12 +1,15 @@
 <?php
 header("content-type: application/json");
-die('1');
+
 
 //error_reporting(E_ALL);
 //ini_set('display_errors','On');
 
 // mail sender
+
+//die('1');
 $email_site = "radar.facebook@tvcultura.com.br";
+
 if($_REQUEST["post_id"]){
   $email_user = "radar.facebook@tvcultura.com.br";
   $nome_user = "RadarCultura - Facebook";
