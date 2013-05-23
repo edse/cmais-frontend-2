@@ -5,14 +5,11 @@ header("content-type: application/json");
 //ini_set('display_errors','On');
 
 // mail sender
-//$email_site = "radar.facebook@tvcultura.com.br";
-$email_site = "cristovamruizjr@gmail.com";
+$email_site = "radar.facebook@tvcultura.com.br";
 if($_REQUEST["post_id"]){
-  //$email_user = "radar.facebook@tvcultura.com.br";
-  $email_user = "cristovamruizjr@gmail.com";
+  $email_user = "radar.facebook@tvcultura.com.br";
   $nome_user = "RadarCultura - Facebook";
-  //$msg = file_get_contents("http://radarcultura.cmais.com.br/actions/radarcultura/retriveFacebookPost.php?post_id=".$_REQUEST["post_id"]);
-  $msg = "teste";
+  $msg = file_get_contents("http://radarcultura.cmais.com.br/actions/radarcultura/retriveFacebookPost.php?post_id=".$_REQUEST["post_id"]);
   
   //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     ini_set('sendmail_from', $email_site);
