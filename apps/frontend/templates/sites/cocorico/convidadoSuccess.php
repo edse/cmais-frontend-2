@@ -36,7 +36,7 @@ if(isset($pager)){
   <!-- /breadcrumb-->
   
   <!--btn voltar-->
-  <a href="javascript:window.history.go(-1)" class="voltar">voltar<span class="divisao"></span></a>
+  <a href="/cocorico/tvcocorico/convidados" class="voltar">voltar<span class="divisao"></span></a>
   <!-- /btn voltar-->
   
   <h2 class="tit-pagina">Convidado do Dia</h2>
