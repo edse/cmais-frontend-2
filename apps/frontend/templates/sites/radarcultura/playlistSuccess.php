@@ -305,10 +305,9 @@
           $('#socialLoading').fadeIn();
           
           $.ajax({
-            //url: '/actions/radarcultura/facebookPost.php',
+            url: '/actions/radarcultura/facebookPost.php',
             //url: '/actions/radarcultura/playlistMusica.php',
-            url: '/actions/radarcultura/retriveFacebookPost.php',
-            data: opts
+            data: opts,
             dataType: "html",
             success: function(data) {
               $('#socialLoading').fadeOut();
