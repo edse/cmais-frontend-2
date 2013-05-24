@@ -118,22 +118,21 @@
     function dateJsonSelected(){
       date = $(this);
       //console.log(date.context.value);
-      $('.accordion-group').fadeOut(200, function(){
-        $('.accordion-group').remove();
-        $.ajax({
-          url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
-          dataType: "json",
-          beforeSend:function(){
-            $('#ajax-loader').show()
-          },
-          success:function(json){
-            $.each(json, function( key, value ) {
-              //console.log(value)  
-              contentInfo(value);
-            });
-          }
-        });
-      });    
+      $('.accordion-group').hide();
+      $('.accordion-group').remove();
+      $.ajax({
+        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
+        dataType: "json",
+        beforeSend:function(){
+          $('#ajax-loader').show()
+        },
+        success:function(json){
+          $.each(json, function( key, value ) {
+            //console.log(value)  
+            contentInfo(value);
+          });
+        }
+      });
     }
   });
   </script>
