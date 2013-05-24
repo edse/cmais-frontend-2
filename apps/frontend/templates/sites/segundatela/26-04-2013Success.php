@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -48,27 +47,12 @@
     <div class="span8">
       <h2>segunda tela</h2>
       <!-- accordion -->
-      <div class="accordion" id="accordion2">
-        <div style="margin:0 auto">
-          <img src="/portal/images/ajax-loader-jornal.gif" id="ajax-loader"/>
-        </div>  
-      </div>
+      <div class="accordion" id="accordion2"></div>
       <!-- /accordion -->
     </div>
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-      <!-- CALENDARIO -->
-      <div class="box-padrao grid1">
-        <div class="topo claro">
-          <span></span>
-          <div class="capa-titulo">
-            <h4>Arquivo</h4>
-          </div>
-        </div>
-        <div id="datepicker"></div>
-      </div>
-      <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
       <div class="">
@@ -78,7 +62,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/22-05-2013" data-width="300px" data-num-posts="10"></div> 
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div> 
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
@@ -90,7 +74,7 @@
     </div>
     <!-- /direita -->
   </div>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <!--script src="http://code.jquery.com/jquery-1.9.1.js"></script-->
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   
@@ -111,7 +95,37 @@
       }
     });
     
-     
+    // Datepicker    
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    $('#datepicker').datepicker({
+      onSelect: dateJsonSelected,
+      dateFormat: 'dd-mm-yy',
+      altFormat: 'dd-mm-yy',
+      inline: true
+    });
+
+    function dateJsonSelected(){
+      date = $(this);
+      //console.log(date.context.value);
+      $.ajax({
+        beforeSend:function(){
+          $('.accordion-group').fadeOut("fast", function(){
+            $('.accordion-group').remove();
+            $('#ajax-loader').show()
+          });
+        },
+        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
+        dataType: "json",
+        success:function(json){
+          $.each(json, function( key, value ) {
+            //console.log(value)
+            contentInfo(value);
+          });
+          $('.accordion-group').each(function(){
+            $(this).fadeIn("fast");
+          })
+        }
+      });
+    }
   });
   </script>
-  
