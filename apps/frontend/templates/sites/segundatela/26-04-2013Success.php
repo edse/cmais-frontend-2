@@ -129,10 +129,14 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          $.each(json, function( key, value ) {
-            //console.log(value)  
-            contentInfo(value);
-          });
+          if(json){
+            $.each(json, function( key, value ) {
+              //console.log(value)  
+              contentInfo(value);
+            });
+          }else{
+            alert('nao tem');
+          }
         }
       });
     }
