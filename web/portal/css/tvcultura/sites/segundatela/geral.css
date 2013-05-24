@@ -119,6 +119,7 @@
 .accordion-body p img {  max-width: 50% !important;  height: auto !important;  width: auto !important;}
 
 /**** datepicker ****/
+.box-padrao #mytab2{width: 100%; border: none;}
 .box-padrao #datepicker .ui-widget { width:310px; }
 .box-padrao #datepicker .ui-datepicker-title { width:120px; float:left; margin:0 20px; text-align:center; }
 .box-padrao #datepicker .ui-datepicker-title span { font:bold 16px arial; color:#333; }
@@ -136,19 +137,19 @@
 .box-padrao #datepicker table thead { width:310px; }
 .box-padrao #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
 .box-padrao #datepicker tbody { margin-top:10px; width:310px; float:left; }
-.box-padrao #datepicker .ui-state-default { background:transparent; width:35px; height:26px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:26px; margin:0 2px 2px 0; }  
+.box-padrao #datepicker .ui-state-default { background:transparent; width:35px; height:22px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:24px; margin:0 2px 0px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
 .box-padrao #datepicker .ui-widget-content .ui-state-hover, 
 .box-padrao #datepicker .ui-widget-header .ui-state-hover, 
 .box-padrao #datepicker .ui-state-focus, 
 .box-padrao #datepicker .ui-widget-content .ui-state-focus, 
-.box-padrao #datepicker .ui-widget-header .ui-state-focus { background:#ff6633; color:#fff; text-decoration:none; }
+.box-padrao #datepicker .ui-widget-header .ui-state-focus { background:#333; color:#fff; text-decoration:none; }
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-next:hover,
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-prev:hover { background:none;  border:none; }
 .box-padrao #datepicker tbody span { background:transparent; color:#333;}
 .box-padrao #datepicker tbody a { background:#fff; color:#333; text-decoration:none; }
-.box-padrao #datepicker tbody a:hover {background:#ff6633; color:#fff;}
+.box-padrao #datepicker tbody a:hover {background:#333; color:#fff;}
 /**** /datepicker ****/
 
 /* clock */
