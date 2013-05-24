@@ -107,7 +107,7 @@
       date = $(this);
       //console.log(date.context.value);
       $.ajax({
-        url:"http://172.20.16.219/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
+        url:"http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
         success:function(json){
           $.each(json, function( key, value ) {
