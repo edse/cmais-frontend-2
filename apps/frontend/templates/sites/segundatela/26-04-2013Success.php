@@ -128,7 +128,7 @@
           });
         },
         success:function(json){
-          $.delay(1500).each(json, function( key, value ) {
+          $.each(json, function( key, value ) {
             //console.log(value)
             contentInfo(value);
           });
