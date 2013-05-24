@@ -118,7 +118,7 @@
     function dateJsonSelected(){
       date = $(this);
       //console.log(date.context.value);
-      $('.accordion-group').hide();
+      $('#accordion2').hide();
       $('.accordion-group').remove();
       $.ajax({
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
