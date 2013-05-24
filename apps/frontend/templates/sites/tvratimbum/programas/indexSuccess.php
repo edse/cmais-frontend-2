@@ -123,7 +123,7 @@ $assets = $pager->getResults();
         	<h3><?php echo $d->getTitle() ?></h3>
         	<?php $related_video = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
     		<? if (count($related_video) > 0): ?>
-    		<iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0frameborder="0"></iframe>
+    		<iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0></iframe>
       		<?php endif; ?>
       		<?php $related_image = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
     		<? if(count($related_image) > 0): ?>
