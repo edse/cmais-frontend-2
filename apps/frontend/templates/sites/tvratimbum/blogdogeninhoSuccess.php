@@ -70,6 +70,7 @@
         <?php endforeach; ?> 
         <?php endif; ?> 
          <span class="picote"></span>
+         <br>
          
         </div>
        
