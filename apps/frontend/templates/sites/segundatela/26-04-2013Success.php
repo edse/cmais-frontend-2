@@ -111,38 +111,7 @@
       }
     });
     
-    // Datepicker    
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    $('#datepicker').datepicker({
-      onSelect: dateJsonSelected,
-      dateFormat: 'dd-mm-yy',
-      altFormat: 'dd-mm-yy',
-      inline: true
-    });
-
-    function dateJsonSelected(){
-      date = $(this);
-      //console.log(date.context.value);
-      $.ajax({
-        beforeSend:function(){
-          $('.accordion-group').fadeOut("fast", function(){
-            $('.accordion-group').remove();
-            $('#ajax-loader').show()
-          });
-        },
-        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
-        dataType: "json",
-        success:function(json){
-          $.each(json, function( key, value ) {
-            //console.log(value)
-            contentInfo(value);
-          });
-          $('.accordion-group').each(function(){
-            $(this).fadeIn("fast");
-          })
-        }
-      });
-    }
+     
   });
   </script>
   
