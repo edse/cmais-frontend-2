@@ -48,7 +48,11 @@
     <div class="span8">
       <h2>segunda tela</h2>
       <!-- accordion -->
-      <div class="accordion" id="accordion2"></div>
+      <div class="accordion" id="accordion2">
+        <div style="margin:0 auto">
+          <img src="/portal/images/ajax-loader-jornal.gif" id="ajax-loader"/>
+        </div>  
+      </div>
       <!-- /accordion -->
     </div>
     <!-- /esquerda -->
@@ -121,7 +125,10 @@
       //console.log(date.context.value);
       $.ajax({
         beforeSend:function(){
-          alert('oi');
+          $('.accordion-group').fadeOut("fast", function(){
+            $('.accordion-group').remove();
+            $('#ajax-loader').show()
+          });
         },
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
@@ -130,6 +137,9 @@
             //console.log(value)
             contentInfo(value);
           });
+          $('.accordion-group').each(function(){
+            $(this).fadeIn("fast");
+          })
         }
       });
     }
