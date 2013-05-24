@@ -105,6 +105,7 @@
         });
       }
     });
+    console.log(<?php echo $date; ?>)
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
     $('#datepicker').datepicker({
