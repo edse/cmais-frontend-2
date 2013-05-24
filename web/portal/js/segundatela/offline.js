@@ -57,12 +57,14 @@ $(document).ready(function() {
   });
   
   // colocando e tirando ativo
-  $('.accordion-body').live('hidden', function() {
-    //remove barra ativa
-    $(this).prev().find('a').removeClass('ativo');
-    if(playing)
-      playing.pauseVideo(); 
-  });
+  if($('.accordion-body')){
+    $('.accordion-body').live('hidden', function() {
+      //remove barra ativa
+      $(this).prev().find('a').removeClass('ativo');
+      if(playing)
+        playing.pauseVideo(); 
+    });
+  }
   
   $('.accordion-body').live('shown', function() { 
     //remove barra ativa
