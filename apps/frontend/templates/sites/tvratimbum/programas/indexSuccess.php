@@ -120,8 +120,16 @@ $assets = $pager->getResults();
         <div class="assets">
         <?php if(count($pager) > 1): ?> 
         <?php foreach($pager->getResults() as $d): ?>	
-	       <h3><?php echo $d->getTitle() ?></h3>
-	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+        	<h3><?php echo $d->getTitle() ?></h3>
+        	<?php $related_video = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+    		<? if (count($related_video) > 0): ?>
+    		<iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      		<?php endif; ?>
+      		<?php $related_image = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
+    		<? if (count($related_image) > 0): ?>
+	       	<img src="<?php echo $related_image ?>" width="460" height="259"/>
+	       	<?php endif; ?>	 
+	        <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
         <span class="picote"></span>
         <?php endforeach; ?> 
         <?php endif; ?>  
