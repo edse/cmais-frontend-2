@@ -121,14 +121,17 @@
       $.ajax({
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
+        beforeSend:function(){
+          $('.accordion-group').fadeOut(200, function(){
+            $('.accordion-group').remove();
+            $('#ajax-loader').show()
+          });
+        },
         success:function(json){
-          $.each(json, function( key, value ) {
+          $.delay(1500).each(json, function( key, value ) {
             //console.log(value)
             contentInfo(value);
           });
-          $('.accordion-group').each(function(){
-            $(this).fadeIn("slow");
-          })
         }
       });
     }
