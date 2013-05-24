@@ -94,6 +94,17 @@
   <link rel="stylesheet" href="/resources/demos/style.css" />
   <script>
   $(function(){ 
+    // retrive sent contents by ajax
+    $.ajax({
+      url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+      dataType: "json",
+      success:function(json){
+        $.each(json, function( key, value ) {
+          //console.log(value)
+          contentInfo(value);
+        });
+      }
+    });
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
     $('#datepicker').datepicker({
@@ -107,7 +118,7 @@
       date = $(this);
       //console.log(date.context.value);
       $.ajax({
-        url:"http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
+        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
         success:function(json){
           $.each(json, function( key, value ) {
