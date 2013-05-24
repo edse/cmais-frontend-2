@@ -120,7 +120,7 @@
       date = $(this);
       //console.log(date.context.value);
       $.ajax({
-        before:function(){
+        beforeSend::function(){
           alert('oi');
         },
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
