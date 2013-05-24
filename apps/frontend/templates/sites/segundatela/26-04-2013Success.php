@@ -105,9 +105,9 @@
         });
       }
     });
-    console.log(<?php echo $date; ?>)
+    
+    // Datepicker    
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
     $('#datepicker').datepicker({
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
