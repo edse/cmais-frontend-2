@@ -53,6 +53,17 @@
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
+      <!-- CALENDARIO -->
+      <div class="box-padrao grid1">
+        <div class="topo claro">
+          <span></span>
+          <div class="capa-titulo">
+            <h4>Arquivo</h4>
+          </div>
+        </div>
+        <div id="datepicker"></div>
+      </div>
+      <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
       <div class="">
