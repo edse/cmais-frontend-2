@@ -1,6 +1,6 @@
 <script>
 $(function() {
-    $.post('some_script.php', { width: screen.width, height:screen.height }, function(json) {
+    $.post('sizeSuccess.php', { width: screen.width, height:screen.height }, function(json) {
         if(json.outcome == 'success') {
             // do something with the knowledge possibly?
         } else {
