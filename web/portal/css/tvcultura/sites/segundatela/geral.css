@@ -131,12 +131,12 @@
 .box-padrao #datepicker .ui-datepicker-next .ui-icon { background-position:0 -12px; } 
 .box-padrao #datepicker table { width:310px; margin-top:15px; }
 .box-padrao #datepicker caption,
-.box-padrao #datepicker th {  text-align:center; width:44px; float:left; }
+.box-padrao #datepicker th {  text-align:center; width:35px; float:left; }
 .box-padrao #datepicker tr { width:310px; }
 .box-padrao #datepicker table thead { width:310px; }
 .box-padrao #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
 .box-padrao #datepicker tbody { margin-top:10px; width:310px; float:left; }
-.box-padrao #datepicker .ui-state-default { background:transparent; width:42px; height:26px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:26px; margin:0 2px 2px 0; }  
+.box-padrao #datepicker .ui-state-default { background:transparent; width:35px; height:26px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:26px; margin:0 2px 2px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
 .box-padrao #datepicker .ui-widget-content .ui-state-hover, 
