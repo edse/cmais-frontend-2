@@ -55,12 +55,10 @@
     <div class="span4">
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
-        <div class="topo claro">
-          <span></span>
-          <div class="capa-titulo">
-            <h4>Arquivo</h4>
-          </div>
-        </div>
+        <h2>Arquivo</h2>
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active">Navegue pelo calendário</li>
+        </ul>  
         <div id="datepicker"></div>
       </div>
       <!-- /CALENDARIO -->
