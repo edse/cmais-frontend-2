@@ -22,7 +22,8 @@ $(document).ready(function() {
       html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
       html += "";
       html += '</div></div></div>';
-      $('#accordion2').delay(1000).prepend(html);
+      $('#accordion2').prepend(html);
+      $('.accordion-group').fadeIn('fast');
       //console.log(data.url);
       $('#id'+data.handler).load(data.url, function(){
         $('#id'+data.handler+'.accordion-body iframe').each(function(i){
