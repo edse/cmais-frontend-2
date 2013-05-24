@@ -119,6 +119,9 @@
       date = $(this);
       //console.log(date.context.value);
       $.ajax({
+        before:function(){
+          alert('oi');
+        },
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
         success:function(json){
