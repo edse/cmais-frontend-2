@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -74,7 +73,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/22-05-2013" data-width="300px" data-num-posts="10"></div> 
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div> 
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
@@ -86,8 +85,8 @@
     </div>
     <!-- /direita -->
   </div>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <!--script src="http://code.jquery.com/jquery-1.9.1.js"></script-->
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
@@ -113,26 +112,40 @@
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
+      dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+      dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+      dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+      monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+      monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+      nextText: 'Próximo',
+      prevText: 'Anterior',
       inline: true
     });
 
     function dateJsonSelected(){
       date = $(this);
       //console.log(date.context.value);
+      $('#accordion2').remove();
+      $('.accordion-group').remove();
+      var html = '<div class="accordion" id="accordion2"></div>';
+      $('.conteudo .span8').append(html);
       $.ajax({
-        before:function(){
-          alert('oi');
-        },
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
+        beforeSend:function(){
+          $('#ajax-loader').show()
+        },
         success:function(json){
-          $.each(json, function( key, value ) {
-            //console.log(value)
-            contentInfo(value);
-          });
+          if(json){
+            $.each(json, function( key, value ) {
+              //console.log(value)  
+              contentInfo(value);
+            });
+          }else{
+            alert('nao tem');
+          }
         }
       });
     }
   });
   </script>
-  
