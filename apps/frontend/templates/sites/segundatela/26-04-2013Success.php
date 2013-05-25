@@ -139,30 +139,66 @@
       inline: true
     });
 
-    function dateJsonSelected(){
-      date = $(this);
-      //console.log(date.context.value);
-      $('#accordion2').remove();
-      $('.accordion-group').remove();
-      var html = '<div class="accordion" id="accordion2"></div>'; 
-      $('.conteudo .span8').append(html);
+<script type="text/javascript">
+  function redirect(d){
+     self.location.href = '<?php echo $url ?>?d='+d;
+  }
+
+  //cache the days and months
+  var cached_days = [];
+  var cached_months = [];
+
+  function dateLoading(date) { 
+    var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
+    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
+    var opts = "";
+    var i = 0;
+    var ret = false;
+    i = 0;
+    ret = false;
+
+    for (i in cached_months) {
+      if (cached_months[i] == year_month){
+        // if found the month in the cache
+        ret = true;
+        break;
+      }
+    }
+
+    // check if the month was not cached 
+    if (ret == false) {
+      //  load the month via .ajax
+      opts= "month="+ (date.getMonth()+1);
+      opts=opts +"&year="+ (date.getFullYear());
+      opts=opts +"&program_id=<?php echo $site->Program->id ?>";
+      // opts=opts +"&day="+ (date.getDate());
+      // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
+
       $.ajax({
-        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
+        url: "/ajax/getdays",
+        data: opts,
         dataType: "json",
-        beforeSend:function(){
-          $('#ajax-loader').show()
-        },
-        success:function(json){
-          if(date.context.value == ""){
-            alert('nao tem');
-          }else{
-            $.each(json, function( key, value ) {
-              //console.log(value)  
-              contentInfo(value);
-            });
-          }
+        async: false,
+        success: function(data){
+          // add the month to the cache
+          cached_months[cached_months.length]= year_month ;
+          $.each(data.days, function(i, day){
+            cached_days[cached_days.length]= year_month +"-"+ day.day +"";
+          });
         }
       });
     }
-  });
+
+    i = 0;
+    ret = false;
+
+    // check if date from datapicker is in the cache otherwise return false
+    // the .ajax returns only days that exists
+    for (i in cached_days) {
+      if (year_month_day == cached_days[i]) {
+        ret = true;
+      }
+    }
+    return [ret, ''];
+  }
   </script>
