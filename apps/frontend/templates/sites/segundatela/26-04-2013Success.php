@@ -87,7 +87,30 @@
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-  
+  <script type="text/javascript">
+  $(function(){
+    // comportamento inicial da grade
+    $('.btn-toggle:first').parent().addClass('escura');
+    $('.btn-toggle:first').parent().next().slideDown(400);
+  });
+  $(function(){ //onready
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    // Datepicker
+    $('#datepicker').datepicker({
+      beforeShowDay: dateLoading,
+      onSelect: redirect,
+      dateFormat: 'yy/mm/dd',
+      altFormat: 'yy-mm-dd',
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
+      inline: true
+    });
+    //hover states on the static widgets
+    $('#dialog_link, ul#icons li').hover(
+      function() { $(this).addClass('ui-state-hover'); }, 
+      function() { $(this).removeClass('ui-state-hover'); }
+    );
+  });
+</script>
   <script>
   $(function(){ 
     // retrive sent contents by ajax
