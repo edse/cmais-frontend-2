@@ -1,6 +1,3 @@
-<?php
-     echo phpinfo();
-?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programas.css" type="text/css" />
