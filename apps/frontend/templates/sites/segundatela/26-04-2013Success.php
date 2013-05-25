@@ -139,7 +139,6 @@
       inline: true
     });
 
-<script type="text/javascript">
   function redirect(d){
      self.location.href = '<?php echo $url ?>?d='+d;
   }
