@@ -132,12 +132,13 @@
         success:function(json){
           console.log(date)
           if(date){
-            alert('nao tem');
-          }else{
             $.each(json, function( key, value ) {
               //console.log(value)  
               contentInfo(value);
             });
+          }else{
+            
+            alert('nao tem');
           }
         }
       });
