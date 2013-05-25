@@ -130,7 +130,7 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          console.log(date)
+          console.log(data)
           if(date){
             $.each(json, function( key, value ) {
               //console.log(value)  
