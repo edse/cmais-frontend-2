@@ -84,7 +84,7 @@
     <!-- /direita -->
   </div>
 	<?php
-	   $path = "/porta/js/segundatela/log/";
+	   $path = "/portal/js/segundatela/log/";
 	   $diretorio = dir($path);
 	    
 	   echo "Lista de Arquivos do diret—rio '<strong>".$path."</strong>':<br />";   
@@ -140,12 +140,6 @@
         },
         success:function(json){
           window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
-          /*
-          $.each(json, function( key, value ) {
-            //console.log(value)  
-            contentInfo(value);
-          });
-          */
         }
       });
     }
