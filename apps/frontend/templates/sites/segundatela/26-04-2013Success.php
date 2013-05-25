@@ -121,7 +121,7 @@
       //console.log(date.context.value);
       $('#accordion2').remove();
       $('.accordion-group').remove();
-      var html = '<div class="accordion" id="accordion2"></div>';
+      var html = '<div class="accordion" id="accordion2"></div>'; 
       $('.conteudo .span8').append(html);
       $.ajax({
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
