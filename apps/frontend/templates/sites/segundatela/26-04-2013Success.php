@@ -130,7 +130,7 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          if(date == 1)
+          if(date == 1){
             console.log("funciono")
           }else{
             console.log(" nao funciono")
