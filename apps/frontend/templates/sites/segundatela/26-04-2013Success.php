@@ -56,8 +56,8 @@
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
-        <ul class="nav nav-tabs" id="myTab2">
-          <li class="active"><a href="#">Navegue pelo calendário</a></li>
+        <ul class="nav nav-tabs" id="myTab2" >
+          <li class="active" style="width: 100%; border: none; margin:0 0 6px 0;"><a href="#">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -83,7 +83,7 @@
     </div>
     <!-- /direita -->
   </div>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
@@ -130,14 +130,13 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          if(date){
-            $.each(json, function( key, value ) {
-              //console.log(value)  
-              contentInfo(value);
-            });
-          }else{
-            alert('nao tem');
-          }
+          window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
+          /*
+          $.each(json, function( key, value ) {
+            //console.log(value)  
+            contentInfo(value);
+          });
+          */
         }
       });
     }
