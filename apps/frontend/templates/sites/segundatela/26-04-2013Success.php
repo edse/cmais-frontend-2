@@ -130,7 +130,7 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          if(date.context.value == 1){
+          if(date.context.value == ""){
             alert('nao tem');
           }else{
             $.each(json, function( key, value ) {
