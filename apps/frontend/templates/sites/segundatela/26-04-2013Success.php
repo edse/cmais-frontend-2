@@ -130,7 +130,12 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          if(date){
+          if(date == 1)
+            console.log("funciono")
+          }else{
+            console.log(" nao funciono")
+          }
+          if(date.context.value == 1){
             $.each(json, function( key, value ) {
               //console.log(value)  
               contentInfo(value);
