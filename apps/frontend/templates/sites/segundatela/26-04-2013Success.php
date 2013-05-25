@@ -55,12 +55,10 @@
     <div class="span4">
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
-        <div class="topo claro">
-          <span></span>
-          <div class="capa-titulo">
-            <h4>Arquivo</h4>
-          </div>
-        </div>
+        <h2>Arquivo</h2>
+        <ul class="nav nav-tabs" id="myTab2">
+          <li class="active"><a href="#">Navegue pelo calendário</a></li>
+        </ul>  
         <div id="datepicker"></div>
       </div>
       <!-- /CALENDARIO -->
@@ -85,10 +83,8 @@
     </div>
     <!-- /direita -->
   </div>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <!--script src="http://code.jquery.com/jquery-1.9.1.js"></script-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   
@@ -113,12 +109,10 @@
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
-      dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+      dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
-      nextText: 'Próximo',
-      prevText: 'Anterior',
       inline: true
     });
 
@@ -127,7 +121,7 @@
       //console.log(date.context.value);
       $('#accordion2').remove();
       $('.accordion-group').remove();
-      var html = '<div class="accordion" id="accordion2"></div>';
+      var html = '<div class="accordion" id="accordion2"></div>'; 
       $('.conteudo .span8').append(html);
       $.ajax({
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
@@ -136,7 +130,7 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          if(json){
+          if(date){
             $.each(json, function( key, value ) {
               //console.log(value)  
               contentInfo(value);
