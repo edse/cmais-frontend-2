@@ -130,16 +130,13 @@
           $('#ajax-loader').show()
         },
         success:function(json){
-          console.log(date.context)
-          if(date){
-            $.each(json, function( key, value ) {
-              //console.log(value)  
-              contentInfo(value);
-            });
-          }else{
-            
-            alert('nao tem');
-          }
+          window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
+          /*
+          $.each(json, function( key, value ) {
+            //console.log(value)  
+            contentInfo(value);
+          });
+          */
         }
       });
     }
