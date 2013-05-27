@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -44,7 +45,7 @@
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
-    <div class="span8">
+    <div class="span8"> 
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2"></div>
@@ -83,23 +84,40 @@
     </div>
     <!-- /direita -->
   </div>
-	<?php
-	   $path = "/portal/js/segundatela/log/";
-	   $diretorio = dir($path);
-	    
-	   echo "Lista de Arquivos do diret�rio '<strong>".$path."</strong>':<br />";   
-	   while($arquivo = $diretorio -> read()){
-	      echo $arquivo;
-	   }
-	   $diretorio -> close();
-	?>
+  <?php
+  //puxando logs do programa
+  $i = 0;
+  if ($handle = opendir('./portal/js/segundatela/log/')) {
+    while (false !== ($programast = readdir($handle))) {
+      
+      if ($programast != "." && $programast != "..") {
+        $programast = explode ('-', $programast);
+        
+        if($programast[0]=="jornaldacultura"){
+          $arrayDate = array(checkdate ( $programast[2],$programast[1], $programast[3]));
+          $arrayDate = natsort($arrayDate);
+          
+          $dateJson = implode("-", $arrayDate);
+          $dateJson = explode(".", $dateJson);
+          
+          $dateList[$i] = $dateJson[0];
+          $i++;  
+        } 
+      }
+    }
+    echo natsort($dateList);
+  }
+  echo $dateList[0];
+  echo $dateList[43];
+  ?>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
   
   <script>
   $(function(){ 
-    // retrive sent contents by ajax
+    // retrive sent contents by ajax 
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
@@ -110,13 +128,22 @@
         });
       }
     });
+    var dateList = new Array();
     
+
+    //console.log(dateList);
+    /*
     // Datepicker    
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
+      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
+      beforeShowDay: function(dateToShow){
+        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
+      },
+      maxDate:"2y",
       onSelect: dateJsonSelected,
-      dateFormat: 'dd-mm-yy',
-      altFormat: 'dd-mm-yy',
+      //dateFormat: 'dd-mm-yy',
+      //altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
@@ -124,24 +151,11 @@
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
     });
-
+    */
     function dateJsonSelected(){
       date = $(this);
-      //console.log(date.context.value);
-      $('#accordion2').remove();
-      $('.accordion-group').remove();
-      var html = '<div class="accordion" id="accordion2"></div>'; 
-      $('.conteudo .span8').append(html);
-      $.ajax({
-        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
-        dataType: "json",
-        beforeSend:function(){
-          $('#ajax-loader').show()
-        },
-        success:function(json){
-          window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
-        }
-      });
+      console.log(date.context.value);
+      //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
   });
   </script>
