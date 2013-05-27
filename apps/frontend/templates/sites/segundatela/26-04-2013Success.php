@@ -99,7 +99,7 @@
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
-          //echo $dateJson . "<br>"; 
+          echo $dateJson[0]. "<br>"; 
         } 
       }
     }
@@ -121,12 +121,7 @@
     });
     var dateList = new Array();
     
-    <?php 
-    //echo count($dateJson);
-    for($i=0;$i<count($dateJson);$i++){
-      echo 'dateList['.$i.']'.$dateJson[$i].')'; 
-    }
-    ?>
+
     //console.log(dateList);
     /*
     // Datepicker    
