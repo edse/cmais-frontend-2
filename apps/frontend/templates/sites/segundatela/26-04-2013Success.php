@@ -161,9 +161,10 @@
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
-      dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+      nextText:" ",
+      prevText:" ",
       inline: true
     });
     
