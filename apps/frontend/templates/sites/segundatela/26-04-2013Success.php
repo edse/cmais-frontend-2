@@ -95,6 +95,7 @@
     <?php
   //puxando logs do programa
   $i = 0;
+  echo 'var dateList = new Array();';
   if ($handle = opendir('./portal/js/segundatela/log/')) {
     while (false !== ($programast = readdir($handle))) {
       
@@ -103,8 +104,8 @@
         
         if($programast[0]=="jornaldacultura"){
           $dateJson = explode(".", $programast[3]);
-          echo 'var dateList = new Array();';
-          echo 'dateList['.$i.'] = new Date('.$dateJson[0].','.$programast[2].' ,'.$programast[1].' );';
+          
+          echo 'dateList['.$i.'] = new Date('.$dateJson[0].','.$programast[2].','.$programast[1].');';
           $i++;
           /*
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
@@ -135,7 +136,7 @@
       }
     });
     
-    console.log(dateList[0])
+    console.log(dateList)
     
     /*
     // Datepicker    
