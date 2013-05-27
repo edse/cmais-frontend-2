@@ -165,9 +165,11 @@
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
               return [true, ''];
+            }else if(dmy == today) {
+              return [true, ''];
             }
         }
-
+        return [false, 'not-select'];
     }
         
     function dateJsonSelected(){
