@@ -119,18 +119,22 @@
         });
       }
     });
+    var dateList = new Array();
+    dateList.push(<?php echo $dateJson?>);
+
     
+
+
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      beforeShowDay:function(){
-        $.each(function(i){
-          console.log('oi'+i)
-        })
+      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
+      beforeShowDay: function(dateToShow){
+        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
       },
       onSelect: dateJsonSelected,
-      dateFormat: 'dd-mm-yy',
-      altFormat: 'dd-mm-yy',
+      //dateFormat: 'dd-mm-yy',
+      //altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
