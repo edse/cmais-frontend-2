@@ -58,7 +58,7 @@
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
         <ul class="nav nav-tabs" id="myTab2" >
-          <li class="active" style="width: 100%; border: none; margin:0 0 6px 0;"><a href="#">Navegue pelo calendário</a></li>
+          <li class="active navegue" ><a href="#">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -118,6 +118,7 @@
         if($programast[0]=="jornaldacultura"){
           $dateJson = explode(".", $programast[3]);
           
+          //criando variavel para o javascript
           echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
           $i++;
           /*
