@@ -120,6 +120,7 @@
         } 
       }
     }
+    echo 'dateList.push('.date("d")."-".date("m")."-".date("Y").')';
     closedir($handle);
   }
   
@@ -161,13 +162,14 @@
     
     function highlightDays(date) {
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
+        
         for (var j = 0; j < dateList.length; j++) {
-            if(dmy == dateList[j] || dateList[j] == today) {
-              return [true, 'select'];
+            if(dmy == dateList[j]) {
+              return [true, ''];
             }
+            return [false, 'not-select'];
         }
-        return [false, 'not-select'];
+        
     }
         
     function dateJsonSelected(){
