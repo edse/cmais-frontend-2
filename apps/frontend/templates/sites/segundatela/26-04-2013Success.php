@@ -92,6 +92,7 @@
   //puxando logs do programa
   if ($handle = opendir('./portal/js/segundatela/log/')) {
     while (false !== ($programast = readdir($handle))) {
+      $i = 0;
       if ($programast != "." && $programast != "..") {
         $programast = explode ('-', $programast);
         
@@ -100,7 +101,8 @@
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
-          $dateList = array($dateJson[0]); 
+          $dateList[$i] = $dateJson[0];
+          $i++;  
         } 
       }
     }
