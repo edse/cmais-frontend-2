@@ -170,7 +170,6 @@
     }
     
     function highlightDays(date) {
-        
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
