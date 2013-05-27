@@ -83,7 +83,16 @@
     </div>
     <!-- /direita -->
   </div>
-
+	<?php
+	   $path = "/portal/js/segundatela/log/";
+	   $diretorio = dir($path);
+	    
+	   echo "Lista de Arquivos do diret—rio '<strong>".$path."</strong>':<br />";   
+	   while($arquivo = $diretorio -> read()){
+	      echo $arquivo;
+	   }
+	   $diretorio -> close();
+	?>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
@@ -128,12 +137,6 @@
         dataType: "json",
         success:function(json){
           window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
-          /*
-          $.each(json, function( key, value ) {
-            //console.log(value)  
-            contentInfo(value);
-          });
-          */
         }
       });
     }
