@@ -71,7 +71,7 @@ $(function(){
       <div id="miolo">
       
         <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <?php //include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
 
         <!-- CONTEUDO PAGINA -->
