@@ -143,6 +143,7 @@
       maxDate:"1w",
       beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
+      onLoad: todayIs,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
@@ -159,9 +160,12 @@
       return number;
     }
     
+    function todayIs(today){
+      var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
+      console.log(today);
+    }
     function highlightDays(date) {
-        var today = <?php echo date("d m Y")?>;
-        console.log(today)
+        
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
