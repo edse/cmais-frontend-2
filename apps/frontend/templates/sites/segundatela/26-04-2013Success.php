@@ -58,7 +58,7 @@
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
         <ul class="nav nav-tabs" id="myTab2" >
-          <li class="active" style="width: 100%" ><a href="#" style="width: 100%; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
+          <li class="active" style="width: 100%" ><a href="#" style="width: 295%; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -164,7 +164,7 @@
     }
     
     function highlightDays(date) {
-      
+        $('.ui-datepicker-next span').val('oi');
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
         //console.log(dmy);
         //console.log(dateList);
