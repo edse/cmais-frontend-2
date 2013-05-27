@@ -65,7 +65,7 @@
       <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
-      <div class="">
+      <div class="span4">
         <ul class="nav nav-tabs" id="myTab">
           <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
           <li class=""><a data-toggle="tab" href="#twitter">Twitter</a></li>
