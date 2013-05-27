@@ -165,7 +165,7 @@
     
     function putZero(number){
       if(number.length < 1){
-        number = "0" + number;
+        var number = parseInt("0" + number);
         return number
       }
     }
