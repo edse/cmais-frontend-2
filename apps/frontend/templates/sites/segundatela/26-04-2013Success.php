@@ -133,10 +133,13 @@
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
     });
-    $("#ui-datepicker-div").load(function() {
-      var date = $(this);
-      console.log(date);
-    });
+    function calendarOnLoad(){
+      $("ui-datepicker-calendar td").each(function(i){
+        i++;
+        console.log(i);
+      });
+    }
+    calendarOnLoad();
 
     function dateJsonSelected(){
       date = $(this);
