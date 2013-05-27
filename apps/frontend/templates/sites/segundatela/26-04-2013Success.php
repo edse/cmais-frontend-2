@@ -104,7 +104,7 @@
           
           $dateList[$i] = $dateJson[0];
           echo $i. "<br>";
-          echo $dateList . "<br>";
+          echo $dateList[$i] . "<br>";
           $i++;  
         } 
       }
