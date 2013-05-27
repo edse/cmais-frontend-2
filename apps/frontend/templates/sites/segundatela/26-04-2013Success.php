@@ -151,8 +151,8 @@
       altFormat: 'dd-mm-yy',
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-      nextText:"a",
-      prevText:"b",
+      nextText:" ",
+      prevText:",
       inline: true
     });
     
