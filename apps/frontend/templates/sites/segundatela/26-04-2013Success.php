@@ -125,6 +125,7 @@
   
   $(function(){ 
     // retrive sent contents by ajax 
+
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
@@ -137,7 +138,7 @@
     });
     dateList = dateList.sort();
     console.log(dateList[0]);
-    
+    console.log(dateList[dateList.length]);
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
