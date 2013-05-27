@@ -6,7 +6,7 @@ if ($handle = opendir('./portal/js/segundatela/log/')) {
       $programast = explode ('-', $programast);
       
       if($programast[0]=="jornaldacultura"){
-        echo $data[0] . "</br>"; 
+        echo $data . "</br>"; 
       } 
     }
   }
