@@ -95,6 +95,12 @@
       background-color: yellow!important; 
       color: red!important;
     }
+    td.not-select, table.ui-datepicker-calendar tbody td.not-select a { 
+      background: none!important;
+      background-color: blue!important; 
+      color: black!important;
+    }
+    
   </style>
   <script>
   
@@ -177,7 +183,9 @@
         console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
-                return [true, 'select'];
+              return [true, 'select'];
+            }else{
+              return [false, 'not-select'];
             }
         }
         return [true, ''];
