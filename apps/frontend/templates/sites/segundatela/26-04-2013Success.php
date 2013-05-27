@@ -99,7 +99,7 @@
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
-          echo $dateJson . "<br>"; 
+          //echo $dateJson . "<br>"; 
         } 
       }
     }
@@ -123,9 +123,9 @@
     
     <?php 
     echo count($dateJson);
-    for($i=0;$i<count($dateJson);$i++){
-      echo 'dateList.push('.$dateJson[$i].')'; 
-    }
+    //for($i=0;$i<count($dateJson);$i++){
+      //echo 'dateList.push('.$dateJson[$i].')'; 
+    //}
     ?>
     console.log(dateList);
     /*
