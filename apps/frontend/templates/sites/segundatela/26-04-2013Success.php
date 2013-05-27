@@ -164,13 +164,11 @@
    
     
     function putZero(number){
-      if(number.length < 1){
-        var number = parseInt("0" + number);
-        return number
-      }
+      console.log(number.length);
     }
     
     function highlightDays(date) {
+      
         var dmy = putZero(date.getDate()) + "-" + (putZero(date.getMonth()+1)) + "-" + date.getFullYear();
         console.log(dmy);
         console.log(dateList);
