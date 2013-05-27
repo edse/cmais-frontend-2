@@ -100,11 +100,11 @@
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
-          echo $dateJson[0]. "<br>"; 
+          $dateList = array($dateJson[0]); 
         } 
       }
     }
-    echo count($dateJson[0])."<br>";
+    echo count($dateList);
     closedir($handle);
   }
   ?>
