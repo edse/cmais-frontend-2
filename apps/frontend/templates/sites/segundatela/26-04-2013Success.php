@@ -139,7 +139,7 @@
     dateList = dateList.sort();
     
     // Datepicker    
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
       minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
       maxDate:"1w",
