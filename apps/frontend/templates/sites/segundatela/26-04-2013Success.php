@@ -184,11 +184,9 @@
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
               return [true, 'select'];
-            }else{
-              return [false, 'not-select'];
             }
         }
-        //return [true, ''];
+        return [false, 'not-select'];
     }
         
     function dateJsonSelected(){
