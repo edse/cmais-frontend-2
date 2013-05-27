@@ -1,7 +1,7 @@
 <?php
 if ($handle = opendir('./portal/js/segundatela/log/')) {
-  while (false !== ($entry = readdir($handle))) {
-    if ($entry != "." && $entry != "..") {
+  while (false !== ($programast = readdir($handle))) {
+    if ($programast != "." && $programast != "..") {
       split ('-', $programast);
       echo $programast . "</br>";
     }
