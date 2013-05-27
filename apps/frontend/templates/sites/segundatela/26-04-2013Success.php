@@ -129,8 +129,8 @@
     var dateList = new Array();
 
     
-    for(var i = 0; i < dates; i++){
-      dateList[i] = <?php $i=0;echo $dateList[$i];$i++;?>
+    for(var i = 0; i < <?php echo count($dateList); ?>; i++){
+      dateList[i] = <?php $i=0;echo $dateList[$i];$i++;?>;
       console.log(dateList[i])
     }
   
