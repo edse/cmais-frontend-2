@@ -155,10 +155,11 @@
       inline: true
     });
     
-    var availableDates = ["23-05-2013","24-05-2013"];
+    var availableDates = ["28-4-2013","29-4-2013"];
     
     function available(date) {
         console.log(date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear())
+        console.log()
         dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
         if ($.inArray(dmy, availableDates) == -1) {
             return [true, ""];
