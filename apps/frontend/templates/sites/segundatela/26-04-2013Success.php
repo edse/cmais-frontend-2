@@ -137,16 +137,14 @@
       }
     });
     dateList = dateList.sort();
-    console.log(dateList[0]);
-    console.log(dateList[43]);
-    /*
+    
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
       //minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
-      beforeShowDay: function(dateToShow){
-        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
-      },
+      //beforeShowDay: function(dateToShow){
+       // return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
+      //},
       maxDate:"2y",
       onSelect: dateJsonSelected,
       //dateFormat: 'dd-mm-yy',
@@ -164,6 +162,6 @@
       console.log(date.context.value);
       //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
-    */
+    
   });
   </script>
