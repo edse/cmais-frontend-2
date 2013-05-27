@@ -2,10 +2,13 @@
 if ($handle = opendir('./portal/js/segundatela/log/')) {
   while (false !== ($programast = readdir($handle))) {
     if ($programast != "." && $programast != "..") {
-      echo $programast. "<br>";
       $programast = explode ('-', $programast);
+      
       if($programast[0]=="jornaldacultura"){
-        echo $programast[0] . "<br>";
+        $arrayDate = array($programast[1], $programast[2], $programast[3]);
+        $dateJson = implode("-", $arrayDate);
+        
+        echo $dateJson . "<br>"; 
       } 
     }
   }
