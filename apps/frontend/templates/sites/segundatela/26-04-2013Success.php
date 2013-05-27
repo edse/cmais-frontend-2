@@ -162,8 +162,13 @@
     
     function todayIs(today){
       var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
-      console.log(today);
+      for (var j = 0; j < dateList.length; j++) {
+            if (today == dateList[j]) {
+              return [true, 'selected'];
+            }
+        }
     }
+    
     function highlightDays(date) {
         
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
