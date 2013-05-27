@@ -128,12 +128,13 @@
     });
     var dateList = new Array();
 
-    
-    for(var i = 0; i < <?php echo count($dateList); ?>; i++){
-      dateList[i] = <?php $i=0;echo $dateList[$i];$i++;?>;
-      console.log(dateList[i])
+    <?php
+    for($i = 0; $i < count($dateList); $i++){
+      echo "dateList[".$i."] = ".$dateList[$i];
+      echo "console.log(dateList[".$i."])";
     }
-  
+    ?>
+
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
