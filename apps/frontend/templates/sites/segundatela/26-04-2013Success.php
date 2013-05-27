@@ -130,11 +130,10 @@
 
     <?php
     for($i = 0; $i < count($dateList); $i++){
-      echo "dateList[".$i."] = ".$dateList[$i];
-      echo "console.log(dateList[".$i."])";
+      echo "dateList[".$i."] = ".$dateList[$i]."<br>";
     }
     ?>
-
+    console.log(dateList.length)
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
