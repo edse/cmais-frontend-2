@@ -92,20 +92,26 @@
   //puxando logs do programa
   if ($handle = opendir('./portal/js/segundatela/log/')) {
     while (false !== ($programast = readdir($handle))) {
+      $i = 0;
       if ($programast != "." && $programast != "..") {
         $programast = explode ('-', $programast);
         
         if($programast[0]=="jornaldacultura"){
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
+          
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
-          //echo $dateJson[0] . "<br>"; 
+          
+          echo $dateList[$i] = $dateJson[0];
+          $i++;  
         } 
       }
     }
+    echo count($dateList);
     closedir($handle);
   }
   ?>
+  
   <script>
   $(function(){ 
     // retrive sent contents by ajax 
@@ -119,18 +125,22 @@
         });
       }
     });
+    var dateList = new Array();
     
+
+    //console.log(dateList);
+    /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      beforeShowDay:function(){
-        $.each(function(i){
-          console.log('oi'+i)
-        })
+      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
+      beforeShowDay: function(dateToShow){
+        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
       },
+      maxDate:"2y",
       onSelect: dateJsonSelected,
-      dateFormat: 'dd-mm-yy',
-      altFormat: 'dd-mm-yy',
+      //dateFormat: 'dd-mm-yy',
+      //altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
@@ -138,14 +148,7 @@
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
     });
-    
-    function calendarOnLoad(){
-      $("ui-datepicker-calendar td").each(function(i){
-        i++;
-        console.log(i);
-      });
-    }
-
+    */
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
