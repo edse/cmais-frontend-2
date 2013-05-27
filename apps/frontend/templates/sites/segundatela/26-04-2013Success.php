@@ -139,16 +139,13 @@
     dateList = dateList.sort();
     
     // Datepicker    
-    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      //minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
-      beforeShowDay: function(dateToShow){
-        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateList),dateList) >= 0), "true"]; 
-      },
+      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
       maxDate:"1w",
       onSelect: dateJsonSelected,
-      //dateFormat: 'dd-mm-yy',
-      //altFormat: 'dd-mm-yy',
+      dateFormat: 'dd-mm-yy',
+      altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
