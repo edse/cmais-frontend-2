@@ -137,7 +137,7 @@
 .box-padrao #datepicker table thead { width:310px; }
 .box-padrao #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
 .box-padrao #datepicker tbody { margin-top:10px; width:310px; float:left; }
-.box-padrao #datepicker .ui-state-default { background:transparent; width:40px; height:22px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:24px; margin:0 2px 0px 0; }  
+.box-padrao #datepicker .ui-state-default { background:transparent; width:40px; height:22px;  text-align:center; display:block; font:bold 12px arial;  border:none;  line-height:24px; margin:0 2px 0px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
 .box-padrao #datepicker .ui-widget-content .ui-state-hover, 
@@ -147,10 +147,10 @@
 .box-padrao #datepicker .ui-widget-header .ui-state-focus { background:#333; color:#fff; text-decoration:none; }
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-next:hover,
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-prev:hover { background:none;  border:none; }
-.box-padrao #datepicker tbody span { background:transparent; color:#333;}
+.box-padrao #datepicker tbody span { background:transparent; }
 .box-padrao #datepicker tbody a { background:#fff; color:#333; text-decoration:none; }
 .box-padrao #datepicker tbody a:hover {background:#333; color:#fff;}
-/*.box-padrao #datepicker td.select, table.ui-datepicker-calendar tbody td.select a { background: none!important;background-color: yellow!important; color: red!important;}*/
+.box-padrao #datepicker td.select, table.ui-datepicker-calendar tbody td.select a { color: #333!important;}
 .box-padrao #datepicker td.not-select, table.ui-datepicker-calendar tbody td.not-select a { background: none!important;background-color: #FFF!important; color: #b7b7b7!important;cursor: default!important;}
 
 /**** /datepicker ****/
