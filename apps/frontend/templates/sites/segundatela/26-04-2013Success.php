@@ -54,7 +54,15 @@
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-
+      <!-- CALENDARIO -->
+      <div class="box-padrao grid1">
+        <h2>Arquivo</h2>
+        <ul class="nav nav-tabs" id="myTab2" style="margin-bottom: 10px;">
+          <li class="active" style="width: 100%" ><a href="#" style="width: 295px; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
+        </ul>  
+        <div id="datepicker"></div>
+      </div>
+      <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
       <div class="">
@@ -64,7 +72,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="facebook" class="tab-pane fade active in">
-            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div> 
+            <div class="fb-comments" data-href="cmais.com.br/segundatela/jornaldacultura/<?php echo $date; ?>" data-width="100%" data-num-posts="10"></div> 
           </div>
           <div id="twitter" class="tab-pane fade">
             <a class="twitter-timeline" href="https://twitter.com/search?q=%40jornal_cultura" data-widget-id="316640392126808065">Tweets sobre "@jornal_cultura"</a>
