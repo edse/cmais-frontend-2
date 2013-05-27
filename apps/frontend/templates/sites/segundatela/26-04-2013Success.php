@@ -164,7 +164,7 @@
    
     
     function putZero(number){
-      if(number<1){
+      if(number.length<1){
         numberComplete="0"+number;
         return numberComplete;
       }else{
