@@ -94,7 +94,8 @@
         $programast = explode ('-', $programast);
         
         if($programast[0]=="jornaldacultura"){
-          $arrayDate = array($programast[1], $programast[2], $programast[3]);
+          $arrayDate = array(checkdate ( $programast[2],$programast[1], $programast[3]));
+          $arrayDate = natsort($arrayDate);
           
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
@@ -104,7 +105,6 @@
         } 
       }
     }
-    closedir($handle);
     echo natsort($dateList);
   }
   echo $dateList[0];
