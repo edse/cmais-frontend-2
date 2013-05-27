@@ -1,20 +1,4 @@
-<?php
-if ($handle = opendir('./portal/js/segundatela/log/')) {
-  while (false !== ($programast = readdir($handle))) {
-    if ($programast != "." && $programast != "..") {
-      $programast = explode ('-', $programast);
-      
-      if($programast[0]=="jornaldacultura"){
-        $arrayDate = array($programast[1], $programast[2], $programast[3]);
-        $dateJson = implode("-", $arrayDate);
-        $dateJson = explode(".", $dateJson);
-        echo $dateJson[0] . "<br>"; 
-      } 
-    }
-  }
-  closedir($handle);
-}
-?>
+
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -104,10 +88,27 @@ if ($handle = opendir('./portal/js/segundatela/log/')) {
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-  
+  <?php
+  //puxando logs do programa
+  if ($handle = opendir('./portal/js/segundatela/log/')) {
+    while (false !== ($programast = readdir($handle))) {
+      if ($programast != "." && $programast != "..") {
+        $programast = explode ('-', $programast);
+        
+        if($programast[0]=="jornaldacultura"){
+          $arrayDate = array($programast[1], $programast[2], $programast[3]);
+          $dateJson = implode("-", $arrayDate);
+          $dateJson = explode(".", $dateJson);
+          //echo $dateJson[0] . "<br>"; 
+        } 
+      }
+    }
+    closedir($handle);
+  }
+  ?>
   <script>
   $(function(){ 
-    // retrive sent contents by ajax
+    // retrive sent contents by ajax 
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
@@ -135,18 +136,8 @@ if ($handle = opendir('./portal/js/segundatela/log/')) {
 
     function dateJsonSelected(){
       date = $(this);
-      //console.log(date.context.value);
-      $('#accordion2').remove();
-      $('.accordion-group').remove();
-      var html = '<div class="accordion" id="accordion2"></div>'; 
-      $('.conteudo .span8').append(html);
-      $.ajax({
-        url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
-        dataType: "json",
-        success:function(json){
-          window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
-        }
-      });
+      console.log(date.context.value);
+      //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
   });
   </script>
