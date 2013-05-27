@@ -188,7 +188,7 @@
               return [false, 'not-select'];
             }
         }
-        return [true, ''];
+        //return [true, ''];
     }
         
     function dateJsonSelected(){
