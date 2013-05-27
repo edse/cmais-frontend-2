@@ -135,7 +135,7 @@
         });
       }
     });
-    dateList = datelist.sort();
+    dateList = dateList.sort();
     console.log(dateList[0]);
     
     /*
