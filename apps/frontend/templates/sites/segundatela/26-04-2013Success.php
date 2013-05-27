@@ -135,8 +135,8 @@
         });
       }
     });
-    
-    console.log(dateList[0])
+    dateList = datelist.sort();
+    console.log(dateList[0]);
     
     /*
     // Datepicker    
