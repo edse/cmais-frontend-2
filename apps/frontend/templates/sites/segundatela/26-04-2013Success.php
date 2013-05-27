@@ -1,11 +1,12 @@
 <?php
 if ($handle = opendir('./portal/js/segundatela/log/')) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-            echo $entry . "</br>";
-        }
+  while (false !== ($entry = readdir($handle))) {
+    if ($entry != "." && $entry != "..") {
+      split ('-', $programast);
+      echo $programast . "</br>";
     }
-    closedir($handle);
+  }
+  closedir($handle);
 }
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
