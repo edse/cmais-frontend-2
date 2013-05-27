@@ -136,7 +136,7 @@
 .box-padrao #datepicker tr { width:310px; }
 .box-padrao #datepicker table thead { width:310px; }
 .box-padrao #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
-.box-padrao #datepicker tbody { margin-top:10px; width:310px; float:left; }
+.box-padrao #datepicker tbody { margin-top:10px; margin-bottom:30px; width:310px; float:left; }
 .box-padrao #datepicker .ui-state-default { background:transparent; width:40px; height:22px;  text-align:center; display:block; font:bold 12px arial;  border:none;  line-height:24px; margin:0 2px 0px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
