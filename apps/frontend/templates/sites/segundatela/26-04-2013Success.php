@@ -58,7 +58,7 @@
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
         <ul class="nav nav-tabs" id="myTab2" >
-          <li class="active" style="width: 100%; border: none; margin:0 0 6px 0;"><a href="#">Navegue pelo calendário</a></li>
+          <li class="active" style="width: 100%" ><a href="#" style="width: 295px; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -89,13 +89,6 @@
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
-  <style type="text/css">
-    td.select, table.ui-datepicker-calendar tbody td.select a { 
-      background: none!important;
-      background-color: yellow!important; 
-      color: red!important;
-    }
-  </style>
   <script>
   
     <?php
@@ -112,6 +105,7 @@
         if($programast[0]=="jornaldacultura"){
           $dateJson = explode(".", $programast[3]);
           
+          //criando variavel para o javascript
           echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
           $i++;
           /*
@@ -155,9 +149,10 @@
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
-      dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+      nextText:" ",
+      prevText:" ",
       inline: true
     });
     
@@ -171,16 +166,16 @@
     }
     
     function highlightDays(date) {
-      
+        $('.ui-datepicker-next span').val('oi');
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        console.log(dmy);
-        console.log(dateList);
+        //console.log(dmy);
+        //console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
-                return [true, 'select'];
+              return [true, 'select'];
             }
         }
-        return [true, ''];
+        return [false, 'not-select'];
     }
         
     function dateJsonSelected(){
