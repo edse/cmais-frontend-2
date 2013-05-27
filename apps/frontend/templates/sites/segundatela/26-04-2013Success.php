@@ -98,10 +98,11 @@
         
         if($programast[0]=="jornaldacultura"){
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
+          
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
-          $dateList[$i] = $dateJson[0];
+          echo $dateList[$i] = $dateJson[0];
           $i++;  
         } 
       }
