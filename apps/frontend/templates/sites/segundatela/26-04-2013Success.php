@@ -155,7 +155,7 @@
       inline: true
     });
     
-    var availableDates = ["23-5-2013","24-5-2013"];
+    var availableDates = ["23-05-2013","24-05-2013"];
     
     function unavailable(date) {
         dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
