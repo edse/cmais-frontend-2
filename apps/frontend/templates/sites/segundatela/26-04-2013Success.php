@@ -108,7 +108,7 @@
     echo natsort($dateList);
   }
   echo $dateList[0];
-  echo $dateList[44];
+  echo $dateList[43];
   ?>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
