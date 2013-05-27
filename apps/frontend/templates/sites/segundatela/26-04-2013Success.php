@@ -161,10 +161,11 @@
       inline: true
     });
     
-    var availableDates = ["28-4-2013","29-4-2013"];
+   
     
     var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
     function highlightDays(date) {
+         var availableDates = ["28-4-2013","29-4-2013"];
         for (var j = 0; j < 1; j++) {
             if (dmy == availableDates[j]) {
                 return [true, 'specialDay'];
