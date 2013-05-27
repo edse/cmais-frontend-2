@@ -90,9 +90,10 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <?php
   //puxando logs do programa
+  $i = 0;
   if ($handle = opendir('./portal/js/segundatela/log/')) {
     while (false !== ($programast = readdir($handle))) {
-      $i = 0;
+      
       if ($programast != "." && $programast != "..") {
         $programast = explode ('-', $programast);
         
