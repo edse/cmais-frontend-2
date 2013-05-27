@@ -1,7 +1,7 @@
 <?php
 if ($handle = opendir('./portal/js/segundatela/log/')) {
   while (false !== ($programast = readdir($handle))) {
-    if ($programast != "." && $programast != "..") {
+    if ($programast != "." && $programast != ".." && strstr($programast, 'jornaldacultura-', true)) {
       $programast = explode ('-', $programast);
       echo $programast[0] . "</br>";
     }
