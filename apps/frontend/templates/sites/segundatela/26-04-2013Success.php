@@ -167,9 +167,8 @@
             if(dmy == dateList[j]) {
               return [true, ''];
             }
-            return [false, 'not-select'];
         }
-        
+      return [false, 'not-select'];  
     }
         
     function dateJsonSelected(){
