@@ -31,9 +31,7 @@ $(function(){
           -->
           <?php endif; ?>
           
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+          
           
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
@@ -71,7 +69,7 @@ $(function(){
       <div id="miolo">
       
         <!-- BOX LATERAL -->
-        <?php //include_partial_from_folder('blocks','global/shortcuts') ?>
+        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
 
         <!-- CONTEUDO PAGINA -->
