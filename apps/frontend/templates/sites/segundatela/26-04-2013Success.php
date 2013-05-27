@@ -121,7 +121,7 @@
     });
     
     // Datepicker    
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
@@ -132,6 +132,10 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
+    });
+    $("#ui-datepicker-div").load(function() {
+      var date = $(this);
+      console.log(date);
     });
 
     function dateJsonSelected(){
