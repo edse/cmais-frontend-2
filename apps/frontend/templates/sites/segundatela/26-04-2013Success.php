@@ -90,10 +90,10 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
   <style type="text/css">
-    td.specialDay, table.ui-datepicker-calendar tbody td.specialDay a { 
-    background: none !important;
-    background-color: yellow !important; 
-    color: red;
+    td.select, table.ui-datepicker-calendar tbody td.select a { 
+      background: none!important;
+      background-color: yellow!important; 
+      color: red!important;
     }
   </style>
   <script>
@@ -169,7 +169,7 @@
         var availableDates = ["28-4-2013","29-4-2013"];
         for (var j = 0; j < 1; j++) {
             if (dmy == availableDates[j]) {
-                return [true, 'specialDay'];
+                return [true, 'select'];
             }
         }
         return [true, ''];
