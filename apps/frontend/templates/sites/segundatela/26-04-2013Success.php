@@ -7,7 +7,7 @@ if ($handle = opendir('./portal/js/segundatela/log/')) {
       if($programast[0]=="jornaldacultura"){
         $arrayDate = array($programast[1], $programast[2], $programast[3]);
         $dateJson = implode("-", $arrayDate);
-        
+        $dateJson = explode(".", $dateJson);
         echo $dateJson . "<br>"; 
       } 
     }
