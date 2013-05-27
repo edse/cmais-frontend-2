@@ -84,10 +84,10 @@
     <!-- /direita -->
   </div>
 	<?php
-	   $path = "/portal/js/segundatela/log/";
+	   $path = "/portal/js/segundatela/log";
 	   $diretorio = dir($path);
 	    
-	   echo "Lista de Arquivos do diret—rio '<strong>".$path."</strong>':<br />";   
+	   echo "Lista de Arquivos do diretï¿½rio '<strong>".$path."</strong>':<br />";   
 	   while($arquivo = $diretorio -> read()){
 	      echo $arquivo;
 	   }
