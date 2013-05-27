@@ -163,10 +163,7 @@
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
         var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
         for (var j = 0; j < dateList.length; j++) {
-            if(dmy == dateList[j] && dmy != today) {
-              return [true, ''];
-            }
-            if(dmy == dateList[j] && dmy == today) {
+            if(dmy == dateList[j] && dateList[j] == today) {
               return [true, ''];
             }
         }
