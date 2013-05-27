@@ -130,7 +130,7 @@
 
     <?php
     for($i = 0; $i < count($dateList); $i++){
-      echo "dateList[".$i."] = ".$dateList[$i]."<br>";
+      echo "dateList[".$i."] = ".$dateList[$i].";";
     }
     ?>
     console.log(dateList.length)
