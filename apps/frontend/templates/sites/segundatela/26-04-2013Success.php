@@ -123,6 +123,11 @@
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
+      beforeShowDay:function(){
+        $.each(function(i){
+          console.log('oi'+i)
+        })
+      },
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
