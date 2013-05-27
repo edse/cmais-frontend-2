@@ -105,7 +105,7 @@
         if($programast[0]=="jornaldacultura"){
           $dateJson = explode(".", $programast[3]);
           
-          echo 'dateList['.$i.'] = new Date('.$dateJson[0].','.$programast[2].','.$programast[1].');';
+          echo 'dateList['.$i.'] = "'.$programast[1].','.$programast[2].','.$dateJson[0].'";';
           $i++;
           /*
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
