@@ -94,8 +94,7 @@
         $programast = explode ('-', $programast);
         
         if($programast[0]=="jornaldacultura"){
-          $arrayDate = array(checkdate ( $programast[2],$programast[1], $programast[3]));
-          $arrayDate = natsort($arrayDate);
+          $arrayDate = array($programast[1], $programast[2], $programast[3]);
           
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
@@ -105,10 +104,9 @@
         } 
       }
     }
-    echo natsort($dateList);
+    closedir($handle);
   }
-  echo $dateList[0];
-  echo $dateList[43];
+
   ?>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
@@ -129,14 +127,18 @@
       }
     });
     var dateList = new Array();
-    
 
-    //console.log(dateList);
+    
+    for(var i = 0; i < dates; i++){
+      dateList[i] = <?php $i=0;echo $dateList[$i];$i++;?>
+      console.log(dateList[i])
+    }
+  
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
+      //minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
       beforeShowDay: function(dateToShow){
         return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
       },
@@ -151,11 +153,12 @@
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
     });
-    */
+    
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
       //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
+    */
   });
   </script>
