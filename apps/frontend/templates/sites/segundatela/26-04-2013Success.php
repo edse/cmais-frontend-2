@@ -99,6 +99,7 @@
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
+          echo count($dateJson);
           echo $dateJson[0]. "<br>"; 
         } 
       }
