@@ -160,7 +160,7 @@
     }
     
     function highlightDays(date) {
-        var today = String(<?php echo date("d/m/Y")?>);
+        var today = <?php echo date("d/m/Y")?>;
         console.log(today)
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
         for (var j = 0; j < dateList.length; j++) {
