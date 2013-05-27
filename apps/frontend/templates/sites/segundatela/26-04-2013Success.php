@@ -84,7 +84,7 @@
     <!-- /direita -->
   </div>
 	<?php
-	   $path = "/portal/js/segundatela/log";
+	   $path = "http://cmais.com.br/portal/js/segundatela/log";
 	   $diretorio = dir($path);
 	    
 	   echo "Lista de Arquivos do diret�rio '<strong>".$path."</strong>':<br />";   
