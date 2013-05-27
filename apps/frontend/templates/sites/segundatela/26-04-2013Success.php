@@ -138,7 +138,7 @@
     });
     dateList = dateList.sort();
     console.log(dateList[0]);
-    console.log(dateList[parseInt(dateList.length)]);
+    console.log(dateList[43]);
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
