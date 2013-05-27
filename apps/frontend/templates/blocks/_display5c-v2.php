@@ -3,7 +3,7 @@
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
               <!-- banner promo-->
-              
+              <!--
               <div id="topo-destaque">
                 <img src="/portal/images/hometv/qss/apresentadores.png" alt="Quem Sabe Sabe" />
                 <a class="banner-topo" href="http://tvcultura.cmais.com.br/qss" title="Quem Sabe Sabe"><img src="/portal/images/hometv/qss/logoqss.png" alt="Quem Sabe Sabe" /></a>
@@ -20,7 +20,7 @@
                   </div>
                 </div>
               </div>
-              
+              -->
               <!-- /banner promo-->
               <div class="enunciado">
                 <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>
