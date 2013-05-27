@@ -2,7 +2,7 @@
 if ($handle = opendir('./portal/js/segundatela/log/')) {
   while (false !== ($programast = readdir($handle))) {
     if ($programast != "." && $programast != "..") {
-      explode ('-', $programast);
+      $programast = explode ('-', $programast);
       echo $programast . "</br>";
     }
   }
