@@ -165,9 +165,12 @@
     
     function putZero(number){
       if(number<1){
-        number="0"+number;
+        numberComplete="0"+number;
+        return numberComplete;
+      }else{
+        return number;
       }
-      return number;
+      
     }
     
     function highlightDays(date) {
