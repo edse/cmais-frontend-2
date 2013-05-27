@@ -161,9 +161,9 @@
         console.log(date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear())
         dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
         if ($.inArray(dmy, availableDates) == -1) {
-            return [false, ""];
+            return [true, ""];
         } else {
-            return [true,"","Unavailable"];
+            return [false,"","Unavailable"];
         }
     }
         
