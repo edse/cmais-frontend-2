@@ -43,7 +43,7 @@ if(isset($_GET['program'])){
                 ";
             
           $list = array( "src"       => $av->thumb, 
-                         "label"     => $av->title,
+                         "label"     => $av->subtitle,
                          "titulo"    => $asset->name, 
                          "subtitulo" => $av->subtitle,
                          "descricao" => $av->description, 
@@ -78,7 +78,7 @@ if(isset($_GET['program'])){
         }else{
           if($limit > 0){
             $list = array( "src"       => $av->thumb, 
-                           "label"     => $av->title,
+                           "label"     => $av->subtitle,
                            "titulo"    => $asset->name, 
                            "subtitulo" => $av->subtitle,
                            "descricao" => $av->description, 
