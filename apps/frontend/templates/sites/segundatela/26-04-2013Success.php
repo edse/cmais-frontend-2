@@ -142,9 +142,9 @@
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
       //minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
-      //beforeShowDay: function(dateToShow){
-       // return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
-      //},
+      beforeShowDay: function(dateToShow){
+        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
+      },
       maxDate:"1w",
       onSelect: dateJsonSelected,
       //dateFormat: 'dd-mm-yy',
