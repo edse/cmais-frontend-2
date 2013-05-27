@@ -140,7 +140,7 @@
 .box-padrao #datepicker .ui-state-default { background:transparent; width:40px; height:22px;  text-align:center; display:block; font:bold 12px arial;  border:none;  line-height:24px; margin:0 2px 0px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
-.box-padrao #datepicker .ui-widget-content .ui-state-hover, 
+.box-padrao #datepicker .ui-widget-content .ui-state-hover,  
 .box-padrao #datepicker .ui-widget-header .ui-state-hover, 
 .box-padrao #datepicker .ui-state-focus, 
 .box-padrao #datepicker .ui-widget-content .ui-state-focus, 
