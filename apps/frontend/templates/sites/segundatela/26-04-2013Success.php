@@ -143,7 +143,7 @@
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      minDate: '01-04-2013',
+      minDate: '01-03-2013',
       maxDate:"1w",
       beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
@@ -172,7 +172,7 @@
         //console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
-              return [true, 'select'];
+              return [true, ''];
             }
         }
         return [false, 'not-select'];
