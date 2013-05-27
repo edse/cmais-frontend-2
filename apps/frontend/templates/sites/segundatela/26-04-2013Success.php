@@ -126,9 +126,6 @@
       $.ajax({
         url:"/portal/js/segundatela/log/jornaldacultura-" + date.context.value + ".json",
         dataType: "json",
-        beforeSend:function(){
-          $('#ajax-loader').show()
-        },
         success:function(json){
           window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
           /*
