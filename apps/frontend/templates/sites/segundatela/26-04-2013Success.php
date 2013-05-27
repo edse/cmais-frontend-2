@@ -57,7 +57,7 @@
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
-        <ul class="nav nav-tabs" id="myTab2" >
+        <ul class="nav nav-tabs" id="myTab2" style="margin-bottom: 10px;">
           <li class="active" style="width: 100%" ><a href="#" style="width: 295px; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
@@ -127,23 +127,19 @@
   
   $(function(){ 
     // retrive sent contents by ajax 
-
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
       success:function(json){
         $.each(json, function( key, value ) {
-          //console.log(value)
           contentInfo(value);
         });
       }
     });
-    dateList = dateList.sort();
     
     // Datepicker    
-    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      minDate: '01-04-2013',
+      minDate: '01-03-2013',
       maxDate:"1w",
       beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
@@ -156,8 +152,6 @@
       inline: true
     });
     
-   
-    
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
@@ -166,13 +160,12 @@
     }
     
     function highlightDays(date) {
-        $('.ui-datepicker-next span').val('oi');
+        var today = <?php echo date("d/m/Y")?>;
+        console.log(today)
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        //console.log(dmy);
-        //console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
-              return [true, 'select'];
+              return [true, ''];
             }
         }
         return [false, 'not-select'];
