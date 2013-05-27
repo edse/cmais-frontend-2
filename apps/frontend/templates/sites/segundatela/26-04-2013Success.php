@@ -84,7 +84,15 @@
     </div>
     <!-- /direita -->
   </div>
-  <?php
+
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
+  
+  <script>
+  
+    <?php
   //puxando logs do programa
   $i = 0;
   if ($handle = opendir('./portal/js/segundatela/log/')) {
@@ -94,26 +102,25 @@
         $programast = explode ('-', $programast);
         
         if($programast[0]=="jornaldacultura"){
+          $dateJson = explode(".", $programast[3]);
+          echo 'var dateList = new Array();';
+          echo 'dateList['.$i.'] = new Date('.$dateJson.','.$programast[2].' ,'.$programast[1].' )';
+          /*
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
           
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
           $dateList[$i] = $dateJson[0];
-          $i++;  
+          $i++;
+          */  
         } 
       }
     }
     closedir($handle);
   }
-
   ?>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-
   
-  <script>
   $(function(){ 
     // retrive sent contents by ajax 
     $.ajax({
@@ -126,14 +133,9 @@
         });
       }
     });
-    var dateList = new Array();
-
-    <?php
-    for($i = 0; $i < count($dateList); $i++){
-      echo "dateList[".$i."] = ".$dateList[$i].";";
-    }
-    ?>
+    
     console.log(dateList)
+    
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
