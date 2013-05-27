@@ -164,7 +164,7 @@
         var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
         for (var j = 0; j < dateList.length; j++) {
             if(dmy == dateList[j] || dateList[j] == today) {
-              return [true, ''];
+              return [true, 'select'];
             }
         }
         return [false, 'not-select'];
