@@ -99,7 +99,7 @@
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
-          //echo $dateJson[0] . "<br>"; 
+          echo $dateJson . "<br>"; 
         } 
       }
     }
@@ -120,11 +120,15 @@
       }
     });
     var dateList = new Array();
-    dateList.push(<?php echo $dateJson?>);
-
     
-
-
+    <?php 
+    echo count($dateJson);
+    for($i=0;$i<count($dateJson);$i++){
+      echo 'dateList.push('.$dateJson[$i].')';
+    }
+    ?>
+    console.log(dateList);
+    /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
@@ -132,6 +136,7 @@
       beforeShowDay: function(dateToShow){
         return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
       },
+      maxDate:"2y",
       onSelect: dateJsonSelected,
       //dateFormat: 'dd-mm-yy',
       //altFormat: 'dd-mm-yy',
@@ -142,14 +147,7 @@
       monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
       inline: true
     });
-    
-    function calendarOnLoad(){
-      $("ui-datepicker-calendar td").each(function(i){
-        i++;
-        console.log(i);
-      });
-    }
-
+    */
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
