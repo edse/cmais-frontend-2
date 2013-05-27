@@ -133,7 +133,7 @@
       echo "dateList[".$i."] = ".$dateList[$i].";";
     }
     ?>
-    console.log(dateList.length)
+    console.log(dateList)
     /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
