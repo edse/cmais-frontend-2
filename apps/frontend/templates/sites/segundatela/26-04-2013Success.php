@@ -161,15 +161,10 @@
     
     function highlightDays(date) {
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        for (var j = 0; j < dateList.length; j++) {
-            if (dmy == dateList[j]) {
-              return [true, ''];
-            }
-        }
         var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
         for (var j = 0; j < dateList.length; j++) {
-            if (today == dateList[j]) {
-              return [true, 'select'];
+            if (dmy == dateList[j] && dmy != today) {
+              return [true, ''];
             }
         }
         return [false, 'not-select'];
