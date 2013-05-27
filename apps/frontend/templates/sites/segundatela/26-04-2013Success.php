@@ -166,9 +166,10 @@
     
     function highlightDays(date) {
         var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
-        var availableDates = ["28-4-2013","29-4-2013"];
-        for (var j = 0; j < 1; j++) {
-            if (dmy == availableDates[j]) {
+        var availableDates = new Array;
+        
+        for (var j = 0; j < dateList.length; j++) {
+            if (dmy == dateList[j]) {
                 return [true, 'select'];
             }
         }
