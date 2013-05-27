@@ -128,7 +128,8 @@
 .box-padrao #datepicker .ui-widget-content { background:none; border:none; }
 .box-padrao #datepicker .ui-widget-header { background:none; border:none; width:190px; margin-left:61px; }
 .box-padrao #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/seta-calendario.png) no-repeat; height:12px; width:12px; }
-.box-padrao #datepicker .ui-datepicker-next .ui-icon { background-position:0 -12px; } 
+.box-padrao #datepicker .ui-datepicker-next .ui-icon,
+.box-padrao #datepicker .ui-datepicker-prev .ui-icon { background-position:0 -12px;width: 13px;display: block;} 
 .box-padrao #datepicker table { width:310px; margin-top:0px; }
 .box-padrao #datepicker caption,
 .box-padrao #datepicker th {  text-align:center; width:35px; float:left; }
