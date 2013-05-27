@@ -1,5 +1,5 @@
 <?php
-if ($handle = opendir('./portal/')) {
+if ($handle = opendir('./portal/js/')) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
             echo "$entry\n";
