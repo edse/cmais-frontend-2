@@ -122,10 +122,10 @@
     var dateList = new Array();
     
     <?php 
-    echo count($dateJson);
-    //for($i=0;$i<count($dateJson);$i++){
-      //echo 'dateList.push('.$dateJson[$i].')'; 
-    //}
+    //echo count($dateJson);
+    for($i=0;$i<count($dateJson);$i++){
+      echo 'dateList.push('.$dateJson[$i].')'; 
+    }
     ?>
     console.log(dateList);
     /*
