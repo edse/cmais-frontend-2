@@ -164,7 +164,10 @@
    
     
     function putZero(number){
-      console.log(number.length);
+      if(number<1){
+        number="0"+number;
+      }
+      return number;
     }
     
     function highlightDays(date) {
