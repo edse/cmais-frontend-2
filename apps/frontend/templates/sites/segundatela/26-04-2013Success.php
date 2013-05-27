@@ -154,7 +154,8 @@
       next:"a",
       inline: true
     });
-    
+    $('.ui-icon.ui-icon-circle-triangle-w').val(" ");
+    $('.ui-icon.ui-icon-circle-triangle-e').val(" ");
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
