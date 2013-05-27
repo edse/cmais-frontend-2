@@ -93,6 +93,7 @@
   <script>
   
     <?php
+  
   //puxando logs do programa
   $i = 0;
   echo 'var dateList = new Array();';
@@ -115,12 +116,13 @@
           
           $dateList[$i] = $dateJson[0];
           $i++;
-          */  
+           */
         } 
       }
     }
     closedir($handle);
   }
+  
   ?>
   
   $(function(){ 
@@ -143,19 +145,27 @@
     $('#datepicker').datepicker({
       minDate: '01-04-2013',
       maxDate:"1w",
+      beforeShowDay: unavailable,
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
       dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-      dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-      prev:"a",
-      next:"a",
       inline: true
     });
-    $('.ui-icon.ui-icon-circle-triangle-w').val(" ");
-    $('.ui-icon.ui-icon-circle-triangle-e').val(" ");
+    
+    var availableDates = ["23-5-2013","24-5-2013"];
+    
+    function unavailable(date) {
+        dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+        if ($.inArray(dmy, availableDates) == -1) {
+            return [false, ""];
+        } else {
+            return [true,"","Unavailable"];
+        }
+    }
+        
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
