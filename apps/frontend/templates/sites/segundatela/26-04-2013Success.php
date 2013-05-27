@@ -89,7 +89,13 @@
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
-  
+  <style type="text/css">
+    td.specialDay, table.ui-datepicker-calendar tbody td.specialDay a { 
+    background: none !important;
+    background-color: yellow !important; 
+    color: red;
+    }
+  </style>
   <script>
   
     <?php
@@ -145,7 +151,7 @@
     $('#datepicker').datepicker({
       minDate: '01-04-2013',
       maxDate:"1w",
-      beforeShowDay: available,
+      beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
@@ -157,15 +163,14 @@
     
     var availableDates = ["28-4-2013","29-4-2013"];
     
-    function available(date) {
-        console.log(date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear())
-        console.log()
-        dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
-        if ($.inArray(dmy, availableDates) == 1) {
-            return [true, ""];
-        } else {
-            return [false,""];
+    var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+    function highlightDays(date) {
+        for (var i = 0; i < dates.length; i++) {
+            if (dmy == avaiblesDates[i]) {
+                return [true, 'specialDay'];
+            }
         }
+        return [true, ''];
     }
         
     function dateJsonSelected(){
