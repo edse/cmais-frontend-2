@@ -180,7 +180,8 @@
 @media screen and (max-width: 1024px){
   /*.accordion-body iframe {  min-height:515px; }*/
  #myTab2{width:42%}
- .box-padrao{float:left;margin-left:30px;}
+ #myTab{width:295px;}
+ .box-padrao{float:left;margin-right:30px;}
  
 }
 
