@@ -179,6 +179,11 @@
 /*medias */
 @media screen and (max-width: 1024px){
   /*.accordion-body iframe {  min-height:515px; }*/
+ #myTab2{width:42%}
+ #myTab{width:295px;float:left;}
+ .box-padrao{float:left;margin-right:30px;}
+ .tab-content{float:left;}
+ 
 }
 
 @media screen and (max-width: 480px){

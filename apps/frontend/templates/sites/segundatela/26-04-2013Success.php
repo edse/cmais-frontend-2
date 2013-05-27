@@ -127,26 +127,23 @@
   
   $(function(){ 
     // retrive sent contents by ajax 
-
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
       success:function(json){
         $.each(json, function( key, value ) {
-          //console.log(value)
           contentInfo(value);
         });
       }
     });
-    dateList = dateList.sort();
     
     // Datepicker    
-    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
       minDate: '01-03-2013',
       maxDate:"1w",
       beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
+      onLoad: todayIs,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
@@ -156,8 +153,6 @@
       inline: true
     });
     
-   
-    
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
@@ -165,11 +160,13 @@
       return number;
     }
     
+    function todayIs(today){
+      var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
+      console.log(today);
+    }
     function highlightDays(date) {
-        $('.ui-datepicker-next span').val('oi');
+        
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        //console.log(dmy);
-        //console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
               return [true, ''];
