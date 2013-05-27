@@ -110,6 +110,7 @@
     closedir($handle);
   }
   ?>
+  
   <script>
   $(function(){ 
     // retrive sent contents by ajax 
