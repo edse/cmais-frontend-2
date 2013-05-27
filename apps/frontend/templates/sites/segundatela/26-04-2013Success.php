@@ -135,7 +135,7 @@
       }
     });
     
-    console.log(dateList)
+    console.log(dateList[0])
     
     /*
     // Datepicker    
