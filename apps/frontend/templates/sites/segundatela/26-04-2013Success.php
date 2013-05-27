@@ -58,7 +58,7 @@
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
         <ul class="nav nav-tabs" id="myTab2" >
-          <li class="active" style="width: 100%" ><a href="#" style="width: 100%; border: dashed 1px #FFF; margin:0 0 6px 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
+          <li class="active" style="width: 100%" ><a href="#" style="width: 100%; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -151,8 +151,6 @@
       altFormat: 'dd-mm-yy',
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-      nextText:" ",
-      prevText:" ",
       inline: true
     });
     
