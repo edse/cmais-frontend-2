@@ -167,7 +167,7 @@
     function highlightDays(date) {
         var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
         console.log(dmy);
-        console.log(datelist);
+        console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
             if (dmy == dateList[j]) {
                 return [true, 'select'];
