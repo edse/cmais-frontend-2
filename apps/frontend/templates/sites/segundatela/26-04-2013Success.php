@@ -89,19 +89,6 @@
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
-  <style type="text/css">
-    td.select, table.ui-datepicker-calendar tbody td.select a { 
-      background: none!important;
-      background-color: yellow!important; 
-      color: red!important;
-    }
-    td.not-select, table.ui-datepicker-calendar tbody td.not-select a { 
-      background: none!important;
-      background-color: blue!important; 
-      color: black!important;
-    }
-    
-  </style>
   <script>
   
     <?php
