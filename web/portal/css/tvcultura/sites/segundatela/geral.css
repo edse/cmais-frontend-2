@@ -152,7 +152,7 @@
 .box-padrao #datepicker tbody a:hover {background:#333; color:#fff;}
 .box-padrao #datepicker td.select, table.ui-datepicker-calendar tbody td.select a { background: none!important;background-color: yellow!important; color: red!important;}
 .box-padrao #datepicker td.not-select, table.ui-datepicker-calendar tbody td.not-select a { background: none!important;background-color: blue!important; color: black!important;}
-.box-padrao #datepicker #myTab2 {margin-bottom: 10px !important;}
+
 /**** /datepicker ****/
 
 /* clock */

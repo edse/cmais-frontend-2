@@ -57,7 +57,7 @@
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
-        <ul class="nav nav-tabs" id="myTab2" >
+        <ul class="nav nav-tabs" id="myTab2" style="margin-bottom: 10px;">
           <li class="active" style="width: 100%" ><a href="#" style="width: 295px; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
