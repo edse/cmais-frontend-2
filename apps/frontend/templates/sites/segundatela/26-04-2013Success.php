@@ -102,7 +102,9 @@
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
-          echo $i. - "-" - $dateList[$i] = $dateJson[0] . "<br>";
+          $dateList[$i] = $dateJson[0];
+          echo $i. "<br>";
+          echo $dateList . "<br>";
           $i++;  
         } 
       }
