@@ -57,8 +57,8 @@
       <!-- CALENDARIO -->
       <div class="box-padrao grid1">
         <h2>Arquivo</h2>
-        <ul class="nav nav-tabs" id="myTab2" >
-          <li class="active" style="width: 100%; border: none; margin:0 0 6px 0;"><a href="#">Navegue pelo calendário</a></li>
+        <ul class="nav nav-tabs" id="myTab2" style="margin-bottom: 10px;">
+          <li class="active" style="width: 100%" ><a href="#" style="width: 295px; border: none; margin:0 0 0 0; text-align: left; padding: 0 0 0 11px;">Navegue pelo calendário</a></li>
         </ul>  
         <div id="datepicker"></div>
       </div>
@@ -84,9 +84,18 @@
     </div>
     <!-- /direita -->
   </div>
-  <?php
+
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
+  <script>
+  
+    <?php
+  
   //puxando logs do programa
   $i = 0;
+  echo 'var dateList = new Array();';
   if ($handle = opendir('./portal/js/segundatela/log/')) {
     while (false !== ($programast = readdir($handle))) {
       
@@ -94,30 +103,31 @@
         $programast = explode ('-', $programast);
         
         if($programast[0]=="jornaldacultura"){
-          $arrayDate = array(checkdate ( $programast[2],$programast[1], $programast[3]));
-          $arrayDate = natsort($arrayDate);
+          $dateJson = explode(".", $programast[3]);
+          
+          //criando variavel para o javascript
+          echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
+          $i++;
+          /*
+          $arrayDate = array($programast[1], $programast[2], $programast[3]);
           
           $dateJson = implode("-", $arrayDate);
           $dateJson = explode(".", $dateJson);
           
           $dateList[$i] = $dateJson[0];
-          $i++;  
+          $i++;
+           */
         } 
       }
     }
-    echo natsort($dateList);
+    closedir($handle);
   }
-  echo $dateList[0];
-  echo $dateList[43];
-  ?>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-
   
-  <script>
+  ?>
+  
   $(function(){ 
     // retrive sent contents by ajax 
+
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
       dataType: "json",
@@ -128,34 +138,51 @@
         });
       }
     });
-    var dateList = new Array();
+    dateList = dateList.sort();
     
-
-    //console.log(dateList);
-    /*
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
-      beforeShowDay: function(dateToShow){
-        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
-      },
-      maxDate:"2y",
+      minDate: '01-03-2013',
+      maxDate:"1w",
+      beforeShowDay: highlightDays,
       onSelect: dateJsonSelected,
-      //dateFormat: 'dd-mm-yy',
-      //altFormat: 'dd-mm-yy',
-      dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+      dateFormat: 'dd-mm-yy',
+      altFormat: 'dd-mm-yy',
       dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-      dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-      monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+      nextText:" ",
+      prevText:" ",
       inline: true
     });
-    */
+    
+   
+    
+    function putZero(number){
+      if(number.length<=1){
+        number="0"+number;
+      }
+      return number;
+    }
+    
+    function highlightDays(date) {
+        $('.ui-datepicker-next span').val('oi');
+        var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
+        //console.log(dmy);
+        //console.log(dateList);
+        for (var j = 0; j < dateList.length; j++) {
+            if (dmy == dateList[j]) {
+              return [true, ''];
+            }
+        }
+        return [false, 'not-select'];
+    }
+        
     function dateJsonSelected(){
       date = $(this);
       console.log(date.context.value);
       //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
+    
   });
   </script>

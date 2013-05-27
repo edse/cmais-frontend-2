@@ -120,7 +120,7 @@
 
 /**** datepicker ****/
 .box-padrao #datepicker .ui-widget { width:310px; }
-.box-padrao #datepicker .ui-datepicker-title { width:146px; float:left; margin:0 20px; text-align:center; }
+.box-padrao #datepicker .ui-datepicker-title { width:164px; float:left; margin: -3px 0 0 0; text-align:center; }
 .box-padrao #datepicker .ui-datepicker-title span { font:bold 16px arial; color:#333; }
 .box-padrao #datepicker .ui-corner-all { float:left; }
 .box-padrao #datepicker .ui-datepicker-next { float:right; }
@@ -128,27 +128,31 @@
 .box-padrao #datepicker .ui-widget-content { background:none; border:none; }
 .box-padrao #datepicker .ui-widget-header { background:none; border:none; width:190px; margin-left:61px; }
 .box-padrao #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/seta-calendario.png) no-repeat; height:12px; width:12px; }
-.box-padrao #datepicker .ui-datepicker-next .ui-icon { background-position:0 -12px; } 
+.box-padrao #datepicker .ui-datepicker-next .ui-icon { background-position:0 -12px;width: 13px;display: block;} 
+.box-padrao #datepicker .ui-datepicker-prev .ui-icon { background-position:0 0px;width: 13px;display: block;} 
 .box-padrao #datepicker table { width:310px; margin-top:0px; }
 .box-padrao #datepicker caption,
-.box-padrao #datepicker th {  text-align:center; width:35px; float:left; }
+.box-padrao #datepicker th {  text-align:center; width:42px; float:left; }
 .box-padrao #datepicker tr { width:310px; }
 .box-padrao #datepicker table thead { width:310px; }
 .box-padrao #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
-.box-padrao #datepicker tbody { margin-top:10px; width:310px; float:left; }
-.box-padrao #datepicker .ui-state-default { background:transparent; width:35px; height:22px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:24px; margin:0 2px 0px 0; }  
+.box-padrao #datepicker tbody { margin-top:10px; margin-bottom:30px; width:310px; float:left; }
+.box-padrao #datepicker .ui-state-default { background:transparent; width:40px; height:22px;  text-align:center; display:block; font:bold 12px arial;  border:none;  line-height:24px; margin:0 2px 0px 0; }  
 .box-padrao #datepicker .ui-widget-content .ui-state-active,
 .box-padrao #datepicker .ui-state-hover, 
-.box-padrao #datepicker .ui-widget-content .ui-state-hover, 
+.box-padrao #datepicker .ui-widget-content .ui-state-hover,  
 .box-padrao #datepicker .ui-widget-header .ui-state-hover, 
 .box-padrao #datepicker .ui-state-focus, 
 .box-padrao #datepicker .ui-widget-content .ui-state-focus, 
 .box-padrao #datepicker .ui-widget-header .ui-state-focus { background:#333; color:#fff; text-decoration:none; }
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-next:hover,
 .box-padrao #datepicker .ui-widget-content .ui-datepicker-prev:hover { background:none;  border:none; }
-.box-padrao #datepicker tbody span { background:transparent; color:#333;}
+.box-padrao #datepicker tbody span { background:transparent; }
 .box-padrao #datepicker tbody a { background:#fff; color:#333; text-decoration:none; }
 .box-padrao #datepicker tbody a:hover {background:#333; color:#fff;}
+.box-padrao #datepicker td.select, table.ui-datepicker-calendar tbody td.select a { color: #333!important;}
+.box-padrao #datepicker td.not-select, table.ui-datepicker-calendar tbody td.not-select a { background: none!important;background-color: #FFF!important; color: #b7b7b7!important;cursor: default!important;}
+
 /**** /datepicker ****/
 
 /* clock */
