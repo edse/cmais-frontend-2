@@ -124,34 +124,9 @@
     <?php 
     //echo count($dateJson);
     for($i=0;$i<count($dateJson);$i++){
-      echo 'dateList.push('.$dateJson[$i].')'; 
+      echo 'dateList['.$i.']'.$dateJson[$i].')'; 
     }
     ?>
-    console.log(dateList);
-    /*
-    // Datepicker    
-    //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    $('#datepicker').datepicker({
-      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
-      beforeShowDay: function(dateToShow){
-        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), ""]; 
-      },
-      maxDate:"2y",
-      onSelect: dateJsonSelected,
-      //dateFormat: 'dd-mm-yy',
-      //altFormat: 'dd-mm-yy',
-      dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
-      dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-      dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-      monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-      monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
-      inline: true
-    });
-    */
-    function dateJsonSelected(){
-      date = $(this);
-      console.log(date.context.value);
-      //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
-    }
+
   });
   </script>
