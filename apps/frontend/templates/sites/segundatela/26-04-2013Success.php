@@ -143,7 +143,7 @@
     $('#datepicker').datepicker({
       //minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
       beforeShowDay: function(dateToShow){
-        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateToShow),dateList) >= 0), "true"]; 
+        return [($.inArray($.datepicker.formatDate('dd-mm-yy', dateList),dateList) >= 0), "true"]; 
       },
       maxDate:"1w",
       onSelect: dateJsonSelected,
