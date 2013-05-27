@@ -165,8 +165,8 @@
     
     var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
     function highlightDays(date) {
-        for (var i = 0; i < availableDates.length; i++) {
-            if (dmy == avaiblesDates[i]) {
+        for (var j = 0; j < availableDates.length; j++) {
+            if (dmy == availableDates[j]) {
                 return [true, 'specialDay'];
             }
         }
