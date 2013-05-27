@@ -119,6 +119,7 @@
 .accordion-body p img {  max-width: 50% !important;  height: auto !important;  width: auto !important;}
 
 /**** datepicker ****/
+.fb-comments{max-width: 980px;}
 .box-padrao #datepicker .ui-widget { width:310px; }
 .box-padrao #datepicker .ui-datepicker-title { width:164px; float:left; margin: -3px 0 0 0; text-align:center; }
 .box-padrao #datepicker .ui-datepicker-title span { font:bold 16px arial; color:#333; }
