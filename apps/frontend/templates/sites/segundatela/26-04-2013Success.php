@@ -106,7 +106,7 @@
         if($programast[0]=="jornaldacultura"){
           $dateJson = explode(".", $programast[3]);
           
-          echo 'dateList['.$i.'] = "'.$programast[1].','.$programast[2].','.$dateJson[0].'";';
+          echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
           $i++;
           /*
           $arrayDate = array($programast[1], $programast[2], $programast[3]);
@@ -145,7 +145,7 @@
     $('#datepicker').datepicker({
       minDate: '01-04-2013',
       maxDate:"1w",
-      beforeShowDay: unavailable,
+      beforeShowDay: available,
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
       altFormat: 'dd-mm-yy',
@@ -157,7 +157,8 @@
     
     var availableDates = ["23-05-2013","24-05-2013"];
     
-    function unavailable(date) {
+    function available(date) {
+        console.log(date.getDate())
         dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
         if ($.inArray(dmy, availableDates) == -1) {
             return [false, ""];
