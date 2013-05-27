@@ -163,9 +163,15 @@
     
    
     
+    function putZero(number){
+      if(number.length < 1){
+        var number = parseInt("0" + number);
+        return number
+      }
+    }
     
     function highlightDays(date) {
-        var dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+        var dmy = putZero(date.getDate()) + "-" + (putZero(date.getMonth()+1)) + "-" + date.getFullYear();
         console.log(dmy);
         console.log(dateList);
         for (var j = 0; j < dateList.length; j++) {
