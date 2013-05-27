@@ -85,7 +85,7 @@
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                      <p class="aviso">Sua mensagem não pôde ser enviada.</p>
                       <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
                     </div>
                     <hr />
@@ -107,9 +107,13 @@
                     <label>idade</label>
                     <input type="text" maxlength="2" name="idade" id="idade" />
                   </div>
-                  <div class="linha t3">
+                  <div class="linha t4" style="width:490px">
                     <label>email</label>
-                    <input type="text" name="email" id="email" />
+                    <input type="text" name="email" id="email" style="width: 475px" />
+                  </div>
+                  <div class="linha t6">
+                    <label>telefone</label>
+                    <input type="text" name="telefone" id="telefone" style="width: 140px" />
                   </div>
                   <div class="linha t1">
                     <label>cidade</label>
@@ -150,7 +154,7 @@
                   </select>
                   </div>
                   <div class="linha t3">
-                    <label>URL do vídeo</label>
+                    <label>URL do ví­deo</label>
                     <input type="text" name="urldovideo" id="urldovideo" />
                   </div>
                   
@@ -160,7 +164,7 @@
                     <select style="width:150px;" id="assunto" name="assunto" class="required">
                       <option value="">- Selecione -</option>
                       <option value="Elogio">Elogio</option>
-                      <option value="Crítica">Crítica</option>
+                      <option value="Crí­tica">Crítica</option>
                       <option value="Comentário">Comentário</option>
                       <option value="Sugestão">Sugestão</option>
                       <option value="Pedido de Informação">Pedido de Informação</option>
@@ -222,8 +226,13 @@
     <!-- / CAPA SITE -->
 
     <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="/portal/js/jquery.maskedinput.js"></script>
+    
     <script type="text/javascript">
       $(document).ready(function(){
+        
+        $("#telefone").mask("(99) 99999999?9");
+        
         $('input#enviar').click(function(){
           $(".msgAcerto, .msgErro").hide();
         });
@@ -264,6 +273,9 @@
               required: true,
               email: true
             },
+            telefone:{
+              required: true
+            },
             cidade:{
               required: true,
               minlength: 3
@@ -289,6 +301,7 @@
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            telefone: "Este campo &eacute; Obrigat&oacute;rio",
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
