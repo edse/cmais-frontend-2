@@ -141,7 +141,7 @@
     // Datepicker    
     //$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     $('#datepicker').datepicker({
-      minDate: $.datepicker.parseDate('dd-mm-yy', dateList[0]), 
+      minDate: '01-04-2013',
       maxDate:"1w",
       onSelect: dateJsonSelected,
       dateFormat: 'dd-mm-yy',
