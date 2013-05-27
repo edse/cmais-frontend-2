@@ -124,16 +124,16 @@ $(document).ready(function() {
       c = 'icon-map-marker';
     if(data.type == 'poll')
       c = 'icon-enquete';
-    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-    html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
+    var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.uid+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
+    html += '<div id="id'+data.uid+'" class="accordion-body collapse"><div class="accordion-inner">';
     html += "";
     html += '</div></div></div>';
     $('#accordion2').prepend(html);
     if(!json)
       document.getElementById('audio-ping').play();
     //console.log(data.url);
-    $('#id'+data.handler).load(data.url, function(){
-      $('#id'+data.handler+'.accordion-body iframe').each(function(i){
+    $('#id'+data.uid).load(data.url, function(){
+      $('#id'+data.uid+'.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf("youtube") != -1){
           cont++;
           //console.log(cont);
@@ -188,8 +188,8 @@ $(document).ready(function() {
         dataType: 'json',
         success:function(json){
           add = false;
-          if(json.handler){
-            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.handler){
+          if(json.uid){
+            if($('#accordion2 .accordion-group:first').find('.collapse').attr("id")!="id"+json.uid){
               add = true;
             }
           }
