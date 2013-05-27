@@ -8,7 +8,7 @@ if ($handle = opendir('./portal/js/segundatela/log/')) {
         $arrayDate = array($programast[1], $programast[2], $programast[3]);
         $dateJson = implode("-", $arrayDate);
         $dateJson = explode(".", $dateJson);
-        echo $dateJson . "<br>"; 
+        echo $dateJson[0] . "<br>"; 
       } 
     }
   }
