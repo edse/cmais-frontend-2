@@ -52,11 +52,28 @@ class ajaxActions extends sfActions
               ->orderBy('s.date_start asc')
               ->execute();
           }
+          /*
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
               if(substr($d,0,1) == "0")
                 $d = substr($s->date_start, 9,1);
+              if(!in_array(array('day'=> $d), $output['days'])) {
+                $output['days'][] = array('day'=> $d);
+              }
+            }
+          }
+          */
+          if(count($schedules)>0) {
+            foreach($schedules as $s) {
+              //$d = substr($s->date_start, 8,2);
+              $objDate = new DateTime(substr($s->date_start,0,10));
+              if ( (substr($s->date_start,11) >= "00:00:00") && (substr($s->date_start,11) <= "05:29:29") ) {
+                $objDate = $objDate->sub(date_interval_create_from_date_string('1 days'));
+              }
+              $d = $objDate->format("d");
+              if(substr($d,0,1) == "0")
+                $d = substr($d, 1,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
