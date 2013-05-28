@@ -110,15 +110,6 @@
           //criando variavel para o javascript
           echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
           $i++;
-          /*
-          $arrayDate = array($programast[1], $programast[2], $programast[3]);
-          
-          $dateJson = implode("-", $arrayDate);
-          $dateJson = explode(".", $dateJson);
-          
-          $dateList[$i] = $dateJson[0];
-          $i++;
-           */
         } 
       }
     }
