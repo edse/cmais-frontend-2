@@ -36,15 +36,11 @@ $(document).ready(function() {
       /*lista destaque small*/
      $('.destaques-small li').each(function(i){
        el = $(this);
-       
-      
        if(i%6==0){
          $(el).css('margin-left', '0');
-         console.log(i + " dividiu")
          i = 0;
        }else{
          i++;
-         console.log(i);
        }
      });
      /*
