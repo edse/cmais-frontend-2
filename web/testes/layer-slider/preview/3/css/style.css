@@ -1,0 +1,243 @@
+html { height: 100%; }
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background: #FFFFFF;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #515151;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#top {
+	height: 100px;
+	text-align: center;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+#top .logo {
+	margin: 0 auto;
+	padding: 25px 0px 15px 0px;
+}
+
+#content {
+	width: 100%;
+	max-width: 960px;
+	margin: 50px auto 0 auto;
+}
+
+#slider {
+	display: inline-block;
+	width: 100%;
+}
+
+#slider img {
+	display: inline-block;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Icon Columns
+/*-----------------------------------------------------------------------------------*/
+
+.mpc-icon-columns {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.mpc-icon-columns .mpc-icon-column {
+	padding: 20px 0px 34px 0px;
+	display: inline-block;
+	float: left;	
+	border-left: 1px solid #DDD;
+	background: #ffffff;
+	text-align: center;
+	font-size: 12px;
+}
+
+.mpc-icon-columns .mpc-icon-column:first-child {
+	border: none;
+}
+
+.mpc-icon-columns .mpc-icon-column .mpc-icon {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mpc-icon-columns h4 {
+	font-weight: lighter;
+	font-size: 24px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.mpc-icon-column p {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.mpc-icon-column .gentle-deco-line {
+	position: relative;
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background: #ff3c10;
+	margin: 0;
+	bottom: -27px;
+}
+
+.mpc-column-text {
+	display: block;
+	padding: 0px 28px;
+}
+
+
+.icon-columns-6 .mpc-icon-column { width: 16.5%; }
+.icon-columns-5 .mpc-icon-column { width: 19.9%; }
+.icon-columns-4 .mpc-icon-column { width: 24.9%; }
+.icon-columns-3 .mpc-icon-column { width: 33%; }
+.icon-columns-2 .mpc-icon-column { width: 49.9%; }
+.icon-columns-1 .mpc-icon-column { width: 100%; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	Heading
+/*-----------------------------------------------------------------------------------*/
+
+h2.mpc-home-header {
+	text-align: center;
+	font-size: 42px;
+	line-height: 44px;
+	margin-top: 29px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+
+h4.mpc-home-header {
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 0px;
+	margin-bottom: 43px;
+}
+
+h4 { 
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Features
+/*-----------------------------------------------------------------------------------*/
+
+.mpc-features { 
+	overflow: visible;
+	margin-top: 45px;
+	margin-left: 20px;
+	height: 1040px;
+}
+
+.mpc-features .mpc-feature {
+	float: left;
+	display: inline-block;
+	width: 32.3%;
+	position: relative;
+	z-index: 0;
+}
+
+.mpc-features .mpc-feature.last-feature { z-index: 1; }
+
+.mpc-features .mpc-feature .mpc-icon {
+	margin-left: -15px;
+}
+
+.mpc-features .mpc-feature h4 { 
+	text-align: center;
+	margin-top: 25px;
+}
+
+.mpc-features .mpc-feature .mpc-column-text {
+	text-align: center;
+	margin: 10px 0px 35px 0px;
+	font-size: 12px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Footer
+/*-----------------------------------------------------------------------------------*/
+
+#footer {
+	width: 100%;
+	height: 30px;
+	background: #F9F9F9;
+	border-top: 1px solid #DDD;
+	position: relative;
+	clear: both;
+	text-align: center;
+}
+
+#footer .mpc-copy {
+	font-size: 12px;
+	display: inline-block;
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	top: 4px;
+}
+
+#footer .mpc-image {
+ font-size: 12px;
+ display: inline-block;
+ width: 960px;
+ margin: 0 auto;
+ text-align: right;
+ position: relative;
+ top: -19px;
+}
+
+#footer .mpc-image a {
+ text-decoration: none;
+ color: #A85262;
+}
+
+#footer .mpc-image a:hover {
+ text-decoration: none;
+ color: #515151;
+}
+
+#wrapper { overflow: hidden; }
+
+@media (max-width: 870px ) {
+	.icon-columns-4 .mpc-icon-column { width: 49%; }
+	.mpc-features .mpc-feature { width: 49%; }
+	.mpc-features .mpc-feature .mpc-icon { margin-left: 30px; }
+}
+
+@media (max-width: 770px ) { 
+	.mpc-features .mpc-feature { width: 100%; text-align: center; }
+	.mpc-features .mpc-feature .mpc-icon { margin-left: 10px; }
+}
+
+@media (max-width: 450px ) {
+	.icon-columns-4 .mpc-icon-column { width: 100%; }
+	.mpc-features { margin-left: 0px; }
+	.mpc-features .mpc-feature { width: 100%; }
+	h2.mpc-home-header { display: none; }
+	h4.mpc-home-header { display: none; }
+	
+	.mpc-features .mpc-feature .mpc-icon { margin-left: 5px; }
+
+}
