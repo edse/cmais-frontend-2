@@ -5,7 +5,7 @@
 // CARREGA AS TELAS SECUNDÁRIAS
 add_stage_load_path("busca", "busca.js");
 add_stage_load_path("sobre", "sobre.js");
-add_stage_load_path("como_funciona", "como_funciona.js");
+//add_stage_load_path("como_funciona", "como_funciona.js");
 
 extend = function(destination, source) {
   for (var property in source)
@@ -168,7 +168,7 @@ destaque_home.create = function(){
     this.image = new gimage({ width:1280, height:720, translate:[200,130,0]}),
     this.background = 
         new gbox  ({width: 1280,height: 130, translate: [200,-165,0.1],  color: [0,0,0,180]}),
-        new gbox  ({width: 300, height: 40,  translate: [-270,-125,0.1], color: [255,150,0,255]}),
+        new gbox  ({width: 300, height: 40,  translate: [-270,-125,0.1], color: COLOR_ORANGE}),
     this.titulo =    new gtext ({width: 300, translate: [-265,-125,0.2], color: [0,0,0,255],       align: LEFT}),
     this.subtitulo = new gtext ({width: 900, translate: [30,-168,0.2], color: [255,255,255,255], align: LEFT, font_size: 28}),
     this.descricao = new gtext ({width: 1200,translate: [180,-205,0.2],  color: [255,255,255,255], align: LEFT, font_size: 24}),
@@ -424,8 +424,8 @@ message2.set_data = function (text) {
 //CARREGA JSON DE UM PROGRAMA SELECIONADO
 function carrega_json_programa (programa){
   //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program_id=21";//+programa;
-  var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program_id="+programa;
-  //var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program_id="+programa;
+  //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program_id="+programa;
+  var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program_id="+programa;
   //var url_json_programa = "http://192.168.0.100/sdkapp/video_list.json";
   var json_request1 = {};
    json_request1.request = function(param) {
@@ -484,9 +484,9 @@ function carrega_json_programa (programa){
 }
 
 //CRIAÇÃO DAS CORES DO MENU
-const COLOR_GRAY   = [64,64,64,255];
 const COLOR_BLACK  = [0,0,0,255];
-const COLOR_ORANGE = [243,152,0,255];
+const COLOR_GRAY   = [102,102,102,255];
+const COLOR_ORANGE = [255,103,51,255];
 
 //FUNÇÃO PARA CRIAR OS ITENS DO MENU
 function list_item (param) {
@@ -537,11 +537,11 @@ list_item.prototype.effect = function(obj, count) {
 };
 list_item.prototype.enter_focus = function(){
   if(list.pos_item_ativado == list.cindex){
-    this.frame.color = [255,0,0,255];
+    this.frame.color = COLOR_GRAY;
     this.frame.visible_p = true;
-    this.label.color = [0,0,0,255];
+    this.label.color = [255,255,255,255];
   }else{
-    this.frame.color = [255,255,0,255];
+    this.frame.color = [255,255,255,255];
     this.frame.visible_p = true;
     this.label.color = [0,0,0,255];
   }  
@@ -857,7 +857,9 @@ btn_cont_mask.create = function() {
 };
 
 //URL DO JSON DOS PROGRAMAS E ACTION INCIAL
-const URL_JSON_PROGRAMAS = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program=all";
+//const URL_JSON_PROGRAMAS = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program=all";
+const URL_JSON_PROGRAMAS = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program=all";
+
 var json_request = {};
 json_request.request = function(param) {
   var ret = null;
@@ -1002,11 +1004,11 @@ var video_cont = new container({translate: [200,130,1],visible_p: false,componen
 //FOOTER DA APLICAÇÃO
 var footer = new container({});
 footer.components = [
-  new gbox  ({translate: [-60, -480, 0],width: 30,height: 30,color: [255,0,0,255]}),     
+  new gbox  ({translate: [-60, -480, 0],width: 30,height: 30,   color: [235,101,74,255]}),     
   new gtext ({translate: [5,   -480, 1],width: 80,text: "Busca",color: [255, 255, 255, 255],align: LEFT}),
-  new gbox  ({translate: [85,  -480, 0],width: 30,height: 30,color: [0,255,0,255]}),
-  new gtext ({translate: [150, -480, 0],width: 80,text: "Info",color: [255, 255, 255, 255],align: LEFT}),
-  new gbox  ({translate: [215, -480, 0],width: 30,height: 30,color: [240,255,0,255]}),
+  new gbox  ({translate: [85,  -480, 0],width: 30,height: 30,   color: [61,175,141,255]}),
+  new gtext ({translate: [150, -480, 0],width: 80,text: "Info", color: [255, 255, 255, 255],align: LEFT}),
+  new gbox  ({translate: [215, -480, 0],width: 30,height: 30,   color: [242,207,53,255]}),
   new gtext ({translate: [350, -480, 0],width: 230,text: "Como Funciona",color: [255, 255, 255, 255],align: LEFT}),
   new gimage({translate: [490, -480, 0],width: 60,height: 60, src: "imagens/icone-navegar.png"}),
   new gtext ({translate: [580, -480, 0],width: 120, text: "Navegar",color: [255, 255, 255, 255],align: LEFT}),
