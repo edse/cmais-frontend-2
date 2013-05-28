@@ -164,8 +164,8 @@ function busca_videos(palavra){
   carrega_json_programa(palavra);
 }
 function carrega_json_programa (palavra){
-  //var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?palavra="+palavra;
-  var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?palavra="+palavra;
+  var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?palavra="+palavra;
+  //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?palavra="+palavra;
   var json_request1 = {};
   json_request1.request = function(param) {
     var ret = null;
