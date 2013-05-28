@@ -71,7 +71,7 @@ $(document).ready(function() {
 
     socket.onclose = function(msg) {
       //$('#tryin-p').show();
-      //startClock();
+      startClock();
       $('#users').hide();
       $('#points').hide();
       return $('#status').removeClass('online').addClass('offline').html('desconectado');

@@ -84,8 +84,10 @@
     </div>
     <!-- /direita -->
   </div>
-
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
+  <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+  
+  <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script-->
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
@@ -108,18 +110,10 @@
           //criando variavel para o javascript
           echo 'dateList['.$i.'] = "'.$programast[1].'-'.$programast[2].'-'.$dateJson[0].'";';
           $i++;
-          /*
-          $arrayDate = array($programast[1], $programast[2], $programast[3]);
-          
-          $dateJson = implode("-", $arrayDate);
-          $dateJson = explode(".", $dateJson);
-          
-          $dateList[$i] = $dateJson[0];
-          $i++;
-           */
         } 
       }
     }
+    echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
     closedir($handle);
   }
   
@@ -136,7 +130,7 @@
         });
       }
     });
-    
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker    
     $('#datepicker').datepicker({
       minDate: '01-03-2013',
@@ -161,19 +155,19 @@
     
     function highlightDays(date) {
         var dmy = putZero(String(date.getDate())) + "-" + (putZero(String(date.getMonth()+1))) + "-" + date.getFullYear();
-        var today =  <?php echo date("d")."-".date("m")."-".date("Y")?>;
+        
         for (var j = 0; j < dateList.length; j++) {
-            if(dmy == dateList[j] && dateList[j] == today) {
+            if(dmy == dateList[j]) {
               return [true, ''];
             }
         }
-        return [false, 'not-select'];
+      return [false, 'not-select'];  
     }
         
     function dateJsonSelected(){
       date = $(this);
-      console.log(date.context.value);
-      //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
+      //console.log(date.context.value);
+      window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
     
   });

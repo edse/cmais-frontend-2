@@ -1,0 +1,238 @@
+#slider,
+#slider2 {
+	margin: 20px auto 0 auto;
+	width: 100%;
+	/*width: 800px;*/
+	height: 450px;
+}
+
+#slider3 {
+	margin: 50px auto 0 auto;
+	width: 1045px;
+	height: 375px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Slider 2
+/*-----------------------------------------------------------------------------------*/ 
+
+#slider2 {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#slider2 .slide01 h3 {
+	background: #A85262;
+	display: inline;
+	padding: 0px 4px 1px;
+	font-size: 17px;
+	color: #ffffff;
+}
+
+#slider2 .slide01 p {
+	color: white;
+	text-align: right;
+	width: 410px;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+#slider2 .slide01 p.button {
+	color: #d88293;
+	cursor: pointer;
+}
+
+#slider2 .slide01 p.button:hover {
+	color: #FFFFFF;
+}
+
+#slider2 .slide01 span.slider2Icon {
+	display: inline-block;
+	height: 13px;
+	width: 13px;
+	background: transparent url('../slides/slider2slide01icon.png') no-repeat; 
+	position: relative;
+	left: 8px;
+	top: 1px;
+}
+
+#slider2 .slide02 iframe {
+	border: 1px solid #5C7B7D;
+}
+
+#slider2 .slide02 p {
+	color: white;
+	text-align: right;
+	width: 400px;
+	line-height: 1.4em;
+}
+
+#slider2 .slide03 p {
+	line-height: 1.3em;
+	color: white;
+	width: 200px;
+}
+
+#slider2 .slide04 div.cover img{
+	box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#slider2 .slide04 p {
+	letter-spacing: 1px;
+	color: white;
+	line-height: 1.3em;
+	width: 400px;
+}
+
+#slider2 .slide04 div.mpc_bg p {
+	background: rgba(255, 255, 255, 0.2);
+	display: inline;
+	padding: 1px 10px 1px 10px;
+	white-space: nowrap;
+	cursor: pointer;
+	/* width: 400px; */
+}
+
+#slider2 .slide04 p span {
+	background: rgba(255, 246, 138, 0.2);
+	padding: 2px 5px 2px 5px;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Slider 3
+/*-----------------------------------------------------------------------------------*/
+
+#slider3 {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	white-space: normal;
+}
+
+#slider3 .slide01 h2.orange {
+	font-size: 60px;
+	color: #F6A525;
+	font-weight: bold;
+	text-shadow: 2px 2px 0px black;
+	opacity: 0.8;
+	white-space: nowrap;
+}
+
+#slider3 .slide01 h2.light {
+	color: #eeeeee;
+	font-size: 60px;
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 22px 10px;
+	position: relative;
+	top: -20px;
+}
+
+#slider3 .slide01 p {
+	color: #EEE;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+#slider3 .slide02 h2 {
+	color: white;
+	font-size: 60px;
+	width: 450px;
+	text-align: right;
+	line-height: 1.2em;
+}
+
+#slider3 .slide02 span {
+	color: #A9C93D;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 1px 5px 1px 5px;
+	white-space: nowrap;
+	/* font-family: 'OCR A Std', 'Helvetica', sans-serif; */
+}
+
+#slider3 .slide02 h2 span {
+	color: #A9C93D;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 0px 10px;
+}
+
+#slider3 .slide02 p {
+	color: white;
+	width: 500px;
+	text-align: right;
+	line-height: 1.3em;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 2px 5px 2px 5px;
+	font-size: 15px;
+}
+
+#slider3 .slide03 h2 {
+	color: black;
+	font-size: 55px;
+	white-space: nowrap;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-weight: lighter;
+}
+
+#slider3 .slide03 h2 span {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 9px 10px 0px 10px;
+	font-family: 'OCR A Std', 'Helvetica', Arial, sans-serif;
+	position: relative;
+	top: 4px;
+	cursor: pointer;
+}
+
+#slider3 .slide03 p {
+	white-space: nowrap;
+	font-family: 'OCR A Std', 'Helvetica', Arial, sans-serif;
+	font-size: 14px;
+}
+
+#slider3 .slide04 span {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 0px 5px 2px 5px;
+	color: #FF3C10;
+	font-size: 14px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#slider3 .slide04 h2 {
+	font-size: 55px;
+	color: #FF3C10;
+	text-shadow: 1px 3px 0px black;
+	font-family: 'Helvetica', Arial, sans-serif;
+}
+
+#slider3 .slide04 h2 span {
+	text-shadow: none;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0px 10px;
+	font-size: 55px;
+}
+
+#slider3 .slide04 p {
+	font-size: 11px;
+	color: white;
+	font-family: 'OCR A Std', 'Helvetica', sans-serif;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 4px 0px 2px 5px;
+	line-height: 1.5em;
+	display: inline;
+}
+
+
+
+
+#slider3 .slide04 p span {
+	color: #FF3C10;
+	font-size: 11px;
+}
+
+#slider3 .slide04 div.skijump {
+	width: 450px;
+}
