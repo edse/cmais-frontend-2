@@ -110,7 +110,7 @@
             </div>
             <!-- BOX PADRAO Mais recentes -->
             <!-- BOX RADIO -->
-            <div class="paraouvir">
+            <div class="paraouvir" style="margin-bottom: 20px">
               <?php if(isset($displays["destaque-podcast"])) include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-podcast"]))
               ?>
             </div>
