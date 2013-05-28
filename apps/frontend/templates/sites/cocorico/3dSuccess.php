@@ -75,7 +75,7 @@
                 <div> 
                 	<?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
                 </div>
-            </div>
+            </div> 
             <!-- /RODAPE -->
 		</div>
 		<script src="/portal/cocorico/3d/js/google-analytics.js" type="text/javascript"></script>        
