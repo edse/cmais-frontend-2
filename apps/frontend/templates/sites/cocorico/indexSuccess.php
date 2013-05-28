@@ -378,7 +378,7 @@ ciências</a></li>
 
 						</div>
 					</div>
-					<div class="col-dir">
+					<div class="col-dir"> 
 						<!-- a class="fpa" href="http://www2.tvcultura.com.br/fpa/" title="Funda&ccedil;&atilde;o Padre Anchieta">Funda&ccedil;&atilde;o Padre Anchieta</a-->
 						<a class="cultura" href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a>
 					</div>
