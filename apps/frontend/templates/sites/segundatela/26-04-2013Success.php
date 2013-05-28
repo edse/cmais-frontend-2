@@ -139,7 +139,7 @@
         });
       }
     });
-    
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker    
     $('#datepicker').datepicker({
       minDate: '01-03-2013',
