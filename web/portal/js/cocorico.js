@@ -37,9 +37,12 @@ $(document).ready(function() {
      $('.destaques-small li').each(function(i){
        el = $(this);
        i++;
-       console.log(i)
+      
        if(i%7==0){
          $(el).css('margin-left', '0');
+         console.log(i + " dividiu")
+       }else{
+         console.log(i)
        }
      });
      /*
