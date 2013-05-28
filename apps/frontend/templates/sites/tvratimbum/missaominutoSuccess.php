@@ -64,19 +64,12 @@
         
         <?php foreach($pager->getResults() as $d): ?>	        
         <div class="assets">
-       
-	       <h3><?php echo $d->getTitle() ?></h3>
+           <h3><?php echo $d->getTitle() ?></h3>
 	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-      
-        
         </div>
-        
-           <?php endforeach; ?> 
+        <?php endforeach; ?> 
         <?php endif; ?> 
-         
         
-       
-       
         <?php if($pager->haveToPaginate()): ?> 
 
         <!-- PAGINACAO -->
