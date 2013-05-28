@@ -66,7 +66,7 @@ class _sectionActions extends sfActions
       $this->getUser()->setCulture('pt_BR');
 
       // current site
-      $this->site = $this->section->Site;
+      $this->site = $this->section->Site; 
       
       if($this->section->Site->getSlug() == "segundatela") {
         if($this->section->getSlug() != "aovivo")
