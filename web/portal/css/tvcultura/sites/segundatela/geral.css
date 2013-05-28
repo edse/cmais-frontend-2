@@ -57,7 +57,7 @@
 .accordion-group { border:none; }
 .accordion-body,
 .accordion-inner { border:none; background:#eee; overflow:hidden; }
-.redes .fb {margin:-4px 10px 0 10px;  }
+.redes .fb {margin:0px 10px 0 10px;  }
 .redes .twt,
 .redes .fb,
 .redes .gplus {  display: block; float:left; }
