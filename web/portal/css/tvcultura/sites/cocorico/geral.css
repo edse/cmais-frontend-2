@@ -446,4 +446,7 @@ bold,
 */
 /* /IE8*/
 
+.conteudo.destaques.especial .span12 { min-height:0; }
+.conteudo.destaques.especial .span12 .interna  form{ display:none; }
+
 
