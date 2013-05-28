@@ -34,6 +34,16 @@ $(document).ready(function() {
       $('.imprimir li.span4:nth-child(10)').css('margin-left', '0');
       
       /*lista destaque small*/
+     $('.destaques-small li').each(function(i){
+       el = $(this);
+       if(i%6==0){
+         $(el).css('margin-left', '0');
+         i = 0;
+       }else{
+         i++;
+       }
+     });
+     /*
       $('.destaques-small li:nth-child(7)').css('margin-left', '0');
       $('.destaques-small li:nth-child(13)').css('margin-left', '0');
       $('.destaques-small li:nth-child(19)').css('margin-left', '0');
@@ -41,6 +51,7 @@ $(document).ready(function() {
       $('.destaques-small li:nth-child(31)').css('margin-left', '0');
       $('.destaques-small li:nth-child(37)').css('margin-left', '0');
       $('.destaques-small li:nth-child(43)').css('margin-left', '0');
+      */
     }
     
     /* popover joguinhos*/
