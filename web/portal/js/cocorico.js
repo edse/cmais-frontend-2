@@ -35,7 +35,7 @@ $(document).ready(function() {
       
       /*lista destaque small*/
      $('.destaques-small li').each(function(i){
-       el = $(this))
+       el = $(this);
        i++;
        if(i%7){
          $(el).css('margin-left', '0');
