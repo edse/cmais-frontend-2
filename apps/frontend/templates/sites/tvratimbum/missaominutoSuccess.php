@@ -66,11 +66,11 @@
         <div class="assets">
        
 	       <h3><?php echo $d->getTitle() ?></h3>
-	       <p><?php echo $d->AssetContent->render()?></p>
+	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
       
         
         </div>
-        <span class="picote"></span>
+        
            <?php endforeach; ?> 
         <?php endif; ?> 
          
