@@ -72,7 +72,8 @@
     
                     <a class="voltar-topo" href="#"><span></span>voltar ao topo</a>
                 </div>
-                <div <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+                <div> 
+                	<?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
                 </div>
             </div>
             <!-- /RODAPE -->
