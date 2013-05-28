@@ -412,7 +412,7 @@ $(document).ready(function() {
         $('#tryin-v').html(tryin);
       }else{
         clearInterval(interval);
-        tryToConnect();
+        //tryToConnect();
         if(mult<3){
           mult++;
           $('#tryin-v').html("0");
