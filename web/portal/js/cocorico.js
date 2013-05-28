@@ -41,6 +41,7 @@ $(document).ready(function() {
        if(i%7==0){
          $(el).css('margin-left', '0');
          console.log(i + " dividiu")
+         i = 0;
        }else{
          console.log(i)
        }
