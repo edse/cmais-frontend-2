@@ -109,7 +109,7 @@ var video_transparencia = new gbox({width: 1980, height: 1080, translate: [0,0,-
 var footer = new container({});
 footer.translate = [0,0,0.2]
 footer.components = [
-  new gbox  ({translate: [215, -480, 0],width: 30,height: 30,color: [240,255,0,255]}),
+  new gbox  ({translate: [215, -480, 0],width: 30,height: 30,color: [242,207,53,255]}),
   new gtext ({translate: [350, -480, 0],width: 230,text: "Como Funciona",color: [255, 255, 255, 255],align: LEFT}),
   new gimage({translate: [490, -480, 0],width: 60,height: 60, src: "imagens/icone-navegar.png"}),
   new gtext ({translate: [580, -480, 0],width: 120, text: "Navegar",color: [255, 255, 255, 255],align: LEFT}),
