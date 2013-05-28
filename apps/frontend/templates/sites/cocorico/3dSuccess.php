@@ -4,9 +4,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Cocoric&oacute; 3D - TV Cultura</title>
-		<link href="/cocorico/3d/css/geral.css" type="text/css" rel="stylesheet">
-		<script src="/cocorico/3d/js/jquery.js" type="text/javascript"></script>
-		<script src="/cocorico/3d/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+		<link href="/portal/cocorico/3d/css/geral.css" type="text/css" rel="stylesheet">
+		<script src="/portal/cocorico/3d/js/jquery.js" type="text/javascript"></script>
+		<script src="/portal/cocorico/3d/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
 
     </head>
     {literal}
@@ -47,15 +47,7 @@
 					<div class="cabecalho">
 						<h1 class="bg3d">Cocoric&oacute; 3D</h1>
 						<div class="menu">
-							<ul>
-								<li><a class="turma" href="http://www.tvcultura.com.br/cocorico/turma/">Turma</a></li>
-								<li><a class="jogos" href="http://www.tvcultura.com.br/cocorico/jogos/">Jogos</a></li>
-								<li><a class="videos" href="http://www.tvcultura.com.br/cocorico/videos/">V&iacute;deos</a></li>
-								<li><a class="imagens" href="http://www.tvcultura.com.br/cocorico/imagens/">Imagens</a></li>
-								<li><a class="radio" href="http://www.tvcultura.com.br/cocorico/radio/">R&aacute;dio</a></li>
-								<li><a class="extras" href="http://www.tvcultura.com.br/cocorico/extras/">Extras</a></li>
-								<li><a class="especias" href="http://www.tvcultura.com.br/cocorico/especiais/">Especias</a></li>
-							</ul>
+							
 						</div>
 						<div class="btn">
 							<a class="glasses" href="http://cmais.com.br/quintaldacultura/oculos-3d" target="_blank">Aprenda a fazer seus oculos 3D!</a>
@@ -202,6 +194,6 @@
             </div>
             <!-- /RODAPE -->
 		</div>
-		<script src="http://www.tvcultura.com.br/cocorico/3d/js/google-analytics.js" type="text/javascript"></script>        
+		<script src="/portal/cocorico/3d/js/google-analytics.js" type="text/javascript"></script>        
     </body>
 </html>
