@@ -94,7 +94,7 @@
   <script>
   
     <?php
-  $nomePrograma = "jornaldacultura";
+  $nomePrograma = "cartaoverde";
   //puxando logs do programa
   $i = 0;
   echo 'var dateList = new Array();';
