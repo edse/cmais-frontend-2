@@ -1,22 +1,8 @@
 <script type="text/javascript" src="/portal/js/culturafm.js"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
 <script type="text/javascript" src="/portal/js/swfobject/swfobject.js"></script>
-<?php use_helper('I18N', 'Date')
-?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
-?>
-<script>
-  /* comentado para aplicar a home com o link para infografico de aniversario de 35 anos*/
-  //number2 = 429;
-  $(function(){
-  var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete"/*, "fm35-1", "fm35-2", "fm35-3"*/ );
-  //var instruments=new Array("violino","trombone","clarinete","bombardino","carrilhao","timpanos","trompete","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti","homenagem-tineti");
-  // o codigo acima é uma gambi para aumentar a probabilidade de 'homenagem-tineti' ser sorteado mais vezes
-  //var instruments=new Array("trombone");
-  var currentInstrument = instruments[Math.floor(Math.random() * instruments.length)];
-  $('div#home').addClass(currentInstrument);
-  });
-</script>
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <!-- remover este css depois que acabar campanha da radio -->
 <script type="text/javascript">
   $(function() {
@@ -108,25 +94,6 @@
             </style>
  
             
-            <!-- BOX PADRAO -->
-          <div class="box-padrao grid1">
-            <div class="topo claro">
-              <span></span>
-              <div class="capa-titulo">
-                <h4>Escolha suas músicas</h4>
-              </div>
-            </div>
-            <div class="bg-cinza">
-              <a href="http://culturafm.cmais.com.br/selecao-do-ouvinte">Indique até seis composições de sua preferência e acompanhe pela Cultura FM.</a>
-              <p style="margin:20px 0 8px 0;">De segunda a sábado, às 13 horas.</p>
-            </div>
-          </div>
-          <!-- BOX PADRAO -->
-            
-            
-            
-            
-            
           </div>
           <!-- /col-esq -->
           <!-- col-dir -->
@@ -143,12 +110,25 @@
             </div>
             <!-- BOX PADRAO Mais recentes -->
             <!-- BOX RADIO -->
-            <div class="paraouvir">
+            <div class="paraouvir" style="margin-bottom: 20px">
               <?php if(isset($displays["destaque-podcast"])) include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-podcast"]))
               ?>
             </div>
             <!-- /BOX RADIO -->
-           
+            <!-- BOX PADRAO -->
+            <div class="box-padrao grid1">
+              <div class="topo claro">
+                <span></span>
+                <div class="capa-titulo">
+                  <h4>Escolha suas músicas</h4>
+                </div>
+              </div>
+              <div class="bg-cinza">
+                <a href="http://culturafm.cmais.com.br/selecao-do-ouvinte">Indique até seis composições de sua preferência e acompanhe pela Cultura FM.</a>
+                <p style="margin:20px 0 8px 0;">De segunda a sábado, às 13 horas.</p>
+              </div>
+            </div>
+            <!-- BOX PADRAO -->
           </div>
           <!-- /col-dir -->
         </div>

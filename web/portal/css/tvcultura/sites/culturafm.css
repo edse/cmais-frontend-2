@@ -131,7 +131,7 @@ form.selecao .item,
 #barra-site #horario { *margin-top:20px;}
 #barra-site #horario { *width: 90px;position: relative;z-index: 1;}
 .topo-programa .aovivo { display:block; width:111px; height:44px; background:url(/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
-.home .topo-programa { background: no-repeat 0 127px; height:350px; }
+.home .topo-programa { background: no-repeat 0 127px; /*height:350px;*/ }
 .violino { background-image:url(/portal/images/capaPrograma/culturafm/violino.jpg) !important; }
 .clarinete { background-image:url(/portal/images/capaPrograma/culturafm/clarinete.jpg) !important; }
 .trombone { background-image:url(/portal/images/capaPrograma/culturafm/trombone.jpg) !important; }
