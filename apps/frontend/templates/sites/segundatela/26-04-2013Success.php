@@ -175,8 +175,8 @@
         
     function dateJsonSelected(){
       date = $(this);
-      console.log(date.context.value);
-      //window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
+      //console.log(date.context.value);
+      window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
     }
     
   });
