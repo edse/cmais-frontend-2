@@ -302,7 +302,7 @@
 					</div>
 					<div class="col-central">
 						<div class="posicao">
-							<p class="tit">+Populares</p>
+							<p class="tit">+Populares</p> 
 							<ul>
 								<li><a href="http://tvcultura.cmais.com.br" class="tit">TV Cultura</a></li>
 								<li><a href="http://tvcultura.cmais.com.br/transito" title="Guia do Trânsito">Guia do Trânsito</a></li>
