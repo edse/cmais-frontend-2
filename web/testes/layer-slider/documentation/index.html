@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Responsive Layer Slider jQuery Plugin</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Responsive Layer Slider&rdquo; Documentation by &ldquo;MPC&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Responsive Layer Slider jQuery Plugin&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 05/10/2012<br>
+					By: MassivePixelCreation<br>
+					Email: <a href="mailto:support@mpcreation.pl">support@mpcreation.pl</a>
+					</strong>
+					
+					<a href="http://www.twitter.com/mpcreation" target="_blank"><img src="assets/images/twitter.png"/></a>
+					<a href="http://www.facebook.com/MassivePixelCreation" target="_blank"><img src="assets/images/facebook.png"/></a>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><b>Greetings! Thank you for purchasing our plugin.</b> If you have any questions that are beyond the scope of this help file, please feel free to ask them on our <a href="http://www.support.mpcreation.pl" target="_blank">support forums</a>.</p>
+				<p>We tried to make the help file as extensive as possible, don't be scared the Flip Book itself is really easy to use.</p>
+				
+Have fun & enjoy,</br>
+<b>MPC Team.</b>
+</br>
+</br>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<!--      Section       -->
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#folderStructure">Folder Structure</a></li>
+			<li><a href="#gettingStared">Setting Up the Slider</a>
+				<ol>
+					<li><a href="#c1">Slider Structure</a></li>
+					<li><a href="#c2">Initializing the Layer Slider</a></li>
+				</ol>
+			</li>
+			<li><a href="#credits">Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<!--      Section       -->
+		
+		<h3 id="folderStructure"><strong>A) Folder Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Responsive Layer Slider Folder Structure:
+			<ul>
+				<li>jQuery.layerSlider - this folder contains the full source of the slider, the required images, js & css files.						<li>preview - this folder contains the pre made version of the slider used in preview.</li>
+				<li>changelog - this file contains all of the changes made to the file from the day it was released.</li>
+				<li>documentation - this file contains the help file (which you are currently reading :)).</li>
+			</ul>
+		</p>
+		
+		<hr>
+
+		<!--      Section       -->
+		
+		<h3 id="gettingStared"><strong>B) Setting Up the Slider</strong> - <a href="#toc">top</a></h3>
+		
+		<p>First you need to embed all of the required scripts & CSS files. Those files should be embedded in the head section of your html file like this (notice that probably the path to the files would be different for you):</p>
+		<img src="assets/images/scripts.png" alt="Massive Panel" class="image_center"/>
+		
+		
+		<hr>
+		
+		<!--      Section       -->
+		
+		<h5 id="c1"><strong>B.1) Slider Structure</strong> - <a href="#toc">top</a></h5>
+		<p>Each slider is represented by the wrapper div, inside this div you should place an unordered list. Each list item represents one slide. Each of the list items may have some special properties:
+		<br><br>
+		<img src="assets/images/li.png" alt="Massive Panel" class="image_center"/>
+		<ul>
+			<li><b>data-easing</b> - this parameter defines the <a href="http://jqueryui.com/demos/effect/easing.html">easing type</a> of the slides background animation,</li>
+			<li><b>data-transition</b> - choose the transition effect: slideTop, slideLeft, slideRight, slideBottom and fadeIn;, </li>
+			<li><b>data-thumbnail</b> - this parameter defines the path to the slides thumbnail</li>
+		</ul>
+		
+		Slide represented by the list item contains set of dives each div with a class of '<i>mpc_ls_slide_item</i>' is treated like a slide layer. For the slide background please use a div with a class of '<i>mpc_ls_slide_background</i>'. Each layer of the slide (div with a class of '<i>mpc_ls_slide_item</i>') contains some special parameters. They defines the animation of the layer, among them are:
+		<ul>
+			<li><b>data-x</b> - the X position of the div when the animation is finished,</li>
+			<li><b>data-y</b> - the Y position of the div when the animation is finished,</li>
+			<li><b>data-delay</b> - animation delay (defined in milliseconds),</li>
+			<li><b>data-duration</b> - length of the animation (defined in milliseconds),</li>
+			<li><b>data-easing</b> - <a href="http://jqueryui.com/demos/effect/easing.html">easing type</a> of the animation (defined in milliseconds),</li>
+			<li><b>data-effect</b> - defines from which side should the layer appear (if you want a fadeIn effect set it to '<i>none</i>'): slideLeft, slideRight, slideBottom, slideTop;,</li>
+			<li><b>data-fade</b> - defines if the fadeIn effect should be applied to your layer (on/off).</li>
+		</ul>
+		
+		Below you can see a slider structure with two slides:
+		<br><br>
+		<img src="assets/images/structure.png" alt="Massive Panel" class="image_center"/>
+		</p>
+		
+		<hr>
+		
+		<!--      Section       -->
+		
+		<h5 id="c2"><strong>B.2) Initializing the Layer Slider</strong> - <a href="#toc">top</a></h5>
+		<p>To initialize the Layer Slider you need to call the mpcLayerSlider function, if you don't want to change the default behavior of the slider you don't have to pass any parameters, but if you do want to customize the slider behavior, dimension ect. then you have plenty of parameters to choose from:
+		<ul>
+			<img src="assets/images/syntax.png" alt="Massive Panel" class="image_right"/>
+			<li><b>pouseOnHover</b> - defines if the slideshow should be paused when a user hovers the slider: true/false,</li>
+			<li><b>slideshow</b> - defines if the slider should have slideshow enabled: true/false,</li>
+			<li><b>delay</b> - slideshow delay between slides (defined in milliseconds),</li>
+			<li><b>showArrows</b> - defines if the navigation arrows should be shown: true/false,</li>
+			<li><b>uiStyle</b> - choose UI style 1 - 9 (defines as string ex. '2'),</li>
+			<li><b>arrowsOffset</b> - the arrows position offset,</li>
+			<li><b>autoPlayVideo</b> - defines if the video should auto play when the slide is changed (work with Vimeo and YouTube videos): true/false</li>
+			<li><b>shadowStyle</b> - choose between 3 shadow styles: 'style01', 'style02' and 'style03',</li>
+			<li><b>transitionTime</b> - defines the background transition time between slides,</li>
+			<li><b>showControlsOnHover</b> - defines if the controls should be shown when the user hovers the slider: true/false,</li>
+			<li><b>controlsOpacity</b> - opacity of the slider UI</li>
+			<li><b>showBullets</b> - defines if the bullets should be shown in the bottom UI,</li>
+			<li><b>showThumbTooltip</b> - defines if the tooltips with thumbnails should be shown,</li>
+			<li><b>bulletsVertialPosition</b> - choose between: bottom, middle, top;,</li>
+			<li><b>bulletsVerticalOffset</b> - defines the vertical offset between the bullets,</li>
+			<li><b>bulletsHorizontalPosition</b> - choose between: left, middle, right;,</li>
+			<li><b>bulletsHorizontalOffset</b> - defines the horizontal offset between the bullets,</li>		
+			<li><b>revertAnimation</b> - defines if the animation should be revert on slide change,</li>
+			<li><b>defaultWidth</b> - defines the default width of the slide area,</li>
+			<li><b>defaultHeight</b> - defines the default height of the slide area,</li>
+			<li><b>swipeGesture</b> - defines if the swipe gesture should be enabled in the slider.</li>
+			
+		</ul>
+			
+		</p>
+		
+		<hr>				
+		<!--      Section       -->
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following plugins and files as listed.
+		
+		<ul>
+			<li>Thanks to Orman Clark for lettings us use some of his <a href="http://www.premiumpixels.com/">Premium Pixels</a> :)</li>
+		</ul>
+		
+		<hr>
+		
+				
+		<!--      Section       -->
+		
+		<p>Once again, thank you so much for purchasing this plugin. As I said at the beginning, We'd be glad to help you if you have any questions relating this plugin. No guarantees, but We'll do our best to assist. If you have any suggestions on how to improve our products or documentation please share them!</p> 
+		
+		<p class="append-bottom alt large"><strong>MPC</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

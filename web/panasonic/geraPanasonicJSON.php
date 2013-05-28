@@ -31,29 +31,29 @@ if(isset($_GET['program'])){
      if($id == $asset->program_id){
        foreach($asset->videos as $av){
           if($limit > 0){
-          
-              $list1.= "<div style='float: left; height:400px;width: 300px; font: 13px arial; margin:10px ; text-decoration:none; border: 3px solid gray'>
+              /*  
+              $list1.= "<div style='float: left; height:400px;width: 330px; font: 13px arial; margin:10px ; text-decoration:none; border: 3px solid gray'>
                   <a href=".$av->sources.">
                   ".$asset->name."<br/><br/>
-                  <img src=".$av->still." border=0 width=250 height=188>
+                  <img src=".$av->thumb." border=0 width=240 height=180><br/><br/>
                   ".$av->title."<br/>
                   ".$av->subtitle."<br/>
                   ".$av->description."<br/>
                 </a></div>
-                ";
-            
-          $list = array( "src"       => $av->thumb, 
-                         "label"     => $av->subtitle,
-                         "titulo"    => $asset->name, 
-                         "subtitulo" => $av->subtitle,
-                         "descricao" => $av->description, 
-                         "url_video" => $av->sources, 
-                         "destaque"  => "S",
-                         //"imagem_destaque" => $av->thumb,
-                         "imagem_destaque"  =>$av->still,
-                        );
-          array_push($lista_videos_programa, $list);
-          $limit--;
+               ";
+              */
+            $list = array( "src"       => $av->thumb,  //ok
+                             "label"     => $av->subtitle, //ok
+                             "titulo"    => $asset->name, 
+                             "subtitulo" => $av->subtitle,
+                             "descricao" => $av->description, 
+                             "url_video" => $av->sources, 
+                             "destaque"  => "S",
+                             //"imagem_destaque" => $av->thumb,
+                             "imagem_destaque"  =>$av->still,
+                            );
+            array_push($lista_videos_programa, $list);
+            $limit--;
          }
        }
      }
@@ -63,7 +63,7 @@ if(isset($_GET['program'])){
   $output = array("data" => array("list" => $lista_videos_programa));
   //$output = array("data" => array("name" => $asset->name,"program_id"=> $asset->program_id,"list" => $lista_videos_programa));
   echo json_encode($output);
-  //echo $list1;
+  echo $list1;
 
 }else if(isset($_GET['palavra']) && !empty($_GET['palavra'])){
   //FAZ A BUSCA DE VÍDEOS COM A PALAVRA CHAVE 
@@ -77,8 +77,20 @@ if(isset($_GET['program'])){
           //echo 'Palavra não encontrada';
         }else{
           if($limit > 0){
+              /*
+              $list1.= "<div style='float: left; height:400px;width: 330px; font: 13px arial; margin:10px ; text-decoration:none; border: 3px solid gray'>
+                  <a href=".$av->sources.">
+                  ".$asset->name."<br/><br/>
+                  <img src=".$av->thumb." border=0 width=240 height=180><br/><br/>
+                  ".$av->title."<br/>
+                  ".$av->subtitle."<br/>
+                  ".$av->description."<br/>
+                </a></div>
+               ";
+               */           
+            
             $list = array( "src"       => $av->thumb, 
-                           "label"     => $av->subtitle,
+                           "label"     => $av->subtitle, //ok
                            "titulo"    => $asset->name, 
                            "subtitulo" => $av->subtitle,
                            "descricao" => $av->description, 
@@ -97,6 +109,8 @@ if(isset($_GET['program'])){
   $output = array("data" => array("list" => $lista_videos_programa));
   //$output = array("data" => array("name" => $asset->name,"program_id"=> $asset->program_id,"list" => $lista_videos_programa));
   echo json_encode($output);
+  //echo $list1;
+  
 }else{
   echo "Nenhum parametro enviado";
 }
