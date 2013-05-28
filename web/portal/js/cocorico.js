@@ -37,7 +37,8 @@ $(document).ready(function() {
      $('.destaques-small li').each(function(i){
        el = $(this);
        i++;
-       if(i%7){
+       console.log(i)
+       if(i%7==0){
          $(el).css('margin-left', '0');
        }
      });
