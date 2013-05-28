@@ -94,25 +94,6 @@
             </style>
  
             
-            <!-- BOX PADRAO -->
-          <div class="box-padrao grid1">
-            <div class="topo claro">
-              <span></span>
-              <div class="capa-titulo">
-                <h4>Escolha suas músicas</h4>
-              </div>
-            </div>
-            <div class="bg-cinza">
-              <a href="http://culturafm.cmais.com.br/selecao-do-ouvinte">Indique até seis composições de sua preferência e acompanhe pela Cultura FM.</a>
-              <p style="margin:20px 0 8px 0;">De segunda a sábado, às 13 horas.</p>
-            </div>
-          </div>
-          <!-- BOX PADRAO -->
-            
-            
-            
-            
-            
           </div>
           <!-- /col-esq -->
           <!-- col-dir -->
@@ -129,12 +110,25 @@
             </div>
             <!-- BOX PADRAO Mais recentes -->
             <!-- BOX RADIO -->
-            <div class="paraouvir">
+            <div class="paraouvir" style="margin-bottom: 20px">
               <?php if(isset($displays["destaque-podcast"])) include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-podcast"]))
               ?>
             </div>
             <!-- /BOX RADIO -->
-           
+            <!-- BOX PADRAO -->
+            <div class="box-padrao grid1">
+              <div class="topo claro">
+                <span></span>
+                <div class="capa-titulo">
+                  <h4>Escolha suas músicas</h4>
+                </div>
+              </div>
+              <div class="bg-cinza">
+                <a href="http://culturafm.cmais.com.br/selecao-do-ouvinte">Indique até seis composições de sua preferência e acompanhe pela Cultura FM.</a>
+                <p style="margin:20px 0 8px 0;">De segunda a sábado, às 13 horas.</p>
+              </div>
+            </div>
+            <!-- BOX PADRAO -->
           </div>
           <!-- /col-dir -->
         </div>
