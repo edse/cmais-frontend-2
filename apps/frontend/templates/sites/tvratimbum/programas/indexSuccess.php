@@ -117,16 +117,16 @@ $assets = $pager->getResults();
 			$assets = $pager->getResults();
 		?>
                   
-        <div class="assets">
+     
         <?php if(count($pager) > 1): ?> 
-        <?php foreach($pager->getResults() as $d): ?>	
-        	<h3><?php echo $d->getTitle() ?></h3>
-        
-	        <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
-        <span class="picote"></span>
+          <?php foreach($pager->getResults() as $d): ?>	        
+        <div class="assets">
+           <h3><?php echo $d->getTitle() ?></h3>
+	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
+        </div>
         <?php endforeach; ?> 
-        <?php endif; ?>  
-     	</div>
+        <?php endif; ?> 
+        
        
        
         <?php if($pager->haveToPaginate()): ?> 
