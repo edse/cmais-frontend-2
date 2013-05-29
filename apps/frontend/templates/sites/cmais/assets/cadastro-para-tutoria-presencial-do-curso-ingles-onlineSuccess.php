@@ -127,114 +127,118 @@
                     <div class="linha" style="width:33%">
                       <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" style="float:left; margin-right: 5px" />Professor Inativo</label>
                     </div>
-
-                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
-                      <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
-                    </div>
-                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
-                      <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
-                    </div>
-                     
-                    <div class="t1" style="clear:left; width: 33%">
-                      <label>Diretoria de Ensino à qual está vinculado(a)</label>
-                      <select name="diretoria" id="diretoria" style="width:200px">
-                        <option value="">---</option>
-                        <option value="AMERICANA">AMERICANA</option>
-                        <option value="ANDRADINA">ANDRADINA</option>
-                        <option value="APIAI">APIAI</option>
-                        <option value="ARAÇATUBA">ARAÇATUBA</option>
-                        <option value="ARARAQUARA">ARARAQUARA</option>
-                        <option value="ASSIS">ASSIS</option>
-                        <option value="AVARE">AVARE</option>
-                        <option value="BARRETOS">BARRETOS</option>
-                        <option value="BAURU">BAURU</option>
-                        <option value="BIRIGUI">BIRIGUI</option>
-                        <option value="BOTUCATU">BOTUCATU</option>
-                        <option value="BRAGANÇA PAULISTA">BRAGANÇA PAULISTA</option>
-                        <option value="CAIEIRAS">CAIEIRAS</option>
-                        <option value="CAMPINAS LESTE">CAMPINAS LESTE</option>
-                        <option value="CAMPINAS OESTE">CAMPINAS OESTE</option>
-                        <option value="CAPIVARI">CAPIVARI</option>
-                        <option value="CARAGUATATUBA">CARAGUATATUBA</option>
-                        <option value="CARAPICUIBA">CARAPICUIBA</option>
-                        <option value="CATANDUVA">CATANDUVA</option>
-                        <option value="CENTRO">CENTRO</option>
-                        <option value="CENTRO OESTE">CENTRO OESTE</option>
-                        <option value="CENTRO SUL">CENTRO SUL</option>
-                        <option value="DIADEMA">DIADEMA</option>
-                        <option value="FERNANDOPOLIS">FERNANDOPOLIS</option>
-                        <option value="FRANCA">FRANCA</option>
-                        <option value="GUARATINGUETA">GUARATINGUETA</option>
-                        <option value="GUARULHOS NORTE">GUARULHOS NORTE</option>
-                        <option value="GUARULHOS SUL">GUARULHOS SUL</option>
-                        <option value="ITAPECERICA DA SERRA">ITAPECERICA DA SERRA</option>
-                        <option value="ITAPETININGA">ITAPETININGA</option>
-                        <option value="ITAPEVA">ITAPEVA</option>
-                        <option value="ITAPEVI">ITAPEVI</option>
-                        <option value="ITAQUAQUECETUBA">ITAQUAQUECETUBA</option>
-                        <option value="ITARARE">ITARARE</option>
-                        <option value="ITU">ITU</option>
-                        <option value="JABOTICABAL">JABOTICABAL</option>
-                        <option value="JACAREI">JACAREI</option>
-                        <option value="JALES">JALES</option>
-                        <option value="JAU">JAU</option>
-                        <option value="JOSE BONIFACIO">JOSE BONIFACIO</option>
-                        <option value="JUNDIAI">JUNDIAI</option>
-                        <option value="LESTE 1">LESTE 1</option>
-                        <option value="LESTE 2">LESTE 2</option>
-                        <option value="LESTE 3">LESTE 3</option>
-                        <option value="LESTE 4">LESTE 4</option>
-                        <option value="LESTE 5">LESTE 5</option>
-                        <option value="LIMEIRA">LIMEIRA</option>
-                        <option value="LINS">LINS</option>
-                        <option value="MARILIA">MARILIA</option>
-                        <option value="MAUA">MAUA</option>
-                        <option value="MIRACATU">MIRACATU</option>
-                        <option value="MIRANTE DO PARANAPANEMA">MIRANTE DO PARANAPANEMA</option>
-                        <option value="MOGI DAS CRUZES">MOGI DAS CRUZES</option>
-                        <option value="MOGI MIRIM">MOGI MIRIM</option>
-                        <option value="NORTE 1">NORTE 1</option>
-                        <option value="NORTE 2">NORTE 2</option>
-                        <option value="OSASCO">OSASCO</option>
-                        <option value="OURINHOS">OURINHOS</option>
-                        <option value="PENAPOLIS">PENAPOLIS</option>
-                        <option value="PINDAMONHANGABA">PINDAMONHANGABA</option>
-                        <option value="PIRACICABA">PIRACICABA</option>
-                        <option value="PIRAJU">PIRAJU</option>
-                        <option value="PIRASSUNUNGA">PIRASSUNUNGA</option>
-                        <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
-                        <option value="REGISTRO">REGISTRO</option>
-                        <option value="RIBEIRÃO PRETO">RIBEIRÃO PRETO</option>
-                        <option value="SANTO ANASTACIO">SANTO ANASTACIO</option>
-                        <option value="SANTO ANDRE">SANTO ANDRE</option>
-                        <option value="SANTOS">SANTOS</option>
-                        <option value="SÃO BERNARDO DO CAMPO">SÃO BERNARDO DO CAMPO</option>
-                        <option value="SÃO CARLOS">SÃO CARLOS</option>
-                        <option value="SÃO JOÃO DA BOA VISTA">SÃO JOÃO DA BOA VISTA</option>
-                        <option value="SÃO JOAQUIM  DA BARRA">SÃO JOAQUIM  DA BARRA</option>
-                        <option value="SÃO JOSÉ DO RIO PRETO">SÃO JOSÉ DO RIO PRETO</option>
-                        <option value="SÃO JOSE DOS CAMPOS">SÃO JOSE DOS CAMPOS</option>
-                        <option value="SÃO ROQUE">SÃO ROQUE</option>
-                        <option value="SÃO VICENTE">SÃO VICENTE</option>
-                        <option value="SERTAOZINHO">SERTAOZINHO</option>
-                        <option value="SOROCABA">SOROCABA</option>
-                        <option value="SUL 1">SUL 1</option>
-                        <option value="SUL 2">SUL 2</option>
-                        <option value="SUL 3">SUL 3</option>
-                        <option value="SUMARE">SUMARE</option>
-                        <option value="SUZANO">SUZANO</option>
-                        <option value="TABOÃO DA SERRA">TABOÃO DA SERRA</option>
-                        <option value="TAQUARITINGA">TAQUARITINGA</option>
-                        <option value="TAUBATE">TAUBATE</option>
-                        <option value="TUPA">TUPA</option>
-                        <option value="VOTORANTIM">VOTORANTIM</option>
-                        <option value="VOTUPORANGA">VOTUPORANGA</option>
-                      </select>
-                    </div>
-
-                    <div class="t1" style="clear:left; width: 33%; margin-top: 15px">
-                      <label>Escola em que trabalha:</label>
-                      <input type="text" name="escola" id="escola" style="width:100%" />
+                    
+                    <div id="categoria_mais_info">
+                      <div id="prof_ativo_tipo" style="display:none">
+                        <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
+                          <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
+                        </div>
+                        <div class="linha t10" style="width: auto; margin-right: 15px">
+                          <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
+                        </div>
+                      </div>
+                       
+                      <div class="t1" style="clear:left; width: 33%; display:none" id="categoria_diretoria">
+                        <label>Diretoria de Ensino à qual está vinculado(a)</label>
+                        <select name="diretoria" id="diretoria" style="width:200px">
+                          <option value="">---</option>
+                          <option value="AMERICANA">AMERICANA</option>
+                          <option value="ANDRADINA">ANDRADINA</option>
+                          <option value="APIAI">APIAI</option>
+                          <option value="ARAÇATUBA">ARAÇATUBA</option>
+                          <option value="ARARAQUARA">ARARAQUARA</option>
+                          <option value="ASSIS">ASSIS</option>
+                          <option value="AVARE">AVARE</option>
+                          <option value="BARRETOS">BARRETOS</option>
+                          <option value="BAURU">BAURU</option>
+                          <option value="BIRIGUI">BIRIGUI</option>
+                          <option value="BOTUCATU">BOTUCATU</option>
+                          <option value="BRAGANÇA PAULISTA">BRAGANÇA PAULISTA</option>
+                          <option value="CAIEIRAS">CAIEIRAS</option>
+                          <option value="CAMPINAS LESTE">CAMPINAS LESTE</option>
+                          <option value="CAMPINAS OESTE">CAMPINAS OESTE</option>
+                          <option value="CAPIVARI">CAPIVARI</option>
+                          <option value="CARAGUATATUBA">CARAGUATATUBA</option>
+                          <option value="CARAPICUIBA">CARAPICUIBA</option>
+                          <option value="CATANDUVA">CATANDUVA</option>
+                          <option value="CENTRO">CENTRO</option>
+                          <option value="CENTRO OESTE">CENTRO OESTE</option>
+                          <option value="CENTRO SUL">CENTRO SUL</option>
+                          <option value="DIADEMA">DIADEMA</option>
+                          <option value="FERNANDOPOLIS">FERNANDOPOLIS</option>
+                          <option value="FRANCA">FRANCA</option>
+                          <option value="GUARATINGUETA">GUARATINGUETA</option>
+                          <option value="GUARULHOS NORTE">GUARULHOS NORTE</option>
+                          <option value="GUARULHOS SUL">GUARULHOS SUL</option>
+                          <option value="ITAPECERICA DA SERRA">ITAPECERICA DA SERRA</option>
+                          <option value="ITAPETININGA">ITAPETININGA</option>
+                          <option value="ITAPEVA">ITAPEVA</option>
+                          <option value="ITAPEVI">ITAPEVI</option>
+                          <option value="ITAQUAQUECETUBA">ITAQUAQUECETUBA</option>
+                          <option value="ITARARE">ITARARE</option>
+                          <option value="ITU">ITU</option>
+                          <option value="JABOTICABAL">JABOTICABAL</option>
+                          <option value="JACAREI">JACAREI</option>
+                          <option value="JALES">JALES</option>
+                          <option value="JAU">JAU</option>
+                          <option value="JOSE BONIFACIO">JOSE BONIFACIO</option>
+                          <option value="JUNDIAI">JUNDIAI</option>
+                          <option value="LESTE 1">LESTE 1</option>
+                          <option value="LESTE 2">LESTE 2</option>
+                          <option value="LESTE 3">LESTE 3</option>
+                          <option value="LESTE 4">LESTE 4</option>
+                          <option value="LESTE 5">LESTE 5</option>
+                          <option value="LIMEIRA">LIMEIRA</option>
+                          <option value="LINS">LINS</option>
+                          <option value="MARILIA">MARILIA</option>
+                          <option value="MAUA">MAUA</option>
+                          <option value="MIRACATU">MIRACATU</option>
+                          <option value="MIRANTE DO PARANAPANEMA">MIRANTE DO PARANAPANEMA</option>
+                          <option value="MOGI DAS CRUZES">MOGI DAS CRUZES</option>
+                          <option value="MOGI MIRIM">MOGI MIRIM</option>
+                          <option value="NORTE 1">NORTE 1</option>
+                          <option value="NORTE 2">NORTE 2</option>
+                          <option value="OSASCO">OSASCO</option>
+                          <option value="OURINHOS">OURINHOS</option>
+                          <option value="PENAPOLIS">PENAPOLIS</option>
+                          <option value="PINDAMONHANGABA">PINDAMONHANGABA</option>
+                          <option value="PIRACICABA">PIRACICABA</option>
+                          <option value="PIRAJU">PIRAJU</option>
+                          <option value="PIRASSUNUNGA">PIRASSUNUNGA</option>
+                          <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
+                          <option value="REGISTRO">REGISTRO</option>
+                          <option value="RIBEIRÃO PRETO">RIBEIRÃO PRETO</option>
+                          <option value="SANTO ANASTACIO">SANTO ANASTACIO</option>
+                          <option value="SANTO ANDRE">SANTO ANDRE</option>
+                          <option value="SANTOS">SANTOS</option>
+                          <option value="SÃO BERNARDO DO CAMPO">SÃO BERNARDO DO CAMPO</option>
+                          <option value="SÃO CARLOS">SÃO CARLOS</option>
+                          <option value="SÃO JOÃO DA BOA VISTA">SÃO JOÃO DA BOA VISTA</option>
+                          <option value="SÃO JOAQUIM  DA BARRA">SÃO JOAQUIM  DA BARRA</option>
+                          <option value="SÃO JOSÉ DO RIO PRETO">SÃO JOSÉ DO RIO PRETO</option>
+                          <option value="SÃO JOSE DOS CAMPOS">SÃO JOSE DOS CAMPOS</option>
+                          <option value="SÃO ROQUE">SÃO ROQUE</option>
+                          <option value="SÃO VICENTE">SÃO VICENTE</option>
+                          <option value="SERTAOZINHO">SERTAOZINHO</option>
+                          <option value="SOROCABA">SOROCABA</option>
+                          <option value="SUL 1">SUL 1</option>
+                          <option value="SUL 2">SUL 2</option>
+                          <option value="SUL 3">SUL 3</option>
+                          <option value="SUMARE">SUMARE</option>
+                          <option value="SUZANO">SUZANO</option>
+                          <option value="TABOÃO DA SERRA">TABOÃO DA SERRA</option>
+                          <option value="TAQUARITINGA">TAQUARITINGA</option>
+                          <option value="TAUBATE">TAUBATE</option>
+                          <option value="TUPA">TUPA</option>
+                          <option value="VOTORANTIM">VOTORANTIM</option>
+                          <option value="VOTUPORANGA">VOTUPORANGA</option>
+                        </select>
+                      </div>
+  
+                      <div class="t1" style="clear:left; width: 33%; margin-top: 15px; display:none" id="prof_ativo_escola">
+                        <label>Escola em que trabalha:</label>
+                        <input type="text" name="escola" id="escola" style="width:100%" />
+                      </div>
                     </div>
                     
                     <div class="linha t1" style="clear:left; margin-top: 30px; width: 84%; float:left">
@@ -253,11 +257,11 @@
                       <label>Bairro</label>
                       <input type="text" name="bairro" id="bairro" style="width: 100%" />
                     </div>
-                    <div class="linha t2" style="clear:left">
+                    <div class="linha t2" style="clear:left; width: 12%">
                       <label>CEP</label>
-                      <input type="text" name="cep" id="cep" />
+                      <input type="text" name="cep" id="cep" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:61%">
+                    <div class="linha t2" style="width:73%">
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
@@ -306,7 +310,7 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="t2" style="clear:left; width: 33%">
+                    <div class="t2" style="clear:left; width: 33%; display:none">
                       <label>Projeto</label>
                       <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
@@ -372,16 +376,11 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        /*
-        $('.disciplina').click(function() {
-          $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
-        });
-        $('.formacao').click(function() {
-          $("label[for='formacao1'], label[for='formacao2'], label[for='formacao3']").hide();
-        });
-        */
         
-        
+        $("input[name=categoria]").click(function() {
+          alert($(this).val());
+        });
+                
         $("#cpf").mask("999.999.999-99");
         $("#rg").mask("9999999?9999");
         $("#celular").mask("(99) 99999999?9");
