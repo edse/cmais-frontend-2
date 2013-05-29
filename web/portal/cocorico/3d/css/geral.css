@@ -89,6 +89,8 @@ body.bg3d{
 .conteudo{
 	text-align: left;
 	width: 970px;
+	position:relative;
+	margin-bottom: 236px;
 }
 .cabecalho{
 	float: left;
@@ -203,4 +205,5 @@ h1.bg3d{
 	margin-bottom: 120px;
 	width: 964px;
 	height: 582px;
+	position:relative;
 }
