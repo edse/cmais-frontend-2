@@ -91,7 +91,7 @@
     function dateJsonSelected(){
       date = $(this);
       //console.log(date.context.value);
-      window.location = "http://cmais.com.br/segundatela/jornaldacultura/" + date.context.value
+      window.location = "http://cmais.com.br/segundatela/<?php echo $nomePrograma ?>/" + date.context.value
     }
     
   });
