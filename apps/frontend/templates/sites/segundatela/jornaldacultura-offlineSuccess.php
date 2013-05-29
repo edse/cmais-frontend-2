@@ -76,21 +76,23 @@
              </div>';
              
              echo $html;
-            /*
-              $('#id'.$data->handler).load($data->url, function(){
-                $('#id'.$data->handler+'.accordion-body iframe').each(function($i){
-                  if($(this).attr('src').indexOf("youtube") != -1){
-                    $cont++;
+             
+             //Função do Youtube 
+             /*echo '
+             <script>
+              function(){
+               $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
+                  if($(this).attr("src").indexOf("youtube") != -1){
+                    cont++;
                     //console.log(cont);
-                    $(this).attr("id","player".$cont);
-                    onYouTubeIframeAPIReadyPlayer("player".$cont , $cont)
+                    $(this).attr("id","player".cont);
+                    onYouTubeIframeAPIReadyPlayer("player".cont , cont)
                   }
                 });      
               });             
-             
-             */
-             
-             
+             </script>';
+              * 
+              */
           }
         }
         
