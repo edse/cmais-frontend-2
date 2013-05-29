@@ -259,7 +259,7 @@
                     </div>
                     <div class="linha t2" style="width:61%">
                       <label>Cidade</label>
-                      <input type="text" name="cidade" id="cidade" style="100%" />
+                      <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
                     <div class="linha t2" style="width:11%">
                       <label>Estado</label>
@@ -297,7 +297,7 @@
                     </div>
                     <div class="linha t2" style="width:66%">
                       <label>Licenciatura</label>
-                      <input type="text" name="licenciatua" id="licenciatura" style="100%" />
+                      <input type="text" name="licenciatua" id="licenciatura" style="width:100%" />
                     </div>
                     <p class="pergunta">Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?</p>
                     <div class="linha t10">
@@ -308,7 +308,7 @@
                     </div>
                     <div class="linha t2" style="clear:left; width: 33%">
                       <label>Projeto</label>
-                      <input type="text" name="projeto" id="projeto" style="100%" />
+                      <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
                     <!--p class="enun">Escolha qual cidade de sua preferência para a realização da prova:</p-->
                     <div class="linha t2" style="clear:left; width: 100%; margin-top: 30px">
