@@ -31,13 +31,7 @@
               <div class="contato grid2">
                 <div class="contatoWrapper">
                   
-                  <h3 class="tit-pagina grid3">Processo seletivo de tutoria - Melhor Gestão Melhor Ensino</h3>
-                  <!--p class="titu">Escola Virtual de Programas Educacionais do Estado de São Paulo (EVESP)</p-->
-                  <!--
-                  <p>Prezado Professor,</p>
-                  <p>Para se cadastrar ao processo seletivo para tutoria do CURSO DE INGLÊS A DISTÂNCIA da EVESP preencha todos os campos do formulário a seguir:</p>
-                  -->
-                  <div style="border: 1px solid #cc0000; padding: 20px; font-weight: bold; font-size: 16px; float:left; color: red">Atenção: as incrições vão até o dia 23/04/2013</div>
+                  <h3 class="tit-pagina grid3"><?php echo $asset->getTitle() ?></h3>
                   
                   <!-- mensagens de status -->
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
