@@ -3,7 +3,7 @@
     
     <style type="text/css">
       .contatoWrapper #form-contato .t10 input { margin-top:-3px; }
-      label.error { width: 100%; clear:both }
+      label.error { width: 100% !important; clear:both !important; }
     </style>
     
     
