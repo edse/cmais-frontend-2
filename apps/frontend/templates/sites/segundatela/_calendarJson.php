@@ -67,9 +67,9 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       nextText:" ",
       prevText:" ",
-      setDate:"06-05-2013",
       inline: true
     });
+    $("#datepicker").datepicker("setDate",<?php echo $date;?>);
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
