@@ -37,7 +37,7 @@ $(document).ready(function() {
     }    
   }
   
-  onYoutubeVerify (handler) {
+  onYoutubeVerify = function(handler) {
     $('#id'+handler+'.accordion-body iframe').each(function(i){
       if($(this).attr('src').indexOf("youtube") != -1){
         cont++;
