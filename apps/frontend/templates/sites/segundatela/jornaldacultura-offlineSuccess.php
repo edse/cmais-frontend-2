@@ -51,7 +51,8 @@
             
       <?php  
         //Ler Json do programa e imprimir htmls
-        $url = "/portal/js/segundatela/log/jornaldacultura-".$date.".json";
+        /*
+        $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
         $json = file_get_contents($url);
         $json_result = json_decode($json);
         
@@ -70,9 +71,11 @@
                <div id="id'.$data->handler.'" class="accordion-body collapse"><div class="accordion-inner"></div>
                </div>
              </div>';
+             
+             echo $html;
           }
         }
-        
+        */
       ?>  
           
       </div>
