@@ -397,10 +397,10 @@
           }
         });
         $("input[name=contrato_fpa]").click(function() {
-          var categoria = $(this).val();
-          if (categoria == "sim")
+          var contrato = $(this).val();
+          if (contrato == "sim")
             $('#projeto').show();
-          if (categoria == "nao")
+          if (contrato == "nao")
             $('#projeto').hide();
         });
                 
