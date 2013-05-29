@@ -398,11 +398,12 @@
         });
         $("input[name=contrato_fpa]").click(function() {
           var contrato = $(this).val();
-          alert(contrato);
-          if (contrato == "sim")
+          if (contrato == "sim") {
             $('#projeto').show();
-          if (contrato == "nao")
+          }
+          if (contrato == "nao") {
             $('#projeto').hide();
+          }
         });
                 
         $("#cpf").mask("999.999.999-99");
