@@ -1,10 +1,9 @@
 <?php
   $now = date('YmdHis');
-  //$schedule = '20130106000000';
-  $schedule = '20130529000000';  
+  $schedule = '20130601000000';
   if($now > $schedule) {
-    header('Location: http://tvcultura.cmais.com.br/preestreia');
-    echo "<script>self.location.href='Location: http://tvcultura.cmais.com.br/preestreia';";
+    //header('Location: http://tvcultura.cmais.com.br/preestreia');
+    echo "<script>self.location.href='http://tvcultura.cmais.com.br/preestreia';</script>";
     die();
   }
 ?>
