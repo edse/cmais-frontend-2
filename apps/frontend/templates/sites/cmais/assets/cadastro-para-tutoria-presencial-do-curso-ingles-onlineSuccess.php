@@ -3,6 +3,7 @@
     
     <style type="text/css">
       .contatoWrapper #form-contato .t10 input { margin-top:-3px; }
+      label.error { width: 100% !important; clear:both !important; }
     </style>
     
     
@@ -268,7 +269,7 @@
                     <div class="linha t2" style="width:11%">
                       <label>Estado</label>
                       <br />
-                      <select class="estado" id="estado" style="width:100%">
+                      <select class="estado" name="estado" id="estado" style="width:100%">
                         <option value="" selected="selected">--</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
@@ -301,7 +302,7 @@
                     </div>
                     <div class="linha t2" style="width:66%">
                       <label>Licenciatura</label>
-                      <input type="text" name="licenciatua" id="licenciatura" style="width:100%" />
+                      <input type="text" name="licenciatura" id="licenciatura" style="width:100%" />
                     </div>
                     <p class="pergunta">Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?</p>
                     <div class="linha t10">
@@ -310,12 +311,12 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="t2" style="clear:left; width: 33%; display:none">
+                    <div class="t2" style="clear:left; width: 33%; display:none" id="contrato_fpa_mais_info">
                       <label>Projeto</label>
                       <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
                     <!--p class="enun">Escolha qual cidade de sua preferência para a realização da prova:</p-->
-                    <div class="linha t2" style="clear:left; width: 100%; margin-top: 30px">
+                    <div class="linha t2" style="clear:left; width: 100%; margin-top: 30px; float:left">
                       <label style="width:100%">Escolha qual cidade de sua preferência para a realização da prova:</label>
                       <select name="localdeprova" id="localdeprova" style="width:auto">
                         <option value="">---</option>
@@ -397,11 +398,13 @@
           }
         });
         $("input[name=contrato_fpa]").click(function() {
-          var categoria = $(this).val();
-          if (categoria == "sim")
-            $('#projeto').show();
-          if (categoria == "nao")
-            $('#projeto').hide();
+          var contrato = $(this).val();
+          if (contrato == "sim") {
+            $('#contrato_fpa_mais_info').show();
+          }
+          if (contrato == "nao") {
+            $('#contrato_fpa_mais_info').hide();
+          }
         });
                 
         $("#cpf").mask("999.999.999-99");
@@ -444,44 +447,6 @@
             });         
           },
           rules:{
-            /*
-            disciplina:{
-              required: function() {
-                if ($('#disciplina2').is(':checked') || $('#disciplina3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            disciplina2:{
-              required: function() {
-                if ($('#disciplina1').is(':checked') || $('#disciplina3').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            disciplina3:{
-              required: function() {
-                if ($('#disciplina1').is(':checked') || $('#disciplina2').is(':checked')) {
-                  return false;
-                }
-                else {
-                  return true;
-                } 
-                
-              }
-            },
-            */
-            disciplina: {
-              required: true
-            },
             nome:{
               required: true,
               minlength: 5
@@ -503,63 +468,71 @@
             celular:{
               required: true
             },
-            /*
-            formacao1:{
+            categoria: {
+              required: true,
+            },
+            prof_ativo_tipo: {
               required: function() {
-                if ($('#formacao2').is(':checked') || $('#formacao3').is(':checked')) {
-                  return false;
+                if ($('#prof_ativo').is(':checked')) {
+                  return true;
                 }
                 else {
-                  return true;
+                  return false;
                 } 
-                
               }
             },
-            formacao2:{
+            diretoria: {
               required: function() {
-                if ($('#formacao1').is(':checked') || $('#formacao3').is(':checked')) {
-                  return false;
+                if ($('#prof_ativo').is(':checked') || $('#prof_inativo').is(':checked') || $('#pcnp').is(':checked')) {
+                  return true;
                 }
                 else {
-                  return true;
+                  return false;
                 } 
-                
               }
             },
-            formacao3:{
+            escola: {
               required: function() {
-                if ($('#formacao1').is(':checked') || $('#formacao2').is(':checked')) {
-                  return false;
+                if ($('#prof_ativo').is(':checked')) {
+                  return true;
                 }
                 else {
-                  return true;
+                  return false;
                 } 
-                
               }
             },
-            */
-            formacao: {
+            endereco: {
               required: true
             },
-            participou:{
+            numero: {
               required: true
             },
-            fpavinculo:{
+            cep: {
               required: true
             },
-            exp_coord_tutoria:{
+            cidade: {
               required: true
+            },
+            estado:{
+              required: true
+            },
+            licenciatura:{
+              required: true
+            },
+            contrato_fpa:{
+              required: true
+            },
+            projeto:{
+              required: function() {
+                if ($('#sim').is(':checked')) {
+                  return true;
+                }
+                else {
+                  return false;
+                } 
+              }
             },
             localdeprova:{
-              required: true
-            },
-            exp_coord_tutoria: {
-              required: true
-            },
-            atuacao_sup: {
-              required: true
-            },
-            part_encontro: {
               required: true
             },
             captcha: {
