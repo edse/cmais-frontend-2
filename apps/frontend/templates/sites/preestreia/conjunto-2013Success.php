@@ -4,7 +4,7 @@
   $schedule = '20130529000000';  
   if($now > $schedule) {
     header('Location: http://tvcultura.cmais.com.br/preestreia');
-    echo "$now > $schedule";
+    echo "<script>self.location.href='Location: http://tvcultura.cmais.com.br/preestreia';";
     die();
   }
 ?>
