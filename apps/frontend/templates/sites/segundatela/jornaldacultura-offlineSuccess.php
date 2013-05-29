@@ -50,12 +50,12 @@
       <div class="accordion" id="accordion2">
         <script>
           cont=1;
-          onYoutubeVerify = function(handler) {
+          function onYoutubeVerify(handler) {
             $('#id'+handler+'.accordion-body iframe').each(function(i){
               if($(this).attr('src').indexOf("youtube") != -1){
                 cont++;
                 $(this).attr("id","player"+cont);
-                onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+                onYouTubeIframeAPIReadyPlayer("player"+cont , cont);
               }
             });
           }
