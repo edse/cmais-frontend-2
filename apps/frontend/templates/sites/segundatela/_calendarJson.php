@@ -69,7 +69,7 @@
       prevText:" ",
       inline: true
     });
-    $("#datepicker").datepicker("setDate",'06-05-2013');
+    $("#datepicker").datepicker("setDate",<?php echo $date;?>);
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
