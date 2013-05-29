@@ -56,7 +56,7 @@
     <div class="span4">
       <!-- CALENDARIO -->
       <?php $nomePrograma = "jornaldacultura";?>
-      <?php include_partial_from_folder('sites/segundatela', 'global/calendar', array('nomePrograma' => $nomePrograma)) ?>
+      <?php include_partial_from_folder('sites/segundatela', 'global/calendarJson', array('nomePrograma' => $nomePrograma)) ?>
       <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
