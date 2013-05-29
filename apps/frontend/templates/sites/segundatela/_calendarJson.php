@@ -12,11 +12,11 @@
   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script-->
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-
+  <?php echo $date.">>>>>>";?>
   <script>
   
     <?php
-    echo ">>>>>>";
+    
   //puxando logs do programa
   $i = 0;
   echo 'var dateList = new Array();';
