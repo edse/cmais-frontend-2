@@ -62,9 +62,8 @@
 					</div>
 				</div>
 			</div>	
-
-
-                	<!-- RODAPE -->
+			<hr />
+			<!-- RODAPE -->
 		<div id="rodape-portal">
 			<div class="capa-voltar-topo">
 				<a class="voltar-topo" href="#"><span></span>voltar ao topo</a>
