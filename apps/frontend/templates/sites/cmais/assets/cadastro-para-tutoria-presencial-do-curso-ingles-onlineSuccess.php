@@ -378,7 +378,18 @@
       $(document).ready(function(){
         
         $("input[name=categoria]").click(function() {
-          alert($(this).val());
+          var categoria = $(this).val();
+          if (categoria == "professor ativo") {
+            $("#prof_ativo_tipo, #categoria_diretoria, #prof_ativo_escola").show();
+          }
+          if (categoria == "pcnp") {
+            $("#categoria_diretoria").show();
+            $("prof_ativo_tipo, #prof_ativo_escola").hide();
+          }
+          if (categoria == "professor inativo") {
+            $("#categoria_diretoria").show();
+            $("prof_ativo_tipo, #prof_ativo_escola").hide();
+          }
         });
                 
         $("#cpf").mask("999.999.999-99");
