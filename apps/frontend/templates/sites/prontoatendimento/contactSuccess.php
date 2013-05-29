@@ -273,9 +273,6 @@
               required: true,
               email: true
             },
-            telefone:{
-              required: true
-            },
             cidade:{
               required: true,
               minlength: 3
