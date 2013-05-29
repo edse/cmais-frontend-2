@@ -310,7 +310,7 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="t2" style="clear:left; width: 33%; display:none">
+                    <div class="t2" style="clear:left; width: 33%; display:none" id="contrato_fpa_mais_info">
                       <label>Projeto</label>
                       <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
@@ -399,10 +399,10 @@
         $("input[name=contrato_fpa]").click(function() {
           var contrato = $(this).val();
           if (contrato == "sim") {
-            $('#projeto').parent().show();
+            $('#contrato_fpa_mais_info').show();
           }
           if (contrato == "nao") {
-            $('#projeto').parent().hide();
+            $('#contrato_fpa_mais_info').hide();
           }
         });
                 
