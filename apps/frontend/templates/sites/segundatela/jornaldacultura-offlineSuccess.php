@@ -125,6 +125,6 @@
   
 <?php
   foreach ($json_result as $data){
-    echo '<script>onYoutubeVerify('.$data->handler.');</script>';
+    echo '<script> onYoutubeVerify("'.$data->handler.'"); </script>';
   }
 ?>
