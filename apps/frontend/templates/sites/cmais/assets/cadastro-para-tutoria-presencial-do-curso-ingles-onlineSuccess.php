@@ -306,7 +306,7 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="linha t2" style="clear:left; width: 33%">
+                    <div class="t2" style="clear:left; width: 33%">
                       <label>Projeto</label>
                       <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
