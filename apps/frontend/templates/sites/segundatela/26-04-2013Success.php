@@ -94,7 +94,7 @@
   <script>
   
     <?php
-  
+  $nomePrograma = "rodaviva";
   //puxando logs do programa
   $i = 0;
   echo 'var dateList = new Array();';
@@ -104,7 +104,7 @@
       if ($programast != "." && $programast != "..") {
         $programast = explode ('-', $programast);
         
-        if($programast[0]=="jornaldacultura"){
+        if($programast[0]==$nomePrograma){
           $dateJson = explode(".", $programast[3]);
           
           //criando variavel para o javascript
