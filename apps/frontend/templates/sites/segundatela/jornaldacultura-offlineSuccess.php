@@ -49,6 +49,7 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <script>
+          cont=0;
           onYoutubeVerify = function(handler) {
             $('#id'+handler+'.accordion-body iframe').each(function(i){
               if($(this).attr('src').indexOf("youtube") != -1){
