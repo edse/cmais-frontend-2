@@ -10,6 +10,11 @@ body { background:#fff url(/portal/images/capaPrograma/segundatela/rodaviva/bg.j
   .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/rodaviva/logo2.png") no-repeat scroll 0 0 transparent; width:150px; height:75px; }
 }
 
+@media screen and (min-width: 1025px){
+  #myTab{clear:both;}   
+  
+}
+
 @media screen and (max-width: 1024px){
   .conteudo .span4 .box { width:48%; float:left; }
   .conteudo .span4 .box.first { margin-right:4%; }
