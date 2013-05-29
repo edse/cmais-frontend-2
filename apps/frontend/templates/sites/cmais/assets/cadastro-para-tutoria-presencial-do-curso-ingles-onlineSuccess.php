@@ -503,7 +503,8 @@
               }
             },
             endereco: {
-              required: true
+              required: true,
+              minlength: 5
             },
             numero: {
               required: true
@@ -512,13 +513,15 @@
               required: true
             },
             cidade: {
-              required: true
+              required: true,
+              minlength: 2
             },
             estado:{
               required: true
             },
             licenciatura:{
-              required: true
+              required: true,
+              minlength: 2
             },
             contrato_fpa:{
               required: true
