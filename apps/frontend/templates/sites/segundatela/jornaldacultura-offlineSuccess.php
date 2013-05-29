@@ -78,7 +78,7 @@
              echo $html;
              
              //Função do Youtube 
-             echo '
+             /*echo '
              <script>
               function(){
                $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
@@ -91,6 +91,8 @@
                 });      
               });             
              </script>';
+              * 
+              */
           }
         }
         
