@@ -62,8 +62,8 @@
 					</div>
 				</div>
 			</div>	
-
-
+			<hr />
+			
                 	<!-- RODAPE -->
 		<div id="rodape-portal">
 			<div class="capa-voltar-topo">
