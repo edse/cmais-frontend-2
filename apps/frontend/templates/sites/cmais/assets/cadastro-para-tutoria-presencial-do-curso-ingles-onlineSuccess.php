@@ -138,7 +138,7 @@
                         </div>
                       </div>
                        
-                      <div class="t1" style="clear:left; width: 33%; display:none" id="categoria_diretoria">
+                      <div class="t1" style="clear:left; width: auto; display:none" id="categoria_diretoria">
                         <label>Diretoria de Ensino à qual está vinculado(a)</label>
                         <select name="diretoria" id="diretoria" style="width:200px">
                           <option value="">---</option>
@@ -235,7 +235,7 @@
                         </select>
                       </div>
   
-                      <div class="t1" style="clear:left; width: 33%; margin-top: 15px; display:none" id="prof_ativo_escola">
+                      <div class="t1" style="clear:left; width: auto; margin-top: 15px; display:none" id="prof_ativo_escola">
                         <label>Escola em que trabalha:</label>
                         <input type="text" name="escola" id="escola" style="width:100%" />
                       </div>
@@ -383,14 +383,16 @@
             $("#prof_ativo_tipo, #categoria_diretoria, #prof_ativo_escola").show();
           }
           if (categoria == "pcnp") {
+            $("#categoria_mais_info").css('margin-left','33%');
             $("#categoria_diretoria > label").html("Diretoria de Ensino à qual está vinculado(a):");
             $("#categoria_diretoria").show();
-            $("prof_ativo_tipo, #prof_ativo_escola").hide();
+            $("#prof_ativo_tipo, #prof_ativo_escola").hide();
           }
           if (categoria == "professor inativo") {
+            $("#categoria_mais_info").css('margin-left','66%');
             $("#categoria_diretoria > label").html("Diretoria de Ensino da cidade/região em que reside:");
             $("#categoria_diretoria").show();
-            $("prof_ativo_tipo, #prof_ativo_escola").hide();
+            $("#prof_ativo_tipo, #prof_ativo_escola").hide();
           }
         });
                 
