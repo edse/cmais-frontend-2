@@ -119,13 +119,13 @@
                     </div>
                     
                     <div class="linha" style="clear:left; width: 33%">
-                      <label><input type="radio" name="categoria" id="prof_ativo" value="professor ativo" />Professor Ativo</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_ativo" value="professor ativo" style="float:left; margin-right: 5px" />Professor Ativo</label>
                     </div>
                     <div class="linha" style="width:33%">
-                      <label><input type="radio" name="categoria" id="pncp" value="pcnp" />PCNP</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="pncp" value="pcnp" style="float:left; margin-right: 5px" />PCNP</label>
                     </div>
                     <div class="linha" style="width:33%">
-                      <label><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" />Professor Inativo</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" style="float:left; margin-right: 5px" />Professor Inativo</label>
                     </div>
 
                     <div class="linha t10" style="clear:left">

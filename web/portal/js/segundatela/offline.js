@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
   }
 
-  cont=1;
+  //cont=1;
    onYoutubeVerify = function(handler) {
     $('#id'+handler+'.accordion-body iframe').each(function(i){
       if($(this).attr('src').indexOf("youtube") != -1){
