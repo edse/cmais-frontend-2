@@ -81,7 +81,7 @@
              echo '
              <script>
               function(){
-               $(#id'.$data->handler.'.accordion-body iframe).each(function('.$i.'){
+               $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
                   if($(this).attr("src").indexOf("youtube") != -1){
                     cont++;
                     //console.log(cont);
