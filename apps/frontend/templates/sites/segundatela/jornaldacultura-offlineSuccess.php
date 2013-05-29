@@ -76,11 +76,11 @@
              </div>';
              
              echo $html;
+
+             echo '<script>onYoutubeVerify('.$data->handler.');</script>';
              
-             //Função do Youtube 
-             /*echo '
-             <script>
-              function(){
+             /* 
+              function(handler){
                $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
                   if($(this).attr("src").indexOf("youtube") != -1){
                     cont++;
@@ -130,7 +130,7 @@
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <script>
   // retrive sent contents by ajax
   $.ajax({
