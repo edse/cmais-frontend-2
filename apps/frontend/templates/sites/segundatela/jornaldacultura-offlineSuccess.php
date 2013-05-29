@@ -76,21 +76,23 @@
              </div>';
              
              echo $html;
-            /*
-              $('#id'.$data->handler).load($data->url, function(){
-                $('#id'.$data->handler+'.accordion-body iframe').each(function($i){
-                  if($(this).attr('src').indexOf("youtube") != -1){
-                    $cont++;
+
+             echo '<script>onYoutubeVerify('.$data->handler.');</script>';
+             
+             /* 
+              function(handler){
+               $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
+                  if($(this).attr("src").indexOf("youtube") != -1){
+                    cont++;
                     //console.log(cont);
-                    $(this).attr("id","player".$cont);
-                    onYouTubeIframeAPIReadyPlayer("player".$cont , $cont)
+                    $(this).attr("id","player".cont);
+                    onYouTubeIframeAPIReadyPlayer("player".cont , cont)
                   }
                 });      
               });             
-             
-             */
-             
-             
+             </script>';
+              * 
+              */
           }
         }
         
@@ -128,7 +130,7 @@
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <script>
   // retrive sent contents by ajax
   $.ajax({
