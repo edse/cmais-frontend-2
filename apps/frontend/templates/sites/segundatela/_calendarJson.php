@@ -67,7 +67,7 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       nextText:" ",
       prevText:" ",
-      setDate:"10-03-2012",
+      setDate:"27-5-2012",
       inline: true
     });
     
