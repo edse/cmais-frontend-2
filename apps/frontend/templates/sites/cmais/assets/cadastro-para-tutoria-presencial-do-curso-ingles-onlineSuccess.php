@@ -386,6 +386,7 @@
         $("#rg").mask("9999999?9999");
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
+        $("#cep").mask("99999-999");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
