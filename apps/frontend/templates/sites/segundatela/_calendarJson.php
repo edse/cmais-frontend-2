@@ -67,7 +67,7 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       nextText:" ",
       prevText:" ",
-      showCurrentAtPos: 3-05-2013,
+      showCurrentAtPos: 4,
       inline: true
     });
     
