@@ -67,10 +67,9 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       nextText:" ",
       prevText:" ",
-      showCurrentAtPos: 4,
       inline: true
     });
-    
+    $("#datepicker").datepicker("setDate",'2013-05-27');
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
