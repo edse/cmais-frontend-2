@@ -150,11 +150,18 @@ h1.bg3d{
 	background-position: -374px 0;
 	width: 75px;
 }
+/*
 .btn{
 	float: right;
 	height: 47px;
 	margin: 50px 0 0 0;
 	*margin: 60px 0 0 0;
+}
+*/
+.btn{
+  position:absolute;
+  height: 47px;
+  top:150px;
 }
 .btn a.glasses{
 	background: url(../images/btn-fazer.png) no-repeat;
@@ -192,7 +199,7 @@ h1.bg3d{
 	}
 }
 .video{
-	border: 3px solid #f2f2f2;
+	/* border: 3px solid #f2f2f2; */
 	margin-bottom: 120px;
 	width: 964px;
 	height: 582px;
