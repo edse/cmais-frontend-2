@@ -103,8 +103,6 @@ p#enviar { margin:0; }
 #esquerda h4 { text-align:left; }
 .box-padrao.facebook { width:290px !important; }
 
- 
-
 /* IE*/
 #conteudo-pagina { *background:#67170a; }
 #menuFloat { *display:none; }
@@ -113,3 +111,4 @@ p#enviar { margin:0; }
 #destaque p  { *width:100%; }
 /* IE*/
 
+.rodape-cmais { display:none !important; }
