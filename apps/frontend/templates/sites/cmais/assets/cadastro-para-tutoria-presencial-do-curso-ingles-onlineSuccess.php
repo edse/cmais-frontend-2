@@ -97,7 +97,8 @@
                   <!-- formulario -->
                   <form id="form-contato" method="post" action="">
                     
-                    <p class="enun">Dados de identificação</p>
+                    <!--p class="enun">Dados de identificação</p-->
+                    
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
                       <input type="text" name="nome" id="nome" style="width:626px" />
@@ -143,7 +144,7 @@
                      
                     <div class="linha t2">
                       <label>Diretoria de Ensino à qual está vinculado(a)</label>
-                      <select name="prof_ativo_diretoria" id="prof_ativo_diretoria" style="width:200px">
+                      <select name="diretoria" id="diretoria" style="width:200px">
                         <option value="">---</option>
                         <option value="AMERICANA">AMERICANA</option>
                         <option value="ANDRADINA">ANDRADINA</option>
@@ -244,218 +245,51 @@
                     </div>
                     
                     <div class="linha t2">
-                      <label>Diretoria de Ensino da cidade/região em que reside</label>
-                      <select name="diretoria_residencia" id="diretoria_residencia" style="width:200px">
-                        <option value="">---</option>
-                        <option value="AMERICANA">AMERICANA</option>
-                        <option value="ANDRADINA">ANDRADINA</option>
-                        <option value="APIAI">APIAI</option>
-                        <option value="ARAÇATUBA">ARAÇATUBA</option>
-                        <option value="ARARAQUARA">ARARAQUARA</option>
-                        <option value="ASSIS">ASSIS</option>
-                        <option value="AVARE">AVARE</option>
-                        <option value="BARRETOS">BARRETOS</option>
-                        <option value="BAURU">BAURU</option>
-                        <option value="BIRIGUI">BIRIGUI</option>
-                        <option value="BOTUCATU">BOTUCATU</option>
-                        <option value="BRAGANÇA PAULISTA">BRAGANÇA PAULISTA</option>
-                        <option value="CAIEIRAS">CAIEIRAS</option>
-                        <option value="CAMPINAS LESTE">CAMPINAS LESTE</option>
-                        <option value="CAMPINAS OESTE">CAMPINAS OESTE</option>
-                        <option value="CAPIVARI">CAPIVARI</option>
-                        <option value="CARAGUATATUBA">CARAGUATATUBA</option>
-                        <option value="CARAPICUIBA">CARAPICUIBA</option>
-                        <option value="CATANDUVA">CATANDUVA</option>
-                        <option value="CENTRO">CENTRO</option>
-                        <option value="CENTRO OESTE">CENTRO OESTE</option>
-                        <option value="CENTRO SUL">CENTRO SUL</option>
-                        <option value="DIADEMA">DIADEMA</option>
-                        <option value="FERNANDOPOLIS">FERNANDOPOLIS</option>
-                        <option value="FRANCA">FRANCA</option>
-                        <option value="GUARATINGUETA">GUARATINGUETA</option>
-                        <option value="GUARULHOS NORTE">GUARULHOS NORTE</option>
-                        <option value="GUARULHOS SUL">GUARULHOS SUL</option>
-                        <option value="ITAPECERICA DA SERRA">ITAPECERICA DA SERRA</option>
-                        <option value="ITAPETININGA">ITAPETININGA</option>
-                        <option value="ITAPEVA">ITAPEVA</option>
-                        <option value="ITAPEVI">ITAPEVI</option>
-                        <option value="ITAQUAQUECETUBA">ITAQUAQUECETUBA</option>
-                        <option value="ITARARE">ITARARE</option>
-                        <option value="ITU">ITU</option>
-                        <option value="JABOTICABAL">JABOTICABAL</option>
-                        <option value="JACAREI">JACAREI</option>
-                        <option value="JALES">JALES</option>
-                        <option value="JAU">JAU</option>
-                        <option value="JOSE BONIFACIO">JOSE BONIFACIO</option>
-                        <option value="JUNDIAI">JUNDIAI</option>
-                        <option value="LESTE 1">LESTE 1</option>
-                        <option value="LESTE 2">LESTE 2</option>
-                        <option value="LESTE 3">LESTE 3</option>
-                        <option value="LESTE 4">LESTE 4</option>
-                        <option value="LESTE 5">LESTE 5</option>
-                        <option value="LIMEIRA">LIMEIRA</option>
-                        <option value="LINS">LINS</option>
-                        <option value="MARILIA">MARILIA</option>
-                        <option value="MAUA">MAUA</option>
-                        <option value="MIRACATU">MIRACATU</option>
-                        <option value="MIRANTE DO PARANAPANEMA">MIRANTE DO PARANAPANEMA</option>
-                        <option value="MOGI DAS CRUZES">MOGI DAS CRUZES</option>
-                        <option value="MOGI MIRIM">MOGI MIRIM</option>
-                        <option value="NORTE 1">NORTE 1</option>
-                        <option value="NORTE 2">NORTE 2</option>
-                        <option value="OSASCO">OSASCO</option>
-                        <option value="OURINHOS">OURINHOS</option>
-                        <option value="PENAPOLIS">PENAPOLIS</option>
-                        <option value="PINDAMONHANGABA">PINDAMONHANGABA</option>
-                        <option value="PIRACICABA">PIRACICABA</option>
-                        <option value="PIRAJU">PIRAJU</option>
-                        <option value="PIRASSUNUNGA">PIRASSUNUNGA</option>
-                        <option value="PRESIDENTE PRUDENTE">PRESIDENTE PRUDENTE</option>
-                        <option value="REGISTRO">REGISTRO</option>
-                        <option value="RIBEIRÃO PRETO">RIBEIRÃO PRETO</option>
-                        <option value="SANTO ANASTACIO">SANTO ANASTACIO</option>
-                        <option value="SANTO ANDRE">SANTO ANDRE</option>
-                        <option value="SANTOS">SANTOS</option>
-                        <option value="SÃO BERNARDO DO CAMPO">SÃO BERNARDO DO CAMPO</option>
-                        <option value="SÃO CARLOS">SÃO CARLOS</option>
-                        <option value="SÃO JOÃO DA BOA VISTA">SÃO JOÃO DA BOA VISTA</option>
-                        <option value="SÃO JOAQUIM  DA BARRA">SÃO JOAQUIM  DA BARRA</option>
-                        <option value="SÃO JOSÉ DO RIO PRETO">SÃO JOSÉ DO RIO PRETO</option>
-                        <option value="SÃO JOSE DOS CAMPOS">SÃO JOSE DOS CAMPOS</option>
-                        <option value="SÃO ROQUE">SÃO ROQUE</option>
-                        <option value="SÃO VICENTE">SÃO VICENTE</option>
-                        <option value="SERTAOZINHO">SERTAOZINHO</option>
-                        <option value="SOROCABA">SOROCABA</option>
-                        <option value="SUL 1">SUL 1</option>
-                        <option value="SUL 2">SUL 2</option>
-                        <option value="SUL 3">SUL 3</option>
-                        <option value="SUMARE">SUMARE</option>
-                        <option value="SUZANO">SUZANO</option>
-                        <option value="TABOÃO DA SERRA">TABOÃO DA SERRA</option>
-                        <option value="TAQUARITINGA">TAQUARITINGA</option>
-                        <option value="TAUBATE">TAUBATE</option>
-                        <option value="TUPA">TUPA</option>
-                        <option value="VOTORANTIM">VOTORANTIM</option>
-                        <option value="VOTUPORANGA">VOTUPORANGA</option>
-                      </select>
+                      <label>Endereço residencial</label>
+                      <input type="text" name="endereco" id="endereco" />
                     </div>
-                    <!--
-                    <div>
-                      <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" class="disciplina" name="disciplina1" id="disciplina1" value="Língua Portuguesa" style="float:left; margin-right:10px" />
-                        <label style="margin-top:4px">Língua Portuguesa</label>
-                      </div>
-                      <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" class="disciplina" name="disciplina2" id="disciplina2" value="Matemática" style="float:left; margin-right:10px" />
-                        <label style="margin-top:4px">Matemática</label>
-                      </div>
-                      <div class="linha t7" style="margin-right: 30px">
-                        <input type="checkbox" class="disciplina" name="disciplina3" id="disciplina3" value="Gestão Escolar" style="float:left; margin-right:10px" />
-                        <label style="margin-top:4px">Gestão Escolar</label>
-                      </div>
-                    </div>
-                    -->
-                    
-                    <!--span class="linhaFundo"></span-->
-                    
-
-                    <!--span class="linhaFundo"></span-->
-                    
-                    <p class="enun">Formação Acadêmica</p>
                     <div class="linha t2">
-                      <label>Escolha</label>
-                      <select name="formacao" id="formacao" style="width:200px">
-                        <option value="">---</option>
-                        <option value="Licenciado em Letras / Português">Licenciado em Letras / Português</option>
-                        <option value="Licenciado em Matemática">Licenciado em Matemática</option>
-                        <option value="Gestão Escolar">Gestão Escolar</option>
-                      </select>
+                      <label>Número</label>
+                      <input type="text" name="numero" id="numero" />
                     </div>
-                    <!--
-                    <div>
-                      <div class="linha t7" style="clear:both">
-                        <input type="checkbox" class="formacao" name="formacao1" id="formacao1" value="Licenciado em Letras / Português"  style="float:left; margin-right:10px"/>
-                        <label style="margin-top:4px">Licenciado em Letras / Português</label>
-                      </div>
-                      <div class="linha t7" style="clear:both">
-                        <input type="checkbox" class="formacao" name="formacao2" id="formacao2" value="Licenciado em Matemática"  style="float:left; margin-right:10px"/>
-                        <label style="margin-top:4px">Licenciado em Matemática</label>
-                      </div>
-                      <div class="linha t7" style="clear:both">
-                        <input type="checkbox" class="formacao" name="formacao3" id="formacao3" value="Licenciado em Gestão Escolar"  style="float:left; margin-right:10px"/>
-                        <label style="margin-top:4px">Licenciado em Gestão Escolar</label>
-                      </div>
+                    <div class="linha t2">
+                      <label>Complemento</label>
+                      <input type="text" name="complemento" id="complemento" />
                     </div>
-                    -->
-
-                    <!--span class="linhaFundo"></span-->
-                    
-                    <p class="enun">Outras informações</p>
-
-                    <p class="pergunta">Participou como professor tutor em algum curso a distância?</p>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="participou" id="sim1" value="sim" />Sim</label>
+                    <div class="linha t2">
+                      <label>Bairro</label>
+                      <input type="text" name="bairro" id="bairro" />
                     </div>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="participou" id="nao1" value="nao" />Não</label>
+                    <div class="linha t2">
+                      <label>CEP</label>
+                      <input type="text" name="cep" id="cep" />
                     </div>
-                    
-                    <!--span class="linhaFundo"></span-->
-                    
-                    <p class="pergunta">Teve contrato ou carteira assinada com a FPA (Fundação Padre Anchieta – TV Cultura) nos últimos 06 meses?</p>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="fpavinculo" id="sim2" value="sim" />Sim</label>
-                    </div>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="fpavinculo" id="nao2" value="nao" />Não</label>
-                    </div>
-
-                    <!--span class="linhaFundo"></span--> 
-                    
-                    <p class="pergunta">Possui experiência com coordenação de tutoria online?</p>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="exp_coord_tutoria" id="sim3" value="sim" />Sim</label>
-                    </div>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="exp_coord_tutoria" id="nao3" value="nao" />Não</label>
-                    </div>
-                    
-                    <!--span class="linhaFundo"></span-->
-                    
-                    <p class="pergunta">Esta atuando como Supervisor de Ensino da rede pública estadual de São Paulo?</p>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="atuacao_sup" id="sim4" value="sim" />Sim</label>
-                    </div>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="atuacao_sup" id="nao4" value="nao" />Não</label>
-                    </div>
-                    
-                    <!--span class="linhaFundo"></span-->
-                    
-                     <p class="pergunta">Participou como cursista no encontro presencial realizado pela EFAP/CEGEB no Curso de Supervisores, de 01 a 04 de abril do ano de 2013, em Águas de Lindóia?</p>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="part_encontro" id="sim5" value="sim" />Sim</label>
-                    </div>
-                    <div class="linha t10">
-                      
-                      <label><input type="radio" name="part_encontro" id="nao5" value="nao" />Não</label>
-                    </div>
-                    
-                    <!--span class="linhaFundo"></span-->
-
-
-                    <p class="enun">Local de Prova</p>
                     <div class="linha t2">
                       <label>Cidade</label>
+                      <input type="text" name="cidade" id="cidade" />
+                    </div>
+                    <div class="linha t2">
+                      <label>Estado</label>
+                      <input type="text" name="estado" id="estado" />
+                    </div>
+                    <div class="linha t2">
+                      <label>Licenciatura</label>
+                      <input type="text" name="licenciatua" id="licenciatura" />
+                    </div>
+                    <p class="pergunta">Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?</p>
+                    <div class="linha t10">
+                      <label><input type="radio" name="contrato_fpa" id="sim" value="sim" />Sim</label>
+                    </div>
+                    <div class="linha t10">
+                      <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
+                    </div>
+                    <div class="linha t2">
+                      <label>Projeto</label>
+                      <input type="text" name="projeto" id="projeto" />
+                    </div>
+                    <!--p class="enun">Escolha qual cidade de sua preferência para a realização da prova:</p-->
+                    <div class="linha t2">
+                      <label>Escolha qual cidade de sua preferência para a realização da prova:</label>
                       <select name="localdeprova" id="localdeprova" style="width:170px">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
@@ -470,8 +304,6 @@
                         <option value="Sorocaba">Sorocaba</option>
                       </select>
                     </div>
-                    
-                    <!--span class="linhaFundo"></span-->
                     
                     <div class="linha t3 codigo" id="captchaimage">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
