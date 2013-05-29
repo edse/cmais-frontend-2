@@ -399,10 +399,10 @@
         $("input[name=contrato_fpa]").click(function() {
           var contrato = $(this).val();
           if (contrato == "sim") {
-            $('#projeto').show();
+            $('#projeto').parent().show();
           }
           if (contrato == "nao") {
-            $('#projeto').hide();
+            $('#projeto').parent().hide();
           }
         });
                 
