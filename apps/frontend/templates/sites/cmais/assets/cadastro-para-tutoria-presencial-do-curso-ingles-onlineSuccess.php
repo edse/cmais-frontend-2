@@ -131,7 +131,7 @@
                     <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
                     </div>
-                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
+                    <div class="linha t10" style="width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
                     </div>
                      
@@ -253,11 +253,11 @@
                       <label>Bairro</label>
                       <input type="text" name="bairro" id="bairro" style="width: 100%" />
                     </div>
-                    <div class="linha t2" style="clear:left">
+                    <div class="linha t2" style="clear:left; width: 12%">
                       <label>CEP</label>
-                      <input type="text" name="cep" id="cep" />
+                      <input type="text" name="cep" id="cep" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:61%">
+                    <div class="linha t2" style="width:73%">
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
