@@ -62,17 +62,35 @@
           if($data->type == 'place')  $c = 'icon-map-marker';
           if($data->type == 'poll')   $c = 'icon-enquete';
           if($data->source){
+            $conteudo_url = file_get_contents($data->url);  
             $html = '
              <div class="accordion-group"> 
                <div class="accordion-heading"> 
                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
                  <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
                </div>
-               <div id="id'.$data->handler.'" class="accordion-body collapse"><div class="accordion-inner"></div>
+               <div id="id'.$data->handler.'" class="accordion-body collapse">
+                  '.$conteudo_url.'
+               <div class="accordion-inner"></div>
                </div>
              </div>';
              
              echo $html;
+            /*
+              $('#id'.$data->handler).load($data->url, function(){
+                $('#id'.$data->handler+'.accordion-body iframe').each(function($i){
+                  if($(this).attr('src').indexOf("youtube") != -1){
+                    $cont++;
+                    //console.log(cont);
+                    $(this).attr("id","player".$cont);
+                    onYouTubeIframeAPIReadyPlayer("player".$cont , $cont)
+                  }
+                });      
+              });             
+             
+             */
+             
+             
           }
         }
         
