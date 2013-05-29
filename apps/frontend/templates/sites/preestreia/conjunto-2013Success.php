@@ -1,3 +1,13 @@
+<?php
+  $now = date('YmdHis');
+  //$schedule = '20130106000000';
+  $schedule = '20130529000000';  
+  if($now > $schedule) {
+    header('Location: http://tvcultura.cmais.com.br/preestreia');
+    echo "<script>self.location.href='Location: http://tvcultura.cmais.com.br/preestreia';";
+    die();
+  }
+?>
 <script type="text/javascript">
 var error = getParameterByName('error');
 var success = getParameterByName('success');

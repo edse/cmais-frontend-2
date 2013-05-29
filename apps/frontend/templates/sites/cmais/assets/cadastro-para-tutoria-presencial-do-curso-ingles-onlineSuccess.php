@@ -119,19 +119,19 @@
                     </div>
                     
                     <div class="linha" style="clear:left; width: 33%">
-                      <label><input type="radio" name="categoria" id="prof_ativo" value="professor ativo" />Professor Ativo</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_ativo" value="professor ativo" style="float:left; margin-right: 5px" />Professor Ativo</label>
                     </div>
                     <div class="linha" style="width:33%">
-                      <label><input type="radio" name="categoria" id="pncp" value="pcnp" />PCNP</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="pncp" value="pcnp" style="float:left; margin-right: 5px" />PCNP</label>
                     </div>
                     <div class="linha" style="width:33%">
-                      <label><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" />Professor Inativo</label>
+                      <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" style="float:left; margin-right: 5px" />Professor Inativo</label>
                     </div>
 
-                    <div class="linha t10" style="clear:left">
+                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
                     </div>
-                    <div class="linha t10">
+                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
                     </div>
                      
@@ -249,25 +249,55 @@
                       <label>Complemento</label>
                       <input type="text" name="complemento" id="complemento" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:33%">
+                    <div class="linha t2" style="width:63%">
                       <label>Bairro</label>
-                      <input type="text" name="bairro" id="bairro" style="100%" />
+                      <input type="text" name="bairro" id="bairro" style="width: 100%" />
                     </div>
                     <div class="linha t2" style="clear:left">
                       <label>CEP</label>
                       <input type="text" name="cep" id="cep" />
                     </div>
-                    <div class="linha t2" style="width:33%">
+                    <div class="linha t2" style="width:61%">
                       <label>Cidade</label>
-                      <input type="text" name="cidade" id="cidade" />
+                      <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:11%">
                       <label>Estado</label>
-                      <input type="text" name="estado" id="estado" />
+                      <br />
+                      <select class="estado" id="estado" style="width:100%">
+                        <option value="" selected="selected">--</option>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Amap&aacute;">AP</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Cear&aacute;">CE</option>
+                        <option value="Distrito Federal">DF</option>
+                        <option value="Espirito Santo">ES</option>
+                        <option value="Goi&aacute;s">GO</option>
+                        <option value="Maranh&atilde;o">MA</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Mato Grosso do Sul">MS</option>
+                        <option value="Mato Grosso">MT</option>
+                        <option value="Par&aacute;">PA</option>
+                        <option value="Para&iacute;ba">PB</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piau&iacute;">PI</option>
+                        <option value="Paran&aacute;">PR</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Rio Grande do Norte">RN</option>
+                        <option value="Rond&ocirc;nia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="S&atilde;o Paulo">SP</option>
+                        <option value="Tocantins">TO</option>
+                    </select>
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:66%">
                       <label>Licenciatura</label>
-                      <input type="text" name="licenciatua" id="licenciatura" />
+                      <input type="text" name="licenciatua" id="licenciatura" style="width:100%" />
                     </div>
                     <p class="pergunta">Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?</p>
                     <div class="linha t10">
@@ -276,14 +306,14 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="linha t2">
+                    <div class="t2" style="clear:left; width: 33%">
                       <label>Projeto</label>
-                      <input type="text" name="projeto" id="projeto" />
+                      <input type="text" name="projeto" id="projeto" style="width:100%" />
                     </div>
                     <!--p class="enun">Escolha qual cidade de sua preferência para a realização da prova:</p-->
-                    <div class="linha t2">
-                      <label>Escolha qual cidade de sua preferência para a realização da prova:</label>
-                      <select name="localdeprova" id="localdeprova" style="width:170px">
+                    <div class="linha t2" style="clear:left; width: 100%; margin-top: 30px">
+                      <label style="width:100%">Escolha qual cidade de sua preferência para a realização da prova:</label>
+                      <select name="localdeprova" id="localdeprova" style="width:auto">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
                         <option value="Bauru">Bauru</option>
@@ -298,7 +328,7 @@
                       </select>
                     </div>
                     
-                    <div class="linha t3 codigo" id="captchaimage">
+                    <div class="linha t3 codigo" id="captchaimage" style="margin-top: 30px">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
@@ -356,6 +386,7 @@
         $("#rg").mask("9999999?9999");
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
+        $("#cep").mask("99999-999");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
