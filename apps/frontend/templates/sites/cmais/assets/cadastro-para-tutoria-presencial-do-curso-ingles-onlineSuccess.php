@@ -128,10 +128,10 @@
                       <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" style="float:left; margin-right: 5px" />Professor Inativo</label>
                     </div>
 
-                    <div class="linha t10" style="clear:left">
+                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
                     </div>
-                    <div class="linha t10">
+                    <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                       <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
                     </div>
                      
@@ -249,9 +249,9 @@
                       <label>Complemento</label>
                       <input type="text" name="complemento" id="complemento" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:33%">
+                    <div class="linha t2" style="width:63%">
                       <label>Bairro</label>
-                      <input type="text" name="bairro" id="bairro" style="100%" />
+                      <input type="text" name="bairro" id="bairro" style="width: 100%" />
                     </div>
                     <div class="linha t2" style="clear:left">
                       <label>CEP</label>
