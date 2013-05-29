@@ -52,18 +52,7 @@
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2">
-        <script>
-          cont=1;
-           onYoutubeVerify = function(handler) {
-            $('#id'+handler+'.accordion-body iframe').each(function(i){
-              if($(this).attr('src').indexOf("youtube") != -1){
-                cont++;
-                $(this).attr("id","player"+cont);
-                onYouTubeIframeAPIReadyPlayer("player"+cont , cont);
-              }
-            });
-          }
-        </script>             
+
       <?php  
         //Ler Json do programa e imprimir htmls
         
