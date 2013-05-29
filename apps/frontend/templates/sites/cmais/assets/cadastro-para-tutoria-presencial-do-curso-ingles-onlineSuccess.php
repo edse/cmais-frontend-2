@@ -381,6 +381,8 @@
         $("input[name=categoria]").click(function() {
           var categoria = $(this).val();
           $("#categoria_diretoria option[value='']").attr('selected',true);
+          $("input[name=prof_ativo_tipo]").prop('checked', false);          
+          $("#escola").val("");          
           if (categoria == "professor ativo") {
             $("#categoria_mais_info").css('margin-left','0');
             $("#prof_ativo_tipo, #categoria_diretoria, #prof_ativo_escola").show();
@@ -420,7 +422,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action.php",
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/2013/cadastro-para-tutoria-presencial-do-curso-ingles-online/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
