@@ -55,7 +55,7 @@
 
       <?php  
         //Ler Json do programa e imprimir htmls
-        
+        /*
         $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
         $json = file_get_contents($url);
         $json_result = json_decode($json);
@@ -82,7 +82,7 @@
              echo $html;
 
              echo '<script>onYoutubeVerify('.$data->handler.');</script>';
-             
+             */
              /* 
               function(handler){
                $(#id'.$data->handler.'.accordion-body iframe).each(function(i){
@@ -96,10 +96,10 @@
               });             
              </script>';
               * 
-              */
+              
           }
         }
-        
+        */
       ?>  
           
       </div>
@@ -136,16 +136,16 @@
 
   <script>
   // retrive sent contents by ajax
-    /*
+    
     $.ajax({
       url:"/portal/js/segundatela/log/jornaldacultura-<?php //echo $date; ?>.json",
       dataType: "json",
       success:function(json){
         $.each(json, function( key, value ) {
           //console.log(value)
-          //contentInfo(value);
+          contentInfo(value);
         });
       }
     });
-    */
+    
   </script>
