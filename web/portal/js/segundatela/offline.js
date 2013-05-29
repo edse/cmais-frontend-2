@@ -36,7 +36,6 @@ $(document).ready(function() {
       });
     }    
   }
-  
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
     //console.log("start"+cont);
     //console.log("obj:"+obj);
@@ -50,6 +49,18 @@ $(document).ready(function() {
       }
     });
   }
+
+  cont=1;
+   onYoutubeVerify = function(handler) {
+    $('#id'+handler+'.accordion-body iframe').each(function(i){
+      if($(this).attr('src').indexOf("youtube") != -1){
+        cont++;
+        $(this).attr("id","player"+cont);
+        onYouTubeIframeAPIReadyPlayer("player"+cont , cont);
+      }
+    });
+  }
+
 
   $('#myTab a').click(function(e) {
     e.preventDefault();
