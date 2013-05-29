@@ -257,14 +257,14 @@
                       <label>CEP</label>
                       <input type="text" name="cep" id="cep" />
                     </div>
-                    <div class="linha t2" style="width:33%">
+                    <div class="linha t2" style="width:61%">
                       <label>Cidade</label>
-                      <input type="text" name="cidade" id="cidade" />
+                      <input type="text" name="cidade" id="cidade" style="100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:11%">
                       <label>Estado</label>
                       <br />
-                      <select class="estado" id="estado">
+                      <select class="estado" id="estado" style="width:100%">
                         <option value="" selected="selected">--</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
@@ -295,9 +295,9 @@
                         <option value="Tocantins">TO</option>
                     </select>
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:66%">
                       <label>Licenciatura</label>
-                      <input type="text" name="licenciatua" id="licenciatura" />
+                      <input type="text" name="licenciatua" id="licenciatura" style="100%" />
                     </div>
                     <p class="pergunta">Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?</p>
                     <div class="linha t10">
@@ -306,14 +306,14 @@
                     <div class="linha t10">
                       <label><input type="radio" name="contrato_fpa" id="nao" value="nao" />Não</label>
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="clear:left; width: 33%">
                       <label>Projeto</label>
-                      <input type="text" name="projeto" id="projeto" />
+                      <input type="text" name="projeto" id="projeto" style="100%" />
                     </div>
                     <!--p class="enun">Escolha qual cidade de sua preferência para a realização da prova:</p-->
-                    <div class="linha t2">
-                      <label>Escolha qual cidade de sua preferência para a realização da prova:</label>
-                      <select name="localdeprova" id="localdeprova" style="width:170px">
+                    <div class="linha t2" style="clear:left; width: 100%; margin-top: 30px">
+                      <label style="width:100%">Escolha qual cidade de sua preferência para a realização da prova:</label>
+                      <select name="localdeprova" id="localdeprova" style="width:auto">
                         <option value="">---</option>
                         <option value="Araçatuba">Araçatuba</option>
                         <option value="Bauru">Bauru</option>
@@ -328,7 +328,7 @@
                       </select>
                     </div>
                     
-                    <div class="linha t3 codigo" id="captchaimage">
+                    <div class="linha t3 codigo" id="captchaimage" style="margin-top: 30px">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
