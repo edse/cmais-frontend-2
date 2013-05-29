@@ -95,7 +95,7 @@
                     
                     <div class="linha t1 exc">
                       <label>Nome completo (sem abreviações)</label>
-                      <input type="text" name="nome" id="nome" style="width:626px" />
+                      <input type="text" name="nome" id="nome" style="width:100%" />
                     </div>
                     <div class="linha t2">
                       <label>CPF</label>
@@ -105,9 +105,9 @@
                       <label>RG</label>
                       <input type="text" name="rg" id="rg" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:48%">
                       <label>E-mail</label>
-                      <input type="text" name="email" id="email" style="width:308px" />
+                      <input type="text" name="email" id="email" style="width:100%" />
                     </div>
                     <div class="linha t2" style="clear:left">
                       <label>Telefone residencial</label>
@@ -118,25 +118,24 @@
                       <input type="text" name="celular" id="celular" style="width:150px" />
                     </div>
                     
-                    <div class="linha t10">
+                    <div class="linha" style="clear:left; width: 33%">
                       <label><input type="radio" name="categoria" id="prof_ativo" value="professor ativo" />Professor Ativo</label>
                     </div>
-                    <div class="linha t10">
+                    <div class="linha" style="width:33%">
                       <label><input type="radio" name="categoria" id="pncp" value="pcnp" />PCNP</label>
                     </div>
-                    <div class="linha t10">
+                    <div class="linha" style="width:33%">
                       <label><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" />Professor Inativo</label>
                     </div>
 
-                    <div class="linha t10">
+                    <div class="linha t10" style="clear:left">
                       <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
                     </div>
                     <div class="linha t10">
-                      
                       <label><input type="radio" name="prof_ativo_tipo" id="temporario" value="temporatio" />Temporário</label>
                     </div>
                      
-                    <div class="linha t2">
+                    <div class="t1" style="clear:left; width: 33%">
                       <label>Diretoria de Ensino à qual está vinculado(a)</label>
                       <select name="diretoria" id="diretoria" style="width:200px">
                         <option value="">---</option>
@@ -233,32 +232,32 @@
                       </select>
                     </div>
 
-                    <div class="linha t2">
+                    <div class="t1" style="clear:left; width: 33%; margin-top: 15px">
                       <label>Escola em que trabalha:</label>
-                      <input type="text" name="escola" id="escola" style="width:150px" />
+                      <input type="text" name="escola" id="escola" style="width:100%" />
                     </div>
                     
-                    <div class="linha t2">
+                    <div class="linha t1" style="clear:left; margin-top: 30px; width: 84%; float:left">
                       <label>Endereço residencial</label>
-                      <input type="text" name="endereco" id="endereco" />
+                      <input type="text" name="endereco" id="endereco" style="width: 100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="float:left; width: 12%; margin-top: 30px">
                       <label>Número</label>
-                      <input type="text" name="numero" id="numero" />
+                      <input type="text" name="numero" id="numero" style="width:100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="clear:left; width: 33%">
                       <label>Complemento</label>
-                      <input type="text" name="complemento" id="complemento" />
+                      <input type="text" name="complemento" id="complemento" style="width:100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:33%">
                       <label>Bairro</label>
-                      <input type="text" name="bairro" id="bairro" />
+                      <input type="text" name="bairro" id="bairro" style="100%" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="clear:left">
                       <label>CEP</label>
                       <input type="text" name="cep" id="cep" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="width:33%">
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" />
                     </div>
