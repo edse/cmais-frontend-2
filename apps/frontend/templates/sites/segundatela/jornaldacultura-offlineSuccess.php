@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<script type="text/javascript" src="/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -49,8 +53,8 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <script>
-          cont=1;
-          function onYoutubeVerify(handler) {
+          //cont=1;
+           onYoutubeVerify = function(handler) {
             $('#id'+handler+'.accordion-body iframe').each(function(i){
               if($(this).attr('src').indexOf("youtube") != -1){
                 cont++;
@@ -140,18 +144,19 @@
     </div>
     <!-- /direita -->
   </div>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
   <script>
   // retrive sent contents by ajax
-  $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
-    dataType: "json",
-    success:function(json){
-      $.each(json, function( key, value ) {
-        //console.log(value)
-        //contentInfo(value);
-      });
-    }
-  });
+    /*
+    $.ajax({
+      url:"/portal/js/segundatela/log/jornaldacultura-<?php //echo $date; ?>.json",
+      dataType: "json",
+      success:function(json){
+        $.each(json, function( key, value ) {
+          //console.log(value)
+          //contentInfo(value);
+        });
+      }
+    });
+    */
   </script>
