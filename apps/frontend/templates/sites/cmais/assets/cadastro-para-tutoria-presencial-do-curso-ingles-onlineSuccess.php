@@ -269,7 +269,7 @@
                     <div class="linha t2" style="width:11%">
                       <label>Estado</label>
                       <br />
-                      <select class="estado" id="estado" style="width:100%">
+                      <select class="estado" name="estado" id="estado" style="width:100%">
                         <option value="" selected="selected">--</option>
                         <option value="Acre">AC</option>
                         <option value="Alagoas">AL</option>
@@ -524,7 +524,7 @@
             },
             projeto:{
               required: function() {
-                if ($('#contrato_fpa').is(':checked')) {
+                if ($('#sim').is(':checked')) {
                   return true;
                 }
                 else {
