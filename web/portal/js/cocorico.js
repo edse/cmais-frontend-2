@@ -36,10 +36,11 @@ $(document).ready(function() {
       /*lista destaque small*/
      $('.destaques-small li').each(function(i){
        el = $(this);
-       i++;
-       console.log(i)
-       if(i%7==0){
+       if(i%6==0){
          $(el).css('margin-left', '0');
+         i = 0;
+       }else{
+         i++;
        }
      });
      /*
