@@ -398,6 +398,7 @@
         });
         $("input[name=contrato_fpa]").click(function() {
           var contrato = $(this).val();
+          alert(contrato);
           if (contrato == "sim")
             $('#projeto').show();
           if (contrato == "nao")
