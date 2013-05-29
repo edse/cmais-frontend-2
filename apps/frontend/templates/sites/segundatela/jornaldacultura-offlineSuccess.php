@@ -116,7 +116,7 @@
     success:function(json){
       $.each(json, function( key, value ) {
         console.log(value)
-        //contentInfo(value);
+        contentInfo(value);
       });
     }
   });
