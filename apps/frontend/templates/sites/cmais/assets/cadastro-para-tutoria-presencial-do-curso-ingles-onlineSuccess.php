@@ -261,7 +261,7 @@
                       <label>CEP</label>
                       <input type="text" name="cep" id="cep" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:73%">
+                    <div class="linha t2" style="width:72%">
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
@@ -395,6 +395,13 @@
             $("#categoria_diretoria").show();
             $("#prof_ativo_tipo, #prof_ativo_escola").hide();
           }
+        });
+        $("input[name=contrato_fpa]").click(function() {
+          var categoria = $(this).val();
+          if (categoria == "sim")
+            $('#projeto').show();
+          if (categoria == "nao")
+            $('#projeto').hide();
         });
                 
         $("#cpf").mask("999.999.999-99");
