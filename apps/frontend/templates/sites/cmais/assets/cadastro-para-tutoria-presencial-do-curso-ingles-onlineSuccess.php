@@ -380,6 +380,7 @@
         $("input[name=categoria]").click(function() {
           var categoria = $(this).val();
           if (categoria == "professor ativo") {
+            $("#categoria_mais_info").css('margin-left','0');
             $("#prof_ativo_tipo, #categoria_diretoria, #prof_ativo_escola").show();
           }
           if (categoria == "pcnp") {
