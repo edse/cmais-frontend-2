@@ -60,7 +60,7 @@
     <!-- direita -->
     <div class="span4">
       <!-- CALENDARIO -->
-      <?php $nomePrograma = "jornaldacultura";?>
+      <?php $nomePrograma = "cartaoverde";?>
       <?php include_partial_from_folder('sites/segundatela', 'global/calendarJson', array('nomePrograma' => $nomePrograma, 'date' => $date)) ?>
       <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
