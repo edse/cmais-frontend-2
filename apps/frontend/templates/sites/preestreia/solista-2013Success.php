@@ -1,3 +1,12 @@
+<?php
+  $now = date('YmdHis');
+  //$schedule = '20130106000000';
+  $schedule = '20132905000000';
+  if($now > $schedule) {
+    header('Location: http://tvcultura.cmais.com.br/preestreia');
+    die();
+  }
+?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
