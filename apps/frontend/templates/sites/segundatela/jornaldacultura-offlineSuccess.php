@@ -115,7 +115,7 @@
     dataType: "json",
     success:function(json){
       $.each(json, function( key, value ) {
-        console.log(value)
+        //console.log(value)
         contentInfo(value);
       });
     }
