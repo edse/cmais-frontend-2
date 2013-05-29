@@ -35,7 +35,7 @@
         } 
       }
     }
-    //echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
+    echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
     closedir($handle);
   }
   
