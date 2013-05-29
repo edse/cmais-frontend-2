@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?nocache=<?php echo time(); ?>" type="text/css" />
 
 <script>
+/*
 function updateTweets(){
   $.ajax({
     url: "/index.php/ajax/tweetmonitor",
@@ -15,6 +16,7 @@ $(function(){ //onready
   updateTweets();
   var t=setTimeout("updateTweets()",10000);
 });
+*/
 </script>
 
 <?php use_helper('I18N', 'Date') ?>
@@ -96,10 +98,11 @@ $(function(){ //onready
               <div class="col-esq grid1">
 	              <!-- BOX TWITTER -->
 	              <div class="grid1">
-	              	
-	              	<a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>
-	                <div id="twitter"></div>
-	              </div>
+                  <a href="http://twitter.com/cartaoverde" class="twitter-follow-button" target="_blank">Siga @cartaoverde</a>  
+                  <!--div id="twitter"></div-->
+                  <a class="twitter-timeline" href="https://twitter.com/search?q=%40cartaoverde" data-widget-id="317362402159108096">Tweets about "@cartaoverde"</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>                       
+                </div>
 	              <!-- /BOX TWITTER -->
               </div>
               <!-- /col-esq -->

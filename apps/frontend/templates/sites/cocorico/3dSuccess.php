@@ -55,17 +55,15 @@
 							<input type="button" id="3d" class="btnDesligar" title="bg3d" />
 						</div>
 					</div>
-					<hr />
 					<div class="box-video">
-						<hr />
 						<div class="video">
 							<object width="964" height="582" type="application/x-shockwave-flash" id="video-0001" data="http://www.youtube.com/v/Vig05K8Ta3s?version=3&amp;enablejsapi=1&amp;playerapiid=video-0001"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="wmode" value="opaque"></object>
 						</div>
 					</div>
 				</div>
 			</div>	
-			<hr />
-			
+
+
                 	<!-- RODAPE -->
 		<div id="rodape-portal">
 			<div class="capa-voltar-topo">

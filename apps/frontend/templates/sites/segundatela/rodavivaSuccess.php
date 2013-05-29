@@ -86,6 +86,10 @@
       
       <div class="box">
         <h2>Redes Sociais</h2>
+        <!-- CALENDARIO -->
+      <?php $nomePrograma = "rodaviva";?>
+      <?php include_partial_from_folder('sites/segundatela', 'global/calendarJson', array('nomePrograma' => $nomePrograma, 'date' => $date)) ?>
+      <!-- /CALENDARIO -->
         <!-- abas -->
         <div class="">
           <ul class="nav nav-tabs" id="myTab">
