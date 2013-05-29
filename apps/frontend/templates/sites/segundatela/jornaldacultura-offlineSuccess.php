@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 
 <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-<script type="text/javascript" src="/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
