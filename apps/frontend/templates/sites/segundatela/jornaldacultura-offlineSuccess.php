@@ -49,6 +49,7 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
+          /*
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
@@ -74,7 +75,7 @@
                echo $html;
             }
           }
-
+          */
         ?>             
       </div>
       <!-- /accordion -->
@@ -117,14 +118,16 @@
     success:function(json){
       $.each(json, function( key, value ) {
         //console.log(value)
-        //contentInfo(value);
+        contentInfo(value);
       });
     }
   });
   </script>
   
 <?php
-  foreach ($json_result as $data){
+  /*
+   foreach ($json_result as $data){
     echo '<script> onYoutubeVerify("'.$data->handler.'"); </script>';
   }
+  */
 ?>
