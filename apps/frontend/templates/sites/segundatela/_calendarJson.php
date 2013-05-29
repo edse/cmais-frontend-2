@@ -16,7 +16,7 @@
   <script>
   
     <?php
-  
+  echo $date . ">>>>";
   //puxando logs do programa
   $i = 0;
   echo 'var dateList = new Array();';
