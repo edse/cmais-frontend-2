@@ -261,7 +261,7 @@
                       <label>CEP</label>
                       <input type="text" name="cep" id="cep" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:73%">
+                    <div class="linha t2" style="width:72%">
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
