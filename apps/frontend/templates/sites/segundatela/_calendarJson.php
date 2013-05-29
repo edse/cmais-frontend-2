@@ -35,7 +35,7 @@
         } 
       }
     }
-    echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
+    //echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
     closedir($handle);
   }
   
@@ -67,7 +67,7 @@
       monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
       nextText:" ",
       prevText:" ",
-      setDate:"27-5-2012",
+      setDate:"27-5-2013",
       inline: true
     });
     
