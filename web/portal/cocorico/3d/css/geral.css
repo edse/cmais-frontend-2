@@ -89,6 +89,7 @@ body.bg3d{
 .conteudo{
 	text-align: left;
 	width: 970px;
+	position:relative;
 }
 .cabecalho{
 	float: left;
