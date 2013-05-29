@@ -128,7 +128,7 @@
                       <label style="line-height: 25px"><input type="radio" name="categoria" id="prof_inativo" value="professor inativo" style="float:left; margin-right: 5px" />Professor Inativo</label>
                     </div>
                     
-                    <div id="categoria_mais_info">
+                    <div id="categoria_mais_info" style="float:left">
                       <div id="prof_ativo_tipo" style="display:none">
                         <div class="linha t10" style="clear:left; width: auto; margin-right: 15px">
                           <label><input type="radio" name="prof_ativo_tipo" id="efetivo" value="efetivo" />Efetivo</label>
@@ -138,7 +138,7 @@
                         </div>
                       </div>
                        
-                      <div class="t1" style="clear:left; width: auto; display:none" id="categoria_diretoria">
+                      <div class="t1" style="clear:left; width: 33%; display:none" id="categoria_diretoria">
                         <label>Diretoria de Ensino à qual está vinculado(a)</label>
                         <select name="diretoria" id="diretoria" style="width:200px">
                           <option value="">---</option>
@@ -235,7 +235,7 @@
                         </select>
                       </div>
   
-                      <div class="t1" style="clear:left; width: auto; margin-top: 15px; display:none" id="prof_ativo_escola">
+                      <div class="t1" style="clear:left; width: 33%; margin-top: 15px; display:none" id="prof_ativo_escola">
                         <label>Escola em que trabalha:</label>
                         <input type="text" name="escola" id="escola" style="width:100%" />
                       </div>
