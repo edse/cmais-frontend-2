@@ -298,7 +298,6 @@
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-            telefone: "Este campo &eacute; Obrigat&oacute;rio",
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
