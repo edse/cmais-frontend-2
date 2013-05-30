@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           $message .= "<b>Tem ou Teve contrato com a Fundação Padre Anchieta nos últimos 6 meses ?:</b>" . strip_tags($_REQUEST['contrato_fpa']) . "<br>";
           $message .= "<b>Se sim, qual projeto?:</b> " . strip_tags($_REQUEST['projeto']) . "<br>";
           $message .= "<b>Local de prova escolhido:</b> " . strip_tags($_REQUEST['localdeprova']) . "<br>";
-          $message .= "<b>Declaro que as informações acima são verdadeiras:</b> " . strip_tags($_REQUEST['concordo']) . "<br>";
+          $message .= "<b>Declaro que as informações acima são verdadeiras:</b> " . (($_REQUEST['concordo'] == "on") ? "sim" : "não") . "<br>";
           $message .= "<b>captcha:</b> " . strip_tags($_REQUEST['captcha']) . "<br><br>";
                             
           $header = "Return-Path: " . $from . "\r\n";
@@ -107,8 +107,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $from = "Fundação Padre Anchieta <tutoriaingles@tvcultura.com.br>";
             $to = $email;
             ini_set('sendmail_from', $from);
-            $subject = '[CMAIS][cadastro-tutoria-presencial-ingles-online] Confirmação de cadastro';
-            
+            $subject = '[Cmais+] Confirmação de cadastro para o processo seletivo de tutor presencial do curso inglês online';
+            $premsg = "Essa mensagem é uma confirmação de que seu cadastro como candidato para tutor presencial do curso de inglês online foi efetuado com sucesso!" . "<br><br>";
+            $message = $premsg . $message;
             if(mail($to, $subject, $message, $header)) {
               die("0");
             }
