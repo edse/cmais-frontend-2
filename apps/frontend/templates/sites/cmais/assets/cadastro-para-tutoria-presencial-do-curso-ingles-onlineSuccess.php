@@ -48,35 +48,11 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Por favor, verifique se você preencheu todos os campos corretamente.</p>
+                      <p>Por favor, verifique se você preencheu todos os campos corretamente ou tente novamente mais tarde</p>
                     </div>
                     <hr />
                   </div>
                   <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_2">
-                    <span class="alerta"></span>
-                    <div class="boxMsg">
-                      <p class="aviso">Seu cadastro não pôde ser efetuado.</p>
-                      <p>Não é possível atuar como tutor se você possuir inscrição ativa como aluno em nosso banco de dados, ou se estiver atualmente em exercício como professor de sala de aula na disciplina de Língua Portuguesa ou de Matemática no Ensino Fundamental dos Anos Finais da Rede Estadual de Ensino de São Paulo.</p>
-                    </div>
-                    <hr />
-                  </div>
-                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_3">
-                    <span class="alerta"></span>
-                    <div class="boxMsg">
-                      <p class="aviso">Cadastro existente.</p>
-                      <p>Já consta em nosso banco de dados sua inscrição, aguarde que em breve faremos contato!</p>
-                    </div>
-                    <hr />
-                  </div>
-                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_4">
-                    <span class="alerta"></span>
-                    <div class="boxMsg">
-                      <p class="aviso">Erro interno.</p>
-                      <p>Por favor, tente novamente mais tarde ou entre em contato por telefone ou e-mail.</p>
-                    </div>
-                    <hr />
-                  </div>
-                  <div class="msgErro" style="display:none; min-height: 80px; float:left;" id="statusMsg_5">
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Seu cadastro não pôde ser efetuado.</p>

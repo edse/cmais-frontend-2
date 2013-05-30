@@ -109,6 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ini_set('sendmail_from', $from);
             $subject = '[Cmais+] Confirmação de cadastro para o processo seletivo de tutor presencial do curso inglês online';
             $premsg = "Essa mensagem é uma confirmação de que seu cadastro como candidato para tutor presencial do curso de inglês online foi efetuado com sucesso!" . "<br><br>";
+            $premsg .= "Não é necessário responder esse e-mail!" . "<br><br>";
             $message = $premsg . $message;
             
             $header = "Return-Path: " . $from . "\r\n";
@@ -127,13 +128,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
       }
       else {
-        die("5");
+        die("2");
       } 
     }
     else{
       die("1");
     }
   }
+  else{
+    die("1");
+  }
+}
+else{
+  die("1");
 }
 
 ?>
