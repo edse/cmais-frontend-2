@@ -110,6 +110,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = '[Cmais+] Confirmação de cadastro para o processo seletivo de tutor presencial do curso inglês online';
             $premsg = "Essa mensagem é uma confirmação de que seu cadastro como candidato para tutor presencial do curso de inglês online foi efetuado com sucesso!" . "<br><br>";
             $message = $premsg . $message;
+            
+            $header = "Return-Path: " . $from . "\r\n";
+            $header .= "From: " . $from . "\r\n";
+            $header .= "X-Priority: 3\r\n";
+            $header .= "X-Mailer: Formmail [version 1.0]\r\n";
+            $header .= "MIME-Version: 1.0\r\n";
+            $header .= "Content-Transfer-Encoding: 8bit\r\n";
+            $header .= 'Content-Type: text/html; charset="utf-8"';
+            
             if(mail($to, $subject, $message, $header)) {
               die("0");
             }
