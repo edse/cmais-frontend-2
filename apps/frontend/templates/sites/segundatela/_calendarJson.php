@@ -35,6 +35,7 @@
         } 
       }
     }
+    
     //echo 'dateList['.$i.'] = "'.date("d").'-'.date("m").'-'.date("Y").'";';
     closedir($handle);
   }
@@ -55,7 +56,8 @@
     });
     */
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker    
+    // Datepicker 
+      
     $('#datepicker').datepicker({
       minDate: '01-03-2013',
       maxDate:"1w",
@@ -69,7 +71,7 @@
       prevText:" ",
       inline: true
     });
-    $("#datepicker").datepicker("setDate",<?php echo '"'.$date.'"';?>);
+    $("#datepicker").datepicker("setDate",<?php echo '"'.$date.'"';?>); 
     function putZero(number){
       if(number.length<=1){
         number="0"+number;
