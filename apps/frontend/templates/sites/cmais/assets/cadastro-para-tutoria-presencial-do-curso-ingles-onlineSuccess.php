@@ -39,8 +39,7 @@
                     <span class="alerta"></span>
                     <div class="boxMsg">
                       <p class="aviso">Obrigado! Seu cadastro foi efetuado com sucesso.</p>
-                      <p>Esta tela é a confirmação de que seu cadastro foi efetuado, não será enviado e-mail de confirmação.<p>
-                      <p>Por favor, não é necessário mandar e-mail e fazer contato por telefone, seu cadastro já está confirmado. </p>
+                      <p>Uma mensagem foi enviada em seu e-mail!</p>
                       <p>Aguarde que em breve entraremos em contato para maiores informações!</p>
                     </div>
                     <hr />

@@ -63,11 +63,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
            * 
            */
           
-          $to = "tutoriaingles@tvcultura.com.br, cristovamruizjr@gmail.com";
-          ini_set('sendmail_from', $to);
           $email = strip_tags($_REQUEST['email']);
           $name = strip_tags($_REQUEST['nome']);
           $from = "{$name} <{$email}>";
+          $to = "tutoriaingles@tvcultura.com.br, cristovamruizjr@gmail.com";
+          ini_set('sendmail_from', $to);
           $subject = '[CMAIS][cadastro-tutoria-presencial-ingles-online] '.$from;
 
           $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
@@ -103,7 +103,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           $header .= 'Content-Type: text/html; charset="utf-8"';
 
           if(mail($to, $subject, $message, $header)) {
-            die("0");
+            
+            $from = "Fundação Padre Anchieta <tutoriaingles@tvcultura.com.br>";
+            $to = $email;
+            ini_set('sendmail_from', $from);
+            $subject = '[CMAIS][cadastro-tutoria-presencial-ingles-online] Confirmação de cadastro';
+            
+            if(mail($to, $subject, $message, $header)) {
+              die("0");
+            }
           }
         }
         
