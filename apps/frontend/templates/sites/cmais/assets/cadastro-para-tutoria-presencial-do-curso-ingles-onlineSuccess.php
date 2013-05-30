@@ -333,6 +333,10 @@
                       </select>
                     </div>
                     
+                    <div class="linha t1 exc">
+                      <input type="checkbox" name="concordo" id="concordo" />Declaro que as informações acima são verdadeiras e que li a <a href="http://cmais.com.br/cadastro-de-tutores-2013/orientacao-aos-candidatos-para-tutoria-presencial-do-curso-ingles-online-sobre-condicoes-de-trabalho-e-criterios-de-classificacao" target="_blank">orientação sobre condições de trabalho e critérios de classificação</a>.
+                    </div>
+                    
                     <div class="linha t3 codigo" id="captchaimage" style="margin-top: 30px">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
                       <br />
@@ -539,6 +543,9 @@
               }
             },
             localdeprova:{
+              required: true
+            },
+            concordo:{
               required: true
             },
             captcha: {
