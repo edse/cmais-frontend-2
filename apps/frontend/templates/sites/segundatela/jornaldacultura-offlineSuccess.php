@@ -194,18 +194,18 @@
       $(this).find('p:last').css('padding-bottom', '15px');
     });
   
-  });
-
-  // retrive sent contents by ajax
-  $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
-    dataType: "json",
-    success:function(json){
-      $.each(json, function( key, value ) {
-        //console.log(value)
-        contentInfo(value);
-      });
-    }
+    // retrive sent contents by ajax
+    $.ajax({
+      url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+      dataType: "json",
+      success:function(json){
+        $.each(json, function( key, value ) {
+          //console.log(value)
+          contentInfo(value);
+        });
+      }
+    });
+  
   });
   </script>
   
