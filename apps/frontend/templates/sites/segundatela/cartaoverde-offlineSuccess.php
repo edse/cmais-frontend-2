@@ -75,7 +75,7 @@
             <div class="fb-comments" data-href="cmais.com.br/segundatela/cartaoverde/<?php echo $date; ?>" data-width="300px" data-num-posts="10"></div>
           </div>
           <div id="twitter" class="tab-pane fade">
-            <a class="twitter-timeline" href="https://twitter.com/search?q=%40cartaoverde" data-widget-id="316640392126808065">Tweets sobre "@cartaoverde"</a>
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%40cartaoverde" data-widget-id="317362402159108096">Tweets about "@cartaoverde"</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
         </div>
