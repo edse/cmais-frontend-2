@@ -226,7 +226,7 @@ class _sectionActions extends sfActions
               if(count($next)>0){
                 $d = explode(" ",$next[0]->date_start);
                 if ($d[1] < "04:59:59") { // apenas um teste, depois melhoro isso.
-                  $d[0] = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
+                  $d[0] = date("Y/m/d", mktime(0,0,0, substr($next[0]->date_start,5,2), substr($next[0]->date_start,8,2)-1 ,substr($next[0]->date_start,0,4)));
                 } 
                 header("Location: ".$this->uri."?d=".str_replace("-","/",$d[0])."&1".time());
                 die();
