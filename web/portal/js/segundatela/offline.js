@@ -79,13 +79,14 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
+alert('teste');
   $('.accordion-body iframe').each(function() {
       if($(this).attr('src').indexOf('youtube') != -1){
         cont++;
         $(this).attr('id','player'+cont);
         onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
      }
-     alert('teste');
+     
   });    
 
 
