@@ -41,52 +41,18 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>  
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
     <div class="span8">
       <h2>segunda tela</h2>
       <!-- accordion -->
-      <div class="accordion" id="accordion2">
-        <?php
-          $time = time();
-          $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
-          $json = file_get_contents($url);
-          $json_result = json_decode($json);
-          foreach ( $json_result as $data){
-            $c = 'icon-align-left';
-            if($data->type == 'people') $c = 'icon-user';
-            if($data->type == 'place')  $c = 'icon-map-marker';
-            if($data->type == 'poll')   $c = 'icon-enquete';
-            if($data->source){
-              $conteudo_url = file_get_contents($data->url);  
-              $html = '
-               <div class="accordion-group"> 
-                 <div class="accordion-heading"> 
-                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
-                   <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
-                 </div>
-                 <div id="id'.$data->handler.'" class="accordion-body collapse">
-                    '.$conteudo_url.'
-                 <div class="accordion-inner"></div>
-                 </div>
-               </div>';
-               echo $html;
-            }
-          }
-        ?>             
-      </div>
+      <div class="accordion" id="accordion2"></div>
       <!-- /accordion -->
     </div>
     <!-- /esquerda -->
     <!-- direita -->
     <div class="span4">
-      <!-- CALENDARIO -->
-      <?php $nomePrograma = "jornaldacultura";?>
-      <?php include_partial_from_folder('sites/segundatela', 'global/calendarJson', array('nomePrograma' => $nomePrograma, 'date' => $date)) ?>
-      <!-- /CALENDARIO -->
       <h2>Redes Sociais</h2>
       <!-- abas -->
       <div class="">
@@ -108,33 +74,64 @@
     </div>
     <!-- /direita -->
   </div>
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
 
   <script>
   // retrive sent contents by ajax
+  /*
   $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php //echo $date; ?>.json",
     dataType: "json",
     success:function(json){
       $.each(json, function( key, value ) {
         //console.log(value)
-        //contentInfo(value);
+        contentInfo(value);
       });
     }
   });
+  */
   </script>
-
-<script>  
-
-  $(function(){
-    cont =0;
-    $('.accordion-body iframe').each(function() {
-        if($(this).attr('src').indexOf('youtube') != -1){
-          cont++;
-          $(this).attr('id','player'+cont);
-          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-          //console.log("go "+cont);
-       }
-    });   
-   
-  });
-</script>
+  
+  <script>
+    $.ajax({
+      url:"http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+      dataType: "json",
+      success:function(json){
+        $.each(json, function( key, value ) {
+          //contentInfo(value);
+            contentInfo = function(data) {
+              //console.log("<<<<<");
+              var c = 'icon-align-left';
+              if(data.type == 'people')
+                c = 'icon-user';
+              if(data.type == 'place')
+                c = 'icon-map-marker';
+              if(data.type == 'poll')
+                c = 'icon-enquete';
+              if(data.source){
+                var html = '
+                ' <div class="accordion-group">' ;
+                  ' <div class="accordion-heading">'; 
+                   '  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'">';
+                    ' <i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
+                html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
+                html += "";
+                html += '</div></div></div>';
+                $('#accordion2').prepend(html).fadeIn('fast');
+                //console.log(data.url);
+                $('#id'+data.handler).load(data.url, function(){
+                  $('#id'+data.handler+'.accordion-body iframe').each(function(i){
+                    if($(this).attr('src').indexOf("youtube") != -1){
+                      cont++;
+                      //console.log(cont);
+                      $(this).attr("id","player"+cont);
+                      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+                    }
+                  });      
+                });
+              }    
+        });
+      }
+      });
+  </script>
