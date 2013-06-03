@@ -79,8 +79,9 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-alert('teste');
+
   $('.accordion-body iframe').each(function() {
+      alert('teste');
       if($(this).attr('src').indexOf('youtube') != -1){
         cont++;
         $(this).attr('id','player'+cont);
