@@ -142,15 +142,22 @@ $(function(){
               <!-- BOX PADRAO -->
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
-            <?php //$relacionados_audio = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
-              <?php //if(count($relacionados_audio) > 0): ?>
-            <?php $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
-              <?php if(count($related_audios) > 0): ?>
+              
+              <?php
+                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+                if(count($playlist) > 0) {
+                  $related_audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+                }
+                else {
+                  $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
+                }
+              ?>
+              <?php if(count($related_audios) == 0): ?>
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
-            <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-            <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
-            <script type="text/javascript">
+              <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+              <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
+              <script type="text/javascript">
               //<![CDATA[
               $(document).ready(function(){
               
