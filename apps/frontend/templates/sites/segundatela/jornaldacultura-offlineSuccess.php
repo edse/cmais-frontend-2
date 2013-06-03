@@ -179,6 +179,7 @@
     //});
   //});
   */
+  cont =0;
    $('.accordion-body iframe').each(function() {
       //alert('test');
       if($(this).attr('src').indexOf('youtube') != -1){
