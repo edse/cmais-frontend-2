@@ -159,7 +159,7 @@
   //$(function(){
     //$('#accordion2').each(function(){
       //$('#id'+handler+'.accordion-body iframe').each(function(i){
-    $cont = 0;    
+    cont = 0;    
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
           cont++;
