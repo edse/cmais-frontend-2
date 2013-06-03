@@ -81,15 +81,12 @@ $(document).ready(function() {
 
 
   $('.accordion-body iframe').each(function() {
-      alert('test');
       if($(this).attr('src').indexOf('youtube') != -1){
         alert(cont);
         cont++;
         $(this).attr('id','player'+cont);
         onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
      }
-     
   });    
-
 
 });
