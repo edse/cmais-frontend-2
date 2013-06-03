@@ -101,7 +101,7 @@
                echo $html;
                
                echo "<script>
-                handler[$i] = 'id'+$data->handler;
+                var handler[$i] = 'id'+$data->handler;
                </script>";
                $i++;
             }
