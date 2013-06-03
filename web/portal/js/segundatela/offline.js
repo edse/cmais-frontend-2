@@ -79,25 +79,16 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-
-  $('.accordion-body iframe').each(function() {
-      if($(this).attr('src').indexOf('youtube') != -1){
-        cont++;
-        $(this).attr('id','player'+cont);
-        onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-     }
-  }); 
-
-
-/*
- *
-  $('.accordion-body iframe').each(function() {
-      if($(this).attr('src').indexOf('youtube') != -1){
-        console.log("go "+cont);
-        cont++;
-        $(this).attr('id','player'+cont);
-        onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-     }
-  });   
-*/
+  function onVerifyYoutube(){
+    $('.accordion-body iframe').each(function() {
+        if($(this).attr('src').indexOf('youtube') != -1){
+          console.log("go "+cont);
+          cont++;
+          $(this).attr('id','player'+cont);
+          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+       }
+    });   
+  }
+  setTimeout(onVerifyYoutube,5000);
+  
 });

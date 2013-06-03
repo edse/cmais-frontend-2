@@ -1,7 +1,4 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
-<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-<script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
-
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -44,7 +41,8 @@
       </div>
     </div>
   </div>
-    
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>    
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
@@ -57,7 +55,7 @@
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
-          foreach ( $json_result as $data){
+          foreach ( array_reverse($json_result) as $data){
             $c = 'icon-align-left';
             if($data->type == 'people') $c = 'icon-user';
             if($data->type == 'place')  $c = 'icon-map-marker';
@@ -110,7 +108,9 @@
     </div>
     <!-- /direita -->
   </div>
-
+  
+  <?php
+  /*******
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -124,3 +124,5 @@
     }
   });
   </script>
+  *******/
+ ?>
