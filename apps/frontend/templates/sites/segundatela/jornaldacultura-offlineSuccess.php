@@ -59,7 +59,8 @@
                 onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
               }
             });
-          }        
+          }
+          </script>        
           ";
           
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
