@@ -108,7 +108,9 @@
     </div>
     <!-- /direita -->
   </div>
-
+  
+  <?php
+  /*******
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -122,3 +124,5 @@
     }
   });
   </script>
+  *******/
+  ?>
