@@ -131,8 +131,8 @@
         if($(this).attr('src').indexOf('youtube') != -1){
           cont++;
           $(this).attr('id','player'+cont);
-          //onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-          console.log("go "+cont);
+          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+          //console.log("go "+cont);
        }
     });   
    
