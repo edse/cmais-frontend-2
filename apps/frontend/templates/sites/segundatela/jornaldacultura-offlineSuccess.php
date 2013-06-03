@@ -49,7 +49,7 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
-          $time = time();
+        /*  $time = time();
         
          echo "
             <script type='text/javascript' src='https://www.youtube.com/iframe_api'></script> 
@@ -75,7 +75,7 @@
                 }
               </script>
               ";
-
+            */
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
@@ -138,8 +138,8 @@
     </div>
     <!-- /direita -->
   </div>
-  <!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script-->
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -153,3 +153,18 @@
     }
   });
   </script>
+
+
+<script>  
+  $(function(){
+    $('#accordion2').each(function(){
+      $('#id'+handler+'.accordion-body iframe').each(function(i){
+        if($(this).attr('src').indexOf('youtube') != -1){
+          cont++;
+          $(this).attr('id','player'+cont);
+          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+        }
+      });
+    });
+  });
+</script>
