@@ -78,19 +78,7 @@ $(document).ready(function() {
   $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
-   
-  function onVerifyYoutube(handler){
-    $('#id'+handler+'.accordion-body iframe').each(function(){
-    //$('.accordion-body iframe').each(function() {
-        if($(this).attr('src').indexOf('youtube') != -1){
-          console.log("go "+cont);
-          cont++;
-          $(this).attr('id','player'+cont);
-          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-       }
-    });   
-  }  
-  /*
+
   function onVerifyYoutube(){
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
@@ -101,7 +89,6 @@ $(document).ready(function() {
        }
     });   
   }
-  setTimeout(onVerifyYoutube,10000);
-  */
- 
+  setTimeout(onVerifyYoutube,5000);
+  
 });
