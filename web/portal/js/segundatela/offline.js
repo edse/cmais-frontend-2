@@ -82,7 +82,7 @@ $(document).ready(function() {
   function onVerifyYoutube(){
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
-          //console.log("go "+cont);
+          console.log("go "+cont);
           cont++;
           $(this).attr('id','player'+cont);
           onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
