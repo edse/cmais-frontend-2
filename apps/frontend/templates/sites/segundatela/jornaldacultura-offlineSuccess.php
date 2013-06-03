@@ -124,18 +124,3 @@
     }
   });
   </script>
-
-<script>  
-
-  $(function(){
-    cont =0;
-    $('.accordion-body iframe').each(function() {
-        if($(this).attr('src').indexOf('youtube') != -1){
-          cont++;
-          $(this).attr('id','player'+cont);
-          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-       }
-    });   
-   
-  });
-</script>
