@@ -118,6 +118,7 @@
                         <label>Diretoria de Ensino à qual está vinculado(a)</label>
                         <select name="diretoria" id="diretoria" style="width:200px">
                           <option value="">---</option>
+                          <option value="ADAMANTINA">ADAMANTINA</option>
                           <option value="AMERICANA">AMERICANA</option>
                           <option value="ANDRADINA">ANDRADINA</option>
                           <option value="APIAI">APIAI</option>
