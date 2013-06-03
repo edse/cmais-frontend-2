@@ -79,7 +79,7 @@
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
-
+           $i=0;
           foreach ( $json_result as $data){
             $c = 'icon-align-left';
             if($data->type == 'people') $c = 'icon-user';
@@ -99,12 +99,17 @@
                  </div>
                </div>';
                echo $html;
+               
+               echo "<script>
+                handler[$i] = 'id'+$data->handler;
+               </script>";
+               $i++;
             }
           }
           
-          foreach ($json_result as $data1){
+          //foreach ($json_result as $data1){
             //echo '<script>onYoutubeVerify('.$data1->handler.');</script>';
-          }
+          //}
             
         ?>             
       </div>
@@ -160,16 +165,17 @@
     //$('#accordion2').each(function(){
       //$('#id'+handler+'.accordion-body iframe').each(function(i){
     
-          
-    /*
-      $('.accordion-body iframe').each(function(i){
-        if($(this).attr('src').indexOf('youtube') != -1){
-          cont++;
-          $(this).attr('id','player'+cont);
-          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-        }
-      });
+      for (i==0; i < handler.length; i++){ 
+        //$('.accordion-body iframe').each(function(i){
+        ('#id'+handler[i]+'.accordion-body iframe').each(function(i){
+          if($(this).attr('src').indexOf('youtube') != -1){
+            cont++;
+            $(this).attr('id','player'+cont);
+            onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+          }
+        });
+      }
     //});
   //});
-  */
+  
 </script>
