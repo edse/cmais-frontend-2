@@ -79,7 +79,7 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-  //function onVerifyYoutube(){
+  function onVerifyYoutube(){
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
           console.log("go "+cont);
@@ -88,8 +88,9 @@ $(document).ready(function() {
           onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
        }
     });   
-  //}
+  }
     
-  //setTimeout(onVerifyYoutube,3000);
+  setTimeout(onVerifyYoutube,3000);
   //onVerifyYoutube();
+
 });
