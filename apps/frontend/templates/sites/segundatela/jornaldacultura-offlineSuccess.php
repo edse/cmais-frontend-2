@@ -53,7 +53,7 @@
         
          echo "
             <script type='text/javascript' src='https://www.youtube.com/iframe_api'></script> 
-            <script type='text/javascript' src='http://cmais.com.br/portal/js/segundatela/offline.js?nocache=$time></script>
+            <script type='text/javascript' src='http://cmais.com.br/portal/js/segundatela/offline.js?nocache=time></script>
                 <script>              
                   function onYoutubeVerify(handler) {
                   $('#id'+handler+'.accordion-body iframe').each(function(i){
