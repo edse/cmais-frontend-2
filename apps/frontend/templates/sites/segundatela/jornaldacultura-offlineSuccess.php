@@ -55,7 +55,7 @@
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
-          foreach ( $json_result as $data){
+          foreach ( array_reverse($json_result) as $data){
             $c = 'icon-align-left';
             if($data->type == 'people') $c = 'icon-user';
             if($data->type == 'place')  $c = 'icon-map-marker';
