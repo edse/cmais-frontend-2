@@ -156,9 +156,19 @@
 
 
 <script>  
-  $(function(){
+  //$(function(){
     //$('#accordion2').each(function(){
       //$('#id'+handler+'.accordion-body iframe').each(function(i){
+        
+    $('.accordion-body iframe').each(function() {
+        if($(this).attr('src').indexOf('youtube') != -1){
+          cont++;
+          $(this).attr('id','player'+cont);
+          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+       }
+    });        
+          
+    /*
       $('.accordion-body iframe').each(function(i){
         if($(this).attr('src').indexOf('youtube') != -1){
           cont++;
@@ -167,5 +177,6 @@
         }
       });
     //});
-  });
+  //});
+  */
 </script>
