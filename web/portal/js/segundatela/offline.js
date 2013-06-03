@@ -38,7 +38,7 @@ $(document).ready(function() {
   }
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-    console.log("start"+cont);
+    //console.log("start"+cont);
     //console.log("obj:"+obj);
     //console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
@@ -79,17 +79,13 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-
   $('.accordion-body iframe').each(function() {
-      //alert('test');
       if($(this).attr('src').indexOf('youtube') != -1){
-        //alert(cont);
+        console.log("go "+cont);
         cont++;
         $(this).attr('id','player'+cont);
         onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
      }
-     
-  });    
-
+  });   
 
 });
