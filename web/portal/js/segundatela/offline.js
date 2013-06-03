@@ -38,7 +38,7 @@ $(document).ready(function() {
   }
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-    //console.log("start"+cont);
+    console.log("start"+cont);
     //console.log("obj:"+obj);
     //console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
