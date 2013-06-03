@@ -52,36 +52,9 @@
       <div class="accordion" id="accordion2">
         <?php
           $time = time();
-        echo "<script type='text/javascript' src='https://www.youtube.com/iframe_api'></script> 
-            <script type='text/javascript' src='http://cmais.com.br/portal/js/segundatela/offline.js?nocache=$time'></script>";
-        /* echo "
-            
-                <script>              
-                  function onYoutubeVerify(handler) {
-                  $('#id'+handler+'.accordion-body iframe').each(function(i){
-                    if($(this).attr('src').indexOf('youtube') != -1){
-                      cont++;
-                      $(this).attr('id','player'+cont);
-                      onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-                    }
-                  });
-                }
-                onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-                  player[cont] = new YT.Player(obj);
-                  player[cont].addEventListener('onStateChange', function(res){
-                    if(res.data == 1){
-                      playing = res.target;
-                      //console.log('playing:'+playing);
-                    }
-                  });
-                }
-              </script>
-              ";
-            */
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
-           //$i=0;
           foreach ( $json_result as $data){
             $c = 'icon-align-left';
             if($data->type == 'people') $c = 'icon-user';
@@ -101,18 +74,8 @@
                  </div>
                </div>';
                echo $html;
-               
-               //echo "<script>
-                //var handler[$i] = 'id'+$data->handler;
-               //</script>";
-               //$i++;
             }
           }
-          
-          //foreach ($json_result as $data1){
-            //echo '<script>onYoutubeVerify('.$data1->handler.');</script>';
-          //}
-            
         ?>             
       </div>
       <!-- /accordion -->
@@ -160,36 +123,21 @@
   });
   </script>
 
-
 <script>  
-  //$(function(){
-    //$('#accordion2').each(function(){
-      //$('#id'+handler+'.accordion-body iframe').each(function(i){
-    /*
-      for (i==0; i < handler.length; i++){ 
-        //$('.accordion-body iframe').each(function(i){
-        ('#id'+handler[i]+'.accordion-body iframe').each(function(i){
-          if($(this).attr('src').indexOf('youtube') != -1){
-            cont++;
-            $(this).attr('id','player'+cont);
-            onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-          }
-        });
-      }
-    //});
-  //});
-  */
-  cont =0;
-   $('.accordion-body iframe').each(function() {
-      //alert('test');
-      if($(this).attr('src').indexOf('youtube') != -1){
-        //alert(cont);
-        cont++;
-        $(this).attr('id','player'+cont);
-        onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-     }
-     
-  });   
- 
- 
+/*
+  $(function(){
+    cont =0;
+    $('.accordion-body iframe').each(function() {
+        //alert('test');
+        console.log("go "+cont);
+        if($(this).attr('src').indexOf('youtube') != -1){
+          //alert(cont);
+          cont++;
+          $(this).attr('id','player'+cont);
+          onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
+       }
+    });   
+   
+  });
+ */
 </script>
