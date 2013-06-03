@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -41,8 +44,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>  
+    
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
@@ -132,7 +134,6 @@
           cont++;
           $(this).attr('id','player'+cont);
           onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
-          //console.log("go "+cont);
        }
     });   
    
