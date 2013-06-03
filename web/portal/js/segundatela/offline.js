@@ -79,7 +79,7 @@ $(document).ready(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
 
-  $('#id1369181195.accordion-body iframe').each(function() {
+  $('.accordion-body iframe').each(function() {
       if($(this).attr('src').indexOf('youtube') != -1){
         cont++;
         $(this).attr('id','player'+cont);
