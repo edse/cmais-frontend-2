@@ -74,6 +74,7 @@
                  </div>
                </div>';
                echo $html;
+               echo "<script> onVerifyYoutube($data->handler); </script>";
             }
           }
         ?>             
