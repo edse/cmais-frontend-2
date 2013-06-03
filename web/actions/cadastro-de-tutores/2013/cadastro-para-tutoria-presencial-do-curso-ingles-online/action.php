@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           $txtFile = "/var/frontend/web/tutores-2013/cadastro-para-tutoria-presencial-do-curso-ingles-online/control/cpf.txt";
           $txtContent = $cpf . "\n";
           $txtFp = fopen($txtFile, 'a+');
-          fwrite($txtFp, $txtContent);
+          fwrite($txtFp, $txtContent);  // teste 
            * 
            */
           
