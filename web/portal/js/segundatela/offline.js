@@ -90,7 +90,7 @@ $(document).ready(function() {
     });   
   }
     
-  //setTimeout(onVerifyYoutube,3000);
-  onVerifyYoutube();
+  setTimeout(onVerifyYoutube,3000);
+  //onVerifyYoutube();
 
 });
