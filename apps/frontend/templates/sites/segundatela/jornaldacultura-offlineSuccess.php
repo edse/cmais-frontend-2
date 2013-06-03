@@ -124,14 +124,12 @@
   </script>
 
 <script>  
-/*
+
   $(function(){
     cont =0;
     $('.accordion-body iframe').each(function() {
-        //alert('test');
         console.log("go "+cont);
         if($(this).attr('src').indexOf('youtube') != -1){
-          //alert(cont);
           cont++;
           $(this).attr('id','player'+cont);
           onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
@@ -139,5 +137,4 @@
     });   
    
   });
- */
 </script>
