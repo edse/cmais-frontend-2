@@ -41,8 +41,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>    
+      
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
@@ -51,6 +50,9 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
+        echo '<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=time"></script>';        
+        
           $time = time();
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
