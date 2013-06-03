@@ -103,7 +103,7 @@
           }
           
           foreach ($json_result as $data1){
-            echo '<script>onYoutubeVerify('.$data1->handler.');</script>';
+            //echo '<script>onYoutubeVerify('.$data1->handler.');</script>';
           }
             
         ?>             
