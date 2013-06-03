@@ -85,6 +85,7 @@ $(document).ready(function() {
         $(this).attr('id','player'+cont);
         onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
      }
+     alert('teste');
   });    
 
 
