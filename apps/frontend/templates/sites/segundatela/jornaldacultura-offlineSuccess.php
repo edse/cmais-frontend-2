@@ -34,12 +34,10 @@
     </div>
     <div class="col-dir">
       <div class="menu-jc">
-        <ul>
-          <li><a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a></li><li>
-          </li><li><span class="barra">|</span></li>
-          <li><p class="online hide" style="color: green">Conectado</p></li>
-          <li><p class="offline">Desconectado</p></li>
-          </ul>
+        <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a>
+        <br/>
+        <p class="online hide" style="color: green">Conectado</p><p class="offline">Desconectado</p>
+        <span id="tryin-p" style="font-size: 10px;clear: both; float: right; width: 110px;" class="hide">conectando em <span id="tryin-v" style="margin: 1px; float: right;"></span></span>
       </div>
     </div>
   </div>
@@ -51,7 +49,6 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
-          
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
@@ -77,7 +74,7 @@
                echo $html;
             }
           }
-          
+
         ?>             
       </div>
       <!-- /accordion -->
@@ -111,108 +108,17 @@
     <!-- /direita -->
   </div>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <!--<script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>-->
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <script>
-  $(document).ready(function() {
-    //arrays para players multiplos
-    var cont = 0;
-    var player = new Array();
-    var players_ids = new Array();
-    var playing;
-    var playing_id = false;
-    
-    $('#status').fadeIn('slow');
-  
-    contentInfo = function(data) {
-      //console.log("<<<<<");
-      var c = 'icon-align-left';
-      if(data.type == 'people')
-        c = 'icon-user';
-      if(data.type == 'place')
-        c = 'icon-map-marker';
-      if(data.type == 'poll')
-        c = 'icon-enquete';
-      if(data.source){
-        var html = '<div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'+data.handler+'" rel1="'+data.id+'" rel2="'+data.source+'"><i class="'+c+' icon-white"></i>'+data.tag+'</a></div>';
-        html += '<div id="id'+data.handler+'" class="accordion-body collapse"><div class="accordion-inner">';
-        html += "";
-        html += '</div></div></div>';
-        $('#accordion2').prepend(html).fadeIn('fast');
-        //console.log(data.url);
-        $('#id'+data.handler).load(data.url, function(){
-          $('#id'+data.handler+'.accordion-body iframe').each(function(i){
-            if($(this).attr('src').indexOf("youtube") != -1){
-              cont++;
-              //console.log(cont);
-              $(this).attr("id","player"+cont);
-              onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-            }
-          });      
-        });
-      }    
-    }
-    
-    onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-      //console.log("start"+cont);
-      //console.log("obj:"+obj);
-      //console.log("contador:"+cont);
-      player[cont] = new YT.Player(obj);
-      //console.log("player:"+player[cont]);
-      player[cont].addEventListener("onStateChange", function(res){
-        if(res.data == 1){
-          playing = res.target;
-          //console.log('playing:'+playing);
-        }
+  // retrive sent contents by ajax
+  $.ajax({
+    url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
+    dataType: "json",
+    success:function(json){
+      $.each(json, function( key, value ) {
+        //console.log(value)
+        //contentInfo(value);
       });
     }
-  
-    $('#myTab a').click(function(e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-    
-    // colocando e tirando ativo
-    $('.accordion-body').live('hidden', function() {
-      //remove barra ativa
-      $(this).prev().find('a').removeClass('ativo');
-      if(playing)
-        playing.pauseVideo(); 
-    });
-    
-    $('.accordion-body').live('shown', function() { 
-      //remove barra ativa
-      $(this).prev().find('a').addClass('ativo');
-      //scroll
-      var el = $(this).parent();
-      $('html, body').animate({
-        scrollTop: el.offset().top
-      }, "fast");
-    });
-    
-    // padding ultimo conteudo
-    $('.accordion-body').each(function() {
-      $(this).find('p:last').css('padding-bottom', '15px');
-    });
-  
-    // retrive sent contents by ajax
-    $.ajax({
-      url:"/portal/js/segundatela/log/jornaldacultura-<?php echo $date; ?>.json",
-      dataType: "json",
-      success:function(json){
-        $.each(json, function( key, value ) {
-          //console.log(value)
-          //contentInfo(value);
-        });
-      }
-    });
-  
   });
   </script>
-  
-<?php
-  /*
-   foreach ($json_result as $data){
-    echo '<script> onYoutubeVerify("'.$data->handler.'"); </script>';
-  }
-  */
-?>
