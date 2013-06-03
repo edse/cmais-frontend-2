@@ -79,7 +79,7 @@
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = file_get_contents($url);
           $json_result = json_decode($json);
-           $i=0;
+           //$i=0;
           foreach ( $json_result as $data){
             $c = 'icon-align-left';
             if($data->type == 'people') $c = 'icon-user';
@@ -100,10 +100,10 @@
                </div>';
                echo $html;
                
-               echo "<script>
-                var handler[$i] = 'id'+$data->handler;
-               </script>";
-               $i++;
+               //echo "<script>
+                //var handler[$i] = 'id'+$data->handler;
+               //</script>";
+               //$i++;
             }
           }
           
@@ -164,7 +164,7 @@
   //$(function(){
     //$('#accordion2').each(function(){
       //$('#id'+handler+'.accordion-body iframe').each(function(i){
-    
+    /*
       for (i==0; i < handler.length; i++){ 
         //$('.accordion-body iframe').each(function(i){
         ('#id'+handler[i]+'.accordion-body iframe').each(function(i){
@@ -177,5 +177,5 @@
       }
     //});
   //});
-  
+  */
 </script>
