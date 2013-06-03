@@ -152,7 +152,7 @@ $(function(){
                   $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
                 }
               ?>
-              <?php if(count($related_audios) == 0): ?>
+              <?php if(count($related_audios) > 0): ?>
               <!-- /BOX PLAYLISTS -->
               <div class="span4 direita">
               <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
