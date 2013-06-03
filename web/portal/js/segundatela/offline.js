@@ -89,6 +89,6 @@ $(document).ready(function() {
        }
     });   
   }
-  setTimeout(onVerifyYoutube,5000);
+  setTimeout(onVerifyYoutube,10000);
   
 });
