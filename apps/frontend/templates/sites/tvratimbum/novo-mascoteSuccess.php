@@ -59,7 +59,7 @@ $(document).ready(function(){
     <!--/MENU RA-TIM-BUM-->
     
     <!--CONTEUDO INTERNAS-->
-    <div id="ferias" class="conteudo internas">
+    <div id="ferias" class="conteudo internas mascote-all">
       
       <!--COLUNA MAIOR-->
       <div class="colunaMaior">
