@@ -60,10 +60,8 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
-    console.log("HIDDEN");
     if(playing)
-      playing.pauseVideo();
-      console.log("pause"); 
+      playing.pauseVideo(); 
   });
   
   $('.accordion-body').live('shown', function() { 
