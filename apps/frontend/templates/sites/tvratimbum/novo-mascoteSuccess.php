@@ -106,7 +106,7 @@ $(document).ready(function(){
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                 <h2><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();?></h2>
-                <ul id="lista-videos">
+                <ul id="lista-videos"><center>
                   <?php 
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
@@ -119,9 +119,11 @@ $(document).ready(function(){
                     </label>
                     <iframe title="<?php echo $opcao ?>" width="640" height="480" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   </li>
+                  <p>
                   <?php endfor;?>
                 </ul>
-
+				</center>
+				
                 <div class="btn-barra votacao">
                     <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
