@@ -1,9 +1,6 @@
 <?php
-$section_id = $_GET['section_id'];
-$site_id = $_GET['site_id'];
-?>
-<?php echo "teste" ?>
-<?php
+  if(!isset($section_id)) $section_id = 12;
+  if(!isset($site_id) || $site_id == "all") $site_id = "";
 
   $sites = Doctrine_Query::create()
     ->select('s.*')
