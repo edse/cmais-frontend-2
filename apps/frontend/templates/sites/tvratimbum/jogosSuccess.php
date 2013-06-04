@@ -1,4 +1,5 @@
 <?php
+$page = $_POST['page'];
 $section_id = $_POST['section_id'];
 $site_id = $_POST['site_id'];
 ?>
