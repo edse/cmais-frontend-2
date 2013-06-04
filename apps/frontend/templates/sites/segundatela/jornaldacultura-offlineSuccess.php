@@ -50,9 +50,9 @@
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2">
-        <script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>
+        
         <?php
-          $time = time();
+          echo '<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>';
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = @file_get_contents($url);
           $json_result = json_decode($json);
