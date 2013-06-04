@@ -117,7 +117,7 @@ $(document).ready(function(){
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
-                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
+                    <iframe title="<?php echo $opcao ?>" width="640" height="480" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   </li>
                   <?php endfor;?>
                 </ul>
