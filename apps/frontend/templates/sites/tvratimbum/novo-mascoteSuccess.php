@@ -106,7 +106,8 @@ $(document).ready(function(){
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                 <h2><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();?></h2>
-                <ul id="lista-videos"><center>
+                <center>
+                <ul id="lista-videos">
                   <?php 
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
