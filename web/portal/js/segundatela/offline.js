@@ -66,6 +66,7 @@ $(document).ready(function() {
   
   $('.accordion-body').live('shown', function() { 
     //remove barra ativa
+    console.log("OK");
     $(this).prev().find('a').addClass('ativo');
     //scroll
     var el = $(this).parent();
