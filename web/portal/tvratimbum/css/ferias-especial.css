@@ -46,7 +46,7 @@
 #ferias #videos-especial .carrossel .picote{width:100%;position:absolute;bottom:0; z-index:3000;} 
 /* /CARRROSSEL VIDEOS */
 
-/* SEU PEDIDO É UMA ORDEM */
+/* SEU PEDIDO É UMA ORDEM */ 
 #ferias #destaque-principal{background-color: #E8F7F5;width: 920px;border-radius: 10px;margin: 20px;overflow: hidden;min-height: 120px;float:left;}
 #ferias #container-destaque-principal{padding: 20px;color:#6b6b6b; font-weight:bold;}
 #ferias #container-destaque-principal p{color:#6b6b6b !important;}
