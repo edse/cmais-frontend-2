@@ -52,6 +52,10 @@
       <div class="accordion" id="accordion2">
         
         <?php
+          /**
+        
+          //echo '<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>';
+                //<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>';
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
           $json = @file_get_contents($url);
           $json_result = json_decode($json);
@@ -83,6 +87,7 @@
               }
             }
           }
+          **/
         ?>             
       </div>
       <!-- /accordion -->
@@ -118,6 +123,8 @@
   
   <?php
   /*******
+  *******/
+ ?>
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -131,5 +138,3 @@
     }
   });
   </script>
-  *******/
- ?>
