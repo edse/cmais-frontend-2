@@ -1,4 +1,9 @@
 <?php
+$section_id = $_POST['section_id'];
+$site_id = $_POST['site_id'];
+?>
+<?php echo "teste" ?>
+<?php
   if(!isset($section_id)) $section_id = 12;
   if(!isset($site_id) || $site_id == "all") $site_id = "";
 
