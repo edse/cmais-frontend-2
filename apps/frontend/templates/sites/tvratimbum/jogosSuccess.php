@@ -2,9 +2,8 @@
 $section_id = $_GET['section_id'];
 $site_id = $_GET['site_id'];
 ?>
-<?php echo "teste2" ?>
+<?php echo "teste" ?>
 <?php
-
 
   $sites = Doctrine_Query::create()
     ->select('s.*')
