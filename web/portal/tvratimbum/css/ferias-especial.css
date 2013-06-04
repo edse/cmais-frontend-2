@@ -64,7 +64,7 @@
 #ferias #votacao-video form label{cursor:pointer;}
 #ferias #votacao-video form label.error{position: absolute;top: 50px;left: 0;font-weight: bold;color: red;}
 #ferias #votacao-video iframe{width:310px; height: 210px; padding:0 0 0 20px;}
-#ferias.mascote-all #votacao-video iframe{width:640px; height: 480px;}
+#ferias.mascote-all #votacao-video iframe{width:640px; height: 390px;}
 #ferias #resultado-video{padding:20px}
 #ferias #resultado-video li p{font-weight:bold; font-size:16px;}
 #ferias #resultado-video .classificacao{width:444px;}
