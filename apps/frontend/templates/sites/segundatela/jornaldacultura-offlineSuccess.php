@@ -53,7 +53,7 @@
         <?php
           $time = time();
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
-          $json = file_get_contents($url);
+          $json = @file_get_contents($url);
           $json_result = json_decode($json);
           foreach ( array_reverse($json_result) as $data){
             $c = 'icon-align-left';
@@ -73,7 +73,7 @@
                  <div class="accordion-inner"></div>
                  </div>
                </div>';
-               echo $html;
+               //echo $html;
             }
           }
         ?>             
@@ -109,8 +109,8 @@
     <!-- /direita -->
   </div>
   
-  <?php
-  /*******
+  
+  
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -119,10 +119,9 @@
     success:function(json){
       $.each(json, function( key, value ) {
         //console.log(value)
-        //contentInfo(value);
+        contentInfo(value);
       });
     }
   });
   </script>
-  *******/
- ?>
+  
