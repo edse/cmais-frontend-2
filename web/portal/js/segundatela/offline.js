@@ -78,7 +78,8 @@ $(document).ready(function() {
   $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
-
+  
+  /*
   function onVerifyYoutube(){
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
@@ -90,5 +91,5 @@ $(document).ready(function() {
     });   
   }
   setTimeout(onVerifyYoutube,5000);
-  
+  */
 });
