@@ -62,19 +62,23 @@
               if($data->type == 'place')  $c = 'icon-map-marker';
               if($data->type == 'poll')   $c = 'icon-enquete';
               if($data->source){
-                $conteudo_url = file_get_contents($data->url);  
-                $html = '
-                 <div class="accordion-group"> 
-                   <div class="accordion-heading"> 
-                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
-                     <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
-                   </div>
-                   <div id="id'.$data->handler.'" class="accordion-body collapse">
-                      '.$conteudo_url.'
-                   <div class="accordion-inner"></div>
-                   </div>
-                 </div>';
-                 echo $html;
+                $conteudo_url = file_get_contents($data->url);
+                if(stristr($conteudo_url, '<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>')  == TRUE){
+                  
+                }else{
+                  $html = '
+                   <div class="accordion-group"> 
+                     <div class="accordion-heading"> 
+                       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
+                       <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
+                     </div>
+                     <div id="id'.$data->handler.'" class="accordion-body collapse">
+                        '.$conteudo_url.'
+                     <div class="accordion-inner"></div>
+                     </div>
+                   </div>';
+                   echo $html;
+                 }
               }
             }
           }
