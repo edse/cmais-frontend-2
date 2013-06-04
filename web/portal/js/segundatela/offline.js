@@ -60,13 +60,14 @@ $(document).ready(function() {
   $('.accordion-body').live('hidden', function() {
     //remove barra ativa
     $(this).prev().find('a').removeClass('ativo');
+    console.log("HIDDEN");
     if(playing)
-      playing.pauseVideo(); 
+      playing.pauseVideo();
+      console.log("pause"); 
   });
   
   $('.accordion-body').live('shown', function() { 
     //remove barra ativa
-    console.log("OK");
     $(this).prev().find('a').addClass('ativo');
     //scroll
     var el = $(this).parent();
