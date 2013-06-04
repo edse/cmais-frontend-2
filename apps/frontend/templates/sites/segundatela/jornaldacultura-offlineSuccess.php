@@ -66,7 +66,7 @@
               if($data->source){
                 $conteudo_url = file_get_contents($data->url);
                 //if(stristr($conteudo_url, '<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>')  == TRUE){
-                 $conteudo_url = str_replace('<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>', "", $conteudo_url); 
+                 //$conteudo_url = str_replace('<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>', "", $conteudo_url); 
                  $conteudo_url = str_replace('<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>', "", $conteudo_url);
                 //}else{
                   $html = '
