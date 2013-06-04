@@ -113,7 +113,7 @@ $(document).ready(function(){
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
-                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+                  <li>
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
