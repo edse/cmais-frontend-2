@@ -50,6 +50,7 @@
       <h2>segunda tela</h2>
       <!-- accordion -->
       <div class="accordion" id="accordion2">
+        <script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>
         <?php
           $time = time();
           $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
@@ -63,9 +64,9 @@
               if($data->type == 'poll')   $c = 'icon-enquete';
               if($data->source){
                 $conteudo_url = file_get_contents($data->url);
-                if(stristr($conteudo_url, '<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>')  == TRUE){
-                  
-                }else{
+                //if(stristr($conteudo_url, '<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>')  == TRUE){
+                 $conteudo_url = str_replace('<script type="text/javascript" src="/js/audioplayer/jquery.jplayer2.js"></script>', "", $conteudo_url); 
+                //}else{
                   $html = '
                    <div class="accordion-group"> 
                      <div class="accordion-heading"> 
@@ -78,7 +79,7 @@
                      </div>
                    </div>';
                    echo $html;
-                 }
+                 //}
               }
             }
           }
