@@ -48,7 +48,7 @@
   </div>
   
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
   <!-- Example row of columns -->
   <div class="row-fluid conteudo">
     <!-- esquerda -->
