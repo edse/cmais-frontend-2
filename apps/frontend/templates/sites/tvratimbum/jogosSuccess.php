@@ -1,7 +1,6 @@
 <?php
-$page = $_POST['page'];
-$section_id = $_POST['section_id'];
-$site_id = $_POST['site_id'];
+$section_id = $_GET['section_id'];
+$site_id = $_GET['site_id'];
 ?>
 <?php echo "teste" ?>
 <?php
