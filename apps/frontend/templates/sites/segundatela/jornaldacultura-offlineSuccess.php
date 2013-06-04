@@ -80,7 +80,7 @@
                      <div class="accordion-inner"></div>
                      </div>
                    </div>';
-                   //echo $html;
+                   echo $html;
                  //}
               }
             }
@@ -119,8 +119,7 @@
   </div>
   
   <?php
-  /*******/
-  ?>
+  /*******
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -129,11 +128,10 @@
     success:function(json){
       $.each(json, function( key, value ) {
         //console.log(value)
-        contentInfo(value);
+        //contentInfo(value);
       });
     }
   });
   </script>
-  <?php
-  /*******/
-  ?>
+  *******/
+ ?>
