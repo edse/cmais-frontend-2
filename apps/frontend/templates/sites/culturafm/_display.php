@@ -10,7 +10,7 @@
               <a title="<?php echo $displays[0]->getTitle() ?>" href="<?php echo $displays[0]->retriveUrl() ?>">
                 <img name="<?php echo $displays[0]->getTitle() ?>" alt="<?php echo $displays[0]->getTitle() ?>" src="<?php echo $displays[0]->retriveImageUrlByImageUsage("image-3-b") ?>">
               </a>
-              <a href="<?php echo $displays[0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays['colunista'][0]->getTitle() ?>"><?php echo $displays['colunista'][0]->getTitle() ?></a>
+              <a href="<?php echo $displays[0]->retriveUrl() ?>" class="titulos" title="<?php echo $displays[0]->getTitle() ?>"><?php echo $displays[0]->getTitle() ?></a>
               <p><?php echo $displays[0]->getDescription() ?></p>
             </div>
               <?php endif; ?>
