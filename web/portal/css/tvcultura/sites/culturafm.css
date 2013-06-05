@@ -503,7 +503,3 @@ h3.tit-pagina { margin-bottom:0; }
 /** /RADIO FM  **/
 em{font-style:oblique !important;}
 #menuFloat { *display:none; }
-
-ul.menu-interna li:first {
-  background: #136c9b !important;
-}
