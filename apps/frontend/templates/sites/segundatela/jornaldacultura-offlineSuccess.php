@@ -52,9 +52,9 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
-          $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
-          $json = @file_get_contents($url);
-          $json_result = json_decode($json);
+          //$url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
+          //$json = @file_get_contents($url);
+          //$json_result = json_decode($json);
           if($json_result){
             foreach ( array_reverse($json_result) as $data){
               $c = 'icon-align-left';
