@@ -56,7 +56,7 @@
           //$json = @file_get_contents($url);
           //$json_result = json_decode($json);
           if($json_result){
-            foreach ( array_reverse($json_result) as $data){
+            foreach ($json_result as $data){
               $c = 'icon-align-left';
               if($data->type == 'people') $c = 'icon-user';
               if($data->type == 'place')  $c = 'icon-map-marker';
