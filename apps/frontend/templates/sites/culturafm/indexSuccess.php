@@ -74,6 +74,9 @@
       <div class="capa grid3">
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
+          
+          <?php /*if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) */ ?>
+          
           <!-- col-esq -->
           <div class="col-esq grid1">
             

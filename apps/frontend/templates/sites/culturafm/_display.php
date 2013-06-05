@@ -4,7 +4,7 @@
               <div class="topo claro">
                 <span></span>
                 <div class="capa-titulo">
-                  <h4><?php echo $displays[0]->Block->getTitle() ?></h4>
+                  <h4><?php echo $displays[0]->getLabel() ?></h4>
                 </div>
               </div>
               <a title="<?php echo $displays[0]->getTitle() ?>" href="<?php echo $displays[0]->retriveUrl() ?>">
