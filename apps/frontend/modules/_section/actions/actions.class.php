@@ -1142,7 +1142,12 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "08-04-2013")
         $sectionSlug = 'jornaldacultura';
       */
-      $this->date = @end(explode("/", $this->url)); 
+      $this->date = @end(explode("/", $this->url));
+       
+      $program =  str_replace("-offline","",$sectionSlug);
+      $this->url_json = "http://cmais.com.br/portal/js/segundatela/log/".$program."-".$this->date.".json";
+      $this->json = file_get_contents($this->url_json);
+      $this->json_result = array_reverse(json_decode($this->json));
     }
     
     

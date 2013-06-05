@@ -10,8 +10,8 @@
   <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
   
   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script-->
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>
+  <!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script--> 
+  <!--script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script-->
 
   <script>
   

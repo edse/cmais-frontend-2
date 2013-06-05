@@ -41,6 +41,7 @@
       </div>
     </div>
   </div>
+  
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
   <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/offline.js?nocache=<?php echo time()?>"></script>    
   <!-- Example row of columns -->
@@ -51,31 +52,34 @@
       <!-- accordion -->
       <div class="accordion" id="accordion2">
         <?php
-          $time = time();
-          $url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
-          $json = file_get_contents($url);
-          $json_result = json_decode($json);
-          foreach ( $json_result as $data){
-            $c = 'icon-align-left';
-            if($data->type == 'people') $c = 'icon-user';
-            if($data->type == 'place')  $c = 'icon-map-marker';
-            if($data->type == 'poll')   $c = 'icon-enquete';
-            if($data->source){
-              $conteudo_url = file_get_contents($data->url);  
-              $html = '
-               <div class="accordion-group"> 
-                 <div class="accordion-heading"> 
-                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
-                   <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
-                 </div>
-                 <div id="id'.$data->handler.'" class="accordion-body collapse">
-                    '.$conteudo_url.'
-                 <div class="accordion-inner"></div>
-                 </div>
-               </div>';
-               echo $html;
+          //$url = "http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-".$date.".json";
+          //$json = @file_get_contents($url);
+          //$json_result = json_decode($json);
+          if($json_result){
+            foreach ($json_result as $data){
+              $c = 'icon-align-left';
+              if($data->type == 'people') $c = 'icon-user';
+              if($data->type == 'place')  $c = 'icon-map-marker';
+              if($data->type == 'poll')   $c = 'icon-enquete';
+              if($data->source){
+                $conteudo_url = file_get_contents($data->url);
+                $conteudo_url = str_replace('<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>', "", $conteudo_url);
+                $html = '
+                  <div class="accordion-group"> 
+                     <div class="accordion-heading"> 
+                       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#id'.$data->handler.'" rel1="'.$data->id.'" rel2="'.$data->source.'">
+                       <i class="'.$c.' icon-white"></i>'.$data->tag.'</a>
+                     </div>
+                     <div id="id'.$data->handler.'" class="accordion-body collapse">
+                        '.$conteudo_url.'
+                     <div class="accordion-inner"></div>
+                     </div>
+                  </div>';
+                echo $html;
+              } 
             }
           }
+          
         ?>             
       </div>
       <!-- /accordion -->
@@ -108,7 +112,9 @@
     </div>
     <!-- /direita -->
   </div>
-
+  
+  <?php
+  /*******
   <script>
   // retrive sent contents by ajax
   $.ajax({
@@ -117,8 +123,10 @@
     success:function(json){
       $.each(json, function( key, value ) {
         //console.log(value)
-        //contentInfo(value);
+        contentInfo(value);
       });
     }
   });
   </script>
+  *******/
+  ?>

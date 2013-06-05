@@ -78,19 +78,18 @@ $(document).ready(function() {
   $('.accordion-body').each(function() {
     $(this).find('p:last').css('padding-bottom', '15px');
   });
-
+  
+  
   function onVerifyYoutube(){
     $('.accordion-body iframe').each(function() {
         if($(this).attr('src').indexOf('youtube') != -1){
-          console.log("go "+cont);
+          //console.log("go "+cont);
           cont++;
           $(this).attr('id','player'+cont);
           onYouTubeIframeAPIReadyPlayer('player'+cont , cont);
        }
     });   
   }
-    
-  setTimeout(onVerifyYoutube,3000);
-  //onVerifyYoutube();
-
+  setTimeout(onVerifyYoutube,5000);
+  
 });
