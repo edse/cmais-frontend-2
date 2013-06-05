@@ -11,7 +11,7 @@
               <div class="bg-cinza">
                 <!--a href="http://culturafm.cmais.com.br/selecao-do-ouvinte">Indique até seis composições de sua preferência e acompanhe pela Cultura FM.</a>
                 <p style="margin:20px 0 8px 0;">De segunda a sábado, às 13 horas.</p-->
-                 <?php echo $displays[0]->getHtml() ?>
+                 <?php echo html_entity_decode($displays[0]->getHtml()) ?>
               </div>
             </div>
             <!-- BOX PADRAO -->
