@@ -166,7 +166,7 @@ $(function(){
               <?php if(count($pager) > 0): ?>        
                 <?php foreach($pager->getResults() as $k=>$d): ?>
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna grid2" style="margin-bottom: 60px">
                 <h3><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h3>
                 <p><?php echo $d->getDescription() ?></p>
                 <div class="assinatura grid2">
