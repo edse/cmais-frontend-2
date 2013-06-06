@@ -138,7 +138,7 @@ $(document).ready(function(){
                 <h2>Resultado Parcial: </h2>
                 
                 <!--LISTA-RESULTADO--> 
-               
+                
                 <?php
                 for($i=0; $i<count($a); $i++):
 					$v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
