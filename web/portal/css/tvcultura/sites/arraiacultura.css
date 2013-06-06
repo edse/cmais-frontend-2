@@ -21,11 +21,16 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 #barra-site .topo-programa { min-height: 60px !important; }
 .rodape-cmais a,
 .box-interna h3 { color:#fbed20; }
-#direita .box-padrao h4 { background:#fbed20; color:#cc0b30; padding-left:10px;  }
-#direita .box-padrao h4 span { background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; }
+#direita .box-padrao h4 { background:#fbed20; color:#cc0b30; padding-left:10px; height:30px; padding-top:5px; line-height:30px;  }
+#direita .box-padrao h4 span { background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; float:left; margin-right:10px; }
 #direita .box-padrao h4 .instagram { background-position:0 -24px; }
 #direita .box-padrao { background:#d30b2e; }
 #direita .box-padrao p { color:#fbed20; padding:10px; }
 #embedagram { margin-left:20px; }
 #embedagram li { width: 130px; float:left; border:none; margin:0 10px 10px 0; padding:0; }
 #embedagram li a img { margin-bottom:0; }
+
+#embedagram { width: 300px; height:450px;}
+#embedagram li,
+#embedagram li a,
+#embedagram li a img { width: 130px; height:130px; display: block; }
