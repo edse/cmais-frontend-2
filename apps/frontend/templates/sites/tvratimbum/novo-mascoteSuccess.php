@@ -147,7 +147,7 @@ $(document).ready(function(){
                 <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
                   <li>
                     <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?> <img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
-                   
+                     <p><img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
                     <span>00%</span>
                     <div class="progress progress-success">
                        <div class="bar" style="width: 40%"></div>
@@ -238,7 +238,7 @@ function sendAnswer(){
       $("#resultado-video").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        $('.parcial-'+i).html("  <p><img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> <li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
         i++;
       });      
     }
