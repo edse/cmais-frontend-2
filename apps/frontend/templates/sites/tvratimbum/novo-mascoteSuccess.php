@@ -46,19 +46,6 @@ $(document).ready(function(){
   });
 });
 </script>
-
-<?php 
-	for($i=0; $i<count($a); $i++):
-	  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-	  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-?>
-                  
-<script type="text/javascript">
-var opcoes = ["Banana", "Orange", "Apple", "Mango"];
-opcoes.sort();
-
-</script>
-
 <!--SCRIPT-->
 
 <!--BODY WRAPPER-->
@@ -106,7 +93,7 @@ opcoes.sort();
                              
               <!--CONTEUDO-->  
               <div id="container-destaque-principal">
-                 Venha conhecer o Bolhota, Borbulha, Bubble, Ploc e Pug! Eles são os candidatos a mascote oficial da TV Rá Tim Bum! e vieram diretamente do Planeta Bolha para trazer ainda mais diversão para você. <p> </p>Vote no seu candidato predileto, eles estão contando com seu click!
+                 <?php echo html_entity_decode($displays["enquete"][0]->getDescription()); ?>
               </div>    
               <!--/CONTEUDO-->
            
@@ -119,24 +106,23 @@ opcoes.sort();
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                 <h2><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion();?></h2>
-                
-                <ul id="lista-videos">
+                <ul id="lista-videos"><center>
                   <?php 
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
-                  <li>
+                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
                     <iframe title="<?php echo $opcao ?>" width="640" height="480" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   </li>
-
+                  <p>
                   <?php endfor;?>
                 </ul>
-			
+				</center>
 				
                 <div class="btn-barra votacao">
                     <span class="pontaBarra"></span>
