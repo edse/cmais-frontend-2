@@ -1,86 +1,88 @@
 /*
 @import url("../geral.css");
 .bg-doctorWho{
-	background: #000;
+  background: #000;
 }
 */
 .bg-doctorWho{
-	background: url(../../../images/capaPrograma/doctorwho/bg-doutorquem.jpg) center top repeat;
-	height: 835px;
+  background: url(../../../images/capaPrograma/doctorwho/bg-doutorquem.jpg) center top repeat;
+  height: 835px;
 }
 .bg-doctorWho #barra-site .redes{
-	float: right;
-	width: 358px;
+  float: right;
+  width: 358px;
 }
 .bg-doctorWho #barra-site .redes .curtir{
-	width: 135px;
+  width: 135px;
 }
 #barra-site #horario p{
-	color: #fff !important;
+  color: #fff !important;
 }
 #rodape-portal{
     margin-top: -25px!important;
 }
 .bg-doctorWho img.drWho{
-	float: left;
-	margin-left: 52px;
-	width: 951px;
-	height: 402px;
+  float: left;
+  margin-left: 52px;
+  width: 951px;
+  height: 402px;
 }
 .bg-doctorWho .redes{
-	float: right;
-	margin: 8px 83px 0 0;
-	width: 75px;
+  float: right;
+  margin: 8px 83px 0 0;
+  width: 75px;
 }
 .mioloDrWho{
-	float: left;
-	margin: 0 0 0 43px;
-	width: 967px;
+  float: left;
+  margin: 0 0 0 43px;
+  width: 967px;
 }
 .mioloDrWho .temporadasWrapper{
-	float: left;
+  float: left;
 }
 .temporadasWrapper .temporadas{
-	float: left;
-	margin-right: 12px;
-	width: 310px;
+  float: left;
+  margin-right: 12px;
+  /*width: 310px;*/
+  width: 228px;
 }
 .temporadas a,
 .temporadas p{
-	text-align: left;
+  text-align: left;
 }
 .temporadas p.titTem{
-	background-color: #0d2854;
-	float: left;
-	margin-bottom: 10px;
-	width: 100%;
+  background-color: #0d2854;
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
 }
 .temporadas p.titTem span{
-	color: #fff;
-	float: left;
-	font-weight: bold;
-	padding: 1px 0 1px 8px;
-	text-transform: uppercase;
+  color: #fff;
+  float: left;
+  font-weight: bold;
+  padding: 1px 0 1px 8px;
+  text-transform: uppercase;
 }
 .temporadas a.imgTem img{
-	margin-top: 1px;
-	width: 310px;
-	height: 357px;
+  margin-top: 1px;
+  width:100%;
+  /*width: 310px;*/
+  /*height: 357px;*/
 }
 .temporadas a.txtTem{
-	color: #fff;
-	float: left;
-	margin-top: 1px;
+  color: #fff;
+  float: left;
+  margin-top: 1px;
 }
 .temporadas a.txtTem h3{
-	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 .temporadas a.txtTem p{
-	color: #fff;
+  color: #fff;
 }
 .temporadas a.txtTem h3:hover,
 .temporadas a.txtTem p:hover{
-	text-decoration: underline;
+  text-decoration: underline;
 }

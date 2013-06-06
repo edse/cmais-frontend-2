@@ -126,7 +126,7 @@ form.selecao .item,
 .menu-interna a { font-family:'GothamMediumRegular';font-weight: normal; font-style: normal;  }
 
 
-#barra-site .redes {float:right; margin-top:0;position: relative;z-index: 2;}
+#barra-site .redes {/*float:right; margin-top:0;*/position: relative;z-index: 2;}
 #barra-site #horario { float:right; clear:both; margin-top:-60px; width:111px;}
 #barra-site #horario { *margin-top:20px;}
 #barra-site #horario { *width: 90px;position: relative;z-index: 1;}
