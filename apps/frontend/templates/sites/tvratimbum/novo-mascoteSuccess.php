@@ -125,7 +125,7 @@ $(document).ready(function(){
                   <?php endfor;?>
                 </ul>
 
-				<input type="hidden" name="opcao" />
+				<input type="hidden" id="opcao" name="opcao" />
 
                                 
               </form>
