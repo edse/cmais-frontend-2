@@ -36,3 +36,4 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 #embedagram li a,
 #embedagram li a img { *width: 130px; *height:130px; *display: block; }
 .fancybox-lock .fancybox-overlay { z-index: 10000; }
+#direita .box-padrao .aba { *display:none }
