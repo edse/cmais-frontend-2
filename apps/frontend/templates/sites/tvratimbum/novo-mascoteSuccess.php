@@ -125,7 +125,7 @@ $(document).ready(function(){
                   <?php endfor;?>
                 </ul>
 
-				<input type="hidden" id="opcao" name="opcao" />
+				<input type="hidden" id="opcao" name="opcao" value="" />
 
                                 
               </form>
@@ -215,6 +215,7 @@ foreach($a as $key=>$value){
  
 ?>
 function computavoto(opcao){
+	alert(opcao);
 	$('#opcao').val(opcao);
 	sendAnswer();
 }
