@@ -66,7 +66,7 @@
                   <h2>Enquete</h2>
                   <div id="img-enquete">
                     <?php if(count($img) > 0):?>
-                      <img src="<?php echo "http://cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                      <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                     <?php else:?>
                       <img src="/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete_padrao.jpg" title="Enquete Cartãozinho" />
                     <?php endif; ?>  
