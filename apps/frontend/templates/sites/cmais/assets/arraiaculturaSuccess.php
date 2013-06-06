@@ -164,7 +164,7 @@
 <script type="text/javascript">
 $('#embedagram').embedagram({
     instagram_id:29889244,
-    limit:4,
+    limit:6,
     link_type:'img',
     thumb_width:130,
     success: function (){ 
