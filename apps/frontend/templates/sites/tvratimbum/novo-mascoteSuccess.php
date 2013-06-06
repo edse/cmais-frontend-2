@@ -233,6 +233,7 @@ function sendAnswer(){
       $('#ajax-loader-b').show();
     },
     
+    
     success: function(data){
       $(".form-votacao, #ajax-loader-b").hide();
       $("#resultado-video").fadeIn("fast");
