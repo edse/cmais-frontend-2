@@ -30,7 +30,7 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 #embedagram li { width: 130px; float:left; border:none; margin:0 10px 10px 0; padding:0; }
 #embedagram li a img { margin-bottom:0; }
 
-#embedagram { width: 300px; height:450px;}
+#embedagram { *width: 300px; *height:450px;}
 #embedagram li,
 #embedagram li a,
-#embedagram li a img { width: 130px; height:130px; display: block; }
+#embedagram li a img { *width: 130px; *height:130px; *display: block; }
