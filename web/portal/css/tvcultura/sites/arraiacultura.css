@@ -12,7 +12,6 @@
 
 
 body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_pattern_arraiacultura.jpg) repeat-x; }
-.bg-site{margin-top: 4px;}
 #capa-site { background: url(/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:-102px !important;  }
 .topo-programa h3.tit-pagina span,
 .topo-programa h3.tit-pagina { font-family: 'GothamMediumRegular', Arial, Helvetica, sans-serif; color:#fbed20; font-weight:bold; font-style:italic; text-transform:uppercase; font-size:45px; }
@@ -20,19 +19,24 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 .topo-programa h3.tit-pagina { width:100%; margin-bottom:0; }
 #barra-site { margin-top:100px; min-height:74px; }
 #barra-site .topo-programa { min-height: 60px !important; }
-.rodape-cmais{display:none;}
 .rodape-cmais a,
-.box-interna h3 { color:#fbed20; }
+.box-interna a,
+.box-interna h3 { color:#fbed20 !important; }
 #direita .box-padrao h4 { background:#fbed20; color:#cc0b30; padding-left:10px; height:30px; padding-top:5px; line-height:30px;  }
 #direita .box-padrao h4 span { background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; float:left; margin-right:10px; }
 #direita .box-padrao h4 .instagram { background-position:0 -24px; }
-#direita .box-padrao { background:#d30b2e; }
-#direita .box-padrao p { color:#fbed20; padding:10px; }
-#embedagram { margin-left:20px; }
+#direita .box-padrao p { color:#fbed20; padding:10px; background:#d30b2e; margin:0 10px; }
+#direita .box-padrao { position:relative; }
+#direita .box-padrao .aba { width:10px; height:10px; background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat 0 -47px; display:block; position:absolute; top:35px; right:0  }
+
+#embedagram { margin-left:20px; background:#d30b2e; width: 280px; margin: 0 0 0 10px; padding-left:10px; overflow: hidden; }
 #embedagram li { width: 130px; float:left; border:none; margin:0 10px 10px 0; padding:0; }
 #embedagram li a img { margin-bottom:0; }
-
-#embedagram { width: 300px; height:450px;}
+#embedagram { *width: 300px; *height:450px; }
 #embedagram li,
 #embedagram li a,
-#embedagram li a img { width: 130px; height:130px; display: block; }
+#embedagram li a img { *width: 130px; *height:130px; *display: block; }
+.fancybox-lock .fancybox-overlay { z-index: 10000; }
+#direita .box-padrao .aba { *display:none }
+
+.box-instagram iframe { background:#d30b2e; padding-left:10px; margin-left:10px;}
