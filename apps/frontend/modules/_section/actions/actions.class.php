@@ -694,8 +694,8 @@ class _sectionActions extends sfActions
                 ->where('a.site_id = ?', $this->site->getId())
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhere('a.asset_type_id = ?', 1)
+                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->orderBy('a.created_at DESC');
-                
             }
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("episodios","bastidores","erros-de-gravacao","series"))) {
               $this->assetsQuery = Doctrine_Query::create()
@@ -1450,10 +1450,12 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
         $pagelimit = 72;
     }
-	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
-      if($this->section->getSlug() == "homepage")
-        $pagelimit = 1;
-	}
+  	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
+        if($this->section->getSlug() == "homepage")
+          $pagelimit = 1;
+  	}
+    if($this->site->getSlug() == "educacaoemdia")
+      $pagelimit = 3;
     if(!isset($pagelimit))
       $pagelimit = 9;
 

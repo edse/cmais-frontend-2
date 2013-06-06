@@ -114,6 +114,7 @@
         <div id="direita" class="grid1">
           <!-- BOX PADRAO twt -->
           <div class="box-padrao grid1">
+            <span class="aba"></span>
             <h4><span class="twt"></span>Divulgue sua festa</h4>
             <p>Quando estiver em alguma festa junina divulgue para seus seguidores com as informações e a hashtag #ArraiaCultura no Twitter!</p>
             
@@ -122,12 +123,17 @@
           
           <!-- BOX PADRAO instagram -->
           <div class="box-padrao grid1">
+            <span class="aba"></span>
             <h4><span class="instagram"></span>instagram #ArraiaCultura</h4>
             <p>Marque suas fotos com a hashtag #ArraiaCultura no aplicativo e participe!</p>
             <div class="box-instagram">
+              
               <!--embedagram-->
-              <ul id="embedagram"></ul>
+              <!--ul id="embedagram"></ul-->
               <!--/embedagram-->
+              
+              <!-- SnapWidget -->
+              <iframe src="http://snapwidget.com/in/?h=YXJyYWlhY3VsdHVyYXxpbnwxMzB8MnwzfGQzMGIyZXxub3wxMHxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:280px; height: 420px" ></iframe>
             </div> 
             
             
@@ -163,7 +169,8 @@
 
 <script type="text/javascript">
 $('#embedagram').embedagram({
-    instagram_id:29889244,
+    //instagram_id:29889244,
+    hashtag: arraiacultura,
     limit:6,
     link_type:'img',
     thumb_width:130,
