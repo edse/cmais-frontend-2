@@ -134,7 +134,7 @@ $(function(){
           </div>
           <?php endif; ?>
 
-          <h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3>
+          <!--h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3-->
           
           <?php if($section->getDescription() != ""): ?>
           <h2 style="text-align: left; margin-bottom:15px;clear: both;"><?php echo $section->getDescription() ?></h2>
@@ -166,7 +166,7 @@ $(function(){
               <?php if(count($pager) > 0): ?>        
                 <?php foreach($pager->getResults() as $k=>$d): ?>
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2" style="margin-bottom: 80px">
+              <div class="box-interna grid2" style="margin-bottom: 100px">
                 <h3><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h3>
                 <p><?php echo $d->getDescription() ?></p>
                 <div class="assinatura grid2">
