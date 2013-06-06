@@ -119,11 +119,7 @@ $(document).ready(function(){
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
-                  </li>
-                  <?php endfor;?>
-                </ul>
-
-                <div class="btn-barra votacao">
+                                  <div class="btn-barra votacao">
                     <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
                     <span class="caudaBarra"></span>
@@ -132,6 +128,11 @@ $(document).ready(function(){
                       Registrando voto, aguarde um momentinho...
                     </div>
                 </div>
+                  </li>
+                  <?php endfor;?>
+                </ul>
+
+
                 
               </form>
               <!--/LISTA-Videos-->
