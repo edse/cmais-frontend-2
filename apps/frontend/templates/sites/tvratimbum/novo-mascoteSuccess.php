@@ -47,6 +47,18 @@ $(document).ready(function(){
 });
 </script>
 
+<?php 
+	for($i=0; $i<count($a); $i++):
+	  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+	  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+?>
+                  
+<script type="text/javascript">
+var opcoes = ["Banana", "Orange", "Apple", "Mango"];
+opcoes.sort();
+
+</script>
+
 <!--SCRIPT-->
 
 <!--BODY WRAPPER-->
