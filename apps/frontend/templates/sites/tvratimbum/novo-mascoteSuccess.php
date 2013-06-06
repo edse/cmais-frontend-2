@@ -152,7 +152,7 @@ $(document).ready(function(){
                     <div class="progress progress-success">
                        <div class="bar" style="width: 40%"></div>
                     </div>
-                  </li>
+                  </li> 
                 </ul>
                 <?php
                 endfor;
