@@ -50,7 +50,8 @@
         <div class="capa grid3">
           <div class="destaque-video">
 
-            
+         <?php if(isset($displays["enquete"])):?>
+          <?php if(count($displays["enquete"])>0):?>
             <!-- DESTAQUE 2 COLUNAS -->
               <?php
               $img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
@@ -65,7 +66,7 @@
                   <h2>Enquete</h2>
                   <div id="img-enquete">
                     <?php if(count($img) > 0):?>
-                      <img src="<?php echo "http://cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                      <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                     <?php else:?>
                       <img src="/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete_padrao.jpg" title="Enquete Cartãozinho" />
                     <?php endif; ?>  
@@ -106,17 +107,22 @@
                 </div>  
               </div>
               
+           <?php endif;?>
+        <?php endif;?>     
+              
          <?php if(isset($displays["enquete"])):?>
           <?php if(count($displays["enquete"])==0):?>
           
             <?php if(isset($displays["destaque-principal"])): ?>
-            <div class="duas-colunas destaque grid2">
-              <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
-              <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-              <iframe title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0] -> Asset -> AssetVideo -> getYoutubeId();?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+              <?php if(count($displays["destaque-principal"])>0): ?>
+              <div class="duas-colunas destaque grid2">
+                <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
+                <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
+                <iframe title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0] -> Asset -> AssetVideo -> getYoutubeId();?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                <?php endif;?>
+                <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
+              </div>
               <?php endif;?>
-              <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
-            </div>
             <?php endif;?>
           </div>
           
