@@ -93,7 +93,8 @@ $(document).ready(function(){
                              
               <!--CONTEUDO-->  
               <div id="container-destaque-principal">
-                 <?php echo html_entity_decode($displays["enquete"][0]->getDescription()); ?>
+                 Venha conhecer o Bolhota, Borbulha, Bubble, Ploc e Pug! Eles são os candidatos a mascote oficial da TV Rá Tim Bum! e vieram diretamente do Planeta Bolha para trazer ainda mais diversão para você.
+				 <br>Vote no seu candidato predileto, eles estão contando com seu click! 
               </div>    
               <!--/CONTEUDO-->
            
