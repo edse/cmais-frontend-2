@@ -22,6 +22,8 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 .rodape-cmais a,
 .box-interna h3 { color:#fbed20; }
 #direita .box-padrao h4 { background:#fbed20; color:#cc0b30; padding-left:10px;  }
+#direita .box-padrao h4 span { background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; }
+#direita .box-padrao h4 .instagram { background-position:0 -24px; }
 #direita .box-padrao { background:#d30b2e; }
 #direita .box-padrao p { color:#fbed20; padding:10px; }
 #embedagram { margin-left:20px; }
