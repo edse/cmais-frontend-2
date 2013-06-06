@@ -1450,10 +1450,12 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
         $pagelimit = 72;
     }
-	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
-      if($this->section->getSlug() == "homepage")
-        $pagelimit = 1;
-	}
+  	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
+        if($this->section->getSlug() == "homepage")
+          $pagelimit = 1;
+  	}
+    if($this->site->getSlug() == "educacaoemdia")
+      $pagelimit = 3;
     if(!isset($pagelimit))
       $pagelimit = 9;
 
