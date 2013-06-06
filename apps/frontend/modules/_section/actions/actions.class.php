@@ -505,7 +505,8 @@ class _sectionActions extends sfActions
                   ->select('a.*')
                   ->from('Asset a, SectionAsset sa')
                   ->where('sa.section_id = ?', $this->section->id)
-                  ->andWhere('sa.asset_id = a.id');
+                  ->andWhere('sa.asset_id = a.id')
+                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
                 if($this->site_id > 0)
                   $this->assetsQuery->andWhere('a.site_id = ?', (int)$this->site_id);
                 if($this->busca != "")
