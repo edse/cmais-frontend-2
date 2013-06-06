@@ -119,9 +119,11 @@ $(document).ready(function(){
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
-                  <br>
-                  
-           
+                  </li>
+                  <?php endfor;?>
+                </ul>
+
+                <div class="btn-barra votacao">
                     <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
                     <span class="caudaBarra"></span>
@@ -129,13 +131,7 @@ $(document).ready(function(){
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                       Registrando voto, aguarde um momentinho...
                     </div>
-                    
-           
-                  </li>
-                  <?php endfor;?>
-                </ul>
-
-
+                </div>
                 
               </form>
               <!--/LISTA-Videos-->
@@ -196,15 +192,6 @@ $(document).ready(function(){
   <!--/CONTEUDO WRAPPER-->
 
 </div>
-
-  <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>">
-    <?php 
-    $form = new BaseForm();
-    echo $form->renderHiddenFields();
-    ?>
-    <input type="hidden" name="opcao" id="opcao" value="" /> 
-  </form>
-  
 <!--/BODY WRAPPER-->
 <script>
 //valida form votacao
@@ -256,4 +243,3 @@ function sendAnswer(){
   
 }
 </script>
-
