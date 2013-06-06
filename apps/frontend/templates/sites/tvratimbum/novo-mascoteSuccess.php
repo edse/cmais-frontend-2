@@ -123,7 +123,7 @@ $(document).ready(function(){
                   </li>
                   
                   <?php endfor;?>
-                </ul>
+                </ul> 
 
 				<input type="hidden" id="opcao" name="opcao" value="" />
 
