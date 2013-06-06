@@ -121,7 +121,17 @@ $(document).ready(function(){
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   <br>
                   
-                   <a href="javascript:;" class="voto" rel="<?php echo $a[$i]->Asset->AssetAnswer->getAnswer()?>" name="<?php echo $a[$i]->Asset->AssetAnswer->getId()?>">
+                  <div class="btn-barra votacao">
+                    <span class="pontaBarra"></span>
+                    <input id="votar" type="submit" value="votar" />
+                    <span class="caudaBarra"></span>
+                    <div id="enviando-voto" align="center"style="display:none">
+                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                      Registrando voto, aguarde um momentinho...
+                    </div>
+                    
+                </div>
+                
                   </li>
                   <?php endfor;?>
                 </ul>
@@ -188,7 +198,7 @@ $(document).ready(function(){
 
 </div>
 
-  <form method="post" id="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>">
+  <form method="post" id="e<?php echo $respostas[0]->Asset->getId()?>">
     <?php 
     $form = new BaseForm();
     echo $form->renderHiddenFields();
