@@ -137,7 +137,7 @@ $(document).ready(function(){
                
                 <h2>Resultado Parcial: </h2>
                 
-                <!--LISTA-RESULTADO-->
+                <!--LISTA-RESULTADO--> 
                
                 <?php
                 for($i=0; $i<count($a); $i++):
