@@ -160,7 +160,7 @@ $(document).ready(function(){
                 <!--/LISTA-RESULTADO-->  
                 
                 <h2>Agradecemos seu voto! ;) </h2>
-  
+   
               </div>  
               <!--/RESULTADO PARCIAL-->
   
