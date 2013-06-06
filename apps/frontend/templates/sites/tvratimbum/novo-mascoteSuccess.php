@@ -114,26 +114,20 @@ $(document).ready(function(){
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+                     <!--<input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
-                    </label>
+                    </label>-->
+                    <a href="javascript:computarvoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
-                                  <div class="btn-barra votacao">
-                    <span class="pontaBarra"></span>
-                    <input id="votar" type="submit" value="votar" />
-                    <span class="caudaBarra"></span>
-                    <div id="enviando-voto" align="center"style="display:none">
-                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
-                      Registrando voto, aguarde um momentinho...
-                    </div>
-                </div>
                   </li>
+                  
                   <?php endfor;?>
                 </ul>
 
+				<input type="hidden" name="opcao" />
 
-                
+                                
               </form>
               <!--/LISTA-Videos-->
             
@@ -220,6 +214,11 @@ foreach($a as $key=>$value){
 }
  
 ?>
+function computavoto(opcao){
+	$('#opcao').val(opcao);
+	sendAnswer();
+}
+
 function sendAnswer(){
   $.ajax({
     type: "POST",
