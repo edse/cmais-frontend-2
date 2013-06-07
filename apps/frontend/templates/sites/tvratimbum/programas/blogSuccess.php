@@ -6,7 +6,7 @@
     ->andWhere('sa.asset_id = a.id')
 	->andWhere('a.is_active = 1')
     ->andWhere('sa.section_id = ?', 2475)
-	 >andWhereIn('a.asset_type_id', array(1))
+	 >andWhere('sa.asset_type_id', array(1))
 ?>
 
 <?php 
