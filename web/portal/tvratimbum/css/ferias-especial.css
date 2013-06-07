@@ -221,5 +221,5 @@ form label.error{display:block !important;}
 #ferias .enquete-mascote #resultado-video h2 { text-align:center; }
 .enquete-mascote #lista-videos a { background:url("../image/bg-barra.png") repeat-x scroll 0 0 transparent; color:#6B6B6B; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align:center; width:100% !important; text-align:center; display:block; margin-top:10px; }
 .enquete-mascote #lista-videos a:hover { text-decoration:none; }
-#ferias .enquete-mascote iframe { padding-left:0; margin-left:20px; }
+#ferias .enquete-mascote iframe { *padding-left:0; }
 /* FAZ-DE-CONTA */
