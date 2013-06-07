@@ -78,8 +78,8 @@
       <div class="capa grid3">
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
+          
           <!-- destaque home -->
-          <!--
           <div id="destaque" class="destaque grid2 chamada-home">
             <ul class="abas-conteudo conteudo">
               <li style="display: block;" id="bloco1" class="filho">
@@ -104,10 +104,10 @@
               <li class=""><a href="#bloco2" title="Leon Cakoff"></a></li>
             </ul>
           </div>
-          -->
           <!-- /destaque home-->
+           
           
-          <?php /*if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) */ ?>
+          <?php //if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) ?>
           
           <!-- col-esq -->
           <div class="col-esq grid1">

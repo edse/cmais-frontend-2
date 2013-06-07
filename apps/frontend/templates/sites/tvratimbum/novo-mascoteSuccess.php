@@ -14,14 +14,19 @@
  * 
  */
 ?>
+
 <?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->orderBy('aa.created_at desc')
+  ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+  ->where('aa.asset_id = a.id')
+  ->andWhere('a.id = ra.asset_id')
+  ->andWhere('ra.parent_asset_id = ?', 122851)
+  ->orderBy('ra.display_order')
   ->execute();
 ?>
+
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
