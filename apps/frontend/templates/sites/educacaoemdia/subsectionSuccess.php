@@ -206,7 +206,7 @@ $(function(){
                   <!-- SAIBA MAIS -->
                 <?php endif; ?>
                 
-                <p>Permalink: <a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->retriveUrl() ?></a></p>
+                <p>Permalink: <a href="<?php echo $d->retriveUrl() ?>">http://cmais.com.br<?php echo $d->retriveUrl() ?></a></p>
                 <?php /* include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $d->retriveUrl())) */ ?>
 
               </div>
