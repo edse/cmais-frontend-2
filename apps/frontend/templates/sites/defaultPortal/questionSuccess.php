@@ -99,12 +99,12 @@
                 </div>
                 
                 <div class="texto">
-		                <!--VOTACAO Video-->
-		            <div id="votacao-video" class="enquete-mascote" >
-		              
-		               <!--LISTA-Videos-->
+		                  <!--VOTACAO Video-->
+            <div id="votacao-video">
+              
+              <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-
+                <h2>$asset->AssetQuestion->getQuestion();?></h2>
                 <ul id="lista-videos">
                   <?php 
                   for($i=0; $i<count($a); $i++):
@@ -122,9 +122,9 @@
                 </ul>
 
                 <div class="btn-barra votacao">
-                  
+                    <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
-                   
+                    <span class="caudaBarra"></span>
                     <div id="enviando-voto" align="center"style="display:none">
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                       Registrando voto, aguarde um momentinho...
@@ -133,46 +133,36 @@
                 
               </form>
               <!--/LISTA-Videos-->
-		                
-		              <!--RESULTADO PARCIAL-->
-		              <div id="resultado-video" style="display:none;">
-		               
-		                <h2>Resultado Parcial: </h2>
-		                <div class="lista-resultado">
-		                  <!--LISTA-RESULTADO--> 
-		                  <?php
-		                  for($i=0; $i<count($a); $i++):
-		  					$v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-		                  ?>
-		                  
-		                  <p><img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
-		                  <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
-		                    <li>
-		                      <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?> <img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
-		                       
-		                      <span>00%</span>
-		                      <div class="progress progress-success">
-		                         <div class="bar" style="width: 40%"></div>
-		                      </div>
-		                    </li> 
-		                  </ul>
-		                  <?php
-		                  endfor;
-		                  ?>
-		                  <!--/LISTA-RESULTADO-->  
-		                  
-		                  <h2>Agradecemos seu voto! ;) </h2>
-		                
-		                </div>
-		   
-		              </div>  
-		              <!--/RESULTADO PARCIAL-->
-		  
-		              <span class="picote"></span>
-		            
-		            </div>  
-		            <!--/VOTACAO Video-->
-	            
+            
+                
+              <!--RESULTADO PARCIAL-->
+              <div id="resultado-video" style="display:none;">
+               
+                <h2>Resultado Parcial: </h2>
+                
+                <!--LISTA-RESULTADO-->
+                <?php
+                for($i=0; $i<count($a); $i++):
+                  
+                ?>
+                <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
+                  <li>
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?></p> 
+                    <span>00%</span>
+                    <div class="progress progress-success">
+                       <div class="bar" style="width: 40%"></div>
+                    </div>
+                  </li>
+                </ul>
+                <?php
+                endfor;
+                ?>
+                <!--/LISTA-RESULTADO-->  
+                
+                <h2>Agradecemos seu voto! ;) </h2>
+  
+              </div>  
+              <!--/RESULTADO PARCIAL-->
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
