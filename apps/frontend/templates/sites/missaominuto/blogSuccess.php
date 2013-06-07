@@ -1,4 +1,18 @@
+<?php
+ $assets = Doctrine_Query::create()
+    ->select('s.*')
+    ->from('Site s, SectionAsset sa, Asset a')
+    ->where('s.id = a.site_id')
+    ->andWhere('sa.asset_id = a.id')
+	->andWhere('a.is_active = 1')
+    ->andWhere('sa.section_id = ?', 2475)
+	 >andWhereIn('a.asset_type_id', array(1))
+?>
 
+<?php 
+	$assets = $pager->getResults();
+?>
+		
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
@@ -57,9 +71,7 @@
             </div> 
             </div> 
             
-		<?php 
-			$assets = $pager->getResults();
-		?>
+		
            <?php if(count($pager) > 1): ?>
         
         <?php foreach($pager->getResults() as $d): ?>	        
