@@ -511,3 +511,6 @@ em{font-style:oblique !important;}
 #destaque.chamada-home p { margin-left:0; }
 .menu-interna,
 .menu-interna li { background:#136b9b; }
+.home #conteudo-pagina,
+.home #miolo { margin-top:0; }
+
