@@ -27,12 +27,12 @@ $a = Doctrine_Query::create()
 
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('AssetAnswer aa, RelatedAsset ra')
-  ->where('ra.parent_asset_id = ?', (int)$displays["enquete"][0]->Asset->id)
-  ->andWhere('aa.asset_id = ra.asset_id')
+  ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+  ->where('aa.asset_id = a.asset_id')
+  ->andWhere('a.asset_id = ra.asset_id')
+  ->andWhere('ra.parent_asset_id = 122851')
   ->orderBy('ra.display_order')
   ->execute();
-  die(count($a));
 ?>
 
 <?php use_helper('I18N', 'Date') ?>
