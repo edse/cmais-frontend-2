@@ -48,8 +48,7 @@
 	->andWhere('a.asset_type_id = ?', 1)
 	->orderBy('a.created_at desc')
 	->execute();
-              
-
+     
 ?>
 
 <?php 
