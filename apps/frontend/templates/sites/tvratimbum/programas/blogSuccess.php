@@ -50,11 +50,12 @@
 	->execute();
      
 ?>
-<?php 
-	echo $assets;
-?>
+
 <?php 
 	$assets = $pager->getResults();
+?>
+<?php 
+	echo $assets;
 ?>
 <div id="bodyWrapper">
 
