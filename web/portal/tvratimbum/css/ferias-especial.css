@@ -215,5 +215,7 @@ form label.error{display:block !important;}
 #ferias .coluna-640 #especial-baixar .conteudo-baixar .btn-barra a{width: 590px !important;}
 #ferias .btn-barra .caudaBarra{float: right !important;}
 #votacao-video { float:left; width:96%; }
+.lista-resultado {margin: 0 auto;    width: 320px;}
+#ferias #resultado-video .classificacao { width:100%; margin-bottom:20px; }
 
 /* FAZ-DE-CONTA */
