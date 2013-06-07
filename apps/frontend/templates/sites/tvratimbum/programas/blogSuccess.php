@@ -1,5 +1,5 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
@@ -44,9 +44,11 @@
     ->where('s.id = a.site_id')
     ->andWhere('sa.asset_id = a.id')
 	->andWhere('a.is_active = 1')
+	->andWhere('sa.section_id = ?', 2475)
 	->andWhere('a.asset_type_id = ?', 1)
-    ->andWhere('sa.section_id = ?', 2475)
-
+	->orderBy('a.created_at desc')
+	->execute();
+     
 ?>
 
 <?php 
