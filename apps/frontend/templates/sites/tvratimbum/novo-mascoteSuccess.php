@@ -17,9 +17,9 @@
 <?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('AssetAnswer aa')
+  ->from('AssetAnswer aa, Asset a')
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->orderBy('aa.display_order')
+  ->orderBy('a.display_order')
   ->execute();
 ?>
 <?php use_helper('I18N', 'Date') ?>
