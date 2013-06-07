@@ -14,22 +14,8 @@
  * 
  */
 ?>
-<?php /*
-$a = Doctrine_Query::create()
-  ->select('aa.*')
-  ->from('AssetAnswer aa, Asset a')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->orderBy('aa.display_order')
-  ->execute();
-*/?>
-
-SELECT aa.* FROM related_asset as ra, asset_answer as aa, asset as a 
-WHERE aa.asset_id = a.id
-AND a.id = ra.asset_id
-AND ra.parent_asset_id = 122851
-ORDER BY ra.display_order
-
 <?php
+
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('RelatedAsset ra, AssetAnswer aa, Asset a')  
