@@ -5,8 +5,9 @@
     ->where('s.id = a.site_id')
     ->andWhere('sa.asset_id = a.id')
 	->andWhere('a.is_active = 1')
-    ->andWhere('sa.section_id = ?', 2475)
 	->andWhere('a.asset_type_id = ?', 1)
+    ->andWhere('sa.section_id = ?', 2475)
+
 ?>
 
 <?php 
