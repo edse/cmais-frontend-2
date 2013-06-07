@@ -72,7 +72,7 @@
             </div> 
             
 		
-           <?php if(count($pager) > 1): ?>
+           <?php if(count($pager) > 0): ?>
         
         <?php foreach($pager->getResults() as $d): ?>	        
         <div class="assets">
