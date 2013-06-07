@@ -23,13 +23,19 @@ $a = Doctrine_Query::create()
   ->execute();
 */?>
 
+SELECT aa.* FROM related_asset as ra, asset_answer as aa, asset as a 
+WHERE aa.asset_id = a.id
+AND a.id = ra.asset_id
+AND ra.parent_asset_id = 122851
+ORDER BY ra.display_order
+
 <?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('RelatedAnswer aa, RelatedAsset ra, Asset a')  
-  ->where('aa.asset_id = a.asset_id')
-  ->andWhere('a.asset_id = ra.asset_id')
-  ->andWhere('ra.parent_asset_id = 122851')
+  ->from('RelatedAsset ra, AssetAnswer aa, Asset a')  
+  ->where('aa.asset_id = a.id')
+  ->andWhere('a.id = ra.asset_id')
+  ->andWhere('ra.parent_asset_id = ?', 122851)
   ->orderBy('ra.display_order')
   ->execute();
 ?>
