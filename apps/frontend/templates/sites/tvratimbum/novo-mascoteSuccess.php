@@ -14,6 +14,7 @@
  * 
  */
 ?>
+
 <?php
 
 $a = Doctrine_Query::create()
@@ -22,7 +23,7 @@ $a = Doctrine_Query::create()
   ->where('aa.asset_id = a.id')
   ->andWhere('a.id = ra.asset_id')
   ->andWhere('ra.parent_asset_id = ?', 122851)
-  ->orderBy('ra.display_order')
+  ->orderBy('aa.display_order')
   ->execute();
 ?>
 
