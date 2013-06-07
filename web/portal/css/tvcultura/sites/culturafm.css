@@ -144,7 +144,7 @@ form.selecao .item,
 .fm35-3 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_III.png) !important;}
 #barra-site h2 {margin-bottom:20px;}
 .menu-interna { margin-top:0; background:#666; }
-.menu-interna li {margin-right:0; padding:5px 11px; background:#666; }
+.menu-interna li {margin-right:0; padding:5px 18px; background:#666; }
 .menu-interna .m-contato {float:right;}
 .menu-interna li a {text-transform:uppercase; }
 .box-padrao .topo span {display:none;}
@@ -503,3 +503,14 @@ h3.tit-pagina { margin-bottom:0; }
 /** /RADIO FM  **/
 em{font-style:oblique !important;}
 #menuFloat { *display:none; }
+
+.chamada-home { margin-bottom:20px; position:relative; }
+.chamada-home .abas-menu.pag-bola { position:absolute; top:20px; right:0; background:none; }
+.chamada-home .media { display:block; clear:both; width:100%; margin-top:20px !important; text-decoration:none; }
+.chamada-home .media img{ clear:both; width:100% !important; max-height:390px; margin-top:20px; }
+#destaque.chamada-home p { margin-left:0; }
+.menu-interna,
+.menu-interna li { background:#136b9b; }
+.home #conteudo-pagina,
+.home #miolo { margin-top:0; }
+
