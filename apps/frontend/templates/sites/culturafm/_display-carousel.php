@@ -7,7 +7,7 @@
               <li style="display: <?php if($k == 0): ?>block;<?php else: ?>none;<?php endif; ?>" id="bloco<?php echo $k; ?>" class="filho">
                 <a class="media titulos" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                   <?php echo $d->getLabel() ?>
-                  <img style="width: 310px;" src="<?php echo $d->retriveImageUrlByImageUsage("image-8-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                  <img style="width: 310px;" src="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" alt="<?php echo $d->getTitle() ?>">
                 </a>
                 <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
                 <p><?php echo $d->getDescription() ?></p>
