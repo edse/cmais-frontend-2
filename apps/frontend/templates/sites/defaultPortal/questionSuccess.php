@@ -122,9 +122,9 @@
                 </ul>
 
                 <div class="btn-barra votacao">
-                    <span class="pontaBarra"></span>
+                  
                     <input id="votar" type="submit" value="votar" />
-                    <span class="caudaBarra"></span>
+                   
                     <div id="enviando-voto" align="center"style="display:none">
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                       Registrando voto, aguarde um momentinho...
