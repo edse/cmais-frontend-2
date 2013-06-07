@@ -1,0 +1,1 @@
+<div class="fb-like-box" data-href="<?php if($site->facebook_url!=""): ?><?php echo $site->facebook_url ?><?php else: ?>http://facebook.com/tvcultura<?php endif; ?>" data-width="292" data-height="450" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>

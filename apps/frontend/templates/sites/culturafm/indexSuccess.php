@@ -16,7 +16,7 @@
   });
 </script>
 <style type="text/css">
-  .programacao { height:114px; }
+  .programacao { height:255px; }
 </style>
 
 <?php
@@ -78,36 +78,8 @@
       <div class="capa grid3">
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
-          <!-- destaque home -->
-          <!--
-          <div id="destaque" class="destaque grid2 chamada-home">
-            <ul class="abas-conteudo conteudo">
-              <li style="display: block;" id="bloco1" class="filho">
-                <a class="media titulos" href="http://tvcultura.cmais.com.br/especiais/documentario-a-mostra" title="Mostra Internacional de Cinema ganha especial">
-                  Titulo do destaque
-                  <img style="width: 310px;" src="http://midia.cmais.com.br/displays/32341bdc54b25f707fb14c03f8f2b57c916d7c3e.jpg" alt="Mostra Internacional de Cinema ganha especial">
-                </a>
-                <a href="http://tvcultura.cmais.com.br/especiais/documentario-a-mostra" class="titulos">Mostra Internacional de Cinema ganha especial</a>
-                <p>Assista na íntegra!</p>
-              </li>
-              <li style="display: none;" id="bloco2" class="filho">
-                <a class="media titulos" href="http://tvcultura.cmais.com.br/leoncakoff" title="Leon Cakoff"> 
-                  Titulo 2 do destaque
-                  <img style="width: 310px;" src="http://midia.cmais.com.br/displays/ad02c54be096a8ffec3bdd04e33b090c6c2d064d.jpg" alt="Leon Cakoff"> 
-                </a>
-                <a href="http://tvcultura.cmais.com.br/leoncakoff" class="titulos">Leon Cakoff</a>
-                <p>Conheça o crítico de cinema e criador da Mostra Internacional de Cinema.</p>
-              </li>
-            </ul>
-            <ul class="abas-menu pag-bola destaque1">
-              <li class="ativo"><a href="#bloco1" title="Mostra Internacional de Cinema ganha especial"></a></li>
-              <li class=""><a href="#bloco2" title="Leon Cakoff"></a></li>
-            </ul>
-          </div>
-          -->
-          <!-- /destaque home-->
           
-          <?php /*if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) */ ?>
+          <?php if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) ?>
           
           <!-- col-esq -->
           <div class="col-esq grid1">
@@ -176,7 +148,7 @@
           </div>
           <!-- / BOX PUBLICIDADE -->
           
-          <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
+          <?php include_partial_from_folder('sites/culturafm','global/facebook-likeBox', array('site' => $site, 'uri' => $uri)) ?>
           
         </div>
         <!-- /DIREITA -->
