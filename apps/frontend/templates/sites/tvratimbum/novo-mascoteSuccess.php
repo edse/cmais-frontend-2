@@ -26,13 +26,14 @@ $a = Doctrine_Query::create()
 <?php
 $a = Doctrine_Query::create()
   ->select('aa.*')
-  ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+  ->from('RelatedAnswer aa, RelatedAsset ra, Asset a')  
   ->where('aa.asset_id = a.asset_id')
   ->andWhere('a.asset_id = ra.asset_id')
   ->andWhere('ra.parent_asset_id = 122851')
   ->orderBy('ra.display_order')
   ->execute();
 ?>
+
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
