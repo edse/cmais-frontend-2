@@ -71,7 +71,7 @@
             </div> 
             </div> 
             
-		
+		 
            <?php if(count($pager) > 0): ?>
         
         <?php foreach($pager->getResults() as $d): ?>	        
