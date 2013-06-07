@@ -24,7 +24,7 @@ $a = Doctrine_Query::create()
 */?>
 
 <?php
-
+ 
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
