@@ -46,7 +46,9 @@
 	->andWhere('a.is_active = 1')
 	->andWhere('sa.section_id = ?', 2475)
 	->andWhere('a.asset_type_id = ?', 1)
-
+	->orderBy('a.created_at desc')
+	->execute();
+              
 
 ?>
 
