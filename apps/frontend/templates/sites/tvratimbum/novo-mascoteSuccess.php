@@ -114,25 +114,20 @@ $(document).ready(function(){
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+                     <!--<input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
-                    </label>
+                    </label>-->
+                    <a href="javascript:computavoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   </li>
+                  
                   <?php endfor;?>
-                </ul>
+                </ul> 
 
-                <div class="btn-barra votacao">
-                    <span class="pontaBarra"></span>
-                    <input id="votar" type="submit" value="votar" />
-                    <span class="caudaBarra"></span>
-                    <div id="enviando-voto" align="center"style="display:none">
-                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
-                      Registrando voto, aguarde um momentinho...
-                    </div>
-                </div>
-                
+				<input type="hidden" id="opcao" name="opcao" value="" />
+
+                                
               </form>
               <!--/LISTA-Videos-->
             
@@ -142,19 +137,22 @@ $(document).ready(function(){
                
                 <h2>Resultado Parcial: </h2>
                 
-                <!--LISTA-RESULTADO-->
+                <!--LISTA-RESULTADO--> 
+                
                 <?php
                 for($i=0; $i<count($a); $i++):
-                  
+					$v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                 ?>
+                <p><img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
                 <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
                   <li>
-                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?></p> 
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?> <img src="http://i1.ytimg.com/vi/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>/mqdefault.jpg"></p> 
+                     
                     <span>00%</span>
                     <div class="progress progress-success">
                        <div class="bar" style="width: 40%"></div>
                     </div>
-                  </li>
+                  </li> 
                 </ul>
                 <?php
                 endfor;
@@ -162,7 +160,7 @@ $(document).ready(function(){
                 <!--/LISTA-RESULTADO-->  
                 
                 <h2>Agradecemos seu voto! ;) </h2>
-  
+   
               </div>  
               <!--/RESULTADO PARCIAL-->
   
@@ -219,6 +217,11 @@ foreach($a as $key=>$value){
 }
  
 ?>
+function computavoto(opcao){
+	$('#opcao').val(opcao);
+	sendAnswer();
+}
+
 function sendAnswer(){
   $.ajax({
     type: "POST",
@@ -229,6 +232,7 @@ function sendAnswer(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
     },
+    
     
     success: function(data){
       $(".form-votacao, #ajax-loader-b").hide();

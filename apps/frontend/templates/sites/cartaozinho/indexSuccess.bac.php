@@ -49,91 +49,27 @@
         <!-- CAPA -->
         <div class="capa grid3">
           <div class="destaque-video">
-
-         <?php if(isset($displays["enquete"])):?>
-          <?php if(count($displays["enquete"])>0):?>
+            <!--a href="/cartaozinho/bola-do-paulistao" style="margin:0 140px 100px 0; display: block; float:right;" ><img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/banner.png" alt="POR QUE EU MEREÇO GANHAR A BOLA DA FINAL DO PAULISTÃO?" /></a-->
             <!-- DESTAQUE 2 COLUNAS -->
-              <?php
-              $img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-              $respostas = Doctrine_Query::create()
-                ->select('aa.*')
-                ->from('AssetAnswer aa')
-                ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-                ->execute();
-              ?>
-              <div class="duas-colunas destaque enquete grid2">
-                <div id="pergunta-cartaozinho-enquete">
-                  <h2>Enquete</h2>
-                  <div id="img-enquete">
-                    <?php if(count($img) > 0):?>
-                      <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
-                    <?php else:?>
-                      <img src="/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete_padrao.jpg" title="Enquete Cartãozinho" />
-                    <?php endif; ?>  
-                  </div>  
-                  <span class="txt-pergunta"><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion() ?></span>
-                  <!--pergunta-->
-                  <form method="post" id="e<?php echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
-                    <?php 
-                    $form = new BaseForm();
-                    echo $form->renderHiddenFields();
-                    ?>
-                    <?php for($i=0; $i< count($respostas); $i++): ?>
-                      <div class="resposta-cartaozinho-enquete">
-                        <input type="radio" name="opcao" id="resposta<?php echo $i?>" class="resposta required" value="<?php echo $respostas[$i]->Asset->AssetAnswer->id ?>"  />
-                        <label class="radio" for="resposta<?php echo $i?>"><?php echo $respostas[$i]->Asset->AssetAnswer->getAnswer() ?></label>
-                      </div>
-                      <?php if($i== 0 ):?>
-                        <span class="versus">X</span>
-                      <?php endif; ?>
-                    <?php endfor;?>
-
-                    <input type="submit" value="VOTAR">
-                  </form>
-                  <!-- /pergunta-->
-                  
-                  <!--Resposta FORM INATIVA-->
-                  <form class="inativo" style="display: none;">
-                    <?php for($i=0; $i<count($respostas); $i++): ?>
-                      <div class="resposta-cartaozinho-enquete resposta<?php echo $i?>">
-                        <label>50%</label>
-                      </div>
-                      <?php if($i == 0):?>
-                        <span class="versus">X</span>
-                      <?php endif; ?>
-                    <?php endfor;?>
-                  </form>
-                  <!--/Resposta-->
-                </div>  
-              </div>
-              
-           <?php endif;?>
-        <?php endif;?>     
-              
-         <?php if(isset($displays["enquete"])):?>
-          <?php if(count($displays["enquete"])==0):?>
-          
-            <?php if(isset($displays["destaque-principal"])): ?>
-              <?php if(count($displays["destaque-principal"])>0): ?>
-              <div class="duas-colunas destaque grid2">
-                <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
-                <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-                <iframe title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0] -> Asset -> AssetVideo -> getYoutubeId();?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                <?php endif;?>
-                <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
-              </div>
+      
+            <?php $displays = $displays["destaque-principal"]; if(isset($displays)): ?>
+            <div class="duas-colunas destaque grid2">
+              <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
+              <?php if($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
+              <iframe title="<?php echo $displays[0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays[0] -> Asset -> AssetVideo -> getYoutubeId();?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
               <?php endif;?>
+              <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
+            </div>
             <?php endif;?>
+           
+            <!-- /DESTAQUE 2 COLUNAS -->
           </div>
-          
+      
           <a href="/cartaozinho/mande-seu-video" title="Mande seu vídeo" class="mande-seu-video">
           <p>entre em campo no cartãozinho:</p>
-         
-         <?php endif;?>
-        <?php endif;?>
         
           </a>
-          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!"></a-->
+          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/fale-conosco" title="Participe! Envie sua sugestão pra gente!"></a>
           <div class="juiza"></div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
@@ -276,44 +212,3 @@
   </div>
   <!-- /CAPA SITE -->
 </div>
-
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script>
-//valida form
-var validator = $('.form-voto').validate({
-  submitHandler: function(form){
-    sendAnswer()
-  },
-  rules:{
-      opcao:{
-        required: true
-      }
-    },
-  messages:{
-    opcao: ""
-  }
-});
-
-//enviar voto
-function sendAnswer(){
-  $.ajax({
-    type: "POST",
-    dataType: "json", 
-    data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
-    url: "<?php echo url_for('homepage')?>ajax/enquetes",
-    beforeSend: function(){
-
-    },
-    success: function(data){
-      $(".form-voto").hide();
-      $("form.inativo").fadeIn("fast");
-      var i=0;
-      $.each(data, function(key, val) {
-        $('.resposta'+i).html(parseInt(parseFloat(val.votes))+"%");
-        i++;
-      });
-    }
-  });
-  
-}
-</script>
