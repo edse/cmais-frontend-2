@@ -310,7 +310,7 @@ $(document).ready(function(){
     var validator = $('.form-votacao').validate({
     submitHandler: function(form){
       sendAnswer()
-    }, 
+    },
     rules:{
         opcao:{
           required: true
