@@ -218,5 +218,5 @@ form label.error{display:block !important;}
 .enquete-mascote { float:left; width:96%; }
 .enquete-mascote .lista-resultado {margin: 0 auto;    width: 320px;}
 .enquete-mascote .lista-resultado .classificacao { width:100%; margin-bottom:20px; }
-.enquete-mascote #lista-videos a { background:url("../image/bg-barra.png") repeat-x scroll 0 0 transparent; color:#6B6B6B; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-align:center; }
+.enquete-mascote #lista-videos a { background:url("../image/bg-barra.png") repeat-x scroll 0 0 transparent; color:#6B6B6B; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align:center; width:100% !important; text-align:center; }
 /* FAZ-DE-CONTA */
