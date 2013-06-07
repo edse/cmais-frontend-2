@@ -16,6 +16,7 @@
             </ul>
             <ul class="abas-menu pag-bola destaque1">
               <?php foreach($displays as $k=>$d): ?>
+                
               <li><a href="#bloco<?php echo $k ?>" title="<?php echo $d->getTitle() ?>"></a></li>
               <?php endforeach; ?>
             </ul>
