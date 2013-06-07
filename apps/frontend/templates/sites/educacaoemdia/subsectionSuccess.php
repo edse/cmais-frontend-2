@@ -114,9 +114,9 @@ $(function(){
             </a>
           </h2>
 
-          <?php if(isset($site) && $site->id > 0): ?>
+          <?php /* if(isset($site) && $site->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+          <?php endif; */ ?>
           
         </div>
         
