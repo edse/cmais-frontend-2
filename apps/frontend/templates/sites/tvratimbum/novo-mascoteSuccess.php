@@ -121,7 +121,7 @@ $(document).ready(function(){
                   ?>
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                    <br />Votar: <a href="javascript:computavoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>                    
+                    <br /><a href="javascript:computavoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>                    
                   </li>
                   <?php endfor;?>
                 </ul> 
