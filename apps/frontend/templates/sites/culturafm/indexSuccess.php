@@ -16,7 +16,7 @@
   });
 </script>
 <style type="text/css">
-  .programacao { height:114px; }
+  .programacao { height:255px; }
 </style>
 
 <?php
