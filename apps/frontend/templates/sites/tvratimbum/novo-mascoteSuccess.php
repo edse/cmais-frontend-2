@@ -24,13 +24,15 @@ $a = Doctrine_Query::create()
 */?>
 
 <?php
-die($displays["enquete"][0]->Asset->id);
+
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa, RelatedAsset ra')
   ->where('ra.parent_asset_id = ?', (int)$displays["enquete"][0]->Asset->id)
+  ->andWhere('aa.asset_id = ra.asset_id')
   ->orderBy('ra.display_order')
   ->execute();
+  die(count($a));
 ?>
 
 <?php use_helper('I18N', 'Date') ?>
