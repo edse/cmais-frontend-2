@@ -55,22 +55,22 @@
         -->
         <div id="destaque-ferias">
           <ul>
-            <li>
+            <li style="margin-left: 0!important;">
               <img src="http://cmais.com.br/portal/tvratimbum/image/novomascote.png" border="0" usemap="#mascote"/>
               <map name="mascote" id="mascote">
-                <area shape="circle" coords="137,137,122" href="http://tvratimbum.cmais.com.br/novo-mascote" target="_self" />
+                <area shape="circle" coords="137,137,122" title="Novo mascote" href="http://tvratimbum.cmais.com.br/novo-mascote" target="_self" />
               </map>
             </li>
             <li>
               <img src="http://cmais.com.br/portal/tvratimbum/image/realidadeaumentada.png" border="0" usemap="#realidade"/>
               <map name="realidade" id="realidade">
-                <area shape="circle" coords="137,137,122" href="http://tvratimbum.cmais.com.br/portal/tvratimbum/realidadeaumentada/" target="_self" />
+                <area shape="circle" coords="137,137,122" title="Realidade aumentada" href="http://tvratimbum.cmais.com.br/portal/tvratimbum/realidadeaumentada/" target="_self" />
               </map>
             </li>
             <li>
               <img src="http://cmais.com.br/portal/tvratimbum/image/jogodasbolhas.png" border="0" usemap="#bolha"/>
               <map name="bolha" id="bolha">
-                <area shape="circle" coords="136,136,121" href="http://tvratimbum.cmais.com.br/jogos/jogo-das-bolhas" target="_self" />
+                <area shape="circle" coords="136,136,121" title="Jogo das bolhas" href="http://tvratimbum.cmais.com.br/jogos/jogo-das-bolhas" target="_self" />
               </map>
             </li>
           </ul>
