@@ -509,8 +509,8 @@ em{font-style:oblique !important;}
 .chamada-home .media { display:block; clear:both; width:100%; margin-top:20px !important; text-decoration:none; }
 .chamada-home .media img{ clear:both; width:100% !important; max-height:390px; margin-top:20px; }
 #destaque.chamada-home p { margin-left:0; }
-.menu-interna,
-.menu-interna li { background:#136b9b; }
+
+.menu-interna li:first-child { background:#136b9b; }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
 
