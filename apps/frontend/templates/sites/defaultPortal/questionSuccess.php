@@ -331,11 +331,6 @@ foreach($a as $key=>$value){
 }
  
 ?>
-function computavoto(opcao){
-	$('#opcao').val(opcao);
-	sendAnswer();
-}
-
 function sendAnswer(){
   $.ajax({
     type: "POST",
@@ -346,7 +341,6 @@ function sendAnswer(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
     },
-    
     
     success: function(data){
       $(".form-votacao, #ajax-loader-b").hide();
