@@ -14,14 +14,24 @@
  * 
  */
 ?>
-<?php
+<?php /*
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa, Asset a')
   ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
-  ->orderBy('a.display_order')
+  ->orderBy('aa.display_order')
+  ->execute();
+*/?>
+
+<?php
+$a = Doctrine_Query::create()
+  ->select('aa.*')
+  ->from('AssetAnswer aa, RelatedAsset ra')
+  ->where('ra.parent_asset_id = ?', (int)$displays["enquete"][0]->Asset->id)
+  ->orderBy('ra.display_order')
   ->execute();
 ?>
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
