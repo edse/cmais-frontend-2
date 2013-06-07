@@ -50,7 +50,9 @@
 	->execute();
      
 ?>
-
+<?php 
+	echo $assets;
+?>
 <?php 
 	$assets = $pager->getResults();
 ?>
