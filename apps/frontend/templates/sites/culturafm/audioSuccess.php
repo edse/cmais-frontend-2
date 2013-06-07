@@ -39,7 +39,7 @@ $(function(){
           <?php else: ?>
           <h2>
             <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <img src="http://midia.cmais.com.br/programs/72a1210429d852d4b85c7a3cf057f2d823849f00.png" alt="Cultura FM" title="Cultura FM" />
+              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="Cultura FM" title="Cultura FM" />
               <h3 class="tit-pagina grid1">Cultura FM</h3>
             </a>
           </h2>
