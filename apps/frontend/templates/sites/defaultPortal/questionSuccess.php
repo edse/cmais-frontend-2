@@ -112,13 +112,13 @@
 		                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
 		                  ?>
 		                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
-		                     <!--<input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+		                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
 		                    <label for="opcao-<?php echo $i; ?>">
 		                      <?php echo ($i+1)." - ". $opcao?>
 		                    </label>-->
 		                    
 		                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-		                    <a href="javascript:computavoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>                    
+		                    <!--<a href="javascript:computavoto('<?php echo $a[$i]->Asset->AssetAnswer->id; ?>');"><?php echo ($i+1)." - ". $opcao?></a>   -->                 
 		                  </li>
 		                  
 		                  <?php endfor;?>
@@ -328,11 +328,6 @@ foreach($a as $key=>$value){
 }
  
 ?>
-function computavoto(opcao){
-	$('#opcao').val(opcao);
-	sendAnswer();
-}
-
 function sendAnswer(){
   $.ajax({
     type: "POST",
@@ -343,7 +338,6 @@ function sendAnswer(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
     },
-    
     
     success: function(data){
       $(".form-votacao, #ajax-loader-b").hide();
