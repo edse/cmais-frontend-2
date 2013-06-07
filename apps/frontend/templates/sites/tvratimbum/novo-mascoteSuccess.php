@@ -102,7 +102,7 @@ $(document).ready(function(){
             <!--/DESTAQUE PRINCIPAL-->
 
             <!--VOTACAO Video-->
-            <div id="votacao-video">
+            <div id="votacao-video" class="enquete-mascote" >
               
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
