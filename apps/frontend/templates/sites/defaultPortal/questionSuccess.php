@@ -120,7 +120,7 @@
                   </li>
                   <?php endfor;?>
                 </ul>
-
+ 
                 <div class="btn-barra votacao">
                     <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
