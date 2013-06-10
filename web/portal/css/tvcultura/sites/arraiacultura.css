@@ -13,6 +13,8 @@
 
 body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_pattern_arraiacultura.jpg) repeat-x; }
 #capa-site { background: url(/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:-102px !important;  }
+#chamada{display:none;}
+.bg-site{margin-top:3px;}
 .topo-programa h3.tit-pagina span,
 .topo-programa h3.tit-pagina { font-family: 'GothamMediumRegular', Arial, Helvetica, sans-serif; color:#fbed20; font-weight:bold; font-style:italic; text-transform:uppercase; font-size:45px; }
 .topo-programa h3.tit-pagina span {font-size:60px;}
