@@ -2,9 +2,11 @@
 $a = Doctrine_Query::create()
   ->select('aa.*')
   ->from('AssetAnswer aa')
-  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+  ->where('aa.asset_question_id = ?', (int)$asset->AssetQuestion->id)
   ->execute();
 ?>
+
+
 
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
