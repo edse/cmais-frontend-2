@@ -50,12 +50,31 @@
             </ul>
           </div>
         </div>
-        
-        <a href="http://tvratimbum.cmais.com.br/eu-e-o-quarteto-apavorante" title="+ detalhes!"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! - Quarteto" /></a> 
-        
         <!--
-        <div id="destaque-ferias"> 
+        <a href="http://tvratimbum.cmais.com.br/eu-e-o-quarteto-apavorante" title="+ detalhes!"><img class="destaqueTopo" src="/portal/tvratimbum/image/quarteto.png" alt="TV Rá Tim Bum! - Quarteto" /></a> 
+        -->
+        <div id="destaque-ferias">
           <ul>
+            <li style="margin-left: 0!important;">
+              <img src="http://cmais.com.br/portal/tvratimbum/image/novomascote.png" border="0" usemap="#mascote"/>
+              <map name="mascote" id="mascote">
+                <area shape="circle" coords="137,137,122" title="Novo mascote" href="http://tvratimbum.cmais.com.br/novo-mascote" target="_self" />
+              </map>
+            </li>
+            <li>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/realidadeaumentada.png" border="0" usemap="#realidade"/>
+              <map name="realidade" id="realidade">
+                <area shape="circle" coords="137,137,122" title="Realidade aumentada" href="http://tvratimbum.cmais.com.br/portal/tvratimbum/realidadeaumentada/" target="_self" />
+              </map>
+            </li>
+            <li>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/jogodasbolhas.png" border="0" usemap="#bolha"/>
+              <map name="bolha" id="bolha">
+                <area shape="circle" coords="136,136,121" title="Jogo das bolhas" href="http://tvratimbum.cmais.com.br/jogos/jogo-das-bolhas" target="_self" />
+              </map>
+            </li>
+          </ul>
+          <!-- destaque antigo ul>
             <li>
               <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
               <map name="missao" id="missao">
@@ -80,6 +99,5 @@
                 <area title="Sessão Piada Rá Tim Bum" alt="Sessão Piada Rá Tim Bum" shape="circle" coords="109,110,99" href="/piadas" />
               </map>
             </li>
-          </ul>
-        </div>
-        --> 
+          </ul-->
+        </div>  
