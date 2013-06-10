@@ -123,7 +123,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
 .tit-pagina,
 .contato form .linha .enviar,
 form.selecao .item,
-#destaque .media, 
+#destaque .media p, 
 .menu-interna a { font-family:'GothamMediumRegular', Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal;  }
 
 
@@ -514,5 +514,5 @@ em{font-style:oblique !important;}
 .menu-interna li.m-controle-remoto { background:#136b9b; }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
-#destaque .media { font-size:24px;  }
-
+#destaque .media {  margin-top:0 !important;  }
+#destaque .media p { font-size:24px; background:#f7f6f6; }
