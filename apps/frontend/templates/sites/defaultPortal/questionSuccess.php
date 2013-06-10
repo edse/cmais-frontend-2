@@ -1,14 +1,11 @@
-	<?php
-	$a = Doctrine_Query::create()
-  	->select('aa.*')
-  	->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
-  	->where('aa.asset_id = a.id')
-  	->andWhere('a.id = ra.asset_id')
-  	->andWhere('ra.parent_asset_id = ?', 123494)
-  	->orderBy('ra.display_order')
-  	->execute();
-	?>
-	
+<?php
+$a = Doctrine_Query::create()
+  ->select('aa.*')
+  ->from('AssetAnswer aa')
+  ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+  ->execute();
+?>
+
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
     <?php use_helper('I18N', 'Date') ?>
@@ -327,11 +324,6 @@ foreach($a as $key=>$value){
 }
  
 ?>
-function computavoto(opcao){
-	$('#opcao').val(opcao);
-	sendAnswer();
-}
-
 function sendAnswer(){
   $.ajax({
     type: "POST",
@@ -342,7 +334,6 @@ function sendAnswer(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
     },
-    
     
     success: function(data){
       $(".form-votacao, #ajax-loader-b").hide();
