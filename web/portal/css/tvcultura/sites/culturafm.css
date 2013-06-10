@@ -123,7 +123,8 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
 .tit-pagina,
 .contato form .linha .enviar,
 form.selecao .item,
-.menu-interna a { font-family:'GothamMediumRegular';font-weight: normal; font-style: normal;  }
+#destaque .media, 
+.menu-interna a { font-family:'GothamMediumRegular', Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal;  }
 
 
 #barra-site .redes {/*float:right; margin-top:0;*/position: relative;z-index: 2;}
@@ -510,7 +511,8 @@ em{font-style:oblique !important;}
 .chamada-home .media img{ clear:both; width:100% !important; max-height:390px; margin-top:20px; }
 #destaque.chamada-home p { margin-left:0; }
 
-.menu-interna li:first-child { background:#136b9b; }
+.menu-interna li.m-controle-remoto { background:#136b9b; }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
+#destaque .media { font-size:24px;  }
 
