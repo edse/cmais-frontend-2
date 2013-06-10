@@ -5,7 +5,7 @@
 }
 */
 #barra-site #horario {
-  width: 370px;
+  width: 370px!important;
 }
 .bg-doctorWho{
   background: url(../../../images/capaPrograma/doctorwho/bg-doutorquem.jpg) center top repeat;
