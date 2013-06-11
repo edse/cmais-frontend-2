@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/arraiacultura.css" type="text/css" />
-<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+
 
 
 <!--FANCYBOX-->
@@ -18,7 +18,7 @@
 <div class="bg-chamada">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))  ?>
 </div>
-<div class="bg-site"></div>
+
 <!-- CAPA SITE -->
 <div id="capa-site">
   <!-- BARRA SITE -->
@@ -132,8 +132,10 @@
               <!--ul id="embedagram"></ul-->
               <!--/embedagram-->
               
+              <div class="instagram-box"></div>
+              
               <!-- SnapWidget -->
-              <iframe src="http://snapwidget.com/in/?h=YXJyYWlhY3VsdHVyYXxpbnwxMzB8MnwzfGQzMGIyZXxub3wxMHxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:280px; height: 420px" ></iframe>
+              <!--iframe src="http://snapwidget.com/in/?h=YXJyYWlhY3VsdHVyYXxpbnwxMzB8MnwzfGQzMGIyZXxub3wxMHxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:280px; height: 420px" ></iframe-->
             </div> 
             
             
@@ -163,27 +165,32 @@
   <!-- /MIOLO -->
 </div>
 <!-- /CAPA SITE -->
+<!--fancybox-->
+<script type="text/javascript" src="/portal/js/jquery-instagram/jquery.instagram.js"></script>
+<script>
 
-<!--embedagram-->
-<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
-
-<script type="text/javascript">
-$('#embedagram').embedagram({
-    //instagram_id:29889244,
-    hashtag: arraiacultura,
-    limit:6,
-    link_type:'img',
-    thumb_width:130,
-    success: function (){ 
-        $('#embedagram li a')
-          .addClass('fancybox-media')
-          .attr('rel','instagram')
-        
-        $('#embedagram a img').each(function(index) {
-      var titulo = $(this).attr('title');
-      $(this).parent().attr('title', titulo)
-      });
-   }
+var url = new Array;
+var href = new Array;
+$(".instagram-box").instagram({
+  hash: 'arraiacultura',
+  clientId: 'acc3ed4dfcd14106b4805f0248604b8c',
+  show : 6,
+  onComplete:function(){
+    console.log();
+    $('.instagram-box a')
+        .addClass('fancybox-media')
+        .attr('rel','instagram');
+    $('.instagram-box a img').each(function(i){
+      href[i] = $(this).attr("src");
+      url = href[i].split("_");
+      href[i] = url[0] + "_7.jpg";  
+      console.log(href[i]);     
+    });
+    $('.instagram-box a').each(function(i){
+      var linkImg = href[i];
+      $(this).attr('href', linkImg);
+    })
+  }
 });
 
 $('.fancybox-media').fancybox({
@@ -198,6 +205,9 @@ $('.fancybox-media').fancybox({
     },
     media : {}
   }
-});
-</script>
-<!--/embedagram-->
+}); 
+
+</script> 
+<!--/fancybox -->
+
+ 
