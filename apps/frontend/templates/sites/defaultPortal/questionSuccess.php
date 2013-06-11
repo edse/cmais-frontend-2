@@ -145,9 +145,9 @@ $(document).ready(function(){
                   <li>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
-                    <label for="opcao-<?php echo $i; ?>">
+                    <!--label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
-                    </label>
+                    </label-->
                                         
                   </li>
                   <?php endfor;?>
