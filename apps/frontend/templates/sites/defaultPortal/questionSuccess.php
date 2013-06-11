@@ -39,9 +39,11 @@ $(document).ready(function(){
 -->
 
 <style type="text/css">
-#lista-videos  { width:100%; }
+#lista-videos  { width:100%; overflow:hidden; }
 #lista-videos li { width:310px; float:left; list-style:none; margin:0 10px 0 0;}
+#lista-videos li iframe { margin-bottom:5px; }
 </style>
+
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
@@ -153,10 +155,10 @@ $(document).ready(function(){
                   <?php endfor;?>
                 </ul>
  
-                <div class="btn-barra votacao">
-                    <span class="pontaBarra"></span>
+                <div class="votacao">
+                    
                     <input id="votar" type="submit" value="votar" />
-                    <span class="caudaBarra"></span>
+                    
                     <div id="enviando-voto" align="center"style="display:none">
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                       Registrando voto, aguarde um momentinho...
