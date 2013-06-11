@@ -36,7 +36,7 @@
 #menu-portal-2 h1 { margin:0; }
 #menu-portal-2 .busca-portal input { margin:0 !important; -moz-transition:none; box-shadow:none; }
 #menu-portal-2 ul.abas { margin:0 !important; }
-#lista-videos  { width:100%; overflow:hidden; margin:0 0 0 5px;  }
+#lista-videos  { width:100%; overflow:hidden; margin:0;  }
 #lista-videos li { width:310px; float:left; list-style:none; margin:0 10px 0 0;}
 #lista-videos li iframe { margin-bottom:5px; }
 #votar { width:100%; background:#333; color:#fff; text-transform:uppercase; border:none; margin-top:20px; height:20px; line-height: 20px; }
