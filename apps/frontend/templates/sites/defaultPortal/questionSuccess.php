@@ -135,7 +135,7 @@ $(document).ready(function(){
               
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                <h2><?php echo $asset->AssetQuestion->getQuestion();?></h2>
+                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
                 <ul id="lista-videos">
                   <?php 
                   for($i=0; $i<count($a); $i++):
