@@ -39,7 +39,7 @@ $(document).ready(function(){
 -->
 
 <style type="text/css">
-#lista-videos li { width:310px; float:left; }
+#lista-videos li { width:310px; float:left; list-style:none; }
 </style>
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
