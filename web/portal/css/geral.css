@@ -102,13 +102,13 @@ p { font-size:14px;  line-height:20px;}
 a { text-decoration:none; font-size:14px; }
 a:hover { text-decoration:underline; }
 .bold { font-weight:bold; }
-.img-640x384 { width:640px; height:384px; overflow:hidden; display:block; }
+.img-640x384 { width:640px; height:390px; overflow:hidden; display:block; }
 .img-530x318 { width:530px; height:318px; overflow:hidden; display:block; }
 .img-420x252 { width:420px; height:252px; overflow:hidden; display:block; }
 .img-310x186 { width:310px; height:186px; margin-bottom:10px; overflow:hidden; display:block; }
 .img-150x90 { width:150px;}
 .img-90x54 { width:90px; height:54px; }
-.img-310x384 { width:310px; height:384px; }
+.img-310x384 { width:310px; height:390px; }
 .last { margin-right:0 !important; }
 .txt { font-size:14px; line-height:20px; }
 .txt-10 { font-size:10px; }
@@ -733,7 +733,7 @@ body {background:#fff url(../images/bg-tudo3a.jpg) repeat-x;}
 
 /**** 1 COLUNA ****/
 .uma-coluna { width:310px; background:#fff; margin-bottom: 20px;}
-.uma-coluna .media { width:310px; max-height:384px; overflow:hidden; display:block; }  
+.uma-coluna .media { width:310px; max-height:390px; overflow:hidden; display:block; }  
 .uma-coluna .conteudo li { background:#fff; margin-bottom:0; height:560px;} 
 .uma-coluna #bloco2,
 .uma-coluna #bloco3,
