@@ -12,7 +12,7 @@
 
 
 body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_pattern_arraiacultura.jpg) repeat-x; }
-#capa-site { background: url(/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:-102px !important;  }
+#capa-site { background: url(/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:0 !important;  }
 #chamada{display:none;}
 /*.bg-site{margin-top:3px;}*/
 .topo-programa h3.tit-pagina span,
