@@ -153,7 +153,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                   ?>
                  
                   
-                  <?php if(count($video) > 0): ?>
+                  <?php if($video == ''): ?>
                   	
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
 
