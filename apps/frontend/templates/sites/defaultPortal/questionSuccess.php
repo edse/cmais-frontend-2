@@ -44,6 +44,7 @@
 #resultado-video li { list-style:none; margin-left:0; } 
 #resultado-video .classificacao { margin-left:0;  } 
 input.form-contato { float:left; margin-right:5px; }
+#resultado-video p { margin-bottom:0; }
 
 </style>
 
