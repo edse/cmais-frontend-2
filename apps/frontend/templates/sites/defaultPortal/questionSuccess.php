@@ -1,19 +1,19 @@
-	<?php
-	$a = Doctrine_Query::create()
-  	->select('aa.*')
-  	->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
-  	->where('aa.asset_id = a.id')
-  	->andWhere('a.id = ra.asset_id')
-  	->andWhere('ra.parent_asset_id = ?', 123494)
-  	->orderBy('ra.display_order')
-  	->execute();
-	?>
-	
+  <?php
+  $a = Doctrine_Query::create()
+    ->select('aa.*')
+    ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+    ->where('aa.asset_id = a.id')
+    ->andWhere('a.id = ra.asset_id')
+    ->andWhere('ra.parent_asset_id = ?', 123494)
+    ->orderBy('ra.display_order')
+    ->execute();
+  ?>
+  
     
 
+<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 
 <!--
-  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
@@ -24,25 +24,27 @@
 <!--CSS-->
 
 <!--SCRIPT-->
-<!--
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+
+<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  //carrossel programas
-  $('.carrossel').jcarousel({
-    wrap: "both"
-  });
-});
-</script>
--->
+
+
 
 <style type="text/css">
-#lista-videos  { width:100%; overflow:hidden; }
+#guia-topo { margin-top:-20px; }
+#menuFloat { margin-left:0; }
+#menu-portal-2 h1 { margin:0; }
+#menu-portal-2 .busca-portal input { margin:0 !important; -moz-transition:none; box-shadow:none; }
+#menu-portal-2 ul.abas { margin:0 !important; }
+#lista-videos  { width:100%; overflow:hidden; margin:0; }
 #lista-videos li { width:310px; float:left; list-style:none; margin:0 10px 0 0;}
 #lista-videos li iframe { margin-bottom:5px; }
-#votar { width:100%; background:#333; color:#fff; text-transform:uppercase; }
+#votar { width:100%; background:#333; color:#fff; text-transform:uppercase; border:none; margin-top:20px; height:20px; line-height: 20px; }
+#menu-portal-2 .busca-portal .ipt-txt { padding:0 0 0 30px; border-radius:0; height:24px; }
+#resultado-video li { list-style:none; margin-left:0; } 
+#resultado-video .classificacao { margin-left:0;  } 
+input.form-contato { float:left; margin-right:5px; }
+
 </style>
 
     <?php use_helper('I18N', 'Date') ?>
@@ -133,7 +135,7 @@ $(document).ready(function(){
                 </div>
                 
                 <div class="texto">
-		              <!--VOTACAO Video-->
+                  <!--VOTACAO Video-->
             <div id="votacao-video">
               
               <!--LISTA-Videos-->
@@ -203,17 +205,17 @@ $(document).ready(function(){
             
             </div>  
             <!--/VOTACAO Video-->
-	            
+              
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
-                	
-                	
+                  
+                  
                   <!-- SAIBA MAIS -->
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                  	<div id="saibamais">                                                            
-                  	<h4>saiba +</h4>                                                            
+                    <div id="saibamais">                                                            
+                    <h4>saiba +</h4>                                                            
                     <ul class="conteudo">
                       <?php foreach($relacionados as $k=>$d): ?>
                         <li style="width: auto;">
@@ -252,9 +254,9 @@ $(document).ready(function(){
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
                 <!-- multicultura-300x250 -->
-				<script type='text/javascript'>
-				GA_googleFillSlot("multicultura-300x250");
-				</script>
+        <script type='text/javascript'>
+        GA_googleFillSlot("multicultura-300x250");
+        </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
