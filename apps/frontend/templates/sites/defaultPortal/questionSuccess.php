@@ -9,11 +9,11 @@
   	->execute();
 	?>
 	
-    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+    
 
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 
 <!--
+  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
