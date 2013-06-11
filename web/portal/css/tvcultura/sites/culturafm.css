@@ -514,7 +514,8 @@ em{font-style:oblique !important;}
 .menu-interna li.m-controle-remoto { background:#136b9b; }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
-#destaque .media {  margin-top:0 !important;  }
-#destaque .media p { background: none repeat scroll 0 0 #F7F6F6;    font-size: 24px;    height: 50px;    line-height: 50px;    padding-left: 10px;    width: 630px; margin-bottom:0; }
-#destaque .media img { margin-top:10px; }
+#destaque.chamada-home .media {  margin-top:0 !important;  }
+#destaque.chamada-home .media p { background: none repeat scroll 0 0 #F7F6F6;    font-size: 24px;    height: 50px;    line-height: 50px;    padding-left: 10px;    width: 630px; margin-bottom:0; }
+#destaque.chamada-home .media img { margin-top:10px; }
+.uma-coluna .media { max-height:390px; }
 
