@@ -176,7 +176,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
-                   <img src="<?php echo $imagem[0]->retriveImageUrlByImageUsage('image-3-b');?>" alt="<?php echo $imagem[0]->AssetImage->getTitle;?>" name="<?php echo $imagem[0]->AssetImage->getTitle;?>">
+                   <img src="<?php echo $imagem[0]->retriveImageUrlByImageUsage('image-3-b');?>" alt="<?php echo $imagem[0]->Asset->AssetImage->getTitle;?>" name="<?php echo $imagem[0]->Asset->AssetImage->getTitle;?>">
                    </li>
                   
                   <?php endif; ?>
