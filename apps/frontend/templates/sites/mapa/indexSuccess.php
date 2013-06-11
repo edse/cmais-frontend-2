@@ -5,11 +5,10 @@
   <h1>TV Cultura - Mapa de Cobertura</h1>
   <div class="lista-calendario">
     <div class="barra-grade">                    
-      <p class="hora">14:30</p>
-      <a href="#" class="btn-toggle tit">Quintal da Cultura</a>
+      <a href="#" class="btn-toggle tit">Cobertura Nacional</a>
       <a href="#" class="botao btn-toggle"></a>
     </div>
-    <div class="grade toggle" style="width: auto; padding-bottom: 25px; display: none;">
+    <div class="grade toggle" style="background:none; padding-bottom: 25px; display: none;">
       teste de conteudo
     </div>
   </div>
