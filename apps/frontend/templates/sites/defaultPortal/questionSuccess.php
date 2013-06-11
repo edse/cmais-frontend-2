@@ -31,7 +31,6 @@
 
 
 <style type="text/css">
-#guia-topo { margin-top:-20px; }
 #menuFloat { margin-left:0; }
 #menu-portal-2 h1 { margin:0; }
 #menu-portal-2 .busca-portal input { margin:0 !important; -moz-transition:none; box-shadow:none; }
