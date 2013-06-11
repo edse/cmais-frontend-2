@@ -1,54 +1,38 @@
-  <?php
-  $a = Doctrine_Query::create()
-    ->select('aa.*')
-    ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
-    ->where('aa.asset_id = a.id')
-    ->andWhere('a.id = ra.asset_id')
-    ->andWhere('ra.parent_asset_id = ?', 123494)
-    ->orderBy('ra.display_order')
-    ->execute();
-  ?>
-  
-    
+	<?php
+	$a = Doctrine_Query::create()
+  	->select('aa.*')
+  	->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+  	->where('aa.asset_id = a.id')
+  	->andWhere('a.id = ra.asset_id')
+  	->andWhere('ra.parent_asset_id = ?', 123494)
+  	->orderBy('ra.display_order')
+  	->execute();
+	?>
+	
+    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-
-<!--
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
 <link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
 <link href="/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
--->
 <!--CSS-->
 
 <!--SCRIPT-->
-
-<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<!--script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
+<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-
-
-
-<style type="text/css">
-#menuFloat { margin-left:0; }
-#menu-portal-2 h1 { margin:0; }
-#menu-portal-2 .busca-portal input { margin:0 !important; -moz-transition:none; box-shadow:none; }
-#menu-portal-2 ul.abas { margin:0 !important; }
-#lista-videos  { width:100%; overflow:hidden; margin:0;  }
-#lista-videos li { width:310px; float:left; list-style:none; margin:0 10px 0 0;}
-#lista-videos li iframe { margin-bottom:5px; }
-#votar { width:100%; background:#333; color:#fff; text-transform:uppercase; border:none; margin-top:20px; height:20px; line-height: 20px; }
-#menu-portal-2 .busca-portal .ipt-txt { padding:0 0 0 30px; border-radius:0; height:24px; }
-#resultado-video li { list-style:none; margin-left:0; position:relative; } 
-#resultado-video .classificacao { margin-left:0;  } 
-#resultado-video li span { position:absolute; right:0; top:0; }
-input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px; }
-#resultado-video p { margin-bottom:0; }
-#barra-site .redes .curtir { width:auto; }
-#menu-portal-2 .abas li { float:right; }
-
-</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  //carrossel programas
+  $('.carrossel').jcarousel({
+    wrap: "both"
+  });
+});
+</script>
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -138,56 +122,32 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                 </div>
                 
                 <div class="texto">
-                  <!--VOTACAO Video-->
+		              <!--VOTACAO Video-->
             <div id="votacao-video">
               
               <!--LISTA-Videos-->
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
+                <h2><?php echo $asset->AssetQuestion->getQuestion();?></h2>
                 <ul id="lista-videos">
                   <?php 
                   for($i=0; $i<count($a); $i++):
-                    $video = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-					$imagem = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);  
-					$opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+                    $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
-                 
-                  
-                  <?php if($video == ''): ?>
-                  	
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
-
-                  <li>
-                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
-                    <label for="opcao-<?php echo $i; ?>">
-                      <?php echo $opcao?>
-                    </label>
-
-                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $video[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
-
-                  </li>
-                  
-                  <?php else: ?>
-                  	
-                  	<li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
-                   <img src="<?php echo $imagem[0]->retriveImageUrlByImageUsage('image-3-b');?>" alt="<?php echo $opcao?>" name="<?php echo $opcao?>">
-                   </li>
-                  
-                  <?php endif; ?>
-                                    
-                  <?php endfor;?>
+                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
+                  </li>
+                 <?php endfor;?> 
                 </ul>
  
-                <div class="votacao">
-                    
+                <div class="btn-barra votacao">
+                    <span class="pontaBarra"></span>
                     <input id="votar" type="submit" value="votar" />
-                    
+                    <span class="caudaBarra"></span>
                     <div id="enviando-voto" align="center"style="display:none">
                       <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                       Registrando voto, aguarde um momentinho...
@@ -231,17 +191,17 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
             
             </div>  
             <!--/VOTACAO Video-->
-              
+	            
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
-                  
-                  
+                	
+                	
                   <!-- SAIBA MAIS -->
                   <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                    <div id="saibamais">                                                            
-                    <h4>saiba +</h4>                                                            
+                  	<div id="saibamais">                                                            
+                  	<h4>saiba +</h4>                                                            
                     <ul class="conteudo">
                       <?php foreach($relacionados as $k=>$d): ?>
                         <li style="width: auto;">
@@ -280,9 +240,9 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
                 <!-- multicultura-300x250 -->
-        <script type='text/javascript'>
-        GA_googleFillSlot("multicultura-300x250");
-        </script>
+				<script type='text/javascript'>
+				GA_googleFillSlot("multicultura-300x250");
+				</script>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
@@ -406,7 +366,7 @@ function sendAnswer(){
       $("#resultado-video").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
         i++;
       });      
     }
