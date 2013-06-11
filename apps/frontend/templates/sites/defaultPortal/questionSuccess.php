@@ -39,6 +39,7 @@ $(document).ready(function(){
 -->
 
 <style type="text/css">
+#lista-videos  { width:100%; }
 #lista-videos li { width:310px; float:left; list-style:none; }
 </style>
     <?php use_helper('I18N', 'Date') ?>
@@ -141,7 +142,7 @@ $(document).ready(function(){
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
-                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+                  <li>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
