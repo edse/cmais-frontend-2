@@ -31,6 +31,7 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 #direita .box-padrao { position:relative; }
 #direita .box-padrao .aba { width:10px; height:10px; background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat 0 -47px; display:block; position:absolute; top:35px; right:0  }
 
+/*
 #embedagram { margin-left:20px; background:#d30b2e; width: 280px; margin: 0 0 0 10px; padding-left:10px; overflow: hidden; }
 #embedagram li { width: 130px; float:left; border:none; margin:0 10px 10px 0; padding:0; }
 #embedagram li a img { margin-bottom:0; }
@@ -38,8 +39,16 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 #embedagram li,
 #embedagram li a,
 #embedagram li a img { *width: 130px; *height:130px; *display: block; }
-.fancybox-lock .fancybox-overlay { z-index: 10000; }
+*/
+.box-instagram { margin-left:20px; background:#d30b2e; width: 280px; margin: 0 0 0 10px; padding-left:10px; overflow: hidden; padding-bottom:10px; }
+.box-instagram a{ display: block; height: 130px; width: 130px;float: left;padding:5px 0px 0px 5px}
+.box-instagram a img{width: 130px; height:130px;}
+.box-instagram { *width: 290px; *height:450px; }
+.fancybox-overlay { z-index: 10000; *z-index: 90000; }
 #direita .box-padrao .aba { *display:none }
 
 .box-instagram iframe { background:#d30b2e; padding-left:10px; margin-left:10px;}
 #guia-topo { margin-bottom:0; }
+.fancybox-overlay { z-index: 10000 !important; }
+.box-instagram { *padding-left:0; }
+#capa-site { *margin-top:-50px !important; }
