@@ -148,10 +148,16 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                   <?php 
                   for($i=0; $i<count($a); $i++):
                     $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+					$img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
                     $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
                   <li>
+                  	
+                  	<?php if(count($v) > 0): ?>
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                    <? else: ?>
+                    <img src="<?php echo $img[0]->retriveImageUrlByImageUsage('2b') ?>" >
+                    <? endif; ?>
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo $opcao?>
@@ -178,7 +184,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
               <!--RESULTADO PARCIAL-->
               <div id="resultado-video" style="display:none;">
                
-                <h2>Resultado Parcial: </h2>
+                <h3>Resultado Parcial: </h3>
                 
                 <!--LISTA-RESULTADO-->
                 <?php
@@ -199,7 +205,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                 ?>
                 <!--/LISTA-RESULTADO-->  
                 
-                <h2>Agradecemos seu voto! ;) </h2>
+                <h3>Agradecemos seu voto! ;) </h3>
   
               </div>  
               <!--/RESULTADO PARCIAL-->
