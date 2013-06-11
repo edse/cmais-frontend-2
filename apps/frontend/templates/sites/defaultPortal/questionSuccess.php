@@ -145,18 +145,16 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
               <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                 <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
                 <ul id="lista-videos">
-                  <?php 
-                  $video = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-				  $imagem = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);  
+                  <?php
+                  for($i=0; $i<count($a); $i++):
+	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+	                  $video = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+					  $imagem = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);  
                   ?>
                   
                   <?php if($video == ''): ?>
 				  
-				  <?php
-                  for($i=0; $i<count($a); $i++):
-                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-                  ?>
-                 
+				                 
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
 
                   <li>
@@ -170,29 +168,23 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                     <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $video[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
 
                   </li>
-                    <?php endfor;?>
+                    
                 	</ul>
  					<?php endif; ?>
                  
                  	<?php if($imagem == ''): ?>
 					  
-					<?php
-	                for($i=0; $i<count($a); $i++):
-	                   $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-	                ?>
-                 
-                  	
-                  	<li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+					<li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
                    <img src="<?php echo $imagem[0]->retriveImageUrlByImageUsage('image-3-b');?>" alt="<?php echo $opcao?>" name="<?php echo $opcao?>">
                    </li>
-                   <?php endfor;?>
+                   
                 	</ul>
  					<?php endif; ?>
-                                    
+                   <?php endfor;?>               
                 
                 <div class="votacao">
                     
