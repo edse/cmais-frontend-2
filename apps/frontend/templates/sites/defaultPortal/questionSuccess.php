@@ -380,7 +380,7 @@ function sendAnswer(){
       $("#resultado-video").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
         i++;
       });      
     }
