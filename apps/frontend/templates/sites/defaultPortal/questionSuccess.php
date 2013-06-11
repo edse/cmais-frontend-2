@@ -131,16 +131,34 @@ $(document).ready(function(){
                 <ul id="lista-videos">
                   <?php 
                   for($i=0; $i<count($a); $i++):
-                    $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+                    $video = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+					$imagem = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);  
+					$opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
+                  
+                  
+                  <?php if(count($video) > 0): ?>
+                  	
                   <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
                     <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
                     <label for="opcao-<?php echo $i; ?>">
                       <?php echo ($i+1)." - ". $opcao?>
                     </label>
-                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
+                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $video[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
                   </li>
+                  
+                  <?php else: ?>
+                  	
+                  	<li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+                    <label for="opcao-<?php echo $i; ?>">
+                      <?php echo ($i+1)." - ". $opcao?>
+                    </label>
+                   <img src="<?php echo $imagem[0]->retriveImageUrlByImageUsage('image-3-b');?>" alt="<?php echo $imagem[0]->getTitle;?>" name="<?php echo $imagem[0]->getTitle;?>">
+                   </li>
+                  
+                  <?php endif; ?>
+                                    
                   <?php endfor;?>
                 </ul>
  
