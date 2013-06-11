@@ -41,8 +41,9 @@
 #lista-videos li iframe { margin-bottom:5px; }
 #votar { width:100%; background:#333; color:#fff; text-transform:uppercase; border:none; margin-top:20px; height:20px; line-height: 20px; }
 #menu-portal-2 .busca-portal .ipt-txt { padding:0 0 0 30px; border-radius:0; height:24px; }
-#resultado-video li { list-style:none; margin-left:0; } 
+#resultado-video li { list-style:none; margin-left:0; position:relative; } 
 #resultado-video .classificacao { margin-left:0;  } 
+#resultado-video li span { position:absolute; right:0; top:0; }
 input.form-contato { float:left; margin-right:5px; }
 #resultado-video p { margin-bottom:0; }
 
