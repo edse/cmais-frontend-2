@@ -177,9 +177,7 @@ $(".instagram-box").instagram({
   show : 6,
   onComplete:function(){
     console.log();
-    $('.instagram-box a')
-        .addClass('fancybox-media')
-        .attr('rel','instagram');
+    $('.instagram-box a').addClass('fancybox-media').attr('rel','instagram');
     $('.instagram-box a img').each(function(i){
       href[i] = $(this).attr("src");
       url = href[i].split("_");
