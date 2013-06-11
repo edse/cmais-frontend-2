@@ -42,6 +42,7 @@ $(document).ready(function(){
 #lista-videos  { width:100%; overflow:hidden; }
 #lista-videos li { width:310px; float:left; list-style:none; margin:0 10px 0 0;}
 #lista-videos li iframe { margin-bottom:5px; }
+#votar { width:100%; background:#333; color:#fff; text-transform:uppercase; }
 </style>
 
     <?php use_helper('I18N', 'Date') ?>
