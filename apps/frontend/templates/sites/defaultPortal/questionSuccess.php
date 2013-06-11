@@ -146,10 +146,10 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                 <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
                 <ul id="lista-videos">
                   <?php 
-                  for($i=0; $i<count($a); $i++):
-                    $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-					$img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+                  for($i=0; $i<count($a); $i++){
+                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+					        $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
                   ?>
                   <li>
                   	
@@ -164,7 +164,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                     </label>
                                         
                   </li>
-                  <?php endfor;?>
+                  <?php } ?>
                 </ul>
  
                 <div class="votacao">
