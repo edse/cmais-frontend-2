@@ -147,7 +147,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 				  $verifica_imagem = $asset->retriveRelatedAssetsByAssetTypeId(2);
                   ?>
                   
-                   <?php if($verifica_video) > 0): ?>
+                   <?php if(($verifica_video) > 0): ?>
                    <div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -155,7 +155,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
 	                <ul id="lista-videos">
 	                  <?php 
-	                  for($i=0; $i<count($a); $i++)
+	                  for($i=0; $i<count($a); $i++):
 	                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
 	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
 	                  ?>
@@ -172,7 +172,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                  
 	                  <? endif; ?>
 	                   
-	                   <?php if($verifica_iamgem) > 0): ?>
+	                   <?php if(($verifica_iamgem) > 0): ?>
 	                   	<div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -180,7 +180,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
 	                <ul id="lista-videos">
 	                  <?php 
-	                  for($i=0; $i<count($a); $i++)
+	                  for($i=0; $i<count($a); $i++):
 					  $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
 	                  ?>
