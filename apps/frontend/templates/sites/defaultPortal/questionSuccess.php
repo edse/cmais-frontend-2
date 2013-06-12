@@ -9,6 +9,16 @@
     ->execute();
   ?>
   
+  <?php
+  $r = Doctrine_Query::create()
+    ->select('ra.*')
+    ->from('AssetAnswer aa, RelatedAsset ra, Asset a')  
+    ->where('aa.asset_id = a.id')
+    ->andWhere('ra.parent_asset_id = ?', 123494)
+    ->orderBy('ra.display_order')
+    ->execute();
+  ?>
+  
     
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
@@ -146,7 +156,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                  
                    <div id="votacao-video">
               <?php
-              $verifica_video = $asset->AssetAnswer->retriveRelatedAssetsByAssetTypeId(6);
+              $verifica_video = $r->Asset->retriveRelatedAssetsByAssetTypeId(6);
               ?>
               
               <?php if(count($verifica_video) > 0): ?>
