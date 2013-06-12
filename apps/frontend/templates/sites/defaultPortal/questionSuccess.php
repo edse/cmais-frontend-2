@@ -152,7 +152,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <ul id="lista-videos">
 	                  <?php 
 	                  for($i=0; $i<count($a); $i++){
-	                  $v = $a[$i]->retriveRelatedAssetsByAssetTypeId(6);
+	                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
 	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();					  
 					  echo $a;
 					  
