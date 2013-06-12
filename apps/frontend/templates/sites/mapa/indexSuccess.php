@@ -3,9 +3,10 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>
 h1{text-align: left; margin-top: 40px; font-size: 24px; margin-bottom: 20px;}
-.lista-calendario .barra-grade .tit {width: 95%;padding: 5px;}
-.lista-calendario .mapa{width:100%; height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
-.lista-calendario .toggle{width:100%;}
+
+.lista-calendario .ipt-txt {border-radius: 0px;width: 300px;float: left;height: 22px;line-height: 25px;font-size: 12px;color: #333;padding-left: 30px;border: 1px solid #c5c5c5;border-right: none;background: #fff}
+
+#form-map{float: left;}
 </style>
 <div id="capa-site">
   <h1>TV Cultura - Mapa de Cobertura</h1>
@@ -19,8 +20,8 @@ h1{text-align: left; margin-top: 40px; font-size: 24px; margin-bottom: 20px;}
     </div>
     
     <div class="mapa">
-      <form action="" method="post">
-        <input type="search" name="" id="search-map">
+      <form id="form-map" action="" method="post">
+        <input type="text" name="" id="search-map">
         <input type="submit" id="enviar" />
       </form>  
     </div>  
