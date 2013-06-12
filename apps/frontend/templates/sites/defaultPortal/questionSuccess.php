@@ -146,7 +146,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                  
                    <div id="votacao-video">
               <?php
-              $verifica_video = $asset[0]->retriveRelatedAssetsByAssetTypeId(6);
+              $verifica_video = $asset->AssetAnswer->retriveRelatedAssetsByAssetTypeId(6);
               ?>
               
               <?php if(count($verifica_video) > 0): ?>
