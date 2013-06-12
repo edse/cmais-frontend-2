@@ -148,7 +148,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 				  $verifica_imagem = $asset->retriveRelatedAssetsByAssetTypeId(2);
                   ?>
                   
-                   <?php if(($verifica_video) > 0): ?>
+                   <?php if(count($verifica_video) > 0): ?>
                    <div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -156,9 +156,9 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
 	                <ul id="lista-videos">
 	                  <?php 
+	                  for($i=0; $i<count($a); $i++):
 	                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
 	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-	                  for($i=0; $i<count($a); $i++):
 	                  ?>
 	                  <li>
 						<iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
@@ -173,7 +173,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                  
 	                  <? endif; ?>
 	                   
-	                   <?php if(($verifica_iamgem) > 0): ?>
+	                   <?php if(count($verifica_iamgem) > 0): ?>
 	                   	<div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -181,9 +181,9 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
 	                <ul id="lista-videos">
 	                  <?php 
+	                  for($i=0; $i<count($a); $i++):
 					  $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-					  for($i=0; $i<count($a); $i++):
 	                  ?>
 	                  <li>
 
@@ -195,9 +195,10 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                                        
 	                  </li>
 	                  <?php endfor; ?>
-	                </ul>
+	                  </ul>
  
 	                  <? endif; ?>
+	                  
 	                  
                    <div class="votacao">
                     
