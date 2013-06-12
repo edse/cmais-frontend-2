@@ -170,7 +170,6 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                  </li>
 	                  <?php }; ?>
 	                </ul>	
-	                  
 	                  <? endif; ?>
 	                   
 	                   <?php if(count($verifica_imagem) > 0): ?>
