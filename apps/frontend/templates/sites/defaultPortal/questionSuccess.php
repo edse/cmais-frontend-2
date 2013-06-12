@@ -1,18 +1,9 @@
 <?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 123494) -> orderBy('ra.display_order') -> execute();?>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<!--
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<link href="/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
--->
-<!--CSS-->
-<!--SCRIPT-->
 <script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
   #menu-portal-2 h1 {    margin: 0;  }
@@ -31,6 +22,7 @@
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
 </style>
+
 <?php use_helper('I18N', 'Date')?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))?>
 
@@ -42,29 +34,29 @@
   <div id="barra-site">
     <div class="topo-programa">
       <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/multicultura/images/logo-multicultura.png" /></a></h2>
-      <?php if(isset($program) && $program->id > 0):      ?>
-      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))      ?>
+      <?php if(isset($program) && $program->id > 0): ?>
+      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))  ?>
       <?php endif;?>
 
-      <?php if(isset($program) && $program->id > 0):      ?>
+      <?php if(isset($program) && $program->id > 0): ?>
       <!-- horario -->
       <div id="horario">
-        <p><?php echo html_entity_decode($program->getSchedule())        ?></p>
+        <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
       </div>
       <!-- /horario -->
       <?php endif;?>
     </div>
-    <?php if(isset($siteSections)):    ?>
+    <?php if(isset($siteSections)): ?>
     <!-- box-topo -->
     <div class="box-topo grid3">
-      <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections))      ?>
+      <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
-      <?php if(isset($section->slug)):      ?>
-      <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))):      ?>
+      <?php if(isset($section->slug)): ?>
+      <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
       <div class="navegacao txt-10">
         <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
         <span>&gt;</span>
-        <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()        ?></a>
+        <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle() ?></a>
       </div>
       <?php endif;?>
       <?php endif;?>
@@ -76,7 +68,7 @@
   <!-- MIOLO -->
   <div id="miolo">
     <!-- BOX LATERAL -->
-    <?php include_partial_from_folder('blocks','global/shortcuts')    ?>
+    <?php include_partial_from_folder('blocks','global/shortcuts') ?>
     <!-- BOX LATERAL -->
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
@@ -86,31 +78,25 @@
         <div id="esquerda" class="grid2">
           <!-- NOTICIA INTERNA -->
           <div class="box-interna grid2">
-            <h3><?php echo $asset->getTitle()            ?></h3>
-            <p><?php echo $asset->getDescription()            ?></p>
+            <h3><?php echo $asset->getTitle() ?></h3>
+            <p><?php echo $asset->getDescription() ?></p>
             <div class="assinatura grid2">
-              <p class="sup"><?php echo $asset->AssetContent->getAuthor()              ?> <span><?php echo $asset->retriveLabel()              ?></span></p>
-              <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g")              ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g")              ?></p>
-              <!--
-              <div class="acessibilidade">
-              <a href="#" class="zoom">+A</a>
-              <a href="#" class="zoom">-A</a>
-              </div>
-              -->
-              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri))              ?>
+              <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+              <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
             <div class="texto">
               <!--LISTA-Videos-->
               <div id="votacao-video">
                 <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
-                $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2);                ?>
+                $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
 
-                <?php if(count($verifica_video) > 0):                ?>
+                <?php if(count($verifica_video) > 0): ?>
                 <!--LISTA-Videos-->
                 <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                   <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
                   <ul id="lista-videos">
-                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();   ?>
+                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
                     <li><iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0] -> AssetVideo -> getYoutubeId();?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                     <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
                     <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
@@ -118,7 +104,7 @@
                   </ul>
                   <?php endif;?>
 
-                  <?php if(count($verifica_imagem) > 0):                  ?>
+                  <?php if(count($verifica_imagem) > 0): ?>
                   <!--LISTA-Videos-->
                   <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                     <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
@@ -193,8 +179,7 @@
         <!-- DIREITA -->
         <div id="direita" class="grid1">
           <!-- BOX PADRAO -->
-          <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"]))
-          ?>
+          <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
           <!-- /BOX PADRAO -->
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1">
@@ -205,12 +190,8 @@
             </script>
           </div>
           <!-- / BOX PUBLICIDADE -->
-          <?php $relacionados = array();
-            if ($asset)
-              $relacionados = $asset -> retriveRelatedAssets2();
-          ?>
-          <?php if(count($relacionados) > 0):
-          ?>
+          <?php $relacionados = array(); if ($asset) $relacionados = $asset -> retriveRelatedAssets2(); ?>
+          <?php if(count($relacionados) > 0): ?>
           <!-- BOX PADRAO Mais recentes -->
           <div class="box-padrao grid1">
             <div class="topo claro">
@@ -220,14 +201,12 @@
                 <a href="#" class="rss" title="rss"></a>
               </div>
             </div>
-            <?php if(count($relacionados) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $relacionados))
-            ?>
+            <?php if(count($relacionados) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $relacionados)) ?>
           </div>
           <!-- BOX PADRAO Mais recentes -->
           <?php endif;?>
 
-          <?php if(isset($displays["destaque-noticias-recentes"])):
-          ?>
+          <?php if(isset($displays["destaque-noticias-recentes"])): ?>
           <!-- BOX PADRAO Mais recentes -->
           <div class="box-padrao grid1">
             <div class="topo claro">
@@ -237,51 +216,43 @@
                 <a href="<?php echo $site->getSlug() ?>/feed" class="rss" title="rss" style="display: block"></a>
               </div>
             </div>
-            <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"]))
-            ?>
+            <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
           </div>
           <!-- BOX PADRAO Mais recentes -->
           <?php endif;?>
 
-          <?php if(isset($displays["destaque-categorias"])):
-          ?>
+          <?php if(isset($displays["destaque-categorias"])): ?>
           <!-- BORDA 02 -->
           <div class="box-padrao box-borda grid1">
             <div class="topo claro">
               <span></span>
               <div class="capa-titulo">
-                <h4><?php if(isset($displays["destaque-categorias"])) echo $displays["destaque-categorias"][0]->Block->getTitle()
-                ?></h4>
+                <h4><?php if(isset($displays["destaque-categorias"])) echo $displays["destaque-categorias"][0]->Block->getTitle() ?></h4>
               </div>
             </div>
             <div class="conteudo top tipo2">
-              <?php if(isset($displays["destaque-categorias"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-categorias"]))
-              ?>
+              <?php if(isset($displays["destaque-categorias"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-categorias"]))?>
             </div>
             <div class="detalhe-borda grid1"></div>
           </div>
           <!-- /BORDA 02 -->
           <?php endif;?>
 
-          <?php if(isset($displays["destaque-links"])):
-          ?>
+          <?php if(isset($displays["destaque-links"])): ?>
           <!-- BOX PADRAO + Visitados -->
           <div class="box-padrao mais-visitados grid1">
             <div class="topo">
               <span></span>
               <div class="capa-titulo">
-                <h4><?php if(isset($displays["destaque-links"])) echo $displays["destaque-links"][0]->Block->getTitle()
-                ?></h4>
+                <h4><?php if(isset($displays["destaque-links"])) echo $displays["destaque-links"][0]->Block->getTitle() ?></h4>
               </div>
             </div>
-            <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"]))
-            ?>
+            <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"])) ?>
           </div>
           <!-- /BOX PADRAO + Visitados -->
           <?php endif;?>
 
-          <?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url))
-          ?>
+          <?php include_partial_from_folder('blocks','global/facebook-1c-2', array('site' => $site, 'url' => $url))  ?>
         </div>
         <!-- /DIREITA -->
       </div>
