@@ -168,7 +168,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                    </label>
 	                                        
 	                  </li>
-	                  <?php }; ?>
+	                  <?php } ?>
 	                </ul>	
 	                  <? endif; ?>
 	                   
@@ -193,7 +193,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                    </label>
 	                                        
 	                  </li>
-	                  <?php }; ?>
+	                  <?php } ?>
 	                  </ul>
  
 	                  <? endif; ?>
