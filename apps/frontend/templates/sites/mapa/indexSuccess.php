@@ -6,8 +6,8 @@
 .lista-calendario .barra-grade .tit {width: 95%;padding: 0 10px;}
 .lista-calendario .mapa{width:100%; height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
 .lista-calendario .toggle{width:100%;}
-.lista-calendario .ipt-txt {border-radius: 0px;width: 300px;float: left;height: 22px;line-height: 25px;font-size: 12px;color: #333;padding-left: 30px;border: 1px solid #c5c5c5;border-right: none;background: #fff}
-.lista-calendario .search-map{margin: 20px 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;}
+.lista-calendario .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;}
+.lista-calendario #enviar{border: none;display:block;width: 70px;height: 31px;float: left;margin-top: 20px;background:#4a8cf6 url(lupa-azul-branca.jpg) no-repeat center center;}
 #form-map{float: left;}
 </style>
 <div id="capa-site">
@@ -23,7 +23,7 @@
     
     <div class="mapa">
       <form id="form-map" action="" method="post">
-        <input type="text" name="" id="search-map">
+        <input type="text" name="" class="search-map">
         <input type="submit" id="enviar" value=""/>
       </form>  
     </div>  
