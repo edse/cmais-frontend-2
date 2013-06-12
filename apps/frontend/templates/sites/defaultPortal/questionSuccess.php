@@ -17,8 +17,7 @@
     ->orderBy('ra.display_order')
     ->execute();
   ?>
-  
-    
+      
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 
