@@ -11,7 +11,7 @@
   
   <?php
   $r = Doctrine_Query::create()
-    ->select('ra.*')
+    ->select('aa.*')
     ->from('RelatedAsset ra, AssetAnswer aa, Asset a')  
     ->where('aa.asset_id = a.id')
     ->andWhere('ra.parent_asset_id = ?', 123494)
