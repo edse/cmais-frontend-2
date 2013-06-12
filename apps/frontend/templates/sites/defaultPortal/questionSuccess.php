@@ -172,31 +172,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                </ul>	
 	                  <? endif; ?>
 	                   
-	                   <?php if(count($verifica_imagem) > 0): ?>
-	                   	<div id="votacao-video">
-              
-	              <!--LISTA-Videos-->
-	              <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
-	                <ul id="lista-videos">
-	                  <?php 
-	                  for($i=0; $i<count($a); $i++){
-					  $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-	                  ?>
-	                  <li>
-
-	                    <img src="<?php echo $img[0]->retriveImageUrlByImageUsage('image-2-b'); ?>" >
-	                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
-	                    <label for="opcao-<?php echo $i; ?>">
-	                      <?php echo $opcao?>
-	                    </label>
-	                                        
-	                  </li>
-	                  <?php }; ?>
-	                  </ul>
- 
-	                  <? endif; ?>
+	                   
 	                  
 	                  
                    <div class="votacao">
