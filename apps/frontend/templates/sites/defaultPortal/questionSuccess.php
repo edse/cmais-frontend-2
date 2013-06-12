@@ -143,12 +143,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
               
               <!--LISTA-Videos-->
                  
-                  <?php 
-                  $verifica_video = $asset->retriveRelatedAssetsByAssetTypeId(6);
-				  $verifica_imagem = $asset->retriveRelatedAssetsByAssetTypeId(2);
-                  ?>
-                  
-                   <?php if(count($verifica_video) > 0): ?>
+                
                    <div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -170,8 +165,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                  </li>
 	                  <?php }; ?>
 	                </ul>	
-	                  <? endif; ?>
-	                   
+	                
 	                   
 	                  
 	                  
