@@ -13,8 +13,7 @@
   $r = Doctrine_Query::create()
     ->select('ra.*')
     ->from('RelatedAsset ra, AssetAnswer aa, Asset a')  
-    ->where('aa.asset_id = a.id')
-    ->andWhere('ra.parent_asset_id = ?', 123494)
+    ->where('ra.parent_asset_id = a.id')
     ->orderBy('ra.display_order')
     ->execute();
   ?>
