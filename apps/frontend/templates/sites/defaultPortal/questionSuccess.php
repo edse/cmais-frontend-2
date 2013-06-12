@@ -152,10 +152,10 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <ul id="lista-videos">
 	                  <?php 
 	                  for($i=0; $i<count($a); $i++){
-	                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-					  echo $v;
-					  echo $opcao;
+	                  $v = $a[$i]->retriveRelatedAssetsByAssetTypeId(6);
+	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();					  
+					  echo $a;
+					  
 	                  ?>
 	                  <li>
 						<iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
