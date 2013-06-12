@@ -143,12 +143,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
               
               <!--LISTA-Videos-->
                  
-                  <?php 
-                  $verifica_video = $asset->retriveRelatedAssetsByAssetTypeId(6);
-				  $verifica_imagem = $asset->retriveRelatedAssetsByAssetTypeId(2);
-                  ?>
-                  
-                   <?php if(count($verifica_video) > 0): ?>
+                 
                    <div id="votacao-video">
               
 	              <!--LISTA-Videos-->
@@ -157,8 +152,10 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                <ul id="lista-videos">
 	                  <?php 
 	                  for($i=0; $i<count($a); $i++){
-	                  $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+	                  $v = $a[$i]->retriveRelatedAssetsByAssetTypeId(6);
+	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();					  
+					  echo $a;
+					  
 	                  ?>
 	                  <li>
 						<iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
@@ -168,35 +165,10 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	                    </label>
 	                                        
 	                  </li>
-	                  <?php } ?>
+	                  <?php }; ?>
 	                </ul>	
-	                  <? endif; ?>
-	                   
-	                   <?php if(count($verifica_imagem) > 0): ?>
-	                   	<div id="votacao-video">
-              
-	              <!--LISTA-Videos-->
-	              <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-	                <p><?php echo $asset->AssetQuestion->getQuestion();?></p>
-	                <ul id="lista-videos">
-	                  <?php 
-	                  for($i=0; $i<count($a); $i++){
-					  $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-	                  $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
-	                  ?>
-	                  <li>
-
-	                    <img src="<?php echo $img[0]->retriveImageUrlByImageUsage('image-2-b'); ?>" >
-	                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
-	                    <label for="opcao-<?php echo $i; ?>">
-	                      <?php echo $opcao?>
-	                    </label>
-	                                        
-	                  </li>
-	                  <?php } ?>
-	                  </ul>
- 
-	                  <? endif; ?>
+	   
+	                  
 	                  
 	                  
                    <div class="votacao">
