@@ -6,5 +6,5 @@
   #rodape-portal { margin-top:20px; }
 </style>
 <div class="qrcode">
-<img src="http://tvcultura.cmais.com.br/uploads/assets/image/original/910f1b0a09e9d053a8429623f0414a9f5f14dd5c.jpg" alt="Brazilian Brands" />
+<iframe width="960" height="540" src="http://www.youtube.com/embed/1BkbfONZD8Y?rel=0" frameborder="0" allowfullscreen></iframe>
 </div> 
