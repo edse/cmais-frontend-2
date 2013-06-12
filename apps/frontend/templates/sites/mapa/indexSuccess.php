@@ -7,6 +7,7 @@
 .lista-calendario .mapa{width:100%; height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
 .lista-calendario .toggle{width:100%;}
 .lista-calendario .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;}
+.lista-calendario #enviar{border: none;background: #4a8cf6;width: 70px;height: 31px;float: left;margin-top: 20px;background:url(lupa-azul-branca.jpg) no-repeat center center;}
 #form-map{float: left;}
 </style>
 <div id="capa-site">
