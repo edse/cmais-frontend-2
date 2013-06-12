@@ -195,9 +195,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
 	   
 	               <?php endif; ?>  
 	               
-	                  
-	                  
-                   <div class="votacao">
+	                <div class="votacao">
                     
                     <input id="votar" type="submit" value="votar" />
                     
@@ -235,7 +233,7 @@ input.form-contato { float:left; margin-right:5px; margin-left:1px; width: 14px;
                 ?>
                 <!--/LISTA-RESULTADO-->  
                 
-                <h3>Agradecemos seu voto! ;) </h3>
+                <h3>Agradecemos seu voto! </h3>
   
               </div>  
               <!--/RESULTADO PARCIAL-->
