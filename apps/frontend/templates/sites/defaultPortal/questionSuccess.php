@@ -292,7 +292,7 @@ $.ajax({
 type: "POST",
 dataType: "json",
 data: $('.form-votacao').serialize(),
-url: "http://cmais.com.br/ajax/enquetes", 
+url: "http://cmais.com.br/index.php/ajax/enquetes", 
   beforeSend: function(){
   $('.btn-barra.votacao').hide();
   $('#ajax-loader-b').show();
