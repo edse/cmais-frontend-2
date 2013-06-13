@@ -159,7 +159,7 @@
                         var ytd = new Ytd();
                         ytd.setAssignmentId("5838406743490560");
                         ytd.setCallToAction("callToActionId-5838406743490560");
-                        var containerWidth = 640;
+                        var containerWidth = 620;
                         var containerHeight = 550;
                         ytd.setYtdContainer("ytdContainer-5838406743490560", containerWidth, containerHeight);
                         ytd.ready();
@@ -171,7 +171,7 @@
                       }
                     </script>
                     
-                    <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left">
+                    <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left; background-color: yellow; padding: 5px;">
                       <p id="enviar">Fazer upload</p>
                     </a>
                     
