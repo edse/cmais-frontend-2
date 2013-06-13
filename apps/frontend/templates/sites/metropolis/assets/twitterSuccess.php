@@ -84,9 +84,9 @@
 		                    <p class="subtit"><?php echo $asset->getDescription() ?></p>
 		                    			                
 			                <div class="noticiaTxt">
-			                 <a class="twitter-timeline" href="https://twitter.com/search?q=%23Mantiqueira+%40tvcultura" data-widget-id="345305040904413184" width="640">Tweets about "#Mantiqueira @tvcultura"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			                 
 
+<a class="twitter-timeline" width="640" height="850" href="https://twitter.com/search?q=%23Mantiqueira+%40tvcultura" data-widget-id="345305040904413184">Tweets de @tvcultura</a>
 			                </div>
 			                <?php include_partial_from_folder('blocks','global/visite-cmais',array('uri'=>$uri)) ?>
 			                <?php include_partial_from_folder('sites/metropolis','global/fb-comments',array('uri'=>$uri)) ?>
