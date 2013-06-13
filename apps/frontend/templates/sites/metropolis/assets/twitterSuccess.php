@@ -86,7 +86,7 @@
 			                <div class="noticiaTxt">
 			                 
 
-<a class="twitter-timeline" width="1000px" href="https://twitter.com/search?q=%23Mantiqueira+%40tvcultura" data-widget-id="345305040904413184">Tweets de @tvcultura</a>
+<a class="twitter-timeline" width="1000" href="https://twitter.com/search?q=%23Mantiqueira+%40tvcultura" data-widget-id="345305040904413184">Tweets de @tvcultura</a>
 			                </div>
 			                <?php include_partial_from_folder('blocks','global/visite-cmais',array('uri'=>$uri)) ?>
 			                <?php include_partial_from_folder('sites/metropolis','global/fb-comments',array('uri'=>$uri)) ?>
