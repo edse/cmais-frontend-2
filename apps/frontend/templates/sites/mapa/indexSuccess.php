@@ -21,7 +21,7 @@
       teste de conteudo
     </div>
     
-    <div id="map_canvas" class="mapa">
+    <div id="map-canvas" class="mapa">
       <form id="form-map" action="" method="post">
         <input type="text" name="" class="search-map">
         <input type="submit" id="enviar" value=""/>
