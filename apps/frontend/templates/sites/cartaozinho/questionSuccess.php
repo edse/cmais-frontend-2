@@ -1,9 +1,12 @@
 <?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 124025) -> orderBy('ra.display_order') -> execute();?>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-
+<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<link href="/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
   #menu-portal-2 h1 {    margin: 0;  }
