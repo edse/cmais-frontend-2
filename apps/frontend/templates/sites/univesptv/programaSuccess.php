@@ -87,7 +87,7 @@
                           <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a>
                           <?php if(($page!="")&&($page != $pager->getPreviousPage())): ?>
                           <!--a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $pager->getPreviousPage() ?>" class="btn anterior"></a-->
-                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn proximo"></a>
+                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
                           <?php endif; ?>
                         </div>
 				        <form id="page_form" action="" method="post">
