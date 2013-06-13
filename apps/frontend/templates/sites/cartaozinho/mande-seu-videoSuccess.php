@@ -152,6 +152,7 @@
 
                   <fieldset>
                     <legend><h1>Vídeo</h1></legend>
+                    <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
                     <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
                     <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
                     <script type="text/javascript">
