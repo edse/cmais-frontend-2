@@ -1,7 +1,7 @@
 <?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 123494) -> orderBy('ra.display_order') -> execute();?>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 
 <style type="text/css">
@@ -21,7 +21,8 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
-</style> 
+</style>
+
 <?php use_helper('I18N', 'Date')?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))?>
 
