@@ -193,7 +193,7 @@
                       <ul class="sem-borda">
                         <?php foreach($assets as $k=>$d): ?>
                           <?php $k++ ?>
-                          <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $k ?>);" class="titulos"><?php echo $d->getTitle(); ?></a></li>
+                            <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $k ?>);" class="titulos" <?php if($d->getId() == $asset->getId()): ?>style="color:#ff6625"<?php endif; ?>><?php echo $d->getTitle(); ?></a></li>
                         <?php endforeach; ?>
                       </ul>
                     </div>
