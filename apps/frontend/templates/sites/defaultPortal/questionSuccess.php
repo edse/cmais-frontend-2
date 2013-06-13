@@ -294,7 +294,7 @@ function sendAnswer(){
     type: "POST",
     dataType: "json",
     data: $('.form-votacao').serialize(),
-    url: "<?php echo url_for('homepage')?>frontend_dev.php/ajax/enquetes",
+    url: "http://tvratimbum.cmais.com.br/ajax/enquetes",
     beforeSend: function(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
