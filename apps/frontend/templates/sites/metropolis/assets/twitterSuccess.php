@@ -84,7 +84,7 @@
 		                    <p class="subtit"><?php echo $asset->getDescription() ?></p>
 		                    			                
 			                <div class="noticiaTxt">
-			                 <a class="twitter-timeline" href="https://twitter.com/tvcultura" data-widget-id="309744604310274048">Tweets by @tvcultura</a>
+			                 <a class="twitter-timeline" width="800"href="https://twitter.com/tvcultura" data-widget-id="309744604310274048">Tweets by @tvcultura</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 			                </div>
