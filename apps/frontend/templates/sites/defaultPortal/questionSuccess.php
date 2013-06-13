@@ -288,7 +288,7 @@ foreach ($a as $key => $value) {
 }
 ?>
   function sendAnswer(){
-$.ajax({
+$.ajax({ 
 type: "POST",
 dataType: "json",
 data: $('.form-votacao').serialize(),
