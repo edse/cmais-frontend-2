@@ -28,7 +28,9 @@
 <script type="text/javascript" src="/js/audioplayer/jplayer_min.js"></script>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
+<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
