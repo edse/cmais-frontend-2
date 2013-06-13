@@ -148,13 +148,45 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                 
+
+
+                  <fieldset>
+                    <legend><h1>Vídeo</h1></legend>
+                    <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
+                    <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
+                    <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
+                    <script type="text/javascript">
+                      var ytdInitFunction = function() {
+                        var ytd = new Ytd();
+                        ytd.setAssignmentId("5838406743490560");
+                        ytd.setCallToAction("callToActionId-5838406743490560");
+                        var containerWidth = 620;
+                        var containerHeight = 550;
+                        ytd.setYtdContainer("ytdContainer-5838406743490560", containerWidth, containerHeight);
+                        ytd.ready();
+                      };
+                      if (window.addEventListener) {
+                        window.addEventListener("load", ytdInitFunction, false);
+                      } else if (window.attachEvent) {
+                        window.attachEvent("onload", ytdInitFunction);
+                      }
+                    </script>
+                    
+                    <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left; background-color: yellow; padding: 5px;">
+                      <p id="enviar">Fazer upload</p>
+                    </a>
+                    
+                    <div id="ytdContainer-5838406743490560"></div> 
+                  </fieldset>
                   
-                   <div class="linha t3">
+                  <!--
+                  <div class="linha t3">
                     <label>url do vídeo</label>
                     <input type="text" name="url" id="url" />
                     <p class="txt-10" style="float:left; margin:0 0 0 5px;">Ex: http://youtu.be/fg1_i8bpZ9c</p>  
                   </div>
+                  -->
+                  
                   <div class="linha t3">
                       <label>Regulamento</label>
                       <div class="regulamento">

@@ -12,8 +12,8 @@
       <div id="barra-site">
 
         <div class="topo-programa">
-          
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" /></a></h2>
+          <?php $mainSite = Doctrine::getTable('Site')->findOneBySlug('univesptv'); ?>
+          <h2><a href="<?php echo $mainSite->retriveUrl() ?>"><img title="<?php echo $mainSite->getTitle() ?>" alt="<?php echo $mainSite->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $mainSite->getImageThumb() ?>" /></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?> 
@@ -87,7 +87,7 @@
                           <a href="#" class="titulos">Epis&oacute;dio <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></a>
                           <?php if(($page!="")&&($page != $pager->getPreviousPage())): ?>
                           <!--a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $pager->getPreviousPage() ?>" class="btn anterior"></a-->
-                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn proximo"></a>
+                          <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
                           <?php endif; ?>
                         </div>
 				        <form id="page_form" action="" method="post">
@@ -191,8 +191,9 @@
                       </div>
                     <div class="">
                       <ul class="sem-borda">
-                        <?php $k=0; foreach($assets as $d): $k++; ?>
-                          <li class="conteudo-lista" style="height:auto;"><!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> --><a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
+                        <?php foreach($assets as $k=>$d): ?>
+                          <?php $k++ ?>
+                            <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $k ?>);" class="titulos" <?php if($k == $page): ?>style="color:#ff6625"<?php endif; ?>><?php echo $d->getTitle(); ?></a></li>
                         <?php endforeach; ?>
                       </ul>
                     </div>
