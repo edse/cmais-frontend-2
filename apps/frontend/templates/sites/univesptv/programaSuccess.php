@@ -198,9 +198,10 @@
                         
                         <?php if(isset($pager)): ?>
                           <?php if(count($pager) > 0): ?>
-                            <?php foreach($pager->getResults() as $d): ?>
+                            <?php foreach($pager->getResults() as $k=>$d): ?>
+                              <?php $k++ ?>
                             <?php //foreach ($pager->getLinks() as $page): ?>                        
-                          <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $d->getLink() ?>);" class="titulos"><?php echo $d->getTitle(); ?></a>
+                          <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $k ?>);" class="titulos"><?php echo $d->getTitle(); ?></a>
                             <?php endforeach; ?>
                           <?php endif; ?>
                         <?php endif; ?>
