@@ -23,12 +23,12 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $asset->Site->getSlug() ?>.css" type="text/css" />
 
-<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
+
 <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/js/audioplayer/jplayer_min.js"></script>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 
 
