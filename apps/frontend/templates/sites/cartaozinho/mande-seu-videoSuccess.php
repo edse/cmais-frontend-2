@@ -148,27 +148,33 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                  
-                  <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
-                  <script type="text/javascript">
-                  var ytdInitFunction = function() {
-                    var ytd = new Ytd();
-                    ytd.setAssignmentId("5838406743490560");
-                    ytd.setCallToAction("callToActionId-5838406743490560");
-                    var containerWidth = 350;
-                    var containerHeight = 550;
-                    ytd.setYtdContainer("ytdContainer-5838406743490560", containerWidth, containerHeight);
-                    ytd.ready();
-                  };
-                  if (window.addEventListener) {
-                    window.addEventListener("load", ytdInitFunction, false);
-                  } else if (window.attachEvent) {
-                    window.attachEvent("onload", ytdInitFunction);
-                  }
-                  </script>
-                  //Modify the next two lines to customize the Call to Action button.
-                  <a id="callToActionId-5838406743490560" href="javascript:void(0);"><img src="https://cartaozinhoupload.appspot.com/images/calltoaction.png"></a>
-                  <div id="ytdContainer-5838406743490560"></div>
+
+
+                  <fieldset>
+                    <legend><h1>Vídeo</h1></legend>
+                    <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
+                    <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
+                    <script type="text/javascript">
+                      var ytdInitFunction = function() {
+                        var ytd = new Ytd();
+                        ytd.setAssignmentId("5838406743490560");
+                        ytd.setCallToAction("callToActionId-5838406743490560");
+                        var containerWidth = 640;
+                        var containerHeight = 550;
+                        ytd.setYtdContainer("ytdContainer-5838406743490560", containerWidth, containerHeight);
+                        ytd.ready();
+                      };
+                      if (window.addEventListener) {
+                        window.addEventListener("load", ytdInitFunction, false);
+                      } else if (window.attachEvent) {
+                        window.attachEvent("onload", ytdInitFunction);
+                      }
+                    </script>
+                    <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left">
+                      <p id="enviar">Fazer upload</p>
+                    </a>
+                    <div id="ytdContainer-5838406743490560"></div> 
+                  </fieldset>
                   
                   <!--
                   <div class="linha t3">
