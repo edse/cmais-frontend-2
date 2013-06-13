@@ -563,7 +563,7 @@ class ajaxActions extends sfActions
         $return .= '</ul><ul class="lista">';
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
-        $return .= '</ul><div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade?c=tvratimbum">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
+        $return .= '</ul><div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
       }
       elseif($request->getParameter('content') == "radioam"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
@@ -754,7 +754,7 @@ class ajaxActions extends sfActions
           $return .= '<p class="titulos hora">'.format_date($important->getDateStart(), "t").'</p></div>';
         }
         unset($important); unset($coming); unset($live);
-        $return .= '<div class="botoes"><a href="/grade?c=univesptv">Grade completa</a></div>';
+        $return .= '<div class="botoes"><a href="http://univesptv.cmais.com.br/programacao">Grade completa</a></div>';
       }
       elseif($request->getParameter('content') == "no-ar-multicultura"){
         $live = Doctrine_Query::create()
@@ -881,7 +881,7 @@ class ajaxActions extends sfActions
           $return .= '<p class="titulos hora">'.format_date($important->getDateStart(), "t").'</p></div>';
         }
         unset($important); unset($coming); unset($live);
-        $return .= '<div class="botoes"><a href="/grade?c=tvratimbum">Grade completa</a></div>';
+        $return .= '<div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade">Grade completa</a></div>';
       }
     //}
     echo $return;
