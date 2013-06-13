@@ -294,7 +294,7 @@ function sendAnswer(){
     type: "POST",
     dataType: "json",
     data: $('.form-votacao').serialize(),
-    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    url: "<?php echo url_for('homepage')?>frontend_dev.php/ajax/enquetes",
     beforeSend: function(){
       $('.btn-barra.votacao').hide();
       $('#ajax-loader-b').show();
