@@ -164,7 +164,6 @@
       //
       $("#id").val(id);
       $("#city").val(name);
-      editor.setData(content);
       $("#coords").val(pos.jb+","+pos.kb);
       $('#remove').show();
       $('#form1').hide();
@@ -191,9 +190,6 @@
             $('#form2').show();
             $("#city").val(document.getElementById('address').value);
             $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            //$("#info").focus();
-            //CKEDITOR.instances.txtComment.focus();
-            editor.focus();
             map.setCenter(results[0].geometry.location);
             console.log(results[0].geometry.location);
             new_marker = new google.maps.Marker({
@@ -234,7 +230,6 @@
     $("#city").val("");
     $("#coords").val("");
     //$("#info").val("");
-    editor.setData("");
     $("#id").val("");
   }
 
