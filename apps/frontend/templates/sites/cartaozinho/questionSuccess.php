@@ -321,6 +321,7 @@
     </div>
     <!-- / CAPA SITE -->
     </div>
+
 <script>
   //valida form votacao
   $(document).ready(function() {
