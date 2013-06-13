@@ -21,7 +21,7 @@
       teste de conteudo
     </div>
     
-    <div class="mapa">
+    <div id="map_canvas" class="mapa">
       <form id="form-map" action="" method="post">
         <input type="text" name="" class="search-map">
         <input type="submit" id="enviar" value=""/>
@@ -29,3 +29,234 @@
     </div>  
   </div>
 </div>
+
+<style>
+  #map-canvas, #map_canvas {
+    height: 500px;
+  }
+  @media print {
+    html, body {
+      height: auto;
+    }
+    #map-canvas, #map_canvas {
+      height: 650px;
+    }
+  }
+</style>
+<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPYP48UMFX-s3_lrh1tRI9oLcyBM1htS4&sensor=false&language=pt" type="text/javascript"></script>
+<script>
+//980
+  (function () {
+    google.maps.Map.prototype.markers = new Array();
+    google.maps.Map.prototype.addMarker = function(marker) {
+      this.markers[this.markers.length] = marker;
+    };
+    google.maps.Map.prototype.getMarkers = function() {
+      return this.markers
+    };
+    google.maps.Map.prototype.clearMarkers = function() {
+      if(infowindow) {
+        infowindow.close();
+      }
+      for(var i=0; i<this.markers.length; i++){
+        this.markers[i].set_map(null);
+      }
+    };
+  })();
+
+  // Define Marker properties
+  var image = new google.maps.MarkerImage('/images/marker.png',
+    // This marker is 129 pixels wide by 42 pixels tall.
+    new google.maps.Size(36, 30),
+    // The origin for this image is 0,0.
+    new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 18,42.
+    new google.maps.Point(18, 30)
+  );
+
+  // Enable the visual refresh
+  google.maps.visualRefresh = true;
+  var new_marker;
+  var markers = [];
+  var contents = [];
+  var infowindow = null;
+  var geocoder;
+  var map;
+  function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(-14.235004, -51.92527999999999);
+    var mapOptions = {
+      zoom: 4,
+      center: latlng,
+      streetViewControl: false,
+      //mapTypeId: google.maps.MapTypeId.HYBRID
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  <?php
+  $i = 0;
+  foreach($assets as $asset){
+    ?>
+    //add markers
+    var contentString = '<?php echo str_replace(array("\n", "\r"), array("", ""), html_entity_decode($asset->AssetContent->getContent()))?>';
+    
+    markers.push({
+      id: '<?php echo $asset->getId()?>',
+      position: new google.maps.LatLng(<?php echo $asset->getDescription()?>),
+      name: '<?php echo $asset->getTitle()?>',
+      content: contentString
+    });
+
+    <?php
+  }
+  ?>
+
+    for(var i=0; i<markers.length; i++){
+      map.addMarker(createMarker(markers[i].id, markers[i].name, markers[i].content, markers[i].position));
+    }
+
+    /*
+    // Try HTML5 geolocation
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        var infowindow = new google.maps.InfoWindow({
+          map: map,
+          position: pos,
+          title: 'Your position',
+          content: 'Location found using HTML5.'
+        });
+        var marker = new google.maps.Marker({
+          map: map,
+          position: pos,
+          title: 'Your position',
+          content: 'Location found using HTML5.'
+        });
+
+        map.setCenter(pos);
+      }, function() {
+        handleNoGeolocation(true);
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleNoGeolocation(false);
+    }
+    // Try HTML5 geolocation
+    */
+  }
+
+  function createMarker(id, name, content, pos) {
+    console.log('content:');
+    console.log(id);
+
+    var marker = new google.maps.Marker({
+      position: pos,
+      map: map,
+      title: name/*,
+      icon: image*/
+    });
+    google.maps.event.addListener(marker, "click", function() {
+      if (new_marker) new_marker.setMap(null);
+      if (infowindow) infowindow.close();
+      infowindow = new google.maps.InfoWindow({content: content});
+      infowindow.open(map, marker);
+      //
+      $("#id").val(id);
+      $("#city").val(name);
+      editor.setData(content);
+      $("#coords").val(pos.jb+","+pos.kb);
+      $('#remove').show();
+      $('#form1').hide();
+      $('#form2').show();
+    });
+
+    return marker;
+  }
+
+  function codeAddress() {
+    if(document.getElementById('address').value != ""){
+      var address = document.getElementById('address').value+", Brasil";
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+  
+          var exists = false;
+          for(var i=0; i<markers.length; i++){
+            if(markers[i].position.equals(results[0].geometry.location))
+              exists = true;
+          }
+  
+          if(!exists){
+            $('#form1').hide();
+            $('#form2').show();
+            $("#city").val(document.getElementById('address').value);
+            $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
+            //$("#info").focus();
+            //CKEDITOR.instances.txtComment.focus();
+            editor.focus();
+            map.setCenter(results[0].geometry.location);
+            console.log(results[0].geometry.location);
+            new_marker = new google.maps.Marker({
+                map: map,
+                position: results[0].geometry.location,
+                icon: {
+                  path: google.maps.SymbolPath.CIRCLE,
+                  scale: 5
+                },
+            });
+          }else{
+            alert('Coordenada já existente!');
+            $("#address").val("").focus();
+          }
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+    else{
+      alert('Geocode was not successful for the following reason: Address is null');
+    }
+  }
+  
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+  $("#cancel").click(function() {
+    cancelNewLocal();
+  });
+
+  function cancelNewLocal(){
+    if (infowindow) infowindow.close();
+    if (new_marker) new_marker.setMap(null);
+    $('#remove').hide();
+    $('#form1').show();
+    $('#form2').hide();
+    $("#address").val("");
+    $("#city").val("");
+    $("#coords").val("");
+    //$("#info").val("");
+    editor.setData("");
+    $("#id").val("");
+  }
+
+  $("#save").click(function() {
+    $('#form2').submit();
+  });
+
+  $("#remove").click(function() {
+    if(confirm("Você tem certeza de que deseja remover essa localidade?")){
+      $('#delete').val($('#id').val());
+      $('#form2').submit();
+    }
+  });
+
+  $('#address').keypress(function (e) {
+    if(e.which == 13) {
+      codeAddress();
+      return false;
+    }
+  });
+
+  $("#search").click(function() {
+    codeAddress();
+  });
+</script>
