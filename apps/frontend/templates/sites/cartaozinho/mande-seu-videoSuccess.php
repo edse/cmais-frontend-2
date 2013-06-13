@@ -171,6 +171,7 @@
                       window.attachEvent("onload", ytdInitFunction);
                     }
                     </script>
+
                     <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
                       <span id="enviar">Fazer upload</span>
                     </a>
