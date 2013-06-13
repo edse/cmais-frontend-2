@@ -172,9 +172,7 @@
                       }
                     </script>
                     
-                    <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left; background-color: yellow; padding: 5px;">
-                      <p id="enviar">Fazer upload</p>
-                    </a>
+                    
                     
                     <div id="ytdContainer-5838406743490560"></div> 
                   </fieldset>
@@ -245,8 +243,12 @@
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <!--input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" /-->
                     <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                     
+                     <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left; background-color: yellow; padding: 5px;">
+                       <p id="enviar">Fazer upload</p>
+                     </a>
                   </div>
                 </form>
               </div>
