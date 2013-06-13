@@ -296,7 +296,7 @@ url: "http://cmais.com.br/ajax/enquetes",
   beforeSend: function(){
   $('.btn-barra.votacao').hide();
   $('#ajax-loader-b').show();
-  },
+  }, 
 
   success: function(data){
   $(".form-votacao, #ajax-loader-b").hide();
