@@ -292,7 +292,7 @@ $.ajax({
 type: "POST",
 dataType: "json",
 data: $('.form-votacao').serialize(),
-url: "/ajax/enquetes",
+url: "tvcultura.com.br/ajax/enquetes",
   beforeSend: function(){
   $('.btn-barra.votacao').hide();
   $('#ajax-loader-b').show();
