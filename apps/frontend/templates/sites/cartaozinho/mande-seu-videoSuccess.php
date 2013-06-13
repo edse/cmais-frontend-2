@@ -25,7 +25,7 @@
           <?php elseif(isset($site) && $site->id > 0): ?>
           <h2>
             <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
+              <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
             </a>
           </h2>
           <?php endif; ?>
@@ -79,7 +79,7 @@
               <div class="contato grid2 video">
 
                 <h3 class="tit-pagina grid2">Entre em campo no cartãozinho: mande seu vídeo!</h3>  
-                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!</p>
+                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo e participe!</p>
 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
@@ -149,32 +149,32 @@
                     <input type="text" name="email" id="email" />
                   </div>
 
-
                   <fieldset>
                     <legend><h1>Vídeo</h1></legend>
                     <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
                     <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
+                    
                     <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
                     <script type="text/javascript">
-                      var ytdInitFunction = function() {
-                        var ytd = new Ytd();
-                        ytd.setAssignmentId("5838406743490560");
-                        ytd.setCallToAction("callToActionId-5838406743490560");
-                        var containerWidth = 620;
-                        var containerHeight = 550;
-                        ytd.setYtdContainer("ytdContainer-5838406743490560", containerWidth, containerHeight);
-                        ytd.ready();
-                      };
-                      if (window.addEventListener) {
-                        window.addEventListener("load", ytdInitFunction, false);
-                      } else if (window.attachEvent) {
-                        window.attachEvent("onload", ytdInitFunction);
-                      }
+                    var ytdInitFunction = function() {
+                      var ytd = new Ytd();
+                      ytd.setAssignmentId("5655612935372800");
+                      ytd.setCallToAction("callToActionId-5655612935372800");
+                      var containerWidth = 350;
+                      var containerHeight = 550;
+                      ytd.setYtdContainer("ytdContainer-5655612935372800", containerWidth, containerHeight);
+                      ytd.ready();
+                    };
+                    if (window.addEventListener) {
+                      window.addEventListener("load", ytdInitFunction, false);
+                    } else if (window.attachEvent) {
+                      window.attachEvent("onload", ytdInitFunction);
+                    }
                     </script>
-                    
-                    
-                    
-                    <div id="ytdContainer-5838406743490560"></div> 
+                    <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
+                      <span id="enviar">Fazer upload</span>
+                    </a>
+                    <div id="ytdContainer-5655612935372800"></div>
                   </fieldset>
                   
                   <!--
@@ -185,8 +185,9 @@
                   </div>
                   -->
                   <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
-                       <span id="enviar">Fazer upload</span>
-                     </a>
+                    <span id="enviar">Fazer upload</span>
+                  </a>
+                  
                   <div class="linha t3">
                       <label>Regulamento</label>
                       <div class="regulamento">
