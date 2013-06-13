@@ -184,7 +184,7 @@
                     <p class="txt-10" style="float:left; margin:0 0 0 5px;">Ex: http://youtu.be/fg1_i8bpZ9c</p>  
                   </div>
                   -->
-                  <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;">
+                  <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
                        <span id="enviar">Fazer upload</span>
                      </a>
                   <div class="linha t3">
