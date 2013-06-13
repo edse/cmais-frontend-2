@@ -191,9 +191,18 @@
                       </div>
                     <div class="">
                       <ul class="sem-borda">
-                        <?php $k=0; foreach($assets as $d): $k++; ?>
+                        <?php /* $k=0; foreach($assets as $d): $k++; ?>
                           <li class="conteudo-lista" style="height:auto;"><!-- <a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="episodio<?php if(($page == $k)||(!$page && $k==1)):?> ativo<?php endif; ?>">Epis&oacute;dio<span><?php echo $k; ?></span></a> --><a href="<?php echo $site->retriveUrl(); ?>?page=<?php echo $k?>" class="titulos"><?php echo $d->getTitle(); ?></a><!-- <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a> --></li>
-                        <?php endforeach; ?>
+                          <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>
+                        <?php endforeach; */ ?>
+                        
+                        <?php if(isset($pager)): ?>
+                          <?php if($pager->haveToPaginate()): ?>
+                            <?php foreach ($pager->getLinks() as $page): ?>                        
+                          <li class="conteudo-lista" style="height:auto;"><a href="javascript: goToPage(<?php echo $page ?>);" class="titulos"><?php echo $page->getTitle(); ?></a>
+                            <?php endforeach; ?>
+                          <?php endif; ?>
+                        <?php endif; ?>
                       </ul>
                     </div>
                   </div>
