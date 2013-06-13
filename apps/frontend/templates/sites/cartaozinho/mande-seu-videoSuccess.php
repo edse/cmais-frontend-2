@@ -246,7 +246,7 @@
                     <!--input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" /-->
                     <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                      
-                     <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:right; background-color: yellow; padding: 5px;">
+                     <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="text-decoration:none;clear:both; float:right; background-color: yellow; padding: 5px;">
                        <span id="enviar">Fazer upload</span>
                      </a>
                   </div>
