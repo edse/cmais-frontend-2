@@ -161,7 +161,7 @@
                       ytd.setAssignmentId("5655612935372800");
                       ytd.setCallToAction("callToActionId-5655612935372800");
                       var containerWidth = 350;
-                      var containerHeight = 550;
+                      var containerHeight = 620;
                       ytd.setYtdContainer("ytdContainer-5655612935372800", containerWidth, containerHeight);
                       ytd.ready();
                     };
