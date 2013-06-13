@@ -23,7 +23,9 @@
                     </a>
                     <?php else: ?>
                     <a href="<?php echo $live->Program->retriveUrl() ?>" title="<?php echo $live->getTitle() ?>">
+                      <?php if($live->Program->getImageLive()): ?>
                       <img src="http://midia.cmais.com.br/programs/<?php echo $live->Program->getImageLive() ?>" alt="<?php echo $live->Program->getTitle() ?>" />
+                      <?php endif; ?>
                     </a>
                     <?php endif; ?>
                     <p class="chapeu"><?php echo $live->Program->getTitle() ?></p><br />
