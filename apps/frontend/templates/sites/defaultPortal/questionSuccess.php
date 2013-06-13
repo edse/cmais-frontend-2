@@ -21,8 +21,7 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
-</style>
-
+</style> 
 <?php use_helper('I18N', 'Date')?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))?>
 
