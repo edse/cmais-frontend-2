@@ -12,8 +12,8 @@
       <div id="barra-site">
 
         <div class="topo-programa">
-          
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" /></a></h2>
+          <?php $mainSite = Doctrine::getTable('Site')->findOneBySlug('univesptv'); ?>
+          <h2><a href="<?php echo $mainSite->retriveUrl() ?>"><img title="<?php echo $mainSite->getTitle() ?>" alt="<?php echo $mainSite->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $mainSite->getImageThumb() ?>" /></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?> 
