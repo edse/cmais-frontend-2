@@ -692,7 +692,7 @@ class ajaxActions extends sfActions
           $return .= '<p class="titulos hora">'.format_date($important->getDateStart(), "t").'</p></div>';
         }
         unset($important); unset($coming); unset($live);
-        $return .= '<div class="botoes"><a href="/grade">Grade completa</a></div>';
+        $return .= '<div class="botoes"><a href="http://tvcultura.cmais.com.br/grade">Grade completa</a></div>';
       }
       elseif($request->getParameter('content') == "no-ar-univesptv"){
         $live = Doctrine_Query::create()
