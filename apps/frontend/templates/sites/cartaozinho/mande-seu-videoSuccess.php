@@ -170,9 +170,11 @@
                         window.attachEvent("onload", ytdInitFunction);
                       }
                     </script>
+                    
                     <a id="callToActionId-5838406743490560" href="javascript:void(0);" style="clear:both; float:left">
                       <p id="enviar">Fazer upload</p>
                     </a>
+                    
                     <div id="ytdContainer-5838406743490560"></div> 
                   </fieldset>
                   
