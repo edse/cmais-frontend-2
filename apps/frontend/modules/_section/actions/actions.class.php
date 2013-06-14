@@ -603,7 +603,7 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-          if($this->site->getSlug() == "penarua"){
+          if(in_array($this->site->getSlug(), array("penarua","cartaozinho"))){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
               ->from('Asset a, SectionAsset sa')

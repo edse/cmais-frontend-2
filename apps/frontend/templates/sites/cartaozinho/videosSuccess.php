@@ -118,6 +118,7 @@ $(function(){
           	  	<form id="busca-galeria" name="busca" action="" method="post">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
           	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
+                  <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>"/>
           	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  </div>
@@ -136,35 +137,16 @@ $(function(){
           	      </ul>
           	    </div>
           	  </div>
+          	  <?php /*
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
 				<script type='text/javascript'>
 				GA_googleFillSlot("maiscrianca");
 				</script>
 		      </div>
+               */ ?>
           	  
-          	  <!--div id="recentes" class="filho blocos" style="display:none;">
-          	    <div class="capa">
-          	      <ul>
-          	      	<li class="conteudo-lista ativo">
-          	      	  <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-          	      	  <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-          	      	</li>
-          	      </ul>
-          	    </div>
-          	  </div>
-          	  
-          	  <div id="vistos" class="filho blocos" style="display:none;">
-          	    <div class="capa">
-          	      <ul>
-          	      	<li class="conteudo-lista ativo">
-          	      	  <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-          	      	  <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-          	      	</li>
-          	      </ul>
-          	    </div>
-          	  </div -->
-          	  
+          	 
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
           	  <!-- PAGINACAO -->
@@ -185,19 +167,20 @@ $(function(){
           	      <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
           	    </div>
           	  </div>
-		      <!-- PAGINACAO -->
+          <!-- PAGINACAO -->
               <form id="page_form" action="" method="post">
-              	<input type="hidden" name="return_url" value="<?php echo $url?>" />
-              	<input type="hidden" name="page" id="page" value="" />
-              	<input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
+                <input type="hidden" name="return_url" value="<?php echo $url ?>" />
+                <input type="hidden" name="page" id="page" value="" />
+                <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>" />
+                <input type="hidden" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>" />
               </form>
               <script>
-              	function goToPage(i){
-                	$("#page").val(i);
-                	$("#page_form").submit();
-              	}
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
               </script>
-		      <!-- PAGINACAO -->
+          <!-- PAGINACAO -->
 		        <?php endif; ?>
 		      <?php endif; ?>
 		     
