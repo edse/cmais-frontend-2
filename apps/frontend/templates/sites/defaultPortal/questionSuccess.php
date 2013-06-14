@@ -91,6 +91,7 @@
                 $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
 
                 <?php if(count($verifica_video) > 0): ?>
+                 <!-- 1 -->
                 <!--LISTA-Videos-->
                 <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
                   <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
