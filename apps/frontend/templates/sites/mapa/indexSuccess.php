@@ -114,7 +114,7 @@
       map.addMarker(createMarker(markers[i].id, markers[i].name, markers[i].content, markers[i].position));
     }
     
-    $("#search").focus();
+    $("#address").focus();
 
     /*
     // Try HTML5 geolocation
