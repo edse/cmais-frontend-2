@@ -210,11 +210,10 @@
             console.log(exists);
             console.log(markers[exists].content);
             console.log(markers[exists]);
-            //if (new_marker) new_marker.setMap(null);
+            if (new_marker) new_marker.setMap(null);
             //if (infowindow) infowindow.close();
             mks = google.maps.Map.prototype.getMarkers();
-            console.log(exists);
-            console.log(mks[exists].content);
+            console.log(">>>"+exists);
             console.log(mks[exists]);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
