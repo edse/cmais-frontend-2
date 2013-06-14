@@ -189,7 +189,7 @@
           var t2 = t1.replace(".","");
           var t3 = t2.replace("-","");
           for(var i=0; i<markers.length; i++){
-            var j1 = new String($.trim(markers[i].position.jb+","+markers[i].position.kb));
+            var j1 = new String($.trim(markers[i].position.jb+markers[i].position.kb));
             var j2 = j1.replace(".","");
             var j3 = j2.replace("-","");
             console.log('"'+t3+'" == "'+j3+'"');
