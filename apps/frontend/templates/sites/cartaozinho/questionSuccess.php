@@ -222,8 +222,9 @@
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
-              <!-- /NOTICIA INTERNA -->
-              
+              <!-- /texto -->
+              </div>
+              <!-- NOTICIA INTERNA -->
             </div>
             <!-- /ESQUERDA -->
             
@@ -310,10 +311,8 @@
             <!-- /DIREITA -->
 
             </div>
-            <!-- /DIREITA -->
+            <!-- /CAPA -->
           </div>
-          <!-- /CAPA -->
-        </div>
         <!-- /CONTEUDO PAGINA -->
 
       </div>
