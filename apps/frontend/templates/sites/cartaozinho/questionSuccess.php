@@ -179,7 +179,7 @@
                     for($i=0; $i<count($a); $i++): ?>
                     <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
                     <li>
-                    <p><?php $a[$i] -> Asset -> AssetAnswer -> getAnswer();?></p> <span>00%</span>
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer();?></p><span>00%</span>
                     <div class="progress progress-success">
                       <div class="bar" style="width: 40%"></div>
                     </div>
