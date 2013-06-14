@@ -158,6 +158,7 @@
       icon: image
     });
 
+    /*
     google.maps.event.addListener(marker, "click", function() {
       if (new_marker) new_marker.setMap(null);
       if (infowindow) infowindow.close();
@@ -170,6 +171,11 @@
       $('#remove').show();
       $('#form1').hide();
       $('#form2').show();
+    });
+    */
+    var ib = new InfoBox(myOptions);
+    google.maps.event.addListener(marker, "click", function (e) {
+      ib.open(map, this);  // change the map variable appropriately
     });
 
     return marker;
@@ -205,6 +211,7 @@
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
+            console.log(exists);
             console.log(markers[exists].content);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
