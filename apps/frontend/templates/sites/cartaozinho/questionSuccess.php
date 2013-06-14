@@ -23,6 +23,7 @@
   #lista-videos li { width:300px;  }
   #lista-videos { margin-left:5px; }
   #lista-videos .form-contato { margin-right:5px; }
+  .box-compartilhar { margin-left:-10px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />

@@ -148,7 +148,7 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-
+                  <div class="linha t3">
                   <fieldset>
                     <legend><h1>Vídeo</h1></legend>
                     <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
@@ -176,6 +176,7 @@
                     </a>
                     <div id="ytdContainer-5655612935372800"></div>
                   </fieldset>
+                  </div>
                   
                   <!--
                   <div class="linha t3">
