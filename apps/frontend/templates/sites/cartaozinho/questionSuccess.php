@@ -323,35 +323,35 @@
     });
   });
 
-<?php
-/*echo "var nome = new Array();\n";
+<?php echo "var nome = new Array();\n";
 foreach ($a as $key => $value) {
   $c = $value -> Asset -> AssetAnswer -> getAnswer();
   echo "nome[" . $key . "]= '" . $c . "';\n";
-}*/
+}
 ?>
-
   function sendAnswer(){
-    $.ajax({
-      type: "POST",
-      dataType: "json",
-      data: $('.form-votacao').serialize(),
-      url: "<?php echo url_for('homepage')?>ajax/enquetes",
-      beforeSend: function(){
-        $('.btn-barra.votacao').hide();
-        $('#ajax-loader-b').show();
-      },
-      success: function(data){
-        $(".form-votacao, #ajax-loader-b").hide();
-        $("#resultado-video").fadeIn("fast");
-        var i=0;
-        $.each(data, function(key, val) {
-          console.log(i+nome);
-          //nome[i]
-          $('.parcial-'+i).html("<li><p>"+val.answer+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
-          i++;
-        });
-      }
-    });
+$.ajax({
+type: "POST",
+dataType: "json",
+data: $('.form-votacao').serialize(),
+url: "<?php echo url_for('homepage')?>ajax/enquetes",
+  beforeSend: function(){
+  $('.btn-barra.votacao').hide();
+  $('#ajax-loader-b').show();
+  },
+
+  success: function(data){
+  $(".form-votacao, #ajax-loader-b").hide();
+  $("#resultado-video").fadeIn("fast");
+  var i=0;
+  $.each(data, function(key, val) {
+    console.log(i+nome);
+    //nome[i]
+  $('.parcial-'+i).html("<li><p>"+val.answer+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+  i++;
+  });
+  }
+  });
+
   }
 </script>
