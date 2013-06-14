@@ -113,6 +113,8 @@
     for(var i=0; i<markers.length; i++){
       map.addMarker(createMarker(markers[i].id, markers[i].name, markers[i].content, markers[i].position));
     }
+    
+    $("#search").focus();
 
     /*
     // Try HTML5 geolocation
