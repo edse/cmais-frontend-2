@@ -216,7 +216,7 @@
             console.log(exists);
             console.log(mks[exists].content);
             console.log(mks[exists]);
-            infowindow = new google.maps.InfoWindow({content: mks[exists].content});
+            infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
         } else {
