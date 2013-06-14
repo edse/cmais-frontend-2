@@ -25,7 +25,7 @@
           <?php elseif(isset($site) && $site->id > 0): ?>
           <h2>
             <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
+              <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
             </a>
           </h2>
           <?php endif; ?>
@@ -79,7 +79,7 @@
               <div class="contato grid2 video">
 
                 <h3 class="tit-pagina grid2">Entre em campo no cartãozinho: mande seu vídeo!</h3>  
-                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo, sem esquecer do link para o vídeo, e participe!</p>
+                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo e participe!</p>
 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>
@@ -148,13 +148,44 @@
                     <label>email</label>
                     <input type="text" name="email" id="email" />
                   </div>
-                 
+                  <div class="linha t3">
+                  <fieldset>
+                    <legend><h1>Vídeo</h1></legend>
+                    <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
+                    <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
+                    
+                    <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
+                    <script type="text/javascript">
+                    var ytdInitFunction = function() {
+                      var ytd = new Ytd();
+                      ytd.setAssignmentId("5655612935372800");
+                      ytd.setCallToAction("callToActionId-5655612935372800");
+                      var containerWidth = 620;
+                      var containerHeight = 550;
+                      ytd.setYtdContainer("ytdContainer-5655612935372800", containerWidth, containerHeight);
+                      ytd.ready();
+                    };
+                    if (window.addEventListener) {
+                      window.addEventListener("load", ytdInitFunction, false);
+                    } else if (window.attachEvent) {
+                      window.attachEvent("onload", ytdInitFunction);
+                    }
+                    </script>
+                    <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
+                      <span id="enviar">Fazer upload</span>
+                    </a>
+                    <div id="ytdContainer-5655612935372800"></div>
+                  </fieldset>
+                  </div>
                   
-                   <div class="linha t3">
+                  <!--
+                  <div class="linha t3">
                     <label>url do vídeo</label>
                     <input type="text" name="url" id="url" />
                     <p class="txt-10" style="float:left; margin:0 0 0 5px;">Ex: http://youtu.be/fg1_i8bpZ9c</p>  
                   </div>
+                  -->
+                  
                   <div class="linha t3">
                       <label>Regulamento</label>
                       <div class="regulamento">
@@ -213,8 +244,10 @@
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer">
                     <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                     
+                     
                   </div>
                 </form>
               </div>

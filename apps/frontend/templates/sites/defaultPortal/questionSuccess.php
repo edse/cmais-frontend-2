@@ -1,7 +1,6 @@
-<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 123494) -> orderBy('ra.display_order') -> execute();?>
+<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', (int)$asset->id) -> orderBy('ra.display_order') -> execute();?>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script src="/portal/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 
 <style type="text/css">
@@ -265,51 +264,52 @@
 <!-- /MIOLO -->
 </div> <!-- / CAPA SITE -->
 <script>
-  //valida form votacao
-  $(document).ready(function() {
+//valida form votacao
+$(document).ready(function(){
     var validator = $('.form-votacao').validate({
-      submitHandler : function(form) {
-        sendAnswer()
-      },
-      rules : {
-        opcao : {
-          required : true
+    submitHandler: function(form){
+      sendAnswer();
+    },
+    rules:{
+        opcao:{
+          required: true
         }
       },
-      messages : {
-        opcao : "Escolha uma opção para votar."
+      messages:{
+        opcao: "Escolha uma opção para votar."
       }
     });
-  });
-
-<?php echo "var nome = new Array();\n";
-foreach ($a as $key => $value) {
-  $c = $value -> Asset -> AssetAnswer -> getAnswer();
-  echo "nome[" . $key . "]= '" . $c . "';\n";
+});
+<?php
+              
+echo "var nome = new Array();\n";
+foreach($a as $key=>$value){
+  $c = $value->Asset->AssetAnswer->getAnswer();
+  echo "nome[".$key."]= '".$c."';\n";
 }
+ 
 ?>
-  function sendAnswer(){
-$.ajax({
-type: "POST",
-dataType: "json",
-data: $('.form-votacao').serialize(),
-url: "<?php echo url_for('homepage')?>
-  ajax / enquetes",
-  beforeSend: function(){
-  $('.btn-barra.votacao').hide();
-  $('#ajax-loader-b').show();
-  },
-
-  success: function(data){
-  $(".form-votacao, #ajax-loader-b").hide();
-  $("#resultado-video").fadeIn("fast");
-  var i=0;
-  $.each(data, function(key, val) {
-  $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
-  i++;
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $('.form-votacao').serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('.btn-barra.votacao').hide();
+      $('#ajax-loader-b').show();
+    },
+    
+    success: function(data){
+      $(".form-votacao, #ajax-loader-b").hide();
+      $("#resultado-video").fadeIn("fast");
+      var i=0;
+      $.each(data, function(key, val) {
+        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        i++;
+      });      
+    }
   });
-  }
-  });
-
-  }
+  
+}
 </script>

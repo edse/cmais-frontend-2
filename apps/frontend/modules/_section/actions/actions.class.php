@@ -1543,7 +1543,10 @@ class _sectionActions extends sfActions
       $debug = true;
 
       echo sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php';
-
+    }
+    
+    if($this->site->id == 1229){
+      $this->assets = Doctrine::getTable('Asset')->findBySiteId(1229);
     }
     
     if($sectionSlug == 'juvenil'){
