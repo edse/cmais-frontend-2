@@ -8,7 +8,7 @@
 .lista-calendario .mapa{height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
 .lista-calendario .toggle{width:100%;}
 .lista-calendario .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
-.lista-calendario #enviar{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
+.lista-calendario #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
 <div id="capa-site">
   <h1>TV Cultura - Mapa de Cobertura</h1>
@@ -23,7 +23,7 @@
     
     <form id="form-map" action="" method="post">
       <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
-      <input type="submit" id="enviar" value="" />
+      <input type="button" id="search" name="search" value="" />
     </form>  
 
     <div id="map-canvas" class="mapa"></div>
@@ -44,7 +44,7 @@
     }
   }
 </style>
-<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPYP48UMFX-s3_lrh1tRI9oLcyBM1htS4&sensor=false&language=pt" type="text/javascript"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBPYP48UMFX-s3_lrh1tRI9oLcyBM1htS4" type="text/javascript"></script>
 <script>
 //980
   (function () {
@@ -158,21 +158,12 @@
       icon: image
     });
 
-    /*
     google.maps.event.addListener(marker, "click", function() {
       if (new_marker) new_marker.setMap(null);
       if (infowindow) infowindow.close();
       infowindow = new google.maps.InfoWindow({content: content});
       infowindow.open(map, marker);
-      //
-      $("#id").val(id);
-      $("#city").val(name);
-      $("#coords").val(pos.jb+","+pos.kb);
-      $('#remove').show();
-      $('#form1').hide();
-      $('#form2').show();
     });
-    */
 
     return marker;
   }
@@ -196,6 +187,9 @@
             $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
             map.setCenter(results[0].geometry.location);
             console.log(results[0].geometry.location);
+            if (new_marker) new_marker.setMap(null);
+            if (infowindow) infowindow.close();
+            map.setZoom(7);
             new_marker = new google.maps.Marker({
                 map: map,
                 position: results[0].geometry.location,
@@ -215,7 +209,7 @@
             mks = google.maps.Map.prototype.getMarkers();
             console.log(">>>"+exists);
             console.log(mks[exists]);
-            map.setZoom(8);
+            map.setZoom(7);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
