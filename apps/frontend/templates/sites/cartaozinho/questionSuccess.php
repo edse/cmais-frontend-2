@@ -27,8 +27,7 @@
   #votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color:#333; font-weight: bold; }
   .rodape-cmais { display: none; }
   .box-interna .texto { padding-bottom:20px; min-height:400px; }
-  #lista-videos .error { position:absolute; bottom:0; color:red; }
-  #lista-videos .form-contato.error,
+  #lista-videos label.error { position:absolute; bottom:0; color:red; }
   #lista-videos li { position:relative;  }
   
 </style>
