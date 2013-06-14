@@ -17,6 +17,12 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
+  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
+  .box-interna p { margin-bottom:0 }
+  .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
+  #lista-videos li { width:300px;  }
+  #lista-videos { margin-left:5px; }
+  #lista-videos .form-contato { margin-right:5px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
@@ -222,8 +228,9 @@
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
-              <!-- /NOTICIA INTERNA -->
-              
+              <!-- /texto -->
+              </div>
+              <!-- NOTICIA INTERNA -->
             </div>
             <!-- /ESQUERDA -->
             
@@ -310,10 +317,8 @@
             <!-- /DIREITA -->
 
             </div>
-            <!-- /DIREITA -->
+            <!-- /CAPA -->
           </div>
-          <!-- /CAPA -->
-        </div>
         <!-- /CONTEUDO PAGINA -->
 
       </div>
