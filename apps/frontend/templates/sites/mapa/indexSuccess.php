@@ -188,7 +188,7 @@
           var t = new String(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
           for(var i=0; i<markers.length; i++){
             var j = new String(markers[i].position.jb+","+markers[i].position.kb);
-            //console.log("S: "+);
+            console.log(t+' == '+j);
             //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
             if(t == j)
               exists = i;
