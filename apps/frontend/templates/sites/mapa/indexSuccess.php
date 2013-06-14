@@ -23,7 +23,7 @@
     
     <form id="form-map" action="" method="post">
       <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
-      <input type="button" id="search" value="" />
+      <input type="button" id="search" name="search" value="Procurar" />
     </form>  
 
     <div id="map-canvas" class="mapa"></div>
