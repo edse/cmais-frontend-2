@@ -24,6 +24,7 @@
   #lista-videos { margin-left:5px; }
   #lista-videos .form-contato { margin-right:5px; }
   .box-compartilhar { margin-left:-10px; }
+  #votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
