@@ -30,6 +30,7 @@
   .box-interna .texto { padding-bottom:20px; min-height:400px; }
   #lista-videos label.error { position:absolute; bottom:0; color:red; }
   #lista-videos li { position:relative; padding-bottom:20px;  }
+  .box-interna .texto p { padding:0; }
   
 </style>
 
