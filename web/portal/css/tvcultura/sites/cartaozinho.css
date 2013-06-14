@@ -208,6 +208,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .contato form .concordo { clear: both;}
 .contato form .concordo .check { width: 15px; }
 
+.box-interna h3,
 .contato h3 {
     background: none repeat scroll 0 0 #2B8DB2;
     color: #FFFFFF;
