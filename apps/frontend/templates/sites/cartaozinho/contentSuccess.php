@@ -91,7 +91,7 @@
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 <p><?php echo $asset->getDescription() ?></p>
-                
+                <br />
                 
                 <div class="texto">
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
