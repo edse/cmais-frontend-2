@@ -1,4 +1,4 @@
-<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 124276) -> orderBy('ra.display_order') -> execute();?>
+<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = a.id') -> orderBy('ra.display_order') -> execute();?>
 
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
