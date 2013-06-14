@@ -41,7 +41,7 @@
   </div>
 </div>
 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBPYP48UMFX-s3_lrh1tRI9oLcyBM1htS4&sensor=false&language=pt" type="text/javascript"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBCqgD-rJZd7IKtu1D3nFUqM0kdrn_fOzA&sensor=false&language=pt" type="text/javascript"></script>
 <script>
 //980
   (function () {
