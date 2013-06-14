@@ -91,34 +91,9 @@ $(function(){
           	<div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
           		
           	  <div class="busca">
-          	    
-                <ul>
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == ''): ?>class="ativo"<?php endif; ?>><strong>Todos os Programas</strong></a></li>
-                  <?php
-                  //echo $section->id;
-                    $subsections = Doctrine_Query::create()
-                      ->select('s.*')
-                      ->from('Section s')
-                      ->where('s.parent_section_id = ?', (int)$section->id)
-                      ->orderBy('s.display_order')
-                      ->limit(10)
-                      ->execute();
-                                    
-                  ?>
-                  <?php foreach($subsections as $s): ?>                   
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
-                  <?php endforeach; ?>
-                  <!--
-                  <?php foreach($sites as $s): ?>
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value','<?php echo $s->id; ?>'); $('#busca-galeria').submit()" class="<?php if(isset($_REQUEST['site_id'])): ?><?php if($_REQUEST['site_id'] == $s->id): ?>ativo<?php endif; ?><?php endif; ?>"><?php echo $s->getTitle() ?></a></li>
-                  <?php endforeach; ?>
-                  -->
-                </ul>
-          	    
           	  	<form id="busca-galeria" name="busca" action="" method="post">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
           	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
-                  <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>"/>
           	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  </div>
