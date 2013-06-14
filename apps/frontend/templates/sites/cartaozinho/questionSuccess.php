@@ -28,7 +28,9 @@
   .rodape-cmais { display: none; }
   .box-interna .texto { padding-bottom:20px; min-height:400px; }
   #lista-videos .error { position:absolute; bottom:0; color:red; }
+  #lista-videos .form-contato.error,
   #lista-videos li { position:relative;  }
+  
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
