@@ -184,14 +184,16 @@
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
   
-          var exists = false;
+          var exists = -1;
+          var t = new String(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
           for(var i=0; i<markers.length; i++){
-            console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
-            if(parseFloat(markers[i].position.jb) == parseFloat(results[0].geometry.location.jb) && parseFloat(markers[i].position.kb) == parseFloat(results[0].geometry.location.kb))
+            var j = new String(markers[i].position.jb+","+markers[i].position.kb);
+            //console.log("S: "+);
+            //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
+            if(t == j)
               exists = i;
           }
-          if(!exists){
+          if(exists == -1){
             map.setCenter(results[0].geometry.location);
             //console.log(results[0].geometry.location);
             if (new_marker) new_marker.setMap(null);
