@@ -91,9 +91,9 @@
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 <p><?php echo $asset->getDescription() ?></p>
-                <br />
                 
-                <div class="texto">
+                
+                <div class="texto" style="padding-top:10px;">
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
                     <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
                   <?php else: ?>
