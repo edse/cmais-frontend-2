@@ -66,7 +66,7 @@
           <div class="wrapper">
             <div class="topo-esq"></div>
             <div class="topo">
-              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog Missão Minuto</a>
+              <a href="<?php echo $site->retriveUrl()?>" class="enunciado">Blog <?php $site->getTitle() ?></a>
             </div>      
             </div> 
             </div> 
