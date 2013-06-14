@@ -179,11 +179,11 @@
   }
 
   function codeAddress() {
+    cobertura(0);
     if(document.getElementById('address').value != ""){
       var address = document.getElementById('address').value+", Brasil";
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
-  
           var exists = -1;
           var t1 = new String($.trim(results[0].geometry.location.jb+results[0].geometry.location.kb));
           var t2 = t1.replace(".","");
@@ -211,7 +211,7 @@
                 scale: 3
               },
             });
-            
+            cobertura(1);
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
