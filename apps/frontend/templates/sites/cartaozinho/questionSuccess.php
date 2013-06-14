@@ -1,4 +1,4 @@
-<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = a.id') -> orderBy('ra.display_order') -> execute();?>
+<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', (int)$asset->id) -> orderBy('ra.display_order') -> execute();?>
 
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
@@ -17,7 +17,8 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
-  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
+  #resultado-video h2,
+  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; margin-top:0; }
   .box-interna p { margin-bottom:0 }
   .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
   #lista-videos li { width:300px;  }
@@ -27,6 +28,11 @@
   #votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color:#333; font-weight: bold; }
   .rodape-cmais { display: none; }
   .box-interna .texto { padding-bottom:20px; min-height:400px; }
+  #lista-videos label.error { position:absolute; bottom:0; color:red; }
+  #lista-videos li { position:relative; padding-bottom:20px;  }
+  .box-interna .texto p { padding:0; }
+  #resultado-video h2 { padding:20px 0 0; }
+  
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
@@ -172,7 +178,7 @@
                   <!--/LISTA-Videos-->
                   <!--RESULTADO PARCIAL-->
                   <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
+                    <h2>Resultado Parcial: </h2>
                     <!--LISTA-RESULTADO-->
                     <?php
                     for($i=0; $i<count($a); $i++): ?>
@@ -185,7 +191,7 @@
                     </li>
                     </ul> <?php endfor;?>
                     <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
+                    <h2>Agradecemos seu voto! </h2>
                   </div>
                   <!--/RESULTADO PARCIAL-->
                 </div>
