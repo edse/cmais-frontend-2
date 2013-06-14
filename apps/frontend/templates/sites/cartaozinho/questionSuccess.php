@@ -178,24 +178,34 @@
                     </div>
                   </form>
                   <!--/LISTA-Videos-->
-                  <!--RESULTADO PARCIAL-->
-                  <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
-                    <!--LISTA-RESULTADO-->
-                    <?php
-                    for($i=0; $i<count($a); $i++): ?>
-                    <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
-                    <li>
-                    <p><?php $a[$i] -> Asset -> AssetAnswer -> getAnswer();?></p> <span>00%</span>
+                   <!--RESULTADO PARCIAL-->
+              <div id="resultado-video" style="display:none;">
+               
+                <h2>Resultado Parcial: </h2>
+                
+                <!--LISTA-RESULTADO-->
+                <?php
+                for($i=0; $i<count($a); $i++):
+                  
+                ?>
+                <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
+                  <li>
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?></p> 
+                    <span>00%</span>
                     <div class="progress progress-success">
-                      <div class="bar" style="width: 40%"></div>
+                       <div class="bar" style="width: 40%"></div>
                     </div>
-                    </li>
-                    </ul> <?php endfor;?>
-                    <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
-                  </div>
-                  <!--/RESULTADO PARCIAL-->
+                  </li>
+                </ul>
+                <?php
+                endfor;
+                ?>
+                <!--/LISTA-RESULTADO-->  
+                
+                <h2>Agradecemos seu voto! ;) </h2>
+  
+              </div>  
+              <!--/RESULTADO PARCIAL-->
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
@@ -327,52 +337,53 @@
     </div>
     <!-- / CAPA SITE -->
     </div>
-
 <script>
-  //valida form votacao
-  $(document).ready(function() {
+//valida form votacao
+$(document).ready(function(){
     var validator = $('.form-votacao').validate({
-      submitHandler : function(form) {
-        sendAnswer()
-      },
-      rules : {
-        opcao : {
-          required : true
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
         }
       },
-      messages : {
-        opcao : "Escolha uma opção para votar."
+      messages:{
+        opcao: "Escolha uma opção para votar."
       }
     });
-  });
-
-<?php echo "var nome = new Array();\n";
-foreach ($a as $key => $value) {
-  $c = $value -> Asset -> AssetAnswer -> getAnswer();
-  echo "nome[" . $key . "]= '" . $c . "';\n";
+});
+<?php
+              
+echo "var nome = new Array();\n";
+foreach($a as $key=>$value){
+  $c = $value->Asset->AssetAnswer->getAnswer();
+  echo "nome[".$key."]= '".$c."';\n";
 }
+ 
 ?>
-  function sendAnswer(){
-$.ajax({
-type: "POST",
-dataType: "json",
-data: $('.form-votacao').serialize(),
-url: "<?php echo url_for('homepage')?>ajax/enquetes",
-  beforeSend: function(){
-  $('.btn-barra.votacao').hide();
-  $('#ajax-loader-b').show();
-  },
-
-  success: function(data){
-  $(".form-votacao, #ajax-loader-b").hide();
-  $("#resultado-video").fadeIn("fast");
-  var i=0;
-  $.each(data, function(key, val) {
-  $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
-  i++;
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $('.form-votacao').serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('.btn-barra.votacao').hide();
+      $('#ajax-loader-b').show();
+    },
+    
+    success: function(data){
+      $(".form-votacao, #ajax-loader-b").hide();
+      $("#resultado-video").fadeIn("fast");
+      var i=0;
+      $.each(data, function(key, val) {
+        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        i++;
+      });      
+    }
   });
-  }
-  });
-
-  }
+  
+}
 </script>
