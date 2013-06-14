@@ -197,12 +197,12 @@
             if(t3 == j3)
               exists = i;
           }
+          map.setCenter(results[0].geometry.location);
+          map.setZoom(7);
           if(exists == -1){
-            map.setCenter(results[0].geometry.location);
             //console.log(results[0].geometry.location);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
-            map.setZoom(7);
             new_marker = new google.maps.Marker({
               map: map,
               position: results[0].geometry.location,
@@ -223,7 +223,6 @@
             mks = google.maps.Map.prototype.getMarkers();
             //console.log(">>>"+exists);
             //console.log(mks[exists]);
-            map.setZoom(7);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
