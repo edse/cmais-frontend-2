@@ -345,7 +345,9 @@ url: "<?php echo url_for('homepage')?>ajax/enquetes",
   $("#resultado-video").fadeIn("fast");
   var i=0;
   $.each(data, function(key, val) {
-  $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+    console.log(i+nome);
+    //nome[i]
+  $('.parcial-'+i).html("<li><p>"+val.answer+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
   i++;
   });
   }
