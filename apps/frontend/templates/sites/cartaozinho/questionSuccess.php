@@ -129,6 +129,7 @@
                 <div class="texto">
                   <!--LISTA-Videos-->
               <div id="votacao-video">
+              	<?php echo $asset->AssetAnswer->getAnswer(); ?>
                 <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
                 $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
 
