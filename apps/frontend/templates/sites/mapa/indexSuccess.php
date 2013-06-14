@@ -174,7 +174,7 @@
           var exists = false;
           for(var i=0; i<markers.length; i++){
             console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            console.log("B: "+markers[i].position.jb+","+markers[i].position.location.kb);
+            console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
             if(markers[i].position.equals(results[0].geometry.location))
               exists = i;
           }
