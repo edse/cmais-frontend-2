@@ -118,7 +118,6 @@ $(function(){
           	  	<form id="busca-galeria" name="busca" action="" method="post">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
           	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
-                  <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>"/>
           	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  </div>
