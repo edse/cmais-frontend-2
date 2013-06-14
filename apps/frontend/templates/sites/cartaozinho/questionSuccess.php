@@ -28,7 +28,6 @@
 <script type="text/javascript" src="/js/audioplayer/jplayer_min.js"></script>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script src="/portal/js/jquery-1.5.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 
 
