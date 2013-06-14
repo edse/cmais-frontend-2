@@ -138,47 +138,43 @@
                 </div>
                 
                 <div class="texto">
-                  <!--LISTA-Videos-->
-              <div id="votacao-video">
-                <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
-                $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
+                  <!--VOTACAO Video-->
+            <div id="votacao-video">
+              
+              <!--LISTA-Videos-->
+              <form method="post" id="e<?php echo $asset->getId()?>" class="form-votacao">
+                <h2><?php echo $asset->AssetQuestion->getQuestion();?></h2>
+                <ul id="lista-videos">
+                  <?php 
+                  for($i=0; $i<count($a); $i++):
+                    $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+                  ?>
+                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+                    <label for="opcao-<?php echo $i; ?>">
+                      <?php echo ($i+1)." - ". $opcao?>
+                    </label>
+                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
+                  </li>
+                  <?php endfor;?>
+                </ul>
 
-                <?php if(count($verifica_video) > 0): ?>
-                <!--LISTA-Videos-->
-                <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                  <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
-                  <ul id="lista-videos">
-                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
-                    <li><iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0] -> AssetVideo -> getYoutubeId();?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
-                    <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
-                    <?php };?>
-                  </ul>
-                  <?php endif;?>
-
-                  <?php if(count($verifica_imagem) > 0): ?>
-                  <!--LISTA-Videos-->
-                  <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                    <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
-                    <ul id="lista-videos">
-                      <?php for($i=0; $i<count($a); $i++){ $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
-                      <li><img src="<?php echo $img[0] -> retriveImageUrlByImageUsage('image-3-b');?>" >
-                      <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
-                      <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
-                      <?php };?>
-                    </ul>
-                    <?php endif;?>
-
-                    <div class="votacao">
-                      <input id="votar" type="submit" value="votar" />
-                      <div id="enviando-voto" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
-                        Registrando voto, aguarde um momentinho...
-                      </div>
+                <div class="btn-barra votacao">
+                    <span class="pontaBarra"></span>
+                    <input id="votar" type="submit" value="votar" />
+                    <span class="caudaBarra"></span>
+                    <div id="enviando-voto" align="center"style="display:none">
+                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                      Registrando voto, aguarde um momentinho...
                     </div>
-                  </form>
-                  <!--/LISTA-Videos-->
-                   <!--RESULTADO PARCIAL-->
+                </div>
+                
+              </form>
+              <!--/LISTA-Videos-->
+            
+                
+              <!--RESULTADO PARCIAL-->
               <div id="resultado-video" style="display:none;">
                
                 <h2>Resultado Parcial: </h2>
@@ -206,6 +202,10 @@
   
               </div>  
               <!--/RESULTADO PARCIAL-->
+  
+              <span class="picote"></span>
+            
+            </div>  
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
