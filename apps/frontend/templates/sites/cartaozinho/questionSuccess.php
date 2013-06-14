@@ -21,6 +21,7 @@
   .box-interna p { margin-bottom:0 }
   .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
   #lista-videos li { width:300px;  }
+  #lista-videos { margin-left:5px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
