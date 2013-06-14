@@ -5,7 +5,7 @@
 #capa-site h1{text-align: left; margin-top: 40px; font-size: 24px; margin-bottom: 20px;}
 #form-map{float: left;width:540px;}
 .lista-calendario .barra-grade .tit {width: 95%;padding: 0 10px;}
-.lista-calendario .mapa{width:100%; height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
+.lista-calendario .mapa{height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
 .lista-calendario .toggle{width:100%;}
 .lista-calendario .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
 .lista-calendario #enviar{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
@@ -21,7 +21,7 @@
       teste de conteudo
     </div>
     
-    <div id="map_canvas" class="mapa">
+    <div id="map-canvas" class="mapa">
       <form id="form-map" action="" method="post">
         <input type="text" name="" class="search-map">
         <input type="submit" id="enviar" value=""/>
@@ -164,7 +164,6 @@
       //
       $("#id").val(id);
       $("#city").val(name);
-      editor.setData(content);
       $("#coords").val(pos.jb+","+pos.kb);
       $('#remove').show();
       $('#form1').hide();
@@ -191,9 +190,6 @@
             $('#form2').show();
             $("#city").val(document.getElementById('address').value);
             $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            //$("#info").focus();
-            //CKEDITOR.instances.txtComment.focus();
-            editor.focus();
             map.setCenter(results[0].geometry.location);
             console.log(results[0].geometry.location);
             new_marker = new google.maps.Marker({
@@ -234,7 +230,6 @@
     $("#city").val("");
     $("#coords").val("");
     //$("#info").val("");
-    editor.setData("");
     $("#id").val("");
   }
 
