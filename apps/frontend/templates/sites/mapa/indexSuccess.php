@@ -154,7 +154,7 @@
       $('.barra-grade').removeClass('escura');
     }
   }
-  cobertura(1)
+
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
