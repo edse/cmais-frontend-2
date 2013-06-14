@@ -201,7 +201,7 @@
                 position: results[0].geometry.location,
                 icon: {
                   path: google.maps.SymbolPath.CIRCLE,
-                  scale: 10
+                  scale: 3
                 },
             });
           }else{
@@ -215,6 +215,7 @@
             mks = google.maps.Map.prototype.getMarkers();
             console.log(">>>"+exists);
             console.log(mks[exists]);
+            map.setZoom(16);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
