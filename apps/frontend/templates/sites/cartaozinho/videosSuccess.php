@@ -83,7 +83,7 @@ $(function(){
           <div id="menu-rodape" class="grid3">
           	
           	<ul class="abas">
-          	  <li class="neutro"><a href="videos">Todos os V&iacute;deos</a><span></span></li>
+          	  <li class="neutro"><a href="javascript:;">Todos os V&iacute;deos</a><span></span></li>
           	  <!-- li class="vistos"><a title="+ Vistos" href="#vistos">+ Vistos</a><span class="decoracao"></span></li -->
           	  <!--li class="recentes"><a title="+ Recentes" href="#recentes">+ Recentes</a><span class="decoracao"></span></li-->
           	</ul>
@@ -93,7 +93,7 @@ $(function(){
           	  <div class="busca">
           	    
                 <ul>
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == ''): ?>class="ativo"<?php endif; ?>><strong>Todos os Programas</strong></a></li>
+                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == ''): ?>class="ativo"<?php endif; ?>><strong>Todos</strong></a></li>
                   <?php
                   //echo $section->id;
                     $subsections = Doctrine_Query::create()
