@@ -173,10 +173,6 @@
       $('#form2').show();
     });
     */
-    var ib = new google.maps.InfoWindow(myOptions);
-    google.maps.event.addListener(marker, "click", function (e) {
-      ib.open(map, this);  // change the map variable appropriately
-    });
 
     return marker;
   }
