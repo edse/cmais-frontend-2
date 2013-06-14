@@ -113,6 +113,8 @@
     for(var i=0; i<markers.length; i++){
       map.addMarker(createMarker(markers[i].id, markers[i].name, markers[i].content, markers[i].position));
     }
+    
+    $("#address").focus();
 
     /*
     // Try HTML5 geolocation
@@ -143,6 +145,17 @@
     // Try HTML5 geolocation
     */
   }
+  
+  function cobertura(num){
+    if(num==1){
+      $('.grade.toggle').slideDown("slow");
+      $('.barra-grade').addClass('escura');
+    }
+    if(num==0){
+      $('.grade.toggle').slideUp("slow");
+      $('.barra-grade').removeClass('escura');
+    }
+  }
 
   function createMarker(id, name, content, pos) {
     console.log('content:');
@@ -171,41 +184,41 @@
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
   
-          var exists = false;
+          var exists = -1;
+          var t = new String(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
           for(var i=0; i<markers.length; i++){
-            if(markers[i].position.equals(results[0].geometry.location))
+            var j = new String(markers[i].position.jb+","+markers[i].position.kb);
+            console.log('"'+t+'" == "'+j+'"');
+            //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
+            if(t == j)
               exists = i;
           }
-  
-          if(!exists){
-            $('#form1').hide();
-            $('#form2').show();
-            $("#city").val(document.getElementById('address').value);
-            $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
+          if(exists == -1){
             map.setCenter(results[0].geometry.location);
-            console.log(results[0].geometry.location);
+            //console.log(results[0].geometry.location);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
             map.setZoom(7);
             new_marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location,
-                icon: {
-                  path: google.maps.SymbolPath.CIRCLE,
-                  scale: 3
-                },
+              map: map,
+              position: results[0].geometry.location,
+              icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 3
+              },
             });
+            
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
             console.log(exists);
-            console.log(markers[exists].content);
-            console.log(markers[exists]);
+            //console.log(markers[exists].content);
+            //console.log(markers[exists]);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
             mks = google.maps.Map.prototype.getMarkers();
-            console.log(">>>"+exists);
-            console.log(mks[exists]);
+            //console.log(">>>"+exists);
+            //console.log(mks[exists]);
             map.setZoom(7);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
@@ -228,8 +241,9 @@
       return false;
     }
   });
-
+   
   $("#search").click(function() {
     codeAddress();
   });
+
 </script>

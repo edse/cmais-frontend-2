@@ -17,7 +17,8 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
-  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
+  #resultado-video h2,
+  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; margin-top:0; }
   .box-interna p { margin-bottom:0 }
   .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
   #lista-videos li { width:300px;  }
@@ -27,8 +28,14 @@
   #votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color:#333; font-weight: bold; }
   .rodape-cmais { display: none; }
   .box-interna .texto { padding-bottom:20px; min-height:400px; }
-  #lista-videos .error { position:absolute; bottom:0; color:red; }
-  #lista-videos li { position:relative;  }
+  #lista-videos label.error { position:absolute; bottom:0; color:red; }
+  #lista-videos li { position:relative; padding-bottom:20px;  }
+  .box-interna .texto p { padding:0; }
+  #resultado-video h2 { padding:20px 0 0; }
+  #lista-videos input { margin-left:1px; }
+  #lista-videos { *margin-left:0 }
+  .box-interna h3 { *height:28px; *line-height: 28px; }
+  
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
