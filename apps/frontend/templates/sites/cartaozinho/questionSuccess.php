@@ -34,7 +34,7 @@
   #resultado-video h2 { padding:20px 0 0; }
   #lista-videos input { margin-left:1px; }
   #lista-videos { *margin-left:0 }
-  .box-interna h3 { height:24px; line-height: 24px; }
+  .box-interna h3 { *height:28px; *line-height: 28px; }
   
 </style>
 
