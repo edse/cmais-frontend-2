@@ -143,7 +143,14 @@
     // Try HTML5 geolocation
     */
   }
-
+  
+  function cobertura(num){
+    if(num==1){
+      $('.grade.toggle').toggle();
+      $('.barra-grade').toggleClass('escura');
+    }
+  }
+  
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
@@ -228,8 +235,9 @@
       return false;
     }
   });
-
+   
   $("#search").click(function() {
     codeAddress();
   });
+  cobertura(1)
 </script>
