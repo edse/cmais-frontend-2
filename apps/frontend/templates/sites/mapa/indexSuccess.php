@@ -146,8 +146,12 @@
   
   function cobertura(num){
     if(num==1){
-      $('.grade.toggle').toggle();
-      $('.barra-grade').toggleClass('escura');
+      $('.grade.toggle').slideDown("slow");
+      $('.barra-grade').addClass('escura');
+    }
+    if(num==0){
+      $('.grade.toggle').slideUp("slow");
+      $('.barra-grade').removeClass('escura');
     }
   }
   cobertura(1)
