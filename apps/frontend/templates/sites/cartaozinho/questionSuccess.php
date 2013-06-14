@@ -179,7 +179,7 @@
                   <!--/LISTA-Videos-->
                   <!--RESULTADO PARCIAL-->
                   <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
+                    <h2>Resultado Parcial: </h2>
                     <!--LISTA-RESULTADO-->
                     <?php
                     for($i=0; $i<count($a); $i++): ?>
