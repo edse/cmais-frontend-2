@@ -403,7 +403,7 @@ class _sectionActions extends sfActions
           }
           else if(($this->section->slug == "videos")||($this->section->slug == "dica-de-hoje")){
             if(($request->getParameter('site_id') <= 0)&&($request->getParameter('busca') == '')){
-              if(in_array($this->site->getSlug(), array("penarua","cartaozinho"))){
+              if($this->site->getSlug() == "penarua"){
                 $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -603,7 +603,7 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-          if($this->site->getSlug() == "penarua"){
+          if(in_array($this->site->getSlug(), array("penarua","cartaozinho"))){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
               ->from('Asset a, SectionAsset sa')
