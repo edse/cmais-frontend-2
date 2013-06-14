@@ -91,7 +91,7 @@ $(function(){
           	  <div class="busca">
           	    
                 <ul>
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == ''): ?>class="ativo"<?php endif; ?>><strong>Todos</strong></a></li>
+                  <!--li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == ''): ?>class="ativo"<?php endif; ?>><strong>Todos</strong></a></li-->
                   <?php
                   //echo $section->id;
                     $subsections = Doctrine_Query::create()
