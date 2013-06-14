@@ -23,7 +23,7 @@
     
     <form id="form-map" action="" method="post">
       <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
-      <input type="button" id="search" name="search" value="Procurar" />
+      <input type="button" id="search" name="search" value="" />
     </form>  
 
     <div id="map-canvas" class="mapa"></div>
@@ -158,21 +158,12 @@
       icon: image
     });
 
-    /*
     google.maps.event.addListener(marker, "click", function() {
       if (new_marker) new_marker.setMap(null);
       if (infowindow) infowindow.close();
       infowindow = new google.maps.InfoWindow({content: content});
       infowindow.open(map, marker);
-      //
-      $("#id").val(id);
-      $("#city").val(name);
-      $("#coords").val(pos.jb+","+pos.kb);
-      $('#remove').show();
-      $('#form1').hide();
-      $('#form2').show();
     });
-    */
 
     return marker;
   }
