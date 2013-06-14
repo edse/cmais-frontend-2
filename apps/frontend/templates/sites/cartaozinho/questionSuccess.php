@@ -17,6 +17,10 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
+  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; }
+  .box-interna p { margin-bottom:0 }
+  .box-interna .texto img { padding:0; width:300px;  }
+  #lista-videos li { width:300px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
