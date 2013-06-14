@@ -615,7 +615,11 @@ class _sectionActions extends sfActions
               $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
             else
               $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
-            $this->assetsQuery->orderBy('sa.display_order');
+            
+            if($this->site->getSlug() == "penarua") 
+              $this->assetsQuery->orderBy('sa.display_order');
+            else
+              $this->assetsQuery->orderBy('a.id desc');
           }
           else if (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
             
