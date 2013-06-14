@@ -1,4 +1,4 @@
-<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 123494) -> orderBy('ra.display_order') -> execute();?>
+<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', (int)$asset->id) -> orderBy('ra.display_order') -> execute();?>
 
 <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
