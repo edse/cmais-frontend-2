@@ -8,7 +8,7 @@
 .lista-calendario .mapa{height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
 .lista-calendario .toggle{width:100%;}
 .lista-calendario .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
-.lista-calendario #enviar{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
+.lista-calendario #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
 <div id="capa-site">
   <h1>TV Cultura - Mapa de Cobertura</h1>
@@ -23,7 +23,7 @@
     
     <form id="form-map" action="" method="post">
       <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
-      <input type="button" id="enviar" value="" />
+      <input type="button" id="search" value="" />
     </form>  
 
     <div id="map-canvas" class="mapa"></div>
