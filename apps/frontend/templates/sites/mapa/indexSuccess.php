@@ -199,12 +199,13 @@
                 position: results[0].geometry.location,
                 icon: {
                   path: google.maps.SymbolPath.CIRCLE,
-                  scale: 5
+                  scale: 3
                 },
             });
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
+            console.log(markers[exists].content);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
