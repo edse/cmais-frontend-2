@@ -114,7 +114,7 @@
       map.addMarker(createMarker(markers[i].id, markers[i].name, markers[i].content, markers[i].position));
     }
     
-    $("#search").focus();
+    $("#address").focus();
 
     /*
     // Try HTML5 geolocation
@@ -179,24 +179,30 @@
   }
 
   function codeAddress() {
+    cobertura(0);
     if(document.getElementById('address').value != ""){
       var address = document.getElementById('address').value+", Brasil";
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
-  
-          var exists = false;
+          var exists = -1;
+          var t1 = new String($.trim(results[0].geometry.location.jb+results[0].geometry.location.kb));
+          var t2 = t1.replace(".","");
+          var t3 = t2.replace("-","");
           for(var i=0; i<markers.length; i++){
-            console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
-            if(parseFloat(markers[i].position.jb) == parseFloat(results[0].geometry.location.jb) && parseFloat(markers[i].position.kb) == parseFloat(results[0].geometry.location.kb))
+            var j1 = new String($.trim(markers[i].position.jb+markers[i].position.kb));
+            var j2 = j1.replace(".","");
+            var j3 = j2.replace("-","");
+            console.log('"'+t3+'" == "'+j3+'"');
+            //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
+            if(t3 == j3)
               exists = i;
           }
-          if(!exists){
-            map.setCenter(results[0].geometry.location);
+          map.setCenter(results[0].geometry.location);
+          map.setZoom(7);
+          if(exists == -1){
             //console.log(results[0].geometry.location);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
-            map.setZoom(7);
             new_marker = new google.maps.Marker({
               map: map,
               position: results[0].geometry.location,
@@ -205,7 +211,7 @@
                 scale: 3
               },
             });
-            
+            cobertura(1);
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
@@ -217,7 +223,6 @@
             mks = google.maps.Map.prototype.getMarkers();
             //console.log(">>>"+exists);
             //console.log(mks[exists]);
-            map.setZoom(7);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
