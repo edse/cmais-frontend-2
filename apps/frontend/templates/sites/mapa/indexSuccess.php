@@ -185,12 +185,16 @@
         if (status == google.maps.GeocoderStatus.OK) {
   
           var exists = -1;
-          var t = new String(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
+          var t1 = new String($.trim(results[0].geometry.location.jb+results[0].geometry.location.kb));
+          var t2 = t1.replace(".","");
+          var t3 = t2.replace("-","");
           for(var i=0; i<markers.length; i++){
-            var j = new String(markers[i].position.jb+","+markers[i].position.kb);
-            console.log('"'+t+'" == "'+j+'"');
+            var j1 = new String($.trim(markers[i].position.jb+","+markers[i].position.kb));
+            var j2 = j1.replace(".","");
+            var j3 = j2.replace("-","");
+            console.log('"'+t3+'" == "'+j3+'"');
             //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
-            if(t == j)
+            if(t3 == j3)
               exists = i;
           }
           if(exists == -1){
