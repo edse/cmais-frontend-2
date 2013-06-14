@@ -1,10 +1,10 @@
-<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', 124025) -> orderBy('ra.display_order') -> execute();?>
+<?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = a.id') -> orderBy('ra.display_order') -> execute();?>
 
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
   #menu-portal-2 h1 {    margin: 0;  }
   #menu-portal-2 .busca-portal input {    margin: 0 !important;    -moz-transition: none;    box-shadow: none;  }
-  #menu-portal-2 ul.abas {    margin: 0 !important;  }
+  #menu-portal-2 ul.abas {    margin: 0 !important;  } 
   #lista-videos {    width: 100%;    overflow: hidden;    margin: 0;  }
   #lista-videos li {    width: 310px;    float: left;    list-style: none;    margin: 0 10px 0 0;  }
   #lista-videos li iframe {    margin-bottom: 5px;  }
