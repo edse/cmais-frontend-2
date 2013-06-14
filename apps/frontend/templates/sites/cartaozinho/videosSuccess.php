@@ -139,9 +139,12 @@ $(function(){
           	  </div>
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
+          	  	<?php /*
 				<script type='text/javascript'>
 				GA_googleFillSlot("maiscrianca");
 				</script>
+                 * 
+                 */?>
 		      </div>
           	  
           	  <!--div id="recentes" class="filho blocos" style="display:none;">
