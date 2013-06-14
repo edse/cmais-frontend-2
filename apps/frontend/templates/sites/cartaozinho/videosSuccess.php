@@ -83,9 +83,7 @@ $(function(){
           <div id="menu-rodape" class="grid3">
           	
           	<ul class="abas">
-          	  <li class="neutro"><a href="javascript:;">Todos os V&iacute;deos</a><span></span></li>
-          	  <!-- li class="vistos"><a title="+ Vistos" href="#vistos">+ Vistos</a><span class="decoracao"></span></li -->
-          	  <!--li class="recentes"><a title="+ Recentes" href="#recentes">+ Recentes</a><span class="decoracao"></span></li-->
+          	  <li class="neutro"><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()">Todos os V&iacute;deos</a><span></span></li>
           	</ul>
           	
           	<div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
@@ -108,11 +106,6 @@ $(function(){
                   <?php foreach($subsections as $s): ?>                   
                   <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
                   <?php endforeach; ?>
-                  <!--
-                  <?php foreach($sites as $s): ?>
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value','<?php echo $s->id; ?>'); $('#busca-galeria').submit()" class="<?php if(isset($_REQUEST['site_id'])): ?><?php if($_REQUEST['site_id'] == $s->id): ?>ativo<?php endif; ?><?php endif; ?>"><?php echo $s->getTitle() ?></a></li>
-                  <?php endforeach; ?>
-                  -->
                 </ul>
           	    
           	  	<form id="busca-galeria" name="busca" action="" method="post">
@@ -137,15 +130,12 @@ $(function(){
           	      </ul>
           	    </div>
           	  </div>
-          	  <?php /*
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
-				<script type='text/javascript'>
-				GA_googleFillSlot("maiscrianca");
-				</script>
-		      </div>
-               */ ?>
-          	  
+        				<script type='text/javascript'>
+        				GA_googleFillSlot("maiscrianca");
+        				</script>
+    		      </div>
           	 
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
@@ -167,7 +157,7 @@ $(function(){
           	      <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
           	    </div>
           	  </div>
-          <!-- PAGINACAO -->
+              <!-- PAGINACAO -->
               <form id="page_form" action="" method="post">
                 <input type="hidden" name="return_url" value="<?php echo $url ?>" />
                 <input type="hidden" name="page" id="page" value="" />
@@ -180,7 +170,7 @@ $(function(){
                   $("#page_form").submit();
                 }
               </script>
-          <!-- PAGINACAO -->
+              <!-- PAGINACAO -->
 		        <?php endif; ?>
 		      <?php endif; ?>
 		     
