@@ -159,8 +159,8 @@
   }
 
   function createMarker(id, name, content, pos) {
-    console.log('content:');
-    console.log(id);
+    //console.log('content:');
+    //console.log(id);
 
     var marker = new google.maps.Marker({
       position: pos,
@@ -193,7 +193,7 @@
             var j1 = new String($.trim(markers[i].position.jb+markers[i].position.kb));
             var j2 = j1.replace(".","");
             var j3 = j2.replace("-","");
-            console.log('"'+t3+'" == "'+j3+'"');
+            //console.log('"'+t3+'" == "'+j3+'"');
             //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
             if(t3 == j3)
               exists = i;
@@ -216,7 +216,7 @@
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
-            console.log(exists);
+            //console.log(exists);
             //console.log(markers[exists].content);
             //console.log(markers[exists]);
             if (new_marker) new_marker.setMap(null);
