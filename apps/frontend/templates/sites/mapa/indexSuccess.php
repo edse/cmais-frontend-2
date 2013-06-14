@@ -143,7 +143,14 @@
     // Try HTML5 geolocation
     */
   }
-
+  
+  function cobertura(num){
+    if(num==1){
+      $('.grade.toggle').toggle();
+      $('.barra-grade').toggleClass('escura');
+    }
+  }
+  cobertura(1)
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
@@ -173,39 +180,36 @@
   
           var exists = false;
           for(var i=0; i<markers.length; i++){
-            if(markers[i].position.equals(results[0].geometry.location))
+            //console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
+            //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
+            if(markers[i].position.jb == results[0].geometry.location.jb && markers[i].position.kb == results[0].geometry.location.kb)
               exists = i;
           }
-  
           if(!exists){
-            $('#form1').hide();
-            $('#form2').show();
-            $("#city").val(document.getElementById('address').value);
-            $("#coords").val(results[0].geometry.location.jb+","+results[0].geometry.location.kb);
             map.setCenter(results[0].geometry.location);
-            console.log(results[0].geometry.location);
+            //console.log(results[0].geometry.location);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
             map.setZoom(7);
             new_marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location,
-                icon: {
-                  path: google.maps.SymbolPath.CIRCLE,
-                  scale: 3
-                },
+              map: map,
+              position: results[0].geometry.location,
+              icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 3
+              },
             });
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
             console.log(exists);
-            console.log(markers[exists].content);
-            console.log(markers[exists]);
+            //console.log(markers[exists].content);
+            //console.log(markers[exists]);
             if (new_marker) new_marker.setMap(null);
             if (infowindow) infowindow.close();
             mks = google.maps.Map.prototype.getMarkers();
-            console.log(">>>"+exists);
-            console.log(mks[exists]);
+            //console.log(">>>"+exists);
+            //console.log(mks[exists]);
             map.setZoom(7);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
@@ -228,8 +232,9 @@
       return false;
     }
   });
-
+   
   $("#search").click(function() {
     codeAddress();
   });
+
 </script>
