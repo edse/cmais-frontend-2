@@ -177,24 +177,34 @@
                     </div>
                   </form>
                   <!--/LISTA-Videos-->
-                  <!--RESULTADO PARCIAL-->
-                  <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
-                    <!--LISTA-RESULTADO-->
-                    <?php
-                    for($i=0; $i<count($a); $i++): ?>
-                    <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
-                    <li>
-                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer();?></p><span>00%</span>
+                   <!--RESULTADO PARCIAL-->
+              <div id="resultado-video" style="display:none;">
+               
+                <h2>Resultado Parcial: </h2>
+                
+                <!--LISTA-RESULTADO-->
+                <?php
+                for($i=0; $i<count($a); $i++):
+                  
+                ?>
+                <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
+                  <li>
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?></p> 
+                    <span>00%</span>
                     <div class="progress progress-success">
-                      <div class="bar" style="width: 40%"></div>
+                       <div class="bar" style="width: 40%"></div>
                     </div>
-                    </li>
-                    </ul> <?php endfor;?>
-                    <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
-                  </div>
-                  <!--/RESULTADO PARCIAL-->
+                  </li>
+                </ul>
+                <?php
+                endfor;
+                ?>
+                <!--/LISTA-RESULTADO-->  
+                
+                <h2>Agradecemos seu voto! ;) </h2>
+  
+              </div>  
+              <!--/RESULTADO PARCIAL-->
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
