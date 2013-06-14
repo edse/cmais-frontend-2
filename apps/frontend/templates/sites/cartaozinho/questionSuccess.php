@@ -31,7 +31,7 @@
   #lista-videos label.error { position:absolute; bottom:0; color:red; }
   #lista-videos li { position:relative; padding-bottom:20px;  }
   .box-interna .texto p { padding:0; }
-  #resultado-video h2 { padding:0; }
+  #resultado-video h2 { padding:20px 0 0; }
   
 </style>
 
