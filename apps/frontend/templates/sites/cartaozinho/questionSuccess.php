@@ -17,6 +17,13 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
+  .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
+  .box-interna p { margin-bottom:0 }
+  .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
+  #lista-videos li { width:300px;  }
+  #lista-videos { margin-left:5px; }
+  #lista-videos .form-contato { margin-right:5px; }
+  .box-compartilhar { margin-left:-10px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
@@ -131,64 +138,74 @@
                 </div>
                 
                 <div class="texto">
-                  <!--LISTA-Videos-->
-              <div id="votacao-video">
-                <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
-                $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
+                  <!--VOTACAO Video-->
+            <div id="votacao-video">
+              
+              <!--LISTA-Videos-->
+              <form method="post" id="e<?php echo $asset->getId()?>" class="form-votacao">
+                <h2><?php echo $asset->AssetQuestion->getQuestion();?></h2>
+                <ul id="lista-videos">
+                  <?php 
+                  for($i=0; $i<count($a); $i++):
+                    $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+                    $opcao = $a[$i]->Asset->AssetAnswer->getAnswer();
+                  ?>
+                  <li style="float:<?php if(($i%2 == 0) == 0): echo "right;"; else: echo "left;"; endif;?>">
+                    <input type="radio" name="opcao" id="opcao-<?php echo $i; ?>" class="form-contato" value="<?php echo $a[$i]->Asset->AssetAnswer->id; ?>"  />
+                    <label for="opcao-<?php echo $i; ?>">
+                      <?php echo ($i+1)." - ". $opcao?>
+                    </label>
+                    <iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>                    
+                  </li>
+                  <?php endfor;?>
+                </ul>
 
-                <?php if(count($verifica_video) > 0): ?>
-                <!--LISTA-Videos-->
-                <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                  <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
-                  <ul id="lista-videos">
-                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
-                    <li><iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0] -> AssetVideo -> getYoutubeId();?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
-                    <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
-                    <?php };?>
-                  </ul>
-                  <?php endif;?>
-
-                  <?php if(count($verifica_imagem) > 0): ?>
-                  <!--LISTA-Videos-->
-                  <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
-                    <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
-                    <ul id="lista-videos">
-                      <?php for($i=0; $i<count($a); $i++){ $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
-                      <li><img src="<?php echo $img[0] -> retriveImageUrlByImageUsage('image-3-b');?>" >
-                      <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
-                      <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
-                      <?php };?>
-                    </ul>
-                    <?php endif;?>
-
-                    <div class="votacao">
-                      <input id="votar" type="submit" value="votar" />
-                      <div id="enviando-voto" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
-                        Registrando voto, aguarde um momentinho...
-                      </div>
+                <div class="btn-barra votacao">
+                    <span class="pontaBarra"></span>
+                    <input id="votar" type="submit" value="votar" />
+                    <span class="caudaBarra"></span>
+                    <div id="enviando-voto" align="center"style="display:none">
+                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                      Registrando voto, aguarde um momentinho...
                     </div>
-                  </form>
-                  <!--/LISTA-Videos-->
-                  <!--RESULTADO PARCIAL-->
-                  <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
-                    <!--LISTA-RESULTADO-->
-                    <?php
-                    for($i=0; $i<count($a); $i++): ?>
-                    <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
-                    <li>
-                    <p><?php $a[$i] -> Asset -> AssetAnswer -> getAnswer();?></p> <span>00%</span>
+                </div>
+                
+              </form>
+              <!--/LISTA-Videos-->
+            
+                
+              <!--RESULTADO PARCIAL-->
+              <div id="resultado-video" style="display:none;">
+               
+                <h2>Resultado Parcial: </h2>
+                
+                <!--LISTA-RESULTADO-->
+                <?php
+                for($i=0; $i<count($a); $i++):
+                  
+                ?>
+                <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
+                  <li>
+                    <p><?php $a[$i]->Asset->AssetAnswer->getAnswer(); ?></p> 
+                    <span>00%</span>
                     <div class="progress progress-success">
-                      <div class="bar" style="width: 40%"></div>
+                       <div class="bar" style="width: 40%"></div>
                     </div>
-                    </li>
-                    </ul> <?php endfor;?>
-                    <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
-                  </div>
-                  <!--/RESULTADO PARCIAL-->
+                  </li>
+                </ul>
+                <?php
+                endfor;
+                ?>
+                <!--/LISTA-RESULTADO-->  
+                
+                <h2>Agradecemos seu voto! ;) </h2>
+  
+              </div>  
+              <!--/RESULTADO PARCIAL-->
+  
+              <span class="picote"></span>
+            
+            </div>  
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
@@ -222,8 +239,9 @@
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
               </div>
-              <!-- /NOTICIA INTERNA -->
-              
+              <!-- /texto -->
+              </div>
+              <!-- NOTICIA INTERNA -->
             </div>
             <!-- /ESQUERDA -->
             
@@ -310,10 +328,8 @@
             <!-- /DIREITA -->
 
             </div>
-            <!-- /DIREITA -->
+            <!-- /CAPA -->
           </div>
-          <!-- /CAPA -->
-        </div>
         <!-- /CONTEUDO PAGINA -->
 
       </div>
@@ -321,52 +337,53 @@
     </div>
     <!-- / CAPA SITE -->
     </div>
-
 <script>
-  //valida form votacao
-  $(document).ready(function() {
+//valida form votacao
+$(document).ready(function(){
     var validator = $('.form-votacao').validate({
-      submitHandler : function(form) {
-        sendAnswer()
-      },
-      rules : {
-        opcao : {
-          required : true
+    submitHandler: function(form){
+      sendAnswer()
+    },
+    rules:{
+        opcao:{
+          required: true
         }
       },
-      messages : {
-        opcao : "Escolha uma opção para votar."
+      messages:{
+        opcao: "Escolha uma opção para votar."
       }
     });
-  });
-
-<?php echo "var nome = new Array();\n";
-foreach ($a as $key => $value) {
-  $c = $value -> Asset -> AssetAnswer -> getAnswer();
-  echo "nome[" . $key . "]= '" . $c . "';\n";
+});
+<?php
+              
+echo "var nome = new Array();\n";
+foreach($a as $key=>$value){
+  $c = $value->Asset->AssetAnswer->getAnswer();
+  echo "nome[".$key."]= '".$c."';\n";
 }
+ 
 ?>
-  function sendAnswer(){
-$.ajax({
-type: "POST",
-dataType: "json",
-data: $('.form-votacao').serialize(),
-url: "<?php echo url_for('homepage')?>ajax/enquetes",
-  beforeSend: function(){
-  $('.btn-barra.votacao').hide();
-  $('#ajax-loader-b').show();
-  },
-
-  success: function(data){
-  $(".form-votacao, #ajax-loader-b").hide();
-  $("#resultado-video").fadeIn("fast");
-  var i=0;
-  $.each(data, function(key, val) {
-  $('.parcial-'+i).html("<li><p>"+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
-  i++;
+function sendAnswer(){
+  $.ajax({
+    type: "POST",
+    dataType: "json",
+    data: $('.form-votacao').serialize(),
+    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    beforeSend: function(){
+      $('.btn-barra.votacao').hide();
+      $('#ajax-loader-b').show();
+    },
+    
+    success: function(data){
+      $(".form-votacao, #ajax-loader-b").hide();
+      $("#resultado-video").fadeIn("fast");
+      var i=0;
+      $.each(data, function(key, val) {
+        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        i++;
+      });      
+    }
   });
-  }
-  });
-
-  }
+  
+}
 </script>
