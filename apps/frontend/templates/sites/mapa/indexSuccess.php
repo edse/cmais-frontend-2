@@ -215,7 +215,7 @@
             mks = google.maps.Map.prototype.getMarkers();
             console.log(">>>"+exists);
             console.log(mks[exists]);
-            map.setZoom(16);
+            map.setZoom(8);
             infowindow = new google.maps.InfoWindow({content: markers[exists].content});
             infowindow.open(map, mks[exists]);
           }
