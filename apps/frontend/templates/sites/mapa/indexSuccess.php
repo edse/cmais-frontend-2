@@ -21,12 +21,13 @@
       teste de conteudo
     </div>
     
-    <div id="map-canvas" class="mapa">
-      <form id="form-map" action="" method="post">
-        <input type="text" name="" class="search-map">
-        <input type="submit" id="enviar" value=""/>
-      </form>  
-    </div>  
+    <form id="form-map" action="" method="post">
+      <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
+      <input type="submit" id="enviar" value="" />
+    </form>  
+
+    <div id="map-canvas" class="mapa"></div>
+      
   </div>
 </div>
 
@@ -65,7 +66,7 @@
   })();
 
   // Define Marker properties
-  var image = new google.maps.MarkerImage('/images/marker.png',
+  var image = new google.maps.MarkerImage('/portal/images/marker.png',
     // This marker is 129 pixels wide by 42 pixels tall.
     new google.maps.Size(36, 30),
     // The origin for this image is 0,0.
@@ -153,9 +154,11 @@
     var marker = new google.maps.Marker({
       position: pos,
       map: map,
-      title: name/*,
-      icon: image*/
+      title: name,
+      icon: image
     });
+
+    /*
     google.maps.event.addListener(marker, "click", function() {
       if (new_marker) new_marker.setMap(null);
       if (infowindow) infowindow.close();
@@ -169,6 +172,7 @@
       $('#form1').hide();
       $('#form2').show();
     });
+    */
 
     return marker;
   }
@@ -182,7 +186,7 @@
           var exists = false;
           for(var i=0; i<markers.length; i++){
             if(markers[i].position.equals(results[0].geometry.location))
-              exists = true;
+              exists = i;
           }
   
           if(!exists){
@@ -197,12 +201,22 @@
                 position: results[0].geometry.location,
                 icon: {
                   path: google.maps.SymbolPath.CIRCLE,
-                  scale: 5
+                  scale: 10
                 },
             });
           }else{
-            alert('Coordenada já existente!');
-            $("#address").val("").focus();
+            //alert('Coordenada já existente!');
+            //$("#address").val("").focus();
+            console.log(exists);
+            console.log(markers[exists].content);
+            console.log(markers[exists]);
+            if (new_marker) new_marker.setMap(null);
+            if (infowindow) infowindow.close();
+            mks = google.maps.Map.prototype.getMarkers();
+            console.log(">>>"+exists);
+            console.log(mks[exists]);
+            infowindow = new google.maps.InfoWindow({content: markers[exists].content});
+            infowindow.open(map, mks[exists]);
           }
         } else {
           alert('Geocode was not successful for the following reason: ' + status);
@@ -213,36 +227,8 @@
       alert('Geocode was not successful for the following reason: Address is null');
     }
   }
-  
+
   google.maps.event.addDomListener(window, 'load', initialize);
-  
-  $("#cancel").click(function() {
-    cancelNewLocal();
-  });
-
-  function cancelNewLocal(){
-    if (infowindow) infowindow.close();
-    if (new_marker) new_marker.setMap(null);
-    $('#remove').hide();
-    $('#form1').show();
-    $('#form2').hide();
-    $("#address").val("");
-    $("#city").val("");
-    $("#coords").val("");
-    //$("#info").val("");
-    $("#id").val("");
-  }
-
-  $("#save").click(function() {
-    $('#form2').submit();
-  });
-
-  $("#remove").click(function() {
-    if(confirm("Você tem certeza de que deseja remover essa localidade?")){
-      $('#delete').val($('#id').val());
-      $('#form2').submit();
-    }
-  });
 
   $('#address').keypress(function (e) {
     if(e.which == 13) {

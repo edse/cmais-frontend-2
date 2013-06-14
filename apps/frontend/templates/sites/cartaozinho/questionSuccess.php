@@ -17,12 +17,14 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
+  .box-interna h2,
   .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
   .box-interna p { margin-bottom:0 }
   .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
   #lista-videos li { width:300px;  }
   #lista-videos { margin-left:5px; }
   #lista-videos .form-contato { margin-right:5px; }
+  
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
@@ -122,19 +124,7 @@
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 <p><?php echo $asset->getDescription() ?></p>
-                <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
-                  <!--
-                  <div class="acessibilidade">
-                    <a href="#" class="zoom">+A</a>
-                    <a href="#" class="zoom">-A</a>
-                  </div>
-                  -->
-
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
-
-                </div>
+                
                 
                 <div class="texto">
                   <!--LISTA-Videos-->
@@ -180,7 +170,7 @@
                   <!--/LISTA-Videos-->
                   <!--RESULTADO PARCIAL-->
                   <div id="resultado-video" style="display:none;">
-                    <h3>Resultado Parcial: </h3>
+                    <h2>Resultado Parcial: </h2>
                     <!--LISTA-RESULTADO-->
                     <?php
                     for($i=0; $i<count($a); $i++): ?>
@@ -193,40 +183,13 @@
                     </li>
                     </ul> <?php endfor;?>
                     <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
+                    <h2>Agradecemos seu voto! </h2>
                   </div>
                   <!--/RESULTADO PARCIAL-->
                 </div>
                 
-                <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
-                <?php if(count($relacionados) > 0): ?>
-                  
-                  
-                  <!-- SAIBA MAIS -->
-                  <div class="box-padrao grid2" style="margin-bottom: 20px;">
-                    <div id="saibamais">                                                            
-                    <h4>saiba +</h4>                                                            
-                    <ul class="conteudo">
-                      <?php foreach($relacionados as $k=>$d): ?>
-                        <li style="width: auto;">
-                          <a class="titulos" href="<?php echo $d->retriveUrl()?>" style="width: auto;"><?php echo $d->getTitle()?></a>
-                          <!--
-                          <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
-                            <a href="<?php echo $d->retriveUrl()?>" class="img-90x54" style="width: auto">
-                              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
-                            </a>
-                          <?php endif; ?>
-                          -->
-                          <!--p><?php echo $d->getDescription()?></p-->
-                        </li>
-                      <?php endforeach; ?>
-                    </ul>
-                   </div>
-                  </div>
-                  <!-- SAIBA MAIS -->
-                <?php endif; ?>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                
 
               </div>
               <!-- /texto -->
