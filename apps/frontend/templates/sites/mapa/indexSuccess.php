@@ -152,7 +152,7 @@
       $('.barra-grade').toggleClass('escura');
     }
   }
-  cobertura(1)
+
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
@@ -182,9 +182,9 @@
   
           var exists = false;
           for(var i=0; i<markers.length; i++){
-            //console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
-            //console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
-            if(markers[i].position.jb == results[0].geometry.location.jb && markers[i].position.kb == results[0].geometry.location.kb)
+            console.log("S: "+results[0].geometry.location.jb+","+results[0].geometry.location.kb);
+            console.log("B: "+markers[i].position.jb+","+markers[i].position.kb);
+            if(parseFloat(markers[i].position.jb) == parseFloat(results[0].geometry.location.jb) && parseFloat(markers[i].position.kb) == parseFloat(results[0].geometry.location.kb))
               exists = i;
           }
           if(!exists){
@@ -201,6 +201,7 @@
                 scale: 3
               },
             });
+            
           }else{
             //alert('Coordenada já existente!');
             //$("#address").val("").focus();
