@@ -17,6 +17,7 @@
   #resultado-video p {    margin-bottom: 0;  }
   #barra-site .redes .curtir {    width: auto;  }
   #menu-portal-2 .abas li {    float: right;  }
+  .box-interna h2,
   .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; }
   .box-interna p { margin-bottom:0 }
   .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;}
@@ -192,7 +193,7 @@
                     </li>
                     </ul> <?php endfor;?>
                     <!--/LISTA-RESULTADO-->
-                    <h3>Agradecemos seu voto! </h3>
+                    <h2>Agradecemos seu voto! </h2>
                   </div>
                   <!--/RESULTADO PARCIAL-->
                 </div>
