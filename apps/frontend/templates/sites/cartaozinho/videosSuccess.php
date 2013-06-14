@@ -137,38 +137,16 @@ $(function(){
           	      </ul>
           	    </div>
           	  </div>
+          	  <?php /*
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
-          	  	<?php /*
 				<script type='text/javascript'>
 				GA_googleFillSlot("maiscrianca");
 				</script>
-                 * 
-                 */?>
 		      </div>
+               */ ?>
           	  
-          	  <!--div id="recentes" class="filho blocos" style="display:none;">
-          	    <div class="capa">
-          	      <ul>
-          	      	<li class="conteudo-lista ativo">
-          	      	  <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-          	      	  <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-          	      	</li>
-          	      </ul>
-          	    </div>
-          	  </div>
-          	  
-          	  <div id="vistos" class="filho blocos" style="display:none;">
-          	    <div class="capa">
-          	      <ul>
-          	      	<li class="conteudo-lista ativo">
-          	      	  <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-          	      	  <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-          	      	</li>
-          	      </ul>
-          	    </div>
-          	  </div -->
-          	  
+          	 
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
           	  <!-- PAGINACAO -->
