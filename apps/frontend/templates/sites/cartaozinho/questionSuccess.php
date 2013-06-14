@@ -336,13 +336,12 @@
     </div>
     <!-- / CAPA SITE -->
     </div>
-
 <script>
 //valida form votacao
 $(document).ready(function(){
     var validator = $('.form-votacao').validate({
     submitHandler: function(form){
-      sendAnswer();
+      sendAnswer()
     },
     rules:{
         opcao:{
