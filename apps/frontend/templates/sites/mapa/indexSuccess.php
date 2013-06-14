@@ -150,7 +150,7 @@
       $('.barra-grade').toggleClass('escura');
     }
   }
-  
+  cobertura(0)
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
@@ -240,5 +240,5 @@
   $("#search").click(function() {
     codeAddress();
   });
-  cobertura(1)
+
 </script>
