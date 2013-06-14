@@ -26,6 +26,7 @@
   .box-compartilhar { margin-left:-10px; }
   #votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color:#333; font-weight: bold; }
   .rodape-cmais { display: none; }
+  .box-interna .texto { padding-bottom:20px; min-height:400px; }
 </style>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
@@ -124,7 +125,7 @@
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo $asset->getDescription() ?></p>
+                <p><br /><?php echo $asset->getDescription() ?></p>
                 
                 
                 <div class="texto">
@@ -193,7 +194,7 @@
                   
                  
                 
-              
+                  
 
               </div>
               <!-- /texto -->
