@@ -150,7 +150,7 @@
       $('.barra-grade').toggleClass('escura');
     }
   }
-  cobertura(0)
+  cobertura(1)
   function createMarker(id, name, content, pos) {
     console.log('content:');
     console.log(id);
