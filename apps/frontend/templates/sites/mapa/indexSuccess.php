@@ -184,7 +184,7 @@
           var exists = false;
           for(var i=0; i<markers.length; i++){
             if(markers[i].position.equals(results[0].geometry.location))
-              exists = true;
+              exists = i;
           }
   
           if(!exists){
@@ -203,8 +203,12 @@
                 },
             });
           }else{
-            alert('Coordenada já existente!');
-            $("#address").val("").focus();
+            //alert('Coordenada já existente!');
+            //$("#address").val("").focus();
+            if (new_marker) new_marker.setMap(null);
+            if (infowindow) infowindow.close();
+            infowindow = new google.maps.InfoWindow({content: markers[exists].content});
+            infowindow.open(map, markers[exists]);
           }
         } else {
           alert('Geocode was not successful for the following reason: ' + status);
