@@ -407,13 +407,11 @@
                 </tr> 
                 <tr>
                 <?php
-                $disco = explode($var[0], $vars[7]);
+                $disco = explode($vars[0], $vars[7]);
                 ?>
                 <?php
                  if($disco[0] != ""):?>
                   <td><p><?php echo $disco[0]?></p></td> 
-                <?php elseif($vars[7] != ""): ?>
-                  <td><p><?php echo $vars[7]?></p></td> 
                 <?php else:?>
                   <td><p>Não disponível</p></td> 
                 <?php endif;?>
