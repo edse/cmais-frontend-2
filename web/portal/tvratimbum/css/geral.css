@@ -7174,3 +7174,7 @@ span.bold{
 #concurso-cultural .msgAcerto p {  color:#ED1700; }
 #concurso-cultural form label.error {  color: #ED1700 !important;    display: block !important; font-size:10px; margin:0;}
 #concurso-cultural .txt-10 { float:right; }
+
+#box-atividades-interna .colorir .btn-barra{  width:100%; }
+#box-atividades-interna .colorir .btn-barra a { padding:0; }
+#box-atividades-interna .colorir .btn-barra a.imp { padding:0 5px; }
