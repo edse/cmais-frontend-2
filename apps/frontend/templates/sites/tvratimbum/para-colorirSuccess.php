@@ -30,6 +30,12 @@
     });
   })
 </script>
+<script>
+function printpage()
+  {
+  window.print()
+  }
+</script>
 
 <div id="bodyWrapper">
 
@@ -76,7 +82,7 @@
               <span class="caudaBarra"></span>
               <p>ou</p>
               <span class="pontaBarra"></span>
-              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank" class="imp">Imprimir</a>
+              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank" class="imp" onclick="javascript:printpage()">Imprimir</a>
               <span class="caudaBarra"></span>
             </div>
             <?php endif; ?>
