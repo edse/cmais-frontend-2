@@ -98,7 +98,7 @@
               <h2>Fundação Padre Anchieta</h2><br/>
 
               <h2>Presidente</h2>
-              <p>João Sayad</p><br/>
+              <p>Marcos Mendonça</p><br/>
  
               <h2>Vice Presidente de Conteúdo</h2>
               <p>Eduardo Brandini</p><br/>
