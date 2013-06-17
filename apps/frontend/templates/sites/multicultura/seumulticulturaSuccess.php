@@ -87,7 +87,7 @@
             <div class="texto">
             	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/gHj46lFpvMM?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
               <!--LISTA-Videos-->
-              <br>
+              <p></p>
               <div id="votacao-video">
                 <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
                 $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
