@@ -195,7 +195,6 @@ function vote(id){
     success: function(data){
       if(data == 1){
         $('#btn_1').hide();
-        $('#btn_2').show();
       }else{
         //alert('Erro!');
         $('#btn_1').show();
