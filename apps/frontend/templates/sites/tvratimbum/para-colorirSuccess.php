@@ -76,7 +76,7 @@
               <span class="caudaBarra"></span>
               <p>ou</p>
               <span class="pontaBarra"></span>
-              <a href="javascript:printDiv('div0')" class="btn-tooltip print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>"  data-placement="bottom" data-original-title="imprimir"></a>
+              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank" class="imp">Imprimir</a>
               <span class="caudaBarra"></span>
             </div>
             <?php endif; ?>
