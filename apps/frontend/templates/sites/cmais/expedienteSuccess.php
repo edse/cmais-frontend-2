@@ -71,9 +71,10 @@
  
               <h2>Conteúdo</h2>
               <p>
-                Débora Centoamore<br/>
+                Ana Carolina Surita<br/>
+                Felipe  Tringoni <br />
                 Juliano Nunes<br/>
-                Maria Montesanti<br/>
+                Marília Fredini<br/>
                 Pedro Nakano<br/>
                 Priscila Lima<br/>
                 Thábata Mondoni<br/>
@@ -90,7 +91,7 @@
 
               <h2>Estagiárias</h2>
               <p>
-				Josilene Veloso<br/>
+				        Josilene Rocha<br/>
               	Mariana Amorim<br/>
               	Nádia Atie<br/>
               </p><br/>
