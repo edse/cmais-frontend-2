@@ -705,6 +705,15 @@ class _assetActions extends sfActions
 	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
 			}
     }
+		
+		elseif($this->site->getSlug() == "multicultura") {
+        if($this->asset->getSlug()=="seumulticultura") {
+        if ($debug) print "<br>multicultura-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura');
+      }
+		}
+		
+		
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
       if($this->section->slug == "joguinhos" && $this->asset->getSlug()!="jogo de-pintar") {
