@@ -15,6 +15,9 @@ $(function(){
     });
 });
 </script>
+<style type="text/css">
+  .rodape-cmais { display:none; }
+</style>
 
 <?php
   $vid1 = Doctrine_Query::create()
