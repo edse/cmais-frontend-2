@@ -24,7 +24,7 @@
 	contentPage = 1;
 	function mobileGetVideos() {
     $.ajax({
-      url: "http://cmais.com.br/ajax/mobilegetvideos",
+      url: "<?php echo url_for("@homepage") ?>ajax/mobilegetvideos",
       data: "page="+videoPage+"&items=5&site=<?php echo (int)$site->id ?>",
       beforeSend: function(){
 				$('#maisvideos').hide();
