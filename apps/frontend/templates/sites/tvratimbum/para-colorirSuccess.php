@@ -89,7 +89,7 @@
               <span class="caudaBarra"></span>
               <p>ou</p>
               <span class="pontaBarra"></span>
-             <a href="javascript()" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank">Imprimir</a>
+             <a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank">Imprimir</a>
               <span class="caudaBarra"></span>
             </div>
             <?php endif; ?>
