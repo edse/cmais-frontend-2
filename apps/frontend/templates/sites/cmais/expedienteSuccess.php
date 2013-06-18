@@ -102,9 +102,6 @@
  
               <h2>Vice Presidente de Conteúdo</h2>
               <p>Eduardo Brandini</p><br/>
- 
-              <h2>Vice Presidente de Gestão</h2>
-              <p>Neide Saraceni Hahn</p>
 
               <!--/Expediente-->
             </div>
