@@ -172,7 +172,7 @@ if ($episode) {
             <div class="centro">
               <div class="video-interna">
                 <ul>
-                  <li class="voltarJa"><a href="javascript:back()"><span>Voltar</span></a></li>
+                  <li class="voltarJa"><a href="javascript:history.back(1);"><span>Voltar</span></a></li>
                 </ul>
                 <div class="boxVideo">
                   <div class="boxVideoWrapper">
