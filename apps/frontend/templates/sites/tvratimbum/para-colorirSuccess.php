@@ -133,8 +133,8 @@
       if (navigator.appName != 'Microsoft Internet Explorer'){
         newPage = window.open();
         newPage.document.write("<div><img src='"+$(this).attr('datasrc')+"' style='width:95%;'></div>");
-        newPage.window.print();
-        newPage.window.close();
+        newPage.window.print(); 
+        //newPage.window.close();
         return false;
       }
     });
