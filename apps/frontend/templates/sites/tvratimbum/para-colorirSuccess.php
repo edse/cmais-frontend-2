@@ -129,7 +129,7 @@
 </div>
 <script>
 	   $('a[class*="print"]').click(function() {
-      alert($(this).attr('datasrc'));
+      //alert($(this).attr('datasrc'));
       if (navigator.appName != 'Microsoft Internet Explorer'){
         newPage = window.open();
         newPage.document.write("<div><img src='"+$(this).attr('datasrc')+"' style='width:95%;'></div>");
