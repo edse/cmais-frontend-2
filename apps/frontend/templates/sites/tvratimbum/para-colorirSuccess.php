@@ -76,7 +76,7 @@
               <span class="caudaBarra"></span>
               <p>ou</p>
               <span class="pontaBarra"></span>
-             <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>" target="_blank" class="imp">Imprimir</a>
+             <a href="javascript:;" class="print" datasrc="http://midia.cmais.com.br/assets/image/original/<?php echo $d->AssetImage->getOriginalFile() ?>">Imprimir</a>
               <span class="caudaBarra"></span>
             </div>
             <?php endif; ?>
@@ -127,4 +127,16 @@
     <hr />
   </div>
 </div>
+<script>
+	   $('a[class*="print"]').click(function() {
+      //alert($(this).attr('datasrc'));
+      if (navigator.appName != 'Microsoft Internet Explorer'){
+        newPage = window.open();
+        newPage.document.write("<div><img src='"+$(this).attr('datasrc')+"' style='width:95%;'></div>");
+        newPage.window.print(); 
+        //newPage.window.close();
+        return false;
+      }
+    });
+</script>
 
