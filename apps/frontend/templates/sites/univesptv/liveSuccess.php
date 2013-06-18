@@ -68,7 +68,7 @@
 
           <!-- menu interna -->
           <ul class="menu-interna grid3">
-            <li><a href="http://cmais.com.br/grade?c=univesptv" title="Grade de Programação">Grade de Programação</a></li>
+            <li><a href="http://univesptv.cmais.com.br/programacao" title="Grade de Programação">Grade de Programação</a></li>
             <li><a href="http://www.youtube.com/univesptv" title="Vídeos">Vídeos</a></li>
             <li><a href="http://blogunivesptv.blogspot.com" title="Blog da Programação">Blog da Programação</a></li>
             <li><a href="http://blogdoinglescommusica.blogspot.com" title="Inglês com Música">Inglês com Música</a></li>
