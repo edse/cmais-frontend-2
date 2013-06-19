@@ -16,7 +16,8 @@ $(document).ready(function() {
   var tryin   = 3;
   var mult    = 0;
   
-  serverUrl = 'ws://200.136.27.7:80/secondscreenrodaviva';
+  //serverUrl = 'ws://200.136.27.7:80/secondscreenrodaviva';
+  serverUrl = 'ws://200.136.27.8:80/secondscreenrodaviva';
   
   var content_url = "/segundatela/secondscreenrodaviva/contents.json";
   var last_content_url = "/segundatela/secondscreenrodaviva/last-content.json";
