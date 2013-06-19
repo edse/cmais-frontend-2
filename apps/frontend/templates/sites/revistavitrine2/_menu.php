@@ -5,7 +5,7 @@
               <li><a href="/<?php echo $s->getSlug() ?>" title="<?php echo $s->getTitle() ?>"<?php if($section->getSlug() == $s->getSlug()): ?> class="ativo"<?php endif; ?>><?php echo $s->getTitle() ?></a><span></span></li>
               <?php endforeach; ?>
               <li><a href="javascript:;" title="Sobre a Revista" class="btn-sobre">Sobre a Revista<i class="icon-chevron-down icon-white"></i></a>
-                <p class="sobre" style="display:none"><?php $site->getDescription() ?></p>
+                <p class="sobre" style="display:none">dewddew<?php $site->getDescription() ?></p>
               </li>
             </ul>
           </div>
