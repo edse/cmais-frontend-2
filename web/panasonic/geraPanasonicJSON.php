@@ -50,6 +50,7 @@ if(isset($_GET['program'])){
                              "url_video" => $av->sources, 
                              "destaque"  => "S",
                              //"imagem_destaque" => $av->thumb,
+                             "duracao" => $av->duration,
                              "imagem_destaque"  =>$av->still,
                             );
             array_push($lista_videos_programa, $list);
@@ -97,6 +98,7 @@ if(isset($_GET['program'])){
                            "url_video" => $av->sources, 
                            "destaque"  => "S",
                            //"imagem_destaque" => $av->thumb,
+                           "duracao" => $av->duration,
                            "imagem_destaque"  =>$av->still,
                           );
             array_push($lista_videos_programa, $list);
