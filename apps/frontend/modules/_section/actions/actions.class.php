@@ -542,7 +542,9 @@ class _sectionActions extends sfActions
               ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
               ->orderBy('s.display_order')
               ->execute();
-          }elseif($this->section->Site->getSlug() == "sic"){
+          }elseif(in_array($this->section->Site->getSlug(), array("sic","fpa","revistavitrine2","revistavitrine","radarcultura"))){
+            if($this->section->Site->getSlug() == "radarcultura")
+              $this->setLayout('radarcultura');
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -550,27 +552,6 @@ class _sectionActions extends sfActions
               ->andWhere('parent_section_id IS NULL')
               ->andWhere('s.is_active = ?', 1)
               ->andWhere('s.is_visible = ?', 1)
-              ->orderBy('s.display_order')
-              ->execute();
-          }elseif($this->section->Site->getSlug() == "fpa"){
-            $this->siteSections = Doctrine_Query::create()
-              ->select('s.*')
-              ->from('Section s')
-              ->where('s.site_id = ?', $this->section->getSiteId())
-              ->andWhere('parent_section_id IS NULL')
-              ->andWhere('s.is_active = ?', 1)
-              ->andWhere('s.is_visible = ?', 1)
-              ->orderBy('s.display_order')
-              ->execute();
-          }elseif($this->section->Site->getSlug() == "radarcultura"){
-            $this->setLayout('radarcultura');
-            $this->siteSections = Doctrine_Query::create()
-              ->select('s.*')
-              ->from('Section s')
-              ->where('s.site_id = ?', $this->site->id)
-              ->andWhere('s.is_active = ?', 1)
-              ->andWhere('s.is_visible = ?', 1)
-              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
               ->orderBy('s.display_order')
               ->execute();
           }else{
