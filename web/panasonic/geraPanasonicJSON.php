@@ -1,11 +1,13 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors','On');
   //LE JSON GERAL
   $jsonurl = "http://200.136.27.50/sony/panasonic.json";
   $json = file_get_contents($jsonurl);
   $json_output = json_decode($json);
   
   echo $json_output;
+  echo "0";
   //CRIA ARRAYS PARA PROGRAMAS E VIDEOS
   $category_collection = array();
   $lista_videos_programa = array();
